@@ -1,0 +1,229 @@
+import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import '../../../../core/error/exceptions.dart';
+import '../models/profile_model.dart';
+
+abstract class ProfileRemoteDataSource {
+  Future<ProfileModel> createProfile(ProfileModel profile);
+  Future<ProfileModel> getProfile(String userId);
+  Future<ProfileModel> updateProfile(ProfileModel profile);
+  Future<void> deleteProfile(String userId);
+  Future<String> uploadPhoto(String userId, File photo);
+  Future<void> deletePhoto(String userId, String photoUrl);
+  Future<String> uploadVoiceRecording(String userId, File recording);
+  Future<bool> verifyPhotoWithAI(File photo);
+  Future<bool> profileExists(String userId);
+  Future<int> getProfileCompletion(String userId);
+}
+
+class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
+  final FirebaseFirestore firestore;
+  final FirebaseStorage storage;
+
+  ProfileRemoteDataSourceImpl({
+    required this.firestore,
+    required this.storage,
+  });
+
+  @override
+  Future<ProfileModel> createProfile(ProfileModel profile) async {
+    try {
+      await firestore.collection('profiles').doc(profile.userId).set(
+            profile.toJson(),
+          );
+      return profile;
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to create profile');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<ProfileModel> getProfile(String userId) async {
+    try {
+      final doc = await firestore.collection('profiles').doc(userId).get();
+
+      if (!doc.exists) {
+        throw CacheException( 'Profile not found');
+      }
+
+      return ProfileModel.fromJson(doc.data()!);
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to get profile');
+    } catch (e) {
+      if (e is CacheException) rethrow;
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<ProfileModel> updateProfile(ProfileModel profile) async {
+    try {
+      final updatedProfile = ProfileModel(
+        userId: profile.userId,
+        displayName: profile.displayName,
+        dateOfBirth: profile.dateOfBirth,
+        gender: profile.gender,
+        photoUrls: profile.photoUrls,
+        bio: profile.bio,
+        interests: profile.interests,
+        location: profile.location,
+        languages: profile.languages,
+        voiceRecordingUrl: profile.voiceRecordingUrl,
+        personalityTraits: profile.personalityTraits,
+        createdAt: profile.createdAt,
+        updatedAt: DateTime.now(),
+        isComplete: profile.isComplete,
+      );
+
+      await firestore
+          .collection('profiles')
+          .doc(profile.userId)
+          .update(updatedProfile.toJson());
+
+      return updatedProfile;
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to update profile');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<void> deleteProfile(String userId) async {
+    try {
+      // Delete profile photos from storage
+      final profile = await getProfile(userId);
+      for (final photoUrl in profile.photoUrls) {
+        await deletePhoto(userId, photoUrl);
+      }
+
+      // Delete voice recording if exists
+      if (profile.voiceRecordingUrl != null) {
+        final ref = storage.refFromURL(profile.voiceRecordingUrl!);
+        await ref.delete();
+      }
+
+      // Delete profile document
+      await firestore.collection('profiles').doc(userId).delete();
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to delete profile');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<String> uploadPhoto(String userId, File photo) async {
+    try {
+      final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
+      final ref = storage.ref().child('profiles/$userId/photos/$fileName');
+
+      final uploadTask = await ref.putFile(
+        photo,
+        SettableMetadata(
+          contentType: 'image/jpeg',
+          customMetadata: {'userId': userId},
+        ),
+      );
+
+      final downloadUrl = await uploadTask.ref.getDownloadURL();
+      return downloadUrl;
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to upload photo');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<void> deletePhoto(String userId, String photoUrl) async {
+    try {
+      final ref = storage.refFromURL(photoUrl);
+      await ref.delete();
+    } on FirebaseException catch (e) {
+      throw ServerException( e.message ?? 'Failed to delete photo');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<String> uploadVoiceRecording(String userId, File recording) async {
+    try {
+      final fileName = 'voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      final ref = storage.ref().child('profiles/$userId/voice/$fileName');
+
+      final uploadTask = await ref.putFile(
+        recording,
+        SettableMetadata(
+          contentType: 'audio/m4a',
+          customMetadata: {'userId': userId},
+        ),
+      );
+
+      final downloadUrl = await uploadTask.ref.getDownloadURL();
+      return downloadUrl;
+    } on FirebaseException catch (e) {
+      throw ServerException(
+           e.message ?? 'Failed to upload voice recording');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<bool> verifyPhotoWithAI(File photo) async {
+    try {
+      // TODO: Implement AI verification using Google Cloud Vision API
+      // For now, return true as a placeholder
+      // This should call Cloud Functions endpoint that uses Vision AI
+      // to detect faces and verify it's a real person
+
+      // Placeholder implementation
+      await Future.delayed(const Duration(seconds: 1));
+      return true;
+    } catch (e) {
+      throw ServerException( 'Failed to verify photo: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<bool> profileExists(String userId) async {
+    try {
+      final doc = await firestore.collection('profiles').doc(userId).get();
+      return doc.exists;
+    } on FirebaseException catch (e) {
+      throw ServerException(
+           e.message ?? 'Failed to check profile existence');
+    } catch (e) {
+      throw ServerException( e.toString());
+    }
+  }
+
+  @override
+  Future<int> getProfileCompletion(String userId) async {
+    try {
+      final profile = await getProfile(userId);
+
+      int completedFields = 0;
+      int totalFields = 9;
+
+      if (profile.displayName.isNotEmpty) completedFields++;
+      if (profile.photoUrls.isNotEmpty) completedFields++;
+      if (profile.bio.isNotEmpty) completedFields++;
+      if (profile.interests.isNotEmpty) completedFields++;
+      if (profile.location.city.isNotEmpty) completedFields++;
+      if (profile.languages.isNotEmpty) completedFields++;
+      if (profile.voiceRecordingUrl != null) completedFields++;
+      if (profile.personalityTraits != null) completedFields++;
+      if (profile.gender.isNotEmpty) completedFields++;
+
+      return ((completedFields / totalFields) * 100).round();
+    } catch (e) {
+      throw ServerException( 'Failed to calculate completion: ${e.toString()}');
+    }
+  }
+}

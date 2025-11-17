@@ -1,0 +1,433 @@
+import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
+import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:sign_in_with_apple/sign_in_with_apple.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import '../../../../core/error/exceptions.dart';
+import '../models/user_model.dart';
+
+abstract class AuthRemoteDataSource {
+  /// Sign in with email and password
+  Future<UserModel> signInWithEmail({
+    required String email,
+    required String password,
+  });
+
+  /// Register with email and password
+  Future<UserModel> registerWithEmail({
+    required String email,
+    required String password,
+  });
+
+  /// Sign in with Google
+  Future<UserModel> signInWithGoogle();
+
+  /// Sign in with Apple
+  // Future<UserModel> signInWithApple();
+
+  /// Sign in with Facebook
+  Future<UserModel> signInWithFacebook();
+
+  /// Sign out
+  Future<void> signOut();
+
+  /// Get current user
+  Future<UserModel?> getCurrentUser();
+
+  /// Send password reset email
+  Future<void> sendPasswordResetEmail(String email);
+
+  /// Send email verification
+  Future<void> sendEmailVerification();
+
+  /// Verify phone number
+  Future<void> verifyPhoneNumber({
+    required String phoneNumber,
+    required Function(String verificationId) codeSent,
+    required Function(firebase_auth.FirebaseAuthException error) verificationFailed,
+  });
+
+  /// Sign in with phone credential
+  Future<UserModel> signInWithPhoneCredential({
+    required String verificationId,
+    required String smsCode,
+  });
+
+  /// Update user profile
+  Future<void> updateProfile({
+    String? displayName,
+    String? photoUrl,
+  });
+
+  /// Re-authenticate user
+  Future<void> reAuthenticateWithCredential({
+    required String email,
+    required String password,
+  });
+
+  /// Delete account
+  Future<void> deleteAccount();
+
+  /// Check if user is signed in
+  Future<bool> isSignedIn();
+
+  /// Get auth state changes stream
+  Stream<UserModel?> get authStateChanges;
+}
+
+class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
+  final firebase_auth.FirebaseAuth firebaseAuth;
+  final GoogleSignIn googleSignIn;
+  final FacebookAuth facebookAuth;
+
+  AuthRemoteDataSourceImpl({
+    required this.firebaseAuth,
+    required this.googleSignIn,
+    required this.facebookAuth,
+  });
+
+  @override
+  Future<UserModel> signInWithEmail({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      final userCredential = await firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+
+      if (userCredential.user == null) {
+        throw AuthenticationException('Sign in failed');
+      }
+
+      return UserModel.fromFirebaseUser(userCredential.user!);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<UserModel> registerWithEmail({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      final userCredential = await firebaseAuth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+
+      if (userCredential.user == null) {
+        throw AuthenticationException('Registration failed');
+      }
+
+      // Send email verification
+      await userCredential.user!.sendEmailVerification();
+
+      return UserModel.fromFirebaseUser(userCredential.user!);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<UserModel> signInWithGoogle() async {
+    try {
+      // Trigger the authentication flow
+      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+
+      if (googleUser == null) {
+        throw AuthenticationException('Google sign in aborted');
+      }
+
+      // Obtain the auth details from the request
+      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+
+      // Create a new credential
+      final credential = firebase_auth.GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+
+      // Sign in to Firebase with the Google credential
+      final userCredential = await firebaseAuth.signInWithCredential(credential);
+
+      if (userCredential.user == null) {
+        throw AuthenticationException('Google sign in failed');
+      }
+
+      return UserModel.fromFirebaseUser(userCredential.user!);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  // @override
+  // Future<UserModel> signInWithApple() async {
+  //   try {
+  //     // Request credential from Apple
+  //     final appleCredential = await SignInWithApple.getAppleIDCredential(
+  //       scopes: [
+  //         AppleIDAuthorizationScopes.email,
+  //         AppleIDAuthorizationScopes.fullName,
+  //       ],
+  //     );
+
+  //     // Create OAuth credential
+  //     final oauthCredential = firebase_auth.OAuthProvider('apple.com').credential(
+  //       idToken: appleCredential.identityToken,
+  //       accessToken: appleCredential.authorizationCode,
+  //     );
+
+  //     // Sign in to Firebase
+  //     final userCredential = await firebaseAuth.signInWithCredential(oauthCredential);
+
+  //     if (userCredential.user == null) {
+  //       throw AuthenticationException('Apple sign in failed');
+  //     }
+
+  //     // Update display name if available
+  //     if (appleCredential.givenName != null || appleCredential.familyName != null) {
+  //       final displayName = '${appleCredential.givenName ?? ''} ${appleCredential.familyName ?? ''}'.trim();
+  //       await userCredential.user!.updateDisplayName(displayName);
+  //     }
+
+  //     return UserModel.fromFirebaseUser(userCredential.user!);
+  //   } on firebase_auth.FirebaseAuthException catch (e) {
+  //     throw _handleFirebaseAuthException(e);
+  //   } catch (e) {
+  //     throw AuthenticationException(e.toString());
+  //   }
+  // }
+
+  @override
+  Future<UserModel> signInWithFacebook() async {
+    try {
+      // Trigger the sign-in flow
+      final LoginResult loginResult = await facebookAuth.login(
+        permissions: ['email', 'public_profile'],
+      );
+
+      if (loginResult.status != LoginStatus.success) {
+        throw AuthenticationException('Facebook sign in failed: ${loginResult.message}');
+      }
+
+      // Create a credential from the access token
+      final firebase_auth.OAuthCredential facebookAuthCredential =
+          firebase_auth.FacebookAuthProvider.credential(
+        loginResult.accessToken!.token,
+      );
+
+      // Sign in to Firebase
+      final userCredential = await firebaseAuth.signInWithCredential(facebookAuthCredential);
+
+      if (userCredential.user == null) {
+        throw AuthenticationException('Facebook sign in failed');
+      }
+
+      return UserModel.fromFirebaseUser(userCredential.user!);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> signOut() async {
+    try {
+      await Future.wait([
+        firebaseAuth.signOut(),
+        googleSignIn.signOut(),
+        facebookAuth.logOut(),
+      ]);
+    } catch (e) {
+      throw AuthenticationException('Sign out failed: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<UserModel?> getCurrentUser() async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) return null;
+      return UserModel.fromFirebaseUser(user);
+    } catch (e) {
+      throw AuthenticationException('Failed to get current user: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await firebaseAuth.sendPasswordResetEmail(email: email);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> sendEmailVerification() async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) {
+        throw AuthenticationException('No user signed in');
+      }
+      await user.sendEmailVerification();
+    } catch (e) {
+      throw AuthenticationException('Failed to send verification email: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<void> verifyPhoneNumber({
+    required String phoneNumber,
+    required Function(String verificationId) codeSent,
+    required Function(firebase_auth.FirebaseAuthException error) verificationFailed,
+  }) async {
+    try {
+      await firebaseAuth.verifyPhoneNumber(
+        phoneNumber: phoneNumber,
+        verificationCompleted: (firebase_auth.PhoneAuthCredential credential) async {
+          await firebaseAuth.signInWithCredential(credential);
+        },
+        verificationFailed: verificationFailed,
+        codeSent: (String verificationId, int? resendToken) {
+          codeSent(verificationId);
+        },
+        codeAutoRetrievalTimeout: (String verificationId) {},
+        timeout: const Duration(seconds: 60),
+      );
+    } catch (e) {
+      throw AuthenticationException('Phone verification failed: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<UserModel> signInWithPhoneCredential({
+    required String verificationId,
+    required String smsCode,
+  }) async {
+    try {
+      final credential = firebase_auth.PhoneAuthProvider.credential(
+        verificationId: verificationId,
+        smsCode: smsCode,
+      );
+
+      final userCredential = await firebaseAuth.signInWithCredential(credential);
+
+      if (userCredential.user == null) {
+        throw AuthenticationException('Phone sign in failed');
+      }
+
+      return UserModel.fromFirebaseUser(userCredential.user!);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> updateProfile({String? displayName, String? photoUrl}) async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) {
+        throw AuthenticationException('No user signed in');
+      }
+
+      await user.updateDisplayName(displayName);
+      await user.updatePhotoURL(photoUrl);
+    } catch (e) {
+      throw AuthenticationException('Failed to update profile: ${e.toString()}');
+    }
+  }
+
+  @override
+  Future<void> reAuthenticateWithCredential({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) {
+        throw AuthenticationException('No user signed in');
+      }
+
+      final credential = firebase_auth.EmailAuthProvider.credential(
+        email: email,
+        password: password,
+      );
+
+      await user.reauthenticateWithCredential(credential);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> deleteAccount() async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) {
+        throw AuthenticationException('No user signed in');
+      }
+
+      await user.delete();
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<bool> isSignedIn() async {
+    final user = firebaseAuth.currentUser;
+    return user != null;
+  }
+
+  @override
+  Stream<UserModel?> get authStateChanges {
+    return firebaseAuth.authStateChanges().map((firebaseUser) {
+      if (firebaseUser == null) return null;
+      return UserModel.fromFirebaseUser(firebaseUser);
+    });
+  }
+
+  // Helper method to handle Firebase Auth exceptions
+  AuthenticationException _handleFirebaseAuthException(
+    firebase_auth.FirebaseAuthException e,
+  ) {
+    switch (e.code) {
+      case 'user-not-found':
+        return AuthenticationException('No user found with this email');
+      case 'wrong-password':
+        return AuthenticationException('Wrong password');
+      case 'email-already-in-use':
+        return AuthenticationException('Email already in use');
+      case 'weak-password':
+        return AuthenticationException('Password is too weak');
+      case 'invalid-email':
+        return AuthenticationException('Invalid email address');
+      case 'user-disabled':
+        return AuthenticationException('This account has been disabled');
+      case 'too-many-requests':
+        return AuthenticationException('Too many requests. Please try again later');
+      case 'operation-not-allowed':
+        return AuthenticationException('This operation is not allowed');
+      default:
+        return AuthenticationException(e.message ?? 'Authentication failed');
+    }
+  }
+}

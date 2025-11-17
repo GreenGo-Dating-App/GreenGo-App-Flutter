@@ -1,0 +1,36 @@
+# GreenGoChat Terraform Variables
+# Copy this file to terraform.tfvars and fill in your values
+
+# Project Configuration
+project_name   = "greengo-chat"
+environment    = "development"  # Options: development, staging, production
+gcp_project_id = "your-gcp-project-id"
+
+# Test Environment (set to true to use emulators)
+use_test_environment = false
+test_project_id      = "test-greengo-chat"
+
+# Emulator Hosts (only used when use_test_environment = true)
+firestore_emulator_host = "localhost:8080"
+storage_emulator_host   = "localhost:9023"
+pubsub_emulator_host    = "localhost:8085"
+
+# Region Configuration
+region       = "us-central1"
+zone         = "us-central1-a"
+multi_region = false  # Set to true for production multi-region deployment
+
+# Alerts and Monitoring
+alert_notification_email = "alerts@yourcompany.com"
+
+# Backup Configuration
+enable_automated_backups = true
+backup_retention_days    = 30
+
+# Cost Management
+enable_cost_alerts    = true
+monthly_budget_amount = 2000  # USD
+
+# Security (Advanced)
+enable_vpc_service_controls = false
+enable_binary_authorization = false

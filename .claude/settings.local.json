@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"c:\\Users\\Software Engineering\\GreenGo App\\lib\")",
+      "Bash(findstr:*)",
+      "Bash(dir /s /b \"c:\\Users\\Software Engineering\\GreenGo App\\terraform\\modules\")",
+      "Bash(dir /s /b *.ts 2)",
+      "Bash(nul)",
+      "Bash(chmod:*)",
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
