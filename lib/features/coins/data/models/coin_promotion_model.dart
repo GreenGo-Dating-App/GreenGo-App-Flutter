@@ -30,8 +30,12 @@ class CoinPromotionModel extends CoinPromotion {
       type: _parseType(data['type'] as String),
       bonusPercentage: (data['bonusPercentage'] as num?)?.toInt(),
       bonusCoins: (data['bonusCoins'] as num?)?.toInt(),
-      startDate: (data['startDate'] as Timestamp).toDate(),
-      endDate: (data['endDate'] as Timestamp).toDate(),
+      startDate: data['startDate'] != null
+          ? (data['startDate'] as Timestamp).toDate()
+          : null,
+      endDate: data['endDate'] != null
+          ? (data['endDate'] as Timestamp).toDate()
+          : null,
       isActive: data['isActive'] as bool? ?? true,
       applicablePackageIds: (data['applicablePackageIds'] as List<dynamic>?)
           ?.map((e) => e as String)
@@ -50,8 +54,8 @@ class CoinPromotionModel extends CoinPromotion {
       'type': type.name,
       'bonusPercentage': bonusPercentage,
       'bonusCoins': bonusCoins,
-      'startDate': Timestamp.fromDate(startDate),
-      'endDate': Timestamp.fromDate(endDate),
+      'startDate': startDate != null ? Timestamp.fromDate(startDate!) : null,
+      'endDate': endDate != null ? Timestamp.fromDate(endDate!) : null,
       'isActive': isActive,
       'applicablePackageIds': applicablePackageIds,
       'minPurchaseAmount': minPurchaseAmount,

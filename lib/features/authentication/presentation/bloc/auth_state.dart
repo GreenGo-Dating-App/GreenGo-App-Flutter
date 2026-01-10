@@ -63,3 +63,24 @@ class AuthBiometricAvailable extends AuthState {
   @override
   List<Object> get props => [isAvailable];
 }
+
+/// State when user is authenticated but waiting for access
+/// (pending approval or waiting for access date)
+class AuthWaitingForAccess extends AuthState {
+  final User user;
+  final String approvalStatus; // 'pending', 'approved', 'rejected'
+  final DateTime accessDate;
+  final String membershipTier;
+  final bool canAccessApp;
+
+  const AuthWaitingForAccess({
+    required this.user,
+    required this.approvalStatus,
+    required this.accessDate,
+    required this.membershipTier,
+    required this.canAccessApp,
+  });
+
+  @override
+  List<Object> get props => [user, approvalStatus, accessDate, membershipTier, canAccessApp];
+}

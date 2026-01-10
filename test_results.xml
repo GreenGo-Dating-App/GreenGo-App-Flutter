@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="120" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 1: User can view login screen on app launch" time="0.891"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 2: User can navigate to registration screen" time="0.394"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 3: User can register with valid credentials" time="0.574"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 4: User sees error for invalid email format during registration" time="0.407"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 5: User sees password strength indicator during registration" time="0.365"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 6: User sees error when passwords do not match" time="0.376"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 7: User can login with valid credentials" time="0.351"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 8: User sees error for invalid credentials during login" time="0.247"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 9: User can toggle password visibility" time="0.218"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 10: User can navigate to forgot password screen" time="0.166"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 11: User can request password reset" time="0.255"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 12: User can access language selector on login screen" time="0.163"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 13: User sees loading indicator during authentication" time="0.285"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 14: Login button is present and functional" time="0.089"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 15: Create Account link is present and functional" time="0.156"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 16: New user sees main screen after login" time="0.321"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 17: User can access edit profile from profile tab" time="0.377"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 18: User can edit basic info" time="0.134"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 19: User can access photos section" time="0.067"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 20: User can add a new photo" time="0.113"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 21: User can edit bio" time="0.146"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 22: User can save bio changes" time="0.171"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 23: User sees discard dialog when leaving with unsaved changes" time="0.188"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 24: User can view profile sections" time="0.069"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 25: User can select height from picker" time="0.101"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 26: User sees validation for empty name" time="0.139"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 27: User can delete a photo" time="0.111"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 28: User can view their profile from Profile tab" time="0.172"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 29: User can navigate to Edit Profile screen" time="0.217"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 30: User can edit basic info" time="0.209"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 31: User can manage photos" time="0.463"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 32: User can add new photo from gallery" time="0.132"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 33: User can take new photo with camera" time="0.11"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 34: User can delete a photo" time="0.10"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 35: User can update bio" time="0.121"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 36: User sees bio character count" time="0.075"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 37: User can select height from picker" time="0.094"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 38: User can view discovery screen with profile cards" time="0.127"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 39: User can tap like button" time="0.338"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 40: User can tap pass button" time="0.27"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 41: User can super like a profile" time="0.127"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 42: User can tap on profile card to view details" time="0.221"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 43: User can view profile photos in gallery" time="0.16"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 44: User can access discovery preferences" time="0.187"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 45: User can adjust age range preference" time="0.144"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 46: User can adjust distance preference" time="0.146"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 47: User can set gender preference" time="0.127"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 48: User can save preferences" time="0.147"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Discovery &amp; Swiping Tests Test 49: User can use rewind feature" time="0.095"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 50: User can view matches screen" time="0.147"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 51: User can see list of mutual matches" time="0.133"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 52: User can tap match to view options" time="0.158"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 53: User can start chat from match" time="0.223"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 54: User can unmatch a match" time="0.16"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 55: User can confirm unmatch" time="0.185"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 56: User can see match timestamp" time="0.125"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 57: User can refresh matches list" time="0.125"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 58: User can view conversations list" time="0.126"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 59: User can see unread message indicators" time="0.122"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 60: User can open a conversation" time="0.193"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 61: User can send a message" time="0.158"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 62: User can see message list" time="0.05"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 63: User can see sent messages" time="0.051"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 64: User can see received messages" time="0.058"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 65: User can see chat partner online status" time="0.052"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 66: User can tap on partner profile in chat" time="0.046"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 67: User can delete a conversation" time="0.171"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 68: User can confirm delete conversation" time="0.14"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat &amp; Messaging Tests Test 69: User can see message status" time="0.038"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 70: User can view notifications screen" time="0.145"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 71: User can see different notification types" time="0.041"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 72: User can tap notification to navigate to source" time="0.074"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 73: User can see unread indicators" time="0.039"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 74: User can mark all as read" time="0.045"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 75: User can access notification settings" time="0.128"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 76: User can configure notification preferences" time="0.05"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 77: User can save notification preferences" time="0.062"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 78: User can view achievements screen" time="0.175"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 79: User can see unlocked and locked achievements" time="0.055"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 80: User can see achievement progress" time="0.053"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 81: User can filter achievements by category" time="0.057"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 82: User can view leaderboard" time="0.051"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 83: User can view daily challenges" time="0.038"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 84: User can view seasonal events" time="0.051"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 85: User can see achievement details" time="0.044"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 86: User can see social achievements" time="0.05"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 87: User can track achievement progress" time="0.046"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 88: User can view coin shop" time="0.14"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 89: User can see coin packages with prices" time="0.044"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 90: User can see active promotions" time="0.042"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 91: User can see current coin balance" time="0.043"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 92: User can access transaction history" time="0.075"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Coins &amp; Shop Tests Test 93: User can initiate a purchase" time="0.064"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 94: User can view subscription plans" time="0.129"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 95: User can see premium features for each tier" time="0.031"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 96: User can initiate subscription" time="0.055"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 97: User can compare subscription tiers" time="0.025"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 98: User can access settings" time="0.13"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 99: User can view app version and info" time="0.062"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 100: User can access help and support" time="0.056"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 101: User sees consent checkboxes on registration" time="0.083"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 102: User must accept required consents to register" time="0.058"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 103: User can accept privacy policy checkbox" time="0.119"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 104: User can accept terms checkbox" time="0.11"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 105: Register button enables when required consents are accepted" time="0.164"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 106: User can accept optional profiling checkbox" time="0.113"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 107: User can accept optional third-party data checkbox" time="0.098"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 108: User can tap privacy policy link" time="0.082"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 109: User can tap terms link" time="0.072"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 110: User can register with all consents accepted" time="0.185"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 111: User can view chat screen with messages" time="0.049"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 112: User can see existing messages" time="0.032"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 113: User can send a new message" time="0.076"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 114: User can open message context menu" time="0.055"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 115: User can translate a message" time="0.087"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 116: User can see translated content in message bubble" time="0.091"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 117: User can open translation settings" time="0.062"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 118: User can download language pack" time="0.071"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 119: User can copy a message" time="0.072"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user" name="GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 120: Translate option hidden for already translated messages" time="0.087"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="15" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 1: User can view login screen on app launch" time="0.912"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 2: User can navigate to registration screen" time="0.391"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 3: User can register with valid credentials" time="0.574"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 4: User sees error for invalid email format during registration" time="0.525"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 5: User sees password strength indicator during registration" time="0.332"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 6: User sees error when passwords do not match" time="0.364"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 7: User can login with valid credentials" time="0.43"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 8: User sees error for invalid credentials during login" time="0.25"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 9: User can toggle password visibility" time="0.202"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 10: User can navigate to forgot password screen" time="0.174"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 11: User can request password reset" time="0.393"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 12: User can access language selector on login screen" time="0.192"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 13: User sees loading indicator during authentication" time="0.336"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 14: Login button is present and functional" time="0.086"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication" name="Authentication Tests Test 15: Create Account link is present and functional" time="0.167"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="12" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 58: User can view conversations list" time="1.406"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 59: User can see unread message indicators" time="0.233"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 60: User can open a conversation" time="0.601"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 61: User can send a message" time="0.375"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 62: User can see message list" time="0.077"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 63: User can see sent messages" time="0.217"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 64: User can see received messages" time="0.127"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 65: User can see chat partner online status" time="0.098"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 66: User can tap on partner profile in chat" time="0.09"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 67: User can delete a conversation" time="0.343"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 68: User can confirm delete conversation" time="0.409"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat" name="Chat &amp; Messaging Tests Test 69: User can see message status" time="0.093"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="6" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 88: User can view coin shop" time="1.874"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 89: User can see coin packages with prices" time="0.114"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 90: User can see active promotions" time="0.109"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 91: User can see current coin balance" time="0.09"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 92: User can access transaction history" time="0.305"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins" name="Coins &amp; Shop Tests Test 93: User can initiate a purchase" time="0.298"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="12" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 38: User can view discovery screen with profile cards" time="0.895"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 39: User can tap like button" time="0.325"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 40: User can tap pass button" time="0.183"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 41: User can super like a profile" time="0.157"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 42: User can tap on profile card to view details" time="0.468"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 43: User can view profile photos in gallery" time="0.252"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 44: User can access discovery preferences" time="0.312"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 45: User can adjust age range preference" time="0.179"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 46: User can adjust distance preference" time="0.21"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 47: User can set gender preference" time="0.167"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 48: User can save preferences" time="0.442"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery" name="Discovery &amp; Swiping Tests Test 49: User can use rewind feature" time="0.177"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="10" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 78: User can view achievements screen" time="1.821"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 79: User can see unlocked and locked achievements" time="0.139"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 80: User can see achievement progress" time="0.182"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 81: User can filter achievements by category" time="0.102"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 82: User can view leaderboard" time="0.132"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 83: User can view daily challenges" time="0.12"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 84: User can view seasonal events" time="0.091"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 85: User can see achievement details" time="0.087"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 86: User can see social achievements" time="0.104"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification" name="Gamification Tests Test 87: User can track achievement progress" time="0.184"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="8" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 50: User can view matches screen" time="1.889"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 51: User can see list of mutual matches" time="0.253"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 52: User can tap match to view options" time="0.452"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 53: User can start chat from match" time="0.672"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 54: User can unmatch a match" time="0.348"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 55: User can confirm unmatch" time="0.406"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 56: User can see match timestamp" time="0.341"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching" name="Matching Tests Test 57: User can refresh matches list" time="0.305"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="20" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 101: User sees consent checkboxes on registration" time="1.10"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 102: User must accept required consents to register" time="0.171"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 103: User can accept privacy policy checkbox" time="0.39"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 104: User can accept terms checkbox" time="0.193"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 105: Register button enables when required consents are accepted" time="0.293"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 106: User can accept optional profiling checkbox" time="0.19"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 107: User can accept optional third-party data checkbox" time="0.206"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 108: User can tap privacy policy link" time="0.196"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 109: User can tap terms link" time="0.194"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Consent Checkboxes Tests Test 110: User can register with all consents accepted" time="0.662"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 111: User can view chat screen with messages" time="0.228"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 112: User can see existing messages" time="0.084"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 113: User can send a new message" time="0.182"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 114: User can open message context menu" time="0.195"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 115: User can translate a message" time="0.192"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 116: User can see translated content in message bubble" time="0.165"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 117: User can open translation settings" time="0.318"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 118: User can download language pack" time="0.185"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 119: User can copy a message" time="0.159"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features" name="Chat Translation Tests Test 120: Translate option hidden for already translated messages" time="0.199"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="8" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 70: User can view notifications screen" time="2.247"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 71: User can see different notification types" time="0.099"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 72: User can tap notification to navigate to source" time="0.223"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 73: User can see unread indicators" time="0.121"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 74: User can mark all as read" time="0.189"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 75: User can access notification settings" time="0.335"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 76: User can configure notification preferences" time="0.112"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications" name="Notifications Tests Test 77: User can save notification preferences" time="0.223"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="12" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 16: New user sees main screen after login" time="1.786"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 17: User can access edit profile from profile tab" time="0.523"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 18: User can edit basic info" time="0.24"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 19: User can access photos section" time="0.12"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 20: User can add a new photo" time="0.162"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 21: User can edit bio" time="0.127"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 22: User can save bio changes" time="0.183"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 23: User sees discard dialog when leaving with unsaved changes" time="0.214"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 24: User can view profile sections" time="0.089"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 25: User can select height from picker" time="0.133"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 26: User sees validation for empty name" time="0.133"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding" name="Onboarding Tests Test 27: User can delete a photo" time="0.138"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="10" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 28: User can view their profile from Profile tab" time="1.793"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 29: User can navigate to Edit Profile screen" time="0.575"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 30: User can edit basic info" time="0.562"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 31: User can manage photos" time="0.09"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 32: User can add new photo from gallery" time="0.209"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 33: User can take new photo with camera" time="0.138"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 34: User can delete a photo" time="0.18"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 35: User can update bio" time="0.187"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 36: User sees bio character count" time="0.131"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing" name="Profile Editing Tests Test 37: User can select height from picker" time="0.161"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="3" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings" name="Settings Tests Test 98: User can access settings" time="1.609"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings" name="Settings Tests Test 99: User can view app version and info" time="0.178"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings" name="Settings Tests Test 100: User can access help and support" time="0.157"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="4" skipped="0" name="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription" timestamp="2025-11-19T15:52:13">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription" name="Subscription Tests Test 94: User can view subscription plans" time="1.85"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription" name="Subscription Tests Test 95: User can see premium features for each tier" time="0.079"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription" name="Subscription Tests Test 96: User can initiate subscription" time="0.18"/>
+    <testcase classname="C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription" name="Subscription Tests Test 97: User can compare subscription tiers" time="0.069"/>
+  </testsuite>
+</testsuites>

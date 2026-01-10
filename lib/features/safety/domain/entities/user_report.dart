@@ -268,7 +268,7 @@ enum WarningSeverity {
   minor, // First-time offense
   moderate,
   severe,
-  final, // Last warning before ban
+  finalWarning, // Last warning before ban
 }
 
 /// Moderation queue entry (Point 209)

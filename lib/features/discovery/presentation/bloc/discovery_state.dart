@@ -1,5 +1,6 @@
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match.dart';
+import '../../../../core/services/usage_limit_service.dart';
 
 /// Discovery States
 abstract class DiscoveryState {
@@ -95,4 +96,30 @@ class DiscoveryError extends DiscoveryState {
   final String message;
 
   const DiscoveryError(this.message);
+}
+
+/// Swipe limit reached state
+class DiscoverySwipeLimitReached extends DiscoveryState {
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+  final UsageLimitResult limitResult;
+
+  const DiscoverySwipeLimitReached({
+    required this.cards,
+    required this.currentIndex,
+    required this.limitResult,
+  });
+}
+
+/// Super like limit reached state
+class DiscoverySuperLikeLimitReached extends DiscoveryState {
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+  final UsageLimitResult limitResult;
+
+  const DiscoverySuperLikeLimitReached({
+    required this.cards,
+    required this.currentIndex,
+    required this.limitResult,
+  });
 }

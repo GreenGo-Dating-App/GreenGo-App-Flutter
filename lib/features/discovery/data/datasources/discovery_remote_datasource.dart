@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
+import '../../../matching/domain/entities/match_score.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -88,10 +89,67 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Filter out already swiped profiles
     final filteredCandidates = candidates
         .where((candidate) => !swipedUserIds.contains(candidate.profile.userId))
-        .take(limit)
+        .take(limit - 1) // Reserve one spot for admin
         .toList();
 
+    // Always add admin profile at the beginning if not already swiped
+    final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
+    if (adminCandidate != null) {
+      return [adminCandidate, ...filteredCandidates];
+    }
+
     return filteredCandidates;
+  }
+
+  /// Get admin profile as a match candidate
+  Future<MatchCandidate?> _getAdminCandidate(String userId, Set<String> swipedUserIds) async {
+    try {
+      // Query for admin profile
+      final adminQuery = await firestore
+          .collection('profiles')
+          .where('isAdmin', isEqualTo: true)
+          .limit(1)
+          .get();
+
+      if (adminQuery.docs.isEmpty) return null;
+
+      final adminDoc = adminQuery.docs.first;
+
+      // Don't show admin to themselves
+      if (adminDoc.id == userId) return null;
+
+      // Don't show if already swiped
+      if (swipedUserIds.contains(adminDoc.id)) return null;
+
+      final adminProfile = ProfileModel.fromFirestore(adminDoc);
+
+      // Create a special match score for admin (always shown as recommended)
+      final adminMatchScore = MatchScore(
+        userId1: userId,
+        userId2: adminDoc.id,
+        overallScore: 100.0, // Admin is always shown as top match
+        breakdown: const ScoreBreakdown(
+          locationScore: 100.0,
+          ageCompatibilityScore: 100.0,
+          interestOverlapScore: 100.0,
+          personalityCompatibilityScore: 100.0,
+          activityPatternScore: 100.0,
+          collaborativeFilteringScore: 100.0,
+        ),
+        calculatedAt: DateTime.now(),
+      );
+
+      return MatchCandidate(
+        profile: adminProfile,
+        matchScore: adminMatchScore,
+        distance: 0.0, // Admin is always "nearby"
+        suggestedAt: DateTime.now(),
+        isSuperLike: true, // Mark admin as super recommended
+      );
+    } catch (e) {
+      // If any error, just skip admin
+      return null;
+    }
   }
 
   @override

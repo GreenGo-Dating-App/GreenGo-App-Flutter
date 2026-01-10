@@ -1,4 +1,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Camera Permission (for profile photos) -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Storage Permissions (for photos/media) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+                     android:maxSdkVersion="32" />
+
+    <!-- Permissions for Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+
     <application
         android:label="greengo_chat"
         android:name="${applicationName}"

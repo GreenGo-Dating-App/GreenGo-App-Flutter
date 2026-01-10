@@ -1,19 +1,22 @@
-import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../domain/entities/coin_balance.dart';
 import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
-import '../../domain/entities/coin_promotion.dart';
 import '../../domain/entities/coin_reward.dart';
 import '../../domain/entities/coin_transaction.dart';
+import '../../domain/entities/video_coin.dart';
+import '../../domain/entities/order.dart';
+import '../../domain/entities/invoice.dart';
 import '../models/coin_balance_model.dart';
 import '../models/coin_gift_model.dart';
 import '../models/coin_promotion_model.dart';
 import '../models/coin_transaction_model.dart';
+import '../models/video_coin_model.dart';
+import '../models/order_model.dart';
+import '../models/invoice_model.dart';
 
 /// Coin Remote Data Source
 /// Handles all coin-related operations with Firestore and in-app purchases
@@ -38,19 +41,20 @@ class CoinRemoteDataSource {
       firestore.collection('coinPromotions');
   CollectionReference get _rewardsCollection =>
       firestore.collection('claimedRewards');
+  CollectionReference get _videoCoinBalancesCollection =>
+      firestore.collection('videoCoinBalances');
+  CollectionReference get _videoCoinTransactionsCollection =>
+      firestore.collection('videoCoinTransactions');
+  CollectionReference get _ordersCollection =>
+      firestore.collection('coinOrders');
+  CollectionReference get _invoicesCollection =>
+      firestore.collection('invoices');
 
   /// Initialize in-app purchases
+  /// Note: Pending purchases are enabled by default in in_app_purchase 3.0+
   Future<bool> initializePurchases() async {
     final available = await inAppPurchase.isAvailable();
-    if (!available) return false;
-
-    if (Platform.isAndroid) {
-      final androidAddition =
-          inAppPurchase.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
-      await androidAddition.enablePendingPurchases();
-    }
-
-    return true;
+    return available;
   }
 
   // ===== Balance Operations =====
@@ -662,5 +666,568 @@ class CoinRemoteDataSource {
 
     if (snapshot.docs.isEmpty) return null;
     return CoinPromotionModel.fromFirestore(snapshot.docs.first);
+  }
+
+  // ===== Video Coin Operations =====
+
+  /// Get video coin balance for user
+  Future<VideoCoinBalanceModel> getVideoCoinBalance(String userId) async {
+    final doc = await _videoCoinBalancesCollection.doc(userId).get();
+
+    if (!doc.exists) {
+      final newBalance = VideoCoinBalanceModel.empty(userId);
+      await _videoCoinBalancesCollection.doc(userId).set(newBalance.toFirestore());
+      return newBalance;
+    }
+
+    return VideoCoinBalanceModel.fromFirestore(doc);
+  }
+
+  /// Stream video coin balance
+  Stream<VideoCoinBalanceModel> videoCoinBalanceStream(String userId) {
+    return _videoCoinBalancesCollection.doc(userId).snapshots().map((doc) {
+      if (!doc.exists) {
+        return VideoCoinBalanceModel.empty(userId);
+      }
+      return VideoCoinBalanceModel.fromFirestore(doc);
+    });
+  }
+
+  /// Add video coins to user
+  Future<void> addVideoCoins({
+    required String userId,
+    required int minutes,
+    required VideoCoinTransactionType type,
+    String? relatedUserId,
+    String? callId,
+  }) async {
+    await firestore.runTransaction((transaction) async {
+      final balanceRef = _videoCoinBalancesCollection.doc(userId);
+      final balanceDoc = await transaction.get(balanceRef);
+
+      VideoCoinBalanceModel currentBalance;
+      if (!balanceDoc.exists) {
+        currentBalance = VideoCoinBalanceModel.empty(userId);
+      } else {
+        currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
+      }
+
+      final newTotal = currentBalance.totalVideoCoins + minutes;
+
+      final updatedBalance = VideoCoinBalanceModel(
+        userId: userId,
+        totalVideoCoins: newTotal,
+        usedVideoCoins: currentBalance.usedVideoCoins,
+        lastUpdated: DateTime.now(),
+      );
+
+      transaction.set(balanceRef, updatedBalance.toFirestore());
+
+      // Create transaction record
+      final transactionId = uuid.v4();
+      final transactionModel = VideoCoinTransactionModel(
+        transactionId: transactionId,
+        userId: userId,
+        type: type,
+        minutes: minutes,
+        balanceAfter: updatedBalance.availableVideoCoins,
+        relatedUserId: relatedUserId,
+        callId: callId,
+        createdAt: DateTime.now(),
+      );
+
+      transaction.set(
+        _videoCoinTransactionsCollection.doc(transactionId),
+        transactionModel.toFirestore(),
+      );
+    });
+  }
+
+  /// Use video coins for call
+  Future<void> useVideoCoins({
+    required String userId,
+    required int minutes,
+    required String callId,
+    String? relatedUserId,
+  }) async {
+    await firestore.runTransaction((transaction) async {
+      final balanceRef = _videoCoinBalancesCollection.doc(userId);
+      final balanceDoc = await transaction.get(balanceRef);
+
+      if (!balanceDoc.exists) {
+        throw Exception('No video coin balance found');
+      }
+
+      final currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
+
+      if (currentBalance.availableVideoCoins < minutes) {
+        throw Exception('Insufficient video coins');
+      }
+
+      final newUsed = currentBalance.usedVideoCoins + minutes;
+
+      final updatedBalance = VideoCoinBalanceModel(
+        userId: userId,
+        totalVideoCoins: currentBalance.totalVideoCoins,
+        usedVideoCoins: newUsed,
+        lastUpdated: DateTime.now(),
+      );
+
+      transaction.set(balanceRef, updatedBalance.toFirestore());
+
+      // Create transaction record
+      final transactionId = uuid.v4();
+      final transactionModel = VideoCoinTransactionModel(
+        transactionId: transactionId,
+        userId: userId,
+        type: VideoCoinTransactionType.used,
+        minutes: minutes,
+        balanceAfter: updatedBalance.availableVideoCoins,
+        relatedUserId: relatedUserId,
+        callId: callId,
+        createdAt: DateTime.now(),
+      );
+
+      transaction.set(
+        _videoCoinTransactionsCollection.doc(transactionId),
+        transactionModel.toFirestore(),
+      );
+    });
+  }
+
+  /// Get video coin transaction history
+  Future<List<VideoCoinTransactionModel>> getVideoCoinTransactions({
+    required String userId,
+    int? limit,
+  }) async {
+    Query query = _videoCoinTransactionsCollection
+        .where('userId', isEqualTo: userId)
+        .orderBy('createdAt', descending: true);
+
+    if (limit != null) {
+      query = query.limit(limit);
+    }
+
+    final snapshot = await query.get();
+    return snapshot.docs
+        .map((doc) => VideoCoinTransactionModel.fromFirestore(doc))
+        .toList();
+  }
+
+  // ===== Order Operations =====
+
+  /// Create order
+  Future<CoinOrderModel> createOrder({
+    required String userId,
+    required OrderType type,
+    required String packageId,
+    required int itemQuantity,
+    required double subtotal,
+    required double tax,
+    required double total,
+    required PaymentMethod paymentMethod,
+    Map<String, dynamic>? metadata,
+  }) async {
+    final orderId = uuid.v4();
+    final order = CoinOrderModel(
+      orderId: orderId,
+      userId: userId,
+      type: type,
+      status: OrderStatus.pending,
+      packageId: packageId,
+      itemQuantity: itemQuantity,
+      subtotal: subtotal,
+      tax: tax,
+      total: total,
+      paymentMethod: paymentMethod,
+      createdAt: DateTime.now(),
+      metadata: metadata,
+    );
+
+    await _ordersCollection.doc(orderId).set(order.toFirestore());
+    return order;
+  }
+
+  /// Update order status
+  Future<void> updateOrderStatus({
+    required String orderId,
+    required OrderStatus status,
+    String? transactionId,
+    String? paymentIntentId,
+  }) async {
+    final updates = <String, dynamic>{
+      'status': status.name,
+    };
+
+    if (transactionId != null) {
+      updates['transactionId'] = transactionId;
+    }
+
+    if (paymentIntentId != null) {
+      updates['paymentIntentId'] = paymentIntentId;
+    }
+
+    if (status == OrderStatus.completed) {
+      updates['completedAt'] = Timestamp.fromDate(DateTime.now());
+    }
+
+    await _ordersCollection.doc(orderId).update(updates);
+  }
+
+  /// Get order by ID
+  Future<CoinOrderModel?> getOrderById(String orderId) async {
+    final doc = await _ordersCollection.doc(orderId).get();
+    if (!doc.exists) return null;
+    return CoinOrderModel.fromFirestore(doc);
+  }
+
+  /// Get user orders
+  Future<List<CoinOrderModel>> getUserOrders({
+    required String userId,
+    int? limit,
+    OrderStatus? status,
+  }) async {
+    Query query = _ordersCollection
+        .where('userId', isEqualTo: userId)
+        .orderBy('createdAt', descending: true);
+
+    if (status != null) {
+      query = query.where('status', isEqualTo: status.name);
+    }
+
+    if (limit != null) {
+      query = query.limit(limit);
+    }
+
+    final snapshot = await query.get();
+    return snapshot.docs
+        .map((doc) => CoinOrderModel.fromFirestore(doc))
+        .toList();
+  }
+
+  /// Get all orders (admin)
+  Future<List<CoinOrderModel>> getAllOrders({
+    int? limit,
+    OrderStatus? status,
+    OrderType? type,
+    DateTime? startDate,
+    DateTime? endDate,
+  }) async {
+    Query query = _ordersCollection.orderBy('createdAt', descending: true);
+
+    if (status != null) {
+      query = query.where('status', isEqualTo: status.name);
+    }
+
+    if (type != null) {
+      query = query.where('type', isEqualTo: type.name);
+    }
+
+    if (startDate != null) {
+      query = query.where('createdAt',
+          isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
+    }
+
+    if (endDate != null) {
+      query = query.where('createdAt',
+          isLessThanOrEqualTo: Timestamp.fromDate(endDate));
+    }
+
+    if (limit != null) {
+      query = query.limit(limit);
+    }
+
+    final snapshot = await query.get();
+    return snapshot.docs
+        .map((doc) => CoinOrderModel.fromFirestore(doc))
+        .toList();
+  }
+
+  /// Refund order
+  Future<void> refundOrder({
+    required String orderId,
+    required String reason,
+  }) async {
+    await _ordersCollection.doc(orderId).update({
+      'status': OrderStatus.refunded.name,
+      'refundedAt': Timestamp.fromDate(DateTime.now()),
+      'refundReason': reason,
+    });
+  }
+
+  // ===== Invoice Operations =====
+
+  /// Create invoice from order
+  Future<InvoiceModel> createInvoiceFromOrder({
+    required CoinOrder order,
+    String? userEmail,
+    String? userName,
+  }) async {
+    final invoiceId = uuid.v4();
+    final invoiceNumber = InvoiceModel.generateInvoiceNumber();
+
+    // Create line item based on order type
+    String description;
+    switch (order.type) {
+      case OrderType.coins:
+        description = '${order.itemQuantity} GreenGo Coins';
+        break;
+      case OrderType.videoCoins:
+        description = '${order.itemQuantity} Video Minutes';
+        break;
+      case OrderType.subscription:
+        description = 'Subscription Plan';
+        break;
+      case OrderType.gift:
+        description = 'Coin Gift Package';
+        break;
+    }
+
+    final lineItems = [
+      InvoiceLineItem(
+        itemId: order.packageId,
+        description: description,
+        quantity: 1,
+        unitPrice: order.subtotal,
+        totalPrice: order.subtotal,
+      ),
+    ];
+
+    final invoice = InvoiceModel(
+      invoiceId: invoiceId,
+      invoiceNumber: invoiceNumber,
+      orderId: order.orderId,
+      userId: order.userId,
+      userEmail: userEmail,
+      userName: userName,
+      status: order.isCompleted ? InvoiceStatus.paid : InvoiceStatus.issued,
+      issueDate: DateTime.now(),
+      paidDate: order.completedAt,
+      lineItems: lineItems,
+      subtotal: order.subtotal,
+      taxRate: order.tax > 0 ? (order.tax / order.subtotal) * 100 : 0.0,
+      taxAmount: order.tax,
+      total: order.total,
+      currency: order.currency,
+      paymentMethod: order.paymentMethod,
+    );
+
+    await _invoicesCollection.doc(invoiceId).set(invoice.toFirestore());
+    return invoice;
+  }
+
+  /// Get invoice by ID
+  Future<InvoiceModel?> getInvoiceById(String invoiceId) async {
+    final doc = await _invoicesCollection.doc(invoiceId).get();
+    if (!doc.exists) return null;
+    return InvoiceModel.fromFirestore(doc);
+  }
+
+  /// Get user invoices
+  Future<List<InvoiceModel>> getUserInvoices({
+    required String userId,
+    int? limit,
+  }) async {
+    Query query = _invoicesCollection
+        .where('userId', isEqualTo: userId)
+        .orderBy('issueDate', descending: true);
+
+    if (limit != null) {
+      query = query.limit(limit);
+    }
+
+    final snapshot = await query.get();
+    return snapshot.docs
+        .map((doc) => InvoiceModel.fromFirestore(doc))
+        .toList();
+  }
+
+  /// Get all invoices (admin)
+  Future<List<InvoiceModel>> getAllInvoices({
+    int? limit,
+    InvoiceStatus? status,
+    DateTime? startDate,
+    DateTime? endDate,
+  }) async {
+    Query query = _invoicesCollection.orderBy('issueDate', descending: true);
+
+    if (status != null) {
+      query = query.where('status', isEqualTo: status.name);
+    }
+
+    if (startDate != null) {
+      query = query.where('issueDate',
+          isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
+    }
+
+    if (endDate != null) {
+      query = query.where('issueDate',
+          isLessThanOrEqualTo: Timestamp.fromDate(endDate));
+    }
+
+    if (limit != null) {
+      query = query.limit(limit);
+    }
+
+    final snapshot = await query.get();
+    return snapshot.docs
+        .map((doc) => InvoiceModel.fromFirestore(doc))
+        .toList();
+  }
+
+  // ===== Admin Operations =====
+
+  /// Adjust user coin balance (admin only)
+  Future<void> adminAdjustCoins({
+    required String userId,
+    required int amount,
+    required String adminId,
+    required String reason,
+  }) async {
+    await updateBalance(
+      userId: userId,
+      amount: amount.abs(),
+      type: amount > 0 ? CoinTransactionType.credit : CoinTransactionType.debit,
+      reason: CoinTransactionReason.adminAdjustment,
+      metadata: {
+        'adminId': adminId,
+        'reason': reason,
+        'adjustmentAmount': amount,
+      },
+    );
+  }
+
+  /// Adjust user video coins (admin only)
+  Future<void> adminAdjustVideoCoins({
+    required String userId,
+    required int minutes,
+    required String adminId,
+    required String reason,
+  }) async {
+    if (minutes > 0) {
+      await addVideoCoins(
+        userId: userId,
+        minutes: minutes,
+        type: VideoCoinTransactionType.bonus,
+      );
+    } else {
+      // For negative adjustments, create a used transaction
+      await firestore.runTransaction((transaction) async {
+        final balanceRef = _videoCoinBalancesCollection.doc(userId);
+        final balanceDoc = await transaction.get(balanceRef);
+
+        if (!balanceDoc.exists) {
+          throw Exception('No video coin balance found');
+        }
+
+        final currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
+        final adjustAmount = minutes.abs();
+
+        if (currentBalance.availableVideoCoins < adjustAmount) {
+          throw Exception('Insufficient video coins for adjustment');
+        }
+
+        final newUsed = currentBalance.usedVideoCoins + adjustAmount;
+
+        final updatedBalance = VideoCoinBalanceModel(
+          userId: userId,
+          totalVideoCoins: currentBalance.totalVideoCoins,
+          usedVideoCoins: newUsed,
+          lastUpdated: DateTime.now(),
+        );
+
+        transaction.set(balanceRef, updatedBalance.toFirestore());
+
+        // Create transaction record
+        final transactionId = uuid.v4();
+        final transactionModel = VideoCoinTransactionModel(
+          transactionId: transactionId,
+          userId: userId,
+          type: VideoCoinTransactionType.expired, // Using expired for admin deductions
+          minutes: adjustAmount,
+          balanceAfter: updatedBalance.availableVideoCoins,
+          createdAt: DateTime.now(),
+        );
+
+        transaction.set(
+          _videoCoinTransactionsCollection.doc(transactionId),
+          transactionModel.toFirestore(),
+        );
+      });
+    }
+  }
+
+  /// Search users by coin balance (admin)
+  Future<List<Map<String, dynamic>>> searchUsersByCoins({
+    int? minBalance,
+    int? maxBalance,
+    int limit = 50,
+  }) async {
+    Query query = _balancesCollection.orderBy('totalCoins', descending: true);
+
+    if (minBalance != null) {
+      query = query.where('totalCoins', isGreaterThanOrEqualTo: minBalance);
+    }
+
+    if (maxBalance != null) {
+      query = query.where('totalCoins', isLessThanOrEqualTo: maxBalance);
+    }
+
+    query = query.limit(limit);
+
+    final snapshot = await query.get();
+    return snapshot.docs.map((doc) {
+      final data = doc.data() as Map<String, dynamic>;
+      return {
+        'userId': doc.id,
+        ...data,
+      };
+    }).toList();
+  }
+
+  /// Get coin statistics (admin)
+  Future<Map<String, dynamic>> getCoinStatistics() async {
+    // Get total coins in circulation
+    final balancesSnapshot = await _balancesCollection.get();
+    int totalCoinsInCirculation = 0;
+    int totalUsersWithCoins = 0;
+
+    for (final doc in balancesSnapshot.docs) {
+      final data = doc.data() as Map<String, dynamic>;
+      final balance = (data['totalCoins'] as num?)?.toInt() ?? 0;
+      if (balance > 0) {
+        totalCoinsInCirculation += balance;
+        totalUsersWithCoins++;
+      }
+    }
+
+    // Get recent orders stats
+    final now = DateTime.now();
+    final thirtyDaysAgo = now.subtract(const Duration(days: 30));
+    final ordersSnapshot = await _ordersCollection
+        .where('createdAt',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
+        .where('status', isEqualTo: OrderStatus.completed.name)
+        .get();
+
+    double totalRevenue = 0;
+    int totalOrders = ordersSnapshot.docs.length;
+
+    for (final doc in ordersSnapshot.docs) {
+      final data = doc.data() as Map<String, dynamic>;
+      totalRevenue += (data['total'] as num?)?.toDouble() ?? 0;
+    }
+
+    return {
+      'totalCoinsInCirculation': totalCoinsInCirculation,
+      'totalUsersWithCoins': totalUsersWithCoins,
+      'averageBalance': totalUsersWithCoins > 0
+          ? totalCoinsInCirculation / totalUsersWithCoins
+          : 0,
+      'last30Days': {
+        'totalOrders': totalOrders,
+        'totalRevenue': totalRevenue,
+      },
+    };
   }
 }

@@ -274,7 +274,7 @@ export const restoreConversation = functions.https.onCall(async (data, context) 
       const authTag = metadata.metadata.authTag;
 
       try {
-        jsonData = decryptData(jsonData, iv, authTag, encryptionKey);
+        jsonData = decryptData(jsonData, String(iv), String(authTag), encryptionKey);
       } catch (error) {
         throw new functions.https.HttpsError(
           'invalid-argument',

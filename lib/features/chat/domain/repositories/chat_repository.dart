@@ -14,6 +14,7 @@ abstract class ChatRepository {
   /// Stream of messages for a conversation (real-time)
   Stream<Either<Failure, List<Message>>> getMessagesStream({
     required String conversationId,
+    String? userId,
     int? limit,
   });
 
@@ -118,5 +119,82 @@ abstract class ChatRepository {
   Future<Either<Failure, void>> updateConversationTheme({
     required String conversationId,
     required ChatTheme theme,
+  });
+
+  /// Block a user
+  Future<Either<Failure, void>> blockUser({
+    required String blockerId,
+    required String blockedUserId,
+    required String reason,
+  });
+
+  /// Unblock a user
+  Future<Either<Failure, void>> unblockUser({
+    required String blockerId,
+    required String blockedUserId,
+  });
+
+  /// Check if user is blocked
+  Future<Either<Failure, bool>> isUserBlocked({
+    required String userId,
+    required String otherUserId,
+  });
+
+  /// Report a user
+  Future<Either<Failure, void>> reportUser({
+    required String reporterId,
+    required String reportedUserId,
+    required String reason,
+    String? conversationId,
+    String? messageId,
+    String? additionalDetails,
+  });
+
+  /// Star/unstar a message
+  Future<Either<Failure, void>> starMessage({
+    required String messageId,
+    required String conversationId,
+    required String userId,
+    required bool isStarred,
+  });
+
+  /// Get starred messages for a user
+  Future<Either<Failure, List<Message>>> getStarredMessages({
+    required String userId,
+    int? limit,
+  });
+
+  /// Forward a message to multiple conversations
+  Future<Either<Failure, void>> forwardMessage({
+    required String messageId,
+    required String fromConversationId,
+    required String senderId,
+    required List<String> toMatchIds,
+  });
+
+  /// Delete conversation for current user only
+  Future<Either<Failure, void>> deleteConversationForMe({
+    required String conversationId,
+    required String userId,
+  });
+
+  /// Delete all messages in conversation for both users
+  Future<Either<Failure, void>> deleteConversationForBoth({
+    required String conversationId,
+    required String userId,
+  });
+
+  /// Delete a specific message for current user only
+  Future<Either<Failure, void>> deleteMessageForMe({
+    required String messageId,
+    required String conversationId,
+    required String userId,
+  });
+
+  /// Delete a specific message for both users (within time limit)
+  Future<Either<Failure, void>> deleteMessageForBoth({
+    required String messageId,
+    required String conversationId,
+    required String userId,
   });
 }

@@ -91,3 +91,13 @@ class AuthEmailVerificationRequested extends AuthEvent {
 class AuthBiometricSignInRequested extends AuthEvent {
   const AuthBiometricSignInRequested();
 }
+
+/// Event to check user's access status (approval and access date)
+class AuthCheckAccessStatusRequested extends AuthEvent {
+  const AuthCheckAccessStatusRequested();
+}
+
+/// Event to enable notifications for waiting users
+class AuthEnableNotificationsRequested extends AuthEvent {
+  const AuthEnableNotificationsRequested();
+}

@@ -1,17 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../core/widgets/language_selector.dart';
+import '../../../../core/widgets/luxury_particles_background.dart';
+import '../../../../core/widgets/animated_luxury_logo.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
 import '../widgets/auth_text_field.dart';
 import '../widgets/auth_button.dart';
-import '../widgets/social_login_button.dart';
+
+// Conditional imports based on feature flags
+// Only import if the corresponding feature is enabled in AppConfig
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart'; // Enable when AppConfig.enableGoogleAuth or enableFacebookAuth = true
+// import '../widgets/social_login_button.dart'; // Enable when any social auth is enabled
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -77,12 +84,44 @@ class _LoginScreenState extends State<LoginScreen>
     }
   }
 
+  /// Build a social login button with consistent styling
+  Widget _buildSocialLoginButton({
+    required BuildContext context,
+    required IconData icon,
+    required VoidCallback? onTap,
+  }) {
+    return Container(
+      width: 56,
+      height: 56,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(color: AppColors.divider, width: 1.5),
+        color: AppColors.backgroundCard,
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(28),
+          child: Center(
+            child: Icon(
+              icon,
+              size: 28,
+              color: AppColors.richGold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
-    return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+    return LuxuryParticlesBackground(
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -104,7 +143,10 @@ class _LoginScreenState extends State<LoginScreen>
                 ),
               );
             } else if (state is AuthAuthenticated) {
-              Navigator.of(context).pushReplacementNamed('/home');
+              Navigator.of(context).pushReplacementNamed(
+                '/home',
+                arguments: {'userId': state.user.uid},
+              );
             }
           },
           builder: (context, state) {
@@ -119,50 +161,12 @@ class _LoginScreenState extends State<LoginScreen>
                   children: [
                     const SizedBox(height: 60),
 
-                    // Logo and Title
+                    // Animated Luxury Logo
                     FadeTransition(
                       opacity: _fadeAnimation,
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(20),
-                            child: Image.asset(
-                              'assets/images/greengo_main_logo_gold.png',
-                              width: 150,
-                              height: 150,
-                              fit: BoxFit.contain,
-                              errorBuilder: (context, error, stackTrace) {
-                                // Fallback to icon if image fails to load
-                                return Container(
-                                  width: 120,
-                                  height: 120,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    gradient: AppColors.goldGradient,
-                                  ),
-                                  child: const Icon(
-                                    Icons.favorite,
-                                    size: 60,
-                                    color: AppColors.deepBlack,
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                          const SizedBox(height: 24),
-                          Text(
-                            l10n.appName,
-                            style: Theme.of(context)
-                                .textTheme
-                                .displayLarge
-                                ?.copyWith(color: AppColors.richGold),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            l10n.appTagline,
-                            style: Theme.of(context).textTheme.titleMedium,
-                          ),
-                        ],
+                      child: const AnimatedLuxuryLogo(
+                        assetPath: 'assets/images/greengo_main_logo_gold.png',
+                        size: 200,
                       ),
                     ),
 
@@ -225,9 +229,9 @@ class _LoginScreenState extends State<LoginScreen>
                                       Navigator.of(context)
                                           .pushNamed('/forgot-password');
                                     },
-                              child: const Text(
-                                AppStrings.forgotPassword,
-                                style: TextStyle(
+                              child: Text(
+                                l10n.forgotPassword,
+                                style: const TextStyle(
                                   color: AppColors.richGold,
                                 ),
                               ),
@@ -245,93 +249,106 @@ class _LoginScreenState extends State<LoginScreen>
 
                           const SizedBox(height: 24),
 
-                          // Divider
-                          Row(
-                            children: [
-                              const Expanded(
-                                  child: Divider(color: AppColors.divider)),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 16),
-                                child: Text(
-                                  AppStrings.orContinueWith,
-                                  style: Theme.of(context).textTheme.bodySmall,
+                          // Social Login Section (conditionally rendered)
+                          if (AppConfig.showSocialLoginSection) ...[
+                            // Divider
+                            Row(
+                              children: [
+                                const Expanded(
+                                    child: Divider(color: AppColors.divider)),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 16),
+                                  child: Text(
+                                    l10n.orContinueWith,
+                                    style: Theme.of(context).textTheme.bodySmall,
+                                  ),
                                 ),
-                              ),
-                              const Expanded(
-                                  child: Divider(color: AppColors.divider)),
-                            ],
-                          ),
-
-                          const SizedBox(height: 24),
-
-                          // Social Login Buttons
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              SocialLoginButton(
-                                icon: 'assets/icons/google.png',
-                                onPressed: isLoading
-                                    ? null
-                                    : () {
-                                        context.read<AuthBloc>().add(
-                                              const AuthSignInWithGoogleRequested(),
-                                            );
-                                      },
-                              ),
-                              // SocialLoginButton(
-                              //   icon: 'assets/icons/apple.png',
-                              //   onPressed: isLoading
-                              //       ? null
-                              //       : () {
-                              //           context.read<AuthBloc>().add(
-                              //                 const AuthSignInWithAppleRequested(),
-                              //             );
-                              //         },
-                              // ),
-                              SocialLoginButton(
-                                icon: 'assets/icons/facebook.png',
-                                onPressed: isLoading
-                                    ? null
-                                    : () {
-                                        context.read<AuthBloc>().add(
-                                              const AuthSignInWithFacebookRequested(),
-                                            );
-                                      },
-                              ),
-                            ],
-                          ),
-
-                          const SizedBox(height: 24),
-
-                          // Biometric Login
-                          TextButton.icon(
-                            onPressed: isLoading
-                                ? null
-                                : () {
-                                    context.read<AuthBloc>().add(
-                                          const AuthBiometricSignInRequested(),
-                                        );
-                                  },
-                            icon: const Icon(
-                              Icons.fingerprint,
-                              color: AppColors.richGold,
+                                const Expanded(
+                                    child: Divider(color: AppColors.divider)),
+                              ],
                             ),
-                            label: const Text(
-                              'Login with Biometrics',
-                              style: TextStyle(color: AppColors.richGold),
-                            ),
-                          ),
 
-                          const SizedBox(height: 16),
+                            const SizedBox(height: 24),
+
+                            // Social Login Buttons
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                // Google Login Button
+                                if (AppConfig.enableGoogleAuth)
+                                  _buildSocialLoginButton(
+                                    context: context,
+                                    icon: Icons.g_mobiledata, // Placeholder - use FontAwesome when enabled
+                                    onTap: isLoading
+                                        ? null
+                                        : () {
+                                            context.read<AuthBloc>().add(
+                                                  const AuthSignInWithGoogleRequested(),
+                                                );
+                                          },
+                                  ),
+
+                                // Facebook Login Button
+                                if (AppConfig.enableFacebookAuth)
+                                  _buildSocialLoginButton(
+                                    context: context,
+                                    icon: Icons.facebook, // Placeholder - use FontAwesome when enabled
+                                    onTap: isLoading
+                                        ? null
+                                        : () {
+                                            context.read<AuthBloc>().add(
+                                                  const AuthSignInWithFacebookRequested(),
+                                                );
+                                          },
+                                  ),
+
+                                // Biometric Login Button
+                                if (AppConfig.enableBiometricAuth)
+                                  _buildSocialLoginButton(
+                                    context: context,
+                                    icon: Icons.fingerprint,
+                                    onTap: isLoading
+                                        ? null
+                                        : () {
+                                            context.read<AuthBloc>().add(
+                                                  const AuthBiometricSignInRequested(),
+                                                );
+                                          },
+                                  ),
+
+                                // Apple Login Button
+                                if (AppConfig.enableAppleAuth)
+                                  _buildSocialLoginButton(
+                                    context: context,
+                                    icon: Icons.apple,
+                                    onTap: isLoading
+                                        ? null
+                                        : () {
+                                            // TODO: Implement Apple Sign In
+                                            ScaffoldMessenger.of(context).showSnackBar(
+                                              const SnackBar(
+                                                content: Text('Apple Sign-In coming soon'),
+                                              ),
+                                            );
+                                          },
+                                  ),
+                              ],
+                            ),
+
+                            const SizedBox(height: 24),
+                          ],
 
                           // Sign Up Link
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                AppStrings.dontHaveAccount,
-                                style: Theme.of(context).textTheme.bodyMedium,
+                                l10n.dontHaveAccount,
+                                style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 14,
+                                ),
                               ),
                               TextButton(
                                 onPressed: isLoading
@@ -340,16 +357,19 @@ class _LoginScreenState extends State<LoginScreen>
                                         Navigator.of(context)
                                             .pushReplacementNamed('/register');
                                       },
-                                child: const Text(
-                                  AppStrings.signUp,
-                                  style: TextStyle(
+                                child: Text(
+                                  l10n.signUp,
+                                  style: const TextStyle(
                                     color: AppColors.richGold,
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 14,
                                   ),
                                 ),
                               ),
                             ],
                           ),
+
+                          const SizedBox(height: 20),
                         ],
                       ),
                     ),
@@ -359,6 +379,7 @@ class _LoginScreenState extends State<LoginScreen>
             );
           },
         ),
+      ),
       ),
     );
   }

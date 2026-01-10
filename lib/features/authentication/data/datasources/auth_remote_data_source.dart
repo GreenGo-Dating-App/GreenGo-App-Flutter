@@ -1,7 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-import 'package:google_sign_in/google_sign_in.dart';
+// Conditional imports - uncomment when enabling features in AppConfig
+// import 'package:google_sign_in/google_sign_in.dart';
 // import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+// import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import '../../../../core/config/app_config.dart';
 import '../../../../core/error/exceptions.dart';
 import '../models/user_model.dart';
 
@@ -76,13 +78,13 @@ abstract class AuthRemoteDataSource {
 
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   final firebase_auth.FirebaseAuth firebaseAuth;
-  final GoogleSignIn googleSignIn;
-  final FacebookAuth facebookAuth;
+  final dynamic googleSignIn; // Will be GoogleSignIn? when enabled
+  final dynamic facebookAuth; // Will be FacebookAuth? when enabled
 
   AuthRemoteDataSourceImpl({
     required this.firebaseAuth,
-    required this.googleSignIn,
-    required this.facebookAuth,
+    this.googleSignIn,
+    this.facebookAuth,
   });
 
   @override
@@ -136,16 +138,22 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
   @override
   Future<UserModel> signInWithGoogle() async {
+    if (!AppConfig.enableGoogleAuth || googleSignIn == null) {
+      throw AuthenticationException(
+        'Google Sign-In is not enabled or configured. Enable it in AppConfig and add google_sign_in package.',
+      );
+    }
+
     try {
       // Trigger the authentication flow
-      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+      final googleUser = await googleSignIn.signIn();
 
       if (googleUser == null) {
         throw AuthenticationException('Google sign in aborted');
       }
 
       // Obtain the auth details from the request
-      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+      final googleAuth = await googleUser.authentication;
 
       // Create a new credential
       final credential = firebase_auth.GoogleAuthProvider.credential(
@@ -208,13 +216,19 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
   @override
   Future<UserModel> signInWithFacebook() async {
+    if (!AppConfig.enableFacebookAuth || facebookAuth == null) {
+      throw AuthenticationException(
+        'Facebook Login is not enabled or configured. Enable it in AppConfig and add flutter_facebook_auth package.',
+      );
+    }
+
     try {
       // Trigger the sign-in flow
-      final LoginResult loginResult = await facebookAuth.login(
+      final loginResult = await facebookAuth.login(
         permissions: ['email', 'public_profile'],
       );
 
-      if (loginResult.status != LoginStatus.success) {
+      if (loginResult.status.toString() != 'LoginStatus.success') {
         throw AuthenticationException('Facebook sign in failed: ${loginResult.message}');
       }
 
@@ -242,11 +256,19 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   @override
   Future<void> signOut() async {
     try {
-      await Future.wait([
+      final futures = <Future>[
         firebaseAuth.signOut(),
-        googleSignIn.signOut(),
-        facebookAuth.logOut(),
-      ]);
+      ];
+
+      // Only sign out from social providers if they're enabled
+      if (AppConfig.enableGoogleAuth && googleSignIn != null) {
+        futures.add(googleSignIn.signOut());
+      }
+      if (AppConfig.enableFacebookAuth && facebookAuth != null) {
+        futures.add(facebookAuth.logOut());
+      }
+
+      await Future.wait(futures);
     } catch (e) {
       throw AuthenticationException('Sign out failed: ${e.toString()}');
     }

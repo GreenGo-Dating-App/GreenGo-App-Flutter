@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography System - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Typography System</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Typography System
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Typography System</h2>
+            <p>Complete type scale, font families, and text styles for consistent typography across the application.</p>
+
+            <h2>Font Families</h2>
+            <div class="info-box">
+                <strong>Primary Font:</strong> Poppins (Google Fonts)<br>
+                <strong>Fallback:</strong> SF Pro Display (iOS), Roboto (Android)<br>
+                <strong>Monospace:</strong> SF Mono, Roboto Mono
+            </div>
+
+            <h2>Type Scale</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           TYPE SCALE                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Style           Size    Weight    Line Height    Letter Spacing
+─────────────────────────────────────────────────────────────────
+Display Large   57px    400       64px           -0.25px
+Display Medium  45px    400       52px           0px
+Display Small   36px    400       44px           0px
+
+Headline Large  32px    600       40px           0px
+Headline Medium 28px    600       36px           0px
+Headline Small  24px    600       32px           0px
+
+Title Large     22px    500       28px           0px
+Title Medium    16px    500       24px           0.15px
+Title Small     14px    500       20px           0.1px
+
+Body Large      16px    400       24px           0.5px
+Body Medium     14px    400       20px           0.25px
+Body Small      12px    400       16px           0.4px
+
+Label Large     14px    500       20px           0.1px
+Label Medium    12px    500       16px           0.5px
+Label Small     11px    500       16px           0.5px
+            </code></pre>
+
+            <h2>Flutter Text Theme</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/text_theme.dart
+
+class AppTextTheme {
+  static const String fontFamily = 'Poppins';
+
+  static TextTheme get textTheme => const TextTheme(
+    // Display
+    displayLarge: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 57,
+      fontWeight: FontWeight.w400,
+      height: 1.12,
+      letterSpacing: -0.25,
+    ),
+    displayMedium: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 45,
+      fontWeight: FontWeight.w400,
+      height: 1.16,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 36,
+      fontWeight: FontWeight.w400,
+      height: 1.22,
+    ),
+
+    // Headline
+    headlineLarge: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 32,
+      fontWeight: FontWeight.w600,
+      height: 1.25,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 28,
+      fontWeight: FontWeight.w600,
+      height: 1.29,
+    ),
+    headlineSmall: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 24,
+      fontWeight: FontWeight.w600,
+      height: 1.33,
+    ),
+
+    // Title
+    titleLarge: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 22,
+      fontWeight: FontWeight.w500,
+      height: 1.27,
+    ),
+    titleMedium: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.5,
+      letterSpacing: 0.15,
+    ),
+    titleSmall: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      height: 1.43,
+      letterSpacing: 0.1,
+    ),
+
+    // Body
+    bodyLarge: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      height: 1.5,
+      letterSpacing: 0.5,
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      height: 1.43,
+      letterSpacing: 0.25,
+    ),
+    bodySmall: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      height: 1.33,
+      letterSpacing: 0.4,
+    ),
+
+    // Label
+    labelLarge: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      height: 1.43,
+      letterSpacing: 0.1,
+    ),
+    labelMedium: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
+      height: 1.33,
+      letterSpacing: 0.5,
+    ),
+    labelSmall: TextStyle(
+      fontFamily: fontFamily,
+      fontSize: 11,
+      fontWeight: FontWeight.w500,
+      height: 1.45,
+      letterSpacing: 0.5,
+    ),
+  );
+}
+            </code></pre>
+
+            <h2>Usage Examples</h2>
+            <table>
+                <thead>
+                    <tr><th>Style</th><th>Use Case</th><th>Example</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>headlineLarge</strong></td>
+                        <td>Page titles</td>
+                        <td>"Discover", "Messages"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>headlineMedium</strong></td>
+                        <td>Section headers</td>
+                        <td>"New Matches", "Settings"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>titleLarge</strong></td>
+                        <td>Card titles</td>
+                        <td>User names on cards</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bodyLarge</strong></td>
+                        <td>Primary body text</td>
+                        <td>User bios, descriptions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bodyMedium</strong></td>
+                        <td>Secondary text</td>
+                        <td>Chat messages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>labelLarge</strong></td>
+                        <td>Button labels</td>
+                        <td>"Sign In", "Send"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>labelSmall</strong></td>
+                        <td>Metadata</td>
+                        <td>Timestamps, distances</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Font Weight Reference</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        FONT WEIGHTS                                      │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Weight    Value    Usage
+──────────────────────────────────────────
+Light     300      Subtle text, large displays
+Regular   400      Body text, descriptions
+Medium    500      Titles, emphasized text
+SemiBold  600      Headlines, important labels
+Bold      700      Strong emphasis (use sparingly)
+            </code></pre>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

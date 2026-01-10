@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart';
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
 
 abstract class ProfileRemoteDataSource {
@@ -9,7 +11,7 @@ abstract class ProfileRemoteDataSource {
   Future<ProfileModel> getProfile(String userId);
   Future<ProfileModel> updateProfile(ProfileModel profile);
   Future<void> deleteProfile(String userId);
-  Future<String> uploadPhoto(String userId, File photo);
+  Future<String> uploadPhoto(String userId, File photo, {String? folder});
   Future<void> deletePhoto(String userId, String photoUrl);
   Future<String> uploadVoiceRecording(String userId, File recording);
   Future<bool> verifyPhotoWithAI(File photo);
@@ -116,13 +118,24 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   }
 
   @override
-  Future<String> uploadPhoto(String userId, File photo) async {
+  Future<String> uploadPhoto(String userId, File photo, {String? folder}) async {
     try {
+      // Compress image before upload to reduce storage costs
+      File photoToUpload = photo;
+      try {
+        photoToUpload = await ImageCompression.compressProfilePhoto(photo);
+        debugPrint('Photo compressed for upload');
+      } catch (e) {
+        debugPrint('Compression failed, using original: $e');
+        // Use original if compression fails
+      }
+
       final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
-      final ref = storage.ref().child('profiles/$userId/photos/$fileName');
+      final folderPath = folder ?? 'photos';
+      final ref = storage.ref().child('profiles/$userId/$folderPath/$fileName');
 
       final uploadTask = await ref.putFile(
-        photo,
+        photoToUpload,
         SettableMetadata(
           contentType: 'image/jpeg',
           customMetadata: {'userId': userId},

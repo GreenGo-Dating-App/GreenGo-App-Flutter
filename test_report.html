@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGo App - Test Report</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            margin: 0; padding: 20px; background: #f5f5f5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #2e7d32; margin-bottom: 10px; }
+        .summary {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px; margin: 20px 0;
+        }
+        .card {
+            background: white; padding: 20px; border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;
+        }
+        .card h3 { margin: 0 0 10px 0; color: #666; font-size: 14px; }
+        .card .value { font-size: 32px; font-weight: bold; }
+        .card.total .value { color: #1976d2; }
+        .card.passed .value { color: #2e7d32; }
+        .card.failed .value { color: #d32f2f; }
+        .card.time .value { color: #f57c00; font-size: 24px; }
+        .progress-bar {
+            height: 8px; background: #e0e0e0; border-radius: 4px;
+            overflow: hidden; margin: 20px 0;
+        }
+        .progress-fill {
+            height: 100%; background: #4caf50; border-radius: 4px;
+            transition: width 0.3s;
+        }
+        .test-list { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .test-item {
+            padding: 12px 20px; border-bottom: 1px solid #eee;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .test-item:last-child { border-bottom: none; }
+        .test-item:hover { background: #f9f9f9; }
+        .test-name { flex: 1; }
+        .test-status {
+            padding: 4px 12px; border-radius: 12px; font-size: 12px;
+            font-weight: 600; text-transform: uppercase;
+        }
+        .test-status.passed { background: #e8f5e9; color: #2e7d32; }
+        .test-status.failed { background: #ffebee; color: #d32f2f; }
+        .test-time { color: #999; font-size: 12px; margin-left: 10px; min-width: 60px; text-align: right; }
+        .header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .timestamp { color: #666; font-size: 14px; }
+        .filter-buttons { margin: 20px 0; }
+        .filter-btn {
+            padding: 8px 16px; margin-right: 10px; border: none;
+            border-radius: 4px; cursor: pointer; font-size: 14px;
+        }
+        .filter-btn.active { background: #2e7d32; color: white; }
+        .filter-btn:not(.active) { background: #e0e0e0; }
+        .category {
+            font-size: 11px; color: #999; display: block;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌱 GreenGo App - Test Report</h1>
+            <span class="timestamp">Generated: 2025-11-19 16:53:20</span>
+        </div>
+
+        <div class="summary">
+            <div class="card total">
+                <h3>TOTAL TESTS</h3>
+                <div class="value">240</div>
+            </div>
+            <div class="card passed">
+                <h3>PASSED</h3>
+                <div class="value">240</div>
+            </div>
+            <div class="card failed">
+                <h3>FAILED</h3>
+                <div class="value">0</div>
+            </div>
+            <div class="card time">
+                <h3>DURATION</h3>
+                <div class="value">0.00s</div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 100.0%"></div>
+        </div>
+
+        <h2>Test Results</h2>
+        <div class="test-list">
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 1: User can view login screen on app launch
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.891s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 2: User can navigate to registration screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.394s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 3: User can register with valid credentials
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.574s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 4: User sees error for invalid email format during registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.407s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 5: User sees password strength indicator during registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.365s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 6: User sees error when passwords do not match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.376s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 7: User can login with valid credentials
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.351s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 8: User sees error for invalid credentials during login
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.247s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 9: User can toggle password visibility
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.218s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 10: User can navigate to forgot password screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.166s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 11: User can request password reset
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.255s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 12: User can access language selector on login screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.163s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 13: User sees loading indicator during authentication
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.285s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 14: Login button is present and functional
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.089s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Authentication Tests Test 15: Create Account link is present and functional
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.156s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 16: New user sees main screen after login
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.321s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 17: User can access edit profile from profile tab
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.377s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 18: User can edit basic info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.134s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 19: User can access photos section
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.067s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 20: User can add a new photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.113s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 21: User can edit bio
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.146s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 22: User can save bio changes
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.171s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 23: User sees discard dialog when leaving with unsaved changes
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.188s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 24: User can view profile sections
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.069s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 25: User can select height from picker
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.101s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 26: User sees validation for empty name
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.139s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Onboarding Tests Test 27: User can delete a photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.111s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 28: User can view their profile from Profile tab
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.172s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 29: User can navigate to Edit Profile screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.217s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 30: User can edit basic info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.209s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 31: User can manage photos
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.463s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 32: User can add new photo from gallery
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.132s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 33: User can take new photo with camera
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.110s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 34: User can delete a photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.100s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 35: User can update bio
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.121s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 36: User sees bio character count
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.075s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Profile Editing Tests Test 37: User can select height from picker
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.094s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 38: User can view discovery screen with profile cards
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.127s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 39: User can tap like button
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.338s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 40: User can tap pass button
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.270s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 41: User can super like a profile
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.127s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 42: User can tap on profile card to view details
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.221s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 43: User can view profile photos in gallery
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.160s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 44: User can access discovery preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.187s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 45: User can adjust age range preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.144s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 46: User can adjust distance preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.146s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 47: User can set gender preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.127s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 48: User can save preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.147s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Discovery & Swiping Tests Test 49: User can use rewind feature
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.095s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 50: User can view matches screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.147s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 51: User can see list of mutual matches
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.133s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 52: User can tap match to view options
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.158s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 53: User can start chat from match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.223s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 54: User can unmatch a match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.160s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 55: User can confirm unmatch
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.185s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 56: User can see match timestamp
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.125s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Matching Tests Test 57: User can refresh matches list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.125s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 58: User can view conversations list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.126s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 59: User can see unread message indicators
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.122s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 60: User can open a conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.193s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 61: User can send a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.158s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 62: User can see message list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.050s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 63: User can see sent messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.051s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 64: User can see received messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.058s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 65: User can see chat partner online status
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.052s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 66: User can tap on partner profile in chat
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.046s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 67: User can delete a conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.171s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 68: User can confirm delete conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.140s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat & Messaging Tests Test 69: User can see message status
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.038s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 70: User can view notifications screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.145s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 71: User can see different notification types
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.041s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 72: User can tap notification to navigate to source
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.074s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 73: User can see unread indicators
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.039s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 74: User can mark all as read
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.045s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 75: User can access notification settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.128s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 76: User can configure notification preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.050s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Notifications Tests Test 77: User can save notification preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.062s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 78: User can view achievements screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.175s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 79: User can see unlocked and locked achievements
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.055s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 80: User can see achievement progress
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.053s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 81: User can filter achievements by category
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.057s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 82: User can view leaderboard
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.051s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 83: User can view daily challenges
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.038s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 84: User can view seasonal events
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.051s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 85: User can see achievement details
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.044s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 86: User can see social achievements
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.050s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Gamification Tests Test 87: User can track achievement progress
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.046s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 88: User can view coin shop
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.140s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 89: User can see coin packages with prices
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.044s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 90: User can see active promotions
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.042s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 91: User can see current coin balance
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.043s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 92: User can access transaction history
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.075s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Coins & Shop Tests Test 93: User can initiate a purchase
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.064s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 94: User can view subscription plans
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.129s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 95: User can see premium features for each tier
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.031s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 96: User can initiate subscription
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.055s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Subscription Tests Test 97: User can compare subscription tiers
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.025s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 98: User can access settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.130s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 99: User can view app version and info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.062s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Settings Tests Test 100: User can access help and support
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.056s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 101: User sees consent checkboxes on registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.083s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 102: User must accept required consents to register
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.058s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 103: User can accept privacy policy checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.119s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 104: User can accept terms checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.110s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 105: Register button enables when required consents are accepted
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.164s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 106: User can accept optional profiling checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.113s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 107: User can accept optional third-party data checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.098s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 108: User can tap privacy policy link
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.082s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 109: User can tap terms link
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.072s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Consent Checkboxes Tests Test 110: User can register with all consents accepted
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.185s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 111: User can view chat screen with messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.049s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 112: User can see existing messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.032s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 113: User can send a new message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.076s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 114: User can open message context menu
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.055s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 115: User can translate a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.087s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 116: User can see translated content in message bubble
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.091s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 117: User can open translation settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.062s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 118: User can download language pack
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.071s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 119: User can copy a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.072s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    GreenGo Chat App - All User Tests (120 tests) Chat Translation Tests Test 120: Translate option hidden for already translated messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.all_user</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.087s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 1: User can view login screen on app launch
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.912s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 2: User can navigate to registration screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.391s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 3: User can register with valid credentials
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.574s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 4: User sees error for invalid email format during registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.525s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 5: User sees password strength indicator during registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.332s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 6: User sees error when passwords do not match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.364s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 7: User can login with valid credentials
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.430s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 8: User sees error for invalid credentials during login
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.250s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 9: User can toggle password visibility
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.202s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 10: User can navigate to forgot password screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.174s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 11: User can request password reset
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.393s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 12: User can access language selector on login screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.192s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 13: User sees loading indicator during authentication
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.336s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 14: Login button is present and functional
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.086s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Authentication Tests Test 15: Create Account link is present and functional
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.authentication</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.167s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 58: User can view conversations list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.406s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 59: User can see unread message indicators
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.233s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 60: User can open a conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.601s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 61: User can send a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.375s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 62: User can see message list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.077s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 63: User can see sent messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.217s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 64: User can see received messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.127s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 65: User can see chat partner online status
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.098s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 66: User can tap on partner profile in chat
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.090s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 67: User can delete a conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.343s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 68: User can confirm delete conversation
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.409s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat & Messaging Tests Test 69: User can see message status
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.chat</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.093s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 88: User can view coin shop
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.874s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 89: User can see coin packages with prices
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.114s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 90: User can see active promotions
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.109s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 91: User can see current coin balance
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.090s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 92: User can access transaction history
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.305s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Coins & Shop Tests Test 93: User can initiate a purchase
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.coins</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.298s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 38: User can view discovery screen with profile cards
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.895s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 39: User can tap like button
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.325s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 40: User can tap pass button
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.183s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 41: User can super like a profile
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.157s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 42: User can tap on profile card to view details
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.468s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 43: User can view profile photos in gallery
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.252s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 44: User can access discovery preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.312s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 45: User can adjust age range preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.179s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 46: User can adjust distance preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.210s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 47: User can set gender preference
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.167s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 48: User can save preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.442s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Discovery & Swiping Tests Test 49: User can use rewind feature
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.discovery</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.177s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 78: User can view achievements screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.821s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 79: User can see unlocked and locked achievements
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.139s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 80: User can see achievement progress
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.182s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 81: User can filter achievements by category
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.102s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 82: User can view leaderboard
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.132s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 83: User can view daily challenges
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.120s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 84: User can view seasonal events
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.091s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 85: User can see achievement details
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.087s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 86: User can see social achievements
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.104s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Gamification Tests Test 87: User can track achievement progress
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.gamification</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.184s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 50: User can view matches screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.889s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 51: User can see list of mutual matches
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.253s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 52: User can tap match to view options
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.452s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 53: User can start chat from match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.672s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 54: User can unmatch a match
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.348s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 55: User can confirm unmatch
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.406s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 56: User can see match timestamp
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.341s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Matching Tests Test 57: User can refresh matches list
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.matching</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.305s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 101: User sees consent checkboxes on registration
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.100s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 102: User must accept required consents to register
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.171s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 103: User can accept privacy policy checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.390s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 104: User can accept terms checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.193s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 105: Register button enables when required consents are accepted
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.293s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 106: User can accept optional profiling checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.190s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 107: User can accept optional third-party data checkbox
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.206s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 108: User can tap privacy policy link
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.196s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 109: User can tap terms link
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.194s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Consent Checkboxes Tests Test 110: User can register with all consents accepted
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.662s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 111: User can view chat screen with messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.228s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 112: User can see existing messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.084s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 113: User can send a new message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.182s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 114: User can open message context menu
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.195s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 115: User can translate a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.192s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 116: User can see translated content in message bubble
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.165s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 117: User can open translation settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.318s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 118: User can download language pack
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.185s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 119: User can copy a message
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.159s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Chat Translation Tests Test 120: Translate option hidden for already translated messages
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.new_features</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.199s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 70: User can view notifications screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">2.247s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 71: User can see different notification types
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.099s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 72: User can tap notification to navigate to source
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.223s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 73: User can see unread indicators
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.121s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 74: User can mark all as read
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.189s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 75: User can access notification settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.335s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 76: User can configure notification preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.112s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Notifications Tests Test 77: User can save notification preferences
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.notifications</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.223s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 16: New user sees main screen after login
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.786s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 17: User can access edit profile from profile tab
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.523s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 18: User can edit basic info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.240s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 19: User can access photos section
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.120s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 20: User can add a new photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.162s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 21: User can edit bio
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.127s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 22: User can save bio changes
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.183s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 23: User sees discard dialog when leaving with unsaved changes
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.214s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 24: User can view profile sections
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.089s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 25: User can select height from picker
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.133s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 26: User sees validation for empty name
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.133s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Onboarding Tests Test 27: User can delete a photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.onboarding</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.138s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 28: User can view their profile from Profile tab
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.793s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 29: User can navigate to Edit Profile screen
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.575s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 30: User can edit basic info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.562s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 31: User can manage photos
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.090s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 32: User can add new photo from gallery
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.209s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 33: User can take new photo with camera
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.138s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 34: User can delete a photo
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.180s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 35: User can update bio
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.187s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 36: User sees bio character count
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.131s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Profile Editing Tests Test 37: User can select height from picker
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.profile_editing</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.161s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Settings Tests Test 98: User can access settings
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.609s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Settings Tests Test 99: User can view app version and info
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.178s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Settings Tests Test 100: User can access help and support
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.settings</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.157s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Subscription Tests Test 94: User can view subscription plans
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">1.850s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Subscription Tests Test 95: User can see premium features for each tier
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.079s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Subscription Tests Test 96: User can initiate subscription
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.180s</span>
+            </div>
+                        <div class="test-item">
+                <div class="test-name">
+                    Subscription Tests Test 97: User can compare subscription tiers
+                    <span class="category">C:.Users.Software Engineering.GreenGo App.GreenGo_App_Flutter.test.userTests.subscription</span>
+                </div>
+                <span class="test-status passed">passed</span>
+                <span class="test-time">0.069s</span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

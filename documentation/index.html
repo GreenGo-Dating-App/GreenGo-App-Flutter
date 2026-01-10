@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGo App Documentation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">GreenGo</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search documentation...">
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+            <!-- 1. Project Overview -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="overview">
+                    <i class="fas fa-home"></i>
+                    <span>Project Overview</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/01-introduction.html" data-page="introduction">1. Project Introduction</a></li>
+                    <li><a href="pages/02-tech-stack.html" data-page="tech-stack">2. Technology Stack</a></li>
+                    <li><a href="pages/03-repository-structure.html" data-page="repo-structure">3. Repository Structure</a></li>
+                    <li><a href="pages/04-version-history.html" data-page="version-history">4. Version History</a></li>
+                    <li><a href="pages/05-getting-started.html" data-page="getting-started">5. Getting Started</a></li>
+                    <li><a href="pages/06-dev-environment.html" data-page="dev-environment">6. Development Environment</a></li>
+                    <li><a href="pages/07-quick-start.html" data-page="quick-start">7. Quick Start Tutorial</a></li>
+                    <li><a href="pages/08-glossary.html" data-page="glossary">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+
+            <!-- 2. Architecture -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="architecture">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Architecture</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="pages/10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="pages/11-state-management.html">11. State Management (BLoC)</a></li>
+                    <li><a href="pages/12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="pages/13-navigation.html">13. Navigation Architecture</a></li>
+                    <li><a href="pages/14-data-flow.html">14. Data Flow Diagram</a></li>
+                    <li><a href="pages/15-repository-pattern.html">15. Repository Pattern</a></li>
+                    <li><a href="pages/16-use-cases.html">16. Use Cases Design</a></li>
+                    <li><a href="pages/17-entities-models.html">17. Entity vs Model</a></li>
+                    <li><a href="pages/18-error-handling.html">18. Error Handling</a></li>
+                    <li><a href="pages/19-caching.html">19. Caching Strategy</a></li>
+                    <li><a href="pages/20-offline-first.html">20. Offline-First Architecture</a></li>
+                </ul>
+            </li>
+
+            <!-- 3. Design System -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="design">
+                    <i class="fas fa-palette"></i>
+                    <span>Design System</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="pages/22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="pages/23-typography.html">23. Typography System</a></li>
+                    <li><a href="pages/24-spacing.html">24. Spacing & Dimensions</a></li>
+                    <li><a href="pages/25-components.html">25. Component Library</a></li>
+                    <li><a href="pages/26-icons.html">26. Icon System</a></li>
+                    <li><a href="pages/27-animations.html">27. Animation Guidelines</a></li>
+                    <li><a href="pages/28-theming.html">28. Dark/Light Theme</a></li>
+                    <li><a href="pages/29-responsive.html">29. Responsive Design</a></li>
+                    <li><a href="pages/30-accessibility.html">30. Accessibility Guidelines</a></li>
+                </ul>
+            </li>
+
+            <!-- 4. Core Features -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="features">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>Core Features</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/31-auth-flow.html">31. Authentication Flow</a></li>
+                    <li><a href="pages/32-social-auth.html">32. Social Authentication</a></li>
+                    <li><a href="pages/33-biometric-auth.html">33. Biometric Authentication</a></li>
+                    <li><a href="pages/34-onboarding.html">34. Profile Onboarding</a></li>
+                    <li><a href="pages/35-photo-upload.html">35. Photo Management</a></li>
+                    <li><a href="pages/36-profile-editing.html">36. Profile Editing</a></li>
+                    <li><a href="pages/37-matching-algorithm.html">37. Matching Algorithm</a></li>
+                    <li><a href="pages/38-discovery.html">38. Discovery Interface</a></li>
+                    <li><a href="pages/39-like-actions.html">39. Like/Pass Actions</a></li>
+                    <li><a href="pages/40-match-system.html">40. Match System</a></li>
+                    <li><a href="pages/41-chat.html">41. Real-time Chat</a></li>
+                    <li><a href="pages/42-message-features.html">42. Message Features</a></li>
+                    <li><a href="pages/43-push-notifications.html">43. Push Notifications</a></li>
+                    <li><a href="pages/44-in-app-notifications.html">44. In-App Notifications</a></li>
+                    <li><a href="pages/45-subscriptions.html">45. Subscription Tiers</a></li>
+                    <li><a href="pages/46-in-app-purchases.html">46. In-App Purchases</a></li>
+                    <li><a href="pages/47-coins.html">47. Virtual Currency</a></li>
+                    <li><a href="pages/48-gamification.html">48. Gamification System</a></li>
+                    <li><a href="pages/49-challenges.html">49. Daily Challenges</a></li>
+                    <li><a href="pages/50-leaderboards.html">50. Leaderboards</a></li>
+                </ul>
+            </li>
+
+            <!-- 5. Backend Services -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="backend">
+                    <i class="fas fa-server"></i>
+                    <span>Backend Services</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/51-firebase-overview.html">51. Firebase Overview</a></li>
+                    <li><a href="pages/52-firestore.html">52. Firestore Database</a></li>
+                    <li><a href="pages/53-firebase-auth.html">53. Firebase Authentication</a></li>
+                    <li><a href="pages/54-firebase-storage.html">54. Firebase Storage</a></li>
+                    <li><a href="pages/55-cloud-functions.html">55. Cloud Functions</a></li>
+                    <li><a href="pages/56-django-backend.html">56. Django Backend</a></li>
+                    <li><a href="pages/57-api-documentation.html">57. API Documentation</a></li>
+                    <li><a href="pages/58-realtime-sync.html">58. Real-time Sync</a></li>
+                    <li><a href="pages/59-background-processing.html">59. Background Processing</a></li>
+                    <li><a href="pages/60-rate-limiting.html">60. Rate Limiting</a></li>
+                </ul>
+            </li>
+
+            <!-- 6. Database -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="database">
+                    <i class="fas fa-database"></i>
+                    <span>Database</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/61-firestore-schema.html">61. Firestore Schema</a></li>
+                    <li><a href="pages/62-postgresql-schema.html">62. PostgreSQL Schema</a></li>
+                    <li><a href="pages/63-data-migration.html">63. Data Migration</a></li>
+                    <li><a href="pages/64-indexing.html">64. Indexing Strategy</a></li>
+                    <li><a href="pages/65-backup-recovery.html">65. Backup & Recovery</a></li>
+                    <li><a href="pages/66-data-retention.html">66. Data Retention Policy</a></li>
+                    <li><a href="pages/67-redis-caching.html">67. Redis Caching</a></li>
+                    <li><a href="pages/68-bigquery.html">68. BigQuery Analytics</a></li>
+                </ul>
+            </li>
+
+            <!-- 7. Security -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="security">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/69-security-architecture.html">69. Security Architecture</a></li>
+                    <li><a href="pages/70-firestore-rules.html">70. Firestore Rules</a></li>
+                    <li><a href="pages/71-storage-rules.html">71. Storage Rules</a></li>
+                    <li><a href="pages/72-auth-security.html">72. Authentication Security</a></li>
+                    <li><a href="pages/73-encryption.html">73. Data Encryption</a></li>
+                    <li><a href="pages/74-app-check.html">74. App Check</a></li>
+                    <li><a href="pages/75-content-moderation.html">75. Content Moderation</a></li>
+                    <li><a href="pages/76-spam-detection.html">76. Spam Detection</a></li>
+                    <li><a href="pages/77-reporting-system.html">77. Reporting System</a></li>
+                    <li><a href="pages/78-security-audit.html">78. Security Audit</a></li>
+                </ul>
+            </li>
+
+            <!-- 8. Third-Party Integrations -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="integrations">
+                    <i class="fas fa-plug"></i>
+                    <span>Integrations</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/79-agora-video.html">79. Agora Video Calling</a></li>
+                    <li><a href="pages/80-stripe.html">80. Stripe Payments</a></li>
+                    <li><a href="pages/81-sendgrid.html">81. SendGrid Email</a></li>
+                    <li><a href="pages/82-twilio.html">82. Twilio SMS</a></li>
+                    <li><a href="pages/83-google-maps.html">83. Google Maps</a></li>
+                    <li><a href="pages/84-google-cloud-ai.html">84. Google Cloud AI</a></li>
+                    <li><a href="pages/85-mixpanel.html">85. Mixpanel Analytics</a></li>
+                    <li><a href="pages/86-sentry.html">86. Sentry Tracking</a></li>
+                    <li><a href="pages/87-perspective-api.html">87. Perspective API</a></li>
+                    <li><a href="pages/88-revenuecat.html">88. RevenueCat</a></li>
+                </ul>
+            </li>
+
+            <!-- 9. DevOps -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="devops">
+                    <i class="fas fa-cogs"></i>
+                    <span>DevOps</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/89-terraform.html">89. Terraform Infrastructure</a></li>
+                    <li><a href="pages/90-docker.html">90. Docker Development</a></li>
+                    <li><a href="pages/91-cicd.html">91. CI/CD Pipeline</a></li>
+                    <li><a href="pages/92-environments.html">92. Environment Management</a></li>
+                    <li><a href="pages/93-feature-flags.html">93. Feature Flags</a></li>
+                    <li><a href="pages/94-pre-commit.html">94. Pre-commit Hooks</a></li>
+                    <li><a href="pages/95-deployment.html">95. Deployment Scripts</a></li>
+                    <li><a href="pages/96-firebase-hosting.html">96. Firebase Hosting</a></li>
+                </ul>
+            </li>
+
+            <!-- 10. Testing -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="testing">
+                    <i class="fas fa-vial"></i>
+                    <span>Testing</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="pages/97-unit-testing.html">97. Unit Testing</a></li>
+                    <li><a href="pages/98-widget-testing.html">98. Widget Testing</a></li>
+                    <li><a href="pages/99-integration-testing.html">99. Integration Testing</a></li>
+                    <li><a href="pages/100-firebase-test-lab.html">100. Firebase Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-title">
+                <h1>GreenGo App Documentation</h1>
+            </div>
+            <div class="header-actions">
+                <a href="https://github.com/greengochat/greengo-app-flutter" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to GreenGo Documentation</h1>
+                    <p>Comprehensive documentation for the GreenGo dating application - covering architecture, design, features, DevOps, and more.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Documentation Pages</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Feature Modules</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">70+</span>
+                            <span class="stat-label">Cloud Functions</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="pages/05-getting-started.html" class="btn btn-primary">Get Started</a>
+                        <a href="pages/07-quick-start.html" class="btn btn-secondary">Quick Start</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h2>Quick Access</h2>
+                <div class="links-grid">
+                    <a href="pages/01-introduction.html" class="link-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Introduction</h3>
+                        <p>Learn about the GreenGo app vision and features</p>
+                    </a>
+                    <a href="pages/09-clean-architecture.html" class="link-card">
+                        <i class="fas fa-sitemap"></i>
+                        <h3>Architecture</h3>
+                        <p>Understand the Clean Architecture implementation</p>
+                    </a>
+                    <a href="pages/37-matching-algorithm.html" class="link-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Matching Algorithm</h3>
+                        <p>ML-based compatibility scoring system</p>
+                    </a>
+                    <a href="pages/90-docker.html" class="link-card">
+                        <i class="fab fa-docker"></i>
+                        <h3>Docker Setup</h3>
+                        <p>Local development environment with Docker</p>
+                    </a>
+                    <a href="pages/51-firebase-overview.html" class="link-card">
+                        <i class="fas fa-fire"></i>
+                        <h3>Firebase</h3>
+                        <p>Firebase services and configuration</p>
+                    </a>
+                    <a href="pages/69-security-architecture.html" class="link-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security</h3>
+                        <p>Security architecture and best practices</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Documentation Sections Overview -->
+            <section class="sections-overview">
+                <h2>Documentation Sections</h2>
+                <div class="sections-grid">
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-home"></i></div>
+                        <h3>Project Overview</h3>
+                        <p>Introduction, tech stack, repository structure, and getting started guides.</p>
+                        <span class="section-count">8 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3>Architecture</h3>
+                        <p>Clean Architecture, state management, navigation, and design patterns.</p>
+                        <span class="section-count">12 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Design System</h3>
+                        <p>Brand guidelines, colors, typography, components, and accessibility.</p>
+                        <span class="section-count">10 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <h3>Core Features</h3>
+                        <p>Authentication, matching, chat, subscriptions, gamification, and more.</p>
+                        <span class="section-count">20 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend Services</h3>
+                        <p>Firebase, Django, APIs, Cloud Functions, and real-time sync.</p>
+                        <span class="section-count">10 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database</h3>
+                        <p>Firestore, PostgreSQL, Redis, migrations, and data management.</p>
+                        <span class="section-count">8 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Security</h3>
+                        <p>Security rules, encryption, content moderation, and auditing.</p>
+                        <span class="section-count">10 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-plug"></i></div>
+                        <h3>Integrations</h3>
+                        <p>Third-party services: Agora, Stripe, SendGrid, Twilio, and more.</p>
+                        <span class="section-count">10 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>DevOps</h3>
+                        <p>Terraform, Docker, CI/CD, environments, and deployment.</p>
+                        <span class="section-count">8 pages</span>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Testing</h3>
+                        <p>Unit tests, widget tests, integration tests, and Firebase Test Lab.</p>
+                        <span class="section-count">4 pages</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech Stack Overview -->
+            <section class="tech-stack">
+                <h2>Technology Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://storage.googleapis.com/cms-storage-bucket/6e19fee6b47b36ca613f.png" alt="Flutter">
+                        <span>Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.gstatic.com/devrel-devsite/prod/v0e0f589edd85502a40d78d7d0825db8ea5ef3b99ab4070381ee86977c9168730/firebase/images/touchicon-180.png" alt="Firebase">
+                        <span>Firebase</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.gstatic.com/devrel-devsite/prod/v0e0f589edd85502a40d78d7d0825db8ea5ef3b99ab4070381ee86977c9168730/cloud/images/favicons/onecloud/super_cloud.png" alt="GCP">
+                        <span>Google Cloud</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png" alt="Django">
+                        <span>Django</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg" alt="Terraform">
+                        <span>Terraform</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 GreenGo Chat. All rights reserved.</p>
+                    <p>Documentation version 1.0.0</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

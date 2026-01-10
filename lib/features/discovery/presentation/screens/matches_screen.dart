@@ -38,30 +38,6 @@ class _MatchesScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: const Text(
-          'Matches',
-          style: TextStyle(
-            color: AppColors.richGold,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {
-              context
-                  .read<MatchesBloc>()
-                  .add(MatchesRefreshRequested(userId));
-            },
-            icon: const Icon(
-              Icons.refresh,
-              color: AppColors.textSecondary,
-            ),
-          ),
-        ],
-      ),
       body: BlocBuilder<MatchesBloc, MatchesState>(
         builder: (context, state) {
           if (state is MatchesLoading) {

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Guidelines - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Animation Guidelines</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Animation Guidelines
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Animation System</h2>
+            <p>Motion design guidelines for consistent, performant animations that enhance user experience.</p>
+
+            <h2>Animation Principles</h2>
+            <ol>
+                <li><strong>Purposeful:</strong> Every animation should serve a function</li>
+                <li><strong>Quick:</strong> Animations should feel snappy, not sluggish</li>
+                <li><strong>Natural:</strong> Follow physics-based motion curves</li>
+                <li><strong>Consistent:</strong> Same actions = same animations</li>
+            </ol>
+
+            <h2>Duration Scale</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        ANIMATION DURATIONS                               │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Token          Duration    Usage
+──────────────────────────────────────────────────────
+instant        100ms       Micro-interactions, ripples
+fast           200ms       Button states, toggles
+normal         300ms       Page transitions, modals
+slow           400ms       Complex transitions
+slower         500ms       Elaborate animations
+            </code></pre>
+
+            <h2>Flutter Animation Constants</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/animations.dart
+
+class AppAnimations {
+  // Durations
+  static const Duration instant = Duration(milliseconds: 100);
+  static const Duration fast = Duration(milliseconds: 200);
+  static const Duration normal = Duration(milliseconds: 300);
+  static const Duration slow = Duration(milliseconds: 400);
+  static const Duration slower = Duration(milliseconds: 500);
+
+  // Curves
+  static const Curve defaultCurve = Curves.easeInOutCubic;
+  static const Curve enterCurve = Curves.easeOutCubic;
+  static const Curve exitCurve = Curves.easeInCubic;
+  static const Curve bounceCurve = Curves.elasticOut;
+  static const Curve sharpCurve = Curves.easeInOutQuart;
+
+  // Page transitions
+  static const Duration pageTransition = Duration(milliseconds: 300);
+  static const Curve pageEnterCurve = Curves.easeOutCubic;
+  static const Curve pageExitCurve = Curves.easeInCubic;
+}
+            </code></pre>
+
+            <h2>Common Animation Patterns</h2>
+            <pre><code class="language-dart">
+// Fade In Animation
+class FadeIn extends StatefulWidget {
+  final Widget child;
+  final Duration duration;
+  final Duration delay;
+
+  const FadeIn({
+    required this.child,
+    this.duration = const Duration(milliseconds: 300),
+    this.delay = Duration.zero,
+  });
+
+  @override
+  _FadeInState createState() => _FadeInState();
+}
+
+class _FadeInState extends State<FadeIn>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: widget.duration,
+      vsync: this,
+    );
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeOut,
+    );
+
+    Future.delayed(widget.delay, () {
+      if (mounted) _controller.forward();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: _animation,
+      child: widget.child,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+}
+
+// Scale Animation for buttons
+class ScaleOnTap extends StatefulWidget {
+  final Widget child;
+  final VoidCallback? onTap;
+
+  const ScaleOnTap({required this.child, this.onTap});
+
+  @override
+  _ScaleOnTapState createState() => _ScaleOnTapState();
+}
+
+class _ScaleOnTapState extends State<ScaleOnTap>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _scale;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: AppAnimations.fast,
+      vsync: this,
+    );
+    _scale = Tween<double>(begin: 1.0, end: 0.95).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTapDown: (_) => _controller.forward(),
+      onTapUp: (_) {
+        _controller.reverse();
+        widget.onTap?.call();
+      },
+      onTapCancel: () => _controller.reverse(),
+      child: ScaleTransition(
+        scale: _scale,
+        child: widget.child,
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+}
+            </code></pre>
+
+            <h2>Swipe Card Animation</h2>
+            <pre><code class="language-dart">
+// Match card swipe animation
+class SwipeableCard extends StatefulWidget {
+  final Widget child;
+  final Function(SwipeDirection) onSwipe;
+
+  @override
+  _SwipeableCardState createState() => _SwipeableCardState();
+}
+
+class _SwipeableCardState extends State<SwipeableCard>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  Offset _dragOffset = Offset.zero;
+  double _rotation = 0;
+
+  void _onPanUpdate(DragUpdateDetails details) {
+    setState(() {
+      _dragOffset += details.delta;
+      _rotation = _dragOffset.dx / 300 * 0.4; // Max 0.4 radians
+    });
+  }
+
+  void _onPanEnd(DragEndDetails details) {
+    final velocity = details.velocity.pixelsPerSecond.dx;
+
+    if (_dragOffset.dx.abs() > 100 || velocity.abs() > 500) {
+      // Swipe detected
+      final direction = _dragOffset.dx > 0
+          ? SwipeDirection.right
+          : SwipeDirection.left;
+
+      _animateOut(direction).then((_) {
+        widget.onSwipe(direction);
+      });
+    } else {
+      // Return to center
+      _animateBack();
+    }
+  }
+
+  Future<void> _animateOut(SwipeDirection direction) async {
+    // Animate card off screen
+    await _controller.forward();
+  }
+
+  void _animateBack() {
+    setState(() {
+      _dragOffset = Offset.zero;
+      _rotation = 0;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onPanUpdate: _onPanUpdate,
+      onPanEnd: _onPanEnd,
+      child: Transform.translate(
+        offset: _dragOffset,
+        child: Transform.rotate(
+          angle: _rotation,
+          child: widget.child,
+        ),
+      ),
+    );
+  }
+}
+            </code></pre>
+
+            <h2>Animation Guidelines</h2>
+            <table>
+                <thead>
+                    <tr><th>Interaction</th><th>Duration</th><th>Curve</th><th>Effect</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Button press</td>
+                        <td>100ms</td>
+                        <td>easeInOut</td>
+                        <td>Scale to 0.95</td>
+                    </tr>
+                    <tr>
+                        <td>Page transition</td>
+                        <td>300ms</td>
+                        <td>easeOutCubic</td>
+                        <td>Slide + fade</td>
+                    </tr>
+                    <tr>
+                        <td>Modal appear</td>
+                        <td>300ms</td>
+                        <td>easeOutCubic</td>
+                        <td>Scale from 0.9 + fade</td>
+                    </tr>
+                    <tr>
+                        <td>Swipe card</td>
+                        <td>200ms</td>
+                        <td>easeOut</td>
+                        <td>Translate + rotate</td>
+                    </tr>
+                    <tr>
+                        <td>Like heart</td>
+                        <td>400ms</td>
+                        <td>elasticOut</td>
+                        <td>Scale bounce</td>
+                    </tr>
+                    <tr>
+                        <td>Loading</td>
+                        <td>1000ms</td>
+                        <td>linear</td>
+                        <td>Continuous rotation</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

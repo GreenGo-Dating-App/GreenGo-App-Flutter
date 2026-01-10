@@ -1,16 +1,19 @@
 import 'package:equatable/equatable.dart';
 import '../../domain/entities/profile.dart';
-
 import '../../domain/entities/location.dart';
+import '../../domain/entities/social_links.dart';
+
 enum OnboardingStep {
   basicInfo, // Step 1: Name, DOB, Gender
   photos, // Step 2: Photo upload
-  bio, // Step 3: Bio
-  interests, // Step 4: Interests
-  locationLanguage, // Step 5: Location & Languages
-  voice, // Step 6: Voice recording
-  personality, // Step 7: Personality quiz
-  preview, // Step 8: Profile preview
+  verification, // Step 3: ID verification photo
+  bio, // Step 4: Bio
+  interests, // Step 5: Interests
+  locationLanguage, // Step 6: Location & Languages
+  voice, // Step 7: Voice recording
+  personality, // Step 8: Personality quiz
+  socialLinks, // Step 9: Social media links
+  preview, // Step 10: Profile preview
 }
 
 abstract class OnboardingState extends Equatable {
@@ -37,6 +40,8 @@ class OnboardingInProgress extends OnboardingState {
   final List<String> languages;
   final String? voiceUrl;
   final PersonalityTraits? personalityTraits;
+  final String? verificationPhotoUrl;
+  final SocialLinks? socialLinks;
 
   const OnboardingInProgress({
     required this.userId,
@@ -51,6 +56,8 @@ class OnboardingInProgress extends OnboardingState {
     this.languages = const [],
     this.voiceUrl,
     this.personalityTraits,
+    this.verificationPhotoUrl,
+    this.socialLinks,
   });
 
   OnboardingInProgress copyWith({
@@ -65,6 +72,8 @@ class OnboardingInProgress extends OnboardingState {
     List<String>? languages,
     String? voiceUrl,
     PersonalityTraits? personalityTraits,
+    String? verificationPhotoUrl,
+    SocialLinks? socialLinks,
   }) {
     return OnboardingInProgress(
       userId: userId,
@@ -79,6 +88,8 @@ class OnboardingInProgress extends OnboardingState {
       languages: languages ?? this.languages,
       voiceUrl: voiceUrl ?? this.voiceUrl,
       personalityTraits: personalityTraits ?? this.personalityTraits,
+      verificationPhotoUrl: verificationPhotoUrl ?? this.verificationPhotoUrl,
+      socialLinks: socialLinks ?? this.socialLinks,
     );
   }
 
@@ -96,6 +107,8 @@ class OnboardingInProgress extends OnboardingState {
             gender!.isNotEmpty;
       case OnboardingStep.photos:
         return photoUrls.isNotEmpty;
+      case OnboardingStep.verification:
+        return verificationPhotoUrl != null && verificationPhotoUrl!.isNotEmpty;
       case OnboardingStep.bio:
         return bio != null && bio!.isNotEmpty;
       case OnboardingStep.interests:
@@ -106,6 +119,8 @@ class OnboardingInProgress extends OnboardingState {
         return true; // Voice is optional
       case OnboardingStep.personality:
         return personalityTraits != null;
+      case OnboardingStep.socialLinks:
+        return true; // Social links are optional
       case OnboardingStep.preview:
         return true;
     }
@@ -125,6 +140,8 @@ class OnboardingInProgress extends OnboardingState {
         languages,
         voiceUrl,
         personalityTraits,
+        verificationPhotoUrl,
+        socialLinks,
       ];
 }
 

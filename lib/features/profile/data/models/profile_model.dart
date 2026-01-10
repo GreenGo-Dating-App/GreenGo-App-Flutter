@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/location.dart';
+import '../../domain/entities/social_links.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 class ProfileModel extends Profile {
   const ProfileModel({
@@ -22,6 +24,17 @@ class ProfileModel extends Profile {
     required super.createdAt,
     required super.updatedAt,
     required super.isComplete,
+    super.verificationStatus,
+    super.verificationPhotoUrl,
+    super.verificationRejectionReason,
+    super.verificationSubmittedAt,
+    super.verificationReviewedAt,
+    super.verificationReviewedBy,
+    super.isAdmin,
+    super.socialLinks,
+    super.membershipTier,
+    super.membershipStartDate,
+    super.membershipEndDate,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
@@ -47,7 +60,43 @@ class ProfileModel extends Profile {
       createdAt: (json['createdAt'] as Timestamp).toDate(),
       updatedAt: (json['updatedAt'] as Timestamp).toDate(),
       isComplete: json['isComplete'] as bool,
+      verificationStatus: _parseVerificationStatus(json['verificationStatus'] as String?),
+      verificationPhotoUrl: json['verificationPhotoUrl'] as String?,
+      verificationRejectionReason: json['verificationRejectionReason'] as String?,
+      verificationSubmittedAt: json['verificationSubmittedAt'] != null
+          ? (json['verificationSubmittedAt'] as Timestamp).toDate()
+          : null,
+      verificationReviewedAt: json['verificationReviewedAt'] != null
+          ? (json['verificationReviewedAt'] as Timestamp).toDate()
+          : null,
+      verificationReviewedBy: json['verificationReviewedBy'] as String?,
+      isAdmin: json['isAdmin'] as bool? ?? false,
+      socialLinks: json['socialLinks'] != null
+          ? SocialLinksModel.fromJson(json['socialLinks'] as Map<String, dynamic>)
+          : null,
+      membershipTier: MembershipTier.fromString(json['membershipTier'] as String? ?? 'FREE'),
+      membershipStartDate: json['membershipStartDate'] != null
+          ? (json['membershipStartDate'] as Timestamp).toDate()
+          : null,
+      membershipEndDate: json['membershipEndDate'] != null
+          ? (json['membershipEndDate'] as Timestamp).toDate()
+          : null,
     );
+  }
+
+  static VerificationStatus _parseVerificationStatus(String? status) {
+    switch (status) {
+      case 'pending':
+        return VerificationStatus.pending;
+      case 'approved':
+        return VerificationStatus.approved;
+      case 'rejected':
+        return VerificationStatus.rejected;
+      case 'needsResubmission':
+        return VerificationStatus.needsResubmission;
+      default:
+        return VerificationStatus.notSubmitted;
+    }
   }
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
@@ -56,6 +105,30 @@ class ProfileModel extends Profile {
   }
 
   Map<String, dynamic> toJson() {
+    // Handle location conversion - might be Location entity or LocationModel
+    Map<String, dynamic> locationJson;
+    if (location is LocationModel) {
+      locationJson = (location as LocationModel).toJson();
+    } else {
+      locationJson = location.toJson();
+    }
+
+    // Handle personality traits conversion
+    Map<String, dynamic>? personalityTraitsJson;
+    if (personalityTraits != null) {
+      if (personalityTraits is PersonalityTraitsModel) {
+        personalityTraitsJson = (personalityTraits as PersonalityTraitsModel).toJson();
+      } else {
+        personalityTraitsJson = {
+          'openness': personalityTraits!.openness,
+          'conscientiousness': personalityTraits!.conscientiousness,
+          'extraversion': personalityTraits!.extraversion,
+          'agreeableness': personalityTraits!.agreeableness,
+          'neuroticism': personalityTraits!.neuroticism,
+        };
+      }
+    }
+
     return {
       'userId': userId,
       'displayName': displayName,
@@ -64,15 +137,34 @@ class ProfileModel extends Profile {
       'photoUrls': photoUrls,
       'bio': bio,
       'interests': interests,
-      'location': (location as LocationModel).toJson(),
+      'location': locationJson,
       'languages': languages,
       'voiceRecordingUrl': voiceRecordingUrl,
-      'personalityTraits': personalityTraits != null
-          ? (personalityTraits as PersonalityTraitsModel).toJson()
-          : null,
+      'personalityTraits': personalityTraitsJson,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': Timestamp.fromDate(updatedAt),
       'isComplete': isComplete,
+      'verificationStatus': verificationStatus.name,
+      'verificationPhotoUrl': verificationPhotoUrl,
+      'verificationRejectionReason': verificationRejectionReason,
+      'verificationSubmittedAt': verificationSubmittedAt != null
+          ? Timestamp.fromDate(verificationSubmittedAt!)
+          : null,
+      'verificationReviewedAt': verificationReviewedAt != null
+          ? Timestamp.fromDate(verificationReviewedAt!)
+          : null,
+      'verificationReviewedBy': verificationReviewedBy,
+      'isAdmin': isAdmin,
+      'socialLinks': socialLinks != null
+          ? SocialLinksModel.fromEntity(socialLinks!).toJson()
+          : null,
+      'membershipTier': membershipTier.value,
+      'membershipStartDate': membershipStartDate != null
+          ? Timestamp.fromDate(membershipStartDate!)
+          : null,
+      'membershipEndDate': membershipEndDate != null
+          ? Timestamp.fromDate(membershipEndDate!)
+          : null,
     };
   }
 
@@ -89,9 +181,64 @@ class ProfileModel extends Profile {
       languages: profile.languages,
       voiceRecordingUrl: profile.voiceRecordingUrl,
       personalityTraits: profile.personalityTraits,
+      education: profile.education,
+      occupation: profile.occupation,
+      lookingFor: profile.lookingFor,
+      height: profile.height,
       createdAt: profile.createdAt,
       updatedAt: profile.updatedAt,
       isComplete: profile.isComplete,
+      verificationStatus: profile.verificationStatus,
+      verificationPhotoUrl: profile.verificationPhotoUrl,
+      verificationRejectionReason: profile.verificationRejectionReason,
+      verificationSubmittedAt: profile.verificationSubmittedAt,
+      verificationReviewedAt: profile.verificationReviewedAt,
+      verificationReviewedBy: profile.verificationReviewedBy,
+      isAdmin: profile.isAdmin,
+      socialLinks: profile.socialLinks,
+      membershipTier: profile.membershipTier,
+      membershipStartDate: profile.membershipStartDate,
+      membershipEndDate: profile.membershipEndDate,
+    );
+  }
+}
+
+class SocialLinksModel extends SocialLinks {
+  const SocialLinksModel({
+    super.facebook,
+    super.instagram,
+    super.tiktok,
+    super.linkedin,
+    super.x,
+  });
+
+  factory SocialLinksModel.fromJson(Map<String, dynamic> json) {
+    return SocialLinksModel(
+      facebook: json['facebook'] as String?,
+      instagram: json['instagram'] as String?,
+      tiktok: json['tiktok'] as String?,
+      linkedin: json['linkedin'] as String?,
+      x: json['x'] as String?,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'facebook': facebook,
+      'instagram': instagram,
+      'tiktok': tiktok,
+      'linkedin': linkedin,
+      'x': x,
+    };
+  }
+
+  factory SocialLinksModel.fromEntity(SocialLinks socialLinks) {
+    return SocialLinksModel(
+      facebook: socialLinks.facebook,
+      instagram: socialLinks.instagram,
+      tiktok: socialLinks.tiktok,
+      linkedin: socialLinks.linkedin,
+      x: socialLinks.x,
     );
   }
 }

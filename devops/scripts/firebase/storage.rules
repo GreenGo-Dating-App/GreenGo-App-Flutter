@@ -1,0 +1,38 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isImageFile() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function isUnder5MB() {
+      return request.resource.size < 5 * 1024 * 1024;
+    }
+
+    // User profile images
+    match /users/{userId}/profile/{imageId} {
+      allow read: if true; // Public read
+      allow write: if isAuthenticated() &&
+                      request.auth.uid == userId &&
+                      isImageFile() &&
+                      isUnder5MB();
+    }
+
+    // Chat images
+    match /chats/{chatId}/images/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isImageFile() && isUnder5MB();
+    }
+
+    // Development only: Allow all access for testing
+    // TODO: Remove this in production!
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}

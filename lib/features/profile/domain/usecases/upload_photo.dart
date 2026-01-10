@@ -11,16 +11,22 @@ class UploadPhoto implements UseCase<String, UploadPhotoParams> {
 
   @override
   Future<Either<Failure, String>> call(UploadPhotoParams params) async {
-    return await repository.uploadPhoto(params.userId, params.photo);
+    return await repository.uploadPhoto(
+      params.userId,
+      params.photo,
+      folder: params.folder,
+    );
   }
 }
 
 class UploadPhotoParams {
   final String userId;
   final File photo;
+  final String? folder;
 
   UploadPhotoParams({
     required this.userId,
     required this.photo,
+    this.folder,
   });
 }

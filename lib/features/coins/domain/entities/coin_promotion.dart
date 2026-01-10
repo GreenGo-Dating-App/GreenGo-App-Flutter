@@ -9,8 +9,8 @@ class CoinPromotion extends Equatable {
   final PromotionType type;
   final int? bonusPercentage;
   final int? bonusCoins;
-  final DateTime startDate;
-  final DateTime endDate;
+  final DateTime? startDate;
+  final DateTime? endDate;
   final bool isActive;
   final List<String>? applicablePackageIds;
   final int? minPurchaseAmount;
@@ -24,8 +24,8 @@ class CoinPromotion extends Equatable {
     required this.type,
     this.bonusPercentage,
     this.bonusCoins,
-    required this.startDate,
-    required this.endDate,
+    this.startDate,
+    this.endDate,
     this.isActive = true,
     this.applicablePackageIds,
     this.minPurchaseAmount,
@@ -36,15 +36,20 @@ class CoinPromotion extends Equatable {
   /// Check if promotion is currently active
   bool get isCurrentlyActive {
     if (!isActive) return false;
+    // If no dates specified, always active
+    if (startDate == null && endDate == null) return true;
     final now = DateTime.now();
-    return now.isAfter(startDate) && now.isBefore(endDate);
+    if (startDate != null && now.isBefore(startDate!)) return false;
+    if (endDate != null && now.isAfter(endDate!)) return false;
+    return true;
   }
 
   /// Get days remaining
   int get daysRemaining {
+    if (endDate == null) return 999; // No expiration
     final now = DateTime.now();
-    if (now.isAfter(endDate)) return 0;
-    return endDate.difference(now).inDays;
+    if (now.isAfter(endDate!)) return 0;
+    return endDate!.difference(now).inDays;
   }
 
   /// Check if package is applicable

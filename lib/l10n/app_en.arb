@@ -26,6 +26,21 @@
   "passwordTooShort": "Password must be at least 8 characters",
   "passwordWeak": "Password must contain uppercase, lowercase, number, and special character",
   "passwordsDoNotMatch": "Passwords do not match",
+  "passwordMustContainUppercase": "Password must contain at least one uppercase letter",
+  "passwordMustContainLowercase": "Password must contain at least one lowercase letter",
+  "passwordMustContainNumber": "Password must contain at least one number",
+  "passwordMustContainSpecialChar": "Password must contain at least one special character",
+  "passwordStrengthVeryWeak": "Very Weak",
+  "passwordStrengthWeak": "Weak",
+  "passwordStrengthFair": "Fair",
+  "passwordStrengthStrong": "Strong",
+  "passwordStrengthVeryStrong": "Very Strong",
+  "passwordMustContain": "Password must contain:",
+  "atLeast8Characters": "At least 8 characters",
+  "uppercaseLowercase": "Uppercase and lowercase letters",
+  "atLeastOneNumber": "At least one number",
+  "atLeastOneSpecialChar": "At least one special character",
+  "confirmPasswordRequired": "Please confirm your password",
   "profile": "Profile",
   "editProfile": "Edit Profile",
   "completeProfile": "Complete Your Profile",
@@ -99,5 +114,147 @@
   "done": "Done",
   "loading": "Loading...",
   "ok": "OK",
-  "selectLanguage": "Select Language"
+  "selectLanguage": "Select Language",
+  "loginWithBiometrics": "Login with Biometrics",
+  "consentRequired": "Required Consents",
+  "optionalConsents": "Optional Consents",
+  "acceptPrivacyPolicy": "I have read and accept the Privacy Policy",
+  "acceptTermsAndConditions": "I have read and accept the Terms and Conditions",
+  "acceptProfiling": "I consent to profiling for personalized recommendations",
+  "acceptThirdPartyData": "I consent to sharing my data with third parties",
+  "readPrivacyPolicy": "Read Privacy Policy",
+  "readTermsAndConditions": "Read Terms and Conditions",
+  "profilingDescription": "Allow us to analyze your preferences to provide better match suggestions",
+  "thirdPartyDataDescription": "Allow sharing anonymized data with partners for service improvement",
+  "consentRequiredError": "You must accept the Privacy Policy and Terms and Conditions to register",
+  "privacyPolicy": "Privacy Policy",
+  "termsAndConditions": "Terms and Conditions",
+  "errorLoadingDocument": "Error loading document",
+  "retry": "Retry",
+  "documentNotAvailable": "Document not available",
+  "documentNotAvailableDescription": "This document is not available in your language yet.",
+  "lastUpdated": "Last updated",
+
+  "verificationRequired": "Identity Verification Required",
+  "verificationTitle": "Verify Your Identity",
+  "verificationDescription": "To ensure the safety of our community, we require all users to verify their identity. Please take a photo of yourself holding your ID document.",
+  "verificationInstructions": "Please hold your ID document (passport, driver's license, or national ID) next to your face and take a clear photo.",
+  "verificationTips": "Tips for a successful verification:",
+  "verificationTip1": "Ensure good lighting",
+  "verificationTip2": "Make sure your face and ID are clearly visible",
+  "verificationTip3": "Hold the ID next to your face, not covering it",
+  "verificationTip4": "All text on the ID should be readable",
+  "takeVerificationPhoto": "Take Verification Photo",
+  "retakePhoto": "Retake Photo",
+  "submitVerification": "Submit for Verification",
+  "verificationPending": "Verification Pending",
+  "verificationPendingMessage": "Your account is being verified. This usually takes 24-48 hours. You will be notified once the review is complete.",
+  "verificationApproved": "Verification Approved",
+  "verificationApprovedMessage": "Your identity has been verified. You now have full access to the app.",
+  "verificationRejected": "Verification Rejected",
+  "verificationRejectedMessage": "Your verification was rejected. Please submit a new photo.",
+  "verificationNeedsResubmission": "Better Photo Required",
+  "verificationNeedsResubmissionMessage": "We need a clearer photo for verification. Please resubmit.",
+  "rejectionReason": "Reason: {reason}",
+  "@rejectionReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "accountUnderReview": "Account Under Review",
+  "cannotAccessFeature": "This feature is available after your account is verified.",
+  "waitingForVerification": "Waiting for verification...",
+  "verifyNow": "Verify Now",
+  "skipForNow": "Skip for Now",
+  "verificationSkipWarning": "You can browse the app, but you won't be able to chat or see other profiles until verified.",
+
+  "adminPanel": "Admin Panel",
+  "pendingVerifications": "Pending Verifications",
+  "verificationHistory": "Verification History",
+  "approveVerification": "Approve",
+  "rejectVerification": "Reject",
+  "requestBetterPhoto": "Request Better Photo",
+  "enterRejectionReason": "Enter rejection reason",
+  "rejectionReasonRequired": "Please enter a reason for rejection",
+  "verificationApprovedSuccess": "Verification approved successfully",
+  "verificationRejectedSuccess": "Verification rejected",
+  "betterPhotoRequested": "Better photo requested",
+  "noPhotoSubmitted": "No photo submitted",
+  "submittedOn": "Submitted on {date}",
+  "@submittedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewedBy": "Reviewed by {admin}",
+  "@reviewedBy": {
+    "placeholders": {
+      "admin": {
+        "type": "String"
+      }
+    }
+  },
+  "noPendingVerifications": "No pending verifications",
+
+  "platinum": "Platinum",
+  "waitingTitle": "Thank You for Registering!",
+  "waitingSubtitle": "Your account has been created successfully",
+  "waitingMessagePending": "Your account is pending approval from our team. We will notify you once your account has been reviewed.",
+  "waitingMessageApproved": "Great news! Your account has been approved. You will be able to access GreenGoChat on the date shown below.",
+  "waitingMessageRejected": "Unfortunately, your account could not be approved at this time. Please contact support for more information.",
+  "waitingAccessDateTitle": "Your Access Date",
+  "waitingAccessDatePremium": "As a {tier} member, you get early access on March 1st, 2026!",
+  "@waitingAccessDatePremium": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "waitingAccessDateBasic": "Your access will begin on March 15th, 2026",
+  "waitingCountdownTitle": "Countdown to Launch",
+  "waitingDaysRemaining": "{days} days",
+  "@waitingDaysRemaining": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingHoursRemaining": "{hours} hours",
+  "@waitingHoursRemaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingMinutesRemaining": "{minutes} minutes",
+  "@waitingMinutesRemaining": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingSecondsRemaining": "{seconds} seconds",
+  "@waitingSecondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "accountPendingApproval": "Account Pending Approval",
+  "accountApproved": "Account Approved",
+  "accountRejected": "Account Rejected",
+  "upgradeForEarlyAccess": "Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!",
+  "waitingStayTuned": "Stay tuned! We'll notify you when it's time to start connecting.",
+  "waitingNotificationEnabled": "Notifications enabled - we'll let you know when you can access the app!",
+  "enableNotifications": "Enable Notifications",
+  "contactSupport": "Contact Support"
 }

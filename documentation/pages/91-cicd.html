@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline - System Design - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="32-social-auth.html">32. Social Auth</a></li>
+                    <li><a href="33-biometric-auth.html">33. Biometric</a></li>
+                    <li><a href="34-onboarding.html">34. Onboarding</a></li>
+                    <li><a href="35-photo-upload.html">35. Photos</a></li>
+                    <li><a href="36-profile-editing.html">36. Profile</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="38-discovery.html">38. Discovery</a></li>
+                    <li><a href="39-like-actions.html">39. Actions</a></li>
+                    <li><a href="40-match-system.html">40. Matches</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="42-message-features.html">42. Messages</a></li>
+                    <li><a href="43-push-notifications.html">43. Push</a></li>
+                    <li><a href="44-in-app-notifications.html">44. Notifications</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="46-in-app-purchases.html">46. Purchases</a></li>
+                    <li><a href="47-coins.html">47. Coins</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                    <li><a href="49-challenges.html">49. Challenges</a></li>
+                    <li><a href="50-leaderboards.html">50. Leaderboards</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="52-firestore.html">52. Firestore</a></li>
+                    <li><a href="53-firebase-auth.html">53. Auth</a></li>
+                    <li><a href="54-firebase-storage.html">54. Storage</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                    <li><a href="56-django-backend.html">56. Django</a></li>
+                    <li><a href="57-api-documentation.html">57. API Docs</a></li>
+                    <li><a href="58-realtime-sync.html">58. Sync</a></li>
+                    <li><a href="59-background-processing.html">59. Background</a></li>
+                    <li><a href="60-rate-limiting.html">60. Rate Limit</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                    <li><a href="62-postgresql-schema.html">62. PostgreSQL</a></li>
+                    <li><a href="63-data-migration.html">63. Migration</a></li>
+                    <li><a href="64-indexing.html">64. Indexing</a></li>
+                    <li><a href="65-backup-recovery.html">65. Backup</a></li>
+                    <li><a href="66-data-retention.html">66. Retention</a></li>
+                    <li><a href="67-redis-caching.html">67. Redis</a></li>
+                    <li><a href="68-bigquery.html">68. BigQuery</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                    <li><a href="70-firestore-rules.html">70. Rules</a></li>
+                    <li><a href="71-storage-rules.html">71. Storage</a></li>
+                    <li><a href="72-auth-security.html">72. Auth</a></li>
+                    <li><a href="73-encryption.html">73. Encryption</a></li>
+                    <li><a href="74-app-check.html">74. App Check</a></li>
+                    <li><a href="75-content-moderation.html">75. Moderation</a></li>
+                    <li><a href="76-spam-detection.html">76. Spam</a></li>
+                    <li><a href="77-reporting-system.html">77. Reports</a></li>
+                    <li><a href="78-security-audit.html">78. Audit</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-plug"></i><span>Integrations</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="79-agora-video.html">79. Agora</a></li>
+                    <li><a href="80-stripe.html">80. Stripe</a></li>
+                    <li><a href="81-sendgrid.html">81. SendGrid</a></li>
+                    <li><a href="82-twilio.html">82. Twilio</a></li>
+                    <li><a href="83-google-maps.html">83. Maps</a></li>
+                    <li><a href="84-google-cloud-ai.html">84. Cloud AI</a></li>
+                    <li><a href="85-mixpanel.html">85. Mixpanel</a></li>
+                    <li><a href="86-sentry.html">86. Sentry</a></li>
+                    <li><a href="87-perspective-api.html">87. Perspective</a></li>
+                    <li><a href="88-revenuecat.html">88. RevenueCat</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="89-terraform.html">89. Terraform</a></li>
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                    <li><a href="92-environments.html">92. Environments</a></li>
+                    <li><a href="93-feature-flags.html">93. Flags</a></li>
+                    <li><a href="94-pre-commit.html">94. Pre-commit</a></li>
+                    <li><a href="95-deployment.html">95. Deployment</a></li>
+                    <li><a href="96-firebase-hosting.html">96. Hosting</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>CI/CD Pipeline - System Design</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">DevOps</a> / CI/CD Pipeline - System Design
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>CI/CD Pipeline Architecture</h2>
+            <p>Automated build, test, and deployment pipeline using GitHub Actions for Flutter and Firebase.</p>
+
+            <h2>Pipeline Architecture</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                         CI/CD PIPELINE ARCHITECTURE                                  │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   Developer     │     │    GitHub       │     │  GitHub Actions │
+│   Push/PR       │────▶│   Repository    │────▶│   Workflows     │
+└─────────────────┘     └─────────────────┘     └────────┬────────┘
+                                                         │
+                              ┌──────────────────────────┼──────────────────────────┐
+                              │                          │                          │
+                              ▼                          ▼                          ▼
+                    ┌─────────────────┐        ┌─────────────────┐        ┌─────────────────┐
+                    │   LINT & TEST   │        │     BUILD       │        │    DEPLOY       │
+                    ├─────────────────┤        ├─────────────────┤        ├─────────────────┤
+                    │ • flutter analyze│       │ • Android APK   │        │ • Firebase      │
+                    │ • dart format    │       │ • iOS IPA       │        │ • Play Store    │
+                    │ • Unit tests     │       │ • Web build     │        │ • App Store     │
+                    │ • Widget tests   │       │ • Functions     │        │ • TestFlight    │
+                    │ • Integration    │       │                 │        │                 │
+                    └────────┬────────┘        └────────┬────────┘        └────────┬────────┘
+                             │                          │                          │
+                             └──────────────────────────┼──────────────────────────┘
+                                                        │
+                                               ┌────────▼────────┐
+                                               │   ARTIFACTS     │
+                                               │   & RELEASES    │
+                                               └─────────────────┘
+
+Environment Flow:
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   feature   │────▶│   develop   │────▶│   staging   │────▶│    main     │
+│   branch    │     │   branch    │     │   branch    │     │  (production)│
+└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
+       │                   │                   │                   │
+       ▼                   ▼                   ▼                   ▼
+   PR Tests           Dev Deploy         Staging Deploy       Prod Deploy
+   Only               Firebase Dev       Firebase Staging     Firebase Prod
+                                         TestFlight           App Store
+                                         Play Internal        Play Store
+            </code></pre>
+
+            <h2>GitHub Actions Workflow</h2>
+            <pre><code class="language-yaml">
+# .github/workflows/ci.yml
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop, staging]
+  pull_request:
+    branches: [main, develop]
+
+env:
+  FLUTTER_VERSION: '3.16.0'
+  JAVA_VERSION: '17'
+
+jobs:
+  # ============================================
+  # LINT & ANALYZE
+  # ============================================
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed .
+
+      - name: Analyze code
+        run: flutter analyze --fatal-infos
+
+      - name: Check for outdated packages
+        run: flutter pub outdated
+
+  # ============================================
+  # UNIT & WIDGET TESTS
+  # ============================================
+  test:
+    runs-on: ubuntu-latest
+    needs: analyze
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Run tests with coverage
+        run: flutter test --coverage
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          file: coverage/lcov.info
+
+  # ============================================
+  # BUILD ANDROID
+  # ============================================
+  build-android:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Decode keystore
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/keystore.jks
+
+      - name: Build APK
+        run: |
+          flutter build apk --release \
+            --dart-define=ENV=${{ github.ref_name }}
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+
+      - name: Build App Bundle
+        run: flutter build appbundle --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: android-release
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+  # ============================================
+  # BUILD iOS
+  # ============================================
+  build-ios:
+    runs-on: macos-latest
+    needs: test
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Install CocoaPods
+        run: cd ios && pod install
+
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
+
+      - name: Upload iOS build
+        uses: actions/upload-artifact@v3
+        with:
+          name: ios-release
+          path: build/ios/iphoneos/Runner.app
+
+  # ============================================
+  # DEPLOY TO FIREBASE
+  # ============================================
+  deploy-firebase:
+    runs-on: ubuntu-latest
+    needs: [build-android, build-ios]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy Functions
+        run: |
+          cd functions
+          npm ci
+          firebase deploy --only functions --project ${{ secrets.FIREBASE_PROJECT }}
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+      - name: Deploy Rules
+        run: |
+          firebase deploy --only firestore:rules,storage --project ${{ secrets.FIREBASE_PROJECT }}
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+            </code></pre>
+
+            <h2>Deployment Stages</h2>
+            <table>
+                <thead>
+                    <tr><th>Stage</th><th>Trigger</th><th>Actions</th><th>Target</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>PR Check</strong></td>
+                        <td>Pull Request</td>
+                        <td>Lint, Test, Analyze</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dev Deploy</strong></td>
+                        <td>Push to develop</td>
+                        <td>Build, Deploy Functions</td>
+                        <td>Firebase Dev</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Staging</strong></td>
+                        <td>Push to staging</td>
+                        <td>Full Build, Deploy</td>
+                        <td>TestFlight, Play Internal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Production</strong></td>
+                        <td>Push to main</td>
+                        <td>Full Build, Deploy, Tag</td>
+                        <td>App Store, Play Store</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir 'C:\\Users\\Software Engineering\\Desktop\\greengochat' /s /b 2)",
+      "Bash(nul)",
+      "Bash(findstr:*)",
+      "Bash(dir \"C:\\Users\\Software Engineering\\Desktop\\greengochat\\wp-content\\themes\" /b 2)",
+      "Bash(cat:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(node -e:*)",
+      "Bash(python3:*)",
+      "Bash(node --check:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -31,11 +31,11 @@ class MatchPreferences {
     return MatchPreferences(
       userId: userId,
       minAge: 18,
-      maxAge: 35,
-      maxDistance: 50.0,
+      maxAge: 99,
+      maxDistance: 200.0, // Default 200km
       preferredGenders: const ['Female', 'Male', 'Non-binary'],
       showOnlyVerified: false,
-      showOnlyWithPhotos: true,
+      showOnlyWithPhotos: false, // Show all profiles including those without photos
       dealBreakerInterests: const [],
       preferredLanguages: const [],
       updatedAt: DateTime.now(),

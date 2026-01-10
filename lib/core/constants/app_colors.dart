@@ -18,10 +18,15 @@ class AppColors {
   static const Color textSecondary = Color(0xFFE0E0E0);
   static const Color textTertiary = Color(0xFFB0B0B0);
 
+  // Pure Colors
+  static const Color pureWhite = Color(0xFFFFFFFF);
+  static const Color pureBlack = Color(0xFF000000);
+
   // Status Colors
   static const Color successGreen = Color(0xFF10B981);
   static const Color warningAmber = Color(0xFFF59E0B);
   static const Color errorRed = Color(0xFFDC2626);
+  static const Color infoBlue = Color(0xFF3B82F6);
 
   // UI Elements
   static const Color backgroundDark = Color(0xFF0A0A0A);
@@ -41,6 +46,9 @@ class AppColors {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
+
+  // Primary gradient alias for consistency
+  static const LinearGradient primaryGradient = goldGradient;
 
   // Shadow Colors
   static final Color shadowLight = Colors.black.withOpacity(0.1);

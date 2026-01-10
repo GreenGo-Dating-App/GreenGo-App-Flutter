@@ -9,7 +9,7 @@ import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs';
 import * as ffmpeg from 'fluent-ffmpeg';
-import * as sharp from 'sharp';
+import sharp from 'sharp';
 
 const storage = admin.storage();
 const firestore = admin.firestore();

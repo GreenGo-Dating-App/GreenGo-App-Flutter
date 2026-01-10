@@ -4,42 +4,6 @@
       "collectionGroup": "profiles",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "isActive", "order": "ASCENDING" },
-        { "fieldPath": "location.geohash", "order": "ASCENDING" },
-        { "fieldPath": "age", "order": "ASCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "profiles",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "gender", "order": "ASCENDING" },
-        { "fieldPath": "age", "order": "ASCENDING" },
-        { "fieldPath": "lastActive", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "profiles",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "interests", "arrayConfig": "CONTAINS" },
-        { "fieldPath": "isActive", "order": "ASCENDING" },
-        { "fieldPath": "lastActive", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "profiles",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "location.geohash", "order": "ASCENDING" },
-        { "fieldPath": "gender", "order": "ASCENDING" },
-        { "fieldPath": "age", "order": "ASCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "profiles",
-      "queryScope": "COLLECTION",
-      "fields": [
         { "fieldPath": "dateOfBirth", "order": "ASCENDING" },
         { "fieldPath": "gender", "order": "ASCENDING" }
       ]
@@ -48,135 +12,32 @@
       "collectionGroup": "profiles",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "gender", "order": "ASCENDING" },
-        { "fieldPath": "photoUrls", "order": "ASCENDING" },
-        { "fieldPath": "dateOfBirth", "order": "ASCENDING" }
+        { "fieldPath": "verificationStatus", "order": "ASCENDING" },
+        { "fieldPath": "verificationSubmittedAt", "order": "ASCENDING" }
       ]
     },
     {
-      "collectionGroup": "user_interactions",
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "verificationStatus", "order": "ASCENDING" },
+        { "fieldPath": "verificationReviewedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isLocked", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "notifications",
       "queryScope": "COLLECTION",
       "fields": [
         { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "user_interactions",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "interactionType", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "user_interactions",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "targetUserId", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "matches",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId1", "order": "ASCENDING" },
-        { "fieldPath": "matchedAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "matches",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId2", "order": "ASCENDING" },
-        { "fieldPath": "matchedAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "matches",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId1", "order": "ASCENDING" },
-        { "fieldPath": "isActive", "order": "ASCENDING" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "matches",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId2", "order": "ASCENDING" },
-        { "fieldPath": "isActive", "order": "ASCENDING" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "likes",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "likedAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "likes",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "likedUserId", "order": "ASCENDING" },
-        { "fieldPath": "likedAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "likes",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "type", "order": "ASCENDING" },
-        { "fieldPath": "likedAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "conversations",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "participants", "arrayConfig": "CONTAINS" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "conversations",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "participants", "arrayConfig": "CONTAINS" },
-        { "fieldPath": "isActive", "order": "ASCENDING" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "conversationId", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "senderId", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "conversationId", "order": "ASCENDING" },
-        { "fieldPath": "status", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
       ]
     },
     {
@@ -189,85 +50,27 @@
       ]
     },
     {
-      "collectionGroup": "notifications",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "type", "order": "ASCENDING" },
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "notifications",
+      "collectionGroup": "matches",
       "queryScope": "COLLECTION",
       "fields": [
         { "fieldPath": "userId", "order": "ASCENDING" },
         { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "transactions",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "transactions",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "type", "order": "ASCENDING" },
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "reports",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "reportedUserId", "order": "ASCENDING" },
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "reports",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "status", "order": "ASCENDING" },
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "blockedUsers",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "blockedAt", "order": "DESCENDING" }
       ]
     },
     {
       "collectionGroup": "swipes",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "timestamp", "order": "DESCENDING" }
+        { "fieldPath": "swiperId", "order": "ASCENDING" },
+        { "fieldPath": "swipedAt", "order": "DESCENDING" }
       ]
     },
     {
-      "collectionGroup": "swipes",
+      "collectionGroup": "conversations",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" },
-        { "fieldPath": "targetUserId", "order": "ASCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "swipes",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "targetUserId", "order": "ASCENDING" },
-        { "fieldPath": "actionType", "order": "ASCENDING" }
+        { "fieldPath": "participants", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
       ]
     },
     {
@@ -275,78 +78,123 @@
       "queryScope": "COLLECTION",
       "fields": [
         { "fieldPath": "userId1", "order": "ASCENDING" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
+        { "fieldPath": "userId2", "order": "ASCENDING" }
       ]
     },
     {
-      "collectionGroup": "conversations",
+      "collectionGroup": "messages",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "userId2", "order": "ASCENDING" },
-        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "receiverId", "order": "ASCENDING" },
-        { "fieldPath": "readAt", "order": "ASCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
+        { "fieldPath": "conversationId", "order": "ASCENDING" },
         { "fieldPath": "sentAt", "order": "DESCENDING" }
       ]
     },
     {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "conversationId", "order": "ASCENDING" },
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "invoices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "issueDate", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "invoices",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "issueDate", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "coinGifts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "receiverId", "order": "ASCENDING" },
         { "fieldPath": "status", "order": "ASCENDING" },
         { "fieldPath": "sentAt", "order": "DESCENDING" }
       ]
     },
     {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
+      "collectionGroup": "reports",
+      "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "isScheduled", "order": "ASCENDING" },
-        { "fieldPath": "scheduledFor", "order": "ASCENDING" }
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "reportedAt", "order": "DESCENDING" }
       ]
     },
     {
-      "collectionGroup": "messages",
-      "queryScope": "COLLECTION_GROUP",
+      "collectionGroup": "subscriptions",
+      "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "conversationId", "order": "ASCENDING" },
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "memberships",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "isActive", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "legalDocuments",
+      "queryScope": "COLLECTION",
+      "fields": [
         { "fieldPath": "type", "order": "ASCENDING" },
-        { "fieldPath": "sentAt", "order": "DESCENDING" }
+        { "fieldPath": "isActive", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "tierConfigs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isActive", "order": "ASCENDING" },
+        { "fieldPath": "order", "order": "ASCENDING" }
       ]
     }
   ],
   "fieldOverrides": [
     {
       "collectionGroup": "profiles",
-      "fieldPath": "interests",
+      "fieldPath": "dateOfBirth",
       "indexes": [
-        {
-          "queryScope": "COLLECTION",
-          "arrayConfig": "CONTAINS"
-        }
+        { "order": "ASCENDING", "queryScope": "COLLECTION" },
+        { "order": "DESCENDING", "queryScope": "COLLECTION" }
       ]
     },
     {
-      "collectionGroup": "conversations",
-      "fieldPath": "participants",
+      "collectionGroup": "profiles",
+      "fieldPath": "createdAt",
       "indexes": [
-        {
-          "queryScope": "COLLECTION",
-          "arrayConfig": "CONTAINS"
-        }
+        { "order": "ASCENDING", "queryScope": "COLLECTION" },
+        { "order": "DESCENDING", "queryScope": "COLLECTION" }
+      ]
+    },
+    {
+      "collectionGroup": "notifications",
+      "fieldPath": "createdAt",
+      "indexes": [
+        { "order": "ASCENDING", "queryScope": "COLLECTION" },
+        { "order": "DESCENDING", "queryScope": "COLLECTION" }
       ]
     }
   ]

@@ -6,11 +6,13 @@ import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
 import 'onboarding/step1_basic_info_screen.dart';
 import 'onboarding/step2_photo_upload_screen.dart';
+import 'onboarding/step3_verification_screen.dart';
 import 'onboarding/step3_bio_screen.dart';
 import 'onboarding/step4_interests_screen.dart';
 import 'onboarding/step5_location_language_screen.dart';
 import 'onboarding/step6_voice_recording_screen.dart';
 import 'onboarding/step7_personality_quiz_screen.dart';
+import 'onboarding/step9_social_links_screen.dart';
 import 'onboarding/step8_profile_preview_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -29,8 +31,11 @@ class OnboardingScreen extends StatelessWidget {
       child: BlocConsumer<OnboardingBloc, OnboardingState>(
         listener: (context, state) {
           if (state is OnboardingComplete) {
-            // Navigate to home screen
-            Navigator.of(context).pushReplacementNamed('/home');
+            // Navigate to home screen with userId
+            Navigator.of(context).pushReplacementNamed(
+              '/home',
+              arguments: {'userId': state.profile.userId},
+            );
           } else if (state is OnboardingError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -63,6 +68,8 @@ class OnboardingScreen extends StatelessWidget {
               return const Step1BasicInfoScreen();
             case OnboardingStep.photos:
               return const Step2PhotoUploadScreen();
+            case OnboardingStep.verification:
+              return const Step3VerificationScreen();
             case OnboardingStep.bio:
               return const Step3BioScreen();
             case OnboardingStep.interests:
@@ -73,6 +80,8 @@ class OnboardingScreen extends StatelessWidget {
               return const Step6VoiceRecordingScreen();
             case OnboardingStep.personality:
               return const Step7PersonalityQuizScreen();
+            case OnboardingStep.socialLinks:
+              return const Step9SocialLinksScreen();
             case OnboardingStep.preview:
               return const Step8ProfilePreviewScreen();
           }

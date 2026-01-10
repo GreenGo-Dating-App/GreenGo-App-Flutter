@@ -27,6 +27,9 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingLocationUpdated>(_onOnboardingLocationUpdated);
     on<OnboardingVoiceUpdated>(_onOnboardingVoiceUpdated);
     on<OnboardingPersonalityUpdated>(_onOnboardingPersonalityUpdated);
+    on<OnboardingVerificationPhotoAdded>(_onOnboardingVerificationPhotoAdded);
+    on<OnboardingVerificationPhotoUpdated>(_onOnboardingVerificationPhotoUpdated);
+    on<OnboardingSocialLinksUpdated>(_onOnboardingSocialLinksUpdated);
     on<OnboardingCompleted>(_onOnboardingCompleted);
   }
 
@@ -203,6 +206,56 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+  Future<void> _onOnboardingVerificationPhotoAdded(
+    OnboardingVerificationPhotoAdded event,
+    Emitter<OnboardingState> emit,
+  ) async {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+
+      emit(const OnboardingPhotoUploading());
+
+      // Upload verification photo (separate from profile photos)
+      final uploadResult = await uploadPhoto(
+        UploadPhotoParams(
+          userId: currentState.userId,
+          photo: event.photo,
+          folder: 'verifications', // Store in separate folder
+        ),
+      );
+
+      uploadResult.fold(
+        (failure) {
+          emit(OnboardingError(message: failure.message));
+          emit(currentState);
+        },
+        (photoUrl) {
+          emit(currentState.copyWith(verificationPhotoUrl: photoUrl));
+        },
+      );
+    }
+  }
+
+  void _onOnboardingVerificationPhotoUpdated(
+    OnboardingVerificationPhotoUpdated event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(verificationPhotoUrl: event.photoUrl));
+    }
+  }
+
+  void _onOnboardingSocialLinksUpdated(
+    OnboardingSocialLinksUpdated event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(socialLinks: event.socialLinks));
+    }
+  }
+
   Future<void> _onOnboardingCompleted(
     OnboardingCompleted event,
     Emitter<OnboardingState> emit,
@@ -223,9 +276,14 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         languages: currentState.languages,
         voiceRecordingUrl: currentState.voiceUrl,
         personalityTraits: currentState.personalityTraits,
+        socialLinks: currentState.socialLinks,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),
         isComplete: true,
+        // Verification fields
+        verificationStatus: VerificationStatus.pending,
+        verificationPhotoUrl: currentState.verificationPhotoUrl,
+        verificationSubmittedAt: currentState.verificationPhotoUrl != null ? DateTime.now() : null,
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));

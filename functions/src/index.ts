@@ -3,6 +3,9 @@
  * Entry point for all Firebase Cloud Functions
  */
 
+// IMPORTANT: Import firebaseAdmin first to ensure initialization
+import './shared/firebaseAdmin';
+
 // Media Processing Functions
 export {
   compressUploadedImage,
@@ -204,7 +207,7 @@ export {
   getNotificationAnalytics,
 } from './notifications/pushNotifications';
 
-// Email Communication Functions
+// Email Communication Functions (Legacy - SendGrid)
 export {
   sendTransactionalEmail,
   startWelcomeEmailSeries,
@@ -212,6 +215,24 @@ export {
   sendWeeklyDigestEmails,
   sendReEngagementCampaign,
 } from './notifications/emailCommunication';
+
+// Brevo Email Service (Primary)
+export {
+  sendBrevoEmailFunction,
+  getBrevoEmailTemplates,
+  updateBrevoEmailTemplate,
+  getBrevoEmailLogs,
+  getBrevoEmailAnalytics,
+  onUserCreatedSendWelcome,
+  onSubscriptionUpdated,
+  onPhotoModerationUpdated,
+  onAchievementUnlocked,
+  onNewMatch,
+  onPurchaseCreated,
+  sendBrevoWeeklyDigest,
+  sendBrevoReEngagement,
+  sendBrevoStreakReminder,
+} from './notifications/brevoEmailService';
 
 // Video Calling Functions
 export {
@@ -260,3 +281,34 @@ export {
   listSecurityAuditReports,
   cleanupOldAuditReports,
 } from './security/securityAudit';
+
+// Language Learning Functions
+export {
+  submitTeacherApplication,
+  reviewTeacherApplication,
+  createLesson,
+  publishLesson,
+  purchaseLesson,
+  updateLessonProgress,
+  getLearningAnalytics,
+  getUserProgressReport,
+  getTeacherAnalytics,
+  // Admin API
+  getAdminLessons,
+  seedLessons,
+  deleteLesson,
+  updateLesson,
+  getLessonStats,
+} from './language_learning/languageLearningManager';
+
+// MVP Access Control Functions
+export {
+  approveUser,
+  rejectUser,
+  updateUserTier,
+  getPendingUsers,
+  bulkApproveUsers,
+  sendBroadcastNotification,
+  sendNotificationToUser,
+  getMvpAccessStats,
+} from './admin/mvp_access';

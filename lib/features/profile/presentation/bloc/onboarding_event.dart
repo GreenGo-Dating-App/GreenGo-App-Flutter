@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:equatable/equatable.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/location.dart';
+import '../../domain/entities/social_links.dart';
 
 abstract class OnboardingEvent extends Equatable {
   const OnboardingEvent();
@@ -107,6 +108,33 @@ class OnboardingPersonalityUpdated extends OnboardingEvent {
 
   @override
   List<Object?> get props => [traits];
+}
+
+class OnboardingVerificationPhotoAdded extends OnboardingEvent {
+  final File photo;
+
+  const OnboardingVerificationPhotoAdded({required this.photo});
+
+  @override
+  List<Object?> get props => [photo];
+}
+
+class OnboardingVerificationPhotoUpdated extends OnboardingEvent {
+  final String photoUrl;
+
+  const OnboardingVerificationPhotoUpdated({required this.photoUrl});
+
+  @override
+  List<Object?> get props => [photoUrl];
+}
+
+class OnboardingSocialLinksUpdated extends OnboardingEvent {
+  final SocialLinks socialLinks;
+
+  const OnboardingSocialLinksUpdated({required this.socialLinks});
+
+  @override
+  List<Object?> get props => [socialLinks];
 }
 
 class OnboardingCompleted extends OnboardingEvent {

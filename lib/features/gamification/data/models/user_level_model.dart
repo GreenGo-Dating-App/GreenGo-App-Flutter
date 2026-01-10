@@ -12,8 +12,9 @@ class UserLevelModel extends UserLevel {
     required super.level,
     required super.currentXP,
     required super.totalXP,
+    required super.lastUpdated,
+    super.region,
     super.regionalRank,
-    super.globalRank,
     super.isVIP,
   });
 
@@ -25,8 +26,11 @@ class UserLevelModel extends UserLevel {
       level: data['level'] as int,
       currentXP: data['currentXP'] as int,
       totalXP: data['totalXP'] as int,
-      regionalRank: data['regionalRank'] as int?,
-      globalRank: data['globalRank'] as int?,
+      lastUpdated: data['lastUpdated'] != null
+          ? (data['lastUpdated'] as Timestamp).toDate()
+          : DateTime.now(),
+      region: data['region'] as String? ?? 'global',
+      regionalRank: data['regionalRank'] as int? ?? 0,
       isVIP: data['isVIP'] as bool? ?? false,
     );
   }
@@ -37,8 +41,11 @@ class UserLevelModel extends UserLevel {
       level: map['level'] as int,
       currentXP: map['currentXP'] as int,
       totalXP: map['totalXP'] as int,
-      regionalRank: map['regionalRank'] as int?,
-      globalRank: map['globalRank'] as int?,
+      lastUpdated: map['lastUpdated'] != null
+          ? (map['lastUpdated'] as Timestamp).toDate()
+          : DateTime.now(),
+      region: map['region'] as String? ?? 'global',
+      regionalRank: map['regionalRank'] as int? ?? 0,
       isVIP: map['isVIP'] as bool? ?? false,
     );
   }
@@ -49,10 +56,10 @@ class UserLevelModel extends UserLevel {
       'level': level,
       'currentXP': currentXP,
       'totalXP': totalXP,
+      'lastUpdated': FieldValue.serverTimestamp(),
+      'region': region,
       'regionalRank': regionalRank,
-      'globalRank': globalRank,
       'isVIP': isVIP,
-      'updatedAt': FieldValue.serverTimestamp(),
     };
   }
 
@@ -62,8 +69,9 @@ class UserLevelModel extends UserLevel {
       level: entity.level,
       currentXP: entity.currentXP,
       totalXP: entity.totalXP,
+      lastUpdated: entity.lastUpdated,
+      region: entity.region,
       regionalRank: entity.regionalRank,
-      globalRank: entity.globalRank,
       isVIP: entity.isVIP,
     );
   }
@@ -73,8 +81,9 @@ class UserLevelModel extends UserLevel {
     int? level,
     int? currentXP,
     int? totalXP,
+    DateTime? lastUpdated,
+    String? region,
     int? regionalRank,
-    int? globalRank,
     bool? isVIP,
   }) {
     return UserLevelModel(
@@ -82,8 +91,9 @@ class UserLevelModel extends UserLevel {
       level: level ?? this.level,
       currentXP: currentXP ?? this.currentXP,
       totalXP: totalXP ?? this.totalXP,
+      lastUpdated: lastUpdated ?? this.lastUpdated,
+      region: region ?? this.region,
       regionalRank: regionalRank ?? this.regionalRank,
-      globalRank: globalRank ?? this.globalRank,
       isVIP: isVIP ?? this.isVIP,
     );
   }
@@ -94,11 +104,12 @@ class XPTransactionModel extends XPTransaction {
   const XPTransactionModel({
     required super.transactionId,
     required super.userId,
+    required super.actionType,
     required super.xpAmount,
-    required super.reason,
-    required super.timestamp,
-    super.levelBefore,
-    super.levelAfter,
+    required super.levelBefore,
+    required super.levelAfter,
+    required super.createdAt,
+    super.metadata,
   });
 
   factory XPTransactionModel.fromFirestore(DocumentSnapshot doc) {
@@ -107,11 +118,14 @@ class XPTransactionModel extends XPTransaction {
     return XPTransactionModel(
       transactionId: doc.id,
       userId: data['userId'] as String,
+      actionType: data['actionType'] as String? ?? data['reason'] as String,
       xpAmount: data['xpAmount'] as int,
-      reason: data['reason'] as String,
-      timestamp: (data['timestamp'] as Timestamp).toDate(),
-      levelBefore: data['levelBefore'] as int?,
-      levelAfter: data['levelAfter'] as int?,
+      levelBefore: data['levelBefore'] as int? ?? 0,
+      levelAfter: data['levelAfter'] as int? ?? 0,
+      createdAt: data['createdAt'] != null
+          ? (data['createdAt'] as Timestamp).toDate()
+          : (data['timestamp'] as Timestamp?)?.toDate() ?? DateTime.now(),
+      metadata: data['metadata'] as Map<String, dynamic>?,
     );
   }
 
@@ -119,22 +133,26 @@ class XPTransactionModel extends XPTransaction {
     return XPTransactionModel(
       transactionId: map['transactionId'] as String,
       userId: map['userId'] as String,
+      actionType: map['actionType'] as String? ?? map['reason'] as String,
       xpAmount: map['xpAmount'] as int,
-      reason: map['reason'] as String,
-      timestamp: (map['timestamp'] as Timestamp).toDate(),
-      levelBefore: map['levelBefore'] as int?,
-      levelAfter: map['levelAfter'] as int?,
+      levelBefore: map['levelBefore'] as int? ?? 0,
+      levelAfter: map['levelAfter'] as int? ?? 0,
+      createdAt: map['createdAt'] != null
+          ? (map['createdAt'] as Timestamp).toDate()
+          : (map['timestamp'] as Timestamp?)?.toDate() ?? DateTime.now(),
+      metadata: map['metadata'] as Map<String, dynamic>?,
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
       'userId': userId,
+      'actionType': actionType,
       'xpAmount': xpAmount,
-      'reason': reason,
-      'timestamp': Timestamp.fromDate(timestamp),
       'levelBefore': levelBefore,
       'levelAfter': levelAfter,
+      'createdAt': Timestamp.fromDate(createdAt),
+      'metadata': metadata,
     };
   }
 }
@@ -144,12 +162,12 @@ class LeaderboardEntryModel extends LeaderboardEntry {
   const LeaderboardEntryModel({
     required super.rank,
     required super.userId,
+    required super.username,
     required super.level,
     required super.totalXP,
-    required super.region,
-    super.isVIP,
-    super.displayName,
+    super.region,
     super.photoUrl,
+    super.isVIP,
   });
 
   factory LeaderboardEntryModel.fromFirestore(DocumentSnapshot doc) {
@@ -158,12 +176,12 @@ class LeaderboardEntryModel extends LeaderboardEntry {
     return LeaderboardEntryModel(
       rank: data['rank'] as int,
       userId: data['userId'] as String,
+      username: data['username'] as String? ?? data['displayName'] as String? ?? 'Unknown',
       level: data['level'] as int,
       totalXP: data['totalXP'] as int,
-      region: data['region'] as String,
-      isVIP: data['isVIP'] as bool? ?? false,
-      displayName: data['displayName'] as String?,
+      region: data['region'] as String? ?? 'global',
       photoUrl: data['photoUrl'] as String?,
+      isVIP: data['isVIP'] as bool? ?? false,
     );
   }
 
@@ -171,12 +189,12 @@ class LeaderboardEntryModel extends LeaderboardEntry {
     return LeaderboardEntryModel(
       rank: map['rank'] as int,
       userId: map['userId'] as String,
+      username: map['username'] as String? ?? map['displayName'] as String? ?? 'Unknown',
       level: map['level'] as int,
       totalXP: map['totalXP'] as int,
-      region: map['region'] as String,
-      isVIP: map['isVIP'] as bool? ?? false,
-      displayName: map['displayName'] as String?,
+      region: map['region'] as String? ?? 'global',
       photoUrl: map['photoUrl'] as String?,
+      isVIP: map['isVIP'] as bool? ?? false,
     );
   }
 
@@ -184,12 +202,12 @@ class LeaderboardEntryModel extends LeaderboardEntry {
     return {
       'rank': rank,
       'userId': userId,
+      'username': username,
       'level': level,
       'totalXP': totalXP,
       'region': region,
-      'isVIP': isVIP,
-      'displayName': displayName,
       'photoUrl': photoUrl,
+      'isVIP': isVIP,
     };
   }
 }

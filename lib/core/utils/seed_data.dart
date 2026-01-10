@@ -1,0 +1,414 @@
+import 'dart:math';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
+import '../config/app_config.dart';
+
+/// Seed data utility for development and testing
+/// Only works when useLocalEmulators is true
+class SeedData {
+  static final _random = Random();
+
+  // Sample data pools
+  static const _maleFirstNames = [
+    'James', 'Michael', 'Robert', 'David', 'William', 'Richard', 'Joseph', 'Thomas',
+    'Christopher', 'Charles', 'Daniel', 'Matthew', 'Anthony', 'Mark', 'Donald', 'Steven',
+    'Paul', 'Andrew', 'Joshua', 'Kenneth', 'Kevin', 'Brian', 'George', 'Timothy',
+    'Ronald', 'Edward', 'Jason', 'Jeffrey', 'Ryan', 'Jacob', 'Gary', 'Nicholas',
+    'Eric', 'Jonathan', 'Stephen', 'Larry', 'Justin', 'Scott', 'Brandon', 'Benjamin',
+    'Samuel', 'Raymond', 'Gregory', 'Frank', 'Alexander', 'Patrick', 'Jack', 'Dennis',
+    'Marco', 'Luca', 'Alessandro', 'Francesco', 'Lorenzo', 'Matteo', 'Andrea', 'Gabriele',
+  ];
+
+  static const _femaleFirstNames = [
+    'Mary', 'Patricia', 'Jennifer', 'Linda', 'Barbara', 'Elizabeth', 'Susan', 'Jessica',
+    'Sarah', 'Karen', 'Lisa', 'Nancy', 'Betty', 'Margaret', 'Sandra', 'Ashley',
+    'Kimberly', 'Emily', 'Donna', 'Michelle', 'Dorothy', 'Carol', 'Amanda', 'Melissa',
+    'Deborah', 'Stephanie', 'Rebecca', 'Sharon', 'Laura', 'Cynthia', 'Kathleen', 'Amy',
+    'Angela', 'Shirley', 'Anna', 'Brenda', 'Pamela', 'Emma', 'Nicole', 'Helen',
+    'Samantha', 'Katherine', 'Christine', 'Debra', 'Rachel', 'Carolyn', 'Janet', 'Catherine',
+    'Maria', 'Giulia', 'Francesca', 'Sara', 'Chiara', 'Valentina', 'Alessia', 'Martina',
+  ];
+
+  static const _interests = [
+    'Travel', 'Photography', 'Music', 'Movies', 'Reading', 'Cooking', 'Fitness',
+    'Yoga', 'Hiking', 'Dancing', 'Art', 'Gaming', 'Sports', 'Coffee', 'Wine',
+    'Fashion', 'Technology', 'Nature', 'Pets', 'Volunteering', 'Meditation',
+    'Running', 'Cycling', 'Swimming', 'Tennis', 'Basketball', 'Football', 'Golf',
+    'Camping', 'Fishing', 'Gardening', 'DIY', 'Writing', 'Podcasts', 'Comedy',
+    'Theater', 'Concerts', 'Festivals', 'Beach', 'Mountains', 'City Life',
+  ];
+
+  static const _cities = [
+    ('New York', 'USA', 40.7128, -74.0060),
+    ('Los Angeles', 'USA', 34.0522, -118.2437),
+    ('Chicago', 'USA', 41.8781, -87.6298),
+    ('Houston', 'USA', 29.7604, -95.3698),
+    ('Miami', 'USA', 25.7617, -80.1918),
+    ('London', 'UK', 51.5074, -0.1278),
+    ('Paris', 'France', 48.8566, 2.3522),
+    ('Berlin', 'Germany', 52.5200, 13.4050),
+    ('Rome', 'Italy', 41.9028, 12.4964),
+    ('Milan', 'Italy', 45.4642, 9.1900),
+    ('Madrid', 'Spain', 40.4168, -3.7038),
+    ('Barcelona', 'Spain', 41.3851, 2.1734),
+    ('Amsterdam', 'Netherlands', 52.3676, 4.9041),
+    ('Sydney', 'Australia', -33.8688, 151.2093),
+    ('Toronto', 'Canada', 43.6532, -79.3832),
+    ('Tokyo', 'Japan', 35.6762, 139.6503),
+    ('Singapore', 'Singapore', 1.3521, 103.8198),
+    ('Dubai', 'UAE', 25.2048, 55.2708),
+  ];
+
+  static const _languages = [
+    'English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese',
+    'Russian', 'Chinese', 'Japanese', 'Korean', 'Arabic', 'Hindi',
+  ];
+
+  static const _bioTemplates = [
+    "Love exploring new places and meeting interesting people. Always up for an adventure! {interests}",
+    "Passionate about {interest1} and {interest2}. Looking for someone to share experiences with.",
+    "Life is too short to be boring. Let's make some memories together! I enjoy {interests}.",
+    "Coffee enthusiast, {interest1} lover, and eternal optimist. Swipe right if you like spontaneous adventures.",
+    "Work hard, play harder. When I'm not working, you'll find me {interest1} or {interest2}.",
+    "Believer in good vibes and great conversations. Interests include {interests}.",
+    "Not here for games, just genuine connections. I love {interest1}, {interest2}, and good food.",
+    "Adventure seeker with a love for {interest1}. Looking for my partner in crime.",
+    "Simple person with big dreams. Passionate about {interests}. Let's chat!",
+    "Love laughing and making others laugh. Into {interest1} and {interest2}. What about you?",
+    "Foodie, traveler, and {interest1} enthusiast. Always looking for the next great experience.",
+    "Creative soul who loves {interest1} and {interest2}. Looking for deep conversations and real connections.",
+  ];
+
+  // Image services for random profile photos
+  static const _imageServices = [
+    'randomuser', // randomuser.me - 100 portraits per gender
+    'pravatar',   // pravatar.cc - avatar images
+  ];
+
+  /// Check if we should seed data (only in dev/test with emulators)
+  static bool get shouldSeed => kDebugMode && AppConfig.useLocalEmulators;
+
+  /// Seed the database with fake users
+  /// Returns the number of users created
+  static Future<int> seedUsers({
+    int count = 100,
+    bool clearExisting = false,
+  }) async {
+    if (!shouldSeed) {
+      debugPrint('⚠️ Seed data only available in development with emulators');
+      return 0;
+    }
+
+    final firestore = FirebaseFirestore.instance;
+    debugPrint('🌱 Starting to seed $count fake users...');
+
+    try {
+      // Optionally clear existing profiles
+      if (clearExisting) {
+        debugPrint('🗑️ Clearing existing profiles...');
+        final existing = await firestore.collection('profiles').get();
+        for (final doc in existing.docs) {
+          await doc.reference.delete();
+        }
+        debugPrint('✓ Cleared ${existing.docs.length} existing profiles');
+      }
+
+      // Create users in smaller batches for reliability
+      int totalCreated = 0;
+      const int batchSize = 100; // Smaller batches for emulator
+
+      for (int i = 0; i < count; i += batchSize) {
+        final WriteBatch batch = firestore.batch();
+        final int end = (i + batchSize > count) ? count : i + batchSize;
+
+        for (int j = i; j < end; j++) {
+          final profile = _generateRandomProfile(j);
+          final docRef = firestore.collection('profiles').doc(profile['userId']);
+          batch.set(docRef, profile);
+        }
+
+        try {
+          await batch.commit();
+          totalCreated += (end - i);
+          debugPrint('✓ Created $totalCreated/$count users...');
+        } catch (e) {
+          debugPrint('❌ Batch commit failed at $i: $e');
+          // Continue with next batch
+        }
+      }
+
+      debugPrint('🎉 Successfully seeded $totalCreated fake users!');
+      return totalCreated;
+    } catch (e) {
+      debugPrint('❌ Error seeding data: $e');
+      return 0;
+    }
+  }
+
+  /// Generate a random profile
+  static Map<String, dynamic> _generateRandomProfile(int index) {
+    final isMale = _random.nextBool();
+    final gender = isMale ? 'Male' : 'Female';
+    final firstName = isMale
+        ? _maleFirstNames[_random.nextInt(_maleFirstNames.length)]
+        : _femaleFirstNames[_random.nextInt(_femaleFirstNames.length)];
+
+    // Random age between 18 and 55
+    final age = 18 + _random.nextInt(38);
+    final birthYear = DateTime.now().year - age;
+    final birthMonth = 1 + _random.nextInt(12);
+    final birthDay = 1 + _random.nextInt(28);
+    final dateOfBirth = DateTime(birthYear, birthMonth, birthDay);
+
+    // Random city
+    final cityData = _cities[_random.nextInt(_cities.length)];
+    final city = cityData.$1;
+    final country = cityData.$2;
+    final lat = cityData.$3 + (_random.nextDouble() - 0.5) * 0.2;
+    final lng = cityData.$4 + (_random.nextDouble() - 0.5) * 0.2;
+
+    // Random interests (3-7)
+    final interestCount = 3 + _random.nextInt(5);
+    final shuffledInterests = List<String>.from(_interests)..shuffle(_random);
+    final selectedInterests = shuffledInterests.take(interestCount).toList();
+
+    // Random languages (1-3)
+    final langCount = 1 + _random.nextInt(3);
+    final shuffledLangs = List<String>.from(_languages)..shuffle(_random);
+    final selectedLanguages = shuffledLangs.take(langCount).toList();
+
+    // Generate bio
+    final bioTemplate = _bioTemplates[_random.nextInt(_bioTemplates.length)];
+    final bio = bioTemplate
+        .replaceAll('{interest1}', selectedInterests[0])
+        .replaceAll('{interest2}', selectedInterests.length > 1 ? selectedInterests[1] : selectedInterests[0])
+        .replaceAll('{interests}', selectedInterests.take(3).join(', '));
+
+    // Photos (1-6) - use random images from internet services
+    final photoCount = 1 + _random.nextInt(6);
+    final photoUrls = _generatePhotoUrls(
+      count: photoCount,
+      isMale: isMale,
+      userIndex: index,
+    );
+
+    // Generate unique userId
+    final userId = 'seed_user_${index}_${DateTime.now().millisecondsSinceEpoch}';
+
+    return {
+      'userId': userId,
+      'displayName': firstName,
+      'dateOfBirth': Timestamp.fromDate(dateOfBirth),
+      'gender': gender,
+      'photoUrls': photoUrls,
+      'bio': bio,
+      'interests': selectedInterests,
+      'location': {
+        'latitude': lat,
+        'longitude': lng,
+        'city': city,
+        'country': country,
+        'displayAddress': '$city, $country',
+      },
+      'languages': selectedLanguages,
+      'voiceRecordingUrl': null,
+      'personalityTraits': _random.nextBool() ? {
+        'openness': 30 + _random.nextInt(70),
+        'conscientiousness': 30 + _random.nextInt(70),
+        'extraversion': 30 + _random.nextInt(70),
+        'agreeableness': 30 + _random.nextInt(70),
+        'neuroticism': 10 + _random.nextInt(50),
+      } : null,
+      'education': null,
+      'occupation': null,
+      'lookingFor': null,
+      'height': 150 + _random.nextInt(50),
+      'createdAt': Timestamp.fromDate(
+        DateTime.now().subtract(Duration(days: _random.nextInt(365))),
+      ),
+      'updatedAt': Timestamp.now(),
+      'isComplete': true,
+      'verificationStatus': 'approved', // All seeded users are pre-approved
+      'isAdmin': false,
+    };
+  }
+
+  /// Create the admin user account in Firebase Auth and Firestore
+  /// This should be called during app initialization
+  static Future<void> seedAdminUser() async {
+    if (!shouldSeed) {
+      debugPrint('⚠️ Admin seed only available in development with emulators');
+      return;
+    }
+
+    final firestore = FirebaseFirestore.instance;
+    final auth = FirebaseAuth.instance;
+    const adminEmail = 'admin@greengochat.com';
+    const adminPassword = 'AdminGreenGo2024Secure';
+
+    try {
+      debugPrint('🔐 Setting up admin user...');
+
+      String adminUserId;
+
+      // Try to create admin user in Firebase Auth
+      try {
+        final userCredential = await auth.createUserWithEmailAndPassword(
+          email: adminEmail,
+          password: adminPassword,
+        );
+        adminUserId = userCredential.user!.uid;
+        debugPrint('✓ Created admin in Firebase Auth: $adminUserId');
+
+        // Sign out so the app starts fresh
+        await auth.signOut();
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'email-already-in-use') {
+          // Admin already exists, try to sign in to get the UID
+          debugPrint('✓ Admin auth account already exists, signing in to get UID...');
+          try {
+            final userCredential = await auth.signInWithEmailAndPassword(
+              email: adminEmail,
+              password: adminPassword,
+            );
+            adminUserId = userCredential.user!.uid;
+            debugPrint('✓ Admin UID: $adminUserId');
+            await auth.signOut();
+          } catch (signInError) {
+            debugPrint('⚠️ Could not sign in as admin: $signInError');
+            return;
+          }
+        } else {
+          debugPrint('⚠️ Firebase Auth error: ${e.code}');
+          return;
+        }
+      }
+
+      // Check if admin profile already exists
+      final adminDoc = await firestore.collection('profiles').doc(adminUserId).get();
+
+      if (adminDoc.exists) {
+        // Update the profile to ensure it has admin flag and approved status
+        await firestore.collection('profiles').doc(adminUserId).set({
+          'isAdmin': true,
+          'verificationStatus': 'approved',
+          'isComplete': true,
+        }, SetOptions(merge: true));
+        debugPrint('✓ Admin profile updated with admin flags');
+        // Also create/update admin_users document for admin panel access
+        await firestore.collection('admin_users').doc(adminUserId).set({
+          'userId': adminUserId,
+          'email': adminEmail,
+          'displayName': 'Super Admin',
+          'role': 'superAdmin',
+          'permissions': [
+            'viewDashboard', 'viewAnalytics', 'exportData',
+            'viewUserProfiles', 'editUserProfiles', 'suspendUsers',
+            'banUsers', 'deleteUsers', 'viewSubscriptions',
+            'overrideSubscriptions', 'refundSubscriptions', 'adjustCoins',
+            'grantCoins', 'viewReports', 'reviewContent',
+            'issueWarnings', 'removeContent', 'sendNotifications',
+            'sendEmails', 'broadcastMessages', 'manageAdmins',
+            'viewAuditLog', 'systemSettings', 'impersonateUsers'
+          ],
+          'createdAt': Timestamp.now(),
+          'lastLoginAt': Timestamp.now(),
+          'isActive': true,
+        }, SetOptions(merge: true));
+        debugPrint('✓ Admin user document created/updated in admin_users collection');
+        return;
+      }
+
+      debugPrint('📝 Creating new admin profile...');
+
+      // Create admin profile in Firestore
+      final adminProfile = {
+        'userId': adminUserId,
+        'displayName': 'Admin',
+        'dateOfBirth': Timestamp.fromDate(DateTime(1990, 1, 1)),
+        'gender': 'male',
+        'photoUrls': ['https://randomuser.me/api/portraits/men/1.jpg'],
+        'bio': 'System Administrator',
+        'interests': ['Technology', 'Management'],
+        'location': {
+          'latitude': 41.9028,
+          'longitude': 12.4964,
+          'city': 'Rome',
+          'country': 'Italy',
+          'displayAddress': 'Rome, Italy',
+        },
+        'languages': ['English', 'Italian'],
+        'voiceRecordingUrl': null,
+        'personalityTraits': null,
+        'education': null,
+        'occupation': 'System Administrator',
+        'lookingFor': null,
+        'height': null,
+        'createdAt': Timestamp.now(),
+        'updatedAt': Timestamp.now(),
+        'isComplete': true,
+        'verificationStatus': 'approved',
+        'isAdmin': true,
+      };
+
+      await firestore.collection('profiles').doc(adminUserId).set(adminProfile);
+
+      debugPrint('🎉 Admin user created successfully!');
+      debugPrint('   Email: $adminEmail');
+      debugPrint('   Password: $adminPassword');
+      debugPrint('   User ID: $adminUserId');
+    } catch (e) {
+      debugPrint('❌ Error creating admin user: $e');
+    }
+  }
+
+  /// Generate photo URLs from various internet services
+  static List<String> _generatePhotoUrls({
+    required int count,
+    required bool isMale,
+    required int userIndex,
+  }) {
+    final urls = <String>[];
+    final gender = isMale ? 'men' : 'women';
+
+    for (int i = 0; i < count; i++) {
+      // Randomize which image index to use (0-99 for randomuser.me)
+      final imageIndex = (userIndex * 7 + i * 13 + _random.nextInt(50)) % 100;
+
+      // Use different services for variety
+      final serviceIndex = (userIndex + i) % 3;
+
+      String url;
+      switch (serviceIndex) {
+        case 0:
+          // randomuser.me - realistic portraits
+          url = 'https://randomuser.me/api/portraits/$gender/$imageIndex.jpg';
+          break;
+        case 1:
+          // pravatar.cc - avatar images (uses hash for consistency)
+          final hash = '${isMale ? 'm' : 'f'}${userIndex}_$i';
+          url = 'https://i.pravatar.cc/400?u=$hash';
+          break;
+        case 2:
+        default:
+          // xsgames.co - random user images
+          url = 'https://xsgames.co/randomusers/assets/avatars/${isMale ? 'male' : 'female'}/$imageIndex.jpg';
+          break;
+      }
+
+      urls.add(url);
+    }
+
+    return urls;
+  }
+
+  /// Quick seed for testing (creates 50 users)
+  static Future<int> quickSeed() => seedUsers(count: 50);
+
+  /// Full seed for development (creates 500 users)
+  static Future<int> fullSeed() => seedUsers(count: 500);
+
+  /// Mega seed for load testing (creates 1000 users)
+  static Future<int> megaSeed() => seedUsers(count: 1000);
+}

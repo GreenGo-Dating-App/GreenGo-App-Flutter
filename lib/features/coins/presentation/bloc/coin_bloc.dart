@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
@@ -36,10 +35,6 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
   final GetActivePromotions getActivePromotions;
   final GetPromotionByCode getPromotionByCode;
   final IsPromotionApplicable isPromotionApplicable;
-
-  StreamSubscription<PurchaseDetails>? _purchaseSubscription;
-  StreamSubscription? _balanceSubscription;
-  StreamSubscription? _transactionSubscription;
 
   CoinBloc({
     required this.getCoinBalance,
@@ -120,13 +115,13 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     SubscribeToCoinBalance event,
     Emitter<CoinState> emit,
   ) async {
-    await _balanceSubscription?.cancel();
-
-    _balanceSubscription = getCoinBalance.stream(event.userId).listen(
-      (result) {
-        result.fold(
-          (failure) => add(LoadCoinBalance(event.userId)),
-          (balance) => emit(CoinBalanceLoaded(balance)),
+    // Use emit.forEach to properly handle stream emissions
+    await emit.forEach(
+      getCoinBalance.stream(event.userId),
+      onData: (result) {
+        return result.fold(
+          (failure) => CoinError(failure.toString()),
+          (balance) => CoinBalanceLoaded(balance),
         );
       },
     );
@@ -208,15 +203,13 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     SubscribeToTransactions event,
     Emitter<CoinState> emit,
   ) async {
-    await _transactionSubscription?.cancel();
-
-    _transactionSubscription = getTransactionHistory
-        .stream(userId: event.userId, limit: event.limit)
-        .listen(
-      (result) {
-        result.fold(
-          (failure) => add(LoadTransactionHistory(userId: event.userId)),
-          (transactions) => emit(TransactionHistoryLoaded(transactions)),
+    // Use emit.forEach to properly handle stream emissions
+    await emit.forEach(
+      getTransactionHistory.stream(userId: event.userId, limit: event.limit),
+      onData: (result) {
+        return result.fold(
+          (failure) => CoinError(failure.toString()),
+          (transactions) => TransactionHistoryLoaded(transactions),
         );
       },
     );
@@ -534,9 +527,6 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
 
   @override
   Future<void> close() {
-    _purchaseSubscription?.cancel();
-    _balanceSubscription?.cancel();
-    _transactionSubscription?.cancel();
     return super.close();
   }
 }

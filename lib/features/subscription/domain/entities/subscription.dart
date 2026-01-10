@@ -1,11 +1,12 @@
 import 'package:equatable/equatable.dart';
 
 /// Subscription Tier
-/// Point 148: Three-tier system
+/// Point 148: Four-tier system (updated for MVP release)
 enum SubscriptionTier {
-  basic,  // Free tier
-  silver, // $9.99/month
-  gold,   // $19.99/month
+  basic,    // Free tier
+  silver,   // $9.99/month
+  gold,     // $19.99/month
+  platinum, // $29.99/month - VIP tier
 }
 
 extension SubscriptionTierExtension on SubscriptionTier {
@@ -17,6 +18,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'Silver';
       case SubscriptionTier.gold:
         return 'Gold';
+      case SubscriptionTier.platinum:
+        return 'Platinum';
     }
   }
 
@@ -28,6 +31,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'Silver Premium';
       case SubscriptionTier.gold:
         return 'Gold Premium';
+      case SubscriptionTier.platinum:
+        return 'Platinum VIP';
     }
   }
 
@@ -39,6 +44,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 9.99;
       case SubscriptionTier.gold:
         return 19.99;
+      case SubscriptionTier.platinum:
+        return 29.99;
     }
   }
 
@@ -50,7 +57,24 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'silver_premium_monthly';
       case SubscriptionTier.gold:
         return 'gold_premium_monthly';
+      case SubscriptionTier.platinum:
+        return 'platinum_vip_monthly';
     }
+  }
+
+  /// Check if this tier has early access (March 1st, 2026)
+  bool get hasEarlyAccess {
+    return this == SubscriptionTier.platinum ||
+           this == SubscriptionTier.gold ||
+           this == SubscriptionTier.silver;
+  }
+
+  /// Get the access date for this tier
+  DateTime get accessDate {
+    if (hasEarlyAccess) {
+      return DateTime(2026, 3, 1); // March 1st, 2026 for Platinum, Gold, Silver
+    }
+    return DateTime(2026, 3, 15); // March 15th, 2026 for Basic users
   }
 
   /// Features for each tier
@@ -101,6 +125,24 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'profileBoost': 5,
           'incognitoMode': true,
         };
+      case SubscriptionTier.platinum:
+        return {
+          'dailyLikes': -1, // unlimited
+          'superLikes': -1, // unlimited
+          'rewinds': -1, // unlimited
+          'boosts': -1, // unlimited
+          'seeWhoLikesYou': true,
+          'unlimitedLikes': true,
+          'advancedFilters': true,
+          'readReceipts': true,
+          'prioritySupport': true,
+          'adFree': true,
+          'profileBoost': -1, // unlimited
+          'incognitoMode': true,
+          'vipBadge': true,
+          'priorityMatching': true,
+          'exclusiveEvents': true,
+        };
     }
   }
 
@@ -110,6 +152,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return SubscriptionTier.silver;
       case 'gold':
         return SubscriptionTier.gold;
+      case 'platinum':
+        return SubscriptionTier.platinum;
       case 'basic':
       default:
         return SubscriptionTier.basic;

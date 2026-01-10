@@ -1,7 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/discovery_card.dart';
+import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/get_discovery_stack.dart';
 import '../../domain/usecases/record_swipe.dart';
+import '../../../../core/services/usage_limit_service.dart';
 import 'discovery_event.dart';
 import 'discovery_state.dart';
 
@@ -11,11 +13,14 @@ import 'discovery_state.dart';
 class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   final GetDiscoveryStack getDiscoveryStack;
   final RecordSwipe recordSwipe;
+  final UsageLimitService _usageLimitService;
 
   DiscoveryBloc({
     required this.getDiscoveryStack,
     required this.recordSwipe,
-  }) : super(const DiscoveryInitial()) {
+    UsageLimitService? usageLimitService,
+  })  : _usageLimitService = usageLimitService ?? UsageLimitService(),
+        super(const DiscoveryInitial()) {
     on<DiscoveryStackLoadRequested>(_onLoadStack);
     on<DiscoverySwipeRecorded>(_onSwipeRecorded);
     on<DiscoveryStackRefreshRequested>(_onRefreshStack);
@@ -37,7 +42,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     );
 
     result.fold(
-      (failure) => emit(const DiscoveryError('Failed to load discovery stack')),
+      (failure) => emit(DiscoveryError(failure.message)),
       (candidates) {
         if (candidates.isEmpty) {
           emit(const DiscoveryStackEmpty());
@@ -66,6 +71,45 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
     final currentState = state as DiscoveryLoaded;
 
+    // Only check limits if membership rules are provided
+    if (event.membershipRules != null && event.membershipTier != null) {
+      // Check if it's a super like - check super like limit first
+      if (event.actionType == SwipeActionType.superLike) {
+        final superLikeLimit = await _usageLimitService.checkLimit(
+          userId: event.userId,
+          limitType: UsageLimitType.superLikes,
+          rules: event.membershipRules!,
+          currentTier: event.membershipTier!,
+        );
+
+        if (!superLikeLimit.isAllowed) {
+          emit(DiscoverySuperLikeLimitReached(
+            cards: currentState.cards,
+            currentIndex: currentState.currentIndex,
+            limitResult: superLikeLimit,
+          ));
+          return;
+        }
+      }
+
+      // Check swipe limit for all swipe types (like, pass, superLike all count as swipes)
+      final swipeLimit = await _usageLimitService.checkLimit(
+        userId: event.userId,
+        limitType: UsageLimitType.swipes,
+        rules: event.membershipRules!,
+        currentTier: event.membershipTier!,
+      );
+
+      if (!swipeLimit.isAllowed) {
+        emit(DiscoverySwipeLimitReached(
+          cards: currentState.cards,
+          currentIndex: currentState.currentIndex,
+          limitResult: swipeLimit,
+        ));
+        return;
+      }
+    }
+
     // Emit swiping state
     emit(DiscoverySwiping(
       cards: currentState.cards,
@@ -86,7 +130,21 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         // Revert to previous state on error
         emit(currentState);
       },
-      (swipeAction) {
+      (swipeAction) async {
+        // Record usage after successful swipe
+        await _usageLimitService.recordUsage(
+          userId: event.userId,
+          limitType: UsageLimitType.swipes,
+        );
+
+        // Also record super like usage if applicable
+        if (event.actionType == SwipeActionType.superLike) {
+          await _usageLimitService.recordUsage(
+            userId: event.userId,
+            limitType: UsageLimitType.superLikes,
+          );
+        }
+
         // Move to next card
         final nextIndex = currentState.currentIndex + 1;
 

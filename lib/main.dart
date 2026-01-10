@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'core/config/app_config.dart';
 import 'core/theme/app_theme.dart';
 import 'core/constants/app_strings.dart';
 import 'core/providers/language_provider.dart';
 import 'core/di/injection_container.dart' as di;
+import 'core/utils/seed_data.dart';
+import 'core/services/feature_flags_service.dart';
+import 'core/services/cache_service.dart';
+import 'core/services/version_check_service.dart';
+import 'core/widgets/update_dialog.dart';
 import 'features/authentication/presentation/bloc/auth_bloc.dart';
 import 'features/authentication/presentation/bloc/auth_state.dart';
 import 'features/authentication/presentation/screens/login_screen.dart';
@@ -17,9 +28,15 @@ import 'features/authentication/presentation/screens/register_screen.dart';
 import 'features/authentication/presentation/screens/forgot_password_screen.dart';
 import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
 import 'features/main/presentation/screens/main_navigation_screen.dart';
+import 'features/language_learning/presentation/screens/language_learning_home_screen.dart';
+import 'features/language_learning/presentation/screens/language_detail_screen.dart';
+import 'features/language_learning/presentation/screens/flashcard_session_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Print app configuration (for debugging)
+  AppConfig.printConfig();
 
   // Set preferred orientations
   await SystemChrome.setPreferredOrientations([
@@ -30,12 +47,91 @@ void main() async {
   // Initialize Firebase
   await Firebase.initializeApp();
 
+  // Enable Firestore offline persistence for cost optimization
+  // This caches data locally and reduces server reads
+  FirebaseFirestore.instance.settings = const Settings(
+    persistenceEnabled: true,
+    cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED, // Unlimited local cache
+  );
+  debugPrint('✓ Firestore offline persistence enabled');
+
+  // Initialize cache service (Hive-based caching)
+  await cacheService.initialize();
+
+  // Configure Firebase Emulators for local development
+  if (kDebugMode && AppConfig.useLocalEmulators) {
+    debugPrint('🔧 Connecting to Firebase Emulators...');
+
+    // Get the emulator host
+    // Use 10.0.2.2 for Android Emulator, 127.0.0.1 for iOS Simulator/Web
+    final String emulatorHost = AppConfig.emulatorHost;
+
+    try {
+      // Connect to Auth Emulator
+      await FirebaseAuth.instance.useAuthEmulator(emulatorHost, 9099);
+      debugPrint('✓ Auth Emulator: $emulatorHost:9099');
+
+      // Connect to Firestore Emulator
+      FirebaseFirestore.instance.useFirestoreEmulator(emulatorHost, 8080);
+      debugPrint('✓ Firestore Emulator: $emulatorHost:8080');
+
+      // Connect to Storage Emulator
+      await FirebaseStorage.instance.useStorageEmulator(emulatorHost, 9199);
+      debugPrint('✓ Storage Emulator: $emulatorHost:9199');
+
+      debugPrint('🎉 All Firebase Emulators connected!');
+    } catch (e) {
+      debugPrint('⚠️ Firebase Emulator connection error: $e');
+      debugPrint('Make sure Docker containers are running!');
+    }
+  }
+
+  // Initialize Firebase App Check
+  // Skip App Check when using local emulators (it doesn't work with emulators)
+  if (!AppConfig.useLocalEmulators) {
+    await FirebaseAppCheck.instance.activate(
+      // Use debug provider for development
+      // For production, use: androidProvider: AndroidProvider.playIntegrity,
+      androidProvider: AndroidProvider.debug,
+      appleProvider: AppleProvider.debug,
+    );
+    debugPrint('✓ Firebase App Check activated');
+  } else {
+    debugPrint('⚠️ Firebase App Check skipped (using local emulators)');
+
+    // Seed fake users for development/testing
+    try {
+      // Count existing profiles
+      final existingProfiles = await FirebaseFirestore.instance
+          .collection('profiles')
+          .get();
+
+      final profileCount = existingProfiles.docs.length;
+      debugPrint('📊 Found $profileCount existing profiles');
+
+      if (profileCount < 1000) {
+        debugPrint('📊 Seeding test data (need ${1000 - profileCount} more profiles)...');
+        final seeded = await SeedData.seedUsers(count: 1000, clearExisting: true);
+        debugPrint('✅ Seeded $seeded test profiles');
+      } else {
+        debugPrint('📊 $profileCount profiles exist, skipping seed');
+      }
+
+      // Always ensure admin user exists
+      await SeedData.seedAdminUser();
+    } catch (e) {
+      debugPrint('⚠️ Could not seed data: $e');
+    }
+  }
+
   // Initialize Firebase Remote Config with default values
   try {
     final remoteConfig = FirebaseRemoteConfig.instance;
     await remoteConfig.setConfigSettings(RemoteConfigSettings(
-      fetchTimeout: const Duration(minutes: 1),
-      minimumFetchInterval: const Duration(hours: 1),
+      fetchTimeout: const Duration(seconds: kDebugMode ? 10 : 60),
+      minimumFetchInterval: kDebugMode
+          ? const Duration(seconds: 10)  // Fast refresh for local development
+          : const Duration(hours: 1),    // Standard interval for production
     ));
 
     // Set default remote config values
@@ -56,6 +152,14 @@ void main() async {
   // Initialize dependency injection
   await di.init();
 
+  // Initialize feature flags service (loads from Firestore)
+  await featureFlags.initialize();
+  debugPrint('✓ Feature flags initialized');
+
+  // Initialize version check service
+  await versionCheck.initialize();
+  debugPrint('✓ Version check initialized');
+
   runApp(const GreenGoChatApp());
 }
 
@@ -67,6 +171,7 @@ class GreenGoChatApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => LanguageProvider()),
+        ChangeNotifierProvider.value(value: featureFlags),
         BlocProvider(create: (context) => di.sl<AuthBloc>()),
       ],
       child: Consumer<LanguageProvider>(
@@ -101,6 +206,32 @@ class GreenGoChatApp extends StatelessWidget {
                   );
                 }
               }
+
+              // Language Learning routes
+              if (settings.name == '/language-learning') {
+                return MaterialPageRoute(
+                  builder: (context) => const LanguageLearningHomeScreen(),
+                );
+              }
+
+              if (settings.name == '/language-detail') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                final languageCode = args?['languageCode'] as String?;
+                if (languageCode != null) {
+                  return MaterialPageRoute(
+                    builder: (context) => LanguageDetailScreen(
+                      languageCode: languageCode,
+                    ),
+                  );
+                }
+              }
+
+              if (settings.name == '/flashcard-session') {
+                return MaterialPageRoute(
+                  builder: (context) => const FlashcardSessionScreen(),
+                );
+              }
+
               return null;
             },
           );
@@ -111,8 +242,56 @@ class GreenGoChatApp extends StatelessWidget {
 }
 
 /// AuthWrapper - Determines initial route based on authentication state
-class AuthWrapper extends StatelessWidget {
+class AuthWrapper extends StatefulWidget {
   const AuthWrapper({super.key});
+
+  @override
+  State<AuthWrapper> createState() => _AuthWrapperState();
+}
+
+class _AuthWrapperState extends State<AuthWrapper> {
+  bool _hasCheckedVersion = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Check version after first frame is rendered
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _checkVersion();
+    });
+  }
+
+  void _checkVersion() {
+    if (_hasCheckedVersion) return;
+    _hasCheckedVersion = true;
+
+    final result = versionCheck.checkVersion();
+
+    switch (result.updateType) {
+      case UpdateType.maintenance:
+        // Show maintenance screen (blocks everything)
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(
+            builder: (context) => MaintenanceScreen(
+              message: result.maintenanceMessage ?? 'We are currently performing maintenance.',
+            ),
+          ),
+          (route) => false,
+        );
+        break;
+      case UpdateType.force:
+        // Show force update dialog (non-dismissible)
+        UpdateDialogHelper.showForceUpdateDialog(context, result);
+        break;
+      case UpdateType.soft:
+        // Show soft update dialog (dismissible)
+        UpdateDialogHelper.showSoftUpdateDialog(context, result);
+        break;
+      case UpdateType.none:
+        // No update needed
+        break;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

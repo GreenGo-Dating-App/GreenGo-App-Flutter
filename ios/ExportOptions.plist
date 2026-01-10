@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Export method: app-store, ad-hoc, enterprise, development -->
+    <key>method</key>
+    <string>app-store</string>
+
+    <!-- Team ID from Apple Developer account -->
+    <key>teamID</key>
+    <string>YOUR_TEAM_ID</string>
+
+    <!-- Upload to App Store Connect -->
+    <key>destination</key>
+    <string>upload</string>
+
+    <!-- Signing style -->
+    <key>signingStyle</key>
+    <string>manual</string>
+
+    <!-- Signing certificate name -->
+    <key>signingCertificate</key>
+    <string>Apple Distribution</string>
+
+    <!-- Provisioning profiles per bundle ID -->
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>com.greengo.chat</key>
+        <string>GreenGo Distribution Profile</string>
+    </dict>
+
+    <!-- Strip Swift symbols to reduce size -->
+    <key>stripSwiftSymbols</key>
+    <true/>
+
+    <!-- Upload symbols for crash reporting -->
+    <key>uploadSymbols</key>
+    <true/>
+
+    <!-- Upload bitcode -->
+    <key>uploadBitcode</key>
+    <false/>
+
+    <!-- Generate App Store info plist -->
+    <key>generateAppStoreInformation</key>
+    <false/>
+
+    <!-- Manage app version and build number -->
+    <key>manageAppVersionAndBuildNumber</key>
+    <false/>
+</dict>
+</plist>

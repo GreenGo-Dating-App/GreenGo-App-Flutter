@@ -1,18 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/providers/language_provider.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../authentication/presentation/bloc/auth_bloc.dart';
+import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../widgets/edit_section_card.dart';
+import '../../../admin/presentation/screens/verification_admin_screen.dart';
+import '../../../admin/presentation/screens/reports_admin_screen.dart';
+import '../../../membership/presentation/screens/membership_admin_screen.dart';
+import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
+import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
+import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
 import 'photo_management_screen.dart';
 import 'edit_basic_info_screen.dart';
 import 'edit_bio_screen.dart';
 import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
+import 'edit_social_links_screen.dart';
+// Gamification/Coins screens disabled due to compile errors
+// import '../../../gamification/presentation/screens/achievements_screen.dart';
+// import '../../../gamification/presentation/screens/journey_screen.dart';
+// import '../../../gamification/presentation/screens/leaderboard_screen.dart';
+// import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
+// import '../../../coins/presentation/screens/coin_shop_screen.dart';
+// import '../../../coins/presentation/screens/transaction_history_screen.dart';
+// import '../../../gamification/presentation/bloc/gamification_bloc.dart';
+// import '../../../coins/presentation/bloc/coin_bloc.dart';
 
 class EditProfileScreen extends StatelessWidget {
   final String? userId;
@@ -159,18 +180,101 @@ class EditProfileScreen extends StatelessWidget {
                     onTap: () => _navigateToEditVoice(context),
                   ),
 
+                  const SizedBox(height: 16),
+
+                  // Social Links Section
+                  EditSectionCard(
+                    title: 'Social Profiles',
+                    subtitle: _getSocialLinksSubtitle(currentProfile),
+                    icon: Icons.share,
+                    onTap: () => _navigateToEditSocialLinks(context, currentProfile),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // App Language Section
+                  Consumer<LanguageProvider>(
+                    builder: (context, languageProvider, child) {
+                      return EditSectionCard(
+                        title: 'App Language',
+                        subtitle: languageProvider.currentLanguageName,
+                        icon: Icons.language,
+                        onTap: () => _showLanguageDialog(context, languageProvider),
+                      );
+                    },
+                  ),
+
+                  // Gamification & Rewards Section - DISABLED: compile errors in gamification/coins features
+                  // TODO: Re-enable when gamification/coins features are fixed
+                  // const SizedBox(height: 32),
+                  // const Divider(color: AppColors.divider),
+                  // const SizedBox(height: 16),
+                  // const Text(
+                  //   'Rewards & Progress',
+                  //   style: TextStyle(
+                  //     color: AppColors.richGold,
+                  //     fontSize: 18,
+                  //     fontWeight: FontWeight.bold,
+                  //   ),
+                  // ),
+                  // const SizedBox(height: 16),
+                  // EditSectionCard(
+                  //   title: 'Coin Shop',
+                  //   subtitle: 'Purchase coins and premium features',
+                  //   icon: Icons.monetization_on,
+                  //   onTap: () => _navigateToCoinShop(context, currentProfile),
+                  // ),
+                  // ... other gamification navigation disabled ...
+
+                  // Admin Panel Section (only visible to admins)
+                  if (currentProfile.isAdmin) ...[
+                    const SizedBox(height: 32),
+                    const Divider(color: AppColors.divider),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Admin',
+                      style: TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    EditSectionCard(
+                      title: 'Verification Panel',
+                      subtitle: 'Review user verifications',
+                      icon: Icons.verified_user,
+                      onTap: () => _navigateToAdminVerification(context, currentProfile),
+                    ),
+                    const SizedBox(height: 16),
+                    EditSectionCard(
+                      title: 'Reports Panel',
+                      subtitle: 'Review reported messages & manage accounts',
+                      icon: Icons.report,
+                      onTap: () => _navigateToAdminReports(context, currentProfile),
+                    ),
+                    const SizedBox(height: 16),
+                    EditSectionCard(
+                      title: 'Membership Panel',
+                      subtitle: 'Manage coupons, tiers & rules',
+                      icon: Icons.card_membership,
+                      onTap: () => _navigateToAdminMembership(context, currentProfile),
+                    ),
+                  ],
+
                   const SizedBox(height: 32),
 
-                  // Delete Account Button
-                  OutlinedButton(
-                    onPressed: () => _showDeleteAccountDialog(context, currentProfile),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: AppColors.errorRed,
-                      side: const BorderSide(color: AppColors.errorRed),
-                      minimumSize: const Size(double.infinity, 50),
+                  // Delete Account Button (hidden for admin users)
+                  if (!currentProfile.isAdmin)
+                    OutlinedButton(
+                      onPressed: () => _showDeleteAccountDialog(context, currentProfile),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: AppColors.errorRed,
+                        side: const BorderSide(color: AppColors.errorRed),
+                        minimumSize: const Size(double.infinity, 50),
+                      ),
+                      child: const Text('Delete Account'),
                     ),
-                    child: const Text('Delete Account'),
-                  ),
 
                   const SizedBox(height: 16),
 
@@ -184,6 +288,22 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                     child: const Text('Export My Data (GDPR)'),
                   ),
+
+                  const SizedBox(height: 16),
+
+                  // Log Out Button
+                  ElevatedButton.icon(
+                    onPressed: () => _showLogoutDialog(context),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: Colors.white,
+                      minimumSize: const Size(double.infinity, 50),
+                    ),
+                    icon: const Icon(Icons.logout),
+                    label: const Text('Log Out'),
+                  ),
+
+                  const SizedBox(height: 32),
                 ],
               ),
             );
@@ -256,6 +376,140 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
+  String _getSocialLinksSubtitle(Profile profile) {
+    if (profile.socialLinks == null || !profile.socialLinks!.hasAnyLink) {
+      return 'No social profiles linked';
+    }
+
+    final links = <String>[];
+    if (profile.socialLinks!.facebook != null) links.add('Facebook');
+    if (profile.socialLinks!.instagram != null) links.add('Instagram');
+    if (profile.socialLinks!.tiktok != null) links.add('TikTok');
+    if (profile.socialLinks!.linkedin != null) links.add('LinkedIn');
+    if (profile.socialLinks!.x != null) links.add('X');
+
+    return '${links.length} profile${links.length == 1 ? '' : 's'} linked';
+  }
+
+  Future<void> _navigateToEditSocialLinks(BuildContext context, Profile currentProfile) async {
+    final result = await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => EditSocialLinksScreen(profile: currentProfile),
+      ),
+    );
+    if (result != null && context.mounted) {
+      // Profile was updated
+    }
+  }
+
+  void _navigateToAdminVerification(BuildContext context, Profile currentProfile) {
+    // Create the repository and bloc for the admin screen
+    final remoteDataSource = VerificationAdminRemoteDataSourceImpl(
+      firestore: FirebaseFirestore.instance,
+    );
+    final repository = VerificationAdminRepositoryImpl(
+      remoteDataSource: remoteDataSource,
+    );
+
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => VerificationAdminBloc(repository: repository),
+          child: VerificationAdminScreen(adminId: currentProfile.userId),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToAdminReports(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ReportsAdminScreen(adminId: currentProfile.userId),
+      ),
+    );
+  }
+
+  void _navigateToAdminMembership(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => MembershipAdminScreen(adminId: currentProfile.userId),
+      ),
+    );
+  }
+
+  // Gamification & Coins Navigation Methods - DISABLED: compile errors in features
+  // void _navigateToCoinShop(BuildContext context, Profile currentProfile) { ... }
+  // void _navigateToTransactionHistory(BuildContext context, Profile currentProfile) { ... }
+  // void _navigateToAchievements(BuildContext context, Profile currentProfile) { ... }
+  // void _navigateToDailyChallenges(BuildContext context, Profile currentProfile) { ... }
+  // void _navigateToLeaderboard(BuildContext context, Profile currentProfile) { ... }
+  // void _navigateToJourney(BuildContext context, Profile currentProfile) { ... }
+
+  void _showLanguageDialog(BuildContext context, LanguageProvider languageProvider) {
+    final languages = [
+      {'code': 'en', 'name': 'English'},
+      {'code': 'it', 'name': 'Italiano'},
+      {'code': 'es', 'name': 'Español'},
+      {'code': 'fr', 'name': 'Français'},
+      {'code': 'pt', 'name': 'Português'},
+      {'code': 'de', 'name': 'Deutsch'},
+    ];
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Select Language',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: languages.length,
+            itemBuilder: (context, index) {
+              final lang = languages[index];
+              final isSelected = languageProvider.currentLocale.languageCode == lang['code'];
+
+              return ListTile(
+                title: Text(
+                  lang['name']!,
+                  style: TextStyle(
+                    color: isSelected ? AppColors.richGold : AppColors.textPrimary,
+                    fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                  ),
+                ),
+                trailing: isSelected
+                    ? const Icon(Icons.check, color: AppColors.richGold)
+                    : null,
+                onTap: () {
+                  languageProvider.setLocale(Locale(lang['code']!));
+                  Navigator.of(context).pop();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Language changed to ${lang['name']}'),
+                      backgroundColor: AppColors.successGreen,
+                    ),
+                  );
+                },
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(color: AppColors.textSecondary),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   void _showDeleteAccountDialog(BuildContext context, Profile currentProfile) {
     showDialog(
       context: context,
@@ -290,6 +544,17 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _deleteAccount(BuildContext context, Profile currentProfile) {
+    // Prevent admin account deletion
+    if (currentProfile.isAdmin) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Admin accounts cannot be deleted'),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
     context.read<ProfileBloc>().add(
           ProfileDeleteRequested(userId: currentProfile.userId),
         );
@@ -315,5 +580,44 @@ class EditProfileScreen extends StatelessWidget {
         );
       }
     });
+  }
+
+  void _showLogoutDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Log Out',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: const Text(
+          'Are you sure you want to log out?',
+          style: TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(dialogContext).pop();
+              _logout(context);
+            },
+            child: const Text(
+              'Log Out',
+              style: TextStyle(color: AppColors.richGold),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _logout(BuildContext context) {
+    context.read<AuthBloc>().add(const AuthSignOutRequested());
+    // Navigate to login screen and clear navigation stack
+    Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
   }
 }

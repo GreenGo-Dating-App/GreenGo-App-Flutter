@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Guidelines - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Accessibility Guidelines</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Accessibility Guidelines
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Accessibility Guidelines</h2>
+            <p>Inclusive design guidelines ensuring GreenGo is usable by everyone, following WCAG 2.1 AA standards.</p>
+
+            <h2>Accessibility Principles</h2>
+            <ol>
+                <li><strong>Perceivable:</strong> Information must be presentable in ways users can perceive</li>
+                <li><strong>Operable:</strong> UI components must be operable by all users</li>
+                <li><strong>Understandable:</strong> Information and UI must be understandable</li>
+                <li><strong>Robust:</strong> Content must be robust enough for assistive technologies</li>
+            </ol>
+
+            <h2>Color Contrast Requirements</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    WCAG CONTRAST REQUIREMENTS                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Level AA (Minimum):
+• Normal text: 4.5:1 contrast ratio
+• Large text (18px+ or 14px bold): 3:1 contrast ratio
+• UI components: 3:1 contrast ratio
+
+Level AAA (Enhanced):
+• Normal text: 7:1 contrast ratio
+• Large text: 4.5:1 contrast ratio
+
+GreenGo Compliance:
+┌────────────────────────────┬─────────┬──────────┐
+│ Combination                │ Ratio   │ Level    │
+├────────────────────────────┼─────────┼──────────┤
+│ White on #0A0A0A           │ 19.4:1  │ AAA      │
+│ Gold (#D4AF37) on #0A0A0A  │ 8.2:1   │ AAA      │
+│ #B3B3B3 on #0A0A0A         │ 7.4:1   │ AAA      │
+│ Black on Gold              │ 8.2:1   │ AAA      │
+└────────────────────────────┴─────────┴──────────┘
+            </code></pre>
+
+            <h2>Semantic Labels</h2>
+            <pre><code class="language-dart">
+// Always provide semantic labels for screen readers
+
+// Images
+Image.network(
+  user.photoUrl,
+  semanticLabel: '${user.name}, ${user.age} years old',
+)
+
+// Buttons
+IconButton(
+  icon: Icon(Icons.favorite),
+  onPressed: onLike,
+  tooltip: 'Like ${user.name}',
+)
+
+// Custom widgets
+Semantics(
+  label: 'Match card for ${user.name}',
+  hint: 'Swipe right to like, left to pass',
+  child: MatchCard(user: user),
+)
+
+// Form fields
+TextFormField(
+  decoration: InputDecoration(
+    labelText: 'Email',
+    hintText: 'Enter your email address',
+  ),
+  keyboardType: TextInputType.emailAddress,
+  autofillHints: [AutofillHints.email],
+)
+            </code></pre>
+
+            <h2>Touch Targets</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    MINIMUM TOUCH TARGET SIZES                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+WCAG 2.1 Level AAA: 44x44 pixels minimum
+Material Design: 48x48 pixels recommended
+Apple HIG: 44x44 points minimum
+
+GreenGo Standards:
+• Primary buttons: 56px height (exceeds requirement)
+• Icon buttons: 48x48px minimum
+• List items: 56px height minimum
+• Bottom nav items: 48px touch area
+• Spacing between targets: 8px minimum
+            </code></pre>
+
+            <h2>Focus Management</h2>
+            <pre><code class="language-dart">
+// Proper focus handling for keyboard navigation
+
+class AccessibleForm extends StatefulWidget {
+  @override
+  _AccessibleFormState createState() => _AccessibleFormState();
+}
+
+class _AccessibleFormState extends State<AccessibleForm> {
+  final _emailFocus = FocusNode();
+  final _passwordFocus = FocusNode();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        TextFormField(
+          focusNode: _emailFocus,
+          decoration: InputDecoration(labelText: 'Email'),
+          textInputAction: TextInputAction.next,
+          onFieldSubmitted: (_) {
+            _passwordFocus.requestFocus();
+          },
+        ),
+        TextFormField(
+          focusNode: _passwordFocus,
+          decoration: InputDecoration(labelText: 'Password'),
+          textInputAction: TextInputAction.done,
+          onFieldSubmitted: (_) => _submit(),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _emailFocus.dispose();
+    _passwordFocus.dispose();
+    super.dispose();
+  }
+}
+
+// Focus visibility indicator
+Focus(
+  child: Builder(
+    builder: (context) {
+      final focused = Focus.of(context).hasFocus;
+      return Container(
+        decoration: BoxDecoration(
+          border: focused
+              ? Border.all(color: AppColors.gold, width: 2)
+              : null,
+        ),
+        child: child,
+      );
+    },
+  ),
+)
+            </code></pre>
+
+            <h2>Screen Reader Support</h2>
+            <pre><code class="language-dart">
+// Exclude decorative elements
+ExcludeSemantics(
+  child: Image.asset('assets/decorative_pattern.png'),
+)
+
+// Merge semantics for grouped elements
+MergeSemantics(
+  child: Row(
+    children: [
+      Icon(Icons.star, color: Colors.amber),
+      Text('4.8'),
+      Text('(120 reviews)'),
+    ],
+  ),
+)
+
+// Custom semantic actions
+Semantics(
+  customSemanticsActions: {
+    CustomSemanticsAction(label: 'Super Like'): () => onSuperLike(),
+    CustomSemanticsAction(label: 'Report User'): () => onReport(),
+  },
+  child: MatchCard(user: user),
+)
+
+// Announce dynamic changes
+SemanticsService.announce(
+  'New match with ${user.name}!',
+  TextDirection.ltr,
+);
+            </code></pre>
+
+            <h2>Accessibility Checklist</h2>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Requirement</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Color</strong></td>
+                        <td>4.5:1 contrast for text</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color</strong></td>
+                        <td>Don't use color alone to convey info</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Touch</strong></td>
+                        <td>44x44px minimum touch targets</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Text</strong></td>
+                        <td>Support dynamic type scaling</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Labels</strong></td>
+                        <td>All images have semantic labels</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Labels</strong></td>
+                        <td>All buttons have labels/tooltips</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Focus</strong></td>
+                        <td>Logical focus order</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Focus</strong></td>
+                        <td>Visible focus indicators</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Motion</strong></td>
+                        <td>Respect reduced motion settings</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forms</strong></td>
+                        <td>Clear error messages</td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

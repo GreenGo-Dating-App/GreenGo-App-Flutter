@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing & Dimensions - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Spacing & Dimensions</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Spacing & Dimensions
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Spacing System</h2>
+            <p>Consistent spacing scale and dimension guidelines for layout, padding, and margins.</p>
+
+            <h2>Spacing Scale</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        SPACING SCALE (8px base)                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Token      Value    Visual
+─────────────────────────────────────────────────────────
+space-0    0px
+space-1    4px      ▌
+space-2    8px      █
+space-3    12px     █▌
+space-4    16px     ██
+space-5    20px     ██▌
+space-6    24px     ███
+space-7    32px     ████
+space-8    40px     █████
+space-9    48px     ██████
+space-10   64px     ████████
+space-11   80px     ██████████
+space-12   96px     ████████████
+            </code></pre>
+
+            <h2>Flutter Spacing Constants</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/spacing.dart
+
+class AppSpacing {
+  // Base unit
+  static const double unit = 8.0;
+
+  // Spacing scale
+  static const double space0 = 0;
+  static const double space1 = 4;    // 0.5x
+  static const double space2 = 8;    // 1x
+  static const double space3 = 12;   // 1.5x
+  static const double space4 = 16;   // 2x
+  static const double space5 = 20;   // 2.5x
+  static const double space6 = 24;   // 3x
+  static const double space7 = 32;   // 4x
+  static const double space8 = 40;   // 5x
+  static const double space9 = 48;   // 6x
+  static const double space10 = 64;  // 8x
+  static const double space11 = 80;  // 10x
+  static const double space12 = 96;  // 12x
+
+  // Semantic spacing
+  static const double screenPadding = 16;
+  static const double cardPadding = 16;
+  static const double listItemSpacing = 12;
+  static const double sectionSpacing = 24;
+  static const double componentGap = 8;
+
+  // Edge insets helpers
+  static const EdgeInsets screenInsets = EdgeInsets.all(16);
+  static const EdgeInsets cardInsets = EdgeInsets.all(16);
+  static const EdgeInsets listInsets = EdgeInsets.symmetric(
+    horizontal: 16,
+    vertical: 8,
+  );
+}
+            </code></pre>
+
+            <h2>Component Dimensions</h2>
+            <table>
+                <thead>
+                    <tr><th>Component</th><th>Height</th><th>Padding</th><th>Border Radius</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Button (Large)</strong></td>
+                        <td>56px</td>
+                        <td>24px horizontal</td>
+                        <td>28px</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Button (Medium)</strong></td>
+                        <td>48px</td>
+                        <td>20px horizontal</td>
+                        <td>24px</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Button (Small)</strong></td>
+                        <td>36px</td>
+                        <td>16px horizontal</td>
+                        <td>18px</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Input Field</strong></td>
+                        <td>56px</td>
+                        <td>16px</td>
+                        <td>12px</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Card</strong></td>
+                        <td>Auto</td>
+                        <td>16px</td>
+                        <td>16px</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avatar (Small)</strong></td>
+                        <td>32px</td>
+                        <td>-</td>
+                        <td>16px (circle)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avatar (Medium)</strong></td>
+                        <td>48px</td>
+                        <td>-</td>
+                        <td>24px (circle)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avatar (Large)</strong></td>
+                        <td>64px</td>
+                        <td>-</td>
+                        <td>32px (circle)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bottom Nav</strong></td>
+                        <td>80px</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>App Bar</strong></td>
+                        <td>56px</td>
+                        <td>16px horizontal</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Border Radius Scale</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/radius.dart
+
+class AppRadius {
+  static const double none = 0;
+  static const double xs = 4;
+  static const double sm = 8;
+  static const double md = 12;
+  static const double lg = 16;
+  static const double xl = 24;
+  static const double xxl = 32;
+  static const double full = 999;
+
+  // BorderRadius helpers
+  static const BorderRadius small = BorderRadius.all(Radius.circular(8));
+  static const BorderRadius medium = BorderRadius.all(Radius.circular(12));
+  static const BorderRadius large = BorderRadius.all(Radius.circular(16));
+  static const BorderRadius extraLarge = BorderRadius.all(Radius.circular(24));
+  static const BorderRadius circular = BorderRadius.all(Radius.circular(999));
+}
+            </code></pre>
+
+            <h2>Layout Grid</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           LAYOUT GRID                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Mobile Layout (< 600px):
+┌─────────────────────────────────────┐
+│← 16px →┌───────────────┐← 16px →│
+│        │               │          │
+│        │   Content     │          │
+│        │               │          │
+│        └───────────────┘          │
+└─────────────────────────────────────┘
+
+Tablet Layout (600px - 960px):
+┌─────────────────────────────────────────────────┐
+│← 24px →┌─────────────────────────┐← 24px →│
+│        │                         │          │
+│        │        Content          │          │
+│        │    (max-width: 720px)   │          │
+│        │                         │          │
+│        └─────────────────────────┘          │
+└─────────────────────────────────────────────────┘
+            </code></pre>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

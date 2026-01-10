@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Onboarding - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Tech Stack</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand</a></li>
+                    <li><a href="22-color-palette.html">22. Colors</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Auth Flow</a></li>
+                    <li><a href="32-social-auth.html">32. Social Auth</a></li>
+                    <li><a href="33-biometric-auth.html">33. Biometric</a></li>
+                    <li><a href="34-onboarding.html">34. Onboarding</a></li>
+                    <li><a href="35-photo-upload.html">35. Photos</a></li>
+                    <li><a href="36-profile-editing.html">36. Profile</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="38-discovery.html">38. Discovery</a></li>
+                    <li><a href="39-like-actions.html">39. Actions</a></li>
+                    <li><a href="40-match-system.html">40. Matches</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="42-message-features.html">42. Messages</a></li>
+                    <li><a href="43-push-notifications.html">43. Push</a></li>
+                    <li><a href="44-in-app-notifications.html">44. Notifications</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="46-in-app-purchases.html">46. Purchases</a></li>
+                    <li><a href="47-coins.html">47. Coins</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                    <li><a href="49-challenges.html">49. Challenges</a></li>
+                    <li><a href="50-leaderboards.html">50. Leaderboards</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Security</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Profile Onboarding</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Core Features</a> / Profile Onboarding
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>8-Step Onboarding System</h2>
+            <p>Comprehensive profile creation wizard with validation, progress persistence, and ML vector generation.</p>
+
+            <h2>Onboarding Architecture</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                      ONBOARDING STATE MACHINE                                        │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+    ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐    ┌─────┐
+    │  1  │───▶│  2  │───▶│  3  │───▶│  4  │───▶│  5  │───▶│  6  │───▶│  7  │───▶│  8  │
+    │Basic│    │Photo│    │ Bio │    │Inter│    │Prefs│    │Prompt│   │Goal │    │Done │
+    └──┬──┘    └──┬──┘    └──┬──┘    └──┬──┘    └──┬──┘    └──┬──┘    └──┬──┘    └──┬──┘
+       │          │          │          │          │          │          │          │
+       ▼          ▼          ▼          ▼          ▼          ▼          ▼          ▼
+   ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
+   │Name   │  │Upload │  │Bio    │  │Select │  │Age    │  │Answer │  │Select │  │Review │
+   │DOB    │  │Min 2  │  │Max    │  │5-10   │  │Range  │  │2-3    │  │Goal   │  │Submit │
+   │Gender │  │photos │  │500chr │  │items  │  │Dist   │  │prompts│  │Type   │  │       │
+   └───────┘  └───────┘  └───────┘  └───────┘  └───────┘  └───────┘  └───────┘  └───────┘
+
+Progress Persistence:
+• Auto-save after each step completion
+• Resume from last completed step on app restart
+• Draft state stored in Firestore users/{uid}/onboarding_draft
+            </code></pre>
+
+            <h2>Step Data Models</h2>
+            <pre><code class="language-dart">
+// lib/features/onboarding/domain/entities/onboarding_data.dart
+
+class OnboardingData {
+  // Step 1: Basic Info
+  final String name;
+  final DateTime birthDate;
+  final Gender gender;
+
+  // Step 2: Photos
+  final List<PhotoData> photos; // min 2, max 6
+
+  // Step 3: Bio
+  final String bio; // max 500 chars
+
+  // Step 4: Interests
+  final List<String> interests; // 5-10 items
+
+  // Step 5: Preferences
+  final int minAge;
+  final int maxAge;
+  final int maxDistance; // in km
+  final List<Gender> genderPreference;
+
+  // Step 6: Prompts
+  final List<PromptAnswer> prompts; // 2-3 answers
+
+  // Step 7: Relationship Goal
+  final RelationshipGoal goal;
+
+  // Computed
+  int get completedSteps => _calculateCompletedSteps();
+  bool get isComplete => completedSteps == 8;
+  double get progressPercent => completedSteps / 8;
+}
+
+class PhotoData {
+  final String localPath;
+  final String? uploadedUrl;
+  final int order;
+  final bool isUploading;
+  final bool isVerified;
+}
+
+class PromptAnswer {
+  final String promptId;
+  final String question;
+  final String answer; // max 300 chars
+}
+
+enum RelationshipGoal {
+  longTerm,
+  shortTerm,
+  casual,
+  friendship,
+  unsure,
+}
+            </code></pre>
+
+            <h2>Onboarding BLoC Implementation</h2>
+            <pre><code class="language-dart">
+// lib/features/onboarding/presentation/bloc/onboarding_bloc.dart
+
+class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
+  final SaveOnboardingStepUseCase saveStep;
+  final CompleteOnboardingUseCase completeOnboarding;
+  final UploadPhotoUseCase uploadPhoto;
+  final GenerateMLVectorUseCase generateMLVector;
+
+  OnboardingBloc({
+    required this.saveStep,
+    required this.completeOnboarding,
+    required this.uploadPhoto,
+    required this.generateMLVector,
+  }) : super(OnboardingInitial()) {
+    on<LoadOnboardingData>(_onLoadData);
+    on<UpdateBasicInfo>(_onUpdateBasicInfo);
+    on<AddPhoto>(_onAddPhoto);
+    on<RemovePhoto>(_onRemovePhoto);
+    on<ReorderPhotos>(_onReorderPhotos);
+    on<UpdateBio>(_onUpdateBio);
+    on<UpdateInterests>(_onUpdateInterests);
+    on<UpdatePreferences>(_onUpdatePreferences);
+    on<UpdatePrompts>(_onUpdatePrompts);
+    on<UpdateGoal>(_onUpdateGoal);
+    on<CompleteOnboarding>(_onComplete);
+    on<GoToStep>(_onGoToStep);
+  }
+
+  Future<void> _onComplete(
+    CompleteOnboarding event,
+    Emitter<OnboardingState> emit,
+  ) async {
+    emit(OnboardingSubmitting());
+
+    // 1. Upload any pending photos
+    final photoResults = await _uploadPendingPhotos();
+    if (photoResults.hasFailure) {
+      emit(OnboardingError('Failed to upload photos'));
+      return;
+    }
+
+    // 2. Generate ML vector from profile data
+    final vectorResult = await generateMLVector(
+      GenerateMLVectorParams(
+        interests: state.data.interests,
+        bio: state.data.bio,
+        prompts: state.data.prompts,
+        goal: state.data.goal,
+      ),
+    );
+
+    if (vectorResult.isLeft()) {
+      emit(OnboardingError('Failed to generate profile vector'));
+      return;
+    }
+
+    // 3. Save complete profile
+    final result = await completeOnboarding(
+      CompleteOnboardingParams(
+        data: state.data,
+        mlVector: vectorResult.getRight(),
+        photoUrls: photoResults.urls,
+      ),
+    );
+
+    result.fold(
+      (failure) => emit(OnboardingError(failure.message)),
+      (_) => emit(OnboardingCompleted()),
+    );
+  }
+}
+
+// Events
+abstract class OnboardingEvent {}
+
+class UpdateBasicInfo extends OnboardingEvent {
+  final String name;
+  final DateTime birthDate;
+  final Gender gender;
+}
+
+class AddPhoto extends OnboardingEvent {
+  final File photo;
+  final int position;
+}
+
+class UpdateInterests extends OnboardingEvent {
+  final List<String> interests;
+}
+
+// States
+abstract class OnboardingState {
+  final OnboardingData data;
+  final int currentStep;
+}
+
+class OnboardingInProgress extends OnboardingState {
+  final bool isSaving;
+}
+
+class OnboardingSubmitting extends OnboardingState {}
+class OnboardingCompleted extends OnboardingState {}
+class OnboardingError extends OnboardingState {
+  final String message;
+}
+            </code></pre>
+
+            <h2>Step Validation Rules</h2>
+            <table>
+                <thead>
+                    <tr><th>Step</th><th>Field</th><th>Validation</th><th>Error Message</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><strong>1. Basic</strong></td>
+                        <td>Name</td>
+                        <td>2-50 chars, letters only</td>
+                        <td>"Name must be 2-50 characters"</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Date</td>
+                        <td>Age 18-100</td>
+                        <td>"You must be at least 18"</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Required selection</td>
+                        <td>"Please select your gender"</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>2. Photos</strong></td>
+                        <td>Count</td>
+                        <td>Minimum 2 photos</td>
+                        <td>"Add at least 2 photos"</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Pass moderation</td>
+                        <td>"Photo violates guidelines"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Bio</strong></td>
+                        <td>Bio</td>
+                        <td>10-500 chars</td>
+                        <td>"Bio must be 10-500 characters"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Interests</strong></td>
+                        <td>Selection</td>
+                        <td>5-10 items</td>
+                        <td>"Select 5-10 interests"</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>5. Preferences</strong></td>
+                        <td>Age range</td>
+                        <td>Min < Max, both 18-100</td>
+                        <td>"Invalid age range"</td>
+                    </tr>
+                    <tr>
+                        <td>Distance</td>
+                        <td>1-500 km</td>
+                        <td>"Distance must be 1-500 km"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Prompts</strong></td>
+                        <td>Answers</td>
+                        <td>2-3 prompts, 10-300 chars each</td>
+                        <td>"Answer 2-3 prompts"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7. Goal</strong></td>
+                        <td>Selection</td>
+                        <td>Required</td>
+                        <td>"Select relationship goal"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Photo Upload Pipeline</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                        PHOTO UPLOAD PIPELINE                                         │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+User              App                Storage           Function          Vision API
+ │                 │                    │                 │                  │
+ │ Select photo    │                    │                 │                  │
+ │────────────────▶│                    │                 │                  │
+ │                 │ Compress           │                 │                  │
+ │                 │ (max 1MB, 1080px)  │                 │                  │
+ │                 │────────┐           │                 │                  │
+ │                 │◀───────┘           │                 │                  │
+ │                 │                    │                 │                  │
+ │                 │ Upload to Storage  │                 │                  │
+ │                 │───────────────────▶│                 │                  │
+ │                 │                    │ onFinalize      │                  │
+ │                 │                    │────────────────▶│                  │
+ │                 │                    │                 │                  │
+ │                 │                    │                 │ Moderate content │
+ │                 │                    │                 │─────────────────▶│
+ │                 │                    │                 │                  │
+ │                 │                    │                 │ Safe/Unsafe      │
+ │                 │                    │                 │◀─────────────────│
+ │                 │                    │                 │                  │
+ │                 │                    │                 │ Generate thumbs  │
+ │                 │                    │                 │ 150px, 400px     │
+ │                 │                    │◀────────────────│                  │
+ │                 │                    │                 │                  │
+ │                 │ URL + status       │                 │                  │
+ │                 │◀───────────────────│                 │                  │
+ │ Photo added ✓   │                    │                 │                  │
+ │◀────────────────│                    │                 │                  │
+            </code></pre>
+
+            <h2>ML Vector Generation</h2>
+            <pre><code class="language-typescript">
+// functions/src/ml/generateUserVector.ts
+
+export const generateUserVector = functions.https.onCall(async (data, context) => {
+  const { interests, bio, prompts, goal } = data;
+
+  // 1. Generate interest embedding (32 dims)
+  const interestVector = await embedInterests(interests);
+
+  // 2. Generate bio embedding using NLP (32 dims)
+  const bioVector = await embedText(bio);
+
+  // 3. Generate prompt embeddings (32 dims)
+  const promptVector = await embedPrompts(prompts);
+
+  // 4. Encode relationship goal (16 dims)
+  const goalVector = encodeGoal(goal);
+
+  // 5. Personality inference from text (16 dims)
+  const personalityVector = await inferPersonality(bio, prompts);
+
+  // Concatenate all vectors (128 dims total)
+  const mlVector = [
+    ...interestVector,    // 32
+    ...bioVector,         // 32
+    ...promptVector,      // 32
+    ...goalVector,        // 16
+    ...personalityVector, // 16
+  ];
+
+  // Normalize vector
+  const normalized = normalizeVector(mlVector);
+
+  return { vector: normalized };
+});
+            </code></pre>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

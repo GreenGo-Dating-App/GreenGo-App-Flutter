@@ -1,5 +1,16 @@
 import 'package:equatable/equatable.dart';
 import 'location.dart';
+import 'social_links.dart';
+import '../../../membership/domain/entities/membership.dart';
+
+/// Verification status for identity verification
+enum VerificationStatus {
+  notSubmitted,  // User hasn't submitted verification yet
+  pending,       // Verification submitted, waiting for admin review
+  approved,      // Admin approved the verification
+  rejected,      // Admin rejected the verification
+  needsResubmission, // Admin requested better photo/document
+}
 
 class Profile extends Equatable {
   final String userId;
@@ -21,6 +32,23 @@ class Profile extends Equatable {
   final DateTime updatedAt;
   final bool isComplete;
 
+  // Verification fields
+  final VerificationStatus verificationStatus;
+  final String? verificationPhotoUrl;  // Photo of user holding ID
+  final String? verificationRejectionReason;
+  final DateTime? verificationSubmittedAt;
+  final DateTime? verificationReviewedAt;
+  final String? verificationReviewedBy;  // Admin user ID
+  final bool isAdmin;  // Whether this user is an admin
+
+  // Social media links
+  final SocialLinks? socialLinks;
+
+  // Membership fields
+  final MembershipTier membershipTier;
+  final DateTime? membershipStartDate;
+  final DateTime? membershipEndDate;
+
   const Profile({
     required this.userId,
     required this.displayName,
@@ -40,7 +68,30 @@ class Profile extends Equatable {
     required this.createdAt,
     required this.updatedAt,
     required this.isComplete,
+    this.verificationStatus = VerificationStatus.notSubmitted,
+    this.verificationPhotoUrl,
+    this.verificationRejectionReason,
+    this.verificationSubmittedAt,
+    this.verificationReviewedAt,
+    this.verificationReviewedBy,
+    this.isAdmin = false,
+    this.socialLinks,
+    this.membershipTier = MembershipTier.free,
+    this.membershipStartDate,
+    this.membershipEndDate,
   });
+
+  /// Check if user can access full app features
+  bool get isVerified => verificationStatus == VerificationStatus.approved;
+
+  /// Check if verification is pending review
+  bool get isVerificationPending => verificationStatus == VerificationStatus.pending;
+
+  /// Check if verification was rejected or needs resubmission
+  bool get needsVerificationAction =>
+      verificationStatus == VerificationStatus.rejected ||
+      verificationStatus == VerificationStatus.needsResubmission ||
+      verificationStatus == VerificationStatus.notSubmitted;
 
   int get age {
     final now = DateTime.now();
@@ -72,6 +123,17 @@ class Profile extends Equatable {
         createdAt,
         updatedAt,
         isComplete,
+        verificationStatus,
+        verificationPhotoUrl,
+        verificationRejectionReason,
+        verificationSubmittedAt,
+        verificationReviewedAt,
+        verificationReviewedBy,
+        isAdmin,
+        socialLinks,
+        membershipTier,
+        membershipStartDate,
+        membershipEndDate,
       ];
 }
 

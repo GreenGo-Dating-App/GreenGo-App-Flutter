@@ -1,17 +1,23 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:local_auth/local_auth.dart';
+// Conditional import - uncomment when AppConfig.enableBiometricAuth = true
+// import 'package:local_auth/local_auth.dart';
+import '../../../../core/config/app_config.dart';
+import '../../../../core/services/access_control_service.dart';
 import '../../domain/repositories/auth_repository.dart';
 import 'auth_event.dart';
 import 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepository repository;
-  final LocalAuthentication localAuth;
+  final dynamic localAuth; // Will be LocalAuthentication when biometric is enabled
+  final AccessControlService _accessControlService;
 
   AuthBloc({
     required this.repository,
-    required this.localAuth,
-  }) : super(const AuthInitial()) {
+    this.localAuth,
+    AccessControlService? accessControlService,
+  }) : _accessControlService = accessControlService ?? AccessControlService(),
+       super(const AuthInitial()) {
     on<AuthCheckRequested>(_onAuthCheckRequested);
     on<AuthSignInWithEmailRequested>(_onSignInWithEmailRequested);
     on<AuthRegisterWithEmailRequested>(_onRegisterWithEmailRequested);
@@ -24,15 +30,25 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<AuthPasswordResetRequested>(_onPasswordResetRequested);
     on<AuthEmailVerificationRequested>(_onEmailVerificationRequested);
     on<AuthBiometricSignInRequested>(_onBiometricSignInRequested);
+    on<AuthCheckAccessStatusRequested>(_onCheckAccessStatusRequested);
+    on<AuthEnableNotificationsRequested>(_onEnableNotificationsRequested);
+    on<_AuthStateChanged>(_onAuthStateChanged);
 
-    // Listen to auth state changes
+    // Listen to auth state changes and dispatch events
     repository.authStateChanges.listen((user) {
-      if (user != null) {
-        emit(AuthAuthenticated(user));
-      } else {
-        emit(const AuthUnauthenticated());
-      }
+      add(_AuthStateChanged(user));
     });
+  }
+
+  Future<void> _onAuthStateChanged(
+    _AuthStateChanged event,
+    Emitter<AuthState> emit,
+  ) async {
+    if (event.user != null) {
+      emit(AuthAuthenticated(event.user!));
+    } else {
+      emit(const AuthUnauthenticated());
+    }
   }
 
   Future<void> _onAuthCheckRequested(
@@ -86,6 +102,13 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     AuthSignInWithGoogleRequested event,
     Emitter<AuthState> emit,
   ) async {
+    if (!AppConfig.enableGoogleAuth) {
+      emit(const AuthError(
+        'Google Sign-In is not enabled. Enable it in AppConfig.',
+      ));
+      return;
+    }
+
     emit(const AuthLoading());
     final result = await repository.signInWithGoogle();
     result.fold(
@@ -110,6 +133,13 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     AuthSignInWithFacebookRequested event,
     Emitter<AuthState> emit,
   ) async {
+    if (!AppConfig.enableFacebookAuth) {
+      emit(const AuthError(
+        'Facebook Login is not enabled. Enable it in AppConfig.',
+      ));
+      return;
+    }
+
     emit(const AuthLoading());
     final result = await repository.signInWithFacebook();
     result.fold(
@@ -171,22 +201,34 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     AuthBiometricSignInRequested event,
     Emitter<AuthState> emit,
   ) async {
+    if (!AppConfig.enableBiometricAuth) {
+      emit(const AuthError(
+        'Biometric authentication is not enabled. Enable it in AppConfig.',
+      ));
+      return;
+    }
+
+    if (localAuth == null) {
+      emit(const AuthError(
+        'Biometric authentication not configured. Add local_auth package.',
+      ));
+      return;
+    }
+
     try {
       final canCheckBiometrics = await localAuth.canCheckBiometrics;
       final isDeviceSupported = await localAuth.isDeviceSupported();
 
       if (!canCheckBiometrics || !isDeviceSupported) {
-        emit(const AuthError('Biometric authentication not available'));
+        emit(const AuthError('Biometric authentication not available on this device'));
         return;
       }
 
+      // Call authenticate - using dynamic invocation to avoid import dependencies
+      // When local_auth is enabled, uncomment the import and use proper types
       final authenticated = await localAuth.authenticate(
         localizedReason: 'Please authenticate to sign in',
-        options: const AuthenticationOptions(
-          stickyAuth: true,
-          biometricOnly: true,
-        ),
-      );
+      ) as bool;
 
       if (authenticated) {
         // If biometric auth succeeds, check for stored credentials
@@ -206,4 +248,79 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       emit(AuthError('Biometric error: ${e.toString()}'));
     }
   }
+
+  Future<void> _onCheckAccessStatusRequested(
+    AuthCheckAccessStatusRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    // Check if app is in pre-launch mode
+    if (!_accessControlService.isPreLaunchMode) {
+      // After launch, all approved users can access
+      final result = await repository.getCurrentUser();
+      result.fold(
+        (failure) => emit(const AuthUnauthenticated()),
+        (user) => user != null
+            ? emit(AuthAuthenticated(user))
+            : emit(const AuthUnauthenticated()),
+      );
+      return;
+    }
+
+    // Pre-launch mode: check access status
+    final accessData = await _accessControlService.getCurrentUserAccess();
+    if (accessData == null) {
+      emit(const AuthUnauthenticated());
+      return;
+    }
+
+    final result = await repository.getCurrentUser();
+    result.fold(
+      (failure) => emit(const AuthUnauthenticated()),
+      (user) {
+        if (user == null) {
+          emit(const AuthUnauthenticated());
+          return;
+        }
+
+        // Check if user can access the app
+        if (accessData.canAccessApp) {
+          emit(AuthAuthenticated(user));
+        } else {
+          // User needs to wait
+          emit(AuthWaitingForAccess(
+            user: user,
+            approvalStatus: accessData.approvalStatus.name,
+            accessDate: accessData.accessDate,
+            membershipTier: accessData.membershipTier.name,
+            canAccessApp: accessData.canAccessApp,
+          ));
+        }
+      },
+    );
+  }
+
+  Future<void> _onEnableNotificationsRequested(
+    AuthEnableNotificationsRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    final result = await repository.getCurrentUser();
+    result.fold(
+      (failure) => null,
+      (user) async {
+        if (user != null) {
+          await _accessControlService.enableNotifications(user.id);
+        }
+      },
+    );
+  }
+}
+
+/// Private event for auth state changes from Firebase stream
+class _AuthStateChanged extends AuthEvent {
+  final dynamic user;
+
+  const _AuthStateChanged(this.user);
+
+  @override
+  List<Object?> get props => [user];
 }

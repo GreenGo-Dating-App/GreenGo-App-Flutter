@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Theme - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Dark/Light Theme</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Dark/Light Theme
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Theme System</h2>
+            <p>Complete theme configuration supporting dark mode (primary) with light mode option.</p>
+
+            <div class="info-box">
+                <strong>Default Theme:</strong> Dark Mode<br>
+                <strong>Secondary:</strong> Light Mode (optional)<br>
+                <strong>System:</strong> Follow device settings
+            </div>
+
+            <h2>Theme Architecture</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        THEME ARCHITECTURE                                │
+└─────────────────────────────────────────────────────────────────────────┘
+
+                    ┌─────────────────┐
+                    │   ThemeMode     │
+                    │  dark/light/sys │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+              ▼              ▼              ▼
+    ┌─────────────────┐ ┌─────────┐ ┌─────────────────┐
+    │   Dark Theme    │ │  Light  │ │   System        │
+    │   (default)     │ │  Theme  │ │   Theme         │
+    └────────┬────────┘ └────┬────┘ └────────┬────────┘
+             │               │               │
+             └───────────────┼───────────────┘
+                             │
+                    ┌────────▼────────┐
+                    │   ThemeData     │
+                    │  colorScheme    │
+                    │  textTheme      │
+                    │  components     │
+                    └─────────────────┘
+            </code></pre>
+
+            <h2>Theme Implementation</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/app_theme.dart
+
+class AppTheme {
+  // Dark Theme (Primary)
+  static ThemeData get darkTheme => ThemeData(
+    useMaterial3: true,
+    brightness: Brightness.dark,
+    colorScheme: _darkColorScheme,
+    textTheme: AppTextTheme.textTheme.apply(
+      bodyColor: AppColors.textPrimary,
+      displayColor: AppColors.textPrimary,
+    ),
+    scaffoldBackgroundColor: AppColors.background,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.background,
+      foregroundColor: AppColors.textPrimary,
+      elevation: 0,
+      centerTitle: true,
+    ),
+    cardTheme: CardTheme(
+      color: AppColors.surface,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.gold,
+        foregroundColor: AppColors.background,
+        minimumSize: Size(double.infinity, 56),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28),
+        ),
+        textStyle: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: AppColors.gold,
+        minimumSize: Size(double.infinity, 56),
+        side: BorderSide(color: AppColors.gold, width: 2),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28),
+        ),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: AppColors.surface,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none,
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: AppColors.gold, width: 2),
+      ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: AppColors.surface,
+      selectedItemColor: AppColors.gold,
+      unselectedItemColor: AppColors.textTertiary,
+      type: BottomNavigationBarType.fixed,
+    ),
+    dividerTheme: DividerThemeData(
+      color: AppColors.surfaceLight,
+      thickness: 1,
+    ),
+    snackBarTheme: SnackBarThemeData(
+      backgroundColor: AppColors.surface,
+      contentTextStyle: TextStyle(color: AppColors.textPrimary),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      behavior: SnackBarBehavior.floating,
+    ),
+  );
+
+  // Dark Color Scheme
+  static const _darkColorScheme = ColorScheme.dark(
+    primary: AppColors.gold,
+    onPrimary: AppColors.background,
+    secondary: AppColors.gold,
+    onSecondary: AppColors.background,
+    surface: AppColors.surface,
+    onSurface: AppColors.textPrimary,
+    background: AppColors.background,
+    onBackground: AppColors.textPrimary,
+    error: AppColors.error,
+    onError: Colors.white,
+  );
+
+  // Light Theme (Secondary)
+  static ThemeData get lightTheme => ThemeData(
+    useMaterial3: true,
+    brightness: Brightness.light,
+    colorScheme: _lightColorScheme,
+    textTheme: AppTextTheme.textTheme.apply(
+      bodyColor: Color(0xFF1A1A1A),
+      displayColor: Color(0xFF1A1A1A),
+    ),
+    scaffoldBackgroundColor: Color(0xFFFAFAFA),
+    // ... similar configuration
+  );
+
+  static const _lightColorScheme = ColorScheme.light(
+    primary: AppColors.goldDark,
+    onPrimary: Colors.white,
+    secondary: AppColors.goldDark,
+    surface: Colors.white,
+    onSurface: Color(0xFF1A1A1A),
+    background: Color(0xFFFAFAFA),
+    error: AppColors.error,
+  );
+}
+            </code></pre>
+
+            <h2>Theme Provider</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/theme_provider.dart
+
+class ThemeProvider extends ChangeNotifier {
+  ThemeMode _themeMode = ThemeMode.dark;
+
+  ThemeMode get themeMode => _themeMode;
+
+  bool get isDarkMode => _themeMode == ThemeMode.dark;
+
+  void setThemeMode(ThemeMode mode) {
+    _themeMode = mode;
+    _saveThemePreference(mode);
+    notifyListeners();
+  }
+
+  void toggleTheme() {
+    _themeMode = _themeMode == ThemeMode.dark
+        ? ThemeMode.light
+        : ThemeMode.dark;
+    _saveThemePreference(_themeMode);
+    notifyListeners();
+  }
+
+  Future<void> _saveThemePreference(ThemeMode mode) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('theme_mode', mode.name);
+  }
+
+  Future<void> loadThemePreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    final themeName = prefs.getString('theme_mode') ?? 'dark';
+    _themeMode = ThemeMode.values.byName(themeName);
+    notifyListeners();
+  }
+}
+
+// Usage in main.dart
+MaterialApp(
+  theme: AppTheme.lightTheme,
+  darkTheme: AppTheme.darkTheme,
+  themeMode: context.watch<ThemeProvider>().themeMode,
+  // ...
+)
+            </code></pre>
+
+            <h2>Color Mapping</h2>
+            <table>
+                <thead>
+                    <tr><th>Element</th><th>Dark Mode</th><th>Light Mode</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Background</td><td>#0A0A0A</td><td>#FAFAFA</td></tr>
+                    <tr><td>Surface</td><td>#1A1A1A</td><td>#FFFFFF</td></tr>
+                    <tr><td>Primary Text</td><td>#FFFFFF</td><td>#1A1A1A</td></tr>
+                    <tr><td>Secondary Text</td><td>#B3B3B3</td><td>#666666</td></tr>
+                    <tr><td>Accent</td><td>#D4AF37</td><td>#B8962E</td></tr>
+                    <tr><td>Divider</td><td>#2A2A2A</td><td>#E0E0E0</td></tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

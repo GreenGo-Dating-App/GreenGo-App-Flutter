@@ -12,6 +12,7 @@ import '../bloc/auth_state.dart';
 import '../widgets/auth_text_field.dart';
 import '../widgets/auth_button.dart';
 import '../widgets/password_strength_indicator.dart';
+import '../widgets/consent_checkboxes.dart';
 import '../../../profile/presentation/screens/onboarding_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -29,6 +30,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
   int _passwordStrength = 0;
+
+  // Consent checkboxes state
+  bool _privacyPolicyAccepted = false;
+  bool _termsAccepted = false;
+  bool _profilingAccepted = false;
+  bool _thirdPartyDataAccepted = false;
 
   @override
   void initState() {
@@ -51,14 +58,33 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   void _handleRegister() {
-    if (_formKey.currentState!.validate()) {
-      context.read<AuthBloc>().add(
-            AuthRegisterWithEmailRequested(
-              email: _emailController.text.trim(),
-              password: _passwordController.text,
-            ),
-          );
+    final l10n = AppLocalizations.of(context)!;
+
+    // Validate form fields
+    if (!_formKey.currentState!.validate()) {
+      return;
     }
+
+    // Validate required consents
+    if (!ConsentCheckboxes.areRequiredConsentsAccepted(
+      privacyPolicy: _privacyPolicyAccepted,
+      terms: _termsAccepted,
+    )) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.consentRequiredError),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
+    context.read<AuthBloc>().add(
+          AuthRegisterWithEmailRequested(
+            email: _emailController.text.trim(),
+            password: _passwordController.text,
+          ),
+        );
   }
 
   @override
@@ -77,7 +103,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ),
         ],
       ),
+      resizeToAvoidBottomInset: true,
       body: SafeArea(
+        bottom: false,
         child: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is AuthError) {
@@ -108,7 +136,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
             final isLoading = state is AuthLoading;
 
             return SingleChildScrollView(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
+              padding: EdgeInsets.only(
+                left: AppDimensions.paddingL,
+                right: AppDimensions.paddingL,
+                top: AppDimensions.paddingL,
+                bottom: MediaQuery.of(context).viewInsets.bottom + AppDimensions.paddingL + 40,
+              ),
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -197,7 +231,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       enabled: !isLoading,
                     ),
 
-                    const SizedBox(height: 32),
+                    const SizedBox(height: 24),
+
+                    // Consent Checkboxes
+                    ConsentCheckboxes(
+                      privacyPolicyAccepted: _privacyPolicyAccepted,
+                      termsAccepted: _termsAccepted,
+                      profilingAccepted: _profilingAccepted,
+                      thirdPartyDataAccepted: _thirdPartyDataAccepted,
+                      onPrivacyPolicyChanged: (value) {
+                        setState(() {
+                          _privacyPolicyAccepted = value;
+                        });
+                      },
+                      onTermsChanged: (value) {
+                        setState(() {
+                          _termsAccepted = value;
+                        });
+                      },
+                      onProfilingChanged: (value) {
+                        setState(() {
+                          _profilingAccepted = value;
+                        });
+                      },
+                      onThirdPartyDataChanged: (value) {
+                        setState(() {
+                          _thirdPartyDataAccepted = value;
+                        });
+                      },
+                      enabled: !isLoading,
+                    ),
+
+                    const SizedBox(height: 24),
 
                     // Register Button
                     AuthButton(

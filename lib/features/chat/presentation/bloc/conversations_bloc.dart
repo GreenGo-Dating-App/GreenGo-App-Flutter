@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/usecases/get_conversations.dart';
 import 'conversations_event.dart';
@@ -10,7 +9,6 @@ import 'conversations_state.dart';
 class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
   final GetConversations getConversations;
 
-  StreamSubscription? _conversationsSubscription;
   String? _userId;
 
   ConversationsBloc({
@@ -28,22 +26,18 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
 
     _userId = event.userId;
 
-    // Cancel existing subscription
-    await _conversationsSubscription?.cancel();
-
-    // Start listening to conversations
-    _conversationsSubscription = getConversations(event.userId).listen(
-      (conversationsResult) {
-        conversationsResult.fold(
-          (failure) {
-            emit(ConversationsError(
-                'Failed to load conversations: ${failure.toString()}'));
-          },
+    // Use emit.forEach to properly handle stream emissions within bloc
+    await emit.forEach(
+      getConversations(event.userId),
+      onData: (conversationsResult) {
+        return conversationsResult.fold(
+          (failure) => ConversationsError(
+              'Failed to load conversations: ${failure.toString()}'),
           (conversations) {
             if (conversations.isEmpty) {
-              emit(const ConversationsEmpty());
+              return const ConversationsEmpty();
             } else {
-              emit(ConversationsLoaded(conversations: conversations));
+              return ConversationsLoaded(conversations: conversations);
             }
           },
         );
@@ -62,7 +56,6 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
 
   @override
   Future<void> close() {
-    _conversationsSubscription?.cancel();
     return super.close();
   }
 }

@@ -98,6 +98,44 @@ class UserAchievement extends Equatable {
       ];
 }
 
+/// User Achievement Progress (for tracking progress towards achievements)
+class UserAchievementProgress extends Equatable {
+  final String userId;
+  final String achievementId;
+  final int progress;
+  final int requiredCount;
+  final bool isUnlocked;
+  final DateTime? unlockedAt;
+  final bool rewardsClaimed;
+
+  const UserAchievementProgress({
+    required this.userId,
+    required this.achievementId,
+    required this.progress,
+    required this.requiredCount,
+    this.isUnlocked = false,
+    this.unlockedAt,
+    this.rewardsClaimed = false,
+  });
+
+  /// Get progress percentage
+  double get progressPercentage {
+    if (requiredCount == 0) return 100.0;
+    return (progress / requiredCount * 100).clamp(0.0, 100.0);
+  }
+
+  @override
+  List<Object?> get props => [
+        userId,
+        achievementId,
+        progress,
+        requiredCount,
+        isUnlocked,
+        unlockedAt,
+        rewardsClaimed,
+      ];
+}
+
 /// Standard Achievements (Points 177-185)
 class Achievements {
   // Point 177: First Match
@@ -375,6 +413,9 @@ class Achievements {
         monthlyStreak,
         // Add 30+ more to reach 50+
       ];
+
+  /// Get all achievements (alias for `all` for compatibility)
+  static List<Achievement> getAllAchievements() => all;
 
   /// Get achievement by ID
   static Achievement? getById(String achievementId) {

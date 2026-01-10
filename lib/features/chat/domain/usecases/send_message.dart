@@ -27,6 +27,7 @@ class SendMessageParams {
   final String receiverId;
   final String content;
   final MessageType type;
+  final Map<String, dynamic>? metadata;
 
   SendMessageParams({
     required this.matchId,
@@ -34,5 +35,6 @@ class SendMessageParams {
     required this.receiverId,
     required this.content,
     this.type = MessageType.text,
+    this.metadata,
   });
 }

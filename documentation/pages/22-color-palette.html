@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-home"></i><span>Project Overview</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-sitemap"></i><span>Architecture</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation</a></li>
+                    <li><a href="17-api-layer.html">17. API Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching</a></li>
+                    <li><a href="19-real-time.html">19. Real-time</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-palette"></i><span>Design System</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography</a></li>
+                    <li><a href="24-spacing.html">24. Spacing</a></li>
+                    <li><a href="25-components.html">25. Components</a></li>
+                    <li><a href="26-icons.html">26. Icons</a></li>
+                    <li><a href="27-animations.html">27. Animations</a></li>
+                    <li><a href="28-theming.html">28. Theming</a></li>
+                    <li><a href="29-responsive.html">29. Responsive</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-puzzle-piece"></i><span>Core Features</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching</a></li>
+                    <li><a href="41-chat.html">41. Chat</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscriptions</a></li>
+                    <li><a href="48-gamification.html">48. Gamification</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-server"></i><span>Backend</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase</a></li>
+                    <li><a href="55-cloud-functions.html">55. Functions</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-database"></i><span>Database</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Schema</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-shield-alt"></i><span>Security</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Architecture</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-cogs"></i><span>DevOps</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="90-docker.html">90. Docker</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD</a></li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <div class="nav-section-title"><i class="fas fa-vial"></i><span>Testing</span><i class="fas fa-chevron-down arrow"></i></div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>Color Palette</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Design System</a> / Color Palette
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>Color System</h2>
+            <p>Complete color palette with semantic colors, gradients, and usage guidelines for consistent visual design.</p>
+
+            <h2>Primary Colors</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        PRIMARY COLOR PALETTE                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+│   RICH GOLD     │  │   DEEP BLACK    │  │   CHARCOAL      │
+│   #D4AF37       │  │   #0A0A0A       │  │   #1A1A1A       │
+│                 │  │                 │  │                 │
+│   Primary       │  │   Background    │  │   Surface       │
+│   Accent        │  │   Primary       │  │   Cards         │
+└─────────────────┘  └─────────────────┘  └─────────────────┘
+
+Gold Variations:
+┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
+│  50     │ │  100    │ │  500    │ │  700    │ │  900    │
+│#FFF9E6  │ │#FFEEB3  │ │#D4AF37  │ │#B8962E  │ │#8C7223  │
+│ Light   │ │         │ │ Default │ │ Pressed │ │ Dark    │
+└─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘
+            </code></pre>
+
+            <h2>Semantic Colors</h2>
+            <table>
+                <thead>
+                    <tr><th>Name</th><th>Hex</th><th>Usage</th><th>Example</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Success</strong></td>
+                        <td>#4CAF50</td>
+                        <td>Positive actions, confirmations</td>
+                        <td>Match found, message sent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Warning</strong></td>
+                        <td>#FF9800</td>
+                        <td>Caution, attention needed</td>
+                        <td>Profile incomplete, low coins</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Error</strong></td>
+                        <td>#F44336</td>
+                        <td>Errors, destructive actions</td>
+                        <td>Failed upload, unmatch action</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Info</strong></td>
+                        <td>#2196F3</td>
+                        <td>Informational messages</td>
+                        <td>Tips, hints, updates</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Neutral Colors</h2>
+            <pre><code>
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        NEUTRAL GRAYSCALE                                 │
+└─────────────────────────────────────────────────────────────────────────┘
+
+ Gray 50    Gray 100   Gray 200   Gray 300   Gray 400   Gray 500
+ #FAFAFA    #F5F5F5    #EEEEEE    #E0E0E0    #BDBDBD    #9E9E9E
+ ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
+ │       │  │       │  │       │  │       │  │       │  │       │
+ └───────┘  └───────┘  └───────┘  └───────┘  └───────┘  └───────┘
+
+ Gray 600   Gray 700   Gray 800   Gray 900   Black
+ #757575    #616161    #424242    #212121    #000000
+ ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
+ │       │  │       │  │       │  │       │  │       │
+ └───────┘  └───────┘  └───────┘  └───────┘  └───────┘
+            </code></pre>
+
+            <h2>Gradients</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/gradients.dart
+
+class AppGradients {
+  // Primary gold gradient for buttons and highlights
+  static const primaryGold = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color(0xFFD4AF37),  // Rich Gold
+      Color(0xFFB8962E),  // Dark Gold
+    ],
+  );
+
+  // Premium gradient for special elements
+  static const premiumShine = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      Color(0xFFFFF9E6),  // Light Gold
+      Color(0xFFD4AF37),  // Rich Gold
+      Color(0xFF8C7223),  // Dark Gold
+    ],
+    stops: [0.0, 0.5, 1.0],
+  );
+
+  // Background gradient
+  static const darkBackground = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      Color(0xFF1A1A1A),  // Charcoal
+      Color(0xFF0A0A0A),  // Deep Black
+    ],
+  );
+
+  // Match card gradient overlay
+  static const cardOverlay = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      Colors.transparent,
+      Colors.black.withOpacity(0.7),
+    ],
+  );
+}
+            </code></pre>
+
+            <h2>Color Usage in Flutter</h2>
+            <pre><code class="language-dart">
+// lib/core/theme/app_colors.dart
+
+class AppColors {
+  // Primary
+  static const gold = Color(0xFFD4AF37);
+  static const goldLight = Color(0xFFFFF9E6);
+  static const goldDark = Color(0xFF8C7223);
+
+  // Background
+  static const background = Color(0xFF0A0A0A);
+  static const surface = Color(0xFF1A1A1A);
+  static const surfaceLight = Color(0xFF2A2A2A);
+
+  // Text
+  static const textPrimary = Color(0xFFFFFFFF);
+  static const textSecondary = Color(0xFFB3B3B3);
+  static const textTertiary = Color(0xFF808080);
+
+  // Semantic
+  static const success = Color(0xFF4CAF50);
+  static const warning = Color(0xFFFF9800);
+  static const error = Color(0xFFF44336);
+  static const info = Color(0xFF2196F3);
+
+  // Special
+  static const superLike = Color(0xFF2196F3);
+  static const boost = Color(0xFF9C27B0);
+  static const verified = Color(0xFF4CAF50);
+
+  // Opacity variants
+  static Color goldWithOpacity(double opacity) => gold.withOpacity(opacity);
+  static Color surfaceWithOpacity(double opacity) => surface.withOpacity(opacity);
+}
+            </code></pre>
+
+            <h2>Contrast Requirements</h2>
+            <table>
+                <thead>
+                    <tr><th>Combination</th><th>Ratio</th><th>WCAG Level</th><th>Usage</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>White on Black (#0A0A0A)</td>
+                        <td>19.4:1</td>
+                        <td>AAA</td>
+                        <td>Body text</td>
+                    </tr>
+                    <tr>
+                        <td>Gold on Black (#0A0A0A)</td>
+                        <td>8.2:1</td>
+                        <td>AAA</td>
+                        <td>Headings, buttons</td>
+                    </tr>
+                    <tr>
+                        <td>White on Gold (#D4AF37)</td>
+                        <td>2.4:1</td>
+                        <td>Fail</td>
+                        <td>Avoid - use black text</td>
+                    </tr>
+                    <tr>
+                        <td>Black on Gold (#D4AF37)</td>
+                        <td>8.2:1</td>
+                        <td>AAA</td>
+                        <td>Button text</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

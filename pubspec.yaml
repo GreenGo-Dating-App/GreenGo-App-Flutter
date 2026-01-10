@@ -14,6 +14,8 @@ dependencies:
 
   # Core Dependencies
   cupertino_icons: ^1.0.6
+  # MVP: Social login icons not needed for initial release
+  # font_awesome_flutter: ^10.6.0
 
   # State Management
   flutter_bloc: ^8.1.3
@@ -34,15 +36,20 @@ dependencies:
   firebase_crashlytics: ^3.4.9
   firebase_performance: ^0.9.3+6
   firebase_remote_config: ^4.3.8
+  firebase_app_check: ^0.2.1+6
+  cloud_functions: ^4.5.8
+
+  # MVP: Social login disabled for initial release
+  # Uncomment these when adding social authentication features
 
   # Google Sign In
-  google_sign_in: ^6.1.6
+  # google_sign_in: ^6.1.6
 
   # Apple Sign In
-#  sign_in_with_apple: ^5.0.0
+  # sign_in_with_apple: ^5.0.0
 
   # Facebook Login
-  flutter_facebook_auth: ^6.0.3
+  # flutter_facebook_auth: ^6.0.3
 
   # Image Handling
   image_picker: ^1.0.4
@@ -78,12 +85,13 @@ dependencies:
   package_info_plus: ^5.0.1
   device_info_plus: ^9.1.1
   path_provider: ^2.1.1
+  path: ^1.8.3
 
   # Permissions
   permission_handler: ^11.1.0
 
   # Video Calling
-  # agora_rtc_engine: ^6.3.0
+  # agora_rtc_engine: ^6.3.0  # Disabled for development - NDK compatibility issues
 
   # Validation
   formz: ^0.6.1
@@ -91,8 +99,8 @@ dependencies:
   # Functional Programming
   dartz: ^0.10.1
 
-  # Biometric Auth
-  local_auth: ^2.1.8
+  # MVP: Biometric Auth disabled for initial release
+  # local_auth: ^2.1.8
 
   # In-App Purchase
   in_app_purchase: ^3.1.11
@@ -100,6 +108,13 @@ dependencies:
   # ML Kit
   google_mlkit_face_detection: ^0.9.0
   google_mlkit_text_recognition: ^0.11.0
+  # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
+
+  # Online Translation (works everywhere)
+  translator: ^1.0.0
+
+  # Speech Recognition for video call subtitles
+  # speech_to_text: ^6.6.0  # Disabled - compatibility issues with Android Gradle Plugin
 
 dev_dependencies:
   flutter_test:

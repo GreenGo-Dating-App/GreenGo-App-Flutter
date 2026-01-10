@@ -1,0 +1,289 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ============================================================================
+    // HELPER FUNCTIONS
+    // ============================================================================
+
+    // Check if user is authenticated
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Check if user owns the resource
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Check if user is verified
+    function isVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    // Check if user is admin
+    function isAdmin() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Validate data types
+    function hasValidString(field, minLen, maxLen) {
+      return field is string &&
+             field.size() >= minLen &&
+             field.size() <= maxLen;
+    }
+
+    // ============================================================================
+    // USERS COLLECTION
+    // ============================================================================
+    match /users/{userId} {
+      // Anyone can read user documents (basic info only)
+      allow read: if isSignedIn();
+
+      // Only the user can create their own document
+      allow create: if isSignedIn() &&
+                       isOwner(userId) &&
+                       request.resource.data.keys().hasAll(['email', 'createdAt']) &&
+                       request.resource.data.email == request.auth.token.email;
+
+      // Only the user can update their own document
+      allow update: if isOwner(userId) &&
+                       // Prevent changing immutable fields
+                       !request.resource.data.diff(resource.data).affectedKeys().hasAny(['email', 'createdAt', 'id']);
+
+      // Only the user can delete their own document
+      allow delete: if isOwner(userId);
+    }
+
+    // ============================================================================
+    // PROFILES COLLECTION
+    // ============================================================================
+    match /profiles/{profileId} {
+      // Anyone can read profiles (for matching)
+      allow read: if isSignedIn();
+
+      // Only the user can create their profile
+      allow create: if isSignedIn() &&
+                       isOwner(profileId) &&
+                       request.resource.data.userId == request.auth.uid &&
+                       // Validate required fields
+                       request.resource.data.keys().hasAll(['userId', 'firstName', 'dateOfBirth', 'gender']) &&
+                       // Validate bio length
+                       (!request.resource.data.keys().hasAny(['bio']) ||
+                        request.resource.data.bio.size() <= 500) &&
+                       // Validate photos array
+                       (!request.resource.data.keys().hasAny(['photos']) ||
+                        request.resource.data.photos.size() <= 9);
+
+      // Only the user can update their profile
+      allow update: if isOwner(profileId) &&
+                       // Prevent changing userId
+                       request.resource.data.userId == resource.data.userId &&
+                       // Validate bio length
+                       (!request.resource.data.keys().hasAny(['bio']) ||
+                        request.resource.data.bio.size() <= 500) &&
+                       // Validate photos array
+                       (!request.resource.data.keys().hasAny(['photos']) ||
+                        request.resource.data.photos.size() <= 9);
+
+      // Only the user can delete their profile
+      allow delete: if isOwner(profileId);
+    }
+
+    // ============================================================================
+    // MATCHES COLLECTION
+    // ============================================================================
+    match /matches/{matchId} {
+      // Users can read matches they're part of
+      allow read: if isSignedIn() &&
+                     (request.auth.uid == resource.data.userId1 ||
+                      request.auth.uid == resource.data.userId2);
+
+      // Users can create matches
+      allow create: if isSignedIn() &&
+                       (request.auth.uid == request.resource.data.userId1 ||
+                        request.auth.uid == request.resource.data.userId2) &&
+                       request.resource.data.keys().hasAll(['userId1', 'userId2', 'matchedAt']);
+
+      // Users can update matches they're part of
+      allow update: if isSignedIn() &&
+                       (request.auth.uid == resource.data.userId1 ||
+                        request.auth.uid == resource.data.userId2);
+
+      // Users can delete matches they're part of (unmatch)
+      allow delete: if isSignedIn() &&
+                       (request.auth.uid == resource.data.userId1 ||
+                        request.auth.uid == resource.data.userId2);
+    }
+
+    // ============================================================================
+    // LIKES COLLECTION
+    // ============================================================================
+    match /likes/{likeId} {
+      // Users can read their own likes
+      allow read: if isSignedIn() && isOwner(resource.data.userId);
+
+      // Users can create likes
+      allow create: if isSignedIn() &&
+                       isOwner(request.resource.data.userId) &&
+                       request.resource.data.keys().hasAll(['userId', 'likedUserId', 'likedAt']);
+
+      // Users cannot update likes
+      allow update: if false;
+
+      // Users can delete their own likes
+      allow delete: if isSignedIn() && isOwner(resource.data.userId);
+    }
+
+    // ============================================================================
+    // CONVERSATIONS COLLECTION
+    // ============================================================================
+    match /conversations/{conversationId} {
+      // Users can read conversations they're part of
+      allow read: if isSignedIn() &&
+                     request.auth.uid in resource.data.participants;
+
+      // Users can create conversations
+      allow create: if isSignedIn() &&
+                       request.auth.uid in request.resource.data.participants &&
+                       request.resource.data.participants.size() >= 2 &&
+                       request.resource.data.participants.size() <= 6;
+
+      // Users can update conversations they're part of
+      allow update: if isSignedIn() &&
+                       request.auth.uid in resource.data.participants &&
+                       // Participants cannot be removed, only added
+                       request.resource.data.participants.hasAll(resource.data.participants);
+
+      // Users cannot delete conversations
+      allow delete: if false;
+
+      // ============================================================================
+      // MESSAGES SUBCOLLECTION
+      // ============================================================================
+      match /messages/{messageId} {
+        // Users can read messages in their conversations
+        allow read: if isSignedIn() &&
+                       request.auth.uid in get(/databases/$(database)/documents/conversations/$(conversationId)).data.participants;
+
+        // Users can create messages in their conversations
+        allow create: if isSignedIn() &&
+                         request.auth.uid in get(/databases/$(database)/documents/conversations/$(conversationId)).data.participants &&
+                         request.resource.data.senderId == request.auth.uid &&
+                         request.resource.data.keys().hasAll(['senderId', 'content', 'timestamp']) &&
+                         // Validate message length
+                         request.resource.data.content.size() <= 1000;
+
+        // Only sender can update their message (e.g., mark as edited)
+        allow update: if isSignedIn() &&
+                         request.auth.uid == resource.data.senderId &&
+                         // Cannot change immutable fields
+                         request.resource.data.senderId == resource.data.senderId &&
+                         request.resource.data.timestamp == resource.data.timestamp;
+
+        // Only sender can delete their message
+        allow delete: if isSignedIn() &&
+                         request.auth.uid == resource.data.senderId;
+      }
+    }
+
+    // ============================================================================
+    // SUBSCRIPTIONS COLLECTION
+    // ============================================================================
+    match /subscriptions/{subscriptionId} {
+      // Users can read their own subscription
+      allow read: if isSignedIn() && isOwner(resource.data.userId);
+
+      // Only backend (via service account) can create subscriptions
+      allow create: if false;
+
+      // Only backend can update subscriptions
+      allow update: if false;
+
+      // Users cannot delete subscriptions
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // TRANSACTIONS COLLECTION (GreenGoCoins)
+    // ============================================================================
+    match /transactions/{transactionId} {
+      // Users can read their own transactions
+      allow read: if isSignedIn() && isOwner(resource.data.userId);
+
+      // Only backend can create transactions
+      allow create: if false;
+
+      // Transactions are immutable
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // REPORTS COLLECTION (User Reports)
+    // ============================================================================
+    match /reports/{reportId} {
+      // Only admins can read reports
+      allow read: if isAdmin();
+
+      // Users can create reports
+      allow create: if isSignedIn() &&
+                       request.resource.data.reporterId == request.auth.uid &&
+                       request.resource.data.keys().hasAll(['reporterId', 'reportedUserId', 'reason', 'createdAt']);
+
+      // Only admins can update reports (to mark as reviewed)
+      allow update: if isAdmin();
+
+      // Reports cannot be deleted
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // BLOCKED USERS COLLECTION
+    // ============================================================================
+    match /blockedUsers/{blockId} {
+      // Users can read their own block list
+      allow read: if isSignedIn() && isOwner(resource.data.userId);
+
+      // Users can block other users
+      allow create: if isSignedIn() &&
+                       isOwner(request.resource.data.userId) &&
+                       request.resource.data.userId != request.resource.data.blockedUserId;
+
+      // Blocks are immutable
+      allow update: if false;
+
+      // Users can unblock
+      allow delete: if isSignedIn() && isOwner(resource.data.userId);
+    }
+
+    // ============================================================================
+    // NOTIFICATIONS COLLECTION
+    // ============================================================================
+    match /notifications/{notificationId} {
+      // Users can read their own notifications
+      allow read: if isSignedIn() && isOwner(resource.data.userId);
+
+      // Only backend can create notifications
+      allow create: if false;
+
+      // Users can mark notifications as read
+      allow update: if isSignedIn() &&
+                       isOwner(resource.data.userId) &&
+                       // Only allow updating 'read' field
+                       request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read']);
+
+      // Users can delete their notifications
+      allow delete: if isSignedIn() && isOwner(resource.data.userId);
+    }
+
+    // ============================================================================
+    // ANALYTICS COLLECTION (Read-only for users)
+    // ============================================================================
+    match /analytics/{document=**} {
+      allow read: if isAdmin();
+      allow write: if false;  // Only backend can write
+    }
+  }
+}

@@ -12,6 +12,7 @@ class GetMessages {
   Stream<Either<Failure, List<Message>>> call(GetMessagesParams params) {
     return repository.getMessagesStream(
       conversationId: params.conversationId,
+      userId: params.userId,
       limit: params.limit,
     );
   }
@@ -20,10 +21,12 @@ class GetMessages {
 /// Parameters for GetMessages use case
 class GetMessagesParams {
   final String conversationId;
+  final String? userId;
   final int? limit;
 
   GetMessagesParams({
     required this.conversationId,
+    this.userId,
     this.limit,
   });
 }

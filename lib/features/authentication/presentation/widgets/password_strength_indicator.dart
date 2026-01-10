@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/validators.dart';
+import '../../../../generated/app_localizations.dart';
 
 class PasswordStrengthIndicator extends StatelessWidget {
   final int strength;
@@ -25,8 +26,22 @@ class PasswordStrengthIndicator extends StatelessWidget {
     }
   }
 
-  String _getStrengthLabel() {
-    return Validators.getPasswordStrengthLabel(strength);
+  String _getStrengthLabel(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (strength) {
+      case 0:
+        return l10n.passwordStrengthVeryWeak;
+      case 1:
+        return l10n.passwordStrengthWeak;
+      case 2:
+        return l10n.passwordStrengthFair;
+      case 3:
+        return l10n.passwordStrengthStrong;
+      case 4:
+        return l10n.passwordStrengthVeryStrong;
+      default:
+        return '';
+    }
   }
 
   @override
@@ -50,7 +65,7 @@ class PasswordStrengthIndicator extends StatelessWidget {
             ),
             const SizedBox(width: 12),
             Text(
-              _getStrengthLabel(),
+              _getStrengthLabel(context),
               style: TextStyle(
                 color: _getStrengthColor(),
                 fontSize: 12,
@@ -61,33 +76,37 @@ class PasswordStrengthIndicator extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'Password must contain:',
+          AppLocalizations.of(context)!.passwordMustContain,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: AppColors.textTertiary,
               ),
         ),
         const SizedBox(height: 4),
         _buildRequirement(
-          'At least 8 characters',
+          context,
+          AppLocalizations.of(context)!.atLeast8Characters,
           strength >= 1,
         ),
         _buildRequirement(
-          'Uppercase and lowercase letters',
+          context,
+          AppLocalizations.of(context)!.uppercaseLowercase,
           strength >= 2,
         ),
         _buildRequirement(
-          'At least one number',
+          context,
+          AppLocalizations.of(context)!.atLeastOneNumber,
           strength >= 3,
         ),
         _buildRequirement(
-          'At least one special character',
+          context,
+          AppLocalizations.of(context)!.atLeastOneSpecialChar,
           strength >= 4,
         ),
       ],
     );
   }
 
-  Widget _buildRequirement(String text, bool isMet) {
+  Widget _buildRequirement(BuildContext context, String text, bool isMet) {
     return Row(
       children: [
         Icon(

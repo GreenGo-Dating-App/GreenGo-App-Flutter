@@ -90,6 +90,55 @@ class AppLocalizationsFr extends AppLocalizations {
   String get passwordsDoNotMatch => 'Les mots de passe ne correspondent pas';
 
   @override
+  String get passwordMustContainUppercase =>
+      'Le mot de passe doit contenir au moins une lettre majuscule';
+
+  @override
+  String get passwordMustContainLowercase =>
+      'Le mot de passe doit contenir au moins une lettre minuscule';
+
+  @override
+  String get passwordMustContainNumber =>
+      'Le mot de passe doit contenir au moins un chiffre';
+
+  @override
+  String get passwordMustContainSpecialChar =>
+      'Le mot de passe doit contenir au moins un caractère spécial';
+
+  @override
+  String get passwordStrengthVeryWeak => 'Très Faible';
+
+  @override
+  String get passwordStrengthWeak => 'Faible';
+
+  @override
+  String get passwordStrengthFair => 'Moyen';
+
+  @override
+  String get passwordStrengthStrong => 'Fort';
+
+  @override
+  String get passwordStrengthVeryStrong => 'Très Fort';
+
+  @override
+  String get passwordMustContain => 'Le mot de passe doit contenir:';
+
+  @override
+  String get atLeast8Characters => 'Au moins 8 caractères';
+
+  @override
+  String get uppercaseLowercase => 'Lettres majuscules et minuscules';
+
+  @override
+  String get atLeastOneNumber => 'Au moins un chiffre';
+
+  @override
+  String get atLeastOneSpecialChar => 'Au moins un caractère spécial';
+
+  @override
+  String get confirmPasswordRequired => 'Veuillez confirmer votre mot de passe';
+
+  @override
   String get profile => 'Profil';
 
   @override
@@ -291,4 +340,295 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get selectLanguage => 'Sélectionner la Langue';
+
+  @override
+  String get loginWithBiometrics => 'Connexion avec Biométrie';
+
+  @override
+  String get consentRequired => 'Consentements Obligatoires';
+
+  @override
+  String get optionalConsents => 'Consentements Optionnels';
+
+  @override
+  String get acceptPrivacyPolicy =>
+      'J\'ai lu et j\'accepte la Politique de Confidentialité';
+
+  @override
+  String get acceptTermsAndConditions =>
+      'J\'ai lu et j\'accepte les Conditions Générales';
+
+  @override
+  String get acceptProfiling =>
+      'Je consens au profilage pour des recommandations personnalisées';
+
+  @override
+  String get acceptThirdPartyData =>
+      'Je consens au partage de mes données avec des tiers';
+
+  @override
+  String get readPrivacyPolicy => 'Lire la Politique de Confidentialité';
+
+  @override
+  String get readTermsAndConditions => 'Lire les Conditions Générales';
+
+  @override
+  String get profilingDescription =>
+      'Nous permettre d\'analyser vos préférences pour fournir de meilleures suggestions de correspondance';
+
+  @override
+  String get thirdPartyDataDescription =>
+      'Permettre le partage de données anonymisées avec des partenaires pour l\'amélioration du service';
+
+  @override
+  String get consentRequiredError =>
+      'Vous devez accepter la Politique de Confidentialité et les Conditions Générales pour vous inscrire';
+
+  @override
+  String get privacyPolicy => 'Politique de Confidentialité';
+
+  @override
+  String get termsAndConditions => 'Conditions Générales';
+
+  @override
+  String get errorLoadingDocument => 'Error loading document';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get documentNotAvailable => 'Document not available';
+
+  @override
+  String get documentNotAvailableDescription =>
+      'This document is not available in your language yet.';
+
+  @override
+  String get lastUpdated => 'Last updated';
+
+  @override
+  String get verificationRequired => 'Vérification d\'Identité Requise';
+
+  @override
+  String get verificationTitle => 'Vérifiez Votre Identité';
+
+  @override
+  String get verificationDescription =>
+      'Pour assurer la sécurité de notre communauté, nous demandons à tous les utilisateurs de vérifier leur identité. Prenez une photo de vous tenant votre pièce d\'identité.';
+
+  @override
+  String get verificationInstructions =>
+      'Tenez votre pièce d\'identité (passeport, permis de conduire ou carte d\'identité) à côté de votre visage et prenez une photo claire.';
+
+  @override
+  String get verificationTips => 'Conseils pour une vérification réussie:';
+
+  @override
+  String get verificationTip1 => 'Assurez-vous d\'avoir un bon éclairage';
+
+  @override
+  String get verificationTip2 =>
+      'Votre visage et le document doivent être clairement visibles';
+
+  @override
+  String get verificationTip3 =>
+      'Tenez le document à côté de votre visage, sans le couvrir';
+
+  @override
+  String get verificationTip4 => 'Le texte du document doit être lisible';
+
+  @override
+  String get takeVerificationPhoto => 'Prendre Photo de Vérification';
+
+  @override
+  String get retakePhoto => 'Reprendre la Photo';
+
+  @override
+  String get submitVerification => 'Soumettre pour Vérification';
+
+  @override
+  String get verificationPending => 'Vérification en Cours';
+
+  @override
+  String get verificationPendingMessage =>
+      'Votre compte est en cours de vérification. Cela prend généralement 24-48 heures. Vous serez notifié une fois la révision terminée.';
+
+  @override
+  String get verificationApproved => 'Vérification Approuvée';
+
+  @override
+  String get verificationApprovedMessage =>
+      'Votre identité a été vérifiée. Vous avez maintenant un accès complet à l\'application.';
+
+  @override
+  String get verificationRejected => 'Vérification Refusée';
+
+  @override
+  String get verificationRejectedMessage =>
+      'Votre vérification a été refusée. Veuillez soumettre une nouvelle photo.';
+
+  @override
+  String get verificationNeedsResubmission => 'Meilleure Photo Requise';
+
+  @override
+  String get verificationNeedsResubmissionMessage =>
+      'Nous avons besoin d\'une photo plus claire pour la vérification. Veuillez renvoyer.';
+
+  @override
+  String rejectionReason(String reason) {
+    return 'Raison: $reason';
+  }
+
+  @override
+  String get accountUnderReview => 'Compte en Révision';
+
+  @override
+  String get cannotAccessFeature =>
+      'Cette fonctionnalité est disponible après la vérification de votre compte.';
+
+  @override
+  String get waitingForVerification => 'En attente de vérification...';
+
+  @override
+  String get verifyNow => 'Vérifier Maintenant';
+
+  @override
+  String get skipForNow => 'Passer pour l\'Instant';
+
+  @override
+  String get verificationSkipWarning =>
+      'Vous pouvez parcourir l\'application, mais vous ne pourrez pas discuter ou voir d\'autres profils tant que vous n\'êtes pas vérifié.';
+
+  @override
+  String get adminPanel => 'Panneau Admin';
+
+  @override
+  String get pendingVerifications => 'Vérifications en Attente';
+
+  @override
+  String get verificationHistory => 'Historique des Vérifications';
+
+  @override
+  String get approveVerification => 'Approuver';
+
+  @override
+  String get rejectVerification => 'Refuser';
+
+  @override
+  String get requestBetterPhoto => 'Demander Meilleure Photo';
+
+  @override
+  String get enterRejectionReason => 'Entrez la raison du refus';
+
+  @override
+  String get rejectionReasonRequired =>
+      'Veuillez entrer une raison pour le refus';
+
+  @override
+  String get verificationApprovedSuccess =>
+      'Vérification approuvée avec succès';
+
+  @override
+  String get verificationRejectedSuccess => 'Vérification refusée';
+
+  @override
+  String get betterPhotoRequested => 'Meilleure photo demandée';
+
+  @override
+  String get noPhotoSubmitted => 'Aucune photo soumise';
+
+  @override
+  String submittedOn(String date) {
+    return 'Soumis le $date';
+  }
+
+  @override
+  String reviewedBy(String admin) {
+    return 'Révisé par $admin';
+  }
+
+  @override
+  String get noPendingVerifications => 'Aucune vérification en attente';
+
+  @override
+  String get platinum => 'Platine';
+
+  @override
+  String get waitingTitle => 'Merci de Vous Être Inscrit!';
+
+  @override
+  String get waitingSubtitle => 'Votre compte a été créé avec succès';
+
+  @override
+  String get waitingMessagePending =>
+      'Votre compte est en attente d\'approbation par notre équipe. Nous vous informerons une fois que votre compte aura été examiné.';
+
+  @override
+  String get waitingMessageApproved =>
+      'Bonne nouvelle! Votre compte a été approuvé. Vous pourrez accéder à GreenGoChat à la date indiquée ci-dessous.';
+
+  @override
+  String get waitingMessageRejected =>
+      'Malheureusement, votre compte n\'a pas pu être approuvé pour le moment. Veuillez contacter le support pour plus d\'informations.';
+
+  @override
+  String get waitingAccessDateTitle => 'Votre Date d\'Accès';
+
+  @override
+  String waitingAccessDatePremium(String tier) {
+    return 'En tant que membre $tier, vous bénéficiez d\'un accès anticipé le 1er mars 2026!';
+  }
+
+  @override
+  String get waitingAccessDateBasic => 'Votre accès commencera le 15 mars 2026';
+
+  @override
+  String get waitingCountdownTitle => 'Compte à Rebours jusqu\'au Lancement';
+
+  @override
+  String waitingDaysRemaining(int days) {
+    return '$days jours';
+  }
+
+  @override
+  String waitingHoursRemaining(int hours) {
+    return '$hours heures';
+  }
+
+  @override
+  String waitingMinutesRemaining(int minutes) {
+    return '$minutes minutes';
+  }
+
+  @override
+  String waitingSecondsRemaining(int seconds) {
+    return '$seconds secondes';
+  }
+
+  @override
+  String get accountPendingApproval => 'Compte en Attente d\'Approbation';
+
+  @override
+  String get accountApproved => 'Compte Approuvé';
+
+  @override
+  String get accountRejected => 'Compte Refusé';
+
+  @override
+  String get upgradeForEarlyAccess =>
+      'Passez à Argent, Or ou Platine pour un accès anticipé le 1er mars 2026!';
+
+  @override
+  String get waitingStayTuned =>
+      'Restez à l\'écoute! Nous vous informerons quand il sera temps de commencer à vous connecter.';
+
+  @override
+  String get waitingNotificationEnabled =>
+      'Notifications activées - nous vous préviendrons quand vous pourrez accéder à l\'application!';
+
+  @override
+  String get enableNotifications => 'Activer les Notifications';
+
+  @override
+  String get contactSupport => 'Contacter le Support';
 }

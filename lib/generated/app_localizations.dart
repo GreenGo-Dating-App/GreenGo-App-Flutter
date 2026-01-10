@@ -263,6 +263,96 @@ abstract class AppLocalizations {
   /// **'Passwords do not match'**
   String get passwordsDoNotMatch;
 
+  /// No description provided for @passwordMustContainUppercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one uppercase letter'**
+  String get passwordMustContainUppercase;
+
+  /// No description provided for @passwordMustContainLowercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one lowercase letter'**
+  String get passwordMustContainLowercase;
+
+  /// No description provided for @passwordMustContainNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one number'**
+  String get passwordMustContainNumber;
+
+  /// No description provided for @passwordMustContainSpecialChar.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one special character'**
+  String get passwordMustContainSpecialChar;
+
+  /// No description provided for @passwordStrengthVeryWeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Weak'**
+  String get passwordStrengthVeryWeak;
+
+  /// No description provided for @passwordStrengthWeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Weak'**
+  String get passwordStrengthWeak;
+
+  /// No description provided for @passwordStrengthFair.
+  ///
+  /// In en, this message translates to:
+  /// **'Fair'**
+  String get passwordStrengthFair;
+
+  /// No description provided for @passwordStrengthStrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Strong'**
+  String get passwordStrengthStrong;
+
+  /// No description provided for @passwordStrengthVeryStrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Strong'**
+  String get passwordStrengthVeryStrong;
+
+  /// No description provided for @passwordMustContain.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain:'**
+  String get passwordMustContain;
+
+  /// No description provided for @atLeast8Characters.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 8 characters'**
+  String get atLeast8Characters;
+
+  /// No description provided for @uppercaseLowercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Uppercase and lowercase letters'**
+  String get uppercaseLowercase;
+
+  /// No description provided for @atLeastOneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one number'**
+  String get atLeastOneNumber;
+
+  /// No description provided for @atLeastOneSpecialChar.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one special character'**
+  String get atLeastOneSpecialChar;
+
+  /// No description provided for @confirmPasswordRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm your password'**
+  String get confirmPasswordRequired;
+
   /// No description provided for @profile.
   ///
   /// In en, this message translates to:
@@ -664,6 +754,504 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Select Language'**
   String get selectLanguage;
+
+  /// No description provided for @loginWithBiometrics.
+  ///
+  /// In en, this message translates to:
+  /// **'Login with Biometrics'**
+  String get loginWithBiometrics;
+
+  /// No description provided for @consentRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required Consents'**
+  String get consentRequired;
+
+  /// No description provided for @optionalConsents.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional Consents'**
+  String get optionalConsents;
+
+  /// No description provided for @acceptPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept the Privacy Policy'**
+  String get acceptPrivacyPolicy;
+
+  /// No description provided for @acceptTermsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept the Terms and Conditions'**
+  String get acceptTermsAndConditions;
+
+  /// No description provided for @acceptProfiling.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to profiling for personalized recommendations'**
+  String get acceptProfiling;
+
+  /// No description provided for @acceptThirdPartyData.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to sharing my data with third parties'**
+  String get acceptThirdPartyData;
+
+  /// No description provided for @readPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Privacy Policy'**
+  String get readPrivacyPolicy;
+
+  /// No description provided for @readTermsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Terms and Conditions'**
+  String get readTermsAndConditions;
+
+  /// No description provided for @profilingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow us to analyze your preferences to provide better match suggestions'**
+  String get profilingDescription;
+
+  /// No description provided for @thirdPartyDataDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow sharing anonymized data with partners for service improvement'**
+  String get thirdPartyDataDescription;
+
+  /// No description provided for @consentRequiredError.
+  ///
+  /// In en, this message translates to:
+  /// **'You must accept the Privacy Policy and Terms and Conditions to register'**
+  String get consentRequiredError;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @termsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms and Conditions'**
+  String get termsAndConditions;
+
+  /// No description provided for @errorLoadingDocument.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading document'**
+  String get errorLoadingDocument;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// No description provided for @documentNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Document not available'**
+  String get documentNotAvailable;
+
+  /// No description provided for @documentNotAvailableDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This document is not available in your language yet.'**
+  String get documentNotAvailableDescription;
+
+  /// No description provided for @lastUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Last updated'**
+  String get lastUpdated;
+
+  /// No description provided for @verificationRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Identity Verification Required'**
+  String get verificationRequired;
+
+  /// No description provided for @verificationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Your Identity'**
+  String get verificationTitle;
+
+  /// No description provided for @verificationDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'To ensure the safety of our community, we require all users to verify their identity. Please take a photo of yourself holding your ID document.'**
+  String get verificationDescription;
+
+  /// No description provided for @verificationInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'Please hold your ID document (passport, driver\'s license, or national ID) next to your face and take a clear photo.'**
+  String get verificationInstructions;
+
+  /// No description provided for @verificationTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Tips for a successful verification:'**
+  String get verificationTips;
+
+  /// No description provided for @verificationTip1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ensure good lighting'**
+  String get verificationTip1;
+
+  /// No description provided for @verificationTip2.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure your face and ID are clearly visible'**
+  String get verificationTip2;
+
+  /// No description provided for @verificationTip3.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold the ID next to your face, not covering it'**
+  String get verificationTip3;
+
+  /// No description provided for @verificationTip4.
+  ///
+  /// In en, this message translates to:
+  /// **'All text on the ID should be readable'**
+  String get verificationTip4;
+
+  /// No description provided for @takeVerificationPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Verification Photo'**
+  String get takeVerificationPhoto;
+
+  /// No description provided for @retakePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Retake Photo'**
+  String get retakePhoto;
+
+  /// No description provided for @submitVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit for Verification'**
+  String get submitVerification;
+
+  /// No description provided for @verificationPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Pending'**
+  String get verificationPending;
+
+  /// No description provided for @verificationPendingMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is being verified. This usually takes 24-48 hours. You will be notified once the review is complete.'**
+  String get verificationPendingMessage;
+
+  /// No description provided for @verificationApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Approved'**
+  String get verificationApproved;
+
+  /// No description provided for @verificationApprovedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your identity has been verified. You now have full access to the app.'**
+  String get verificationApprovedMessage;
+
+  /// No description provided for @verificationRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Rejected'**
+  String get verificationRejected;
+
+  /// No description provided for @verificationRejectedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification was rejected. Please submit a new photo.'**
+  String get verificationRejectedMessage;
+
+  /// No description provided for @verificationNeedsResubmission.
+  ///
+  /// In en, this message translates to:
+  /// **'Better Photo Required'**
+  String get verificationNeedsResubmission;
+
+  /// No description provided for @verificationNeedsResubmissionMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'We need a clearer photo for verification. Please resubmit.'**
+  String get verificationNeedsResubmissionMessage;
+
+  /// No description provided for @rejectionReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason: {reason}'**
+  String rejectionReason(String reason);
+
+  /// No description provided for @accountUnderReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Under Review'**
+  String get accountUnderReview;
+
+  /// No description provided for @cannotAccessFeature.
+  ///
+  /// In en, this message translates to:
+  /// **'This feature is available after your account is verified.'**
+  String get cannotAccessFeature;
+
+  /// No description provided for @waitingForVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for verification...'**
+  String get waitingForVerification;
+
+  /// No description provided for @verifyNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Now'**
+  String get verifyNow;
+
+  /// No description provided for @skipForNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip for Now'**
+  String get skipForNow;
+
+  /// No description provided for @verificationSkipWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'You can browse the app, but you won\'t be able to chat or see other profiles until verified.'**
+  String get verificationSkipWarning;
+
+  /// No description provided for @adminPanel.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Panel'**
+  String get adminPanel;
+
+  /// No description provided for @pendingVerifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Verifications'**
+  String get pendingVerifications;
+
+  /// No description provided for @verificationHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification History'**
+  String get verificationHistory;
+
+  /// No description provided for @approveVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get approveVerification;
+
+  /// No description provided for @rejectVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get rejectVerification;
+
+  /// No description provided for @requestBetterPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Request Better Photo'**
+  String get requestBetterPhoto;
+
+  /// No description provided for @enterRejectionReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter rejection reason'**
+  String get enterRejectionReason;
+
+  /// No description provided for @rejectionReasonRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a reason for rejection'**
+  String get rejectionReasonRequired;
+
+  /// No description provided for @verificationApprovedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification approved successfully'**
+  String get verificationApprovedSuccess;
+
+  /// No description provided for @verificationRejectedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification rejected'**
+  String get verificationRejectedSuccess;
+
+  /// No description provided for @betterPhotoRequested.
+  ///
+  /// In en, this message translates to:
+  /// **'Better photo requested'**
+  String get betterPhotoRequested;
+
+  /// No description provided for @noPhotoSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'No photo submitted'**
+  String get noPhotoSubmitted;
+
+  /// No description provided for @submittedOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitted on {date}'**
+  String submittedOn(String date);
+
+  /// No description provided for @reviewedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed by {admin}'**
+  String reviewedBy(String admin);
+
+  /// No description provided for @noPendingVerifications.
+  ///
+  /// In en, this message translates to:
+  /// **'No pending verifications'**
+  String get noPendingVerifications;
+
+  /// No description provided for @platinum.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum'**
+  String get platinum;
+
+  /// No description provided for @waitingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank You for Registering!'**
+  String get waitingTitle;
+
+  /// No description provided for @waitingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been created successfully'**
+  String get waitingSubtitle;
+
+  /// No description provided for @waitingMessagePending.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is pending approval from our team. We will notify you once your account has been reviewed.'**
+  String get waitingMessagePending;
+
+  /// No description provided for @waitingMessageApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Great news! Your account has been approved. You will be able to access GreenGoChat on the date shown below.'**
+  String get waitingMessageApproved;
+
+  /// No description provided for @waitingMessageRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfortunately, your account could not be approved at this time. Please contact support for more information.'**
+  String get waitingMessageRejected;
+
+  /// No description provided for @waitingAccessDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Access Date'**
+  String get waitingAccessDateTitle;
+
+  /// No description provided for @waitingAccessDatePremium.
+  ///
+  /// In en, this message translates to:
+  /// **'As a {tier} member, you get early access on March 1st, 2026!'**
+  String waitingAccessDatePremium(String tier);
+
+  /// No description provided for @waitingAccessDateBasic.
+  ///
+  /// In en, this message translates to:
+  /// **'Your access will begin on March 15th, 2026'**
+  String get waitingAccessDateBasic;
+
+  /// No description provided for @waitingCountdownTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Countdown to Launch'**
+  String get waitingCountdownTitle;
+
+  /// No description provided for @waitingDaysRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{days} days'**
+  String waitingDaysRemaining(int days);
+
+  /// No description provided for @waitingHoursRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} hours'**
+  String waitingHoursRemaining(int hours);
+
+  /// No description provided for @waitingMinutesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} minutes'**
+  String waitingMinutesRemaining(int minutes);
+
+  /// No description provided for @waitingSecondsRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} seconds'**
+  String waitingSecondsRemaining(int seconds);
+
+  /// No description provided for @accountPendingApproval.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Pending Approval'**
+  String get accountPendingApproval;
+
+  /// No description provided for @accountApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Approved'**
+  String get accountApproved;
+
+  /// No description provided for @accountRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Rejected'**
+  String get accountRejected;
+
+  /// No description provided for @upgradeForEarlyAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!'**
+  String get upgradeForEarlyAccess;
+
+  /// No description provided for @waitingStayTuned.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay tuned! We\'ll notify you when it\'s time to start connecting.'**
+  String get waitingStayTuned;
+
+  /// No description provided for @waitingNotificationEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications enabled - we\'ll let you know when you can access the app!'**
+  String get waitingNotificationEnabled;
+
+  /// No description provided for @enableNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Notifications'**
+  String get enableNotifications;
+
+  /// No description provided for @contactSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Support'**
+  String get contactSupport;
 }
 
 class _AppLocalizationsDelegate

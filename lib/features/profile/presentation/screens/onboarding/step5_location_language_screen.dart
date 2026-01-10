@@ -142,16 +142,7 @@ class _Step5LocationLanguageScreenState
   }
 
   void _handleContinue() {
-    if (_selectedLocation == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please select your location'),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
-      return;
-    }
-
+    // Only require language selection - location is optional
     if (_selectedLanguages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -162,12 +153,30 @@ class _Step5LocationLanguageScreenState
       return;
     }
 
-    context.read<OnboardingBloc>().add(
-          OnboardingLocationUpdated(
-            location: _selectedLocation! as location_entity.Location,
-            languages: _selectedLanguages,
-          ),
-        );
+    // If location is set, update it
+    if (_selectedLocation != null) {
+      context.read<OnboardingBloc>().add(
+            OnboardingLocationUpdated(
+              location: _selectedLocation! as location_entity.Location,
+              languages: _selectedLanguages,
+            ),
+          );
+    } else {
+      // Just update languages if no location
+      context.read<OnboardingBloc>().add(
+            OnboardingLocationUpdated(
+              location: location_entity.Location(
+                latitude: 0.0,
+                longitude: 0.0,
+                city: 'Unknown',
+                country: 'Unknown',
+                displayAddress: 'Location not set',
+              ),
+              languages: _selectedLanguages,
+            ),
+          );
+    }
+
     context.read<OnboardingBloc>().add(const OnboardingNextStep());
   }
 
@@ -225,7 +234,7 @@ class _Step5LocationLanguageScreenState
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'Set your location and preferred languages',
+                        'Set your preferred languages and location (optional)',
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               color: AppColors.textSecondary,
                             ),
@@ -233,11 +242,44 @@ class _Step5LocationLanguageScreenState
                       const SizedBox(height: 32),
 
                       // Location Section
+                      Row(
+                        children: [
+                          Text(
+                            'Location',
+                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  color: AppColors.textPrimary,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.backgroundCard,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: AppColors.textTertiary.withOpacity(0.3),
+                              ),
+                            ),
+                            child: Text(
+                              'Optional',
+                              style: TextStyle(
+                                color: AppColors.textTertiary,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
                       Text(
-                        'Location',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: AppColors.textPrimary,
-                              fontWeight: FontWeight.w600,
+                        'You can set your location later in settings',
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                              color: AppColors.textTertiary,
                             ),
                       ),
                       const SizedBox(height: 12),

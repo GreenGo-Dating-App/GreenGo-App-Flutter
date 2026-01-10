@@ -1,5 +1,6 @@
 import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Discovery Events
 abstract class DiscoveryEvent {
@@ -24,11 +25,15 @@ class DiscoverySwipeRecorded extends DiscoveryEvent {
   final String userId;
   final String targetUserId;
   final SwipeActionType actionType;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
 
   const DiscoverySwipeRecorded({
     required this.userId,
     required this.targetUserId,
     required this.actionType,
+    this.membershipRules,
+    this.membershipTier,
   });
 }
 

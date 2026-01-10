@@ -65,9 +65,9 @@ class ProfileRepositoryImpl implements ProfileRepository {
   }
 
   @override
-  Future<Either<Failure, String>> uploadPhoto(String userId, File photo) async {
+  Future<Either<Failure, String>> uploadPhoto(String userId, File photo, {String? folder}) async {
     try {
-      final result = await remoteDataSource.uploadPhoto(userId, photo);
+      final result = await remoteDataSource.uploadPhoto(userId, photo, folder: folder);
       return Right(result);
     } on ServerException catch (e) {
       return Left(ServerFailure( e.message));

@@ -648,10 +648,10 @@ async function updateTrustScore(userId: string): Promise<any> {
 
   // Determine trust level
   let level = 'veryLow';
-  if (score > 80) level = 'veryHigh';
-  else if (score > 60) level = 'high';
-  else if (score > 40) level = 'medium';
-  else if (score > 20) level = 'low';
+  if (Number(score) > 80) level = 'veryHigh';
+  else if (Number(score) > 60) level = 'high';
+  else if (Number(score) > 40) level = 'medium';
+  else if (Number(score) > 20) level = 'low';
 
   // Store trust score
   const trustScoreData = {

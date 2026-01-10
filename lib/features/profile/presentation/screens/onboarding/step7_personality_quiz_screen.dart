@@ -188,7 +188,7 @@ class _Step7PersonalityQuizScreenState
                   Expanded(
                     child: Center(
                       child: Container(
-                        padding: const EdgeInsets.all(32),
+                        padding: const EdgeInsets.all(26),
                         decoration: BoxDecoration(
                           color: AppColors.backgroundCard,
                           borderRadius:
@@ -212,7 +212,7 @@ class _Step7PersonalityQuizScreenState
                                     fontWeight: FontWeight.w600,
                                   ),
                             ),
-                            const SizedBox(height: 48),
+                            const SizedBox(height: 40),
 
                             // Answer Options
                             _buildAnswerButton('Strongly Disagree', 1),

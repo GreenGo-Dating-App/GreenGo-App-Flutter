@@ -1,5 +1,7 @@
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Chat States
 abstract class ChatState {
@@ -69,4 +71,64 @@ class ChatError extends ChatState {
   final String message;
 
   const ChatError(this.message);
+}
+
+/// Message action success (star, forward, delete, etc.)
+class ChatMessageActionSuccess extends ChatState {
+  final String message;
+
+  const ChatMessageActionSuccess(this.message);
+}
+
+/// Conversation deleted state
+class ChatConversationDeleted extends ChatState {
+  const ChatConversationDeleted();
+}
+
+/// User blocked successfully
+class ChatUserBlockedSuccess extends ChatState {
+  final String blockedUserId;
+
+  const ChatUserBlockedSuccess(this.blockedUserId);
+}
+
+/// User reported successfully
+class ChatUserReportedSuccess extends ChatState {
+  const ChatUserReportedSuccess();
+}
+
+/// Message limit reached state
+class ChatMessageLimitReached extends ChatState {
+  final Conversation conversation;
+  final List<Message> messages;
+  final String currentUserId;
+  final String otherUserId;
+  final UsageLimitResult limitResult;
+
+  const ChatMessageLimitReached({
+    required this.conversation,
+    required this.messages,
+    required this.currentUserId,
+    required this.otherUserId,
+    required this.limitResult,
+  });
+}
+
+/// Media sending not allowed state
+class ChatMediaNotAllowed extends ChatState {
+  final Conversation conversation;
+  final List<Message> messages;
+  final String currentUserId;
+  final String otherUserId;
+  final MembershipTier currentTier;
+  final MembershipTier requiredTier;
+
+  const ChatMediaNotAllowed({
+    required this.conversation,
+    required this.messages,
+    required this.currentUserId,
+    required this.otherUserId,
+    required this.currentTier,
+    required this.requiredTier,
+  });
 }

@@ -91,10 +91,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       query = query.where('gender', whereIn: preferences.preferredGenders);
     }
 
-    // Filter: Only with photos if required
-    if (preferences.showOnlyWithPhotos) {
-      query = query.where('photoUrls', isNotEqualTo: []);
-    }
+    // Note: We filter by photos in code to avoid Firestore inequality filter limitation
+    // Firestore doesn't allow inequality filters on multiple fields
 
     // Execute query with limit
     final querySnapshot = await query.limit(limit * 3).get(); // Get more for filtering
@@ -104,6 +102,12 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     for (final doc in querySnapshot.docs) {
       // Skip self
       if (doc.id == userId) continue;
+
+      // Filter: Only with photos if required (done in code to avoid Firestore limitation)
+      final photoUrls = doc.data() is Map ? (doc.data() as Map)['photoUrls'] as List? : null;
+      if (preferences.showOnlyWithPhotos && (photoUrls == null || photoUrls.isEmpty)) {
+        continue;
+      }
 
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);

@@ -24,12 +24,14 @@ class ChatRepositoryImpl implements ChatRepository {
   @override
   Stream<Either<Failure, List<Message>>> getMessagesStream({
     required String conversationId,
+    String? userId,
     int? limit,
   }) {
     try {
       return remoteDataSource
           .getMessagesStream(
             conversationId: conversationId,
+            userId: userId,
             limit: limit,
           )
           .map((messages) =>
@@ -317,6 +319,204 @@ class ChatRepositoryImpl implements ChatRepository {
       await remoteDataSource.updateConversationTheme(
         conversationId: conversationId,
         theme: theme.name,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> blockUser({
+    required String blockerId,
+    required String blockedUserId,
+    required String reason,
+  }) async {
+    try {
+      await remoteDataSource.blockUser(
+        blockerId: blockerId,
+        blockedUserId: blockedUserId,
+        reason: reason,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> unblockUser({
+    required String blockerId,
+    required String blockedUserId,
+  }) async {
+    try {
+      await remoteDataSource.unblockUser(
+        blockerId: blockerId,
+        blockedUserId: blockedUserId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, bool>> isUserBlocked({
+    required String userId,
+    required String otherUserId,
+  }) async {
+    try {
+      final isBlocked = await remoteDataSource.isUserBlocked(
+        userId: userId,
+        otherUserId: otherUserId,
+      );
+      return Right(isBlocked);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> reportUser({
+    required String reporterId,
+    required String reportedUserId,
+    required String reason,
+    String? conversationId,
+    String? messageId,
+    String? additionalDetails,
+  }) async {
+    try {
+      await remoteDataSource.reportUser(
+        reporterId: reporterId,
+        reportedUserId: reportedUserId,
+        reason: reason,
+        conversationId: conversationId,
+        messageId: messageId,
+        additionalDetails: additionalDetails,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> starMessage({
+    required String messageId,
+    required String conversationId,
+    required String userId,
+    required bool isStarred,
+  }) async {
+    try {
+      await remoteDataSource.starMessage(
+        messageId: messageId,
+        conversationId: conversationId,
+        userId: userId,
+        isStarred: isStarred,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Message>>> getStarredMessages({
+    required String userId,
+    int? limit,
+  }) async {
+    try {
+      final messages = await remoteDataSource.getStarredMessages(
+        userId: userId,
+        limit: limit,
+      );
+      return Right(messages.map((m) => m.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> forwardMessage({
+    required String messageId,
+    required String fromConversationId,
+    required String senderId,
+    required List<String> toMatchIds,
+  }) async {
+    try {
+      await remoteDataSource.forwardMessage(
+        messageId: messageId,
+        fromConversationId: fromConversationId,
+        senderId: senderId,
+        toMatchIds: toMatchIds,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteConversationForMe({
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.deleteConversationForMe(
+        conversationId: conversationId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteConversationForBoth({
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.deleteConversationForBoth(
+        conversationId: conversationId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteMessageForMe({
+    required String messageId,
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.deleteMessageForMe(
+        messageId: messageId,
+        conversationId: conversationId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteMessageForBoth({
+    required String messageId,
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.deleteMessageForBoth(
+        messageId: messageId,
+        conversationId: conversationId,
+        userId: userId,
       );
       return const Right(null);
     } catch (e) {

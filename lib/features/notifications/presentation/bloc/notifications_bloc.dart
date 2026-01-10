@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/usecases/get_notifications.dart';
 import '../../domain/usecases/mark_notification_read.dart';
@@ -14,7 +13,6 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
   final MarkNotificationRead markNotificationRead;
   final MarkAllNotificationsRead markAllNotificationsRead;
 
-  StreamSubscription? _notificationsSubscription;
   String? _userId;
 
   NotificationsBloc({
@@ -37,33 +35,31 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
 
     _userId = event.userId;
 
-    // Cancel existing subscription
-    await _notificationsSubscription?.cancel();
-
-    // Start listening to notifications
-    _notificationsSubscription = getNotifications(
-      GetNotificationsParams(
-        userId: event.userId,
-        unreadOnly: event.unreadOnly,
+    // Use emit.forEach to properly handle stream emissions within bloc
+    await emit.forEach(
+      getNotifications(
+        GetNotificationsParams(
+          userId: event.userId,
+          unreadOnly: event.unreadOnly,
+        ),
       ),
-    ).listen((notificationsResult) {
-      notificationsResult.fold(
-        (failure) {
-          emit(NotificationsError(
-              'Failed to load notifications: ${failure.toString()}'));
-        },
-        (notifications) {
-          if (notifications.isEmpty) {
-            emit(const NotificationsEmpty());
-          } else {
-            emit(NotificationsLoaded(
-              notifications: notifications,
-              unreadCount: notifications.where((n) => !n.isRead).length,
-            ));
-          }
-        },
-      );
-    });
+      onData: (notificationsResult) {
+        return notificationsResult.fold(
+          (failure) => NotificationsError(
+              'Failed to load notifications: ${failure.toString()}'),
+          (notifications) {
+            if (notifications.isEmpty) {
+              return const NotificationsEmpty();
+            } else {
+              return NotificationsLoaded(
+                notifications: notifications,
+                unreadCount: notifications.where((n) => !n.isRead).length,
+              );
+            }
+          },
+        );
+      },
+    );
   }
 
   Future<void> _onMarkedAsRead(
@@ -103,7 +99,6 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
 
   @override
   Future<void> close() {
-    _notificationsSubscription?.cancel();
     return super.close();
   }
 }

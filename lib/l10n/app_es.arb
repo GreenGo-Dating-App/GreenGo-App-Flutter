@@ -26,6 +26,21 @@
   "passwordTooShort": "La contraseña debe tener al menos 8 caracteres",
   "passwordWeak": "La contraseña debe contener mayúsculas, minúsculas, números y caracteres especiales",
   "passwordsDoNotMatch": "Las contraseñas no coinciden",
+  "passwordMustContainUppercase": "La contraseña debe contener al menos una letra mayúscula",
+  "passwordMustContainLowercase": "La contraseña debe contener al menos una letra minúscula",
+  "passwordMustContainNumber": "La contraseña debe contener al menos un número",
+  "passwordMustContainSpecialChar": "La contraseña debe contener al menos un carácter especial",
+  "passwordStrengthVeryWeak": "Muy Débil",
+  "passwordStrengthWeak": "Débil",
+  "passwordStrengthFair": "Regular",
+  "passwordStrengthStrong": "Fuerte",
+  "passwordStrengthVeryStrong": "Muy Fuerte",
+  "passwordMustContain": "La contraseña debe contener:",
+  "atLeast8Characters": "Al menos 8 caracteres",
+  "uppercaseLowercase": "Letras mayúsculas y minúsculas",
+  "atLeastOneNumber": "Al menos un número",
+  "atLeastOneSpecialChar": "Al menos un carácter especial",
+  "confirmPasswordRequired": "Por favor confirme su contraseña",
   "profile": "Perfil",
   "editProfile": "Editar Perfil",
   "completeProfile": "Completa Tu Perfil",
@@ -99,5 +114,122 @@
   "done": "Listo",
   "loading": "Cargando...",
   "ok": "OK",
-  "selectLanguage": "Seleccionar Idioma"
+  "selectLanguage": "Seleccionar Idioma",
+  "loginWithBiometrics": "Iniciar Sesión con Biometría",
+  "consentRequired": "Consentimientos Obligatorios",
+  "optionalConsents": "Consentimientos Opcionales",
+  "acceptPrivacyPolicy": "He leído y acepto la Política de Privacidad",
+  "acceptTermsAndConditions": "He leído y acepto los Términos y Condiciones",
+  "acceptProfiling": "Consiento el perfilado para recomendaciones personalizadas",
+  "acceptThirdPartyData": "Consiento compartir mis datos con terceros",
+  "readPrivacyPolicy": "Leer Política de Privacidad",
+  "readTermsAndConditions": "Leer Términos y Condiciones",
+  "profilingDescription": "Permitir analizar tus preferencias para proporcionar mejores sugerencias de coincidencia",
+  "thirdPartyDataDescription": "Permitir compartir datos anonimizados con socios para mejorar el servicio",
+  "consentRequiredError": "Debes aceptar la Política de Privacidad y los Términos y Condiciones para registrarte",
+  "privacyPolicy": "Política de Privacidad",
+  "termsAndConditions": "Términos y Condiciones",
+  "verificationRequired": "Verificación de Identidad Requerida",
+  "verificationTitle": "Verifica Tu Identidad",
+  "verificationDescription": "Para garantizar la seguridad de nuestra comunidad, requerimos que todos los usuarios verifiquen su identidad. Toma una foto de ti mismo sosteniendo tu documento de identidad.",
+  "verificationInstructions": "Sostén tu documento de identidad (pasaporte, licencia de conducir o DNI) junto a tu rostro y toma una foto clara.",
+  "verificationTips": "Consejos para una verificación exitosa:",
+  "verificationTip1": "Asegúrate de tener buena iluminación",
+  "verificationTip2": "Tu rostro y el documento deben ser claramente visibles",
+  "verificationTip3": "Sostén el documento junto a tu rostro, sin cubrirlo",
+  "verificationTip4": "El texto del documento debe ser legible",
+  "takeVerificationPhoto": "Tomar Foto de Verificación",
+  "retakePhoto": "Tomar de Nuevo",
+  "submitVerification": "Enviar para Verificación",
+  "verificationPending": "Verificación Pendiente",
+  "verificationPendingMessage": "Tu cuenta está siendo verificada. Esto generalmente toma 24-48 horas. Serás notificado cuando la revisión esté completa.",
+  "verificationApproved": "Verificación Aprobada",
+  "verificationApprovedMessage": "Tu identidad ha sido verificada. Ahora tienes acceso completo a la app.",
+  "verificationRejected": "Verificación Rechazada",
+  "verificationRejectedMessage": "Tu verificación fue rechazada. Por favor envía una nueva foto.",
+  "verificationNeedsResubmission": "Se Requiere Mejor Foto",
+  "verificationNeedsResubmissionMessage": "Necesitamos una foto más clara para la verificación. Por favor reenvía.",
+  "rejectionReason": "Razón: {reason}",
+  "@rejectionReason": {"placeholders": {"reason": {"type": "String"}}},
+  "accountUnderReview": "Cuenta en Revisión",
+  "cannotAccessFeature": "Esta función está disponible después de que tu cuenta sea verificada.",
+  "waitingForVerification": "Esperando verificación...",
+  "verifyNow": "Verificar Ahora",
+  "skipForNow": "Saltar por Ahora",
+  "verificationSkipWarning": "Puedes explorar la app, pero no podrás chatear o ver otros perfiles hasta que estés verificado.",
+  "adminPanel": "Panel de Admin",
+  "pendingVerifications": "Verificaciones Pendientes",
+  "verificationHistory": "Historial de Verificaciones",
+  "approveVerification": "Aprobar",
+  "rejectVerification": "Rechazar",
+  "requestBetterPhoto": "Solicitar Mejor Foto",
+  "enterRejectionReason": "Ingresa la razón del rechazo",
+  "rejectionReasonRequired": "Por favor ingresa una razón para el rechazo",
+  "verificationApprovedSuccess": "Verificación aprobada exitosamente",
+  "verificationRejectedSuccess": "Verificación rechazada",
+  "betterPhotoRequested": "Mejor foto solicitada",
+  "noPhotoSubmitted": "Ninguna foto enviada",
+  "submittedOn": "Enviado el {date}",
+  "@submittedOn": {"placeholders": {"date": {"type": "String"}}},
+  "reviewedBy": "Revisado por {admin}",
+  "@reviewedBy": {"placeholders": {"admin": {"type": "String"}}},
+  "noPendingVerifications": "No hay verificaciones pendientes",
+
+  "platinum": "Platino",
+  "waitingTitle": "¡Gracias por Registrarte!",
+  "waitingSubtitle": "Tu cuenta ha sido creada exitosamente",
+  "waitingMessagePending": "Tu cuenta está pendiente de aprobación por nuestro equipo. Te notificaremos una vez que tu cuenta haya sido revisada.",
+  "waitingMessageApproved": "¡Buenas noticias! Tu cuenta ha sido aprobada. Podrás acceder a GreenGoChat en la fecha indicada a continuación.",
+  "waitingMessageRejected": "Lamentablemente, tu cuenta no pudo ser aprobada en este momento. Por favor contacta a soporte para más información.",
+  "waitingAccessDateTitle": "Tu Fecha de Acceso",
+  "waitingAccessDatePremium": "¡Como miembro {tier}, tienes acceso anticipado el 1 de marzo de 2026!",
+  "@waitingAccessDatePremium": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "waitingAccessDateBasic": "Tu acceso comenzará el 15 de marzo de 2026",
+  "waitingCountdownTitle": "Cuenta Regresiva para el Lanzamiento",
+  "waitingDaysRemaining": "{days} días",
+  "@waitingDaysRemaining": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingHoursRemaining": "{hours} horas",
+  "@waitingHoursRemaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingMinutesRemaining": "{minutes} minutos",
+  "@waitingMinutesRemaining": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "waitingSecondsRemaining": "{seconds} segundos",
+  "@waitingSecondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "accountPendingApproval": "Cuenta Pendiente de Aprobación",
+  "accountApproved": "Cuenta Aprobada",
+  "accountRejected": "Cuenta Rechazada",
+  "upgradeForEarlyAccess": "¡Actualiza a Plata, Oro o Platino para acceso anticipado el 1 de marzo de 2026!",
+  "waitingStayTuned": "¡Mantente atento! Te notificaremos cuando sea hora de comenzar a conectar.",
+  "waitingNotificationEnabled": "Notificaciones habilitadas - ¡te avisaremos cuando puedas acceder a la app!",
+  "enableNotifications": "Habilitar Notificaciones",
+  "contactSupport": "Contactar Soporte"
 }

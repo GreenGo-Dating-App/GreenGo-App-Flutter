@@ -49,6 +49,80 @@ class _DiscoveryPreferencesScreenState
     Navigator.of(context).pop();
   }
 
+  void _showDealBreakerDialog() {
+    final availableOptions = [
+      'Smoking',
+      'Drinking',
+      'No bio',
+      'No photos',
+      'Different religion',
+      'Different politics',
+      'Has children',
+      'Wants children',
+      'Long distance',
+      'Non-monogamy',
+    ];
+
+    // Filter out already selected deal breakers
+    final availableToAdd = availableOptions
+        .where((option) => !_preferences.dealBreakers.contains(option))
+        .toList();
+
+    if (availableToAdd.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('All deal breakers have been added'),
+          backgroundColor: AppColors.richGold,
+        ),
+      );
+      return;
+    }
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Add Deal Breaker',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: availableToAdd.length,
+            itemBuilder: (context, index) {
+              final option = availableToAdd[index];
+              return ListTile(
+                title: Text(
+                  option,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                onTap: () {
+                  _updatePreferences(
+                    _preferences.copyWith(
+                      dealBreakers: [..._preferences.dealBreakers, option],
+                    ),
+                  );
+                  Navigator.of(context).pop();
+                },
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(color: AppColors.textSecondary),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -159,7 +233,7 @@ class _DiscoveryPreferencesScreenState
                   ],
                 ),
                 Slider(
-                  value: _preferences.maxDistanceKm?.toDouble() ?? 200,
+                  value: (_preferences.maxDistanceKm?.toDouble() ?? 200).clamp(1, 200),
                   min: 1,
                   max: 200,
                   divisions: 199,
@@ -187,6 +261,7 @@ class _DiscoveryPreferencesScreenState
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(
+                        clearMaxDistance: value,
                         maxDistanceKm: value ? null : 50,
                       ),
                     );
@@ -332,9 +407,7 @@ class _DiscoveryPreferencesScreenState
                   ),
                 const SizedBox(height: 12),
                 TextButton.icon(
-                  onPressed: () {
-                    // TODO: Show deal breaker selection dialog
-                  },
+                  onPressed: _showDealBreakerDialog,
                   icon: const Icon(
                     Icons.add,
                     color: AppColors.richGold,

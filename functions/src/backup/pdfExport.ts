@@ -128,8 +128,8 @@ export const exportConversationToPDF = functions
 
       const messages = messagesSnapshot.docs.map((doc) => ({
         messageId: doc.id,
-        ...doc.data(),
-      }));
+        ...(doc.data() as any),
+      })) as any[];
 
       console.log(`Exporting ${messages.length} messages to PDF for user ${userId}`);
 

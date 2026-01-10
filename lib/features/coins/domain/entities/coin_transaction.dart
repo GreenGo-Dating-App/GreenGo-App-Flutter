@@ -95,6 +95,9 @@ enum CoinTransactionReason {
   // Debits (Other)
   featurePurchase,
   expired,
+
+  // Admin
+  adminAdjustment,
 }
 
 extension CoinTransactionReasonExtension on CoinTransactionReason {
@@ -145,6 +148,10 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
       // Other
       case CoinTransactionReason.expired:
         return 'Coins Expired';
+
+      // Admin
+      case CoinTransactionReason.adminAdjustment:
+        return 'Admin Adjustment';
     }
   }
 
@@ -199,6 +206,10 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
 
       case CoinTransactionReason.expired:
         return '$amount coins expired.';
+
+      case CoinTransactionReason.adminAdjustment:
+        final reason = metadata?['reason'] ?? 'adjustment';
+        return 'Admin adjustment: $amount coins ($reason).';
     }
   }
 

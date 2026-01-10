@@ -28,10 +28,16 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
         limit: limit,
       );
       return Right(candidates);
-    } on ServerException {
-      return Left(ServerFailure());
+    } on ServerException catch (e) {
+      print('ServerException in getDiscoveryStack: ${e.message}');
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure());
+      print('Error in getDiscoveryStack: $e');
+      // Return empty list instead of error if it's just "no profiles found"
+      if (e.toString().contains('User profile not found')) {
+        return const Right([]);
+      }
+      return Left(ServerFailure(e.toString()));
     }
   }
 

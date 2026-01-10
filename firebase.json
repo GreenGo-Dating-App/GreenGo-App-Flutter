@@ -20,64 +20,102 @@
   "storage": {
     "rules": "storage.rules"
   },
-  "hosting": {
-    "public": "build/web",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=31536000"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(js|css)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=31536000"
-          }
-        ]
-      }
-    ]
-  },
+  "hosting": [
+    {
+      "target": "app",
+      "public": "build/web",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "admin",
+      "public": "../greengo-admin-panel/dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=31536000"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "emulators": {
     "auth": {
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 9099
     },
     "functions": {
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 5001
     },
     "firestore": {
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 8080
     },
     "storage": {
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 9199
     },
     "pubsub": {
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 8085
     },
     "ui": {
       "enabled": true,
-      "host": "localhost",
+      "host": "0.0.0.0",
       "port": 4000
     },
     "singleProjectMode": true,

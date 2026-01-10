@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Management (BLoC) - GreenGo Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <a href="../index.html" class="logo-text" style="text-decoration: none; color: #D4AF37;">GreenGo</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        
+        
+        <ul class="nav-menu" id="navMenu">
+            <!-- 1. Project Overview -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="overview">
+                    <i class="fas fa-home"></i>
+                    <span>Project Overview</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="01-introduction.html">1. Project Introduction</a></li>
+                    <li><a href="02-tech-stack.html">2. Technology Stack</a></li>
+                    <li><a href="03-repository-structure.html">3. Repository Structure</a></li>
+                    <li><a href="04-version-history.html">4. Version History</a></li>
+                    <li><a href="05-getting-started.html">5. Getting Started</a></li>
+                    <li><a href="06-dev-environment.html">6. Development Environment</a></li>
+                    <li><a href="07-quick-start.html">7. Quick Start Tutorial</a></li>
+                    <li><a href="08-glossary.html">8. Glossary & Terminology</a></li>
+                </ul>
+            </li>
+
+            <!-- 2. Architecture -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="architecture">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Architecture</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="09-clean-architecture.html">9. Clean Architecture</a></li>
+                    <li><a href="10-feature-modules.html">10. Feature Modules</a></li>
+                    <li><a href="11-state-management.html">11. State Management (BLoC)</a></li>
+                    <li><a href="12-dependency-injection.html">12. Dependency Injection</a></li>
+                    <li><a href="13-repository-pattern.html">13. Repository Pattern</a></li>
+                    <li><a href="14-data-flow.html">14. Data Flow Diagram</a></li>
+                    <li><a href="15-error-handling.html">15. Error Handling</a></li>
+                    <li><a href="16-navigation.html">16. Navigation & Routing</a></li>
+                    <li><a href="17-api-layer.html">17. API & Network Layer</a></li>
+                    <li><a href="18-caching.html">18. Caching Strategy</a></li>
+                    <li><a href="19-real-time.html">19. Real-time Communication</a></li>
+                    <li><a href="20-testing-architecture.html">20. Testing Architecture</a></li>
+                </ul>
+            </li>
+
+            <!-- 3. Design System -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="design">
+                    <i class="fas fa-palette"></i>
+                    <span>Design System</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="21-brand-guidelines.html">21. Brand Guidelines</a></li>
+                    <li><a href="22-color-palette.html">22. Color Palette</a></li>
+                    <li><a href="23-typography.html">23. Typography System</a></li>
+                    <li><a href="24-spacing.html">24. Spacing & Dimensions</a></li>
+                    <li><a href="25-components.html">25. Component Library</a></li>
+                    <li><a href="26-icons.html">26. Icon System</a></li>
+                    <li><a href="27-animations.html">27. Animation Guidelines</a></li>
+                    <li><a href="28-theming.html">28. Dark/Light Theme</a></li>
+                    <li><a href="29-responsive.html">29. Responsive Design</a></li>
+                    <li><a href="30-accessibility.html">30. Accessibility Guidelines</a></li>
+                </ul>
+            </li>
+
+            <!-- 4. Core Features -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="features">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <span>Core Features</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="31-auth-flow.html">31. Authentication Flow</a></li>
+                    <li><a href="32-social-auth.html">32. Social Authentication</a></li>
+                    <li><a href="33-biometric-auth.html">33. Biometric Authentication</a></li>
+                    <li><a href="34-onboarding.html">34. Profile Onboarding</a></li>
+                    <li><a href="35-photo-upload.html">35. Photo Management</a></li>
+                    <li><a href="36-profile-editing.html">36. Profile Editing</a></li>
+                    <li><a href="37-matching-algorithm.html">37. Matching Algorithm</a></li>
+                    <li><a href="38-discovery.html">38. Discovery Interface</a></li>
+                    <li><a href="39-like-actions.html">39. Like/Pass Actions</a></li>
+                    <li><a href="40-match-system.html">40. Match System</a></li>
+                    <li><a href="41-chat.html">41. Real-time Chat</a></li>
+                    <li><a href="42-message-features.html">42. Message Features</a></li>
+                    <li><a href="43-push-notifications.html">43. Push Notifications</a></li>
+                    <li><a href="44-in-app-notifications.html">44. In-App Notifications</a></li>
+                    <li><a href="45-subscriptions.html">45. Subscription Tiers</a></li>
+                    <li><a href="46-in-app-purchases.html">46. In-App Purchases</a></li>
+                    <li><a href="47-coins.html">47. Virtual Currency</a></li>
+                    <li><a href="48-gamification.html">48. Gamification System</a></li>
+                    <li><a href="49-challenges.html">49. Daily Challenges</a></li>
+                    <li><a href="50-leaderboards.html">50. Leaderboards</a></li>
+                </ul>
+            </li>
+
+            <!-- 5. Backend Services -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="backend">
+                    <i class="fas fa-server"></i>
+                    <span>Backend Services</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="51-firebase-overview.html">51. Firebase Overview</a></li>
+                    <li><a href="52-firestore.html">52. Firestore Database</a></li>
+                    <li><a href="53-firebase-auth.html">53. Firebase Authentication</a></li>
+                    <li><a href="54-firebase-storage.html">54. Firebase Storage</a></li>
+                    <li><a href="55-cloud-functions.html">55. Cloud Functions</a></li>
+                    <li><a href="56-django-backend.html">56. Django Backend</a></li>
+                    <li><a href="57-api-documentation.html">57. API Documentation</a></li>
+                    <li><a href="58-realtime-sync.html">58. Real-time Sync</a></li>
+                    <li><a href="59-background-processing.html">59. Background Processing</a></li>
+                    <li><a href="60-rate-limiting.html">60. Rate Limiting</a></li>
+                </ul>
+            </li>
+
+            <!-- 6. Database -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="database">
+                    <i class="fas fa-database"></i>
+                    <span>Database</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="61-firestore-schema.html">61. Firestore Schema</a></li>
+                    <li><a href="62-postgresql-schema.html">62. PostgreSQL Schema</a></li>
+                    <li><a href="63-data-migration.html">63. Data Migration</a></li>
+                    <li><a href="64-indexing.html">64. Indexing Strategy</a></li>
+                    <li><a href="65-backup-recovery.html">65. Backup & Recovery</a></li>
+                    <li><a href="66-data-retention.html">66. Data Retention Policy</a></li>
+                    <li><a href="67-redis-caching.html">67. Redis Caching</a></li>
+                    <li><a href="68-bigquery.html">68. BigQuery Analytics</a></li>
+                </ul>
+            </li>
+
+            <!-- 7. Security -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="security">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="69-security-architecture.html">69. Security Architecture</a></li>
+                    <li><a href="70-firestore-rules.html">70. Firestore Rules</a></li>
+                    <li><a href="71-storage-rules.html">71. Storage Rules</a></li>
+                    <li><a href="72-auth-security.html">72. Authentication Security</a></li>
+                    <li><a href="73-encryption.html">73. Data Encryption</a></li>
+                    <li><a href="74-app-check.html">74. App Check</a></li>
+                    <li><a href="75-content-moderation.html">75. Content Moderation</a></li>
+                    <li><a href="76-spam-detection.html">76. Spam Detection</a></li>
+                    <li><a href="77-reporting-system.html">77. Reporting System</a></li>
+                    <li><a href="78-security-audit.html">78. Security Audit</a></li>
+                </ul>
+            </li>
+
+            <!-- 8. Third-Party Integrations -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="integrations">
+                    <i class="fas fa-plug"></i>
+                    <span>Integrations</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="79-agora-video.html">79. Agora Video Calling</a></li>
+                    <li><a href="80-stripe.html">80. Stripe Payments</a></li>
+                    <li><a href="81-sendgrid.html">81. SendGrid Email</a></li>
+                    <li><a href="82-twilio.html">82. Twilio SMS</a></li>
+                    <li><a href="83-google-maps.html">83. Google Maps</a></li>
+                    <li><a href="84-google-cloud-ai.html">84. Google Cloud AI</a></li>
+                    <li><a href="85-mixpanel.html">85. Mixpanel Analytics</a></li>
+                    <li><a href="86-sentry.html">86. Sentry Tracking</a></li>
+                    <li><a href="87-perspective-api.html">87. Perspective API</a></li>
+                    <li><a href="88-revenuecat.html">88. RevenueCat</a></li>
+                </ul>
+            </li>
+
+            <!-- 9. DevOps -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="devops">
+                    <i class="fas fa-cogs"></i>
+                    <span>DevOps</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="89-terraform.html">89. Terraform Infrastructure</a></li>
+                    <li><a href="90-docker.html">90. Docker Development</a></li>
+                    <li><a href="91-cicd.html">91. CI/CD Pipeline</a></li>
+                    <li><a href="92-environments.html">92. Environment Management</a></li>
+                    <li><a href="93-feature-flags.html">93. Feature Flags</a></li>
+                    <li><a href="94-pre-commit.html">94. Pre-commit Hooks</a></li>
+                    <li><a href="95-deployment.html">95. Deployment Scripts</a></li>
+                    <li><a href="96-firebase-hosting.html">96. Firebase Hosting</a></li>
+                </ul>
+            </li>
+
+            <!-- 10. Testing -->
+            <li class="nav-section">
+                <div class="nav-section-title" data-section="testing">
+                    <i class="fas fa-vial"></i>
+                    <span>Testing</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <ul class="nav-submenu">
+                    <li><a href="97-unit-testing.html">97. Unit Testing</a></li>
+                    <li><a href="98-widget-testing.html">98. Widget Testing</a></li>
+                    <li><a href="99-integration-testing.html">99. Integration Testing</a></li>
+                    <li><a href="100-firebase-test-lab.html">100. Firebase Test Lab</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-title"><h1>State Management (BLoC)</h1></div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> / <a href="#">Architecture</a> / State Management (BLoC)
+                </div>
+            </div>
+
+            <div class="page-content">
+                
+            <h2>BLoC Pattern Overview</h2>
+            <p>GreenGo uses flutter_bloc for predictable, testable state management following the BLoC (Business Logic Component) pattern.</p>
+
+            <h2>BLoC Architecture</h2>
+            <pre><code>
+┌────────────────────────────────────────────────────────────┐
+│                      UI LAYER                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                     Widget                            │  │
+│  │  ┌─────────────────┐    ┌─────────────────┐          │  │
+│  │  │  BlocProvider   │    │  BlocBuilder    │          │  │
+│  │  │  (Provides BLoC)│    │  (Builds UI)    │          │  │
+│  │  └────────┬────────┘    └────────┬────────┘          │  │
+│  │           │                      │                    │  │
+│  │           │    ┌─────────────────┘                    │  │
+│  │           │    │                                      │  │
+│  │           ▼    ▼                                      │  │
+│  │  ┌─────────────────────────┐                         │  │
+│  │  │    BlocListener         │                         │  │
+│  │  │  (Side Effects)         │                         │  │
+│  │  └─────────────────────────┘                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                          │                                  │
+│                    Events│                                  │
+│                          ▼                                  │
+├─────────────────────────────────────────────────────────────┤
+│                      BLOC LAYER                             │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                       BLoC                            │  │
+│  │  ┌─────────────┐              ┌─────────────┐        │  │
+│  │  │   Events    │──────────────▶   States    │        │  │
+│  │  │  (Input)    │              │  (Output)   │        │  │
+│  │  └─────────────┘              └─────────────┘        │  │
+│  │         │                            ▲               │  │
+│  │         │    ┌──────────────┐        │               │  │
+│  │         └───▶│  Event       │────────┘               │  │
+│  │              │  Handlers    │                        │  │
+│  │              └──────┬───────┘                        │  │
+│  │                     │                                │  │
+│  └─────────────────────┼────────────────────────────────┘  │
+│                        │                                    │
+│                 Use Case Calls                               │
+│                        ▼                                    │
+├─────────────────────────────────────────────────────────────┤
+│                   DOMAIN LAYER                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    Use Cases                          │  │
+│  │                    Repositories                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+
+            <h2>Event-State Flow</h2>
+            <pre><code>
+User Action          Event              Handler           State             UI Update
+    │                  │                   │                │                   │
+    ▼                  ▼                   ▼                ▼                   ▼
+┌───────┐        ┌─────────┐        ┌──────────┐     ┌──────────┐        ┌─────────┐
+│Button │───────▶│LoginReq │───────▶│_onLogin  │────▶│Loading   │───────▶│Spinner  │
+│Press  │        │Event    │        │Handler   │     │State     │        │Widget   │
+└───────┘        └─────────┘        └────┬─────┘     └──────────┘        └─────────┘
+                                         │
+                                         ▼
+                                   ┌──────────┐
+                                   │Use Case  │
+                                   │  Call    │
+                                   └────┬─────┘
+                                        │
+                              ┌─────────┴─────────┐
+                              │                   │
+                              ▼                   ▼
+                        ┌──────────┐        ┌──────────┐
+                        │ Success  │        │ Failure  │
+                        └────┬─────┘        └────┬─────┘
+                             │                   │
+                             ▼                   ▼
+                       ┌──────────┐        ┌──────────┐
+                       │Logged In │        │  Error   │
+                       │  State   │        │  State   │
+                       └────┬─────┘        └────┬─────┘
+                            │                   │
+                            ▼                   ▼
+                       ┌──────────┐        ┌──────────┐
+                       │Home      │        │Error     │
+                       │Screen    │        │Dialog    │
+                       └──────────┘        └──────────┘</code></pre>
+
+            <h2>Complete BLoC Implementation</h2>
+
+            <h3>Events Definition</h3>
+            <pre><code>// lib/features/authentication/presentation/bloc/auth_event.dart
+
+import 'package:equatable/equatable.dart';
+
+abstract class AuthEvent extends Equatable {
+  const AuthEvent();
+
+  @override
+  List<Object?> get props => [];
+}
+
+/// Check current authentication state
+class AuthCheckRequested extends AuthEvent {
+  const AuthCheckRequested();
+}
+
+/// Login with email and password
+class LoginRequested extends AuthEvent {
+  final String email;
+  final String password;
+  final bool rememberMe;
+
+  const LoginRequested({
+    required this.email,
+    required this.password,
+    this.rememberMe = false,
+  });
+
+  @override
+  List<Object?> get props => [email, password, rememberMe];
+}
+
+/// Register new account
+class RegisterRequested extends AuthEvent {
+  final String email;
+  final String password;
+  final String name;
+  final bool acceptedTerms;
+
+  const RegisterRequested({
+    required this.email,
+    required this.password,
+    required this.name,
+    required this.acceptedTerms,
+  });
+
+  @override
+  List<Object?> get props => [email, password, name, acceptedTerms];
+}
+
+/// Logout current user
+class LogoutRequested extends AuthEvent {
+  const LogoutRequested();
+}
+
+/// Request password reset
+class PasswordResetRequested extends AuthEvent {
+  final String email;
+
+  const PasswordResetRequested({required this.email});
+
+  @override
+  List<Object?> get props => [email];
+}
+
+/// Google sign in
+class GoogleSignInRequested extends AuthEvent {
+  const GoogleSignInRequested();
+}
+
+/// Facebook sign in
+class FacebookSignInRequested extends AuthEvent {
+  const FacebookSignInRequested();
+}
+
+/// Apple sign in
+class AppleSignInRequested extends AuthEvent {
+  const AppleSignInRequested();
+}</code></pre>
+
+            <h3>States Definition</h3>
+            <pre><code>// lib/features/authentication/presentation/bloc/auth_state.dart
+
+import 'package:equatable/equatable.dart';
+import '../../domain/entities/user.dart';
+
+abstract class AuthState extends Equatable {
+  const AuthState();
+
+  @override
+  List<Object?> get props => [];
+}
+
+/// Initial state before any check
+class AuthInitial extends AuthState {
+  const AuthInitial();
+}
+
+/// Loading state during auth operations
+class AuthLoading extends AuthState {
+  final String? message;
+
+  const AuthLoading({this.message});
+
+  @override
+  List<Object?> get props => [message];
+}
+
+/// User is authenticated
+class Authenticated extends AuthState {
+  final User user;
+  final bool isNewUser;
+
+  const Authenticated({
+    required this.user,
+    this.isNewUser = false,
+  });
+
+  @override
+  List<Object?> get props => [user, isNewUser];
+}
+
+/// User is not authenticated
+class Unauthenticated extends AuthState {
+  const Unauthenticated();
+}
+
+/// Authentication error occurred
+class AuthError extends AuthState {
+  final String message;
+  final String? code;
+
+  const AuthError({
+    required this.message,
+    this.code,
+  });
+
+  @override
+  List<Object?> get props => [message, code];
+}
+
+/// Password reset email sent successfully
+class PasswordResetSent extends AuthState {
+  final String email;
+
+  const PasswordResetSent({required this.email});
+
+  @override
+  List<Object?> get props => [email];
+}</code></pre>
+
+            <h3>BLoC Implementation</h3>
+            <pre><code>// lib/features/authentication/presentation/bloc/auth_bloc.dart
+
+import 'dart:async';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../domain/usecases/login_user.dart';
+import '../../domain/usecases/register_user.dart';
+import '../../domain/usecases/logout_user.dart';
+import '../../domain/usecases/reset_password.dart';
+import '../../domain/usecases/get_current_user.dart';
+import 'auth_event.dart';
+import 'auth_state.dart';
+
+class AuthBloc extends Bloc<AuthEvent, AuthState> {
+  final LoginUser loginUser;
+  final RegisterUser registerUser;
+  final LogoutUser logoutUser;
+  final ResetPassword resetPassword;
+  final GetCurrentUser getCurrentUser;
+
+  AuthBloc({
+    required this.loginUser,
+    required this.registerUser,
+    required this.logoutUser,
+    required this.resetPassword,
+    required this.getCurrentUser,
+  }) : super(const AuthInitial()) {
+    // Register event handlers
+    on<AuthCheckRequested>(_onAuthCheckRequested);
+    on<LoginRequested>(_onLoginRequested);
+    on<RegisterRequested>(_onRegisterRequested);
+    on<LogoutRequested>(_onLogoutRequested);
+    on<PasswordResetRequested>(_onPasswordResetRequested);
+  }
+
+  /// Check if user is already authenticated
+  Future<void> _onAuthCheckRequested(
+    AuthCheckRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    emit(const AuthLoading(message: 'Checking authentication...'));
+
+    final result = await getCurrentUser(NoParams());
+
+    result.fold(
+      (failure) => emit(const Unauthenticated()),
+      (user) {
+        if (user != null) {
+          emit(Authenticated(user: user));
+        } else {
+          emit(const Unauthenticated());
+        }
+      },
+    );
+  }
+
+  /// Handle login request
+  Future<void> _onLoginRequested(
+    LoginRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    emit(const AuthLoading(message: 'Signing in...'));
+
+    final result = await loginUser(
+      LoginParams(
+        email: event.email,
+        password: event.password,
+      ),
+    );
+
+    result.fold(
+      (failure) => emit(AuthError(
+        message: failure.message,
+        code: failure.code,
+      )),
+      (user) => emit(Authenticated(user: user)),
+    );
+  }
+
+  /// Handle registration request
+  Future<void> _onRegisterRequested(
+    RegisterRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    emit(const AuthLoading(message: 'Creating account...'));
+
+    final result = await registerUser(
+      RegisterParams(
+        email: event.email,
+        password: event.password,
+        name: event.name,
+      ),
+    );
+
+    result.fold(
+      (failure) => emit(AuthError(
+        message: failure.message,
+        code: failure.code,
+      )),
+      (user) => emit(Authenticated(
+        user: user,
+        isNewUser: true,
+      )),
+    );
+  }
+
+  /// Handle logout request
+  Future<void> _onLogoutRequested(
+    LogoutRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    emit(const AuthLoading(message: 'Signing out...'));
+
+    final result = await logoutUser(NoParams());
+
+    result.fold(
+      (failure) => emit(AuthError(message: failure.message)),
+      (_) => emit(const Unauthenticated()),
+    );
+  }
+
+  /// Handle password reset request
+  Future<void> _onPasswordResetRequested(
+    PasswordResetRequested event,
+    Emitter<AuthState> emit,
+  ) async {
+    emit(const AuthLoading(message: 'Sending reset email...'));
+
+    final result = await resetPassword(event.email);
+
+    result.fold(
+      (failure) => emit(AuthError(message: failure.message)),
+      (_) => emit(PasswordResetSent(email: event.email)),
+    );
+  }
+}</code></pre>
+
+            <h2>UI Integration Patterns</h2>
+
+            <h3>BlocProvider Setup</h3>
+            <pre><code>// Providing BLoC to widget tree
+BlocProvider<AuthBloc>(
+  create: (context) => sl<AuthBloc>()..add(const AuthCheckRequested()),
+  child: MaterialApp(
+    home: AuthWrapper(),
+  ),
+)</code></pre>
+
+            <h3>BlocBuilder Pattern</h3>
+            <pre><code>// Building UI based on state
+BlocBuilder<AuthBloc, AuthState>(
+  builder: (context, state) {
+    if (state is AuthLoading) {
+      return LoadingScreen(message: state.message);
+    }
+
+    if (state is Authenticated) {
+      return HomeScreen(user: state.user);
+    }
+
+    if (state is AuthError) {
+      return ErrorScreen(message: state.message);
+    }
+
+    return LoginScreen();
+  },
+)</code></pre>
+
+            <h3>BlocListener Pattern</h3>
+            <pre><code>// Handling side effects (navigation, dialogs, etc.)
+BlocListener<AuthBloc, AuthState>(
+  listener: (context, state) {
+    if (state is AuthError) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(state.message)),
+      );
+    }
+
+    if (state is Authenticated && state.isNewUser) {
+      Navigator.pushReplacementNamed(context, '/onboarding');
+    }
+
+    if (state is PasswordResetSent) {
+      showDialog(
+        context: context,
+        builder: (_) => AlertDialog(
+          title: Text('Email Sent'),
+          content: Text('Check ${state.email} for reset link'),
+        ),
+      );
+    }
+  },
+  child: LoginForm(),
+)</code></pre>
+
+            <h3>BlocConsumer (Builder + Listener)</h3>
+            <pre><code>// Combined pattern for both UI building and side effects
+BlocConsumer<AuthBloc, AuthState>(
+  listener: (context, state) {
+    if (state is AuthError) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(state.message),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+  },
+  builder: (context, state) {
+    return LoginForm(
+      isLoading: state is AuthLoading,
+      onLogin: (email, password) {
+        context.read<AuthBloc>().add(
+          LoginRequested(email: email, password: password),
+        );
+      },
+    );
+  },
+)</code></pre>
+
+            <h2>Testing BLoC</h2>
+            <pre><code>// test/features/authentication/presentation/bloc/auth_bloc_test.dart
+
+import 'package:bloc_test/bloc_test.dart';
+import 'package:mockito/mockito.dart';
+import 'package:dartz/dartz.dart';
+
+void main() {
+  late AuthBloc authBloc;
+  late MockLoginUser mockLoginUser;
+
+  setUp(() {
+    mockLoginUser = MockLoginUser();
+    authBloc = AuthBloc(loginUser: mockLoginUser, ...);
+  });
+
+  blocTest<AuthBloc, AuthState>(
+    'emits [AuthLoading, Authenticated] when login succeeds',
+    build: () {
+      when(mockLoginUser(any)).thenAnswer(
+        (_) async => Right(testUser),
+      );
+      return authBloc;
+    },
+    act: (bloc) => bloc.add(LoginRequested(
+      email: 'test@test.com',
+      password: 'password123',
+    )),
+    expect: () => [
+      isA<AuthLoading>(),
+      isA<Authenticated>(),
+    ],
+  );
+
+  blocTest<AuthBloc, AuthState>(
+    'emits [AuthLoading, AuthError] when login fails',
+    build: () {
+      when(mockLoginUser(any)).thenAnswer(
+        (_) async => Left(ServerFailure('Invalid credentials')),
+      );
+      return authBloc;
+    },
+    act: (bloc) => bloc.add(LoginRequested(
+      email: 'test@test.com',
+      password: 'wrong',
+    )),
+    expect: () => [
+      isA<AuthLoading>(),
+      isA<AuthError>().having(
+        (e) => e.message,
+        'message',
+        'Invalid credentials',
+      ),
+    ],
+  );
+}</code></pre>
+        
+
+                <div class="page-navigation">
+                    <a href="08-glossary.html" class="page-nav-link prev"><i class="fas fa-arrow-left"></i> Previous</a>
+                    <a href="21-brand-guidelines.html" class="page-nav-link next">Next <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

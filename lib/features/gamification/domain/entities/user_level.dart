@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:equatable/equatable.dart';
 
 /// User Level Entity
@@ -485,6 +487,3 @@ class XPTransaction extends Equatable {
         metadata,
       ];
 }
-
-// Import math for pow function
-import 'dart:math' as math;

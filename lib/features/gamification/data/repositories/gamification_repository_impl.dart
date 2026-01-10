@@ -27,9 +27,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final achievements = await remoteDataSource.getAllAchievements();
       return Right(achievements);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -40,9 +40,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final progress = await remoteDataSource.getUserAchievementProgress(userId);
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -58,9 +58,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -76,9 +76,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -96,9 +96,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -121,9 +121,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
 
       return Right(unlockedAchievements);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -135,9 +135,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final level = await remoteDataSource.getUserLevel(userId);
       return Right(level);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -151,9 +151,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final level = await remoteDataSource.grantXP(userId, xpAmount, reason);
       return Right(level);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -166,9 +166,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final history = await remoteDataSource.getXPHistory(userId, limit);
       return Right(history);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -186,9 +186,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(leaderboard);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -201,9 +201,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final rank = await remoteDataSource.getUserRank(userId, type);
       return Right(rank);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -213,9 +213,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final rewards = await remoteDataSource.getLevelRewards(level);
       return Right(rewards);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -228,9 +228,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final claimed = await remoteDataSource.claimLevelRewards(userId, level);
       return Right(claimed);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -240,9 +240,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final isVIP = await remoteDataSource.checkVIPStatus(userId);
       return Right(isVIP);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -258,9 +258,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(isUnlocked);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -274,9 +274,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final challenges = await remoteDataSource.getDailyChallenges(userId);
       return Right(challenges);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -288,9 +288,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final progress = await remoteDataSource.getChallengeProgress(userId);
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -308,9 +308,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(progress);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -326,9 +326,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(rewards);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -340,9 +340,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final challenges = await remoteDataSource.getWeeklyChallenges(userId);
       return Right(challenges);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -352,9 +352,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final event = await remoteDataSource.getActiveSeasonalEvent();
       return Right(event);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -370,9 +370,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       );
       return Right(challenges);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -382,9 +382,9 @@ class GamificationRepositoryImpl implements GamificationRepository {
       final themeConfig = await remoteDataSource.getSeasonalThemeConfig();
       return Right(themeConfig);
     } on ServerException catch (e) {
-      return Left(ServerFailure(message: e.message));
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure(message: e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 }

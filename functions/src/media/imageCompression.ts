@@ -5,7 +5,7 @@
 
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import * as sharp from 'sharp';
+import sharp from 'sharp';
 import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs';

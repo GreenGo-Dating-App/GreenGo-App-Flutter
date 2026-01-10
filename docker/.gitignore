@@ -1,0 +1,20 @@
+# Docker environment files
+.env
+
+# Firebase emulator data
+firebase/data/
+
+# SSL certificates
+nginx/ssl/*.pem
+nginx/ssl/*.key
+nginx/ssl/*.crt
+
+# Logs
+*.log
+
+# Backup files
+backup/
+
+# OS files
+.DS_Store
+Thumbs.db
