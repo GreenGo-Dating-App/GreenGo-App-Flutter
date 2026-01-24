@@ -7,6 +7,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -22,8 +24,12 @@ import 'core/services/cache_service.dart';
 import 'core/services/version_check_service.dart';
 import 'core/widgets/update_dialog.dart';
 import 'features/authentication/presentation/bloc/auth_bloc.dart';
+import 'features/authentication/presentation/bloc/auth_event.dart';
 import 'features/authentication/presentation/bloc/auth_state.dart';
 import 'features/authentication/presentation/screens/login_screen.dart';
+import 'features/authentication/presentation/screens/waiting_screen.dart';
+import 'core/services/access_control_service.dart';
+import 'features/subscription/domain/entities/subscription.dart';
 import 'features/authentication/presentation/screens/register_screen.dart';
 import 'features/authentication/presentation/screens/forgot_password_screen.dart';
 import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
@@ -31,6 +37,7 @@ import 'features/main/presentation/screens/main_navigation_screen.dart';
 import 'features/language_learning/presentation/screens/language_learning_home_screen.dart';
 import 'features/language_learning/presentation/screens/language_detail_screen.dart';
 import 'features/language_learning/presentation/screens/flashcard_session_screen.dart';
+import 'features/admin/presentation/screens/early_access_admin_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,6 +68,12 @@ void main() async {
   // Configure Firebase Emulators for local development
   if (kDebugMode && AppConfig.useLocalEmulators) {
     debugPrint('🔧 Connecting to Firebase Emulators...');
+
+    // Disable Crashlytics and Performance when using emulators
+    // These services require valid API keys and can't use emulators
+    await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(false);
+    await FirebasePerformance.instance.setPerformanceCollectionEnabled(false);
+    debugPrint('✓ Crashlytics & Performance disabled (emulator mode)');
 
     // Get the emulator host
     // Use 10.0.2.2 for Android Emulator, 127.0.0.1 for iOS Simulator/Web
@@ -232,6 +245,16 @@ class GreenGoChatApp extends StatelessWidget {
                 );
               }
 
+              // Admin routes
+              if (settings.name == '/admin/early_access') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => EarlyAccessAdminScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
               return null;
             },
           );
@@ -251,6 +274,9 @@ class AuthWrapper extends StatefulWidget {
 
 class _AuthWrapperState extends State<AuthWrapper> {
   bool _hasCheckedVersion = false;
+  bool _isCheckingAccess = false;
+  UserAccessData? _accessData;
+  final AccessControlService _accessControlService = AccessControlService();
 
   @override
   void initState() {
@@ -293,13 +319,107 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
+  Future<void> _checkAccessStatus(String userId) async {
+    if (_isCheckingAccess) return;
+
+    setState(() {
+      _isCheckingAccess = true;
+    });
+
+    try {
+      final accessData = await _accessControlService.getCurrentUserAccess();
+      if (mounted) {
+        setState(() {
+          _accessData = accessData;
+          _isCheckingAccess = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isCheckingAccess = false;
+        });
+      }
+    }
+  }
+
+  void _handleSignOut() {
+    context.read<AuthBloc>().add(AuthSignOutRequested());
+    setState(() {
+      _accessData = null;
+    });
+  }
+
+  void _handleRefresh() {
+    setState(() {
+      _accessData = null;
+    });
+    // Re-check access status
+    final state = context.read<AuthBloc>().state;
+    if (state is AuthAuthenticated) {
+      _checkAccessStatus(state.user.uid);
+    }
+  }
+
+  void _handleEnableNotifications() {
+    context.read<AuthBloc>().add(AuthEnableNotificationsRequested());
+  }
+
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AuthBloc, AuthState>(
+    return BlocConsumer<AuthBloc, AuthState>(
+      listener: (context, state) {
+        // When user becomes authenticated, check their access status
+        if (state is AuthAuthenticated) {
+          _checkAccessStatus(state.user.uid);
+        }
+      },
       builder: (context, state) {
-        if (state is AuthLoading) {
+        if (state is AuthLoading || _isCheckingAccess) {
           return const SplashScreen();
+        } else if (state is AuthWaitingForAccess) {
+          // User is waiting for access (from auth bloc check)
+          return WaitingScreen(
+            accessData: UserAccessData(
+              userId: state.user.uid,
+              approvalStatus: ApprovalStatus.values.firstWhere(
+                (e) => e.name == state.approvalStatus,
+                orElse: () => ApprovalStatus.pending,
+              ),
+              accessDate: state.accessDate,
+              membershipTier: SubscriptionTier.values.firstWhere(
+                (e) => e.name == state.membershipTier,
+                orElse: () => SubscriptionTier.basic,
+              ),
+              notificationsEnabled: false,
+              hasEarlyAccess: state.accessDate.isBefore(DateTime(2026, 3, 16)),
+            ),
+            onSignOut: _handleSignOut,
+            onRefresh: _handleRefresh,
+            onEnableNotifications: _handleEnableNotifications,
+          );
         } else if (state is AuthAuthenticated) {
+          // Check if we have access data and if user should wait
+          if (_accessData != null) {
+            // If countdown is active OR pending approval after countdown
+            if (_accessData!.isCountdownActive || _accessData!.shouldShowPendingApproval) {
+              return WaitingScreen(
+                accessData: _accessData,
+                onSignOut: _handleSignOut,
+                onRefresh: _handleRefresh,
+                onEnableNotifications: _handleEnableNotifications,
+              );
+            }
+            // If rejected
+            if (_accessData!.approvalStatus == ApprovalStatus.rejected) {
+              return WaitingScreen(
+                accessData: _accessData,
+                onSignOut: _handleSignOut,
+                onRefresh: _handleRefresh,
+              );
+            }
+          }
+          // User can access the app
           return MainNavigationScreen(userId: state.user.uid);
         } else {
           return const LoginScreen();

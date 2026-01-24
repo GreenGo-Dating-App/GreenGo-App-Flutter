@@ -82,13 +82,16 @@ dependencies:
   intl: ^0.20.2
   uuid: ^4.2.1
   url_launcher: ^6.2.2
-  package_info_plus: ^5.0.1
+  package_info_plus: ^9.0.0
   device_info_plus: ^9.1.1
   path_provider: ^2.1.1
   path: ^1.8.3
 
   # Permissions
   permission_handler: ^11.1.0
+
+  # File Picker (for CSV uploads)
+  file_picker: ^10.1.0
 
   # Video Calling
   # agora_rtc_engine: ^6.3.0  # Disabled for development - NDK compatibility issues

@@ -628,4 +628,67 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contactSupport => 'Contact Support';
+
+  @override
+  String get waitingCountdownSubtitle =>
+      'Thank you for registering! GreenGo Chat is launching soon. Get ready for an exclusive experience.';
+
+  @override
+  String get waitingCountdownLabel => 'App Launch Countdown';
+
+  @override
+  String get waitingEarlyAccessMember => 'Early Access Member';
+
+  @override
+  String get waitingExclusiveAccess => 'Your exclusive access date';
+
+  @override
+  String get waitingProfileUnderReview => 'Profile Under Review';
+
+  @override
+  String get waitingReviewMessage =>
+      'The app is now live! Our team is reviewing your profile to ensure the best experience for our community. This usually takes 24-48 hours.';
+
+  @override
+  String get waitingStepRegistration => 'Registration Complete';
+
+  @override
+  String get waitingStepReview => 'Profile Review in Progress';
+
+  @override
+  String get waitingStepActivation => 'Account Activation';
+
+  @override
+  String get waitingEnableNotificationsTitle => 'Stay Updated';
+
+  @override
+  String get waitingEnableNotificationsSubtitle =>
+      'Enable notifications to be the first to know when you can access the app.';
+
+  @override
+  String get waitingThankYouRegistration => 'Thank you for registering!';
+
+  @override
+  String get days => 'Days';
+
+  @override
+  String get hours => 'Hours';
+
+  @override
+  String get minutes => 'Minutes';
+
+  @override
+  String get seconds => 'Seconds';
+
+  @override
+  String get vipPlatinumMember => 'PLATINUM VIP';
+
+  @override
+  String get vipGoldMember => 'GOLD MEMBER';
+
+  @override
+  String get vipSilverMember => 'SILVER MEMBER';
+
+  @override
+  String get vipPremiumBenefitsActive => 'Premium Benefits Active';
 }

@@ -1252,6 +1252,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Contact Support'**
   String get contactSupport;
+
+  /// No description provided for @waitingCountdownSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for registering! GreenGo Chat is launching soon. Get ready for an exclusive experience.'**
+  String get waitingCountdownSubtitle;
+
+  /// No description provided for @waitingCountdownLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'App Launch Countdown'**
+  String get waitingCountdownLabel;
+
+  /// No description provided for @waitingEarlyAccessMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Early Access Member'**
+  String get waitingEarlyAccessMember;
+
+  /// No description provided for @waitingExclusiveAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Your exclusive access date'**
+  String get waitingExclusiveAccess;
+
+  /// No description provided for @waitingProfileUnderReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Under Review'**
+  String get waitingProfileUnderReview;
+
+  /// No description provided for @waitingReviewMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'The app is now live! Our team is reviewing your profile to ensure the best experience for our community. This usually takes 24-48 hours.'**
+  String get waitingReviewMessage;
+
+  /// No description provided for @waitingStepRegistration.
+  ///
+  /// In en, this message translates to:
+  /// **'Registration Complete'**
+  String get waitingStepRegistration;
+
+  /// No description provided for @waitingStepReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Review in Progress'**
+  String get waitingStepReview;
+
+  /// No description provided for @waitingStepActivation.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Activation'**
+  String get waitingStepActivation;
+
+  /// No description provided for @waitingEnableNotificationsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay Updated'**
+  String get waitingEnableNotificationsTitle;
+
+  /// No description provided for @waitingEnableNotificationsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable notifications to be the first to know when you can access the app.'**
+  String get waitingEnableNotificationsSubtitle;
+
+  /// No description provided for @waitingThankYouRegistration.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for registering!'**
+  String get waitingThankYouRegistration;
+
+  /// No description provided for @days.
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get days;
+
+  /// No description provided for @hours.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours'**
+  String get hours;
+
+  /// No description provided for @minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get minutes;
+
+  /// No description provided for @seconds.
+  ///
+  /// In en, this message translates to:
+  /// **'Seconds'**
+  String get seconds;
+
+  /// No description provided for @vipPlatinumMember.
+  ///
+  /// In en, this message translates to:
+  /// **'PLATINUM VIP'**
+  String get vipPlatinumMember;
+
+  /// No description provided for @vipGoldMember.
+  ///
+  /// In en, this message translates to:
+  /// **'GOLD MEMBER'**
+  String get vipGoldMember;
+
+  /// No description provided for @vipSilverMember.
+  ///
+  /// In en, this message translates to:
+  /// **'SILVER MEMBER'**
+  String get vipSilverMember;
+
+  /// No description provided for @vipPremiumBenefitsActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Benefits Active'**
+  String get vipPremiumBenefitsActive;
 }
 
 class _AppLocalizationsDelegate

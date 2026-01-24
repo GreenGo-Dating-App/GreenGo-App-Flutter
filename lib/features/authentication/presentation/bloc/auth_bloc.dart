@@ -73,9 +73,18 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       email: event.email,
       password: event.password,
     );
+
     result.fold(
       (failure) => emit(AuthError(failure.message)),
-      (user) => emit(AuthAuthenticated(user)),
+      (user) {
+        // Handle success synchronously to avoid emit after handler completes
+        // Refresh access date in a fire-and-forget manner
+        _accessControlService.refreshUserAccessDate(user.uid, event.email).catchError((e) {
+          // Log error but don't fail sign-in
+          return null;
+        });
+        emit(AuthAuthenticated(user));
+      },
     );
   }
 
@@ -88,11 +97,25 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       email: event.email,
       password: event.password,
     );
-    result.fold(
-      (failure) => emit(AuthError(failure.message)),
-      (user) {
+
+    await result.fold(
+      (failure) async => emit(AuthError(failure.message)),
+      (user) async {
         // Send email verification after registration
         repository.sendEmailVerification();
+
+        // Initialize user access data with email for early access checking
+        // This determines if user gets March 1 or March 16 access date
+        try {
+          await _accessControlService.initializeUserAccess(
+            userId: user.uid,
+            email: event.email,
+          );
+        } catch (e) {
+          // Log error but don't fail registration
+          // Access data can be initialized later
+        }
+
         emit(AuthAuthenticated(user));
       },
     );

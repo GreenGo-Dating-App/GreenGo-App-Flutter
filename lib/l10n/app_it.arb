@@ -251,5 +251,27 @@
   "waitingStayTuned": "Resta sintonizzato! Ti avviseremo quando sarà il momento di iniziare a connetterti.",
   "waitingNotificationEnabled": "Notifiche attivate - ti faremo sapere quando potrai accedere all'app!",
   "enableNotifications": "Attiva Notifiche",
-  "contactSupport": "Contatta Supporto"
+  "contactSupport": "Contatta Supporto",
+
+  "waitingCountdownSubtitle": "Grazie per la registrazione! GreenGo Chat sta per essere lanciato. Preparati per un'esperienza esclusiva.",
+  "waitingCountdownLabel": "Conto alla rovescia per il lancio",
+  "waitingEarlyAccessMember": "Membro Accesso Anticipato",
+  "waitingExclusiveAccess": "La tua data di accesso esclusivo",
+  "waitingProfileUnderReview": "Profilo in revisione",
+  "waitingReviewMessage": "L'app è ora attiva! Il nostro team sta esaminando il tuo profilo per garantire la migliore esperienza per la nostra comunità. Questo richiede solitamente 24-48 ore.",
+  "waitingStepRegistration": "Registrazione completata",
+  "waitingStepReview": "Revisione profilo in corso",
+  "waitingStepActivation": "Attivazione account",
+  "waitingEnableNotificationsTitle": "Rimani aggiornato",
+  "waitingEnableNotificationsSubtitle": "Attiva le notifiche per essere il primo a sapere quando puoi accedere all'app.",
+  "waitingThankYouRegistration": "Grazie per la registrazione!",
+  "days": "Giorni",
+  "hours": "Ore",
+  "minutes": "Minuti",
+  "seconds": "Secondi",
+
+  "vipPlatinumMember": "PLATINO VIP",
+  "vipGoldMember": "MEMBRO ORO",
+  "vipSilverMember": "MEMBRO ARGENTO",
+  "vipPremiumBenefitsActive": "Vantaggi Premium Attivi"
 }

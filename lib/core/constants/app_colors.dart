@@ -7,6 +7,7 @@ class AppColors {
 
   // Primary Colors
   static const Color richGold = Color(0xFFD4AF37);
+  static const Color gold = richGold; // Alias for convenience
   static const Color deepBlack = Color(0xFF0A0A0A);
 
   // Secondary Colors

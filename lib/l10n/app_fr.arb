@@ -231,5 +231,27 @@
   "waitingStayTuned": "Restez à l'écoute! Nous vous informerons quand il sera temps de commencer à vous connecter.",
   "waitingNotificationEnabled": "Notifications activées - nous vous préviendrons quand vous pourrez accéder à l'application!",
   "enableNotifications": "Activer les Notifications",
-  "contactSupport": "Contacter le Support"
+  "contactSupport": "Contacter le Support",
+
+  "waitingCountdownSubtitle": "Merci de vous être inscrit ! GreenGo Chat sera lancé bientôt. Préparez-vous pour une expérience exclusive.",
+  "waitingCountdownLabel": "Compte à rebours avant le lancement",
+  "waitingEarlyAccessMember": "Membre Accès Anticipé",
+  "waitingExclusiveAccess": "Votre date d'accès exclusive",
+  "waitingProfileUnderReview": "Profil en cours d'examen",
+  "waitingReviewMessage": "L'application est maintenant en ligne ! Notre équipe examine votre profil pour garantir la meilleure expérience pour notre communauté. Cela prend généralement 24 à 48 heures.",
+  "waitingStepRegistration": "Inscription terminée",
+  "waitingStepReview": "Examen du profil en cours",
+  "waitingStepActivation": "Activation du compte",
+  "waitingEnableNotificationsTitle": "Restez informé",
+  "waitingEnableNotificationsSubtitle": "Activez les notifications pour être le premier à savoir quand vous pouvez accéder à l'application.",
+  "waitingThankYouRegistration": "Merci de vous être inscrit !",
+  "days": "Jours",
+  "hours": "Heures",
+  "minutes": "Minutes",
+  "seconds": "Secondes",
+
+  "vipPlatinumMember": "PLATINE VIP",
+  "vipGoldMember": "MEMBRE OR",
+  "vipSilverMember": "MEMBRE ARGENT",
+  "vipPremiumBenefitsActive": "Avantages Premium Actifs"
 }

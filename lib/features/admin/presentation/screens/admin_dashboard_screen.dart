@@ -255,6 +255,14 @@ class AdminDashboardScreen extends StatelessWidget {
       children: [
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
+            icon: Icons.stars,
+            iconColor: AppColors.richGold,
+            title: 'Early Access List',
+            subtitle: 'Manage early access email list (CSV upload)',
+            onTap: () => _navigateTo(context, 'early_access'),
+          ),
+        if (_hasPermission(Permission.systemSettings))
+          _AdminMenuItem(
             icon: Icons.star,
             iconColor: AppColors.richGold,
             title: 'Tier Management',
@@ -376,6 +384,12 @@ class AdminDashboardScreen extends StatelessWidget {
       case 'reports':
         Navigator.of(context).pushNamed(
           '/admin/reports',
+          arguments: adminId,
+        );
+        break;
+      case 'early_access':
+        Navigator.of(context).pushNamed(
+          '/admin/early_access',
           arguments: adminId,
         );
         break;
