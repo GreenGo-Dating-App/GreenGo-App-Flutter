@@ -6,7 +6,8 @@ enum MembershipTier {
   free('FREE'),
   silver('SILVER'),
   gold('GOLD'),
-  platinum('PLATINUM');
+  platinum('PLATINUM'),
+  test('TEST');
 
   final String value;
   const MembershipTier(this.value);
@@ -19,6 +20,8 @@ enum MembershipTier {
         return MembershipTier.gold;
       case 'PLATINUM':
         return MembershipTier.platinum;
+      case 'TEST':
+        return MembershipTier.test;
       default:
         return MembershipTier.free;
     }
@@ -34,6 +37,8 @@ enum MembershipTier {
         return 'Gold VIP';
       case MembershipTier.platinum:
         return 'Platinum VIP';
+      case MembershipTier.test:
+        return 'Tester';
     }
   }
 
@@ -47,7 +52,14 @@ enum MembershipTier {
         return 2;
       case MembershipTier.platinum:
         return 3;
+      case MembershipTier.test:
+        return 99; // Highest priority for testers
     }
+  }
+
+  /// Check if this tier bypasses countdown restrictions
+  bool get bypassesCountdown {
+    return this == MembershipTier.test;
   }
 }
 
@@ -225,6 +237,30 @@ class MembershipRules extends Equatable {
     badgeIcon: 'platinum_badge',
   );
 
+  /// Default rules for TEST tier (configurable from admin panel)
+  /// Test users bypass countdown and have configurable limits
+  static const MembershipRules testDefaults = MembershipRules(
+    dailyMessageLimit: -1, // Unlimited by default, admin configurable
+    dailySwipeLimit: -1, // Unlimited by default, admin configurable
+    dailySuperLikeLimit: -1, // Unlimited by default, admin configurable
+    canSeeWhoLiked: true,
+    canUseAdvancedFilters: true,
+    canFilterByLocation: true,
+    canFilterByInterests: true,
+    canFilterByLanguage: true,
+    canFilterByVerification: true,
+    canBoostProfile: true,
+    monthlyFreeBoosts: 10,
+    canUndoSwipe: true,
+    canSendMedia: true,
+    canSeeReadReceipts: true,
+    canUseIncognitoMode: true,
+    matchPriority: 99, // Highest priority
+    canSeeProfileVisitors: true,
+    canUseVideoChat: true,
+    badgeIcon: 'test_badge',
+  );
+
   /// Get default rules for a specific tier
   static MembershipRules getDefaultsForTier(MembershipTier tier) {
     switch (tier) {
@@ -236,6 +272,8 @@ class MembershipRules extends Equatable {
         return goldDefaults;
       case MembershipTier.platinum:
         return platinumDefaults;
+      case MembershipTier.test:
+        return testDefaults;
     }
   }
 

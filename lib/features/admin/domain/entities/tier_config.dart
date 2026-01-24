@@ -238,6 +238,16 @@ class TierRewardConfig extends Equatable {
           xpMultiplier: 2.0,
           referralBonus: 250,
         );
+      case MembershipTier.test:
+        // Test users get same rewards as Platinum
+        return const TierRewardConfig(
+          tier: MembershipTier.test,
+          monthlyCoins: 200,
+          dailyLoginCoins: 25,
+          dailyLoginXP: 25,
+          xpMultiplier: 2.0,
+          referralBonus: 250,
+        );
     }
   }
 

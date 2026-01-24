@@ -135,6 +135,10 @@ class _TierBadge extends StatelessWidget {
         return LinearGradient(
           colors: [Colors.purple.shade400, Colors.blue.shade600],
         );
+      case MembershipTier.test:
+        return LinearGradient(
+          colors: [Colors.green.shade400, Colors.teal.shade600],
+        );
     }
   }
 
@@ -148,6 +152,8 @@ class _TierBadge extends StatelessWidget {
         return const Color(0xFFFFD700);
       case MembershipTier.platinum:
         return Colors.purple;
+      case MembershipTier.test:
+        return Colors.green;
     }
   }
 
@@ -161,6 +167,8 @@ class _TierBadge extends StatelessWidget {
         return Icons.star;
       case MembershipTier.platinum:
         return Icons.diamond;
+      case MembershipTier.test:
+        return Icons.bug_report;
     }
   }
 }
@@ -631,6 +639,10 @@ class CompactProfileBadge extends StatelessWidget {
         return LinearGradient(
           colors: [Colors.purple.shade400, Colors.blue.shade600],
         );
+      case MembershipTier.test:
+        return LinearGradient(
+          colors: [Colors.green.shade400, Colors.teal.shade600],
+        );
     }
   }
 
@@ -644,6 +656,8 @@ class CompactProfileBadge extends StatelessWidget {
         return Icons.star;
       case MembershipTier.platinum:
         return Icons.diamond;
+      case MembershipTier.test:
+        return Icons.bug_report;
     }
   }
 }

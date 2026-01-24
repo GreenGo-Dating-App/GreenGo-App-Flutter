@@ -1,12 +1,13 @@
 import 'package:equatable/equatable.dart';
 
 /// Subscription Tier
-/// Point 148: Four-tier system (updated for MVP release)
+/// Point 148: Four-tier system (updated for MVP release) + Test tier
 enum SubscriptionTier {
   basic,    // Free tier
   silver,   // $9.99/month
   gold,     // $19.99/month
   platinum, // $29.99/month - VIP tier
+  test,     // Test user - bypasses countdown, admin-configured limits
 }
 
 extension SubscriptionTierExtension on SubscriptionTier {
@@ -20,6 +21,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'Gold';
       case SubscriptionTier.platinum:
         return 'Platinum';
+      case SubscriptionTier.test:
+        return 'Test';
     }
   }
 
@@ -33,6 +36,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'Gold Premium';
       case SubscriptionTier.platinum:
         return 'Platinum VIP';
+      case SubscriptionTier.test:
+        return 'Tester';
     }
   }
 
@@ -46,6 +51,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 19.99;
       case SubscriptionTier.platinum:
         return 29.99;
+      case SubscriptionTier.test:
+        return 0.0; // Free for testers
     }
   }
 
@@ -59,18 +66,30 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return 'gold_premium_monthly';
       case SubscriptionTier.platinum:
         return 'platinum_vip_monthly';
+      case SubscriptionTier.test:
+        return 'test_user';
     }
+  }
+
+  /// Check if this tier bypasses countdown restrictions
+  bool get bypassesCountdown {
+    return this == SubscriptionTier.test;
   }
 
   /// Check if this tier has early access (March 1st, 2026)
   bool get hasEarlyAccess {
     return this == SubscriptionTier.platinum ||
            this == SubscriptionTier.gold ||
-           this == SubscriptionTier.silver;
+           this == SubscriptionTier.silver ||
+           this == SubscriptionTier.test; // Test users always have access
   }
 
   /// Get the access date for this tier
   DateTime get accessDate {
+    // Test users have immediate access (bypass countdown)
+    if (this == SubscriptionTier.test) {
+      return DateTime.now().subtract(const Duration(days: 1)); // Always in the past
+    }
     if (hasEarlyAccess) {
       return DateTime(2026, 3, 1); // March 1st, 2026 for Platinum, Gold, Silver
     }
@@ -143,6 +162,25 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'priorityMatching': true,
           'exclusiveEvents': true,
         };
+      case SubscriptionTier.test:
+        // Test tier - all features enabled, limits configurable from admin panel
+        return {
+          'dailyLikes': -1, // unlimited (admin configurable)
+          'superLikes': -1, // unlimited (admin configurable)
+          'rewinds': -1, // unlimited (admin configurable)
+          'boosts': -1, // unlimited (admin configurable)
+          'seeWhoLikesYou': true,
+          'unlimitedLikes': true,
+          'advancedFilters': true,
+          'readReceipts': true,
+          'prioritySupport': true,
+          'adFree': true,
+          'profileBoost': -1, // unlimited
+          'incognitoMode': true,
+          'testBadge': true,
+          'bypassCountdown': true, // Key feature for test users
+          'priorityMatching': true,
+        };
     }
   }
 
@@ -154,6 +192,8 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return SubscriptionTier.gold;
       case 'platinum':
         return SubscriptionTier.platinum;
+      case 'test':
+        return SubscriptionTier.test;
       case 'basic':
       default:
         return SubscriptionTier.basic;

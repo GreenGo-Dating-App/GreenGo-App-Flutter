@@ -98,19 +98,31 @@ class UserAccessData {
     };
   }
 
+  /// Check if this is a Test user (bypasses countdown)
+  bool get isTestUser => membershipTier == SubscriptionTier.test;
+
   /// Check if user can access the app
   /// User can access if:
   /// 1. They are approved by admin, AND
-  /// 2. The current date is after their access date
+  /// 2. The current date is after their access date OR they are a Test user
   bool get canAccessApp {
     if (approvalStatus != ApprovalStatus.approved) {
       return false;
+    }
+    // Test users bypass the countdown entirely
+    if (isTestUser) {
+      return true;
     }
     return DateTime.now().isAfter(accessDate) || DateTime.now().isAtSameMomentAs(accessDate);
   }
 
   /// Check if countdown is still active (access date not reached yet)
+  /// Test users never have an active countdown
   bool get isCountdownActive {
+    // Test users bypass countdown
+    if (isTestUser) {
+      return false;
+    }
     final now = DateTime.now();
     return now.isBefore(accessDate);
   }

@@ -1265,6 +1265,8 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
         return AppColors.richGold;
       case MembershipTier.platinum:
         return Colors.blueGrey[300]!;
+      case MembershipTier.test:
+        return Colors.green;
     }
   }
 
@@ -1278,6 +1280,8 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
         return Icons.star;
       case MembershipTier.platinum:
         return Icons.workspace_premium;
+      case MembershipTier.test:
+        return Icons.bug_report;
     }
   }
 }

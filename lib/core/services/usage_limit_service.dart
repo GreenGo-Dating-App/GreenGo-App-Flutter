@@ -221,6 +221,8 @@ class UsageLimitService {
         return null; // Gold already has unlimited swipes/messages
       case MembershipTier.platinum:
         return null; // Already at max tier
+      case MembershipTier.test:
+        return null; // Test users have full access
     }
   }
 
