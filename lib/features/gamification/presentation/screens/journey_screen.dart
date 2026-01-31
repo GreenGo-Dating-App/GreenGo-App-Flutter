@@ -99,16 +99,19 @@ class _JourneyScreenState extends State<JourneyScreen>
         child: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
             SliverAppBar(
-              expandedHeight: 280,
+              expandedHeight: 320,
+              collapsedHeight: 60,
               floating: false,
               pinned: true,
-              backgroundColor: Colors.transparent,
+              backgroundColor: Colors.black,
+              surfaceTintColor: Colors.transparent,
               iconTheme: const IconThemeData(color: AppColors.textPrimary),
               flexibleSpace: FlexibleSpaceBar(
+                collapseMode: CollapseMode.pin,
                 background: _buildGlassHeader(overallProgress, completedIds.length),
               ),
               bottom: PreferredSize(
-                preferredSize: const Size.fromHeight(56),
+                preferredSize: const Size.fromHeight(52),
                 child: _buildGlassTabBar(),
               ),
             ),
@@ -158,19 +161,23 @@ class _JourneyScreenState extends State<JourneyScreen>
               unselectedLabelColor: AppColors.textSecondary,
               labelStyle: const TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 13,
+                fontSize: 11,
               ),
               padding: const EdgeInsets.all(4),
+              tabAlignment: TabAlignment.start,
               tabs: JourneyCategory.values.map((category) {
                 return Tab(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(_getCategoryEmoji(category)),
-                        const SizedBox(width: 4),
-                        Text(category.displayName),
+                        Text(
+                          _getCategoryEmoji(category),
+                          style: const TextStyle(fontSize: 12),
+                        ),
+                        const SizedBox(width: 2),
+                        Text(_getShortCategoryName(category)),
                       ],
                     ),
                   ),
@@ -198,20 +205,35 @@ class _JourneyScreenState extends State<JourneyScreen>
     }
   }
 
+  String _getShortCategoryName(JourneyCategory category) {
+    switch (category) {
+      case JourneyCategory.gettingStarted:
+        return 'Start';
+      case JourneyCategory.socializing:
+        return 'Social';
+      case JourneyCategory.premium:
+        return 'VIP';
+      case JourneyCategory.mastery:
+        return 'Master';
+      case JourneyCategory.special:
+        return 'Special';
+    }
+  }
+
   Widget _buildGlassHeader(double progress, int completedCount) {
     final totalMilestones = JourneyMilestones.all.length;
 
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 50, 20, 70),
+        padding: const EdgeInsets.fromLTRB(20, 8, 20, 60),
         child: Column(
           children: [
             // Animated journey icon
             ScaleTransition(
               scale: _headerScaleAnimation,
               child: Container(
-                width: 90,
-                height: 90,
+                width: 70,
+                height: 70,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: const LinearGradient(
@@ -222,8 +244,8 @@ class _JourneyScreenState extends State<JourneyScreen>
                   boxShadow: [
                     BoxShadow(
                       color: AppColors.richGold.withValues(alpha: 0.5),
-                      blurRadius: 30,
-                      spreadRadius: 5,
+                      blurRadius: 20,
+                      spreadRadius: 3,
                     ),
                   ],
                 ),
@@ -232,8 +254,8 @@ class _JourneyScreenState extends State<JourneyScreen>
                   children: [
                     // Outer ring
                     Container(
-                      width: 85,
-                      height: 85,
+                      width: 65,
+                      height: 65,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -244,20 +266,20 @@ class _JourneyScreenState extends State<JourneyScreen>
                     ),
                     const Text(
                       '🗺️',
-                      style: TextStyle(fontSize: 40),
+                      style: TextStyle(fontSize: 32),
                     ),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 12),
 
             // Title
             const Text(
               'Your Journey',
               style: TextStyle(
                 color: AppColors.textPrimary,
-                fontSize: 28,
+                fontSize: 24,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 0.5,
               ),
@@ -267,18 +289,18 @@ class _JourneyScreenState extends State<JourneyScreen>
               '$completedCount of $totalMilestones milestones completed',
               style: TextStyle(
                 color: AppColors.textSecondary.withValues(alpha: 0.8),
-                fontSize: 14,
+                fontSize: 13,
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 12),
 
             // Glass progress card
             ClipRRect(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(12),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                 child: Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: Colors.black.withValues(alpha: 0.3),
                     borderRadius: BorderRadius.circular(16),
