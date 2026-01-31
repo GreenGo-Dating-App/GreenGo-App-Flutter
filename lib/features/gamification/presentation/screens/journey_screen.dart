@@ -154,7 +154,7 @@ class _JourneyScreenState extends State<JourneyScreen>
                 ),
                 borderRadius: BorderRadius.circular(12),
               ),
-              labelColor: Colors.black,
+              labelColor: Colors.white,
               unselectedLabelColor: AppColors.textSecondary,
               labelStyle: const TextStyle(
                 fontWeight: FontWeight.bold,
@@ -896,7 +896,10 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ...widget.milestone.rewards.take(3).map(
+          // Only show XP and Coins rewards
+          ...widget.milestone.rewards
+              .where((r) => r.type == 'xp' || r.type == 'coins')
+              .map(
                 (reward) => Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   child: _GlassRewardChip(
@@ -905,24 +908,6 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
                   ),
                 ),
               ),
-          if (widget.milestone.rewards.length > 3)
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.3),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(
-                '+${widget.milestone.rewards.length - 3}',
-                style: TextStyle(
-                  color: widget.isLocked
-                      ? AppColors.textTertiary
-                      : AppColors.textSecondary,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
         ],
       ),
     );
@@ -1220,7 +1205,7 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
                     const SizedBox(height: 24),
                   ],
 
-                  // Rewards section
+                  // Rewards section (only XP and Coins)
                   const Text(
                     '🎁 Rewards',
                     style: TextStyle(
@@ -1234,7 +1219,9 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
                     spacing: 10,
                     runSpacing: 10,
                     alignment: WrapAlignment.center,
-                    children: milestone.rewards.map((reward) {
+                    children: milestone.rewards
+                        .where((r) => r.type == 'xp' || r.type == 'coins')
+                        .map((reward) {
                       return ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: BackdropFilter(
