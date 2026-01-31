@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../profile/domain/entities/profile.dart';
+import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
 import '../bloc/matches_state.dart';
 import '../widgets/match_card_widget.dart';
-import 'profile_detail_screen.dart';
+import 'match_detail_screen.dart';
 
 /// Matches Screen
 ///
-/// Displays user's matches
+/// Displays user's matches with search and filter capabilities
 class MatchesScreen extends StatelessWidget {
   final String userId;
 
@@ -29,10 +32,58 @@ class MatchesScreen extends StatelessWidget {
   }
 }
 
-class _MatchesScreenContent extends StatelessWidget {
+class _MatchesScreenContent extends StatefulWidget {
   final String userId;
 
   const _MatchesScreenContent({required this.userId});
+
+  @override
+  State<_MatchesScreenContent> createState() => _MatchesScreenContentState();
+}
+
+class _MatchesScreenContentState extends State<_MatchesScreenContent> {
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+  String _filterType = 'all'; // all, new, messaged
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  /// Filter matches based on search query and filter type
+  List<Match> _filterMatches(
+    List<Match> matches,
+    Map<String, Profile> profiles,
+    String userId,
+  ) {
+    return matches.where((match) {
+      final profile = profiles[match.getOtherUserId(userId)];
+
+      // Apply search filter
+      if (_searchQuery.isNotEmpty && profile != null) {
+        final query = _searchQuery.toLowerCase();
+        final nameMatches =
+            profile.displayName.toLowerCase().contains(query);
+        final nicknameMatches =
+            profile.nickname?.toLowerCase().contains(query) ?? false;
+        if (!nameMatches && !nicknameMatches) {
+          return false;
+        }
+      }
+
+      // Apply type filter
+      switch (_filterType) {
+        case 'new':
+          return match.isNewMatch(userId);
+        case 'messaged':
+          return match.lastMessage != null;
+        default:
+          return true;
+      }
+    }).toList();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +122,7 @@ class _MatchesScreenContent extends StatelessWidget {
                     onPressed: () {
                       context
                           .read<MatchesBloc>()
-                          .add(MatchesLoadRequested(userId: userId));
+                          .add(MatchesLoadRequested(userId: widget.userId));
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
@@ -121,37 +172,87 @@ class _MatchesScreenContent extends StatelessWidget {
           }
 
           if (state is MatchesLoaded) {
-            final newMatches = state.getNewMatches(userId);
             final allMatches = state.matches;
+            final filteredMatches = _filterMatches(
+              allMatches,
+              state.profiles,
+              widget.userId,
+            );
 
             return RefreshIndicator(
               onRefresh: () async {
                 context
                     .read<MatchesBloc>()
-                    .add(MatchesRefreshRequested(userId));
+                    .add(MatchesRefreshRequested(widget.userId));
               },
               color: AppColors.richGold,
               child: CustomScrollView(
                 slivers: [
-                  // New matches section
-                  if (newMatches.isNotEmpty) ...[
+                  // Search and Filter Bar
+                  SliverToBoxAdapter(
+                    child: _buildSearchAndFilterBar(allMatches.length),
+                  ),
+
+                  // Results count
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Text(
+                        _searchQuery.isNotEmpty || _filterType != 'all'
+                            ? '${filteredMatches.length} of ${allMatches.length} matches'
+                            : '${allMatches.length} matches',
+                        style: const TextStyle(
+                          color: AppColors.textTertiary,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  // Empty filter results
+                  if (filteredMatches.isEmpty && allMatches.isNotEmpty)
                     SliverToBoxAdapter(
                       child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Row(
+                        padding: const EdgeInsets.all(40),
+                        child: Column(
                           children: [
                             const Icon(
-                              Icons.auto_awesome,
-                              color: AppColors.richGold,
-                              size: 20,
+                              Icons.search_off,
+                              size: 48,
+                              color: AppColors.textTertiary,
                             ),
-                            const SizedBox(width: 8),
+                            const SizedBox(height: 16),
+                            const Text(
+                              'No matches found',
+                              style: TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
                             Text(
-                              'New Matches (${newMatches.length})',
-                              style: const TextStyle(
-                                color: AppColors.richGold,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                              'Try a different search or filter',
+                              style: TextStyle(
+                                color: AppColors.textTertiary.withOpacity(0.7),
+                                fontSize: 14,
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            TextButton(
+                              onPressed: () {
+                                setState(() {
+                                  _searchQuery = '';
+                                  _searchController.clear();
+                                  _filterType = 'all';
+                                });
+                              },
+                              child: const Text(
+                                'Clear Filters',
+                                style: TextStyle(color: AppColors.richGold),
                               ),
                             ),
                           ],
@@ -159,35 +260,40 @@ class _MatchesScreenContent extends StatelessWidget {
                       ),
                     ),
 
+                  // Matches list
+                  if (filteredMatches.isNotEmpty)
                     SliverPadding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       sliver: SliverList(
                         delegate: SliverChildBuilderDelegate(
                           (context, index) {
-                            final match = newMatches[index];
-                            final profile = state.profiles[match.getOtherUserId(userId)];
+                            final match = filteredMatches[index];
+                            final profile =
+                                state.profiles[match.getOtherUserId(widget.userId)];
 
                             return MatchCardWidget(
                               match: match,
                               profile: profile,
-                              currentUserId: userId,
+                              currentUserId: widget.userId,
                               onTap: () {
-                                // Mark as seen
-                                context.read<MatchesBloc>().add(
-                                      MatchMarkedAsSeen(
-                                        matchId: match.matchId,
-                                        userId: userId,
-                                      ),
-                                    );
+                                // Mark as seen if not seen
+                                if (match.isNewMatch(widget.userId)) {
+                                  context.read<MatchesBloc>().add(
+                                        MatchMarkedAsSeen(
+                                          matchId: match.matchId,
+                                          userId: widget.userId,
+                                        ),
+                                      );
+                                }
 
-                                // Navigate to match profile detail
+                                // Navigate to match detail screen
                                 if (profile != null) {
                                   Navigator.of(context).push(
                                     MaterialPageRoute(
-                                      builder: (context) => ProfileDetailScreen(
-                                        profile: profile,
-                                        currentUserId: userId,
+                                      builder: (context) => MatchDetailScreen(
                                         match: match,
+                                        profile: profile,
+                                        currentUserId: widget.userId,
                                       ),
                                     ),
                                   );
@@ -195,76 +301,10 @@ class _MatchesScreenContent extends StatelessWidget {
                               },
                             );
                           },
-                          childCount: newMatches.length,
+                          childCount: filteredMatches.length,
                         ),
                       ),
                     ),
-
-                    const SliverToBoxAdapter(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16),
-                        child: Divider(color: AppColors.divider),
-                      ),
-                    ),
-                  ],
-
-                  // All matches section
-                  SliverToBoxAdapter(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Text(
-                        'All Matches (${allMatches.length})',
-                        style: const TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  SliverPadding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    sliver: SliverList(
-                      delegate: SliverChildBuilderDelegate(
-                        (context, index) {
-                          final match = allMatches[index];
-                          final profile = state.profiles[match.getOtherUserId(userId)];
-
-                          return MatchCardWidget(
-                            match: match,
-                            profile: profile,
-                            currentUserId: userId,
-                            onTap: () {
-                              // Mark as seen if not seen
-                              if (match.isNewMatch(userId)) {
-                                context.read<MatchesBloc>().add(
-                                      MatchMarkedAsSeen(
-                                        matchId: match.matchId,
-                                        userId: userId,
-                                      ),
-                                    );
-                              }
-
-                              // Navigate to match profile detail
-                              if (profile != null) {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (context) => ProfileDetailScreen(
-                                      profile: profile,
-                                      currentUserId: userId,
-                                      match: match,
-                                    ),
-                                  ),
-                                );
-                              }
-                            },
-                          );
-                        },
-                        childCount: allMatches.length,
-                      ),
-                    ),
-                  ),
 
                   const SliverToBoxAdapter(
                     child: SizedBox(height: 24),
@@ -276,6 +316,104 @@ class _MatchesScreenContent extends StatelessWidget {
 
           return const SizedBox.shrink();
         },
+      ),
+    );
+  }
+
+  Widget _buildSearchAndFilterBar(int totalMatches) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        children: [
+          // Search bar
+          TextField(
+            controller: _searchController,
+            style: const TextStyle(color: AppColors.textPrimary),
+            decoration: InputDecoration(
+              hintText: 'Search by name or @nickname',
+              hintStyle: TextStyle(
+                color: AppColors.textTertiary.withOpacity(0.6),
+              ),
+              prefixIcon: const Icon(
+                Icons.search,
+                color: AppColors.textTertiary,
+              ),
+              suffixIcon: _searchQuery.isNotEmpty
+                  ? IconButton(
+                      icon: const Icon(Icons.clear, color: AppColors.textTertiary),
+                      onPressed: () {
+                        _searchController.clear();
+                        setState(() {
+                          _searchQuery = '';
+                        });
+                      },
+                    )
+                  : null,
+              filled: true,
+              fillColor: AppColors.backgroundCard,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                borderSide: BorderSide.none,
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                borderSide: const BorderSide(color: AppColors.richGold),
+              ),
+              contentPadding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 12,
+              ),
+            ),
+            onChanged: (value) {
+              setState(() {
+                _searchQuery = value;
+              });
+            },
+          ),
+
+          const SizedBox(height: 12),
+
+          // Filter chips
+          Row(
+            children: [
+              _buildFilterChip('All', 'all'),
+              const SizedBox(width: 8),
+              _buildFilterChip('New', 'new'),
+              const SizedBox(width: 8),
+              _buildFilterChip('Messaged', 'messaged'),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildFilterChip(String label, String value) {
+    final isSelected = _filterType == value;
+
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _filterType = value;
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        decoration: BoxDecoration(
+          color: isSelected ? AppColors.richGold : AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: isSelected ? AppColors.richGold : AppColors.divider,
+          ),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: isSelected ? Colors.white : AppColors.textSecondary,
+            fontSize: 13,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+          ),
+        ),
       ),
     );
   }
