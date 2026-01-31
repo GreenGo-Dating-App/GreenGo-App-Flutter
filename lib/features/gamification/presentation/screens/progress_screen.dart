@@ -66,18 +66,11 @@ class _ProgressScreenState extends State<ProgressScreen>
             elevation: 0,
             flexibleSpace: FlexibleSpaceBar(
               titlePadding: const EdgeInsets.only(bottom: 60),
-              title: ShaderMask(
-                shaderCallback: (bounds) => const LinearGradient(
-                  colors: [Color(0xFFFFD700), AppColors.richGold, Color(0xFFE6C06E)],
-                ).createShader(bounds),
-                child: Text(
-                  l10n.progressTitle,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    letterSpacing: 0.5,
-                  ),
+              title: Text(
+                l10n.progressTitle,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               centerTitle: true,
