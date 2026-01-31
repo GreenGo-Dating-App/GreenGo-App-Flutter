@@ -25,6 +25,10 @@ import 'edit_bio_screen.dart';
 import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
 import 'edit_social_links_screen.dart';
+import 'edit_nickname_screen.dart';
+import 'onboarding_screen.dart' as onboarding;
+// Progress screen moved to bottom navigation - import removed
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 // Gamification/Coins screens disabled due to compile errors
 // import '../../../gamification/presentation/screens/achievements_screen.dart';
 // import '../../../gamification/presentation/screens/journey_screen.dart';
@@ -116,12 +120,35 @@ class EditProfileScreen extends StatelessWidget {
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
                 children: [
+                  // View My Profile Section (top)
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 24),
+                    child: EditSectionCard(
+                      title: 'View My Profile',
+                      subtitle: 'See how others view your profile',
+                      icon: Icons.visibility,
+                      onTap: () => _navigateToViewProfile(context, currentProfile),
+                    ),
+                  ),
+
                   // Photos Section
                   EditSectionCard(
                     title: 'Photos',
                     subtitle: '${currentProfile.photoUrls.length}/6 photos',
                     icon: Icons.photo_library,
                     onTap: () => _navigateToPhotoManagement(context, currentProfile),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Nickname Section
+                  EditSectionCard(
+                    title: 'Nickname',
+                    subtitle: currentProfile.nickname != null
+                        ? '@${currentProfile.nickname}'
+                        : 'Set your unique nickname',
+                    icon: Icons.alternate_email,
+                    onTap: () => _navigateToEditNickname(context, currentProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -204,7 +231,7 @@ class EditProfileScreen extends StatelessWidget {
                     },
                   ),
 
-                  // Gamification & Rewards Section - DISABLED: compile errors in gamification/coins features
+                  // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
                   // TODO: Re-enable when gamification/coins features are fixed
                   // const SizedBox(height: 32),
                   // const Divider(color: AppColors.divider),
@@ -291,6 +318,20 @@ class EditProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
+                  // Restart App Wizard Button
+                  OutlinedButton.icon(
+                    onPressed: () => _showRestartWizardDialog(context, currentProfile),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: AppColors.richGold,
+                      side: const BorderSide(color: AppColors.richGold),
+                      minimumSize: const Size(double.infinity, 50),
+                    ),
+                    icon: const Icon(Icons.refresh),
+                    label: const Text('Restart App Wizard'),
+                  ),
+
+                  const SizedBox(height: 16),
+
                   // Log Out Button
                   ElevatedButton.icon(
                     onPressed: () => _showLogoutDialog(context),
@@ -311,6 +352,32 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _navigateToViewProfile(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ProfileDetailScreen(
+          profile: currentProfile,
+          currentUserId: currentProfile.userId,
+          // No match and no onSwipe - this is self-view mode
+        ),
+      ),
+    );
+  }
+
+  Future<void> _navigateToEditNickname(BuildContext context, Profile currentProfile) async {
+    final result = await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<ProfileBloc>(),
+          child: EditNicknameScreen(profile: currentProfile),
+        ),
+      ),
+    );
+    if (result != null && context.mounted) {
+      // Profile was updated
+    }
   }
 
   Future<void> _navigateToPhotoManagement(BuildContext context, Profile currentProfile) async {
@@ -437,7 +504,7 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  // Gamification & Coins Navigation Methods - DISABLED: compile errors in features
+  // Gamification & Coins Navigation Methods - Moved to Progress tab in bottom navigation
   // void _navigateToCoinShop(BuildContext context, Profile currentProfile) { ... }
   // void _navigateToTransactionHistory(BuildContext context, Profile currentProfile) { ... }
   // void _navigateToAchievements(BuildContext context, Profile currentProfile) { ... }
@@ -580,6 +647,47 @@ class EditProfileScreen extends StatelessWidget {
         );
       }
     });
+  }
+
+  void _showRestartWizardDialog(BuildContext context, Profile currentProfile) {
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Restart App Wizard',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: const Text(
+          'This will restart the onboarding wizard. You can update your profile information step by step. Your current data will be preserved.',
+          style: TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(dialogContext).pop();
+              _startAppWizard(context, currentProfile);
+            },
+            child: const Text(
+              'Restart Wizard',
+              style: TextStyle(color: AppColors.richGold),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _startAppWizard(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (context) => onboarding.OnboardingScreen(userId: currentProfile.userId),
+      ),
+    );
   }
 
   void _showLogoutDialog(BuildContext context) {
