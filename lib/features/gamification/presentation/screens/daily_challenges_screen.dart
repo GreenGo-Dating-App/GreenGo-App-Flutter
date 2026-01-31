@@ -271,7 +271,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   const SizedBox(width: 12),
                   Expanded(
                     child: _buildRewardCard(
-                      '💰',
+                      '🪙',
                       '${data.totalCoinsAvailable}',
                       'Coins Available',
                       const Color(0xFFFFD700),
@@ -702,7 +702,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       const SizedBox(width: 6),
-                                      const Text('💰', style: TextStyle(fontSize: 12)),
+                                      const Text('🪙', style: TextStyle(fontSize: 12)),
                                       const SizedBox(width: 2),
                                       Text(
                                         '+${reward.amount}',
