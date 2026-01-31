@@ -121,8 +121,8 @@ class _ProgressScreenState extends State<ProgressScreen>
       ),
       child: TabBar(
         controller: _tabController,
-        labelColor: Colors.black,
-        unselectedLabelColor: Colors.white70,
+        labelColor: Colors.white,
+        unselectedLabelColor: Colors.white60,
         indicator: BoxDecoration(
           gradient: const LinearGradient(
             colors: [Color(0xFFFFD700), AppColors.richGold],
@@ -133,7 +133,7 @@ class _ProgressScreenState extends State<ProgressScreen>
         dividerColor: Colors.transparent,
         labelStyle: const TextStyle(
           fontSize: 12,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.bold,
         ),
         unselectedLabelStyle: const TextStyle(
           fontSize: 12,
@@ -558,13 +558,13 @@ class _ProgressScreenState extends State<ProgressScreen>
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                accentColor.withOpacity(0.15),
-                accentColor.withOpacity(0.05),
+                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.2),
               ],
             ),
             border: Border.all(
-              color: accentColor.withOpacity(0.2),
-              width: 1,
+              color: accentColor.withOpacity(0.4),
+              width: 1.5,
             ),
           ),
           child: Column(
@@ -573,18 +573,19 @@ class _ProgressScreenState extends State<ProgressScreen>
               const SizedBox(height: 8),
               Text(
                 value,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: accentColor,
                 ),
               ),
               const SizedBox(height: 4),
               Text(
                 label,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 11,
-                  color: Colors.white.withOpacity(0.6),
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
               ),

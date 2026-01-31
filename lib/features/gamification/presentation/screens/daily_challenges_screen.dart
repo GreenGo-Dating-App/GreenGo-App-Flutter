@@ -314,9 +314,10 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: color.withOpacity(0.1),
+        color: Colors.black.withOpacity(0.3),
         border: Border.all(
-          color: color.withOpacity(0.2),
+          color: color.withOpacity(0.4),
+          width: 1.5,
         ),
       ),
       child: Row(
@@ -328,17 +329,18 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
             children: [
               Text(
                 value,
-                style: const TextStyle(
-                  color: Colors.white,
+                style: TextStyle(
+                  color: color,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
                 label,
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.6),
+                style: const TextStyle(
+                  color: Colors.white,
                   fontSize: 11,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],
@@ -414,8 +416,8 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
       ),
       child: TabBar(
         controller: _tabController,
-        labelColor: Colors.black,
-        unselectedLabelColor: Colors.white70,
+        labelColor: Colors.white,
+        unselectedLabelColor: Colors.white60,
         indicator: BoxDecoration(
           gradient: const LinearGradient(
             colors: [Color(0xFFFFD700), AppColors.richGold],
@@ -426,7 +428,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
         dividerColor: Colors.transparent,
         labelStyle: const TextStyle(
           fontSize: 14,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.bold,
         ),
         tabs: const [
           Tab(
