@@ -311,7 +311,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
 
   Widget _buildRewardCard(String emoji, String value, String label, Color color) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         color: Colors.black.withOpacity(0.3),
@@ -322,28 +322,32 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
       ),
       child: Row(
         children: [
-          Text(emoji, style: const TextStyle(fontSize: 28)),
-          const SizedBox(width: 12),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                value,
-                style: TextStyle(
-                  color: color,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+          Text(emoji, style: const TextStyle(fontSize: 24)),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  value,
+                  style: TextStyle(
+                    color: color,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
-              ),
-              Text(
-                label,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w500,
+                Text(
+                  label,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
@@ -655,11 +659,11 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                     ),
                     const SizedBox(width: 16),
 
-                    // Rewards
+                    // Rewards (only XP and Coins)
                     Container(
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 8,
+                        horizontal: 10,
+                        vertical: 6,
                       ),
                       decoration: BoxDecoration(
                         color: AppColors.richGold.withOpacity(0.2),
@@ -671,29 +675,45 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Text('⭐', style: TextStyle(fontSize: 14)),
-                          const SizedBox(width: 4),
-                          Text(
-                            '+${challenge.rewardXP}',
-                            style: const TextStyle(
-                              color: AppColors.richGold,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          if (challenge.rewardCoins > 0) ...[
-                            const SizedBox(width: 8),
-                            const Text('💰', style: TextStyle(fontSize: 14)),
-                            const SizedBox(width: 4),
-                            Text(
-                              '+${challenge.rewardCoins}',
-                              style: const TextStyle(
-                                color: AppColors.richGold,
-                                fontSize: 13,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
+                          // XP reward
+                          ...challenge.rewards
+                              .where((r) => r.type == 'xp')
+                              .take(1)
+                              .map((reward) => Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Text('⭐', style: TextStyle(fontSize: 12)),
+                                      const SizedBox(width: 2),
+                                      Text(
+                                        '+${reward.amount}',
+                                        style: const TextStyle(
+                                          color: AppColors.richGold,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ],
+                                  )),
+                          // Coins reward
+                          ...challenge.rewards
+                              .where((r) => r.type == 'coins')
+                              .take(1)
+                              .map((reward) => Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const SizedBox(width: 6),
+                                      const Text('💰', style: TextStyle(fontSize: 12)),
+                                      const SizedBox(width: 2),
+                                      Text(
+                                        '+${reward.amount}',
+                                        style: const TextStyle(
+                                          color: AppColors.richGold,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ],
+                                  )),
                         ],
                       ),
                     ),

@@ -59,12 +59,13 @@ class _ProgressScreenState extends State<ProgressScreen>
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           SliverAppBar(
-            expandedHeight: 120,
+            expandedHeight: 160,
             floating: false,
             pinned: true,
             backgroundColor: Colors.black,
             elevation: 0,
             flexibleSpace: FlexibleSpaceBar(
+              titlePadding: const EdgeInsets.only(bottom: 60),
               title: ShaderMask(
                 shaderCallback: (bounds) => const LinearGradient(
                   colors: [Color(0xFFFFD700), AppColors.richGold, Color(0xFFE6C06E)],
@@ -72,7 +73,7 @@ class _ProgressScreenState extends State<ProgressScreen>
                 child: Text(
                   l10n.progressTitle,
                   style: const TextStyle(
-                    fontSize: 22,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     letterSpacing: 0.5,
@@ -597,7 +598,8 @@ class _ProgressScreenState extends State<ProgressScreen>
   }
 
   Widget _buildStreakCard(BuildContext context, GamificationState state) {
-    final streak = state.userLevel?.streak ?? 0;
+    // Real streak data - 0 if no data available
+    final streak = 0; // TODO: Add streak field to UserLevel entity when backend supports it
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
