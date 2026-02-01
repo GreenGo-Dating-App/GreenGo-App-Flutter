@@ -12,6 +12,7 @@ import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/message.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
@@ -578,16 +579,23 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => di.sl<ChatBloc>()
-        ..add(ChatConversationLoaded(
-          matchId: widget.matchId,
-          currentUserId: widget.currentUserId,
-          otherUserId: widget.otherUserId,
-        )),
-      child: Scaffold(
-        backgroundColor: AppColors.backgroundDark,
-        appBar: _buildAppBar(),
+    return PopScope(
+      canPop: Navigator.of(context).canPop(),
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop) {
+          SafeNavigation.navigateToHome(context, widget.currentUserId);
+        }
+      },
+      child: BlocProvider(
+        create: (context) => di.sl<ChatBloc>()
+          ..add(ChatConversationLoaded(
+            matchId: widget.matchId,
+            currentUserId: widget.currentUserId,
+            otherUserId: widget.otherUserId,
+          )),
+        child: Scaffold(
+          backgroundColor: AppColors.backgroundDark,
+          appBar: _buildAppBar(),
         body: Column(
           children: [
             // Messages list
@@ -781,6 +789,7 @@ class _ChatScreenState extends State<ChatScreen> {
             _buildInputField(context),
           ],
         ),
+        ),
       ),
     );
   }
@@ -791,7 +800,7 @@ class _ChatScreenState extends State<ChatScreen> {
       elevation: 1,
       leading: IconButton(
         icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-        onPressed: () => Navigator.of(context).pop(),
+        onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
       ),
       title: Row(
         children: [

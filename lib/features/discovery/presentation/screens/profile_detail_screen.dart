@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../domain/entities/match.dart';
@@ -46,14 +47,21 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     final hasPhotos = widget.profile.photoUrls.isNotEmpty;
     final isMatched = widget.match != null;
 
-    return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+    return PopScope(
+      canPop: Navigator.of(context).canPop(),
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop) {
+          SafeNavigation.navigateToHome(context, widget.currentUserId);
+        }
+      },
+      child: Scaffold(
+        backgroundColor: AppColors.backgroundDark,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
           icon: Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
@@ -313,6 +321,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               ),
             ),
         ],
+      ),
       ),
     );
   }

@@ -1,13 +1,13 @@
 import 'dart:io';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step2PhotoUploadScreen extends StatefulWidget {
@@ -40,6 +40,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
         SnackBar(
           content: Text('Failed to pick image: ${e.toString()}'),
           backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
     }
@@ -48,30 +50,134 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
   void _showImageSourceDialog() {
     showModalBottomSheet(
       context: context,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.camera_alt, color: AppColors.richGold),
-              title: const Text('Take Photo', style: TextStyle(color: AppColors.textPrimary)),
-              onTap: () {
-                Navigator.pop(context);
-                _pickImage(ImageSource.camera);
-              },
+      backgroundColor: Colors.transparent,
+      builder: (context) => ClipRRect(
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.white.withOpacity(0.15),
+                  Colors.white.withOpacity(0.05),
+                ],
+              ),
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+              border: Border.all(
+                color: AppColors.richGold.withOpacity(0.3),
+                width: 1,
+              ),
             ),
-            ListTile(
-              leading: const Icon(Icons.photo_library, color: AppColors.richGold),
-              title: const Text('Choose from Gallery', style: TextStyle(color: AppColors.textPrimary)),
-              onTap: () {
-                Navigator.pop(context);
-                _pickImage(ImageSource.gallery);
-              },
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Handle bar
+                Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                const SizedBox(height: 24),
+
+                Text(
+                  'Add Photo',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 20),
+
+                _buildSourceOption(
+                  icon: Icons.camera_alt_rounded,
+                  label: 'Take Photo',
+                  subtitle: 'Use your camera',
+                  onTap: () {
+                    Navigator.pop(context);
+                    _pickImage(ImageSource.camera);
+                  },
+                ),
+                const SizedBox(height: 12),
+                _buildSourceOption(
+                  icon: Icons.photo_library_rounded,
+                  label: 'Choose from Gallery',
+                  subtitle: 'Select from your photos',
+                  onTap: () {
+                    Navigator.pop(context);
+                    _pickImage(ImageSource.gallery);
+                  },
+                ),
+                const SizedBox(height: 24),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSourceOption({
+    required IconData icon,
+    required String label,
+    required String subtitle,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.05),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: Colors.white.withOpacity(0.1),
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: AppColors.richGold.withOpacity(0.15),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(icon, color: AppColors.richGold, size: 24),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    label,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.5),
+                      fontSize: 13,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(
+              Icons.chevron_right,
+              color: Colors.white.withOpacity(0.3),
             ),
           ],
         ),
@@ -82,9 +188,11 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
   void _handleContinue(List<String> photoUrls) {
     if (photoUrls.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please upload at least one photo'),
+        SnackBar(
+          content: const Text('Please upload at least one photo'),
           backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
       return;
@@ -106,6 +214,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
             SnackBar(
               content: Text(state.message),
               backgroundColor: AppColors.errorRed,
+              behavior: SnackBarBehavior.floating,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             ),
           );
         }
@@ -117,118 +227,111 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 
         final isUploading = state is OnboardingPhotoUploading;
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: _handleBack,
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        return LuxuryOnboardingLayout(
+          title: 'Show yourself',
+          subtitle: 'Add photos that represent the real you',
+          onBack: _handleBack,
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 24),
-                  Text(
-                    'Add your photos',
-                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Upload at least one clear photo of yourself',
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
-                  ),
-                  const SizedBox(height: 40),
+          child: Column(
+            children: [
+              // Photo Grid
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: GridView.builder(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      childAspectRatio: 0.75,
+                    ),
+                    itemCount: 6,
+                    itemBuilder: (context, index) {
+                      final hasPhoto = index < state.photoUrls.length;
 
-                  // Photo Grid
-                  Expanded(
-                    child: GridView.builder(
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        crossAxisSpacing: 12,
-                        mainAxisSpacing: 12,
-                        childAspectRatio: 0.75,
-                      ),
-                      itemCount: 6,
-                      itemBuilder: (context, index) {
-                        final hasPhoto = index < state.photoUrls.length;
-
-                        if (hasPhoto) {
-                          return _PhotoCard(
-                            photoUrl: state.photoUrls[index],
-                            onRemove: () {
-                              final updatedPhotos = List<String>.from(state.photoUrls)
-                                ..removeAt(index);
-                              context.read<OnboardingBloc>().add(
-                                    OnboardingPhotosUpdated(photoUrls: updatedPhotos),
-                                  );
-                            },
-                          );
-                        }
-
-                        return _AddPhotoCard(
-                          onTap: isUploading ? null : _showImageSourceDialog,
-                          isFirst: index == 0,
+                      if (hasPhoto) {
+                        return _PhotoCard(
+                          photoUrl: state.photoUrls[index],
+                          index: index,
+                          onRemove: () {
+                            final updatedPhotos = List<String>.from(state.photoUrls)
+                              ..removeAt(index);
+                            context.read<OnboardingBloc>().add(
+                                  OnboardingPhotosUpdated(photoUrls: updatedPhotos),
+                                );
+                          },
                         );
-                      },
-                    ),
+                      }
+
+                      return _AddPhotoCard(
+                        onTap: isUploading ? null : _showImageSourceDialog,
+                        isFirst: index == 0 && state.photoUrls.isEmpty,
+                      );
+                    },
                   ),
-
-                  const SizedBox(height: 16),
-
-                  // Info Box
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.info_outline,
-                          color: AppColors.richGold,
-                          size: 20,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            'Photos are verified using AI to ensure authenticity',
-                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                  color: AppColors.textSecondary,
-                                ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(height: 24),
-
-                  // Continue Button
-                  OnboardingButton(
-                    text: 'Continue',
-                    onPressed: () => _handleContinue(state.photoUrls),
-                    isLoading: isUploading,
-                  ),
-                ],
+                ),
               ),
-            ),
+
+              // Info Box
+              LuxuryGlassCard(
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppColors.richGold.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Icon(
+                        Icons.verified_user_rounded,
+                        color: AppColors.richGold,
+                        size: 24,
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'AI Verified Photos',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            'Your photos are verified using AI to ensure authenticity',
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.5),
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 24),
+
+              // Continue Button
+              LuxuryButton(
+                text: 'Continue',
+                onPressed: () => _handleContinue(state.photoUrls),
+                isLoading: isUploading,
+              ),
+
+              const SizedBox(height: 32),
+            ],
           ),
         );
       },
@@ -238,10 +341,12 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 
 class _PhotoCard extends StatelessWidget {
   final String photoUrl;
+  final int index;
   final VoidCallback onRemove;
 
   const _PhotoCard({
     required this.photoUrl,
+    required this.index,
     required this.onRemove,
   });
 
@@ -251,29 +356,72 @@ class _PhotoCard extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-            border: Border.all(color: AppColors.richGold, width: 2),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: index == 0
+                  ? AppColors.richGold
+                  : Colors.white.withOpacity(0.1),
+              width: index == 0 ? 2 : 1,
+            ),
+            boxShadow: index == 0
+                ? [
+                    BoxShadow(
+                      color: AppColors.richGold.withOpacity(0.3),
+                      blurRadius: 10,
+                      offset: const Offset(0, 4),
+                    ),
+                  ]
+                : null,
             image: DecorationImage(
               image: NetworkImage(photoUrl),
               fit: BoxFit.cover,
             ),
           ),
         ),
+
+        // Main photo badge
+        if (index == 0)
+          Positioned(
+            bottom: 8,
+            left: 8,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFFFFD700), AppColors.richGold],
+                ),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Text(
+                'MAIN',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+
+        // Remove button
         Positioned(
-          top: 4,
-          right: 4,
+          top: 6,
+          right: 6,
           child: GestureDetector(
             onTap: onRemove,
             child: Container(
-              padding: const EdgeInsets.all(4),
-              decoration: const BoxDecoration(
-                color: AppColors.errorRed,
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.7),
                 shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.white.withOpacity(0.2),
+                ),
               ),
               child: const Icon(
                 Icons.close,
                 color: Colors.white,
-                size: 16,
+                size: 14,
               ),
             ),
           ),
@@ -296,32 +444,57 @@ class _AddPhotoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-          color: AppColors.backgroundCard,
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderRadius: BorderRadius.circular(16),
+          gradient: isFirst
+              ? LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    AppColors.richGold.withOpacity(0.2),
+                    AppColors.richGold.withOpacity(0.05),
+                  ],
+                )
+              : null,
+          color: isFirst ? null : Colors.white.withOpacity(0.03),
           border: Border.all(
-            color: isFirst ? AppColors.richGold : AppColors.divider,
+            color: isFirst
+                ? AppColors.richGold
+                : Colors.white.withOpacity(0.1),
             width: isFirst ? 2 : 1,
-            style: BorderStyle.solid,
+            style: isFirst ? BorderStyle.solid : BorderStyle.solid,
           ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.add_photo_alternate_outlined,
-              color: isFirst ? AppColors.richGold : AppColors.textTertiary,
-              size: 40,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              isFirst ? 'Add Photo' : '',
-              style: TextStyle(
-                color: isFirst ? AppColors.richGold : AppColors.textTertiary,
-                fontSize: 12,
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: isFirst
+                    ? AppColors.richGold.withOpacity(0.2)
+                    : Colors.white.withOpacity(0.05),
+              ),
+              child: Icon(
+                Icons.add_photo_alternate_rounded,
+                color: isFirst ? AppColors.richGold : Colors.white.withOpacity(0.3),
+                size: 28,
               ),
             ),
+            if (isFirst) ...[
+              const SizedBox(height: 8),
+              Text(
+                'Add Photo',
+                style: TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
           ],
         ),
       ),

@@ -1,0 +1,2448 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations_de.dart';
+import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_pt.dart';
+
+// ignore_for_file: type=lint
+
+/// Callers can lookup localized strings with an instance of AppLocalizations
+/// returned by `AppLocalizations.of(context)`.
+///
+/// Applications need to include `AppLocalizations.delegate()` in their app's
+/// `localizationDelegates` list, and the locales they support in the app's
+/// `supportedLocales` list. For example:
+///
+/// ```dart
+/// import 'generated/app_localizations.dart';
+///
+/// return MaterialApp(
+///   localizationsDelegates: AppLocalizations.localizationsDelegates,
+///   supportedLocales: AppLocalizations.supportedLocales,
+///   home: MyApplicationHome(),
+/// );
+/// ```
+///
+/// ## Update pubspec.yaml
+///
+/// Please make sure to update your pubspec.yaml to include the following
+/// packages:
+///
+/// ```yaml
+/// dependencies:
+///   # Internationalization support.
+///   flutter_localizations:
+///     sdk: flutter
+///   intl: any # Use the pinned version from flutter_localizations
+///
+///   # Rest of dependencies
+/// ```
+///
+/// ## iOS Applications
+///
+/// iOS applications define key application metadata, including supported
+/// locales, in an Info.plist file that is built into the application bundle.
+/// To configure the locales supported by your app, you’ll need to edit this
+/// file.
+///
+/// First, open your project’s ios/Runner.xcworkspace Xcode workspace file.
+/// Then, in the Project Navigator, open the Info.plist file under the Runner
+/// project’s Runner folder.
+///
+/// Next, select the Information Property List item, select Add Item from the
+/// Editor menu, then select Localizations from the pop-up menu.
+///
+/// Select and expand the newly-created Localizations item then, for each
+/// locale your application supports, add a new item and select the locale
+/// you wish to add from the pop-up menu in the Value field. This list should
+/// be consistent with the languages listed in the AppLocalizations.supportedLocales
+/// property.
+abstract class AppLocalizations {
+  AppLocalizations(String locale)
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+
+  final String localeName;
+
+  static AppLocalizations? of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  }
+
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
+
+  /// A list of this localizations delegate along with the default localizations
+  /// delegates.
+  ///
+  /// Returns a list of localizations delegates containing this delegate along with
+  /// GlobalMaterialLocalizations.delegate, GlobalCupertinoLocalizations.delegate,
+  /// and GlobalWidgetsLocalizations.delegate.
+  ///
+  /// Additional delegates can be added by appending to this list in
+  /// MaterialApp. This list does not have to be used at all if a custom list
+  /// of delegates is preferred or required.
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
+
+  /// A list of this localizations delegate's supported locales.
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('de'),
+    Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('it'),
+    Locale('pt'),
+    Locale('pt', 'BR')
+  ];
+
+  /// No description provided for @appName.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGoChat'**
+  String get appName;
+
+  /// No description provided for @appTagline.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Your Perfect Match'**
+  String get appTagline;
+
+  /// No description provided for @login.
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get login;
+
+  /// No description provided for @register.
+  ///
+  /// In en, this message translates to:
+  /// **'Register'**
+  String get register;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @password.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// No description provided for @confirmPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password'**
+  String get confirmPassword;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get forgotPassword;
+
+  /// No description provided for @resetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get resetPassword;
+
+  /// No description provided for @dontHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dontHaveAccount;
+
+  /// No description provided for @alreadyHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get alreadyHaveAccount;
+
+  /// No description provided for @signUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// No description provided for @signIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get signIn;
+
+  /// No description provided for @signOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get signOut;
+
+  /// No description provided for @continueWithGoogle.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get continueWithGoogle;
+
+  /// No description provided for @continueWithApple.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Apple'**
+  String get continueWithApple;
+
+  /// No description provided for @continueWithFacebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Facebook'**
+  String get continueWithFacebook;
+
+  /// No description provided for @orContinueWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Or continue with'**
+  String get orContinueWith;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Account'**
+  String get createAccount;
+
+  /// No description provided for @joinMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Join GreenGoChat and find your perfect match'**
+  String get joinMessage;
+
+  /// No description provided for @emailRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Email is required'**
+  String get emailRequired;
+
+  /// No description provided for @emailInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email'**
+  String get emailInvalid;
+
+  /// No description provided for @passwordRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get passwordRequired;
+
+  /// No description provided for @passwordTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 8 characters'**
+  String get passwordTooShort;
+
+  /// No description provided for @passwordWeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain uppercase, lowercase, number, and special character'**
+  String get passwordWeak;
+
+  /// No description provided for @passwordsDoNotMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Passwords do not match'**
+  String get passwordsDoNotMatch;
+
+  /// No description provided for @passwordMustContainUppercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one uppercase letter'**
+  String get passwordMustContainUppercase;
+
+  /// No description provided for @passwordMustContainLowercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one lowercase letter'**
+  String get passwordMustContainLowercase;
+
+  /// No description provided for @passwordMustContainNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one number'**
+  String get passwordMustContainNumber;
+
+  /// No description provided for @passwordMustContainSpecialChar.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one special character'**
+  String get passwordMustContainSpecialChar;
+
+  /// No description provided for @passwordStrengthVeryWeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Weak'**
+  String get passwordStrengthVeryWeak;
+
+  /// No description provided for @passwordStrengthWeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Weak'**
+  String get passwordStrengthWeak;
+
+  /// No description provided for @passwordStrengthFair.
+  ///
+  /// In en, this message translates to:
+  /// **'Fair'**
+  String get passwordStrengthFair;
+
+  /// No description provided for @passwordStrengthStrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Strong'**
+  String get passwordStrengthStrong;
+
+  /// No description provided for @passwordStrengthVeryStrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Strong'**
+  String get passwordStrengthVeryStrong;
+
+  /// No description provided for @passwordMustContain.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain:'**
+  String get passwordMustContain;
+
+  /// No description provided for @atLeast8Characters.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 8 characters'**
+  String get atLeast8Characters;
+
+  /// No description provided for @uppercaseLowercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Uppercase and lowercase letters'**
+  String get uppercaseLowercase;
+
+  /// No description provided for @atLeastOneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one number'**
+  String get atLeastOneNumber;
+
+  /// No description provided for @atLeastOneSpecialChar.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one special character'**
+  String get atLeastOneSpecialChar;
+
+  /// No description provided for @confirmPasswordRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please confirm your password'**
+  String get confirmPasswordRequired;
+
+  /// No description provided for @profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile;
+
+  /// No description provided for @editProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Profile'**
+  String get editProfile;
+
+  /// No description provided for @completeProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Your Profile'**
+  String get completeProfile;
+
+  /// No description provided for @firstName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Name'**
+  String get firstName;
+
+  /// No description provided for @lastName.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Name'**
+  String get lastName;
+
+  /// No description provided for @dateOfBirth.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of Birth'**
+  String get dateOfBirth;
+
+  /// No description provided for @gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get gender;
+
+  /// No description provided for @bio.
+  ///
+  /// In en, this message translates to:
+  /// **'Bio'**
+  String get bio;
+
+  /// No description provided for @interests.
+  ///
+  /// In en, this message translates to:
+  /// **'Interests'**
+  String get interests;
+
+  /// No description provided for @photos.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos'**
+  String get photos;
+
+  /// No description provided for @addPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Photo'**
+  String get addPhoto;
+
+  /// No description provided for @uploadPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload Photo'**
+  String get uploadPhoto;
+
+  /// No description provided for @takePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Photo'**
+  String get takePhoto;
+
+  /// No description provided for @chooseFromGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose from Gallery'**
+  String get chooseFromGallery;
+
+  /// No description provided for @location.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get location;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @voiceIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice Introduction'**
+  String get voiceIntro;
+
+  /// No description provided for @recordVoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Record Voice'**
+  String get recordVoice;
+
+  /// No description provided for @welcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGoChat'**
+  String get welcome;
+
+  /// No description provided for @getStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStarted;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @finish.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get finish;
+
+  /// No description provided for @step.
+  ///
+  /// In en, this message translates to:
+  /// **'Step'**
+  String get step;
+
+  /// No description provided for @stepOf.
+  ///
+  /// In en, this message translates to:
+  /// **'of'**
+  String get stepOf;
+
+  /// No description provided for @discover.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover'**
+  String get discover;
+
+  /// No description provided for @matches.
+  ///
+  /// In en, this message translates to:
+  /// **'Matches'**
+  String get matches;
+
+  /// No description provided for @likes.
+  ///
+  /// In en, this message translates to:
+  /// **'Likes'**
+  String get likes;
+
+  /// No description provided for @superLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Likes'**
+  String get superLikes;
+
+  /// No description provided for @filters.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get filters;
+
+  /// No description provided for @ageRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Age Range'**
+  String get ageRange;
+
+  /// No description provided for @distance.
+  ///
+  /// In en, this message translates to:
+  /// **'Distance'**
+  String get distance;
+
+  /// No description provided for @noMoreProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'No more profiles to show'**
+  String get noMoreProfiles;
+
+  /// No description provided for @itsAMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s a Match!'**
+  String get itsAMatch;
+
+  /// No description provided for @youAndMatched.
+  ///
+  /// In en, this message translates to:
+  /// **'You and {name} liked each other'**
+  String youAndMatched(String name);
+
+  /// No description provided for @sendMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Message'**
+  String get sendMessage;
+
+  /// No description provided for @keepSwiping.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Swiping'**
+  String get keepSwiping;
+
+  /// No description provided for @messages.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get messages;
+
+  /// No description provided for @typeMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a message...'**
+  String get typeMessage;
+
+  /// No description provided for @noMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get noMessages;
+
+  /// No description provided for @startConversation.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a conversation'**
+  String get startConversation;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @accountSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Settings'**
+  String get accountSettings;
+
+  /// No description provided for @notificationSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Settings'**
+  String get notificationSettings;
+
+  /// No description provided for @privacySettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Settings'**
+  String get privacySettings;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get deleteAccount;
+
+  /// No description provided for @logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
+
+  /// No description provided for @upgradeToPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Premium'**
+  String get upgradeToPremium;
+
+  /// No description provided for @basic.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic'**
+  String get basic;
+
+  /// No description provided for @silver.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver'**
+  String get silver;
+
+  /// No description provided for @gold.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold'**
+  String get gold;
+
+  /// No description provided for @subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe'**
+  String get subscribe;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/month'**
+  String get perMonth;
+
+  /// No description provided for @somethingWentWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong'**
+  String get somethingWentWrong;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get tryAgain;
+
+  /// No description provided for @noInternetConnection.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection'**
+  String get noInternetConnection;
+
+  /// No description provided for @yes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get yes;
+
+  /// No description provided for @no.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get no;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// No description provided for @loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading...'**
+  String get loading;
+
+  /// No description provided for @ok.
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get ok;
+
+  /// No description provided for @selectLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Language'**
+  String get selectLanguage;
+
+  /// No description provided for @loginWithBiometrics.
+  ///
+  /// In en, this message translates to:
+  /// **'Login with Biometrics'**
+  String get loginWithBiometrics;
+
+  /// No description provided for @consentRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required Consents'**
+  String get consentRequired;
+
+  /// No description provided for @optionalConsents.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional Consents'**
+  String get optionalConsents;
+
+  /// No description provided for @acceptPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept the Privacy Policy'**
+  String get acceptPrivacyPolicy;
+
+  /// No description provided for @acceptTermsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept the Terms and Conditions'**
+  String get acceptTermsAndConditions;
+
+  /// No description provided for @acceptProfiling.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to profiling for personalized recommendations'**
+  String get acceptProfiling;
+
+  /// No description provided for @acceptThirdPartyData.
+  ///
+  /// In en, this message translates to:
+  /// **'I consent to sharing my data with third parties'**
+  String get acceptThirdPartyData;
+
+  /// No description provided for @readPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Privacy Policy'**
+  String get readPrivacyPolicy;
+
+  /// No description provided for @readTermsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Terms and Conditions'**
+  String get readTermsAndConditions;
+
+  /// No description provided for @profilingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow us to analyze your preferences to provide better match suggestions'**
+  String get profilingDescription;
+
+  /// No description provided for @thirdPartyDataDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow sharing anonymized data with partners for service improvement'**
+  String get thirdPartyDataDescription;
+
+  /// No description provided for @consentRequiredError.
+  ///
+  /// In en, this message translates to:
+  /// **'You must accept the Privacy Policy and Terms and Conditions to register'**
+  String get consentRequiredError;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @termsAndConditions.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms and Conditions'**
+  String get termsAndConditions;
+
+  /// No description provided for @errorLoadingDocument.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading document'**
+  String get errorLoadingDocument;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// No description provided for @documentNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Document not available'**
+  String get documentNotAvailable;
+
+  /// No description provided for @documentNotAvailableDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This document is not available in your language yet.'**
+  String get documentNotAvailableDescription;
+
+  /// No description provided for @lastUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Last updated'**
+  String get lastUpdated;
+
+  /// No description provided for @verificationRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Identity Verification Required'**
+  String get verificationRequired;
+
+  /// No description provided for @verificationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Your Identity'**
+  String get verificationTitle;
+
+  /// No description provided for @verificationDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'To ensure the safety of our community, we require all users to verify their identity. Please take a photo of yourself holding your ID document.'**
+  String get verificationDescription;
+
+  /// No description provided for @verificationInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'Please hold your ID document (passport, driver\'s license, or national ID) next to your face and take a clear photo.'**
+  String get verificationInstructions;
+
+  /// No description provided for @verificationTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Tips for a successful verification:'**
+  String get verificationTips;
+
+  /// No description provided for @verificationTip1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ensure good lighting'**
+  String get verificationTip1;
+
+  /// No description provided for @verificationTip2.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure your face and ID are clearly visible'**
+  String get verificationTip2;
+
+  /// No description provided for @verificationTip3.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold the ID next to your face, not covering it'**
+  String get verificationTip3;
+
+  /// No description provided for @verificationTip4.
+  ///
+  /// In en, this message translates to:
+  /// **'All text on the ID should be readable'**
+  String get verificationTip4;
+
+  /// No description provided for @takeVerificationPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Verification Photo'**
+  String get takeVerificationPhoto;
+
+  /// No description provided for @retakePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Retake Photo'**
+  String get retakePhoto;
+
+  /// No description provided for @submitVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit for Verification'**
+  String get submitVerification;
+
+  /// No description provided for @verificationPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Pending'**
+  String get verificationPending;
+
+  /// No description provided for @verificationPendingMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is being verified. This usually takes 24-48 hours. You will be notified once the review is complete.'**
+  String get verificationPendingMessage;
+
+  /// No description provided for @verificationApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Approved'**
+  String get verificationApproved;
+
+  /// No description provided for @verificationApprovedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your identity has been verified. You now have full access to the app.'**
+  String get verificationApprovedMessage;
+
+  /// No description provided for @verificationRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Rejected'**
+  String get verificationRejected;
+
+  /// No description provided for @verificationRejectedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your verification was rejected. Please submit a new photo.'**
+  String get verificationRejectedMessage;
+
+  /// No description provided for @verificationNeedsResubmission.
+  ///
+  /// In en, this message translates to:
+  /// **'Better Photo Required'**
+  String get verificationNeedsResubmission;
+
+  /// No description provided for @verificationNeedsResubmissionMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'We need a clearer photo for verification. Please resubmit.'**
+  String get verificationNeedsResubmissionMessage;
+
+  /// No description provided for @rejectionReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason: {reason}'**
+  String rejectionReason(String reason);
+
+  /// No description provided for @accountUnderReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Under Review'**
+  String get accountUnderReview;
+
+  /// No description provided for @cannotAccessFeature.
+  ///
+  /// In en, this message translates to:
+  /// **'This feature is available after your account is verified.'**
+  String get cannotAccessFeature;
+
+  /// No description provided for @waitingForVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for verification...'**
+  String get waitingForVerification;
+
+  /// No description provided for @verifyNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Now'**
+  String get verifyNow;
+
+  /// No description provided for @skipForNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip for Now'**
+  String get skipForNow;
+
+  /// No description provided for @verificationSkipWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'You can browse the app, but you won\'t be able to chat or see other profiles until verified.'**
+  String get verificationSkipWarning;
+
+  /// No description provided for @adminPanel.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Panel'**
+  String get adminPanel;
+
+  /// No description provided for @pendingVerifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Verifications'**
+  String get pendingVerifications;
+
+  /// No description provided for @verificationHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification History'**
+  String get verificationHistory;
+
+  /// No description provided for @approveVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get approveVerification;
+
+  /// No description provided for @rejectVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get rejectVerification;
+
+  /// No description provided for @requestBetterPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Request Better Photo'**
+  String get requestBetterPhoto;
+
+  /// No description provided for @enterRejectionReason.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter rejection reason'**
+  String get enterRejectionReason;
+
+  /// No description provided for @rejectionReasonRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a reason for rejection'**
+  String get rejectionReasonRequired;
+
+  /// No description provided for @verificationApprovedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification approved successfully'**
+  String get verificationApprovedSuccess;
+
+  /// No description provided for @verificationRejectedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification rejected'**
+  String get verificationRejectedSuccess;
+
+  /// No description provided for @betterPhotoRequested.
+  ///
+  /// In en, this message translates to:
+  /// **'Better photo requested'**
+  String get betterPhotoRequested;
+
+  /// No description provided for @noPhotoSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'No photo submitted'**
+  String get noPhotoSubmitted;
+
+  /// No description provided for @submittedOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Submitted on {date}'**
+  String submittedOn(String date);
+
+  /// No description provided for @reviewedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed by {admin}'**
+  String reviewedBy(String admin);
+
+  /// No description provided for @noPendingVerifications.
+  ///
+  /// In en, this message translates to:
+  /// **'No pending verifications'**
+  String get noPendingVerifications;
+
+  /// No description provided for @platinum.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum'**
+  String get platinum;
+
+  /// No description provided for @waitingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank You for Registering!'**
+  String get waitingTitle;
+
+  /// No description provided for @waitingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been created successfully'**
+  String get waitingSubtitle;
+
+  /// No description provided for @waitingMessagePending.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is pending approval from our team. We will notify you once your account has been reviewed.'**
+  String get waitingMessagePending;
+
+  /// No description provided for @waitingMessageApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Great news! Your account has been approved. You will be able to access GreenGoChat on the date shown below.'**
+  String get waitingMessageApproved;
+
+  /// No description provided for @waitingMessageRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfortunately, your account could not be approved at this time. Please contact support for more information.'**
+  String get waitingMessageRejected;
+
+  /// No description provided for @waitingAccessDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Access Date'**
+  String get waitingAccessDateTitle;
+
+  /// No description provided for @waitingAccessDatePremium.
+  ///
+  /// In en, this message translates to:
+  /// **'As a {tier} member, you get early access on March 1st, 2026!'**
+  String waitingAccessDatePremium(String tier);
+
+  /// No description provided for @waitingAccessDateBasic.
+  ///
+  /// In en, this message translates to:
+  /// **'Your access will begin on March 15th, 2026'**
+  String get waitingAccessDateBasic;
+
+  /// No description provided for @waitingCountdownTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Countdown to Launch'**
+  String get waitingCountdownTitle;
+
+  /// No description provided for @waitingDaysRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{days} days'**
+  String waitingDaysRemaining(int days);
+
+  /// No description provided for @waitingHoursRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} hours'**
+  String waitingHoursRemaining(int hours);
+
+  /// No description provided for @waitingMinutesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} minutes'**
+  String waitingMinutesRemaining(int minutes);
+
+  /// No description provided for @waitingSecondsRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} seconds'**
+  String waitingSecondsRemaining(int seconds);
+
+  /// No description provided for @accountPendingApproval.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Pending Approval'**
+  String get accountPendingApproval;
+
+  /// No description provided for @accountApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Approved'**
+  String get accountApproved;
+
+  /// No description provided for @accountRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Rejected'**
+  String get accountRejected;
+
+  /// No description provided for @upgradeForEarlyAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!'**
+  String get upgradeForEarlyAccess;
+
+  /// No description provided for @waitingStayTuned.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay tuned! We\'ll notify you when it\'s time to start connecting.'**
+  String get waitingStayTuned;
+
+  /// No description provided for @waitingNotificationEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications enabled - we\'ll let you know when you can access the app!'**
+  String get waitingNotificationEnabled;
+
+  /// No description provided for @enableNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Notifications'**
+  String get enableNotifications;
+
+  /// No description provided for @contactSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Support'**
+  String get contactSupport;
+
+  /// No description provided for @waitingCountdownSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for registering! GreenGo Chat is launching soon. Get ready for an exclusive experience.'**
+  String get waitingCountdownSubtitle;
+
+  /// No description provided for @waitingCountdownLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'App Launch Countdown'**
+  String get waitingCountdownLabel;
+
+  /// No description provided for @waitingEarlyAccessMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Early Access Member'**
+  String get waitingEarlyAccessMember;
+
+  /// No description provided for @waitingExclusiveAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Your exclusive access date'**
+  String get waitingExclusiveAccess;
+
+  /// No description provided for @waitingProfileUnderReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Under Review'**
+  String get waitingProfileUnderReview;
+
+  /// No description provided for @waitingReviewMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'The app is now live! Our team is reviewing your profile to ensure the best experience for our community. This usually takes 24-48 hours.'**
+  String get waitingReviewMessage;
+
+  /// No description provided for @waitingStepRegistration.
+  ///
+  /// In en, this message translates to:
+  /// **'Registration Complete'**
+  String get waitingStepRegistration;
+
+  /// No description provided for @waitingStepReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Review in Progress'**
+  String get waitingStepReview;
+
+  /// No description provided for @waitingStepActivation.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Activation'**
+  String get waitingStepActivation;
+
+  /// No description provided for @waitingEnableNotificationsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay Updated'**
+  String get waitingEnableNotificationsTitle;
+
+  /// No description provided for @waitingEnableNotificationsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable notifications to be the first to know when you can access the app.'**
+  String get waitingEnableNotificationsSubtitle;
+
+  /// No description provided for @waitingThankYouRegistration.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for registering!'**
+  String get waitingThankYouRegistration;
+
+  /// No description provided for @days.
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get days;
+
+  /// No description provided for @hours.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours'**
+  String get hours;
+
+  /// No description provided for @minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get minutes;
+
+  /// No description provided for @seconds.
+  ///
+  /// In en, this message translates to:
+  /// **'Seconds'**
+  String get seconds;
+
+  /// No description provided for @vipPlatinumMember.
+  ///
+  /// In en, this message translates to:
+  /// **'PLATINUM VIP'**
+  String get vipPlatinumMember;
+
+  /// No description provided for @vipGoldMember.
+  ///
+  /// In en, this message translates to:
+  /// **'GOLD MEMBER'**
+  String get vipGoldMember;
+
+  /// No description provided for @vipSilverMember.
+  ///
+  /// In en, this message translates to:
+  /// **'SILVER MEMBER'**
+  String get vipSilverMember;
+
+  /// No description provided for @vipPremiumBenefitsActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Benefits Active'**
+  String get vipPremiumBenefitsActive;
+
+  /// No description provided for @authErrorUserNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No account found with this email. Please check your email or sign up.'**
+  String get authErrorUserNotFound;
+
+  /// No description provided for @authErrorWrongPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect password. Please try again.'**
+  String get authErrorWrongPassword;
+
+  /// No description provided for @authErrorInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address.'**
+  String get authErrorInvalidEmail;
+
+  /// No description provided for @authErrorEmailAlreadyInUse.
+  ///
+  /// In en, this message translates to:
+  /// **'An account already exists with this email.'**
+  String get authErrorEmailAlreadyInUse;
+
+  /// No description provided for @authErrorWeakPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Password is too weak. Please use a stronger password.'**
+  String get authErrorWeakPassword;
+
+  /// No description provided for @authErrorTooManyRequests.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please try again later.'**
+  String get authErrorTooManyRequests;
+
+  /// No description provided for @authErrorNetworkError.
+  ///
+  /// In en, this message translates to:
+  /// **'Network error. Please check your internet connection.'**
+  String get authErrorNetworkError;
+
+  /// No description provided for @authErrorGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'An error occurred. Please try again.'**
+  String get authErrorGeneric;
+
+  /// No description provided for @authErrorInvalidCredentials.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid email or password. Please try again.'**
+  String get authErrorInvalidCredentials;
+
+  /// No description provided for @accountCreatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Account created! Please check your email to verify your account.'**
+  String get accountCreatedSuccess;
+
+  /// No description provided for @levelUp.
+  ///
+  /// In en, this message translates to:
+  /// **'LEVEL UP!'**
+  String get levelUp;
+
+  /// No description provided for @levelUpCongratulations.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations on reaching a new level!'**
+  String get levelUpCongratulations;
+
+  /// No description provided for @levelUpYouReachedLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'You reached Level {level}'**
+  String levelUpYouReachedLevel(int level);
+
+  /// No description provided for @levelUpRewards.
+  ///
+  /// In en, this message translates to:
+  /// **'REWARDS'**
+  String get levelUpRewards;
+
+  /// No description provided for @levelUpContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get levelUpContinue;
+
+  /// No description provided for @levelUpVIPUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Status Unlocked!'**
+  String get levelUpVIPUnlocked;
+
+  /// No description provided for @chatSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay Safe While Chatting'**
+  String get chatSafetyTitle;
+
+  /// No description provided for @chatSafetySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your safety is our priority. Please keep these tips in mind.'**
+  String get chatSafetySubtitle;
+
+  /// No description provided for @chatSafetyTip1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Personal Info Private'**
+  String get chatSafetyTip1Title;
+
+  /// No description provided for @chatSafetyTip1Description.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t share your address, phone number, or financial information.'**
+  String get chatSafetyTip1Description;
+
+  /// No description provided for @chatSafetyTip2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Beware of Money Requests'**
+  String get chatSafetyTip2Title;
+
+  /// No description provided for @chatSafetyTip2Description.
+  ///
+  /// In en, this message translates to:
+  /// **'Never send money to someone you haven\'t met in person.'**
+  String get chatSafetyTip2Description;
+
+  /// No description provided for @chatSafetyTip3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Meet in Public Places'**
+  String get chatSafetyTip3Title;
+
+  /// No description provided for @chatSafetyTip3Description.
+  ///
+  /// In en, this message translates to:
+  /// **'For first meetings, always choose a public, well-lit location.'**
+  String get chatSafetyTip3Description;
+
+  /// No description provided for @chatSafetyTip4Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Trust Your Instincts'**
+  String get chatSafetyTip4Title;
+
+  /// No description provided for @chatSafetyTip4Description.
+  ///
+  /// In en, this message translates to:
+  /// **'If something feels wrong, trust your gut and end the conversation.'**
+  String get chatSafetyTip4Description;
+
+  /// No description provided for @chatSafetyTip5Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Report Suspicious Behavior'**
+  String get chatSafetyTip5Title;
+
+  /// No description provided for @chatSafetyTip5Description.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the report feature if someone makes you uncomfortable.'**
+  String get chatSafetyTip5Description;
+
+  /// No description provided for @chatSafetyGotIt.
+  ///
+  /// In en, this message translates to:
+  /// **'Got It'**
+  String get chatSafetyGotIt;
+
+  /// No description provided for @tourSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get tourSkip;
+
+  /// No description provided for @tourNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get tourNext;
+
+  /// No description provided for @tourDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get tourDone;
+
+  /// No description provided for @tourDiscoveryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Matches'**
+  String get tourDiscoveryTitle;
+
+  /// No description provided for @tourDiscoveryDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe through profiles to find your perfect match. Swipe right if you\'re interested, left to pass.'**
+  String get tourDiscoveryDescription;
+
+  /// No description provided for @tourMatchesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Matches'**
+  String get tourMatchesTitle;
+
+  /// No description provided for @tourMatchesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'See everyone who liked you back! Start conversations with your mutual matches.'**
+  String get tourMatchesDescription;
+
+  /// No description provided for @tourMessagesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get tourMessagesTitle;
+
+  /// No description provided for @tourMessagesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat with your matches here. Send messages, photos, and voice notes to connect.'**
+  String get tourMessagesDescription;
+
+  /// No description provided for @tourShopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop & Coins'**
+  String get tourShopTitle;
+
+  /// No description provided for @tourShopDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Get coins and premium features to boost your dating experience.'**
+  String get tourShopDescription;
+
+  /// No description provided for @tourProgressTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Track Progress'**
+  String get tourProgressTitle;
+
+  /// No description provided for @tourProgressDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn badges, complete challenges, and climb the leaderboard!'**
+  String get tourProgressDescription;
+
+  /// No description provided for @tourProfileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Profile'**
+  String get tourProfileTitle;
+
+  /// No description provided for @tourProfileDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Customize your profile, manage settings, and control your privacy.'**
+  String get tourProfileDescription;
+
+  /// No description provided for @progressTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get progressTitle;
+
+  /// No description provided for @progressOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get progressOverview;
+
+  /// No description provided for @progressAchievements.
+  ///
+  /// In en, this message translates to:
+  /// **'Badges'**
+  String get progressAchievements;
+
+  /// No description provided for @progressChallenges.
+  ///
+  /// In en, this message translates to:
+  /// **'Challenges'**
+  String get progressChallenges;
+
+  /// No description provided for @progressLeaderboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get progressLeaderboard;
+
+  /// No description provided for @progressLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Level {level}'**
+  String progressLevel(int level);
+
+  /// No description provided for @progressBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'Badges'**
+  String get progressBadges;
+
+  /// No description provided for @progressCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get progressCompleted;
+
+  /// No description provided for @progressTotalXP.
+  ///
+  /// In en, this message translates to:
+  /// **'Total XP'**
+  String get progressTotalXP;
+
+  /// No description provided for @progressRecentAchievements.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Achievements'**
+  String get progressRecentAchievements;
+
+  /// No description provided for @progressTodaysChallenges.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s Challenges'**
+  String get progressTodaysChallenges;
+
+  /// No description provided for @progressSeeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See All'**
+  String get progressSeeAll;
+
+  /// No description provided for @progressViewJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'View Your Journey'**
+  String get progressViewJourney;
+
+  /// No description provided for @progressJourneyDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'See your complete dating journey and milestones'**
+  String get progressJourneyDescription;
+
+  /// No description provided for @nickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname'**
+  String get nickname;
+
+  /// No description provided for @editNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Nickname'**
+  String get editNickname;
+
+  /// No description provided for @nicknameUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname updated successfully'**
+  String get nicknameUpdatedSuccess;
+
+  /// No description provided for @nicknameAlreadyTaken.
+  ///
+  /// In en, this message translates to:
+  /// **'This nickname is already taken'**
+  String get nicknameAlreadyTaken;
+
+  /// No description provided for @nicknameCheckError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error checking availability'**
+  String get nicknameCheckError;
+
+  /// No description provided for @nicknameInfoText.
+  ///
+  /// In en, this message translates to:
+  /// **'Your nickname is unique and can be used to find you. Others can search for you using @{nickname}'**
+  String nicknameInfoText(String nickname);
+
+  /// No description provided for @enterNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter nickname'**
+  String get enterNickname;
+
+  /// No description provided for @nicknameRequirements.
+  ///
+  /// In en, this message translates to:
+  /// **'3-20 characters. Letters, numbers, and underscores only.'**
+  String get nicknameRequirements;
+
+  /// No description provided for @suggestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggestions'**
+  String get suggestions;
+
+  /// No description provided for @refresh.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get refresh;
+
+  /// No description provided for @nicknameRules.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname Rules'**
+  String get nicknameRules;
+
+  /// No description provided for @nicknameMustBe3To20Chars.
+  ///
+  /// In en, this message translates to:
+  /// **'Must be 3-20 characters'**
+  String get nicknameMustBe3To20Chars;
+
+  /// No description provided for @nicknameStartWithLetter.
+  ///
+  /// In en, this message translates to:
+  /// **'Start with a letter'**
+  String get nicknameStartWithLetter;
+
+  /// No description provided for @nicknameOnlyAlphanumeric.
+  ///
+  /// In en, this message translates to:
+  /// **'Only letters, numbers, and underscores'**
+  String get nicknameOnlyAlphanumeric;
+
+  /// No description provided for @nicknameNoConsecutiveUnderscores.
+  ///
+  /// In en, this message translates to:
+  /// **'No consecutive underscores'**
+  String get nicknameNoConsecutiveUnderscores;
+
+  /// No description provided for @nicknameNoReservedWords.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot contain reserved words'**
+  String get nicknameNoReservedWords;
+
+  /// No description provided for @setYourUniqueNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Set your unique nickname'**
+  String get setYourUniqueNickname;
+
+  /// No description provided for @searchByNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by Nickname'**
+  String get searchByNickname;
+
+  /// No description provided for @noProfileFoundWithNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'No profile found with @{nickname}'**
+  String noProfileFoundWithNickname(String nickname);
+
+  /// No description provided for @thatsYourOwnProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'That\'s your own profile!'**
+  String get thatsYourOwnProfile;
+
+  /// No description provided for @errorSearchingTryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Error searching. Please try again.'**
+  String get errorSearchingTryAgain;
+
+  /// No description provided for @enterNicknameToFind.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a nickname to find someone directly'**
+  String get enterNicknameToFind;
+
+  /// No description provided for @view.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get view;
+
+  /// No description provided for @profileUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile updated successfully'**
+  String get profileUpdatedSuccess;
+
+  /// No description provided for @unableToLoadProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to load profile'**
+  String get unableToLoadProfile;
+
+  /// No description provided for @viewMyProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'View My Profile'**
+  String get viewMyProfile;
+
+  /// No description provided for @seeHowOthersViewProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'See how others view your profile'**
+  String get seeHowOthersViewProfile;
+
+  /// No description provided for @photosCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}/6 photos'**
+  String photosCount(int count);
+
+  /// No description provided for @basicInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic Information'**
+  String get basicInformation;
+
+  /// No description provided for @aboutMe.
+  ///
+  /// In en, this message translates to:
+  /// **'About Me'**
+  String get aboutMe;
+
+  /// No description provided for @addBio.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a bio'**
+  String get addBio;
+
+  /// No description provided for @interestsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} interests'**
+  String interestsCount(int count);
+
+  /// No description provided for @locationAndLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Location & Languages'**
+  String get locationAndLanguages;
+
+  /// No description provided for @voiceRecorded.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice recorded'**
+  String get voiceRecorded;
+
+  /// No description provided for @noVoiceRecording.
+  ///
+  /// In en, this message translates to:
+  /// **'No voice recording'**
+  String get noVoiceRecording;
+
+  /// No description provided for @socialProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'Social Profiles'**
+  String get socialProfiles;
+
+  /// No description provided for @noSocialProfilesLinked.
+  ///
+  /// In en, this message translates to:
+  /// **'No social profiles linked'**
+  String get noSocialProfilesLinked;
+
+  /// No description provided for @profilesLinkedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} profile{count, plural, =1{} other{s}} linked'**
+  String profilesLinkedCount(int count);
+
+  /// No description provided for @appLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'App Language'**
+  String get appLanguage;
+
+  /// No description provided for @rewardsAndProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Rewards & Progress'**
+  String get rewardsAndProgress;
+
+  /// No description provided for @myProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'My Progress'**
+  String get myProgress;
+
+  /// No description provided for @viewBadgesAchievementsLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'View badges, achievements & level'**
+  String get viewBadgesAchievementsLevel;
+
+  /// No description provided for @admin.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get admin;
+
+  /// No description provided for @verificationPanel.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Panel'**
+  String get verificationPanel;
+
+  /// No description provided for @reviewUserVerifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Review user verifications'**
+  String get reviewUserVerifications;
+
+  /// No description provided for @reportsPanel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports Panel'**
+  String get reportsPanel;
+
+  /// No description provided for @reviewReportedMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'Review reported messages & manage accounts'**
+  String get reviewReportedMessages;
+
+  /// No description provided for @membershipPanel.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership Panel'**
+  String get membershipPanel;
+
+  /// No description provided for @manageCouponsTiersRules.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage coupons, tiers & rules'**
+  String get manageCouponsTiersRules;
+
+  /// No description provided for @exportMyDataGDPR.
+  ///
+  /// In en, this message translates to:
+  /// **'Export My Data (GDPR)'**
+  String get exportMyDataGDPR;
+
+  /// No description provided for @restartAppWizard.
+  ///
+  /// In en, this message translates to:
+  /// **'Restart App Wizard'**
+  String get restartAppWizard;
+
+  /// No description provided for @languageChangedTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Language changed to {language}'**
+  String languageChangedTo(String language);
+
+  /// No description provided for @deleteAccountConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete your account? This action cannot be undone and all your data will be permanently deleted.'**
+  String get deleteAccountConfirmation;
+
+  /// No description provided for @adminAccountsCannotBeDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin accounts cannot be deleted'**
+  String get adminAccountsCannotBeDeleted;
+
+  /// No description provided for @exportingYourData.
+  ///
+  /// In en, this message translates to:
+  /// **'Exporting your data...'**
+  String get exportingYourData;
+
+  /// No description provided for @dataExportSentToEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Data export sent to your email'**
+  String get dataExportSentToEmail;
+
+  /// No description provided for @restartWizardDialogContent.
+  ///
+  /// In en, this message translates to:
+  /// **'This will restart the onboarding wizard. You can update your profile information step by step. Your current data will be preserved.'**
+  String get restartWizardDialogContent;
+
+  /// No description provided for @restartWizard.
+  ///
+  /// In en, this message translates to:
+  /// **'Restart Wizard'**
+  String get restartWizard;
+
+  /// No description provided for @logOutConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to log out?'**
+  String get logOutConfirmation;
+
+  /// No description provided for @editVoiceComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit voice coming soon'**
+  String get editVoiceComingSoon;
+
+  /// No description provided for @logOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get logOut;
+
+  /// No description provided for @noMatchesYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No matches yet'**
+  String get noMatchesYet;
+
+  /// No description provided for @startSwipingToFindMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'Start swiping to find your matches!'**
+  String get startSwipingToFindMatches;
+
+  /// No description provided for @searchByNameOrNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or @nickname'**
+  String get searchByNameOrNickname;
+
+  /// No description provided for @matchesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} matches'**
+  String matchesCount(int count);
+
+  /// No description provided for @matchesOfTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'{filtered} of {total} matches'**
+  String matchesOfTotal(int filtered, int total);
+
+  /// No description provided for @noMatchesFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No matches found'**
+  String get noMatchesFound;
+
+  /// No description provided for @tryDifferentSearchOrFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a different search or filter'**
+  String get tryDifferentSearchOrFilter;
+
+  /// No description provided for @clearFilters.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Filters'**
+  String get clearFilters;
+
+  /// No description provided for @filterAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get filterAll;
+
+  /// No description provided for @filterNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get filterNew;
+
+  /// No description provided for @filterMessaged.
+  ///
+  /// In en, this message translates to:
+  /// **'Messaged'**
+  String get filterMessaged;
+
+  /// No description provided for @about.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// No description provided for @lookingFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Looking for'**
+  String get lookingFor;
+
+  /// No description provided for @details.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get details;
+
+  /// No description provided for @height.
+  ///
+  /// In en, this message translates to:
+  /// **'Height'**
+  String get height;
+
+  /// No description provided for @education.
+  ///
+  /// In en, this message translates to:
+  /// **'Education'**
+  String get education;
+
+  /// No description provided for @occupation.
+  ///
+  /// In en, this message translates to:
+  /// **'Occupation'**
+  String get occupation;
+
+  /// No description provided for @youMatchedWithOnDate.
+  ///
+  /// In en, this message translates to:
+  /// **'You matched with {name} on {date}'**
+  String youMatchedWithOnDate(String name, String date);
+
+  /// No description provided for @chatWithName.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat with {name}'**
+  String chatWithName(String name);
+
+  /// No description provided for @longTermRelationship.
+  ///
+  /// In en, this message translates to:
+  /// **'Long-term relationship'**
+  String get longTermRelationship;
+
+  /// No description provided for @shortTermRelationship.
+  ///
+  /// In en, this message translates to:
+  /// **'Short-term relationship'**
+  String get shortTermRelationship;
+
+  /// No description provided for @friendship.
+  ///
+  /// In en, this message translates to:
+  /// **'Friendship'**
+  String get friendship;
+
+  /// No description provided for @casualDating.
+  ///
+  /// In en, this message translates to:
+  /// **'Casual dating'**
+  String get casualDating;
+
+  /// No description provided for @today.
+  ///
+  /// In en, this message translates to:
+  /// **'today'**
+  String get today;
+
+  /// No description provided for @yesterday.
+  ///
+  /// In en, this message translates to:
+  /// **'yesterday'**
+  String get yesterday;
+
+  /// No description provided for @daysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} days ago'**
+  String daysAgo(int count);
+
+  /// No description provided for @lvl.
+  ///
+  /// In en, this message translates to:
+  /// **'LVL'**
+  String get lvl;
+
+  /// No description provided for @xp.
+  ///
+  /// In en, this message translates to:
+  /// **'XP'**
+  String get xp;
+
+  /// No description provided for @toNextLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}% to Level {level}'**
+  String toNextLevel(int percent, int level);
+
+  /// No description provided for @achievements.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievements'**
+  String get achievements;
+
+  /// No description provided for @badges.
+  ///
+  /// In en, this message translates to:
+  /// **'Badges'**
+  String get badges;
+
+  /// No description provided for @challenges.
+  ///
+  /// In en, this message translates to:
+  /// **'Challenges'**
+  String get challenges;
+
+  /// No description provided for @myBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'My Badges'**
+  String get myBadges;
+
+  /// No description provided for @noBadgesEarnedYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No badges earned yet'**
+  String get noBadgesEarnedYet;
+
+  /// No description provided for @completeAchievementsToEarnBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete achievements to earn badges!'**
+  String get completeAchievementsToEarnBadges;
+
+  /// No description provided for @moreAchievements.
+  ///
+  /// In en, this message translates to:
+  /// **'+{count} more achievements'**
+  String moreAchievements(int count);
+
+  /// No description provided for @levelTitleLegend.
+  ///
+  /// In en, this message translates to:
+  /// **'Legend'**
+  String get levelTitleLegend;
+
+  /// No description provided for @levelTitleMaster.
+  ///
+  /// In en, this message translates to:
+  /// **'Master'**
+  String get levelTitleMaster;
+
+  /// No description provided for @levelTitleExpert.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert'**
+  String get levelTitleExpert;
+
+  /// No description provided for @levelTitleVeteran.
+  ///
+  /// In en, this message translates to:
+  /// **'Veteran'**
+  String get levelTitleVeteran;
+
+  /// No description provided for @levelTitleExplorer.
+  ///
+  /// In en, this message translates to:
+  /// **'Explorer'**
+  String get levelTitleExplorer;
+
+  /// No description provided for @levelTitleEnthusiast.
+  ///
+  /// In en, this message translates to:
+  /// **'Enthusiast'**
+  String get levelTitleEnthusiast;
+
+  /// No description provided for @levelTitleNewcomer.
+  ///
+  /// In en, this message translates to:
+  /// **'Newcomer'**
+  String get levelTitleNewcomer;
+
+  /// No description provided for @notificationNewLike.
+  ///
+  /// In en, this message translates to:
+  /// **'You received a like from @{nickname}'**
+  String notificationNewLike(String nickname);
+
+  /// No description provided for @notificationSuperLike.
+  ///
+  /// In en, this message translates to:
+  /// **'You received a super like from @{nickname}'**
+  String notificationSuperLike(String nickname);
+
+  /// No description provided for @notificationNewMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s a Match! You matched with @{nickname}. Start chatting now.'**
+  String notificationNewMatch(String nickname);
+
+  /// No description provided for @notificationNewChat.
+  ///
+  /// In en, this message translates to:
+  /// **'@{nickname} started a conversation with you.'**
+  String notificationNewChat(String nickname);
+
+  /// No description provided for @notificationNewMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'New message from @{nickname}'**
+  String notificationNewMessage(String nickname);
+
+  /// No description provided for @notificationCoinsPurchased.
+  ///
+  /// In en, this message translates to:
+  /// **'You successfully purchased {amount} coins.'**
+  String notificationCoinsPurchased(int amount);
+
+  /// No description provided for @notificationAchievementUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Unlocked: {name}'**
+  String notificationAchievementUnlocked(String name);
+}
+
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
+  const _AppLocalizationsDelegate();
+
+  @override
+  Future<AppLocalizations> load(Locale locale) {
+    return SynchronousFuture<AppLocalizations>(lookupAppLocalizations(locale));
+  }
+
+  @override
+  bool isSupported(Locale locale) => <String>[
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
+
+  @override
+  bool shouldReload(_AppLocalizationsDelegate old) => false;
+}
+
+AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
+  }
+
+  // Lookup logic when only language code is specified.
+  switch (locale.languageCode) {
+    case 'de':
+      return AppLocalizationsDe();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'pt':
+      return AppLocalizationsPt();
+  }
+
+  throw FlutterError(
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
+}

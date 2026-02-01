@@ -1,11 +1,11 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step3BioScreen extends StatefulWidget {
@@ -18,6 +18,7 @@ class Step3BioScreen extends StatefulWidget {
 class _Step3BioScreenState extends State<Step3BioScreen> {
   final _bioController = TextEditingController();
   final int _maxLength = 500;
+  final FocusNode _focusNode = FocusNode();
 
   @override
   void initState() {
@@ -31,6 +32,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
   @override
   void dispose() {
     _bioController.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -38,9 +40,11 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
     final bio = _bioController.text.trim();
     if (bio.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please write something about yourself'),
+        SnackBar(
+          content: const Text('Please write something about yourself'),
           backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
       return;
@@ -48,9 +52,11 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
 
     if (bio.length < 50) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Bio must be at least 50 characters'),
+        SnackBar(
+          content: const Text('Bio must be at least 50 characters'),
           backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
       return;
@@ -61,7 +67,6 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
   }
 
   void _handleBack() {
-    // Save current bio before going back
     final bio = _bioController.text.trim();
     if (bio.isNotEmpty) {
       context.read<OnboardingBloc>().add(OnboardingBioUpdated(bio: bio));
@@ -77,129 +82,175 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
           return const SizedBox.shrink();
         }
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: _handleBack,
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        final charCount = _bioController.text.length;
+        final isValidLength = charCount >= 50;
+
+        return LuxuryOnboardingLayout(
+          title: 'Express yourself',
+          subtitle: 'Write something that captures who you are',
+          onBack: _handleBack,
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 24),
-                  Text(
-                    'About you',
-                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Write a short bio to tell others about yourself',
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
-                  ),
-                  const SizedBox(height: 40),
-
-                  // Bio Text Field
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: AppColors.backgroundInput,
-                        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                        border: Border.all(
-                          color: AppColors.divider,
-                          width: 1.5,
-                        ),
-                      ),
-                      padding: const EdgeInsets.all(16),
-                      child: TextField(
-                        controller: _bioController,
-                        maxLength: _maxLength,
-                        maxLines: null,
-                        style: const TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 16,
-                        ),
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'Tell us about your interests, hobbies, what you\'re looking for...',
-                          hintStyle: TextStyle(
-                            color: AppColors.textTertiary,
+          child: Column(
+            children: [
+              // Bio Text Field
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Colors.white.withOpacity(0.1),
+                              Colors.white.withOpacity(0.05),
+                            ],
                           ),
-                          counterStyle: TextStyle(
-                            color: AppColors.textTertiary,
+                          border: Border.all(
+                            color: _focusNode.hasFocus
+                                ? AppColors.richGold.withOpacity(0.5)
+                                : Colors.white.withOpacity(0.1),
+                            width: 1.5,
                           ),
                         ),
-                        onChanged: (value) {
-                          setState(() {}); // Rebuild to update character count color
-                        },
-                      ),
-                    ),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Tips Container
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
+                        child: Column(
                           children: [
-                            const Icon(
-                              Icons.lightbulb_outline,
-                              color: AppColors.richGold,
-                              size: 20,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              'Tips for a great bio:',
-                              style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                                    color: AppColors.richGold,
-                                    fontWeight: FontWeight.w600,
+                            Expanded(
+                              child: TextField(
+                                controller: _bioController,
+                                focusNode: _focusNode,
+                                maxLength: _maxLength,
+                                maxLines: null,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  height: 1.6,
+                                ),
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: 'Tell us about your interests, hobbies, what you\'re looking for...',
+                                  hintStyle: TextStyle(
+                                    color: Colors.white.withOpacity(0.3),
+                                    fontSize: 16,
                                   ),
+                                  counterText: '',
+                                  contentPadding: const EdgeInsets.all(20),
+                                ),
+                                onChanged: (value) {
+                                  setState(() {});
+                                },
+                              ),
+                            ),
+                            // Character count bar
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                              decoration: BoxDecoration(
+                                border: Border(
+                                  top: BorderSide(
+                                    color: Colors.white.withOpacity(0.05),
+                                  ),
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  // Progress indicator
+                                  Expanded(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(4),
+                                      child: LinearProgressIndicator(
+                                        value: (charCount / _maxLength).clamp(0, 1),
+                                        backgroundColor: Colors.white.withOpacity(0.1),
+                                        valueColor: AlwaysStoppedAnimation<Color>(
+                                          isValidLength
+                                              ? AppColors.richGold
+                                              : Colors.white.withOpacity(0.3),
+                                        ),
+                                        minHeight: 4,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 16),
+                                  Text(
+                                    '$charCount / $_maxLength',
+                                    style: TextStyle(
+                                      color: isValidLength
+                                          ? AppColors.richGold
+                                          : Colors.white.withOpacity(0.5),
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 12),
-                        _buildTip('Be authentic and honest'),
-                        _buildTip('Mention your hobbies and interests'),
-                        _buildTip('Share what makes you unique'),
-                        _buildTip('Keep it positive and friendly'),
-                      ],
+                      ),
                     ),
                   ),
-
-                  const SizedBox(height: 24),
-
-                  // Continue Button
-                  OnboardingButton(
-                    text: 'Continue',
-                    onPressed: _handleContinue,
-                  ),
-                ],
+                ),
               ),
-            ),
+
+              const SizedBox(height: 20),
+
+              // Tips
+              LuxuryGlassCard(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: AppColors.richGold.withOpacity(0.15),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: const Icon(
+                            Icons.auto_awesome,
+                            color: AppColors.richGold,
+                            size: 18,
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        const Text(
+                          'Writing tips',
+                          style: TextStyle(
+                            color: AppColors.richGold,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    _buildTip('Be authentic and genuine'),
+                    _buildTip('Share your passions and hobbies'),
+                    _buildTip('What makes you unique?'),
+                    _buildTip('Keep it positive'),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 24),
+
+              // Continue Button
+              LuxuryButton(
+                text: 'Continue',
+                onPressed: _handleContinue,
+              ),
+
+              const SizedBox(height: 32),
+            ],
           ),
         );
       },
@@ -208,23 +259,23 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
 
   Widget _buildTip(String text) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.only(bottom: 10),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            '•',
-            style: TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 16,
+          Container(
+            width: 6,
+            height: 6,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.richGold.withOpacity(0.5),
             ),
           ),
-          const SizedBox(width: 8),
+          const SizedBox(width: 12),
           Expanded(
             child: Text(
               text,
-              style: const TextStyle(
-                color: AppColors.textSecondary,
+              style: TextStyle(
+                color: Colors.white.withOpacity(0.7),
                 fontSize: 14,
               ),
             ),

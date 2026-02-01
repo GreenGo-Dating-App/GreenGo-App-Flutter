@@ -26,7 +26,6 @@ import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_nickname_screen.dart';
-import 'onboarding_screen.dart' as onboarding;
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 // Gamification/Coins screens disabled due to compile errors
@@ -314,20 +313,6 @@ class EditProfileScreen extends StatelessWidget {
                       minimumSize: const Size(double.infinity, 50),
                     ),
                     child: const Text('Export My Data (GDPR)'),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Restart App Wizard Button
-                  OutlinedButton.icon(
-                    onPressed: () => _showRestartWizardDialog(context, currentProfile),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: AppColors.richGold,
-                      side: const BorderSide(color: AppColors.richGold),
-                      minimumSize: const Size(double.infinity, 50),
-                    ),
-                    icon: const Icon(Icons.refresh),
-                    label: const Text('Restart App Wizard'),
                   ),
 
                   const SizedBox(height: 16),
@@ -647,47 +632,6 @@ class EditProfileScreen extends StatelessWidget {
         );
       }
     });
-  }
-
-  void _showRestartWizardDialog(BuildContext context, Profile currentProfile) {
-    showDialog(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Restart App Wizard',
-          style: TextStyle(color: AppColors.textPrimary),
-        ),
-        content: const Text(
-          'This will restart the onboarding wizard. You can update your profile information step by step. Your current data will be preserved.',
-          style: TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(dialogContext).pop();
-              _startAppWizard(context, currentProfile);
-            },
-            child: const Text(
-              'Restart Wizard',
-              style: TextStyle(color: AppColors.richGold),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _startAppWizard(BuildContext context, Profile currentProfile) {
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => onboarding.OnboardingScreen(userId: currentProfile.userId),
-      ),
-    );
   }
 
   void _showLogoutDialog(BuildContext context) {
