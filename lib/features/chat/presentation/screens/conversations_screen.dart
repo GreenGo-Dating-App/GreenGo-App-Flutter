@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../domain/entities/conversation.dart';
 import '../bloc/conversations_bloc.dart';
 import '../bloc/conversations_event.dart';
 import '../bloc/conversations_state.dart';
 import '../widgets/conversation_card.dart';
 import 'chat_screen.dart';
+import 'support_chat_screen.dart';
 
 /// Conversations Screen
 ///
@@ -28,105 +31,245 @@ class ConversationsScreen extends StatefulWidget {
 }
 
 class _ConversationsScreenState extends State<ConversationsScreen> {
-  Profile? _adminProfile;
-  bool _isLoadingAdmin = true;
+  Conversation? _activeSupportConversation;
+  bool _isLoadingSupport = true;
+  bool _isCreatingSupport = false;
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+  final Map<String, Profile?> _profileCache = {};
 
   @override
   void initState() {
     super.initState();
-    _loadAdminProfile();
+    _loadActiveSupportConversation();
   }
 
-  Future<void> _loadAdminProfile() async {
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _loadActiveSupportConversation() async {
     try {
-      final adminQuery = await FirebaseFirestore.instance
-          .collection('profiles')
-          .where('isAdmin', isEqualTo: true)
+      // Check if user already has an active support conversation
+      final supportQuery = await FirebaseFirestore.instance
+          .collection('conversations')
+          .where('userId1', isEqualTo: widget.userId)
+          .where('conversationType', isEqualTo: 'support')
+          .where('supportTicketStatus', whereIn: ['open', 'assigned', 'inProgress', 'waitingOnUser'])
           .limit(1)
           .get();
 
-      if (adminQuery.docs.isNotEmpty && mounted) {
-        final adminDoc = adminQuery.docs.first;
-        // Don't show admin to themselves
-        if (adminDoc.id != widget.userId) {
-          setState(() {
-            _adminProfile = ProfileModel.fromFirestore(adminDoc);
-            _isLoadingAdmin = false;
-          });
-          return;
-        }
+      if (supportQuery.docs.isNotEmpty && mounted) {
+        final doc = supportQuery.docs.first;
+        final data = doc.data();
+        setState(() {
+          _activeSupportConversation = Conversation(
+            conversationId: doc.id,
+            matchId: data['matchId'] ?? '',
+            userId1: data['userId1'],
+            userId2: data['userId2'],
+            createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
+            conversationType: ConversationType.support,
+            supportTicketStatus: SupportTicketStatus.values.firstWhere(
+              (s) => s.name == (data['supportTicketStatus'] as String? ?? 'open'),
+              orElse: () => SupportTicketStatus.open,
+            ),
+            supportSubject: data['supportSubject'] as String?,
+          );
+          _isLoadingSupport = false;
+        });
+        return;
       }
       if (mounted) {
         setState(() {
-          _isLoadingAdmin = false;
+          _isLoadingSupport = false;
         });
       }
     } catch (e) {
+      debugPrint('Error loading support conversation: $e');
       if (mounted) {
         setState(() {
-          _isLoadingAdmin = false;
+          _isLoadingSupport = false;
         });
       }
     }
   }
 
-  Future<void> _navigateToAdminChat(BuildContext context) async {
-    if (_adminProfile == null) return;
+  Future<void> _navigateToSupportChat(BuildContext context) async {
+    setState(() {
+      _isCreatingSupport = true;
+    });
 
-    // Create or get match with admin
-    final firestore = FirebaseFirestore.instance;
-    final adminId = _adminProfile!.userId;
+    try {
+      String conversationId;
 
-    // Check if match exists
-    final matchQuery1 = await firestore
-        .collection('matches')
-        .where('userId1', isEqualTo: widget.userId)
-        .where('userId2', isEqualTo: adminId)
-        .limit(1)
-        .get();
+      if (_activeSupportConversation != null) {
+        // Use existing conversation
+        conversationId = _activeSupportConversation!.conversationId;
+      } else {
+        // Create new support conversation via Cloud Function
+        final functions = FirebaseFunctions.instance;
+        final result = await functions.httpsCallable('createSupportConversation').call({
+          'subject': 'General Support',
+          'category': 'general',
+          'priority': 'medium',
+        });
 
-    final matchQuery2 = await firestore
-        .collection('matches')
-        .where('userId1', isEqualTo: adminId)
-        .where('userId2', isEqualTo: widget.userId)
-        .limit(1)
-        .get();
+        conversationId = result.data['conversationId'] as String;
 
-    String matchId;
-    if (matchQuery1.docs.isNotEmpty) {
-      matchId = matchQuery1.docs.first.id;
-    } else if (matchQuery2.docs.isNotEmpty) {
-      matchId = matchQuery2.docs.first.id;
-    } else {
-      // Create new match with admin
-      final matchRef = await firestore.collection('matches').add({
-        'userId1': widget.userId,
-        'userId2': adminId,
-        'matchedAt': FieldValue.serverTimestamp(),
-        'isActive': true,
-        'user1Seen': true,
-        'user2Seen': true,
-      });
-      matchId = matchRef.id;
-    }
+        // Reload the support conversation
+        await _loadActiveSupportConversation();
+      }
 
-    if (!mounted) return;
+      if (!mounted) return;
 
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => ChatScreen(
-          matchId: matchId,
-          currentUserId: widget.userId,
-          otherUserId: adminId,
-          otherUserProfile: _adminProfile!,
+      await Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => SupportChatScreen(
+            conversationId: conversationId,
+            currentUserId: widget.userId,
+          ),
         ),
+      );
+
+      // Refresh after returning
+      if (mounted) {
+        await _loadActiveSupportConversation();
+      }
+    } catch (e) {
+      debugPrint('Error navigating to support chat: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to open support chat: $e'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isCreatingSupport = false;
+        });
+      }
+    }
+  }
+
+  Future<Profile?> _getProfile(String userId) async {
+    if (_profileCache.containsKey(userId)) {
+      return _profileCache[userId];
+    }
+    final result = await di.sl<ProfileRepository>().getProfile(userId);
+    final profile = result.fold((l) => null, (r) => r);
+    _profileCache[userId] = profile;
+    return profile;
+  }
+
+  Widget _buildSearchBar() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: TextField(
+        controller: _searchController,
+        style: const TextStyle(color: AppColors.textPrimary),
+        decoration: InputDecoration(
+          hintText: 'Search by name or @nickname',
+          hintStyle: TextStyle(
+            color: AppColors.textTertiary.withOpacity(0.6),
+          ),
+          prefixIcon: const Icon(
+            Icons.search,
+            color: AppColors.textTertiary,
+          ),
+          suffixIcon: _searchQuery.isNotEmpty
+              ? IconButton(
+                  icon: const Icon(Icons.clear, color: AppColors.textTertiary),
+                  onPressed: () {
+                    _searchController.clear();
+                    setState(() {
+                      _searchQuery = '';
+                    });
+                  },
+                )
+              : null,
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(color: AppColors.richGold),
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 12,
+          ),
+        ),
+        onChanged: (value) {
+          setState(() {
+            _searchQuery = value;
+          });
+        },
       ),
     );
   }
 
-  Widget _buildAdminSupportCard(BuildContext context) {
-    if (_adminProfile == null || _isLoadingAdmin) {
-      return const SizedBox.shrink();
+  Widget _buildSupportCard(BuildContext context) {
+    if (_isLoadingSupport) {
+      return Container(
+        margin: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [AppColors.richGold, Color(0xFFB8860B)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: const Center(
+          child: SizedBox(
+            width: 24,
+            height: 24,
+            child: CircularProgressIndicator(
+              color: Colors.white,
+              strokeWidth: 2,
+            ),
+          ),
+        ),
+      );
+    }
+
+    final hasActiveTicket = _activeSupportConversation != null;
+    String statusText = 'Tap to chat with us!';
+    Color statusBadgeColor = Colors.green;
+    String statusBadgeText = 'ONLINE';
+
+    if (hasActiveTicket) {
+      final status = _activeSupportConversation!.supportTicketStatus;
+      switch (status) {
+        case SupportTicketStatus.open:
+          statusText = 'Waiting for agent...';
+          statusBadgeColor = Colors.orange;
+          statusBadgeText = 'PENDING';
+          break;
+        case SupportTicketStatus.assigned:
+        case SupportTicketStatus.inProgress:
+          statusText = 'Agent is helping you';
+          statusBadgeColor = Colors.green;
+          statusBadgeText = 'ACTIVE';
+          break;
+        case SupportTicketStatus.waitingOnUser:
+          statusText = 'We need your response';
+          statusBadgeColor = Colors.blue;
+          statusBadgeText = 'WAITING';
+          break;
+        default:
+          break;
+      }
     }
 
     return Container(
@@ -149,7 +292,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () => _navigateToAdminChat(context),
+          onTap: _isCreatingSupport ? null : () => _navigateToSupportChat(context),
           borderRadius: BorderRadius.circular(16),
           child: Padding(
             padding: const EdgeInsets.all(16),
@@ -161,16 +304,17 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 2),
-                    image: _adminProfile!.photoUrls.isNotEmpty
-                        ? DecorationImage(
-                            image: NetworkImage(_adminProfile!.photoUrls.first),
-                            fit: BoxFit.cover,
-                          )
-                        : null,
+                    color: Colors.white.withOpacity(0.2),
                   ),
-                  child: _adminProfile!.photoUrls.isEmpty
-                      ? const Icon(Icons.support_agent, color: Colors.white, size: 32)
-                      : null,
+                  child: _isCreatingSupport
+                      ? const Padding(
+                          padding: EdgeInsets.all(12),
+                          child: CircularProgressIndicator(
+                            color: Colors.white,
+                            strokeWidth: 2,
+                          ),
+                        )
+                      : const Icon(Icons.support_agent, color: Colors.white, size: 32),
                 ),
                 const SizedBox(width: 16),
                 Expanded(
@@ -191,12 +335,12 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.2),
+                              color: statusBadgeColor.withOpacity(0.8),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            child: const Text(
-                              'OFFICIAL',
-                              style: TextStyle(
+                            child: Text(
+                              statusBadgeText,
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
@@ -206,9 +350,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                         ],
                       ),
                       const SizedBox(height: 4),
-                      const Text(
-                        'Tap to chat with us!',
-                        style: TextStyle(
+                      Text(
+                        statusText,
+                        style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 14,
                         ),
@@ -286,7 +430,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             if (state is ConversationsEmpty) {
               return ListView(
                 children: [
-                  _buildAdminSupportCard(context),
+                  _buildSupportCard(context),
                   const SizedBox(height: 40),
                   const Center(
                     child: Column(
@@ -333,57 +477,80 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                       .add(const ConversationsRefreshRequested());
                 },
                 color: AppColors.richGold,
-                child: ListView.builder(
-                  itemCount: state.conversations.length + 1, // +1 for admin card
-                  itemBuilder: (context, index) {
-                    // Admin support card at the top
-                    if (index == 0) {
-                      return _buildAdminSupportCard(context);
-                    }
+                child: CustomScrollView(
+                  slivers: [
+                    // Search bar
+                    SliverToBoxAdapter(
+                      child: _buildSearchBar(),
+                    ),
+                    // Support card
+                    SliverToBoxAdapter(
+                      child: _buildSupportCard(context),
+                    ),
+                    // Conversations list
+                    SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                        (context, index) {
+                          final conversation = state.conversations[index];
+                          final otherUserId =
+                              conversation.getOtherUserId(widget.userId);
 
-                    final conversation = state.conversations[index - 1];
-                    final otherUserId =
-                        conversation.getOtherUserId(widget.userId);
+                          return FutureBuilder(
+                            future: _getProfile(otherUserId),
+                            builder: (context, snapshot) {
+                              final profile = snapshot.data;
 
-                    return FutureBuilder(
-                      future: di
-                          .sl<ProfileRepository>()
-                          .getProfile(otherUserId),
-                      builder: (context, snapshot) {
-                        final profile = snapshot.data?.fold(
-                          (l) => null,
-                          (r) => r,
-                        );
-
-                        return ConversationCard(
-                          conversation: conversation,
-                          otherUserProfile: profile,
-                          currentUserId: widget.userId,
-                          onTap: () async {
-                            if (profile != null) {
-                              await Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => ChatScreen(
-                                    matchId: conversation.matchId,
-                                    currentUserId: widget.userId,
-                                    otherUserId: otherUserId,
-                                    otherUserProfile: profile,
-                                  ),
-                                ),
-                              );
-
-                              // Refresh conversations after returning from chat
-                              if (context.mounted) {
-                                context
-                                    .read<ConversationsBloc>()
-                                    .add(const ConversationsRefreshRequested());
+                              // Filter by search query
+                              if (_searchQuery.isNotEmpty && profile != null) {
+                                final query = _searchQuery.toLowerCase();
+                                final nameMatches = profile.displayName
+                                    .toLowerCase()
+                                    .contains(query);
+                                final nicknameMatches = profile.nickname
+                                        ?.toLowerCase()
+                                        .contains(query) ??
+                                    false;
+                                if (!nameMatches && !nicknameMatches) {
+                                  return const SizedBox.shrink();
+                                }
                               }
-                            }
-                          },
-                        );
-                      },
-                    );
-                  },
+
+                              return ConversationCard(
+                                conversation: conversation,
+                                otherUserProfile: profile,
+                                currentUserId: widget.userId,
+                                onTap: () async {
+                                  if (profile != null) {
+                                    await Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => ChatScreen(
+                                          matchId: conversation.matchId,
+                                          currentUserId: widget.userId,
+                                          otherUserId: otherUserId,
+                                          otherUserProfile: profile,
+                                        ),
+                                      ),
+                                    );
+
+                                    // Refresh conversations after returning from chat
+                                    if (context.mounted) {
+                                      context
+                                          .read<ConversationsBloc>()
+                                          .add(const ConversationsRefreshRequested());
+                                    }
+                                  }
+                                },
+                              );
+                            },
+                          );
+                        },
+                        childCount: state.conversations.length,
+                      ),
+                    ),
+                    const SliverToBoxAdapter(
+                      child: SizedBox(height: 24),
+                    ),
+                  ],
                 ),
               );
             }
