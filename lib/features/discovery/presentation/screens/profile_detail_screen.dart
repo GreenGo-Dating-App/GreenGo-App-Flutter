@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
@@ -36,6 +37,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     _pageController.dispose();
     super.dispose();
   }
+
+  /// Check if this is self-view mode (user viewing their own profile)
+  bool get _isSelfView => widget.profile.userId == widget.currentUserId;
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +119,33 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           ],
                         ),
 
-                        const SizedBox(height: 8),
+                        // Nickname
+                        if (widget.profile.nickname != null) ...[
+                          const SizedBox(height: 6),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 6,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.richGold.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(20),
+                              border: Border.all(
+                                color: AppColors.richGold.withOpacity(0.4),
+                              ),
+                            ),
+                            child: Text(
+                              '@${widget.profile.nickname}',
+                              style: const TextStyle(
+                                color: AppColors.richGold,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ],
+
+                        const SizedBox(height: 12),
 
                         // Location
                         if (widget.profile.location != null)
@@ -255,30 +285,77 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             ],
           ),
 
-          // Action buttons (only if not matched)
-          if (!isMatched && widget.onSwipe != null)
+          // Action buttons - Hide when self-view, show appropriate buttons based on match status
+          if (!_isSelfView)
             Positioned(
               bottom: 24,
               left: 0,
               right: 0,
               child: Center(
-                child: SwipeButtons(
-                  onPass: () {
-                    widget.onSwipe!(SwipeActionType.pass);
-                    Navigator.of(context).pop();
-                  },
-                  onLike: () {
-                    widget.onSwipe!(SwipeActionType.like);
-                    Navigator.of(context).pop();
-                  },
-                  onSuperLike: () {
-                    widget.onSwipe!(SwipeActionType.superLike);
-                    Navigator.of(context).pop();
-                  },
-                ),
+                child: isMatched
+                    ? _buildMatchedActionButtons(context)
+                    : widget.onSwipe != null
+                        ? SwipeButtons(
+                            onPass: () {
+                              widget.onSwipe!(SwipeActionType.pass);
+                              Navigator.of(context).pop();
+                            },
+                            onLike: () {
+                              widget.onSwipe!(SwipeActionType.like);
+                              Navigator.of(context).pop();
+                            },
+                            onSuperLike: () {
+                              widget.onSwipe!(SwipeActionType.superLike);
+                              Navigator.of(context).pop();
+                            },
+                          )
+                        : const SizedBox.shrink(),
               ),
             ),
         ],
+      ),
+    );
+  }
+
+  /// Build action buttons when users are matched (Chat button)
+  Widget _buildMatchedActionButtons(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          // Chat Button
+          Expanded(
+            child: ElevatedButton.icon(
+              onPressed: () => _navigateToChat(context),
+              icon: const Icon(Icons.chat_bubble),
+              label: Text('Chat with ${widget.profile.displayName}'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _navigateToChat(BuildContext context) {
+    if (widget.match == null) return;
+
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ChatScreen(
+          matchId: widget.match!.matchId,
+          currentUserId: widget.currentUserId,
+          otherUserId: widget.profile.userId,
+          otherUserProfile: widget.profile,
+        ),
       ),
     );
   }
