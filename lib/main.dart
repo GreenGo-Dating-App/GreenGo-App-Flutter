@@ -38,6 +38,12 @@ import 'features/language_learning/presentation/screens/language_learning_home_s
 import 'features/language_learning/presentation/screens/language_detail_screen.dart';
 import 'features/language_learning/presentation/screens/flashcard_session_screen.dart';
 import 'features/admin/presentation/screens/early_access_admin_screen.dart';
+import 'features/admin/presentation/screens/support_tickets_screen.dart';
+import 'features/admin/presentation/screens/verification_admin_screen.dart';
+import 'features/admin/presentation/screens/reports_admin_screen.dart';
+import 'features/admin/presentation/screens/tier_management_screen.dart';
+import 'features/admin/presentation/screens/coin_management_screen.dart';
+import 'features/admin/presentation/screens/gamification_management_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -250,6 +256,61 @@ class GreenGoChatApp extends StatelessWidget {
                 final adminId = settings.arguments as String? ?? '';
                 return MaterialPageRoute(
                   builder: (context) => EarlyAccessAdminScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/support_tickets') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => SupportTicketsScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/verifications') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => VerificationAdminScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/reports') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => ReportsAdminScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/tiers') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => TierManagementScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/coins') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => CoinManagementScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/admin/gamification') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                final adminId = args?['adminId'] as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => GamificationManagementScreen(
                     adminId: adminId,
                   ),
                 );

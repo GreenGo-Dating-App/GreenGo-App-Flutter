@@ -65,6 +65,12 @@ class NotificationEntity extends Equatable {
         return 'local_offer';
       case NotificationType.system:
         return 'info';
+      case NotificationType.newChat:
+        return 'forum';
+      case NotificationType.coinsPurchased:
+        return 'monetization_on';
+      case NotificationType.progressAchieved:
+        return 'emoji_events';
     }
   }
 
@@ -120,6 +126,9 @@ enum NotificationType {
   matchExpiring,
   promotional,
   system,
+  newChat,           // First message in a conversation
+  coinsPurchased,    // Coins purchased successfully
+  progressAchieved,  // Achievement unlocked
 }
 
 /// Extension for NotificationType
@@ -142,6 +151,12 @@ extension NotificationTypeExtension on NotificationType {
         return 'promotional';
       case NotificationType.system:
         return 'system';
+      case NotificationType.newChat:
+        return 'new_chat';
+      case NotificationType.coinsPurchased:
+        return 'coins_purchased';
+      case NotificationType.progressAchieved:
+        return 'progress_achieved';
     }
   }
 
@@ -163,6 +178,12 @@ extension NotificationTypeExtension on NotificationType {
         return NotificationType.promotional;
       case 'system':
         return NotificationType.system;
+      case 'new_chat':
+        return NotificationType.newChat;
+      case 'coins_purchased':
+        return NotificationType.coinsPurchased;
+      case 'progress_achieved':
+        return NotificationType.progressAchieved;
       default:
         return NotificationType.system;
     }

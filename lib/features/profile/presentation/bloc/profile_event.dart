@@ -88,3 +88,16 @@ class ProfileCompletionCheckRequested extends ProfileEvent {
   @override
   List<Object?> get props => [userId];
 }
+
+class ProfileNicknameUpdateRequested extends ProfileEvent {
+  final String userId;
+  final String nickname;
+
+  const ProfileNicknameUpdateRequested({
+    required this.userId,
+    required this.nickname,
+  });
+
+  @override
+  List<Object?> get props => [userId, nickname];
+}

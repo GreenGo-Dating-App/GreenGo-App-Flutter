@@ -7,12 +7,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/user_level.dart';
 
 class UserLevelModel extends UserLevel {
-  const UserLevelModel({
+  UserLevelModel({
     required super.userId,
     required super.level,
     required super.currentXP,
     required super.totalXP,
-    required super.lastUpdated,
+    super.lastUpdated,
     super.region,
     super.regionalRank,
     super.isVIP,

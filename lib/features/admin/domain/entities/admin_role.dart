@@ -86,6 +86,7 @@ enum AdminRole {
           AdminFeature.userProfileView,
           AdminFeature.userCommunication,
           AdminFeature.subscriptionManagement,
+          AdminFeature.supportChatManagement,
         ];
       case AdminRole.analyst:
         return [
@@ -117,6 +118,9 @@ enum AdminRole {
           Permission.overrideSubscriptions,
           Permission.adjustCoins,
           Permission.sendNotifications,
+          Permission.viewSupportTickets,
+          Permission.assignSupportTickets,
+          Permission.resolveSupport,
         ];
       case AdminRole.analyst:
         return [
@@ -142,6 +146,7 @@ enum AdminFeature {
   userCommunication,
   subscriptionManagement,
   systemSettings,
+  supportChatManagement,  // Manage support conversations
 }
 
 /// Granular permissions (Point 227)
@@ -183,6 +188,11 @@ enum Permission {
   manageAdmins,
   viewAuditLog,
   systemSettings,
+
+  // Support Chat
+  viewSupportTickets,
+  assignSupportTickets,
+  resolveSupport,
 }
 
 /// Admin action audit log entry (Point 235)
@@ -264,4 +274,10 @@ enum AdminAction {
   modifiedAdmin,
   deletedAdmin,
   changedSettings,
+
+  // Support
+  assignedSupportTicket,
+  resolvedSupportTicket,
+  closedSupportTicket,
+  respondedToSupport,
 }

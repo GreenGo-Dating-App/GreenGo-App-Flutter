@@ -45,6 +45,7 @@ class UserAccessData {
   final SubscriptionTier membershipTier;
   final bool notificationsEnabled;
   final bool hasEarlyAccess;
+  final bool isAdmin;
 
   UserAccessData({
     required this.userId,
@@ -55,6 +56,7 @@ class UserAccessData {
     required this.membershipTier,
     this.notificationsEnabled = false,
     this.hasEarlyAccess = false,
+    this.isAdmin = false,
   });
 
   factory UserAccessData.fromFirestore(Map<String, dynamic> data, String docId) {
@@ -83,6 +85,7 @@ class UserAccessData {
       membershipTier: tier,
       notificationsEnabled: data['notificationsEnabled'] as bool? ?? false,
       hasEarlyAccess: data['hasEarlyAccess'] as bool? ?? false,
+      isAdmin: data['isAdmin'] as bool? ?? false,
     );
   }
 
@@ -95,6 +98,7 @@ class UserAccessData {
       'membershipTier': membershipTier.name.toLowerCase(),
       'notificationsEnabled': notificationsEnabled,
       'hasEarlyAccess': hasEarlyAccess,
+      'isAdmin': isAdmin,
     };
   }
 
@@ -103,24 +107,24 @@ class UserAccessData {
 
   /// Check if user can access the app
   /// User can access if:
-  /// 1. They are approved by admin, AND
-  /// 2. The current date is after their access date OR they are a Test user
+  /// 1. They are an admin or test user (bypass all restrictions), OR
+  /// 2. They are approved by admin AND the current date is after their access date
   bool get canAccessApp {
+    // Admin and test users bypass ALL restrictions
+    if (isAdmin || isTestUser) {
+      return true;
+    }
     if (approvalStatus != ApprovalStatus.approved) {
       return false;
-    }
-    // Test users bypass the countdown entirely
-    if (isTestUser) {
-      return true;
     }
     return DateTime.now().isAfter(accessDate) || DateTime.now().isAtSameMomentAs(accessDate);
   }
 
   /// Check if countdown is still active (access date not reached yet)
-  /// Test users never have an active countdown
+  /// Admin and test users never have an active countdown
   bool get isCountdownActive {
-    // Test users bypass countdown
-    if (isTestUser) {
+    // Admin and test users bypass countdown
+    if (isAdmin || isTestUser) {
       return false;
     }
     final now = DateTime.now();
@@ -129,9 +133,14 @@ class UserAccessData {
 
   /// Check if user should see pending approval screen
   /// Only show when:
-  /// 1. Countdown is over (access date has passed), AND
-  /// 2. User is still pending approval
+  /// 1. User is NOT an admin or test user, AND
+  /// 2. Countdown is over (access date has passed), AND
+  /// 3. User is still pending approval
   bool get shouldShowPendingApproval {
+    // Admin and test users never see pending approval screen
+    if (isAdmin || isTestUser) {
+      return false;
+    }
     return !isCountdownActive && approvalStatus == ApprovalStatus.pending;
   }
 

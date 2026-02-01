@@ -105,6 +105,21 @@ class AdminDashboardScreen extends StatelessWidget {
             _buildGamificationSection(context),
             const SizedBox(height: AppDimensions.paddingL),
 
+            // Support Chat Management
+            if (_hasPermission(Permission.viewSupportTickets)) ...[
+              const Text(
+                'Support Management',
+                style: TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: AppDimensions.paddingM),
+              _buildSupportSection(context),
+              const SizedBox(height: AppDimensions.paddingL),
+            ],
+
             // Analytics
             if (_hasPermission(Permission.viewAnalytics)) ...[
               const Text(
@@ -184,37 +199,77 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildQuickStats(BuildContext context) {
-    return Row(
+    return Column(
       children: [
-        Expanded(
-          child: _StatCard(
-            icon: Icons.people,
-            iconColor: AppColors.successGreen,
-            title: 'Active Users',
-            value: '--',
-            subtitle: 'Today',
-          ),
+        Row(
+          children: [
+            Expanded(
+              child: _StatCard(
+                icon: Icons.people,
+                iconColor: AppColors.successGreen,
+                title: 'Active Users',
+                value: '--',
+                subtitle: 'Today',
+              ),
+            ),
+            const SizedBox(width: AppDimensions.paddingM),
+            Expanded(
+              child: _StatCard(
+                icon: Icons.verified_user,
+                iconColor: AppColors.richGold,
+                title: 'Pending',
+                value: '--',
+                subtitle: 'Verifications',
+              ),
+            ),
+            const SizedBox(width: AppDimensions.paddingM),
+            Expanded(
+              child: _StatCard(
+                icon: Icons.report,
+                iconColor: AppColors.errorRed,
+                title: 'Reports',
+                value: '--',
+                subtitle: 'Unresolved',
+              ),
+            ),
+          ],
         ),
-        const SizedBox(width: AppDimensions.paddingM),
-        Expanded(
-          child: _StatCard(
-            icon: Icons.verified_user,
-            iconColor: AppColors.richGold,
-            title: 'Pending',
-            value: '--',
-            subtitle: 'Verifications',
+        if (_hasPermission(Permission.viewSupportTickets)) ...[
+          const SizedBox(height: AppDimensions.paddingM),
+          Row(
+            children: [
+              Expanded(
+                child: _StatCard(
+                  icon: Icons.support_agent,
+                  iconColor: Colors.blue,
+                  title: 'Support',
+                  value: '--',
+                  subtitle: 'Open Tickets',
+                ),
+              ),
+              const SizedBox(width: AppDimensions.paddingM),
+              Expanded(
+                child: _StatCard(
+                  icon: Icons.hourglass_empty,
+                  iconColor: Colors.orange,
+                  title: 'Waiting',
+                  value: '--',
+                  subtitle: 'Unassigned',
+                ),
+              ),
+              const SizedBox(width: AppDimensions.paddingM),
+              Expanded(
+                child: _StatCard(
+                  icon: Icons.check_circle,
+                  iconColor: AppColors.successGreen,
+                  title: 'Resolved',
+                  value: '--',
+                  subtitle: 'Today',
+                ),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(width: AppDimensions.paddingM),
-        Expanded(
-          child: _StatCard(
-            icon: Icons.report,
-            iconColor: AppColors.errorRed,
-            title: 'Reports',
-            value: '--',
-            subtitle: 'Unresolved',
-          ),
-        ),
+        ],
       ],
     );
   }
@@ -328,6 +383,36 @@ class AdminDashboardScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildSupportSection(BuildContext context) {
+    return Column(
+      children: [
+        _AdminMenuItem(
+          icon: Icons.support_agent,
+          iconColor: Colors.blue,
+          title: 'Support Tickets',
+          subtitle: 'View and manage user support conversations',
+          onTap: () => _navigateTo(context, 'support_tickets'),
+        ),
+        if (_hasPermission(Permission.assignSupportTickets))
+          _AdminMenuItem(
+            icon: Icons.assignment_ind,
+            iconColor: Colors.teal,
+            title: 'Ticket Assignment',
+            subtitle: 'Assign tickets to support agents',
+            onTap: () => _navigateTo(context, 'ticket_assignment'),
+          ),
+        if (_hasPermission(Permission.manageAdmins))
+          _AdminMenuItem(
+            icon: Icons.group_add,
+            iconColor: Colors.purple,
+            title: 'Support Agents',
+            subtitle: 'Manage support agent accounts',
+            onTap: () => _navigateTo(context, 'support_agents'),
+          ),
+      ],
+    );
+  }
+
   Widget _buildAnalyticsSection(BuildContext context) {
     return Column(
       children: [
@@ -421,6 +506,24 @@ class AdminDashboardScreen extends StatelessWidget {
         Navigator.of(context).pushNamed(
           '/admin/gamification',
           arguments: {'adminId': adminId, 'tab': 'streaks'},
+        );
+        break;
+      case 'support_tickets':
+        Navigator.of(context).pushNamed(
+          '/admin/support_tickets',
+          arguments: adminId,
+        );
+        break;
+      case 'ticket_assignment':
+        Navigator.of(context).pushNamed(
+          '/admin/ticket_assignment',
+          arguments: adminId,
+        );
+        break;
+      case 'support_agents':
+        Navigator.of(context).pushNamed(
+          '/admin/support_agents',
+          arguments: adminId,
         );
         break;
       default:

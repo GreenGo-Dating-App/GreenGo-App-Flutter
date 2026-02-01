@@ -14,16 +14,16 @@ class UserLevel extends Equatable {
   final int regionalRank;
   final bool isVIP; // Level 50+
 
-  const UserLevel({
+  UserLevel({
     required this.userId,
     required this.level,
     required this.currentXP,
     required this.totalXP,
-    required this.lastUpdated,
+    DateTime? lastUpdated,
     this.region = 'global',
     this.regionalRank = 0,
     this.isVIP = false,
-  });
+  }) : lastUpdated = lastUpdated ?? DateTime.now();
 
   /// Get XP required for next level
   int get xpForNextLevel {
@@ -237,6 +237,13 @@ class LevelSystem {
     }
     return breakdown;
   }
+
+  /// Get XP into current level (XP beyond the current level threshold)
+  static int xpIntoCurrentLevel(int totalXP) {
+    final level = levelFromXP(totalXP);
+    final xpForCurrentLevel = totalXPForLevel(level - 1);
+    return totalXP - xpForCurrentLevel;
+  }
 }
 
 /// Level Rewards (Point 190)
@@ -392,8 +399,8 @@ class StandardLevelRewards {
     ],
   );
 
-  /// Get rewards for level
-  static LevelRewards? getRewardsForLevel(int level) {
+  /// Get rewards for level (returns LevelRewards object or null)
+  static LevelRewards? getLevelRewardsForLevel(int level) {
     switch (level) {
       case 5:
         return level5;
@@ -410,6 +417,12 @@ class StandardLevelRewards {
       default:
         return null;
     }
+  }
+
+  /// Get rewards for level as a list (for datasource compatibility)
+  static List<LevelReward> getRewardsForLevel(int level) {
+    final levelRewards = getLevelRewardsForLevel(level);
+    return levelRewards?.rewards ?? [];
   }
 
   /// Get all milestone levels

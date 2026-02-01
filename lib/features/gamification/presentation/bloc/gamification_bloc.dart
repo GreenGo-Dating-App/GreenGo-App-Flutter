@@ -68,6 +68,9 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     // Seasonal Event Events
     on<LoadSeasonalEvent>(_onLoadSeasonalEvent);
     on<ApplySeasonalTheme>(_onApplySeasonalTheme);
+
+    // UI State Management Events
+    on<ClearLevelUpFlag>(_onClearLevelUpFlag);
   }
 
   // ===== Achievement Event Handlers =====
@@ -435,5 +438,14 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
         // This event just triggers a reload of the theme
       },
     );
+  }
+
+  // ===== UI State Management Event Handlers =====
+
+  void _onClearLevelUpFlag(
+    ClearLevelUpFlag event,
+    Emitter<GamificationState> emit,
+  ) {
+    emit(state.copyWith(clearLeveledUp: true));
   }
 }

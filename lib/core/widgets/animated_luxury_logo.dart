@@ -72,10 +72,15 @@ class _AnimatedLuxuryLogoState extends State<AnimatedLuxuryLogo>
                       shape: BoxShape.circle,
                       gradient: AppColors.goldGradient,
                     ),
-                    child: const Icon(
-                      Icons.favorite,
-                      size: 70,
-                      color: AppColors.deepBlack,
+                    child: Center(
+                      child: Text(
+                        'G',
+                        style: TextStyle(
+                          fontSize: widget.size * 0.5,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.deepBlack,
+                        ),
+                      ),
                     ),
                   );
                 },

@@ -11,6 +11,30 @@ enum ChatTheme {
   ocean,   // Ocean blue
 }
 
+/// Conversation Type Options
+enum ConversationType {
+  match,    // Regular match conversation between two users
+  support,  // Support conversation between user and support agent
+}
+
+/// Support Ticket Priority
+enum SupportPriority {
+  low,
+  medium,
+  high,
+  urgent,
+}
+
+/// Support Ticket Status
+enum SupportTicketStatus {
+  open,       // New ticket, not yet assigned
+  assigned,   // Assigned to support agent
+  inProgress, // Being worked on
+  waitingOnUser, // Waiting for user response
+  resolved,   // Resolved
+  closed,     // Closed
+}
+
 /// Conversation Entity
 ///
 /// Represents a chat conversation between two matched users
@@ -44,6 +68,17 @@ class Conversation extends Equatable {
   // Additional settings
   final Map<String, dynamic>? settings;
 
+  // Conversation type (match or support)
+  final ConversationType conversationType;
+
+  // Support-specific fields (only used when conversationType is support)
+  final String? supportAgentId;       // Assigned support agent
+  final SupportPriority? supportPriority;
+  final SupportTicketStatus? supportTicketStatus;
+  final String? supportCategory;       // e.g., "billing", "technical", "account"
+  final String? supportSubject;        // User's initial subject/topic
+  final DateTime? supportResolvedAt;   // When the ticket was resolved
+
   const Conversation({
     required this.conversationId,
     required this.matchId,
@@ -63,6 +98,13 @@ class Conversation extends Equatable {
     this.archivedAt,
     this.theme = ChatTheme.gold,
     this.settings,
+    this.conversationType = ConversationType.match,
+    this.supportAgentId,
+    this.supportPriority,
+    this.supportTicketStatus,
+    this.supportCategory,
+    this.supportSubject,
+    this.supportResolvedAt,
   });
 
   /// Get the other user's ID
@@ -77,6 +119,17 @@ class Conversation extends Equatable {
 
   /// Check if there are unread messages
   bool get hasUnreadMessages => unreadCount > 0;
+
+  /// Check if this is a support conversation
+  bool get isSupportConversation => conversationType == ConversationType.support;
+
+  /// Check if this is a match conversation
+  bool get isMatchConversation => conversationType == ConversationType.match;
+
+  /// Check if support ticket is resolved
+  bool get isSupportResolved =>
+      supportTicketStatus == SupportTicketStatus.resolved ||
+      supportTicketStatus == SupportTicketStatus.closed;
 
   /// Check if mute is active
   bool get isCurrentlyMuted {
@@ -197,6 +250,13 @@ class Conversation extends Equatable {
     DateTime? archivedAt,
     ChatTheme? theme,
     Map<String, dynamic>? settings,
+    ConversationType? conversationType,
+    String? supportAgentId,
+    SupportPriority? supportPriority,
+    SupportTicketStatus? supportTicketStatus,
+    String? supportCategory,
+    String? supportSubject,
+    DateTime? supportResolvedAt,
   }) {
     return Conversation(
       conversationId: conversationId ?? this.conversationId,
@@ -217,6 +277,13 @@ class Conversation extends Equatable {
       archivedAt: archivedAt ?? this.archivedAt,
       theme: theme ?? this.theme,
       settings: settings ?? this.settings,
+      conversationType: conversationType ?? this.conversationType,
+      supportAgentId: supportAgentId ?? this.supportAgentId,
+      supportPriority: supportPriority ?? this.supportPriority,
+      supportTicketStatus: supportTicketStatus ?? this.supportTicketStatus,
+      supportCategory: supportCategory ?? this.supportCategory,
+      supportSubject: supportSubject ?? this.supportSubject,
+      supportResolvedAt: supportResolvedAt ?? this.supportResolvedAt,
     );
   }
 
@@ -240,5 +307,12 @@ class Conversation extends Equatable {
         archivedAt,
         theme,
         settings,
+        conversationType,
+        supportAgentId,
+        supportPriority,
+        supportTicketStatus,
+        supportCategory,
+        supportSubject,
+        supportResolvedAt,
       ];
 }

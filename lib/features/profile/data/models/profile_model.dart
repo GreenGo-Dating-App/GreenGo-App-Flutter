@@ -8,6 +8,7 @@ class ProfileModel extends Profile {
   const ProfileModel({
     required super.userId,
     required super.displayName,
+    super.nickname,
     required super.dateOfBirth,
     required super.gender,
     required super.photoUrls,
@@ -31,6 +32,7 @@ class ProfileModel extends Profile {
     super.verificationReviewedAt,
     super.verificationReviewedBy,
     super.isAdmin,
+    super.isSupport,
     super.socialLinks,
     super.membershipTier,
     super.membershipStartDate,
@@ -40,14 +42,25 @@ class ProfileModel extends Profile {
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
     return ProfileModel(
       userId: json['userId'] as String,
-      displayName: json['displayName'] as String,
-      dateOfBirth: (json['dateOfBirth'] as Timestamp).toDate(),
-      gender: json['gender'] as String,
-      photoUrls: List<String>.from(json['photoUrls'] as List),
-      bio: json['bio'] as String,
-      interests: List<String>.from(json['interests'] as List),
-      location: LocationModel.fromJson(json['location'] as Map<String, dynamic>),
-      languages: List<String>.from(json['languages'] as List),
+      displayName: json['displayName'] as String? ?? 'Unknown',
+      nickname: json['nickname'] as String?,
+      dateOfBirth: json['dateOfBirth'] != null
+          ? (json['dateOfBirth'] as Timestamp).toDate()
+          : DateTime(1990, 1, 1),
+      gender: json['gender'] as String? ?? 'other',
+      photoUrls: json['photoUrls'] != null
+          ? List<String>.from(json['photoUrls'] as List)
+          : (json['photos'] != null ? List<String>.from(json['photos'] as List) : <String>[]),
+      bio: json['bio'] as String? ?? '',
+      interests: json['interests'] != null
+          ? List<String>.from(json['interests'] as List)
+          : <String>[],
+      location: json['location'] != null
+          ? LocationModel.fromJson(json['location'] as Map<String, dynamic>)
+          : const LocationModel(latitude: 0, longitude: 0, city: 'Unknown', country: 'Unknown', displayAddress: 'Unknown'),
+      languages: json['languages'] != null
+          ? List<String>.from(json['languages'] as List)
+          : <String>[],
       voiceRecordingUrl: json['voiceRecordingUrl'] as String?,
       personalityTraits: json['personalityTraits'] != null
           ? PersonalityTraitsModel.fromJson(
@@ -57,9 +70,13 @@ class ProfileModel extends Profile {
       occupation: json['occupation'] as String?,
       lookingFor: json['lookingFor'] as String?,
       height: json['height'] as int?,
-      createdAt: (json['createdAt'] as Timestamp).toDate(),
-      updatedAt: (json['updatedAt'] as Timestamp).toDate(),
-      isComplete: json['isComplete'] as bool,
+      createdAt: json['createdAt'] != null
+          ? (json['createdAt'] as Timestamp).toDate()
+          : DateTime.now(),
+      updatedAt: json['updatedAt'] != null
+          ? (json['updatedAt'] as Timestamp).toDate()
+          : DateTime.now(),
+      isComplete: json['isComplete'] as bool? ?? false,
       verificationStatus: _parseVerificationStatus(json['verificationStatus'] as String?),
       verificationPhotoUrl: json['verificationPhotoUrl'] as String?,
       verificationRejectionReason: json['verificationRejectionReason'] as String?,
@@ -71,6 +88,7 @@ class ProfileModel extends Profile {
           : null,
       verificationReviewedBy: json['verificationReviewedBy'] as String?,
       isAdmin: json['isAdmin'] as bool? ?? false,
+      isSupport: json['isSupport'] as bool? ?? false,
       socialLinks: json['socialLinks'] != null
           ? SocialLinksModel.fromJson(json['socialLinks'] as Map<String, dynamic>)
           : null,
@@ -132,6 +150,7 @@ class ProfileModel extends Profile {
     return {
       'userId': userId,
       'displayName': displayName,
+      'nickname': nickname,
       'dateOfBirth': Timestamp.fromDate(dateOfBirth),
       'gender': gender,
       'photoUrls': photoUrls,
@@ -155,6 +174,7 @@ class ProfileModel extends Profile {
           : null,
       'verificationReviewedBy': verificationReviewedBy,
       'isAdmin': isAdmin,
+      'isSupport': isSupport,
       'socialLinks': socialLinks != null
           ? SocialLinksModel.fromEntity(socialLinks!).toJson()
           : null,
@@ -172,6 +192,7 @@ class ProfileModel extends Profile {
     return ProfileModel(
       userId: profile.userId,
       displayName: profile.displayName,
+      nickname: profile.nickname,
       dateOfBirth: profile.dateOfBirth,
       gender: profile.gender,
       photoUrls: profile.photoUrls,
@@ -195,6 +216,7 @@ class ProfileModel extends Profile {
       verificationReviewedAt: profile.verificationReviewedAt,
       verificationReviewedBy: profile.verificationReviewedBy,
       isAdmin: profile.isAdmin,
+      isSupport: profile.isSupport,
       socialLinks: profile.socialLinks,
       membershipTier: profile.membershipTier,
       membershipStartDate: profile.membershipStartDate,

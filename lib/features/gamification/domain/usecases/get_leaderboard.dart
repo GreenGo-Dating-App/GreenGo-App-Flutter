@@ -50,20 +50,21 @@ class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
         );
 
         // Find user's entry
-        userEntry = entries.firstWhere(
-          (e) => e.userId == params.userId,
-          orElse: () {
-            // User not in top entries, get their level
-            return LeaderboardEntry(
-              rank: userRank!,
-              userId: params.userId!,
-              level: 0,
-              totalXP: 0,
-              region: params.region ?? '',
-              isVIP: false,
-            );
-          },
-        );
+        final matchingEntries = entries.where((e) => e.userId == params.userId);
+        if (matchingEntries.isNotEmpty) {
+          userEntry = matchingEntries.first;
+        } else {
+          // User not in top entries, create placeholder entry
+          userEntry = LeaderboardEntry(
+            rank: userRank!,
+            userId: params.userId!,
+            username: 'You',
+            level: 0,
+            totalXP: 0,
+            region: params.region ?? '',
+            isVIP: false,
+          );
+        }
       }
     }
 

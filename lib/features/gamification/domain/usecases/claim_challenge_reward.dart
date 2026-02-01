@@ -40,17 +40,17 @@ class ClaimChallengeReward
         requiredCount: 1,
         isCompleted: false,
         completedAt: null,
-        rewardsClaimed: false,
+        createdAt: DateTime.now(),
       ),
     );
 
     // Check if challenge is completed
     if (!progress.canClaim) {
-      if (progress.isCompleted && progress.rewardsClaimed) {
-        return Left(CacheFailure(message: 'Rewards already claimed'));
+      if (progress.isCompleted) {
+        return const Left(CacheFailure('Rewards already claimed'));
       } else if (progress.progress < progress.requiredCount) {
         return Left(CacheFailure(
-          message: 'Challenge not completed. Progress: ${progress.progress}/${progress.requiredCount}',
+          'Challenge not completed. Progress: ${progress.progress}/${progress.requiredCount}',
         ));
       }
     }
@@ -72,7 +72,7 @@ class ClaimChallengeReward
 
     // Get challenge details
     final allDailyChallenges = DailyChallenges.getRotatingChallenges();
-    final allWeeklyChallenges = WeeklyChallenges.getAllWeeklyChallenges();
+    final allWeeklyChallenges = WeeklyChallenges.getWeeklyChallenges();
 
     final challenge = [...allDailyChallenges, ...allWeeklyChallenges].firstWhere(
       (c) => c.challengeId == params.challengeId,

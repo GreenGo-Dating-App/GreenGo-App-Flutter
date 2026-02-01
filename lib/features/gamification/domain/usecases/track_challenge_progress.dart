@@ -43,7 +43,7 @@ class TrackChallengeProgress
     if (wasJustCompleted) {
       // Get challenge details to show rewards
       final allDailyChallenges = DailyChallenges.getRotatingChallenges();
-      final allWeeklyChallenges = WeeklyChallenges.getAllWeeklyChallenges();
+      final allWeeklyChallenges = WeeklyChallenges.getWeeklyChallenges();
 
       challenge = [...allDailyChallenges, ...allWeeklyChallenges].firstWhere(
         (c) => c.challengeId == params.challengeId,

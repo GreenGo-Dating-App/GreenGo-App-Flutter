@@ -7,7 +7,7 @@ class AppConfig {
   AppConfig._();
 
   /// Environment name (for debugging)
-  static const String environment = 'MVP';
+  static const String environment = 'Production';
 
   // ============================================================================
   // LOCAL DEVELOPMENT / EMULATOR SETTINGS
@@ -16,7 +16,7 @@ class AppConfig {
   /// Use Firebase Emulators (running in Docker) for local development
   /// Set to true when developing locally with Docker containers
   /// Set to false when testing against production Firebase
-  static const bool useLocalEmulators = true;
+  static const bool useLocalEmulators = false;
 
   /// Emulator host address
   /// - Use '10.0.2.2' for Android Emulator (points to host machine's localhost)
@@ -96,8 +96,8 @@ class AppConfig {
   static const bool enableLanguageLearning = false;
 
   /// Enable/Disable gamification features (achievements, badges, streaks)
-  /// Set to false for MVP to focus on core dating features
-  static const bool enableGamification = false;
+  /// Enabled for full feature experience
+  static const bool enableGamification = true;
 
   /// Enable/Disable analytics tracking
   static const bool enableAnalytics = true;

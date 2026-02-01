@@ -15,6 +15,7 @@ enum VerificationStatus {
 class Profile extends Equatable {
   final String userId;
   final String displayName;
+  final String? nickname; // Unique username, format: lowercase alphanumeric + underscores, 3-20 chars
   final DateTime dateOfBirth;
   final String gender;
   final List<String> photoUrls;
@@ -40,6 +41,7 @@ class Profile extends Equatable {
   final DateTime? verificationReviewedAt;
   final String? verificationReviewedBy;  // Admin user ID
   final bool isAdmin;  // Whether this user is an admin
+  final bool isSupport;  // Whether this user is a support agent
 
   // Social media links
   final SocialLinks? socialLinks;
@@ -52,6 +54,7 @@ class Profile extends Equatable {
   const Profile({
     required this.userId,
     required this.displayName,
+    this.nickname,
     required this.dateOfBirth,
     required this.gender,
     required this.photoUrls,
@@ -75,11 +78,15 @@ class Profile extends Equatable {
     this.verificationReviewedAt,
     this.verificationReviewedBy,
     this.isAdmin = false,
+    this.isSupport = false,
     this.socialLinks,
     this.membershipTier = MembershipTier.free,
     this.membershipStartDate,
     this.membershipEndDate,
   });
+
+  /// Get formatted nickname with @ prefix
+  String? get formattedNickname => nickname != null ? '@$nickname' : null;
 
   /// Check if user can access full app features
   bool get isVerified => verificationStatus == VerificationStatus.approved;
@@ -107,6 +114,7 @@ class Profile extends Equatable {
   List<Object?> get props => [
         userId,
         displayName,
+        nickname,
         dateOfBirth,
         gender,
         photoUrls,
@@ -130,11 +138,81 @@ class Profile extends Equatable {
         verificationReviewedAt,
         verificationReviewedBy,
         isAdmin,
+        isSupport,
         socialLinks,
         membershipTier,
         membershipStartDate,
         membershipEndDate,
       ];
+
+  /// Copy with updated fields
+  Profile copyWith({
+    String? userId,
+    String? displayName,
+    String? nickname,
+    DateTime? dateOfBirth,
+    String? gender,
+    List<String>? photoUrls,
+    String? bio,
+    List<String>? interests,
+    Location? location,
+    List<String>? languages,
+    String? voiceRecordingUrl,
+    PersonalityTraits? personalityTraits,
+    String? education,
+    String? occupation,
+    String? lookingFor,
+    int? height,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+    bool? isComplete,
+    VerificationStatus? verificationStatus,
+    String? verificationPhotoUrl,
+    String? verificationRejectionReason,
+    DateTime? verificationSubmittedAt,
+    DateTime? verificationReviewedAt,
+    String? verificationReviewedBy,
+    bool? isAdmin,
+    bool? isSupport,
+    SocialLinks? socialLinks,
+    MembershipTier? membershipTier,
+    DateTime? membershipStartDate,
+    DateTime? membershipEndDate,
+  }) {
+    return Profile(
+      userId: userId ?? this.userId,
+      displayName: displayName ?? this.displayName,
+      nickname: nickname ?? this.nickname,
+      dateOfBirth: dateOfBirth ?? this.dateOfBirth,
+      gender: gender ?? this.gender,
+      photoUrls: photoUrls ?? this.photoUrls,
+      bio: bio ?? this.bio,
+      interests: interests ?? this.interests,
+      location: location ?? this.location,
+      languages: languages ?? this.languages,
+      voiceRecordingUrl: voiceRecordingUrl ?? this.voiceRecordingUrl,
+      personalityTraits: personalityTraits ?? this.personalityTraits,
+      education: education ?? this.education,
+      occupation: occupation ?? this.occupation,
+      lookingFor: lookingFor ?? this.lookingFor,
+      height: height ?? this.height,
+      createdAt: createdAt ?? this.createdAt,
+      updatedAt: updatedAt ?? this.updatedAt,
+      isComplete: isComplete ?? this.isComplete,
+      verificationStatus: verificationStatus ?? this.verificationStatus,
+      verificationPhotoUrl: verificationPhotoUrl ?? this.verificationPhotoUrl,
+      verificationRejectionReason: verificationRejectionReason ?? this.verificationRejectionReason,
+      verificationSubmittedAt: verificationSubmittedAt ?? this.verificationSubmittedAt,
+      verificationReviewedAt: verificationReviewedAt ?? this.verificationReviewedAt,
+      verificationReviewedBy: verificationReviewedBy ?? this.verificationReviewedBy,
+      isAdmin: isAdmin ?? this.isAdmin,
+      isSupport: isSupport ?? this.isSupport,
+      socialLinks: socialLinks ?? this.socialLinks,
+      membershipTier: membershipTier ?? this.membershipTier,
+      membershipStartDate: membershipStartDate ?? this.membershipStartDate,
+      membershipEndDate: membershipEndDate ?? this.membershipEndDate,
+    );
+  }
 }
 
 class PersonalityTraits extends Equatable {

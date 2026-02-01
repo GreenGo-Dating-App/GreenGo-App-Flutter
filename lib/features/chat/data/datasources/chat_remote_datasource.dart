@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/services/content_filter_service.dart';
+import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
@@ -214,6 +215,44 @@ abstract class ChatRemoteDataSource {
     required String conversationId,
     required String userId,
   });
+
+  // ============== Support Chat Methods ==============
+
+  /// Create a support conversation for a user
+  Future<ConversationModel> createSupportConversation({
+    required String userId,
+    required String subject,
+    String? category,
+    SupportPriority priority,
+  });
+
+  /// Get user's active support conversation (if any)
+  Future<ConversationModel?> getActiveSupportConversation(String userId);
+
+  /// Get all support conversations (for support agents)
+  Stream<List<ConversationModel>> getSupportConversationsStream({
+    SupportTicketStatus? filterStatus,
+    String? assignedAgentId,
+  });
+
+  /// Assign support conversation to agent
+  Future<void> assignSupportAgent({
+    required String conversationId,
+    required String agentId,
+  });
+
+  /// Update support ticket status
+  Future<void> updateSupportTicketStatus({
+    required String conversationId,
+    required SupportTicketStatus status,
+    String? resolvedByAgentId,
+  });
+
+  /// Get support agent profile
+  Future<Map<String, dynamic>?> getSupportAgentProfile(String agentId);
+
+  /// Get available support agents
+  Future<List<Map<String, dynamic>>> getAvailableSupportAgents();
 }
 
 /// Implementation
@@ -383,9 +422,82 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'lastMessage': content,
       });
 
+      // Check if this is the first message in conversation (new chat notification)
+      // Count total messages in conversation
+      final messagesCount = await firestore
+          .collection('conversations')
+          .doc(conversation.conversationId)
+          .collection('messages')
+          .count()
+          .get();
+
+      // Get sender profile for notification
+      final senderProfile = await firestore.collection('profiles').doc(senderId).get();
+      final senderNickname = senderProfile.data()?['nickname'] as String? ?? '';
+      final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
+
+      if (messagesCount.count == 1) {
+        // First message - create new_chat notification
+        final displayName = senderNickname.isNotEmpty ? '@$senderNickname' : senderName;
+        await _createNotification(
+          userId: receiverId,
+          type: 'new_chat',
+          title: 'New Conversation',
+          message: '$displayName started a conversation with you.',
+          data: {
+            'senderId': senderId,
+            'senderNickname': senderNickname,
+            'senderName': senderName,
+            'matchId': matchId,
+            'conversationId': conversation.conversationId,
+          },
+        );
+      } else {
+        // Regular message - create new_message notification
+        final displayName = senderNickname.isNotEmpty ? '@$senderNickname' : senderName;
+        await _createNotification(
+          userId: receiverId,
+          type: 'new_message',
+          title: 'New Message',
+          message: 'New message from $displayName',
+          data: {
+            'senderId': senderId,
+            'senderNickname': senderNickname,
+            'senderName': senderName,
+            'matchId': matchId,
+            'conversationId': conversation.conversationId,
+          },
+        );
+      }
+
       return message;
     } catch (e) {
       throw Exception('Failed to send message: $e');
+    }
+  }
+
+  /// Helper to create notifications
+  Future<void> _createNotification({
+    required String userId,
+    required String type,
+    required String title,
+    required String message,
+    Map<String, dynamic>? data,
+    String? imageUrl,
+  }) async {
+    try {
+      await firestore.collection('notifications').add({
+        'userId': userId,
+        'type': type,
+        'title': title,
+        'message': message,
+        'data': data,
+        'imageUrl': imageUrl,
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'isRead': false,
+      });
+    } catch (e) {
+      // Silently fail notification creation
     }
   }
 
@@ -1279,6 +1391,258 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       });
     } catch (e) {
       throw Exception('Failed to delete message for both: $e');
+    }
+  }
+
+  // ============== Support Chat Methods Implementation ==============
+
+  @override
+  Future<ConversationModel> createSupportConversation({
+    required String userId,
+    required String subject,
+    String? category,
+    SupportPriority priority = SupportPriority.medium,
+  }) async {
+    try {
+      // Check if user already has an active support conversation
+      final existingConversation = await getActiveSupportConversation(userId);
+      if (existingConversation != null) {
+        return existingConversation;
+      }
+
+      // Create new support conversation
+      final conversationRef = firestore.collection('conversations').doc();
+
+      // Use a special "support" matchId to indicate this is a support conversation
+      const supportMatchId = 'support';
+
+      final newConversation = ConversationModel(
+        conversationId: conversationRef.id,
+        matchId: supportMatchId,
+        userId1: userId,
+        userId2: 'support_system', // Placeholder until agent is assigned
+        createdAt: DateTime.now(),
+        unreadCount: 0,
+        conversationType: ConversationType.support,
+        supportPriority: priority,
+        supportTicketStatus: SupportTicketStatus.open,
+        supportCategory: category,
+        supportSubject: subject,
+      );
+
+      await conversationRef.set(newConversation.toFirestore());
+
+      // Create system message to start the conversation
+      final messageRef = conversationRef.collection('messages').doc();
+      await messageRef.set({
+        'messageId': messageRef.id,
+        'matchId': supportMatchId,
+        'conversationId': conversationRef.id,
+        'senderId': 'system',
+        'receiverId': userId,
+        'content': 'Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: $subject',
+        'type': 'system',
+        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'status': 'sent',
+      });
+
+      return newConversation;
+    } catch (e) {
+      throw Exception('Failed to create support conversation: $e');
+    }
+  }
+
+  @override
+  Future<ConversationModel?> getActiveSupportConversation(String userId) async {
+    try {
+      final querySnapshot = await firestore
+          .collection('conversations')
+          .where('userId1', isEqualTo: userId)
+          .where('conversationType', isEqualTo: 'support')
+          .where('supportTicketStatus', whereIn: ['open', 'assigned', 'inProgress', 'waitingOnUser'])
+          .limit(1)
+          .get();
+
+      if (querySnapshot.docs.isEmpty) {
+        return null;
+      }
+
+      return ConversationModel.fromFirestore(querySnapshot.docs.first);
+    } catch (e) {
+      throw Exception('Failed to get active support conversation: $e');
+    }
+  }
+
+  @override
+  Stream<List<ConversationModel>> getSupportConversationsStream({
+    SupportTicketStatus? filterStatus,
+    String? assignedAgentId,
+  }) {
+    Query query = firestore
+        .collection('conversations')
+        .where('conversationType', isEqualTo: 'support');
+
+    if (filterStatus != null) {
+      query = query.where('supportTicketStatus', isEqualTo: filterStatus.name);
+    }
+
+    if (assignedAgentId != null) {
+      query = query.where('supportAgentId', isEqualTo: assignedAgentId);
+    }
+
+    return query
+        .orderBy('createdAt', descending: true)
+        .snapshots()
+        .map((snapshot) {
+      return snapshot.docs
+          .map((doc) => ConversationModel.fromFirestore(doc))
+          .toList();
+    });
+  }
+
+  @override
+  Future<void> assignSupportAgent({
+    required String conversationId,
+    required String agentId,
+  }) async {
+    try {
+      await firestore.collection('conversations').doc(conversationId).update({
+        'supportAgentId': agentId,
+        'userId2': agentId, // Update userId2 to agent for messaging
+        'supportTicketStatus': SupportTicketStatus.assigned.name,
+      });
+
+      // Create system message about agent assignment
+      final messageRef = firestore
+          .collection('conversations')
+          .doc(conversationId)
+          .collection('messages')
+          .doc();
+
+      // Get agent name
+      final agentDoc = await firestore.collection('profiles').doc(agentId).get();
+      final agentName = agentDoc.exists
+          ? (agentDoc.data()?['displayName'] as String? ?? 'Support Agent')
+          : 'Support Agent';
+
+      await messageRef.set({
+        'messageId': messageRef.id,
+        'matchId': 'support',
+        'conversationId': conversationId,
+        'senderId': 'system',
+        'receiverId': '',
+        'content': '$agentName has joined the conversation and will assist you.',
+        'type': 'system',
+        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'status': 'sent',
+      });
+    } catch (e) {
+      throw Exception('Failed to assign support agent: $e');
+    }
+  }
+
+  @override
+  Future<void> updateSupportTicketStatus({
+    required String conversationId,
+    required SupportTicketStatus status,
+    String? resolvedByAgentId,
+  }) async {
+    try {
+      final updateData = <String, dynamic>{
+        'supportTicketStatus': status.name,
+      };
+
+      if (status == SupportTicketStatus.resolved ||
+          status == SupportTicketStatus.closed) {
+        updateData['supportResolvedAt'] = Timestamp.fromDate(DateTime.now());
+        if (resolvedByAgentId != null) {
+          updateData['resolvedByAgentId'] = resolvedByAgentId;
+        }
+      }
+
+      await firestore.collection('conversations').doc(conversationId).update(updateData);
+
+      // Create system message about status change
+      String statusMessage;
+      switch (status) {
+        case SupportTicketStatus.inProgress:
+          statusMessage = 'Support agent is working on your issue.';
+          break;
+        case SupportTicketStatus.waitingOnUser:
+          statusMessage = 'We\'re waiting for your response.';
+          break;
+        case SupportTicketStatus.resolved:
+          statusMessage = 'Your issue has been resolved. Thank you for contacting GreenGo Support!';
+          break;
+        case SupportTicketStatus.closed:
+          statusMessage = 'This support ticket has been closed.';
+          break;
+        default:
+          statusMessage = 'Ticket status updated.';
+      }
+
+      final messageRef = firestore
+          .collection('conversations')
+          .doc(conversationId)
+          .collection('messages')
+          .doc();
+
+      await messageRef.set({
+        'messageId': messageRef.id,
+        'matchId': 'support',
+        'conversationId': conversationId,
+        'senderId': 'system',
+        'receiverId': '',
+        'content': statusMessage,
+        'type': 'system',
+        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'status': 'sent',
+      });
+    } catch (e) {
+      throw Exception('Failed to update support ticket status: $e');
+    }
+  }
+
+  @override
+  Future<Map<String, dynamic>?> getSupportAgentProfile(String agentId) async {
+    try {
+      final profileDoc = await firestore.collection('profiles').doc(agentId).get();
+      if (!profileDoc.exists) return null;
+
+      final data = profileDoc.data()!;
+      return {
+        'userId': agentId,
+        'displayName': data['displayName'] as String? ?? 'Support Agent',
+        'photoUrl': data['photoUrls'] is List && (data['photoUrls'] as List).isNotEmpty
+            ? (data['photoUrls'] as List).first
+            : null,
+        'isSupport': data['isSupport'] as bool? ?? false,
+      };
+    } catch (e) {
+      return null;
+    }
+  }
+
+  @override
+  Future<List<Map<String, dynamic>>> getAvailableSupportAgents() async {
+    try {
+      final querySnapshot = await firestore
+          .collection('profiles')
+          .where('isSupport', isEqualTo: true)
+          .get();
+
+      return querySnapshot.docs.map((doc) {
+        final data = doc.data();
+        return {
+          'userId': doc.id,
+          'displayName': data['displayName'] as String? ?? 'Support Agent',
+          'photoUrl': data['photoUrls'] is List && (data['photoUrls'] as List).isNotEmpty
+              ? (data['photoUrls'] as List).first
+              : null,
+        };
+      }).toList();
+    } catch (e) {
+      return [];
     }
   }
 }

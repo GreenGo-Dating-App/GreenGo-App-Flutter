@@ -35,13 +35,13 @@ class UnlockAchievement implements UseCase<AchievementUnlockResult, UnlockAchiev
 
     // Check if already unlocked
     if (progress.isUnlocked) {
-      return Left(CacheFailure(message: 'Achievement already unlocked'));
+      return const Left(CacheFailure('Achievement already unlocked'));
     }
 
     // Check if progress is sufficient
     if (progress.progress < progress.requiredCount) {
       return Left(CacheFailure(
-        message: 'Achievement requirements not met. Progress: ${progress.progress}/${progress.requiredCount}',
+        'Achievement requirements not met. Progress: ${progress.progress}/${progress.requiredCount}',
       ));
     }
 

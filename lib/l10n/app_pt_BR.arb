@@ -238,5 +238,349 @@
   "vipPlatinumMember": "PLATINA VIP",
   "vipGoldMember": "MEMBRO OURO",
   "vipSilverMember": "MEMBRO PRATA",
-  "vipPremiumBenefitsActive": "Benefícios Premium Ativos"
+  "vipPremiumBenefitsActive": "Benefícios Premium Ativos",
+
+  "authErrorUserNotFound": "Nenhuma conta encontrada com este e-mail. Por favor verifique seu e-mail ou cadastre-se.",
+  "authErrorWrongPassword": "Senha incorreta. Por favor tente novamente.",
+  "authErrorInvalidEmail": "Por favor insira um endereço de e-mail válido.",
+  "authErrorEmailAlreadyInUse": "Já existe uma conta com este e-mail.",
+  "authErrorWeakPassword": "A senha é muito fraca. Por favor use uma senha mais forte.",
+  "authErrorTooManyRequests": "Muitas tentativas. Por favor tente mais tarde.",
+  "authErrorNetworkError": "Erro de rede. Por favor verifique sua conexão com a internet.",
+  "authErrorGeneric": "Ocorreu um erro. Por favor tente novamente.",
+  "authErrorInvalidCredentials": "E-mail ou senha inválidos. Por favor tente novamente.",
+  "accountCreatedSuccess": "Conta criada! Por favor verifique seu e-mail para validar sua conta.",
+
+  "levelUp": "SUBIU DE NÍVEL!",
+  "levelUpCongratulations": "Parabéns por alcançar um novo nível!",
+  "levelUpYouReachedLevel": "Você alcançou o Nível {level}",
+  "@levelUpYouReachedLevel": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "levelUpRewards": "RECOMPENSAS",
+  "levelUpContinue": "Continuar",
+  "levelUpVIPUnlocked": "Status VIP Desbloqueado!",
+
+  "chatSafetyTitle": "Converse com Segurança",
+  "chatSafetySubtitle": "Sua segurança é nossa prioridade. Tenha em mente essas dicas.",
+  "chatSafetyTip1Title": "Mantenha Infos Pessoais Privadas",
+  "chatSafetyTip1Description": "Não compartilhe endereço, número de telefone ou informações financeiras.",
+  "chatSafetyTip2Title": "Cuidado com Pedidos de Dinheiro",
+  "chatSafetyTip2Description": "Nunca envie dinheiro para alguém que você não conheceu pessoalmente.",
+  "chatSafetyTip3Title": "Encontre-se em Locais Públicos",
+  "chatSafetyTip3Description": "Para primeiros encontros, sempre escolha um local público e bem iluminado.",
+  "chatSafetyTip4Title": "Confie no Seu Instinto",
+  "chatSafetyTip4Description": "Se algo parecer errado, confie no seu instinto e encerre a conversa.",
+  "chatSafetyTip5Title": "Denuncie Comportamento Suspeito",
+  "chatSafetyTip5Description": "Use a função de denúncia se alguém deixar você desconfortável.",
+  "chatSafetyGotIt": "Entendi",
+
+  "tourSkip": "Pular",
+  "tourNext": "Próximo",
+  "tourDone": "Concluído",
+  "tourDiscoveryTitle": "Descubra Matches",
+  "tourDiscoveryDescription": "Deslize pelos perfis para encontrar seu match perfeito. Deslize para a direita se interessado, para a esquerda para passar.",
+  "tourMatchesTitle": "Seus Matches",
+  "tourMatchesDescription": "Veja todos que também curtiram você! Comece conversas com seus matches mútuos.",
+  "tourMessagesTitle": "Mensagens",
+  "tourMessagesDescription": "Converse com seus matches aqui. Envie mensagens, fotos e áudios para se conectar.",
+  "tourShopTitle": "Loja e Moedas",
+  "tourShopDescription": "Obtenha moedas e recursos premium para melhorar sua experiência.",
+  "tourProgressTitle": "Acompanhe o Progresso",
+  "tourProgressDescription": "Ganhe emblemas, complete desafios e suba no ranking!",
+  "tourProfileTitle": "Seu Perfil",
+  "tourProfileDescription": "Personalize seu perfil, gerencie configurações e controle sua privacidade.",
+
+  "progressTitle": "Progresso",
+  "progressOverview": "Visão Geral",
+  "progressAchievements": "Emblemas",
+  "progressChallenges": "Desafios",
+  "progressLeaderboard": "Ranking",
+  "progressLevel": "Nível {level}",
+  "@progressLevel": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "progressBadges": "Emblemas",
+  "progressCompleted": "Concluídos",
+  "progressTotalXP": "XP Total",
+  "progressRecentAchievements": "Conquistas Recentes",
+  "progressTodaysChallenges": "Desafios de Hoje",
+  "progressSeeAll": "Ver Tudo",
+  "progressViewJourney": "Ver Sua Jornada",
+  "progressJourneyDescription": "Veja sua jornada completa de encontros e conquistas",
+
+  "nickname": "Apelido",
+  "editNickname": "Editar Apelido",
+  "nicknameUpdatedSuccess": "Apelido atualizado com sucesso",
+  "nicknameAlreadyTaken": "Este apelido já está em uso",
+  "nicknameCheckError": "Erro ao verificar disponibilidade",
+  "nicknameInfoText": "Seu apelido é único e pode ser usado para te encontrar. Outros podem te procurar usando @{nickname}",
+  "@nicknameInfoText": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "enterNickname": "Digite o apelido",
+  "nicknameRequirements": "3-20 caracteres. Apenas letras, números e underscores.",
+  "suggestions": "Sugestões",
+  "refresh": "Atualizar",
+  "nicknameRules": "Regras do Apelido",
+  "nicknameMustBe3To20Chars": "Deve ter 3-20 caracteres",
+  "nicknameStartWithLetter": "Começar com uma letra",
+  "nicknameOnlyAlphanumeric": "Apenas letras, números e underscores",
+  "nicknameNoConsecutiveUnderscores": "Sem underscores consecutivos",
+  "nicknameNoReservedWords": "Não pode conter palavras reservadas",
+  "setYourUniqueNickname": "Defina seu apelido único",
+
+  "searchByNickname": "Buscar por Apelido",
+  "noProfileFoundWithNickname": "Nenhum perfil encontrado com @{nickname}",
+  "@noProfileFoundWithNickname": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "thatsYourOwnProfile": "Esse é o seu próprio perfil!",
+  "errorSearchingTryAgain": "Erro na busca. Tente novamente.",
+  "enterNicknameToFind": "Digite um apelido para encontrar alguém diretamente",
+  "view": "Ver",
+
+  "profileUpdatedSuccess": "Perfil atualizado com sucesso",
+  "unableToLoadProfile": "Não foi possível carregar o perfil",
+  "viewMyProfile": "Ver Meu Perfil",
+  "seeHowOthersViewProfile": "Veja como outros veem seu perfil",
+  "photosCount": "{count}/6 fotos",
+  "@photosCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "basicInformation": "Informações Básicas",
+  "aboutMe": "Sobre Mim",
+  "addBio": "Adicionar biografia",
+  "interestsCount": "{count} interesses",
+  "@interestsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "locationAndLanguages": "Localização e Idiomas",
+  "voiceRecorded": "Voz gravada",
+  "noVoiceRecording": "Sem gravação de voz",
+  "socialProfiles": "Perfis Sociais",
+  "noSocialProfilesLinked": "Nenhum perfil social vinculado",
+  "profilesLinkedCount": "{count} perfil{count, plural, =1{} other{s}} vinculado{count, plural, =1{} other{s}}",
+  "@profilesLinkedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "appLanguage": "Idioma do App",
+  "rewardsAndProgress": "Recompensas e Progresso",
+  "myProgress": "Meu Progresso",
+  "viewBadgesAchievementsLevel": "Ver emblemas, conquistas e nível",
+  "admin": "Admin",
+  "verificationPanel": "Painel de Verificação",
+  "reviewUserVerifications": "Revisar verificações de usuários",
+  "reportsPanel": "Painel de Denúncias",
+  "reviewReportedMessages": "Revisar mensagens denunciadas e gerenciar contas",
+  "membershipPanel": "Painel de Assinaturas",
+  "manageCouponsTiersRules": "Gerenciar cupons, níveis e regras",
+  "exportMyDataGDPR": "Exportar Meus Dados (LGPD)",
+  "restartAppWizard": "Reiniciar Assistente do App",
+  "languageChangedTo": "Idioma alterado para {language}",
+  "@languageChangedTo": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAccountConfirmation": "Você tem certeza de que quer excluir sua conta? Esta ação não pode ser desfeita e todos os seus dados serão excluídos permanentemente.",
+  "adminAccountsCannotBeDeleted": "Contas admin não podem ser excluídas",
+  "exportingYourData": "Exportando seus dados...",
+  "dataExportSentToEmail": "Exportação de dados enviada para seu e-mail",
+  "restartWizardDialogContent": "Isto irá reiniciar o assistente de configuração. Você poderá atualizar as informações do seu perfil passo a passo. Seus dados atuais serão preservados.",
+  "restartWizard": "Reiniciar Assistente",
+  "logOutConfirmation": "Você tem certeza de que quer sair?",
+  "editVoiceComingSoon": "Editar voz em breve",
+  "logOut": "Sair",
+
+  "noMatchesYet": "Ainda sem combinações",
+  "startSwipingToFindMatches": "Comece a deslizar para encontrar suas combinações!",
+  "searchByNameOrNickname": "Buscar por nome ou @apelido",
+  "matchesCount": "{count} combinações",
+  "@matchesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchesOfTotal": "{filtered} de {total} combinações",
+  "@matchesOfTotal": {
+    "placeholders": {
+      "filtered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatchesFound": "Nenhuma combinação encontrada",
+  "tryDifferentSearchOrFilter": "Tente uma busca ou filtro diferente",
+  "clearFilters": "Limpar Filtros",
+  "filterAll": "Todos",
+  "filterNew": "Novos",
+  "filterMessaged": "Com Mensagens",
+
+  "about": "Sobre",
+  "lookingFor": "Procura",
+  "details": "Detalhes",
+  "height": "Altura",
+  "education": "Educação",
+  "occupation": "Profissão",
+  "youMatchedWithOnDate": "Você deu match com {name} em {date}",
+  "@youMatchedWithOnDate": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWithName": "Conversar com {name}",
+  "@chatWithName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "longTermRelationship": "Relacionamento sério",
+  "shortTermRelationship": "Relacionamento casual",
+  "friendship": "Amizade",
+  "casualDating": "Encontros casuais",
+  "today": "hoje",
+  "yesterday": "ontem",
+  "daysAgo": "há {count} dias",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "lvl": "NIV",
+  "xp": "XP",
+  "toNextLevel": "{percent}% para Nível {level}",
+  "@toNextLevel": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "achievements": "Conquistas",
+  "badges": "Emblemas",
+  "challenges": "Desafios",
+  "myBadges": "Meus Emblemas",
+  "noBadgesEarnedYet": "Nenhum emblema conquistado",
+  "completeAchievementsToEarnBadges": "Complete conquistas para ganhar emblemas!",
+  "moreAchievements": "+{count} mais conquistas",
+  "@moreAchievements": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "levelTitleLegend": "Lenda",
+  "levelTitleMaster": "Mestre",
+  "levelTitleExpert": "Especialista",
+  "levelTitleVeteran": "Veterano",
+  "levelTitleExplorer": "Explorador",
+  "levelTitleEnthusiast": "Entusiasta",
+  "levelTitleNewcomer": "Novato",
+
+  "notificationNewLike": "Você recebeu uma curtida de @{nickname}",
+  "@notificationNewLike": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationSuperLike": "Você recebeu uma super curtida de @{nickname}",
+  "@notificationSuperLike": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationNewMatch": "É um Match! Você deu match com @{nickname}. Comece a conversar agora.",
+  "@notificationNewMatch": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationNewChat": "@{nickname} iniciou uma conversa com você.",
+  "@notificationNewChat": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationNewMessage": "Nova mensagem de @{nickname}",
+  "@notificationNewMessage": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationCoinsPurchased": "Você comprou com sucesso {amount} moedas.",
+  "@notificationCoinsPurchased": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "notificationAchievementUnlocked": "Conquista Desbloqueada: {name}",
+  "@notificationAchievementUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  }
 }

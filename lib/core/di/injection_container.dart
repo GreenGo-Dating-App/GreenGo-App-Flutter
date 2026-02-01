@@ -106,23 +106,23 @@ import '../../features/gamification/data/datasources/streak_datasource.dart';
 import '../../features/gamification/data/repositories/streak_repository_impl.dart';
 import '../../features/gamification/domain/repositories/streak_repository.dart';
 
-// Gamification - Full (DISABLED: has compile errors - needs entity/model fixes)
-// import 'package:cloud_functions/cloud_functions.dart';
-// import '../../features/gamification/data/datasources/gamification_remote_datasource.dart';
-// import '../../features/gamification/data/repositories/gamification_repository_impl.dart';
-// import '../../features/gamification/domain/repositories/gamification_repository.dart';
-// import '../../features/gamification/domain/usecases/get_user_achievements.dart';
-// import '../../features/gamification/domain/usecases/unlock_achievement.dart';
-// import '../../features/gamification/domain/usecases/track_achievement_progress.dart';
-// import '../../features/gamification/domain/usecases/grant_xp.dart';
-// import '../../features/gamification/domain/usecases/get_leaderboard.dart';
-// import '../../features/gamification/domain/usecases/claim_level_rewards.dart';
-// import '../../features/gamification/domain/usecases/check_feature_unlock.dart';
-// import '../../features/gamification/domain/usecases/get_daily_challenges.dart';
-// import '../../features/gamification/domain/usecases/track_challenge_progress.dart';
-// import '../../features/gamification/domain/usecases/claim_challenge_reward.dart';
-// import '../../features/gamification/domain/usecases/get_seasonal_event.dart';
-// import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
+// Gamification - Full
+import 'package:cloud_functions/cloud_functions.dart';
+import '../../features/gamification/data/datasources/gamification_remote_datasource.dart';
+import '../../features/gamification/data/repositories/gamification_repository_impl.dart';
+import '../../features/gamification/domain/repositories/gamification_repository.dart';
+import '../../features/gamification/domain/usecases/get_user_achievements.dart';
+import '../../features/gamification/domain/usecases/unlock_achievement.dart';
+import '../../features/gamification/domain/usecases/track_achievement_progress.dart';
+import '../../features/gamification/domain/usecases/grant_xp.dart';
+import '../../features/gamification/domain/usecases/get_leaderboard.dart';
+import '../../features/gamification/domain/usecases/claim_level_rewards.dart';
+import '../../features/gamification/domain/usecases/check_feature_unlock.dart';
+import '../../features/gamification/domain/usecases/get_daily_challenges.dart';
+import '../../features/gamification/domain/usecases/track_challenge_progress.dart';
+import '../../features/gamification/domain/usecases/claim_challenge_reward.dart' as gamification;
+import '../../features/gamification/domain/usecases/get_seasonal_event.dart';
+import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
 
 // Coins
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -419,8 +419,8 @@ Future<void> init() async {
   // Provider singleton
   sl.registerLazySingleton(() => TierConfigProvider());
 
-  //! Features - Gamification (Full) - DISABLED: has compile errors
-  // Streak datasources still work (no compile errors)
+  //! Features - Gamification
+  // Streak datasources
   sl.registerLazySingleton<StreakRemoteDataSource>(
     () => StreakRemoteDataSourceImpl(firestore: sl()),
   );
@@ -429,17 +429,48 @@ Future<void> init() async {
     () => StreakRepositoryImpl(remoteDataSource: sl()),
   );
 
-  // The following are disabled due to compile errors in gamification feature:
-  // - Missing UserAchievementProgress entity
-  // - Missing static methods in Achievements, WeeklyChallenges, LevelSystem
-  // - Incorrect named parameters in ServerFailure, CacheFailure constructors
-  //
-  // sl.registerLazySingleton<GamificationRemoteDataSource>(...);
-  // sl.registerLazySingleton<GamificationRepository>(...);
-  // sl.registerLazySingleton(() => GetUserAchievements(sl()));
-  // sl.registerLazySingleton(() => UnlockAchievement(sl()));
-  // ... other gamification use cases ...
-  // sl.registerFactory(() => GamificationBloc(...));
+  // Gamification - Full feature
+  sl.registerLazySingleton<GamificationRemoteDataSource>(
+    () => GamificationRemoteDataSourceImpl(
+      firestore: sl(),
+      functions: sl(),
+    ),
+  );
+
+  sl.registerLazySingleton<GamificationRepository>(
+    () => GamificationRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // Gamification Use Cases
+  sl.registerLazySingleton(() => GetUserAchievements(sl()));
+  sl.registerLazySingleton(() => UnlockAchievement(sl()));
+  sl.registerLazySingleton(() => TrackAchievementProgress(sl()));
+  sl.registerLazySingleton(() => GrantXP(sl()));
+  sl.registerLazySingleton(() => GetLeaderboard(sl()));
+  sl.registerLazySingleton(() => ClaimLevelRewards(sl()));
+  sl.registerLazySingleton(() => CheckFeatureUnlock(sl()));
+  sl.registerLazySingleton(() => GetDailyChallenges(sl()));
+  sl.registerLazySingleton(() => TrackChallengeProgress(sl()));
+  sl.registerLazySingleton(() => gamification.ClaimChallengeReward(sl()));
+  sl.registerLazySingleton(() => GetSeasonalEvent(sl()));
+
+  // Gamification BLoC
+  sl.registerFactory(
+    () => GamificationBloc(
+      getUserAchievements: sl(),
+      unlockAchievement: sl(),
+      trackAchievementProgress: sl(),
+      grantXP: sl(),
+      getLeaderboard: sl(),
+      claimLevelRewards: sl(),
+      checkFeatureUnlock: sl(),
+      getDailyChallenges: sl(),
+      trackChallengeProgress: sl(),
+      claimChallengeReward: sl(),
+      getSeasonalEvent: sl(),
+      repository: sl(),
+    ),
+  );
 
   //! Features - Coins
   // Data sources
@@ -549,6 +580,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => FirebaseFirestore.instance);
   sl.registerLazySingleton(() => FirebaseStorage.instance);
   sl.registerLazySingleton(() => FirebaseMessaging.instance);
+  sl.registerLazySingleton(() => FirebaseFunctions.instance);
   sl.registerLazySingleton(() => InAppPurchase.instance);
 
   // Conditional registration based on feature flags

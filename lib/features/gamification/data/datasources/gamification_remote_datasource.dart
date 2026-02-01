@@ -290,9 +290,9 @@ class GamificationRemoteDataSourceImpl
       final xpTransaction = XPTransactionModel(
         transactionId: '',
         userId: userId,
+        actionType: reason,
         xpAmount: xpAmount,
-        reason: reason,
-        timestamp: DateTime.now(),
+        createdAt: DateTime.now(),
         levelBefore: currentLevel.level,
         levelAfter: newLevel,
       );
@@ -346,11 +346,11 @@ class GamificationRemoteDataSourceImpl
       entries.add(LeaderboardEntryModel(
         rank: rank++,
         userId: doc.id,
+        username: data['displayName'] as String? ?? data['username'] as String? ?? 'Unknown',
         level: data['level'] as int,
         totalXP: data['totalXP'] as int,
         region: data['region'] as String? ?? '',
         isVIP: data['isVIP'] as bool? ?? false,
-        displayName: data['displayName'] as String?,
         photoUrl: data['photoUrl'] as String?,
       ));
     }

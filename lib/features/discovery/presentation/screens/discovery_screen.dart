@@ -13,6 +13,7 @@ import '../widgets/swipe_buttons.dart';
 import '../widgets/match_notification.dart';
 import 'discovery_preferences_screen.dart';
 import 'profile_detail_screen.dart';
+import '../widgets/nickname_search_dialog.dart';
 
 /// Discovery Screen
 ///
@@ -174,13 +175,13 @@ class _DiscoveryScreenContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Icon(
-            Icons.search_off,
+            Icons.people_outline,
             size: 80,
             color: AppColors.textTertiary,
           ),
           const SizedBox(height: 24),
           const Text(
-            "You've seen everyone!",
+            "There's no others to see",
             style: TextStyle(
               color: AppColors.textPrimary,
               fontSize: 24,
@@ -267,7 +268,17 @@ class _DiscoveryScreenContent extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(width: 48), // Placeholder for symmetry
+          // Search by nickname button
+          IconButton(
+            onPressed: () {
+              NicknameSearchDialog.show(context, userId);
+            },
+            icon: const Icon(
+              Icons.search,
+              color: AppColors.textSecondary,
+            ),
+            tooltip: 'Search by nickname',
+          ),
         ],
       ),
     );

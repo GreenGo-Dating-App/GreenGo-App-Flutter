@@ -374,6 +374,8 @@ class _TierConfigEditor extends StatelessWidget {
         return [const Color(0xFFFFD700), const Color(0xFFB8860B)];
       case MembershipTier.platinum:
         return [Colors.purple.shade400, Colors.blue.shade600];
+      case MembershipTier.test:
+        return [Colors.green.shade400, Colors.green.shade600];
     }
   }
 
@@ -387,6 +389,8 @@ class _TierConfigEditor extends StatelessWidget {
         return Icons.star;
       case MembershipTier.platinum:
         return Icons.diamond;
+      case MembershipTier.test:
+        return Icons.bug_report;
     }
   }
 

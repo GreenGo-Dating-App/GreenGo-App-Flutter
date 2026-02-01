@@ -137,7 +137,7 @@ class GrantXPParams {
   factory GrantXPParams.photoUploaded(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.photoUploaded.xpAmount,
+      xpAmount: XPActions.photoAdded.xpAmount,
       reason: 'photo_uploaded',
     );
   }
@@ -145,7 +145,7 @@ class GrantXPParams {
   factory GrantXPParams.profileCompleted(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.profileCompleted.xpAmount,
+      xpAmount: XPActions.profileVerified.xpAmount,
       reason: 'profile_completed',
     );
   }
@@ -153,7 +153,7 @@ class GrantXPParams {
   factory GrantXPParams.superLikeSent(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.superLikeSent.xpAmount,
+      xpAmount: XPActions.superLike.xpAmount,
       reason: 'super_like_sent',
     );
   }
@@ -169,7 +169,7 @@ class GrantXPParams {
   factory GrantXPParams.achievementUnlocked(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.achievementUnlocked.xpAmount,
+      xpAmount: 25, // Fixed XP for achievement unlock
       reason: 'achievement_unlocked',
     );
   }
@@ -177,7 +177,7 @@ class GrantXPParams {
   factory GrantXPParams.challengeCompleted(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.challengeCompleted.xpAmount,
+      xpAmount: XPActions.dailyChallengeCompleted.xpAmount,
       reason: 'challenge_completed',
     );
   }
@@ -185,7 +185,7 @@ class GrantXPParams {
   factory GrantXPParams.referralSuccess(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.referralSuccess.xpAmount,
+      xpAmount: 50, // Fixed XP for referral
       reason: 'referral_success',
     );
   }
@@ -193,7 +193,7 @@ class GrantXPParams {
   factory GrantXPParams.eventParticipation(String userId) {
     return GrantXPParams(
       userId: userId,
-      xpAmount: XPActions.eventParticipation.xpAmount,
+      xpAmount: 15, // Fixed XP for event participation
       reason: 'event_participation',
     );
   }

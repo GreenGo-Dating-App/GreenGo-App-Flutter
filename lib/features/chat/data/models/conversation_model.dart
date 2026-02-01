@@ -26,6 +26,13 @@ class ConversationModel extends Conversation {
     super.archivedAt,
     super.theme,
     super.settings,
+    super.conversationType,
+    super.supportAgentId,
+    super.supportPriority,
+    super.supportTicketStatus,
+    super.supportCategory,
+    super.supportSubject,
+    super.supportResolvedAt,
   });
 
   /// Create from Conversation entity
@@ -49,6 +56,13 @@ class ConversationModel extends Conversation {
       archivedAt: conversation.archivedAt,
       theme: conversation.theme,
       settings: conversation.settings,
+      conversationType: conversation.conversationType,
+      supportAgentId: conversation.supportAgentId,
+      supportPriority: conversation.supportPriority,
+      supportTicketStatus: conversation.supportTicketStatus,
+      supportCategory: conversation.supportCategory,
+      supportSubject: conversation.supportSubject,
+      supportResolvedAt: conversation.supportResolvedAt,
     );
   }
 
@@ -74,9 +88,33 @@ class ConversationModel extends Conversation {
       );
     }
 
+    // Parse conversation type
+    final conversationTypeString = data['conversationType'] as String? ?? 'match';
+    final conversationType = ConversationType.values.firstWhere(
+      (t) => t.name == conversationTypeString,
+      orElse: () => ConversationType.match,
+    );
+
+    // Parse support-specific fields
+    SupportPriority? supportPriority;
+    if (data['supportPriority'] != null) {
+      supportPriority = SupportPriority.values.firstWhere(
+        (p) => p.name == (data['supportPriority'] as String),
+        orElse: () => SupportPriority.medium,
+      );
+    }
+
+    SupportTicketStatus? supportTicketStatus;
+    if (data['supportTicketStatus'] != null) {
+      supportTicketStatus = SupportTicketStatus.values.firstWhere(
+        (s) => s.name == (data['supportTicketStatus'] as String),
+        orElse: () => SupportTicketStatus.open,
+      );
+    }
+
     return ConversationModel(
       conversationId: doc.id,
-      matchId: data['matchId'] as String,
+      matchId: data['matchId'] as String? ?? '',
       userId1: data['userId1'] as String,
       userId2: data['userId2'] as String,
       lastMessage: lastMessage,
@@ -104,6 +142,15 @@ class ConversationModel extends Conversation {
         orElse: () => ChatTheme.gold,
       ),
       settings: data['settings'] as Map<String, dynamic>?,
+      conversationType: conversationType,
+      supportAgentId: data['supportAgentId'] as String?,
+      supportPriority: supportPriority,
+      supportTicketStatus: supportTicketStatus,
+      supportCategory: data['supportCategory'] as String?,
+      supportSubject: data['supportSubject'] as String?,
+      supportResolvedAt: data['supportResolvedAt'] != null
+          ? (data['supportResolvedAt'] as Timestamp).toDate()
+          : null,
     );
   }
 
@@ -163,6 +210,15 @@ class ConversationModel extends Conversation {
       'archivedAt': archivedAt != null ? Timestamp.fromDate(archivedAt!) : null,
       'theme': theme.name,
       'settings': settings,
+      'conversationType': conversationType.name,
+      'supportAgentId': supportAgentId,
+      'supportPriority': supportPriority?.name,
+      'supportTicketStatus': supportTicketStatus?.name,
+      'supportCategory': supportCategory,
+      'supportSubject': supportSubject,
+      'supportResolvedAt': supportResolvedAt != null
+          ? Timestamp.fromDate(supportResolvedAt!)
+          : null,
     };
   }
 
@@ -205,6 +261,13 @@ class ConversationModel extends Conversation {
       archivedAt: archivedAt,
       theme: theme,
       settings: settings,
+      conversationType: conversationType,
+      supportAgentId: supportAgentId,
+      supportPriority: supportPriority,
+      supportTicketStatus: supportTicketStatus,
+      supportCategory: supportCategory,
+      supportSubject: supportSubject,
+      supportResolvedAt: supportResolvedAt,
     );
   }
 }

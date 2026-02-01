@@ -221,6 +221,8 @@ class ChallengeCard extends StatelessWidget {
         return Icons.calendar_today;
       case ChallengeType.weekly:
         return Icons.event;
+      case ChallengeType.monthly:
+        return Icons.date_range;
       case ChallengeType.seasonal:
         return Icons.celebration;
     }

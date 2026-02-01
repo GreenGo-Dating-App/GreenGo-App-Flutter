@@ -1,10 +1,14 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/services/feature_flags_service.dart';
 import '../../../../core/services/access_control_service.dart';
+import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -23,6 +27,14 @@ import '../../../notifications/domain/entities/notification.dart' as notif;
 // Language Learning imports - only used when feature is enabled
 import '../../../language_learning/presentation/screens/language_learning_home_screen.dart';
 import '../../../language_learning/presentation/bloc/language_learning_bloc.dart';
+// Gamification/Progress imports
+import '../../../gamification/presentation/screens/progress_screen.dart';
+import '../../../gamification/presentation/bloc/gamification_bloc.dart';
+import '../../../gamification/presentation/bloc/gamification_event.dart';
+import '../../../gamification/presentation/bloc/gamification_state.dart';
+import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
+// App Tour imports
+import '../../../app_tour/presentation/widgets/tour_overlay.dart';
 
 /// Main Navigation Screen
 ///
@@ -39,7 +51,8 @@ class MainNavigationScreen extends StatefulWidget {
   State<MainNavigationScreen> createState() => _MainNavigationScreenState();
 }
 
-class _MainNavigationScreenState extends State<MainNavigationScreen> {
+class _MainNavigationScreenState extends State<MainNavigationScreen>
+    with WidgetsBindingObserver {
   int _currentIndex = 0;
   bool _isCheckingProfile = true;
   VerificationStatus _verificationStatus = VerificationStatus.notSubmitted;
@@ -52,8 +65,18 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   bool _hasShownApprovalNotification = false;
   bool _hasShownAccessGrantedNotification = false;
 
+  // Activity tracking for re-engagement notifications
+  late final ActivityTrackingService _activityTrackingService;
+
   late final List<Widget> _screens;
   late final NotificationsBloc _notificationsBloc;
+
+  // Global gamification bloc for level-up celebrations (only when enabled)
+  GamificationBloc? _gamificationBloc;
+
+  // App tour state
+  bool _showTour = false;
+  static const String _tourPrefKey = 'has_completed_app_tour';
 
   @override
   void initState() {
@@ -62,14 +85,33 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     // Initialize access control service
     _accessControlService = AccessControlService();
 
+    // Initialize activity tracking for re-engagement notifications
+    _activityTrackingService = ActivityTrackingService();
+    _activityTrackingService.startTracking();
+    WidgetsBinding.instance.addObserver(this);
+
+    // Initialize gamification bloc (only when enabled)
+    if (AppConfig.enableGamification) {
+      _gamificationBloc = di.sl<GamificationBloc>()
+        ..add(LoadUserLevel(widget.userId));
+    }
+
     // Build screens list based on enabled features from Firestore
-    // MVP: Discover, Matches, Messages, Shop, Profile (5 tabs)
-    // With Learning: Discover, Matches, Messages, Shop, Learn, Profile (6 tabs)
+    // MVP: Discover, Matches, Messages, Shop, Progress, Profile (6 tabs)
+    // With Learning: Discover, Matches, Messages, Shop, Progress, Learn, Profile (7 tabs)
+    // Note: Progress placeholder is built via getter to ensure proper context
     _screens = [
       DiscoveryScreen(userId: widget.userId),
       MatchesScreen(userId: widget.userId),
       ConversationsScreen(userId: widget.userId),
       ShopScreen(userId: widget.userId),
+      if (_gamificationBloc != null)
+        BlocProvider.value(
+          value: _gamificationBloc!,
+          child: ProgressScreen(userId: widget.userId),
+        )
+      else
+        const _GamificationPlaceholderScreen(),
       if (featureFlags.languageLearningEnabled)
         BlocProvider(
           create: (context) => di.sl<LanguageLearningBloc>(),
@@ -90,6 +132,38 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
     // Load access control data
     _loadAccessData();
+
+    // Check if app tour should be shown
+    _checkAppTour();
+  }
+
+  Future<void> _checkAppTour() async {
+    final prefs = await SharedPreferences.getInstance();
+    final hasCompletedTour = prefs.getBool(_tourPrefKey) ?? false;
+    if (!hasCompletedTour && mounted) {
+      // Delay tour to let the app load first
+      Future.delayed(const Duration(milliseconds: 500), () {
+        if (mounted) {
+          setState(() {
+            _showTour = true;
+          });
+        }
+      });
+    }
+  }
+
+  Future<void> _completeTour() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_tourPrefKey, true);
+    if (mounted) {
+      setState(() {
+        _showTour = false;
+      });
+    }
+  }
+
+  void _skipTour() {
+    _completeTour();
   }
 
   Future<void> _loadAccessData() async {
@@ -164,10 +238,27 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
   void _navigateToSettings() {
     // Navigate to Profile/Settings tab
-    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
+    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)
+    final profileIndex = featureFlags.languageLearningEnabled ? 6 : 5;
     setState(() {
       _currentIndex = profileIndex;
     });
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    switch (state) {
+      case AppLifecycleState.resumed:
+        _activityTrackingService.startTracking();
+        break;
+      case AppLifecycleState.paused:
+      case AppLifecycleState.inactive:
+      case AppLifecycleState.detached:
+      case AppLifecycleState.hidden:
+        _activityTrackingService.stopTracking();
+        break;
+    }
   }
 
   Future<void> _checkUserProfile() async {
@@ -237,11 +328,18 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _activityTrackingService.dispose();
     _notificationsBloc.close();
+    _gamificationBloc?.close();
     super.dispose();
   }
 
   void _onTabTapped(int index) {
+    // Ensure index is within valid bounds
+    if (index < 0 || index >= _screens.length) {
+      return;
+    }
     setState(() {
       _currentIndex = index;
     });
@@ -262,26 +360,37 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     }
 
     // Check if user is approved but before access date (pre-launch mode)
-    final isPreLaunchBlocked = _accessData != null &&
+    // Admin and test users bypass ALL restrictions (countdown, approval, verification)
+    final isAdminOrTestUser = _isAdmin ||
+        (_accessData?.isAdmin ?? false) ||
+        (_accessData?.isTestUser ?? false);
+
+    final isPreLaunchBlocked = !isAdminOrTestUser &&
+        _accessData != null &&
         _accessData!.approvalStatus == ApprovalStatus.approved &&
         !_accessData!.canAccessApp;
 
-    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
+    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)
+    final profileIndex = featureFlags.languageLearningEnabled ? 6 : 5;
+    final progressIndex = 4;
+    final learnIndex = featureFlags.languageLearningEnabled ? 5 : -1;
+
+    // Ensure current index is valid
+    final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
 
     final scaffold = Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: _buildAppBar(),
       body: IndexedStack(
-        index: _currentIndex,
+        index: safeIndex,
         children: _screens.asMap().entries.map((entry) {
           final index = entry.key;
           final screen = entry.value;
 
           // Profile is always the last tab
-          // Shop is index 3
-          // Learn is index 4 (only if enabled)
-          // Profile is index 4 (MVP) or 5 (with Learning)
-          final learnIndex = featureFlags.languageLearningEnabled ? 4 : -1;
+          // Shop is index 3, Progress is index 4
+          // Learn is index 5 (only if enabled)
+          // Profile is index 5 (MVP) or 6 (with Learning)
 
           // Profile/Settings is always accessible (no overlays)
           if (index == profileIndex) {
@@ -297,8 +406,13 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             );
           }
 
-          // Shop and Learn (if enabled) don't need verification overlay
-          if (index == 3 || index == learnIndex) {
+          // Shop, Progress, and Learn (if enabled) don't need verification overlay
+          if (index == 3 || index == progressIndex || index == learnIndex) {
+            return screen;
+          }
+
+          // Admin and test users bypass verification overlay
+          if (isAdminOrTestUser) {
             return screen;
           }
 
@@ -321,7 +435,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           ),
         ),
         child: BottomNavigationBar(
-          currentIndex: _currentIndex,
+          currentIndex: safeIndex,
           onTap: _onTabTapped,
           backgroundColor: AppColors.backgroundCard,
           selectedItemColor: AppColors.richGold,
@@ -351,6 +465,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               activeIcon: Icon(Icons.store),
               label: 'Shop',
             ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.emoji_events_outlined),
+              activeIcon: Icon(Icons.emoji_events),
+              label: 'Progress',
+            ),
             // Only show Learn tab if language learning is enabled
             if (featureFlags.languageLearningEnabled)
               const BottomNavigationBarItem(
@@ -369,26 +488,124 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     );
 
     // Wrap with red border if admin is logged in
-    return BlocProvider.value(
-      value: _notificationsBloc,
-      child: _isAdmin
-          ? Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: AppColors.errorRed,
-                  width: 4,
+    // Also wrap with PopScope to handle back button
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+
+        // If not on the first tab, go back to first tab
+        if (_currentIndex != 0) {
+          setState(() {
+            _currentIndex = 0;
+          });
+          return;
+        }
+
+        // On first tab, show exit confirmation
+        final shouldExit = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: const Text(
+              'Exit App?',
+              style: TextStyle(color: AppColors.textPrimary),
+            ),
+            content: const Text(
+              'Are you sure you want to exit GreenGo?',
+              style: TextStyle(color: AppColors.textSecondary),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context, false),
+                child: const Text(
+                  'Cancel',
+                  style: TextStyle(color: AppColors.textSecondary),
                 ),
               ),
-              child: scaffold,
-            )
-          : scaffold,
+              TextButton(
+                onPressed: () => Navigator.pop(context, true),
+                child: const Text(
+                  'Exit',
+                  style: TextStyle(color: AppColors.richGold),
+                ),
+              ),
+            ],
+          ),
+        );
+
+        if (shouldExit == true) {
+          // Use SystemNavigator.pop() to properly exit the app
+          // Navigator.pop() doesn't work here because MainNavigationScreen
+          // is the root screen (not pushed onto the stack)
+          SystemNavigator.pop();
+        }
+      },
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider.value(value: _notificationsBloc),
+          if (_gamificationBloc != null)
+            BlocProvider.value(value: _gamificationBloc!),
+        ],
+        child: _gamificationBloc != null
+            ? BlocListener<GamificationBloc, GamificationState>(
+                listener: (context, state) {
+                  // Show level-up celebration dialog when user levels up
+                  if (state.leveledUp && state.userLevel != null) {
+                    LevelUpCelebrationDialog.show(
+                      context,
+                      newLevel: state.userLevel!.level,
+                      previousLevel: state.previousLevel ?? (state.userLevel!.level - 1),
+                      rewards: state.pendingRewards,
+                      isVIP: state.userLevel!.isVIP,
+                      onDismiss: () {
+                        // Clear the level-up flag after showing dialog
+                        _gamificationBloc!.add(const ClearLevelUpFlag());
+                      },
+                    );
+                  }
+                },
+                child: _buildMainContent(scaffold),
+              )
+            : _buildMainContent(scaffold),
+      ),
+    );
+  }
+
+  Widget _buildMainContent(Widget scaffold) {
+    return Stack(
+      children: [
+        _isAdmin
+            ? Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: AppColors.errorRed,
+                    width: 4,
+                  ),
+                ),
+                child: scaffold,
+              )
+            : scaffold,
+
+        // App Tour Overlay
+        if (_showTour)
+          TourOverlay(
+            onComplete: _completeTour,
+            onSkip: _skipTour,
+            onTabChange: (tabIndex) {
+              setState(() {
+                _currentIndex = tabIndex;
+              });
+            },
+          ),
+      ],
     );
   }
 
   PreferredSizeWidget? _buildAppBar() {
     // Only show app bar on certain tabs
-    // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Profile (MVP)
-    // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Learn, 5=Profile
+    // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Profile (MVP)
+    // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Learn, 6=Profile
     if (_currentIndex == 0) {
       // Discovery screen - show logo and notifications
       return AppBar(
@@ -425,7 +642,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         ],
       );
     }
-    // Shop, Learn (if enabled), and Profile - no app bar (have their own)
+    // Shop, Progress, Learn (if enabled), and Profile - no app bar (have their own)
     return null;
   }
 
@@ -479,6 +696,614 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           ],
         );
       },
+    );
+  }
+
+}
+
+/// Gamification Placeholder Screen - Beautiful UI when gamification is disabled
+class _GamificationPlaceholderScreen extends StatelessWidget {
+  const _GamificationPlaceholderScreen();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Container(
+        decoration: const BoxDecoration(
+          color: Colors.black,
+        ),
+        child: SafeArea(
+          child: CustomScrollView(
+            slivers: [
+              // App Bar
+              SliverAppBar(
+                expandedHeight: 120,
+                floating: false,
+                pinned: true,
+                backgroundColor: Colors.transparent,
+                flexibleSpace: FlexibleSpaceBar(
+                  title: ShaderMask(
+                    shaderCallback: (bounds) => const LinearGradient(
+                      colors: [Color(0xFFFFD700), AppColors.richGold, Color(0xFFE6C06E)],
+                    ).createShader(bounds),
+                    child: const Text(
+                      'My Progress',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        letterSpacing: 1,
+                      ),
+                    ),
+                  ),
+                  centerTitle: true,
+                  background: Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          AppColors.richGold.withOpacity(0.2),
+                          Colors.transparent,
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      // Level Card
+                      _buildLevelCard(),
+                      const SizedBox(height: 20),
+
+                      // Stats Row
+                      _buildStatsRow(),
+                      const SizedBox(height: 20),
+
+                      // Achievements Section
+                      _buildSectionHeader('Achievements', Icons.emoji_events_rounded),
+                      const SizedBox(height: 12),
+                      _buildAchievementsGrid(),
+                      const SizedBox(height: 24),
+
+                      // Daily Challenges Section
+                      _buildSectionHeader('Daily Challenges', Icons.bolt_rounded),
+                      const SizedBox(height: 12),
+                      _buildChallengesList(),
+                      const SizedBox(height: 24),
+
+                      // Leaderboard Preview
+                      _buildSectionHeader('Leaderboard', Icons.leaderboard_rounded),
+                      const SizedBox(height: 12),
+                      _buildLeaderboardPreview(),
+                      const SizedBox(height: 32),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLevelCard() {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        child: Container(
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.white.withOpacity(0.15),
+                Colors.white.withOpacity(0.05),
+              ],
+            ),
+            border: Border.all(
+              color: AppColors.richGold.withOpacity(0.3),
+              width: 1.5,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: AppColors.richGold.withOpacity(0.15),
+                blurRadius: 20,
+                spreadRadius: 2,
+              ),
+            ],
+          ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  // Level Badge
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [Color(0xFFFFD700), AppColors.richGold, Color(0xFFB8860B)],
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.richGold.withOpacity(0.5),
+                          blurRadius: 15,
+                          spreadRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: const Center(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            '12',
+                            style: TextStyle(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            'LEVEL',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white70,
+                              letterSpacing: 1,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  // XP Progress
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Experience Points',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.white70,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        const Text(
+                          '2,450 / 3,000 XP',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        // Progress Bar
+                        Container(
+                          height: 10,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            color: Colors.white.withOpacity(0.1),
+                          ),
+                          child: Stack(
+                            children: [
+                              FractionallySizedBox(
+                                widthFactor: 0.82,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    gradient: const LinearGradient(
+                                      colors: [Color(0xFFFFD700), AppColors.richGold],
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: AppColors.richGold.withOpacity(0.5),
+                                        blurRadius: 6,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '550 XP to next level',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white.withOpacity(0.5),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStatsRow() {
+    return Row(
+      children: [
+        Expanded(child: _buildStatCard('🔥', '15', 'Day Streak')),
+        const SizedBox(width: 12),
+        Expanded(child: _buildStatCard('⭐', '23', 'Achievements')),
+        const SizedBox(width: 12),
+        Expanded(child: _buildStatCard('🏆', '#42', 'Rank')),
+      ],
+    );
+  }
+
+  Widget _buildStatCard(String emoji, String value, String label) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.white.withOpacity(0.1),
+                Colors.white.withOpacity(0.05),
+              ],
+            ),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          child: Column(
+            children: [
+              Text(emoji, style: const TextStyle(fontSize: 24)),
+              const SizedBox(height: 8),
+              Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.white.withOpacity(0.6),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSectionHeader(String title, IconData icon) {
+    return Row(
+      children: [
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: AppColors.richGold.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Icon(icon, color: AppColors.richGold, size: 20),
+        ),
+        const SizedBox(width: 12),
+        Text(
+          title,
+          style: const TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        const Spacer(),
+        TextButton(
+          onPressed: () {},
+          child: Text(
+            'See All',
+            style: TextStyle(
+              color: AppColors.richGold.withOpacity(0.8),
+              fontSize: 14,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildAchievementsGrid() {
+    final achievements = [
+      {'icon': '💬', 'name': 'Conversation Starter', 'progress': 0.8, 'unlocked': true},
+      {'icon': '❤️', 'name': 'First Match', 'progress': 1.0, 'unlocked': true},
+      {'icon': '📸', 'name': 'Photo Pro', 'progress': 0.6, 'unlocked': false},
+      {'icon': '🌟', 'name': 'Profile Star', 'progress': 1.0, 'unlocked': true},
+    ];
+
+    return SizedBox(
+      height: 140,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: achievements.length,
+        itemBuilder: (context, index) {
+          final achievement = achievements[index];
+          return _buildAchievementCard(
+            achievement['icon'] as String,
+            achievement['name'] as String,
+            achievement['progress'] as double,
+            achievement['unlocked'] as bool,
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildAchievementCard(String icon, String name, double progress, bool unlocked) {
+    return Container(
+      width: 110,
+      margin: const EdgeInsets.only(right: 12),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+          child: Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: unlocked
+                    ? [AppColors.richGold.withOpacity(0.2), AppColors.richGold.withOpacity(0.1)]
+                    : [Colors.white.withOpacity(0.1), Colors.white.withOpacity(0.05)],
+              ),
+              border: Border.all(
+                color: unlocked ? AppColors.richGold.withOpacity(0.4) : Colors.white.withOpacity(0.1),
+                width: 1,
+              ),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(icon, style: TextStyle(fontSize: 32, color: unlocked ? null : Colors.grey)),
+                const SizedBox(height: 8),
+                Text(
+                  name,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: unlocked ? Colors.white : Colors.white54,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                if (!unlocked || progress < 1.0)
+                  LinearProgressIndicator(
+                    value: progress,
+                    backgroundColor: Colors.white.withOpacity(0.1),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      unlocked ? AppColors.richGold : Colors.white38,
+                    ),
+                  )
+                else
+                  const Icon(Icons.check_circle, color: AppColors.richGold, size: 20),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildChallengesList() {
+    final challenges = [
+      {'icon': '💌', 'name': 'Send 5 Messages', 'reward': '+50 XP', 'progress': '3/5'},
+      {'icon': '👋', 'name': 'Like 10 Profiles', 'reward': '+30 XP', 'progress': '7/10'},
+      {'icon': '📝', 'name': 'Update Your Bio', 'reward': '+20 XP', 'progress': 'Done'},
+    ];
+
+    return Column(
+      children: challenges.map((challenge) {
+        return Container(
+          margin: const EdgeInsets.only(bottom: 10),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(14),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(14),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.white.withOpacity(0.1),
+                      Colors.white.withOpacity(0.05),
+                    ],
+                  ),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.1),
+                    width: 1,
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Text(challenge['icon']!, style: const TextStyle(fontSize: 28)),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            challenge['name']!,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            challenge['reward']!,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: AppColors.richGold.withOpacity(0.8),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: challenge['progress'] == 'Done'
+                            ? AppColors.richGold.withOpacity(0.2)
+                            : Colors.white.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        challenge['progress']!,
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                          color: challenge['progress'] == 'Done'
+                              ? AppColors.richGold
+                              : Colors.white70,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildLeaderboardPreview() {
+    final leaders = [
+      {'rank': '1', 'name': 'Sarah M.', 'xp': '12,450', 'avatar': '👩'},
+      {'rank': '2', 'name': 'John D.', 'xp': '11,200', 'avatar': '👨'},
+      {'rank': '3', 'name': 'Emma K.', 'xp': '10,890', 'avatar': '👩‍🦰'},
+    ];
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.white.withOpacity(0.1),
+                Colors.white.withOpacity(0.05),
+              ],
+            ),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          child: Column(
+            children: leaders.asMap().entries.map((entry) {
+              final index = entry.key;
+              final leader = entry.value;
+              final isFirst = index == 0;
+
+              return Container(
+                margin: EdgeInsets.only(bottom: index < leaders.length - 1 ? 12 : 0),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: isFirst ? AppColors.richGold.withOpacity(0.15) : Colors.transparent,
+                  border: isFirst ? Border.all(color: AppColors.richGold.withOpacity(0.3)) : null,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: isFirst
+                            ? AppColors.richGold
+                            : index == 1
+                                ? Colors.grey.shade400
+                                : Colors.brown.shade400,
+                      ),
+                      child: Center(
+                        child: Text(
+                          leader['rank']!,
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Text(leader['avatar']!, style: const TextStyle(fontSize: 24)),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        leader['name']!,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      '${leader['xp']!} XP',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w500,
+                        color: isFirst ? AppColors.richGold : Colors.white70,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+      ),
     );
   }
 }

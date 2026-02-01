@@ -7,13 +7,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/daily_challenge.dart';
 
 class UserChallengeProgressModel extends UserChallengeProgress {
-  const UserChallengeProgressModel({
+  UserChallengeProgressModel({
     required super.userId,
     required super.challengeId,
     required super.progress,
     required super.requiredCount,
-    required super.isCompleted,
+    super.isCompleted,
     super.completedAt,
+    super.createdAt,
     super.rewardsClaimed,
   });
 
@@ -114,6 +115,8 @@ class SeasonalEventModel extends SeasonalEvent {
 
     // Parse challenges
     final challengesData = data['challenges'] as List<dynamic>? ?? [];
+    final eventStartDate = (data['startDate'] as Timestamp).toDate();
+    final eventEndDate = (data['endDate'] as Timestamp).toDate();
     final challenges = challengesData.map((c) {
       final challengeMap = c as Map<String, dynamic>;
       return DailyChallenge(
@@ -124,6 +127,7 @@ class SeasonalEventModel extends SeasonalEvent {
           (t) => t.toString() == 'ChallengeType.${challengeMap['type']}',
         ),
         requiredCount: challengeMap['requiredCount'] as int,
+        actionType: challengeMap['actionType'] as String? ?? 'unknown',
         rewards: (challengeMap['rewards'] as List<dynamic>)
             .map((r) => ChallengeReward(
                   type: r['type'] as String,
@@ -136,6 +140,12 @@ class SeasonalEventModel extends SeasonalEvent {
               d.toString() ==
               'ChallengeDifficulty.${challengeMap['difficulty'] ?? 'easy'}',
         ),
+        startDate: challengeMap['startDate'] != null
+            ? (challengeMap['startDate'] as Timestamp).toDate()
+            : eventStartDate,
+        endDate: challengeMap['endDate'] != null
+            ? (challengeMap['endDate'] as Timestamp).toDate()
+            : eventEndDate,
       );
     }).toList();
 

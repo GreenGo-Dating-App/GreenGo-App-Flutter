@@ -98,7 +98,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                   ScaleTransition(
                     scale: _pulseAnimation,
                     child: const AnimatedLuxuryLogo(
-                      assetPath: 'assets/images/logo.png',
+                      assetPath: 'assets/images/greengo_main_logo_gold.png',
                       size: 100,
                     ),
                   ),

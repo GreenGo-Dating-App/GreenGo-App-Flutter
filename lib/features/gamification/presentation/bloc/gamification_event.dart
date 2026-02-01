@@ -183,3 +183,10 @@ class LoadSeasonalEvent extends GamificationEvent {
 class ApplySeasonalTheme extends GamificationEvent {
   const ApplySeasonalTheme();
 }
+
+// ===== UI State Management Events =====
+
+/// Event to clear the level-up flag after the celebration dialog has been shown
+class ClearLevelUpFlag extends GamificationEvent {
+  const ClearLevelUpFlag();
+}

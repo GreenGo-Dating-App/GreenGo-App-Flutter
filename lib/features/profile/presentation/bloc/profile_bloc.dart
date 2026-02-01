@@ -26,6 +26,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<ProfileUpdateRequested>(_onProfileUpdateRequested);
     on<ProfilePhotoUploadRequested>(_onProfilePhotoUploadRequested);
     on<ProfilePhotoVerificationRequested>(_onProfilePhotoVerificationRequested);
+    on<ProfileNicknameUpdateRequested>(_onProfileNicknameUpdateRequested);
   }
 
   Future<void> _onProfileLoadRequested(
@@ -99,6 +100,30 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     result.fold(
       (failure) => emit(ProfileError(message: failure.message)),
       (isVerified) => emit(ProfilePhotoVerified(isVerified: isVerified)),
+    );
+  }
+
+  Future<void> _onProfileNicknameUpdateRequested(
+    ProfileNicknameUpdateRequested event,
+    Emitter<ProfileState> emit,
+  ) async {
+    emit(const ProfileLoading());
+
+    // First get the current profile
+    final getResult = await getProfile(GetProfileParams(userId: event.userId));
+
+    await getResult.fold(
+      (failure) async => emit(ProfileError(message: failure.message)),
+      (profile) async {
+        // Update the profile with the new nickname
+        final updatedProfile = profile.copyWith(nickname: event.nickname.toLowerCase());
+        final updateResult = await updateProfile(UpdateProfileParams(profile: updatedProfile));
+
+        updateResult.fold(
+          (failure) => emit(ProfileError(message: failure.message)),
+          (profile) => emit(ProfileUpdated(profile: profile)),
+        );
+      },
     );
   }
 }

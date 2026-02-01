@@ -33,7 +33,7 @@ class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRe
     // Check if user has reached the level
     if (userLevel.level < params.level) {
       return Left(CacheFailure(
-        message: 'User has not reached level ${params.level} yet. Current level: ${userLevel.level}',
+        'User has not reached level ${params.level} yet. Current level: ${userLevel.level}',
       ));
     }
 
@@ -50,7 +50,7 @@ class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRe
     );
 
     if (rewards.isEmpty) {
-      return Left(CacheFailure(message: 'No rewards available for level ${params.level}'));
+      return Left(CacheFailure('No rewards available for level ${params.level}'));
     }
 
     // Claim the rewards
@@ -69,13 +69,19 @@ class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRe
     );
 
     if (!claimed) {
-      return Left(CacheFailure(message: 'Failed to claim rewards'));
+      return Left(CacheFailure('Failed to claim rewards'));
     }
 
-    // Categorize rewards
-    final coins = rewards
-        .where((r) => r.type == 'coins')
-        .fold<int>(0, (sum, r) => sum + (r.amount ?? 0));
+    // Categorize rewards - count coin rewards
+    final coinRewards = rewards.where((r) => r.type == 'coins').toList();
+    // Parse coin amounts from the name (e.g., "50 Bonus Coins" -> 50)
+    int coins = 0;
+    for (final reward in coinRewards) {
+      final match = RegExp(r'(\d+)').firstMatch(reward.name);
+      if (match != null) {
+        coins += int.tryParse(match.group(1) ?? '0') ?? 0;
+      }
+    }
 
     final items = rewards
         .where((r) => ['frame', 'badge', 'theme'].contains(r.type))

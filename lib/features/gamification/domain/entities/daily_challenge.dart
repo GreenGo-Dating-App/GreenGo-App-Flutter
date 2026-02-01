@@ -97,16 +97,18 @@ class UserChallengeProgress extends Equatable {
   final bool isCompleted;
   final DateTime? completedAt;
   final DateTime createdAt;
+  final bool rewardsClaimed;
 
-  const UserChallengeProgress({
+  UserChallengeProgress({
     required this.userId,
     required this.challengeId,
     required this.progress,
     required this.requiredCount,
     this.isCompleted = false,
     this.completedAt,
-    required this.createdAt,
-  });
+    DateTime? createdAt,
+    this.rewardsClaimed = false,
+  }) : createdAt = createdAt ?? DateTime.now();
 
   /// Get progress percentage
   double get progressPercentage {
@@ -128,6 +130,7 @@ class UserChallengeProgress extends Equatable {
         isCompleted,
         completedAt,
         createdAt,
+        rewardsClaimed,
       ];
 }
 
@@ -346,6 +349,9 @@ class WeeklyChallenges {
       weeklyMessenger,
     ];
   }
+
+  /// Alias for getWeeklyChallenges (for datasource compatibility)
+  static List<DailyChallenge> getAllWeeklyChallenges() => getWeeklyChallenges();
 }
 
 /// Seasonal Events (Point 200)

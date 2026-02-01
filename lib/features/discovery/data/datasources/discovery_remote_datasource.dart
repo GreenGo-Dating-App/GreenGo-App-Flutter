@@ -58,6 +58,9 @@ abstract class DiscoveryRemoteDataSource {
     required String userId,
     required String targetUserId,
   });
+
+  /// Search for a profile by nickname
+  Future<Profile?> searchByNickname(String nickname);
 }
 
 /// Discovery Remote Data Source Implementation
@@ -80,25 +83,120 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final candidates = await matchingDataSource.getMatchCandidates(
       userId: userId,
       preferences: matching.MatchPreferences(userId: preferences.userId, minAge: preferences.minAge, maxAge: preferences.maxAge, maxDistance: (preferences.maxDistanceKm ?? 50).toDouble(), updatedAt: DateTime.now()),
-      limit: limit * 2, // Get more for filtering
+      limit: limit * 5, // Get more for filtering and infinite scroll
     );
 
-    // Get user's already swiped profiles
-    final swipedUserIds = await _getSwipedUserIds(userId);
+    // Get user's swipe history with action types
+    final swipeHistory = await _getSwipeHistoryWithTypes(userId);
 
-    // Filter out already swiped profiles
-    final filteredCandidates = candidates
-        .where((candidate) => !swipedUserIds.contains(candidate.profile.userId))
-        .take(limit - 1) // Reserve one spot for admin
-        .toList();
+    // Get matches (mutual likes) to exclude them
+    final matchedUserIds = await _getMatchedUserIds(userId);
 
-    // Always add admin profile at the beginning if not already swiped
-    final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
-    if (adminCandidate != null) {
-      return [adminCandidate, ...filteredCandidates];
+    // Categorize candidates into priority tiers:
+    // Priority 1: Never seen (not in swipe history)
+    // Priority 2: Passed on ("nope")
+    // Priority 3: Liked but no response (not matched)
+    // Priority 4: All others (shouldn't exist based on logic, but fallback)
+
+    final List<MatchCandidate> priority1NotSeen = [];
+    final List<MatchCandidate> priority2Passed = [];
+    final List<MatchCandidate> priority3LikedNoResponse = [];
+
+    for (final candidate in candidates) {
+      final candidateId = candidate.profile.userId;
+
+      // Skip matched users - they shouldn't appear in discovery
+      if (matchedUserIds.contains(candidateId)) continue;
+
+      final swipeType = swipeHistory[candidateId];
+
+      if (swipeType == null) {
+        // Never swiped on - Priority 1
+        priority1NotSeen.add(candidate);
+      } else if (swipeType == 'pass' || swipeType == 'nope') {
+        // Passed on - Priority 2
+        priority2Passed.add(candidate);
+      } else if (swipeType == 'like' || swipeType == 'superLike') {
+        // Liked but not matched - Priority 3
+        priority3LikedNoResponse.add(candidate);
+      }
     }
 
-    return filteredCandidates;
+    // Build the final list with priority ordering
+    final List<MatchCandidate> prioritizedCandidates = [];
+
+    // Add priority 1 (not seen)
+    prioritizedCandidates.addAll(priority1NotSeen);
+
+    // Add priority 2 (passed) if we need more
+    if (prioritizedCandidates.length < limit) {
+      prioritizedCandidates.addAll(priority2Passed);
+    }
+
+    // Add priority 3 (liked no response) if we need more
+    if (prioritizedCandidates.length < limit) {
+      prioritizedCandidates.addAll(priority3LikedNoResponse);
+    }
+
+    // Take only what we need
+    final finalCandidates = prioritizedCandidates.take(limit - 1).toList();
+
+    // Always add admin/support profile at the beginning if not already swiped
+    final swipedUserIds = swipeHistory.keys.toSet();
+    final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
+    if (adminCandidate != null) {
+      return [adminCandidate, ...finalCandidates];
+    }
+
+    return finalCandidates;
+  }
+
+  /// Get swipe history with action types
+  Future<Map<String, String>> _getSwipeHistoryWithTypes(String userId) async {
+    final querySnapshot = await firestore
+        .collection('swipes')
+        .where('userId', isEqualTo: userId)
+        .get();
+
+    final Map<String, String> history = {};
+    for (final doc in querySnapshot.docs) {
+      final data = doc.data();
+      final targetId = data['targetUserId'] as String?;
+      final actionType = data['actionType'] as String?;
+      if (targetId != null && actionType != null) {
+        history[targetId] = actionType;
+      }
+    }
+    return history;
+  }
+
+  /// Get all matched user IDs (mutual likes)
+  Future<Set<String>> _getMatchedUserIds(String userId) async {
+    final Set<String> matchedIds = {};
+
+    // Query matches where user is userId1
+    final query1 = await firestore
+        .collection('matches')
+        .where('userId1', isEqualTo: userId)
+        .where('isActive', isEqualTo: true)
+        .get();
+
+    for (final doc in query1.docs) {
+      matchedIds.add(doc.data()['userId2'] as String);
+    }
+
+    // Query matches where user is userId2
+    final query2 = await firestore
+        .collection('matches')
+        .where('userId2', isEqualTo: userId)
+        .where('isActive', isEqualTo: true)
+        .get();
+
+    for (final doc in query2.docs) {
+      matchedIds.add(doc.data()['userId1'] as String);
+    }
+
+    return matchedIds;
   }
 
   /// Get admin profile as a match candidate
@@ -171,8 +269,36 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final model = SwipeActionModel.fromEntity(action);
     await firestore.collection('swipes').add(model.toFirestore());
 
-    // If it's a like or super like, check for match
+    // If it's a like or super like, send notification and check for match
     if (action.isPositive) {
+      // Get sender's profile for nickname in notification
+      final senderProfile = await firestore.collection('profiles').doc(userId).get();
+      final senderNickname = senderProfile.data()?['nickname'] as String? ?? 'Someone';
+      final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
+
+      // Create like notification for target user
+      final notificationType = actionType == SwipeActionType.superLike ? 'super_like' : 'new_like';
+      final notificationTitle = actionType == SwipeActionType.superLike
+          ? 'You received a Super Like!'
+          : 'You received a Like!';
+      final notificationMessage = senderNickname.isNotEmpty
+          ? 'You received a ${actionType == SwipeActionType.superLike ? 'super like' : 'like'} from @$senderNickname. See profile.'
+          : 'You received a ${actionType == SwipeActionType.superLike ? 'super like' : 'like'} from $senderName. See profile.';
+
+      await _createNotification(
+        userId: targetUserId,
+        type: notificationType,
+        title: notificationTitle,
+        message: notificationMessage,
+        data: {
+          'likerId': userId,
+          'likerNickname': senderNickname,
+          'likerName': senderName,
+          'actionType': actionType.toString(),
+        },
+      );
+
+      // Check for match
       final match = await checkForMatch(
         userId: userId,
         targetUserId: targetUserId,
@@ -184,6 +310,31 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     return action;
+  }
+
+  /// Helper to create notifications
+  Future<void> _createNotification({
+    required String userId,
+    required String type,
+    required String title,
+    required String message,
+    Map<String, dynamic>? data,
+    String? imageUrl,
+  }) async {
+    try {
+      await firestore.collection('notifications').add({
+        'userId': userId,
+        'type': type,
+        'title': title,
+        'message': message,
+        'data': data,
+        'imageUrl': imageUrl,
+        'createdAt': Timestamp.fromDate(DateTime.now()),
+        'isRead': false,
+      });
+    } catch (e) {
+      // Silently fail notification creation
+    }
   }
 
   @override
@@ -222,8 +373,58 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     final model = MatchModel.fromEntity(match);
     final docRef = await firestore.collection('matches').add(model.toFirestore());
+    final createdMatch = match.copyWith(matchId: docRef.id);
 
-    return match.copyWith(matchId: docRef.id);
+    // Send match notifications to BOTH users
+    await _sendMatchNotifications(userId, targetUserId, createdMatch.matchId);
+
+    return createdMatch;
+  }
+
+  /// Send match notifications to both users
+  Future<void> _sendMatchNotifications(String userId1, String userId2, String matchId) async {
+    try {
+      // Get both profiles for nicknames
+      final profile1Doc = await firestore.collection('profiles').doc(userId1).get();
+      final profile2Doc = await firestore.collection('profiles').doc(userId2).get();
+
+      final nickname1 = profile1Doc.data()?['nickname'] as String? ?? '';
+      final name1 = profile1Doc.data()?['displayName'] as String? ?? 'Someone';
+      final nickname2 = profile2Doc.data()?['nickname'] as String? ?? '';
+      final name2 = profile2Doc.data()?['displayName'] as String? ?? 'Someone';
+
+      // Notification for user1
+      final displayName2 = nickname2.isNotEmpty ? '@$nickname2' : name2;
+      await _createNotification(
+        userId: userId1,
+        type: 'new_match',
+        title: "It's a Match!",
+        message: "You matched with $displayName2. Start chatting now.",
+        data: {
+          'matchId': matchId,
+          'matchedUserId': userId2,
+          'matchedNickname': nickname2,
+          'matchedName': name2,
+        },
+      );
+
+      // Notification for user2
+      final displayName1 = nickname1.isNotEmpty ? '@$nickname1' : name1;
+      await _createNotification(
+        userId: userId2,
+        type: 'new_match',
+        title: "It's a Match!",
+        message: "You matched with $displayName1. Start chatting now.",
+        data: {
+          'matchId': matchId,
+          'matchedUserId': userId1,
+          'matchedNickname': nickname1,
+          'matchedName': name1,
+        },
+      );
+    } catch (e) {
+      // Silently fail notification creation
+    }
   }
 
   @override
@@ -424,6 +625,25 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     return null;
+  }
+
+  @override
+  Future<Profile?> searchByNickname(String nickname) async {
+    try {
+      final querySnapshot = await firestore
+          .collection('profiles')
+          .where('nickname', isEqualTo: nickname.toLowerCase())
+          .limit(1)
+          .get();
+
+      if (querySnapshot.docs.isEmpty) {
+        return null;
+      }
+
+      return ProfileModel.fromFirestore(querySnapshot.docs.first);
+    } catch (e) {
+      return null;
+    }
   }
 }
 

@@ -146,6 +146,12 @@ class NotificationCard extends StatelessWidget {
         return Icons.local_offer;
       case NotificationType.system:
         return Icons.info;
+      case NotificationType.newChat:
+        return Icons.forum;
+      case NotificationType.coinsPurchased:
+        return Icons.monetization_on;
+      case NotificationType.progressAchieved:
+        return Icons.emoji_events;
     }
   }
 
@@ -166,6 +172,12 @@ class NotificationCard extends StatelessWidget {
         return AppColors.richGold;
       case NotificationType.system:
         return AppColors.textSecondary;
+      case NotificationType.newChat:
+        return AppColors.successGreen;
+      case NotificationType.coinsPurchased:
+        return AppColors.richGold;
+      case NotificationType.progressAchieved:
+        return AppColors.richGold;
     }
   }
 

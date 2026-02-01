@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/validators.dart';
+import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../core/widgets/animated_luxury_logo.dart';
@@ -136,10 +137,25 @@ class _LoginScreenState extends State<LoginScreen>
         child: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is AuthError) {
+              final localizedMessage = AuthErrorLocalizer.getLocalizedError(
+                context,
+                state.message,
+              );
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(state.message),
+                  content: Text(
+                    localizedMessage,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                   backgroundColor: AppColors.errorRed,
+                  behavior: SnackBarBehavior.floating,
+                  margin: const EdgeInsets.all(16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
               );
             } else if (state is AuthAuthenticated) {
