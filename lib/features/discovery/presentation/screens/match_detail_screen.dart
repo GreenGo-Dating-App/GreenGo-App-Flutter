@@ -63,14 +63,51 @@ class MatchDetailScreen extends StatelessWidget {
 
                         const SizedBox(height: 24),
 
-                        // Name
-                        Text(
-                          profile.displayName,
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        // Name and Age
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              profile.displayName,
+                              style: const TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              '${_calculateAge()}',
+                              style: TextStyle(
+                                color: AppColors.textSecondary.withOpacity(0.9),
+                                fontSize: 24,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        // Location
+                        const SizedBox(height: 8),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              size: 16,
+                              color: AppColors.textTertiary.withOpacity(0.8),
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              profile.location.city.isNotEmpty
+                                  ? '${profile.location.city}, ${profile.location.country}'
+                                  : profile.location.country,
+                              style: TextStyle(
+                                color: AppColors.textTertiary.withOpacity(0.8),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
                         ),
 
                         if (profile.nickname != null) ...[
@@ -79,12 +116,17 @@ class MatchDetailScreen extends StatelessWidget {
                             '@${profile.nickname}',
                             style: TextStyle(
                               color: AppColors.richGold.withOpacity(0.8),
-                              fontSize: 16,
+                              fontSize: 14,
                             ),
                           ),
                         ],
 
-                        const SizedBox(height: 32),
+                        const SizedBox(height: 24),
+
+                        // Profile info card
+                        _buildProfileInfoCard(),
+
+                        const SizedBox(height: 20),
 
                         // Match info card
                         _buildMatchInfoCard(),
@@ -110,6 +152,16 @@ class MatchDetailScreen extends StatelessWidget {
     );
   }
 
+  int _calculateAge() {
+    final now = DateTime.now();
+    int age = now.year - profile.dateOfBirth.year;
+    if (now.month < profile.dateOfBirth.month ||
+        (now.month == profile.dateOfBirth.month && now.day < profile.dateOfBirth.day)) {
+      age--;
+    }
+    return age;
+  }
+
   Widget _buildAppBar(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
@@ -122,15 +174,16 @@ class MatchDetailScreen extends StatelessWidget {
               color: AppColors.textPrimary,
             ),
           ),
-          const Expanded(
+          Expanded(
             child: Text(
-              'Match Details',
-              style: TextStyle(
+              profile.displayName,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
               ),
               textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
           const SizedBox(width: 48), // Balance the back button
@@ -182,6 +235,150 @@ class MatchDetailScreen extends StatelessWidget {
         size: 80,
         color: AppColors.textTertiary,
       ),
+    );
+  }
+
+  Widget _buildProfileInfoCard() {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.4),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: AppColors.richGold.withOpacity(0.2),
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Bio
+              if (profile.bio.isNotEmpty) ...[
+                const Text(
+                  'About',
+                  style: TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  profile.bio,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                    height: 1.4,
+                  ),
+                ),
+                const SizedBox(height: 16),
+              ],
+
+              // Occupation & Education
+              if (profile.occupation != null || profile.education != null) ...[
+                Row(
+                  children: [
+                    if (profile.occupation != null) ...[
+                      Expanded(
+                        child: _buildInfoItem(
+                          Icons.work_outline,
+                          profile.occupation!,
+                        ),
+                      ),
+                    ],
+                    if (profile.occupation != null && profile.education != null)
+                      const SizedBox(width: 16),
+                    if (profile.education != null) ...[
+                      Expanded(
+                        child: _buildInfoItem(
+                          Icons.school_outlined,
+                          profile.education!,
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+                const SizedBox(height: 16),
+              ],
+
+              // Looking for
+              if (profile.lookingFor != null) ...[
+                _buildInfoItem(
+                  Icons.favorite_border,
+                  'Looking for: ${profile.lookingFor}',
+                ),
+                const SizedBox(height: 16),
+              ],
+
+              // Interests
+              if (profile.interests.isNotEmpty) ...[
+                const Text(
+                  'Interests',
+                  style: TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: profile.interests.take(6).map((interest) {
+                    return Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppColors.richGold.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: AppColors.richGold.withOpacity(0.3),
+                        ),
+                      ),
+                      child: Text(
+                        interest,
+                        style: const TextStyle(
+                          color: AppColors.textPrimary,
+                          fontSize: 12,
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildInfoItem(IconData icon, String text) {
+    return Row(
+      children: [
+        Icon(
+          icon,
+          size: 16,
+          color: AppColors.textTertiary,
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            text,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 13,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+      ],
     );
   }
 
