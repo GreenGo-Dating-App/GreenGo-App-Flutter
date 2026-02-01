@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 
 /// Supported language codes
 class SupportedLanguage {
@@ -19,6 +21,7 @@ class SupportedLanguage {
 const List<SupportedLanguage> supportedLanguages = [
   SupportedLanguage(code: 'en', name: 'English', flag: ''),
   SupportedLanguage(code: 'pt_BR', name: 'Português (Brasil)', flag: ''),
+  SupportedLanguage(code: 'pt', name: 'Português', flag: ''),
   SupportedLanguage(code: 'es', name: 'Español', flag: ''),
   SupportedLanguage(code: 'fr', name: 'Français', flag: ''),
   SupportedLanguage(code: 'de', name: 'Deutsch', flag: ''),
@@ -42,6 +45,15 @@ extension LegalDocumentTypeExtension on LegalDocumentType {
         return 'terms_and_conditions';
       case LegalDocumentType.privacyPolicy:
         return 'privacy_policy';
+    }
+  }
+
+  String get githubFileName {
+    switch (this) {
+      case LegalDocumentType.termsAndConditions:
+        return 'TERMS_AND_CONDITIONS';
+      case LegalDocumentType.privacyPolicy:
+        return 'PRIVACY_POLICY';
     }
   }
 
@@ -104,6 +116,37 @@ class LegalDocument {
     );
   }
 
+  /// Create from GitHub markdown content
+  factory LegalDocument.fromGitHub({
+    required LegalDocumentType type,
+    required String languageCode,
+    required String content,
+    String? version,
+  }) {
+    // Extract title from first line if it's a markdown header
+    String title = type.displayName;
+    String body = content;
+
+    final lines = content.split('\n');
+    if (lines.isNotEmpty && lines[0].startsWith('#')) {
+      title = lines[0].replaceAll('#', '').trim();
+      body = lines.skip(1).join('\n').trim();
+    }
+
+    return LegalDocument(
+      id: '${type.firestoreKey}_$languageCode',
+      type: type,
+      languageCode: languageCode,
+      title: title,
+      content: body,
+      version: version ?? '1.0',
+      isActive: true,
+      lastUpdated: DateTime.now(),
+      updatedBy: 'github',
+      createdAt: DateTime.now(),
+    );
+  }
+
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -120,14 +163,18 @@ class LegalDocument {
   }
 }
 
-/// Service for fetching legal documents from Firestore
+/// Service for fetching legal documents from GitHub repository
 class LegalDocumentsService extends ChangeNotifier {
   static final LegalDocumentsService _instance = LegalDocumentsService._internal();
   factory LegalDocumentsService() => _instance;
   LegalDocumentsService._internal();
 
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  static const String _collection = 'legal_documents';
+  // GitHub repository configuration
+  // Update these values to match your GitHub repository
+  static const String _githubOwner = 'AnarTechnologies';
+  static const String _githubRepo = 'GreenGo-App-Flutter';
+  static const String _githubBranch = 'main';
+  static const String _legalDocsPath = 'legal';
 
   // Cached documents
   final Map<String, LegalDocument> _documentsCache = {};
@@ -138,7 +185,13 @@ class LegalDocumentsService extends ChangeNotifier {
   bool get isLoading => _isLoading;
   String? get error => _error;
 
-  /// Get a legal document by type and language code
+  /// Build GitHub raw content URL
+  String _buildGitHubUrl(LegalDocumentType type, String languageCode) {
+    final fileName = '${type.githubFileName}_$languageCode.md';
+    return 'https://raw.githubusercontent.com/$_githubOwner/$_githubRepo/$_githubBranch/$_legalDocsPath/$fileName';
+  }
+
+  /// Get a legal document by type and language code from GitHub
   /// Falls back to English if the requested language is not available
   Future<LegalDocument?> getDocument(
     LegalDocumentType type,
@@ -155,12 +208,48 @@ class LegalDocumentsService extends ChangeNotifier {
       _isLoading = true;
       notifyListeners();
 
-      final docRef = _firestore.collection(_collection).doc(docId);
-      final docSnap = await docRef.get();
+      // Normalize language code (e.g., pt-BR -> pt_BR)
+      final normalizedLang = languageCode.replaceAll('-', '_');
 
-      if (docSnap.exists) {
-        final document = LegalDocument.fromFirestore(docSnap);
-        if (document.isActive) {
+      // Try fetching from GitHub
+      final url = _buildGitHubUrl(type, normalizedLang);
+      debugPrint('Fetching legal document from: $url');
+
+      final response = await http.get(
+        Uri.parse(url),
+        headers: {'Accept': 'text/plain'},
+      ).timeout(const Duration(seconds: 10));
+
+      if (response.statusCode == 200) {
+        final content = utf8.decode(response.bodyBytes);
+        final document = LegalDocument.fromGitHub(
+          type: type,
+          languageCode: normalizedLang,
+          content: content,
+        );
+        _documentsCache[docId] = document;
+        _error = null;
+        return document;
+      }
+
+      // Try base language (e.g., pt_BR -> pt)
+      if (normalizedLang.contains('_')) {
+        final baseLang = normalizedLang.split('_')[0];
+        debugPrint('Trying base language: $baseLang');
+
+        final baseUrl = _buildGitHubUrl(type, baseLang);
+        final baseResponse = await http.get(
+          Uri.parse(baseUrl),
+          headers: {'Accept': 'text/plain'},
+        ).timeout(const Duration(seconds: 10));
+
+        if (baseResponse.statusCode == 200) {
+          final content = utf8.decode(baseResponse.bodyBytes);
+          final document = LegalDocument.fromGitHub(
+            type: type,
+            languageCode: baseLang,
+            content: content,
+          );
           _documentsCache[docId] = document;
           _error = null;
           return document;
@@ -168,16 +257,18 @@ class LegalDocumentsService extends ChangeNotifier {
       }
 
       // Fall back to English if requested language not found
-      if (languageCode != 'en') {
-        debugPrint('Legal document not found for $languageCode, falling back to English');
+      if (normalizedLang != 'en') {
+        debugPrint('Legal document not found for $normalizedLang, falling back to English');
         return getDocument(type, 'en');
       }
 
       _error = 'Document not found';
       return null;
     } catch (e) {
-      debugPrint('Error fetching legal document: $e');
+      debugPrint('Error fetching legal document from GitHub: $e');
       _error = e.toString();
+
+      // Return null, the screen will show fallback content
       return null;
     } finally {
       _isLoading = false;
@@ -195,75 +286,39 @@ class LegalDocumentsService extends ChangeNotifier {
     return getDocument(LegalDocumentType.privacyPolicy, languageCode);
   }
 
-  /// Listen to real-time updates for a document
+  /// Watch document is not supported for GitHub
+  /// Returns a stream that fetches once and completes
   Stream<LegalDocument?> watchDocument(
     LegalDocumentType type,
     String languageCode,
-  ) {
-    final docId = '${type.firestoreKey}_$languageCode';
-
-    return _firestore
-        .collection(_collection)
-        .doc(docId)
-        .snapshots()
-        .map((snapshot) {
-      if (snapshot.exists) {
-        final document = LegalDocument.fromFirestore(snapshot);
-        if (document.isActive) {
-          _documentsCache[docId] = document;
-          return document;
-        }
-      }
-      return null;
-    });
+  ) async* {
+    yield await getDocument(type, languageCode);
   }
 
-  /// Get all available documents for a type (all languages)
+  /// Get all available documents for a type
+  /// For GitHub, this returns cached documents only
   Future<List<LegalDocument>> getAllDocumentsForType(LegalDocumentType type) async {
-    try {
-      final querySnapshot = await _firestore
-          .collection(_collection)
-          .where('type', isEqualTo: type.firestoreKey)
-          .where('isActive', isEqualTo: true)
-          .get();
-
-      return querySnapshot.docs
-          .map((doc) => LegalDocument.fromFirestore(doc))
-          .toList();
-    } catch (e) {
-      debugPrint('Error fetching all documents for type ${type.firestoreKey}: $e');
-      return [];
-    }
+    return _documentsCache.values
+        .where((doc) => doc.type == type)
+        .toList();
   }
 
-  /// Check if a document exists for a specific language
+  /// Check if a document exists on GitHub
   Future<bool> documentExists(LegalDocumentType type, String languageCode) async {
-    final docId = '${type.firestoreKey}_$languageCode';
-
     try {
-      final docSnap = await _firestore.collection(_collection).doc(docId).get();
-      return docSnap.exists && (docSnap.data()?['isActive'] as bool? ?? false);
+      final url = _buildGitHubUrl(type, languageCode.replaceAll('-', '_'));
+      final response = await http.head(Uri.parse(url))
+          .timeout(const Duration(seconds: 5));
+      return response.statusCode == 200;
     } catch (e) {
       return false;
     }
   }
 
   /// Get list of available languages for a document type
+  /// Returns default supported languages (checking GitHub would be slow)
   Future<List<String>> getAvailableLanguages(LegalDocumentType type) async {
-    try {
-      final querySnapshot = await _firestore
-          .collection(_collection)
-          .where('type', isEqualTo: type.firestoreKey)
-          .where('isActive', isEqualTo: true)
-          .get();
-
-      return querySnapshot.docs
-          .map((doc) => doc.data()['languageCode'] as String? ?? 'en')
-          .toList();
-    } catch (e) {
-      debugPrint('Error fetching available languages: $e');
-      return ['en'];
-    }
+    return supportedLanguages.map((l) => l.code).toList();
   }
 
   /// Clear the cache
@@ -276,6 +331,16 @@ class LegalDocumentsService extends ChangeNotifier {
   LegalDocument? getCachedDocument(LegalDocumentType type, String languageCode) {
     final docId = '${type.firestoreKey}_$languageCode';
     return _documentsCache[docId];
+  }
+
+  /// Preload documents for common languages
+  Future<void> preloadDocuments() async {
+    const commonLanguages = ['en', 'pt_BR', 'es', 'fr', 'de', 'it'];
+
+    for (final lang in commonLanguages) {
+      await getDocument(LegalDocumentType.termsAndConditions, lang);
+      await getDocument(LegalDocumentType.privacyPolicy, lang);
+    }
   }
 }
 

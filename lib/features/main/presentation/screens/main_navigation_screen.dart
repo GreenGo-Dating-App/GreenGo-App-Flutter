@@ -14,7 +14,8 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
 import '../../../discovery/presentation/screens/matches_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
-import '../../../coins/presentation/screens/shop_screen.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
 import '../../../profile/presentation/screens/onboarding_screen.dart' as profile;
 import '../../../profile/presentation/widgets/verification_status_widget.dart';
@@ -104,7 +105,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       DiscoveryScreen(userId: widget.userId),
       MatchesScreen(userId: widget.userId),
       ConversationsScreen(userId: widget.userId),
-      ShopScreen(userId: widget.userId),
+      BlocProvider(
+        create: (context) => di.sl<CoinBloc>(),
+        child: CoinShopScreen(userId: widget.userId),
+      ),
       if (_gamificationBloc != null)
         BlocProvider.value(
           value: _gamificationBloc!,
