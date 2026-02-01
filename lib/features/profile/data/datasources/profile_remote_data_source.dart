@@ -63,9 +63,11 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   @override
   Future<ProfileModel> updateProfile(ProfileModel profile) async {
     try {
+      // Create updated profile with new timestamp, preserving ALL fields
       final updatedProfile = ProfileModel(
         userId: profile.userId,
         displayName: profile.displayName,
+        nickname: profile.nickname,
         dateOfBirth: profile.dateOfBirth,
         gender: profile.gender,
         photoUrls: profile.photoUrls,
@@ -75,9 +77,25 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         languages: profile.languages,
         voiceRecordingUrl: profile.voiceRecordingUrl,
         personalityTraits: profile.personalityTraits,
+        education: profile.education,
+        occupation: profile.occupation,
+        lookingFor: profile.lookingFor,
+        height: profile.height,
         createdAt: profile.createdAt,
         updatedAt: DateTime.now(),
         isComplete: profile.isComplete,
+        verificationStatus: profile.verificationStatus,
+        verificationPhotoUrl: profile.verificationPhotoUrl,
+        verificationRejectionReason: profile.verificationRejectionReason,
+        verificationSubmittedAt: profile.verificationSubmittedAt,
+        verificationReviewedAt: profile.verificationReviewedAt,
+        verificationReviewedBy: profile.verificationReviewedBy,
+        isAdmin: profile.isAdmin,
+        isSupport: profile.isSupport,
+        socialLinks: profile.socialLinks,
+        membershipTier: profile.membershipTier,
+        membershipStartDate: profile.membershipStartDate,
+        membershipEndDate: profile.membershipEndDate,
       );
 
       await firestore
