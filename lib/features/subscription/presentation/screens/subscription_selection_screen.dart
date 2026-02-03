@@ -59,15 +59,11 @@ class _SubscriptionSelectionScreenState
           }
         },
         builder: (context, state) {
-          if (state is SubscriptionLoading) {
-            return const Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF37)),
-              ),
-            );
-          }
+          final isLoading = state is SubscriptionLoading;
 
-          return SingleChildScrollView(
+          return Stack(
+            children: [
+              SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -158,6 +154,18 @@ class _SubscriptionSelectionScreenState
                 ],
               ),
             ),
+              ),
+              // Loading overlay
+              if (isLoading)
+                Container(
+                  color: Colors.black54,
+                  child: const Center(
+                    child: CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF37)),
+                    ),
+                  ),
+                ),
+            ],
           );
         },
       ),
