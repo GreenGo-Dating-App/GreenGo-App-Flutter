@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart' show kDebugMode;
+
 /// App Configuration
 ///
 /// Feature flags to enable/disable authentication methods and other features.
@@ -7,16 +9,18 @@ class AppConfig {
   AppConfig._();
 
   /// Environment name (for debugging)
-  static const String environment = 'Production';
+  /// This is automatically set based on build mode
+  static String get environment => kDebugMode ? 'Development' : 'Production';
 
   // ============================================================================
   // LOCAL DEVELOPMENT / EMULATOR SETTINGS
   // ============================================================================
 
   /// Use Firebase Emulators (running in Docker) for local development
-  /// Set to true when developing locally with Docker containers
-  /// Set to false when testing against production Firebase
-  static const bool useLocalEmulators = false;
+  /// Automatically disabled in release builds for production safety
+  /// Can be manually overridden for testing with: --dart-define=USE_EMULATORS=false
+  static const bool _forceEmulators = bool.fromEnvironment('USE_EMULATORS', defaultValue: true);
+  static bool get useLocalEmulators => kDebugMode && _forceEmulators;
 
   /// Emulator host address
   /// - Use '10.0.2.2' for Android Emulator (points to host machine's localhost)
@@ -128,6 +132,7 @@ class AppConfig {
   static void printConfig() {
     print('=================================');
     print('App Configuration ($environment)');
+    print('Build Mode: ${kDebugMode ? "DEBUG" : "RELEASE"}');
     print('=================================');
     print('Local Emulators: $useLocalEmulators');
     if (useLocalEmulators) {
@@ -136,6 +141,8 @@ class AppConfig {
       print('  - Firestore: $emulatorHost:$firestoreEmulatorPort');
       print('  - Storage: $emulatorHost:$storageEmulatorPort');
       print('  - Functions: $emulatorHost:$functionsEmulatorPort');
+    } else {
+      print('Connected to: PRODUCTION Firebase');
     }
     print('---------------------------------');
     print('Auth Methods: ${getEnabledAuthMethods()}');
@@ -145,6 +152,8 @@ class AppConfig {
     print('Language Learning: $enableLanguageLearning');
     print('Gamification: $enableGamification');
     print('Analytics: $enableAnalytics');
+    print('Crash Reporting: $enableCrashReporting');
+    print('Performance Monitoring: $enablePerformanceMonitoring');
     print('=================================');
   }
 }
