@@ -99,12 +99,14 @@ abstract class ChatRepository {
   /// Pin/unpin conversation (Point 118)
   Future<Either<Failure, void>> pinConversation({
     required String conversationId,
+    required String userId,
     required bool isPinned,
   });
 
   /// Mute/unmute conversation (Point 119)
   Future<Either<Failure, void>> muteConversation({
     required String conversationId,
+    required String userId,
     required bool isMuted,
     DateTime? mutedUntil,
   });
@@ -112,6 +114,7 @@ abstract class ChatRepository {
   /// Archive/unarchive conversation (Point 120)
   Future<Either<Failure, void>> archiveConversation({
     required String conversationId,
+    required String userId,
     required bool isArchived,
   });
 

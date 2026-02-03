@@ -12,10 +12,12 @@ class ArchiveConversation {
 
   Future<Either<Failure, void>> call({
     required String conversationId,
+    required String userId,
     required bool isArchived,
   }) async {
     return await repository.archiveConversation(
       conversationId: conversationId,
+      userId: userId,
       isArchived: isArchived,
     );
   }

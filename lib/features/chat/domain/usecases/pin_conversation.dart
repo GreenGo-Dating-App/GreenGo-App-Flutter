@@ -12,10 +12,12 @@ class PinConversation {
 
   Future<Either<Failure, void>> call({
     required String conversationId,
+    required String userId,
     required bool isPinned,
   }) async {
     return await repository.pinConversation(
       conversationId: conversationId,
+      userId: userId,
       isPinned: isPinned,
     );
   }

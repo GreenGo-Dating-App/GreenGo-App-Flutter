@@ -261,12 +261,13 @@ class ChatRepositoryImpl implements ChatRepository {
   @override
   Future<Either<Failure, void>> pinConversation({
     required String conversationId,
+    required String userId,
     required bool isPinned,
   }) async {
     try {
       await remoteDataSource.pinConversation(
         conversationId: conversationId,
-        userId: '', // TODO: Get userId from context
+        userId: userId,
         isPinned: isPinned,
       );
       return const Right(null);
@@ -278,13 +279,14 @@ class ChatRepositoryImpl implements ChatRepository {
   @override
   Future<Either<Failure, void>> muteConversation({
     required String conversationId,
+    required String userId,
     required bool isMuted,
     DateTime? mutedUntil,
   }) async {
     try {
       await remoteDataSource.muteConversation(
         conversationId: conversationId,
-        userId: '', // TODO: Get userId from context
+        userId: userId,
         isMuted: isMuted,
       );
       return const Right(null);
@@ -296,12 +298,13 @@ class ChatRepositoryImpl implements ChatRepository {
   @override
   Future<Either<Failure, void>> archiveConversation({
     required String conversationId,
+    required String userId,
     required bool isArchived,
   }) async {
     try {
       await remoteDataSource.archiveConversation(
         conversationId: conversationId,
-        userId: '', // TODO: Get userId from context
+        userId: userId,
         isArchived: isArchived,
       );
       return const Right(null);

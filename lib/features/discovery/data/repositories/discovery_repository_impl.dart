@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
@@ -29,10 +30,10 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return Right(candidates);
     } on ServerException catch (e) {
-      print('ServerException in getDiscoveryStack: ${e.message}');
+      debugPrint('ServerException in getDiscoveryStack: ${e.message}');
       return Left(ServerFailure(e.message));
     } catch (e) {
-      print('Error in getDiscoveryStack: $e');
+      debugPrint('Error in getDiscoveryStack: $e');
       // Return empty list instead of error if it's just "no profiles found"
       if (e.toString().contains('User profile not found')) {
         return const Right([]);

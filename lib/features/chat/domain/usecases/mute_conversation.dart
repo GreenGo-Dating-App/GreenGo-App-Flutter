@@ -12,11 +12,13 @@ class MuteConversation {
 
   Future<Either<Failure, void>> call({
     required String conversationId,
+    required String userId,
     required bool isMuted,
     DateTime? mutedUntil, // null = mute indefinitely
   }) async {
     return await repository.muteConversation(
       conversationId: conversationId,
+      userId: userId,
       isMuted: isMuted,
       mutedUntil: mutedUntil,
     );
