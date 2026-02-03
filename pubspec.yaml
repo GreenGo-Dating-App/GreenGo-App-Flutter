@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A next-generation dating application with Flutter and GCP
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+4
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -56,6 +56,11 @@ dependencies:
 #  image_cropper: ^5.0.1
   cached_network_image: ^3.3.0
   flutter_image_compress: ^2.1.0
+  video_player: ^2.8.2
+
+  # Audio Recording & Playback
+  record: ^5.1.2
+  audioplayers: ^6.1.0
 
   # UI Components
   flutter_svg: ^2.0.9
@@ -106,11 +111,16 @@ dependencies:
   # local_auth: ^2.1.8
 
   # In-App Purchase
-  in_app_purchase: ^3.1.11
+  in_app_purchase: ^3.2.0
+  in_app_purchase_android: ^0.3.6+13
+  in_app_purchase_storekit: ^0.3.22+1
+
+  # Advertisements
+  google_mobile_ads: ^5.1.0
 
   # ML Kit
-  google_mlkit_face_detection: ^0.9.0
-  google_mlkit_text_recognition: ^0.11.0
+  google_mlkit_face_detection: ^0.13.1
+  google_mlkit_text_recognition: ^0.15.0
   # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
 
   # Online Translation (works everywhere)
