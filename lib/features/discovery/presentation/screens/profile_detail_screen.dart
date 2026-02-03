@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -245,6 +246,19 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                               label: 'Occupation',
                               value: widget.profile.occupation!,
                             ),
+                          const SizedBox(height: 24),
+                        ],
+
+                        // Social Links section
+                        if (widget.profile.socialLinks != null &&
+                            widget.profile.socialLinks!.hasAnyLink) ...[
+                          _buildSectionTitle('Social Profiles'),
+                          const SizedBox(height: 12),
+                          Wrap(
+                            spacing: 12,
+                            runSpacing: 12,
+                            children: _buildSocialLinkButtons(),
+                          ),
                           const SizedBox(height: 24),
                         ],
 
@@ -544,6 +558,120 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       return '${difference.inDays} days ago';
     } else {
       return '${date.month}/${date.day}/${date.year}';
+    }
+  }
+
+  List<Widget> _buildSocialLinkButtons() {
+    final socialLinks = widget.profile.socialLinks;
+    if (socialLinks == null) return [];
+
+    final buttons = <Widget>[];
+
+    if (socialLinks.instagram != null) {
+      buttons.add(_buildSocialButton(
+        icon: Icons.camera_alt,
+        label: 'Instagram',
+        color: const Color(0xFFE4405F),
+        url: 'https://instagram.com/${socialLinks.instagram}',
+      ));
+    }
+
+    if (socialLinks.facebook != null) {
+      buttons.add(_buildSocialButton(
+        icon: Icons.facebook,
+        label: 'Facebook',
+        color: const Color(0xFF1877F2),
+        url: socialLinks.facebook!,
+      ));
+    }
+
+    if (socialLinks.tiktok != null) {
+      buttons.add(_buildSocialButton(
+        icon: Icons.music_note,
+        label: 'TikTok',
+        color: const Color(0xFF000000),
+        url: 'https://tiktok.com/@${socialLinks.tiktok}',
+      ));
+    }
+
+    if (socialLinks.linkedin != null) {
+      buttons.add(_buildSocialButton(
+        icon: Icons.work,
+        label: 'LinkedIn',
+        color: const Color(0xFF0A66C2),
+        url: socialLinks.linkedin!,
+      ));
+    }
+
+    if (socialLinks.x != null) {
+      buttons.add(_buildSocialButton(
+        icon: Icons.alternate_email,
+        label: 'X',
+        color: const Color(0xFF000000),
+        url: 'https://x.com/${socialLinks.x}',
+      ));
+    }
+
+    return buttons;
+  }
+
+  Widget _buildSocialButton({
+    required IconData icon,
+    required String label,
+    required Color color,
+    required String url,
+  }) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () => _launchUrl(url),
+        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            color: color.withOpacity(0.15),
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            border: Border.all(color: color.withOpacity(0.4)),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, color: color, size: 20),
+              const SizedBox(width: 8),
+              Text(
+                label,
+                style: TextStyle(
+                  color: color,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _launchUrl(String url) async {
+    // Ensure URL has a scheme
+    String finalUrl = url;
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      finalUrl = 'https://$url';
+    }
+
+    final uri = Uri.parse(finalUrl);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Could not open link'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
     }
   }
 }

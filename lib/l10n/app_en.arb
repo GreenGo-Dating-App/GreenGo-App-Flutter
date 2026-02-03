@@ -623,5 +623,29 @@
         "type": "String"
       }
     }
-  }
+  },
+
+  "voiceStandOutWithYourVoice": "Stand out with your voice!",
+  "voiceRecordIntroDescription": "Record a short {seconds} second introduction to let others hear your personality.",
+  "@voiceRecordIntroDescription": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "voiceRecordingTips": "Recording Tips",
+  "voiceTipFindQuietPlace": "Find a quiet place",
+  "voiceTipBeYourself": "Be yourself and natural",
+  "voiceTipShareWhatMakesYouUnique": "Share what makes you unique",
+  "voiceTipKeepItShort": "Keep it short and sweet",
+  "voiceTapToRecord": "Tap to record",
+  "voiceRecordingSaved": "Recording saved",
+  "voiceRecordAgain": "Record Again",
+  "voiceUploading": "Uploading...",
+  "voiceIntroSaved": "Voice introduction saved",
+  "voiceUploadFailed": "Failed to upload voice recording",
+  "voiceDeleteRecording": "Delete Recording",
+  "voiceDeleteConfirm": "Are you sure you want to delete your voice introduction?",
+  "voiceMicrophonePermissionRequired": "Microphone permission is required"
 }

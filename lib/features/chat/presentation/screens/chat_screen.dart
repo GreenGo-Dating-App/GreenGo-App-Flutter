@@ -20,6 +20,7 @@ import '../bloc/chat_bloc.dart';
 import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
 import '../widgets/message_bubble.dart';
+import '../widgets/forward_message_sheet.dart';
 
 /// Chat Screen
 ///
@@ -1189,27 +1190,28 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Show forward dialog to select recipients
   Future<void> _showForwardDialog(BuildContext context, Message message) async {
-    // TODO: Implement conversation list selection
-    // For now, show a placeholder dialog
-    await showDialog(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Forward Message',
-          style: TextStyle(color: AppColors.textPrimary),
+    // Get the conversation ID from the bloc state
+    final state = context.read<ChatBloc>().state;
+    String? conversationId;
+    if (state is ChatLoaded) {
+      conversationId = state.conversation.conversationId;
+    }
+
+    if (conversationId == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Unable to forward message'),
+          backgroundColor: AppColors.errorRed,
         ),
-        content: const Text(
-          'Forward functionality will be available soon. You can forward messages to other conversations.',
-          style: TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: const Text('OK'),
-          ),
-        ],
-      ),
+      );
+      return;
+    }
+
+    await ForwardMessageSheet.show(
+      context,
+      message: message,
+      currentUserId: widget.currentUserId,
+      fromConversationId: conversationId,
     );
   }
 

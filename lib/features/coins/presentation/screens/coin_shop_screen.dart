@@ -1,7 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../subscription/domain/entities/subscription.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
 import '../bloc/coin_bloc.dart';
@@ -9,13 +12,15 @@ import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
 
 /// Coin Shop Screen
-/// Point 157: Coin purchase interface with packages
+/// Point 157: Coin purchase interface with packages and membership
 class CoinShopScreen extends StatefulWidget {
   final String userId;
+  final SubscriptionTier? currentTier;
 
   const CoinShopScreen({
     super.key,
     required this.userId,
+    this.currentTier,
   });
 
   @override
@@ -27,11 +32,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   late TabController _tabController;
   CoinPackage? _selectedPackage;
   CoinPromotion? _activePromotion;
+  SubscriptionTier? _selectedTier;
+  bool _isLoadingSubscription = false;
+  final InAppPurchase _inAppPurchase = InAppPurchase.instance;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
     context.read<CoinBloc>().add(const LoadAvailablePackages());
   }
 
@@ -75,6 +83,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         controller: _tabController,
         children: [
           _buildBuyCoinsTab(),
+          _buildMembershipTab(),
           _buildVideoCoinsTab(),
         ],
       ),
@@ -101,17 +110,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         indicatorSize: TabBarIndicatorSize.tab,
         dividerColor: Colors.transparent,
         labelStyle: const TextStyle(
-          fontSize: 14,
+          fontSize: 12,
           fontWeight: FontWeight.bold,
         ),
+        labelPadding: EdgeInsets.zero,
         tabs: const [
           Tab(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('🪙', style: TextStyle(fontSize: 16)),
-                SizedBox(width: 8),
-                Text('Buy Coins'),
+                Text('🪙', style: TextStyle(fontSize: 14)),
+                SizedBox(width: 4),
+                Text('Coins'),
               ],
             ),
           ),
@@ -119,9 +129,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('🎬', style: TextStyle(fontSize: 16)),
-                SizedBox(width: 8),
-                Text('Video-Coins'),
+                Text('👑', style: TextStyle(fontSize: 14)),
+                SizedBox(width: 4),
+                Text('Membership'),
+              ],
+            ),
+          ),
+          Tab(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('🎬', style: TextStyle(fontSize: 14)),
+                SizedBox(width: 4),
+                Text('Video'),
               ],
             ),
           ),
@@ -134,20 +154,23 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return BlocConsumer<CoinBloc, CoinState>(
       listener: (context, state) {
         if (state is CoinPackagePurchased) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                '${state.coinsAdded} coins added to your account!',
-              ),
-              backgroundColor: Colors.green,
-            ),
+          // Show success dialog with animation
+          PurchaseSuccessDialog.showCoinsPurchased(
+            context,
+            coinsAdded: state.coinsAdded,
+            bonusCoins: state.bonusCoins,
+            onDismiss: () {
+              if (context.mounted) {
+                Navigator.of(context).pop();
+              }
+            },
           );
-          Navigator.of(context).pop();
         } else if (state is CoinError) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(state.message),
               backgroundColor: Colors.red,
+              duration: const Duration(seconds: 5),
             ),
           );
         }
@@ -168,6 +191,603 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         );
       },
+    );
+  }
+
+  Widget _buildMembershipTab() {
+    final currentTier = widget.currentTier ?? SubscriptionTier.basic;
+    final tiers = [
+      SubscriptionTier.silver,
+      SubscriptionTier.gold,
+      SubscriptionTier.platinum,
+    ];
+
+    return Column(
+      children: [
+        // Header
+        Container(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            children: [
+              // Crown icon
+              Container(
+                width: 80,
+                height: 80,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFFFFD700).withValues(alpha: 0.5),
+                      blurRadius: 20,
+                      spreadRadius: 5,
+                    ),
+                  ],
+                ),
+                child: const Center(
+                  child: Text('👑', style: TextStyle(fontSize: 40)),
+                ),
+              ),
+              const SizedBox(height: 16),
+              const Text(
+                'Upgrade Your Experience',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Current Plan: ${currentTier.displayName}',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: AppColors.richGold.withValues(alpha: 0.8),
+                ),
+              ),
+              // Upgrade discount banner
+              if (currentTier != SubscriptionTier.basic && currentTier != SubscriptionTier.platinum)
+                Container(
+                  margin: const EdgeInsets.only(top: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF4CAF50), Color(0xFF2E7D32)],
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.trending_up, color: Colors.white, size: 18),
+                      SizedBox(width: 8),
+                      Text(
+                        'Upgrade & Save! Get discount on higher tiers',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ),
+
+        // Subscription plans
+        Expanded(
+          child: ListView.builder(
+            padding: const EdgeInsets.all(16),
+            itemCount: tiers.length,
+            itemBuilder: (context, index) {
+              final tier = tiers[index];
+              final isCurrentPlan = currentTier == tier;
+              final isUpgrade = tier.index > currentTier.index;
+              final isDowngrade = tier.index < currentTier.index;
+              return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
+            },
+          ),
+        ),
+
+        // Subscribe button
+        if (_selectedTier != null)
+          _buildSubscribeButton(currentTier),
+      ],
+    );
+  }
+
+  Widget _buildSubscribeButton(SubscriptionTier currentTier) {
+    final isUpgrade = _selectedTier!.index > currentTier.index;
+    final upgradeDiscount = _calculateUpgradeDiscount(currentTier, _selectedTier!);
+    final finalPrice = _selectedTier!.monthlyPrice - upgradeDiscount;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.grey[900],
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.3),
+            blurRadius: 10,
+            offset: const Offset(0, -2),
+          ),
+        ],
+      ),
+      child: SafeArea(
+        child: Column(
+          children: [
+            // Show savings if upgrading
+            if (isUpgrade && upgradeDiscount > 0)
+              Container(
+                margin: const EdgeInsets.only(bottom: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF4CAF50).withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: const Color(0xFF4CAF50)),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.savings, color: Color(0xFF4CAF50), size: 20),
+                    const SizedBox(width: 8),
+                    Text(
+                      'You save \$${upgradeDiscount.toStringAsFixed(2)}/month upgrading from ${currentTier.displayName}!',
+                      style: const TextStyle(
+                        color: Color(0xFF4CAF50),
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ElevatedButton(
+              onPressed: _isLoadingSubscription ? null : _handleSubscribe,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFFFD700),
+                foregroundColor: Colors.black,
+                minimumSize: const Size(double.infinity, 56),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+              child: _isLoadingSubscription
+                  ? const SizedBox(
+                      height: 24,
+                      width: 24,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: Colors.black,
+                      ),
+                    )
+                  : Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          isUpgrade ? 'Upgrade to ${_selectedTier!.displayName}' : 'Subscribe to ${_selectedTier!.displayName}',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        if (upgradeDiscount > 0)
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                '\$${_selectedTier!.monthlyPrice}',
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  decoration: TextDecoration.lineThrough,
+                                  color: Colors.black54,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                '\$${finalPrice.toStringAsFixed(2)}/month',
+                                style: const TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          )
+                        else
+                          Text(
+                            '\$${_selectedTier!.monthlyPrice}/month',
+                            style: const TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
+                      ],
+                    ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Calculate upgrade discount based on current tier
+  /// Users get a discount when upgrading to a higher tier
+  double _calculateUpgradeDiscount(SubscriptionTier currentTier, SubscriptionTier newTier) {
+    if (newTier.index <= currentTier.index) return 0.0;
+
+    // Discount percentages for upgrades
+    // Silver -> Gold: 10% off Gold price
+    // Silver -> Platinum: 15% off Platinum price
+    // Gold -> Platinum: 20% off Platinum price
+
+    switch (currentTier) {
+      case SubscriptionTier.silver:
+        if (newTier == SubscriptionTier.gold) {
+          return newTier.monthlyPrice * 0.10; // 10% off
+        } else if (newTier == SubscriptionTier.platinum) {
+          return newTier.monthlyPrice * 0.15; // 15% off
+        }
+        break;
+      case SubscriptionTier.gold:
+        if (newTier == SubscriptionTier.platinum) {
+          return newTier.monthlyPrice * 0.20; // 20% off
+        }
+        break;
+      case SubscriptionTier.basic:
+        // No discount for new subscribers, but could add first-time discount here
+        break;
+      default:
+        break;
+    }
+    return 0.0;
+  }
+
+  Widget _buildSubscriptionCard(SubscriptionTier tier, bool isCurrentPlan, bool isUpgrade, bool isDowngrade, SubscriptionTier currentTier) {
+    final isSelected = _selectedTier == tier;
+    final features = tier.features;
+    final upgradeDiscount = _calculateUpgradeDiscount(currentTier, tier);
+
+    // Tier colors
+    Color tierColor;
+    switch (tier) {
+      case SubscriptionTier.silver:
+        tierColor = const Color(0xFFC0C0C0);
+        break;
+      case SubscriptionTier.gold:
+        tierColor = const Color(0xFFFFD700);
+        break;
+      case SubscriptionTier.platinum:
+        tierColor = const Color(0xFFE5E4E2);
+        break;
+      default:
+        tierColor = Colors.grey;
+    }
+
+    return GestureDetector(
+      onTap: (isCurrentPlan || isDowngrade) ? null : () => setState(() => _selectedTier = tier),
+      child: Opacity(
+        opacity: isDowngrade ? 0.5 : 1.0,
+        child: Container(
+          margin: const EdgeInsets.only(bottom: 16),
+          decoration: BoxDecoration(
+            gradient: isSelected
+                ? LinearGradient(
+                    colors: [
+                      tierColor.withValues(alpha: 0.3),
+                      tierColor.withValues(alpha: 0.1),
+                    ],
+                  )
+                : null,
+            color: isSelected ? null : Colors.grey[850],
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: isSelected ? tierColor : (isCurrentPlan ? AppColors.richGold : Colors.transparent),
+              width: isSelected ? 2 : (isCurrentPlan ? 1 : 0),
+            ),
+          ),
+          child: Stack(
+            children: [
+              // Current plan badge
+              if (isCurrentPlan)
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: const BoxDecoration(
+                      color: AppColors.richGold,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(14),
+                        bottomLeft: Radius.circular(14),
+                      ),
+                    ),
+                    child: const Text(
+                      'CURRENT',
+                      style: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+
+              // Upgrade discount badge
+              if (isUpgrade && upgradeDiscount > 0)
+                Positioned(
+                  top: 0,
+                  left: 0,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [Color(0xFF4CAF50), Color(0xFF2E7D32)],
+                      ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(14),
+                        bottomRight: Radius.circular(14),
+                      ),
+                    ),
+                    child: Text(
+                      'SAVE ${(upgradeDiscount / tier.monthlyPrice * 100).toStringAsFixed(0)}%',
+                      style: const TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Tier name and price
+                    Row(
+                      children: [
+                        Container(
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: LinearGradient(
+                              colors: [tierColor, tierColor.withValues(alpha: 0.6)],
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              tier == SubscriptionTier.platinum ? '💎' :
+                              tier == SubscriptionTier.gold ? '⭐' : '🥈',
+                              style: const TextStyle(fontSize: 24),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                tier.displayName,
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: tierColor,
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  if (upgradeDiscount > 0) ...[
+                                    Text(
+                                      '\$${tier.monthlyPrice}',
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.white38,
+                                        decoration: TextDecoration.lineThrough,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Text(
+                                      '\$${(tier.monthlyPrice - upgradeDiscount).toStringAsFixed(2)}/mo',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xFF4CAF50),
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ] else
+                                    Text(
+                                      '\$${tier.monthlyPrice}/month',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.white70,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        if (!isCurrentPlan && !isDowngrade)
+                          Icon(
+                            isSelected ? Icons.check_circle : Icons.circle_outlined,
+                            color: isSelected ? tierColor : Colors.grey,
+                            size: 28,
+                          ),
+                        if (isDowngrade)
+                          const Icon(
+                            Icons.lock,
+                            color: Colors.grey,
+                            size: 24,
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Features list
+                    _buildFeatureRow('Daily Likes', _formatLimit(features['dailyLikes'] as int)),
+                    _buildFeatureRow('Super Likes', _formatLimit(features['superLikes'] as int)),
+                    _buildFeatureRow('Boosts', _formatLimit(features['boosts'] as int)),
+                    _buildFeatureRow('See Who Likes You', features['seeWhoLikesYou'] == true ? '✓' : '✗'),
+                    _buildFeatureRow('Ad-Free', features['adFree'] == true ? '✓' : '✗'),
+                    if (tier == SubscriptionTier.platinum) ...[
+                      _buildFeatureRow('VIP Badge', '✓'),
+                      _buildFeatureRow('Priority Matching', '✓'),
+                    ],
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFeatureRow(String feature, String value) {
+    final isEnabled = value == '✓' || value == 'Unlimited' || (int.tryParse(value) ?? 0) > 0;
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        children: [
+          Icon(
+            isEnabled ? Icons.check : Icons.close,
+            size: 16,
+            color: isEnabled ? Colors.green : Colors.red.withValues(alpha: 0.5),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            feature,
+            style: TextStyle(
+              fontSize: 13,
+              color: isEnabled ? Colors.white70 : Colors.white38,
+            ),
+          ),
+          const Spacer(),
+          Text(
+            value,
+            style: TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+              color: isEnabled ? Colors.white : Colors.white38,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  String _formatLimit(int limit) {
+    if (limit == -1) return 'Unlimited';
+    return limit.toString();
+  }
+
+  Future<void> _handleSubscribe() async {
+    if (_selectedTier == null) return;
+
+    setState(() => _isLoadingSubscription = true);
+
+    try {
+      final currentTier = widget.currentTier ?? SubscriptionTier.basic;
+      final isUpgrade = _selectedTier!.index > currentTier.index;
+
+      // Check if store is available
+      final bool available = await _inAppPurchase.isAvailable();
+      debugPrint('[Subscription] Store available: $available');
+
+      if (!available) {
+        _showError('Store not available. Make sure Google Play is installed and you are signed in.');
+        return;
+      }
+
+      // Query product details from store
+      final productIds = {_selectedTier!.productId};
+      debugPrint('[Subscription] Querying product IDs: $productIds');
+
+      final ProductDetailsResponse response =
+          await _inAppPurchase.queryProductDetails(productIds);
+
+      debugPrint('[Subscription] Query response - notFoundIDs: ${response.notFoundIDs}');
+      debugPrint('[Subscription] Query response - productDetails count: ${response.productDetails.length}');
+
+      if (response.error != null) {
+        debugPrint('[Subscription] Query error: ${response.error!.message}');
+        _showError('Failed to load subscription: ${response.error!.message}');
+        return;
+      }
+
+      if (response.productDetails.isEmpty) {
+        final notFoundIds = response.notFoundIDs.join(', ');
+        _showError(
+          'Subscription "${_selectedTier!.productId}" not found in Google Play.\n\n'
+          'Requirements:\n'
+          '• Upload app to Google Play Console (internal testing track)\n'
+          '• Activate subscriptions in Google Play Console\n'
+          '• Add your Google account as a license tester\n\n'
+          'Not found: $notFoundIds'
+        );
+        return;
+      }
+
+      // Initiate subscription purchase
+      final productDetails = response.productDetails.first;
+      debugPrint('[Subscription] Found product: ${productDetails.id} - ${productDetails.title} - ${productDetails.price}');
+
+      // Create purchase parameters
+      final purchaseParam = PurchaseParam(
+        productDetails: productDetails,
+        applicationUserName: widget.userId,
+      );
+
+      // Log upgrade info
+      if (isUpgrade) {
+        final offerId = _selectedTier!.getUpgradeOfferId(currentTier);
+        debugPrint('[Subscription] Upgrading with offer: $offerId, discount: ${_selectedTier!.getUpgradeDiscount(currentTier) * 100}%');
+      }
+
+      // This will trigger Google Play / App Store subscription flow
+      final bool success = await _inAppPurchase.buyNonConsumable(
+        purchaseParam: purchaseParam,
+      );
+
+      debugPrint('[Subscription] buyNonConsumable result: $success');
+
+      if (!success) {
+        _showError('Failed to initiate subscription');
+      } else {
+        // Success - the subscription will be processed by the purchase stream
+        Navigator.of(context).pop();
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(isUpgrade
+              ? 'Processing your upgrade to ${_selectedTier!.displayName}...'
+              : 'Processing your subscription...'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e, stackTrace) {
+      debugPrint('[Subscription] Error: $e');
+      debugPrint('[Subscription] Stack trace: $stackTrace');
+      _showError('Subscription error: ${e.toString()}');
+    } finally {
+      setState(() => _isLoadingSubscription = false);
+    }
+  }
+
+  void _showError(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message),
+        backgroundColor: Colors.red,
+      ),
     );
   }
 

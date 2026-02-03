@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../domain/entities/subscription.dart';
 import '../bloc/subscription_bloc.dart';
 
@@ -38,13 +39,16 @@ class _SubscriptionSelectionScreenState
       body: BlocConsumer<SubscriptionBloc, SubscriptionState>(
         listener: (context, state) {
           if (state is SubscriptionPurchased) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Welcome to ${state.tier.displayName}!'),
-                backgroundColor: const Color(0xFFD4AF37),
-              ),
+            // Show success dialog before closing
+            PurchaseSuccessDialog.showSubscriptionActivated(
+              context,
+              tierName: state.tier.displayName,
+              onDismiss: () {
+                if (context.mounted) {
+                  Navigator.of(context).pop();
+                }
+              },
             );
-            Navigator.of(context).pop();
           } else if (state is SubscriptionError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(

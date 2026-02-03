@@ -58,14 +58,16 @@ class CoinPackagesLoaded extends CoinState {
 class CoinPackagePurchased extends CoinState {
   final CoinTransaction transaction;
   final int coinsAdded;
+  final int? bonusCoins;
 
   const CoinPackagePurchased({
     required this.transaction,
     required this.coinsAdded,
+    this.bonusCoins,
   });
 
   @override
-  List<Object?> get props => [transaction, coinsAdded];
+  List<Object?> get props => [transaction, coinsAdded, bonusCoins];
 }
 
 // Transaction States

@@ -1130,27 +1130,63 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       final starredSnapshot = await query.get();
       final messages = <MessageModel>[];
+      final staleStarredIds = <String>[];
 
       for (final starredDoc in starredSnapshot.docs) {
-        final data = starredDoc.data() as Map<String, dynamic>;
-        final conversationId = data['conversationId'] as String;
-        final messageId = data['messageId'] as String;
+        try {
+          final data = starredDoc.data() as Map<String, dynamic>;
+          final conversationId = data['conversationId'] as String?;
+          final messageId = data['messageId'] as String?;
 
-        final messageDoc = await firestore
-            .collection('conversations')
-            .doc(conversationId)
-            .collection('messages')
-            .doc(messageId)
-            .get();
+          if (conversationId == null || messageId == null) {
+            staleStarredIds.add(starredDoc.id);
+            continue;
+          }
 
-        if (messageDoc.exists) {
-          messages.add(MessageModel.fromFirestore(messageDoc));
+          final messageDoc = await firestore
+              .collection('conversations')
+              .doc(conversationId)
+              .collection('messages')
+              .doc(messageId)
+              .get();
+
+          if (messageDoc.exists) {
+            messages.add(MessageModel.fromFirestore(messageDoc));
+          } else {
+            // Message was deleted, mark for cleanup
+            staleStarredIds.add(starredDoc.id);
+          }
+        } catch (e) {
+          // Skip this starred message if there's an error fetching it
+          staleStarredIds.add(starredDoc.id);
         }
+      }
+
+      // Clean up stale starred message references (fire and forget)
+      if (staleStarredIds.isNotEmpty) {
+        _cleanupStaleStarredMessages(userId, staleStarredIds);
       }
 
       return messages;
     } catch (e) {
       throw Exception('Failed to get starred messages: $e');
+    }
+  }
+
+  /// Helper to clean up stale starred message references
+  Future<void> _cleanupStaleStarredMessages(String userId, List<String> staleIds) async {
+    try {
+      final batch = firestore.batch();
+      for (final id in staleIds) {
+        batch.delete(firestore
+            .collection('users')
+            .doc(userId)
+            .collection('starred_messages')
+            .doc(id));
+      }
+      await batch.commit();
+    } catch (e) {
+      // Silently fail cleanup - not critical
     }
   }
 

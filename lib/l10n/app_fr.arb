@@ -597,5 +597,29 @@
         "type": "String"
       }
     }
-  }
+  },
+
+  "voiceStandOutWithYourVoice": "Démarquez-vous avec votre voix !",
+  "voiceRecordIntroDescription": "Enregistrez une courte présentation de {seconds} secondes pour faire entendre votre personnalité.",
+  "@voiceRecordIntroDescription": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "voiceRecordingTips": "Conseils d'Enregistrement",
+  "voiceTipFindQuietPlace": "Trouvez un endroit calme",
+  "voiceTipBeYourself": "Soyez vous-même et naturel",
+  "voiceTipShareWhatMakesYouUnique": "Partagez ce qui vous rend unique",
+  "voiceTipKeepItShort": "Restez bref et concis",
+  "voiceTapToRecord": "Appuyez pour enregistrer",
+  "voiceRecordingSaved": "Enregistrement sauvegardé",
+  "voiceRecordAgain": "Réenregistrer",
+  "voiceUploading": "Téléversement...",
+  "voiceIntroSaved": "Présentation vocale sauvegardée",
+  "voiceUploadFailed": "Échec du téléversement de l'enregistrement vocal",
+  "voiceDeleteRecording": "Supprimer l'Enregistrement",
+  "voiceDeleteConfirm": "Êtes-vous sûr de vouloir supprimer votre présentation vocale ?",
+  "voiceMicrophonePermissionRequired": "L'autorisation du microphone est requise"
 }

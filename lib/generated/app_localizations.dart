@@ -2386,6 +2386,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Achievement Unlocked: {name}'**
   String notificationAchievementUnlocked(String name);
+
+  /// No description provided for @voiceStandOutWithYourVoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Stand out with your voice!'**
+  String get voiceStandOutWithYourVoice;
+
+  /// No description provided for @voiceRecordIntroDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Record a short {seconds} second introduction to let others hear your personality.'**
+  String voiceRecordIntroDescription(int seconds);
+
+  /// No description provided for @voiceRecordingTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Recording Tips'**
+  String get voiceRecordingTips;
+
+  /// No description provided for @voiceTipFindQuietPlace.
+  ///
+  /// In en, this message translates to:
+  /// **'Find a quiet place'**
+  String get voiceTipFindQuietPlace;
+
+  /// No description provided for @voiceTipBeYourself.
+  ///
+  /// In en, this message translates to:
+  /// **'Be yourself and natural'**
+  String get voiceTipBeYourself;
+
+  /// No description provided for @voiceTipShareWhatMakesYouUnique.
+  ///
+  /// In en, this message translates to:
+  /// **'Share what makes you unique'**
+  String get voiceTipShareWhatMakesYouUnique;
+
+  /// No description provided for @voiceTipKeepItShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep it short and sweet'**
+  String get voiceTipKeepItShort;
+
+  /// No description provided for @voiceTapToRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to record'**
+  String get voiceTapToRecord;
+
+  /// No description provided for @voiceRecordingSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Recording saved'**
+  String get voiceRecordingSaved;
+
+  /// No description provided for @voiceRecordAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Record Again'**
+  String get voiceRecordAgain;
+
+  /// No description provided for @voiceUploading.
+  ///
+  /// In en, this message translates to:
+  /// **'Uploading...'**
+  String get voiceUploading;
+
+  /// No description provided for @voiceIntroSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice introduction saved'**
+  String get voiceIntroSaved;
+
+  /// No description provided for @voiceUploadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload voice recording'**
+  String get voiceUploadFailed;
+
+  /// No description provided for @voiceDeleteRecording.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Recording'**
+  String get voiceDeleteRecording;
+
+  /// No description provided for @voiceDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete your voice introduction?'**
+  String get voiceDeleteConfirm;
+
+  /// No description provided for @voiceMicrophonePermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Microphone permission is required'**
+  String get voiceMicrophonePermissionRequired;
 }
 
 class _AppLocalizationsDelegate

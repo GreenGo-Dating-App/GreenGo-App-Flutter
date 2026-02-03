@@ -1288,6 +1288,58 @@ class AppLocalizationsPt extends AppLocalizations {
   String notificationAchievementUnlocked(String name) {
     return 'Conquista Desbloqueada: $name';
   }
+
+  @override
+  String get voiceStandOutWithYourVoice => 'Destaca-te com a tua voz!';
+
+  @override
+  String voiceRecordIntroDescription(int seconds) {
+    return 'Grava uma breve apresentação de $seconds segundos para que outros oiçam a tua personalidade.';
+  }
+
+  @override
+  String get voiceRecordingTips => 'Dicas de Gravação';
+
+  @override
+  String get voiceTipFindQuietPlace => 'Encontra um lugar sossegado';
+
+  @override
+  String get voiceTipBeYourself => 'Sê tu mesmo e natural';
+
+  @override
+  String get voiceTipShareWhatMakesYouUnique => 'Partilha o que te torna único';
+
+  @override
+  String get voiceTipKeepItShort => 'Mantém breve e simples';
+
+  @override
+  String get voiceTapToRecord => 'Toca para gravar';
+
+  @override
+  String get voiceRecordingSaved => 'Gravação guardada';
+
+  @override
+  String get voiceRecordAgain => 'Gravar Novamente';
+
+  @override
+  String get voiceUploading => 'A carregar...';
+
+  @override
+  String get voiceIntroSaved => 'Apresentação de voz guardada';
+
+  @override
+  String get voiceUploadFailed => 'Falha ao carregar gravação de voz';
+
+  @override
+  String get voiceDeleteRecording => 'Eliminar Gravação';
+
+  @override
+  String get voiceDeleteConfirm =>
+      'Tens a certeza de que queres eliminar a tua apresentação de voz?';
+
+  @override
+  String get voiceMicrophonePermissionRequired =>
+      'É necessária permissão do microfone';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -2507,4 +2559,57 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String notificationAchievementUnlocked(String name) {
     return 'Conquista Desbloqueada: $name';
   }
+
+  @override
+  String get voiceStandOutWithYourVoice => 'Destaque-se com sua voz!';
+
+  @override
+  String voiceRecordIntroDescription(int seconds) {
+    return 'Grave uma breve apresentação de $seconds segundos para que outros ouçam sua personalidade.';
+  }
+
+  @override
+  String get voiceRecordingTips => 'Dicas de Gravação';
+
+  @override
+  String get voiceTipFindQuietPlace => 'Encontre um lugar silencioso';
+
+  @override
+  String get voiceTipBeYourself => 'Seja você mesmo e natural';
+
+  @override
+  String get voiceTipShareWhatMakesYouUnique =>
+      'Compartilhe o que te torna único';
+
+  @override
+  String get voiceTipKeepItShort => 'Mantenha breve e simples';
+
+  @override
+  String get voiceTapToRecord => 'Toque para gravar';
+
+  @override
+  String get voiceRecordingSaved => 'Gravação salva';
+
+  @override
+  String get voiceRecordAgain => 'Gravar Novamente';
+
+  @override
+  String get voiceUploading => 'Enviando...';
+
+  @override
+  String get voiceIntroSaved => 'Apresentação de voz salva';
+
+  @override
+  String get voiceUploadFailed => 'Falha ao enviar gravação de voz';
+
+  @override
+  String get voiceDeleteRecording => 'Excluir Gravação';
+
+  @override
+  String get voiceDeleteConfirm =>
+      'Tem certeza de que deseja excluir sua apresentação de voz?';
+
+  @override
+  String get voiceMicrophonePermissionRequired =>
+      'Permissão do microfone é necessária';
 }

@@ -207,7 +207,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                     const SizedBox(width: 12),
                     Expanded(
                       child: Text(
-                        'Your nickname is unique and can be used to find you. Others can search for you using @${widget.profile.nickname}',
+                        widget.profile.nickname != null
+                            ? 'Your nickname is unique and can be used to find you. Others can search for you using @${widget.profile.nickname}'
+                            : 'Your nickname is unique and can be used to find you. Set one below to let others discover you.',
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,

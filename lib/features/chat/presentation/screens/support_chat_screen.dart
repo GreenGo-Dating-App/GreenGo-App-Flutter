@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../domain/entities/message.dart';
-import '../../data/models/message_model.dart';
 
 /// Support Chat Screen
 ///
 /// Dedicated screen for support conversations
+/// Uses 'support_chats' collection to sync with admin panel
 class SupportChatScreen extends StatefulWidget {
   final String conversationId;
   final String currentUserId;
@@ -29,11 +28,13 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   String? _supportAgentName;
   String? _ticketStatus;
   String? _ticketSubject;
+  String? _ticketCategory;
 
   @override
   void initState() {
     super.initState();
     _loadConversationDetails();
+    _markAsRead();
   }
 
   @override
@@ -43,21 +44,45 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     super.dispose();
   }
 
+  Future<void> _markAsRead() async {
+    try {
+      // Mark messages as read by user
+      final messagesSnapshot = await _firestore
+          .collection('support_messages')
+          .where('conversationId', isEqualTo: widget.conversationId)
+          .where('senderType', isEqualTo: 'admin')
+          .where('readByUser', isEqualTo: false)
+          .get();
+
+      for (final doc in messagesSnapshot.docs) {
+        await doc.reference.update({'readByUser': true});
+      }
+
+      // Reset unread count
+      await _firestore
+          .collection('support_chats')
+          .doc(widget.conversationId)
+          .update({'unreadCount': 0});
+    } catch (e) {
+      debugPrint('Error marking messages as read: $e');
+    }
+  }
+
   Future<void> _loadConversationDetails() async {
     try {
       final doc = await _firestore
-          .collection('conversations')
+          .collection('support_chats')
           .doc(widget.conversationId)
           .get();
 
       if (doc.exists && mounted) {
         final data = doc.data()!;
-        final agentId = data['supportAgentId'] as String?;
+        final agentId = data['assignedTo'] as String?;
 
-        String? agentName;
-        if (agentId != null && agentId != 'support_system') {
+        String? agentName = data['assignedToName'] as String?;
+        if (agentName == null && agentId != null) {
           final agentProfile = await _firestore
-              .collection('profiles')
+              .collection('admins')
               .doc(agentId)
               .get();
           if (agentProfile.exists) {
@@ -67,8 +92,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
         setState(() {
           _supportAgentName = agentName;
-          _ticketStatus = data['supportTicketStatus'] as String?;
-          _ticketSubject = data['supportSubject'] as String?;
+          _ticketStatus = data['status'] as String? ?? 'open';
+          _ticketSubject = data['subject'] as String?;
+          _ticketCategory = data['category'] as String?;
         });
       }
     } catch (e) {
@@ -85,43 +111,55 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     });
 
     try {
-      final conversationRef = _firestore
-          .collection('conversations')
-          .doc(widget.conversationId);
-
       final now = FieldValue.serverTimestamp();
 
-      // Get the conversation to find the agent ID
-      final conversationDoc = await conversationRef.get();
-      final conversationData = conversationDoc.data();
-      final agentId = conversationData?['supportAgentId'] as String? ?? 'support_system';
+      // Get user profile for sender info with defensive handling
+      Map<String, dynamic> userData = {};
+      try {
+        final userProfile = await _firestore
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+        if (userProfile.exists) {
+          userData = userProfile.data() ?? {};
+        }
+      } catch (e) {
+        debugPrint('Could not fetch profile: $e');
+        // Continue with empty userData - message sending should not be blocked
+      }
 
-      // Create message
-      final messageRef = conversationRef.collection('messages').doc();
+      // Create message in support_messages collection (matches admin panel)
+      final messageRef = _firestore.collection('support_messages').doc();
       await messageRef.set({
-        'messageId': messageRef.id,
-        'matchId': conversationData?['matchId'] ?? 'support_${widget.currentUserId}',
         'conversationId': widget.conversationId,
         'senderId': widget.currentUserId,
-        'receiverId': agentId,
+        'senderType': 'user',
+        'senderName': userData['displayName'] ?? 'User',
+        'senderAvatar': userData['photoUrls']?.isNotEmpty == true
+            ? userData['photoUrls'][0]
+            : null,
         'content': text,
-        'type': 'text',
-        'sentAt': now,
-        'readAt': null,
-        'isEdited': false,
+        'messageType': 'text',
+        'readByAdmin': false,
+        'readByUser': true,
+        'createdAt': now,
       });
 
-      // Update conversation last message
+      // Update conversation
+      final conversationRef = _firestore
+          .collection('support_chats')
+          .doc(widget.conversationId);
+
+      final conversationDoc = await conversationRef.get();
+      final currentMessageCount = conversationDoc.data()?['messageCount'] ?? 0;
+
       await conversationRef.update({
-        'lastMessage': {
-          'messageId': messageRef.id,
-          'senderId': widget.currentUserId,
-          'receiverId': agentId,
-          'content': text,
-          'type': 'text',
-          'sentAt': now,
-        },
+        'lastMessage': text.length > 100 ? text.substring(0, 100) : text,
         'lastMessageAt': now,
+        'lastMessageBy': 'user',
+        'messageCount': currentMessageCount + 1,
+        'updatedAt': now,
+        'status': 'open', // Reopen if it was pending
       });
 
       _messageController.clear();
@@ -158,13 +196,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   String _getStatusDisplayText() {
     switch (_ticketStatus) {
       case 'open':
-        return 'Waiting for agent';
-      case 'assigned':
-        return 'Agent assigned';
-      case 'inProgress':
-        return 'In progress';
-      case 'waitingOnUser':
-        return 'Waiting on you';
+        return 'Open';
+      case 'pending':
+        return 'Pending';
       case 'resolved':
         return 'Resolved';
       case 'closed':
@@ -178,12 +212,10 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     switch (_ticketStatus) {
       case 'open':
         return Colors.orange;
-      case 'assigned':
-      case 'inProgress':
-        return Colors.green;
-      case 'waitingOnUser':
+      case 'pending':
         return Colors.blue;
       case 'resolved':
+        return Colors.green;
       case 'closed':
         return Colors.grey;
       default:
@@ -235,7 +267,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             ),
             if (_supportAgentName != null)
               Text(
-                _supportAgentName!,
+                'Agent: $_supportAgentName',
                 style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 12,
@@ -252,14 +284,13 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       ),
       body: Column(
         children: [
-          // Messages list
+          // Messages list - using support_messages collection
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
               stream: _firestore
-                  .collection('conversations')
-                  .doc(widget.conversationId)
-                  .collection('messages')
-                  .orderBy('sentAt', descending: true)
+                  .collection('support_messages')
+                  .where('conversationId', isEqualTo: widget.conversationId)
+                  .orderBy('createdAt', descending: true)
                   .snapshots(),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
@@ -270,9 +301,29 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
                 if (snapshot.hasError) {
                   return Center(
-                    child: Text(
-                      'Error loading messages',
-                      style: TextStyle(color: AppColors.errorRed),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.error_outline,
+                          size: 48,
+                          color: AppColors.errorRed,
+                        ),
+                        const SizedBox(height: 16),
+                        Text(
+                          'Error loading messages',
+                          style: TextStyle(color: AppColors.errorRed),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          '${snapshot.error}',
+                          style: const TextStyle(
+                            color: AppColors.textSecondary,
+                            fontSize: 12,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
                     ),
                   );
                 }
@@ -299,11 +350,15 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                           ),
                         ),
                         SizedBox(height: 8),
-                        Text(
-                          'Send a message to start the conversation',
-                          style: TextStyle(
-                            color: AppColors.textSecondary,
-                            fontSize: 14,
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 32),
+                          child: Text(
+                            'Send a message to start the conversation.\nOur team will respond as soon as possible.',
+                            style: TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 14,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ],
@@ -318,8 +373,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   itemCount: messages.length,
                   itemBuilder: (context, index) {
                     final messageData = messages[index].data() as Map<String, dynamic>;
-                    final isMe = messageData['senderId'] == widget.currentUserId;
-                    final isSystem = messageData['type'] == 'system';
+                    final isMe = messageData['senderType'] == 'user';
+                    final isSystem = messageData['messageType'] == 'system';
 
                     return _buildMessageBubble(messageData, isMe, isSystem);
                   },
@@ -337,7 +392,10 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
   Widget _buildMessageBubble(Map<String, dynamic> messageData, bool isMe, bool isSystem) {
     final content = messageData['content'] as String? ?? '';
-    final sentAt = messageData['sentAt'];
+    final sentAt = messageData['createdAt'];
+    final senderName = messageData['senderName'] as String?;
+    final isAI = messageData['isAIGenerated'] == true;
+
     DateTime? timestamp;
     if (sentAt is Timestamp) {
       timestamp = sentAt.toDate();
@@ -379,37 +437,80 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         constraints: BoxConstraints(
           maxWidth: MediaQuery.of(context).size.width * 0.75,
         ),
-        decoration: BoxDecoration(
-          color: isMe ? AppColors.richGold : AppColors.backgroundCard,
-          borderRadius: BorderRadius.only(
-            topLeft: const Radius.circular(16),
-            topRight: const Radius.circular(16),
-            bottomLeft: Radius.circular(isMe ? 16 : 4),
-            bottomRight: Radius.circular(isMe ? 4 : 16),
-          ),
-        ),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
           children: [
-            Text(
-              content,
-              style: TextStyle(
-                color: isMe ? AppColors.deepBlack : AppColors.textPrimary,
-                fontSize: 15,
-              ),
-            ),
-            if (timestamp != null) ...[
-              const SizedBox(height: 4),
-              Text(
-                _formatTime(timestamp),
-                style: TextStyle(
-                  color: (isMe ? AppColors.deepBlack : AppColors.textSecondary)
-                      .withOpacity(0.6),
-                  fontSize: 11,
+            // Show sender name for support agent messages
+            if (!isMe && senderName != null)
+              Padding(
+                padding: const EdgeInsets.only(left: 12, bottom: 2),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      senderName,
+                      style: const TextStyle(
+                        color: AppColors.textSecondary,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    if (isAI) ...[
+                      const SizedBox(width: 4),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                        decoration: BoxDecoration(
+                          color: AppColors.richGold.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: const Text(
+                          'AI',
+                          style: TextStyle(
+                            color: AppColors.richGold,
+                            fontSize: 9,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ),
-            ],
+            Container(
+              decoration: BoxDecoration(
+                color: isMe ? AppColors.richGold : AppColors.backgroundCard,
+                borderRadius: BorderRadius.only(
+                  topLeft: const Radius.circular(16),
+                  topRight: const Radius.circular(16),
+                  bottomLeft: Radius.circular(isMe ? 16 : 4),
+                  bottomRight: Radius.circular(isMe ? 4 : 16),
+                ),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    content,
+                    style: TextStyle(
+                      color: isMe ? AppColors.deepBlack : AppColors.textPrimary,
+                      fontSize: 15,
+                    ),
+                  ),
+                  if (timestamp != null) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      _formatTime(timestamp),
+                      style: TextStyle(
+                        color: (isMe ? AppColors.deepBlack : AppColors.textSecondary)
+                            .withOpacity(0.6),
+                        fontSize: 11,
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -428,16 +529,31 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             top: BorderSide(color: AppColors.divider.withOpacity(0.3)),
           ),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: [
-            const Icon(Icons.check_circle, color: Colors.green, size: 20),
-            const SizedBox(width: 8),
-            const Text(
-              'This ticket has been resolved',
-              style: TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 14,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                const SizedBox(width: 8),
+                const Text(
+                  'This ticket has been resolved',
+                  style: TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            TextButton(
+              onPressed: () => _reopenTicket(),
+              child: const Text(
+                'Need more help? Tap to reopen',
+                style: TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 13,
+                ),
               ),
             ),
           ],
@@ -506,6 +622,38 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     );
   }
 
+  Future<void> _reopenTicket() async {
+    try {
+      await _firestore
+          .collection('support_chats')
+          .doc(widget.conversationId)
+          .update({
+        'status': 'open',
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      setState(() {
+        _ticketStatus = 'open';
+      });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Ticket reopened. You can send a message now.'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to reopen ticket: $e'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
   String _formatTime(DateTime time) {
     final now = DateTime.now();
     final diff = now.difference(time);
@@ -552,6 +700,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             ),
             const SizedBox(height: 20),
             _buildInfoRow('Subject', _ticketSubject ?? 'General Support'),
+            _buildInfoRow('Category', _ticketCategory ?? 'General'),
             _buildInfoRow('Status', _getStatusDisplayText()),
             _buildInfoRow('Agent', _supportAgentName ?? 'Waiting for assignment'),
             _buildInfoRow('Ticket ID', widget.conversationId.substring(0, 8).toUpperCase()),

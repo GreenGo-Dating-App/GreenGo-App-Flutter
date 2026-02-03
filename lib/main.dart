@@ -44,6 +44,8 @@ import 'features/admin/presentation/screens/reports_admin_screen.dart';
 import 'features/admin/presentation/screens/tier_management_screen.dart';
 import 'features/admin/presentation/screens/coin_management_screen.dart';
 import 'features/admin/presentation/screens/gamification_management_screen.dart';
+import 'features/chat/presentation/screens/support_tickets_list_screen.dart';
+import 'features/chat/presentation/screens/support_chat_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -109,12 +111,15 @@ void main() async {
   // Skip App Check when using local emulators (it doesn't work with emulators)
   if (!AppConfig.useLocalEmulators) {
     await FirebaseAppCheck.instance.activate(
-      // Use debug provider for development
-      // For production, use: androidProvider: AndroidProvider.playIntegrity,
-      androidProvider: AndroidProvider.debug,
-      appleProvider: AppleProvider.debug,
+      // Use Play Integrity for production builds, debug for development
+      androidProvider: kDebugMode
+          ? AndroidProvider.debug
+          : AndroidProvider.playIntegrity,
+      appleProvider: kDebugMode
+          ? AppleProvider.debug
+          : AppleProvider.appAttest,
     );
-    debugPrint('✓ Firebase App Check activated');
+    debugPrint('✓ Firebase App Check activated (${kDebugMode ? 'debug' : 'production'} mode)');
   } else {
     debugPrint('⚠️ Firebase App Check skipped (using local emulators)');
 
@@ -316,6 +321,29 @@ class GreenGoChatApp extends StatelessWidget {
                 );
               }
 
+              // Support routes
+              if (settings.name == '/support') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                final userId = args?['userId'] as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => SupportTicketsListScreen(
+                    currentUserId: userId,
+                  ),
+                );
+              }
+
+              if (settings.name == '/support/chat') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                final conversationId = args?['conversationId'] as String? ?? '';
+                final userId = args?['userId'] as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => SupportChatScreen(
+                    conversationId: conversationId,
+                    currentUserId: userId,
+                  ),
+                );
+              }
+
               return null;
             },
           );
@@ -479,6 +507,20 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 onRefresh: _handleRefresh,
               );
             }
+          } else if (_accessControlService.isPreLaunchMode) {
+            // Pre-launch mode but no access data yet - show default waiting screen
+            // with countdown to general access date
+            return WaitingScreen(
+              accessData: UserAccessData(
+                userId: state.user.uid,
+                approvalStatus: ApprovalStatus.pending,
+                accessDate: AccessControlService.generalAccessDate,
+                membershipTier: SubscriptionTier.basic,
+              ),
+              onSignOut: _handleSignOut,
+              onRefresh: _handleRefresh,
+              onEnableNotifications: _handleEnableNotifications,
+            );
           }
           // User can access the app
           return MainNavigationScreen(userId: state.user.uid);

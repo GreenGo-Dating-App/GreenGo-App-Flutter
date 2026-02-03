@@ -1292,4 +1292,57 @@ class AppLocalizationsDe extends AppLocalizations {
   String notificationAchievementUnlocked(String name) {
     return 'Erfolg Freigeschaltet: $name';
   }
+
+  @override
+  String get voiceStandOutWithYourVoice => 'Hebe dich mit deiner Stimme ab!';
+
+  @override
+  String voiceRecordIntroDescription(int seconds) {
+    return 'Nimm eine kurze $seconds Sekunden Vorstellung auf, damit andere deine Persönlichkeit hören können.';
+  }
+
+  @override
+  String get voiceRecordingTips => 'Aufnahmetipps';
+
+  @override
+  String get voiceTipFindQuietPlace => 'Finde einen ruhigen Ort';
+
+  @override
+  String get voiceTipBeYourself => 'Sei du selbst und natürlich';
+
+  @override
+  String get voiceTipShareWhatMakesYouUnique =>
+      'Teile was dich einzigartig macht';
+
+  @override
+  String get voiceTipKeepItShort => 'Halte es kurz und knapp';
+
+  @override
+  String get voiceTapToRecord => 'Tippen zum Aufnehmen';
+
+  @override
+  String get voiceRecordingSaved => 'Aufnahme gespeichert';
+
+  @override
+  String get voiceRecordAgain => 'Erneut Aufnehmen';
+
+  @override
+  String get voiceUploading => 'Wird hochgeladen...';
+
+  @override
+  String get voiceIntroSaved => 'Sprachvorstellung gespeichert';
+
+  @override
+  String get voiceUploadFailed => 'Hochladen der Sprachaufnahme fehlgeschlagen';
+
+  @override
+  String get voiceDeleteRecording => 'Aufnahme Löschen';
+
+  @override
+  String get voiceDeleteConfirm =>
+      'Bist du sicher, dass du deine Sprachvorstellung löschen möchtest?';
+
+  @override
+  String get voiceMicrophonePermissionRequired =>
+      'Mikrofonberechtigung erforderlich';
 }

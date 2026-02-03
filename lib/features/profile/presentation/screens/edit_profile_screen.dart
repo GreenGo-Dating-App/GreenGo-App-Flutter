@@ -26,8 +26,10 @@ import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_nickname_screen.dart';
+import 'edit_voice_screen.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 // Gamification/Coins screens disabled due to compile errors
 // import '../../../gamification/presentation/screens/achievements_screen.dart';
 // import '../../../gamification/presentation/screens/journey_screen.dart';
@@ -203,7 +205,7 @@ class EditProfileScreen extends StatelessWidget {
                         ? 'Voice recorded'
                         : 'No voice recording',
                     icon: Icons.mic,
-                    onTap: () => _navigateToEditVoice(context),
+                    onTap: () => _navigateToEditVoice(context, currentProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -228,6 +230,27 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _showLanguageDialog(context, languageProvider),
                       );
                     },
+                  ),
+
+                  const SizedBox(height: 32),
+                  const Divider(color: AppColors.divider),
+                  const SizedBox(height: 16),
+                  const Text(
+                    'Help & Support',
+                    style: TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Support Section
+                  EditSectionCard(
+                    title: 'Support Center',
+                    subtitle: 'Get help, report issues, contact us',
+                    icon: Icons.support_agent,
+                    onTap: () => _navigateToSupport(context, currentProfile),
                   ),
 
                   // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
@@ -421,10 +444,27 @@ class EditProfileScreen extends StatelessWidget {
     }
   }
 
-  void _navigateToEditVoice(BuildContext context) {
-    // TODO: Implement voice recording edit screen
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Edit voice coming soon')),
+  Future<void> _navigateToEditVoice(BuildContext context, Profile currentProfile) async {
+    final result = await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<ProfileBloc>(),
+          child: EditVoiceScreen(profile: currentProfile),
+        ),
+      ),
+    );
+    if (result != null && context.mounted) {
+      // Profile was updated
+    }
+  }
+
+  void _navigateToSupport(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => SupportTicketsListScreen(
+          currentUserId: currentProfile.userId,
+        ),
+      ),
     );
   }
 
