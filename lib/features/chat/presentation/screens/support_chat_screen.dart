@@ -1,5 +1,10 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:uuid/uuid.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 
 /// Support Chat Screen
@@ -24,7 +29,11 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseStorage _storage = FirebaseStorage.instance;
+  final ImagePicker _imagePicker = ImagePicker();
   bool _isSending = false;
+  bool _isUploadingImage = false;
+  File? _selectedImage;
   String? _supportAgentName;
   String? _ticketStatus;
   String? _ticketSubject;
@@ -102,9 +111,12 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     }
   }
 
-  Future<void> _sendMessage() async {
+  Future<void> _sendMessage({String? imageUrl}) async {
     final text = _messageController.text.trim();
-    if (text.isEmpty || _isSending) return;
+    final hasImage = imageUrl != null || _selectedImage != null;
+
+    if (text.isEmpty && !hasImage) return;
+    if (_isSending) return;
 
     setState(() {
       _isSending = true;
@@ -112,6 +124,15 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
     try {
       final now = FieldValue.serverTimestamp();
+
+      // Upload image if selected and not already uploaded
+      String? finalImageUrl = imageUrl;
+      if (_selectedImage != null && imageUrl == null) {
+        finalImageUrl = await _uploadImage(_selectedImage!);
+        if (finalImageUrl == null) {
+          throw Exception('Failed to upload image');
+        }
+      }
 
       // Get user profile for sender info with defensive handling
       Map<String, dynamic> userData = {};
@@ -128,6 +149,10 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         // Continue with empty userData - message sending should not be blocked
       }
 
+      // Determine message type
+      final String messageType = finalImageUrl != null ? 'image' : 'text';
+      final String content = text.isNotEmpty ? text : (finalImageUrl != null ? '[Image]' : '');
+
       // Create message in support_messages collection (matches admin panel)
       final messageRef = _firestore.collection('support_messages').doc();
       await messageRef.set({
@@ -138,8 +163,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         'senderAvatar': userData['photoUrls']?.isNotEmpty == true
             ? userData['photoUrls'][0]
             : null,
-        'content': text,
-        'messageType': 'text',
+        'content': content,
+        'messageType': messageType,
+        if (finalImageUrl != null) 'imageUrl': finalImageUrl,
         'readByAdmin': false,
         'readByUser': true,
         'createdAt': now,
@@ -153,8 +179,12 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       final conversationDoc = await conversationRef.get();
       final currentMessageCount = conversationDoc.data()?['messageCount'] ?? 0;
 
+      final String lastMessagePreview = finalImageUrl != null
+          ? '📷 ${text.isNotEmpty ? text : 'Image'}'
+          : (text.length > 100 ? text.substring(0, 100) : text);
+
       await conversationRef.update({
-        'lastMessage': text.length > 100 ? text.substring(0, 100) : text,
+        'lastMessage': lastMessagePreview,
         'lastMessageAt': now,
         'lastMessageBy': 'user',
         'messageCount': currentMessageCount + 1,
@@ -163,6 +193,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       });
 
       _messageController.clear();
+      _clearSelectedImage();
       _scrollToBottom();
     } catch (e) {
       debugPrint('Error sending message: $e');
@@ -190,6 +221,153 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeOut,
       );
+    }
+  }
+
+  void _showImagePickerOptions() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                'Add Attachment',
+                style: TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  _buildPickerOption(
+                    icon: Icons.camera_alt,
+                    label: 'Camera',
+                    onTap: () {
+                      Navigator.pop(context);
+                      _pickImage(ImageSource.camera);
+                    },
+                  ),
+                  _buildPickerOption(
+                    icon: Icons.photo_library,
+                    label: 'Gallery',
+                    onTap: () {
+                      Navigator.pop(context);
+                      _pickImage(ImageSource.gallery);
+                    },
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPickerOption({
+    required IconData icon,
+    required String label,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(
+              color: AppColors.richGold.withOpacity(0.1),
+              shape: BoxShape.circle,
+              border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
+            ),
+            child: Icon(icon, color: AppColors.richGold, size: 28),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            label,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 13,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final XFile? pickedFile = await _imagePicker.pickImage(
+        source: source,
+        maxWidth: 1920,
+        maxHeight: 1920,
+        imageQuality: 85,
+      );
+
+      if (pickedFile != null) {
+        setState(() {
+          _selectedImage = File(pickedFile.path);
+        });
+      }
+    } catch (e) {
+      debugPrint('Error picking image: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to pick image: $e'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  void _clearSelectedImage() {
+    setState(() {
+      _selectedImage = null;
+    });
+  }
+
+  Future<String?> _uploadImage(File imageFile) async {
+    try {
+      setState(() {
+        _isUploadingImage = true;
+      });
+
+      final String fileName = '${const Uuid().v4()}.jpg';
+      final Reference ref = _storage.ref().child('support_attachments/${widget.conversationId}/$fileName');
+
+      final UploadTask uploadTask = ref.putFile(
+        imageFile,
+        SettableMetadata(contentType: 'image/jpeg'),
+      );
+
+      final TaskSnapshot snapshot = await uploadTask;
+      final String downloadUrl = await snapshot.ref.getDownloadURL();
+
+      return downloadUrl;
+    } catch (e) {
+      debugPrint('Error uploading image: $e');
+      return null;
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isUploadingImage = false;
+        });
+      }
     }
   }
 
@@ -395,6 +573,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     final sentAt = messageData['createdAt'];
     final senderName = messageData['senderName'] as String?;
     final isAI = messageData['isAIGenerated'] == true;
+    final messageType = messageData['messageType'] as String? ?? 'text';
+    final imageUrl = messageData['imageUrl'] as String?;
 
     DateTime? timestamp;
     if (sentAt is Timestamp) {
@@ -486,32 +666,112 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   bottomRight: Radius.circular(isMe ? 4 : 16),
                 ),
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              clipBehavior: Clip.antiAlias,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    content,
-                    style: TextStyle(
-                      color: isMe ? AppColors.deepBlack : AppColors.textPrimary,
-                      fontSize: 15,
-                    ),
-                  ),
-                  if (timestamp != null) ...[
-                    const SizedBox(height: 4),
-                    Text(
-                      _formatTime(timestamp),
-                      style: TextStyle(
-                        color: (isMe ? AppColors.deepBlack : AppColors.textSecondary)
-                            .withOpacity(0.6),
-                        fontSize: 11,
+                  // Show image if message type is image
+                  if (messageType == 'image' && imageUrl != null)
+                    GestureDetector(
+                      onTap: () => _showFullScreenImage(imageUrl),
+                      child: CachedNetworkImage(
+                        imageUrl: imageUrl,
+                        width: MediaQuery.of(context).size.width * 0.65,
+                        height: 200,
+                        fit: BoxFit.cover,
+                        placeholder: (context, url) => Container(
+                          width: MediaQuery.of(context).size.width * 0.65,
+                          height: 200,
+                          color: AppColors.backgroundDark,
+                          child: const Center(
+                            child: CircularProgressIndicator(
+                              color: AppColors.richGold,
+                              strokeWidth: 2,
+                            ),
+                          ),
+                        ),
+                        errorWidget: (context, url, error) => Container(
+                          width: MediaQuery.of(context).size.width * 0.65,
+                          height: 200,
+                          color: AppColors.backgroundDark,
+                          child: const Center(
+                            child: Icon(
+                              Icons.broken_image,
+                              color: AppColors.textTertiary,
+                              size: 48,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                  ],
+                  // Show text content (if any, and not just "[Image]")
+                  if (content.isNotEmpty && content != '[Image]')
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                      child: Text(
+                        content,
+                        style: TextStyle(
+                          color: isMe ? AppColors.deepBlack : AppColors.textPrimary,
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  // Timestamp
+                  if (timestamp != null)
+                    Padding(
+                      padding: EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        top: (content.isEmpty || content == '[Image]') ? 10 : 0,
+                        bottom: 10,
+                      ),
+                      child: Text(
+                        _formatTime(timestamp),
+                        style: TextStyle(
+                          color: (isMe ? AppColors.deepBlack : AppColors.textSecondary)
+                              .withOpacity(0.6),
+                          fontSize: 11,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  void _showFullScreenImage(String imageUrl) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            leading: IconButton(
+              icon: const Icon(Icons.close, color: Colors.white),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+          ),
+          body: Center(
+            child: InteractiveViewer(
+              minScale: 0.5,
+              maxScale: 4.0,
+              child: CachedNetworkImage(
+                imageUrl: imageUrl,
+                fit: BoxFit.contain,
+                placeholder: (context, url) => const Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold),
+                ),
+                errorWidget: (context, url, error) => const Center(
+                  child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
@@ -562,7 +822,6 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     }
 
     return Container(
-      padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: AppColors.backgroundCard,
         border: Border(
@@ -570,50 +829,125 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         ),
       ),
       child: SafeArea(
-        child: Row(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: AppColors.backgroundDark,
-                  borderRadius: BorderRadius.circular(24),
+            // Selected image preview
+            if (_selectedImage != null)
+              Container(
+                padding: const EdgeInsets.all(12),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.file(
+                        _selectedImage!,
+                        height: 120,
+                        width: 120,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      top: 4,
+                      right: 4,
+                      child: GestureDetector(
+                        onTap: _clearSelectedImage,
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
+                            color: AppColors.errorRed,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.close,
+                            color: Colors.white,
+                            size: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                    if (_isUploadingImage)
+                      Positioned.fill(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black54,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Center(
+                            child: CircularProgressIndicator(
+                              color: AppColors.richGold,
+                              strokeWidth: 2,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
-                child: TextField(
-                  controller: _messageController,
-                  style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    hintText: 'Type your message...',
-                    hintStyle: TextStyle(color: AppColors.textTertiary),
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 12,
+              ),
+            // Input row
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  // Attachment button
+                  Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.backgroundDark,
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: const Icon(Icons.attach_file, color: AppColors.textSecondary),
+                      onPressed: _isSending ? null : _showImagePickerOptions,
                     ),
                   ),
-                  maxLines: null,
-                  textCapitalization: TextCapitalization.sentences,
-                  onSubmitted: (_) => _sendMessage(),
-                ),
-              ),
-            ),
-            const SizedBox(width: 8),
-            Container(
-              decoration: const BoxDecoration(
-                color: AppColors.richGold,
-                shape: BoxShape.circle,
-              ),
-              child: IconButton(
-                icon: _isSending
-                    ? const SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: CircularProgressIndicator(
-                          color: AppColors.deepBlack,
-                          strokeWidth: 2,
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: AppColors.backgroundDark,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: TextField(
+                        controller: _messageController,
+                        style: const TextStyle(color: AppColors.textPrimary),
+                        decoration: InputDecoration(
+                          hintText: _selectedImage != null
+                              ? 'Add a caption (optional)...'
+                              : 'Type your message...',
+                          hintStyle: const TextStyle(color: AppColors.textTertiary),
+                          border: InputBorder.none,
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
                         ),
-                      )
-                    : const Icon(Icons.send, color: AppColors.deepBlack),
-                onPressed: _isSending ? null : _sendMessage,
+                        maxLines: null,
+                        textCapitalization: TextCapitalization.sentences,
+                        onSubmitted: (_) => _sendMessage(),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Container(
+                    decoration: const BoxDecoration(
+                      color: AppColors.richGold,
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: (_isSending || _isUploadingImage)
+                          ? const SizedBox(
+                              width: 20,
+                              height: 20,
+                              child: CircularProgressIndicator(
+                                color: AppColors.deepBlack,
+                                strokeWidth: 2,
+                              ),
+                            )
+                          : const Icon(Icons.send, color: AppColors.deepBlack),
+                      onPressed: (_isSending || _isUploadingImage) ? null : _sendMessage,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
