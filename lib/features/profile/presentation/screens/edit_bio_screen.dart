@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
+import '../bloc/profile_state.dart';
 
 class EditBioScreen extends StatefulWidget {
   final Profile profile;
@@ -22,6 +23,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
   final TextEditingController _bioController = TextEditingController();
   final int _minLength = 50;
   final int _maxLength = 500;
+  bool _isSaving = false;
 
   @override
   void initState() {
@@ -41,35 +43,47 @@ class _EditBioScreenState extends State<EditBioScreen> {
   }
 
   void _saveBio() {
-    if (!_isValid) return;
+    if (!_isValid || _isSaving) return;
 
-    final updatedProfile = Profile(
-      userId: widget.profile.userId,
-      displayName: widget.profile.displayName,
-      dateOfBirth: widget.profile.dateOfBirth,
-      gender: widget.profile.gender,
-      photoUrls: widget.profile.photoUrls,
+    setState(() {
+      _isSaving = true;
+    });
+
+    final updatedProfile = widget.profile.copyWith(
       bio: _bioController.text.trim(),
-      interests: widget.profile.interests,
-      location: widget.profile.location,
-      languages: widget.profile.languages,
-      voiceRecordingUrl: widget.profile.voiceRecordingUrl,
-      personalityTraits: widget.profile.personalityTraits,
-      createdAt: widget.profile.createdAt,
       updatedAt: DateTime.now(),
-      isComplete: widget.profile.isComplete,
     );
 
     context.read<ProfileBloc>().add(
           ProfileUpdateRequested(profile: updatedProfile),
         );
-
-    Navigator.of(context).pop(updatedProfile);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BlocListener<ProfileBloc, ProfileState>(
+      listener: (context, state) {
+        if (state is ProfileUpdated) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Bio saved successfully'),
+              backgroundColor: AppColors.successGreen,
+            ),
+          );
+          Navigator.of(context).pop(state.profile);
+        } else if (state is ProfileError) {
+          setState(() {
+            _isSaving = false;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(state.message),
+              backgroundColor: AppColors.errorRed,
+            ),
+          );
+        }
+      },
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -83,17 +97,30 @@ class _EditBioScreenState extends State<EditBioScreen> {
           style: TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
-          TextButton(
-            onPressed: _isValid ? _saveBio : null,
-            child: Text(
-              'Save',
-              style: TextStyle(
-                color: _isValid ? AppColors.richGold : AppColors.textTertiary,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+          if (_isSaving)
+            const Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                ),
+              ),
+            )
+          else
+            TextButton(
+              onPressed: _isValid ? _saveBio : null,
+              child: Text(
+                'Save',
+                style: TextStyle(
+                  color: _isValid ? AppColors.richGold : AppColors.textTertiary,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
-          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -210,6 +237,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
               ),
           ],
         ),
+      ),
       ),
     );
   }

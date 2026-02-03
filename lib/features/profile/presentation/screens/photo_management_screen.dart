@@ -122,21 +122,9 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
   }
 
   void _updateProfile() {
-    final updatedProfile = Profile(
-      userId: widget.profile.userId,
-      displayName: widget.profile.displayName,
-      dateOfBirth: widget.profile.dateOfBirth,
-      gender: widget.profile.gender,
+    final updatedProfile = widget.profile.copyWith(
       photoUrls: _photoUrls,
-      bio: widget.profile.bio,
-      interests: widget.profile.interests,
-      location: widget.profile.location,
-      languages: widget.profile.languages,
-      voiceRecordingUrl: widget.profile.voiceRecordingUrl,
-      personalityTraits: widget.profile.personalityTraits,
-      createdAt: widget.profile.createdAt,
       updatedAt: DateTime.now(),
-      isComplete: widget.profile.isComplete,
     );
 
     context.read<ProfileBloc>().add(

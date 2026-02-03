@@ -8,6 +8,7 @@ import '../../domain/entities/profile.dart';
 import '../../domain/entities/location.dart' as profile_entity;
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
+import '../bloc/profile_state.dart';
 
 class EditLocationScreen extends StatefulWidget {
   final Profile profile;
@@ -25,6 +26,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
   profile_entity.Location? _selectedLocation;
   List<String> _selectedLanguages = [];
   bool _isLoadingLocation = false;
+  bool _isSaving = false;
 
   final List<String> _availableLanguages = [
     'English',
@@ -136,6 +138,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
   }
 
   void _saveChanges() {
+    if (_isSaving) return;
+
     if (_selectedLocation == null || _selectedLanguages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -146,35 +150,48 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       return;
     }
 
-    final updatedProfile = Profile(
-      userId: widget.profile.userId,
-      displayName: widget.profile.displayName,
-      dateOfBirth: widget.profile.dateOfBirth,
-      gender: widget.profile.gender,
-      photoUrls: widget.profile.photoUrls,
-      bio: widget.profile.bio,
-      interests: widget.profile.interests,
+    setState(() {
+      _isSaving = true;
+    });
+
+    final updatedProfile = widget.profile.copyWith(
       location: _selectedLocation!,
       languages: _selectedLanguages,
-      voiceRecordingUrl: widget.profile.voiceRecordingUrl,
-      personalityTraits: widget.profile.personalityTraits,
-      createdAt: widget.profile.createdAt,
       updatedAt: DateTime.now(),
-      isComplete: widget.profile.isComplete,
     );
 
     context.read<ProfileBloc>().add(
           ProfileUpdateRequested(profile: updatedProfile),
         );
-
-    Navigator.of(context).pop(updatedProfile);
   }
 
   @override
   Widget build(BuildContext context) {
     final isValid = _selectedLocation != null && _selectedLanguages.isNotEmpty;
 
-    return Scaffold(
+    return BlocListener<ProfileBloc, ProfileState>(
+      listener: (context, state) {
+        if (state is ProfileUpdated) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Location & languages saved successfully'),
+              backgroundColor: AppColors.successGreen,
+            ),
+          );
+          Navigator.of(context).pop(state.profile);
+        } else if (state is ProfileError) {
+          setState(() {
+            _isSaving = false;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(state.message),
+              backgroundColor: AppColors.errorRed,
+            ),
+          );
+        }
+      },
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -188,17 +205,30 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           style: TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
-          TextButton(
-            onPressed: isValid ? _saveChanges : null,
-            child: Text(
-              'Save',
-              style: TextStyle(
-                color: isValid ? AppColors.richGold : AppColors.textTertiary,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+          if (_isSaving)
+            const Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                ),
+              ),
+            )
+          else
+            TextButton(
+              onPressed: isValid ? _saveChanges : null,
+              child: Text(
+                'Save',
+                style: TextStyle(
+                  color: isValid ? AppColors.richGold : AppColors.textTertiary,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
-          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -366,6 +396,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

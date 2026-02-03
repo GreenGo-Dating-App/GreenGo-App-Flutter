@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
+import '../bloc/profile_state.dart';
 
 class EditBasicInfoScreen extends StatefulWidget {
   final Profile profile;
@@ -21,6 +22,7 @@ class EditBasicInfoScreen extends StatefulWidget {
 class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
   final TextEditingController _nameController = TextEditingController();
   String? _selectedGender;
+  bool _isSaving = false;
 
   final List<String> _genderOptions = [
     'Male',
@@ -51,35 +53,48 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
   }
 
   void _saveChanges() {
-    if (!_isValid) return;
+    if (!_isValid || _isSaving) return;
 
-    final updatedProfile = Profile(
-      userId: widget.profile.userId,
+    setState(() {
+      _isSaving = true;
+    });
+
+    final updatedProfile = widget.profile.copyWith(
       displayName: _nameController.text.trim(),
-      dateOfBirth: widget.profile.dateOfBirth, // DOB not editable for age verification
       gender: _selectedGender!,
-      photoUrls: widget.profile.photoUrls,
-      bio: widget.profile.bio,
-      interests: widget.profile.interests,
-      location: widget.profile.location,
-      languages: widget.profile.languages,
-      voiceRecordingUrl: widget.profile.voiceRecordingUrl,
-      personalityTraits: widget.profile.personalityTraits,
-      createdAt: widget.profile.createdAt,
       updatedAt: DateTime.now(),
-      isComplete: widget.profile.isComplete,
     );
 
     context.read<ProfileBloc>().add(
           ProfileUpdateRequested(profile: updatedProfile),
         );
-
-    Navigator.of(context).pop(updatedProfile);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BlocListener<ProfileBloc, ProfileState>(
+      listener: (context, state) {
+        if (state is ProfileUpdated) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Basic info saved successfully'),
+              backgroundColor: AppColors.successGreen,
+            ),
+          );
+          Navigator.of(context).pop(state.profile);
+        } else if (state is ProfileError) {
+          setState(() {
+            _isSaving = false;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(state.message),
+              backgroundColor: AppColors.errorRed,
+            ),
+          );
+        }
+      },
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -93,17 +108,30 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
           style: TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
-          TextButton(
-            onPressed: _isValid ? _saveChanges : null,
-            child: Text(
-              'Save',
-              style: TextStyle(
-                color: _isValid ? AppColors.richGold : AppColors.textTertiary,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+          if (_isSaving)
+            const Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                ),
+              ),
+            )
+          else
+            TextButton(
+              onPressed: _isValid ? _saveChanges : null,
+              child: Text(
+                'Save',
+                style: TextStyle(
+                  color: _isValid ? AppColors.richGold : AppColors.textTertiary,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
-          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -298,6 +326,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

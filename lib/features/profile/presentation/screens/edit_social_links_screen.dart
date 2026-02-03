@@ -29,6 +29,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
   final _xController = TextEditingController();
 
   bool _hasChanges = false;
+  bool _isSaving = false;
 
   @override
   void initState() {
@@ -101,45 +102,40 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
   }
 
   void _saveSocialLinks() {
+    if (_isSaving) return;
+
+    setState(() {
+      _isSaving = true;
+    });
+
     final socialLinks = _getCurrentLinks();
 
-    final updatedProfile = Profile(
-      userId: widget.profile.userId,
-      displayName: widget.profile.displayName,
-      dateOfBirth: widget.profile.dateOfBirth,
-      gender: widget.profile.gender,
-      photoUrls: widget.profile.photoUrls,
-      bio: widget.profile.bio,
-      interests: widget.profile.interests,
-      location: widget.profile.location,
-      languages: widget.profile.languages,
-      voiceRecordingUrl: widget.profile.voiceRecordingUrl,
-      personalityTraits: widget.profile.personalityTraits,
+    final updatedProfile = widget.profile.copyWith(
       socialLinks: socialLinks,
-      createdAt: widget.profile.createdAt,
       updatedAt: DateTime.now(),
-      isComplete: widget.profile.isComplete,
-      verificationStatus: widget.profile.verificationStatus,
-      verificationPhotoUrl: widget.profile.verificationPhotoUrl,
-      verificationSubmittedAt: widget.profile.verificationSubmittedAt,
-      verificationReviewedAt: widget.profile.verificationReviewedAt,
-      verificationReviewedBy: widget.profile.verificationReviewedBy,
-      verificationRejectionReason: widget.profile.verificationRejectionReason,
-      isAdmin: widget.profile.isAdmin,
     );
 
     context.read<ProfileBloc>().add(
           ProfileUpdateRequested(profile: updatedProfile),
         );
-
-    Navigator.of(context).pop(updatedProfile);
   }
 
   @override
   Widget build(BuildContext context) {
     Widget buildBody(BuildContext context) => BlocConsumer<ProfileBloc, ProfileState>(
         listener: (context, state) {
-          if (state is ProfileError) {
+          if (state is ProfileUpdated) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Social profiles saved successfully'),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+            Navigator.of(context).pop(state.profile);
+          } else if (state is ProfileError) {
+            setState(() {
+              _isSaving = false;
+            });
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(state.message),
@@ -164,18 +160,31 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                 style: TextStyle(color: AppColors.textPrimary),
               ),
               actions: [
-                TextButton(
-                  onPressed: _hasChanges ? _saveSocialLinks : null,
-                  child: Text(
-                    'Save',
-                    style: TextStyle(
-                      color:
-                          _hasChanges ? AppColors.richGold : AppColors.textTertiary,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
+                if (_isSaving)
+                  const Padding(
+                    padding: EdgeInsets.only(right: 16),
+                    child: SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                      ),
+                    ),
+                  )
+                else
+                  TextButton(
+                    onPressed: _hasChanges ? _saveSocialLinks : null,
+                    child: Text(
+                      'Save',
+                      style: TextStyle(
+                        color:
+                            _hasChanges ? AppColors.richGold : AppColors.textTertiary,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
-                ),
               ],
             ),
             body: SingleChildScrollView(
