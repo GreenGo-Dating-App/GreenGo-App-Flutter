@@ -59,7 +59,7 @@ dependencies:
   video_player: ^2.8.2
 
   # Audio Recording & Playback
-  record: ^5.1.2
+  record: ^5.2.1
   audioplayers: ^6.1.0
 
   # UI Components
@@ -128,6 +128,9 @@ dependencies:
 
   # Speech Recognition for video call subtitles
   # speech_to_text: ^6.6.0  # Disabled - compatibility issues with Android Gradle Plugin
+
+dependency_overrides:
+  record_linux: ^1.3.0
 
 dev_dependencies:
   flutter_test:
