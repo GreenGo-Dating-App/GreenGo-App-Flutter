@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/membership_badge.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/discovery_card.dart';
 
 /// Swipeable Card Widget
@@ -182,6 +184,14 @@ class _SwipeCardState extends State<SwipeCard>
                   fontWeight: FontWeight.w400,
                 ),
               ),
+              // Show membership badge if not free tier
+              if (widget.card.membershipTier != MembershipTier.free) ...[
+                const SizedBox(width: 8),
+                MembershipBadge(
+                  tier: widget.card.membershipTier,
+                  compact: true,
+                ),
+              ],
             ],
           ),
           const SizedBox(height: 8),

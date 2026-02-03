@@ -176,19 +176,78 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         }
       },
       builder: (context, state) {
-        if (state is CoinLoading) {
-          return const Center(child: CircularProgressIndicator());
-        }
+        final isLoading = state is CoinLoading;
 
+        // Check if we have packages loaded
+        List<CoinPackage> packages = [];
+        List<CoinPromotion> promotions = [];
         if (state is CoinPackagesLoaded) {
-          return _buildPackageList(state.packages, state.activePromotions);
+          packages = state.packages;
+          promotions = state.activePromotions;
         }
 
-        return const Center(
-          child: Text(
-            'Failed to load packages',
-            style: TextStyle(color: Colors.white70),
-          ),
+        return Stack(
+          children: [
+            // Main content
+            if (packages.isNotEmpty)
+              _buildPackageList(packages, promotions)
+            else if (!isLoading)
+              const Center(
+                child: Text(
+                  'Failed to load packages',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              )
+            else
+              // Show placeholder content while loading
+              Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: const LinearGradient(
+                          colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFFFFD700).withOpacity(0.5),
+                            blurRadius: 20,
+                            spreadRadius: 5,
+                          ),
+                        ],
+                      ),
+                      child: const Center(
+                        child: Text(
+                          '🪙',
+                          style: TextStyle(fontSize: 40),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                    const Text(
+                      'Loading coin packages...',
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                  ],
+                ),
+              ),
+            // Loading overlay
+            if (isLoading)
+              Container(
+                color: Colors.black54,
+                child: const Center(
+                  child: CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFFD700)),
+                  ),
+                ),
+              ),
+          ],
         );
       },
     );

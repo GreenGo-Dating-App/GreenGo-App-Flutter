@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/membership_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
 
 /// Match Card Widget
@@ -88,14 +90,23 @@ class MatchCardWidget extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      profile?.displayName ?? 'Match',
-                      style: TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 16,
-                        fontWeight:
-                            isNewMatch ? FontWeight.bold : FontWeight.w600,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          profile?.displayName ?? 'Match',
+                          style: TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 16,
+                            fontWeight:
+                                isNewMatch ? FontWeight.bold : FontWeight.w600,
+                          ),
+                        ),
+                        // Show membership badge if not free tier
+                        if (profile != null && profile!.membershipTier != MembershipTier.free) ...[
+                          const SizedBox(width: 6),
+                          MembershipIndicator(tier: profile!.membershipTier),
+                        ],
+                      ],
                     ),
                     const SizedBox(height: 4),
                     Text(

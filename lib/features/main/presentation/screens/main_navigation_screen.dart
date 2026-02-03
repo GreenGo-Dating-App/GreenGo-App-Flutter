@@ -10,12 +10,17 @@ import '../../../../core/services/feature_flags_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
+import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
 import '../../../discovery/presentation/screens/matches_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../coins/presentation/bloc/coin_state.dart';
+import '../../../coins/domain/entities/coin_balance.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
 import '../../../profile/presentation/screens/onboarding_screen.dart' as profile;
 import '../../../profile/presentation/widgets/verification_status_widget.dart';
@@ -25,6 +30,8 @@ import '../../../notifications/presentation/bloc/notifications_bloc.dart';
 import '../../../notifications/presentation/bloc/notifications_event.dart';
 import '../../../notifications/presentation/bloc/notifications_state.dart';
 import '../../../notifications/domain/entities/notification.dart' as notif;
+import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
+import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 // Language Learning imports - only used when feature is enabled
 import '../../../language_learning/presentation/screens/language_learning_home_screen.dart';
 import '../../../language_learning/presentation/bloc/language_learning_bloc.dart';
@@ -71,6 +78,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
 
   late final List<Widget> _screens;
   late final NotificationsBloc _notificationsBloc;
+
+  // Coin balance bloc for app bar
+  late final CoinBloc _coinBloc;
+
+  // User's membership tier
+  MembershipTier _membershipTier = MembershipTier.free;
 
   // Global gamification bloc for level-up celebrations (only when enabled)
   GamificationBloc? _gamificationBloc;
@@ -130,6 +143,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         userId: widget.userId,
         unreadOnly: true,
       ));
+
+    // Initialize coin bloc for balance display in app bar
+    _coinBloc = di.sl<CoinBloc>()
+      ..add(SubscribeToCoinBalance(widget.userId));
 
     // Check if user has a profile, redirect to onboarding if not
     _checkUserProfile();
@@ -304,10 +321,18 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
             status = VerificationStatus.notSubmitted;
         }
 
+        // Get membership tier
+        final membershipTierString = data['membershipTier'] as String?;
+        MembershipTier membershipTier = MembershipTier.free;
+        if (membershipTierString != null) {
+          membershipTier = MembershipTier.fromString(membershipTierString);
+        }
+
         setState(() {
           _verificationStatus = status;
           _verificationRejectionReason = data['verificationRejectionReason'] as String?;
           _isAdmin = data['isAdmin'] as bool? ?? false;
+          _membershipTier = membershipTier;
           _isCheckingProfile = false;
         });
       }
@@ -335,6 +360,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     WidgetsBinding.instance.removeObserver(this);
     _activityTrackingService.dispose();
     _notificationsBloc.close();
+    _coinBloc.close();
     _gamificationBloc?.close();
     super.dispose();
   }
@@ -548,6 +574,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       child: MultiBlocProvider(
         providers: [
           BlocProvider.value(value: _notificationsBloc),
+          BlocProvider.value(value: _coinBloc),
           if (_gamificationBloc != null)
             BlocProvider.value(value: _gamificationBloc!),
         ],
@@ -611,7 +638,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Profile (MVP)
     // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Learn, 6=Profile
     if (_currentIndex == 0) {
-      // Discovery screen - show logo and notifications
+      // Discovery screen - show logo and coin balance + membership badge
       return AppBar(
         title: const Text(
           'GreenGo',
@@ -624,12 +651,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
-          _buildNotificationButton(),
+          _buildCoinBalanceWidget(),
+          const SizedBox(width: 8),
+          _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
       );
     } else if (_currentIndex == 1 || _currentIndex == 2) {
-      // Matches and Messages - show title and notifications
+      // Matches and Messages - show title and coin balance + membership badge
       return AppBar(
         title: Text(
           _currentIndex == 1 ? 'Matches' : 'Messages',
@@ -641,7 +670,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
-          _buildNotificationButton(),
+          _buildCoinBalanceWidget(),
+          const SizedBox(width: 8),
+          _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
       );
@@ -698,6 +729,92 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
                 ),
               ),
           ],
+        );
+      },
+    );
+  }
+
+  /// Coin balance widget for app bar
+  Widget _buildCoinBalanceWidget() {
+    return BlocBuilder<CoinBloc, CoinState>(
+      builder: (context, state) {
+        int coinBalance = 0;
+        if (state is CoinBalanceLoaded) {
+          coinBalance = state.balance.availableCoins;
+        } else if (state is CoinBalanceUpdated) {
+          coinBalance = state.balance.availableCoins;
+        }
+
+        return GestureDetector(
+          onTap: () {
+            // Navigate to Shop tab (index 3)
+            setState(() {
+              _currentIndex = 3;
+            });
+          },
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
+              ),
+              borderRadius: BorderRadius.circular(16),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFFFFD700).withOpacity(0.3),
+                  blurRadius: 6,
+                  spreadRadius: 1,
+                ),
+              ],
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(
+                  Icons.monetization_on,
+                  color: Colors.white,
+                  size: 16,
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  _formatCoinBalance(coinBalance),
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  String _formatCoinBalance(int balance) {
+    if (balance >= 1000000) {
+      return '${(balance / 1000000).toStringAsFixed(1)}M';
+    } else if (balance >= 1000) {
+      return '${(balance / 1000).toStringAsFixed(1)}K';
+    }
+    return balance.toString();
+  }
+
+  /// Membership badge widget for app bar
+  Widget _buildMembershipBadgeWidget() {
+    return MembershipIndicator(
+      tier: _membershipTier,
+      onTap: () {
+        // Navigate to subscription screen
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => BlocProvider(
+              create: (context) => di.sl<SubscriptionBloc>(),
+              child: const SubscriptionSelectionScreen(),
+            ),
+          ),
         );
       },
     );

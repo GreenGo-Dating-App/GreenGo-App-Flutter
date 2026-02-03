@@ -3,8 +3,10 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/membership_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
@@ -106,7 +108,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Name and age
+                        // Name, age, and membership tier
                         Row(
                           children: [
                             Text(
@@ -125,6 +127,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 fontSize: 28,
                               ),
                             ),
+                            // Show membership badge if not free tier
+                            if (widget.profile.membershipTier != MembershipTier.free) ...[
+                              const SizedBox(width: 12),
+                              MembershipBadge(
+                                tier: widget.profile.membershipTier,
+                                compact: true,
+                              ),
+                            ],
                           ],
                         ),
 

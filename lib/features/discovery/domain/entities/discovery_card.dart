@@ -1,4 +1,5 @@
 import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Discovery Card Entity
 ///
@@ -22,6 +23,7 @@ class DiscoveryCard {
   String get distanceText => candidate.distanceText;
   String get matchPercentage => candidate.matchScore.matchPercentageText;
   bool get isRecommended => candidate.isRecommended;
+  MembershipTier get membershipTier => candidate.profile.membershipTier;
 
   /// Get bio preview (first 100 characters)
   String get bioPreview {
