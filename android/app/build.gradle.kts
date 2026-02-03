@@ -62,13 +62,10 @@ android {
                 signingConfigs.getByName("debug")
             }
 
-            // Enable code shrinking and obfuscation for release
-            isMinifyEnabled = true
-            isShrinkResources = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            // Disable code shrinking due to ML Kit compatibility issues
+            // TODO: Re-enable and fix ProGuard rules for ML Kit
+            isMinifyEnabled = false
+            isShrinkResources = false
         }
     }
 }

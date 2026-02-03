@@ -50,3 +50,21 @@
 -keepattributes *Annotation*
 -keepattributes EnclosingMethod
 -keepattributes InnerClasses
+
+# Google ML Kit - Keep all text recognition classes
+-keep class com.google.mlkit.vision.text.** { *; }
+-keep class com.google.mlkit.vision.text.chinese.** { *; }
+-keep class com.google.mlkit.vision.text.devanagari.** { *; }
+-keep class com.google.mlkit.vision.text.japanese.** { *; }
+-keep class com.google.mlkit.vision.text.korean.** { *; }
+-keep class com.google.mlkit.vision.face.** { *; }
+-keep class com.google.mlkit.common.** { *; }
+
+# Google Mobile Ads
+-keep class com.google.android.gms.ads.** { *; }
+
+# Suppress warnings for missing ML Kit optional modules
+-dontwarn com.google.mlkit.vision.text.chinese.**
+-dontwarn com.google.mlkit.vision.text.devanagari.**
+-dontwarn com.google.mlkit.vision.text.japanese.**
+-dontwarn com.google.mlkit.vision.text.korean.**

@@ -199,6 +199,55 @@ extension SubscriptionTierExtension on SubscriptionTier {
         return SubscriptionTier.basic;
     }
   }
+
+  /// Get the upgrade offer ID for Play Store/App Store
+  String? getUpgradeOfferId(SubscriptionTier currentTier) {
+    // Can only upgrade to higher tiers
+    if (index <= currentTier.index) return null;
+
+    switch (this) {
+      case SubscriptionTier.silver:
+        return 'upgrade_to_silver';
+      case SubscriptionTier.gold:
+        if (currentTier == SubscriptionTier.silver) {
+          return 'upgrade_silver_to_gold';
+        }
+        return 'upgrade_to_gold';
+      case SubscriptionTier.platinum:
+        if (currentTier == SubscriptionTier.gold) {
+          return 'upgrade_gold_to_platinum';
+        } else if (currentTier == SubscriptionTier.silver) {
+          return 'upgrade_silver_to_platinum';
+        }
+        return 'upgrade_to_platinum';
+      default:
+        return null;
+    }
+  }
+
+  /// Get the upgrade discount percentage based on current tier
+  double getUpgradeDiscount(SubscriptionTier currentTier) {
+    // No discount if not upgrading
+    if (index <= currentTier.index) return 0.0;
+
+    // Calculate prorated discount based on tier difference
+    switch (currentTier) {
+      case SubscriptionTier.silver:
+        // Silver users get 10% off Gold, 15% off Platinum
+        if (this == SubscriptionTier.gold) return 0.10;
+        if (this == SubscriptionTier.platinum) return 0.15;
+        return 0.0;
+      case SubscriptionTier.gold:
+        // Gold users get 10% off Platinum
+        if (this == SubscriptionTier.platinum) return 0.10;
+        return 0.0;
+      case SubscriptionTier.basic:
+        // Basic users get no discount
+        return 0.0;
+      default:
+        return 0.0;
+    }
+  }
 }
 
 /// Subscription Status
