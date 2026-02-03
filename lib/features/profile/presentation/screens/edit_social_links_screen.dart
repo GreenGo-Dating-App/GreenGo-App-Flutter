@@ -122,7 +122,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Widget buildBody(BuildContext context) => BlocConsumer<ProfileBloc, ProfileState>(
+    return BlocConsumer<ProfileBloc, ProfileState>(
         listener: (context, state) {
           if (state is ProfileUpdated) {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -320,17 +320,6 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
           );
         },
       );
-
-    // Use BlocProvider.value if ProfileBloc exists in parent, otherwise create new one
-    try {
-      context.read<ProfileBloc>();
-      return buildBody(context);
-    } catch (_) {
-      return BlocProvider(
-        create: (context) => di.sl<ProfileBloc>(),
-        child: Builder(builder: buildBody),
-      );
-    }
   }
 
   Widget _buildSocialInput({

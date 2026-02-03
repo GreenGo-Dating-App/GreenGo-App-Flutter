@@ -134,7 +134,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Widget buildScaffold(BuildContext context) => Scaffold(
+    return Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -296,17 +296,6 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
           },
         ),
       );
-
-    // Use BlocProvider.value if ProfileBloc exists in parent, otherwise create new one
-    try {
-      context.read<ProfileBloc>();
-      return buildScaffold(context);
-    } catch (_) {
-      return BlocProvider(
-        create: (context) => di.sl<ProfileBloc>(),
-        child: Builder(builder: buildScaffold),
-      );
-    }
   }
 }
 

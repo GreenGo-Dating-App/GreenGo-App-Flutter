@@ -52,16 +52,16 @@ class EditProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) {
-        final bloc = di.sl<ProfileBloc>();
-        // Load profile if only userId is provided
-        if (profile == null && userId != null) {
-          bloc.add(ProfileLoadRequested(userId: userId!));
-        }
-        return bloc;
-      },
-      child: Scaffold(
+    // Check if ProfileBloc exists in parent context (from MainNavigationScreen)
+    ProfileBloc? parentBloc;
+    try {
+      parentBloc = context.read<ProfileBloc>();
+    } catch (_) {
+      // No parent bloc found
+    }
+
+    Widget buildContent(BuildContext context) {
+      return Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -358,7 +358,24 @@ class EditProfileScreen extends StatelessWidget {
             );
           },
         ),
-      ),
+      );
+    }
+
+    // If ProfileBloc exists in parent context, use it directly
+    if (parentBloc != null) {
+      return buildContent(context);
+    }
+
+    // Otherwise, create a new ProfileBloc for standalone usage
+    return BlocProvider(
+      create: (context) {
+        final bloc = di.sl<ProfileBloc>();
+        if (profile == null && userId != null) {
+          bloc.add(ProfileLoadRequested(userId: userId!));
+        }
+        return bloc;
+      },
+      child: Builder(builder: buildContent),
     );
   }
 
@@ -375,86 +392,109 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _navigateToEditNickname(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => BlocProvider(
-          create: (context) => di.sl<ProfileBloc>(),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
           child: EditNicknameScreen(profile: currentProfile),
         ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      // Reload profile to refresh the UI
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToPhotoManagement(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => PhotoManagementScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: PhotoManagementScreen(profile: currentProfile),
+        ),
       ),
     );
     // Refresh profile if updated
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToEditBasicInfo(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EditBasicInfoScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditBasicInfoScreen(profile: currentProfile),
+        ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToEditBio(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EditBioScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditBioScreen(profile: currentProfile),
+        ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToEditInterests(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EditInterestsScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditInterestsScreen(profile: currentProfile),
+        ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToEditLocation(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EditLocationScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditLocationScreen(profile: currentProfile),
+        ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
   Future<void> _navigateToEditVoice(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => BlocProvider(
-          create: (context) => di.sl<ProfileBloc>(),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
           child: EditVoiceScreen(profile: currentProfile),
         ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 
@@ -484,13 +524,17 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _navigateToEditSocialLinks(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
     final result = await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EditSocialLinksScreen(profile: currentProfile),
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditSocialLinksScreen(profile: currentProfile),
+        ),
       ),
     );
     if (result != null && context.mounted) {
-      // Profile was updated
+      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
     }
   }
 

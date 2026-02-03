@@ -22,6 +22,9 @@ import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/domain/entities/coin_balance.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../../profile/presentation/screens/onboarding_screen.dart' as profile;
 import '../../../profile/presentation/widgets/verification_status_widget.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -82,6 +85,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   // Coin balance bloc for app bar
   late final CoinBloc _coinBloc;
 
+  // Profile bloc for shared profile state across screens
+  late final ProfileBloc _profileBloc;
+
   // User's membership tier
   MembershipTier _membershipTier = MembershipTier.free;
 
@@ -134,7 +140,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
           create: (context) => di.sl<LanguageLearningBloc>(),
           child: const LanguageLearningHomeScreen(),
         ),
-      EditProfileScreen(userId: widget.userId),
+      BlocProvider.value(
+        value: _profileBloc,
+        child: EditProfileScreen(userId: widget.userId),
+      ),
     ];
 
     // Initialize notifications bloc for badge count
@@ -147,6 +156,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     // Initialize coin bloc for balance display in app bar
     _coinBloc = di.sl<CoinBloc>()
       ..add(SubscribeToCoinBalance(widget.userId));
+
+    // Initialize profile bloc for shared profile state
+    _profileBloc = di.sl<ProfileBloc>()
+      ..add(ProfileLoadRequested(userId: widget.userId));
 
     // Check if user has a profile, redirect to onboarding if not
     _checkUserProfile();
@@ -361,6 +374,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     _activityTrackingService.dispose();
     _notificationsBloc.close();
     _coinBloc.close();
+    _profileBloc.close();
     _gamificationBloc?.close();
     super.dispose();
   }
@@ -575,30 +589,45 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         providers: [
           BlocProvider.value(value: _notificationsBloc),
           BlocProvider.value(value: _coinBloc),
+          BlocProvider.value(value: _profileBloc),
           if (_gamificationBloc != null)
             BlocProvider.value(value: _gamificationBloc!),
         ],
-        child: _gamificationBloc != null
-            ? BlocListener<GamificationBloc, GamificationState>(
-                listener: (context, state) {
-                  // Show level-up celebration dialog when user levels up
-                  if (state.leveledUp && state.userLevel != null) {
-                    LevelUpCelebrationDialog.show(
-                      context,
-                      newLevel: state.userLevel!.level,
-                      previousLevel: state.previousLevel ?? (state.userLevel!.level - 1),
-                      rewards: state.pendingRewards,
-                      isVIP: state.userLevel!.isVIP,
-                      onDismiss: () {
-                        // Clear the level-up flag after showing dialog
-                        _gamificationBloc!.add(const ClearLevelUpFlag());
-                      },
-                    );
-                  }
-                },
-                child: _buildMainContent(scaffold),
-              )
-            : _buildMainContent(scaffold),
+        child: BlocListener<ProfileBloc, ProfileState>(
+          listener: (context, state) {
+            // Update membership tier when profile is loaded or updated
+            if (state is ProfileLoaded) {
+              setState(() {
+                _membershipTier = state.profile.membershipTier;
+              });
+            } else if (state is ProfileUpdated) {
+              setState(() {
+                _membershipTier = state.profile.membershipTier;
+              });
+            }
+          },
+          child: _gamificationBloc != null
+              ? BlocListener<GamificationBloc, GamificationState>(
+                  listener: (context, state) {
+                    // Show level-up celebration dialog when user levels up
+                    if (state.leveledUp && state.userLevel != null) {
+                      LevelUpCelebrationDialog.show(
+                        context,
+                        newLevel: state.userLevel!.level,
+                        previousLevel: state.previousLevel ?? (state.userLevel!.level - 1),
+                        rewards: state.pendingRewards,
+                        isVIP: state.userLevel!.isVIP,
+                        onDismiss: () {
+                          // Clear the level-up flag after showing dialog
+                          _gamificationBloc!.add(const ClearLevelUpFlag());
+                        },
+                      );
+                    }
+                  },
+                  child: _buildMainContent(scaffold),
+                )
+              : _buildMainContent(scaffold),
+        ),
       ),
     );
   }
