@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
@@ -386,6 +387,26 @@ class _LoginScreenState extends State<LoginScreen>
                           ),
 
                           const SizedBox(height: 20),
+
+                          // App Version
+                          FutureBuilder<PackageInfo>(
+                            future: PackageInfo.fromPlatform(),
+                            builder: (context, snapshot) {
+                              if (snapshot.hasData) {
+                                return Text(
+                                  'v${snapshot.data!.version}',
+                                  style: const TextStyle(
+                                    color: AppColors.textTertiary,
+                                    fontSize: 12,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                );
+                              }
+                              return const SizedBox.shrink();
+                            },
+                          ),
+
+                          const SizedBox(height: 10),
                         ],
                       ),
                     ),
