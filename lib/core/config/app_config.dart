@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart' show kDebugMode;
+import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
 
 /// App Configuration
 ///
@@ -130,30 +130,30 @@ class AppConfig {
 
   /// Print configuration (for debugging)
   static void printConfig() {
-    print('=================================');
-    print('App Configuration ($environment)');
-    print('Build Mode: ${kDebugMode ? "DEBUG" : "RELEASE"}');
-    print('=================================');
-    print('Local Emulators: $useLocalEmulators');
+    debugPrint('=================================');
+    debugPrint('App Configuration ($environment)');
+    debugPrint('Build Mode: ${kDebugMode ? "DEBUG" : "RELEASE"}');
+    debugPrint('=================================');
+    debugPrint('Local Emulators: $useLocalEmulators');
     if (useLocalEmulators) {
-      print('Emulator Host: $emulatorHost');
-      print('  - Auth: $emulatorHost:$authEmulatorPort');
-      print('  - Firestore: $emulatorHost:$firestoreEmulatorPort');
-      print('  - Storage: $emulatorHost:$storageEmulatorPort');
-      print('  - Functions: $emulatorHost:$functionsEmulatorPort');
+      debugPrint('Emulator Host: $emulatorHost');
+      debugPrint('  - Auth: $emulatorHost:$authEmulatorPort');
+      debugPrint('  - Firestore: $emulatorHost:$firestoreEmulatorPort');
+      debugPrint('  - Storage: $emulatorHost:$storageEmulatorPort');
+      debugPrint('  - Functions: $emulatorHost:$functionsEmulatorPort');
     } else {
-      print('Connected to: PRODUCTION Firebase');
+      debugPrint('Connected to: PRODUCTION Firebase');
     }
-    print('---------------------------------');
-    print('Auth Methods: ${getEnabledAuthMethods()}');
-    print('Social Login UI: $showSocialLoginSection');
-    print('In-App Purchases: $enableInAppPurchases');
-    print('Video Calls: $enableVideoCalls');
-    print('Language Learning: $enableLanguageLearning');
-    print('Gamification: $enableGamification');
-    print('Analytics: $enableAnalytics');
-    print('Crash Reporting: $enableCrashReporting');
-    print('Performance Monitoring: $enablePerformanceMonitoring');
-    print('=================================');
+    debugPrint('---------------------------------');
+    debugPrint('Auth Methods: ${getEnabledAuthMethods()}');
+    debugPrint('Social Login UI: $showSocialLoginSection');
+    debugPrint('In-App Purchases: $enableInAppPurchases');
+    debugPrint('Video Calls: $enableVideoCalls');
+    debugPrint('Language Learning: $enableLanguageLearning');
+    debugPrint('Gamification: $enableGamification');
+    debugPrint('Analytics: $enableAnalytics');
+    debugPrint('Crash Reporting: $enableCrashReporting');
+    debugPrint('Performance Monitoring: $enablePerformanceMonitoring');
+    debugPrint('=================================');
   }
 }

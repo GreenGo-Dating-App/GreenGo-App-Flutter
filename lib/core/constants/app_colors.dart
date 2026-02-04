@@ -52,9 +52,9 @@ class AppColors {
   static const LinearGradient primaryGradient = goldGradient;
 
   // Shadow Colors
-  static final Color shadowLight = Colors.black.withOpacity(0.1);
-  static final Color shadowMedium = Colors.black.withOpacity(0.3);
-  static final Color shadowHeavy = Colors.black.withOpacity(0.5);
+  static final Color shadowLight = Colors.black.withValues(alpha: 0.1);
+  static final Color shadowMedium = Colors.black.withValues(alpha: 0.3);
+  static final Color shadowHeavy = Colors.black.withValues(alpha: 0.5);
 
   // Online Status
   static const Color online = Color(0xFF10B981);

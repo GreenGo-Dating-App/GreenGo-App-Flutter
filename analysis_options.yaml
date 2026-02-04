@@ -17,7 +17,6 @@ linter:
     - avoid_empty_else
     - avoid_print
     - avoid_relative_lib_imports
-    - avoid_returning_null_for_future
     - avoid_slow_async_io
     - avoid_type_to_string
     - cancel_subscriptions
@@ -33,7 +32,6 @@ linter:
     - always_declare_return_types
     - always_put_control_body_on_new_line
     - always_put_required_named_parameters_first
-    - always_require_non_null_named_parameters
     - annotate_overrides
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
@@ -45,7 +43,6 @@ linter:
     - avoid_positional_boolean_parameters
     - avoid_renaming_method_parameters
     - avoid_return_types_on_setters
-    - avoid_returning_null
     - avoid_returning_null_for_void
     - avoid_setters_without_getters
     - avoid_single_cascade_in_expression_statements
@@ -67,7 +64,6 @@ linter:
     - null_closures
     - omit_local_variable_types
     - one_member_abstracts
-    - package_api_docs
     - package_prefixed_library_names
     - prefer_adjacent_string_concatenation
     - prefer_collection_literals
@@ -78,7 +74,6 @@ linter:
     - prefer_const_literals_to_create_immutables
     - prefer_constructors_over_static_methods
     - prefer_contains
-    - prefer_equal_for_default_values
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
