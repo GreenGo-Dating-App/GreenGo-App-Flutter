@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/usecases/get_notifications.dart';
 import '../../domain/usecases/mark_notification_read.dart';
@@ -35,31 +37,48 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
 
     _userId = event.userId;
 
-    // Use emit.forEach to properly handle stream emissions within bloc
-    await emit.forEach(
-      getNotifications(
+    try {
+      // Add timeout to prevent endless loading
+      final stream = getNotifications(
         GetNotificationsParams(
           userId: event.userId,
           unreadOnly: event.unreadOnly,
         ),
-      ),
-      onData: (notificationsResult) {
-        return notificationsResult.fold(
-          (failure) => NotificationsError(
-              'Failed to load notifications: ${failure.toString()}'),
-          (notifications) {
-            if (notifications.isEmpty) {
-              return const NotificationsEmpty();
-            } else {
-              return NotificationsLoaded(
-                notifications: notifications,
-                unreadCount: notifications.where((n) => !n.isRead).length,
-              );
-            }
-          },
-        );
-      },
-    );
+      ).timeout(
+        const Duration(seconds: 30),
+        onTimeout: (sink) {
+          debugPrint('[NotificationsBloc] Stream timeout - closing sink');
+          sink.close();
+        },
+      );
+
+      // Use emit.forEach to properly handle stream emissions within bloc
+      await emit.forEach(
+        stream,
+        onData: (notificationsResult) {
+          return notificationsResult.fold(
+            (failure) => NotificationsError(
+                'Failed to load notifications: ${failure.toString()}'),
+            (notifications) {
+              if (notifications.isEmpty) {
+                return const NotificationsEmpty();
+              } else {
+                return NotificationsLoaded(
+                  notifications: notifications,
+                  unreadCount: notifications.where((n) => !n.isRead).length,
+                );
+              }
+            },
+          );
+        },
+      );
+    } on TimeoutException {
+      debugPrint('[NotificationsBloc] Timeout loading notifications');
+      emit(const NotificationsError('Loading notifications timed out. Please try again.'));
+    } catch (e) {
+      debugPrint('[NotificationsBloc] Error loading notifications: $e');
+      emit(NotificationsError('Failed to load notifications: ${e.toString()}'));
+    }
   }
 
   Future<void> _onMarkedAsRead(

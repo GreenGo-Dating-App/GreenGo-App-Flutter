@@ -18,8 +18,8 @@ class AppConfig {
 
   /// Use Firebase Emulators (running in Docker) for local development
   /// Automatically disabled in release builds for production safety
-  /// Can be manually overridden for testing with: --dart-define=USE_EMULATORS=false
-  static const bool _forceEmulators = bool.fromEnvironment('USE_EMULATORS', defaultValue: true);
+  /// Can be manually overridden for testing with: --dart-define=USE_EMULATORS=true
+  static const bool _forceEmulators = bool.fromEnvironment('USE_EMULATORS', defaultValue: false);
   static bool get useLocalEmulators => kDebugMode && _forceEmulators;
 
   /// Emulator host address

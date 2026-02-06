@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
@@ -121,15 +122,13 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocListener<ProfileBloc, ProfileState>(
-      listener: (context, state) {
+      listener: (context, state) async {
         if (state is ProfileUpdated) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Interests saved successfully'),
-              backgroundColor: AppColors.successGreen,
-            ),
-          );
-          Navigator.of(context).pop(state.profile);
+          // Show success dialog instead of snackbar
+          await ActionSuccessDialog.showInterestsUpdated(context);
+          if (context.mounted) {
+            Navigator.of(context).pop(state.profile);
+          }
         } else if (state is ProfileError) {
           setState(() {
             _isSaving = false;

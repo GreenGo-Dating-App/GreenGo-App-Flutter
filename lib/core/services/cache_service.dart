@@ -23,6 +23,8 @@ class CacheService {
   static const Duration defaultTTL = Duration(minutes: 5);
   static const Duration profileTTL = Duration(minutes: 10);
   static const Duration settingsTTL = Duration(hours: 1);
+  static const Duration discoveryTTL = Duration(minutes: 3);
+  static const Duration matchesTTL = Duration(minutes: 5);
   static const int maxMemoryCacheSize = 100;
 
   /// Initialize the cache service
@@ -175,6 +177,50 @@ class CacheService {
   Future<void> cacheList(String key, List<Map<String, dynamic>> data,
       {Duration? ttl}) async {
     await set(key, data, ttl: ttl ?? defaultTTL);
+  }
+
+  // ============================================================================
+  // DISCOVERY STACK CACHING (3 min TTL)
+  // ============================================================================
+
+  /// Get cached discovery stack for a user
+  List<Map<String, dynamic>>? getDiscoveryStack(String userId) {
+    final key = 'discovery_stack_$userId';
+    return getList(key);
+  }
+
+  /// Cache discovery stack data
+  Future<void> cacheDiscoveryStack(String userId, List<Map<String, dynamic>> stack) async {
+    final key = 'discovery_stack_$userId';
+    await cacheList(key, stack, ttl: discoveryTTL);
+  }
+
+  /// Invalidate discovery stack cache (e.g., after swiping all cards)
+  Future<void> invalidateDiscoveryStack(String userId) async {
+    final key = 'discovery_stack_$userId';
+    await remove(key);
+  }
+
+  // ============================================================================
+  // MATCH HISTORY CACHING (5 min TTL)
+  // ============================================================================
+
+  /// Get cached matches for a user
+  List<Map<String, dynamic>>? getMatches(String userId) {
+    final key = 'matches_$userId';
+    return getList(key);
+  }
+
+  /// Cache matches data
+  Future<void> cacheMatches(String userId, List<Map<String, dynamic>> matches) async {
+    final key = 'matches_$userId';
+    await cacheList(key, matches, ttl: matchesTTL);
+  }
+
+  /// Invalidate matches cache (e.g., after new match)
+  Future<void> invalidateMatches(String userId) async {
+    final key = 'matches_$userId';
+    await remove(key);
   }
 
   // ============================================================================

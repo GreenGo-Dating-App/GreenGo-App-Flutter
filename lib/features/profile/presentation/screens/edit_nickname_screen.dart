@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/nickname_generator.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
@@ -164,15 +165,13 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
         ],
       ),
       body: BlocListener<ProfileBloc, ProfileState>(
-        listener: (context, state) {
+        listener: (context, state) async {
           if (state is ProfileUpdated) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Nickname updated successfully'),
-                backgroundColor: AppColors.successGreen,
-              ),
-            );
-            Navigator.of(context).pop(state.profile);
+            // Show success dialog instead of snackbar
+            await ActionSuccessDialog.showNicknameUpdated(context);
+            if (context.mounted) {
+              Navigator.of(context).pop(state.profile);
+            }
           } else if (state is ProfileError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(

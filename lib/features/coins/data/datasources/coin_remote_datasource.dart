@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:uuid/uuid.dart';
 
@@ -227,20 +228,42 @@ class CoinRemoteDataSource {
   // ===== Purchase Operations =====
 
   /// Get available coin packages from store
+  /// Get available coin packages from store
+  /// Returns standard packages as fallback if IAP is unavailable or fails
   Future<List<CoinPackage>> getAvailablePackages() async {
-    final productIds = CoinPackages.standardPackages
-        .map((pkg) => pkg.productId)
-        .toSet();
+    try {
+      // Check if store is available
+      final available = await inAppPurchase.isAvailable();
+      if (!available) {
+        debugPrint('[CoinShop] IAP not available - returning standard packages');
+        return CoinPackages.standardPackages;
+      }
 
-    final ProductDetailsResponse response =
-        await inAppPurchase.queryProductDetails(productIds);
+      final productIds = CoinPackages.standardPackages
+          .map((pkg) => pkg.productId)
+          .toSet();
 
-    if (response.error != null) {
-      throw Exception('Failed to load products: ${response.error}');
+      final ProductDetailsResponse response =
+          await inAppPurchase.queryProductDetails(productIds);
+
+      if (response.error != null) {
+        debugPrint('[CoinShop] IAP query error: ${response.error} - returning standard packages');
+        return CoinPackages.standardPackages;
+      }
+
+      if (response.productDetails.isEmpty) {
+        debugPrint('[CoinShop] No IAP products found - returning standard packages');
+        return CoinPackages.standardPackages;
+      }
+
+      // Successfully loaded from store, return standard packages
+      // (prices would be merged from productDetails in a production app)
+      return CoinPackages.standardPackages;
+    } catch (e) {
+      debugPrint('[CoinShop] IAP error: $e - returning standard packages');
+      // Return standard packages as fallback instead of throwing
+      return CoinPackages.standardPackages;
     }
-
-    // Merge with standard packages
-    return CoinPackages.standardPackages;
   }
 
   /// Purchase coins

@@ -9,12 +9,14 @@ class ForwardMessageSheet extends StatefulWidget {
   final Message message;
   final String currentUserId;
   final String fromConversationId;
+  final bool includeCurrentChat; // Option to include current conversation in list
 
   const ForwardMessageSheet({
     super.key,
     required this.message,
     required this.currentUserId,
     required this.fromConversationId,
+    this.includeCurrentChat = true, // Include current chat by default
   });
 
   /// Show the forward message sheet
@@ -23,6 +25,7 @@ class ForwardMessageSheet extends StatefulWidget {
     required Message message,
     required String currentUserId,
     required String fromConversationId,
+    bool includeCurrentChat = true,
   }) {
     return showModalBottomSheet(
       context: context,
@@ -40,6 +43,7 @@ class ForwardMessageSheet extends StatefulWidget {
           message: message,
           currentUserId: currentUserId,
           fromConversationId: fromConversationId,
+          includeCurrentChat: includeCurrentChat,
         ),
       ),
     );
@@ -94,8 +98,8 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
           continue;
         }
 
-        // Skip the current conversation
-        if (matchDoc.id == widget.message.matchId) {
+        // Skip the current conversation only if includeCurrentChat is false
+        if (!widget.includeCurrentChat && matchDoc.id == widget.message.matchId) {
           continue;
         }
 

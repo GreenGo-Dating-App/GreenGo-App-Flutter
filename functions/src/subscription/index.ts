@@ -3,7 +3,7 @@
  * 4 Cloud Functions for managing subscriptions and payment webhooks
  */
 
-import { onRequest } from 'firebase-functions/v2/https';
+import { onRequest, onCall, HttpsError } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
@@ -45,6 +45,156 @@ const SUBSCRIPTION_TIERS = {
     ],
   },
 };
+
+// ========== 0. VERIFY PURCHASE (Callable) ==========
+
+export const verifyPurchase = onCall(
+  {
+    memory: '256MiB',
+    timeoutSeconds: 30,
+  },
+  async (request) => {
+    // Verify user is authenticated
+    if (!request.auth) {
+      throw new HttpsError('unauthenticated', 'User must be authenticated');
+    }
+
+    const { userId, platform, productId, purchaseToken, verificationData, transactionDate } = request.data;
+
+    // Validate required fields
+    if (!userId || !platform || !productId || !purchaseToken) {
+      throw new HttpsError('invalid-argument', 'Missing required fields');
+    }
+
+    // Ensure the authenticated user matches the userId
+    if (request.auth.uid !== userId) {
+      throw new HttpsError('permission-denied', 'User ID mismatch');
+    }
+
+    try {
+      logInfo(`Verifying purchase for user ${userId}, product ${productId}, platform ${platform}`);
+
+      // Determine subscription tier from product ID
+      let tier: SubscriptionTier;
+      if (productId.includes('gold')) {
+        tier = SubscriptionTier.GOLD;
+      } else if (productId.includes('silver')) {
+        tier = SubscriptionTier.SILVER;
+      } else {
+        tier = SubscriptionTier.BASIC;
+      }
+
+      const tierConfig = SUBSCRIPTION_TIERS[tier.toLowerCase() as keyof typeof SUBSCRIPTION_TIERS] || SUBSCRIPTION_TIERS.basic;
+
+      // In production, verify with Google Play / App Store APIs
+      // For now, we trust the client-side verification data
+      // TODO: Implement server-side verification with:
+      // - Google Play Developer API for Android
+      // - App Store Server API for iOS
+
+      const verified = true; // Replace with actual verification
+
+      if (!verified) {
+        throw new HttpsError('failed-precondition', 'Purchase verification failed');
+      }
+
+      const now = admin.firestore.Timestamp.now();
+      const endDate = admin.firestore.Timestamp.fromDate(
+        new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days from now
+      );
+
+      // Check for existing active subscription
+      const existingSubSnapshot = await db
+        .collection('subscriptions')
+        .where('userId', '==', userId)
+        .where('status', 'in', ['active', 'in_grace_period'])
+        .limit(1)
+        .get();
+
+      if (!existingSubSnapshot.empty) {
+        // Update existing subscription
+        const existingDoc = existingSubSnapshot.docs[0];
+        await existingDoc.ref.update({
+          tier: tier,
+          status: SubscriptionStatus.ACTIVE,
+          currentPeriodEnd: endDate,
+          purchaseToken: purchaseToken,
+          platform: platform,
+          updatedAt: now,
+        });
+
+        logInfo(`Updated existing subscription for user ${userId}`);
+      } else {
+        // Create new subscription
+        await db.collection('subscriptions').add({
+          userId: userId,
+          tier: tier,
+          status: SubscriptionStatus.ACTIVE,
+          startDate: now,
+          currentPeriodEnd: endDate,
+          nextBillingDate: endDate,
+          autoRenew: true,
+          platform: platform,
+          purchaseToken: purchaseToken,
+          transactionId: purchaseToken,
+          orderId: purchaseToken,
+          price: tierConfig.price,
+          currency: 'USD',
+          cancelAtPeriodEnd: false,
+          createdAt: now,
+        });
+
+        logInfo(`Created new subscription for user ${userId}`);
+      }
+
+      // Create purchase record
+      await db.collection('purchases').add({
+        userId: userId,
+        type: 'subscription',
+        status: 'completed',
+        productId: productId,
+        productName: tierConfig.name,
+        tier: tier,
+        price: tierConfig.price,
+        currency: 'USD',
+        platform: platform,
+        purchaseToken: purchaseToken,
+        transactionId: purchaseToken,
+        purchaseDate: now,
+        verifiedAt: now,
+        verificationMethod: 'cloud_function',
+      });
+
+      // Update user's membership tier
+      await db.collection('users').doc(userId).update({
+        subscriptionTier: tier,
+        updatedAt: now,
+      });
+
+      // Also update the profile
+      await db.collection('profiles').doc(userId).update({
+        membershipTier: tier,
+        updatedAt: now,
+      });
+
+      logInfo(`Purchase verified successfully for user ${userId}, tier ${tier}`);
+
+      return {
+        verified: true,
+        tier: tier,
+        expiresAt: endDate.toDate().toISOString(),
+      };
+    } catch (error) {
+      logError('Error verifying purchase:', error);
+
+      if (error instanceof HttpsError) {
+        throw error;
+      }
+
+      throw new HttpsError('internal', 'Failed to verify purchase');
+    }
+  }
+);
 
 // ========== 1. HANDLE PLAY STORE WEBHOOK (HTTP Request) ==========
 

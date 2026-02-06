@@ -8,6 +8,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:uuid/uuid.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
@@ -297,15 +298,13 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
     final l10n = AppLocalizations.of(context);
 
     return BlocListener<ProfileBloc, ProfileState>(
-      listener: (context, state) {
+      listener: (context, state) async {
         if (state is ProfileUpdated) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(l10n?.voiceIntroSaved ?? 'Voice introduction saved'),
-              backgroundColor: AppColors.successGreen,
-            ),
-          );
-          Navigator.of(context).pop(state.profile);
+          // Show success dialog instead of snackbar
+          await ActionSuccessDialog.showVoiceUpdated(context);
+          if (context.mounted) {
+            Navigator.of(context).pop(state.profile);
+          }
         } else if (state is ProfileError) {
           setState(() {
             _isUploading = false;

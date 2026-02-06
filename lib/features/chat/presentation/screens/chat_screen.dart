@@ -1007,7 +1007,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (confirmed == true && context.mounted) {
       context.read<ChatBloc>().add(const ChatDeletedForMe());
-      Navigator.of(context).pop(); // Go back to chat list
+      // Use popUntil for reliable navigation back to messages
+      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
     }
   }
 
@@ -1040,7 +1041,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (confirmed == true && context.mounted) {
       context.read<ChatBloc>().add(const ChatDeletedForBoth());
-      Navigator.of(context).pop(); // Go back to chat list
+      // Use popUntil for reliable navigation back to messages
+      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
     }
   }
 
@@ -1090,7 +1092,8 @@ class _ChatScreenState extends State<ChatScreen> {
           backgroundColor: AppColors.richGold,
         ),
       );
-      Navigator.of(context).pop(); // Go back to chat list
+      // Use popUntil for reliable navigation back to messages
+      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
     }
   }
 

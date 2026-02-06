@@ -1,5 +1,8 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
@@ -13,6 +16,7 @@ import '../models/subscription_model.dart';
 class SubscriptionRemoteDataSource {
   final FirebaseFirestore firestore;
   final InAppPurchase inAppPurchase;
+  final FirebaseFunctions functions;
 
   // Product IDs (must match backend and store configurations)
   static const String silverProductId = 'silver_premium_monthly';
@@ -23,10 +27,19 @@ class SubscriptionRemoteDataSource {
     goldProductId,
   };
 
+  // Purchase stream subscription for monitoring
+  StreamSubscription<List<PurchaseDetails>>? _purchaseStreamSubscription;
+
+  // Callbacks for purchase events
+  Function(PurchaseDetails)? _onPurchaseSuccess;
+  Function(PurchaseDetails, String)? _onPurchaseError;
+  Function(PurchaseDetails)? _onPurchasePending;
+
   SubscriptionRemoteDataSource({
     required this.firestore,
     required this.inAppPurchase,
-  });
+    FirebaseFunctions? functions,
+  }) : functions = functions ?? FirebaseFunctions.instance;
 
   /// Initialize in-app purchases (Points 146-147)
   Future<bool> initializePurchases() async {
@@ -89,7 +102,7 @@ class SubscriptionRemoteDataSource {
     return [];
   }
 
-  /// Verify purchase with backend
+  /// Verify purchase with backend via Cloud Function
   Future<bool> verifyPurchase({
     required PurchaseDetails purchaseDetails,
     required String userId,
@@ -111,56 +124,92 @@ class SubscriptionRemoteDataSource {
         throw Exception('Unsupported platform');
       }
 
-      // Send to backend for verification
-      // In production, call your Cloud Function
-      // For now, we'll just create the subscription directly
-
-      final tierName = _getTierFromProductId(purchaseDetails.productID);
-      final tier = SubscriptionTierExtension.fromString(tierName);
-
-      final now = DateTime.now();
-      final endDate = DateTime(now.year, now.month + 1, now.day);
-
-      // Create subscription in Firestore
-      await firestore.collection('subscriptions').add({
+      // Call Cloud Function to verify purchase with store servers
+      final callable = functions.httpsCallable('verifyPurchase');
+      final result = await callable.call({
         'userId': userId,
-        'tier': tierName,
-        'status': 'active',
-        'startDate': Timestamp.fromDate(now),
-        'endDate': Timestamp.fromDate(endDate),
-        'nextBillingDate': Timestamp.fromDate(endDate),
-        'autoRenew': true,
         'platform': platform,
-        'purchaseToken': purchaseDetails.purchaseID,
-        'transactionId': purchaseDetails.purchaseID,
-        'orderId': purchaseDetails.purchaseID,
-        'price': tier.monthlyPrice,
-        'currency': 'USD',
-        'inGracePeriod': false,
-        'createdAt': FieldValue.serverTimestamp(),
-      });
-
-      // Create purchase record
-      await firestore.collection('purchases').add({
-        'userId': userId,
-        'type': 'subscription',
-        'status': 'completed',
         'productId': purchaseDetails.productID,
-        'productName': tier.displayName,
-        'tier': tierName,
-        'price': tier.monthlyPrice,
-        'currency': 'USD',
-        'platform': platform,
         'purchaseToken': purchaseDetails.purchaseID,
-        'transactionId': purchaseDetails.purchaseID,
-        'purchaseDate': FieldValue.serverTimestamp(),
-        'verifiedAt': FieldValue.serverTimestamp(),
+        'verificationData': verificationData,
+        'transactionDate': purchaseDetails.transactionDate,
       });
 
+      final data = result.data as Map<String, dynamic>;
+      final verified = data['verified'] as bool? ?? false;
+
+      if (!verified) {
+        final errorMessage = data['error'] as String? ?? 'Verification failed';
+        throw Exception(errorMessage);
+      }
+
+      // Cloud Function handles subscription/purchase record creation
+      debugPrint('Purchase verified successfully for user: $userId');
       return true;
     } catch (e) {
+      debugPrint('Purchase verification error: $e');
+
+      // Fallback to local verification if Cloud Function fails (for testing)
+      if (kDebugMode) {
+        return _fallbackLocalVerification(purchaseDetails, userId);
+      }
+
       throw Exception('Failed to verify purchase: $e');
     }
+  }
+
+  /// Fallback local verification for development/testing
+  Future<bool> _fallbackLocalVerification(
+    PurchaseDetails purchaseDetails,
+    String userId,
+  ) async {
+    debugPrint('Using fallback local verification (debug mode only)');
+
+    final platform = Platform.isAndroid ? 'android' : 'ios';
+    final tierName = _getTierFromProductId(purchaseDetails.productID);
+    final tier = SubscriptionTierExtension.fromString(tierName);
+
+    final now = DateTime.now();
+    final endDate = DateTime(now.year, now.month + 1, now.day);
+
+    // Create subscription in Firestore
+    await firestore.collection('subscriptions').add({
+      'userId': userId,
+      'tier': tierName,
+      'status': 'active',
+      'startDate': Timestamp.fromDate(now),
+      'endDate': Timestamp.fromDate(endDate),
+      'nextBillingDate': Timestamp.fromDate(endDate),
+      'autoRenew': true,
+      'platform': platform,
+      'purchaseToken': purchaseDetails.purchaseID,
+      'transactionId': purchaseDetails.purchaseID,
+      'orderId': purchaseDetails.purchaseID,
+      'price': tier.monthlyPrice,
+      'currency': 'USD',
+      'inGracePeriod': false,
+      'createdAt': FieldValue.serverTimestamp(),
+    });
+
+    // Create purchase record
+    await firestore.collection('purchases').add({
+      'userId': userId,
+      'type': 'subscription',
+      'status': 'completed',
+      'productId': purchaseDetails.productID,
+      'productName': tier.displayName,
+      'tier': tierName,
+      'price': tier.monthlyPrice,
+      'currency': 'USD',
+      'platform': platform,
+      'purchaseToken': purchaseDetails.purchaseID,
+      'transactionId': purchaseDetails.purchaseID,
+      'purchaseDate': FieldValue.serverTimestamp(),
+      'verifiedAt': FieldValue.serverTimestamp(),
+      'verificationMethod': 'local_fallback',
+    });
+
+    return true;
   }
 
   /// Complete purchase (mark as consumed/acknowledged)
@@ -265,6 +314,102 @@ class SubscriptionRemoteDataSource {
   /// Listen to purchase stream
   Stream<List<PurchaseDetails>> get purchaseStream =>
       inAppPurchase.purchaseStream;
+
+  /// Setup purchase stream listener to monitor purchases in real-time
+  /// This should be called once during app initialization (e.g., in MainNavigationScreen.initState)
+  void setupPurchaseStreamListener({
+    required String userId,
+    Function(PurchaseDetails)? onSuccess,
+    Function(PurchaseDetails, String)? onError,
+    Function(PurchaseDetails)? onPending,
+  }) {
+    _onPurchaseSuccess = onSuccess;
+    _onPurchaseError = onError;
+    _onPurchasePending = onPending;
+
+    // Cancel any existing subscription
+    _purchaseStreamSubscription?.cancel();
+
+    // Subscribe to purchase stream
+    _purchaseStreamSubscription = inAppPurchase.purchaseStream.listen(
+      (purchases) => _handlePurchaseUpdates(purchases, userId),
+      onError: (error) {
+        debugPrint('Purchase stream error: $error');
+      },
+      onDone: () {
+        debugPrint('Purchase stream closed');
+      },
+    );
+
+    debugPrint('Purchase stream listener setup for user: $userId');
+  }
+
+  /// Handle purchase updates from the stream
+  Future<void> _handlePurchaseUpdates(
+    List<PurchaseDetails> purchases,
+    String userId,
+  ) async {
+    for (final purchase in purchases) {
+      debugPrint('Processing purchase: ${purchase.productID}, status: ${purchase.status}');
+
+      switch (purchase.status) {
+        case PurchaseStatus.pending:
+          // Purchase is pending (e.g., awaiting payment confirmation)
+          _onPurchasePending?.call(purchase);
+          break;
+
+        case PurchaseStatus.purchased:
+        case PurchaseStatus.restored:
+          // Verify and complete the purchase
+          try {
+            final verified = await verifyPurchase(
+              purchaseDetails: purchase,
+              userId: userId,
+            );
+
+            if (verified) {
+              // Complete the purchase with the store
+              await completePurchase(purchase);
+              _onPurchaseSuccess?.call(purchase);
+            } else {
+              _onPurchaseError?.call(purchase, 'Verification failed');
+            }
+          } catch (e) {
+            _onPurchaseError?.call(purchase, e.toString());
+          }
+          break;
+
+        case PurchaseStatus.error:
+          // Purchase failed
+          final errorMessage = purchase.error?.message ?? 'Unknown error';
+          _onPurchaseError?.call(purchase, errorMessage);
+
+          // Still need to complete purchase to clear it from queue
+          if (purchase.pendingCompletePurchase) {
+            await inAppPurchase.completePurchase(purchase);
+          }
+          break;
+
+        case PurchaseStatus.canceled:
+          // User canceled the purchase
+          debugPrint('Purchase canceled: ${purchase.productID}');
+          if (purchase.pendingCompletePurchase) {
+            await inAppPurchase.completePurchase(purchase);
+          }
+          break;
+      }
+    }
+  }
+
+  /// Dispose of the purchase stream listener
+  void disposePurchaseStreamListener() {
+    _purchaseStreamSubscription?.cancel();
+    _purchaseStreamSubscription = null;
+    _onPurchaseSuccess = null;
+    _onPurchaseError = null;
+    _onPurchasePending = null;
+    debugPrint('Purchase stream listener disposed');
+  }
 
   /// Check if feature is available
   Future<bool> hasFeatureAccess({

@@ -232,56 +232,8 @@ class _DiscoveryScreenContent extends StatelessWidget {
   }
 
   Widget _buildHeader(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          IconButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => DiscoveryPreferencesScreen(
-                    userId: userId,
-                    onSave: (preferences) {
-                      context.read<DiscoveryBloc>().add(
-                            DiscoveryStackRefreshRequested(
-                              userId: userId,
-                              preferences: preferences,
-                            ),
-                          );
-                    },
-                  ),
-                ),
-              );
-            },
-            icon: const Icon(
-              Icons.settings,
-              color: AppColors.textSecondary,
-            ),
-          ),
-          const Text(
-            'Discover',
-            style: TextStyle(
-              color: AppColors.richGold,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          // Search by nickname button
-          IconButton(
-            onPressed: () {
-              NicknameSearchDialog.show(context, userId);
-            },
-            icon: const Icon(
-              Icons.search,
-              color: AppColors.textSecondary,
-            ),
-            tooltip: 'Search by nickname',
-          ),
-        ],
-      ),
-    );
+    // Header is now handled by MainNavigationScreen's AppBar
+    return const SizedBox.shrink();
   }
 
   Widget _buildCardStack(

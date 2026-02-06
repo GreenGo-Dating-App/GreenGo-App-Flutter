@@ -66,6 +66,9 @@ abstract class GamificationRemoteDataSource {
     String eventId,
   );
   Future<Map<String, dynamic>> getSeasonalThemeConfig();
+
+  // User Initialization
+  Future<void> initializeUserGamification(String userId);
 }
 
 class GamificationRemoteDataSourceImpl
@@ -598,5 +601,55 @@ class GamificationRemoteDataSourceImpl
     }
 
     return event.themeConfig;
+  }
+
+  // ===== User Initialization =====
+
+  /// Initialize gamification data for a new user
+  /// This should be called after profile creation in onboarding
+  @override
+  Future<void> initializeUserGamification(String userId) async {
+    // Check if already initialized
+    final existingLevel = await _userLevelsCollection.doc(userId).get();
+    if (existingLevel.exists) {
+      return; // Already initialized
+    }
+
+    // Initialize user level document
+    final initialLevel = UserLevelModel(
+      userId: userId,
+      level: 1,
+      currentXP: 0,
+      totalXP: 0,
+      isVIP: false,
+    );
+
+    await _userLevelsCollection.doc(userId).set(initialLevel.toMap());
+
+    // Initialize all achievement progress documents
+    final allAchievements = Achievements.getAllAchievements();
+
+    final batch = firestore.batch();
+
+    for (final achievement in allAchievements) {
+      final docId = '${userId}_${achievement.achievementId}';
+      final progressRef = _achievementProgressCollection.doc(docId);
+
+      final initialProgress = UserAchievementProgressModel(
+        userId: userId,
+        achievementId: achievement.achievementId,
+        progress: 0,
+        requiredCount: achievement.requiredCount,
+        isUnlocked: false,
+        rewardsClaimed: false,
+      );
+
+      batch.set(progressRef, initialProgress.toMap());
+    }
+
+    await batch.commit();
+
+    // Grant welcome XP bonus
+    await grantXP(userId, 50, 'welcome_bonus');
   }
 }

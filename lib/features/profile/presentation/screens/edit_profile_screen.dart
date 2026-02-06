@@ -77,15 +77,9 @@ class EditProfileScreen extends StatelessWidget {
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) {
-            if (state is ProfileUpdated) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Profile updated successfully'),
-                  backgroundColor: AppColors.successGreen,
-                ),
-              );
-              Navigator.of(context).pop(state.profile);
-            } else if (state is ProfileError) {
+            // Only show error messages here - sub-screens handle their own success responses
+            // Do NOT pop on ProfileUpdated as child screens may trigger updates
+            if (state is ProfileError) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(state.message),
@@ -95,10 +89,17 @@ class EditProfileScreen extends StatelessWidget {
             }
           },
           builder: (context, state) {
-            // Determine which profile to use
-            final currentProfile = state is ProfileLoaded
-                ? state.profile
-                : profile;
+            // Determine which profile to use - check all states that contain a profile
+            Profile? currentProfile;
+            if (state is ProfileLoaded) {
+              currentProfile = state.profile;
+            } else if (state is ProfileUpdated) {
+              currentProfile = state.profile;
+            } else if (state is ProfileCreated) {
+              currentProfile = state.profile;
+            } else {
+              currentProfile = profile;
+            }
 
             // Show loading while profile is being fetched
             if (currentProfile == null) {
@@ -117,6 +118,9 @@ class EditProfileScreen extends StatelessWidget {
               );
             }
 
+            // Create a non-null reference for use in the UI
+            final activeProfile = currentProfile;
+
             return SingleChildScrollView(
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
@@ -128,16 +132,16 @@ class EditProfileScreen extends StatelessWidget {
                       title: 'View My Profile',
                       subtitle: 'See how others view your profile',
                       icon: Icons.visibility,
-                      onTap: () => _navigateToViewProfile(context, currentProfile),
+                      onTap: () => _navigateToViewProfile(context, activeProfile),
                     ),
                   ),
 
                   // Photos Section
                   EditSectionCard(
                     title: 'Photos',
-                    subtitle: '${currentProfile.photoUrls.length}/6 photos',
+                    subtitle: '${activeProfile.photoUrls.length}/6 photos',
                     icon: Icons.photo_library,
-                    onTap: () => _navigateToPhotoManagement(context, currentProfile),
+                    onTap: () => _navigateToPhotoManagement(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -145,11 +149,11 @@ class EditProfileScreen extends StatelessWidget {
                   // Nickname Section
                   EditSectionCard(
                     title: 'Nickname',
-                    subtitle: currentProfile.nickname != null
-                        ? '@${currentProfile.nickname}'
+                    subtitle: activeProfile.nickname != null
+                        ? '@${activeProfile.nickname}'
                         : 'Set your unique nickname',
                     icon: Icons.alternate_email,
-                    onTap: () => _navigateToEditNickname(context, currentProfile),
+                    onTap: () => _navigateToEditNickname(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -157,9 +161,9 @@ class EditProfileScreen extends StatelessWidget {
                   // Basic Info Section
                   EditSectionCard(
                     title: 'Basic Information',
-                    subtitle: '${currentProfile.displayName}, ${currentProfile.age}',
+                    subtitle: '${activeProfile.displayName}, ${activeProfile.age}',
                     icon: Icons.person,
-                    onTap: () => _navigateToEditBasicInfo(context, currentProfile),
+                    onTap: () => _navigateToEditBasicInfo(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -167,13 +171,13 @@ class EditProfileScreen extends StatelessWidget {
                   // Bio Section
                   EditSectionCard(
                     title: 'About Me',
-                    subtitle: currentProfile.bio.isEmpty
+                    subtitle: activeProfile.bio.isEmpty
                         ? 'Add a bio'
-                        : currentProfile.bio.length > 50
-                            ? '${currentProfile.bio.substring(0, 50)}...'
-                            : currentProfile.bio,
+                        : activeProfile.bio.length > 50
+                            ? '${activeProfile.bio.substring(0, 50)}...'
+                            : activeProfile.bio,
                     icon: Icons.edit_note,
-                    onTap: () => _navigateToEditBio(context, currentProfile),
+                    onTap: () => _navigateToEditBio(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -181,9 +185,9 @@ class EditProfileScreen extends StatelessWidget {
                   // Interests Section
                   EditSectionCard(
                     title: 'Interests',
-                    subtitle: '${currentProfile.interests.length} interests',
+                    subtitle: '${activeProfile.interests.length} interests',
                     icon: Icons.favorite,
-                    onTap: () => _navigateToEditInterests(context, currentProfile),
+                    onTap: () => _navigateToEditInterests(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -191,9 +195,9 @@ class EditProfileScreen extends StatelessWidget {
                   // Location & Languages Section
                   EditSectionCard(
                     title: 'Location & Languages',
-                    subtitle: currentProfile.location.displayAddress,
+                    subtitle: activeProfile.location.displayAddress,
                     icon: Icons.location_on,
-                    onTap: () => _navigateToEditLocation(context, currentProfile),
+                    onTap: () => _navigateToEditLocation(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -201,11 +205,11 @@ class EditProfileScreen extends StatelessWidget {
                   // Voice Recording Section
                   EditSectionCard(
                     title: 'Voice Introduction',
-                    subtitle: currentProfile.voiceRecordingUrl != null
+                    subtitle: activeProfile.voiceRecordingUrl != null
                         ? 'Voice recorded'
                         : 'No voice recording',
                     icon: Icons.mic,
-                    onTap: () => _navigateToEditVoice(context, currentProfile),
+                    onTap: () => _navigateToEditVoice(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -213,9 +217,9 @@ class EditProfileScreen extends StatelessWidget {
                   // Social Links Section
                   EditSectionCard(
                     title: 'Social Profiles',
-                    subtitle: _getSocialLinksSubtitle(currentProfile),
+                    subtitle: _getSocialLinksSubtitle(activeProfile),
                     icon: Icons.share,
-                    onTap: () => _navigateToEditSocialLinks(context, currentProfile),
+                    onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -250,7 +254,7 @@ class EditProfileScreen extends StatelessWidget {
                     title: 'Support Center',
                     subtitle: 'Get help, report issues, contact us',
                     icon: Icons.support_agent,
-                    onTap: () => _navigateToSupport(context, currentProfile),
+                    onTap: () => _navigateToSupport(context, activeProfile),
                   ),
 
                   // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
@@ -271,12 +275,12 @@ class EditProfileScreen extends StatelessWidget {
                   //   title: 'Coin Shop',
                   //   subtitle: 'Purchase coins and premium features',
                   //   icon: Icons.monetization_on,
-                  //   onTap: () => _navigateToCoinShop(context, currentProfile),
+                  //   onTap: () => _navigateToCoinShop(context, activeProfile),
                   // ),
                   // ... other gamification navigation disabled ...
 
                   // Admin Panel Section (only visible to admins)
-                  if (currentProfile.isAdmin) ...[
+                  if (activeProfile.isAdmin) ...[
                     const SizedBox(height: 32),
                     const Divider(color: AppColors.divider),
                     const SizedBox(height: 16),
@@ -293,30 +297,30 @@ class EditProfileScreen extends StatelessWidget {
                       title: 'Verification Panel',
                       subtitle: 'Review user verifications',
                       icon: Icons.verified_user,
-                      onTap: () => _navigateToAdminVerification(context, currentProfile),
+                      onTap: () => _navigateToAdminVerification(context, activeProfile),
                     ),
                     const SizedBox(height: 16),
                     EditSectionCard(
                       title: 'Reports Panel',
                       subtitle: 'Review reported messages & manage accounts',
                       icon: Icons.report,
-                      onTap: () => _navigateToAdminReports(context, currentProfile),
+                      onTap: () => _navigateToAdminReports(context, activeProfile),
                     ),
                     const SizedBox(height: 16),
                     EditSectionCard(
                       title: 'Membership Panel',
                       subtitle: 'Manage coupons, tiers & rules',
                       icon: Icons.card_membership,
-                      onTap: () => _navigateToAdminMembership(context, currentProfile),
+                      onTap: () => _navigateToAdminMembership(context, activeProfile),
                     ),
                   ],
 
                   const SizedBox(height: 32),
 
                   // Delete Account Button (hidden for admin users)
-                  if (!currentProfile.isAdmin)
+                  if (!activeProfile.isAdmin)
                     OutlinedButton(
-                      onPressed: () => _showDeleteAccountDialog(context, currentProfile),
+                      onPressed: () => _showDeleteAccountDialog(context, activeProfile),
                       style: OutlinedButton.styleFrom(
                         foregroundColor: AppColors.errorRed,
                         side: const BorderSide(color: AppColors.errorRed),
@@ -327,18 +331,18 @@ class EditProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Export Data Button
-                  OutlinedButton(
-                    onPressed: () => _exportUserData(context),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: AppColors.textSecondary,
-                      side: const BorderSide(color: AppColors.divider),
-                      minimumSize: const Size(double.infinity, 50),
-                    ),
-                    child: const Text('Export My Data (GDPR)'),
-                  ),
-
-                  const SizedBox(height: 16),
+                  // Export Data Button - Temporarily disabled until backend implementation
+                  // TODO: Re-enable when GDPR export Cloud Function is ready
+                  // OutlinedButton(
+                  //   onPressed: () => _exportUserData(context),
+                  //   style: OutlinedButton.styleFrom(
+                  //     foregroundColor: AppColors.textSecondary,
+                  //     side: const BorderSide(color: AppColors.divider),
+                  //     minimumSize: const Size(double.infinity, 50),
+                  //   ),
+                  //   child: const Text('Export My Data (GDPR)'),
+                  // ),
+                  // const SizedBox(height: 16),
 
                   // Log Out Button
                   ElevatedButton.icon(
@@ -393,7 +397,7 @@ class EditProfileScreen extends StatelessWidget {
 
   Future<void> _navigateToEditNickname(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -401,15 +405,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      // Reload profile to refresh the UI
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToPhotoManagement(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -417,15 +418,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    // Refresh profile if updated
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToEditBasicInfo(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -433,14 +431,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToEditBio(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -448,14 +444,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToEditInterests(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -463,14 +457,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToEditLocation(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -478,14 +470,12 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   Future<void> _navigateToEditVoice(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -493,9 +483,7 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   void _navigateToSupport(BuildContext context, Profile currentProfile) {
@@ -525,7 +513,7 @@ class EditProfileScreen extends StatelessWidget {
 
   Future<void> _navigateToEditSocialLinks(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
-    final result = await Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider.value(
           value: profileBloc,
@@ -533,9 +521,7 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-    if (result != null && context.mounted) {
-      profileBloc.add(ProfileLoadRequested(userId: currentProfile.userId));
-    }
+    // Profile updates are propagated through shared BLoC - no reload needed
   }
 
   void _navigateToAdminVerification(BuildContext context, Profile currentProfile) {

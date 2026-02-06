@@ -14,6 +14,8 @@ import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
 import '../../../discovery/presentation/screens/matches_screen.dart';
+import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
+import '../../../discovery/presentation/widgets/nickname_search_dialog.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -91,6 +93,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
   // User's membership tier
   MembershipTier _membershipTier = MembershipTier.free;
 
+  // State de-duplication to prevent cascading rebuilds (black screen fix)
+  MembershipTier? _lastProcessedTier;
+  bool _isProcessingState = false;
+
   // Global gamification bloc for level-up celebrations (only when enabled)
   GamificationBloc? _gamificationBloc;
 
@@ -115,6 +121,21 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
       _gamificationBloc = di.sl<GamificationBloc>()
         ..add(LoadUserLevel(widget.userId));
     }
+
+    // Initialize notifications bloc for badge count
+    _notificationsBloc = di.sl<NotificationsBloc>()
+      ..add(NotificationsLoadRequested(
+        userId: widget.userId,
+        unreadOnly: true,
+      ));
+
+    // Initialize coin bloc for balance display in app bar
+    _coinBloc = di.sl<CoinBloc>()
+      ..add(SubscribeToCoinBalance(widget.userId));
+
+    // Initialize profile bloc for shared profile state (MUST be before _screens)
+    _profileBloc = di.sl<ProfileBloc>()
+      ..add(ProfileLoadRequested(userId: widget.userId));
 
     // Build screens list based on enabled features from Firestore
     // MVP: Discover, Matches, Messages, Shop, Progress, Profile (6 tabs)
@@ -145,21 +166,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         child: EditProfileScreen(userId: widget.userId),
       ),
     ];
-
-    // Initialize notifications bloc for badge count
-    _notificationsBloc = di.sl<NotificationsBloc>()
-      ..add(NotificationsLoadRequested(
-        userId: widget.userId,
-        unreadOnly: true,
-      ));
-
-    // Initialize coin bloc for balance display in app bar
-    _coinBloc = di.sl<CoinBloc>()
-      ..add(SubscribeToCoinBalance(widget.userId));
-
-    // Initialize profile bloc for shared profile state
-    _profileBloc = di.sl<ProfileBloc>()
-      ..add(ProfileLoadRequested(userId: widget.userId));
 
     // Check if user has a profile, redirect to onboarding if not
     _checkUserProfile();
@@ -594,17 +600,35 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
             BlocProvider.value(value: _gamificationBloc!),
         ],
         child: BlocListener<ProfileBloc, ProfileState>(
+          listenWhen: (previous, current) {
+            // Only listen when tier actually changes (prevents cascading rebuilds)
+            if (current is ProfileLoaded) {
+              return _lastProcessedTier != current.profile.membershipTier;
+            }
+            if (current is ProfileUpdated) {
+              return _lastProcessedTier != current.profile.membershipTier;
+            }
+            return false;
+          },
           listener: (context, state) {
+            // Guard against concurrent processing and unmounted widget
+            if (_isProcessingState || !mounted) return;
+            _isProcessingState = true;
+
             // Update membership tier when profile is loaded or updated
             if (state is ProfileLoaded) {
+              _lastProcessedTier = state.profile.membershipTier;
               setState(() {
                 _membershipTier = state.profile.membershipTier;
               });
             } else if (state is ProfileUpdated) {
+              _lastProcessedTier = state.profile.membershipTier;
               setState(() {
                 _membershipTier = state.profile.membershipTier;
               });
             }
+
+            _isProcessingState = false;
           },
           child: _gamificationBloc != null
               ? BlocListener<GamificationBloc, GamificationState>(
@@ -667,7 +691,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Profile (MVP)
     // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Learn, 6=Profile
     if (_currentIndex == 0) {
-      // Discovery screen - show logo and coin balance + membership badge
+      // Discovery screen - show logo with preferences, search, coins, notifications, and membership badge
       return AppBar(
         title: const Text(
           'GreenGo',
@@ -677,17 +701,28 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
             fontWeight: FontWeight.bold,
           ),
         ),
+        leading: IconButton(
+          icon: const Icon(Icons.tune, color: AppColors.textSecondary),
+          onPressed: _openDiscoveryPreferences,
+          tooltip: 'Discovery Preferences',
+        ),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.search, color: AppColors.textSecondary),
+            onPressed: _showNicknameSearch,
+            tooltip: 'Search by nickname',
+          ),
           _buildCoinBalanceWidget(),
-          const SizedBox(width: 8),
+          _buildNotificationButton(),
+          const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
       );
     } else if (_currentIndex == 1 || _currentIndex == 2) {
-      // Matches and Messages - show title and coin balance + membership badge
+      // Matches and Messages - show title and coin balance + notifications + membership badge
       return AppBar(
         title: Text(
           _currentIndex == 1 ? 'Matches' : 'Messages',
@@ -700,7 +735,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
         elevation: 0,
         actions: [
           _buildCoinBalanceWidget(),
-          const SizedBox(width: 8),
+          _buildNotificationButton(),
+          const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
@@ -708,6 +744,23 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     }
     // Shop, Progress, Learn (if enabled), and Profile - no app bar (have their own)
     return null;
+  }
+
+  void _openDiscoveryPreferences() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => DiscoveryPreferencesScreen(
+          userId: widget.userId,
+          onSave: (preferences) {
+            // Refresh the discovery stack when preferences change
+          },
+        ),
+      ),
+    );
+  }
+
+  void _showNicknameSearch() {
+    NicknameSearchDialog.show(context, widget.userId);
   }
 
   Widget _buildNotificationButton() {

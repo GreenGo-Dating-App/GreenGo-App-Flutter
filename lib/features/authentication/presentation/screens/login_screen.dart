@@ -11,6 +11,7 @@ import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../core/widgets/animated_luxury_logo.dart';
+import '../../../../core/widgets/connection_error_dialog.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
@@ -138,27 +139,46 @@ class _LoginScreenState extends State<LoginScreen>
         child: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is AuthError) {
-              final localizedMessage = AuthErrorLocalizer.getLocalizedError(
-                context,
-                state.message,
-              );
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    localizedMessage,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  backgroundColor: AppColors.errorRed,
-                  behavior: SnackBarBehavior.floating,
-                  margin: const EdgeInsets.all(16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              );
+              final errorMessage = state.message.toLowerCase();
+              final isConnectionError = errorMessage.contains('network') ||
+                  errorMessage.contains('connection') ||
+                  errorMessage.contains('internet') ||
+                  errorMessage.contains('timeout') ||
+                  errorMessage.contains('socket') ||
+                  errorMessage.contains('host') ||
+                  errorMessage.contains('unreachable') ||
+                  errorMessage.contains('unavailable') ||
+                  errorMessage.contains('failed to connect') ||
+                  errorMessage.contains('no address');
+
+              if (isConnectionError) {
+                // Show graceful connection error dialog with retry
+                ConnectionErrorDialog.showConnectionError(
+                  context,
+                  onRetry: _handleLogin,
+                );
+              } else if (errorMessage.contains('server') ||
+                  errorMessage.contains('500') ||
+                  errorMessage.contains('503') ||
+                  errorMessage.contains('internal')) {
+                // Show server error dialog
+                ConnectionErrorDialog.showServerError(
+                  context,
+                  onRetry: _handleLogin,
+                );
+              } else {
+                // Show auth error dialog for credential issues
+                final localizedMessage = AuthErrorLocalizer.getLocalizedError(
+                  context,
+                  state.message,
+                );
+                ConnectionErrorDialog.showAuthError(
+                  context,
+                  title: 'Authentication Error',
+                  message: localizedMessage,
+                  onRetry: _handleLogin,
+                );
+              }
             } else if (state is AuthAuthenticated) {
               Navigator.of(context).pushReplacementNamed(
                 '/home',

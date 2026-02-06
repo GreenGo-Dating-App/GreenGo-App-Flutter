@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
@@ -156,19 +156,15 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
           ],
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
-          listener: (context, state) {
+          listener: (context, state) async {
             if (state is ProfilePhotoUploaded) {
               setState(() {
                 _photoUrls.add(state.photoUrl);
               });
               _updateProfile();
 
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Photo uploaded successfully'),
-                  backgroundColor: AppColors.successGreen,
-                ),
-              );
+              // Show success dialog for photo upload
+              await ActionSuccessDialog.showImageUploaded(context);
             } else if (state is ProfileError) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -177,12 +173,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
                 ),
               );
             } else if (state is ProfileUpdated) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Photos updated'),
-                  backgroundColor: AppColors.successGreen,
-                ),
-              );
+              // Show success dialog for photos updated (reorder/delete)
+              await ActionSuccessDialog.showPhotosUpdated(context);
             }
           },
           builder: (context, state) {

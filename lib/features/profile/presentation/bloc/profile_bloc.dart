@@ -112,18 +112,29 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     // First get the current profile
     final getResult = await getProfile(GetProfileParams(userId: event.userId));
 
-    await getResult.fold(
-      (failure) async => emit(ProfileError(message: failure.message)),
-      (profile) async {
-        // Update the profile with the new nickname
-        final updatedProfile = profile.copyWith(nickname: event.nickname.toLowerCase());
-        final updateResult = await updateProfile(UpdateProfileParams(profile: updatedProfile));
+    // Use isLeft/getOrElse pattern instead of fold with async callbacks
+    if (getResult.isLeft()) {
+      final failure = getResult.fold((f) => f, (_) => throw Exception('Unreachable'));
+      emit(ProfileError(message: failure.message));
+      return;
+    }
 
-        updateResult.fold(
-          (failure) => emit(ProfileError(message: failure.message)),
-          (profile) => emit(ProfileUpdated(profile: profile)),
-        );
-      },
-    );
+    // Get the profile from successful result
+    final profile = getResult.getOrElse(() => throw Exception('Unreachable'));
+
+    // Update the profile with the new nickname
+    final updatedProfile = profile.copyWith(nickname: event.nickname.toLowerCase());
+    final updateResult = await updateProfile(UpdateProfileParams(profile: updatedProfile));
+
+    // Handle update result
+    if (updateResult.isLeft()) {
+      final failure = updateResult.fold((f) => f, (_) => throw Exception('Unreachable'));
+      emit(ProfileError(message: failure.message));
+      return;
+    }
+
+    // Emit success with updated profile
+    final updatedProfileResult = updateResult.getOrElse(() => throw Exception('Unreachable'));
+    emit(ProfileUpdated(profile: updatedProfileResult));
   }
 }

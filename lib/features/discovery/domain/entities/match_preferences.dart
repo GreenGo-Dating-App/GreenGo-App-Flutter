@@ -57,6 +57,37 @@ class MatchPreferences extends Equatable {
     );
   }
 
+  /// Convert to Map for Firestore
+  Map<String, dynamic> toMap() {
+    return {
+      'userId': userId,
+      'minAge': minAge,
+      'maxAge': maxAge,
+      'maxDistanceKm': maxDistanceKm,
+      'interestedInGender': interestedInGender,
+      'onlyVerified': onlyVerified,
+      'onlyRecentlyActive': onlyRecentlyActive,
+      'dealBreakers': dealBreakers,
+    };
+  }
+
+  /// Create from Firestore Map
+  factory MatchPreferences.fromMap(Map<String, dynamic> map) {
+    return MatchPreferences(
+      userId: map['userId'] as String? ?? '',
+      minAge: map['minAge'] as int? ?? 18,
+      maxAge: map['maxAge'] as int? ?? 99,
+      maxDistanceKm: map['maxDistanceKm'] as int?,
+      interestedInGender: map['interestedInGender'] as String? ?? 'everyone',
+      onlyVerified: map['onlyVerified'] as bool? ?? false,
+      onlyRecentlyActive: map['onlyRecentlyActive'] as bool? ?? false,
+      dealBreakers: (map['dealBreakers'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+    );
+  }
+
   @override
   List<Object?> get props => [
         userId,

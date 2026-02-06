@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/social_links.dart';
 import '../bloc/profile_bloc.dart';
@@ -123,15 +123,13 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<ProfileBloc, ProfileState>(
-        listener: (context, state) {
+        listener: (context, state) async {
           if (state is ProfileUpdated) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Social profiles saved successfully'),
-                backgroundColor: AppColors.successGreen,
-              ),
-            );
-            Navigator.of(context).pop(state.profile);
+            // Show success dialog instead of snackbar
+            await ActionSuccessDialog.showSocialLinksUpdated(context);
+            if (context.mounted) {
+              Navigator.of(context).pop(state.profile);
+            }
           } else if (state is ProfileError) {
             setState(() {
               _isSaving = false;

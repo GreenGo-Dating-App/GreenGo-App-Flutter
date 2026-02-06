@@ -125,62 +125,63 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       ),
     );
 
-    result.fold(
-      (failure) {
-        // Revert to previous state on error
-        emit(currentState);
-      },
-      (swipeAction) async {
-        // Record usage after successful swipe
-        await _usageLimitService.recordUsage(
-          userId: event.userId,
-          limitType: UsageLimitType.swipes,
-        );
+    // Handle result - use isLeft/isRight pattern instead of fold for async handling
+    if (result.isLeft()) {
+      // Revert to previous state on error
+      emit(currentState);
+      return;
+    }
 
-        // Also record super like usage if applicable
-        if (event.actionType == SwipeActionType.superLike) {
-          await _usageLimitService.recordUsage(
-            userId: event.userId,
-            limitType: UsageLimitType.superLikes,
-          );
-        }
+    // Success case - get the swipe action
+    final swipeAction = result.getOrElse(() => throw Exception('Unreachable'));
 
-        // Move to next card
-        final nextIndex = currentState.currentIndex + 1;
-
-        if (swipeAction.createdMatch) {
-          // Match created! Emit match state
-          // Note: In a real implementation, we'd fetch the match details here
-          emit(DiscoverySwipeCompleted(
-            cards: currentState.cards,
-            currentIndex: nextIndex,
-            createdMatch: true,
-          ));
-
-          // Then transition to loaded state after showing match notification
-          Future.delayed(const Duration(milliseconds: 500), () {
-            if (nextIndex >= currentState.cards.length) {
-              emit(const DiscoveryStackEmpty());
-            } else {
-              emit(DiscoveryLoaded(
-                cards: currentState.cards,
-                currentIndex: nextIndex,
-              ));
-            }
-          });
-        } else {
-          // No match, just move to next card
-          if (nextIndex >= currentState.cards.length) {
-            emit(const DiscoveryStackEmpty());
-          } else {
-            emit(DiscoveryLoaded(
-              cards: currentState.cards,
-              currentIndex: nextIndex,
-            ));
-          }
-        }
-      },
+    // Record usage after successful swipe
+    await _usageLimitService.recordUsage(
+      userId: event.userId,
+      limitType: UsageLimitType.swipes,
     );
+
+    // Also record super like usage if applicable
+    if (event.actionType == SwipeActionType.superLike) {
+      await _usageLimitService.recordUsage(
+        userId: event.userId,
+        limitType: UsageLimitType.superLikes,
+      );
+    }
+
+    // Move to next card
+    final nextIndex = currentState.currentIndex + 1;
+
+    if (swipeAction.createdMatch) {
+      // Match created! Emit match state
+      emit(DiscoverySwipeCompleted(
+        cards: currentState.cards,
+        currentIndex: nextIndex,
+        createdMatch: true,
+      ));
+
+      // Wait briefly then transition to loaded state
+      await Future.delayed(const Duration(milliseconds: 300));
+
+      if (nextIndex >= currentState.cards.length) {
+        emit(const DiscoveryStackEmpty());
+      } else {
+        emit(DiscoveryLoaded(
+          cards: currentState.cards,
+          currentIndex: nextIndex,
+        ));
+      }
+    } else {
+      // No match, just move to next card
+      if (nextIndex >= currentState.cards.length) {
+        emit(const DiscoveryStackEmpty());
+      } else {
+        emit(DiscoveryLoaded(
+          cards: currentState.cards,
+          currentIndex: nextIndex,
+        ));
+      }
+    }
   }
 
   Future<void> _onRefreshStack(

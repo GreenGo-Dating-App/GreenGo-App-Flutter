@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/match_preferences.dart';
 
 /// Discovery Preferences Screen
@@ -27,6 +29,7 @@ class _DiscoveryPreferencesScreenState
     extends State<DiscoveryPreferencesScreen> {
   late MatchPreferences _preferences;
   bool _hasChanges = false;
+  bool _isSaving = false;
 
   @override
   void initState() {
@@ -42,11 +45,50 @@ class _DiscoveryPreferencesScreenState
     });
   }
 
-  void _savePreferences() {
-    if (_hasChanges && widget.onSave != null) {
-      widget.onSave!(_preferences);
+  Future<void> _savePreferences() async {
+    if (!_hasChanges || _isSaving) return;
+
+    setState(() {
+      _isSaving = true;
+    });
+
+    try {
+      // Save to Firestore
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .set({
+            'matchPreferences': _preferences.toMap(),
+          }, SetOptions(merge: true));
+
+      // Call callback if provided
+      if (widget.onSave != null) {
+        widget.onSave!(_preferences);
+      }
+
+      if (mounted) {
+        // Show success dialog
+        await ActionSuccessDialog.showPreferencesSaved(context);
+        if (mounted) {
+          Navigator.of(context).pop();
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to save preferences: $e'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isSaving = false;
+        });
+      }
     }
-    Navigator.of(context).pop();
   }
 
   void _showDealBreakerDialog() {
@@ -139,17 +181,29 @@ class _DiscoveryPreferencesScreenState
         ),
         actions: [
           if (_hasChanges)
-            TextButton(
-              onPressed: _savePreferences,
-              child: const Text(
-                'Save',
-                style: TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            _isSaving
+                ? const Padding(
+                    padding: EdgeInsets.only(right: 16),
+                    child: SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                      ),
+                    ),
+                  )
+                : TextButton(
+                    onPressed: _savePreferences,
+                    child: const Text(
+                      'Save',
+                      style: TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
         ],
       ),
       body: ListView(

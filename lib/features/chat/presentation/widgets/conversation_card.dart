@@ -59,25 +59,42 @@ class ConversationCard extends StatelessWidget {
                       : null,
                 ),
 
-                // Unread badge
-                if (hasUnread)
+                // Unread badge with enhanced visibility
+                if (hasUnread && conversation.unreadCount > 0)
                   Positioned(
-                    right: 0,
-                    top: 0,
+                    right: -2,
+                    top: -2,
                     child: Container(
-                      padding: const EdgeInsets.all(6),
-                      decoration: const BoxDecoration(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                      constraints: const BoxConstraints(
+                        minWidth: 20,
+                        minHeight: 20,
+                      ),
+                      decoration: BoxDecoration(
                         color: AppColors.richGold,
                         shape: BoxShape.circle,
+                        border: Border.all(
+                          color: AppColors.backgroundDark,
+                          width: 2,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppColors.richGold.withOpacity(0.3),
+                            blurRadius: 4,
+                            spreadRadius: 1,
+                          ),
+                        ],
                       ),
-                      child: Text(
-                        conversation.unreadCount > 9
-                            ? '9+'
-                            : '${conversation.unreadCount}',
-                        style: const TextStyle(
-                          color: AppColors.deepBlack,
-                          fontSize: 10,
-                          fontWeight: FontWeight.bold,
+                      child: Center(
+                        child: Text(
+                          conversation.unreadCount > 99
+                              ? '99+'
+                              : '${conversation.unreadCount}',
+                          style: const TextStyle(
+                            color: AppColors.deepBlack,
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),

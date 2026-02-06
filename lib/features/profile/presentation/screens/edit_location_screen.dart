@@ -4,6 +4,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/location.dart' as profile_entity;
 import '../bloc/profile_bloc.dart';
@@ -170,15 +171,13 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     final isValid = _selectedLocation != null && _selectedLanguages.isNotEmpty;
 
     return BlocListener<ProfileBloc, ProfileState>(
-      listener: (context, state) {
+      listener: (context, state) async {
         if (state is ProfileUpdated) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Location & languages saved successfully'),
-              backgroundColor: AppColors.successGreen,
-            ),
-          );
-          Navigator.of(context).pop(state.profile);
+          // Show success dialog instead of snackbar
+          await ActionSuccessDialog.showLocationUpdated(context);
+          if (context.mounted) {
+            Navigator.of(context).pop(state.profile);
+          }
         } else if (state is ProfileError) {
           setState(() {
             _isSaving = false;

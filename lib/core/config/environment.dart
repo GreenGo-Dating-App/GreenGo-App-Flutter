@@ -124,7 +124,7 @@ class Env {
     apiBaseUrl: 'https://api.greengo.app',
     useEmulators: false,
     emulatorHost: '',
-    firebaseProjectId: 'greengochat-a9008',
+    firebaseProjectId: 'greengo-chat',
     enableAnalytics: true,
     enableCrashReporting: true,
     enablePerformanceMonitoring: true,
