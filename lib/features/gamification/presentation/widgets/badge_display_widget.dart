@@ -351,10 +351,10 @@ class BadgeGrid extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 4,
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
-        childAspectRatio: 0.8,
+        crossAxisCount: 5,
+        crossAxisSpacing: 6,
+        mainAxisSpacing: 6,
+        childAspectRatio: 0.85,
       ),
       itemCount: badges.length,
       itemBuilder: (context, index) {
@@ -368,11 +368,12 @@ class BadgeGrid extends StatelessWidget {
               : null,
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.all(4),
             decoration: BoxDecoration(
               color: isSelected
                   ? AppColors.richGold.withValues(alpha: 0.2)
                   : AppColors.backgroundCard,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(8),
               border: Border.all(
                 color: isSelected ? AppColors.richGold : AppColors.divider,
                 width: isSelected ? 2 : 1,
@@ -383,26 +384,26 @@ class BadgeGrid extends StatelessWidget {
               children: [
                 _BadgeIcon(
                   badge: badge,
-                  size: 40,
+                  size: 28,
                   showTooltip: false,
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 2),
                 Text(
                   badge.name,
                   style: TextStyle(
                     color: AppColors.textPrimary,
-                    fontSize: 10,
+                    fontSize: 8,
                     fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                   ),
                   textAlign: TextAlign.center,
-                  maxLines: 2,
+                  maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
                 Text(
                   badge.rarity.displayName,
                   style: TextStyle(
                     color: Color(badge.rarity.colorValue),
-                    fontSize: 8,
+                    fontSize: 7,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

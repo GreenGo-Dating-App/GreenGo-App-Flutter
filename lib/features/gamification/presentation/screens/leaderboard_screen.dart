@@ -541,7 +541,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
 
   Widget _buildLeaderboardList(data) {
     // Skip top 3 as they're shown in podium
-    final entries = data.entries.length > 3
+    final List<dynamic> entries = data.entries.length > 3
         ? data.entries.sublist(3)
         : <dynamic>[];
 
@@ -570,15 +570,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
             ),
           ),
           child: Column(
-            children: entries.asMap().entries.map((mapEntry) {
-              final index = mapEntry.key;
-              final entry = mapEntry.value;
+            children: List<Widget>.generate(entries.length, (index) {
+              final entry = entries[index];
               final actualRank = index + 4; // Starting from 4th place
               final isCurrentUser = entry.userId == widget.userId;
 
               return _buildLeaderboardEntry(entry, actualRank, isCurrentUser,
                   isLast: index == entries.length - 1);
-            }).toList(),
+            }),
           ),
         ),
       ),

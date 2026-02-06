@@ -420,13 +420,13 @@ class _AchievementsScreenState extends State<AchievementsScreen>
     }
 
     return GridView.builder(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(12),
       physics: const BouncingScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 0.85,
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
+        crossAxisCount: 3,
+        childAspectRatio: 0.75,
+        crossAxisSpacing: 8,
+        mainAxisSpacing: 8,
       ),
       itemCount: achievements.length,
       itemBuilder: (context, index) {
@@ -454,13 +454,13 @@ class _AchievementsScreenState extends State<AchievementsScreen>
     return GestureDetector(
       onTap: () => _showAchievementDetails(achievementWithProgress),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(12),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(12),
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -479,8 +479,8 @@ class _AchievementsScreenState extends State<AchievementsScreen>
               children: [
                 // Icon
                 Container(
-                  width: 60,
-                  height: 60,
+                  width: 36,
+                  height: 36,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: isUnlocked
@@ -493,7 +493,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                         ? [
                             BoxShadow(
                               color: color.withOpacity(0.4),
-                              blurRadius: 15,
+                              blurRadius: 8,
                             ),
                           ]
                         : null,
@@ -501,16 +501,16 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   child: Icon(
                     _getCategoryIcon(achievement.category),
                     color: isUnlocked ? Colors.white : Colors.grey,
-                    size: 28,
+                    size: 18,
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 6),
 
                 // Name
                 Text(
                   achievement.name,
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 10,
                     fontWeight: FontWeight.w600,
                     color: isUnlocked ? Colors.white : Colors.grey,
                   ),
@@ -518,29 +518,29 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 4),
 
                 // Progress or Unlocked badge
                 if (isUnlocked)
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
+                      horizontal: 6,
+                      vertical: 2,
                     ),
                     decoration: BoxDecoration(
                       color: color.withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.check, color: Colors.white, size: 14),
-                        SizedBox(width: 4),
+                        Icon(Icons.check, color: Colors.white, size: 10),
+                        SizedBox(width: 2),
                         Text(
-                          'Unlocked',
+                          'Done',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 11,
+                            fontSize: 8,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -551,9 +551,9 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   Column(
                     children: [
                       Container(
-                        height: 6,
+                        height: 4,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(3),
+                          borderRadius: BorderRadius.circular(2),
                           color: Colors.white.withOpacity(0.1),
                         ),
                         child: Stack(
@@ -562,7 +562,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                               widthFactor: progress.clamp(0.0, 1.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(3),
+                                  borderRadius: BorderRadius.circular(2),
                                   color: Colors.grey,
                                 ),
                               ),
@@ -570,11 +570,11 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                           ],
                         ),
                       ),
-                      const SizedBox(height: 4),
+                      const SizedBox(height: 2),
                       Text(
                         '${(progress * 100).toInt()}%',
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: 8,
                           color: Colors.white.withOpacity(0.5),
                         ),
                       ),

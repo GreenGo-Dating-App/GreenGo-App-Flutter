@@ -35,12 +35,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   SubscriptionTier? _selectedTier;
   bool _isLoadingSubscription = false;
   final InAppPurchase _inAppPurchase = InAppPurchase.instance;
+  int _currentCoinBalance = 0;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
     context.read<CoinBloc>().add(const LoadAvailablePackages());
+    context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
   }
 
   @override
@@ -51,7 +53,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BlocListener<CoinBloc, CoinState>(
+      listener: (context, state) {
+        if (state is CoinBalanceLoaded) {
+          setState(() {
+            _currentCoinBalance = state.balance.totalCoins;
+          });
+        } else if (state is CoinBalanceUpdated) {
+          setState(() {
+            _currentCoinBalance = state.balance.totalCoins;
+          });
+        }
+      },
+      child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -74,6 +88,41 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           icon: const Icon(Icons.close, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        actions: [
+          // Coin Balance Display
+          Container(
+            margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  const Color(0xFFFFD700).withValues(alpha: 0.2),
+                  const Color(0xFFB8860B).withValues(alpha: 0.1),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: const Color(0xFFFFD700).withValues(alpha: 0.5),
+                width: 1.5,
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('🪙', style: TextStyle(fontSize: 16)),
+                const SizedBox(width: 6),
+                Text(
+                  _formatCoinBalance(_currentCoinBalance),
+                  style: const TextStyle(
+                    color: Color(0xFFFFD700),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48),
           child: _buildTabBar(),
@@ -87,7 +136,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _buildVideoCoinsTab(),
         ],
       ),
+      ),
     );
+  }
+
+  String _formatCoinBalance(int coins) {
+    if (coins >= 1000000) {
+      return '${(coins / 1000000).toStringAsFixed(1)}M';
+    } else if (coins >= 1000) {
+      return '${(coins / 1000).toStringAsFixed(1)}K';
+    }
+    return coins.toString();
   }
 
   Widget _buildTabBar() {

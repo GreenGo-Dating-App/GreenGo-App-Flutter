@@ -385,6 +385,22 @@
         { "fieldPath": "startDate", "order": "ASCENDING" },
         { "fieldPath": "endDate", "order": "ASCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "support_conversations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "support_conversations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
+      ]
     }
   ],
   "fieldOverrides": [
