@@ -39,18 +39,130 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   String? _ticketSubject;
   String? _ticketCategory;
 
+  // Pagination for infinite scroll
+  static const int _pageSize = 100;
+  List<QueryDocumentSnapshot> _messages = [];
+  bool _isLoadingMore = false;
+  bool _hasMoreMessages = true;
+  DocumentSnapshot? _lastDocument;
+  String? _ticketStartMessageId;
+
   @override
   void initState() {
     super.initState();
     _loadConversationDetails();
     _markAsRead();
+    _loadInitialMessages();
+
+    // Listen for scroll to load more
+    _scrollController.addListener(_onScroll);
   }
 
   @override
   void dispose() {
     _messageController.dispose();
+    _scrollController.removeListener(_onScroll);
     _scrollController.dispose();
     super.dispose();
+  }
+
+  void _onScroll() {
+    // Load more when reaching the top (since list is reversed)
+    if (_scrollController.position.pixels >= _scrollController.position.maxScrollExtent - 200) {
+      _loadMoreMessages();
+    }
+  }
+
+  Future<void> _loadInitialMessages() async {
+    try {
+      final query = _firestore
+          .collection('support_messages')
+          .where('conversationId', isEqualTo: widget.conversationId)
+          .orderBy('createdAt', descending: true)
+          .limit(_pageSize);
+
+      final snapshot = await query.get();
+
+      if (mounted) {
+        setState(() {
+          _messages = snapshot.docs;
+          if (snapshot.docs.isNotEmpty) {
+            _lastDocument = snapshot.docs.last;
+          }
+          _hasMoreMessages = snapshot.docs.length >= _pageSize;
+        });
+
+        // Find ticket start message
+        for (final doc in _messages) {
+          final data = doc.data() as Map<String, dynamic>;
+          if (data['isTicketStart'] == true) {
+            _ticketStartMessageId = doc.id;
+            break;
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error loading initial messages: $e');
+    }
+  }
+
+  Future<void> _loadMoreMessages() async {
+    if (_isLoadingMore || !_hasMoreMessages || _lastDocument == null) return;
+
+    setState(() => _isLoadingMore = true);
+
+    try {
+      final query = _firestore
+          .collection('support_messages')
+          .where('conversationId', isEqualTo: widget.conversationId)
+          .orderBy('createdAt', descending: true)
+          .startAfterDocument(_lastDocument!)
+          .limit(_pageSize);
+
+      final snapshot = await query.get();
+
+      if (mounted) {
+        setState(() {
+          _messages.addAll(snapshot.docs);
+          if (snapshot.docs.isNotEmpty) {
+            _lastDocument = snapshot.docs.last;
+          }
+          _hasMoreMessages = snapshot.docs.length >= _pageSize;
+          _isLoadingMore = false;
+        });
+
+        // Check for ticket start message in newly loaded messages
+        if (_ticketStartMessageId == null) {
+          for (final doc in snapshot.docs) {
+            final data = doc.data() as Map<String, dynamic>;
+            if (data['isTicketStart'] == true) {
+              _ticketStartMessageId = doc.id;
+              break;
+            }
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Error loading more messages: $e');
+      if (mounted) {
+        setState(() => _isLoadingMore = false);
+      }
+    }
+  }
+
+  void _scrollToTicketStart() {
+    if (_ticketStartMessageId == null) return;
+
+    // Find the index of the ticket start message
+    final index = _messages.indexWhere((doc) => doc.id == _ticketStartMessageId);
+    if (index != -1 && _scrollController.hasClients) {
+      // Since list is reversed, we scroll to position from the bottom
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOut,
+      );
+    }
   }
 
   Future<void> _markAsRead() async {
@@ -462,22 +574,23 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       ),
       body: Column(
         children: [
-          // Messages list - using support_messages collection
+          // Messages list with real-time updates
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
               stream: _firestore
                   .collection('support_messages')
                   .where('conversationId', isEqualTo: widget.conversationId)
                   .orderBy('createdAt', descending: true)
+                  .limit(_pageSize)
                   .snapshots(),
               builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
+                if (snapshot.connectionState == ConnectionState.waiting && _messages.isEmpty) {
                   return const Center(
                     child: CircularProgressIndicator(color: AppColors.richGold),
                   );
                 }
 
-                if (snapshot.hasError) {
+                if (snapshot.hasError && _messages.isEmpty) {
                   return Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -506,9 +619,22 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   );
                 }
 
-                final messages = snapshot.data?.docs ?? [];
+                // Merge stream data with paginated data
+                final streamMessages = snapshot.data?.docs ?? [];
+                final allMessages = <QueryDocumentSnapshot>[];
 
-                if (messages.isEmpty) {
+                // Add stream messages (most recent)
+                allMessages.addAll(streamMessages);
+
+                // Add older paginated messages that aren't in stream
+                final streamIds = streamMessages.map((d) => d.id).toSet();
+                for (final doc in _messages) {
+                  if (!streamIds.contains(doc.id)) {
+                    allMessages.add(doc);
+                  }
+                }
+
+                if (allMessages.isEmpty) {
                   return const Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -544,18 +670,80 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   );
                 }
 
-                return ListView.builder(
-                  controller: _scrollController,
-                  reverse: true,
-                  padding: const EdgeInsets.all(16),
-                  itemCount: messages.length,
-                  itemBuilder: (context, index) {
-                    final messageData = messages[index].data() as Map<String, dynamic>;
-                    final isMe = messageData['senderType'] == 'user';
-                    final isSystem = messageData['messageType'] == 'system';
+                return Stack(
+                  children: [
+                    ListView.builder(
+                      controller: _scrollController,
+                      reverse: true,
+                      padding: const EdgeInsets.all(16),
+                      itemCount: allMessages.length + (_isLoadingMore ? 1 : 0),
+                      itemBuilder: (context, index) {
+                        // Loading indicator at the end (top of chat)
+                        if (index == allMessages.length) {
+                          return const Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(16),
+                              child: CircularProgressIndicator(
+                                color: AppColors.richGold,
+                                strokeWidth: 2,
+                              ),
+                            ),
+                          );
+                        }
 
-                    return _buildMessageBubble(messageData, isMe, isSystem);
-                  },
+                        final messageData = allMessages[index].data() as Map<String, dynamic>;
+                        final isMe = messageData['senderType'] == 'user';
+                        final isSystem = messageData['messageType'] == 'system';
+                        final isTicketStart = messageData['isTicketStart'] == true ||
+                            messageData['messageType'] == 'ticket_creation';
+
+                        return _buildMessageBubble(
+                          messageData,
+                          isMe,
+                          isSystem,
+                          isTicketStart: isTicketStart,
+                        );
+                      },
+                    ),
+                    // Scroll to ticket start button
+                    if (_ticketStartMessageId != null)
+                      Positioned(
+                        top: 8,
+                        right: 8,
+                        child: GestureDetector(
+                          onTap: _scrollToTicketStart,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            decoration: BoxDecoration(
+                              color: AppColors.richGold.withOpacity(0.9),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 4,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.arrow_upward, color: Colors.black, size: 16),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Ticket Start',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
                 );
               },
             ),
@@ -568,7 +756,12 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     );
   }
 
-  Widget _buildMessageBubble(Map<String, dynamic> messageData, bool isMe, bool isSystem) {
+  Widget _buildMessageBubble(
+    Map<String, dynamic> messageData,
+    bool isMe,
+    bool isSystem, {
+    bool isTicketStart = false,
+  }) {
     final content = messageData['content'] as String? ?? '';
     final sentAt = messageData['createdAt'];
     final senderName = messageData['senderName'] as String?;
@@ -603,6 +796,77 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   fontSize: 13,
                   fontStyle: FontStyle.italic,
                 ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Ticket start message styling
+    if (isTicketStart) {
+      return Container(
+        margin: const EdgeInsets.symmetric(vertical: 8),
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              AppColors.richGold.withOpacity(0.15),
+              AppColors.richGold.withOpacity(0.05),
+            ],
+          ),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: AppColors.richGold.withOpacity(0.4)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.richGold.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(
+                    Icons.confirmation_number,
+                    color: AppColors.richGold,
+                    size: 20,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                const Expanded(
+                  child: Text(
+                    'Ticket Created',
+                    style: TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                if (timestamp != null)
+                  Text(
+                    _formatTime(timestamp),
+                    style: TextStyle(
+                      color: AppColors.textSecondary.withOpacity(0.7),
+                      fontSize: 11,
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            const Divider(color: AppColors.divider, height: 1),
+            const SizedBox(height: 12),
+            Text(
+              content.replaceAll('📋 **New Support Ticket**\n\n', '').replaceAll('**', ''),
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 14,
+                height: 1.5,
               ),
             ),
           ],

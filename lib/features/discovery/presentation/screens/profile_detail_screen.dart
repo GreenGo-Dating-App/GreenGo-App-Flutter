@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -14,6 +16,7 @@ import '../widgets/swipe_buttons.dart';
 /// Profile Detail Screen
 ///
 /// Full profile view with photos, bio, interests, and details
+/// Includes Instagram-like photo likes feature
 class ProfileDetailScreen extends StatefulWidget {
   final Profile profile;
   final String currentUserId;
@@ -36,10 +39,140 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   final PageController _pageController = PageController();
   int _currentPhotoIndex = 0;
 
+  // Photo likes state
+  Map<int, bool> _photoLikedByMe = {};
+  Map<int, int> _photoLikeCounts = {};
+  bool _showLikeAnimation = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPhotoLikes();
+  }
+
   @override
   void dispose() {
     _pageController.dispose();
     super.dispose();
+  }
+
+  /// Load like status for all photos
+  Future<void> _loadPhotoLikes() async {
+    if (widget.profile.photoUrls.isEmpty) return;
+
+    final firestore = FirebaseFirestore.instance;
+
+    for (int i = 0; i < widget.profile.photoUrls.length; i++) {
+      final photoUrl = widget.profile.photoUrls[i];
+      final photoId = _getPhotoId(photoUrl);
+
+      // Check if current user liked this photo
+      final likeDoc = await firestore
+          .collection('photo_likes')
+          .doc('${widget.profile.userId}_${photoId}_${widget.currentUserId}')
+          .get();
+
+      // Get total like count
+      final likesQuery = await firestore
+          .collection('photo_likes')
+          .where('profileUserId', isEqualTo: widget.profile.userId)
+          .where('photoId', isEqualTo: photoId)
+          .count()
+          .get();
+
+      if (mounted) {
+        setState(() {
+          _photoLikedByMe[i] = likeDoc.exists;
+          _photoLikeCounts[i] = likesQuery.count ?? 0;
+        });
+      }
+    }
+  }
+
+  String _getPhotoId(String photoUrl) {
+    // Extract a unique identifier from the photo URL
+    return photoUrl.hashCode.toString();
+  }
+
+  /// Toggle like on current photo
+  Future<void> _togglePhotoLike() async {
+    final photoIndex = _currentPhotoIndex;
+    final photoUrl = widget.profile.photoUrls[photoIndex];
+    final photoId = _getPhotoId(photoUrl);
+    final isLiked = _photoLikedByMe[photoIndex] ?? false;
+
+    final firestore = FirebaseFirestore.instance;
+    final docId = '${widget.profile.userId}_${photoId}_${widget.currentUserId}';
+
+    if (isLiked) {
+      // Unlike
+      await firestore.collection('photo_likes').doc(docId).delete();
+      setState(() {
+        _photoLikedByMe[photoIndex] = false;
+        _photoLikeCounts[photoIndex] = (_photoLikeCounts[photoIndex] ?? 1) - 1;
+      });
+    } else {
+      // Like
+      await firestore.collection('photo_likes').doc(docId).set({
+        'profileUserId': widget.profile.userId,
+        'photoId': photoId,
+        'photoUrl': photoUrl,
+        'likerId': widget.currentUserId,
+        'likedAt': FieldValue.serverTimestamp(),
+      });
+
+      setState(() {
+        _photoLikedByMe[photoIndex] = true;
+        _photoLikeCounts[photoIndex] = (_photoLikeCounts[photoIndex] ?? 0) + 1;
+        _showLikeAnimation = true;
+      });
+
+      // Haptic feedback
+      HapticFeedback.mediumImpact();
+
+      // Hide animation after delay
+      Future.delayed(const Duration(milliseconds: 800), () {
+        if (mounted) {
+          setState(() => _showLikeAnimation = false);
+        }
+      });
+
+      // Send notification to profile owner (if not liking own photo)
+      if (widget.profile.userId != widget.currentUserId) {
+        _sendPhotoLikeNotification(photoIndex);
+      }
+    }
+  }
+
+  /// Send notification when someone likes a photo
+  Future<void> _sendPhotoLikeNotification(int photoIndex) async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Get current user's profile for name
+      final userDoc = await firestore.collection('profiles').doc(widget.currentUserId).get();
+      final userName = userDoc.data()?['displayName'] ?? 'Someone';
+      final userNickname = userDoc.data()?['nickname'] as String?;
+
+      final displayName = userNickname != null ? '@$userNickname' : userName;
+
+      await firestore.collection('notifications').add({
+        'userId': widget.profile.userId,
+        'type': 'photo_like',
+        'title': 'New Photo Like',
+        'message': '$displayName liked your photo',
+        'data': {
+          'likerId': widget.currentUserId,
+          'likerName': userName,
+          'likerNickname': userNickname,
+          'photoIndex': photoIndex,
+        },
+        'createdAt': FieldValue.serverTimestamp(),
+        'isRead': false,
+      });
+    } catch (e) {
+      debugPrint('Error sending photo like notification: $e');
+    }
   }
 
   /// Check if this is self-view mode (user viewing their own profile)
@@ -350,30 +483,40 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     );
   }
 
-  /// Build action buttons when users are matched (Chat button)
+  /// Build action buttons when users are matched (Let's Chat! button)
   Widget _buildMatchedActionButtons(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Chat Button
-          Expanded(
-            child: ElevatedButton.icon(
-              onPressed: () => _navigateToChat(context),
-              icon: const Icon(Icons.chat_bubble),
-              label: Text('Chat with ${widget.profile.displayName}'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-                ),
+      child: ElevatedButton(
+        onPressed: () {
+          HapticFeedback.mediumImpact();
+          _navigateToChat(context);
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.richGold,
+          foregroundColor: AppColors.deepBlack,
+          padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 32),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          elevation: 8,
+          shadowColor: AppColors.richGold.withOpacity(0.5),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.chat_bubble, size: 24),
+            const SizedBox(width: 12),
+            Text(
+              "Let's Chat!",
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -396,24 +539,35 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   Widget _buildPhotoCarousel() {
     return Stack(
       children: [
-        // Photos
-        PageView.builder(
-          controller: _pageController,
-          onPageChanged: (index) {
-            setState(() {
-              _currentPhotoIndex = index;
-            });
-          },
-          itemCount: widget.profile.photoUrls.length,
-          itemBuilder: (context, index) {
-            return Image.network(
-              widget.profile.photoUrls[index],
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) =>
-                  _buildPhotoPlaceholder(),
-            );
-          },
+        // Photos with double-tap to like
+        GestureDetector(
+          onDoubleTap: _togglePhotoLike,
+          child: PageView.builder(
+            controller: _pageController,
+            onPageChanged: (index) {
+              setState(() {
+                _currentPhotoIndex = index;
+              });
+            },
+            itemCount: widget.profile.photoUrls.length,
+            itemBuilder: (context, index) {
+              return Image.network(
+                widget.profile.photoUrls[index],
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) =>
+                    _buildPhotoPlaceholder(),
+              );
+            },
+          ),
         ),
+
+        // Like animation (heart that appears on double-tap)
+        if (_showLikeAnimation)
+          const Positioned.fill(
+            child: Center(
+              child: _LikeAnimationWidget(),
+            ),
+          ),
 
         // Gradient overlay
         Positioned(
@@ -460,7 +614,58 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               ),
             ),
           ),
+
+        // Like button and count (Instagram style)
+        Positioned(
+          bottom: 16,
+          right: 16,
+          child: _buildPhotoLikeButton(),
+        ),
       ],
+    );
+  }
+
+  Widget _buildPhotoLikeButton() {
+    final isLiked = _photoLikedByMe[_currentPhotoIndex] ?? false;
+    final likeCount = _photoLikeCounts[_currentPhotoIndex] ?? 0;
+
+    return GestureDetector(
+      onTap: _togglePhotoLike,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.6),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 200),
+              transitionBuilder: (child, animation) {
+                return ScaleTransition(scale: animation, child: child);
+              },
+              child: Icon(
+                isLiked ? Icons.favorite : Icons.favorite_border,
+                key: ValueKey(isLiked),
+                color: isLiked ? Colors.red : Colors.white,
+                size: 24,
+              ),
+            ),
+            if (likeCount > 0) ...[
+              const SizedBox(width: 6),
+              Text(
+                likeCount > 999 ? '${(likeCount / 1000).toStringAsFixed(1)}k' : '$likeCount',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
     );
   }
 
@@ -683,5 +888,85 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         );
       }
     }
+  }
+}
+
+/// Like animation widget (heart that pops up on double-tap)
+class _LikeAnimationWidget extends StatefulWidget {
+  const _LikeAnimationWidget();
+
+  @override
+  State<_LikeAnimationWidget> createState() => _LikeAnimationWidgetState();
+}
+
+class _LikeAnimationWidgetState extends State<_LikeAnimationWidget>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _scaleAnimation;
+  late Animation<double> _opacityAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 800),
+      vsync: this,
+    );
+
+    _scaleAnimation = TweenSequence<double>([
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 0.0, end: 1.3)
+            .chain(CurveTween(curve: Curves.easeOut)),
+        weight: 50,
+      ),
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.3, end: 1.0)
+            .chain(CurveTween(curve: Curves.easeIn)),
+        weight: 50,
+      ),
+    ]).animate(_controller);
+
+    _opacityAnimation = TweenSequence<double>([
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 0.0, end: 1.0),
+        weight: 30,
+      ),
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.0, end: 1.0),
+        weight: 40,
+      ),
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.0, end: 0.0),
+        weight: 30,
+      ),
+    ]).animate(_controller);
+
+    _controller.forward();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return Opacity(
+          opacity: _opacityAnimation.value,
+          child: Transform.scale(
+            scale: _scaleAnimation.value,
+            child: const Icon(
+              Icons.favorite,
+              color: Colors.red,
+              size: 100,
+            ),
+          ),
+        );
+      },
+    );
   }
 }

@@ -1,5 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/discovery_card.dart';
+import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/get_discovery_stack.dart';
 import '../../domain/usecases/record_swipe.dart';
@@ -9,11 +11,19 @@ import 'discovery_state.dart';
 
 /// Discovery BLoC
 ///
-/// Manages the discovery stack and swipe actions
+/// Manages the discovery stack and swipe actions with a 20-profile queue
+/// and automatic pre-fetching when the queue runs low
 class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   final GetDiscoveryStack getDiscoveryStack;
   final RecordSwipe recordSwipe;
   final UsageLimitService _usageLimitService;
+
+  // Queue management
+  static const int queueSize = 20;
+  static const int prefetchThreshold = 5;
+  bool _isPrefetching = false;
+  String? _currentUserId;
+  MatchPreferences? _currentPreferences;
 
   DiscoveryBloc({
     required this.getDiscoveryStack,
@@ -25,6 +35,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     on<DiscoverySwipeRecorded>(_onSwipeRecorded);
     on<DiscoveryStackRefreshRequested>(_onRefreshStack);
     on<DiscoveryMoreCandidatesRequested>(_onLoadMore);
+    on<DiscoveryPrefetchRequested>(_onPrefetch);
   }
 
   Future<void> _onLoadStack(
@@ -33,11 +44,16 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   ) async {
     emit(const DiscoveryLoading());
 
+    // Store current context for prefetching
+    _currentUserId = event.userId;
+    _currentPreferences = event.preferences;
+
+    // Always load the full queue size (20 profiles)
     final result = await getDiscoveryStack(
       GetDiscoveryStackParams(
         userId: event.userId,
         preferences: event.preferences,
-        limit: event.limit,
+        limit: queueSize,
       ),
     );
 
@@ -57,6 +73,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
                   ))
               .toList();
 
+          debugPrint('📱 Discovery queue loaded: ${cards.length} profiles ready');
           emit(DiscoveryLoaded(cards: cards, currentIndex: 0));
         }
       },
@@ -151,13 +168,21 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
     // Move to next card
     final nextIndex = currentState.currentIndex + 1;
+    final remainingCards = currentState.cards.length - nextIndex;
+
+    // Check if we need to prefetch more profiles
+    if (remainingCards <= prefetchThreshold && !_isPrefetching) {
+      debugPrint('⏳ Queue low ($remainingCards profiles left), prefetching more...');
+      _triggerPrefetch(event.userId);
+    }
 
     if (swipeAction.createdMatch) {
-      // Match created! Emit match state
+      // Match created! Emit match state with matched user info
       emit(DiscoverySwipeCompleted(
         cards: currentState.cards,
         currentIndex: nextIndex,
         createdMatch: true,
+        matchedUserId: event.targetUserId,
       ));
 
       // Wait briefly then transition to loaded state
@@ -181,6 +206,78 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           currentIndex: nextIndex,
         ));
       }
+    }
+  }
+
+  /// Trigger prefetch for more profiles
+  void _triggerPrefetch(String userId) {
+    if (_currentPreferences != null && !_isPrefetching) {
+      add(DiscoveryPrefetchRequested(
+        userId: userId,
+        preferences: _currentPreferences!,
+      ));
+    }
+  }
+
+  /// Handle prefetch request - loads more profiles in the background
+  Future<void> _onPrefetch(
+    DiscoveryPrefetchRequested event,
+    Emitter<DiscoveryState> emit,
+  ) async {
+    if (_isPrefetching) return;
+    if (state is! DiscoveryLoaded) return;
+
+    _isPrefetching = true;
+    final currentState = state as DiscoveryLoaded;
+
+    try {
+      final result = await getDiscoveryStack(
+        GetDiscoveryStackParams(
+          userId: event.userId,
+          preferences: event.preferences,
+          limit: queueSize,
+        ),
+      );
+
+      result.fold(
+        (failure) {
+          debugPrint('⚠️ Prefetch failed: ${failure.message}');
+        },
+        (candidates) {
+          if (candidates.isNotEmpty && state is DiscoveryLoaded) {
+            // Filter out profiles already in the queue
+            final existingIds = currentState.cards
+                .map((c) => c.candidate.profile.userId)
+                .toSet();
+
+            final newCandidates = candidates
+                .where((c) => !existingIds.contains(c.profile.userId))
+                .toList();
+
+            if (newCandidates.isNotEmpty) {
+              final newCards = newCandidates
+                  .asMap()
+                  .entries
+                  .map((entry) => DiscoveryCard(
+                        candidate: entry.value,
+                        position: currentState.cards.length + entry.key,
+                      ))
+                  .toList();
+
+              debugPrint('✅ Prefetched ${newCards.length} new profiles');
+
+              emit(DiscoveryLoaded(
+                cards: [...currentState.cards, ...newCards],
+                currentIndex: currentState.currentIndex,
+              ));
+            }
+          }
+        },
+      );
+    } catch (e) {
+      debugPrint('⚠️ Prefetch error: $e');
+    } finally {
+      _isPrefetching = false;
     }
   }
 

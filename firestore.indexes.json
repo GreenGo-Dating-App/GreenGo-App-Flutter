@@ -401,6 +401,71 @@
         { "fieldPath": "status", "order": "ASCENDING" },
         { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "support_chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "support_chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "lastMessageAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "support_chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "support_messages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "conversationId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "support_messages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "conversationId", "order": "ASCENDING" },
+        { "fieldPath": "senderType", "order": "ASCENDING" },
+        { "fieldPath": "readByUser", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "photo_likes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "profileUserId", "order": "ASCENDING" },
+        { "fieldPath": "photoId", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "photo_likes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "profileUserId", "order": "ASCENDING" },
+        { "fieldPath": "likedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "photo_likes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "likerId", "order": "ASCENDING" },
+        { "fieldPath": "likedAt", "order": "DESCENDING" }
+      ]
     }
   ],
   "fieldOverrides": [

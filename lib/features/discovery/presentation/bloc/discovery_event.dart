@@ -58,3 +58,14 @@ class DiscoveryMoreCandidatesRequested extends DiscoveryEvent {
     required this.preferences,
   });
 }
+
+/// Prefetch more profiles in background (triggered automatically when queue is low)
+class DiscoveryPrefetchRequested extends DiscoveryEvent {
+  final String userId;
+  final MatchPreferences preferences;
+
+  const DiscoveryPrefetchRequested({
+    required this.userId,
+    required this.preferences,
+  });
+}

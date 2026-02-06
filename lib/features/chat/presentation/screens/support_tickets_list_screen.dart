@@ -38,7 +38,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: _firestore
-            .collection('support_conversations')
+            .collection('support_chats')
             .where('userId', isEqualTo: widget.currentUserId)
             .orderBy('lastMessageAt', descending: true)
             .snapshots(),
@@ -122,7 +122,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
               final subject = ticket['subject'] ?? 'Support Request';
               final status = ticket['status'] ?? 'open';
               final lastMessageAt = ticket['lastMessageAt'] as Timestamp?;
-              final unreadCount = ticket['userUnreadCount'] ?? 0;
+              final unreadCount = ticket['unreadCount'] ?? 0;
 
               return Card(
                 color: AppColors.backgroundCard,
@@ -375,29 +375,73 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
       final firestore = FirebaseFirestore.instance;
       final now = DateTime.now();
 
-      // Create the support conversation
-      final docRef = await firestore.collection('support_conversations').add({
+      // Get user profile for sender info
+      Map<String, dynamic> userData = {};
+      try {
+        final userProfile = await firestore
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+        if (userProfile.exists) {
+          userData = userProfile.data() ?? {};
+        }
+      } catch (e) {
+        debugPrint('Could not fetch profile: $e');
+      }
+
+      // Find category label
+      final categoryLabel = _categories.firstWhere(
+        (cat) => cat['value'] == _selectedCategory,
+        orElse: () => {'label': _selectedCategory},
+      )['label'] ?? _selectedCategory;
+
+      // Create the support conversation using support_chats collection (matches admin panel)
+      final docRef = await firestore.collection('support_chats').add({
         'userId': widget.currentUserId,
+        'userName': userData['displayName'] ?? 'User',
+        'userAvatar': userData['photoUrls']?.isNotEmpty == true
+            ? userData['photoUrls'][0]
+            : null,
         'subject': _subjectController.text.trim(),
         'category': _selectedCategory,
         'status': 'open',
         'priority': 'normal',
         'createdAt': Timestamp.fromDate(now),
+        'updatedAt': Timestamp.fromDate(now),
         'lastMessageAt': Timestamp.fromDate(now),
-        'userUnreadCount': 0,
-        'supportUnreadCount': 1,
+        'lastMessage': '',
+        'lastMessageBy': 'user',
+        'unreadCount': 0,
+        'messageCount': 1,
       });
 
-      // Add the initial message if description provided
-      if (_descriptionController.text.trim().isNotEmpty) {
-        await docRef.collection('messages').add({
-          'senderId': widget.currentUserId,
-          'senderType': 'user',
-          'content': _descriptionController.text.trim(),
-          'timestamp': Timestamp.fromDate(now),
-          'type': 'text',
-        });
-      }
+      // Create the initial ticket message with formatted content
+      final String ticketContent = '''📋 **New Support Ticket**
+
+**Category:** $categoryLabel
+**Subject:** ${_subjectController.text.trim()}
+${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descriptionController.text.trim()}' : ''}''';
+
+      await firestore.collection('support_messages').add({
+        'conversationId': docRef.id,
+        'senderId': widget.currentUserId,
+        'senderType': 'user',
+        'senderName': userData['displayName'] ?? 'User',
+        'senderAvatar': userData['photoUrls']?.isNotEmpty == true
+            ? userData['photoUrls'][0]
+            : null,
+        'content': ticketContent,
+        'messageType': 'ticket_creation',
+        'isTicketStart': true,
+        'readByAdmin': false,
+        'readByUser': true,
+        'createdAt': Timestamp.fromDate(now),
+      });
+
+      // Update last message in conversation
+      await docRef.update({
+        'lastMessage': 'New ticket: ${_subjectController.text.trim()}',
+      });
 
       widget.onCreated(docRef.id);
     } catch (e) {
