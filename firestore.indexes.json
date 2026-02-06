@@ -363,13 +363,6 @@
       ]
     },
     {
-      "collectionGroup": "achievement_progress",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" }
-      ]
-    },
-    {
       "collectionGroup": "user_levels",
       "queryScope": "COLLECTION",
       "fields": [
@@ -383,13 +376,6 @@
       "fields": [
         { "fieldPath": "userId", "order": "ASCENDING" },
         { "fieldPath": "timestamp", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "challenge_progress",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "userId", "order": "ASCENDING" }
       ]
     },
     {
@@ -429,6 +415,20 @@
     {
       "collectionGroup": "blocked_users",
       "fieldPath": "blockerId",
+      "indexes": [
+        { "order": "ASCENDING", "queryScope": "COLLECTION" }
+      ]
+    },
+    {
+      "collectionGroup": "achievement_progress",
+      "fieldPath": "userId",
+      "indexes": [
+        { "order": "ASCENDING", "queryScope": "COLLECTION" }
+      ]
+    },
+    {
+      "collectionGroup": "challenge_progress",
+      "fieldPath": "userId",
       "indexes": [
         { "order": "ASCENDING", "queryScope": "COLLECTION" }
       ]
