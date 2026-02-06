@@ -1,9 +1,13 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../domain/entities/profile.dart' as profile_entity;
 import '../../../domain/entities/location.dart' as location_entity;
 import '../../bloc/onboarding_bloc.dart';
@@ -70,7 +74,11 @@ class _Step5LocationLanguageScreenState
       // Check if location services are enabled
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
-        throw Exception('Location services are disabled');
+        _showLocationError(
+          'Location Services Disabled',
+          'Please enable location services in your device settings to use this feature.',
+        );
+        return;
       }
 
       // Check location permissions
@@ -78,12 +86,20 @@ class _Step5LocationLanguageScreenState
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
-          throw Exception('Location permissions are denied');
+          _showLocationError(
+            'Permission Denied',
+            'Location permission is required to detect your current location. Please grant permission to continue.',
+          );
+          return;
         }
       }
 
       if (permission == LocationPermission.deniedForever) {
-        throw Exception('Location permissions are permanently denied');
+        _showLocationError(
+          'Permission Permanently Denied',
+          'Location permission has been permanently denied. Please enable it in your device settings to use this feature.',
+        );
+        return;
       }
 
       // Get current position
@@ -113,12 +129,64 @@ class _Step5LocationLanguageScreenState
           );
           _isLoadingLocation = false;
         });
+      } else {
+        _showLocationError(
+          'Location Not Found',
+          'We could not determine your address. Please try again or set your location manually later.',
+        );
       }
+    } on PlatformException catch (e) {
+      // Handle platform-specific errors gracefully
+      String message;
+      if (e.code == 'PERMISSION_DENIED') {
+        message = 'Location permission was denied. Please grant permission in settings.';
+      } else if (e.code == 'LOCATION_SERVICE_DISABLED') {
+        message = 'Location services are disabled. Please enable them in settings.';
+      } else {
+        message = 'Unable to get your location. Please check your device settings or try again later.';
+      }
+      _showLocationError('Location Error', message);
+    } on TimeoutException {
+      _showLocationError(
+        'Request Timeout',
+        'Getting your location took too long. Please check your connection and try again.',
+      );
     } catch (e) {
-      setState(() {
-        _locationError = e.toString();
-        _isLoadingLocation = false;
-      });
+      // Handle any other errors gracefully
+      String errorMessage = e.toString().toLowerCase();
+      String userMessage;
+
+      if (errorMessage.contains('network') || errorMessage.contains('internet') || errorMessage.contains('connection')) {
+        userMessage = 'Please check your internet connection and try again.';
+      } else if (errorMessage.contains('permission')) {
+        userMessage = 'Location permission is required. Please grant permission in settings.';
+      } else if (errorMessage.contains('service') || errorMessage.contains('disabled')) {
+        userMessage = 'Location services are disabled. Please enable them in settings.';
+      } else if (errorMessage.contains('timeout')) {
+        userMessage = 'Getting your location took too long. Please try again.';
+      } else {
+        userMessage = 'Unable to get your location at the moment. You can set it manually later in settings.';
+      }
+
+      _showLocationError('Location Unavailable', userMessage);
+    }
+  }
+
+  void _showLocationError(String title, String message) {
+    setState(() {
+      _isLoadingLocation = false;
+      _locationError = message;
+    });
+
+    // Show a graceful dialog
+    if (mounted) {
+      ConnectionErrorDialog.showError(
+        context,
+        title: title,
+        message: message,
+        icon: Icons.location_off,
+        onRetry: _getCurrentLocation,
+      );
     }
   }
 

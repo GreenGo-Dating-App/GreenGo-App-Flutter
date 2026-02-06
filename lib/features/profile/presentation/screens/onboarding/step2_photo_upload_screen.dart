@@ -350,6 +350,8 @@ class _PhotoCard extends StatelessWidget {
     required this.onRemove,
   });
 
+  bool get _isLocalFile => !photoUrl.startsWith('http');
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -373,7 +375,9 @@ class _PhotoCard extends StatelessWidget {
                   ]
                 : null,
             image: DecorationImage(
-              image: NetworkImage(photoUrl),
+              image: _isLocalFile
+                  ? FileImage(File(photoUrl))
+                  : NetworkImage(photoUrl) as ImageProvider,
               fit: BoxFit.cover,
             ),
           ),

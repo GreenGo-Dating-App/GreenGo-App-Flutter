@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/constants/app_colors.dart';
@@ -93,30 +95,53 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(16),
                                     itemCount: state.photoUrls.length,
                                     itemBuilder: (context, index) {
+                                      final photoUrl = state.photoUrls[index];
+                                      final isLocalFile = !photoUrl.startsWith('http');
+
                                       return Padding(
                                         padding: const EdgeInsets.only(right: 12),
                                         child: ClipRRect(
                                           borderRadius: BorderRadius.circular(
                                               AppDimensions.radiusM),
-                                          child: Image.network(
-                                            state.photoUrls[index],
-                                            width: 150,
-                                            height: 200,
-                                            fit: BoxFit.cover,
-                                            errorBuilder:
-                                                (context, error, stackTrace) {
-                                              return Container(
-                                                width: 150,
-                                                height: 200,
-                                                color: AppColors.backgroundInput,
-                                                child: const Icon(
-                                                  Icons.person,
-                                                  size: 60,
-                                                  color: AppColors.textTertiary,
+                                          child: isLocalFile
+                                              ? Image.file(
+                                                  File(photoUrl),
+                                                  width: 150,
+                                                  height: 200,
+                                                  fit: BoxFit.cover,
+                                                  errorBuilder:
+                                                      (context, error, stackTrace) {
+                                                    return Container(
+                                                      width: 150,
+                                                      height: 200,
+                                                      color: AppColors.backgroundInput,
+                                                      child: const Icon(
+                                                        Icons.person,
+                                                        size: 60,
+                                                        color: AppColors.textTertiary,
+                                                      ),
+                                                    );
+                                                  },
+                                                )
+                                              : Image.network(
+                                                  photoUrl,
+                                                  width: 150,
+                                                  height: 200,
+                                                  fit: BoxFit.cover,
+                                                  errorBuilder:
+                                                      (context, error, stackTrace) {
+                                                    return Container(
+                                                      width: 150,
+                                                      height: 200,
+                                                      color: AppColors.backgroundInput,
+                                                      child: const Icon(
+                                                        Icons.person,
+                                                        size: 60,
+                                                        color: AppColors.textTertiary,
+                                                      ),
+                                                    );
+                                                  },
                                                 ),
-                                              );
-                                            },
-                                          ),
                                         ),
                                       );
                                     },
@@ -189,7 +214,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                 [
                                   _InfoItem(
                                     'Status',
-                                    state.voiceUrl != null
+                                    (state.voiceUrl != null && state.voiceUrl!.isNotEmpty)
                                         ? 'Recorded'
                                         : 'Not recorded',
                                   ),
