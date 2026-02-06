@@ -106,6 +106,17 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     } on firebase_auth.FirebaseAuthException catch (e) {
       throw _handleFirebaseAuthException(e);
     } catch (e) {
+      // Check if the error message contains network-related keywords
+      final message = e.toString().toLowerCase();
+      if (message.contains('network') ||
+          message.contains('connection') ||
+          message.contains('internet') ||
+          message.contains('timeout') ||
+          message.contains('unreachable') ||
+          message.contains('host') ||
+          message.contains('socket')) {
+        throw AuthenticationException('NETWORK_ERROR: Please check your internet connection');
+      }
       throw AuthenticationException(e.toString());
     }
   }
@@ -448,7 +459,19 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         return AuthenticationException('Too many requests. Please try again later');
       case 'operation-not-allowed':
         return AuthenticationException('This operation is not allowed');
+      case 'network-request-failed':
+        return AuthenticationException('NETWORK_ERROR: Please check your internet connection');
       default:
+        // Check if the error message contains network-related keywords
+        final message = (e.message ?? '').toLowerCase();
+        if (message.contains('network') ||
+            message.contains('connection') ||
+            message.contains('internet') ||
+            message.contains('timeout') ||
+            message.contains('unreachable') ||
+            message.contains('host')) {
+          return AuthenticationException('NETWORK_ERROR: Please check your internet connection');
+        }
         return AuthenticationException(e.message ?? 'Authentication failed');
     }
   }

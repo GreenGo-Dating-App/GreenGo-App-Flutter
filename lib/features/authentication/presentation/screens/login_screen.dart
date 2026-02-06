@@ -140,7 +140,10 @@ class _LoginScreenState extends State<LoginScreen>
           listener: (context, state) {
             if (state is AuthError) {
               final errorMessage = state.message.toLowerCase();
-              final isConnectionError = errorMessage.contains('network') ||
+
+              // Check for explicit NETWORK_ERROR prefix or network-related keywords
+              final isConnectionError = state.message.startsWith('NETWORK_ERROR') ||
+                  errorMessage.contains('network') ||
                   errorMessage.contains('connection') ||
                   errorMessage.contains('internet') ||
                   errorMessage.contains('timeout') ||
@@ -149,7 +152,8 @@ class _LoginScreenState extends State<LoginScreen>
                   errorMessage.contains('unreachable') ||
                   errorMessage.contains('unavailable') ||
                   errorMessage.contains('failed to connect') ||
-                  errorMessage.contains('no address');
+                  errorMessage.contains('no address') ||
+                  errorMessage.contains('recaptcha');
 
               if (isConnectionError) {
                 // Show graceful connection error dialog with retry
