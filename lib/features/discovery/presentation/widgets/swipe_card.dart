@@ -3,8 +3,6 @@ import 'package:flutter/services.dart';
 import 'dart:math' as math;
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/membership_badge.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/discovery_card.dart';
 
 /// Swipeable Card Widget
@@ -92,7 +90,7 @@ class _SwipeCardState extends State<SwipeCard>
 
     return AnimatedContainer(
       duration: Duration(milliseconds: milliseconds),
-      curve: Curves.elasticOut,
+      curve: Curves.easeOutBack,
       transform: Matrix4.identity()
         ..translate(_position.dx, _position.dy)
         ..rotateZ(_angle),
@@ -116,7 +114,7 @@ class _SwipeCardState extends State<SwipeCard>
 
   Widget _buildCard(Size screenSize) {
     return Container(
-      height: screenSize.height * 0.65,
+      height: screenSize.height * 0.75,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
         boxShadow: [
@@ -130,51 +128,14 @@ class _SwipeCardState extends State<SwipeCard>
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            // Background image
-            widget.card.primaryPhoto != null
-                ? Image.network(
-                    widget.card.primaryPhoto!,
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) =>
-                        _buildPlaceholder(),
-                  )
-                : _buildPlaceholder(),
-
-            // Gradient overlay
-            Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.transparent,
-                    Colors.black.withOpacity(0.8),
-                  ],
-                  stops: const [0.5, 1.0],
-                ),
-              ),
-            ),
-
-            // Profile info
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: _buildProfileInfo(),
-            ),
-
-            // Match percentage badge
-            if (widget.card.isRecommended)
-              Positioned(
-                top: 16,
-                right: 16,
-                child: _buildMatchBadge(),
-              ),
-          ],
-        ),
+        child: widget.card.primaryPhoto != null
+            ? Image.network(
+                widget.card.primaryPhoto!,
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) =>
+                    _buildPlaceholder(),
+              )
+            : _buildPlaceholder(),
       ),
     );
   }
@@ -188,113 +149,6 @@ class _SwipeCardState extends State<SwipeCard>
           size: 100,
           color: AppColors.textTertiary,
         ),
-      ),
-    );
-  }
-
-  Widget _buildProfileInfo() {
-    return Padding(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            children: [
-              Text(
-                widget.card.displayName,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                '${widget.card.age}',
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              // Show membership badge if not free tier
-              if (widget.card.membershipTier != MembershipTier.free) ...[
-                const SizedBox(width: 8),
-                MembershipBadge(
-                  tier: widget.card.membershipTier,
-                  compact: true,
-                ),
-              ],
-            ],
-          ),
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              const Icon(
-                Icons.location_on,
-                color: Colors.white,
-                size: 16,
-              ),
-              const SizedBox(width: 4),
-              Text(
-                widget.card.distanceText,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                ),
-              ),
-            ],
-          ),
-          if (widget.card.bioPreview.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            Text(
-              widget.card.bioPreview,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 14,
-              ),
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _buildMatchBadge() {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: AppColors.richGold,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.richGold.withOpacity(0.5),
-            blurRadius: 8,
-            spreadRadius: 2,
-          ),
-        ],
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Icon(
-            Icons.auto_awesome,
-            color: AppColors.deepBlack,
-            size: 16,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            widget.card.matchPercentage,
-            style: const TextStyle(
-              color: AppColors.deepBlack,
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
       ),
     );
   }

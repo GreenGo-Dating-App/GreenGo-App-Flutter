@@ -62,10 +62,10 @@ class MainNavigationScreen extends StatefulWidget {
   });
 
   @override
-  State<MainNavigationScreen> createState() => _MainNavigationScreenState();
+  MainNavigationScreenState createState() => MainNavigationScreenState();
 }
 
-class _MainNavigationScreenState extends State<MainNavigationScreen>
+class MainNavigationScreenState extends State<MainNavigationScreen>
     with WidgetsBindingObserver {
   int _currentIndex = 0;
   bool _isCheckingProfile = true;
@@ -393,6 +393,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
     }
     setState(() {
       _currentIndex = index;
+    });
+  }
+
+  /// Refresh the discovery tab by rebuilding the DiscoveryScreen with a new key
+  void refreshDiscoveryTab() {
+    setState(() {
+      _currentIndex = 0;
+      _screens[0] = DiscoveryScreen(key: UniqueKey(), userId: widget.userId);
     });
   }
 

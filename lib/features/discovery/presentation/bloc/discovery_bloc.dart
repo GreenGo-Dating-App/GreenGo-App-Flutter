@@ -20,7 +20,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
   // Queue management
   static const int queueSize = 20;
-  static const int prefetchThreshold = 5;
+  static const int prefetchThreshold = 10;
   bool _isPrefetching = false;
   String? _currentUserId;
   MatchPreferences? _currentPreferences;

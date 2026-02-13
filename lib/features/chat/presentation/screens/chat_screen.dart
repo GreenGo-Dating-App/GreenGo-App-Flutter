@@ -63,6 +63,12 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
 
+  // Media preview state
+  File? _selectedImage;
+  File? _selectedVideo;
+  XFile? _selectedImageXFile;
+  XFile? _selectedVideoXFile;
+
   // Reply state
   Message? _replyingToMessage;
 
@@ -183,6 +189,20 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _sendMessage(BuildContext context) {
+    // If media is selected, send media (with optional caption)
+    if (_selectedImageXFile != null) {
+      _sendImageMessage(context, _selectedImageXFile!);
+      _clearSelectedMedia();
+      _messageController.clear();
+      return;
+    }
+    if (_selectedVideoXFile != null) {
+      _sendVideoMessage(context, _selectedVideoXFile!);
+      _clearSelectedMedia();
+      _messageController.clear();
+      return;
+    }
+
     final content = _messageController.text.trim();
     if (content.isEmpty) return;
 
@@ -422,8 +442,13 @@ class _ChatScreenState extends State<ChatScreen> {
         imageQuality: 85,
       );
 
-      if (image != null && context.mounted) {
-        _sendImageMessage(context, image);
+      if (image != null && mounted) {
+        setState(() {
+          _selectedImage = File(image.path);
+          _selectedImageXFile = image;
+          _selectedVideo = null;
+          _selectedVideoXFile = null;
+        });
       }
     } catch (e) {
       if (context.mounted) {
@@ -444,8 +469,13 @@ class _ChatScreenState extends State<ChatScreen> {
         maxDuration: const Duration(seconds: 60),
       );
 
-      if (video != null && context.mounted) {
-        _sendVideoMessage(context, video);
+      if (video != null && mounted) {
+        setState(() {
+          _selectedVideo = File(video.path);
+          _selectedVideoXFile = video;
+          _selectedImage = null;
+          _selectedImageXFile = null;
+        });
       }
     } catch (e) {
       if (context.mounted) {
@@ -848,6 +878,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
             // Reply preview
             _buildReplyPreview(),
+
+            // Media preview
+            _buildMediaPreview(),
 
             // Upload progress indicator
             if (_isUploadingMedia)
@@ -1296,6 +1329,78 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
       _replyingToMessage = null;
     });
+  }
+
+  /// Clear selected media
+  void _clearSelectedMedia() {
+    setState(() {
+      _selectedImage = null;
+      _selectedVideo = null;
+      _selectedImageXFile = null;
+      _selectedVideoXFile = null;
+    });
+  }
+
+  /// Build media preview widget above input
+  Widget _buildMediaPreview() {
+    if (_selectedImage == null && _selectedVideo == null) {
+      return const SizedBox.shrink();
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: const BoxDecoration(
+        color: AppColors.backgroundCard,
+        border: Border(
+          top: BorderSide(color: AppColors.divider, width: 1),
+        ),
+      ),
+      child: Stack(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: _selectedImage != null
+                ? Image.file(
+                    _selectedImage!,
+                    height: 120,
+                    width: 120,
+                    fit: BoxFit.cover,
+                  )
+                : Container(
+                    height: 120,
+                    width: 120,
+                    color: AppColors.backgroundDark,
+                    child: const Center(
+                      child: Icon(
+                        Icons.videocam,
+                        color: AppColors.textTertiary,
+                        size: 48,
+                      ),
+                    ),
+                  ),
+          ),
+          Positioned(
+            top: 4,
+            right: 4,
+            child: GestureDetector(
+              onTap: _clearSelectedMedia,
+              child: Container(
+                padding: const EdgeInsets.all(4),
+                decoration: const BoxDecoration(
+                  color: AppColors.errorRed,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.close,
+                  color: Colors.white,
+                  size: 16,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   /// Show forward dialog to select recipients

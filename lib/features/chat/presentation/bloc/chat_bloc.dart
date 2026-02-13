@@ -204,29 +204,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
             limitType: UsageLimitType.messages,
           );
         }
-
-        // Optimistic update: add message locally so it shows immediately
-        final optimisticMessage = Message(
-          messageId: 'optimistic_${DateTime.now().millisecondsSinceEpoch}',
-          matchId: _matchId!,
-          conversationId: _conversationId ?? '',
-          senderId: _currentUserId!,
-          receiverId: _otherUserId!,
-          content: event.content,
-          type: event.type,
-          sentAt: DateTime.now(),
-          status: MessageStatus.sending,
-        );
-
-        final updatedMessages = [optimisticMessage, ...currentState.messages];
-
-        emit(ChatLoaded(
-          conversation: currentState.conversation,
-          messages: updatedMessages,
-          currentUserId: currentState.currentUserId,
-          otherUserId: currentState.otherUserId,
-        ));
-        // Firestore stream will replace optimistic message with the real one
+        // Firestore stream delivers the real message via _onConversationLoaded
       },
     );
   }
@@ -612,12 +590,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to send reply: ${failure.toString()}'));
       },
       (_) {
-        emit(ChatLoaded(
-          conversation: currentState.conversation,
-          messages: currentState.messages,
-          currentUserId: currentState.currentUserId,
-          otherUserId: currentState.otherUserId,
-        ));
+        // Firestore stream delivers the real message via _onConversationLoaded
       },
     );
   }

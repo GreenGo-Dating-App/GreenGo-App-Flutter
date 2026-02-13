@@ -31,6 +31,7 @@ import 'edit_voice_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
+import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../../generated/app_localizations.dart';
 // Gamification/Coins screens disabled due to compile errors
 // import '../../../gamification/presentation/screens/achievements_screen.dart';
@@ -846,6 +847,8 @@ class EditProfileScreen extends StatelessWidget {
             backgroundColor: AppColors.richGold,
           ),
         );
+        // Refresh the discovery tab so it rebuilds with fresh data
+        context.findAncestorStateOfType<MainNavigationScreenState>()?.refreshDiscoveryTab();
       }
     } catch (e) {
       if (context.mounted) {
