@@ -969,7 +969,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       buttons.add(_buildSocialButton(
         icon: Icons.music_note,
         label: 'TikTok',
-        color: const Color(0xFF000000),
+        color: const Color(0xFFFFFFFF),
         url: socialLinks.tiktokUrl!,
       ));
     }
@@ -987,7 +987,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       buttons.add(_buildSocialButton(
         icon: Icons.alternate_email,
         label: 'X',
-        color: const Color(0xFF000000),
+        color: const Color(0xFFFFFFFF),
         url: socialLinks.xUrl!,
       ));
     }
