@@ -622,5 +622,17 @@
   "voiceDeleteRecording": "Eliminar Grabación",
   "voiceDeleteConfirm": "¿Estás seguro de que quieres eliminar tu presentación de voz?",
   "voiceMicrophonePermissionRequired": "Se requiere permiso del micrófono",
-  "listenMe": "¡Escúchame!"
+  "listenMe": "¡Escúchame!",
+  "changePassword": "Cambiar Contraseña",
+  "changePasswordDescription": "Por seguridad, verifica tu identidad antes de cambiar tu contraseña.",
+  "changePasswordCurrent": "Contraseña Actual",
+  "changePasswordNew": "Nueva Contraseña",
+  "changePasswordConfirm": "Confirmar Nueva Contraseña",
+  "changePasswordEmailHint": "Tu correo electrónico",
+  "changePasswordEmailConfirm": "Confirma tu dirección de correo electrónico",
+  "changePasswordEmailMismatch": "El correo no coincide con tu cuenta",
+  "changePasswordSuccess": "Contraseña cambiada exitosamente",
+  "changePasswordWrongCurrent": "La contraseña actual es incorrecta",
+  "changePasswordReauthRequired": "Por favor cierra sesión e inicia sesión nuevamente antes de cambiar tu contraseña",
+  "changePasswordSubtitle": "Actualiza la contraseña de tu cuenta"
 }

@@ -622,5 +622,17 @@
   "voiceDeleteRecording": "Aufnahme Löschen",
   "voiceDeleteConfirm": "Bist du sicher, dass du deine Sprachvorstellung löschen möchtest?",
   "voiceMicrophonePermissionRequired": "Mikrofonberechtigung erforderlich",
-  "listenMe": "Hör mich an!"
+  "listenMe": "Hör mich an!",
+  "changePassword": "Passwort ändern",
+  "changePasswordDescription": "Bitte bestätige aus Sicherheitsgründen deine Identität, bevor du dein Passwort änderst.",
+  "changePasswordCurrent": "Aktuelles Passwort",
+  "changePasswordNew": "Neues Passwort",
+  "changePasswordConfirm": "Neues Passwort bestätigen",
+  "changePasswordEmailHint": "Deine E-Mail",
+  "changePasswordEmailConfirm": "Bestätige deine E-Mail-Adresse",
+  "changePasswordEmailMismatch": "E-Mail stimmt nicht mit deinem Konto überein",
+  "changePasswordSuccess": "Passwort erfolgreich geändert",
+  "changePasswordWrongCurrent": "Aktuelles Passwort ist falsch",
+  "changePasswordReauthRequired": "Bitte melde dich ab und wieder an, bevor du dein Passwort änderst",
+  "changePasswordSubtitle": "Aktualisiere dein Kontopasswort"
 }

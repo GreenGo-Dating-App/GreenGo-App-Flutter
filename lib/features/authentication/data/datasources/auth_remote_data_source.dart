@@ -66,6 +66,9 @@ abstract class AuthRemoteDataSource {
     required String password,
   });
 
+  /// Update password
+  Future<void> updatePassword(String newPassword);
+
   /// Delete account
   Future<void> deleteAccount();
 
@@ -405,6 +408,22 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
       throw _handleFirebaseAuthException(e);
     } catch (e) {
       throw AuthenticationException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> updatePassword(String newPassword) async {
+    try {
+      final user = firebaseAuth.currentUser;
+      if (user == null) {
+        throw AuthenticationException('No user signed in');
+      }
+      await user.updatePassword(newPassword);
+    } on firebase_auth.FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    } catch (e) {
+      if (e is AuthenticationException) rethrow;
+      throw AuthenticationException('Failed to update password: ${e.toString()}');
     }
   }
 

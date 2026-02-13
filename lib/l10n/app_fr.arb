@@ -622,5 +622,17 @@
   "voiceDeleteRecording": "Supprimer l'Enregistrement",
   "voiceDeleteConfirm": "Êtes-vous sûr de vouloir supprimer votre présentation vocale ?",
   "voiceMicrophonePermissionRequired": "L'autorisation du microphone est requise",
-  "listenMe": "Écoute-moi !"
+  "listenMe": "Écoute-moi !",
+  "changePassword": "Changer le mot de passe",
+  "changePasswordDescription": "Pour des raisons de sécurité, veuillez vérifier votre identité avant de changer votre mot de passe.",
+  "changePasswordCurrent": "Mot de passe actuel",
+  "changePasswordNew": "Nouveau mot de passe",
+  "changePasswordConfirm": "Confirmer le nouveau mot de passe",
+  "changePasswordEmailHint": "Votre e-mail",
+  "changePasswordEmailConfirm": "Confirmez votre adresse e-mail",
+  "changePasswordEmailMismatch": "L'e-mail ne correspond pas à votre compte",
+  "changePasswordSuccess": "Mot de passe changé avec succès",
+  "changePasswordWrongCurrent": "Le mot de passe actuel est incorrect",
+  "changePasswordReauthRequired": "Veuillez vous déconnecter et vous reconnecter avant de changer votre mot de passe",
+  "changePasswordSubtitle": "Mettre à jour le mot de passe de votre compte"
 }

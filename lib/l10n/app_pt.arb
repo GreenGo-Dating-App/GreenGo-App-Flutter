@@ -622,5 +622,17 @@
   "voiceDeleteRecording": "Eliminar Gravação",
   "voiceDeleteConfirm": "Tens a certeza de que queres eliminar a tua apresentação de voz?",
   "voiceMicrophonePermissionRequired": "É necessária permissão do microfone",
-  "listenMe": "Ouve-me!"
+  "listenMe": "Ouve-me!",
+  "changePassword": "Alterar Palavra-passe",
+  "changePasswordDescription": "Por segurança, verifica a tua identidade antes de alterar a palavra-passe.",
+  "changePasswordCurrent": "Palavra-passe Atual",
+  "changePasswordNew": "Nova Palavra-passe",
+  "changePasswordConfirm": "Confirmar Nova Palavra-passe",
+  "changePasswordEmailHint": "O teu email",
+  "changePasswordEmailConfirm": "Confirma o teu endereço de email",
+  "changePasswordEmailMismatch": "O email não corresponde à tua conta",
+  "changePasswordSuccess": "Palavra-passe alterada com sucesso",
+  "changePasswordWrongCurrent": "A palavra-passe atual está incorreta",
+  "changePasswordReauthRequired": "Por favor, termina a sessão e inicia sessão novamente antes de alterar a palavra-passe",
+  "changePasswordSubtitle": "Atualiza a palavra-passe da tua conta"
 }

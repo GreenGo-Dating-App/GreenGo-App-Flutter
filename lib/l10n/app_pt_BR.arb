@@ -607,5 +607,17 @@
   "voiceDeleteRecording": "Excluir Gravação",
   "voiceDeleteConfirm": "Tem certeza de que deseja excluir sua apresentação de voz?",
   "voiceMicrophonePermissionRequired": "Permissão do microfone é necessária",
-  "listenMe": "Me escute!"
+  "listenMe": "Me escute!",
+  "changePassword": "Alterar Senha",
+  "changePasswordDescription": "Por segurança, verifique sua identidade antes de alterar sua senha.",
+  "changePasswordCurrent": "Senha Atual",
+  "changePasswordNew": "Nova Senha",
+  "changePasswordConfirm": "Confirmar Nova Senha",
+  "changePasswordEmailHint": "Seu email",
+  "changePasswordEmailConfirm": "Confirme seu endereço de email",
+  "changePasswordEmailMismatch": "O email não corresponde à sua conta",
+  "changePasswordSuccess": "Senha alterada com sucesso",
+  "changePasswordWrongCurrent": "A senha atual está incorreta",
+  "changePasswordReauthRequired": "Por favor, saia e entre novamente antes de alterar sua senha",
+  "changePasswordSubtitle": "Atualize a senha da sua conta"
 }

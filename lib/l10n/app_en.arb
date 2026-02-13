@@ -648,5 +648,17 @@
   "voiceDeleteRecording": "Delete Recording",
   "voiceDeleteConfirm": "Are you sure you want to delete your voice introduction?",
   "voiceMicrophonePermissionRequired": "Microphone permission is required",
-  "listenMe": "Listen me!"
+  "listenMe": "Listen me!",
+  "changePassword": "Change Password",
+  "changePasswordDescription": "For security, please verify your identity before changing your password.",
+  "changePasswordCurrent": "Current Password",
+  "changePasswordNew": "New Password",
+  "changePasswordConfirm": "Confirm New Password",
+  "changePasswordEmailHint": "Your email",
+  "changePasswordEmailConfirm": "Confirm your email address",
+  "changePasswordEmailMismatch": "Email does not match your account",
+  "changePasswordSuccess": "Password changed successfully",
+  "changePasswordWrongCurrent": "Current password is incorrect",
+  "changePasswordReauthRequired": "Please log out and log in again before changing your password",
+  "changePasswordSubtitle": "Update your account password"
 }

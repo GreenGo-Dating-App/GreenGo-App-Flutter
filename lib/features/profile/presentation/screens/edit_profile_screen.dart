@@ -29,6 +29,7 @@ import 'edit_nickname_screen.dart';
 import 'edit_voice_screen.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../authentication/presentation/screens/change_password_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 // Gamification/Coins screens disabled due to compile errors
 // import '../../../gamification/presentation/screens/achievements_screen.dart';
@@ -234,6 +235,16 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _showLanguageDialog(context, languageProvider),
                       );
                     },
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Change Password Section
+                  EditSectionCard(
+                    title: 'Change Password',
+                    subtitle: 'Update your account password',
+                    icon: Icons.lock_outline,
+                    onTap: () => _navigateToChangePassword(context),
                   ),
 
                   const SizedBox(height: 32),
@@ -484,6 +495,14 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  void _navigateToChangePassword(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => const ChangePasswordScreen(),
+      ),
+    );
   }
 
   void _navigateToSupport(BuildContext context, Profile currentProfile) {
