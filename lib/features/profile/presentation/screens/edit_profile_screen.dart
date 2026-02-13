@@ -268,6 +268,15 @@ class EditProfileScreen extends StatelessWidget {
                     icon: Icons.support_agent,
                     onTap: () => _navigateToSupport(context, activeProfile),
                   ),
+                  const SizedBox(height: 16),
+
+                  // Restart Discovery
+                  EditSectionCard(
+                    title: 'Restart Discovery',
+                    subtitle: 'Reset all swipes and start fresh',
+                    icon: Icons.refresh,
+                    onTap: () => _showRestartDiscoveryDialog(context, activeProfile),
+                  ),
 
                   // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
                   // TODO: Re-enable when gamification/coins features are fixed
@@ -761,5 +770,98 @@ class EditProfileScreen extends StatelessWidget {
     context.read<AuthBloc>().add(const AuthSignOutRequested());
     // Navigate to login screen and clear navigation stack
     Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+  }
+
+  void _showRestartDiscoveryDialog(BuildContext context, Profile profile) {
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Restart Discovery',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: const Text(
+          'This will erase all your swipes (likes, nopes, super likes) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.',
+          style: TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext),
+            child: Text(AppLocalizations.of(context)!.cancel),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(dialogContext);
+              _restartDiscovery(context, profile);
+            },
+            child: const Text(
+              'Restart',
+              style: TextStyle(color: AppColors.richGold),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _restartDiscovery(BuildContext context, Profile profile) async {
+    try {
+      // Show loading indicator
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (ctx) => const Center(
+          child: CircularProgressIndicator(color: AppColors.richGold),
+        ),
+      );
+
+      // Delete all swipe records for this user
+      final swipesQuery = await FirebaseFirestore.instance
+          .collection('swipes')
+          .where('userId', isEqualTo: profile.userId)
+          .get();
+
+      // Delete in batches
+      final batch = FirebaseFirestore.instance.batch();
+      for (final doc in swipesQuery.docs) {
+        batch.delete(doc.reference);
+      }
+      await batch.commit();
+
+      // Also reset daily swipe usage counter
+      final todayKey = _getTodayKey();
+      await FirebaseFirestore.instance
+          .collection('dailyUsage')
+          .doc(profile.userId)
+          .collection('days')
+          .doc(todayKey)
+          .set({'swipeCount': 0}, SetOptions(merge: true));
+
+      if (context.mounted) {
+        Navigator.pop(context); // Close loading
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Discovery restarted! You can now see all profiles again.'),
+            backgroundColor: AppColors.richGold,
+          ),
+        );
+      }
+    } catch (e) {
+      if (context.mounted) {
+        Navigator.pop(context); // Close loading
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to restart discovery: $e'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  String _getTodayKey() {
+    final now = DateTime.now();
+    return '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
   }
 }
