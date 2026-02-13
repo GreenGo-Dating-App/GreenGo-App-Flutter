@@ -114,6 +114,23 @@ class TranslationService {
     return true;
   }
 
+  /// Batch translate multiple texts
+  Future<Map<String, String>> batchTranslate({
+    required List<String> texts,
+    required String sourceLanguage,
+    required String targetLanguage,
+  }) async {
+    final results = <String, String>{};
+    for (final text in texts) {
+      results[text] = await translate(
+        text: text,
+        sourceLanguage: sourceLanguage,
+        targetLanguage: targetLanguage,
+      );
+    }
+    return results;
+  }
+
   /// Clear translation cache
   void clearCache() {
     _translationCache.clear();

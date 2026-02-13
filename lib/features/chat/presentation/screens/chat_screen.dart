@@ -65,6 +65,8 @@ class _ChatScreenState extends State<ChatScreen> {
   // Reply state
   Message? _replyingToMessage;
 
+  LanguageProvider? _languageProvider;
+
   @override
   void initState() {
     super.initState();
@@ -73,7 +75,31 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Listen to language changes for retranslation
+    final provider = Provider.of<LanguageProvider>(context, listen: false);
+    if (_languageProvider != provider) {
+      _languageProvider?.removeListener(_onLanguageChanged);
+      _languageProvider = provider;
+      _languageProvider!.addListener(_onLanguageChanged);
+    }
+  }
+
+  void _onLanguageChanged() {
+    // Clear caches and retranslate
+    _translatedMessages.clear();
+    _translationService.clearCache();
+    _userLanguage = _languageProvider!.currentLocale.languageCode;
+    _hasCheckedModels = false;
+    if (mounted) {
+      setState(() {});
+    }
+  }
+
+  @override
   void dispose() {
+    _languageProvider?.removeListener(_onLanguageChanged);
     _messageController.dispose();
     _scrollController.dispose();
     super.dispose();
