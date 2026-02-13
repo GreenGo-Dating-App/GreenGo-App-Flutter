@@ -15,6 +15,7 @@ class SwipeCard extends StatefulWidget {
   final Function(SwipeDirection)? onSwipe;
   final VoidCallback? onTap;
   final bool isFront;
+  final ValueChanged<double>? onDragProgress;
 
   const SwipeCard({
     super.key,
@@ -22,6 +23,7 @@ class SwipeCard extends StatefulWidget {
     this.onSwipe,
     this.onTap,
     this.isFront = false,
+    this.onDragProgress,
   });
 
   @override
@@ -46,7 +48,7 @@ class _SwipeCardState extends State<SwipeCard>
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 400),
       vsync: this,
     );
 
@@ -86,11 +88,11 @@ class _SwipeCardState extends State<SwipeCard>
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    final milliseconds = _isDragging ? 0 : 400;
+    final milliseconds = _isDragging ? 0 : 500;
 
     return AnimatedContainer(
       duration: Duration(milliseconds: milliseconds),
-      curve: Curves.easeInOut,
+      curve: Curves.elasticOut,
       transform: Matrix4.identity()
         ..translate(_position.dx, _position.dy)
         ..rotateZ(_angle),
@@ -494,6 +496,10 @@ class _SwipeCardState extends State<SwipeCard>
       _angle = (x / 1000).clamp(-0.3, 0.3);
     });
 
+    // Report drag progress for back card parallax
+    final progress = (_position.dx.abs() / (screenWidth * 0.25)).clamp(0.0, 1.0);
+    widget.onDragProgress?.call(progress);
+
     // Trigger haptic feedback when crossing threshold
     final threshold = screenWidth * 0.15;
     if (!_hasTriggeredHaptic &&
@@ -574,7 +580,7 @@ class _SwipeCardState extends State<SwipeCard>
       end: endPosition,
     ).animate(CurvedAnimation(
       parent: _animationController,
-      curve: Curves.easeOut,
+      curve: Curves.fastOutSlowIn,
     ));
 
     // FIX: Add listener BEFORE forward() to ensure animation updates are captured
@@ -597,6 +603,7 @@ class _SwipeCardState extends State<SwipeCard>
       _position = Offset.zero;
       _angle = 0;
     });
+    widget.onDragProgress?.call(0.0);
   }
 }
 

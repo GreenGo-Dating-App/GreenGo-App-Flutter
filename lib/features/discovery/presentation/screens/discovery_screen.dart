@@ -39,10 +39,25 @@ class DiscoveryScreen extends StatelessWidget {
   }
 }
 
-class _DiscoveryScreenContent extends StatelessWidget {
+class _DiscoveryScreenContent extends StatefulWidget {
   final String userId;
 
   const _DiscoveryScreenContent({required this.userId});
+
+  @override
+  State<_DiscoveryScreenContent> createState() => _DiscoveryScreenContentState();
+}
+
+class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
+  final ValueNotifier<double> _dragProgress = ValueNotifier(0.0);
+
+  String get userId => widget.userId;
+
+  @override
+  void dispose() {
+    _dragProgress.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -245,10 +260,25 @@ class _DiscoveryScreenContent extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        // Next card (behind)
+        // Next card (behind) with parallax effect
         if (currentIndex + 1 < cards.length)
-          Padding(
-            padding: const EdgeInsets.only(top: 16),
+          ValueListenableBuilder<double>(
+            valueListenable: _dragProgress,
+            builder: (context, progress, child) {
+              final scale = 0.92 + (0.08 * progress); // 0.92 → 1.0
+              final offset = 30.0 * (1.0 - progress); // 30 → 0
+              final opacity = 0.6 + (0.4 * progress); // 0.6 → 1.0
+              return Transform.translate(
+                offset: Offset(0, offset),
+                child: Transform.scale(
+                  scale: scale,
+                  child: Opacity(
+                    opacity: opacity,
+                    child: child!,
+                  ),
+                ),
+              );
+            },
             child: SwipeCard(
               card: cards[currentIndex + 1],
               isFront: false,
@@ -259,6 +289,9 @@ class _DiscoveryScreenContent extends StatelessWidget {
         SwipeCard(
           card: cards[currentIndex],
           isFront: true,
+          onDragProgress: (progress) {
+            _dragProgress.value = progress;
+          },
           onSwipe: enabled
               ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
               : null,
