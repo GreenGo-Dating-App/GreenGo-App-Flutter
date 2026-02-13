@@ -94,27 +94,26 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  const Color(0xFFFFD700).withValues(alpha: 0.2),
-                  const Color(0xFFB8860B).withValues(alpha: 0.1),
-                ],
-              ),
+              color: const Color(0xFF1A1A1A),
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
-                color: const Color(0xFFFFD700).withValues(alpha: 0.5),
+                color: const Color(0xFFFFD700),
                 width: 1.5,
               ),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text('🪙', style: TextStyle(fontSize: 16)),
+                const Icon(
+                  Icons.monetization_on,
+                  color: Color(0xFFFFD700),
+                  size: 18,
+                ),
                 const SizedBox(width: 6),
                 Text(
                   _formatCoinBalance(_currentCoinBalance),
                   style: const TextStyle(
-                    color: Color(0xFFFFD700),
+                    color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
