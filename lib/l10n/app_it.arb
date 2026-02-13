@@ -641,5 +641,6 @@
   "voiceUploadFailed": "Caricamento della registrazione vocale fallito",
   "voiceDeleteRecording": "Elimina Registrazione",
   "voiceDeleteConfirm": "Sei sicuro di voler eliminare la tua presentazione vocale?",
-  "voiceMicrophonePermissionRequired": "È richiesto il permesso del microfono"
+  "voiceMicrophonePermissionRequired": "È richiesto il permesso del microfono",
+  "listenMe": "Ascoltami!"
 }

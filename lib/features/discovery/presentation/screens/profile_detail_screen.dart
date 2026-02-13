@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:audioplayers/audioplayers.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -44,15 +45,40 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   Map<int, int> _photoLikeCounts = {};
   bool _showLikeAnimation = false;
 
+  // Voice playback state
+  final AudioPlayer _audioPlayer = AudioPlayer();
+  bool _isPlayingVoice = false;
+  Duration _voiceDuration = Duration.zero;
+  Duration _voicePosition = Duration.zero;
+
   @override
   void initState() {
     super.initState();
     _loadPhotoLikes();
+    _setupVoicePlayer();
+  }
+
+  void _setupVoicePlayer() {
+    _audioPlayer.onDurationChanged.listen((duration) {
+      if (mounted) setState(() => _voiceDuration = duration);
+    });
+    _audioPlayer.onPositionChanged.listen((position) {
+      if (mounted) setState(() => _voicePosition = position);
+    });
+    _audioPlayer.onPlayerComplete.listen((_) {
+      if (mounted) {
+        setState(() {
+          _isPlayingVoice = false;
+          _voicePosition = Duration.zero;
+        });
+      }
+    });
   }
 
   @override
   void dispose() {
     _pageController.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -173,6 +199,26 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     } catch (e) {
       debugPrint('Error sending photo like notification: $e');
     }
+  }
+
+  Future<void> _toggleVoicePlayback() async {
+    if (_isPlayingVoice) {
+      await _audioPlayer.pause();
+      setState(() => _isPlayingVoice = false);
+    } else {
+      if (_voicePosition == Duration.zero) {
+        await _audioPlayer.play(UrlSource(widget.profile.voiceRecordingUrl!));
+      } else {
+        await _audioPlayer.resume();
+      }
+      setState(() => _isPlayingVoice = true);
+    }
+  }
+
+  String _formatVoiceDuration(Duration duration) {
+    final minutes = duration.inMinutes;
+    final seconds = duration.inSeconds % 60;
+    return '$minutes:${seconds.toString().padLeft(2, '0')}';
   }
 
   /// Check if this is self-view mode (user viewing their own profile)
@@ -334,6 +380,13 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                               height: 1.5,
                             ),
                           ),
+                          const SizedBox(height: 24),
+                        ],
+
+                        // Voice Recording - "Listen me!"
+                        if (widget.profile.voiceRecordingUrl != null &&
+                            widget.profile.voiceRecordingUrl!.isNotEmpty) ...[
+                          _buildVoicePlaybackCard(),
                           const SizedBox(height: 24),
                         ],
 
@@ -774,6 +827,117 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     } else {
       return '${date.month}/${date.day}/${date.year}';
     }
+  }
+
+  Widget _buildVoicePlaybackCard() {
+    final progress = _voiceDuration.inMilliseconds > 0
+        ? _voicePosition.inMilliseconds / _voiceDuration.inMilliseconds
+        : 0.0;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            AppColors.richGold.withOpacity(0.15),
+            AppColors.richGold.withOpacity(0.05),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
+      ),
+      child: Row(
+        children: [
+          // Play/Pause button
+          GestureDetector(
+            onTap: _toggleVoicePlayback,
+            child: Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                color: AppColors.richGold,
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.richGold.withOpacity(0.4),
+                    blurRadius: 8,
+                    spreadRadius: 1,
+                  ),
+                ],
+              ),
+              child: Icon(
+                _isPlayingVoice ? Icons.pause : Icons.play_arrow,
+                color: AppColors.deepBlack,
+                size: 28,
+              ),
+            ),
+          ),
+          const SizedBox(width: 14),
+          // Waveform and label
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    const Icon(
+                      Icons.mic,
+                      color: AppColors.richGold,
+                      size: 16,
+                    ),
+                    const SizedBox(width: 6),
+                    const Text(
+                      'Listen me!',
+                      style: TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Spacer(),
+                    Text(
+                      _isPlayingVoice || _voicePosition > Duration.zero
+                          ? '${_formatVoiceDuration(_voicePosition)} / ${_formatVoiceDuration(_voiceDuration)}'
+                          : _voiceDuration > Duration.zero
+                              ? _formatVoiceDuration(_voiceDuration)
+                              : '',
+                      style: TextStyle(
+                        color: AppColors.textTertiary,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                // Waveform bars
+                SizedBox(
+                  height: 24,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(28, (index) {
+                      final isActive = index / 28 <= progress;
+                      final height = 6.0 + (index % 7) * 2.5;
+                      return Container(
+                        width: 3,
+                        height: height,
+                        decoration: BoxDecoration(
+                          color: isActive
+                              ? AppColors.richGold
+                              : AppColors.richGold.withOpacity(0.25),
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      );
+                    }),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   List<Widget> _buildSocialLinkButtons() {

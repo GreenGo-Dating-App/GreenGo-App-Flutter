@@ -647,5 +647,6 @@
   "voiceUploadFailed": "Failed to upload voice recording",
   "voiceDeleteRecording": "Delete Recording",
   "voiceDeleteConfirm": "Are you sure you want to delete your voice introduction?",
-  "voiceMicrophonePermissionRequired": "Microphone permission is required"
+  "voiceMicrophonePermissionRequired": "Microphone permission is required",
+  "listenMe": "Listen me!"
 }

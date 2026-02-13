@@ -621,5 +621,6 @@
   "voiceUploadFailed": "Falha ao carregar gravação de voz",
   "voiceDeleteRecording": "Eliminar Gravação",
   "voiceDeleteConfirm": "Tens a certeza de que queres eliminar a tua apresentação de voz?",
-  "voiceMicrophonePermissionRequired": "É necessária permissão do microfone"
+  "voiceMicrophonePermissionRequired": "É necessária permissão do microfone",
+  "listenMe": "Ouve-me!"
 }

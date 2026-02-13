@@ -621,5 +621,6 @@
   "voiceUploadFailed": "Échec du téléversement de l'enregistrement vocal",
   "voiceDeleteRecording": "Supprimer l'Enregistrement",
   "voiceDeleteConfirm": "Êtes-vous sûr de vouloir supprimer votre présentation vocale ?",
-  "voiceMicrophonePermissionRequired": "L'autorisation du microphone est requise"
+  "voiceMicrophonePermissionRequired": "L'autorisation du microphone est requise",
+  "listenMe": "Écoute-moi !"
 }

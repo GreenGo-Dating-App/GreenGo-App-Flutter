@@ -621,5 +621,6 @@
   "voiceUploadFailed": "Error al subir la grabación de voz",
   "voiceDeleteRecording": "Eliminar Grabación",
   "voiceDeleteConfirm": "¿Estás seguro de que quieres eliminar tu presentación de voz?",
-  "voiceMicrophonePermissionRequired": "Se requiere permiso del micrófono"
+  "voiceMicrophonePermissionRequired": "Se requiere permiso del micrófono",
+  "listenMe": "¡Escúchame!"
 }

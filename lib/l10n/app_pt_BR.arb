@@ -606,5 +606,6 @@
   "voiceUploadFailed": "Falha ao enviar gravação de voz",
   "voiceDeleteRecording": "Excluir Gravação",
   "voiceDeleteConfirm": "Tem certeza de que deseja excluir sua apresentação de voz?",
-  "voiceMicrophonePermissionRequired": "Permissão do microfone é necessária"
+  "voiceMicrophonePermissionRequired": "Permissão do microfone é necessária",
+  "listenMe": "Me escute!"
 }
