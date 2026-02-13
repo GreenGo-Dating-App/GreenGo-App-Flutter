@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import 'subscription_celebration_screen.dart';
 
 /// Animated purchase success dialog
 /// Shown after successful coin or subscription purchase
@@ -46,22 +47,16 @@ class PurchaseSuccessDialog extends StatefulWidget {
     );
   }
 
-  /// Show dialog for subscription purchase success
+  /// Show full-screen celebration for subscription purchase success
   static Future<void> showSubscriptionActivated(
     BuildContext context, {
     required String tierName,
     VoidCallback? onDismiss,
   }) {
-    return showDialog(
-      context: context,
-      barrierDismissible: true,
-      builder: (context) => PurchaseSuccessDialog(
-        title: 'Welcome to $tierName!',
-        message: 'Your premium membership is now active. Enjoy all your new features!',
-        icon: Icons.workspace_premium,
-        iconColor: AppColors.richGold,
-        onDismiss: onDismiss,
-      ),
+    return SubscriptionCelebrationScreen.show(
+      context,
+      tierName: tierName,
+      onComplete: onDismiss,
     );
   }
 
