@@ -36,11 +36,11 @@ class SocialLinks extends Equatable {
 
   /// Check if any social link is set
   bool get hasAnyLink =>
-      facebook != null ||
-      instagram != null ||
-      tiktok != null ||
-      linkedin != null ||
-      x != null;
+      (facebook != null && facebook!.isNotEmpty) ||
+      (instagram != null && instagram!.isNotEmpty) ||
+      (tiktok != null && tiktok!.isNotEmpty) ||
+      (linkedin != null && linkedin!.isNotEmpty) ||
+      (x != null && x!.isNotEmpty);
 
   /// Get the count of linked social profiles
   int get linkedCount {

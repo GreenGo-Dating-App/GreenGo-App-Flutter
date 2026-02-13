@@ -782,48 +782,48 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
     final buttons = <Widget>[];
 
-    if (socialLinks.instagram != null) {
+    if (socialLinks.instagramUrl != null) {
       buttons.add(_buildSocialButton(
         icon: Icons.camera_alt,
         label: 'Instagram',
         color: const Color(0xFFE4405F),
-        url: 'https://instagram.com/${socialLinks.instagram}',
+        url: socialLinks.instagramUrl!,
       ));
     }
 
-    if (socialLinks.facebook != null) {
+    if (socialLinks.facebookUrl != null) {
       buttons.add(_buildSocialButton(
         icon: Icons.facebook,
         label: 'Facebook',
         color: const Color(0xFF1877F2),
-        url: socialLinks.facebook!,
+        url: socialLinks.facebookUrl!,
       ));
     }
 
-    if (socialLinks.tiktok != null) {
+    if (socialLinks.tiktokUrl != null) {
       buttons.add(_buildSocialButton(
         icon: Icons.music_note,
         label: 'TikTok',
         color: const Color(0xFF000000),
-        url: 'https://tiktok.com/@${socialLinks.tiktok}',
+        url: socialLinks.tiktokUrl!,
       ));
     }
 
-    if (socialLinks.linkedin != null) {
+    if (socialLinks.linkedinUrl != null) {
       buttons.add(_buildSocialButton(
         icon: Icons.work,
         label: 'LinkedIn',
         color: const Color(0xFF0A66C2),
-        url: socialLinks.linkedin!,
+        url: socialLinks.linkedinUrl!,
       ));
     }
 
-    if (socialLinks.x != null) {
+    if (socialLinks.xUrl != null) {
       buttons.add(_buildSocialButton(
         icon: Icons.alternate_email,
         label: 'X',
         color: const Color(0xFF000000),
-        url: 'https://x.com/${socialLinks.x}',
+        url: socialLinks.xUrl!,
       ));
     }
 
