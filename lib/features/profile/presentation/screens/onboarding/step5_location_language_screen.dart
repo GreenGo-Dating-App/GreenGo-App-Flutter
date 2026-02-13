@@ -117,7 +117,7 @@ class _Step5LocationLanguageScreenState
         final placemark = placemarks.first;
         final city = placemark.locality ?? placemark.subAdministrativeArea ?? '';
         final country = placemark.country ?? '';
-        final displayAddress = '${placemark.locality}, ${placemark.country}';
+        final displayAddress = '$city, $country';
 
         setState(() {
           _selectedLocation = location_entity.Location(
