@@ -211,6 +211,13 @@ class SubscriptionRemoteDataSource {
       'verificationMethod': 'local_fallback',
     });
 
+    // Update the user's profile membershipTier
+    await firestore.collection('profiles').doc(userId).update({
+      'membershipTier': tierName.toUpperCase(),
+      'membershipStartDate': Timestamp.fromDate(now),
+      'membershipEndDate': Timestamp.fromDate(endDate),
+    });
+
     return true;
   }
 
@@ -371,6 +378,16 @@ class SubscriptionRemoteDataSource {
             );
 
             if (verified) {
+              // Update user's profile membershipTier
+              final tierName = _getTierFromProductId(purchase.productID);
+              final now = DateTime.now();
+              final endDate = DateTime(now.year, now.month + 1, now.day);
+              await firestore.collection('profiles').doc(userId).update({
+                'membershipTier': tierName.toUpperCase(),
+                'membershipStartDate': Timestamp.fromDate(now),
+                'membershipEndDate': Timestamp.fromDate(endDate),
+              });
+
               // Complete the purchase with the store
               await completePurchase(purchase);
               _onPurchaseSuccess?.call(purchase);
