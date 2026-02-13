@@ -48,6 +48,7 @@ import '../../../gamification/presentation/bloc/gamification_state.dart';
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
 // App Tour imports
 import '../../../app_tour/presentation/widgets/tour_overlay.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Main Navigation Screen
 ///
@@ -495,42 +496,42 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
           type: BottomNavigationBarType.fixed,
           elevation: 0,
           items: [
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.explore_outlined),
-              activeIcon: Icon(Icons.explore),
-              label: 'Discover',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.explore_outlined),
+              activeIcon: const Icon(Icons.explore),
+              label: AppLocalizations.of(context)!.discover,
             ),
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_outline),
-              activeIcon: Icon(Icons.favorite),
-              label: 'Matches',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.favorite_outline),
+              activeIcon: const Icon(Icons.favorite),
+              label: AppLocalizations.of(context)!.matches,
             ),
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.chat_bubble_outline),
-              activeIcon: Icon(Icons.chat_bubble),
-              label: 'Messages',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.chat_bubble_outline),
+              activeIcon: const Icon(Icons.chat_bubble),
+              label: AppLocalizations.of(context)!.messages,
             ),
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.store_outlined),
-              activeIcon: Icon(Icons.store),
-              label: 'Shop',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.store_outlined),
+              activeIcon: const Icon(Icons.store),
+              label: AppLocalizations.of(context)!.shop,
             ),
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.emoji_events_outlined),
-              activeIcon: Icon(Icons.emoji_events),
-              label: 'Progress',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.emoji_events_outlined),
+              activeIcon: const Icon(Icons.emoji_events),
+              label: AppLocalizations.of(context)!.progress,
             ),
             // Only show Learn tab if language learning is enabled
             if (featureFlags.languageLearningEnabled)
-              const BottomNavigationBarItem(
-                icon: Icon(Icons.school_outlined),
-                activeIcon: Icon(Icons.school),
-                label: 'Learn',
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.school_outlined),
+                activeIcon: const Icon(Icons.school),
+                label: AppLocalizations.of(context)!.learn,
               ),
-            const BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline),
-              activeIcon: Icon(Icons.person),
-              label: 'Profile',
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.person_outline),
+              activeIcon: const Icon(Icons.person),
+              label: AppLocalizations.of(context)!.profile,
             ),
           ],
         ),
@@ -557,27 +558,27 @@ class _MainNavigationScreenState extends State<MainNavigationScreen>
           context: context,
           builder: (context) => AlertDialog(
             backgroundColor: AppColors.backgroundCard,
-            title: const Text(
-              'Exit App?',
-              style: TextStyle(color: AppColors.textPrimary),
+            title: Text(
+              AppLocalizations.of(context)!.exitApp,
+              style: const TextStyle(color: AppColors.textPrimary),
             ),
-            content: const Text(
-              'Are you sure you want to exit GreenGo?',
-              style: TextStyle(color: AppColors.textSecondary),
+            content: Text(
+              AppLocalizations.of(context)!.exitAppConfirmation,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context, false),
-                child: const Text(
-                  'Cancel',
-                  style: TextStyle(color: AppColors.textSecondary),
+                child: Text(
+                  AppLocalizations.of(context)!.cancel,
+                  style: const TextStyle(color: AppColors.textSecondary),
                 ),
               ),
               TextButton(
                 onPressed: () => Navigator.pop(context, true),
-                child: const Text(
-                  'Exit',
-                  style: TextStyle(color: AppColors.richGold),
+                child: Text(
+                  AppLocalizations.of(context)!.exit,
+                  style: const TextStyle(color: AppColors.richGold),
                 ),
               ),
             ],

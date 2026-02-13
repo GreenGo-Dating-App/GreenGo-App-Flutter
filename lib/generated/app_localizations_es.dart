@@ -1346,4 +1346,259 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get voiceMicrophonePermissionRequired =>
       'Se requiere permiso del micrófono';
+
+  @override
+  String get listenMe => '¡Escúchame!';
+
+  @override
+  String get changePassword => 'Cambiar Contraseña';
+
+  @override
+  String get changePasswordDescription =>
+      'Por seguridad, verifica tu identidad antes de cambiar tu contraseña.';
+
+  @override
+  String get changePasswordCurrent => 'Contraseña Actual';
+
+  @override
+  String get changePasswordNew => 'Nueva Contraseña';
+
+  @override
+  String get changePasswordConfirm => 'Confirmar Nueva Contraseña';
+
+  @override
+  String get changePasswordEmailHint => 'Tu correo electrónico';
+
+  @override
+  String get changePasswordEmailConfirm =>
+      'Confirma tu dirección de correo electrónico';
+
+  @override
+  String get changePasswordEmailMismatch =>
+      'El correo no coincide con tu cuenta';
+
+  @override
+  String get changePasswordSuccess => 'Contraseña cambiada exitosamente';
+
+  @override
+  String get changePasswordWrongCurrent => 'La contraseña actual es incorrecta';
+
+  @override
+  String get changePasswordReauthRequired =>
+      'Por favor cierra sesión e inicia sesión nuevamente antes de cambiar tu contraseña';
+
+  @override
+  String get changePasswordSubtitle => 'Actualiza la contraseña de tu cuenta';
+
+  @override
+  String get shop => 'Tienda';
+
+  @override
+  String get progress => 'Progreso';
+
+  @override
+  String get learn => 'Aprender';
+
+  @override
+  String get exitApp => '¿Salir de la App?';
+
+  @override
+  String get exitAppConfirmation =>
+      '¿Estás seguro de que quieres salir de GreenGo?';
+
+  @override
+  String get exit => 'Salir';
+
+  @override
+  String get letsChat => '¡Hablemos!';
+
+  @override
+  String get couldNotOpenLink => 'No se pudo abrir el enlace';
+
+  @override
+  String get helpAndSupport => 'Ayuda y Soporte';
+
+  @override
+  String get supportCenter => 'Centro de Soporte';
+
+  @override
+  String get supportCenterSubtitle =>
+      'Obtener ayuda, reportar problemas, contáctanos';
+
+  @override
+  String get editInterests => 'Editar Intereses';
+
+  @override
+  String interestsSelectedCount(int selected, int max) {
+    return '$selected/$max intereses seleccionados';
+  }
+
+  @override
+  String selectAtLeastInterests(int count) {
+    return 'Selecciona al menos $count intereses';
+  }
+
+  @override
+  String get greatInterestsHelp =>
+      '¡Genial! Tus intereses nos ayudan a encontrar mejores coincidencias';
+
+  @override
+  String maximumInterestsAllowed(int count) {
+    return 'Máximo $count intereses permitidos';
+  }
+
+  @override
+  String get connectSocialAccounts => 'Conecta tus cuentas sociales';
+
+  @override
+  String get helpOthersFindYou =>
+      'Ayuda a otros a encontrarte en redes sociales';
+
+  @override
+  String get socialProfilesTip =>
+      'Tus perfiles sociales serán visibles en tu perfil de citas y ayudarán a otros a verificar tu identidad.';
+
+  @override
+  String get usernameOrProfileUrl => 'Nombre de usuario o URL del perfil';
+
+  @override
+  String get usernameWithoutAt => 'Nombre de usuario (sin @)';
+
+  @override
+  String get voiceIntroduction => 'Presentación de Voz';
+
+  @override
+  String get interestTravel => 'Viajes';
+
+  @override
+  String get interestPhotography => 'Fotografía';
+
+  @override
+  String get interestMusic => 'Música';
+
+  @override
+  String get interestFitness => 'Fitness';
+
+  @override
+  String get interestCooking => 'Cocina';
+
+  @override
+  String get interestReading => 'Lectura';
+
+  @override
+  String get interestMovies => 'Películas';
+
+  @override
+  String get interestGaming => 'Videojuegos';
+
+  @override
+  String get interestArt => 'Arte';
+
+  @override
+  String get interestDance => 'Baile';
+
+  @override
+  String get interestYoga => 'Yoga';
+
+  @override
+  String get interestHiking => 'Senderismo';
+
+  @override
+  String get interestSwimming => 'Natación';
+
+  @override
+  String get interestCycling => 'Ciclismo';
+
+  @override
+  String get interestRunning => 'Correr';
+
+  @override
+  String get interestSports => 'Deportes';
+
+  @override
+  String get interestFashion => 'Moda';
+
+  @override
+  String get interestTechnology => 'Tecnología';
+
+  @override
+  String get interestWriting => 'Escritura';
+
+  @override
+  String get interestCoffee => 'Café';
+
+  @override
+  String get interestWine => 'Vino';
+
+  @override
+  String get interestBeer => 'Cerveza';
+
+  @override
+  String get interestFood => 'Comida';
+
+  @override
+  String get interestVegetarian => 'Vegetariano';
+
+  @override
+  String get interestVegan => 'Vegano';
+
+  @override
+  String get interestPets => 'Mascotas';
+
+  @override
+  String get interestDogs => 'Perros';
+
+  @override
+  String get interestCats => 'Gatos';
+
+  @override
+  String get interestNature => 'Naturaleza';
+
+  @override
+  String get interestBeach => 'Playa';
+
+  @override
+  String get interestMountains => 'Montañas';
+
+  @override
+  String get interestCamping => 'Camping';
+
+  @override
+  String get interestSurfing => 'Surf';
+
+  @override
+  String get interestSkiing => 'Esquí';
+
+  @override
+  String get interestSnowboarding => 'Snowboard';
+
+  @override
+  String get interestMeditation => 'Meditación';
+
+  @override
+  String get interestSpirituality => 'Espiritualidad';
+
+  @override
+  String get interestVolunteering => 'Voluntariado';
+
+  @override
+  String get interestEnvironment => 'Medio Ambiente';
+
+  @override
+  String get interestPolitics => 'Política';
+
+  @override
+  String get interestScience => 'Ciencia';
+
+  @override
+  String get interestHistory => 'Historia';
+
+  @override
+  String get interestLanguages => 'Idiomas';
+
+  @override
+  String get interestTeaching => 'Enseñanza';
+
+  @override
+  String get xTwitter => 'X (Twitter)';
 }

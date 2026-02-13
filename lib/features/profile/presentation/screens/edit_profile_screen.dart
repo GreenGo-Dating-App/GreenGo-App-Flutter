@@ -31,6 +31,7 @@ import 'edit_voice_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
+import '../../../../generated/app_localizations.dart';
 // Gamification/Coins screens disabled due to compile errors
 // import '../../../gamification/presentation/screens/achievements_screen.dart';
 // import '../../../gamification/presentation/screens/journey_screen.dart';
@@ -71,9 +72,9 @@ class EditProfileScreen extends StatelessWidget {
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => Navigator.of(context).pop(),
           ),
-          title: const Text(
-            'Edit Profile',
-            style: TextStyle(color: AppColors.textPrimary),
+          title: Text(
+            AppLocalizations.of(context)!.editProfile,
+            style: const TextStyle(color: AppColors.textPrimary),
           ),
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
@@ -111,10 +112,10 @@ class EditProfileScreen extends StatelessWidget {
                   ),
                 );
               }
-              return const Center(
+              return Center(
                 child: Text(
-                  'Unable to load profile',
-                  style: TextStyle(color: AppColors.textSecondary),
+                  AppLocalizations.of(context)!.unableToLoadProfile,
+                  style: const TextStyle(color: AppColors.textSecondary),
                 ),
               );
             }
@@ -130,8 +131,8 @@ class EditProfileScreen extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(bottom: 24),
                     child: EditSectionCard(
-                      title: 'View My Profile',
-                      subtitle: 'See how others view your profile',
+                      title: AppLocalizations.of(context)!.viewMyProfile,
+                      subtitle: AppLocalizations.of(context)!.seeHowOthersViewProfile,
                       icon: Icons.visibility,
                       onTap: () => _navigateToViewProfile(context, activeProfile),
                     ),
@@ -139,7 +140,7 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Photos Section
                   EditSectionCard(
-                    title: 'Photos',
+                    title: AppLocalizations.of(context)!.photos,
                     subtitle: '${activeProfile.photoUrls.length}/6 photos',
                     icon: Icons.photo_library,
                     onTap: () => _navigateToPhotoManagement(context, activeProfile),
@@ -149,10 +150,10 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Nickname Section
                   EditSectionCard(
-                    title: 'Nickname',
+                    title: AppLocalizations.of(context)!.nickname,
                     subtitle: activeProfile.nickname != null
                         ? '@${activeProfile.nickname}'
-                        : 'Set your unique nickname',
+                        : AppLocalizations.of(context)!.setYourUniqueNickname,
                     icon: Icons.alternate_email,
                     onTap: () => _navigateToEditNickname(context, activeProfile),
                   ),
@@ -161,7 +162,7 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Basic Info Section
                   EditSectionCard(
-                    title: 'Basic Information',
+                    title: AppLocalizations.of(context)!.basicInformation,
                     subtitle: '${activeProfile.displayName}, ${activeProfile.age}',
                     icon: Icons.person,
                     onTap: () => _navigateToEditBasicInfo(context, activeProfile),
@@ -171,9 +172,9 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Bio Section
                   EditSectionCard(
-                    title: 'About Me',
+                    title: AppLocalizations.of(context)!.aboutMe,
                     subtitle: activeProfile.bio.isEmpty
-                        ? 'Add a bio'
+                        ? AppLocalizations.of(context)!.addBio
                         : activeProfile.bio.length > 50
                             ? '${activeProfile.bio.substring(0, 50)}...'
                             : activeProfile.bio,
@@ -185,7 +186,7 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Interests Section
                   EditSectionCard(
-                    title: 'Interests',
+                    title: AppLocalizations.of(context)!.interests,
                     subtitle: '${activeProfile.interests.length} interests',
                     icon: Icons.favorite,
                     onTap: () => _navigateToEditInterests(context, activeProfile),
@@ -195,7 +196,7 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Location & Languages Section
                   EditSectionCard(
-                    title: 'Location & Languages',
+                    title: AppLocalizations.of(context)!.locationAndLanguages,
                     subtitle: activeProfile.location.displayAddress,
                     icon: Icons.location_on,
                     onTap: () => _navigateToEditLocation(context, activeProfile),
@@ -205,10 +206,10 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Voice Recording Section
                   EditSectionCard(
-                    title: 'Voice Introduction',
+                    title: AppLocalizations.of(context)!.voiceIntroduction,
                     subtitle: activeProfile.voiceRecordingUrl != null
-                        ? 'Voice recorded'
-                        : 'No voice recording',
+                        ? AppLocalizations.of(context)!.voiceRecorded
+                        : AppLocalizations.of(context)!.noVoiceRecording,
                     icon: Icons.mic,
                     onTap: () => _navigateToEditVoice(context, activeProfile),
                   ),
@@ -217,8 +218,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Social Links Section
                   EditSectionCard(
-                    title: 'Social Profiles',
-                    subtitle: _getSocialLinksSubtitle(activeProfile),
+                    title: AppLocalizations.of(context)!.socialProfiles,
+                    subtitle: _getSocialLinksSubtitle(context, activeProfile),
                     icon: Icons.share,
                     onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                   ),
@@ -229,7 +230,7 @@ class EditProfileScreen extends StatelessWidget {
                   Consumer<LanguageProvider>(
                     builder: (context, languageProvider, child) {
                       return EditSectionCard(
-                        title: 'App Language',
+                        title: AppLocalizations.of(context)!.appLanguage,
                         subtitle: languageProvider.currentLanguageName,
                         icon: Icons.language,
                         onTap: () => _showLanguageDialog(context, languageProvider),
@@ -241,8 +242,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Change Password Section
                   EditSectionCard(
-                    title: 'Change Password',
-                    subtitle: 'Update your account password',
+                    title: AppLocalizations.of(context)!.changePassword,
+                    subtitle: AppLocalizations.of(context)!.changePasswordSubtitle,
                     icon: Icons.lock_outline,
                     onTap: () => _navigateToChangePassword(context),
                   ),
@@ -250,9 +251,9 @@ class EditProfileScreen extends StatelessWidget {
                   const SizedBox(height: 32),
                   const Divider(color: AppColors.divider),
                   const SizedBox(height: 16),
-                  const Text(
-                    'Help & Support',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.helpAndSupport,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -262,8 +263,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Support Section
                   EditSectionCard(
-                    title: 'Support Center',
-                    subtitle: 'Get help, report issues, contact us',
+                    title: AppLocalizations.of(context)!.supportCenter,
+                    subtitle: AppLocalizations.of(context)!.supportCenterSubtitle,
                     icon: Icons.support_agent,
                     onTap: () => _navigateToSupport(context, activeProfile),
                   ),
@@ -295,9 +296,9 @@ class EditProfileScreen extends StatelessWidget {
                     const SizedBox(height: 32),
                     const Divider(color: AppColors.divider),
                     const SizedBox(height: 16),
-                    const Text(
-                      'Admin',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.admin,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -305,22 +306,22 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     EditSectionCard(
-                      title: 'Verification Panel',
-                      subtitle: 'Review user verifications',
+                      title: AppLocalizations.of(context)!.verificationPanel,
+                      subtitle: AppLocalizations.of(context)!.reviewUserVerifications,
                       icon: Icons.verified_user,
                       onTap: () => _navigateToAdminVerification(context, activeProfile),
                     ),
                     const SizedBox(height: 16),
                     EditSectionCard(
-                      title: 'Reports Panel',
-                      subtitle: 'Review reported messages & manage accounts',
+                      title: AppLocalizations.of(context)!.reportsPanel,
+                      subtitle: AppLocalizations.of(context)!.reviewReportedMessages,
                       icon: Icons.report,
                       onTap: () => _navigateToAdminReports(context, activeProfile),
                     ),
                     const SizedBox(height: 16),
                     EditSectionCard(
-                      title: 'Membership Panel',
-                      subtitle: 'Manage coupons, tiers & rules',
+                      title: AppLocalizations.of(context)!.membershipPanel,
+                      subtitle: AppLocalizations.of(context)!.manageCouponsTiersRules,
                       icon: Icons.card_membership,
                       onTap: () => _navigateToAdminMembership(context, activeProfile),
                     ),
@@ -337,7 +338,7 @@ class EditProfileScreen extends StatelessWidget {
                         side: const BorderSide(color: AppColors.errorRed),
                         minimumSize: const Size(double.infinity, 50),
                       ),
-                      child: const Text('Delete Account'),
+                      child: Text(AppLocalizations.of(context)!.deleteAccount),
                     ),
 
                   const SizedBox(height: 16),
@@ -364,7 +365,7 @@ class EditProfileScreen extends StatelessWidget {
                       minimumSize: const Size(double.infinity, 50),
                     ),
                     icon: const Icon(Icons.logout),
-                    label: const Text('Log Out'),
+                    label: Text(AppLocalizations.of(context)!.logOut),
                   ),
 
                   const SizedBox(height: 32),
@@ -515,9 +516,9 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  String _getSocialLinksSubtitle(Profile profile) {
+  String _getSocialLinksSubtitle(BuildContext context, Profile profile) {
     if (profile.socialLinks == null || !profile.socialLinks!.hasAnyLink) {
-      return 'No social profiles linked';
+      return AppLocalizations.of(context)!.noSocialProfilesLinked;
     }
 
     final links = <String>[];
@@ -600,9 +601,9 @@ class EditProfileScreen extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Select Language',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.selectLanguage,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: SizedBox(
           width: double.maxFinite,
@@ -629,7 +630,7 @@ class EditProfileScreen extends StatelessWidget {
                   Navigator.of(context).pop();
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Language changed to ${lang['name']}'),
+                      content: Text(AppLocalizations.of(context)!.languageChangedTo(lang['name']!)),
                       backgroundColor: AppColors.successGreen,
                     ),
                   );
@@ -641,9 +642,9 @@ class EditProfileScreen extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.cancel,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
         ],
@@ -656,27 +657,27 @@ class EditProfileScreen extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Account',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.deleteAccount,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Are you sure you want to delete your account? This action cannot be undone and all your data will be permanently deleted.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.deleteAccountConfirmation,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
               _deleteAccount(context, currentProfile);
             },
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(context)!.deleteAccount,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],
@@ -688,8 +689,8 @@ class EditProfileScreen extends StatelessWidget {
     // Prevent admin account deletion
     if (currentProfile.isAdmin) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Admin accounts cannot be deleted'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.adminAccountsCannotBeDeleted),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -728,27 +729,27 @@ class EditProfileScreen extends StatelessWidget {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Log Out',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.logOut,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Are you sure you want to log out?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.logOutConfirmation,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () {
               Navigator.of(dialogContext).pop();
               _logout(context);
             },
-            child: const Text(
-              'Log Out',
-              style: TextStyle(color: AppColors.richGold),
+            child: Text(
+              AppLocalizations.of(context)!.logOut,
+              style: const TextStyle(color: AppColors.richGold),
             ),
           ),
         ],

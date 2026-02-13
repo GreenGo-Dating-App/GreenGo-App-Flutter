@@ -13,6 +13,7 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Profile Detail Screen
 ///
@@ -370,7 +371,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         // Bio
                         if (widget.profile.bio != null &&
                             widget.profile.bio!.isNotEmpty) ...[
-                          _buildSectionTitle('About'),
+                          _buildSectionTitle(AppLocalizations.of(context)!.about),
                           const SizedBox(height: 12),
                           Text(
                             widget.profile.bio!,
@@ -392,7 +393,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
                         // Interests
                         if (widget.profile.interests.isNotEmpty) ...[
-                          _buildSectionTitle('Interests'),
+                          _buildSectionTitle(AppLocalizations.of(context)!.interests),
                           const SizedBox(height: 12),
                           Wrap(
                             spacing: 8,
@@ -406,7 +407,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
                         // Looking for
                         if (widget.profile.lookingFor != null) ...[
-                          _buildSectionTitle('Looking for'),
+                          _buildSectionTitle(AppLocalizations.of(context)!.lookingFor),
                           const SizedBox(height: 12),
                           Text(
                             _getLookingForText(widget.profile.lookingFor!),
@@ -422,24 +423,24 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         if (widget.profile.height != null ||
                             widget.profile.education != null ||
                             widget.profile.occupation != null) ...[
-                          _buildSectionTitle('Details'),
+                          _buildSectionTitle(AppLocalizations.of(context)!.details),
                           const SizedBox(height: 12),
                           if (widget.profile.height != null)
                             _buildDetailRow(
                               icon: Icons.height,
-                              label: 'Height',
+                              label: AppLocalizations.of(context)!.height,
                               value: '${widget.profile.height} cm',
                             ),
                           if (widget.profile.education != null)
                             _buildDetailRow(
                               icon: Icons.school,
-                              label: 'Education',
+                              label: AppLocalizations.of(context)!.education,
                               value: widget.profile.education!,
                             ),
                           if (widget.profile.occupation != null)
                             _buildDetailRow(
                               icon: Icons.work,
-                              label: 'Occupation',
+                              label: AppLocalizations.of(context)!.occupation,
                               value: widget.profile.occupation!,
                             ),
                           const SizedBox(height: 24),
@@ -448,7 +449,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         // Social Links section
                         if (widget.profile.socialLinks != null &&
                             widget.profile.socialLinks!.hasAnyLink) ...[
-                          _buildSectionTitle('Social Profiles'),
+                          _buildSectionTitle(AppLocalizations.of(context)!.socialProfiles),
                           const SizedBox(height: 12),
                           Wrap(
                             spacing: 12,
@@ -561,7 +562,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             const Icon(Icons.chat_bubble, size: 24),
             const SizedBox(width: 12),
             Text(
-              "Let's Chat!",
+              AppLocalizations.of(context)!.letsChat,
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -802,13 +803,13 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   String _getLookingForText(String lookingFor) {
     switch (lookingFor.toLowerCase()) {
       case 'long_term':
-        return 'Long-term relationship';
+        return AppLocalizations.of(context)!.longTermRelationship;
       case 'short_term':
-        return 'Short-term relationship';
+        return AppLocalizations.of(context)!.shortTermRelationship;
       case 'friendship':
-        return 'Friendship';
+        return AppLocalizations.of(context)!.friendship;
       case 'casual':
-        return 'Casual dating';
+        return AppLocalizations.of(context)!.casualDating;
       default:
         return lookingFor;
     }
@@ -819,11 +820,11 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     final difference = now.difference(date);
 
     if (difference.inDays == 0) {
-      return 'today';
+      return AppLocalizations.of(context)!.today;
     } else if (difference.inDays == 1) {
-      return 'yesterday';
+      return AppLocalizations.of(context)!.yesterday;
     } else if (difference.inDays < 7) {
-      return '${difference.inDays} days ago';
+      return AppLocalizations.of(context)!.daysAgo(difference.inDays);
     } else {
       return '${date.month}/${date.day}/${date.year}';
     }
@@ -888,9 +889,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                       size: 16,
                     ),
                     const SizedBox(width: 6),
-                    const Text(
-                      'Listen me!',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.listenMe,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
@@ -1045,8 +1046,8 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     } else {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Could not open link'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.couldNotOpenLink),
             backgroundColor: AppColors.errorRed,
           ),
         );

@@ -8,6 +8,7 @@ import '../../domain/entities/social_links.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../generated/app_localizations.dart';
 
 class EditSocialLinksScreen extends StatefulWidget {
   final Profile profile;
@@ -153,9 +154,9 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                     const Icon(Icons.arrow_back, color: AppColors.textPrimary),
                 onPressed: () => Navigator.of(context).pop(),
               ),
-              title: const Text(
-                'Social Profiles',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.socialProfiles,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               actions: [
                 if (_isSaving)
@@ -174,7 +175,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                   TextButton(
                     onPressed: _hasChanges ? _saveSocialLinks : null,
                     child: Text(
-                      'Save',
+                      AppLocalizations.of(context)!.save,
                       style: TextStyle(
                         color:
                             _hasChanges ? AppColors.richGold : AppColors.textTertiary,
@@ -217,19 +218,19 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               Text(
-                                'Connect your social accounts',
-                                style: TextStyle(
+                                AppLocalizations.of(context)!.connectSocialAccounts,
+                                style: const TextStyle(
                                   color: AppColors.textPrimary,
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              SizedBox(height: 4),
+                              const SizedBox(height: 4),
                               Text(
-                                'Help others find you on social media',
-                                style: TextStyle(
+                                AppLocalizations.of(context)!.helpOthersFindYou,
+                                style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 14,
                                 ),
@@ -247,35 +248,35 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                   _buildSocialInput(
                     controller: _facebookController,
                     label: 'Facebook',
-                    hint: 'Username or profile URL',
+                    hint: AppLocalizations.of(context)!.usernameOrProfileUrl,
                     icon: Icons.facebook,
                     color: const Color(0xFF1877F2),
                   ),
                   _buildSocialInput(
                     controller: _instagramController,
                     label: 'Instagram',
-                    hint: 'Username (without @)',
+                    hint: AppLocalizations.of(context)!.usernameWithoutAt,
                     icon: Icons.camera_alt,
                     color: const Color(0xFFE4405F),
                   ),
                   _buildSocialInput(
                     controller: _tiktokController,
                     label: 'TikTok',
-                    hint: 'Username (without @)',
+                    hint: AppLocalizations.of(context)!.usernameWithoutAt,
                     icon: Icons.music_note,
                     color: AppColors.textPrimary,
                   ),
                   _buildSocialInput(
                     controller: _linkedinController,
                     label: 'LinkedIn',
-                    hint: 'Username or profile URL',
+                    hint: AppLocalizations.of(context)!.usernameOrProfileUrl,
                     icon: Icons.work,
                     color: const Color(0xFF0A66C2),
                   ),
                   _buildSocialInput(
                     controller: _xController,
-                    label: 'X (Twitter)',
-                    hint: 'Username (without @)',
+                    label: AppLocalizations.of(context)!.xTwitter,
+                    hint: AppLocalizations.of(context)!.usernameWithoutAt,
                     icon: Icons.alternate_email,
                     color: AppColors.textPrimary,
                   ),
@@ -293,17 +294,17 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
                           Border.all(color: AppColors.richGold.withOpacity(0.3)),
                     ),
                     child: Row(
-                      children: const [
-                        Icon(
+                      children: [
+                        const Icon(
                           Icons.tips_and_updates,
                           color: AppColors.richGold,
                           size: 20,
                         ),
-                        SizedBox(width: 12),
+                        const SizedBox(width: 12),
                         Expanded(
                           child: Text(
-                            'Your social profiles will be visible on your dating profile and help others verify your identity.',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.socialProfilesTip,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 14,
                             ),

@@ -2482,6 +2482,486 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Microphone permission is required'**
   String get voiceMicrophonePermissionRequired;
+
+  /// No description provided for @listenMe.
+  ///
+  /// In en, this message translates to:
+  /// **'Listen me!'**
+  String get listenMe;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Change Password'**
+  String get changePassword;
+
+  /// No description provided for @changePasswordDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'For security, please verify your identity before changing your password.'**
+  String get changePasswordDescription;
+
+  /// No description provided for @changePasswordCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Password'**
+  String get changePasswordCurrent;
+
+  /// No description provided for @changePasswordNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New Password'**
+  String get changePasswordNew;
+
+  /// No description provided for @changePasswordConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm New Password'**
+  String get changePasswordConfirm;
+
+  /// No description provided for @changePasswordEmailHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your email'**
+  String get changePasswordEmailHint;
+
+  /// No description provided for @changePasswordEmailConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm your email address'**
+  String get changePasswordEmailConfirm;
+
+  /// No description provided for @changePasswordEmailMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Email does not match your account'**
+  String get changePasswordEmailMismatch;
+
+  /// No description provided for @changePasswordSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Password changed successfully'**
+  String get changePasswordSuccess;
+
+  /// No description provided for @changePasswordWrongCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Current password is incorrect'**
+  String get changePasswordWrongCurrent;
+
+  /// No description provided for @changePasswordReauthRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please log out and log in again before changing your password'**
+  String get changePasswordReauthRequired;
+
+  /// No description provided for @changePasswordSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Update your account password'**
+  String get changePasswordSubtitle;
+
+  /// No description provided for @shop.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop'**
+  String get shop;
+
+  /// No description provided for @progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get progress;
+
+  /// No description provided for @learn.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn'**
+  String get learn;
+
+  /// No description provided for @exitApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit App?'**
+  String get exitApp;
+
+  /// No description provided for @exitAppConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to exit GreenGo?'**
+  String get exitAppConfirmation;
+
+  /// No description provided for @exit.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit'**
+  String get exit;
+
+  /// No description provided for @letsChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s Chat!'**
+  String get letsChat;
+
+  /// No description provided for @couldNotOpenLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open link'**
+  String get couldNotOpenLink;
+
+  /// No description provided for @helpAndSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Support'**
+  String get helpAndSupport;
+
+  /// No description provided for @supportCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Support Center'**
+  String get supportCenter;
+
+  /// No description provided for @supportCenterSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Get help, report issues, contact us'**
+  String get supportCenterSubtitle;
+
+  /// No description provided for @editInterests.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Interests'**
+  String get editInterests;
+
+  /// No description provided for @interestsSelectedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{selected}/{max} interests selected'**
+  String interestsSelectedCount(int selected, int max);
+
+  /// No description provided for @selectAtLeastInterests.
+  ///
+  /// In en, this message translates to:
+  /// **'Select at least {count} interests'**
+  String selectAtLeastInterests(int count);
+
+  /// No description provided for @greatInterestsHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Great! Your interests help us find better matches'**
+  String get greatInterestsHelp;
+
+  /// No description provided for @maximumInterestsAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum {count} interests allowed'**
+  String maximumInterestsAllowed(int count);
+
+  /// No description provided for @connectSocialAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect your social accounts'**
+  String get connectSocialAccounts;
+
+  /// No description provided for @helpOthersFindYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Help others find you on social media'**
+  String get helpOthersFindYou;
+
+  /// No description provided for @socialProfilesTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Your social profiles will be visible on your dating profile and help others verify your identity.'**
+  String get socialProfilesTip;
+
+  /// No description provided for @usernameOrProfileUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Username or profile URL'**
+  String get usernameOrProfileUrl;
+
+  /// No description provided for @usernameWithoutAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Username (without @)'**
+  String get usernameWithoutAt;
+
+  /// No description provided for @voiceIntroduction.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice Introduction'**
+  String get voiceIntroduction;
+
+  /// No description provided for @interestTravel.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel'**
+  String get interestTravel;
+
+  /// No description provided for @interestPhotography.
+  ///
+  /// In en, this message translates to:
+  /// **'Photography'**
+  String get interestPhotography;
+
+  /// No description provided for @interestMusic.
+  ///
+  /// In en, this message translates to:
+  /// **'Music'**
+  String get interestMusic;
+
+  /// No description provided for @interestFitness.
+  ///
+  /// In en, this message translates to:
+  /// **'Fitness'**
+  String get interestFitness;
+
+  /// No description provided for @interestCooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Cooking'**
+  String get interestCooking;
+
+  /// No description provided for @interestReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading'**
+  String get interestReading;
+
+  /// No description provided for @interestMovies.
+  ///
+  /// In en, this message translates to:
+  /// **'Movies'**
+  String get interestMovies;
+
+  /// No description provided for @interestGaming.
+  ///
+  /// In en, this message translates to:
+  /// **'Gaming'**
+  String get interestGaming;
+
+  /// No description provided for @interestArt.
+  ///
+  /// In en, this message translates to:
+  /// **'Art'**
+  String get interestArt;
+
+  /// No description provided for @interestDance.
+  ///
+  /// In en, this message translates to:
+  /// **'Dance'**
+  String get interestDance;
+
+  /// No description provided for @interestYoga.
+  ///
+  /// In en, this message translates to:
+  /// **'Yoga'**
+  String get interestYoga;
+
+  /// No description provided for @interestHiking.
+  ///
+  /// In en, this message translates to:
+  /// **'Hiking'**
+  String get interestHiking;
+
+  /// No description provided for @interestSwimming.
+  ///
+  /// In en, this message translates to:
+  /// **'Swimming'**
+  String get interestSwimming;
+
+  /// No description provided for @interestCycling.
+  ///
+  /// In en, this message translates to:
+  /// **'Cycling'**
+  String get interestCycling;
+
+  /// No description provided for @interestRunning.
+  ///
+  /// In en, this message translates to:
+  /// **'Running'**
+  String get interestRunning;
+
+  /// No description provided for @interestSports.
+  ///
+  /// In en, this message translates to:
+  /// **'Sports'**
+  String get interestSports;
+
+  /// No description provided for @interestFashion.
+  ///
+  /// In en, this message translates to:
+  /// **'Fashion'**
+  String get interestFashion;
+
+  /// No description provided for @interestTechnology.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get interestTechnology;
+
+  /// No description provided for @interestWriting.
+  ///
+  /// In en, this message translates to:
+  /// **'Writing'**
+  String get interestWriting;
+
+  /// No description provided for @interestCoffee.
+  ///
+  /// In en, this message translates to:
+  /// **'Coffee'**
+  String get interestCoffee;
+
+  /// No description provided for @interestWine.
+  ///
+  /// In en, this message translates to:
+  /// **'Wine'**
+  String get interestWine;
+
+  /// No description provided for @interestBeer.
+  ///
+  /// In en, this message translates to:
+  /// **'Beer'**
+  String get interestBeer;
+
+  /// No description provided for @interestFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food'**
+  String get interestFood;
+
+  /// No description provided for @interestVegetarian.
+  ///
+  /// In en, this message translates to:
+  /// **'Vegetarian'**
+  String get interestVegetarian;
+
+  /// No description provided for @interestVegan.
+  ///
+  /// In en, this message translates to:
+  /// **'Vegan'**
+  String get interestVegan;
+
+  /// No description provided for @interestPets.
+  ///
+  /// In en, this message translates to:
+  /// **'Pets'**
+  String get interestPets;
+
+  /// No description provided for @interestDogs.
+  ///
+  /// In en, this message translates to:
+  /// **'Dogs'**
+  String get interestDogs;
+
+  /// No description provided for @interestCats.
+  ///
+  /// In en, this message translates to:
+  /// **'Cats'**
+  String get interestCats;
+
+  /// No description provided for @interestNature.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature'**
+  String get interestNature;
+
+  /// No description provided for @interestBeach.
+  ///
+  /// In en, this message translates to:
+  /// **'Beach'**
+  String get interestBeach;
+
+  /// No description provided for @interestMountains.
+  ///
+  /// In en, this message translates to:
+  /// **'Mountains'**
+  String get interestMountains;
+
+  /// No description provided for @interestCamping.
+  ///
+  /// In en, this message translates to:
+  /// **'Camping'**
+  String get interestCamping;
+
+  /// No description provided for @interestSurfing.
+  ///
+  /// In en, this message translates to:
+  /// **'Surfing'**
+  String get interestSurfing;
+
+  /// No description provided for @interestSkiing.
+  ///
+  /// In en, this message translates to:
+  /// **'Skiing'**
+  String get interestSkiing;
+
+  /// No description provided for @interestSnowboarding.
+  ///
+  /// In en, this message translates to:
+  /// **'Snowboarding'**
+  String get interestSnowboarding;
+
+  /// No description provided for @interestMeditation.
+  ///
+  /// In en, this message translates to:
+  /// **'Meditation'**
+  String get interestMeditation;
+
+  /// No description provided for @interestSpirituality.
+  ///
+  /// In en, this message translates to:
+  /// **'Spirituality'**
+  String get interestSpirituality;
+
+  /// No description provided for @interestVolunteering.
+  ///
+  /// In en, this message translates to:
+  /// **'Volunteering'**
+  String get interestVolunteering;
+
+  /// No description provided for @interestEnvironment.
+  ///
+  /// In en, this message translates to:
+  /// **'Environment'**
+  String get interestEnvironment;
+
+  /// No description provided for @interestPolitics.
+  ///
+  /// In en, this message translates to:
+  /// **'Politics'**
+  String get interestPolitics;
+
+  /// No description provided for @interestScience.
+  ///
+  /// In en, this message translates to:
+  /// **'Science'**
+  String get interestScience;
+
+  /// No description provided for @interestHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get interestHistory;
+
+  /// No description provided for @interestLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages'**
+  String get interestLanguages;
+
+  /// No description provided for @interestTeaching.
+  ///
+  /// In en, this message translates to:
+  /// **'Teaching'**
+  String get interestTeaching;
+
+  /// No description provided for @xTwitter.
+  ///
+  /// In en, this message translates to:
+  /// **'X (Twitter)'**
+  String get xTwitter;
 }
 
 class _AppLocalizationsDelegate

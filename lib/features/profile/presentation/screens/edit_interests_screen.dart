@@ -7,6 +7,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../generated/app_localizations.dart';
 
 class EditInterestsScreen extends StatefulWidget {
   final Profile profile;
@@ -93,7 +94,7 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('Maximum $_maxInterests interests allowed'),
+              content: Text(AppLocalizations.of(context)!.maximumInterestsAllowed(_maxInterests)),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -150,9 +151,9 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: const Text(
-          'Edit Interests',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.editInterests,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
           if (_isSaving)
@@ -171,7 +172,7 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
             TextButton(
               onPressed: _isValid ? _saveInterests : null,
               child: Text(
-                'Save',
+                AppLocalizations.of(context)!.save,
                 style: TextStyle(
                   color: _isValid ? AppColors.richGold : AppColors.textTertiary,
                   fontSize: 16,
@@ -205,7 +206,7 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '${_selectedInterests.length}/$_maxInterests interests selected',
+                        AppLocalizations.of(context)!.interestsSelectedCount(_selectedInterests.length, _maxInterests),
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontWeight: FontWeight.w600,
@@ -214,8 +215,8 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
                       const SizedBox(height: 4),
                       Text(
                         _selectedInterests.length < _minInterests
-                            ? 'Select at least $_minInterests interests'
-                            : 'Great! Your interests help us find better matches',
+                            ? AppLocalizations.of(context)!.selectAtLeastInterests(_minInterests)
+                            : AppLocalizations.of(context)!.greatInterestsHelp,
                         style: TextStyle(
                           color: _selectedInterests.length < _minInterests
                               ? AppColors.errorRed
