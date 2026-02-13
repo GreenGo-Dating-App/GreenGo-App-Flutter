@@ -13,6 +13,8 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/message.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
@@ -48,6 +50,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final ScrollController _scrollController = ScrollController();
   final TranslationService _translationService = TranslationService();
   final ContentFilterService _contentFilter = ContentFilterService();
+  final UsageLimitService _usageLimitService = UsageLimitService();
   final ImagePicker _imagePicker = ImagePicker();
   late final ChatRemoteDataSourceImpl _chatDataSource;
 
@@ -431,6 +434,9 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendImageMessage(BuildContext context, XFile image) async {
     if (_isUploadingMedia) return;
 
+    // Check media send limit
+    if (!await _checkMediaSendLimit(context)) return;
+
     setState(() {
       _isUploadingMedia = true;
       _uploadProgress = 0.0;
@@ -480,6 +486,12 @@ class _ChatScreenState extends State<ChatScreen> {
           content: downloadUrl,
           type: MessageType.image,
         ));
+
+        // Record media send usage
+        await _usageLimitService.recordUsage(
+          userId: widget.currentUserId,
+          limitType: UsageLimitType.mediaSends,
+        );
       }
     } catch (e) {
       if (context.mounted) {
@@ -502,6 +514,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _sendVideoMessage(BuildContext context, XFile video) async {
     if (_isUploadingMedia) return;
+
+    // Check media send limit
+    if (!await _checkMediaSendLimit(context)) return;
 
     setState(() {
       _isUploadingMedia = true;
@@ -558,6 +573,12 @@ class _ChatScreenState extends State<ChatScreen> {
           content: downloadUrl,
           type: MessageType.video,
         ));
+
+        // Record media send usage
+        await _usageLimitService.recordUsage(
+          userId: widget.currentUserId,
+          limitType: UsageLimitType.mediaSends,
+        );
       }
     } catch (e) {
       if (context.mounted) {
@@ -575,6 +596,63 @@ class _ChatScreenState extends State<ChatScreen> {
           _uploadProgress = 0.0;
         });
       }
+    }
+  }
+
+  /// Check media send limit before uploading
+  Future<bool> _checkMediaSendLimit(BuildContext context) async {
+    try {
+      // Get user's membership tier from Firestore
+      final membershipDoc = await FirebaseFirestore.instance
+          .collection('memberships')
+          .doc(widget.currentUserId)
+          .get();
+
+      MembershipTier tier = MembershipTier.free;
+      if (membershipDoc.exists) {
+        tier = MembershipTier.fromString(
+          membershipDoc.data()?['tier'] as String? ?? 'FREE',
+        );
+      }
+
+      final rules = MembershipRules.getDefaultsForTier(tier);
+      final result = await _usageLimitService.checkLimit(
+        userId: widget.currentUserId,
+        limitType: UsageLimitType.mediaSends,
+        rules: rules,
+        currentTier: tier,
+      );
+
+      if (!result.isAllowed) {
+        if (context.mounted) {
+          showDialog(
+            context: context,
+            builder: (ctx) => AlertDialog(
+              backgroundColor: AppColors.backgroundCard,
+              title: const Text(
+                'Media Limit Reached',
+                style: TextStyle(color: AppColors.textPrimary),
+              ),
+              content: Text(
+                result.message,
+                style: const TextStyle(color: AppColors.textSecondary),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx),
+                  child: const Text('OK'),
+                ),
+              ],
+            ),
+          );
+        }
+        return false;
+      }
+      return true;
+    } catch (e) {
+      // On error, allow the send (don't block due to limit check failure)
+      debugPrint('Media limit check error: $e');
+      return true;
     }
   }
 

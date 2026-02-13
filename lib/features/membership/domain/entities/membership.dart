@@ -120,6 +120,9 @@ class MembershipRules extends Equatable {
   /// Can use video chat
   final bool canUseVideoChat;
 
+  /// Maximum media sends per day (-1 for unlimited, 0 for none)
+  final int dailyMediaSendLimit;
+
   /// Profile badge/icon displayed
   final String? badgeIcon;
 
@@ -142,6 +145,7 @@ class MembershipRules extends Equatable {
     this.matchPriority = 0,
     this.canSeeProfileVisitors = false,
     this.canUseVideoChat = false,
+    this.dailyMediaSendLimit = 0,
     this.badgeIcon,
   });
 
@@ -165,6 +169,7 @@ class MembershipRules extends Equatable {
     matchPriority: 0,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
+    dailyMediaSendLimit: 0,
     badgeIcon: null,
   );
 
@@ -188,6 +193,7 @@ class MembershipRules extends Equatable {
     matchPriority: 1,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
+    dailyMediaSendLimit: 15,
     badgeIcon: 'silver_badge',
   );
 
@@ -211,6 +217,7 @@ class MembershipRules extends Equatable {
     matchPriority: 2,
     canSeeProfileVisitors: true,
     canUseVideoChat: false,
+    dailyMediaSendLimit: 50,
     badgeIcon: 'gold_badge',
   );
 
@@ -234,6 +241,7 @@ class MembershipRules extends Equatable {
     matchPriority: 3,
     canSeeProfileVisitors: true,
     canUseVideoChat: true,
+    dailyMediaSendLimit: -1, // Unlimited
     badgeIcon: 'platinum_badge',
   );
 
@@ -258,6 +266,7 @@ class MembershipRules extends Equatable {
     matchPriority: 99, // Highest priority
     canSeeProfileVisitors: true,
     canUseVideoChat: true,
+    dailyMediaSendLimit: -1, // Unlimited
     badgeIcon: 'test_badge',
   );
 
@@ -300,6 +309,7 @@ class MembershipRules extends Equatable {
         matchPriority,
         canSeeProfileVisitors,
         canUseVideoChat,
+        dailyMediaSendLimit,
         badgeIcon,
       ];
 }

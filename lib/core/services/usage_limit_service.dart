@@ -8,6 +8,7 @@ enum UsageLimitType {
   superLikes,
   messages,
   boosts,
+  mediaSends,
 }
 
 /// Result of checking a usage limit
@@ -152,6 +153,8 @@ class UsageLimitService {
         return rules.dailyMessageLimit;
       case UsageLimitType.boosts:
         return rules.monthlyFreeBoosts;
+      case UsageLimitType.mediaSends:
+        return rules.dailyMediaSendLimit;
     }
   }
 
@@ -166,6 +169,8 @@ class UsageLimitService {
         return 'messageCount';
       case UsageLimitType.boosts:
         return 'boostCount';
+      case UsageLimitType.mediaSends:
+        return 'mediaSendCount';
     }
   }
 
@@ -180,6 +185,8 @@ class UsageLimitService {
         return 'messages';
       case UsageLimitType.boosts:
         return 'boosts';
+      case UsageLimitType.mediaSends:
+        return 'media sends';
     }
   }
 
@@ -203,6 +210,11 @@ class UsageLimitService {
         return "You've reached your daily limit of $limit messages. Upgrade to send unlimited messages!";
       case UsageLimitType.boosts:
         return "You've used all $limit profile boosts this month. Upgrade for more boosts!";
+      case UsageLimitType.mediaSends:
+        if (limit == 0) {
+          return 'Sending media is not available on the ${currentTier.displayName} plan. Upgrade to send images and videos!';
+        }
+        return "You've reached your daily limit of $limit media sends. Upgrade for more or wait until tomorrow.";
     }
   }
 
