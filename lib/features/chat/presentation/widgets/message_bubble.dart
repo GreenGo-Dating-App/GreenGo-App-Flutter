@@ -266,6 +266,58 @@ class _MessageBubbleState extends State<MessageBubble> {
           ],
         );
 
+      case MessageType.video:
+        return Column(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(AppDimensions.radiusS),
+              child: GestureDetector(
+                onTap: () => _openVideoPlayer(context, message.content),
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  color: AppColors.backgroundDark,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      const Icon(
+                        Icons.videocam,
+                        color: AppColors.textTertiary,
+                        size: 48,
+                      ),
+                      Container(
+                        width: 56,
+                        height: 56,
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.6),
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.play_arrow,
+                          color: Colors.white,
+                          size: 36,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            if (message.metadata?['caption'] != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                message.metadata!['caption'] as String,
+                style: TextStyle(
+                  color: isCurrentUser
+                      ? AppColors.deepBlack
+                      : AppColors.textPrimary,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ],
+        );
+
       case MessageType.system:
         return Text(
           message.content,
@@ -285,6 +337,43 @@ class _MessageBubbleState extends State<MessageBubble> {
           ),
         );
     }
+  }
+
+  void _openVideoPlayer(BuildContext context, String videoUrl) {
+    // Open video in a full-screen dialog
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.black,
+        insetPadding: EdgeInsets.zero,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            const Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.videocam, color: Colors.white54, size: 64),
+                  SizedBox(height: 16),
+                  Text(
+                    'Video Player',
+                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 28),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   void _showMessageOptions(BuildContext context) {
