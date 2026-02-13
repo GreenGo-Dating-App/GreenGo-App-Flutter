@@ -19,7 +19,7 @@
     "test:status": "node check-test-status.js"
   },
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "dependencies": {
     "@google-cloud/bigquery": "^7.3.0",
