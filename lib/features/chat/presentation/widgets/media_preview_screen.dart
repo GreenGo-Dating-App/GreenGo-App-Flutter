@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:video_player/video_player.dart';
 import '../../../../core/constants/app_colors.dart';
 
@@ -71,7 +72,7 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
           onPressed: widget.onCancel,
         ),
         title: Text(
-          widget.isVideo ? 'Preview Video' : 'Preview Image',
+          widget.isVideo ? AppLocalizations.of(context)!.chatPreviewVideo : AppLocalizations.of(context)!.chatPreviewImage,
           style: const TextStyle(color: Colors.white),
         ),
       ),
@@ -107,7 +108,7 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
                       fontSize: 16,
                     ),
                     decoration: InputDecoration(
-                      hintText: 'Add a caption...',
+                      hintText: AppLocalizations.of(context)!.chatAddCaption,
                       hintStyle: const TextStyle(
                         color: AppColors.textTertiary,
                       ),
@@ -137,7 +138,7 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
                         widget.onSend(caption.isEmpty ? null : caption);
                       },
                       icon: const Icon(Icons.send),
-                      label: const Text('Send'),
+                      label: Text(AppLocalizations.of(context)!.chatSend),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.richGold,
                         foregroundColor: AppColors.deepBlack,
@@ -166,18 +167,18 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
         fit: BoxFit.contain,
         errorBuilder: (context, error, stackTrace) => Container(
           color: AppColors.backgroundCard,
-          child: const Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
+              const Icon(
                 Icons.broken_image,
                 color: AppColors.textTertiary,
                 size: 64,
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Text(
-                'Failed to load image',
-                style: TextStyle(
+                AppLocalizations.of(context)!.chatFailedToLoadImage,
+                style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 16,
                 ),
@@ -191,16 +192,16 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
 
   Widget _buildVideoPreview() {
     if (!_isVideoInitialized || _videoController == null) {
-      return const Column(
+      return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircularProgressIndicator(
+          const CircularProgressIndicator(
             color: AppColors.richGold,
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Text(
-            'Loading video...',
-            style: TextStyle(
+            AppLocalizations.of(context)!.chatLoadingVideo,
+            style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 16,
             ),

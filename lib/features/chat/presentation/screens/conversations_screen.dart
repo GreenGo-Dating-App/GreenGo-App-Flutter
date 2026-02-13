@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../profile/domain/repositories/profile_repository.dart';
@@ -55,7 +56,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         controller: _searchController,
         style: const TextStyle(color: AppColors.textPrimary),
         decoration: InputDecoration(
-          hintText: 'Search by name or @nickname',
+          hintText: AppLocalizations.of(context)!.chatSearchByNameOrNickname,
           hintStyle: TextStyle(
             color: AppColors.textTertiary.withOpacity(0.6),
           ),
@@ -145,7 +146,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                         backgroundColor: AppColors.richGold,
                         foregroundColor: AppColors.deepBlack,
                       ),
-                      child: const Text('Retry'),
+                      child: Text(AppLocalizations.of(context)!.retry),
                     ),
                   ],
                 ),
@@ -156,30 +157,30 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
               return ListView(
                 children: [
                   const SizedBox(height: 40),
-                  const Center(
+                  Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.chat_bubble_outline,
                           size: 80,
                           color: AppColors.textTertiary,
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Text(
-                          'No messages yet',
-                          style: TextStyle(
+                          AppLocalizations.of(context)!.chatNoMessagesYet,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 40),
+                          padding: const EdgeInsets.symmetric(horizontal: 40),
                           child: Text(
-                            'Start swiping and matching to chat with people!',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.chatStartSwipingToChat,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 16,
                             ),

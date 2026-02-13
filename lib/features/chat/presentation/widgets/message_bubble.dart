@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/message.dart';
@@ -116,7 +117,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      _showOriginal ? 'Original' : 'Translated',
+                      _showOriginal ? AppLocalizations.of(context)!.chatMessageOriginal : AppLocalizations.of(context)!.chatMessageTranslated,
                       style: TextStyle(
                         color: isCurrentUser
                             ? AppColors.deepBlack.withOpacity(0.6)
@@ -200,7 +201,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(_isStarred ? 'Message starred' : 'Message unstarred'),
+        content: Text(_isStarred ? AppLocalizations.of(context)!.chatMessageStarred : AppLocalizations.of(context)!.chatMessageUnstarred),
         duration: const Duration(seconds: 1),
         backgroundColor: AppColors.backgroundCard,
       ),
@@ -349,15 +350,15 @@ class _MessageBubbleState extends State<MessageBubble> {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            const Center(
+            Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.videocam, color: Colors.white54, size: 64),
-                  SizedBox(height: 16),
+                  const Icon(Icons.videocam, color: Colors.white54, size: 64),
+                  const SizedBox(height: 16),
                   Text(
-                    'Video Player',
-                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                    AppLocalizations.of(context)!.chatVideoPlayer,
+                    style: const TextStyle(color: Colors.white70, fontSize: 16),
                   ),
                 ],
               ),
@@ -399,9 +400,9 @@ class _MessageBubbleState extends State<MessageBubble> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Message Options',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.chatMessageOptions,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -410,13 +411,13 @@ class _MessageBubbleState extends State<MessageBubble> {
             const SizedBox(height: 16),
             ListTile(
               leading: const Icon(Icons.reply, color: Colors.blue),
-              title: const Text(
-                'Reply',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.chatReply,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
-              subtitle: const Text(
-                'Reply to this message',
-                style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              subtitle: Text(
+                AppLocalizations.of(context)!.chatReplyToMessage,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
               ),
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -425,13 +426,13 @@ class _MessageBubbleState extends State<MessageBubble> {
             ),
             ListTile(
               leading: const Icon(Icons.forward, color: Colors.purple),
-              title: const Text(
-                'Forward',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.chatForward,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
-              subtitle: const Text(
-                'Forward to another chat',
-                style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              subtitle: Text(
+                AppLocalizations.of(context)!.chatForwardToChat,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
               ),
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -444,11 +445,11 @@ class _MessageBubbleState extends State<MessageBubble> {
                 color: AppColors.richGold,
               ),
               title: Text(
-                _isStarred ? 'Unstar Message' : 'Star Message',
+                _isStarred ? AppLocalizations.of(context)!.chatUnstarMessage : AppLocalizations.of(context)!.chatStarMessage,
                 style: const TextStyle(color: AppColors.textPrimary),
               ),
               subtitle: Text(
-                _isStarred ? 'Remove from starred messages' : 'Add to starred messages',
+                _isStarred ? AppLocalizations.of(context)!.chatRemoveFromStarred : AppLocalizations.of(context)!.chatAddToStarred,
                 style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
               ),
               onTap: () {
@@ -460,13 +461,13 @@ class _MessageBubbleState extends State<MessageBubble> {
               const Divider(color: AppColors.divider, height: 1),
               ListTile(
                 leading: const Icon(Icons.flag, color: AppColors.errorRed),
-                title: const Text(
-                  'Report Message',
-                  style: TextStyle(color: AppColors.textPrimary),
+                title: Text(
+                  AppLocalizations.of(context)!.chatReportMessage,
+                  style: const TextStyle(color: AppColors.textPrimary),
                 ),
-                subtitle: const Text(
-                  'Report inappropriate content',
-                  style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                subtitle: Text(
+                  AppLocalizations.of(context)!.chatReportInappropriate,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
                 ),
                 onTap: () {
                   Navigator.pop(bottomSheetContext);
@@ -482,29 +483,30 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   void _showReportDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final reasons = [
-      'Harassment or bullying',
-      'Spam or scam',
-      'Inappropriate content',
-      'Sharing personal information',
-      'Threatening behavior',
-      'Other',
+      l10n.chatReportReasonHarassment,
+      l10n.chatReportReasonSpam,
+      l10n.chatReportReasonInappropriate,
+      l10n.chatReportReasonPersonalInfo,
+      l10n.chatReportReasonThreatening,
+      l10n.chatReportReasonOther,
     ];
 
     showDialog(
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Report Message',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.chatReportMessage,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'Why are you reporting this message?',
-              style: TextStyle(color: AppColors.textSecondary),
+            Text(
+              l10n.chatWhyReportMessage,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
             ...reasons.map((reason) => ListTile(
@@ -523,7 +525,7 @@ class _MessageBubbleState extends State<MessageBubble> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
         ],
       ),
@@ -539,8 +541,8 @@ class _MessageBubbleState extends State<MessageBubble> {
     // Show a confirmation
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Message reported. We will review it shortly.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.chatMessageReported),
           backgroundColor: AppColors.richGold,
         ),
       );

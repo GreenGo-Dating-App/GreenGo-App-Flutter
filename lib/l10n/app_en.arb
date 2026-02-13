@@ -743,5 +743,258 @@
   "interestHistory": "History",
   "interestLanguages": "Languages",
   "interestTeaching": "Teaching",
-  "xTwitter": "X (Twitter)"
+  "xTwitter": "X (Twitter)",
+
+  "chatMessageBlockedContains": "Message blocked: Contains {violations}. For your safety, sharing personal contact details is not allowed.",
+  "@chatMessageBlockedContains": {
+    "placeholders": {
+      "violations": {
+        "type": "String"
+      }
+    }
+  },
+  "chatReportMessage": "Report Message",
+  "chatWhyReportMessage": "Why are you reporting this message?",
+  "chatReportReasonHarassment": "Harassment or bullying",
+  "chatReportReasonSpam": "Spam or scam",
+  "chatReportReasonInappropriate": "Inappropriate content",
+  "chatReportReasonPersonalInfo": "Sharing personal information",
+  "chatReportReasonThreatening": "Threatening behavior",
+  "chatReportReasonFakeProfile": "Fake profile / Catfishing",
+  "chatReportReasonUnderage": "Underage user",
+  "chatReportReasonOther": "Other",
+  "chatMessageReported": "Message reported. We will review it shortly.",
+  "chatFailedToReportMessage": "Failed to report message: {error}",
+  "@chatFailedToReportMessage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSendAttachment": "Send Attachment",
+  "chatAttachGallery": "Gallery",
+  "chatAttachCamera": "Camera",
+  "chatAttachVideo": "Video",
+  "chatAttachRecord": "Record",
+  "chatFailedToPickImage": "Failed to pick image: {error}",
+  "@chatFailedToPickImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatFailedToPickVideo": "Failed to pick video: {error}",
+  "@chatFailedToPickVideo": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatFailedToUploadImage": "Failed to upload image: {error}",
+  "@chatFailedToUploadImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatVideoTooLarge": "Video too large. Maximum size is 50MB.",
+  "chatFailedToUploadVideo": "Failed to upload video: {error}",
+  "@chatFailedToUploadVideo": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMediaLimitReached": "Media Limit Reached",
+  "chatSayHiTo": "Say hi to {name}!",
+  "@chatSayHiTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSendMessageToStart": "Send a message to start the conversation",
+  "chatTyping": "typing...",
+  "chatDisableTranslation": "Disable translation",
+  "chatEnableTranslation": "Enable translation",
+  "chatTranslationEnabled": "Translation enabled",
+  "chatTranslationDisabled": "Translation disabled",
+  "chatUploading": "Uploading...",
+  "chatOptions": "Chat Options",
+  "chatDeleteForMe": "Delete chat for me",
+  "chatDeleteForBoth": "Delete chat for both",
+  "chatBlockUser": "Block {name}",
+  "@chatBlockUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatReportUser": "Report {name}",
+  "@chatReportUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteChat": "Delete Chat",
+  "chatDeleteChatForMeMessage": "This will delete the chat from your device only. The other person will still see the messages.",
+  "chatDeleteChatForEveryone": "Delete Chat for Everyone",
+  "chatDeleteChatForBothMessage": "This will delete all messages for both you and {name}. This action cannot be undone.",
+  "@chatDeleteChatForBothMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteForEveryone": "Delete for Everyone",
+  "chatBlockUserTitle": "Block User",
+  "chatBlockUserMessage": "Are you sure you want to block {name}? They will no longer be able to contact you.",
+  "@chatBlockUserMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatBlock": "Block",
+  "chatCannotBlockAdmin": "You cannot block an administrator.",
+  "chatUserBlocked": "{name} has been blocked",
+  "@chatUserBlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatReportUserTitle": "Report User",
+  "chatWhyReportUser": "Why are you reporting {name}?",
+  "@chatWhyReportUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatCannotReportAdmin": "You cannot report an administrator.",
+  "chatUserReported": "User reported. We will review your report shortly.",
+  "chatReplyingTo": "Replying to {name}",
+  "@chatReplyingTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatYou": "You",
+  "chatUnableToForward": "Unable to forward message",
+  "chatSearchByNameOrNickname": "Search by name or @nickname",
+  "chatNoMessagesYet": "No messages yet",
+  "chatStartSwipingToChat": "Start swiping and matching to chat with people!",
+  "chatMessageOriginal": "Original",
+  "chatMessageTranslated": "Translated",
+  "chatMessageStarred": "Message starred",
+  "chatMessageUnstarred": "Message unstarred",
+  "chatMessageOptions": "Message Options",
+  "chatReply": "Reply",
+  "chatReplyToMessage": "Reply to this message",
+  "chatForward": "Forward",
+  "chatForwardToChat": "Forward to another chat",
+  "chatStarMessage": "Star Message",
+  "chatUnstarMessage": "Unstar Message",
+  "chatAddToStarred": "Add to starred messages",
+  "chatRemoveFromStarred": "Remove from starred messages",
+  "chatReportInappropriate": "Report inappropriate content",
+  "chatVideoPlayer": "Video Player",
+  "chatFailedToLoadImage": "Failed to load image",
+  "chatLoadingVideo": "Loading video...",
+  "chatPreviewVideo": "Preview Video",
+  "chatPreviewImage": "Preview Image",
+  "chatAddCaption": "Add a caption...",
+  "chatSend": "Send",
+  "chatSupportTitle": "GreenGo Support",
+  "chatSupportStatusOpen": "Open",
+  "chatSupportStatusPending": "Pending",
+  "chatSupportStatusResolved": "Resolved",
+  "chatSupportStatusClosed": "Closed",
+  "chatSupportStatusDefault": "Support",
+  "chatSupportAgent": "Agent: {name}",
+  "@chatSupportAgent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSupportWelcome": "Welcome to Support",
+  "chatSupportStartMessage": "Send a message to start the conversation.\nOur team will respond as soon as possible.",
+  "chatSupportTicketStart": "Ticket Start",
+  "chatSupportTicketCreated": "Ticket Created",
+  "chatSupportErrorLoading": "Error loading messages",
+  "chatSupportFailedToSend": "Failed to send message: {error}",
+  "@chatSupportFailedToSend": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSupportTicketResolved": "This ticket has been resolved",
+  "chatSupportReopenTicket": "Need more help? Tap to reopen",
+  "chatSupportTicketReopened": "Ticket reopened. You can send a message now.",
+  "chatSupportFailedToReopen": "Failed to reopen ticket: {error}",
+  "@chatSupportFailedToReopen": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSupportAddCaptionOptional": "Add a caption (optional)...",
+  "chatSupportTypeMessage": "Type your message...",
+  "chatSupportAddAttachment": "Add Attachment",
+  "chatSupportTicketInfo": "Ticket Information",
+  "chatSupportSubject": "Subject",
+  "chatSupportCategory": "Category",
+  "chatSupportStatus": "Status",
+  "chatSupportAgentLabel": "Agent",
+  "chatSupportTicketId": "Ticket ID",
+  "chatSupportGeneralSupport": "General Support",
+  "chatSupportGeneral": "General",
+  "chatSupportWaitingAssignment": "Waiting for assignment",
+  "chatSupportClose": "Close",
+  "chatSupportJustNow": "Just now",
+  "chatSupportMinutesAgo": "{minutes}m ago",
+  "@chatSupportMinutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSupportHoursAgo": "{hours}h ago",
+  "@chatSupportHoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSupportDaysAgo": "{days}d ago",
+  "@chatSupportDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  }
 }

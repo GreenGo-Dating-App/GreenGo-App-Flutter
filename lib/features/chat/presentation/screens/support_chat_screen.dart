@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
@@ -312,7 +313,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to send message: $e'),
+            content: Text(AppLocalizations.of(context)!.chatSupportFailedToSend(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -349,9 +350,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'Add Attachment',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.chatSupportAddAttachment,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -363,7 +364,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                 children: [
                   _buildPickerOption(
                     icon: Icons.camera_alt,
-                    label: 'Camera',
+                    label: AppLocalizations.of(context)!.chatAttachCamera,
                     onTap: () {
                       Navigator.pop(context);
                       _pickImage(ImageSource.camera);
@@ -371,7 +372,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   ),
                   _buildPickerOption(
                     icon: Icons.photo_library,
-                    label: 'Gallery',
+                    label: AppLocalizations.of(context)!.chatAttachGallery,
                     onTap: () {
                       Navigator.pop(context);
                       _pickImage(ImageSource.gallery);
@@ -439,7 +440,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to pick image: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToPickImage(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -484,17 +485,18 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   }
 
   String _getStatusDisplayText() {
+    final l10n = AppLocalizations.of(context)!;
     switch (_ticketStatus) {
       case 'open':
-        return 'Open';
+        return l10n.chatSupportStatusOpen;
       case 'pending':
-        return 'Pending';
+        return l10n.chatSupportStatusPending;
       case 'resolved':
-        return 'Resolved';
+        return l10n.chatSupportStatusResolved;
       case 'closed':
-        return 'Closed';
+        return l10n.chatSupportStatusClosed;
       default:
-        return 'Support';
+        return l10n.chatSupportStatusDefault;
     }
   }
 
@@ -529,9 +531,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           children: [
             Row(
               children: [
-                const Text(
-                  'GreenGo Support',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.chatSupportTitle,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -557,7 +559,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             ),
             if (_supportAgentName != null)
               Text(
-                'Agent: $_supportAgentName',
+                AppLocalizations.of(context)!.chatSupportAgent(_supportAgentName!),
                 style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 12,
@@ -602,8 +604,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                         ),
                         const SizedBox(height: 16),
                         Text(
-                          'Error loading messages',
-                          style: TextStyle(color: AppColors.errorRed),
+                          AppLocalizations.of(context)!.chatSupportErrorLoading,
+                          style: const TextStyle(color: AppColors.errorRed),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -635,30 +637,30 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                 }
 
                 if (allMessages.isEmpty) {
-                  return const Center(
+                  return Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.support_agent,
                           size: 64,
                           color: AppColors.textTertiary,
                         ),
-                        SizedBox(height: 16),
+                        const SizedBox(height: 16),
                         Text(
-                          'Welcome to Support',
-                          style: TextStyle(
+                          AppLocalizations.of(context)!.chatSupportWelcome,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 8),
+                        const SizedBox(height: 8),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 32),
+                          padding: const EdgeInsets.symmetric(horizontal: 32),
                           child: Text(
-                            'Send a message to start the conversation.\nOur team will respond as soon as possible.',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.chatSupportStartMessage,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 14,
                             ),
@@ -725,14 +727,14 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                                 ),
                               ],
                             ),
-                            child: const Row(
+                            child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.arrow_upward, color: Colors.black, size: 16),
-                                SizedBox(width: 4),
+                                const Icon(Icons.arrow_upward, color: Colors.black, size: 16),
+                                const SizedBox(width: 4),
                                 Text(
-                                  'Ticket Start',
-                                  style: TextStyle(
+                                  AppLocalizations.of(context)!.chatSupportTicketStart,
+                                  style: const TextStyle(
                                     color: Colors.black,
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold,
@@ -838,10 +840,10 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                   ),
                 ),
                 const SizedBox(width: 12),
-                const Expanded(
+                Expanded(
                   child: Text(
-                    'Ticket Created',
-                    style: TextStyle(
+                    AppLocalizations.of(context)!.chatSupportTicketCreated,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -1060,9 +1062,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
               children: [
                 const Icon(Icons.check_circle, color: Colors.green, size: 20),
                 const SizedBox(width: 8),
-                const Text(
-                  'This ticket has been resolved',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.chatSupportTicketResolved,
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 14,
                   ),
@@ -1072,9 +1074,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             const SizedBox(height: 12),
             TextButton(
               onPressed: () => _reopenTicket(),
-              child: const Text(
-                'Need more help? Tap to reopen',
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(context)!.chatSupportReopenTicket,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 13,
                 ),
@@ -1176,8 +1178,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                         style: const TextStyle(color: AppColors.textPrimary),
                         decoration: InputDecoration(
                           hintText: _selectedImage != null
-                              ? 'Add a caption (optional)...'
-                              : 'Type your message...',
+                              ? AppLocalizations.of(context)!.chatSupportAddCaptionOptional
+                              : AppLocalizations.of(context)!.chatSupportTypeMessage,
                           hintStyle: const TextStyle(color: AppColors.textTertiary),
                           border: InputBorder.none,
                           contentPadding: const EdgeInsets.symmetric(
@@ -1234,8 +1236,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       });
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Ticket reopened. You can send a message now.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.chatSupportTicketReopened),
             backgroundColor: Colors.green,
           ),
         );
@@ -1244,7 +1246,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to reopen ticket: $e'),
+            content: Text(AppLocalizations.of(context)!.chatSupportFailedToReopen(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1255,15 +1257,16 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   String _formatTime(DateTime time) {
     final now = DateTime.now();
     final diff = now.difference(time);
+    final l10n = AppLocalizations.of(context)!;
 
     if (diff.inMinutes < 1) {
-      return 'Just now';
+      return l10n.chatSupportJustNow;
     } else if (diff.inHours < 1) {
-      return '${diff.inMinutes}m ago';
+      return l10n.chatSupportMinutesAgo(diff.inMinutes);
     } else if (diff.inDays < 1) {
-      return '${diff.inHours}h ago';
+      return l10n.chatSupportHoursAgo(diff.inHours);
     } else if (diff.inDays < 7) {
-      return '${diff.inDays}d ago';
+      return l10n.chatSupportDaysAgo(diff.inDays);
     } else {
       return '${time.day}/${time.month}/${time.year}';
     }
@@ -1286,9 +1289,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
               children: [
                 const Icon(Icons.confirmation_number, color: AppColors.richGold),
                 const SizedBox(width: 8),
-                const Text(
-                  'Ticket Information',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.chatSupportTicketInfo,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -1297,11 +1300,11 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
               ],
             ),
             const SizedBox(height: 20),
-            _buildInfoRow('Subject', _ticketSubject ?? 'General Support'),
-            _buildInfoRow('Category', _ticketCategory ?? 'General'),
-            _buildInfoRow('Status', _getStatusDisplayText()),
-            _buildInfoRow('Agent', _supportAgentName ?? 'Waiting for assignment'),
-            _buildInfoRow('Ticket ID', widget.conversationId.substring(0, 8).toUpperCase()),
+            _buildInfoRow(AppLocalizations.of(context)!.chatSupportSubject, _ticketSubject ?? AppLocalizations.of(context)!.chatSupportGeneralSupport),
+            _buildInfoRow(AppLocalizations.of(context)!.chatSupportCategory, _ticketCategory ?? AppLocalizations.of(context)!.chatSupportGeneral),
+            _buildInfoRow(AppLocalizations.of(context)!.chatSupportStatus, _getStatusDisplayText()),
+            _buildInfoRow(AppLocalizations.of(context)!.chatSupportAgentLabel, _supportAgentName ?? AppLocalizations.of(context)!.chatSupportWaitingAssignment),
+            _buildInfoRow(AppLocalizations.of(context)!.chatSupportTicketId, widget.conversationId.substring(0, 8).toUpperCase()),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
@@ -1315,7 +1318,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
-                child: const Text('Close'),
+                child: Text(AppLocalizations.of(context)!.chatSupportClose),
               ),
             ),
           ],

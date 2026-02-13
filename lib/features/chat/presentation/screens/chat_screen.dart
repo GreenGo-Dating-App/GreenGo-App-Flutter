@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
@@ -191,7 +192,7 @@ class _ChatScreenState extends State<ChatScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Message blocked: Contains ${filterResult.violations.join(', ')}. For your safety, sharing personal contact details is not allowed.',
+            AppLocalizations.of(context)!.chatMessageBlockedContains(filterResult.violations.join(', ')),
           ),
           backgroundColor: AppColors.errorRed,
           duration: const Duration(seconds: 4),
@@ -228,29 +229,30 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Report a message for review
   Future<void> _reportMessage(BuildContext context, Message message) async {
     // Show reason selection dialog
+    final l10n = AppLocalizations.of(context)!;
     final reasons = [
-      'Harassment or bullying',
-      'Spam or scam',
-      'Inappropriate content',
-      'Sharing personal information',
-      'Threatening behavior',
-      'Other',
+      l10n.chatReportReasonHarassment,
+      l10n.chatReportReasonSpam,
+      l10n.chatReportReasonInappropriate,
+      l10n.chatReportReasonPersonalInfo,
+      l10n.chatReportReasonThreatening,
+      l10n.chatReportReasonOther,
     ];
 
     final selectedReason = await showDialog<String>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Report Message',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.chatReportMessage,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'Why are you reporting this message?',
-              style: TextStyle(color: AppColors.textSecondary),
+            Text(
+              l10n.chatWhyReportMessage,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
             ...reasons.map((reason) => ListTile(
@@ -266,7 +268,7 @@ class _ChatScreenState extends State<ChatScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
         ],
       ),
@@ -285,8 +287,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Message reported. We will review it shortly.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.chatMessageReported),
             backgroundColor: AppColors.richGold,
           ),
         );
@@ -295,7 +297,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to report message: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToReportMessage(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -325,9 +327,9 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Send Attachment',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.chatSendAttachment,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -340,28 +342,28 @@ class _ChatScreenState extends State<ChatScreen> {
                 _buildAttachmentOption(
                   context,
                   icon: Icons.photo_library,
-                  label: 'Gallery',
+                  label: AppLocalizations.of(context)!.chatAttachGallery,
                   color: AppColors.richGold,
                   onTap: () => _pickImage(context, ImageSource.gallery),
                 ),
                 _buildAttachmentOption(
                   context,
                   icon: Icons.camera_alt,
-                  label: 'Camera',
+                  label: AppLocalizations.of(context)!.chatAttachCamera,
                   color: Colors.blue,
                   onTap: () => _pickImage(context, ImageSource.camera),
                 ),
                 _buildAttachmentOption(
                   context,
                   icon: Icons.videocam,
-                  label: 'Video',
+                  label: AppLocalizations.of(context)!.chatAttachVideo,
                   color: Colors.purple,
                   onTap: () => _pickVideo(context, ImageSource.gallery),
                 ),
                 _buildAttachmentOption(
                   context,
                   icon: Icons.video_call,
-                  label: 'Record',
+                  label: AppLocalizations.of(context)!.chatAttachRecord,
                   color: Colors.red,
                   onTap: () => _pickVideo(context, ImageSource.camera),
                 ),
@@ -427,7 +429,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to pick image: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToPickImage(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -449,7 +451,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to pick video: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToPickVideo(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -523,7 +525,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to upload image: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToUploadImage(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -556,8 +558,8 @@ class _ChatScreenState extends State<ChatScreen> {
       if (fileSize > 50 * 1024 * 1024) {
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Video too large. Maximum size is 50MB.'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context)!.chatVideoTooLarge),
               backgroundColor: AppColors.errorRed,
             ),
           );
@@ -610,7 +612,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to upload video: $e'),
+            content: Text(AppLocalizations.of(context)!.chatFailedToUploadVideo(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -655,9 +657,9 @@ class _ChatScreenState extends State<ChatScreen> {
             context: context,
             builder: (ctx) => AlertDialog(
               backgroundColor: AppColors.backgroundCard,
-              title: const Text(
-                'Media Limit Reached',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.chatMediaLimitReached,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               content: Text(
                 result.message,
@@ -666,7 +668,7 @@ class _ChatScreenState extends State<ChatScreen> {
               actions: [
                 TextButton(
                   onPressed: () => Navigator.pop(ctx),
-                  child: const Text('OK'),
+                  child: Text(AppLocalizations.of(context)!.ok),
                 ),
               ],
             ),
@@ -779,7 +781,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             ),
                             const SizedBox(height: 24),
                             Text(
-                              'Say hi to ${widget.otherUserProfile.displayName}!',
+                              AppLocalizations.of(context)!.chatSayHiTo(widget.otherUserProfile.displayName),
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontSize: 20,
@@ -787,11 +789,11 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             ),
                             const SizedBox(height: 12),
-                            const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 40),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 40),
                               child: Text(
-                                'Send a message to start the conversation',
-                                style: TextStyle(
+                                AppLocalizations.of(context)!.chatSendMessageToStart,
+                                style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 16,
                                 ),
@@ -862,9 +864,9 @@ class _ChatScreenState extends State<ChatScreen> {
                           size: 20,
                         ),
                         const SizedBox(width: 8),
-                        const Text(
-                          'Uploading...',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.chatUploading,
+                          style: const TextStyle(
                             color: AppColors.textSecondary,
                             fontSize: 12,
                           ),
@@ -939,9 +941,9 @@ class _ChatScreenState extends State<ChatScreen> {
               BlocBuilder<ChatBloc, ChatState>(
                 builder: (context, state) {
                   if (state is ChatLoaded && state.isOtherUserTyping) {
-                    return const Text(
-                      'typing...',
-                      style: TextStyle(
+                    return Text(
+                      AppLocalizations.of(context)!.chatTyping,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 12,
                       ),
@@ -961,7 +963,7 @@ class _ChatScreenState extends State<ChatScreen> {
             _translationEnabled ? Icons.translate : Icons.translate_outlined,
             color: _translationEnabled ? AppColors.richGold : AppColors.textSecondary,
           ),
-          tooltip: _translationEnabled ? 'Disable translation' : 'Enable translation',
+          tooltip: _translationEnabled ? AppLocalizations.of(context)!.chatDisableTranslation : AppLocalizations.of(context)!.chatEnableTranslation,
           onPressed: () {
             setState(() {
               _translationEnabled = !_translationEnabled;
@@ -974,8 +976,8 @@ class _ChatScreenState extends State<ChatScreen> {
               SnackBar(
                 content: Text(
                   _translationEnabled
-                      ? 'Translation enabled'
-                      : 'Translation disabled',
+                      ? AppLocalizations.of(context)!.chatTranslationEnabled
+                      : AppLocalizations.of(context)!.chatTranslationDisabled,
                 ),
                 duration: const Duration(seconds: 1),
                 backgroundColor: AppColors.backgroundCard,
@@ -1013,9 +1015,9 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Chat Options',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.chatOptions,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -1024,7 +1026,7 @@ class _ChatScreenState extends State<ChatScreen> {
             const SizedBox(height: 16),
             _buildOptionItem(
               icon: Icons.delete_outline,
-              label: 'Delete chat for me',
+              label: AppLocalizations.of(context)!.chatDeleteForMe,
               color: AppColors.textSecondary,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1033,7 +1035,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             _buildOptionItem(
               icon: Icons.delete_forever,
-              label: 'Delete chat for both',
+              label: AppLocalizations.of(context)!.chatDeleteForBoth,
               color: Colors.orange,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1043,7 +1045,7 @@ class _ChatScreenState extends State<ChatScreen> {
             const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.block,
-              label: 'Block ${widget.otherUserProfile.displayName}',
+              label: AppLocalizations.of(context)!.chatBlockUser(widget.otherUserProfile.displayName),
               color: AppColors.errorRed,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1052,7 +1054,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             _buildOptionItem(
               icon: Icons.flag_outlined,
-              label: 'Report ${widget.otherUserProfile.displayName}',
+              label: AppLocalizations.of(context)!.chatReportUser(widget.otherUserProfile.displayName),
               color: AppColors.errorRed,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1088,22 +1090,22 @@ class _ChatScreenState extends State<ChatScreen> {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Chat',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.chatDeleteChat,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'This will delete the chat from your device only. The other person will still see the messages.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.chatDeleteChatForMeMessage,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, true),
-            child: const Text('Delete', style: TextStyle(color: AppColors.errorRed)),
+            child: Text(AppLocalizations.of(context)!.delete, style: const TextStyle(color: AppColors.errorRed)),
           ),
         ],
       ),
@@ -1122,22 +1124,22 @@ class _ChatScreenState extends State<ChatScreen> {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Chat for Everyone',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.chatDeleteChatForEveryone,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'This will delete all messages for both you and ${widget.otherUserProfile.displayName}. This action cannot be undone.',
+          AppLocalizations.of(context)!.chatDeleteChatForBothMessage(widget.otherUserProfile.displayName),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, true),
-            child: const Text('Delete for Everyone', style: TextStyle(color: AppColors.errorRed)),
+            child: Text(AppLocalizations.of(context)!.chatDeleteForEveryone, style: const TextStyle(color: AppColors.errorRed)),
           ),
         ],
       ),
@@ -1155,8 +1157,8 @@ class _ChatScreenState extends State<ChatScreen> {
     // Check if the other user is an admin - cannot block admin
     if (widget.otherUserProfile.isAdmin) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('You cannot block an administrator.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.chatCannotBlockAdmin),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -1167,22 +1169,22 @@ class _ChatScreenState extends State<ChatScreen> {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Block User',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.chatBlockUserTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to block ${widget.otherUserProfile.displayName}? They will no longer be able to contact you.',
+          AppLocalizations.of(context)!.chatBlockUserMessage(widget.otherUserProfile.displayName),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, true),
-            child: const Text('Block', style: TextStyle(color: AppColors.errorRed)),
+            child: Text(AppLocalizations.of(context)!.chatBlock, style: const TextStyle(color: AppColors.errorRed)),
           ),
         ],
       ),
@@ -1192,7 +1194,7 @@ class _ChatScreenState extends State<ChatScreen> {
       context.read<ChatBloc>().add(ChatUserBlocked(widget.otherUserId));
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('${widget.otherUserProfile.displayName} has been blocked'),
+          content: Text(AppLocalizations.of(context)!.chatUserBlocked(widget.otherUserProfile.displayName)),
           backgroundColor: AppColors.richGold,
         ),
       );
@@ -1206,37 +1208,38 @@ class _ChatScreenState extends State<ChatScreen> {
     // Check if the other user is an admin - cannot report admin
     if (widget.otherUserProfile.isAdmin) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('You cannot report an administrator.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.chatCannotReportAdmin),
           backgroundColor: AppColors.errorRed,
         ),
       );
       return;
     }
 
+    final l10n = AppLocalizations.of(context)!;
     final reasons = [
-      'Harassment or bullying',
-      'Fake profile / Catfishing',
-      'Spam or scam',
-      'Inappropriate content',
-      'Threatening behavior',
-      'Underage user',
-      'Other',
+      l10n.chatReportReasonHarassment,
+      l10n.chatReportReasonFakeProfile,
+      l10n.chatReportReasonSpam,
+      l10n.chatReportReasonInappropriate,
+      l10n.chatReportReasonThreatening,
+      l10n.chatReportReasonUnderage,
+      l10n.chatReportReasonOther,
     ];
 
     final selectedReason = await showDialog<String>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Report User',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.chatReportUserTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Why are you reporting ${widget.otherUserProfile.displayName}?',
+              l10n.chatWhyReportUser(widget.otherUserProfile.displayName),
               style: const TextStyle(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
@@ -1253,7 +1256,7 @@ class _ChatScreenState extends State<ChatScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
         ],
       ),
@@ -1265,8 +1268,8 @@ class _ChatScreenState extends State<ChatScreen> {
         reason: selectedReason,
       ));
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('User reported. We will review your report shortly.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.chatUserReported),
           backgroundColor: AppColors.richGold,
         ),
       );
@@ -1306,8 +1309,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (conversationId == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Unable to forward message'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.chatUnableToForward),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -1328,7 +1331,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     final replyContent = _replyingToMessage!.content;
     final isCurrentUserMessage = _replyingToMessage!.senderId == widget.currentUserId;
-    final senderName = isCurrentUserMessage ? 'You' : widget.otherUserProfile.displayName;
+    final senderName = isCurrentUserMessage ? AppLocalizations.of(context)!.chatYou : widget.otherUserProfile.displayName;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -1356,7 +1359,7 @@ class _ChatScreenState extends State<ChatScreen> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Replying to $senderName',
+                  AppLocalizations.of(context)!.chatReplyingTo(senderName),
                   style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 12,
@@ -1415,7 +1418,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   fontSize: 16,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Type a message...',
+                  hintText: AppLocalizations.of(context)!.typeMessage,
                   hintStyle: const TextStyle(
                     color: AppColors.textTertiary,
                   ),
