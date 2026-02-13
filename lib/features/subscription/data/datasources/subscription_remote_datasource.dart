@@ -21,10 +21,12 @@ class SubscriptionRemoteDataSource {
   // Product IDs (must match backend and store configurations)
   static const String silverProductId = 'silver_premium_monthly';
   static const String goldProductId = 'gold_premium_monthly';
+  static const String platinumProductId = 'platinum_vip_monthly';
 
   static const Set<String> _productIds = {
     silverProductId,
     goldProductId,
+    platinumProductId,
   };
 
   // Purchase stream subscription for monitoring
@@ -306,8 +308,9 @@ class SubscriptionRemoteDataSource {
 
   /// Helper: Get tier from product ID
   String _getTierFromProductId(String productId) {
-    if (productId.contains('silver')) return 'silver';
+    if (productId.contains('platinum')) return 'platinum';
     if (productId.contains('gold')) return 'gold';
+    if (productId.contains('silver')) return 'silver';
     return 'basic';
   }
 

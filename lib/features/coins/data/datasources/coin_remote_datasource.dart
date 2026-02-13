@@ -276,7 +276,7 @@ class CoinRemoteDataSource {
       applicationUserName: userId,
     );
 
-    await inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+    await inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
   }
 
   /// Verify coin purchase (should be done server-side)

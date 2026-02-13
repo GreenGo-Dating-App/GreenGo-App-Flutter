@@ -80,6 +80,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
       const productIds = {
         'silver_premium_monthly',
         'gold_premium_monthly',
+        'platinum_vip_monthly',
       };
 
       final response = await inAppPurchase.queryProductDetails(productIds);
@@ -179,8 +180,9 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   }
 
   SubscriptionTier _getTierFromProductId(String productId) {
-    if (productId.contains('silver')) return SubscriptionTier.silver;
+    if (productId.contains('platinum')) return SubscriptionTier.platinum;
     if (productId.contains('gold')) return SubscriptionTier.gold;
+    if (productId.contains('silver')) return SubscriptionTier.silver;
     return SubscriptionTier.basic;
   }
 
