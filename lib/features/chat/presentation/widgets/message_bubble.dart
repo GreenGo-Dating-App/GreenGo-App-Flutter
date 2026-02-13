@@ -138,11 +138,17 @@ class _MessageBubbleState extends State<MessageBubble> {
                   if (isCurrentUser) ...[
                     const SizedBox(width: 4),
                     Icon(
-                      message.isRead ? Icons.done_all : Icons.done,
+                      message.status == MessageStatus.sending
+                          ? Icons.access_time
+                          : message.isRead
+                              ? Icons.done_all
+                              : Icons.done,
                       size: 14,
-                      color: message.isRead
-                          ? AppColors.successGreen
-                          : AppColors.deepBlack.withOpacity(0.6),
+                      color: message.status == MessageStatus.sending
+                          ? AppColors.deepBlack.withOpacity(0.4)
+                          : message.isRead
+                              ? AppColors.successGreen
+                              : AppColors.deepBlack.withOpacity(0.6),
                     ),
                   ],
                 ],

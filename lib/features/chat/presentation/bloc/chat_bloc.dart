@@ -205,14 +205,28 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
           );
         }
 
-        // Message will be added via stream listener
-        // Revert to loaded state
+        // Optimistic update: add message locally so it shows immediately
+        final optimisticMessage = Message(
+          messageId: 'optimistic_${DateTime.now().millisecondsSinceEpoch}',
+          matchId: _matchId!,
+          conversationId: _conversationId ?? '',
+          senderId: _currentUserId!,
+          receiverId: _otherUserId!,
+          content: event.content,
+          type: event.type,
+          sentAt: DateTime.now(),
+          status: MessageStatus.sending,
+        );
+
+        final updatedMessages = [optimisticMessage, ...currentState.messages];
+
         emit(ChatLoaded(
           conversation: currentState.conversation,
-          messages: currentState.messages,
+          messages: updatedMessages,
           currentUserId: currentState.currentUserId,
           otherUserId: currentState.otherUserId,
         ));
+        // Firestore stream will replace optimistic message with the real one
       },
     );
   }

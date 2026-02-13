@@ -184,8 +184,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     _messageController.clear();
 
-    // Scroll to bottom after sending
-    Future.delayed(const Duration(milliseconds: 300), () {
+    // Scroll to bottom after sending (post-frame callback for reliable timing)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
           0,
