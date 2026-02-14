@@ -22,7 +22,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
 
     <application
-        android:label="greengo_chat"
+        android:label="GreenGo"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
