@@ -94,12 +94,13 @@ class _SwipeCardState extends State<SwipeCard>
       onPanStart: widget.isFront ? _onPanStart : null,
       onPanUpdate: widget.isFront ? _onPanUpdate : null,
       onPanEnd: widget.isFront ? _onPanEnd : null,
-      onTap: widget.onTap,
       child: SizedBox(
         height: screenSize.height * 0.75,
         child: Stack(
           children: [
             _buildCard(screenSize),
+            _buildInfoGradient(),
+            _buildProfileInfo(),
             _buildGradientOverlay(),
             if (_swipeDirection != null && _swipeIntensity > 0)
               _buildSwipeIndicators(),
@@ -147,6 +148,151 @@ class _SwipeCardState extends State<SwipeCard>
           size: 100,
           color: AppColors.textTertiary,
         ),
+      ),
+    );
+  }
+
+  Widget _buildInfoGradient() {
+    return Positioned.fill(
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+          gradient: const LinearGradient(
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            stops: [0.0, 0.33, 0.66],
+            colors: [
+              Colors.black,
+              Color(0xAA000000),
+              Colors.transparent,
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildProfileInfo() {
+    final profile = widget.card.candidate.profile;
+    final interests = profile.interests;
+    final languages = profile.languages;
+
+    return Positioned(
+      left: 16,
+      right: 16,
+      bottom: 16,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Name and age
+          Text(
+            '${widget.card.displayName}, ${widget.card.age}',
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+              shadows: [
+                Shadow(color: Colors.black54, blurRadius: 4),
+              ],
+            ),
+          ),
+          const SizedBox(height: 6),
+
+          // Location
+          Row(
+            children: [
+              const Icon(Icons.location_on, color: Colors.white70, size: 16),
+              const SizedBox(width: 4),
+              Text(
+                widget.card.distanceText,
+                style: const TextStyle(
+                  color: Colors.white70,
+                  fontSize: 14,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+
+          // Languages
+          if (languages.isNotEmpty) ...[
+            Row(
+              children: [
+                const Icon(Icons.translate, color: Colors.white70, size: 16),
+                const SizedBox(width: 4),
+                Expanded(
+                  child: Text(
+                    languages.join(', '),
+                    style: const TextStyle(
+                      color: Colors.white70,
+                      fontSize: 13,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+          ],
+
+          // Interests
+          if (interests.isNotEmpty) ...[
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: interests.take(5).map((interest) {
+                return Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.white24),
+                  ),
+                  child: Text(
+                    interest,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                    ),
+                  ),
+                );
+              }).toList(),
+            ),
+            const SizedBox(height: 8),
+          ],
+
+          // Match percentage
+          Row(
+            children: [
+              const Icon(Icons.favorite, color: AppColors.richGold, size: 16),
+              const SizedBox(width: 4),
+              Text(
+                '${widget.card.matchPercentage} match',
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+
+          // Bio
+          if (widget.card.bioPreview.isNotEmpty)
+            Text(
+              widget.card.bioPreview,
+              style: const TextStyle(
+                color: Colors.white60,
+                fontSize: 13,
+                height: 1.3,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+        ],
       ),
     );
   }

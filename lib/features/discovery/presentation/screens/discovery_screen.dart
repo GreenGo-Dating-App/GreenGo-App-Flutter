@@ -318,19 +318,6 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           onSwipe: enabled
               ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
               : null,
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => ProfileDetailScreen(
-                  profile: cards[currentIndex].candidate.profile,
-                  currentUserId: userId,
-                  onSwipe: (actionType) {
-                    _handleSwipeFromProfile(context, cards[currentIndex], actionType);
-                  },
-                ),
-              ),
-            );
-          },
         ),
       ],
     );
