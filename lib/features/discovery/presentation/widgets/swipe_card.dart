@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:math' as math;
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/discovery_card.dart';
@@ -41,9 +40,7 @@ class _SwipeCardState extends State<SwipeCard>
 
   late AnimationController _animationController;
   late AnimationController _indicatorBounceController;
-  late AnimationController _sparkleController;
   late Animation<double> _bounceAnimation;
-  late Animation<double> _sparkleAnimation;
 
   @override
   void initState() {
@@ -58,22 +55,10 @@ class _SwipeCardState extends State<SwipeCard>
       vsync: this,
     );
 
-    _sparkleController = AnimationController(
-      duration: const Duration(milliseconds: 500),
-      vsync: this,
-    );
-
     _bounceAnimation = Tween<double>(begin: 1.0, end: 1.15).animate(
       CurvedAnimation(
         parent: _indicatorBounceController,
         curve: Curves.elasticOut,
-      ),
-    );
-
-    _sparkleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _sparkleController,
-        curve: Curves.easeOut,
       ),
     );
   }
@@ -82,7 +67,6 @@ class _SwipeCardState extends State<SwipeCard>
   void dispose() {
     _animationController.dispose();
     _indicatorBounceController.dispose();
-    _sparkleController.dispose();
     super.dispose();
   }
 
@@ -404,80 +388,20 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
               ),
 
-            // Super Like indicator (up swipe) with sparkle effect
+            // Super Like indicator (up swipe)
             if (_swipeDirection == SwipeDirection.up)
               Positioned(
-                bottom: 100,
+                top: 50,
                 left: 0,
                 right: 0,
                 child: Center(
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      // Sparkle particles
-                      ...List.generate(8, (index) {
-                        final angle = (index / 8) * 2 * math.pi;
-                        final radius = 60 * _sparkleAnimation.value;
-                        return Positioned(
-                          left: math.cos(angle) * radius + 80,
-                          top: math.sin(angle) * radius + 30,
-                          child: Opacity(
-                            opacity: opacity * (1 - _sparkleAnimation.value),
-                            child: Icon(
-                              Icons.star,
-                              color: AppColors.richGold,
-                              size: 16,
-                            ),
-                          ),
-                        );
-                      }),
-                      // Main indicator
-                      Transform.scale(
-                        scale: _bounceAnimation.value,
-                        child: Container(
-                          padding: const EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: AppColors.richGold.withOpacity(opacity),
-                              width: 4,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.richGold.withOpacity(opacity * 0.6),
-                                blurRadius: 25,
-                                spreadRadius: 8,
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                Icons.star,
-                                color: AppColors.richGold.withOpacity(opacity),
-                                size: 32,
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                'SUPER LIKE',
-                                style: TextStyle(
-                                  color: AppColors.richGold.withOpacity(opacity),
-                                  fontSize: 42,
-                                  fontWeight: FontWeight.bold,
-                                  shadows: [
-                                    Shadow(
-                                      color: AppColors.richGold.withOpacity(opacity * 0.8),
-                                      blurRadius: 15,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
+                  child: Transform.scale(
+                    scale: _bounceAnimation.value,
+                    child: _buildIndicatorBox(
+                      'SUPER LIKE',
+                      AppColors.richGold,
+                      opacity,
+                    ),
                   ),
                 ),
               ),
@@ -584,10 +508,6 @@ class _SwipeCardState extends State<SwipeCard>
       _hasTriggeredHaptic = true;
       HapticFeedback.mediumImpact();
       _indicatorBounceController.forward(from: 0);
-
-      if (_swipeDirection == SwipeDirection.up) {
-        _sparkleController.forward(from: 0);
-      }
     } else if (_hasTriggeredHaptic && magnitude < threshold) {
       _hasTriggeredHaptic = false;
     }
