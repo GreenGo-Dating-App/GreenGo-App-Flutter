@@ -91,8 +91,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         actions: [
           // Coin Balance Display
           Container(
-            margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            margin: const EdgeInsets.only(right: 12, top: 8, bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
             decoration: BoxDecoration(
               color: const Color(0xFF1A1A1A),
               borderRadius: BorderRadius.circular(20),
@@ -107,14 +107,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 const Icon(
                   Icons.monetization_on,
                   color: Color(0xFFFFD700),
-                  size: 18,
+                  size: 16,
                 ),
-                const SizedBox(width: 6),
+                const SizedBox(width: 4),
                 Text(
-                  _formatCoinBalance(_currentCoinBalance),
+                  '$_currentCoinBalance',
                   style: const TextStyle(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -1081,13 +1081,35 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
               ),
               const SizedBox(height: 16),
-              const Text(
-                'GreenGoCoins',
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+              Text.rich(
+                TextSpan(
+                  children: [
+                    const TextSpan(
+                      text: 'You have ',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    TextSpan(
+                      text: '$_currentCoinBalance',
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFFFD700),
+                      ),
+                    ),
+                    const TextSpan(
+                      text: ' GreenGoCoins',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
               const Text(

@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../domain/entities/match_preferences.dart';
 import '../../../matching/domain/repositories/matching_repository.dart';
 import '../../domain/entities/swipe_action.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
+import '../../../notifications/domain/entities/notification.dart';
+import '../../../notifications/domain/repositories/notification_repository.dart';
 import '../bloc/discovery_bloc.dart';
 import '../bloc/discovery_event.dart';
 import '../bloc/discovery_state.dart';
@@ -50,8 +55,28 @@ class _DiscoveryScreenContent extends StatefulWidget {
 
 class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final ValueNotifier<double> _dragProgress = ValueNotifier(0.0);
+  Profile? _currentUserProfile;
 
   String get userId => widget.userId;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCurrentUserProfile();
+  }
+
+  Future<void> _loadCurrentUserProfile() async {
+    final profileRepo = di.sl<ProfileRepository>();
+    final result = await profileRepo.getProfile(userId);
+    result.fold(
+      (failure) => debugPrint('Could not load current user profile: ${failure.message}'),
+      (profile) {
+        if (mounted) {
+          setState(() => _currentUserProfile = profile);
+        }
+      },
+    );
+  }
 
   @override
   void dispose() {
@@ -67,9 +92,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         child: BlocConsumer<DiscoveryBloc, DiscoveryState>(
           listener: (context, state) {
             if (state is DiscoverySwipeCompleted && state.createdMatch) {
-              // Show match notification
-              // Note: In production, fetch the matched profile
-              _showMatchDialog(context);
+              _showMatchDialog(context, state);
             }
           },
           builder: (context, state) {
@@ -317,6 +340,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     return SwipeButtons(
       enabled: enabled,
       onPass: () => _handleSwipe(context, card, SwipeDirection.left),
+      onSkip: () => _handleSwipe(context, card, SwipeDirection.down),
       onSuperLike: () => _handleSwipe(context, card, SwipeDirection.up),
       onLike: () => _handleSwipe(context, card, SwipeDirection.right),
     );
@@ -334,6 +358,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       case SwipeDirection.up:
         actionType = SwipeActionType.superLike;
         break;
+      case SwipeDirection.down:
+        actionType = SwipeActionType.pass;
+        break;
     }
 
     context.read<DiscoveryBloc>().add(
@@ -343,6 +370,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             actionType: actionType,
           ),
         );
+
+    // Send notification to target user when super liked
+    if (actionType == SwipeActionType.superLike) {
+      _sendSuperLikeNotification(card.userId, card.displayName);
+    }
   }
 
   void _handleSwipeFromProfile(BuildContext context, card, SwipeActionType actionType) {
@@ -355,43 +387,77 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         );
   }
 
-  void _showMatchDialog(BuildContext context) {
-    // TODO: Fetch actual matched profile
-    // For now, showing placeholder
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          "It's a Match!",
-          style: TextStyle(color: AppColors.richGold),
-        ),
-        content: const Text(
-          'You have a new match!',
-          style: TextStyle(color: AppColors.textPrimary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
-              'Keep Swiping',
-              style: TextStyle(color: AppColors.textSecondary),
+  void _showMatchDialog(BuildContext context, DiscoverySwipeCompleted state) async {
+    // Find the matched user's profile from the cards list
+    Profile? matchedProfile;
+    if (state.matchedUserId != null) {
+      try {
+        final matchedCard = state.cards.firstWhere(
+          (card) => card.userId == state.matchedUserId,
+        );
+        matchedProfile = matchedCard.candidate.profile;
+      } catch (_) {
+        // Card not found in list, try fetching from repository
+        final profileRepo = di.sl<ProfileRepository>();
+        final result = await profileRepo.getProfile(state.matchedUserId!);
+        result.fold(
+          (failure) => debugPrint('Could not fetch matched profile: ${failure.message}'),
+          (profile) => matchedProfile = profile,
+        );
+      }
+    }
+
+    // Ensure current user profile is loaded
+    if (_currentUserProfile == null) {
+      await _loadCurrentUserProfile();
+    }
+
+    if (!mounted) return;
+
+    if (_currentUserProfile != null && matchedProfile != null) {
+      showMatchNotification(
+        context,
+        currentUserProfile: _currentUserProfile!,
+        matchedProfile: matchedProfile!,
+        onKeepSwiping: () {},
+        onSendMessage: () {
+          // TODO: Navigate to chat with matched user
+        },
+        onViewProfile: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ProfileDetailScreen(
+                profile: matchedProfile!,
+                currentUserId: userId,
+              ),
             ),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              // TODO: Navigate to chat
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.richGold,
-              foregroundColor: AppColors.deepBlack,
-            ),
-            child: const Text('Send Message'),
-          ),
-        ],
-      ),
-    );
+          );
+        },
+      );
+    }
+  }
+
+  Future<void> _sendSuperLikeNotification(String targetUserId, String targetDisplayName) async {
+    try {
+      final notificationRepo = di.sl<NotificationRepository>();
+      final senderName = _currentUserProfile?.displayName ?? 'Someone';
+      final senderPhoto = _currentUserProfile?.photoUrls.isNotEmpty == true
+          ? _currentUserProfile!.photoUrls.first
+          : null;
+
+      await notificationRepo.createNotification(
+        userId: targetUserId,
+        type: NotificationType.superLike,
+        title: 'You got a Super Like!',
+        message: '$senderName super liked you!',
+        data: {
+          'senderUserId': userId,
+          'senderDisplayName': senderName,
+        },
+        imageUrl: senderPhoto,
+      );
+    } catch (e) {
+      debugPrint('Failed to send super like notification: $e');
+    }
   }
 }

@@ -7,7 +7,9 @@ import '../../domain/entities/discovery_card.dart';
 
 /// Swipeable Card Widget
 ///
-/// Displays a profile card that can be swiped left/right/up
+/// Displays a profile card with directional gradient overlay on swipe.
+/// Card stays in place — a color gradient fades in to indicate the action,
+/// then the next card appears seamlessly.
 class SwipeCard extends StatefulWidget {
   final DiscoveryCard card;
   final Function(SwipeDirection)? onSwipe;
@@ -30,15 +32,16 @@ class SwipeCard extends StatefulWidget {
 
 class _SwipeCardState extends State<SwipeCard>
     with TickerProviderStateMixin {
-  Offset _position = Offset.zero;
   bool _isDragging = false;
-  double _angle = 0;
   bool _hasTriggeredHaptic = false;
+  Offset _cumulativeOffset = Offset.zero;
+
+  SwipeDirection? _swipeDirection;
+  double _swipeIntensity = 0.0;
 
   late AnimationController _animationController;
   late AnimationController _indicatorBounceController;
   late AnimationController _sparkleController;
-  late Animation<Offset> _animation;
   late Animation<double> _bounceAnimation;
   late Animation<double> _sparkleAnimation;
 
@@ -46,7 +49,7 @@ class _SwipeCardState extends State<SwipeCard>
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: const Duration(milliseconds: 400),
+      duration: const Duration(milliseconds: 250),
       vsync: this,
     );
 
@@ -86,26 +89,20 @@ class _SwipeCardState extends State<SwipeCard>
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    final milliseconds = _isDragging ? 0 : 500;
 
-    return AnimatedContainer(
-      duration: Duration(milliseconds: milliseconds),
-      curve: Curves.easeOutBack,
-      transform: Matrix4.identity()
-        ..translate(_position.dx, _position.dy)
-        ..rotateZ(_angle),
-      child: GestureDetector(
-        onPanStart: widget.isFront ? _onPanStart : null,
-        onPanUpdate: widget.isFront ? _onPanUpdate : null,
-        onPanEnd: widget.isFront ? _onPanEnd : null,
-        onTap: widget.onTap,
+    return GestureDetector(
+      onPanStart: widget.isFront ? _onPanStart : null,
+      onPanUpdate: widget.isFront ? _onPanUpdate : null,
+      onPanEnd: widget.isFront ? _onPanEnd : null,
+      onTap: widget.onTap,
+      child: SizedBox(
+        height: screenSize.height * 0.75,
         child: Stack(
           children: [
-            // Card background
             _buildCard(screenSize),
-
-            // Swipe indicators
-            if (_isDragging && widget.isFront) _buildSwipeIndicators(),
+            _buildGradientOverlay(),
+            if (_swipeDirection != null && _swipeIntensity > 0)
+              _buildSwipeIndicators(),
           ],
         ),
       ),
@@ -114,7 +111,6 @@ class _SwipeCardState extends State<SwipeCard>
 
   Widget _buildCard(Size screenSize) {
     return Container(
-      height: screenSize.height * 0.75,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
         boxShadow: [
@@ -132,6 +128,8 @@ class _SwipeCardState extends State<SwipeCard>
             ? Image.network(
                 widget.card.primaryPhoto!,
                 fit: BoxFit.cover,
+                width: double.infinity,
+                height: double.infinity,
                 errorBuilder: (context, error, stackTrace) =>
                     _buildPlaceholder(),
               )
@@ -153,17 +151,79 @@ class _SwipeCardState extends State<SwipeCard>
     );
   }
 
+  Widget _buildGradientOverlay() {
+    if (_swipeDirection == null || _swipeIntensity <= 0) {
+      return const SizedBox.shrink();
+    }
+
+    final color = _getGradientColor(_swipeDirection!);
+
+    return Positioned.fill(
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+          gradient: LinearGradient(
+            begin: _getGradientBegin(_swipeDirection!),
+            end: _getGradientEnd(_swipeDirection!),
+            colors: [
+              color.withOpacity(_swipeIntensity * 0.7),
+              Colors.transparent,
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Color _getGradientColor(SwipeDirection direction) {
+    switch (direction) {
+      case SwipeDirection.left:
+        return AppColors.errorRed;
+      case SwipeDirection.right:
+        return AppColors.successGreen;
+      case SwipeDirection.up:
+        return AppColors.richGold;
+      case SwipeDirection.down:
+        return AppColors.infoBlue;
+    }
+  }
+
+  Alignment _getGradientBegin(SwipeDirection direction) {
+    switch (direction) {
+      case SwipeDirection.left:
+        return Alignment.centerLeft;
+      case SwipeDirection.right:
+        return Alignment.centerRight;
+      case SwipeDirection.up:
+        return Alignment.bottomCenter;
+      case SwipeDirection.down:
+        return Alignment.topCenter;
+    }
+  }
+
+  Alignment _getGradientEnd(SwipeDirection direction) {
+    switch (direction) {
+      case SwipeDirection.left:
+        return Alignment.centerRight;
+      case SwipeDirection.right:
+        return Alignment.centerLeft;
+      case SwipeDirection.up:
+        return Alignment.topCenter;
+      case SwipeDirection.down:
+        return Alignment.bottomCenter;
+    }
+  }
+
   Widget _buildSwipeIndicators() {
-    final opacity = (_position.dx.abs() / 100).clamp(0.0, 1.0);
-    final verticalOpacity = (_position.dy.abs() / 100).clamp(0.0, 1.0);
+    final opacity = _swipeIntensity.clamp(0.0, 1.0);
 
     return AnimatedBuilder(
       animation: _bounceAnimation,
       builder: (context, child) {
         return Stack(
           children: [
-            // Like indicator (right swipe) with glow effect
-            if (_position.dx > 20)
+            // Like indicator (right swipe)
+            if (_swipeDirection == SwipeDirection.right)
               Positioned(
                 top: 50,
                 left: 50,
@@ -171,43 +231,17 @@ class _SwipeCardState extends State<SwipeCard>
                   angle: -0.3,
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: AppColors.successGreen.withOpacity(opacity),
-                          width: 4,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.successGreen.withOpacity(opacity * 0.5),
-                            blurRadius: 20,
-                            spreadRadius: 5,
-                          ),
-                        ],
-                      ),
-                      child: Text(
-                        'LIKE',
-                        style: TextStyle(
-                          color: AppColors.successGreen.withOpacity(opacity),
-                          fontSize: 42,
-                          fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              color: AppColors.successGreen.withOpacity(opacity * 0.8),
-                              blurRadius: 15,
-                            ),
-                          ],
-                        ),
-                      ),
+                    child: _buildIndicatorBox(
+                      'LIKE',
+                      AppColors.successGreen,
+                      opacity,
                     ),
                   ),
                 ),
               ),
 
-            // Nope indicator (left swipe) with glow effect
-            if (_position.dx < -20)
+            // Nope indicator (left swipe)
+            if (_swipeDirection == SwipeDirection.left)
               Positioned(
                 top: 50,
                 right: 50,
@@ -215,43 +249,17 @@ class _SwipeCardState extends State<SwipeCard>
                   angle: 0.3,
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: AppColors.errorRed.withOpacity(opacity),
-                          width: 4,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.errorRed.withOpacity(opacity * 0.5),
-                            blurRadius: 20,
-                            spreadRadius: 5,
-                          ),
-                        ],
-                      ),
-                      child: Text(
-                        'NOPE',
-                        style: TextStyle(
-                          color: AppColors.errorRed.withOpacity(opacity),
-                          fontSize: 42,
-                          fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              color: AppColors.errorRed.withOpacity(opacity * 0.8),
-                              blurRadius: 15,
-                            ),
-                          ],
-                        ),
-                      ),
+                    child: _buildIndicatorBox(
+                      'NOPE',
+                      AppColors.errorRed,
+                      opacity,
                     ),
                   ),
                 ),
               ),
 
             // Super Like indicator (up swipe) with sparkle effect
-            if (_position.dy < -20)
+            if (_swipeDirection == SwipeDirection.up)
               Positioned(
                 bottom: 100,
                 left: 0,
@@ -268,7 +276,7 @@ class _SwipeCardState extends State<SwipeCard>
                           left: math.cos(angle) * radius + 80,
                           top: math.sin(angle) * radius + 30,
                           child: Opacity(
-                            opacity: verticalOpacity * (1 - _sparkleAnimation.value),
+                            opacity: opacity * (1 - _sparkleAnimation.value),
                             child: Icon(
                               Icons.star,
                               color: AppColors.richGold,
@@ -284,13 +292,13 @@ class _SwipeCardState extends State<SwipeCard>
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: AppColors.richGold.withOpacity(verticalOpacity),
+                              color: AppColors.richGold.withOpacity(opacity),
                               width: 4,
                             ),
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: AppColors.richGold.withOpacity(verticalOpacity * 0.6),
+                                color: AppColors.richGold.withOpacity(opacity * 0.6),
                                 blurRadius: 25,
                                 spreadRadius: 8,
                               ),
@@ -301,19 +309,19 @@ class _SwipeCardState extends State<SwipeCard>
                             children: [
                               Icon(
                                 Icons.star,
-                                color: AppColors.richGold.withOpacity(verticalOpacity),
+                                color: AppColors.richGold.withOpacity(opacity),
                                 size: 32,
                               ),
                               const SizedBox(width: 8),
                               Text(
                                 'SUPER LIKE',
                                 style: TextStyle(
-                                  color: AppColors.richGold.withOpacity(verticalOpacity),
+                                  color: AppColors.richGold.withOpacity(opacity),
                                   fontSize: 42,
                                   fontWeight: FontWeight.bold,
                                   shadows: [
                                     Shadow(
-                                      color: AppColors.richGold.withOpacity(verticalOpacity * 0.8),
+                                      color: AppColors.richGold.withOpacity(opacity * 0.8),
                                       blurRadius: 15,
                                     ),
                                   ],
@@ -327,15 +335,80 @@ class _SwipeCardState extends State<SwipeCard>
                   ),
                 ),
               ),
+
+            // Skip indicator (down swipe)
+            if (_swipeDirection == SwipeDirection.down)
+              Positioned(
+                top: 50,
+                left: 0,
+                right: 0,
+                child: Center(
+                  child: Transform.scale(
+                    scale: _bounceAnimation.value,
+                    child: _buildIndicatorBox(
+                      'SKIP',
+                      AppColors.infoBlue,
+                      opacity,
+                    ),
+                  ),
+                ),
+              ),
           ],
         );
       },
     );
   }
 
+  Widget _buildIndicatorBox(String text, Color color, double opacity) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: color.withOpacity(opacity),
+          width: 4,
+        ),
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: color.withOpacity(opacity * 0.5),
+            blurRadius: 20,
+            spreadRadius: 5,
+          ),
+        ],
+      ),
+      child: Text(
+        text,
+        style: TextStyle(
+          color: color.withOpacity(opacity),
+          fontSize: 42,
+          fontWeight: FontWeight.bold,
+          shadows: [
+            Shadow(
+              color: color.withOpacity(opacity * 0.8),
+              blurRadius: 15,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  SwipeDirection _computeDominantDirection(Offset offset) {
+    final absX = offset.dx.abs();
+    final absY = offset.dy.abs();
+
+    if (absX > absY) {
+      return offset.dx > 0 ? SwipeDirection.right : SwipeDirection.left;
+    } else {
+      return offset.dy < 0 ? SwipeDirection.up : SwipeDirection.down;
+    }
+  }
+
   void _onPanStart(DragStartDetails details) {
+    _animationController.stop();
     setState(() {
       _isDragging = true;
+      _cumulativeOffset = Offset.zero;
     });
   }
 
@@ -343,32 +416,33 @@ class _SwipeCardState extends State<SwipeCard>
     final screenWidth = MediaQuery.of(context).size.width;
 
     setState(() {
-      _position += details.delta;
+      _cumulativeOffset += details.delta;
 
-      // Calculate rotation angle based on horizontal position
-      final x = _position.dx;
-      _angle = (x / 1000).clamp(-0.3, 0.3);
+      // Compute dominant direction
+      _swipeDirection = _computeDominantDirection(_cumulativeOffset);
+
+      // Compute intensity based on magnitude relative to threshold
+      final threshold = screenWidth * 0.25;
+      final magnitude = _cumulativeOffset.distance;
+      _swipeIntensity = (magnitude / threshold).clamp(0.0, 1.0);
     });
 
     // Report drag progress for back card parallax
-    final progress = (_position.dx.abs() / (screenWidth * 0.25)).clamp(0.0, 1.0);
-    widget.onDragProgress?.call(progress);
+    widget.onDragProgress?.call(_swipeIntensity);
 
     // Trigger haptic feedback when crossing threshold
-    final threshold = screenWidth * 0.15;
-    if (!_hasTriggeredHaptic &&
-        (_position.dx.abs() > threshold || _position.dy < -50)) {
+    final screenWidth2 = MediaQuery.of(context).size.width;
+    final threshold = screenWidth2 * 0.15;
+    final magnitude = _cumulativeOffset.distance;
+    if (!_hasTriggeredHaptic && magnitude > threshold) {
       _hasTriggeredHaptic = true;
       HapticFeedback.mediumImpact();
       _indicatorBounceController.forward(from: 0);
 
-      // Start sparkle animation for super like
-      if (_position.dy < -50) {
+      if (_swipeDirection == SwipeDirection.up) {
         _sparkleController.forward(from: 0);
       }
-    } else if (_hasTriggeredHaptic &&
-        _position.dx.abs() < threshold &&
-        _position.dy > -50) {
+    } else if (_hasTriggeredHaptic && magnitude < threshold) {
       _hasTriggeredHaptic = false;
     }
   }
@@ -381,81 +455,104 @@ class _SwipeCardState extends State<SwipeCard>
 
     final screenWidth = MediaQuery.of(context).size.width;
     final velocity = details.velocity.pixelsPerSecond;
+    final velocityThreshold = 800.0;
+    final positionThreshold = screenWidth * 0.25;
 
-    // Determine swipe direction
+    // Determine if the swipe crosses threshold
     SwipeDirection? direction;
 
-    // Reduced threshold from 0.4 to 0.25 for easier swipes
-    // Also add velocity-based detection for fast flicks
-    final velocityThreshold = 800.0;
-
-    if (_position.dx.abs() > screenWidth * 0.25 ||
+    if (_cumulativeOffset.dx.abs() > positionThreshold ||
         velocity.dx.abs() > velocityThreshold) {
-      // Horizontal swipe (position-based or velocity-based)
-      if (_position.dx > 0 || velocity.dx > velocityThreshold) {
+      if (_cumulativeOffset.dx > 0 || velocity.dx > velocityThreshold) {
         direction = SwipeDirection.right;
-      } else if (_position.dx < 0 || velocity.dx < -velocityThreshold) {
+      } else if (_cumulativeOffset.dx < 0 || velocity.dx < -velocityThreshold) {
         direction = SwipeDirection.left;
       }
-    } else if (_position.dy < -80 || velocity.dy < -velocityThreshold) {
-      // Up swipe (super like) - reduced threshold from -100 to -80
+    } else if (_cumulativeOffset.dy < -80 || velocity.dy < -velocityThreshold) {
       direction = SwipeDirection.up;
+    } else if (_cumulativeOffset.dy > 80 || velocity.dy > velocityThreshold) {
+      direction = SwipeDirection.down;
     }
 
     if (direction != null) {
-      // Heavy haptic feedback on swipe complete
       HapticFeedback.heavyImpact();
-      // Animate card off screen
-      _animateCardOffScreen(direction);
+      _completeSwipe(direction);
     } else {
-      // Return to center
-      _resetPosition();
+      _cancelSwipe();
     }
   }
 
-  void _animateCardOffScreen(SwipeDirection direction) {
-    final screenSize = MediaQuery.of(context).size;
+  void _completeSwipe(SwipeDirection direction) {
+    // Set direction for the completion animation
+    setState(() {
+      _swipeDirection = direction;
+    });
 
-    Offset endPosition;
-    switch (direction) {
-      case SwipeDirection.left:
-        endPosition = Offset(-screenSize.width * 1.5, _position.dy);
-        break;
-      case SwipeDirection.right:
-        endPosition = Offset(screenSize.width * 1.5, _position.dy);
-        break;
-      case SwipeDirection.up:
-        endPosition = Offset(_position.dx, -screenSize.height * 1.5);
-        break;
-    }
+    // Animate intensity to 1.0
+    final startIntensity = _swipeIntensity;
+    _animationController.duration = const Duration(milliseconds: 250);
 
-    _animation = Tween<Offset>(
-      begin: _position,
-      end: endPosition,
-    ).animate(CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.fastOutSlowIn,
-    ));
+    late Animation<double> intensityAnim;
+    intensityAnim = Tween<double>(begin: startIntensity, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: Curves.easeOut,
+      ),
+    );
 
-    // FIX: Add listener BEFORE forward() to ensure animation updates are captured
-    _animation.addListener(() {
+    void listener() {
       if (mounted) {
         setState(() {
-          _position = _animation.value;
+          _swipeIntensity = intensityAnim.value;
         });
       }
-    });
+    }
+
+    intensityAnim.addListener(listener);
 
     _animationController.forward(from: 0).then((_) {
+      intensityAnim.removeListener(listener);
       widget.onSwipe?.call(direction);
-      _resetPosition();
+      _reset();
     });
   }
 
-  void _resetPosition() {
+  void _cancelSwipe() {
+    final startIntensity = _swipeIntensity;
+    final startDirection = _swipeDirection;
+
+    _animationController.duration = const Duration(milliseconds: 150);
+
+    late Animation<double> intensityAnim;
+    intensityAnim = Tween<double>(begin: startIntensity, end: 0.0).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: Curves.easeOut,
+      ),
+    );
+
+    void listener() {
+      if (mounted) {
+        setState(() {
+          _swipeIntensity = intensityAnim.value;
+          _swipeDirection = startDirection;
+        });
+      }
+    }
+
+    intensityAnim.addListener(listener);
+
+    _animationController.forward(from: 0).then((_) {
+      intensityAnim.removeListener(listener);
+      _reset();
+    });
+  }
+
+  void _reset() {
     setState(() {
-      _position = Offset.zero;
-      _angle = 0;
+      _swipeDirection = null;
+      _swipeIntensity = 0.0;
+      _cumulativeOffset = Offset.zero;
     });
     widget.onDragProgress?.call(0.0);
   }
@@ -463,7 +560,8 @@ class _SwipeCardState extends State<SwipeCard>
 
 /// Swipe Direction Enum
 enum SwipeDirection {
-  left,   // Pass
+  left,   // Pass / Nope
   right,  // Like
   up,     // Super Like
+  down,   // Skip
 }

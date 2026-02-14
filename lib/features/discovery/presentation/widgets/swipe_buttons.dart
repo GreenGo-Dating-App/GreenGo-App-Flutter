@@ -3,9 +3,10 @@ import '../../../../core/constants/app_colors.dart';
 
 /// Swipe Action Buttons
 ///
-/// Displays like/pass/super like buttons below the card
+/// Displays pass/skip/super like/like buttons below the card
 class SwipeButtons extends StatelessWidget {
   final VoidCallback? onPass;
+  final VoidCallback? onSkip;
   final VoidCallback? onSuperLike;
   final VoidCallback? onLike;
   final bool enabled;
@@ -13,6 +14,7 @@ class SwipeButtons extends StatelessWidget {
   const SwipeButtons({
     super.key,
     this.onPass,
+    this.onSkip,
     this.onSuperLike,
     this.onLike,
     this.enabled = true,
@@ -30,6 +32,15 @@ class SwipeButtons extends StatelessWidget {
           size: 60,
           iconSize: 32,
           onPressed: enabled ? onPass : null,
+        ),
+
+        // Skip button
+        _buildActionButton(
+          icon: Icons.arrow_downward,
+          color: AppColors.infoBlue,
+          size: 50,
+          iconSize: 28,
+          onPressed: enabled ? onSkip : null,
         ),
 
         // Super Like button
