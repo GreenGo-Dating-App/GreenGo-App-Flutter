@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import '../../features/subscription/domain/entities/subscription.dart';
 import 'subscription_celebration_screen.dart';
 
 /// Animated purchase success dialog
@@ -51,11 +52,13 @@ class PurchaseSuccessDialog extends StatefulWidget {
   static Future<void> showSubscriptionActivated(
     BuildContext context, {
     required String tierName,
+    SubscriptionTier? tier,
     VoidCallback? onDismiss,
   }) {
     return SubscriptionCelebrationScreen.show(
       context,
       tierName: tierName,
+      tier: tier,
       onComplete: onDismiss,
     );
   }

@@ -2,15 +2,18 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../constants/app_colors.dart';
+import '../../features/subscription/domain/entities/subscription.dart';
 
 /// Full-screen luxury celebration animation for subscription purchase
 class SubscriptionCelebrationScreen extends StatefulWidget {
   final String tierName;
+  final SubscriptionTier? tier;
   final VoidCallback? onComplete;
 
   const SubscriptionCelebrationScreen({
     super.key,
     required this.tierName,
+    this.tier,
     this.onComplete,
   });
 
@@ -18,6 +21,7 @@ class SubscriptionCelebrationScreen extends StatefulWidget {
   static Future<void> show(
     BuildContext context, {
     required String tierName,
+    SubscriptionTier? tier,
     VoidCallback? onComplete,
   }) {
     return Navigator.of(context).push(
@@ -26,6 +30,7 @@ class SubscriptionCelebrationScreen extends StatefulWidget {
         pageBuilder: (context, animation, secondaryAnimation) {
           return SubscriptionCelebrationScreen(
             tierName: tierName,
+            tier: tier,
             onComplete: onComplete,
           );
         },
@@ -174,6 +179,108 @@ class _SubscriptionCelebrationScreenState
     return [const Color(0xFF808080), const Color(0xFFC0C0C0), const Color(0xFFD3D3D3)];
   }
 
+  /// Build tier-specific benefit rows from the tier's features map
+  List<Widget> _buildTierBenefits() {
+    final tier = widget.tier;
+    if (tier == null) {
+      // Fallback to generic features if no tier provided
+      return [
+        _buildFeatureRow(Icons.favorite, 'Unlimited likes'),
+        const SizedBox(height: 12),
+        _buildFeatureRow(Icons.visibility, 'See who liked you'),
+        const SizedBox(height: 12),
+        _buildFeatureRow(Icons.flash_on, 'Priority matching'),
+      ];
+    }
+
+    final features = tier.features;
+    final rows = <Widget>[];
+
+    void addRow(IconData icon, String label, String value) {
+      if (rows.isNotEmpty) rows.add(const SizedBox(height: 10));
+      rows.add(_buildBenefitRow(icon, label, value));
+    }
+
+    // Daily Likes
+    final dailyLikes = features['dailyLikes'] as int? ?? 0;
+    if (dailyLikes == -1) {
+      addRow(Icons.favorite, 'Daily Likes', 'Unlimited');
+    } else if (dailyLikes > 0) {
+      addRow(Icons.favorite, 'Daily Likes', '$dailyLikes');
+    }
+
+    // Super Likes
+    final superLikes = features['superLikes'] as int? ?? 0;
+    if (superLikes == -1) {
+      addRow(Icons.star, 'Super Likes', 'Unlimited');
+    } else if (superLikes > 0) {
+      addRow(Icons.star, 'Super Likes', '$superLikes/day');
+    }
+
+    // Rewinds
+    final rewinds = features['rewinds'] as int? ?? 0;
+    if (rewinds == -1) {
+      addRow(Icons.replay, 'Rewinds', 'Unlimited');
+    } else if (rewinds > 0) {
+      addRow(Icons.replay, 'Rewinds', '$rewinds/day');
+    }
+
+    // Boosts
+    final boosts = features['boosts'] as int? ?? 0;
+    if (boosts == -1) {
+      addRow(Icons.rocket_launch, 'Boosts', 'Unlimited');
+    } else if (boosts > 0) {
+      addRow(Icons.rocket_launch, 'Boosts', '$boosts/month');
+    }
+
+    // See Who Likes You
+    if (features['seeWhoLikesYou'] == true) {
+      addRow(Icons.visibility, 'See Who Likes You', '✓');
+    }
+
+    // Ad-Free
+    if (features['adFree'] == true) {
+      addRow(Icons.block, 'Ad-Free Experience', '✓');
+    }
+
+    // Read Receipts
+    if (features['readReceipts'] == true) {
+      addRow(Icons.done_all, 'Read Receipts', '✓');
+    }
+
+    // Advanced Filters
+    if (features['advancedFilters'] == true) {
+      addRow(Icons.tune, 'Advanced Filters', '✓');
+    }
+
+    // Incognito Mode
+    if (features['incognitoMode'] == true) {
+      addRow(Icons.visibility_off, 'Incognito Mode', '✓');
+    }
+
+    // Priority Support
+    if (features['prioritySupport'] == true) {
+      addRow(Icons.support_agent, 'Priority Support', '✓');
+    }
+
+    // VIP Badge (Platinum)
+    if (features['vipBadge'] == true) {
+      addRow(Icons.verified, 'VIP Badge', '✓');
+    }
+
+    // Priority Matching (Platinum)
+    if (features['priorityMatching'] == true) {
+      addRow(Icons.flash_on, 'Priority Matching', '✓');
+    }
+
+    // Exclusive Events (Platinum)
+    if (features['exclusiveEvents'] == true) {
+      addRow(Icons.event_available, 'Exclusive Events', '✓');
+    }
+
+    return rows;
+  }
+
   void _handleContinue() {
     Navigator.of(context).pop();
     widget.onComplete?.call();
@@ -304,13 +411,14 @@ class _SubscriptionCelebrationScreenState
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            const SizedBox(height: 32),
-                            // Feature highlights
-                            _buildFeatureRow(Icons.favorite, 'Unlimited likes'),
-                            const SizedBox(height: 12),
-                            _buildFeatureRow(Icons.visibility, 'See who liked you'),
-                            const SizedBox(height: 12),
-                            _buildFeatureRow(Icons.flash_on, 'Priority matching'),
+                            const SizedBox(height: 24),
+                            // Tier-specific benefits
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 32),
+                              child: Column(
+                                children: _buildTierBenefits(),
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -377,6 +485,32 @@ class _SubscriptionCelebrationScreenState
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 15,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBenefitRow(IconData icon, String label, String value) {
+    return Row(
+      children: [
+        Icon(icon, color: _tierColor, size: 20),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            label,
+            style: const TextStyle(
+              color: AppColors.textPrimary,
+              fontSize: 14,
+            ),
+          ),
+        ),
+        Text(
+          value,
+          style: TextStyle(
+            color: _tierColor,
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ],

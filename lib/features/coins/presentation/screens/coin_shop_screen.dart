@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,8 +35,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   CoinPromotion? _activePromotion;
   SubscriptionTier? _selectedTier;
   bool _isLoadingSubscription = false;
+  bool _isLoadingCoinPurchase = false;
   final InAppPurchase _inAppPurchase = InAppPurchase.instance;
   int _currentCoinBalance = 0;
+  late StreamSubscription<List<PurchaseDetails>> _purchaseSubscription;
 
   @override
   void initState() {
@@ -43,12 +46,156 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     _tabController = TabController(length: 3, vsync: this);
     context.read<CoinBloc>().add(const LoadAvailablePackages());
     context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+
+    // Listen to purchase stream for both coins and subscriptions
+    _purchaseSubscription = _inAppPurchase.purchaseStream.listen(
+      _onPurchaseUpdated,
+      onDone: () => _purchaseSubscription.cancel(),
+      onError: (error) {
+        debugPrint('[IAP] Purchase stream error: $error');
+      },
+    );
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    _purchaseSubscription.cancel();
     super.dispose();
+  }
+
+  /// Handle purchase updates from the IAP stream
+  void _onPurchaseUpdated(List<PurchaseDetails> purchaseDetailsList) {
+    for (final purchaseDetails in purchaseDetailsList) {
+      debugPrint('[IAP] Purchase update: ${purchaseDetails.productID} - ${purchaseDetails.status}');
+
+      switch (purchaseDetails.status) {
+        case PurchaseStatus.pending:
+          debugPrint('[IAP] Purchase pending for ${purchaseDetails.productID}');
+          break;
+
+        case PurchaseStatus.purchased:
+        case PurchaseStatus.restored:
+          _handleSuccessfulPurchase(purchaseDetails);
+          break;
+
+        case PurchaseStatus.error:
+          debugPrint('[IAP] Purchase error: ${purchaseDetails.error?.message}');
+          setState(() {
+            _isLoadingCoinPurchase = false;
+            _isLoadingSubscription = false;
+          });
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(purchaseDetails.error?.message ?? 'Purchase failed'),
+                backgroundColor: Colors.red,
+              ),
+            );
+          }
+          // Complete the purchase to clear it from the queue
+          if (purchaseDetails.pendingCompletePurchase) {
+            _inAppPurchase.completePurchase(purchaseDetails);
+          }
+          break;
+
+        case PurchaseStatus.canceled:
+          debugPrint('[IAP] Purchase canceled for ${purchaseDetails.productID}');
+          setState(() {
+            _isLoadingCoinPurchase = false;
+            _isLoadingSubscription = false;
+          });
+          // Complete the purchase to clear it from the queue
+          if (purchaseDetails.pendingCompletePurchase) {
+            _inAppPurchase.completePurchase(purchaseDetails);
+          }
+          break;
+      }
+    }
+  }
+
+  /// Handle a successful purchase (coins or subscription)
+  Future<void> _handleSuccessfulPurchase(PurchaseDetails purchaseDetails) async {
+    final productId = purchaseDetails.productID;
+
+    // Check if this is a coin purchase
+    final coinPackage = CoinPackages.getByProductId(productId);
+    if (coinPackage != null) {
+      // Coin purchase — credit via BLoC (Firestore update)
+      debugPrint('[IAP] Coin purchase successful: ${coinPackage.coinAmount} coins');
+      if (mounted) {
+        context.read<CoinBloc>().add(
+          PurchaseCoinPackage(
+            userId: widget.userId,
+            package: coinPackage,
+            platform: 'android',
+            promotion: _activePromotion,
+          ),
+        );
+      }
+      setState(() => _isLoadingCoinPurchase = false);
+
+      // Complete the purchase
+      if (purchaseDetails.pendingCompletePurchase) {
+        await _inAppPurchase.completePurchase(purchaseDetails);
+      }
+
+      // Show success dialog
+      if (mounted) {
+        PurchaseSuccessDialog.showCoinsPurchased(
+          context,
+          coinsAdded: coinPackage.coinAmount,
+          bonusCoins: coinPackage.bonusCoins,
+          onDismiss: () {
+            if (context.mounted) {
+              // Reload balance
+              context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+            }
+          },
+        );
+      }
+      return;
+    }
+
+    // Check if this is a subscription purchase
+    final subscribedTier = _tierFromProductId(productId);
+    if (subscribedTier != null) {
+      debugPrint('[IAP] Subscription purchase successful: ${subscribedTier.displayName}');
+      setState(() => _isLoadingSubscription = false);
+
+      // Complete the purchase
+      if (purchaseDetails.pendingCompletePurchase) {
+        await _inAppPurchase.completePurchase(purchaseDetails);
+      }
+
+      // Show celebration screen with tier-specific benefits
+      if (mounted) {
+        PurchaseSuccessDialog.showSubscriptionActivated(
+          context,
+          tierName: subscribedTier.displayName,
+          tier: subscribedTier,
+        );
+      }
+      return;
+    }
+
+    // Unknown product — still complete it
+    debugPrint('[IAP] Unknown product purchased: $productId');
+    if (purchaseDetails.pendingCompletePurchase) {
+      await _inAppPurchase.completePurchase(purchaseDetails);
+    }
+    setState(() {
+      _isLoadingCoinPurchase = false;
+      _isLoadingSubscription = false;
+    });
+  }
+
+  /// Map a product ID back to a SubscriptionTier
+  SubscriptionTier? _tierFromProductId(String productId) {
+    for (final tier in SubscriptionTier.values) {
+      if (tier.productId == productId) return tier;
+    }
+    return null;
   }
 
   @override
@@ -178,19 +325,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Widget _buildBuyCoinsTab() {
     return BlocConsumer<CoinBloc, CoinState>(
       listener: (context, state) {
-        if (state is CoinPackagePurchased) {
-          // Show success dialog with animation
-          PurchaseSuccessDialog.showCoinsPurchased(
-            context,
-            coinsAdded: state.coinsAdded,
-            bonusCoins: state.bonusCoins,
-            onDismiss: () {
-              if (context.mounted) {
-                Navigator.of(context).pop();
-              }
-            },
-          );
-        } else if (state is CoinError) {
+        if (state is CoinError) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(state.message),
@@ -263,7 +398,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
               ),
             // Loading overlay
-            if (isLoading)
+            if (isLoading || _isLoadingCoinPurchase)
               Container(
                 color: Colors.black54,
                 child: const Center(
@@ -788,6 +923,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (!available) {
         _showError('Store not available. Make sure Google Play is installed and you are signed in.');
+        setState(() => _isLoadingSubscription = false);
         return;
       }
 
@@ -804,6 +940,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       if (response.error != null) {
         debugPrint('[Subscription] Query error: ${response.error!.message}');
         _showError('Failed to load subscription: ${response.error!.message}');
+        setState(() => _isLoadingSubscription = false);
         return;
       }
 
@@ -817,6 +954,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           '• Add your Google account as a license tester\n\n'
           'Not found: $notFoundIds'
         );
+        setState(() => _isLoadingSubscription = false);
         return;
       }
 
@@ -837,6 +975,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
 
       // This will trigger Google Play / App Store subscription flow
+      // Result will be handled by the purchase stream listener
       final bool success = await _inAppPurchase.buyNonConsumable(
         purchaseParam: purchaseParam,
       );
@@ -845,23 +984,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (!success) {
         _showError('Failed to initiate subscription');
-      } else {
-        // Success - the subscription will be processed by the purchase stream
-        Navigator.of(context).pop();
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(isUpgrade
-              ? 'Processing your upgrade to ${_selectedTier!.displayName}...'
-              : 'Processing your subscription...'),
-            backgroundColor: Colors.green,
-          ),
-        );
+        setState(() => _isLoadingSubscription = false);
       }
+      // Do NOT pop navigator or show snackbar here.
+      // The purchase stream listener will handle the result.
     } catch (e, stackTrace) {
       debugPrint('[Subscription] Error: $e');
       debugPrint('[Subscription] Stack trace: $stackTrace');
       _showError('Subscription error: ${e.toString()}');
-    } finally {
       setState(() => _isLoadingSubscription = false);
     }
   }
@@ -1123,7 +1253,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             ),
             child: SafeArea(
               child: ElevatedButton(
-                onPressed: _handlePurchase,
+                onPressed: _isLoadingCoinPurchase ? null : _handlePurchase,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF4CAF50),
                   foregroundColor: Colors.white,
@@ -1132,13 +1262,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
-                child: Text(
-                  'Purchase ${_selectedPackage!.totalCoins} Coins for ${_selectedPackage!.displayPrice}',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                child: _isLoadingCoinPurchase
+                    ? const SizedBox(
+                        height: 24,
+                        width: 24,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.white,
+                        ),
+                      )
+                    : Text(
+                        'Purchase ${_selectedPackage!.totalCoins} Coins for ${_selectedPackage!.displayPrice}',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
               ),
             ),
           ),
@@ -1357,19 +1496,81 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
-  void _handlePurchase() {
+  /// Handle coin purchase via Google Play IAP
+  Future<void> _handlePurchase() async {
     if (_selectedPackage == null) return;
 
-    context.read<CoinBloc>().add(
-          PurchaseCoinPackage(
-            userId: widget.userId,
-            package: _selectedPackage!,
-            platform: Theme.of(context).platform == TargetPlatform.android
-                ? 'android'
-                : 'ios',
-            promotion: _activePromotion,
-          ),
+    setState(() => _isLoadingCoinPurchase = true);
+
+    try {
+      // Check if store is available
+      final bool available = await _inAppPurchase.isAvailable();
+      debugPrint('[CoinPurchase] Store available: $available');
+
+      if (!available) {
+        _showError('Store not available. Make sure Google Play is installed and you are signed in.');
+        setState(() => _isLoadingCoinPurchase = false);
+        return;
+      }
+
+      // Query product details from store
+      final productIds = {_selectedPackage!.productId};
+      debugPrint('[CoinPurchase] Querying product IDs: $productIds');
+
+      final ProductDetailsResponse response =
+          await _inAppPurchase.queryProductDetails(productIds);
+
+      debugPrint('[CoinPurchase] Query response - notFoundIDs: ${response.notFoundIDs}');
+      debugPrint('[CoinPurchase] Query response - productDetails count: ${response.productDetails.length}');
+
+      if (response.error != null) {
+        debugPrint('[CoinPurchase] Query error: ${response.error!.message}');
+        _showError('Failed to load product: ${response.error!.message}');
+        setState(() => _isLoadingCoinPurchase = false);
+        return;
+      }
+
+      if (response.productDetails.isEmpty) {
+        final notFoundIds = response.notFoundIDs.join(', ');
+        _showError(
+          'Coin package "${_selectedPackage!.productId}" not found in Google Play.\n\n'
+          'Requirements:\n'
+          '• Upload app to Google Play Console (internal testing track)\n'
+          '• Create in-app products in Google Play Console\n'
+          '• Add your Google account as a license tester\n\n'
+          'Not found: $notFoundIds'
         );
+        setState(() => _isLoadingCoinPurchase = false);
+        return;
+      }
+
+      // Initiate consumable purchase
+      final productDetails = response.productDetails.first;
+      debugPrint('[CoinPurchase] Found product: ${productDetails.id} - ${productDetails.title} - ${productDetails.price}');
+
+      final purchaseParam = PurchaseParam(
+        productDetails: productDetails,
+        applicationUserName: widget.userId,
+      );
+
+      // This triggers the Google Play purchase dialog
+      // Result will be handled by the purchase stream listener
+      final bool success = await _inAppPurchase.buyConsumable(
+        purchaseParam: purchaseParam,
+      );
+
+      debugPrint('[CoinPurchase] buyConsumable result: $success');
+
+      if (!success) {
+        _showError('Failed to initiate purchase');
+        setState(() => _isLoadingCoinPurchase = false);
+      }
+    } catch (e, stackTrace) {
+      debugPrint('[CoinPurchase] Error: $e');
+      debugPrint('[CoinPurchase] Stack trace: $stackTrace');
+      _showError('Purchase error: ${e.toString()}');
+      setState(() => _isLoadingCoinPurchase = false);
+    }
   }
 
   /// Build error state with retry button and fallback packages
