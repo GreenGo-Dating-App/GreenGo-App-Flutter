@@ -373,6 +373,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   void _handleSwipe(BuildContext context, card, SwipeDirection direction) {
+    debugPrint('👆 _handleSwipe: direction=$direction, card.userId=${card.userId}');
     SwipeActionType actionType;
     switch (direction) {
       case SwipeDirection.left:
@@ -389,6 +390,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         break;
     }
 
+    debugPrint('👆 Dispatching DiscoverySwipeRecorded: userId=$userId, target=${card.userId}, action=$actionType');
     context.read<DiscoveryBloc>().add(
           DiscoverySwipeRecorded(
             userId: userId,

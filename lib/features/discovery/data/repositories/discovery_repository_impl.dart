@@ -113,10 +113,12 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
         actionType: actionType,
       );
       return Right(action);
-    } on ServerException {
-      return Left(ServerFailure());
+    } on ServerException catch (e) {
+      debugPrint('❌ recordSwipe ServerException: ${e.message}');
+      return Left(ServerFailure(e.message));
     } catch (e) {
-      return Left(ServerFailure());
+      debugPrint('❌ recordSwipe error: $e');
+      return Left(ServerFailure(e.toString()));
     }
   }
 

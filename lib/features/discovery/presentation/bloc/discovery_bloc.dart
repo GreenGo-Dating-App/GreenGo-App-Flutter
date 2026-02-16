@@ -89,13 +89,27 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     );
   }
 
+  /// Extract cards and currentIndex from any card-bearing state
+  ({List<DiscoveryCard> cards, int currentIndex})? _extractCards() {
+    final s = state;
+    if (s is DiscoveryLoaded) return (cards: s.cards, currentIndex: s.currentIndex);
+    if (s is DiscoveryRewindUnavailable) return (cards: s.cards, currentIndex: s.currentIndex);
+    if (s is DiscoverySwipeLimitReached) return (cards: s.cards, currentIndex: s.currentIndex);
+    if (s is DiscoverySuperLikeLimitReached) return (cards: s.cards, currentIndex: s.currentIndex);
+    if (s is DiscoverySwipeCompleted) return (cards: s.cards, currentIndex: s.currentIndex);
+    return null;
+  }
+
   Future<void> _onSwipeRecorded(
     DiscoverySwipeRecorded event,
     Emitter<DiscoveryState> emit,
   ) async {
-    if (state is! DiscoveryLoaded) return;
+    final data = _extractCards();
+    if (data == null) {
+      return;
+    }
 
-    final currentState = state as DiscoveryLoaded;
+    final currentState = DiscoveryLoaded(cards: data.cards, currentIndex: data.currentIndex);
 
     // Only check limits if membership rules are provided
     if (event.membershipRules != null && event.membershipTier != null) {
@@ -153,26 +167,32 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
     // Handle result - use isLeft/isRight pattern instead of fold for async handling
     if (result.isLeft()) {
+      debugPrint('❌ RecordSwipe FAILED: ${result.fold((l) => l.toString(), (r) => '')}');
       // Revert to previous state on error
       emit(currentState);
       return;
     }
+    debugPrint('✅ RecordSwipe succeeded');
 
     // Success case - get the swipe action
     final swipeAction = result.getOrElse(() => throw Exception('Unreachable'));
 
-    // Record usage after successful swipe
-    await _usageLimitService.recordUsage(
-      userId: event.userId,
-      limitType: UsageLimitType.swipes,
-    );
-
-    // Also record super like usage if applicable
-    if (event.actionType == SwipeActionType.superLike) {
+    // Record usage after successful swipe (non-critical — don't block on failure)
+    try {
       await _usageLimitService.recordUsage(
         userId: event.userId,
-        limitType: UsageLimitType.superLikes,
+        limitType: UsageLimitType.swipes,
       );
+
+      // Also record super like usage if applicable
+      if (event.actionType == SwipeActionType.superLike) {
+        await _usageLimitService.recordUsage(
+          userId: event.userId,
+          limitType: UsageLimitType.superLikes,
+        );
+      }
+    } catch (e) {
+      debugPrint('⚠️ Usage recording failed (non-critical): $e');
     }
 
     // Track last swiped card for rewind
@@ -227,19 +247,11 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     DiscoveryRewindRequested event,
     Emitter<DiscoveryState> emit,
   ) async {
-    // Get current cards and index from whatever state we're in
-    List<DiscoveryCard> cards;
-    int currentIndex;
-
-    if (state is DiscoveryLoaded) {
-      cards = (state as DiscoveryLoaded).cards;
-      currentIndex = (state as DiscoveryLoaded).currentIndex;
-    } else if (state is DiscoveryRewindUnavailable) {
-      cards = (state as DiscoveryRewindUnavailable).cards;
-      currentIndex = (state as DiscoveryRewindUnavailable).currentIndex;
-    } else {
-      return;
-    }
+    // Get current cards and index from any card-bearing state
+    final data = _extractCards();
+    if (data == null) return;
+    final cards = data.cards;
+    final currentIndex = data.currentIndex;
 
     // Check if there's a previous swipe to undo
     if (_lastSwipedCard == null) {
@@ -248,6 +260,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         cards: cards,
         currentIndex: currentIndex,
       ));
+      // Transition back to DiscoveryLoaded so swipes still work
+      emit(DiscoveryLoaded(cards: cards, currentIndex: currentIndex));
       return;
     }
 
@@ -258,6 +272,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         cards: cards,
         currentIndex: currentIndex,
       ));
+      emit(DiscoveryLoaded(cards: cards, currentIndex: currentIndex));
       return;
     }
 
@@ -269,6 +284,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         cards: cards,
         currentIndex: currentIndex,
       ));
+      emit(DiscoveryLoaded(cards: cards, currentIndex: currentIndex));
       return;
     }
 
