@@ -1117,38 +1117,38 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Confirm delete chat for current user
   Future<void> _confirmDeleteChatForMe(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          AppLocalizations.of(context)!.chatDeleteChat,
+          l10n.chatDeleteChat,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(context)!.chatDeleteChatForMeMessage,
+          l10n.chatDeleteChatForMeMessage,
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
-            child: Text(AppLocalizations.of(context)!.cancel),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, true),
-            child: Text(AppLocalizations.of(context)!.delete, style: const TextStyle(color: AppColors.errorRed)),
+            child: Text(l10n.delete, style: const TextStyle(color: AppColors.errorRed)),
           ),
         ],
       ),
     );
 
-    if (confirmed == true && context.mounted) {
-      final bloc = context.read<ChatBloc>();
-      await ActionSuccessDialog.showChatDeletedForMe(context, onDismiss: () {
+    if (confirmed == true && mounted) {
+      final bloc = this.context.read<ChatBloc>();
+      final nav = Navigator.of(this.context);
+      await ActionSuccessDialog.showChatDeletedForMe(this.context, onDismiss: () {
         bloc.add(const ChatDeletedForMe());
-        if (context.mounted) {
-          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
-        }
+        nav.popUntil((route) => route.isFirst);
       });
     }
   }
@@ -1180,13 +1180,12 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
     );
 
-    if (confirmed == true && context.mounted) {
-      final bloc = context.read<ChatBloc>();
-      await ActionSuccessDialog.showChatDeletedForBoth(context, onDismiss: () {
+    if (confirmed == true && mounted) {
+      final bloc = this.context.read<ChatBloc>();
+      final nav = Navigator.of(this.context);
+      await ActionSuccessDialog.showChatDeletedForBoth(this.context, onDismiss: () {
         bloc.add(const ChatDeletedForBoth());
-        if (context.mounted) {
-          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
-        }
+        nav.popUntil((route) => route.isFirst);
       });
     }
   }
@@ -1204,38 +1203,38 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          AppLocalizations.of(context)!.chatBlockUserTitle,
+          l10n.chatBlockUserTitle,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(context)!.chatBlockUserMessage(widget.otherUserProfile.displayName),
+          l10n.chatBlockUserMessage(widget.otherUserProfile.displayName),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, false),
-            child: Text(AppLocalizations.of(context)!.cancel),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(dialogContext, true),
-            child: Text(AppLocalizations.of(context)!.chatBlock, style: const TextStyle(color: AppColors.errorRed)),
+            child: Text(l10n.chatBlock, style: const TextStyle(color: AppColors.errorRed)),
           ),
         ],
       ),
     );
 
-    if (confirmed == true && context.mounted) {
-      final bloc = context.read<ChatBloc>();
-      await ActionSuccessDialog.showUserBlocked(context, widget.otherUserProfile.displayName, onDismiss: () {
+    if (confirmed == true && mounted) {
+      final bloc = this.context.read<ChatBloc>();
+      final nav = Navigator.of(this.context);
+      await ActionSuccessDialog.showUserBlocked(this.context, widget.otherUserProfile.displayName, onDismiss: () {
         bloc.add(ChatUserBlocked(widget.otherUserId));
-        if (context.mounted) {
-          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
-        }
+        nav.popUntil((route) => route.isFirst);
       });
     }
   }
@@ -1299,16 +1298,15 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
     );
 
-    if (selectedReason != null && context.mounted) {
-      final bloc = context.read<ChatBloc>();
-      await ActionSuccessDialog.showUserReported(context, onDismiss: () {
+    if (selectedReason != null && mounted) {
+      final bloc = this.context.read<ChatBloc>();
+      final nav = Navigator.of(this.context);
+      await ActionSuccessDialog.showUserReported(this.context, onDismiss: () {
         bloc.add(ChatUserReported(
           userId: widget.otherUserId,
           reason: selectedReason,
         ));
-        if (context.mounted) {
-          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
-        }
+        nav.popUntil((route) => route.isFirst);
       });
     }
   }
