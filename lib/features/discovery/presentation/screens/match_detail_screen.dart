@@ -172,11 +172,6 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                               // Both users' info cards side by side
                               _buildUserInfoCards(),
 
-                              const SizedBox(height: 20),
-
-                              // Gamification stats
-                              _buildGamificationSection(),
-
                               const SizedBox(height: 32),
 
                               // Action buttons
@@ -226,6 +221,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   }
 
   Widget _buildOverlappingPhotos() {
+    final screenSize = MediaQuery.of(context).size;
     final currentPhotoUrl = _currentUserProfile?.photoUrls.isNotEmpty == true
         ? _currentUserProfile!.photoUrls.first
         : null;
@@ -233,32 +229,25 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
         ? _otherUserProfile!.photoUrls.first
         : null;
 
-    return SizedBox(
-      height: 140,
-      width: 220,
-      child: Stack(
-        children: [
-          // Current user (left)
-          Positioned(
-            left: 0,
-            child: _buildCirclePhoto(currentPhotoUrl, 120),
-          ),
-          // Other user (right, overlapping)
-          Positioned(
-            right: 0,
-            child: _buildCirclePhoto(otherPhotoUrl, 120),
-          ),
-        ],
-      ),
+    final photoHeight = screenSize.height * 0.35;
+    final photoWidth = (screenSize.width - 48 - 12) / 2; // padding + gap
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildRectPhoto(currentPhotoUrl, photoWidth, photoHeight),
+        const SizedBox(width: 12),
+        _buildRectPhoto(otherPhotoUrl, photoWidth, photoHeight),
+      ],
     );
   }
 
-  Widget _buildCirclePhoto(String? photoUrl, double size) {
+  Widget _buildRectPhoto(String? photoUrl, double width, double height) {
     return Container(
-      width: size,
-      height: size,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.richGold, width: 3),
         boxShadow: [
           BoxShadow(
@@ -268,11 +257,14 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           ),
         ],
       ),
-      child: ClipOval(
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(13),
         child: photoUrl != null
             ? Image.network(
                 photoUrl,
                 fit: BoxFit.cover,
+                width: width,
+                height: height,
                 errorBuilder: (_, __, ___) => _buildPlaceholder(),
               )
             : _buildPlaceholder(),

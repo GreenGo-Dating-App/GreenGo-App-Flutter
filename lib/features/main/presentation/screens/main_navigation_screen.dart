@@ -36,6 +36,7 @@ import '../../../notifications/presentation/bloc/notifications_bloc.dart';
 import '../../../notifications/presentation/bloc/notifications_event.dart';
 import '../../../notifications/presentation/bloc/notifications_state.dart';
 import '../../../notifications/domain/entities/notification.dart' as notif;
+import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 // Language Learning imports - only used when feature is enabled
@@ -79,6 +80,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   late final AccessControlService _accessControlService;
   bool _hasShownApprovalNotification = false;
   bool _hasShownAccessGrantedNotification = false;
+  bool _showCachedCountdown = false; // True while Firestore hasn't loaded yet but cached countdown exists
+  int? _cachedCountdownEndMs; // Cached end timestamp in milliseconds
+  static const String _countdownEndKeyPrefix = 'countdown_end_';
 
   // Activity tracking for re-engagement notifications
   late final ActivityTrackingService _activityTrackingService;
@@ -167,11 +171,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       ),
     ];
 
-    // Check if user has a profile, redirect to onboarding if not
-    _checkUserProfile();
-
-    // Load access control data
-    _loadAccessData();
+    // Check profile, load countdown cache, and access data together
+    // _isCheckingProfile stays true until ALL of these complete
+    _initializeAppState();
 
     // Check subscription expiry and downgrade to free if expired
     _checkSubscriptionExpiry();
@@ -209,12 +211,65 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _completeTour();
   }
 
+  /// Initialize app state: profile check + countdown + access data in parallel
+  /// _isCheckingProfile stays true until all complete
+  Future<void> _initializeAppState() async {
+    // Run all three in parallel
+    await Future.wait([
+      _loadCachedCountdown(),
+      _loadAccessData(),
+      _checkUserProfile(),
+    ]);
+    // Only now show the main content (profile check may have already redirected)
+    if (mounted && _isCheckingProfile) {
+      setState(() {
+        _isCheckingProfile = false;
+      });
+    }
+  }
+
+  int? _getCachedCountdownEnd() => _cachedCountdownEndMs;
+
+  Future<void> _loadCachedCountdown() async {
+    final prefs = await SharedPreferences.getInstance();
+    final cachedEndMs = prefs.getInt('$_countdownEndKeyPrefix${widget.userId}');
+    if (cachedEndMs != null && mounted) {
+      final endTime = DateTime.fromMillisecondsSinceEpoch(cachedEndMs);
+      if (DateTime.now().isBefore(endTime)) {
+        setState(() {
+          _cachedCountdownEndMs = cachedEndMs;
+          _showCachedCountdown = true;
+        });
+      } else {
+        // Expired — clear the key
+        prefs.remove('$_countdownEndKeyPrefix${widget.userId}');
+      }
+    }
+  }
+
   Future<void> _loadAccessData() async {
     final accessData = await _accessControlService.getCurrentUserAccess();
     if (mounted && accessData != null) {
       setState(() {
         _accessData = accessData;
+        _showCachedCountdown = false; // Firestore data is now authoritative
       });
+
+      // Persist or clear countdown end time
+      final prefs = await SharedPreferences.getInstance();
+      final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
+      if (!isAdminOrTest &&
+          accessData.approvalStatus == ApprovalStatus.approved &&
+          !accessData.canAccessApp) {
+        // Countdown is active — cache the end timestamp
+        prefs.setInt(
+          '$_countdownEndKeyPrefix${widget.userId}',
+          accessData.accessDate.millisecondsSinceEpoch,
+        );
+      } else {
+        // No countdown — clear any cached value
+        prefs.remove('$_countdownEndKeyPrefix${widget.userId}');
+      }
 
       // Check and show notifications based on access state
       _checkAndShowAccessNotifications(accessData);
@@ -426,16 +481,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           _verificationRejectionReason = data['verificationRejectionReason'] as String?;
           _isAdmin = data['isAdmin'] as bool? ?? false;
           _membershipTier = membershipTier;
-          _isCheckingProfile = false;
+          // _isCheckingProfile set to false by _initializeAppState after all futures complete
         });
       }
     } catch (e) {
-      // On error, assume profile exists and show main screen
-      if (mounted) {
-        setState(() {
-          _isCheckingProfile = false;
-        });
-      }
+      // On error, assume profile exists — _isCheckingProfile handled by _initializeAppState
     }
   }
 
@@ -499,9 +549,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         (_accessData?.isTestUser ?? false);
 
     final isPreLaunchBlocked = !isAdminOrTestUser &&
-        _accessData != null &&
-        _accessData!.approvalStatus == ApprovalStatus.approved &&
-        !_accessData!.canAccessApp;
+        ((_accessData != null &&
+            _accessData!.approvalStatus == ApprovalStatus.approved &&
+            !_accessData!.canAccessApp) ||
+         (_accessData == null && _showCachedCountdown));
 
     // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)
     final profileIndex = featureFlags.languageLearningEnabled ? 6 : 5;
@@ -520,20 +571,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           final index = entry.key;
           final screen = entry.value;
 
-          // Profile is always the last tab
-          // Shop is index 3, Progress is index 4
-          // Learn is index 5 (only if enabled)
-          // Profile is index 5 (MVP) or 6 (with Learning)
-
-          // Profile/Settings is always accessible (no overlays)
-          if (index == profileIndex) {
-            return screen;
-          }
-
-          // For pre-launch blocked users: show countdown overlay on ALL other screens
+          // For pre-launch blocked users: show countdown overlay on ALL screens (including profile)
           if (isPreLaunchBlocked) {
+            final overlayAccessData = _accessData ?? UserAccessData(
+              userId: widget.userId,
+              approvalStatus: ApprovalStatus.approved,
+              accessDate: DateTime.fromMillisecondsSinceEpoch(
+                _getCachedCountdownEnd() ?? DateTime.now().add(const Duration(days: 1)).millisecondsSinceEpoch,
+              ),
+              membershipTier: SubscriptionTier.basic,
+            );
             return CountdownBlurOverlay(
-              accessData: _accessData!,
+              accessData: overlayAccessData,
               onSettingsTapped: _navigateToSettings,
               child: screen,
             );

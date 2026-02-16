@@ -1779,31 +1779,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return;
     }
 
-    // Confirm dialog
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: const Text('Confirm Send', style: TextStyle(color: AppColors.textPrimary)),
-        content: Text(
-          'Send $amount coins to @$nickname?',
-          style: const TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Send', style: TextStyle(color: AppColors.richGold)),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed != true) return;
-
     setState(() => _isSendingCoins = true);
 
     try {
@@ -1826,6 +1801,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final recipientId = recipientDoc.id;
       final recipientData = recipientDoc.data();
       final recipientName = recipientData['displayName'] as String? ?? nickname;
+      final recipientPhotoUrl = (recipientData['photoUrls'] as List<dynamic>?)?.isNotEmpty == true
+          ? recipientData['photoUrls'][0] as String
+          : null;
+      final recipientFamilyName = recipientData['familyName'] as String? ?? '';
 
       if (recipientId == widget.userId) {
         _showError('You cannot send coins to yourself');
@@ -1833,11 +1812,108 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
+      setState(() => _isSendingCoins = false);
+
+      // Show user preview confirmation dialog
+      final confirmed = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          title: const Text('Confirm Send', style: TextStyle(color: AppColors.textPrimary)),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // User preview card
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.black26,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
+                ),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 28,
+                      backgroundColor: AppColors.backgroundDark,
+                      backgroundImage: recipientPhotoUrl != null
+                          ? NetworkImage(recipientPhotoUrl)
+                          : null,
+                      child: recipientPhotoUrl == null
+                          ? const Icon(Icons.person, color: AppColors.textTertiary, size: 28)
+                          : null,
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '$recipientName${recipientFamilyName.isNotEmpty ? ' $recipientFamilyName' : ''}',
+                            style: const TextStyle(
+                              color: AppColors.textPrimary,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            '@$nickname',
+                            style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+              // Amount info
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.monetization_on, color: AppColors.richGold, size: 20),
+                  const SizedBox(width: 6),
+                  Text(
+                    '$amount coins',
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: const Text('Send', style: TextStyle(color: AppColors.richGold)),
+            ),
+          ],
+        ),
+      );
+
+      if (confirmed != true) return;
+
+      setState(() => _isSendingCoins = true);
+
       // Verify sender's coin balance document exists and has enough coins
-      final senderRef = firestore.collection('coin_balances').doc(widget.userId);
+      final senderRef = firestore.collection('coinBalances').doc(widget.userId);
       final senderDoc = await senderRef.get();
       final senderBalance = senderDoc.exists
-          ? (senderDoc.data()?['availableCoins'] as int? ?? 0)
+          ? (senderDoc.data()?['totalCoins'] as int? ?? 0)
           : 0;
 
       if (senderBalance < amount) {
@@ -1849,15 +1925,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       // Atomic batch write: deduct from sender, add to recipient, record transaction
       final batch = firestore.batch();
 
-      final recipientRef = firestore.collection('coin_balances').doc(recipientId);
+      final recipientRef = firestore.collection('coinBalances').doc(recipientId);
       final transactionRef = firestore.collection('coin_transactions').doc();
 
       // Use set with merge for both to handle missing documents
       batch.set(senderRef, {
-        'availableCoins': FieldValue.increment(-amount),
+        'totalCoins': FieldValue.increment(-amount),
       }, SetOptions(merge: true));
       batch.set(recipientRef, {
-        'availableCoins': FieldValue.increment(amount),
+        'totalCoins': FieldValue.increment(amount),
       }, SetOptions(merge: true));
       batch.set(transactionRef, {
         'senderId': widget.userId,

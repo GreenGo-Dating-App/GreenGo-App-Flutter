@@ -1,3 +1,4 @@
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -186,20 +187,54 @@ class EnhancedMessageBubble extends StatelessWidget {
       case MessageType.image:
         return Column(
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-              child: Image.network(
-                message.content,
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) => Container(
+            GestureDetector(
+              onTap: () => _openFullScreenImage(context, message.content),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(AppDimensions.radiusS),
+                child: SizedBox(
                   width: 200,
                   height: 200,
-                  color: AppColors.backgroundDark,
-                  child: const Icon(
-                    Icons.broken_image,
-                    color: AppColors.textTertiary,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      // Blurred thumbnail
+                      ImageFiltered(
+                        imageFilter: ui.ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                        child: Image.network(
+                          message.content,
+                          width: 200,
+                          height: 200,
+                          fit: BoxFit.cover,
+                          cacheWidth: 200,
+                          errorBuilder: (context, error, stackTrace) => Container(
+                            color: AppColors.backgroundDark,
+                            child: const Icon(
+                              Icons.broken_image,
+                              color: AppColors.textTertiary,
+                            ),
+                          ),
+                        ),
+                      ),
+                      // Semi-transparent overlay + tap icon
+                      Container(
+                        color: Colors.black.withOpacity(0.2),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.visibility, color: Colors.white70, size: 32),
+                            SizedBox(height: 6),
+                            Text(
+                              'Tap to view',
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -565,6 +600,43 @@ class EnhancedMessageBubble extends StatelessWidget {
         ),
       ),
       onTap: onTap,
+    );
+  }
+
+  void _openFullScreenImage(BuildContext context, String imageUrl) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            leading: IconButton(
+              icon: const Icon(Icons.close, color: Colors.white),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+          ),
+          body: Center(
+            child: InteractiveViewer(
+              minScale: 0.5,
+              maxScale: 4.0,
+              child: Image.network(
+                imageUrl,
+                fit: BoxFit.contain,
+                loadingBuilder: (context, child, progress) {
+                  if (progress == null) return child;
+                  return const Center(
+                    child: CircularProgressIndicator(color: AppColors.richGold),
+                  );
+                },
+                errorBuilder: (context, error, stackTrace) => const Center(
+                  child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

@@ -276,6 +276,23 @@ class _SwipeCardState extends State<SwipeCard>
           ),
           const SizedBox(height: 6),
 
+          // Photo count
+          Row(
+            children: [
+              const Icon(Icons.photo_library, color: Colors.white70, size: 16),
+              const SizedBox(width: 4),
+              Text(
+                'Photos: ${widget.card.candidate.profile.photoUrls.length} public'
+                '${widget.card.candidate.profile.privatePhotoUrls.isNotEmpty ? ' + ${widget.card.candidate.profile.privatePhotoUrls.length} private' : ''}',
+                style: const TextStyle(
+                  color: Colors.white70,
+                  fontSize: 13,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+
           // Bio
           if (widget.card.bioPreview.isNotEmpty)
             Text(

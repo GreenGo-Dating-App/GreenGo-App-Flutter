@@ -26,6 +26,7 @@ import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 
 /// Chat Screen
 ///
@@ -791,83 +792,160 @@ class _ChatScreenState extends State<ChatScreen> {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
         ),
-        builder: (ctx) => DraggableScrollableSheet(
-          initialChildSize: 0.6,
-          minChildSize: 0.3,
-          maxChildSize: 0.9,
-          expand: false,
-          builder: (ctx, scrollController) => Column(
-            children: [
-              const SizedBox(height: 8),
-              Container(
-                width: 40,
-                height: 4,
-                decoration: BoxDecoration(
-                  color: AppColors.textTertiary,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                AppLocalizations.of(context)?.shareAlbum ?? 'Share Album',
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 4),
-              const Text(
-                'Tap a photo to send (no media limit)',
-                style: TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 12,
-                ),
-              ),
-              const SizedBox(height: 16),
-              Expanded(
-                child: GridView.builder(
-                  controller: scrollController,
-                  padding: const EdgeInsets.all(16),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 8,
-                    mainAxisSpacing: 8,
+        builder: (ctx) {
+          final selectedIndices = <int>{};
+          return StatefulBuilder(
+            builder: (ctx, setSheetState) => DraggableScrollableSheet(
+              initialChildSize: 0.6,
+              minChildSize: 0.3,
+              maxChildSize: 0.9,
+              expand: false,
+              builder: (ctx, scrollController) => Column(
+                children: [
+                  const SizedBox(height: 8),
+                  Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: AppColors.textTertiary,
+                      borderRadius: BorderRadius.circular(2),
+                    ),
                   ),
-                  itemCount: privatePhotos.length,
-                  itemBuilder: (ctx, index) {
-                    final photoUrl = privatePhotos[index] as String;
-                    return GestureDetector(
-                      onTap: () {
-                        Navigator.pop(ctx);
-                        _sendAlbumPhoto(photoUrl);
-                      },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.network(
-                          photoUrl,
-                          fit: BoxFit.cover,
-                          loadingBuilder: (context, child, progress) {
-                            if (progress == null) return child;
-                            return Container(
-                              color: AppColors.backgroundDark,
-                              child: const Center(
-                                child: CircularProgressIndicator(
-                                  color: AppColors.richGold,
-                                  strokeWidth: 2,
+                  const SizedBox(height: 16),
+                  Text(
+                    AppLocalizations.of(context)?.shareAlbum ?? 'Share Album',
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    'Select photos to send',
+                    style: TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 12,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Expanded(
+                    child: GridView.builder(
+                      controller: scrollController,
+                      padding: const EdgeInsets.all(16),
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        crossAxisSpacing: 8,
+                        mainAxisSpacing: 8,
+                      ),
+                      itemCount: privatePhotos.length,
+                      itemBuilder: (ctx, index) {
+                        final photoUrl = privatePhotos[index] as String;
+                        final isSelected = selectedIndices.contains(index);
+                        return GestureDetector(
+                          onTap: () {
+                            setSheetState(() {
+                              if (isSelected) {
+                                selectedIndices.remove(index);
+                              } else {
+                                selectedIndices.add(index);
+                              }
+                            });
+                          },
+                          child: Stack(
+                            children: [
+                              Positioned.fill(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(12),
+                                  child: Image.network(
+                                    photoUrl,
+                                    fit: BoxFit.cover,
+                                    loadingBuilder: (context, child, progress) {
+                                      if (progress == null) return child;
+                                      return Container(
+                                        color: AppColors.backgroundDark,
+                                        child: const Center(
+                                          child: CircularProgressIndicator(
+                                            color: AppColors.richGold,
+                                            strokeWidth: 2,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ),
-                            );
+                              if (isSelected)
+                                Positioned.fill(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12),
+                                      border: Border.all(color: AppColors.richGold, width: 3),
+                                      color: Colors.black.withOpacity(0.3),
+                                    ),
+                                  ),
+                                ),
+                              Positioned(
+                                top: 6,
+                                right: 6,
+                                child: Container(
+                                  width: 24,
+                                  height: 24,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: isSelected ? AppColors.richGold : Colors.black.withOpacity(0.5),
+                                    border: Border.all(color: Colors.white, width: 2),
+                                  ),
+                                  child: isSelected
+                                      ? const Icon(Icons.check, color: Colors.white, size: 14)
+                                      : null,
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  // Send button
+                  if (selectedIndices.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                      child: SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            final photosToSend = selectedIndices
+                                .map((i) => privatePhotos[i] as String)
+                                .toList();
+                            Navigator.pop(ctx);
+                            for (final photoUrl in photosToSend) {
+                              _sendAlbumPhoto(photoUrl);
+                            }
                           },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.richGold,
+                            foregroundColor: Colors.black,
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            'Send (${selectedIndices.length})',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
-                    );
-                  },
-                ),
+                    ),
+                ],
               ),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       );
     } catch (e) {
       if (mounted) {
@@ -1307,60 +1385,66 @@ class _ChatScreenState extends State<ChatScreen> {
         icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
         onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
       ),
-      title: Row(
-        children: [
-          CircleAvatar(
-            radius: 20,
-            backgroundColor: AppColors.backgroundDark,
-            backgroundImage:
-                widget.otherUserProfile.photoUrls.isNotEmpty
-                    ? NetworkImage(widget.otherUserProfile.photoUrls.first)
-                    : null,
-            child: widget.otherUserProfile.photoUrls.isEmpty
-                ? const Icon(
-                    Icons.person,
-                    size: 20,
-                    color: AppColors.textTertiary,
-                  )
-                : null,
-          ),
-          const SizedBox(width: 12),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                widget.otherUserProfile.displayName,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+      title: GestureDetector(
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ProfileDetailScreen(
+                profile: widget.otherUserProfile,
+                currentUserId: widget.currentUserId,
+              ),
+            ),
+          );
+        },
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 20,
+              backgroundColor: AppColors.backgroundDark,
+              backgroundImage:
+                  widget.otherUserProfile.photoUrls.isNotEmpty
+                      ? NetworkImage(widget.otherUserProfile.photoUrls.first)
+                      : null,
+              child: widget.otherUserProfile.photoUrls.isEmpty
+                  ? const Icon(
+                      Icons.person,
+                      size: 20,
+                      color: AppColors.textTertiary,
+                    )
+                  : null,
+            ),
+            const SizedBox(width: 12),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  widget.otherUserProfile.displayName,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              BlocBuilder<ChatBloc, ChatState>(
-                builder: (context, state) {
-                  if (state is ChatLoaded && state.isOtherUserTyping) {
-                    return Text(
-                      AppLocalizations.of(context)!.chatTyping,
-                      style: const TextStyle(
-                        color: AppColors.richGold,
-                        fontSize: 12,
-                      ),
-                    );
-                  }
-                  return const SizedBox.shrink();
-                },
-              ),
-            ],
-          ),
-        ],
+                BlocBuilder<ChatBloc, ChatState>(
+                  builder: (context, state) {
+                    if (state is ChatLoaded && state.isOtherUserTyping) {
+                      return Text(
+                        AppLocalizations.of(context)!.chatTyping,
+                        style: const TextStyle(
+                          color: AppColors.richGold,
+                          fontSize: 12,
+                        ),
+                      );
+                    }
+                    return const SizedBox.shrink();
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
       actions: [
-        // View other user's private album
-        IconButton(
-          icon: const Icon(Icons.collections, color: AppColors.textSecondary),
-          tooltip: AppLocalizations.of(context)?.privateAlbum ?? 'Private Album',
-          onPressed: () => _viewOtherUserAlbum(context),
-        ),
         // Translation toggle button
         IconButton(
           icon: Icon(
@@ -1371,7 +1455,6 @@ class _ChatScreenState extends State<ChatScreen> {
           onPressed: () {
             setState(() {
               _translationEnabled = !_translationEnabled;
-              // Clear translation cache when toggling
               if (!_translationEnabled) {
                 _translatedMessages.clear();
               }
