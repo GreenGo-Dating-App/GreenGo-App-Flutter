@@ -30,6 +30,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   List<String> _privatePhotoUrls = [];
   late TabController _tabController;
   bool _uploadingToPrivate = false;
+  bool _skipNextUpdateDialog = false;
 
   @override
   void initState() {
@@ -222,6 +223,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                   _photoUrls.add(state.photoUrl);
                 }
               });
+              _skipNextUpdateDialog = true;
               _updateProfile();
               await ActionSuccessDialog.showImageUploaded(context);
             } else if (state is ProfileError) {
@@ -232,7 +234,11 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                 ),
               );
             } else if (state is ProfileUpdated) {
-              await ActionSuccessDialog.showPhotosUpdated(context);
+              if (_skipNextUpdateDialog) {
+                _skipNextUpdateDialog = false;
+              } else {
+                await ActionSuccessDialog.showPhotosUpdated(context);
+              }
             }
           },
           builder: (context, state) {

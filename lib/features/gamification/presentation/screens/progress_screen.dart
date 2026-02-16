@@ -70,7 +70,8 @@ class _ProgressScreenState extends State<ProgressScreen>
                 l10n.progressTitle,
                 style: const TextStyle(
                   fontSize: 20,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.textPrimary,
                 ),
               ),
               centerTitle: true,

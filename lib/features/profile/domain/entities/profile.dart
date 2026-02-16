@@ -30,6 +30,7 @@ class Profile extends Equatable {
   final String? occupation;
   final String? lookingFor;
   final int? height;
+  final int? weight;
   final DateTime createdAt;
   final DateTime updatedAt;
   final bool isComplete;
@@ -70,6 +71,7 @@ class Profile extends Equatable {
     this.occupation,
     this.lookingFor,
     this.height,
+    this.weight,
     required this.createdAt,
     required this.updatedAt,
     required this.isComplete,
@@ -131,6 +133,7 @@ class Profile extends Equatable {
         occupation,
         lookingFor,
         height,
+        weight,
         createdAt,
         updatedAt,
         isComplete,
@@ -167,6 +170,7 @@ class Profile extends Equatable {
     String? occupation,
     String? lookingFor,
     int? height,
+    int? weight,
     DateTime? createdAt,
     DateTime? updatedAt,
     bool? isComplete,
@@ -201,6 +205,7 @@ class Profile extends Equatable {
       occupation: occupation ?? this.occupation,
       lookingFor: lookingFor ?? this.lookingFor,
       height: height ?? this.height,
+      weight: weight ?? this.weight,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       isComplete: isComplete ?? this.isComplete,

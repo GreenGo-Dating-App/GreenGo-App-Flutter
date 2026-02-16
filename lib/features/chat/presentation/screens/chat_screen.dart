@@ -76,6 +76,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Message? _replyingToMessage;
 
   LanguageProvider? _languageProvider;
+  String? _currentUserName;
 
   @override
   void initState() {
@@ -83,6 +84,23 @@ class _ChatScreenState extends State<ChatScreen> {
     _translationService.initialize();
     _chatDataSource = ChatRemoteDataSourceImpl(firestore: FirebaseFirestore.instance);
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
+    _fetchCurrentUserName();
+  }
+
+  Future<void> _fetchCurrentUserName() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.currentUserId)
+          .get();
+      if (mounted && doc.exists) {
+        setState(() {
+          _currentUserName = doc.data()?['displayName'] as String? ?? 'Someone';
+        });
+      }
+    } catch (_) {
+      // Silently fail - will use fallback name
+    }
   }
 
   @override
@@ -365,6 +383,13 @@ class _ChatScreenState extends State<ChatScreen> {
               children: [
                 _buildAttachmentOption(
                   context,
+                  icon: Icons.collections,
+                  label: AppLocalizations.of(context)?.albumOption ?? 'Album',
+                  color: Colors.teal,
+                  onTap: () => _showMyAlbumPhotos(context),
+                ),
+                _buildAttachmentOption(
+                  context,
                   icon: Icons.photo_library,
                   label: AppLocalizations.of(context)!.chatAttachGallery,
                   color: AppColors.richGold,
@@ -377,6 +402,12 @@ class _ChatScreenState extends State<ChatScreen> {
                   color: Colors.blue,
                   onTap: () => _pickImage(context, ImageSource.camera),
                 ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
                 _buildAttachmentOption(
                   context,
                   icon: Icons.videocam,
@@ -390,19 +421,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   label: AppLocalizations.of(context)!.chatAttachRecord,
                   color: Colors.red,
                   onTap: () => _pickVideo(context, ImageSource.camera),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _buildAttachmentOption(
-                  context,
-                  icon: Icons.collections,
-                  label: AppLocalizations.of(context)?.albumOption ?? 'Album',
-                  color: Colors.teal,
-                  onTap: () => _showMyAlbumPhotos(context),
                 ),
               ],
             ),
@@ -734,11 +752,20 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Show current user's private album photos for sending in chat
   void _showMyAlbumPhotos(BuildContext context) async {
     try {
-      // Fetch current user's profile to get private photos
-      final profileDoc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.currentUserId)
-          .get();
+      // Fetch current user's profile to get private photos (force server to get fresh data)
+      DocumentSnapshot profileDoc;
+      try {
+        profileDoc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get(const GetOptions(source: Source.server));
+      } catch (_) {
+        // Fallback to cache if server unavailable
+        profileDoc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+      }
 
       if (!mounted) return;
 
@@ -995,6 +1022,12 @@ class _ChatScreenState extends State<ChatScreen> {
         grantedToId: widget.otherUserId,
       );
       if (mounted) {
+        // Send auto-message
+        final name = _currentUserName ?? 'Someone';
+        context.read<ChatBloc>().add(ChatMessageSent(
+          content: '$name shared their album with you',
+          type: MessageType.system,
+        ));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)?.grantAlbumAccess ?? 'Album shared'),
@@ -1022,6 +1055,12 @@ class _ChatScreenState extends State<ChatScreen> {
         grantedToId: widget.otherUserId,
       );
       if (mounted) {
+        // Send auto-message
+        final name = _currentUserName ?? 'Someone';
+        context.read<ChatBloc>().add(ChatMessageSent(
+          content: '$name revoked album access',
+          type: MessageType.system,
+        ));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)?.revokeAccess ?? 'Album access revoked'),

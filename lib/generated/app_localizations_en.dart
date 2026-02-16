@@ -1996,4 +1996,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get albumOption => 'Album';
+
+  @override
+  String albumSharedMessage(String username) {
+    return '$username shared their album with you';
+  }
+
+  @override
+  String albumRevokedMessage(String username) {
+    return '$username revoked album access';
+  }
+
+  @override
+  String get sendCoins => 'Send Coins';
+
+  @override
+  String get recipientNickname => 'Recipient nickname';
+
+  @override
+  String get enterAmount => 'Enter amount';
+
+  @override
+  String sendCoinsConfirm(String amount, String nickname) {
+    return 'Send $amount coins to @$nickname?';
+  }
+
+  @override
+  String get coinsSent => 'Coins sent successfully!';
+
+  @override
+  String get insufficientCoins => 'Insufficient coins';
+
+  @override
+  String get userNotFound => 'User not found';
+
+  @override
+  String get weight => 'Weight';
+
+  @override
+  String get aboutMeTitle => 'About Me';
 }

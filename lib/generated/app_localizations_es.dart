@@ -2023,4 +2023,43 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get albumOption => 'Álbum';
+
+  @override
+  String albumSharedMessage(String username) {
+    return '$username compartió su álbum contigo';
+  }
+
+  @override
+  String albumRevokedMessage(String username) {
+    return '$username revocó el acceso al álbum';
+  }
+
+  @override
+  String get sendCoins => 'Enviar monedas';
+
+  @override
+  String get recipientNickname => 'Apodo del destinatario';
+
+  @override
+  String get enterAmount => 'Ingresa la cantidad';
+
+  @override
+  String sendCoinsConfirm(String amount, String nickname) {
+    return '¿Enviar $amount monedas a @$nickname?';
+  }
+
+  @override
+  String get coinsSent => '¡Monedas enviadas con éxito!';
+
+  @override
+  String get insufficientCoins => 'Monedas insuficientes';
+
+  @override
+  String get userNotFound => 'Usuario no encontrado';
+
+  @override
+  String get weight => 'Peso';
+
+  @override
+  String get aboutMeTitle => 'Sobre mí';
 }

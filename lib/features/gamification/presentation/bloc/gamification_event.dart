@@ -97,7 +97,7 @@ class LoadLeaderboard extends GamificationEvent {
     this.userId,
     this.type = LeaderboardType.global,
     this.region,
-    this.limit = 100,
+    this.limit = 20,
   });
 
   @override

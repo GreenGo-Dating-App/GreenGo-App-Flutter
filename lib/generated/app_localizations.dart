@@ -3706,6 +3706,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Album'**
   String get albumOption;
+
+  /// No description provided for @albumSharedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'{username} shared their album with you'**
+  String albumSharedMessage(String username);
+
+  /// No description provided for @albumRevokedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'{username} revoked album access'**
+  String albumRevokedMessage(String username);
+
+  /// No description provided for @sendCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Coins'**
+  String get sendCoins;
+
+  /// No description provided for @recipientNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipient nickname'**
+  String get recipientNickname;
+
+  /// No description provided for @enterAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter amount'**
+  String get enterAmount;
+
+  /// No description provided for @sendCoinsConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Send {amount} coins to @{nickname}?'**
+  String sendCoinsConfirm(String amount, String nickname);
+
+  /// No description provided for @coinsSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins sent successfully!'**
+  String get coinsSent;
+
+  /// No description provided for @insufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Insufficient coins'**
+  String get insufficientCoins;
+
+  /// No description provided for @userNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'User not found'**
+  String get userNotFound;
+
+  /// No description provided for @weight.
+  ///
+  /// In en, this message translates to:
+  /// **'Weight'**
+  String get weight;
+
+  /// No description provided for @aboutMeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'About Me'**
+  String get aboutMeTitle;
 }
 
 class _AppLocalizationsDelegate

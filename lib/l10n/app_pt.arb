@@ -850,5 +850,19 @@
   "revokeAccess": "Revogar acesso ao álbum",
   "albumNotShared": "Álbum não partilhado",
   "grantAlbumAccess": "Partilhar meu álbum",
-  "albumOption": "Álbum"
+  "albumOption": "Álbum",
+  "albumSharedMessage": "{username} partilhou o álbum contigo",
+  "@albumSharedMessage": {"placeholders": {"username": {"type": "String"}}},
+  "albumRevokedMessage": "{username} revogou o acesso ao álbum",
+  "@albumRevokedMessage": {"placeholders": {"username": {"type": "String"}}},
+  "sendCoins": "Enviar moedas",
+  "recipientNickname": "Apelido do destinatário",
+  "enterAmount": "Introduzir montante",
+  "sendCoinsConfirm": "Enviar {amount} moedas para @{nickname}?",
+  "@sendCoinsConfirm": {"placeholders": {"amount": {"type": "String"}, "nickname": {"type": "String"}}},
+  "coinsSent": "Moedas enviadas com sucesso!",
+  "insufficientCoins": "Moedas insuficientes",
+  "userNotFound": "Utilizador não encontrado",
+  "weight": "Peso",
+  "aboutMeTitle": "Sobre mim"
 }

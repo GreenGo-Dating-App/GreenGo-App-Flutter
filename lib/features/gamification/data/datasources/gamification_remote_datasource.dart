@@ -233,7 +233,23 @@ class GamificationRemoteDataSourceImpl
     final doc = await _userLevelsCollection.doc(userId).get();
 
     if (!doc.exists) {
-      // Initialize level
+      // Fetch profile data to include in leaderboard
+      String? displayName;
+      String? photoUrl;
+      String? region;
+      try {
+        final profileDoc = await firestore.collection('profiles').doc(userId).get();
+        if (profileDoc.exists) {
+          final data = profileDoc.data();
+          displayName = data?['displayName'] as String?;
+          final photoUrls = data?['photoUrls'] as List<dynamic>?;
+          photoUrl = (photoUrls != null && photoUrls.isNotEmpty) ? photoUrls.first as String : null;
+          final location = data?['location'] as Map<String, dynamic>?;
+          region = location?['country'] as String?;
+        }
+      } catch (_) {}
+
+      // Initialize level with profile data for leaderboard
       final initialLevel = UserLevelModel(
         userId: userId,
         level: 1,
@@ -242,7 +258,12 @@ class GamificationRemoteDataSourceImpl
         isVIP: false,
       );
 
-      await _userLevelsCollection.doc(userId).set(initialLevel.toMap());
+      final levelMap = initialLevel.toMap();
+      levelMap['displayName'] = displayName ?? 'Unknown';
+      levelMap['photoUrl'] = photoUrl;
+      levelMap['region'] = region ?? '';
+
+      await _userLevelsCollection.doc(userId).set(levelMap);
       return initialLevel;
     }
 

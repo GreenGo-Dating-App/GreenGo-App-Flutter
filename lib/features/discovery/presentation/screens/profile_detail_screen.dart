@@ -421,6 +421,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
                         // Additional details
                         if (widget.profile.height != null ||
+                            widget.profile.weight != null ||
                             widget.profile.education != null ||
                             widget.profile.occupation != null) ...[
                           _buildSectionTitle(AppLocalizations.of(context)!.details),
@@ -430,6 +431,12 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                               icon: Icons.height,
                               label: AppLocalizations.of(context)!.height,
                               value: '${widget.profile.height} cm',
+                            ),
+                          if (widget.profile.weight != null)
+                            _buildDetailRow(
+                              icon: Icons.fitness_center,
+                              label: 'Weight',
+                              value: '${widget.profile.weight} kg',
                             ),
                           if (widget.profile.education != null)
                             _buildDetailRow(

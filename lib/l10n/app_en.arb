@@ -1009,5 +1009,19 @@
   "revokeAccess": "Revoke album access",
   "albumNotShared": "Album not shared with you",
   "grantAlbumAccess": "Share my album",
-  "albumOption": "Album"
+  "albumOption": "Album",
+  "albumSharedMessage": "{username} shared their album with you",
+  "@albumSharedMessage": {"placeholders": {"username": {"type": "String"}}},
+  "albumRevokedMessage": "{username} revoked album access",
+  "@albumRevokedMessage": {"placeholders": {"username": {"type": "String"}}},
+  "sendCoins": "Send Coins",
+  "recipientNickname": "Recipient nickname",
+  "enterAmount": "Enter amount",
+  "sendCoinsConfirm": "Send {amount} coins to @{nickname}?",
+  "@sendCoinsConfirm": {"placeholders": {"amount": {"type": "String"}, "nickname": {"type": "String"}}},
+  "coinsSent": "Coins sent successfully!",
+  "insufficientCoins": "Insufficient coins",
+  "userNotFound": "User not found",
+  "weight": "Weight",
+  "aboutMeTitle": "About Me"
 }

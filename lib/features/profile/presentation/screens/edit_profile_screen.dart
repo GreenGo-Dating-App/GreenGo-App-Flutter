@@ -29,7 +29,6 @@ import 'edit_location_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_nickname_screen.dart';
 import 'edit_voice_screen.dart';
-import 'edit_details_screen.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
@@ -78,7 +77,11 @@ class EditProfileScreen extends StatelessWidget {
           ),
           title: Text(
             AppLocalizations.of(context)!.editProfile,
-            style: const TextStyle(color: AppColors.textPrimary),
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: AppColors.textPrimary,
+            ),
           ),
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
@@ -202,14 +205,10 @@ class EditProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Bio Section
+                  // About Me Section
                   EditSectionCard(
                     title: AppLocalizations.of(context)!.aboutMe,
-                    subtitle: activeProfile.bio.isEmpty
-                        ? AppLocalizations.of(context)!.addBio
-                        : activeProfile.bio.length > 50
-                            ? '${activeProfile.bio.substring(0, 50)}...'
-                            : activeProfile.bio,
+                    subtitle: _getAboutMeSubtitle(context, activeProfile),
                     icon: Icons.edit_note,
                     onTap: () => _navigateToEditBio(context, activeProfile),
                   ),
@@ -254,16 +253,6 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: _getSocialLinksSubtitle(context, activeProfile),
                     icon: Icons.share,
                     onTap: () => _navigateToEditSocialLinks(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Education & Occupation Section
-                  EditSectionCard(
-                    title: 'Education & Occupation',
-                    subtitle: _getEducationOccupationSubtitle(activeProfile),
-                    icon: Icons.school,
-                    onTap: () => _navigateToEditDetails(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -595,28 +584,20 @@ class EditProfileScreen extends StatelessWidget {
     // Profile updates are propagated through shared BLoC - no reload needed
   }
 
-  Future<void> _navigateToEditDetails(BuildContext context, Profile currentProfile) async {
-    final profileBloc = context.read<ProfileBloc>();
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => BlocProvider.value(
-          value: profileBloc,
-          child: EditDetailsScreen(profile: currentProfile),
-        ),
-      ),
-    );
-  }
-
-  String _getEducationOccupationSubtitle(Profile profile) {
+  String _getAboutMeSubtitle(BuildContext context, Profile profile) {
+    if (profile.bio.isEmpty) {
+      return AppLocalizations.of(context)!.addBio;
+    }
     final parts = <String>[];
+    if (profile.weight != null) parts.add('${profile.weight}kg');
+    if (profile.height != null) parts.add('${profile.height}cm');
     if (profile.education != null && profile.education!.isNotEmpty) {
       parts.add(profile.education!);
     }
-    if (profile.occupation != null && profile.occupation!.isNotEmpty) {
-      parts.add(profile.occupation!);
-    }
-    if (parts.isEmpty) return 'Add education & occupation';
-    return parts.join(' • ');
+    if (parts.isNotEmpty) return parts.join(' • ');
+    return profile.bio.length > 50
+        ? '${profile.bio.substring(0, 50)}...'
+        : profile.bio;
   }
 
   void _navigateToAdminVerification(BuildContext context, Profile currentProfile) {

@@ -811,7 +811,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           _currentIndex == 1 ? 'Matches' : 'Messages',
           style: const TextStyle(
             fontSize: 20,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
+            color: AppColors.textPrimary,
           ),
         ),
         backgroundColor: AppColors.backgroundDark,

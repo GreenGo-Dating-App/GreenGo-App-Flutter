@@ -45,6 +45,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   List<CoinPackage> _cachedPackages = [];
   List<CoinPromotion> _cachedPromotions = [];
 
+  // Send coins state
+  final TextEditingController _nicknameController = TextEditingController();
+  final TextEditingController _amountController = TextEditingController();
+  bool _isSendingCoins = false;
+
   // Mutable current tier — loaded from Firestore, updated after purchase
   late SubscriptionTier _currentTier;
 
@@ -94,6 +99,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   void dispose() {
     _tabController.dispose();
     _purchaseSubscription.cancel();
+    _nicknameController.dispose();
+    _amountController.dispose();
     super.dispose();
   }
 
@@ -277,19 +284,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: ShaderMask(
-          shaderCallback: (bounds) => const LinearGradient(
-            colors: [Color(0xFFFFD700), AppColors.richGold],
-          ).createShader(bounds),
-          child: const Text(
-            'Shop',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+        title: const Text(
+          'Shop',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: AppColors.textPrimary,
           ),
         ),
         centerTitle: true,
@@ -1284,16 +1286,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         // Active promotion banner
         if (promotions.isNotEmpty) _buildPromotionBanner(promotions.first),
 
-        // Package list
+        // Package list + Send Coins
         Expanded(
-          child: ListView.builder(
+          child: ListView(
             padding: const EdgeInsets.all(16),
-            itemCount: packages.length,
-            itemBuilder: (context, index) {
-              final package = packages[index];
-              final isPopular = package.packageId == 'popular_500';
-              return _buildPackageCard(package, isPopular, promotions);
-            },
+            children: [
+              ...packages.map((package) {
+                final isPopular = package.packageId == 'popular_500';
+                return _buildPackageCard(package, isPopular, promotions);
+              }),
+              const SizedBox(height: 24),
+              _buildSendCoinsSection(),
+            ],
           ),
         ),
 
@@ -1630,6 +1634,244 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[CoinPurchase] Stack trace: $stackTrace');
       _showError('Purchase error: ${e.toString()}');
       setState(() => _isLoadingCoinPurchase = false);
+    }
+  }
+
+  Widget _buildSendCoinsSection() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.grey[850],
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 44,
+                height: 44,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.richGold.withOpacity(0.15),
+                ),
+                child: const Icon(Icons.card_giftcard, color: AppColors.richGold, size: 24),
+              ),
+              const SizedBox(width: 12),
+              const Text(
+                'Send Coins',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          // Nickname input
+          TextField(
+            controller: _nicknameController,
+            style: const TextStyle(color: Colors.white, fontSize: 16),
+            decoration: InputDecoration(
+              hintText: 'Recipient nickname',
+              hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),
+              prefixIcon: const Icon(Icons.alternate_email, color: AppColors.richGold, size: 20),
+              filled: true,
+              fillColor: Colors.black26,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.white.withOpacity(0.1)),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.white.withOpacity(0.1)),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: const BorderSide(color: AppColors.richGold),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          // Amount input
+          TextField(
+            controller: _amountController,
+            keyboardType: TextInputType.number,
+            style: const TextStyle(color: Colors.white, fontSize: 16),
+            decoration: InputDecoration(
+              hintText: 'Enter amount',
+              hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),
+              prefixIcon: const Icon(Icons.monetization_on, color: AppColors.richGold, size: 20),
+              filled: true,
+              fillColor: Colors.black26,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.white.withOpacity(0.1)),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Colors.white.withOpacity(0.1)),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: const BorderSide(color: AppColors.richGold),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          // Send button
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isSendingCoins ? null : _handleSendCoins,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: Colors.black,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isSendingCoins
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black),
+                    )
+                  : const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.send, size: 18),
+                        SizedBox(width: 8),
+                        Text(
+                          'Send Coins',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _handleSendCoins() async {
+    final nickname = _nicknameController.text.trim().toLowerCase();
+    final amountText = _amountController.text.trim();
+
+    if (nickname.isEmpty || amountText.isEmpty) {
+      _showError('Please enter both nickname and amount');
+      return;
+    }
+
+    final amount = int.tryParse(amountText);
+    if (amount == null || amount <= 0) {
+      _showError('Please enter a valid amount');
+      return;
+    }
+
+    if (amount > _currentCoinBalance) {
+      _showError('Insufficient coins');
+      return;
+    }
+
+    // Confirm dialog
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text('Confirm Send', style: TextStyle(color: AppColors.textPrimary)),
+        content: Text(
+          'Send $amount coins to @$nickname?',
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Send', style: TextStyle(color: AppColors.richGold)),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() => _isSendingCoins = true);
+
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Find recipient by nickname
+      final recipientQuery = await firestore
+          .collection('profiles')
+          .where('nickname', isEqualTo: nickname)
+          .limit(1)
+          .get();
+
+      if (recipientQuery.docs.isEmpty) {
+        _showError('User not found');
+        setState(() => _isSendingCoins = false);
+        return;
+      }
+
+      final recipientId = recipientQuery.docs.first.id;
+
+      if (recipientId == widget.userId) {
+        _showError('You cannot send coins to yourself');
+        setState(() => _isSendingCoins = false);
+        return;
+      }
+
+      // Atomic batch write: deduct from sender, add to recipient, record transaction
+      final batch = firestore.batch();
+
+      final senderRef = firestore.collection('coin_balances').doc(widget.userId);
+      final recipientRef = firestore.collection('coin_balances').doc(recipientId);
+      final transactionRef = firestore.collection('coin_transactions').doc();
+
+      batch.update(senderRef, {
+        'availableCoins': FieldValue.increment(-amount),
+      });
+      batch.set(recipientRef, {
+        'availableCoins': FieldValue.increment(amount),
+      }, SetOptions(merge: true));
+      batch.set(transactionRef, {
+        'senderId': widget.userId,
+        'recipientId': recipientId,
+        'amount': amount,
+        'timestamp': FieldValue.serverTimestamp(),
+        'type': 'gift',
+      });
+
+      await batch.commit();
+
+      if (mounted) {
+        setState(() {
+          _currentCoinBalance -= amount;
+          _nicknameController.clear();
+          _amountController.clear();
+          _isSendingCoins = false;
+        });
+        // Reload balance
+        context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('$amount coins sent to @$nickname!'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e) {
+      _showError('Failed to send coins: ${e.toString()}');
+      setState(() => _isSendingCoins = false);
     }
   }
 

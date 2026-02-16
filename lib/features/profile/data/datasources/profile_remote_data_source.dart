@@ -81,6 +81,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         occupation: profile.occupation,
         lookingFor: profile.lookingFor,
         height: profile.height,
+        weight: profile.weight,
         createdAt: profile.createdAt,
         updatedAt: DateTime.now(),
         isComplete: profile.isComplete,
@@ -102,6 +103,23 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
           .collection('profiles')
           .doc(profile.userId)
           .update(updatedProfile.toJson());
+
+      // Sync displayName, photoUrl, region to user_levels for leaderboard
+      try {
+        final userLevelDoc = await firestore.collection('user_levels').doc(profile.userId).get();
+        if (userLevelDoc.exists) {
+          final syncData = <String, dynamic>{
+            'displayName': profile.displayName,
+            'region': profile.location.country,
+          };
+          if (profile.photoUrls.isNotEmpty) {
+            syncData['photoUrl'] = profile.photoUrls.first;
+          }
+          await firestore.collection('user_levels').doc(profile.userId).update(syncData);
+        }
+      } catch (_) {
+        // Non-critical sync — don't fail the profile update
+      }
 
       return updatedProfile;
     } on FirebaseException catch (e) {

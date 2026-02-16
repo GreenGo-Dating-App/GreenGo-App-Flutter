@@ -1,15 +1,17 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../domain/entities/match.dart';
 import 'profile_detail_screen.dart';
 
 /// Match Detail Screen
-/// Shows match info with options to view profile, start chat, or unmatch
-class MatchDetailScreen extends StatelessWidget {
+/// Shows match info with overlapping photos, both users' details, gamification stats
+class MatchDetailScreen extends StatefulWidget {
   final Match match;
   final Profile profile;
   final String currentUserId;
@@ -20,6 +22,68 @@ class MatchDetailScreen extends StatelessWidget {
     required this.profile,
     required this.currentUserId,
   });
+
+  @override
+  State<MatchDetailScreen> createState() => _MatchDetailScreenState();
+}
+
+class _MatchDetailScreenState extends State<MatchDetailScreen> {
+  Profile? _currentUserProfile;
+  Map<String, dynamic>? _currentUserGamification;
+  Map<String, dynamic>? _otherUserGamification;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchData();
+  }
+
+  Future<void> _fetchData() async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Fetch current user's profile and both gamification data in parallel
+      final results = await Future.wait([
+        firestore.collection('profiles').doc(widget.currentUserId).get(),
+        firestore.collection('user_levels').doc(widget.currentUserId).get(),
+        firestore.collection('user_levels').doc(widget.profile.userId).get(),
+      ]);
+
+      final profileDoc = results[0];
+      final currentGamDoc = results[1];
+      final otherGamDoc = results[2];
+
+      if (mounted) {
+        setState(() {
+          if (profileDoc.exists) {
+            _currentUserProfile = ProfileModel.fromFirestore(profileDoc);
+          }
+          if (currentGamDoc.exists) {
+            _currentUserGamification = currentGamDoc.data() as Map<String, dynamic>?;
+          }
+          if (otherGamDoc.exists) {
+            _otherUserGamification = otherGamDoc.data() as Map<String, dynamic>?;
+          }
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  int _calculateAge(DateTime dateOfBirth) {
+    final now = DateTime.now();
+    int age = now.year - dateOfBirth.year;
+    if (now.month < dateOfBirth.month ||
+        (now.month == dateOfBirth.month && now.day < dateOfBirth.day)) {
+      age--;
+    }
+    return age;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,102 +111,66 @@ class MatchDetailScreen extends StatelessWidget {
           SafeArea(
             child: Column(
               children: [
-                // App bar
                 _buildAppBar(context),
-
-                // Main content
                 Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      children: [
-                        const SizedBox(height: 20),
+                  child: _isLoading
+                      ? const Center(
+                          child: CircularProgressIndicator(color: AppColors.richGold),
+                        )
+                      : SingleChildScrollView(
+                          padding: const EdgeInsets.all(24),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 20),
 
-                        // Profile photo with glow
-                        _buildProfilePhoto(),
+                              // Overlapping photos
+                              _buildOverlappingPhotos(),
 
-                        const SizedBox(height: 24),
+                              const SizedBox(height: 24),
 
-                        // Name and Age
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              profile.displayName,
-                              style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
+                              // "It's a Match!" header
+                              const Text(
+                                "It's a Match!",
+                                style: TextStyle(
+                                  color: AppColors.richGold,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              '${_calculateAge()}',
-                              style: TextStyle(
-                                color: AppColors.textSecondary.withOpacity(0.9),
-                                fontSize: 24,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ],
-                        ),
 
-                        // Location
-                        const SizedBox(height: 8),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.location_on,
-                              size: 16,
-                              color: AppColors.textTertiary.withOpacity(0.8),
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              profile.location.city.isNotEmpty
-                                  ? '${profile.location.city}, ${profile.location.country}'
-                                  : profile.location.country,
-                              style: TextStyle(
-                                color: AppColors.textTertiary.withOpacity(0.8),
-                                fontSize: 15,
-                              ),
-                            ),
-                          ],
-                        ),
+                              const SizedBox(height: 8),
 
-                        if (profile.nickname != null) ...[
-                          const SizedBox(height: 4),
-                          Text(
-                            '@${profile.nickname}',
-                            style: TextStyle(
-                              color: AppColors.richGold.withOpacity(0.8),
-                              fontSize: 14,
-                            ),
+                              // Match date
+                              Text(
+                                'Matched on ${DateFormat('MMMM d, yyyy').format(widget.match.matchedAt)}',
+                                style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 14,
+                                ),
+                              ),
+
+                              const SizedBox(height: 24),
+
+                              // Both users' info cards side by side
+                              _buildUserInfoCards(),
+
+                              const SizedBox(height: 20),
+
+                              // Gamification stats
+                              _buildGamificationSection(),
+
+                              const SizedBox(height: 32),
+
+                              // Action buttons
+                              _buildActionButtons(context),
+
+                              const SizedBox(height: 24),
+
+                              // Unmatch option
+                              _buildUnmatchButton(context),
+                            ],
                           ),
-                        ],
-
-                        const SizedBox(height: 24),
-
-                        // Profile info card
-                        _buildProfileInfoCard(),
-
-                        const SizedBox(height: 20),
-
-                        // Match info card
-                        _buildMatchInfoCard(),
-
-                        const SizedBox(height: 32),
-
-                        // Action buttons
-                        _buildActionButtons(context),
-
-                        const SizedBox(height: 24),
-
-                        // Unmatch option
-                        _buildUnmatchButton(context),
-                      ],
-                    ),
-                  ),
+                        ),
                 ),
               ],
             ),
@@ -150,16 +178,6 @@ class MatchDetailScreen extends StatelessWidget {
         ],
       ),
     );
-  }
-
-  int _calculateAge() {
-    final now = DateTime.now();
-    int age = now.year - profile.dateOfBirth.year;
-    if (now.month < profile.dateOfBirth.month ||
-        (now.month == profile.dateOfBirth.month && now.day < profile.dateOfBirth.day)) {
-      age--;
-    }
-    return age;
   }
 
   Widget _buildAppBar(BuildContext context) {
@@ -169,15 +187,12 @@ class MatchDetailScreen extends StatelessWidget {
         children: [
           IconButton(
             onPressed: () => Navigator.of(context).pop(),
-            icon: const Icon(
-              Icons.arrow_back,
-              color: AppColors.textPrimary,
-            ),
+            icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           ),
-          Expanded(
+          const Expanded(
             child: Text(
-              profile.displayName,
-              style: const TextStyle(
+              'Match Details',
+              style: TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -186,327 +201,307 @@ class MatchDetailScreen extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          const SizedBox(width: 48), // Balance the back button
+          const SizedBox(width: 48),
         ],
       ),
     );
   }
 
-  Widget _buildProfilePhoto() {
+  Widget _buildOverlappingPhotos() {
+    final currentPhotoUrl = _currentUserProfile?.photoUrls.isNotEmpty == true
+        ? _currentUserProfile!.photoUrls.first
+        : null;
+    final otherPhotoUrl = widget.profile.photoUrls.isNotEmpty
+        ? widget.profile.photoUrls.first
+        : null;
+
+    return SizedBox(
+      height: 140,
+      width: 220,
+      child: Stack(
+        children: [
+          // Current user (left)
+          Positioned(
+            left: 0,
+            child: _buildCirclePhoto(currentPhotoUrl, 120),
+          ),
+          // Other user (right, overlapping)
+          Positioned(
+            right: 0,
+            child: _buildCirclePhoto(otherPhotoUrl, 120),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCirclePhoto(String? photoUrl, double size) {
     return Container(
+      width: size,
+      height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
+        border: Border.all(color: AppColors.richGold, width: 3),
         boxShadow: [
           BoxShadow(
-            color: AppColors.richGold.withOpacity(0.4),
-            blurRadius: 30,
-            spreadRadius: 5,
+            color: AppColors.richGold.withOpacity(0.3),
+            blurRadius: 15,
+            spreadRadius: 2,
           ),
         ],
       ),
-      child: Container(
-        width: 160,
-        height: 160,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: AppColors.richGold,
-            width: 3,
-          ),
-        ),
-        child: ClipOval(
-          child: profile.photoUrls.isNotEmpty
-              ? Image.network(
-                  profile.photoUrls.first,
-                  fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => _buildPlaceholderPhoto(),
-                )
-              : _buildPlaceholderPhoto(),
-        ),
+      child: ClipOval(
+        child: photoUrl != null
+            ? Image.network(
+                photoUrl,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => _buildPlaceholder(),
+              )
+            : _buildPlaceholder(),
       ),
     );
   }
 
-  Widget _buildPlaceholderPhoto() {
+  Widget _buildPlaceholder() {
     return Container(
       color: AppColors.backgroundCard,
-      child: const Icon(
-        Icons.person,
-        size: 80,
-        color: AppColors.textTertiary,
-      ),
+      child: const Icon(Icons.person, size: 50, color: AppColors.textTertiary),
     );
   }
 
-  Widget _buildProfileInfoCard() {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        child: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.4),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(
-              color: AppColors.richGold.withOpacity(0.2),
-            ),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Bio
-              if (profile.bio.isNotEmpty) ...[
-                const Text(
-                  'About',
-                  style: TextStyle(
-                    color: AppColors.richGold,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  profile.bio,
-                  style: const TextStyle(
-                    color: AppColors.textSecondary,
-                    fontSize: 14,
-                    height: 1.4,
-                  ),
-                ),
-                const SizedBox(height: 16),
-              ],
-
-              // Occupation & Education
-              if (profile.occupation != null || profile.education != null) ...[
-                Row(
-                  children: [
-                    if (profile.occupation != null) ...[
-                      Expanded(
-                        child: _buildInfoItem(
-                          Icons.work_outline,
-                          profile.occupation!,
-                        ),
-                      ),
-                    ],
-                    if (profile.occupation != null && profile.education != null)
-                      const SizedBox(width: 16),
-                    if (profile.education != null) ...[
-                      Expanded(
-                        child: _buildInfoItem(
-                          Icons.school_outlined,
-                          profile.education!,
-                        ),
-                      ),
-                    ],
-                  ],
-                ),
-                const SizedBox(height: 16),
-              ],
-
-              // Looking for
-              if (profile.lookingFor != null) ...[
-                _buildInfoItem(
-                  Icons.favorite_border,
-                  'Looking for: ${profile.lookingFor}',
-                ),
-                const SizedBox(height: 16),
-              ],
-
-              // Interests
-              if (profile.interests.isNotEmpty) ...[
-                const Text(
-                  'Interests',
-                  style: TextStyle(
-                    color: AppColors.richGold,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: profile.interests.take(6).map((interest) {
-                    return Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 6,
-                      ),
-                      decoration: BoxDecoration(
-                        color: AppColors.richGold.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                          color: AppColors.richGold.withOpacity(0.3),
-                        ),
-                      ),
-                      child: Text(
-                        interest,
-                        style: const TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 12,
-                        ),
-                      ),
-                    );
-                  }).toList(),
-                ),
-              ],
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildInfoItem(IconData icon, String text) {
+  Widget _buildUserInfoCards() {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(
-          icon,
-          size: 16,
-          color: AppColors.textTertiary,
-        ),
-        const SizedBox(width: 8),
+        // Current user card
         Expanded(
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 13,
-            ),
-            overflow: TextOverflow.ellipsis,
+          child: _buildUserCard(
+            name: _currentUserProfile?.displayName ?? 'You',
+            age: _currentUserProfile != null
+                ? _calculateAge(_currentUserProfile!.dateOfBirth)
+                : null,
+            education: _currentUserProfile?.education,
+            occupation: _currentUserProfile?.occupation,
+            height: _currentUserProfile?.height,
+            weight: _currentUserProfile?.weight,
+            isCurrentUser: true,
+          ),
+        ),
+        const SizedBox(width: 12),
+        // Other user card
+        Expanded(
+          child: _buildUserCard(
+            name: widget.profile.displayName,
+            age: _calculateAge(widget.profile.dateOfBirth),
+            education: widget.profile.education,
+            occupation: widget.profile.occupation,
+            height: widget.profile.height,
+            weight: widget.profile.weight,
+            isCurrentUser: false,
           ),
         ),
       ],
     );
   }
 
-  Widget _buildMatchInfoCard() {
-    final matchDate = DateFormat('MMMM d, yyyy').format(match.matchedAt);
-    final matchTime = DateFormat('h:mm a').format(match.matchedAt);
-
+  Widget _buildUserCard({
+    required String name,
+    int? age,
+    String? education,
+    String? occupation,
+    int? height,
+    int? weight,
+    required bool isCurrentUser,
+  }) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(16),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
         child: Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(
             color: Colors.black.withOpacity(0.4),
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: AppColors.richGold.withOpacity(0.3),
+              color: isCurrentUser
+                  ? AppColors.richGold.withOpacity(0.4)
+                  : AppColors.richGold.withOpacity(0.2),
             ),
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Match icon
-              Container(
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
+              if (isCurrentUser)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                  margin: const EdgeInsets.only(bottom: 8),
+                  decoration: BoxDecoration(
+                    color: AppColors.richGold.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.richGold.withOpacity(0.4),
-                      blurRadius: 15,
+                  child: const Text(
+                    'YOU',
+                    style: TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
-                child: const Center(
-                  child: Text(
-                    '💕',
-                    style: TextStyle(fontSize: 28),
                   ),
                 ),
-              ),
-
-              const SizedBox(height: 16),
-
-              const Text(
-                "It's a Match!",
-                style: TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 20,
+              Text(
+                name,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
-
-              const SizedBox(height: 8),
-
-              Text(
-                'You matched on $matchDate',
-                style: const TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 14,
-                ),
-              ),
-
-              Text(
-                'at $matchTime',
-                style: TextStyle(
-                  color: AppColors.textTertiary.withOpacity(0.8),
-                  fontSize: 13,
-                ),
-              ),
-
-              const SizedBox(height: 16),
-
-              // Time ago badge
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                decoration: BoxDecoration(
-                  color: AppColors.richGold.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: AppColors.richGold.withOpacity(0.3),
-                  ),
-                ),
-                child: Text(
-                  match.timeSinceMatchText,
+              if (age != null)
+                Text(
+                  '$age years',
                   style: const TextStyle(
-                    color: AppColors.richGold,
+                    color: AppColors.textSecondary,
                     fontSize: 13,
-                    fontWeight: FontWeight.w600,
                   ),
                 ),
-              ),
-
-              // Last message info if exists
-              if (match.lastMessage != null) ...[
-                const SizedBox(height: 20),
-                const Divider(color: AppColors.divider),
-                const SizedBox(height: 12),
-                Row(
-                  children: [
-                    const Icon(
-                      Icons.chat_bubble_outline,
-                      size: 16,
-                      color: AppColors.textTertiary,
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        'Last message: "${match.lastMessage}"',
-                        style: TextStyle(
-                          color: AppColors.textSecondary.withOpacity(0.8),
-                          fontSize: 13,
-                          fontStyle: FontStyle.italic,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+              const SizedBox(height: 8),
+              if (education != null)
+                _buildMiniInfo(Icons.school_outlined, education),
+              if (occupation != null)
+                _buildMiniInfo(Icons.work_outline, occupation),
+              if (height != null)
+                _buildMiniInfo(Icons.height, '$height cm'),
+              if (weight != null)
+                _buildMiniInfo(Icons.fitness_center, '$weight kg'),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildMiniInfo(IconData icon, String text) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        children: [
+          Icon(icon, size: 14, color: AppColors.textTertiary),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildGamificationSection() {
+    if (_currentUserGamification == null && _otherUserGamification == null) {
+      return const SizedBox.shrink();
+    }
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.4),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: AppColors.richGold.withOpacity(0.2)),
+          ),
+          child: Column(
+            children: [
+              const Text(
+                'Progress Comparison',
+                style: TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  // Current user stats
+                  Expanded(
+                    child: _buildGamificationStats(
+                      _currentUserProfile?.displayName ?? 'You',
+                      _currentUserGamification,
+                    ),
+                  ),
+                  Container(
+                    width: 1,
+                    height: 80,
+                    color: AppColors.divider,
+                  ),
+                  // Other user stats
+                  Expanded(
+                    child: _buildGamificationStats(
+                      widget.profile.displayName,
+                      _otherUserGamification,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGamificationStats(String name, Map<String, dynamic>? data) {
+    final level = data?['level'] as int? ?? 1;
+    final totalXP = data?['totalXP'] as int? ?? 0;
+
+    return Column(
+      children: [
+        Text(
+          name,
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontSize: 13,
+            fontWeight: FontWeight.w600,
+          ),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+        const SizedBox(height: 8),
+        _buildStatRow('Level', '$level'),
+        _buildStatRow('XP', '$totalXP'),
+      ],
+    );
+  }
+
+  Widget _buildStatRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            '$label: ',
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
+          ),
+          Text(
+            value,
+            style: const TextStyle(
+              color: AppColors.richGold,
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -514,15 +509,14 @@ class MatchDetailScreen extends StatelessWidget {
   Widget _buildActionButtons(BuildContext context) {
     return Column(
       children: [
-        // See Profile button
         _buildGlassButton(
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => ProfileDetailScreen(
-                  profile: profile,
-                  currentUserId: currentUserId,
-                  match: match,
+                  profile: widget.profile,
+                  currentUserId: widget.currentUserId,
+                  match: widget.match,
                 ),
               ),
             );
@@ -531,19 +525,16 @@ class MatchDetailScreen extends StatelessWidget {
           label: 'See Profile',
           isPrimary: false,
         ),
-
         const SizedBox(height: 16),
-
-        // Start Chat button
         _buildGlassButton(
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => ChatScreen(
-                  matchId: match.matchId,
-                  otherUserId: match.getOtherUserId(currentUserId),
-                  currentUserId: currentUserId,
-                  otherUserProfile: profile,
+                  matchId: widget.match.matchId,
+                  otherUserId: widget.match.getOtherUserId(widget.currentUserId),
+                  currentUserId: widget.currentUserId,
+                  otherUserProfile: widget.profile,
                 ),
               ),
             );
@@ -640,7 +631,7 @@ class MatchDetailScreen extends StatelessWidget {
           style: TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to unmatch with ${profile.displayName}? This cannot be undone.',
+          'Are you sure you want to unmatch with ${widget.profile.displayName}? This cannot be undone.',
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -653,12 +644,11 @@ class MatchDetailScreen extends StatelessWidget {
           ),
           TextButton(
             onPressed: () {
-              // TODO: Implement unmatch functionality
               Navigator.of(context).pop();
               Navigator.of(context).pop();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Unmatched with ${profile.displayName}'),
+                  content: Text('Unmatched with ${widget.profile.displayName}'),
                   backgroundColor: AppColors.backgroundCard,
                 ),
               );

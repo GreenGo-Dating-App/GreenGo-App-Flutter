@@ -2011,4 +2011,43 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get albumOption => 'Album';
+
+  @override
+  String albumSharedMessage(String username) {
+    return '$username ha condiviso il suo album con te';
+  }
+
+  @override
+  String albumRevokedMessage(String username) {
+    return '$username ha revocato l\'accesso all\'album';
+  }
+
+  @override
+  String get sendCoins => 'Invia monete';
+
+  @override
+  String get recipientNickname => 'Nickname del destinatario';
+
+  @override
+  String get enterAmount => 'Inserisci l\'importo';
+
+  @override
+  String sendCoinsConfirm(String amount, String nickname) {
+    return 'Inviare $amount monete a @$nickname?';
+  }
+
+  @override
+  String get coinsSent => 'Monete inviate con successo!';
+
+  @override
+  String get insufficientCoins => 'Monete insufficienti';
+
+  @override
+  String get userNotFound => 'Utente non trovato';
+
+  @override
+  String get weight => 'Peso';
+
+  @override
+  String get aboutMeTitle => 'Su di me';
 }

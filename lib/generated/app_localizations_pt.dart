@@ -2016,6 +2016,45 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get albumOption => 'Álbum';
+
+  @override
+  String albumSharedMessage(String username) {
+    return '$username partilhou o álbum contigo';
+  }
+
+  @override
+  String albumRevokedMessage(String username) {
+    return '$username revogou o acesso ao álbum';
+  }
+
+  @override
+  String get sendCoins => 'Enviar moedas';
+
+  @override
+  String get recipientNickname => 'Apelido do destinatário';
+
+  @override
+  String get enterAmount => 'Introduzir montante';
+
+  @override
+  String sendCoinsConfirm(String amount, String nickname) {
+    return 'Enviar $amount moedas para @$nickname?';
+  }
+
+  @override
+  String get coinsSent => 'Moedas enviadas com sucesso!';
+
+  @override
+  String get insufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get userNotFound => 'Utilizador não encontrado';
+
+  @override
+  String get weight => 'Peso';
+
+  @override
+  String get aboutMeTitle => 'Sobre mim';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -3966,4 +4005,43 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get albumOption => 'Álbum';
+
+  @override
+  String albumSharedMessage(String username) {
+    return '$username compartilhou o álbum com você';
+  }
+
+  @override
+  String albumRevokedMessage(String username) {
+    return '$username revogou o acesso ao álbum';
+  }
+
+  @override
+  String get sendCoins => 'Enviar moedas';
+
+  @override
+  String get recipientNickname => 'Apelido do destinatário';
+
+  @override
+  String get enterAmount => 'Inserir valor';
+
+  @override
+  String sendCoinsConfirm(String amount, String nickname) {
+    return 'Enviar $amount moedas para @$nickname?';
+  }
+
+  @override
+  String get coinsSent => 'Moedas enviadas com sucesso!';
+
+  @override
+  String get insufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get userNotFound => 'Usuário não encontrado';
+
+  @override
+  String get weight => 'Peso';
+
+  @override
+  String get aboutMeTitle => 'Sobre mim';
 }
