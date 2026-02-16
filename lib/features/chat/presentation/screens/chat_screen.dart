@@ -73,6 +73,9 @@ class _ChatScreenState extends State<ChatScreen> {
   XFile? _selectedImageXFile;
   XFile? _selectedVideoXFile;
 
+  // Album photos selected for sending
+  List<String> _selectedAlbumPhotos = [];
+
   // Reply state
   Message? _replyingToMessage;
 
@@ -212,6 +215,18 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _sendMessage(BuildContext context) {
+    // If album photos are selected, send each as a separate image message
+    if (_selectedAlbumPhotos.isNotEmpty) {
+      for (final photoUrl in _selectedAlbumPhotos) {
+        _sendAlbumPhoto(photoUrl);
+      }
+      setState(() {
+        _selectedAlbumPhotos = [];
+      });
+      _messageController.clear();
+      return;
+    }
+
     // If media is selected, send media (with optional caption)
     if (_selectedImageXFile != null) {
       _sendImageMessage(context, _selectedImageXFile!);
@@ -907,7 +922,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       },
                     ),
                   ),
-                  // Send button
+                  // Select button
                   if (selectedIndices.isNotEmpty)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
@@ -915,13 +930,18 @@ class _ChatScreenState extends State<ChatScreen> {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            final photosToSend = selectedIndices
+                            final photosToSelect = selectedIndices
                                 .map((i) => privatePhotos[i] as String)
                                 .toList();
                             Navigator.pop(ctx);
-                            for (final photoUrl in photosToSend) {
-                              _sendAlbumPhoto(photoUrl);
-                            }
+                            setState(() {
+                              _selectedAlbumPhotos = photosToSelect;
+                              // Clear any other selected media
+                              _selectedImage = null;
+                              _selectedVideo = null;
+                              _selectedImageXFile = null;
+                              _selectedVideoXFile = null;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: AppColors.richGold,
@@ -932,7 +952,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             ),
                           ),
                           child: Text(
-                            'Send (${selectedIndices.length})',
+                            'Select (${selectedIndices.length})',
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -1820,6 +1840,74 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Build media preview widget inside input container
   Widget _buildMediaPreview() {
+    // Album photos preview
+    if (_selectedAlbumPhotos.isNotEmpty) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                const Icon(Icons.photo_library, color: AppColors.richGold, size: 16),
+                const SizedBox(width: 6),
+                Text(
+                  '${_selectedAlbumPhotos.length} photo${_selectedAlbumPhotos.length > 1 ? 's' : ''} selected',
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 12,
+                  ),
+                ),
+                const Spacer(),
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _selectedAlbumPhotos = [];
+                    });
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: const BoxDecoration(
+                      color: AppColors.errorRed,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(Icons.close, color: Colors.white, size: 14),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            SizedBox(
+              height: 80,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: _selectedAlbumPhotos.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 8),
+                itemBuilder: (context, index) {
+                  return ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image.network(
+                      _selectedAlbumPhotos[index],
+                      width: 80,
+                      height: 80,
+                      fit: BoxFit.cover,
+                      cacheWidth: 160,
+                      errorBuilder: (_, __, ___) => Container(
+                        width: 80,
+                        height: 80,
+                        color: AppColors.backgroundDark,
+                        child: const Icon(Icons.broken_image, color: AppColors.textTertiary, size: 24),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
     if (_selectedImage == null && _selectedVideo == null) {
       return const SizedBox.shrink();
     }
