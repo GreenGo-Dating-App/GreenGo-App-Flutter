@@ -279,6 +279,53 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // COIN BALANCES COLLECTION
+    // ============================================================================
+    match /coin_balances/{userId} {
+      // Users can read their own coin balance
+      allow read: if isSignedIn() && request.auth.uid == userId;
+
+      // Users can create/update their own balance (for send coins feature)
+      allow create, update: if isSignedIn();
+
+      // Cannot delete balances
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION
+    // ============================================================================
+    match /coin_transactions/{transactionId} {
+      // Users can read transactions where they are sender or recipient
+      allow read: if isSignedIn() && (
+        resource.data.senderId == request.auth.uid ||
+        resource.data.recipientId == request.auth.uid
+      );
+
+      // Authenticated users can create transactions (for send coins)
+      allow create: if isSignedIn() &&
+                       request.resource.data.senderId == request.auth.uid;
+
+      // Transactions are immutable
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // USER LEVELS COLLECTION (Gamification)
+    // ============================================================================
+    match /user_levels/{userId} {
+      // Anyone signed in can read leaderboard data
+      allow read: if isSignedIn();
+
+      // Users can create/update their own level data
+      allow create, update: if isSignedIn() && request.auth.uid == userId;
+
+      // Cannot delete
+      allow delete: if false;
+    }
+
+    // ============================================================================
     // ANALYTICS COLLECTION (Read-only for users)
     // ============================================================================
     match /analytics/{document=**} {

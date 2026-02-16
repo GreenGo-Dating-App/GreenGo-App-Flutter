@@ -2001,7 +2001,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Búsqueda';
+  String get filterFromSearch => 'Directo';
 
   @override
   String get publicAlbum => 'Público';

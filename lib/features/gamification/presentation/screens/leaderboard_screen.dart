@@ -4,6 +4,7 @@
  */
 
 import 'dart:ui';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -448,14 +449,21 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
             child: CircleAvatar(
               radius: rank == 1 ? 36 : 28,
               backgroundColor: Colors.black,
-              child: Text(
-                '${entry.level}',
-                style: TextStyle(
-                  color: colors[rank]![0],
-                  fontSize: rank == 1 ? 20 : 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              backgroundImage: entry.photoUrl != null && entry.photoUrl!.isNotEmpty
+                  ? CachedNetworkImageProvider(entry.photoUrl!)
+                  : null,
+              child: entry.photoUrl == null || entry.photoUrl!.isEmpty
+                  ? Text(
+                      entry.username.isNotEmpty
+                          ? entry.username[0].toUpperCase()
+                          : '?',
+                      style: TextStyle(
+                        color: colors[rank]![0],
+                        fontSize: rank == 1 ? 20 : 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  : null,
             ),
           ),
         ),
@@ -626,11 +634,31 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
           ),
           const SizedBox(width: 12),
 
-          // Level badge
-          LevelBadge(
-            level: entry.level,
-            isVIP: entry.isVIP,
-            size: 40,
+          // User photo
+          CircleAvatar(
+            radius: 20,
+            backgroundColor: entry.isVIP
+                ? const Color(0xFFFFD700)
+                : Colors.blue.shade400,
+            child: CircleAvatar(
+              radius: 18,
+              backgroundColor: Colors.black,
+              backgroundImage: entry.photoUrl != null && entry.photoUrl!.isNotEmpty
+                  ? CachedNetworkImageProvider(entry.photoUrl!)
+                  : null,
+              child: entry.photoUrl == null || entry.photoUrl!.isEmpty
+                  ? Text(
+                      entry.username.isNotEmpty
+                          ? entry.username[0].toUpperCase()
+                          : '?',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  : null,
+            ),
           ),
           const SizedBox(width: 12),
 

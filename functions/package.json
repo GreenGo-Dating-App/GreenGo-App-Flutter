@@ -2,7 +2,7 @@
   "name": "greengo-chat-functions",
   "version": "1.0.0",
   "description": "Cloud Functions for GreenGoChat dating application",
-  "main": "lib/index-minimal.js",
+  "main": "lib/index.js",
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",

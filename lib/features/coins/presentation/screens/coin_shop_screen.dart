@@ -1822,7 +1822,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      final recipientId = recipientQuery.docs.first.id;
+      final recipientDoc = recipientQuery.docs.first;
+      final recipientId = recipientDoc.id;
+      final recipientData = recipientDoc.data();
+      final recipientName = recipientData['displayName'] as String? ?? nickname;
 
       if (recipientId == widget.userId) {
         _showError('You cannot send coins to yourself');
@@ -1830,22 +1833,37 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
+      // Verify sender's coin balance document exists and has enough coins
+      final senderRef = firestore.collection('coin_balances').doc(widget.userId);
+      final senderDoc = await senderRef.get();
+      final senderBalance = senderDoc.exists
+          ? (senderDoc.data()?['availableCoins'] as int? ?? 0)
+          : 0;
+
+      if (senderBalance < amount) {
+        _showError('Insufficient coins (balance: $senderBalance)');
+        setState(() => _isSendingCoins = false);
+        return;
+      }
+
       // Atomic batch write: deduct from sender, add to recipient, record transaction
       final batch = firestore.batch();
 
-      final senderRef = firestore.collection('coin_balances').doc(widget.userId);
       final recipientRef = firestore.collection('coin_balances').doc(recipientId);
       final transactionRef = firestore.collection('coin_transactions').doc();
 
-      batch.update(senderRef, {
+      // Use set with merge for both to handle missing documents
+      batch.set(senderRef, {
         'availableCoins': FieldValue.increment(-amount),
-      });
+      }, SetOptions(merge: true));
       batch.set(recipientRef, {
         'availableCoins': FieldValue.increment(amount),
       }, SetOptions(merge: true));
       batch.set(transactionRef, {
         'senderId': widget.userId,
         'recipientId': recipientId,
+        'recipientNickname': nickname,
+        'recipientName': recipientName,
         'amount': amount,
         'timestamp': FieldValue.serverTimestamp(),
         'type': 'gift',

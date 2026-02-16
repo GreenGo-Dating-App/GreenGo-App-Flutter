@@ -1994,7 +1994,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Pesquisa';
+  String get filterFromSearch => 'Direto';
 
   @override
   String get publicAlbum => 'Público';
@@ -3983,7 +3983,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Busca';
+  String get filterFromSearch => 'Direto';
 
   @override
   String get publicAlbum => 'Público';

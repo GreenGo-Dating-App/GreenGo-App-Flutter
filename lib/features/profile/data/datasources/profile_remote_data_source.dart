@@ -71,6 +71,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         dateOfBirth: profile.dateOfBirth,
         gender: profile.gender,
         photoUrls: profile.photoUrls,
+        privatePhotoUrls: profile.privatePhotoUrls,
         bio: profile.bio,
         interests: profile.interests,
         location: profile.location,

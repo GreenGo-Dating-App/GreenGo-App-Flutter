@@ -1974,7 +1974,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Search';
+  String get filterFromSearch => 'Direct';
 
   @override
   String get publicAlbum => 'Public';

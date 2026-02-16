@@ -13,13 +13,13 @@ import 'profile_detail_screen.dart';
 /// Shows match info with overlapping photos, both users' details, gamification stats
 class MatchDetailScreen extends StatefulWidget {
   final Match match;
-  final Profile profile;
+  final Profile? profile;
   final String currentUserId;
 
   const MatchDetailScreen({
     super.key,
     required this.match,
-    required this.profile,
+    this.profile,
     required this.currentUserId,
   });
 
@@ -29,6 +29,7 @@ class MatchDetailScreen extends StatefulWidget {
 
 class _MatchDetailScreenState extends State<MatchDetailScreen> {
   Profile? _currentUserProfile;
+  Profile? _otherUserProfile;
   Map<String, dynamic>? _currentUserGamification;
   Map<String, dynamic>? _otherUserGamification;
   bool _isLoading = true;
@@ -36,23 +37,33 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   @override
   void initState() {
     super.initState();
+    _otherUserProfile = widget.profile;
     _fetchData();
   }
+
+  String get _otherUserId => widget.match.getOtherUserId(widget.currentUserId);
 
   Future<void> _fetchData() async {
     try {
       final firestore = FirebaseFirestore.instance;
 
-      // Fetch current user's profile and both gamification data in parallel
-      final results = await Future.wait([
+      // Fetch current user's profile, other user profile (if not provided), and gamification data
+      final futures = <Future<dynamic>>[
         firestore.collection('profiles').doc(widget.currentUserId).get(),
         firestore.collection('user_levels').doc(widget.currentUserId).get(),
-        firestore.collection('user_levels').doc(widget.profile.userId).get(),
-      ]);
+        firestore.collection('user_levels').doc(_otherUserId).get(),
+      ];
 
-      final profileDoc = results[0];
-      final currentGamDoc = results[1];
-      final otherGamDoc = results[2];
+      // Also fetch other user's profile if not provided
+      if (widget.profile == null) {
+        futures.add(firestore.collection('profiles').doc(_otherUserId).get());
+      }
+
+      final results = await Future.wait(futures);
+
+      final profileDoc = results[0] as DocumentSnapshot;
+      final currentGamDoc = results[1] as DocumentSnapshot;
+      final otherGamDoc = results[2] as DocumentSnapshot;
 
       if (mounted) {
         setState(() {
@@ -64,6 +75,13 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           }
           if (otherGamDoc.exists) {
             _otherUserGamification = otherGamDoc.data() as Map<String, dynamic>?;
+          }
+          // Set other user profile from Firestore if not provided
+          if (widget.profile == null && results.length > 3) {
+            final otherProfileDoc = results[3] as DocumentSnapshot;
+            if (otherProfileDoc.exists) {
+              _otherUserProfile = ProfileModel.fromFirestore(otherProfileDoc);
+            }
           }
           _isLoading = false;
         });
@@ -211,8 +229,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
     final currentPhotoUrl = _currentUserProfile?.photoUrls.isNotEmpty == true
         ? _currentUserProfile!.photoUrls.first
         : null;
-    final otherPhotoUrl = widget.profile.photoUrls.isNotEmpty
-        ? widget.profile.photoUrls.first
+    final otherPhotoUrl = _otherUserProfile?.photoUrls.isNotEmpty == true
+        ? _otherUserProfile!.photoUrls.first
         : null;
 
     return SizedBox(
@@ -291,12 +309,14 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
         // Other user card
         Expanded(
           child: _buildUserCard(
-            name: widget.profile.displayName,
-            age: _calculateAge(widget.profile.dateOfBirth),
-            education: widget.profile.education,
-            occupation: widget.profile.occupation,
-            height: widget.profile.height,
-            weight: widget.profile.weight,
+            name: _otherUserProfile?.displayName ?? 'Match',
+            age: _otherUserProfile != null
+                ? _calculateAge(_otherUserProfile!.dateOfBirth)
+                : null,
+            education: _otherUserProfile?.education,
+            occupation: _otherUserProfile?.occupation,
+            height: _otherUserProfile?.height,
+            weight: _otherUserProfile?.weight,
             isCurrentUser: false,
           ),
         ),
@@ -447,7 +467,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                   // Other user stats
                   Expanded(
                     child: _buildGamificationStats(
-                      widget.profile.displayName,
+                      _otherUserProfile?.displayName ?? 'Match',
                       _otherUserGamification,
                     ),
                   ),
@@ -509,40 +529,42 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   Widget _buildActionButtons(BuildContext context) {
     return Column(
       children: [
-        _buildGlassButton(
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => ProfileDetailScreen(
-                  profile: widget.profile,
-                  currentUserId: widget.currentUserId,
-                  match: widget.match,
+        if (_otherUserProfile != null)
+          _buildGlassButton(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ProfileDetailScreen(
+                    profile: _otherUserProfile!,
+                    currentUserId: widget.currentUserId,
+                    match: widget.match,
+                  ),
                 ),
-              ),
-            );
-          },
-          icon: Icons.person_outline,
-          label: 'See Profile',
-          isPrimary: false,
-        ),
+              );
+            },
+            icon: Icons.person_outline,
+            label: 'See Profile',
+            isPrimary: false,
+          ),
         const SizedBox(height: 16),
-        _buildGlassButton(
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => ChatScreen(
-                  matchId: widget.match.matchId,
-                  otherUserId: widget.match.getOtherUserId(widget.currentUserId),
-                  currentUserId: widget.currentUserId,
-                  otherUserProfile: widget.profile,
+        if (_otherUserProfile != null)
+          _buildGlassButton(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ChatScreen(
+                    matchId: widget.match.matchId,
+                    otherUserId: widget.match.getOtherUserId(widget.currentUserId),
+                    currentUserId: widget.currentUserId,
+                    otherUserProfile: _otherUserProfile!,
+                  ),
                 ),
-              ),
-            );
-          },
-          icon: Icons.chat_bubble_outline,
-          label: 'Start Chat',
-          isPrimary: true,
-        ),
+              );
+            },
+            icon: Icons.chat_bubble_outline,
+            label: 'Start Chat',
+            isPrimary: true,
+          ),
       ],
     );
   }
@@ -631,7 +653,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           style: TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to unmatch with ${widget.profile.displayName}? This cannot be undone.',
+          'Are you sure you want to unmatch with ${_otherUserProfile?.displayName ?? 'this user'}? This cannot be undone.',
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -648,7 +670,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               Navigator.of(context).pop();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Unmatched with ${widget.profile.displayName}'),
+                  content: Text('Unmatched with ${_otherUserProfile?.displayName ?? 'user'}'),
                   backgroundColor: AppColors.backgroundCard,
                 ),
               );

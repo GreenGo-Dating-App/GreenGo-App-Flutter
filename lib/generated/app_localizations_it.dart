@@ -1989,7 +1989,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Ricerca';
+  String get filterFromSearch => 'Diretto';
 
   @override
   String get publicAlbum => 'Pubblico';

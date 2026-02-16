@@ -287,17 +287,15 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                                 }
 
                                 // Navigate to match detail screen
-                                if (profile != null) {
-                                  Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                      builder: (context) => MatchDetailScreen(
-                                        match: match,
-                                        profile: profile,
-                                        currentUserId: widget.userId,
-                                      ),
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => MatchDetailScreen(
+                                      match: match,
+                                      profile: profile,
+                                      currentUserId: widget.userId,
                                     ),
-                                  );
-                                }
+                                  ),
+                                );
                               },
                             );
                           },

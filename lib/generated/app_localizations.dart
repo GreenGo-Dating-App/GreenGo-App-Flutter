@@ -3662,7 +3662,7 @@ abstract class AppLocalizations {
   /// No description provided for @filterFromSearch.
   ///
   /// In en, this message translates to:
-  /// **'Search'**
+  /// **'Direct'**
   String get filterFromSearch;
 
   /// No description provided for @publicAlbum.

@@ -2008,7 +2008,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get filterFromMatch => 'Match';
 
   @override
-  String get filterFromSearch => 'Recherche';
+  String get filterFromSearch => 'Direct';
 
   @override
   String get publicAlbum => 'Public';
