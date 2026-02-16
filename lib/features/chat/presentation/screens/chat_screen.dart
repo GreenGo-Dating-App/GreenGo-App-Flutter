@@ -769,7 +769,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (!mounted) return;
 
-      final privatePhotos = profileDoc.data()?['privatePhotoUrls'] as List<dynamic>? ?? [];
+      final data = profileDoc.data() as Map<String, dynamic>?;
+      final privatePhotos = data?['privatePhotoUrls'] as List<dynamic>? ?? [];
 
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -919,7 +920,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (!mounted) return;
 
-      final privatePhotos = profileDoc.data()?['privatePhotoUrls'] as List<dynamic>? ?? [];
+      final data = profileDoc.data() as Map<String, dynamic>?;
+      final privatePhotos = data?['privatePhotoUrls'] as List<dynamic>? ?? [];
 
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
