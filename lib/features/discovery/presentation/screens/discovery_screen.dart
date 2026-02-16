@@ -356,7 +356,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         actionType = SwipeActionType.superLike;
         break;
       case SwipeDirection.down:
-        actionType = SwipeActionType.pass;
+        actionType = SwipeActionType.skip;
         break;
     }
 

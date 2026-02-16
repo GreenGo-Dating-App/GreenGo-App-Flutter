@@ -1,8 +1,9 @@
 /// Swipe Action Type
 enum SwipeActionType {
   like,       // Swipe right
-  pass,       // Swipe left
+  pass,       // Swipe left (hidden for 90 days)
   superLike,  // Swipe up (premium feature)
+  skip,       // Swipe down (queued for next session)
 }
 
 /// Swipe Action Entity
@@ -40,6 +41,8 @@ class SwipeAction {
         return 'pass';
       case SwipeActionType.superLike:
         return 'superLike';
+      case SwipeActionType.skip:
+        return 'skip';
     }
   }
 }

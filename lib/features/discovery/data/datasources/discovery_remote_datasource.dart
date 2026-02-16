@@ -114,13 +114,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     // Categorize candidates into priority tiers:
     // Priority 1: Never seen (not in swipe history)
-    // Priority 2: Passed on ("nope")
+    // Priority 2: Skipped (swipe down) - queued for next session
     // Priority 3: Liked but no response (not matched)
-    // Priority 4: All others (shouldn't exist based on logic, but fallback)
+    // Excluded: Nope/pass (swipe left) - hidden for 90 days
 
     final List<MatchCandidate> priority1NotSeen = [];
-    final List<MatchCandidate> priority2Passed = [];
+    final List<MatchCandidate> priority2Skipped = [];
     final List<MatchCandidate> priority3LikedNoResponse = [];
+
+    final now = DateTime.now();
+    const nopeCooldownDays = 90;
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
@@ -131,15 +134,23 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
       if (blockedUserIds.contains(candidateId)) continue;
 
-      final swipeType = swipeHistory[candidateId];
+      final swipeRecord = swipeHistory[candidateId];
 
-      if (swipeType == null) {
+      if (swipeRecord == null) {
         // Never swiped on - Priority 1
         priority1NotSeen.add(candidate);
-      } else if (swipeType == 'pass' || swipeType == 'nope') {
-        // Passed on - Priority 2
-        priority2Passed.add(candidate);
-      } else if (swipeType == 'like' || swipeType == 'superLike') {
+      } else if (swipeRecord.actionType == 'skip') {
+        // Skipped (swipe down) - Priority 2: show again next session
+        priority2Skipped.add(candidate);
+      } else if (swipeRecord.actionType == 'pass' || swipeRecord.actionType == 'nope') {
+        // Nope (swipe left) - hidden for 90 days
+        final daysSinceSwipe = now.difference(swipeRecord.timestamp).inDays;
+        if (daysSinceSwipe >= nopeCooldownDays) {
+          // Cooldown expired, show again at low priority
+          priority2Skipped.add(candidate);
+        }
+        // Otherwise: still within 90 days, don't show
+      } else if (swipeRecord.actionType == 'like' || swipeRecord.actionType == 'superLike') {
         // Liked but not matched - Priority 3
         priority3LikedNoResponse.add(candidate);
       }
@@ -151,8 +162,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Add priority 1 (not seen) first
     prioritizedCandidates.addAll(priority1NotSeen);
 
-    // Then priority 2 (passed)
-    prioritizedCandidates.addAll(priority2Passed);
+    // Then priority 2 (skipped / expired nope cooldown)
+    prioritizedCandidates.addAll(priority2Skipped);
 
     // Then priority 3 (liked no response)
     prioritizedCandidates.addAll(priority3LikedNoResponse);
@@ -167,20 +178,24 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     return prioritizedCandidates;
   }
 
-  /// Get swipe history with action types
-  Future<Map<String, String>> _getSwipeHistoryWithTypes(String userId) async {
+  /// Get swipe history with action types and timestamps
+  Future<Map<String, _SwipeRecord>> _getSwipeHistoryWithTypes(String userId) async {
     final querySnapshot = await firestore
         .collection('swipes')
         .where('userId', isEqualTo: userId)
         .get();
 
-    final Map<String, String> history = {};
+    final Map<String, _SwipeRecord> history = {};
     for (final doc in querySnapshot.docs) {
       final data = doc.data();
       final targetId = data['targetUserId'] as String?;
       final actionType = data['actionType'] as String?;
+      final timestamp = data['timestamp'] as Timestamp?;
       if (targetId != null && actionType != null) {
-        history[targetId] = actionType;
+        history[targetId] = _SwipeRecord(
+          actionType: actionType,
+          timestamp: timestamp?.toDate() ?? DateTime.now(),
+        );
       }
     }
     return history;
@@ -718,6 +733,17 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await querySnapshot.docs.first.reference.delete();
     }
   }
+}
+
+/// Internal record for swipe history with timestamp
+class _SwipeRecord {
+  final String actionType;
+  final DateTime timestamp;
+
+  const _SwipeRecord({
+    required this.actionType,
+    required this.timestamp,
+  });
 }
 
 /// Extension for SwipeAction to add copyWith

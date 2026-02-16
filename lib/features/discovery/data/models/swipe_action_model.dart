@@ -55,6 +55,8 @@ class SwipeActionModel extends SwipeAction {
         return SwipeActionType.pass;
       case 'superLike':
         return SwipeActionType.superLike;
+      case 'skip':
+        return SwipeActionType.skip;
       default:
         return SwipeActionType.pass;
     }
