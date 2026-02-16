@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../profile/domain/entities/profile.dart';
+import '../../../matching/domain/usecases/compatibility_scorer.dart';
 import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
@@ -13,7 +14,7 @@ import 'match_detail_screen.dart';
 
 /// Matches Screen
 ///
-/// Displays user's matches with search and filter capabilities
+/// Displays user's matches with search, filter, and sort capabilities
 class MatchesScreen extends StatelessWidget {
   final String userId;
 
@@ -43,8 +44,13 @@ class _MatchesScreenContent extends StatefulWidget {
 
 class _MatchesScreenContentState extends State<_MatchesScreenContent> {
   final TextEditingController _searchController = TextEditingController();
+  final CompatibilityScorer _scorer = CompatibilityScorer();
   String _searchQuery = '';
   String _filterType = 'all'; // all, new, messaged
+  String _sortOrder = 'none'; // none, desc, asc
+
+  // Cache computed scores to avoid recalculating on every rebuild
+  final Map<String, double> _scoreCache = {};
 
   @override
   void dispose() {
@@ -52,13 +58,37 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
     super.dispose();
   }
 
+  /// Compute compatibility score between current user and matched user
+  double _getCompatibilityScore(
+    Profile? currentUserProfile,
+    Profile? otherProfile,
+    String matchId,
+  ) {
+    if (currentUserProfile == null || otherProfile == null) return 0;
+
+    if (_scoreCache.containsKey(matchId)) {
+      return _scoreCache[matchId]!;
+    }
+
+    try {
+      final score = _scorer.calculateScore(
+        profile1: currentUserProfile,
+        profile2: otherProfile,
+      );
+      _scoreCache[matchId] = score.overallScore;
+      return score.overallScore;
+    } catch (_) {
+      return 0;
+    }
+  }
+
   /// Filter matches based on search query and filter type
-  List<Match> _filterMatches(
+  List<Match> _filterAndSortMatches(
     List<Match> matches,
     Map<String, Profile> profiles,
     String userId,
   ) {
-    return matches.where((match) {
+    var filtered = matches.where((match) {
       final profile = profiles[match.getOtherUserId(userId)];
 
       // Apply search filter
@@ -83,6 +113,22 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
           return true;
       }
     }).toList();
+
+    // Sort by compatibility if requested
+    if (_sortOrder != 'none') {
+      final currentUserProfile = profiles[userId];
+      filtered.sort((a, b) {
+        final profileA = profiles[a.getOtherUserId(userId)];
+        final profileB = profiles[b.getOtherUserId(userId)];
+        final scoreA = _getCompatibilityScore(currentUserProfile, profileA, a.matchId);
+        final scoreB = _getCompatibilityScore(currentUserProfile, profileB, b.matchId);
+        return _sortOrder == 'desc'
+            ? scoreB.compareTo(scoreA)
+            : scoreA.compareTo(scoreB);
+      });
+    }
+
+    return filtered;
   }
 
   @override
@@ -173,7 +219,8 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
 
           if (state is MatchesLoaded) {
             final allMatches = state.matches;
-            final filteredMatches = _filterMatches(
+            final currentUserProfile = state.profiles[widget.userId];
+            final filteredMatches = _filterAndSortMatches(
               allMatches,
               state.profiles,
               widget.userId,
@@ -181,6 +228,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
 
             return RefreshIndicator(
               onRefresh: () async {
+                _scoreCache.clear();
                 context
                     .read<MatchesBloc>()
                     .add(MatchesRefreshRequested(widget.userId));
@@ -193,21 +241,84 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                     child: _buildSearchAndFilterBar(allMatches.length),
                   ),
 
-                  // Results count
+                  // Results count + sort button
                   SliverToBoxAdapter(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 16,
                         vertical: 8,
                       ),
-                      child: Text(
-                        _searchQuery.isNotEmpty || _filterType != 'all'
-                            ? '${filteredMatches.length} of ${allMatches.length} matches'
-                            : '${allMatches.length} matches',
-                        style: const TextStyle(
-                          color: AppColors.textTertiary,
-                          fontSize: 13,
-                        ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              _searchQuery.isNotEmpty || _filterType != 'all'
+                                  ? '${filteredMatches.length} of ${allMatches.length} matches'
+                                  : '${allMatches.length} matches',
+                              style: const TextStyle(
+                                color: AppColors.textTertiary,
+                                fontSize: 13,
+                              ),
+                            ),
+                          ),
+                          // Sort by compatibility button
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                if (_sortOrder == 'none') {
+                                  _sortOrder = 'desc';
+                                } else if (_sortOrder == 'desc') {
+                                  _sortOrder = 'asc';
+                                } else {
+                                  _sortOrder = 'none';
+                                }
+                              });
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: _sortOrder != 'none'
+                                    ? AppColors.richGold.withOpacity(0.15)
+                                    : AppColors.backgroundCard,
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: _sortOrder != 'none'
+                                      ? AppColors.richGold
+                                      : AppColors.divider,
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    _sortOrder == 'asc'
+                                        ? Icons.arrow_upward
+                                        : _sortOrder == 'desc'
+                                            ? Icons.arrow_downward
+                                            : Icons.sort,
+                                    color: _sortOrder != 'none'
+                                        ? AppColors.richGold
+                                        : AppColors.textTertiary,
+                                    size: 16,
+                                  ),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    'Compatibility',
+                                    style: TextStyle(
+                                      color: _sortOrder != 'none'
+                                          ? AppColors.richGold
+                                          : AppColors.textSecondary,
+                                      fontSize: 12,
+                                      fontWeight: _sortOrder != 'none'
+                                          ? FontWeight.w600
+                                          : FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -248,6 +359,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                                   _searchQuery = '';
                                   _searchController.clear();
                                   _filterType = 'all';
+                                  _sortOrder = 'none';
                                 });
                               },
                               child: const Text(
@@ -268,13 +380,19 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                         delegate: SliverChildBuilderDelegate(
                           (context, index) {
                             final match = filteredMatches[index];
-                            final profile =
-                                state.profiles[match.getOtherUserId(widget.userId)];
+                            final otherUserId = match.getOtherUserId(widget.userId);
+                            final profile = state.profiles[otherUserId];
+                            final score = _getCompatibilityScore(
+                              currentUserProfile,
+                              profile,
+                              match.matchId,
+                            );
 
                             return MatchCardWidget(
                               match: match,
                               profile: profile,
                               currentUserId: widget.userId,
+                              compatibilityPercent: score > 0 ? score : null,
                               onTap: () {
                                 // Mark as seen if not seen
                                 if (match.isNewMatch(widget.userId)) {

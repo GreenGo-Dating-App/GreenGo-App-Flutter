@@ -8,11 +8,12 @@ import '../../domain/entities/match.dart';
 
 /// Match Card Widget
 ///
-/// Displays a match in the matches list
+/// Displays a match in the matches list with photo, info, and compatibility
 class MatchCardWidget extends StatelessWidget {
   final Match match;
   final Profile? profile;
   final String currentUserId;
+  final double? compatibilityPercent;
   final VoidCallback? onTap;
 
   const MatchCardWidget({
@@ -20,6 +21,7 @@ class MatchCardWidget extends StatelessWidget {
     required this.match,
     this.profile,
     required this.currentUserId,
+    this.compatibilityPercent,
     this.onTap,
   });
 
@@ -53,8 +55,8 @@ class MatchCardWidget extends StatelessWidget {
                     child: profile?.photoUrls.isNotEmpty == true
                         ? Image.network(
                             profile!.photoUrls.first,
-                            width: 60,
-                            height: 60,
+                            width: 64,
+                            height: 64,
                             fit: BoxFit.cover,
                             errorBuilder: (context, error, stackTrace) =>
                                 _buildPlaceholder(),
@@ -90,15 +92,20 @@ class MatchCardWidget extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // Name, age, city
                     Row(
                       children: [
-                        Text(
-                          profile?.displayName ?? 'Match',
-                          style: TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 16,
-                            fontWeight:
-                                isNewMatch ? FontWeight.bold : FontWeight.w600,
+                        Flexible(
+                          child: Text(
+                            _buildTitleText(),
+                            style: TextStyle(
+                              color: AppColors.textPrimary,
+                              fontSize: 15,
+                              fontWeight:
+                                  isNewMatch ? FontWeight.bold : FontWeight.w600,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                         // Show membership badge if not free tier
@@ -109,27 +116,41 @@ class MatchCardWidget extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 4),
+                    // Compatibility percentage
+                    if (compatibilityPercent != null)
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.favorite,
+                            color: _getCompatibilityColor(compatibilityPercent!),
+                            size: 14,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            '${compatibilityPercent!.toStringAsFixed(0)}% compatible',
+                            style: TextStyle(
+                              color: _getCompatibilityColor(compatibilityPercent!),
+                              fontSize: 13,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    const SizedBox(height: 2),
+                    // Last message or time
                     Text(
-                      match.lastMessage ?? 'Start chatting!',
+                      match.lastMessage ?? match.timeSinceMatchText,
                       style: TextStyle(
                         color: match.unreadCount > 0
                             ? AppColors.textPrimary
                             : AppColors.textSecondary,
-                        fontSize: 14,
+                        fontSize: 13,
                         fontWeight: match.unreadCount > 0
                             ? FontWeight.w600
                             : FontWeight.normal,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      match.timeSinceMatchText,
-                      style: const TextStyle(
-                        color: AppColors.textTertiary,
-                        fontSize: 12,
-                      ),
                     ),
                   ],
                 ),
@@ -182,10 +203,29 @@ class MatchCardWidget extends StatelessWidget {
     );
   }
 
+  String _buildTitleText() {
+    if (profile == null) return 'Match';
+    final name = profile!.displayName;
+    final age = profile!.age;
+    final city = profile!.location.city;
+
+    final parts = <String>[name];
+    if (age > 0) parts.add('$age');
+    if (city.isNotEmpty) parts.add(city);
+
+    return parts.join(', ');
+  }
+
+  Color _getCompatibilityColor(double percent) {
+    if (percent >= 70) return const Color(0xFF4CAF50); // Green
+    if (percent >= 50) return AppColors.richGold;
+    return AppColors.textSecondary;
+  }
+
   Widget _buildPlaceholder() {
     return Container(
-      width: 60,
-      height: 60,
+      width: 64,
+      height: 64,
       color: AppColors.backgroundInput,
       child: const Icon(
         Icons.person,
