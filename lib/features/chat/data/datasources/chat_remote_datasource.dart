@@ -253,6 +253,12 @@ abstract class ChatRemoteDataSource {
 
   /// Get available support agents
   Future<List<Map<String, dynamic>>> getAvailableSupportAgents();
+
+  /// Get or create a search conversation between two users
+  Future<ConversationModel> getOrCreateSearchConversation({
+    required String currentUserId,
+    required String otherUserId,
+  });
 }
 
 /// Implementation
@@ -274,6 +280,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       if (querySnapshot.docs.isNotEmpty) {
         return ConversationModel.fromFirestore(querySnapshot.docs.first);
+      }
+
+      // Search conversations are handled by getOrCreateSearchConversation
+      if (matchId.startsWith('search_')) {
+        throw Exception('Search conversation not found. Use getOrCreateSearchConversation instead.');
       }
 
       // Get match details to create conversation
@@ -416,11 +427,13 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'unreadCount': FieldValue.increment(1),
       });
 
-      // Update match with last message info
-      await firestore.collection('matches').doc(matchId).update({
-        'lastMessageAt': Timestamp.fromDate(message.sentAt),
-        'lastMessage': content,
-      });
+      // Update match with last message info (skip for search conversations)
+      if (!matchId.startsWith('search_')) {
+        await firestore.collection('matches').doc(matchId).update({
+          'lastMessageAt': Timestamp.fromDate(message.sentAt),
+          'lastMessage': content,
+        });
+      }
 
       // Check if this is the first message in conversation (new chat notification)
       // Count total messages in conversation
@@ -1776,6 +1789,48 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       }).toList();
     } catch (e) {
       return [];
+    }
+  }
+
+  @override
+  Future<ConversationModel> getOrCreateSearchConversation({
+    required String currentUserId,
+    required String otherUserId,
+  }) async {
+    try {
+      // Generate synthetic matchId for search conversations
+      final sortedIds = [currentUserId, otherUserId]..sort();
+      final syntheticMatchId = 'search_${sortedIds[0]}_${sortedIds[1]}';
+
+      // Check if conversation already exists
+      final querySnapshot = await firestore
+          .collection('conversations')
+          .where('matchId', isEqualTo: syntheticMatchId)
+          .limit(1)
+          .get();
+
+      if (querySnapshot.docs.isNotEmpty) {
+        return ConversationModel.fromFirestore(querySnapshot.docs.first);
+      }
+
+      // Create new search conversation
+      final conversationRef = firestore.collection('conversations').doc();
+
+      final newConversation = ConversationModel(
+        conversationId: conversationRef.id,
+        matchId: syntheticMatchId,
+        userId1: currentUserId,
+        userId2: otherUserId,
+        createdAt: DateTime.now(),
+        unreadCount: 0,
+        conversationType: ConversationType.search,
+      );
+
+      await conversationRef.set(newConversation.toFirestore());
+
+      return newConversation;
+    } catch (e) {
+      throw Exception('Failed to get or create search conversation: $e');
     }
   }
 }

@@ -138,8 +138,6 @@ class TierConfigProvider {
         return rules.canFilterByVerification;
       case 'boostProfile':
         return rules.canBoostProfile;
-      case 'undoSwipe':
-        return rules.canUndoSwipe;
       case 'sendMedia':
         return rules.canSendMedia;
       case 'readReceipts':

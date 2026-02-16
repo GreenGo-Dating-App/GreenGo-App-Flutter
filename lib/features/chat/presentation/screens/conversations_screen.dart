@@ -28,9 +28,12 @@ class ConversationsScreen extends StatefulWidget {
   State<ConversationsScreen> createState() => _ConversationsScreenState();
 }
 
+enum ConversationFilter { all, newMessages, notReplied, fromMatch, fromSearch }
+
 class _ConversationsScreenState extends State<ConversationsScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
+  ConversationFilter _selectedFilter = ConversationFilter.all;
   final Map<String, Profile?> _profileCache = {};
 
   @override
@@ -97,6 +100,68 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         },
       ),
     );
+  }
+
+  Widget _buildFilterChips() {
+    final l10n = AppLocalizations.of(context);
+    final filters = [
+      (ConversationFilter.all, l10n?.filterAll ?? 'All'),
+      (ConversationFilter.newMessages, l10n?.filterNewMessages ?? 'New'),
+      (ConversationFilter.notReplied, l10n?.filterNotReplied ?? 'No Reply'),
+      (ConversationFilter.fromMatch, l10n?.filterFromMatch ?? 'Match'),
+      (ConversationFilter.fromSearch, l10n?.filterFromSearch ?? 'Search'),
+    ];
+
+    return SizedBox(
+      height: 40,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        itemCount: filters.length,
+        separatorBuilder: (_, __) => const SizedBox(width: 8),
+        itemBuilder: (context, index) {
+          final (filter, label) = filters[index];
+          final isSelected = _selectedFilter == filter;
+
+          return FilterChip(
+            selected: isSelected,
+            label: Text(label),
+            labelStyle: TextStyle(
+              color: isSelected ? AppColors.deepBlack : AppColors.textSecondary,
+              fontSize: 13,
+              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
+            ),
+            backgroundColor: AppColors.backgroundCard,
+            selectedColor: AppColors.richGold,
+            checkmarkColor: AppColors.deepBlack,
+            side: BorderSide(
+              color: isSelected ? AppColors.richGold : AppColors.divider,
+            ),
+            onSelected: (_) {
+              setState(() {
+                _selectedFilter = filter;
+              });
+            },
+          );
+        },
+      ),
+    );
+  }
+
+  bool _passesFilter(Conversation conversation) {
+    switch (_selectedFilter) {
+      case ConversationFilter.all:
+        return true;
+      case ConversationFilter.newMessages:
+        return conversation.unreadCount > 0;
+      case ConversationFilter.notReplied:
+        return conversation.lastMessage != null &&
+            conversation.lastMessage!.senderId != widget.userId;
+      case ConversationFilter.fromMatch:
+        return conversation.conversationType == ConversationType.match;
+      case ConversationFilter.fromSearch:
+        return conversation.conversationType == ConversationType.search;
+    }
   }
 
   @override
@@ -208,11 +273,24 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                     SliverToBoxAdapter(
                       child: _buildSearchBar(),
                     ),
+                    // Filter chips
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: _buildFilterChips(),
+                      ),
+                    ),
                     // Conversations list
                     SliverList(
                       delegate: SliverChildBuilderDelegate(
                         (context, index) {
-                          final conversation = state.conversations[index];
+                          final filteredConversations = state.conversations
+                              .where(_passesFilter)
+                              .toList();
+                          if (index >= filteredConversations.length) {
+                            return const SizedBox.shrink();
+                          }
+                          final conversation = filteredConversations[index];
                           final otherUserId =
                               conversation.getOtherUserId(widget.userId);
 
@@ -265,7 +343,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                             },
                           );
                         },
-                        childCount: state.conversations.length,
+                        childCount: state.conversations
+                            .where(_passesFilter)
+                            .length,
                       ),
                     ),
                     const SliverToBoxAdapter(

@@ -67,6 +67,7 @@ import '../../features/chat/domain/usecases/report_user.dart';
 import '../../features/chat/domain/usecases/star_message.dart';
 import '../../features/chat/domain/usecases/forward_message.dart';
 import '../../features/chat/domain/usecases/delete_conversation.dart';
+import '../../features/chat/domain/usecases/get_search_conversation.dart';
 import '../../features/chat/presentation/bloc/chat_bloc.dart';
 import '../../features/chat/presentation/bloc/conversations_bloc.dart';
 
@@ -323,6 +324,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => ForwardMessage(sl()));
   sl.registerLazySingleton(() => DeleteConversationForMe(sl()));
   sl.registerLazySingleton(() => DeleteConversationForBoth(sl()));
+  sl.registerLazySingleton(() => GetSearchConversation(sl()));
 
   // Repository
   sl.registerLazySingleton<ChatRepository>(

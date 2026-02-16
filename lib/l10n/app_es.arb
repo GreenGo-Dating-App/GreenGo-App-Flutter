@@ -837,5 +837,18 @@
   "chatSupportHoursAgo": "hace {hours}h",
   "@chatSupportHoursAgo": {"placeholders": {"hours": {"type": "int"}}},
   "chatSupportDaysAgo": "hace {days}d",
-  "@chatSupportDaysAgo": {"placeholders": {"days": {"type": "int"}}}
+  "@chatSupportDaysAgo": {"placeholders": {"days": {"type": "int"}}},
+  "nicknameSearchChat": "Chat",
+  "filterAll": "Todos",
+  "filterNewMessages": "Nuevos",
+  "filterNotReplied": "Sin respuesta",
+  "filterFromMatch": "Match",
+  "filterFromSearch": "Búsqueda",
+  "publicAlbum": "Público",
+  "privateAlbum": "Privado",
+  "shareAlbum": "Compartir álbum",
+  "revokeAccess": "Revocar acceso al álbum",
+  "albumNotShared": "Álbum no compartido",
+  "grantAlbumAccess": "Compartir mi álbum",
+  "albumOption": "Álbum"
 }

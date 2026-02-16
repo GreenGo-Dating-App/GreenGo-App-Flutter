@@ -996,5 +996,18 @@
         "type": "int"
       }
     }
-  }
+  },
+  "nicknameSearchChat": "Chat",
+  "filterAll": "All",
+  "filterNewMessages": "New",
+  "filterNotReplied": "No Reply",
+  "filterFromMatch": "Match",
+  "filterFromSearch": "Search",
+  "publicAlbum": "Public",
+  "privateAlbum": "Private",
+  "shareAlbum": "Share Album",
+  "revokeAccess": "Revoke album access",
+  "albumNotShared": "Album not shared with you",
+  "grantAlbumAccess": "Share my album",
+  "albumOption": "Album"
 }

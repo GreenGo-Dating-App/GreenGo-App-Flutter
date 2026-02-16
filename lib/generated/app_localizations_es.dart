@@ -1987,4 +1987,40 @@ class AppLocalizationsEs extends AppLocalizations {
   String chatSupportDaysAgo(int days) {
     return 'hace ${days}d';
   }
+
+  @override
+  String get nicknameSearchChat => 'Chat';
+
+  @override
+  String get filterNewMessages => 'Nuevos';
+
+  @override
+  String get filterNotReplied => 'Sin respuesta';
+
+  @override
+  String get filterFromMatch => 'Match';
+
+  @override
+  String get filterFromSearch => 'Búsqueda';
+
+  @override
+  String get publicAlbum => 'Público';
+
+  @override
+  String get privateAlbum => 'Privado';
+
+  @override
+  String get shareAlbum => 'Compartir álbum';
+
+  @override
+  String get revokeAccess => 'Revocar acceso al álbum';
+
+  @override
+  String get albumNotShared => 'Álbum no compartido';
+
+  @override
+  String get grantAlbumAccess => 'Compartir mi álbum';
+
+  @override
+  String get albumOption => 'Álbum';
 }

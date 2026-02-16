@@ -20,6 +20,7 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/message.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
+import '../../../profile/data/datasources/album_access_datasource.dart';
 import '../bloc/chat_bloc.dart';
 import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
@@ -55,6 +56,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final UsageLimitService _usageLimitService = UsageLimitService();
   final ImagePicker _imagePicker = ImagePicker();
   late final ChatRemoteDataSourceImpl _chatDataSource;
+  late final AlbumAccessDatasource _albumAccessDatasource;
 
   // Cache for translated messages
   final Map<String, String> _translatedMessages = {};
@@ -80,6 +82,7 @@ class _ChatScreenState extends State<ChatScreen> {
     super.initState();
     _translationService.initialize();
     _chatDataSource = ChatRemoteDataSourceImpl(firestore: FirebaseFirestore.instance);
+    _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
   }
 
   @override
@@ -387,6 +390,19 @@ class _ChatScreenState extends State<ChatScreen> {
                   label: AppLocalizations.of(context)!.chatAttachRecord,
                   color: Colors.red,
                   onTap: () => _pickVideo(context, ImageSource.camera),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _buildAttachmentOption(
+                  context,
+                  icon: Icons.collections,
+                  label: AppLocalizations.of(context)?.albumOption ?? 'Album',
+                  color: Colors.teal,
+                  onTap: () => _showMyAlbumPhotos(context),
                 ),
               ],
             ),
@@ -715,6 +731,316 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
+  /// Show current user's private album photos for sending in chat
+  void _showMyAlbumPhotos(BuildContext context) async {
+    try {
+      // Fetch current user's profile to get private photos
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.currentUserId)
+          .get();
+
+      if (!mounted) return;
+
+      final privatePhotos = profileDoc.data()?['privatePhotoUrls'] as List<dynamic>? ?? [];
+
+      if (privatePhotos.isEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.privateAlbum != null
+                ? 'No private photos to send'
+                : 'No private photos to send'),
+            backgroundColor: AppColors.warningAmber,
+          ),
+        );
+        return;
+      }
+
+      showModalBottomSheet(
+        context: context,
+        backgroundColor: AppColors.backgroundCard,
+        isScrollControlled: true,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        ),
+        builder: (ctx) => DraggableScrollableSheet(
+          initialChildSize: 0.6,
+          minChildSize: 0.3,
+          maxChildSize: 0.9,
+          expand: false,
+          builder: (ctx, scrollController) => Column(
+            children: [
+              const SizedBox(height: 8),
+              Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.textTertiary,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                AppLocalizations.of(context)?.shareAlbum ?? 'Share Album',
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 4),
+              const Text(
+                'Tap a photo to send (no media limit)',
+                style: TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 12,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Expanded(
+                child: GridView.builder(
+                  controller: scrollController,
+                  padding: const EdgeInsets.all(16),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 8,
+                    mainAxisSpacing: 8,
+                  ),
+                  itemCount: privatePhotos.length,
+                  itemBuilder: (ctx, index) {
+                    final photoUrl = privatePhotos[index] as String;
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.pop(ctx);
+                        _sendAlbumPhoto(photoUrl);
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(
+                          photoUrl,
+                          fit: BoxFit.cover,
+                          loadingBuilder: (context, child, progress) {
+                            if (progress == null) return child;
+                            return Container(
+                              color: AppColors.backgroundDark,
+                              child: const Center(
+                                child: CircularProgressIndicator(
+                                  color: AppColors.richGold,
+                                  strokeWidth: 2,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to load album: ${e.toString()}'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  /// Send a photo from private album — bypasses media limit
+  void _sendAlbumPhoto(String photoUrl) {
+    if (!mounted) return;
+    context.read<ChatBloc>().add(ChatMessageSent(
+      content: photoUrl,
+      type: MessageType.image,
+    ));
+    // No media limit recording — album sends are free
+  }
+
+  /// View other user's private album (if access granted)
+  void _viewOtherUserAlbum(BuildContext context) async {
+    try {
+      // Check if current user has access to other user's album
+      final hasAccess = await _albumAccessDatasource.hasAccess(
+        ownerId: widget.otherUserId,
+        viewerId: widget.currentUserId,
+      );
+
+      if (!mounted) return;
+
+      if (!hasAccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.albumNotShared ?? 'Album not shared with you'),
+            backgroundColor: AppColors.warningAmber,
+          ),
+        );
+        return;
+      }
+
+      // Fetch other user's private photos
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.otherUserId)
+          .get();
+
+      if (!mounted) return;
+
+      final privatePhotos = profileDoc.data()?['privatePhotoUrls'] as List<dynamic>? ?? [];
+
+      if (privatePhotos.isEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('No private photos available'),
+            backgroundColor: AppColors.warningAmber,
+          ),
+        );
+        return;
+      }
+
+      showModalBottomSheet(
+        context: context,
+        backgroundColor: AppColors.backgroundCard,
+        isScrollControlled: true,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        ),
+        builder: (ctx) => DraggableScrollableSheet(
+          initialChildSize: 0.6,
+          minChildSize: 0.3,
+          maxChildSize: 0.9,
+          expand: false,
+          builder: (ctx, scrollController) => Column(
+            children: [
+              const SizedBox(height: 8),
+              Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.textTertiary,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                '${widget.otherUserProfile.displayName}\'s ${AppLocalizations.of(context)?.privateAlbum ?? "Private Album"}',
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Expanded(
+                child: GridView.builder(
+                  controller: scrollController,
+                  padding: const EdgeInsets.all(16),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 8,
+                    mainAxisSpacing: 8,
+                  ),
+                  itemCount: privatePhotos.length,
+                  itemBuilder: (ctx, index) {
+                    final photoUrl = privatePhotos[index] as String;
+                    return ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network(
+                        photoUrl,
+                        fit: BoxFit.cover,
+                        loadingBuilder: (context, child, progress) {
+                          if (progress == null) return child;
+                          return Container(
+                            color: AppColors.backgroundDark,
+                            child: const Center(
+                              child: CircularProgressIndicator(
+                                color: AppColors.richGold,
+                                strokeWidth: 2,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to load album: ${e.toString()}'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  /// Grant access to current user's private album to the other user
+  void _grantAlbumAccess(BuildContext context) async {
+    try {
+      await _albumAccessDatasource.grantAccess(
+        ownerId: widget.currentUserId,
+        grantedToId: widget.otherUserId,
+      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.grantAlbumAccess ?? 'Album shared'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to share album: ${e.toString()}'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  /// Revoke access to current user's private album from the other user
+  void _revokeAlbumAccess(BuildContext context) async {
+    try {
+      await _albumAccessDatasource.revokeAccess(
+        ownerId: widget.currentUserId,
+        grantedToId: widget.otherUserId,
+      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.revokeAccess ?? 'Album access revoked'),
+            backgroundColor: AppColors.warningAmber,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to revoke access: ${e.toString()}'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return PopScope(
@@ -988,6 +1314,12 @@ class _ChatScreenState extends State<ChatScreen> {
         ],
       ),
       actions: [
+        // View other user's private album
+        IconButton(
+          icon: const Icon(Icons.collections, color: AppColors.textSecondary),
+          tooltip: AppLocalizations.of(context)?.privateAlbum ?? 'Private Album',
+          onPressed: () => _viewOtherUserAlbum(context),
+        ),
         // Translation toggle button
         IconButton(
           icon: Icon(
@@ -1055,6 +1387,25 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             ),
             const SizedBox(height: 16),
+            _buildOptionItem(
+              icon: Icons.collections,
+              label: AppLocalizations.of(context)?.grantAlbumAccess ?? 'Share my album',
+              color: Colors.teal,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _grantAlbumAccess(context);
+              },
+            ),
+            _buildOptionItem(
+              icon: Icons.lock_outline,
+              label: AppLocalizations.of(context)?.revokeAccess ?? 'Revoke album access',
+              color: AppColors.warningAmber,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _revokeAlbumAccess(context);
+              },
+            ),
+            const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.delete_outline,
               label: AppLocalizations.of(context)!.chatDeleteForMe,

@@ -526,4 +526,20 @@ class ChatRepositoryImpl implements ChatRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, Conversation>> getOrCreateSearchConversation({
+    required String currentUserId,
+    required String otherUserId,
+  }) async {
+    try {
+      final conversation = await remoteDataSource.getOrCreateSearchConversation(
+        currentUserId: currentUserId,
+        otherUserId: otherUserId,
+      );
+      return Right(conversation.toEntity());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }

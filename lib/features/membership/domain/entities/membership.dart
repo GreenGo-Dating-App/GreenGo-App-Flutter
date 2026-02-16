@@ -99,9 +99,6 @@ class MembershipRules extends Equatable {
   /// Number of free boosts per month
   final int monthlyFreeBoosts;
 
-  /// Can undo last swipe
-  final bool canUndoSwipe;
-
   /// Can send media (images/videos) in chat
   final bool canSendMedia;
 
@@ -138,7 +135,6 @@ class MembershipRules extends Equatable {
     this.canFilterByVerification = false,
     this.canBoostProfile = false,
     this.monthlyFreeBoosts = 0,
-    this.canUndoSwipe = false,
     this.canSendMedia = false,
     this.canSeeReadReceipts = false,
     this.canUseIncognitoMode = false,
@@ -162,14 +158,13 @@ class MembershipRules extends Equatable {
     canFilterByVerification: false,
     canBoostProfile: false,
     monthlyFreeBoosts: 0,
-    canUndoSwipe: false,
-    canSendMedia: false,
+    canSendMedia: true,
     canSeeReadReceipts: false,
     canUseIncognitoMode: false,
     matchPriority: 0,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 0,
+    dailyMediaSendLimit: 10,
     badgeIcon: null,
   );
 
@@ -186,14 +181,13 @@ class MembershipRules extends Equatable {
     canFilterByVerification: false,
     canBoostProfile: true,
     monthlyFreeBoosts: 1,
-    canUndoSwipe: true,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: false,
     matchPriority: 1,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 15,
+    dailyMediaSendLimit: 50,
     badgeIcon: 'silver_badge',
   );
 
@@ -210,14 +204,13 @@ class MembershipRules extends Equatable {
     canFilterByVerification: true,
     canBoostProfile: true,
     monthlyFreeBoosts: 3,
-    canUndoSwipe: true,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
     matchPriority: 2,
     canSeeProfileVisitors: true,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 50,
+    dailyMediaSendLimit: 500,
     badgeIcon: 'gold_badge',
   );
 
@@ -234,7 +227,6 @@ class MembershipRules extends Equatable {
     canFilterByVerification: true,
     canBoostProfile: true,
     monthlyFreeBoosts: 5,
-    canUndoSwipe: true,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
@@ -259,7 +251,6 @@ class MembershipRules extends Equatable {
     canFilterByVerification: true,
     canBoostProfile: true,
     monthlyFreeBoosts: 10,
-    canUndoSwipe: true,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
@@ -302,7 +293,6 @@ class MembershipRules extends Equatable {
         canFilterByVerification,
         canBoostProfile,
         monthlyFreeBoosts,
-        canUndoSwipe,
         canSendMedia,
         canSeeReadReceipts,
         canUseIncognitoMode,

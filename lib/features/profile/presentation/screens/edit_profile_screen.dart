@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/membership_badge.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../domain/entities/profile.dart';
@@ -27,6 +29,7 @@ import 'edit_location_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_nickname_screen.dart';
 import 'edit_voice_screen.dart';
+import 'edit_details_screen.dart';
 // Progress screen moved to bottom navigation - import removed
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
@@ -128,6 +131,34 @@ class EditProfileScreen extends StatelessWidget {
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
                 children: [
+                  // Profile Header with name and membership badge
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 24),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Flexible(
+                          child: Text(
+                            activeProfile.displayName,
+                            style: const TextStyle(
+                              color: AppColors.textPrimary,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        if (activeProfile.membershipTier != MembershipTier.free) ...[
+                          const SizedBox(width: 10),
+                          MembershipBadge(
+                            tier: activeProfile.membershipTier,
+                            compact: true,
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+
                   // View My Profile Section (top)
                   Container(
                     margin: const EdgeInsets.only(bottom: 24),
@@ -223,6 +254,16 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: _getSocialLinksSubtitle(context, activeProfile),
                     icon: Icons.share,
                     onTap: () => _navigateToEditSocialLinks(context, activeProfile),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Education & Occupation Section
+                  EditSectionCard(
+                    title: 'Education & Occupation',
+                    subtitle: _getEducationOccupationSubtitle(activeProfile),
+                    icon: Icons.school,
+                    onTap: () => _navigateToEditDetails(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -552,6 +593,30 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  Future<void> _navigateToEditDetails(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditDetailsScreen(profile: currentProfile),
+        ),
+      ),
+    );
+  }
+
+  String _getEducationOccupationSubtitle(Profile profile) {
+    final parts = <String>[];
+    if (profile.education != null && profile.education!.isNotEmpty) {
+      parts.add(profile.education!);
+    }
+    if (profile.occupation != null && profile.occupation!.isNotEmpty) {
+      parts.add(profile.occupation!);
+    }
+    if (parts.isEmpty) return 'Add education & occupation';
+    return parts.join(' • ');
   }
 
   void _navigateToAdminVerification(BuildContext context, Profile currentProfile) {

@@ -468,15 +468,6 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Can Undo Swipe',
-          description: 'Undo the last swipe action',
-          value: config.rules.canUndoSwipe,
-          icon: Icons.undo,
-          onChanged: (value) => _updateRules(
-            config.rules.copyWith(canUndoSwipe: value),
-          ),
-        ),
-        _FeatureToggle(
           label: 'Can Boost Profile',
           description: 'Boost profile visibility',
           value: config.rules.canBoostProfile,
@@ -827,7 +818,6 @@ extension MembershipRulesCopyWith on MembershipRules {
     bool? canFilterByVerification,
     bool? canBoostProfile,
     int? monthlyFreeBoosts,
-    bool? canUndoSwipe,
     bool? canSendMedia,
     bool? canSeeReadReceipts,
     bool? canUseIncognitoMode,
@@ -848,7 +838,6 @@ extension MembershipRulesCopyWith on MembershipRules {
       canFilterByVerification: canFilterByVerification ?? this.canFilterByVerification,
       canBoostProfile: canBoostProfile ?? this.canBoostProfile,
       monthlyFreeBoosts: monthlyFreeBoosts ?? this.monthlyFreeBoosts,
-      canUndoSwipe: canUndoSwipe ?? this.canUndoSwipe,
       canSendMedia: canSendMedia ?? this.canSendMedia,
       canSeeReadReceipts: canSeeReadReceipts ?? this.canSeeReadReceipts,
       canUseIncognitoMode: canUseIncognitoMode ?? this.canUseIncognitoMode,

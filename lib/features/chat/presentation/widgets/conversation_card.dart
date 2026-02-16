@@ -59,6 +59,30 @@ class ConversationCard extends StatelessWidget {
                       : null,
                 ),
 
+                // Search conversation badge
+                if (conversation.isSearchConversation)
+                  Positioned(
+                    left: -2,
+                    bottom: -2,
+                    child: Container(
+                      width: 18,
+                      height: 18,
+                      decoration: BoxDecoration(
+                        color: AppColors.backgroundDark,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: AppColors.richGold.withOpacity(0.5),
+                          width: 1.5,
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.search,
+                        size: 10,
+                        color: AppColors.richGold,
+                      ),
+                    ),
+                  ),
+
                 // Unread badge with enhanced visibility
                 if (hasUnread && conversation.unreadCount > 0)
                   Positioned(

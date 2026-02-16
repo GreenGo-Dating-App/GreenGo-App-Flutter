@@ -3634,6 +3634,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{days}d ago'**
   String chatSupportDaysAgo(int days);
+
+  /// No description provided for @nicknameSearchChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get nicknameSearchChat;
+
+  /// No description provided for @filterNewMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get filterNewMessages;
+
+  /// No description provided for @filterNotReplied.
+  ///
+  /// In en, this message translates to:
+  /// **'No Reply'**
+  String get filterNotReplied;
+
+  /// No description provided for @filterFromMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Match'**
+  String get filterFromMatch;
+
+  /// No description provided for @filterFromSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get filterFromSearch;
+
+  /// No description provided for @publicAlbum.
+  ///
+  /// In en, this message translates to:
+  /// **'Public'**
+  String get publicAlbum;
+
+  /// No description provided for @privateAlbum.
+  ///
+  /// In en, this message translates to:
+  /// **'Private'**
+  String get privateAlbum;
+
+  /// No description provided for @shareAlbum.
+  ///
+  /// In en, this message translates to:
+  /// **'Share Album'**
+  String get shareAlbum;
+
+  /// No description provided for @revokeAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke album access'**
+  String get revokeAccess;
+
+  /// No description provided for @albumNotShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Album not shared with you'**
+  String get albumNotShared;
+
+  /// No description provided for @grantAlbumAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Share my album'**
+  String get grantAlbumAccess;
+
+  /// No description provided for @albumOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Album'**
+  String get albumOption;
 }
 
 class _AppLocalizationsDelegate

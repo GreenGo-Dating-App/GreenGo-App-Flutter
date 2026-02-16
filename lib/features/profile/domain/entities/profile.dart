@@ -19,6 +19,7 @@ class Profile extends Equatable {
   final DateTime dateOfBirth;
   final String gender;
   final List<String> photoUrls;
+  final List<String> privatePhotoUrls;
   final String bio;
   final List<String> interests;
   final Location location;
@@ -58,6 +59,7 @@ class Profile extends Equatable {
     required this.dateOfBirth,
     required this.gender,
     required this.photoUrls,
+    this.privatePhotoUrls = const [],
     required this.bio,
     required this.interests,
     required this.location,
@@ -118,6 +120,7 @@ class Profile extends Equatable {
         dateOfBirth,
         gender,
         photoUrls,
+        privatePhotoUrls,
         bio,
         interests,
         location,
@@ -153,6 +156,7 @@ class Profile extends Equatable {
     DateTime? dateOfBirth,
     String? gender,
     List<String>? photoUrls,
+    List<String>? privatePhotoUrls,
     String? bio,
     List<String>? interests,
     Location? location,
@@ -186,6 +190,7 @@ class Profile extends Equatable {
       dateOfBirth: dateOfBirth ?? this.dateOfBirth,
       gender: gender ?? this.gender,
       photoUrls: photoUrls ?? this.photoUrls,
+      privatePhotoUrls: privatePhotoUrls ?? this.privatePhotoUrls,
       bio: bio ?? this.bio,
       interests: interests ?? this.interests,
       location: location ?? this.location,

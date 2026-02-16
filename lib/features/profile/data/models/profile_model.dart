@@ -12,6 +12,7 @@ class ProfileModel extends Profile {
     required super.dateOfBirth,
     required super.gender,
     required super.photoUrls,
+    super.privatePhotoUrls,
     required super.bio,
     required super.interests,
     required super.location,
@@ -51,6 +52,9 @@ class ProfileModel extends Profile {
       photoUrls: json['photoUrls'] != null
           ? List<String>.from(json['photoUrls'] as List)
           : (json['photos'] != null ? List<String>.from(json['photos'] as List) : <String>[]),
+      privatePhotoUrls: json['privatePhotoUrls'] != null
+          ? List<String>.from(json['privatePhotoUrls'] as List)
+          : <String>[],
       bio: json['bio'] as String? ?? '',
       interests: json['interests'] != null
           ? List<String>.from(json['interests'] as List)
@@ -154,6 +158,7 @@ class ProfileModel extends Profile {
       'dateOfBirth': Timestamp.fromDate(dateOfBirth),
       'gender': gender,
       'photoUrls': photoUrls,
+      'privatePhotoUrls': privatePhotoUrls,
       'bio': bio,
       'interests': interests,
       'location': locationJson,
@@ -196,6 +201,7 @@ class ProfileModel extends Profile {
       dateOfBirth: profile.dateOfBirth,
       gender: profile.gender,
       photoUrls: profile.photoUrls,
+      privatePhotoUrls: profile.privatePhotoUrls,
       bio: profile.bio,
       interests: profile.interests,
       location: profile.location,

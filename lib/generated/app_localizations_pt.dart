@@ -1980,6 +1980,42 @@ class AppLocalizationsPt extends AppLocalizations {
   String chatSupportDaysAgo(int days) {
     return 'há ${days}d';
   }
+
+  @override
+  String get nicknameSearchChat => 'Conversar';
+
+  @override
+  String get filterNewMessages => 'Novas';
+
+  @override
+  String get filterNotReplied => 'Sem resposta';
+
+  @override
+  String get filterFromMatch => 'Match';
+
+  @override
+  String get filterFromSearch => 'Pesquisa';
+
+  @override
+  String get publicAlbum => 'Público';
+
+  @override
+  String get privateAlbum => 'Privado';
+
+  @override
+  String get shareAlbum => 'Partilhar álbum';
+
+  @override
+  String get revokeAccess => 'Revogar acesso ao álbum';
+
+  @override
+  String get albumNotShared => 'Álbum não partilhado';
+
+  @override
+  String get grantAlbumAccess => 'Partilhar meu álbum';
+
+  @override
+  String get albumOption => 'Álbum';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -3894,4 +3930,40 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String chatSupportDaysAgo(int days) {
     return 'há ${days}d';
   }
+
+  @override
+  String get nicknameSearchChat => 'Conversar';
+
+  @override
+  String get filterNewMessages => 'Novas';
+
+  @override
+  String get filterNotReplied => 'Sem resposta';
+
+  @override
+  String get filterFromMatch => 'Match';
+
+  @override
+  String get filterFromSearch => 'Busca';
+
+  @override
+  String get publicAlbum => 'Público';
+
+  @override
+  String get privateAlbum => 'Privado';
+
+  @override
+  String get shareAlbum => 'Compartilhar álbum';
+
+  @override
+  String get revokeAccess => 'Revogar acesso ao álbum';
+
+  @override
+  String get albumNotShared => 'Álbum não compartilhado';
+
+  @override
+  String get grantAlbumAccess => 'Compartilhar meu álbum';
+
+  @override
+  String get albumOption => 'Álbum';
 }

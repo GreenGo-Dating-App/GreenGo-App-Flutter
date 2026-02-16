@@ -1,11 +1,15 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../../chat/domain/usecases/get_search_conversation.dart';
+import '../../../chat/presentation/screens/chat_screen.dart';
 import '../screens/profile_detail_screen.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Nickname Search Dialog
 ///
@@ -167,6 +171,51 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         ),
       ),
     );
+  }
+
+  Future<void> _openChat() async {
+    if (_foundProfile == null) return;
+
+    setState(() => _isSearching = true);
+
+    try {
+      final getSearchConversation = GetIt.instance<GetSearchConversation>();
+      final result = await getSearchConversation(
+        currentUserId: widget.currentUserId,
+        otherUserId: _foundProfile!.userId,
+      );
+
+      if (!mounted) return;
+
+      result.fold(
+        (failure) {
+          setState(() => _isSearching = false);
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: ${failure.message}')),
+          );
+        },
+        (conversation) {
+          setState(() => _isSearching = false);
+          Navigator.of(context).pop();
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ChatScreen(
+                matchId: conversation.matchId,
+                currentUserId: widget.currentUserId,
+                otherUserId: _foundProfile!.userId,
+                otherUserProfile: _foundProfile!,
+              ),
+            ),
+          );
+        },
+      );
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isSearching = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
   }
 
   @override
@@ -429,6 +478,40 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                     ],
                   ),
                 ),
+                // Chat button
+                GestureDetector(
+                  onTap: _openChat,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 8,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: AppColors.richGold),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          Icons.chat_bubble_outline,
+                          color: AppColors.richGold,
+                          size: 14,
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          AppLocalizations.of(context)?.nicknameSearchChat ?? 'Chat',
+                          style: const TextStyle(
+                            color: AppColors.richGold,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
                 // View button
                 Container(
                   padding: const EdgeInsets.symmetric(

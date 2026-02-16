@@ -15,6 +15,7 @@ enum ChatTheme {
 enum ConversationType {
   match,    // Regular match conversation between two users
   support,  // Support conversation between user and support agent
+  search,   // Conversation started from nickname search (no match required)
 }
 
 /// Support Ticket Priority
@@ -131,6 +132,9 @@ class Conversation extends Equatable {
 
   /// Check if this is a match conversation
   bool get isMatchConversation => conversationType == ConversationType.match;
+
+  /// Check if this is a search conversation
+  bool get isSearchConversation => conversationType == ConversationType.search;
 
   /// Check if support ticket is resolved
   bool get isSupportResolved =>

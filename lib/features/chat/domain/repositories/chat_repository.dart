@@ -200,4 +200,10 @@ abstract class ChatRepository {
     required String conversationId,
     required String userId,
   });
+
+  /// Get or create a search conversation between two users
+  Future<Either<Failure, Conversation>> getOrCreateSearchConversation({
+    required String currentUserId,
+    required String otherUserId,
+  });
 }

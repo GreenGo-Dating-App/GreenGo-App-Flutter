@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
@@ -22,21 +23,34 @@ class PhotoManagementScreen extends StatefulWidget {
   State<PhotoManagementScreen> createState() => _PhotoManagementScreenState();
 }
 
-class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
+class _PhotoManagementScreenState extends State<PhotoManagementScreen>
+    with SingleTickerProviderStateMixin {
   final ImagePicker _picker = ImagePicker();
   List<String> _photoUrls = [];
+  List<String> _privatePhotoUrls = [];
+  late TabController _tabController;
+  bool _uploadingToPrivate = false;
 
   @override
   void initState() {
     super.initState();
     _photoUrls = List.from(widget.profile.photoUrls);
+    _privatePhotoUrls = List.from(widget.profile.privatePhotoUrls);
+    _tabController = TabController(length: 2, vsync: this);
   }
 
-  Future<void> _addPhoto() async {
-    if (_photoUrls.length >= 6) {
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _addPhoto({bool isPrivate = false}) async {
+    final targetList = isPrivate ? _privatePhotoUrls : _photoUrls;
+    if (targetList.length >= 6) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Maximum 6 photos allowed'),
+        SnackBar(
+          content: Text('Maximum 6 ${isPrivate ? "private" : "public"} photos allowed'),
           backgroundColor: AppColors.warningAmber,
         ),
       );
@@ -55,7 +69,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
         final file = File(image.path);
         if (!mounted) return;
 
-        // Upload photo
+        _uploadingToPrivate = isPrivate;
         context.read<ProfileBloc>().add(
               ProfilePhotoUploadRequested(
                 userId: widget.profile.userId,
@@ -74,7 +88,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
     }
   }
 
-  void _deletePhoto(int index) {
+  void _deletePhoto(int index, {bool isPrivate = false}) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -96,7 +110,11 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
             onPressed: () {
               Navigator.of(context).pop();
               setState(() {
-                _photoUrls.removeAt(index);
+                if (isPrivate) {
+                  _privatePhotoUrls.removeAt(index);
+                } else {
+                  _photoUrls.removeAt(index);
+                }
               });
               _updateProfile();
             },
@@ -110,13 +128,40 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
     );
   }
 
-  void _reorderPhotos(int oldIndex, int newIndex) {
+  void _copyToOther(String photoUrl, {required bool toPrivate}) {
+    final targetList = toPrivate ? _privatePhotoUrls : _photoUrls;
+    if (targetList.length >= 6) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Maximum 6 ${toPrivate ? "private" : "public"} photos'),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
+      return;
+    }
+    if (targetList.contains(photoUrl)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Photo already exists in target album'),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
+      return;
+    }
+    setState(() {
+      targetList.add(photoUrl);
+    });
+    _updateProfile();
+  }
+
+  void _reorderPhotos(int oldIndex, int newIndex, {bool isPrivate = false}) {
     setState(() {
       if (newIndex > oldIndex) {
         newIndex -= 1;
       }
-      final photo = _photoUrls.removeAt(oldIndex);
-      _photoUrls.insert(newIndex, photo);
+      final list = isPrivate ? _privatePhotoUrls : _photoUrls;
+      final photo = list.removeAt(oldIndex);
+      list.insert(newIndex, photo);
     });
     _updateProfile();
   }
@@ -124,6 +169,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
   void _updateProfile() {
     final updatedProfile = widget.profile.copyWith(
       photoUrls: _photoUrls,
+      privatePhotoUrls: _privatePhotoUrls,
       updatedAt: DateTime.now(),
     );
 
@@ -134,6 +180,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
     return Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
@@ -147,23 +195,34 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
             'Manage Photos',
             style: TextStyle(color: AppColors.textPrimary),
           ),
-          actions: [
-            if (_photoUrls.length < 6)
-              IconButton(
-                icon: const Icon(Icons.add_photo_alternate, color: AppColors.richGold),
-                onPressed: _addPhoto,
+          bottom: TabBar(
+            controller: _tabController,
+            indicatorColor: AppColors.richGold,
+            labelColor: AppColors.richGold,
+            unselectedLabelColor: AppColors.textSecondary,
+            tabs: [
+              Tab(
+                icon: const Icon(Icons.public, size: 18),
+                text: '${l10n?.publicAlbum ?? "Public"} (${_photoUrls.length}/6)',
               ),
-          ],
+              Tab(
+                icon: const Icon(Icons.lock, size: 18),
+                text: '${l10n?.privateAlbum ?? "Private"} (${_privatePhotoUrls.length}/6)',
+              ),
+            ],
+          ),
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) async {
             if (state is ProfilePhotoUploaded) {
               setState(() {
-                _photoUrls.add(state.photoUrl);
+                if (_uploadingToPrivate) {
+                  _privatePhotoUrls.add(state.photoUrl);
+                } else {
+                  _photoUrls.add(state.photoUrl);
+                }
               });
               _updateProfile();
-
-              // Show success dialog for photo upload
               await ActionSuccessDialog.showImageUploaded(context);
             } else if (state is ProfileError) {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -173,114 +232,35 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
                 ),
               );
             } else if (state is ProfileUpdated) {
-              // Show success dialog for photos updated (reorder/delete)
               await ActionSuccessDialog.showPhotosUpdated(context);
             }
           },
           builder: (context, state) {
             final isLoading = state is ProfileLoading;
 
-            if (_photoUrls.isEmpty) {
-              return Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.photo_library_outlined,
-                      size: 80,
-                      color: AppColors.textTertiary,
-                    ),
-                    const SizedBox(height: 16),
-                    const Text(
-                      'No photos yet',
-                      style: TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 18,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    const Text(
-                      'Add photos to complete your profile',
-                      style: TextStyle(
-                        color: AppColors.textTertiary,
-                        fontSize: 14,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    ElevatedButton.icon(
-                      onPressed: isLoading ? null : _addPhoto,
-                      icon: const Icon(Icons.add_photo_alternate),
-                      label: const Text('Add Photo'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.richGold,
-                        foregroundColor: AppColors.deepBlack,
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            }
-
             return Column(
               children: [
-                // Info Banner
-                Container(
-                  margin: const EdgeInsets.all(16),
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: AppColors.backgroundCard,
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                    border: Border.all(color: AppColors.divider),
+                // Upload progress bar
+                if (isLoading)
+                  const LinearProgressIndicator(
+                    color: AppColors.richGold,
+                    backgroundColor: AppColors.backgroundCard,
                   ),
-                  child: Row(
+                Expanded(
+                  child: TabBarView(
+                    controller: _tabController,
                     children: [
-                      const Icon(
-                        Icons.info_outline,
-                        color: AppColors.richGold,
-                        size: 20,
+                      _buildPhotoList(
+                        photos: _photoUrls,
+                        isPrivate: false,
+                        isLoading: isLoading,
                       ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              '${_photoUrls.length}/6 photos',
-                              style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            const Text(
-                              'Long press and drag to reorder',
-                              style: TextStyle(
-                                color: AppColors.textSecondary,
-                                fontSize: 12,
-                              ),
-                            ),
-                          ],
-                        ),
+                      _buildPhotoList(
+                        photos: _privatePhotoUrls,
+                        isPrivate: true,
+                        isLoading: isLoading,
                       ),
                     ],
-                  ),
-                ),
-
-                // Photo Grid
-                Expanded(
-                  child: ReorderableListView.builder(
-                    padding: const EdgeInsets.all(16),
-                    onReorder: _reorderPhotos,
-                    itemCount: _photoUrls.length,
-                    itemBuilder: (context, index) {
-                      return _PhotoCard(
-                        key: ValueKey(_photoUrls[index]),
-                        photoUrl: _photoUrls[index],
-                        index: index,
-                        onDelete: () => _deletePhoto(index),
-                        isPrimary: index == 0,
-                      );
-                    },
                   ),
                 ),
               ],
@@ -289,6 +269,134 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen> {
         ),
       );
   }
+
+  Widget _buildPhotoList({
+    required List<String> photos,
+    required bool isPrivate,
+    required bool isLoading,
+  }) {
+    if (photos.isEmpty) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              isPrivate ? Icons.lock_outline : Icons.photo_library_outlined,
+              size: 80,
+              color: AppColors.textTertiary,
+            ),
+            const SizedBox(height: 16),
+            Text(
+              isPrivate ? 'No private photos yet' : 'No photos yet',
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 18,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              isPrivate
+                  ? 'Add private photos that you can share in chat'
+                  : 'Add photos to complete your profile',
+              style: const TextStyle(
+                color: AppColors.textTertiary,
+                fontSize: 14,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton.icon(
+              onPressed: isLoading ? null : () => _addPhoto(isPrivate: isPrivate),
+              icon: const Icon(Icons.add_photo_alternate),
+              label: const Text('Add Photo'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: AppColors.deepBlack,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    return Column(
+      children: [
+        // Info Banner
+        Container(
+          margin: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard,
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            border: Border.all(color: AppColors.divider),
+          ),
+          child: Row(
+            children: [
+              Icon(
+                isPrivate ? Icons.lock : Icons.info_outline,
+                color: AppColors.richGold,
+                size: 20,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${photos.length}/6 photos',
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      isPrivate
+                          ? 'Private photos can be shared in chat'
+                          : 'Long press and drag to reorder',
+                      style: const TextStyle(
+                        color: AppColors.textSecondary,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (photos.length < 6)
+                IconButton(
+                  icon: const Icon(Icons.add_photo_alternate, color: AppColors.richGold),
+                  onPressed: () => _addPhoto(isPrivate: isPrivate),
+                ),
+            ],
+          ),
+        ),
+
+        // Photo Grid
+        Expanded(
+          child: ReorderableListView.builder(
+            padding: const EdgeInsets.all(16),
+            onReorder: (oldIndex, newIndex) =>
+                _reorderPhotos(oldIndex, newIndex, isPrivate: isPrivate),
+            itemCount: photos.length,
+            itemBuilder: (context, index) {
+              return _PhotoCard(
+                key: ValueKey('${isPrivate ? "priv" : "pub"}_${photos[index]}'),
+                photoUrl: photos[index],
+                index: index,
+                onDelete: () => _deletePhoto(index, isPrivate: isPrivate),
+                isPrimary: !isPrivate && index == 0,
+                isPrivate: isPrivate,
+                onCopyToOther: () => _copyToOther(
+                  photos[index],
+                  toPrivate: !isPrivate,
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
 }
 
 class _PhotoCard extends StatelessWidget {
@@ -296,6 +404,8 @@ class _PhotoCard extends StatelessWidget {
   final int index;
   final VoidCallback onDelete;
   final bool isPrimary;
+  final bool isPrivate;
+  final VoidCallback? onCopyToOther;
 
   const _PhotoCard({
     required Key key,
@@ -303,6 +413,8 @@ class _PhotoCard extends StatelessWidget {
     required this.index,
     required this.onDelete,
     required this.isPrimary,
+    this.isPrivate = false,
+    this.onCopyToOther,
   }) : super(key: key);
 
   @override
@@ -341,6 +453,27 @@ class _PhotoCard extends StatelessWidget {
                     color: AppColors.deepBlack,
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          // Copy to other album button
+          if (onCopyToOther != null)
+            Positioned(
+              top: 8,
+              right: 44,
+              child: GestureDetector(
+                onTap: onCopyToOther,
+                child: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.deepBlack.withOpacity(0.7),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    isPrivate ? Icons.public : Icons.lock,
+                    color: Colors.white,
+                    size: 20,
                   ),
                 ),
               ),

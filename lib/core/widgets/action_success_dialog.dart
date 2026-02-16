@@ -180,12 +180,16 @@ class ActionSuccessDialog extends StatefulWidget {
     IconData icon = Icons.check_circle,
     Duration autoDismiss = const Duration(seconds: 2),
     VoidCallback? onDismiss,
-  }) {
+  }) async {
+    // Wait a frame to ensure any previous dialog is fully dismissed
+    await Future.delayed(const Duration(milliseconds: 150));
+    if (!context.mounted) return;
     return showDialog(
       context: context,
+      useRootNavigator: true,
       barrierDismissible: false,
       barrierColor: Colors.black54,
-      builder: (context) => ActionSuccessDialog(
+      builder: (dialogContext) => ActionSuccessDialog(
         title: title,
         message: message,
         icon: icon,
@@ -237,7 +241,7 @@ class _ActionSuccessDialogState extends State<ActionSuccessDialog>
     // Auto dismiss after specified duration
     Future.delayed(widget.autoDismiss, () {
       if (mounted) {
-        Navigator.of(context).pop();
+        Navigator.of(context, rootNavigator: true).pop();
         widget.onDismiss?.call();
       }
     });

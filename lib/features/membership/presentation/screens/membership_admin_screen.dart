@@ -459,7 +459,6 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                 _buildRuleRow('Match Priority', '${rules.matchPriority}'),
                 _buildRuleRow('Read Receipts', rules.canSeeReadReceipts ? 'Yes' : 'No'),
                 _buildRuleRow('Profile Boost', rules.canBoostProfile ? 'Yes' : 'No'),
-                _buildRuleRow('Undo Last Swipe', rules.canUndoSwipe ? 'Yes' : 'No'),
                 _buildRuleRow('Send Media', rules.canSendMedia ? 'Yes' : 'No'),
                 _buildRuleRow('Incognito Mode', rules.canUseIncognitoMode ? 'Yes' : 'No'),
                 _buildRuleRow('Profile Visitors', rules.canSeeProfileVisitors ? 'Yes' : 'No'),
@@ -978,7 +977,6 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
     bool canUseAdvancedFilters = rules.canUseAdvancedFilters;
     bool canBoostProfile = rules.canBoostProfile;
     bool canSeeReadReceipts = rules.canSeeReadReceipts;
-    bool canUndoSwipe = rules.canUndoSwipe;
     bool canSendMedia = rules.canSendMedia;
     bool canUseIncognitoMode = rules.canUseIncognitoMode;
     bool canSeeProfileVisitors = rules.canSeeProfileVisitors;
@@ -1055,9 +1053,6 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   _buildSwitchTile('Read Receipts', canSeeReadReceipts, (v) {
                     setDialogState(() => canSeeReadReceipts = v);
                   }),
-                  _buildSwitchTile('Undo Last Swipe', canUndoSwipe, (v) {
-                    setDialogState(() => canUndoSwipe = v);
-                  }),
                   _buildSwitchTile('Send Media', canSendMedia, (v) {
                     setDialogState(() => canSendMedia = v);
                   }),
@@ -1097,7 +1092,6 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     canUseAdvancedFilters: canUseAdvancedFilters,
                     canBoostProfile: canBoostProfile,
                     canSeeReadReceipts: canSeeReadReceipts,
-                    canUndoSwipe: canUndoSwipe,
                     canSendMedia: canSendMedia,
                     canUseIncognitoMode: canUseIncognitoMode,
                     canSeeProfileVisitors: canSeeProfileVisitors,
