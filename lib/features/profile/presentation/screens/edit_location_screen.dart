@@ -91,9 +91,14 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
 
       if (placemarks.isNotEmpty) {
         final place = placemarks.first;
-        final city = place.locality ?? place.subAdministrativeArea ?? 'Unknown';
+        final city = place.locality
+            ?? place.subLocality
+            ?? place.subAdministrativeArea
+            ?? place.administrativeArea
+            ?? place.name
+            ?? 'Unknown';
         final country = place.country ?? 'Unknown';
-        final displayAddress = '$city, $country';
+        final displayAddress = city != 'Unknown' ? '$city, $country' : country;
 
         setState(() {
           _selectedLocation = profile_entity.Location(

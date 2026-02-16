@@ -115,9 +115,14 @@ class _Step5LocationLanguageScreenState
 
       if (placemarks.isNotEmpty) {
         final placemark = placemarks.first;
-        final city = placemark.locality ?? placemark.subAdministrativeArea ?? '';
+        final city = placemark.locality
+            ?? placemark.subLocality
+            ?? placemark.subAdministrativeArea
+            ?? placemark.administrativeArea
+            ?? placemark.name
+            ?? '';
         final country = placemark.country ?? '';
-        final displayAddress = '$city, $country';
+        final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
         setState(() {
           _selectedLocation = location_entity.Location(
