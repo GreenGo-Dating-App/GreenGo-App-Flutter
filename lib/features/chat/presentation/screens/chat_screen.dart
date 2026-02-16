@@ -365,13 +365,14 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Show attachment options bottom sheet
   void _showAttachmentOptions(BuildContext context) {
+    final parentContext = context;
     showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.backgroundCard,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (context) => SafeArea(
+      builder: (sheetCtx) => SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -386,7 +387,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             const SizedBox(height: 20),
             Text(
-              AppLocalizations.of(context)!.chatSendAttachment,
+              AppLocalizations.of(sheetCtx)!.chatSendAttachment,
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
@@ -398,25 +399,28 @@ class _ChatScreenState extends State<ChatScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _buildAttachmentOption(
-                  context,
+                  sheetCtx,
                   icon: Icons.collections,
-                  label: AppLocalizations.of(context)?.albumOption ?? 'Album',
+                  label: AppLocalizations.of(sheetCtx)?.albumOption ?? 'Album',
                   color: Colors.teal,
-                  onTap: () => _showMyAlbumPhotos(context),
+                  onTap: () {
+                    Navigator.pop(sheetCtx); // Close attachment options first
+                    _showMyAlbumPhotos(parentContext);
+                  },
                 ),
                 _buildAttachmentOption(
-                  context,
+                  sheetCtx,
                   icon: Icons.photo_library,
-                  label: AppLocalizations.of(context)!.chatAttachGallery,
+                  label: AppLocalizations.of(sheetCtx)!.chatAttachGallery,
                   color: AppColors.richGold,
-                  onTap: () => _pickImage(context, ImageSource.gallery),
+                  onTap: () => _pickImage(parentContext, ImageSource.gallery),
                 ),
                 _buildAttachmentOption(
-                  context,
+                  sheetCtx,
                   icon: Icons.camera_alt,
-                  label: AppLocalizations.of(context)!.chatAttachCamera,
+                  label: AppLocalizations.of(sheetCtx)!.chatAttachCamera,
                   color: Colors.blue,
-                  onTap: () => _pickImage(context, ImageSource.camera),
+                  onTap: () => _pickImage(parentContext, ImageSource.camera),
                 ),
               ],
             ),
@@ -425,18 +429,18 @@ class _ChatScreenState extends State<ChatScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _buildAttachmentOption(
-                  context,
+                  sheetCtx,
                   icon: Icons.videocam,
-                  label: AppLocalizations.of(context)!.chatAttachVideo,
+                  label: AppLocalizations.of(sheetCtx)!.chatAttachVideo,
                   color: Colors.purple,
-                  onTap: () => _pickVideo(context, ImageSource.gallery),
+                  onTap: () => _pickVideo(parentContext, ImageSource.gallery),
                 ),
                 _buildAttachmentOption(
-                  context,
+                  sheetCtx,
                   icon: Icons.video_call,
-                  label: AppLocalizations.of(context)!.chatAttachRecord,
+                  label: AppLocalizations.of(sheetCtx)!.chatAttachRecord,
                   color: Colors.red,
-                  onTap: () => _pickVideo(context, ImageSource.camera),
+                  onTap: () => _pickVideo(parentContext, ImageSource.camera),
                 ),
               ],
             ),
@@ -933,14 +937,19 @@ class _ChatScreenState extends State<ChatScreen> {
                             final photosToSelect = selectedIndices
                                 .map((i) => privatePhotos[i] as String)
                                 .toList();
+                            // Close the attachment options sheet first (if open)
                             Navigator.pop(ctx);
-                            setState(() {
-                              _selectedAlbumPhotos = photosToSelect;
-                              // Clear any other selected media
-                              _selectedImage = null;
-                              _selectedVideo = null;
-                              _selectedImageXFile = null;
-                              _selectedVideoXFile = null;
+                            // Use post-frame callback to ensure setState runs after pop completes
+                            WidgetsBinding.instance.addPostFrameCallback((_) {
+                              if (mounted) {
+                                setState(() {
+                                  _selectedAlbumPhotos = photosToSelect;
+                                  _selectedImage = null;
+                                  _selectedVideo = null;
+                                  _selectedImageXFile = null;
+                                  _selectedVideoXFile = null;
+                                });
+                              }
                             });
                           },
                           style: ElevatedButton.styleFrom(
