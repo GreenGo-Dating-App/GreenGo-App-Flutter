@@ -46,6 +46,7 @@ import '../../features/discovery/data/repositories/discovery_repository_impl.dar
 import '../../features/discovery/domain/repositories/discovery_repository.dart';
 import '../../features/discovery/domain/usecases/get_discovery_stack.dart';
 import '../../features/discovery/domain/usecases/record_swipe.dart';
+import '../../features/discovery/domain/usecases/undo_swipe.dart';
 import '../../features/discovery/domain/usecases/get_matches.dart';
 import '../../features/discovery/presentation/bloc/discovery_bloc.dart';
 import '../../features/discovery/presentation/bloc/matches_bloc.dart';
@@ -246,6 +247,7 @@ Future<void> init() async {
     () => DiscoveryBloc(
       getDiscoveryStack: sl(),
       recordSwipe: sl(),
+      undoSwipe: sl(),
     ),
   );
 
@@ -259,6 +261,7 @@ Future<void> init() async {
   // Use cases
   sl.registerLazySingleton(() => GetDiscoveryStack(sl()));
   sl.registerLazySingleton(() => RecordSwipe(sl()));
+  sl.registerLazySingleton(() => UndoSwipe(sl()));
   sl.registerLazySingleton(() => GetMatches(sl()));
 
   // Repository

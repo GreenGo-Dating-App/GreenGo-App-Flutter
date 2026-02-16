@@ -341,8 +341,8 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Users in this list get access on March 1, 2026.\n'
-                  'All other users get access on March 16, 2026.',
+                  'Users in this list get access on March 14, 2026.\n'
+                  'All other users get access on April 14, 2026.',
                   style: TextStyle(
                     color: AppColors.textSecondary.withValues(alpha: 0.8),
                     fontSize: 13,
@@ -811,14 +811,14 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
               Icons.star,
               AppColors.richGold,
               'Early Access (in list)',
-              'March 1, 2026',
+              'March 14, 2026',
             ),
             const SizedBox(height: 8),
             _buildInfoRow(
               Icons.people,
               AppColors.textSecondary,
               'General Access',
-              'March 16, 2026',
+              'April 14, 2026',
             ),
             const SizedBox(height: 16),
             const Text(

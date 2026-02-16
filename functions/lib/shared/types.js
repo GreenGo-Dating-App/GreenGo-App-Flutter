@@ -3,13 +3,21 @@
  * Shared TypeScript types for all microservices
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ChallengeType = exports.AchievementType = exports.CallStatusExtended = exports.CallType = exports.UserRole = exports.NotificationType = exports.ReportStatus = exports.ReportReason = exports.ModerationAction = exports.ModerationCategory = exports.VideoQuality = exports.CallStatus = exports.CoinSource = exports.SubscriptionStatus = exports.MessageType = exports.SubscriptionTier = void 0;
+exports.ChallengeType = exports.AchievementType = exports.CallStatusExtended = exports.CallType = exports.UserRole = exports.NotificationType = exports.ReportStatus = exports.ReportReason = exports.ModerationAction = exports.ModerationCategory = exports.VideoQuality = exports.CallStatus = exports.CoinSource = exports.SubscriptionStatus = exports.MessageType = exports.ApprovalStatus = exports.SubscriptionTier = void 0;
 var SubscriptionTier;
 (function (SubscriptionTier) {
     SubscriptionTier["BASIC"] = "basic";
     SubscriptionTier["SILVER"] = "silver";
     SubscriptionTier["GOLD"] = "gold";
+    SubscriptionTier["PLATINUM"] = "platinum";
 })(SubscriptionTier || (exports.SubscriptionTier = SubscriptionTier = {}));
+// MVP Release Access Control
+var ApprovalStatus;
+(function (ApprovalStatus) {
+    ApprovalStatus["PENDING"] = "pending";
+    ApprovalStatus["APPROVED"] = "approved";
+    ApprovalStatus["REJECTED"] = "rejected";
+})(ApprovalStatus || (exports.ApprovalStatus = ApprovalStatus = {}));
 var MessageType;
 (function (MessageType) {
     MessageType["TEXT"] = "text";

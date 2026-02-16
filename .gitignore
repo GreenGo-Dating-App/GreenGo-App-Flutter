@@ -80,6 +80,11 @@ google-services.json
 GoogleService-Info.plist
 firebase_options.dart
 
+# Keystore / signing
+android/key.properties
+*.jks
+*.keystore
+
 # Credentials
 **/credentials.json
 **/service-account*.json

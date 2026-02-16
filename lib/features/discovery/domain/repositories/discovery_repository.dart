@@ -67,4 +67,10 @@ abstract class DiscoveryRepository {
     required String userId,
     required String targetUserId,
   });
+
+  /// Undo (delete) the last swipe on a target user
+  Future<Either<Failure, void>> undoSwipe({
+    required String userId,
+    required String targetUserId,
+  });
 }

@@ -484,7 +484,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 orElse: () => SubscriptionTier.basic,
               ),
               notificationsEnabled: false,
-              hasEarlyAccess: state.accessDate.isBefore(DateTime(2026, 3, 16)),
+              hasEarlyAccess: state.accessDate.isBefore(DateTime(2026, 4, 14)),
             ),
             onSignOut: _handleSignOut,
             onRefresh: _handleRefresh,

@@ -9,7 +9,7 @@ import '../../../../core/services/access_control_service.dart';
 import '../../../../features/subscription/domain/entities/subscription.dart';
 
 /// Screen shown to users who are registered but waiting for:
-/// 1. Their access date (March 1st for early access, March 16th for others)
+/// 1. Their access date (tier-based: Platinum March 14, Gold March 28, Silver April 7, Free April 14)
 /// 2. Admin approval (only shown AFTER countdown is over)
 ///
 /// Flow:

@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 
 /// Service for managing early access email list
-/// Users in this list get access on March 1, 2026
-/// All other users get access on March 16, 2026
+/// Users in this list get access on March 14, 2026 (same as Platinum tier)
+/// All other users get access on April 14, 2026 (official release)
 class EarlyAccessService {
   final FirebaseFirestore _firestore;
   final auth.FirebaseAuth _auth;
@@ -13,8 +13,8 @@ class EarlyAccessService {
   static const String _configDocName = 'config';
 
   // Access dates
-  static final DateTime earlyAccessDate = DateTime(2026, 3, 1);  // March 1, 2026
-  static final DateTime generalAccessDate = DateTime(2026, 3, 16); // March 16, 2026
+  static final DateTime earlyAccessDate = DateTime(2026, 3, 14);  // March 14, 2026
+  static final DateTime generalAccessDate = DateTime(2026, 4, 14); // April 14, 2026
 
   EarlyAccessService({
     FirebaseFirestore? firestore,

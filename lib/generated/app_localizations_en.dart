@@ -572,12 +572,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String waitingAccessDatePremium(String tier) {
-    return 'As a $tier member, you get early access on March 1st, 2026!';
+    return 'As a $tier member, you get early access before April 14th, 2026!';
   }
 
   @override
   String get waitingAccessDateBasic =>
-      'Your access will begin on March 15th, 2026';
+      'Your access will begin on April 14th, 2026';
 
   @override
   String get waitingCountdownTitle => 'Countdown to Launch';
@@ -613,7 +613,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get upgradeForEarlyAccess =>
-      'Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!';
+      'Upgrade to Silver, Gold, or Platinum for early access before April 14th, 2026!';
 
   @override
   String get waitingStayTuned =>
@@ -1577,4 +1577,387 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get xTwitter => 'X (Twitter)';
+
+  @override
+  String chatMessageBlockedContains(String violations) {
+    return 'Message blocked: Contains $violations. For your safety, sharing personal contact details is not allowed.';
+  }
+
+  @override
+  String get chatReportMessage => 'Report Message';
+
+  @override
+  String get chatWhyReportMessage => 'Why are you reporting this message?';
+
+  @override
+  String get chatReportReasonHarassment => 'Harassment or bullying';
+
+  @override
+  String get chatReportReasonSpam => 'Spam or scam';
+
+  @override
+  String get chatReportReasonInappropriate => 'Inappropriate content';
+
+  @override
+  String get chatReportReasonPersonalInfo => 'Sharing personal information';
+
+  @override
+  String get chatReportReasonThreatening => 'Threatening behavior';
+
+  @override
+  String get chatReportReasonFakeProfile => 'Fake profile / Catfishing';
+
+  @override
+  String get chatReportReasonUnderage => 'Underage user';
+
+  @override
+  String get chatReportReasonOther => 'Other';
+
+  @override
+  String get chatMessageReported =>
+      'Message reported. We will review it shortly.';
+
+  @override
+  String chatFailedToReportMessage(String error) {
+    return 'Failed to report message: $error';
+  }
+
+  @override
+  String get chatSendAttachment => 'Send Attachment';
+
+  @override
+  String get chatAttachGallery => 'Gallery';
+
+  @override
+  String get chatAttachCamera => 'Camera';
+
+  @override
+  String get chatAttachVideo => 'Video';
+
+  @override
+  String get chatAttachRecord => 'Record';
+
+  @override
+  String chatFailedToPickImage(String error) {
+    return 'Failed to pick image: $error';
+  }
+
+  @override
+  String chatFailedToPickVideo(String error) {
+    return 'Failed to pick video: $error';
+  }
+
+  @override
+  String chatFailedToUploadImage(String error) {
+    return 'Failed to upload image: $error';
+  }
+
+  @override
+  String get chatVideoTooLarge => 'Video too large. Maximum size is 50MB.';
+
+  @override
+  String chatFailedToUploadVideo(String error) {
+    return 'Failed to upload video: $error';
+  }
+
+  @override
+  String get chatMediaLimitReached => 'Media Limit Reached';
+
+  @override
+  String chatSayHiTo(String name) {
+    return 'Say hi to $name!';
+  }
+
+  @override
+  String get chatSendMessageToStart =>
+      'Send a message to start the conversation';
+
+  @override
+  String get chatTyping => 'typing...';
+
+  @override
+  String get chatDisableTranslation => 'Disable translation';
+
+  @override
+  String get chatEnableTranslation => 'Enable translation';
+
+  @override
+  String get chatTranslationEnabled => 'Translation enabled';
+
+  @override
+  String get chatTranslationDisabled => 'Translation disabled';
+
+  @override
+  String get chatUploading => 'Uploading...';
+
+  @override
+  String get chatOptions => 'Chat Options';
+
+  @override
+  String get chatDeleteForMe => 'Delete chat for me';
+
+  @override
+  String get chatDeleteForBoth => 'Delete chat for both';
+
+  @override
+  String chatBlockUser(String name) {
+    return 'Block $name';
+  }
+
+  @override
+  String chatReportUser(String name) {
+    return 'Report $name';
+  }
+
+  @override
+  String get chatDeleteChat => 'Delete Chat';
+
+  @override
+  String get chatDeleteChatForMeMessage =>
+      'This will delete the chat from your device only. The other person will still see the messages.';
+
+  @override
+  String get chatDeleteChatForEveryone => 'Delete Chat for Everyone';
+
+  @override
+  String chatDeleteChatForBothMessage(String name) {
+    return 'This will delete all messages for both you and $name. This action cannot be undone.';
+  }
+
+  @override
+  String get chatDeleteForEveryone => 'Delete for Everyone';
+
+  @override
+  String get chatBlockUserTitle => 'Block User';
+
+  @override
+  String chatBlockUserMessage(String name) {
+    return 'Are you sure you want to block $name? They will no longer be able to contact you.';
+  }
+
+  @override
+  String get chatBlock => 'Block';
+
+  @override
+  String get chatCannotBlockAdmin => 'You cannot block an administrator.';
+
+  @override
+  String chatUserBlocked(String name) {
+    return '$name has been blocked';
+  }
+
+  @override
+  String get chatReportUserTitle => 'Report User';
+
+  @override
+  String chatWhyReportUser(String name) {
+    return 'Why are you reporting $name?';
+  }
+
+  @override
+  String get chatCannotReportAdmin => 'You cannot report an administrator.';
+
+  @override
+  String get chatUserReported =>
+      'User reported. We will review your report shortly.';
+
+  @override
+  String chatReplyingTo(String name) {
+    return 'Replying to $name';
+  }
+
+  @override
+  String get chatYou => 'You';
+
+  @override
+  String get chatUnableToForward => 'Unable to forward message';
+
+  @override
+  String get chatSearchByNameOrNickname => 'Search by name or @nickname';
+
+  @override
+  String get chatNoMessagesYet => 'No messages yet';
+
+  @override
+  String get chatStartSwipingToChat =>
+      'Start swiping and matching to chat with people!';
+
+  @override
+  String get chatMessageOriginal => 'Original';
+
+  @override
+  String get chatMessageTranslated => 'Translated';
+
+  @override
+  String get chatMessageStarred => 'Message starred';
+
+  @override
+  String get chatMessageUnstarred => 'Message unstarred';
+
+  @override
+  String get chatMessageOptions => 'Message Options';
+
+  @override
+  String get chatReply => 'Reply';
+
+  @override
+  String get chatReplyToMessage => 'Reply to this message';
+
+  @override
+  String get chatForward => 'Forward';
+
+  @override
+  String get chatForwardToChat => 'Forward to another chat';
+
+  @override
+  String get chatStarMessage => 'Star Message';
+
+  @override
+  String get chatUnstarMessage => 'Unstar Message';
+
+  @override
+  String get chatAddToStarred => 'Add to starred messages';
+
+  @override
+  String get chatRemoveFromStarred => 'Remove from starred messages';
+
+  @override
+  String get chatReportInappropriate => 'Report inappropriate content';
+
+  @override
+  String get chatVideoPlayer => 'Video Player';
+
+  @override
+  String get chatFailedToLoadImage => 'Failed to load image';
+
+  @override
+  String get chatLoadingVideo => 'Loading video...';
+
+  @override
+  String get chatPreviewVideo => 'Preview Video';
+
+  @override
+  String get chatPreviewImage => 'Preview Image';
+
+  @override
+  String get chatAddCaption => 'Add a caption...';
+
+  @override
+  String get chatSend => 'Send';
+
+  @override
+  String get chatSupportTitle => 'GreenGo Support';
+
+  @override
+  String get chatSupportStatusOpen => 'Open';
+
+  @override
+  String get chatSupportStatusPending => 'Pending';
+
+  @override
+  String get chatSupportStatusResolved => 'Resolved';
+
+  @override
+  String get chatSupportStatusClosed => 'Closed';
+
+  @override
+  String get chatSupportStatusDefault => 'Support';
+
+  @override
+  String chatSupportAgent(String name) {
+    return 'Agent: $name';
+  }
+
+  @override
+  String get chatSupportWelcome => 'Welcome to Support';
+
+  @override
+  String get chatSupportStartMessage =>
+      'Send a message to start the conversation.\nOur team will respond as soon as possible.';
+
+  @override
+  String get chatSupportTicketStart => 'Ticket Start';
+
+  @override
+  String get chatSupportTicketCreated => 'Ticket Created';
+
+  @override
+  String get chatSupportErrorLoading => 'Error loading messages';
+
+  @override
+  String chatSupportFailedToSend(String error) {
+    return 'Failed to send message: $error';
+  }
+
+  @override
+  String get chatSupportTicketResolved => 'This ticket has been resolved';
+
+  @override
+  String get chatSupportReopenTicket => 'Need more help? Tap to reopen';
+
+  @override
+  String get chatSupportTicketReopened =>
+      'Ticket reopened. You can send a message now.';
+
+  @override
+  String chatSupportFailedToReopen(String error) {
+    return 'Failed to reopen ticket: $error';
+  }
+
+  @override
+  String get chatSupportAddCaptionOptional => 'Add a caption (optional)...';
+
+  @override
+  String get chatSupportTypeMessage => 'Type your message...';
+
+  @override
+  String get chatSupportAddAttachment => 'Add Attachment';
+
+  @override
+  String get chatSupportTicketInfo => 'Ticket Information';
+
+  @override
+  String get chatSupportSubject => 'Subject';
+
+  @override
+  String get chatSupportCategory => 'Category';
+
+  @override
+  String get chatSupportStatus => 'Status';
+
+  @override
+  String get chatSupportAgentLabel => 'Agent';
+
+  @override
+  String get chatSupportTicketId => 'Ticket ID';
+
+  @override
+  String get chatSupportGeneralSupport => 'General Support';
+
+  @override
+  String get chatSupportGeneral => 'General';
+
+  @override
+  String get chatSupportWaitingAssignment => 'Waiting for assignment';
+
+  @override
+  String get chatSupportClose => 'Close';
+
+  @override
+  String get chatSupportJustNow => 'Just now';
+
+  @override
+  String chatSupportMinutesAgo(int minutes) {
+    return '${minutes}m ago';
+  }
+
+  @override
+  String chatSupportHoursAgo(int hours) {
+    return '${hours}h ago';
+  }
+
+  @override
+  String chatSupportDaysAgo(int days) {
+    return '${days}d ago';
+  }
 }

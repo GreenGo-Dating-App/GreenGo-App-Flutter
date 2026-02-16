@@ -59,6 +59,19 @@ class DiscoveryMoreCandidatesRequested extends DiscoveryEvent {
   });
 }
 
+/// Rewind (undo) the last swipe
+class DiscoveryRewindRequested extends DiscoveryEvent {
+  final String userId;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
+
+  const DiscoveryRewindRequested({
+    required this.userId,
+    this.membershipRules,
+    this.membershipTier,
+  });
+}
+
 /// Prefetch more profiles in background (triggered automatically when queue is low)
 class DiscoveryPrefetchRequested extends DiscoveryEvent {
   final String userId;

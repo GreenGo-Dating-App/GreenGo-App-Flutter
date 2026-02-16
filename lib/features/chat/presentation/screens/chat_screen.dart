@@ -879,9 +879,6 @@ class _ChatScreenState extends State<ChatScreen> {
             // Reply preview
             _buildReplyPreview(),
 
-            // Media preview
-            _buildMediaPreview(),
-
             // Upload progress indicator
             if (_isUploadingMedia)
               Container(
@@ -1306,6 +1303,8 @@ class _ChatScreenState extends State<ChatScreen> {
           backgroundColor: AppColors.richGold,
         ),
       );
+      // Navigate away — report auto-blocks, so the conversation is no longer accessible
+      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
     }
   }
 
@@ -1341,20 +1340,14 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
-  /// Build media preview widget above input
+  /// Build media preview widget inside input container
   Widget _buildMediaPreview() {
     if (_selectedImage == null && _selectedVideo == null) {
       return const SizedBox.shrink();
     }
 
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: const BoxDecoration(
-        color: AppColors.backgroundCard,
-        border: Border(
-          top: BorderSide(color: AppColors.divider, width: 1),
-        ),
-      ),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
       child: Stack(
         children: [
           ClipRRect(
@@ -1497,7 +1490,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Widget _buildInputField(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: const BoxDecoration(
         color: AppColors.backgroundCard,
         border: Border(
@@ -1505,74 +1497,85 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       child: SafeArea(
-        child: Row(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            // Attach button
-            IconButton(
-              icon: const Icon(Icons.add_circle_outline),
-              color: AppColors.textSecondary,
-              onPressed: () => _showAttachmentOptions(context),
-            ),
-
-            // Text input
-            Expanded(
-              child: TextField(
-                controller: _messageController,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 16,
-                ),
-                decoration: InputDecoration(
-                  hintText: AppLocalizations.of(context)!.typeMessage,
-                  hintStyle: const TextStyle(
-                    color: AppColors.textTertiary,
+            // Media preview INSIDE input container
+            _buildMediaPreview(),
+            // Input row
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              child: Row(
+                children: [
+                  // Attach button
+                  IconButton(
+                    icon: const Icon(Icons.add_circle_outline),
+                    color: AppColors.textSecondary,
+                    onPressed: () => _showAttachmentOptions(context),
                   ),
-                  filled: true,
-                  fillColor: AppColors.backgroundDark,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
-                    borderSide: BorderSide.none,
-                  ),
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 10,
-                  ),
-                ),
-                maxLines: 4,
-                minLines: 1,
-                textCapitalization: TextCapitalization.sentences,
-              ),
-            ),
 
-            const SizedBox(width: 8),
-
-            // Send button
-            BlocBuilder<ChatBloc, ChatState>(
-              builder: (context, state) {
-                final isSending = state is ChatSending;
-
-                return CircleAvatar(
-                  backgroundColor: AppColors.richGold,
-                  radius: 24,
-                  child: isSending
-                      ? const SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(
-                            color: AppColors.deepBlack,
-                            strokeWidth: 2,
-                          ),
-                        )
-                      : IconButton(
-                          icon: const Icon(
-                            Icons.send,
-                            color: AppColors.deepBlack,
-                            size: 20,
-                          ),
-                          onPressed: () => _sendMessage(context),
+                  // Text input
+                  Expanded(
+                    child: TextField(
+                      controller: _messageController,
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 16,
+                      ),
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context)!.typeMessage,
+                        hintStyle: const TextStyle(
+                          color: AppColors.textTertiary,
                         ),
-                );
-              },
+                        filled: true,
+                        fillColor: AppColors.backgroundDark,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(24),
+                          borderSide: BorderSide.none,
+                        ),
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
+                      maxLines: 4,
+                      minLines: 1,
+                      textCapitalization: TextCapitalization.sentences,
+                    ),
+                  ),
+
+                  const SizedBox(width: 8),
+
+                  // Send button
+                  BlocBuilder<ChatBloc, ChatState>(
+                    builder: (context, state) {
+                      final isSending = state is ChatSending;
+
+                      return CircleAvatar(
+                        backgroundColor: AppColors.richGold,
+                        radius: 24,
+                        child: isSending
+                            ? const SizedBox(
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  color: AppColors.deepBlack,
+                                  strokeWidth: 2,
+                                ),
+                              )
+                            : IconButton(
+                                icon: const Icon(
+                                  Icons.send,
+                                  color: AppColors.deepBlack,
+                                  size: 20,
+                                ),
+                                onPressed: () => _sendMessage(context),
+                              ),
+                      );
+                    },
+                  ),
+                ],
+              ),
             ),
           ],
         ),

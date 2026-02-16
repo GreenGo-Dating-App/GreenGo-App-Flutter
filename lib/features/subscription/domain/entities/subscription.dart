@@ -76,7 +76,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
     return this == SubscriptionTier.test;
   }
 
-  /// Check if this tier has early access (March 1st, 2026)
+  /// Check if this tier has early access (before April 14 official release)
   bool get hasEarlyAccess {
     return this == SubscriptionTier.platinum ||
            this == SubscriptionTier.gold ||
@@ -85,15 +85,20 @@ extension SubscriptionTierExtension on SubscriptionTier {
   }
 
   /// Get the access date for this tier
+  /// Platinum: March 14, Gold: March 28, Silver: April 7, Basic: April 14
   DateTime get accessDate {
-    // Test users have immediate access (bypass countdown)
-    if (this == SubscriptionTier.test) {
-      return DateTime.now().subtract(const Duration(days: 1)); // Always in the past
+    switch (this) {
+      case SubscriptionTier.test:
+        return DateTime.now().subtract(const Duration(days: 1)); // Immediate
+      case SubscriptionTier.platinum:
+        return DateTime(2026, 3, 14); // March 14, 2026
+      case SubscriptionTier.gold:
+        return DateTime(2026, 3, 28); // March 28, 2026
+      case SubscriptionTier.silver:
+        return DateTime(2026, 4, 7);  // April 7, 2026
+      case SubscriptionTier.basic:
+        return DateTime(2026, 4, 14); // April 14, 2026 (official release)
     }
-    if (hasEarlyAccess) {
-      return DateTime(2026, 3, 1); // March 1st, 2026 for Platinum, Gold, Silver
-    }
-    return DateTime(2026, 3, 15); // March 15th, 2026 for Basic users
   }
 
   /// Features for each tier

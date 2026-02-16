@@ -207,7 +207,7 @@
   "waitingMessageApproved": "Great news! Your account has been approved. You will be able to access GreenGoChat on the date shown below.",
   "waitingMessageRejected": "Unfortunately, your account could not be approved at this time. Please contact support for more information.",
   "waitingAccessDateTitle": "Your Access Date",
-  "waitingAccessDatePremium": "As a {tier} member, you get early access on March 1st, 2026!",
+  "waitingAccessDatePremium": "As a {tier} member, you get early access before April 14th, 2026!",
   "@waitingAccessDatePremium": {
     "placeholders": {
       "tier": {
@@ -215,7 +215,7 @@
       }
     }
   },
-  "waitingAccessDateBasic": "Your access will begin on March 15th, 2026",
+  "waitingAccessDateBasic": "Your access will begin on April 14th, 2026",
   "waitingCountdownTitle": "Countdown to Launch",
   "waitingDaysRemaining": "{days} days",
   "@waitingDaysRemaining": {
@@ -252,7 +252,7 @@
   "accountPendingApproval": "Account Pending Approval",
   "accountApproved": "Account Approved",
   "accountRejected": "Account Rejected",
-  "upgradeForEarlyAccess": "Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!",
+  "upgradeForEarlyAccess": "Upgrade to Silver, Gold, or Platinum for early access before April 14th, 2026!",
   "waitingStayTuned": "Stay tuned! We'll notify you when it's time to start connecting.",
   "waitingNotificationEnabled": "Notifications enabled - we'll let you know when you can access the app!",
   "enableNotifications": "Enable Notifications",

@@ -566,11 +566,47 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         ))
         .orderBy('lastMessageAt', descending: true)
         .snapshots()
-        .map((snapshot) {
-      return snapshot.docs
+        .asyncMap((snapshot) async {
+      final conversations = snapshot.docs
           .map((doc) => ConversationModel.fromFirestore(doc))
           .toList();
+
+      // Filter out conversations with blocked users
+      final blockedUserIds = await _getBlockedUserIds(userId);
+      if (blockedUserIds.isEmpty) return conversations;
+
+      return conversations.where((conv) {
+        final otherUserId = conv.userId1 == userId ? conv.userId2 : conv.userId1;
+        return !blockedUserIds.contains(otherUserId);
+      }).toList();
     });
+  }
+
+  /// Get all blocked user IDs (bidirectional) for filtering
+  Future<Set<String>> _getBlockedUserIds(String userId) async {
+    final Set<String> blockedIds = {};
+
+    final blockedByMe = await firestore
+        .collection('blocked_users')
+        .where('blockerId', isEqualTo: userId)
+        .get();
+
+    for (final doc in blockedByMe.docs) {
+      final blockedUserId = doc.data()['blockedUserId'] as String?;
+      if (blockedUserId != null) blockedIds.add(blockedUserId);
+    }
+
+    final blockedMe = await firestore
+        .collection('blocked_users')
+        .where('blockedUserId', isEqualTo: userId)
+        .get();
+
+    for (final doc in blockedMe.docs) {
+      final blockerId = doc.data()['blockerId'] as String?;
+      if (blockerId != null) blockedIds.add(blockerId);
+    }
+
+    return blockedIds;
   }
 
   @override
@@ -961,8 +997,51 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       await firestore.collection('users').doc(blockerId).update({
         'blockedUsers': FieldValue.arrayUnion([blockedUserId]),
       });
+
+      // Deactivate any active match between the two users
+      await _deactivateMatchBetweenUsers(blockerId, blockedUserId);
     } catch (e) {
       throw Exception('Failed to block user: $e');
+    }
+  }
+
+  /// Deactivate any active match between two users
+  Future<void> _deactivateMatchBetweenUsers(String userId1, String userId2) async {
+    try {
+      // Check both orderings of userId1/userId2
+      final query1 = await firestore
+          .collection('matches')
+          .where('userId1', isEqualTo: userId1)
+          .where('userId2', isEqualTo: userId2)
+          .where('isActive', isEqualTo: true)
+          .get();
+
+      for (final doc in query1.docs) {
+        await doc.reference.update({
+          'isActive': false,
+          'unmatchedAt': FieldValue.serverTimestamp(),
+          'unmatchedBy': userId1,
+          'unmatchReason': 'blocked',
+        });
+      }
+
+      final query2 = await firestore
+          .collection('matches')
+          .where('userId1', isEqualTo: userId2)
+          .where('userId2', isEqualTo: userId1)
+          .where('isActive', isEqualTo: true)
+          .get();
+
+      for (final doc in query2.docs) {
+        await doc.reference.update({
+          'isActive': false,
+          'unmatchedAt': FieldValue.serverTimestamp(),
+          'unmatchedBy': userId1,
+          'unmatchReason': 'blocked',
+        });
+      }
+    } catch (e) {
+      // Silently fail match deactivation - the block itself is more important
     }
   }
 
@@ -1063,6 +1142,13 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'reportCount': FieldValue.increment(1),
         'lastReportedAt': Timestamp.fromDate(DateTime.now()),
       });
+
+      // Auto-block the reported user to prevent further interaction
+      await blockUser(
+        blockerId: reporterId,
+        blockedUserId: reportedUserId,
+        reason: 'Auto-blocked after report: $reason',
+      );
     } catch (e) {
       throw Exception('Failed to report user: $e');
     }

@@ -204,7 +204,13 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
             limitType: UsageLimitType.messages,
           );
         }
-        // Firestore stream delivers the real message via _onConversationLoaded
+        // Immediately clear ChatSending state; Firestore stream will update messages
+        emit(ChatLoaded(
+          conversation: currentState.conversation,
+          messages: currentState.messages,
+          currentUserId: currentState.currentUserId,
+          otherUserId: currentState.otherUserId,
+        ));
       },
     );
   }
@@ -590,7 +596,13 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to send reply: ${failure.toString()}'));
       },
       (_) {
-        // Firestore stream delivers the real message via _onConversationLoaded
+        // Immediately clear ChatSending state; Firestore stream will update messages
+        emit(ChatLoaded(
+          conversation: currentState.conversation,
+          messages: currentState.messages,
+          currentUserId: currentState.currentUserId,
+          otherUserId: currentState.otherUserId,
+        ));
       },
     );
   }

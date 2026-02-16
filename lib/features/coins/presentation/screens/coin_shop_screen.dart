@@ -54,7 +54,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     _currentTier = widget.currentTier ?? SubscriptionTier.basic;
     _tabController = TabController(length: 3, vsync: this);
     context.read<CoinBloc>().add(const LoadAvailablePackages());
-    context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
 
     // Load actual tier from Firestore
     _loadCurrentTierFromFirestore();
@@ -266,11 +265,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       listener: (context, state) {
         if (state is CoinBalanceLoaded) {
           setState(() {
-            _currentCoinBalance = state.balance.totalCoins;
+            _currentCoinBalance = state.balance.availableCoins;
           });
         } else if (state is CoinBalanceUpdated) {
           setState(() {
-            _currentCoinBalance = state.balance.totalCoins;
+            _currentCoinBalance = state.balance.availableCoins;
           });
         }
       },

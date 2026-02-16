@@ -63,13 +63,13 @@ class UserAccessData {
     final tierString = data['membershipTier'] as String? ?? 'basic';
     final tier = SubscriptionTierExtension.fromString(tierString);
 
-    // Determine access date from stored value or default to general access
+    // Determine access date from stored value or default based on tier
     DateTime accessDate;
     if (data['accessDate'] != null) {
       accessDate = (data['accessDate'] as Timestamp).toDate();
     } else {
-      // Default to general access date (March 16, 2026)
-      accessDate = AccessControlService.generalAccessDate;
+      // Default: use tier-based access date, or general access (April 14, 2026)
+      accessDate = AccessControlService.getAccessDateForSubscriptionTier(tier);
     }
 
     return UserAccessData(
@@ -160,15 +160,39 @@ class AccessControlService {
   final auth.FirebaseAuth _auth;
   final EarlyAccessService _earlyAccessService;
 
-  // MVP Release dates
-  // Early access (users in CSV list): March 1st, 2026
-  // General access (all others): March 16th, 2026
-  static final DateTime earlyAccessDate = DateTime(2026, 3, 1);  // March 1st, 2026
-  static final DateTime generalAccessDate = DateTime(2026, 3, 16); // March 16th, 2026
+  // Release dates — Official launch: April 14, 2026
+  // Tier-based early access:
+  //   Platinum & early access list: March 14, 2026 (1 month early)
+  //   Gold:                         March 28, 2026 (2.5 weeks early)
+  //   Silver:                       April  7, 2026 (1 week early)
+  //   Free/Basic:                   April 14, 2026 (official release)
+  static final DateTime platinumAccessDate = DateTime(2026, 3, 14);
+  static final DateTime goldAccessDate = DateTime(2026, 3, 28);
+  static final DateTime silverAccessDate = DateTime(2026, 4, 7);
+  static final DateTime generalAccessDate = DateTime(2026, 4, 14); // Official release
+
+  // Early access list users get the same date as Platinum
+  static final DateTime earlyAccessDate = platinumAccessDate;
 
   // Legacy aliases for backwards compatibility
   static DateTime get premiumAccessDate => earlyAccessDate;
   static DateTime get basicAccessDate => generalAccessDate;
+
+  /// Get access date for a subscription tier
+  static DateTime getAccessDateForSubscriptionTier(SubscriptionTier tier) {
+    switch (tier) {
+      case SubscriptionTier.test:
+        return DateTime.now().subtract(const Duration(days: 1)); // Immediate
+      case SubscriptionTier.platinum:
+        return platinumAccessDate;
+      case SubscriptionTier.gold:
+        return goldAccessDate;
+      case SubscriptionTier.silver:
+        return silverAccessDate;
+      case SubscriptionTier.basic:
+        return generalAccessDate;
+    }
+  }
 
   AccessControlService({
     FirebaseFirestore? firestore,
@@ -210,8 +234,9 @@ class AccessControlService {
 
   /// Initialize user access data on registration
   /// Access date is determined by:
-  /// 1. Email in early access CSV list -> March 1, 2026
-  /// 2. All other users -> March 16, 2026
+  /// 1. Email in early access CSV list -> March 14, 2026 (same as Platinum)
+  /// 2. Subscription tier -> Platinum March 14, Gold March 28, Silver April 7
+  /// 3. All other users -> April 14, 2026 (official release)
   Future<void> initializeUserAccess({
     required String userId,
     String? email,
@@ -223,8 +248,13 @@ class AccessControlService {
       hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
     }
 
-    // Determine access date based on early access list (not tier anymore)
-    final accessDate = hasEarlyAccess ? earlyAccessDate : generalAccessDate;
+    // Determine access date: early access list takes priority, then tier-based
+    final DateTime accessDate;
+    if (hasEarlyAccess) {
+      accessDate = earlyAccessDate; // Same as Platinum
+    } else {
+      accessDate = getAccessDateForSubscriptionTier(tier);
+    }
 
     await _firestore.collection('users').doc(userId).set({
       'approvalStatus': ApprovalStatus.pending.name,
@@ -236,13 +266,26 @@ class AccessControlService {
     }, SetOptions(merge: true));
   }
 
-  /// Check and update user's access date based on early access list
+  /// Check and update user's access date based on early access list and tier
   /// Call this when user logs in to ensure access date is current
   Future<void> refreshUserAccessDate(String userId, String? email) async {
-    if (email == null) return;
+    // Get current user's tier
+    final userDoc = await _firestore.collection('users').doc(userId).get();
+    final tierString = userDoc.data()?['membershipTier'] as String? ?? 'basic';
+    final tier = SubscriptionTierExtension.fromString(tierString);
 
-    final hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
-    final accessDate = hasEarlyAccess ? earlyAccessDate : generalAccessDate;
+    bool hasEarlyAccess = false;
+    if (email != null) {
+      hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
+    }
+
+    // Use earliest available date (early access or tier-based)
+    final DateTime accessDate;
+    if (hasEarlyAccess) {
+      accessDate = earlyAccessDate;
+    } else {
+      accessDate = getAccessDateForSubscriptionTier(tier);
+    }
 
     await _firestore.collection('users').doc(userId).update({
       'accessDate': Timestamp.fromDate(accessDate),
@@ -251,11 +294,23 @@ class AccessControlService {
     });
   }
 
-  /// Update user's membership tier
-  /// Note: Access date is now based on early access list, not tier
+  /// Update user's membership tier and recalculate access date
   Future<void> updateMembershipTier(String userId, SubscriptionTier tier) async {
+    // Get current early access status
+    final userDoc = await _firestore.collection('users').doc(userId).get();
+    final hasEarlyAccess = userDoc.data()?['hasEarlyAccess'] as bool? ?? false;
+
+    // Recalculate access date: early access list takes priority, then tier-based
+    final DateTime accessDate;
+    if (hasEarlyAccess) {
+      accessDate = earlyAccessDate;
+    } else {
+      accessDate = getAccessDateForSubscriptionTier(tier);
+    }
+
     await _firestore.collection('users').doc(userId).update({
       'membershipTier': tier.name.toLowerCase(),
+      'accessDate': Timestamp.fromDate(accessDate),
       'updatedAt': FieldValue.serverTimestamp(),
     });
   }
@@ -274,7 +329,7 @@ class AccessControlService {
     return now.isBefore(generalAccessDate);
   }
 
-  /// Check if early access period has started (March 1, 2026)
+  /// Check if early access period has started (March 14, 2026 - April 14, 2026)
   bool get isEarlyAccessPeriod {
     final now = DateTime.now();
     return now.isAfter(earlyAccessDate) && now.isBefore(generalAccessDate);
@@ -290,10 +345,10 @@ class AccessControlService {
     return _earlyAccessService.currentUserHasEarlyAccess();
   }
 
-  /// Get access date for a given tier (legacy - now based on early access list)
-  @Deprecated('Use getAccessDateForCurrentUser() instead. Access is now based on early access list.')
+  /// Get access date for a given tier
+  @Deprecated('Use getAccessDateForSubscriptionTier() instead.')
   DateTime getAccessDateForTier(SubscriptionTier tier) {
-    return generalAccessDate;
+    return getAccessDateForSubscriptionTier(tier);
   }
 
   /// Get early access service for admin operations

@@ -143,8 +143,8 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                         const SizedBox(width: 8),
                         Text(
                           hasEarlyAccess
-                              ? 'VIP Early Access: March 1st'
-                              : 'Launch Date: March 15th',
+                              ? 'VIP Early Access'
+                              : 'Launch Date: April 14th',
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
@@ -363,7 +363,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Upgrade to VIP and get access on March 1st instead of March 15th!',
+                  'Upgrade your tier to get earlier access before April 14th!',
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.white.withOpacity(0.8),

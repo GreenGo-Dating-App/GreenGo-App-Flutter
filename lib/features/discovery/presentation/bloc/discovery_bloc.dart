@@ -5,6 +5,7 @@ import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/get_discovery_stack.dart';
 import '../../domain/usecases/record_swipe.dart';
+import '../../domain/usecases/undo_swipe.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import 'discovery_event.dart';
 import 'discovery_state.dart';
@@ -16,6 +17,7 @@ import 'discovery_state.dart';
 class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   final GetDiscoveryStack getDiscoveryStack;
   final RecordSwipe recordSwipe;
+  final UndoSwipe undoSwipe;
   final UsageLimitService _usageLimitService;
 
   // Queue management
@@ -25,14 +27,21 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   String? _currentUserId;
   MatchPreferences? _currentPreferences;
 
+  // Rewind tracking (single-level undo)
+  DiscoveryCard? _lastSwipedCard;
+  SwipeActionType? _lastSwipeType;
+  bool _lastSwipeCreatedMatch = false;
+
   DiscoveryBloc({
     required this.getDiscoveryStack,
     required this.recordSwipe,
+    required this.undoSwipe,
     UsageLimitService? usageLimitService,
   })  : _usageLimitService = usageLimitService ?? UsageLimitService(),
         super(const DiscoveryInitial()) {
     on<DiscoveryStackLoadRequested>(_onLoadStack);
     on<DiscoverySwipeRecorded>(_onSwipeRecorded);
+    on<DiscoveryRewindRequested>(_onRewind);
     on<DiscoveryStackRefreshRequested>(_onRefreshStack);
     on<DiscoveryMoreCandidatesRequested>(_onLoadMore);
     on<DiscoveryPrefetchRequested>(_onPrefetch);
@@ -166,6 +175,11 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       );
     }
 
+    // Track last swiped card for rewind
+    _lastSwipedCard = currentState.cards[currentState.currentIndex];
+    _lastSwipeType = event.actionType;
+    _lastSwipeCreatedMatch = swipeAction.createdMatch;
+
     // Move to next card
     final nextIndex = currentState.currentIndex + 1;
     final remainingCards = currentState.cards.length - nextIndex;
@@ -207,6 +221,80 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         ));
       }
     }
+  }
+
+  Future<void> _onRewind(
+    DiscoveryRewindRequested event,
+    Emitter<DiscoveryState> emit,
+  ) async {
+    // Get current cards and index from whatever state we're in
+    List<DiscoveryCard> cards;
+    int currentIndex;
+
+    if (state is DiscoveryLoaded) {
+      cards = (state as DiscoveryLoaded).cards;
+      currentIndex = (state as DiscoveryLoaded).currentIndex;
+    } else if (state is DiscoveryRewindUnavailable) {
+      cards = (state as DiscoveryRewindUnavailable).cards;
+      currentIndex = (state as DiscoveryRewindUnavailable).currentIndex;
+    } else {
+      return;
+    }
+
+    // Check if there's a previous swipe to undo
+    if (_lastSwipedCard == null) {
+      emit(DiscoveryRewindUnavailable(
+        reason: 'no_previous',
+        cards: cards,
+        currentIndex: currentIndex,
+      ));
+      return;
+    }
+
+    // Can't undo if last swipe created a match
+    if (_lastSwipeCreatedMatch) {
+      emit(DiscoveryRewindUnavailable(
+        reason: 'match_created',
+        cards: cards,
+        currentIndex: currentIndex,
+      ));
+      return;
+    }
+
+    // Check membership permission
+    final rules = event.membershipRules;
+    if (rules != null && !rules.canUndoSwipe) {
+      emit(DiscoveryRewindUnavailable(
+        reason: 'not_allowed',
+        cards: cards,
+        currentIndex: currentIndex,
+      ));
+      return;
+    }
+
+    // Delete the swipe record from Firestore
+    final result = await undoSwipe(UndoSwipeParams(
+      userId: event.userId,
+      targetUserId: _lastSwipedCard!.userId,
+    ));
+
+    if (result.isLeft()) {
+      // Failed to undo — stay on current state
+      return;
+    }
+
+    // Decrement index to go back to the previous card
+    final rewindedIndex = currentIndex - 1;
+
+    // Clear rewind tracking (prevent double-rewind)
+    _lastSwipedCard = null;
+    _lastSwipeType = null;
+    _lastSwipeCreatedMatch = false;
+
+    emit(DiscoveryLoaded(
+      cards: cards,
+      currentIndex: rewindedIndex < 0 ? 0 : rewindedIndex,
+    ));
   }
 
   /// Trigger prefetch for more profiles

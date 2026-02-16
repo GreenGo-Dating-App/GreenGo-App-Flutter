@@ -102,11 +102,23 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             _errorMessage = "That's your own profile!";
           });
         } else {
-          setState(() {
-            _isSearching = false;
-            _hasSearched = true;
-            _foundProfile = profile;
-          });
+          // Check if either user has blocked the other
+          final isBlocked = await _isUserBlocked(widget.currentUserId, profile.userId);
+          if (!mounted) return;
+
+          if (isBlocked) {
+            setState(() {
+              _isSearching = false;
+              _hasSearched = true;
+              _errorMessage = 'No profile found with @$nickname';
+            });
+          } else {
+            setState(() {
+              _isSearching = false;
+              _hasSearched = true;
+              _foundProfile = profile;
+            });
+          }
         }
       }
     } catch (e) {
@@ -116,6 +128,30 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         _hasSearched = true;
         _errorMessage = 'Error searching. Please try again.';
       });
+    }
+  }
+
+  /// Check if either user has blocked the other (bidirectional)
+  Future<bool> _isUserBlocked(String userId, String otherUserId) async {
+    try {
+      final blockQuery = await FirebaseFirestore.instance
+          .collection('blocked_users')
+          .where('blockerId', whereIn: [userId, otherUserId])
+          .get();
+
+      for (final doc in blockQuery.docs) {
+        final data = doc.data();
+        final blockerId = data['blockerId'] as String;
+        final blockedUserId = data['blockedUserId'] as String;
+
+        if ((blockerId == userId && blockedUserId == otherUserId) ||
+            (blockerId == otherUserId && blockedUserId == userId)) {
+          return true;
+        }
+      }
+      return false;
+    } catch (e) {
+      return false;
     }
   }
 

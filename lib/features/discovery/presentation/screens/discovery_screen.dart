@@ -10,6 +10,9 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../notifications/domain/entities/notification.dart';
 import '../../../notifications/domain/repositories/notification_repository.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
+import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../bloc/discovery_bloc.dart';
 import '../bloc/discovery_event.dart';
 import '../bloc/discovery_state.dart';
@@ -94,6 +97,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             if (state is DiscoverySwipeCompleted && state.createdMatch) {
               _showMatchDialog(context, state);
             }
+            if (state is DiscoveryRewindUnavailable) {
+              _handleRewindUnavailable(context, state.reason);
+            }
           },
           builder: (context, state) {
             if (state is DiscoveryLoading) {
@@ -108,18 +114,18 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               return _buildEmptyState(context);
             }
 
-            if (state is DiscoveryLoaded || state is DiscoverySwiping) {
-              final loadedState = state is DiscoveryLoaded
-                  ? state
-                  : (state as DiscoverySwiping);
-
+            if (state is DiscoveryLoaded || state is DiscoverySwiping || state is DiscoveryRewindUnavailable) {
               final cards = state is DiscoveryLoaded
                   ? state.cards
-                  : (state as DiscoverySwiping).cards;
+                  : state is DiscoverySwiping
+                      ? state.cards
+                      : (state as DiscoveryRewindUnavailable).cards;
 
               final currentIndex = state is DiscoveryLoaded
                   ? state.currentIndex
-                  : (state as DiscoverySwiping).currentIndex;
+                  : state is DiscoverySwiping
+                      ? state.currentIndex
+                      : (state as DiscoveryRewindUnavailable).currentIndex;
 
               if (currentIndex >= cards.length) {
                 return _buildEmptyState(context);
@@ -326,6 +332,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   Widget _buildActionButtons(BuildContext context, card, bool enabled) {
     return SwipeButtons(
       enabled: enabled,
+      onRewind: () => _handleRewind(context),
       onPass: () => _handleSwipe(context, card, SwipeDirection.left),
       onSkip: () => _handleSwipe(context, card, SwipeDirection.down),
       onSuperLike: () => _handleSwipe(context, card, SwipeDirection.up),
@@ -361,6 +368,52 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     // Send notification to target user when super liked
     if (actionType == SwipeActionType.superLike) {
       _sendSuperLikeNotification(card.userId, card.displayName);
+    }
+  }
+
+  void _handleRewind(BuildContext context) {
+    // Get membership rules based on user's profile tier
+    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final rules = MembershipRules.getDefaultsForTier(tier);
+
+    context.read<DiscoveryBloc>().add(
+          DiscoveryRewindRequested(
+            userId: userId,
+            membershipRules: rules,
+            membershipTier: tier,
+          ),
+        );
+  }
+
+  void _handleRewindUnavailable(BuildContext context, String reason) {
+    switch (reason) {
+      case 'not_allowed':
+        // Show upgrade dialog — navigate to subscription screen
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => BlocProvider(
+              create: (context) => di.sl<SubscriptionBloc>(),
+              child: const SubscriptionSelectionScreen(),
+            ),
+          ),
+        );
+        break;
+      case 'no_previous':
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('No previous profile to rewind'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+        break;
+      case 'match_created':
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Can't undo — you already matched!"),
+            duration: Duration(seconds: 2),
+          ),
+        );
+        break;
     }
   }
 

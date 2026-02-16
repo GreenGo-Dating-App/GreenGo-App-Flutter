@@ -113,6 +113,19 @@ class DiscoverySwipeLimitReached extends DiscoveryState {
   });
 }
 
+/// Rewind unavailable state
+class DiscoveryRewindUnavailable extends DiscoveryState {
+  final String reason; // 'no_previous', 'match_created', 'not_allowed'
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+
+  const DiscoveryRewindUnavailable({
+    required this.reason,
+    required this.cards,
+    required this.currentIndex,
+  });
+}
+
 /// Super like limit reached state
 class DiscoverySuperLikeLimitReached extends DiscoveryState {
   final List<DiscoveryCard> cards;

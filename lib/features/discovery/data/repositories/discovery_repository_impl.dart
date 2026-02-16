@@ -252,4 +252,22 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       return Left(ServerFailure());
     }
   }
+
+  @override
+  Future<Either<Failure, void>> undoSwipe({
+    required String userId,
+    required String targetUserId,
+  }) async {
+    try {
+      await remoteDataSource.undoSwipe(
+        userId: userId,
+        targetUserId: targetUserId,
+      );
+      return const Right(null);
+    } on ServerException {
+      return Left(ServerFailure());
+    } catch (e) {
+      return Left(ServerFailure());
+    }
+  }
 }

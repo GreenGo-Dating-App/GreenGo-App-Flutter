@@ -1599,4 +1599,392 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get xTwitter => 'X (Twitter)';
+
+  @override
+  String chatMessageBlockedContains(String violations) {
+    return 'Nachricht blockiert: Enthält $violations. Zu Ihrer Sicherheit ist das Teilen persönlicher Kontaktdaten nicht erlaubt.';
+  }
+
+  @override
+  String get chatReportMessage => 'Nachricht melden';
+
+  @override
+  String get chatWhyReportMessage => 'Warum melden Sie diese Nachricht?';
+
+  @override
+  String get chatReportReasonHarassment => 'Belästigung oder Mobbing';
+
+  @override
+  String get chatReportReasonSpam => 'Spam oder Betrug';
+
+  @override
+  String get chatReportReasonInappropriate => 'Unangemessener Inhalt';
+
+  @override
+  String get chatReportReasonPersonalInfo =>
+      'Teilen persönlicher Informationen';
+
+  @override
+  String get chatReportReasonThreatening => 'Bedrohliches Verhalten';
+
+  @override
+  String get chatReportReasonFakeProfile => 'Falsches Profil / Catfishing';
+
+  @override
+  String get chatReportReasonUnderage => 'Minderjähriger Benutzer';
+
+  @override
+  String get chatReportReasonOther => 'Sonstiges';
+
+  @override
+  String get chatMessageReported =>
+      'Nachricht gemeldet. Wir werden sie in Kürze überprüfen.';
+
+  @override
+  String chatFailedToReportMessage(String error) {
+    return 'Nachricht konnte nicht gemeldet werden: $error';
+  }
+
+  @override
+  String get chatSendAttachment => 'Anhang senden';
+
+  @override
+  String get chatAttachGallery => 'Galerie';
+
+  @override
+  String get chatAttachCamera => 'Kamera';
+
+  @override
+  String get chatAttachVideo => 'Video';
+
+  @override
+  String get chatAttachRecord => 'Aufnehmen';
+
+  @override
+  String chatFailedToPickImage(String error) {
+    return 'Bild konnte nicht ausgewählt werden: $error';
+  }
+
+  @override
+  String chatFailedToPickVideo(String error) {
+    return 'Video konnte nicht ausgewählt werden: $error';
+  }
+
+  @override
+  String chatFailedToUploadImage(String error) {
+    return 'Bild konnte nicht hochgeladen werden: $error';
+  }
+
+  @override
+  String get chatVideoTooLarge => 'Video zu groß. Maximale Größe ist 50MB.';
+
+  @override
+  String chatFailedToUploadVideo(String error) {
+    return 'Video konnte nicht hochgeladen werden: $error';
+  }
+
+  @override
+  String get chatMediaLimitReached => 'Medienlimit erreicht';
+
+  @override
+  String chatSayHiTo(String name) {
+    return 'Sag Hallo zu $name!';
+  }
+
+  @override
+  String get chatSendMessageToStart =>
+      'Sende eine Nachricht, um die Unterhaltung zu beginnen';
+
+  @override
+  String get chatTyping => 'tippt...';
+
+  @override
+  String get chatDisableTranslation => 'Übersetzung deaktivieren';
+
+  @override
+  String get chatEnableTranslation => 'Übersetzung aktivieren';
+
+  @override
+  String get chatTranslationEnabled => 'Übersetzung aktiviert';
+
+  @override
+  String get chatTranslationDisabled => 'Übersetzung deaktiviert';
+
+  @override
+  String get chatUploading => 'Wird hochgeladen...';
+
+  @override
+  String get chatOptions => 'Chat-Optionen';
+
+  @override
+  String get chatDeleteForMe => 'Chat für mich löschen';
+
+  @override
+  String get chatDeleteForBoth => 'Chat für beide löschen';
+
+  @override
+  String chatBlockUser(String name) {
+    return '$name blockieren';
+  }
+
+  @override
+  String chatReportUser(String name) {
+    return '$name melden';
+  }
+
+  @override
+  String get chatDeleteChat => 'Chat löschen';
+
+  @override
+  String get chatDeleteChatForMeMessage =>
+      'Dies löscht den Chat nur von deinem Gerät. Die andere Person sieht die Nachrichten weiterhin.';
+
+  @override
+  String get chatDeleteChatForEveryone => 'Chat für alle löschen';
+
+  @override
+  String chatDeleteChatForBothMessage(String name) {
+    return 'Dies löscht alle Nachrichten für dich und $name. Diese Aktion kann nicht rückgängig gemacht werden.';
+  }
+
+  @override
+  String get chatDeleteForEveryone => 'Für alle löschen';
+
+  @override
+  String get chatBlockUserTitle => 'Benutzer blockieren';
+
+  @override
+  String chatBlockUserMessage(String name) {
+    return 'Bist du sicher, dass du $name blockieren möchtest? Sie können dich nicht mehr kontaktieren.';
+  }
+
+  @override
+  String get chatBlock => 'Blockieren';
+
+  @override
+  String get chatCannotBlockAdmin =>
+      'Du kannst keinen Administrator blockieren.';
+
+  @override
+  String chatUserBlocked(String name) {
+    return '$name wurde blockiert';
+  }
+
+  @override
+  String get chatReportUserTitle => 'Benutzer melden';
+
+  @override
+  String chatWhyReportUser(String name) {
+    return 'Warum meldest du $name?';
+  }
+
+  @override
+  String get chatCannotReportAdmin => 'Du kannst keinen Administrator melden.';
+
+  @override
+  String get chatUserReported =>
+      'Benutzer gemeldet. Wir werden deinen Bericht in Kürze überprüfen.';
+
+  @override
+  String chatReplyingTo(String name) {
+    return 'Antwort an $name';
+  }
+
+  @override
+  String get chatYou => 'Du';
+
+  @override
+  String get chatUnableToForward =>
+      'Nachricht kann nicht weitergeleitet werden';
+
+  @override
+  String get chatSearchByNameOrNickname => 'Nach Name oder @Spitzname suchen';
+
+  @override
+  String get chatNoMessagesYet => 'Noch keine Nachrichten';
+
+  @override
+  String get chatStartSwipingToChat =>
+      'Wische und matche, um mit Leuten zu chatten!';
+
+  @override
+  String get chatMessageOriginal => 'Original';
+
+  @override
+  String get chatMessageTranslated => 'Übersetzt';
+
+  @override
+  String get chatMessageStarred => 'Nachricht markiert';
+
+  @override
+  String get chatMessageUnstarred => 'Markierung entfernt';
+
+  @override
+  String get chatMessageOptions => 'Nachrichtenoptionen';
+
+  @override
+  String get chatReply => 'Antworten';
+
+  @override
+  String get chatReplyToMessage => 'Auf diese Nachricht antworten';
+
+  @override
+  String get chatForward => 'Weiterleiten';
+
+  @override
+  String get chatForwardToChat => 'An einen anderen Chat weiterleiten';
+
+  @override
+  String get chatStarMessage => 'Nachricht markieren';
+
+  @override
+  String get chatUnstarMessage => 'Markierung entfernen';
+
+  @override
+  String get chatAddToStarred => 'Zu markierten Nachrichten hinzufügen';
+
+  @override
+  String get chatRemoveFromStarred => 'Aus markierten Nachrichten entfernen';
+
+  @override
+  String get chatReportInappropriate => 'Unangemessenen Inhalt melden';
+
+  @override
+  String get chatVideoPlayer => 'Videoplayer';
+
+  @override
+  String get chatFailedToLoadImage => 'Bild konnte nicht geladen werden';
+
+  @override
+  String get chatLoadingVideo => 'Video wird geladen...';
+
+  @override
+  String get chatPreviewVideo => 'Videovorschau';
+
+  @override
+  String get chatPreviewImage => 'Bildvorschau';
+
+  @override
+  String get chatAddCaption => 'Beschriftung hinzufügen...';
+
+  @override
+  String get chatSend => 'Senden';
+
+  @override
+  String get chatSupportTitle => 'GreenGo Support';
+
+  @override
+  String get chatSupportStatusOpen => 'Offen';
+
+  @override
+  String get chatSupportStatusPending => 'Ausstehend';
+
+  @override
+  String get chatSupportStatusResolved => 'Gelöst';
+
+  @override
+  String get chatSupportStatusClosed => 'Geschlossen';
+
+  @override
+  String get chatSupportStatusDefault => 'Support';
+
+  @override
+  String chatSupportAgent(String name) {
+    return 'Agent: $name';
+  }
+
+  @override
+  String get chatSupportWelcome => 'Willkommen beim Support';
+
+  @override
+  String get chatSupportStartMessage =>
+      'Sende eine Nachricht, um die Unterhaltung zu beginnen.\nUnser Team wird so schnell wie möglich antworten.';
+
+  @override
+  String get chatSupportTicketStart => 'Ticket-Anfang';
+
+  @override
+  String get chatSupportTicketCreated => 'Ticket erstellt';
+
+  @override
+  String get chatSupportErrorLoading => 'Fehler beim Laden der Nachrichten';
+
+  @override
+  String chatSupportFailedToSend(String error) {
+    return 'Nachricht konnte nicht gesendet werden: $error';
+  }
+
+  @override
+  String get chatSupportTicketResolved => 'Dieses Ticket wurde gelöst';
+
+  @override
+  String get chatSupportReopenTicket =>
+      'Brauchst du weitere Hilfe? Tippe, um erneut zu öffnen';
+
+  @override
+  String get chatSupportTicketReopened =>
+      'Ticket erneut geöffnet. Du kannst jetzt eine Nachricht senden.';
+
+  @override
+  String chatSupportFailedToReopen(String error) {
+    return 'Ticket konnte nicht erneut geöffnet werden: $error';
+  }
+
+  @override
+  String get chatSupportAddCaptionOptional =>
+      'Beschriftung hinzufügen (optional)...';
+
+  @override
+  String get chatSupportTypeMessage => 'Nachricht eingeben...';
+
+  @override
+  String get chatSupportAddAttachment => 'Anhang hinzufügen';
+
+  @override
+  String get chatSupportTicketInfo => 'Ticket-Informationen';
+
+  @override
+  String get chatSupportSubject => 'Betreff';
+
+  @override
+  String get chatSupportCategory => 'Kategorie';
+
+  @override
+  String get chatSupportStatus => 'Status';
+
+  @override
+  String get chatSupportAgentLabel => 'Agent';
+
+  @override
+  String get chatSupportTicketId => 'Ticket-ID';
+
+  @override
+  String get chatSupportGeneralSupport => 'Allgemeiner Support';
+
+  @override
+  String get chatSupportGeneral => 'Allgemein';
+
+  @override
+  String get chatSupportWaitingAssignment => 'Warte auf Zuweisung';
+
+  @override
+  String get chatSupportClose => 'Schließen';
+
+  @override
+  String get chatSupportJustNow => 'Gerade eben';
+
+  @override
+  String chatSupportMinutesAgo(int minutes) {
+    return 'vor ${minutes}Min.';
+  }
+
+  @override
+  String chatSupportHoursAgo(int hours) {
+    return 'vor ${hours}Std.';
+  }
+
+  @override
+  String chatSupportDaysAgo(int days) {
+    return 'vor ${days}T.';
+  }
 }

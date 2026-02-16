@@ -1166,13 +1166,13 @@ abstract class AppLocalizations {
   /// No description provided for @waitingAccessDatePremium.
   ///
   /// In en, this message translates to:
-  /// **'As a {tier} member, you get early access on March 1st, 2026!'**
+  /// **'As a {tier} member, you get early access before April 14th, 2026!'**
   String waitingAccessDatePremium(String tier);
 
   /// No description provided for @waitingAccessDateBasic.
   ///
   /// In en, this message translates to:
-  /// **'Your access will begin on March 15th, 2026'**
+  /// **'Your access will begin on April 14th, 2026'**
   String get waitingAccessDateBasic;
 
   /// No description provided for @waitingCountdownTitle.
@@ -1226,7 +1226,7 @@ abstract class AppLocalizations {
   /// No description provided for @upgradeForEarlyAccess.
   ///
   /// In en, this message translates to:
-  /// **'Upgrade to Silver, Gold, or Platinum for early access on March 1st, 2026!'**
+  /// **'Upgrade to Silver, Gold, or Platinum for early access before April 14th, 2026!'**
   String get upgradeForEarlyAccess;
 
   /// No description provided for @waitingStayTuned.
@@ -2962,6 +2962,678 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'X (Twitter)'**
   String get xTwitter;
+
+  /// No description provided for @chatMessageBlockedContains.
+  ///
+  /// In en, this message translates to:
+  /// **'Message blocked: Contains {violations}. For your safety, sharing personal contact details is not allowed.'**
+  String chatMessageBlockedContains(String violations);
+
+  /// No description provided for @chatReportMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Report Message'**
+  String get chatReportMessage;
+
+  /// No description provided for @chatWhyReportMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you reporting this message?'**
+  String get chatWhyReportMessage;
+
+  /// No description provided for @chatReportReasonHarassment.
+  ///
+  /// In en, this message translates to:
+  /// **'Harassment or bullying'**
+  String get chatReportReasonHarassment;
+
+  /// No description provided for @chatReportReasonSpam.
+  ///
+  /// In en, this message translates to:
+  /// **'Spam or scam'**
+  String get chatReportReasonSpam;
+
+  /// No description provided for @chatReportReasonInappropriate.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content'**
+  String get chatReportReasonInappropriate;
+
+  /// No description provided for @chatReportReasonPersonalInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing personal information'**
+  String get chatReportReasonPersonalInfo;
+
+  /// No description provided for @chatReportReasonThreatening.
+  ///
+  /// In en, this message translates to:
+  /// **'Threatening behavior'**
+  String get chatReportReasonThreatening;
+
+  /// No description provided for @chatReportReasonFakeProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Fake profile / Catfishing'**
+  String get chatReportReasonFakeProfile;
+
+  /// No description provided for @chatReportReasonUnderage.
+  ///
+  /// In en, this message translates to:
+  /// **'Underage user'**
+  String get chatReportReasonUnderage;
+
+  /// No description provided for @chatReportReasonOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get chatReportReasonOther;
+
+  /// No description provided for @chatMessageReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Message reported. We will review it shortly.'**
+  String get chatMessageReported;
+
+  /// No description provided for @chatFailedToReportMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to report message: {error}'**
+  String chatFailedToReportMessage(String error);
+
+  /// No description provided for @chatSendAttachment.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Attachment'**
+  String get chatSendAttachment;
+
+  /// No description provided for @chatAttachGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Gallery'**
+  String get chatAttachGallery;
+
+  /// No description provided for @chatAttachCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get chatAttachCamera;
+
+  /// No description provided for @chatAttachVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Video'**
+  String get chatAttachVideo;
+
+  /// No description provided for @chatAttachRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Record'**
+  String get chatAttachRecord;
+
+  /// No description provided for @chatFailedToPickImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to pick image: {error}'**
+  String chatFailedToPickImage(String error);
+
+  /// No description provided for @chatFailedToPickVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to pick video: {error}'**
+  String chatFailedToPickVideo(String error);
+
+  /// No description provided for @chatFailedToUploadImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload image: {error}'**
+  String chatFailedToUploadImage(String error);
+
+  /// No description provided for @chatVideoTooLarge.
+  ///
+  /// In en, this message translates to:
+  /// **'Video too large. Maximum size is 50MB.'**
+  String get chatVideoTooLarge;
+
+  /// No description provided for @chatFailedToUploadVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload video: {error}'**
+  String chatFailedToUploadVideo(String error);
+
+  /// No description provided for @chatMediaLimitReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Media Limit Reached'**
+  String get chatMediaLimitReached;
+
+  /// No description provided for @chatSayHiTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Say hi to {name}!'**
+  String chatSayHiTo(String name);
+
+  /// No description provided for @chatSendMessageToStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a message to start the conversation'**
+  String get chatSendMessageToStart;
+
+  /// No description provided for @chatTyping.
+  ///
+  /// In en, this message translates to:
+  /// **'typing...'**
+  String get chatTyping;
+
+  /// No description provided for @chatDisableTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Disable translation'**
+  String get chatDisableTranslation;
+
+  /// No description provided for @chatEnableTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable translation'**
+  String get chatEnableTranslation;
+
+  /// No description provided for @chatTranslationEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation enabled'**
+  String get chatTranslationEnabled;
+
+  /// No description provided for @chatTranslationDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation disabled'**
+  String get chatTranslationDisabled;
+
+  /// No description provided for @chatUploading.
+  ///
+  /// In en, this message translates to:
+  /// **'Uploading...'**
+  String get chatUploading;
+
+  /// No description provided for @chatOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Options'**
+  String get chatOptions;
+
+  /// No description provided for @chatDeleteForMe.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete chat for me'**
+  String get chatDeleteForMe;
+
+  /// No description provided for @chatDeleteForBoth.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete chat for both'**
+  String get chatDeleteForBoth;
+
+  /// No description provided for @chatBlockUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Block {name}'**
+  String chatBlockUser(String name);
+
+  /// No description provided for @chatReportUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Report {name}'**
+  String chatReportUser(String name);
+
+  /// No description provided for @chatDeleteChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Chat'**
+  String get chatDeleteChat;
+
+  /// No description provided for @chatDeleteChatForMeMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'This will delete the chat from your device only. The other person will still see the messages.'**
+  String get chatDeleteChatForMeMessage;
+
+  /// No description provided for @chatDeleteChatForEveryone.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Chat for Everyone'**
+  String get chatDeleteChatForEveryone;
+
+  /// No description provided for @chatDeleteChatForBothMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'This will delete all messages for both you and {name}. This action cannot be undone.'**
+  String chatDeleteChatForBothMessage(String name);
+
+  /// No description provided for @chatDeleteForEveryone.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete for Everyone'**
+  String get chatDeleteForEveryone;
+
+  /// No description provided for @chatBlockUserTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Block User'**
+  String get chatBlockUserTitle;
+
+  /// No description provided for @chatBlockUserMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to block {name}? They will no longer be able to contact you.'**
+  String chatBlockUserMessage(String name);
+
+  /// No description provided for @chatBlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Block'**
+  String get chatBlock;
+
+  /// No description provided for @chatCannotBlockAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot block an administrator.'**
+  String get chatCannotBlockAdmin;
+
+  /// No description provided for @chatUserBlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has been blocked'**
+  String chatUserBlocked(String name);
+
+  /// No description provided for @chatReportUserTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report User'**
+  String get chatReportUserTitle;
+
+  /// No description provided for @chatWhyReportUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you reporting {name}?'**
+  String chatWhyReportUser(String name);
+
+  /// No description provided for @chatCannotReportAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot report an administrator.'**
+  String get chatCannotReportAdmin;
+
+  /// No description provided for @chatUserReported.
+  ///
+  /// In en, this message translates to:
+  /// **'User reported. We will review your report shortly.'**
+  String get chatUserReported;
+
+  /// No description provided for @chatReplyingTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Replying to {name}'**
+  String chatReplyingTo(String name);
+
+  /// No description provided for @chatYou.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get chatYou;
+
+  /// No description provided for @chatUnableToForward.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to forward message'**
+  String get chatUnableToForward;
+
+  /// No description provided for @chatSearchByNameOrNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or @nickname'**
+  String get chatSearchByNameOrNickname;
+
+  /// No description provided for @chatNoMessagesYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get chatNoMessagesYet;
+
+  /// No description provided for @chatStartSwipingToChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Start swiping and matching to chat with people!'**
+  String get chatStartSwipingToChat;
+
+  /// No description provided for @chatMessageOriginal.
+  ///
+  /// In en, this message translates to:
+  /// **'Original'**
+  String get chatMessageOriginal;
+
+  /// No description provided for @chatMessageTranslated.
+  ///
+  /// In en, this message translates to:
+  /// **'Translated'**
+  String get chatMessageTranslated;
+
+  /// No description provided for @chatMessageStarred.
+  ///
+  /// In en, this message translates to:
+  /// **'Message starred'**
+  String get chatMessageStarred;
+
+  /// No description provided for @chatMessageUnstarred.
+  ///
+  /// In en, this message translates to:
+  /// **'Message unstarred'**
+  String get chatMessageUnstarred;
+
+  /// No description provided for @chatMessageOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Message Options'**
+  String get chatMessageOptions;
+
+  /// No description provided for @chatReply.
+  ///
+  /// In en, this message translates to:
+  /// **'Reply'**
+  String get chatReply;
+
+  /// No description provided for @chatReplyToMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Reply to this message'**
+  String get chatReplyToMessage;
+
+  /// No description provided for @chatForward.
+  ///
+  /// In en, this message translates to:
+  /// **'Forward'**
+  String get chatForward;
+
+  /// No description provided for @chatForwardToChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Forward to another chat'**
+  String get chatForwardToChat;
+
+  /// No description provided for @chatStarMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Star Message'**
+  String get chatStarMessage;
+
+  /// No description provided for @chatUnstarMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Unstar Message'**
+  String get chatUnstarMessage;
+
+  /// No description provided for @chatAddToStarred.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to starred messages'**
+  String get chatAddToStarred;
+
+  /// No description provided for @chatRemoveFromStarred.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from starred messages'**
+  String get chatRemoveFromStarred;
+
+  /// No description provided for @chatReportInappropriate.
+  ///
+  /// In en, this message translates to:
+  /// **'Report inappropriate content'**
+  String get chatReportInappropriate;
+
+  /// No description provided for @chatVideoPlayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Player'**
+  String get chatVideoPlayer;
+
+  /// No description provided for @chatFailedToLoadImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load image'**
+  String get chatFailedToLoadImage;
+
+  /// No description provided for @chatLoadingVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading video...'**
+  String get chatLoadingVideo;
+
+  /// No description provided for @chatPreviewVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview Video'**
+  String get chatPreviewVideo;
+
+  /// No description provided for @chatPreviewImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview Image'**
+  String get chatPreviewImage;
+
+  /// No description provided for @chatAddCaption.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a caption...'**
+  String get chatAddCaption;
+
+  /// No description provided for @chatSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get chatSend;
+
+  /// No description provided for @chatSupportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Support'**
+  String get chatSupportTitle;
+
+  /// No description provided for @chatSupportStatusOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get chatSupportStatusOpen;
+
+  /// No description provided for @chatSupportStatusPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get chatSupportStatusPending;
+
+  /// No description provided for @chatSupportStatusResolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get chatSupportStatusResolved;
+
+  /// No description provided for @chatSupportStatusClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'Closed'**
+  String get chatSupportStatusClosed;
+
+  /// No description provided for @chatSupportStatusDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Support'**
+  String get chatSupportStatusDefault;
+
+  /// No description provided for @chatSupportAgent.
+  ///
+  /// In en, this message translates to:
+  /// **'Agent: {name}'**
+  String chatSupportAgent(String name);
+
+  /// No description provided for @chatSupportWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Support'**
+  String get chatSupportWelcome;
+
+  /// No description provided for @chatSupportStartMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a message to start the conversation.\nOur team will respond as soon as possible.'**
+  String get chatSupportStartMessage;
+
+  /// No description provided for @chatSupportTicketStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket Start'**
+  String get chatSupportTicketStart;
+
+  /// No description provided for @chatSupportTicketCreated.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket Created'**
+  String get chatSupportTicketCreated;
+
+  /// No description provided for @chatSupportErrorLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading messages'**
+  String get chatSupportErrorLoading;
+
+  /// No description provided for @chatSupportFailedToSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send message: {error}'**
+  String chatSupportFailedToSend(String error);
+
+  /// No description provided for @chatSupportTicketResolved.
+  ///
+  /// In en, this message translates to:
+  /// **'This ticket has been resolved'**
+  String get chatSupportTicketResolved;
+
+  /// No description provided for @chatSupportReopenTicket.
+  ///
+  /// In en, this message translates to:
+  /// **'Need more help? Tap to reopen'**
+  String get chatSupportReopenTicket;
+
+  /// No description provided for @chatSupportTicketReopened.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket reopened. You can send a message now.'**
+  String get chatSupportTicketReopened;
+
+  /// No description provided for @chatSupportFailedToReopen.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to reopen ticket: {error}'**
+  String chatSupportFailedToReopen(String error);
+
+  /// No description provided for @chatSupportAddCaptionOptional.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a caption (optional)...'**
+  String get chatSupportAddCaptionOptional;
+
+  /// No description provided for @chatSupportTypeMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Type your message...'**
+  String get chatSupportTypeMessage;
+
+  /// No description provided for @chatSupportAddAttachment.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Attachment'**
+  String get chatSupportAddAttachment;
+
+  /// No description provided for @chatSupportTicketInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket Information'**
+  String get chatSupportTicketInfo;
+
+  /// No description provided for @chatSupportSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject'**
+  String get chatSupportSubject;
+
+  /// No description provided for @chatSupportCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get chatSupportCategory;
+
+  /// No description provided for @chatSupportStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get chatSupportStatus;
+
+  /// No description provided for @chatSupportAgentLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Agent'**
+  String get chatSupportAgentLabel;
+
+  /// No description provided for @chatSupportTicketId.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket ID'**
+  String get chatSupportTicketId;
+
+  /// No description provided for @chatSupportGeneralSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'General Support'**
+  String get chatSupportGeneralSupport;
+
+  /// No description provided for @chatSupportGeneral.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get chatSupportGeneral;
+
+  /// No description provided for @chatSupportWaitingAssignment.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for assignment'**
+  String get chatSupportWaitingAssignment;
+
+  /// No description provided for @chatSupportClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get chatSupportClose;
+
+  /// No description provided for @chatSupportJustNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Just now'**
+  String get chatSupportJustNow;
+
+  /// No description provided for @chatSupportMinutesAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes}m ago'**
+  String chatSupportMinutesAgo(int minutes);
+
+  /// No description provided for @chatSupportHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours}h ago'**
+  String chatSupportHoursAgo(int hours);
+
+  /// No description provided for @chatSupportDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{days}d ago'**
+  String chatSupportDaysAgo(int days);
 }
 
 class _AppLocalizationsDelegate

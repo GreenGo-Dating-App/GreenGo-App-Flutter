@@ -61,6 +61,12 @@ abstract class DiscoveryRemoteDataSource {
 
   /// Search for a profile by nickname
   Future<Profile?> searchByNickname(String nickname);
+
+  /// Undo (delete) the most recent swipe on a target user
+  Future<void> undoSwipe({
+    required String userId,
+    required String targetUserId,
+  });
 }
 
 /// Discovery Remote Data Source Implementation
@@ -92,6 +98,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Get matches (mutual likes) to exclude them
     final matchedUserIds = await _getMatchedUserIds(userId);
 
+    // Get blocked user IDs (bidirectional) to exclude them
+    final blockedUserIds = await _getBlockedUserIds(userId);
+
     // Categorize candidates into priority tiers:
     // Priority 1: Never seen (not in swipe history)
     // Priority 2: Passed on ("nope")
@@ -107,6 +116,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Skip matched users - they shouldn't appear in discovery
       if (matchedUserIds.contains(candidateId)) continue;
+
+      // Skip blocked users (bidirectional) - they shouldn't appear in discovery
+      if (blockedUserIds.contains(candidateId)) continue;
 
       final swipeType = swipeHistory[candidateId];
 
@@ -197,6 +209,35 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     return matchedIds;
+  }
+
+  /// Get all user IDs that are blocked (bidirectional - users I blocked + users who blocked me)
+  Future<Set<String>> _getBlockedUserIds(String userId) async {
+    final Set<String> blockedIds = {};
+
+    // Users I blocked
+    final blockedByMe = await firestore
+        .collection('blocked_users')
+        .where('blockerId', isEqualTo: userId)
+        .get();
+
+    for (final doc in blockedByMe.docs) {
+      final blockedUserId = doc.data()['blockedUserId'] as String?;
+      if (blockedUserId != null) blockedIds.add(blockedUserId);
+    }
+
+    // Users who blocked me
+    final blockedMe = await firestore
+        .collection('blocked_users')
+        .where('blockedUserId', isEqualTo: userId)
+        .get();
+
+    for (final doc in blockedMe.docs) {
+      final blockerId = doc.data()['blockerId'] as String?;
+      if (blockerId != null) blockedIds.add(blockerId);
+    }
+
+    return blockedIds;
   }
 
   /// Get admin profile as a match candidate
@@ -451,15 +492,26 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final results1 = await query1.orderBy('matchedAt', descending: true).get();
     final results2 = await query2.orderBy('matchedAt', descending: true).get();
 
+    // Get blocked user IDs to filter out blocked matches
+    final blockedUserIds = await _getBlockedUserIds(userId);
+
     // Combine and convert
     final matches = <Match>[];
 
     for (final doc in results1.docs) {
-      matches.add(MatchModel.fromFirestore(doc));
+      final match = MatchModel.fromFirestore(doc);
+      // Filter out matches with blocked users
+      if (!blockedUserIds.contains(match.userId2)) {
+        matches.add(match);
+      }
     }
 
     for (final doc in results2.docs) {
-      matches.add(MatchModel.fromFirestore(doc));
+      final match = MatchModel.fromFirestore(doc);
+      // Filter out matches with blocked users
+      if (!blockedUserIds.contains(match.userId1)) {
+        matches.add(match);
+      }
     }
 
     // Sort by match date (most recent first)
@@ -643,6 +695,25 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       return ProfileModel.fromFirestore(querySnapshot.docs.first);
     } catch (e) {
       return null;
+    }
+  }
+
+  @override
+  Future<void> undoSwipe({
+    required String userId,
+    required String targetUserId,
+  }) async {
+    // Find the most recent swipe from userId to targetUserId
+    final querySnapshot = await firestore
+        .collection('swipes')
+        .where('userId', isEqualTo: userId)
+        .where('targetUserId', isEqualTo: targetUserId)
+        .orderBy('timestamp', descending: true)
+        .limit(1)
+        .get();
+
+    if (querySnapshot.docs.isNotEmpty) {
+      await querySnapshot.docs.first.reference.delete();
     }
   }
 }

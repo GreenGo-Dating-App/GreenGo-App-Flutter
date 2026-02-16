@@ -9,6 +9,7 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/services/feature_flags_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
+import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -82,7 +83,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // Activity tracking for re-engagement notifications
   late final ActivityTrackingService _activityTrackingService;
 
-  late final List<Widget> _screens;
+  late List<Widget> _screens;
   late final NotificationsBloc _notificationsBloc;
 
   // Coin balance bloc for app bar
@@ -146,10 +147,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       DiscoveryScreen(userId: widget.userId),
       MatchesScreen(userId: widget.userId),
       ConversationsScreen(userId: widget.userId),
-      BlocProvider(
-        create: (context) => di.sl<CoinBloc>(),
-        child: CoinShopScreen(userId: widget.userId),
-      ),
+      CoinShopScreen(userId: widget.userId),
       if (_gamificationBloc != null)
         BlocProvider.value(
           value: _gamificationBloc!,
@@ -173,6 +171,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Load access control data
     _loadAccessData();
+
+    // Check subscription expiry and downgrade to free if expired
+    _checkSubscriptionExpiry();
 
     // Check if app tour should be shown
     _checkAppTour();
@@ -217,6 +218,77 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       // Check and show notifications based on access state
       _checkAndShowAccessNotifications(accessData);
     }
+  }
+
+  Future<void> _checkSubscriptionExpiry() async {
+    final expiryService = SubscriptionExpiryService();
+
+    // Check and handle expired subscriptions (rollback to free)
+    final previousTier = await expiryService.checkAndHandleExpiry(widget.userId);
+
+    if (previousTier != null && mounted) {
+      // Subscription was expired - show downgrade dialog
+      _showDowngradeDialog(previousTier);
+
+      // Refresh profile to reflect free tier
+      _profileBloc.add(ProfileLoadRequested(userId: widget.userId));
+
+      // Update local membership tier
+      setState(() {
+        _membershipTier = MembershipTier.free;
+      });
+    }
+
+    // Grant 1 bonus month on release (only once per user, only after release date)
+    final releaseDate = AccessControlService.generalAccessDate;
+    if (DateTime.now().isAfter(releaseDate)) {
+      await expiryService.grantReleaseBonusMonth(widget.userId);
+    }
+  }
+
+  void _showDowngradeDialog(String previousTierName) {
+    if (!mounted) return;
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Subscription Expired',
+          style: TextStyle(color: AppColors.richGold),
+        ),
+        content: Text(
+          'Your $previousTierName subscription has expired. '
+          'You have been moved to the Free tier.\n\n'
+          'Upgrade anytime to restore your premium features!',
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('OK'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              // Navigate to subscription screen
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<SubscriptionBloc>(),
+                    child: const SubscriptionSelectionScreen(),
+                  ),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.deepBlack,
+            ),
+            child: const Text('Upgrade'),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _checkAndShowAccessNotifications(UserAccessData accessData) async {
@@ -400,6 +472,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   void refreshDiscoveryTab() {
     setState(() {
       _currentIndex = 0;
+      _screens = List.from(_screens);
       _screens[0] = DiscoveryScreen(key: UniqueKey(), userId: widget.userId);
     });
   }
@@ -724,7 +797,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             tooltip: 'Search by nickname',
           ),
           _buildCoinBalanceWidget(),
-          _buildNotificationButton(),
           const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
@@ -744,7 +816,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         elevation: 0,
         actions: [
           _buildCoinBalanceWidget(),
-          _buildNotificationButton(),
           const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
