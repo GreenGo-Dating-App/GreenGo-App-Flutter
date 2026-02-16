@@ -315,50 +315,18 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     int currentIndex,
     bool enabled,
   ) {
-    return ClipRect(
-      clipBehavior: Clip.none,
-      child: Stack(
-      alignment: Alignment.center,
-      clipBehavior: Clip.none,
-      children: [
-        // Next card (behind) with parallax effect
-        if (currentIndex + 1 < cards.length)
-          ValueListenableBuilder<double>(
-            valueListenable: _dragProgress,
-            builder: (context, progress, child) {
-              final scale = 0.92 + (0.08 * progress); // 0.92 → 1.0
-              final offset = 30.0 * (1.0 - progress); // 30 → 0
-              final opacity = 0.6 + (0.4 * progress); // 0.6 → 1.0
-              return Transform.translate(
-                offset: Offset(0, offset),
-                child: Transform.scale(
-                  scale: scale,
-                  child: Opacity(
-                    opacity: opacity,
-                    child: child!,
-                  ),
-                ),
-              );
-            },
-            child: SwipeCard(
-              card: cards[currentIndex + 1],
-              isFront: false,
-            ),
-          ),
-
-        // Current card (front)
-        SwipeCard(
-          key: ValueKey(cards[currentIndex].userId),
-          card: cards[currentIndex],
-          isFront: true,
-          onDragProgress: (progress) {
-            _dragProgress.value = progress;
-          },
-          onSwipe: enabled
-              ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
-              : null,
-        ),
-      ],
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 300),
+      transitionBuilder: (child, animation) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+      child: SwipeCard(
+        key: ValueKey(cards[currentIndex].userId),
+        card: cards[currentIndex],
+        isFront: true,
+        onSwipe: enabled
+            ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
+            : null,
       ),
     );
   }

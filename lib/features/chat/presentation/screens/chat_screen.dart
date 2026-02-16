@@ -1143,8 +1143,9 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && context.mounted) {
-      context.read<ChatBloc>().add(const ChatDeletedForMe());
+      final bloc = context.read<ChatBloc>();
       await ActionSuccessDialog.showChatDeletedForMe(context, onDismiss: () {
+        bloc.add(const ChatDeletedForMe());
         if (context.mounted) {
           Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
         }
@@ -1180,8 +1181,9 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && context.mounted) {
-      context.read<ChatBloc>().add(const ChatDeletedForBoth());
+      final bloc = context.read<ChatBloc>();
       await ActionSuccessDialog.showChatDeletedForBoth(context, onDismiss: () {
+        bloc.add(const ChatDeletedForBoth());
         if (context.mounted) {
           Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
         }
@@ -1228,8 +1230,9 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && context.mounted) {
-      context.read<ChatBloc>().add(ChatUserBlocked(widget.otherUserId));
+      final bloc = context.read<ChatBloc>();
       await ActionSuccessDialog.showUserBlocked(context, widget.otherUserProfile.displayName, onDismiss: () {
+        bloc.add(ChatUserBlocked(widget.otherUserId));
         if (context.mounted) {
           Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
         }
@@ -1297,11 +1300,12 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (selectedReason != null && context.mounted) {
-      context.read<ChatBloc>().add(ChatUserReported(
-        userId: widget.otherUserId,
-        reason: selectedReason,
-      ));
+      final bloc = context.read<ChatBloc>();
       await ActionSuccessDialog.showUserReported(context, onDismiss: () {
+        bloc.add(ChatUserReported(
+          userId: widget.otherUserId,
+          reason: selectedReason,
+        ));
         if (context.mounted) {
           Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
         }

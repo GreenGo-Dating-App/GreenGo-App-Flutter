@@ -970,18 +970,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
   }
 
+  int _lastKnownCoins = 0;
+
   Widget _buildAppBarCoinBalance() {
     return BlocBuilder<CoinBloc, CoinState>(
       bloc: _coinBloc,
-      buildWhen: (previous, current) =>
-          current is CoinBalanceLoaded || current is CoinBalanceUpdated,
       builder: (context, state) {
-        int coins = 0;
         if (state is CoinBalanceLoaded) {
-          coins = state.balance.availableCoins;
+          _lastKnownCoins = state.balance.availableCoins;
         } else if (state is CoinBalanceUpdated) {
-          coins = state.balance.availableCoins;
+          _lastKnownCoins = state.balance.availableCoins;
         }
+        final coins = _lastKnownCoins;
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 4),
           child: Row(
