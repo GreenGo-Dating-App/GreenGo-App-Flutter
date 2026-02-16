@@ -129,22 +129,68 @@ class ActionSuccessDialog extends StatefulWidget {
     );
   }
 
+  /// Show chat deleted for me success dialog
+  static Future<void> showChatDeletedForMe(BuildContext context, {VoidCallback? onDismiss}) {
+    return _show(
+      context,
+      title: 'Chat Deleted!',
+      message: 'This chat has been removed from your inbox',
+      icon: Icons.delete_outline,
+      onDismiss: onDismiss,
+    );
+  }
+
+  /// Show chat deleted for both success dialog
+  static Future<void> showChatDeletedForBoth(BuildContext context, {VoidCallback? onDismiss}) {
+    return _show(
+      context,
+      title: 'Chat Deleted!',
+      message: 'This chat has been permanently removed',
+      icon: Icons.delete_forever,
+      onDismiss: onDismiss,
+    );
+  }
+
+  /// Show user blocked success dialog
+  static Future<void> showUserBlocked(BuildContext context, String displayName, {VoidCallback? onDismiss}) {
+    return _show(
+      context,
+      title: 'User Blocked!',
+      message: '$displayName has been blocked',
+      icon: Icons.block,
+      onDismiss: onDismiss,
+    );
+  }
+
+  /// Show user reported success dialog
+  static Future<void> showUserReported(BuildContext context, {VoidCallback? onDismiss}) {
+    return _show(
+      context,
+      title: 'Report Submitted!',
+      message: 'Thank you for helping keep our community safe',
+      icon: Icons.flag,
+      onDismiss: onDismiss,
+    );
+  }
+
   static Future<void> _show(
     BuildContext context, {
     required String title,
     required String message,
     IconData icon = Icons.check_circle,
     Duration autoDismiss = const Duration(seconds: 2),
+    VoidCallback? onDismiss,
   }) {
     return showDialog(
       context: context,
-      barrierDismissible: true,
+      barrierDismissible: false,
       barrierColor: Colors.black54,
       builder: (context) => ActionSuccessDialog(
         title: title,
         message: message,
         icon: icon,
         autoDismiss: autoDismiss,
+        onDismiss: onDismiss,
       ),
     );
   }

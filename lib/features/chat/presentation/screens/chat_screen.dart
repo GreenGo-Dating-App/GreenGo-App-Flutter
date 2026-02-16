@@ -14,6 +14,7 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -1143,8 +1144,11 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (confirmed == true && context.mounted) {
       context.read<ChatBloc>().add(const ChatDeletedForMe());
-      // Use popUntil for reliable navigation back to messages
-      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+      await ActionSuccessDialog.showChatDeletedForMe(context, onDismiss: () {
+        if (context.mounted) {
+          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+        }
+      });
     }
   }
 
@@ -1177,8 +1181,11 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (confirmed == true && context.mounted) {
       context.read<ChatBloc>().add(const ChatDeletedForBoth());
-      // Use popUntil for reliable navigation back to messages
-      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+      await ActionSuccessDialog.showChatDeletedForBoth(context, onDismiss: () {
+        if (context.mounted) {
+          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+        }
+      });
     }
   }
 
@@ -1222,14 +1229,11 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (confirmed == true && context.mounted) {
       context.read<ChatBloc>().add(ChatUserBlocked(widget.otherUserId));
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatUserBlocked(widget.otherUserProfile.displayName)),
-          backgroundColor: AppColors.richGold,
-        ),
-      );
-      // Use popUntil for reliable navigation back to messages
-      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+      await ActionSuccessDialog.showUserBlocked(context, widget.otherUserProfile.displayName, onDismiss: () {
+        if (context.mounted) {
+          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+        }
+      });
     }
   }
 
@@ -1297,14 +1301,11 @@ class _ChatScreenState extends State<ChatScreen> {
         userId: widget.otherUserId,
         reason: selectedReason,
       ));
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatUserReported),
-          backgroundColor: AppColors.richGold,
-        ),
-      );
-      // Navigate away — report auto-blocks, so the conversation is no longer accessible
-      Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+      await ActionSuccessDialog.showUserReported(context, onDismiss: () {
+        if (context.mounted) {
+          Navigator.of(context).popUntil((route) => route.isFirst || route.settings.name == '/messages');
+        }
+      });
     }
   }
 
