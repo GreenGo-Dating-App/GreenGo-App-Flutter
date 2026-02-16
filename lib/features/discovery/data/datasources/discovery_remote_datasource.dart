@@ -86,10 +86,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     int limit = 20,
   }) async {
     // Get candidates from matching datasource
+    // No distance limit by default (99999 = worldwide)
     final candidates = await matchingDataSource.getMatchCandidates(
       userId: userId,
-      preferences: matching.MatchPreferences(userId: preferences.userId, minAge: preferences.minAge, maxAge: preferences.maxAge, maxDistance: (preferences.maxDistanceKm ?? 50).toDouble(), updatedAt: DateTime.now()),
-      limit: limit * 5, // Get more for filtering and infinite scroll
+      preferences: matching.MatchPreferences(userId: preferences.userId, minAge: preferences.minAge, maxAge: preferences.maxAge, maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(), updatedAt: DateTime.now()),
+      limit: 99999, // No limit - endless scrolling
     );
 
     // Get user's swipe history with action types
@@ -134,33 +135,26 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
     }
 
-    // Build the final list with priority ordering
+    // Build the final list with priority ordering (no limit - endless)
     final List<MatchCandidate> prioritizedCandidates = [];
 
-    // Add priority 1 (not seen)
+    // Add priority 1 (not seen) first
     prioritizedCandidates.addAll(priority1NotSeen);
 
-    // Add priority 2 (passed) if we need more
-    if (prioritizedCandidates.length < limit) {
-      prioritizedCandidates.addAll(priority2Passed);
-    }
+    // Then priority 2 (passed)
+    prioritizedCandidates.addAll(priority2Passed);
 
-    // Add priority 3 (liked no response) if we need more
-    if (prioritizedCandidates.length < limit) {
-      prioritizedCandidates.addAll(priority3LikedNoResponse);
-    }
-
-    // Take only what we need
-    final finalCandidates = prioritizedCandidates.take(limit - 1).toList();
+    // Then priority 3 (liked no response)
+    prioritizedCandidates.addAll(priority3LikedNoResponse);
 
     // Always add admin/support profile at the beginning if not already swiped
     final swipedUserIds = swipeHistory.keys.toSet();
     final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
     if (adminCandidate != null) {
-      return [adminCandidate, ...finalCandidates];
+      return [adminCandidate, ...prioritizedCandidates];
     }
 
-    return finalCandidates;
+    return prioritizedCandidates;
   }
 
   /// Get swipe history with action types

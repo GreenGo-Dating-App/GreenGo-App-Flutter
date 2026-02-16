@@ -26,7 +26,7 @@ class MatchPreferences extends Equatable {
       userId: userId,
       minAge: 18,
       maxAge: 99,
-      maxDistanceKm: 200, // Default 200km
+      maxDistanceKm: null, // No distance limit by default (worldwide)
       interestedInGender: 'everyone',
       onlyVerified: false,
       onlyRecentlyActive: false,

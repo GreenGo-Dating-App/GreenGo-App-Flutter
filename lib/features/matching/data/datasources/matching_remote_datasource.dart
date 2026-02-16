@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -70,60 +72,66 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
     final userProfile = ProfileModel.fromFirestore(userDoc);
 
-    // Build Firestore query with filters
-    Query query = firestore.collection('profiles');
-
-    // Filter: Not self
-    // Note: Firestore doesn't support != operator, so we'll filter in code
-
-    // Filter: Age range
-    final birthYearMin = DateTime.now().year - preferences.maxAge;
-    final birthYearMax = DateTime.now().year - preferences.minAge;
-    query = query
-        .where('dateOfBirth',
-            isGreaterThanOrEqualTo:
-                Timestamp.fromDate(DateTime(birthYearMin, 1, 1)))
-        .where('dateOfBirth',
-            isLessThanOrEqualTo: Timestamp.fromDate(DateTime(birthYearMax, 12, 31)));
-
-    // Filter: Gender preferences
-    if (preferences.preferredGenders.isNotEmpty) {
-      query = query.where('gender', whereIn: preferences.preferredGenders);
-    }
-
-    // Note: We filter by photos in code to avoid Firestore inequality filter limitation
-    // Firestore doesn't allow inequality filters on multiple fields
-
-    // Execute query with limit
-    final querySnapshot = await query.limit(limit * 3).get(); // Get more for filtering
+    // Fetch ALL profiles from Firestore (no server-side filters to avoid
+    // composite index issues). All filtering is done in code for reliability.
+    final querySnapshot = await firestore
+        .collection('profiles')
+        .get();
 
     final candidates = <MatchCandidate>[];
+    final now = DateTime.now();
 
     for (final doc in querySnapshot.docs) {
       // Skip self
       if (doc.id == userId) continue;
 
-      // Filter: Only with photos if required (done in code to avoid Firestore limitation)
-      final photoUrls = doc.data() is Map ? (doc.data() as Map)['photoUrls'] as List? : null;
-      if (preferences.showOnlyWithPhotos && (photoUrls == null || photoUrls.isEmpty)) {
-        continue;
-      }
-
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
 
-        // Calculate distance
-        final distance = featureEngineer.calculateDistance(
-          userProfile.location.latitude,
-          userProfile.location.longitude,
-          candidateProfile.location.latitude,
-          candidateProfile.location.longitude,
-        );
+        // Must have at least one photo
+        if (candidateProfile.photoUrls.isEmpty) continue;
 
-        // Filter by distance
-        if (distance > preferences.maxDistance) continue;
+        // Apply age filter
+        final age = candidateProfile.age;
+        if (age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
+          continue;
+        }
 
-        // Check deal-breaker interests
+        // Apply gender filter
+        if (preferences.preferredGenders.isNotEmpty) {
+          final gender = candidateProfile.gender;
+          if (gender.isNotEmpty &&
+              !preferences.preferredGenders
+                  .map((g) => g.toLowerCase())
+                  .contains(gender.toLowerCase())) {
+            continue;
+          }
+        }
+
+        // Apply distance filter (skip if either user has no location data)
+        double distance = 0.0;
+        if (userProfile.location.latitude != 0 &&
+            userProfile.location.longitude != 0 &&
+            candidateProfile.location.latitude != 0 &&
+            candidateProfile.location.longitude != 0) {
+          distance = featureEngineer.calculateDistance(
+            userProfile.location.latitude,
+            userProfile.location.longitude,
+            candidateProfile.location.latitude,
+            candidateProfile.location.longitude,
+          );
+
+          if (preferences.maxDistance < 1000 && distance > preferences.maxDistance) {
+            continue;
+          }
+        }
+
+        // Apply only-verified filter
+        if (preferences.showOnlyVerified && !candidateProfile.isVerified) {
+          continue;
+        }
+
+        // Apply deal-breaker interests
         if (preferences.dealBreakerInterests.isNotEmpty) {
           final hasAllDealBreakers = preferences.dealBreakerInterests.every(
             (interest) => candidateProfile.interests.contains(interest),
@@ -131,46 +139,49 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           if (!hasAllDealBreakers) continue;
         }
 
-        // Get collaborative filtering score (placeholder for now)
-        final collaborativeScore = await getCollaborativeScore(
-          userId,
-          candidateProfile.userId,
-        );
-
         // Calculate compatibility score
-        final matchScore = compatibilityScorer.calculateScore(
-          profile1: userProfile,
-          profile2: candidateProfile,
-          collaborativeScore: collaborativeScore,
-        );
+        MatchScore matchScore;
+        try {
+          matchScore = compatibilityScorer.calculateScore(
+            profile1: userProfile,
+            profile2: candidateProfile,
+          );
+        } catch (_) {
+          // If scoring fails, use a default neutral score
+          matchScore = MatchScore(
+            userId1: userId,
+            userId2: candidateProfile.userId,
+            overallScore: 50.0,
+            breakdown: const ScoreBreakdown(
+              locationScore: 50.0,
+              ageCompatibilityScore: 50.0,
+              interestOverlapScore: 50.0,
+              personalityCompatibilityScore: 50.0,
+              activityPatternScore: 50.0,
+              collaborativeFilteringScore: 50.0,
+            ),
+            calculatedAt: now,
+          );
+        }
 
-        // Only include if score is reasonable (>30%)
-        if (matchScore.overallScore < 30.0) continue;
-
-        // Create match candidate
-        final candidate = MatchCandidate(
+        candidates.add(MatchCandidate(
           profile: candidateProfile,
           matchScore: matchScore,
           distance: distance,
-          suggestedAt: DateTime.now(),
+          suggestedAt: now,
           isSuperLike: matchScore.overallScore >= 80.0,
-        );
-
-        candidates.add(candidate);
-
-        // Stop if we have enough candidates
-        if (candidates.length >= limit) break;
+        ));
       } catch (e) {
         // Skip invalid profiles
         continue;
       }
     }
 
-    // Sort by compatibility score (highest first)
-    candidates.sort((a, b) => b.matchScore.overallScore
-        .compareTo(a.matchScore.overallScore));
+    // Shuffle candidates randomly so users see a different order each time
+    candidates.shuffle(Random());
 
-    return candidates.take(limit).toList();
+    // Return ALL candidates (no limit) for endless scrolling
+    return candidates;
   }
 
   @override

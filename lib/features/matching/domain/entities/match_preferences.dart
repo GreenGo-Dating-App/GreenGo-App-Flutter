@@ -32,7 +32,7 @@ class MatchPreferences {
       userId: userId,
       minAge: 18,
       maxAge: 99,
-      maxDistance: 200.0, // Default 200km
+      maxDistance: 99999.0, // No distance limit by default (worldwide)
       preferredGenders: const ['Female', 'Male', 'Non-binary'],
       showOnlyVerified: false,
       showOnlyWithPhotos: false, // Show all profiles including those without photos
