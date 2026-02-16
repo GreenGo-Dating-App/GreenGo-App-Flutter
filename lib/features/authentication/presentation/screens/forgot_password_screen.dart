@@ -1,13 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/validators.dart';
-import '../../../../core/utils/auth_error_localizer.dart';
-import '../bloc/auth_bloc.dart';
-import '../bloc/auth_event.dart';
-import '../bloc/auth_state.dart';
 import '../widgets/auth_text_field.dart';
 import '../widgets/auth_button.dart';
 
@@ -21,6 +17,7 @@ class ForgotPasswordScreen extends StatefulWidget {
 class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
+  bool _isLoading = false;
 
   @override
   void dispose() {
@@ -28,11 +25,99 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     super.dispose();
   }
 
-  void _handleResetPassword() {
-    if (_formKey.currentState!.validate()) {
-      context.read<AuthBloc>().add(
-            AuthPasswordResetRequested(_emailController.text.trim()),
-          );
+  Future<void> _handleResetPassword() async {
+    if (!_formKey.currentState!.validate()) return;
+    if (_isLoading) return;
+
+    setState(() => _isLoading = true);
+
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(
+        email: _emailController.text.trim(),
+      );
+
+      if (!mounted) return;
+
+      // Show success dialog
+      await showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          title: const Row(
+            children: [
+              Icon(Icons.check_circle, color: AppColors.successGreen, size: 28),
+              SizedBox(width: 12),
+              Text(
+                'Email Sent!',
+                style: TextStyle(color: AppColors.textPrimary, fontSize: 18),
+              ),
+            ],
+          ),
+          content: Text(
+            'A password reset link has been sent to ${_emailController.text.trim()}.\n\nPlease check your inbox and spam folder.',
+            style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(),
+              child: const Text(
+                'OK',
+                style: TextStyle(
+                  color: AppColors.richGold,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+
+      if (!mounted) return;
+      Navigator.of(context).pop(); // Return to login
+    } on FirebaseAuthException catch (e) {
+      if (!mounted) return;
+      String message;
+      switch (e.code) {
+        case 'user-not-found':
+          message = 'No account found with this email address.';
+          break;
+        case 'invalid-email':
+          message = 'Invalid email address.';
+          break;
+        case 'too-many-requests':
+          message = 'Too many requests. Please try again later.';
+          break;
+        default:
+          message = e.message ?? 'Failed to send reset email. Please try again.';
+      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(message, style: const TextStyle(color: Colors.white)),
+          backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          margin: const EdgeInsets.all(16),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error: $e', style: const TextStyle(color: Colors.white)),
+          backgroundColor: AppColors.errorRed,
+          behavior: SnackBarBehavior.floating,
+          margin: const EdgeInsets.all(16),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
     }
   }
 
@@ -46,169 +131,128 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         title: const Text(AppStrings.resetPassword),
       ),
       body: SafeArea(
-        child: BlocConsumer<AuthBloc, AuthState>(
-          listener: (context, state) {
-            if (state is AuthError) {
-              final localizedMessage = AuthErrorLocalizer.getLocalizedError(
-                context,
-                state.message,
-              );
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    localizedMessage,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(AppDimensions.paddingL),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const SizedBox(height: 40),
+
+                // Icon
+                Container(
+                  width: 120,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.backgroundCard,
+                    border: Border.all(
+                      color: AppColors.richGold,
+                      width: 2,
                     ),
                   ),
-                  backgroundColor: AppColors.errorRed,
-                  behavior: SnackBarBehavior.floating,
-                  margin: const EdgeInsets.all(16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+                  child: const Icon(
+                    Icons.lock_reset,
+                    size: 60,
+                    color: AppColors.richGold,
                   ),
                 ),
-              );
-            } else if (state is AuthPasswordResetSent) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Password reset email sent! Check your inbox.'),
-                  backgroundColor: AppColors.successGreen,
-                  duration: Duration(seconds: 5),
-                ),
-              );
-              // Return to login screen
-              Navigator.of(context).pop();
-            }
-          },
-          builder: (context, state) {
-            final isLoading = state is AuthLoading;
 
-            return SingleChildScrollView(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    const SizedBox(height: 40),
+                const SizedBox(height: 32),
 
-                    // Icon
-                    Container(
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.backgroundCard,
-                        border: Border.all(
-                          color: AppColors.richGold,
-                          width: 2,
-                        ),
-                      ),
-                      child: const Icon(
-                        Icons.lock_reset,
-                        size: 60,
+                // Title
+                Text(
+                  'Reset Your Password',
+                  style: Theme.of(context).textTheme.displaySmall?.copyWith(
                         color: AppColors.richGold,
                       ),
-                    ),
-
-                    const SizedBox(height: 32),
-
-                    // Title
-                    Text(
-                      'Reset Your Password',
-                      style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                            color: AppColors.richGold,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
-
-                    const SizedBox(height: 16),
-
-                    // Description
-                    Text(
-                      'Enter your email address and we\'ll send you instructions to reset your password.',
-                      style: Theme.of(context).textTheme.bodyLarge,
-                      textAlign: TextAlign.center,
-                    ),
-
-                    const SizedBox(height: 40),
-
-                    // Email Field
-                    AuthTextField(
-                      controller: _emailController,
-                      label: AppStrings.email,
-                      keyboardType: TextInputType.emailAddress,
-                      validator: Validators.validateEmail,
-                      prefixIcon: Icons.email_outlined,
-                      enabled: !isLoading,
-                      textInputAction: TextInputAction.done,
-                      onSubmitted: (_) => _handleResetPassword(),
-                    ),
-
-                    const SizedBox(height: 32),
-
-                    // Send Button
-                    AuthButton(
-                      text: 'Send Reset Link',
-                      onPressed: isLoading ? null : _handleResetPassword,
-                      isLoading: isLoading,
-                      icon: Icons.send,
-                    ),
-
-                    const SizedBox(height: 16),
-
-                    // Back to Login
-                    TextButton(
-                      onPressed: isLoading
-                          ? null
-                          : () {
-                              Navigator.of(context).pop();
-                            },
-                      child: const Text(
-                        'Back to Login',
-                        style: TextStyle(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-
-                    const SizedBox(height: 40),
-
-                    // Help Text
-                    Container(
-                      padding: const EdgeInsets.all(AppDimensions.paddingM),
-                      decoration: BoxDecoration(
-                        color: AppColors.backgroundCard,
-                        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                        border: Border.all(
-                          color: AppColors.divider,
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(
-                            Icons.info_outline,
-                            color: AppColors.richGold,
-                            size: 24,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              'The reset link will expire in 1 hour for security reasons.',
-                              style: Theme.of(context).textTheme.bodySmall,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                  textAlign: TextAlign.center,
                 ),
-              ),
-            );
-          },
+
+                const SizedBox(height: 16),
+
+                // Description
+                Text(
+                  'Enter your email address and we\'ll send you instructions to reset your password.',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                  textAlign: TextAlign.center,
+                ),
+
+                const SizedBox(height: 40),
+
+                // Email Field
+                AuthTextField(
+                  controller: _emailController,
+                  label: AppStrings.email,
+                  keyboardType: TextInputType.emailAddress,
+                  validator: Validators.validateEmail,
+                  prefixIcon: Icons.email_outlined,
+                  enabled: !_isLoading,
+                  textInputAction: TextInputAction.done,
+                  onSubmitted: (_) => _handleResetPassword(),
+                ),
+
+                const SizedBox(height: 32),
+
+                // Send Button
+                AuthButton(
+                  text: 'Send Reset Link',
+                  onPressed: _isLoading ? null : _handleResetPassword,
+                  isLoading: _isLoading,
+                  icon: Icons.send,
+                ),
+
+                const SizedBox(height: 16),
+
+                // Back to Login
+                TextButton(
+                  onPressed: _isLoading
+                      ? null
+                      : () {
+                          Navigator.of(context).pop();
+                        },
+                  child: const Text(
+                    'Back to Login',
+                    style: TextStyle(
+                      color: AppColors.richGold,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 40),
+
+                // Help Text
+                Container(
+                  padding: const EdgeInsets.all(AppDimensions.paddingM),
+                  decoration: BoxDecoration(
+                    color: AppColors.backgroundCard,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                    border: Border.all(
+                      color: AppColors.divider,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.info_outline,
+                        color: AppColors.richGold,
+                        size: 24,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'The reset link will expire in 1 hour for security reasons.',
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
