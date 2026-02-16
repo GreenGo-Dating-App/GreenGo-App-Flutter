@@ -797,6 +797,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             onPressed: _showNicknameSearch,
             tooltip: 'Search by nickname',
           ),
+          _buildAppBarCoinBalance(),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
@@ -964,15 +965,37 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   Widget _buildMembershipBadgeWidget() {
     return MembershipIndicator(
       tier: _membershipTier,
-      onTap: () {
-        // Navigate to subscription screen
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => BlocProvider(
-              create: (context) => di.sl<SubscriptionBloc>(),
-              child: const SubscriptionSelectionScreen(),
-            ),
+    );
+  }
+
+  Widget _buildAppBarCoinBalance() {
+    return BlocBuilder<CoinBloc, CoinState>(
+      bloc: _coinBloc,
+      buildWhen: (previous, current) =>
+          current is CoinBalanceLoaded || current is CoinBalanceUpdated,
+      builder: (context, state) {
+        int coins = 0;
+        if (state is CoinBalanceLoaded) {
+          coins = state.balance.availableCoins;
+        } else if (state is CoinBalanceUpdated) {
+          coins = state.balance.availableCoins;
+        }
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.monetization_on, color: AppColors.richGold, size: 18),
+              const SizedBox(width: 3),
+              Text(
+                '$coins',
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
         );
       },
