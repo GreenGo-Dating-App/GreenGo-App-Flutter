@@ -11,9 +11,6 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../notifications/domain/entities/notification.dart';
 import '../../../notifications/domain/repositories/notification_repository.dart';
-import '../../../membership/domain/entities/membership.dart';
-import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
-import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../bloc/discovery_bloc.dart';
 import '../bloc/discovery_event.dart';
 import '../bloc/discovery_state.dart';
@@ -406,32 +403,13 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   void _handleRewind(BuildContext context) {
-    // Get membership rules based on user's profile tier
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
-    final rules = MembershipRules.getDefaultsForTier(tier);
-
     context.read<DiscoveryBloc>().add(
-          DiscoveryRewindRequested(
-            userId: userId,
-            membershipRules: rules,
-            membershipTier: tier,
-          ),
+          DiscoveryRewindRequested(userId: userId),
         );
   }
 
   void _handleRewindUnavailable(BuildContext context, String reason) {
     switch (reason) {
-      case 'not_allowed':
-        // Show upgrade dialog — navigate to subscription screen
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => BlocProvider(
-              create: (context) => di.sl<SubscriptionBloc>(),
-              child: const SubscriptionSelectionScreen(),
-            ),
-          ),
-        );
-        break;
       case 'no_previous':
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(

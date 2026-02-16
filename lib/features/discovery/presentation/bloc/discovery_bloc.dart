@@ -276,18 +276,6 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       return;
     }
 
-    // Check membership permission
-    final rules = event.membershipRules;
-    if (rules != null && !rules.canUndoSwipe) {
-      emit(DiscoveryRewindUnavailable(
-        reason: 'not_allowed',
-        cards: cards,
-        currentIndex: currentIndex,
-      ));
-      emit(DiscoveryLoaded(cards: cards, currentIndex: currentIndex));
-      return;
-    }
-
     // Delete the swipe record from Firestore
     final result = await undoSwipe(UndoSwipeParams(
       userId: event.userId,
