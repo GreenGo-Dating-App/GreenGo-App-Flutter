@@ -27,15 +27,6 @@ class SwipeButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        // Rewind button
-        _buildActionButton(
-          icon: Icons.replay,
-          color: AppColors.warningAmber,
-          size: 44,
-          iconSize: 22,
-          onPressed: enabled ? onRewind : null,
-        ),
-
         // Pass button
         _buildActionButton(
           icon: Icons.close,

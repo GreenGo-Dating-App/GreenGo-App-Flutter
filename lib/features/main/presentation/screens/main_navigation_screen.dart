@@ -797,9 +797,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             onPressed: _showNicknameSearch,
             tooltip: 'Search by nickname',
           ),
-          _buildAppBarCoinBalance(),
-          _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
+          _buildAppBarCoinBalance(),
+          const SizedBox(width: 12),
+          _buildMembershipBadgeWidget(),
+          const SizedBox(width: 12),
         ],
       );
     } else if (_currentIndex == 1 || _currentIndex == 2) {
