@@ -258,9 +258,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       // Persist or clear countdown end time
       final prefs = await SharedPreferences.getInstance();
       final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
-      if (!isAdminOrTest &&
-          accessData.approvalStatus == ApprovalStatus.approved &&
-          !accessData.canAccessApp) {
+      if (!isAdminOrTest && accessData.isCountdownActive) {
         // Countdown is active — cache the end timestamp
         prefs.setInt(
           '$_countdownEndKeyPrefix${widget.userId}',
@@ -420,6 +418,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     switch (state) {
       case AppLifecycleState.resumed:
         _activityTrackingService.startTracking();
+        // Re-check access control on every app resume to enforce countdown
+        _loadCachedCountdown();
+        _loadAccessData();
         break;
       case AppLifecycleState.paused:
       case AppLifecycleState.inactive:
@@ -542,16 +543,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       );
     }
 
-    // Check if user is approved but before access date (pre-launch mode)
+    // Check if countdown is active (access date in the future)
     // Admin and test users bypass ALL restrictions (countdown, approval, verification)
     final isAdminOrTestUser = _isAdmin ||
         (_accessData?.isAdmin ?? false) ||
         (_accessData?.isTestUser ?? false);
 
+    // Countdown blocks ALL non-admin/non-tester users until their access date expires
     final isPreLaunchBlocked = !isAdminOrTestUser &&
-        ((_accessData != null &&
-            _accessData!.approvalStatus == ApprovalStatus.approved &&
-            !_accessData!.canAccessApp) ||
+        ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
     // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)

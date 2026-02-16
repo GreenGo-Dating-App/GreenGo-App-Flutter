@@ -811,15 +811,15 @@ class _ChatScreenState extends State<ChatScreen> {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
         ),
-        builder: (ctx) {
+        builder: (bottomSheetCtx) {
           final selectedIndices = <int>{};
           return StatefulBuilder(
-            builder: (ctx, setSheetState) => DraggableScrollableSheet(
+            builder: (_, setSheetState) => DraggableScrollableSheet(
               initialChildSize: 0.6,
               minChildSize: 0.3,
               maxChildSize: 0.9,
               expand: false,
-              builder: (ctx, scrollController) => Column(
+              builder: (_, scrollController) => Column(
                 children: [
                   const SizedBox(height: 8),
                   Container(
@@ -937,8 +937,8 @@ class _ChatScreenState extends State<ChatScreen> {
                             final photosToSelect = selectedIndices
                                 .map((i) => privatePhotos[i] as String)
                                 .toList();
-                            // Close the attachment options sheet first (if open)
-                            Navigator.pop(ctx);
+                            // Close the album bottom sheet
+                            Navigator.pop(bottomSheetCtx);
                             // Use post-frame callback to ensure setState runs after pop completes
                             WidgetsBinding.instance.addPostFrameCallback((_) {
                               if (mounted) {
