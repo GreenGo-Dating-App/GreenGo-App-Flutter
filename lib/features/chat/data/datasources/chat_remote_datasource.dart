@@ -571,13 +571,24 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .map((doc) => ConversationModel.fromFirestore(doc))
           .toList();
 
-      // Filter out conversations with blocked users
+      // Filter out deleted and blocked conversations
       final blockedUserIds = await _getBlockedUserIds(userId);
-      if (blockedUserIds.isEmpty) return conversations;
 
       return conversations.where((conv) {
-        final otherUserId = conv.userId1 == userId ? conv.userId2 : conv.userId1;
-        return !blockedUserIds.contains(otherUserId);
+        // Filter out conversations deleted for both
+        if (conv.isDeleted) return false;
+
+        // Filter out conversations deleted for this user
+        final deletedFor = conv.deletedFor;
+        if (deletedFor != null && deletedFor.containsKey(userId)) return false;
+
+        // Filter out conversations with blocked users
+        if (blockedUserIds.isNotEmpty) {
+          final otherUserId = conv.userId1 == userId ? conv.userId2 : conv.userId1;
+          if (blockedUserIds.contains(otherUserId)) return false;
+        }
+
+        return true;
       }).toList();
     });
   }
@@ -1367,25 +1378,31 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String userId,
   }) async {
     try {
-      // Mark conversation as deleted for this user
+      // Mark conversation as deleted for this user (with timestamp for filtering)
       await firestore.collection('conversations').doc(conversationId).update({
         'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
       });
 
-      // Mark all messages as deleted for this user
+      // Mark all messages as deleted for this user (write into metadata.deletedFor
+      // so getMessagesStream filter picks it up)
       final messagesSnapshot = await firestore
           .collection('conversations')
           .doc(conversationId)
           .collection('messages')
           .get();
 
-      final batch = firestore.batch();
-      for (final doc in messagesSnapshot.docs) {
-        batch.update(doc.reference, {
-          'deletedFor.$userId': true,
-        });
+      // Batch in chunks of 500 (Firestore limit)
+      final docs = messagesSnapshot.docs;
+      for (var i = 0; i < docs.length; i += 500) {
+        final batch = firestore.batch();
+        final chunk = docs.skip(i).take(500);
+        for (final doc in chunk) {
+          batch.update(doc.reference, {
+            'metadata.deletedFor.$userId': true,
+          });
+        }
+        await batch.commit();
       }
-      await batch.commit();
     } catch (e) {
       throw Exception('Failed to delete conversation: $e');
     }
@@ -1413,31 +1430,25 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         throw Exception('User is not part of this conversation');
       }
 
-      // Delete all messages in the conversation
+      // Delete all messages in the conversation (batch in chunks of 500)
       final messagesSnapshot = await firestore
           .collection('conversations')
           .doc(conversationId)
           .collection('messages')
           .get();
 
-      final batch = firestore.batch();
-      for (final doc in messagesSnapshot.docs) {
-        batch.delete(doc.reference);
+      final docs = messagesSnapshot.docs;
+      for (var i = 0; i < docs.length; i += 500) {
+        final batch = firestore.batch();
+        final chunk = docs.skip(i).take(500);
+        for (final doc in chunk) {
+          batch.delete(doc.reference);
+        }
+        await batch.commit();
       }
 
-      // Mark conversation as deleted
-      batch.update(
-        firestore.collection('conversations').doc(conversationId),
-        {
-          'isDeleted': true,
-          'deletedAt': Timestamp.fromDate(DateTime.now()),
-          'deletedBy': userId,
-          'lastMessage': null,
-          'unreadCount': 0,
-        },
-      );
-
-      await batch.commit();
+      // Permanently delete the conversation document
+      await firestore.collection('conversations').doc(conversationId).delete();
     } catch (e) {
       throw Exception('Failed to delete conversation for both: $e');
     }
@@ -1456,7 +1467,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .collection('messages')
           .doc(messageId)
           .update({
-        'deletedFor.$userId': true,
+        'metadata.deletedFor.$userId': true,
       });
     } catch (e) {
       throw Exception('Failed to delete message: $e');

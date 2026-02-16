@@ -79,6 +79,10 @@ class Conversation extends Equatable {
   final String? supportSubject;        // User's initial subject/topic
   final DateTime? supportResolvedAt;   // When the ticket was resolved
 
+  // Deletion tracking
+  final bool isDeleted;
+  final Map<String, dynamic>? deletedFor; // userId → Timestamp of deletion
+
   const Conversation({
     required this.conversationId,
     required this.matchId,
@@ -105,6 +109,8 @@ class Conversation extends Equatable {
     this.supportCategory,
     this.supportSubject,
     this.supportResolvedAt,
+    this.isDeleted = false,
+    this.deletedFor,
   });
 
   /// Get the other user's ID
@@ -257,6 +263,8 @@ class Conversation extends Equatable {
     String? supportCategory,
     String? supportSubject,
     DateTime? supportResolvedAt,
+    bool? isDeleted,
+    Map<String, dynamic>? deletedFor,
   }) {
     return Conversation(
       conversationId: conversationId ?? this.conversationId,
@@ -284,6 +292,8 @@ class Conversation extends Equatable {
       supportCategory: supportCategory ?? this.supportCategory,
       supportSubject: supportSubject ?? this.supportSubject,
       supportResolvedAt: supportResolvedAt ?? this.supportResolvedAt,
+      isDeleted: isDeleted ?? this.isDeleted,
+      deletedFor: deletedFor ?? this.deletedFor,
     );
   }
 
@@ -314,5 +324,7 @@ class Conversation extends Equatable {
         supportCategory,
         supportSubject,
         supportResolvedAt,
+        isDeleted,
+        deletedFor,
       ];
 }

@@ -131,8 +131,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         unreadOnly: true,
       ));
 
-    // Initialize coin bloc for balance display in app bar
+    // Initialize coin bloc for balance display — load immediately then subscribe to stream
     _coinBloc = di.sl<CoinBloc>()
+      ..add(LoadCoinBalance(widget.userId))
       ..add(SubscribeToCoinBalance(widget.userId));
 
     // Initialize profile bloc for shared profile state (MUST be before _screens)
@@ -796,14 +797,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             onPressed: _showNicknameSearch,
             tooltip: 'Search by nickname',
           ),
-          _buildCoinBalanceWidget(),
-          const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
       );
     } else if (_currentIndex == 1 || _currentIndex == 2) {
-      // Matches and Messages - show title and coin balance + notifications + membership badge
+      // Matches and Messages - show title and membership badge
       return AppBar(
         title: Text(
           _currentIndex == 1 ? 'Matches' : 'Messages',
@@ -815,8 +814,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
-          _buildCoinBalanceWidget(),
-          const SizedBox(width: 4),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],

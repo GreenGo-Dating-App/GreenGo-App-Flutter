@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../matching/domain/repositories/matching_repository.dart';
 import '../../domain/entities/swipe_action.dart';
@@ -100,6 +101,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             if (state is DiscoveryRewindUnavailable) {
               _handleRewindUnavailable(context, state.reason);
             }
+            if (state is DiscoverySwipeLimitReached || state is DiscoverySuperLikeLimitReached) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Daily swipe limit reached. Upgrade for more swipes!'),
+                  duration: Duration(seconds: 3),
+                ),
+              );
+            }
           },
           builder: (context, state) {
             if (state is DiscoveryLoading) {
@@ -114,22 +123,45 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               return _buildEmptyState(context);
             }
 
-            if (state is DiscoveryLoaded || state is DiscoverySwiping || state is DiscoveryRewindUnavailable) {
-              final cards = state is DiscoveryLoaded
-                  ? state.cards
-                  : state is DiscoverySwiping
-                      ? state.cards
-                      : (state as DiscoveryRewindUnavailable).cards;
+            // Handle all states that carry cards
+            if (state is DiscoveryLoaded ||
+                state is DiscoverySwiping ||
+                state is DiscoveryRewindUnavailable ||
+                state is DiscoverySwipeCompleted ||
+                state is DiscoverySwipeLimitReached ||
+                state is DiscoverySuperLikeLimitReached) {
+              late final List<DiscoveryCard> cards;
+              late final int currentIndex;
 
-              final currentIndex = state is DiscoveryLoaded
-                  ? state.currentIndex
-                  : state is DiscoverySwiping
-                      ? state.currentIndex
-                      : (state as DiscoveryRewindUnavailable).currentIndex;
+              if (state is DiscoveryLoaded) {
+                cards = state.cards;
+                currentIndex = state.currentIndex;
+              } else if (state is DiscoverySwiping) {
+                cards = state.cards;
+                currentIndex = state.currentIndex;
+              } else if (state is DiscoveryRewindUnavailable) {
+                cards = state.cards;
+                currentIndex = state.currentIndex;
+              } else if (state is DiscoverySwipeCompleted) {
+                cards = state.cards;
+                currentIndex = state.currentIndex;
+              } else if (state is DiscoverySwipeLimitReached) {
+                cards = state.cards;
+                currentIndex = state.currentIndex;
+              } else {
+                final s = state as DiscoverySuperLikeLimitReached;
+                cards = s.cards;
+                currentIndex = s.currentIndex;
+              }
 
               if (currentIndex >= cards.length) {
                 return _buildEmptyState(context);
               }
+
+              final enabled = state is DiscoveryLoaded ||
+                  state is DiscoveryRewindUnavailable ||
+                  state is DiscoverySwipeLimitReached ||
+                  state is DiscoverySuperLikeLimitReached;
 
               return Column(
                 children: [
@@ -142,7 +174,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                       context,
                       cards,
                       currentIndex,
-                      state is! DiscoverySwiping,
+                      enabled,
                     ),
                   ),
 
@@ -150,7 +182,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   _buildActionButtons(
                     context,
                     cards[currentIndex],
-                    state is! DiscoverySwiping,
+                    enabled,
                   ),
 
                   const SizedBox(height: 24),

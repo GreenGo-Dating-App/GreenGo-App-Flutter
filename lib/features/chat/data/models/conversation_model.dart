@@ -33,6 +33,8 @@ class ConversationModel extends Conversation {
     super.supportCategory,
     super.supportSubject,
     super.supportResolvedAt,
+    super.isDeleted,
+    super.deletedFor,
   });
 
   /// Create from Conversation entity
@@ -63,6 +65,8 @@ class ConversationModel extends Conversation {
       supportCategory: conversation.supportCategory,
       supportSubject: conversation.supportSubject,
       supportResolvedAt: conversation.supportResolvedAt,
+      isDeleted: conversation.isDeleted,
+      deletedFor: conversation.deletedFor,
     );
   }
 
@@ -151,6 +155,8 @@ class ConversationModel extends Conversation {
       supportResolvedAt: data['supportResolvedAt'] != null
           ? (data['supportResolvedAt'] as Timestamp).toDate()
           : null,
+      isDeleted: data['isDeleted'] as bool? ?? false,
+      deletedFor: data['deletedFor'] as Map<String, dynamic>?,
     );
   }
 
@@ -268,6 +274,8 @@ class ConversationModel extends Conversation {
       supportCategory: supportCategory,
       supportSubject: supportSubject,
       supportResolvedAt: supportResolvedAt,
+      isDeleted: isDeleted,
+      deletedFor: deletedFor,
     );
   }
 }
