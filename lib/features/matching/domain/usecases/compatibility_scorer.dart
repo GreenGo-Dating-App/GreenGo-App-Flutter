@@ -41,13 +41,14 @@ class CompatibilityScorer {
       languageScore: languageScore,
     );
 
-    // Calculate weighted overall score
-    final overallScore = _calculateWeightedScore(
+    // Calculate weighted overall score, mapped to 50-100 range
+    final rawScore = _calculateWeightedScore(
       locationScore: locationScore,
       ageScore: ageScore,
       interestScore: interestScore,
       languageScore: languageScore,
-    ).clamp(0.0, 100.0);
+    );
+    final overallScore = (50.0 + (rawScore * 0.5)).clamp(50.0, 100.0);
 
     return MatchScore(
       userId1: profile1.userId,
@@ -171,8 +172,9 @@ class CompatibilityScorer {
       languageScore: languageScore,
     );
 
-    // 70% weighted, 30% ML vector similarity
-    final overallScore = ((weightedScore * 0.7) + (vectorScore * 0.3)).clamp(0.0, 100.0);
+    // 70% weighted, 30% ML vector similarity, mapped to 50-100 range
+    final rawScore = (weightedScore * 0.7) + (vectorScore * 0.3);
+    final overallScore = (50.0 + (rawScore * 0.5)).clamp(50.0, 100.0);
 
     return MatchScore(
       userId1: profile1.userId,
