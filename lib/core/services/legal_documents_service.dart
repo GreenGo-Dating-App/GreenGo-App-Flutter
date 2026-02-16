@@ -1,8 +1,7 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
 
 /// Supported language codes
 class SupportedLanguage {
@@ -26,10 +25,6 @@ const List<SupportedLanguage> supportedLanguages = [
   SupportedLanguage(code: 'fr', name: 'Français', flag: ''),
   SupportedLanguage(code: 'de', name: 'Deutsch', flag: ''),
   SupportedLanguage(code: 'it', name: 'Italiano', flag: ''),
-  SupportedLanguage(code: 'zh', name: '中文', flag: ''),
-  SupportedLanguage(code: 'ja', name: '日本語', flag: ''),
-  SupportedLanguage(code: 'ko', name: '한국어', flag: ''),
-  SupportedLanguage(code: 'ar', name: 'العربية', flag: ''),
 ];
 
 /// Document types
@@ -48,12 +43,13 @@ extension LegalDocumentTypeExtension on LegalDocumentType {
     }
   }
 
-  String get githubFileName {
+  /// Asset file prefix (matches file naming in assets/legal/)
+  String get assetPrefix {
     switch (this) {
       case LegalDocumentType.termsAndConditions:
-        return 'TERMS_AND_CONDITIONS';
+        return 'terms-and-conditions';
       case LegalDocumentType.privacyPolicy:
-        return 'PRIVACY_POLICY';
+        return 'privacy-policy';
     }
   }
 
@@ -116,21 +112,28 @@ class LegalDocument {
     );
   }
 
-  /// Create from GitHub markdown content
-  factory LegalDocument.fromGitHub({
+  /// Create from bundled asset content
+  factory LegalDocument.fromAsset({
     required LegalDocumentType type,
     required String languageCode,
     required String content,
     String? version,
   }) {
-    // Extract title from first line if it's a markdown header
+    // Extract title from first line if it looks like a header
     String title = type.displayName;
     String body = content;
 
     final lines = content.split('\n');
-    if (lines.isNotEmpty && lines[0].startsWith('#')) {
-      title = lines[0].replaceAll('#', '').trim();
-      body = lines.skip(1).join('\n').trim();
+    if (lines.isNotEmpty) {
+      final firstLine = lines[0].trim();
+      if (firstLine.startsWith('#')) {
+        title = firstLine.replaceAll('#', '').trim();
+        body = lines.skip(1).join('\n').trim();
+      } else if (firstLine.isNotEmpty &&
+          !firstLine.startsWith('=') &&
+          firstLine.length < 100) {
+        title = firstLine;
+      }
     }
 
     return LegalDocument(
@@ -141,9 +144,9 @@ class LegalDocument {
       content: body,
       version: version ?? '1.0',
       isActive: true,
-      lastUpdated: DateTime.now(),
-      updatedBy: 'github',
-      createdAt: DateTime.now(),
+      lastUpdated: DateTime(2026, 1, 26),
+      updatedBy: 'bundled',
+      createdAt: DateTime(2026, 1, 26),
     );
   }
 
@@ -163,18 +166,11 @@ class LegalDocument {
   }
 }
 
-/// Service for fetching legal documents from GitHub repository
+/// Service for loading legal documents from bundled assets
 class LegalDocumentsService extends ChangeNotifier {
   static final LegalDocumentsService _instance = LegalDocumentsService._internal();
   factory LegalDocumentsService() => _instance;
   LegalDocumentsService._internal();
-
-  // GitHub repository configuration
-  // Update these values to match your GitHub repository
-  static const String _githubOwner = 'AnarTechnologies';
-  static const String _githubRepo = 'GreenGo-App-Flutter';
-  static const String _githubBranch = 'main';
-  static const String _legalDocsPath = 'legal';
 
   // Cached documents
   final Map<String, LegalDocument> _documentsCache = {};
@@ -185,19 +181,19 @@ class LegalDocumentsService extends ChangeNotifier {
   bool get isLoading => _isLoading;
   String? get error => _error;
 
-  /// Build GitHub raw content URL
-  String _buildGitHubUrl(LegalDocumentType type, String languageCode) {
-    final fileName = '${type.githubFileName}_$languageCode.md';
-    return 'https://raw.githubusercontent.com/$_githubOwner/$_githubRepo/$_githubBranch/$_legalDocsPath/$fileName';
+  /// Build asset path for a document type and language
+  String _buildAssetPath(LegalDocumentType type, String languageCode) {
+    return 'assets/legal/${type.assetPrefix}-$languageCode.txt';
   }
 
-  /// Get a legal document by type and language code from GitHub
-  /// Falls back to English if the requested language is not available
+  /// Get a legal document by type and language code from bundled assets
+  /// Falls back: specific locale → base language → English
   Future<LegalDocument?> getDocument(
     LegalDocumentType type,
     String languageCode,
   ) async {
-    final docId = '${type.firestoreKey}_$languageCode';
+    final normalizedLang = languageCode.replaceAll('-', '_');
+    final docId = '${type.firestoreKey}_$normalizedLang';
 
     // Check cache first
     if (_documentsCache.containsKey(docId)) {
@@ -208,21 +204,22 @@ class LegalDocumentsService extends ChangeNotifier {
       _isLoading = true;
       notifyListeners();
 
-      // Normalize language code (e.g., pt-BR -> pt_BR)
-      final normalizedLang = languageCode.replaceAll('-', '_');
+      // Try loading the exact language
+      String? content = await _tryLoadAsset(type, normalizedLang);
 
-      // Try fetching from GitHub
-      final url = _buildGitHubUrl(type, normalizedLang);
-      debugPrint('Fetching legal document from: $url');
+      // Try base language (e.g., pt_BR -> pt)
+      if (content == null && normalizedLang.contains('_')) {
+        final baseLang = normalizedLang.split('_')[0];
+        content = await _tryLoadAsset(type, baseLang);
+      }
 
-      final response = await http.get(
-        Uri.parse(url),
-        headers: {'Accept': 'text/plain'},
-      ).timeout(const Duration(seconds: 10));
+      // Fall back to English
+      if (content == null && normalizedLang != 'en') {
+        content = await _tryLoadAsset(type, 'en');
+      }
 
-      if (response.statusCode == 200) {
-        final content = utf8.decode(response.bodyBytes);
-        final document = LegalDocument.fromGitHub(
+      if (content != null) {
+        final document = LegalDocument.fromAsset(
           type: type,
           languageCode: normalizedLang,
           content: content,
@@ -232,47 +229,25 @@ class LegalDocumentsService extends ChangeNotifier {
         return document;
       }
 
-      // Try base language (e.g., pt_BR -> pt)
-      if (normalizedLang.contains('_')) {
-        final baseLang = normalizedLang.split('_')[0];
-        debugPrint('Trying base language: $baseLang');
-
-        final baseUrl = _buildGitHubUrl(type, baseLang);
-        final baseResponse = await http.get(
-          Uri.parse(baseUrl),
-          headers: {'Accept': 'text/plain'},
-        ).timeout(const Duration(seconds: 10));
-
-        if (baseResponse.statusCode == 200) {
-          final content = utf8.decode(baseResponse.bodyBytes);
-          final document = LegalDocument.fromGitHub(
-            type: type,
-            languageCode: baseLang,
-            content: content,
-          );
-          _documentsCache[docId] = document;
-          _error = null;
-          return document;
-        }
-      }
-
-      // Fall back to English if requested language not found
-      if (normalizedLang != 'en') {
-        debugPrint('Legal document not found for $normalizedLang, falling back to English');
-        return getDocument(type, 'en');
-      }
-
       _error = 'Document not found';
       return null;
     } catch (e) {
-      debugPrint('Error fetching legal document from GitHub: $e');
+      debugPrint('Error loading legal document: $e');
       _error = e.toString();
-
-      // Return null, the screen will show fallback content
       return null;
     } finally {
       _isLoading = false;
       notifyListeners();
+    }
+  }
+
+  /// Try to load an asset file, return null if not found
+  Future<String?> _tryLoadAsset(LegalDocumentType type, String languageCode) async {
+    try {
+      final path = _buildAssetPath(type, languageCode);
+      return await rootBundle.loadString(path);
+    } catch (_) {
+      return null;
     }
   }
 
@@ -286,8 +261,7 @@ class LegalDocumentsService extends ChangeNotifier {
     return getDocument(LegalDocumentType.privacyPolicy, languageCode);
   }
 
-  /// Watch document is not supported for GitHub
-  /// Returns a stream that fetches once and completes
+  /// Watch document - returns a stream that loads once from assets
   Stream<LegalDocument?> watchDocument(
     LegalDocumentType type,
     String languageCode,
@@ -295,28 +269,20 @@ class LegalDocumentsService extends ChangeNotifier {
     yield await getDocument(type, languageCode);
   }
 
-  /// Get all available documents for a type
-  /// For GitHub, this returns cached documents only
+  /// Get all available documents for a type (cached only)
   Future<List<LegalDocument>> getAllDocumentsForType(LegalDocumentType type) async {
     return _documentsCache.values
         .where((doc) => doc.type == type)
         .toList();
   }
 
-  /// Check if a document exists on GitHub
+  /// Check if a document exists for a language
   Future<bool> documentExists(LegalDocumentType type, String languageCode) async {
-    try {
-      final url = _buildGitHubUrl(type, languageCode.replaceAll('-', '_'));
-      final response = await http.head(Uri.parse(url))
-          .timeout(const Duration(seconds: 5));
-      return response.statusCode == 200;
-    } catch (e) {
-      return false;
-    }
+    final content = await _tryLoadAsset(type, languageCode.replaceAll('-', '_'));
+    return content != null;
   }
 
-  /// Get list of available languages for a document type
-  /// Returns default supported languages (checking GitHub would be slow)
+  /// Get list of available languages
   Future<List<String>> getAvailableLanguages(LegalDocumentType type) async {
     return supportedLanguages.map((l) => l.code).toList();
   }

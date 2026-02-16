@@ -1,0 +1,1000 @@
+GREENGO CHAT PRIVACY POLICY
+
+Last Updated: January 26, 2026
+Effective Date: January 26, 2026
+
+================================================================================
+INTRODUCTION
+================================================================================
+
+Welcome to GreenGo Chat ("GreenGo," "we," "us," or "our"). This Privacy Policy explains how Universo Kardasha Ltda., a company incorporated under the laws of the Federative Republic of Brazil, with its registered office at Sao Paulo, Brazil ("Company," "Data Controller"), collects, uses, discloses, and safeguards your personal data when you use our mobile application, website, and related services (collectively, the "Services").
+
+We are committed to protecting your privacy and ensuring transparency about how we handle your personal information. This Privacy Policy has been drafted in compliance with:
+
+- Brazilian General Data Protection Law (Lei Geral de Protecao de Dados - LGPD, Law No. 13,709/2018)
+- European Union General Data Protection Regulation (GDPR, Regulation 2016/679)
+- California Consumer Privacy Act and California Privacy Rights Act (CCPA/CPRA)
+- Other applicable international data protection laws
+
+By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with our policies and practices, please do not use our Services.
+
+Contact Information:
+- Data Controller: Universo Kardasha Ltda.
+- Data Protection Officer (DPO): privacy@greengochat.com
+- Email: support@greengochat.com
+- Phone: +55 11 911142911
+- Address: Sao Paulo, SP, Brazil
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+1. Definitions
+2. Information We Collect
+3. How We Collect Information
+4. Legal Basis for Processing (LGPD/GDPR)
+5. How We Use Your Information
+6. How We Share Your Information
+7. International Data Transfers
+8. Data Retention
+9. Data Security
+10. Your Rights Under LGPD (Brazil)
+11. Your Rights Under GDPR (European Economic Area)
+12. Your Rights Under CCPA/CPRA (California)
+13. Rights Under Other Jurisdictions
+14. Children's Privacy
+15. Automated Decision-Making and Profiling
+16. Cookies and Tracking Technologies
+17. Third-Party Links and Services
+18. Changes to This Privacy Policy
+19. How to Exercise Your Rights
+20. Complaints and Dispute Resolution
+21. Governing Law and Jurisdiction
+22. Contact Us
+
+================================================================================
+1. DEFINITIONS
+================================================================================
+
+For the purposes of this Privacy Policy:
+
+"Personal Data" means any information relating to an identified or identifiable natural person, including but not limited to name, identification number, location data, online identifier, or factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that person.
+
+"Sensitive Personal Data" means personal data revealing racial or ethnic origin, religious beliefs, political opinions, trade union membership, health data, genetic data, biometric data, sexual orientation, or data concerning sex life.
+
+"Processing" means any operation performed on personal data, including collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure, dissemination, alignment, combination, restriction, erasure, or destruction.
+
+"Data Subject" means the natural person to whom the personal data relates.
+
+"Controller" means the natural or legal person that determines the purposes and means of processing personal data.
+
+"Processor" means a natural or legal person that processes personal data on behalf of the Controller.
+
+"Consent" means freely given, specific, informed, and unambiguous indication of the data subject's wishes by which they signify agreement to the processing of personal data.
+
+"Anonymization" means processing of personal data in such a manner that the data can no longer be attributed to a specific data subject without the use of additional information.
+
+================================================================================
+2. INFORMATION WE COLLECT
+================================================================================
+
+2.1 Information You Provide Directly
+
+a) Account Registration Information:
+   - Full name
+   - Email address
+   - Phone number
+   - Date of birth
+   - Gender
+   - Password (stored in encrypted form)
+
+b) Profile Information:
+   - Profile photographs and videos
+   - Biography/description
+   - Physical characteristics (height, body type)
+   - Interests and hobbies
+   - Education and occupation
+   - Relationship preferences
+   - Languages spoken
+   - Lifestyle choices (smoking, drinking, diet)
+
+c) Identity Verification Information:
+   - Government-issued identification documents
+   - Selfie photographs for verification
+   - Facial biometric data (for verification purposes only)
+
+d) Communication Data:
+   - Messages exchanged with other users
+   - Reports and feedback submitted
+   - Customer support correspondence
+   - Survey responses
+
+e) Payment Information:
+   - Payment card details (processed by third-party payment processors)
+   - Billing address
+   - Transaction history
+   - Subscription information
+
+f) Content You Create:
+   - Photos and videos uploaded
+   - Text content in profiles and messages
+   - Audio messages (if applicable)
+
+2.2 Information Collected Automatically
+
+a) Device Information:
+   - Device type and model
+   - Operating system and version
+   - Unique device identifiers (IMEI, advertising ID)
+   - Mobile network information
+   - Browser type and version
+   - Screen resolution and settings
+
+b) Location Information:
+   - Precise geolocation (GPS coordinates) when enabled
+   - Approximate location based on IP address
+   - Location history (for matching purposes)
+   - Time zone
+
+c) Usage Information:
+   - App features used
+   - Time spent on the app
+   - Interaction patterns (swipes, likes, matches)
+   - Search queries and filters applied
+   - Pages and profiles viewed
+   - Click patterns and navigation paths
+
+d) Log Information:
+   - IP address
+   - Access dates and times
+   - App crashes and errors
+   - Referring URLs
+   - System activity logs
+
+e) Cookies and Similar Technologies:
+   - Session cookies
+   - Persistent cookies
+   - Web beacons
+   - Pixel tags
+   - Local storage data
+
+2.3 Information From Third Parties
+
+a) Social Media Platforms:
+   - Public profile information (if you connect social accounts)
+   - Friends list (with your permission)
+   - Photos from connected accounts
+
+b) Authentication Providers:
+   - Google Sign-In data
+   - Apple Sign-In data
+   - Facebook Login data
+
+c) Analytics and Advertising Partners:
+   - Demographic information
+   - Interest-based data
+   - Advertising identifiers
+
+d) Other Users:
+   - Reports or complaints about you
+   - Tags or mentions in shared content
+
+e) Public Sources:
+   - Publicly available information
+   - Government databases (for verification)
+
+2.4 Sensitive Personal Data
+
+We may collect and process the following sensitive personal data with your explicit consent:
+
+- Sexual orientation and gender identity
+- Racial or ethnic origin (if voluntarily provided in profile)
+- Religious beliefs (if voluntarily provided)
+- Health information relevant to dating (if voluntarily disclosed)
+- Biometric data (for identity verification only)
+
+You have the right to withdraw consent for processing sensitive data at any time.
+
+================================================================================
+2.5 MOBILE APPLICATION PERMISSIONS
+================================================================================
+
+Our mobile application requires certain device permissions to function properly. Below is a comprehensive list of permissions we may request and how they are used:
+
+a) Camera Permission (android.permission.CAMERA)
+   - Purpose: To allow you to take photos for your profile, capture images for identity verification, and share photos in messages with other users.
+   - Data Use: Photos taken using the camera are uploaded to our servers for profile display, identity verification, or message sharing.
+   - Storage: Images are stored securely on our servers in accordance with our data retention policies.
+   - Third-Party Sharing: Profile photos may be visible to other users. Verification photos are processed by our identity verification service providers.
+   - User Control: You can revoke camera permission at any time through your device settings. Some features requiring photos will be unavailable without this permission.
+
+b) Location Permission (android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION)
+   - Purpose: To show you potential matches near your location and enable location-based features.
+   - Data Use: Location data is used to calculate distances and suggest nearby users.
+   - Storage: Location data is stored on our servers and updated when you use the app.
+   - Third-Party Sharing: Approximate location may be shown to other users (city/region level). Precise location is not shared with other users.
+   - User Control: You can disable location permissions at any time. The app will function with limited features without location access.
+
+c) Storage Permission (android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE)
+   - Purpose: To allow you to select and upload photos from your device gallery.
+   - Data Use: Selected photos are uploaded to our servers for profile or messaging purposes.
+   - Storage: We do not access or store any files other than those you explicitly select to upload.
+   - Third-Party Sharing: Only photos you choose to share are uploaded and potentially visible to other users.
+   - User Control: You can revoke storage permission at any time. Photo upload from gallery will be unavailable without this permission.
+
+d) Internet Access (android.permission.INTERNET)
+   - Purpose: Required for the app to communicate with our servers, load content, and enable messaging.
+   - Data Use: All data transmitted over the internet is encrypted using TLS 1.3.
+   - User Control: This permission is essential for app functionality and cannot be disabled.
+
+e) Network State (android.permission.ACCESS_NETWORK_STATE)
+   - Purpose: To check internet connectivity and optimize data usage.
+   - Data Use: Used only to determine if the device is connected to the internet.
+   - User Control: This permission is essential for app functionality.
+
+f) Push Notifications (android.permission.POST_NOTIFICATIONS)
+   - Purpose: To send you notifications about new messages, matches, and important updates.
+   - Data Use: Notification tokens are stored to deliver push notifications.
+   - Third-Party Sharing: We use Firebase Cloud Messaging (Google) to deliver notifications.
+   - User Control: You can disable notifications at any time through your device settings or in-app preferences.
+
+g) Vibration (android.permission.VIBRATE)
+   - Purpose: To provide haptic feedback for notifications and interactions.
+   - Data Use: No data is collected through this permission.
+   - User Control: You can control vibration settings through your device settings.
+
+h) Wake Lock (android.permission.WAKE_LOCK)
+   - Purpose: To ensure notifications are delivered even when the device is in sleep mode.
+   - Data Use: No data is collected through this permission.
+
+i) Biometric Authentication (android.permission.USE_BIOMETRIC)
+   - Purpose: To provide secure login using fingerprint or face recognition.
+   - Data Use: Biometric data is processed locally on your device and never transmitted to our servers.
+   - User Control: You can choose to use password authentication instead.
+
+HOW TO MANAGE PERMISSIONS:
+
+Android Users:
+1. Go to Settings > Apps > GreenGo Chat > Permissions
+2. Toggle individual permissions on or off
+3. Some features may be limited when permissions are disabled
+
+iOS Users:
+1. Go to Settings > GreenGo Chat
+2. Toggle individual permissions on or off
+3. Some features may be limited when permissions are disabled
+
+We only request permissions that are necessary for the app's core functionality or optional features you choose to use. We do not access any data beyond what is necessary for the stated purposes.
+
+================================================================================
+3. HOW WE COLLECT INFORMATION
+================================================================================
+
+3.1 Direct Collection
+- When you register for an account
+- When you complete or update your profile
+- When you communicate with other users
+- When you contact customer support
+- When you participate in surveys or promotions
+- When you make purchases or subscriptions
+
+3.2 Automatic Collection
+- Through cookies and tracking technologies
+- Through server logs when you access our Services
+- Through device sensors (GPS, accelerometer)
+- Through analytics tools integrated into our Services
+
+3.3 Third-Party Collection
+- From social media platforms you connect
+- From authentication providers
+- From advertising partners
+- From analytics service providers
+
+================================================================================
+4. LEGAL BASIS FOR PROCESSING (LGPD/GDPR)
+================================================================================
+
+We process your personal data based on the following legal grounds:
+
+4.1 Performance of Contract (LGPD Art. 7, V / GDPR Art. 6(1)(b))
+Processing necessary to provide our Services, including:
+- Account creation and management
+- Profile display to other users
+- Facilitating matches and communications
+- Processing payments and subscriptions
+
+4.2 Consent (LGPD Art. 7, I / GDPR Art. 6(1)(a))
+Where you have given explicit consent for:
+- Processing of sensitive personal data
+- Marketing communications
+- Location tracking
+- Facial recognition for verification
+- Sharing data with advertising partners
+
+4.3 Legitimate Interests (LGPD Art. 7, IX / GDPR Art. 6(1)(f))
+Processing necessary for our legitimate interests, including:
+- Improving and developing our Services
+- Ensuring platform security and preventing fraud
+- Conducting analytics and research
+- Enforcing our Terms of Service
+- Personalizing user experience
+
+4.4 Legal Obligation (LGPD Art. 7, II / GDPR Art. 6(1)(c))
+Processing necessary to comply with legal obligations:
+- Responding to lawful requests from authorities
+- Tax and accounting requirements
+- Data retention mandated by law
+- Reporting illegal content or activities
+
+4.5 Protection of Life (LGPD Art. 7, VII / GDPR Art. 6(1)(d))
+Processing necessary to protect vital interests:
+- Emergency situations
+- Preventing imminent harm to users
+
+4.6 Exercise of Rights (LGPD Art. 7, VI)
+Processing necessary for the regular exercise of rights in judicial, administrative, or arbitral proceedings.
+
+================================================================================
+5. HOW WE USE YOUR INFORMATION
+================================================================================
+
+5.1 Providing and Improving Services
+- Creating and managing your account
+- Displaying your profile to other users
+- Facilitating matches based on preferences and location
+- Enabling communication between matched users
+- Processing subscriptions and payments
+- Providing customer support
+
+5.2 Personalization
+- Recommending potential matches
+- Customizing content and features
+- Remembering your preferences
+- Tailoring notifications
+
+5.3 Safety and Security
+- Verifying user identities
+- Detecting and preventing fraud
+- Identifying fake or malicious accounts
+- Monitoring for violations of Terms of Service
+- Protecting against unauthorized access
+- Investigating reports and complaints
+
+5.4 Analytics and Research
+- Understanding how users interact with our Services
+- Measuring effectiveness of features
+- Conducting statistical analysis
+- Improving algorithms and matching systems
+- Developing new features and services
+
+5.5 Communications
+- Sending service-related notifications
+- Providing updates about your account
+- Responding to inquiries and support requests
+- Sending marketing communications (with consent)
+- Notifying about policy changes
+
+5.6 Legal and Compliance
+- Complying with applicable laws and regulations
+- Responding to legal requests and court orders
+- Enforcing our Terms of Service
+- Protecting our legal rights and interests
+- Resolving disputes
+
+5.7 Advertising
+- Displaying relevant advertisements (with consent)
+- Measuring advertising effectiveness
+- Working with advertising partners
+
+================================================================================
+6. HOW WE SHARE YOUR INFORMATION
+================================================================================
+
+6.1 With Other Users
+Your profile information is visible to other users of the Service, including:
+- Profile photos and videos
+- Bio and personal descriptions
+- Age and location (approximate)
+- Interests and preferences
+- Any other information you choose to share
+
+Messages are shared only with the users you communicate with.
+
+6.2 With Service Providers
+We share data with third-party service providers who perform services on our behalf:
+
+- Cloud hosting providers (data storage and processing)
+- Payment processors (transaction processing)
+- Analytics providers (usage analysis)
+- Customer support platforms (support services)
+- Email service providers (communications)
+- SMS providers (verification and notifications)
+- Content moderation services (safety)
+- Identity verification services (fraud prevention)
+
+All service providers are contractually bound to protect your data and use it only for specified purposes.
+
+6.3 With Business Partners
+- Advertising partners (with consent)
+- Marketing partners (with consent)
+- Research partners (anonymized data only)
+
+6.4 For Legal Reasons
+We may disclose your information when required by law or when we believe in good faith that disclosure is necessary to:
+- Comply with legal obligations or valid legal processes
+- Protect and defend our rights or property
+- Prevent or investigate possible wrongdoing
+- Protect the personal safety of users or the public
+- Respond to requests from law enforcement authorities
+
+6.5 Business Transfers
+In the event of a merger, acquisition, reorganization, bankruptcy, or sale of assets, your personal data may be transferred to the acquiring entity. We will notify you of any such change and your choices regarding your data.
+
+6.6 With Your Consent
+We may share your information for other purposes with your explicit consent.
+
+6.7 Aggregated and Anonymized Data
+We may share aggregated or anonymized data that cannot reasonably be used to identify you for research, analysis, and other purposes.
+
+================================================================================
+7. INTERNATIONAL DATA TRANSFERS
+================================================================================
+
+7.1 Transfer Mechanisms
+
+As a global service, your personal data may be transferred to and processed in countries other than your country of residence, including Brazil, the United States, and countries within the European Economic Area.
+
+We ensure appropriate safeguards for international transfers through:
+
+a) Standard Contractual Clauses (SCCs)
+   - EU-approved standard contractual clauses for transfers from the EEA
+   - Brazilian standard contractual clauses as approved by ANPD
+
+b) Adequacy Decisions
+   - Transfers to countries recognized as providing adequate protection
+
+c) Binding Corporate Rules
+   - Where applicable, approved binding corporate rules
+
+d) Specific Derogations
+   - Performance of contract with you
+   - Your explicit consent
+   - Establishment, exercise, or defense of legal claims
+
+7.2 Your Rights Regarding Transfers
+
+You have the right to:
+- Request information about the safeguards in place for international transfers
+- Obtain a copy of the relevant transfer mechanisms
+- Lodge a complaint with your local data protection authority
+
+================================================================================
+8. DATA RETENTION
+================================================================================
+
+8.1 Retention Periods
+
+We retain your personal data for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+
+a) Active Account Data
+   - Retained for the duration of your account plus 1 year after deletion
+   - Allows for account recovery and compliance with legal obligations
+
+b) Profile and Communication Data
+   - Profile data: Duration of account plus 6 months
+   - Messages: 6 months after account closure (unless reported)
+   - Reported content: Up to 3 years for investigation purposes
+
+c) Financial Records
+   - Payment records: 5 years (Brazilian tax law requirement)
+   - Transaction history: 5 years
+   - Invoices and receipts: 5 years
+
+d) Security and Fraud Prevention Data
+   - IP logs: 6 months
+   - Security incident data: 5 years
+   - Banned account data: Indefinitely (to prevent re-registration)
+
+e) Legal and Compliance Data
+   - Legal hold data: Duration of legal proceedings plus 5 years
+   - Regulatory compliance data: As required by applicable law
+
+f) Analytics Data
+   - Aggregated analytics: Indefinitely (anonymized)
+   - Individual usage logs: 2 years
+
+8.2 Deletion Process
+
+Upon account deletion request:
+- Your profile is immediately hidden from other users
+- Your data is deleted or anonymized within 30 days
+- Backup copies are purged within 90 days
+- Certain data may be retained for legal compliance
+
+8.3 Exceptions to Deletion
+
+We may retain data beyond stated periods when:
+- Required by applicable law
+- Necessary for dispute resolution
+- Needed to prevent fraud or abuse
+- Subject to a legal hold
+- Required for legitimate business purposes
+
+================================================================================
+9. DATA SECURITY
+================================================================================
+
+9.1 Technical Measures
+
+We implement industry-standard security measures to protect your personal data:
+
+a) Encryption
+   - TLS 1.3 encryption for data in transit
+   - AES-256 encryption for data at rest
+   - End-to-end encryption for sensitive communications
+
+b) Access Controls
+   - Role-based access control (RBAC)
+   - Multi-factor authentication for administrative access
+   - Regular access reviews and audits
+
+c) Infrastructure Security
+   - Firewalls and intrusion detection systems
+   - DDoS protection
+   - Regular security patches and updates
+   - Secure cloud infrastructure
+
+d) Application Security
+   - Secure coding practices
+   - Regular vulnerability assessments
+   - Penetration testing
+   - Security code reviews
+
+9.2 Organizational Measures
+
+a) Personnel Security
+   - Background checks for employees with data access
+   - Confidentiality agreements
+   - Regular security awareness training
+   - Principle of least privilege
+
+b) Policies and Procedures
+   - Information security policies
+   - Incident response procedures
+   - Data classification protocols
+   - Vendor security assessments
+
+c) Audits and Compliance
+   - Regular internal security audits
+   - Third-party security assessments
+   - Compliance monitoring
+   - Risk assessments
+
+9.3 Incident Response
+
+In the event of a data breach:
+- We will investigate and contain the incident promptly
+- We will notify affected users within 72 hours when required
+- We will notify relevant data protection authorities as required by law
+- We will take measures to prevent future incidents
+
+9.4 Your Role in Security
+
+We encourage you to:
+- Use a strong, unique password
+- Enable two-factor authentication
+- Be cautious about sharing personal information
+- Report suspicious activity immediately
+- Keep your app and device software updated
+
+================================================================================
+10. YOUR RIGHTS UNDER LGPD (BRAZIL)
+================================================================================
+
+Under the Brazilian General Data Protection Law (LGPD), you have the following rights:
+
+10.1 Right to Confirmation and Access (Art. 18, I and II)
+You have the right to obtain confirmation of the existence of processing and access to your personal data.
+
+10.2 Right to Correction (Art. 18, III)
+You have the right to request correction of incomplete, inaccurate, or outdated personal data.
+
+10.3 Right to Anonymization, Blocking, or Deletion (Art. 18, IV)
+You have the right to request anonymization, blocking, or deletion of unnecessary, excessive, or non-compliant personal data.
+
+10.4 Right to Portability (Art. 18, V)
+You have the right to request portability of your personal data to another service provider.
+
+10.5 Right to Deletion (Art. 18, VI)
+You have the right to request deletion of personal data processed with your consent.
+
+10.6 Right to Information About Sharing (Art. 18, VII)
+You have the right to obtain information about public and private entities with which we have shared your data.
+
+10.7 Right to Information About Consent Denial (Art. 18, VIII)
+You have the right to be informed about the possibility of denying consent and the consequences of such denial.
+
+10.8 Right to Revoke Consent (Art. 18, IX)
+You have the right to revoke your consent at any time through an express request.
+
+10.9 Right to Petition ANPD (Art. 18, Paragraph 1)
+You have the right to file a complaint with the Brazilian National Data Protection Authority (ANPD).
+
+10.10 Right to Object (Art. 18, Paragraph 2)
+You have the right to object to processing that does not comply with LGPD.
+
+10.11 Right to Review Automated Decisions (Art. 20)
+You have the right to request review of decisions made solely based on automated processing that affect your interests.
+
+Response Time: We will respond to your requests within 15 days as required by LGPD.
+
+================================================================================
+11. YOUR RIGHTS UNDER GDPR (EUROPEAN ECONOMIC AREA)
+================================================================================
+
+If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under GDPR:
+
+11.1 Right of Access (Art. 15)
+You have the right to obtain confirmation of whether we process your personal data and access to that data.
+
+11.2 Right to Rectification (Art. 16)
+You have the right to obtain rectification of inaccurate personal data and completion of incomplete data.
+
+11.3 Right to Erasure ("Right to Be Forgotten") (Art. 17)
+You have the right to request erasure of your personal data in certain circumstances.
+
+11.4 Right to Restriction of Processing (Art. 18)
+You have the right to obtain restriction of processing in certain circumstances.
+
+11.5 Right to Data Portability (Art. 20)
+You have the right to receive your personal data in a structured, commonly used, machine-readable format.
+
+11.6 Right to Object (Art. 21)
+You have the right to object to processing based on legitimate interests or for direct marketing purposes.
+
+11.7 Right Not to Be Subject to Automated Decision-Making (Art. 22)
+You have the right not to be subject to decisions based solely on automated processing, including profiling, that produce legal or similarly significant effects.
+
+11.8 Right to Withdraw Consent (Art. 7)
+Where processing is based on consent, you have the right to withdraw consent at any time.
+
+11.9 Right to Lodge a Complaint (Art. 77)
+You have the right to lodge a complaint with a supervisory authority in your Member State.
+
+Response Time: We will respond to your requests within 30 days (extendable by 60 days for complex requests).
+
+EU Representative: For GDPR purposes, you may contact our EU representative at: eu-representative@greengochat.com
+
+================================================================================
+12. YOUR RIGHTS UNDER CCPA/CPRA (CALIFORNIA)
+================================================================================
+
+If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):
+
+12.1 Right to Know (Cal. Civ. Code Section 1798.100)
+You have the right to know:
+- Categories of personal information collected
+- Sources of personal information
+- Business or commercial purposes for collection
+- Categories of third parties with whom we share data
+- Specific pieces of personal information collected about you
+
+12.2 Right to Delete (Cal. Civ. Code Section 1798.105)
+You have the right to request deletion of your personal information, subject to certain exceptions.
+
+12.3 Right to Correct (Cal. Civ. Code Section 1798.106)
+You have the right to request correction of inaccurate personal information.
+
+12.4 Right to Opt-Out of Sale/Sharing (Cal. Civ. Code Section 1798.120)
+You have the right to opt-out of the sale or sharing of your personal information for cross-context behavioral advertising.
+
+Note: We do not "sell" personal information in the traditional sense. However, certain sharing for advertising purposes may constitute a "sale" under CCPA.
+
+12.5 Right to Limit Use of Sensitive Personal Information (Cal. Civ. Code Section 1798.121)
+You have the right to limit the use and disclosure of sensitive personal information.
+
+12.6 Right to Non-Discrimination (Cal. Civ. Code Section 1798.125)
+You have the right not to receive discriminatory treatment for exercising your privacy rights.
+
+12.7 Categories of Information Collected
+
+In the preceding 12 months, we have collected the following categories:
+
+| Category | Collected | Disclosed for Business Purpose | Sold/Shared |
+|----------|-----------|-------------------------------|-------------|
+| Identifiers | Yes | Yes | No |
+| Personal Information (Cal. Civ. Code 1798.80) | Yes | Yes | No |
+| Protected Classifications | Yes | No | No |
+| Commercial Information | Yes | Yes | No |
+| Biometric Information | Yes | No | No |
+| Internet/Network Activity | Yes | Yes | No |
+| Geolocation Data | Yes | Yes | No |
+| Sensory Data | Yes | No | No |
+| Professional/Employment Info | Yes | No | No |
+| Education Information | Yes | No | No |
+| Inferences | Yes | Yes | No |
+| Sensitive Personal Information | Yes | No | No |
+
+12.8 Financial Incentives
+We may offer financial incentives for the collection, sale, or retention of personal information. Participation is voluntary.
+
+Response Time: We will respond to verifiable consumer requests within 45 days (extendable by 45 days).
+
+Do Not Sell/Share: To opt-out of sale or sharing, email: privacy@greengochat.com with subject "Do Not Sell My Information"
+
+================================================================================
+13. RIGHTS UNDER OTHER JURISDICTIONS
+================================================================================
+
+13.1 Canada (PIPEDA)
+Canadian residents have rights under the Personal Information Protection and Electronic Documents Act, including access, correction, and withdrawal of consent.
+
+13.2 Australia (Privacy Act 1988)
+Australian residents have rights under the Australian Privacy Principles, including access to and correction of personal information.
+
+13.3 United Kingdom (UK GDPR)
+UK residents have rights equivalent to those under EU GDPR, as implemented through the UK GDPR and Data Protection Act 2018.
+
+13.4 South Africa (POPIA)
+South African residents have rights under the Protection of Personal Information Act, including access, correction, and deletion.
+
+13.5 Singapore (PDPA)
+Singapore residents have rights under the Personal Data Protection Act, including access, correction, and withdrawal of consent.
+
+13.6 Argentina (PDPA)
+Argentine residents have rights under Law 25.326, including access, rectification, suppression, and confidentiality.
+
+13.7 Mexico (LFPDPPP)
+Mexican residents have rights under the Federal Law on Protection of Personal Data, including access, rectification, cancellation, and opposition (ARCO rights).
+
+13.8 Other Jurisdictions
+We comply with applicable data protection laws in all jurisdictions where we operate. If your jurisdiction provides additional rights not listed here, please contact us.
+
+================================================================================
+14. CHILDREN'S PRIVACY
+================================================================================
+
+14.1 Age Restrictions
+GreenGo is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children under 18.
+
+14.2 Parental Rights
+If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at privacy@greengochat.com.
+
+14.3 Verification Measures
+We implement age verification measures during registration to prevent minors from accessing our Services.
+
+14.4 Removal of Children's Data
+If we discover that we have collected personal information from a child under 18, we will delete that information immediately.
+
+================================================================================
+15. AUTOMATED DECISION-MAKING AND PROFILING
+================================================================================
+
+15.1 How We Use Automated Decision-Making
+
+We use automated processing for:
+
+a) Match Recommendations
+   - Algorithm-based matching using preferences, location, and behavior
+   - You can adjust preferences to influence recommendations
+
+b) Content Moderation
+   - Automated detection of prohibited content
+   - Human review for flagged content
+
+c) Fraud Prevention
+   - Automated systems to detect suspicious activity
+   - Account verification processes
+
+d) Personalization
+   - Customizing content and features based on usage patterns
+
+15.2 Your Rights
+
+You have the right to:
+- Request human intervention in automated decisions
+- Express your point of view
+- Contest decisions that significantly affect you
+- Obtain an explanation of the logic involved
+
+15.3 Safeguards
+
+We implement appropriate safeguards including:
+- Regular algorithm audits
+- Human review of significant automated decisions
+- Ability to appeal automated decisions
+- Transparency about automated processing
+
+================================================================================
+16. COOKIES AND TRACKING TECHNOLOGIES
+================================================================================
+
+16.1 Types of Cookies We Use
+
+a) Strictly Necessary Cookies
+   - Required for the operation of our Services
+   - Cannot be disabled
+
+b) Functional Cookies
+   - Enable enhanced functionality and personalization
+   - Remember your preferences
+
+c) Analytics Cookies
+   - Help us understand how users interact with our Services
+   - Measure performance and improve user experience
+
+d) Advertising Cookies
+   - Used to deliver relevant advertisements
+   - Track advertising effectiveness
+
+16.2 Third-Party Cookies
+
+Our Services may include cookies from:
+- Google Analytics
+- Firebase
+- Facebook Pixel
+- Advertising networks
+
+16.3 Managing Cookies
+
+You can manage cookie preferences through:
+- Your browser settings
+- Our cookie consent banner
+- Device settings for mobile apps
+
+16.4 Do Not Track
+
+Our Services do not currently respond to "Do Not Track" browser signals. However, you can opt out of tracking using the methods described above.
+
+================================================================================
+17. THIRD-PARTY LINKS AND SERVICES
+================================================================================
+
+17.1 External Links
+Our Services may contain links to third-party websites or services. We are not responsible for the privacy practices of these external sites.
+
+17.2 Social Media Integration
+If you connect social media accounts, the respective platforms' privacy policies apply to information shared with them.
+
+17.3 Third-Party Services
+We use third-party services for various functions. Each service provider has its own privacy policy governing their use of data.
+
+17.4 Recommendation
+We encourage you to review the privacy policies of any third-party services before using them.
+
+================================================================================
+18. CHANGES TO THIS PRIVACY POLICY
+================================================================================
+
+18.1 Updates
+We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal requirements, or other factors.
+
+18.2 Notification
+We will notify you of material changes through:
+- In-app notifications
+- Email to your registered address
+- Prominent notice on our website
+
+18.3 Effective Date
+Changes become effective when posted unless otherwise specified. Continued use of our Services after changes constitutes acceptance.
+
+18.4 Review
+We encourage you to review this Privacy Policy periodically for the latest information.
+
+================================================================================
+19. HOW TO EXERCISE YOUR RIGHTS
+================================================================================
+
+19.1 Submitting Requests
+
+You can exercise your rights by:
+
+a) In-App Settings
+   - Access profile settings to view and edit your data
+   - Manage privacy and communication preferences
+   - Request account deletion
+
+b) Email
+   - Send requests to: privacy@greengochat.com
+   - Include your account email and specific request
+   - We will verify your identity before processing
+
+c) Data Subject Request Form
+   - Available at: https://greengochat.com/privacy-request
+
+19.2 Verification
+For security purposes, we will verify your identity before fulfilling requests. This may include:
+- Confirming account ownership through email
+- Requesting additional identifying information
+- Two-factor authentication
+
+19.3 Authorized Agents
+California residents may designate an authorized agent to submit requests on their behalf with proper authorization.
+
+19.4 Response Times
+
+| Jurisdiction | Response Time |
+|--------------|---------------|
+| Brazil (LGPD) | 15 days |
+| EU (GDPR) | 30 days (extendable to 90) |
+| California (CCPA) | 45 days (extendable to 90) |
+| Other | 30 days |
+
+================================================================================
+20. COMPLAINTS AND DISPUTE RESOLUTION
+================================================================================
+
+20.1 Internal Resolution
+If you have concerns about our data practices, please contact us first at privacy@greengochat.com. We will work to resolve your concerns promptly.
+
+20.2 Data Protection Authorities
+
+You have the right to lodge a complaint with relevant authorities:
+
+a) Brazil
+   Autoridade Nacional de Protecao de Dados (ANPD)
+   Website: https://www.gov.br/anpd
+
+b) European Union
+   Your local Data Protection Authority
+   List available at: https://edpb.europa.eu/about-edpb/board/members_en
+
+c) United Kingdom
+   Information Commissioner's Office (ICO)
+   Website: https://ico.org.uk
+
+d) California
+   California Privacy Protection Agency
+   Website: https://cppa.ca.gov
+
+20.3 Alternative Dispute Resolution
+We are committed to resolving disputes through dialogue. If internal resolution is unsuccessful, we support alternative dispute resolution mechanisms.
+
+================================================================================
+21. GOVERNING LAW AND JURISDICTION
+================================================================================
+
+21.1 Governing Law
+This Privacy Policy is governed by the laws of the Federative Republic of Brazil, without regard to conflict of law principles.
+
+21.2 Jurisdiction
+Any disputes arising from this Privacy Policy shall be subject to the exclusive jurisdiction of the courts of Sao Paulo, Brazil, except where mandatory local laws provide otherwise.
+
+21.3 Local Law Compliance
+Where local laws provide additional protections or rights, those provisions shall apply to users in the relevant jurisdiction.
+
+================================================================================
+22. CONTACT US
+================================================================================
+
+If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+
+Data Controller:
+Universo Kardasha Ltda.
+Sao Paulo, SP, Brazil
+
+Data Protection Officer:
+Email: privacy@greengochat.com
+
+General Support:
+Email: support@greengochat.com
+Phone: +55 11 911142911
+
+EU Representative:
+Email: eu-representative@greengochat.com
+
+For Privacy Rights Requests:
+Email: privacy@greengochat.com
+Web: https://greengochat.com/privacy-request
+
+We are committed to addressing your inquiries and resolving any concerns about your privacy.
+
+================================================================================
+
+Copyright 2026 Universo Kardasha Ltda. All rights reserved.
+
+This Privacy Policy is provided in multiple languages for your convenience. In case of any discrepancy between translations, the Portuguese (Brazil) version shall prevail for users in Brazil, and the English version shall prevail for users in other jurisdictions.
+
+================================================================================
+END OF PRIVACY POLICY
+================================================================================
