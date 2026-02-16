@@ -8,9 +8,8 @@ import '../../domain/entities/discovery_card.dart';
 
 /// Swipeable Card Widget
 ///
-/// Displays a profile card with directional gradient overlay on swipe.
-/// Card stays in place — a color gradient fades in to indicate the action,
-/// then the next card appears seamlessly.
+/// Displays a profile card that follows the finger during drag,
+/// tilts based on horizontal offset, and flies off screen on swipe.
 class SwipeCard extends StatefulWidget {
   final DiscoveryCard card;
   final Function(SwipeDirection)? onSwipe;
@@ -36,13 +35,20 @@ class _SwipeCardState extends State<SwipeCard>
   bool _isDragging = false;
   bool _hasTriggeredHaptic = false;
   Offset _cumulativeOffset = Offset.zero;
+  bool _isExiting = false;
 
   SwipeDirection? _swipeDirection;
   double _swipeIntensity = 0.0;
 
   late AnimationController _animationController;
   late AnimationController _indicatorBounceController;
+  late AnimationController _exitController;
+  late AnimationController _entranceController;
   late Animation<double> _bounceAnimation;
+
+  // Exit animation values
+  Offset _exitOffset = Offset.zero;
+  double _exitRotation = 0.0;
 
   @override
   void initState() {
@@ -57,40 +63,113 @@ class _SwipeCardState extends State<SwipeCard>
       vsync: this,
     );
 
+    _exitController = AnimationController(
+      duration: const Duration(milliseconds: 350),
+      vsync: this,
+    );
+
+    _entranceController = AnimationController(
+      duration: const Duration(milliseconds: 400),
+      vsync: this,
+    );
+
     _bounceAnimation = Tween<double>(begin: 1.0, end: 1.15).animate(
       CurvedAnimation(
         parent: _indicatorBounceController,
         curve: Curves.elasticOut,
       ),
     );
+
+    // Play entrance animation for front cards
+    if (widget.isFront) {
+      _entranceController.forward();
+    } else {
+      _entranceController.value = 1.0;
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant SwipeCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // If the card data changed (new card), play entrance animation
+    if (widget.card.userId != oldWidget.card.userId && widget.isFront) {
+      _isExiting = false;
+      _exitOffset = Offset.zero;
+      _exitRotation = 0.0;
+      _cumulativeOffset = Offset.zero;
+      _swipeDirection = null;
+      _swipeIntensity = 0.0;
+      _entranceController.forward(from: 0);
+    }
   }
 
   @override
   void dispose() {
     _animationController.dispose();
     _indicatorBounceController.dispose();
+    _exitController.dispose();
+    _entranceController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+    final screenWidth = screenSize.width;
 
+    // Calculate translation and rotation
+    double dx = _cumulativeOffset.dx + _exitOffset.dx;
+    double dy = _cumulativeOffset.dy + _exitOffset.dy;
+    double rotation = (dx / screenWidth) * 0.3; // Max ~17 degrees
+
+    Widget cardContent = SizedBox(
+      height: screenSize.height * 0.75,
+      child: Stack(
+        children: [
+          _buildCard(screenSize),
+          _buildInfoGradient(),
+          _buildProfileInfo(),
+          _buildGradientOverlay(),
+          if (_swipeDirection != null && _swipeIntensity > 0)
+            _buildSwipeIndicators(),
+        ],
+      ),
+    );
+
+    // Apply entrance animation for front card
+    if (widget.isFront && !_isDragging && !_isExiting && _entranceController.value < 1.0) {
+      return AnimatedBuilder(
+        animation: _entranceController,
+        builder: (context, child) {
+          final scale = 0.92 + (0.08 * Curves.easeOutBack.transform(_entranceController.value));
+          final opacity = _entranceController.value;
+          return Transform.scale(
+            scale: scale,
+            child: Opacity(
+              opacity: opacity,
+              child: child,
+            ),
+          );
+        },
+        child: GestureDetector(
+          onPanStart: widget.isFront ? _onPanStart : null,
+          onPanUpdate: widget.isFront ? _onPanUpdate : null,
+          onPanEnd: widget.isFront ? _onPanEnd : null,
+          child: cardContent,
+        ),
+      );
+    }
+
+    // Apply drag/exit transforms
     return GestureDetector(
       onPanStart: widget.isFront ? _onPanStart : null,
       onPanUpdate: widget.isFront ? _onPanUpdate : null,
       onPanEnd: widget.isFront ? _onPanEnd : null,
-      child: SizedBox(
-        height: screenSize.height * 0.75,
-        child: Stack(
-          children: [
-            _buildCard(screenSize),
-            _buildInfoGradient(),
-            _buildProfileInfo(),
-            _buildGradientOverlay(),
-            if (_swipeDirection != null && _swipeIntensity > 0)
-              _buildSwipeIndicators(),
-          ],
+      child: Transform.translate(
+        offset: Offset(dx, dy),
+        child: Transform.rotate(
+          angle: rotation,
+          child: cardContent,
         ),
       ),
     );
@@ -491,14 +570,19 @@ class _SwipeCardState extends State<SwipeCard>
   }
 
   void _onPanStart(DragStartDetails details) {
+    if (_isExiting) return;
     _animationController.stop();
+    _exitController.stop();
     setState(() {
       _isDragging = true;
       _cumulativeOffset = Offset.zero;
+      _exitOffset = Offset.zero;
+      _exitRotation = 0.0;
     });
   }
 
   void _onPanUpdate(DragUpdateDetails details) {
+    if (_isExiting) return;
     final screenWidth = MediaQuery.of(context).size.width;
 
     setState(() {
@@ -517,8 +601,7 @@ class _SwipeCardState extends State<SwipeCard>
     widget.onDragProgress?.call(_swipeIntensity);
 
     // Trigger haptic feedback when crossing threshold
-    final screenWidth2 = MediaQuery.of(context).size.width;
-    final threshold = screenWidth2 * 0.15;
+    final threshold = screenWidth * 0.15;
     final magnitude = _cumulativeOffset.distance;
     if (!_hasTriggeredHaptic && magnitude > threshold) {
       _hasTriggeredHaptic = true;
@@ -530,6 +613,7 @@ class _SwipeCardState extends State<SwipeCard>
   }
 
   void _onPanEnd(DragEndDetails details) {
+    if (_isExiting) return;
     setState(() {
       _isDragging = false;
       _hasTriggeredHaptic = false;
@@ -564,68 +648,100 @@ class _SwipeCardState extends State<SwipeCard>
     }
   }
 
+  /// Get the exit target offset for a given direction
+  Offset _getExitTarget(SwipeDirection direction, double screenWidth, double screenHeight) {
+    switch (direction) {
+      case SwipeDirection.left:
+        return Offset(-screenWidth * 1.5, _cumulativeOffset.dy);
+      case SwipeDirection.right:
+        return Offset(screenWidth * 1.5, _cumulativeOffset.dy);
+      case SwipeDirection.up:
+        return Offset(_cumulativeOffset.dx, -screenHeight * 1.2);
+      case SwipeDirection.down:
+        return Offset(_cumulativeOffset.dx, screenHeight * 1.2);
+    }
+  }
+
   void _completeSwipe(SwipeDirection direction) {
-    // Set direction for the completion animation
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     setState(() {
+      _isExiting = true;
       _swipeDirection = direction;
+      _swipeIntensity = 1.0;
     });
 
-    // Animate intensity to 1.0
-    final startIntensity = _swipeIntensity;
-    _animationController.duration = const Duration(milliseconds: 250);
+    // Report full progress to back card
+    widget.onDragProgress?.call(1.0);
 
-    late Animation<double> intensityAnim;
-    intensityAnim = Tween<double>(begin: startIntensity, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeOut,
-      ),
-    );
+    // Calculate exit target from current drag position
+    final exitTarget = _getExitTarget(direction, screenWidth, screenHeight);
+    final startOffset = Offset(_cumulativeOffset.dx, _cumulativeOffset.dy);
+
+    final exitAnim = Tween<Offset>(
+      begin: Offset.zero,
+      end: Offset(exitTarget.dx - startOffset.dx, exitTarget.dy - startOffset.dy),
+    ).animate(CurvedAnimation(
+      parent: _exitController,
+      curve: Curves.easeInCubic,
+    ));
 
     void listener() {
       if (mounted) {
         setState(() {
-          _swipeIntensity = intensityAnim.value;
+          _exitOffset = exitAnim.value;
         });
       }
     }
 
-    intensityAnim.addListener(listener);
+    exitAnim.addListener(listener);
 
-    _animationController.forward(from: 0).then((_) {
-      intensityAnim.removeListener(listener);
+    _exitController.forward(from: 0).then((_) {
+      exitAnim.removeListener(listener);
       widget.onSwipe?.call(direction);
       _reset();
     });
   }
 
   void _cancelSwipe() {
+    // Animate back to center
+    final startOffset = Offset(_cumulativeOffset.dx, _cumulativeOffset.dy);
     final startIntensity = _swipeIntensity;
     final startDirection = _swipeDirection;
 
-    _animationController.duration = const Duration(milliseconds: 150);
+    _animationController.duration = const Duration(milliseconds: 250);
 
-    late Animation<double> intensityAnim;
-    intensityAnim = Tween<double>(begin: startIntensity, end: 0.0).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeOut,
-      ),
-    );
+    final offsetAnim = Tween<Offset>(
+      begin: startOffset,
+      end: Offset.zero,
+    ).animate(CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeOutBack,
+    ));
+
+    final intensityAnim = Tween<double>(
+      begin: startIntensity,
+      end: 0.0,
+    ).animate(CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeOut,
+    ));
 
     void listener() {
       if (mounted) {
         setState(() {
+          _cumulativeOffset = offsetAnim.value;
           _swipeIntensity = intensityAnim.value;
           _swipeDirection = startDirection;
         });
       }
     }
 
-    intensityAnim.addListener(listener);
+    offsetAnim.addListener(listener);
 
     _animationController.forward(from: 0).then((_) {
-      intensityAnim.removeListener(listener);
+      offsetAnim.removeListener(listener);
       _reset();
     });
   }
@@ -635,6 +751,9 @@ class _SwipeCardState extends State<SwipeCard>
       _swipeDirection = null;
       _swipeIntensity = 0.0;
       _cumulativeOffset = Offset.zero;
+      _exitOffset = Offset.zero;
+      _exitRotation = 0.0;
+      _isExiting = false;
     });
     widget.onDragProgress?.call(0.0);
   }

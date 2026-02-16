@@ -315,8 +315,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     int currentIndex,
     bool enabled,
   ) {
-    return Stack(
+    return ClipRect(
+      clipBehavior: Clip.none,
+      child: Stack(
       alignment: Alignment.center,
+      clipBehavior: Clip.none,
       children: [
         // Next card (behind) with parallax effect
         if (currentIndex + 1 < cards.length)
@@ -345,6 +348,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
         // Current card (front)
         SwipeCard(
+          key: ValueKey(cards[currentIndex].userId),
           card: cards[currentIndex],
           isFront: true,
           onDragProgress: (progress) {
@@ -355,6 +359,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               : null,
         ),
       ],
+      ),
     );
   }
 
