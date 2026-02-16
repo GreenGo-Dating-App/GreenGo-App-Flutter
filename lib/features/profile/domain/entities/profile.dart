@@ -18,6 +18,8 @@ class Profile extends Equatable {
   final String? nickname; // Unique username, format: lowercase alphanumeric + underscores, 3-20 chars
   final DateTime dateOfBirth;
   final String gender;
+  final String? sexualOrientation;
+  final String accountStatus; // active, suspended, banned, deleted
   final List<String> photoUrls;
   final List<String> privatePhotoUrls;
   final String bio;
@@ -59,6 +61,8 @@ class Profile extends Equatable {
     this.nickname,
     required this.dateOfBirth,
     required this.gender,
+    this.sexualOrientation,
+    this.accountStatus = 'active',
     required this.photoUrls,
     this.privatePhotoUrls = const [],
     required this.bio,
@@ -121,6 +125,8 @@ class Profile extends Equatable {
         nickname,
         dateOfBirth,
         gender,
+        sexualOrientation,
+        accountStatus,
         photoUrls,
         privatePhotoUrls,
         bio,
@@ -158,6 +164,8 @@ class Profile extends Equatable {
     String? nickname,
     DateTime? dateOfBirth,
     String? gender,
+    String? sexualOrientation,
+    String? accountStatus,
     List<String>? photoUrls,
     List<String>? privatePhotoUrls,
     String? bio,
@@ -193,6 +201,8 @@ class Profile extends Equatable {
       nickname: nickname ?? this.nickname,
       dateOfBirth: dateOfBirth ?? this.dateOfBirth,
       gender: gender ?? this.gender,
+      sexualOrientation: sexualOrientation ?? this.sexualOrientation,
+      accountStatus: accountStatus ?? this.accountStatus,
       photoUrls: photoUrls ?? this.photoUrls,
       privatePhotoUrls: privatePhotoUrls ?? this.privatePhotoUrls,
       bio: bio ?? this.bio,

@@ -368,6 +368,52 @@ class _DiscoveryPreferencesScreenState
 
           const SizedBox(height: 16),
 
+          // Sexual Orientation filter
+          _buildSectionCard(
+            title: 'Sexual Orientation',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Filter by orientation (leave all unchecked to show everyone)',
+                  style: TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                ...['Straight', 'Gay', 'Bisexual', 'Other'].map((orientation) {
+                  final isSelected = _preferences.preferredOrientations.contains(orientation);
+                  return CheckboxListTile(
+                    contentPadding: EdgeInsets.zero,
+                    title: Text(
+                      orientation,
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 16,
+                      ),
+                    ),
+                    value: isSelected,
+                    activeColor: AppColors.richGold,
+                    onChanged: (bool? value) {
+                      final current = List<String>.from(_preferences.preferredOrientations);
+                      if (value == true) {
+                        current.add(orientation);
+                      } else {
+                        current.remove(orientation);
+                      }
+                      _updatePreferences(
+                        _preferences.copyWith(preferredOrientations: current),
+                      );
+                    },
+                  );
+                }),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
           // Advanced filters
           _buildSectionCard(
             title: 'Advanced Filters',

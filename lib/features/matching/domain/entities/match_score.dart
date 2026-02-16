@@ -41,29 +41,28 @@ class ScoreBreakdown {
   final double locationScore; // 0-100
   final double ageCompatibilityScore; // 0-100
   final double interestOverlapScore; // 0-100
-  final double personalityCompatibilityScore; // 0-100
-  final double activityPatternScore; // 0-100
-  final double collaborativeFilteringScore; // 0-100
+  final double languageScore; // 0-100
   final Map<String, double> additionalScores; // Extensible
 
   const ScoreBreakdown({
     required this.locationScore,
     required this.ageCompatibilityScore,
     required this.interestOverlapScore,
-    required this.personalityCompatibilityScore,
-    required this.activityPatternScore,
-    required this.collaborativeFilteringScore,
+    this.languageScore = 0.0,
+    // Keep old params for backward compat but ignore them
+    double personalityCompatibilityScore = 0.0,
+    double activityPatternScore = 0.0,
+    double collaborativeFilteringScore = 0.0,
     this.additionalScores = const {},
   });
 
   /// Get the top 3 compatibility factors
   List<CompatibilityFactor> getTopFactors() {
     final factors = [
-      CompatibilityFactor('Location', locationScore),
+      CompatibilityFactor('Distance', locationScore),
       CompatibilityFactor('Age', ageCompatibilityScore),
-      CompatibilityFactor('Interests', interestOverlapScore),
-      CompatibilityFactor('Personality', personalityCompatibilityScore),
-      CompatibilityFactor('Activity', activityPatternScore),
+      CompatibilityFactor('Passions', interestOverlapScore),
+      CompatibilityFactor('Languages', languageScore),
       ...additionalScores.entries
           .map((e) => CompatibilityFactor(e.key, e.value)),
     ];
@@ -72,21 +71,17 @@ class ScoreBreakdown {
     return factors.take(3).toList();
   }
 
-  /// Get weighted average score
+  /// Get weighted average score (4 factors)
   double getWeightedScore({
-    double locationWeight = 0.20,
-    double ageWeight = 0.15,
-    double interestWeight = 0.25,
-    double personalityWeight = 0.20,
-    double activityWeight = 0.10,
-    double collaborativeWeight = 0.10,
+    double locationWeight = 0.25,
+    double ageWeight = 0.25,
+    double interestWeight = 0.30,
+    double languageWeight = 0.20,
   }) {
     return (locationScore * locationWeight) +
         (ageCompatibilityScore * ageWeight) +
         (interestOverlapScore * interestWeight) +
-        (personalityCompatibilityScore * personalityWeight) +
-        (activityPatternScore * activityWeight) +
-        (collaborativeFilteringScore * collaborativeWeight);
+        (languageScore * languageWeight);
   }
 }
 

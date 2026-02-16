@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -108,13 +109,23 @@ class _SwipeCardState extends State<SwipeCard>
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
         child: widget.card.primaryPhoto != null
-            ? Image.network(
-                widget.card.primaryPhoto!,
+            ? CachedNetworkImage(
+                imageUrl: widget.card.primaryPhoto!,
                 fit: BoxFit.cover,
                 width: double.infinity,
                 height: double.infinity,
-                errorBuilder: (context, error, stackTrace) =>
-                    _buildPlaceholder(),
+                filterQuality: FilterQuality.high,
+                fadeInDuration: const Duration(milliseconds: 300),
+                placeholder: (context, url) => Container(
+                  color: AppColors.backgroundCard,
+                  child: const Center(
+                    child: CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                      strokeWidth: 2,
+                    ),
+                  ),
+                ),
+                errorWidget: (context, url, error) => _buildPlaceholder(),
               )
             : _buildPlaceholder(),
       ),

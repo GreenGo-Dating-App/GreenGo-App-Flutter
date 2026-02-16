@@ -9,6 +9,7 @@ class MatchPreferences extends Equatable {
   final bool onlyVerified;
   final bool onlyRecentlyActive;
   final List<String> dealBreakers;
+  final List<String> preferredOrientations; // empty = show all
 
   const MatchPreferences({
     required this.userId,
@@ -19,6 +20,7 @@ class MatchPreferences extends Equatable {
     this.onlyVerified = false,
     this.onlyRecentlyActive = false,
     this.dealBreakers = const [],
+    this.preferredOrientations = const [],
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -31,6 +33,7 @@ class MatchPreferences extends Equatable {
       onlyVerified: false,
       onlyRecentlyActive: false,
       dealBreakers: const [],
+      preferredOrientations: const [],
     );
   }
 
@@ -44,6 +47,7 @@ class MatchPreferences extends Equatable {
     bool? onlyVerified,
     bool? onlyRecentlyActive,
     List<String>? dealBreakers,
+    List<String>? preferredOrientations,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -54,6 +58,7 @@ class MatchPreferences extends Equatable {
       onlyVerified: onlyVerified ?? this.onlyVerified,
       onlyRecentlyActive: onlyRecentlyActive ?? this.onlyRecentlyActive,
       dealBreakers: dealBreakers ?? this.dealBreakers,
+      preferredOrientations: preferredOrientations ?? this.preferredOrientations,
     );
   }
 
@@ -68,6 +73,7 @@ class MatchPreferences extends Equatable {
       'onlyVerified': onlyVerified,
       'onlyRecentlyActive': onlyRecentlyActive,
       'dealBreakers': dealBreakers,
+      'preferredOrientations': preferredOrientations,
     };
   }
 
@@ -85,6 +91,10 @@ class MatchPreferences extends Equatable {
               ?.map((e) => e as String)
               .toList() ??
           const [],
+      preferredOrientations: (map['preferredOrientations'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
     );
   }
 
@@ -98,5 +108,6 @@ class MatchPreferences extends Equatable {
         onlyVerified,
         onlyRecentlyActive,
         dealBreakers,
+        preferredOrientations,
       ];
 }

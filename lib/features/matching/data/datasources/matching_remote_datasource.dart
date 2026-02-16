@@ -88,6 +88,12 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
 
+        // MANDATORY: Only show verified profiles
+        if (!candidateProfile.isVerified) continue;
+
+        // MANDATORY: Only show active profiles (skip suspended/banned/deleted)
+        if (candidateProfile.accountStatus != 'active') continue;
+
         // Must have at least one photo
         if (candidateProfile.photoUrls.isEmpty) continue;
 
@@ -126,11 +132,6 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           }
         }
 
-        // Apply only-verified filter
-        if (preferences.showOnlyVerified && !candidateProfile.isVerified) {
-          continue;
-        }
-
         // Apply deal-breaker interests
         if (preferences.dealBreakerInterests.isNotEmpty) {
           final hasAllDealBreakers = preferences.dealBreakerInterests.every(
@@ -156,9 +157,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
               locationScore: 50.0,
               ageCompatibilityScore: 50.0,
               interestOverlapScore: 50.0,
-              personalityCompatibilityScore: 50.0,
-              activityPatternScore: 50.0,
-              collaborativeFilteringScore: 50.0,
+              languageScore: 50.0,
             ),
             calculatedAt: now,
           );

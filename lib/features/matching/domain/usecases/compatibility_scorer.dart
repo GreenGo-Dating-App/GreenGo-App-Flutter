@@ -5,23 +5,19 @@ import 'feature_engineer.dart';
 
 /// Compatibility Scorer
 ///
-/// Implements compatibility scoring system (0-100%) based on multiple weighted factors:
-/// - Location proximity (20%)
-/// - Age compatibility (15%)
-/// - Interest overlap (25%)
-/// - Personality compatibility (20%)
-/// - Activity pattern alignment (10%)
-/// - Collaborative filtering score (10%)
+/// Implements compatibility scoring system (0-100%) based on 4 weighted factors:
+/// - Distance proximity (25%)
+/// - Interest/passions overlap (30%)
+/// - Language overlap (20%)
+/// - Age compatibility (25%)
 class CompatibilityScorer {
   final FeatureEngineer _featureEngineer;
 
   // Scoring weights (must sum to 1.0)
-  static const double LOCATION_WEIGHT = 0.20;
-  static const double AGE_WEIGHT = 0.15;
-  static const double INTEREST_WEIGHT = 0.25;
-  static const double PERSONALITY_WEIGHT = 0.20;
-  static const double ACTIVITY_WEIGHT = 0.10;
-  static const double COLLABORATIVE_WEIGHT = 0.10;
+  static const double DISTANCE_WEIGHT = 0.25;
+  static const double INTEREST_WEIGHT = 0.30;
+  static const double LANGUAGE_WEIGHT = 0.20;
+  static const double AGE_WEIGHT = 0.25;
 
   CompatibilityScorer({FeatureEngineer? featureEngineer})
       : _featureEngineer = featureEngineer ?? FeatureEngineer();
@@ -30,23 +26,19 @@ class CompatibilityScorer {
   MatchScore calculateScore({
     required Profile profile1,
     required Profile profile2,
-    double collaborativeScore = 50.0, // From collaborative filtering
   }) {
     // Calculate individual component scores
     final locationScore = _calculateLocationScore(profile1, profile2);
     final ageScore = _calculateAgeScore(profile1, profile2);
     final interestScore = _calculateInterestScore(profile1, profile2);
-    final personalityScore = _calculatePersonalityScore(profile1, profile2);
-    final activityScore = _calculateActivityScore(profile1, profile2);
+    final languageScore = _calculateLanguageScore(profile1, profile2);
 
     // Create score breakdown
     final breakdown = ScoreBreakdown(
       locationScore: locationScore,
       ageCompatibilityScore: ageScore,
       interestOverlapScore: interestScore,
-      personalityCompatibilityScore: personalityScore,
-      activityPatternScore: activityScore,
-      collaborativeFilteringScore: collaborativeScore,
+      languageScore: languageScore,
     );
 
     // Calculate weighted overall score
@@ -54,10 +46,8 @@ class CompatibilityScorer {
       locationScore: locationScore,
       ageScore: ageScore,
       interestScore: interestScore,
-      personalityScore: personalityScore,
-      activityScore: activityScore,
-      collaborativeScore: collaborativeScore,
-    );
+      languageScore: languageScore,
+    ).clamp(0.0, 100.0);
 
     return MatchScore(
       userId1: profile1.userId,
@@ -125,52 +115,25 @@ class CompatibilityScorer {
     return (overlap + bonus).clamp(0.0, 100.0);
   }
 
-  /// Calculate personality compatibility score
-  double _calculatePersonalityScore(Profile profile1, Profile profile2) {
-    return _featureEngineer.calculatePersonalityCompatibility(
-      profile1.personalityTraits,
-      profile2.personalityTraits,
+  /// Calculate language overlap score using Jaccard similarity
+  double _calculateLanguageScore(Profile profile1, Profile profile2) {
+    return _featureEngineer.calculateLanguageOverlap(
+      profile1.languages,
+      profile2.languages,
     );
   }
 
-  /// Calculate activity pattern alignment score
-  /// TODO: In production, analyze:
-  /// - Peak usage time overlap
-  /// - Response time similarity
-  /// - Session length patterns
-  double _calculateActivityScore(Profile profile1, Profile profile2) {
-    // Placeholder: Return neutral score
-    // In production: analyze activity logs for synchronous connection potential
-
-    // For now, give bonus if both have voice recordings (shows engagement)
-    final bothHaveVoice = profile1.voiceRecordingUrl != null &&
-        profile2.voiceRecordingUrl != null;
-
-    // Both have completed profiles
-    final bothComplete = profile1.isComplete && profile2.isComplete;
-
-    double score = 50.0; // Base score
-    if (bothHaveVoice) score += 25.0;
-    if (bothComplete) score += 25.0;
-
-    return score.clamp(0.0, 100.0);
-  }
-
-  /// Calculate weighted overall score
+  /// Calculate weighted overall score (4 factors)
   double _calculateWeightedScore({
     required double locationScore,
     required double ageScore,
     required double interestScore,
-    required double personalityScore,
-    required double activityScore,
-    required double collaborativeScore,
+    required double languageScore,
   }) {
-    return (locationScore * LOCATION_WEIGHT) +
+    return (locationScore * DISTANCE_WEIGHT) +
         (ageScore * AGE_WEIGHT) +
         (interestScore * INTEREST_WEIGHT) +
-        (personalityScore * PERSONALITY_WEIGHT) +
-        (activityScore * ACTIVITY_WEIGHT) +
-        (collaborativeScore * COLLABORATIVE_WEIGHT);
+        (languageScore * LANGUAGE_WEIGHT);
   }
 
   /// Calculate score using user vectors (ML-based approach)
@@ -179,7 +142,6 @@ class CompatibilityScorer {
     required UserVector vector2,
     required Profile profile1,
     required Profile profile2,
-    double collaborativeScore = 50.0,
   }) {
     // Use cosine similarity for overall vector similarity
     final vectorSimilarity = vector1.cosineSimilarity(vector2);
@@ -189,16 +151,13 @@ class CompatibilityScorer {
     final locationScore = _calculateLocationScore(profile1, profile2);
     final ageScore = _calculateAgeScore(profile1, profile2);
     final interestScore = _calculateInterestScore(profile1, profile2);
-    final personalityScore = _calculatePersonalityScore(profile1, profile2);
-    final activityScore = _calculateActivityScore(profile1, profile2);
+    final languageScore = _calculateLanguageScore(profile1, profile2);
 
     final breakdown = ScoreBreakdown(
       locationScore: locationScore,
       ageCompatibilityScore: ageScore,
       interestOverlapScore: interestScore,
-      personalityCompatibilityScore: personalityScore,
-      activityPatternScore: activityScore,
-      collaborativeFilteringScore: collaborativeScore,
+      languageScore: languageScore,
       additionalScores: {
         'VectorSimilarity': vectorScore,
       },
@@ -209,13 +168,11 @@ class CompatibilityScorer {
       locationScore: locationScore,
       ageScore: ageScore,
       interestScore: interestScore,
-      personalityScore: personalityScore,
-      activityScore: activityScore,
-      collaborativeScore: collaborativeScore,
+      languageScore: languageScore,
     );
 
     // 70% weighted, 30% ML vector similarity
-    final overallScore = (weightedScore * 0.7) + (vectorScore * 0.3);
+    final overallScore = ((weightedScore * 0.7) + (vectorScore * 0.3)).clamp(0.0, 100.0);
 
     return MatchScore(
       userId1: profile1.userId,

@@ -135,6 +135,21 @@ class FeatureEngineer {
     return degrees * math.pi / 180;
   }
 
+  /// Calculate language overlap percentage using Jaccard similarity
+  double calculateLanguageOverlap(List<String> langs1, List<String> langs2) {
+    if (langs1.isEmpty && langs2.isEmpty) return 0.0;
+    if (langs1.isEmpty || langs2.isEmpty) return 0.0;
+
+    final set1 = langs1.toSet();
+    final set2 = langs2.toSet();
+
+    final intersection = set1.intersection(set2).length;
+    final union = set1.union(set2).length;
+
+    // Jaccard similarity
+    return (intersection / union) * 100;
+  }
+
   /// Calculate interest overlap percentage
   double calculateInterestOverlap(List<String> interests1, List<String> interests2) {
     if (interests1.isEmpty && interests2.isEmpty) return 0.0;
