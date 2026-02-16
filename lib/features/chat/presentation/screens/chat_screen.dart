@@ -56,6 +56,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final ContentFilterService _contentFilter = ContentFilterService();
   final UsageLimitService _usageLimitService = UsageLimitService();
   final ImagePicker _imagePicker = ImagePicker();
+  late final ChatBloc _chatBloc;
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
 
@@ -86,6 +87,12 @@ class _ChatScreenState extends State<ChatScreen> {
   void initState() {
     super.initState();
     _translationService.initialize();
+    _chatBloc = di.sl<ChatBloc>()
+      ..add(ChatConversationLoaded(
+        matchId: widget.matchId,
+        currentUserId: widget.currentUserId,
+        otherUserId: widget.otherUserId,
+      ));
     _chatDataSource = ChatRemoteDataSourceImpl(firestore: FirebaseFirestore.instance);
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
     _fetchCurrentUserName();
@@ -131,10 +138,12 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   @override
+  @override
   void dispose() {
     _languageProvider?.removeListener(_onLanguageChanged);
     _messageController.dispose();
     _scrollController.dispose();
+    _chatBloc.close();
     super.dispose();
   }
 
@@ -214,16 +223,15 @@ class _ChatScreenState extends State<ChatScreen> {
     return message;
   }
 
-  void _sendMessage(BuildContext context) {
+  void _sendMessage(BuildContext _) {
     // If album photos are selected, send each as a separate image message
     if (_selectedAlbumPhotos.isNotEmpty) {
-      for (final photoUrl in _selectedAlbumPhotos) {
-        _sendAlbumPhoto(photoUrl);
-      }
+      final photos = List<String>.from(_selectedAlbumPhotos);
       setState(() {
         _selectedAlbumPhotos = [];
       });
       _messageController.clear();
+      _sendAlbumPhotosSequentially(photos);
       return;
     }
 
@@ -261,13 +269,13 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // Send as reply if replying to a message
     if (_replyingToMessage != null) {
-      context.read<ChatBloc>().add(ChatMessageReplied(
+      _chatBloc.add(ChatMessageReplied(
         content: content,
         replyToMessageId: _replyingToMessage!.messageId,
       ));
       _clearReplyMessage();
     } else {
-      context.read<ChatBloc>().add(ChatMessageSent(content: content));
+      _chatBloc.add(ChatMessageSent(content: content));
     }
 
     _messageController.clear();
@@ -404,8 +412,11 @@ class _ChatScreenState extends State<ChatScreen> {
                   label: AppLocalizations.of(sheetCtx)?.albumOption ?? 'Album',
                   color: Colors.teal,
                   onTap: () {
-                    Navigator.pop(sheetCtx); // Close attachment options first
-                    _showMyAlbumPhotos(parentContext);
+                    // _buildAttachmentOption already pops the sheet
+                    // Use post-frame callback to open album after sheet closes
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      if (mounted) _showMyAlbumPhotos();
+                    });
                   },
                 ),
                 _buildAttachmentOption(
@@ -544,7 +555,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  Future<void> _sendImageMessage(BuildContext context, XFile image) async {
+  Future<void> _sendImageMessage(BuildContext ctx, XFile image) async {
     if (_isUploadingMedia) return;
 
     // Check media send limit
@@ -593,9 +604,9 @@ class _ChatScreenState extends State<ChatScreen> {
       // Get download URL
       final downloadUrl = await ref.getDownloadURL();
 
-      if (context.mounted) {
+      if (mounted) {
         // Send message with image URL
-        context.read<ChatBloc>().add(ChatMessageSent(
+        _chatBloc.add(ChatMessageSent(
           content: downloadUrl,
           type: MessageType.image,
         ));
@@ -607,7 +618,7 @@ class _ChatScreenState extends State<ChatScreen> {
         );
       }
     } catch (e) {
-      if (context.mounted) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)!.chatFailedToUploadImage(e.toString())),
@@ -625,7 +636,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  Future<void> _sendVideoMessage(BuildContext context, XFile video) async {
+  Future<void> _sendVideoMessage(BuildContext ctx, XFile video) async {
     if (_isUploadingMedia) return;
 
     // Check media send limit
@@ -641,7 +652,7 @@ class _ChatScreenState extends State<ChatScreen> {
       final file = File(video.path);
       final fileSize = await file.length();
       if (fileSize > 50 * 1024 * 1024) {
-        if (context.mounted) {
+        if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(AppLocalizations.of(context)!.chatVideoTooLarge),
@@ -680,9 +691,9 @@ class _ChatScreenState extends State<ChatScreen> {
       // Get download URL
       final downloadUrl = await ref.getDownloadURL();
 
-      if (context.mounted) {
+      if (mounted) {
         // Send message with video URL
-        context.read<ChatBloc>().add(ChatMessageSent(
+        _chatBloc.add(ChatMessageSent(
           content: downloadUrl,
           type: MessageType.video,
         ));
@@ -694,7 +705,7 @@ class _ChatScreenState extends State<ChatScreen> {
         );
       }
     } catch (e) {
-      if (context.mounted) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)!.chatFailedToUploadVideo(e.toString())),
@@ -770,7 +781,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Show current user's private album photos for sending in chat
-  void _showMyAlbumPhotos(BuildContext context) async {
+  void _showMyAlbumPhotos() async {
     try {
       // Fetch current user's profile to get private photos (force server to get fresh data)
       DocumentSnapshot profileDoc;
@@ -989,13 +1000,16 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Send a photo from private album — bypasses media limit
-  void _sendAlbumPhoto(String photoUrl) {
-    if (!mounted) return;
-    context.read<ChatBloc>().add(ChatMessageSent(
-      content: photoUrl,
-      type: MessageType.image,
-    ));
-    // No media limit recording — album sends are free
+  Future<void> _sendAlbumPhotosSequentially(List<String> photoUrls) async {
+    for (final photoUrl in photoUrls) {
+      if (!mounted) return;
+      _chatBloc.add(ChatMessageSent(
+        content: photoUrl,
+        type: MessageType.image,
+      ));
+      // Wait for the bloc to finish sending before dispatching the next
+      await Future.delayed(const Duration(milliseconds: 500));
+    }
   }
 
   /// View other user's private album (if access granted)
@@ -1133,7 +1147,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         // Send auto-message
         final name = _currentUserName ?? 'Someone';
-        context.read<ChatBloc>().add(ChatMessageSent(
+        _chatBloc.add(ChatMessageSent(
           content: '$name shared their album with you',
           type: MessageType.system,
         ));
@@ -1166,7 +1180,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         // Send auto-message
         final name = _currentUserName ?? 'Someone';
-        context.read<ChatBloc>().add(ChatMessageSent(
+        _chatBloc.add(ChatMessageSent(
           content: '$name revoked album access',
           type: MessageType.system,
         ));
@@ -1198,13 +1212,8 @@ class _ChatScreenState extends State<ChatScreen> {
           SafeNavigation.navigateToHome(context, widget.currentUserId);
         }
       },
-      child: BlocProvider(
-        create: (context) => di.sl<ChatBloc>()
-          ..add(ChatConversationLoaded(
-            matchId: widget.matchId,
-            currentUserId: widget.currentUserId,
-            otherUserId: widget.otherUserId,
-          )),
+      child: BlocProvider.value(
+        value: _chatBloc,
         child: Scaffold(
           backgroundColor: AppColors.backgroundDark,
           appBar: _buildAppBar(),
@@ -1648,7 +1657,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this.context.read<ChatBloc>();
+      final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showChatDeletedForMe(this.context, onDismiss: () {
         bloc.add(const ChatDeletedForMe());
@@ -1685,7 +1694,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this.context.read<ChatBloc>();
+      final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showChatDeletedForBoth(this.context, onDismiss: () {
         bloc.add(const ChatDeletedForBoth());
@@ -1734,7 +1743,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this.context.read<ChatBloc>();
+      final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showUserBlocked(this.context, widget.otherUserProfile.displayName, onDismiss: () {
         bloc.add(ChatUserBlocked(widget.otherUserId));
@@ -1803,7 +1812,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (selectedReason != null && mounted) {
-      final bloc = this.context.read<ChatBloc>();
+      final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showUserReported(this.context, onDismiss: () {
         bloc.add(ChatUserReported(
@@ -1817,7 +1826,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// Star a message
   void _starMessage(BuildContext context, Message message, bool isStarred) {
-    context.read<ChatBloc>().add(ChatMessageStarred(
+    _chatBloc.add(ChatMessageStarred(
       messageId: message.messageId,
       isStarred: isStarred,
     ));
@@ -1974,7 +1983,7 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Show forward dialog to select recipients
   Future<void> _showForwardDialog(BuildContext context, Message message) async {
     // Get the conversation ID from the bloc state
-    final state = context.read<ChatBloc>().state;
+    final state = _chatBloc.state;
     String? conversationId;
     if (state is ChatLoaded) {
       conversationId = state.conversation.conversationId;
@@ -2126,26 +2135,26 @@ class _ChatScreenState extends State<ChatScreen> {
                     builder: (context, state) {
                       final isSending = state is ChatSending;
 
-                      return CircleAvatar(
-                        backgroundColor: AppColors.richGold,
-                        radius: 24,
-                        child: isSending
-                            ? const SizedBox(
-                                width: 20,
-                                height: 20,
-                                child: CircularProgressIndicator(
-                                  color: AppColors.deepBlack,
-                                  strokeWidth: 2,
-                                ),
-                              )
-                            : IconButton(
-                                icon: const Icon(
+                      return GestureDetector(
+                        onTap: isSending ? null : () => _sendMessage(this.context),
+                        child: CircleAvatar(
+                          backgroundColor: AppColors.richGold,
+                          radius: 24,
+                          child: isSending
+                              ? const SizedBox(
+                                  width: 20,
+                                  height: 20,
+                                  child: CircularProgressIndicator(
+                                    color: AppColors.deepBlack,
+                                    strokeWidth: 2,
+                                  ),
+                                )
+                              : const Icon(
                                   Icons.send,
                                   color: AppColors.deepBlack,
                                   size: 20,
                                 ),
-                                onPressed: () => _sendMessage(context),
-                              ),
+                        ),
                       );
                     },
                   ),

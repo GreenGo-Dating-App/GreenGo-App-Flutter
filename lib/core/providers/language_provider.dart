@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LanguageProvider extends ChangeNotifier {
   Locale _currentLocale = const Locale('en');
@@ -27,19 +29,46 @@ class LanguageProvider extends ChangeNotifier {
     'de': 'Deutsch',
   };
 
-  LanguageProvider() {
-    _loadSavedLanguage();
-  }
-
-  Future<void> _loadSavedLanguage() async {
-    final prefs = await SharedPreferences.getInstance();
-    final languageCode = prefs.getString(_languageKey);
-    if (languageCode != null) {
-      final parts = languageCode.split('_');
+  LanguageProvider({String? initialLanguage}) {
+    if (initialLanguage != null) {
+      final parts = initialLanguage.split('_');
       _currentLocale = parts.length > 1
           ? Locale(parts[0], parts[1])
           : Locale(parts[0]);
-      notifyListeners();
+    }
+  }
+
+  /// Load language from Firestore for the current user (call after auth)
+  Future<void> loadFromDatabase() async {
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user == null) return;
+
+      final doc = await FirebaseFirestore.instance
+          .collection('userSettings')
+          .doc(user.uid)
+          .get();
+
+      if (doc.exists) {
+        final lang = doc.data()?['language'] as String?;
+        if (lang != null) {
+          final parts = lang.split('_');
+          final newLocale = parts.length > 1
+              ? Locale(parts[0], parts[1])
+              : Locale(parts[0]);
+
+          if (_currentLocale != newLocale) {
+            _currentLocale = newLocale;
+            notifyListeners();
+
+            // Also update local SharedPreferences cache
+            final prefs = await SharedPreferences.getInstance();
+            await prefs.setString(_languageKey, lang);
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('Failed to load language from database: $e');
     }
   }
 
@@ -49,11 +78,26 @@ class LanguageProvider extends ChangeNotifier {
     _currentLocale = locale;
     notifyListeners();
 
-    final prefs = await SharedPreferences.getInstance();
     final languageCode = locale.countryCode != null
         ? '${locale.languageCode}_${locale.countryCode}'
         : locale.languageCode;
+
+    // Save to SharedPreferences (local cache for instant load)
+    final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_languageKey, languageCode);
+
+    // Save to Firestore (persists across devices)
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user != null) {
+        await FirebaseFirestore.instance
+            .collection('userSettings')
+            .doc(user.uid)
+            .set({'language': languageCode}, SetOptions(merge: true));
+      }
+    } catch (e) {
+      debugPrint('Failed to save language to database: $e');
+    }
   }
 
   String getLanguageName(Locale locale) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -187,17 +188,23 @@ void main() async {
   await versionCheck.initialize();
   debugPrint('✓ Version check initialized');
 
-  runApp(const GreenGoChatApp());
+  // Load saved language before app starts (prevents flicker)
+  final prefs = await SharedPreferences.getInstance();
+  final savedLanguage = prefs.getString('selected_language');
+
+  runApp(GreenGoChatApp(savedLanguage: savedLanguage));
 }
 
 class GreenGoChatApp extends StatelessWidget {
-  const GreenGoChatApp({super.key});
+  final String? savedLanguage;
+
+  const GreenGoChatApp({super.key, this.savedLanguage});
 
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => LanguageProvider()),
+        ChangeNotifierProvider(create: (_) => LanguageProvider(initialLanguage: savedLanguage)),
         ChangeNotifierProvider.value(value: featureFlags),
         BlocProvider(create: (context) => di.sl<AuthBloc>()),
       ],
@@ -461,9 +468,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
       listener: (context, state) {
-        // When user becomes authenticated, check their access status
+        // When user becomes authenticated, check their access status and load language
         if (state is AuthAuthenticated) {
           _checkAccessStatus(state.user.uid);
+          // Load user's saved language from Firestore
+          context.read<LanguageProvider>().loadFromDatabase();
         }
       },
       builder: (context, state) {

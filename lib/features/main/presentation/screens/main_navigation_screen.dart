@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
@@ -571,23 +572,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           final index = entry.key;
           final screen = entry.value;
 
-          // For pre-launch blocked users: show countdown overlay on ALL screens (including profile)
-          if (isPreLaunchBlocked) {
-            final overlayAccessData = _accessData ?? UserAccessData(
-              userId: widget.userId,
-              approvalStatus: ApprovalStatus.approved,
-              accessDate: DateTime.fromMillisecondsSinceEpoch(
-                _getCachedCountdownEnd() ?? DateTime.now().add(const Duration(days: 1)).millisecondsSinceEpoch,
-              ),
-              membershipTier: SubscriptionTier.basic,
-            );
-            return CountdownBlurOverlay(
-              accessData: overlayAccessData,
-              onSettingsTapped: _navigateToSettings,
-              child: screen,
-            );
-          }
-
           // Shop, Progress, and Learn (if enabled) don't need verification overlay
           if (index == 3 || index == progressIndex || index == learnIndex) {
             return screen;
@@ -789,6 +773,28 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Widget _buildMainContent(Widget scaffold, bool isPreLaunchBlocked) {
+    // When countdown is active, overlay the ENTIRE scaffold (covers AppBar + BottomNav)
+    if (isPreLaunchBlocked) {
+      final overlayAccessData = _accessData ?? UserAccessData(
+        userId: widget.userId,
+        approvalStatus: ApprovalStatus.approved,
+        accessDate: DateTime.fromMillisecondsSinceEpoch(
+          _getCachedCountdownEnd() ?? DateTime.now().add(const Duration(days: 1)).millisecondsSinceEpoch,
+        ),
+        membershipTier: SubscriptionTier.basic,
+      );
+      return CountdownBlurOverlay(
+        accessData: overlayAccessData,
+        onLogout: () async {
+          await FirebaseAuth.instance.signOut();
+          if (context.mounted) {
+            Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+          }
+        },
+        child: scaffold,
+      );
+    }
+
     return Stack(
       children: [
         _isAdmin
@@ -803,8 +809,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               )
             : scaffold,
 
-        // App Tour Overlay (skip when countdown is active)
-        if (_showTour && !isPreLaunchBlocked)
+        // App Tour Overlay
+        if (_showTour)
           TourOverlay(
             onComplete: _completeTour,
             onSkip: _skipTour,

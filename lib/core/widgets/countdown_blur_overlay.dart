@@ -10,13 +10,13 @@ import '../widgets/animated_luxury_logo.dart';
 class CountdownBlurOverlay extends StatefulWidget {
   final Widget child;
   final UserAccessData accessData;
-  final VoidCallback? onSettingsTapped;
+  final VoidCallback? onLogout;
 
   const CountdownBlurOverlay({
     super.key,
     required this.child,
     required this.accessData,
-    this.onSettingsTapped,
+    this.onLogout,
   });
 
   @override
@@ -162,41 +162,28 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
 
                   const SizedBox(height: 40),
 
-                  // Info message
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.05),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: Colors.white.withOpacity(0.1),
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        const Icon(
-                          Icons.info_outline,
-                          color: Colors.white54,
-                          size: 24,
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Your account is approved! You can access Settings while waiting for the launch date.',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.white.withOpacity(0.8),
-                            height: 1.5,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(height: 40),
-
                   // Upgrade banner (for basic users)
                   if (!hasEarlyAccess) _buildUpgradeBanner(),
+
+                  const SizedBox(height: 24),
+
+                  // Logout button
+                  if (widget.onLogout != null)
+                    TextButton.icon(
+                      onPressed: widget.onLogout,
+                      icon: Icon(
+                        Icons.logout,
+                        color: Colors.white.withOpacity(0.6),
+                        size: 20,
+                      ),
+                      label: Text(
+                        'Log Out',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.6),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

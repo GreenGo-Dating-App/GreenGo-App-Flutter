@@ -1,6 +1,7 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -165,6 +166,8 @@ class _MessageBubbleState extends State<MessageBubble> {
   Widget _buildReplyIndicator() {
     final isCurrentUser = widget.isCurrentUser;
     final replyContent = widget.message.metadata?['replyContent'] as String? ?? 'Message';
+    final isMediaUrl = replyContent.contains('firebasestorage.googleapis.com') ||
+        replyContent.startsWith('https://') && (replyContent.contains('/chat_images/') || replyContent.contains('/chat_videos/'));
 
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
@@ -181,16 +184,58 @@ class _MessageBubbleState extends State<MessageBubble> {
           ),
         ),
       ),
-      child: Text(
-        replyContent.length > 50 ? '${replyContent.substring(0, 50)}...' : replyContent,
-        style: TextStyle(
-          color: isCurrentUser
-              ? AppColors.deepBlack.withOpacity(0.7)
-              : AppColors.textSecondary,
-          fontSize: 12,
-          fontStyle: FontStyle.italic,
-        ),
-      ),
+      child: isMediaUrl
+          ? Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: SizedBox(
+                    width: 40,
+                    height: 40,
+                    child: ImageFiltered(
+                      imageFilter: ui.ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                      child: Image.network(
+                        replyContent,
+                        fit: BoxFit.cover,
+                        errorBuilder: (_, __, ___) => const Icon(
+                          Icons.image, color: Colors.white54, size: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Icon(
+                  replyContent.contains('/chat_videos/') ? Icons.videocam : Icons.photo,
+                  color: isCurrentUser
+                      ? AppColors.deepBlack.withOpacity(0.5)
+                      : AppColors.textSecondary,
+                  size: 16,
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  replyContent.contains('/chat_videos/') ? 'Video' : 'Photo',
+                  style: TextStyle(
+                    color: isCurrentUser
+                        ? AppColors.deepBlack.withOpacity(0.7)
+                        : AppColors.textSecondary,
+                    fontSize: 12,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ],
+            )
+          : Text(
+              replyContent.length > 50 ? '${replyContent.substring(0, 50)}...' : replyContent,
+              style: TextStyle(
+                color: isCurrentUser
+                    ? AppColors.deepBlack.withOpacity(0.7)
+                    : AppColors.textSecondary,
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
     );
   }
 
@@ -376,38 +421,9 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   void _openVideoPlayer(BuildContext context, String videoUrl) {
-    // Open video in a full-screen dialog
-    showDialog(
-      context: context,
-      builder: (ctx) => Dialog(
-        backgroundColor: Colors.black,
-        insetPadding: EdgeInsets.zero,
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            Center(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(Icons.videocam, color: Colors.white54, size: 64),
-                  const SizedBox(height: 16),
-                  Text(
-                    AppLocalizations.of(context)!.chatVideoPlayer,
-                    style: const TextStyle(color: Colors.white70, fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
-            Positioned(
-              top: 40,
-              right: 16,
-              child: IconButton(
-                icon: const Icon(Icons.close, color: Colors.white, size: 28),
-                onPressed: () => Navigator.pop(ctx),
-              ),
-            ),
-          ],
-        ),
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => _FullScreenVideoPlayer(videoUrl: videoUrl),
       ),
     );
   }
@@ -459,21 +475,24 @@ class _MessageBubbleState extends State<MessageBubble> {
                 widget.onReply?.call(message);
               },
             ),
-            ListTile(
-              leading: const Icon(Icons.forward, color: Colors.purple),
-              title: Text(
-                AppLocalizations.of(context)!.chatForward,
-                style: const TextStyle(color: AppColors.textPrimary),
+            // Hide forward for private album images (non-chat uploaded images)
+            if (!(message.type == MessageType.image &&
+                !message.content.contains('/chat_images/')))
+              ListTile(
+                leading: const Icon(Icons.forward, color: Colors.purple),
+                title: Text(
+                  AppLocalizations.of(context)!.chatForward,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                subtitle: Text(
+                  AppLocalizations.of(context)!.chatForwardToChat,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                ),
+                onTap: () {
+                  Navigator.pop(bottomSheetContext);
+                  widget.onForward?.call(message);
+                },
               ),
-              subtitle: Text(
-                AppLocalizations.of(context)!.chatForwardToChat,
-                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
-              ),
-              onTap: () {
-                Navigator.pop(bottomSheetContext);
-                widget.onForward?.call(message);
-              },
-            ),
             ListTile(
               leading: Icon(
                 _isStarred ? Icons.star : Icons.star_border,
@@ -617,6 +636,100 @@ class _MessageBubbleState extends State<MessageBubble> {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Full-screen video player widget
+class _FullScreenVideoPlayer extends StatefulWidget {
+  final String videoUrl;
+
+  const _FullScreenVideoPlayer({required this.videoUrl});
+
+  @override
+  State<_FullScreenVideoPlayer> createState() => _FullScreenVideoPlayerState();
+}
+
+class _FullScreenVideoPlayerState extends State<_FullScreenVideoPlayer> {
+  late VideoPlayerController _controller;
+  bool _isInitialized = false;
+  bool _hasError = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(Uri.parse(widget.videoUrl))
+      ..initialize().then((_) {
+        if (mounted) {
+          setState(() => _isInitialized = true);
+          _controller.play();
+        }
+      }).catchError((e) {
+        if (mounted) setState(() => _hasError = true);
+      });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.close, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: Center(
+        child: _hasError
+            ? const Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.error_outline, color: Colors.white54, size: 48),
+                  SizedBox(height: 12),
+                  Text('Failed to load video',
+                      style: TextStyle(color: Colors.white70)),
+                ],
+              )
+            : !_isInitialized
+                ? const CircularProgressIndicator(color: AppColors.richGold)
+                : GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _controller.value.isPlaying
+                            ? _controller.pause()
+                            : _controller.play();
+                      });
+                    },
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        AspectRatio(
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        ),
+                        if (!_controller.value.isPlaying)
+                          Container(
+                            width: 64,
+                            height: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.5),
+                              shape: BoxShape.circle,
+                            ),
+                            child: const Icon(Icons.play_arrow,
+                                color: Colors.white, size: 40),
+                          ),
+                      ],
+                    ),
+                  ),
       ),
     );
   }

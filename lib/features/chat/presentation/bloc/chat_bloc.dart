@@ -41,6 +41,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   String? _matchId;
   String? _currentUserId;
   String? _otherUserId;
+  bool _hasLoadedOnce = false;
 
   ChatBloc({
     required this.getConversation,
@@ -79,11 +80,25 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     on<ChatMessageDeletedForBoth>(_onMessageDeletedForBoth);
   }
 
+  /// Re-subscribes to the Firestore messages stream
+  void _resubscribeToMessages() {
+    if (_matchId != null && _currentUserId != null && _otherUserId != null) {
+      add(ChatConversationLoaded(
+        matchId: _matchId!,
+        currentUserId: _currentUserId!,
+        otherUserId: _otherUserId!,
+      ));
+    }
+  }
+
   Future<void> _onConversationLoaded(
     ChatConversationLoaded event,
     Emitter<ChatState> emit,
   ) async {
-    emit(const ChatLoading());
+    // Only show loading on first load, not on re-subscriptions
+    if (!_hasLoadedOnce) {
+      emit(const ChatLoading());
+    }
 
     _matchId = event.matchId;
     _currentUserId = event.currentUserId;
@@ -103,6 +118,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     if (conversation == null) return;
 
     _conversationId = conversation.conversationId;
+    _hasLoadedOnce = true;
 
     // Use emit.forEach to properly handle stream emissions
     await emit.forEach(
@@ -204,13 +220,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
             limitType: UsageLimitType.messages,
           );
         }
-        // Immediately clear ChatSending state; Firestore stream will update messages
-        emit(ChatLoaded(
-          conversation: currentState.conversation,
-          messages: currentState.messages,
-          currentUserId: currentState.currentUserId,
-          otherUserId: currentState.otherUserId,
-        ));
+        // Re-subscribe to the Firestore stream (emit.forEach was cancelled)
+        _resubscribeToMessages();
       },
     );
   }
@@ -271,8 +282,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to delete message: ${failure.message}'));
       },
       (_) {
-        // Message will be removed via stream listener
         emit(const ChatMessageActionSuccess('Message deleted'));
+        _resubscribeToMessages();
       },
     );
   }
@@ -297,6 +308,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted for you'));
+        _resubscribeToMessages();
       },
     );
   }
@@ -321,6 +333,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted for everyone'));
+        _resubscribeToMessages();
       },
     );
   }
@@ -540,6 +553,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatMessageActionSuccess(
           event.isStarred ? 'Message starred' : 'Message unstarred',
         ));
+        _resubscribeToMessages();
       },
     );
   }
@@ -596,13 +610,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to send reply: ${failure.toString()}'));
       },
       (_) {
-        // Immediately clear ChatSending state; Firestore stream will update messages
-        emit(ChatLoaded(
-          conversation: currentState.conversation,
-          messages: currentState.messages,
-          currentUserId: currentState.currentUserId,
-          otherUserId: currentState.otherUserId,
-        ));
+        // Re-subscribe to Firestore stream (emit.forEach was cancelled)
+        _resubscribeToMessages();
       },
     );
   }
@@ -630,6 +639,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatMessageActionSuccess(
           'Message forwarded to ${event.toMatchIds.length} conversation${event.toMatchIds.length > 1 ? 's' : ''}',
         ));
+        _resubscribeToMessages();
       },
     );
   }
