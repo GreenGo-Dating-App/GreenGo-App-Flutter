@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -40,12 +41,23 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   int _currentCoinBalance = 0;
   late StreamSubscription<List<PurchaseDetails>> _purchaseSubscription;
 
+  // Cached packages so they survive BLoC state transitions
+  List<CoinPackage> _cachedPackages = [];
+  List<CoinPromotion> _cachedPromotions = [];
+
+  // Mutable current tier — loaded from Firestore, updated after purchase
+  late SubscriptionTier _currentTier;
+
   @override
   void initState() {
     super.initState();
+    _currentTier = widget.currentTier ?? SubscriptionTier.basic;
     _tabController = TabController(length: 3, vsync: this);
     context.read<CoinBloc>().add(const LoadAvailablePackages());
     context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+
+    // Load actual tier from Firestore
+    _loadCurrentTierFromFirestore();
 
     // Listen to purchase stream for both coins and subscriptions
     _purchaseSubscription = _inAppPurchase.purchaseStream.listen(
@@ -55,6 +67,27 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         debugPrint('[IAP] Purchase stream error: $error');
       },
     );
+  }
+
+  /// Load user's actual membership tier from Firestore
+  Future<void> _loadCurrentTierFromFirestore() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      if (doc.exists && mounted) {
+        final data = doc.data();
+        final tierString = data?['membershipTier'] as String?;
+        if (tierString != null) {
+          setState(() {
+            _currentTier = SubscriptionTierExtension.fromString(tierString);
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('[CoinShop] Failed to load tier from Firestore: $e');
+    }
   }
 
   @override
@@ -161,7 +194,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final subscribedTier = _tierFromProductId(productId);
     if (subscribedTier != null) {
       debugPrint('[IAP] Subscription purchase successful: ${subscribedTier.displayName}');
-      setState(() => _isLoadingSubscription = false);
+
+      // Update local tier state immediately
+      setState(() {
+        _currentTier = subscribedTier;
+        _selectedTier = null;
+        _isLoadingSubscription = false;
+      });
+
+      // Update Firestore profile with new membership tier
+      _updateFirestoreMembership(subscribedTier);
 
       // Complete the purchase
       if (purchaseDetails.pendingCompletePurchase) {
@@ -196,6 +238,26 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       if (tier.productId == productId) return tier;
     }
     return null;
+  }
+
+  /// Update Firestore profile with new membership tier
+  Future<void> _updateFirestoreMembership(SubscriptionTier tier) async {
+    try {
+      final now = DateTime.now();
+      await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .update({
+        'membershipTier': tier.name,
+        'membershipStartDate': Timestamp.fromDate(now),
+        'membershipEndDate': Timestamp.fromDate(
+          now.add(const Duration(days: 30)),
+        ),
+      });
+      debugPrint('[CoinShop] Firestore membership updated to ${tier.name}');
+    } catch (e) {
+      debugPrint('[CoinShop] Failed to update Firestore membership: $e');
+    }
   }
 
   @override
@@ -338,24 +400,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       builder: (context, state) {
         final isLoading = state is CoinLoading;
 
-        // Check if we have packages loaded
-        List<CoinPackage> packages = [];
-        List<CoinPromotion> promotions = [];
+        // Update cache when packages are loaded from BLoC
         if (state is CoinPackagesLoaded) {
-          packages = state.packages;
-          promotions = state.activePromotions;
+          _cachedPackages = state.packages;
+          _cachedPromotions = state.activePromotions;
         }
 
         // Show error state with fallback packages
-        if (state is CoinError) {
+        if (state is CoinError && _cachedPackages.isEmpty) {
           return _buildErrorState(context, state.message);
         }
 
         return Stack(
           children: [
-            // Main content
-            if (packages.isNotEmpty)
-              _buildPackageList(packages, promotions)
+            // Main content — use cached packages to survive state transitions
+            if (_cachedPackages.isNotEmpty)
+              _buildPackageList(_cachedPackages, _cachedPromotions)
             else if (!isLoading)
               _buildErrorState(context, 'Failed to load packages')
             else
@@ -414,7 +474,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Widget _buildMembershipTab() {
-    final currentTier = widget.currentTier ?? SubscriptionTier.basic;
+    final currentTier = _currentTier;
     final tiers = [
       SubscriptionTier.silver,
       SubscriptionTier.gold,
@@ -914,7 +974,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     setState(() => _isLoadingSubscription = true);
 
     try {
-      final currentTier = widget.currentTier ?? SubscriptionTier.basic;
+      final currentTier = _currentTier;
       final isUpgrade = _selectedTier!.index > currentTier.index;
 
       // Check if store is available

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/membership_badge.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/discovery_card.dart';
 
 /// Swipeable Card Widget
@@ -169,17 +171,31 @@ class _SwipeCardState extends State<SwipeCard>
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Name and age
-          Text(
-            '${widget.card.displayName}, ${widget.card.age}',
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(color: Colors.black54, blurRadius: 4),
+          // Name, age, and membership badge
+          Row(
+            children: [
+              Flexible(
+                child: Text(
+                  '${widget.card.displayName}, ${widget.card.age}',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(color: Colors.black54, blurRadius: 4),
+                    ],
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              if (widget.card.membershipTier != MembershipTier.free) ...[
+                const SizedBox(width: 8),
+                MembershipBadge(
+                  tier: widget.card.membershipTier,
+                  compact: true,
+                ),
               ],
-            ),
+            ],
           ),
           const SizedBox(height: 6),
 
