@@ -193,27 +193,6 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                     ),
                   ),
 
-                  const SizedBox(height: 24),
-
-                  // Settings button
-                  if (widget.onSettingsTapped != null)
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton.icon(
-                        onPressed: widget.onSettingsTapped,
-                        icon: const Icon(Icons.settings),
-                        label: const Text('Go to Settings'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.richGold,
-                          foregroundColor: Colors.black,
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                        ),
-                      ),
-                    ),
-
                   const SizedBox(height: 40),
 
                   // Upgrade banner (for basic users)

@@ -780,15 +780,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
                       );
                     }
                   },
-                  child: _buildMainContent(scaffold),
+                  child: _buildMainContent(scaffold, isPreLaunchBlocked),
                 )
-              : _buildMainContent(scaffold),
+              : _buildMainContent(scaffold, isPreLaunchBlocked),
         ),
       ),
     );
   }
 
-  Widget _buildMainContent(Widget scaffold) {
+  Widget _buildMainContent(Widget scaffold, bool isPreLaunchBlocked) {
     return Stack(
       children: [
         _isAdmin
@@ -803,8 +803,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               )
             : scaffold,
 
-        // App Tour Overlay
-        if (_showTour)
+        // App Tour Overlay (skip when countdown is active)
+        if (_showTour && !isPreLaunchBlocked)
           TourOverlay(
             onComplete: _completeTour,
             onSkip: _skipTour,
