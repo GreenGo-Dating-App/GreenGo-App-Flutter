@@ -20,6 +20,13 @@ class Profile extends Equatable {
   final String gender;
   final String? sexualOrientation;
   final String accountStatus; // active, suspended, banned, deleted
+  final bool isBoosted;
+  final DateTime? boostExpiry;
+  final bool isIncognito;
+  final DateTime? incognitoExpiry;
+  final bool isTraveler;
+  final DateTime? travelerExpiry;
+  final Location? travelerLocation; // Temporary location while traveling
   final List<String> photoUrls;
   final List<String> privatePhotoUrls;
   final String bio;
@@ -55,6 +62,10 @@ class Profile extends Equatable {
   final DateTime? membershipStartDate;
   final DateTime? membershipEndDate;
 
+  // Base membership fields (yearly Google Play subscription)
+  final bool hasBaseMembership;
+  final DateTime? baseMembershipEndDate;
+
   const Profile({
     required this.userId,
     required this.displayName,
@@ -63,6 +74,13 @@ class Profile extends Equatable {
     required this.gender,
     this.sexualOrientation,
     this.accountStatus = 'active',
+    this.isBoosted = false,
+    this.boostExpiry,
+    this.isIncognito = false,
+    this.incognitoExpiry,
+    this.isTraveler = false,
+    this.travelerExpiry,
+    this.travelerLocation,
     required this.photoUrls,
     this.privatePhotoUrls = const [],
     required this.bio,
@@ -91,6 +109,8 @@ class Profile extends Equatable {
     this.membershipTier = MembershipTier.free,
     this.membershipStartDate,
     this.membershipEndDate,
+    this.hasBaseMembership = false,
+    this.baseMembershipEndDate,
   });
 
   /// Get formatted nickname with @ prefix
@@ -101,6 +121,26 @@ class Profile extends Equatable {
 
   /// Check if verification is pending review
   bool get isVerificationPending => verificationStatus == VerificationStatus.pending;
+
+  /// Check if traveler mode is active
+  bool get isTravelerActive =>
+      isTraveler &&
+      travelerExpiry != null &&
+      travelerExpiry!.isAfter(DateTime.now());
+
+  /// Get the effective location (traveler location if active, otherwise real location)
+  Location get effectiveLocation =>
+      isTravelerActive && travelerLocation != null
+          ? travelerLocation!
+          : location;
+
+  /// Check if base membership is currently active
+  bool get isBaseMembershipActive {
+    if (membershipTier == MembershipTier.test) return true;
+    if (!hasBaseMembership) return false;
+    if (baseMembershipEndDate == null) return false;
+    return baseMembershipEndDate!.isAfter(DateTime.now());
+  }
 
   /// Check if verification was rejected or needs resubmission
   bool get needsVerificationAction =>
@@ -127,6 +167,13 @@ class Profile extends Equatable {
         gender,
         sexualOrientation,
         accountStatus,
+        isBoosted,
+        boostExpiry,
+        isIncognito,
+        incognitoExpiry,
+        isTraveler,
+        travelerExpiry,
+        travelerLocation,
         photoUrls,
         privatePhotoUrls,
         bio,
@@ -155,6 +202,8 @@ class Profile extends Equatable {
         membershipTier,
         membershipStartDate,
         membershipEndDate,
+        hasBaseMembership,
+        baseMembershipEndDate,
       ];
 
   /// Copy with updated fields
@@ -166,6 +215,13 @@ class Profile extends Equatable {
     String? gender,
     String? sexualOrientation,
     String? accountStatus,
+    bool? isBoosted,
+    DateTime? boostExpiry,
+    bool? isIncognito,
+    DateTime? incognitoExpiry,
+    bool? isTraveler,
+    DateTime? travelerExpiry,
+    Location? travelerLocation,
     List<String>? photoUrls,
     List<String>? privatePhotoUrls,
     String? bio,
@@ -194,6 +250,8 @@ class Profile extends Equatable {
     MembershipTier? membershipTier,
     DateTime? membershipStartDate,
     DateTime? membershipEndDate,
+    bool? hasBaseMembership,
+    DateTime? baseMembershipEndDate,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -203,6 +261,13 @@ class Profile extends Equatable {
       gender: gender ?? this.gender,
       sexualOrientation: sexualOrientation ?? this.sexualOrientation,
       accountStatus: accountStatus ?? this.accountStatus,
+      isBoosted: isBoosted ?? this.isBoosted,
+      boostExpiry: boostExpiry ?? this.boostExpiry,
+      isIncognito: isIncognito ?? this.isIncognito,
+      incognitoExpiry: incognitoExpiry ?? this.incognitoExpiry,
+      isTraveler: isTraveler ?? this.isTraveler,
+      travelerExpiry: travelerExpiry ?? this.travelerExpiry,
+      travelerLocation: travelerLocation ?? this.travelerLocation,
       photoUrls: photoUrls ?? this.photoUrls,
       privatePhotoUrls: privatePhotoUrls ?? this.privatePhotoUrls,
       bio: bio ?? this.bio,
@@ -231,6 +296,8 @@ class Profile extends Equatable {
       membershipTier: membershipTier ?? this.membershipTier,
       membershipStartDate: membershipStartDate ?? this.membershipStartDate,
       membershipEndDate: membershipEndDate ?? this.membershipEndDate,
+      hasBaseMembership: hasBaseMembership ?? this.hasBaseMembership,
+      baseMembershipEndDate: baseMembershipEndDate ?? this.baseMembershipEndDate,
     );
   }
 }

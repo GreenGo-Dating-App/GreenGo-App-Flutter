@@ -16,9 +16,11 @@ import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/message.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
 import '../../../profile/data/datasources/album_access_datasource.dart';
 import '../bloc/chat_bloc.dart';
@@ -82,6 +84,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   LanguageProvider? _languageProvider;
   String? _currentUserName;
+  Profile? _currentUserProfile;
 
   @override
   void initState() {
@@ -105,8 +108,10 @@ class _ChatScreenState extends State<ChatScreen> {
           .doc(widget.currentUserId)
           .get();
       if (mounted && doc.exists) {
+        final data = doc.data()!;
         setState(() {
-          _currentUserName = doc.data()?['displayName'] as String? ?? 'Someone';
+          _currentUserName = data['displayName'] as String? ?? 'Someone';
+          _currentUserProfile = ProfileModel.fromJson({...data, 'userId': doc.id});
         });
       }
     } catch (_) {
@@ -223,7 +228,15 @@ class _ChatScreenState extends State<ChatScreen> {
     return message;
   }
 
-  void _sendMessage(BuildContext _) {
+  Future<void> _sendMessage(BuildContext _) async {
+    // Base membership gate
+    final allowed = await BaseMembershipGate.checkAndGate(
+      context: context,
+      profile: _currentUserProfile,
+      userId: widget.currentUserId,
+    );
+    if (!allowed) return;
+
     // If album photos are selected, send each as a separate image message
     if (_selectedAlbumPhotos.isNotEmpty) {
       final photos = List<String>.from(_selectedAlbumPhotos);
@@ -1145,11 +1158,14 @@ class _ChatScreenState extends State<ChatScreen> {
         grantedToId: widget.otherUserId,
       );
       if (mounted) {
-        // Send auto-message
         final name = _currentUserName ?? 'Someone';
         _chatBloc.add(ChatMessageSent(
-          content: '$name shared their album with you',
-          type: MessageType.system,
+          content: '$name shared their private album',
+          type: MessageType.albumShare,
+          metadata: {
+            'albumOwnerId': widget.currentUserId,
+            'albumOwnerName': name,
+          },
         ));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -1178,11 +1194,14 @@ class _ChatScreenState extends State<ChatScreen> {
         grantedToId: widget.otherUserId,
       );
       if (mounted) {
-        // Send auto-message
         final name = _currentUserName ?? 'Someone';
         _chatBloc.add(ChatMessageSent(
           content: '$name revoked album access',
-          type: MessageType.system,
+          type: MessageType.albumRevoke,
+          metadata: {
+            'albumOwnerId': widget.currentUserId,
+            'albumOwnerName': name,
+          },
         ));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -1196,6 +1215,42 @@ class _ChatScreenState extends State<ChatScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to revoke access: ${e.toString()}'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
+  }
+
+  /// Handle tapping on an album share message
+  void _onAlbumMessageTapped(Message message) async {
+    try {
+      final albumOwnerId = message.metadata?['albumOwnerId'] as String?;
+      if (albumOwnerId == null) return;
+
+      final hasAccess = await _albumAccessDatasource.hasAccess(
+        ownerId: albumOwnerId,
+        viewerId: widget.currentUserId,
+      );
+
+      if (!mounted) return;
+
+      if (!hasAccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.albumNotShared ?? 'Album access has been revoked'),
+            backgroundColor: AppColors.warningAmber,
+          ),
+        );
+        return;
+      }
+
+      _viewOtherUserAlbum(context);
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to load album: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1348,6 +1403,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
                               onReply: (msg) => _setReplyMessage(msg),
                               onForward: (msg) => _showForwardDialog(context, msg),
+                              onAlbumTap: (msg) => _onAlbumMessageTapped(msg),
                             );
                           },
                         );

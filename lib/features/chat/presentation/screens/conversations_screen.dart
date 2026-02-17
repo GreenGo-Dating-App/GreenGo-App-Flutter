@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -35,6 +36,20 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   String _searchQuery = '';
   ConversationFilter _selectedFilter = ConversationFilter.all;
   final Map<String, Profile?> _profileCache = {};
+  Profile? _currentUserProfile;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCurrentUserProfile();
+  }
+
+  Future<void> _loadCurrentUserProfile() async {
+    final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
+    result.fold((_) {}, (profile) {
+      if (mounted) setState(() => _currentUserProfile = profile);
+    });
+  }
 
   @override
   void dispose() {
@@ -319,6 +334,14 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 otherUserProfile: profile,
                                 currentUserId: widget.userId,
                                 onTap: () async {
+                                  // Base membership gate
+                                  final allowed = await BaseMembershipGate.checkAndGate(
+                                    context: context,
+                                    profile: _currentUserProfile,
+                                    userId: widget.userId,
+                                  );
+                                  if (!allowed) return;
+
                                   if (profile != null) {
                                     await Navigator.of(context).push(
                                       MaterialPageRoute(

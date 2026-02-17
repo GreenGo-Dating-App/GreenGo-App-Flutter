@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:firebase_core/firebase_core.dart';
+import 'core/utils/admin_data_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -73,6 +74,9 @@ void main() async {
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED, // Unlimited local cache
   );
   debugPrint('✓ Firestore offline persistence enabled');
+
+  // Load countdown dates from Firestore (non-blocking, uses defaults on failure)
+  AccessControlService.loadCountdownDatesFromFirestore();
 
   // Initialize cache service (Hive-based caching)
   await cacheService.initialize();
@@ -419,14 +423,44 @@ class _AuthWrapperState extends State<AuthWrapper> {
   }
 
   Future<void> _checkAccessStatus(String userId) async {
-    if (_isCheckingAccess) return;
-
-    setState(() {
-      _isCheckingAccess = true;
-    });
+    // _isCheckingAccess is already set to true by the listener
+    if (!_isCheckingAccess) {
+      setState(() {
+        _isCheckingAccess = true;
+      });
+    }
 
     try {
       final accessData = await _accessControlService.getCurrentUserAccess();
+      debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
+          'isTestUser=${accessData?.isTestUser}, '
+          'approvalStatus=${accessData?.approvalStatus}, '
+          'tier=${accessData?.membershipTier}');
+
+      // Admin and test users ALWAYS get through — force approve if needed
+      if (accessData != null && (accessData.isAdmin || accessData.isTestUser)) {
+        if (accessData.approvalStatus != ApprovalStatus.approved) {
+          debugPrint('🔑 Force-approving admin/test user $userId');
+          await _accessControlService.approveUser(userId, 'system');
+          final correctedData = await _accessControlService.getCurrentUserAccess();
+          if (mounted) {
+            setState(() {
+              _accessData = correctedData;
+              _isCheckingAccess = false;
+            });
+          }
+          return;
+        }
+        // Already approved — set data and proceed
+        if (mounted) {
+          setState(() {
+            _accessData = accessData;
+            _isCheckingAccess = false;
+          });
+        }
+        return;
+      }
+
       if (mounted) {
         setState(() {
           _accessData = accessData;
@@ -434,6 +468,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
         });
       }
     } catch (e) {
+      debugPrint('🔑 Access check error: $e');
       if (mounted) {
         setState(() {
           _isCheckingAccess = false;
@@ -467,18 +502,36 @@ class _AuthWrapperState extends State<AuthWrapper> {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
-      listener: (context, state) {
+      listener: (context, state) async {
         // When user becomes authenticated, check their access status and load language
         if (state is AuthAuthenticated) {
+          // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
+          // (builder runs before async work completes)
+          setState(() {
+            _isCheckingAccess = true;
+          });
+          // Ensure admin profiles have isAdmin=true and approvalStatus=approved
+          // in the users collection BEFORE checking access (prevents "under review")
+          await AdminDataUtils.ensureAdminDataComplete();
           _checkAccessStatus(state.user.uid);
           // Load user's saved language from Firestore
-          context.read<LanguageProvider>().loadFromDatabase();
+          if (context.mounted) {
+            context.read<LanguageProvider>().loadFromDatabase();
+          }
         }
       },
       builder: (context, state) {
-        if (state is AuthLoading || _isCheckingAccess) {
+        if (state is AuthInitial || _isCheckingAccess) {
           return const SplashScreen();
         } else if (state is AuthWaitingForAccess) {
+          // Admin and test users bypass waiting — go straight to app
+          if (_accessData != null && (_accessData!.isAdmin || _accessData!.isTestUser)) {
+            return MainNavigationScreen(userId: state.user.uid);
+          }
+          // Also bypass if tier is 'test' (from auth state directly)
+          if (state.membershipTier == 'test') {
+            return MainNavigationScreen(userId: state.user.uid);
+          }
           // User is waiting for access (from auth bloc check)
           return WaitingScreen(
             accessData: UserAccessData(
@@ -493,7 +546,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 orElse: () => SubscriptionTier.basic,
               ),
               notificationsEnabled: false,
-              hasEarlyAccess: state.accessDate.isBefore(DateTime(2026, 4, 14)),
+              hasEarlyAccess: state.accessDate.isBefore(AccessControlService.generalAccessDate),
             ),
             onSignOut: _handleSignOut,
             onRefresh: _handleRefresh,
@@ -502,6 +555,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
         } else if (state is AuthAuthenticated) {
           // Check if we have access data and if user should wait
           if (_accessData != null) {
+            // Admin and test users ALWAYS bypass — never show waiting screen
+            if (_accessData!.isAdmin || _accessData!.isTestUser) {
+              return MainNavigationScreen(userId: state.user.uid);
+            }
             // If countdown is active OR pending approval after countdown
             if (_accessData!.isCountdownActive || _accessData!.shouldShowPendingApproval) {
               return WaitingScreen(
@@ -520,19 +577,9 @@ class _AuthWrapperState extends State<AuthWrapper> {
               );
             }
           } else if (_accessControlService.isPreLaunchMode) {
-            // Pre-launch mode but no access data yet - show default waiting screen
-            // with countdown to general access date
-            return WaitingScreen(
-              accessData: UserAccessData(
-                userId: state.user.uid,
-                approvalStatus: ApprovalStatus.pending,
-                accessDate: AccessControlService.generalAccessDate,
-                membershipTier: SubscriptionTier.basic,
-              ),
-              onSignOut: _handleSignOut,
-              onRefresh: _handleRefresh,
-              onEnableNotifications: _handleEnableNotifications,
-            );
+            // Pre-launch mode but no access data yet - show splash while loading
+            // (the listener already set _isCheckingAccess = true, so this is a fallback)
+            return const SplashScreen();
           }
           // User can access the app
           return MainNavigationScreen(userId: state.user.uid);

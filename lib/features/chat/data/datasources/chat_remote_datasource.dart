@@ -26,6 +26,7 @@ abstract class ChatRemoteDataSource {
     required String receiverId,
     required String content,
     required MessageType type,
+    Map<String, dynamic>? metadata,
   });
 
   /// Mark message as read
@@ -371,6 +372,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String receiverId,
     required String content,
     required MessageType type,
+    Map<String, dynamic>? metadata,
   }) async {
     try {
       // Check for contact information in the message
@@ -405,6 +407,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         sentAt: DateTime.now(),
         deliveredAt: DateTime.now(),
         status: MessageStatus.sent,
+        metadata: metadata,
       );
 
       // Save message
@@ -427,8 +430,20 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'unreadCount': FieldValue.increment(1),
       });
 
-      // Update match with last message info (skip for search conversations)
-      if (!matchId.startsWith('search_')) {
+      // If this is a superLike conversation and the target is replying,
+      // make the conversation visible to both users
+      if (matchId.startsWith('superlike_') && conversation.superLikeSenderId != null) {
+        if (senderId != conversation.superLikeSenderId) {
+          // Target is replying — make visible to both
+          await firestore
+              .collection('conversations')
+              .doc(conversation.conversationId)
+              .update({'visibleTo': null});
+        }
+      }
+
+      // Update match with last message info (skip for search and superlike conversations)
+      if (!matchId.startsWith('search_') && !matchId.startsWith('superlike_')) {
         await firestore.collection('matches').doc(matchId).update({
           'lastMessageAt': Timestamp.fromDate(message.sentAt),
           'lastMessage': content,
@@ -601,6 +616,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           if (blockedUserIds.contains(otherUserId)) return false;
         }
 
+        // Filter by visibleTo — super like conversations only visible to listed users
+        if (conv.visibleTo != null && conv.visibleTo!.isNotEmpty) {
+          if (!conv.visibleTo!.contains(userId)) return false;
+        }
+
         return true;
       }).toList();
     });
@@ -611,7 +631,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     final Set<String> blockedIds = {};
 
     final blockedByMe = await firestore
-        .collection('blocked_users')
+        .collection('blockedUsers')
         .where('blockerId', isEqualTo: userId)
         .get();
 
@@ -621,7 +641,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     }
 
     final blockedMe = await firestore
-        .collection('blocked_users')
+        .collection('blockedUsers')
         .where('blockedUserId', isEqualTo: userId)
         .get();
 
@@ -1008,7 +1028,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String reason,
   }) async {
     try {
-      final blockRef = firestore.collection('blocked_users').doc();
+      final blockRef = firestore.collection('blockedUsers').doc();
       await blockRef.set({
         'blockId': blockRef.id,
         'blockerId': blockerId,
@@ -1077,7 +1097,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     try {
       // Find and delete the block record
       final blockQuery = await firestore
-          .collection('blocked_users')
+          .collection('blockedUsers')
           .where('blockerId', isEqualTo: blockerId)
           .where('blockedUserId', isEqualTo: blockedUserId)
           .get();
@@ -1103,7 +1123,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     try {
       // Check if either user has blocked the other
       final blockQuery = await firestore
-          .collection('blocked_users')
+          .collection('blockedUsers')
           .where('blockerId', whereIn: [userId, otherUserId])
           .get();
 

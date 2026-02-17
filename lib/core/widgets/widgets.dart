@@ -90,7 +90,6 @@ export 'typing_indicator.dart';
 
 // Existing widgets
 export 'animated_luxury_logo.dart';
-export 'banner_ad_widget.dart';
 export 'countdown_blur_overlay.dart';
 export 'language_selector.dart';
 export 'limit_reached_dialog.dart';

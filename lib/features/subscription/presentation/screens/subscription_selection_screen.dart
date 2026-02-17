@@ -311,7 +311,6 @@ class _SubscriptionSelectionScreenState
           _buildComparisonRow('See Who Likes You', '✗', '✓', '✓'),
           _buildComparisonRow('Advanced Filters', '✗', '✓', '✓'),
           _buildComparisonRow('Read Receipts', '✗', '✓', '✓'),
-          _buildComparisonRow('Ad-Free Experience', '✗', '✓', '✓'),
           _buildComparisonRow('Incognito Mode', '✗', '✗', '✓'),
           _buildComparisonRow('Priority Support', '✗', '✗', '✓'),
         ],
@@ -383,8 +382,6 @@ class _SubscriptionSelectionScreenState
         return 'Read Receipts';
       case 'prioritySupport':
         return 'Priority Customer Support';
-      case 'adFree':
-        return 'Ad-Free Experience';
       case 'profileBoost':
         return 'Profile Visibility Boost';
       case 'incognitoMode':

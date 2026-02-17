@@ -45,7 +45,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   late StreamSubscription<List<PurchaseDetails>> _purchaseSubscription;
 
   // Cached packages so they survive BLoC state transitions
-  List<CoinPackage> _cachedPackages = [];
+  // Pre-populated with fallback packages to prevent blank screen
+  List<CoinPackage> _cachedPackages = CoinPackages.standardPackages;
   List<CoinPromotion> _cachedPromotions = [];
 
   // Send coins state
@@ -55,6 +56,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   // Mutable current tier — loaded from Firestore, updated after purchase
   late SubscriptionTier _currentTier;
+
+  // Base membership state
+  bool _hasBaseMembership = false;
+  DateTime? _baseMembershipEndDate;
 
   @override
   void initState() {
@@ -92,6 +97,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             _currentTier = SubscriptionTierExtension.fromString(tierString);
           });
         }
+        // Load base membership state
+        setState(() {
+          _hasBaseMembership = data?['hasBaseMembership'] as bool? ?? false;
+          final ts = data?['baseMembershipEndDate'];
+          _baseMembershipEndDate = ts != null ? (ts as Timestamp).toDate() : null;
+        });
       }
     } catch (e) {
       debugPrint('[CoinShop] Failed to load tier from Firestore: $e');
@@ -124,10 +135,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
         case PurchaseStatus.error:
           debugPrint('[IAP] Purchase error: ${purchaseDetails.error?.message}');
-          setState(() {
-            _isLoadingCoinPurchase = false;
-            _isLoadingSubscription = false;
-          });
+          if (mounted) {
+            setState(() {
+              _isLoadingCoinPurchase = false;
+              _isLoadingSubscription = false;
+            });
+          }
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -160,6 +173,77 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Handle a successful purchase (coins or subscription)
   Future<void> _handleSuccessfulPurchase(PurchaseDetails purchaseDetails) async {
     final productId = purchaseDetails.productID;
+
+    // Check if this is a base membership purchase
+    if (productId == 'greengo_base_membership') {
+      debugPrint('[IAP] Base membership purchase successful');
+      final now = DateTime.now();
+      final endDate = now.add(const Duration(days: 365));
+      final firestore = FirebaseFirestore.instance;
+
+      try {
+        // Update base membership status
+        await firestore
+            .collection('profiles')
+            .doc(widget.userId)
+            .update({
+          'hasBaseMembership': true,
+          'baseMembershipEndDate': Timestamp.fromDate(endDate),
+        });
+
+        // Grant 500 bonus coins
+        final balanceRef = firestore
+            .collection('coin_balances')
+            .doc(widget.userId);
+        final balanceDoc = await balanceRef.get();
+        if (balanceDoc.exists) {
+          final currentTotal = balanceDoc.data()?['totalCoins'] as int? ?? 0;
+          await balanceRef.update({'totalCoins': currentTotal + 500});
+        } else {
+          await balanceRef.set({
+            'userId': widget.userId,
+            'totalCoins': 500,
+            'spentCoins': 0,
+            'lastUpdated': Timestamp.fromDate(now),
+          });
+        }
+        await firestore
+            .collection('coin_balances')
+            .doc(widget.userId)
+            .collection('coinBatches')
+            .add({
+          'amount': 500,
+          'remainingCoins': 500,
+          'source': 'membership_bonus',
+          'reason': 'Base membership welcome bonus',
+          'createdAt': Timestamp.fromDate(now),
+          'expiresAt': Timestamp.fromDate(endDate),
+        });
+      } catch (e) {
+        debugPrint('[IAP] Failed to update base membership in Firestore: $e');
+      }
+
+      if (purchaseDetails.pendingCompletePurchase) {
+        await _inAppPurchase.completePurchase(purchaseDetails);
+      }
+
+      if (mounted) {
+        setState(() {
+          _isLoadingSubscription = false;
+          _hasBaseMembership = true;
+          _baseMembershipEndDate = endDate;
+        });
+        // Refresh coin balance
+        context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('GreenGo Membership activated! +500 bonus coins. Valid for 1 year.'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+      return;
+    }
 
     // Check if this is a coin purchase
     final coinPackage = CoinPackages.getByProductId(productId);
@@ -298,10 +382,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         ),
         centerTitle: true,
-        leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.white),
-          onPressed: () => Navigator.of(context).pop(),
-        ),
+        automaticallyImplyLeading: false,
         actions: const [],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48),
@@ -564,18 +645,20 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         ),
 
-        // Subscription plans
+        // Base membership card + Subscription plans
         Expanded(
-          child: ListView.builder(
+          child: ListView(
             padding: const EdgeInsets.all(16),
-            itemCount: tiers.length,
-            itemBuilder: (context, index) {
-              final tier = tiers[index];
-              final isCurrentPlan = currentTier == tier;
-              final isUpgrade = tier.index > currentTier.index;
-              final isDowngrade = tier.index < currentTier.index;
-              return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
-            },
+            children: [
+              _buildBaseMembershipCard(),
+              const SizedBox(height: 16),
+              ...tiers.map((tier) {
+                final isCurrentPlan = currentTier == tier;
+                final isUpgrade = tier.index > currentTier.index;
+                final isDowngrade = tier.index < currentTier.index;
+                return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
+              }),
+            ],
           ),
         ),
 
@@ -729,6 +812,185 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         break;
     }
     return 0.0;
+  }
+
+  Widget _buildBaseMembershipCard() {
+    final isActive = _hasBaseMembership &&
+        _baseMembershipEndDate != null &&
+        _baseMembershipEndDate!.isAfter(DateTime.now());
+
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            const Color(0xFF4CAF50).withValues(alpha: 0.2),
+            const Color(0xFF2E7D32).withValues(alpha: 0.1),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: isActive ? const Color(0xFF4CAF50) : AppColors.richGold,
+          width: 2,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: LinearGradient(
+                      colors: [
+                        const Color(0xFF4CAF50),
+                        const Color(0xFF4CAF50).withValues(alpha: 0.6),
+                      ],
+                    ),
+                  ),
+                  child: const Center(
+                    child: Text('🌿', style: TextStyle(fontSize: 24)),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'GreenGo Base Membership',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const Text(
+                        'Yearly subscription',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                if (isActive)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF4CAF50),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: const Text(
+                      'ACTIVE',
+                      style: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Required to swipe, like, chat, and interact with other users.',
+              style: TextStyle(fontSize: 13, color: Colors.white60),
+            ),
+            if (isActive && _baseMembershipEndDate != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                'Valid until ${_baseMembershipEndDate!.day.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.month.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.year}',
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: Color(0xFF4CAF50),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+            if (!isActive) ...[
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF4CAF50),
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: _isLoadingSubscription
+                      ? const SizedBox(
+                          height: 20,
+                          width: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Colors.white,
+                          ),
+                        )
+                      : const Text(
+                          'Subscribe Now',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _handleBaseMembershipPurchase() async {
+    setState(() => _isLoadingSubscription = true);
+
+    try {
+      final available = await _inAppPurchase.isAvailable();
+      if (!available) {
+        _showError('Store not available. Make sure Google Play is installed.');
+        setState(() => _isLoadingSubscription = false);
+        return;
+      }
+
+      const productId = 'greengo_base_membership';
+      final response = await _inAppPurchase.queryProductDetails({productId});
+
+      if (response.productDetails.isEmpty) {
+        _showError(
+          'Base membership product not found in Google Play.\n\n'
+          'Product ID: $productId\n'
+          'Make sure the product is configured in Google Play Console.',
+        );
+        setState(() => _isLoadingSubscription = false);
+        return;
+      }
+
+      final product = response.productDetails.first;
+      final param = PurchaseParam(
+        productDetails: product,
+        applicationUserName: widget.userId,
+      );
+
+      final ok = await _inAppPurchase.buyNonConsumable(purchaseParam: param);
+      if (!ok) {
+        _showError('Failed to initiate purchase');
+        setState(() => _isLoadingSubscription = false);
+      }
+    } catch (e) {
+      _showError('Purchase error: $e');
+      setState(() => _isLoadingSubscription = false);
+    }
   }
 
   Widget _buildSubscriptionCard(SubscriptionTier tier, bool isCurrentPlan, bool isUpgrade, bool isDowngrade, SubscriptionTier currentTier) {
@@ -920,7 +1182,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     _buildFeatureRow('Super Likes', _formatLimit(features['superLikes'] as int)),
                     _buildFeatureRow('Boosts', _formatLimit(features['boosts'] as int)),
                     _buildFeatureRow('See Who Likes You', features['seeWhoLikesYou'] == true ? '✓' : '✗'),
-                    _buildFeatureRow('Ad-Free', features['adFree'] == true ? '✓' : '✗'),
                     if (tier == SubscriptionTier.platinum) ...[
                       _buildFeatureRow('VIP Badge', '✓'),
                       _buildFeatureRow('Priority Matching', '✓'),
