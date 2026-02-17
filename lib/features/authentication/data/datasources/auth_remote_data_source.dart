@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 // Conditional imports - uncomment when enabling features in AppConfig
 // import 'package:google_sign_in/google_sign_in.dart';
@@ -96,8 +97,15 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     required String password,
   }) async {
     try {
+      // Check if input is a nickname (no '@' in it) rather than an email
+      String resolvedEmail = email;
+      if (!email.contains('@')) {
+        // Treat as nickname - look up email from Firestore profiles
+        resolvedEmail = await _resolveNicknameToEmail(email);
+      }
+
       final userCredential = await firebaseAuth.signInWithEmailAndPassword(
-        email: email,
+        email: resolvedEmail,
         password: password,
       );
 
@@ -109,6 +117,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     } on firebase_auth.FirebaseAuthException catch (e) {
       throw _handleFirebaseAuthException(e);
     } catch (e) {
+      if (e is AuthenticationException) rethrow;
       // Check if the error message contains network-related keywords
       final message = e.toString().toLowerCase();
       if (message.contains('network') ||
@@ -121,6 +130,46 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         throw AuthenticationException('NETWORK_ERROR: Please check your internet connection');
       }
       throw AuthenticationException(e.toString());
+    }
+  }
+
+  /// Resolve a nickname to an email address by querying Firestore profiles
+  Future<String> _resolveNicknameToEmail(String nickname) async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+      final normalizedNickname = nickname.toLowerCase().replaceAll('@', '');
+
+      // Query profiles collection for this nickname
+      final querySnapshot = await firestore
+          .collection('profiles')
+          .where('nickname', isEqualTo: normalizedNickname)
+          .limit(1)
+          .get();
+
+      if (querySnapshot.docs.isEmpty) {
+        throw AuthenticationException('No account found with nickname "@$normalizedNickname"');
+      }
+
+      // Get the userId from the profile document
+      final userId = querySnapshot.docs.first.id;
+
+      // Look up the user's email from the 'users' collection
+      final userDoc = await firestore.collection('users').doc(userId).get();
+      if (userDoc.exists && userDoc.data()?['email'] != null) {
+        return userDoc.data()!['email'] as String;
+      }
+
+      // Fallback: check if email is stored in the profile document itself
+      final profileData = querySnapshot.docs.first.data();
+      if (profileData['email'] != null) {
+        return profileData['email'] as String;
+      }
+
+      throw AuthenticationException('Could not find email for nickname "@$normalizedNickname"');
+    } on AuthenticationException {
+      rethrow;
+    } catch (e) {
+      throw AuthenticationException('Failed to look up nickname: ${e.toString()}');
     }
   }
 

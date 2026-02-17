@@ -6,7 +6,6 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/utils/validators.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_particles_background.dart';
@@ -218,13 +217,18 @@ class _LoginScreenState extends State<LoginScreen>
                       position: _slideAnimation,
                       child: Column(
                         children: [
-                          // Email Field
+                          // Email or Nickname Field
                           AuthTextField(
                             controller: _emailController,
-                            label: l10n.email,
-                            keyboardType: TextInputType.emailAddress,
-                            validator: Validators.validateEmail,
-                            prefixIcon: Icons.email_outlined,
+                            label: '${l10n.email} / Nickname',
+                            keyboardType: TextInputType.text,
+                            validator: (value) {
+                              if (value == null || value.trim().isEmpty) {
+                                return 'Please enter your email or nickname';
+                              }
+                              return null;
+                            },
+                            prefixIcon: Icons.person_outline,
                             enabled: !isLoading,
                           ),
 

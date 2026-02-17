@@ -36,6 +36,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     'German',
     'Italian',
     'Portuguese',
+    'Portuguese (Brazil)',
     'Russian',
     'Chinese',
     'Japanese',

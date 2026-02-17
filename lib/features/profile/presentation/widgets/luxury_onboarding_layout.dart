@@ -146,8 +146,58 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
                 // Header section with title
                 _buildHeader(context),
 
-                // Content area
-                Expanded(child: widget.child),
+                // Content area wrapped in elegant glass card
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(28),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+                        child: AnimatedBuilder(
+                          animation: _pulseAnimation,
+                          builder: (context, child) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(28),
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Colors.white.withOpacity(0.09),
+                                    Colors.white.withOpacity(0.04),
+                                    Colors.white.withOpacity(0.02),
+                                  ],
+                                  stops: const [0.0, 0.5, 1.0],
+                                ),
+                                border: Border.all(
+                                  color: AppColors.richGold.withOpacity(0.15 + 0.08 * _pulseAnimation.value),
+                                  width: 1.0,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.4),
+                                    blurRadius: 30,
+                                    offset: const Offset(0, 12),
+                                  ),
+                                  BoxShadow(
+                                    color: AppColors.richGold.withOpacity(0.04 * _pulseAnimation.value),
+                                    blurRadius: 20,
+                                    spreadRadius: 1,
+                                  ),
+                                ],
+                              ),
+                              child: child,
+                            );
+                          },
+                          child: widget.child,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 16),
               ],
             ),
           ),

@@ -33,6 +33,7 @@ class _Step5LocationLanguageScreenState
     'German',
     'Italian',
     'Portuguese',
+    'Portuguese (Brazil)',
     'Russian',
     'Chinese',
     'Japanese',
