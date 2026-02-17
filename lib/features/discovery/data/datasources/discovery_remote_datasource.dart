@@ -111,6 +111,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         maxAge: preferences.maxAge,
         maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(),
         preferredGenders: preferredGenders,
+        showOnlyVerified: preferences.onlyVerified,
         updatedAt: DateTime.now(),
       ),
       limit: 99999, // No limit - endless scrolling

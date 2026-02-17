@@ -88,11 +88,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
 
-        // MANDATORY: Only show verified profiles
-        if (!candidateProfile.isVerified) continue;
-
         // MANDATORY: Only show active profiles (skip suspended/banned/deleted)
         if (candidateProfile.accountStatus != 'active') continue;
+
+        // Optional: Only show verified profiles (if user enabled this preference)
+        if (preferences.showOnlyVerified && !candidateProfile.isVerified) continue;
 
         // Must have at least one photo
         if (candidateProfile.photoUrls.isEmpty) continue;
