@@ -160,23 +160,56 @@ class AccessControlService {
   final auth.FirebaseAuth _auth;
   final EarlyAccessService _earlyAccessService;
 
-  // Release dates — Official launch: April 14, 2026
-  // Tier-based early access:
-  //   Platinum & early access list: March 14, 2026 (1 month early)
-  //   Gold:                         March 28, 2026 (2.5 weeks early)
-  //   Silver:                       April  7, 2026 (1 week early)
-  //   Free/Basic:                   April 14, 2026 (official release)
-  static final DateTime platinumAccessDate = DateTime(2026, 3, 14);
-  static final DateTime goldAccessDate = DateTime(2026, 3, 28);
-  static final DateTime silverAccessDate = DateTime(2026, 4, 7);
-  static final DateTime generalAccessDate = DateTime(2026, 4, 14); // Official release
+  // Default fallback dates (used until Firestore config is loaded)
+  static DateTime _platinumAccessDate = DateTime(2026, 3, 14);
+  static DateTime _goldAccessDate = DateTime(2026, 3, 28);
+  static DateTime _silverAccessDate = DateTime(2026, 4, 7);
+  static DateTime _generalAccessDate = DateTime(2026, 4, 14);
+  static bool _configLoaded = false;
+
+  // Public getters — always use the latest fetched values
+  static DateTime get platinumAccessDate => _platinumAccessDate;
+  static DateTime get goldAccessDate => _goldAccessDate;
+  static DateTime get silverAccessDate => _silverAccessDate;
+  static DateTime get generalAccessDate => _generalAccessDate;
 
   // Early access list users get the same date as Platinum
-  static final DateTime earlyAccessDate = platinumAccessDate;
+  static DateTime get earlyAccessDate => _platinumAccessDate;
 
   // Legacy aliases for backwards compatibility
   static DateTime get premiumAccessDate => earlyAccessDate;
   static DateTime get basicAccessDate => generalAccessDate;
+
+  /// Fetch countdown dates from Firestore `app_config/countdown` document.
+  /// Call once on app startup. Falls back to defaults if fetch fails.
+  static Future<void> loadCountdownDatesFromFirestore() async {
+    if (_configLoaded) return;
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('app_config')
+          .doc('countdown')
+          .get();
+      if (doc.exists) {
+        final data = doc.data()!;
+        if (data['platinumAccessDate'] != null) {
+          _platinumAccessDate = (data['platinumAccessDate'] as Timestamp).toDate();
+        }
+        if (data['goldAccessDate'] != null) {
+          _goldAccessDate = (data['goldAccessDate'] as Timestamp).toDate();
+        }
+        if (data['silverAccessDate'] != null) {
+          _silverAccessDate = (data['silverAccessDate'] as Timestamp).toDate();
+        }
+        if (data['generalAccessDate'] != null) {
+          _generalAccessDate = (data['generalAccessDate'] as Timestamp).toDate();
+        }
+      }
+      _configLoaded = true;
+    } catch (e) {
+      // Silently use default dates on error
+      _configLoaded = true;
+    }
+  }
 
   /// Get access date for a subscription tier
   static DateTime getAccessDateForSubscriptionTier(SubscriptionTier tier) {
@@ -184,13 +217,13 @@ class AccessControlService {
       case SubscriptionTier.test:
         return DateTime.now().subtract(const Duration(days: 1)); // Immediate
       case SubscriptionTier.platinum:
-        return platinumAccessDate;
+        return _platinumAccessDate;
       case SubscriptionTier.gold:
-        return goldAccessDate;
+        return _goldAccessDate;
       case SubscriptionTier.silver:
-        return silverAccessDate;
+        return _silverAccessDate;
       case SubscriptionTier.basic:
-        return generalAccessDate;
+        return _generalAccessDate;
     }
   }
 

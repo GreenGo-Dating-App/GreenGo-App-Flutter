@@ -13,6 +13,13 @@ class ProfileModel extends Profile {
     required super.gender,
     super.sexualOrientation,
     super.accountStatus,
+    super.isBoosted,
+    super.boostExpiry,
+    super.isIncognito,
+    super.incognitoExpiry,
+    super.isTraveler,
+    super.travelerExpiry,
+    super.travelerLocation,
     required super.photoUrls,
     super.privatePhotoUrls,
     required super.bio,
@@ -41,6 +48,8 @@ class ProfileModel extends Profile {
     super.membershipTier,
     super.membershipStartDate,
     super.membershipEndDate,
+    super.hasBaseMembership,
+    super.baseMembershipEndDate,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
@@ -54,6 +63,21 @@ class ProfileModel extends Profile {
       gender: json['gender'] as String? ?? 'other',
       sexualOrientation: json['sexualOrientation'] as String?,
       accountStatus: json['accountStatus'] as String? ?? 'active',
+      isBoosted: json['isBoosted'] as bool? ?? false,
+      boostExpiry: json['boostExpiry'] != null
+          ? (json['boostExpiry'] as Timestamp).toDate()
+          : null,
+      isIncognito: json['isIncognito'] as bool? ?? false,
+      incognitoExpiry: json['incognitoExpiry'] != null
+          ? (json['incognitoExpiry'] as Timestamp).toDate()
+          : null,
+      isTraveler: json['isTraveler'] as bool? ?? false,
+      travelerExpiry: json['travelerExpiry'] != null
+          ? (json['travelerExpiry'] as Timestamp).toDate()
+          : null,
+      travelerLocation: json['travelerLocation'] != null
+          ? LocationModel.fromJson(json['travelerLocation'] as Map<String, dynamic>)
+          : null,
       photoUrls: json['photoUrls'] != null
           ? List<String>.from(json['photoUrls'] as List)
           : (json['photos'] != null ? List<String>.from(json['photos'] as List) : <String>[]),
@@ -109,6 +133,10 @@ class ProfileModel extends Profile {
       membershipEndDate: json['membershipEndDate'] != null
           ? (json['membershipEndDate'] as Timestamp).toDate()
           : null,
+      hasBaseMembership: json['hasBaseMembership'] as bool? ?? false,
+      baseMembershipEndDate: json['baseMembershipEndDate'] != null
+          ? (json['baseMembershipEndDate'] as Timestamp).toDate()
+          : null,
     );
   }
 
@@ -129,7 +157,7 @@ class ProfileModel extends Profile {
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
-    return ProfileModel.fromJson(data);
+    return ProfileModel.fromJson({...data, 'userId': doc.id});
   }
 
   Map<String, dynamic> toJson() {
@@ -165,6 +193,23 @@ class ProfileModel extends Profile {
       'gender': gender,
       'sexualOrientation': sexualOrientation,
       'accountStatus': accountStatus,
+      'isBoosted': isBoosted,
+      'boostExpiry': boostExpiry != null
+          ? Timestamp.fromDate(boostExpiry!)
+          : null,
+      'isIncognito': isIncognito,
+      'incognitoExpiry': incognitoExpiry != null
+          ? Timestamp.fromDate(incognitoExpiry!)
+          : null,
+      'isTraveler': isTraveler,
+      'travelerExpiry': travelerExpiry != null
+          ? Timestamp.fromDate(travelerExpiry!)
+          : null,
+      'travelerLocation': travelerLocation != null
+          ? (travelerLocation is LocationModel
+              ? (travelerLocation as LocationModel).toJson()
+              : travelerLocation!.toJson())
+          : null,
       'photoUrls': photoUrls,
       'privatePhotoUrls': privatePhotoUrls,
       'bio': bio,
@@ -203,6 +248,10 @@ class ProfileModel extends Profile {
       'membershipEndDate': membershipEndDate != null
           ? Timestamp.fromDate(membershipEndDate!)
           : null,
+      'hasBaseMembership': hasBaseMembership,
+      'baseMembershipEndDate': baseMembershipEndDate != null
+          ? Timestamp.fromDate(baseMembershipEndDate!)
+          : null,
     };
   }
 
@@ -215,6 +264,13 @@ class ProfileModel extends Profile {
       gender: profile.gender,
       sexualOrientation: profile.sexualOrientation,
       accountStatus: profile.accountStatus,
+      isBoosted: profile.isBoosted,
+      boostExpiry: profile.boostExpiry,
+      isIncognito: profile.isIncognito,
+      incognitoExpiry: profile.incognitoExpiry,
+      isTraveler: profile.isTraveler,
+      travelerExpiry: profile.travelerExpiry,
+      travelerLocation: profile.travelerLocation,
       photoUrls: profile.photoUrls,
       privatePhotoUrls: profile.privatePhotoUrls,
       bio: profile.bio,
@@ -243,6 +299,8 @@ class ProfileModel extends Profile {
       membershipTier: profile.membershipTier,
       membershipStartDate: profile.membershipStartDate,
       membershipEndDate: profile.membershipEndDate,
+      hasBaseMembership: profile.hasBaseMembership,
+      baseMembershipEndDate: profile.baseMembershipEndDate,
     );
   }
 }
@@ -298,11 +356,11 @@ class LocationModel extends Location {
 
   factory LocationModel.fromJson(Map<String, dynamic> json) {
     return LocationModel(
-      latitude: (json['latitude'] as num).toDouble(),
-      longitude: (json['longitude'] as num).toDouble(),
-      city: json['city'] as String,
-      country: json['country'] as String,
-      displayAddress: json['displayAddress'] as String,
+      latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
+      longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
+      city: json['city'] as String? ?? 'Unknown',
+      country: json['country'] as String? ?? 'Unknown',
+      displayAddress: json['displayAddress'] as String? ?? 'Unknown',
     );
   }
 

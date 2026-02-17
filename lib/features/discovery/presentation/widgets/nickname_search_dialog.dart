@@ -8,6 +8,9 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../chat/domain/usecases/get_search_conversation.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
+import '../../../coins/domain/repositories/coin_repository.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../screens/profile_detail_screen.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -139,7 +142,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
   Future<bool> _isUserBlocked(String userId, String otherUserId) async {
     try {
       final blockQuery = await FirebaseFirestore.instance
-          .collection('blocked_users')
+          .collection('blockedUsers')
           .where('blockerId', whereIn: [userId, otherUserId])
           .get();
 
@@ -179,6 +182,40 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
     setState(() => _isSearching = true);
 
     try {
+      // Check if user already has a conversation with this person (free to continue)
+      final existingConv = await _checkExistingConversation(
+        widget.currentUserId,
+        _foundProfile!.userId,
+      );
+
+      if (!mounted) return;
+
+      // If no existing conversation, charge 50 coins for direct message
+      if (!existingConv) {
+        final coinRepository = GetIt.instance<CoinRepository>();
+        final balanceResult = await coinRepository.getBalance(widget.currentUserId);
+
+        if (!mounted) return;
+
+        final hasEnough = balanceResult.fold(
+          (failure) => false,
+          (balance) => balance.availableCoins >= CoinFeaturePrices.directMessage,
+        );
+
+        if (!hasEnough) {
+          setState(() => _isSearching = false);
+          _showInsufficientCoinsDialog();
+          return;
+        }
+
+        // Deduct coins
+        await coinRepository.purchaseFeature(
+          userId: widget.currentUserId,
+          featureName: 'direct_message',
+          cost: CoinFeaturePrices.directMessage,
+        );
+      }
+
       final getSearchConversation = GetIt.instance<GetSearchConversation>();
       final result = await getSearchConversation(
         currentUserId: widget.currentUserId,
@@ -216,6 +253,67 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         SnackBar(content: Text('Error: $e')),
       );
     }
+  }
+
+  /// Check if a conversation already exists between these two users
+  Future<bool> _checkExistingConversation(String userId, String otherUserId) async {
+    try {
+      final query1 = await FirebaseFirestore.instance
+          .collection('conversations')
+          .where('userId1', isEqualTo: userId)
+          .where('userId2', isEqualTo: otherUserId)
+          .limit(1)
+          .get();
+
+      if (query1.docs.isNotEmpty) return true;
+
+      final query2 = await FirebaseFirestore.instance
+          .collection('conversations')
+          .where('userId1', isEqualTo: otherUserId)
+          .where('userId2', isEqualTo: userId)
+          .limit(1)
+          .get();
+
+      return query2.docs.isNotEmpty;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  void _showInsufficientCoinsDialog() {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Text(
+          'Insufficient Coins',
+          style: TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          'Direct messaging costs ${CoinFeaturePrices.directMessage} coins. Would you like to buy more coins?',
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(ctx).pop();
+              Navigator.of(context).pop(); // Close search dialog
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => CoinShopScreen(userId: widget.currentUserId),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
+            child: const Text('Buy Coins', style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
   }
 
   @override

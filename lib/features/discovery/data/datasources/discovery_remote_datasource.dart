@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
@@ -67,6 +68,9 @@ abstract class DiscoveryRemoteDataSource {
     required String userId,
     required String targetUserId,
   });
+
+  /// Activate profile boost for 30 minutes
+  Future<DateTime> activateBoost(String userId);
 }
 
 /// Discovery Remote Data Source Implementation
@@ -114,17 +118,22 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         showOnlyVerified: preferences.onlyVerified,
         updatedAt: DateTime.now(),
       ),
-      limit: 99999, // No limit - endless scrolling
+      limit: 500, // Cap to avoid loading entire database into memory
     );
+
+    print('[Discovery] Candidates from matching: ${candidates.length}');
 
     // Get user's swipe history with action types
     final swipeHistory = await _getSwipeHistoryWithTypes(userId);
+    print('[Discovery] Swipe history entries: ${swipeHistory.length}');
 
     // Get matches (mutual likes) to exclude them
     final matchedUserIds = await _getMatchedUserIds(userId);
+    print('[Discovery] Matched user IDs: ${matchedUserIds.length}');
 
     // Get blocked user IDs (bidirectional) to exclude them
     final blockedUserIds = await _getBlockedUserIds(userId);
+    print('[Discovery] Blocked user IDs: ${blockedUserIds.length}');
 
     // Apply sexual orientation filter
     var filteredCandidates = preferences.preferredOrientations.isNotEmpty
@@ -140,8 +149,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     if (preferences.preferredCountries.isNotEmpty) {
       filteredCandidates = filteredCandidates.where((candidate) {
         final country = candidate.profile.location.country;
-        // Skip candidates with unknown/empty country
-        if (country.isEmpty || country == 'Unknown') return false;
+        // Keep candidates with unknown/empty country (don't exclude them)
+        if (country.isEmpty || country == 'Unknown') return true;
         return preferences.preferredCountries
             .map((c) => c.toLowerCase())
             .contains(country.toLowerCase());
@@ -149,11 +158,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     // Categorize candidates into priority tiers:
+    // Priority 0: Boosted profiles (isBoosted && boostExpiry > now)
     // Priority 1: Never seen (not in swipe history)
     // Priority 2: Skipped (swipe down) - queued for next session
     // Priority 3: Liked but no response (not matched)
     // Excluded: Nope/pass (swipe left) - hidden for 90 days
 
+    final List<MatchCandidate> priority0Boosted = [];
     final List<MatchCandidate> priority1NotSeen = [];
     final List<MatchCandidate> priority2Skipped = [];
     final List<MatchCandidate> priority3LikedNoResponse = [];
@@ -170,11 +181,28 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
       if (blockedUserIds.contains(candidateId)) continue;
 
+      // Skip incognito profiles (hidden from discovery)
+      final candidateProfile = candidate.profile;
+      if (candidateProfile.isIncognito &&
+          candidateProfile.incognitoExpiry != null &&
+          candidateProfile.incognitoExpiry!.isAfter(now)) {
+        continue;
+      }
+
+      // Check if profile is boosted
+      final isBoosted = candidateProfile.isBoosted &&
+          candidateProfile.boostExpiry != null &&
+          candidateProfile.boostExpiry!.isAfter(now);
+
       final swipeRecord = swipeHistory[candidateId];
 
       if (swipeRecord == null) {
-        // Never swiped on - Priority 1
-        priority1NotSeen.add(candidate);
+        if (isBoosted) {
+          priority0Boosted.add(candidate);
+        } else {
+          // Never swiped on - Priority 1
+          priority1NotSeen.add(candidate);
+        }
       } else if (swipeRecord.actionType == 'skip') {
         // Skipped (swipe down) - Priority 2: show again next session
         priority2Skipped.add(candidate);
@@ -192,10 +220,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
     }
 
+    print('[Discovery] After filtering: P0=${priority0Boosted.length} P1=${priority1NotSeen.length} P2=${priority2Skipped.length} P3=${priority3LikedNoResponse.length}');
+
     // Build the final list with priority ordering (no limit - endless)
     final List<MatchCandidate> prioritizedCandidates = [];
 
-    // Add priority 1 (not seen) first
+    // Add priority 0 (boosted) first
+    prioritizedCandidates.addAll(priority0Boosted);
+
+    // Add priority 1 (not seen)
     prioritizedCandidates.addAll(priority1NotSeen);
 
     // Then priority 2 (skipped / expired nope cooldown)
@@ -272,7 +305,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     // Users I blocked
     final blockedByMe = await firestore
-        .collection('blocked_users')
+        .collection('blockedUsers')
         .where('blockerId', isEqualTo: userId)
         .get();
 
@@ -283,7 +316,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     // Users who blocked me
     final blockedMe = await firestore
-        .collection('blocked_users')
+        .collection('blockedUsers')
         .where('blockedUserId', isEqualTo: userId)
         .get();
 
@@ -370,6 +403,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final senderNickname = senderProfile.data()?['nickname'] as String? ?? 'Someone';
       final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
 
+      // If super like, create a one-way conversation visible only to the target
+      if (actionType == SwipeActionType.superLike) {
+        await _createSuperLikeConversation(
+          userId: userId,
+          targetUserId: targetUserId,
+          senderNickname: senderNickname.isNotEmpty ? senderNickname : senderName,
+        );
+      }
+
       // Create like notification for target user
       final notificationType = actionType == SwipeActionType.superLike ? 'super_like' : 'new_like';
       final notificationTitle = actionType == SwipeActionType.superLike
@@ -404,6 +446,80 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     return action;
+  }
+
+  /// Create a super like conversation visible only to the target until they reply
+  Future<void> _createSuperLikeConversation({
+    required String userId,
+    required String targetUserId,
+    required String senderNickname,
+  }) async {
+    // Check if a super like conversation already exists between these users
+    final existing1 = await firestore
+        .collection('conversations')
+        .where('userId1', isEqualTo: userId)
+        .where('userId2', isEqualTo: targetUserId)
+        .where('conversationType', isEqualTo: 'superLike')
+        .limit(1)
+        .get();
+
+    if (existing1.docs.isNotEmpty) return; // Already exists
+
+    final existing2 = await firestore
+        .collection('conversations')
+        .where('userId1', isEqualTo: targetUserId)
+        .where('userId2', isEqualTo: userId)
+        .where('conversationType', isEqualTo: 'superLike')
+        .limit(1)
+        .get();
+
+    if (existing2.docs.isNotEmpty) return; // Already exists
+
+    final conversationRef = firestore.collection('conversations').doc();
+    final now = Timestamp.now();
+
+    await conversationRef.set({
+      'conversationId': conversationRef.id,
+      'matchId': 'superlike_${userId}_$targetUserId',
+      'userId1': userId,
+      'userId2': targetUserId,
+      'conversationType': 'superLike',
+      'visibleTo': [targetUserId],
+      'superLikeSenderId': userId,
+      'createdAt': now,
+      'unreadCount': 1,
+      'isTyping': false,
+      'isPinned': false,
+      'isMuted': false,
+      'isArchived': false,
+      'isDeleted': false,
+      'theme': 'gold',
+      'lastMessageAt': now,
+    });
+
+    // Create system message
+    final msgRef = conversationRef.collection('messages').doc();
+    await msgRef.set({
+      'messageId': msgRef.id,
+      'senderId': 'system',
+      'receiverId': targetUserId,
+      'content': '$senderNickname sent you a Super Like!',
+      'type': 'system',
+      'sentAt': now,
+      'status': 'sent',
+    });
+
+    // Update lastMessage on the conversation
+    await conversationRef.update({
+      'lastMessage': {
+        'messageId': msgRef.id,
+        'senderId': 'system',
+        'receiverId': targetUserId,
+        'content': '$senderNickname sent you a Super Like!',
+        'type': 'system',
+        'sentAt': now,
+      },
+    });
   }
 
   /// Helper to create notifications
@@ -749,6 +865,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     } catch (e) {
       return null;
     }
+  }
+
+  @override
+  Future<DateTime> activateBoost(String userId) async {
+    final expiry = DateTime.now().add(const Duration(minutes: 30));
+    await firestore.collection('profiles').doc(userId).update({
+      'isBoosted': true,
+      'boostExpiry': Timestamp.fromDate(expiry),
+    });
+    return expiry;
   }
 
   @override

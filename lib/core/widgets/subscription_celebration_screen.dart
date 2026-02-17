@@ -238,11 +238,6 @@ class _SubscriptionCelebrationScreenState
       addRow(Icons.visibility, 'See Who Likes You', '✓');
     }
 
-    // Ad-Free
-    if (features['adFree'] == true) {
-      addRow(Icons.block, 'Ad-Free Experience', '✓');
-    }
-
     // Read Receipts
     if (features['readReceipts'] == true) {
       addRow(Icons.done_all, 'Read Receipts', '✓');

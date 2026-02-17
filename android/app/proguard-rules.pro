@@ -60,9 +60,6 @@
 -keep class com.google.mlkit.vision.face.** { *; }
 -keep class com.google.mlkit.common.** { *; }
 
-# Google Mobile Ads
--keep class com.google.android.gms.ads.** { *; }
-
 # Suppress warnings for missing ML Kit optional modules
 -dontwarn com.google.mlkit.vision.text.chinese.**
 -dontwarn com.google.mlkit.vision.text.devanagari.**

@@ -3,7 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/base_membership_gate.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../matching/domain/usecases/compatibility_scorer.dart';
 import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
@@ -48,9 +50,23 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
   String _searchQuery = '';
   String _filterType = 'all'; // all, new, messaged
   String _sortOrder = 'none'; // none, desc, asc
+  Profile? _currentUserProfile;
 
   // Cache computed scores to avoid recalculating on every rebuild
   final Map<String, double> _scoreCache = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCurrentUserProfile();
+  }
+
+  Future<void> _loadCurrentUserProfile() async {
+    final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
+    result.fold((_) {}, (profile) {
+      if (mounted) setState(() => _currentUserProfile = profile);
+    });
+  }
 
   @override
   void dispose() {
@@ -393,7 +409,15 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                               profile: profile,
                               currentUserId: widget.userId,
                               compatibilityPercent: score > 0 ? score : null,
-                              onTap: () {
+                              onTap: () async {
+                                // Base membership gate
+                                final allowed = await BaseMembershipGate.checkAndGate(
+                                  context: context,
+                                  profile: _currentUserProfile,
+                                  userId: widget.userId,
+                                );
+                                if (!allowed) return;
+
                                 // Mark as seen if not seen
                                 if (match.isNewMatch(widget.userId)) {
                                   context.read<MatchesBloc>().add(

@@ -115,7 +115,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'advancedFilters': false,
           'readReceipts': false,
           'prioritySupport': false,
-          'adFree': false,
+
           'profileBoost': 0,
           'incognitoMode': false,
         };
@@ -130,7 +130,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': false,
-          'adFree': true,
+
           'profileBoost': 1,
           'incognitoMode': false,
         };
@@ -145,7 +145,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-          'adFree': true,
+
           'profileBoost': 5,
           'incognitoMode': true,
         };
@@ -160,7 +160,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-          'adFree': true,
+
           'profileBoost': -1, // unlimited
           'incognitoMode': true,
           'vipBadge': true,
@@ -179,7 +179,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-          'adFree': true,
+
           'profileBoost': -1, // unlimited
           'incognitoMode': true,
           'testBadge': true,

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -24,6 +25,7 @@ import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/domain/entities/coin_balance.dart';
+import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -97,6 +99,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // Profile bloc for shared profile state across screens
   late final ProfileBloc _profileBloc;
 
+  // Discovery screen key for grid mode toggle
+  final GlobalKey<DiscoveryScreenState> _discoveryKey = GlobalKey<DiscoveryScreenState>();
+
   // User's membership tier
   MembershipTier _membershipTier = MembershipTier.free;
 
@@ -111,12 +116,25 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   bool _showTour = false;
   static const String _tourPrefKey = 'has_completed_app_tour';
 
+  // Hourly usage counters for discovery
+  int _likeUsage = 0;
+  int _nopeUsage = 0;
+  int _superLikeUsage = 0;
+  final UsageLimitService _usageLimitService = UsageLimitService();
+
+  // Badge counts for bottom nav
+  int _newMatchCount = 0;
+  int _unreadMessageCount = 0;
+  StreamSubscription? _matchCountSub;
+  StreamSubscription? _messageCountSub;
+
   @override
   void initState() {
     super.initState();
 
-    // Initialize access control service
+    // Initialize access control service and load countdown dates from Firestore
     _accessControlService = AccessControlService();
+    AccessControlService.loadCountdownDatesFromFirestore();
 
     // Initialize activity tracking for re-engagement notifications
     _activityTrackingService = ActivityTrackingService();
@@ -150,7 +168,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // With Learning: Discover, Matches, Messages, Shop, Progress, Learn, Profile (7 tabs)
     // Note: Progress placeholder is built via getter to ensure proper context
     _screens = [
-      DiscoveryScreen(userId: widget.userId),
+      DiscoveryScreen(
+        key: _discoveryKey,
+        userId: widget.userId,
+        onGridModeChanged: () {
+          if (mounted) setState(() {});
+        },
+      ),
       MatchesScreen(userId: widget.userId),
       ConversationsScreen(userId: widget.userId),
       CoinShopScreen(userId: widget.userId),
@@ -176,11 +200,20 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // _isCheckingProfile stays true until ALL of these complete
     _initializeAppState();
 
+    // Load hourly usage counters for discovery
+    _loadUsageCounters();
+
     // Check subscription expiry and downgrade to free if expired
     _checkSubscriptionExpiry();
 
+    // Check base membership expiry
+    _checkBaseMembershipExpiry();
+
     // Check if app tour should be shown
     _checkAppTour();
+
+    // Listen for new match count and unread message count
+    _startBadgeCountListeners();
   }
 
   Future<void> _checkAppTour() async {
@@ -230,6 +263,24 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     }
   }
 
+  /// Reload hourly usage counters (likes, nopes, super likes)
+  Future<void> _loadUsageCounters() async {
+    try {
+      final results = await Future.wait([
+        _usageLimitService.getCurrentUsage(widget.userId, UsageLimitType.likes),
+        _usageLimitService.getCurrentUsage(widget.userId, UsageLimitType.nopes),
+        _usageLimitService.getCurrentUsage(widget.userId, UsageLimitType.superLikes),
+      ]);
+      if (mounted) {
+        setState(() {
+          _likeUsage = results[0];
+          _nopeUsage = results[1];
+          _superLikeUsage = results[2];
+        });
+      }
+    } catch (_) {}
+  }
+
   int? _getCachedCountdownEnd() => _cachedCountdownEndMs;
 
   Future<void> _loadCachedCountdown() async {
@@ -252,14 +303,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   Future<void> _loadAccessData() async {
     final accessData = await _accessControlService.getCurrentUserAccess();
     if (mounted && accessData != null) {
+      final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
       setState(() {
         _accessData = accessData;
         _showCachedCountdown = false; // Firestore data is now authoritative
+        // Admin and test users always bypass verification overlay
+        if (isAdminOrTest) {
+          _verificationStatus = VerificationStatus.approved;
+          _isAdmin = _isAdmin || accessData.isAdmin;
+        }
       });
 
       // Persist or clear countdown end time
       final prefs = await SharedPreferences.getInstance();
-      final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
       if (!isAdminOrTest && accessData.isCountdownActive) {
         // Countdown is active — cache the end timestamp
         prefs.setInt(
@@ -299,6 +355,39 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     final releaseDate = AccessControlService.generalAccessDate;
     if (DateTime.now().isAfter(releaseDate)) {
       await expiryService.grantReleaseBonusMonth(widget.userId);
+    }
+  }
+
+  /// Check if base membership has expired and update Firestore
+  Future<void> _checkBaseMembershipExpiry() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      if (!doc.exists || !mounted) return;
+
+      final data = doc.data()!;
+      final hasBase = data['hasBaseMembership'] as bool? ?? false;
+      final endTs = data['baseMembershipEndDate'];
+
+      if (hasBase && endTs != null) {
+        final endDate = (endTs as Timestamp).toDate();
+        if (endDate.isBefore(DateTime.now())) {
+          // Expired — clear the flag
+          await FirebaseFirestore.instance
+              .collection('profiles')
+              .doc(widget.userId)
+              .update({'hasBaseMembership': false});
+
+          // Refresh profile bloc
+          if (mounted) {
+            _profileBloc.add(ProfileLoadRequested(userId: widget.userId));
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('[MainNav] Failed to check base membership expiry: $e');
     }
   }
 
@@ -479,10 +568,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           membershipTier = MembershipTier.fromString(membershipTierString);
         }
 
+        final isAdmin = data['isAdmin'] as bool? ?? false;
+        // Check if test user (tier == 'test' in profiles or users collection)
+        final isTestTier = membershipTierString?.toLowerCase() == 'test';
+
+        // Admin and test users ALWAYS bypass verification — force approved
+        if (isAdmin || isTestTier) {
+          status = VerificationStatus.approved;
+        }
+
         setState(() {
           _verificationStatus = status;
           _verificationRejectionReason = data['verificationRejectionReason'] as String?;
-          _isAdmin = data['isAdmin'] as bool? ?? false;
+          _isAdmin = isAdmin;
           _membershipTier = membershipTier;
           // _isCheckingProfile set to false by _initializeAppState after all futures complete
         });
@@ -501,8 +599,84 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
   }
 
+  void _startBadgeCountListeners() {
+    final fs = FirebaseFirestore.instance;
+    final uid = widget.userId;
+
+    // New matches: count where user hasn't seen the match
+    // Listen to matches where user is userId1 or userId2
+    _matchCountSub = fs
+        .collection('matches')
+        .where(Filter.or(
+          Filter('userId1', isEqualTo: uid),
+          Filter('userId2', isEqualTo: uid),
+        ))
+        .where('isActive', isEqualTo: true)
+        .snapshots()
+        .listen((snapshot) {
+      if (!mounted) return;
+      int count = 0;
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        final uid1 = data['userId1'] as String?;
+        final uid2 = data['userId2'] as String?;
+        if (uid1 != uid && uid2 != uid) continue;
+        final seen = uid == uid1
+            ? (data['user1Seen'] as bool? ?? false)
+            : (data['user2Seen'] as bool? ?? false);
+        if (!seen) count++;
+      }
+      if (mounted && count != _newMatchCount) {
+        setState(() => _newMatchCount = count);
+      }
+    });
+
+    // Unread chats: count conversations where someone sent me a message I haven't seen
+    _messageCountSub = fs
+        .collection('conversations')
+        .where(Filter.or(
+          Filter('userId1', isEqualTo: uid),
+          Filter('userId2', isEqualTo: uid),
+        ))
+        .snapshots()
+        .listen((snapshot) {
+      if (!mounted) return;
+      int count = 0;
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        final uid1 = data['userId1'] as String?;
+        final uid2 = data['userId2'] as String?;
+        if (uid1 != uid && uid2 != uid) continue;
+
+        // Skip deleted conversations
+        if (data['isDeleted'] == true) continue;
+        final deletedFor = data['deletedFor'] as Map<String, dynamic>?;
+        if (deletedFor != null && deletedFor.containsKey(uid)) continue;
+
+        // Skip conversations hidden via visibleTo (super like not yet accepted)
+        final visibleTo = data['visibleTo'] as List<dynamic>?;
+        if (visibleTo != null && visibleTo.isNotEmpty && !visibleTo.contains(uid)) continue;
+
+        final unread = (data['unreadCount'] as int?) ?? 0;
+        if (unread <= 0) continue;
+
+        // Only count if last message was sent by the other person
+        final lastMsg = data['lastMessage'] as Map<String, dynamic>?;
+        final lastSenderId = lastMsg?['senderId'] as String?;
+        if (lastSenderId != null && lastSenderId != uid) {
+          count++;
+        }
+      }
+      if (mounted && count != _unreadMessageCount) {
+        setState(() => _unreadMessageCount = count);
+      }
+    });
+  }
+
   @override
   void dispose() {
+    _matchCountSub?.cancel();
+    _messageCountSub?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     _activityTrackingService.dispose();
     _notificationsBloc.close();
@@ -526,9 +700,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   void refreshDiscoveryTab() {
     setState(() {
       _currentIndex = 0;
-      _screens = List.from(_screens);
-      _screens[0] = DiscoveryScreen(key: UniqueKey(), userId: widget.userId);
     });
+    _discoveryKey.currentState?.refresh();
   }
 
   @override
@@ -618,13 +791,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.discover,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.favorite_outline),
-              activeIcon: const Icon(Icons.favorite),
+              icon: _buildBadgeIcon(Icons.favorite_outline, _newMatchCount),
+              activeIcon: _buildBadgeIcon(Icons.favorite, _newMatchCount),
               label: AppLocalizations.of(context)!.matches,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.chat_bubble_outline),
-              activeIcon: const Icon(Icons.chat_bubble),
+              icon: _buildBadgeIcon(Icons.chat_bubble_outline, _unreadMessageCount),
+              activeIcon: _buildBadgeIcon(Icons.chat_bubble, _unreadMessageCount),
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
@@ -830,34 +1003,53 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Profile (MVP)
     // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Learn, 6=Profile
     if (_currentIndex == 0) {
-      // Discovery screen - show logo with preferences, search, coins, notifications, and membership badge
+      // Discovery screen - coins on left, actions on right
       return AppBar(
-        title: const Text(
-          'GreenGo',
-          style: TextStyle(
-            color: AppColors.richGold,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.tune, color: AppColors.textSecondary),
-          onPressed: _openDiscoveryPreferences,
-          tooltip: 'Discovery Preferences',
+        titleSpacing: 0,
+        leadingWidth: 0,
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [
+            const SizedBox(width: 12),
+            _buildAppBarCoinBalance(),
+          ],
         ),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          // RIGHT side: search, filter, grid toggle
           IconButton(
-            icon: const Icon(Icons.search, color: AppColors.textSecondary),
+            icon: const Icon(Icons.search, color: AppColors.textSecondary, size: 22),
             onPressed: _showNicknameSearch,
             tooltip: 'Search by nickname',
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
           ),
-          const SizedBox(width: 8),
-          _buildAppBarCoinBalance(),
-          const SizedBox(width: 12),
-          _buildMembershipBadgeWidget(),
-          const SizedBox(width: 12),
+          IconButton(
+            icon: const Icon(Icons.tune, color: AppColors.textSecondary, size: 22),
+            onPressed: _openDiscoveryPreferences,
+            tooltip: 'Discovery Preferences',
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
+          ),
+          IconButton(
+            icon: Icon(
+              _discoveryKey.currentState?.isGridMode == true
+                  ? Icons.swipe
+                  : Icons.grid_view,
+              color: AppColors.textSecondary,
+              size: 22,
+            ),
+            onPressed: () {
+              _discoveryKey.currentState?.toggleGridMode();
+            },
+            tooltip: _discoveryKey.currentState?.isGridMode == true
+                ? 'Switch to swipe mode'
+                : 'Switch to grid mode',
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
+          ),
+          const SizedBox(width: 4),
         ],
       );
     } else if (_currentIndex == 1 || _currentIndex == 2) {
@@ -888,8 +1080,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       MaterialPageRoute(
         builder: (context) => DiscoveryPreferencesScreen(
           userId: widget.userId,
+          currentPreferences:
+              _discoveryKey.currentState?.savedPreferences,
           onSave: (preferences) {
-            // Refresh the discovery stack when preferences change
+            // Refresh discovery stack with new filters (resets grid state too)
+            _discoveryKey.currentState?.refreshWithPreferences(preferences);
           },
         ),
       ),
@@ -1025,6 +1220,69 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     return MembershipIndicator(
       tier: _membershipTier,
     );
+  }
+
+  Widget _buildBadgeIcon(IconData icon, int count) {
+    if (count <= 0) return Icon(icon);
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Icon(icon),
+        Positioned(
+          right: -6,
+          top: -4,
+          child: Container(
+            padding: const EdgeInsets.all(3),
+            decoration: const BoxDecoration(
+              color: AppColors.errorRed,
+              shape: BoxShape.circle,
+            ),
+            constraints: const BoxConstraints(minWidth: 16, minHeight: 16),
+            child: Text(
+              count > 99 ? '99+' : '$count',
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 9,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Compact usage chip: icon + "used/limit"
+  Widget _buildUsageChip(String assetPath, IconData fallbackIcon, int used, int limit, Color color) {
+    final limitText = limit == -1 ? '\u221E' : '$limit';
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.12),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(fallbackIcon, size: 14, color: color),
+          const SizedBox(width: 3),
+          Text(
+            '$used/$limitText',
+            style: TextStyle(
+              color: color,
+              fontSize: 11,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Refresh usage counters (call after each swipe)
+  void refreshUsageCounters() {
+    _loadUsageCounters();
   }
 
   int _lastKnownCoins = 0;

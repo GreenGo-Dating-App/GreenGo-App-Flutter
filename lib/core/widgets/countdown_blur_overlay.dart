@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import 'package:intl/intl.dart';
 import '../services/access_control_service.dart';
 import '../widgets/animated_luxury_logo.dart';
 
@@ -144,7 +145,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                         Text(
                           hasEarlyAccess
                               ? 'VIP Early Access'
-                              : 'Launch Date: April 14th',
+                              : 'Launch Date: ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}',
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
@@ -329,7 +330,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Upgrade your tier to get earlier access before April 14th!',
+                  'Upgrade your tier to get earlier access before ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}!',
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.white.withOpacity(0.8),

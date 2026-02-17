@@ -1,6 +1,13 @@
+import 'dart:async';
+import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
+import '../../../../core/error/failures.dart';
+import '../../domain/entities/coin_balance.dart';
+
+import '../../domain/entities/coin_package.dart';
 import '../../domain/usecases/claim_reward.dart';
 import '../../domain/usecases/get_coin_balance.dart';
 import '../../domain/usecases/get_transaction_history.dart';
@@ -36,6 +43,8 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
   final GetPromotionByCode getPromotionByCode;
   final IsPromotionApplicable isPromotionApplicable;
 
+  StreamSubscription? _balanceSubscription;
+
   CoinBloc({
     required this.getCoinBalance,
     required this.purchaseCoins,
@@ -60,6 +69,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     // Balance Events
     on<LoadCoinBalance>(_onLoadCoinBalance);
     on<SubscribeToCoinBalance>(_onSubscribeToCoinBalance);
+    on<_CoinBalanceStreamUpdated>(_onBalanceStreamUpdated);
 
     // Package Events
     on<LoadAvailablePackages>(_onLoadAvailablePackages);
@@ -115,15 +125,25 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     SubscribeToCoinBalance event,
     Emitter<CoinState> emit,
   ) async {
-    // Use emit.forEach to properly handle stream emissions
-    await emit.forEach(
-      getCoinBalance.stream(event.userId),
-      onData: (result) {
-        return result.fold(
-          (failure) => CoinError(failure.toString()),
-          (balance) => CoinBalanceLoaded(balance),
-        );
+    // Cancel any existing subscription first
+    await _balanceSubscription?.cancel();
+
+    // Listen to the balance stream and dispatch internal events
+    // This avoids blocking the event queue (emit.forEach holds the emitter)
+    _balanceSubscription = getCoinBalance.stream(event.userId).listen(
+      (result) {
+        add(_CoinBalanceStreamUpdated(result));
       },
+    );
+  }
+
+  Future<void> _onBalanceStreamUpdated(
+    _CoinBalanceStreamUpdated event,
+    Emitter<CoinState> emit,
+  ) async {
+    event.result.fold(
+      (failure) => emit(CoinError(failure.toString())),
+      (balance) => emit(CoinBalanceLoaded(balance)),
     );
   }
 
@@ -139,7 +159,18 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     final promotionsResult = await getActivePromotions();
 
     packagesResult.fold(
-      (failure) => emit(CoinError(failure.toString())),
+      (failure) {
+        // Fallback to standard packages when store/network fails
+        debugPrint('[CoinBloc] Package load failed, using fallback: $failure');
+        final fallback = CoinPackages.standardPackages;
+        promotionsResult.fold(
+          (_) => emit(CoinPackagesLoaded(packages: fallback)),
+          (promotions) => emit(CoinPackagesLoaded(
+            packages: fallback,
+            activePromotions: promotions,
+          )),
+        );
+      },
       (packages) {
         promotionsResult.fold(
           (failure) => emit(CoinPackagesLoaded(packages: packages)),
@@ -527,6 +558,16 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
 
   @override
   Future<void> close() {
+    _balanceSubscription?.cancel();
     return super.close();
   }
+}
+
+/// Internal event — not exported, used only by the balance stream subscription
+class _CoinBalanceStreamUpdated extends CoinEvent {
+  final Either<Failure, CoinBalance> result;
+  const _CoinBalanceStreamUpdated(this.result);
+
+  @override
+  List<Object?> get props => [result];
 }
