@@ -86,6 +86,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     int limit = 20,
   }) async {
     // Map discovery gender preference to matching gender list
+    // Empty list = no gender filter (show everyone)
     List<String> preferredGenders;
     switch (preferences.interestedInGender.toLowerCase()) {
       case 'women':
@@ -96,8 +97,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       case 'male':
         preferredGenders = ['Male'];
         break;
-      default: // 'everyone' or any other value
-        preferredGenders = ['Female', 'Male', 'Non-binary'];
+      default: // 'everyone' or any other value — no gender filter
+        preferredGenders = [];
     }
 
     // Get candidates from matching datasource

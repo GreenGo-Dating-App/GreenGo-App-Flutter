@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../core/constants/app_colors.dart';
 
 /// Clean tooltip widget for the app tour - no blur/shader effects
 class TourTooltip extends StatelessWidget {
@@ -66,13 +67,13 @@ class TourTooltip extends StatelessWidget {
 
           const SizedBox(height: 24),
 
-          // Title - plain gold text, app default font
+          // Title - same font as app body text
           Text(
             title,
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: goldColor,
+              color: AppColors.textPrimary,
             ),
             textAlign: TextAlign.center,
           ),

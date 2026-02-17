@@ -64,13 +64,10 @@ class _TourOverlayState extends State<TourOverlay>
 
   void _nextStep() {
     if (_currentStepIndex < TourStep.allSteps.length - 1) {
-      _fadeController.reverse().then((_) {
-        setState(() {
-          _currentStepIndex++;
-        });
-        widget.onTabChange(TourStep.allSteps[_currentStepIndex].tabIndex);
-        _fadeController.forward();
+      setState(() {
+        _currentStepIndex++;
       });
+      widget.onTabChange(TourStep.allSteps[_currentStepIndex].tabIndex);
     } else {
       _completeTour();
     }
@@ -146,13 +143,13 @@ class _TourOverlayState extends State<TourOverlay>
               children: [
                 const SizedBox(height: 20),
 
-                // Header - plain gold text, same font as the app
+                // Header - same font style as "There's no others to see"
                 const Text(
                   'Welcome to GreenGo',
                   style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFFFFD700),
+                    color: AppColors.textPrimary,
                   ),
                 ),
 
