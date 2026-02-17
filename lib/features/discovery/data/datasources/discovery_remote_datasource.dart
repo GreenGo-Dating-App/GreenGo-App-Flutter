@@ -103,14 +103,26 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final blockedUserIds = await _getBlockedUserIds(userId);
 
     // Apply sexual orientation filter
-    final filteredCandidates = preferences.preferredOrientations.isNotEmpty
+    var filteredCandidates = preferences.preferredOrientations.isNotEmpty
         ? candidates.where((candidate) {
             final orientation = candidate.profile.sexualOrientation;
             // Keep candidates with null/empty orientation (unset)
             if (orientation == null || orientation.isEmpty) return true;
             return preferences.preferredOrientations.contains(orientation);
           }).toList()
-        : candidates;
+        : candidates.toList();
+
+    // Apply country filter
+    if (preferences.preferredCountries.isNotEmpty) {
+      filteredCandidates = filteredCandidates.where((candidate) {
+        final country = candidate.profile.location.country;
+        // Skip candidates with unknown/empty country
+        if (country.isEmpty || country == 'Unknown') return false;
+        return preferences.preferredCountries
+            .map((c) => c.toLowerCase())
+            .contains(country.toLowerCase());
+      }).toList();
+    }
 
     // Categorize candidates into priority tiers:
     // Priority 1: Never seen (not in swipe history)

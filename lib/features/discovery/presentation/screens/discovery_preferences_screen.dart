@@ -165,6 +165,151 @@ class _DiscoveryPreferencesScreenState
     );
   }
 
+  void _showCountryPickerDialog() {
+    final searchController = TextEditingController();
+    final countries = [
+      'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola',
+      'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan',
+      'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus',
+      'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia',
+      'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria',
+      'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada',
+      'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China',
+      'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia',
+      'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti',
+      'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea',
+      'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji',
+      'Finland', 'France', 'Gabon', 'Gambia', 'Georgia',
+      'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala',
+      'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras',
+      'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran',
+      'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast',
+      'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya',
+      'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon',
+      'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania',
+      'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives',
+      'Mali', 'Malta', 'Mauritania', 'Mauritius', 'Mexico',
+      'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco',
+      'Mozambique', 'Myanmar', 'Namibia', 'Nepal', 'Netherlands',
+      'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea',
+      'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Panama',
+      'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland',
+      'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda',
+      'Saudi Arabia', 'Senegal', 'Serbia', 'Sierra Leone', 'Singapore',
+      'Slovakia', 'Slovenia', 'Somalia', 'South Africa', 'South Korea',
+      'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname',
+      'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan',
+      'Tanzania', 'Thailand', 'Togo', 'Trinidad and Tobago', 'Tunisia',
+      'Turkey', 'Turkmenistan', 'Uganda', 'Ukraine', 'United Arab Emirates',
+      'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Venezuela',
+      'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe',
+    ];
+
+    // Filter out already selected countries
+    final availableCountries = countries
+        .where((c) => !_preferences.preferredCountries.contains(c))
+        .toList();
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            final query = searchController.text.toLowerCase();
+            final filtered = query.isEmpty
+                ? availableCountries
+                : availableCountries
+                    .where((c) => c.toLowerCase().contains(query))
+                    .toList();
+
+            return AlertDialog(
+              backgroundColor: AppColors.backgroundCard,
+              title: const Text(
+                'Select Country',
+                style: TextStyle(color: AppColors.textPrimary),
+              ),
+              content: SizedBox(
+                width: double.maxFinite,
+                height: 400,
+                child: Column(
+                  children: [
+                    TextField(
+                      controller: searchController,
+                      style: const TextStyle(color: AppColors.textPrimary),
+                      decoration: InputDecoration(
+                        hintText: 'Search country...',
+                        hintStyle: const TextStyle(color: AppColors.textTertiary),
+                        prefixIcon: const Icon(Icons.search, color: AppColors.richGold),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: AppColors.divider),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: AppColors.richGold),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      onChanged: (_) => setDialogState(() {}),
+                    ),
+                    const SizedBox(height: 12),
+                    Expanded(
+                      child: filtered.isEmpty
+                          ? const Center(
+                              child: Text(
+                                'No countries found',
+                                style: TextStyle(color: AppColors.textTertiary),
+                              ),
+                            )
+                          : ListView.builder(
+                              itemCount: filtered.length,
+                              itemBuilder: (context, index) {
+                                final country = filtered[index];
+                                return ListTile(
+                                  leading: const Icon(
+                                    Icons.public,
+                                    color: AppColors.richGold,
+                                    size: 20,
+                                  ),
+                                  title: Text(
+                                    country,
+                                    style: const TextStyle(
+                                      color: AppColors.textPrimary,
+                                    ),
+                                  ),
+                                  onTap: () {
+                                    _updatePreferences(
+                                      _preferences.copyWith(
+                                        preferredCountries: [
+                                          ..._preferences.preferredCountries,
+                                          country,
+                                        ],
+                                      ),
+                                    );
+                                    Navigator.of(context).pop();
+                                  },
+                                );
+                              },
+                            ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text(
+                    'Cancel',
+                    style: TextStyle(color: AppColors.textSecondary),
+                  ),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -320,6 +465,81 @@ class _DiscoveryPreferencesScreenState
                       ),
                     );
                   },
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Country filter
+          _buildSectionCard(
+            title: 'Country',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Only show people from specific countries (leave empty to show all)',
+                  style: TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                if (_preferences.preferredCountries.isNotEmpty)
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: _preferences.preferredCountries
+                        .map((country) => Chip(
+                              label: Text(
+                                country,
+                                style: const TextStyle(
+                                  color: AppColors.textPrimary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              deleteIcon: const Icon(
+                                Icons.close,
+                                size: 18,
+                                color: AppColors.errorRed,
+                              ),
+                              onDeleted: () {
+                                _updatePreferences(
+                                  _preferences.copyWith(
+                                    preferredCountries: List.from(
+                                        _preferences.preferredCountries)
+                                      ..remove(country),
+                                  ),
+                                );
+                              },
+                              backgroundColor: AppColors.backgroundDark,
+                              side: const BorderSide(color: AppColors.richGold),
+                            ))
+                        .toList(),
+                  )
+                else
+                  const Text(
+                    'No country filter — showing worldwide',
+                    style: TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 14,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                const SizedBox(height: 12),
+                TextButton.icon(
+                  onPressed: _showCountryPickerDialog,
+                  icon: const Icon(
+                    Icons.add,
+                    color: AppColors.richGold,
+                  ),
+                  label: const Text(
+                    'Add Country',
+                    style: TextStyle(
+                      color: AppColors.richGold,
+                    ),
+                  ),
                 ),
               ],
             ),

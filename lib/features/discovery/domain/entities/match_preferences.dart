@@ -10,6 +10,7 @@ class MatchPreferences extends Equatable {
   final bool onlyRecentlyActive;
   final List<String> dealBreakers;
   final List<String> preferredOrientations; // empty = show all
+  final List<String> preferredCountries; // empty = show all
 
   const MatchPreferences({
     required this.userId,
@@ -21,6 +22,7 @@ class MatchPreferences extends Equatable {
     this.onlyRecentlyActive = false,
     this.dealBreakers = const [],
     this.preferredOrientations = const [],
+    this.preferredCountries = const [],
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -34,6 +36,7 @@ class MatchPreferences extends Equatable {
       onlyRecentlyActive: false,
       dealBreakers: const [],
       preferredOrientations: const [],
+      preferredCountries: const [],
     );
   }
 
@@ -48,6 +51,7 @@ class MatchPreferences extends Equatable {
     bool? onlyRecentlyActive,
     List<String>? dealBreakers,
     List<String>? preferredOrientations,
+    List<String>? preferredCountries,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -59,6 +63,7 @@ class MatchPreferences extends Equatable {
       onlyRecentlyActive: onlyRecentlyActive ?? this.onlyRecentlyActive,
       dealBreakers: dealBreakers ?? this.dealBreakers,
       preferredOrientations: preferredOrientations ?? this.preferredOrientations,
+      preferredCountries: preferredCountries ?? this.preferredCountries,
     );
   }
 
@@ -74,6 +79,7 @@ class MatchPreferences extends Equatable {
       'onlyRecentlyActive': onlyRecentlyActive,
       'dealBreakers': dealBreakers,
       'preferredOrientations': preferredOrientations,
+      'preferredCountries': preferredCountries,
     };
   }
 
@@ -95,6 +101,10 @@ class MatchPreferences extends Equatable {
               ?.map((e) => e as String)
               .toList() ??
           const [],
+      preferredCountries: (map['preferredCountries'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
     );
   }
 
@@ -109,5 +119,6 @@ class MatchPreferences extends Equatable {
         onlyRecentlyActive,
         dealBreakers,
         preferredOrientations,
+        preferredCountries,
       ];
 }
