@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../domain/entities/discovery_card.dart';
@@ -57,6 +58,7 @@ class _DiscoveryScreenContent extends StatefulWidget {
 class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final ValueNotifier<double> _dragProgress = ValueNotifier(0.0);
   Profile? _currentUserProfile;
+  final Set<String> _precachedImageUrls = {};
 
   String get userId => widget.userId;
 
@@ -155,6 +157,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 return _buildEmptyState(context);
               }
 
+              // Pre-cache images for upcoming cards
+              _precacheUpcomingImages(cards, currentIndex);
+
               final enabled = state is DiscoveryLoaded ||
                   state is DiscoveryRewindUnavailable ||
                   state is DiscoverySwipeLimitReached ||
@@ -192,6 +197,26 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         ),
       ),
     );
+  }
+
+  /// Pre-cache images for upcoming cards so they load instantly
+  void _precacheUpcomingImages(List<DiscoveryCard> cards, int currentIndex) {
+    // Precache the next 15 cards ahead
+    final end = (currentIndex + 15).clamp(0, cards.length);
+    for (int i = currentIndex; i < end; i++) {
+      final photoUrls = cards[i].candidate.profile.photoUrls;
+      for (final url in photoUrls) {
+        if (url.isNotEmpty && !_precachedImageUrls.contains(url)) {
+          _precachedImageUrls.add(url);
+          precacheImage(
+            CachedNetworkImageProvider(url),
+            context,
+          ).catchError((_) {
+            // Ignore precache errors silently
+          });
+        }
+      }
+    }
   }
 
   Widget _buildLoading() {

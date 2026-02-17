@@ -365,9 +365,9 @@ class _SwipeCardState extends State<SwipeCard>
       case SwipeDirection.right:
         return Alignment.centerRight;
       case SwipeDirection.up:
-        return Alignment.bottomCenter;
-      case SwipeDirection.down:
         return Alignment.topCenter;
+      case SwipeDirection.down:
+        return Alignment.bottomCenter;
     }
   }
 
@@ -378,9 +378,9 @@ class _SwipeCardState extends State<SwipeCard>
       case SwipeDirection.right:
         return Alignment.centerLeft;
       case SwipeDirection.up:
-        return Alignment.topCenter;
-      case SwipeDirection.down:
         return Alignment.bottomCenter;
+      case SwipeDirection.down:
+        return Alignment.topCenter;
     }
   }
 

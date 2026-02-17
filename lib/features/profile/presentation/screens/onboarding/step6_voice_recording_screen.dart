@@ -264,7 +264,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
                                 ? 'Recording... (max $_maxDuration seconds)'
                                 : _hasRecording
                                     ? 'Recording ready'
-                                    : 'Tap to start recording',
+                                    : '',
                             style:
                                 Theme.of(context).textTheme.bodyLarge?.copyWith(
                                       color: AppColors.textSecondary,

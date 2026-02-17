@@ -228,12 +228,10 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                   const SizedBox(height: 4),
                   Text(
                     _selectedDate == null
-                        ? 'Tap to select'
+                        ? ''
                         : '${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}',
                     style: TextStyle(
-                      color: _selectedDate == null
-                          ? Colors.white.withOpacity(0.3)
-                          : Colors.white,
+                      color: Colors.white,
                       fontSize: 16,
                       fontWeight: _selectedDate != null ? FontWeight.w500 : null,
                     ),

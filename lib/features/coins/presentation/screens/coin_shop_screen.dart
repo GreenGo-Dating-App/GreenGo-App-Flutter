@@ -5,10 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../subscription/domain/entities/subscription.dart';
+import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
+import '../../domain/entities/coin_transaction.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
@@ -1909,43 +1912,30 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       setState(() => _isSendingCoins = true);
 
-      // Verify sender's coin balance document exists and has enough coins
-      final senderRef = firestore.collection('coinBalances').doc(widget.userId);
-      final senderDoc = await senderRef.get();
-      final senderBalance = senderDoc.exists
-          ? (senderDoc.data()?['totalCoins'] as int? ?? 0)
-          : 0;
+      // Use proper datasource to debit sender (FIFO batch deduction) and credit recipient
+      final coinDataSource = di.sl<CoinRemoteDataSource>();
 
-      if (senderBalance < amount) {
-        _showError('Insufficient coins (balance: $senderBalance)');
-        setState(() => _isSendingCoins = false);
-        return;
-      }
+      // Debit sender — updates totalCoins, spentCoins, and coinBatches (FIFO)
+      await coinDataSource.updateBalance(
+        userId: widget.userId,
+        amount: amount,
+        type: CoinTransactionType.debit,
+        reason: CoinTransactionReason.giftSent,
+        relatedUserId: recipientId,
+        metadata: {
+          'recipientNickname': nickname,
+          'recipientName': recipientName,
+        },
+      );
 
-      // Atomic batch write: deduct from sender, add to recipient, record transaction
-      final batch = firestore.batch();
-
-      final recipientRef = firestore.collection('coinBalances').doc(recipientId);
-      final transactionRef = firestore.collection('coin_transactions').doc();
-
-      // Use set with merge for both to handle missing documents
-      batch.set(senderRef, {
-        'totalCoins': FieldValue.increment(-amount),
-      }, SetOptions(merge: true));
-      batch.set(recipientRef, {
-        'totalCoins': FieldValue.increment(amount),
-      }, SetOptions(merge: true));
-      batch.set(transactionRef, {
-        'senderId': widget.userId,
-        'recipientId': recipientId,
-        'recipientNickname': nickname,
-        'recipientName': recipientName,
-        'amount': amount,
-        'timestamp': FieldValue.serverTimestamp(),
-        'type': 'gift',
-      });
-
-      await batch.commit();
+      // Credit recipient — adds a new coin batch
+      await coinDataSource.updateBalance(
+        userId: recipientId,
+        amount: amount,
+        type: CoinTransactionType.credit,
+        reason: CoinTransactionReason.giftReceived,
+        relatedUserId: widget.userId,
+      );
 
       if (mounted) {
         setState(() {
@@ -1954,7 +1944,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _amountController.clear();
           _isSendingCoins = false;
         });
-        // Reload balance
+        // Reload balance from Firestore to sync with batches
         context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
