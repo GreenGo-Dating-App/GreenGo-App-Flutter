@@ -85,11 +85,33 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required MatchPreferences preferences,
     int limit = 20,
   }) async {
+    // Map discovery gender preference to matching gender list
+    List<String> preferredGenders;
+    switch (preferences.interestedInGender.toLowerCase()) {
+      case 'women':
+      case 'female':
+        preferredGenders = ['Female'];
+        break;
+      case 'men':
+      case 'male':
+        preferredGenders = ['Male'];
+        break;
+      default: // 'everyone' or any other value
+        preferredGenders = ['Female', 'Male', 'Non-binary'];
+    }
+
     // Get candidates from matching datasource
     // No distance limit by default (99999 = worldwide)
     final candidates = await matchingDataSource.getMatchCandidates(
       userId: userId,
-      preferences: matching.MatchPreferences(userId: preferences.userId, minAge: preferences.minAge, maxAge: preferences.maxAge, maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(), updatedAt: DateTime.now()),
+      preferences: matching.MatchPreferences(
+        userId: preferences.userId,
+        minAge: preferences.minAge,
+        maxAge: preferences.maxAge,
+        maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(),
+        preferredGenders: preferredGenders,
+        updatedAt: DateTime.now(),
+      ),
       limit: 99999, // No limit - endless scrolling
     );
 

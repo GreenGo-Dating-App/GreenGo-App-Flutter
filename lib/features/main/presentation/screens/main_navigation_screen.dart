@@ -204,6 +204,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (mounted) {
       setState(() {
         _showTour = false;
+        _currentIndex = 0; // Redirect to discover tab after tour
       });
     }
   }

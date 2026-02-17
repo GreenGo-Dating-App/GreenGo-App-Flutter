@@ -27,7 +27,6 @@ class _TourOverlayState extends State<TourOverlay>
     with TickerProviderStateMixin {
   int _currentStepIndex = 0;
   late AnimationController _fadeController;
-  late AnimationController _shimmerController;
   late AnimationController _particleController;
   late Animation<double> _fadeAnimation;
 
@@ -42,11 +41,6 @@ class _TourOverlayState extends State<TourOverlay>
     _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(parent: _fadeController, curve: Curves.easeOut),
     );
-
-    _shimmerController = AnimationController(
-      duration: const Duration(milliseconds: 2000),
-      vsync: this,
-    )..repeat();
 
     _particleController = AnimationController(
       duration: const Duration(milliseconds: 4000),
@@ -64,7 +58,6 @@ class _TourOverlayState extends State<TourOverlay>
   @override
   void dispose() {
     _fadeController.dispose();
-    _shimmerController.dispose();
     _particleController.dispose();
     super.dispose();
   }
@@ -109,13 +102,28 @@ class _TourOverlayState extends State<TourOverlay>
       opacity: _fadeAnimation,
       child: Stack(
         children: [
-          // 20% blur background (transparent, shows content behind)
+          // Gradient blur: 0% at bottom to 20% at top
           Positioned.fill(
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
-              child: Container(
-                color: Colors.black.withOpacity(0.20),
-              ),
+            child: Column(
+              children: [
+                // Top half: 20% blur
+                Expanded(
+                  child: ClipRect(
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+                      child: Container(
+                        color: Colors.black.withOpacity(0.20),
+                      ),
+                    ),
+                  ),
+                ),
+                // Bottom half: no blur, just light tint
+                Expanded(
+                  child: Container(
+                    color: Colors.black.withOpacity(0.05),
+                  ),
+                ),
+              ],
             ),
           ),
 
@@ -138,12 +146,19 @@ class _TourOverlayState extends State<TourOverlay>
               children: [
                 const SizedBox(height: 20),
 
-                // Luxury header with shimmer
-                _buildLuxuryHeader(),
+                // Header - plain gold text, same font as the app
+                const Text(
+                  'Welcome to GreenGo',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFFFD700),
+                  ),
+                ),
 
                 const Spacer(flex: 1),
 
-                // Tour tooltip with gold styling
+                // Tour tooltip - no effects
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: TourTooltip(
@@ -167,37 +182,6 @@ class _TourOverlayState extends State<TourOverlay>
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildLuxuryHeader() {
-    return AnimatedBuilder(
-      animation: _shimmerController,
-      builder: (context, child) {
-        return ShaderMask(
-          shaderCallback: (bounds) {
-            return LinearGradient(
-              colors: const [
-                Color(0xFFFFD700),
-                Color(0xFFFFF8DC),
-                Color(0xFFFFD700),
-                Color(0xFFB8860B),
-                Color(0xFFFFD700),
-              ],
-              stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
-              transform: _ShimmerTransform(_shimmerController.value),
-            ).createShader(bounds);
-          },
-          child: const Text(
-            'Welcome to GreenGo',
-            style: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
-        );
-      },
     );
   }
 
@@ -237,22 +221,6 @@ class _TourOverlayState extends State<TourOverlay>
       default:
         return key;
     }
-  }
-}
-
-/// Shimmer transform for gradient animation
-class _ShimmerTransform extends GradientTransform {
-  final double progress;
-
-  const _ShimmerTransform(this.progress);
-
-  @override
-  Matrix4? transform(Rect bounds, {TextDirection? textDirection}) {
-    return Matrix4.translationValues(
-      bounds.width * (progress * 2 - 1),
-      0,
-      0,
-    );
   }
 }
 
