@@ -127,7 +127,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
             candidateProfile.location.longitude,
           );
 
-          if (preferences.maxDistance < 1000 && distance > preferences.maxDistance) {
+          if (distance > preferences.maxDistance) {
             continue;
           }
         }

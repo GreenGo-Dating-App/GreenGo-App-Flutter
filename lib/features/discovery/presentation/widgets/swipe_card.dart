@@ -428,10 +428,10 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
               ),
 
-            // Super Like indicator (up swipe)
+            // Super Like indicator (up swipe) - shown at bottom
             if (_swipeDirection == SwipeDirection.up)
               Positioned(
-                top: 50,
+                bottom: 50,
                 left: 0,
                 right: 0,
                 child: Center(

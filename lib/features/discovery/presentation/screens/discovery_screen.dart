@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -36,11 +37,7 @@ class DiscoveryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => di.sl<DiscoveryBloc>()
-        ..add(DiscoveryStackLoadRequested(
-          userId: userId,
-          preferences: MatchPreferences.defaultFor(userId),
-        )),
+      create: (context) => di.sl<DiscoveryBloc>(),
       child: _DiscoveryScreenContent(userId: userId),
     );
   }
@@ -59,13 +56,44 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final ValueNotifier<double> _dragProgress = ValueNotifier(0.0);
   Profile? _currentUserProfile;
   final Set<String> _precachedImageUrls = {};
+  MatchPreferences? _savedPreferences;
 
   String get userId => widget.userId;
+
+  /// Get current preferences (saved from Firestore, or default)
+  MatchPreferences get _currentPreferences =>
+      _savedPreferences ?? MatchPreferences.defaultFor(userId);
 
   @override
   void initState() {
     super.initState();
     _loadCurrentUserProfile();
+    _loadSavedPreferencesAndStart();
+  }
+
+  /// Load saved match preferences from Firestore, then start the discovery stack
+  Future<void> _loadSavedPreferencesAndStart() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .get();
+
+      if (doc.exists && doc.data()?['matchPreferences'] != null) {
+        final prefsMap = doc.data()!['matchPreferences'] as Map<String, dynamic>;
+        _savedPreferences = MatchPreferences.fromMap(prefsMap);
+        debugPrint('Loaded saved preferences: maxDistance=${_savedPreferences!.maxDistanceKm}km');
+      }
+    } catch (e) {
+      debugPrint('Could not load saved preferences: $e');
+    }
+
+    if (mounted) {
+      context.read<DiscoveryBloc>().add(DiscoveryStackLoadRequested(
+        userId: userId,
+        preferences: _currentPreferences,
+      ));
+    }
   }
 
   Future<void> _loadCurrentUserProfile() async {
@@ -252,7 +280,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               context.read<DiscoveryBloc>().add(
                     DiscoveryStackRefreshRequested(
                       userId: userId,
-                      preferences: MatchPreferences.defaultFor(userId),
+                      preferences: _currentPreferences,
                     ),
                   );
             },
@@ -305,7 +333,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 MaterialPageRoute(
                   builder: (context) => DiscoveryPreferencesScreen(
                     userId: userId,
+                    currentPreferences: _savedPreferences,
                     onSave: (preferences) {
+                      setState(() => _savedPreferences = preferences);
                       context.read<DiscoveryBloc>().add(
                             DiscoveryStackRefreshRequested(
                               userId: userId,
