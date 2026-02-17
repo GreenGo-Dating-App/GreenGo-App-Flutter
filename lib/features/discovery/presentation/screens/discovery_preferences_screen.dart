@@ -165,6 +165,70 @@ class _DiscoveryPreferencesScreenState
     );
   }
 
+  /// Priority countries that are always shown in the "Most Popular" section
+  static const _priorityCountries = [
+    'United States', 'Brazil', 'Mexico', 'Colombia', 'Canada',
+    'Spain', 'Italy', 'France', 'United Kingdom', 'Portugal',
+  ];
+
+  /// Fetch top countries by registered user count from Firestore,
+  /// always including the priority countries
+  Future<List<MapEntry<String, int>>> _fetchTopCountries() async {
+    try {
+      final snapshot = await FirebaseFirestore.instance
+          .collection('profiles')
+          .get();
+
+      final countryCount = <String, int>{};
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        // Try nested location.country first, then top-level country
+        String? country;
+        if (data['location'] is Map) {
+          country = (data['location'] as Map)['country'] as String?;
+        }
+        country ??= data['country'] as String?;
+        if (country != null && country.isNotEmpty && country != 'Unknown') {
+          countryCount[country] = (countryCount[country] ?? 0) + 1;
+        }
+      }
+
+      // Ensure all priority countries are included (even with 0 users)
+      for (final country in _priorityCountries) {
+        countryCount.putIfAbsent(country, () => 0);
+      }
+
+      // Sort: priority countries first (by user count), then others by count
+      final priorityEntries = <MapEntry<String, int>>[];
+      final otherEntries = <MapEntry<String, int>>[];
+
+      for (final entry in countryCount.entries) {
+        if (_priorityCountries.contains(entry.key)) {
+          priorityEntries.add(entry);
+        } else if (entry.value > 0) {
+          otherEntries.add(entry);
+        }
+      }
+
+      priorityEntries.sort((a, b) => b.value.compareTo(a.value));
+      otherEntries.sort((a, b) => b.value.compareTo(a.value));
+
+      // Return priority countries first, then top others (up to 15 total)
+      final result = [...priorityEntries];
+      for (final entry in otherEntries) {
+        if (result.length >= 15) break;
+        result.add(entry);
+      }
+
+      return result;
+    } catch (e) {
+      // Fallback: return priority countries with 0 count
+      return _priorityCountries
+          .map((c) => MapEntry(c, 0))
+          .toList();
+    }
+  }
+
   void _showCountryPickerDialog() {
     final searchController = TextEditingController();
     final countries = [
@@ -210,17 +274,37 @@ class _DiscoveryPreferencesScreenState
         .where((c) => !_preferences.preferredCountries.contains(c))
         .toList();
 
+    // Fetch top countries from Firestore
+    List<MapEntry<String, int>> topCountries = [];
+    bool isLoadingTop = true;
+
     showDialog(
       context: context,
       builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
+            // Fetch top countries once
+            if (isLoadingTop) {
+              _fetchTopCountries().then((result) {
+                setDialogState(() {
+                  topCountries = result
+                      .where((e) => !_preferences.preferredCountries.contains(e.key))
+                      .toList();
+                  isLoadingTop = false;
+                });
+              });
+            }
+
             final query = searchController.text.toLowerCase();
-            final filtered = query.isEmpty
+            final isSearching = query.isNotEmpty;
+            final filtered = isSearching
                 ? availableCountries
-                : availableCountries
                     .where((c) => c.toLowerCase().contains(query))
-                    .toList();
+                    .toList()
+                : availableCountries;
+
+            // Top country names for marking in the full list
+            final topCountryNames = topCountries.map((e) => e.key).toSet();
 
             return AlertDialog(
               backgroundColor: AppColors.backgroundCard,
@@ -230,7 +314,7 @@ class _DiscoveryPreferencesScreenState
               ),
               content: SizedBox(
                 width: double.maxFinite,
-                height: 400,
+                height: 450,
                 child: Column(
                   children: [
                     TextField(
@@ -253,43 +337,128 @@ class _DiscoveryPreferencesScreenState
                     ),
                     const SizedBox(height: 12),
                     Expanded(
-                      child: filtered.isEmpty
-                          ? const Center(
-                              child: Text(
-                                'No countries found',
-                                style: TextStyle(color: AppColors.textTertiary),
-                              ),
-                            )
-                          : ListView.builder(
-                              itemCount: filtered.length,
-                              itemBuilder: (context, index) {
-                                final country = filtered[index];
-                                return ListTile(
-                                  leading: const Icon(
-                                    Icons.public,
-                                    color: AppColors.richGold,
-                                    size: 20,
-                                  ),
-                                  title: Text(
-                                    country,
-                                    style: const TextStyle(
-                                      color: AppColors.textPrimary,
+                      child: ListView(
+                        children: [
+                          // Top 10 countries section (shown before search, hidden during search)
+                          if (!isSearching && topCountries.isNotEmpty) ...[
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.star, color: AppColors.richGold, size: 18),
+                                  const SizedBox(width: 8),
+                                  const Text(
+                                    'Most Popular',
+                                    style: TextStyle(
+                                      color: AppColors.richGold,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  onTap: () {
-                                    _updatePreferences(
-                                      _preferences.copyWith(
-                                        preferredCountries: [
-                                          ..._preferences.preferredCountries,
-                                          country,
-                                        ],
-                                      ),
-                                    );
-                                    Navigator.of(context).pop();
-                                  },
-                                );
-                              },
+                                ],
+                              ),
                             ),
+                            ...topCountries.map((entry) => ListTile(
+                              leading: const Icon(
+                                Icons.star,
+                                color: AppColors.richGold,
+                                size: 20,
+                              ),
+                              title: Text(
+                                entry.key,
+                                style: const TextStyle(
+                                  color: AppColors.textPrimary,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              trailing: Text(
+                                '${entry.value} users',
+                                style: const TextStyle(
+                                  color: AppColors.textTertiary,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              onTap: () {
+                                _updatePreferences(
+                                  _preferences.copyWith(
+                                    preferredCountries: [
+                                      ..._preferences.preferredCountries,
+                                      entry.key,
+                                    ],
+                                  ),
+                                );
+                                Navigator.of(context).pop();
+                              },
+                            )),
+                            const Divider(color: AppColors.divider),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                              child: const Text(
+                                'All Countries',
+                                style: TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                          if (!isSearching && isLoadingTop)
+                            const Padding(
+                              padding: EdgeInsets.all(16),
+                              child: Center(
+                                child: SizedBox(
+                                  width: 24,
+                                  height: 24,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: AppColors.richGold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          // Full country list (or search results)
+                          if (filtered.isEmpty)
+                            const Padding(
+                              padding: EdgeInsets.all(32),
+                              child: Center(
+                                child: Text(
+                                  'No countries found',
+                                  style: TextStyle(color: AppColors.textTertiary),
+                                ),
+                              ),
+                            )
+                          else
+                            ...filtered.map((country) {
+                              final isTop = topCountryNames.contains(country);
+                              return ListTile(
+                                leading: Icon(
+                                  isTop ? Icons.star : Icons.public,
+                                  color: AppColors.richGold,
+                                  size: 20,
+                                ),
+                                title: Text(
+                                  country,
+                                  style: TextStyle(
+                                    color: AppColors.textPrimary,
+                                    fontWeight: isTop ? FontWeight.w600 : FontWeight.normal,
+                                  ),
+                                ),
+                                onTap: () {
+                                  _updatePreferences(
+                                    _preferences.copyWith(
+                                      preferredCountries: [
+                                        ..._preferences.preferredCountries,
+                                        country,
+                                      ],
+                                    ),
+                                  );
+                                  Navigator.of(context).pop();
+                                },
+                              );
+                            }),
+                        ],
+                      ),
                     ),
                   ],
                 ),
