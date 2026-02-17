@@ -650,6 +650,7 @@ class EditProfileScreen extends StatelessWidget {
       {'code': 'es', 'name': 'Español'},
       {'code': 'fr', 'name': 'Français'},
       {'code': 'pt', 'name': 'Português'},
+      {'code': 'pt_BR', 'name': 'Português (Brasil)'},
       {'code': 'de', 'name': 'Deutsch'},
     ];
 
@@ -668,7 +669,13 @@ class EditProfileScreen extends StatelessWidget {
             itemCount: languages.length,
             itemBuilder: (context, index) {
               final lang = languages[index];
-              final isSelected = languageProvider.currentLocale.languageCode == lang['code'];
+              final code = lang['code']!;
+              final parts = code.split('_');
+              final locale = parts.length > 1 ? Locale(parts[0], parts[1]) : Locale(parts[0]);
+              final currentKey = languageProvider.currentLocale.countryCode != null
+                  ? '${languageProvider.currentLocale.languageCode}_${languageProvider.currentLocale.countryCode}'
+                  : languageProvider.currentLocale.languageCode;
+              final isSelected = currentKey == code;
 
               return ListTile(
                 title: Text(
@@ -682,7 +689,7 @@ class EditProfileScreen extends StatelessWidget {
                     ? const Icon(Icons.check, color: AppColors.richGold)
                     : null,
                 onTap: () {
-                  languageProvider.setLocale(Locale(lang['code']!));
+                  languageProvider.setLocale(locale);
                   Navigator.of(context).pop();
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(

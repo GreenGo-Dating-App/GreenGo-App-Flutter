@@ -109,17 +109,12 @@ class _TourOverlayState extends State<TourOverlay>
       opacity: _fadeAnimation,
       child: Stack(
         children: [
-          // Luxury black background with gradient
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color(0xFF0A0A0A),
-                  Color(0xFF1A1A1A),
-                  Color(0xFF0D0D0D),
-                ],
+          // 20% blur background (transparent, shows content behind)
+          Positioned.fill(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+              child: Container(
+                color: Colors.black.withOpacity(0.20),
               ),
             ),
           ),
@@ -135,14 +130,6 @@ class _TourOverlayState extends State<TourOverlay>
                 size: Size.infinite,
               );
             },
-          ),
-
-          // Glass blur effect overlay
-          BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
-            child: Container(
-              color: Colors.black.withOpacity(0.3),
-            ),
           ),
 
           // Main content
@@ -163,7 +150,7 @@ class _TourOverlayState extends State<TourOverlay>
                     title: title,
                     description: description,
                     icon: currentStep.icon,
-                    accentColor: const Color(0xFFFFD700), // Gold for all steps
+                    accentColor: const Color(0xFFFFD700),
                     currentStep: _currentStepIndex,
                     totalSteps: steps.length,
                     onNext: _nextStep,
@@ -173,9 +160,6 @@ class _TourOverlayState extends State<TourOverlay>
                 ),
 
                 const Spacer(flex: 2),
-
-                // Bottom nav indicator highlight
-                _buildNavHighlight(currentStep),
 
                 const SizedBox(height: 24),
               ],
@@ -210,95 +194,11 @@ class _TourOverlayState extends State<TourOverlay>
               fontSize: 28,
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              letterSpacing: 1.5,
             ),
           ),
         );
       },
     );
-  }
-
-  Widget _buildNavHighlight(TourStep step) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(16),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 24),
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-          decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.4),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: const Color(0xFFFFD700).withOpacity(0.5),
-              width: 1.5,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFFFD700).withOpacity(0.2),
-                blurRadius: 15,
-                spreadRadius: 2,
-              ),
-            ],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: const LinearGradient(
-                    colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFFFFD700).withOpacity(0.4),
-                      blurRadius: 8,
-                    ),
-                  ],
-                ),
-                child: const Icon(
-                  Icons.touch_app,
-                  color: Colors.black,
-                  size: 18,
-                ),
-              ),
-              const SizedBox(width: 12),
-              Text(
-                'Tap the ${_getTabName(step.id)} tab below',
-                style: const TextStyle(
-                  color: Color(0xFFFFD700),
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.5,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  String _getTabName(String stepId) {
-    switch (stepId) {
-      case 'discovery':
-        return 'Discover';
-      case 'matches':
-        return 'Matches';
-      case 'messages':
-        return 'Messages';
-      case 'shop':
-        return 'Shop';
-      case 'progress':
-        return 'Progress';
-      case 'profile':
-        return 'Profile';
-      default:
-        return stepId;
-    }
   }
 
   String _getLocalizedTitle(AppLocalizations l10n, String key) {
