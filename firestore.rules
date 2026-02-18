@@ -16,10 +16,16 @@ service cloud.firestore {
       return isSignedIn() && request.auth.uid == userId;
     }
 
-    // Check if user is admin
+    // Check if user is admin (legacy — checks users collection)
     function isAdmin() {
       return isSignedIn() &&
              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Check if user is admin panel user (checks admin_users collection)
+    function isAdminPanelUser() {
+      return isSignedIn() &&
+             exists(/databases/$(database)/documents/admin_users/$(request.auth.uid));
     }
 
     // ============================================================================
@@ -428,7 +434,15 @@ service cloud.firestore {
 
     match /app_config/{docId} {
       allow read: if true;
-      allow write: if false;
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // ADMIN USERS COLLECTION (admin panel authentication)
+    // ============================================================================
+    match /admin_users/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
     }
 
     // ============================================================================

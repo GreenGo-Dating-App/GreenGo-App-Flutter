@@ -256,17 +256,27 @@ class AccessControlService {
         _earlyAccessService = earlyAccessService ?? EarlyAccessService();
 
   /// Get current user's access data
-  Future<UserAccessData?> getCurrentUserAccess() async {
+  /// When [forceServer] is true, bypasses Firestore cache to get fresh data.
+  Future<UserAccessData?> getCurrentUserAccess({bool forceServer = false}) async {
     final user = _auth.currentUser;
     if (user == null) return null;
 
     try {
-      final doc = await _firestore.collection('users').doc(user.uid).get();
+      final doc = forceServer
+          ? await _firestore.collection('users').doc(user.uid).get(const GetOptions(source: Source.server))
+          : await _firestore.collection('users').doc(user.uid).get();
       if (!doc.exists) return null;
 
       return UserAccessData.fromFirestore(doc.data()!, user.uid);
     } catch (e) {
-      return null;
+      // Fallback to cache on network error
+      try {
+        final doc = await _firestore.collection('users').doc(user.uid).get();
+        if (!doc.exists) return null;
+        return UserAccessData.fromFirestore(doc.data()!, user.uid);
+      } catch (_) {
+        return null;
+      }
     }
   }
 
