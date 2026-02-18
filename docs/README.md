@@ -25,11 +25,13 @@ GreenGoChat is a next-generation dating application that combines cutting-edge t
 - 💚 **Beautiful UI**: Gold and black themed premium design
 - 🔐 **Secure Authentication**: Email, Google, Apple, Facebook, Phone, 2FA, Biometric
 - 📸 **AI Photo Verification**: Cloud Vision AI for authenticity
-- 🎯 **Smart Matching**: AI-powered compatibility algorithm
+- 🎯 **Smart Matching**: AI-powered compatibility algorithm with distance sorting
 - 💬 **Real-time Messaging**: Instant messaging with rich media
 - 📹 **Video Calling**: HD video calls with virtual backgrounds
-- 💰 **Flexible Monetization**: Subscriptions (Silver, Gold) + GreenGoCoins
+- 💰 **Flexible Monetization**: Base Membership + Subscriptions (Silver, Gold, Platinum) + GreenGoCoins
 - 🌍 **Localization**: 50+ languages supported
+- ✈️ **Traveler Mode**: Temporarily set a new city and discover people there for 24 hours
+- 🕵️ **Incognito Mode**: Hide your profile completely from discovery
 - ♿ **Accessibility**: WCAG 2.1 AA compliant
 
 ---
@@ -114,7 +116,18 @@ For detailed setup instructions, see [MASTER_IMPLEMENTATION_GUIDE.md](MASTER_IMP
 GreenGo App/
 ├── lib/                    # Flutter application
 │   ├── core/              # Core utilities
+│   │   ├── utils/         # base_membership_gate.dart
+│   │   ├── widgets/       # base_membership_dialog.dart, limit_reached_dialog.dart
+│   │   └── services/      # photo_validation_service.dart
 │   └── features/          # Feature modules
+│       ├── authentication/
+│       ├── chat/
+│       ├── coins/
+│       ├── discovery/
+│       ├── matching/
+│       ├── membership/
+│       ├── profile/
+│       └── ...
 ├── functions/             # Cloud Functions backend
 │   └── src/              # TypeScript source
 ├── terraform/             # Infrastructure as Code
@@ -228,7 +241,10 @@ firebase deploy --only firestore:rules,storage,firestore:indexes --project produ
 
 ### Build Apps
 ```bash
-# Android
+# Android (release APK)
+flutter build apk --release
+
+# Android (App Bundle for Play Store)
 flutter build appbundle --release
 
 # iOS
@@ -256,17 +272,69 @@ Access dashboards:
 
 ## 💰 Monetization
 
+### Base Membership (Required)
+- **GreenGo Base Membership** (`greengo_base_membership`): Yearly Google Play subscription required to interact with any profile (swipe, like, super like, chat). Users without active base membership see a purchase prompt on any interaction. `MembershipTier.test` users bypass this gate.
+
 ### Subscription Tiers
-- **Basic (Free)**: 10 likes/day
-- **Silver ($9.99/month)**: 50 likes/day + premium features
-- **Gold ($19.99/month)**: Unlimited likes + all premium features
+| Tier | Grid Profiles | Features |
+|------|--------------|----------|
+| **Free** | 3 rows × columns | Basic browsing |
+| **Silver** | 30 rows × columns | Premium filters, more swipes |
+| **Gold** | 60 rows × columns | All Silver + boosts |
+| **Platinum** | 100 rows × columns | All Gold + unlimited features |
 
 ### GreenGoCoins
 Virtual currency for in-app purchases:
 - Super Like: 5 coins
 - Boost: 50 coins
 - Undo: 3 coins
-- See Who Liked You: 20 coins
+- Extra Grid Batch: varies by tier
+
+---
+
+## ✈️ Traveler Mode
+
+Users can temporarily set a different city as their active location:
+
+- **Duration**: 24 hours from activation
+- **Discovery**: Shows profiles near the traveler city, sorted by distance from that city
+- **Distance display**: All distances calculated from the traveler position
+- **Profile display**: Shows traveler city (with ✈️ icon) instead of home location on profile card, match list, and search results
+- **Auto-refresh**: When traveler mode activates, the discovery grid automatically refreshes to show people near the new city
+- **Expiry**: When the 24-hour session ends, home location is restored on next app start
+
+---
+
+## 🕵️ Incognito Mode
+
+- Users in incognito mode are **completely hidden** from discovery (both grid and swipe views)
+- Supports both **timed incognito** (hidden until expiry) and **permanent incognito** (no expiry, hidden indefinitely)
+- Incognito users can still browse and swipe; they simply do not appear to others
+
+---
+
+## 🔍 Discovery
+
+### Grid View (Default)
+- Grid is the **default view** when opening the Discovery tab
+- Profiles sorted by distance (closest first)
+- **Pull-to-refresh**: Swipe down to reload profiles sorted by current position (or traveler position if active)
+- Column selector: 2, 3, or 4 columns
+- Swipe view available via the toggle button in the header
+
+### Swipe View
+- Classic card-stack swipe experience
+- Swipe right = Like, left = Pass, up = Super Like, down = Skip
+- Undo last swipe (costs 3 coins)
+
+### Filters Applied
+- Gender preference
+- Sexual orientation
+- Country filter (respects traveler location)
+- Distance filter (uses effective location — home or traveler)
+- Matched users excluded
+- Blocked users excluded (bidirectional)
+- Incognito users excluded
 
 ---
 
@@ -277,6 +345,45 @@ Virtual currency for in-app purchases:
 - [API Documentation](docs/api/README.md) - Backend API docs
 - [Architecture](docs/architecture/README.md) - System architecture
 - [Contributing](CONTRIBUTING.md) - Contribution guidelines
+
+---
+
+## 📋 Changelog
+
+### Latest Updates (Feb 2026)
+
+#### Discovery
+- Grid view is now the **default** (swipe is secondary, accessible via toggle)
+- Added **pull-to-refresh** on grid: reloads profiles sorted by distance, traveler-aware
+- Fixed country filter to use `effectiveLocation` (respects traveler mode for candidates too)
+- `BlocListener<ProfileBloc>` in discovery screen auto-refreshes stack when traveler activates or city changes
+
+#### Traveler Feature
+- Profile detail, match cards, and search results now display traveler city (with ✈️ icon) when active
+- Discovery distances calculated from traveler coordinates via `effectiveLocation`
+- Traveler location picker screen added
+
+#### Incognito Mode
+- Fixed bug: users with `isIncognito: true` and no expiry date (permanent incognito) were still appearing in discovery
+- Corrected filter: hidden if `isIncognito && (incognitoExpiry == null || incognitoExpiry > now)`
+
+#### Base Membership Gate
+- Added `greengo_base_membership` yearly subscription as a prerequisite for all interactions
+- Gate applied to: swipe, like, super like, opening chats, sending messages, match actions
+- `MembershipTier.test` users bypass the gate entirely
+- Profile page shows membership validity and expiry date
+
+#### Coin Shop
+- Fixed white/blank screen in release mode caused by unhandled exceptions in tab builders
+- All three tabs (`_buildBuyCoinsTab`, `_buildMembershipTab`, `_buildVideoCoinsTab`) wrapped in `_safeBuild()` — shows visible error widget instead of blank screen
+- Pre-populated `_cachedPackages` with `CoinPackages.standardPackages` as fallback when IAP is unavailable
+- Type-safe promotion parsing via `.whereType<CoinPromotion>().toList()`
+
+#### Other
+- Removed Google Mobile Ads (`google_mobile_ads`) — `ad_service.dart` and `banner_ad_widget.dart` deleted
+- Added `photo_validation_service.dart` for AI-based photo moderation
+- Firestore security rules updated for ML collections and discovery permissions
+- i18n keys added for photo validation error messages (6 languages)
 
 ---
 
