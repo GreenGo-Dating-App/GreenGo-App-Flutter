@@ -182,10 +182,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       if (blockedUserIds.contains(candidateId)) continue;
 
       // Skip incognito profiles (hidden from discovery)
+      // Incognito with no expiry = permanent; with future expiry = active session
       final candidateProfile = candidate.profile;
       if (candidateProfile.isIncognito &&
-          candidateProfile.incognitoExpiry != null &&
-          candidateProfile.incognitoExpiry!.isAfter(now)) {
+          (candidateProfile.incognitoExpiry == null ||
+              candidateProfile.incognitoExpiry!.isAfter(now))) {
         continue;
       }
 
