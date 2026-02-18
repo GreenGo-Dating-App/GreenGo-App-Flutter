@@ -46,6 +46,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     if (event.user != null) {
+      // Reload countdown dates from Firestore on every auth restore
+      AccessControlService.loadCountdownDatesFromFirestore();
       emit(AuthAuthenticated(event.user!));
     } else {
       // Don't overwrite error or loading states — the login handler manages those.
@@ -90,6 +92,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       (failure) => emit(AuthError(failure.message)),
       (user) {
         // Handle success synchronously to avoid emit after handler completes
+        // Reload countdown dates from Firestore on every login
+        AccessControlService.loadCountdownDatesFromFirestore();
         // Refresh access date in a fire-and-forget manner
         _accessControlService.refreshUserAccessDate(user.uid, event.email).catchError((e) {
           // Log error but don't fail sign-in
@@ -148,7 +152,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final result = await repository.signInWithGoogle();
     result.fold(
       (failure) => emit(AuthError(failure.message)),
-      (user) => emit(AuthAuthenticated(user)),
+      (user) {
+        AccessControlService.loadCountdownDatesFromFirestore();
+        emit(AuthAuthenticated(user));
+      },
     );
   }
 
@@ -179,7 +186,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final result = await repository.signInWithFacebook();
     result.fold(
       (failure) => emit(AuthError(failure.message)),
-      (user) => emit(AuthAuthenticated(user)),
+      (user) {
+        AccessControlService.loadCountdownDatesFromFirestore();
+        emit(AuthAuthenticated(user));
+      },
     );
   }
 
