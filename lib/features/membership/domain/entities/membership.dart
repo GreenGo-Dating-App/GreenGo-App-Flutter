@@ -69,11 +69,20 @@ class MembershipRules extends Equatable {
   /// Maximum messages per day (-1 for unlimited)
   final int dailyMessageLimit;
 
-  /// Maximum swipes per day (-1 for unlimited)
+  /// Maximum swipes per day (-1 for unlimited) — legacy, kept for backwards compat
   final int dailySwipeLimit;
 
-  /// Maximum super likes per day
+  /// Maximum super likes per day — legacy, kept for backwards compat
   final int dailySuperLikeLimit;
+
+  /// Maximum likes (right swipe) per hour (-1 for unlimited)
+  final int hourlyLikeLimit;
+
+  /// Maximum nopes (left swipe) per hour (-1 for unlimited)
+  final int hourlyNopeLimit;
+
+  /// Maximum super likes (up swipe) per hour (-1 for unlimited)
+  final int hourlySuperLikeLimit;
 
   /// Can see who liked them
   final bool canSeeWhoLiked;
@@ -127,6 +136,9 @@ class MembershipRules extends Equatable {
     this.dailyMessageLimit = 10,
     this.dailySwipeLimit = 20,
     this.dailySuperLikeLimit = 0,
+    this.hourlyLikeLimit = 5,
+    this.hourlyNopeLimit = 10,
+    this.hourlySuperLikeLimit = 0,
     this.canSeeWhoLiked = false,
     this.canUseAdvancedFilters = false,
     this.canFilterByLocation = false,
@@ -150,6 +162,9 @@ class MembershipRules extends Equatable {
     dailyMessageLimit: 10,
     dailySwipeLimit: 20,
     dailySuperLikeLimit: 0,
+    hourlyLikeLimit: 5,
+    hourlyNopeLimit: 10,
+    hourlySuperLikeLimit: 0,
     canSeeWhoLiked: false,
     canUseAdvancedFilters: false,
     canFilterByLocation: false,
@@ -173,6 +188,9 @@ class MembershipRules extends Equatable {
     dailyMessageLimit: 50,
     dailySwipeLimit: 100,
     dailySuperLikeLimit: 3,
+    hourlyLikeLimit: 10,
+    hourlyNopeLimit: 25,
+    hourlySuperLikeLimit: 2,
     canSeeWhoLiked: false,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
@@ -196,6 +214,9 @@ class MembershipRules extends Equatable {
     dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: -1, // Unlimited
     dailySuperLikeLimit: 5,
+    hourlyLikeLimit: 15,
+    hourlyNopeLimit: 40,
+    hourlySuperLikeLimit: 4,
     canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
@@ -219,6 +240,9 @@ class MembershipRules extends Equatable {
     dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: -1, // Unlimited
     dailySuperLikeLimit: -1, // Unlimited
+    hourlyLikeLimit: 20,
+    hourlyNopeLimit: 50,
+    hourlySuperLikeLimit: 5,
     canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
@@ -243,6 +267,9 @@ class MembershipRules extends Equatable {
     dailyMessageLimit: -1, // Unlimited by default, admin configurable
     dailySwipeLimit: -1, // Unlimited by default, admin configurable
     dailySuperLikeLimit: -1, // Unlimited by default, admin configurable
+    hourlyLikeLimit: 20, // Same as Platinum max
+    hourlyNopeLimit: 50, // Same as Platinum max
+    hourlySuperLikeLimit: 5, // Same as Platinum max
     canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
@@ -285,6 +312,9 @@ class MembershipRules extends Equatable {
         dailyMessageLimit,
         dailySwipeLimit,
         dailySuperLikeLimit,
+        hourlyLikeLimit,
+        hourlyNopeLimit,
+        hourlySuperLikeLimit,
         canSeeWhoLiked,
         canUseAdvancedFilters,
         canFilterByLocation,

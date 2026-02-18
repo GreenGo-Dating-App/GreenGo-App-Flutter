@@ -92,6 +92,12 @@ enum CoinTransactionReason {
   // Debits (Point 162: Gifts)
   giftSent,
 
+  // Debits (Direct Message, Incognito, Traveler)
+  directMessagePurchase,
+  incognitoPurchase,
+  travelerPurchase,
+  readReceiptsPurchase,
+
   // Debits (Other)
   featurePurchase,
   expired,
@@ -142,6 +148,14 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
         return 'Undo Last Swipe';
       case CoinTransactionReason.seeWhoLikedYouPurchase:
         return 'See Who Liked You';
+      case CoinTransactionReason.directMessagePurchase:
+        return 'Direct Message';
+      case CoinTransactionReason.incognitoPurchase:
+        return 'Incognito Mode';
+      case CoinTransactionReason.travelerPurchase:
+        return 'Traveler Mode';
+      case CoinTransactionReason.readReceiptsPurchase:
+        return 'Read Receipts';
       case CoinTransactionReason.featurePurchase:
         return 'Feature Purchase';
 
@@ -200,6 +214,14 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
         return 'Used $amount coins to Undo last swipe.';
       case CoinTransactionReason.seeWhoLikedYouPurchase:
         return 'Used $amount coins to see who liked you.';
+      case CoinTransactionReason.directMessagePurchase:
+        return 'Used $amount coins for Direct Message.';
+      case CoinTransactionReason.incognitoPurchase:
+        return 'Used $amount coins for Incognito Mode (24h).';
+      case CoinTransactionReason.travelerPurchase:
+        return 'Used $amount coins for Traveler Mode (24h).';
+      case CoinTransactionReason.readReceiptsPurchase:
+        return 'Used $amount coins for Read Receipts (24h).';
       case CoinTransactionReason.featurePurchase:
         final feature = metadata?['feature'] ?? 'feature';
         return 'Used $amount coins for $feature.';
@@ -223,10 +245,17 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
 
 /// Coin feature prices (Point 161)
 class CoinFeaturePrices {
-  static const int superLike = 5;
+  static const int superLike = 20;
   static const int boost = 50;
   static const int undo = 3;
   static const int seeWhoLikedYou = 20;
+  static const int directMessage = 50;
+  static const int incognito = 30;
+  static const int traveler = 100;
+  static const int readReceipts = 10;
+  static const int giftRose = 15;
+  static const int giftTeddy = 50;
+  static const int giftDiamond = 100;
 
   /// Get price for a feature
   static int getPrice(String feature) {
@@ -241,6 +270,23 @@ class CoinFeaturePrices {
       case 'see_who_liked_you':
       case 'seewholikedyou':
         return seeWhoLikedYou;
+      case 'direct_message':
+      case 'directmessage':
+        return directMessage;
+      case 'incognito':
+        return incognito;
+      case 'traveler':
+      case 'location_switch':
+        return traveler;
+      case 'read_receipts':
+      case 'readreceipts':
+        return readReceipts;
+      case 'gift_rose':
+        return giftRose;
+      case 'gift_teddy':
+        return giftTeddy;
+      case 'gift_diamond':
+        return giftDiamond;
       default:
         return 0;
     }

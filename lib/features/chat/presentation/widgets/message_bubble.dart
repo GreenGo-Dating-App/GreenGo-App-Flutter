@@ -1,6 +1,5 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -20,6 +19,7 @@ class MessageBubble extends StatefulWidget {
   final Function(Message, bool)? onStar;
   final Function(Message)? onReply;
   final Function(Message)? onForward;
+  final Function(Message)? onAlbumTap;
 
   const MessageBubble({
     super.key,
@@ -30,6 +30,7 @@ class MessageBubble extends StatefulWidget {
     this.onStar,
     this.onReply,
     this.onForward,
+    this.onAlbumTap,
   });
 
   @override
@@ -52,6 +53,11 @@ class _MessageBubbleState extends State<MessageBubble> {
     final message = widget.message;
     final isCurrentUser = widget.isCurrentUser;
     final hasTranslation = message.translatedContent != null && message.translatedContent!.isNotEmpty;
+
+    // Album share/revoke messages are center-aligned like system messages
+    if (message.type == MessageType.albumShare || message.type == MessageType.albumRevoke) {
+      return _buildAlbumMessage(context, message, isCurrentUser);
+    }
 
     return GestureDetector(
       onDoubleTap: hasTranslation ? () {
@@ -155,6 +161,85 @@ class _MessageBubbleState extends State<MessageBubble> {
                     ),
                   ],
                 ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAlbumMessage(BuildContext context, Message message, bool isCurrentUser) {
+    final isShare = message.type == MessageType.albumShare;
+    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? 'Someone';
+
+    // Determine display text
+    String displayText;
+    if (isShare) {
+      displayText = isCurrentUser
+          ? 'You shared your private album'
+          : '$albumOwnerName shared their private album with you';
+    } else {
+      displayText = isCurrentUser
+          ? 'You revoked your shared album'
+          : '$albumOwnerName revoked their album';
+    }
+
+    // albumShare is tappable for the receiver; albumRevoke is never tappable
+    final bool isTappable = isShare && !isCurrentUser;
+
+    return GestureDetector(
+      onTap: isTappable ? () => widget.onAlbumTap?.call(message) : null,
+      child: Align(
+        alignment: Alignment.center,
+        child: Container(
+          margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 32),
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard.withOpacity(0.7),
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            border: isShare && isTappable
+                ? Border.all(color: AppColors.richGold.withOpacity(0.3), width: 1)
+                : null,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.photo_album,
+                size: 28,
+                color: isShare
+                    ? AppColors.richGold
+                    : AppColors.textTertiary,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                displayText,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: isShare ? AppColors.textPrimary : AppColors.textSecondary,
+                  fontSize: 13,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              if (isTappable) ...[
+                const SizedBox(height: 4),
+                Text(
+                  'Tap to view album',
+                  style: TextStyle(
+                    color: AppColors.richGold.withOpacity(0.8),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 4),
+              Text(
+                message.timeText,
+                style: const TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 10,
+                ),
               ),
             ],
           ),

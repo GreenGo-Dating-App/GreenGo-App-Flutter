@@ -23,6 +23,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   final InAppPurchase inAppPurchase;
 
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
+  String? _currentUserId;
 
   SubscriptionBloc({
     required this.getCurrentSubscription,
@@ -43,6 +44,9 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
       (purchases) {
         add(_PurchaseUpdated(purchases));
       },
+      onError: (error) {
+        debugPrint('IAP stream error: $error');
+      },
     );
   }
 
@@ -51,6 +55,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     Emitter<SubscriptionState> emit,
   ) async {
     emit(SubscriptionLoading());
+    _currentUserId = event.userId;
 
     final result = await getCurrentSubscription(event.userId);
 
@@ -170,11 +175,17 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
 
         // Update the user's profile membershipTier in Firestore
         try {
-          final userId = purchase.purchaseID != null
-              ? null // We need the userId from elsewhere
-              : null;
-          // Update profile if we have context
-          // The datasource fallback already handles this for debug mode
+          final userId = _currentUserId;
+          if (userId != null) {
+            await FirebaseFirestore.instance
+                .collection('profiles')
+                .doc(userId)
+                .update({'membershipTier': tierName});
+            await FirebaseFirestore.instance
+                .collection('users')
+                .doc(userId)
+                .update({'membershipTier': tierName});
+          }
           debugPrint('Subscription purchased: $tierName');
         } catch (e) {
           debugPrint('Error updating profile tier: $e');

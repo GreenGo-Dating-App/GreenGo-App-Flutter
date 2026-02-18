@@ -199,6 +199,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         receiverId: _otherUserId!,
         content: event.content,
         type: event.type,
+        metadata: event.metadata,
       ),
     );
 

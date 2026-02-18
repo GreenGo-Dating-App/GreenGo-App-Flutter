@@ -668,13 +668,20 @@ class CoinRemoteDataSource {
   /// Get active promotions
   Future<List<CoinPromotionModel>> getActivePromotions() async {
     final now = DateTime.now();
+    // Firestore only allows inequality on one field per query,
+    // so filter startDate server-side and endDate client-side
     final snapshot = await _promotionsCollection
         .where('isActive', isEqualTo: true)
         .where('startDate', isLessThanOrEqualTo: Timestamp.fromDate(now))
-        .where('endDate', isGreaterThanOrEqualTo: Timestamp.fromDate(now))
         .get();
 
+    final nowTimestamp = Timestamp.fromDate(now);
     return snapshot.docs
+        .where((doc) {
+          final data = doc.data() as Map<String, dynamic>?;
+          final endDate = data?['endDate'] as Timestamp?;
+          return endDate != null && endDate.compareTo(nowTimestamp) >= 0;
+        })
         .map((doc) => CoinPromotionModel.fromFirestore(doc))
         .toList();
   }

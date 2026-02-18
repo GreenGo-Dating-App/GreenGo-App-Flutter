@@ -145,10 +145,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           }).toList()
         : candidates.toList();
 
-    // Apply country filter
+    // Apply country filter — use effectiveLocation so traveler candidates show in correct country
     if (preferences.preferredCountries.isNotEmpty) {
       filteredCandidates = filteredCandidates.where((candidate) {
-        final country = candidate.profile.location.country;
+        final country = candidate.profile.effectiveLocation.country;
         // Keep candidates with unknown/empty country (don't exclude them)
         if (country.isEmpty || country == 'Unknown') return true;
         return preferences.preferredCountries

@@ -39,14 +39,18 @@ class ProfileUpdateRequested extends ProfileEvent {
 class ProfilePhotoUploadRequested extends ProfileEvent {
   final String userId;
   final File photo;
+  final bool isMainPhoto;
+  final bool isPrivate;
 
   const ProfilePhotoUploadRequested({
     required this.userId,
     required this.photo,
+    this.isMainPhoto = false,
+    this.isPrivate = false,
   });
 
   @override
-  List<Object?> get props => [userId, photo];
+  List<Object?> get props => [userId, photo, isMainPhoto, isPrivate];
 }
 
 class ProfilePhotoVerificationRequested extends ProfileEvent {

@@ -17,6 +17,7 @@ class EnhancedMessageBubble extends StatelessWidget {
   final VoidCallback? onDelete;
   final VoidCallback? onForward;
   final VoidCallback? onTranslate;
+  final Function(Message)? onAlbumTap;
 
   const EnhancedMessageBubble({
     super.key,
@@ -28,10 +29,16 @@ class EnhancedMessageBubble extends StatelessWidget {
     this.onDelete,
     this.onForward,
     this.onTranslate,
+    this.onAlbumTap,
   });
 
   @override
   Widget build(BuildContext context) {
+    // Album share/revoke messages are center-aligned like system messages
+    if (message.type == MessageType.albumShare || message.type == MessageType.albumRevoke) {
+      return _buildAlbumMessage(context);
+    }
+
     return GestureDetector(
       onLongPress: () => _showContextMenu(context),
       child: Align(
@@ -167,6 +174,83 @@ class EnhancedMessageBubble extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAlbumMessage(BuildContext context) {
+    final isShare = message.type == MessageType.albumShare;
+    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? 'Someone';
+
+    String displayText;
+    if (isShare) {
+      displayText = isCurrentUser
+          ? 'You shared your private album'
+          : '$albumOwnerName shared their private album with you';
+    } else {
+      displayText = isCurrentUser
+          ? 'You revoked your shared album'
+          : '$albumOwnerName revoked their album';
+    }
+
+    final bool isTappable = isShare && !isCurrentUser;
+
+    return GestureDetector(
+      onTap: isTappable ? () => onAlbumTap?.call(message) : null,
+      child: Align(
+        alignment: Alignment.center,
+        child: Container(
+          margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 32),
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard.withOpacity(0.7),
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            border: isShare && isTappable
+                ? Border.all(color: AppColors.richGold.withOpacity(0.3), width: 1)
+                : null,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.photo_album,
+                size: 28,
+                color: isShare
+                    ? AppColors.richGold
+                    : AppColors.textTertiary,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                displayText,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: isShare ? AppColors.textPrimary : AppColors.textSecondary,
+                  fontSize: 13,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              if (isTappable) ...[
+                const SizedBox(height: 4),
+                Text(
+                  'Tap to view album',
+                  style: TextStyle(
+                    color: AppColors.richGold.withOpacity(0.8),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 4),
+              Text(
+                message.timeText,
+                style: const TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 10,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

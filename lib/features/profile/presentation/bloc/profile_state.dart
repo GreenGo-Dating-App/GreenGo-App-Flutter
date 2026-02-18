@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/entities/profile.dart';
 
 abstract class ProfileState extends Equatable {
@@ -81,6 +82,19 @@ class ProfileCompletionLoaded extends ProfileState {
 
   @override
   List<Object?> get props => [completionPercentage];
+}
+
+class ProfilePhotoValidating extends ProfileState {
+  const ProfilePhotoValidating();
+}
+
+class ProfilePhotoValidationFailed extends ProfileState {
+  final PhotoValidationError? errorCode;
+
+  const ProfilePhotoValidationFailed({this.errorCode});
+
+  @override
+  List<Object?> get props => [errorCode];
 }
 
 class ProfileError extends ProfileState {

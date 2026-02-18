@@ -25,6 +25,7 @@ abstract class ChatRepository {
     required String receiverId,
     required String content,
     required MessageType type,
+    Map<String, dynamic>? metadata,
   });
 
   /// Mark message as read

@@ -6,6 +6,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/discovery_card.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Swipeable Card Widget
 ///
@@ -202,14 +203,64 @@ class _SwipeCardState extends State<SwipeCard>
                   compact: true,
                 ),
               ],
+              // Traveler badge
+              if (profile.isTravelerActive) ...[
+                const SizedBox(width: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF1E88E5), Color(0xFF42A5F5)],
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.flight, color: Colors.white, size: 12),
+                      const SizedBox(width: 4),
+                      Text(
+                        AppLocalizations.of(context)?.travelerBadge ?? 'Traveler',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+              // Incognito ghost badge
+              if (profile.isIncognito &&
+                  profile.incognitoExpiry != null &&
+                  profile.incognitoExpiry!.isAfter(DateTime.now())) ...[
+                const SizedBox(width: 6),
+                Container(
+                  padding: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.visibility_off,
+                    color: Colors.white70,
+                    size: 14,
+                  ),
+                ),
+              ],
             ],
           ),
           const SizedBox(height: 6),
 
-          // Location
+          // Location (use effective location for travelers)
           Row(
             children: [
-              const Icon(Icons.location_on, color: Colors.white70, size: 16),
+              Icon(
+                profile.isTravelerActive ? Icons.flight : Icons.location_on,
+                color: Colors.white70,
+                size: 16,
+              ),
               const SizedBox(width: 4),
               Text(
                 widget.card.distanceText,

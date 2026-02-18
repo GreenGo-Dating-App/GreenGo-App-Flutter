@@ -25,12 +25,14 @@ class ChatMessageSent extends ChatEvent {
   final MessageType type;
   final MembershipRules? membershipRules;
   final MembershipTier? membershipTier;
+  final Map<String, dynamic>? metadata;
 
   const ChatMessageSent({
     required this.content,
     this.type = MessageType.text,
     this.membershipRules,
     this.membershipTier,
+    this.metadata,
   });
 }
 

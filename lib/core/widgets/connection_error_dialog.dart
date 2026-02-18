@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import '../../generated/app_localizations.dart';
 
 /// A graceful error dialog for connection and authentication errors
 /// Shows a beautiful modal with icon, message, and retry option
@@ -28,13 +29,14 @@ class ConnectionErrorDialog extends StatefulWidget {
     BuildContext context, {
     VoidCallback? onRetry,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     return showDialog(
       context: context,
       barrierDismissible: true,
       barrierColor: Colors.black54,
       builder: (context) => ConnectionErrorDialog(
-        title: 'Connection Error',
-        message: 'Please check your internet connection and try again.',
+        title: l10n.connectionErrorTitle,
+        message: l10n.connectionErrorMessage,
         icon: Icons.wifi_off,
         iconColor: AppColors.errorRed,
         onRetry: onRetry,
@@ -70,13 +72,14 @@ class ConnectionErrorDialog extends StatefulWidget {
     BuildContext context, {
     VoidCallback? onRetry,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     return showDialog(
       context: context,
       barrierDismissible: true,
       barrierColor: Colors.black54,
       builder: (context) => ConnectionErrorDialog(
-        title: 'Server Unavailable',
-        message: 'Our servers are temporarily unavailable. Please try again in a few moments.',
+        title: l10n.serverUnavailableTitle,
+        message: l10n.serverUnavailableMessage,
         icon: Icons.cloud_off,
         iconColor: AppColors.warningAmber,
         onRetry: onRetry,
@@ -240,9 +243,9 @@ class _ConnectionErrorDialogState extends State<ConnectionErrorDialog>
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      child: const Text(
-                        'Dismiss',
-                        style: TextStyle(
+                      child: Text(
+                        AppLocalizations.of(context)?.dismiss ?? 'Dismiss',
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -267,9 +270,9 @@ class _ConnectionErrorDialogState extends State<ConnectionErrorDialog>
                           ),
                           elevation: 0,
                         ),
-                        child: const Text(
-                          'Try Again',
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)?.tryAgain ?? 'Try Again',
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),

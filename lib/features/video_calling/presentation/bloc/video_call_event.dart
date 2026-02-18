@@ -140,6 +140,11 @@ class VideoCallLoadHistory extends VideoCallEvent {
 }
 
 /// Submit call feedback
+class VideoCallDurationTick extends VideoCallEvent {
+  final Duration duration;
+  const VideoCallDurationTick(this.duration);
+}
+
 class VideoCallSubmitFeedback extends VideoCallEvent {
   final String callId;
   final String userId;

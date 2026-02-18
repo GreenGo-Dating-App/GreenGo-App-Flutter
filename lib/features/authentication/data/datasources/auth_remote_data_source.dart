@@ -97,11 +97,16 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     required String password,
   }) async {
     try {
-      // Check if input is a nickname (no '@' in it) rather than an email
-      String resolvedEmail = email;
-      if (!email.contains('@')) {
+      // Check if input is a nickname rather than an email
+      // Strip leading '@' since users often type @nickname
+      String input = email.trim();
+      if (input.startsWith('@')) {
+        input = input.substring(1);
+      }
+      String resolvedEmail = input;
+      if (!input.contains('@')) {
         // Treat as nickname - look up email from Firestore profiles
-        resolvedEmail = await _resolveNicknameToEmail(email);
+        resolvedEmail = await _resolveNicknameToEmail(input);
       }
 
       final userCredential = await firebaseAuth.signInWithEmailAndPassword(
@@ -529,6 +534,9 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         return AuthenticationException('This operation is not allowed');
       case 'network-request-failed':
         return AuthenticationException('NETWORK_ERROR: Please check your internet connection');
+      case 'invalid-credential':
+      case 'INVALID_LOGIN_CREDENTIALS':
+        return AuthenticationException('Invalid email/nickname or password');
       default:
         // Check if the error message contains network-related keywords
         final message = (e.message ?? '').toLowerCase();

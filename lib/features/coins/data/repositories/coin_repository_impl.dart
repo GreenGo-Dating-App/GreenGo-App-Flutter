@@ -282,6 +282,17 @@ class CoinRepositoryImpl implements CoinRepository {
       case 'see_who_liked_you':
       case 'seewholikedyou':
         return CoinTransactionReason.seeWhoLikedYouPurchase;
+      case 'direct_message':
+      case 'directmessage':
+        return CoinTransactionReason.directMessagePurchase;
+      case 'incognito':
+        return CoinTransactionReason.incognitoPurchase;
+      case 'traveler':
+      case 'location_switch':
+        return CoinTransactionReason.travelerPurchase;
+      case 'read_receipts':
+      case 'readreceipts':
+        return CoinTransactionReason.readReceiptsPurchase;
       default:
         return CoinTransactionReason.featurePurchase;
     }

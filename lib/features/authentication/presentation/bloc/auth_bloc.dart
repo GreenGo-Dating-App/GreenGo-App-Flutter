@@ -11,6 +11,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepository repository;
   final dynamic localAuth; // Will be LocalAuthentication when biometric is enabled
   final AccessControlService _accessControlService;
+  late final dynamic _authSubscription;
 
   AuthBloc({
     required this.repository,
@@ -35,8 +36,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<_AuthStateChanged>(_onAuthStateChanged);
 
     // Listen to auth state changes and dispatch events
-    repository.authStateChanges.listen((user) {
-      add(_AuthStateChanged(user));
+    _authSubscription = repository.authStateChanges.listen((user) {
+      if (!isClosed) add(_AuthStateChanged(user));
     });
   }
 
@@ -47,8 +48,19 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     if (event.user != null) {
       emit(AuthAuthenticated(event.user!));
     } else {
-      emit(const AuthUnauthenticated());
+      // Don't overwrite error or loading states — the login handler manages those.
+      // Firebase authStateChanges can fire null during/after a failed login attempt,
+      // which would swallow the AuthError state before the UI can show the dialog.
+      if (state is! AuthError && state is! AuthLoading) {
+        emit(const AuthUnauthenticated());
+      }
     }
+  }
+
+  @override
+  Future<void> close() {
+    _authSubscription.cancel();
+    return super.close();
   }
 
   Future<void> _onAuthCheckRequested(
@@ -126,7 +138,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     if (!AppConfig.enableGoogleAuth) {
-      emit(const AuthError(
+      emit(AuthError(
         'Google Sign-In is not enabled. Enable it in AppConfig.',
       ));
       return;
@@ -157,7 +169,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     if (!AppConfig.enableFacebookAuth) {
-      emit(const AuthError(
+      emit(AuthError(
         'Facebook Login is not enabled. Enable it in AppConfig.',
       ));
       return;
@@ -176,8 +188,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(const AuthLoading());
-    // This will be handled by the data source callbacks
-    // The state will be updated when code is sent
+    emit(AuthError('Phone sign-in is not yet available'));
   }
 
   Future<void> _onVerifyPhoneCodeRequested(
@@ -186,7 +197,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   ) async {
     emit(const AuthLoading());
     // Phone verification will be implemented in the data source
-    emit(const AuthError('Phone verification not yet implemented'));
+    emit(AuthError('Phone verification not yet implemented'));
   }
 
   Future<void> _onSignOutRequested(
@@ -225,14 +236,14 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     if (!AppConfig.enableBiometricAuth) {
-      emit(const AuthError(
+      emit(AuthError(
         'Biometric authentication is not enabled. Enable it in AppConfig.',
       ));
       return;
     }
 
     if (localAuth == null) {
-      emit(const AuthError(
+      emit(AuthError(
         'Biometric authentication not configured. Add local_auth package.',
       ));
       return;
@@ -243,7 +254,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       final isDeviceSupported = await localAuth.isDeviceSupported();
 
       if (!canCheckBiometrics || !isDeviceSupported) {
-        emit(const AuthError('Biometric authentication not available on this device'));
+        emit(AuthError('Biometric authentication not available on this device'));
         return;
       }
 
@@ -262,10 +273,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
           (failure) => emit(const AuthUnauthenticated()),
           (user) => user != null
               ? emit(AuthAuthenticated(user))
-              : emit(const AuthError('No stored credentials found')),
+              : emit(AuthError('No stored credentials found')),
         );
       } else {
-        emit(const AuthError('Biometric authentication failed'));
+        emit(AuthError('Biometric authentication failed'));
       }
     } catch (e) {
       emit(AuthError('Biometric error: ${e.toString()}'));

@@ -694,10 +694,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email. Please check your email or sign up.';
+      'No account found with this email or nickname. Please check and try again, or sign up.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword => 'Wrong password. Please try again.';
 
   @override
   String get authErrorInvalidEmail => 'Please enter a valid email address.';
@@ -716,14 +716,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get authErrorNetworkError =>
-      'Network error. Please check your internet connection.';
+      'No internet connection. Please check your connection and try again.';
 
   @override
   String get authErrorGeneric => 'An error occurred. Please try again.';
 
   @override
   String get authErrorInvalidCredentials =>
-      'Invalid email or password. Please try again.';
+      'Wrong email/nickname or password. Please check your credentials and try again.';
+
+  @override
+  String get connectionErrorTitle => 'No Internet Connection';
+
+  @override
+  String get connectionErrorMessage =>
+      'Please check your internet connection and try again.';
+
+  @override
+  String get serverUnavailableTitle => 'Server Unavailable';
+
+  @override
+  String get serverUnavailableMessage =>
+      'Our servers are temporarily unavailable. Please try again in a few moments.';
+
+  @override
+  String get authenticationErrorTitle => 'Login Failed';
+
+  @override
+  String get dismiss => 'Dismiss';
 
   @override
   String get accountCreatedSuccess =>
@@ -2035,4 +2055,204 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aboutMeTitle => 'About Me';
+
+  @override
+  String get travelerBadge => 'Traveler';
+
+  @override
+  String get travelerModeTitle => 'Traveler Mode';
+
+  @override
+  String get travelerModeDescription =>
+      'Appear in a different city\'s discovery feed for 24 hours';
+
+  @override
+  String get travelerModeActive => 'Traveler mode active';
+
+  @override
+  String travelerModeActivated(String city) {
+    return 'Traveler mode activated! Appearing in $city for 24 hours.';
+  }
+
+  @override
+  String get travelerModeDeactivated =>
+      'Traveler mode deactivated. Back to your real location.';
+
+  @override
+  String get selectTravelLocation => 'Select Travel Location';
+
+  @override
+  String get searchCityPlaceholder => 'Search city, address, or place...';
+
+  @override
+  String get useCurrentGpsLocation => 'Use my current GPS location';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
+
+  @override
+  String get changeLocation => 'Change location';
+
+  @override
+  String get travelerLocationInfo =>
+      'You will appear in discovery results for this location for 24 hours.';
+
+  @override
+  String get searchForCity => 'Search for a city or use GPS';
+
+  @override
+  String get travelerSearchHint =>
+      'Your profile will appear in that location\'s discovery feed for 24 hours with a Traveler badge.';
+
+  @override
+  String get incognitoMode => 'Incognito Mode';
+
+  @override
+  String get incognitoModeDescription => 'Hide your profile from discovery';
+
+  @override
+  String get myUsage => 'My Usage';
+
+  @override
+  String get boostProfile => 'Boost Profile';
+
+  @override
+  String get boostActivated => 'Boost activated for 30 minutes!';
+
+  @override
+  String get superLike => 'Super Like';
+
+  @override
+  String get undoSwipe => 'Undo Swipe';
+
+  @override
+  String freeActionsRemaining(int count) {
+    return '$count free actions remaining today';
+  }
+
+  @override
+  String coinsRequired(int amount) {
+    return '$amount coins required';
+  }
+
+  @override
+  String get tierFree => 'Free';
+
+  @override
+  String get dailySwipeLimitReached =>
+      'Daily swipe limit reached. Upgrade for more swipes!';
+
+  @override
+  String get noOthersToSee => 'There\'s no others to see';
+
+  @override
+  String get checkBackLater =>
+      'Check back later for new people, or adjust your preferences';
+
+  @override
+  String get adjustPreferences => 'Adjust Preferences';
+
+  @override
+  String get noPreviousProfile => 'No previous profile to rewind';
+
+  @override
+  String get cantUndoMatched => 'Can\'t undo — you already matched!';
+
+  @override
+  String showingProfiles(int count) {
+    return '$count profiles';
+  }
+
+  @override
+  String seeMoreProfiles(int count) {
+    return 'See $count more';
+  }
+
+  @override
+  String coinsCost(int amount) {
+    return '$amount coins';
+  }
+
+  @override
+  String get seeMoreProfilesTitle => 'See More Profiles';
+
+  @override
+  String unlockMoreProfiles(int count, int cost) {
+    return 'Unlock $count more profiles in grid view for $cost coins.';
+  }
+
+  @override
+  String get unlock => 'Unlock';
+
+  @override
+  String get buyCoins => 'Buy Coins';
+
+  @override
+  String needCoinsForProfiles(int amount) {
+    return 'You need $amount coins to unlock more profiles.';
+  }
+
+  @override
+  String matchPercentage(String percentage) {
+    return '$percentage match';
+  }
+
+  @override
+  String get youGotSuperLike => 'You got a Super Like!';
+
+  @override
+  String superLikedYou(String name) {
+    return '$name super liked you!';
+  }
+
+  @override
+  String get photoValidating => 'Validating photo...';
+
+  @override
+  String get photoNotAccepted => 'Photo Not Accepted';
+
+  @override
+  String get photoMainNoFace =>
+      'Your main photo must show your face clearly. No face was detected in this photo.';
+
+  @override
+  String get photoMainNotForward =>
+      'Please use a photo where your face is clearly visible and facing forward.';
+
+  @override
+  String get photoExplicitNudity =>
+      'This photo appears to contain nudity or explicit content. Public photos must be appropriate and fully clothed.';
+
+  @override
+  String get photoExplicitContent =>
+      'This photo may contain inappropriate content. Public photos must not show nudity, underwear, or explicit content.';
+
+  @override
+  String get photoTooMuchSkin =>
+      'This photo shows too much skin exposure. Please use a photo where you are appropriately dressed.';
+
+  @override
+  String get photoNotAllowedPublic =>
+      'This photo is not allowed on your public profile.';
+
+  @override
+  String get photoTooLarge => 'Photo is too large. Maximum size is 10MB.';
+
+  @override
+  String get photoMustHaveOne =>
+      'You must have at least one public photo with your face visible.';
+
+  @override
+  String get photoDeleteMainWarning =>
+      'This is your main photo. The next photo will become your main photo (must show your face). Continue?';
+
+  @override
+  String get photoDeleteConfirm =>
+      'Are you sure you want to delete this photo?';
+
+  @override
+  String get photoMaxPublic => 'Maximum 6 public photos allowed';
+
+  @override
+  String get photoMaxPrivate => 'Maximum 6 private photos allowed';
 }

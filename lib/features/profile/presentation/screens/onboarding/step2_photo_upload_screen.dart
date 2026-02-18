@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -19,6 +20,29 @@ class Step2PhotoUploadScreen extends StatefulWidget {
 
 class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
   final ImagePicker _picker = ImagePicker();
+
+  /// Map photo_validation error codes to i18n strings
+  String _localizeError(BuildContext context, String message) {
+    if (!message.startsWith('photo_validation:')) return message;
+    final code = message.substring('photo_validation:'.length);
+    final l10n = AppLocalizations.of(context);
+    switch (code) {
+      case 'mainNoFace':
+        return l10n?.photoMainNoFace ?? 'Your main photo must show your face clearly.';
+      case 'mainNotForward':
+        return l10n?.photoMainNotForward ?? 'Please use a front-facing photo.';
+      case 'explicitNudity':
+        return l10n?.photoExplicitNudity ?? 'This photo contains nudity.';
+      case 'explicitContent':
+        return l10n?.photoExplicitContent ?? 'This photo contains inappropriate content.';
+      case 'tooMuchSkin':
+        return l10n?.photoTooMuchSkin ?? 'This photo shows too much skin exposure.';
+      case 'tooLarge':
+        return l10n?.photoTooLarge ?? 'Photo is too large.';
+      default:
+        return l10n?.photoNotAllowedPublic ?? 'This photo is not allowed.';
+    }
+  }
 
   Future<void> _pickImage(ImageSource source) async {
     try {
@@ -185,6 +209,39 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
     );
   }
 
+  void _showPhotoRejectedDialog(BuildContext context, String message) {
+    final l10n = AppLocalizations.of(context);
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1E1E2C),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            Icon(Icons.warning_amber_rounded, color: Colors.amber.shade400),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                l10n?.photoNotAccepted ?? 'Photo Not Accepted',
+                style: const TextStyle(color: Colors.white, fontSize: 18),
+              ),
+            ),
+          ],
+        ),
+        content: Text(
+          message,
+          style: TextStyle(color: Colors.white.withOpacity(0.7)),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('OK', style: TextStyle(color: AppColors.richGold)),
+          ),
+        ],
+      ),
+    );
+  }
+
   void _handleContinue(List<String> photoUrls) {
     if (photoUrls.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -210,14 +267,21 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
     return BlocConsumer<OnboardingBloc, OnboardingState>(
       listener: (context, state) {
         if (state is OnboardingError) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: AppColors.errorRed,
-              behavior: SnackBarBehavior.floating,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            ),
-          );
+          final message = _localizeError(context, state.message);
+          final isPhotoError = state.message.startsWith('photo_validation:');
+          if (isPhotoError) {
+            // Show dialog for photo validation errors
+            _showPhotoRejectedDialog(context, message);
+          } else {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(message),
+                backgroundColor: AppColors.errorRed,
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+            );
+          }
         }
       },
       builder: (context, state) {

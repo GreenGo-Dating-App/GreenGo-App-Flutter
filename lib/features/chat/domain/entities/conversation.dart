@@ -13,9 +13,10 @@ enum ChatTheme {
 
 /// Conversation Type Options
 enum ConversationType {
-  match,    // Regular match conversation between two users
-  support,  // Support conversation between user and support agent
-  search,   // Conversation started from nickname search (no match required)
+  match,      // Regular match conversation between two users
+  support,    // Support conversation between user and support agent
+  search,     // Conversation started from nickname search (no match required)
+  superLike,  // Conversation started from a super like (one-way until reply)
 }
 
 /// Support Ticket Priority
@@ -80,6 +81,10 @@ class Conversation extends Equatable {
   final String? supportSubject;        // User's initial subject/topic
   final DateTime? supportResolvedAt;   // When the ticket was resolved
 
+  // Super Like fields
+  final List<String>? visibleTo; // null = visible to both, list = only those users
+  final String? superLikeSenderId; // Who initiated the super like
+
   // Deletion tracking
   final bool isDeleted;
   final Map<String, dynamic>? deletedFor; // userId → Timestamp of deletion
@@ -110,6 +115,8 @@ class Conversation extends Equatable {
     this.supportCategory,
     this.supportSubject,
     this.supportResolvedAt,
+    this.visibleTo,
+    this.superLikeSenderId,
     this.isDeleted = false,
     this.deletedFor,
   });
@@ -135,6 +142,15 @@ class Conversation extends Equatable {
 
   /// Check if this is a search conversation
   bool get isSearchConversation => conversationType == ConversationType.search;
+
+  /// Check if this is a super like conversation
+  bool get isSuperLikeConversation => conversationType == ConversationType.superLike;
+
+  /// Check if conversation is visible to a specific user
+  bool isVisibleTo(String userId) {
+    if (visibleTo == null || visibleTo!.isEmpty) return true;
+    return visibleTo!.contains(userId);
+  }
 
   /// Check if support ticket is resolved
   bool get isSupportResolved =>
@@ -217,6 +233,10 @@ class Conversation extends Equatable {
         return '🎤 Voice message';
       case MessageType.system:
         return lastMessage!.content;
+      case MessageType.albumShare:
+        return '📷 Album shared';
+      case MessageType.albumRevoke:
+        return '🔒 Album revoked';
     }
   }
 
@@ -267,6 +287,8 @@ class Conversation extends Equatable {
     String? supportCategory,
     String? supportSubject,
     DateTime? supportResolvedAt,
+    List<String>? visibleTo,
+    String? superLikeSenderId,
     bool? isDeleted,
     Map<String, dynamic>? deletedFor,
   }) {
@@ -296,6 +318,8 @@ class Conversation extends Equatable {
       supportCategory: supportCategory ?? this.supportCategory,
       supportSubject: supportSubject ?? this.supportSubject,
       supportResolvedAt: supportResolvedAt ?? this.supportResolvedAt,
+      visibleTo: visibleTo ?? this.visibleTo,
+      superLikeSenderId: superLikeSenderId ?? this.superLikeSenderId,
       isDeleted: isDeleted ?? this.isDeleted,
       deletedFor: deletedFor ?? this.deletedFor,
     );
@@ -328,6 +352,8 @@ class Conversation extends Equatable {
         supportCategory,
         supportSubject,
         supportResolvedAt,
+        visibleTo,
+        superLikeSenderId,
         isDeleted,
         deletedFor,
       ];

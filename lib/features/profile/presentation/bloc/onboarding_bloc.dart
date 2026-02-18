@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/upload_photo.dart';
@@ -113,41 +114,51 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     if (state is OnboardingInProgress) {
       final currentState = state as OnboardingInProgress;
 
+      final isFirstPhoto = currentState.photoUrls.isEmpty;
+      final validationService = PhotoValidationService();
+
+      // Validate photo locally BEFORE uploading:
+      // - First photo: must have face + no NSFW
+      // - Other photos: no NSFW (no face required)
+      PhotoValidationResult validationResult;
+      if (isFirstPhoto) {
+        validationResult =
+            await validationService.validateMainPhoto(event.photo);
+
+        if (!validationResult.isValid || !validationResult.hasFace) {
+          final errorCode = validationResult.errorCode?.name ?? 'mainNoFace';
+          emit(OnboardingError(message: 'photo_validation:$errorCode'));
+          emit(currentState);
+          return;
+        }
+      } else {
+        validationResult =
+            await validationService.validatePublicPhoto(event.photo);
+
+        if (!validationResult.isValid) {
+          final errorCode = validationResult.errorCode?.name ?? 'explicitContent';
+          emit(OnboardingError(message: 'photo_validation:$errorCode'));
+          emit(currentState);
+          return;
+        }
+      }
+
+      // Validation passed — now show uploading state and upload
       emit(const OnboardingPhotoUploading());
 
-      // Verify photo with AI
-      final verifyResult =
-          await verifyPhoto(VerifyPhotoParams(photo: event.photo));
+      final uploadResult = await uploadPhoto(
+        UploadPhotoParams(userId: currentState.userId, photo: event.photo),
+      );
 
-      await verifyResult.fold(
-        (failure) async {
+      uploadResult.fold(
+        (failure) {
           emit(OnboardingError(message: failure.message));
-          emit(currentState); // Restore previous state
+          emit(currentState);
         },
-        (isVerified) async {
-          if (!isVerified) {
-            emit(const OnboardingError(
-                message: 'Photo verification failed. Please use a clear photo of your face.'));
-            emit(currentState);
-            return;
-          }
-
-          // Upload photo
-          final uploadResult = await uploadPhoto(
-            UploadPhotoParams(userId: currentState.userId, photo: event.photo),
-          );
-
-          uploadResult.fold(
-            (failure) {
-              emit(OnboardingError(message: failure.message));
-              emit(currentState);
-            },
-            (photoUrl) {
-              final updatedPhotoUrls = List<String>.from(currentState.photoUrls)
-                ..add(photoUrl);
-              emit(currentState.copyWith(photoUrls: updatedPhotoUrls));
-            },
-          );
+        (photoUrl) {
+          final updatedPhotoUrls = List<String>.from(currentState.photoUrls)
+            ..add(photoUrl);
+          emit(currentState.copyWith(photoUrls: updatedPhotoUrls));
         },
       );
     }

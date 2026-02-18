@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
@@ -31,6 +32,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   late TabController _tabController;
   bool _uploadingToPrivate = false;
   bool _skipNextUpdateDialog = false;
+  bool _isValidatingDialogShowing = false;
 
   @override
   void initState() {
@@ -47,11 +49,14 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   }
 
   Future<void> _addPhoto({bool isPrivate = false}) async {
+    final l10n = AppLocalizations.of(context);
     final targetList = isPrivate ? _privatePhotoUrls : _photoUrls;
     if (targetList.length >= 6) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Maximum 6 ${isPrivate ? "private" : "public"} photos allowed'),
+          content: Text(isPrivate
+              ? (l10n?.photoMaxPrivate ?? 'Maximum 6 private photos allowed')
+              : (l10n?.photoMaxPublic ?? 'Maximum 6 public photos allowed')),
           backgroundColor: AppColors.warningAmber,
         ),
       );
@@ -70,11 +75,14 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         final file = File(image.path);
         if (!mounted) return;
 
+        // Validation happens in the ProfileBloc — pass isMainPhoto and isPrivate
         _uploadingToPrivate = isPrivate;
         context.read<ProfileBloc>().add(
               ProfilePhotoUploadRequested(
                 userId: widget.profile.userId,
                 photo: file,
+                isMainPhoto: !isPrivate && _photoUrls.isEmpty,
+                isPrivate: isPrivate,
               ),
             );
       }
@@ -89,18 +97,106 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
     }
   }
 
-  void _deletePhoto(int index, {bool isPrivate = false}) {
+  String _localizeValidationError(PhotoValidationError? code) {
+    final l10n = AppLocalizations.of(context);
+    switch (code) {
+      case PhotoValidationError.mainNoFace:
+        return l10n?.photoMainNoFace ?? 'Your main photo must show your face clearly.';
+      case PhotoValidationError.mainNotForward:
+        return l10n?.photoMainNotForward ?? 'Please use a photo where your face is clearly visible.';
+      case PhotoValidationError.explicitNudity:
+        return l10n?.photoExplicitNudity ?? 'This photo contains nudity. Public photos must be fully clothed.';
+      case PhotoValidationError.explicitContent:
+        return l10n?.photoExplicitContent ?? 'This photo contains inappropriate content.';
+      case PhotoValidationError.tooMuchSkin:
+        return l10n?.photoTooMuchSkin ?? 'This photo shows too much skin exposure.';
+      case PhotoValidationError.tooLarge:
+        return l10n?.photoTooLarge ?? 'Photo is too large. Maximum size is 10MB.';
+      case null:
+        return l10n?.photoNotAllowedPublic ?? 'This photo is not allowed on your public profile.';
+    }
+  }
+
+  void _showValidatingDialog() {
+    final l10n = AppLocalizations.of(context);
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        content: Row(
+          children: [
+            const CircularProgressIndicator(color: AppColors.richGold),
+            const SizedBox(width: 20),
+            Text(
+              l10n?.photoValidating ?? 'Validating photo...',
+              style: const TextStyle(color: AppColors.textPrimary),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showPhotoRejectedDialog(String message) {
+    final l10n = AppLocalizations.of(context);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Photo',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Row(
+          children: [
+            const Icon(Icons.warning_amber_rounded, color: AppColors.warningAmber),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                l10n?.photoNotAccepted ?? 'Photo Not Accepted',
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+            ),
+          ],
         ),
-        content: const Text(
-          'Are you sure you want to delete this photo?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          message,
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('OK', style: TextStyle(color: AppColors.richGold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _deletePhoto(int index, {bool isPrivate = false}) {
+    final l10n = AppLocalizations.of(context);
+
+    // Prevent deleting main photo if it's the only public photo
+    if (!isPrivate && index == 0 && _photoUrls.length == 1) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n?.photoMustHaveOne ?? 'You must have at least one public photo with your face visible.'),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
+      return;
+    }
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          '${l10n?.delete ?? "Delete"} Photo',
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          !isPrivate && index == 0
+              ? (l10n?.photoDeleteMainWarning ?? 'This is your main photo. The next photo will become your main photo (must show your face). Continue?')
+              : (l10n?.photoDeleteConfirm ?? 'Are you sure you want to delete this photo?'),
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -130,11 +226,14 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
   }
 
   void _copyToOther(String photoUrl, {required bool toPrivate}) {
+    final l10n = AppLocalizations.of(context);
     final targetList = toPrivate ? _privatePhotoUrls : _photoUrls;
     if (targetList.length >= 6) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Maximum 6 ${toPrivate ? "private" : "public"} photos'),
+          content: Text(toPrivate
+              ? (l10n?.photoMaxPrivate ?? 'Maximum 6 private photos')
+              : (l10n?.photoMaxPublic ?? 'Maximum 6 public photos')),
           backgroundColor: AppColors.warningAmber,
         ),
       );
@@ -149,6 +248,20 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       );
       return;
     }
+
+    // Block copying NSFW photos from private to public
+    if (!toPrivate) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n?.photoNotAllowedPublic ??
+              'Photos cannot be copied from private to public album. Please upload directly to public.'),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
+      return;
+    }
+
+    // Copying to private is always allowed
     setState(() {
       targetList.add(photoUrl);
     });
@@ -215,7 +328,21 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) async {
-            if (state is ProfilePhotoUploaded) {
+            // Dismiss validating dialog whenever a new state arrives
+            if (_isValidatingDialogShowing && state is! ProfilePhotoValidating) {
+              _isValidatingDialogShowing = false;
+              if (Navigator.of(context).canPop()) {
+                Navigator.of(context).pop();
+              }
+            }
+
+            if (state is ProfilePhotoValidating) {
+              _isValidatingDialogShowing = true;
+              _showValidatingDialog();
+            } else if (state is ProfilePhotoValidationFailed) {
+              _showPhotoRejectedDialog(
+                  _localizeValidationError(state.errorCode));
+            } else if (state is ProfilePhotoUploaded) {
               setState(() {
                 if (_uploadingToPrivate) {
                   _privatePhotoUrls.add(state.photoUrl);
@@ -242,7 +369,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             }
           },
           builder: (context, state) {
-            final isLoading = state is ProfileLoading;
+            final isLoading =
+                state is ProfileLoading || state is ProfilePhotoValidating;
 
             return Column(
               children: [

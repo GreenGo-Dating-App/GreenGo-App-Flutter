@@ -16,6 +16,7 @@ class SendMessage {
       receiverId: params.receiverId,
       content: params.content,
       type: params.type,
+      metadata: params.metadata,
     );
   }
 }

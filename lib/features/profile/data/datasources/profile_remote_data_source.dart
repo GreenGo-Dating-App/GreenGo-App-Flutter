@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
 
@@ -51,7 +52,8 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         throw CacheException( 'Profile not found');
       }
 
-      return ProfileModel.fromJson(doc.data()!);
+      // Inject doc.id as userId to ensure it's always present
+      return ProfileModel.fromJson({...doc.data()!, 'userId': doc.id});
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to get profile');
     } catch (e) {
@@ -227,16 +229,11 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   @override
   Future<bool> verifyPhotoWithAI(File photo) async {
     try {
-      // TODO: Implement AI verification using Google Cloud Vision API
-      // For now, return true as a placeholder
-      // This should call Cloud Functions endpoint that uses Vision AI
-      // to detect faces and verify it's a real person
-
-      // Placeholder implementation
-      await Future.delayed(const Duration(seconds: 1));
-      return true;
+      final validationService = PhotoValidationService();
+      final result = await validationService.validateMainPhoto(photo);
+      return result.isValid && result.hasFace;
     } catch (e) {
-      throw ServerException( 'Failed to verify photo: ${e.toString()}');
+      throw ServerException('Failed to verify photo: ${e.toString()}');
     }
   }
 

@@ -31,6 +31,8 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
 
 /// Discovery Screen
 ///
@@ -108,6 +110,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final Set<String> _precachedImageUrls = {};
   MatchPreferences? _savedPreferences;
 
+  // Traveler tracking — detect when traveler mode activates to refresh discovery
+  bool _wasTravelerActive = false;
+  String _prevTravelerCity = '';
+
   // Grid mode state
   bool _isGridMode = false;
   int _gridColumns = 3; // 2, 3, or 4 columns
@@ -183,7 +189,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       (failure) => debugPrint('Could not load current user profile: ${failure.message}'),
       (profile) {
         if (mounted) {
-          setState(() => _currentUserProfile = profile);
+          setState(() {
+            _currentUserProfile = profile;
+            _wasTravelerActive = profile.isTravelerActive;
+            _prevTravelerCity = profile.travelerLocation?.city ?? '';
+          });
         }
       },
     );
@@ -197,10 +207,33 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
-      body: SafeArea(
-        child: BlocConsumer<DiscoveryBloc, DiscoveryState>(
+    return BlocListener<ProfileBloc, ProfileState>(
+      listenWhen: (_, curr) => curr is ProfileLoaded || curr is ProfileUpdated,
+      listener: (context, state) {
+        Profile? profile;
+        if (state is ProfileLoaded) profile = state.profile;
+        if (state is ProfileUpdated) profile = state.profile;
+        if (profile == null) return;
+
+        final isNowActive = profile.isTravelerActive;
+        final nowCity = profile.travelerLocation?.city ?? '';
+
+        final travelerJustActivated = isNowActive && !_wasTravelerActive;
+        final travelerCityChanged = isNowActive && _wasTravelerActive && nowCity != _prevTravelerCity;
+
+        if (travelerJustActivated || travelerCityChanged) {
+          debugPrint('[Discovery] Traveler activated/changed → refreshing stack');
+          _currentUserProfile = profile;
+          refreshWithPreferences(_currentPreferences);
+        }
+
+        _wasTravelerActive = isNowActive;
+        _prevTravelerCity = nowCity;
+      },
+      child: Scaffold(
+        backgroundColor: AppColors.backgroundDark,
+        body: SafeArea(
+          child: BlocConsumer<DiscoveryBloc, DiscoveryState>(
           listener: (context, state) {
             if (state is DiscoverySwipeCompleted) {
               // Refresh coin balance after any swipe (super likes cost coins)
@@ -320,6 +353,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           },
         ),
       ),
+    ),
     );
   }
 

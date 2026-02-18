@@ -65,6 +65,15 @@ class _LoginScreenState extends State<LoginScreen>
     );
 
     _animationController.forward();
+
+    // Check if we mounted with an existing error state (e.g., after AuthWrapper rebuild)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final currentState = context.read<AuthBloc>().state;
+      if (currentState is AuthError) {
+        _showErrorDialog(currentState.message);
+      }
+    });
   }
 
   @override
@@ -73,6 +82,50 @@ class _LoginScreenState extends State<LoginScreen>
     _passwordController.dispose();
     _animationController.dispose();
     super.dispose();
+  }
+
+  void _showErrorDialog(String message) {
+    final errorMessage = message.toLowerCase();
+
+    // Check for explicit NETWORK_ERROR prefix or network-related keywords
+    final isConnectionError = message.startsWith('NETWORK_ERROR') ||
+        errorMessage.contains('network') ||
+        errorMessage.contains('connection') ||
+        errorMessage.contains('internet') ||
+        errorMessage.contains('timeout') ||
+        errorMessage.contains('socket') ||
+        errorMessage.contains('host') ||
+        errorMessage.contains('unreachable') ||
+        errorMessage.contains('unavailable') ||
+        errorMessage.contains('failed to connect') ||
+        errorMessage.contains('no address') ||
+        errorMessage.contains('recaptcha');
+
+    if (isConnectionError) {
+      ConnectionErrorDialog.showConnectionError(
+        context,
+        onRetry: _handleLogin,
+      );
+    } else if (errorMessage.contains('server') ||
+        errorMessage.contains('500') ||
+        errorMessage.contains('503') ||
+        errorMessage.contains('internal')) {
+      ConnectionErrorDialog.showServerError(
+        context,
+        onRetry: _handleLogin,
+      );
+    } else {
+      final localizedMessage = AuthErrorLocalizer.getLocalizedError(
+        context,
+        message,
+      );
+      ConnectionErrorDialog.showAuthError(
+        context,
+        title: AppLocalizations.of(context)!.authenticationErrorTitle,
+        message: localizedMessage,
+        onRetry: _handleLogin,
+      );
+    }
   }
 
   void _handleLogin() {
@@ -136,58 +189,14 @@ class _LoginScreenState extends State<LoginScreen>
       ),
       body: SafeArea(
         child: BlocConsumer<AuthBloc, AuthState>(
+          // Always listen for error states — prevents race conditions
+          // where authStateChanges overwrites the error before dialog shows
+          listenWhen: (previous, current) => current is AuthError,
           listener: (context, state) {
             if (state is AuthError) {
-              final errorMessage = state.message.toLowerCase();
-
-              // Check for explicit NETWORK_ERROR prefix or network-related keywords
-              final isConnectionError = state.message.startsWith('NETWORK_ERROR') ||
-                  errorMessage.contains('network') ||
-                  errorMessage.contains('connection') ||
-                  errorMessage.contains('internet') ||
-                  errorMessage.contains('timeout') ||
-                  errorMessage.contains('socket') ||
-                  errorMessage.contains('host') ||
-                  errorMessage.contains('unreachable') ||
-                  errorMessage.contains('unavailable') ||
-                  errorMessage.contains('failed to connect') ||
-                  errorMessage.contains('no address') ||
-                  errorMessage.contains('recaptcha');
-
-              if (isConnectionError) {
-                // Show graceful connection error dialog with retry
-                ConnectionErrorDialog.showConnectionError(
-                  context,
-                  onRetry: _handleLogin,
-                );
-              } else if (errorMessage.contains('server') ||
-                  errorMessage.contains('500') ||
-                  errorMessage.contains('503') ||
-                  errorMessage.contains('internal')) {
-                // Show server error dialog
-                ConnectionErrorDialog.showServerError(
-                  context,
-                  onRetry: _handleLogin,
-                );
-              } else {
-                // Show auth error dialog for credential issues
-                final localizedMessage = AuthErrorLocalizer.getLocalizedError(
-                  context,
-                  state.message,
-                );
-                ConnectionErrorDialog.showAuthError(
-                  context,
-                  title: 'Authentication Error',
-                  message: localizedMessage,
-                  onRetry: _handleLogin,
-                );
-              }
-            } else if (state is AuthAuthenticated) {
-              Navigator.of(context).pushReplacementNamed(
-                '/home',
-                arguments: {'userId': state.user.uid},
-              );
+              _showErrorDialog(state.message);
             }
+            // AuthAuthenticated is handled by AuthWrapper — no navigation here
           },
           builder: (context, state) {
             final isLoading = state is AuthLoading;
