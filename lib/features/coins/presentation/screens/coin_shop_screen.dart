@@ -375,6 +375,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Widget build(BuildContext context) {
     return BlocListener<CoinBloc, CoinState>(
       listener: (context, state) {
+        // Update coin balance
         if (state is CoinBalanceLoaded) {
           setState(() {
             _currentCoinBalance = state.balance.availableCoins;
@@ -382,6 +383,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         } else if (state is CoinBalanceUpdated) {
           setState(() {
             _currentCoinBalance = state.balance.availableCoins;
+          });
+        }
+        // Update packages cache when BLoC loads them
+        else if (state is CoinPackagesLoaded) {
+          setState(() {
+            _cachedPackages = state.packages.isNotEmpty
+                ? state.packages
+                : CoinPackages.standardPackages;
+            _cachedPromotions = state.activePromotions;
           });
         }
       },
@@ -488,66 +498,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Widget _buildBuyCoinsTab() {
-    // Use BlocListener to update cached packages without blocking rendering
-    return BlocListener<CoinBloc, CoinState>(
-      listener: (context, state) {
-        if (state is CoinPackagesLoaded) {
-          setState(() {
-            _cachedPackages = state.packages;
-            _cachedPromotions = state.activePromotions;
-          });
-        } else if (state is CoinError) {
-          debugPrint('[CoinShop] BLoC error in coins tab: ${state.message}');
-        }
-      },
-      child: _buildCoinTabContent(),
-    );
-  }
-
-  Widget _buildCoinTabContent() {
-    try {
-      // Always render from cached packages (pre-populated with standard packages)
-      return Stack(
-        fit: StackFit.expand,
-        children: [
-          _buildPackageList(_cachedPackages, _cachedPromotions),
-          // Loading overlay for purchases only
-          if (_isLoadingCoinPurchase)
-            Container(
-              color: Colors.black54,
-              child: const Center(
-                child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFFD700)),
-                ),
-              ),
-            ),
-        ],
-      );
-    } catch (e) {
-      debugPrint('[CoinShop] Error building coins tab: $e');
-      return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(Icons.error_outline, color: Colors.orange, size: 48),
-            const SizedBox(height: 16),
-            const Text(
-              'Something went wrong loading packages',
-              style: TextStyle(color: Colors.white70),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                try {
-                  context.read<CoinBloc>().add(const LoadAvailablePackages());
-                } catch (_) {}
-              },
-              child: const Text('Retry'),
-            ),
-          ],
-        ),
-      );
-    }
+    // Directly render from cached packages — no BLoC dependency at render time.
+    // _cachedPackages is pre-populated with CoinPackages.standardPackages in initState,
+    // and updated by the top-level BlocListener when packages load from server.
+    return _buildPackageList(_cachedPackages, _cachedPromotions);
   }
 
   Widget _buildMembershipTab() {
