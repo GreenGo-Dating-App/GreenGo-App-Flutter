@@ -123,6 +123,13 @@ service cloud.firestore {
       allow delete: if isSignedIn();
     }
 
+    match /blocked_users/{blockId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
     // ============================================================================
     // NOTIFICATIONS COLLECTION
     // ============================================================================
@@ -138,7 +145,7 @@ service cloud.firestore {
     // ============================================================================
     match /coin_balances/{userId} {
       allow read: if isSignedIn();
-      allow create, update: if isSignedIn();
+      allow create, update: if isOwner(userId);
       allow delete: if false;
     }
 
@@ -198,6 +205,34 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // MATCHING / ML COLLECTIONS (used by discovery algorithm)
+    // ============================================================================
+    match /user_vectors/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /match_preferences/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /user_interactions/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    match /interaction_matrix/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
     // SWIPES / DISCOVERY COLLECTION
     // ============================================================================
     match /swipes/{docId} {
@@ -241,11 +276,172 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // DAILY USAGE COLLECTION (Usage Limits tracking)
+    // ============================================================================
+    match /dailyUsage/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+
+      match /days/{dayId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+    }
+
+    // ============================================================================
+    // COIN BALANCES COLLECTION (alternate path)
+    // ============================================================================
+    match /coinBalances/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN GIFTS COLLECTION
+    // ============================================================================
+    match /coinGifts/{giftId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION (alternate path)
+    // ============================================================================
+    match /coinTransactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN PROMOTIONS COLLECTION
+    // ============================================================================
+    match /coinPromotions/{promotionId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // CLAIMED REWARDS COLLECTION
+    // ============================================================================
+    match /claimedRewards/{rewardId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN ORDERS COLLECTION
+    // ============================================================================
+    match /coinOrders/{orderId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // MEMBERSHIPS COLLECTION
+    // ============================================================================
+    match /memberships/{membershipId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // LEGAL DOCUMENTS COLLECTION
+    // ============================================================================
+    match /legalDocuments/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // TIER CONFIGS COLLECTION
+    // ============================================================================
+    match /tierConfigs/{configId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // MESSAGE REPORTS COLLECTION
+    // ============================================================================
+    match /message_reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdmin();
+    }
+
+    // ============================================================================
+    // USER REPORTS COLLECTION
+    // ============================================================================
+    match /user_reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdmin();
+    }
+
+    // ============================================================================
+    // FEATURE FLAGS & APP CONFIG (read without auth for startup)
+    // ============================================================================
+    match /featureFlags/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /appConfig/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /app_config/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // VIRTUAL GIFTS COLLECTION
+    // ============================================================================
+    match /virtualGifts/{giftId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // BLIND MATCHES COLLECTION
+    // ============================================================================
+    match /blindMatches/{matchId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // SECOND CHANCE POOL COLLECTION
+    // ============================================================================
+    match /secondChancePool/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn();
+      allow write: if false;
     }
   }
 }

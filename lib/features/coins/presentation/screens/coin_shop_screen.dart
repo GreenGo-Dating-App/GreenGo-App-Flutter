@@ -40,9 +40,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   SubscriptionTier? _selectedTier;
   bool _isLoadingSubscription = false;
   bool _isLoadingCoinPurchase = false;
-  final InAppPurchase _inAppPurchase = InAppPurchase.instance;
+  InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
-  late StreamSubscription<List<PurchaseDetails>> _purchaseSubscription;
+  StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
 
   // Cached packages so they survive BLoC state transitions
   // Pre-populated with fallback packages to prevent blank screen
@@ -66,20 +66,36 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     super.initState();
     _currentTier = widget.currentTier ?? SubscriptionTier.basic;
     _tabController = TabController(length: 3, vsync: this);
-    context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
-    context.read<CoinBloc>().add(const LoadAvailablePackages());
+
+    try {
+      context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+      context.read<CoinBloc>().add(const LoadAvailablePackages());
+    } catch (e) {
+      debugPrint('[CoinShop] Failed to dispatch BLoC events: $e');
+    }
 
     // Load actual tier from Firestore
     _loadCurrentTierFromFirestore();
 
-    // Listen to purchase stream for both coins and subscriptions
-    _purchaseSubscription = _inAppPurchase.purchaseStream.listen(
-      _onPurchaseUpdated,
-      onDone: () => _purchaseSubscription.cancel(),
-      onError: (error) {
-        debugPrint('[IAP] Purchase stream error: $error');
-      },
-    );
+    // Safely initialize IAP and listen to purchase stream
+    _initIAP();
+  }
+
+  /// Initialize In-App Purchases safely — avoids crash if plugin not available
+  void _initIAP() {
+    try {
+      _inAppPurchase = InAppPurchase.instance;
+      _purchaseSubscription = _inAppPurchase!.purchaseStream.listen(
+        _onPurchaseUpdated,
+        onDone: () => _purchaseSubscription?.cancel(),
+        onError: (error) {
+          debugPrint('[IAP] Purchase stream error: $error');
+        },
+      );
+    } catch (e) {
+      debugPrint('[CoinShop] IAP initialization failed: $e');
+      _inAppPurchase = null;
+    }
   }
 
   /// Load user's actual membership tier from Firestore
@@ -88,7 +104,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final doc = await FirebaseFirestore.instance
           .collection('profiles')
           .doc(widget.userId)
-          .get();
+          .get()
+          .timeout(const Duration(seconds: 10));
       if (doc.exists && mounted) {
         final data = doc.data();
         final tierString = data?['membershipTier'] as String?;
@@ -112,7 +129,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   @override
   void dispose() {
     _tabController.dispose();
-    _purchaseSubscription.cancel();
+    _purchaseSubscription?.cancel();
     _nicknameController.dispose();
     _amountController.dispose();
     super.dispose();
@@ -151,7 +168,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           }
           // Complete the purchase to clear it from the queue
           if (purchaseDetails.pendingCompletePurchase) {
-            _inAppPurchase.completePurchase(purchaseDetails);
+            _inAppPurchase!.completePurchase(purchaseDetails);
           }
           break;
 
@@ -163,7 +180,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           });
           // Complete the purchase to clear it from the queue
           if (purchaseDetails.pendingCompletePurchase) {
-            _inAppPurchase.completePurchase(purchaseDetails);
+            _inAppPurchase!.completePurchase(purchaseDetails);
           }
           break;
       }
@@ -224,7 +241,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
 
       if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase.completePurchase(purchaseDetails);
+        await _inAppPurchase!.completePurchase(purchaseDetails);
       }
 
       if (mounted) {
@@ -264,7 +281,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // Complete the purchase
       if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase.completePurchase(purchaseDetails);
+        await _inAppPurchase!.completePurchase(purchaseDetails);
       }
 
       // Show success dialog
@@ -301,7 +318,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // Complete the purchase
       if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase.completePurchase(purchaseDetails);
+        await _inAppPurchase!.completePurchase(purchaseDetails);
       }
 
       // Show celebration screen with tier-specific benefits
@@ -318,7 +335,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     // Unknown product — still complete it
     debugPrint('[IAP] Unknown product purchased: $productId');
     if (purchaseDetails.pendingCompletePurchase) {
-      await _inAppPurchase.completePurchase(purchaseDetails);
+      await _inAppPurchase!.completePurchase(purchaseDetails);
     }
     setState(() {
       _isLoadingCoinPurchase = false;
@@ -471,92 +488,66 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Widget _buildBuyCoinsTab() {
-    return BlocConsumer<CoinBloc, CoinState>(
+    // Use BlocListener to update cached packages without blocking rendering
+    return BlocListener<CoinBloc, CoinState>(
       listener: (context, state) {
-        if (state is CoinError) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: Colors.red,
-              duration: const Duration(seconds: 5),
-            ),
-          );
-        }
-      },
-      builder: (context, state) {
-        final isLoading = state is CoinLoading;
-
-        // Update cache when packages are loaded from BLoC
         if (state is CoinPackagesLoaded) {
-          _cachedPackages = state.packages;
-          _cachedPromotions = state.activePromotions;
+          setState(() {
+            _cachedPackages = state.packages;
+            _cachedPromotions = state.activePromotions;
+          });
+        } else if (state is CoinError) {
+          debugPrint('[CoinShop] BLoC error in coins tab: ${state.message}');
         }
-
-        // Show error state with fallback packages
-        if (state is CoinError && _cachedPackages.isEmpty) {
-          return _buildErrorState(context, state.message);
-        }
-
-        return Stack(
-          children: [
-            // Main content — use cached packages to survive state transitions
-            if (_cachedPackages.isNotEmpty)
-              _buildPackageList(_cachedPackages, _cachedPromotions)
-            else if (!isLoading)
-              _buildErrorState(context, 'Failed to load packages')
-            else
-              // Show placeholder content while loading
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 80,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0xFFFFD700).withOpacity(0.5),
-                            blurRadius: 20,
-                            spreadRadius: 5,
-                          ),
-                        ],
-                      ),
-                      child: const Center(
-                        child: Text(
-                          '🪙',
-                          style: TextStyle(fontSize: 40),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    const Text(
-                      'Loading coin packages...',
-                      style: TextStyle(color: Colors.white70),
-                    ),
-                  ],
-                ),
-              ),
-            // Loading overlay
-            if (isLoading || _isLoadingCoinPurchase)
-              Container(
-                color: Colors.black54,
-                child: const Center(
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFFD700)),
-                  ),
-                ),
-              ),
-          ],
-        );
       },
+      child: _buildCoinTabContent(),
     );
+  }
+
+  Widget _buildCoinTabContent() {
+    try {
+      // Always render from cached packages (pre-populated with standard packages)
+      return Stack(
+        fit: StackFit.expand,
+        children: [
+          _buildPackageList(_cachedPackages, _cachedPromotions),
+          // Loading overlay for purchases only
+          if (_isLoadingCoinPurchase)
+            Container(
+              color: Colors.black54,
+              child: const Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFFD700)),
+                ),
+              ),
+            ),
+        ],
+      );
+    } catch (e) {
+      debugPrint('[CoinShop] Error building coins tab: $e');
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.error_outline, color: Colors.orange, size: 48),
+            const SizedBox(height: 16),
+            const Text(
+              'Something went wrong loading packages',
+              style: TextStyle(color: Colors.white70),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                try {
+                  context.read<CoinBloc>().add(const LoadAvailablePackages());
+                } catch (_) {}
+              },
+              child: const Text('Retry'),
+            ),
+          ],
+        ),
+      );
+    }
   }
 
   Widget _buildMembershipTab() {
@@ -953,10 +944,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Future<void> _handleBaseMembershipPurchase() async {
+    if (_inAppPurchase == null) {
+      _showError('Store not available on this device.');
+      return;
+    }
     setState(() => _isLoadingSubscription = true);
 
     try {
-      final available = await _inAppPurchase.isAvailable();
+      final available = await _inAppPurchase!.isAvailable();
       if (!available) {
         _showError('Store not available. Make sure Google Play is installed.');
         setState(() => _isLoadingSubscription = false);
@@ -964,7 +959,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
 
       const productId = 'greengo_base_membership';
-      final response = await _inAppPurchase.queryProductDetails({productId});
+      final response = await _inAppPurchase!.queryProductDetails({productId});
 
       if (response.productDetails.isEmpty) {
         _showError(
@@ -982,7 +977,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         applicationUserName: widget.userId,
       );
 
-      final ok = await _inAppPurchase.buyNonConsumable(purchaseParam: param);
+      final ok = await _inAppPurchase!.buyNonConsumable(purchaseParam: param);
       if (!ok) {
         _showError('Failed to initiate purchase');
         setState(() => _isLoadingSubscription = false);
@@ -1244,7 +1239,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final isUpgrade = _selectedTier!.index > currentTier.index;
 
       // Check if store is available
-      final bool available = await _inAppPurchase.isAvailable();
+      final bool available = await _inAppPurchase!.isAvailable();
       debugPrint('[Subscription] Store available: $available');
 
       if (!available) {
@@ -1258,7 +1253,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[Subscription] Querying product IDs: $productIds');
 
       final ProductDetailsResponse response =
-          await _inAppPurchase.queryProductDetails(productIds);
+          await _inAppPurchase!.queryProductDetails(productIds);
 
       debugPrint('[Subscription] Query response - notFoundIDs: ${response.notFoundIDs}');
       debugPrint('[Subscription] Query response - productDetails count: ${response.productDetails.length}');
@@ -1302,7 +1297,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // This will trigger Google Play / App Store subscription flow
       // Result will be handled by the purchase stream listener
-      final bool success = await _inAppPurchase.buyNonConsumable(
+      final bool success = await _inAppPurchase!.buyNonConsumable(
         purchaseParam: purchaseParam,
       );
 
@@ -1832,7 +1827,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
     try {
       // Check if store is available
-      final bool available = await _inAppPurchase.isAvailable();
+      final bool available = await _inAppPurchase!.isAvailable();
       debugPrint('[CoinPurchase] Store available: $available');
 
       if (!available) {
@@ -1846,7 +1841,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[CoinPurchase] Querying product IDs: $productIds');
 
       final ProductDetailsResponse response =
-          await _inAppPurchase.queryProductDetails(productIds);
+          await _inAppPurchase!.queryProductDetails(productIds);
 
       debugPrint('[CoinPurchase] Query response - notFoundIDs: ${response.notFoundIDs}');
       debugPrint('[CoinPurchase] Query response - productDetails count: ${response.productDetails.length}');
@@ -1883,7 +1878,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // This triggers the Google Play purchase dialog
       // Result will be handled by the purchase stream listener
-      final bool success = await _inAppPurchase.buyConsumable(
+      final bool success = await _inAppPurchase!.buyConsumable(
         purchaseParam: purchaseParam,
       );
 
