@@ -122,6 +122,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
   final Map<String, String> _gridActionOverlays = {}; // userId -> 'liked'|'superLiked'|'matched'
+  String? _lastAttemptedGridCardId; // Track last grid action for limit-hit overlay revert
 
   String get userId => widget.userId;
 
@@ -237,6 +238,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           child: BlocConsumer<DiscoveryBloc, DiscoveryState>(
           listener: (context, state) {
             if (state is DiscoverySwipeCompleted) {
+              // Swipe accepted — clear the pending grid card tracker
+              _lastAttemptedGridCardId = null;
               // Refresh coin balance after any swipe (super likes cost coins)
               context.read<CoinBloc>().add(LoadCoinBalance(userId));
               if (state.createdMatch) {
@@ -247,10 +250,21 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               _handleRewindUnavailable(context, state.reason);
             }
             if (state is DiscoverySwipeLimitReached || state is DiscoverySuperLikeLimitReached) {
+              // Revert grid overlay if a grid action was blocked by the limit
+              if (_lastAttemptedGridCardId != null) {
+                setState(() {
+                  _gridActionOverlays.remove(_lastAttemptedGridCardId);
+                });
+                _lastAttemptedGridCardId = null;
+              }
+              final message = state is DiscoverySwipeLimitReached
+                  ? (state as DiscoverySwipeLimitReached).limitResult.message
+                  : (state as DiscoverySuperLikeLimitReached).limitResult.message;
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(AppLocalizations.of(context)!.dailySwipeLimitReached),
-                  duration: const Duration(seconds: 3),
+                  content: Text(message),
+                  duration: const Duration(seconds: 4),
+                  backgroundColor: Colors.red.shade700,
                 ),
               );
             }
@@ -700,6 +714,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     // Dispatch the swipe action to the bloc with membership data for limit checks
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
+    // Track the card being actioned so we can revert its overlay if the limit is hit
+    _lastAttemptedGridCardId = card.userId;
     context.read<DiscoveryBloc>().add(
       DiscoverySwipeRecorded(
         userId: userId,

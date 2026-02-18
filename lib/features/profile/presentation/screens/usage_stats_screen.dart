@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -34,10 +36,78 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
   int _coinBalance = 0;
   bool _isLoading = true;
 
+  // Real-time Firestore listeners
+  StreamSubscription<DocumentSnapshot>? _hourlyUsageSub;
+  StreamSubscription<DocumentSnapshot>? _dailyUsageSub;
+
   @override
   void initState() {
     super.initState();
     _loadStats();
+    _subscribeToRealtimeUsage();
+  }
+
+  @override
+  void dispose() {
+    _hourlyUsageSub?.cancel();
+    _dailyUsageSub?.cancel();
+    super.dispose();
+  }
+
+  String _getHourKey() {
+    final now = DateTime.now();
+    return '${now.year}-${now.month.toString().padLeft(2, '0')}-'
+        '${now.day.toString().padLeft(2, '0')}-'
+        '${now.hour.toString().padLeft(2, '0')}';
+  }
+
+  String _getDayKey() {
+    final now = DateTime.now();
+    return '${now.year}-${now.month.toString().padLeft(2, '0')}-'
+        '${now.day.toString().padLeft(2, '0')}';
+  }
+
+  /// Stream the current hour's and current day's usage documents so the UI
+  /// updates automatically the moment a swipe/action is recorded.
+  void _subscribeToRealtimeUsage() {
+    final userId = widget.userId;
+    final db = FirebaseFirestore.instance;
+
+    _hourlyUsageSub = db
+        .collection('usageLimits')
+        .doc(userId)
+        .collection('hours')
+        .doc(_getHourKey())
+        .snapshots()
+        .listen((doc) {
+      if (!mounted) return;
+      final data = doc.data() ?? {};
+      setState(() {
+        _usageStats[UsageLimitType.likes] =
+            (data['likeCount'] as num?)?.toInt() ?? 0;
+        _usageStats[UsageLimitType.nopes] =
+            (data['nopeCount'] as num?)?.toInt() ?? 0;
+        _usageStats[UsageLimitType.superLikes] =
+            (data['superLikeCount'] as num?)?.toInt() ?? 0;
+      });
+    });
+
+    _dailyUsageSub = db
+        .collection('usageLimits')
+        .doc(userId)
+        .collection('days')
+        .doc(_getDayKey())
+        .snapshots()
+        .listen((doc) {
+      if (!mounted) return;
+      final data = doc.data() ?? {};
+      setState(() {
+        _usageStats[UsageLimitType.messages] =
+            (data['messageCount'] as num?)?.toInt() ?? 0;
+        _usageStats[UsageLimitType.mediaSends] =
+            (data['mediaSendCount'] as num?)?.toInt() ?? 0;
+      });
+    });
   }
 
   Future<void> _loadStats() async {
