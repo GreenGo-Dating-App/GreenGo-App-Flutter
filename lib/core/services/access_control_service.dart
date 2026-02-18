@@ -165,8 +165,6 @@ class AccessControlService {
   static DateTime _goldAccessDate = DateTime(2026, 3, 28);
   static DateTime _silverAccessDate = DateTime(2026, 4, 7);
   static DateTime _generalAccessDate = DateTime(2026, 4, 14);
-  static bool _configLoaded = false;
-
   // Public getters — always use the latest fetched values
   static DateTime get platinumAccessDate => _platinumAccessDate;
   static DateTime get goldAccessDate => _goldAccessDate;
@@ -181,14 +179,15 @@ class AccessControlService {
   static DateTime get basicAccessDate => generalAccessDate;
 
   /// Fetch countdown dates from Firestore `app_config/countdown` document.
-  /// Call once on app startup. Falls back to defaults if fetch fails.
+  /// Called on app startup and on every login to pick up admin changes.
+  /// Uses server fetch (bypasses cache) to ensure fresh data.
+  /// Falls back to defaults if fetch fails.
   static Future<void> loadCountdownDatesFromFirestore() async {
-    if (_configLoaded) return;
     try {
       final doc = await FirebaseFirestore.instance
           .collection('app_config')
           .doc('countdown')
-          .get();
+          .get(const GetOptions(source: Source.server));
       if (doc.exists) {
         final data = doc.data()!;
         if (data['platinumAccessDate'] != null) {
@@ -204,10 +203,31 @@ class AccessControlService {
           _generalAccessDate = (data['generalAccessDate'] as Timestamp).toDate();
         }
       }
-      _configLoaded = true;
     } catch (e) {
-      // Silently use default dates on error
-      _configLoaded = true;
+      // On network error, try cache as fallback
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('app_config')
+            .doc('countdown')
+            .get(const GetOptions(source: Source.cache));
+        if (doc.exists) {
+          final data = doc.data()!;
+          if (data['platinumAccessDate'] != null) {
+            _platinumAccessDate = (data['platinumAccessDate'] as Timestamp).toDate();
+          }
+          if (data['goldAccessDate'] != null) {
+            _goldAccessDate = (data['goldAccessDate'] as Timestamp).toDate();
+          }
+          if (data['silverAccessDate'] != null) {
+            _silverAccessDate = (data['silverAccessDate'] as Timestamp).toDate();
+          }
+          if (data['generalAccessDate'] != null) {
+            _generalAccessDate = (data['generalAccessDate'] as Timestamp).toDate();
+          }
+        }
+      } catch (_) {
+        // Use hardcoded defaults
+      }
     }
   }
 
