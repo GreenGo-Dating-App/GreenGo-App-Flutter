@@ -115,7 +115,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   String _prevTravelerCity = '';
 
   // Grid mode state
-  bool _isGridMode = false;
+  bool _isGridMode = true;
   int _gridColumns = 3; // 2, 3, or 4 columns
   int _gridExtraPurchased = 0; // Number of extra batches purchased
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
@@ -547,21 +547,28 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
         // Grid content
         Expanded(
-          child: GridView.builder(
-            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: _gridColumns,
-              crossAxisSpacing: 3,
-              mainAxisSpacing: 3,
-              childAspectRatio: _gridColumns == 4 ? 0.8 : 0.7,
-            ),
-            itemCount: visibleCount + (hasMore ? 1 : 0),
-            itemBuilder: (context, index) {
-              if (index >= visibleCount) {
-                return _buildLoadMoreCard();
-              }
-              return _buildGridProfileCard(context, visibleCards[index]);
+          child: RefreshIndicator(
+            color: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            onRefresh: () async {
+              refreshWithPreferences(_currentPreferences);
             },
+            child: GridView.builder(
+              padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: _gridColumns,
+                crossAxisSpacing: 3,
+                mainAxisSpacing: 3,
+                childAspectRatio: _gridColumns == 4 ? 0.8 : 0.7,
+              ),
+              itemCount: visibleCount + (hasMore ? 1 : 0),
+              itemBuilder: (context, index) {
+                if (index >= visibleCount) {
+                  return _buildLoadMoreCard();
+                }
+                return _buildGridProfileCard(context, visibleCards[index]);
+              },
+            ),
           ),
         ),
       ],
