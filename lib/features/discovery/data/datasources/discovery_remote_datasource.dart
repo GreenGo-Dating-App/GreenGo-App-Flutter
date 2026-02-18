@@ -18,7 +18,11 @@ abstract class DiscoveryRemoteDataSource {
     required String userId,
     required MatchPreferences preferences,
     int limit = 20,
+    bool forceRefresh = false,
   });
+
+  /// Clears the in-memory discovery cache for a user
+  void clearDiscoveryCache(String userId);
 
   Future<SwipeAction> recordSwipe({
     required String userId,
@@ -73,10 +77,24 @@ abstract class DiscoveryRemoteDataSource {
   Future<DateTime> activateBoost(String userId);
 }
 
+/// Simple container for a cached discovery result
+class _CachedStack {
+  final List<MatchCandidate> candidates;
+  final DateTime fetchedAt;
+  static const ttl = Duration(minutes: 5);
+
+  _CachedStack(this.candidates) : fetchedAt = DateTime.now();
+
+  bool get isValid => DateTime.now().difference(fetchedAt) < ttl;
+}
+
 /// Discovery Remote Data Source Implementation
 class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   final FirebaseFirestore firestore;
   final MatchingRemoteDataSource matchingDataSource;
+
+  // In-memory cache keyed by userId — survives bloc recreation (datasource is singleton)
+  final Map<String, _CachedStack> _cache = {};
 
   DiscoveryRemoteDataSourceImpl({
     required this.firestore,
@@ -84,11 +102,29 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   });
 
   @override
+  void clearDiscoveryCache(String userId) {
+    _cache.remove(userId);
+    debugPrint('[Discovery] Cache cleared for $userId');
+  }
+
+  @override
   Future<List<MatchCandidate>> getDiscoveryStack({
     required String userId,
     required MatchPreferences preferences,
     int limit = 20,
+    bool forceRefresh = false,
   }) async {
+    // Serve from cache when valid and not a forced refresh
+    if (!forceRefresh) {
+      final cached = _cache[userId];
+      if (cached != null && cached.isValid) {
+        debugPrint('[Discovery] Cache hit — ${cached.candidates.length} profiles (${DateTime.now().difference(cached.fetchedAt).inSeconds}s old)');
+        return cached.candidates;
+      }
+    } else {
+      _cache.remove(userId);
+      debugPrint('[Discovery] Cache bypassed (forceRefresh)');
+    }
     // Map discovery gender preference to matching gender list
     // Empty list = no gender filter (show everyone)
     List<String> preferredGenders;
@@ -241,11 +277,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Always add admin/support profile at the beginning if not already swiped
     final swipedUserIds = swipeHistory.keys.toSet();
     final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
-    if (adminCandidate != null) {
-      return [adminCandidate, ...prioritizedCandidates];
-    }
+    final result = adminCandidate != null
+        ? [adminCandidate, ...prioritizedCandidates]
+        : prioritizedCandidates;
 
-    return prioritizedCandidates;
+    // Store in in-memory cache
+    _cache[userId] = _CachedStack(result);
+    debugPrint('[Discovery] Cache stored — ${result.length} profiles for $userId');
+
+    return result;
   }
 
   /// Get swipe history with action types and timestamps

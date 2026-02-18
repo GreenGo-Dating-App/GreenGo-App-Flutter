@@ -13,6 +13,7 @@ abstract class DiscoveryRepository {
     required String userId,
     required MatchPreferences preferences,
     int limit = 20,
+    bool forceRefresh = false,
   });
 
   /// Record a swipe action
