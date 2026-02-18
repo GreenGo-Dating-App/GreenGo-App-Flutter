@@ -301,7 +301,20 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Future<void> _loadAccessData() async {
-    final accessData = await _accessControlService.getCurrentUserAccess();
+    // 1. Fetch latest countdown dates from Firestore (set by admin panel)
+    await AccessControlService.loadCountdownDatesFromFirestore();
+
+    // 2. Recalculate this user's accessDate based on their tier + fresh dates
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser != null) {
+      await _accessControlService.refreshUserAccessDate(
+        currentUser.uid,
+        currentUser.email,
+      ).catchError((_) => null);
+    }
+
+    // 3. Now read the updated access data (force server to get the write we just did)
+    final accessData = await _accessControlService.getCurrentUserAccess(forceServer: true);
     if (mounted && accessData != null) {
       final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
       setState(() {
