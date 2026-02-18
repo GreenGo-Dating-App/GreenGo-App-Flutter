@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -550,8 +551,22 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           child: RefreshIndicator(
             color: AppColors.richGold,
             backgroundColor: AppColors.backgroundCard,
-            onRefresh: () async {
+            onRefresh: () {
+              final completer = Completer<void>();
               refreshWithPreferences(_currentPreferences);
+              // Keep spinner visible until bloc emits a non-loading state
+              StreamSubscription? sub;
+              sub = context.read<DiscoveryBloc>().stream.listen((state) {
+                if (state is! DiscoveryLoading) {
+                  completer.complete();
+                  sub?.cancel();
+                }
+              });
+              // Safety timeout so spinner never hangs
+              return completer.future.timeout(
+                const Duration(seconds: 15),
+                onTimeout: () {},
+              );
             },
             child: GridView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
