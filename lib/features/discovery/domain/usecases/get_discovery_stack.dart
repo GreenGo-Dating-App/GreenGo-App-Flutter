@@ -22,6 +22,7 @@ class GetDiscoveryStack
       userId: params.userId,
       preferences: params.preferences,
       limit: params.limit,
+      forceRefresh: params.forceRefresh,
     );
   }
 }
@@ -30,10 +31,12 @@ class GetDiscoveryStackParams {
   final String userId;
   final MatchPreferences preferences;
   final int limit;
+  final bool forceRefresh;
 
   GetDiscoveryStackParams({
     required this.userId,
     required this.preferences,
     this.limit = 20,
+    this.forceRefresh = false,
   });
 }

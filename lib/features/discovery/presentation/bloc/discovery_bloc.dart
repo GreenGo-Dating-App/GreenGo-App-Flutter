@@ -503,11 +503,40 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     DiscoveryStackRefreshRequested event,
     Emitter<DiscoveryState> emit,
   ) async {
-    // Reload the stack
-    add(DiscoveryStackLoadRequested(
-      userId: event.userId,
-      preferences: event.preferences,
-    ));
+    emit(const DiscoveryLoading());
+
+    _currentUserId = event.userId;
+    _currentPreferences = event.preferences;
+
+    // forceRefresh=true bypasses the in-memory cache (new location, pull-to-refresh, etc.)
+    final result = await getDiscoveryStack(
+      GetDiscoveryStackParams(
+        userId: event.userId,
+        preferences: event.preferences,
+        limit: queueSize,
+        forceRefresh: true,
+      ),
+    );
+
+    result.fold(
+      (failure) => emit(DiscoveryError(failure.message)),
+      (candidates) {
+        if (candidates.isEmpty) {
+          emit(const DiscoveryStackEmpty());
+        } else {
+          final cards = candidates
+              .asMap()
+              .entries
+              .map((entry) => DiscoveryCard(
+                    candidate: entry.value,
+                    position: entry.key,
+                    isFocused: entry.key == 0,
+                  ))
+              .toList();
+          emit(DiscoveryLoaded(cards: cards, currentIndex: 0));
+        }
+      },
+    );
   }
 
   Future<void> _onLoadMore(
