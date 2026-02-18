@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match_candidate.dart';
@@ -72,10 +73,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
     final userProfile = ProfileModel.fromFirestore(userDoc);
 
-    // Fetch ALL profiles from Firestore (no server-side filters to avoid
-    // composite index issues). All filtering is done in code for reliability.
+    // Fetch ALL profiles from Firestore (no server-side filter on accountStatus
+    // since profiles may have null/missing/different-cased accountStatus values)
     final querySnapshot = await firestore
         .collection('profiles')
+        .limit(500)
         .get();
 
     final candidates = <MatchCandidate>[];
@@ -88,11 +90,14 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
 
-        // MANDATORY: Only show active profiles (skip suspended/banned/deleted)
-        if (candidateProfile.accountStatus != 'active') continue;
+        // Skip explicitly suspended/banned/deleted profiles
+        final status = candidateProfile.accountStatus.toLowerCase();
+        if (status == 'suspended' || status == 'banned' || status == 'deleted') {
+          continue;
+        }
 
-        // Optional: Only show verified profiles (if user enabled this preference)
-        if (preferences.showOnlyVerified && !candidateProfile.isVerified) continue;
+        // Verification filter: only show verified profiles
+        if (!candidateProfile.isVerified) continue;
 
         // Must have at least one photo
         if (candidateProfile.photoUrls.isEmpty) continue;
@@ -115,16 +120,19 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         }
 
         // Apply distance filter (skip if either user has no location data)
+        // Use effectiveLocation to respect traveler mode overrides
+        final userLoc = userProfile.effectiveLocation;
+        final candidateLoc = candidateProfile.effectiveLocation;
         double distance = 0.0;
-        if (userProfile.location.latitude != 0 &&
-            userProfile.location.longitude != 0 &&
-            candidateProfile.location.latitude != 0 &&
-            candidateProfile.location.longitude != 0) {
+        if (userLoc.latitude != 0 &&
+            userLoc.longitude != 0 &&
+            candidateLoc.latitude != 0 &&
+            candidateLoc.longitude != 0) {
           distance = featureEngineer.calculateDistance(
-            userProfile.location.latitude,
-            userProfile.location.longitude,
-            candidateProfile.location.latitude,
-            candidateProfile.location.longitude,
+            userLoc.latitude,
+            userLoc.longitude,
+            candidateLoc.latitude,
+            candidateLoc.longitude,
           );
 
           if (distance > preferences.maxDistance) {
@@ -171,10 +179,12 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           isSuperLike: matchScore.overallScore >= 80.0,
         ));
       } catch (e) {
-        // Skip invalid profiles
+        print('[Discovery] Error parsing profile ${doc.id}: $e');
         continue;
       }
     }
+
+    print('[Discovery] Final candidate count: ${candidates.length}');
 
     // Shuffle candidates randomly so users see a different order each time
     candidates.shuffle(Random());

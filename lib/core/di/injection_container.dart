@@ -249,6 +249,8 @@ Future<void> init() async {
       getDiscoveryStack: sl(),
       recordSwipe: sl(),
       undoSwipe: sl(),
+      coinRepository: sl(),
+      discoveryDataSource: sl(),
     ),
   );
 

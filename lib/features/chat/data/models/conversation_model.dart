@@ -33,6 +33,8 @@ class ConversationModel extends Conversation {
     super.supportCategory,
     super.supportSubject,
     super.supportResolvedAt,
+    super.visibleTo,
+    super.superLikeSenderId,
     super.isDeleted,
     super.deletedFor,
   });
@@ -65,6 +67,8 @@ class ConversationModel extends Conversation {
       supportCategory: conversation.supportCategory,
       supportSubject: conversation.supportSubject,
       supportResolvedAt: conversation.supportResolvedAt,
+      visibleTo: conversation.visibleTo,
+      superLikeSenderId: conversation.superLikeSenderId,
       isDeleted: conversation.isDeleted,
       deletedFor: conversation.deletedFor,
     );
@@ -72,18 +76,18 @@ class ConversationModel extends Conversation {
 
   /// Create from Firestore document
   factory ConversationModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
+    final data = doc.data() as Map<String, dynamic>? ?? {};
 
     Message? lastMessage;
     if (data['lastMessage'] != null) {
       final messageData = data['lastMessage'] as Map<String, dynamic>;
       lastMessage = Message(
         messageId: messageData['messageId'] as String? ?? '',
-        matchId: data['matchId'] as String,
+        matchId: data['matchId'] as String? ?? '',
         conversationId: doc.id,
-        senderId: messageData['senderId'] as String,
-        receiverId: messageData['receiverId'] as String,
-        content: messageData['content'] as String,
+        senderId: messageData['senderId'] as String? ?? '',
+        receiverId: messageData['receiverId'] as String? ?? '',
+        content: messageData['content'] as String? ?? '',
         type: MessageTypeExtension.fromString(
             messageData['type'] as String? ?? 'text'),
         sentAt: messageData['sentAt'] != null
@@ -119,8 +123,8 @@ class ConversationModel extends Conversation {
     return ConversationModel(
       conversationId: doc.id,
       matchId: data['matchId'] as String? ?? '',
-      userId1: data['userId1'] as String,
-      userId2: data['userId2'] as String,
+      userId1: data['userId1'] as String? ?? '',
+      userId2: data['userId2'] as String? ?? '',
       lastMessage: lastMessage,
       lastMessageAt: data['lastMessageAt'] != null
           ? (data['lastMessageAt'] as Timestamp).toDate()
@@ -128,7 +132,9 @@ class ConversationModel extends Conversation {
       unreadCount: data['unreadCount'] as int? ?? 0,
       isTyping: data['isTyping'] as bool? ?? false,
       typingUserId: data['typingUserId'] as String?,
-      createdAt: (data['createdAt'] as Timestamp).toDate(),
+      createdAt: data['createdAt'] != null
+          ? (data['createdAt'] as Timestamp).toDate()
+          : DateTime.now(),
       isPinned: data['isPinned'] as bool? ?? false,
       pinnedAt: data['pinnedAt'] != null
           ? (data['pinnedAt'] as Timestamp).toDate()
@@ -155,6 +161,10 @@ class ConversationModel extends Conversation {
       supportResolvedAt: data['supportResolvedAt'] != null
           ? (data['supportResolvedAt'] as Timestamp).toDate()
           : null,
+      visibleTo: data['visibleTo'] != null
+          ? List<String>.from(data['visibleTo'] as List)
+          : null,
+      superLikeSenderId: data['superLikeSenderId'] as String?,
       isDeleted: data['isDeleted'] as bool? ?? false,
       deletedFor: data['deletedFor'] as Map<String, dynamic>?,
     );
@@ -225,6 +235,8 @@ class ConversationModel extends Conversation {
       'supportResolvedAt': supportResolvedAt != null
           ? Timestamp.fromDate(supportResolvedAt!)
           : null,
+      'visibleTo': visibleTo,
+      'superLikeSenderId': superLikeSenderId,
     };
   }
 
@@ -274,6 +286,8 @@ class ConversationModel extends Conversation {
       supportCategory: supportCategory,
       supportSubject: supportSubject,
       supportResolvedAt: supportResolvedAt,
+      visibleTo: visibleTo,
+      superLikeSenderId: superLikeSenderId,
       isDeleted: isDeleted,
       deletedFor: deletedFor,
     );

@@ -125,7 +125,8 @@ class _StoriesScreenState extends State<StoriesScreen>
     if (_currentUserIndex > 0) {
       setState(() {
         _currentUserIndex--;
-        _currentStoryIndex = widget.userStories[_currentUserIndex].activeStories.length - 1;
+        final storyCount = widget.userStories[_currentUserIndex].activeStories.length;
+        _currentStoryIndex = storyCount > 0 ? storyCount - 1 : 0;
       });
       _pageController.previousPage(
         duration: const Duration(milliseconds: 300),
@@ -262,7 +263,9 @@ class _StoriesScreenState extends State<StoriesScreen>
                         ? NetworkImage(currentUser.userPhotoUrl!)
                         : null,
                     child: currentUser.userPhotoUrl == null
-                        ? Text(currentUser.userDisplayName[0].toUpperCase())
+                        ? Text(currentUser.userDisplayName.isNotEmpty
+                            ? currentUser.userDisplayName[0].toUpperCase()
+                            : '?')
                         : null,
                   ),
                   const SizedBox(width: 12),
@@ -529,7 +532,9 @@ class StoriesRow extends StatelessWidget {
                 backgroundColor: AppColors.backgroundCard,
                 child: user.userPhotoUrl == null
                     ? Text(
-                        user.userDisplayName[0].toUpperCase(),
+                        user.userDisplayName.isNotEmpty
+                            ? user.userDisplayName[0].toUpperCase()
+                            : '?',
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 18,

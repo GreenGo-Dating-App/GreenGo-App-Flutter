@@ -419,9 +419,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       body: TabBarView(
         controller: _tabController,
         children: [
-          _buildBuyCoinsTab(),
-          _buildMembershipTab(),
-          _buildVideoCoinsTab(),
+          _safeBuild(_buildBuyCoinsTab, 'Coins'),
+          _safeBuild(_buildMembershipTab, 'Membership'),
+          _safeBuild(_buildVideoCoinsTab, 'Video'),
         ],
       ),
       ),
@@ -497,11 +497,56 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
+  /// Safely build a tab — catches any exception and shows a visible error instead of blank white
+  Widget _safeBuild(Widget Function() builder, String tabName) {
+    try {
+      return builder();
+    } catch (e, stack) {
+      debugPrint('[CoinShop] Error building $tabName tab: $e\n$stack');
+      return Container(
+        color: const Color(0xFF1A1A1A),
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.warning_amber_rounded, color: Colors.orange, size: 48),
+                const SizedBox(height: 16),
+                Text(
+                  '$tabName tab error',
+                  style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  e.toString(),
+                  style: const TextStyle(color: Colors.white60, fontSize: 11),
+                  textAlign: TextAlign.center,
+                  maxLines: 6,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton.icon(
+                  onPressed: () => setState(() {}),
+                  icon: const Icon(Icons.refresh),
+                  label: const Text('Retry'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFFFD700),
+                    foregroundColor: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+  }
+
   Widget _buildBuyCoinsTab() {
-    // Directly render from cached packages — no BLoC dependency at render time.
-    // _cachedPackages is pre-populated with CoinPackages.standardPackages in initState,
-    // and updated by the top-level BlocListener when packages load from server.
-    return _buildPackageList(_cachedPackages, _cachedPromotions);
+    final safePromotions = _cachedPromotions.whereType<CoinPromotion>().toList();
+    return _buildPackageList(_cachedPackages, safePromotions);
   }
 
   Widget _buildMembershipTab() {

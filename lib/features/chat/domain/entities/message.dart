@@ -170,6 +170,8 @@ enum MessageType {
   voiceNote,
   sticker,
   system,
+  albumShare,
+  albumRevoke,
 }
 
 /// Extension for MessageStatus
@@ -225,6 +227,10 @@ extension MessageTypeExtension on MessageType {
         return 'sticker';
       case MessageType.system:
         return 'system';
+      case MessageType.albumShare:
+        return 'album_share';
+      case MessageType.albumRevoke:
+        return 'album_revoke';
     }
   }
 
@@ -244,6 +250,10 @@ extension MessageTypeExtension on MessageType {
         return MessageType.sticker;
       case 'system':
         return MessageType.system;
+      case 'album_share':
+        return MessageType.albumShare;
+      case 'album_revoke':
+        return MessageType.albumRevoke;
       default:
         return MessageType.text;
     }

@@ -565,9 +565,9 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                             fontSize: 13,
                           ),
                         ),
-                      if (profile.location.city.isNotEmpty)
+                      if (profile.effectiveLocation.city.isNotEmpty)
                         Text(
-                          profile.location.city,
+                          profile.effectiveLocation.city,
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 12,

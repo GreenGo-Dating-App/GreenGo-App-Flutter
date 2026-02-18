@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/get_profile.dart';
 import '../../domain/usecases/update_profile.dart';
@@ -77,6 +78,40 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     ProfilePhotoUploadRequested event,
     Emitter<ProfileState> emit,
   ) async {
+    // Private photos skip validation (NSFW allowed in private/chat)
+    if (!event.isPrivate) {
+      emit(const ProfilePhotoValidating());
+
+      final validationService = PhotoValidationService();
+      PhotoValidationResult validationResult;
+
+      if (event.isMainPhoto) {
+        // Main photo: must have face + no NSFW
+        validationResult =
+            await validationService.validateMainPhoto(event.photo);
+        if (!validationResult.isValid) {
+          emit(ProfilePhotoValidationFailed(
+              errorCode: validationResult.errorCode));
+          return;
+        }
+        if (!validationResult.hasFace) {
+          emit(const ProfilePhotoValidationFailed(
+              errorCode: PhotoValidationError.mainNoFace));
+          return;
+        }
+      } else {
+        // Other public photos: no NSFW (no face required)
+        validationResult =
+            await validationService.validatePublicPhoto(event.photo);
+        if (!validationResult.isValid) {
+          emit(ProfilePhotoValidationFailed(
+              errorCode: validationResult.errorCode));
+          return;
+        }
+      }
+    }
+
+    // Validation passed (or private photo) — upload
     emit(const ProfileLoading());
 
     final result = await uploadPhoto(

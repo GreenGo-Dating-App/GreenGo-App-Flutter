@@ -315,6 +315,34 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 compact: true,
                               ),
                             ],
+                            // Traveler badge
+                            if (widget.profile.isTravelerActive) ...[
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                decoration: BoxDecoration(
+                                  gradient: const LinearGradient(
+                                    colors: [Color(0xFF1E88E5), Color(0xFF42A5F5)],
+                                  ),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    const Icon(Icons.flight, color: Colors.white, size: 12),
+                                    const SizedBox(width: 4),
+                                    Text(
+                                      AppLocalizations.of(context)?.travelerBadge ?? 'Traveler',
+                                      style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ],
                         ),
 
@@ -346,18 +374,20 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
                         const SizedBox(height: 12),
 
-                        // Location
+                        // Location — uses effectiveLocation to show traveler city when active
                         if (widget.profile.location != null)
                           Row(
                             children: [
-                              const Icon(
-                                Icons.location_on,
-                                color: AppColors.textTertiary,
+                              Icon(
+                                widget.profile.isTravelerActive ? Icons.flight : Icons.location_on,
+                                color: widget.profile.isTravelerActive
+                                    ? const Color(0xFF42A5F5)
+                                    : AppColors.textTertiary,
                                 size: 16,
                               ),
                               const SizedBox(width: 4),
                               Text(
-                                widget.profile.location!.displayAddress,
+                                widget.profile.effectiveLocation.displayAddress,
                                 style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 16,

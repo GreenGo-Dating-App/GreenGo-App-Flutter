@@ -1,3 +1,4 @@
+import 'package:equatable/equatable.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -123,6 +124,36 @@ class DiscoveryRewindUnavailable extends DiscoveryState {
     required this.reason,
     required this.cards,
     required this.currentIndex,
+  });
+}
+
+/// Insufficient coins for a feature
+class DiscoveryInsufficientCoins extends DiscoveryState {
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+  final int required;
+  final int available;
+  final String featureName;
+
+  const DiscoveryInsufficientCoins({
+    required this.cards,
+    required this.currentIndex,
+    required this.required,
+    required this.available,
+    this.featureName = 'Super Like',
+  });
+}
+
+/// Boost activated successfully
+class DiscoveryBoostActivated extends DiscoveryState {
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+  final DateTime expiry;
+
+  const DiscoveryBoostActivated({
+    required this.cards,
+    required this.currentIndex,
+    required this.expiry,
   });
 }
 

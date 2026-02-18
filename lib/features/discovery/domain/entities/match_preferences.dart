@@ -11,6 +11,7 @@ class MatchPreferences extends Equatable {
   final List<String> dealBreakers;
   final List<String> preferredOrientations; // empty = show all
   final List<String> preferredCountries; // empty = show all
+  final bool sortByDistance; // true = sort closest first
 
   const MatchPreferences({
     required this.userId,
@@ -23,6 +24,7 @@ class MatchPreferences extends Equatable {
     this.dealBreakers = const [],
     this.preferredOrientations = const [],
     this.preferredCountries = const [],
+    this.sortByDistance = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -52,6 +54,7 @@ class MatchPreferences extends Equatable {
     List<String>? dealBreakers,
     List<String>? preferredOrientations,
     List<String>? preferredCountries,
+    bool? sortByDistance,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -64,6 +67,7 @@ class MatchPreferences extends Equatable {
       dealBreakers: dealBreakers ?? this.dealBreakers,
       preferredOrientations: preferredOrientations ?? this.preferredOrientations,
       preferredCountries: preferredCountries ?? this.preferredCountries,
+      sortByDistance: sortByDistance ?? this.sortByDistance,
     );
   }
 
@@ -80,6 +84,7 @@ class MatchPreferences extends Equatable {
       'dealBreakers': dealBreakers,
       'preferredOrientations': preferredOrientations,
       'preferredCountries': preferredCountries,
+      'sortByDistance': sortByDistance,
     };
   }
 
@@ -105,6 +110,7 @@ class MatchPreferences extends Equatable {
               ?.map((e) => e as String)
               .toList() ??
           const [],
+      sortByDistance: map['sortByDistance'] as bool? ?? false,
     );
   }
 
@@ -120,5 +126,6 @@ class MatchPreferences extends Equatable {
         dealBreakers,
         preferredOrientations,
         preferredCountries,
+        sortByDistance,
       ];
 }

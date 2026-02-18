@@ -55,6 +55,7 @@ class _VideoCallScreenState extends State<VideoCallScreen>
 
   void _startCallTimer() {
     _callTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (!mounted) { timer.cancel(); return; }
       setState(() {
         _callDuration = Duration(seconds: timer.tick);
       });

@@ -143,6 +143,7 @@ class VideoCallBloc extends Bloc<VideoCallEvent, VideoCallState> {
     on<VideoCallConnected>(_onConnected);
     on<VideoCallLoadHistory>(_onLoadHistory);
     on<VideoCallSubmitFeedback>(_onSubmitFeedback);
+    on<VideoCallDurationTick>(_onDurationTick);
   }
 
   /// Start listening for incoming calls
@@ -566,6 +567,9 @@ class VideoCallBloc extends Bloc<VideoCallEvent, VideoCallState> {
       await _engine!.startPreview();
 
       // Join channel
+      if (_currentChannelId == null || _localUid == null) {
+        throw Exception('Channel ID or UID not configured');
+      }
       await _engine!.joinChannel(
         token: _agoraToken ?? '',
         channelId: _currentChannelId!,
@@ -605,14 +609,24 @@ class VideoCallBloc extends Bloc<VideoCallEvent, VideoCallState> {
     _callDuration = Duration.zero;
   }
 
+  /// Handle duration tick from timer
+  void _onDurationTick(
+    VideoCallDurationTick event,
+    Emitter<VideoCallState> emit,
+  ) {
+    if (state is VideoCallActive) {
+      final currentState = state as VideoCallActive;
+      emit(currentState.copyWith(callDuration: event.duration));
+    }
+  }
+
   /// Start call duration timer
   void _startDurationTimer() {
     _callDuration = Duration.zero;
     _durationTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       _callDuration += const Duration(seconds: 1);
-      if (state is VideoCallActive) {
-        final currentState = state as VideoCallActive;
-        emit(currentState.copyWith(callDuration: _callDuration));
+      if (!isClosed) {
+        add(VideoCallDurationTick(_callDuration));
       }
     });
   }

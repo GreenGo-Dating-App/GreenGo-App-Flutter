@@ -31,11 +31,12 @@ class AuthUnauthenticated extends AuthState {
 
 class AuthError extends AuthState {
   final String message;
+  final DateTime timestamp;
 
-  const AuthError(this.message);
+  AuthError(this.message) : timestamp = DateTime.now();
 
   @override
-  List<Object> get props => [message];
+  List<Object> get props => [message, timestamp];
 }
 
 class AuthPasswordResetSent extends AuthState {

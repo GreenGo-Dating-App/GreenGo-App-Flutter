@@ -207,7 +207,7 @@ class MatchCardWidget extends StatelessWidget {
     if (profile == null) return 'Match';
     final name = profile!.displayName;
     final age = profile!.age;
-    final city = profile!.location.city;
+    final city = profile!.effectiveLocation.city;
 
     final parts = <String>[name];
     if (age > 0) parts.add('$age');

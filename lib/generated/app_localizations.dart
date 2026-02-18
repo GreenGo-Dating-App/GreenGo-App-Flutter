@@ -1376,13 +1376,13 @@ abstract class AppLocalizations {
   /// No description provided for @authErrorUserNotFound.
   ///
   /// In en, this message translates to:
-  /// **'No account found with this email. Please check your email or sign up.'**
+  /// **'No account found with this email or nickname. Please check and try again, or sign up.'**
   String get authErrorUserNotFound;
 
   /// No description provided for @authErrorWrongPassword.
   ///
   /// In en, this message translates to:
-  /// **'Incorrect password. Please try again.'**
+  /// **'Wrong password. Please try again.'**
   String get authErrorWrongPassword;
 
   /// No description provided for @authErrorInvalidEmail.
@@ -1412,7 +1412,7 @@ abstract class AppLocalizations {
   /// No description provided for @authErrorNetworkError.
   ///
   /// In en, this message translates to:
-  /// **'Network error. Please check your internet connection.'**
+  /// **'No internet connection. Please check your connection and try again.'**
   String get authErrorNetworkError;
 
   /// No description provided for @authErrorGeneric.
@@ -1424,8 +1424,44 @@ abstract class AppLocalizations {
   /// No description provided for @authErrorInvalidCredentials.
   ///
   /// In en, this message translates to:
-  /// **'Invalid email or password. Please try again.'**
+  /// **'Wrong email/nickname or password. Please check your credentials and try again.'**
   String get authErrorInvalidCredentials;
+
+  /// No description provided for @connectionErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No Internet Connection'**
+  String get connectionErrorTitle;
+
+  /// No description provided for @connectionErrorMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check your internet connection and try again.'**
+  String get connectionErrorMessage;
+
+  /// No description provided for @serverUnavailableTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Server Unavailable'**
+  String get serverUnavailableTitle;
+
+  /// No description provided for @serverUnavailableMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Our servers are temporarily unavailable. Please try again in a few moments.'**
+  String get serverUnavailableMessage;
+
+  /// No description provided for @authenticationErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Login Failed'**
+  String get authenticationErrorTitle;
+
+  /// No description provided for @dismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get dismiss;
 
   /// No description provided for @accountCreatedSuccess.
   ///
@@ -3772,6 +3808,336 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'About Me'**
   String get aboutMeTitle;
+
+  /// No description provided for @travelerBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler'**
+  String get travelerBadge;
+
+  /// No description provided for @travelerModeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler Mode'**
+  String get travelerModeTitle;
+
+  /// No description provided for @travelerModeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Appear in a different city\'s discovery feed for 24 hours'**
+  String get travelerModeDescription;
+
+  /// No description provided for @travelerModeActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler mode active'**
+  String get travelerModeActive;
+
+  /// No description provided for @travelerModeActivated.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler mode activated! Appearing in {city} for 24 hours.'**
+  String travelerModeActivated(String city);
+
+  /// No description provided for @travelerModeDeactivated.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler mode deactivated. Back to your real location.'**
+  String get travelerModeDeactivated;
+
+  /// No description provided for @selectTravelLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Travel Location'**
+  String get selectTravelLocation;
+
+  /// No description provided for @searchCityPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Search city, address, or place...'**
+  String get searchCityPlaceholder;
+
+  /// No description provided for @useCurrentGpsLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Use my current GPS location'**
+  String get useCurrentGpsLocation;
+
+  /// No description provided for @confirmLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Location'**
+  String get confirmLocation;
+
+  /// No description provided for @changeLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Change location'**
+  String get changeLocation;
+
+  /// No description provided for @travelerLocationInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'You will appear in discovery results for this location for 24 hours.'**
+  String get travelerLocationInfo;
+
+  /// No description provided for @searchForCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for a city or use GPS'**
+  String get searchForCity;
+
+  /// No description provided for @travelerSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile will appear in that location\'s discovery feed for 24 hours with a Traveler badge.'**
+  String get travelerSearchHint;
+
+  /// No description provided for @incognitoMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Incognito Mode'**
+  String get incognitoMode;
+
+  /// No description provided for @incognitoModeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide your profile from discovery'**
+  String get incognitoModeDescription;
+
+  /// No description provided for @myUsage.
+  ///
+  /// In en, this message translates to:
+  /// **'My Usage'**
+  String get myUsage;
+
+  /// No description provided for @boostProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost Profile'**
+  String get boostProfile;
+
+  /// No description provided for @boostActivated.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost activated for 30 minutes!'**
+  String get boostActivated;
+
+  /// No description provided for @superLike.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Like'**
+  String get superLike;
+
+  /// No description provided for @undoSwipe.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo Swipe'**
+  String get undoSwipe;
+
+  /// No description provided for @freeActionsRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} free actions remaining today'**
+  String freeActionsRemaining(int count);
+
+  /// No description provided for @coinsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} coins required'**
+  String coinsRequired(int amount);
+
+  /// No description provided for @tierFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get tierFree;
+
+  /// No description provided for @dailySwipeLimitReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily swipe limit reached. Upgrade for more swipes!'**
+  String get dailySwipeLimitReached;
+
+  /// No description provided for @noOthersToSee.
+  ///
+  /// In en, this message translates to:
+  /// **'There\'s no others to see'**
+  String get noOthersToSee;
+
+  /// No description provided for @checkBackLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Check back later for new people, or adjust your preferences'**
+  String get checkBackLater;
+
+  /// No description provided for @adjustPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust Preferences'**
+  String get adjustPreferences;
+
+  /// No description provided for @noPreviousProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'No previous profile to rewind'**
+  String get noPreviousProfile;
+
+  /// No description provided for @cantUndoMatched.
+  ///
+  /// In en, this message translates to:
+  /// **'Can\'t undo — you already matched!'**
+  String get cantUndoMatched;
+
+  /// No description provided for @showingProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} profiles'**
+  String showingProfiles(int count);
+
+  /// No description provided for @seeMoreProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'See {count} more'**
+  String seeMoreProfiles(int count);
+
+  /// No description provided for @coinsCost.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} coins'**
+  String coinsCost(int amount);
+
+  /// No description provided for @seeMoreProfilesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See More Profiles'**
+  String get seeMoreProfilesTitle;
+
+  /// No description provided for @unlockMoreProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock {count} more profiles in grid view for {cost} coins.'**
+  String unlockMoreProfiles(int count, int cost);
+
+  /// No description provided for @unlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock'**
+  String get unlock;
+
+  /// No description provided for @buyCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy Coins'**
+  String get buyCoins;
+
+  /// No description provided for @needCoinsForProfiles.
+  ///
+  /// In en, this message translates to:
+  /// **'You need {amount} coins to unlock more profiles.'**
+  String needCoinsForProfiles(int amount);
+
+  /// No description provided for @matchPercentage.
+  ///
+  /// In en, this message translates to:
+  /// **'{percentage} match'**
+  String matchPercentage(String percentage);
+
+  /// No description provided for @youGotSuperLike.
+  ///
+  /// In en, this message translates to:
+  /// **'You got a Super Like!'**
+  String get youGotSuperLike;
+
+  /// No description provided for @superLikedYou.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} super liked you!'**
+  String superLikedYou(String name);
+
+  /// No description provided for @photoValidating.
+  ///
+  /// In en, this message translates to:
+  /// **'Validating photo...'**
+  String get photoValidating;
+
+  /// No description provided for @photoNotAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Not Accepted'**
+  String get photoNotAccepted;
+
+  /// No description provided for @photoMainNoFace.
+  ///
+  /// In en, this message translates to:
+  /// **'Your main photo must show your face clearly. No face was detected in this photo.'**
+  String get photoMainNoFace;
+
+  /// No description provided for @photoMainNotForward.
+  ///
+  /// In en, this message translates to:
+  /// **'Please use a photo where your face is clearly visible and facing forward.'**
+  String get photoMainNotForward;
+
+  /// No description provided for @photoExplicitNudity.
+  ///
+  /// In en, this message translates to:
+  /// **'This photo appears to contain nudity or explicit content. Public photos must be appropriate and fully clothed.'**
+  String get photoExplicitNudity;
+
+  /// No description provided for @photoExplicitContent.
+  ///
+  /// In en, this message translates to:
+  /// **'This photo may contain inappropriate content. Public photos must not show nudity, underwear, or explicit content.'**
+  String get photoExplicitContent;
+
+  /// No description provided for @photoTooMuchSkin.
+  ///
+  /// In en, this message translates to:
+  /// **'This photo shows too much skin exposure. Please use a photo where you are appropriately dressed.'**
+  String get photoTooMuchSkin;
+
+  /// No description provided for @photoNotAllowedPublic.
+  ///
+  /// In en, this message translates to:
+  /// **'This photo is not allowed on your public profile.'**
+  String get photoNotAllowedPublic;
+
+  /// No description provided for @photoTooLarge.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo is too large. Maximum size is 10MB.'**
+  String get photoTooLarge;
+
+  /// No description provided for @photoMustHaveOne.
+  ///
+  /// In en, this message translates to:
+  /// **'You must have at least one public photo with your face visible.'**
+  String get photoMustHaveOne;
+
+  /// No description provided for @photoDeleteMainWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'This is your main photo. The next photo will become your main photo (must show your face). Continue?'**
+  String get photoDeleteMainWarning;
+
+  /// No description provided for @photoDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this photo?'**
+  String get photoDeleteConfirm;
+
+  /// No description provided for @photoMaxPublic.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum 6 public photos allowed'**
+  String get photoMaxPublic;
+
+  /// No description provided for @photoMaxPrivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum 6 private photos allowed'**
+  String get photoMaxPrivate;
 }
 
 class _AppLocalizationsDelegate

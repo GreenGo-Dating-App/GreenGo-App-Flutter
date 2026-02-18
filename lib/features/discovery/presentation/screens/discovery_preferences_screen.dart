@@ -818,19 +818,15 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   subtitle: const Text(
-                    'Show only profiles with verified photos',
+                    'All profiles must be verified',
                     style: TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
                     ),
                   ),
-                  value: _preferences.onlyVerified,
+                  value: true,
                   activeColor: AppColors.richGold,
-                  onChanged: (bool value) {
-                    _updatePreferences(
-                      _preferences.copyWith(onlyVerified: value),
-                    );
-                  },
+                  onChanged: null,
                 ),
                 const Divider(color: AppColors.divider),
                 SwitchListTile(

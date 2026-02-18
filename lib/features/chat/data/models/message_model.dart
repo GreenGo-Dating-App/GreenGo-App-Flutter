@@ -50,15 +50,15 @@ class MessageModel extends Message {
 
   /// Create from Firestore document
   factory MessageModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
+    final data = doc.data() as Map<String, dynamic>? ?? {};
 
     return MessageModel(
       messageId: doc.id,
-      matchId: data['matchId'] as String,
-      conversationId: data['conversationId'] as String,
-      senderId: data['senderId'] as String,
-      receiverId: data['receiverId'] as String,
-      content: data['content'] as String,
+      matchId: data['matchId'] as String? ?? '',
+      conversationId: data['conversationId'] as String? ?? '',
+      senderId: data['senderId'] as String? ?? '',
+      receiverId: data['receiverId'] as String? ?? '',
+      content: data['content'] as String? ?? '',
       type: MessageTypeExtension.fromString(data['type'] as String),
       sentAt: (data['sentAt'] as Timestamp).toDate(),
       deliveredAt: data['deliveredAt'] != null

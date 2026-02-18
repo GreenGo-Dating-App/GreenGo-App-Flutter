@@ -1,140 +1,348 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Helper functions
-    function isAuthenticated() {
+
+    // ============================================================================
+    // HELPER FUNCTIONS
+    // ============================================================================
+
+    // Check if user is authenticated
+    function isSignedIn() {
       return request.auth != null;
     }
 
+    // Check if user owns the resource
     function isOwner(userId) {
-      return isAuthenticated() && request.auth.uid == userId;
+      return isSignedIn() && request.auth.uid == userId;
     }
 
-    // Users collection
+    // Check if user is admin
+    function isAdmin() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // ============================================================================
+    // USERS COLLECTION
+    // ============================================================================
     match /users/{userId} {
-      allow read: if isAuthenticated();
-      allow write: if isOwner(userId);
-
-      // User's private data
-      match /private/{document=**} {
-        allow read, write: if isOwner(userId);
-      }
-    }
-
-    // Matches collection
-    match /matches/{matchId} {
-      allow read: if isAuthenticated() &&
-                     (request.auth.uid == resource.data.user1Id ||
-                      request.auth.uid == resource.data.user2Id);
-      allow create: if isAuthenticated();
-      allow update: if isAuthenticated() &&
-                       (request.auth.uid == resource.data.user1Id ||
-                        request.auth.uid == resource.data.user2Id);
-    }
-
-    // Messages collection
-    match /messages/{messageId} {
-      allow read: if isAuthenticated() &&
-                     (request.auth.uid == resource.data.senderId ||
-                      request.auth.uid == resource.data.receiverId);
-      allow create: if isAuthenticated() && request.auth.uid == request.resource.data.senderId;
-    }
-
-    // Notifications collection
-    match /notifications/{notificationId} {
-      allow read: if isAuthenticated() && request.auth.uid == resource.data.userId;
-      allow create: if isAuthenticated();
-      allow update, delete: if isAuthenticated() && request.auth.uid == resource.data.userId;
+      allow read: if isSignedIn();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId);
+      allow delete: if isOwner(userId);
     }
 
     // ============================================================================
-    // APP CONFIG COLLECTION - Version control and app settings
-    // ============================================================================
-    // Read: Anyone can read (needed for version checks before login)
-    // Write: Admin only via Firebase Admin SDK (no client writes)
-    match /app_config/{configId} {
-      allow read: if true;
-      allow write: if false;  // Admin SDK only - no client writes
-    }
-
-    // ============================================================================
-    // FEATURE FLAGS COLLECTION
-    // ============================================================================
-    match /feature_flags/{flagId} {
-      allow read: if true;
-      allow write: if false;  // Admin SDK only
-    }
-
-    // ============================================================================
-    // PROFILES COLLECTION - User dating profiles
+    // PROFILES COLLECTION
     // ============================================================================
     match /profiles/{profileId} {
-      // Anyone logged in can read profiles (for discovery)
-      allow read: if isAuthenticated();
-      // Only owner can create/update their profile
-      allow create: if isAuthenticated() && request.auth.uid == profileId;
+      // Anyone signed in can read profiles (for discovery/matching)
+      allow read: if isSignedIn();
+      // Users can create/update/delete their own profile
+      allow create: if isOwner(profileId);
       allow update: if isOwner(profileId);
-      // No delete - soft delete via status field
-      allow delete: if false;
+      allow delete: if isOwner(profileId);
     }
 
     // ============================================================================
-    // LIKES COLLECTION - Track user likes
+    // MATCHES COLLECTION
+    // ============================================================================
+    match /matches/{matchId} {
+      // Authenticated users can read/write matches
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // LIKES COLLECTION
     // ============================================================================
     match /likes/{likeId} {
-      allow read: if isAuthenticated() &&
-                     (request.auth.uid == resource.data.fromUserId ||
-                      request.auth.uid == resource.data.toUserId);
-      allow create: if isAuthenticated() && request.auth.uid == request.resource.data.fromUserId;
-      allow delete: if isAuthenticated() && request.auth.uid == resource.data.fromUserId;
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
     }
 
     // ============================================================================
     // CONVERSATIONS COLLECTION
     // ============================================================================
     match /conversations/{conversationId} {
-      allow read: if isAuthenticated() &&
-                     request.auth.uid in resource.data.participants;
-      allow create: if isAuthenticated();
-      allow update: if isAuthenticated() &&
-                       request.auth.uid in resource.data.participants;
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
 
-      // Messages subcollection
+      // MESSAGES SUBCOLLECTION
       match /messages/{messageId} {
-        allow read: if isAuthenticated() &&
-                       request.auth.uid in get(/databases/$(database)/documents/conversations/$(conversationId)).data.participants;
-        allow create: if isAuthenticated() &&
-                         request.auth.uid == request.resource.data.senderId;
+        allow read: if isSignedIn();
+        allow create: if isSignedIn();
+        allow update: if isSignedIn();
+        allow delete: if isSignedIn();
       }
     }
 
     // ============================================================================
-    // SUBSCRIPTIONS COLLECTION - In-app purchases
+    // SUBSCRIPTIONS COLLECTION
     // ============================================================================
-    match /subscriptions/{userId} {
-      allow read: if isOwner(userId);
-      allow write: if false;  // Backend only via webhooks
+    match /subscriptions/{subscriptionId} {
+      allow read: if isSignedIn();
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // TRANSACTIONS COLLECTION (GreenGoCoins)
+    // ============================================================================
+    match /transactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // REPORTS COLLECTION
+    // ============================================================================
+    match /reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn();
+      allow update: if isAdmin();
+      allow delete: if false;
     }
 
     // ============================================================================
     // BLOCKED USERS COLLECTION
     // ============================================================================
     match /blockedUsers/{blockId} {
-      allow read: if isAuthenticated() && request.auth.uid == resource.data.blockerId;
-      allow create: if isAuthenticated() && request.auth.uid == request.resource.data.blockerId;
-      allow delete: if isAuthenticated() && request.auth.uid == resource.data.blockerId;
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
     }
 
     // ============================================================================
-    // REPORTS COLLECTION - User reports
+    // NOTIFICATIONS COLLECTION
     // ============================================================================
-    match /reports/{reportId} {
-      // Users can only read their own reports
-      allow read: if isAuthenticated() && request.auth.uid == resource.data.reporterId;
-      // Anyone can create a report
-      allow create: if isAuthenticated() && request.auth.uid == request.resource.data.reporterId;
-      // No updates or deletes
-      allow update, delete: if false;
+    match /notifications/{notificationId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // COIN BALANCES COLLECTION
+    // ============================================================================
+    match /coin_balances/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION
+    // ============================================================================
+    match /coin_transactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // USER LEVELS COLLECTION (Gamification/Leaderboard)
+    // ============================================================================
+    match /user_levels/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // GAMIFICATION COLLECTIONS
+    // ============================================================================
+    match /achievement_progress/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    match /challenge_progress/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /xp_transactions/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    match /seasonal_events/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // ALBUM ACCESS COLLECTION
+    // ============================================================================
+    match /album_access/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // SWIPES / DISCOVERY COLLECTION
+    // ============================================================================
+    match /swipes/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    match /discovery_queue/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // CONVERSATION EXPIRY COLLECTION
+    // ============================================================================
+    match /conversation_expiry/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // PHOTO LIKES COLLECTION
+    // ============================================================================
+    match /photo_likes/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // ANALYTICS COLLECTION (Admin only)
+    // ============================================================================
+    match /analytics/{document=**} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // DAILY USAGE COLLECTION (Usage Limits tracking)
+    // ============================================================================
+    match /dailyUsage/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+
+      match /days/{dayId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+    }
+
+    // ============================================================================
+    // COIN BALANCES COLLECTION (alternate path)
+    // ============================================================================
+    match /coinBalances/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN GIFTS COLLECTION
+    // ============================================================================
+    match /coinGifts/{giftId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION (alternate path)
+    // ============================================================================
+    match /coinTransactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN PROMOTIONS COLLECTION
+    // ============================================================================
+    match /coinPromotions/{promotionId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // CLAIMED REWARDS COLLECTION
+    // ============================================================================
+    match /claimedRewards/{rewardId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN ORDERS COLLECTION
+    // ============================================================================
+    match /coinOrders/{orderId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // MEMBERSHIPS COLLECTION
+    // ============================================================================
+    match /memberships/{membershipId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // LEGAL DOCUMENTS COLLECTION
+    // ============================================================================
+    match /legalDocuments/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // TIER CONFIGS COLLECTION
+    // ============================================================================
+    match /tierConfigs/{configId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // CATCH-ALL for any other collections used by the app
+    // ============================================================================
+    match /{document=**} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn();
     }
   }
 }

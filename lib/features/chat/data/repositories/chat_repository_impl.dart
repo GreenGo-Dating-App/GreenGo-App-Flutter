@@ -51,6 +51,7 @@ class ChatRepositoryImpl implements ChatRepository {
     required String receiverId,
     required String content,
     required MessageType type,
+    Map<String, dynamic>? metadata,
   }) async {
     try {
       final message = await remoteDataSource.sendMessage(
@@ -59,6 +60,7 @@ class ChatRepositoryImpl implements ChatRepository {
         receiverId: receiverId,
         content: content,
         type: type,
+        metadata: metadata,
       );
       return Right(message.toEntity());
     } catch (e) {

@@ -585,17 +585,24 @@ class GamificationRemoteDataSourceImpl
   Future<SeasonalEventModel?> getActiveSeasonalEvent() async {
     final now = DateTime.now();
 
+    // Firestore only allows inequality on one field per query,
+    // so filter startDate server-side and endDate client-side
     final snapshot = await _seasonalEventsCollection
         .where('startDate', isLessThanOrEqualTo: Timestamp.fromDate(now))
-        .where('endDate', isGreaterThanOrEqualTo: Timestamp.fromDate(now))
-        .limit(1)
         .get();
 
-    if (snapshot.docs.isEmpty) {
+    final nowTimestamp = Timestamp.fromDate(now);
+    final activeDocs = snapshot.docs.where((doc) {
+      final data = doc.data() as Map<String, dynamic>?;
+      final endDate = data?['endDate'] as Timestamp?;
+      return endDate != null && endDate.compareTo(nowTimestamp) >= 0;
+    }).toList();
+
+    if (activeDocs.isEmpty) {
       return null;
     }
 
-    return SeasonalEventModel.fromFirestore(snapshot.docs.first);
+    return SeasonalEventModel.fromFirestore(activeDocs.first);
   }
 
   @override

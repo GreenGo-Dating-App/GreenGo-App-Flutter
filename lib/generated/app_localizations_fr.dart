@@ -697,7 +697,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get authErrorUserNotFound =>
-      'Aucun compte trouvé avec cet e-mail. Veuillez vérifier votre e-mail ou vous inscrire.';
+      'Aucun compte trouvé avec cet e-mail ou pseudo. Vérifiez et réessayez, ou inscrivez-vous.';
 
   @override
   String get authErrorWrongPassword =>
@@ -721,15 +721,34 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get authErrorNetworkError =>
-      'Erreur réseau. Veuillez vérifier votre connexion internet.';
+      'Pas de connexion internet. Vérifiez votre connexion et réessayez.';
 
   @override
-  String get authErrorGeneric =>
-      'Une erreur s\'est produite. Veuillez réessayer.';
+  String get authErrorGeneric => 'Une erreur est survenue. Veuillez réessayer.';
 
   @override
   String get authErrorInvalidCredentials =>
-      'E-mail ou mot de passe invalide. Veuillez réessayer.';
+      'E-mail/pseudo ou mot de passe incorrect. Vérifiez vos identifiants et réessayez.';
+
+  @override
+  String get connectionErrorTitle => 'Pas de Connexion Internet';
+
+  @override
+  String get connectionErrorMessage =>
+      'Vérifiez votre connexion internet et réessayez.';
+
+  @override
+  String get serverUnavailableTitle => 'Serveur Indisponible';
+
+  @override
+  String get serverUnavailableMessage =>
+      'Nos serveurs sont temporairement indisponibles. Veuillez réessayer dans quelques instants.';
+
+  @override
+  String get authenticationErrorTitle => 'Échec de Connexion';
+
+  @override
+  String get dismiss => 'Fermer';
 
   @override
   String get accountCreatedSuccess =>
@@ -2069,4 +2088,207 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get aboutMeTitle => 'À propos de moi';
+
+  @override
+  String get travelerBadge => 'Voyageur';
+
+  @override
+  String get travelerModeTitle => 'Mode Voyageur';
+
+  @override
+  String get travelerModeDescription =>
+      'Apparaissez dans le fil de découverte d\'une autre ville pendant 24 heures';
+
+  @override
+  String get travelerModeActive => 'Mode voyageur actif';
+
+  @override
+  String travelerModeActivated(String city) {
+    return 'Mode voyageur activé ! Vous apparaissez à $city pendant 24 heures.';
+  }
+
+  @override
+  String get travelerModeDeactivated =>
+      'Mode voyageur désactivé. Retour à votre emplacement réel.';
+
+  @override
+  String get selectTravelLocation => 'Sélectionner le lieu de voyage';
+
+  @override
+  String get searchCityPlaceholder => 'Rechercher ville, adresse ou lieu...';
+
+  @override
+  String get useCurrentGpsLocation => 'Utiliser ma position GPS actuelle';
+
+  @override
+  String get confirmLocation => 'Confirmer l\'emplacement';
+
+  @override
+  String get changeLocation => 'Changer l\'emplacement';
+
+  @override
+  String get travelerLocationInfo =>
+      'Vous apparaîtrez dans les résultats de découverte de cet emplacement pendant 24 heures.';
+
+  @override
+  String get searchForCity => 'Rechercher une ville ou utiliser le GPS';
+
+  @override
+  String get travelerSearchHint =>
+      'Votre profil apparaîtra dans le fil de découverte de cet emplacement pendant 24 heures avec un badge Voyageur.';
+
+  @override
+  String get incognitoMode => 'Mode Incognito';
+
+  @override
+  String get incognitoModeDescription =>
+      'Masquer votre profil de la découverte';
+
+  @override
+  String get myUsage => 'Mon Utilisation';
+
+  @override
+  String get boostProfile => 'Booster le Profil';
+
+  @override
+  String get boostActivated => 'Boost activé pour 30 minutes !';
+
+  @override
+  String get superLike => 'Super Like';
+
+  @override
+  String get undoSwipe => 'Annuler le Swipe';
+
+  @override
+  String freeActionsRemaining(int count) {
+    return '$count actions gratuites restantes aujourd\'hui';
+  }
+
+  @override
+  String coinsRequired(int amount) {
+    return '$amount pièces requises';
+  }
+
+  @override
+  String get tierFree => 'Gratuit';
+
+  @override
+  String get dailySwipeLimitReached =>
+      'Limite quotidienne de swipes atteinte. Passez à la version supérieure pour plus de swipes !';
+
+  @override
+  String get noOthersToSee => 'Il n\'y a personne d\'autre à voir';
+
+  @override
+  String get checkBackLater =>
+      'Revenez plus tard pour de nouvelles personnes, ou ajustez vos préférences';
+
+  @override
+  String get adjustPreferences => 'Ajuster les Préférences';
+
+  @override
+  String get noPreviousProfile => 'Aucun profil précédent à revenir';
+
+  @override
+  String get cantUndoMatched =>
+      'Impossible d\'annuler — vous avez déjà matché !';
+
+  @override
+  String showingProfiles(int count) {
+    return '$count profils';
+  }
+
+  @override
+  String seeMoreProfiles(int count) {
+    return 'Voir $count de plus';
+  }
+
+  @override
+  String coinsCost(int amount) {
+    return '$amount pièces';
+  }
+
+  @override
+  String get seeMoreProfilesTitle => 'Voir Plus de Profils';
+
+  @override
+  String unlockMoreProfiles(int count, int cost) {
+    return 'Débloquez $count profils supplémentaires en grille pour $cost pièces.';
+  }
+
+  @override
+  String get unlock => 'Débloquer';
+
+  @override
+  String get buyCoins => 'Acheter des Pièces';
+
+  @override
+  String needCoinsForProfiles(int amount) {
+    return 'Vous avez besoin de $amount pièces pour débloquer plus de profils.';
+  }
+
+  @override
+  String matchPercentage(String percentage) {
+    return '$percentage compatibilité';
+  }
+
+  @override
+  String get youGotSuperLike => 'Vous avez reçu un Super Like !';
+
+  @override
+  String superLikedYou(String name) {
+    return '$name vous a envoyé un Super Like !';
+  }
+
+  @override
+  String get photoValidating => 'Validation de la photo...';
+
+  @override
+  String get photoNotAccepted => 'Photo non acceptée';
+
+  @override
+  String get photoMainNoFace =>
+      'Votre photo principale doit montrer clairement votre visage. Aucun visage n\'a été détecté sur cette photo.';
+
+  @override
+  String get photoMainNotForward =>
+      'Veuillez utiliser une photo où votre visage est clairement visible et tourné vers l\'avant.';
+
+  @override
+  String get photoExplicitNudity =>
+      'Cette photo semble contenir de la nudité ou du contenu explicite. Les photos publiques doivent être appropriées et entièrement habillées.';
+
+  @override
+  String get photoExplicitContent =>
+      'Cette photo peut contenir du contenu inapproprié. Les photos publiques ne doivent pas montrer de nudité, de sous-vêtements ou de contenu explicite.';
+
+  @override
+  String get photoTooMuchSkin =>
+      'Cette photo montre trop de peau exposée. Veuillez utiliser une photo où vous êtes habillé(e) de manière appropriée.';
+
+  @override
+  String get photoNotAllowedPublic =>
+      'Cette photo n\'est pas autorisée sur votre profil public.';
+
+  @override
+  String get photoTooLarge =>
+      'La photo est trop volumineuse. La taille maximale est de 10 Mo.';
+
+  @override
+  String get photoMustHaveOne =>
+      'Vous devez avoir au moins une photo publique avec votre visage visible.';
+
+  @override
+  String get photoDeleteMainWarning =>
+      'Ceci est votre photo principale. La photo suivante deviendra votre photo principale (elle doit montrer votre visage). Continuer ?';
+
+  @override
+  String get photoDeleteConfirm =>
+      'Êtes-vous sûr(e) de vouloir supprimer cette photo ?';
+
+  @override
+  String get photoMaxPublic => 'Maximum 6 photos publiques autorisées';
+
+  @override
+  String get photoMaxPrivate => 'Maximum 6 photos privées autorisées';
 }
