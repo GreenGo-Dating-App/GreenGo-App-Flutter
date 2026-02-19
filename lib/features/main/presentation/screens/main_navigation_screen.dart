@@ -45,8 +45,7 @@ import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 // Language Learning imports - only used when feature is enabled
 import '../../../language_learning/presentation/screens/language_learning_home_screen.dart';
 import '../../../language_learning/presentation/bloc/language_learning_bloc.dart';
-// Gamification/Progress imports
-import '../../../gamification/presentation/screens/progress_screen.dart';
+// Gamification imports (Progress screen hidden from users but code kept)
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
@@ -164,9 +163,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       ..add(ProfileLoadRequested(userId: widget.userId));
 
     // Build screens list based on enabled features from Firestore
-    // MVP: Discover, Matches, Messages, Shop, Progress, Profile (6 tabs)
-    // With Learning: Discover, Matches, Messages, Shop, Progress, Learn, Profile (7 tabs)
-    // Note: Progress placeholder is built via getter to ensure proper context
+    // MVP: Discover, Matches, Messages, Shop, Profile (5 tabs)
+    // With Learning: Discover, Matches, Messages, Shop, Learn, Profile (6 tabs)
+    // Note: Progress screen is kept in code but hidden from users for now
     _screens = [
       DiscoveryScreen(
         key: _discoveryKey,
@@ -178,13 +177,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       MatchesScreen(userId: widget.userId),
       ConversationsScreen(userId: widget.userId),
       CoinShopScreen(userId: widget.userId),
-      if (_gamificationBloc != null)
-        BlocProvider.value(
-          value: _gamificationBloc!,
-          child: ProgressScreen(userId: widget.userId),
-        )
-      else
-        const _GamificationPlaceholderScreen(),
       if (featureFlags.languageLearningEnabled)
         BlocProvider(
           create: (context) => di.sl<LanguageLearningBloc>(),
@@ -509,8 +501,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   void _navigateToSettings() {
     // Navigate to Profile/Settings tab
-    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)
-    final profileIndex = featureFlags.languageLearningEnabled ? 6 : 5;
+    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), [Learn(4)], Profile(4 or 5)
+    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
     setState(() {
       _currentIndex = profileIndex;
     });
@@ -562,6 +554,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             status = VerificationStatus.pending;
             break;
           case 'approved':
+          case 'verified':
             status = VerificationStatus.approved;
             break;
           case 'rejected':
@@ -742,10 +735,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
-    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), Progress(4), [Learn(5)], Profile(5 or 6)
-    final profileIndex = featureFlags.languageLearningEnabled ? 6 : 5;
-    final progressIndex = 4;
-    final learnIndex = featureFlags.languageLearningEnabled ? 5 : -1;
+    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), [Learn(4)], Profile(4 or 5)
+    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
+    final learnIndex = featureFlags.languageLearningEnabled ? 4 : -1;
 
     // Ensure current index is valid
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
@@ -759,8 +751,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           final index = entry.key;
           final screen = entry.value;
 
-          // Shop, Progress, and Learn (if enabled) don't need verification overlay
-          if (index == 3 || index == progressIndex || index == learnIndex) {
+          // Shop and Learn (if enabled) don't need verification overlay
+          if (index == 3 || index == learnIndex) {
             return screen;
           }
 
@@ -807,11 +799,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               icon: const Icon(Icons.store_outlined),
               activeIcon: const Icon(Icons.store),
               label: AppLocalizations.of(context)!.shop,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.emoji_events_outlined),
-              activeIcon: const Icon(Icons.emoji_events),
-              label: AppLocalizations.of(context)!.progress,
             ),
             // Only show Learn tab if language learning is enabled
             if (featureFlags.languageLearningEnabled)
@@ -1003,8 +990,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   PreferredSizeWidget? _buildAppBar() {
     // Only show app bar on certain tabs
-    // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Profile (MVP)
-    // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Progress, 5=Learn, 6=Profile
+    // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Profile (MVP)
+    // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Learn, 5=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
       return AppBar(
@@ -1074,7 +1061,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ],
       );
     }
-    // Shop, Progress, Learn (if enabled), and Profile - no app bar (have their own)
+    // Shop, Learn (if enabled), and Profile - no app bar (have their own)
     return null;
   }
 

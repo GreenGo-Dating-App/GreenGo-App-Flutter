@@ -54,19 +54,11 @@ class TourStep {
       accentColor: Colors.green,
     ),
     TourStep(
-      id: 'progress',
-      titleKey: 'tourProgressTitle',
-      descriptionKey: 'tourProgressDescription',
-      icon: Icons.emoji_events,
-      tabIndex: 4,
-      accentColor: Colors.amber,
-    ),
-    TourStep(
       id: 'profile',
       titleKey: 'tourProfileTitle',
       descriptionKey: 'tourProfileDescription',
       icon: Icons.person,
-      tabIndex: 5,
+      tabIndex: 4,
       accentColor: Colors.purple,
     ),
   ];

@@ -502,6 +502,15 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // MEMBERSHIP PURCHASES — tracks which app user owns each IAP purchase
+    // ============================================================================
+    match /membership_purchases/{purchaseId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update: if false; // Immutable once created
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {

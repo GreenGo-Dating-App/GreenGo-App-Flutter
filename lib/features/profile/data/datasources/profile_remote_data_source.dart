@@ -46,7 +46,9 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   @override
   Future<ProfileModel> getProfile(String userId) async {
     try {
-      final doc = await firestore.collection('profiles').doc(userId).get();
+      final doc = await firestore.collection('profiles').doc(userId).get(
+        const GetOptions(source: Source.server),
+      );
 
       if (!doc.exists) {
         throw CacheException( 'Profile not found');
