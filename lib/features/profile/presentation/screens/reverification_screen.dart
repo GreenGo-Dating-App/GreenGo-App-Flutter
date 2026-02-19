@@ -85,6 +85,15 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
         'verificationRejectionReason': null,
       });
 
+      // Also reset approvalStatus in users collection so access gate shows pending
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .update({
+        'approvalStatus': 'pending',
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+
       if (mounted) {
         Navigator.of(context).pop(true); // Return true = success
       }

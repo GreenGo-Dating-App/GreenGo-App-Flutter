@@ -561,7 +561,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
           if (state.membershipTier == 'test') {
             return MainNavigationScreen(userId: state.user.uid);
           }
-          // User is waiting for access (from auth bloc check)
+          // Approved users bypass waiting — profile is verified
+          if (state.approvalStatus == 'approved') {
+            return MainNavigationScreen(userId: state.user.uid);
+          }
+          // User is waiting for access (pending or rejected)
           return WaitingScreen(
             accessData: UserAccessData(
               userId: state.user.uid,
@@ -588,16 +592,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
             if (_accessData!.isAdmin || _accessData!.isTestUser) {
               return MainNavigationScreen(userId: state.user.uid);
             }
-            // If countdown is active OR pending approval after countdown
-            if (_accessData!.isCountdownActive || _accessData!.shouldShowPendingApproval) {
-              return WaitingScreen(
-                accessData: _accessData,
-                onSignOut: _handleSignOut,
-                onRefresh: _handleRefresh,
-                onEnableNotifications: _handleEnableNotifications,
-              );
+            // Approved users (verified profile) — let them into the app
+            if (_accessData!.approvalStatus == ApprovalStatus.approved) {
+              return MainNavigationScreen(userId: state.user.uid);
             }
-            // If rejected
+            // Rejected users — show rejected waiting screen
             if (_accessData!.approvalStatus == ApprovalStatus.rejected) {
               return WaitingScreen(
                 accessData: _accessData,
@@ -605,6 +604,13 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 onRefresh: _handleRefresh,
               );
             }
+            // Pending users — show countdown (if active) or "under review" screen
+            return WaitingScreen(
+              accessData: _accessData,
+              onSignOut: _handleSignOut,
+              onRefresh: _handleRefresh,
+              onEnableNotifications: _handleEnableNotifications,
+            );
           } else if (_accessControlService.isPreLaunchMode) {
             // Pre-launch mode but no access data yet - show splash while loading
             // (the listener already set _isCheckingAccess = true, so this is a fallback)

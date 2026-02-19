@@ -540,7 +540,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final profileDoc = await FirebaseFirestore.instance
           .collection('profiles')
           .doc(widget.userId)
-          .get();
+          .get(const GetOptions(source: Source.server));
 
       if (!mounted) return;
 
@@ -764,18 +764,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             return screen;
           }
 
-          // Admin and test users bypass verification overlay
-          if (isAdminOrTestUser) {
-            return screen;
-          }
-
-          // Wrap other screens with verification overlay
-          return VerificationBlockedOverlay(
-            status: _verificationStatus,
-            rejectionReason: _verificationRejectionReason,
-            onVerifyNow: _navigateToVerification,
-            child: screen,
-          );
+          // Verification is gated at login level — no in-app overlay needed
+          return screen;
         }).toList(),
       ),
       bottomNavigationBar: Container(

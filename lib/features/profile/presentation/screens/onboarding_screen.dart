@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/core/di/injection_container.dart' as di;
 import '../bloc/onboarding_bloc.dart';
@@ -29,13 +30,13 @@ class OnboardingScreen extends StatelessWidget {
       create: (context) => di.sl<OnboardingBloc>()
         ..add(OnboardingStarted(userId: userId)),
       child: BlocConsumer<OnboardingBloc, OnboardingState>(
-        listener: (context, state) {
+        listener: (context, state) async {
           if (state is OnboardingComplete) {
-            // Navigate to home screen with userId
-            Navigator.of(context).pushReplacementNamed(
-              '/home',
-              arguments: {'userId': state.profile.userId},
-            );
+            // Sign out and return to login — profile needs admin verification first
+            await FirebaseAuth.instance.signOut();
+            if (context.mounted) {
+              Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
+            }
           } else if (state is OnboardingError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
