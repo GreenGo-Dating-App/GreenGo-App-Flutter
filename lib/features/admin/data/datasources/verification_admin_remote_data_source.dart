@@ -62,6 +62,17 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'verificationReviewedBy': adminId,
         'verificationRejectionReason': null,
       });
+
+      // Also update users collection so verified status is visible app-wide
+      // and approvalStatus so user can pass the access gate
+      await firestore.collection('users').doc(userId).update({
+        'isPhotoVerified': true,
+        'photoVerifiedAt': FieldValue.serverTimestamp(),
+        'approvalStatus': 'approved',
+        'approvedAt': FieldValue.serverTimestamp(),
+        'approvedBy': adminId,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to approve verification');
     } catch (e) {
@@ -77,6 +88,15 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'verificationReviewedAt': FieldValue.serverTimestamp(),
         'verificationReviewedBy': adminId,
         'verificationRejectionReason': reason,
+      });
+
+      await firestore.collection('users').doc(userId).update({
+        'isPhotoVerified': false,
+        'approvalStatus': 'rejected',
+        'rejectedAt': FieldValue.serverTimestamp(),
+        'rejectedBy': adminId,
+        'rejectionReason': reason,
+        'updatedAt': FieldValue.serverTimestamp(),
       });
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to reject verification');
@@ -95,6 +115,12 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
         'verificationRejectionReason': reason,
         'verificationPhotoUrl': null, // Clear the old photo so user can submit new one
       });
+
+      await firestore.collection('users').doc(userId).update({
+        'isPhotoVerified': false,
+        'approvalStatus': 'pending',
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to request better photo');
     } catch (e) {
@@ -107,12 +133,21 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
     try {
       final batch = firestore.batch();
       for (final userId in userIds) {
-        final docRef = firestore.collection('profiles').doc(userId);
-        batch.update(docRef, {
+        final profileRef = firestore.collection('profiles').doc(userId);
+        batch.update(profileRef, {
           'verificationStatus': VerificationStatus.approved.name,
           'verificationReviewedAt': FieldValue.serverTimestamp(),
           'verificationReviewedBy': adminId,
           'verificationRejectionReason': null,
+        });
+        final userRef = firestore.collection('users').doc(userId);
+        batch.update(userRef, {
+          'isPhotoVerified': true,
+          'photoVerifiedAt': FieldValue.serverTimestamp(),
+          'approvalStatus': 'approved',
+          'approvedAt': FieldValue.serverTimestamp(),
+          'approvedBy': adminId,
+          'updatedAt': FieldValue.serverTimestamp(),
         });
       }
       await batch.commit();
@@ -128,13 +163,19 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
     try {
       final batch = firestore.batch();
       for (final userId in userIds) {
-        final docRef = firestore.collection('profiles').doc(userId);
-        batch.update(docRef, {
+        final profileRef = firestore.collection('profiles').doc(userId);
+        batch.update(profileRef, {
           'verificationStatus': VerificationStatus.needsResubmission.name,
           'verificationReviewedAt': FieldValue.serverTimestamp(),
           'verificationReviewedBy': adminId,
           'verificationRejectionReason': reason,
           'verificationPhotoUrl': null,
+        });
+        final userRef = firestore.collection('users').doc(userId);
+        batch.update(userRef, {
+          'isPhotoVerified': false,
+          'approvalStatus': 'pending',
+          'updatedAt': FieldValue.serverTimestamp(),
         });
       }
       await batch.commit();
