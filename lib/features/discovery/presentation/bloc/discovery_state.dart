@@ -67,12 +67,14 @@ class DiscoverySwipeCompleted extends DiscoveryState {
   final int currentIndex;
   final bool createdMatch;
   final String? matchedUserId;
+  final String? matchId;
 
   const DiscoverySwipeCompleted({
     required this.cards,
     required this.currentIndex,
     this.createdMatch = false,
     this.matchedUserId,
+    this.matchId,
   });
 }
 

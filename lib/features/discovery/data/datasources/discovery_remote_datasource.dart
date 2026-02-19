@@ -482,7 +482,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       );
 
       if (match != null) {
-        return action.copyWith(createdMatch: true);
+        return action.copyWith(createdMatch: true, matchId: match.matchId);
       }
     }
 

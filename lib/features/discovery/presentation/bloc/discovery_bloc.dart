@@ -303,6 +303,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         currentIndex: nextIndex,
         createdMatch: true,
         matchedUserId: event.targetUserId,
+        matchId: swipeAction.matchId,
       ));
 
       // Wait briefly then transition to loaded state

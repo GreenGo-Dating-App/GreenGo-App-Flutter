@@ -15,6 +15,7 @@ class SwipeAction {
   final SwipeActionType actionType;
   final DateTime timestamp;
   final bool createdMatch;
+  final String? matchId;
 
   const SwipeAction({
     required this.userId,
@@ -22,7 +23,22 @@ class SwipeAction {
     required this.actionType,
     required this.timestamp,
     this.createdMatch = false,
+    this.matchId,
   });
+
+  SwipeAction copyWith({
+    bool? createdMatch,
+    String? matchId,
+  }) {
+    return SwipeAction(
+      userId: userId,
+      targetUserId: targetUserId,
+      actionType: actionType,
+      timestamp: timestamp,
+      createdMatch: createdMatch ?? this.createdMatch,
+      matchId: matchId ?? this.matchId,
+    );
+  }
 
   /// Check if this is a positive action (like or super like)
   bool get isPositive =>
