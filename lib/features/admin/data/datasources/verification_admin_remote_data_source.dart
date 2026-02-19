@@ -9,6 +9,8 @@ abstract class VerificationAdminRemoteDataSource {
   Future<void> approveVerification(String userId, String adminId);
   Future<void> rejectVerification(String userId, String adminId, String reason);
   Future<void> requestBetterPhoto(String userId, String adminId, String reason);
+  Future<void> bulkApproveVerifications(List<String> userIds, String adminId);
+  Future<void> bulkRequestBetterPhoto(List<String> userIds, String adminId, String reason);
 }
 
 class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDataSource {
@@ -95,6 +97,49 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
       });
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to request better photo');
+    } catch (e) {
+      throw ServerException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> bulkApproveVerifications(List<String> userIds, String adminId) async {
+    try {
+      final batch = firestore.batch();
+      for (final userId in userIds) {
+        final docRef = firestore.collection('profiles').doc(userId);
+        batch.update(docRef, {
+          'verificationStatus': VerificationStatus.approved.name,
+          'verificationReviewedAt': FieldValue.serverTimestamp(),
+          'verificationReviewedBy': adminId,
+          'verificationRejectionReason': null,
+        });
+      }
+      await batch.commit();
+    } on FirebaseException catch (e) {
+      throw ServerException(e.message ?? 'Failed to bulk approve verifications');
+    } catch (e) {
+      throw ServerException(e.toString());
+    }
+  }
+
+  @override
+  Future<void> bulkRequestBetterPhoto(List<String> userIds, String adminId, String reason) async {
+    try {
+      final batch = firestore.batch();
+      for (final userId in userIds) {
+        final docRef = firestore.collection('profiles').doc(userId);
+        batch.update(docRef, {
+          'verificationStatus': VerificationStatus.needsResubmission.name,
+          'verificationReviewedAt': FieldValue.serverTimestamp(),
+          'verificationReviewedBy': adminId,
+          'verificationRejectionReason': reason,
+          'verificationPhotoUrl': null,
+        });
+      }
+      await batch.commit();
+    } on FirebaseException catch (e) {
+      throw ServerException(e.message ?? 'Failed to bulk request better photos');
     } catch (e) {
       throw ServerException(e.toString());
     }

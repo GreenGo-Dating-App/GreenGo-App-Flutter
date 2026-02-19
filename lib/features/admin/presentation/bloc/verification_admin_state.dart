@@ -54,6 +54,21 @@ class VerificationAdminActionLoading extends VerificationAdminState {
   List<Object?> get props => [pendingVerifications, verificationHistory, userId];
 }
 
+class VerificationAdminBulkActionLoading extends VerificationAdminState {
+  final List<Profile> pendingVerifications;
+  final List<Profile> verificationHistory;
+  final List<String> userIds;
+
+  const VerificationAdminBulkActionLoading({
+    required this.pendingVerifications,
+    required this.verificationHistory,
+    required this.userIds,
+  });
+
+  @override
+  List<Object?> get props => [pendingVerifications, verificationHistory, userIds];
+}
+
 class VerificationAdminActionSuccess extends VerificationAdminState {
   final List<Profile> pendingVerifications;
   final List<Profile> verificationHistory;
