@@ -30,6 +30,9 @@ import '../widgets/nickname_search_dialog.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../domain/entities/match.dart';
+import 'match_detail_screen.dart';
 import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -1087,7 +1090,23 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         matchedProfile: matchedProfile!,
         onKeepSwiping: () {},
         onSendMessage: () {
-          // TODO: Navigate to chat with matched user
+          if (state.matchId != null) {
+            final match = Match(
+              matchId: state.matchId!,
+              userId1: userId,
+              userId2: state.matchedUserId!,
+              matchedAt: DateTime.now(),
+            );
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => MatchDetailScreen(
+                  match: match,
+                  profile: matchedProfile,
+                  currentUserId: userId,
+                ),
+              ),
+            );
+          }
         },
         onViewProfile: () {
           Navigator.of(context).push(

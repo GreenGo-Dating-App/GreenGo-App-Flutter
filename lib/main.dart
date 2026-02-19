@@ -49,6 +49,7 @@ import 'features/admin/presentation/screens/coin_management_screen.dart';
 import 'features/admin/presentation/screens/gamification_management_screen.dart';
 import 'features/chat/presentation/screens/support_tickets_list_screen.dart';
 import 'features/chat/presentation/screens/support_chat_screen.dart';
+import 'features/notifications/domain/repositories/notification_repository.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -495,8 +496,36 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
-  void _handleEnableNotifications() {
-    context.read<AuthBloc>().add(AuthEnableNotificationsRequested());
+  void _handleEnableNotifications() async {
+    final notificationRepo = di.sl<NotificationRepository>();
+
+    // 1. Request OS notification permission (shows system dialog)
+    final permResult = await notificationRepo.requestPermission();
+    final granted = permResult.fold((_) => false, (ok) => ok);
+
+    // 2. Get and save FCM token (best-effort, non-blocking on failure)
+    if (granted) {
+      try {
+        final tokenResult = await notificationRepo.getFCMToken();
+        await tokenResult.fold(
+          (_) async {},
+          (token) async {
+            if (token != null) {
+              final uid = FirebaseAuth.instance.currentUser?.uid;
+              if (uid != null) {
+                await notificationRepo.saveFCMToken(uid, token);
+              }
+            }
+          },
+        );
+      } catch (_) {}
+    }
+
+    // 3. Set Firestore flag + refresh access data so button disappears
+    if (!mounted) return;
+    context.read<AuthBloc>()
+      ..add(AuthEnableNotificationsRequested())
+      ..add(AuthCheckAccessStatusRequested());
   }
 
   @override
