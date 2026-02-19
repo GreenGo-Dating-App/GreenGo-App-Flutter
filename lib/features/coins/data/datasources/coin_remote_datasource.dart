@@ -62,7 +62,9 @@ class CoinRemoteDataSource {
 
   /// Get coin balance for user
   Future<CoinBalanceModel> getBalance(String userId) async {
-    final doc = await _balancesCollection.doc(userId).get();
+    final doc = await _balancesCollection.doc(userId).get(
+      const GetOptions(source: Source.server),
+    );
 
     if (!doc.exists) {
       // Create new balance if doesn't exist

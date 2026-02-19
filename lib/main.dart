@@ -472,6 +472,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
       debugPrint('🔑 Access check error: $e');
       if (mounted) {
         setState(() {
+          _accessData = null;
           _isCheckingAccess = false;
         });
       }

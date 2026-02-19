@@ -270,37 +270,47 @@ class AccessControlService {
       final data = doc.data()!;
       final approvalStatus = data['approvalStatus'] as String? ?? 'pending';
 
-      // Cross-check: if users.approvalStatus is not approved, check if
-      // profiles.verificationStatus is already approved and auto-correct
-      if (approvalStatus != 'approved') {
-        debugPrint('🔑 approvalStatus=$approvalStatus — cross-checking profiles.verificationStatus');
-        try {
-          final profileDoc = await _firestore.collection('profiles').doc(user.uid).get(
-            const GetOptions(source: Source.server),
-          );
-          if (profileDoc.exists) {
-            final verificationStatus = profileDoc.data()?['verificationStatus'] as String?;
-            debugPrint('🔑 profiles.verificationStatus=$verificationStatus');
-            if (verificationStatus == 'approved') {
-              debugPrint('🔑 Auto-correcting users.approvalStatus to approved');
-              // Profile is verified but users collection is out of sync — fix it
-              await _firestore.collection('users').doc(user.uid).update({
-                'approvalStatus': 'approved',
-                'approvedAt': FieldValue.serverTimestamp(),
-                'approvedBy': 'system_sync',
-                'updatedAt': FieldValue.serverTimestamp(),
-              });
-              // Re-read the corrected document
-              final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
-                const GetOptions(source: Source.server),
-              );
-              if (!correctedDoc.exists) return null;
-              return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
-            }
+      // Always cross-check profiles.verificationStatus on every login
+      // to keep users.approvalStatus in sync with the source of truth
+      try {
+        final profileDoc = await _firestore.collection('profiles').doc(user.uid).get(
+          const GetOptions(source: Source.server),
+        );
+        if (profileDoc.exists) {
+          final verificationStatus = profileDoc.data()?['verificationStatus'] as String?;
+          debugPrint('🔑 users.approvalStatus=$approvalStatus, profiles.verificationStatus=$verificationStatus');
+          final isVerified = verificationStatus == 'approved' || verificationStatus == 'verified';
+
+          if (isVerified && approvalStatus != 'approved') {
+            // Profile verified but users collection out of sync — set approved
+            debugPrint('🔑 Syncing users.approvalStatus → approved');
+            await _firestore.collection('users').doc(user.uid).update({
+              'approvalStatus': 'approved',
+              'approvedAt': FieldValue.serverTimestamp(),
+              'approvedBy': 'system_sync',
+              'updatedAt': FieldValue.serverTimestamp(),
+            });
+            final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
+              const GetOptions(source: Source.server),
+            );
+            if (!correctedDoc.exists) return null;
+            return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
+          } else if (!isVerified && approvalStatus == 'approved') {
+            // Profile no longer verified but users collection still says approved — revoke
+            debugPrint('🔑 Syncing users.approvalStatus → pending (verification revoked)');
+            await _firestore.collection('users').doc(user.uid).update({
+              'approvalStatus': 'pending',
+              'updatedAt': FieldValue.serverTimestamp(),
+            });
+            final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
+              const GetOptions(source: Source.server),
+            );
+            if (!correctedDoc.exists) return null;
+            return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
           }
-        } catch (_) {
-          // Non-critical — proceed with original data
         }
+      } catch (_) {
+        // Non-critical — proceed with original data
       }
 
       return UserAccessData.fromFirestore(data, user.uid);

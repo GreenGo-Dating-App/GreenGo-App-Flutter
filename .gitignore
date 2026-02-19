@@ -111,3 +111,4 @@ logs/
 
 # Test related
 test/coverage/
+node_modules/
