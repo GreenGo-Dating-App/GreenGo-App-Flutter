@@ -13,6 +13,8 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
     on<RejectVerification>(_onRejectVerification);
     on<RequestBetterPhoto>(_onRequestBetterPhoto);
     on<RefreshVerifications>(_onRefreshVerifications);
+    on<BulkApproveVerifications>(_onBulkApproveVerifications);
+    on<BulkRequestBetterPhoto>(_onBulkRequestBetterPhoto);
   }
 
   Future<void> _onLoadPendingVerifications(
@@ -191,5 +193,94 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
       (failure) => emit(VerificationAdminError(message: failure.message)),
       (verifications) => emit(VerificationAdminLoaded(pendingVerifications: verifications)),
     );
+  }
+
+  Future<void> _onBulkApproveVerifications(
+    BulkApproveVerifications event,
+    Emitter<VerificationAdminState> emit,
+  ) async {
+    final currentState = state;
+    if (currentState is VerificationAdminLoaded) {
+      emit(VerificationAdminBulkActionLoading(
+        pendingVerifications: currentState.pendingVerifications,
+        verificationHistory: currentState.verificationHistory,
+        userIds: event.userIds,
+      ));
+
+      final result = await repository.bulkApproveVerifications(
+        event.userIds,
+        event.adminId,
+      );
+
+      await result.fold(
+        (failure) async => emit(VerificationAdminError(
+          message: failure.message,
+          pendingVerifications: currentState.pendingVerifications,
+          verificationHistory: currentState.verificationHistory,
+        )),
+        (_) async {
+          final refreshResult = await repository.getPendingVerifications();
+          refreshResult.fold(
+            (failure) => emit(VerificationAdminActionSuccess(
+              pendingVerifications: currentState.pendingVerifications
+                  .where((p) => !event.userIds.contains(p.userId))
+                  .toList(),
+              verificationHistory: currentState.verificationHistory,
+              message: '${event.userIds.length} verifications approved',
+            )),
+            (verifications) => emit(VerificationAdminActionSuccess(
+              pendingVerifications: verifications,
+              verificationHistory: currentState.verificationHistory,
+              message: '${event.userIds.length} verifications approved',
+            )),
+          );
+        },
+      );
+    }
+  }
+
+  Future<void> _onBulkRequestBetterPhoto(
+    BulkRequestBetterPhoto event,
+    Emitter<VerificationAdminState> emit,
+  ) async {
+    final currentState = state;
+    if (currentState is VerificationAdminLoaded) {
+      emit(VerificationAdminBulkActionLoading(
+        pendingVerifications: currentState.pendingVerifications,
+        verificationHistory: currentState.verificationHistory,
+        userIds: event.userIds,
+      ));
+
+      final result = await repository.bulkRequestBetterPhoto(
+        event.userIds,
+        event.adminId,
+        event.reason,
+      );
+
+      await result.fold(
+        (failure) async => emit(VerificationAdminError(
+          message: failure.message,
+          pendingVerifications: currentState.pendingVerifications,
+          verificationHistory: currentState.verificationHistory,
+        )),
+        (_) async {
+          final refreshResult = await repository.getPendingVerifications();
+          refreshResult.fold(
+            (failure) => emit(VerificationAdminActionSuccess(
+              pendingVerifications: currentState.pendingVerifications
+                  .where((p) => !event.userIds.contains(p.userId))
+                  .toList(),
+              verificationHistory: currentState.verificationHistory,
+              message: 'Better photo requested for ${event.userIds.length} users',
+            )),
+            (verifications) => emit(VerificationAdminActionSuccess(
+              pendingVerifications: verifications,
+              verificationHistory: currentState.verificationHistory,
+              message: 'Better photo requested for ${event.userIds.length} users',
+            )),
+          );
+        },
+      );
+    }
   }
 }

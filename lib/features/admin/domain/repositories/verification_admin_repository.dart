@@ -25,4 +25,17 @@ abstract class VerificationAdminRepository {
     String adminId,
     String reason,
   );
+
+  /// Bulk approve verifications
+  Future<Either<Failure, void>> bulkApproveVerifications(
+    List<String> userIds,
+    String adminId,
+  );
+
+  /// Bulk request better photo
+  Future<Either<Failure, void>> bulkRequestBetterPhoto(
+    List<String> userIds,
+    String adminId,
+    String reason,
+  );
 }

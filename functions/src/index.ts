@@ -207,6 +207,13 @@ export {
   getNotificationAnalytics,
 } from './notifications/pushNotifications';
 
+// Push Notification Firestore Triggers (likes, matches, messages)
+export {
+  onNewLikePush,
+  onNewMatchPush,
+  onNewMessagePush,
+} from './notifications/pushNotificationTriggers';
+
 // Email Communication Functions (Legacy - SendGrid)
 export {
   sendTransactionalEmail,

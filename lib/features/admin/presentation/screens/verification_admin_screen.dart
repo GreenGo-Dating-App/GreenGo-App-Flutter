@@ -104,6 +104,9 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
           } else if (state is VerificationAdminActionLoading) {
             pending = state.pendingVerifications;
             history = state.verificationHistory;
+          } else if (state is VerificationAdminBulkActionLoading) {
+            pending = state.pendingVerifications;
+            history = state.verificationHistory;
           } else if (state is VerificationAdminActionSuccess) {
             pending = state.pendingVerifications;
             history = state.verificationHistory;
@@ -122,6 +125,10 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
                 loadingUserId: state is VerificationAdminActionLoading
                     ? (state).userId
                     : null,
+                isBulkLoading: state is VerificationAdminBulkActionLoading,
+                bulkLoadingUserIds: state is VerificationAdminBulkActionLoading
+                    ? (state).userIds
+                    : const [],
               ),
               _VerificationHistoryTab(profiles: history),
             ],
@@ -132,24 +139,61 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
   }
 }
 
-class _PendingVerificationsTab extends StatelessWidget {
+class _PendingVerificationsTab extends StatefulWidget {
   final List<Profile> profiles;
   final String adminId;
   final bool isLoading;
   final String? loadingUserId;
+  final bool isBulkLoading;
+  final List<String> bulkLoadingUserIds;
 
   const _PendingVerificationsTab({
     required this.profiles,
     required this.adminId,
     this.isLoading = false,
     this.loadingUserId,
+    this.isBulkLoading = false,
+    this.bulkLoadingUserIds = const [],
   });
+
+  @override
+  State<_PendingVerificationsTab> createState() => _PendingVerificationsTabState();
+}
+
+class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
+  final Set<String> _selectedUserIds = {};
+
+  void _toggleSelection(String userId) {
+    setState(() {
+      if (_selectedUserIds.contains(userId)) {
+        _selectedUserIds.remove(userId);
+      } else {
+        _selectedUserIds.add(userId);
+      }
+    });
+  }
+
+  void _selectAll() {
+    setState(() {
+      if (_selectedUserIds.length == widget.profiles.length) {
+        _selectedUserIds.clear();
+      } else {
+        _selectedUserIds.addAll(widget.profiles.map((p) => p.userId));
+      }
+    });
+  }
+
+  void _clearSelection() {
+    setState(() {
+      _selectedUserIds.clear();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
-    if (profiles.isEmpty) {
+    if (widget.profiles.isEmpty) {
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -172,50 +216,223 @@ class _PendingVerificationsTab extends StatelessWidget {
       );
     }
 
-    return RefreshIndicator(
-      onRefresh: () async {
-        context.read<VerificationAdminBloc>().add(const RefreshVerifications());
-      },
-      color: AppColors.richGold,
-      child: ListView.builder(
-        padding: const EdgeInsets.all(AppDimensions.paddingM),
-        itemCount: profiles.length,
-        itemBuilder: (context, index) {
-          final profile = profiles[index];
-          final isCurrentLoading = isLoading && loadingUserId == profile.userId;
+    // Remove stale selections
+    _selectedUserIds.removeWhere(
+      (id) => !widget.profiles.any((p) => p.userId == id),
+    );
 
-          return _VerificationCard(
-            profile: profile,
-            adminId: adminId,
-            isLoading: isCurrentLoading,
-            onApprove: () {
+    return Column(
+      children: [
+        // Bulk action bar
+        if (_selectedUserIds.isNotEmpty)
+          Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppDimensions.paddingM,
+              vertical: AppDimensions.paddingS,
+            ),
+            color: AppColors.richGold.withValues(alpha: 0.15),
+            child: widget.isBulkLoading
+                ? const Center(
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: CircularProgressIndicator(color: AppColors.richGold),
+                    ),
+                  )
+                : Row(
+                    children: [
+                      Text(
+                        '${_selectedUserIds.length} selected',
+                        style: const TextStyle(
+                          color: AppColors.textPrimary,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const Spacer(),
+                      TextButton.icon(
+                        onPressed: _clearSelection,
+                        icon: const Icon(Icons.clear, size: 16),
+                        label: const Text('Clear'),
+                        style: TextButton.styleFrom(
+                          foregroundColor: AppColors.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          context.read<VerificationAdminBloc>().add(
+                                BulkApproveVerifications(
+                                  userIds: _selectedUserIds.toList(),
+                                  adminId: widget.adminId,
+                                ),
+                              );
+                          _clearSelection();
+                        },
+                        icon: const Icon(Icons.check, size: 16),
+                        label: const Text('Approve Selected'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.successGreen,
+                          foregroundColor: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      ElevatedButton.icon(
+                        onPressed: () =>
+                            _showBulkRequestBetterPhotoDialog(context, l10n),
+                        icon: const Icon(Icons.refresh, size: 16),
+                        label: const Text('Request New Photo'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.richGold,
+                          foregroundColor: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+          ),
+
+        // Select all toggle
+        if (widget.profiles.length > 1)
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppDimensions.paddingM,
+              vertical: 4,
+            ),
+            child: Row(
+              children: [
+                Checkbox(
+                  value: _selectedUserIds.length == widget.profiles.length,
+                  onChanged: (_) => _selectAll(),
+                  activeColor: AppColors.richGold,
+                ),
+                GestureDetector(
+                  onTap: _selectAll,
+                  child: Text(
+                    _selectedUserIds.length == widget.profiles.length
+                        ? 'Deselect all'
+                        : 'Select all',
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 13,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+        // List
+        Expanded(
+          child: RefreshIndicator(
+            onRefresh: () async {
+              context
+                  .read<VerificationAdminBloc>()
+                  .add(const RefreshVerifications());
+            },
+            color: AppColors.richGold,
+            child: ListView.builder(
+              padding: const EdgeInsets.all(AppDimensions.paddingM),
+              itemCount: widget.profiles.length,
+              itemBuilder: (context, index) {
+                final profile = widget.profiles[index];
+                final isCurrentLoading = widget.isLoading &&
+                    widget.loadingUserId == profile.userId;
+                final isSelected =
+                    _selectedUserIds.contains(profile.userId);
+
+                return _VerificationCard(
+                  profile: profile,
+                  adminId: widget.adminId,
+                  isLoading: isCurrentLoading,
+                  isSelected: isSelected,
+                  onToggleSelect: () => _toggleSelection(profile.userId),
+                  onApprove: () {
+                    context.read<VerificationAdminBloc>().add(
+                          ApproveVerification(
+                            userId: profile.userId,
+                            adminId: widget.adminId,
+                          ),
+                        );
+                  },
+                  onReject: (reason) {
+                    context.read<VerificationAdminBloc>().add(
+                          RejectVerification(
+                            userId: profile.userId,
+                            adminId: widget.adminId,
+                            reason: reason,
+                          ),
+                        );
+                  },
+                  onRequestBetter: (reason) {
+                    context.read<VerificationAdminBloc>().add(
+                          RequestBetterPhoto(
+                            userId: profile.userId,
+                            adminId: widget.adminId,
+                            reason: reason,
+                          ),
+                        );
+                  },
+                );
+              },
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  void _showBulkRequestBetterPhotoDialog(
+      BuildContext context, AppLocalizations l10n) {
+    final controller = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          '${l10n.requestBetterPhoto} (${_selectedUserIds.length} users)',
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: TextField(
+          controller: controller,
+          decoration: InputDecoration(
+            hintText: l10n.enterRejectionReason,
+            hintStyle: const TextStyle(color: AppColors.textTertiary),
+            border: const OutlineInputBorder(),
+          ),
+          style: const TextStyle(color: AppColors.textPrimary),
+          maxLines: 3,
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext),
+            child: Text(l10n.cancel),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              if (controller.text.trim().isEmpty) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(l10n.rejectionReasonRequired),
+                    backgroundColor: AppColors.errorRed,
+                  ),
+                );
+                return;
+              }
+              Navigator.pop(dialogContext);
               context.read<VerificationAdminBloc>().add(
-                    ApproveVerification(
-                      userId: profile.userId,
-                      adminId: adminId,
+                    BulkRequestBetterPhoto(
+                      userIds: _selectedUserIds.toList(),
+                      adminId: widget.adminId,
+                      reason: controller.text.trim(),
                     ),
                   );
+              _clearSelection();
             },
-            onReject: (reason) {
-              context.read<VerificationAdminBloc>().add(
-                    RejectVerification(
-                      userId: profile.userId,
-                      adminId: adminId,
-                      reason: reason,
-                    ),
-                  );
-            },
-            onRequestBetter: (reason) {
-              context.read<VerificationAdminBloc>().add(
-                    RequestBetterPhoto(
-                      userId: profile.userId,
-                      adminId: adminId,
-                      reason: reason,
-                    ),
-                  );
-            },
-          );
-        },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+            ),
+            child: Text(l10n.confirm),
+          ),
+        ],
       ),
     );
   }
@@ -266,6 +483,8 @@ class _VerificationCard extends StatelessWidget {
   final Profile profile;
   final String adminId;
   final bool isLoading;
+  final bool isSelected;
+  final VoidCallback? onToggleSelect;
   final VoidCallback onApprove;
   final Function(String) onReject;
   final Function(String) onRequestBetter;
@@ -274,6 +493,8 @@ class _VerificationCard extends StatelessWidget {
     required this.profile,
     required this.adminId,
     required this.isLoading,
+    this.isSelected = false,
+    this.onToggleSelect,
     required this.onApprove,
     required this.onReject,
     required this.onRequestBetter,
@@ -299,6 +520,15 @@ class _VerificationCard extends StatelessWidget {
             padding: const EdgeInsets.all(AppDimensions.paddingM),
             child: Row(
               children: [
+                if (onToggleSelect != null)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Checkbox(
+                      value: isSelected,
+                      onChanged: (_) => onToggleSelect!(),
+                      activeColor: AppColors.richGold,
+                    ),
+                  ),
                 CircleAvatar(
                   radius: 24,
                   backgroundImage: profile.photoUrls.isNotEmpty
@@ -349,18 +579,39 @@ class _VerificationCard extends StatelessWidget {
 
           // Verification photo
           if (profile.verificationPhotoUrl != null)
-            GestureDetector(
-              onTap: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
-              child: Container(
-                width: double.infinity,
-                height: 300,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(profile.verificationPhotoUrl!),
-                    fit: BoxFit.cover,
+            Stack(
+              children: [
+                GestureDetector(
+                  onTap: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
+                  child: Container(
+                    width: double.infinity,
+                    height: 300,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(profile.verificationPhotoUrl!),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                 ),
-              ),
+                Positioned(
+                  bottom: 8,
+                  right: 8,
+                  child: ElevatedButton.icon(
+                    onPressed: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
+                    icon: const Icon(Icons.fullscreen, size: 18),
+                    label: const Text('View Document'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black.withValues(alpha: 0.7),
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 8,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             )
           else
             Container(

@@ -77,4 +77,35 @@ class VerificationAdminRepositoryImpl implements VerificationAdminRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> bulkApproveVerifications(
+    List<String> userIds,
+    String adminId,
+  ) async {
+    try {
+      await remoteDataSource.bulkApproveVerifications(userIds, adminId);
+      return const Right(null);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> bulkRequestBetterPhoto(
+    List<String> userIds,
+    String adminId,
+    String reason,
+  ) async {
+    try {
+      await remoteDataSource.bulkRequestBetterPhoto(userIds, adminId, reason);
+      return const Right(null);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }
