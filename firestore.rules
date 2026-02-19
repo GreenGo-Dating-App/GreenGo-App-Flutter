@@ -34,7 +34,7 @@ service cloud.firestore {
     match /users/{userId} {
       allow read: if isSignedIn();
       allow create: if isOwner(userId);
-      allow update: if isOwner(userId);
+      allow update: if isOwner(userId) || isAdminPanelUser();
       allow delete: if isOwner(userId);
     }
 
@@ -44,9 +44,9 @@ service cloud.firestore {
     match /profiles/{profileId} {
       // Anyone signed in can read profiles (for discovery/matching)
       allow read: if isSignedIn();
-      // Users can create/update/delete their own profile
+      // Users can create/update/delete their own profile; admins can update (verification, moderation)
       allow create: if isOwner(profileId);
-      allow update: if isOwner(profileId);
+      allow update: if isOwner(profileId) || isAdminPanelUser();
       allow delete: if isOwner(profileId);
     }
 
@@ -446,6 +446,34 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // ADMIN ACTIONS & AUDIT COLLECTIONS (admin panel logging)
+    // ============================================================================
+    match /admin_actions/{actionId} {
+      allow read: if isAdminPanelUser();
+      allow create: if isAdminPanelUser();
+      allow update, delete: if false;
+    }
+
+    match /admin_audit_index/{docId} {
+      allow read: if isAdminPanelUser();
+      allow create: if isAdminPanelUser();
+      allow update, delete: if false;
+    }
+
+    // Monthly audit log collections (admin_audit_logs_YYYY_MM)
+    // Firestore rules don't support regex on collection names, so we use
+    // the catch-all below. These collections are written by admin panel only.
+
+    // ============================================================================
+    // NOTIFICATION PREFERENCES COLLECTION
+    // ============================================================================
+    match /notification_preferences/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
     // VIRTUAL GIFTS COLLECTION
     // ============================================================================
     match /virtualGifts/{giftId} {
@@ -478,7 +506,7 @@ service cloud.firestore {
     // ============================================================================
     match /{document=**} {
       allow read: if isSignedIn();
-      allow write: if false;
+      allow write: if isAdminPanelUser();
     }
   }
 }
