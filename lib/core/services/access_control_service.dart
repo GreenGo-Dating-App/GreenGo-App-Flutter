@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
+import 'package:flutter/foundation.dart';
 import '../../features/subscription/domain/entities/subscription.dart';
 import 'early_access_service.dart';
 
@@ -108,16 +109,14 @@ class UserAccessData {
   /// Check if user can access the app
   /// User can access if:
   /// 1. They are an admin or test user (bypass all restrictions), OR
-  /// 2. They are approved by admin AND the current date is after their access date
+  /// 2. They are approved by admin (verified profile = full access)
   bool get canAccessApp {
     // Admin and test users bypass ALL restrictions
     if (isAdmin || isTestUser) {
       return true;
     }
-    if (approvalStatus != ApprovalStatus.approved) {
-      return false;
-    }
-    return DateTime.now().isAfter(accessDate) || DateTime.now().isAtSameMomentAs(accessDate);
+    // Approved (verified) users can access regardless of countdown
+    return approvalStatus == ApprovalStatus.approved;
   }
 
   /// Check if countdown is still active (access date not reached yet)
@@ -262,12 +261,49 @@ class AccessControlService {
     if (user == null) return null;
 
     try {
-      final doc = forceServer
-          ? await _firestore.collection('users').doc(user.uid).get(const GetOptions(source: Source.server))
-          : await _firestore.collection('users').doc(user.uid).get();
+      // Always read from server to avoid stale cached approvalStatus
+      final doc = await _firestore.collection('users').doc(user.uid).get(
+        const GetOptions(source: Source.server),
+      );
       if (!doc.exists) return null;
 
-      return UserAccessData.fromFirestore(doc.data()!, user.uid);
+      final data = doc.data()!;
+      final approvalStatus = data['approvalStatus'] as String? ?? 'pending';
+
+      // Cross-check: if users.approvalStatus is not approved, check if
+      // profiles.verificationStatus is already approved and auto-correct
+      if (approvalStatus != 'approved') {
+        debugPrint('🔑 approvalStatus=$approvalStatus — cross-checking profiles.verificationStatus');
+        try {
+          final profileDoc = await _firestore.collection('profiles').doc(user.uid).get(
+            const GetOptions(source: Source.server),
+          );
+          if (profileDoc.exists) {
+            final verificationStatus = profileDoc.data()?['verificationStatus'] as String?;
+            debugPrint('🔑 profiles.verificationStatus=$verificationStatus');
+            if (verificationStatus == 'approved') {
+              debugPrint('🔑 Auto-correcting users.approvalStatus to approved');
+              // Profile is verified but users collection is out of sync — fix it
+              await _firestore.collection('users').doc(user.uid).update({
+                'approvalStatus': 'approved',
+                'approvedAt': FieldValue.serverTimestamp(),
+                'approvedBy': 'system_sync',
+                'updatedAt': FieldValue.serverTimestamp(),
+              });
+              // Re-read the corrected document
+              final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
+                const GetOptions(source: Source.server),
+              );
+              if (!correctedDoc.exists) return null;
+              return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
+            }
+          }
+        } catch (_) {
+          // Non-critical — proceed with original data
+        }
+      }
+
+      return UserAccessData.fromFirestore(data, user.uid);
     } catch (e) {
       // Fallback to cache on network error
       try {
