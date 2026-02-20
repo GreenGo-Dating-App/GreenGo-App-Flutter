@@ -18,18 +18,36 @@ import '../../features/profile/presentation/bloc/profile_event.dart';
 /// to prevent a Google Play account's subscription from being applied to the wrong app user.
 class BaseMembershipDialog extends StatefulWidget {
   final String userId;
+  final CoinBloc? coinBloc;
+  final ProfileBloc? profileBloc;
 
-  const BaseMembershipDialog({super.key, required this.userId});
+  const BaseMembershipDialog({
+    super.key,
+    required this.userId,
+    this.coinBloc,
+    this.profileBloc,
+  });
 
   /// Convenience method – returns `true` when the user successfully purchases.
   static Future<bool> show({
     required BuildContext context,
     required String userId,
   }) async {
+    // Capture blocs from the parent context before opening the dialog,
+    // since the dialog's own context won't have access to them.
+    CoinBloc? coinBloc;
+    ProfileBloc? profileBloc;
+    try { coinBloc = context.read<CoinBloc>(); } catch (_) {}
+    try { profileBloc = context.read<ProfileBloc>(); } catch (_) {}
+
     final result = await showDialog<bool>(
       context: context,
       barrierDismissible: true,
-      builder: (_) => BaseMembershipDialog(userId: userId),
+      builder: (_) => BaseMembershipDialog(
+        userId: userId,
+        coinBloc: coinBloc,
+        profileBloc: profileBloc,
+      ),
     );
     return result ?? false;
   }
@@ -208,13 +226,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
     }
 
     if (mounted) {
-      // Refresh coin balance and profile in the UI
-      try {
-        context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
-      } catch (_) {}
-      try {
-        context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
-      } catch (_) {}
+      // Refresh coin balance and profile in the UI using the captured blocs
+      widget.coinBloc?.add(LoadCoinBalance(widget.userId));
+      widget.profileBloc?.add(ProfileLoadRequested(userId: widget.userId));
       setState(() => _loading = false);
       Navigator.of(context).pop(true);
     }
