@@ -12,6 +12,7 @@ class ConversationCard extends StatelessWidget {
   final Profile? otherUserProfile;
   final String currentUserId;
   final VoidCallback? onTap;
+  final VoidCallback? onLongPress;
 
   const ConversationCard({
     super.key,
@@ -19,6 +20,7 @@ class ConversationCard extends StatelessWidget {
     required this.otherUserProfile,
     required this.currentUserId,
     this.onTap,
+    this.onLongPress,
   });
 
   @override
@@ -28,6 +30,7 @@ class ConversationCard extends StatelessWidget {
 
     return InkWell(
       onTap: onTap,
+      onLongPress: onLongPress,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
@@ -58,6 +61,25 @@ class ConversationCard extends StatelessWidget {
                         )
                       : null,
                 ),
+
+                // Online status indicator
+                if (otherUserProfile?.isOnline ?? false)
+                  Positioned(
+                    right: 0,
+                    bottom: 0,
+                    child: Container(
+                      width: 14,
+                      height: 14,
+                      decoration: BoxDecoration(
+                        color: AppColors.successGreen,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: AppColors.backgroundDark,
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
 
                 // Search conversation badge
                 if (conversation.isSearchConversation)

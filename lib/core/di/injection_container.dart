@@ -305,6 +305,8 @@ Future<void> init() async {
   sl.registerFactory(
     () => ConversationsBloc(
       getConversations: sl(),
+      deleteConversationForMe: sl(),
+      deleteConversationForBoth: sl(),
     ),
   );
 

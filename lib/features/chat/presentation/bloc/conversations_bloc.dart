@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/usecases/get_conversations.dart';
+import '../../domain/usecases/delete_conversation.dart';
 import 'conversations_event.dart';
 import 'conversations_state.dart';
 
@@ -8,14 +9,20 @@ import 'conversations_state.dart';
 /// Manages list of user's conversations
 class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
   final GetConversations getConversations;
+  final DeleteConversationForMe deleteConversationForMe;
+  final DeleteConversationForBoth deleteConversationForBoth;
 
   String? _userId;
 
   ConversationsBloc({
     required this.getConversations,
+    required this.deleteConversationForMe,
+    required this.deleteConversationForBoth,
   }) : super(const ConversationsInitial()) {
     on<ConversationsLoadRequested>(_onLoadRequested);
     on<ConversationsRefreshRequested>(_onRefreshRequested);
+    on<ConversationDeleteForMeRequested>(_onDeleteForMe);
+    on<ConversationDeleteForBothRequested>(_onDeleteForBoth);
   }
 
   Future<void> _onLoadRequested(
@@ -52,6 +59,48 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     if (_userId != null) {
       add(ConversationsLoadRequested(_userId!));
     }
+  }
+
+  Future<void> _onDeleteForMe(
+    ConversationDeleteForMeRequested event,
+    Emitter<ConversationsState> emit,
+  ) async {
+    final result = await deleteConversationForMe(
+      DeleteConversationForMeParams(
+        conversationId: event.conversationId,
+        userId: event.userId,
+      ),
+    );
+    result.fold(
+      (failure) => emit(ConversationsError('Failed to delete: ${failure.toString()}')),
+      (_) {
+        // Refresh conversations after deletion
+        if (_userId != null) {
+          add(ConversationsLoadRequested(_userId!));
+        }
+      },
+    );
+  }
+
+  Future<void> _onDeleteForBoth(
+    ConversationDeleteForBothRequested event,
+    Emitter<ConversationsState> emit,
+  ) async {
+    final result = await deleteConversationForBoth(
+      DeleteConversationForBothParams(
+        conversationId: event.conversationId,
+        userId: event.userId,
+      ),
+    );
+    result.fold(
+      (failure) => emit(ConversationsError('Failed to delete: ${failure.toString()}')),
+      (_) {
+        // Refresh conversations after deletion
+        if (_userId != null) {
+          add(ConversationsLoadRequested(_userId!));
+        }
+      },
+    );
   }
 
   @override

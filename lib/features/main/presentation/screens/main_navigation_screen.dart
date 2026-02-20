@@ -11,6 +11,7 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/services/feature_flags_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
+import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/membership_badge.dart';
@@ -89,6 +90,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // Activity tracking for re-engagement notifications
   late final ActivityTrackingService _activityTrackingService;
 
+  // Online presence service
+  late final PresenceService _presenceService;
+
   late List<Widget> _screens;
   late final NotificationsBloc _notificationsBloc;
 
@@ -138,6 +142,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Initialize activity tracking for re-engagement notifications
     _activityTrackingService = ActivityTrackingService();
     _activityTrackingService.startTracking();
+
+    // Initialize presence service and mark user as online
+    _presenceService = PresenceService(userId: widget.userId);
+    _presenceService.setOnline();
     WidgetsBinding.instance.addObserver(this);
 
     // Initialize gamification bloc (only when enabled)
@@ -514,6 +522,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     switch (state) {
       case AppLifecycleState.resumed:
         _activityTrackingService.startTracking();
+        _presenceService.setOnline();
         // Re-check access control on every app resume to enforce countdown
         _loadCachedCountdown();
         _loadAccessData();
@@ -523,6 +532,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       case AppLifecycleState.detached:
       case AppLifecycleState.hidden:
         _activityTrackingService.stopTracking();
+        _presenceService.setOffline();
         break;
     }
   }
@@ -684,6 +694,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
     WidgetsBinding.instance.removeObserver(this);
+    _presenceService.setOffline();
     _activityTrackingService.dispose();
     _notificationsBloc.close();
     _coinBloc.close();

@@ -1471,6 +1471,15 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  String _formatLastSeen(DateTime lastSeen) {
+    final diff = DateTime.now().difference(lastSeen);
+    if (diff.inMinutes < 1) return 'Active just now';
+    if (diff.inMinutes < 60) return 'Active ${diff.inMinutes}m ago';
+    if (diff.inHours < 24) return 'Active ${diff.inHours}h ago';
+    if (diff.inDays < 7) return 'Active ${diff.inDays}d ago';
+    return 'Active a while ago';
+  }
+
   PreferredSizeWidget _buildAppBar() {
     return AppBar(
       backgroundColor: AppColors.backgroundCard,
@@ -1526,6 +1535,25 @@ class _ChatScreenState extends State<ChatScreen> {
                         AppLocalizations.of(context)!.chatTyping,
                         style: const TextStyle(
                           color: AppColors.richGold,
+                          fontSize: 12,
+                        ),
+                      );
+                    }
+                    // Show online status or last seen
+                    if (widget.otherUserProfile.isOnline) {
+                      return const Text(
+                        'Online',
+                        style: TextStyle(
+                          color: AppColors.successGreen,
+                          fontSize: 12,
+                        ),
+                      );
+                    }
+                    if (widget.otherUserProfile.lastSeen != null) {
+                      return Text(
+                        _formatLastSeen(widget.otherUserProfile.lastSeen!),
+                        style: const TextStyle(
+                          color: AppColors.textTertiary,
                           fontSize: 12,
                         ),
                       );

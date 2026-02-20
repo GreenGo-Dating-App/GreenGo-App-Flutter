@@ -24,6 +24,9 @@ abstract class DiscoveryRemoteDataSource {
   /// Clears the in-memory discovery cache for a user
   void clearDiscoveryCache(String userId);
 
+  /// Clears all in-memory discovery caches
+  void clearAllDiscoveryCaches();
+
   Future<SwipeAction> recordSwipe({
     required String userId,
     required String targetUserId,
@@ -105,6 +108,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   void clearDiscoveryCache(String userId) {
     _cache.remove(userId);
     debugPrint('[Discovery] Cache cleared for $userId');
+  }
+
+  @override
+  void clearAllDiscoveryCaches() {
+    _cache.clear();
+    debugPrint('[Discovery] All caches cleared');
   }
 
   @override
@@ -191,6 +200,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
             .map((c) => c.toLowerCase())
             .contains(country.toLowerCase());
       }).toList();
+    }
+
+    // Apply online-only filter
+    if (preferences.onlyOnlineNow) {
+      filteredCandidates = filteredCandidates
+          .where((candidate) => candidate.profile.isOnline)
+          .toList();
     }
 
     // Categorize candidates into priority tiers:

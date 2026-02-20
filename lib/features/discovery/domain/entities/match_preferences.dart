@@ -12,6 +12,7 @@ class MatchPreferences extends Equatable {
   final List<String> preferredOrientations; // empty = show all
   final List<String> preferredCountries; // empty = show all
   final bool sortByDistance; // true = sort closest first
+  final bool onlyOnlineNow; // true = show only online users
 
   const MatchPreferences({
     required this.userId,
@@ -25,6 +26,7 @@ class MatchPreferences extends Equatable {
     this.preferredOrientations = const [],
     this.preferredCountries = const [],
     this.sortByDistance = false,
+    this.onlyOnlineNow = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -39,6 +41,7 @@ class MatchPreferences extends Equatable {
       dealBreakers: const [],
       preferredOrientations: const [],
       preferredCountries: const [],
+      onlyOnlineNow: false,
     );
   }
 
@@ -55,6 +58,7 @@ class MatchPreferences extends Equatable {
     List<String>? preferredOrientations,
     List<String>? preferredCountries,
     bool? sortByDistance,
+    bool? onlyOnlineNow,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -68,6 +72,7 @@ class MatchPreferences extends Equatable {
       preferredOrientations: preferredOrientations ?? this.preferredOrientations,
       preferredCountries: preferredCountries ?? this.preferredCountries,
       sortByDistance: sortByDistance ?? this.sortByDistance,
+      onlyOnlineNow: onlyOnlineNow ?? this.onlyOnlineNow,
     );
   }
 
@@ -85,6 +90,7 @@ class MatchPreferences extends Equatable {
       'preferredOrientations': preferredOrientations,
       'preferredCountries': preferredCountries,
       'sortByDistance': sortByDistance,
+      'onlyOnlineNow': onlyOnlineNow,
     };
   }
 
@@ -111,6 +117,7 @@ class MatchPreferences extends Equatable {
               .toList() ??
           const [],
       sortByDistance: map['sortByDistance'] as bool? ?? false,
+      onlyOnlineNow: map['onlyOnlineNow'] as bool? ?? false,
     );
   }
 
@@ -127,5 +134,6 @@ class MatchPreferences extends Equatable {
         preferredOrientations,
         preferredCountries,
         sortByDistance,
+        onlyOnlineNow,
       ];
 }
