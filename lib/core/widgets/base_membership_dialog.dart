@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -163,10 +164,14 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
       });
 
       // Track purchase ownership — ties this Google Play purchase to this app user
+      // Stored by Firebase Auth UID (not Google Play email) so membership
+      // follows the app account, not the payment method.
       final token = p.purchaseID ?? '';
+      final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
       if (token.isNotEmpty) {
         await firestore.collection('membership_purchases').doc(token).set({
           'userId': widget.userId,
+          'userEmail': userEmail,
           'productId': p.productID,
           'purchaseId': token,
           'purchasedAt': Timestamp.fromDate(now),

@@ -161,10 +161,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules freeDefaults = MembershipRules(
     dailyMessageLimit: 10,
     dailySwipeLimit: 20,
-    dailySuperLikeLimit: 0,
+    dailySuperLikeLimit: 1,
     hourlyLikeLimit: 5,
     hourlyNopeLimit: 10,
-    hourlySuperLikeLimit: 0,
+    hourlySuperLikeLimit: 1,
     canSeeWhoLiked: false,
     canUseAdvancedFilters: false,
     canFilterByLocation: false,

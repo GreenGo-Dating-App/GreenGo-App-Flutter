@@ -4,13 +4,14 @@ import '../../features/membership/domain/entities/membership.dart';
 
 /// Types of usage limits that can be tracked
 enum UsageLimitType {
-  swipes,      // Legacy — all swipes combined (daily)
-  likes,       // Right swipes — hourly
-  nopes,       // Left swipes — hourly
-  superLikes,  // Up swipes — hourly
-  messages,    // Daily
-  boosts,      // Monthly
-  mediaSends,  // Daily
+  swipes,           // Legacy — all swipes combined (daily)
+  likes,            // Right swipes — hourly
+  nopes,            // Left swipes — hourly
+  superLikes,       // Up swipes — hourly
+  dailySuperLikes,  // Up swipes — daily cap
+  messages,         // Daily
+  boosts,           // Monthly
+  mediaSends,       // Daily
 }
 
 /// Result of checking a usage limit
@@ -203,6 +204,8 @@ class UsageLimitService {
         return rules.hourlyNopeLimit;
       case UsageLimitType.superLikes:
         return rules.hourlySuperLikeLimit;
+      case UsageLimitType.dailySuperLikes:
+        return rules.dailySuperLikeLimit;
       case UsageLimitType.swipes:
         return rules.dailySwipeLimit;
       case UsageLimitType.messages:
@@ -223,6 +226,8 @@ class UsageLimitService {
         return 'nopeCount';
       case UsageLimitType.superLikes:
         return 'superLikeCount';
+      case UsageLimitType.dailySuperLikes:
+        return 'dailySuperLikeCount';
       case UsageLimitType.swipes:
         return 'swipeCount';
       case UsageLimitType.messages:
@@ -243,6 +248,8 @@ class UsageLimitService {
         return 'nopes';
       case UsageLimitType.superLikes:
         return 'super likes';
+      case UsageLimitType.dailySuperLikes:
+        return 'daily super likes';
       case UsageLimitType.swipes:
         return 'swipes';
       case UsageLimitType.messages:
@@ -272,6 +279,8 @@ class UsageLimitService {
           return 'Super Likes are not available on the ${currentTier.displayName} plan. Upgrade to unlock this feature!';
         }
         return "You've used all $limit super likes this hour. Upgrade for more or wait until next hour.";
+      case UsageLimitType.dailySuperLikes:
+        return "You've used your $limit free super like${limit == 1 ? '' : 's'} for today. Use coins for more or wait until tomorrow.";
       case UsageLimitType.swipes:
         return "You've used all $limit swipes for today. Upgrade to get more swipes or wait until tomorrow.";
       case UsageLimitType.messages:
