@@ -223,6 +223,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     final now = DateTime.now();
     const nopeCooldownDays = 90;
+    const likeCooldownDays = 30;
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
@@ -268,8 +269,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         }
         // Otherwise: still within 90 days, don't show
       } else if (swipeRecord.actionType == 'like' || swipeRecord.actionType == 'superLike') {
-        // Liked but not matched - Priority 3
-        priority3LikedNoResponse.add(candidate);
+        // Liked but not matched - hidden for 30 days, then reappear
+        final daysSinceSwipe = now.difference(swipeRecord.timestamp).inDays;
+        if (daysSinceSwipe >= likeCooldownDays) {
+          // Cooldown expired, show again as unseen
+          priority1NotSeen.add(candidate);
+        } else {
+          // Still within 30 days, show as low priority
+          priority3LikedNoResponse.add(candidate);
+        }
       }
     }
 
@@ -293,6 +301,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Always add admin/support profile at the beginning if not already swiped
     final swipedUserIds = swipeHistory.keys.toSet();
     final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
+    // Remove admin from prioritized list to avoid duplicates
+    if (adminCandidate != null) {
+      prioritizedCandidates.removeWhere(
+        (c) => c.profile.userId == adminCandidate.profile.userId,
+      );
+    }
     final result = adminCandidate != null
         ? [adminCandidate, ...prioritizedCandidates]
         : prioritizedCandidates;

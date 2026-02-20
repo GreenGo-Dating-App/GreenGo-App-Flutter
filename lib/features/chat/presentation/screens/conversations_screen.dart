@@ -234,43 +234,38 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             }
 
             if (state is ConversationsEmpty) {
-              return ListView(
-                children: [
-                  const SizedBox(height: 40),
-                  Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.chat_bubble_outline,
-                          size: 80,
-                          color: AppColors.textTertiary,
-                        ),
-                        const SizedBox(height: 24),
-                        Text(
-                          AppLocalizations.of(context)!.chatNoMessagesYet,
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 40),
-                          child: Text(
-                            AppLocalizations.of(context)!.chatStartSwipingToChat,
-                            style: const TextStyle(
-                              color: AppColors.textSecondary,
-                              fontSize: 16,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ],
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.chat_bubble_outline,
+                      size: 80,
+                      color: AppColors.textTertiary,
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 24),
+                    Text(
+                      AppLocalizations.of(context)!.chatNoMessagesYet,
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 40),
+                      child: Text(
+                        AppLocalizations.of(context)!.chatStartSwipingToChat,
+                        style: const TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 16,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
               );
             }
 
