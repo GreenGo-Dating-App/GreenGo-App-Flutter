@@ -12,6 +12,8 @@ import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
 import '../../domain/entities/coin_transaction.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
@@ -250,8 +252,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _hasBaseMembership = true;
           _baseMembershipEndDate = endDate;
         });
-        // Refresh coin balance
+        // Refresh coin balance and profile (so membership gate unlocks)
         context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+        try {
+          context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
+        } catch (_) {}
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('GreenGo Membership activated! +500 bonus coins. Valid for 1 year.'),
