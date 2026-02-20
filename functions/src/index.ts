@@ -66,6 +66,11 @@ export {
   handleExpiredGracePeriods,
 } from './subscriptions/subscriptionManager';
 
+// Purchase Verification (prevents shared billing account abuse)
+export {
+  verifyPurchase,
+} from './subscription/index';
+
 // Coin Functions
 export {
   verifyGooglePlayCoinPurchase,

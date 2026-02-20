@@ -94,11 +94,15 @@ exports.verifyPurchase = (0, https_1.onCall)({
         throw new https_1.HttpsError('invalid-argument', 'Missing required fields');
     }
     // Ensure the authenticated user matches the userId
+    // Membership is tied to the Firebase Auth user (app account),
+    // NOT to the Google Play / App Store billing account email.
     if (request.auth.uid !== userId) {
         throw new https_1.HttpsError('permission-denied', 'User ID mismatch');
     }
+    // Get the user's app email (Firebase Auth email) for audit trail
+    const userEmail = request.auth.token.email || null;
     try {
-        (0, utils_1.logInfo)(`Verifying purchase for user ${userId}, product ${productId}, platform ${platform}`);
+        (0, utils_1.logInfo)(`Verifying purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
         // Determine subscription tier from product ID
         let tier;
         if (productId.includes('gold')) {
@@ -120,6 +124,35 @@ exports.verifyPurchase = (0, https_1.onCall)({
         if (!verified) {
             throw new https_1.HttpsError('failed-precondition', 'Purchase verification failed');
         }
+        // CRITICAL: Prevent shared billing account abuse.
+        // If this purchaseToken is already used by a DIFFERENT app user, reject it.
+        // Each Google Play purchase can only grant membership to ONE app account.
+        const tokenSnapshot = await utils_1.db
+            .collection('subscriptions')
+            .where('purchaseToken', '==', purchaseToken)
+            .where('status', 'in', ['active', 'in_grace_period'])
+            .limit(1)
+            .get();
+        if (!tokenSnapshot.empty) {
+            const existingOwner = tokenSnapshot.docs[0].data().userId;
+            if (existingOwner !== userId) {
+                (0, utils_1.logInfo)(`Purchase token already belongs to user ${existingOwner}, rejecting for user ${userId} (${userEmail})`);
+                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account. Each subscription covers one account only.');
+            }
+        }
+        // Also check purchase records to catch expired/cancelled subscriptions that reuse tokens
+        const purchaseTokenCheck = await utils_1.db
+            .collection('purchases')
+            .where('purchaseToken', '==', purchaseToken)
+            .limit(1)
+            .get();
+        if (!purchaseTokenCheck.empty) {
+            const purchaseOwner = purchaseTokenCheck.docs[0].data().userId;
+            if (purchaseOwner !== userId) {
+                (0, utils_1.logInfo)(`Purchase token in purchase history belongs to user ${purchaseOwner}, rejecting for user ${userId} (${userEmail})`);
+                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account. Each subscription covers one account only.');
+            }
+        }
         const now = admin.firestore.Timestamp.now();
         const endDate = admin.firestore.Timestamp.fromDate(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days from now
         );
@@ -139,14 +172,18 @@ exports.verifyPurchase = (0, https_1.onCall)({
                 currentPeriodEnd: endDate,
                 purchaseToken: purchaseToken,
                 platform: platform,
+                userEmail: userEmail, // App user email (not Google billing email)
                 updatedAt: now,
             });
             (0, utils_1.logInfo)(`Updated existing subscription for user ${userId}`);
         }
         else {
             // Create new subscription
+            // Subscription is tied to userId (Firebase Auth UID) and userEmail,
+            // NOT to the Google Play billing account email.
             await utils_1.db.collection('subscriptions').add({
                 userId: userId,
+                userEmail: userEmail,
                 tier: tier,
                 status: types_1.SubscriptionStatus.ACTIVE,
                 startDate: now,
@@ -164,9 +201,10 @@ exports.verifyPurchase = (0, https_1.onCall)({
             });
             (0, utils_1.logInfo)(`Created new subscription for user ${userId}`);
         }
-        // Create purchase record
+        // Create purchase record with app user email for audit trail
         await utils_1.db.collection('purchases').add({
             userId: userId,
+            userEmail: userEmail,
             type: 'subscription',
             status: 'completed',
             productId: productId,
