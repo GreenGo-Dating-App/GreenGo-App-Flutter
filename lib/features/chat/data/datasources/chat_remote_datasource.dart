@@ -1411,15 +1411,22 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String conversationId,
     required String userId,
   }) async {
+    // CORE: Mark conversation as deleted for this user — this is the only
+    // operation that MUST succeed for the chat to disappear from the list.
+    await firestore.collection('conversations').doc(conversationId).update({
+      'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
+    });
+
+    // Everything below is best-effort cleanup. Failures are logged but
+    // do NOT prevent the deletion from succeeding.
+
+    String? otherUserId;
+    String? matchId;
     try {
-      // Get conversation to find the other user and matchId
       final conversationDoc = await firestore
           .collection('conversations')
           .doc(conversationId)
           .get();
-
-      String? otherUserId;
-      String? matchId;
       if (conversationDoc.exists) {
         final data = conversationDoc.data()!;
         final userId1 = data['userId1'] as String?;
@@ -1427,21 +1434,17 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         otherUserId = userId1 == userId ? userId2 : userId1;
         matchId = data['matchId'] as String?;
       }
+    } catch (e) {
+      debugPrint('Warning: could not read conversation data: $e');
+    }
 
-      // Mark conversation as deleted for this user (with timestamp for filtering)
-      await firestore.collection('conversations').doc(conversationId).update({
-        'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
-      });
-
-      // Mark all messages as deleted for this user (write into metadata.deletedFor
-      // so getMessagesStream filter picks it up)
+    // Best-effort: mark messages as deleted for this user
+    try {
       final messagesSnapshot = await firestore
           .collection('conversations')
           .doc(conversationId)
           .collection('messages')
           .get();
-
-      // Batch in chunks of 500 (Firestore limit)
       final docs = messagesSnapshot.docs;
       for (var i = 0; i < docs.length; i += 500) {
         final batch = firestore.batch();
@@ -1453,102 +1456,26 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         }
         await batch.commit();
       }
-
-      // Deactivate the match for this user only (per-user deactivation)
-      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_') && !matchId.startsWith('search_')) {
-        try {
-          final matchDoc = await firestore.collection('matches').doc(matchId).get();
-          if (matchDoc.exists) {
-            await firestore.collection('matches').doc(matchId).update({
-              'deactivatedFor.$userId': true,
-              'deactivatedAt_$userId': Timestamp.fromDate(DateTime.now()),
-            });
-          }
-        } catch (e) {
-          debugPrint('Warning: could not deactivate match $matchId: $e');
-        }
-      }
-
-      // Delete only the current user's swipe records (Firestore rules only allow
-      // deleting your own swipes). The other user keeps their swipe records.
-      if (otherUserId != null) {
-        try {
-          final mySwipes = await firestore
-              .collection('swipes')
-              .where('userId', isEqualTo: userId)
-              .where('targetUserId', isEqualTo: otherUserId)
-              .get();
-          for (final doc in mySwipes.docs) {
-            await doc.reference.delete();
-          }
-        } catch (e) {
-          debugPrint('Warning: could not delete swipe records: $e');
-        }
-      }
     } catch (e) {
-      throw Exception('Failed to delete conversation: $e');
+      debugPrint('Warning: could not mark messages as deleted: $e');
     }
-  }
 
-  @override
-  Future<void> deleteConversationForBoth({
-    required String conversationId,
-    required String userId,
-  }) async {
-    try {
-      // Get conversation to verify user is part of it
-      final conversationDoc =
-          await firestore.collection('conversations').doc(conversationId).get();
-
-      if (!conversationDoc.exists) {
-        throw Exception('Conversation not found');
-      }
-
-      final data = conversationDoc.data()!;
-      final userId1 = data['userId1'] as String;
-      final userId2 = data['userId2'] as String;
-      final matchId = data['matchId'] as String?;
-
-      if (userId != userId1 && userId != userId2) {
-        throw Exception('User is not part of this conversation');
-      }
-
-      final otherUserId = userId1 == userId ? userId2 : userId1;
-
-      // Delete all messages in the conversation (batch in chunks of 500)
-      final messagesSnapshot = await firestore
-          .collection('conversations')
-          .doc(conversationId)
-          .collection('messages')
-          .get();
-
-      final docs = messagesSnapshot.docs;
-      for (var i = 0; i < docs.length; i += 500) {
-        final batch = firestore.batch();
-        final chunk = docs.skip(i).take(500);
-        for (final doc in chunk) {
-          batch.delete(doc.reference);
+    // Best-effort: deactivate the match for this user
+    if (matchId != null && matchId.isNotEmpty) {
+      try {
+        final matchDoc = await firestore.collection('matches').doc(matchId).get();
+        if (matchDoc.exists) {
+          await firestore.collection('matches').doc(matchId).update({
+            'deactivatedFor.$userId': true,
+          });
         }
-        await batch.commit();
+      } catch (e) {
+        debugPrint('Warning: could not deactivate match: $e');
       }
+    }
 
-      // Deactivate the match for both users
-      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_') && !matchId.startsWith('search_')) {
-        try {
-          final matchDoc = await firestore.collection('matches').doc(matchId).get();
-          if (matchDoc.exists) {
-            await firestore.collection('matches').doc(matchId).update({
-              'isActive': false,
-              'deactivatedBy': userId,
-              'deactivatedAt': Timestamp.fromDate(DateTime.now()),
-            });
-          }
-        } catch (e) {
-          debugPrint('Warning: could not deactivate match $matchId: $e');
-        }
-      }
-
-      // Delete current user's swipe records (rules only allow own swipes)
+    // Best-effort: delete own swipe records
+    if (otherUserId != null) {
       try {
         final mySwipes = await firestore
             .collection('swipes')
@@ -1561,12 +1488,85 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       } catch (e) {
         debugPrint('Warning: could not delete swipe records: $e');
       }
-
-      // Permanently delete the conversation document
-      await firestore.collection('conversations').doc(conversationId).delete();
-    } catch (e) {
-      throw Exception('Failed to delete conversation for both: $e');
     }
+  }
+
+  @override
+  Future<void> deleteConversationForBoth({
+    required String conversationId,
+    required String userId,
+  }) async {
+    // Read conversation data first (needed for cleanup)
+    String? otherUserId;
+    String? matchId;
+    try {
+      final conversationDoc =
+          await firestore.collection('conversations').doc(conversationId).get();
+      if (conversationDoc.exists) {
+        final data = conversationDoc.data()!;
+        final userId1 = data['userId1'] as String?;
+        final userId2 = data['userId2'] as String?;
+        otherUserId = userId1 == userId ? userId2 : userId1;
+        matchId = data['matchId'] as String?;
+      }
+    } catch (e) {
+      debugPrint('Warning: could not read conversation data: $e');
+    }
+
+    // Best-effort: delete all messages in the conversation
+    try {
+      final messagesSnapshot = await firestore
+          .collection('conversations')
+          .doc(conversationId)
+          .collection('messages')
+          .get();
+      final docs = messagesSnapshot.docs;
+      for (var i = 0; i < docs.length; i += 500) {
+        final batch = firestore.batch();
+        final chunk = docs.skip(i).take(500);
+        for (final doc in chunk) {
+          batch.delete(doc.reference);
+        }
+        await batch.commit();
+      }
+    } catch (e) {
+      debugPrint('Warning: could not delete messages: $e');
+    }
+
+    // Best-effort: deactivate the match for both users
+    if (matchId != null && matchId.isNotEmpty) {
+      try {
+        final matchDoc = await firestore.collection('matches').doc(matchId).get();
+        if (matchDoc.exists) {
+          await firestore.collection('matches').doc(matchId).update({
+            'isActive': false,
+            'deactivatedBy': userId,
+            'deactivatedAt': Timestamp.fromDate(DateTime.now()),
+          });
+        }
+      } catch (e) {
+        debugPrint('Warning: could not deactivate match: $e');
+      }
+    }
+
+    // Best-effort: delete own swipe records
+    if (otherUserId != null) {
+      try {
+        final mySwipes = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: userId)
+            .where('targetUserId', isEqualTo: otherUserId)
+            .get();
+        for (final doc in mySwipes.docs) {
+          await doc.reference.delete();
+        }
+      } catch (e) {
+        debugPrint('Warning: could not delete swipe records: $e');
+      }
+    }
+
+    // CORE: delete the conversation document itself
+    await firestore.collection('conversations').doc(conversationId).delete();
   }
 
   @override
