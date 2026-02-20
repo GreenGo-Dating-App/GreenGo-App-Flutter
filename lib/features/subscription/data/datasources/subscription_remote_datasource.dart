@@ -79,14 +79,26 @@ class SubscriptionRemoteDataSource {
   }
 
   /// Purchase subscription (Points 146-147)
+  /// Uses obfuscatedExternalAccountId on Android to tie the purchase
+  /// to the app's Firebase Auth user, not the Google Play billing account.
   Future<void> purchaseSubscription({
     required ProductDetails product,
     required String userId,
   }) async {
-    final PurchaseParam purchaseParam = PurchaseParam(
-      productDetails: product,
-      applicationUserName: userId, // Used for verification
-    );
+    final PurchaseParam purchaseParam;
+
+    if (Platform.isAndroid) {
+      purchaseParam = GooglePlayPurchaseParam(
+        productDetails: product,
+        applicationUserName: userId,
+        changeSubscriptionParam: null,
+      );
+    } else {
+      purchaseParam = PurchaseParam(
+        productDetails: product,
+        applicationUserName: userId,
+      );
+    }
 
     await inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
   }
