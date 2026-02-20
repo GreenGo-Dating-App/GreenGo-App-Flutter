@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
@@ -1453,35 +1454,35 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         await batch.commit();
       }
 
-      // Deactivate the match so the user must re-discover and re-match
-      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_')) {
-        await firestore.collection('matches').doc(matchId).update({
-          'isActive': false,
-          'deactivatedBy': userId,
-          'deactivatedAt': Timestamp.fromDate(DateTime.now()),
-        });
+      // Deactivate the match for this user only (per-user deactivation)
+      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_') && !matchId.startsWith('search_')) {
+        try {
+          final matchDoc = await firestore.collection('matches').doc(matchId).get();
+          if (matchDoc.exists) {
+            await firestore.collection('matches').doc(matchId).update({
+              'deactivatedFor.$userId': true,
+              'deactivatedAt_$userId': Timestamp.fromDate(DateTime.now()),
+            });
+          }
+        } catch (e) {
+          debugPrint('Warning: could not deactivate match $matchId: $e');
+        }
       }
 
-      // Delete swipe records between these two users so they can rediscover each other
+      // Delete only the current user's swipe records (Firestore rules only allow
+      // deleting your own swipes). The other user keeps their swipe records.
       if (otherUserId != null) {
-        // Delete current user's swipes on the other user
-        final mySwipes = await firestore
-            .collection('swipes')
-            .where('userId', isEqualTo: userId)
-            .where('targetUserId', isEqualTo: otherUserId)
-            .get();
-        for (final doc in mySwipes.docs) {
-          await doc.reference.delete();
-        }
-
-        // Delete the other user's swipes on current user
-        final theirSwipes = await firestore
-            .collection('swipes')
-            .where('userId', isEqualTo: otherUserId)
-            .where('targetUserId', isEqualTo: userId)
-            .get();
-        for (final doc in theirSwipes.docs) {
-          await doc.reference.delete();
+        try {
+          final mySwipes = await firestore
+              .collection('swipes')
+              .where('userId', isEqualTo: userId)
+              .where('targetUserId', isEqualTo: otherUserId)
+              .get();
+          for (final doc in mySwipes.docs) {
+            await doc.reference.delete();
+          }
+        } catch (e) {
+          debugPrint('Warning: could not delete swipe records: $e');
         }
       }
     } catch (e) {
@@ -1506,10 +1507,13 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       final data = conversationDoc.data()!;
       final userId1 = data['userId1'] as String;
       final userId2 = data['userId2'] as String;
+      final matchId = data['matchId'] as String?;
 
       if (userId != userId1 && userId != userId2) {
         throw Exception('User is not part of this conversation');
       }
+
+      final otherUserId = userId1 == userId ? userId2 : userId1;
 
       // Delete all messages in the conversation (batch in chunks of 500)
       final messagesSnapshot = await firestore
@@ -1526,6 +1530,36 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           batch.delete(doc.reference);
         }
         await batch.commit();
+      }
+
+      // Deactivate the match for both users
+      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_') && !matchId.startsWith('search_')) {
+        try {
+          final matchDoc = await firestore.collection('matches').doc(matchId).get();
+          if (matchDoc.exists) {
+            await firestore.collection('matches').doc(matchId).update({
+              'isActive': false,
+              'deactivatedBy': userId,
+              'deactivatedAt': Timestamp.fromDate(DateTime.now()),
+            });
+          }
+        } catch (e) {
+          debugPrint('Warning: could not deactivate match $matchId: $e');
+        }
+      }
+
+      // Delete current user's swipe records (rules only allow own swipes)
+      try {
+        final mySwipes = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: userId)
+            .where('targetUserId', isEqualTo: otherUserId)
+            .get();
+        for (final doc in mySwipes.docs) {
+          await doc.reference.delete();
+        }
+      } catch (e) {
+        debugPrint('Warning: could not delete swipe records: $e');
       }
 
       // Permanently delete the conversation document

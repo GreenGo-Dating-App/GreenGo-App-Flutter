@@ -723,10 +723,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         .collection('matches')
         .where('userId2', isEqualTo: userId);
 
-    if (activeOnly) {
-      query1 = query1.where('isActive', isEqualTo: true);
-      query2 = query2.where('isActive', isEqualTo: true);
-    }
+    // NOTE: We do NOT filter isActive in Firestore query because legacy matches
+    // may not have the isActive field at all (null != true). Instead we filter
+    // client-side after fetching.
 
     // Execute both queries
     final results1 = await query1.orderBy('matchedAt', descending: true).get();
@@ -739,16 +738,28 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final matches = <Match>[];
 
     for (final doc in results1.docs) {
+      final data = doc.data() as Map<String, dynamic>?;
+      if (activeOnly && data != null) {
+        // Skip globally deactivated matches (delete for both)
+        if (data['isActive'] == false) continue;
+        // Skip matches deactivated for this user (delete for me)
+        final deactivatedFor = data['deactivatedFor'] as Map<String, dynamic>?;
+        if (deactivatedFor != null && deactivatedFor[userId] == true) continue;
+      }
       final match = MatchModel.fromFirestore(doc);
-      // Filter out matches with blocked users
       if (!blockedUserIds.contains(match.userId2)) {
         matches.add(match);
       }
     }
 
     for (final doc in results2.docs) {
+      final data = doc.data() as Map<String, dynamic>?;
+      if (activeOnly && data != null) {
+        if (data['isActive'] == false) continue;
+        final deactivatedFor = data['deactivatedFor'] as Map<String, dynamic>?;
+        if (deactivatedFor != null && deactivatedFor[userId] == true) continue;
+      }
       final match = MatchModel.fromFirestore(doc);
-      // Filter out matches with blocked users
       if (!blockedUserIds.contains(match.userId1)) {
         matches.add(match);
       }
