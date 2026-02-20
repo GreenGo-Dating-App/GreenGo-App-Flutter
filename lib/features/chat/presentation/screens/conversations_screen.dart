@@ -333,6 +333,13 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 conversation: conversation,
                                 otherUserProfile: profile,
                                 currentUserId: widget.userId,
+                                onLongPress: () {
+                                  _showDeleteBottomSheet(
+                                    context,
+                                    conversation,
+                                    profile?.displayName ?? 'this user',
+                                  );
+                                },
                                 onTap: () async {
                                   // Base membership gate
                                   final allowed = await BaseMembershipGate.checkAndGate(
@@ -383,6 +390,99 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
           },
         ),
       ),
+    );
+  }
+
+  void _showDeleteBottomSheet(
+    BuildContext context,
+    Conversation conversation,
+    String otherUserName,
+  ) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (bottomSheetContext) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 40,
+                  height: 4,
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: BoxDecoration(
+                    color: AppColors.textTertiary.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                Text(
+                  'Delete conversation with $otherUserName?',
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                ListTile(
+                  leading: const Icon(Icons.delete_outline, color: AppColors.textSecondary),
+                  title: const Text(
+                    'Delete for me',
+                    style: TextStyle(color: AppColors.textPrimary),
+                  ),
+                  subtitle: const Text(
+                    'This chat will be removed from your list only',
+                    style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                  ),
+                  onTap: () {
+                    Navigator.pop(bottomSheetContext);
+                    context.read<ConversationsBloc>().add(
+                      ConversationDeleteForMeRequested(
+                        conversationId: conversation.conversationId,
+                        userId: widget.userId,
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.delete_forever, color: AppColors.errorRed),
+                  title: const Text(
+                    'Delete for both',
+                    style: TextStyle(color: AppColors.errorRed),
+                  ),
+                  subtitle: const Text(
+                    'This chat will be removed for both users',
+                    style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                  ),
+                  onTap: () {
+                    Navigator.pop(bottomSheetContext);
+                    context.read<ConversationsBloc>().add(
+                      ConversationDeleteForBothRequested(
+                        conversationId: conversation.conversationId,
+                        userId: widget.userId,
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 8),
+                ListTile(
+                  leading: const Icon(Icons.close, color: AppColors.textTertiary),
+                  title: Text(
+                    AppLocalizations.of(context)!.cancel,
+                    style: const TextStyle(color: AppColors.textSecondary),
+                  ),
+                  onTap: () => Navigator.pop(bottomSheetContext),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

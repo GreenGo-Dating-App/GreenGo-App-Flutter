@@ -549,6 +549,13 @@ class _AuthWrapperState extends State<AuthWrapper> {
             context.read<LanguageProvider>().loadFromDatabase();
           }
         }
+        // When user signs out, reset access state to prevent stuck splash
+        if (state is AuthInitial) {
+          setState(() {
+            _accessData = null;
+            _isCheckingAccess = false;
+          });
+        }
       },
       builder: (context, state) {
         if (state is AuthInitial || _isCheckingAccess) {

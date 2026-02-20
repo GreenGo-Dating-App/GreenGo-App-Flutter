@@ -26,6 +26,7 @@ import '../../../admin/data/repositories/verification_admin_repository_impl.dart
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
 import 'photo_management_screen.dart';
 import 'edit_basic_info_screen.dart';
@@ -972,9 +973,13 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _logout(BuildContext context) {
+    // Clear discovery caches before signing out
+    try {
+      final datasource = GetIt.I<DiscoveryRemoteDataSource>();
+      datasource.clearAllDiscoveryCaches();
+    } catch (_) {}
+    // Sign out — AuthWrapper in main.dart handles navigation reactively
     context.read<AuthBloc>().add(const AuthSignOutRequested());
-    // Navigate to login screen and clear navigation stack
-    Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
   }
 
   void _showRestartDiscoveryDialog(BuildContext context, Profile profile) {
@@ -1033,6 +1038,12 @@ class EditProfileScreen extends StatelessWidget {
         batch.delete(doc.reference);
       }
       await batch.commit();
+
+      // Clear in-memory discovery cache so fresh profiles load
+      try {
+        final datasource = GetIt.I<DiscoveryRemoteDataSource>();
+        datasource.clearDiscoveryCache(profile.userId);
+      } catch (_) {}
 
       // Also reset daily swipe usage counter
       final todayKey = _getTodayKey();

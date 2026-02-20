@@ -245,7 +245,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               _lastAttemptedGridCardId = null;
               // Refresh coin balance after any swipe (super likes cost coins)
               context.read<CoinBloc>().add(LoadCoinBalance(userId));
-              if (state.createdMatch) {
+              // Update grid overlay for match result
+              if (state.createdMatch && state.matchedUserId != null) {
+                setState(() {
+                  _gridActionOverlays[state.matchedUserId!] = 'matched';
+                });
                 _showMatchDialog(context, state);
               }
             }
@@ -749,19 +753,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       }
     });
 
-    // Listen for match result after like/superLike
-    if (actionType == SwipeActionType.like || actionType == SwipeActionType.superLike) {
-      // Check for match in the next state update
-      Future.delayed(const Duration(milliseconds: 500), () {
-        if (!mounted) return;
-        final state = context.read<DiscoveryBloc>().state;
-        if (state is DiscoverySwipeCompleted && state.createdMatch && state.matchedUserId == card.userId) {
-          setState(() {
-            _gridActionOverlays[card.userId] = 'matched';
-          });
-        }
-      });
-    }
+    // Match detection is handled by the BlocConsumer listener above
   }
 
   Widget _buildLoadMoreCard() {
@@ -1271,6 +1263,22 @@ class _GridProfileCardState extends State<_GridProfileCard> {
               Container(
                 color: AppColors.backgroundCard,
                 child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
+              ),
+
+            // Online indicator
+            if (profile.isOnline)
+              Positioned(
+                top: 6,
+                left: 6,
+                child: Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    color: AppColors.successGreen,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white, width: 1.5),
+                  ),
+                ),
               ),
 
             // Action overlay (after action confirmed)

@@ -66,6 +66,10 @@ class Profile extends Equatable {
   final bool hasBaseMembership;
   final DateTime? baseMembershipEndDate;
 
+  // Online presence fields
+  final bool isOnline;
+  final DateTime? lastSeen;
+
   const Profile({
     required this.userId,
     required this.displayName,
@@ -111,6 +115,8 @@ class Profile extends Equatable {
     this.membershipEndDate,
     this.hasBaseMembership = false,
     this.baseMembershipEndDate,
+    this.isOnline = false,
+    this.lastSeen,
   });
 
   /// Get formatted nickname with @ prefix
@@ -204,6 +210,8 @@ class Profile extends Equatable {
         membershipEndDate,
         hasBaseMembership,
         baseMembershipEndDate,
+        isOnline,
+        lastSeen,
       ];
 
   /// Copy with updated fields
@@ -252,6 +260,8 @@ class Profile extends Equatable {
     DateTime? membershipEndDate,
     bool? hasBaseMembership,
     DateTime? baseMembershipEndDate,
+    bool? isOnline,
+    DateTime? lastSeen,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -298,6 +308,8 @@ class Profile extends Equatable {
       membershipEndDate: membershipEndDate ?? this.membershipEndDate,
       hasBaseMembership: hasBaseMembership ?? this.hasBaseMembership,
       baseMembershipEndDate: baseMembershipEndDate ?? this.baseMembershipEndDate,
+      isOnline: isOnline ?? this.isOnline,
+      lastSeen: lastSeen ?? this.lastSeen,
     );
   }
 }

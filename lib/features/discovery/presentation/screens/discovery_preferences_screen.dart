@@ -853,6 +853,29 @@ class _DiscoveryPreferencesScreenState
                     );
                   },
                 ),
+                SwitchListTile(
+                  title: const Text(
+                    'Online Now',
+                    style: TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 16,
+                    ),
+                  ),
+                  subtitle: const Text(
+                    'Show only profiles that are currently online',
+                    style: TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 14,
+                    ),
+                  ),
+                  value: _preferences.onlyOnlineNow,
+                  activeColor: AppColors.richGold,
+                  onChanged: (bool value) {
+                    _updatePreferences(
+                      _preferences.copyWith(onlyOnlineNow: value),
+                    );
+                  },
+                ),
               ],
             ),
           ),

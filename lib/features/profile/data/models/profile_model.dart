@@ -50,6 +50,8 @@ class ProfileModel extends Profile {
     super.membershipEndDate,
     super.hasBaseMembership,
     super.baseMembershipEndDate,
+    super.isOnline,
+    super.lastSeen,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
@@ -136,6 +138,10 @@ class ProfileModel extends Profile {
       hasBaseMembership: json['hasBaseMembership'] as bool? ?? false,
       baseMembershipEndDate: json['baseMembershipEndDate'] != null
           ? (json['baseMembershipEndDate'] as Timestamp).toDate()
+          : null,
+      isOnline: json['isOnline'] as bool? ?? false,
+      lastSeen: json['lastSeen'] != null
+          ? (json['lastSeen'] as Timestamp).toDate()
           : null,
     );
   }
@@ -252,6 +258,10 @@ class ProfileModel extends Profile {
       'baseMembershipEndDate': baseMembershipEndDate != null
           ? Timestamp.fromDate(baseMembershipEndDate!)
           : null,
+      'isOnline': isOnline,
+      'lastSeen': lastSeen != null
+          ? Timestamp.fromDate(lastSeen!)
+          : null,
     };
   }
 
@@ -301,6 +311,8 @@ class ProfileModel extends Profile {
       membershipEndDate: profile.membershipEndDate,
       hasBaseMembership: profile.hasBaseMembership,
       baseMembershipEndDate: profile.baseMembershipEndDate,
+      isOnline: profile.isOnline,
+      lastSeen: profile.lastSeen,
     );
   }
 }

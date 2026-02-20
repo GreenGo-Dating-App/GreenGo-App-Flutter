@@ -210,7 +210,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
         // Grant 500 bonus coins
         final balanceRef = firestore
-            .collection('coin_balances')
+            .collection('coinBalances')
             .doc(widget.userId);
         final balanceDoc = await balanceRef.get();
         if (balanceDoc.exists) {
@@ -225,7 +225,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           });
         }
         await firestore
-            .collection('coin_balances')
+            .collection('coinBalances')
             .doc(widget.userId)
             .collection('coinBatches')
             .add({
