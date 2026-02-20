@@ -179,6 +179,21 @@ class SubscriptionRemoteDataSource {
   ) async {
     debugPrint('Using fallback local verification (debug mode only)');
 
+    // Check if purchase token already belongs to a different user
+    final existingSub = await firestore
+        .collection('subscriptions')
+        .where('purchaseToken', isEqualTo: purchaseDetails.purchaseID)
+        .limit(1)
+        .get();
+
+    if (existingSub.docs.isNotEmpty) {
+      final ownerUserId = existingSub.docs.first.data()['userId'] as String?;
+      if (ownerUserId != null && ownerUserId != userId) {
+        debugPrint('⛔ Fallback: purchase token belongs to $ownerUserId, not $userId — rejecting');
+        return false;
+      }
+    }
+
     final platform = Platform.isAndroid ? 'android' : 'ios';
     final tierName = _getTierFromProductId(purchaseDetails.productID);
     final tier = SubscriptionTierExtension.fromString(tierName);
@@ -385,10 +400,11 @@ class SubscriptionRemoteDataSource {
 
         case PurchaseStatus.purchased:
         case PurchaseStatus.restored:
-          // Skip restored purchases that don't belong to this app user.
-          // Google Play returns ALL purchases for the billing account,
-          // but only the original buyer should get the membership.
-          if (purchase.status == PurchaseStatus.restored) {
+          // CRITICAL: Before verifying, check if this purchase token is
+          // already owned by a DIFFERENT app user. This prevents shared
+          // Google billing accounts from granting membership to multiple
+          // app accounts. Applies to both new purchases and restores.
+          {
             final existingSub = await firestore
                 .collection('subscriptions')
                 .where('purchaseToken', isEqualTo: purchase.purchaseID)
@@ -398,7 +414,25 @@ class SubscriptionRemoteDataSource {
             if (existingSub.docs.isNotEmpty) {
               final ownerUserId = existingSub.docs.first.data()['userId'] as String?;
               if (ownerUserId != null && ownerUserId != userId) {
-                debugPrint('Skipping restored purchase — belongs to different app user: $ownerUserId');
+                debugPrint('⛔ Purchase token belongs to app user $ownerUserId, NOT current user $userId — skipping');
+                if (purchase.pendingCompletePurchase) {
+                  await inAppPurchase.completePurchase(purchase);
+                }
+                continue;
+              }
+            }
+
+            // Also check purchase history records
+            final existingPurchase = await firestore
+                .collection('purchases')
+                .where('purchaseToken', isEqualTo: purchase.purchaseID)
+                .limit(1)
+                .get();
+
+            if (existingPurchase.docs.isNotEmpty) {
+              final purchaseOwner = existingPurchase.docs.first.data()['userId'] as String?;
+              if (purchaseOwner != null && purchaseOwner != userId) {
+                debugPrint('⛔ Purchase record belongs to app user $purchaseOwner, NOT current user $userId — skipping');
                 if (purchase.pendingCompletePurchase) {
                   await inAppPurchase.completePurchase(purchase);
                 }
