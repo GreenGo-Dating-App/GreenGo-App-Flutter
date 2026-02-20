@@ -1411,6 +1411,22 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String userId,
   }) async {
     try {
+      // Get conversation to find the other user and matchId
+      final conversationDoc = await firestore
+          .collection('conversations')
+          .doc(conversationId)
+          .get();
+
+      String? otherUserId;
+      String? matchId;
+      if (conversationDoc.exists) {
+        final data = conversationDoc.data()!;
+        final userId1 = data['userId1'] as String?;
+        final userId2 = data['userId2'] as String?;
+        otherUserId = userId1 == userId ? userId2 : userId1;
+        matchId = data['matchId'] as String?;
+      }
+
       // Mark conversation as deleted for this user (with timestamp for filtering)
       await firestore.collection('conversations').doc(conversationId).update({
         'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
@@ -1435,6 +1451,38 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           });
         }
         await batch.commit();
+      }
+
+      // Deactivate the match so the user must re-discover and re-match
+      if (matchId != null && matchId.isNotEmpty && !matchId.startsWith('superlike_')) {
+        await firestore.collection('matches').doc(matchId).update({
+          'isActive': false,
+          'deactivatedBy': userId,
+          'deactivatedAt': Timestamp.fromDate(DateTime.now()),
+        });
+      }
+
+      // Delete swipe records between these two users so they can rediscover each other
+      if (otherUserId != null) {
+        // Delete current user's swipes on the other user
+        final mySwipes = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: userId)
+            .where('targetUserId', isEqualTo: otherUserId)
+            .get();
+        for (final doc in mySwipes.docs) {
+          await doc.reference.delete();
+        }
+
+        // Delete the other user's swipes on current user
+        final theirSwipes = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: otherUserId)
+            .where('targetUserId', isEqualTo: userId)
+            .get();
+        for (final doc in theirSwipes.docs) {
+          await doc.reference.delete();
+        }
       }
     } catch (e) {
       throw Exception('Failed to delete conversation: $e');
