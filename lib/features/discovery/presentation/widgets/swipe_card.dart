@@ -72,6 +72,8 @@ class _SwipeCardState extends State<SwipeCard>
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
 
+    final isOnline = widget.card.candidate.profile.isOnline;
+
     Widget cardContent = SizedBox(
       height: screenSize.height * 0.75,
       child: Stack(
@@ -82,6 +84,28 @@ class _SwipeCardState extends State<SwipeCard>
           _buildGradientOverlay(),
           if (_swipeDirection != null && _swipeIntensity > 0)
             _buildSwipeIndicators(),
+          // Online status indicator
+          if (isOnline)
+            Positioned(
+              top: 16,
+              left: 16,
+              child: Container(
+                width: 14,
+                height: 14,
+                decoration: BoxDecoration(
+                  color: AppColors.successGreen,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white, width: 2),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.successGreen.withOpacity(0.5),
+                      blurRadius: 6,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+              ),
+            ),
         ],
       ),
     );

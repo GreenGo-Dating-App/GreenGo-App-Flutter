@@ -366,7 +366,10 @@ class SubscriptionRemoteDataSource {
     debugPrint('Purchase stream listener setup for user: $userId');
   }
 
-  /// Handle purchase updates from the stream
+  /// Handle purchase updates from the stream.
+  /// Only processes purchases that belong to the current app user.
+  /// Purchases from a shared Google billing account that belong to a
+  /// different app user are skipped (completed but not verified).
   Future<void> _handlePurchaseUpdates(
     List<PurchaseDetails> purchases,
     String userId,
@@ -382,6 +385,28 @@ class SubscriptionRemoteDataSource {
 
         case PurchaseStatus.purchased:
         case PurchaseStatus.restored:
+          // Skip restored purchases that don't belong to this app user.
+          // Google Play returns ALL purchases for the billing account,
+          // but only the original buyer should get the membership.
+          if (purchase.status == PurchaseStatus.restored) {
+            final existingSub = await firestore
+                .collection('subscriptions')
+                .where('purchaseToken', isEqualTo: purchase.purchaseID)
+                .limit(1)
+                .get();
+
+            if (existingSub.docs.isNotEmpty) {
+              final ownerUserId = existingSub.docs.first.data()['userId'] as String?;
+              if (ownerUserId != null && ownerUserId != userId) {
+                debugPrint('Skipping restored purchase — belongs to different app user: $ownerUserId');
+                if (purchase.pendingCompletePurchase) {
+                  await inAppPurchase.completePurchase(purchase);
+                }
+                continue;
+              }
+            }
+          }
+
           // Verify and complete the purchase
           try {
             final verified = await verifyPurchase(
@@ -407,7 +432,17 @@ class SubscriptionRemoteDataSource {
               _onPurchaseError?.call(purchase, 'Verification failed');
             }
           } catch (e) {
-            _onPurchaseError?.call(purchase, e.toString());
+            // If the server rejected due to token ownership, just complete
+            // the purchase to clear it from the queue — don't treat as error
+            final errorMsg = e.toString();
+            if (errorMsg.contains('already-exists') || errorMsg.contains('already linked')) {
+              debugPrint('Purchase belongs to different app account — skipping: $errorMsg');
+              if (purchase.pendingCompletePurchase) {
+                await inAppPurchase.completePurchase(purchase);
+              }
+            } else {
+              _onPurchaseError?.call(purchase, errorMsg);
+            }
           }
           break;
 

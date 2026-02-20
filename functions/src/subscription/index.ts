@@ -103,6 +103,45 @@ export const verifyPurchase = onCall(
         throw new HttpsError('failed-precondition', 'Purchase verification failed');
       }
 
+      // CRITICAL: Prevent shared billing account abuse.
+      // If this purchaseToken is already used by a DIFFERENT app user, reject it.
+      // Each Google Play purchase can only grant membership to ONE app account.
+      const tokenSnapshot = await db
+        .collection('subscriptions')
+        .where('purchaseToken', '==', purchaseToken)
+        .where('status', 'in', ['active', 'in_grace_period'])
+        .limit(1)
+        .get();
+
+      if (!tokenSnapshot.empty) {
+        const existingOwner = tokenSnapshot.docs[0].data().userId;
+        if (existingOwner !== userId) {
+          logInfo(`Purchase token already belongs to user ${existingOwner}, rejecting for user ${userId} (${userEmail})`);
+          throw new HttpsError(
+            'already-exists',
+            'This purchase is already linked to a different account. Each subscription covers one account only.'
+          );
+        }
+      }
+
+      // Also check purchase records to catch expired/cancelled subscriptions that reuse tokens
+      const purchaseTokenCheck = await db
+        .collection('purchases')
+        .where('purchaseToken', '==', purchaseToken)
+        .limit(1)
+        .get();
+
+      if (!purchaseTokenCheck.empty) {
+        const purchaseOwner = purchaseTokenCheck.docs[0].data().userId;
+        if (purchaseOwner !== userId) {
+          logInfo(`Purchase token in purchase history belongs to user ${purchaseOwner}, rejecting for user ${userId} (${userEmail})`);
+          throw new HttpsError(
+            'already-exists',
+            'This purchase is already linked to a different account. Each subscription covers one account only.'
+          );
+        }
+      }
+
       const now = admin.firestore.Timestamp.now();
       const endDate = admin.firestore.Timestamp.fromDate(
         new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days from now
