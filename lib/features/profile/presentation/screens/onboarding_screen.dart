@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/core/di/injection_container.dart' as di;
+import '../../../authentication/presentation/bloc/auth_bloc.dart';
+import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../bloc/onboarding_bloc.dart';
 import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
@@ -32,9 +33,9 @@ class OnboardingScreen extends StatelessWidget {
       child: BlocConsumer<OnboardingBloc, OnboardingState>(
         listener: (context, state) async {
           if (state is OnboardingComplete) {
-            // Sign out and return to login — profile needs admin verification first
-            await FirebaseAuth.instance.signOut();
+            // Trigger access status re-check so auth wrapper shows Verification Pending
             if (context.mounted) {
+              context.read<AuthBloc>().add(AuthCheckAccessStatusRequested());
               Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
             }
           } else if (state is OnboardingError) {

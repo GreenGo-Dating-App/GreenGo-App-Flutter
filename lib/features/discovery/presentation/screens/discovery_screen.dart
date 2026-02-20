@@ -223,12 +223,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         final isNowActive = profile.isTravelerActive;
         final nowCity = profile.travelerLocation?.city ?? '';
 
+        // Always keep local profile reference up to date (membership, etc.)
+        _currentUserProfile = profile;
+
         final travelerJustActivated = isNowActive && !_wasTravelerActive;
         final travelerCityChanged = isNowActive && _wasTravelerActive && nowCity != _prevTravelerCity;
 
         if (travelerJustActivated || travelerCityChanged) {
           debugPrint('[Discovery] Traveler activated/changed → refreshing stack');
-          _currentUserProfile = profile;
           refreshWithPreferences(_currentPreferences);
         }
 
@@ -1237,8 +1239,8 @@ class _GridProfileCardState extends State<_GridProfileCard> {
               CachedNetworkImage(
                 imageUrl: photoUrl,
                 fit: BoxFit.cover,
-                memCacheWidth: 300,
-                maxWidthDiskCache: 300,
+                memCacheWidth: 600,
+                maxWidthDiskCache: 600,
                 fadeInDuration: const Duration(milliseconds: 200),
                 placeholder: (context, url) => Container(
                   color: AppColors.backgroundCard,

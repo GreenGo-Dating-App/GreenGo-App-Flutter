@@ -158,7 +158,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
 
       // Grant 500 bonus coins
       final balanceRef = firestore
-          .collection('coin_balances')
+          .collection('coinBalances')
           .doc(widget.userId);
 
       final balanceDoc = await balanceRef.get();
@@ -178,7 +178,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
 
       // Add a coin batch for the bonus
       await firestore
-          .collection('coin_balances')
+          .collection('coinBalances')
           .doc(widget.userId)
           .collection('coinBatches')
           .add({
