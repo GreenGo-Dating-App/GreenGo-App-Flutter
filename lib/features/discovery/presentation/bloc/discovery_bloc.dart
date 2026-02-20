@@ -153,7 +153,17 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         }
       }
 
-      // Step 2: If no free allowance, charge coins
+      // Free users: strictly limited to daily allowance — no coin bypass
+      if (!usedFreeAllowance && tier == MembershipTier.free) {
+        emit(DiscoverySuperLikeLimitReached(
+          cards: currentState.cards,
+          currentIndex: currentState.currentIndex,
+          limitResult: dailySuperLikeLimit,
+        ));
+        return;
+      }
+
+      // Step 3: If no free allowance (paid tiers only), charge coins
       if (!usedFreeAllowance && coinRepository != null) {
         final balanceResult = await coinRepository!.getBalance(event.userId);
         final insufficient = balanceResult.fold(

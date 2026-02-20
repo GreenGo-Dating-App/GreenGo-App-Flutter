@@ -67,12 +67,17 @@ export const verifyPurchase = onCall(
     }
 
     // Ensure the authenticated user matches the userId
+    // Membership is tied to the Firebase Auth user (app account),
+    // NOT to the Google Play / App Store billing account email.
     if (request.auth.uid !== userId) {
       throw new HttpsError('permission-denied', 'User ID mismatch');
     }
 
+    // Get the user's app email (Firebase Auth email) for audit trail
+    const userEmail = request.auth.token.email || null;
+
     try {
-      logInfo(`Verifying purchase for user ${userId}, product ${productId}, platform ${platform}`);
+      logInfo(`Verifying purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
 
       // Determine subscription tier from product ID
       let tier: SubscriptionTier;
@@ -120,14 +125,18 @@ export const verifyPurchase = onCall(
           currentPeriodEnd: endDate,
           purchaseToken: purchaseToken,
           platform: platform,
+          userEmail: userEmail, // App user email (not Google billing email)
           updatedAt: now,
         });
 
         logInfo(`Updated existing subscription for user ${userId}`);
       } else {
         // Create new subscription
+        // Subscription is tied to userId (Firebase Auth UID) and userEmail,
+        // NOT to the Google Play billing account email.
         await db.collection('subscriptions').add({
           userId: userId,
+          userEmail: userEmail,
           tier: tier,
           status: SubscriptionStatus.ACTIVE,
           startDate: now,
@@ -147,9 +156,10 @@ export const verifyPurchase = onCall(
         logInfo(`Created new subscription for user ${userId}`);
       }
 
-      // Create purchase record
+      // Create purchase record with app user email for audit trail
       await db.collection('purchases').add({
         userId: userId,
+        userEmail: userEmail,
         type: 'subscription',
         status: 'completed',
         productId: productId,
