@@ -126,21 +126,31 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final rules = event.membershipRules ?? MembershipRules.freeDefaults;
     final tier = event.membershipTier ?? MembershipTier.free;
 
-    // ── Super Like: check hourly limit first, then coins ──
+    // ── Super Like: check daily limit first, then hourly, then coins ──
     if (event.actionType == SwipeActionType.superLike) {
       bool usedFreeAllowance = false;
 
-      // Step 1: Check hourly super like limit
-      final superLikeLimit = await _usageLimitService.checkLimit(
+      // Step 1: Check daily super like limit
+      final dailySuperLikeLimit = await _usageLimitService.checkLimit(
         userId: event.userId,
-        limitType: UsageLimitType.superLikes,
+        limitType: UsageLimitType.dailySuperLikes,
         rules: rules,
         currentTier: tier,
       );
 
-      if (superLikeLimit.isAllowed) {
-        // Free super like available from tier allowance — no coins needed
-        usedFreeAllowance = true;
+      if (dailySuperLikeLimit.isAllowed) {
+        // Step 2: Check hourly super like limit
+        final superLikeLimit = await _usageLimitService.checkLimit(
+          userId: event.userId,
+          limitType: UsageLimitType.superLikes,
+          rules: rules,
+          currentTier: tier,
+        );
+
+        if (superLikeLimit.isAllowed) {
+          // Free super like available from tier allowance — no coins needed
+          usedFreeAllowance = true;
+        }
       }
 
       // Step 2: If no free allowance, charge coins
@@ -271,6 +281,10 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           await _usageLimitService.recordUsage(
             userId: event.userId,
             limitType: UsageLimitType.superLikes,
+          );
+          await _usageLimitService.recordUsage(
+            userId: event.userId,
+            limitType: UsageLimitType.dailySuperLikes,
           );
           break;
         case SwipeActionType.skip:
