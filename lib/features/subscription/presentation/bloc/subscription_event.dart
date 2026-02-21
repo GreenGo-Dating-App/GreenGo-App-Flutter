@@ -37,20 +37,6 @@ class PurchaseSubscription extends SubscriptionEvent {
   List<Object?> get props => [product, tier];
 }
 
-/// Cancel subscription
-class CancelSubscriptionEvent extends SubscriptionEvent {
-  final String subscriptionId;
-  final String reason;
-
-  const CancelSubscriptionEvent({
-    required this.subscriptionId,
-    required this.reason,
-  });
-
-  @override
-  List<Object?> get props => [subscriptionId, reason];
-}
-
 /// Restore purchases
 class RestorePurchasesEvent extends SubscriptionEvent {
   final String userId;

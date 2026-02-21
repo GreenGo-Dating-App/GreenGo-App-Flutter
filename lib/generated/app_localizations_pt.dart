@@ -2275,6 +2275,221 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get photoMaxPrivate => 'Máximo de 6 fotos privadas permitidas';
+
+  @override
+  String get membershipRequired => 'Subscrição necessária';
+
+  @override
+  String get membershipRequiredDescription =>
+      'Precisas de ser membro do GreenGo para realizar esta ação.';
+
+  @override
+  String get yearlyMembership => 'Subscrição anual';
+
+  @override
+  String get subscribeNow => 'Subscrever agora';
+
+  @override
+  String get maybeLater => 'Talvez mais tarde';
+
+  @override
+  String get shopTitle => 'Loja';
+
+  @override
+  String get shopTabCoins => 'Moedas';
+
+  @override
+  String get shopTabMembership => 'Subscrição';
+
+  @override
+  String get shopTabVideo => 'Vídeo';
+
+  @override
+  String get shopUpgradeExperience => 'Melhora a tua experiência';
+
+  @override
+  String shopCurrentPlan(String tier) {
+    return 'Plano atual: $tier';
+  }
+
+  @override
+  String shopExpires(String date, String days) {
+    return 'Expira: $date ($days dias restantes)';
+  }
+
+  @override
+  String shopExpired(String date) {
+    return 'Expirado: $date';
+  }
+
+  @override
+  String get shopMonthly => 'Mensal';
+
+  @override
+  String get shopYearly => 'Anual';
+
+  @override
+  String get shopSavePercent => 'POUPA ~17%';
+
+  @override
+  String get shopUpgradeAndSave =>
+      'Melhora e poupa! Desconto nos níveis superiores';
+
+  @override
+  String get shopBaseMembership => 'Subscrição Base GreenGo';
+
+  @override
+  String get shopYearlyPlan => 'Subscrição anual';
+
+  @override
+  String get shopActive => 'ATIVA';
+
+  @override
+  String get shopBaseMembershipDescription =>
+      'Necessária para deslizar, gostar, conversar e interagir com outros utilizadores.';
+
+  @override
+  String shopValidUntil(String date) {
+    return 'Válida até $date';
+  }
+
+  @override
+  String shopUpgradeTo(String tier, String duration) {
+    return 'Melhorar para $tier ($duration)';
+  }
+
+  @override
+  String shopBuyTier(String tier, String duration) {
+    return 'Comprar $tier ($duration)';
+  }
+
+  @override
+  String get shopOneYear => '1 Ano';
+
+  @override
+  String get shopOneMonth => '1 Mês';
+
+  @override
+  String shopYouSave(String amount, String tier) {
+    return 'Poupas $amount/mês ao melhorar de $tier';
+  }
+
+  @override
+  String get shopDailyLikes => 'Likes diários';
+
+  @override
+  String get shopSuperLikes => 'Super Likes';
+
+  @override
+  String get shopBoosts => 'Boosts';
+
+  @override
+  String get shopSeeWhoLikesYou => 'Ver quem gosta de ti';
+
+  @override
+  String get shopVipBadge => 'Distintivo VIP';
+
+  @override
+  String get shopPriorityMatching => 'Matching prioritário';
+
+  @override
+  String get shopSendCoins => 'Enviar moedas';
+
+  @override
+  String get shopRecipientNickname => 'Nickname do destinatário';
+
+  @override
+  String get shopEnterAmount => 'Introduz o montante';
+
+  @override
+  String get shopConfirmSend => 'Confirmar envio';
+
+  @override
+  String get shopSend => 'Enviar';
+
+  @override
+  String get shopUserNotFound => 'Utilizador não encontrado';
+
+  @override
+  String get shopCannotSendToSelf => 'Não podes enviar moedas para ti mesmo';
+
+  @override
+  String shopCoinsSentTo(String amount, String nickname) {
+    return '$amount moedas enviadas para @$nickname';
+  }
+
+  @override
+  String get shopFailedToSendCoins => 'Falha ao enviar moedas';
+
+  @override
+  String get shopEnterBothFields => 'Introduz o nickname e o montante';
+
+  @override
+  String get shopEnterValidAmount => 'Introduz um montante válido';
+
+  @override
+  String get shopInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get shopYouHave => 'Tens';
+
+  @override
+  String get shopGreenGoCoins => 'GreenGoCoins';
+
+  @override
+  String get shopUnlockPremium =>
+      'Desbloqueia funcionalidades premium e melhora a tua experiência de encontros';
+
+  @override
+  String get shopPopular => 'POPULAR';
+
+  @override
+  String get shopCoins => 'Moedas';
+
+  @override
+  String shopPurchaseCoinsFor(String coins, String price) {
+    return 'Comprar $coins moedas por $price';
+  }
+
+  @override
+  String get shopComingSoon => 'Em breve';
+
+  @override
+  String get shopVideoCoinsDescription =>
+      'Vê vídeos curtos para ganhar moedas grátis!\nFica atento a esta funcionalidade entusiasmante.';
+
+  @override
+  String get shopGetNotified => 'Receber notificação';
+
+  @override
+  String get shopNotifyMessage =>
+      'Avisamos-te quando os Video-Coins estiverem disponíveis';
+
+  @override
+  String get shopStoreNotAvailable =>
+      'Loja indisponível. Certifica-te de que o Google Play está instalado.';
+
+  @override
+  String get shopFailedToInitiate => 'Não foi possível iniciar a compra';
+
+  @override
+  String get shopUnableToLoadPackages => 'Não é possível carregar os pacotes';
+
+  @override
+  String get shopRetry => 'Tentar novamente';
+
+  @override
+  String get shopCheckInternet =>
+      'Certifica-te de que tens ligação à internet\ne tenta novamente.';
+
+  @override
+  String shopMembershipActivated(String date) {
+    return 'Subscrição GreenGo ativada! +500 moedas bónus. Válida até $date.';
+  }
+
+  @override
+  String get shopPreviousPurchaseFound =>
+      'Compra anterior encontrada. Tenta novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -4550,4 +4765,220 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get photoMaxPrivate => 'Máximo de 6 fotos privadas permitidas';
+
+  @override
+  String get membershipRequired => 'Assinatura necessária';
+
+  @override
+  String get membershipRequiredDescription =>
+      'Você precisa ser membro do GreenGo para realizar esta ação.';
+
+  @override
+  String get yearlyMembership => 'Assinatura anual';
+
+  @override
+  String get subscribeNow => 'Assinar agora';
+
+  @override
+  String get maybeLater => 'Talvez mais tarde';
+
+  @override
+  String get shopTitle => 'Loja';
+
+  @override
+  String get shopTabCoins => 'Moedas';
+
+  @override
+  String get shopTabMembership => 'Assinatura';
+
+  @override
+  String get shopTabVideo => 'Vídeo';
+
+  @override
+  String get shopUpgradeExperience => 'Melhore sua experiência';
+
+  @override
+  String shopCurrentPlan(String tier) {
+    return 'Plano atual: $tier';
+  }
+
+  @override
+  String shopExpires(String date, String days) {
+    return 'Expira: $date ($days dias restantes)';
+  }
+
+  @override
+  String shopExpired(String date) {
+    return 'Expirado: $date';
+  }
+
+  @override
+  String get shopMonthly => 'Mensal';
+
+  @override
+  String get shopYearly => 'Anual';
+
+  @override
+  String get shopSavePercent => 'ECONOMIZE ~17%';
+
+  @override
+  String get shopUpgradeAndSave =>
+      'Melhore e economize! Desconto nos níveis superiores';
+
+  @override
+  String get shopBaseMembership => 'Assinatura Base GreenGo';
+
+  @override
+  String get shopYearlyPlan => 'Assinatura anual';
+
+  @override
+  String get shopActive => 'ATIVA';
+
+  @override
+  String get shopBaseMembershipDescription =>
+      'Necessária para deslizar, curtir, conversar e interagir com outros usuários.';
+
+  @override
+  String shopValidUntil(String date) {
+    return 'Válida até $date';
+  }
+
+  @override
+  String shopUpgradeTo(String tier, String duration) {
+    return 'Melhorar para $tier ($duration)';
+  }
+
+  @override
+  String shopBuyTier(String tier, String duration) {
+    return 'Comprar $tier ($duration)';
+  }
+
+  @override
+  String get shopOneYear => '1 Ano';
+
+  @override
+  String get shopOneMonth => '1 Mês';
+
+  @override
+  String shopYouSave(String amount, String tier) {
+    return 'Você economiza $amount/mês ao melhorar de $tier';
+  }
+
+  @override
+  String get shopDailyLikes => 'Curtidas diárias';
+
+  @override
+  String get shopSuperLikes => 'Super Curtidas';
+
+  @override
+  String get shopBoosts => 'Boosts';
+
+  @override
+  String get shopSeeWhoLikesYou => 'Ver quem curtiu você';
+
+  @override
+  String get shopVipBadge => 'Selo VIP';
+
+  @override
+  String get shopPriorityMatching => 'Matching prioritário';
+
+  @override
+  String get shopSendCoins => 'Enviar moedas';
+
+  @override
+  String get shopRecipientNickname => 'Nickname do destinatário';
+
+  @override
+  String get shopEnterAmount => 'Digite o valor';
+
+  @override
+  String get shopConfirmSend => 'Confirmar envio';
+
+  @override
+  String get shopSend => 'Enviar';
+
+  @override
+  String get shopUserNotFound => 'Usuário não encontrado';
+
+  @override
+  String get shopCannotSendToSelf =>
+      'Você não pode enviar moedas para si mesmo';
+
+  @override
+  String shopCoinsSentTo(String amount, String nickname) {
+    return '$amount moedas enviadas para @$nickname';
+  }
+
+  @override
+  String get shopFailedToSendCoins => 'Falha ao enviar moedas';
+
+  @override
+  String get shopEnterBothFields => 'Digite o nickname e o valor';
+
+  @override
+  String get shopEnterValidAmount => 'Digite um valor válido';
+
+  @override
+  String get shopInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get shopYouHave => 'Você tem';
+
+  @override
+  String get shopGreenGoCoins => 'GreenGoCoins';
+
+  @override
+  String get shopUnlockPremium =>
+      'Desbloqueie recursos premium e melhore sua experiência de encontros';
+
+  @override
+  String get shopPopular => 'POPULAR';
+
+  @override
+  String get shopCoins => 'Moedas';
+
+  @override
+  String shopPurchaseCoinsFor(String coins, String price) {
+    return 'Comprar $coins moedas por $price';
+  }
+
+  @override
+  String get shopComingSoon => 'Em breve';
+
+  @override
+  String get shopVideoCoinsDescription =>
+      'Assista vídeos curtos para ganhar moedas grátis!\nFique ligado nessa funcionalidade empolgante.';
+
+  @override
+  String get shopGetNotified => 'Receber notificação';
+
+  @override
+  String get shopNotifyMessage =>
+      'Avisaremos quando os Video-Coins estiverem disponíveis';
+
+  @override
+  String get shopStoreNotAvailable =>
+      'Loja indisponível. Verifique se o Google Play está instalado.';
+
+  @override
+  String get shopFailedToInitiate => 'Não foi possível iniciar a compra';
+
+  @override
+  String get shopUnableToLoadPackages => 'Não foi possível carregar os pacotes';
+
+  @override
+  String get shopRetry => 'Tentar novamente';
+
+  @override
+  String get shopCheckInternet =>
+      'Verifique sua conexão com a internet\ne tente novamente.';
+
+  @override
+  String shopMembershipActivated(String date) {
+    return 'Assinatura GreenGo ativada! +500 moedas bônus. Válida até $date.';
+  }
+
+  @override
+  String get shopPreviousPurchaseFound =>
+      'Compra anterior encontrada. Tente novamente.';
 }

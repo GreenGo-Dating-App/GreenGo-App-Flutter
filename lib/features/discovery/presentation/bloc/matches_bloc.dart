@@ -1,4 +1,10 @@
+import 'dart:async';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
+import '../../domain/entities/match.dart' as domain;
 import '../../domain/usecases/get_matches.dart';
 import '../../domain/repositories/discovery_repository.dart';
 import 'matches_event.dart';
@@ -6,19 +12,26 @@ import 'matches_state.dart';
 
 /// Matches BLoC
 ///
-/// Manages user's matches
+/// Manages user's matches with real-time Firestore stream updates
 class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
   final GetMatches getMatches;
   final DiscoveryRepository repository;
+  final ProfileRepository profileRepository;
+
+  StreamSubscription<QuerySnapshot>? _matchesStream1;
+  StreamSubscription<QuerySnapshot>? _matchesStream2;
+  String? _currentUserId;
 
   MatchesBloc({
     required this.getMatches,
     required this.repository,
+    required this.profileRepository,
   }) : super(const MatchesInitial()) {
     on<MatchesLoadRequested>(_onLoadMatches);
     on<MatchesRefreshRequested>(_onRefreshMatches);
     on<MatchMarkedAsSeen>(_onMarkAsSeen);
     on<MatchUnmatchRequested>(_onUnmatch);
+    on<MatchesStreamUpdated>(_onStreamUpdated);
   }
 
   Future<void> _onLoadMatches(
@@ -26,31 +39,133 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
     Emitter<MatchesState> emit,
   ) async {
     emit(const MatchesLoading());
+    _currentUserId = event.userId;
 
-    final result = await getMatches(
-      GetMatchesParams(
-        userId: event.userId,
-        activeOnly: event.activeOnly,
-      ),
+    await _loadAndEmitMatches(event.userId, event.activeOnly, emit);
+
+    // Start listening for real-time match updates
+    _startMatchesStream(event.userId);
+  }
+
+  /// Core method to load matches + profiles and emit state
+  Future<void> _loadAndEmitMatches(
+    String userId,
+    bool activeOnly,
+    Emitter<MatchesState> emit,
+  ) async {
+    try {
+      final result = await getMatches(
+        GetMatchesParams(userId: userId, activeOnly: activeOnly),
+      );
+
+      if (result.isLeft()) {
+        debugPrint('[Matches] Failed to load matches');
+        emit(const MatchesError('Failed to load matches'));
+        return;
+      }
+
+      final matches = result.getOrElse(() => []);
+      debugPrint('[Matches] Loaded ${matches.length} matches for $userId');
+
+      if (matches.isEmpty) {
+        emit(const MatchesEmpty());
+      } else {
+        final profiles = await _loadProfiles(matches, userId);
+        debugPrint('[Matches] Loaded ${profiles.length} profiles');
+        emit(MatchesLoaded(matches: matches, profiles: profiles));
+      }
+    } catch (e) {
+      debugPrint('[Matches] Error loading matches: $e');
+      emit(MatchesError('Failed to load matches: $e'));
+    }
+  }
+
+  /// Load profiles for all users involved in matches
+  Future<Map<String, Profile>> _loadProfiles(
+    List<domain.Match> matches,
+    String currentUserId,
+  ) async {
+    final Map<String, Profile> profiles = {};
+    final userIds = <String>{currentUserId};
+
+    for (final match in matches) {
+      userIds.add(match.userId1);
+      userIds.add(match.userId2);
+    }
+
+    await Future.wait(
+      userIds.map((uid) async {
+        try {
+          final result = await profileRepository.getProfile(uid);
+          result.fold(
+            (_) {},
+            (profile) => profiles[uid] = profile,
+          );
+        } catch (e) {
+          debugPrint('Failed to load profile for $uid: $e');
+        }
+      }),
     );
 
-    result.fold(
-      (failure) => emit(const MatchesError('Failed to load matches')),
-      (matches) {
-        if (matches.isEmpty) {
-          emit(const MatchesEmpty());
-        } else {
-          emit(MatchesLoaded(matches: matches));
+    return profiles;
+  }
+
+  /// Start listening for new matches in real-time using two user-scoped queries
+  void _startMatchesStream(String userId) {
+    _matchesStream1?.cancel();
+    _matchesStream2?.cancel();
+
+    // Stream 1: matches where user is userId1
+    _matchesStream1 = FirebaseFirestore.instance
+        .collection('matches')
+        .where('userId1', isEqualTo: userId)
+        .snapshots()
+        .listen(
+      (snapshot) {
+        final hasNewOrModified = snapshot.docChanges.any((change) =>
+            change.type == DocumentChangeType.added ||
+            change.type == DocumentChangeType.modified);
+        if (hasNewOrModified) {
+          debugPrint('Match stream1 update detected - refreshing');
+          add(MatchesStreamUpdated(userId));
         }
       },
+      onError: (error) => debugPrint('Matches stream1 error: $error'),
     );
+
+    // Stream 2: matches where user is userId2
+    _matchesStream2 = FirebaseFirestore.instance
+        .collection('matches')
+        .where('userId2', isEqualTo: userId)
+        .snapshots()
+        .listen(
+      (snapshot) {
+        final hasNewOrModified = snapshot.docChanges.any((change) =>
+            change.type == DocumentChangeType.added ||
+            change.type == DocumentChangeType.modified);
+        if (hasNewOrModified) {
+          debugPrint('Match stream2 update detected - refreshing');
+          add(MatchesStreamUpdated(userId));
+        }
+      },
+      onError: (error) => debugPrint('Matches stream2 error: $error'),
+    );
+  }
+
+  Future<void> _onStreamUpdated(
+    MatchesStreamUpdated event,
+    Emitter<MatchesState> emit,
+  ) async {
+    await _loadAndEmitMatches(event.userId, true, emit);
   }
 
   Future<void> _onRefreshMatches(
     MatchesRefreshRequested event,
     Emitter<MatchesState> emit,
   ) async {
-    add(MatchesLoadRequested(userId: event.userId));
+    // Directly load and emit instead of dispatching another event,
+    // so RefreshIndicator properly waits for completion
+    await _loadAndEmitMatches(event.userId, true, emit);
   }
 
   Future<void> _onMarkAsSeen(
@@ -120,5 +235,12 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
         }
       },
     );
+  }
+
+  @override
+  Future<void> close() {
+    _matchesStream1?.cancel();
+    _matchesStream2?.cancel();
+    return super.close();
   }
 }

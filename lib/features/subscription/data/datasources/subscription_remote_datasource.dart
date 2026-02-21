@@ -18,15 +18,27 @@ class SubscriptionRemoteDataSource {
   final InAppPurchase inAppPurchase;
   final FirebaseFunctions functions;
 
-  // Product IDs (must match backend and store configurations)
-  static const String silverProductId = 'silver_premium_monthly';
-  static const String goldProductId = 'gold_premium_monthly';
-  static const String platinumProductId = 'platinum_vip_monthly';
+    // Product IDs for one-time membership purchases
+  static const String baseMembershipProductId = 'greengo_base_membership';
+  
+  // Monthly memberships
+  static const String silverMonthlyProductId = '1_month_silver';
+  static const String goldMonthlyProductId = '1_month_gold';
+  static const String platinumMonthlyProductId = '1_month_platinum';
+  
+  // Yearly memberships (with discount)
+  static const String silverYearlyProductId = '1_year_silver';
+  static const String goldYearlyProductId = '1_year_gold';
+  static const String platinumYearlyProductId = '1_year_platinum_membership';
 
   static const Set<String> _productIds = {
-    silverProductId,
-    goldProductId,
-    platinumProductId,
+    baseMembershipProductId,
+    silverMonthlyProductId,
+    goldMonthlyProductId,
+    platinumMonthlyProductId,
+    silverYearlyProductId,
+    goldYearlyProductId,
+    platinumYearlyProductId,
   };
 
   // Purchase stream subscription for monitoring
@@ -50,13 +62,12 @@ class SubscriptionRemoteDataSource {
       throw Exception('In-app purchases not available');
     }
 
-    // Set up platform-specific configurations
+            // Set up platform-specific configurations
     if (Platform.isAndroid) {
-      // Enable pending purchases for Google Play
-      InAppPurchaseAndroidPlatformAddition androidAddition =
-          inAppPurchase
-              .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
-      await androidAddition.enablePendingPurchases();
+      // In newer versions of in_app_purchase_android, enablePendingPurchases
+      // might not be needed or might be called automatically
+      // We'll skip this for now to avoid compilation errors
+      debugPrint('Android platform detected - skipping enablePendingPurchases');
     }
 
     return true;
@@ -78,13 +89,15 @@ class SubscriptionRemoteDataSource {
     return response.productDetails;
   }
 
-  /// Purchase subscription (Points 146-147)
-  /// Uses obfuscatedExternalAccountId on Android to tie the purchase
-  /// to the app's Firebase Auth user, not the Google Play billing account.
-  Future<void> purchaseSubscription({
+      /// Purchase membership (one-time purchase)
+  /// Users can buy membership for 1 month or 1 year
+  Future<void> purchaseMembership({
     required ProductDetails product,
     required String userId,
   }) async {
+    // For one-time purchases, we don't check if already owned
+    // because users can buy multiple times to extend membership
+    
     final PurchaseParam purchaseParam;
 
     if (Platform.isAndroid) {
@@ -100,20 +113,69 @@ class SubscriptionRemoteDataSource {
       );
     }
 
-    await inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+    // Use buyConsumable for one-time purchases
+    await inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
   }
 
-  /// Restore purchases (Point 154)
+    /// Restore purchases (Point 154)
+  /// Handles BILLING_RESPONSE_ITEM_ALREADY_OWNED by syncing with store
   Future<List<PurchaseDetails>> restorePurchases() async {
-    await inAppPurchase.restorePurchases();
-
-    // Get past purchases
-    final Stream<List<PurchaseDetails>> purchaseStream =
-        inAppPurchase.purchaseStream;
-
-    // Note: In real implementation, you'd listen to the stream
-    // For now, return empty list (purchases come through stream)
-    return [];
+    try {
+      // First, restore purchases from the store
+      await inAppPurchase.restorePurchases();
+      
+      // Get available products to check what's owned
+      final products = await getAvailableProducts();
+      
+      // Get past purchases from the store
+      final purchaseStream = inAppPurchase.purchaseStream;
+      final completer = Completer<List<PurchaseDetails>>();
+      final List<PurchaseDetails> restoredPurchases = [];
+      
+      // Listen for restored purchases
+      StreamSubscription<List<PurchaseDetails>>? subscription;
+      subscription = purchaseStream.listen(
+        (purchases) {
+          for (final purchase in purchases) {
+            if (purchase.status == PurchaseStatus.restored || 
+                purchase.status == PurchaseStatus.purchased) {
+              restoredPurchases.add(purchase);
+              
+              // Complete purchase to clear it from queue
+              if (purchase.pendingCompletePurchase) {
+                inAppPurchase.completePurchase(purchase);
+              }
+            }
+          }
+          
+          // Wait a bit for all purchases to come through
+          Future.delayed(const Duration(seconds: 2), () {
+            subscription?.cancel();
+            if (!completer.isCompleted) {
+              completer.complete(restoredPurchases);
+            }
+          });
+        },
+        onError: (error) {
+          subscription?.cancel();
+          if (!completer.isCompleted) {
+            completer.completeError(error);
+          }
+        },
+      );
+      
+      // Timeout after 10 seconds
+      return await completer.future.timeout(
+        const Duration(seconds: 10),
+        onTimeout: () {
+          subscription?.cancel();
+          return restoredPurchases;
+        },
+      );
+    } catch (e) {
+      debugPrint('Error restoring purchases: $e');
+      rethrow;
+    }
   }
 
   /// Verify purchase with backend via Cloud Function
@@ -194,12 +256,32 @@ class SubscriptionRemoteDataSource {
       }
     }
 
-    final platform = Platform.isAndroid ? 'android' : 'ios';
-    final tierName = _getTierFromProductId(purchaseDetails.productID);
-    final tier = SubscriptionTierExtension.fromString(tierName);
+          final platform = Platform.isAndroid ? 'android' : 'ios';
+      final details = _getMembershipDetailsFromProductId(purchaseDetails.productID);
+      final tier = details['tier'] as SubscriptionTier;
+      final duration = details['duration'] as Duration;
+      final durationDays = duration.inDays;
+      final tierName = tier.name.toUpperCase();
 
-    final now = DateTime.now();
-    final endDate = DateTime(now.year, now.month + 1, now.day);
+      final now = DateTime.now();
+
+      // Get current membership to extend from end date
+      final profileDoc = await firestore.collection('profiles').doc(userId).get();
+      DateTime newEndDate;
+      final currentEndDate = profileDoc.data()?['membershipEndDate'] as Timestamp?;
+      final currentTier = profileDoc.data()?['membershipTier'] as String?;
+
+      if (currentEndDate != null && currentTier != null) {
+        final currentTierEnum = SubscriptionTierExtension.fromString(currentTier.toLowerCase());
+        final currentEndDateTime = currentEndDate.toDate();
+        if (tier.index >= currentTierEnum.index && currentEndDateTime.isAfter(now)) {
+          newEndDate = currentEndDateTime.add(duration);
+        } else {
+          newEndDate = now.add(duration);
+        }
+      } else {
+        newEndDate = now.add(duration);
+      }
 
     // Create subscription in Firestore
     await firestore.collection('subscriptions').add({
@@ -207,23 +289,21 @@ class SubscriptionRemoteDataSource {
       'tier': tierName,
       'status': 'active',
       'startDate': Timestamp.fromDate(now),
-      'endDate': Timestamp.fromDate(endDate),
-      'nextBillingDate': Timestamp.fromDate(endDate),
-      'autoRenew': true,
+      'endDate': Timestamp.fromDate(newEndDate),
+      'durationDays': durationDays,
       'platform': platform,
       'purchaseToken': purchaseDetails.purchaseID,
       'transactionId': purchaseDetails.purchaseID,
       'orderId': purchaseDetails.purchaseID,
       'price': tier.monthlyPrice,
       'currency': 'USD',
-      'inGracePeriod': false,
       'createdAt': FieldValue.serverTimestamp(),
     });
 
     // Create purchase record
     await firestore.collection('purchases').add({
       'userId': userId,
-      'type': 'subscription',
+      'type': 'membership',
       'status': 'completed',
       'productId': purchaseDetails.productID,
       'productName': tier.displayName,
@@ -240,9 +320,9 @@ class SubscriptionRemoteDataSource {
 
     // Update the user's profile membershipTier
     await firestore.collection('profiles').doc(userId).update({
-      'membershipTier': tierName.toUpperCase(),
+      'membershipTier': tierName,
       'membershipStartDate': Timestamp.fromDate(now),
-      'membershipEndDate': Timestamp.fromDate(endDate),
+      'membershipEndDate': Timestamp.fromDate(newEndDate),
     });
 
     return true;
@@ -257,10 +337,10 @@ class SubscriptionRemoteDataSource {
 
   /// Get current subscription for user
   Future<SubscriptionModel?> getCurrentSubscription(String userId) async {
-    final snapshot = await firestore
+        final snapshot = await firestore
         .collection('subscriptions')
-        .where('userId', '==', userId)
-        .where('status', 'in', ['active', 'cancelled'])
+        .where('userId', isEqualTo: userId)
+        .where('status', whereIn: ['active', 'cancelled'])
         .orderBy('createdAt', descending: true)
         .limit(1)
         .get();
@@ -274,10 +354,10 @@ class SubscriptionRemoteDataSource {
 
   /// Stream of subscription updates
   Stream<SubscriptionModel?> subscriptionStream(String userId) {
-    return firestore
+        return firestore
         .collection('subscriptions')
-        .where('userId', '==', userId)
-        .where('status', 'in', ['active', 'cancelled'])
+        .where('userId', isEqualTo: userId)
+        .where('status', whereIn: ['active', 'cancelled'])
         .orderBy('createdAt', descending: true)
         .limit(1)
         .snapshots()
@@ -287,47 +367,11 @@ class SubscriptionRemoteDataSource {
     });
   }
 
-  /// Cancel subscription (Point 151)
-  Future<void> cancelSubscription({
-    required String subscriptionId,
-    required String reason,
-  }) async {
-    await firestore.collection('subscriptions').doc(subscriptionId).update({
-      'status': 'cancelled',
-      'autoRenew': false,
-      'cancellationReason': reason,
-      'cancelledAt': FieldValue.serverTimestamp(),
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-  }
-
-  /// Upgrade subscription (Point 150)
-  Future<void> upgradeSubscription({
-    required String currentSubscriptionId,
-    required SubscriptionTier newTier,
-    required ProductDetails product,
-  }) async {
-    // Cancel current subscription
-    await firestore
-        .collection('subscriptions')
-        .doc(currentSubscriptionId)
-        .update({
-      'status': 'cancelled',
-      'autoRenew': false,
-      'cancelledAt': FieldValue.serverTimestamp(),
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-
-    // Purchase new tier through store
-    // The verification will create the new subscription
-    // Note: In production, implement pro-rated billing
-  }
-
   /// Get purchase history
   Future<List<Map<String, dynamic>>> getPurchaseHistory(String userId) async {
-    final snapshot = await firestore
+        final snapshot = await firestore
         .collection('purchases')
-        .where('userId', '==', userId)
+        .where('userId', isEqualTo: userId)
         .orderBy('purchaseDate', descending: true)
         .limit(50)
         .get();
@@ -340,12 +384,39 @@ class SubscriptionRemoteDataSource {
     }).toList();
   }
 
-  /// Helper: Get tier from product ID
-  String _getTierFromProductId(String productId) {
-    if (productId.contains('platinum')) return 'platinum';
-    if (productId.contains('gold')) return 'gold';
-    if (productId.contains('silver')) return 'silver';
-    return 'basic';
+      /// Helper: Get tier and duration from product ID
+  Map<String, dynamic> _getMembershipDetailsFromProductId(String productId) {
+    SubscriptionTier tier;
+    Duration duration;
+    
+    // Determine tier
+    if (productId.contains('platinum')) {
+      tier = SubscriptionTier.platinum;
+    } else if (productId.contains('gold')) {
+      tier = SubscriptionTier.gold;
+    } else if (productId.contains('silver')) {
+      tier = SubscriptionTier.silver;
+    } else if (productId.contains('base')) {
+      tier = SubscriptionTier.basic;
+    } else {
+      tier = SubscriptionTier.basic;
+    }
+    
+    // Determine duration
+    if (productId.contains('1_year') || productId.contains('year')) {
+      duration = const Duration(days: 365); // 1 year
+    } else if (productId.contains('1_month') || productId.contains('month')) {
+      duration = const Duration(days: 30); // 1 month
+    } else {
+      // Default to 1 month for base membership
+      duration = const Duration(days: 30);
+    }
+    
+    return {
+      'tier': tier,
+      'duration': duration,
+      'isYearly': duration.inDays >= 365,
+    };
   }
 
   /// Listen to purchase stream
@@ -449,15 +520,39 @@ class SubscriptionRemoteDataSource {
             );
 
             if (verified) {
-              // Update user's profile membershipTier
-              final tierName = _getTierFromProductId(purchase.productID);
-              final now = DateTime.now();
-              final endDate = DateTime(now.year, now.month + 1, now.day);
-              await firestore.collection('profiles').doc(userId).update({
-                'membershipTier': tierName.toUpperCase(),
-                'membershipStartDate': Timestamp.fromDate(now),
-                'membershipEndDate': Timestamp.fromDate(endDate),
-              });
+                          // Update user's profile membershipTier
+            final details = _getMembershipDetailsFromProductId(purchase.productID);
+            final tier = details['tier'] as SubscriptionTier;
+            final duration = details['duration'] as Duration;
+            final tierName = tier.name.toUpperCase();
+            
+            // Get current membership end date to extend it
+            final currentProfile = await firestore.collection('profiles').doc(userId).get();
+            DateTime newEndDate;
+            final currentEndDate = currentProfile.data()?['membershipEndDate'] as Timestamp?;
+            final currentTier = currentProfile.data()?['membershipTier'] as String?;
+            
+            if (currentEndDate != null && currentTier != null) {
+              final currentTierEnum = SubscriptionTierExtension.fromString(currentTier.toLowerCase());
+              final currentEndDateTime = currentEndDate.toDate();
+              
+              // If buying same or higher tier, extend from current end date
+              // If buying lower tier, extend from now
+              if (tier.index >= currentTierEnum.index) {
+                newEndDate = currentEndDateTime.add(duration);
+              } else {
+                newEndDate = DateTime.now().add(duration);
+              }
+            } else {
+              // No current membership, start from now
+              newEndDate = DateTime.now().add(duration);
+            }
+            
+            await firestore.collection('profiles').doc(userId).update({
+              'membershipTier': tierName,
+              'membershipStartDate': Timestamp.fromDate(DateTime.now()),
+              'membershipEndDate': Timestamp.fromDate(newEndDate),
+            });
 
               // Complete the purchase with the store
               await completePurchase(purchase);

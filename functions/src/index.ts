@@ -58,17 +58,21 @@ export {
   cleanupExpiredExports,
 } from './backup/pdfExport';
 
-// Subscription Functions
-export {
-  handlePlayStoreWebhook,
-  handleAppStoreWebhook,
-  checkExpiringSubscriptions,
-  handleExpiredGracePeriods,
-} from './subscriptions/subscriptionManager';
+// Legacy Subscription Functions (webhooks disabled — using one-time purchases now)
+// Webhook handlers are no longer needed for one-time purchase model.
+// Expiration checks are now handled by ./subscription/index.ts
+// export {
+//   handlePlayStoreWebhook,
+//   handleAppStoreWebhook,
+//   checkExpiringSubscriptions,
+//   handleExpiredGracePeriods,
+// } from './subscriptions/subscriptionManager';
 
-// Purchase Verification (prevents shared billing account abuse)
+// Membership Purchase Verification & Expiration Management
 export {
   verifyPurchase,
+  checkExpiringSubscriptions as checkExpiringMemberships,
+  handleExpiredMemberships,
 } from './subscription/index';
 
 // Coin Functions

@@ -4138,6 +4138,378 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Maximum 6 private photos allowed'**
   String get photoMaxPrivate;
+
+  /// No description provided for @membershipRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership Required'**
+  String get membershipRequired;
+
+  /// No description provided for @membershipRequiredDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'You need to be a member of GreenGo to perform this action.'**
+  String get membershipRequiredDescription;
+
+  /// No description provided for @yearlyMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly Membership'**
+  String get yearlyMembership;
+
+  /// No description provided for @subscribeNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe Now'**
+  String get subscribeNow;
+
+  /// No description provided for @maybeLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Maybe Later'**
+  String get maybeLater;
+
+  /// No description provided for @shopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop'**
+  String get shopTitle;
+
+  /// No description provided for @shopTabCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins'**
+  String get shopTabCoins;
+
+  /// No description provided for @shopTabMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership'**
+  String get shopTabMembership;
+
+  /// No description provided for @shopTabVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Video'**
+  String get shopTabVideo;
+
+  /// No description provided for @shopUpgradeExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade Your Experience'**
+  String get shopUpgradeExperience;
+
+  /// No description provided for @shopCurrentPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Plan: {tier}'**
+  String shopCurrentPlan(String tier);
+
+  /// No description provided for @shopExpires.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires: {date} ({days} days remaining)'**
+  String shopExpires(String date, String days);
+
+  /// No description provided for @shopExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired: {date}'**
+  String shopExpired(String date);
+
+  /// No description provided for @shopMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get shopMonthly;
+
+  /// No description provided for @shopYearly.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get shopYearly;
+
+  /// No description provided for @shopSavePercent.
+  ///
+  /// In en, this message translates to:
+  /// **'SAVE ~17%'**
+  String get shopSavePercent;
+
+  /// No description provided for @shopUpgradeAndSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade & Save! Get discount on higher tiers'**
+  String get shopUpgradeAndSave;
+
+  /// No description provided for @shopBaseMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Base Membership'**
+  String get shopBaseMembership;
+
+  /// No description provided for @shopYearlyPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly subscription'**
+  String get shopYearlyPlan;
+
+  /// No description provided for @shopActive.
+  ///
+  /// In en, this message translates to:
+  /// **'ACTIVE'**
+  String get shopActive;
+
+  /// No description provided for @shopBaseMembershipDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Required to swipe, like, chat, and interact with other users.'**
+  String get shopBaseMembershipDescription;
+
+  /// No description provided for @shopValidUntil.
+  ///
+  /// In en, this message translates to:
+  /// **'Valid until {date}'**
+  String shopValidUntil(String date);
+
+  /// No description provided for @shopUpgradeTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to {tier} ({duration})'**
+  String shopUpgradeTo(String tier, String duration);
+
+  /// No description provided for @shopBuyTier.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy {tier} ({duration})'**
+  String shopBuyTier(String tier, String duration);
+
+  /// No description provided for @shopOneYear.
+  ///
+  /// In en, this message translates to:
+  /// **'1 Year'**
+  String get shopOneYear;
+
+  /// No description provided for @shopOneMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'1 Month'**
+  String get shopOneMonth;
+
+  /// No description provided for @shopYouSave.
+  ///
+  /// In en, this message translates to:
+  /// **'You save \${amount}/month upgrading from {tier}'**
+  String shopYouSave(String amount, String tier);
+
+  /// No description provided for @shopDailyLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Likes'**
+  String get shopDailyLikes;
+
+  /// No description provided for @shopSuperLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Likes'**
+  String get shopSuperLikes;
+
+  /// No description provided for @shopBoosts.
+  ///
+  /// In en, this message translates to:
+  /// **'Boosts'**
+  String get shopBoosts;
+
+  /// No description provided for @shopSeeWhoLikesYou.
+  ///
+  /// In en, this message translates to:
+  /// **'See Who Likes You'**
+  String get shopSeeWhoLikesYou;
+
+  /// No description provided for @shopVipBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Badge'**
+  String get shopVipBadge;
+
+  /// No description provided for @shopPriorityMatching.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Matching'**
+  String get shopPriorityMatching;
+
+  /// No description provided for @shopSendCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Coins'**
+  String get shopSendCoins;
+
+  /// No description provided for @shopRecipientNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipient nickname'**
+  String get shopRecipientNickname;
+
+  /// No description provided for @shopEnterAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter amount'**
+  String get shopEnterAmount;
+
+  /// No description provided for @shopConfirmSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Send'**
+  String get shopConfirmSend;
+
+  /// No description provided for @shopSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get shopSend;
+
+  /// No description provided for @shopUserNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'User not found'**
+  String get shopUserNotFound;
+
+  /// No description provided for @shopCannotSendToSelf.
+  ///
+  /// In en, this message translates to:
+  /// **'You cannot send coins to yourself'**
+  String get shopCannotSendToSelf;
+
+  /// No description provided for @shopCoinsSentTo.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} coins sent to @{nickname}'**
+  String shopCoinsSentTo(String amount, String nickname);
+
+  /// No description provided for @shopFailedToSendCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send coins'**
+  String get shopFailedToSendCoins;
+
+  /// No description provided for @shopEnterBothFields.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter both nickname and amount'**
+  String get shopEnterBothFields;
+
+  /// No description provided for @shopEnterValidAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid amount'**
+  String get shopEnterValidAmount;
+
+  /// No description provided for @shopInsufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Insufficient coins'**
+  String get shopInsufficientCoins;
+
+  /// No description provided for @shopYouHave.
+  ///
+  /// In en, this message translates to:
+  /// **'You have'**
+  String get shopYouHave;
+
+  /// No description provided for @shopGreenGoCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGoCoins'**
+  String get shopGreenGoCoins;
+
+  /// No description provided for @shopUnlockPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock premium features and enhance your dating experience'**
+  String get shopUnlockPremium;
+
+  /// No description provided for @shopPopular.
+  ///
+  /// In en, this message translates to:
+  /// **'POPULAR'**
+  String get shopPopular;
+
+  /// No description provided for @shopCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins'**
+  String get shopCoins;
+
+  /// No description provided for @shopPurchaseCoinsFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase {coins} Coins for {price}'**
+  String shopPurchaseCoinsFor(String coins, String price);
+
+  /// No description provided for @shopComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming Soon'**
+  String get shopComingSoon;
+
+  /// No description provided for @shopVideoCoinsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch short videos to earn free coins!\nStay tuned for this exciting feature.'**
+  String get shopVideoCoinsDescription;
+
+  /// No description provided for @shopGetNotified.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Notified'**
+  String get shopGetNotified;
+
+  /// No description provided for @shopNotifyMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll let you know when Video-Coins is available'**
+  String get shopNotifyMessage;
+
+  /// No description provided for @shopStoreNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Store not available. Make sure Google Play is installed.'**
+  String get shopStoreNotAvailable;
+
+  /// No description provided for @shopFailedToInitiate.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to initiate purchase'**
+  String get shopFailedToInitiate;
+
+  /// No description provided for @shopUnableToLoadPackages.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to Load Packages'**
+  String get shopUnableToLoadPackages;
+
+  /// No description provided for @shopRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get shopRetry;
+
+  /// No description provided for @shopCheckInternet.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure you have an internet connection\nand try again.'**
+  String get shopCheckInternet;
+
+  /// No description provided for @shopMembershipActivated.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Membership activated! +500 bonus coins. Valid until {date}.'**
+  String shopMembershipActivated(String date);
+
+  /// No description provided for @shopPreviousPurchaseFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous purchase found. Please try again.'**
+  String get shopPreviousPurchaseFound;
 }
 
 class _AppLocalizationsDelegate

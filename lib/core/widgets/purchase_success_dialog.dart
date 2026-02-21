@@ -48,9 +48,10 @@ class PurchaseSuccessDialog extends StatefulWidget {
     );
   }
 
-  /// Show full-screen celebration for subscription purchase success
+    /// Show full-screen celebration for subscription purchase success
   static Future<void> showSubscriptionActivated(
-    BuildContext context, {
+    BuildContext context,
+    {
     required String tierName,
     SubscriptionTier? tier,
     VoidCallback? onDismiss,
@@ -60,6 +61,31 @@ class PurchaseSuccessDialog extends StatefulWidget {
       tierName: tierName,
       tier: tier,
       onComplete: onDismiss,
+    );
+  }
+
+  /// Show dialog for membership activation
+  static Future<void> showMembershipActivated(
+    BuildContext context,
+    {
+    required String tierName,
+    required DateTime endDate,
+    int coinsGranted = 0,
+    VoidCallback? onDismiss,
+  }) {
+    final formattedDate = '${endDate.day}/${endDate.month}/${endDate.year}';
+    final coinsText = coinsGranted > 0 ? '\n$coinsGranted GreenGo Coins added!' : '';
+
+    return showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (context) => PurchaseSuccessDialog(
+        title: 'Membership Activated!',
+        message: '$tierName membership active until $formattedDate$coinsText',
+        icon: Icons.workspace_premium,
+        iconColor: AppColors.richGold,
+        onDismiss: onDismiss,
+      ),
     );
   }
 

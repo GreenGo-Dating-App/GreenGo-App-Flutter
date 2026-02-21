@@ -20,25 +20,7 @@ abstract class SubscriptionRepository {
     required String platform,
   });
 
-  /// Upgrade subscription (Point 150)
-  Future<Either<Failure, Subscription>> upgradeSubscription({
-    required String userId,
-    required SubscriptionTier newTier,
-  });
-
-  /// Downgrade subscription (Point 150)
-  Future<Either<Failure, Subscription>> downgradeSubscription({
-    required String userId,
-    required SubscriptionTier newTier,
-  });
-
-  /// Cancel subscription (Point 151)
-  Future<Either<Failure, void>> cancelSubscription({
-    required String userId,
-    required String reason,
-  });
-
-  /// Restore purchases (Point 154)
+  /// Restore purchases
   Future<Either<Failure, List<Purchase>>> restorePurchases(String userId);
 
   /// Verify purchase with platform

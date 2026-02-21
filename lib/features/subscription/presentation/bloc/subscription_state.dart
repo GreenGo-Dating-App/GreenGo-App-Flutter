@@ -42,16 +42,13 @@ class ProductsLoaded extends SubscriptionState {
 /// Subscription purchased successfully
 class SubscriptionPurchased extends SubscriptionState {
   final SubscriptionTier tier;
+  final DateTime? endDate;
+  final int coinsGranted;
 
-  const SubscriptionPurchased(this.tier);
+  const SubscriptionPurchased(this.tier, {this.endDate, this.coinsGranted = 0});
 
   @override
-  List<Object?> get props => [tier];
-}
-
-/// Subscription cancelled
-class SubscriptionCancelled extends SubscriptionState {
-  const SubscriptionCancelled();
+  List<Object?> get props => [tier, endDate, coinsGranted];
 }
 
 /// Purchases restored

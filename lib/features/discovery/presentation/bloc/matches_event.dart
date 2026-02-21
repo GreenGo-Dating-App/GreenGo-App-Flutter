@@ -42,3 +42,10 @@ class MatchUnmatchRequested extends MatchesEvent {
     required this.userId,
   });
 }
+
+/// Internal event: matches stream detected new data
+class MatchesStreamUpdated extends MatchesEvent {
+  final String userId;
+
+  const MatchesStreamUpdated(this.userId);
+}

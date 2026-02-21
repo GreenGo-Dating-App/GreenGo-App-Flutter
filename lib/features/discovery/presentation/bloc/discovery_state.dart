@@ -159,6 +159,17 @@ class DiscoveryBoostActivated extends DiscoveryState {
   });
 }
 
+/// Base membership required to perform action
+class DiscoveryBaseMembershipRequired extends DiscoveryState {
+  final List<DiscoveryCard> cards;
+  final int currentIndex;
+
+  const DiscoveryBaseMembershipRequired({
+    required this.cards,
+    required this.currentIndex,
+  });
+}
+
 /// Super like limit reached state
 class DiscoverySuperLikeLimitReached extends DiscoveryState {
   final List<DiscoveryCard> cards;

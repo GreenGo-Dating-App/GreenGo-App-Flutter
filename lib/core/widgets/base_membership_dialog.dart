@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -11,6 +12,7 @@ import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
+import '../../generated/app_localizations.dart';
 
 /// Dialog shown when a non-member tries to perform a gated action.
 /// Offers a yearly "greengo_base_membership" IAP subscription.
@@ -62,11 +64,41 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
   final InAppPurchase _iap = InAppPurchase.instance;
   StreamSubscription<List<PurchaseDetails>>? _sub;
   bool _loading = false;
+  bool _retryAfterConsume = false;
 
   @override
   void initState() {
     super.initState();
     _sub = _iap.purchaseStream.listen(_onPurchaseUpdated);
+    // Restore old purchases on init to consume any unconsumed ones
+    // This clears "already owned" state from previous sessions
+    _consumeOldPurchases();
+  }
+
+  /// Restore and consume any old unconsumed purchases to clear "already owned" state
+  Future<void> _consumeOldPurchases() async {
+    if (!Platform.isAndroid) return;
+    try {
+      await _iap.restorePurchases();
+    } catch (e) {
+      debugPrint('[BaseMembership] restorePurchases error (non-critical): $e');
+    }
+  }
+
+  /// Complete and consume a purchase (works for managed products to allow re-purchase)
+  Future<void> _completeAndConsume(PurchaseDetails p) async {
+    if (p.pendingCompletePurchase) {
+      await _iap.completePurchase(p);
+    }
+    if (Platform.isAndroid) {
+      try {
+        final androidAddition = _iap.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
+        await androidAddition.consumePurchase(p);
+        debugPrint('[BaseMembership] Consumed purchase ${p.productID}');
+      } catch (e) {
+        debugPrint('[BaseMembership] Consume failed (non-critical): $e');
+      }
+    }
   }
 
   @override
@@ -86,7 +118,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
           _handleSuccess(p);
           break;
         case PurchaseStatus.restored:
-          // Restored purchase — verify it belongs to this user before granting
+          // Restored purchase — always consume to clear "already owned" state,
+          // then check ownership before granting membership
           _handleRestore(p);
           break;
         case PurchaseStatus.error:
@@ -99,11 +132,13 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
               ),
             );
           }
-          if (p.pendingCompletePurchase) _iap.completePurchase(p);
+          // Always consume to clear "already owned" state
+          _completeAndConsume(p);
           break;
         case PurchaseStatus.canceled:
           if (mounted) setState(() => _loading = false);
-          if (p.pendingCompletePurchase) _iap.completePurchase(p);
+          // Always consume to clear "already owned" state
+          _completeAndConsume(p);
           break;
         case PurchaseStatus.pending:
           break;
@@ -111,10 +146,15 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
     }
   }
 
-  /// Handle a restored purchase — only grant membership if it belongs to this user
+  /// Handle a restored purchase — always consume to clear "already owned",
+  /// then check ownership before granting membership
   Future<void> _handleRestore(PurchaseDetails p) async {
     final firestore = FirebaseFirestore.instance;
     final token = p.purchaseID ?? '';
+
+    // Always consume restored purchases to clear "already owned" state
+    // This allows the product to be purchased again by any user
+    await _completeAndConsume(p);
 
     if (token.isNotEmpty) {
       try {
@@ -129,32 +169,47 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
             // This purchase belongs to a different app user — don't grant
             debugPrint('[BaseMembership] Restored purchase belongs to $ownerUserId, '
                 'not current user ${widget.userId}. Skipping.');
-            if (p.pendingCompletePurchase) _iap.completePurchase(p);
             if (mounted) setState(() => _loading = false);
             return;
           }
         }
-        // Purchase belongs to this user or not tracked yet — grant membership
-        _handleSuccess(p);
+        // Purchase belongs to this user or not tracked yet
+        // Don't re-grant (already granted on original purchase)
+        debugPrint('[BaseMembership] Restored purchase consumed. Owner: ${widget.userId}');
+        if (mounted) setState(() => _loading = false);
       } catch (e) {
         debugPrint('[BaseMembership] Error checking purchase ownership: $e');
-        // On error, don't grant — safer to not auto-grant
-        if (p.pendingCompletePurchase) _iap.completePurchase(p);
         if (mounted) setState(() => _loading = false);
       }
     } else {
-      // No purchase ID — can't verify ownership, don't auto-grant
-      if (p.pendingCompletePurchase) _iap.completePurchase(p);
+      debugPrint('[BaseMembership] Restored purchase consumed (no token).');
       if (mounted) setState(() => _loading = false);
     }
   }
 
   Future<void> _handleSuccess(PurchaseDetails p) async {
     final now = DateTime.now();
-    final endDate = now.add(const Duration(days: 365));
+    final firestore = FirebaseFirestore.instance;
+
+    // Compute end date: extend from current end date if active
+    DateTime endDate;
+    try {
+      final profileDoc = await firestore
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      final currentEndTs = profileDoc.data()?['baseMembershipEndDate'] as Timestamp?;
+      final currentEndDate = currentEndTs?.toDate();
+      if (currentEndDate != null && currentEndDate.isAfter(now)) {
+        endDate = currentEndDate.add(const Duration(days: 365));
+      } else {
+        endDate = now.add(const Duration(days: 365));
+      }
+    } catch (_) {
+      endDate = now.add(const Duration(days: 365));
+    }
 
     try {
-      final firestore = FirebaseFirestore.instance;
       final profileRef = firestore.collection('profiles').doc(widget.userId);
 
       // Update base membership status
@@ -163,9 +218,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
         'baseMembershipEndDate': Timestamp.fromDate(endDate),
       });
 
-      // Track purchase ownership — ties this Google Play purchase to this app user
-      // Stored by Firebase Auth UID (not Google Play email) so membership
-      // follows the app account, not the payment method.
+      // Track purchase ownership — ties this purchase to the APP user (not Google Play email)
       final token = p.purchaseID ?? '';
       final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
       if (token.isNotEmpty) {
@@ -179,56 +232,45 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
         });
       }
 
-      // Grant 500 bonus coins
+      // Grant 500 bonus coins (write to coinBatches array field, not subcollection)
       final balanceRef = firestore
           .collection('coinBalances')
           .doc(widget.userId);
+      final batchEntry = {
+        'batchId': 'membership_${now.millisecondsSinceEpoch}',
+        'initialCoins': 500,
+        'remainingCoins': 500,
+        'source': 'reward',
+        'acquiredDate': Timestamp.fromDate(now),
+        'expirationDate': Timestamp.fromDate(endDate),
+      };
 
       final balanceDoc = await balanceRef.get();
       if (balanceDoc.exists) {
-        final currentTotal = balanceDoc.data()?['totalCoins'] as int? ?? 0;
         await balanceRef.update({
-          'totalCoins': currentTotal + 500,
+          'totalCoins': FieldValue.increment(500),
+          'earnedCoins': FieldValue.increment(500),
+          'lastUpdated': Timestamp.fromDate(now),
+          'coinBatches': FieldValue.arrayUnion([batchEntry]),
         });
       } else {
         await balanceRef.set({
           'userId': widget.userId,
           'totalCoins': 500,
+          'earnedCoins': 500,
+          'purchasedCoins': 0,
+          'giftedCoins': 0,
           'spentCoins': 0,
           'lastUpdated': Timestamp.fromDate(now),
+          'coinBatches': [batchEntry],
         });
       }
-
-      // Add a coin batch for the bonus
-      await firestore
-          .collection('coinBalances')
-          .doc(widget.userId)
-          .collection('coinBatches')
-          .add({
-        'amount': 500,
-        'remainingCoins': 500,
-        'source': 'membership_bonus',
-        'reason': 'Base membership welcome bonus',
-        'createdAt': Timestamp.fromDate(now),
-        'expiresAt': Timestamp.fromDate(endDate),
-      });
     } catch (e) {
       debugPrint('[BaseMembership] Firestore update failed: $e');
     }
 
-    // Complete and consume the purchase so it can be bought again by other users
-    if (p.pendingCompletePurchase) {
-      await _iap.completePurchase(p);
-    }
-    // Explicitly consume on Android to allow re-purchase
-    if (Platform.isAndroid) {
-      try {
-        final androidAddition = _iap.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
-        await androidAddition.consumePurchase(p);
-      } catch (e) {
-        debugPrint('[BaseMembership] Consume failed (non-critical): $e');
-      }
-    }
+    // Complete and consume the purchase so it can be bought again
+    await _completeAndConsume(p);
 
     if (mounted) {
       // Refresh coin balance and profile in the UI using the captured blocs
@@ -262,20 +304,43 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
         return;
       }
 
+      // All products are managed (in-app) products — use buyConsumable
       final product = response.productDetails.first;
+      debugPrint('[BaseMembership] Product: ${product.id}, title: ${product.title}, '
+          'price: ${product.price}, rawPrice: ${product.rawPrice}');
+
       final param = PurchaseParam(
         productDetails: product,
         applicationUserName: widget.userId,
       );
+      final bool ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
 
-      final ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
       if (!ok && mounted) {
         _showError('Failed to initiate purchase');
         setState(() => _loading = false);
       }
     } catch (e) {
-      _showError('Purchase error: $e');
-      if (mounted) setState(() => _loading = false);
+      final errorStr = e.toString();
+      if (errorStr.contains('ALREADY_OWNED') ||
+          errorStr.contains('ITEM_ALREADY_OWNED') ||
+          errorStr.contains('itemAlreadyOwned')) {
+        debugPrint('[BaseMembership] Product already owned — consuming and retrying');
+        if (!_retryAfterConsume) {
+          _retryAfterConsume = true;
+          await _consumeOldPurchases();
+          await Future.delayed(const Duration(seconds: 2));
+          if (_retryAfterConsume && mounted) {
+            _retryAfterConsume = false;
+            _subscribe(); // Retry after consuming
+          }
+        } else {
+          _showError('Product already owned. Please restart the app and try again.');
+          if (mounted) setState(() => _loading = false);
+        }
+      } else {
+        _showError('Purchase error: $e');
+        if (mounted) setState(() => _loading = false);
+      }
     }
   }
 
@@ -322,19 +387,19 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text(
-                'Membership Required',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.membershipRequired,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 8),
-              const Text(
-                'You need to be a member of GreenGo to perform this action.',
+              Text(
+                AppLocalizations.of(context)!.membershipRequiredDescription,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 14,
                   height: 1.5,
@@ -351,14 +416,14 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
                     color: AppColors.richGold.withValues(alpha: 0.3),
                   ),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.star, color: AppColors.richGold, size: 16),
-                    SizedBox(width: 8),
+                    const Icon(Icons.star, color: AppColors.richGold, size: 16),
+                    const SizedBox(width: 8),
                     Text(
-                      'Yearly Membership',
-                      style: TextStyle(
+                      AppLocalizations.of(context)!.yearlyMembership,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
@@ -390,9 +455,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
                             color: Colors.black,
                           ),
                         )
-                      : const Text(
-                          'Subscribe Now',
-                          style: TextStyle(
+                      : Text(
+                          AppLocalizations.of(context)!.subscribeNow,
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -403,9 +468,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
               // Dismiss button
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: const Text(
-                  'Maybe Later',
-                  style: TextStyle(
+                child: Text(
+                  AppLocalizations.of(context)!.maybeLater,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 14,
                   ),

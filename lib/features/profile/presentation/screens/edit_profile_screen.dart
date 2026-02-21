@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -95,6 +96,17 @@ class EditProfileScreen extends StatelessWidget {
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) {
+            if (state is ProfileDeleted) {
+              // Account deleted — sign out to trigger AuthWrapper navigation
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Account deleted successfully.'),
+                  backgroundColor: Colors.green,
+                ),
+              );
+              context.read<AuthBloc>().add(const AuthSignOutRequested());
+              return;
+            }
             // Only show error messages here - sub-screens handle their own success responses
             // Do NOT pop on ProfileUpdated as child screens may trigger updates
             if (state is ProfileError) {
@@ -867,31 +879,44 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _showDeleteAccountDialog(BuildContext context, Profile currentProfile) {
+  void _showDeleteAccountDialog(BuildContext screenContext, Profile currentProfile) {
+    // Prevent admin account deletion
+    if (currentProfile.isAdmin) {
+      ScaffoldMessenger.of(screenContext).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(screenContext)!.adminAccountsCannotBeDeleted),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
+    // Step 1: Confirm intent
     showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
+      context: screenContext,
+      builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          AppLocalizations.of(context)!.deleteAccount,
+          AppLocalizations.of(dialogContext)!.deleteAccount,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(context)!.deleteAccountConfirmation,
+          AppLocalizations.of(dialogContext)!.deleteAccountConfirmation,
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(AppLocalizations.of(context)!.cancel),
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: Text(AppLocalizations.of(dialogContext)!.cancel),
           ),
           TextButton(
             onPressed: () {
-              Navigator.of(context).pop();
-              _deleteAccount(context, currentProfile);
+              Navigator.of(dialogContext).pop();
+              // Step 2: Ask for password confirmation
+              _showPasswordConfirmDialog(screenContext, currentProfile);
             },
             child: Text(
-              AppLocalizations.of(context)!.deleteAccount,
+              AppLocalizations.of(dialogContext)!.deleteAccount,
               style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
@@ -900,21 +925,144 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _deleteAccount(BuildContext context, Profile currentProfile) {
-    // Prevent admin account deletion
-    if (currentProfile.isAdmin) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.adminAccountsCannotBeDeleted),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
-      return;
-    }
+  void _showPasswordConfirmDialog(BuildContext screenContext, Profile currentProfile) {
+    final passwordController = TextEditingController();
+    bool obscurePassword = true;
+    String? errorText;
+    bool isLoading = false;
 
-    context.read<ProfileBloc>().add(
-          ProfileDeleteRequested(userId: currentProfile.userId),
-        );
+    showDialog(
+      context: screenContext,
+      barrierDismissible: false,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: const Text(
+            'Confirm Your Password',
+            style: TextStyle(color: AppColors.textPrimary),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'This action is permanent and cannot be undone. '
+                'All your data, matches, and messages will be deleted. '
+                'Please enter your password to confirm.',
+                style: TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: passwordController,
+                obscureText: obscurePassword,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.password,
+                  labelStyle: const TextStyle(color: AppColors.textSecondary),
+                  errorText: errorText,
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      obscurePassword ? Icons.visibility_off : Icons.visibility,
+                      color: AppColors.textSecondary,
+                    ),
+                    onPressed: () => setDialogState(() => obscurePassword = !obscurePassword),
+                  ),
+                  enabledBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: AppColors.textSecondary),
+                  ),
+                  focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: AppColors.richGold),
+                  ),
+                  errorBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: AppColors.errorRed),
+                  ),
+                  focusedErrorBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: AppColors.errorRed),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: isLoading ? null : () {
+                passwordController.dispose();
+                Navigator.of(dialogContext).pop();
+              },
+              child: Text(
+                AppLocalizations.of(context)!.cancel,
+                style: const TextStyle(color: AppColors.textSecondary),
+              ),
+            ),
+            TextButton(
+              onPressed: isLoading ? null : () async {
+                final password = passwordController.text.trim();
+                if (password.isEmpty) {
+                  setDialogState(() => errorText = AppLocalizations.of(context)!.passwordRequired);
+                  return;
+                }
+
+                setDialogState(() {
+                  isLoading = true;
+                  errorText = null;
+                });
+
+                try {
+                  final user = FirebaseAuth.instance.currentUser;
+                  if (user == null || user.email == null) {
+                    setDialogState(() {
+                      isLoading = false;
+                      errorText = 'Unable to verify account';
+                    });
+                    return;
+                  }
+
+                  // Re-authenticate with password
+                  final credential = EmailAuthProvider.credential(
+                    email: user.email!,
+                    password: password,
+                  );
+                  await user.reauthenticateWithCredential(credential);
+
+                  // Password correct — close dialog and delete account
+                  passwordController.dispose();
+                  if (dialogContext.mounted) Navigator.of(dialogContext).pop();
+
+                  // Use screenContext (not dialog context) to dispatch BLoC event
+                  screenContext.read<ProfileBloc>().add(
+                    ProfileDeleteRequested(userId: currentProfile.userId),
+                  );
+                } on FirebaseAuthException catch (e) {
+                  setDialogState(() {
+                    isLoading = false;
+                    if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
+                      errorText = AppLocalizations.of(context)!.authErrorWrongPassword;
+                    } else {
+                      errorText = e.message ?? 'Authentication failed';
+                    }
+                  });
+                } catch (e) {
+                  setDialogState(() {
+                    isLoading = false;
+                    errorText = e.toString();
+                  });
+                }
+              },
+              child: isLoading
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.errorRed),
+                    )
+                  : Text(
+                      AppLocalizations.of(context)!.deleteAccount,
+                      style: const TextStyle(color: AppColors.errorRed, fontWeight: FontWeight.bold),
+                    ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   void _exportUserData(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/subscription.dart';
 
 /// Subscription Model
-/// Data layer model with Firestore serialization
+/// Data layer model with Firestore serialization for one-time membership purchases
 class SubscriptionModel extends Subscription {
   const SubscriptionModel({
     required super.subscriptionId,
@@ -11,16 +11,11 @@ class SubscriptionModel extends Subscription {
     required super.status,
     required super.startDate,
     super.endDate,
-    super.nextBillingDate,
-    super.autoRenew,
-    super.cancellationReason,
-    super.cancelledAt,
+    super.durationDays,
     super.platform,
     super.purchaseToken,
     super.transactionId,
     super.orderId,
-    super.inGracePeriod,
-    super.gracePeriodEndDate,
     required super.price,
     super.currency,
     required super.createdAt,
@@ -36,16 +31,11 @@ class SubscriptionModel extends Subscription {
       status: subscription.status,
       startDate: subscription.startDate,
       endDate: subscription.endDate,
-      nextBillingDate: subscription.nextBillingDate,
-      autoRenew: subscription.autoRenew,
-      cancellationReason: subscription.cancellationReason,
-      cancelledAt: subscription.cancelledAt,
+      durationDays: subscription.durationDays,
       platform: subscription.platform,
       purchaseToken: subscription.purchaseToken,
       transactionId: subscription.transactionId,
       orderId: subscription.orderId,
-      inGracePeriod: subscription.inGracePeriod,
-      gracePeriodEndDate: subscription.gracePeriodEndDate,
       price: subscription.price,
       currency: subscription.currency,
       createdAt: subscription.createdAt,
@@ -64,22 +54,11 @@ class SubscriptionModel extends Subscription {
       status: SubscriptionStatusExtension.fromString(data['status'] as String? ?? 'expired'),
       startDate: (data['startDate'] as Timestamp).toDate(),
       endDate: data['endDate'] != null ? (data['endDate'] as Timestamp).toDate() : null,
-      nextBillingDate: data['nextBillingDate'] != null
-          ? (data['nextBillingDate'] as Timestamp).toDate()
-          : null,
-      autoRenew: data['autoRenew'] as bool? ?? true,
-      cancellationReason: data['cancellationReason'] as String?,
-      cancelledAt: data['cancelledAt'] != null
-          ? (data['cancelledAt'] as Timestamp).toDate()
-          : null,
+      durationDays: data['durationDays'] as int? ?? 30,
       platform: data['platform'] as String?,
       purchaseToken: data['purchaseToken'] as String?,
       transactionId: data['transactionId'] as String?,
       orderId: data['orderId'] as String?,
-      inGracePeriod: data['inGracePeriod'] as bool? ?? false,
-      gracePeriodEndDate: data['gracePeriodEndDate'] != null
-          ? (data['gracePeriodEndDate'] as Timestamp).toDate()
-          : null,
       price: (data['price'] as num?)?.toDouble() ?? 0.0,
       currency: data['currency'] as String? ?? 'USD',
       createdAt: (data['createdAt'] as Timestamp).toDate(),
@@ -97,18 +76,11 @@ class SubscriptionModel extends Subscription {
       'status': status.value,
       'startDate': Timestamp.fromDate(startDate),
       'endDate': endDate != null ? Timestamp.fromDate(endDate!) : null,
-      'nextBillingDate':
-          nextBillingDate != null ? Timestamp.fromDate(nextBillingDate!) : null,
-      'autoRenew': autoRenew,
-      'cancellationReason': cancellationReason,
-      'cancelledAt': cancelledAt != null ? Timestamp.fromDate(cancelledAt!) : null,
+      'durationDays': durationDays,
       'platform': platform,
       'purchaseToken': purchaseToken,
       'transactionId': transactionId,
       'orderId': orderId,
-      'inGracePeriod': inGracePeriod,
-      'gracePeriodEndDate':
-          gracePeriodEndDate != null ? Timestamp.fromDate(gracePeriodEndDate!) : null,
       'price': price,
       'currency': currency,
       'createdAt': Timestamp.fromDate(createdAt),
@@ -125,16 +97,11 @@ class SubscriptionModel extends Subscription {
       status: status,
       startDate: startDate,
       endDate: endDate,
-      nextBillingDate: nextBillingDate,
-      autoRenew: autoRenew,
-      cancellationReason: cancellationReason,
-      cancelledAt: cancelledAt,
+      durationDays: durationDays,
       platform: platform,
       purchaseToken: purchaseToken,
       transactionId: transactionId,
       orderId: orderId,
-      inGracePeriod: inGracePeriod,
-      gracePeriodEndDate: gracePeriodEndDate,
       price: price,
       currency: currency,
       createdAt: createdAt,
