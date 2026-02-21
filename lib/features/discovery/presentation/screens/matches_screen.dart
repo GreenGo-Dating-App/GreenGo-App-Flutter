@@ -198,34 +198,49 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
           }
 
           if (state is MatchesEmpty) {
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+            return RefreshIndicator(
+              onRefresh: () async {
+                final bloc = context.read<MatchesBloc>();
+                bloc.add(MatchesRefreshRequested(widget.userId));
+                try {
+                  await bloc.stream.first.timeout(const Duration(seconds: 15));
+                } catch (_) {}
+              },
+              color: AppColors.richGold,
+              child: ListView(
                 children: [
-                  const Icon(
-                    Icons.favorite_border,
-                    size: 80,
-                    color: AppColors.textTertiary,
-                  ),
-                  const SizedBox(height: 24),
-                  const Text(
-                    'No matches yet',
-                    style: TextStyle(
-                      color: AppColors.textPrimary,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 40),
-                    child: Text(
-                      'Start swiping to find your matches!',
-                      style: TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 16,
-                      ),
-                      textAlign: TextAlign.center,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.6,
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.favorite_border,
+                          size: 80,
+                          color: AppColors.textTertiary,
+                        ),
+                        SizedBox(height: 24),
+                        Text(
+                          'No matches yet',
+                          style: TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 12),
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 40),
+                          child: Text(
+                            'Start swiping to find your matches!',
+                            style: TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 16,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -245,9 +260,14 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
             return RefreshIndicator(
               onRefresh: () async {
                 _scoreCache.clear();
-                context
-                    .read<MatchesBloc>()
-                    .add(MatchesRefreshRequested(widget.userId));
+                final bloc = context.read<MatchesBloc>();
+                bloc.add(MatchesRefreshRequested(widget.userId));
+                // Wait for the next state emission (the refresh result)
+                try {
+                  await bloc.stream.first.timeout(const Duration(seconds: 15));
+                } catch (_) {
+                  // Timeout — stop the refresh indicator anyway
+                }
               },
               color: AppColors.richGold,
               child: CustomScrollView(

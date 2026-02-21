@@ -1,29 +1,101 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../domain/entities/subscription.dart';
 import '../bloc/subscription_bloc.dart';
 
-/// Subscription Selection Screen
-/// Point 149: Build subscription selection with gold-highlighted premium features
-class SubscriptionSelectionScreen extends StatefulWidget {
-  const SubscriptionSelectionScreen({Key? key}) : super(key: key);
+/// Membership Selection Screen
+/// One-time purchases for membership periods (1 month or 1 year)
+class MembershipSelectionScreen extends StatefulWidget {
+  final String? currentUserId;
+
+  const MembershipSelectionScreen({Key? key, this.currentUserId})
+      : super(key: key);
 
   @override
-  State<SubscriptionSelectionScreen> createState() =>
-      _SubscriptionSelectionScreenState();
+  State<MembershipSelectionScreen> createState() =>
+      _MembershipSelectionScreenState();
 }
 
-class _SubscriptionSelectionScreenState
-    extends State<SubscriptionSelectionScreen> {
-  SubscriptionTier _selectedTier = SubscriptionTier.gold;
+class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
+  ProductDetails? _selectedProduct;
+  String? _currentTierName;
+  DateTime? _currentEndDate;
 
   @override
   void initState() {
     super.initState();
     // Load available products
     context.read<SubscriptionBloc>().add(const LoadAvailableProducts());
+    // Load current membership info
+    _loadCurrentMembership();
+  }
+
+  Future<void> _loadCurrentMembership() async {
+    if (widget.currentUserId != null) {
+      try {
+        final doc = await cloud_firestore.FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+        if (doc.exists && mounted) {
+          final data = doc.data()!;
+          final endDate =
+              data['membershipEndDate'] as cloud_firestore.Timestamp?;
+          final tier = data['membershipTier'] as String? ?? 'BASIC';
+          setState(() {
+            _currentTierName = tier;
+            _currentEndDate = endDate?.toDate();
+          });
+        }
+      } catch (e) {
+        debugPrint('Error loading membership: $e');
+      }
+    }
+  }
+
+  /// Returns the tier rank for the user's current active membership.
+  /// Returns -1 if no active membership (expired or none).
+  int _currentTierRank() {
+    if (_currentTierName == null) return -1;
+    // Only count as active if end date is in the future
+    final isActive = _currentEndDate != null && _currentEndDate!.isAfter(DateTime.now());
+    if (!isActive) return -1;
+    return _tierRankFromName(_currentTierName!);
+  }
+
+  int _tierRankFromName(String tierName) {
+    switch (tierName.toUpperCase()) {
+      case 'PLATINUM':
+        return 3;
+      case 'GOLD':
+        return 2;
+      case 'SILVER':
+        return 1;
+      case 'BASIC':
+        return 0;
+      default:
+        return -1;
+    }
+  }
+
+  int _tierRankFromProductId(String productId) {
+    if (productId.contains('platinum')) return 3;
+    if (productId.contains('gold')) return 2;
+    if (productId.contains('silver')) return 1;
+    return 0;
+  }
+
+  /// Returns true if the product's tier is lower than the user's current active tier.
+  bool _isLowerThanCurrentTier(String productId) {
+    if (productId == 'greengo_base_membership') return false; // Base is always purchasable
+    final currentRank = _currentTierRank();
+    if (currentRank <= 0) return false; // No active premium tier, everything allowed
+    final productRank = _tierRankFromProductId(productId);
+    return productRank < currentRank;
   }
 
   @override
@@ -31,7 +103,7 @@ class _SubscriptionSelectionScreenState
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Choose Your Plan'),
+        title: const Text('Buy Membership'),
         backgroundColor: Colors.black,
         foregroundColor: const Color(0xFFD4AF37),
         elevation: 0,
@@ -39,10 +111,19 @@ class _SubscriptionSelectionScreenState
       body: BlocConsumer<SubscriptionBloc, SubscriptionState>(
         listener: (context, state) {
           if (state is SubscriptionPurchased) {
-            // Show success dialog before closing
-            PurchaseSuccessDialog.showSubscriptionActivated(
+            // Show success dialog with new end date
+            final endDate =
+                state.endDate ?? DateTime.now().add(const Duration(days: 30));
+            // Update local state to show new end date immediately
+            setState(() {
+              _currentTierName = state.tier.name.toUpperCase();
+              _currentEndDate = endDate;
+            });
+            PurchaseSuccessDialog.showMembershipActivated(
               context,
               tierName: state.tier.displayName,
+              endDate: endDate,
+              coinsGranted: state.coinsGranted,
               onDismiss: () {
                 if (context.mounted) {
                   Navigator.of(context).pop();
@@ -60,100 +141,168 @@ class _SubscriptionSelectionScreenState
         },
         builder: (context, state) {
           final isLoading = state is SubscriptionLoading;
+          final products =
+              state is ProductsLoaded ? state.products : <ProductDetails>[];
+
+          // Group products by tier
+          final monthlyProducts =
+              products.where((p) => p.id.contains('1_month')).toList();
+          final yearlyProducts =
+              products.where((p) => p.id.contains('1_year')).toList();
+          final baseProducts =
+              products.where((p) => p.id == 'greengo_base_membership').toList();
+          final baseProduct = baseProducts.isNotEmpty ? baseProducts.first : null;
 
           return Stack(
             children: [
               SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  // Header
-                  const Text(
-                    'Unlock Premium Features',
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFFD4AF37),
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'Find your perfect match faster with premium',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white70,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 32),
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // Current Membership Status
+                      if (_currentTierName != null)
+                        _buildCurrentMembershipStatus(),
 
-                  // Subscription Cards
-                  _buildTierCard(
-                    tier: SubscriptionTier.basic,
-                    isSelected: _selectedTier == SubscriptionTier.basic,
-                    state: state,
-                  ),
-                  const SizedBox(height: 16),
-                  _buildTierCard(
-                    tier: SubscriptionTier.silver,
-                    isSelected: _selectedTier == SubscriptionTier.silver,
-                    state: state,
-                    badge: 'POPULAR',
-                  ),
-                  const SizedBox(height: 16),
-                  _buildTierCard(
-                    tier: SubscriptionTier.gold,
-                    isSelected: _selectedTier == SubscriptionTier.gold,
-                    state: state,
-                    badge: 'BEST VALUE',
-                    isGoldHighlighted: true,
-                  ),
-                  const SizedBox(height: 32),
+                      const SizedBox(height: 24),
 
-                  // Feature Comparison
-                  _buildFeatureComparison(),
-                  const SizedBox(height: 32),
-
-                  // Subscribe Button
-                  if (_selectedTier != SubscriptionTier.basic)
-                    ElevatedButton(
-                      onPressed: state is! SubscriptionLoading
-                          ? () => _handlePurchase(context, state)
-                          : null,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFD4AF37),
-                        foregroundColor: Colors.black,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: Text(
-                        'Subscribe to ${_selectedTier.displayName}',
-                        style: const TextStyle(
-                          fontSize: 18,
+                      // Header
+                      const Text(
+                        'Extend Your Membership',
+                        style: TextStyle(
+                          fontSize: 28,
                           fontWeight: FontWeight.bold,
+                          color: Color(0xFFD4AF37),
                         ),
+                        textAlign: TextAlign.center,
                       ),
-                    ),
+                      const SizedBox(height: 8),
+                      const Text(
+                        'Buy once, enjoy premium features for 1 month or 1 year',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white70,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 32),
 
-                  const SizedBox(height: 16),
+                      // Base Membership
+                      if (baseProduct != null)
+                        _buildProductCard(
+                          product: baseProduct,
+                          duration: 'Permanent',
+                          isSelected: _selectedProduct?.id == baseProduct.id,
+                          onSelect: () =>
+                              setState(() => _selectedProduct = baseProduct),
+                        ),
 
-                  // Terms
-                  Text(
-                    'Subscriptions automatically renew unless cancelled 24 hours before the end of the current period. Manage in your account settings.',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey[600],
-                    ),
-                    textAlign: TextAlign.center,
+                      const SizedBox(height: 24),
+
+                      // Monthly Memberships
+                      if (monthlyProducts.isNotEmpty) ...[
+                        const Text(
+                          'Monthly Memberships',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        ...monthlyProducts.map((product) => Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: _buildProductCard(
+                                product: product,
+                                duration: '1 month',
+                                isSelected:
+                                    _selectedProduct?.id == product.id,
+                                onSelect: () =>
+                                    setState(() => _selectedProduct = product),
+                              ),
+                            )),
+                      ],
+
+                      const SizedBox(height: 24),
+
+                      // Yearly Memberships (Save XX%)
+                      if (yearlyProducts.isNotEmpty) ...[
+                        const Text(
+                          'Yearly Memberships (Save ~17%)',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFFD4AF37),
+                          ),
+                        ),
+                        const Text(
+                          'Best value - equivalent to 2 months free!',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.white70,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        ...yearlyProducts.map((product) => Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: _buildProductCard(
+                                product: product,
+                                duration: '1 year',
+                                isSelected:
+                                    _selectedProduct?.id == product.id,
+                                onSelect: () =>
+                                    setState(() => _selectedProduct = product),
+                                isYearly: true,
+                              ),
+                            )),
+                      ],
+
+                      const SizedBox(height: 32),
+
+                      // Purchase Button
+                      if (_selectedProduct != null)
+                        ElevatedButton(
+                          onPressed: state is! SubscriptionLoading
+                              ? () =>
+                                  _handlePurchase(context, _selectedProduct!)
+                              : null,
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFFD4AF37),
+                            foregroundColor: Colors.black,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          child: Text(
+                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}',
+                            style: const TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+
+                      const SizedBox(height: 16),
+
+                      // Terms
+                      Text(
+                        'One-time purchase. Membership will be extended from your current end date. Higher tier purchases override lower tiers.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.grey[600],
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+
+                      const SizedBox(height: 32),
+
+                      // Feature Comparison
+                      _buildFeatureComparison(),
+                    ],
                   ),
-                ],
-              ),
-            ),
+                ),
               ),
               // Loading overlay
               if (isLoading)
@@ -161,7 +310,8 @@ class _SubscriptionSelectionScreenState
                   color: Colors.black54,
                   child: const Center(
                     child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF37)),
+                      valueColor:
+                          AlwaysStoppedAnimation<Color>(Color(0xFFD4AF37)),
                     ),
                   ),
                 ),
@@ -172,114 +322,195 @@ class _SubscriptionSelectionScreenState
     );
   }
 
-  Widget _buildTierCard({
-    required SubscriptionTier tier,
+  Widget _buildCurrentMembershipStatus() {
+    final isActive =
+        _currentEndDate != null && _currentEndDate!.isAfter(DateTime.now());
+    final daysRemaining = isActive
+        ? _currentEndDate!.difference(DateTime.now()).inDays
+        : 0;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.grey[900],
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFFD4AF37), width: 1),
+      ),
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        children: [
+          const Text(
+            'Current Membership',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.white70,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            _currentTierName ?? 'BASIC',
+            style: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFFD4AF37),
+            ),
+          ),
+          if (isActive) ...[
+            const SizedBox(height: 4),
+            Text(
+              '$daysRemaining days remaining',
+              style: const TextStyle(
+                fontSize: 16,
+                color: Colors.white70,
+              ),
+            ),
+            Text(
+              'Expires: ${_currentEndDate!.day}/${_currentEndDate!.month}/${_currentEndDate!.year}',
+              style: const TextStyle(
+                fontSize: 12,
+                color: Colors.white54,
+              ),
+            ),
+          ] else
+            const Text(
+              'No active membership',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white54,
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildProductCard({
+    required ProductDetails product,
+    required String duration,
     required bool isSelected,
-    required SubscriptionState state,
-    String? badge,
-    bool isGoldHighlighted = false,
+    required VoidCallback onSelect,
+    bool isYearly = false,
   }) {
-    final features = tier.features;
-    final color = isGoldHighlighted ? const Color(0xFFD4AF37) : Colors.white;
+    final tierName = _getTierDisplayName(product.id);
+    final color = _getTierColor(product.id);
+    final isLocked = _isLowerThanCurrentTier(product.id);
 
     return GestureDetector(
-      onTap: () => setState(() => _selectedTier = tier),
-      child: Container(
-        decoration: BoxDecoration(
-          color: isSelected
-              ? (isGoldHighlighted ? const Color(0xFFD4AF37).withOpacity(0.1) : Colors.grey[900])
-              : Colors.grey[850],
-          border: Border.all(
-            color: isSelected
-                ? (isGoldHighlighted ? const Color(0xFFD4AF37) : Colors.white)
-                : Colors.transparent,
-            width: 2,
+      onTap: isLocked ? null : onSelect,
+      child: Opacity(
+        opacity: isLocked ? 0.4 : 1.0,
+        child: Container(
+          decoration: BoxDecoration(
+            color: isSelected && !isLocked ? color.withOpacity(0.1) : Colors.grey[900],
+            border: Border.all(
+              color: isSelected && !isLocked ? color : Colors.transparent,
+              width: 2,
+            ),
+            borderRadius: BorderRadius.circular(16),
           ),
-          borderRadius: BorderRadius.circular(16),
-        ),
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
+          padding: const EdgeInsets.all(20),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      tier.displayName,
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: color,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          tierName,
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: color,
+                          ),
+                        ),
+                        if (isLocked) ...[
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.red[700],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Text(
+                              'You have ${_currentTierName!}',
+                              style: const TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                        if (!isLocked && isYearly) ...[
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFD4AF37),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Text(
+                              'SAVE ~17%',
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ],
+                        if (product.id == 'greengo_base_membership') ...[
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Text(
+                              '+500 COINS',
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      tier == SubscriptionTier.basic
-                          ? 'Free Forever'
-                          : '\$${tier.monthlyPrice.toStringAsFixed(2)}/month',
+                      isLocked ? 'Lower than your current tier' : duration,
                       style: TextStyle(
-                        fontSize: 18,
-                        color: isGoldHighlighted
-                            ? const Color(0xFFD4AF37)
-                            : Colors.white70,
+                        fontSize: 14,
+                        color: isLocked ? Colors.red[300] : Colors.white54,
                       ),
                     ),
                   ],
                 ),
-                if (badge != null)
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 6,
-                    ),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFD4AF37),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Text(
-                      badge,
-                      style: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            const Divider(color: Colors.white24),
-            const SizedBox(height: 16),
-            ...tier.features.entries.where((e) => e.value is bool && e.value == true || e.value is int && e.value > 0).map((entry) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.check_circle,
-                      color: isGoldHighlighted
-                          ? const Color(0xFFD4AF37)
-                          : Colors.green,
-                      size: 20,
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        _getFeatureDescription(entry.key, entry.value),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ),
-                  ],
+              ),
+              Text(
+                product.price,
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: color,
                 ),
-              );
-            }).toList(),
-          ],
+              ),
+              const SizedBox(width: 8),
+              Icon(
+                isLocked
+                    ? Icons.lock
+                    : (isSelected ? Icons.radio_button_checked : Icons.radio_button_off),
+                color: isLocked ? Colors.red[300] : (isSelected ? color : Colors.white38),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -362,48 +593,35 @@ class _SubscriptionSelectionScreenState
     );
   }
 
-  String _getFeatureDescription(String key, dynamic value) {
-    switch (key) {
-      case 'dailyLikes':
-        return value == -1 ? 'Unlimited Daily Likes' : '$value Daily Likes';
-      case 'superLikes':
-        return '$value Super Likes per day';
-      case 'rewinds':
-        return value == -1 ? 'Unlimited Rewinds' : '$value Rewinds per day';
-      case 'boosts':
-        return '$value Profile Boost per month';
-      case 'seeWhoLikesYou':
-        return 'See Who Likes You';
-      case 'unlimitedLikes':
-        return 'Unlimited Likes';
-      case 'advancedFilters':
-        return 'Advanced Search Filters';
-      case 'readReceipts':
-        return 'Read Receipts';
-      case 'prioritySupport':
-        return 'Priority Customer Support';
-      case 'profileBoost':
-        return 'Profile Visibility Boost';
-      case 'incognitoMode':
-        return 'Incognito Browsing Mode';
-      default:
-        return key;
-    }
+  void _handlePurchase(BuildContext context, ProductDetails product) {
+    final tier = _getTierFromProductId(product.id);
+    context.read<SubscriptionBloc>().add(
+          PurchaseSubscription(
+            product: product,
+            tier: tier,
+          ),
+        );
   }
 
-  void _handlePurchase(BuildContext context, SubscriptionState state) {
-    if (state is ProductsLoaded) {
-      final product = state.products.firstWhere(
-        (p) => p.id == _selectedTier.productId,
-        orElse: () => throw Exception('Product not found'),
-      );
+  String _getTierDisplayName(String productId) {
+    if (productId.contains('platinum')) return 'Platinum';
+    if (productId.contains('gold')) return 'Gold';
+    if (productId.contains('silver')) return 'Silver';
+    if (productId == 'greengo_base_membership') return 'Base Membership';
+    return 'Membership';
+  }
 
-      context.read<SubscriptionBloc>().add(
-            PurchaseSubscription(
-              product: product,
-              tier: _selectedTier,
-            ),
-          );
-    }
+  Color _getTierColor(String productId) {
+    if (productId.contains('platinum')) return Colors.blueGrey[300]!;
+    if (productId.contains('gold')) return const Color(0xFFD4AF37);
+    if (productId.contains('silver')) return Colors.grey[400]!;
+    return Colors.green;
+  }
+
+  SubscriptionTier _getTierFromProductId(String productId) {
+    if (productId.contains('platinum')) return SubscriptionTier.platinum;
+    if (productId.contains('gold')) return SubscriptionTier.gold;
+    if (productId.contains('silver')) return SubscriptionTier.silver;
+    return SubscriptionTier.basic;
   }
 }

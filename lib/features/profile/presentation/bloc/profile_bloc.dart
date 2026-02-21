@@ -1,3 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/usecases/create_profile.dart';
@@ -28,6 +31,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<ProfilePhotoUploadRequested>(_onProfilePhotoUploadRequested);
     on<ProfilePhotoVerificationRequested>(_onProfilePhotoVerificationRequested);
     on<ProfileNicknameUpdateRequested>(_onProfileNicknameUpdateRequested);
+    on<ProfileDeleteRequested>(_onProfileDeleteRequested);
   }
 
   Future<void> _onProfileLoadRequested(
@@ -171,5 +175,157 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     // Emit success with updated profile
     final updatedProfileResult = updateResult.getOrElse(() => throw Exception('Unreachable'));
     emit(ProfileUpdated(profile: updatedProfileResult));
+  }
+
+  Future<void> _onProfileDeleteRequested(
+    ProfileDeleteRequested event,
+    Emitter<ProfileState> emit,
+  ) async {
+    emit(const ProfileLoading());
+
+    try {
+      final userId = event.userId;
+      final firestore = FirebaseFirestore.instance;
+
+      // Delete all user data from Firestore collections
+      // Top-level user documents
+      final topLevelCollections = [
+        'profiles',
+        'users',
+        'userSettings',
+        'coinBalances',
+        'subscriptions',
+        'memberships',
+        'membership_purchases',
+        'userLevels',
+        'userAchievements',
+        'userBadges',
+        'userChallenges',
+        'userVibeTags',
+        'user_levels',
+        'user_vectors',
+        'user_interactions',
+        'notification_preferences',
+        'match_preferences',
+        'streaks',
+        'dailyUsage',
+        'usageLimits',
+        'achievement_progress',
+        'language_progress',
+        'learning_progress',
+        'daily_hints_progress',
+        'videoCoinBalances',
+      ];
+
+      // Delete top-level docs in parallel batches
+      await Future.wait(
+        topLevelCollections.map((collection) async {
+          try {
+            final docRef = firestore.collection(collection).doc(userId);
+            await _deleteSubcollections(docRef);
+            await docRef.delete();
+          } catch (e) {
+            debugPrint('[DeleteAccount] Error deleting $collection/$userId: $e');
+          }
+        }),
+      );
+
+      // Delete documents where userId is a field (query-based)
+      final queryCollections = <String, List<String>>{
+        'swipes': ['userId'],
+        'matches': ['userId1', 'userId2'],
+        'conversations': ['participants'],
+        'notifications': ['userId'],
+        'blockedUsers': ['userId', 'blockedUserId'],
+        'user_reports': ['reporterId', 'reportedUserId'],
+        'message_reports': ['reporterId'],
+        'coinTransactions': ['userId'],
+        'coinGifts': ['senderId', 'receiverId'],
+        'coinOrders': ['userId'],
+        'purchases': ['userId'],
+        'support_chats': ['userId'],
+        'photo_likes': ['userId', 'targetUserId'],
+        'sentVirtualGifts': ['senderId'],
+        'secondChancePool': ['userId'],
+        'blindMatches': ['userId1', 'userId2'],
+        'scheduledDates': ['userId1', 'userId2'],
+        'call_history': ['callerId', 'receiverId'],
+        'album_access': ['ownerId', 'grantedToUserId'],
+        'account_actions': ['userId'],
+        'videoCoinTransactions': ['userId'],
+        'xp_transactions': ['userId'],
+      };
+
+      // Run query-based deletions in parallel
+      await Future.wait(
+        queryCollections.entries.expand((entry) {
+          return entry.value.map((field) async {
+            try {
+              if (field == 'participants') {
+                final query = await firestore
+                    .collection(entry.key)
+                    .where(field, arrayContains: userId)
+                    .get();
+                for (final doc in query.docs) {
+                  await _deleteSubcollections(doc.reference);
+                  await doc.reference.delete();
+                }
+              } else {
+                final query = await firestore
+                    .collection(entry.key)
+                    .where(field, isEqualTo: userId)
+                    .get();
+                for (final doc in query.docs) {
+                  await _deleteSubcollections(doc.reference);
+                  await doc.reference.delete();
+                }
+              }
+            } catch (e) {
+              debugPrint('[DeleteAccount] Error querying ${entry.key}.$field: $e');
+            }
+          });
+        }),
+      );
+
+      debugPrint('[DeleteAccount] Account $userId Firestore data deleted');
+
+      // IMPORTANT: Emit ProfileDeleted BEFORE deleting Firebase Auth user.
+      // Auth deletion triggers authStateChanges() which navigates to login,
+      // disposing this bloc. If we emit after, the UI never receives the state.
+      emit(const ProfileDeleted());
+
+      // Delete Firebase Auth user (best effort — UI already navigated away)
+      try {
+        await FirebaseAuth.instance.currentUser?.delete();
+      } catch (e) {
+        debugPrint('[DeleteAccount] Auth delete failed: $e');
+      }
+    } catch (e) {
+      debugPrint('[DeleteAccount] Error: $e');
+      emit(ProfileError(message: 'Failed to delete account: $e'));
+    }
+  }
+
+  /// Delete known subcollections of a document
+  Future<void> _deleteSubcollections(DocumentReference docRef) async {
+    final knownSubcollections = [
+      'coinBatches',
+      'coinTransactions',
+      'messages',
+      'support_messages',
+      'days',
+      'hours',
+    ];
+
+    await Future.wait(
+      knownSubcollections.map((sub) async {
+        try {
+          final subDocs = await docRef.collection(sub).limit(500).get();
+          for (final doc in subDocs.docs) {
+            await doc.reference.delete();
+          }
+        } catch (_) {}
+      }),
+    );
   }
 }

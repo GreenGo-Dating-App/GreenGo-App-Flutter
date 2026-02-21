@@ -130,6 +130,15 @@ import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../features/coins/data/datasources/coin_remote_datasource.dart';
 
+// Subscription
+import '../../features/subscription/data/datasources/subscription_remote_datasource.dart';
+import '../../features/subscription/data/repositories/subscription_repository_impl.dart';
+import '../../features/subscription/domain/repositories/subscription_repository.dart';
+import '../../features/subscription/domain/usecases/get_current_subscription.dart';
+import '../../features/subscription/domain/usecases/purchase_subscription.dart' as domain_purchase;
+import '../../features/subscription/domain/usecases/restore_purchases.dart';
+import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
+
 // Language Learning
 import '../../features/language_learning/data/datasources/language_learning_remote_data_source.dart';
 import '../../features/language_learning/data/repositories/language_learning_repository_impl.dart';
@@ -258,6 +267,7 @@ Future<void> init() async {
     () => MatchesBloc(
       getMatches: sl(),
       repository: sl(),
+      profileRepository: sl(),
     ),
   );
 
@@ -481,11 +491,40 @@ Future<void> init() async {
     ),
   );
 
-  //! Features - Coins
+    //! Features - Coins
   // Data sources
   sl.registerLazySingleton<CoinRemoteDataSource>(
     () => CoinRemoteDataSource(
       firestore: sl(),
+      inAppPurchase: sl(),
+    ),
+  );
+
+  //! Features - Subscription
+  // Data sources
+  sl.registerLazySingleton<SubscriptionRemoteDataSource>(
+    () => SubscriptionRemoteDataSource(
+      firestore: sl(),
+      inAppPurchase: sl(),
+    ),
+  );
+
+  // Repository
+  sl.registerLazySingleton<SubscriptionRepository>(
+    () => SubscriptionRepositoryImpl(remoteDataSource: sl()),
+  );
+
+    // Use cases
+  sl.registerLazySingleton(() => GetCurrentSubscription(sl()));
+  sl.registerLazySingleton(() => domain_purchase.PurchaseSubscription(sl()));
+  sl.registerLazySingleton(() => RestorePurchases(sl()));
+
+  // BLoC
+  sl.registerFactory(
+    () => SubscriptionBloc(
+      getCurrentSubscription: sl(),
+      purchaseSubscription: sl(),
+      restorePurchases: sl(),
       inAppPurchase: sl(),
     ),
   );

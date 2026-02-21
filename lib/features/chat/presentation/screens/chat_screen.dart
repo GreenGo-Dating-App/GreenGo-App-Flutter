@@ -1112,23 +1112,26 @@ class _ChatScreenState extends State<ChatScreen> {
                   itemCount: privatePhotos.length,
                   itemBuilder: (ctx, index) {
                     final photoUrl = privatePhotos[index] as String;
-                    return ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.network(
-                        photoUrl,
-                        fit: BoxFit.cover,
-                        loadingBuilder: (context, child, progress) {
-                          if (progress == null) return child;
-                          return Container(
-                            color: AppColors.backgroundDark,
-                            child: const Center(
-                              child: CircularProgressIndicator(
-                                color: AppColors.richGold,
-                                strokeWidth: 2,
+                    return GestureDetector(
+                      onTap: () => _openPhotoFullscreen(context, photoUrl, privatePhotos.cast<String>(), index),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(
+                          photoUrl,
+                          fit: BoxFit.cover,
+                          loadingBuilder: (context, child, progress) {
+                            if (progress == null) return child;
+                            return Container(
+                              color: AppColors.backgroundDark,
+                              child: const Center(
+                                child: CircularProgressIndicator(
+                                  color: AppColors.richGold,
+                                  strokeWidth: 2,
+                                ),
                               ),
-                            ),
-                          );
-                        },
+                            );
+                          },
+                        ),
                       ),
                     );
                   },
@@ -1148,6 +1151,55 @@ class _ChatScreenState extends State<ChatScreen> {
         );
       }
     }
+  }
+
+  /// Open a photo in fullscreen with zoom capability
+  void _openPhotoFullscreen(BuildContext context, String photoUrl, List<String> allPhotos, int initialIndex) {
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        opaque: false,
+        barrierColor: Colors.black,
+        pageBuilder: (context, animation, secondaryAnimation) {
+          return FadeTransition(
+            opacity: animation,
+            child: Scaffold(
+              backgroundColor: Colors.black,
+              appBar: AppBar(
+                backgroundColor: Colors.transparent,
+                elevation: 0,
+                leading: IconButton(
+                  icon: const Icon(Icons.close, color: Colors.white),
+                  onPressed: () => Navigator.of(context).pop(),
+                ),
+                title: Text(
+                  '${initialIndex + 1} / ${allPhotos.length}',
+                  style: const TextStyle(color: Colors.white70, fontSize: 14),
+                ),
+                centerTitle: true,
+              ),
+              body: Center(
+                child: InteractiveViewer(
+                  minScale: 0.5,
+                  maxScale: 3.0,
+                  child: Image.network(
+                    photoUrl,
+                    fit: BoxFit.contain,
+                    loadingBuilder: (context, child, progress) {
+                      if (progress == null) return child;
+                      return const Center(
+                        child: CircularProgressIndicator(
+                          color: AppColors.richGold,
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 
   /// Grant access to current user's private album to the other user
@@ -1743,8 +1795,9 @@ class _ChatScreenState extends State<ChatScreen> {
     if (confirmed == true && mounted) {
       final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
+      // Run delete operation FIRST, then show success dialog
+      bloc.add(const ChatDeletedForMe());
       await ActionSuccessDialog.showChatDeletedForMe(this.context, onDismiss: () {
-        bloc.add(const ChatDeletedForMe());
         nav.popUntil((route) => route.isFirst);
       });
     }
@@ -1780,8 +1833,9 @@ class _ChatScreenState extends State<ChatScreen> {
     if (confirmed == true && mounted) {
       final bloc = this._chatBloc;
       final nav = Navigator.of(this.context);
+      // Run delete operation FIRST, then show success dialog
+      bloc.add(const ChatDeletedForBoth());
       await ActionSuccessDialog.showChatDeletedForBoth(this.context, onDismiss: () {
-        bloc.add(const ChatDeletedForBoth());
         nav.popUntil((route) => route.isFirst);
       });
     }

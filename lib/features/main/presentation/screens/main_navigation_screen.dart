@@ -433,7 +433,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
                 MaterialPageRoute(
                   builder: (context) => BlocProvider(
                     create: (context) => di.sl<SubscriptionBloc>(),
-                    child: const SubscriptionSelectionScreen(),
+                    child: const MembershipSelectionScreen(),
                   ),
                 ),
               );

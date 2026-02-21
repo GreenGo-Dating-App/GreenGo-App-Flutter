@@ -713,6 +713,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required String userId,
     bool activeOnly = true,
   }) async {
+    debugPrint('[getMatches] Loading matches for userId: $userId, activeOnly: $activeOnly');
+
     // Query matches where user is userId1
     Query query1 = firestore
         .collection('matches')
@@ -726,10 +728,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // NOTE: We do NOT filter isActive in Firestore query because legacy matches
     // may not have the isActive field at all (null != true). Instead we filter
     // client-side after fetching.
+    // NOTE: No orderBy here — avoids requiring composite indexes.
+    // We sort client-side after combining both queries.
 
     // Execute both queries
-    final results1 = await query1.orderBy('matchedAt', descending: true).get();
-    final results2 = await query2.orderBy('matchedAt', descending: true).get();
+    final results1 = await query1.get();
+    final results2 = await query2.get();
 
     // Get blocked user IDs to filter out blocked matches
     final blockedUserIds = await _getBlockedUserIds(userId);
@@ -767,6 +771,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     // Sort by match date (most recent first)
     matches.sort((a, b) => b.matchedAt.compareTo(a.matchedAt));
+
+    debugPrint('[getMatches] Found ${matches.length} matches for $userId '
+        '(query1: ${results1.docs.length}, query2: ${results2.docs.length})');
 
     return matches;
   }

@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/entities/discovery_card.dart';
@@ -108,6 +109,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     if (s is DiscoverySwipeCompleted) return (cards: s.cards, currentIndex: s.currentIndex);
     if (s is DiscoveryInsufficientCoins) return (cards: s.cards, currentIndex: s.currentIndex);
     if (s is DiscoveryBoostActivated) return (cards: s.cards, currentIndex: s.currentIndex);
+    if (s is DiscoveryBaseMembershipRequired) return (cards: s.cards, currentIndex: s.currentIndex);
     return null;
   }
 
@@ -126,8 +128,29 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final rules = event.membershipRules ?? MembershipRules.freeDefaults;
     final tier = event.membershipTier ?? MembershipTier.free;
 
-    // ── Super Like: check daily limit first, then hourly, then coins ──
+    // ── Super Like: check base membership first, then limits, then coins ──
     if (event.actionType == SwipeActionType.superLike) {
+      // Check if user has base membership before processing super like
+      {
+        try {
+          final profileDoc = await FirebaseFirestore.instance
+              .collection('profiles')
+              .doc(event.userId)
+              .get();
+          final hasBaseMembership = profileDoc.data()?['hasBaseMembership'] as bool? ?? false;
+          if (!hasBaseMembership) {
+            emit(DiscoveryBaseMembershipRequired(
+              cards: currentState.cards,
+              currentIndex: currentState.currentIndex,
+            ));
+            // Transition back to loaded so UI can continue after dialog
+            emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
+            return;
+          }
+        } catch (e) {
+          debugPrint('Error checking base membership: $e');
+        }
+      }
       bool usedFreeAllowance = false;
 
       // Step 1: Check daily super like limit

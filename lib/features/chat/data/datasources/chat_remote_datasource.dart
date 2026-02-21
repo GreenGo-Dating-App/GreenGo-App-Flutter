@@ -1413,9 +1413,18 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }) async {
     // CORE: Mark conversation as deleted for this user — this is the only
     // operation that MUST succeed for the chat to disappear from the list.
-    await firestore.collection('conversations').doc(conversationId).update({
-      'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
-    });
+    try {
+      await firestore.collection('conversations').doc(conversationId).update({
+        'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
+      });
+    } catch (e) {
+      // Handle document-not-found gracefully
+      if (e.toString().contains('NOT_FOUND') || e.toString().contains('not-found')) {
+        debugPrint('Warning: conversation document not found (may already be deleted): $e');
+        return; // Nothing more to clean up
+      }
+      rethrow;
+    }
 
     // Everything below is best-effort cleanup. Failures are logged but
     // do NOT prevent the deletion from succeeding.
@@ -1566,7 +1575,16 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     }
 
     // CORE: delete the conversation document itself
-    await firestore.collection('conversations').doc(conversationId).delete();
+    try {
+      await firestore.collection('conversations').doc(conversationId).delete();
+    } catch (e) {
+      // Handle NOT_FOUND gracefully — document may already be deleted
+      if (e.toString().contains('NOT_FOUND') || e.toString().contains('not-found')) {
+        debugPrint('Warning: conversation document already deleted: $e');
+      } else {
+        rethrow;
+      }
+    }
   }
 
   @override

@@ -56,20 +56,58 @@ extension SubscriptionTierExtension on SubscriptionTier {
     }
   }
 
-  String get productId {
+  /// Yearly price = monthly × 10 (~17% savings, 2 months free)
+  double get yearlyPrice {
+    return monthlyPrice * 10;
+  }
+
+  /// Monthly equivalent when buying yearly
+  double get yearlyMonthlyEquivalent {
+    if (yearlyPrice == 0) return 0;
+    return yearlyPrice / 12;
+  }
+
+  /// Savings percentage when buying yearly vs monthly
+  double get yearlySavingsPercent {
+    if (monthlyPrice == 0) return 0;
+    final monthlyTotal = monthlyPrice * 12;
+    return ((monthlyTotal - yearlyPrice) / monthlyTotal) * 100;
+  }
+
+  /// Monthly product ID (for store lookup)
+  String get monthlyProductId {
     switch (this) {
       case SubscriptionTier.basic:
-        return 'basic_free';
+        return 'greengo_base_membership';
       case SubscriptionTier.silver:
-        return 'silver_premium_monthly';
+        return '1_month_silver';
       case SubscriptionTier.gold:
-        return 'gold_premium_monthly';
+        return '1_month_gold';
       case SubscriptionTier.platinum:
-        return 'platinum_vip_monthly';
+        return '1_month_platinum';
       case SubscriptionTier.test:
         return 'test_user';
     }
   }
+
+  /// Yearly product ID (for store lookup)
+  String get yearlyProductId {
+    switch (this) {
+      case SubscriptionTier.basic:
+        return 'greengo_base_membership'; // Base is one-time, no yearly variant
+      case SubscriptionTier.silver:
+        return '1_year_silver';
+      case SubscriptionTier.gold:
+        return '1_year_gold';
+      case SubscriptionTier.platinum:
+        return '1_year_platinum_membership';
+      case SubscriptionTier.test:
+        return 'test_user';
+    }
+  }
+
+  /// Legacy getter for backwards compatibility
+  String get productId => monthlyProductId;
 
   /// Check if this tier bypasses countdown restrictions
   bool get bypassesCountdown {
@@ -304,7 +342,7 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
 }
 
 /// Subscription Entity
-/// Represents a user's subscription to premium features
+/// Represents a user's one-time membership purchase
 class Subscription extends Equatable {
   final String subscriptionId;
   final String userId;
@@ -312,20 +350,13 @@ class Subscription extends Equatable {
   final SubscriptionStatus status;
   final DateTime startDate;
   final DateTime? endDate;
-  final DateTime? nextBillingDate;
-  final bool autoRenew;
-  final String? cancellationReason;
-  final DateTime? cancelledAt;
+  final int durationDays; // 30 or 365
 
   // Payment information
   final String? platform; // 'android', 'ios', 'web'
   final String? purchaseToken;
   final String? transactionId;
   final String? orderId;
-
-  // Grace period (Point 153)
-  final bool inGracePeriod;
-  final DateTime? gracePeriodEndDate;
 
   // Pricing
   final double price;
@@ -342,26 +373,20 @@ class Subscription extends Equatable {
     required this.status,
     required this.startDate,
     this.endDate,
-    this.nextBillingDate,
-    this.autoRenew = true,
-    this.cancellationReason,
-    this.cancelledAt,
+    this.durationDays = 30,
     this.platform,
     this.purchaseToken,
     this.transactionId,
     this.orderId,
-    this.inGracePeriod = false,
-    this.gracePeriodEndDate,
     required this.price,
     this.currency = 'USD',
     required this.createdAt,
     this.updatedAt,
   });
 
-  /// Check if subscription is currently active
+  /// Check if membership is currently active
   bool get isActive {
-    if (status != SubscriptionStatus.active &&
-        status != SubscriptionStatus.cancelled) {
+    if (status != SubscriptionStatus.active) {
       return false;
     }
 
@@ -370,8 +395,7 @@ class Subscription extends Equatable {
     return DateTime.now().isBefore(endDate!);
   }
 
-  /// Check if subscription will expire soon (within 3 days)
-  /// Point 152: Renewal notifications
+  /// Check if membership will expire soon (within 3 days)
   bool get willExpireSoon {
     if (endDate == null) return false;
 
@@ -379,15 +403,7 @@ class Subscription extends Equatable {
     return daysUntilExpiry <= 3 && daysUntilExpiry >= 0;
   }
 
-  /// Check if currently in grace period
-  /// Point 153: Grace period handling
-  bool get isInGracePeriod {
-    if (!inGracePeriod || gracePeriodEndDate == null) return false;
-
-    return DateTime.now().isBefore(gracePeriodEndDate!);
-  }
-
-  /// Days remaining in subscription
+  /// Days remaining in membership
   int get daysRemaining {
     if (endDate == null) return -1; // Unlimited
 
@@ -418,16 +434,11 @@ class Subscription extends Equatable {
     SubscriptionStatus? status,
     DateTime? startDate,
     DateTime? endDate,
-    DateTime? nextBillingDate,
-    bool? autoRenew,
-    String? cancellationReason,
-    DateTime? cancelledAt,
+    int? durationDays,
     String? platform,
     String? purchaseToken,
     String? transactionId,
     String? orderId,
-    bool? inGracePeriod,
-    DateTime? gracePeriodEndDate,
     double? price,
     String? currency,
     DateTime? createdAt,
@@ -440,16 +451,11 @@ class Subscription extends Equatable {
       status: status ?? this.status,
       startDate: startDate ?? this.startDate,
       endDate: endDate ?? this.endDate,
-      nextBillingDate: nextBillingDate ?? this.nextBillingDate,
-      autoRenew: autoRenew ?? this.autoRenew,
-      cancellationReason: cancellationReason ?? this.cancellationReason,
-      cancelledAt: cancelledAt ?? this.cancelledAt,
+      durationDays: durationDays ?? this.durationDays,
       platform: platform ?? this.platform,
       purchaseToken: purchaseToken ?? this.purchaseToken,
       transactionId: transactionId ?? this.transactionId,
       orderId: orderId ?? this.orderId,
-      inGracePeriod: inGracePeriod ?? this.inGracePeriod,
-      gracePeriodEndDate: gracePeriodEndDate ?? this.gracePeriodEndDate,
       price: price ?? this.price,
       currency: currency ?? this.currency,
       createdAt: createdAt ?? this.createdAt,
@@ -465,16 +471,11 @@ class Subscription extends Equatable {
         status,
         startDate,
         endDate,
-        nextBillingDate,
-        autoRenew,
-        cancellationReason,
-        cancelledAt,
+        durationDays,
         platform,
         purchaseToken,
         transactionId,
         orderId,
-        inGracePeriod,
-        gracePeriodEndDate,
         price,
         currency,
         createdAt,

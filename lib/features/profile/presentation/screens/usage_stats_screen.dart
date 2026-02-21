@@ -39,19 +39,60 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
   // Real-time Firestore listeners
   StreamSubscription<DocumentSnapshot>? _hourlyUsageSub;
   StreamSubscription<DocumentSnapshot>? _dailyUsageSub;
+  StreamSubscription<DocumentSnapshot>? _profileSub;
+
+  // Real-time membership tier (updates after purchase)
+  late MembershipTier _liveMembershipTier;
 
   @override
   void initState() {
     super.initState();
+    _liveMembershipTier = widget.membershipTier;
     _loadStats();
     _subscribeToRealtimeUsage();
+    _subscribeToProfileChanges();
   }
 
   @override
   void dispose() {
     _hourlyUsageSub?.cancel();
     _dailyUsageSub?.cancel();
+    _profileSub?.cancel();
     super.dispose();
+  }
+
+  /// Listen to profile changes so the tier badge updates in real-time after a purchase
+  void _subscribeToProfileChanges() {
+    _profileSub = FirebaseFirestore.instance
+        .collection('profiles')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      if (!mounted || !doc.exists) return;
+      final data = doc.data()!;
+      final tierStr = data['membershipTier'] as String?;
+      if (tierStr != null) {
+        final newTier = _membershipTierFromString(tierStr);
+        if (newTier != _liveMembershipTier) {
+          setState(() {
+            _liveMembershipTier = newTier;
+          });
+        }
+      }
+    });
+  }
+
+  MembershipTier _membershipTierFromString(String tierStr) {
+    switch (tierStr.toUpperCase()) {
+      case 'PLATINUM':
+        return MembershipTier.platinum;
+      case 'GOLD':
+        return MembershipTier.gold;
+      case 'SILVER':
+        return MembershipTier.silver;
+      default:
+        return MembershipTier.free;
+    }
   }
 
   String _getHourKey() {
@@ -143,7 +184,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final rules = MembershipRules.getDefaultsForTier(widget.membershipTier);
+    final rules = MembershipRules.getDefaultsForTier(_liveMembershipTier);
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -253,7 +294,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                     const SizedBox(height: 32),
 
                     // Tier Comparison
-                    if (widget.membershipTier != MembershipTier.platinum) ...[
+                    if (_liveMembershipTier != MembershipTier.platinum) ...[
                       const Text(
                         'Upgrade Benefits',
                         style: TextStyle(
@@ -275,6 +316,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                               MaterialPageRoute(
                                 builder: (_) => CoinShopScreen(
                                   userId: widget.userId,
+                                  initialTab: 1,
                                 ),
                               ),
                             );
@@ -322,14 +364,14 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
       ),
       child: Row(
         children: [
-          MembershipBadge(tier: widget.membershipTier),
+          MembershipBadge(tier: _liveMembershipTier),
           const SizedBox(width: 16),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '${widget.membershipTier.displayName} Plan',
+                  '${_liveMembershipTier.displayName} Plan',
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,
@@ -590,7 +632,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
   Widget _buildTierComparison(MembershipRules currentRules) {
     // Get next tier
     MembershipTier nextTier;
-    switch (widget.membershipTier) {
+    switch (_liveMembershipTier) {
       case MembershipTier.free:
         nextTier = MembershipTier.silver;
         break;

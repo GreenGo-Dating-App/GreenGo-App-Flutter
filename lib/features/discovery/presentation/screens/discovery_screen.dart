@@ -160,6 +160,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     super.initState();
     _loadCurrentUserProfile();
     _loadSavedPreferencesAndStart();
+    _loadSwipeHistoryOverlays();
   }
 
   /// Load saved match preferences from Firestore, then start the discovery stack
@@ -202,6 +203,72 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         }
       },
     );
+  }
+
+  /// Load swipe history from Firestore to pre-populate grid action overlays.
+  /// This makes gradients persistent across sessions.
+  Future<void> _loadSwipeHistoryOverlays() async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Load swipe history
+      final swipesSnapshot = await firestore
+          .collection('swipes')
+          .where('userId', isEqualTo: userId)
+          .get();
+
+      // Load active matches to mark matched users
+      final matchesSnapshot = await firestore
+          .collection('matches')
+          .where('isActive', isEqualTo: true)
+          .get();
+
+      final matchedUserIds = <String>{};
+      for (final doc in matchesSnapshot.docs) {
+        final data = doc.data();
+        final u1 = data['userId1'] as String?;
+        final u2 = data['userId2'] as String?;
+        if (u1 == userId && u2 != null) matchedUserIds.add(u2);
+        if (u2 == userId && u1 != null) matchedUserIds.add(u1);
+      }
+
+      if (!mounted) return;
+
+      setState(() {
+        for (final doc in swipesSnapshot.docs) {
+          final data = doc.data();
+          final targetUserId = data['targetUserId'] as String?;
+          final actionType = data['actionType'] as String?;
+          if (targetUserId == null || actionType == null) continue;
+
+          // If this user is matched, mark as matched (overrides like/superLike)
+          if (matchedUserIds.contains(targetUserId)) {
+            _gridActionOverlays[targetUserId] = 'matched';
+          } else {
+            // Map Firestore actionType to overlay key
+            switch (actionType) {
+              case 'like':
+                _gridActionOverlays[targetUserId] = 'liked';
+                break;
+              case 'superLike':
+                _gridActionOverlays[targetUserId] = 'superLiked';
+                break;
+              case 'pass':
+                _gridActionOverlays[targetUserId] = 'passed';
+                _gridSkippedIds.add(targetUserId);
+                break;
+              case 'skip':
+                _gridActionOverlays[targetUserId] = 'skipped';
+                _gridSkippedIds.add(targetUserId);
+                break;
+            }
+          }
+        }
+      });
+      debugPrint('[Discovery] Loaded ${_gridActionOverlays.length} swipe overlays from history');
+    } catch (e) {
+      debugPrint('[Discovery] Error loading swipe history overlays: $e');
+    }
   }
 
   @override
@@ -547,27 +614,43 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   // ───────────────────── Grid Mode ─────────────────────
 
-  Widget _buildGridMode(BuildContext context, List<DiscoveryCard> cards, int currentIndex) {
-    // Use the snapshot index from when grid mode was entered, so bloc's
+    Widget _buildGridMode(BuildContext context, List<DiscoveryCard> cards, int currentIndex) {
+        // Use the snapshot index from when grid mode was entered, so bloc's
     // currentIndex advancing on each action doesn't shrink the pool.
     final startIdx = _gridStartIndex.clamp(0, cards.length);
-    // Filter out skipped users and get available cards
+    // Show ALL users (including skipped ones) but with their action overlays
     // Grid mode always sorts by distance (closest first)
-    final availableCards = cards
+    final allCards = cards
         .sublist(startIdx)
-        .where((c) => !_gridSkippedIds.contains(c.userId))
         .toList()
       ..sort((a, b) => a.candidate.distance.compareTo(b.candidate.distance));
+    
+    // Apply filters if any are active
+    List<DiscoveryCard> filteredCards;
+    if (_activeFilters.isEmpty) {
+      filteredCards = allCards;
+    } else {
+      filteredCards = allCards.where((card) {
+        final overlay = _gridActionOverlays[card.userId];
+        // If no overlay and user wants to see 'all' or specific actions
+        if (overlay == null) {
+          return _activeFilters.contains('all');
+        }
+        // Check if this card's action matches any active filter
+        return _activeFilters.contains(overlay);
+      }).toList();
+    }
+    
     final limit = _gridProfileLimit;
-    final visibleCount = availableCards.length.clamp(0, limit);
-    final visibleCards = availableCards.take(visibleCount).toList();
+    final visibleCount = filteredCards.length.clamp(0, limit);
+    final visibleCards = filteredCards.take(visibleCount).toList();
     final hasMore = visibleCount >= limit;
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
 
-    return Column(
+        return Column(
       children: [
         // Grid header with column selector and profile count
-        _buildGridHeader(visibleCount, availableCards.length, tier),
+        _buildGridHeader(visibleCount, filteredCards.length, tier),
 
         // Grid content
         Expanded(
@@ -613,7 +696,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     );
   }
 
-  Widget _buildGridHeader(int showing, int total, MembershipTier tier) {
+      Widget _buildGridHeader(int showing, int total, MembershipTier tier) {
     final l10n = AppLocalizations.of(context)!;
     final tierName = tier == MembershipTier.free
         ? l10n.tierFree
@@ -625,40 +708,61 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            l10n.showingProfiles(showing),
-            style: const TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 13,
-            ),
-          ),
-          const SizedBox(width: 8),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withOpacity(0.15),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              tierName,
-              style: const TextStyle(
-                color: AppColors.richGold,
-                fontSize: 11,
-                fontWeight: FontWeight.bold,
+          Row(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.showingProfiles(showing),
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 13,
+                    ),
+                  ),
+                  if (_activeFilters.isNotEmpty)
+                    Text(
+                      'Filtered from $total',
+                      style: const TextStyle(
+                        color: AppColors.textTertiary,
+                        fontSize: 10,
+                      ),
+                    ),
+                ],
               ),
-            ),
+              const SizedBox(width: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppColors.richGold.withOpacity(0.15),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  tierName,
+                  style: const TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const Spacer(),
+              // Column selector
+              _buildColumnSelector(),
+            ],
           ),
-          const Spacer(),
-          // Column selector
-          _buildColumnSelector(),
+          const SizedBox(height: 8),
+          // Filter buttons
+          _buildGridFilters(),
         ],
       ),
     );
   }
 
-  Widget _buildColumnSelector() {
+    Widget _buildColumnSelector() {
     return Container(
       padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
@@ -701,6 +805,64 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     );
   }
 
+  // Filter state
+  final Set<String> _activeFilters = {};
+
+  Widget _buildGridFilters() {
+    return Wrap(
+      spacing: 6,
+      runSpacing: 4,
+      children: [
+        _buildFilterChip('All', 'all', Icons.grid_view),
+        _buildFilterChip('Liked', 'liked', Icons.favorite),
+        _buildFilterChip('Super Liked', 'superLiked', Icons.star),
+        _buildFilterChip('Passed', 'passed', Icons.close),
+        _buildFilterChip('Skipped', 'skipped', Icons.arrow_downward),
+        _buildFilterChip('Matches', 'matched', Icons.favorite_border),
+      ],
+    );
+  }
+
+  Widget _buildFilterChip(String label, String value, IconData icon) {
+    final isActive = _activeFilters.contains(value) || (value == 'all' && _activeFilters.isEmpty);
+    return FilterChip(
+      label: Text(label),
+      avatar: Icon(icon, size: 16),
+      selected: isActive,
+      onSelected: (selected) {
+        setState(() {
+          if (value == 'all') {
+            _activeFilters.clear();
+          } else {
+            if (selected) {
+              _activeFilters.add(value);
+            } else {
+              _activeFilters.remove(value);
+            }
+            // If all filters are removed, show all
+            if (_activeFilters.isEmpty) {
+              // Show all - no filtering
+            }
+          }
+        });
+      },
+      selectedColor: AppColors.richGold.withOpacity(0.2),
+      checkmarkColor: AppColors.richGold,
+      backgroundColor: AppColors.backgroundCard,
+      labelStyle: TextStyle(
+        color: isActive ? AppColors.richGold : AppColors.textSecondary,
+        fontSize: 12,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(
+          color: isActive ? AppColors.richGold : AppColors.divider,
+          width: 1,
+        ),
+      ),
+    );
+  }
+
   Widget _buildGridProfileCard(BuildContext context, DiscoveryCard card) {
     return _GridProfileCard(
       key: ValueKey(card.userId),
@@ -737,13 +899,15 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
     setState(() {
       switch (actionType) {
-        case SwipeActionType.skip:
-          // Skip: remove from grid
+                case SwipeActionType.skip:
+          // Skip: mark as skipped and show skipped overlay
           _gridSkippedIds.add(card.userId);
+          _gridActionOverlays[card.userId] = 'skipped';
           break;
         case SwipeActionType.pass:
-          // Nope: remove from grid
+          // Nope: mark as passed and show passed overlay
           _gridSkippedIds.add(card.userId);
+          _gridActionOverlays[card.userId] = 'passed';
           break;
         case SwipeActionType.like:
           _gridActionOverlays[card.userId] = 'liked';
@@ -914,8 +1078,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     setState(() {
       _isGridMode = !_isGridMode;
       _gridExtraPurchased = 0;
-      _gridSkippedIds.clear();
-      _gridActionOverlays.clear();
+      // Don't clear overlays — they persist from swipe history
       // Snapshot the current index when entering grid mode so actions
       // dispatched to the bloc don't shrink the grid pool.
       if (_isGridMode) {
@@ -947,11 +1110,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   void refreshWithPreferences(MatchPreferences preferences) {
     setState(() {
       _savedPreferences = preferences;
-      // Reset grid state so stale data doesn't persist
+      // Reset grid position but keep action overlays (persistent)
       _gridStartIndex = 0;
       _gridExtraPurchased = 0;
-      _gridSkippedIds.clear();
-      _gridActionOverlays.clear();
     });
     context.read<DiscoveryBloc>().add(
           DiscoveryStackRefreshRequested(
@@ -1283,7 +1444,7 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                 ),
               ),
 
-            // Action overlay (after action confirmed)
+                        // Action overlay (after action confirmed)
             if (widget.actionOverlay == 'liked')
               Positioned.fill(
                 child: DecoratedBox(
@@ -1308,6 +1469,36 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                       end: Alignment.topCenter,
                       colors: [
                         AppColors.richGold.withOpacity(0.6),
+                        Colors.transparent,
+                      ],
+                    ),
+                  ),
+                ),
+              )
+            else if (widget.actionOverlay == 'skipped')
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [
+                        AppColors.infoBlue.withOpacity(0.6),
+                        Colors.transparent,
+                      ],
+                    ),
+                  ),
+                ),
+              )
+            else if (widget.actionOverlay == 'passed')
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [
+                        AppColors.errorRed.withOpacity(0.6),
                         Colors.transparent,
                       ],
                     ),

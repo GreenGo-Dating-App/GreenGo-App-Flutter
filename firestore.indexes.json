@@ -318,6 +318,23 @@
         { "fieldPath": "status", "order": "ASCENDING" }
       ]
     },
+    {
+      "collectionGroup": "subscriptions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "endDate", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "membershipTier", "order": "ASCENDING" },
+        { "fieldPath": "membershipEndDate", "order": "ASCENDING" }
+      ]
+    },
 
     {
       "collectionGroup": "purchases",

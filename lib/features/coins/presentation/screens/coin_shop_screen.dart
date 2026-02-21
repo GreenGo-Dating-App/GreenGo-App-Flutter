@@ -1,10 +1,14 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../subscription/domain/entities/subscription.dart';
@@ -23,11 +27,13 @@ import '../bloc/coin_state.dart';
 class CoinShopScreen extends StatefulWidget {
   final String userId;
   final SubscriptionTier? currentTier;
+  final int initialTab;
 
   const CoinShopScreen({
     super.key,
     required this.userId,
     this.currentTier,
+    this.initialTab = 0,
   });
 
   @override
@@ -56,6 +62,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   final TextEditingController _amountController = TextEditingController();
   bool _isSendingCoins = false;
 
+  // Monthly vs yearly toggle for membership tab
+  bool _isYearlySelected = false;
+
   // Mutable current tier — loaded from Firestore, updated after purchase
   late SubscriptionTier _currentTier;
 
@@ -63,11 +72,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   bool _hasBaseMembership = false;
   DateTime? _baseMembershipEndDate;
 
+  // Current membership end date (for tier plans)
+  DateTime? _membershipEndDate;
+
   @override
   void initState() {
     super.initState();
     _currentTier = widget.currentTier ?? SubscriptionTier.basic;
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 3, vsync: this, initialIndex: widget.initialTab.clamp(0, 2));
 
     try {
       context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
@@ -94,9 +106,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           debugPrint('[IAP] Purchase stream error: $error');
         },
       );
+      // Restore old purchases on init to consume any unconsumed ones
+      // This clears "already owned" state from previous sessions
+      _consumeOldPurchases();
     } catch (e) {
       debugPrint('[CoinShop] IAP initialization failed: $e');
       _inAppPurchase = null;
+    }
+  }
+
+  /// Restore and consume any old unconsumed purchases to clear "already owned" state
+  Future<void> _consumeOldPurchases() async {
+    if (!Platform.isAndroid || _inAppPurchase == null) return;
+    try {
+      await _inAppPurchase!.restorePurchases();
+    } catch (e) {
+      debugPrint('[CoinShop] restorePurchases error (non-critical): $e');
     }
   }
 
@@ -116,11 +141,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             _currentTier = SubscriptionTierExtension.fromString(tierString);
           });
         }
-        // Load base membership state
+        // Load base membership state and membership end date
         setState(() {
           _hasBaseMembership = data?['hasBaseMembership'] as bool? ?? false;
           final ts = data?['baseMembershipEndDate'];
           _baseMembershipEndDate = ts != null ? (ts as Timestamp).toDate() : null;
+          final endTs = data?['membershipEndDate'];
+          _membershipEndDate = endTs != null ? (endTs as Timestamp).toDate() : null;
         });
       }
     } catch (e) {
@@ -168,10 +195,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
             );
           }
-          // Complete the purchase to clear it from the queue
-          if (purchaseDetails.pendingCompletePurchase) {
-            _inAppPurchase!.completePurchase(purchaseDetails);
-          }
+          // Always consume to clear "already owned" state
+          _completeAndConsume(purchaseDetails);
           break;
 
         case PurchaseStatus.canceled:
@@ -180,10 +205,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             _isLoadingCoinPurchase = false;
             _isLoadingSubscription = false;
           });
-          // Complete the purchase to clear it from the queue
-          if (purchaseDetails.pendingCompletePurchase) {
-            _inAppPurchase!.completePurchase(purchaseDetails);
-          }
+          // Always consume to clear "already owned" state
+          _completeAndConsume(purchaseDetails);
           break;
       }
     }
@@ -197,8 +220,25 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     if (productId == 'greengo_base_membership') {
       debugPrint('[IAP] Base membership purchase successful');
       final now = DateTime.now();
-      final endDate = now.add(const Duration(days: 365));
       final firestore = FirebaseFirestore.instance;
+
+      // Compute end date: extend from current end date if active
+      DateTime endDate;
+      try {
+        final profileDoc = await firestore
+            .collection('profiles')
+            .doc(widget.userId)
+            .get();
+        final currentEndTs = profileDoc.data()?['baseMembershipEndDate'] as Timestamp?;
+        final currentEndDate = currentEndTs?.toDate();
+        if (currentEndDate != null && currentEndDate.isAfter(now)) {
+          endDate = currentEndDate.add(const Duration(days: 365));
+        } else {
+          endDate = now.add(const Duration(days: 365));
+        }
+      } catch (_) {
+        endDate = now.add(const Duration(days: 365));
+      }
 
       try {
         // Update base membership status
@@ -210,41 +250,57 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           'baseMembershipEndDate': Timestamp.fromDate(endDate),
         });
 
-        // Grant 500 bonus coins
+        // Track purchase ownership by app userId
+        final token = purchaseDetails.purchaseID ?? '';
+        final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
+        if (token.isNotEmpty) {
+          await firestore.collection('membership_purchases').doc(token).set({
+            'userId': widget.userId,
+            'userEmail': userEmail,
+            'productId': productId,
+            'purchaseId': token,
+            'purchasedAt': Timestamp.fromDate(now),
+            'endDate': Timestamp.fromDate(endDate),
+          });
+        }
+
+        // Grant 500 bonus coins (write to coinBatches array field, not subcollection)
         final balanceRef = firestore
             .collection('coinBalances')
             .doc(widget.userId);
+        final batchEntry = {
+          'batchId': 'membership_${now.millisecondsSinceEpoch}',
+          'initialCoins': 500,
+          'remainingCoins': 500,
+          'source': 'reward',
+          'acquiredDate': Timestamp.fromDate(now),
+          'expirationDate': Timestamp.fromDate(endDate),
+        };
         final balanceDoc = await balanceRef.get();
         if (balanceDoc.exists) {
-          final currentTotal = balanceDoc.data()?['totalCoins'] as int? ?? 0;
-          await balanceRef.update({'totalCoins': currentTotal + 500});
+          await balanceRef.update({
+            'totalCoins': FieldValue.increment(500),
+            'earnedCoins': FieldValue.increment(500),
+            'lastUpdated': Timestamp.fromDate(now),
+            'coinBatches': FieldValue.arrayUnion([batchEntry]),
+          });
         } else {
           await balanceRef.set({
             'userId': widget.userId,
             'totalCoins': 500,
+            'earnedCoins': 500,
+            'purchasedCoins': 0,
+            'giftedCoins': 0,
             'spentCoins': 0,
             'lastUpdated': Timestamp.fromDate(now),
+            'coinBatches': [batchEntry],
           });
         }
-        await firestore
-            .collection('coinBalances')
-            .doc(widget.userId)
-            .collection('coinBatches')
-            .add({
-          'amount': 500,
-          'remainingCoins': 500,
-          'source': 'membership_bonus',
-          'reason': 'Base membership welcome bonus',
-          'createdAt': Timestamp.fromDate(now),
-          'expiresAt': Timestamp.fromDate(endDate),
-        });
       } catch (e) {
         debugPrint('[IAP] Failed to update base membership in Firestore: $e');
       }
 
-      if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase!.completePurchase(purchaseDetails);
-      }
+      await _completeAndConsume(purchaseDetails);
 
       if (mounted) {
         setState(() {
@@ -258,8 +314,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
         } catch (_) {}
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('GreenGo Membership activated! +500 bonus coins. Valid for 1 year.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.shopMembershipActivated('${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}')),
             backgroundColor: Colors.green,
           ),
         );
@@ -284,10 +340,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
       setState(() => _isLoadingCoinPurchase = false);
 
-      // Complete the purchase
-      if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase!.completePurchase(purchaseDetails);
-      }
+      // Complete and consume the purchase
+      await _completeAndConsume(purchaseDetails);
 
       // Show success dialog
       if (mounted) {
@@ -311,20 +365,45 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     if (subscribedTier != null) {
       debugPrint('[IAP] Subscription purchase successful: ${subscribedTier.displayName}');
 
+      // Update Firestore profile with new membership tier and get new end date
+      final durationDays = _durationDaysFromProductId(productId);
+      final newEndDate = await _updateFirestoreMembership(subscribedTier, durationDays: durationDays);
+
+      // Track purchase ownership by app userId
+      try {
+        final firestore = FirebaseFirestore.instance;
+        final token = purchaseDetails.purchaseID ?? '';
+        final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
+        if (token.isNotEmpty) {
+          await firestore.collection('membership_purchases').doc(token).set({
+            'userId': widget.userId,
+            'userEmail': userEmail,
+            'productId': productId,
+            'purchaseId': token,
+            'tier': subscribedTier.name.toUpperCase(),
+            'purchasedAt': Timestamp.fromDate(DateTime.now()),
+            'endDate': newEndDate != null ? Timestamp.fromDate(newEndDate) : null,
+          });
+        }
+      } catch (e) {
+        debugPrint('[IAP] Failed to track purchase: $e');
+      }
+
       // Update local tier state immediately
       setState(() {
         _currentTier = subscribedTier;
         _selectedTier = null;
         _isLoadingSubscription = false;
+        _membershipEndDate = newEndDate;
       });
 
-      // Update Firestore profile with new membership tier
-      _updateFirestoreMembership(subscribedTier);
+      // Complete and consume the purchase
+      await _completeAndConsume(purchaseDetails);
 
-      // Complete the purchase
-      if (purchaseDetails.pendingCompletePurchase) {
-        await _inAppPurchase!.completePurchase(purchaseDetails);
-      }
+      // Refresh profile
+      try {
+        context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
+      } catch (_) {}
 
       // Show celebration screen with tier-specific benefits
       if (mounted) {
@@ -337,11 +416,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return;
     }
 
-    // Unknown product — still complete it
+    // Unknown product — still complete and consume it
     debugPrint('[IAP] Unknown product purchased: $productId');
-    if (purchaseDetails.pendingCompletePurchase) {
-      await _inAppPurchase!.completePurchase(purchaseDetails);
-    }
+    await _completeAndConsume(purchaseDetails);
     setState(() {
       _isLoadingCoinPurchase = false;
       _isLoadingSubscription = false;
@@ -351,28 +428,77 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Map a product ID back to a SubscriptionTier
   SubscriptionTier? _tierFromProductId(String productId) {
     for (final tier in SubscriptionTier.values) {
-      if (tier.productId == productId) return tier;
+      if (tier.monthlyProductId == productId || tier.yearlyProductId == productId) return tier;
     }
     return null;
   }
 
+  /// Get duration in days from product ID
+  int _durationDaysFromProductId(String productId) {
+    if (productId.contains('1_year') || productId.contains('year')) return 365;
+    return 30;
+  }
+
+  /// Complete and consume a purchase so it can be bought again
+  Future<void> _completeAndConsume(PurchaseDetails purchaseDetails) async {
+    if (purchaseDetails.pendingCompletePurchase) {
+      await _inAppPurchase!.completePurchase(purchaseDetails);
+    }
+    if (Platform.isAndroid) {
+      try {
+        final androidAddition = _inAppPurchase!
+            .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
+        await androidAddition.consumePurchase(purchaseDetails);
+      } catch (e) {
+        debugPrint('[IAP] Consume failed (non-critical): $e');
+      }
+    }
+  }
+
+  /// Buy a product — all products are managed (in-app) products, use buyConsumable
+  Future<bool> _buyProduct(ProductDetails product) async {
+    debugPrint('[CoinShop] Buying product: ${product.id}, price: ${product.price}');
+    final param = PurchaseParam(
+      productDetails: product,
+      applicationUserName: widget.userId,
+    );
+    return await _inAppPurchase!.buyConsumable(purchaseParam: param, autoConsume: false);
+  }
+
   /// Update Firestore profile with new membership tier
-  Future<void> _updateFirestoreMembership(SubscriptionTier tier) async {
+  /// Handles end-date extension: extends from current end date if active
+  /// Returns the new end date
+  Future<DateTime?> _updateFirestoreMembership(SubscriptionTier tier, {int durationDays = 30}) async {
     try {
       final now = DateTime.now();
-      await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .update({
-        'membershipTier': tier.name,
+      final firestore = FirebaseFirestore.instance;
+
+      // Read current membership to extend from end date
+      final profileDoc = await firestore.collection('profiles').doc(widget.userId).get();
+      final currentEndTs = profileDoc.data()?['membershipEndDate'] as Timestamp?;
+      final currentEndDate = currentEndTs?.toDate();
+
+      DateTime newEndDate;
+      if (currentEndDate != null && currentEndDate.isAfter(now)) {
+        // Extend from current end date
+        newEndDate = currentEndDate.add(Duration(days: durationDays));
+      } else {
+        newEndDate = now.add(Duration(days: durationDays));
+      }
+
+      final updates = {
+        'membershipTier': tier.name.toUpperCase(),
         'membershipStartDate': Timestamp.fromDate(now),
-        'membershipEndDate': Timestamp.fromDate(
-          now.add(const Duration(days: 30)),
-        ),
-      });
-      debugPrint('[CoinShop] Firestore membership updated to ${tier.name}');
+        'membershipEndDate': Timestamp.fromDate(newEndDate),
+      };
+
+      await firestore.collection('profiles').doc(widget.userId).update(updates);
+      await firestore.collection('users').doc(widget.userId).update(updates);
+      debugPrint('[CoinShop] Firestore membership updated to ${tier.name}, ends: $newEndDate');
+      return newEndDate;
     } catch (e) {
       debugPrint('[CoinShop] Failed to update Firestore membership: $e');
+      return null;
     }
   }
 
@@ -405,9 +531,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Shop',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.shopTitle,
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
@@ -466,14 +592,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           fontWeight: FontWeight.bold,
         ),
         labelPadding: EdgeInsets.zero,
-        tabs: const [
+        tabs: [
           Tab(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('🪙', style: TextStyle(fontSize: 14)),
-                SizedBox(width: 4),
-                Text('Coins'),
+                const Text('🪙', style: TextStyle(fontSize: 14)),
+                const SizedBox(width: 4),
+                Text(AppLocalizations.of(context)!.shopTabCoins),
               ],
             ),
           ),
@@ -481,9 +607,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('👑', style: TextStyle(fontSize: 14)),
-                SizedBox(width: 4),
-                Text('Membership'),
+                const Text('👑', style: TextStyle(fontSize: 14)),
+                const SizedBox(width: 4),
+                Text(AppLocalizations.of(context)!.shopTabMembership),
               ],
             ),
           ),
@@ -491,9 +617,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('🎬', style: TextStyle(fontSize: 14)),
-                SizedBox(width: 4),
-                Text('Video'),
+                const Text('🎬', style: TextStyle(fontSize: 14)),
+                const SizedBox(width: 4),
+                Text(AppLocalizations.of(context)!.shopTabVideo),
               ],
             ),
           ),
@@ -535,7 +661,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ElevatedButton.icon(
                   onPressed: () => setState(() {}),
                   icon: const Icon(Icons.refresh),
-                  label: const Text('Retry'),
+                  label: Text(AppLocalizations.of(context)!.shopRetry),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFFFD700),
                     foregroundColor: Colors.black,
@@ -593,9 +719,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
               ),
               const SizedBox(height: 16),
-              const Text(
-                'Upgrade Your Experience',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.shopUpgradeExperience,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -603,10 +729,108 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
               const SizedBox(height: 8),
               Text(
-                'Current Plan: ${currentTier.displayName}',
+                AppLocalizations.of(context)!.shopCurrentPlan(currentTier.displayName),
                 style: TextStyle(
                   fontSize: 14,
                   color: AppColors.richGold.withValues(alpha: 0.8),
+                ),
+              ),
+              if (_membershipEndDate != null) ...[
+                const SizedBox(height: 4),
+                Text(
+                  _membershipEndDate!.isAfter(DateTime.now())
+                      ? AppLocalizations.of(context)!.shopExpires(
+                          '${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}',
+                          _membershipEndDate!.difference(DateTime.now()).inDays.toString(),
+                        )
+                      : AppLocalizations.of(context)!.shopExpired(
+                          '${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}',
+                        ),
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: _membershipEndDate!.isAfter(DateTime.now())
+                        ? const Color(0xFF4CAF50)
+                        : Colors.red[300],
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 16),
+              // Monthly / Yearly toggle
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.05),
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => setState(() => _isYearlySelected = false),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          decoration: BoxDecoration(
+                            gradient: !_isYearlySelected
+                                ? const LinearGradient(colors: [Color(0xFFFFD700), AppColors.richGold])
+                                : null,
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          child: Text(
+                            AppLocalizations.of(context)!.shopMonthly,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: !_isYearlySelected ? Colors.black : Colors.white60,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => setState(() => _isYearlySelected = true),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(vertical: 10),
+                          decoration: BoxDecoration(
+                            gradient: _isYearlySelected
+                                ? const LinearGradient(colors: [Color(0xFFFFD700), AppColors.richGold])
+                                : null,
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                AppLocalizations.of(context)!.shopYearly,
+                                style: TextStyle(
+                                  color: _isYearlySelected ? Colors.black : Colors.white60,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF4CAF50),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Text(
+                                  AppLocalizations.of(context)!.shopSavePercent,
+                                  style: const TextStyle(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               // Upgrade discount banner
@@ -620,17 +844,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     ),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.trending_up, color: Colors.white, size: 18),
-                      SizedBox(width: 8),
-                      Text(
-                        'Upgrade & Save! Get discount on higher tiers',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
+                      const Icon(Icons.trending_up, color: Colors.white, size: 18),
+                      const SizedBox(width: 8),
+                      Flexible(
+                        child: Text(
+                          AppLocalizations.of(context)!.shopUpgradeAndSave,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ],
@@ -666,8 +892,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Widget _buildSubscribeButton(SubscriptionTier currentTier) {
     final isUpgrade = _selectedTier!.index > currentTier.index;
-    final upgradeDiscount = _calculateUpgradeDiscount(currentTier, _selectedTier!);
-    final finalPrice = _selectedTier!.monthlyPrice - upgradeDiscount;
+    final upgradeDiscount = _isYearlySelected ? 0.0 : _calculateUpgradeDiscount(currentTier, _selectedTier!);
+    final displayPrice = _isYearlySelected ? _selectedTier!.yearlyPrice : _selectedTier!.monthlyPrice;
+    final finalPrice = displayPrice - upgradeDiscount;
+    final periodLabel = _isYearlySelected ? '/year' : '/month';
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -700,7 +928,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     const Icon(Icons.savings, color: Color(0xFF4CAF50), size: 20),
                     const SizedBox(width: 8),
                     Text(
-                      'You save \$${upgradeDiscount.toStringAsFixed(2)}/month upgrading from ${currentTier.displayName}!',
+                      AppLocalizations.of(context)!.shopYouSave(upgradeDiscount.toStringAsFixed(2), currentTier.displayName),
                       style: const TextStyle(
                         color: Color(0xFF4CAF50),
                         fontSize: 13,
@@ -733,7 +961,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          isUpgrade ? 'Upgrade to ${_selectedTier!.displayName}' : 'Subscribe to ${_selectedTier!.displayName}',
+                          isUpgrade
+                              ? AppLocalizations.of(context)!.shopUpgradeTo(
+                                  _selectedTier!.displayName,
+                                  _isYearlySelected ? AppLocalizations.of(context)!.shopOneYear : AppLocalizations.of(context)!.shopOneMonth,
+                                )
+                              : AppLocalizations.of(context)!.shopBuyTier(
+                                  _selectedTier!.displayName,
+                                  _isYearlySelected ? AppLocalizations.of(context)!.shopOneYear : AppLocalizations.of(context)!.shopOneMonth,
+                                ),
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -744,7 +980,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                '\$${_selectedTier!.monthlyPrice}',
+                                '\$${displayPrice.toStringAsFixed(2)}',
                                 style: const TextStyle(
                                   fontSize: 12,
                                   decoration: TextDecoration.lineThrough,
@@ -753,7 +989,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               ),
                               const SizedBox(width: 8),
                               Text(
-                                '\$${finalPrice.toStringAsFixed(2)}/month',
+                                '\$${finalPrice.toStringAsFixed(2)}$periodLabel',
                                 style: const TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
@@ -763,7 +999,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           )
                         else
                           Text(
-                            '\$${_selectedTier!.monthlyPrice}/month',
+                            '\$${displayPrice.toStringAsFixed(2)}$periodLabel',
                             style: const TextStyle(
                               fontSize: 12,
                             ),
@@ -856,17 +1092,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        'GreenGo Base Membership',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.shopBaseMembership,
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
                       ),
-                      const Text(
-                        'Yearly subscription',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.shopYearlyPlan,
+                        style: const TextStyle(
                           fontSize: 14,
                           color: Colors.white70,
                         ),
@@ -881,9 +1117,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       color: const Color(0xFF4CAF50),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: const Text(
-                      'ACTIVE',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context)!.shopActive,
+                      style: const TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -893,14 +1129,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ],
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Required to swipe, like, chat, and interact with other users.',
-              style: TextStyle(fontSize: 13, color: Colors.white60),
+            Text(
+              AppLocalizations.of(context)!.shopBaseMembershipDescription,
+              style: const TextStyle(fontSize: 13, color: Colors.white60),
             ),
             if (isActive && _baseMembershipEndDate != null) ...[
               const SizedBox(height: 8),
               Text(
-                'Valid until ${_baseMembershipEndDate!.day.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.month.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.year}',
+                AppLocalizations.of(context)!.shopValidUntil('${_baseMembershipEndDate!.day.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.month.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.year}'),
                 style: const TextStyle(
                   fontSize: 13,
                   color: Color(0xFF4CAF50),
@@ -931,9 +1167,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             color: Colors.white,
                           ),
                         )
-                      : const Text(
-                          'Subscribe Now',
-                          style: TextStyle(
+                      : Text(
+                          AppLocalizations.of(context)!.subscribeNow,
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -949,7 +1185,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Future<void> _handleBaseMembershipPurchase() async {
     if (_inAppPurchase == null) {
-      _showError('Store not available on this device.');
+      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
       return;
     }
     setState(() => _isLoadingSubscription = true);
@@ -957,7 +1193,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     try {
       final available = await _inAppPurchase!.isAvailable();
       if (!available) {
-        _showError('Store not available. Make sure Google Play is installed.');
+        _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
         setState(() => _isLoadingSubscription = false);
         return;
       }
@@ -975,20 +1211,25 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      final product = response.productDetails.first;
-      final param = PurchaseParam(
-        productDetails: product,
-        applicationUserName: widget.userId,
-      );
+      final ok = await _buyProduct(response.productDetails.first);
 
-      final ok = await _inAppPurchase!.buyNonConsumable(purchaseParam: param);
       if (!ok) {
-        _showError('Failed to initiate purchase');
+        _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
         setState(() => _isLoadingSubscription = false);
       }
     } catch (e) {
-      _showError('Purchase error: $e');
-      setState(() => _isLoadingSubscription = false);
+      final errorStr = e.toString();
+      if (errorStr.contains('ALREADY_OWNED') ||
+          errorStr.contains('ITEM_ALREADY_OWNED') ||
+          errorStr.contains('itemAlreadyOwned')) {
+        debugPrint('[CoinShop] Product already owned — consuming and retrying');
+        await _consumeOldPurchases();
+        await Future.delayed(const Duration(seconds: 2));
+        if (mounted) _handleBaseMembershipPurchase(); // Retry
+      } else {
+        _showError('Purchase error: $e');
+        setState(() => _isLoadingSubscription = false);
+      }
     }
   }
 
@@ -1014,7 +1255,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
 
     return GestureDetector(
-      onTap: (isCurrentPlan || isDowngrade) ? null : () => setState(() => _selectedTier = tier),
+      onTap: isDowngrade ? null : () => setState(() => _selectedTier = tier),
       child: Opacity(
         opacity: isDowngrade ? 0.5 : 1.0,
         child: Container(
@@ -1037,7 +1278,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
           child: Stack(
             children: [
-              // Current plan badge
+              // Current plan badge with end date
               if (isCurrentPlan)
                 Positioned(
                   top: 0,
@@ -1051,9 +1292,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         bottomLeft: Radius.circular(14),
                       ),
                     ),
-                    child: const Text(
-                      'CURRENT',
-                      style: TextStyle(
+                    child: Text(
+                      _membershipEndDate != null
+                          ? 'CURRENT • Expires ${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}'
+                          : 'CURRENT',
+                      style: const TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
@@ -1129,9 +1372,25 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               ),
                               Row(
                                 children: [
-                                  if (upgradeDiscount > 0) ...[
+                                  if (_isYearlySelected) ...[
                                     Text(
-                                      '\$${tier.monthlyPrice}',
+                                      '\$${tier.yearlyPrice.toStringAsFixed(2)}/year',
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.white70,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Text(
+                                      '(\$${tier.yearlyMonthlyEquivalent.toStringAsFixed(2)}/mo)',
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                        color: Color(0xFF4CAF50),
+                                      ),
+                                    ),
+                                  ] else if (upgradeDiscount > 0) ...[
+                                    Text(
+                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}',
                                       style: const TextStyle(
                                         fontSize: 14,
                                         color: Colors.white38,
@@ -1149,7 +1408,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                     ),
                                   ] else
                                     Text(
-                                      '\$${tier.monthlyPrice}/month',
+                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}/month',
                                       style: const TextStyle(
                                         fontSize: 16,
                                         color: Colors.white70,
@@ -1160,7 +1419,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             ],
                           ),
                         ),
-                        if (!isCurrentPlan && !isDowngrade)
+                        if (!isDowngrade)
                           Icon(
                             isSelected ? Icons.check_circle : Icons.circle_outlined,
                             color: isSelected ? tierColor : Colors.grey,
@@ -1177,13 +1436,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     const SizedBox(height: 16),
 
                     // Features list
-                    _buildFeatureRow('Daily Likes', _formatLimit(features['dailyLikes'] as int)),
-                    _buildFeatureRow('Super Likes', _formatLimit(features['superLikes'] as int)),
-                    _buildFeatureRow('Boosts', _formatLimit(features['boosts'] as int)),
-                    _buildFeatureRow('See Who Likes You', features['seeWhoLikesYou'] == true ? '✓' : '✗'),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyLikes'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['superLikes'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopBoosts, _formatLimit(features['boosts'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopSeeWhoLikesYou, features['seeWhoLikesYou'] == true ? '✓' : '✗'),
                     if (tier == SubscriptionTier.platinum) ...[
-                      _buildFeatureRow('VIP Badge', '✓'),
-                      _buildFeatureRow('Priority Matching', '✓'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopVipBadge, '✓'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopPriorityMatching, '✓'),
                     ],
                   ],
                 ),
@@ -1247,13 +1506,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[Subscription] Store available: $available');
 
       if (!available) {
-        _showError('Store not available. Make sure Google Play is installed and you are signed in.');
+        _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
         setState(() => _isLoadingSubscription = false);
         return;
       }
 
-      // Query product details from store
-      final productIds = {_selectedTier!.productId};
+      // Query product details from store (monthly or yearly based on toggle)
+      final productId = _isYearlySelected
+          ? _selectedTier!.yearlyProductId
+          : _selectedTier!.monthlyProductId;
+      final productIds = {productId};
       debugPrint('[Subscription] Querying product IDs: $productIds');
 
       final ProductDetailsResponse response =
@@ -1272,10 +1534,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       if (response.productDetails.isEmpty) {
         final notFoundIds = response.notFoundIDs.join(', ');
         _showError(
-          'Subscription "${_selectedTier!.productId}" not found in Google Play.\n\n'
+          'Product "$productId" not found in Google Play.\n\n'
           'Requirements:\n'
           '• Upload app to Google Play Console (internal testing track)\n'
-          '• Activate subscriptions in Google Play Console\n'
+          '• Create in-app product in Google Play Console\n'
           '• Add your Google account as a license tester\n\n'
           'Not found: $notFoundIds'
         );
@@ -1287,28 +1549,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final productDetails = response.productDetails.first;
       debugPrint('[Subscription] Found product: ${productDetails.id} - ${productDetails.title} - ${productDetails.price}');
 
-      // Create purchase parameters
-      final purchaseParam = PurchaseParam(
-        productDetails: productDetails,
-        applicationUserName: widget.userId,
-      );
-
       // Log upgrade info
       if (isUpgrade) {
         final offerId = _selectedTier!.getUpgradeOfferId(currentTier);
         debugPrint('[Subscription] Upgrading with offer: $offerId, discount: ${_selectedTier!.getUpgradeDiscount(currentTier) * 100}%');
       }
 
-      // This will trigger Google Play / App Store subscription flow
-      // Result will be handled by the purchase stream listener
-      final bool success = await _inAppPurchase!.buyNonConsumable(
-        purchaseParam: purchaseParam,
-      );
+      final success = await _buyProduct(productDetails);
 
-      debugPrint('[Subscription] buyNonConsumable result: $success');
+      debugPrint('[Subscription] purchase result: $success');
 
       if (!success) {
-        _showError('Failed to initiate subscription');
+        _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
         setState(() => _isLoadingSubscription = false);
       }
       // Do NOT pop navigator or show snackbar here.
@@ -1316,8 +1568,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     } catch (e, stackTrace) {
       debugPrint('[Subscription] Error: $e');
       debugPrint('[Subscription] Stack trace: $stackTrace');
-      _showError('Subscription error: ${e.toString()}');
-      setState(() => _isLoadingSubscription = false);
+      final errorStr = e.toString();
+      if (errorStr.contains('ALREADY_OWNED') ||
+          errorStr.contains('ITEM_ALREADY_OWNED') ||
+          errorStr.contains('itemAlreadyOwned')) {
+        debugPrint('[Subscription] Product already owned — consuming and retrying');
+        await _consumeOldPurchases();
+        await Future.delayed(const Duration(seconds: 2));
+        if (mounted) _handleSubscribe(); // Retry
+      } else {
+        _showError('Purchase error: ${e.toString()}');
+        setState(() => _isLoadingSubscription = false);
+      }
     }
   }
 
@@ -1375,9 +1637,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             shaderCallback: (bounds) => const LinearGradient(
               colors: [Color(0xFFFFD700), AppColors.richGold],
             ).createShader(bounds),
-            child: const Text(
-              'Coming Soon',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.shopComingSoon,
+              style: const TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -1390,7 +1652,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Text(
-              'Watch short videos to earn free coins!\nStay tuned for this exciting feature.',
+              AppLocalizations.of(context)!.shopVideoCoinsDescription,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15,
@@ -1432,22 +1694,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       ),
                     ),
                     const SizedBox(width: 16),
-                    const Expanded(
+                    Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Get Notified',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.shopGetNotified,
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 4),
+                          const SizedBox(height: 4),
                           Text(
-                            'We\'ll let you know when Video-Coins is available',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.shopNotifyMessage,
+                            style: const TextStyle(
                               color: Colors.white70,
                               fontSize: 12,
                             ),
@@ -1506,9 +1768,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               Text.rich(
                 TextSpan(
                   children: [
-                    const TextSpan(
-                      text: 'You have ',
-                      style: TextStyle(
+                    TextSpan(
+                      text: '${AppLocalizations.of(context)!.shopYouHave} ',
+                      style: const TextStyle(
                         fontSize: 20,
                         color: Colors.white70,
                       ),
@@ -1521,9 +1783,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         color: Color(0xFFFFD700),
                       ),
                     ),
-                    const TextSpan(
-                      text: ' GreenGoCoins',
-                      style: TextStyle(
+                    TextSpan(
+                      text: ' ${AppLocalizations.of(context)!.shopGreenGoCoins}',
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -1534,10 +1796,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              const Text(
-                'Unlock premium features and enhance your dating experience',
+              Text(
+                AppLocalizations.of(context)!.shopUnlockPremium,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                   color: Colors.grey,
                 ),
@@ -1599,7 +1861,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         ),
                       )
                     : Text(
-                        'Purchase ${_selectedPackage!.totalCoins} Coins for ${_selectedPackage!.displayPrice}',
+                        AppLocalizations.of(context)!.shopPurchaseCoinsFor(_selectedPackage!.totalCoins.toString(), _selectedPackage!.displayPrice),
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -1710,9 +1972,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       bottomLeft: Radius.circular(14),
                     ),
                   ),
-                  child: const Text(
-                    'POPULAR',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context)!.shopPopular,
+                    style: const TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -1772,9 +2034,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               ),
                             ],
                             const SizedBox(width: 4),
-                            const Text(
-                              'Coins',
-                              style: TextStyle(
+                            Text(
+                              AppLocalizations.of(context)!.shopCoins,
+                              style: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.grey,
                               ),
@@ -1835,7 +2097,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[CoinPurchase] Store available: $available');
 
       if (!available) {
-        _showError('Store not available. Make sure Google Play is installed and you are signed in.');
+        _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
         setState(() => _isLoadingCoinPurchase = false);
         return;
       }
@@ -1889,7 +2151,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       debugPrint('[CoinPurchase] buyConsumable result: $success');
 
       if (!success) {
-        _showError('Failed to initiate purchase');
+        _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
         setState(() => _isLoadingCoinPurchase = false);
       }
     } catch (e, stackTrace) {
@@ -1923,9 +2185,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 child: const Icon(Icons.card_giftcard, color: AppColors.richGold, size: 24),
               ),
               const SizedBox(width: 12),
-              const Text(
-                'Send Coins',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.shopSendCoins,
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -1939,7 +2201,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             controller: _nicknameController,
             style: const TextStyle(color: Colors.white, fontSize: 16),
             decoration: InputDecoration(
-              hintText: 'Recipient nickname',
+              hintText: AppLocalizations.of(context)!.shopRecipientNickname,
               hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),
               prefixIcon: const Icon(Icons.alternate_email, color: AppColors.richGold, size: 20),
               filled: true,
@@ -1965,7 +2227,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             keyboardType: TextInputType.number,
             style: const TextStyle(color: Colors.white, fontSize: 16),
             decoration: InputDecoration(
-              hintText: 'Enter amount',
+              hintText: AppLocalizations.of(context)!.shopEnterAmount,
               hintStyle: TextStyle(color: Colors.white.withOpacity(0.4)),
               prefixIcon: const Icon(Icons.monetization_on, color: AppColors.richGold, size: 20),
               filled: true,
@@ -2004,14 +2266,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       width: 20,
                       child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black),
                     )
-                  : const Row(
+                  : Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.send, size: 18),
-                        SizedBox(width: 8),
+                        const Icon(Icons.send, size: 18),
+                        const SizedBox(width: 8),
                         Text(
-                          'Send Coins',
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          AppLocalizations.of(context)!.shopSendCoins,
+                          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -2027,18 +2289,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final amountText = _amountController.text.trim();
 
     if (nickname.isEmpty || amountText.isEmpty) {
-      _showError('Please enter both nickname and amount');
+      _showError(AppLocalizations.of(context)!.shopEnterBothFields);
       return;
     }
 
     final amount = int.tryParse(amountText);
     if (amount == null || amount <= 0) {
-      _showError('Please enter a valid amount');
+      _showError(AppLocalizations.of(context)!.shopEnterValidAmount);
       return;
     }
 
     if (amount > _currentCoinBalance) {
-      _showError('Insufficient coins');
+      _showError(AppLocalizations.of(context)!.shopInsufficientCoins);
       return;
     }
 
@@ -2055,7 +2317,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           .get();
 
       if (recipientQuery.docs.isEmpty) {
-        _showError('User not found');
+        _showError(AppLocalizations.of(context)!.shopUserNotFound);
         setState(() => _isSendingCoins = false);
         return;
       }
@@ -2070,7 +2332,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final recipientFamilyName = recipientData['familyName'] as String? ?? '';
 
       if (recipientId == widget.userId) {
-        _showError('You cannot send coins to yourself');
+        _showError(AppLocalizations.of(context)!.shopCannotSendToSelf);
         setState(() => _isSendingCoins = false);
         return;
       }
@@ -2083,7 +2345,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         builder: (ctx) => AlertDialog(
           backgroundColor: AppColors.backgroundCard,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          title: const Text('Confirm Send', style: TextStyle(color: AppColors.textPrimary)),
+          title: Text(AppLocalizations.of(context)!.shopConfirmSend, style: const TextStyle(color: AppColors.textPrimary)),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -2158,11 +2420,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Cancel'),
+              child: Text(AppLocalizations.of(context)!.cancel),
             ),
             TextButton(
               onPressed: () => Navigator.pop(ctx, true),
-              child: const Text('Send', style: TextStyle(color: AppColors.richGold)),
+              child: Text(AppLocalizations.of(context)!.shopSend, style: const TextStyle(color: AppColors.richGold)),
             ),
           ],
         ),
@@ -2208,13 +2470,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$amount coins sent to @$nickname!'),
+            content: Text(AppLocalizations.of(context)!.shopCoinsSentTo(amount.toString(), nickname)),
             backgroundColor: Colors.green,
           ),
         );
       }
     } catch (e) {
-      _showError('Failed to send coins: ${e.toString()}');
+      _showError(AppLocalizations.of(context)!.shopFailedToSendCoins);
       setState(() => _isSendingCoins = false);
     }
   }
@@ -2243,9 +2505,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Unable to Load Packages',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.shopUnableToLoadPackages,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -2267,7 +2529,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 context.read<CoinBloc>().add(const LoadAvailablePackages());
               },
               icon: const Icon(Icons.refresh),
-              label: const Text('Retry'),
+              label: Text(AppLocalizations.of(context)!.shopRetry),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: Colors.black,
@@ -2280,7 +2542,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             const SizedBox(height: 16),
             // Info text
             Text(
-              'Make sure you have an internet connection\nand try again.',
+              AppLocalizations.of(context)!.shopCheckInternet,
               style: TextStyle(
                 color: Colors.white.withOpacity(0.5),
                 fontSize: 12,
