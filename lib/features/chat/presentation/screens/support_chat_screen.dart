@@ -7,6 +7,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/push_notification_service.dart';
 
 /// Support Chat Screen
 ///
@@ -53,6 +54,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   @override
   void initState() {
     super.initState();
+    // Suppress foreground push notifications for this support conversation
+    PushNotificationService.activeConversationId = widget.conversationId;
     _loadConversationDetails();
     _markAsRead();
     _loadInitialMessages();
@@ -63,6 +66,10 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
   @override
   void dispose() {
+    // Clear active conversation so notifications resume
+    if (PushNotificationService.activeConversationId == widget.conversationId) {
+      PushNotificationService.activeConversationId = null;
+    }
     _messageController.dispose();
     _scrollController.removeListener(_onScroll);
     _scrollController.dispose();

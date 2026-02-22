@@ -1,13 +1,17 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/blocked_users_service.dart';
+import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/translation_service.dart';
@@ -17,6 +21,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/message.dart';
@@ -89,6 +94,8 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    // Suppress foreground push notifications for this conversation
+    PushNotificationService.activeConversationId = widget.matchId;
     _translationService.initialize();
     _chatBloc = di.sl<ChatBloc>()
       ..add(ChatConversationLoaded(
@@ -96,7 +103,10 @@ class _ChatScreenState extends State<ChatScreen> {
         currentUserId: widget.currentUserId,
         otherUserId: widget.otherUserId,
       ));
-    _chatDataSource = ChatRemoteDataSourceImpl(firestore: FirebaseFirestore.instance);
+    _chatDataSource = ChatRemoteDataSourceImpl(
+      firestore: FirebaseFirestore.instance,
+      blockedUsersService: di.sl(),
+    );
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
     _fetchCurrentUserName();
   }
@@ -145,6 +155,10 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   @override
   void dispose() {
+    // Clear active conversation so notifications resume
+    if (PushNotificationService.activeConversationId == widget.matchId) {
+      PushNotificationService.activeConversationId = null;
+    }
     _languageProvider?.removeListener(_onLanguageChanged);
     _messageController.dispose();
     _scrollController.dispose();
@@ -590,6 +604,31 @@ class _ChatScreenState extends State<ChatScreen> {
         // Use original if compression fails
       }
 
+      // Validate image for nudity/explicit content BEFORE uploading
+      final validationResult =
+          await PhotoValidationService().validateImageForSending(file);
+      if (!validationResult.isValid) {
+        if (mounted) {
+          setState(() {
+            _isUploadingMedia = false;
+            _uploadProgress = 0.0;
+            _selectedImage = null;
+            _selectedImageXFile = null;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                AppLocalizations.of(context)?.photoExplicitContent ??
+                    'This image contains inappropriate content and cannot be sent.',
+              ),
+              backgroundColor: AppColors.errorRed,
+              duration: const Duration(seconds: 4),
+            ),
+          );
+        }
+        return;
+      }
+
       // Create unique filename
       final uuid = const Uuid().v4();
       final fileName = 'chat_images/${widget.matchId}/${uuid}.jpg';
@@ -616,6 +655,45 @@ class _ChatScreenState extends State<ChatScreen> {
 
       // Get download URL
       final downloadUrl = await ref.getDownloadURL();
+
+      // Backend moderation (second line of defense after on-device check)
+      try {
+        final moderationResult = await FirebaseFunctions.instance
+            .httpsCallable('moderateChatImage')
+            .call({
+          'imageUrl': downloadUrl,
+          'userId': widget.currentUserId,
+          'context': 'chat_image',
+        });
+
+        final isApproved = moderationResult.data['isApproved'] as bool? ?? false;
+        if (!isApproved) {
+          // Delete the uploaded image — it was rejected by backend moderation
+          await ref.delete().catchError((_) {});
+          if (mounted) {
+            setState(() {
+              _isUploadingMedia = false;
+              _uploadProgress = 0.0;
+              _selectedImage = null;
+              _selectedImageXFile = null;
+            });
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  AppLocalizations.of(context)?.photoExplicitContent ??
+                      'This image contains inappropriate content and cannot be sent.',
+                ),
+                backgroundColor: AppColors.errorRed,
+                duration: const Duration(seconds: 4),
+              ),
+            );
+          }
+          return;
+        }
+      } catch (e) {
+        // If moderation call fails, still allow (on-device check already passed)
+        debugPrint('Backend moderation call failed (allowing): $e');
+      }
 
       if (mounted) {
         // Send message with image URL

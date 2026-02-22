@@ -137,13 +137,13 @@ class MembershipBadge extends StatelessWidget {
   Color _getPrimaryColor() {
     switch (tier) {
       case MembershipTier.free:
-        return Colors.grey;
+        return AppColors.basePurple;
       case MembershipTier.silver:
         return const Color(0xFFC0C0C0); // Silver
       case MembershipTier.gold:
         return AppColors.richGold;
       case MembershipTier.platinum:
-        return const Color(0xFF9C27B0); // Purple/Platinum
+        return AppColors.platinumBlue;
       case MembershipTier.test:
         return Colors.blue;
     }
@@ -153,7 +153,7 @@ class MembershipBadge extends StatelessWidget {
     switch (tier) {
       case MembershipTier.free:
         return const LinearGradient(
-          colors: [Color(0xFF757575), Color(0xFF424242)],
+          colors: [AppColors.basePurple, AppColors.basePurpleDark],
         );
       case MembershipTier.silver:
         return const LinearGradient(
@@ -165,7 +165,7 @@ class MembershipBadge extends StatelessWidget {
         );
       case MembershipTier.platinum:
         return const LinearGradient(
-          colors: [Color(0xFFE1BEE7), Color(0xFF9C27B0)],
+          colors: [AppColors.platinumBlue, AppColors.platinumBlueDark],
         );
       case MembershipTier.test:
         return const LinearGradient(
@@ -178,13 +178,13 @@ class MembershipBadge extends StatelessWidget {
   static Color getBorderColor(MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
-        return Colors.transparent;
+        return AppColors.basePurple;
       case MembershipTier.silver:
         return const Color(0xFFC0C0C0);
       case MembershipTier.gold:
         return AppColors.richGold;
       case MembershipTier.platinum:
-        return const Color(0xFF9C27B0);
+        return AppColors.platinumBlue;
       case MembershipTier.test:
         return Colors.blue;
     }
@@ -192,9 +192,16 @@ class MembershipBadge extends StatelessWidget {
 
   /// Get tier-specific gradient for profile cards
   static LinearGradient? getCardGradient(MembershipTier tier) {
-    if (tier == MembershipTier.free) return null;
-
     switch (tier) {
+      case MembershipTier.free:
+        return LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            AppColors.basePurple.withOpacity(0.1),
+            AppColors.basePurpleDark.withOpacity(0.05),
+          ],
+        );
       case MembershipTier.silver:
         return LinearGradient(
           begin: Alignment.topLeft,
@@ -218,8 +225,8 @@ class MembershipBadge extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF9C27B0).withOpacity(0.1),
-            const Color(0xFF7B1FA2).withOpacity(0.05),
+            AppColors.platinumBlue.withOpacity(0.1),
+            AppColors.platinumBlueDark.withOpacity(0.05),
           ],
         );
       default:
@@ -288,13 +295,13 @@ class MembershipIndicator extends StatelessWidget {
   Color _getPrimaryColor() {
     switch (tier) {
       case MembershipTier.free:
-        return Colors.grey;
+        return AppColors.basePurple;
       case MembershipTier.silver:
         return const Color(0xFFC0C0C0);
       case MembershipTier.gold:
         return AppColors.richGold;
       case MembershipTier.platinum:
-        return const Color(0xFF9C27B0);
+        return AppColors.platinumBlue;
       case MembershipTier.test:
         return Colors.blue;
     }
@@ -304,7 +311,7 @@ class MembershipIndicator extends StatelessWidget {
     switch (tier) {
       case MembershipTier.free:
         return const LinearGradient(
-          colors: [Color(0xFF757575), Color(0xFF424242)],
+          colors: [AppColors.basePurple, AppColors.basePurpleDark],
         );
       case MembershipTier.silver:
         return const LinearGradient(
@@ -316,7 +323,7 @@ class MembershipIndicator extends StatelessWidget {
         );
       case MembershipTier.platinum:
         return const LinearGradient(
-          colors: [Color(0xFFE1BEE7), Color(0xFF9C27B0)],
+          colors: [AppColors.platinumBlue, AppColors.platinumBlueDark],
         );
       case MembershipTier.test:
         return const LinearGradient(

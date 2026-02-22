@@ -56,9 +56,20 @@ extension SubscriptionTierExtension on SubscriptionTier {
     }
   }
 
-  /// Yearly price = monthly × 10 (~17% savings, 2 months free)
+  /// Yearly price (as set on Google Play Console)
   double get yearlyPrice {
-    return monthlyPrice * 10;
+    switch (this) {
+      case SubscriptionTier.basic:
+        return 0.0;
+      case SubscriptionTier.silver:
+        return 48.99;
+      case SubscriptionTier.gold:
+        return 69.99;
+      case SubscriptionTier.platinum:
+        return 89.99;
+      case SubscriptionTier.test:
+        return 0.0;
+    }
   }
 
   /// Monthly equivalent when buying yearly

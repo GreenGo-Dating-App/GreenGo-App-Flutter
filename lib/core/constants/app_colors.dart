@@ -56,6 +56,12 @@ class AppColors {
   static final Color shadowMedium = Colors.black.withValues(alpha: 0.3);
   static final Color shadowHeavy = Colors.black.withValues(alpha: 0.5);
 
+  // Membership Tier Colors
+  static const Color basePurple = Color(0xFFB388FF);       // Light purple for GreenGo Base
+  static const Color basePurpleDark = Color(0xFF7C4DFF);   // Darker purple for gradients
+  static const Color platinumBlue = Color(0xFF81D4FA);     // Light blue for Platinum
+  static const Color platinumBlueDark = Color(0xFF29B6F6); // Darker blue for gradients
+
   // Online Status
   static const Color online = Color(0xFF10B981);
   static const Color away = Color(0xFFF59E0B);

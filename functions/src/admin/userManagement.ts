@@ -830,3 +830,139 @@ export const executeMassAction = functions.https.onCall(async (data, context) =>
     throw new functions.https.HttpsError('internal', error.message);
   }
 });
+
+// Protected email addresses that cannot be bulk-deleted
+const PROTECTED_EMAILS = [
+  'admin@greengochat.com',
+  'support@greengochat.com',
+];
+
+/**
+ * Bulk Delete Users
+ * Parallelized version using auth.deleteUsers() batch API
+ */
+export const adminBulkDeleteUsers = functions
+  .runWith({ timeoutSeconds: 300, memory: '512MB' })
+  .https.onCall(async (data, context) => {
+    await verifyAdminPermission(context, 'deleteUsers');
+
+    const { userIds, reason } = data;
+
+    if (!Array.isArray(userIds) || userIds.length === 0) {
+      throw new functions.https.HttpsError(
+        'invalid-argument',
+        'userIds must be a non-empty array'
+      );
+    }
+
+    if (userIds.length > 1000) {
+      throw new functions.https.HttpsError(
+        'invalid-argument',
+        'Cannot delete more than 1000 users at once'
+      );
+    }
+
+    try {
+      // Step 1: Parallel email protection checks in batches of 50
+      const protectedUserIds = new Set<string>();
+      const checkBatchSize = 50;
+
+      for (let i = 0; i < userIds.length; i += checkBatchSize) {
+        const batch = userIds.slice(i, i + checkBatchSize);
+        const checkResults = await Promise.allSettled(
+          batch.map(async (uid: string) => {
+            try {
+              const userRecord = await auth.getUser(uid);
+              if (userRecord.email && PROTECTED_EMAILS.includes(userRecord.email)) {
+                return { uid, protected: true };
+              }
+              return { uid, protected: false };
+            } catch {
+              // User doesn't exist in Auth — skip, not protected
+              return { uid, protected: false };
+            }
+          })
+        );
+
+        for (const result of checkResults) {
+          if (result.status === 'fulfilled' && result.value.protected) {
+            protectedUserIds.add(result.value.uid);
+          }
+        }
+      }
+
+      // Filter out protected users
+      const deletableUserIds = userIds.filter(
+        (uid: string) => !protectedUserIds.has(uid)
+      );
+
+      if (deletableUserIds.length === 0) {
+        return {
+          success: true,
+          totalRequested: userIds.length,
+          deletedCount: 0,
+          skippedProtected: protectedUserIds.size,
+          failedCount: 0,
+        };
+      }
+
+      // Step 2: Soft-delete in Firestore (batch writes, 500 per batch)
+      const firestoreBatchSize = 500;
+      for (let i = 0; i < deletableUserIds.length; i += firestoreBatchSize) {
+        const batch = firestore.batch();
+        const chunk = deletableUserIds.slice(i, i + firestoreBatchSize);
+        for (const uid of chunk) {
+          batch.update(firestore.collection('users').doc(uid), {
+            accountStatus: 'deleted',
+            deletedBy: context.auth!.uid,
+            deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+            deletionReason: reason || 'bulk_delete',
+          });
+        }
+        await batch.commit();
+      }
+
+      // Step 3: Batch delete from Firebase Auth (up to 1000 per call)
+      let deletedCount = 0;
+      let failedCount = 0;
+      const authBatchSize = 1000;
+
+      for (let i = 0; i < deletableUserIds.length; i += authBatchSize) {
+        const chunk = deletableUserIds.slice(i, i + authBatchSize);
+        try {
+          const result = await auth.deleteUsers(chunk);
+          deletedCount += result.successCount;
+          failedCount += result.failureCount;
+        } catch (error) {
+          console.error('Error in auth.deleteUsers batch:', error);
+          failedCount += chunk.length;
+        }
+      }
+
+      // Step 4: Log admin action
+      await logAdminAction(
+        context.auth!.uid,
+        'bulkDeletedUsers',
+        'users',
+        `bulk_${deletableUserIds.length}`,
+        {
+          reason,
+          totalRequested: userIds.length,
+          deletedCount,
+          skippedProtected: protectedUserIds.size,
+          failedCount,
+        }
+      );
+
+      return {
+        success: true,
+        totalRequested: userIds.length,
+        deletedCount,
+        skippedProtected: protectedUserIds.size,
+        failedCount,
+      };
+    } catch (error: any) {
+      console.error('Error in bulk delete:', error);
+      throw new functions.https.HttpsError('internal', error.message);
+    }
+  });

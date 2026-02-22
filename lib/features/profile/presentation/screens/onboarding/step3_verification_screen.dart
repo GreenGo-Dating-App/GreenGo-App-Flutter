@@ -8,7 +8,7 @@ import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step3VerificationScreen extends StatefulWidget {
@@ -88,115 +88,95 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
 
         final isUploading = context.read<OnboardingBloc>().state is OnboardingPhotoUploading;
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: _handleBack,
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        return LuxuryOnboardingLayout(
+          title: l10n.verificationTitle,
+          subtitle: l10n.verificationDescription,
+          showBackButton: true,
+          onBack: _handleBack,
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 16),
-                  Text(
-                    l10n.verificationTitle,
-                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    l10n.verificationDescription,
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
-                  ),
-                  const SizedBox(height: 24),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 16),
 
-                  // Instructions
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.info_outline,
-                              color: AppColors.richGold,
-                              size: 20,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              l10n.verificationTips,
-                              style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                                    color: AppColors.richGold,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        _VerificationTip(text: l10n.verificationTip1),
-                        _VerificationTip(text: l10n.verificationTip2),
-                        _VerificationTip(text: l10n.verificationTip3),
-                        _VerificationTip(text: l10n.verificationTip4),
-                      ],
-                    ),
+                // Instructions
+                Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.backgroundCard,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                    border: Border.all(color: AppColors.divider),
                   ),
-                  const SizedBox(height: 32),
-
-                  // Verification Photo Preview
-                  Center(
-                    child: state.verificationPhotoUrl != null
-                        ? _VerificationPhotoCard(
-                            photoUrl: state.verificationPhotoUrl!,
-                            onRetake: _takeVerificationPhoto,
-                            retakeText: l10n.retakePhoto,
-                          )
-                        : _TakePhotoCard(
-                            onTap: isUploading ? null : _takeVerificationPhoto,
-                            buttonText: l10n.takeVerificationPhoto,
-                            isLoading: isUploading,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.info_outline,
+                            color: AppColors.richGold,
+                            size: 20,
                           ),
+                          const SizedBox(width: 8),
+                          Text(
+                            l10n.verificationTips,
+                            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                                  color: AppColors.richGold,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 12),
+                      _VerificationTip(text: l10n.verificationTip1),
+                      _VerificationTip(text: l10n.verificationTip2),
+                      _VerificationTip(text: l10n.verificationTip3),
+                      _VerificationTip(text: l10n.verificationTip4),
+                    ],
                   ),
-                  const SizedBox(height: 32),
+                ),
+                const SizedBox(height: 32),
 
-                  // Instructions text
-                  Text(
-                    l10n.verificationInstructions,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: AppColors.textSecondary,
+                // Verification Photo Preview
+                Center(
+                  child: state.verificationPhotoUrl != null
+                      ? _VerificationPhotoCard(
+                          photoUrl: state.verificationPhotoUrl!,
+                          onRetake: _takeVerificationPhoto,
+                          retakeText: l10n.retakePhoto,
+                        )
+                      : _TakePhotoCard(
+                          onTap: isUploading ? null : _takeVerificationPhoto,
+                          buttonText: l10n.takeVerificationPhoto,
+                          isLoading: isUploading,
                         ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 32),
+                ),
+                const SizedBox(height: 32),
 
-                  // Continue Button
-                  OnboardingButton(
-                    text: l10n.next,
-                    onPressed: () => _handleContinue(state.verificationPhotoUrl),
-                    isLoading: isUploading,
-                  ),
-                ],
-              ),
+                // Instructions text
+                Text(
+                  l10n.verificationInstructions,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 32),
+
+                // Continue Button
+                LuxuryButton(
+                  text: l10n.next,
+                  onPressed: () => _handleContinue(state.verificationPhotoUrl),
+                  isLoading: isUploading,
+                ),
+
+                const SizedBox(height: 32),
+              ],
             ),
           ),
         );

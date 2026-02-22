@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
@@ -266,9 +267,13 @@ abstract class ChatRemoteDataSource {
 /// Implementation
 class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   final FirebaseFirestore firestore;
+  final BlockedUsersService blockedUsersService;
   final ContentFilterService _contentFilter = ContentFilterService();
 
-  ChatRemoteDataSourceImpl({required this.firestore});
+  ChatRemoteDataSourceImpl({
+    required this.firestore,
+    required this.blockedUsersService,
+  });
 
   @override
   Future<ConversationModel> getConversation(String matchId) async {
@@ -601,7 +606,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .toList();
 
       // Filter out deleted and blocked conversations
-      final blockedUserIds = await _getBlockedUserIds(userId);
+      final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
 
       return conversations.where((conv) {
         // Filter out conversations deleted for both
@@ -625,33 +630,6 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         return true;
       }).toList();
     });
-  }
-
-  /// Get all blocked user IDs (bidirectional) for filtering
-  Future<Set<String>> _getBlockedUserIds(String userId) async {
-    final Set<String> blockedIds = {};
-
-    final blockedByMe = await firestore
-        .collection('blockedUsers')
-        .where('blockerId', isEqualTo: userId)
-        .get();
-
-    for (final doc in blockedByMe.docs) {
-      final blockedUserId = doc.data()['blockedUserId'] as String?;
-      if (blockedUserId != null) blockedIds.add(blockedUserId);
-    }
-
-    final blockedMe = await firestore
-        .collection('blockedUsers')
-        .where('blockedUserId', isEqualTo: userId)
-        .get();
-
-    for (final doc in blockedMe.docs) {
-      final blockerId = doc.data()['blockerId'] as String?;
-      if (blockerId != null) blockedIds.add(blockerId);
-    }
-
-    return blockedIds;
   }
 
   @override
@@ -1045,6 +1023,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       // Deactivate any active match between the two users
       await _deactivateMatchBetweenUsers(blockerId, blockedUserId);
+
+      // Invalidate blocked users cache so subsequent reads see the new block
+      blockedUsersService.invalidate(blockerId);
     } catch (e) {
       throw Exception('Failed to block user: $e');
     }
@@ -1101,6 +1082,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .collection('blockedUsers')
           .where('blockerId', isEqualTo: blockerId)
           .where('blockedUserId', isEqualTo: blockedUserId)
+          .limit(1)
           .get();
 
       for (final doc in blockQuery.docs) {
@@ -1111,6 +1093,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       await firestore.collection('users').doc(blockerId).update({
         'blockedUsers': FieldValue.arrayRemove([blockedUserId]),
       });
+
+      // Invalidate blocked users cache so subsequent reads see the unblock
+      blockedUsersService.invalidate(blockerId);
     } catch (e) {
       throw Exception('Failed to unblock user: $e');
     }
@@ -1122,25 +1107,25 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String otherUserId,
   }) async {
     try {
-      // Check if either user has blocked the other
-      final blockQuery = await firestore
+      // Query 1: did userId block otherUserId?
+      final query1 = await firestore
           .collection('blockedUsers')
-          .where('blockerId', whereIn: [userId, otherUserId])
+          .where('blockerId', isEqualTo: userId)
+          .where('blockedUserId', isEqualTo: otherUserId)
+          .limit(1)
           .get();
 
-      for (final doc in blockQuery.docs) {
-        final data = doc.data();
-        final blockerId = data['blockerId'] as String;
-        final blockedUserId = data['blockedUserId'] as String;
+      if (query1.docs.isNotEmpty) return true;
 
-        // Check if userId blocked otherUserId or vice versa
-        if ((blockerId == userId && blockedUserId == otherUserId) ||
-            (blockerId == otherUserId && blockedUserId == userId)) {
-          return true;
-        }
-      }
+      // Query 2: did otherUserId block userId?
+      final query2 = await firestore
+          .collection('blockedUsers')
+          .where('blockerId', isEqualTo: otherUserId)
+          .where('blockedUserId', isEqualTo: userId)
+          .limit(1)
+          .get();
 
-      return false;
+      return query2.docs.isNotEmpty;
     } catch (e) {
       throw Exception('Failed to check block status: $e');
     }
@@ -1255,41 +1240,52 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .collection('starred_messages')
           .orderBy('starredAt', descending: true);
 
-      if (limit != null) {
-        query = query.limit(limit);
-      }
+      // Default limit of 50 when no limit provided to avoid unbounded reads
+      query = query.limit(limit ?? 50);
 
       final starredSnapshot = await query.get();
-      final messages = <MessageModel>[];
       final staleStarredIds = <String>[];
 
+      // Build parallel fetch futures for all starred messages
+      final fetchFutures = <Future<MessageModel?>>[];
+      final docIds = <String>[];
+
       for (final starredDoc in starredSnapshot.docs) {
-        try {
-          final data = starredDoc.data() as Map<String, dynamic>;
-          final conversationId = data['conversationId'] as String?;
-          final messageId = data['messageId'] as String?;
+        final data = starredDoc.data() as Map<String, dynamic>;
+        final conversationId = data['conversationId'] as String?;
+        final messageId = data['messageId'] as String?;
 
-          if (conversationId == null || messageId == null) {
-            staleStarredIds.add(starredDoc.id);
-            continue;
-          }
+        if (conversationId == null || messageId == null) {
+          staleStarredIds.add(starredDoc.id);
+          continue;
+        }
 
-          final messageDoc = await firestore
+        docIds.add(starredDoc.id);
+        fetchFutures.add(
+          firestore
               .collection('conversations')
               .doc(conversationId)
               .collection('messages')
               .doc(messageId)
-              .get();
+              .get()
+              .then((messageDoc) {
+            if (messageDoc.exists) {
+              return MessageModel.fromFirestore(messageDoc);
+            }
+            return null;
+          }).catchError((_) => null),
+        );
+      }
 
-          if (messageDoc.exists) {
-            messages.add(MessageModel.fromFirestore(messageDoc));
-          } else {
-            // Message was deleted, mark for cleanup
-            staleStarredIds.add(starredDoc.id);
-          }
-        } catch (e) {
-          // Skip this starred message if there's an error fetching it
-          staleStarredIds.add(starredDoc.id);
+      // Fetch all messages in parallel
+      final results = await Future.wait(fetchFutures);
+      final messages = <MessageModel>[];
+
+      for (var i = 0; i < results.length; i++) {
+        if (results[i] != null) {
+          messages.add(results[i]!);
+        } else {
+          staleStarredIds.add(docIds[i]);
         }
       }
 

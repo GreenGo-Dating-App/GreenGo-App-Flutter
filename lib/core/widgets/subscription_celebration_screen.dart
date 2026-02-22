@@ -156,25 +156,30 @@ class _SubscriptionCelebrationScreenState
 
   Color get _tierColor {
     final tier = widget.tierName.toLowerCase();
-    if (tier.contains('platinum')) return const Color(0xFFE5E4E2);
+    if (tier.contains('platinum')) return AppColors.platinumBlue;
     if (tier.contains('gold')) return AppColors.richGold;
+    if (tier.contains('base') || tier.contains('free')) return AppColors.basePurple;
     return const Color(0xFFC0C0C0); // silver
   }
 
   Color get _tierGlowColor {
     final tier = widget.tierName.toLowerCase();
-    if (tier.contains('platinum')) return const Color(0xFFE5E4E2);
+    if (tier.contains('platinum')) return AppColors.platinumBlue;
     if (tier.contains('gold')) return AppColors.richGold;
+    if (tier.contains('base') || tier.contains('free')) return AppColors.basePurple;
     return const Color(0xFFB0B0B0);
   }
 
   List<Color> get _tierGradient {
     final tier = widget.tierName.toLowerCase();
     if (tier.contains('platinum')) {
-      return [const Color(0xFF8E8E8E), const Color(0xFFE5E4E2), const Color(0xFFB0B0B0)];
+      return [AppColors.platinumBlueDark, AppColors.platinumBlue, const Color(0xFFB3E5FC)];
     }
     if (tier.contains('gold')) {
       return [const Color(0xFFB8860B), AppColors.richGold, const Color(0xFFFFD700)];
+    }
+    if (tier.contains('base') || tier.contains('free')) {
+      return [AppColors.basePurpleDark, AppColors.basePurple, const Color(0xFFD1C4E9)];
     }
     return [const Color(0xFF808080), const Color(0xFFC0C0C0), const Color(0xFFD3D3D3)];
   }

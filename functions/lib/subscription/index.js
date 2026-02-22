@@ -1,7 +1,8 @@
 "use strict";
 /**
- * Subscription Service
- * 4 Cloud Functions for managing subscriptions and payment webhooks
+ * Membership Service (One-Time Purchases)
+ * Cloud Functions for managing one-time membership purchases
+ * No recurring billing — users buy consumable products to extend membership duration
  */
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -37,53 +38,35 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleExpiredGracePeriods = exports.checkExpiringSubscriptions = exports.handleAppStoreWebhook = exports.handlePlayStoreWebhook = exports.verifyPurchase = void 0;
+exports.handleExpiredMemberships = exports.checkExpiringSubscriptions = exports.verifyPurchase = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
-// Subscription tiers configuration
-const SUBSCRIPTION_TIERS = {
-    basic: {
-        name: 'Basic',
-        price: 0,
-        dailyLikes: 10,
-        features: ['basic_matching', 'limited_likes'],
-    },
-    silver: {
-        name: 'Silver',
-        price: 9.99,
-        currency: 'USD',
-        dailyLikes: 100,
-        features: [
-            'advanced_filters',
-            'read_receipts',
-            'super_likes_5',
-            'rewinds_5',
-            'boost_monthly_1',
-        ],
-    },
-    gold: {
-        name: 'Gold',
-        price: 19.99,
-        currency: 'USD',
-        dailyLikes: 999999, // Unlimited
-        features: [
-            'all_silver_features',
-            'priority_support',
-            'incognito_mode',
-            'super_likes_10',
-            'boost_monthly_3',
-            'see_who_likes_you',
-        ],
-    },
+// Product ID → tier and duration mapping
+const PRODUCT_CONFIG = {
+    'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
+    '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
+    '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
+    '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
+    '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90 },
+    '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
+    '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
+};
+// Tier hierarchy for upgrade logic
+const TIER_RANK = {
+    'BASIC': 0,
+    'SILVER': 1,
+    'GOLD': 2,
+    'PLATINUM': 3,
 };
 // ========== 0. VERIFY PURCHASE (Callable) ==========
 exports.verifyPurchase = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 30,
 }, async (request) => {
+    var _a;
     // Verify user is authenticated
     if (!request.auth) {
         throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
@@ -94,29 +77,20 @@ exports.verifyPurchase = (0, https_1.onCall)({
         throw new https_1.HttpsError('invalid-argument', 'Missing required fields');
     }
     // Ensure the authenticated user matches the userId
-    // Membership is tied to the Firebase Auth user (app account),
-    // NOT to the Google Play / App Store billing account email.
     if (request.auth.uid !== userId) {
         throw new https_1.HttpsError('permission-denied', 'User ID mismatch');
     }
-    // Get the user's app email (Firebase Auth email) for audit trail
     const userEmail = request.auth.token.email || null;
     try {
-        (0, utils_1.logInfo)(`Verifying purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
-        // Determine subscription tier from product ID
-        let tier;
-        if (productId.includes('gold')) {
-            tier = types_1.SubscriptionTier.GOLD;
+        (0, utils_1.logInfo)(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
+        // Look up product configuration
+        const config = PRODUCT_CONFIG[productId];
+        if (!config) {
+            throw new https_1.HttpsError('invalid-argument', `Unknown product ID: ${productId}`);
         }
-        else if (productId.includes('silver')) {
-            tier = types_1.SubscriptionTier.SILVER;
-        }
-        else {
-            tier = types_1.SubscriptionTier.BASIC;
-        }
-        const tierConfig = SUBSCRIPTION_TIERS[tier.toLowerCase()] || SUBSCRIPTION_TIERS.basic;
-        // In production, verify with Google Play / App Store APIs
-        // For now, we trust the client-side verification data
+        const tier = config.tier;
+        const durationDays = config.durationDays;
+        const durationMs = durationDays * 24 * 60 * 60 * 1000;
         // TODO: Implement server-side verification with:
         // - Google Play Developer API for Android
         // - App Store Server API for iOS
@@ -125,22 +99,18 @@ exports.verifyPurchase = (0, https_1.onCall)({
             throw new https_1.HttpsError('failed-precondition', 'Purchase verification failed');
         }
         // CRITICAL: Prevent shared billing account abuse.
-        // If this purchaseToken is already used by a DIFFERENT app user, reject it.
-        // Each Google Play purchase can only grant membership to ONE app account.
         const tokenSnapshot = await utils_1.db
             .collection('subscriptions')
             .where('purchaseToken', '==', purchaseToken)
-            .where('status', 'in', ['active', 'in_grace_period'])
             .limit(1)
             .get();
         if (!tokenSnapshot.empty) {
             const existingOwner = tokenSnapshot.docs[0].data().userId;
             if (existingOwner !== userId) {
-                (0, utils_1.logInfo)(`Purchase token already belongs to user ${existingOwner}, rejecting for user ${userId} (${userEmail})`);
-                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account. Each subscription covers one account only.');
+                (0, utils_1.logInfo)(`Purchase token already belongs to user ${existingOwner}, rejecting for user ${userId}`);
+                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account.');
             }
         }
-        // Also check purchase records to catch expired/cancelled subscriptions that reuse tokens
         const purchaseTokenCheck = await utils_1.db
             .collection('purchases')
             .where('purchaseToken', '==', purchaseToken)
@@ -149,91 +119,121 @@ exports.verifyPurchase = (0, https_1.onCall)({
         if (!purchaseTokenCheck.empty) {
             const purchaseOwner = purchaseTokenCheck.docs[0].data().userId;
             if (purchaseOwner !== userId) {
-                (0, utils_1.logInfo)(`Purchase token in purchase history belongs to user ${purchaseOwner}, rejecting for user ${userId} (${userEmail})`);
-                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account. Each subscription covers one account only.');
+                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account.');
             }
         }
         const now = admin.firestore.Timestamp.now();
-        const endDate = admin.firestore.Timestamp.fromDate(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days from now
-        );
-        // Check for existing active subscription
-        const existingSubSnapshot = await utils_1.db
-            .collection('subscriptions')
-            .where('userId', '==', userId)
-            .where('status', 'in', ['active', 'in_grace_period'])
-            .limit(1)
-            .get();
-        if (!existingSubSnapshot.empty) {
-            // Update existing subscription
-            const existingDoc = existingSubSnapshot.docs[0];
-            await existingDoc.ref.update({
-                tier: tier,
-                status: types_1.SubscriptionStatus.ACTIVE,
-                currentPeriodEnd: endDate,
-                purchaseToken: purchaseToken,
-                platform: platform,
-                userEmail: userEmail, // App user email (not Google billing email)
-                updatedAt: now,
-            });
-            (0, utils_1.logInfo)(`Updated existing subscription for user ${userId}`);
+        const nowDate = now.toDate();
+        // ── Compute new end date with extension/upgrade logic ──
+        const profileDoc = await utils_1.db.collection('profiles').doc(userId).get();
+        const profileData = profileDoc.data() || {};
+        const currentTier = profileData.membershipTier || 'BASIC';
+        const currentEndTimestamp = profileData.membershipEndDate;
+        const currentEndDate = currentEndTimestamp ? currentEndTimestamp.toDate() : null;
+        let newEndDate;
+        let effectiveTier = tier;
+        if (currentEndDate && currentEndDate > nowDate) {
+            // User has active membership
+            const purchasedRank = TIER_RANK[tier] || 0;
+            const currentRank = TIER_RANK[currentTier] || 0;
+            if (purchasedRank >= currentRank) {
+                // Same or higher tier: user gets higher tier immediately, end date extends from current end
+                newEndDate = new Date(currentEndDate.getTime() + durationMs);
+                effectiveTier = tier;
+            }
+            else {
+                // Lower tier: keep higher tier, extend end date from current end
+                newEndDate = new Date(currentEndDate.getTime() + durationMs);
+                effectiveTier = currentTier;
+            }
         }
         else {
-            // Create new subscription
-            // Subscription is tied to userId (Firebase Auth UID) and userEmail,
-            // NOT to the Google Play billing account email.
-            await utils_1.db.collection('subscriptions').add({
-                userId: userId,
-                userEmail: userEmail,
-                tier: tier,
-                status: types_1.SubscriptionStatus.ACTIVE,
-                startDate: now,
-                currentPeriodEnd: endDate,
-                nextBillingDate: endDate,
-                autoRenew: true,
-                platform: platform,
-                purchaseToken: purchaseToken,
-                transactionId: purchaseToken,
-                orderId: purchaseToken,
-                price: tierConfig.price,
-                currency: 'USD',
-                cancelAtPeriodEnd: false,
-                createdAt: now,
-            });
-            (0, utils_1.logInfo)(`Created new subscription for user ${userId}`);
+            // No active membership or expired — start from now
+            newEndDate = new Date(nowDate.getTime() + durationMs);
         }
-        // Create purchase record with app user email for audit trail
+        const endTimestamp = admin.firestore.Timestamp.fromDate(newEndDate);
+        // ── Create subscription record ──
+        await utils_1.db.collection('subscriptions').add({
+            userId: userId,
+            userEmail: userEmail,
+            tier: effectiveTier,
+            status: types_1.SubscriptionStatus.ACTIVE,
+            startDate: now,
+            endDate: endTimestamp,
+            durationDays: durationDays,
+            platform: platform,
+            purchaseToken: purchaseToken,
+            transactionId: purchaseToken,
+            orderId: purchaseToken,
+            productId: productId,
+            price: config.price,
+            currency: 'USD',
+            createdAt: now,
+        });
+        // ── Create purchase record ──
         await utils_1.db.collection('purchases').add({
             userId: userId,
             userEmail: userEmail,
-            type: 'subscription',
+            type: 'membership',
             status: 'completed',
             productId: productId,
-            productName: tierConfig.name,
-            tier: tier,
-            price: tierConfig.price,
+            tier: effectiveTier,
+            price: config.price,
             currency: 'USD',
             platform: platform,
             purchaseToken: purchaseToken,
             transactionId: purchaseToken,
+            durationDays: durationDays,
             purchaseDate: now,
             verifiedAt: now,
             verificationMethod: 'cloud_function',
         });
-        // Update user's membership tier
-        await utils_1.db.collection('users').doc(userId).update({
-            subscriptionTier: tier,
-            updatedAt: now,
-        });
-        // Also update the profile
+        // ── Update profile with membership info ──
         await utils_1.db.collection('profiles').doc(userId).update({
-            membershipTier: tier,
+            membershipTier: effectiveTier,
+            membershipEndDate: endTimestamp,
+            membershipStartDate: now,
             updatedAt: now,
         });
-        (0, utils_1.logInfo)(`Purchase verified successfully for user ${userId}, tier ${tier}`);
+        await utils_1.db.collection('users').doc(userId).update({
+            subscriptionTier: effectiveTier,
+            membershipEndDate: endTimestamp,
+            updatedAt: now,
+        });
+        // ── Grant 500 coins for base membership ──
+        let coinsGranted = 0;
+        if (productId === 'greengo_base_membership') {
+            const balanceRef = utils_1.db.collection('coinBalances').doc(userId);
+            const balanceDoc = await balanceRef.get();
+            if (balanceDoc.exists) {
+                const currentTotal = ((_a = balanceDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
+                await balanceRef.update({ totalCoins: currentTotal + 500 });
+            }
+            else {
+                await balanceRef.set({
+                    userId: userId,
+                    totalCoins: 500,
+                    spentCoins: 0,
+                    lastUpdated: now,
+                });
+            }
+            await balanceRef.collection('coinBatches').add({
+                amount: 500,
+                remainingCoins: 500,
+                source: 'membership_bonus',
+                reason: 'Base membership welcome bonus',
+                createdAt: now,
+                expiresAt: endTimestamp,
+            });
+            coinsGranted = 500;
+            (0, utils_1.logInfo)(`Granted 500 bonus coins to user ${userId}`);
+        }
+        (0, utils_1.logInfo)(`Membership purchase verified for user ${userId}: tier=${effectiveTier}, endDate=${newEndDate.toISOString()}, coins=${coinsGranted}`);
         return {
             verified: true,
-            tier: tier,
-            expiresAt: endDate.toDate().toISOString(),
+            tier: effectiveTier,
+            endDate: newEndDate.toISOString(),
+            coinsGranted: coinsGranted,
         };
     }
     catch (error) {
@@ -244,298 +244,114 @@ exports.verifyPurchase = (0, https_1.onCall)({
         throw new https_1.HttpsError('internal', 'Failed to verify purchase');
     }
 });
-// ========== 1. HANDLE PLAY STORE WEBHOOK (HTTP Request) ==========
-exports.handlePlayStoreWebhook = (0, https_1.onRequest)({
-    memory: '256MiB',
-    timeoutSeconds: 60,
-}, async (req, res) => {
-    try {
-        (0, utils_1.logInfo)('Received Play Store webhook');
-        // Verify webhook signature
-        const signature = req.headers['x-goog-signature'];
-        if (!signature) {
-            res.status(401).send('Missing signature');
-            return;
-        }
-        // Parse notification
-        const message = req.body.message;
-        if (!message) {
-            res.status(400).send('Missing message');
-            return;
-        }
-        const data = JSON.parse(Buffer.from(message.data, 'base64').toString());
-        const notification = data.subscriptionNotification;
-        if (!notification) {
-            res.status(200).send('Not a subscription notification');
-            return;
-        }
-        const { notificationType, purchaseToken, subscriptionId, } = notification;
-        (0, utils_1.logInfo)(`Play Store notification type: ${notificationType}`);
-        // Find subscription by purchase token
-        const subscriptionSnapshot = await utils_1.db
-            .collection('subscriptions')
-            .where('purchaseToken', '==', purchaseToken)
-            .where('platform', '==', 'android')
-            .limit(1)
-            .get();
-        if (subscriptionSnapshot.empty) {
-            (0, utils_1.logError)(`Subscription not found for purchase token: ${purchaseToken}`);
-            res.status(404).send('Subscription not found');
-            return;
-        }
-        const subscriptionDoc = subscriptionSnapshot.docs[0];
-        const subscriptionData = subscriptionDoc.data();
-        // Handle different notification types
-        switch (notificationType) {
-            case 1: // SUBSCRIPTION_RECOVERED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ACTIVE,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription recovered');
-                break;
-            case 2: // SUBSCRIPTION_RENEWED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ACTIVE,
-                    currentPeriodEnd: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days
-                    ),
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription renewed');
-                break;
-            case 3: // SUBSCRIPTION_CANCELED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.CANCELED,
-                    canceledAt: admin.firestore.FieldValue.serverTimestamp(),
-                    cancelAtPeriodEnd: true,
-                });
-                (0, utils_1.logInfo)('Subscription canceled');
-                break;
-            case 4: // SUBSCRIPTION_PURCHASED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ACTIVE,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('New subscription purchased');
-                break;
-            case 5: // SUBSCRIPTION_ON_HOLD
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ON_HOLD,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription on hold');
-                break;
-            case 6: // SUBSCRIPTION_IN_GRACE_PERIOD
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.IN_GRACE_PERIOD,
-                    gracePeriodEnd: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // 7 days
-                    ),
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription in grace period');
-                break;
-            case 7: // SUBSCRIPTION_RESTARTED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ACTIVE,
-                    cancelAtPeriodEnd: false,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription restarted');
-                break;
-            case 10: // SUBSCRIPTION_EXPIRED
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.EXPIRED,
-                    expiredAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                // Downgrade user to basic
-                await utils_1.db.collection('users').doc(subscriptionData.userId).update({
-                    subscriptionTier: types_1.SubscriptionTier.BASIC,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                (0, utils_1.logInfo)('Subscription expired');
-                break;
-            default:
-                (0, utils_1.logInfo)(`Unhandled notification type: ${notificationType}`);
-        }
-        // Log event to BigQuery
-        // await logSubscriptionEvent(subscriptionData.userId, notificationType, subscriptionData);
-        res.status(200).send('Webhook processed');
-    }
-    catch (error) {
-        (0, utils_1.logError)('Error processing Play Store webhook:', error);
-        res.status(500).send('Internal error');
-    }
-});
-// ========== 2. HANDLE APP STORE WEBHOOK (HTTP Request) ==========
-exports.handleAppStoreWebhook = (0, https_1.onRequest)({
-    memory: '256MiB',
-    timeoutSeconds: 60,
-}, async (req, res) => {
-    try {
-        (0, utils_1.logInfo)('Received App Store webhook');
-        const { notificationType, data } = req.body;
-        if (!notificationType || !data) {
-            res.status(400).send('Invalid webhook payload');
-            return;
-        }
-        const { signedTransactionInfo } = data;
-        (0, utils_1.logInfo)(`App Store notification type: ${notificationType}`);
-        // Decode transaction info (simplified - in production, verify signature)
-        const transactionInfo = JSON.parse(Buffer.from(signedTransactionInfo, 'base64').toString());
-        const { originalTransactionId, productId } = transactionInfo;
-        // Find subscription
-        const subscriptionSnapshot = await utils_1.db
-            .collection('subscriptions')
-            .where('receiptData', '==', originalTransactionId)
-            .where('platform', '==', 'ios')
-            .limit(1)
-            .get();
-        if (subscriptionSnapshot.empty) {
-            (0, utils_1.logError)(`Subscription not found for transaction: ${originalTransactionId}`);
-            res.status(404).send('Subscription not found');
-            return;
-        }
-        const subscriptionDoc = subscriptionSnapshot.docs[0];
-        const subscriptionData = subscriptionDoc.data();
-        // Handle notification types
-        switch (notificationType) {
-            case 'DID_RENEW':
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.ACTIVE,
-                    currentPeriodEnd: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)),
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                break;
-            case 'DID_CHANGE_RENEWAL_STATUS':
-                const willRenew = transactionInfo.autoRenewStatus === 1;
-                await subscriptionDoc.ref.update({
-                    cancelAtPeriodEnd: !willRenew,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                break;
-            case 'EXPIRED':
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.EXPIRED,
-                    expiredAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                await utils_1.db.collection('users').doc(subscriptionData.userId).update({
-                    subscriptionTier: types_1.SubscriptionTier.BASIC,
-                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                break;
-            case 'GRACE_PERIOD_EXPIRED':
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.EXPIRED,
-                    gracePeriodExpiredAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                break;
-            case 'REFUND':
-                await subscriptionDoc.ref.update({
-                    status: types_1.SubscriptionStatus.CANCELED,
-                    refundedAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                break;
-            default:
-                (0, utils_1.logInfo)(`Unhandled notification type: ${notificationType}`);
-        }
-        res.status(200).send('Webhook processed');
-    }
-    catch (error) {
-        (0, utils_1.logError)('Error processing App Store webhook:', error);
-        res.status(500).send('Internal error');
-    }
-});
-// ========== 3. CHECK EXPIRING SUBSCRIPTIONS (Scheduled - Daily 9am) ==========
+// ========== 1. CHECK EXPIRING MEMBERSHIPS (Scheduled - Daily 9am) ==========
 exports.checkExpiringSubscriptions = (0, scheduler_1.onSchedule)({
     schedule: '0 9 * * *', // Daily at 9 AM UTC
     timeZone: 'UTC',
     memory: '256MiB',
     timeoutSeconds: 300,
 }, async () => {
-    (0, utils_1.logInfo)('Checking for expiring subscriptions');
+    var _a;
+    (0, utils_1.logInfo)('Checking for expiring memberships');
     try {
-        // Get subscriptions expiring in 3 days
         const threeDaysFromNow = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000);
+        // Find profiles with membership ending within 3 days
         const snapshot = await utils_1.db
-            .collection('subscriptions')
-            .where('status', '==', types_1.SubscriptionStatus.ACTIVE)
-            .where('cancelAtPeriodEnd', '==', true)
-            .where('currentPeriodEnd', '<', admin.firestore.Timestamp.fromDate(threeDaysFromNow))
+            .collection('profiles')
+            .where('membershipEndDate', '<', admin.firestore.Timestamp.fromDate(threeDaysFromNow))
+            .where('membershipEndDate', '>', admin.firestore.Timestamp.now())
             .get();
-        (0, utils_1.logInfo)(`Found ${snapshot.size} subscriptions expiring soon`);
+        (0, utils_1.logInfo)(`Found ${snapshot.size} memberships expiring soon`);
         for (const doc of snapshot.docs) {
             const data = doc.data();
-            const daysUntilExpiry = Math.ceil((data.currentPeriodEnd.toDate().getTime() - Date.now()) / (24 * 60 * 60 * 1000));
-            // Send renewal reminder notification
+            const endDate = (_a = data.membershipEndDate) === null || _a === void 0 ? void 0 : _a.toDate();
+            if (!endDate)
+                continue;
+            const daysUntilExpiry = Math.ceil((endDate.getTime() - Date.now()) / (24 * 60 * 60 * 1000));
             await utils_1.db.collection('notifications').add({
-                userId: data.userId,
-                type: 'subscription_expiring',
-                title: 'Subscription Expiring Soon',
-                body: `Your ${data.tier} subscription expires in ${daysUntilExpiry} days`,
+                userId: doc.id,
+                type: 'membership_expiring',
+                title: 'Membership Expiring Soon',
+                body: `Your ${data.membershipTier || 'membership'} expires in ${daysUntilExpiry} day${daysUntilExpiry !== 1 ? 's' : ''}. Extend now to keep your premium features!`,
                 data: {
-                    subscriptionId: doc.id,
-                    tier: data.tier,
-                    expiresAt: data.currentPeriodEnd.toDate().toISOString(),
+                    tier: data.membershipTier,
+                    expiresAt: endDate.toISOString(),
                 },
                 read: false,
                 sent: false,
                 createdAt: admin.firestore.FieldValue.serverTimestamp(),
             });
-            (0, utils_1.logInfo)(`Sent renewal reminder to user ${data.userId}`);
+            (0, utils_1.logInfo)(`Sent expiry reminder to user ${doc.id}`);
         }
-        (0, utils_1.logInfo)('Expiring subscriptions check completed');
+        (0, utils_1.logInfo)('Expiring memberships check completed');
     }
     catch (error) {
-        (0, utils_1.logError)('Error checking expiring subscriptions:', error);
+        (0, utils_1.logError)('Error checking expiring memberships:', error);
         throw error;
     }
 });
-// ========== 4. HANDLE EXPIRED GRACE PERIODS (Scheduled - Hourly) ==========
-exports.handleExpiredGracePeriods = (0, scheduler_1.onSchedule)({
+// ========== 2. HANDLE EXPIRED MEMBERSHIPS (Scheduled - Hourly) ==========
+exports.handleExpiredMemberships = (0, scheduler_1.onSchedule)({
     schedule: '0 * * * *', // Every hour
     timeZone: 'UTC',
     memory: '256MiB',
     timeoutSeconds: 60,
 }, async () => {
-    (0, utils_1.logInfo)('Checking for expired grace periods');
+    (0, utils_1.logInfo)('Checking for expired memberships');
     try {
         const now = admin.firestore.Timestamp.now();
+        // Find profiles with expired membership end dates
         const snapshot = await utils_1.db
-            .collection('subscriptions')
-            .where('status', '==', types_1.SubscriptionStatus.IN_GRACE_PERIOD)
-            .where('gracePeriodEnd', '<', now)
+            .collection('profiles')
+            .where('membershipEndDate', '<', now)
+            .where('membershipTier', '!=', 'BASIC')
             .get();
-        (0, utils_1.logInfo)(`Found ${snapshot.size} expired grace periods`);
-        const batch = utils_1.db.batch();
+        (0, utils_1.logInfo)(`Found ${snapshot.size} expired memberships`);
         for (const doc of snapshot.docs) {
             const data = doc.data();
-            // Expire subscription
-            batch.update(doc.ref, {
-                status: types_1.SubscriptionStatus.EXPIRED,
-                expiredAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-            // Downgrade user
-            const userRef = utils_1.db.collection('users').doc(data.userId);
-            batch.update(userRef, {
-                subscriptionTier: types_1.SubscriptionTier.BASIC,
+            // Downgrade to basic/free
+            await doc.ref.update({
+                membershipTier: 'BASIC',
                 updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             });
+            // Also update users collection
+            try {
+                await utils_1.db.collection('users').doc(doc.id).update({
+                    subscriptionTier: types_1.SubscriptionTier.BASIC,
+                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+                });
+            }
+            catch (e) {
+                (0, utils_1.logError)(`Failed to update users collection for ${doc.id}:`, e);
+            }
+            // Mark any active subscriptions as expired
+            const activeSubs = await utils_1.db
+                .collection('subscriptions')
+                .where('userId', '==', doc.id)
+                .where('status', '==', types_1.SubscriptionStatus.ACTIVE)
+                .get();
+            for (const subDoc of activeSubs.docs) {
+                await subDoc.ref.update({
+                    status: types_1.SubscriptionStatus.EXPIRED,
+                    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+                });
+            }
             // Send notification
             await utils_1.db.collection('notifications').add({
-                userId: data.userId,
-                type: 'subscription_expired',
-                title: 'Subscription Expired',
-                body: 'Your subscription has expired. Renew now to restore premium features.',
+                userId: doc.id,
+                type: 'membership_expired',
+                title: 'Membership Expired',
+                body: 'Your membership has expired. Purchase a new membership to restore premium features.',
                 read: false,
                 sent: false,
                 createdAt: admin.firestore.FieldValue.serverTimestamp(),
             });
+            (0, utils_1.logInfo)(`Downgraded user ${doc.id} from ${data.membershipTier} to BASIC`);
         }
-        await batch.commit();
-        (0, utils_1.logInfo)(`Processed ${snapshot.size} expired grace periods`);
+        (0, utils_1.logInfo)(`Processed ${snapshot.size} expired memberships`);
     }
     catch (error) {
-        (0, utils_1.logError)('Error handling expired grace periods:', error);
+        (0, utils_1.logError)('Error handling expired memberships:', error);
         throw error;
     }
 });

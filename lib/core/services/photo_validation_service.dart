@@ -353,6 +353,12 @@ class PhotoValidationService {
     }
   }
 
+  /// Validate any image before sending (chat images, private album, etc.).
+  /// Blocks all nudity, explicit, and racy content.
+  Future<PhotoValidationResult> validateImageForSending(File photo) async {
+    return _checkExplicitContent(photo);
+  }
+
   /// Check if a photo contains a visible face
   Future<bool> containsFace(File photo) async {
     try {

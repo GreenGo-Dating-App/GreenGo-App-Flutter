@@ -6,7 +6,7 @@ import '../../../domain/entities/social_links.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step9SocialLinksScreen extends StatefulWidget {
@@ -82,137 +82,104 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
           return const SizedBox.shrink();
         }
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: () => context
-                  .read<OnboardingBloc>()
-                  .add(const OnboardingPreviousStep()),
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
-            actions: [
-              TextButton(
-                onPressed: _skip,
-                child: const Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: AppColors.textSecondary,
-                    fontSize: 16,
+        return LuxuryOnboardingLayout(
+          title: 'Social profiles',
+          subtitle: 'Connect your social accounts (optional)',
+          onBack: () => context
+              .read<OnboardingBloc>()
+              .add(const OnboardingPreviousStep()),
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
+          ),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Social Links Inputs
+                _buildSocialInput(
+                  controller: _facebookController,
+                  label: 'Facebook',
+                  hint: 'Username or profile URL',
+                  icon: Icons.facebook,
+                  color: const Color(0xFF1877F2),
+                ),
+                _buildSocialInput(
+                  controller: _instagramController,
+                  label: 'Instagram',
+                  hint: 'Username (without @)',
+                  icon: Icons.camera_alt,
+                  color: const Color(0xFFE4405F),
+                ),
+                _buildSocialInput(
+                  controller: _tiktokController,
+                  label: 'TikTok',
+                  hint: 'Username (without @)',
+                  icon: Icons.music_note,
+                  color: Colors.white,
+                ),
+                _buildSocialInput(
+                  controller: _linkedinController,
+                  label: 'LinkedIn',
+                  hint: 'Username or profile URL',
+                  icon: Icons.work,
+                  color: const Color(0xFF0A66C2),
+                ),
+                _buildSocialInput(
+                  controller: _xController,
+                  label: 'X (Twitter)',
+                  hint: 'Username (without @)',
+                  icon: Icons.alternate_email,
+                  color: Colors.white,
+                ),
+
+                const SizedBox(height: 24),
+
+                // Info Box
+                LuxuryGlassCard(
+                  margin: EdgeInsets.zero,
+                  padding: const EdgeInsets.all(16),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.info_outline,
+                        color: AppColors.richGold,
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'Your social profiles will be visible on your dating profile',
+                          style:
+                              Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Colors.white.withOpacity(0.7),
+                                  ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ),
-            ],
-          ),
-          body: SafeArea(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 16),
-                  Text(
-                    'Social profiles',
-                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Connect your social accounts to help others know you better (optional)',
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
-                  ),
-                  const SizedBox(height: 32),
 
-                  // Social Links Inputs
-                  _buildSocialInput(
-                    controller: _facebookController,
-                    label: 'Facebook',
-                    hint: 'Username or profile URL',
-                    icon: Icons.facebook,
-                    color: const Color(0xFF1877F2),
-                  ),
-                  _buildSocialInput(
-                    controller: _instagramController,
-                    label: 'Instagram',
-                    hint: 'Username (without @)',
-                    icon: Icons.camera_alt,
-                    color: const Color(0xFFE4405F),
-                  ),
-                  _buildSocialInput(
-                    controller: _tiktokController,
-                    label: 'TikTok',
-                    hint: 'Username (without @)',
-                    icon: Icons.music_note,
-                    color: AppColors.textPrimary,
-                  ),
-                  _buildSocialInput(
-                    controller: _linkedinController,
-                    label: 'LinkedIn',
-                    hint: 'Username or profile URL',
-                    icon: Icons.work,
-                    color: const Color(0xFF0A66C2),
-                  ),
-                  _buildSocialInput(
-                    controller: _xController,
-                    label: 'X (Twitter)',
-                    hint: 'Username (without @)',
-                    icon: Icons.alternate_email,
-                    color: AppColors.textPrimary,
-                  ),
+                const SizedBox(height: 32),
 
-                  const SizedBox(height: 24),
+                // Continue Button
+                LuxuryButton(
+                  text: 'Continue',
+                  onPressed: _saveAndContinue,
+                ),
 
-                  // Info Box
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius:
-                          BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.info_outline,
-                          color: AppColors.richGold,
-                          size: 20,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            'Your social profiles will be visible on your dating profile',
-                            style:
-                                Theme.of(context).textTheme.bodySmall?.copyWith(
-                                      color: AppColors.textSecondary,
-                                    ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                const SizedBox(height: 12),
 
-                  const SizedBox(height: 32),
+                // Skip Button
+                LuxuryButton(
+                  text: 'Skip',
+                  onPressed: _skip,
+                  isSecondary: true,
+                ),
 
-                  // Continue Button
-                  OnboardingButton(
-                    text: 'Continue',
-                    onPressed: _saveAndContinue,
-                  ),
-
-                  const SizedBox(height: 24),
-                ],
-              ),
+                const SizedBox(height: 24),
+              ],
             ),
           ),
         );
@@ -232,19 +199,29 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
       child: TextField(
         controller: controller,
         style: const TextStyle(
-          color: AppColors.textPrimary,
+          color: Colors.white,
           fontSize: 15,
         ),
         decoration: InputDecoration(
           labelText: label,
-          labelStyle: const TextStyle(color: AppColors.textSecondary),
+          labelStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
           hintText: hint,
-          hintStyle: const TextStyle(color: AppColors.textTertiary),
+          hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
           filled: true,
-          fillColor: AppColors.backgroundCard,
+          fillColor: Colors.white.withOpacity(0.08),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-            borderSide: BorderSide.none,
+            borderSide: BorderSide(
+              color: Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            borderSide: BorderSide(
+              color: Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(AppDimensions.radiusM),

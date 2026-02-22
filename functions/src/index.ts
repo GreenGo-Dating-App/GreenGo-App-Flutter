@@ -188,6 +188,7 @@ export {
   sendUserNotification,
   impersonateUser,
   executeMassAction,
+  adminBulkDeleteUsers,
 } from './admin/userManagement';
 
 export {
@@ -216,11 +217,14 @@ export {
   getNotificationAnalytics,
 } from './notifications/pushNotifications';
 
-// Push Notification Firestore Triggers (likes, matches, messages)
+// Push Notification Firestore Triggers (likes, matches, messages, support, verification, mode expiry)
 export {
   onNewLikePush,
   onNewMatchPush,
   onNewMessagePush,
+  onSupportMessagePush,
+  checkExpiringModes,
+  onVerificationStatusChange,
 } from './notifications/pushNotificationTriggers';
 
 // Email Communication Functions (Legacy - SendGrid)
@@ -316,6 +320,13 @@ export {
   updateLesson,
   getLessonStats,
 } from './language_learning/languageLearningManager';
+
+// Discovery / Candidate Pool Functions
+export {
+  precomputeCandidatePools,
+  triggerPoolRecompute,
+  getCandidatePoolStats,
+} from './discovery/candidatePoolPrecompute';
 
 // MVP Access Control Functions
 export {

@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step6VoiceRecordingScreen extends StatefulWidget {
@@ -158,179 +157,157 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
           return const SizedBox.shrink();
         }
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: _handleBack,
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        return LuxuryOnboardingLayout(
+          title: 'Voice introduction',
+          subtitle: 'Record a short voice message (optional)',
+          onBack: _handleBack,
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 24),
-                  Text(
-                    'Voice introduction',
-                    style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: AppColors.richGold,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Record a short voice message (optional)',
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
-                  ),
-                  const SizedBox(height: 48),
-
-                  // Recording UI
-                  Expanded(
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          // Recording Circle
-                          GestureDetector(
-                            onTap: _isRecording ? _stopRecording : _startRecording,
-                            child: Container(
-                              width: 200,
-                              height: 200,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                gradient: _isRecording
-                                    ? LinearGradient(
-                                        colors: [
-                                          AppColors.errorRed,
-                                          AppColors.errorRed.withOpacity(0.6),
-                                        ],
-                                      )
-                                    : const LinearGradient(
-                                        colors: [
-                                          AppColors.richGold,
-                                          AppColors.accentGold,
-                                        ],
-                                      ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: (_isRecording
-                                            ? AppColors.errorRed
-                                            : AppColors.richGold)
-                                        .withOpacity(0.3),
-                                    blurRadius: 20,
-                                    spreadRadius: 5,
+          child: Column(
+            children: [
+              // Recording UI
+              Expanded(
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // Recording Circle
+                      GestureDetector(
+                        onTap: _isRecording ? _stopRecording : _startRecording,
+                        child: Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: _isRecording
+                                ? LinearGradient(
+                                    colors: [
+                                      AppColors.errorRed,
+                                      AppColors.errorRed.withOpacity(0.6),
+                                    ],
+                                  )
+                                : const LinearGradient(
+                                    colors: [
+                                      AppColors.richGold,
+                                      AppColors.accentGold,
+                                    ],
                                   ),
-                                ],
+                            boxShadow: [
+                              BoxShadow(
+                                color: (_isRecording
+                                        ? AppColors.errorRed
+                                        : AppColors.richGold)
+                                    .withOpacity(0.3),
+                                blurRadius: 20,
+                                spreadRadius: 5,
                               ),
-                              child: Icon(
-                                _isRecording ? Icons.stop : Icons.mic,
-                                size: 80,
-                                color: AppColors.deepBlack,
-                              ),
-                            ),
+                            ],
                           ),
-
-                          const SizedBox(height: 32),
-
-                          // Timer Display
-                          Text(
-                            _formatDuration(_recordingDuration),
-                            style: Theme.of(context)
-                                .textTheme
-                                .displayMedium
-                                ?.copyWith(
-                                  color: _isRecording
-                                      ? AppColors.errorRed
-                                      : AppColors.richGold,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          child: Icon(
+                            _isRecording ? Icons.stop : Icons.mic,
+                            size: 80,
+                            color: AppColors.deepBlack,
                           ),
-
-                          const SizedBox(height: 8),
-
-                          Text(
-                            _isRecording
-                                ? 'Recording... (max $_maxDuration seconds)'
-                                : _hasRecording
-                                    ? 'Recording ready'
-                                    : '',
-                            style:
-                                Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                      color: AppColors.textSecondary,
-                                    ),
-                          ),
-
-                          const SizedBox(height: 32),
-
-                          // Delete Button (if has recording)
-                          if (_hasRecording && !_isRecording)
-                            TextButton.icon(
-                              onPressed: _deleteRecording,
-                              icon: const Icon(
-                                Icons.delete_outline,
-                                color: AppColors.errorRed,
-                              ),
-                              label: const Text(
-                                'Delete Recording',
-                                style: TextStyle(color: AppColors.errorRed),
-                              ),
-                            ),
-                        ],
+                        ),
                       ),
-                    ),
-                  ),
 
-                  // Info Box
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.info_outline,
-                          color: AppColors.richGold,
-                          size: 20,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            'Voice introductions help others get to know you better. This step is optional.',
-                            style:
-                                Theme.of(context).textTheme.bodySmall?.copyWith(
-                                      color: AppColors.textSecondary,
-                                    ),
+                      const SizedBox(height: 32),
+
+                      // Timer Display
+                      Text(
+                        _formatDuration(_recordingDuration),
+                        style: Theme.of(context)
+                            .textTheme
+                            .displayMedium
+                            ?.copyWith(
+                              color: _isRecording
+                                  ? AppColors.errorRed
+                                  : AppColors.richGold,
+                              fontWeight: FontWeight.bold,
+                            ),
+                      ),
+
+                      const SizedBox(height: 8),
+
+                      Text(
+                        _isRecording
+                            ? 'Recording... (max $_maxDuration seconds)'
+                            : _hasRecording
+                                ? 'Recording ready'
+                                : '',
+                        style:
+                            Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                  color: Colors.white.withOpacity(0.6),
+                                ),
+                      ),
+
+                      const SizedBox(height: 32),
+
+                      // Delete Button (if has recording)
+                      if (_hasRecording && !_isRecording)
+                        TextButton.icon(
+                          onPressed: _deleteRecording,
+                          icon: const Icon(
+                            Icons.delete_outline,
+                            color: AppColors.errorRed,
+                          ),
+                          label: const Text(
+                            'Delete Recording',
+                            style: TextStyle(color: AppColors.errorRed),
                           ),
                         ),
-                      ],
+                    ],
+                  ),
+                ),
+              ),
+
+              // Info Box
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.06),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(
+                      color: Colors.white.withOpacity(0.1),
                     ),
                   ),
-
-                  const SizedBox(height: 24),
-
-                  // Continue/Skip Button
-                  OnboardingButton(
-                    text: _hasRecording ? 'Continue' : 'Skip',
-                    onPressed: _handleContinue,
-                    isLoading: _isUploading,
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.info_outline,
+                        color: AppColors.richGold,
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'Voice introductions help others get to know you better. This step is optional.',
+                          style:
+                              Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Colors.white.withOpacity(0.6),
+                                  ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
+
+              const SizedBox(height: 20),
+
+              // Continue/Skip Button
+              LuxuryButton(
+                text: _hasRecording ? 'Continue' : 'Skip',
+                onPressed: _handleContinue,
+                isLoading: _isUploading,
+              ),
+
+              const SizedBox(height: 24),
+            ],
           ),
         );
       },

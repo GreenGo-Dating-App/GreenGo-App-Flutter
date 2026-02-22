@@ -566,90 +566,136 @@ exports.sendBroadcastNotification = (0, https_1.onCall)({
         }
         // Only target users with notifications enabled and FCM token
         query = query.where('notificationsEnabled', '==', true);
-        const snapshot = await query.get();
-        (0, utils_1.logInfo)(`Found ${snapshot.size} users to notify`);
         let successCount = 0;
         let failCount = 0;
-        const messages = [];
-        for (const doc of snapshot.docs) {
-            const userData = doc.data();
-            const fcmToken = userData.fcmToken;
-            if (!fcmToken) {
-                failCount++;
-                continue;
+        let totalTargeted = 0;
+        const pageSize = 500;
+        let lastDoc = null;
+        // Cursor-based pagination to avoid loading all users into memory
+        while (true) {
+            let pageQuery = query.limit(pageSize);
+            if (lastDoc) {
+                pageQuery = pageQuery.startAfter(lastDoc);
             }
-            const userLang = userData.preferredLanguage || 'en';
-            let title;
-            let body;
-            if (messageType === 'custom') {
-                title = (customTitle === null || customTitle === void 0 ? void 0 : customTitle[userLang]) || (customTitle === null || customTitle === void 0 ? void 0 : customTitle.en) || 'GreenGoChat Notification';
-                body = (customBody === null || customBody === void 0 ? void 0 : customBody[userLang]) || (customBody === null || customBody === void 0 ? void 0 : customBody.en) || 'You have a new notification';
-            }
-            else {
-                const predefinedMessages = BROADCAST_MESSAGES[messageType];
-                const message = (predefinedMessages === null || predefinedMessages === void 0 ? void 0 : predefinedMessages[userLang]) || (predefinedMessages === null || predefinedMessages === void 0 ? void 0 : predefinedMessages.en);
-                title = (message === null || message === void 0 ? void 0 : message.title) || 'GreenGoChat';
-                body = (message === null || message === void 0 ? void 0 : message.body) || 'You have a new notification';
-            }
-            messages.push({
-                token: fcmToken,
-                notification: {
-                    title,
-                    body,
-                },
-                data: {
-                    type: 'broadcast',
-                    messageType,
-                    timestamp: new Date().toISOString(),
-                },
-                android: {
-                    priority: 'high',
+            const snapshot = await pageQuery.get();
+            if (snapshot.empty)
+                break;
+            totalTargeted += snapshot.size;
+            lastDoc = snapshot.docs[snapshot.docs.length - 1];
+            const messages = [];
+            const notificationBatch = utils_1.db.batch();
+            const invalidTokenPromises = [];
+            for (const doc of snapshot.docs) {
+                const userData = doc.data();
+                const fcmToken = userData.fcmToken;
+                if (!fcmToken) {
+                    failCount++;
+                    continue;
+                }
+                const userLang = userData.preferredLanguage || 'en';
+                let title;
+                let body;
+                if (messageType === 'custom') {
+                    title = (customTitle === null || customTitle === void 0 ? void 0 : customTitle[userLang]) || (customTitle === null || customTitle === void 0 ? void 0 : customTitle.en) || 'GreenGoChat Notification';
+                    body = (customBody === null || customBody === void 0 ? void 0 : customBody[userLang]) || (customBody === null || customBody === void 0 ? void 0 : customBody.en) || 'You have a new notification';
+                }
+                else {
+                    const predefinedMessages = BROADCAST_MESSAGES[messageType];
+                    const message = (predefinedMessages === null || predefinedMessages === void 0 ? void 0 : predefinedMessages[userLang]) || (predefinedMessages === null || predefinedMessages === void 0 ? void 0 : predefinedMessages.en);
+                    title = (message === null || message === void 0 ? void 0 : message.title) || 'GreenGoChat';
+                    body = (message === null || message === void 0 ? void 0 : message.body) || 'You have a new notification';
+                }
+                messages.push({
+                    token: fcmToken,
                     notification: {
-                        channelId: 'greengo_broadcasts',
-                        sound: 'default',
+                        title,
+                        body,
                     },
-                },
-                apns: {
-                    payload: {
-                        aps: {
+                    data: {
+                        type: 'broadcast',
+                        messageType,
+                        timestamp: new Date().toISOString(),
+                    },
+                    android: {
+                        priority: 'high',
+                        notification: {
+                            channelId: 'greengo_broadcasts',
                             sound: 'default',
-                            badge: 1,
                         },
                     },
-                },
-            });
-            // Also create in-app notification
-            await utils_1.db.collection('notifications').add({
-                userId: doc.id,
-                type: 'broadcast',
-                title,
-                body,
-                read: false,
-                sent: true,
-                sentAt: utils_1.FieldValue.serverTimestamp(),
-                createdAt: utils_1.FieldValue.serverTimestamp(),
-            });
-        }
-        // Send in batches of 500 (FCM limit)
-        const batchSize = 500;
-        for (let i = 0; i < messages.length; i += batchSize) {
-            const batch = messages.slice(i, i + batchSize);
-            try {
-                const response = await admin.messaging().sendEach(batch);
-                successCount += response.successCount;
-                failCount += response.failureCount;
+                    apns: {
+                        payload: {
+                            aps: {
+                                sound: 'default',
+                                badge: 1,
+                            },
+                        },
+                    },
+                });
+                // Batch in-app notifications (up to 500 per batch)
+                const notifRef = utils_1.db.collection('notifications').doc();
+                notificationBatch.set(notifRef, {
+                    userId: doc.id,
+                    type: 'broadcast',
+                    title,
+                    body,
+                    read: false,
+                    sent: true,
+                    sentAt: utils_1.FieldValue.serverTimestamp(),
+                    createdAt: utils_1.FieldValue.serverTimestamp(),
+                });
             }
-            catch (err) {
-                (0, utils_1.logError)('Error sending batch:', err);
-                failCount += batch.length;
+            // Commit in-app notification batch
+            await notificationBatch.commit();
+            // Send FCM messages in batches of 500
+            for (let i = 0; i < messages.length; i += pageSize) {
+                const fcmBatch = messages.slice(i, i + pageSize);
+                try {
+                    const response = await admin.messaging().sendEach(fcmBatch);
+                    successCount += response.successCount;
+                    failCount += response.failureCount;
+                    // Collect invalid token cleanup promises
+                    response.responses.forEach((resp, idx) => {
+                        if (resp.error &&
+                            (resp.error.code === 'messaging/invalid-registration-token' ||
+                                resp.error.code === 'messaging/registration-token-not-registered')) {
+                            const failedToken = fcmBatch[idx].token;
+                            if (failedToken) {
+                                invalidTokenPromises.push(utils_1.db.collection('users')
+                                    .where('fcmToken', '==', failedToken)
+                                    .limit(1)
+                                    .get()
+                                    .then((snap) => {
+                                    if (!snap.empty) {
+                                        return snap.docs[0].ref.update({ fcmToken: admin.firestore.FieldValue.delete() });
+                                    }
+                                })
+                                    .then(() => { }) // ensure Promise<void>
+                                );
+                            }
+                        }
+                    });
+                }
+                catch (err) {
+                    (0, utils_1.logError)('Error sending FCM batch:', err);
+                    failCount += fcmBatch.length;
+                }
             }
+            // Await token cleanup for this page
+            if (invalidTokenPromises.length > 0) {
+                await Promise.allSettled(invalidTokenPromises);
+            }
+            (0, utils_1.logInfo)(`Broadcast progress: ${totalTargeted} users processed, ${successCount} sent`);
+            // If we got fewer than pageSize, we've reached the end
+            if (snapshot.size < pageSize)
+                break;
         }
         // Log audit
         await utils_1.db.collection('audit_logs').add({
             type: 'broadcast_notification',
             messageType,
             targetAudience,
-            totalTargeted: snapshot.size,
+            totalTargeted,
             successCount,
             failCount,
             performedBy: (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid,
@@ -657,7 +703,7 @@ exports.sendBroadcastNotification = (0, https_1.onCall)({
         });
         return {
             success: true,
-            totalTargeted: snapshot.size,
+            totalTargeted,
             successCount,
             failCount,
         };
