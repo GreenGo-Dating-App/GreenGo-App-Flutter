@@ -6,14 +6,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_dimensions.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../domain/entities/profile.dart' as profile_entity;
 import '../../../domain/entities/location.dart' as location_entity;
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step5LocationLanguageScreen extends StatefulWidget {
@@ -274,258 +273,193 @@ class _Step5LocationLanguageScreenState
           return const SizedBox.shrink();
         }
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: _handleBack,
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        return LuxuryOnboardingLayout(
+          title: 'Where are you?',
+          subtitle: 'Set your preferred languages and location (optional)',
+          onBack: _handleBack,
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(AppDimensions.paddingL),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 24),
-                      Text(
-                        'Where are you?',
-                        style:
-                            Theme.of(context).textTheme.displaySmall?.copyWith(
-                                  color: AppColors.richGold,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'Set your preferred languages and location (optional)',
-                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                              color: AppColors.textSecondary,
-                            ),
-                      ),
-                      const SizedBox(height: 32),
-
-                      // Location Section
-                      Row(
-                        children: [
-                          Text(
-                            'Location',
-                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                  color: AppColors.textPrimary,
-                                  fontWeight: FontWeight.w600,
-                                ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 20, 24, 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Location Section
+                    Row(
+                      children: [
+                        Text(
+                          'Location',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
                           ),
-                          const SizedBox(width: 8),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 2,
+                        ),
+                        const SizedBox(width: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 2,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.08),
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.15),
                             ),
-                            decoration: BoxDecoration(
-                              color: AppColors.backgroundCard,
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: AppColors.textTertiary.withOpacity(0.3),
-                              ),
+                          ),
+                          child: Text(
+                            'Optional',
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.5),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
                             ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'You can set your location later in settings',
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.5),
+                        fontSize: 13,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+
+                    // Location Display
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.06),
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: _selectedLocation != null
+                              ? AppColors.richGold.withOpacity(0.5)
+                              : Colors.white.withOpacity(0.1),
+                          width: 1.5,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.location_on,
+                            color: _selectedLocation != null
+                                ? AppColors.richGold
+                                : Colors.white.withOpacity(0.4),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
                             child: Text(
-                              'Optional',
+                              _selectedLocation?.displayAddress ??
+                                  'No location selected',
                               style: TextStyle(
-                                color: AppColors.textTertiary,
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
+                                color: _selectedLocation != null
+                                    ? Colors.white
+                                    : Colors.white.withOpacity(0.4),
+                                fontSize: 16,
                               ),
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 8),
-                      Text(
-                        'You can set your location later in settings',
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              color: AppColors.textTertiary,
-                            ),
-                      ),
-                      const SizedBox(height: 12),
+                    ),
 
-                      // Location Display
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: AppColors.backgroundCard,
-                          borderRadius:
-                              BorderRadius.circular(AppDimensions.radiusM),
-                          border: Border.all(
-                            color: _selectedLocation != null
-                                ? AppColors.richGold
-                                : AppColors.divider,
-                            width: 1.5,
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.location_on,
-                              color: _selectedLocation != null
-                                  ? AppColors.richGold
-                                  : AppColors.textTertiary,
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Text(
-                                _selectedLocation?.displayAddress ??
-                                    'No location selected',
-                                style: TextStyle(
-                                  color: _selectedLocation != null
-                                      ? AppColors.textPrimary
-                                      : AppColors.textTertiary,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                    const SizedBox(height: 12),
 
-                      const SizedBox(height: 12),
+                    // Get Location Button
+                    LuxuryButton(
+                      text: 'Use Current Location',
+                      onPressed: _isLoadingLocation ? null : _getCurrentLocation,
+                      isLoading: _isLoadingLocation,
+                      isSecondary: true,
+                    ),
 
-                      // Get Location Button
-                      OnboardingButton(
-                        text: 'Use Current Location',
-                        onPressed: _isLoadingLocation ? null : _getCurrentLocation,
-                        isLoading: _isLoadingLocation,
-                        isPrimary: false,
-                      ),
-
-                      if (_locationError != null)
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8),
-                          child: Text(
-                            _locationError!,
-                            style: const TextStyle(
-                              color: AppColors.errorRed,
-                              fontSize: 12,
-                            ),
-                          ),
-                        ),
-
-                      const SizedBox(height: 32),
-
-                      // Languages Section
-                      Text(
-                        'Languages',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: AppColors.textPrimary,
-                              fontWeight: FontWeight.w600,
-                            ),
-                      ),
-                      const SizedBox(height: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 6,
-                        ),
-                        decoration: BoxDecoration(
-                          color: AppColors.backgroundCard,
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                    if (_locationError != null)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
                         child: Text(
-                          '${_selectedLanguages.length}/5 selected',
-                          style: TextStyle(
-                            color: _selectedLanguages.isNotEmpty
-                                ? AppColors.successGreen
-                                : AppColors.textTertiary,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 14,
+                          _locationError!,
+                          style: const TextStyle(
+                            color: AppColors.errorRed,
+                            fontSize: 12,
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
 
-                // Languages List
-                Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppDimensions.paddingL,
-                    ),
-                    child: Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
-                      children: _availableLanguages.map((language) {
-                        final isSelected = _selectedLanguages.contains(language);
-                        return GestureDetector(
-                          onTap: () => _toggleLanguage(language),
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 20,
-                              vertical: 12,
-                            ),
-                            decoration: BoxDecoration(
-                              color: isSelected
-                                  ? AppColors.richGold
-                                  : AppColors.backgroundCard,
-                              borderRadius:
-                                  BorderRadius.circular(AppDimensions.radiusM),
-                              border: Border.all(
-                                color: isSelected
-                                    ? AppColors.richGold
-                                    : AppColors.divider,
-                                width: 2,
-                              ),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                if (isSelected)
-                                  const Padding(
-                                    padding: EdgeInsets.only(right: 6),
-                                    child: Icon(
-                                      Icons.check_circle,
-                                      color: AppColors.deepBlack,
-                                      size: 18,
-                                    ),
-                                  ),
-                                Text(
-                                  language,
-                                  style: TextStyle(
-                                    color: isSelected
-                                        ? AppColors.deepBlack
-                                        : AppColors.textPrimary,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    ),
-                  ),
-                ),
+                    const SizedBox(height: 24),
 
-                // Bottom Section
-                Padding(
-                  padding: const EdgeInsets.all(AppDimensions.paddingL),
-                  child: OnboardingButton(
-                    text: 'Continue',
-                    onPressed: _handleContinue,
+                    // Languages Section
+                    Text(
+                      'Languages',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.08),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        '${_selectedLanguages.length}/5 selected',
+                        style: TextStyle(
+                          color: _selectedLanguages.isNotEmpty
+                              ? AppColors.richGold
+                              : Colors.white.withOpacity(0.5),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
+                ),
+              ),
+
+              // Languages List
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Wrap(
+                    spacing: 10,
+                    runSpacing: 10,
+                    children: _availableLanguages.map((language) {
+                      final isSelected = _selectedLanguages.contains(language);
+                      return LuxuryChip(
+                        label: language,
+                        isSelected: isSelected,
+                        onTap: () => _toggleLanguage(language),
+                        icon: isSelected ? Icons.check_circle : null,
+                      );
+                    }).toList(),
                   ),
                 ),
-              ],
-            ),
+              ),
+
+              // Bottom Section
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 16, 0, 24),
+                child: LuxuryButton(
+                  text: 'Continue',
+                  onPressed: _handleContinue,
+                ),
+              ),
+            ],
           ),
         );
       },

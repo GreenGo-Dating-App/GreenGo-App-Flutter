@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
@@ -95,6 +96,7 @@ class _CachedStack {
 class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   final FirebaseFirestore firestore;
   final MatchingRemoteDataSource matchingDataSource;
+  final BlockedUsersService blockedUsersService;
 
   // In-memory cache keyed by userId — survives bloc recreation (datasource is singleton)
   final Map<String, _CachedStack> _cache = {};
@@ -102,6 +104,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   DiscoveryRemoteDataSourceImpl({
     required this.firestore,
     required this.matchingDataSource,
+    required this.blockedUsersService,
   });
 
   @override
@@ -177,7 +180,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     print('[Discovery] Matched user IDs: ${matchedUserIds.length}');
 
     // Get blocked user IDs (bidirectional) to exclude them
-    final blockedUserIds = await _getBlockedUserIds(userId);
+    final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
     print('[Discovery] Blocked user IDs: ${blockedUserIds.length}');
 
     // Apply sexual orientation filter
@@ -323,6 +326,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final querySnapshot = await firestore
         .collection('swipes')
         .where('userId', isEqualTo: userId)
+        .limit(5000)
         .get();
 
     final Map<String, _SwipeRecord> history = {};
@@ -350,6 +354,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         .collection('matches')
         .where('userId1', isEqualTo: userId)
         .where('isActive', isEqualTo: true)
+        .limit(2000)
         .get();
 
     for (final doc in query1.docs) {
@@ -361,6 +366,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         .collection('matches')
         .where('userId2', isEqualTo: userId)
         .where('isActive', isEqualTo: true)
+        .limit(2000)
         .get();
 
     for (final doc in query2.docs) {
@@ -368,35 +374,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     return matchedIds;
-  }
-
-  /// Get all user IDs that are blocked (bidirectional - users I blocked + users who blocked me)
-  Future<Set<String>> _getBlockedUserIds(String userId) async {
-    final Set<String> blockedIds = {};
-
-    // Users I blocked
-    final blockedByMe = await firestore
-        .collection('blockedUsers')
-        .where('blockerId', isEqualTo: userId)
-        .get();
-
-    for (final doc in blockedByMe.docs) {
-      final blockedUserId = doc.data()['blockedUserId'] as String?;
-      if (blockedUserId != null) blockedIds.add(blockedUserId);
-    }
-
-    // Users who blocked me
-    final blockedMe = await firestore
-        .collection('blockedUsers')
-        .where('blockedUserId', isEqualTo: userId)
-        .get();
-
-    for (final doc in blockedMe.docs) {
-      final blockerId = doc.data()['blockerId'] as String?;
-      if (blockerId != null) blockedIds.add(blockerId);
-    }
-
-    return blockedIds;
   }
 
   /// Get admin profile as a match candidate
@@ -736,7 +713,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final results2 = await query2.get();
 
     // Get blocked user IDs to filter out blocked matches
-    final blockedUserIds = await _getBlockedUserIds(userId);
+    final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
 
     // Combine and convert
     final matches = <Match>[];
@@ -855,7 +832,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final querySnapshot = await firestore
         .collection('swipes')
         .where('targetUserId', isEqualTo: userId)
-        .where('actionType', whereIn: ['like', 'superLike']).get();
+        .where('actionType', whereIn: ['like', 'superLike'])
+        .limit(200)
+        .get();
 
     final likerIds = querySnapshot.docs
         .map((doc) => doc.data()['userId'] as String)
@@ -864,18 +843,27 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     if (likerIds.isEmpty) return [];
 
-    // Get profiles for these users
+    // Batch fetch profiles using whereIn (max 10 per query) in parallel
+    final List<Future<QuerySnapshot<Map<String, dynamic>>>> batchFutures = [];
+    for (var i = 0; i < likerIds.length; i += 10) {
+      final batch = likerIds.sublist(i, i + 10 > likerIds.length ? likerIds.length : i + 10);
+      batchFutures.add(
+        firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: batch)
+            .get(),
+      );
+    }
+
+    final batchResults = await Future.wait(batchFutures);
     final profiles = <Profile>[];
-    for (final likerId in likerIds) {
-      try {
-        final profileDoc =
-            await firestore.collection('profiles').doc(likerId).get();
-        if (profileDoc.exists) {
-          profiles.add(ProfileModel.fromFirestore(profileDoc));
+    for (final result in batchResults) {
+      for (final doc in result.docs) {
+        try {
+          profiles.add(ProfileModel.fromFirestore(doc));
+        } catch (e) {
+          // Skip invalid profiles
         }
-      } catch (e) {
-        // Skip invalid profiles
-        continue;
       }
     }
 
@@ -903,6 +891,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final querySnapshot = await firestore
         .collection('swipes')
         .where('userId', isEqualTo: userId)
+        .limit(5000)
         .get();
 
     return querySnapshot.docs

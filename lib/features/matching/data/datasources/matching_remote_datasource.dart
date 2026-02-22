@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import '../../../../core/services/candidate_pool_service.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match_candidate.dart';
@@ -53,11 +54,13 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
   final FirebaseFirestore firestore;
   final FeatureEngineer featureEngineer;
   final CompatibilityScorer compatibilityScorer;
+  final CandidatePoolService? candidatePoolService;
 
   MatchingRemoteDataSourceImpl({
     required this.firestore,
     FeatureEngineer? featureEngineer,
     CompatibilityScorer? compatibilityScorer,
+    this.candidatePoolService,
   })  : featureEngineer = featureEngineer ?? FeatureEngineer(),
         compatibilityScorer = compatibilityScorer ?? CompatibilityScorer();
 
@@ -72,18 +75,34 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     if (!userDoc.exists) throw Exception('User profile not found');
 
     final userProfile = ProfileModel.fromFirestore(userDoc);
+    final userLoc = userProfile.effectiveLocation;
 
-    // Fetch ALL profiles from Firestore (no server-side filter on accountStatus
-    // since profiles may have null/missing/different-cased accountStatus values)
-    final querySnapshot = await firestore
-        .collection('profiles')
-        .limit(500)
-        .get();
+    // Try pre-computed pools first for targeted candidate fetch
+    final poolCandidateIds = await _getPoolCandidateIds(
+      userProfile: userProfile,
+      preferences: preferences,
+    );
+
+    List<QueryDocumentSnapshot<Map<String, dynamic>>> profileDocs;
+
+    if (poolCandidateIds != null && poolCandidateIds.isNotEmpty) {
+      // Pool path: fetch only the profiles we know match the criteria
+      debugPrint('[Matching] Using pool: ${poolCandidateIds.length} candidate IDs');
+      profileDocs = await _fetchProfilesByIds(poolCandidateIds);
+    } else {
+      // Fallback: full scan (pools unavailable, stale, or empty)
+      debugPrint('[Matching] Pool unavailable, falling back to full scan');
+      final querySnapshot = await firestore
+          .collection('profiles')
+          .limit(500)
+          .get();
+      profileDocs = querySnapshot.docs;
+    }
 
     final candidates = <MatchCandidate>[];
     final now = DateTime.now();
 
-    for (final doc in querySnapshot.docs) {
+    for (final doc in profileDocs) {
       // Skip self
       if (doc.id == userId) continue;
 
@@ -121,7 +140,6 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
         // Apply distance filter (skip if either user has no location data)
         // Use effectiveLocation to respect traveler mode overrides
-        final userLoc = userProfile.effectiveLocation;
         final candidateLoc = candidateProfile.effectiveLocation;
         double distance = 0.0;
         if (userLoc.latitude != 0 &&
@@ -193,6 +211,90 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     return candidates;
   }
 
+  /// Try to get candidate user IDs from pre-computed pools.
+  /// Returns null if pools are unavailable or stale.
+  Future<List<String>?> _getPoolCandidateIds({
+    required Profile userProfile,
+    required MatchPreferences preferences,
+  }) async {
+    if (candidatePoolService == null) return null;
+
+    try {
+      final country = userProfile.effectiveLocation.country;
+      if (country.isEmpty || country == 'Unknown') return null;
+
+      final poolCandidates = await candidatePoolService!.getCandidatesFromPools(
+        country: country,
+        genders: preferences.preferredGenders,
+        minAge: preferences.minAge,
+        maxAge: preferences.maxAge,
+      );
+
+      if (poolCandidates == null || poolCandidates.isEmpty) return null;
+
+      // Pre-filter by distance using pool metadata (avoids fetching distant profiles)
+      final userLoc = userProfile.effectiveLocation;
+      final filtered = <String>[];
+
+      for (final pc in poolCandidates) {
+        // Skip candidates with no location
+        if (pc.lat == 0 && pc.lng == 0) {
+          filtered.add(pc.userId);
+          continue;
+        }
+        // Skip if user has no location
+        if (userLoc.latitude == 0 && userLoc.longitude == 0) {
+          filtered.add(pc.userId);
+          continue;
+        }
+
+        final distance = featureEngineer.calculateDistance(
+          userLoc.latitude,
+          userLoc.longitude,
+          pc.lat,
+          pc.lng,
+        );
+
+        if (distance <= preferences.maxDistance) {
+          filtered.add(pc.userId);
+        }
+      }
+
+      debugPrint('[Matching] Pool pre-filter: ${poolCandidates.length} → ${filtered.length} (distance)');
+      return filtered.isEmpty ? null : filtered;
+    } catch (e) {
+      debugPrint('[Matching] Pool lookup failed, falling back: $e');
+      return null;
+    }
+  }
+
+  /// Fetch profile documents by a list of user IDs in parallel batches of 10.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> _fetchProfilesByIds(
+    List<String> userIds,
+  ) async {
+    if (userIds.isEmpty) return [];
+
+    // Cap at 500 to match previous behavior
+    final idsToFetch = userIds.length > 500 ? userIds.sublist(0, 500) : userIds;
+
+    final futures = <Future<QuerySnapshot<Map<String, dynamic>>>>[];
+    for (var i = 0; i < idsToFetch.length; i += 10) {
+      final batch = idsToFetch.sublist(
+        i,
+        i + 10 > idsToFetch.length ? idsToFetch.length : i + 10,
+      );
+      futures.add(
+        firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: batch)
+            .get(),
+      );
+    }
+
+    final results = await Future.wait(futures);
+    return results.expand((snapshot) => snapshot.docs).toList();
+  }
+
   @override
   Future<UserVector> getUserVector(String userId) async {
     final doc = await firestore.collection('user_vectors').doc(userId).get();
@@ -247,14 +349,6 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       'interactionType': interactionType.toString().split('.').last,
       'timestamp': FieldValue.serverTimestamp(),
     });
-
-    // Update interaction counts (for collaborative filtering)
-    await firestore.collection('interaction_matrix').doc(userId).set({
-      targetUserId: {
-        'type': interactionType.toString().split('.').last,
-        'timestamp': FieldValue.serverTimestamp(),
-      }
-    }, SetOptions(merge: true));
   }
 
   @override
@@ -274,6 +368,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       final userInteractions = await firestore
           .collection('user_interactions')
           .where('userId', isEqualTo: userId)
+          .limit(500)
           .get();
 
       if (userInteractions.docs.isEmpty) {

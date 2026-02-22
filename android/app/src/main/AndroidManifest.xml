@@ -21,6 +21,12 @@
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
 
+    <!-- Push Notification Permission (Android 13+ / API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <!-- Vibrate permission for notifications -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:label="GreenGo"
         android:name="${applicationName}"
@@ -52,6 +58,16 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <!-- FCM default notification channel -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="greengo_notifications" />
+
+        <!-- FCM high priority messages -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
 
         <!-- Google Maps API Key -->
         <meta-data

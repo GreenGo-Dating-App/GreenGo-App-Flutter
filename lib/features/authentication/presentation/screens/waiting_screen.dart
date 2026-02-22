@@ -628,8 +628,8 @@ class _WaitingScreenState extends State<WaitingScreen>
 
     switch (tier) {
       case SubscriptionTier.platinum:
-        primaryColor = const Color(0xFFE5E4E2); // Platinum silver
-        secondaryColor = const Color(0xFFB4B4B4);
+        primaryColor = AppColors.platinumBlue;
+        secondaryColor = AppColors.platinumBlueDark;
         badgeIcon = Icons.diamond;
         tierLabel = l10n.vipPlatinumMember;
         break;

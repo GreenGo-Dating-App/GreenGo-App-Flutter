@@ -82,40 +82,38 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     ProfilePhotoUploadRequested event,
     Emitter<ProfileState> emit,
   ) async {
-    // Private photos skip validation (NSFW allowed in private/chat)
-    if (!event.isPrivate) {
-      emit(const ProfilePhotoValidating());
+    // ALL photos (public AND private) must pass nudity/explicit content checks
+    emit(const ProfilePhotoValidating());
 
-      final validationService = PhotoValidationService();
-      PhotoValidationResult validationResult;
+    final validationService = PhotoValidationService();
+    PhotoValidationResult validationResult;
 
-      if (event.isMainPhoto) {
-        // Main photo: must have face + no NSFW
-        validationResult =
-            await validationService.validateMainPhoto(event.photo);
-        if (!validationResult.isValid) {
-          emit(ProfilePhotoValidationFailed(
-              errorCode: validationResult.errorCode));
-          return;
-        }
-        if (!validationResult.hasFace) {
-          emit(const ProfilePhotoValidationFailed(
-              errorCode: PhotoValidationError.mainNoFace));
-          return;
-        }
-      } else {
-        // Other public photos: no NSFW (no face required)
-        validationResult =
-            await validationService.validatePublicPhoto(event.photo);
-        if (!validationResult.isValid) {
-          emit(ProfilePhotoValidationFailed(
-              errorCode: validationResult.errorCode));
-          return;
-        }
+    if (!event.isPrivate && event.isMainPhoto) {
+      // Main photo: must have face + no NSFW
+      validationResult =
+          await validationService.validateMainPhoto(event.photo);
+      if (!validationResult.isValid) {
+        emit(ProfilePhotoValidationFailed(
+            errorCode: validationResult.errorCode));
+        return;
+      }
+      if (!validationResult.hasFace) {
+        emit(const ProfilePhotoValidationFailed(
+            errorCode: PhotoValidationError.mainNoFace));
+        return;
+      }
+    } else {
+      // All other photos (public non-main + private): no NSFW check, no face required
+      validationResult =
+          await validationService.validatePublicPhoto(event.photo);
+      if (!validationResult.isValid) {
+        emit(ProfilePhotoValidationFailed(
+            errorCode: validationResult.errorCode));
+        return;
       }
     }
 
-    // Validation passed (or private photo) — upload
+    // Validation passed — upload
     emit(const ProfileLoading());
 
     final result = await uploadPhoto(
@@ -289,16 +287,27 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
 
       debugPrint('[DeleteAccount] Account $userId Firestore data deleted');
 
-      // IMPORTANT: Emit ProfileDeleted BEFORE deleting Firebase Auth user.
-      // Auth deletion triggers authStateChanges() which navigates to login,
-      // disposing this bloc. If we emit after, the UI never receives the state.
-      emit(const ProfileDeleted());
-
-      // Delete Firebase Auth user (best effort — UI already navigated away)
+      // Delete Firebase Auth user FIRST to free the email for re-registration.
+      // We do this before emitting state because emit triggers sign-out which
+      // may dispose the bloc and prevent Auth deletion from completing.
+      // The user was already re-authenticated in the UI before dispatching this event.
+      bool authDeleted = false;
       try {
-        await FirebaseAuth.instance.currentUser?.delete();
+        final currentUser = FirebaseAuth.instance.currentUser;
+        if (currentUser != null) {
+          await currentUser.delete();
+          authDeleted = true;
+          debugPrint('[DeleteAccount] Firebase Auth user deleted');
+        }
       } catch (e) {
         debugPrint('[DeleteAccount] Auth delete failed: $e');
+      }
+
+      // Now emit ProfileDeleted — this triggers sign-out and navigation
+      emit(const ProfileDeleted());
+
+      if (!authDeleted) {
+        debugPrint('[DeleteAccount] WARNING: Auth user was NOT deleted — email may still be registered');
       }
     } catch (e) {
       debugPrint('[DeleteAccount] Error: $e');

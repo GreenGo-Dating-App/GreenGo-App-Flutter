@@ -176,10 +176,11 @@ class SafeSearchAnnotation extends Equatable {
     required this.spoof,
   });
 
+  /// Strict safety check: blocks all nudity and racy content
   bool get isSafe =>
-      adult.index <= Likelihood.unlikely.index &&
+      adult.index <= Likelihood.veryUnlikely.index &&
       violence.index <= Likelihood.unlikely.index &&
-      racy.index <= Likelihood.possible.index;
+      racy.index <= Likelihood.unlikely.index;
 
   @override
   List<Object?> get props => [adult, violence, racy, medical, spoof];

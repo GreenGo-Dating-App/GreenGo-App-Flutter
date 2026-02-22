@@ -7,7 +7,7 @@ import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
-import '../../widgets/onboarding_button.dart';
+import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 
 class Step8ProfilePreviewScreen extends StatelessWidget {
@@ -31,268 +31,241 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
 
         final age = _calculateAge(state.dateOfBirth!);
 
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: () => _handleBack(context),
-            ),
-            title: OnboardingProgressBar(
-              currentStep: state.stepIndex,
-              totalSteps: state.totalSteps,
-            ),
+        return LuxuryOnboardingLayout(
+          title: 'Profile preview',
+          subtitle: 'Review your profile before completing',
+          onBack: () => _handleBack(context),
+          progressBar: OnboardingProgressBar(
+            currentStep: state.stepIndex,
+            totalSteps: state.totalSteps,
           ),
-          body: SafeArea(
-            child: Column(
-              children: [
-                Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.all(AppDimensions.paddingL),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(height: 24),
-                        Text(
-                          'Profile preview',
-                          style:
-                              Theme.of(context).textTheme.displaySmall?.copyWith(
-                                    color: AppColors.richGold,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Review your profile before completing',
-                          style:
-                              Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    color: AppColors.textSecondary,
-                                  ),
-                        ),
-                        const SizedBox(height: 32),
-
-                        // Profile Card
-                        Container(
-                          decoration: BoxDecoration(
-                            color: AppColors.backgroundCard,
-                            borderRadius:
-                                BorderRadius.circular(AppDimensions.radiusL),
-                            border: Border.all(
-                              color: AppColors.divider,
-                              width: 1,
-                            ),
-                          ),
-                          child: Column(
-                            children: [
-                              // Photos Section
-                              if (state.photoUrls.isNotEmpty)
-                                SizedBox(
-                                  height: 200,
-                                  child: ListView.builder(
-                                    scrollDirection: Axis.horizontal,
-                                    padding: const EdgeInsets.all(16),
-                                    itemCount: state.photoUrls.length,
-                                    itemBuilder: (context, index) {
-                                      final photoUrl = state.photoUrls[index];
-                                      final isLocalFile = !photoUrl.startsWith('http');
-
-                                      return Padding(
-                                        padding: const EdgeInsets.only(right: 12),
-                                        child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(
-                                              AppDimensions.radiusM),
-                                          child: isLocalFile
-                                              ? Image.file(
-                                                  File(photoUrl),
-                                                  width: 150,
-                                                  height: 200,
-                                                  fit: BoxFit.cover,
-                                                  errorBuilder:
-                                                      (context, error, stackTrace) {
-                                                    return Container(
-                                                      width: 150,
-                                                      height: 200,
-                                                      color: AppColors.backgroundInput,
-                                                      child: const Icon(
-                                                        Icons.person,
-                                                        size: 60,
-                                                        color: AppColors.textTertiary,
-                                                      ),
-                                                    );
-                                                  },
-                                                )
-                                              : Image.network(
-                                                  photoUrl,
-                                                  width: 150,
-                                                  height: 200,
-                                                  fit: BoxFit.cover,
-                                                  errorBuilder:
-                                                      (context, error, stackTrace) {
-                                                    return Container(
-                                                      width: 150,
-                                                      height: 200,
-                                                      color: AppColors.backgroundInput,
-                                                      child: const Icon(
-                                                        Icons.person,
-                                                        size: 60,
-                                                        color: AppColors.textTertiary,
-                                                      ),
-                                                    );
-                                                  },
-                                                ),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Basic Info
-                              _buildInfoSection(
-                                context,
-                                'Basic Info',
-                                [
-                                  _InfoItem(
-                                      'Name', state.displayName ?? 'Not set'),
-                                  _InfoItem('Age', '$age years old'),
-                                  _InfoItem('Gender', state.gender ?? 'Not set'),
-                                ],
-                              ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Bio
-                              _buildInfoSection(
-                                context,
-                                'About Me',
-                                [
-                                  _InfoItem('Bio',
-                                      state.bio ?? 'No bio provided',
-                                      isMultiline: true),
-                                ],
-                              ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Interests
-                              _buildChipSection(
-                                context,
-                                'Interests',
-                                state.interests,
-                              ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Location & Languages
-                              _buildInfoSection(
-                                context,
-                                'Location & Languages',
-                                [
-                                  _InfoItem(
-                                    'Location',
-                                    state.location?.displayAddress ??
-                                        'Not set',
-                                  ),
-                                  _InfoItem(
-                                    'Languages',
-                                    state.languages.join(', ').isEmpty
-                                        ? 'Not set'
-                                        : state.languages.join(', '),
-                                  ),
-                                ],
-                              ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Voice Recording
-                              _buildInfoSection(
-                                context,
-                                'Voice Introduction',
-                                [
-                                  _InfoItem(
-                                    'Status',
-                                    (state.voiceUrl != null && state.voiceUrl!.isNotEmpty)
-                                        ? 'Recorded'
-                                        : 'Not recorded',
-                                  ),
-                                ],
-                              ),
-
-                              const Divider(color: AppColors.divider),
-
-                              // Personality
-                              if (state.personalityTraits != null)
-                                _buildPersonalitySection(
-                                    context, state.personalityTraits!),
-                            ],
-                          ),
-                        ),
-
-                        const SizedBox(height: 24),
-
-                        // Completion Indicator
-                        Container(
-                          padding: const EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            color: AppColors.backgroundCard,
-                            borderRadius:
-                                BorderRadius.circular(AppDimensions.radiusM),
-                            border: Border.all(color: AppColors.successGreen),
-                          ),
-                          child: Row(
-                            children: [
-                              const Icon(
-                                Icons.check_circle,
-                                color: AppColors.successGreen,
-                                size: 24,
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'Profile Complete!',
-                                      style: TextStyle(
-                                        color: AppColors.successGreen,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      'Your profile is ready to be published',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodySmall
-                                          ?.copyWith(
-                                            color: AppColors.textSecondary,
-                                          ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-
-                // Bottom Section
-                Padding(
+          child: Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
                   padding: const EdgeInsets.all(AppDimensions.paddingL),
-                  child: OnboardingButton(
-                    text: 'Complete Profile',
-                    onPressed: () => _handleComplete(context),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Profile Card
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.06),
+                          borderRadius:
+                              BorderRadius.circular(AppDimensions.radiusL),
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.1),
+                            width: 1,
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+                            // Photos Section
+                            if (state.photoUrls.isNotEmpty)
+                              SizedBox(
+                                height: 200,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  padding: const EdgeInsets.all(16),
+                                  itemCount: state.photoUrls.length,
+                                  itemBuilder: (context, index) {
+                                    final photoUrl = state.photoUrls[index];
+                                    final isLocalFile = !photoUrl.startsWith('http');
+
+                                    return Padding(
+                                      padding: const EdgeInsets.only(right: 12),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(
+                                            AppDimensions.radiusM),
+                                        child: isLocalFile
+                                            ? Image.file(
+                                                File(photoUrl),
+                                                width: 150,
+                                                height: 200,
+                                                fit: BoxFit.cover,
+                                                errorBuilder:
+                                                    (context, error, stackTrace) {
+                                                  return Container(
+                                                    width: 150,
+                                                    height: 200,
+                                                    color: AppColors.backgroundInput,
+                                                    child: const Icon(
+                                                      Icons.person,
+                                                      size: 60,
+                                                      color: AppColors.textTertiary,
+                                                    ),
+                                                  );
+                                                },
+                                              )
+                                            : Image.network(
+                                                photoUrl,
+                                                width: 150,
+                                                height: 200,
+                                                fit: BoxFit.cover,
+                                                errorBuilder:
+                                                    (context, error, stackTrace) {
+                                                  return Container(
+                                                    width: 150,
+                                                    height: 200,
+                                                    color: AppColors.backgroundInput,
+                                                    child: const Icon(
+                                                      Icons.person,
+                                                      size: 60,
+                                                      color: AppColors.textTertiary,
+                                                    ),
+                                                  );
+                                                },
+                                              ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Basic Info
+                            _buildInfoSection(
+                              context,
+                              'Basic Info',
+                              [
+                                _InfoItem(
+                                    'Name', state.displayName ?? 'Not set'),
+                                _InfoItem('Age', '$age years old'),
+                                _InfoItem('Gender', state.gender ?? 'Not set'),
+                              ],
+                            ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Bio
+                            _buildInfoSection(
+                              context,
+                              'About Me',
+                              [
+                                _InfoItem('Bio',
+                                    state.bio ?? 'No bio provided',
+                                    isMultiline: true),
+                              ],
+                            ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Interests
+                            _buildChipSection(
+                              context,
+                              'Interests',
+                              state.interests,
+                            ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Location & Languages
+                            _buildInfoSection(
+                              context,
+                              'Location & Languages',
+                              [
+                                _InfoItem(
+                                  'Location',
+                                  state.location?.displayAddress ??
+                                      'Not set',
+                                ),
+                                _InfoItem(
+                                  'Languages',
+                                  state.languages.join(', ').isEmpty
+                                      ? 'Not set'
+                                      : state.languages.join(', '),
+                                ),
+                              ],
+                            ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Voice Recording
+                            _buildInfoSection(
+                              context,
+                              'Voice Introduction',
+                              [
+                                _InfoItem(
+                                  'Status',
+                                  (state.voiceUrl != null && state.voiceUrl!.isNotEmpty)
+                                      ? 'Recorded'
+                                      : 'Not recorded',
+                                ),
+                              ],
+                            ),
+
+                            const Divider(color: AppColors.divider),
+
+                            // Personality
+                            if (state.personalityTraits != null)
+                              _buildPersonalitySection(
+                                  context, state.personalityTraits!),
+                          ],
+                        ),
+                      ),
+
+                      const SizedBox(height: 24),
+
+                      // Completion Indicator
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.06),
+                          borderRadius:
+                              BorderRadius.circular(AppDimensions.radiusM),
+                          border: Border.all(color: AppColors.successGreen),
+                        ),
+                        child: Row(
+                          children: [
+                            const Icon(
+                              Icons.check_circle,
+                              color: AppColors.successGreen,
+                              size: 24,
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Text(
+                                    'Profile Complete!',
+                                    style: TextStyle(
+                                      color: AppColors.successGreen,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    'Your profile is ready to be published',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodySmall
+                                        ?.copyWith(
+                                          color: AppColors.textSecondary,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
-            ),
+              ),
+
+              // Bottom Section
+              Padding(
+                padding: const EdgeInsets.all(AppDimensions.paddingL),
+                child: LuxuryButton(
+                  text: 'Complete Profile',
+                  onPressed: () => _handleComplete(context),
+                ),
+              ),
+            ],
           ),
         );
       },

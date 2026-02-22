@@ -127,6 +127,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final Map<String, String> _gridActionOverlays = {}; // userId -> 'liked'|'superLiked'|'matched'
   String? _lastAttemptedGridCardId; // Track last grid action for limit-hit overlay revert
 
+  // Online status refresh
+  Timer? _onlineStatusTimer;
+  final Map<String, bool> _onlineStatusOverrides = {}; // userId -> isOnline
+
   String get userId => widget.userId;
 
   /// Get current preferences (saved from Firestore, or default)
@@ -161,6 +165,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     _loadCurrentUserProfile();
     _loadSavedPreferencesAndStart();
     _loadSwipeHistoryOverlays();
+    _onlineStatusTimer = Timer.periodic(
+      const Duration(seconds: 60),
+      (_) => _refreshOnlineStatuses(),
+    );
   }
 
   /// Load saved match preferences from Firestore, then start the discovery stack
@@ -271,8 +279,78 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     }
   }
 
+  /// Periodically refresh online statuses for profiles visible in the grid.
+  Future<void> _refreshOnlineStatuses() async {
+    if (!mounted || !_isGridMode) return;
+
+    final state = context.read<DiscoveryBloc>().state;
+    final List<DiscoveryCard> cards;
+    if (state is DiscoveryLoaded) {
+      cards = state.cards;
+    } else if (state is DiscoverySwiping) {
+      cards = state.cards;
+    } else if (state is DiscoverySwipeCompleted) {
+      cards = state.cards;
+    } else if (state is DiscoverySwipeLimitReached) {
+      cards = state.cards;
+    } else if (state is DiscoverySuperLikeLimitReached) {
+      cards = state.cards;
+    } else if (state is DiscoveryInsufficientCoins) {
+      cards = state.cards;
+    } else if (state is DiscoveryRewindUnavailable) {
+      cards = state.cards;
+    } else {
+      return;
+    }
+
+    final startIdx = _gridStartIndex.clamp(0, cards.length);
+    final visibleCards = cards.sublist(startIdx);
+    if (visibleCards.isEmpty) return;
+
+    final userIds = visibleCards.map((c) => c.userId).toSet().toList();
+
+    try {
+      final firestore = FirebaseFirestore.instance;
+      final newStatuses = <String, bool>{};
+
+      // Batch query in groups of 10 (Firestore whereIn limit)
+      for (var i = 0; i < userIds.length; i += 10) {
+        final batch = userIds.sublist(i, (i + 10).clamp(0, userIds.length));
+        final snapshot = await firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: batch)
+            .get();
+        for (final doc in snapshot.docs) {
+          final data = doc.data();
+          newStatuses[doc.id] = data['isOnline'] == true;
+        }
+      }
+
+      if (!mounted) return;
+
+      // Check if any status actually changed
+      bool changed = false;
+      for (final entry in newStatuses.entries) {
+        final current = _onlineStatusOverrides[entry.key];
+        if (current != entry.value) {
+          changed = true;
+          break;
+        }
+      }
+
+      if (changed) {
+        setState(() {
+          _onlineStatusOverrides.addAll(newStatuses);
+        });
+      }
+    } catch (e) {
+      debugPrint('[Discovery] Error refreshing online statuses: $e');
+    }
+  }
+
   @override
   void dispose() {
+    _onlineStatusTimer?.cancel();
     _dragProgress.dispose();
     super.dispose();
   }
@@ -396,6 +474,16 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 currentIndex = s.currentIndex;
               }
 
+              // In grid mode, the grid uses _gridStartIndex (frozen snapshot),
+              // not the bloc's currentIndex. The bloc advances currentIndex
+              // with each grid action, but the grid pool is independent.
+              // Only show empty state in swipe mode when index is exhausted.
+              if (_isGridMode) {
+                // Pre-cache images for grid cards
+                _precacheUpcomingImages(cards, _gridStartIndex.clamp(0, cards.length));
+                return _buildGridMode(context, cards, currentIndex);
+              }
+
               if (currentIndex >= cards.length) {
                 return _buildEmptyState(context);
               }
@@ -408,10 +496,6 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   state is DiscoverySwipeLimitReached ||
                   state is DiscoverySuperLikeLimitReached ||
                   state is DiscoveryInsufficientCoins;
-
-              if (_isGridMode) {
-                return _buildGridMode(context, cards, currentIndex);
-              }
 
               return Column(
                 children: [
@@ -618,6 +702,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         // Use the snapshot index from when grid mode was entered, so bloc's
     // currentIndex advancing on each action doesn't shrink the pool.
     final startIdx = _gridStartIndex.clamp(0, cards.length);
+    // If no cards at all, show empty state
+    if (cards.isEmpty) {
+      return _buildEmptyState(context);
+    }
     // Show ALL users (including skipped ones) but with their action overlays
     // Grid mode always sorts by distance (closest first)
     final allCards = cards
@@ -869,6 +957,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       card: card,
       gridColumns: _gridColumns,
       actionOverlay: _gridActionOverlays[card.userId],
+      isOnlineOverride: _onlineStatusOverrides[card.userId],
       onAction: _gridAction,
     );
   }
@@ -1113,6 +1202,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       // Reset grid position but keep action overlays (persistent)
       _gridStartIndex = 0;
       _gridExtraPurchased = 0;
+      _onlineStatusOverrides.clear();
     });
     context.read<DiscoveryBloc>().add(
           DiscoveryStackRefreshRequested(
@@ -1349,6 +1439,7 @@ class _GridProfileCard extends StatefulWidget {
   final DiscoveryCard card;
   final int gridColumns;
   final String? actionOverlay; // 'liked', 'superLiked', 'matched'
+  final bool? isOnlineOverride; // Refreshed online status (overrides profile.isOnline)
   final Function(DiscoveryCard, SwipeActionType) onAction;
 
   const _GridProfileCard({
@@ -1357,6 +1448,7 @@ class _GridProfileCard extends StatefulWidget {
     required this.gridColumns,
     required this.onAction,
     this.actionOverlay,
+    this.isOnlineOverride,
   });
 
   @override
@@ -1428,8 +1520,8 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                 child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
               ),
 
-            // Online indicator
-            if (profile.isOnline)
+            // Online indicator (use refreshed status if available)
+            if (widget.isOnlineOverride ?? profile.isOnline)
               Positioned(
                 top: 6,
                 left: 6,
@@ -1624,9 +1716,8 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                 ),
               ),
 
-            // Tier badge (top right) — silver, gold, platinum only
-            if (profile.membershipTier != MembershipTier.free &&
-                profile.membershipTier != MembershipTier.test &&
+            // Tier badge (top right) — all tiers except test
+            if (profile.membershipTier != MembershipTier.test &&
                 widget.actionOverlay != 'matched')
               Positioned(
                 top: 4,
@@ -1638,7 +1729,8 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                       colors: switch (profile.membershipTier) {
                         MembershipTier.silver => [const Color(0xFFC0C0C0), const Color(0xFF8E8E8E)],
                         MembershipTier.gold => [const Color(0xFFFFD700), const Color(0xFFDAA520)],
-                        MembershipTier.platinum => [const Color(0xFFE5E4E2), const Color(0xFF9E9E9E)],
+                        MembershipTier.platinum => [AppColors.platinumBlue, AppColors.platinumBlueDark],
+                        MembershipTier.free => [AppColors.basePurple, AppColors.basePurpleDark],
                         _ => [Colors.grey, Colors.grey],
                       },
                     ),
@@ -1664,6 +1756,7 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                       const SizedBox(width: 2),
                       Text(
                         switch (profile.membershipTier) {
+                          MembershipTier.free => 'B',
                           MembershipTier.silver => 'S',
                           MembershipTier.gold => 'G',
                           MembershipTier.platinum => 'P',

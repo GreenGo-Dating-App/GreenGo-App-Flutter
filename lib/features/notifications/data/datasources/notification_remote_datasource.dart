@@ -111,6 +111,7 @@ class NotificationRemoteDataSourceImpl
           .collection('notifications')
           .where('userId', isEqualTo: userId)
           .where('isRead', isEqualTo: false)
+          .limit(500)
           .get();
 
       for (final doc in snapshot.docs) {
@@ -241,10 +242,22 @@ class NotificationRemoteDataSourceImpl
   @override
   Future<void> saveFCMToken(String userId, String token) async {
     try {
-      await firestore.collection('users').doc(userId).set({
+      final tokenData = {
         'fcmToken': token,
         'fcmTokenUpdatedAt': Timestamp.now(),
-      }, SetOptions(merge: true));
+      };
+      // Save to both 'profiles' (used by Cloud Functions for push)
+      // and 'users' (legacy) to ensure notifications work
+      await Future.wait([
+        firestore.collection('profiles').doc(userId).set(
+          tokenData,
+          SetOptions(merge: true),
+        ),
+        firestore.collection('users').doc(userId).set(
+          tokenData,
+          SetOptions(merge: true),
+        ),
+      ]);
     } catch (e) {
       throw Exception('Failed to save FCM token: $e');
     }

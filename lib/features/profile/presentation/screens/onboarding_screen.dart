@@ -48,7 +48,7 @@ class OnboardingScreen extends StatelessWidget {
           }
         },
         builder: (context, state) {
-          if (state is OnboardingInitial) {
+          if (state is OnboardingInitial || state is! OnboardingInProgress) {
             return const Scaffold(
               body: Center(
                 child: CircularProgressIndicator(),
@@ -56,37 +56,52 @@ class OnboardingScreen extends StatelessWidget {
             );
           }
 
-          if (state is! OnboardingInProgress) {
-            return const Scaffold(
-              body: Center(
-                child: CircularProgressIndicator(),
-              ),
-            );
-          }
-
+          final Widget stepWidget;
           // Return the appropriate screen based on current step
           switch (state.currentStep) {
             case OnboardingStep.basicInfo:
-              return const Step1BasicInfoScreen();
+              stepWidget = const Step1BasicInfoScreen();
             case OnboardingStep.photos:
-              return const Step2PhotoUploadScreen();
+              stepWidget = const Step2PhotoUploadScreen();
             case OnboardingStep.verification:
-              return const Step3VerificationScreen();
+              stepWidget = const Step3VerificationScreen();
             case OnboardingStep.bio:
-              return const Step3BioScreen();
+              stepWidget = const Step3BioScreen();
             case OnboardingStep.interests:
-              return const Step4InterestsScreen();
+              stepWidget = const Step4InterestsScreen();
             case OnboardingStep.locationLanguage:
-              return const Step5LocationLanguageScreen();
+              stepWidget = const Step5LocationLanguageScreen();
             case OnboardingStep.voice:
-              return const Step6VoiceRecordingScreen();
+              stepWidget = const Step6VoiceRecordingScreen();
             case OnboardingStep.personality:
-              return const Step7PersonalityQuizScreen();
+              stepWidget = const Step7PersonalityQuizScreen();
             case OnboardingStep.socialLinks:
-              return const Step9SocialLinksScreen();
+              stepWidget = const Step9SocialLinksScreen();
             case OnboardingStep.preview:
-              return const Step8ProfilePreviewScreen();
+              stepWidget = const Step8ProfilePreviewScreen();
           }
+
+          return AnimatedSwitcher(
+            duration: const Duration(milliseconds: 500),
+            switchInCurve: Curves.easeOutCubic,
+            switchOutCurve: Curves.easeInCubic,
+            transitionBuilder: (Widget child, Animation<double> animation) {
+              return FadeTransition(
+                opacity: animation,
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0.1, 0),
+                    end: Offset.zero,
+                  ).animate(animation),
+                  child: child,
+                ),
+              );
+            },
+            child: KeyedSubtree(
+              key: ValueKey(state.currentStep),
+              child: stepWidget,
+            ),
+          );
         },
       ),
     );

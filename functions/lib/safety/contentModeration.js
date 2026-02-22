@@ -40,7 +40,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.detectScam = exports.detectFakeProfile = exports.detectSpam = exports.moderateText = exports.moderatePhoto = void 0;
+exports.moderateChatImage = exports.detectScam = exports.detectFakeProfile = exports.detectSpam = exports.moderateText = exports.moderatePhoto = void 0;
 const functions = __importStar(require("firebase-functions"));
 const admin = __importStar(require("firebase-admin"));
 const vision_1 = __importDefault(require("@google-cloud/vision"));
@@ -67,19 +67,52 @@ exports.moderatePhoto = functions.https.onCall(async (data, context) => {
         // Detect faces
         const [faceResult] = await visionClient.faceDetection(photoUrl);
         const faces = faceResult.faceAnnotations || [];
-        // Evaluate safety
+        // Evaluate safety — ZERO TOLERANCE for nudity / adult / racy content
         const violations = [];
         let isApproved = true;
-        // Check adult content
-        if (safeSearch.adult === 'LIKELY' || safeSearch.adult === 'VERY_LIKELY') {
+        // Check adult content — block at POSSIBLE and above
+        if (safeSearch.adult === 'POSSIBLE' ||
+            safeSearch.adult === 'LIKELY' ||
+            safeSearch.adult === 'VERY_LIKELY') {
             violations.push({
                 type: 'nudity',
-                confidence: safeSearch.adult === 'VERY_LIKELY' ? 0.9 : 0.7,
-                reason: 'Adult content detected',
+                confidence: safeSearch.adult === 'VERY_LIKELY' ? 0.95 :
+                    safeSearch.adult === 'LIKELY' ? 0.8 : 0.6,
+                reason: 'Adult/nude content detected',
                 severity: 'critical',
             });
             isApproved = false;
         }
+        // Check racy content — block at POSSIBLE and above
+        if (safeSearch.racy === 'POSSIBLE' ||
+            safeSearch.racy === 'LIKELY' ||
+            safeSearch.racy === 'VERY_LIKELY') {
+            violations.push({
+                type: 'nudity',
+                confidence: safeSearch.racy === 'VERY_LIKELY' ? 0.95 :
+                    safeSearch.racy === 'LIKELY' ? 0.8 : 0.6,
+                reason: 'Racy/suggestive content detected',
+                severity: 'critical',
+            });
+            isApproved = false;
+        }
+        // Check for nudity-related labels — block explicitly
+        const nudityLabels = [
+            'nudity', 'nude', 'naked', 'topless', 'underwear',
+            'lingerie', 'bikini', 'swimwear', 'bra', 'cleavage',
+            'shirtless', 'bare skin', 'skin exposure',
+        ];
+        labels.forEach((label) => {
+            if (nudityLabels.some((nudityLabel) => label.description.toLowerCase().includes(nudityLabel)) && (label.score || 0) > 0.5) {
+                violations.push({
+                    type: 'nudity',
+                    confidence: label.score || 0.7,
+                    reason: `Nudity-related content detected: ${label.description}`,
+                    severity: 'critical',
+                });
+                isApproved = false;
+            }
+        });
         // Check violence
         if (safeSearch.violence === 'LIKELY' ||
             safeSearch.violence === 'VERY_LIKELY') {
@@ -549,6 +582,88 @@ exports.detectScam = functions.https.onCall(async (data, context) => {
     catch (error) {
         console.error('Error detecting scam:', error);
         throw new functions.https.HttpsError('internal', error.message);
+    }
+});
+/**
+ * Moderate Chat Image — callable from frontend before sending
+ * Validates any image (chat, private album, etc.) for nudity/explicit content
+ * Returns approval status so the client can block sending
+ */
+exports.moderateChatImage = functions.https.onCall(async (data, context) => {
+    var _a;
+    if (!context.auth) {
+        throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    }
+    const { imageUrl, userId, context: imageContext } = data;
+    try {
+        // Perform safe search detection
+        const [result] = await visionClient.safeSearchDetection(imageUrl);
+        const safeSearch = result.safeSearchAnnotation;
+        const violations = [];
+        let isApproved = true;
+        // ZERO TOLERANCE: Block adult content at POSSIBLE and above
+        if (safeSearch.adult === 'POSSIBLE' ||
+            safeSearch.adult === 'LIKELY' ||
+            safeSearch.adult === 'VERY_LIKELY') {
+            violations.push({
+                type: 'nudity',
+                reason: 'Adult/nude content detected',
+                severity: 'critical',
+            });
+            isApproved = false;
+        }
+        // ZERO TOLERANCE: Block racy content at POSSIBLE and above
+        if (safeSearch.racy === 'POSSIBLE' ||
+            safeSearch.racy === 'LIKELY' ||
+            safeSearch.racy === 'VERY_LIKELY') {
+            violations.push({
+                type: 'nudity',
+                reason: 'Racy/suggestive content detected',
+                severity: 'critical',
+            });
+            isApproved = false;
+        }
+        // If rejected, log and delete the image from storage
+        if (!isApproved) {
+            console.warn(`Chat image rejected for user ${userId}: ${violations.map(v => v.reason).join(', ')}`);
+            // Delete the uploaded image from Firebase Storage
+            try {
+                const bucket = admin.storage().bucket();
+                const urlPath = new URL(imageUrl).pathname;
+                // Extract the file path from the download URL
+                const filePath = decodeURIComponent(((_a = urlPath.split('/o/')[1]) === null || _a === void 0 ? void 0 : _a.split('?')[0]) || '');
+                if (filePath) {
+                    await bucket.file(filePath).delete().catch(() => { });
+                }
+            }
+            catch (deleteError) {
+                console.error('Failed to delete rejected chat image:', deleteError);
+            }
+            // Add to moderation queue
+            await createModerationQueueEntry({
+                itemType: 'flaggedContent',
+                itemId: `chat_${userId}_${Date.now()}`,
+                userId,
+                priority: 'high',
+                metadata: {
+                    contentType: imageContext || 'chat_image',
+                    violations,
+                    imageUrl,
+                },
+            });
+        }
+        return {
+            isApproved,
+            violations,
+        };
+    }
+    catch (error) {
+        console.error('Error moderating chat image:', error);
+        // On moderation error, reject to be safe (fail-closed)
+        return {
+            isApproved: false,
+            violations: [{ type: 'error', reason: 'Moderation check failed', severity: 'high' }],
+        };
     }
 });
 /**

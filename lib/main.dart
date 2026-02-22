@@ -50,6 +50,8 @@ import 'features/admin/presentation/screens/gamification_management_screen.dart'
 import 'features/chat/presentation/screens/support_tickets_list_screen.dart';
 import 'features/chat/presentation/screens/support_chat_screen.dart';
 import 'features/notifications/domain/repositories/notification_repository.dart';
+import 'core/services/push_notification_service.dart';
+import 'core/constants/app_colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -192,6 +194,10 @@ void main() async {
   // Initialize version check service
   await versionCheck.initialize();
   debugPrint('✓ Version check initialized');
+
+  // Initialize push notification service (FCM handlers)
+  await pushNotificationService.initialize();
+  debugPrint('✓ Push notification service initialized');
 
   // Load saved language before app starts (prevents flicker)
   final prefs = await SharedPreferences.getInstance();
@@ -379,6 +385,7 @@ class AuthWrapper extends StatefulWidget {
 class _AuthWrapperState extends State<AuthWrapper> {
   bool _hasCheckedVersion = false;
   bool _isCheckingAccess = false;
+  bool _notificationPromptShown = false;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
 
@@ -449,6 +456,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
               _accessData = correctedData;
               _isCheckingAccess = false;
             });
+            // Prompt for notifications after frame renders
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              _maybeShowNotificationPrompt(userId);
+            });
           }
           return;
         }
@@ -457,6 +468,9 @@ class _AuthWrapperState extends State<AuthWrapper> {
           setState(() {
             _accessData = accessData;
             _isCheckingAccess = false;
+          });
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _maybeShowNotificationPrompt(userId);
           });
         }
         return;
@@ -467,6 +481,13 @@ class _AuthWrapperState extends State<AuthWrapper> {
           _accessData = accessData;
           _isCheckingAccess = false;
         });
+        // Show notification prompt for approved non-admin users
+        if (accessData != null &&
+            accessData.approvalStatus == ApprovalStatus.approved) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _maybeShowNotificationPrompt(userId);
+          });
+        }
       }
     } catch (e) {
       debugPrint('🔑 Access check error: $e');
@@ -483,6 +504,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     context.read<AuthBloc>().add(AuthSignOutRequested());
     setState(() {
       _accessData = null;
+      _notificationPromptShown = false;
     });
   }
 
@@ -529,6 +551,105 @@ class _AuthWrapperState extends State<AuthWrapper> {
       ..add(AuthCheckAccessStatusRequested());
   }
 
+  /// Show a one-time styled notification permission dialog for approved users
+  /// who haven't been asked yet (skips WaitingScreen prompt path).
+  Future<void> _maybeShowNotificationPrompt(String userId) async {
+    if (_notificationPromptShown) return;
+    _notificationPromptShown = true;
+
+    try {
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .get();
+      if (!userDoc.exists) return;
+
+      final data = userDoc.data()!;
+      final notificationsEnabled = data['notificationsEnabled'] == true;
+      final permissionAsked = data['notificationPermissionAsked'] == true;
+
+      // Already enabled or already asked — nothing to do
+      if (notificationsEnabled || permissionAsked) return;
+      if (!mounted) return;
+
+      // Show the styled dialog
+      final enable = await showDialog<bool>(
+        context: context,
+        barrierDismissible: false,
+        builder: (ctx) => Dialog(
+          backgroundColor: AppColors.charcoal,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: const BorderSide(color: AppColors.richGold, width: 1.5),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.notifications_active,
+                    color: AppColors.richGold, size: 48),
+                const SizedBox(height: 16),
+                const Text(
+                  'Stay Connected',
+                  style: TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                const Text(
+                  'Enable notifications to know when you get matches, messages, and super likes.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 15,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: AppColors.deepBlack,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    onPressed: () => Navigator.of(ctx).pop(true),
+                    child: const Text('Enable',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16)),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(false),
+                  child: const Text('Not Now',
+                      style: TextStyle(color: AppColors.textTertiary)),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+
+      // Mark as asked regardless of choice
+      await FirebaseFirestore.instance.collection('users').doc(userId).update({
+        'notificationPermissionAsked': true,
+      });
+
+      if (enable == true) {
+        _handleEnableNotifications();
+      }
+    } catch (e) {
+      debugPrint('⚠ Notification prompt error: $e');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
@@ -547,6 +668,22 @@ class _AuthWrapperState extends State<AuthWrapper> {
           // Load user's saved language from Firestore
           if (context.mounted) {
             context.read<LanguageProvider>().loadFromDatabase();
+          }
+          // Save FCM token to Firestore on each login (ensures token is always fresh)
+          try {
+            final notificationRepo = di.sl<NotificationRepository>();
+            final tokenResult = await notificationRepo.getFCMToken();
+            tokenResult.fold(
+              (_) {},
+              (token) async {
+                if (token != null) {
+                  await notificationRepo.saveFCMToken(state.user.uid, token);
+                  debugPrint('✓ FCM token saved for ${state.user.uid}');
+                }
+              },
+            );
+          } catch (e) {
+            debugPrint('⚠ FCM token save failed: $e');
           }
         }
         // When user signs out, reset access state to prevent stuck splash

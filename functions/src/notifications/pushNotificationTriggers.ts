@@ -3,7 +3,8 @@
  * Auto-send push notifications when likes, matches, and messages are created
  */
 
-import { onDocumentCreated } from 'firebase-functions/v2/firestore';
+import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 import { logInfo, logError } from '../shared/utils';
 
@@ -295,6 +296,200 @@ export const onNewMessagePush = onDocumentCreated(
       );
     } catch (error) {
       logError('onNewMessagePush: Error', error);
+    }
+  },
+);
+
+/**
+ * onSupportMessagePush - Trigger on support_messages/{msgId} create
+ * Notifies user when admin replies, and admin when user sends a message
+ */
+export const onSupportMessagePush = onDocumentCreated(
+  {
+    document: 'support_messages/{msgId}',
+    memory: '256MiB',
+  },
+  async (event) => {
+    try {
+      const data = event.data?.data();
+      if (!data) return;
+
+      const senderType = data.senderType; // 'admin' or 'user'
+      const conversationId = data.conversationId;
+
+      if (!conversationId) {
+        logError('onSupportMessagePush: Missing conversationId');
+        return;
+      }
+
+      // Read the support_chats document to get user/admin info
+      const chatDoc = await db.collection('support_chats').doc(conversationId).get();
+      if (!chatDoc.exists) {
+        logError(`onSupportMessagePush: support_chats/${conversationId} not found`);
+        return;
+      }
+
+      const chatData = chatDoc.data()!;
+
+      if (senderType === 'admin') {
+        // Admin replied → notify the user
+        const userId = chatData.userId;
+        if (!userId) {
+          logError('onSupportMessagePush: No userId in support_chats doc');
+          return;
+        }
+
+        await sendPushToUser(
+          userId,
+          'supportReply',
+          'Support replied to your ticket',
+          data.text || 'You have a new reply from support.',
+          { conversationId },
+        );
+      } else if (senderType === 'user') {
+        // User sent a message → notify the assigned agent
+        const agentId = chatData.supportAgentId || chatData.assignedTo;
+        if (!agentId) {
+          logInfo('onSupportMessagePush: No assigned agent for this ticket');
+          return;
+        }
+
+        await sendPushToUser(
+          agentId,
+          'supportMessage',
+          'New message on support ticket',
+          data.text || 'A user sent a new message.',
+          { conversationId },
+        );
+      }
+    } catch (error) {
+      logError('onSupportMessagePush: Error', error);
+    }
+  },
+);
+
+/**
+ * checkExpiringModes - Scheduled every 15 minutes
+ * Warns users whose Incognito or Traveler mode expires within 1 hour
+ */
+export const checkExpiringModes = onSchedule(
+  {
+    schedule: 'every 15 minutes',
+    memory: '256MiB',
+    timeZone: 'UTC',
+  },
+  async () => {
+    try {
+      const now = admin.firestore.Timestamp.now();
+      const oneHourFromNow = admin.firestore.Timestamp.fromMillis(
+        now.toMillis() + 60 * 60 * 1000,
+      );
+
+      // --- Incognito mode expiry warnings ---
+      const incognitoSnap = await db
+        .collection('profiles')
+        .where('isIncognito', '==', true)
+        .where('incognitoExpiry', '>', now)
+        .where('incognitoExpiry', '<=', oneHourFromNow)
+        .get();
+
+      for (const doc of incognitoSnap.docs) {
+        const data = doc.data();
+        if (data.incognitoWarningNotified) continue;
+
+        await sendPushToUser(
+          doc.id,
+          'modeExpiry',
+          'Incognito Mode Expiring Soon',
+          'Your Incognito Mode expires in less than 1 hour!',
+        );
+
+        await doc.ref.update({ incognitoWarningNotified: true });
+        logInfo(`checkExpiringModes: Warned ${doc.id} about incognito expiry`);
+      }
+
+      // --- Traveler mode expiry warnings ---
+      const travelerSnap = await db
+        .collection('profiles')
+        .where('isTraveler', '==', true)
+        .where('travelerExpiry', '>', now)
+        .where('travelerExpiry', '<=', oneHourFromNow)
+        .get();
+
+      for (const doc of travelerSnap.docs) {
+        const data = doc.data();
+        if (data.travelerWarningNotified) continue;
+
+        await sendPushToUser(
+          doc.id,
+          'modeExpiry',
+          'Traveler Mode Expiring Soon',
+          'Your Traveler Mode expires in less than 1 hour!',
+        );
+
+        await doc.ref.update({ travelerWarningNotified: true });
+        logInfo(`checkExpiringModes: Warned ${doc.id} about traveler expiry`);
+      }
+    } catch (error) {
+      logError('checkExpiringModes: Error', error);
+    }
+  },
+);
+
+/**
+ * onVerificationStatusChange - Trigger on profiles/{userId} update
+ * Sends notification when verificationStatus changes (approved, needsResubmission, rejected)
+ */
+export const onVerificationStatusChange = onDocumentUpdated(
+  {
+    document: 'profiles/{userId}',
+    memory: '256MiB',
+  },
+  async (event) => {
+    try {
+      const beforeData = event.data?.before?.data();
+      const afterData = event.data?.after?.data();
+      if (!beforeData || !afterData) return;
+
+      const beforeStatus = beforeData.verificationStatus;
+      const afterStatus = afterData.verificationStatus;
+
+      // Only act when verificationStatus actually changed
+      if (beforeStatus === afterStatus) return;
+
+      const userId = event.params.userId;
+      const reason = afterData.verificationReason || afterData.verificationNote || '';
+
+      if (afterStatus === 'approved') {
+        await sendPushToUser(
+          userId,
+          'verification',
+          'Profile Verified!',
+          'Your profile has been verified! You now have a verified badge.',
+        );
+      } else if (afterStatus === 'needsResubmission') {
+        const body = reason
+          ? `Please submit a new verification photo. Reason: ${reason}`
+          : 'Please submit a new verification photo.';
+        await sendPushToUser(
+          userId,
+          'verification',
+          'New Verification Photo Needed',
+          body,
+        );
+      } else if (afterStatus === 'rejected') {
+        const body = reason
+          ? `Your verification was not approved. Reason: ${reason}`
+          : 'Your verification was not approved. Please try again.';
+        await sendPushToUser(
+          userId,
+          'verification',
+          'Verification Update',
+          body,
+        );
+      }
+    } catch (error) {
+      logError('onVerificationStatusChange: Error', error);
     }
   },
 );

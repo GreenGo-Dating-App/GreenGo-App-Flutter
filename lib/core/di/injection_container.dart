@@ -11,6 +11,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:local_auth/local_auth.dart';
 
 import '../config/app_config.dart';
+import '../services/blocked_users_service.dart';
+import '../services/candidate_pool_service.dart';
 
 // Authentication
 import '../../features/authentication/data/datasources/auth_remote_data_source.dart';
@@ -248,7 +250,17 @@ Future<void> init() async {
       firestore: sl(),
       featureEngineer: sl(),
       compatibilityScorer: sl(),
+      candidatePoolService: sl(),
     ),
+  );
+
+  //! Core Services
+  sl.registerLazySingleton<BlockedUsersService>(
+    () => BlockedUsersService(firestore: sl()),
+  );
+
+  sl.registerLazySingleton<CandidatePoolService>(
+    () => CandidatePoolService(firestore: sl()),
   );
 
   //! Features - Discovery
@@ -287,6 +299,7 @@ Future<void> init() async {
     () => DiscoveryRemoteDataSourceImpl(
       firestore: sl(),
       matchingDataSource: sl(),
+      blockedUsersService: sl(),
     ),
   );
 
@@ -347,7 +360,10 @@ Future<void> init() async {
 
   // Data sources
   sl.registerLazySingleton<ChatRemoteDataSource>(
-    () => ChatRemoteDataSourceImpl(firestore: sl()),
+    () => ChatRemoteDataSourceImpl(
+      firestore: sl(),
+      blockedUsersService: sl(),
+    ),
   );
 
   //! Features - Notifications

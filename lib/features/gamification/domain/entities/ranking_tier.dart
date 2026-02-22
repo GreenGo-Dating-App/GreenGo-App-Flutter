@@ -312,7 +312,7 @@ class RankingTiers {
             iconName: 'priority_high',
           ),
         ],
-        colorValue: 0xFFE5E4E2,
+        colorValue: 0xFF81D4FA,
       );
 
   // Diamond Tiers
@@ -548,7 +548,7 @@ extension RankDivisionExtension on RankDivision {
       case RankDivision.gold:
         return 0xFFFFD700;
       case RankDivision.platinum:
-        return 0xFFE5E4E2;
+        return 0xFF81D4FA;
       case RankDivision.diamond:
         return 0xFFB9F2FF;
       case RankDivision.master:

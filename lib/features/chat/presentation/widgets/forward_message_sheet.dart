@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../domain/entities/message.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
 
@@ -67,7 +69,10 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
   @override
   void initState() {
     super.initState();
-    _chatDataSource = ChatRemoteDataSourceImpl(firestore: _firestore);
+    _chatDataSource = ChatRemoteDataSourceImpl(
+      firestore: _firestore,
+      blockedUsersService: di.sl<BlockedUsersService>(),
+    );
     _loadConversations();
     _searchController.addListener(_filterConversations);
   }
