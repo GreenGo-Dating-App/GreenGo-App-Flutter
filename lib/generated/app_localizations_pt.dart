@@ -2240,11 +2240,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get photoExplicitNudity =>
-      'Esta foto parece conter nudez ou conteúdo explícito. As fotos públicas devem ser apropriadas e completamente vestidas.';
+      'Esta foto parece conter nudez ou conteúdo explícito. Todas as fotos na app devem ser apropriadas e com roupa adequada.';
 
   @override
   String get photoExplicitContent =>
-      'Esta foto pode conter conteúdo inapropriado. As fotos públicas não devem mostrar nudez, roupa interior ou conteúdo explícito.';
+      'Esta foto pode conter conteúdo inapropriado. As fotos na app não devem mostrar nudez, roupa interior ou conteúdo explícito.';
 
   @override
   String get photoTooMuchSkin =>
@@ -2252,7 +2252,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get photoNotAllowedPublic =>
-      'Esta foto não é permitida no teu perfil público.';
+      'Esta foto não é permitida em nenhum lugar da app.';
 
   @override
   String get photoTooLarge =>
@@ -2329,7 +2329,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shopYearly => 'Anual';
 
   @override
-  String get shopSavePercent => 'POUPA ~17%';
+  String shopSavePercent(String percent) {
+    return 'POUPA $percent%';
+  }
 
   @override
   String get shopUpgradeAndSave =>
@@ -4730,11 +4732,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get photoExplicitNudity =>
-      'Esta foto parece conter nudez ou conteúdo explícito. Fotos públicas devem ser apropriadas e com roupas completas.';
+      'Esta foto parece conter nudez ou conteúdo explícito. Todas as fotos no app devem ser apropriadas e com roupas adequadas.';
 
   @override
   String get photoExplicitContent =>
-      'Esta foto pode conter conteúdo inapropriado. Fotos públicas não devem mostrar nudez, roupas íntimas ou conteúdo explícito.';
+      'Esta foto pode conter conteúdo inapropriado. Fotos no app não devem mostrar nudez, roupas íntimas ou conteúdo explícito.';
 
   @override
   String get photoTooMuchSkin =>
@@ -4742,7 +4744,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get photoNotAllowedPublic =>
-      'Esta foto não é permitida no seu perfil público.';
+      'Esta foto não é permitida em nenhum lugar do app.';
 
   @override
   String get photoTooLarge =>
@@ -4819,7 +4821,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get shopYearly => 'Anual';
 
   @override
-  String get shopSavePercent => 'ECONOMIZE ~17%';
+  String shopSavePercent(String percent) {
+    return 'ECONOMIZE $percent%';
+  }
 
   @override
   String get shopUpgradeAndSave =>

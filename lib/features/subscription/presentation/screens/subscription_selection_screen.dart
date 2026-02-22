@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../domain/entities/subscription.dart';
 import '../bloc/subscription_bloc.dart';
@@ -228,16 +229,16 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
                       // Yearly Memberships (Save XX%)
                       if (yearlyProducts.isNotEmpty) ...[
-                        const Text(
-                          'Yearly Memberships (Save ~17%)',
-                          style: TextStyle(
+                        Text(
+                          'Yearly Memberships (Save up to ${SubscriptionTier.platinum.yearlySavingsPercent.toStringAsFixed(0)}%)',
+                          style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFD4AF37),
                           ),
                         ),
                         const Text(
-                          'Best value - equivalent to 2 months free!',
+                          'Best value for long-term commitment!',
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.white70,
@@ -452,9 +453,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               color: const Color(0xFFD4AF37),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Text(
-                              'SAVE ~17%',
-                              style: TextStyle(
+                            child: Text(
+                              'SAVE ${_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)}%',
+                              style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
@@ -612,10 +613,11 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
   }
 
   Color _getTierColor(String productId) {
-    if (productId.contains('platinum')) return Colors.blueGrey[300]!;
+    if (productId.contains('platinum')) return AppColors.platinumBlue;
     if (productId.contains('gold')) return const Color(0xFFD4AF37);
     if (productId.contains('silver')) return Colors.grey[400]!;
-    return Colors.green;
+    if (productId.contains('base')) return AppColors.basePurple;
+    return AppColors.basePurple;
   }
 
   SubscriptionTier _getTierFromProductId(String productId) {

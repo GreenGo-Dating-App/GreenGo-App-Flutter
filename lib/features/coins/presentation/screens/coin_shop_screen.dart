@@ -715,7 +715,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   ],
                 ),
                 child: const Center(
-                  child: Text('👑', style: TextStyle(fontSize: 40)),
+                  child: Icon(Icons.diamond_rounded, size: 42, color: Colors.black),
                 ),
               ),
               const SizedBox(height: 16),
@@ -817,7 +817,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Text(
-                                  AppLocalizations.of(context)!.shopSavePercent,
+                                  AppLocalizations.of(context)!.shopSavePercent(SubscriptionTier.platinum.yearlySavingsPercent.toStringAsFixed(0)),
                                   style: const TextStyle(
                                     fontSize: 9,
                                     fontWeight: FontWeight.bold,
@@ -1054,13 +1054,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            const Color(0xFF4CAF50).withValues(alpha: 0.2),
-            const Color(0xFF2E7D32).withValues(alpha: 0.1),
+            AppColors.basePurple.withValues(alpha: 0.2),
+            AppColors.basePurpleDark.withValues(alpha: 0.1),
           ],
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isActive ? const Color(0xFF4CAF50) : AppColors.richGold,
+          color: isActive ? AppColors.basePurple : AppColors.basePurple,
           width: 2,
         ),
       ),
@@ -1078,13 +1078,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     shape: BoxShape.circle,
                     gradient: LinearGradient(
                       colors: [
-                        const Color(0xFF4CAF50),
-                        const Color(0xFF4CAF50).withValues(alpha: 0.6),
+                        AppColors.basePurple,
+                        AppColors.basePurple.withValues(alpha: 0.6),
                       ],
                     ),
                   ),
                   child: const Center(
-                    child: Text('🌿', style: TextStyle(fontSize: 24)),
+                    child: Icon(Icons.verified_rounded, size: 28, color: Colors.white),
                   ),
                 ),
                 const SizedBox(width: 16),
@@ -1114,7 +1114,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF4CAF50),
+                      color: AppColors.basePurple,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
@@ -1139,7 +1139,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 AppLocalizations.of(context)!.shopValidUntil('${_baseMembershipEndDate!.day.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.month.toString().padLeft(2, '0')}/${_baseMembershipEndDate!.year}'),
                 style: const TextStyle(
                   fontSize: 13,
-                  color: Color(0xFF4CAF50),
+                  color: AppColors.basePurple,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -1151,7 +1151,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 child: ElevatedButton(
                   onPressed: _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF4CAF50),
+                    backgroundColor: AppColors.basePurple,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
@@ -1248,7 +1248,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         tierColor = const Color(0xFFFFD700);
         break;
       case SubscriptionTier.platinum:
-        tierColor = const Color(0xFFE5E4E2);
+        tierColor = AppColors.platinumBlue;
         break;
       default:
         tierColor = Colors.grey;

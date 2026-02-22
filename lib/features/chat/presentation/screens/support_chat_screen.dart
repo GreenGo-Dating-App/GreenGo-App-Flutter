@@ -15,11 +15,13 @@ import '../../../../core/constants/app_colors.dart';
 class SupportChatScreen extends StatefulWidget {
   final String conversationId;
   final String currentUserId;
+  final bool isAdmin;
 
   const SupportChatScreen({
     super.key,
     required this.conversationId,
     required this.currentUserId,
+    this.isAdmin = false,
   });
 
   @override
@@ -168,23 +170,26 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
   Future<void> _markAsRead() async {
     try {
-      // Mark messages as read by user
+      // Mark messages as read by the current viewer
+      final senderTypeToMark = widget.isAdmin ? 'user' : 'admin';
+      final readField = widget.isAdmin ? 'readByAdmin' : 'readByUser';
+
       final messagesSnapshot = await _firestore
           .collection('support_messages')
           .where('conversationId', isEqualTo: widget.conversationId)
-          .where('senderType', isEqualTo: 'admin')
-          .where('readByUser', isEqualTo: false)
+          .where('senderType', isEqualTo: senderTypeToMark)
+          .where(readField, isEqualTo: false)
           .get();
 
       for (final doc in messagesSnapshot.docs) {
-        await doc.reference.update({'readByUser': true});
+        await doc.reference.update({readField: true});
       }
 
       // Reset unread count
       await _firestore
           .collection('support_chats')
           .doc(widget.conversationId)
-          .update({'unreadCount': 0});
+          .update({widget.isAdmin ? 'adminUnreadCount' : 'unreadCount': 0});
     } catch (e) {
       debugPrint('Error marking messages as read: $e');
     }
@@ -271,16 +276,16 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       await messageRef.set({
         'conversationId': widget.conversationId,
         'senderId': widget.currentUserId,
-        'senderType': 'user',
-        'senderName': userData['displayName'] ?? 'User',
+        'senderType': widget.isAdmin ? 'admin' : 'user',
+        'senderName': userData['displayName'] ?? (widget.isAdmin ? 'Support' : 'User'),
         'senderAvatar': userData['photoUrls']?.isNotEmpty == true
             ? userData['photoUrls'][0]
             : null,
         'content': content,
         'messageType': messageType,
         if (finalImageUrl != null) 'imageUrl': finalImageUrl,
-        'readByAdmin': false,
-        'readByUser': true,
+        'readByAdmin': widget.isAdmin ? true : false,
+        'readByUser': widget.isAdmin ? false : true,
         'createdAt': now,
       });
 
@@ -299,7 +304,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       await conversationRef.update({
         'lastMessage': lastMessagePreview,
         'lastMessageAt': now,
-        'lastMessageBy': 'user',
+        'lastMessageBy': widget.isAdmin ? 'admin' : 'user',
         'messageCount': currentMessageCount + 1,
         'updatedAt': now,
         'status': 'open', // Reopen if it was pending
@@ -694,7 +699,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                         }
 
                         final messageData = allMessages[index].data() as Map<String, dynamic>;
-                        final isMe = messageData['senderType'] == 'user';
+                        final isMe = messageData['senderId'] == widget.currentUserId;
                         final isSystem = messageData['messageType'] == 'system';
                         final isTicketStart = messageData['isTicketStart'] == true ||
                             messageData['messageType'] == 'ticket_creation';
