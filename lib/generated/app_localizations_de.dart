@@ -2250,11 +2250,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get photoExplicitNudity =>
-      'Dieses Foto scheint Nacktheit oder explizite Inhalte zu enthalten. Öffentliche Fotos müssen angemessen und vollständig bekleidet sein.';
+      'Dieses Foto scheint Nacktheit oder explizite Inhalte zu enthalten. Alle Fotos in der App müssen angemessen und vollständig bekleidet sein.';
 
   @override
   String get photoExplicitContent =>
-      'Dieses Foto könnte unangemessene Inhalte enthalten. Öffentliche Fotos dürfen keine Nacktheit, Unterwäsche oder explizite Inhalte zeigen.';
+      'Dieses Foto könnte unangemessene Inhalte enthalten. Fotos in der App dürfen keine Nacktheit, Unterwäsche oder explizite Inhalte zeigen.';
 
   @override
   String get photoTooMuchSkin =>
@@ -2262,7 +2262,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get photoNotAllowedPublic =>
-      'Dieses Foto ist auf deinem öffentlichen Profil nicht erlaubt.';
+      'Dieses Foto ist in der App nicht erlaubt.';
 
   @override
   String get photoTooLarge => 'Foto ist zu groß. Maximale Größe beträgt 10 MB.';
@@ -2338,7 +2338,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get shopYearly => 'Jährlich';
 
   @override
-  String get shopSavePercent => 'SPARE ~17%';
+  String shopSavePercent(String percent) {
+    return 'SPARE $percent%';
+  }
 
   @override
   String get shopUpgradeAndSave => 'Upgrade & Spare! Rabatt auf höhere Stufen';

@@ -4082,13 +4082,13 @@ abstract class AppLocalizations {
   /// No description provided for @photoExplicitNudity.
   ///
   /// In en, this message translates to:
-  /// **'This photo appears to contain nudity or explicit content. Public photos must be appropriate and fully clothed.'**
+  /// **'This photo appears to contain nudity or explicit content. All photos must be appropriate and fully clothed.'**
   String get photoExplicitNudity;
 
   /// No description provided for @photoExplicitContent.
   ///
   /// In en, this message translates to:
-  /// **'This photo may contain inappropriate content. Public photos must not show nudity, underwear, or explicit content.'**
+  /// **'This photo contains inappropriate content. Nudity, underwear, and explicit content are not allowed anywhere in the app.'**
   String get photoExplicitContent;
 
   /// No description provided for @photoTooMuchSkin.
@@ -4100,7 +4100,7 @@ abstract class AppLocalizations {
   /// No description provided for @photoNotAllowedPublic.
   ///
   /// In en, this message translates to:
-  /// **'This photo is not allowed on your public profile.'**
+  /// **'This photo is not allowed. All photos must be appropriate.'**
   String get photoNotAllowedPublic;
 
   /// No description provided for @photoTooLarge.
@@ -4232,8 +4232,8 @@ abstract class AppLocalizations {
   /// No description provided for @shopSavePercent.
   ///
   /// In en, this message translates to:
-  /// **'SAVE ~17%'**
-  String get shopSavePercent;
+  /// **'SAVE {percent}%'**
+  String shopSavePercent(String percent);
 
   /// No description provided for @shopUpgradeAndSave.
   ///

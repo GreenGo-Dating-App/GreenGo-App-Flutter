@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:uuid/uuid.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/message_report.dart';
 import '../../data/datasources/reports_admin_remote_datasource.dart';
 import '../../../chat/domain/entities/message.dart';
+import '../../../chat/presentation/screens/support_chat_screen.dart';
 
 /// Reports Admin Screen
 ///
@@ -270,6 +272,11 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                   ),
                 ),
                 const SizedBox(width: 8),
+                IconButton(
+                  onPressed: () => _chatWithReporter(report),
+                  icon: const Icon(Icons.chat, color: AppColors.richGold),
+                  tooltip: 'Chat with Reporter',
+                ),
                 if (report.status == ReportStatus.pending) ...[
                   IconButton(
                     onPressed: () => _dismissReport(report),
@@ -356,6 +363,93 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         );
       },
     );
+  }
+
+  Future<void> _chatWithReporter(MessageReport report) async {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => const Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
+      ),
+    );
+
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Check for existing support chat with this reportId
+      final existingChats = await firestore
+          .collection('support_chats')
+          .where('reportId', isEqualTo: report.reportId)
+          .limit(1)
+          .get();
+
+      String conversationId;
+
+      if (existingChats.docs.isNotEmpty) {
+        conversationId = existingChats.docs.first.id;
+      } else {
+        // Create new support chat for this report
+        conversationId = const Uuid().v4();
+        final now = FieldValue.serverTimestamp();
+
+        await firestore.collection('support_chats').doc(conversationId).set({
+          'reportId': report.reportId,
+          'userId': report.reporterId,
+          'supportAgentId': widget.adminId,
+          'assignedTo': widget.adminId,
+          'subject': 'Report Follow-up: ${report.reason}',
+          'category': 'report_followup',
+          'status': 'open',
+          'createdAt': now,
+          'updatedAt': now,
+          'lastMessage': 'Report follow-up conversation started',
+          'lastMessageAt': now,
+          'lastMessageBy': 'system',
+          'messageCount': 1,
+          'unreadCount': 0,
+          'adminUnreadCount': 0,
+        });
+
+        // Create initial system message with report context
+        await firestore.collection('support_messages').doc().set({
+          'conversationId': conversationId,
+          'senderId': 'system',
+          'senderType': 'system',
+          'senderName': 'System',
+          'content': 'Report Follow-up\n\n'
+              'Reason: ${report.reason}\n'
+              'Reported message: "${report.messageContent}"\n'
+              'Reported user: ${report.reportedUserId.substring(0, 8)}...\n'
+              'Reported at: ${_formatDate(report.reportedAt)}',
+          'messageType': 'system',
+          'isTicketStart': true,
+          'readByAdmin': true,
+          'readByUser': false,
+          'createdAt': now,
+        });
+      }
+
+      if (!mounted) return;
+      Navigator.pop(context); // Close loading
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => SupportChatScreen(
+            conversationId: conversationId,
+            currentUserId: widget.adminId,
+            isAdmin: true,
+          ),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      Navigator.pop(context); // Close loading
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error opening chat: $e')),
+      );
+    }
   }
 
   Future<void> _viewMessageContext(MessageReport report) async {

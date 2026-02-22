@@ -464,6 +464,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
         builder: (context) => SupportChatScreen(
           conversationId: ticketId,
           currentUserId: widget.adminId,
+          isAdmin: true,
         ),
       ),
     );

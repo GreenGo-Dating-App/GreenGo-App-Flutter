@@ -511,6 +511,26 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // SUPPORT CHATS COLLECTION
+    // ============================================================================
+    match /support_chats/{chatId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // SUPPORT MESSAGES COLLECTION
+    // ============================================================================
+    match /support_messages/{messageId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {
