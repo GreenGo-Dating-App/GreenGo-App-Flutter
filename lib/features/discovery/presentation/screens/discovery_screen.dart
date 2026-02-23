@@ -1551,22 +1551,6 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                 child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
               ),
 
-            // Online indicator (use refreshed status if available)
-            if (widget.isOnlineOverride ?? profile.isOnline)
-              Positioned(
-                top: 6,
-                left: 6,
-                child: Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    color: AppColors.successGreen,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white, width: 1.5),
-                  ),
-                ),
-              ),
-
                         // Action overlay (after action confirmed)
             if (widget.actionOverlay == 'liked')
               Positioned.fill(
@@ -1694,6 +1678,29 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                 ),
               ),
             ),
+
+            // Online indicator (rendered above distance badge so it's visible)
+            if (widget.isOnlineOverride ?? profile.isOnline)
+              Positioned(
+                bottom: showText ? 42 : 6,
+                right: 6,
+                child: Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    color: AppColors.successGreen,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white, width: 1.5),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.successGreen.withOpacity(0.5),
+                        blurRadius: 4,
+                        spreadRadius: 1,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
 
             // Name, age, compatibility, and city (2-3 column mode)
             if (showText)
