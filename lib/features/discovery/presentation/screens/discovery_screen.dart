@@ -1774,21 +1774,12 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                       ),
                     ],
                   ),
-                  child: Text(
-                    switch (profile.membershipTier) {
-                      MembershipTier.free => 'B',
-                      MembershipTier.silver => 'S',
-                      MembershipTier.gold => 'G',
-                      MembershipTier.platinum => 'P',
-                      _ => '',
-                    },
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                      color: profile.membershipTier == MembershipTier.gold
-                          ? const Color(0xFF5D4200)
-                          : Colors.white,
-                    ),
+                  child: Icon(
+                    Icons.workspace_premium,
+                    size: 12,
+                    color: profile.membershipTier == MembershipTier.gold
+                        ? const Color(0xFF5D4200)
+                        : Colors.white,
                   ),
                 ),
               ),
