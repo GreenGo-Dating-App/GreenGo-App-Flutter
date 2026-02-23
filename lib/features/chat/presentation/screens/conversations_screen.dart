@@ -337,12 +337,15 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 },
                                 onTap: () async {
                                   // Base membership gate
+                                  final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
                                   final allowed = await BaseMembershipGate.checkAndGate(
                                     context: context,
                                     profile: _currentUserProfile,
                                     userId: widget.userId,
                                   );
                                   if (!allowed) return;
+                                  // Refresh profile after successful purchase so gate won't block again
+                                  if (!wasMember) await _loadCurrentUserProfile();
 
                                   if (profile != null) {
                                     await Navigator.of(context).push(

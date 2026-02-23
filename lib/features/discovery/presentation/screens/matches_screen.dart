@@ -431,12 +431,14 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                               compatibilityPercent: score > 0 ? score : null,
                               onTap: () async {
                                 // Base membership gate
+                                final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
                                 final allowed = await BaseMembershipGate.checkAndGate(
                                   context: context,
                                   profile: _currentUserProfile,
                                   userId: widget.userId,
                                 );
                                 if (!allowed) return;
+                                if (!wasMember) await _loadCurrentUserProfile();
 
                                 // Mark as seen if not seen
                                 if (match.isNewMatch(widget.userId)) {

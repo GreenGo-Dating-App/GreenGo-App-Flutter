@@ -116,22 +116,15 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
           verificationHistory: currentState.verificationHistory,
         )),
         (_) async {
-          // Reload pending verifications
-          final refreshResult = await repository.getPendingVerifications();
-          refreshResult.fold(
-            (failure) => emit(VerificationAdminActionSuccess(
-              pendingVerifications: currentState.pendingVerifications
-                  .where((p) => p.userId != event.userId)
-                  .toList(),
-              verificationHistory: currentState.verificationHistory,
-              message: 'Verification rejected',
-            )),
-            (verifications) => emit(VerificationAdminActionSuccess(
-              pendingVerifications: verifications,
-              verificationHistory: currentState.verificationHistory,
-              message: 'Verification rejected',
-            )),
-          );
+          // Optimistic local removal — don't re-query Firestore since the
+          // write may not have propagated yet (race condition).
+          emit(VerificationAdminActionSuccess(
+            pendingVerifications: currentState.pendingVerifications
+                .where((p) => p.userId != event.userId)
+                .toList(),
+            verificationHistory: currentState.verificationHistory,
+            message: 'Verification rejected',
+          ));
         },
       );
     }

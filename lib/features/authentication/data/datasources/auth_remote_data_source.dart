@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 // Conditional imports - uncomment when enabling features in AppConfig
 // import 'package:google_sign_in/google_sign_in.dart';
@@ -198,6 +199,30 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
       return UserModel.fromFirebaseUser(userCredential.user!);
     } on firebase_auth.FirebaseAuthException catch (e) {
+      if (e.code == 'email-already-in-use') {
+        // Try to clean up orphaned Auth user (no profile in Firestore)
+        try {
+          final result = await FirebaseFunctions.instance
+              .httpsCallable('cleanupOrphanedAuthUser')
+              .call({'email': email});
+          final cleaned = result.data['cleaned'] == true;
+          if (cleaned) {
+            // Orphan removed — retry registration
+            final retryCredential =
+                await firebaseAuth.createUserWithEmailAndPassword(
+              email: email,
+              password: password,
+            );
+            if (retryCredential.user == null) {
+              throw AuthenticationException('Registration failed');
+            }
+            await retryCredential.user!.sendEmailVerification();
+            return UserModel.fromFirebaseUser(retryCredential.user!);
+          }
+        } catch (_) {
+          // Cleanup failed or email belongs to an active account — fall through
+        }
+      }
       throw _handleFirebaseAuthException(e);
     } catch (e) {
       throw AuthenticationException(e.toString());

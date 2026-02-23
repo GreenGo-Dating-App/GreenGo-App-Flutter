@@ -673,6 +673,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         final visibleTo = data['visibleTo'] as List<dynamic>?;
         if (visibleTo != null && visibleTo.isNotEmpty && !visibleTo.contains(uid)) continue;
 
+        // Skip super like conversations
+        final conversationType = data['conversationType'] as String?;
+        if (conversationType == 'superLike') continue;
+
         final unread = (data['unreadCount'] as int?) ?? 0;
         if (unread <= 0) continue;
 
@@ -680,7 +684,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         final lastMsg = data['lastMessage'] as Map<String, dynamic>?;
         final lastSenderId = lastMsg?['senderId'] as String?;
         if (lastSenderId != null && lastSenderId != uid) {
-          count++;
+          count += unread;
         }
       }
       if (mounted && count != _unreadMessageCount) {
@@ -1133,7 +1137,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
                     minHeight: 16,
                   ),
                   child: Text(
-                    unreadCount > 99 ? '99+' : unreadCount.toString(),
+                    unreadCount > 999 ? '999+' : unreadCount.toString(),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 10,
@@ -1225,22 +1229,23 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   Widget _buildBadgeIcon(IconData icon, int count) {
     if (count <= 0) return Icon(icon);
+    final label = count > 999 ? '999+' : '$count';
     return Stack(
       clipBehavior: Clip.none,
       children: [
         Icon(icon),
         Positioned(
-          right: -6,
+          right: -8,
           top: -4,
           child: Container(
-            padding: const EdgeInsets.all(3),
-            decoration: const BoxDecoration(
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            decoration: BoxDecoration(
               color: AppColors.errorRed,
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(10),
             ),
             constraints: const BoxConstraints(minWidth: 16, minHeight: 16),
             child: Text(
-              count > 99 ? '99+' : '$count',
+              label,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 9,

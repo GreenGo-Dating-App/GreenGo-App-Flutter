@@ -22,6 +22,7 @@ class WaitingScreen extends StatefulWidget {
   final UserAccessData? accessData;
   final VoidCallback? onEnableNotifications;
   final VoidCallback? onContactSupport;
+  final VoidCallback? onReverify;
   final VoidCallback? onSignOut;
   final VoidCallback? onRefresh;
 
@@ -30,6 +31,7 @@ class WaitingScreen extends StatefulWidget {
     this.accessData,
     this.onEnableNotifications,
     this.onContactSupport,
+    this.onReverify,
     this.onSignOut,
     this.onRefresh,
   });
@@ -794,6 +796,23 @@ class _WaitingScreenState extends State<WaitingScreen>
           ),
 
         if (status == ApprovalStatus.rejected) ...[
+          const SizedBox(height: 12),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton.icon(
+              onPressed: widget.onReverify,
+              icon: const Icon(Icons.camera_alt, size: 20),
+              label: Text(l10n.reuploadVerification),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.richGold,
+                foregroundColor: Colors.black,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+            ),
+          ),
           const SizedBox(height: 12),
           SizedBox(
             width: double.infinity,

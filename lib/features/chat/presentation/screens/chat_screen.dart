@@ -244,12 +244,15 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _sendMessage(BuildContext _) async {
     // Base membership gate
+    final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(
       context: context,
       profile: _currentUserProfile,
       userId: widget.currentUserId,
     );
     if (!allowed) return;
+    // Refresh profile after successful purchase so gate won't block again
+    if (!wasMember) await _fetchCurrentUserName();
 
     // If album photos are selected, send each as a separate image message
     if (_selectedAlbumPhotos.isNotEmpty) {

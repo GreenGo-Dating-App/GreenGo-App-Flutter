@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
@@ -46,8 +47,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
       }
     } catch (e) {
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         setState(() {
-          _errorMessage = 'Failed to open camera: $e';
+          _errorMessage = '${l10n.reverificationCameraError}: $e';
         });
       }
     }
@@ -99,9 +101,10 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
       }
     } catch (e) {
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         setState(() {
           _isUploading = false;
-          _errorMessage = 'Upload failed. Please try again.';
+          _errorMessage = l10n.reverificationUploadFailed;
         });
       }
     }
@@ -109,6 +112,8 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -118,9 +123,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: _isUploading ? null : () => Navigator.of(context).pop(),
         ),
-        title: const Text(
-          'Identity Verification',
-          style: TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
+        title: Text(
+          l10n.reverificationTitle,
+          style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
         ),
       ),
       body: SafeArea(
@@ -146,9 +151,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
               const SizedBox(height: 24),
 
               // Title
-              const Text(
-                'We need to verify your identity',
-                style: TextStyle(
+              Text(
+                l10n.reverificationHeading,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -158,10 +163,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
               const SizedBox(height: 12),
 
               // Description
-              const Text(
-                'Please take a clear selfie so we can verify your identity. '
-                'Make sure your face is well lit and clearly visible.',
-                style: TextStyle(
+              Text(
+                l10n.reverificationDescription,
+                style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 14,
                 ),
@@ -191,9 +195,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
-                              'Reason for request:',
-                              style: TextStyle(
+                            Text(
+                              l10n.reverificationReasonLabel,
+                              style: const TextStyle(
                                 color: AppColors.errorRed,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13,
@@ -228,14 +232,14 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Row(
+                    Row(
                       children: [
-                        Icon(Icons.lightbulb_outline,
+                        const Icon(Icons.lightbulb_outline,
                             color: AppColors.richGold, size: 20),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Text(
-                          'Photo Tips',
-                          style: TextStyle(
+                          l10n.reverificationPhotoTips,
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontWeight: FontWeight.bold,
                             fontSize: 14,
@@ -244,10 +248,10 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                       ],
                     ),
                     const SizedBox(height: 12),
-                    _tip('Good lighting — face the light source'),
-                    _tip('Look directly at the camera'),
-                    _tip('No sunglasses, hats, or masks'),
-                    _tip('Make sure your full face is visible'),
+                    _tip(l10n.reverificationTipLighting),
+                    _tip(l10n.reverificationTipCamera),
+                    _tip(l10n.reverificationTipNoAccessories),
+                    _tip(l10n.reverificationTipFullFace),
                   ],
                 ),
               ),
@@ -277,9 +281,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                 TextButton.icon(
                   onPressed: _isUploading ? null : _takePhoto,
                   icon: const Icon(Icons.refresh, color: AppColors.richGold),
-                  label: const Text(
-                    'Retake Photo',
-                    style: TextStyle(color: AppColors.richGold),
+                  label: Text(
+                    l10n.reverificationRetakePhoto,
+                    style: const TextStyle(color: AppColors.richGold),
                   ),
                 ),
               ] else ...[
@@ -293,15 +297,15 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(color: AppColors.richGold, width: 2),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.camera_alt_outlined,
+                        const Icon(Icons.camera_alt_outlined,
                             color: AppColors.richGold, size: 48),
-                        SizedBox(height: 16),
+                        const SizedBox(height: 16),
                         Text(
-                          'Tap to take a selfie',
-                          style: TextStyle(
+                          l10n.reverificationTapToSelfie,
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -350,9 +354,9 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
                             strokeWidth: 2.5,
                           ),
                         )
-                      : const Text(
-                          'Submit for Review',
-                          style: TextStyle(
+                      : Text(
+                          l10n.reverificationSubmit,
+                          style: const TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                 ),
@@ -362,8 +366,7 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
 
               // Info text
               Text(
-                'After submitting, your profile will be under review. '
-                'You will get access once approved.',
+                l10n.reverificationInfoText,
                 style: TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,

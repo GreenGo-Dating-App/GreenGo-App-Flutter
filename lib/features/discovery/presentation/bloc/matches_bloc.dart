@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../domain/entities/match.dart' as domain;
@@ -21,6 +22,7 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
   StreamSubscription<QuerySnapshot>? _matchesStream1;
   StreamSubscription<QuerySnapshot>? _matchesStream2;
   String? _currentUserId;
+  Timer? _streamDebounce;
 
   MatchesBloc({
     required this.getMatches,
@@ -80,7 +82,7 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
     }
   }
 
-  /// Load profiles for all users involved in matches
+  /// Load profiles for all users involved in matches using batched whereIn queries
   Future<Map<String, Profile>> _loadProfiles(
     List<domain.Match> matches,
     String currentUserId,
@@ -93,19 +95,52 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
       userIds.add(match.userId2);
     }
 
-    await Future.wait(
-      userIds.map((uid) async {
-        try {
-          final result = await profileRepository.getProfile(uid);
-          result.fold(
-            (_) {},
-            (profile) => profiles[uid] = profile,
-          );
-        } catch (e) {
-          debugPrint('Failed to load profile for $uid: $e');
+    final idList = userIds.toList();
+
+    // Batch-fetch profiles using whereIn (max 10 per query) + parallel execution
+    // This replaces N individual document reads with ceil(N/10) queries
+    final futures = <Future<QuerySnapshot<Map<String, dynamic>>>>[];
+    for (var i = 0; i < idList.length; i += 10) {
+      final batch = idList.sublist(
+        i,
+        i + 10 > idList.length ? idList.length : i + 10,
+      );
+      futures.add(
+        FirebaseFirestore.instance
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: batch)
+            .get(),
+      );
+    }
+
+    try {
+      final results = await Future.wait(futures);
+      for (final snapshot in results) {
+        for (final doc in snapshot.docs) {
+          try {
+            final profile = ProfileModel.fromFirestore(doc);
+            profiles[doc.id] = profile;
+          } catch (e) {
+            debugPrint('Failed to parse profile for ${doc.id}: $e');
+          }
         }
-      }),
-    );
+      }
+    } catch (e) {
+      debugPrint('Batch profile fetch failed, falling back to individual: $e');
+      await Future.wait(
+        userIds.map((uid) async {
+          try {
+            final result = await profileRepository.getProfile(uid);
+            result.fold(
+              (_) {},
+              (profile) => profiles[uid] = profile,
+            );
+          } catch (e) {
+            debugPrint('Failed to load profile for $uid: $e');
+          }
+        }),
+      );
+    }
 
     return profiles;
   }
@@ -126,8 +161,8 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
             change.type == DocumentChangeType.added ||
             change.type == DocumentChangeType.modified);
         if (hasNewOrModified) {
-          debugPrint('Match stream1 update detected - refreshing');
-          add(MatchesStreamUpdated(userId));
+          debugPrint('Match stream1 update detected - debounced refresh');
+          _debouncedStreamUpdate(userId);
         }
       },
       onError: (error) => debugPrint('Matches stream1 error: $error'),
@@ -144,12 +179,21 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
             change.type == DocumentChangeType.added ||
             change.type == DocumentChangeType.modified);
         if (hasNewOrModified) {
-          debugPrint('Match stream2 update detected - refreshing');
-          add(MatchesStreamUpdated(userId));
+          debugPrint('Match stream2 update detected - debounced refresh');
+          _debouncedStreamUpdate(userId);
         }
       },
       onError: (error) => debugPrint('Matches stream2 error: $error'),
     );
+  }
+
+  /// Debounce stream updates to avoid rapid-fire reloads (e.g. when multiple
+  /// match documents change at once)
+  void _debouncedStreamUpdate(String userId) {
+    _streamDebounce?.cancel();
+    _streamDebounce = Timer(const Duration(milliseconds: 500), () {
+      add(MatchesStreamUpdated(userId));
+    });
   }
 
   Future<void> _onStreamUpdated(
@@ -239,6 +283,7 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
 
   @override
   Future<void> close() {
+    _streamDebounce?.cancel();
     _matchesStream1?.cancel();
     _matchesStream2?.cancel();
     return super.close();
