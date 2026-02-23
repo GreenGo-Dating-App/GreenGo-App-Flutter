@@ -111,12 +111,12 @@ class _ChatScreenState extends State<ChatScreen> {
     _fetchCurrentUserName();
   }
 
-  Future<void> _fetchCurrentUserName() async {
+  Future<void> _fetchCurrentUserName({bool forceServer = false}) async {
     try {
       final doc = await FirebaseFirestore.instance
           .collection('profiles')
           .doc(widget.currentUserId)
-          .get();
+          .get(forceServer ? const GetOptions(source: Source.server) : null);
       if (mounted && doc.exists) {
         final data = doc.data()!;
         setState(() {
@@ -251,8 +251,8 @@ class _ChatScreenState extends State<ChatScreen> {
       userId: widget.currentUserId,
     );
     if (!allowed) return;
-    // Refresh profile after successful purchase so gate won't block again
-    if (!wasMember) await _fetchCurrentUserName();
+    // Refresh profile from server after successful purchase so gate won't block again
+    if (!wasMember) await _fetchCurrentUserName(forceServer: true);
 
     // If album photos are selected, send each as a separate image message
     if (_selectedAlbumPhotos.isNotEmpty) {

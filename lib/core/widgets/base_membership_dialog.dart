@@ -192,12 +192,13 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
     final firestore = FirebaseFirestore.instance;
 
     // Compute end date: extend from current end date if active
+    // Force server read to avoid stale cache on repeat purchases
     DateTime endDate;
     try {
       final profileDoc = await firestore
           .collection('profiles')
           .doc(widget.userId)
-          .get();
+          .get(const GetOptions(source: Source.server));
       final currentEndTs = profileDoc.data()?['baseMembershipEndDate'] as Timestamp?;
       final currentEndDate = currentEndTs?.toDate();
       if (currentEndDate != null && currentEndDate.isAfter(now)) {

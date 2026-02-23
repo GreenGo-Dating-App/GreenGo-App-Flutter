@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
@@ -44,11 +45,33 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     _loadCurrentUserProfile();
   }
 
-  Future<void> _loadCurrentUserProfile() async {
-    final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
-    result.fold((_) {}, (profile) {
-      if (mounted) setState(() => _currentUserProfile = profile);
-    });
+  Future<void> _loadCurrentUserProfile({bool forceServer = false}) async {
+    if (forceServer) {
+      // Force server read to get latest membership status after purchase
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.userId)
+            .get(const GetOptions(source: Source.server));
+        if (mounted && doc.exists) {
+          final data = doc.data()!;
+          setState(() {
+            _currentUserProfile = ProfileModel.fromJson({...data, 'userId': doc.id});
+          });
+        }
+      } catch (_) {
+        // Fallback to repository
+        final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
+        result.fold((_) {}, (profile) {
+          if (mounted) setState(() => _currentUserProfile = profile);
+        });
+      }
+    } else {
+      final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
+      result.fold((_) {}, (profile) {
+        if (mounted) setState(() => _currentUserProfile = profile);
+      });
+    }
   }
 
   @override
@@ -345,7 +368,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                   );
                                   if (!allowed) return;
                                   // Refresh profile after successful purchase so gate won't block again
-                                  if (!wasMember) await _loadCurrentUserProfile();
+                                  if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
 
                                   if (profile != null) {
                                     await Navigator.of(context).push(

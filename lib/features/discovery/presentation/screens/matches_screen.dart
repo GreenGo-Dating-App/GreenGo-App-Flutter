@@ -1,9 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../matching/domain/usecases/compatibility_scorer.dart';
@@ -61,7 +63,22 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
     _loadCurrentUserProfile();
   }
 
-  Future<void> _loadCurrentUserProfile() async {
+  Future<void> _loadCurrentUserProfile({bool forceServer = false}) async {
+    if (forceServer) {
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.userId)
+            .get(const GetOptions(source: Source.server));
+        if (mounted && doc.exists) {
+          final data = doc.data()!;
+          setState(() {
+            _currentUserProfile = ProfileModel.fromJson({...data, 'userId': doc.id});
+          });
+        }
+        return;
+      } catch (_) {}
+    }
     final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
     result.fold((_) {}, (profile) {
       if (mounted) setState(() => _currentUserProfile = profile);
@@ -438,7 +455,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                                   userId: widget.userId,
                                 );
                                 if (!allowed) return;
-                                if (!wasMember) await _loadCurrentUserProfile();
+                                if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
 
                                 // Mark as seen if not seen
                                 if (match.isNewMatch(widget.userId)) {

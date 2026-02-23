@@ -189,12 +189,18 @@ exports.verifyPurchase = (0, https_1.onCall)({
             verificationMethod: 'cloud_function',
         });
         // ── Update profile with membership info ──
-        await utils_1.db.collection('profiles').doc(userId).update({
+        const profileUpdate = {
             membershipTier: effectiveTier,
             membershipEndDate: endTimestamp,
             membershipStartDate: now,
             updatedAt: now,
-        });
+        };
+        // For base membership, also set the baseMembership fields used by app gates
+        if (productId === 'greengo_base_membership') {
+            profileUpdate.hasBaseMembership = true;
+            profileUpdate.baseMembershipEndDate = endTimestamp;
+        }
+        await utils_1.db.collection('profiles').doc(userId).update(profileUpdate);
         await utils_1.db.collection('users').doc(userId).update({
             subscriptionTier: effectiveTier,
             membershipEndDate: endTimestamp,
@@ -309,9 +315,10 @@ exports.handleExpiredMemberships = (0, scheduler_1.onSchedule)({
         (0, utils_1.logInfo)(`Found ${snapshot.size} expired memberships`);
         for (const doc of snapshot.docs) {
             const data = doc.data();
-            // Downgrade to basic/free
+            // Downgrade to basic/free and clear base membership
             await doc.ref.update({
                 membershipTier: 'BASIC',
+                hasBaseMembership: false,
                 updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             });
             // Also update users collection

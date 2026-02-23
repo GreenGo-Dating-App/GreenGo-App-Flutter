@@ -12,6 +12,7 @@ import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../matching/domain/repositories/matching_repository.dart';
 import '../../domain/entities/swipe_action.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../notifications/domain/entities/notification.dart';
@@ -197,7 +198,28 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     }
   }
 
-  Future<void> _loadCurrentUserProfile() async {
+  Future<void> _loadCurrentUserProfile({bool forceServer = false}) async {
+    if (forceServer) {
+      // Force server read to get latest membership status after purchase
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(userId)
+            .get(const GetOptions(source: Source.server));
+        if (mounted && doc.exists) {
+          final data = doc.data()!;
+          final profile = ProfileModel.fromJson({...data, 'userId': doc.id});
+          setState(() {
+            _currentUserProfile = profile;
+            _wasTravelerActive = profile.isTravelerActive;
+            _prevTravelerCity = profile.travelerLocation?.city ?? '';
+          });
+        }
+        return;
+      } catch (_) {
+        // Fallback to repository
+      }
+    }
     final profileRepo = di.sl<ProfileRepository>();
     final result = await profileRepo.getProfile(userId);
     result.fold(
@@ -1001,7 +1023,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       userId: userId,
     );
     if (!allowed) return;
-    if (!wasMember) await _loadCurrentUserProfile();
+    if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
 
     // Dispatch the swipe action to the bloc with membership data for limit checks
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
@@ -1255,7 +1277,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       userId: userId,
     );
     if (!allowed) return;
-    if (!wasMember) await _loadCurrentUserProfile();
+    if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
 
     debugPrint('_handleSwipe: direction=$direction, card.userId=${card.userId}');
 
