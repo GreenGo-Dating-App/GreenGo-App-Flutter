@@ -230,6 +230,14 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
+      final candidateProfile = candidate.profile;
+      final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
+
+      // Admin/support always visible — skip match/block/incognito/swipe filters
+      if (isPrivileged) {
+        priority0Boosted.add(candidate);
+        continue;
+      }
 
       // Skip matched users - they shouldn't appear in discovery
       if (matchedUserIds.contains(candidateId)) continue;
@@ -239,7 +247,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Skip incognito profiles (hidden from discovery)
       // Incognito with no expiry = permanent; with future expiry = active session
-      final candidateProfile = candidate.profile;
       if (candidateProfile.isIncognito &&
           (candidateProfile.incognitoExpiry == null ||
               candidateProfile.incognitoExpiry!.isAfter(now))) {
@@ -301,9 +308,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Then priority 3 (liked no response)
     prioritizedCandidates.addAll(priority3LikedNoResponse);
 
-    // Always add admin/support profile at the beginning if not already swiped
-    final swipedUserIds = swipeHistory.keys.toSet();
-    final adminCandidate = await _getAdminCandidate(userId, swipedUserIds);
+    // Always add admin/support profile at the beginning
+    final adminCandidate = await _getAdminCandidate(userId);
     // Remove admin from prioritized list to avoid duplicates
     if (adminCandidate != null) {
       prioritizedCandidates.removeWhere(
@@ -376,8 +382,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     return matchedIds;
   }
 
-  /// Get admin profile as a match candidate
-  Future<MatchCandidate?> _getAdminCandidate(String userId, Set<String> swipedUserIds) async {
+  /// Get admin profile as a match candidate — always visible to all users
+  Future<MatchCandidate?> _getAdminCandidate(String userId) async {
     try {
       // Query for admin profile
       final adminQuery = await firestore
@@ -392,9 +398,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Don't show admin to themselves
       if (adminDoc.id == userId) return null;
-
-      // Don't show if already swiped
-      if (swipedUserIds.contains(adminDoc.id)) return null;
 
       final adminProfile = ProfileModel.fromFirestore(adminDoc);
 
