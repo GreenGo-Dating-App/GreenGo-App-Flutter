@@ -390,7 +390,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
   bool _isCheckingAccess = false;
   bool _notificationPromptShown = false;
   bool _admin2FAVerified = false;
-  bool _user2FAEnabled = false;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
 
@@ -449,17 +448,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
           'isTestUser=${accessData?.isTestUser}, '
           'approvalStatus=${accessData?.approvalStatus}, '
           'tier=${accessData?.membershipTier}');
-
-      // Check if user has 2FA enabled in their profile
-      try {
-        final profileDoc = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(userId)
-            .get();
-        _user2FAEnabled = profileDoc.data()?['is2FAEnabled'] as bool? ?? false;
-      } catch (_) {
-        _user2FAEnabled = false;
-      }
 
       // Admin and test users ALWAYS get through — force approve if needed
       if (accessData != null && (accessData.isAdmin || accessData.isTestUser)) {
@@ -522,7 +510,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
       _accessData = null;
       _notificationPromptShown = false;
       _admin2FAVerified = false;
-      _user2FAEnabled = false;
       Admin2FAScreen.resetVerification();
     });
   }
@@ -771,13 +758,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
           }
           // Approved users bypass waiting — profile is verified
           if (state.approvalStatus == 'approved') {
-            // Users with 2FA enabled must verify before accessing the app
-            if (_user2FAEnabled && !_admin2FAVerified) {
-              return Admin2FAScreen(
-                onVerified: () => setState(() => _admin2FAVerified = true),
-                onSignOut: _handleSignOut,
-              );
-            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // User is waiting for access (pending or rejected)
@@ -819,13 +799,6 @@ class _AuthWrapperState extends State<AuthWrapper> {
             }
             // Approved users (verified profile) — let them into the app
             if (_accessData!.approvalStatus == ApprovalStatus.approved) {
-              // Users with 2FA enabled must verify before accessing the app
-              if (_user2FAEnabled && !_admin2FAVerified) {
-                return Admin2FAScreen(
-                  onVerified: () => setState(() => _admin2FAVerified = true),
-                  onSignOut: _handleSignOut,
-                );
-              }
               return MainNavigationScreen(userId: state.user.uid);
             }
             // Rejected users — show rejected waiting screen
