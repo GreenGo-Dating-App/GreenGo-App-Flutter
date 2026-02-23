@@ -1258,6 +1258,14 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _toggle2FA(BuildContext context, Profile profile, bool enabled) async {
+    if (enabled) {
+      // When enabling, verify the user can receive codes first
+      final verified = await Navigator.of(context).push<bool>(
+        MaterialPageRoute(builder: (_) => const Admin2FAScreen()),
+      );
+      if (verified != true || !context.mounted) return;
+    }
+
     try {
       await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
         'is2FAEnabled': enabled,
