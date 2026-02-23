@@ -10,7 +10,7 @@
  * - Support chat triggers
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const db = admin.firestore();
@@ -723,11 +723,117 @@ export const onSupportMessageCreated = functions.firestore
 // ORPHANED AUTH USER CLEANUP
 // =============================================================================
 
+// =============================================================================
+// WELCOME EMAIL (via Resend)
+// =============================================================================
+
 /**
- * Clean up an orphaned Firebase Auth user (has Auth entry but no Firestore profile).
- * Called during registration when "email-already-in-use" error occurs.
- * Does NOT require authentication (called before user can sign in).
+ * Send a branded welcome email via Resend after user registration.
+ * No auth required — called right after registration.
  */
+export const sendWelcomeEmail = functions.https.onCall(
+  async (data: any, _context: functions.https.CallableContext) => {
+    const { email } = data;
+
+    if (!email || typeof email !== 'string') {
+      throw new functions.https.HttpsError('invalid-argument', 'email is required');
+    }
+
+    console.log(`sendWelcomeEmail called for: ${email}`);
+
+    try {
+      // Read Resend config
+      const configDoc = await db.doc('app_config/resend_settings').get();
+      const resendConfig = configDoc.data();
+      const resendApiKey = resendConfig?.apiKey;
+
+      if (!resendApiKey) {
+        console.warn('Resend API key not configured. Welcome email not sent.');
+        return { success: true, emailSent: false, message: 'Welcome email not sent (email not configured)' };
+      }
+
+      const senderEmail = resendConfig?.senderEmail || 'onboarding@resend.dev';
+      const senderName = resendConfig?.senderName || 'GreenGo';
+
+      const emailResponse = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${resendApiKey}`,
+        },
+        body: JSON.stringify({
+          from: `${senderName} <${senderEmail}>`,
+          to: [email],
+          subject: 'Welcome to GreenGo!',
+          html: `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0A0A0A; color: #FFFFFF; padding: 40px; margin: 0; }
+                .container { max-width: 500px; margin: 0 auto; background: #1A1A1A; border-radius: 16px; padding: 40px; border: 1px solid #2A2A2A; }
+                .header { text-align: center; margin-bottom: 30px; }
+                .logo { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #D4AF37, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+                .content { color: rgba(255,255,255,0.8); line-height: 1.8; text-align: center; }
+                .highlight { color: #FFD700; font-weight: bold; }
+                .divider { border: none; border-top: 1px solid #2A2A2A; margin: 25px 0; }
+                .features { text-align: left; padding: 0 20px; }
+                .feature { margin: 12px 0; color: rgba(255,255,255,0.7); }
+                .feature-icon { color: #D4AF37; margin-right: 8px; }
+                .footer { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.4); font-size: 12px; }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <div class="logo">GreenGo</div>
+                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Welcome aboard!</p>
+                </div>
+                <div class="content">
+                  <p>We're thrilled to have you join the <span class="highlight">GreenGo</span> community!</p>
+                  <p>Your account has been created successfully. Complete your profile to start connecting with amazing people.</p>
+                  <hr class="divider">
+                  <div class="features">
+                    <div class="feature"><span class="feature-icon">&#10024;</span> Create your unique profile</div>
+                    <div class="feature"><span class="feature-icon">&#128154;</span> Discover people near you</div>
+                    <div class="feature"><span class="feature-icon">&#128172;</span> Start meaningful conversations</div>
+                    <div class="feature"><span class="feature-icon">&#127760;</span> Travel mode to meet people worldwide</div>
+                  </div>
+                  <hr class="divider">
+                  <p style="font-size: 14px; color: rgba(255,255,255,0.5);">Open the app and complete your profile to get started!</p>
+                </div>
+                <div class="footer">
+                  <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
+                </div>
+              </div>
+            </body>
+            </html>
+          `,
+        }),
+      });
+
+      const emailResponseText = await emailResponse.text();
+      console.log(`Resend welcome email response [${emailResponse.status}]:`, emailResponseText);
+
+      if (!emailResponse.ok) {
+        console.error('Resend welcome email error:', emailResponseText);
+        return { success: true, emailSent: false, message: 'Welcome email failed to send' };
+      }
+
+      return { success: true, emailSent: true };
+    } catch (error: any) {
+      console.error('Error sending welcome email:', error);
+      throw new functions.https.HttpsError('internal', 'Failed to send welcome email');
+    }
+  }
+);
+
+// =============================================================================
+// ORPHANED AUTH USER CLEANUP
+// =============================================================================
+
 export const cleanupOrphanedAuthUser = functions.https.onCall(
   async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;

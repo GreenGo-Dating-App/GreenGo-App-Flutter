@@ -41,7 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.moderateChatImage = exports.detectScam = exports.detectFakeProfile = exports.detectSpam = exports.moderateText = exports.moderatePhoto = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const vision_1 = __importDefault(require("@google-cloud/vision"));
 const language_1 = require("@google-cloud/language");

@@ -38,7 +38,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getModerationStatistics = exports.executeBulkModeration = exports.takeModerationAction = exports.assignModerationItem = exports.getModerationReviewItem = exports.getModerationQueue = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const firestore = admin.firestore();
 /**

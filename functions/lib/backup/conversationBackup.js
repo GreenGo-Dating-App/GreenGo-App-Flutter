@@ -38,7 +38,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.autoBackupConversations = exports.deleteBackup = exports.listBackups = exports.restoreConversation = exports.backupConversation = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const storage_1 = require("@google-cloud/storage");
 const crypto = __importStar(require("crypto"));

@@ -38,7 +38,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getExpiringMediaStats = exports.triggerMediaCleanup = exports.markMediaAsDisappearing = exports.cleanupDisappearingMedia = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const storage = admin.storage();
 const firestore = admin.firestore();

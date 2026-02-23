@@ -194,8 +194,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         throw AuthenticationException('Registration failed');
       }
 
-      // Send email verification
-      await userCredential.user!.sendEmailVerification();
+      // Send branded welcome email via Resend (fire-and-forget, don't block registration)
+      FirebaseFunctions.instance
+          .httpsCallable('sendWelcomeEmail')
+          .call({'email': email})
+          .catchError((_) => null);
 
       return UserModel.fromFirebaseUser(userCredential.user!);
     } on firebase_auth.FirebaseAuthException catch (e) {
@@ -216,7 +219,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
             if (retryCredential.user == null) {
               throw AuthenticationException('Registration failed');
             }
-            await retryCredential.user!.sendEmailVerification();
+            // Send branded welcome email via Resend
+            FirebaseFunctions.instance
+                .httpsCallable('sendWelcomeEmail')
+                .call({'email': email})
+                .catchError((_) => null);
             return UserModel.fromFirebaseUser(retryCredential.user!);
           }
         } catch (_) {

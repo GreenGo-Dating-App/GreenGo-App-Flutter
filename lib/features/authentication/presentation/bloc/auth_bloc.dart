@@ -117,8 +117,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     await result.fold(
       (failure) async => emit(AuthError(failure.message)),
       (user) async {
-        // Send email verification after registration
-        repository.sendEmailVerification();
+        // Welcome email is sent by registerWithEmail (via Cloud Function)
 
         // Initialize user access data with email for early access checking
         // This determines if user gets March 1 or March 16 access date
@@ -348,8 +347,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     final result = await repository.getCurrentUser();
-    result.fold(
-      (failure) => null,
+    await result.fold(
+      (failure) async => null,
       (user) async {
         if (user != null) {
           await _accessControlService.enableNotifications(user.id);

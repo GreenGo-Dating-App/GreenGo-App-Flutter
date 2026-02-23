@@ -354,4 +354,5 @@ export {
   onSupportChatCreated,
   onSupportMessageCreated,
   cleanupOrphanedAuthUser,
+  sendWelcomeEmail,
 } from './admin/adminPanelFunctions';

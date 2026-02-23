@@ -38,7 +38,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.cleanupOldAuditReports = exports.listSecurityAuditReports = exports.getSecurityAuditReport = exports.scheduledSecurityAudit = exports.runSecurityAudit = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 // Stub the SecurityAuditSuite (original import commented out due to compilation issues)
 // import { SecurityAuditSuite } from '../../../security_audit/security_test_suite';

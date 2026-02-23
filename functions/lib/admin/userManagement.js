@@ -38,7 +38,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.adminBulkDeleteUsers = exports.executeMassAction = exports.impersonateUser = exports.sendUserNotification = exports.adjustUserCoins = exports.overrideUserSubscription = exports.deleteUserAccount = exports.unbanUserAccount = exports.banUserAccount = exports.unsuspendUserAccount = exports.suspendUserAccount = exports.editUserProfile = exports.getDetailedUserProfile = exports.searchUsers = void 0;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const firestore = admin.firestore();
 const auth = admin.auth();

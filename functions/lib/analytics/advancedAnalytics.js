@@ -39,7 +39,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getTaxReport = exports.calculateTax = exports.getRefundAnalytics = exports.getARPU = exports.forecastMRR = exports.detectFraud = exports.getABTestResults = exports.recordConversion = exports.assignUserToTest = exports.createABTest = void 0;
 exports.recordTaxTransaction = recordTaxTransaction;
-const functions = __importStar(require("firebase-functions"));
+const functions = __importStar(require("firebase-functions/v1"));
 const bigQuerySetup_1 = require("./bigQuerySetup");
 const admin = __importStar(require("firebase-admin"));
 const firestore = admin.firestore();

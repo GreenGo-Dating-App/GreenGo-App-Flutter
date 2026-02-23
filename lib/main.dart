@@ -390,6 +390,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
   bool _isCheckingAccess = false;
   bool _notificationPromptShown = false;
   bool _admin2FAVerified = false;
+  bool _needsOnboarding = false;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
 
@@ -443,6 +444,19 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
 
     try {
+      // Check if user profile exists and is complete
+      try {
+        final profileDoc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(userId)
+            .get();
+        _needsOnboarding = !profileDoc.exists ||
+            profileDoc.data()?['isComplete'] != true;
+      } catch (e) {
+        debugPrint('Profile check error: $e');
+        _needsOnboarding = true;
+      }
+
       final accessData = await _accessControlService.getCurrentUserAccess();
       debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
           'isTestUser=${accessData?.isTestUser}, '
@@ -508,6 +522,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     context.read<AuthBloc>().add(AuthSignOutRequested());
     setState(() {
       _accessData = null;
+      _needsOnboarding = false;
       _notificationPromptShown = false;
       _admin2FAVerified = false;
       Admin2FAScreen.resetVerification();
@@ -731,6 +746,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
         if (state is AuthInitial) {
           setState(() {
             _accessData = null;
+            _needsOnboarding = false;
             _isCheckingAccess = false;
             _admin2FAVerified = false;
             Admin2FAScreen.resetVerification();
@@ -750,14 +766,24 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 onSignOut: _handleSignOut,
               );
             }
+            // Check if profile is complete before entering app
+            if (_needsOnboarding) {
+              return profile.OnboardingScreen(userId: state.user.uid);
+            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // Also bypass if tier is 'test' (from auth state directly)
           if (state.membershipTier == 'test') {
+            if (_needsOnboarding) {
+              return profile.OnboardingScreen(userId: state.user.uid);
+            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // Approved users bypass waiting — profile is verified
           if (state.approvalStatus == 'approved') {
+            if (_needsOnboarding) {
+              return profile.OnboardingScreen(userId: state.user.uid);
+            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // User is waiting for access (pending or rejected)
@@ -784,6 +810,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
             onContactSupport: waitingApprovalStatus == ApprovalStatus.rejected ? _handleContactSupport : null,
           );
         } else if (state is AuthAuthenticated) {
+          // If profile is incomplete, always redirect to onboarding first
+          if (_needsOnboarding) {
+            return profile.OnboardingScreen(userId: state.user.uid);
+          }
           // Check if we have access data and if user should wait
           if (_accessData != null) {
             // Admin and test users ALWAYS bypass — never show waiting screen
