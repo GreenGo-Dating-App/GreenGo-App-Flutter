@@ -1704,36 +1704,38 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Distance badge (top left)
-            Positioned(
-              top: 4,
-              left: 4,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.6),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.location_on, color: Colors.white70, size: 10),
-                    const SizedBox(width: 2),
-                    Text(
-                      distanceText,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 9,
-                        fontWeight: FontWeight.w600,
+            // Distance badge (top left) — hidden for admin/support
+            if (!profile.isAdmin && !profile.isSupport)
+              Positioned(
+                top: 4,
+                left: 4,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.6),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.location_on, color: Colors.white70, size: 10),
+                      const SizedBox(width: 2),
+                      Text(
+                        distanceText,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 9,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
 
             // Animated online indicator (bottom-right, aligned with compatibility row)
-            if (widget.isOnlineOverride ?? profile.isOnline)
+            // Admin/support are always shown as online
+            if (profile.isAdmin || profile.isSupport || (widget.isOnlineOverride ?? profile.isOnline))
               Positioned(
                 bottom: showText ? 8 : 6,
                 right: 6,

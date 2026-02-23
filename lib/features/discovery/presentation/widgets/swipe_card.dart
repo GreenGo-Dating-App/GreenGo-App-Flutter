@@ -72,7 +72,8 @@ class _SwipeCardState extends State<SwipeCard>
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
 
-    final isOnline = widget.card.candidate.profile.isOnline;
+    final profile = widget.card.candidate.profile;
+    final isOnline = profile.isAdmin || profile.isSupport || profile.isOnline;
 
     Widget cardContent = SizedBox(
       height: screenSize.height * 0.75,
@@ -277,24 +278,25 @@ class _SwipeCardState extends State<SwipeCard>
           ),
           const SizedBox(height: 6),
 
-          // Location (use effective location for travelers)
-          Row(
-            children: [
-              Icon(
-                profile.isTravelerActive ? Icons.flight : Icons.location_on,
-                color: Colors.white70,
-                size: 16,
-              ),
-              const SizedBox(width: 4),
-              Text(
-                widget.card.distanceText,
-                style: const TextStyle(
+          // Location (use effective location for travelers) — hidden for admin/support
+          if (!profile.isAdmin && !profile.isSupport)
+            Row(
+              children: [
+                Icon(
+                  profile.isTravelerActive ? Icons.flight : Icons.location_on,
                   color: Colors.white70,
-                  fontSize: 14,
+                  size: 16,
                 ),
-              ),
-            ],
-          ),
+                const SizedBox(width: 4),
+                Text(
+                  widget.card.distanceText,
+                  style: const TextStyle(
+                    color: Colors.white70,
+                    fontSize: 14,
+                  ),
+                ),
+              ],
+            ),
           const SizedBox(height: 8),
 
           // Languages

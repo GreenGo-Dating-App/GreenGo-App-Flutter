@@ -76,6 +76,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
     final userProfile = ProfileModel.fromFirestore(userDoc);
     final userLoc = userProfile.effectiveLocation;
+    final isCurrentUserAdmin = userProfile.isAdmin || userProfile.isSupport;
 
     // Try pre-computed pools first for targeted candidate fetch
     final poolCandidateIds = await _getPoolCandidateIds(
@@ -118,33 +119,38 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         // Admin/support profiles bypass all filters — always visible
         final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
 
-        // Verification filter: only show verified profiles (skip for admin/support)
-        if (!isPrivileged && !candidateProfile.isVerified) continue;
+        // Admin users see ALL profiles (bypass verification, photo, age, gender, distance filters)
+        if (isCurrentUserAdmin) {
+          // Admin sees everyone — skip all filters
+        } else {
+          // Verification filter: only show verified profiles (skip for admin/support candidates)
+          if (!isPrivileged && !candidateProfile.isVerified) continue;
 
-        // Must have at least one photo (skip for admin/support)
-        if (!isPrivileged && candidateProfile.photoUrls.isEmpty) continue;
+          // Must have at least one photo (skip for admin/support candidates)
+          if (!isPrivileged && candidateProfile.photoUrls.isEmpty) continue;
 
-        // Apply age filter (skip for admin/support)
-        final age = candidateProfile.age;
-        if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
-          continue;
-        }
-
-        // Apply gender filter (skip for admin/support)
-        if (!isPrivileged && preferences.preferredGenders.isNotEmpty) {
-          final gender = candidateProfile.gender;
-          if (gender.isNotEmpty &&
-              !preferences.preferredGenders
-                  .map((g) => g.toLowerCase())
-                  .contains(gender.toLowerCase())) {
+          // Apply age filter (skip for admin/support candidates)
+          final age = candidateProfile.age;
+          if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
             continue;
+          }
+
+          // Apply gender filter (skip for admin/support candidates)
+          if (!isPrivileged && preferences.preferredGenders.isNotEmpty) {
+            final gender = candidateProfile.gender;
+            if (gender.isNotEmpty &&
+                !preferences.preferredGenders
+                    .map((g) => g.toLowerCase())
+                    .contains(gender.toLowerCase())) {
+              continue;
+            }
           }
         }
 
-        // Apply distance filter (skip for admin/support)
+        // Apply distance filter (skip for admin/support candidates and admin users)
         final candidateLoc = candidateProfile.effectiveLocation;
         double distance = 0.0;
-        if (!isPrivileged &&
+        if (!isPrivileged && !isCurrentUserAdmin &&
             userLoc.latitude != 0 &&
             userLoc.longitude != 0 &&
             candidateLoc.latitude != 0 &&
@@ -161,8 +167,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           }
         }
 
-        // Apply deal-breaker interests (skip for admin/support)
-        if (!isPrivileged && preferences.dealBreakerInterests.isNotEmpty) {
+        // Apply deal-breaker interests (skip for admin/support and admin users)
+        if (!isPrivileged && !isCurrentUserAdmin && preferences.dealBreakerInterests.isNotEmpty) {
           final hasAllDealBreakers = preferences.dealBreakerInterests.every(
             (interest) => candidateProfile.interests.contains(interest),
           );
@@ -170,26 +176,42 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         }
 
         // Calculate compatibility score
+        // Admin/support candidates always show 100% compatibility
         MatchScore matchScore;
-        try {
-          matchScore = compatibilityScorer.calculateScore(
-            profile1: userProfile,
-            profile2: candidateProfile,
-          );
-        } catch (_) {
-          // If scoring fails, use a default neutral score
+        if (isPrivileged) {
           matchScore = MatchScore(
             userId1: userId,
             userId2: candidateProfile.userId,
-            overallScore: 50.0,
+            overallScore: 100.0,
             breakdown: const ScoreBreakdown(
-              locationScore: 50.0,
-              ageCompatibilityScore: 50.0,
-              interestOverlapScore: 50.0,
-              languageScore: 50.0,
+              locationScore: 100.0,
+              ageCompatibilityScore: 100.0,
+              interestOverlapScore: 100.0,
+              languageScore: 100.0,
             ),
             calculatedAt: now,
           );
+        } else {
+          try {
+            matchScore = compatibilityScorer.calculateScore(
+              profile1: userProfile,
+              profile2: candidateProfile,
+            );
+          } catch (_) {
+            // If scoring fails, use a default neutral score
+            matchScore = MatchScore(
+              userId1: userId,
+              userId2: candidateProfile.userId,
+              overallScore: 50.0,
+              breakdown: const ScoreBreakdown(
+                locationScore: 50.0,
+                ageCompatibilityScore: 50.0,
+                interestOverlapScore: 50.0,
+                languageScore: 50.0,
+              ),
+              calculatedAt: now,
+            );
+          }
         }
 
         candidates.add(MatchCandidate(
