@@ -492,16 +492,42 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                         color: isLocked ? Colors.red[300] : Colors.white54,
                       ),
                     ),
+                    if (!isLocked && isYearly) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        '${_getTierFromProductId(product.id).yearlyMonthlyEquivalent.toStringAsFixed(2)}/month',
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
                   ],
                 ),
               ),
-              Text(
-                product.price,
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: color,
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  if (!isLocked && isYearly) ...[
+                    Text(
+                      '\$${(_getTierFromProductId(product.id).monthlyPrice * 12).toStringAsFixed(2)}',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white38,
+                        decoration: TextDecoration.lineThrough,
+                        decorationColor: Colors.white38,
+                      ),
+                    ),
+                  ],
+                  Text(
+                    product.price,
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: color,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(width: 8),
               Icon(

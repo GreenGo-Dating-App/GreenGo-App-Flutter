@@ -115,8 +115,10 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           continue;
         }
 
-        // Verification filter: only show verified profiles
-        if (!candidateProfile.isVerified) continue;
+        // Verification filter: only show verified profiles (skip for admin/support)
+        if (!candidateProfile.isVerified &&
+            !candidateProfile.isAdmin &&
+            !candidateProfile.isSupport) continue;
 
         // Must have at least one photo
         if (candidateProfile.photoUrls.isEmpty) continue;

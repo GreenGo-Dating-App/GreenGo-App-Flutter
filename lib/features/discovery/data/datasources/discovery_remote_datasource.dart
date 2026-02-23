@@ -695,12 +695,14 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Query matches where user is userId1
     Query query1 = firestore
         .collection('matches')
-        .where('userId1', isEqualTo: userId);
+        .where('userId1', isEqualTo: userId)
+        .limit(500);
 
     // Query matches where user is userId2
     Query query2 = firestore
         .collection('matches')
-        .where('userId2', isEqualTo: userId);
+        .where('userId2', isEqualTo: userId)
+        .limit(500);
 
     // NOTE: We do NOT filter isActive in Firestore query because legacy matches
     // may not have the isActive field at all (null != true). Instead we filter

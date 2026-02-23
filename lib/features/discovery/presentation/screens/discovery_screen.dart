@@ -897,16 +897,17 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final Set<String> _activeFilters = {};
 
   Widget _buildGridFilters() {
+    final l10n = AppLocalizations.of(context)!;
     return Wrap(
       spacing: 6,
       runSpacing: 4,
       children: [
-        _buildFilterChip('All', 'all', Icons.grid_view),
-        _buildFilterChip('Liked', 'liked', Icons.favorite),
-        _buildFilterChip('Super Liked', 'superLiked', Icons.star),
-        _buildFilterChip('Passed', 'passed', Icons.close),
-        _buildFilterChip('Skipped', 'skipped', Icons.arrow_downward),
-        _buildFilterChip('Matches', 'matched', Icons.favorite_border),
+        _buildFilterChip(l10n.discoveryFilterAll, 'all', Icons.grid_view),
+        _buildFilterChip(l10n.discoveryFilterLiked, 'liked', Icons.favorite),
+        _buildFilterChip(l10n.discoveryFilterSuperLiked, 'superLiked', Icons.star),
+        _buildFilterChip(l10n.discoveryFilterPassed, 'passed', Icons.close),
+        _buildFilterChip(l10n.discoveryFilterSkipped, 'skipped', Icons.arrow_downward),
+        _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.favorite_border),
       ],
     );
   }
@@ -964,12 +965,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   Future<void> _gridAction(DiscoveryCard card, SwipeActionType actionType) async {
     // Base membership gate
+    final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(
       context: context,
       profile: _currentUserProfile,
       userId: userId,
     );
     if (!allowed) return;
+    if (!wasMember) await _loadCurrentUserProfile();
 
     // Dispatch the swipe action to the bloc with membership data for limit checks
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
@@ -1125,7 +1128,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
+          SnackBar(content: Text(AppLocalizations.of(context)!.discoveryError(e.toString())), backgroundColor: AppColors.errorRed),
         );
       }
     }
@@ -1216,12 +1219,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   Future<void> _handleSwipe(BuildContext context, card, SwipeDirection direction) async {
     // Base membership gate
+    final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(
       context: context,
       profile: _currentUserProfile,
       userId: userId,
     );
     if (!allowed) return;
+    if (!wasMember) await _loadCurrentUserProfile();
 
     debugPrint('_handleSwipe: direction=$direction, card.userId=${card.userId}');
     SwipeActionType actionType;

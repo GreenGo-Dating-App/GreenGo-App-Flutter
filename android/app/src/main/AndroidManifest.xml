@@ -67,7 +67,7 @@
         <!-- FCM high priority messages -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher" />
+            android:resource="@drawable/ic_launcher_foreground" />
 
         <!-- Google Maps API Key -->
         <meta-data

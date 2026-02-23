@@ -50,7 +50,7 @@ class PushNotificationService {
         ?.createNotificationChannel(_channel);
 
     // Initialize local notifications for foreground display
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const androidSettings = AndroidInitializationSettings('@drawable/ic_launcher_foreground');
     const iosSettings = DarwinInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
@@ -112,7 +112,7 @@ class PushNotificationService {
           channelDescription: _channel.description,
           importance: Importance.high,
           priority: Priority.high,
-          icon: '@mipmap/ic_launcher',
+          icon: '@drawable/ic_launcher_foreground',
         ),
         iOS: const DarwinNotificationDetails(
           presentAlert: true,

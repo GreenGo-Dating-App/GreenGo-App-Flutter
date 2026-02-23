@@ -339,3 +339,19 @@ export {
   sendNotificationToUser,
   getMvpAccessStats,
 } from './admin/mvp_access';
+
+// Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
+export {
+  send2FACode,
+  verify2FACode,
+  adminChangeUserPassword,
+  sendPasswordResetEmail,
+  forcePasswordChange,
+  adminDeleteUser,
+  adminSetUserDisabled,
+  sendTestEmail,
+  processAISupportMessage,
+  onSupportChatCreated,
+  onSupportMessageCreated,
+  cleanupOrphanedAuthUser,
+} from './admin/adminPanelFunctions';
