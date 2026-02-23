@@ -113,6 +113,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   Profile? _currentUserProfile;
   final Set<String> _precachedImageUrls = {};
   MatchPreferences? _savedPreferences;
+  List<DiscoveryCard> _lastKnownCards = []; // Preserve cards for grid when bloc emits StackEmpty
 
   // Traveler tracking — detect when traveler mode activates to refresh discovery
   bool _wasTravelerActive = false;
@@ -436,6 +437,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             }
 
             if (state is DiscoveryStackEmpty) {
+              // In grid mode, keep showing the grid with preserved cards
+              // (bloc emits StackEmpty when currentIndex passes all cards,
+              // but grid uses _gridStartIndex and keeps all profiles visible)
+              if (_isGridMode && _lastKnownCards.isNotEmpty) {
+                return _buildGridMode(context, _lastKnownCards, 0);
+              }
               return _buildEmptyState(context);
             }
 
@@ -473,6 +480,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 cards = s.cards;
                 currentIndex = s.currentIndex;
               }
+
+              // Preserve cards for grid mode (so grid survives DiscoveryStackEmpty)
+              _lastKnownCards = cards;
 
               // In grid mode, the grid uses _gridStartIndex (frozen snapshot),
               // not the bloc's currentIndex. The bloc advances currentIndex
@@ -1486,9 +1496,30 @@ class _GridProfileCard extends StatefulWidget {
   State<_GridProfileCard> createState() => _GridProfileCardState();
 }
 
-class _GridProfileCardState extends State<_GridProfileCard> {
+class _GridProfileCardState extends State<_GridProfileCard>
+    with SingleTickerProviderStateMixin {
   bool _showMenu = false;
   bool _showPreview = false;
+  late final AnimationController _pulseController;
+  late final Animation<double> _pulseAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _pulseController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    )..repeat(reverse: true);
+    _pulseAnimation = Tween<double>(begin: 0.4, end: 1.0).animate(
+      CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _pulseController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -1679,26 +1710,31 @@ class _GridProfileCardState extends State<_GridProfileCard> {
               ),
             ),
 
-            // Online indicator (rendered above distance badge so it's visible)
+            // Animated online indicator (bottom-right, aligned with compatibility row)
             if (widget.isOnlineOverride ?? profile.isOnline)
               Positioned(
-                bottom: showText ? 42 : 6,
+                bottom: showText ? 8 : 6,
                 right: 6,
-                child: Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    color: AppColors.successGreen,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white, width: 1.5),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppColors.successGreen.withOpacity(0.5),
-                        blurRadius: 4,
-                        spreadRadius: 1,
+                child: AnimatedBuilder(
+                  animation: _pulseAnimation,
+                  builder: (context, child) {
+                    return Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: AppColors.successGreen,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white, width: 1.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppColors.successGreen.withOpacity(_pulseAnimation.value),
+                            blurRadius: 4 + (_pulseAnimation.value * 4),
+                            spreadRadius: 1 + (_pulseAnimation.value * 2),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    );
+                  },
                 ),
               ),
 
