@@ -171,6 +171,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     print('[Discovery] Candidates from matching: ${candidates.length}');
 
+    // Check if current user is admin/support — admins bypass all discovery filters
+    final currentUserDoc = await firestore.collection('profiles').doc(userId).get();
+    final isCurrentUserPrivileged = currentUserDoc.exists &&
+        ((currentUserDoc.data()?['isAdmin'] as bool? ?? false) ||
+         (currentUserDoc.data()?['isSupport'] as bool? ?? false));
+
     // Get user's swipe history with action types
     final swipeHistory = await _getSwipeHistoryWithTypes(userId);
     print('[Discovery] Swipe history entries: ${swipeHistory.length}');
@@ -183,33 +189,38 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
     print('[Discovery] Blocked user IDs: ${blockedUserIds.length}');
 
-    // Apply sexual orientation filter
-    var filteredCandidates = preferences.preferredOrientations.isNotEmpty
-        ? candidates.where((candidate) {
-            final orientation = candidate.profile.sexualOrientation;
-            // Keep candidates with null/empty orientation (unset)
-            if (orientation == null || orientation.isEmpty) return true;
-            return preferences.preferredOrientations.contains(orientation);
-          }).toList()
-        : candidates.toList();
+    // Admin/support users bypass all discovery preference filters (see all users)
+    var filteredCandidates = candidates.toList();
 
-    // Apply country filter — use effectiveLocation so traveler candidates show in correct country
-    if (preferences.preferredCountries.isNotEmpty) {
-      filteredCandidates = filteredCandidates.where((candidate) {
-        final country = candidate.profile.effectiveLocation.country;
-        // Keep candidates with unknown/empty country (don't exclude them)
-        if (country.isEmpty || country == 'Unknown') return true;
-        return preferences.preferredCountries
-            .map((c) => c.toLowerCase())
-            .contains(country.toLowerCase());
-      }).toList();
-    }
+    if (!isCurrentUserPrivileged) {
+      // Apply sexual orientation filter
+      if (preferences.preferredOrientations.isNotEmpty) {
+        filteredCandidates = filteredCandidates.where((candidate) {
+          final orientation = candidate.profile.sexualOrientation;
+          if (orientation == null || orientation.isEmpty) return true;
+          return preferences.preferredOrientations.contains(orientation);
+        }).toList();
+      }
 
-    // Apply online-only filter
-    if (preferences.onlyOnlineNow) {
-      filteredCandidates = filteredCandidates
-          .where((candidate) => candidate.profile.isOnline)
-          .toList();
+      // Apply country filter — use effectiveLocation so traveler candidates show in correct country
+      if (preferences.preferredCountries.isNotEmpty) {
+        filteredCandidates = filteredCandidates.where((candidate) {
+          final country = candidate.profile.effectiveLocation.country;
+          if (country.isEmpty || country == 'Unknown') return true;
+          return preferences.preferredCountries
+              .map((c) => c.toLowerCase())
+              .contains(country.toLowerCase());
+        }).toList();
+      }
+
+      // Apply online-only filter
+      if (preferences.onlyOnlineNow) {
+        filteredCandidates = filteredCandidates
+            .where((candidate) => candidate.profile.isOnline)
+            .toList();
+      }
+    } else {
+      print('[Discovery] Admin/support user — skipping preference filters');
     }
 
     // Categorize candidates into priority tiers:
@@ -240,16 +251,23 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
 
       // Skip matched users - they shouldn't appear in discovery
-      if (matchedUserIds.contains(candidateId)) continue;
+      if (matchedUserIds.contains(candidateId)) {
+        print('[Discovery] Excluded ${candidateProfile.displayName}: matched');
+        continue;
+      }
 
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
-      if (blockedUserIds.contains(candidateId)) continue;
+      if (blockedUserIds.contains(candidateId)) {
+        print('[Discovery] Excluded ${candidateProfile.displayName}: blocked');
+        continue;
+      }
 
       // Skip incognito profiles (hidden from discovery)
       // Incognito with no expiry = permanent; with future expiry = active session
       if (candidateProfile.isIncognito &&
           (candidateProfile.incognitoExpiry == null ||
               candidateProfile.incognitoExpiry!.isAfter(now))) {
+        print('[Discovery] Excluded ${candidateProfile.displayName}: incognito');
         continue;
       }
 
