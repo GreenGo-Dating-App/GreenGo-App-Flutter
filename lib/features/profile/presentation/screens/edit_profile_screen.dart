@@ -18,6 +18,7 @@ import '../bloc/profile_state.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../widgets/edit_section_card.dart';
+import '../../../admin/presentation/screens/admin_2fa_screen.dart';
 import '../../../admin/presentation/screens/verification_admin_screen.dart';
 import '../../../admin/presentation/screens/reports_admin_screen.dart';
 import '../../../membership/presentation/screens/membership_admin_screen.dart';
@@ -362,6 +363,13 @@ class EditProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
 
+                  // 2FA Toggle
+                  _TwoFactorToggleCard(
+                    profile: activeProfile,
+                    onToggle: (enabled) => _toggle2FA(context, activeProfile, enabled),
+                  ),
+                  const SizedBox(height: 16),
+
                   // Restart Discovery
                   EditSectionCard(
                     title: 'Restart Discovery',
@@ -666,7 +674,19 @@ class EditProfileScreen extends StatelessWidget {
         : profile.bio;
   }
 
-  void _navigateToAdminVerification(BuildContext context, Profile currentProfile) {
+  Future<bool> _verify2FA(BuildContext context) async {
+    if (Admin2FAScreen.isVerified) return true;
+
+    final result = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(builder: (_) => const Admin2FAScreen()),
+    );
+    return result == true;
+  }
+
+  Future<void> _navigateToAdminVerification(BuildContext context, Profile currentProfile) async {
+    if (!await _verify2FA(context)) return;
+    if (!context.mounted) return;
+
     // Create the repository and bloc for the admin screen
     final remoteDataSource = VerificationAdminRemoteDataSourceImpl(
       firestore: FirebaseFirestore.instance,
@@ -685,7 +705,10 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _navigateToAdminReports(BuildContext context, Profile currentProfile) {
+  Future<void> _navigateToAdminReports(BuildContext context, Profile currentProfile) async {
+    if (!await _verify2FA(context)) return;
+    if (!context.mounted) return;
+
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => ReportsAdminScreen(adminId: currentProfile.userId),
@@ -693,7 +716,10 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _navigateToAdminMembership(BuildContext context, Profile currentProfile) {
+  Future<void> _navigateToAdminMembership(BuildContext context, Profile currentProfile) async {
+    if (!await _verify2FA(context)) return;
+    if (!context.mounted) return;
+
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => MembershipAdminScreen(adminId: currentProfile.userId),
@@ -1231,6 +1257,32 @@ class EditProfileScreen extends StatelessWidget {
     return '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
   }
 
+  Future<void> _toggle2FA(BuildContext context, Profile profile, bool enabled) async {
+    try {
+      await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
+        'is2FAEnabled': enabled,
+      });
+
+      if (context.mounted) {
+        context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(enabled
+                ? AppLocalizations.of(context)!.twoFaEnabled
+                : AppLocalizations.of(context)!.twoFaDisabled),
+            backgroundColor: AppColors.successGreen,
+          ),
+        );
+      }
+    } catch (e) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
+        );
+      }
+    }
+  }
+
   void _navigateToUsageStats(BuildContext context, Profile profile) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -1672,6 +1724,57 @@ class _IncognitoToggleCard extends StatelessWidget {
           value: isActive,
           onChanged: onToggle,
           activeColor: AppColors.richGold,
+        ),
+      ),
+    );
+  }
+}
+
+/// 2FA toggle card widget
+class _TwoFactorToggleCard extends StatelessWidget {
+  final Profile profile;
+  final Function(bool) onToggle;
+
+  const _TwoFactorToggleCard({
+    required this.profile,
+    required this.onToggle,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isEnabled = profile.is2FAEnabled;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+        border: isEnabled
+            ? Border.all(color: AppColors.successGreen.withValues(alpha: 0.5))
+            : null,
+      ),
+      child: ListTile(
+        leading: Icon(
+          Icons.security,
+          color: isEnabled ? AppColors.successGreen : AppColors.textTertiary,
+        ),
+        title: Text(
+          AppLocalizations.of(context)!.twoFaToggleTitle,
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        subtitle: Text(
+          AppLocalizations.of(context)!.twoFaToggleSubtitle,
+          style: TextStyle(
+            color: isEnabled ? AppColors.successGreen : AppColors.textTertiary,
+            fontSize: 12,
+          ),
+        ),
+        trailing: Switch(
+          value: isEnabled,
+          onChanged: onToggle,
+          activeColor: AppColors.successGreen,
         ),
       ),
     );

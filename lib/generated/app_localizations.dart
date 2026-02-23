@@ -4510,6 +4510,258 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Previous purchase found. Please try again.'**
   String get shopPreviousPurchaseFound;
+
+  /// No description provided for @reuploadVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-upload Verification Photo'**
+  String get reuploadVerification;
+
+  /// No description provided for @reverificationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Identity Verification'**
+  String get reverificationTitle;
+
+  /// No description provided for @reverificationHeading.
+  ///
+  /// In en, this message translates to:
+  /// **'We need to verify your identity'**
+  String get reverificationHeading;
+
+  /// No description provided for @reverificationDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Please take a clear selfie so we can verify your identity. Make sure your face is well lit and clearly visible.'**
+  String get reverificationDescription;
+
+  /// No description provided for @reverificationReasonLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason for request:'**
+  String get reverificationReasonLabel;
+
+  /// No description provided for @reverificationPhotoTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Tips'**
+  String get reverificationPhotoTips;
+
+  /// No description provided for @reverificationTipLighting.
+  ///
+  /// In en, this message translates to:
+  /// **'Good lighting — face the light source'**
+  String get reverificationTipLighting;
+
+  /// No description provided for @reverificationTipCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Look directly at the camera'**
+  String get reverificationTipCamera;
+
+  /// No description provided for @reverificationTipNoAccessories.
+  ///
+  /// In en, this message translates to:
+  /// **'No sunglasses, hats, or masks'**
+  String get reverificationTipNoAccessories;
+
+  /// No description provided for @reverificationTipFullFace.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure your full face is visible'**
+  String get reverificationTipFullFace;
+
+  /// No description provided for @reverificationRetakePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Retake Photo'**
+  String get reverificationRetakePhoto;
+
+  /// No description provided for @reverificationTapToSelfie.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to take a selfie'**
+  String get reverificationTapToSelfie;
+
+  /// No description provided for @reverificationSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit for Review'**
+  String get reverificationSubmit;
+
+  /// No description provided for @reverificationInfoText.
+  ///
+  /// In en, this message translates to:
+  /// **'After submitting, your profile will be under review. You will get access once approved.'**
+  String get reverificationInfoText;
+
+  /// No description provided for @reverificationCameraError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to open camera'**
+  String get reverificationCameraError;
+
+  /// No description provided for @reverificationUploadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload failed. Please try again.'**
+  String get reverificationUploadFailed;
+
+  /// No description provided for @notificationDialogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay Connected'**
+  String get notificationDialogTitle;
+
+  /// No description provided for @notificationDialogMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable notifications to know when you get matches, messages, and super likes.'**
+  String get notificationDialogMessage;
+
+  /// No description provided for @notificationDialogEnable.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable'**
+  String get notificationDialogEnable;
+
+  /// No description provided for @notificationDialogNotNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Now'**
+  String get notificationDialogNotNow;
+
+  /// No description provided for @discoveryFilterAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get discoveryFilterAll;
+
+  /// No description provided for @discoveryFilterLiked.
+  ///
+  /// In en, this message translates to:
+  /// **'Liked'**
+  String get discoveryFilterLiked;
+
+  /// No description provided for @discoveryFilterSuperLiked.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Liked'**
+  String get discoveryFilterSuperLiked;
+
+  /// No description provided for @discoveryFilterPassed.
+  ///
+  /// In en, this message translates to:
+  /// **'Passed'**
+  String get discoveryFilterPassed;
+
+  /// No description provided for @discoveryFilterSkipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Skipped'**
+  String get discoveryFilterSkipped;
+
+  /// No description provided for @discoveryFilterMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'Matches'**
+  String get discoveryFilterMatches;
+
+  /// No description provided for @discoveryError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error: {error}'**
+  String discoveryError(String error);
+
+  /// No description provided for @admin2faTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Verification'**
+  String get admin2faTitle;
+
+  /// No description provided for @admin2faSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code sent to your email'**
+  String get admin2faSubtitle;
+
+  /// No description provided for @admin2faCodeSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Code sent to {email}'**
+  String admin2faCodeSent(String email);
+
+  /// No description provided for @admin2faVerify.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get admin2faVerify;
+
+  /// No description provided for @admin2faResend.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend Code'**
+  String get admin2faResend;
+
+  /// No description provided for @admin2faResendIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend in {seconds}s'**
+  String admin2faResendIn(String seconds);
+
+  /// No description provided for @admin2faInvalidCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid verification code'**
+  String get admin2faInvalidCode;
+
+  /// No description provided for @admin2faExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Code expired. Please request a new one.'**
+  String get admin2faExpired;
+
+  /// No description provided for @admin2faMaxAttempts.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please request a new code.'**
+  String get admin2faMaxAttempts;
+
+  /// No description provided for @admin2faSending.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending code...'**
+  String get admin2faSending;
+
+  /// No description provided for @admin2faSignOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get admin2faSignOut;
+
+  /// No description provided for @twoFaToggleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable 2FA Authenticator'**
+  String get twoFaToggleTitle;
+
+  /// No description provided for @twoFaToggleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Require email code verification on every login'**
+  String get twoFaToggleSubtitle;
+
+  /// No description provided for @twoFaEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'2FA authentication enabled'**
+  String get twoFaEnabled;
+
+  /// No description provided for @twoFaDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'2FA authentication disabled'**
+  String get twoFaDisabled;
 }
 
 class _AppLocalizationsDelegate

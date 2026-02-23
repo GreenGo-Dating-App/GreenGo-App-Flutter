@@ -101,18 +101,6 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
           if (state is VerificationAdminLoaded) {
             pending = state.pendingVerifications;
             history = state.verificationHistory;
-          } else if (state is VerificationAdminActionLoading) {
-            pending = state.pendingVerifications;
-            history = state.verificationHistory;
-          } else if (state is VerificationAdminBulkActionLoading) {
-            pending = state.pendingVerifications;
-            history = state.verificationHistory;
-          } else if (state is VerificationAdminActionSuccess) {
-            pending = state.pendingVerifications;
-            history = state.verificationHistory;
-          } else if (state is VerificationAdminError) {
-            pending = state.pendingVerifications;
-            history = state.verificationHistory;
           }
 
           return TabBarView(
@@ -445,6 +433,9 @@ class _VerificationHistoryTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final dateFormatter = DateFormat('MMM dd, yyyy HH:mm');
+
     if (profiles.isEmpty) {
       return const Center(
         child: Column(
@@ -468,13 +459,102 @@ class _VerificationHistoryTab extends StatelessWidget {
       );
     }
 
-    return ListView.builder(
-      padding: const EdgeInsets.all(AppDimensions.paddingM),
-      itemCount: profiles.length,
-      itemBuilder: (context, index) {
-        final profile = profiles[index];
-        return _HistoryCard(profile: profile);
-      },
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(AppDimensions.paddingS),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: DataTable(
+          headingRowColor: WidgetStateProperty.all(
+            AppColors.richGold.withValues(alpha: 0.1),
+          ),
+          dataRowMinHeight: 48,
+          dataRowMaxHeight: 64,
+          columnSpacing: 16,
+          columns: const [
+            DataColumn(label: Text('#', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text('User', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text('Status', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text('Reviewed By', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text('Date', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text('Reason', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+          ],
+          rows: List.generate(profiles.length, (index) {
+            final profile = profiles[index];
+            final isApproved = profile.verificationStatus == VerificationStatus.approved;
+            final reviewedBy = profile.verificationReviewedBy ?? '-';
+            final reviewedAt = profile.verificationReviewedAt != null
+                ? dateFormatter.format(profile.verificationReviewedAt!)
+                : '-';
+            final reason = profile.verificationRejectionReason;
+            final truncatedReason = reason != null && reason.length > 30
+                ? '${reason.substring(0, 30)}...'
+                : reason ?? '-';
+
+            return DataRow(cells: [
+              DataCell(Text(
+                '${index + 1}',
+                style: const TextStyle(color: AppColors.textSecondary),
+              )),
+              DataCell(Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CircleAvatar(
+                    radius: 14,
+                    backgroundImage: profile.photoUrls.isNotEmpty
+                        ? NetworkImage(profile.photoUrls.first)
+                        : null,
+                    backgroundColor: AppColors.richGold.withValues(alpha: 0.2),
+                    child: profile.photoUrls.isEmpty
+                        ? const Icon(Icons.person, size: 14, color: AppColors.richGold)
+                        : null,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    profile.displayName,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                  ),
+                ],
+              )),
+              DataCell(Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: isApproved
+                      ? AppColors.successGreen.withValues(alpha: 0.15)
+                      : AppColors.errorRed.withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  isApproved
+                      ? l10n.verificationApproved
+                      : l10n.verificationRejected,
+                  style: TextStyle(
+                    color: isApproved ? AppColors.successGreen : AppColors.errorRed,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              )),
+              DataCell(Text(
+                reviewedBy.length > 12
+                    ? '${reviewedBy.substring(0, 12)}...'
+                    : reviewedBy,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              )),
+              DataCell(Text(
+                reviewedAt,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              )),
+              DataCell(Tooltip(
+                message: reason ?? '',
+                child: Text(
+                  truncatedReason,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                ),
+              )),
+            ]);
+          }),
+        ),
+      ),
     );
   }
 }
@@ -807,87 +887,3 @@ class _VerificationCard extends StatelessWidget {
   }
 }
 
-class _HistoryCard extends StatelessWidget {
-  final Profile profile;
-
-  const _HistoryCard({required this.profile});
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final dateFormatter = DateFormat('MMM dd, yyyy HH:mm');
-
-    final isApproved = profile.verificationStatus == VerificationStatus.approved;
-
-    return Card(
-      color: AppColors.backgroundCard,
-      margin: const EdgeInsets.only(bottom: AppDimensions.paddingS),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        side: BorderSide(
-          color: isApproved ? AppColors.successGreen : AppColors.errorRed,
-          width: 0.5,
-        ),
-      ),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundImage: profile.photoUrls.isNotEmpty
-              ? NetworkImage(profile.photoUrls.first)
-              : null,
-          backgroundColor: AppColors.richGold.withValues(alpha: 0.2),
-          child: profile.photoUrls.isEmpty
-              ? const Icon(Icons.person, color: AppColors.richGold)
-              : null,
-        ),
-        title: Text(
-          profile.displayName,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(
-                  isApproved ? Icons.check_circle : Icons.cancel,
-                  color: isApproved ? AppColors.successGreen : AppColors.errorRed,
-                  size: 14,
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  isApproved ? l10n.verificationApproved : l10n.verificationRejected,
-                  style: TextStyle(
-                    color: isApproved ? AppColors.successGreen : AppColors.errorRed,
-                    fontSize: 12,
-                  ),
-                ),
-              ],
-            ),
-            if (profile.verificationReviewedAt != null)
-              Text(
-                dateFormatter.format(profile.verificationReviewedAt!),
-                style: const TextStyle(
-                  color: AppColors.textTertiary,
-                  fontSize: 11,
-                ),
-              ),
-            if (profile.verificationRejectionReason != null)
-              Text(
-                l10n.rejectionReason(profile.verificationRejectionReason!),
-                style: const TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 11,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-          ],
-        ),
-        isThreeLine: true,
-      ),
-    );
-  }
-}

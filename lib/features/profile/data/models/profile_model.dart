@@ -44,6 +44,7 @@ class ProfileModel extends Profile {
     super.verificationReviewedBy,
     super.isAdmin,
     super.isSupport,
+    super.is2FAEnabled,
     super.socialLinks,
     super.membershipTier,
     super.membershipStartDate,
@@ -125,6 +126,7 @@ class ProfileModel extends Profile {
       verificationReviewedBy: json['verificationReviewedBy'] as String?,
       isAdmin: json['isAdmin'] as bool? ?? false,
       isSupport: json['isSupport'] as bool? ?? false,
+      is2FAEnabled: json['is2FAEnabled'] as bool? ?? false,
       socialLinks: json['socialLinks'] != null
           ? SocialLinksModel.fromJson(json['socialLinks'] as Map<String, dynamic>)
           : null,
@@ -244,6 +246,7 @@ class ProfileModel extends Profile {
       'verificationReviewedBy': verificationReviewedBy,
       'isAdmin': isAdmin,
       'isSupport': isSupport,
+      'is2FAEnabled': is2FAEnabled,
       'socialLinks': socialLinks != null
           ? SocialLinksModel.fromEntity(socialLinks!).toJson()
           : null,
@@ -305,6 +308,7 @@ class ProfileModel extends Profile {
       verificationReviewedBy: profile.verificationReviewedBy,
       isAdmin: profile.isAdmin,
       isSupport: profile.isSupport,
+      is2FAEnabled: profile.is2FAEnabled,
       socialLinks: profile.socialLinks,
       membershipTier: profile.membershipTier,
       membershipStartDate: profile.membershipStartDate,

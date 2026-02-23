@@ -1169,5 +1169,72 @@
   "shopCheckInternet": "Make sure you have an internet connection\nand try again.",
   "shopMembershipActivated": "GreenGo Membership activated! +500 bonus coins. Valid until {date}.",
   "@shopMembershipActivated": { "placeholders": { "date": { "type": "String" } } },
-  "shopPreviousPurchaseFound": "Previous purchase found. Please try again."
+  "shopPreviousPurchaseFound": "Previous purchase found. Please try again.",
+  "reuploadVerification": "Re-upload Verification Photo",
+
+  "reverificationTitle": "Identity Verification",
+  "reverificationHeading": "We need to verify your identity",
+  "reverificationDescription": "Please take a clear selfie so we can verify your identity. Make sure your face is well lit and clearly visible.",
+  "reverificationReasonLabel": "Reason for request:",
+  "reverificationPhotoTips": "Photo Tips",
+  "reverificationTipLighting": "Good lighting \u2014 face the light source",
+  "reverificationTipCamera": "Look directly at the camera",
+  "reverificationTipNoAccessories": "No sunglasses, hats, or masks",
+  "reverificationTipFullFace": "Make sure your full face is visible",
+  "reverificationRetakePhoto": "Retake Photo",
+  "reverificationTapToSelfie": "Tap to take a selfie",
+  "reverificationSubmit": "Submit for Review",
+  "reverificationInfoText": "After submitting, your profile will be under review. You will get access once approved.",
+  "reverificationCameraError": "Failed to open camera",
+  "reverificationUploadFailed": "Upload failed. Please try again.",
+
+  "notificationDialogTitle": "Stay Connected",
+  "notificationDialogMessage": "Enable notifications to know when you get matches, messages, and super likes.",
+  "notificationDialogEnable": "Enable",
+  "notificationDialogNotNow": "Not Now",
+
+  "discoveryFilterAll": "All",
+  "discoveryFilterLiked": "Liked",
+  "discoveryFilterSuperLiked": "Super Liked",
+  "discoveryFilterPassed": "Passed",
+  "discoveryFilterSkipped": "Skipped",
+  "discoveryFilterMatches": "Matches",
+  "discoveryError": "Error: {error}",
+  "@discoveryError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "admin2faTitle": "Admin Verification",
+  "admin2faSubtitle": "Enter the 6-digit code sent to your email",
+  "admin2faCodeSent": "Code sent to {email}",
+  "@admin2faCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faVerify": "Verify",
+  "admin2faResend": "Resend Code",
+  "admin2faResendIn": "Resend in {seconds}s",
+  "@admin2faResendIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faInvalidCode": "Invalid verification code",
+  "admin2faExpired": "Code expired. Please request a new one.",
+  "admin2faMaxAttempts": "Too many attempts. Please request a new code.",
+  "admin2faSending": "Sending code...",
+  "admin2faSignOut": "Sign Out",
+  "twoFaToggleTitle": "Enable 2FA Authenticator",
+  "twoFaToggleSubtitle": "Require email code verification on every login",
+  "twoFaEnabled": "2FA authentication enabled",
+  "twoFaDisabled": "2FA authentication disabled"
 }
