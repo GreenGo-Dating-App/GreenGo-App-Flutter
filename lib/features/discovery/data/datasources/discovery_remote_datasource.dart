@@ -392,20 +392,63 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           .limit(1)
           .get();
 
+      print('[Discovery] _getAdminCandidate: query returned ${adminQuery.docs.length} docs');
+
       if (adminQuery.docs.isEmpty) return null;
 
       final adminDoc = adminQuery.docs.first;
+      print('[Discovery] _getAdminCandidate: found admin doc ${adminDoc.id}');
 
       // Don't show admin to themselves
       if (adminDoc.id == userId) return null;
 
-      final adminProfile = ProfileModel.fromFirestore(adminDoc);
+      Profile adminProfile;
+      try {
+        adminProfile = ProfileModel.fromFirestore(adminDoc);
+        print('[Discovery] _getAdminCandidate: parsed profile OK — ${adminProfile.displayName}');
+      } catch (parseError, parseStack) {
+        print('[Discovery] _getAdminCandidate: ProfileModel.fromFirestore FAILED: $parseError');
+        print('[Discovery] _getAdminCandidate: stack: $parseStack');
+        // Fallback: build minimal profile from raw data
+        final data = adminDoc.data();
+        final loc = data['location'] as Map<String, dynamic>?;
+        adminProfile = ProfileModel(
+          userId: adminDoc.id,
+          displayName: data['displayName'] as String? ?? 'GreenGo Support',
+          nickname: data['nickname'] as String?,
+          dateOfBirth: DateTime(1990, 1, 1),
+          gender: data['gender'] as String? ?? 'other',
+          photoUrls: data['photoUrls'] != null
+              ? List<String>.from(data['photoUrls'] as List)
+              : <String>[],
+          bio: data['bio'] as String? ?? '',
+          interests: data['interests'] != null
+              ? List<String>.from(data['interests'] as List)
+              : <String>[],
+          location: LocationModel(
+            latitude: (loc?['latitude'] as num?)?.toDouble() ?? 0,
+            longitude: (loc?['longitude'] as num?)?.toDouble() ?? 0,
+            city: loc?['city'] as String? ?? 'Unknown',
+            country: loc?['country'] as String? ?? 'Unknown',
+            displayAddress: loc?['displayAddress'] as String? ?? 'Unknown',
+          ),
+          languages: data['languages'] != null
+              ? List<String>.from(data['languages'] as List)
+              : <String>[],
+          createdAt: DateTime.now(),
+          updatedAt: DateTime.now(),
+          isComplete: true,
+          isAdmin: true,
+          verificationStatus: VerificationStatus.approved,
+        );
+        print('[Discovery] _getAdminCandidate: using fallback profile for ${adminProfile.displayName}');
+      }
 
       // Create a special match score for admin (always shown as recommended)
       final adminMatchScore = MatchScore(
         userId1: userId,
         userId2: adminDoc.id,
-        overallScore: 100.0, // Admin is always shown as top match
+        overallScore: 100.0,
         breakdown: const ScoreBreakdown(
           locationScore: 100.0,
           ageCompatibilityScore: 100.0,
@@ -418,12 +461,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       return MatchCandidate(
         profile: adminProfile,
         matchScore: adminMatchScore,
-        distance: 0.0, // Admin is always "nearby"
+        distance: 0.0,
         suggestedAt: DateTime.now(),
-        isSuperLike: true, // Mark admin as super recommended
+        isSuperLike: true,
       );
-    } catch (e) {
-      // If any error, just skip admin
+    } catch (e, stack) {
+      print('[Discovery] _getAdminCandidate FAILED completely: $e');
+      print('[Discovery] Stack: $stack');
       return null;
     }
   }

@@ -72,7 +72,12 @@ class AdminDataUtils {
       final profileDoc = await _firestore.collection('profiles').doc(user.uid).get();
 
       if (!profileDoc.exists) {
-        // Create complete admin profile
+        // Only create admin profile if user is actually in admin_users collection
+        final adminDoc = await _firestore.collection('admin_users').doc(user.uid).get();
+        if (!adminDoc.exists) {
+          debugPrint('⚠️ User ${user.email} has no profile and is not in admin_users — skipping');
+          return false;
+        }
         debugPrint('📝 Creating admin profile for ${user.email}...');
         await _createAdminProfile(user.uid, user.email);
         return true;
