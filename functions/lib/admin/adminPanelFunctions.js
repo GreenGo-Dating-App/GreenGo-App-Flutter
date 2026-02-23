@@ -659,13 +659,17 @@ exports.cleanupOrphanedAuthUser = functions.https.onCall(async (data, _context) 
             throw err;
         }
         const userId = userRecord.uid;
-        // Check if a Firestore profile exists for this user
-        const profileDoc = await db.collection('profiles').doc(userId).get();
-        if (profileDoc.exists) {
-            // Profile exists — this is NOT an orphan, do not delete
+        // Check if user exists in any Firestore collection (profiles, admin_users, users)
+        const [profileDoc, adminDoc, userDoc] = await Promise.all([
+            db.collection('profiles').doc(userId).get(),
+            db.collection('admin_users').doc(userId).get(),
+            db.collection('users').doc(userId).get(),
+        ]);
+        if (profileDoc.exists || adminDoc.exists || userDoc.exists) {
+            // User exists in Firestore — this is NOT an orphan, do not delete
             throw new functions.https.HttpsError('failed-precondition', 'This email belongs to an active account');
         }
-        // No profile exists — this is an orphaned Auth user, safe to delete
+        // No Firestore data exists — this is an orphaned Auth user, safe to delete
         await auth.deleteUser(userId);
         console.log(`Cleaned up orphaned Auth user: ${userId} (${email})`);
         // Log the cleanup action
