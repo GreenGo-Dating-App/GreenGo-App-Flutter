@@ -14,7 +14,7 @@ class LoadPendingVerifications extends VerificationAdminEvent {
 class LoadVerificationHistory extends VerificationAdminEvent {
   final int limit;
 
-  const LoadVerificationHistory({this.limit = 50});
+  const LoadVerificationHistory({this.limit = 100});
 
   @override
   List<Object?> get props => [limit];

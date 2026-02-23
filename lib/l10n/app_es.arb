@@ -998,5 +998,72 @@
   "shopRetry": "Reintentar",
   "shopCheckInternet": "Asegúrate de tener conexión a internet\ny vuelve a intentarlo.",
   "shopMembershipActivated": "¡Membresía GreenGo activada! +500 monedas de bono. Válida hasta {date}.",
-  "shopPreviousPurchaseFound": "Compra anterior encontrada. Inténtalo de nuevo."
+  "shopPreviousPurchaseFound": "Compra anterior encontrada. Inténtalo de nuevo.",
+  "reuploadVerification": "Volver a subir foto de verificación",
+
+  "reverificationTitle": "Verificación de identidad",
+  "reverificationHeading": "Necesitamos verificar tu identidad",
+  "reverificationDescription": "Por favor, tómate un selfie claro para verificar tu identidad. Asegúrate de tener buena iluminación y que tu rostro sea visible.",
+  "reverificationReasonLabel": "Motivo de la solicitud:",
+  "reverificationPhotoTips": "Consejos para la foto",
+  "reverificationTipLighting": "Buena iluminación \u2014 mira hacia la fuente de luz",
+  "reverificationTipCamera": "Mira directamente a la cámara",
+  "reverificationTipNoAccessories": "Sin gafas de sol, sombreros ni mascarillas",
+  "reverificationTipFullFace": "Asegúrate de que tu rostro completo sea visible",
+  "reverificationRetakePhoto": "Repetir foto",
+  "reverificationTapToSelfie": "Toca para tomar un selfie",
+  "reverificationSubmit": "Enviar para revisión",
+  "reverificationInfoText": "Después de enviar, tu perfil estará en revisión. Obtendrás acceso una vez aprobado.",
+  "reverificationCameraError": "No se pudo abrir la cámara",
+  "reverificationUploadFailed": "Error al subir. Por favor, inténtalo de nuevo.",
+
+  "notificationDialogTitle": "Mantente conectado",
+  "notificationDialogMessage": "Activa las notificaciones para saber cuándo recibes matches, mensajes y super likes.",
+  "notificationDialogEnable": "Activar",
+  "notificationDialogNotNow": "Ahora no",
+
+  "discoveryFilterAll": "Todos",
+  "discoveryFilterLiked": "Me gusta",
+  "discoveryFilterSuperLiked": "Super Like",
+  "discoveryFilterPassed": "Rechazados",
+  "discoveryFilterSkipped": "Omitidos",
+  "discoveryFilterMatches": "Matches",
+  "discoveryError": "Error: {error}",
+  "@discoveryError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "admin2faTitle": "Verificación de Admin",
+  "admin2faSubtitle": "Ingresa el código de 6 dígitos enviado a tu correo",
+  "admin2faCodeSent": "Código enviado a {email}",
+  "@admin2faCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faVerify": "Verificar",
+  "admin2faResend": "Reenviar Código",
+  "admin2faResendIn": "Reenviar en {seconds}s",
+  "@admin2faResendIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faInvalidCode": "Código de verificación inválido",
+  "admin2faExpired": "Código expirado. Solicita uno nuevo.",
+  "admin2faMaxAttempts": "Demasiados intentos. Solicita un nuevo código.",
+  "admin2faSending": "Enviando código...",
+  "admin2faSignOut": "Cerrar Sesión",
+  "twoFaToggleTitle": "Activar Autenticación 2FA",
+  "twoFaToggleSubtitle": "Requerir verificación por código de email en cada inicio de sesión",
+  "twoFaEnabled": "Autenticación 2FA activada",
+  "twoFaDisabled": "Autenticación 2FA desactivada"
 }

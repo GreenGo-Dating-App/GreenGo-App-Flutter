@@ -2499,4 +2499,146 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get shopPreviousPurchaseFound =>
       'Compra anterior encontrada. Inténtalo de nuevo.';
+
+  @override
+  String get reuploadVerification => 'Volver a subir foto de verificación';
+
+  @override
+  String get reverificationTitle => 'Verificación de identidad';
+
+  @override
+  String get reverificationHeading => 'Necesitamos verificar tu identidad';
+
+  @override
+  String get reverificationDescription =>
+      'Por favor, tómate un selfie claro para verificar tu identidad. Asegúrate de tener buena iluminación y que tu rostro sea visible.';
+
+  @override
+  String get reverificationReasonLabel => 'Motivo de la solicitud:';
+
+  @override
+  String get reverificationPhotoTips => 'Consejos para la foto';
+
+  @override
+  String get reverificationTipLighting =>
+      'Buena iluminación — mira hacia la fuente de luz';
+
+  @override
+  String get reverificationTipCamera => 'Mira directamente a la cámara';
+
+  @override
+  String get reverificationTipNoAccessories =>
+      'Sin gafas de sol, sombreros ni mascarillas';
+
+  @override
+  String get reverificationTipFullFace =>
+      'Asegúrate de que tu rostro completo sea visible';
+
+  @override
+  String get reverificationRetakePhoto => 'Repetir foto';
+
+  @override
+  String get reverificationTapToSelfie => 'Toca para tomar un selfie';
+
+  @override
+  String get reverificationSubmit => 'Enviar para revisión';
+
+  @override
+  String get reverificationInfoText =>
+      'Después de enviar, tu perfil estará en revisión. Obtendrás acceso una vez aprobado.';
+
+  @override
+  String get reverificationCameraError => 'No se pudo abrir la cámara';
+
+  @override
+  String get reverificationUploadFailed =>
+      'Error al subir. Por favor, inténtalo de nuevo.';
+
+  @override
+  String get notificationDialogTitle => 'Mantente conectado';
+
+  @override
+  String get notificationDialogMessage =>
+      'Activa las notificaciones para saber cuándo recibes matches, mensajes y super likes.';
+
+  @override
+  String get notificationDialogEnable => 'Activar';
+
+  @override
+  String get notificationDialogNotNow => 'Ahora no';
+
+  @override
+  String get discoveryFilterAll => 'Todos';
+
+  @override
+  String get discoveryFilterLiked => 'Me gusta';
+
+  @override
+  String get discoveryFilterSuperLiked => 'Super Like';
+
+  @override
+  String get discoveryFilterPassed => 'Rechazados';
+
+  @override
+  String get discoveryFilterSkipped => 'Omitidos';
+
+  @override
+  String get discoveryFilterMatches => 'Matches';
+
+  @override
+  String discoveryError(String error) {
+    return 'Error: $error';
+  }
+
+  @override
+  String get admin2faTitle => 'Verificación de Admin';
+
+  @override
+  String get admin2faSubtitle =>
+      'Ingresa el código de 6 dígitos enviado a tu correo';
+
+  @override
+  String admin2faCodeSent(String email) {
+    return 'Código enviado a $email';
+  }
+
+  @override
+  String get admin2faVerify => 'Verificar';
+
+  @override
+  String get admin2faResend => 'Reenviar Código';
+
+  @override
+  String admin2faResendIn(String seconds) {
+    return 'Reenviar en ${seconds}s';
+  }
+
+  @override
+  String get admin2faInvalidCode => 'Código de verificación inválido';
+
+  @override
+  String get admin2faExpired => 'Código expirado. Solicita uno nuevo.';
+
+  @override
+  String get admin2faMaxAttempts =>
+      'Demasiados intentos. Solicita un nuevo código.';
+
+  @override
+  String get admin2faSending => 'Enviando código...';
+
+  @override
+  String get admin2faSignOut => 'Cerrar Sesión';
+
+  @override
+  String get twoFaToggleTitle => 'Activar Autenticación 2FA';
+
+  @override
+  String get twoFaToggleSubtitle =>
+      'Requerir verificación por código de email en cada inicio de sesión';
+
+  @override
+  String get twoFaEnabled => 'Autenticación 2FA activada';
+
+  @override
+  String get twoFaDisabled => 'Autenticación 2FA desactivada';
 }

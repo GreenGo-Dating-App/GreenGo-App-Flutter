@@ -2500,4 +2500,147 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get shopPreviousPurchaseFound =>
       'Vorheriger Kauf gefunden. Bitte versuche es erneut.';
+
+  @override
+  String get reuploadVerification => 'Verifizierungsfoto erneut hochladen';
+
+  @override
+  String get reverificationTitle => 'Identitätsverifizierung';
+
+  @override
+  String get reverificationHeading => 'Wir müssen deine Identität verifizieren';
+
+  @override
+  String get reverificationDescription =>
+      'Bitte mache ein klares Selfie, damit wir deine Identität verifizieren können. Achte auf gute Beleuchtung und dass dein Gesicht gut sichtbar ist.';
+
+  @override
+  String get reverificationReasonLabel => 'Grund der Anfrage:';
+
+  @override
+  String get reverificationPhotoTips => 'Fototipps';
+
+  @override
+  String get reverificationTipLighting =>
+      'Gute Beleuchtung — wende dich der Lichtquelle zu';
+
+  @override
+  String get reverificationTipCamera => 'Schaue direkt in die Kamera';
+
+  @override
+  String get reverificationTipNoAccessories =>
+      'Keine Sonnenbrillen, Hüte oder Masken';
+
+  @override
+  String get reverificationTipFullFace =>
+      'Dein ganzes Gesicht muss sichtbar sein';
+
+  @override
+  String get reverificationRetakePhoto => 'Foto wiederholen';
+
+  @override
+  String get reverificationTapToSelfie => 'Tippe, um ein Selfie zu machen';
+
+  @override
+  String get reverificationSubmit => 'Zur Überprüfung einreichen';
+
+  @override
+  String get reverificationInfoText =>
+      'Nach dem Einreichen wird dein Profil überprüft. Du erhältst Zugang nach der Genehmigung.';
+
+  @override
+  String get reverificationCameraError => 'Kamera konnte nicht geöffnet werden';
+
+  @override
+  String get reverificationUploadFailed =>
+      'Upload fehlgeschlagen. Bitte versuche es erneut.';
+
+  @override
+  String get notificationDialogTitle => 'Bleib verbunden';
+
+  @override
+  String get notificationDialogMessage =>
+      'Aktiviere Benachrichtigungen, um über Matches, Nachrichten und Super-Likes informiert zu werden.';
+
+  @override
+  String get notificationDialogEnable => 'Aktivieren';
+
+  @override
+  String get notificationDialogNotNow => 'Nicht jetzt';
+
+  @override
+  String get discoveryFilterAll => 'Alle';
+
+  @override
+  String get discoveryFilterLiked => 'Geliked';
+
+  @override
+  String get discoveryFilterSuperLiked => 'Super-Liked';
+
+  @override
+  String get discoveryFilterPassed => 'Abgelehnt';
+
+  @override
+  String get discoveryFilterSkipped => 'Übersprungen';
+
+  @override
+  String get discoveryFilterMatches => 'Matches';
+
+  @override
+  String discoveryError(String error) {
+    return 'Fehler: $error';
+  }
+
+  @override
+  String get admin2faTitle => 'Admin-Verifizierung';
+
+  @override
+  String get admin2faSubtitle =>
+      'Geben Sie den 6-stelligen Code ein, der an Ihre E-Mail gesendet wurde';
+
+  @override
+  String admin2faCodeSent(String email) {
+    return 'Code gesendet an $email';
+  }
+
+  @override
+  String get admin2faVerify => 'Verifizieren';
+
+  @override
+  String get admin2faResend => 'Code erneut senden';
+
+  @override
+  String admin2faResendIn(String seconds) {
+    return 'Erneut senden in ${seconds}s';
+  }
+
+  @override
+  String get admin2faInvalidCode => 'Ungültiger Verifizierungscode';
+
+  @override
+  String get admin2faExpired =>
+      'Code abgelaufen. Bitte fordern Sie einen neuen an.';
+
+  @override
+  String get admin2faMaxAttempts =>
+      'Zu viele Versuche. Bitte fordern Sie einen neuen Code an.';
+
+  @override
+  String get admin2faSending => 'Code wird gesendet...';
+
+  @override
+  String get admin2faSignOut => 'Abmelden';
+
+  @override
+  String get twoFaToggleTitle => '2FA-Authentifizierung aktivieren';
+
+  @override
+  String get twoFaToggleSubtitle =>
+      'E-Mail-Code-Verifizierung bei jeder Anmeldung erforderlich';
+
+  @override
+  String get twoFaEnabled => '2FA-Authentifizierung aktiviert';
+
+  @override
+  String get twoFaDisabled => '2FA-Authentifizierung deaktiviert';
 }

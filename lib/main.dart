@@ -52,6 +52,9 @@ import 'features/chat/presentation/screens/support_chat_screen.dart';
 import 'features/notifications/domain/repositories/notification_repository.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/constants/app_colors.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'features/profile/presentation/screens/reverification_screen.dart';
+import 'features/admin/presentation/screens/admin_2fa_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -386,6 +389,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
   bool _hasCheckedVersion = false;
   bool _isCheckingAccess = false;
   bool _notificationPromptShown = false;
+  bool _admin2FAVerified = false;
+  bool _user2FAEnabled = false;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
 
@@ -444,6 +449,17 @@ class _AuthWrapperState extends State<AuthWrapper> {
           'isTestUser=${accessData?.isTestUser}, '
           'approvalStatus=${accessData?.approvalStatus}, '
           'tier=${accessData?.membershipTier}');
+
+      // Check if user has 2FA enabled in their profile
+      try {
+        final profileDoc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(userId)
+            .get();
+        _user2FAEnabled = profileDoc.data()?['is2FAEnabled'] as bool? ?? false;
+      } catch (_) {
+        _user2FAEnabled = false;
+      }
 
       // Admin and test users ALWAYS get through — force approve if needed
       if (accessData != null && (accessData.isAdmin || accessData.isTestUser)) {
@@ -505,6 +521,9 @@ class _AuthWrapperState extends State<AuthWrapper> {
     setState(() {
       _accessData = null;
       _notificationPromptShown = false;
+      _admin2FAVerified = false;
+      _user2FAEnabled = false;
+      Admin2FAScreen.resetVerification();
     });
   }
 
@@ -516,6 +535,40 @@ class _AuthWrapperState extends State<AuthWrapper> {
     final state = context.read<AuthBloc>().state;
     if (state is AuthAuthenticated) {
       _checkAccessStatus(state.user.uid);
+    }
+  }
+
+  void _handleReverify() async {
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null) return;
+
+    final result = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(
+        builder: (context) => ReverificationScreen(
+          userId: userId,
+        ),
+      ),
+    );
+
+    if (result == true) {
+      _handleRefresh();
+    }
+  }
+
+  void _handleContactSupport() async {
+    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    final uri = Uri(
+      scheme: 'mailto',
+      path: 'support@greengochat.com',
+      queryParameters: {
+        'subject': 'Account Rejection Appeal',
+        'body': 'User ID: $userId\n\nPlease describe your issue:\n',
+      },
+    );
+    try {
+      await launchUrl(uri);
+    } catch (_) {
+      // Email client not available
     }
   }
 
@@ -573,6 +626,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
       if (!mounted) return;
 
       // Show the styled dialog
+      final l10n = AppLocalizations.of(context);
       final enable = await showDialog<bool>(
         context: context,
         barrierDismissible: false,
@@ -590,19 +644,19 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 const Icon(Icons.notifications_active,
                     color: AppColors.richGold, size: 48),
                 const SizedBox(height: 16),
-                const Text(
-                  'Stay Connected',
-                  style: TextStyle(
+                Text(
+                  l10n?.notificationDialogTitle ?? 'Stay Connected',
+                  style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const Text(
-                  'Enable notifications to know when you get matches, messages, and super likes.',
+                Text(
+                  l10n?.notificationDialogMessage ?? 'Enable notifications to know when you get matches, messages, and super likes.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 15,
                   ),
@@ -620,16 +674,16 @@ class _AuthWrapperState extends State<AuthWrapper> {
                       ),
                     ),
                     onPressed: () => Navigator.of(ctx).pop(true),
-                    child: const Text('Enable',
-                        style: TextStyle(
+                    child: Text(l10n?.notificationDialogEnable ?? 'Enable',
+                        style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16)),
                   ),
                 ),
                 const SizedBox(height: 10),
                 TextButton(
                   onPressed: () => Navigator.of(ctx).pop(false),
-                  child: const Text('Not Now',
-                      style: TextStyle(color: AppColors.textTertiary)),
+                  child: Text(l10n?.notificationDialogNotNow ?? 'Not Now',
+                      style: const TextStyle(color: AppColors.textTertiary)),
                 ),
               ],
             ),
@@ -691,6 +745,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
           setState(() {
             _accessData = null;
             _isCheckingAccess = false;
+            _admin2FAVerified = false;
+            Admin2FAScreen.resetVerification();
           });
         }
       },
@@ -700,6 +756,13 @@ class _AuthWrapperState extends State<AuthWrapper> {
         } else if (state is AuthWaitingForAccess) {
           // Admin and test users bypass waiting — go straight to app
           if (_accessData != null && (_accessData!.isAdmin || _accessData!.isTestUser)) {
+            // Admin users must complete 2FA before accessing the app
+            if (_accessData!.isAdmin && !_admin2FAVerified) {
+              return Admin2FAScreen(
+                onVerified: () => setState(() => _admin2FAVerified = true),
+                onSignOut: _handleSignOut,
+              );
+            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // Also bypass if tier is 'test' (from auth state directly)
@@ -708,16 +771,24 @@ class _AuthWrapperState extends State<AuthWrapper> {
           }
           // Approved users bypass waiting — profile is verified
           if (state.approvalStatus == 'approved') {
+            // Users with 2FA enabled must verify before accessing the app
+            if (_user2FAEnabled && !_admin2FAVerified) {
+              return Admin2FAScreen(
+                onVerified: () => setState(() => _admin2FAVerified = true),
+                onSignOut: _handleSignOut,
+              );
+            }
             return MainNavigationScreen(userId: state.user.uid);
           }
           // User is waiting for access (pending or rejected)
+          final waitingApprovalStatus = ApprovalStatus.values.firstWhere(
+            (e) => e.name == state.approvalStatus,
+            orElse: () => ApprovalStatus.pending,
+          );
           return WaitingScreen(
             accessData: UserAccessData(
               userId: state.user.uid,
-              approvalStatus: ApprovalStatus.values.firstWhere(
-                (e) => e.name == state.approvalStatus,
-                orElse: () => ApprovalStatus.pending,
-              ),
+              approvalStatus: waitingApprovalStatus,
               accessDate: state.accessDate,
               membershipTier: SubscriptionTier.values.firstWhere(
                 (e) => e.name == state.membershipTier,
@@ -729,16 +800,32 @@ class _AuthWrapperState extends State<AuthWrapper> {
             onSignOut: _handleSignOut,
             onRefresh: _handleRefresh,
             onEnableNotifications: _handleEnableNotifications,
+            onReverify: waitingApprovalStatus == ApprovalStatus.rejected ? _handleReverify : null,
+            onContactSupport: waitingApprovalStatus == ApprovalStatus.rejected ? _handleContactSupport : null,
           );
         } else if (state is AuthAuthenticated) {
           // Check if we have access data and if user should wait
           if (_accessData != null) {
             // Admin and test users ALWAYS bypass — never show waiting screen
             if (_accessData!.isAdmin || _accessData!.isTestUser) {
+              // Admin users must complete 2FA before accessing the app
+              if (_accessData!.isAdmin && !_admin2FAVerified) {
+                return Admin2FAScreen(
+                  onVerified: () => setState(() => _admin2FAVerified = true),
+                  onSignOut: _handleSignOut,
+                );
+              }
               return MainNavigationScreen(userId: state.user.uid);
             }
             // Approved users (verified profile) — let them into the app
             if (_accessData!.approvalStatus == ApprovalStatus.approved) {
+              // Users with 2FA enabled must verify before accessing the app
+              if (_user2FAEnabled && !_admin2FAVerified) {
+                return Admin2FAScreen(
+                  onVerified: () => setState(() => _admin2FAVerified = true),
+                  onSignOut: _handleSignOut,
+                );
+              }
               return MainNavigationScreen(userId: state.user.uid);
             }
             // Rejected users — show rejected waiting screen
@@ -747,6 +834,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 accessData: _accessData,
                 onSignOut: _handleSignOut,
                 onRefresh: _handleRefresh,
+                onReverify: _handleReverify,
+                onContactSupport: _handleContactSupport,
               );
             }
             // Pending users — show countdown (if active) or "under review" screen

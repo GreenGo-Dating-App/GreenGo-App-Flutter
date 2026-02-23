@@ -998,5 +998,72 @@
   "shopRetry": "Erneut versuchen",
   "shopCheckInternet": "Stelle sicher, dass du eine Internetverbindung hast\nund versuche es erneut.",
   "shopMembershipActivated": "GreenGo Mitgliedschaft aktiviert! +500 Bonusmünzen. Gültig bis {date}.",
-  "shopPreviousPurchaseFound": "Vorheriger Kauf gefunden. Bitte versuche es erneut."
+  "shopPreviousPurchaseFound": "Vorheriger Kauf gefunden. Bitte versuche es erneut.",
+  "reuploadVerification": "Verifizierungsfoto erneut hochladen",
+
+  "reverificationTitle": "Identitätsverifizierung",
+  "reverificationHeading": "Wir müssen deine Identität verifizieren",
+  "reverificationDescription": "Bitte mache ein klares Selfie, damit wir deine Identität verifizieren können. Achte auf gute Beleuchtung und dass dein Gesicht gut sichtbar ist.",
+  "reverificationReasonLabel": "Grund der Anfrage:",
+  "reverificationPhotoTips": "Fototipps",
+  "reverificationTipLighting": "Gute Beleuchtung \u2014 wende dich der Lichtquelle zu",
+  "reverificationTipCamera": "Schaue direkt in die Kamera",
+  "reverificationTipNoAccessories": "Keine Sonnenbrillen, Hüte oder Masken",
+  "reverificationTipFullFace": "Dein ganzes Gesicht muss sichtbar sein",
+  "reverificationRetakePhoto": "Foto wiederholen",
+  "reverificationTapToSelfie": "Tippe, um ein Selfie zu machen",
+  "reverificationSubmit": "Zur Überprüfung einreichen",
+  "reverificationInfoText": "Nach dem Einreichen wird dein Profil überprüft. Du erhältst Zugang nach der Genehmigung.",
+  "reverificationCameraError": "Kamera konnte nicht geöffnet werden",
+  "reverificationUploadFailed": "Upload fehlgeschlagen. Bitte versuche es erneut.",
+
+  "notificationDialogTitle": "Bleib verbunden",
+  "notificationDialogMessage": "Aktiviere Benachrichtigungen, um über Matches, Nachrichten und Super-Likes informiert zu werden.",
+  "notificationDialogEnable": "Aktivieren",
+  "notificationDialogNotNow": "Nicht jetzt",
+
+  "discoveryFilterAll": "Alle",
+  "discoveryFilterLiked": "Geliked",
+  "discoveryFilterSuperLiked": "Super-Liked",
+  "discoveryFilterPassed": "Abgelehnt",
+  "discoveryFilterSkipped": "Übersprungen",
+  "discoveryFilterMatches": "Matches",
+  "discoveryError": "Fehler: {error}",
+  "@discoveryError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "admin2faTitle": "Admin-Verifizierung",
+  "admin2faSubtitle": "Geben Sie den 6-stelligen Code ein, der an Ihre E-Mail gesendet wurde",
+  "admin2faCodeSent": "Code gesendet an {email}",
+  "@admin2faCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faVerify": "Verifizieren",
+  "admin2faResend": "Code erneut senden",
+  "admin2faResendIn": "Erneut senden in {seconds}s",
+  "@admin2faResendIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "admin2faInvalidCode": "Ungültiger Verifizierungscode",
+  "admin2faExpired": "Code abgelaufen. Bitte fordern Sie einen neuen an.",
+  "admin2faMaxAttempts": "Zu viele Versuche. Bitte fordern Sie einen neuen Code an.",
+  "admin2faSending": "Code wird gesendet...",
+  "admin2faSignOut": "Abmelden",
+  "twoFaToggleTitle": "2FA-Authentifizierung aktivieren",
+  "twoFaToggleSubtitle": "E-Mail-Code-Verifizierung bei jeder Anmeldung erforderlich",
+  "twoFaEnabled": "2FA-Authentifizierung aktiviert",
+  "twoFaDisabled": "2FA-Authentifizierung deaktiviert"
 }

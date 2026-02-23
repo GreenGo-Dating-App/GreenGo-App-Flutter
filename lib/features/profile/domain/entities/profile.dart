@@ -53,6 +53,7 @@ class Profile extends Equatable {
   final String? verificationReviewedBy;  // Admin user ID
   final bool isAdmin;  // Whether this user is an admin
   final bool isSupport;  // Whether this user is a support agent
+  final bool is2FAEnabled;  // Whether 2FA login is enabled
 
   // Social media links
   final SocialLinks? socialLinks;
@@ -109,6 +110,7 @@ class Profile extends Equatable {
     this.verificationReviewedBy,
     this.isAdmin = false,
     this.isSupport = false,
+    this.is2FAEnabled = false,
     this.socialLinks,
     this.membershipTier = MembershipTier.free,
     this.membershipStartDate,
@@ -204,6 +206,7 @@ class Profile extends Equatable {
         verificationReviewedBy,
         isAdmin,
         isSupport,
+        is2FAEnabled,
         socialLinks,
         membershipTier,
         membershipStartDate,
@@ -254,6 +257,7 @@ class Profile extends Equatable {
     String? verificationReviewedBy,
     bool? isAdmin,
     bool? isSupport,
+    bool? is2FAEnabled,
     SocialLinks? socialLinks,
     MembershipTier? membershipTier,
     DateTime? membershipStartDate,
@@ -302,6 +306,7 @@ class Profile extends Equatable {
       verificationReviewedBy: verificationReviewedBy ?? this.verificationReviewedBy,
       isAdmin: isAdmin ?? this.isAdmin,
       isSupport: isSupport ?? this.isSupport,
+      is2FAEnabled: is2FAEnabled ?? this.is2FAEnabled,
       socialLinks: socialLinks ?? this.socialLinks,
       membershipTier: membershipTier ?? this.membershipTier,
       membershipStartDate: membershipStartDate ?? this.membershipStartDate,
