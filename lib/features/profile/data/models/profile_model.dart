@@ -402,12 +402,19 @@ class PersonalityTraitsModel extends PersonalityTraits {
 
   factory PersonalityTraitsModel.fromJson(Map<String, dynamic> json) {
     return PersonalityTraitsModel(
-      openness: json['openness'] as int,
-      conscientiousness: json['conscientiousness'] as int,
-      extraversion: json['extraversion'] as int,
-      agreeableness: json['agreeableness'] as int,
-      neuroticism: json['neuroticism'] as int,
+      openness: _parseIntField(json['openness']),
+      conscientiousness: _parseIntField(json['conscientiousness']),
+      extraversion: _parseIntField(json['extraversion']),
+      agreeableness: _parseIntField(json['agreeableness']),
+      neuroticism: _parseIntField(json['neuroticism']),
     );
+  }
+
+  static int _parseIntField(dynamic value) {
+    if (value is int) return value;
+    if (value is String) return int.tryParse(value) ?? 0;
+    if (value is double) return value.toInt();
+    return 0;
   }
 
   Map<String, dynamic> toJson() {

@@ -484,12 +484,19 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 return _buildGridMode(context, cards, currentIndex);
               }
 
-              if (currentIndex >= cards.length) {
+              // In swipe mode, skip cards that were already acted on from grid
+              var effectiveIndex = currentIndex;
+              while (effectiveIndex < cards.length &&
+                  _gridActionOverlays.containsKey(cards[effectiveIndex].userId)) {
+                effectiveIndex++;
+              }
+
+              if (effectiveIndex >= cards.length) {
                 return _buildEmptyState(context);
               }
 
               // Pre-cache images for upcoming cards
-              _precacheUpcomingImages(cards, currentIndex);
+              _precacheUpcomingImages(cards, effectiveIndex);
 
               final enabled = state is DiscoveryLoaded ||
                   state is DiscoveryRewindUnavailable ||
@@ -507,7 +514,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                     child: _buildCardStack(
                       context,
                       cards,
-                      currentIndex,
+                      effectiveIndex,
                       enabled,
                     ),
                   ),
@@ -515,7 +522,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   // Action buttons
                   _buildActionButtons(
                     context,
-                    cards[currentIndex],
+                    cards[effectiveIndex],
                     enabled,
                   ),
 
@@ -1767,34 +1774,21 @@ class _GridProfileCardState extends State<_GridProfileCard> {
                       ),
                     ],
                   ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        Icons.workspace_premium,
-                        size: 10,
-                        color: profile.membershipTier == MembershipTier.gold
-                            ? const Color(0xFF5D4200)
-                            : Colors.white,
-                      ),
-                      const SizedBox(width: 2),
-                      Text(
-                        switch (profile.membershipTier) {
-                          MembershipTier.free => 'B',
-                          MembershipTier.silver => 'S',
-                          MembershipTier.gold => 'G',
-                          MembershipTier.platinum => 'P',
-                          _ => '',
-                        },
-                        style: TextStyle(
-                          fontSize: 9,
-                          fontWeight: FontWeight.bold,
-                          color: profile.membershipTier == MembershipTier.gold
-                              ? const Color(0xFF5D4200)
-                              : Colors.white,
-                        ),
-                      ),
-                    ],
+                  child: Text(
+                    switch (profile.membershipTier) {
+                      MembershipTier.free => 'B',
+                      MembershipTier.silver => 'S',
+                      MembershipTier.gold => 'G',
+                      MembershipTier.platinum => 'P',
+                      _ => '',
+                    },
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      color: profile.membershipTier == MembershipTier.gold
+                          ? const Color(0xFF5D4200)
+                          : Colors.white,
+                    ),
                   ),
                 ),
               ),
