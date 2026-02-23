@@ -115,22 +115,23 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           continue;
         }
 
+        // Admin/support profiles bypass all filters — always visible
+        final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
+
         // Verification filter: only show verified profiles (skip for admin/support)
-        if (!candidateProfile.isVerified &&
-            !candidateProfile.isAdmin &&
-            !candidateProfile.isSupport) continue;
+        if (!isPrivileged && !candidateProfile.isVerified) continue;
 
-        // Must have at least one photo
-        if (candidateProfile.photoUrls.isEmpty) continue;
+        // Must have at least one photo (skip for admin/support)
+        if (!isPrivileged && candidateProfile.photoUrls.isEmpty) continue;
 
-        // Apply age filter
+        // Apply age filter (skip for admin/support)
         final age = candidateProfile.age;
-        if (age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
+        if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
           continue;
         }
 
-        // Apply gender filter
-        if (preferences.preferredGenders.isNotEmpty) {
+        // Apply gender filter (skip for admin/support)
+        if (!isPrivileged && preferences.preferredGenders.isNotEmpty) {
           final gender = candidateProfile.gender;
           if (gender.isNotEmpty &&
               !preferences.preferredGenders
@@ -140,11 +141,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           }
         }
 
-        // Apply distance filter (skip if either user has no location data)
-        // Use effectiveLocation to respect traveler mode overrides
+        // Apply distance filter (skip for admin/support)
         final candidateLoc = candidateProfile.effectiveLocation;
         double distance = 0.0;
-        if (userLoc.latitude != 0 &&
+        if (!isPrivileged &&
+            userLoc.latitude != 0 &&
             userLoc.longitude != 0 &&
             candidateLoc.latitude != 0 &&
             candidateLoc.longitude != 0) {
@@ -160,8 +161,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           }
         }
 
-        // Apply deal-breaker interests
-        if (preferences.dealBreakerInterests.isNotEmpty) {
+        // Apply deal-breaker interests (skip for admin/support)
+        if (!isPrivileged && preferences.dealBreakerInterests.isNotEmpty) {
           final hasAllDealBreakers = preferences.dealBreakerInterests.every(
             (interest) => candidateProfile.interests.contains(interest),
           );

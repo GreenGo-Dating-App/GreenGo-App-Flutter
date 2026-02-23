@@ -713,12 +713,18 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         .toList()
       ..sort((a, b) => a.candidate.distance.compareTo(b.candidate.distance));
     
-    // Apply filters if any are active
-    List<DiscoveryCard> filteredCards;
+    // Separate admin/support profiles — they always go first
+    final adminCards = allCards.where((card) =>
+        card.candidate.profile.isAdmin || card.candidate.profile.isSupport).toList();
+    final regularCards = allCards.where((card) =>
+        !card.candidate.profile.isAdmin && !card.candidate.profile.isSupport).toList();
+
+    // Apply action filters to regular cards only
+    List<DiscoveryCard> filteredRegular;
     if (_activeFilters.isEmpty) {
-      filteredCards = allCards;
+      filteredRegular = regularCards;
     } else {
-      filteredCards = allCards.where((card) {
+      filteredRegular = regularCards.where((card) {
         final overlay = _gridActionOverlays[card.userId];
         // If no overlay and user wants to see 'all' or specific actions
         if (overlay == null) {
@@ -728,6 +734,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         return _activeFilters.contains(overlay);
       }).toList();
     }
+
+    // Admin/support always first, then regular profiles
+    final List<DiscoveryCard> filteredCards = [
+      ...adminCards,
+      ...filteredRegular,
+    ];
     
     final limit = _gridProfileLimit;
     final visibleCount = filteredCards.length.clamp(0, limit);
@@ -1229,6 +1241,13 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     if (!wasMember) await _loadCurrentUserProfile();
 
     debugPrint('_handleSwipe: direction=$direction, card.userId=${card.userId}');
+
+    // Admin/support profiles cannot be noped/passed/skipped
+    final isPrivileged = card.candidate.profile.isAdmin || card.candidate.profile.isSupport;
+    if (isPrivileged && (direction == SwipeDirection.left || direction == SwipeDirection.down)) {
+      return; // Silently ignore nope/skip on admin
+    }
+
     SwipeActionType actionType;
     switch (direction) {
       case SwipeDirection.left:

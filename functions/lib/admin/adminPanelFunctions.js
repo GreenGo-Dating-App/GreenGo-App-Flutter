@@ -74,18 +74,22 @@ exports.send2FACode = functions.https.onCall(async (_data, context) => {
         throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
     const uid = context.auth.uid;
+    console.log(`send2FACode called by uid: ${uid}`);
     const adminDoc = await db.collection('admin_users').doc(uid).get();
     if (!adminDoc.exists) {
+        console.error(`send2FACode: uid ${uid} not found in admin_users`);
         throw new functions.https.HttpsError('permission-denied', 'Not an admin user');
     }
     const adminData = adminDoc.data();
     const email = (adminData === null || adminData === void 0 ? void 0 : adminData.email) || ((_a = context.auth.token) === null || _a === void 0 ? void 0 : _a.email);
+    console.log(`send2FACode: admin found, email=${email}`);
     if (!email) {
         throw new functions.https.HttpsError('failed-precondition', 'No email associated with this account');
     }
     try {
         const code = String(Math.floor(100000 + Math.random() * 900000));
         const expiresAt = new Date(Date.now() + 5 * 60 * 1000);
+        console.log(`send2FACode: writing code to admin_2fa_codes/${uid}`);
         await db.collection('admin_2fa_codes').doc(uid).set({
             code,
             email,
@@ -93,6 +97,7 @@ exports.send2FACode = functions.https.onCall(async (_data, context) => {
             attempts: 0,
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+        console.log(`send2FACode: code written successfully`);
         const configDoc = await db.doc('app_config/resend_settings').get();
         const resendConfig = configDoc.data();
         const resendApiKey = resendConfig === null || resendConfig === void 0 ? void 0 : resendConfig.apiKey;
@@ -152,10 +157,13 @@ exports.send2FACode = functions.https.onCall(async (_data, context) => {
           `,
             }),
         });
+        const emailResponseText = await emailResponse.text();
+        console.log(`Resend response [${emailResponse.status}]:`, emailResponseText);
         if (!emailResponse.ok) {
-            const errText = await emailResponse.text();
-            console.error('Resend email error:', errText);
-            return { success: true, emailSent: false, message: 'Code generated but email failed to send' };
+            console.error('Resend email error:', emailResponseText);
+            // Return masked email so user sees the code was generated
+            const masked = email.replace(/(.{2})(.*)(@.*)/, '$1***$3');
+            return { success: true, emailSent: false, maskedEmail: masked, message: 'Code generated but email failed to send' };
         }
         await db.collection('security_audit_logs').add({
             action: '2FA_CODE_SENT',
