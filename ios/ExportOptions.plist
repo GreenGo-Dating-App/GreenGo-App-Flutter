@@ -25,7 +25,7 @@
     <!-- Provisioning profiles per bundle ID -->
     <key>provisioningProfiles</key>
     <dict>
-        <key>com.greengo.chat</key>
+        <key>com.greengochat.greengochatapp</key>
         <string>GreenGo Distribution Profile</string>
     </dict>
 

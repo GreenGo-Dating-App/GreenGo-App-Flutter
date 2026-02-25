@@ -45,5 +45,25 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- Location -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>GreenGo needs your location to show people near you and calculate distances.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>GreenGo needs your location to show people near you and calculate distances.</string>
+	<!-- Camera -->
+	<key>NSCameraUsageDescription</key>
+	<string>GreenGo needs camera access to take photos for your profile.</string>
+	<!-- Microphone -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>GreenGo needs microphone access to record voice messages.</string>
+	<!-- Photo Library -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>GreenGo needs access to your photos to upload profile pictures.</string>
+	<!-- Push Notifications -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,97 @@
+workflows:
+  ios-testflight:
+    name: iOS TestFlight Beta
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: Codemagic
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.greengochat.greengochatapp
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      groups:
+        - firebase_credentials
+      vars:
+        BUNDLE_ID: "com.greengochat.greengochatapp"
+        APP_STORE_APPLE_ID: "tommasi.mauro@icloud.com"
+    scripts:
+      - name: Set up code signing settings on Xcode project
+        script: |
+          xcode-project use-profiles
+      - name: Install Firebase config files
+        script: |
+          #!/bin/sh
+          # GoogleService-Info.plist is stored as env var in Codemagic
+          echo $GOOGLE_SERVICE_INFO_PLIST | base64 --decode > $CM_BUILD_DIR/ios/Runner/GoogleService-Info.plist
+          # firebase_options.dart
+          echo $FIREBASE_OPTIONS_DART | base64 --decode > $CM_BUILD_DIR/lib/firebase_options.dart
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Run build_runner
+        script: |
+          dart run build_runner build --delete-conflicting-outputs
+      - name: Flutter analyze
+        script: |
+          flutter analyze --no-fatal-infos
+        ignore_failure: true
+      - name: Build iOS IPA
+        script: |
+          flutter build ipa \
+            --release \
+            --build-name=1.0.12 \
+            --build-number=$PROJECT_BUILD_NUMBER \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - flutter_drive.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        expire_build_submitted_for_review: true
+      email:
+        recipients:
+          - tommasi.mauro@icloud.com
+        notify:
+          success: true
+          failure: true
+
+  android-release:
+    name: Android APK Build
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+      groups:
+        - firebase_credentials
+      vars:
+        BUNDLE_ID: "com.greengochat.greengochatapp"
+    scripts:
+      - name: Install Firebase config files
+        script: |
+          #!/bin/sh
+          echo $GOOGLE_SERVICES_JSON | base64 --decode > $CM_BUILD_DIR/android/app/google-services.json
+          echo $FIREBASE_OPTIONS_DART | base64 --decode > $CM_BUILD_DIR/lib/firebase_options.dart
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Run build_runner
+        script: |
+          dart run build_runner build --delete-conflicting-outputs
+      - name: Build APK
+        script: |
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/*.apk
+    publishing:
+      email:
+        recipients:
+          - tommasi.mauro@icloud.com
+        notify:
+          success: true
+          failure: true
