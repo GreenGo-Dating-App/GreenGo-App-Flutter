@@ -22,7 +22,7 @@ workflows:
             --type IOS_APP_STORE \
             --create
           keychain add-certificates
-          xcode-project use-profiles
+          xcode-project use-profiles --code-signing-setup-verbose-logging
       - name: Install Firebase config files
         script: |
           #!/bin/sh
@@ -38,6 +38,12 @@ workflows:
         script: |
           flutter analyze --no-fatal-infos
         ignore_failure: true
+      - name: Force manual code signing in Xcode project
+        script: |
+          #!/bin/bash
+          # Switch from Automatic to Manual signing for CI
+          sed -i '' 's/CODE_SIGN_STYLE = Automatic/CODE_SIGN_STYLE = Manual/g' \
+            $CM_BUILD_DIR/ios/Runner.xcodeproj/project.pbxproj
       - name: Build iOS IPA
         script: |
           flutter build ipa \
