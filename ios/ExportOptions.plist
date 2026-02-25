@@ -8,7 +8,7 @@
 
     <!-- Team ID from Apple Developer account -->
     <key>teamID</key>
-    <string>YOUR_TEAM_ID</string>
+    <string>9885DQB8RF</string>
 
     <!-- Upload to App Store Connect -->
     <key>destination</key>
