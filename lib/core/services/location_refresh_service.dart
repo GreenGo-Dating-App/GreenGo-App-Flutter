@@ -15,7 +15,18 @@ class LocationRefreshService {
 
   /// Attempt to refresh the user's location. Returns silently on any failure
   /// (no permission, GPS off, timeout, etc.) — this is best-effort.
-  Future<void> refreshIfAllowed(String userId) async {
+  ///
+  /// When [isTravelerActive] is true the user has a virtual traveler location
+  /// that overrides their real position for discovery. In that case we skip
+  /// the GPS refresh entirely — `effectiveLocation` already points to the
+  /// traveler location, and the real `location` will be refreshed once
+  /// traveler mode expires.
+  Future<void> refreshIfAllowed(String userId, {bool isTravelerActive = false}) async {
+    if (isTravelerActive) {
+      debugPrint('[LocationRefresh] Skipped — traveler mode active');
+      return;
+    }
+
     try {
       final serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) return;

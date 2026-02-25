@@ -799,7 +799,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             backgroundColor: AppColors.backgroundCard,
             onRefresh: () async {
               // Silently refresh user's GPS location (best-effort, no prompt)
-              await LocationRefreshService().refreshIfAllowed(userId);
+              // Skip during traveler mode — effectiveLocation uses travelerLocation
+              final isTraveling = _currentUserProfile?.isTravelerActive ?? false;
+              await LocationRefreshService().refreshIfAllowed(userId, isTravelerActive: isTraveling);
               // Reload the user's profile so discovery uses the fresh location
               await _loadCurrentUserProfile(forceServer: true);
 
