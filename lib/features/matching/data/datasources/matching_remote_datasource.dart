@@ -245,11 +245,18 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     if (candidatePoolService == null) return null;
 
     try {
-      final country = userProfile.effectiveLocation.country;
-      if (country.isEmpty || country == 'Unknown') return null;
+      // Use preferred countries if set, otherwise fall back to user's own country
+      List<String> countries;
+      if (preferences.preferredCountries.isNotEmpty) {
+        countries = preferences.preferredCountries;
+      } else {
+        final country = userProfile.effectiveLocation.country;
+        if (country.isEmpty || country == 'Unknown') return null;
+        countries = [country];
+      }
 
       final poolCandidates = await candidatePoolService!.getCandidatesFromPools(
-        country: country,
+        countries: countries,
         genders: preferences.preferredGenders,
         minAge: preferences.minAge,
         maxAge: preferences.maxAge,

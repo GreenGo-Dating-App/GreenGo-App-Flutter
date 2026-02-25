@@ -6,9 +6,6 @@ workflows:
     integrations:
       app_store_connect: Codemagic
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.greengochat.greengochatapp
       flutter: 3.38.1
       xcode: latest
       cocoapods: default
@@ -18,9 +15,6 @@ workflows:
         BUNDLE_ID: "com.greengochat.greengochatapp"
         APP_STORE_APPLE_ID: "tommasi.mauro@icloud.com"
     scripts:
-      - name: Set up code signing settings on Xcode project
-        script: |
-          xcode-project use-profiles
       - name: Install Firebase config files
         script: |
           #!/bin/sh
@@ -36,13 +30,34 @@ workflows:
         script: |
           flutter analyze --no-fatal-infos
         ignore_failure: true
+      - name: Set up code signing
+        script: |
+          keychain initialize
+          echo "CERTIFICATE_PRIVATE_KEY is set: $([ -n "$CERTIFICATE_PRIVATE_KEY" ] && echo YES || echo NO)"
+          app-store-connect fetch-signing-files "com.greengochat.greengochatapp" \
+            --type IOS_APP_STORE \
+            --create \
+            --certificate-key="$CERTIFICATE_PRIVATE_KEY"
+          keychain add-certificates
+          xcode-project use-profiles
+      - name: Debug signing setup
+        script: |
+          echo "=== Checking export_options.plist ==="
+          cat $HOME/export_options.plist || echo "NOT FOUND at HOME"
+          cat /Users/builder/export_options.plist || echo "NOT FOUND at /Users/builder"
+          echo "=== Checking CODE_SIGN_STYLE in project ==="
+          grep "CODE_SIGN_STYLE" $CM_BUILD_DIR/ios/Runner.xcodeproj/project.pbxproj
+          echo "=== Checking PROVISIONING_PROFILE in project ==="
+          grep "PROVISIONING_PROFILE" $CM_BUILD_DIR/ios/Runner.xcodeproj/project.pbxproj || echo "No PROVISIONING_PROFILE found"
+          echo "=== Installed provisioning profiles ==="
+          ls ~/Library/MobileDevice/Provisioning\ Profiles/ || echo "No profiles directory"
       - name: Build iOS IPA
         script: |
           flutter build ipa \
             --release \
-            --build-name=1.0.12 \
+            --build-name=1.0.13 \
             --build-number=$PROJECT_BUILD_NUMBER \
-            --export-options-plist=/Users/builder/export_options.plist
+            --export-options-plist=$HOME/export_options.plist
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
@@ -81,11 +96,13 @@ workflows:
       - name: Run build_runner
         script: |
           dart run build_runner build --delete-conflicting-outputs
-      - name: Build APK
+      - name: Build APK and AAB
         script: |
           flutter build apk --release
+          flutter build appbundle --release
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
+      - build/app/outputs/bundle/release/*.aab
     publishing:
       email:
         recipients:

@@ -328,6 +328,11 @@ export {
   getCandidatePoolStats,
 } from './discovery/candidatePoolPrecompute';
 
+// Presence / Location Enrichment Functions
+export {
+  onPresenceUpdate,
+} from './presence/onPresenceUpdate';
+
 // MVP Access Control Functions
 export {
   approveUser,

@@ -1606,11 +1606,11 @@ class _ChatScreenState extends State<ChatScreen> {
 
   String _formatLastSeen(DateTime lastSeen) {
     final diff = DateTime.now().difference(lastSeen);
-    if (diff.inMinutes < 1) return 'Active just now';
-    if (diff.inMinutes < 60) return 'Active ${diff.inMinutes}m ago';
-    if (diff.inHours < 24) return 'Active ${diff.inHours}h ago';
-    if (diff.inDays < 7) return 'Active ${diff.inDays}d ago';
-    return 'Active a while ago';
+    if (diff.inMinutes < 1) return 'Online just now';
+    if (diff.inMinutes < 60) return 'Online ${diff.inMinutes}m ago';
+    if (diff.inHours < 24) return 'Online ${diff.inHours}h ago';
+    if (diff.inDays < 5) return 'Online ${diff.inDays}d ago';
+    return 'Offline';
   }
 
   PreferredSizeWidget _buildAppBar() {

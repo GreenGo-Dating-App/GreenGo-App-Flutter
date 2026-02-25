@@ -23,15 +23,15 @@ class LastSeenText extends StatelessWidget {
     final difference = now.difference(lastSeen!);
 
     if (difference.inMinutes < 1) {
-      return 'Just now';
+      return 'Online just now';
     } else if (difference.inMinutes < 60) {
-      return 'Active ${difference.inMinutes}m ago';
+      return 'Online ${difference.inMinutes}m ago';
     } else if (difference.inHours < 24) {
-      return 'Active ${difference.inHours}h ago';
-    } else if (difference.inDays < 7) {
-      return 'Active ${difference.inDays}d ago';
+      return 'Online ${difference.inHours}h ago';
+    } else if (difference.inDays < 5) {
+      return 'Online ${difference.inDays}d ago';
     } else {
-      return 'Active ${lastSeen!.month}/${lastSeen!.day}';
+      return 'Offline';
     }
   }
 
