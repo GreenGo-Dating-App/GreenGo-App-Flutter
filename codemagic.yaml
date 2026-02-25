@@ -23,7 +23,8 @@ workflows:
           keychain initialize
           app-store-connect fetch-signing-files "com.greengochat.greengochatapp" \
             --type IOS_APP_STORE \
-            --create
+            --create \
+            --certificate-key=PRIVATE
           keychain add-certificates
           xcode-project use-profiles
       - name: Install Firebase config files
