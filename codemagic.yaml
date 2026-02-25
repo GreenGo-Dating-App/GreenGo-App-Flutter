@@ -6,9 +6,6 @@ workflows:
     integrations:
       app_store_connect: Codemagic
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.greengochat.greengochatapp
       flutter: 3.38.1
       xcode: latest
       cocoapods: default
@@ -48,7 +45,7 @@ workflows:
             --release \
             --build-name=1.0.12 \
             --build-number=$PROJECT_BUILD_NUMBER \
-            --export-options-plist=/Users/builder/export_options.plist
+            --export-options-plist=$HOME/export_options.plist
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
