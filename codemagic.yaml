@@ -55,7 +55,7 @@ workflows:
         script: |
           flutter build ipa \
             --release \
-            --build-name=1.0.12 \
+            --build-name=1.0.13 \
             --build-number=$PROJECT_BUILD_NUMBER \
             --export-options-plist=$HOME/export_options.plist
     artifacts:
@@ -96,11 +96,13 @@ workflows:
       - name: Run build_runner
         script: |
           dart run build_runner build --delete-conflicting-outputs
-      - name: Build APK
+      - name: Build APK and AAB
         script: |
           flutter build apk --release
+          flutter build appbundle --release
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
+      - build/app/outputs/bundle/release/*.aab
     publishing:
       email:
         recipients:

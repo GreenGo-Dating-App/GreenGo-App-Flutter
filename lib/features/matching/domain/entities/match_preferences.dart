@@ -11,6 +11,7 @@ class MatchPreferences {
   final bool showOnlyWithPhotos;
   final List<String> dealBreakerInterests; // Must have these interests
   final List<String> preferredLanguages; // Preferred common languages
+  final List<String> preferredCountries; // Empty = user's own country
   final DateTime updatedAt;
 
   const MatchPreferences({
@@ -23,6 +24,7 @@ class MatchPreferences {
     this.showOnlyWithPhotos = true,
     this.dealBreakerInterests = const [],
     this.preferredLanguages = const [],
+    this.preferredCountries = const [],
     required this.updatedAt,
   });
 
@@ -38,6 +40,7 @@ class MatchPreferences {
       showOnlyWithPhotos: false, // Show all profiles including those without photos
       dealBreakerInterests: const [],
       preferredLanguages: const [],
+      preferredCountries: const [],
       updatedAt: DateTime.now(),
     );
   }
@@ -66,6 +69,7 @@ class MatchPreferences {
     bool? showOnlyWithPhotos,
     List<String>? dealBreakerInterests,
     List<String>? preferredLanguages,
+    List<String>? preferredCountries,
   }) {
     return MatchPreferences(
       userId: userId,
@@ -77,6 +81,7 @@ class MatchPreferences {
       showOnlyWithPhotos: showOnlyWithPhotos ?? this.showOnlyWithPhotos,
       dealBreakerInterests: dealBreakerInterests ?? this.dealBreakerInterests,
       preferredLanguages: preferredLanguages ?? this.preferredLanguages,
+      preferredCountries: preferredCountries ?? this.preferredCountries,
       updatedAt: DateTime.now(),
     );
   }

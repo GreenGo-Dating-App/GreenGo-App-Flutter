@@ -15,6 +15,7 @@ class MatchPreferencesModel extends MatchPreferences {
     required super.showOnlyWithPhotos,
     required super.dealBreakerInterests,
     required super.preferredLanguages,
+    required super.preferredCountries,
     required super.updatedAt,
   });
 
@@ -30,6 +31,7 @@ class MatchPreferencesModel extends MatchPreferences {
       showOnlyWithPhotos: prefs.showOnlyWithPhotos,
       dealBreakerInterests: prefs.dealBreakerInterests,
       preferredLanguages: prefs.preferredLanguages,
+      preferredCountries: prefs.preferredCountries,
       updatedAt: prefs.updatedAt,
     );
   }
@@ -48,6 +50,7 @@ class MatchPreferencesModel extends MatchPreferences {
       showOnlyWithPhotos: data['showOnlyWithPhotos'] ?? true,
       dealBreakerInterests: List<String>.from(data['dealBreakerInterests'] ?? []),
       preferredLanguages: List<String>.from(data['preferredLanguages'] ?? []),
+      preferredCountries: List<String>.from(data['preferredCountries'] ?? []),
       updatedAt: (data['updatedAt'] as Timestamp).toDate(),
     );
   }
@@ -63,6 +66,7 @@ class MatchPreferencesModel extends MatchPreferences {
       'showOnlyWithPhotos': showOnlyWithPhotos,
       'dealBreakerInterests': dealBreakerInterests,
       'preferredLanguages': preferredLanguages,
+      'preferredCountries': preferredCountries,
       'updatedAt': Timestamp.fromDate(updatedAt),
     };
   }

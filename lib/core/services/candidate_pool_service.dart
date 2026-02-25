@@ -115,18 +115,20 @@ class CandidatePoolService {
 
   /// Returns candidate user IDs from pools matching the given preferences.
   ///
-  /// [country] — country to search in (e.g. "Germany")
+  /// [countries] — countries to search in (e.g. ["Germany", "Brazil"])
   /// [genders] — list of preferred genders (empty = all genders)
   /// [minAge], [maxAge] — age range filter
   ///
   /// Returns `null` if no pools are available (caller should fall back
   /// to the full-scan approach).
   Future<List<PoolCandidate>?> getCandidatesFromPools({
-    required String country,
+    required List<String> countries,
     required List<String> genders,
     required int minAge,
     required int maxAge,
   }) async {
+    if (countries.isEmpty) return null;
+
     // Determine which age buckets overlap with the requested range
     final overlappingBuckets = _ageBuckets.where(
       (b) => b.min <= maxAge && b.max >= minAge,
@@ -139,13 +141,16 @@ class CandidatePoolService {
         ? ['Male', 'Female', 'Non-binary', 'Unknown']
         : genders;
 
-    // Build pool keys to fetch
+    // Build pool keys to fetch for ALL countries
     final poolKeys = <String>[];
-    final sanitizedCountry = country.replaceAll(RegExp(r'[^a-zA-Z]'), '');
-    for (final gender in genderKeys) {
-      final sanitizedGender = gender.replaceAll(RegExp(r'[^a-zA-Z]'), '');
-      for (final bucket in overlappingBuckets) {
-        poolKeys.add('${sanitizedCountry}_${sanitizedGender}_${bucket.key}');
+    for (final country in countries) {
+      final sanitizedCountry = country.replaceAll(RegExp(r'[^a-zA-Z]'), '');
+      if (sanitizedCountry.isEmpty) continue;
+      for (final gender in genderKeys) {
+        final sanitizedGender = gender.replaceAll(RegExp(r'[^a-zA-Z]'), '');
+        for (final bucket in overlappingBuckets) {
+          poolKeys.add('${sanitizedCountry}_${sanitizedGender}_${bucket.key}');
+        }
       }
     }
 
@@ -155,7 +160,7 @@ class CandidatePoolService {
     final pools = await _fetchPools(poolKeys);
 
     if (pools.isEmpty) {
-      debugPrint('[CandidatePoolService] No pools found for $country / $genderKeys / $minAge-$maxAge');
+      debugPrint('[CandidatePoolService] No pools found for $countries / $genderKeys / $minAge-$maxAge');
       return null;
     }
 

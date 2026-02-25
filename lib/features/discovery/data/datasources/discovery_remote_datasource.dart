@@ -164,6 +164,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(),
         preferredGenders: preferredGenders,
         showOnlyVerified: preferences.onlyVerified,
+        preferredCountries: preferences.preferredCountries,
         updatedAt: DateTime.now(),
       ),
       limit: 500, // Cap to avoid loading entire database into memory
@@ -203,10 +204,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
+      // When user has a country filter, profiles with unknown/empty country are excluded
       if (preferences.preferredCountries.isNotEmpty) {
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
-          if (country.isEmpty || country == 'Unknown') return true;
+          if (country.isEmpty || country == 'Unknown') return false;
           return preferences.preferredCountries
               .map((c) => c.toLowerCase())
               .contains(country.toLowerCase());
