@@ -8,6 +8,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/location_refresh_service.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../matching/domain/repositories/matching_repository.dart';
@@ -796,7 +797,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           child: RefreshIndicator(
             color: AppColors.richGold,
             backgroundColor: AppColors.backgroundCard,
-            onRefresh: () {
+            onRefresh: () async {
+              // Silently refresh user's GPS location (best-effort, no prompt)
+              await LocationRefreshService().refreshIfAllowed(userId);
+              // Reload the user's profile so discovery uses the fresh location
+              await _loadCurrentUserProfile(forceServer: true);
+
               final completer = Completer<void>();
               refreshWithPreferences(_currentPreferences);
               // Keep spinner visible until bloc emits a non-loading state
