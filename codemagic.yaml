@@ -33,9 +33,11 @@ workflows:
       - name: Set up code signing
         script: |
           keychain initialize
+          echo "CERTIFICATE_PRIVATE_KEY is set: $([ -n "$CERTIFICATE_PRIVATE_KEY" ] && echo YES || echo NO)"
           app-store-connect fetch-signing-files "com.greengochat.greengochatapp" \
             --type IOS_APP_STORE \
-            --create
+            --create \
+            --certificate-key="$CERTIFICATE_PRIVATE_KEY"
           keychain add-certificates
           xcode-project use-profiles
       - name: Debug signing setup
