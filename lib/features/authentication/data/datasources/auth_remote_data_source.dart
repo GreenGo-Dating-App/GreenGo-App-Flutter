@@ -119,12 +119,21 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         throw AuthenticationException('Sign in failed');
       }
 
-      // Store email on profile and users docs so nickname login works for all users
+      // Store email on profile, users, and nicknames docs so nickname login works
       final uid = userCredential.user!.uid;
       final firestore = FirebaseFirestore.instance;
       try {
         firestore.collection('profiles').doc(uid).update({'email': resolvedEmail});
         firestore.collection('users').doc(uid).set({'email': resolvedEmail}, SetOptions(merge: true));
+        // Also sync nickname → email in public nicknames collection
+        final profileDoc = await firestore.collection('profiles').doc(uid).get();
+        final nick = profileDoc.data()?['nickname'] as String?;
+        if (nick != null && nick.isNotEmpty) {
+          firestore.collection('nicknames').doc(nick.toLowerCase()).set({
+            'email': resolvedEmail,
+            'uid': uid,
+          });
+        }
       } catch (_) {}
 
       return UserModel.fromFirebaseUser(userCredential.user!);
@@ -147,43 +156,24 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     }
   }
 
-  /// Resolve a nickname to an email address by querying Firestore profiles
+  /// Resolve a nickname to an email address via the public 'nicknames' collection.
+  /// This collection is readable without authentication (unlike 'profiles').
   Future<String> _resolveNicknameToEmail(String nickname) async {
     try {
       final firestore = FirebaseFirestore.instance;
       final normalizedNickname = nickname.toLowerCase().replaceAll('@', '');
 
-      // Query profiles collection for this nickname
-      final querySnapshot = await firestore
-          .collection('profiles')
-          .where('nickname', isEqualTo: normalizedNickname)
-          .limit(1)
+      // Query the public nicknames collection (readable without auth)
+      final doc = await firestore
+          .collection('nicknames')
+          .doc(normalizedNickname)
           .get();
 
-      if (querySnapshot.docs.isEmpty) {
+      if (!doc.exists || doc.data()?['email'] == null) {
         throw AuthenticationException('No account found with nickname "@$normalizedNickname"');
       }
 
-      final profileData = querySnapshot.docs.first.data();
-      final userId = querySnapshot.docs.first.id;
-
-      // 1. Check if email is stored in the profile document
-      if (profileData['email'] != null && (profileData['email'] as String).isNotEmpty) {
-        return profileData['email'] as String;
-      }
-
-      // 2. Check the 'users' collection
-      final userDoc = await firestore.collection('users').doc(userId).get();
-      if (userDoc.exists && userDoc.data()?['email'] != null) {
-        return userDoc.data()!['email'] as String;
-      }
-
-      // 3. Fallback: check displayName field which sometimes contains email
-      // This shouldn't normally happen — the email gets stored on first login
-      throw AuthenticationException(
-        'Email not found for nickname "@$normalizedNickname". '
-        'Please log in with your email first, then nickname login will work.',
-      );
+      return doc.data()!['email'] as String;
     } on AuthenticationException {
       rethrow;
     } catch (e) {
@@ -588,7 +578,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         return AuthenticationException('NETWORK_ERROR: Please check your internet connection');
       case 'invalid-credential':
       case 'INVALID_LOGIN_CREDENTIALS':
-        return AuthenticationException('Invalid email/nickname or password');
+        return AuthenticationException('Invalid email or password');
       default:
         // Check if the error message contains network-related keywords
         final message = (e.message ?? '').toLowerCase();

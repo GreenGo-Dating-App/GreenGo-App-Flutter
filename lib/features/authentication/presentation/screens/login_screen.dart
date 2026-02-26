@@ -226,18 +226,18 @@ class _LoginScreenState extends State<LoginScreen>
                       position: _slideAnimation,
                       child: Column(
                         children: [
-                          // Email or Nickname Field
+                          // Email Field
                           AuthTextField(
                             controller: _emailController,
-                            label: '${l10n.email} / Nickname',
-                            keyboardType: TextInputType.text,
+                            label: l10n.email,
+                            keyboardType: TextInputType.emailAddress,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {
-                                return 'Please enter your email or nickname';
+                                return 'Please enter your email';
                               }
                               return null;
                             },
-                            prefixIcon: Icons.person_outline,
+                            prefixIcon: Icons.email_outlined,
                             enabled: !isLoading,
                           ),
 

@@ -420,6 +420,14 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // NICKNAMES COLLECTION (public read for nickname login before auth)
+    // ============================================================================
+    match /nicknames/{nickname} {
+      allow read: if true;
+      allow write: if isSignedIn();
+    }
+
+    // ============================================================================
     // FEATURE FLAGS & APP CONFIG (read without auth for startup)
     // ============================================================================
     match /featureFlags/{docId} {
