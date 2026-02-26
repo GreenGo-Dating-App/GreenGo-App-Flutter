@@ -1,12 +1,15 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../domain/entities/match.dart';
+import '../bloc/matches_bloc.dart';
+import '../bloc/matches_event.dart';
 import 'profile_detail_screen.dart';
 
 /// Match Detail Screen
@@ -658,6 +661,25 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           ),
           TextButton(
             onPressed: () {
+              // Dispatch unmatch event to bloc
+              try {
+                context.read<MatchesBloc>().add(
+                  MatchUnmatchRequested(
+                    matchId: widget.match.matchId,
+                    userId: widget.currentUserId,
+                  ),
+                );
+              } catch (_) {
+                // Fallback: directly update Firestore if bloc not available
+                FirebaseFirestore.instance
+                    .collection('matches')
+                    .doc(widget.match.matchId)
+                    .update({
+                  'isActive': false,
+                  'unmatchedAt': FieldValue.serverTimestamp(),
+                  'unmatchedBy': widget.currentUserId,
+                });
+              }
               Navigator.of(context).pop();
               Navigator.of(context).pop();
               ScaffoldMessenger.of(context).showSnackBar(
