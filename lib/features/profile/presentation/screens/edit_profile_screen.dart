@@ -1155,8 +1155,13 @@ class EditProfileScreen extends StatelessWidget {
       final datasource = GetIt.I<DiscoveryRemoteDataSource>();
       datasource.clearAllDiscoveryCaches();
     } catch (_) {}
-    // Sign out — AuthWrapper in main.dart handles navigation reactively
-    context.read<AuthBloc>().add(const AuthSignOutRequested());
+    // Sign out via AuthBloc, with direct Firebase fallback
+    try {
+      context.read<AuthBloc>().add(const AuthSignOutRequested());
+    } catch (e) {
+      debugPrint('[Logout] AuthBloc dispatch failed: $e — using direct Firebase signOut');
+      FirebaseAuth.instance.signOut();
+    }
   }
 
   void _showRestartDiscoveryDialog(BuildContext context, Profile profile) {
