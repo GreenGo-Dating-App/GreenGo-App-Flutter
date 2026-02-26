@@ -1576,7 +1576,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
         HapticFeedback.lightImpact();
         setState(() => _showMenu = true);
       },
-      onLongPress: () {
+      onLongPress: widget.gridColumns == 4 ? null : () {
         HapticFeedback.mediumImpact();
         setState(() { _showMenu = false; _showPreview = true; });
       },
@@ -1787,35 +1787,35 @@ class _GridProfileCardState extends State<_GridProfileCard>
                   children: [
                     Text(
                       '${widget.card.displayName}, ${widget.card.age}',
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: Colors.white,
-                        fontSize: 17,
+                        fontSize: widget.gridColumns == 3 ? 13 : 17,
                         fontWeight: FontWeight.bold,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 3),
+                    SizedBox(height: widget.gridColumns == 3 ? 2 : 3),
                     Row(
                       children: [
-                        Icon(Icons.favorite, color: AppColors.richGold.withOpacity(0.8), size: 13),
-                        const SizedBox(width: 3),
+                        Icon(Icons.favorite, color: AppColors.richGold.withOpacity(0.8), size: widget.gridColumns == 3 ? 10 : 13),
+                        SizedBox(width: widget.gridColumns == 3 ? 2 : 3),
                         Text(
                           widget.card.matchPercentage,
                           style: TextStyle(
                             color: AppColors.richGold.withOpacity(0.9),
-                            fontSize: 14,
+                            fontSize: widget.gridColumns == 3 ? 11 : 14,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                         if (cityText.isNotEmpty) ...[
-                          const SizedBox(width: 6),
+                          SizedBox(width: widget.gridColumns == 3 ? 4 : 6),
                           Expanded(
                             child: Text(
                               cityText,
-                              style: const TextStyle(
+                              style: TextStyle(
                                 color: Colors.white60,
-                                fontSize: 13,
+                                fontSize: widget.gridColumns == 3 ? 10 : 13,
                               ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
@@ -1828,8 +1828,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Tier badge (top right) — all tiers except test
+            // Tier badge (top right) — only for silver, gold, platinum (not free/base/test)
             if (profile.membershipTier != MembershipTier.test &&
+                profile.membershipTier != MembershipTier.free &&
                 widget.actionOverlay != 'matched')
               Positioned(
                 top: 4,
@@ -1842,7 +1843,6 @@ class _GridProfileCardState extends State<_GridProfileCard>
                         MembershipTier.silver => [const Color(0xFFC0C0C0), const Color(0xFF8E8E8E)],
                         MembershipTier.gold => [const Color(0xFFFFD700), const Color(0xFFDAA520)],
                         MembershipTier.platinum => [AppColors.platinumBlue, AppColors.platinumBlueDark],
-                        MembershipTier.free => [AppColors.basePurple, AppColors.basePurpleDark],
                         _ => [Colors.grey, Colors.grey],
                       },
                     ),
@@ -1869,7 +1869,8 @@ class _GridProfileCardState extends State<_GridProfileCard>
             if (profile.isTravelerActive && widget.actionOverlay != 'matched')
               Positioned(
                 top: profile.membershipTier != MembershipTier.free &&
-                     profile.membershipTier != MembershipTier.test ? 24 : 4,
+                     profile.membershipTier != MembershipTier.test &&
+                     widget.actionOverlay != 'matched' ? 24 : 4,
                 right: 4,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
@@ -1904,7 +1905,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Tap action menu overlay - just 4 action buttons
+            // Tap action menu overlay - 4 action buttons in 2x2 grid
             if (_showMenu)
               Positioned.fill(
                 child: GestureDetector(
@@ -1928,6 +1929,12 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               setState(() => _showMenu = false);
                               widget.onAction(widget.card, SwipeActionType.skip);
                             }),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
                             _buildInCardAction(Icons.star, AppColors.richGold, () {
                               setState(() => _showMenu = false);
                               widget.onAction(widget.card, SwipeActionType.superLike);
@@ -1964,7 +1971,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       ),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(widget.gridColumns == 4 ? 6 : 10),
+                      padding: EdgeInsets.all(widget.gridColumns == 3 ? 7 : 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -1974,20 +1981,20 @@ class _GridProfileCardState extends State<_GridProfileCard>
                             '${widget.card.displayName}, ${widget.card.age}',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: widget.gridColumns == 4 ? 15 : 19,
+                              fontSize: widget.gridColumns == 3 ? 15 : 19,
                               fontWeight: FontWeight.bold,
                             ),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          SizedBox(height: widget.gridColumns == 4 ? 4 : 6),
+                          SizedBox(height: widget.gridColumns == 3 ? 3 : 6),
                           // Distance & city
                           Row(
                             children: [
                               Icon(
                                 profile.isTravelerActive ? Icons.flight : Icons.location_on,
                                 color: Colors.white70,
-                                size: widget.gridColumns == 4 ? 13 : 15,
+                                size: widget.gridColumns == 3 ? 12 : 15,
                               ),
                               const SizedBox(width: 4),
                               Expanded(
@@ -1995,7 +2002,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                                   cityText.isNotEmpty ? '$distanceText · $cityText' : distanceText,
                                   style: TextStyle(
                                     color: Colors.white70,
-                                    fontSize: widget.gridColumns == 4 ? 12 : 14,
+                                    fontSize: widget.gridColumns == 3 ? 11 : 14,
                                   ),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
@@ -2003,33 +2010,33 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               ),
                             ],
                           ),
-                          SizedBox(height: widget.gridColumns == 4 ? 2 : 4),
+                          SizedBox(height: widget.gridColumns == 3 ? 2 : 4),
                           // Match %
                           Row(
                             children: [
-                              Icon(Icons.favorite, color: AppColors.richGold, size: widget.gridColumns == 4 ? 13 : 15),
+                              Icon(Icons.favorite, color: AppColors.richGold, size: widget.gridColumns == 3 ? 12 : 15),
                               const SizedBox(width: 4),
                               Text(
                                 '${widget.card.matchPercentage} match',
                                 style: TextStyle(
                                   color: AppColors.richGold,
-                                  fontSize: widget.gridColumns == 4 ? 12 : 14,
+                                  fontSize: widget.gridColumns == 3 ? 11 : 14,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ],
                           ),
                           // Languages (only on 2-3 cols)
-                          if (widget.gridColumns <= 3 && profile.languages.isNotEmpty) ...[
-                            const SizedBox(height: 5),
+                          if (profile.languages.isNotEmpty) ...[
+                            SizedBox(height: widget.gridColumns == 3 ? 3 : 5),
                             Row(
                               children: [
-                                const Icon(Icons.translate, color: Colors.white70, size: 14),
+                                Icon(Icons.translate, color: Colors.white70, size: widget.gridColumns == 3 ? 11 : 14),
                                 const SizedBox(width: 4),
                                 Expanded(
                                   child: Text(
                                     profile.languages.take(3).join(', '),
-                                    style: const TextStyle(color: Colors.white70, fontSize: 13),
+                                    style: TextStyle(color: Colors.white70, fontSize: widget.gridColumns == 3 ? 10 : 13),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   ),
@@ -2038,19 +2045,19 @@ class _GridProfileCardState extends State<_GridProfileCard>
                             ),
                           ],
                           // Interests (only on 2-3 cols)
-                          if (widget.gridColumns <= 3 && profile.interests.isNotEmpty) ...[
-                            const SizedBox(height: 4),
+                          if (profile.interests.isNotEmpty) ...[
+                            SizedBox(height: widget.gridColumns == 3 ? 3 : 4),
                             Wrap(
                               spacing: 4,
                               runSpacing: 3,
-                              children: profile.interests.take(3).map((i) {
+                              children: profile.interests.take(widget.gridColumns == 3 ? 2 : 3).map((i) {
                                 return Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                  padding: EdgeInsets.symmetric(horizontal: widget.gridColumns == 3 ? 4 : 6, vertical: 2),
                                   decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.15),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  child: Text(i, style: const TextStyle(color: Colors.white, fontSize: 12)),
+                                  child: Text(i, style: TextStyle(color: Colors.white, fontSize: widget.gridColumns == 3 ? 10 : 12)),
                                 );
                               }).toList(),
                             ),
@@ -2065,29 +2072,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               overflow: TextOverflow.ellipsis,
                             ),
                           ],
-                          SizedBox(height: widget.gridColumns == 4 ? 6 : 10),
-                          // Action buttons row
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              _buildInCardAction(Icons.close, AppColors.errorRed, () {
-                                setState(() => _showPreview = false);
-                                widget.onAction(widget.card, SwipeActionType.pass);
-                              }),
-                              _buildInCardAction(Icons.arrow_downward, AppColors.infoBlue, () {
-                                setState(() => _showPreview = false);
-                                widget.onAction(widget.card, SwipeActionType.skip);
-                              }),
-                              _buildInCardAction(Icons.star, AppColors.richGold, () {
-                                setState(() => _showPreview = false);
-                                widget.onAction(widget.card, SwipeActionType.superLike);
-                              }),
-                              _buildInCardAction(Icons.favorite, AppColors.successGreen, () {
-                                setState(() => _showPreview = false);
-                                widget.onAction(widget.card, SwipeActionType.like);
-                              }),
-                            ],
-                          ),
+                          const SizedBox(height: 6),
                         ],
                       ),
                     ),
@@ -2101,7 +2086,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
   }
 
   Widget _buildInCardAction(IconData icon, Color color, VoidCallback onTap) {
-    final btnSize = widget.gridColumns == 4 ? 26.0 : 34.0;
+    final btnSize = widget.gridColumns == 4 ? 36.0 : 46.0;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -2109,7 +2094,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
         height: btnSize,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          border: Border.all(color: color, width: 2),
+          border: Border.all(color: color, width: 2.5),
         ),
         child: Icon(icon, color: color, size: btnSize * 0.5),
       ),
