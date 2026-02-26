@@ -145,7 +145,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Initialize presence service and mark user as online
     _presenceService = PresenceService(userId: widget.userId);
-    _presenceService.setOnline();
+    _presenceService.onAppResumed();
     WidgetsBinding.instance.addObserver(this);
 
     // Initialize gamification bloc (only when enabled)
@@ -522,7 +522,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     switch (state) {
       case AppLifecycleState.resumed:
         _activityTrackingService.startTracking();
-        _presenceService.setOnline();
+        _presenceService.onAppResumed();
         // Re-check access control on every app resume to enforce countdown
         _loadCachedCountdown();
         _loadAccessData();
@@ -532,7 +532,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       case AppLifecycleState.detached:
       case AppLifecycleState.hidden:
         _activityTrackingService.stopTracking();
-        _presenceService.setOffline();
+        _presenceService.onAppPaused();
         break;
     }
   }
@@ -698,7 +698,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
     WidgetsBinding.instance.removeObserver(this);
-    _presenceService.setOffline();
+    _presenceService.dispose();
     _activityTrackingService.dispose();
     _notificationsBloc.close();
     _coinBloc.close();
@@ -712,6 +712,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (index < 0 || index >= _screens.length) {
       return;
     }
+    _presenceService.recordActivity();
     setState(() {
       _currentIndex = index;
     });

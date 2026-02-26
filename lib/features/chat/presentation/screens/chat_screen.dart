@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
+import '../../../../core/services/presence_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -243,6 +244,8 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Future<void> _sendMessage(BuildContext _) async {
+    // Record activity for online presence
+    PresenceService.instance?.recordActivity();
     // Base membership gate
     final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(

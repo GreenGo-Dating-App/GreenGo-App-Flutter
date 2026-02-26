@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import '../../../../core/services/presence_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -1029,6 +1030,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   Future<void> _gridAction(DiscoveryCard card, SwipeActionType actionType) async {
+    // Record activity for online presence
+    PresenceService.instance?.recordActivity();
     // Base membership gate
     final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(
