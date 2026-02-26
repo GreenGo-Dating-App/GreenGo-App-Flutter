@@ -88,8 +88,14 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
     if (poolCandidateIds != null && poolCandidateIds.isNotEmpty) {
       // Pool path: fetch only the profiles we know match the criteria
-      debugPrint('[Matching] Using pool: ${poolCandidateIds.length} candidate IDs');
-      profileDocs = await _fetchProfilesByIds(poolCandidateIds);
+      // Also fetch travelers visiting the target countries (pools only index home country)
+      final travelerIds = await _getTravelerIdsInCountries(
+        userProfile: userProfile,
+        preferences: preferences,
+      );
+      final allIds = {...poolCandidateIds, ...travelerIds}.toList();
+      debugPrint('[Matching] Using pool: ${poolCandidateIds.length} pool + ${travelerIds.length} travelers = ${allIds.length}');
+      profileDocs = await _fetchProfilesByIds(allIds);
     } else {
       // Fallback: full scan (pools unavailable, stale, or empty)
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
@@ -297,6 +303,59 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     } catch (e) {
       debugPrint('[Matching] Pool lookup failed, falling back: $e');
       return null;
+    }
+  }
+
+  /// Fetch active travelers whose travelerLocation.country matches the target countries.
+  /// These users are missed by the pool system because pools are indexed by home country.
+  Future<List<String>> _getTravelerIdsInCountries({
+    required Profile userProfile,
+    required MatchPreferences preferences,
+  }) async {
+    try {
+      List<String> countries;
+      if (preferences.preferredCountries.isNotEmpty) {
+        countries = preferences.preferredCountries;
+      } else {
+        final country = userProfile.effectiveLocation.country;
+        if (country.isEmpty || country == 'Unknown') return [];
+        countries = [country];
+      }
+
+      final now = DateTime.now();
+      final travelerIds = <String>[];
+
+      // Query travelers visiting each target country (Firestore whereIn limit = 10)
+      for (var i = 0; i < countries.length; i += 10) {
+        final batch = countries.sublist(
+          i,
+          i + 10 > countries.length ? countries.length : i + 10,
+        );
+
+        final snapshot = await firestore
+            .collection('profiles')
+            .where('isTraveler', isEqualTo: true)
+            .where('travelerLocation.country', whereIn: batch)
+            .limit(100)
+            .get();
+
+        for (final doc in snapshot.docs) {
+          // Verify traveler expiry is still active
+          final data = doc.data();
+          final expiry = data['travelerExpiry'];
+          if (expiry != null && expiry is Timestamp) {
+            if (expiry.toDate().isAfter(now)) {
+              travelerIds.add(doc.id);
+            }
+          }
+        }
+      }
+
+      debugPrint('[Matching] Found ${travelerIds.length} active travelers in $countries');
+      return travelerIds;
+    } catch (e) {
+      debugPrint('[Matching] Traveler lookup failed: $e');
+      return [];
     }
   }
 
