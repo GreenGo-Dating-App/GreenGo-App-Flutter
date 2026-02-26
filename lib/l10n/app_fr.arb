@@ -992,7 +992,7 @@
   "shopVideoCoinsDescription": "Regardez de courtes vidéos pour gagner des pièces gratuites !\nRestez à l'écoute pour cette fonctionnalité passionnante.",
   "shopGetNotified": "Être notifié",
   "shopNotifyMessage": "Nous vous informerons quand les Video-Coins seront disponibles",
-  "shopStoreNotAvailable": "Boutique indisponible. Vérifiez que Google Play est installé.",
+  "shopStoreNotAvailable": "Boutique indisponible. Vérifiez les paramètres de votre appareil.",
   "shopFailedToInitiate": "Impossible de lancer l'achat",
   "shopUnableToLoadPackages": "Impossible de charger les paquets",
   "shopRetry": "Réessayer",

@@ -4472,7 +4472,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopStoreNotAvailable.
   ///
   /// In en, this message translates to:
-  /// **'Store not available. Make sure Google Play is installed.'**
+  /// **'Store not available. Please check your device settings.'**
   String get shopStoreNotAvailable;
 
   /// No description provided for @shopFailedToInitiate.

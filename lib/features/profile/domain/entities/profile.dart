@@ -142,12 +142,23 @@ class Profile extends Equatable {
           ? travelerLocation!
           : location;
 
-  /// Check if base membership is currently active
+  /// Check if any membership is currently active
+  /// Checks both legacy base membership fields AND general membership tier fields
   bool get isBaseMembershipActive {
     if (membershipTier == MembershipTier.test) return true;
-    if (!hasBaseMembership) return false;
-    if (baseMembershipEndDate == null) return false;
-    return baseMembershipEndDate!.isAfter(DateTime.now());
+    // Check general membership tier (set by subscription purchase flow)
+    if (membershipTier != MembershipTier.free &&
+        membershipEndDate != null &&
+        membershipEndDate!.isAfter(DateTime.now())) {
+      return true;
+    }
+    // Check legacy base membership fields
+    if (hasBaseMembership &&
+        baseMembershipEndDate != null &&
+        baseMembershipEndDate!.isAfter(DateTime.now())) {
+      return true;
+    }
+    return false;
   }
 
   /// Check if verification was rejected or needs resubmission

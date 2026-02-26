@@ -998,7 +998,7 @@
   "shopVideoCoinsDescription": "Assista vídeos curtos para ganhar moedas grátis!\nFique ligado nessa funcionalidade empolgante.",
   "shopGetNotified": "Receber notificação",
   "shopNotifyMessage": "Avisaremos quando os Video-Coins estiverem disponíveis",
-  "shopStoreNotAvailable": "Loja indisponível. Verifique se o Google Play está instalado.",
+  "shopStoreNotAvailable": "Loja indisponível. Verifique as configurações do dispositivo.",
   "shopFailedToInitiate": "Não foi possível iniciar a compra",
   "shopUnableToLoadPackages": "Não foi possível carregar os pacotes",
   "shopRetry": "Tentar novamente",

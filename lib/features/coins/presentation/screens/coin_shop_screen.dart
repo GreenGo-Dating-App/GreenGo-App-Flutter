@@ -1202,10 +1202,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final response = await _inAppPurchase!.queryProductDetails({productId});
 
       if (response.productDetails.isEmpty) {
+        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
+        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
         _showError(
-          'Base membership product not found in Google Play.\n\n'
+          'Base membership product not found in $storeName.\n\n'
           'Product ID: $productId\n'
-          'Make sure the product is configured in Google Play Console.',
+          'Make sure the product is configured in $consoleName.',
         );
         setState(() => _isLoadingSubscription = false);
         return;
@@ -1533,12 +1535,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (response.productDetails.isEmpty) {
         final notFoundIds = response.notFoundIDs.join(', ');
+        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
+        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
         _showError(
-          'Product "$productId" not found in Google Play.\n\n'
+          'Product "$productId" not found in $storeName.\n\n'
           'Requirements:\n'
-          '• Upload app to Google Play Console (internal testing track)\n'
-          '• Create in-app product in Google Play Console\n'
-          '• Add your Google account as a license tester\n\n'
+          '• Upload app to $consoleName\n'
+          '• Create in-app product in $consoleName\n'
+          '• Add your account as a tester\n\n'
           'Not found: $notFoundIds'
         );
         setState(() => _isLoadingSubscription = false);
@@ -2085,7 +2089,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
-  /// Handle coin purchase via Google Play IAP
+  /// Handle coin purchase via IAP (Google Play on Android, App Store on iOS)
   Future<void> _handlePurchase() async {
     if (_selectedPackage == null) return;
 
@@ -2121,12 +2125,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (response.productDetails.isEmpty) {
         final notFoundIds = response.notFoundIDs.join(', ');
+        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
+        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
         _showError(
-          'Coin package "${_selectedPackage!.productId}" not found in Google Play.\n\n'
+          'Coin package "${_selectedPackage!.productId}" not found in $storeName.\n\n'
           'Requirements:\n'
-          '• Upload app to Google Play Console (internal testing track)\n'
-          '• Create in-app products in Google Play Console\n'
-          '• Add your Google account as a license tester\n\n'
+          '• Upload app to $consoleName\n'
+          '• Create in-app products in $consoleName\n'
+          '• Add your account as a tester\n\n'
           'Not found: $notFoundIds'
         );
         setState(() => _isLoadingCoinPurchase = false);
@@ -2142,7 +2148,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         applicationUserName: widget.userId,
       );
 
-      // This triggers the Google Play purchase dialog
+      // This triggers the store purchase dialog (Google Play on Android, App Store on iOS)
       // Result will be handled by the purchase stream listener
       final bool success = await _inAppPurchase!.buyConsumable(
         purchaseParam: purchaseParam,

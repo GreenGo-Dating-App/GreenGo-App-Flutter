@@ -14,6 +14,7 @@ enum MembershipTier {
 
   static MembershipTier fromString(String value) {
     switch (value.toUpperCase()) {
+      case 'BASIC':
       case 'SILVER':
         return MembershipTier.silver;
       case 'GOLD':

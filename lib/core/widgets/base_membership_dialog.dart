@@ -289,17 +289,20 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
     try {
       final available = await _iap.isAvailable();
       if (!available) {
-        _showError('Store not available. Make sure Google Play is installed.');
+        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
+        _showError('Store not available. Make sure $storeName is installed.');
         setState(() => _loading = false);
         return;
       }
 
       final response = await _iap.queryProductDetails({_productId});
       if (response.productDetails.isEmpty) {
+        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
+        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
         _showError(
-          'Membership product not found in Google Play.\n\n'
+          'Membership product not found in $storeName.\n\n'
           'Product ID: $_productId\n'
-          'Make sure the product is configured in Google Play Console.',
+          'Make sure the product is configured in $consoleName.',
         );
         setState(() => _loading = false);
         return;

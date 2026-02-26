@@ -1162,7 +1162,7 @@
   "shopVideoCoinsDescription": "Watch short videos to earn free coins!\nStay tuned for this exciting feature.",
   "shopGetNotified": "Get Notified",
   "shopNotifyMessage": "We'll let you know when Video-Coins is available",
-  "shopStoreNotAvailable": "Store not available. Make sure Google Play is installed.",
+  "shopStoreNotAvailable": "Store not available. Please check your device settings.",
   "shopFailedToInitiate": "Failed to initiate purchase",
   "shopUnableToLoadPackages": "Unable to Load Packages",
   "shopRetry": "Retry",

@@ -2469,7 +2469,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get shopStoreNotAvailable =>
-      'Loja indisponível. Certifica-te de que o Google Play está instalado.';
+      'Loja indisponível. Verifica as definições do dispositivo.';
 
   @override
   String get shopFailedToInitiate => 'Não foi possível iniciar a compra';
@@ -5106,7 +5106,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get shopStoreNotAvailable =>
-      'Loja indisponível. Verifique se o Google Play está instalado.';
+      'Loja indisponível. Verifique as configurações do dispositivo.';
 
   @override
   String get shopFailedToInitiate => 'Não foi possível iniciar a compra';

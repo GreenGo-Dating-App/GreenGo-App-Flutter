@@ -2477,7 +2477,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get shopStoreNotAvailable =>
-      'Store nicht verfügbar. Stelle sicher, dass Google Play installiert ist.';
+      'Store nicht verfügbar. Bitte überprüfe deine Geräteeinstellungen.';
 
   @override
   String get shopFailedToInitiate => 'Kauf konnte nicht gestartet werden';
