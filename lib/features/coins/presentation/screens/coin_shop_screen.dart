@@ -1829,7 +1829,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             children: [
               ...packages.map((package) {
                 final isPopular = package.packageId == 'popular_500';
-                return _buildPackageCard(package, isPopular, promotions);
+                return _buildPackageCard(package, isPopular);
               }),
               const SizedBox(height: 24),
               _buildSendCoinsSection(),
@@ -1938,19 +1938,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Widget _buildPackageCard(
     CoinPackage package,
     bool isPopular,
-    List<CoinPromotion> promotions,
   ) {
     final isSelected = _selectedPackage?.packageId == package.packageId;
-    final promotion = promotions.firstWhere(
-      (p) => p.isPackageApplicable(package.packageId),
-      orElse: () =>
-          promotions.isNotEmpty ? promotions.first : CoinPromotions.firstPurchase,
-    );
-
-    final bonusCoins = promotion.calculateBonus(
-      package.coinAmount,
-      package.price,
-    );
 
     return GestureDetector(
       onTap: () => setState(() => _selectedPackage = package),
@@ -2063,7 +2052,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             ),
                           ],
                         ),
-                        if (bonusCoins > 0) ...[
+                        if (package.bonusCoins != null && package.bonusCoins! > 0) ...[
                           const SizedBox(height: 4),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
@@ -2072,7 +2061,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              '+$bonusCoins bonus — ${promotion.displayText}',
+                              '+${package.bonusCoins} bonus coins',
                               style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,
