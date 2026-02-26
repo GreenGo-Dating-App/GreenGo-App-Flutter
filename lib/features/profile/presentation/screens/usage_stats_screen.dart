@@ -8,6 +8,10 @@ import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/profile.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -315,9 +319,12 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (_) => CoinShopScreen(
-                                  userId: widget.userId,
-                                  initialTab: 1,
+                                builder: (_) => BlocProvider(
+                                  create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(widget.userId))..add(const LoadAvailablePackages()),
+                                  child: CoinShopScreen(
+                                    userId: widget.userId,
+                                    initialTab: 1,
+                                  ),
                                 ),
                               ),
                             );

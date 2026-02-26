@@ -55,7 +55,8 @@ import '../../../../generated/app_localizations.dart';
 // import '../../../coins/presentation/screens/coin_shop_screen.dart';
 // import '../../../coins/presentation/screens/transaction_history_screen.dart';
 // import '../../../gamification/presentation/bloc/gamification_bloc.dart';
-// import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
 
 class EditProfileScreen extends StatelessWidget {
   final String? userId;
@@ -1341,7 +1342,7 @@ class EditProfileScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(ctx).pop();
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => CoinShopScreen(userId: profile.userId)),
+                        MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(profile.userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: profile.userId))),
                       );
                     },
                     style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
@@ -1482,7 +1483,7 @@ class EditProfileScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(ctx).pop();
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => CoinShopScreen(userId: profile.userId)),
+                      MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(profile.userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: profile.userId))),
                     );
                   },
                   style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),

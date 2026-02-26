@@ -1213,7 +1213,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             onPressed: () {
               Navigator.of(ctx).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => CoinShopScreen(userId: userId)),
+                MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: userId))),
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
@@ -1467,7 +1467,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             onPressed: () {
               Navigator.of(ctx).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => CoinShopScreen(userId: userId)),
+                MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: userId))),
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),

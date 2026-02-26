@@ -239,16 +239,17 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
   }
 
   void _createNewTicket(BuildContext context) {
+    final parentContext = context;
     showDialog(
       context: context,
-      builder: (context) => _CreateTicketDialog(
+      builder: (dialogContext) => _CreateTicketDialog(
         currentUserId: widget.currentUserId,
         onCreated: (conversationId) {
-          Navigator.pop(context);
+          Navigator.pop(dialogContext);
           Navigator.push(
-            context,
+            parentContext,
             MaterialPageRoute(
-              builder: (context) => SupportChatScreen(
+              builder: (_) => SupportChatScreen(
                 conversationId: conversationId,
                 currentUserId: widget.currentUserId,
               ),

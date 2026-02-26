@@ -11,6 +11,10 @@ import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../screens/profile_detail_screen.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -304,7 +308,10 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
               Navigator.of(context).pop(); // Close search dialog
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => CoinShopScreen(userId: widget.currentUserId),
+                  builder: (_) => BlocProvider(
+                    create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(widget.currentUserId))..add(const LoadAvailablePackages()),
+                    child: CoinShopScreen(userId: widget.currentUserId),
+                  ),
                 ),
               );
             },
