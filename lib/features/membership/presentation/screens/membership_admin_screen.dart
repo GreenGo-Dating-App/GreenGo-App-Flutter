@@ -453,12 +453,9 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     rules.dailySwipeLimit == -1 ? 'Unlimited' : '${rules.dailySwipeLimit}'),
                 _buildRuleRow('Super Likes/Day',
                     rules.dailySuperLikeLimit == -1 ? 'Unlimited' : '${rules.dailySuperLikeLimit}'),
-                _buildRuleRow('Monthly Boosts', '${rules.monthlyFreeBoosts}'),
-                _buildRuleRow('See Who Liked', rules.canSeeWhoLiked ? 'Yes' : 'No'),
                 _buildRuleRow('Advanced Filters', rules.canUseAdvancedFilters ? 'Yes' : 'No'),
                 _buildRuleRow('Match Priority', '${rules.matchPriority}'),
                 _buildRuleRow('Read Receipts', rules.canSeeReadReceipts ? 'Yes' : 'No'),
-                _buildRuleRow('Profile Boost', rules.canBoostProfile ? 'Yes' : 'No'),
                 _buildRuleRow('Send Media', rules.canSendMedia ? 'Yes' : 'No'),
                 _buildRuleRow('Incognito Mode', rules.canUseIncognitoMode ? 'Yes' : 'No'),
                 _buildRuleRow('Profile Visitors', rules.canSeeProfileVisitors ? 'Yes' : 'No'),
@@ -969,13 +966,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
     final superLikesController = TextEditingController(
       text: rules.dailySuperLikeLimit == -1 ? '' : rules.dailySuperLikeLimit.toString(),
     );
-    final monthlyBoostsController = TextEditingController(
-      text: rules.monthlyFreeBoosts.toString(),
-    );
-
-    bool canSeeWhoLiked = rules.canSeeWhoLiked;
     bool canUseAdvancedFilters = rules.canUseAdvancedFilters;
-    bool canBoostProfile = rules.canBoostProfile;
     bool canSeeReadReceipts = rules.canSeeReadReceipts;
     bool canSendMedia = rules.canSendMedia;
     bool canUseIncognitoMode = rules.canUseIncognitoMode;
@@ -1029,26 +1020,9 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                       border: OutlineInputBorder(),
                     ),
                   ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: monthlyBoostsController,
-                    keyboardType: TextInputType.number,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: const InputDecoration(
-                      labelText: 'Monthly Free Boosts',
-                      labelStyle: TextStyle(color: AppColors.textSecondary),
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
                   const Divider(height: 24),
-                  _buildSwitchTile('See Who Liked', canSeeWhoLiked, (v) {
-                    setDialogState(() => canSeeWhoLiked = v);
-                  }),
                   _buildSwitchTile('Advanced Filters', canUseAdvancedFilters, (v) {
                     setDialogState(() => canUseAdvancedFilters = v);
-                  }),
-                  _buildSwitchTile('Profile Boost', canBoostProfile, (v) {
-                    setDialogState(() => canBoostProfile = v);
                   }),
                   _buildSwitchTile('Read Receipts', canSeeReadReceipts, (v) {
                     setDialogState(() => canSeeReadReceipts = v);
@@ -1087,10 +1061,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     dailySuperLikeLimit: superLikesController.text.isNotEmpty
                         ? int.tryParse(superLikesController.text) ?? 0
                         : -1,
-                    monthlyFreeBoosts: int.tryParse(monthlyBoostsController.text) ?? 0,
-                    canSeeWhoLiked: canSeeWhoLiked,
                     canUseAdvancedFilters: canUseAdvancedFilters,
-                    canBoostProfile: canBoostProfile,
                     canSeeReadReceipts: canSeeReadReceipts,
                     canSendMedia: canSendMedia,
                     canUseIncognitoMode: canUseIncognitoMode,

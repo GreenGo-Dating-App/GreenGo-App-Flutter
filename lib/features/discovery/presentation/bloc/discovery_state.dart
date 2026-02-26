@@ -146,19 +146,6 @@ class DiscoveryInsufficientCoins extends DiscoveryState {
   });
 }
 
-/// Boost activated successfully
-class DiscoveryBoostActivated extends DiscoveryState {
-  final List<DiscoveryCard> cards;
-  final int currentIndex;
-  final DateTime expiry;
-
-  const DiscoveryBoostActivated({
-    required this.cards,
-    required this.currentIndex,
-    required this.expiry,
-  });
-}
-
 /// Base membership required to perform action
 class DiscoveryBaseMembershipRequired extends DiscoveryState {
   final List<DiscoveryCard> cards;

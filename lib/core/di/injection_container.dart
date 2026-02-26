@@ -198,6 +198,7 @@ Future<void> init() async {
       updateProfile: sl(),
       uploadPhoto: sl(),
       verifyPhoto: sl(),
+      coinRepository: sl(),
     ),
   );
 

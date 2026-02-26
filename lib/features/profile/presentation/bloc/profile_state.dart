@@ -105,3 +105,23 @@ class ProfileError extends ProfileState {
   @override
   List<Object?> get props => [message];
 }
+
+class ProfileBoostActivated extends ProfileState {
+  final Profile profile;
+  final DateTime expiry;
+
+  const ProfileBoostActivated({required this.profile, required this.expiry});
+
+  @override
+  List<Object?> get props => [profile, expiry];
+}
+
+class ProfileBoostInsufficientCoins extends ProfileState {
+  final int required;
+  final int available;
+
+  const ProfileBoostInsufficientCoins({required this.required, required this.available});
+
+  @override
+  List<Object?> get props => [required, available];
+}

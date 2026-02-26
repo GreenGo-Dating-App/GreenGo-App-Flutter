@@ -18,6 +18,7 @@ class SwipeCard extends StatefulWidget {
   final VoidCallback? onTap;
   final bool isFront;
   final ValueChanged<double>? onDragProgress;
+  final bool? isOnlineOverride;
 
   const SwipeCard({
     super.key,
@@ -26,6 +27,7 @@ class SwipeCard extends StatefulWidget {
     this.onTap,
     this.isFront = false,
     this.onDragProgress,
+    this.isOnlineOverride,
   });
 
   @override
@@ -41,6 +43,15 @@ class _SwipeCardState extends State<SwipeCard>
 
   SwipeDirection? _swipeDirection;
   double _swipeIntensity = 0.0;
+
+  // Photo carousel state
+  int _currentPhotoIndex = 0;
+
+  /// All public photo URLs for this card
+  List<String> get _photoUrls {
+    final urls = widget.card.candidate.profile.photoUrls;
+    return urls.isNotEmpty ? urls : [];
+  }
 
   late AnimationController _indicatorBounceController;
   late Animation<double> _bounceAnimation;
@@ -63,6 +74,14 @@ class _SwipeCardState extends State<SwipeCard>
   }
 
   @override
+  void didUpdateWidget(covariant SwipeCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.card.userId != widget.card.userId) {
+      _currentPhotoIndex = 0;
+    }
+  }
+
+  @override
   void dispose() {
     _indicatorBounceController.dispose();
     super.dispose();
@@ -73,7 +92,9 @@ class _SwipeCardState extends State<SwipeCard>
     final screenSize = MediaQuery.of(context).size;
 
     final profile = widget.card.candidate.profile;
-    final isOnline = profile.isAdmin || profile.isSupport || profile.isOnline;
+    final isOnline = profile.isAdmin || profile.isSupport || (widget.isOnlineOverride ?? profile.isOnline);
+    final photoUrls = _photoUrls;
+    final hasMultiplePhotos = photoUrls.length > 1;
 
     Widget cardContent = SizedBox(
       height: screenSize.height * 0.75,
@@ -85,10 +106,77 @@ class _SwipeCardState extends State<SwipeCard>
           _buildGradientOverlay(),
           if (_swipeDirection != null && _swipeIntensity > 0)
             _buildSwipeIndicators(),
+          // Photo indicator bars at top
+          if (hasMultiplePhotos)
+            Positioned(
+              top: 8,
+              left: 16,
+              right: 16,
+              child: Row(
+                children: List.generate(photoUrls.length, (i) {
+                  return Expanded(
+                    child: Container(
+                      height: 3,
+                      margin: EdgeInsets.only(right: i < photoUrls.length - 1 ? 4 : 0),
+                      decoration: BoxDecoration(
+                        color: i == _currentPhotoIndex
+                            ? AppColors.richGold
+                            : Colors.white.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                  );
+                }),
+              ),
+            ),
+          // Left tap zone for previous photo (centered vertically)
+          if (hasMultiplePhotos && _currentPhotoIndex > 0)
+            Positioned(
+              top: 0,
+              left: 0,
+              bottom: 0,
+              width: 80,
+              child: GestureDetector(
+                behavior: HitTestBehavior.translucent,
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  setState(() => _currentPhotoIndex--);
+                },
+                child: Center(
+                  child: Icon(
+                    Icons.chevron_left,
+                    color: Colors.white.withOpacity(0.5),
+                    size: 32,
+                  ),
+                ),
+              ),
+            ),
+          // Right tap zone for next photo (centered vertically)
+          if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1)
+            Positioned(
+              top: 0,
+              right: 0,
+              bottom: 0,
+              width: 80,
+              child: GestureDetector(
+                behavior: HitTestBehavior.translucent,
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  setState(() => _currentPhotoIndex++);
+                },
+                child: Center(
+                  child: Icon(
+                    Icons.chevron_right,
+                    color: Colors.white.withOpacity(0.5),
+                    size: 32,
+                  ),
+                ),
+              ),
+            ),
           // Online status indicator
           if (isOnline)
             Positioned(
-              top: 16,
+              top: hasMultiplePhotos ? 20 : 16,
               left: 16,
               child: Container(
                 width: 14,
@@ -120,6 +208,11 @@ class _SwipeCardState extends State<SwipeCard>
   }
 
   Widget _buildCard(Size screenSize) {
+    final photoUrls = _photoUrls;
+    final currentUrl = photoUrls.isNotEmpty && _currentPhotoIndex < photoUrls.length
+        ? photoUrls[_currentPhotoIndex]
+        : widget.card.primaryPhoto;
+
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
@@ -134,9 +227,9 @@ class _SwipeCardState extends State<SwipeCard>
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-        child: widget.card.primaryPhoto != null
+        child: currentUrl != null && currentUrl.isNotEmpty
             ? CachedNetworkImage(
-                imageUrl: widget.card.primaryPhoto!,
+                imageUrl: currentUrl,
                 fit: BoxFit.cover,
                 width: double.infinity,
                 height: double.infinity,

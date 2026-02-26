@@ -50,11 +50,11 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         super(const DiscoveryInitial()) {
     on<DiscoveryStackLoadRequested>(_onLoadStack);
     on<DiscoverySwipeRecorded>(_onSwipeRecorded);
+    on<DiscoveryGridSwipeRecorded>(_onGridSwipeRecorded);
     on<DiscoveryRewindRequested>(_onRewind);
     on<DiscoveryStackRefreshRequested>(_onRefreshStack);
     on<DiscoveryMoreCandidatesRequested>(_onLoadMore);
     on<DiscoveryPrefetchRequested>(_onPrefetch);
-    on<DiscoveryActivateBoost>(_onActivateBoost);
   }
 
   Future<void> _onLoadStack(
@@ -108,7 +108,6 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     if (s is DiscoverySuperLikeLimitReached) return (cards: s.cards, currentIndex: s.currentIndex);
     if (s is DiscoverySwipeCompleted) return (cards: s.cards, currentIndex: s.currentIndex);
     if (s is DiscoveryInsufficientCoins) return (cards: s.cards, currentIndex: s.currentIndex);
-    if (s is DiscoveryBoostActivated) return (cards: s.cards, currentIndex: s.currentIndex);
     if (s is DiscoveryBaseMembershipRequired) return (cards: s.cards, currentIndex: s.currentIndex);
     return null;
   }
@@ -117,6 +116,44 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     DiscoverySwipeRecorded event,
     Emitter<DiscoveryState> emit,
   ) async {
+    await _processSwipeAction(
+      userId: event.userId,
+      targetUserId: event.targetUserId,
+      actionType: event.actionType,
+      membershipRules: event.membershipRules,
+      membershipTier: event.membershipTier,
+      emit: emit,
+      advanceIndex: true,
+    );
+  }
+
+  Future<void> _onGridSwipeRecorded(
+    DiscoveryGridSwipeRecorded event,
+    Emitter<DiscoveryState> emit,
+  ) async {
+    await _processSwipeAction(
+      userId: event.userId,
+      targetUserId: event.targetUserId,
+      actionType: event.actionType,
+      membershipRules: event.membershipRules,
+      membershipTier: event.membershipTier,
+      emit: emit,
+      advanceIndex: false,
+    );
+  }
+
+  /// Shared swipe processing logic for both swipe mode and grid mode.
+  /// When [advanceIndex] is true (swipe mode), currentIndex advances to the next card.
+  /// When false (grid mode), currentIndex stays unchanged.
+  Future<void> _processSwipeAction({
+    required String userId,
+    required String targetUserId,
+    required SwipeActionType actionType,
+    MembershipRules? membershipRules,
+    MembershipTier? membershipTier,
+    required Emitter<DiscoveryState> emit,
+    required bool advanceIndex,
+  }) async {
     final data = _extractCards();
     if (data == null) {
       return;
@@ -125,27 +162,27 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final currentState = DiscoveryLoaded(cards: data.cards, currentIndex: data.currentIndex);
 
     // Get membership info (use defaults if not provided)
-    final rules = event.membershipRules ?? MembershipRules.freeDefaults;
-    final tier = event.membershipTier ?? MembershipTier.free;
+    final rules = membershipRules ?? MembershipRules.freeDefaults;
+    final tier = membershipTier ?? MembershipTier.free;
 
     // ── Super Like: check base membership first, then limits, then coins ──
-    if (event.actionType == SwipeActionType.superLike) {
+    if (actionType == SwipeActionType.superLike) {
       // Check if user has base membership before processing super like
       {
         try {
           final profileDoc = await FirebaseFirestore.instance
               .collection('profiles')
-              .doc(event.userId)
+              .doc(userId)
               .get();
-          final data = profileDoc.data();
-          final hasBaseMembership = data?['hasBaseMembership'] as bool? ?? false;
-          final endTs = data?['baseMembershipEndDate'] as Timestamp?;
+          final profileData = profileDoc.data();
+          final hasBaseMembership = profileData?['hasBaseMembership'] as bool? ?? false;
+          final endTs = profileData?['baseMembershipEndDate'] as Timestamp?;
           final isActive = hasBaseMembership &&
               endTs != null &&
               endTs.toDate().isAfter(DateTime.now());
           // Also allow test tier users through
-          final membershipTier = data?['membershipTier'] as String? ?? '';
-          if (!isActive && membershipTier != 'test') {
+          final memberTier = profileData?['membershipTier'] as String? ?? '';
+          if (!isActive && memberTier != 'test') {
             emit(DiscoveryBaseMembershipRequired(
               cards: currentState.cards,
               currentIndex: currentState.currentIndex,
@@ -162,7 +199,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
       // Step 1: Check daily super like limit
       final dailySuperLikeLimit = await _usageLimitService.checkLimit(
-        userId: event.userId,
+        userId: userId,
         limitType: UsageLimitType.dailySuperLikes,
         rules: rules,
         currentTier: tier,
@@ -171,7 +208,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       if (dailySuperLikeLimit.isAllowed) {
         // Step 2: Check hourly super like limit
         final superLikeLimit = await _usageLimitService.checkLimit(
-          userId: event.userId,
+          userId: userId,
           limitType: UsageLimitType.superLikes,
           rules: rules,
           currentTier: tier,
@@ -195,7 +232,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
       // Step 3: If no free allowance (paid tiers only), charge coins
       if (!usedFreeAllowance && coinRepository != null) {
-        final balanceResult = await coinRepository!.getBalance(event.userId);
+        final balanceResult = await coinRepository!.getBalance(userId);
         final insufficient = balanceResult.fold(
           (failure) => true,
           (balance) => balance.availableCoins < CoinFeaturePrices.superLike,
@@ -219,7 +256,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
         // Deduct coins
         await coinRepository!.purchaseFeature(
-          userId: event.userId,
+          userId: userId,
           featureName: 'superlike',
           cost: CoinFeaturePrices.superLike,
         );
@@ -240,7 +277,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     // ── Hourly limit check per action type ──
     // Map swipe action to the correct hourly limit type
     final UsageLimitType? hourlyType;
-    switch (event.actionType) {
+    switch (actionType) {
       case SwipeActionType.like:
         hourlyType = UsageLimitType.likes;
         break;
@@ -259,7 +296,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
     if (hourlyType != null) {
       final hourlyLimit = await _usageLimitService.checkLimit(
-        userId: event.userId,
+        userId: userId,
         limitType: hourlyType,
         rules: rules,
         currentTier: tier,
@@ -284,9 +321,9 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     // Record swipe
     final result = await recordSwipe(
       RecordSwipeParams(
-        userId: event.userId,
-        targetUserId: event.targetUserId,
-        actionType: event.actionType,
+        userId: userId,
+        targetUserId: targetUserId,
+        actionType: actionType,
       ),
     );
 
@@ -304,26 +341,26 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
     // Record hourly usage after successful swipe (non-critical — don't block on failure)
     try {
-      switch (event.actionType) {
+      switch (actionType) {
         case SwipeActionType.like:
           await _usageLimitService.recordUsage(
-            userId: event.userId,
+            userId: userId,
             limitType: UsageLimitType.likes,
           );
           break;
         case SwipeActionType.pass:
           await _usageLimitService.recordUsage(
-            userId: event.userId,
+            userId: userId,
             limitType: UsageLimitType.nopes,
           );
           break;
         case SwipeActionType.superLike:
           await _usageLimitService.recordUsage(
-            userId: event.userId,
+            userId: userId,
             limitType: UsageLimitType.superLikes,
           );
           await _usageLimitService.recordUsage(
-            userId: event.userId,
+            userId: userId,
             limitType: UsageLimitType.dailySuperLikes,
           );
           break;
@@ -335,19 +372,23 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       debugPrint('⚠️ Usage recording failed (non-critical): $e');
     }
 
-    // Track last swiped card for rewind
-    _lastSwipedCard = currentState.cards[currentState.currentIndex];
-    _lastSwipeType = event.actionType;
-    _lastSwipeCreatedMatch = swipeAction.createdMatch;
+    // Track last swiped card for rewind (swipe mode only)
+    if (advanceIndex) {
+      _lastSwipedCard = currentState.cards[currentState.currentIndex];
+      _lastSwipeType = actionType;
+      _lastSwipeCreatedMatch = swipeAction.createdMatch;
+    }
 
-    // Move to next card
-    final nextIndex = currentState.currentIndex + 1;
+    // Move to next card (swipe mode) or stay in place (grid mode)
+    final nextIndex = advanceIndex
+        ? currentState.currentIndex + 1
+        : currentState.currentIndex;
     final remainingCards = currentState.cards.length - nextIndex;
 
-    // Check if we need to prefetch more profiles
-    if (remainingCards <= prefetchThreshold && !_isPrefetching) {
+    // Check if we need to prefetch more profiles (swipe mode only)
+    if (advanceIndex && remainingCards <= prefetchThreshold && !_isPrefetching) {
       debugPrint('⏳ Queue low ($remainingCards profiles left), prefetching more...');
-      _triggerPrefetch(event.userId);
+      _triggerPrefetch(userId);
     }
 
     if (swipeAction.createdMatch) {
@@ -356,14 +397,14 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         cards: currentState.cards,
         currentIndex: nextIndex,
         createdMatch: true,
-        matchedUserId: event.targetUserId,
+        matchedUserId: targetUserId,
         matchId: swipeAction.matchId,
       ));
 
       // Wait briefly then transition to loaded state
       await Future.delayed(const Duration(milliseconds: 300));
 
-      if (nextIndex >= currentState.cards.length) {
+      if (advanceIndex && nextIndex >= currentState.cards.length) {
         emit(const DiscoveryStackEmpty());
       } else {
         emit(DiscoveryLoaded(
@@ -379,7 +420,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         createdMatch: false,
       ));
 
-      if (nextIndex >= currentState.cards.length) {
+      if (advanceIndex && nextIndex >= currentState.cards.length) {
         emit(const DiscoveryStackEmpty());
       } else {
         emit(DiscoveryLoaded(
@@ -635,97 +676,4 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     );
   }
 
-  /// Handle boost activation
-  Future<void> _onActivateBoost(
-    DiscoveryActivateBoost event,
-    Emitter<DiscoveryState> emit,
-  ) async {
-    final data = _extractCards();
-    if (data == null) return;
-
-    if (discoveryDataSource == null) return;
-
-    bool usedFreeBoost = false;
-
-    // Step 1: Check tier's free monthly boost allowance
-    if (event.membershipRules != null && event.membershipTier != null) {
-      final boostLimit = await _usageLimitService.checkLimit(
-        userId: event.userId,
-        limitType: UsageLimitType.boosts,
-        rules: event.membershipRules!,
-        currentTier: event.membershipTier!,
-      );
-
-      if (boostLimit.isAllowed) {
-        // Free boost available from tier — no coins needed
-        usedFreeBoost = true;
-      }
-    }
-
-    // Step 2: If no free boost, charge coins
-    if (!usedFreeBoost) {
-      if (coinRepository == null) {
-        emit(DiscoveryInsufficientCoins(
-          cards: data.cards,
-          currentIndex: data.currentIndex,
-          required: CoinFeaturePrices.boost,
-          available: 0,
-          featureName: 'Boost',
-        ));
-        emit(DiscoveryLoaded(cards: data.cards, currentIndex: data.currentIndex));
-        return;
-      }
-
-      final balanceResult = await coinRepository!.getBalance(event.userId);
-      final insufficient = balanceResult.fold(
-        (failure) => true,
-        (balance) => balance.availableCoins < CoinFeaturePrices.boost,
-      );
-
-      if (insufficient) {
-        final available = balanceResult.fold(
-          (failure) => 0,
-          (balance) => balance.availableCoins,
-        );
-        emit(DiscoveryInsufficientCoins(
-          cards: data.cards,
-          currentIndex: data.currentIndex,
-          required: CoinFeaturePrices.boost,
-          available: available,
-          featureName: 'Boost',
-        ));
-        emit(DiscoveryLoaded(cards: data.cards, currentIndex: data.currentIndex));
-        return;
-      }
-
-      // Deduct coins
-      await coinRepository!.purchaseFeature(
-        userId: event.userId,
-        featureName: 'boost',
-        cost: CoinFeaturePrices.boost,
-      );
-    }
-
-    // Record boost usage
-    try {
-      await _usageLimitService.recordUsage(
-        userId: event.userId,
-        limitType: UsageLimitType.boosts,
-      );
-    } catch (e) {
-      debugPrint('⚠️ Boost usage recording failed (non-critical): $e');
-    }
-
-    // Activate boost
-    final expiry = await discoveryDataSource!.activateBoost(event.userId);
-
-    emit(DiscoveryBoostActivated(
-      cards: data.cards,
-      currentIndex: data.currentIndex,
-      expiry: expiry,
-    ));
-
-    // Transition back to loaded
-    emit(DiscoveryLoaded(cards: data.cards, currentIndex: data.currentIndex));
-  }
 }

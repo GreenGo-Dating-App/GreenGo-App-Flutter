@@ -37,6 +37,23 @@ class DiscoverySwipeRecorded extends DiscoveryEvent {
   });
 }
 
+/// Record a swipe action from grid mode (does NOT advance currentIndex)
+class DiscoveryGridSwipeRecorded extends DiscoveryEvent {
+  final String userId;
+  final String targetUserId;
+  final SwipeActionType actionType;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
+
+  const DiscoveryGridSwipeRecorded({
+    required this.userId,
+    required this.targetUserId,
+    required this.actionType,
+    this.membershipRules,
+    this.membershipTier,
+  });
+}
+
 /// Refresh discovery stack
 class DiscoveryStackRefreshRequested extends DiscoveryEvent {
   final String userId;
@@ -66,19 +83,6 @@ class DiscoveryRewindRequested extends DiscoveryEvent {
   final MembershipTier? membershipTier;
 
   const DiscoveryRewindRequested({
-    required this.userId,
-    this.membershipRules,
-    this.membershipTier,
-  });
-}
-
-/// Activate boost for user profile
-class DiscoveryActivateBoost extends DiscoveryEvent {
-  final String userId;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
-
-  const DiscoveryActivateBoost({
     required this.userId,
     this.membershipRules,
     this.membershipTier,

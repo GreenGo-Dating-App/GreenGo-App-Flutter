@@ -117,6 +117,34 @@ class EditProfileScreen extends StatelessWidget {
               context.read<AuthBloc>().add(const AuthSignOutRequested());
               return;
             }
+            if (state is ProfileBoostActivated) {
+              final remaining = state.expiry.difference(DateTime.now());
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Profile boosted for ${remaining.inMinutes} minutes!'),
+                  backgroundColor: const Color(0xFF9B59B6),
+                ),
+              );
+            }
+            if (state is ProfileBoostInsufficientCoins) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Not enough coins! Need ${state.required}, have ${state.available}'),
+                  backgroundColor: AppColors.errorRed,
+                  action: SnackBarAction(
+                    label: 'Get Coins',
+                    textColor: Colors.white,
+                    onPressed: () {
+                      if (userId != null) {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => CoinShopScreen(userId: userId!)),
+                        );
+                      }
+                    },
+                  ),
+                ),
+              );
+            }
             // Only show error messages here - sub-screens handle their own success responses
             // Do NOT pop on ProfileUpdated as child screens may trigger updates
             if (state is ProfileError) {
@@ -338,6 +366,14 @@ class EditProfileScreen extends StatelessWidget {
                     profile: activeProfile,
                     onActivate: () => _activateTraveler(context, activeProfile),
                     onDeactivate: () => _deactivateTraveler(context, activeProfile),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Boost Profile
+                  _BoostProfileCard(
+                    profile: activeProfile,
+                    onBoost: () => _activateBoost(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -1277,6 +1313,106 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
+  Future<void> _activateBoost(BuildContext context, Profile profile) async {
+    // Check if already boosted
+    if (profile.isBoosted &&
+        profile.boostExpiry != null &&
+        profile.boostExpiry!.isAfter(DateTime.now())) {
+      final remaining = profile.boostExpiry!.difference(DateTime.now());
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Profile already boosted! ${remaining.inMinutes}m remaining'),
+          backgroundColor: const Color(0xFF9B59B6),
+        ),
+      );
+      return;
+    }
+
+    final cost = CoinFeaturePrices.boost;
+
+    // Show confirmation dialog
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: const Row(
+          children: [
+            Icon(Icons.flash_on, color: Color(0xFF9B59B6), size: 28),
+            SizedBox(width: 8),
+            Text('Boost Profile', style: TextStyle(color: Colors.white)),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Your profile will appear at the top of discovery for 30 minutes!',
+              style: TextStyle(color: Colors.white70, fontSize: 14),
+            ),
+            const SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: const Color(0xFF9B59B6).withOpacity(0.15),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0xFF9B59B6).withOpacity(0.3)),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.monetization_on, color: AppColors.richGold, size: 24),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Cost: $cost coins',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('Cancel', style: TextStyle(color: Colors.white54)),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF9B59B6),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+            child: const Text('Boost Now'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true || !context.mounted) return;
+
+    // Dispatch boost event
+    context.read<ProfileBloc>().add(
+      ProfileBoostRequested(userId: profile.userId),
+    );
+
+    // Listen for result
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Activating boost...'),
+          backgroundColor: Color(0xFF9B59B6),
+          duration: Duration(seconds: 1),
+        ),
+      );
+    }
+  }
+
   Future<void> _toggleIncognito(BuildContext context, Profile profile, bool enabled) async {
     if (enabled) {
       // Platinum/Test gets it free, others pay coins
@@ -1651,6 +1787,106 @@ class _TravelerToggleCard extends StatelessWidget {
 }
 
 /// Incognito toggle card widget
+class _BoostProfileCard extends StatelessWidget {
+  final Profile profile;
+  final VoidCallback onBoost;
+
+  const _BoostProfileCard({
+    required this.profile,
+    required this.onBoost,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isActive = profile.isBoosted &&
+        profile.boostExpiry != null &&
+        profile.boostExpiry!.isAfter(DateTime.now());
+
+    final remaining = isActive
+        ? profile.boostExpiry!.difference(DateTime.now())
+        : Duration.zero;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+        border: isActive
+            ? Border.all(color: const Color(0xFF9B59B6).withOpacity(0.6), width: 1.5)
+            : null,
+        gradient: isActive
+            ? LinearGradient(
+                colors: [
+                  const Color(0xFF9B59B6).withOpacity(0.15),
+                  AppColors.backgroundCard,
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              )
+            : null,
+      ),
+      child: ListTile(
+        leading: Icon(
+          Icons.flash_on,
+          color: isActive ? const Color(0xFF9B59B6) : AppColors.textTertiary,
+          size: 28,
+        ),
+        title: Text(
+          isActive ? 'Profile Boosted!' : 'Boost Profile',
+          style: TextStyle(
+            color: isActive ? const Color(0xFF9B59B6) : AppColors.textPrimary,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        subtitle: Text(
+          isActive
+              ? '${remaining.inMinutes}m remaining — Appearing at the top'
+              : '${CoinFeaturePrices.boost} coins — Be seen first for 30 minutes',
+          style: TextStyle(
+            color: isActive ? const Color(0xFF9B59B6).withOpacity(0.7) : AppColors.textTertiary,
+            fontSize: 12,
+          ),
+        ),
+        trailing: isActive
+            ? Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFF9B59B6), Color(0xFF8E44AD)],
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Text(
+                  'ACTIVE',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1,
+                  ),
+                ),
+              )
+            : ElevatedButton(
+                onPressed: onBoost,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF9B59B6),
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.flash_on, size: 16),
+                    SizedBox(width: 4),
+                    Text('Boost', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ),
+      ),
+    );
+  }
+}
+
 class _IncognitoToggleCard extends StatelessWidget {
   final Profile profile;
   final Function(bool) onToggle;

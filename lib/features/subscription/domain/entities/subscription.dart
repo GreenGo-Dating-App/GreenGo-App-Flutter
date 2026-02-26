@@ -158,60 +158,52 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'dailyLikes': 10,
           'superLikes': 1,
           'rewinds': 0,
-          'boosts': 0,
-          'seeWhoLikesYou': false,
           'unlimitedLikes': false,
           'advancedFilters': false,
           'readReceipts': false,
           'prioritySupport': false,
-
-          'profileBoost': 0,
           'incognitoMode': false,
+          'travelling': false,
+          'badge': false,
         };
       case SubscriptionTier.silver:
         return {
           'dailyLikes': 100,
           'superLikes': 5,
           'rewinds': 5,
-          'boosts': 1,
-          'seeWhoLikesYou': true,
           'unlimitedLikes': false,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': false,
-
-          'profileBoost': 1,
           'incognitoMode': false,
+          'travelling': false,
+          'badge': true,
         };
       case SubscriptionTier.gold:
         return {
           'dailyLikes': -1, // unlimited
           'superLikes': 10,
           'rewinds': -1, // unlimited
-          'boosts': 3,
-          'seeWhoLikesYou': true,
           'unlimitedLikes': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-
-          'profileBoost': 5,
           'incognitoMode': true,
+          'travelling': false,
+          'badge': true,
         };
       case SubscriptionTier.platinum:
         return {
           'dailyLikes': -1, // unlimited
           'superLikes': -1, // unlimited
           'rewinds': -1, // unlimited
-          'boosts': -1, // unlimited
-          'seeWhoLikesYou': true,
           'unlimitedLikes': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-
-          'profileBoost': -1, // unlimited
           'incognitoMode': true,
+          'travelling': true,
+          'badge': true,
           'vipBadge': true,
           'priorityMatching': true,
           'exclusiveEvents': true,
@@ -222,15 +214,13 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'dailyLikes': -1, // unlimited (admin configurable)
           'superLikes': -1, // unlimited (admin configurable)
           'rewinds': -1, // unlimited (admin configurable)
-          'boosts': -1, // unlimited (admin configurable)
-          'seeWhoLikesYou': true,
           'unlimitedLikes': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
-
-          'profileBoost': -1, // unlimited
           'incognitoMode': true,
+          'travelling': true,
+          'badge': true,
           'testBadge': true,
           'bypassCountdown': true, // Key feature for test users
           'priorityMatching': true,

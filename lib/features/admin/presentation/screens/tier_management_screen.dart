@@ -439,18 +439,6 @@ class _TierConfigEditor extends StatelessWidget {
             config.rules.copyWith(dailySuperLikeLimit: value),
           ),
         ),
-        _LimitSlider(
-          label: 'Monthly Free Boosts',
-          value: config.rules.monthlyFreeBoosts,
-          min: 0,
-          max: 20,
-          allowUnlimited: false,
-          icon: Icons.rocket_launch,
-          iconColor: Colors.orange,
-          onChanged: (value) => _updateRules(
-            config.rules.copyWith(monthlyFreeBoosts: value),
-          ),
-        ),
       ],
     );
   }
@@ -458,24 +446,6 @@ class _TierConfigEditor extends StatelessWidget {
   Widget _buildFeaturesSection() {
     return Column(
       children: [
-        _FeatureToggle(
-          label: 'Can See Who Liked',
-          description: 'See users who liked their profile',
-          value: config.rules.canSeeWhoLiked,
-          icon: Icons.visibility,
-          onChanged: (value) => _updateRules(
-            config.rules.copyWith(canSeeWhoLiked: value),
-          ),
-        ),
-        _FeatureToggle(
-          label: 'Can Boost Profile',
-          description: 'Boost profile visibility',
-          value: config.rules.canBoostProfile,
-          icon: Icons.rocket_launch,
-          onChanged: (value) => _updateRules(
-            config.rules.copyWith(canBoostProfile: value),
-          ),
-        ),
         _FeatureToggle(
           label: 'Can Send Media',
           description: 'Send images and videos in chat',
@@ -810,14 +780,11 @@ extension MembershipRulesCopyWith on MembershipRules {
     int? dailyMessageLimit,
     int? dailySwipeLimit,
     int? dailySuperLikeLimit,
-    bool? canSeeWhoLiked,
     bool? canUseAdvancedFilters,
     bool? canFilterByLocation,
     bool? canFilterByInterests,
     bool? canFilterByLanguage,
     bool? canFilterByVerification,
-    bool? canBoostProfile,
-    int? monthlyFreeBoosts,
     bool? canSendMedia,
     bool? canSeeReadReceipts,
     bool? canUseIncognitoMode,
@@ -830,14 +797,11 @@ extension MembershipRulesCopyWith on MembershipRules {
       dailyMessageLimit: dailyMessageLimit ?? this.dailyMessageLimit,
       dailySwipeLimit: dailySwipeLimit ?? this.dailySwipeLimit,
       dailySuperLikeLimit: dailySuperLikeLimit ?? this.dailySuperLikeLimit,
-      canSeeWhoLiked: canSeeWhoLiked ?? this.canSeeWhoLiked,
       canUseAdvancedFilters: canUseAdvancedFilters ?? this.canUseAdvancedFilters,
       canFilterByLocation: canFilterByLocation ?? this.canFilterByLocation,
       canFilterByInterests: canFilterByInterests ?? this.canFilterByInterests,
       canFilterByLanguage: canFilterByLanguage ?? this.canFilterByLanguage,
       canFilterByVerification: canFilterByVerification ?? this.canFilterByVerification,
-      canBoostProfile: canBoostProfile ?? this.canBoostProfile,
-      monthlyFreeBoosts: monthlyFreeBoosts ?? this.monthlyFreeBoosts,
       canSendMedia: canSendMedia ?? this.canSendMedia,
       canSeeReadReceipts: canSeeReadReceipts ?? this.canSeeReadReceipts,
       canUseIncognitoMode: canUseIncognitoMode ?? this.canUseIncognitoMode,

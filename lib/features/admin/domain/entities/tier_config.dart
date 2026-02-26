@@ -124,8 +124,6 @@ class TierConfigProvider {
   bool hasFeature(MembershipTier tier, String feature) {
     final rules = getRulesForTier(tier);
     switch (feature) {
-      case 'seeWhoLiked':
-        return rules.canSeeWhoLiked;
       case 'advancedFilters':
         return rules.canUseAdvancedFilters;
       case 'locationFilter':
@@ -136,8 +134,6 @@ class TierConfigProvider {
         return rules.canFilterByLanguage;
       case 'verificationFilter':
         return rules.canFilterByVerification;
-      case 'boostProfile':
-        return rules.canBoostProfile;
       case 'sendMedia':
         return rules.canSendMedia;
       case 'readReceipts':
@@ -163,8 +159,6 @@ class TierConfigProvider {
         return rules.dailySwipeLimit;
       case 'dailySuperLikes':
         return rules.dailySuperLikeLimit;
-      case 'monthlyBoosts':
-        return rules.monthlyFreeBoosts;
       case 'matchPriority':
         return rules.matchPriority;
       default:

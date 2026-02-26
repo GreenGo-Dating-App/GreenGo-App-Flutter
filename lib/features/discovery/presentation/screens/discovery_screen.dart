@@ -135,6 +135,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   // Swipe mode: shuffled card order (random people from all over the world)
   List<DiscoveryCard> _swipeShuffledCards = [];
   int _swipeShuffledForHash = 0; // Track which card set was shuffled
+  int _swipeCurrentIndex = 0; // Current position in shuffled swipe cards
 
   // Online status refresh
   Timer? _onlineStatusTimer;
@@ -175,7 +176,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     _loadSavedPreferencesAndStart();
     _loadSwipeHistoryOverlays();
     _onlineStatusTimer = Timer.periodic(
-      const Duration(seconds: 60),
+      const Duration(seconds: 30),
       (_) => _refreshOnlineStatuses(),
     );
   }
@@ -309,9 +310,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     }
   }
 
-  /// Periodically refresh online statuses for profiles visible in the grid.
+  /// Periodically refresh online statuses for profiles visible in either mode.
   Future<void> _refreshOnlineStatuses() async {
-    if (!mounted || !_isGridMode) return;
+    if (!mounted) return;
 
     final state = context.read<DiscoveryBloc>().state;
     final List<DiscoveryCard> cards;
@@ -333,8 +334,17 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       return;
     }
 
-    final startIdx = _gridStartIndex.clamp(0, cards.length);
-    final visibleCards = cards.sublist(startIdx);
+    // In grid mode, refresh from _gridStartIndex onward.
+    // In swipe mode, refresh current card + next 10 from shuffled list.
+    final List<DiscoveryCard> visibleCards;
+    if (_isGridMode) {
+      final startIdx = _gridStartIndex.clamp(0, cards.length);
+      visibleCards = cards.sublist(startIdx);
+    } else {
+      final startIdx = _swipeCurrentIndex.clamp(0, _swipeShuffledCards.length);
+      final endIdx = (startIdx + 10).clamp(0, _swipeShuffledCards.length);
+      visibleCards = _swipeShuffledCards.sublist(startIdx, endIdx);
+    }
     if (visibleCards.isEmpty) return;
 
     final userIds = visibleCards.map((c) => c.userId).toSet().toList();
@@ -420,6 +430,17 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             if (state is DiscoverySwipeCompleted) {
               // Swipe accepted — clear the pending grid card tracker
               _lastAttemptedGridCardId = null;
+              // Advance swipe index when in swipe mode + trigger prefetch if running low
+              if (!_isGridMode) {
+                setState(() => _swipeCurrentIndex++);
+                final remaining = _swipeShuffledCards.length - _swipeCurrentIndex;
+                if (remaining <= 10) {
+                  context.read<DiscoveryBloc>().add(DiscoveryPrefetchRequested(
+                    userId: userId,
+                    preferences: _currentPreferences,
+                  ));
+                }
+              }
               // Refresh coin balance after any swipe (super likes cost coins)
               context.read<CoinBloc>().add(LoadCoinBalance(userId));
               // Update grid overlay for match result
@@ -524,14 +545,27 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               }
 
               // Swipe mode: shuffle cards randomly so users see people from all over
-              final cardsHash = cards.length.hashCode ^ (cards.isNotEmpty ? cards.first.userId.hashCode : 0);
+              // Filter out admin/support — they only appear in grid mode
+              final swipeEligible = cards
+                  .where((c) => !c.candidate.profile.isAdmin && !c.candidate.profile.isSupport)
+                  .toList();
+              final cardsHash = swipeEligible.length.hashCode ^ (swipeEligible.isNotEmpty ? swipeEligible.first.userId.hashCode : 0);
               if (_swipeShuffledCards.isEmpty || _swipeShuffledForHash != cardsHash) {
-                _swipeShuffledCards = List<DiscoveryCard>.from(cards)..shuffle(Random());
+                if (_swipeShuffledCards.isNotEmpty && swipeEligible.length > _swipeShuffledCards.length) {
+                  // Prefetch added new cards — append them shuffled without resetting index
+                  final existingIds = _swipeShuffledCards.map((c) => c.userId).toSet();
+                  final newCards = swipeEligible.where((c) => !existingIds.contains(c.userId)).toList()..shuffle(Random());
+                  _swipeShuffledCards.addAll(newCards);
+                } else {
+                  // Full refresh — reset everything
+                  _swipeShuffledCards = List<DiscoveryCard>.from(swipeEligible)..shuffle(Random());
+                  _swipeCurrentIndex = 0;
+                }
                 _swipeShuffledForHash = cardsHash;
               }
 
               // In swipe mode, skip cards that were already acted on from grid
-              var effectiveIndex = 0;
+              var effectiveIndex = _swipeCurrentIndex;
               while (effectiveIndex < _swipeShuffledCards.length &&
                   _gridActionOverlays.containsKey(_swipeShuffledCards[effectiveIndex].userId)) {
                 effectiveIndex++;
@@ -585,21 +619,56 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     );
   }
 
-  /// Pre-cache images for upcoming cards so they load instantly
+  /// Pre-cache images for upcoming cards with two-phase loading:
+  /// Phase 1: All primary (first) photos — these are needed immediately.
+  /// Phase 2: Secondary photos — loaded only after ALL primaries finish.
   void _precacheUpcomingImages(List<DiscoveryCard> cards, int currentIndex) {
-    // Precache the next 15 cards ahead
     final end = (currentIndex + 15).clamp(0, cards.length);
+    final primaryFutures = <Future>[];
+    final secondaryUrls = <String>[];
+
     for (int i = currentIndex; i < end; i++) {
       final photoUrls = cards[i].candidate.profile.photoUrls;
-      for (final url in photoUrls) {
+      if (photoUrls.isEmpty) continue;
+
+      // Phase 1: Primary photo
+      final primary = photoUrls.first;
+      if (primary.isNotEmpty && !_precachedImageUrls.contains(primary)) {
+        _precachedImageUrls.add(primary);
+        primaryFutures.add(
+          precacheImage(CachedNetworkImageProvider(primary), context)
+              .catchError((_) {}),
+        );
+      }
+
+      // Collect secondary photos for phase 2
+      for (int j = 1; j < photoUrls.length; j++) {
+        final url = photoUrls[j];
         if (url.isNotEmpty && !_precachedImageUrls.contains(url)) {
+          secondaryUrls.add(url);
+        }
+      }
+    }
+
+    // Phase 2: After all primaries loaded, cache secondary photos
+    if (primaryFutures.isNotEmpty && secondaryUrls.isNotEmpty) {
+      Future.wait(primaryFutures).then((_) {
+        if (!mounted) return;
+        for (final url in secondaryUrls) {
+          if (!_precachedImageUrls.contains(url)) {
+            _precachedImageUrls.add(url);
+            precacheImage(CachedNetworkImageProvider(url), context)
+                .catchError((_) {});
+          }
+        }
+      });
+    } else if (secondaryUrls.isNotEmpty) {
+      // All primaries were already cached — load secondaries immediately
+      for (final url in secondaryUrls) {
+        if (!_precachedImageUrls.contains(url)) {
           _precachedImageUrls.add(url);
-          precacheImage(
-            CachedNetworkImageProvider(url),
-            context,
-          ).catchError((_) {
-            // Ignore precache errors silently
-          });
+          precacheImage(CachedNetworkImageProvider(url), context)
+              .catchError((_) {});
         }
       }
     }
@@ -731,6 +800,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         key: ValueKey(cards[currentIndex].userId),
         card: cards[currentIndex],
         isFront: true,
+        isOnlineOverride: _onlineStatusOverrides[cards[currentIndex].userId],
         onSwipe: enabled
             ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
             : null,
@@ -1060,7 +1130,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     // Track the card being actioned so we can revert its overlay if the limit is hit
     _lastAttemptedGridCardId = card.userId;
     context.read<DiscoveryBloc>().add(
-      DiscoverySwipeRecorded(
+      DiscoveryGridSwipeRecorded(
         userId: userId,
         targetUserId: card.userId,
         actionType: actionType,
@@ -1254,19 +1324,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       if (!_isGridMode) {
         _swipeShuffledCards = [];
         _swipeShuffledForHash = 0;
+        _swipeCurrentIndex = 0;
       }
       // Don't clear overlays — they persist from swipe history
-      // Snapshot the current index when entering grid mode so actions
-      // dispatched to the bloc don't shrink the grid pool.
+      // Grid always starts from index 0 — both modes share the full pool
       if (_isGridMode) {
-        final state = context.read<DiscoveryBloc>().state;
-        if (state is DiscoveryLoaded) {
-          _gridStartIndex = state.currentIndex;
-        } else if (state is DiscoverySwiping) {
-          _gridStartIndex = state.currentIndex;
-        } else if (state is DiscoverySwipeCompleted) {
-          _gridStartIndex = state.currentIndex;
-        }
+        _gridStartIndex = 0;
       }
     });
     widget.onGridModeChanged?.call();
@@ -1294,6 +1357,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       // Reset shuffled cards so swipe mode re-shuffles with new results
       _swipeShuffledCards = [];
       _swipeShuffledForHash = 0;
+      _swipeCurrentIndex = 0;
     });
     context.read<DiscoveryBloc>().add(
           DiscoveryStackRefreshRequested(
@@ -1344,9 +1408,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
-    debugPrint('Dispatching DiscoverySwipeRecorded: userId=$userId, target=${card.userId}, action=$actionType');
+    debugPrint('Dispatching DiscoveryGridSwipeRecorded (swipe mode): userId=$userId, target=${card.userId}, action=$actionType');
     context.read<DiscoveryBloc>().add(
-          DiscoverySwipeRecorded(
+          DiscoveryGridSwipeRecorded(
             userId: userId,
             targetUserId: card.userId,
             actionType: actionType,
@@ -1393,7 +1457,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
     context.read<DiscoveryBloc>().add(
-          DiscoverySwipeRecorded(
+          DiscoveryGridSwipeRecorded(
             userId: userId,
             targetUserId: card.userId,
             actionType: actionType,
@@ -1564,6 +1628,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
   late final AnimationController _pulseController;
   late final Animation<double> _pulseAnimation;
 
+  // Photo carousel state
+  int _currentPhotoIndex = 0;
+
   @override
   void initState() {
     super.initState();
@@ -1577,6 +1644,14 @@ class _GridProfileCardState extends State<_GridProfileCard>
   }
 
   @override
+  void didUpdateWidget(covariant _GridProfileCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.card.userId != widget.card.userId) {
+      _currentPhotoIndex = 0;
+    }
+  }
+
+  @override
   void dispose() {
     _pulseController.dispose();
     super.dispose();
@@ -1585,63 +1660,120 @@ class _GridProfileCardState extends State<_GridProfileCard>
   @override
   Widget build(BuildContext context) {
     final profile = widget.card.candidate.profile;
-    final photoUrl = profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null;
+    final photoUrls = profile.photoUrls;
+    final hasMultiplePhotos = photoUrls.length > 1;
     final showText = widget.gridColumns <= 3;
     final location = profile.effectiveLocation;
     final distanceText = widget.card.candidate.distanceText;
     final cityText = location.city.isNotEmpty ? location.city : '';
 
-    return GestureDetector(
-      onTap: () {
-        if (_showMenu || _showPreview) {
-          setState(() { _showMenu = false; _showPreview = false; });
-          return;
-        }
-        if (widget.actionOverlay != null) return;
-        HapticFeedback.lightImpact();
-        setState(() => _showMenu = true);
-      },
-      onLongPress: widget.gridColumns == 4 ? null : () {
-        HapticFeedback.mediumImpact();
-        setState(() { _showMenu = false; _showPreview = true; });
-      },
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            // Profile image
-            if (photoUrl != null && photoUrl.isNotEmpty)
-              CachedNetworkImage(
-                imageUrl: photoUrl,
-                fit: BoxFit.cover,
-                memCacheWidth: 600,
-                maxWidthDiskCache: 600,
-                fadeInDuration: const Duration(milliseconds: 200),
-                placeholder: (context, url) => Container(
-                  color: AppColors.backgroundCard,
-                  child: Center(
-                    child: Icon(
-                      Icons.person,
-                      color: AppColors.textTertiary.withOpacity(0.5),
-                      size: widget.gridColumns == 4 ? 32 : 48,
-                    ),
-                  ),
-                ),
-                errorWidget: (context, url, error) => Container(
-                  color: AppColors.backgroundCard,
+    // Check if profile is boosted
+    final isBoosted = profile.isBoosted &&
+        profile.boostExpiry != null &&
+        profile.boostExpiry!.isAfter(DateTime.now());
+
+    // Current photo URL based on carousel index
+    final currentPhotoUrl = photoUrls.isNotEmpty && _currentPhotoIndex < photoUrls.length
+        ? photoUrls[_currentPhotoIndex]
+        : (photoUrls.isNotEmpty ? photoUrls.first : null);
+
+    Widget card = ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // Current photo (static image — arrows navigate between photos)
+          if (currentPhotoUrl != null && currentPhotoUrl.isNotEmpty)
+            CachedNetworkImage(
+              imageUrl: currentPhotoUrl,
+              fit: BoxFit.cover,
+              memCacheWidth: 600,
+              maxWidthDiskCache: 600,
+              fadeInDuration: const Duration(milliseconds: 200),
+              placeholder: (context, url) => Container(
+                color: AppColors.backgroundCard,
+                child: Center(
                   child: Icon(
                     Icons.person,
                     color: AppColors.textTertiary.withOpacity(0.5),
                     size: widget.gridColumns == 4 ? 32 : 48,
                   ),
                 ),
-              )
-            else
-              Container(
-                color: AppColors.backgroundCard,
-                child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
               ),
+              errorWidget: (context, url, error) => Container(
+                color: AppColors.backgroundCard,
+                child: Icon(
+                  Icons.person,
+                  color: AppColors.textTertiary.withOpacity(0.5),
+                  size: widget.gridColumns == 4 ? 32 : 48,
+                ),
+              ),
+            )
+          else
+            Container(
+              color: AppColors.backgroundCard,
+              child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
+            ),
+
+          // Left arrow visual (always visible when multiple photos, dimmed at first)
+          if (hasMultiplePhotos && !_showMenu && !_showPreview && widget.actionOverlay == null)
+            Positioned(
+              left: 2,
+              top: 0,
+              bottom: 0,
+              child: IgnorePointer(
+                child: Center(
+                  child: Icon(
+                    Icons.chevron_left,
+                    color: Colors.white.withOpacity(_currentPhotoIndex > 0 ? 0.8 : 0.25),
+                    size: widget.gridColumns == 4 ? 16 : 22,
+                  ),
+                ),
+              ),
+            ),
+
+          // Right arrow visual (always visible when multiple photos, dimmed at last)
+          if (hasMultiplePhotos && !_showMenu && !_showPreview && widget.actionOverlay == null)
+            Positioned(
+              right: 2,
+              top: 0,
+              bottom: 0,
+              child: IgnorePointer(
+                child: Center(
+                  child: Icon(
+                    Icons.chevron_right,
+                    color: Colors.white.withOpacity(_currentPhotoIndex < photoUrls.length - 1 ? 0.8 : 0.25),
+                    size: widget.gridColumns == 4 ? 16 : 22,
+                  ),
+                ),
+              ),
+            ),
+
+          // Photo indicator bars at top (carousel-style, visible when multiple photos)
+          if (hasMultiplePhotos && widget.actionOverlay == null && !_showMenu && !_showPreview)
+            Positioned(
+              top: 3,
+              left: 6,
+              right: 6,
+              child: IgnorePointer(
+                child: Row(
+                  children: List.generate(photoUrls.length, (i) {
+                    return Expanded(
+                      child: Container(
+                        height: 3,
+                        margin: EdgeInsets.symmetric(horizontal: photoUrls.length > 6 ? 0.5 : 1.5),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(2),
+                          color: i == _currentPhotoIndex
+                              ? AppColors.richGold
+                              : Colors.white.withOpacity(0.35),
+                        ),
+                      ),
+                    );
+                  }),
+                ),
+              ),
+            ),
 
                         // Action overlay (after action confirmed)
             if (widget.actionOverlay == 'liked')
@@ -1930,6 +2062,113 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
+            // Boost flash icon (top left, below distance badge)
+            if (isBoosted && widget.actionOverlay != 'matched')
+              Positioned(
+                top: 22,
+                left: 4,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFFFFD700), Color(0xFFFFA500)],
+                    ),
+                    borderRadius: BorderRadius.circular(6),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFFFFD700).withOpacity(0.5),
+                        blurRadius: 4,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.flash_on, size: 10, color: Colors.white),
+                      SizedBox(width: 1),
+                      Text(
+                        'BOOST',
+                        style: TextStyle(
+                          fontSize: 7,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+            // ── Gesture zones: Row splits card into left 20% / center 60% / right 20% ──
+            // Placed ABOVE all decorative layers so taps always reach them.
+            if (!_showMenu && !_showPreview)
+              Positioned.fill(
+                child: Row(
+                  children: [
+                    // Left 20% → previous photo (or open menu if single photo)
+                    Expanded(
+                      flex: 1,
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onTap: () {
+                          if (hasMultiplePhotos && _currentPhotoIndex > 0) {
+                            HapticFeedback.selectionClick();
+                            setState(() => _currentPhotoIndex--);
+                          } else {
+                            if (widget.actionOverlay != null) return;
+                            HapticFeedback.lightImpact();
+                            setState(() => _showMenu = true);
+                          }
+                        },
+                        onLongPress: widget.gridColumns == 4 ? null : () {
+                          HapticFeedback.mediumImpact();
+                          setState(() => _showPreview = true);
+                        },
+                      ),
+                    ),
+                    // Center 60% → open action menu
+                    Expanded(
+                      flex: 3,
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onTap: () {
+                          if (widget.actionOverlay != null) return;
+                          HapticFeedback.lightImpact();
+                          setState(() => _showMenu = true);
+                        },
+                        onLongPress: widget.gridColumns == 4 ? null : () {
+                          HapticFeedback.mediumImpact();
+                          setState(() => _showPreview = true);
+                        },
+                      ),
+                    ),
+                    // Right 20% → next photo (or open menu if single photo)
+                    Expanded(
+                      flex: 1,
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onTap: () {
+                          if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1) {
+                            HapticFeedback.selectionClick();
+                            setState(() => _currentPhotoIndex++);
+                          } else {
+                            if (widget.actionOverlay != null) return;
+                            HapticFeedback.lightImpact();
+                            setState(() => _showMenu = true);
+                          }
+                        },
+                        onLongPress: widget.gridColumns == 4 ? null : () {
+                          HapticFeedback.mediumImpact();
+                          setState(() => _showPreview = true);
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
             // Tap action menu overlay - 4 action buttons in 2x2 grid
             if (_showMenu)
               Positioned.fill(
@@ -2087,13 +2326,17 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               }).toList(),
                             ),
                           ],
-                          // Bio snippet (only on 2 cols)
-                          if (widget.gridColumns == 2 && widget.card.bioPreview.isNotEmpty) ...[
+                          // About Me / Bio snippet (2-3 cols in long-press preview)
+                          if (widget.card.bioPreview.isNotEmpty) ...[
                             const SizedBox(height: 4),
                             Text(
                               widget.card.bioPreview,
-                              style: const TextStyle(color: Colors.white54, fontSize: 13, height: 1.2),
-                              maxLines: 2,
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: widget.gridColumns == 3 ? 11 : 13,
+                                height: 1.2,
+                              ),
+                              maxLines: widget.gridColumns == 3 ? 2 : 3,
                               overflow: TextOverflow.ellipsis,
                             ),
                           ],
@@ -2106,8 +2349,44 @@ class _GridProfileCardState extends State<_GridProfileCard>
               ),
           ],
         ),
-      ),
     );
+
+    // Wrap with golden luxury border if profile is boosted
+    if (isBoosted) {
+      return AnimatedBuilder(
+        animation: _pulseAnimation,
+        builder: (context, child) {
+          return Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: Color.lerp(
+                  const Color(0xFFFFD700),
+                  const Color(0xFFFFA500),
+                  _pulseAnimation.value,
+                )!,
+                width: 2.5,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFFFFD700).withOpacity(0.3 + (_pulseAnimation.value * 0.2)),
+                  blurRadius: 8 + (_pulseAnimation.value * 4),
+                  spreadRadius: 1 + (_pulseAnimation.value * 1),
+                ),
+                BoxShadow(
+                  color: const Color(0xFFFFA500).withOpacity(0.15 + (_pulseAnimation.value * 0.1)),
+                  blurRadius: 12,
+                  spreadRadius: 2,
+                ),
+              ],
+            ),
+            child: card,
+          );
+        },
+      );
+    }
+
+    return card;
   }
 
   Widget _buildInCardAction(IconData icon, Color color, VoidCallback onTap) {

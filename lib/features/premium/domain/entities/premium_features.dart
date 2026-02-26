@@ -288,3 +288,4 @@ class ProfileBoost extends Equatable {
         boostType,
       ];
 }
+

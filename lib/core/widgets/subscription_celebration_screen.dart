@@ -230,17 +230,9 @@ class _SubscriptionCelebrationScreenState
       addRow(Icons.replay, 'Rewinds', '$rewinds/day');
     }
 
-    // Boosts
-    final boosts = features['boosts'] as int? ?? 0;
-    if (boosts == -1) {
-      addRow(Icons.rocket_launch, 'Boosts', 'Unlimited');
-    } else if (boosts > 0) {
-      addRow(Icons.rocket_launch, 'Boosts', '$boosts/month');
-    }
-
-    // See Who Likes You
-    if (features['seeWhoLikesYou'] == true) {
-      addRow(Icons.visibility, 'See Who Likes You', '✓');
+    // Badge
+    if (features['badge'] == true) {
+      addRow(Icons.workspace_premium, 'Badge', '✓');
     }
 
     // Read Receipts
@@ -261,6 +253,11 @@ class _SubscriptionCelebrationScreenState
     // Priority Support
     if (features['prioritySupport'] == true) {
       addRow(Icons.support_agent, 'Priority Support', '✓');
+    }
+
+    // Travelling (Platinum)
+    if (features['travelling'] == true) {
+      addRow(Icons.flight, 'Travelling', 'Unlimited');
     }
 
     // VIP Badge (Platinum)

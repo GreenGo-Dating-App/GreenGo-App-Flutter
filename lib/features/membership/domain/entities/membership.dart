@@ -85,9 +85,6 @@ class MembershipRules extends Equatable {
   /// Maximum super likes (up swipe) per hour (-1 for unlimited)
   final int hourlySuperLikeLimit;
 
-  /// Can see who liked them
-  final bool canSeeWhoLiked;
-
   /// Can use advanced filters (age, distance, interests, etc.)
   final bool canUseAdvancedFilters;
 
@@ -102,12 +99,6 @@ class MembershipRules extends Equatable {
 
   /// Can use verification status filter
   final bool canFilterByVerification;
-
-  /// Can boost profile visibility
-  final bool canBoostProfile;
-
-  /// Number of free boosts per month
-  final int monthlyFreeBoosts;
 
   /// Can send media (images/videos) in chat
   final bool canSendMedia;
@@ -140,14 +131,11 @@ class MembershipRules extends Equatable {
     this.hourlyLikeLimit = 5,
     this.hourlyNopeLimit = 10,
     this.hourlySuperLikeLimit = 0,
-    this.canSeeWhoLiked = false,
     this.canUseAdvancedFilters = false,
     this.canFilterByLocation = false,
     this.canFilterByInterests = false,
     this.canFilterByLanguage = false,
     this.canFilterByVerification = false,
-    this.canBoostProfile = false,
-    this.monthlyFreeBoosts = 0,
     this.canSendMedia = false,
     this.canSeeReadReceipts = false,
     this.canUseIncognitoMode = false,
@@ -166,14 +154,11 @@ class MembershipRules extends Equatable {
     hourlyLikeLimit: 5,
     hourlyNopeLimit: 10,
     hourlySuperLikeLimit: 1,
-    canSeeWhoLiked: false,
     canUseAdvancedFilters: false,
     canFilterByLocation: false,
     canFilterByInterests: false,
     canFilterByLanguage: false,
     canFilterByVerification: false,
-    canBoostProfile: false,
-    monthlyFreeBoosts: 0,
     canSendMedia: true,
     canSeeReadReceipts: false,
     canUseIncognitoMode: false,
@@ -192,14 +177,11 @@ class MembershipRules extends Equatable {
     hourlyLikeLimit: 10,
     hourlyNopeLimit: 25,
     hourlySuperLikeLimit: 2,
-    canSeeWhoLiked: false,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
     canFilterByLanguage: false,
     canFilterByVerification: false,
-    canBoostProfile: true,
-    monthlyFreeBoosts: 1,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: false,
@@ -218,14 +200,11 @@ class MembershipRules extends Equatable {
     hourlyLikeLimit: 15,
     hourlyNopeLimit: 40,
     hourlySuperLikeLimit: 4,
-    canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
     canFilterByLanguage: true,
     canFilterByVerification: true,
-    canBoostProfile: true,
-    monthlyFreeBoosts: 3,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
@@ -244,14 +223,11 @@ class MembershipRules extends Equatable {
     hourlyLikeLimit: 20,
     hourlyNopeLimit: 50,
     hourlySuperLikeLimit: 5,
-    canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
     canFilterByLanguage: true,
     canFilterByVerification: true,
-    canBoostProfile: true,
-    monthlyFreeBoosts: 5,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
@@ -271,14 +247,11 @@ class MembershipRules extends Equatable {
     hourlyLikeLimit: 20, // Same as Platinum max
     hourlyNopeLimit: 50, // Same as Platinum max
     hourlySuperLikeLimit: 5, // Same as Platinum max
-    canSeeWhoLiked: true,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
     canFilterByLanguage: true,
     canFilterByVerification: true,
-    canBoostProfile: true,
-    monthlyFreeBoosts: 10,
     canSendMedia: true,
     canSeeReadReceipts: true,
     canUseIncognitoMode: true,
@@ -316,14 +289,11 @@ class MembershipRules extends Equatable {
         hourlyLikeLimit,
         hourlyNopeLimit,
         hourlySuperLikeLimit,
-        canSeeWhoLiked,
         canUseAdvancedFilters,
         canFilterByLocation,
         canFilterByInterests,
         canFilterByLanguage,
         canFilterByVerification,
-        canBoostProfile,
-        monthlyFreeBoosts,
         canSendMedia,
         canSeeReadReceipts,
         canUseIncognitoMode,

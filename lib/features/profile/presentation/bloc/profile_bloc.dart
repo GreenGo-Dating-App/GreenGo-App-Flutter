@@ -3,6 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
+import '../../../coins/domain/repositories/coin_repository.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/get_profile.dart';
 import '../../domain/usecases/update_profile.dart';
@@ -17,6 +20,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   final UpdateProfile updateProfile;
   final UploadPhoto uploadPhoto;
   final VerifyPhoto verifyPhoto;
+  final CoinRepository? coinRepository;
 
   ProfileBloc({
     required this.getProfile,
@@ -24,6 +28,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     required this.updateProfile,
     required this.uploadPhoto,
     required this.verifyPhoto,
+    this.coinRepository,
   }) : super(const ProfileInitial()) {
     on<ProfileLoadRequested>(_onProfileLoadRequested);
     on<ProfileCreateRequested>(_onProfileCreateRequested);
@@ -32,6 +37,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<ProfilePhotoVerificationRequested>(_onProfilePhotoVerificationRequested);
     on<ProfileNicknameUpdateRequested>(_onProfileNicknameUpdateRequested);
     on<ProfileDeleteRequested>(_onProfileDeleteRequested);
+    on<ProfileBoostRequested>(_onProfileBoostRequested);
   }
 
   Future<void> _onProfileLoadRequested(
@@ -173,6 +179,81 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     // Emit success with updated profile
     final updatedProfileResult = updateResult.getOrElse(() => throw Exception('Unreachable'));
     emit(ProfileUpdated(profile: updatedProfileResult));
+  }
+
+  Future<void> _onProfileBoostRequested(
+    ProfileBoostRequested event,
+    Emitter<ProfileState> emit,
+  ) async {
+    try {
+      // Get current profile to check tier
+      final result = await getProfile(GetProfileParams(userId: event.userId));
+      if (result.isLeft()) {
+        final failure = result.fold((f) => f, (_) => throw Exception('Unreachable'));
+        emit(ProfileError(message: failure.message));
+        return;
+      }
+      final profile = result.getOrElse(() => throw Exception('Unreachable'));
+
+      // Check if already boosted
+      if (profile.isBoosted &&
+          profile.boostExpiry != null &&
+          profile.boostExpiry!.isAfter(DateTime.now())) {
+        emit(ProfileError(message: 'Profile is already boosted!'));
+        emit(ProfileLoaded(profile: profile));
+        return;
+      }
+
+      // All users pay 50 coins for boost
+      final cost = CoinFeaturePrices.boost;
+
+      if (coinRepository == null) {
+        emit(ProfileBoostInsufficientCoins(required: cost, available: 0));
+        if (state is! ProfileLoaded) emit(ProfileLoaded(profile: profile));
+        return;
+      }
+
+      // Check balance
+      final balanceResult = await coinRepository!.getBalance(event.userId);
+      final balance = balanceResult.fold(
+        (failure) => 0,
+        (b) => b.availableCoins,
+      );
+
+      if (balance < cost) {
+        emit(ProfileBoostInsufficientCoins(required: cost, available: balance));
+        emit(ProfileLoaded(profile: profile));
+        return;
+      }
+
+      // Deduct coins
+      await coinRepository!.purchaseFeature(
+        userId: event.userId,
+        featureName: 'boost',
+        cost: cost,
+      );
+
+      // Activate boost on Firestore (30 minutes)
+      final firestore = FirebaseFirestore.instance;
+      final expiry = DateTime.now().add(const Duration(minutes: 30));
+      await firestore.collection('profiles').doc(event.userId).update({
+        'isBoosted': true,
+        'boostExpiry': Timestamp.fromDate(expiry),
+      });
+
+      // Reload profile
+      final updatedResult = await getProfile(GetProfileParams(userId: event.userId));
+      final updatedProfile = updatedResult.getOrElse(() => profile.copyWith(
+        isBoosted: true,
+        boostExpiry: expiry,
+      ));
+
+      emit(ProfileBoostActivated(profile: updatedProfile, expiry: expiry));
+      emit(ProfileLoaded(profile: updatedProfile));
+    } catch (e) {
+      debugPrint('[ProfileBoost] Error: $e');
+      emit(ProfileError(message: 'Failed to activate boost: $e'));
+    }
   }
 
   Future<void> _onProfileDeleteRequested(

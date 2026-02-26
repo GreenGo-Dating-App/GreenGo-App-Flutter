@@ -1440,8 +1440,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     // Features list
                     _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyLikes'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['superLikes'] as int)),
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopBoosts, _formatLimit(features['boosts'] as int)),
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopSeeWhoLikesYou, features['seeWhoLikesYou'] == true ? '✓' : '✗'),
+                    _buildFeatureRow('Badge', features['badge'] == true ? '✓' : '✗'),
+                    if (features['advancedFilters'] == true)
+                      _buildFeatureRow('Advanced Filters', '✓'),
+                    if (features['readReceipts'] == true)
+                      _buildFeatureRow('Read Receipts', '✓'),
+                    if (features['incognitoMode'] == true)
+                      _buildFeatureRow('Incognito Mode', features['travelling'] == true ? 'Unlimited' : '✓'),
+                    if (features['travelling'] == true)
+                      _buildFeatureRow('Travelling', 'Unlimited'),
                     if (tier == SubscriptionTier.platinum) ...[
                       _buildFeatureRow(AppLocalizations.of(context)!.shopVipBadge, '✓'),
                       _buildFeatureRow(AppLocalizations.of(context)!.shopPriorityMatching, '✓'),

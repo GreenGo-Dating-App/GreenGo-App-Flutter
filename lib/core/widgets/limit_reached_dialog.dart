@@ -287,12 +287,6 @@ class LimitReachedDialog extends StatelessWidget {
               'No',
               'Yes',
             ),
-          if (suggestedRules.canSeeWhoLiked && !currentRules.canSeeWhoLiked)
-            _buildComparisonRow(
-              'See Who Liked',
-              'No',
-              'Yes',
-            ),
         ],
       ),
     );

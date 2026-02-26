@@ -105,3 +105,12 @@ class ProfileNicknameUpdateRequested extends ProfileEvent {
   @override
   List<Object?> get props => [userId, nickname];
 }
+
+class ProfileBoostRequested extends ProfileEvent {
+  final String userId;
+
+  const ProfileBoostRequested({required this.userId});
+
+  @override
+  List<Object?> get props => [userId];
+}

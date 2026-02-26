@@ -287,14 +287,6 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                       used: _usageStats[UsageLimitType.mediaSends] ?? 0,
                       limit: rules.dailyMediaSendLimit,
                     ),
-                    const SizedBox(height: 12),
-
-                    _buildUsageStat(
-                      icon: Icons.flash_on,
-                      label: 'Boosts This Month',
-                      used: _usageStats[UsageLimitType.boosts] ?? 0,
-                      limit: rules.monthlyFreeBoosts,
-                    ),
 
                     const SizedBox(height: 32),
 
@@ -685,7 +677,6 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           _buildComparisonRow('Super Likes', currentRules.dailySuperLikeLimit, nextRules.dailySuperLikeLimit),
           _buildComparisonRow('Messages', currentRules.dailyMessageLimit, nextRules.dailyMessageLimit),
           _buildComparisonRow('Media Sends', currentRules.dailyMediaSendLimit, nextRules.dailyMediaSendLimit),
-          _buildComparisonRow('Free Boosts/mo', currentRules.monthlyFreeBoosts, nextRules.monthlyFreeBoosts),
         ],
       ),
     );

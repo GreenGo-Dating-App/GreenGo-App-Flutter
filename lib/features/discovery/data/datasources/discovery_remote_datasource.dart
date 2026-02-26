@@ -178,6 +178,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         ((currentUserDoc.data()?['isAdmin'] as bool? ?? false) ||
          (currentUserDoc.data()?['isSupport'] as bool? ?? false));
 
+    // Determine viewer's tier for boost visibility limit
+    final viewerTierStr = currentUserDoc.data()?['membershipTier'] as String? ?? 'FREE';
+    final maxBoostedVisible = _getMaxBoostedVisible(viewerTierStr);
+
     // Get user's swipe history with action types
     final swipeHistory = await _getSwipeHistoryWithTypes(userId);
     print('[Discovery] Swipe history entries: ${swipeHistory.length}');
@@ -278,10 +282,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final swipeRecord = swipeHistory[candidateId];
 
       if (swipeRecord == null) {
-        if (isBoosted) {
+        if (isBoosted && priority0Boosted.length < maxBoostedVisible) {
           priority0Boosted.add(candidate);
         } else {
-          // Never swiped on - Priority 1
+          // Never swiped on - Priority 1 (also overflow boosted beyond limit)
           priority1NotSeen.add(candidate);
         }
       } else if (swipeRecord.actionType == 'skip') {
@@ -308,16 +312,31 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
     }
 
+    // Shuffle boosted pool for fair rotation — every boosted user gets equal visibility
+    priority0Boosted.shuffle();
+
     print('[Discovery] After filtering: P0=${priority0Boosted.length} P1=${priority1NotSeen.length} P2=${priority2Skipped.length} P3=${priority3LikedNoResponse.length}');
 
     // Build the final list with priority ordering (no limit - endless)
     final List<MatchCandidate> prioritizedCandidates = [];
 
-    // Add priority 0 (boosted) first
-    prioritizedCandidates.addAll(priority0Boosted);
-
-    // Add priority 1 (not seen)
+    // Add priority 1 (not seen) first
     prioritizedCandidates.addAll(priority1NotSeen);
+
+    // Intersperse boosted profiles evenly among the first positions
+    // e.g., 3 boosted out of 20 → placed at positions 0, 3, 6 (every 3rd slot)
+    if (priority0Boosted.isNotEmpty && prioritizedCandidates.isNotEmpty) {
+      final spacing = (prioritizedCandidates.length / (priority0Boosted.length + 1))
+          .clamp(2, 5)
+          .toInt();
+      for (int i = 0; i < priority0Boosted.length; i++) {
+        final insertAt = (i * spacing).clamp(0, prioritizedCandidates.length);
+        prioritizedCandidates.insert(insertAt, priority0Boosted[i]);
+      }
+    } else {
+      // No normal candidates — just show boosted
+      prioritizedCandidates.addAll(priority0Boosted);
+    }
 
     // Then priority 2 (skipped / expired nope cooldown)
     prioritizedCandidates.addAll(priority2Skipped);
@@ -1008,6 +1027,22 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       return ProfileModel.fromFirestore(querySnapshot.docs.first);
     } catch (e) {
       return null;
+    }
+  }
+
+  /// Max boosted profiles visible based on viewer's tier.
+  /// Free: 2, Silver: 5, Gold: 10, Platinum/Test: unlimited
+  int _getMaxBoostedVisible(String tierStr) {
+    switch (tierStr.toUpperCase()) {
+      case 'PLATINUM':
+      case 'TEST':
+        return 999; // effectively unlimited
+      case 'GOLD':
+        return 10;
+      case 'SILVER':
+        return 5;
+      default: // FREE
+        return 2;
     }
   }
 
