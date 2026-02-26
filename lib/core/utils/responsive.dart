@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 ///
 /// Design baseline: 375px width (standard phone like iPhone 8/SE).
 /// On larger screens, all dimensions scale up proportionally.
-/// Scale factor is clamped between 1.0 and 1.4.
+/// Scale factor is clamped between 1.15 and 1.5.
 ///
 /// Usage:
 ///   context.rs(16)  — scale any dimension (padding, margin, size, radius)
@@ -19,7 +19,7 @@ class Responsive {
 
   factory Responsive.of(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final scale = (width / _baseWidth).clamp(1.0, 1.4);
+    final scale = (width / _baseWidth).clamp(1.15, 1.5);
     return Responsive._(scale);
   }
 

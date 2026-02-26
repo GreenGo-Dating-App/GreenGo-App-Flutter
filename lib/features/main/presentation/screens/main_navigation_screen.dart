@@ -790,8 +790,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           backgroundColor: AppColors.backgroundCard,
           selectedItemColor: AppColors.richGold,
           unselectedItemColor: AppColors.textTertiary,
-          selectedFontSize: 12,
-          unselectedFontSize: 12,
+          selectedFontSize: 13,
+          unselectedFontSize: 13,
+          iconSize: 28,
           type: BottomNavigationBarType.fixed,
           elevation: 0,
           items: [

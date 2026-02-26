@@ -10,11 +10,11 @@ class AppTheme {
   static const double _baseWidth = 375.0;
 
   /// Returns a scale factor based on screen width.
-  /// Clamped between 1.0 and 1.35.
+  /// Minimum 1.15x, max 1.5x. Ensures visible scaling on all devices.
   static double scaleFactor(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final scale = width / _baseWidth;
-    return scale.clamp(1.0, 1.35);
+    return scale.clamp(1.15, 1.5);
   }
 
   /// Scale a dimension value based on screen width.
