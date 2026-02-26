@@ -3,7 +3,7 @@
  * Points 131-140: Virtual backgrounds, AR filters, screen sharing, etc.
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const firestore = admin.firestore();

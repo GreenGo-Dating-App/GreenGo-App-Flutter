@@ -9,6 +9,10 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { SubscriptionTier, SubscriptionStatus } from '../shared/types';
+import {
+  verifyGooglePlayPurchase,
+  verifyAppStorePurchase,
+} from '../shared/purchase_verification';
 
 // Product ID → tier and duration mapping
 const PRODUCT_CONFIG: Record<string, { tier: string; durationDays: number; price: number }> = {
@@ -69,10 +73,34 @@ export const verifyPurchase = onCall(
       const durationDays = config.durationDays;
       const durationMs = durationDays * 24 * 60 * 60 * 1000;
 
-      // TODO: Implement server-side verification with:
-      // - Google Play Developer API for Android
-      // - App Store Server API for iOS
-      const verified = true; // Replace with actual verification
+      // Verify purchase with the respective store
+      let verified = false;
+
+      if (platform === 'android') {
+        // verificationData = Google Play purchase token (from serverVerificationData)
+        if (!verificationData) {
+          throw new HttpsError('invalid-argument', 'Missing verificationData for Android purchase');
+        }
+        const result = await verifyGooglePlayPurchase(productId, verificationData);
+        verified = result.verified;
+        if (!verified) {
+          logError(`Google Play verification failed for ${productId}: ${result.error}`);
+        }
+      } else if (platform === 'ios') {
+        // verificationData = JWS signed transaction from StoreKit 2
+        if (!verificationData) {
+          throw new HttpsError('invalid-argument', 'Missing verificationData for iOS purchase');
+        }
+        const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
+        const result = await verifyAppStorePurchase(verificationData, productId, appAppleId);
+        verified = result.verified;
+        if (!verified) {
+          logError(`App Store verification failed for ${productId}: ${result.error}`);
+        }
+      } else {
+        logError(`Unknown platform: ${platform}`);
+        throw new HttpsError('invalid-argument', `Unsupported platform: ${platform}`);
+      }
 
       if (!verified) {
         throw new HttpsError('failed-precondition', 'Purchase verification failed');

@@ -3,7 +3,7 @@
  * Point 107: Transcribe voice messages using Cloud Speech-to-Text API
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { SpeechClient } from '@google-cloud/speech';
 

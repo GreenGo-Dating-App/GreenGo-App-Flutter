@@ -8,6 +8,10 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { CoinSource, SubscriptionTier } from '../shared/types';
+import {
+  verifyGooglePlayPurchase,
+  verifyAppStorePurchase,
+} from '../shared/purchase_verification';
 
 // Coin packages
 const COIN_PACKAGES = {
@@ -41,6 +45,7 @@ interface VerifyPurchaseRequest {
   purchaseToken: string;
   productId: string;
   packageType: keyof typeof COIN_PACKAGES;
+  verificationData?: string;
 }
 
 export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
@@ -51,7 +56,7 @@ export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
   async (request) => {
     try {
       const uid = await verifyAuth(request.auth);
-      const { purchaseToken, productId, packageType } = request.data;
+      const { purchaseToken, productId, packageType, verificationData } = request.data;
 
       if (!purchaseToken || !productId || !packageType) {
         throw new HttpsError(
@@ -62,14 +67,14 @@ export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
 
       logInfo(`Verifying Google Play purchase for user ${uid}: ${packageType}`);
 
-      // In production, verify with Google Play Billing API
-      // const { data } = await googlePlayBilling.purchases.products.get({
-      //   packageName: 'com.greengo.app',
-      //   productId,
-      //   token: purchaseToken,
-      // });
+      // Verify with Google Play Developer API
+      const gpToken = verificationData || purchaseToken;
+      const verificationResult = await verifyGooglePlayPurchase(productId, gpToken);
+      if (!verificationResult.verified) {
+        logError(`Google Play coin purchase verification failed: ${verificationResult.error}`);
+        throw new HttpsError('failed-precondition', 'Purchase verification failed');
+      }
 
-      // For now, simulate successful verification
       const coinPackage = COIN_PACKAGES[packageType];
       if (!coinPackage) {
         throw new HttpsError('invalid-argument', 'Invalid package type');
@@ -157,7 +162,7 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
   async (request) => {
     try {
       const uid = await verifyAuth(request.auth);
-      const { purchaseToken, productId, packageType } = request.data;
+      const { purchaseToken, productId, packageType, verificationData } = request.data;
 
       if (!purchaseToken || !productId || !packageType) {
         throw new HttpsError(
@@ -168,8 +173,14 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
 
       logInfo(`Verifying App Store purchase for user ${uid}: ${packageType}`);
 
-      // In production, verify with App Store Server API
-      // Similar implementation to Google Play verification
+      // Verify with App Store Server API (StoreKit 2 JWS)
+      const jws = verificationData || purchaseToken;
+      const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
+      const verificationResult = await verifyAppStorePurchase(jws, productId, appAppleId);
+      if (!verificationResult.verified) {
+        logError(`App Store coin purchase verification failed: ${verificationResult.error}`);
+        throw new HttpsError('failed-precondition', 'Purchase verification failed');
+      }
 
       const coinPackage = COIN_PACKAGES[packageType];
       if (!coinPackage) {

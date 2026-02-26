@@ -3,7 +3,7 @@
  * Point 102: Compress images to <2MB and generate thumbnails
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import sharp from 'sharp';
 import * as path from 'path';

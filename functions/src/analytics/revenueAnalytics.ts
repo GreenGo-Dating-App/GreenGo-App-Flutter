@@ -3,7 +3,7 @@
  * Point 167: Revenue dashboard tracking daily, weekly, monthly revenue by source
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
 
 /**

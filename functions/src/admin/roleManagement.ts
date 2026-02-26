@@ -3,7 +3,7 @@
  * Point 227: Admin role and permission management
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const auth = admin.auth();

@@ -3,7 +3,7 @@
  * Points 170-175: A/B Testing, Fraud Detection, Forecasting, ARPU, Refunds, Tax
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
 import * as admin from 'firebase-admin';
 

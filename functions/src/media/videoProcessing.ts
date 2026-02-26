@@ -3,7 +3,7 @@
  * Point 105: Generate video thumbnails using FFmpeg
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import * as path from 'path';
 import * as os from 'os';

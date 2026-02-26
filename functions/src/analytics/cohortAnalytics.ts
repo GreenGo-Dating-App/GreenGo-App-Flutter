@@ -3,7 +3,7 @@
  * Point 168: Cohort analysis tracking user lifetime value by acquisition channel
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
 
 /**

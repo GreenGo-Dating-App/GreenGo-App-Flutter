@@ -44,6 +44,7 @@ const scheduler_1 = require("firebase-functions/v2/scheduler");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
+const purchase_verification_1 = require("../shared/purchase_verification");
 // Product ID → tier and duration mapping
 const PRODUCT_CONFIG = {
     'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
@@ -91,10 +92,35 @@ exports.verifyPurchase = (0, https_1.onCall)({
         const tier = config.tier;
         const durationDays = config.durationDays;
         const durationMs = durationDays * 24 * 60 * 60 * 1000;
-        // TODO: Implement server-side verification with:
-        // - Google Play Developer API for Android
-        // - App Store Server API for iOS
-        const verified = true; // Replace with actual verification
+        // Verify purchase with the respective store
+        let verified = false;
+        if (platform === 'android') {
+            // verificationData = Google Play purchase token (from serverVerificationData)
+            if (!verificationData) {
+                throw new https_1.HttpsError('invalid-argument', 'Missing verificationData for Android purchase');
+            }
+            const result = await (0, purchase_verification_1.verifyGooglePlayPurchase)(productId, verificationData);
+            verified = result.verified;
+            if (!verified) {
+                (0, utils_1.logError)(`Google Play verification failed for ${productId}: ${result.error}`);
+            }
+        }
+        else if (platform === 'ios') {
+            // verificationData = JWS signed transaction from StoreKit 2
+            if (!verificationData) {
+                throw new https_1.HttpsError('invalid-argument', 'Missing verificationData for iOS purchase');
+            }
+            const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
+            const result = await (0, purchase_verification_1.verifyAppStorePurchase)(verificationData, productId, appAppleId);
+            verified = result.verified;
+            if (!verified) {
+                (0, utils_1.logError)(`App Store verification failed for ${productId}: ${result.error}`);
+            }
+        }
+        else {
+            (0, utils_1.logError)(`Unknown platform: ${platform}`);
+            throw new https_1.HttpsError('invalid-argument', `Unsupported platform: ${platform}`);
+        }
         if (!verified) {
             throw new https_1.HttpsError('failed-precondition', 'Purchase verification failed');
         }

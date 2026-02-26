@@ -9,7 +9,7 @@
  * Pool key format: "{country}_{gender}_{ageMin}-{ageMax}"
  * Example: "DE_Female_25-34"
  *
- * Runs every 30 minutes. Each pool document contains an array of
+ * Runs every 10 minutes. Each pool document contains an array of
  * lightweight member entries (userId + scoring metadata) so the
  * Flutter client can filter and score without fetching full profiles.
  */
@@ -239,10 +239,10 @@ async function buildPools() {
 }
 // ───────── Exported Functions ─────────
 /**
- * Scheduled function: runs every 30 minutes to rebuild candidate pools.
+ * Scheduled function: runs every 10 minutes to rebuild candidate pools.
  */
 exports.precomputeCandidatePools = (0, scheduler_1.onSchedule)({
-    schedule: 'every 30 minutes',
+    schedule: 'every 10 minutes',
     timeoutSeconds: 540,
     memory: '1GiB',
 }, async () => {

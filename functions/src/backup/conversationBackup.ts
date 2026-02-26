@@ -3,7 +3,7 @@
  * Point 114: Backup conversations to Cloud Storage
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { Storage } from '@google-cloud/storage';
 import * as crypto from 'crypto';

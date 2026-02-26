@@ -3,7 +3,7 @@
  * Points 111-113: Real-time translation using Cloud Translation API
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { TranslationServiceClient } from '@google-cloud/translate';
 

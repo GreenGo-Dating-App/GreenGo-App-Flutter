@@ -19,9 +19,10 @@
     "test:status": "node check-test-status.js"
   },
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "dependencies": {
+    "@apple/app-store-server-library": "^2.0.0",
     "@google-cloud/bigquery": "^7.3.0",
     "@google-cloud/firestore": "^7.1.0",
     "@google-cloud/language": "^6.0.0",
@@ -40,8 +41,8 @@
     "date-fns": "^3.0.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "firebase-admin": "^12.0.0",
-    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^13.6.1",
+    "firebase-functions": "^7.0.5",
     "fluent-ffmpeg": "^2.1.2",
     "google-auth-library": "^9.4.1",
     "googleapis": "^128.0.0",

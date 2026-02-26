@@ -3,7 +3,7 @@
  * Points 201-210: AI-based content moderation
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { LanguageServiceClient } from '@google-cloud/language';

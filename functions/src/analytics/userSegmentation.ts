@@ -3,7 +3,7 @@
  * Points 254-256: Cohort analysis, user segmentation, and churn prediction
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const firestore = admin.firestore();

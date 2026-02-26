@@ -3,7 +3,7 @@
  * Point 108: Auto-delete media after 24 hours (Instagram-style)
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const storage = admin.storage();

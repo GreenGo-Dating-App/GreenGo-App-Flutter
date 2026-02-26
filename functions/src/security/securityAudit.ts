@@ -3,7 +3,7 @@
  * Run comprehensive security audits and generate reports
  */
 
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 // Stub the SecurityAuditSuite (original import commented out due to compilation issues)
