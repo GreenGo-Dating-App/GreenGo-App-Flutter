@@ -1071,5 +1071,6 @@
   "twoFaToggleTitle": "Ativar Autenticação 2FA",
   "twoFaToggleSubtitle": "Exigir verificação por código de e-mail em cada login",
   "twoFaEnabled": "Autenticação 2FA ativada",
-  "twoFaDisabled": "Autenticação 2FA desativada"
+  "twoFaDisabled": "Autenticação 2FA desativada",
+  "plusTaxes": "+ impostos"
 }

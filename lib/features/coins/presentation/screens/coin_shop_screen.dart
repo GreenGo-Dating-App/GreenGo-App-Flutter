@@ -989,7 +989,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               ),
                               const SizedBox(width: 8),
                               Text(
-                                '\$${finalPrice.toStringAsFixed(2)}$periodLabel',
+                                '\$${finalPrice.toStringAsFixed(2)}$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
                                 style: const TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
@@ -999,7 +999,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           )
                         else
                           Text(
-                            '\$${displayPrice.toStringAsFixed(2)}$periodLabel',
+                            '\$${displayPrice.toStringAsFixed(2)}$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
                             style: const TextStyle(
                               fontSize: 12,
                             ),
@@ -1374,7 +1374,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                 children: [
                                   if (_isYearlySelected) ...[
                                     Text(
-                                      '\$${tier.yearlyPrice.toStringAsFixed(2)}/year',
+                                      '\$${tier.yearlyPrice.toStringAsFixed(2)}/year  ${AppLocalizations.of(context)!.plusTaxes}',
                                       style: const TextStyle(
                                         fontSize: 16,
                                         color: Colors.white70,
@@ -1399,7 +1399,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                     ),
                                     const SizedBox(width: 8),
                                     Text(
-                                      '\$${(tier.monthlyPrice - upgradeDiscount).toStringAsFixed(2)}/mo',
+                                      '\$${(tier.monthlyPrice - upgradeDiscount).toStringAsFixed(2)}/mo  ${AppLocalizations.of(context)!.plusTaxes}',
                                       style: const TextStyle(
                                         fontSize: 16,
                                         color: Color(0xFF4CAF50),
@@ -1408,7 +1408,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                                     ),
                                   ] else
                                     Text(
-                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}/month',
+                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}/month  ${AppLocalizations.of(context)!.plusTaxes}',
                                       style: const TextStyle(
                                         fontSize: 16,
                                         color: Colors.white70,
@@ -2060,7 +2060,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        package.displayPrice,
+                        '${package.displayPrice} ${AppLocalizations.of(context)!.plusTaxes}',
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

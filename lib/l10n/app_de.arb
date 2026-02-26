@@ -1065,5 +1065,6 @@
   "twoFaToggleTitle": "2FA-Authentifizierung aktivieren",
   "twoFaToggleSubtitle": "E-Mail-Code-Verifizierung bei jeder Anmeldung erforderlich",
   "twoFaEnabled": "2FA-Authentifizierung aktiviert",
-  "twoFaDisabled": "2FA-Authentifizierung deaktiviert"
+  "twoFaDisabled": "2FA-Authentifizierung deaktiviert",
+  "plusTaxes": "+ Steuern"
 }

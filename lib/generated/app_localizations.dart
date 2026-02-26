@@ -4762,6 +4762,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'2FA authentication disabled'**
   String get twoFaDisabled;
+
+  /// No description provided for @plusTaxes.
+  ///
+  /// In en, this message translates to:
+  /// **'+ taxes'**
+  String get plusTaxes;
 }
 
 class _AppLocalizationsDelegate

@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../domain/entities/subscription.dart';
@@ -277,7 +278,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}',
+                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}  ${AppLocalizations.of(context)!.plusTaxes}',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -520,7 +521,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                     ),
                   ],
                   Text(
-                    product.price,
+                    '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,

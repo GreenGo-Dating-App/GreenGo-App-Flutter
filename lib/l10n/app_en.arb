@@ -1236,5 +1236,6 @@
   "twoFaToggleTitle": "Enable 2FA Authenticator",
   "twoFaToggleSubtitle": "Require email code verification on every login",
   "twoFaEnabled": "2FA authentication enabled",
-  "twoFaDisabled": "2FA authentication disabled"
+  "twoFaDisabled": "2FA authentication disabled",
+  "plusTaxes": "+ taxes"
 }

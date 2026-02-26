@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../domain/entities/subscription.dart';
@@ -137,7 +138,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}',
+                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}  ${AppLocalizations.of(context)!.plusTaxes}',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -258,7 +259,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              product.price,
+              '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

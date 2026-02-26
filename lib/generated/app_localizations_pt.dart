@@ -2633,6 +2633,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get twoFaDisabled => 'Autenticação 2FA desativada';
+
+  @override
+  String get plusTaxes => '+ impostos';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -5267,4 +5270,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get twoFaDisabled => 'Autenticação 2FA desativada';
+
+  @override
+  String get plusTaxes => '+ impostos';
 }

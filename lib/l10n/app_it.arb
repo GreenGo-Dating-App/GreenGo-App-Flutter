@@ -1085,5 +1085,6 @@
   "twoFaToggleTitle": "Attiva Autenticazione 2FA",
   "twoFaToggleSubtitle": "Richiedi la verifica tramite codice email ad ogni accesso",
   "twoFaEnabled": "Autenticazione 2FA attivata",
-  "twoFaDisabled": "Autenticazione 2FA disattivata"
+  "twoFaDisabled": "Autenticazione 2FA disattivata",
+  "plusTaxes": "+ tasse"
 }

@@ -2643,4 +2643,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get twoFaDisabled => '2FA-Authentifizierung deaktiviert';
+
+  @override
+  String get plusTaxes => '+ Steuern';
 }
