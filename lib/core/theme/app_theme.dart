@@ -6,7 +6,34 @@ import '../constants/app_dimensions.dart';
 class AppTheme {
   AppTheme._();
 
-  static ThemeData get darkTheme {
+  /// Design baseline width (standard phone like iPhone 8/SE).
+  /// Screens wider than this get proportionally larger text.
+  static const double _baseWidth = 375.0;
+
+  /// Returns a scale factor based on screen width.
+  /// Clamped between 1.0 (never shrink below base) and 1.35 (cap for very large screens).
+  static double scaleFactor(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final scale = width / _baseWidth;
+    return scale.clamp(1.0, 1.35);
+  }
+
+  /// Scaled font size helper.
+  static double _sf(BuildContext context, double baseSize) {
+    return (baseSize * scaleFactor(context)).roundToDouble();
+  }
+
+  /// The original static theme (no scaling) used as initial theme in MaterialApp.
+  static ThemeData get darkTheme => _buildTheme(1.0);
+
+  /// Context-aware scaled theme — call from Builder widget below MaterialApp.
+  static ThemeData scaledDarkTheme(BuildContext context) {
+    return _buildTheme(scaleFactor(context));
+  }
+
+  static ThemeData _buildTheme(double sf) {
+    double s(double base) => (base * sf).roundToDouble();
+
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
@@ -26,114 +53,114 @@ class AppTheme {
       ),
 
       // AppBar Theme
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: AppColors.deepBlack,
         elevation: 0,
         centerTitle: true,
-        systemOverlayStyle: SystemUiOverlayStyle(
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
         ),
         titleTextStyle: TextStyle(
           color: AppColors.textPrimary,
-          fontSize: 20,
+          fontSize: s(20),
           fontWeight: FontWeight.w600,
           fontFamily: 'Poppins',
         ),
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: AppColors.richGold,
         ),
       ),
 
       // Text Theme
-      textTheme: const TextTheme(
+      textTheme: TextTheme(
         displayLarge: TextStyle(
-          fontSize: 32,
+          fontSize: s(32),
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         displayMedium: TextStyle(
-          fontSize: 28,
+          fontSize: s(28),
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         displaySmall: TextStyle(
-          fontSize: 24,
+          fontSize: s(24),
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         headlineLarge: TextStyle(
-          fontSize: 22,
+          fontSize: s(22),
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         headlineMedium: TextStyle(
-          fontSize: 20,
+          fontSize: s(20),
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         headlineSmall: TextStyle(
-          fontSize: 18,
+          fontSize: s(18),
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         titleLarge: TextStyle(
-          fontSize: 16,
+          fontSize: s(16),
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         titleMedium: TextStyle(
-          fontSize: 14,
+          fontSize: s(14),
           fontWeight: FontWeight.w500,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         titleSmall: TextStyle(
-          fontSize: 12,
+          fontSize: s(12),
           fontWeight: FontWeight.w500,
           color: AppColors.textSecondary,
           fontFamily: 'Poppins',
         ),
         bodyLarge: TextStyle(
-          fontSize: 16,
+          fontSize: s(16),
           fontWeight: FontWeight.normal,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         bodyMedium: TextStyle(
-          fontSize: 14,
+          fontSize: s(14),
           fontWeight: FontWeight.normal,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         bodySmall: TextStyle(
-          fontSize: 12,
+          fontSize: s(12),
           fontWeight: FontWeight.normal,
           color: AppColors.textSecondary,
           fontFamily: 'Poppins',
         ),
         labelLarge: TextStyle(
-          fontSize: 14,
+          fontSize: s(14),
           fontWeight: FontWeight.w500,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
         labelMedium: TextStyle(
-          fontSize: 12,
+          fontSize: s(12),
           fontWeight: FontWeight.w500,
           color: AppColors.textSecondary,
           fontFamily: 'Poppins',
         ),
         labelSmall: TextStyle(
-          fontSize: 10,
+          fontSize: s(10),
           fontWeight: FontWeight.w500,
           color: AppColors.textSecondary,
           fontFamily: 'Poppins',
@@ -150,8 +177,8 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppDimensions.radiusM),
           ),
-          textStyle: const TextStyle(
-            fontSize: 16,
+          textStyle: TextStyle(
+            fontSize: s(16),
             fontWeight: FontWeight.w600,
             fontFamily: 'Poppins',
           ),
@@ -166,8 +193,8 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppDimensions.radiusM),
           ),
-          textStyle: const TextStyle(
-            fontSize: 16,
+          textStyle: TextStyle(
+            fontSize: s(16),
             fontWeight: FontWeight.w600,
             fontFamily: 'Poppins',
           ),
@@ -177,8 +204,8 @@ class AppTheme {
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
           foregroundColor: AppColors.richGold,
-          textStyle: const TextStyle(
-            fontSize: 14,
+          textStyle: TextStyle(
+            fontSize: s(14),
             fontWeight: FontWeight.w600,
             fontFamily: 'Poppins',
           ),
@@ -213,19 +240,19 @@ class AppTheme {
           horizontal: AppDimensions.paddingM,
           vertical: AppDimensions.paddingM,
         ),
-        hintStyle: const TextStyle(
+        hintStyle: TextStyle(
           color: AppColors.textTertiary,
-          fontSize: 14,
+          fontSize: s(14),
           fontFamily: 'Poppins',
         ),
-        labelStyle: const TextStyle(
+        labelStyle: TextStyle(
           color: AppColors.textSecondary,
-          fontSize: 14,
+          fontSize: s(14),
           fontFamily: 'Poppins',
         ),
-        errorStyle: const TextStyle(
+        errorStyle: TextStyle(
           color: AppColors.errorRed,
-          fontSize: 12,
+          fontSize: s(12),
           fontFamily: 'Poppins',
         ),
       ),
@@ -254,19 +281,19 @@ class AppTheme {
       ),
 
       // Bottom Navigation Bar Theme
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.deepBlack,
         selectedItemColor: AppColors.richGold,
         unselectedItemColor: AppColors.textTertiary,
         type: BottomNavigationBarType.fixed,
         elevation: 8,
         selectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: s(12),
           fontWeight: FontWeight.w600,
           fontFamily: 'Poppins',
         ),
         unselectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: s(12),
           fontWeight: FontWeight.normal,
           fontFamily: 'Poppins',
         ),
@@ -300,14 +327,14 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusL),
         ),
-        titleTextStyle: const TextStyle(
-          fontSize: 20,
+        titleTextStyle: TextStyle(
+          fontSize: s(20),
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
           fontFamily: 'Poppins',
         ),
-        contentTextStyle: const TextStyle(
-          fontSize: 14,
+        contentTextStyle: TextStyle(
+          fontSize: s(14),
           color: AppColors.textSecondary,
           fontFamily: 'Poppins',
         ),
@@ -316,9 +343,9 @@ class AppTheme {
       // Snackbar Theme
       snackBarTheme: SnackBarThemeData(
         backgroundColor: AppColors.backgroundCard,
-        contentTextStyle: const TextStyle(
+        contentTextStyle: TextStyle(
           color: AppColors.textPrimary,
-          fontSize: 14,
+          fontSize: s(14),
           fontFamily: 'Poppins',
         ),
         shape: RoundedRectangleBorder(
