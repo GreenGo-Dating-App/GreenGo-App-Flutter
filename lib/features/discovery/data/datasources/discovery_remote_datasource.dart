@@ -282,10 +282,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final swipeRecord = swipeHistory[candidateId];
 
       if (swipeRecord == null) {
-        if (isBoosted && priority0Boosted.length < maxBoostedVisible) {
+        if (isBoosted) {
+          // Collect ALL boosted — we'll trim to closest N after the loop
           priority0Boosted.add(candidate);
         } else {
-          // Never swiped on - Priority 1 (also overflow boosted beyond limit)
           priority1NotSeen.add(candidate);
         }
       } else if (swipeRecord.actionType == 'skip') {
@@ -312,8 +312,23 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       }
     }
 
-    // Shuffle boosted pool for fair rotation — every boosted user gets equal visibility
-    priority0Boosted.shuffle();
+    // Sort boosted by distance (closest first), then keep only the tier limit
+    // Overflow boosted profiles go into the normal pool so they're still visible
+    priority0Boosted.sort((a, b) => a.distance.compareTo(b.distance));
+    if (priority0Boosted.length > maxBoostedVisible) {
+      // Admin/support profiles (added earlier) should stay — only trim real boosted
+      final admins = priority0Boosted.where((c) =>
+          c.profile.isAdmin || c.profile.isSupport).toList();
+      final realBoosted = priority0Boosted.where((c) =>
+          !c.profile.isAdmin && !c.profile.isSupport).toList();
+      final kept = realBoosted.take(maxBoostedVisible).toList();
+      final overflow = realBoosted.skip(maxBoostedVisible).toList();
+      priority0Boosted
+        ..clear()
+        ..addAll(admins)
+        ..addAll(kept);
+      priority1NotSeen.addAll(overflow);
+    }
 
     print('[Discovery] After filtering: P0=${priority0Boosted.length} P1=${priority1NotSeen.length} P2=${priority2Skipped.length} P3=${priority3LikedNoResponse.length}');
 
@@ -323,19 +338,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Add priority 1 (not seen) first
     prioritizedCandidates.addAll(priority1NotSeen);
 
-    // Intersperse boosted profiles evenly among the first positions
-    // e.g., 3 boosted out of 20 → placed at positions 0, 3, 6 (every 3rd slot)
-    if (priority0Boosted.isNotEmpty && prioritizedCandidates.isNotEmpty) {
-      final spacing = (prioritizedCandidates.length / (priority0Boosted.length + 1))
-          .clamp(2, 5)
-          .toInt();
-      for (int i = 0; i < priority0Boosted.length; i++) {
-        final insertAt = (i * spacing).clamp(0, prioritizedCandidates.length);
-        prioritizedCandidates.insert(insertAt, priority0Boosted[i]);
-      }
-    } else {
-      // No normal candidates — just show boosted
-      prioritizedCandidates.addAll(priority0Boosted);
+    // Place boosted profiles at the very top (first 1-2 rows of grid)
+    // regardless of distance — they paid for priority visibility
+    if (priority0Boosted.isNotEmpty) {
+      prioritizedCandidates.insertAll(0, priority0Boosted);
     }
 
     // Then priority 2 (skipped / expired nope cooldown)

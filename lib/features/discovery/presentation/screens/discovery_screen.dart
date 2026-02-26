@@ -830,11 +830,24 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       return _buildEmptyState(context);
     }
     // Show ALL users (including skipped ones) but with their action overlays
-    // Grid mode always sorts by distance (closest first)
+    // Grid mode: boosted profiles always appear first (top rows), then sort by distance
+    final now = DateTime.now();
     final allCards = cards
         .sublist(startIdx)
         .toList()
-      ..sort((a, b) => a.candidate.distance.compareTo(b.candidate.distance));
+      ..sort((a, b) {
+        final aBoosted = a.candidate.profile.isBoosted &&
+            a.candidate.profile.boostExpiry != null &&
+            a.candidate.profile.boostExpiry!.isAfter(now);
+        final bBoosted = b.candidate.profile.isBoosted &&
+            b.candidate.profile.boostExpiry != null &&
+            b.candidate.profile.boostExpiry!.isAfter(now);
+        // Boosted profiles come first
+        if (aBoosted && !bBoosted) return -1;
+        if (!aBoosted && bBoosted) return 1;
+        // Within same group, sort by distance
+        return a.candidate.distance.compareTo(b.candidate.distance);
+      });
     
     // Separate admin/support profiles — they always go first
     final adminCards = allCards.where((card) =>
@@ -2062,11 +2075,18 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Boost flash icon (top left, below distance badge)
+            // Boost badge (top right, stacked below tier & traveler badges)
             if (isBoosted && widget.actionOverlay != 'matched')
               Positioned(
-                top: 22,
-                left: 4,
+                top: () {
+                  double offset = 4.0;
+                  final hasTier = profile.membershipTier != MembershipTier.free &&
+                      profile.membershipTier != MembershipTier.test;
+                  if (hasTier) offset += 20.0;
+                  if (profile.isTravelerActive) offset += 20.0;
+                  return offset;
+                }(),
+                right: 4,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                   decoration: BoxDecoration(
@@ -2082,22 +2102,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       ),
                     ],
                   ),
-                  child: const Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(Icons.flash_on, size: 10, color: Colors.white),
-                      SizedBox(width: 1),
-                      Text(
-                        'BOOST',
-                        style: TextStyle(
-                          fontSize: 7,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: const Icon(Icons.flash_on, size: 12, color: Colors.white),
                 ),
               ),
 

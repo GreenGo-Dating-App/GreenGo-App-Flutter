@@ -139,7 +139,7 @@ class MatchCardWidget extends StatelessWidget {
                     const SizedBox(height: 2),
                     // Last message or time
                     Text(
-                      match.lastMessage ?? match.timeSinceMatchText,
+                      _formatLastMessage(match.lastMessage) ?? match.timeSinceMatchText,
                       style: TextStyle(
                         color: match.unreadCount > 0
                             ? AppColors.textPrimary
@@ -220,6 +220,26 @@ class MatchCardWidget extends StatelessWidget {
     if (percent >= 70) return const Color(0xFF4CAF50); // Green
     if (percent >= 50) return AppColors.richGold;
     return AppColors.textSecondary;
+  }
+
+  /// Formats the last message for display — replaces raw URLs with friendly labels
+  String? _formatLastMessage(String? message) {
+    if (message == null || message.isEmpty) return null;
+    final lower = message.toLowerCase();
+    // Firebase Storage URLs for media
+    if (lower.contains('firebasestorage.googleapis.com') || lower.startsWith('https://storage.googleapis.com')) {
+      if (lower.contains('.mp4') || lower.contains('.mov') || lower.contains('.avi') || lower.contains('video')) {
+        return '🎥 Video';
+      }
+      if (lower.contains('.jpg') || lower.contains('.jpeg') || lower.contains('.png') || lower.contains('.webp') || lower.contains('image')) {
+        return '📷 Photo';
+      }
+      if (lower.contains('.m4a') || lower.contains('.aac') || lower.contains('.mp3') || lower.contains('voice') || lower.contains('audio')) {
+        return '🎤 Voice message';
+      }
+      return '📎 Attachment';
+    }
+    return message;
   }
 
   Widget _buildPlaceholder() {

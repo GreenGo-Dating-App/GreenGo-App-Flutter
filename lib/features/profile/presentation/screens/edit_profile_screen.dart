@@ -122,7 +122,7 @@ class EditProfileScreen extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Profile boosted for ${remaining.inMinutes} minutes!'),
-                  backgroundColor: const Color(0xFF9B59B6),
+                  backgroundColor: const Color(0xFFDAA520),
                 ),
               );
             }
@@ -376,16 +376,6 @@ class EditProfileScreen extends StatelessWidget {
                     onBoost: () => _activateBoost(context, activeProfile),
                   ),
 
-                  const SizedBox(height: 16),
-
-                  // Usage Stats
-                  EditSectionCard(
-                    title: 'My Usage',
-                    subtitle: 'View your daily usage and tier limits',
-                    icon: Icons.bar_chart,
-                    onTap: () => _navigateToUsageStats(context, activeProfile),
-                  ),
-
                   const SizedBox(height: 32),
                   const Divider(color: AppColors.divider),
                   const SizedBox(height: 16),
@@ -414,6 +404,15 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: 'Reset all swipes and start fresh',
                     icon: Icons.refresh,
                     onTap: () => _showRestartDiscoveryDialog(context, activeProfile),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Usage Stats
+                  EditSectionCard(
+                    title: 'My Usage',
+                    subtitle: 'View your daily usage and tier limits',
+                    icon: Icons.bar_chart,
+                    onTap: () => _navigateToUsageStats(context, activeProfile),
                   ),
 
                   // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
@@ -1322,7 +1321,7 @@ class EditProfileScreen extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Profile already boosted! ${remaining.inMinutes}m remaining'),
-          backgroundColor: const Color(0xFF9B59B6),
+          backgroundColor: const Color(0xFFDAA520),
         ),
       );
       return;
@@ -1338,7 +1337,7 @@ class EditProfileScreen extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: const Row(
           children: [
-            Icon(Icons.flash_on, color: Color(0xFF9B59B6), size: 28),
+            Icon(Icons.flash_on, color: Color(0xFFDAA520), size: 28),
             SizedBox(width: 8),
             Text('Boost Profile', style: TextStyle(color: Colors.white)),
           ],
@@ -1355,9 +1354,9 @@ class EditProfileScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: const Color(0xFF9B59B6).withOpacity(0.15),
+                color: const Color(0xFFDAA520).withOpacity(0.15),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFF9B59B6).withOpacity(0.3)),
+                border: Border.all(color: const Color(0xFFDAA520).withOpacity(0.3)),
               ),
               child: Row(
                 children: [
@@ -1384,7 +1383,7 @@ class EditProfileScreen extends StatelessWidget {
           ElevatedButton(
             onPressed: () => Navigator.pop(ctx, true),
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF9B59B6),
+              backgroundColor: const Color(0xFFDAA520),
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             ),
@@ -1406,7 +1405,7 @@ class EditProfileScreen extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Activating boost...'),
-          backgroundColor: Color(0xFF9B59B6),
+          backgroundColor: Color(0xFFDAA520),
           duration: Duration(seconds: 1),
         ),
       );
