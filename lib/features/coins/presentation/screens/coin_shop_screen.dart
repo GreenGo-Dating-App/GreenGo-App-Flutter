@@ -1957,11 +1957,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       child: Container(
         margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
-          color: isSelected ? Colors.grey[800] : Colors.grey[850],
+          gradient: isSelected
+              ? LinearGradient(
+                  colors: [
+                    const Color(0xFFFFD700).withValues(alpha: 0.2),
+                    const Color(0xFFFFD700).withValues(alpha: 0.05),
+                  ],
+                )
+              : null,
+          color: isSelected ? null : Colors.grey[850],
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: isSelected ? const Color(0xFFFFD700) : Colors.transparent,
-            width: 2,
+            width: isSelected ? 2 : 0,
           ),
         ),
         child: Stack(
@@ -1994,98 +2002,94 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
               ),
 
-            // Package content
+            // Package content — vertical layout like membership cards
             Padding(
               padding: const EdgeInsets.all(20),
               child: Row(
                 children: [
                   // Gold coin icon
                   Container(
-                    width: 60,
-                    height: 60,
-                    decoration: const BoxDecoration(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [Color(0xFFFFD700), Color(0xFFB8860B)],
                       ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFFFD700).withValues(alpha: 0.3),
+                          blurRadius: 8,
+                          spreadRadius: 1,
+                        ),
+                      ],
                     ),
                     child: const Center(
-                      child: Text(
-                        '🪙',
-                        style: TextStyle(fontSize: 28),
-                      ),
+                      child: Text('🪙', style: TextStyle(fontSize: 24)),
                     ),
                   ),
                   const SizedBox(width: 16),
 
-                  // Coin amount and bonus
+                  // Coin amount + bonus on separate lines
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Text(
+                          '${package.coinAmount} ${AppLocalizations.of(context)!.shopCoins}',
+                          style: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
                         Row(
                           children: [
                             Text(
-                              '${package.coinAmount}',
+                              '${package.displayPrice} ${AppLocalizations.of(context)!.plusTaxes}',
                               style: const TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                                fontSize: 15,
+                                color: Colors.white70,
                               ),
                             ),
-                            if (bonusCoins > 0) ...[
-                              const SizedBox(width: 4),
-                              Text(
-                                '+$bonusCoins',
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xFF4CAF50),
-                                ),
-                              ),
-                            ],
-                            const SizedBox(width: 4),
+                            const SizedBox(width: 8),
                             Text(
-                              AppLocalizations.of(context)!.shopCoins,
+                              '${(package.coinsPerDollar).toStringAsFixed(0)} coins/\$',
                               style: const TextStyle(
-                                fontSize: 14,
+                                fontSize: 11,
                                 color: Colors.grey,
                               ),
                             ),
                           ],
                         ),
-                        if (bonusCoins > 0)
-                          Text(
-                            '${promotion.displayText}!',
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Color(0xFF4CAF50),
+                        if (bonusCoins > 0) ...[
+                          const SizedBox(height: 4),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF4CAF50).withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text(
+                              '+$bonusCoins bonus — ${promotion.displayText}',
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xFF4CAF50),
+                              ),
                             ),
                           ),
+                        ],
                       ],
                     ),
                   ),
 
-                  // Price
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        '${package.displayPrice} ${AppLocalizations.of(context)!.plusTaxes}',
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        '${(package.coinsPerDollar).toStringAsFixed(0)} coins/\$',
-                        style: const TextStyle(
-                          fontSize: 11,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
+                  // Selection indicator
+                  Icon(
+                    isSelected ? Icons.check_circle : Icons.circle_outlined,
+                    color: isSelected ? const Color(0xFFFFD700) : Colors.grey,
+                    size: 28,
                   ),
                 ],
               ),
