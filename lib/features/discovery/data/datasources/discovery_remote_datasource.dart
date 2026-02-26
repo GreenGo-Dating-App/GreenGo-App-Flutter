@@ -194,39 +194,72 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
     print('[Discovery] Blocked user IDs: ${blockedUserIds.length}');
 
+    // Log travelers that made it through matching filters
+    for (final c in candidates) {
+      if (c.profile.isTravelerActive) {
+        print('[Discovery] TRAVELER ${c.profile.nickname} in candidates from matching (effectiveLoc: ${c.profile.effectiveLocation.country}/${c.profile.effectiveLocation.city})');
+      }
+    }
+
     // Admin/support users bypass all discovery preference filters (see all users)
     var filteredCandidates = candidates.toList();
 
     if (!isCurrentUserPrivileged) {
       // Apply sexual orientation filter
       if (preferences.preferredOrientations.isNotEmpty) {
+        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           final orientation = candidate.profile.sexualOrientation;
           if (orientation == null || orientation.isEmpty) return true;
-          return preferences.preferredOrientations.contains(orientation);
+          if (!preferences.preferredOrientations.contains(orientation)) {
+            if (candidate.profile.isTravelerActive) print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: orientation $orientation');
+            return false;
+          }
+          return true;
         }).toList();
+        if (before != filteredCandidates.length) print('[Discovery] Orientation filter: $before → ${filteredCandidates.length}');
       }
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
       // When user has a country filter, profiles with unknown/empty country are excluded
       if (preferences.preferredCountries.isNotEmpty) {
+        print('[Discovery] Country filter active: ${preferences.preferredCountries}');
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
-          if (country.isEmpty || country == 'Unknown') return false;
-          return preferences.preferredCountries
+          if (country.isEmpty || country == 'Unknown') {
+            if (candidate.profile.isTravelerActive) print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: empty/unknown country');
+            return false;
+          }
+          final matches = preferences.preferredCountries
               .map((c) => c.toLowerCase())
               .contains(country.toLowerCase());
+          if (!matches && candidate.profile.isTravelerActive) {
+            print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: country $country not in ${preferences.preferredCountries}');
+          }
+          return matches;
         }).toList();
       }
 
       // Apply online-only filter
       if (preferences.onlyOnlineNow) {
         filteredCandidates = filteredCandidates
-            .where((candidate) => candidate.profile.isOnline)
+            .where((candidate) {
+              if (!candidate.profile.isOnline && candidate.profile.isTravelerActive) {
+                print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: not online (onlyOnline filter)');
+              }
+              return candidate.profile.isOnline;
+            })
             .toList();
       }
     } else {
       print('[Discovery] Admin/support user — skipping preference filters');
+    }
+
+    // Log travelers that survived all filters
+    for (final c in filteredCandidates) {
+      if (c.profile.isTravelerActive) {
+        print('[Discovery] TRAVELER ${c.profile.nickname} SURVIVED all discovery filters');
+      }
     }
 
     // Categorize candidates into priority tiers:
@@ -261,6 +294,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
       if (blockedUserIds.contains(candidateId)) {
+        if (candidateProfile.isTravelerActive) print('[Discovery] TRAVELER ${candidateProfile.nickname} EXCLUDED: blocked');
         print('[Discovery] Excluded ${candidateProfile.displayName}: blocked');
         continue;
       }
@@ -270,6 +304,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       if (candidateProfile.isIncognito &&
           (candidateProfile.incognitoExpiry == null ||
               candidateProfile.incognitoExpiry!.isAfter(now))) {
+        if (candidateProfile.isTravelerActive) print('[Discovery] TRAVELER ${candidateProfile.nickname} EXCLUDED: incognito');
         print('[Discovery] Excluded ${candidateProfile.displayName}: incognito');
         continue;
       }

@@ -130,10 +130,13 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
+        final _nick = candidateProfile.nickname;
+        final _isTraveler = candidateProfile.isTravelerActive;
 
         // Skip explicitly suspended/banned/deleted profiles
         final status = candidateProfile.accountStatus.toLowerCase();
         if (status == 'suspended' || status == 'banned' || status == 'deleted') {
+          if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: account status=$status');
           continue;
         }
 
@@ -145,14 +148,21 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           // Admin sees everyone — skip all filters
         } else {
           // Verification filter: only show verified profiles (skip for admin/support candidates)
-          if (!isPrivileged && !candidateProfile.isVerified) continue;
+          if (!isPrivileged && !candidateProfile.isVerified) {
+            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: not verified');
+            continue;
+          }
 
           // Must have at least one photo (skip for admin/support candidates)
-          if (!isPrivileged && candidateProfile.photoUrls.isEmpty) continue;
+          if (!isPrivileged && candidateProfile.photoUrls.isEmpty) {
+            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: no photos');
+            continue;
+          }
 
           // Apply age filter (skip for admin/support candidates)
           final age = candidateProfile.age;
           if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
+            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: age $age outside ${preferences.minAge}-${preferences.maxAge}');
             continue;
           }
 
@@ -163,10 +173,12 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
                 !preferences.preferredGenders
                     .map((g) => g.toLowerCase())
                     .contains(gender.toLowerCase())) {
+              if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: gender $gender not in ${preferences.preferredGenders}');
               continue;
             }
           }
         }
+        if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick PASSED all matching filters');
 
         // Apply distance filter (skip for admin/support candidates and admin users)
         final candidateLoc = candidateProfile.effectiveLocation;
