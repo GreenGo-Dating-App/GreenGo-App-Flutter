@@ -119,6 +119,14 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         throw AuthenticationException('Sign in failed');
       }
 
+      // Store email on profile and users docs so nickname login works for all users
+      final uid = userCredential.user!.uid;
+      final firestore = FirebaseFirestore.instance;
+      try {
+        firestore.collection('profiles').doc(uid).update({'email': resolvedEmail});
+        firestore.collection('users').doc(uid).set({'email': resolvedEmail}, SetOptions(merge: true));
+      } catch (_) {}
+
       return UserModel.fromFirebaseUser(userCredential.user!);
     } on firebase_auth.FirebaseAuthException catch (e) {
       throw _handleFirebaseAuthException(e);
@@ -156,22 +164,26 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
         throw AuthenticationException('No account found with nickname "@$normalizedNickname"');
       }
 
-      // Get the userId from the profile document
+      final profileData = querySnapshot.docs.first.data();
       final userId = querySnapshot.docs.first.id;
 
-      // Look up the user's email from the 'users' collection
+      // 1. Check if email is stored in the profile document
+      if (profileData['email'] != null && (profileData['email'] as String).isNotEmpty) {
+        return profileData['email'] as String;
+      }
+
+      // 2. Check the 'users' collection
       final userDoc = await firestore.collection('users').doc(userId).get();
       if (userDoc.exists && userDoc.data()?['email'] != null) {
         return userDoc.data()!['email'] as String;
       }
 
-      // Fallback: check if email is stored in the profile document itself
-      final profileData = querySnapshot.docs.first.data();
-      if (profileData['email'] != null) {
-        return profileData['email'] as String;
-      }
-
-      throw AuthenticationException('Could not find email for nickname "@$normalizedNickname"');
+      // 3. Fallback: check displayName field which sometimes contains email
+      // This shouldn't normally happen — the email gets stored on first login
+      throw AuthenticationException(
+        'Email not found for nickname "@$normalizedNickname". '
+        'Please log in with your email first, then nickname login will work.',
+      );
     } on AuthenticationException {
       rethrow;
     } catch (e) {
@@ -193,6 +205,14 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
       if (userCredential.user == null) {
         throw AuthenticationException('Registration failed');
       }
+
+      // Store email on users doc so nickname login works
+      final uid = userCredential.user!.uid;
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(uid)
+          .set({'email': email}, SetOptions(merge: true))
+          .catchError((_) => null);
 
       // Send branded welcome email via Resend (fire-and-forget, don't block registration)
       FirebaseFunctions.instance
