@@ -1808,80 +1808,184 @@ class _BoostProfileCard extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-        border: isActive
-            ? Border.all(color: const Color(0xFF9B59B6).withOpacity(0.6), width: 1.5)
-            : null,
-        gradient: isActive
-            ? LinearGradient(
-                colors: [
-                  const Color(0xFF9B59B6).withOpacity(0.15),
-                  AppColors.backgroundCard,
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              )
+        borderRadius: BorderRadius.circular(16),
+        gradient: LinearGradient(
+          colors: isActive
+              ? [const Color(0xFF2A1F0E), const Color(0xFF1A1408), const Color(0xFF2A1F0E)]
+              : [AppColors.backgroundCard, AppColors.backgroundCard],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        border: Border.all(
+          color: isActive
+              ? const Color(0xFFFFD700).withOpacity(0.6)
+              : AppColors.richGold.withOpacity(0.2),
+          width: isActive ? 1.5 : 1,
+        ),
+        boxShadow: isActive
+            ? [
+                BoxShadow(
+                  color: const Color(0xFFFFD700).withOpacity(0.15),
+                  blurRadius: 12,
+                  spreadRadius: 1,
+                ),
+              ]
             : null,
       ),
-      child: ListTile(
-        leading: Icon(
-          Icons.flash_on,
-          color: isActive ? const Color(0xFF9B59B6) : AppColors.textTertiary,
-          size: 28,
-        ),
-        title: Text(
-          isActive ? 'Profile Boosted!' : 'Boost Profile',
-          style: TextStyle(
-            color: isActive ? const Color(0xFF9B59B6) : AppColors.textPrimary,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        subtitle: Text(
-          isActive
-              ? '${remaining.inMinutes}m remaining — Appearing at the top'
-              : '${CoinFeaturePrices.boost} coins — Be seen first for 30 minutes',
-          style: TextStyle(
-            color: isActive ? const Color(0xFF9B59B6).withOpacity(0.7) : AppColors.textTertiary,
-            fontSize: 12,
-          ),
-        ),
-        trailing: isActive
-            ? Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [Color(0xFF9B59B6), Color(0xFF8E44AD)],
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            // Header row: icon + title + status
+            Row(
+              children: [
+                // Gold flash icon
+                Container(
+                  width: 44,
+                  height: 44,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFFFFD700), Color(0xFFDAA520), Color(0xFFFFA500)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFFFFD700).withOpacity(0.3),
+                        blurRadius: 8,
+                        spreadRadius: 1,
+                      ),
+                    ],
                   ),
-                  borderRadius: BorderRadius.circular(12),
+                  child: const Icon(Icons.flash_on, color: Colors.white, size: 24),
                 ),
-                child: const Text(
-                  'ACTIVE',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1,
+                const SizedBox(width: 12),
+                // Title + subtitle
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isActive ? 'Profile Boosted!' : 'Boost Profile',
+                        style: TextStyle(
+                          color: isActive ? AppColors.richGold : AppColors.textPrimary,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        isActive
+                            ? '${remaining.inMinutes}m remaining'
+                            : 'Be seen first for 30 minutes',
+                        style: TextStyle(
+                          color: isActive
+                              ? AppColors.richGold.withOpacity(0.7)
+                              : AppColors.textTertiary,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              )
-            : ElevatedButton(
-                onPressed: onBoost,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF9B59B6),
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                ),
-                child: const Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.flash_on, size: 16),
-                    SizedBox(width: 4),
-                    Text('Boost', style: TextStyle(fontWeight: FontWeight.bold)),
-                  ],
+                // Active badge
+                if (isActive)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFFFFD700), Color(0xFFDAA520)],
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFFFD700).withOpacity(0.3),
+                          blurRadius: 6,
+                        ),
+                      ],
+                    ),
+                    child: const Text(
+                      'ACTIVE',
+                      style: TextStyle(
+                        color: Color(0xFF2A1F0E),
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            // Boost button (only when inactive)
+            if (!isActive) ...[
+              const SizedBox(height: 14),
+              SizedBox(
+                width: double.infinity,
+                child: GestureDetector(
+                  onTap: onBoost,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFFFFD700), Color(0xFFDAA520), Color(0xFFFFA500)],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFFFD700).withOpacity(0.3),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.flash_on, color: Color(0xFF2A1F0E), size: 20),
+                        const SizedBox(width: 8),
+                        const Text(
+                          'Boost Now',
+                          style: TextStyle(
+                            color: Color(0xFF2A1F0E),
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF2A1F0E).withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(Icons.monetization_on, color: const Color(0xFF2A1F0E).withOpacity(0.8), size: 14),
+                              const SizedBox(width: 3),
+                              Text(
+                                '${CoinFeaturePrices.boost}',
+                                style: TextStyle(
+                                  color: const Color(0xFF2A1F0E).withOpacity(0.8),
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
+            ],
+          ],
+        ),
       ),
     );
   }
