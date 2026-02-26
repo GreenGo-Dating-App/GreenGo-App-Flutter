@@ -229,11 +229,18 @@ class GreenGoChatApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: AppTheme.darkTheme,
             builder: (context, child) {
-              // Apply scaled theme based on screen width
+              // Global responsive scaling based on screen width
+              final mq = MediaQuery.of(context);
+              final scaleFactor = AppTheme.scaleFactor(context);
               final scaledTheme = AppTheme.scaledDarkTheme(context);
-              return Theme(
-                data: scaledTheme,
-                child: child!,
+              return MediaQuery(
+                data: mq.copyWith(
+                  textScaler: TextScaler.linear(scaleFactor),
+                ),
+                child: Theme(
+                  data: scaledTheme,
+                  child: child!,
+                ),
               );
             },
             locale: languageProvider.currentLocale,
