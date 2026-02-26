@@ -252,11 +252,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         continue;
       }
 
-      // Skip matched users - they shouldn't appear in discovery
-      if (matchedUserIds.contains(candidateId)) {
-        print('[Discovery] Excluded ${candidateProfile.displayName}: matched');
-        continue;
-      }
+      // Matched users still appear in discovery grid (with 'matched' overlay)
+      // They are only filtered out in swipe card mode by the UI layer
 
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
       if (blockedUserIds.contains(candidateId)) {

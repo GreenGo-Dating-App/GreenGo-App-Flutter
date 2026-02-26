@@ -137,8 +137,15 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
               .collection('profiles')
               .doc(event.userId)
               .get();
-          final hasBaseMembership = profileDoc.data()?['hasBaseMembership'] as bool? ?? false;
-          if (!hasBaseMembership) {
+          final data = profileDoc.data();
+          final hasBaseMembership = data?['hasBaseMembership'] as bool? ?? false;
+          final endTs = data?['baseMembershipEndDate'] as Timestamp?;
+          final isActive = hasBaseMembership &&
+              endTs != null &&
+              endTs.toDate().isAfter(DateTime.now());
+          // Also allow test tier users through
+          final membershipTier = data?['membershipTier'] as String? ?? '';
+          if (!isActive && membershipTier != 'test') {
             emit(DiscoveryBaseMembershipRequired(
               cards: currentState.cards,
               currentIndex: currentState.currentIndex,
