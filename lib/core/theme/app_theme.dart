@@ -9,12 +9,9 @@ class AppTheme {
   /// Design baseline width (standard phone like iPhone 8/SE).
   static const double _baseWidth = 375.0;
 
-  /// Returns a scale factor based on screen width.
-  /// Minimum 1.15x, max 1.5x. Ensures visible scaling on all devices.
+  /// Returns a fixed scale factor of 1.0 (no zoom).
   static double scaleFactor(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final scale = width / _baseWidth;
-    return scale.clamp(1.15, 1.5);
+    return 1.0;
   }
 
   /// Scale a dimension value based on screen width.
