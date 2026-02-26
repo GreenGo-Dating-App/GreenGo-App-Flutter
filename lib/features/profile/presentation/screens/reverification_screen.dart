@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
 /// User takes a new selfie, it uploads to Storage, updates the profile doc
@@ -114,14 +115,21 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
-    return Scaffold(
+    return PopScope(
+      canPop: !_isUploading && Navigator.of(context).canPop(),
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop && !_isUploading) {
+          SafeNavigation.navigateToHome(context, widget.userId);
+        }
+      },
+      child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: _isUploading ? null : () => Navigator.of(context).pop(),
+          onPressed: _isUploading ? null : () => SafeNavigation.pop(context, userId: widget.userId),
         ),
         title: Text(
           l10n.reverificationTitle,
@@ -377,6 +385,7 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
           ),
         ),
       ),
+    ),
     );
   }
 

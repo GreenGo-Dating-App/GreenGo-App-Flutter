@@ -6,6 +6,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/location.dart' as profile_entity;
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Full-screen location picker for Traveler mode.
 /// Uses geocoding for forward/reverse address lookup, GPS for current location,
@@ -226,7 +227,7 @@ class _TravelerLocationPickerScreenState
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context),
         ),
         title: const Row(
           children: [

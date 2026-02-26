@@ -43,6 +43,7 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import 'usage_stats_screen.dart';
 import 'traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
@@ -77,14 +78,21 @@ class EditProfileScreen extends StatelessWidget {
     }
 
     Widget buildContent(BuildContext context) {
-      return Scaffold(
+      return PopScope(
+        canPop: Navigator.of(context).canPop(),
+        onPopInvokedWithResult: (didPop, result) {
+          if (!didPop) {
+            SafeNavigation.navigateToHome(context, userId ?? '');
+          }
+        },
+        child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => SafeNavigation.pop(context, userId: userId),
           ),
           title: Text(
             AppLocalizations.of(context)!.editProfile,
@@ -481,6 +489,7 @@ class EditProfileScreen extends StatelessWidget {
             );
           },
         ),
+      ),
       );
     }
 

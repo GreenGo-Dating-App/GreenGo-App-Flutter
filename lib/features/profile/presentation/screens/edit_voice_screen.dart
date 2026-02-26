@@ -14,6 +14,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Edit Voice Introduction Screen
 /// Allows users to record, play, and save a voice introduction
@@ -235,7 +236,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
 
     // If using existing voice URL and no new recording, just pop
     if (_recordedFilePath == null && _existingVoiceUrl != null) {
-      Navigator.of(context).pop();
+      SafeNavigation.pop(context);
       return;
     }
 
@@ -324,7 +325,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
           elevation: 0,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => SafeNavigation.pop(context),
           ),
           title: Text(
             l10n?.voiceIntro ?? 'Voice Introduction',

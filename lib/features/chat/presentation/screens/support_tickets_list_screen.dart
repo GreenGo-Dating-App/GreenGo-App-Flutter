@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import 'support_chat_screen.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Support Tickets List Screen
 ///
@@ -33,7 +34,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
-          onPressed: () => Navigator.pop(context),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
       ),
       body: StreamBuilder<QuerySnapshot>(

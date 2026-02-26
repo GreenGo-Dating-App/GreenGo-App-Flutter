@@ -9,6 +9,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/badge.dart';
 import '../../domain/entities/user_level.dart';
 import '../../domain/entities/achievement.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 class MyProgressScreen extends StatefulWidget {
   final String userId;
@@ -198,7 +199,7 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.userId),
         ),
       ),
       body: RefreshIndicator(

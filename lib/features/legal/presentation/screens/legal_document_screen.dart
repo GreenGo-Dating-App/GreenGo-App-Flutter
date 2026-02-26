@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/legal_documents_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Screen to display legal documents (Terms & Conditions or Privacy Policy)
 class LegalDocumentScreen extends StatefulWidget {
@@ -96,7 +97,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios, color: AppColors.richGold),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context),
         ),
         title: Text(
           _document?.title ?? widget.documentType.displayName,

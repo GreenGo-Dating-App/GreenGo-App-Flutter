@@ -9,6 +9,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 class EditSocialLinksScreen extends StatefulWidget {
   final Profile profile;
@@ -152,7 +153,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
               leading: IconButton(
                 icon:
                     const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-                onPressed: () => Navigator.of(context).pop(),
+                onPressed: () => SafeNavigation.pop(context),
               ),
               title: Text(
                 AppLocalizations.of(context)!.socialProfiles,

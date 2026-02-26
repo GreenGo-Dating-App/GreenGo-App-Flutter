@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/push_notification_service.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Support Chat Screen
 ///
@@ -536,7 +537,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

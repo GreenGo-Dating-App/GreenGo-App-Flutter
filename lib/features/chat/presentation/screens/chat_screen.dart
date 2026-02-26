@@ -1250,7 +1250,11 @@ class _ChatScreenState extends State<ChatScreen> {
                 elevation: 0,
                 leading: IconButton(
                   icon: const Icon(Icons.close, color: Colors.white),
-                  onPressed: () => Navigator.of(context).pop(),
+                  onPressed: () {
+                    if (Navigator.of(context).canPop()) {
+                      Navigator.of(context).pop();
+                    }
+                  },
                 ),
                 title: Text(
                   '${initialIndex + 1} / ${allPhotos.length}',

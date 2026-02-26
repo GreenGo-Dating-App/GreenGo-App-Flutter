@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../generated/app_localizations.dart';
 import '../widgets/password_strength_indicator.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
   const ChangePasswordScreen({super.key});
@@ -145,7 +146,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context),
         ),
         title: Text(
           l10n?.changePassword ?? 'Change Password',

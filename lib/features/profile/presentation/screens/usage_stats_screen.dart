@@ -10,6 +10,7 @@ import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/profile.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Usage Stats Screen
 ///
@@ -193,7 +194,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.userId),
         ),
         title: const Text(
           'My Usage',

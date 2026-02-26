@@ -9,6 +9,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 class EditNicknameScreen extends StatefulWidget {
   final Profile profile;
@@ -132,7 +133,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context),
         ),
         title: const Text(
           'Edit Nickname',

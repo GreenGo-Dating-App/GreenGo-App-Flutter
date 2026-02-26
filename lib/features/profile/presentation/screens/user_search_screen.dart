@@ -7,6 +7,7 @@ import '../../data/datasources/profile_remote_data_source.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../../core/utils/safe_navigation.dart';
 
 /// Screen for searching users by nickname
 class UserSearchScreen extends StatefulWidget {
@@ -123,7 +124,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
         title: const Text(
           'Find Users',
