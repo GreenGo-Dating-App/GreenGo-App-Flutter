@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -130,6 +131,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
   final Map<String, String> _gridActionOverlays = {}; // userId -> 'liked'|'superLiked'|'matched'
   String? _lastAttemptedGridCardId; // Track last grid action for limit-hit overlay revert
+
+  // Swipe mode: shuffled card order (random people from all over the world)
+  List<DiscoveryCard> _swipeShuffledCards = [];
+  int _swipeShuffledForHash = 0; // Track which card set was shuffled
 
   // Online status refresh
   Timer? _onlineStatusTimer;
@@ -518,19 +523,26 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 return _buildGridMode(context, cards, currentIndex);
               }
 
+              // Swipe mode: shuffle cards randomly so users see people from all over
+              final cardsHash = cards.length.hashCode ^ (cards.isNotEmpty ? cards.first.userId.hashCode : 0);
+              if (_swipeShuffledCards.isEmpty || _swipeShuffledForHash != cardsHash) {
+                _swipeShuffledCards = List<DiscoveryCard>.from(cards)..shuffle(Random());
+                _swipeShuffledForHash = cardsHash;
+              }
+
               // In swipe mode, skip cards that were already acted on from grid
-              var effectiveIndex = currentIndex;
-              while (effectiveIndex < cards.length &&
-                  _gridActionOverlays.containsKey(cards[effectiveIndex].userId)) {
+              var effectiveIndex = 0;
+              while (effectiveIndex < _swipeShuffledCards.length &&
+                  _gridActionOverlays.containsKey(_swipeShuffledCards[effectiveIndex].userId)) {
                 effectiveIndex++;
               }
 
-              if (effectiveIndex >= cards.length) {
+              if (effectiveIndex >= _swipeShuffledCards.length) {
                 return _buildEmptyState(context);
               }
 
               // Pre-cache images for upcoming cards
-              _precacheUpcomingImages(cards, effectiveIndex);
+              _precacheUpcomingImages(_swipeShuffledCards, effectiveIndex);
 
               final enabled = state is DiscoveryLoaded ||
                   state is DiscoveryRewindUnavailable ||
@@ -547,7 +559,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   Expanded(
                     child: _buildCardStack(
                       context,
-                      cards,
+                      _swipeShuffledCards,
                       effectiveIndex,
                       enabled,
                     ),
@@ -556,7 +568,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   // Action buttons
                   _buildActionButtons(
                     context,
-                    cards[effectiveIndex],
+                    _swipeShuffledCards[effectiveIndex],
                     enabled,
                   ),
 
@@ -1238,6 +1250,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     setState(() {
       _isGridMode = !_isGridMode;
       _gridExtraPurchased = 0;
+      // Reset shuffled cards when switching to swipe mode for fresh random order
+      if (!_isGridMode) {
+        _swipeShuffledCards = [];
+        _swipeShuffledForHash = 0;
+      }
       // Don't clear overlays — they persist from swipe history
       // Snapshot the current index when entering grid mode so actions
       // dispatched to the bloc don't shrink the grid pool.
@@ -1274,6 +1291,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       _gridStartIndex = 0;
       _gridExtraPurchased = 0;
       _onlineStatusOverrides.clear();
+      // Reset shuffled cards so swipe mode re-shuffles with new results
+      _swipeShuffledCards = [];
+      _swipeShuffledForHash = 0;
     });
     context.read<DiscoveryBloc>().add(
           DiscoveryStackRefreshRequested(
@@ -1286,6 +1306,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   // ───────────────────── Swipe Handlers ─────────────────────
 
   Future<void> _handleSwipe(BuildContext context, card, SwipeDirection direction) async {
+    // Record activity for online presence
+    PresenceService.instance?.recordActivity();
     // Base membership gate
     final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(
