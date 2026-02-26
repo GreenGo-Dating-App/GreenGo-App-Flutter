@@ -98,12 +98,27 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       profileDocs = await _fetchProfilesByIds(allIds);
     } else {
       // Fallback: full scan (pools unavailable, stale, or empty)
+      // Also explicitly fetch travelers to ensure they're included even if
+      // the limit(500) scan misses them
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
       final querySnapshot = await firestore
           .collection('profiles')
           .limit(500)
           .get();
       profileDocs = querySnapshot.docs;
+
+      // Merge travelers that may not be in the first 500 docs
+      final existingIds = profileDocs.map((d) => d.id).toSet();
+      final travelerIds = await _getTravelerIdsInCountries(
+        userProfile: userProfile,
+        preferences: preferences,
+      );
+      final missingTravelerIds = travelerIds.where((id) => !existingIds.contains(id)).toList();
+      if (missingTravelerIds.isNotEmpty) {
+        debugPrint('[Matching] Adding ${missingTravelerIds.length} missing travelers to fallback scan');
+        final travelerDocs = await _fetchProfilesByIds(missingTravelerIds);
+        profileDocs = [...profileDocs, ...travelerDocs];
+      }
     }
 
     final candidates = <MatchCandidate>[];
@@ -308,6 +323,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
   /// Fetch active travelers whose travelerLocation.country matches the target countries.
   /// These users are missed by the pool system because pools are indexed by home country.
+  /// Uses single-field query (isTraveler only) to avoid requiring a composite Firestore index,
+  /// then filters by country and expiry in memory.
   Future<List<String>> _getTravelerIdsInCountries({
     required Profile userProfile,
     required MatchPreferences preferences,
@@ -315,40 +332,41 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     try {
       List<String> countries;
       if (preferences.preferredCountries.isNotEmpty) {
-        countries = preferences.preferredCountries;
+        countries = preferences.preferredCountries.map((c) => c.toLowerCase()).toList();
       } else {
         final country = userProfile.effectiveLocation.country;
         if (country.isEmpty || country == 'Unknown') return [];
-        countries = [country];
+        countries = [country.toLowerCase()];
       }
 
       final now = DateTime.now();
       final travelerIds = <String>[];
 
-      // Query travelers visiting each target country (Firestore whereIn limit = 10)
-      for (var i = 0; i < countries.length; i += 10) {
-        final batch = countries.sublist(
-          i,
-          i + 10 > countries.length ? countries.length : i + 10,
-        );
+      // Single-field query — no composite index needed
+      final snapshot = await firestore
+          .collection('profiles')
+          .where('isTraveler', isEqualTo: true)
+          .limit(200)
+          .get();
 
-        final snapshot = await firestore
-            .collection('profiles')
-            .where('isTraveler', isEqualTo: true)
-            .where('travelerLocation.country', whereIn: batch)
-            .limit(100)
-            .get();
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
 
-        for (final doc in snapshot.docs) {
-          // Verify traveler expiry is still active
-          final data = doc.data();
-          final expiry = data['travelerExpiry'];
-          if (expiry != null && expiry is Timestamp) {
-            if (expiry.toDate().isAfter(now)) {
-              travelerIds.add(doc.id);
-            }
-          }
+        // Check traveler expiry is still active
+        final expiry = data['travelerExpiry'];
+        if (expiry == null || expiry is! Timestamp || !expiry.toDate().isAfter(now)) {
+          continue;
         }
+
+        // Check traveler country matches target countries
+        final travelerLoc = data['travelerLocation'] as Map<String, dynamic>?;
+        if (travelerLoc == null) continue;
+        final travelerCountry = (travelerLoc['country'] as String? ?? '').toLowerCase();
+        if (travelerCountry.isEmpty || !countries.contains(travelerCountry)) {
+          continue;
+        }
+
+        travelerIds.add(doc.id);
       }
 
       debugPrint('[Matching] Found ${travelerIds.length} active travelers in $countries');
