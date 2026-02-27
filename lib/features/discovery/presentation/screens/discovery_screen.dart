@@ -2293,67 +2293,19 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-          // ── Photo indicators (LAST in stack — always on top) ──
-          // Photo dots — show how many photos the profile has
-          if (photoUrls.length > 1 && !_showMenu && !_showPreview)
-            Positioned(
-              bottom: showText ? 42 : 8,
-              left: 0,
-              right: 0,
-              child: IgnorePointer(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(photoUrls.length, (i) {
-                    final isActive = i == _currentPhotoIndex;
-                    return Container(
-                      width: isActive ? 8 : 6,
-                      height: isActive ? 8 : 6,
-                      margin: const EdgeInsets.symmetric(horizontal: 2),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: isActive
-                            ? Colors.white
-                            : Colors.white.withOpacity(0.45),
-                        border: Border.all(
-                          color: Colors.black.withOpacity(0.4),
-                          width: 0.5,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            blurRadius: 3,
-                            spreadRadius: 0.5,
-                          ),
-                        ],
-                      ),
-                    );
-                  }),
-                ),
-              ),
-            ),
-
+          // ── Photo arrows (LAST in stack — always on top) ──
           // Left arrow
           if (hasMultiplePhotos && _currentPhotoIndex > 0 && !_showMenu && !_showPreview)
             Positioned(
-              left: 4,
+              left: 2,
               top: 0,
               bottom: 0,
               child: IgnorePointer(
                 child: Center(
-                  child: Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.6),
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.arrow_back_ios_new,
-                        color: Colors.white,
-                        size: 14,
-                      ),
-                    ),
+                  child: Icon(
+                    Icons.arrow_back_ios_new,
+                    color: const Color(0xFFD4A843),
+                    size: 14,
                   ),
                 ),
               ),
@@ -2362,25 +2314,15 @@ class _GridProfileCardState extends State<_GridProfileCard>
           // Right arrow
           if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1 && !_showMenu && !_showPreview)
             Positioned(
-              right: 4,
+              right: 2,
               top: 0,
               bottom: 0,
               child: IgnorePointer(
                 child: Center(
-                  child: Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.6),
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                        size: 14,
-                      ),
-                    ),
+                  child: Icon(
+                    Icons.arrow_forward_ios,
+                    color: const Color(0xFFD4A843),
+                    size: 14,
                   ),
                 ),
               ),
