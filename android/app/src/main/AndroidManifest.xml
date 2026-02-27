@@ -69,10 +69,10 @@
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_launcher_foreground" />
 
-        <!-- Google Maps API Key -->
+        <!-- Google Maps API Key (loaded from local.properties) -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="GOOGLE_MAPS_API_KEY_REDACTED"/>
+            android:value="${GOOGLE_MAPS_API_KEY}"/>
 
         <!-- Disable automatic Firebase data collection for emulator use -->
         <meta-data

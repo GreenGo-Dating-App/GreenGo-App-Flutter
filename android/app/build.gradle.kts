@@ -19,6 +19,13 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
+// Load local.properties for secrets (API keys etc.)
+val localPropertiesFile = rootProject.file("local.properties")
+val localProperties = Properties()
+if (localPropertiesFile.exists()) {
+    localProperties.load(FileInputStream(localPropertiesFile))
+}
+
 android {
     namespace = "com.greengochat.greengochatapp"
     compileSdk = flutter.compileSdkVersion
@@ -40,6 +47,10 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // Inject Google Maps API key from local.properties
+        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] =
+            localProperties["GOOGLE_MAPS_API_KEY"] as String? ?: "MISSING_API_KEY"
     }
 
     // Configure release signing if key.properties exists
