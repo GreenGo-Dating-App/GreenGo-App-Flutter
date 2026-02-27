@@ -20,6 +20,9 @@ workflows:
           #!/bin/sh
           echo $GOOGLE_SERVICE_INFO_PLIST | base64 --decode > $CM_BUILD_DIR/ios/Runner/GoogleService-Info.plist
           echo $FIREBASE_OPTIONS_DART | base64 --decode > $CM_BUILD_DIR/lib/firebase_options.dart
+      - name: Create Secrets.xcconfig
+        script: |
+          echo "// Secrets" > "$CM_BUILD_DIR/ios/Flutter/Secrets.xcconfig"
       - name: Get Flutter packages
         script: |
           flutter packages pub get
