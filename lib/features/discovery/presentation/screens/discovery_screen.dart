@@ -1728,59 +1728,79 @@ class _GridProfileCardState extends State<_GridProfileCard>
               child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
             ),
 
-          // Left arrow visual (always visible when multiple photos, dimmed at first)
-          if (hasMultiplePhotos && !_showMenu && !_showPreview && widget.actionOverlay == null)
+          // Left arrow (visible when can go back)
+          if (hasMultiplePhotos && _currentPhotoIndex > 0 && !_showMenu && !_showPreview && widget.actionOverlay == null)
             Positioned(
               left: 2,
               top: 0,
               bottom: 0,
               child: IgnorePointer(
                 child: Center(
-                  child: Icon(
-                    Icons.chevron_left,
-                    color: Colors.white.withOpacity(_currentPhotoIndex > 0 ? 0.8 : 0.25),
-                    size: widget.gridColumns == 4 ? 16 : 22,
+                  child: Container(
+                    padding: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.35),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_left,
+                      color: Colors.white.withOpacity(0.9),
+                      size: widget.gridColumns == 4 ? 14 : 18,
+                    ),
                   ),
                 ),
               ),
             ),
 
-          // Right arrow visual (always visible when multiple photos, dimmed at last)
-          if (hasMultiplePhotos && !_showMenu && !_showPreview && widget.actionOverlay == null)
+          // Right arrow (visible when can go forward)
+          if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1 && !_showMenu && !_showPreview && widget.actionOverlay == null)
             Positioned(
               right: 2,
               top: 0,
               bottom: 0,
               child: IgnorePointer(
                 child: Center(
-                  child: Icon(
-                    Icons.chevron_right,
-                    color: Colors.white.withOpacity(_currentPhotoIndex < photoUrls.length - 1 ? 0.8 : 0.25),
-                    size: widget.gridColumns == 4 ? 16 : 22,
+                  child: Container(
+                    padding: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.35),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_right,
+                      color: Colors.white.withOpacity(0.9),
+                      size: widget.gridColumns == 4 ? 14 : 18,
+                    ),
                   ),
                 ),
               ),
             ),
 
-          // Photo indicator bars at top (carousel-style, visible when multiple photos)
+          // Photo indicator dots at bottom-left (visible when multiple photos)
           if (hasMultiplePhotos && widget.actionOverlay == null && !_showMenu && !_showPreview)
             Positioned(
-              top: 3,
-              left: 6,
-              right: 6,
+              bottom: showText ? 38 : 6,
+              left: 0,
+              right: 0,
               child: IgnorePointer(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(photoUrls.length, (i) {
-                    return Expanded(
-                      child: Container(
-                        height: 3,
-                        margin: EdgeInsets.symmetric(horizontal: photoUrls.length > 6 ? 0.5 : 1.5),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(2),
-                          color: i == _currentPhotoIndex
-                              ? AppColors.richGold
-                              : Colors.white.withOpacity(0.35),
-                        ),
+                    return Container(
+                      width: i == _currentPhotoIndex ? 7 : 5,
+                      height: i == _currentPhotoIndex ? 7 : 5,
+                      margin: const EdgeInsets.symmetric(horizontal: 2),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: i == _currentPhotoIndex
+                            ? AppColors.richGold
+                            : Colors.white.withOpacity(0.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.5),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     );
                   }),
