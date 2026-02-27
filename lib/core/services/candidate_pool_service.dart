@@ -138,7 +138,7 @@ class CandidatePoolService {
 
     // Determine gender keys to query
     final genderKeys = genders.isEmpty
-        ? ['Male', 'Female', 'Non-binary', 'Unknown']
+        ? ['Male', 'Female', 'Non-binary', 'Other', 'Unknown']
         : genders;
 
     // Build pool keys to fetch for ALL countries
