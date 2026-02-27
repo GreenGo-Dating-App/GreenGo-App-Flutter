@@ -1728,86 +1728,6 @@ class _GridProfileCardState extends State<_GridProfileCard>
               child: const Icon(Icons.person, color: AppColors.textTertiary, size: 40),
             ),
 
-          // Left arrow (visible when can go back)
-          if (hasMultiplePhotos && _currentPhotoIndex > 0 && !_showMenu && !_showPreview && widget.actionOverlay == null)
-            Positioned(
-              left: 2,
-              top: 0,
-              bottom: 0,
-              child: IgnorePointer(
-                child: Center(
-                  child: Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.35),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      Icons.chevron_left,
-                      color: Colors.white.withOpacity(0.9),
-                      size: widget.gridColumns == 4 ? 14 : 18,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-          // Right arrow (visible when can go forward)
-          if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1 && !_showMenu && !_showPreview && widget.actionOverlay == null)
-            Positioned(
-              right: 2,
-              top: 0,
-              bottom: 0,
-              child: IgnorePointer(
-                child: Center(
-                  child: Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.35),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      Icons.chevron_right,
-                      color: Colors.white.withOpacity(0.9),
-                      size: widget.gridColumns == 4 ? 14 : 18,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-          // Photo indicator dots at bottom-left (visible when multiple photos)
-          if (hasMultiplePhotos && widget.actionOverlay == null && !_showMenu && !_showPreview)
-            Positioned(
-              bottom: showText ? 38 : 6,
-              left: 0,
-              right: 0,
-              child: IgnorePointer(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(photoUrls.length, (i) {
-                    return Container(
-                      width: i == _currentPhotoIndex ? 7 : 5,
-                      height: i == _currentPhotoIndex ? 7 : 5,
-                      margin: const EdgeInsets.symmetric(horizontal: 2),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: i == _currentPhotoIndex
-                            ? AppColors.richGold
-                            : Colors.white.withOpacity(0.5),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            blurRadius: 2,
-                          ),
-                        ],
-                      ),
-                    );
-                  }),
-                ),
-              ),
-            ),
-
                         // Action overlay (after action confirmed)
             if (widget.actionOverlay == 'liked')
               Positioned.fill(
@@ -2125,6 +2045,86 @@ class _GridProfileCardState extends State<_GridProfileCard>
                   child: const Icon(Icons.flash_on, size: 12, color: Colors.white),
                 ),
               ),
+
+          // Left arrow (visible when can go back)
+          if (hasMultiplePhotos && _currentPhotoIndex > 0 && !_showMenu && !_showPreview && widget.actionOverlay == null)
+            Positioned(
+              left: 2,
+              top: 0,
+              bottom: 0,
+              child: IgnorePointer(
+                child: Center(
+                  child: Container(
+                    padding: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.4),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_left,
+                      color: Colors.white,
+                      size: widget.gridColumns == 4 ? 14 : 20,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // Right arrow (visible when can go forward)
+          if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1 && !_showMenu && !_showPreview && widget.actionOverlay == null)
+            Positioned(
+              right: 2,
+              top: 0,
+              bottom: 0,
+              child: IgnorePointer(
+                child: Center(
+                  child: Container(
+                    padding: const EdgeInsets.all(2),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.4),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_right,
+                      color: Colors.white,
+                      size: widget.gridColumns == 4 ? 14 : 20,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+          // Photo indicator dots (visible when multiple photos)
+          if (hasMultiplePhotos && widget.actionOverlay == null && !_showMenu && !_showPreview)
+            Positioned(
+              bottom: showText ? 40 : 6,
+              left: 0,
+              right: 0,
+              child: IgnorePointer(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(photoUrls.length, (i) {
+                    return Container(
+                      width: i == _currentPhotoIndex ? 7 : 5,
+                      height: i == _currentPhotoIndex ? 7 : 5,
+                      margin: const EdgeInsets.symmetric(horizontal: 2),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: i == _currentPhotoIndex
+                            ? AppColors.richGold
+                            : Colors.white.withOpacity(0.6),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.6),
+                            blurRadius: 3,
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
+                ),
+              ),
+            ),
 
             // ── Gesture zones: Row splits card into left 20% / center 60% / right 20% ──
             // Placed ABOVE all decorative layers so taps always reach them.
