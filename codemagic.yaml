@@ -22,7 +22,7 @@ workflows:
           echo $FIREBASE_OPTIONS_DART | base64 --decode > $CM_BUILD_DIR/lib/firebase_options.dart
       - name: Create Secrets.xcconfig
         script: |
-          echo "// Secrets" > "$CM_BUILD_DIR/ios/Flutter/Secrets.xcconfig"
+          echo "GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY" > "$CM_BUILD_DIR/ios/Flutter/Secrets.xcconfig"
       - name: Get Flutter packages
         script: |
           flutter packages pub get
