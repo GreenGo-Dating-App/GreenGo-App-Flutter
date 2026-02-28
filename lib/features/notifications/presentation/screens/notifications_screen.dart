@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../profile/domain/entities/profile.dart';
+import '../../../chat/presentation/screens/support_chat_screen.dart';
 import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
 import '../bloc/notifications_state.dart';
@@ -172,21 +173,22 @@ class NotificationsScreen extends StatelessWidget {
   }
 
   void _handleNotificationTap(BuildContext context, notification) {
-    // TODO: Implement navigation based on notification type and actionUrl
-    // For now, we'll just mark as read (handled above)
+    final data = notification.data as Map<String, dynamic>?;
+    final action = data?['action'] as String?;
 
-    // Future implementation:
-    // switch (notification.type) {
-    //   case NotificationType.newMatch:
-    //     // Navigate to matches screen
-    //     break;
-    //   case NotificationType.newMessage:
-    //     // Navigate to chat screen with the sender
-    //     break;
-    //   case NotificationType.newLike:
-    //     // Navigate to likes/matches screen
-    //     break;
-    //   // ... etc
-    // }
+    // Handle support message notifications — navigate to the support chat
+    if (action == 'support_message') {
+      final conversationId = data?['conversationId'] as String?;
+      if (conversationId != null) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => SupportChatScreen(
+              conversationId: conversationId,
+              currentUserId: userId,
+            ),
+          ),
+        );
+      }
+    }
   }
 }

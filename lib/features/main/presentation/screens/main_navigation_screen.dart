@@ -40,6 +40,7 @@ import '../../../notifications/presentation/bloc/notifications_bloc.dart';
 import '../../../notifications/presentation/bloc/notifications_event.dart';
 import '../../../notifications/presentation/bloc/notifications_state.dart';
 import '../../../notifications/domain/entities/notification.dart' as notif;
+import '../../../../core/services/push_notification_service.dart';
 import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
@@ -134,6 +135,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void initState() {
     super.initState();
+
+    // Set current user ID for push notification navigation
+    PushNotificationService.currentUserId = widget.userId;
 
     // Initialize access control service and load countdown dates from Firestore
     _accessControlService = AccessControlService();

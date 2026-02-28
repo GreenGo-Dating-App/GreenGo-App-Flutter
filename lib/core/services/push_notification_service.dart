@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import '../../../features/chat/presentation/screens/support_chat_screen.dart';
 
 /// Top-level background message handler (must be a top-level function)
 @pragma('vm:entry-point')
@@ -21,6 +23,12 @@ class PushNotificationService {
       FlutterLocalNotificationsPlugin();
 
   bool _isInitialized = false;
+
+  /// Global navigator key — set from MaterialApp for push notification navigation
+  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
+  /// Current user ID — set after authentication for push notification navigation
+  static String? currentUserId;
 
   /// Currently active conversation ID (set when user is viewing a chat).
   /// Foreground notifications for this conversation are suppressed.
@@ -127,19 +135,45 @@ class PushNotificationService {
   /// Handle notification tap when app was in background
   void _handleNotificationTap(RemoteMessage message) {
     debugPrint('[FCM] Notification tapped: ${message.data}');
-    // Navigation can be handled here based on message.data['type']
-    // For now, just log — the app will open to the main screen
+    _navigateFromNotificationData(message.data);
   }
 
   /// Handle tap on local notification (foreground notifications)
   void _onNotificationTapped(NotificationResponse response) {
     debugPrint('[FCM] Local notification tapped: ${response.payload}');
-    // Parse the payload and navigate if needed
     if (response.payload != null) {
       try {
         final data = jsonDecode(response.payload!) as Map<String, dynamic>;
         debugPrint('[FCM] Notification data: $data');
+        _navigateFromNotificationData(data);
       } catch (_) {}
+    }
+  }
+
+  /// Navigate based on notification data payload
+  void _navigateFromNotificationData(Map<String, dynamic> data) {
+    final action = data['action'] as String?;
+    final type = data['type'] as String?;
+    final conversationId = data['conversationId'] as String?;
+    final navigator = navigatorKey.currentState;
+    final userId = currentUserId;
+
+    if (navigator == null || userId == null) {
+      debugPrint('[FCM] Cannot navigate: navigator=$navigator, userId=$userId');
+      return;
+    }
+
+    // Support message notification → open the support chat
+    if ((action == 'support_message' || type == 'support_message') &&
+        conversationId != null) {
+      navigator.push(
+        MaterialPageRoute(
+          builder: (_) => SupportChatScreen(
+            conversationId: conversationId,
+            currentUserId: userId,
+          ),
+        ),
+      );
     }
   }
 

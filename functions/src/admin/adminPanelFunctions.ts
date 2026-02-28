@@ -690,6 +690,7 @@ export const onSupportChatCreated = functions.firestore
 
 /**
  * When a support message is created, update the conversation
+ * and send push notification to the user if the message is from admin
  */
 export const onSupportMessageCreated = functions.firestore
   .document('support_messages/{messageId}')
@@ -706,6 +707,7 @@ export const onSupportMessageCreated = functions.firestore
 
     const currentData = conversationDoc.data() || {};
     const isFromUser = message.senderType === 'user';
+    const isFromAdmin = message.senderType === 'admin';
 
     await conversationRef.update({
       lastMessage: (message.content || '').substring(0, 100),
@@ -715,6 +717,90 @@ export const onSupportMessageCreated = functions.firestore
       unreadCount: isFromUser ? (currentData.unreadCount || 0) + 1 : currentData.unreadCount,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+
+    // Send push notification to the user when admin replies
+    if (isFromAdmin && currentData.userId) {
+      try {
+        const userId = currentData.userId;
+
+        // Get user's FCM token (check both 'users' and 'profiles' collections)
+        let fcmToken: string | null = null;
+        const userDoc = await db.collection('users').doc(userId).get();
+        if (userDoc.exists) {
+          fcmToken = userDoc.data()?.fcmToken || null;
+        }
+        if (!fcmToken) {
+          const profileDoc = await db.collection('profiles').doc(userId).get();
+          if (profileDoc.exists) {
+            fcmToken = profileDoc.data()?.fcmToken || null;
+          }
+        }
+
+        if (fcmToken) {
+          const contentPreview = (message.content || '').length > 100
+            ? (message.content || '').substring(0, 97) + '...'
+            : (message.content || '');
+
+          await admin.messaging().send({
+            token: fcmToken,
+            notification: {
+              title: 'GreenGo Support',
+              body: contentPreview,
+            },
+            data: {
+              type: 'support_message',
+              action: 'support_message',
+              conversationId: conversationId,
+              senderName: message.senderName || 'Support',
+            },
+            android: {
+              priority: 'high',
+              notification: {
+                channelId: 'greengo_notifications',
+                priority: 'high' as any,
+                sound: 'default',
+              },
+            },
+            apns: {
+              payload: {
+                aps: {
+                  sound: 'default',
+                  badge: 1,
+                },
+              },
+            },
+          });
+
+          console.log(`Support reply push notification sent to user ${userId}`);
+        } else {
+          console.log(`No FCM token found for user ${userId} — skipping push`);
+        }
+
+        // Also create an in-app notification in the notifications collection
+        await db.collection('notifications').add({
+          userId: userId,
+          type: 'new_message',
+          title: 'GreenGo Support',
+          message: (message.content || '').length > 100
+            ? (message.content || '').substring(0, 97) + '...'
+            : (message.content || ''),
+          body: (message.content || '').length > 100
+            ? (message.content || '').substring(0, 97) + '...'
+            : (message.content || ''),
+          data: {
+            action: 'support_message',
+            conversationId: conversationId,
+            senderName: message.senderName || 'Support',
+          },
+          isRead: false,
+          read: false,
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+      } catch (notifError) {
+        console.error('Failed to send support reply notification:', notifError);
+        // Don't throw — notification failure should not block conversation update
+      }
+    }
 
     return null;
   });

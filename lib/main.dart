@@ -225,6 +225,7 @@ class GreenGoChatApp extends StatelessWidget {
       child: Consumer<LanguageProvider>(
         builder: (context, languageProvider, child) {
           return MaterialApp(
+            navigatorKey: PushNotificationService.navigatorKey,
             title: AppStrings.appName,
             debugShowCheckedModeBanner: false,
             theme: AppTheme.darkTheme,
