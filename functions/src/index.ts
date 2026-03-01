@@ -333,6 +333,9 @@ export {
   onPresenceUpdate,
 } from './presence/onPresenceUpdate';
 
+// Presence Cleanup (Scheduled)
+export { cleanupStalePresence } from './presence/cleanupStalePresence';
+
 // MVP Access Control Functions
 export {
   approveUser,

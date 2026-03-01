@@ -12,6 +12,14 @@
       "collectionGroup": "profiles",
       "queryScope": "COLLECTION",
       "fields": [
+        { "fieldPath": "isOnline", "order": "ASCENDING" },
+        { "fieldPath": "lastSeen", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
         { "fieldPath": "accountStatus", "order": "ASCENDING" },
         { "fieldPath": "verificationStatus", "order": "ASCENDING" },
         { "fieldPath": "isComplete", "order": "ASCENDING" }
