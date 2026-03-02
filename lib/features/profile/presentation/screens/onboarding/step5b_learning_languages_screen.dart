@@ -99,13 +99,9 @@ class _Step5bLearningLanguagesScreenState
           title: 'What languages do you want to learn?',
           subtitle:
               'Select up to 5 languages. This helps us connect you with native speakers and learning partners.',
-          onNext: () {
-            context.read<OnboardingBloc>().add(const OnboardingNextStep());
-          },
           onBack: () {
             context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
           },
-          nextButtonText: _selectedLanguages.isEmpty ? 'Skip' : 'Next',
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -273,6 +269,38 @@ class _Step5bLearningLanguagesScreenState
                       ),
                     );
                   },
+                ),
+              ),
+              const SizedBox(height: 24),
+              // Next / Skip button
+              SizedBox(
+                width: double.infinity,
+                height: 52,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Save language selections
+                    context.read<OnboardingBloc>().add(
+                      OnboardingLearningLanguagesUpdated(
+                        preferredLanguages: _selectedLanguages,
+                        nativeLanguage: _nativeLanguage,
+                      ),
+                    );
+                    context.read<OnboardingBloc>().add(const OnboardingNextStep());
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: Text(
+                    _selectedLanguages.isEmpty ? 'Skip' : 'Next',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                 ),
               ),
             ],

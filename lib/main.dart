@@ -57,6 +57,7 @@ import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
 import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
 import 'features/spots/presentation/bloc/spots_bloc.dart';
 import 'features/communities/presentation/bloc/communities_bloc.dart';
+import 'features/communities/presentation/screens/communities_screen.dart';
 import 'features/admin/presentation/screens/early_access_admin_screen.dart';
 import 'features/admin/presentation/screens/support_tickets_screen.dart';
 import 'features/admin/presentation/screens/verification_admin_screen.dart';
@@ -434,12 +435,7 @@ class GreenGoChatApp extends StatelessWidget {
                 return MaterialPageRoute(
                   builder: (context) => BlocProvider(
                     create: (context) => di.sl<CommunitiesBloc>(),
-                    child: const Scaffold(
-                      backgroundColor: AppColors.backgroundDark,
-                      body: Center(
-                        child: Text('Communities', style: TextStyle(color: Colors.white)),
-                      ),
-                    ),
+                    child: const CommunitiesScreen(),
                   ),
                 );
               }

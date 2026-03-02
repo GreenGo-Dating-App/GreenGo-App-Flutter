@@ -617,10 +617,12 @@ exports.onSupportChatCreated = functions.firestore
 });
 /**
  * When a support message is created, update the conversation
+ * and send push notification to the user if the message is from admin
  */
 exports.onSupportMessageCreated = functions.firestore
     .document('support_messages/{messageId}')
     .onCreate(async (snap) => {
+    var _a, _b;
     const message = snap.data();
     const conversationId = message.conversationId;
     if (!conversationId)
@@ -631,6 +633,7 @@ exports.onSupportMessageCreated = functions.firestore
         return null;
     const currentData = conversationDoc.data() || {};
     const isFromUser = message.senderType === 'user';
+    const isFromAdmin = message.senderType === 'admin';
     await conversationRef.update({
         lastMessage: (message.content || '').substring(0, 100),
         lastMessageAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -639,6 +642,86 @@ exports.onSupportMessageCreated = functions.firestore
         unreadCount: isFromUser ? (currentData.unreadCount || 0) + 1 : currentData.unreadCount,
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    // Send push notification to the user when admin replies
+    if (isFromAdmin && currentData.userId) {
+        try {
+            const userId = currentData.userId;
+            // Get user's FCM token (check both 'users' and 'profiles' collections)
+            let fcmToken = null;
+            const userDoc = await db.collection('users').doc(userId).get();
+            if (userDoc.exists) {
+                fcmToken = ((_a = userDoc.data()) === null || _a === void 0 ? void 0 : _a.fcmToken) || null;
+            }
+            if (!fcmToken) {
+                const profileDoc = await db.collection('profiles').doc(userId).get();
+                if (profileDoc.exists) {
+                    fcmToken = ((_b = profileDoc.data()) === null || _b === void 0 ? void 0 : _b.fcmToken) || null;
+                }
+            }
+            if (fcmToken) {
+                const contentPreview = (message.content || '').length > 100
+                    ? (message.content || '').substring(0, 97) + '...'
+                    : (message.content || '');
+                await admin.messaging().send({
+                    token: fcmToken,
+                    notification: {
+                        title: 'GreenGo Support',
+                        body: contentPreview,
+                    },
+                    data: {
+                        type: 'support_message',
+                        action: 'support_message',
+                        conversationId: conversationId,
+                        senderName: message.senderName || 'Support',
+                    },
+                    android: {
+                        priority: 'high',
+                        notification: {
+                            channelId: 'greengo_notifications',
+                            priority: 'high',
+                            sound: 'default',
+                        },
+                    },
+                    apns: {
+                        payload: {
+                            aps: {
+                                sound: 'default',
+                                badge: 1,
+                            },
+                        },
+                    },
+                });
+                console.log(`Support reply push notification sent to user ${userId}`);
+            }
+            else {
+                console.log(`No FCM token found for user ${userId} — skipping push`);
+            }
+            // Also create an in-app notification in the notifications collection
+            await db.collection('notifications').add({
+                userId: userId,
+                type: 'new_message',
+                title: 'GreenGo Support',
+                message: (message.content || '').length > 100
+                    ? (message.content || '').substring(0, 97) + '...'
+                    : (message.content || ''),
+                body: (message.content || '').length > 100
+                    ? (message.content || '').substring(0, 97) + '...'
+                    : (message.content || ''),
+                data: {
+                    action: 'support_message',
+                    conversationId: conversationId,
+                    senderName: message.senderName || 'Support',
+                },
+                isRead: false,
+                read: false,
+                createdAt: admin.firestore.FieldValue.serverTimestamp(),
+            });
+        }
+        catch (notifError) {
+            console.error('Failed to send support reply notification:', notifError);
+            // Don't throw — notification failure should not block conversation update
+        }
+    }
     return null;
 });
 // =============================================================================

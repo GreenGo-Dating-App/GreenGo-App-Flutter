@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "greengo-chat"
-  }
+  },
+  "targets": {
+    "greengo-chat": {
+      "hosting": {
+        "admin": [
+          "greengo-chat"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

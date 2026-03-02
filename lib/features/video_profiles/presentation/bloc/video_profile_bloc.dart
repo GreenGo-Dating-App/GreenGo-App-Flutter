@@ -137,7 +137,7 @@ class VideoProfileBloc extends Bloc<VideoProfileEvent, VideoProfileState> {
       },
       (newVideos) {
         final allVideos = event.lastId != null
-            ? [...currentVideos.cast(), ...newVideos]
+            ? [...currentVideos.cast<VideoProfile>(), ...newVideos]
             : newVideos;
 
         emit(VideoProfileLoaded(

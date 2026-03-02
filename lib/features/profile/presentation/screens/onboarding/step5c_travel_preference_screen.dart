@@ -75,13 +75,9 @@ class _Step5cTravelPreferenceScreenState
           title: 'How do you want to use GreenGo?',
           subtitle:
               'Tell us about your interests so we can personalize your experience.',
-          onNext: () {
-            context.read<OnboardingBloc>().add(const OnboardingNextStep());
-          },
           onBack: () {
             context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
           },
-          nextButtonText: _selectedPreference == null ? 'Skip' : 'Next',
           child: Column(
             children: [
               const SizedBox(height: 16),
@@ -114,6 +110,38 @@ class _Step5cTravelPreferenceScreenState
                       ),
                     ),
                   ],
+                ),
+              ),
+              const SizedBox(height: 24),
+              // Next / Skip button
+              SizedBox(
+                width: double.infinity,
+                height: 52,
+                child: ElevatedButton(
+                  onPressed: () {
+                    if (_selectedPreference != null) {
+                      context.read<OnboardingBloc>().add(
+                        OnboardingTravelPreferenceUpdated(
+                          travelPreference: _selectedPreference!,
+                        ),
+                      );
+                    }
+                    context.read<OnboardingBloc>().add(const OnboardingNextStep());
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: Text(
+                    _selectedPreference == null ? 'Skip' : 'Next',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                 ),
               ),
             ],

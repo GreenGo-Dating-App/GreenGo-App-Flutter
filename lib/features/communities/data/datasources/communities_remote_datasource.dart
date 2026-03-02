@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
-import '../../domain/entities/community_message.dart';
 import '../models/community_model.dart';
 import '../models/community_member_model.dart';
 import '../models/community_message_model.dart';
