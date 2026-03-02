@@ -96,8 +96,8 @@ class AppConfig {
   static const bool enableVoiceMessages = false;
 
   /// Enable/Disable language learning feature
-  /// Set to false for MVP to focus on core dating features
-  static const bool enableLanguageLearning = false;
+  /// Enabled — language learning is a core differentiator for App Store positioning
+  static const bool enableLanguageLearning = true;
 
   /// Enable/Disable gamification features (achievements, badges, streaks)
   /// Enabled for full feature experience

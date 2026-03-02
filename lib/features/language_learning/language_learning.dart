@@ -17,6 +17,9 @@ export 'data/repositories/language_learning_repository_impl.dart';
 export 'data/datasources/language_learning_remote_data_source.dart';
 export 'data/datasources/language_seed_data.dart';
 
+// Data - Services
+export 'data/services/ai_coach_service.dart';
+
 // Presentation - BLoC
 export 'presentation/bloc/language_learning_bloc.dart';
 

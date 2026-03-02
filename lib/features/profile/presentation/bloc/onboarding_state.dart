@@ -10,10 +10,12 @@ enum OnboardingStep {
   bio, // Step 4: Bio
   interests, // Step 5: Interests
   locationLanguage, // Step 6: Location & Languages
-  voice, // Step 7: Voice recording
-  personality, // Step 8: Personality quiz
-  socialLinks, // Step 9: Social media links
-  preview, // Step 10: Profile preview
+  learningLanguages, // Step 7: What languages do you want to learn?
+  travelPreference, // Step 8: How do you want to use GreenGo?
+  voice, // Step 9: Voice recording
+  personality, // Step 10: Personality quiz
+  socialLinks, // Step 11: Social media links
+  preview, // Step 12: Profile preview
 }
 
 abstract class OnboardingState extends Equatable {
@@ -42,6 +44,9 @@ class OnboardingInProgress extends OnboardingState {
   final PersonalityTraits? personalityTraits;
   final String? verificationPhotoUrl;
   final SocialLinks? socialLinks;
+  final List<String> preferredLanguages; // Languages user wants to learn
+  final String? nativeLanguage;
+  final String? travelPreference; // 'learn_travel', 'help_travelers', 'both'
 
   const OnboardingInProgress({
     required this.userId,
@@ -58,6 +63,9 @@ class OnboardingInProgress extends OnboardingState {
     this.personalityTraits,
     this.verificationPhotoUrl,
     this.socialLinks,
+    this.preferredLanguages = const [],
+    this.nativeLanguage,
+    this.travelPreference,
   });
 
   OnboardingInProgress copyWith({
@@ -74,6 +82,9 @@ class OnboardingInProgress extends OnboardingState {
     PersonalityTraits? personalityTraits,
     String? verificationPhotoUrl,
     SocialLinks? socialLinks,
+    List<String>? preferredLanguages,
+    String? nativeLanguage,
+    String? travelPreference,
   }) {
     return OnboardingInProgress(
       userId: userId,
@@ -90,6 +101,9 @@ class OnboardingInProgress extends OnboardingState {
       personalityTraits: personalityTraits ?? this.personalityTraits,
       verificationPhotoUrl: verificationPhotoUrl ?? this.verificationPhotoUrl,
       socialLinks: socialLinks ?? this.socialLinks,
+      preferredLanguages: preferredLanguages ?? this.preferredLanguages,
+      nativeLanguage: nativeLanguage ?? this.nativeLanguage,
+      travelPreference: travelPreference ?? this.travelPreference,
     );
   }
 
@@ -115,6 +129,10 @@ class OnboardingInProgress extends OnboardingState {
         return interests.length >= 3;
       case OnboardingStep.locationLanguage:
         return location != null && languages.isNotEmpty;
+      case OnboardingStep.learningLanguages:
+        return true; // Optional — user can skip
+      case OnboardingStep.travelPreference:
+        return true; // Optional — user can skip
       case OnboardingStep.voice:
         return true; // Voice is optional
       case OnboardingStep.personality:
@@ -142,6 +160,9 @@ class OnboardingInProgress extends OnboardingState {
         personalityTraits,
         verificationPhotoUrl,
         socialLinks,
+        preferredLanguages,
+        nativeLanguage,
+        travelPreference,
       ];
 }
 

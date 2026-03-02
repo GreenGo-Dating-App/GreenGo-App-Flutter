@@ -251,6 +251,39 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
             })
             .toList();
       }
+
+      // Apply language filter — only return candidates who speak the specified language
+      if (preferences.languageFilter != null && preferences.languageFilter!.isNotEmpty) {
+        final langFilter = preferences.languageFilter!.toLowerCase().trim();
+        final before = filteredCandidates.length;
+        filteredCandidates = filteredCandidates.where((candidate) {
+          final candidateLangs = candidate.profile.languages
+              .map((l) => l.toLowerCase().trim())
+              .toList();
+          return candidateLangs.contains(langFilter);
+        }).toList();
+        print('[Discovery] Language filter ($langFilter): $before -> ${filteredCandidates.length}');
+      }
+
+      // Apply travelers-only filter — only return active travelers
+      if (preferences.travelersOnly) {
+        final before = filteredCandidates.length;
+        filteredCandidates = filteredCandidates.where((candidate) {
+          return candidate.profile.isTravelerActive;
+        }).toList();
+        print('[Discovery] Travelers-only filter: $before -> ${filteredCandidates.length}');
+      }
+
+      // Apply local-guides-only filter
+      if (preferences.localGuidesOnly) {
+        final before = filteredCandidates.length;
+        filteredCandidates = filteredCandidates.where((candidate) {
+          return candidate.profile.isLocalGuide &&
+              candidate.profile.localGuideCity != null &&
+              candidate.profile.localGuideCity!.isNotEmpty;
+        }).toList();
+        print('[Discovery] Local-guides-only filter: $before -> ${filteredCandidates.length}');
+      }
     } else {
       print('[Discovery] Admin/support user — skipping preference filters');
     }

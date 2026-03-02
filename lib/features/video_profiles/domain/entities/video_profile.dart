@@ -8,6 +8,7 @@ class VideoProfile extends Equatable {
   final String videoUrl;
   final String? thumbnailUrl;
   final int durationSeconds;
+  final String? prompt;
   final DateTime createdAt;
   final DateTime? updatedAt;
   final int viewCount;
@@ -19,6 +20,7 @@ class VideoProfile extends Equatable {
     required this.videoUrl,
     this.thumbnailUrl,
     required this.durationSeconds,
+    this.prompt,
     required this.createdAt,
     this.updatedAt,
     this.viewCount = 0,
@@ -32,6 +34,7 @@ class VideoProfile extends Equatable {
         videoUrl,
         thumbnailUrl,
         durationSeconds,
+        prompt,
         createdAt,
         updatedAt,
         viewCount,
@@ -44,6 +47,7 @@ class VideoProfile extends Equatable {
     String? videoUrl,
     String? thumbnailUrl,
     int? durationSeconds,
+    String? prompt,
     DateTime? createdAt,
     DateTime? updatedAt,
     int? viewCount,
@@ -55,6 +59,7 @@ class VideoProfile extends Equatable {
       videoUrl: videoUrl ?? this.videoUrl,
       thumbnailUrl: thumbnailUrl ?? this.thumbnailUrl,
       durationSeconds: durationSeconds ?? this.durationSeconds,
+      prompt: prompt ?? this.prompt,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       viewCount: viewCount ?? this.viewCount,

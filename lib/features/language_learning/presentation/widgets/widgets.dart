@@ -7,3 +7,6 @@ export 'seasonal_event_banner.dart';
 export 'flashcard_deck_card.dart';
 export 'cultural_quiz_card.dart';
 export 'lesson_card.dart';
+export 'coach_message_bubble.dart';
+export 'coach_score_card.dart';
+export 'scenario_selector.dart';

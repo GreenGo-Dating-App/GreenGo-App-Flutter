@@ -15,6 +15,8 @@ import 'onboarding/step5_location_language_screen.dart';
 import 'onboarding/step6_voice_recording_screen.dart';
 import 'onboarding/step7_personality_quiz_screen.dart';
 import 'onboarding/step9_social_links_screen.dart';
+import 'onboarding/step5b_learning_languages_screen.dart';
+import 'onboarding/step5c_travel_preference_screen.dart';
 import 'onboarding/step8_profile_preview_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -71,6 +73,10 @@ class OnboardingScreen extends StatelessWidget {
               stepWidget = const Step4InterestsScreen();
             case OnboardingStep.locationLanguage:
               stepWidget = const Step5LocationLanguageScreen();
+            case OnboardingStep.learningLanguages:
+              stepWidget = const Step5bLearningLanguagesScreen();
+            case OnboardingStep.travelPreference:
+              stepWidget = const Step5cTravelPreferenceScreen();
             case OnboardingStep.voice:
               stepWidget = const Step6VoiceRecordingScreen();
             case OnboardingStep.personality:

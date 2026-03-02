@@ -4,7 +4,9 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../../../generated/app_localizations.dart';
 
@@ -19,6 +21,7 @@ class SwipeCard extends StatefulWidget {
   final bool isFront;
   final ValueChanged<double>? onDragProgress;
   final bool? isOnlineOverride;
+  final Profile? currentUserProfile;
 
   const SwipeCard({
     super.key,
@@ -28,6 +31,7 @@ class SwipeCard extends StatefulWidget {
     this.isFront = false,
     this.onDragProgress,
     this.isOnlineOverride,
+    this.currentUserProfile,
   });
 
   @override
@@ -349,6 +353,34 @@ class _SwipeCardState extends State<SwipeCard>
                   ),
                 ),
               ],
+              // Local guide badge
+              if (profile.isLocalGuide) ...[
+                const SizedBox(width: 6),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF2E7D32), Color(0xFF43A047)],
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.shield, color: Colors.white, size: 12),
+                      SizedBox(width: 3),
+                      Text(
+                        'Guide',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               // Incognito ghost badge
               if (profile.isIncognito &&
                   profile.incognitoExpiry != null &&
@@ -390,25 +422,88 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
               ],
             ),
-          const SizedBox(height: 8),
 
-          // Languages
-          if (languages.isNotEmpty) ...[
+          // Traveler route: origin city -> travel city
+          if (profile.isTravelerActive &&
+              profile.travelerLocation != null &&
+              !profile.isAdmin && !profile.isSupport) ...[
+            const SizedBox(height: 4),
             Row(
               children: [
-                const Icon(Icons.translate, color: Colors.white70, size: 16),
-                const SizedBox(width: 4),
-                Expanded(
+                const Icon(Icons.home, color: Colors.white54, size: 13),
+                const SizedBox(width: 3),
+                Text(
+                  profile.location.city.isNotEmpty
+                      ? profile.location.city
+                      : profile.location.country,
+                  style: const TextStyle(color: Colors.white54, fontSize: 12),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 4),
+                  child: Icon(Icons.arrow_forward, size: 10, color: Colors.white38),
+                ),
+                const Icon(Icons.flight_land, color: Color(0xFF64B5F6), size: 13),
+                const SizedBox(width: 3),
+                Flexible(
                   child: Text(
-                    languages.join(', '),
+                    profile.travelerLocation!.city.isNotEmpty
+                        ? profile.travelerLocation!.city
+                        : profile.travelerLocation!.country,
                     style: const TextStyle(
-                      color: Colors.white70,
-                      fontSize: 13,
+                      color: Color(0xFF64B5F6),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
+              ],
+            ),
+          ],
+          const SizedBox(height: 8),
+
+          // Languages with badge chips and language match indicator
+          if (languages.isNotEmpty) ...[
+            Row(
+              children: [
+                const Icon(Icons.translate, color: Colors.white70, size: 16),
+                const SizedBox(width: 4),
+                Flexible(
+                  child: LanguageBadge(
+                    languages: languages,
+                    maxDisplay: 3,
+                    compact: true,
+                    nativeLanguage: profile.nativeLanguage,
+                  ),
+                ),
+                if (_hasLanguageMatch(profile)) ...[
+                  const SizedBox(width: 6),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFFFFD700), Color(0xFFFFA000)],
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.star, color: Colors.white, size: 10),
+                        SizedBox(width: 2),
+                        Text(
+                          'Lang Match',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 9,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ],
             ),
             const SizedBox(height: 8),
@@ -489,6 +584,24 @@ class _SwipeCardState extends State<SwipeCard>
         ],
       ),
     );
+  }
+
+  /// Check if the current user's preferred learning languages overlap with
+  /// the candidate's spoken languages (a "Language Match").
+  bool _hasLanguageMatch(Profile candidateProfile) {
+    final currentUser = widget.currentUserProfile;
+    if (currentUser == null) return false;
+    if (currentUser.preferredLanguages.isEmpty) return false;
+    if (candidateProfile.languages.isEmpty) return false;
+
+    final candidateLangsLower =
+        candidateProfile.languages.map((l) => l.toLowerCase().trim()).toSet();
+    for (final preferred in currentUser.preferredLanguages) {
+      if (candidateLangsLower.contains(preferred.toLowerCase().trim())) {
+        return true;
+      }
+    }
+    return false;
   }
 
   Widget _buildGradientOverlay() {

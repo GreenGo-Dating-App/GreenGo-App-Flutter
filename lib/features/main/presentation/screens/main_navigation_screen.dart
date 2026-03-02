@@ -174,10 +174,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _profileBloc = di.sl<ProfileBloc>()
       ..add(ProfileLoadRequested(userId: widget.userId));
 
-    // Build screens list based on enabled features from Firestore
-    // MVP: Discover, Matches, Messages, Shop, Profile (5 tabs)
-    // With Learning: Discover, Matches, Messages, Shop, Learn, Profile (6 tabs)
-    // Note: Progress screen is kept in code but hidden from users for now
+    // Build screens list — educational positioning:
+    // Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
+    // Language learning is always shown as a core feature
     _screens = [
       DiscoveryScreen(
         key: _discoveryKey,
@@ -186,14 +185,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           if (mounted) setState(() {});
         },
       ),
-      MatchesScreen(userId: widget.userId),
+      BlocProvider(
+        create: (context) => di.sl<LanguageLearningBloc>(),
+        child: const LanguageLearningHomeScreen(),
+      ),
       ConversationsScreen(userId: widget.userId),
       CoinShopScreen(userId: widget.userId),
-      if (featureFlags.languageLearningEnabled)
-        BlocProvider(
-          create: (context) => di.sl<LanguageLearningBloc>(),
-          child: const LanguageLearningHomeScreen(),
-        ),
       BlocProvider.value(
         value: _profileBloc,
         child: EditProfileScreen(userId: widget.userId),
@@ -513,10 +510,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   void _navigateToSettings() {
     // Navigate to Profile/Settings tab
-    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), [Learn(4)], Profile(4 or 5)
-    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
+    // Tabs: Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
     setState(() {
-      _currentIndex = profileIndex;
+      _currentIndex = 4;
     });
   }
 
@@ -755,9 +751,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
-    // Tabs: Discover(0), Matches(1), Messages(2), Shop(3), [Learn(4)], Profile(4 or 5)
-    final profileIndex = featureFlags.languageLearningEnabled ? 5 : 4;
-    final learnIndex = featureFlags.languageLearningEnabled ? 4 : -1;
+    // Tabs: Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
+    const profileIndex = 4;
+    const learnIndex = 1;
 
     // Ensure current index is valid
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
@@ -771,8 +767,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           final index = entry.key;
           final screen = entry.value;
 
-          // Shop and Learn (if enabled) don't need verification overlay
-          if (index == 3 || index == learnIndex) {
+          // Learn and Shop tabs don't need verification overlay
+          if (index == learnIndex || index == 3) {
             return screen;
           }
 
@@ -807,9 +803,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.discover,
             ),
             BottomNavigationBarItem(
-              icon: _buildBadgeIcon(Icons.favorite_outline, _newMatchCount),
-              activeIcon: _buildBadgeIcon(Icons.favorite, _newMatchCount),
-              label: AppLocalizations.of(context)!.matches,
+              icon: const Icon(Icons.school_outlined),
+              activeIcon: const Icon(Icons.school),
+              label: AppLocalizations.of(context)!.learn,
             ),
             BottomNavigationBarItem(
               icon: _buildBadgeIcon(Icons.chat_bubble_outline, _unreadMessageCount),
@@ -821,13 +817,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               activeIcon: const Icon(Icons.store),
               label: AppLocalizations.of(context)!.shop,
             ),
-            // Only show Learn tab if language learning is enabled
-            if (featureFlags.languageLearningEnabled)
-              BottomNavigationBarItem(
-                icon: const Icon(Icons.school_outlined),
-                activeIcon: const Icon(Icons.school),
-                label: AppLocalizations.of(context)!.learn,
-              ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.person_outline),
               activeIcon: const Icon(Icons.person),
@@ -1010,9 +999,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   PreferredSizeWidget? _buildAppBar() {
-    // Only show app bar on certain tabs
-    // Tab indexes: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Profile (MVP)
-    // With Learning: 0=Discover, 1=Matches, 2=Messages, 3=Shop, 4=Learn, 5=Profile
+    // Tab indexes: 0=Discover, 1=Learn, 2=Messages, 3=Shop, 4=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
       return AppBar(
@@ -1063,12 +1050,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           const SizedBox(width: 4),
         ],
       );
-    } else if (_currentIndex == 1 || _currentIndex == 2) {
-      // Matches and Messages - show title and membership badge
+    } else if (_currentIndex == 2) {
+      // Messages - show title and membership badge
       return AppBar(
-        title: Text(
-          _currentIndex == 1 ? 'Matches' : 'Messages',
-          style: const TextStyle(
+        title: const Text(
+          'Messages',
+          style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
@@ -1082,7 +1069,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ],
       );
     }
-    // Shop, Learn (if enabled), and Profile - no app bar (have their own)
+    // Learn, Shop, and Profile - no app bar (have their own)
     return null;
   }
 

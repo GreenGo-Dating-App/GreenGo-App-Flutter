@@ -42,11 +42,22 @@ class FeatureFlagsService extends ChangeNotifier {
     'advancedFilters': true,
 
     // Extended Features
-    'languageLearning': false,
-    'gamification': false,
-    'achievements': false,
-    'dailyChallenges': false,
-    'streaks': false,
+    'languageLearning': true,
+    'gamification': true,
+    'achievements': true,
+    'dailyChallenges': true,
+    'streaks': true,
+
+    // New Educational & Social Features
+    'aiCoach': true,
+    'culturalExchange': true,
+    'safetyAcademy': true,
+    'events': true,
+    'videoProfiles': true,
+    'exploreMap': true,
+    'culturalSpots': true,
+    'communities': true,
+    'travelMatching': true,
 
     // System Features
     'analytics': true,
@@ -142,6 +153,17 @@ class FeatureFlagsService extends ChangeNotifier {
   bool get achievementsEnabled => isEnabled('achievements');
   bool get dailyChallengesEnabled => isEnabled('dailyChallenges');
   bool get streaksEnabled => isEnabled('streaks');
+
+  // New Educational & Social Features
+  bool get aiCoachEnabled => isEnabled('aiCoach');
+  bool get culturalExchangeEnabled => isEnabled('culturalExchange');
+  bool get safetyAcademyEnabled => isEnabled('safetyAcademy');
+  bool get eventsEnabled => isEnabled('events');
+  bool get videoProfilesEnabled => isEnabled('videoProfiles');
+  bool get exploreMapEnabled => isEnabled('exploreMap');
+  bool get culturalSpotsEnabled => isEnabled('culturalSpots');
+  bool get communitiesEnabled => isEnabled('communities');
+  bool get travelMatchingEnabled => isEnabled('travelMatching');
 
   // System Features
   bool get analyticsEnabled => isEnabled('analytics');

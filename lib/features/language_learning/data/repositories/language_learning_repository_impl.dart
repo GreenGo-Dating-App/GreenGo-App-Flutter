@@ -222,20 +222,20 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     int progress,
   ) async {
     try {
-      // TODO: Implement challenge progress tracking in Firebase
+      await remoteDataSource.updateChallengeProgress(challengeId, progress);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, void>> claimChallengeReward(String challengeId) async {
     try {
-      // TODO: Implement challenge reward claiming in Firebase
+      await remoteDataSource.claimChallengeReward(challengeId);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -420,20 +420,20 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   @override
   Future<Either<Failure, List<LanguagePack>>> getPurchasedPacks() async {
     try {
-      // TODO: Get from Firebase
-      return const Right([]);
+      final result = await remoteDataSource.getPurchasedPacks();
+      return Right(result);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, void>> purchaseLanguagePack(String packId) async {
     try {
-      // TODO: Implement purchase logic
+      await remoteDataSource.purchaseLanguagePack(packId);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -443,25 +443,23 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     LeaderboardPeriod period = LeaderboardPeriod.weekly,
   }) async {
     try {
-      // TODO: Implement leaderboard from Firebase
-      return Right(LanguageLeaderboard(
+      final result = await remoteDataSource.getLeaderboard(
         type: type,
         period: period,
-        entries: const [],
-        lastUpdated: DateTime.now(),
-      ));
+      );
+      return Right(result);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, LeaderboardEntry>> getUserLeaderboardRank() async {
     try {
-      // TODO: Implement user rank lookup
-      return const Left(ServerFailure( 'Not implemented'));
+      final result = await remoteDataSource.getUserLeaderboardRank();
+      return Right(result);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -469,10 +467,10 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   Future<Either<Failure, List<Icebreaker>>> getIcebreakersForCountry(
       String countryCode) async {
     try {
-      final icebreakers = Icebreaker.getIcebreakersForCountry(countryCode);
+      final icebreakers = await remoteDataSource.getIcebreakersForCountry(countryCode);
       return Right(icebreakers);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -480,10 +478,10 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   Future<Either<Failure, void>> markIcebreakerAsUsed(
       String icebreakerId) async {
     try {
-      // TODO: Track icebreaker usage
+      await remoteDataSource.markIcebreakerAsUsed(icebreakerId);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -491,14 +489,10 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   Future<Either<Failure, Icebreaker>> getRandomIcebreaker(
       String matchCountryCode) async {
     try {
-      final icebreakers = Icebreaker.getIcebreakersForCountry(matchCountryCode);
-      if (icebreakers.isEmpty) {
-        return const Left(ServerFailure( 'No icebreakers available'));
-      }
-      final random = icebreakers[DateTime.now().millisecond % icebreakers.length];
-      return Right(random);
+      final icebreaker = await remoteDataSource.getRandomIcebreaker(matchCountryCode);
+      return Right(icebreaker);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -508,19 +502,13 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     required CoachScenario scenario,
   }) async {
     try {
-      // TODO: Implement AI coach session start
-      final session = AiCoachSession(
-        id: DateTime.now().millisecondsSinceEpoch.toString(),
-        odUserId: '',
-        targetLanguageCode: languageCode,
-        targetLanguageName:
-            SupportedLanguage.getByCode(languageCode)?.name ?? languageCode,
+      final session = await remoteDataSource.startCoachSession(
+        languageCode: languageCode,
         scenario: scenario,
-        startedAt: DateTime.now(),
       );
       return Right(session);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -530,15 +518,20 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     String message,
   ) async {
     try {
-      // TODO: Implement AI coach message handling
-      return Right(CoachMessage(
+      // Save the user message to Firestore
+      final userMessage = CoachMessage(
         id: DateTime.now().millisecondsSinceEpoch.toString(),
-        content: 'AI response would go here',
-        isUserMessage: false,
+        content: message,
+        isUserMessage: true,
         timestamp: DateTime.now(),
-      ));
+      );
+      await remoteDataSource.addCoachMessage(sessionId, userMessage);
+
+      // AI response handling is done at a higher layer (BLoC/use case)
+      // Return the persisted user message
+      return Right(userMessage);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -546,20 +539,20 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   Future<Either<Failure, AiCoachSession>> endCoachSession(
       String sessionId) async {
     try {
-      // TODO: Implement session ending
-      return const Left(ServerFailure( 'Not implemented'));
+      final session = await remoteDataSource.endCoachSession(sessionId);
+      return Right(session);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
   @override
   Future<Either<Failure, List<AiCoachSession>>> getCoachSessionHistory() async {
     try {
-      // TODO: Implement session history
-      return const Right([]);
+      final sessions = await remoteDataSource.getCoachSessionHistory();
+      return Right(sessions);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -597,10 +590,14 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     int progress,
   ) async {
     try {
-      // TODO: Implement seasonal challenge progress
+      await remoteDataSource.updateSeasonalChallengeProgress(
+        eventId,
+        challengeId,
+        progress,
+      );
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -610,10 +607,10 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     String challengeId,
   ) async {
     try {
-      // TODO: Implement seasonal reward claiming
+      await remoteDataSource.claimSeasonalChallengeReward(eventId, challengeId);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 
@@ -646,10 +643,10 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     Duration duration,
   ) async {
     try {
-      // TODO: Implement video call language tracking
+      await remoteDataSource.trackVideoCallLanguageUse(languageCode, duration);
       return const Right(null);
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      return Left(ServerFailure(e.toString()));
     }
   }
 

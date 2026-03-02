@@ -40,6 +40,23 @@ import 'features/main/presentation/screens/main_navigation_screen.dart';
 import 'features/language_learning/presentation/screens/language_learning_home_screen.dart';
 import 'features/language_learning/presentation/screens/language_detail_screen.dart';
 import 'features/language_learning/presentation/screens/flashcard_session_screen.dart';
+import 'features/language_learning/presentation/screens/ai_coach_screen.dart';
+import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
+import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
+import 'features/safety_academy/presentation/screens/safety_academy_screen.dart';
+import 'features/events/presentation/screens/events_screen.dart';
+import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
+import 'features/video_profiles/presentation/screens/video_discovery_screen.dart';
+import 'features/explore_map/presentation/screens/explore_map_screen.dart';
+import 'features/spots/presentation/screens/spots_screen.dart';
+import 'features/spots/presentation/screens/spot_detail_screen.dart';
+import 'features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
+import 'features/safety_academy/presentation/bloc/safety_academy_bloc.dart';
+import 'features/events/presentation/bloc/events_bloc.dart';
+import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
+import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
+import 'features/spots/presentation/bloc/spots_bloc.dart';
+import 'features/communities/presentation/bloc/communities_bloc.dart';
 import 'features/admin/presentation/screens/early_access_admin_screen.dart';
 import 'features/admin/presentation/screens/support_tickets_screen.dart';
 import 'features/admin/presentation/screens/verification_admin_screen.dart';
@@ -52,6 +69,7 @@ import 'features/chat/presentation/screens/support_chat_screen.dart';
 import 'features/notifications/domain/repositories/notification_repository.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/constants/app_colors.dart';
+import 'core/services/app_sound_service.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'features/profile/presentation/screens/reverification_screen.dart';
 import 'features/admin/presentation/screens/admin_2fa_screen.dart';
@@ -190,6 +208,10 @@ void main() async {
   // Initialize dependency injection
   await di.init();
 
+  // Initialize sound service
+  await AppSoundService().initialize();
+  debugPrint('✓ Sound service initialized');
+
   // Initialize feature flags service (loads from Firestore)
   await featureFlags.initialize();
   debugPrint('✓ Feature flags initialized');
@@ -293,6 +315,132 @@ class GreenGoChatApp extends StatelessWidget {
               if (settings.name == '/flashcard-session') {
                 return MaterialPageRoute(
                   builder: (context) => const FlashcardSessionScreen(),
+                );
+              }
+
+              // AI Coach route
+              if (settings.name == '/ai-coach') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => AiCoachScreen(
+                    userId: args?['userId'] as String? ?? '',
+                    targetLanguage: args?['targetLanguage'] as String? ?? 'es',
+                    nativeLanguage: args?['nativeLanguage'] as String? ?? 'en',
+                  ),
+                );
+              }
+
+              // Cultural Exchange routes
+              if (settings.name == '/cultural-exchange') {
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<CulturalExchangeBloc>(),
+                    child: const CulturalExchangeScreen(),
+                  ),
+                );
+              }
+
+              if (settings.name == '/dating-etiquette') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<CulturalExchangeBloc>(),
+                    child: DatingEtiquetteScreen(
+                      initialCountry: args?['country'] as String?,
+                    ),
+                  ),
+                );
+              }
+
+              // Safety Academy route
+              if (settings.name == '/safety-academy') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => SafetyAcademyScreen(
+                    userId: args?['userId'] as String? ?? '',
+                  ),
+                );
+              }
+
+              // Events route
+              if (settings.name == '/events') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<EventsBloc>(),
+                    child: EventsScreen(
+                      currentUserId: args?['userId'] as String? ?? '',
+                    ),
+                  ),
+                );
+              }
+
+              // Video Profiles routes
+              if (settings.name == '/video-profile') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<VideoProfileBloc>(),
+                    child: VideoProfileScreen(
+                      userId: args?['userId'] as String? ?? '',
+                    ),
+                  ),
+                );
+              }
+
+              if (settings.name == '/video-discovery') {
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<VideoProfileBloc>(),
+                    child: const VideoDiscoveryScreen(),
+                  ),
+                );
+              }
+
+              // Explore Map route
+              if (settings.name == '/explore-map') {
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<ExploreMapBloc>(),
+                    child: const ExploreMapScreen(),
+                  ),
+                );
+              }
+
+              // Spots routes
+              if (settings.name == '/spots') {
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<SpotsBloc>(),
+                    child: const SpotsScreen(),
+                  ),
+                );
+              }
+
+              if (settings.name == '/spot-detail') {
+                final args = settings.arguments as Map<String, dynamic>?;
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<SpotsBloc>(),
+                    child: SpotDetailScreen(
+                      spotId: args?['spotId'] as String? ?? '',
+                    ),
+                  ),
+                );
+              }
+
+              // Communities route
+              if (settings.name == '/communities') {
+                return MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (context) => di.sl<CommunitiesBloc>(),
+                    child: const Scaffold(
+                      backgroundColor: AppColors.backgroundDark,
+                      body: Center(
+                        child: Text('Communities', style: TextStyle(color: Colors.white)),
+                      ),
+                    ),
+                  ),
                 );
               }
 

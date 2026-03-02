@@ -1,12 +1,20 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/video_profile.dart';
+import '../bloc/video_profile_bloc.dart';
+import '../bloc/video_profile_event.dart';
+import '../bloc/video_profile_state.dart';
+import '../widgets/video_prompt_selector.dart';
 
-/// Screen for recording/uploading video profile introduction
+/// Screen for recording/uploading video profile introduction.
+///
+/// Integrates with [VideoProfileBloc] for upload operations and
+/// [VideoPromptSelector] for multilingual prompt selection.
 class VideoProfileScreen extends StatefulWidget {
   final String userId;
   final VideoProfile? existingProfile;
@@ -28,6 +36,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
   File? _videoFile;
   bool _isRecording = false;
   bool _isUploading = false;
+  String? _selectedPrompt;
   final int _maxDurationSeconds = 30;
 
   @override
@@ -35,6 +44,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
     super.initState();
     if (widget.existingProfile != null) {
       _initializeExistingVideo();
+      _selectedPrompt = widget.existingProfile!.prompt;
     }
   }
 
@@ -52,6 +62,17 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
     super.dispose();
   }
 
+  /// Show the prompt selector, then launch camera recording.
+  Future<void> _recordVideoWithPrompt() async {
+    final prompt = await VideoPromptSelector.show(context);
+    if (prompt != null && mounted) {
+      setState(() {
+        _selectedPrompt = prompt;
+      });
+      _recordVideo();
+    }
+  }
+
   Future<void> _recordVideo() async {
     final picker = ImagePicker();
     final video = await picker.pickVideo(
@@ -65,6 +86,14 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
   }
 
   Future<void> _pickVideo() async {
+    // Show prompt selector before picking from gallery too
+    final prompt = await VideoPromptSelector.show(context);
+    if (prompt == null || !mounted) return;
+
+    setState(() {
+      _selectedPrompt = prompt;
+    });
+
     final picker = ImagePicker();
     final video = await picker.pickVideo(
       source: ImageSource.gallery,
@@ -103,18 +132,27 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
   Future<void> _uploadVideo() async {
     if (_videoFile == null) return;
 
+    // Use BLoC if available in the widget tree
+    try {
+      final bloc = context.read<VideoProfileBloc>();
+      bloc.add(UploadVideoProfile(
+        userId: widget.userId,
+        filePath: _videoFile!.path,
+        prompt: _selectedPrompt,
+      ));
+      // BLoC listener will handle the result
+      return;
+    } catch (_) {
+      // No BLoC in tree - fall back to callback-based approach
+    }
+
     setState(() {
       _isUploading = true;
     });
 
     try {
-      // TODO: Implement actual upload to Firebase Storage
-      await Future.delayed(const Duration(seconds: 2)); // Simulated upload
-
-      // Simulated URL - replace with actual upload logic
-      final videoUrl = 'https://example.com/videos/${widget.userId}_intro.mp4';
-
-      widget.onVideoUploaded?.call(videoUrl, null);
+      // Fallback: signal via callback (the caller handles the upload)
+      widget.onVideoUploaded?.call(_videoFile!.path, null);
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -164,9 +202,18 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
           TextButton(
             onPressed: () {
               Navigator.pop(context);
+              // Use BLoC to delete from backend if available
+              try {
+                context.read<VideoProfileBloc>().add(
+                      DeleteVideoProfile(userId: widget.userId),
+                    );
+              } catch (_) {
+                // No BLoC - just clear locally
+              }
               _videoController?.dispose();
               _videoController = null;
               _videoFile = null;
+              _selectedPrompt = null;
               setState(() {});
             },
             child: const Text(
@@ -181,6 +228,61 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Wrap with BLoC listener if available
+    Widget body = _buildBody();
+
+    try {
+      context.read<VideoProfileBloc>();
+      body = BlocListener<VideoProfileBloc, VideoProfileState>(
+        listener: (context, state) {
+          if (state is VideoProfileUploading) {
+            setState(() {
+              _isUploading = true;
+            });
+          } else if (state is VideoProfileLoaded && state.videoProfile != null) {
+            setState(() {
+              _isUploading = false;
+            });
+            widget.onVideoUploaded?.call(
+              state.videoProfile!.videoUrl,
+              state.videoProfile!.thumbnailUrl,
+            );
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Video uploaded successfully!'),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+            Navigator.of(context).pop(true);
+          } else if (state is VideoProfileError) {
+            setState(() {
+              _isUploading = false;
+            });
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('Upload failed: ${state.message}'),
+                backgroundColor: AppColors.errorRed,
+              ),
+            );
+          } else if (state is VideoProfileDeleted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Video deleted'),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+          }
+        },
+        child: body,
+      );
+    } catch (_) {
+      // No BLoC available - use body without listener
+    }
+
+    return body;
+  }
+
+  Widget _buildBody() {
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -254,6 +356,46 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
 
             const SizedBox(height: 24),
 
+            // Selected prompt indicator
+            if (_selectedPrompt != null) ...[
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimensions.paddingM,
+                  vertical: AppDimensions.paddingS,
+                ),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundInput,
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusS),
+                  border: Border.all(
+                    color: AppColors.richGold.withValues(alpha: 0.3),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.lightbulb_outline,
+                        color: AppColors.richGold, size: 18),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        _selectedPrompt!,
+                        style: const TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 13,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () => setState(() => _selectedPrompt = null),
+                      child: const Icon(Icons.close,
+                          color: AppColors.textTertiary, size: 16),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+
             // Video preview
             AspectRatio(
               aspectRatio: 9 / 16,
@@ -313,9 +455,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
 
             // Action buttons
             if (_videoFile == null && widget.existingProfile == null) ...[
-              // Record button
+              // Record button (with prompt selector)
               ElevatedButton.icon(
-                onPressed: _recordVideo,
+                onPressed: _recordVideoWithPrompt,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.richGold,
                   foregroundColor: Colors.white,

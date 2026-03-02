@@ -41,6 +41,7 @@ import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import 'travel_explore_map_screen.dart';
 
 /// Discovery Screen
 ///
@@ -801,6 +802,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         card: cards[currentIndex],
         isFront: true,
         isOnlineOverride: _onlineStatusOverrides[cards[currentIndex].userId],
+        currentUserProfile: _currentUserProfile,
         onSwipe: enabled
             ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
             : null,
@@ -862,11 +864,28 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     } else {
       filteredRegular = regularCards.where((card) {
         final overlay = _gridActionOverlays[card.userId];
-        // If no overlay and user wants to see 'all' or specific actions
+        final profile = card.candidate.profile;
+
+        // Special profile-attribute filters
+        if (_activeFilters.contains('travelers') && profile.isTravelerActive) {
+          return true;
+        }
+        if (_activeFilters.contains('guides') && profile.isLocalGuide) {
+          return true;
+        }
+
+        // If only profile-attribute filters are active, don't apply action filters
+        final hasActionFilters = _activeFilters.any(
+            (f) => f != 'travelers' && f != 'guides' && f != 'all');
+        if (!hasActionFilters && !_activeFilters.contains('all')) {
+          // Only profile attribute filters are set; if card didn't match above, exclude
+          return false;
+        }
+
+        // Standard action overlay filters
         if (overlay == null) {
           return _activeFilters.contains('all');
         }
-        // Check if this card's action matches any active filter
         return _activeFilters.contains(overlay);
       }).toList();
     }
@@ -993,6 +1012,46 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 ),
               ),
               const Spacer(),
+              // Travel explore button
+              GestureDetector(
+                onTap: () {
+                  HapticFeedback.lightImpact();
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => TravelExploreMapScreen(
+                        userId: widget.userId,
+                        currentUserProfile: _currentUserProfile,
+                      ),
+                    ),
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  margin: const EdgeInsets.only(right: 8),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF1E88E5).withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: const Color(0xFF1E88E5).withOpacity(0.3),
+                    ),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.explore, size: 14, color: Color(0xFF42A5F5)),
+                      SizedBox(width: 4),
+                      Text(
+                        'Travel',
+                        style: TextStyle(
+                          color: Color(0xFF42A5F5),
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               // Column selector
               _buildColumnSelector(),
             ],
@@ -1068,6 +1127,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           _buildFilterChip(l10n.discoveryFilterSkipped, 'skipped', Icons.arrow_downward),
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.favorite_border),
+          const SizedBox(width: 6),
+          _buildFilterChip('Travelers', 'travelers', Icons.flight),
+          const SizedBox(width: 6),
+          _buildFilterChip('Guides', 'guides', Icons.shield),
         ],
       ),
     );

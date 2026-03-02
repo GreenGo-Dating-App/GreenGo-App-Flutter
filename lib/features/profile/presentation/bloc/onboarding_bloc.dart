@@ -30,6 +30,8 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingPersonalityUpdated>(_onOnboardingPersonalityUpdated);
     on<OnboardingVerificationPhotoAdded>(_onOnboardingVerificationPhotoAdded);
     on<OnboardingVerificationPhotoUpdated>(_onOnboardingVerificationPhotoUpdated);
+    on<OnboardingLearningLanguagesUpdated>(_onOnboardingLearningLanguagesUpdated);
+    on<OnboardingTravelPreferenceUpdated>(_onOnboardingTravelPreferenceUpdated);
     on<OnboardingSocialLinksUpdated>(_onOnboardingSocialLinksUpdated);
     on<OnboardingCompleted>(_onOnboardingCompleted);
   }
@@ -257,6 +259,29 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+  void _onOnboardingLearningLanguagesUpdated(
+    OnboardingLearningLanguagesUpdated event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(
+        preferredLanguages: event.preferredLanguages,
+        nativeLanguage: event.nativeLanguage,
+      ));
+    }
+  }
+
+  void _onOnboardingTravelPreferenceUpdated(
+    OnboardingTravelPreferenceUpdated event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(travelPreference: event.travelPreference));
+    }
+  }
+
   void _onOnboardingSocialLinksUpdated(
     OnboardingSocialLinksUpdated event,
     Emitter<OnboardingState> emit,
@@ -295,6 +320,11 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         verificationStatus: VerificationStatus.pending,
         verificationPhotoUrl: currentState.verificationPhotoUrl,
         verificationSubmittedAt: currentState.verificationPhotoUrl != null ? DateTime.now() : null,
+        // Language learning fields
+        preferredLanguages: currentState.preferredLanguages,
+        nativeLanguage: currentState.nativeLanguage,
+        // Travel preference
+        travelPreference: currentState.travelPreference,
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));

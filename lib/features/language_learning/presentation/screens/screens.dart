@@ -6,3 +6,4 @@ export 'lesson_list_screen.dart' hide LessonDetailScreen;
 // TODO: Teacher dashboard needs LoadTeacherDashboard event implementation
 // export 'teacher_dashboard_screen.dart';
 export 'lesson_detail_screen.dart';
+export 'ai_coach_screen.dart';

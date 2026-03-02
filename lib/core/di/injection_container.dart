@@ -146,6 +146,54 @@ import '../../features/language_learning/data/datasources/language_learning_remo
 import '../../features/language_learning/data/repositories/language_learning_repository_impl.dart';
 import '../../features/language_learning/domain/repositories/language_learning_repository.dart';
 import '../../features/language_learning/presentation/bloc/language_learning_bloc.dart';
+
+// Cultural Exchange
+import '../../features/cultural_exchange/data/datasources/cultural_exchange_remote_datasource.dart';
+import '../../features/cultural_exchange/data/repositories/cultural_exchange_repository_impl.dart';
+import '../../features/cultural_exchange/domain/repositories/cultural_exchange_repository.dart';
+import '../../features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
+
+// Safety Academy
+import '../../features/safety_academy/data/datasources/safety_academy_remote_datasource.dart';
+import '../../features/safety_academy/data/repositories/safety_academy_repository_impl.dart';
+import '../../features/safety_academy/domain/repositories/safety_academy_repository.dart';
+import '../../features/safety_academy/presentation/bloc/safety_academy_bloc.dart';
+
+// Events
+import '../../features/events/data/datasources/events_remote_datasource.dart';
+import '../../features/events/data/repositories/events_repository_impl.dart';
+import '../../features/events/domain/repositories/events_repository.dart';
+import '../../features/events/presentation/bloc/events_bloc.dart';
+
+// Video Profiles
+import '../../features/video_profiles/data/datasources/video_profile_remote_datasource.dart';
+import '../../features/video_profiles/data/repositories/video_profile_repository_impl.dart';
+import '../../features/video_profiles/domain/repositories/video_profile_repository.dart';
+import '../../features/video_profiles/presentation/bloc/video_profile_bloc.dart';
+
+// Explore Map
+import '../../features/explore_map/data/datasources/explore_map_remote_datasource.dart';
+import '../../features/explore_map/data/repositories/explore_map_repository_impl.dart';
+import '../../features/explore_map/domain/repositories/explore_map_repository.dart';
+import '../../features/explore_map/presentation/bloc/explore_map_bloc.dart';
+
+// Spots
+import '../../features/spots/data/datasources/spots_remote_datasource.dart';
+import '../../features/spots/data/repositories/spots_repository_impl.dart';
+import '../../features/spots/domain/repositories/spots_repository.dart';
+import '../../features/spots/presentation/bloc/spots_bloc.dart';
+
+// Communities
+import '../../features/communities/data/datasources/communities_remote_datasource.dart';
+import '../../features/communities/data/repositories/communities_repository_impl.dart';
+import '../../features/communities/domain/repositories/communities_repository.dart';
+import '../../features/communities/presentation/bloc/communities_bloc.dart';
+
+// Core Services
+import '../services/pronunciation_service.dart';
+import '../services/visual_vocabulary_service.dart';
+import '../services/app_sound_service.dart';
+
 import '../../features/coins/data/repositories/coin_repository_impl.dart';
 import '../../features/coins/domain/repositories/coin_repository.dart';
 import '../../features/coins/domain/usecases/get_coin_balance.dart';
@@ -634,8 +682,128 @@ Future<void> init() async {
     () => LanguageLearningBloc(repository: sl()),
   );
 
-  //! Core
-  // TODO: Register core utilities
+  //! Features - Cultural Exchange
+  // Data sources
+  sl.registerLazySingleton<CulturalExchangeRemoteDataSource>(
+    () => CulturalExchangeRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<CulturalExchangeRepository>(
+    () => CulturalExchangeRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => CulturalExchangeBloc(repository: sl()),
+  );
+
+  //! Features - Safety Academy
+  // Data sources
+  sl.registerLazySingleton<SafetyAcademyRemoteDatasource>(
+    () => SafetyAcademyRemoteDatasource(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<SafetyAcademyRepository>(
+    () => SafetyAcademyRepositoryImpl(remoteDatasource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => SafetyAcademyBloc(repository: sl()),
+  );
+
+  //! Features - Events
+  // Data sources
+  sl.registerLazySingleton<EventsRemoteDataSource>(
+    () => EventsRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<EventsRepository>(
+    () => EventsRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => EventsBloc(repository: sl()),
+  );
+
+  //! Features - Video Profiles
+  // Data sources
+  sl.registerLazySingleton<VideoProfileRemoteDataSource>(
+    () => VideoProfileRemoteDataSourceImpl(
+      firestore: sl(),
+      storage: sl(),
+    ),
+  );
+
+  // Repository
+  sl.registerLazySingleton<VideoProfileRepository>(
+    () => VideoProfileRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => VideoProfileBloc(repository: sl()),
+  );
+
+  //! Features - Explore Map
+  // Data sources
+  sl.registerLazySingleton<ExploreMapRemoteDataSource>(
+    () => ExploreMapRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<ExploreMapRepository>(
+    () => ExploreMapRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => ExploreMapBloc(remoteDataSource: sl()),
+  );
+
+  //! Features - Spots
+  // Data sources
+  sl.registerLazySingleton<SpotsRemoteDataSource>(
+    () => SpotsRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<SpotsRepository>(
+    () => SpotsRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => SpotsBloc(remoteDataSource: sl()),
+  );
+
+  //! Features - Communities
+  // Data sources
+  sl.registerLazySingleton<CommunitiesRemoteDataSource>(
+    () => CommunitiesRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<CommunitiesRepository>(
+    () => CommunitiesRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => CommunitiesBloc(
+      repository: sl(),
+      remoteDataSource: sl(),
+    ),
+  );
+
+  //! Core Services
+  sl.registerLazySingleton(() => PronunciationService());
+  sl.registerLazySingleton(() => VisualVocabularyService());
+  sl.registerLazySingleton(() => AppSoundService());
 
   //! External
   final sharedPreferences = await SharedPreferences.getInstance();

@@ -128,6 +128,28 @@ class OnboardingVerificationPhotoUpdated extends OnboardingEvent {
   List<Object?> get props => [photoUrl];
 }
 
+class OnboardingLearningLanguagesUpdated extends OnboardingEvent {
+  final List<String> preferredLanguages;
+  final String? nativeLanguage;
+
+  const OnboardingLearningLanguagesUpdated({
+    required this.preferredLanguages,
+    this.nativeLanguage,
+  });
+
+  @override
+  List<Object?> get props => [preferredLanguages, nativeLanguage];
+}
+
+class OnboardingTravelPreferenceUpdated extends OnboardingEvent {
+  final String travelPreference;
+
+  const OnboardingTravelPreferenceUpdated({required this.travelPreference});
+
+  @override
+  List<Object?> get props => [travelPreference];
+}
+
 class OnboardingSocialLinksUpdated extends OnboardingEvent {
   final SocialLinks socialLinks;
 

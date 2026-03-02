@@ -53,6 +53,15 @@ class ProfileModel extends Profile {
     super.baseMembershipEndDate,
     super.isOnline,
     super.lastSeen,
+    super.preferredLanguages,
+    super.nativeLanguage,
+    super.travelPreference,
+    super.isLocalGuide,
+    super.localGuideCity,
+    super.videoProfileUrl,
+    super.hasVideoProfile,
+    super.showOnMap,
+    super.completedSafetyModules,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
@@ -145,6 +154,19 @@ class ProfileModel extends Profile {
       lastSeen: json['lastSeen'] != null
           ? (json['lastSeen'] as Timestamp).toDate()
           : null,
+      preferredLanguages: json['preferredLanguages'] != null
+          ? List<String>.from(json['preferredLanguages'] as List)
+          : <String>[],
+      nativeLanguage: json['nativeLanguage'] as String?,
+      travelPreference: json['travelPreference'] as String?,
+      isLocalGuide: json['isLocalGuide'] as bool? ?? false,
+      localGuideCity: json['localGuideCity'] as String?,
+      videoProfileUrl: json['videoProfileUrl'] as String?,
+      hasVideoProfile: json['hasVideoProfile'] as bool? ?? false,
+      showOnMap: json['showOnMap'] as bool? ?? true,
+      completedSafetyModules: json['completedSafetyModules'] != null
+          ? List<String>.from(json['completedSafetyModules'] as List)
+          : <String>[],
     );
   }
 
@@ -265,6 +287,15 @@ class ProfileModel extends Profile {
       'lastSeen': lastSeen != null
           ? Timestamp.fromDate(lastSeen!)
           : null,
+      'preferredLanguages': preferredLanguages,
+      'nativeLanguage': nativeLanguage,
+      'travelPreference': travelPreference,
+      'isLocalGuide': isLocalGuide,
+      'localGuideCity': localGuideCity,
+      'videoProfileUrl': videoProfileUrl,
+      'hasVideoProfile': hasVideoProfile,
+      'showOnMap': showOnMap,
+      'completedSafetyModules': completedSafetyModules,
     };
   }
 
@@ -317,6 +348,15 @@ class ProfileModel extends Profile {
       baseMembershipEndDate: profile.baseMembershipEndDate,
       isOnline: profile.isOnline,
       lastSeen: profile.lastSeen,
+      preferredLanguages: profile.preferredLanguages,
+      nativeLanguage: profile.nativeLanguage,
+      travelPreference: profile.travelPreference,
+      isLocalGuide: profile.isLocalGuide,
+      localGuideCity: profile.localGuideCity,
+      videoProfileUrl: profile.videoProfileUrl,
+      hasVideoProfile: profile.hasVideoProfile,
+      showOnMap: profile.showOnMap,
+      completedSafetyModules: profile.completedSafetyModules,
     );
   }
 }

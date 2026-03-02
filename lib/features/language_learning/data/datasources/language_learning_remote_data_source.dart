@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../domain/entities/entities.dart';
@@ -90,6 +92,51 @@ abstract class LanguageLearningRemoteDataSource {
   Future<void> setLearningGoal(LearningGoal goal);
   Future<List<LearningGoal>> getLearningGoals();
   Future<void> updateGoalProgress(String goalId, int progress);
+
+  // Icebreakers
+  Future<List<Icebreaker>> getIcebreakersForCountry(String countryCode);
+  Future<void> markIcebreakerAsUsed(String icebreakerId);
+  Future<Icebreaker> getRandomIcebreaker(String matchCountryCode);
+
+  // Leaderboard
+  Future<LanguageLeaderboard> getLeaderboard({
+    LeaderboardType type = LeaderboardType.totalXp,
+    LeaderboardPeriod period = LeaderboardPeriod.weekly,
+  });
+  Future<LeaderboardEntry> getUserLeaderboardRank();
+
+  // AI Coach Sessions
+  Future<AiCoachSession> startCoachSession({
+    required String languageCode,
+    required CoachScenario scenario,
+  });
+  Future<AiCoachSession> saveCoachSession(AiCoachSession session);
+  Future<AiCoachSession?> getCoachSession(String sessionId);
+  Future<AiCoachSession> endCoachSession(String sessionId);
+  Future<List<AiCoachSession>> getCoachSessionHistory();
+  Future<void> addCoachMessage(String sessionId, CoachMessage message);
+
+  // Language Packs
+  Future<void> purchaseLanguagePack(String packId);
+  Future<List<LanguagePack>> getPurchasedPacks();
+
+  // Challenges
+  Future<void> updateChallengeProgress(String challengeId, int progress);
+  Future<void> claimChallengeReward(String challengeId);
+
+  // Seasonal Events
+  Future<void> updateSeasonalChallengeProgress(
+    String eventId,
+    String challengeId,
+    int progress,
+  );
+  Future<void> claimSeasonalChallengeReward(
+    String eventId,
+    String challengeId,
+  );
+
+  // Video Call Language Tracking
+  Future<void> trackVideoCallLanguageUse(String languageCode, Duration duration);
 }
 
 class LanguageLearningRemoteDataSourceImpl
@@ -1557,5 +1604,904 @@ class LanguageLearningRemoteDataSourceImpl
       'isCompleted': isCompleted,
       if (isCompleted) 'completedAt': Timestamp.now(),
     });
+  }
+
+  // ==================== Icebreakers ====================
+
+  CollectionReference get _icebreakersCollection =>
+      _firestore.collection('icebreakers');
+
+  @override
+  Future<List<Icebreaker>> getIcebreakersForCountry(String countryCode) async {
+    try {
+      // First try Firestore for custom/admin-added icebreakers
+      final snapshot = await _icebreakersCollection
+          .where('countryCode', isEqualTo: countryCode.toUpperCase())
+          .get();
+
+      if (snapshot.docs.isNotEmpty) {
+        // Merge Firestore icebreakers with user usage data
+        final usageSnapshot = await _firestore
+            .collection('users')
+            .doc(_userId)
+            .collection('icebreaker_usage')
+            .get();
+        final usedIds = <String, DateTime>{};
+        for (final doc in usageSnapshot.docs) {
+          final data = doc.data();
+          usedIds[doc.id] = data['usedAt'] is Timestamp
+              ? (data['usedAt'] as Timestamp).toDate()
+              : DateTime.now();
+        }
+
+        return snapshot.docs.map((doc) {
+          final data = doc.data() as Map<String, dynamic>;
+          return Icebreaker(
+            id: doc.id,
+            phrase: data['phrase'] as String? ?? '',
+            translation: data['translation'] as String? ?? '',
+            languageCode: data['languageCode'] as String? ?? '',
+            languageName: data['languageName'] as String? ?? '',
+            pronunciation: data['pronunciation'] as String?,
+            audioUrl: data['audioUrl'] as String?,
+            countryCode: data['countryCode'] as String? ?? countryCode,
+            countryName: data['countryName'] as String? ?? '',
+            culturalContext: data['culturalContext'] as String? ?? '',
+            type: IcebreakerType.values.firstWhere(
+              (e) => e.name == data['type'],
+              orElse: () => IcebreakerType.greeting,
+            ),
+            xpReward: data['xpReward'] as int? ?? 15,
+            isUsed: usedIds.containsKey(doc.id),
+            usedAt: usedIds[doc.id],
+          );
+        }).toList();
+      }
+
+      // Fall back to static icebreakers
+      final staticIcebreakers = Icebreaker.getIcebreakersForCountry(countryCode);
+
+      // Check usage for static icebreakers too
+      final usageSnapshot = await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('icebreaker_usage')
+          .get();
+      final usedIds = <String, DateTime>{};
+      for (final doc in usageSnapshot.docs) {
+        final data = doc.data();
+        usedIds[doc.id] = data['usedAt'] is Timestamp
+            ? (data['usedAt'] as Timestamp).toDate()
+            : DateTime.now();
+      }
+
+      return staticIcebreakers.map((ib) {
+        if (usedIds.containsKey(ib.id)) {
+          return ib.copyWith(isUsed: true, usedAt: usedIds[ib.id]);
+        }
+        return ib;
+      }).toList();
+    } catch (e) {
+      // Fall back to static data on error
+      return Icebreaker.getIcebreakersForCountry(countryCode);
+    }
+  }
+
+  @override
+  Future<void> markIcebreakerAsUsed(String icebreakerId) async {
+    try {
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('icebreaker_usage')
+          .doc(icebreakerId)
+          .set({
+        'usedAt': Timestamp.now(),
+        'icebreakerId': icebreakerId,
+      });
+
+      // Update learning streak when using icebreakers
+      await updateLearningStreak();
+    } catch (e) {
+      throw Exception('Failed to mark icebreaker as used: $e');
+    }
+  }
+
+  @override
+  Future<Icebreaker> getRandomIcebreaker(String matchCountryCode) async {
+    try {
+      final icebreakers = await getIcebreakersForCountry(matchCountryCode);
+
+      if (icebreakers.isEmpty) {
+        throw Exception('No icebreakers available for country: $matchCountryCode');
+      }
+
+      // Prefer unused icebreakers
+      final unused = icebreakers.where((ib) => !ib.isUsed).toList();
+      final pool = unused.isNotEmpty ? unused : icebreakers;
+
+      final random = Random();
+      return pool[random.nextInt(pool.length)];
+    } catch (e) {
+      // Last resort: fall back to static data
+      final staticIcebreakers = Icebreaker.getIcebreakersForCountry(matchCountryCode);
+      if (staticIcebreakers.isEmpty) {
+        throw Exception('No icebreakers available for country: $matchCountryCode');
+      }
+      return staticIcebreakers[Random().nextInt(staticIcebreakers.length)];
+    }
+  }
+
+  // ==================== Leaderboard ====================
+
+  CollectionReference get _leaderboardCollection =>
+      _firestore.collection('language_leaderboard');
+
+  @override
+  Future<LanguageLeaderboard> getLeaderboard({
+    LeaderboardType type = LeaderboardType.totalXp,
+    LeaderboardPeriod period = LeaderboardPeriod.weekly,
+  }) async {
+    try {
+      // Determine the date filter based on period
+      DateTime? periodStart;
+      final now = DateTime.now();
+
+      switch (period) {
+        case LeaderboardPeriod.weekly:
+          periodStart = now.subtract(Duration(days: now.weekday - 1));
+          periodStart = DateTime(periodStart.year, periodStart.month, periodStart.day);
+          break;
+        case LeaderboardPeriod.monthly:
+          periodStart = DateTime(now.year, now.month, 1);
+          break;
+        case LeaderboardPeriod.allTime:
+          periodStart = null;
+          break;
+      }
+
+      // Determine sort field based on leaderboard type
+      String sortField;
+      switch (type) {
+        case LeaderboardType.wordsLearned:
+          sortField = 'wordsLearned';
+          break;
+        case LeaderboardType.languagesMastered:
+          sortField = 'languagesCount';
+          break;
+        case LeaderboardType.quizzes:
+          sortField = 'quizzesCompleted';
+          break;
+        case LeaderboardType.streak:
+          sortField = 'currentStreak';
+          break;
+        case LeaderboardType.totalXp:
+          sortField = 'totalXp';
+          break;
+      }
+
+      // Build the leaderboard document ID for caching
+      final leaderboardDocId = '${type.name}_${period.name}';
+
+      // Try to get cached leaderboard first
+      final cachedDoc = await _leaderboardCollection.doc(leaderboardDocId).get();
+
+      if (cachedDoc.exists) {
+        final cachedData = cachedDoc.data() as Map<String, dynamic>;
+        final lastUpdated = cachedData['lastUpdated'] is Timestamp
+            ? (cachedData['lastUpdated'] as Timestamp).toDate()
+            : DateTime.now();
+
+        // Use cache if less than 5 minutes old
+        if (DateTime.now().difference(lastUpdated).inMinutes < 5) {
+          final entries = _parseLeaderboardEntries(
+            cachedData['entries'] as List<dynamic>? ?? [],
+          );
+          return LanguageLeaderboard(
+            type: type,
+            period: period,
+            entries: entries,
+            lastUpdated: lastUpdated,
+            currentUserRank: _findUserRank(entries),
+          );
+        }
+      }
+
+      // Query user progress aggregation
+      Query query = _firestore.collection('user_language_stats');
+
+      if (periodStart != null) {
+        query = query.where(
+          'lastActivityAt',
+          isGreaterThanOrEqualTo: Timestamp.fromDate(periodStart),
+        );
+      }
+
+      query = query.orderBy(sortField, descending: true).limit(50);
+
+      final snapshot = await query.get();
+
+      final entries = <LeaderboardEntry>[];
+      int rank = 1;
+
+      for (final doc in snapshot.docs) {
+        final data = doc.data() as Map<String, dynamic>;
+        entries.add(LeaderboardEntry(
+          odUserId: doc.id,
+          username: data['username'] as String? ?? 'Anonymous',
+          photoUrl: data['photoUrl'] as String?,
+          rank: rank,
+          wordsLearned: data['wordsLearned'] as int? ?? 0,
+          languagesCount: data['languagesCount'] as int? ?? 0,
+          quizzesCompleted: data['quizzesCompleted'] as int? ?? 0,
+          totalXp: data['totalXp'] as int? ?? 0,
+          currentStreak: data['currentStreak'] as int? ?? 0,
+          highestProficiency: LanguageProficiency.values.firstWhere(
+            (e) => e.name == data['highestProficiency'],
+            orElse: () => LanguageProficiency.beginner,
+          ),
+          isCurrentUser: doc.id == _userId,
+          primaryLanguage: data['primaryLanguage'] as String?,
+          countryFlag: data['countryFlag'] as String?,
+        ));
+        rank++;
+      }
+
+      // Cache the leaderboard
+      await _leaderboardCollection.doc(leaderboardDocId).set({
+        'type': type.name,
+        'period': period.name,
+        'lastUpdated': Timestamp.now(),
+        'entries': entries.map((e) => {
+          'odUserId': e.odUserId,
+          'username': e.username,
+          'photoUrl': e.photoUrl,
+          'rank': e.rank,
+          'wordsLearned': e.wordsLearned,
+          'languagesCount': e.languagesCount,
+          'quizzesCompleted': e.quizzesCompleted,
+          'totalXp': e.totalXp,
+          'currentStreak': e.currentStreak,
+          'highestProficiency': e.highestProficiency.name,
+          'primaryLanguage': e.primaryLanguage,
+          'countryFlag': e.countryFlag,
+        }).toList(),
+      });
+
+      return LanguageLeaderboard(
+        type: type,
+        period: period,
+        entries: entries,
+        lastUpdated: DateTime.now(),
+        currentUserRank: _findUserRank(entries),
+      );
+    } catch (e) {
+      // Return empty leaderboard on error
+      return LanguageLeaderboard(
+        type: type,
+        period: period,
+        entries: const [],
+        lastUpdated: DateTime.now(),
+      );
+    }
+  }
+
+  List<LeaderboardEntry> _parseLeaderboardEntries(List<dynamic> entriesData) {
+    return entriesData.map((e) {
+      final data = e as Map<String, dynamic>;
+      return LeaderboardEntry(
+        odUserId: data['odUserId'] as String? ?? '',
+        username: data['username'] as String? ?? 'Anonymous',
+        photoUrl: data['photoUrl'] as String?,
+        rank: data['rank'] as int? ?? 0,
+        wordsLearned: data['wordsLearned'] as int? ?? 0,
+        languagesCount: data['languagesCount'] as int? ?? 0,
+        quizzesCompleted: data['quizzesCompleted'] as int? ?? 0,
+        totalXp: data['totalXp'] as int? ?? 0,
+        currentStreak: data['currentStreak'] as int? ?? 0,
+        highestProficiency: LanguageProficiency.values.firstWhere(
+          (v) => v.name == data['highestProficiency'],
+          orElse: () => LanguageProficiency.beginner,
+        ),
+        isCurrentUser: data['odUserId'] == _userId,
+        primaryLanguage: data['primaryLanguage'] as String?,
+        countryFlag: data['countryFlag'] as String?,
+      );
+    }).toList();
+  }
+
+  String? _findUserRank(List<LeaderboardEntry> entries) {
+    final userEntry = entries.where((e) => e.isCurrentUser).firstOrNull;
+    return userEntry?.rank.toString();
+  }
+
+  @override
+  Future<LeaderboardEntry> getUserLeaderboardRank() async {
+    try {
+      // Get user's language stats
+      final statsDoc = await _firestore
+          .collection('user_language_stats')
+          .doc(_userId)
+          .get();
+
+      if (!statsDoc.exists) {
+        // Return default entry for user with no stats
+        return LeaderboardEntry(
+          odUserId: _userId,
+          username: _auth.currentUser?.displayName ?? 'You',
+          photoUrl: _auth.currentUser?.photoURL,
+          rank: 0,
+          wordsLearned: 0,
+          languagesCount: 0,
+          quizzesCompleted: 0,
+          totalXp: 0,
+          isCurrentUser: true,
+        );
+      }
+
+      final data = statsDoc.data() as Map<String, dynamic>;
+
+      // Calculate rank by counting users with more XP
+      final higherRanked = await _firestore
+          .collection('user_language_stats')
+          .where('totalXp', isGreaterThan: data['totalXp'] ?? 0)
+          .count()
+          .get();
+
+      final rank = (higherRanked.count ?? 0) + 1;
+
+      return LeaderboardEntry(
+        odUserId: _userId,
+        username: data['username'] as String? ?? _auth.currentUser?.displayName ?? 'You',
+        photoUrl: data['photoUrl'] as String? ?? _auth.currentUser?.photoURL,
+        rank: rank,
+        wordsLearned: data['wordsLearned'] as int? ?? 0,
+        languagesCount: data['languagesCount'] as int? ?? 0,
+        quizzesCompleted: data['quizzesCompleted'] as int? ?? 0,
+        totalXp: data['totalXp'] as int? ?? 0,
+        currentStreak: data['currentStreak'] as int? ?? 0,
+        highestProficiency: LanguageProficiency.values.firstWhere(
+          (e) => e.name == data['highestProficiency'],
+          orElse: () => LanguageProficiency.beginner,
+        ),
+        isCurrentUser: true,
+        primaryLanguage: data['primaryLanguage'] as String?,
+        countryFlag: data['countryFlag'] as String?,
+      );
+    } catch (e) {
+      throw Exception('Failed to get user leaderboard rank: $e');
+    }
+  }
+
+  // ==================== AI Coach Sessions ====================
+
+  CollectionReference get _coachSessionsCollection =>
+      _firestore.collection('users').doc(_userId).collection('coach_sessions');
+
+  @override
+  Future<AiCoachSession> startCoachSession({
+    required String languageCode,
+    required CoachScenario scenario,
+  }) async {
+    try {
+      final sessionData = {
+        'odUserId': _userId,
+        'targetLanguageCode': languageCode,
+        'targetLanguageName': SupportedLanguage.getByCode(languageCode)?.name ?? languageCode,
+        'scenario': scenario.name,
+        'messages': <Map<String, dynamic>>[],
+        'coinCost': 10,
+        'xpReward': 25,
+        'isCompleted': false,
+        'startedAt': Timestamp.now(),
+        'completedAt': null,
+        'score': null,
+      };
+
+      final docRef = await _coachSessionsCollection.add(sessionData);
+
+      return AiCoachSession(
+        id: docRef.id,
+        odUserId: _userId,
+        targetLanguageCode: languageCode,
+        targetLanguageName: SupportedLanguage.getByCode(languageCode)?.name ?? languageCode,
+        scenario: scenario,
+        messages: const [],
+        coinCost: 10,
+        xpReward: 25,
+        isCompleted: false,
+        startedAt: DateTime.now(),
+      );
+    } catch (e) {
+      throw Exception('Failed to start coach session: $e');
+    }
+  }
+
+  @override
+  Future<AiCoachSession> saveCoachSession(AiCoachSession session) async {
+    try {
+      final sessionData = {
+        'odUserId': session.odUserId,
+        'targetLanguageCode': session.targetLanguageCode,
+        'targetLanguageName': session.targetLanguageName,
+        'scenario': session.scenario.name,
+        'messages': session.messages.map((m) => {
+          'id': m.id,
+          'content': m.content,
+          'translation': m.translation,
+          'isUserMessage': m.isUserMessage,
+          'timestamp': Timestamp.fromDate(m.timestamp),
+          'correction': m.correction,
+          'feedback': m.feedback,
+          'suggestedResponses': m.suggestedResponses,
+        }).toList(),
+        'coinCost': session.coinCost,
+        'xpReward': session.xpReward,
+        'isCompleted': session.isCompleted,
+        'startedAt': Timestamp.fromDate(session.startedAt),
+        'completedAt': session.completedAt != null
+            ? Timestamp.fromDate(session.completedAt!)
+            : null,
+        'score': session.score != null
+            ? {
+                'grammarAccuracy': session.score!.grammarAccuracy,
+                'vocabularyUsage': session.score!.vocabularyUsage,
+                'fluency': session.score!.fluency,
+                'overallScore': session.score!.overallScore,
+                'strengths': session.score!.strengths,
+                'areasToImprove': session.score!.areasToImprove,
+              }
+            : null,
+      };
+
+      await _coachSessionsCollection.doc(session.id).set(
+        sessionData,
+        SetOptions(merge: true),
+      );
+
+      return session;
+    } catch (e) {
+      throw Exception('Failed to save coach session: $e');
+    }
+  }
+
+  @override
+  Future<AiCoachSession?> getCoachSession(String sessionId) async {
+    try {
+      final doc = await _coachSessionsCollection.doc(sessionId).get();
+
+      if (!doc.exists) return null;
+
+      final data = doc.data() as Map<String, dynamic>;
+      return _coachSessionFromJson(data, doc.id);
+    } catch (e) {
+      throw Exception('Failed to get coach session: $e');
+    }
+  }
+
+  @override
+  Future<void> addCoachMessage(String sessionId, CoachMessage message) async {
+    try {
+      await _coachSessionsCollection.doc(sessionId).update({
+        'messages': FieldValue.arrayUnion([
+          {
+            'id': message.id,
+            'content': message.content,
+            'translation': message.translation,
+            'isUserMessage': message.isUserMessage,
+            'timestamp': Timestamp.fromDate(message.timestamp),
+            'correction': message.correction,
+            'feedback': message.feedback,
+            'suggestedResponses': message.suggestedResponses,
+          }
+        ]),
+      });
+    } catch (e) {
+      throw Exception('Failed to add coach message: $e');
+    }
+  }
+
+  @override
+  Future<AiCoachSession> endCoachSession(String sessionId) async {
+    try {
+      final doc = await _coachSessionsCollection.doc(sessionId).get();
+
+      if (!doc.exists) {
+        throw Exception('Coach session not found: $sessionId');
+      }
+
+      final data = doc.data() as Map<String, dynamic>;
+      final session = _coachSessionFromJson(data, doc.id);
+
+      // Calculate a basic score from messages
+      final userMessages = session.messages.where((m) => m.isUserMessage).toList();
+      final messagesWithCorrections = session.messages
+          .where((m) => !m.isUserMessage && m.correction != null)
+          .length;
+
+      final totalUserMessages = userMessages.length.clamp(1, 999);
+      final grammarAccuracy = totalUserMessages > 0
+          ? ((totalUserMessages - messagesWithCorrections) / totalUserMessages * 100)
+              .clamp(0.0, 100.0)
+          : 80.0;
+
+      final score = CoachSessionScore(
+        grammarAccuracy: grammarAccuracy,
+        vocabularyUsage: (grammarAccuracy * 0.9).clamp(0.0, 100.0),
+        fluency: (grammarAccuracy * 0.85).clamp(0.0, 100.0),
+        overallScore: grammarAccuracy,
+        strengths: grammarAccuracy >= 70
+            ? ['Good conversation flow', 'Consistent practice']
+            : ['Willingness to practice'],
+        areasToImprove: grammarAccuracy < 80
+            ? ['Grammar accuracy', 'Vocabulary variety']
+            : ['Advanced expressions'],
+      );
+
+      await _coachSessionsCollection.doc(sessionId).update({
+        'isCompleted': true,
+        'completedAt': Timestamp.now(),
+        'score': {
+          'grammarAccuracy': score.grammarAccuracy,
+          'vocabularyUsage': score.vocabularyUsage,
+          'fluency': score.fluency,
+          'overallScore': score.overallScore,
+          'strengths': score.strengths,
+          'areasToImprove': score.areasToImprove,
+        },
+      });
+
+      // Update learning streak
+      await updateLearningStreak();
+
+      return session.copyWith(
+        isCompleted: true,
+        completedAt: DateTime.now(),
+        score: score,
+      );
+    } catch (e) {
+      throw Exception('Failed to end coach session: $e');
+    }
+  }
+
+  @override
+  Future<List<AiCoachSession>> getCoachSessionHistory() async {
+    try {
+      final snapshot = await _coachSessionsCollection
+          .orderBy('startedAt', descending: true)
+          .limit(50)
+          .get();
+
+      return snapshot.docs.map((doc) {
+        final data = doc.data() as Map<String, dynamic>;
+        return _coachSessionFromJson(data, doc.id);
+      }).toList();
+    } catch (e) {
+      // Return empty list on error
+      return [];
+    }
+  }
+
+  AiCoachSession _coachSessionFromJson(Map<String, dynamic> json, String docId) {
+    final messagesData = json['messages'] as List<dynamic>? ?? [];
+    final messages = messagesData.map((m) {
+      final msgData = m as Map<String, dynamic>;
+      return CoachMessage(
+        id: msgData['id'] as String? ?? '',
+        content: msgData['content'] as String? ?? '',
+        translation: msgData['translation'] as String?,
+        isUserMessage: msgData['isUserMessage'] as bool? ?? false,
+        timestamp: msgData['timestamp'] is Timestamp
+            ? (msgData['timestamp'] as Timestamp).toDate()
+            : DateTime.now(),
+        correction: msgData['correction'] as String?,
+        feedback: msgData['feedback'] as String?,
+        suggestedResponses: (msgData['suggestedResponses'] as List<dynamic>?)
+            ?.map((e) => e as String)
+            .toList(),
+      );
+    }).toList();
+
+    CoachSessionScore? score;
+    if (json['score'] != null) {
+      final scoreData = json['score'] as Map<String, dynamic>;
+      score = CoachSessionScore(
+        grammarAccuracy: (scoreData['grammarAccuracy'] as num?)?.toDouble() ?? 0.0,
+        vocabularyUsage: (scoreData['vocabularyUsage'] as num?)?.toDouble() ?? 0.0,
+        fluency: (scoreData['fluency'] as num?)?.toDouble() ?? 0.0,
+        overallScore: (scoreData['overallScore'] as num?)?.toDouble() ?? 0.0,
+        strengths: (scoreData['strengths'] as List<dynamic>?)
+                ?.map((e) => e as String)
+                .toList() ??
+            [],
+        areasToImprove: (scoreData['areasToImprove'] as List<dynamic>?)
+                ?.map((e) => e as String)
+                .toList() ??
+            [],
+      );
+    }
+
+    return AiCoachSession(
+      id: docId,
+      odUserId: json['odUserId'] as String? ?? _userId,
+      targetLanguageCode: json['targetLanguageCode'] as String? ?? '',
+      targetLanguageName: json['targetLanguageName'] as String? ?? '',
+      scenario: CoachScenario.values.firstWhere(
+        (e) => e.name == json['scenario'],
+        orElse: () => CoachScenario.casualChat,
+      ),
+      messages: messages,
+      coinCost: json['coinCost'] as int? ?? 10,
+      xpReward: json['xpReward'] as int? ?? 25,
+      isCompleted: json['isCompleted'] as bool? ?? false,
+      startedAt: json['startedAt'] is Timestamp
+          ? (json['startedAt'] as Timestamp).toDate()
+          : DateTime.now(),
+      completedAt: json['completedAt'] is Timestamp
+          ? (json['completedAt'] as Timestamp).toDate()
+          : null,
+      score: score,
+    );
+  }
+
+  // ==================== Language Packs ====================
+
+  @override
+  Future<void> purchaseLanguagePack(String packId) async {
+    try {
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('purchased_packs')
+          .doc(packId)
+          .set({
+        'purchasedAt': Timestamp.now(),
+        'packId': packId,
+      });
+    } catch (e) {
+      throw Exception('Failed to purchase language pack: $e');
+    }
+  }
+
+  @override
+  Future<List<LanguagePack>> getPurchasedPacks() async {
+    try {
+      final snapshot = await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('purchased_packs')
+          .get();
+
+      final purchasedIds = snapshot.docs.map((d) => d.id).toSet();
+      final purchasedDates = <String, DateTime>{};
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        purchasedDates[doc.id] = data['purchasedAt'] is Timestamp
+            ? (data['purchasedAt'] as Timestamp).toDate()
+            : DateTime.now();
+      }
+
+      // Return matching packs from the available packs catalog
+      return LanguagePack.availablePacks
+          .where((pack) => purchasedIds.contains(pack.id))
+          .map((pack) => LanguagePack(
+                id: pack.id,
+                name: pack.name,
+                description: pack.description,
+                languageCode: pack.languageCode,
+                languageName: pack.languageName,
+                category: pack.category,
+                phraseCount: pack.phraseCount,
+                coinPrice: pack.coinPrice,
+                isPurchased: true,
+                purchasedAt: purchasedDates[pack.id],
+                iconEmoji: pack.iconEmoji,
+                previewPhrases: pack.previewPhrases,
+                tier: pack.tier,
+              ))
+          .toList();
+    } catch (e) {
+      return [];
+    }
+  }
+
+  // ==================== Challenges ====================
+
+  @override
+  Future<void> updateChallengeProgress(String challengeId, int progress) async {
+    try {
+      final challengeDoc = await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('challenge_progress')
+          .doc(challengeId)
+          .get();
+
+      // Find the challenge definition to check target
+      final challenge = [
+        ...LanguageChallenge.dailyChallenges,
+        ...LanguageChallenge.weeklyChallenges,
+      ].where((c) => c.id == challengeId).firstOrNull;
+
+      final targetCount = challenge?.targetCount ?? progress;
+      final isCompleted = progress >= targetCount;
+
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('challenge_progress')
+          .doc(challengeId)
+          .set({
+        'challengeId': challengeId,
+        'currentProgress': progress,
+        'targetCount': targetCount,
+        'isCompleted': isCompleted,
+        'lastUpdatedAt': Timestamp.now(),
+        if (isCompleted && !(challengeDoc.exists && (challengeDoc.data()?['isCompleted'] as bool? ?? false)))
+          'completedAt': Timestamp.now(),
+      }, SetOptions(merge: true));
+
+      // Update learning streak on challenge progress
+      await updateLearningStreak();
+    } catch (e) {
+      throw Exception('Failed to update challenge progress: $e');
+    }
+  }
+
+  @override
+  Future<void> claimChallengeReward(String challengeId) async {
+    try {
+      final challengeDoc = await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('challenge_progress')
+          .doc(challengeId)
+          .get();
+
+      if (!challengeDoc.exists) {
+        throw Exception('Challenge progress not found');
+      }
+
+      final data = challengeDoc.data()!;
+      if (!(data['isCompleted'] as bool? ?? false)) {
+        throw Exception('Challenge not completed yet');
+      }
+
+      if (data['isRewardClaimed'] as bool? ?? false) {
+        throw Exception('Reward already claimed');
+      }
+
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('challenge_progress')
+          .doc(challengeId)
+          .update({
+        'isRewardClaimed': true,
+        'rewardClaimedAt': Timestamp.now(),
+      });
+    } catch (e) {
+      throw Exception('Failed to claim challenge reward: $e');
+    }
+  }
+
+  // ==================== Seasonal Events ====================
+
+  @override
+  Future<void> updateSeasonalChallengeProgress(
+    String eventId,
+    String challengeId,
+    int progress,
+  ) async {
+    try {
+      final docId = '${eventId}_$challengeId';
+
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('seasonal_challenge_progress')
+          .doc(docId)
+          .set({
+        'eventId': eventId,
+        'challengeId': challengeId,
+        'currentProgress': progress,
+        'lastUpdatedAt': Timestamp.now(),
+      }, SetOptions(merge: true));
+
+      // Check if the challenge target is met
+      final event = SeasonalLanguageEvent.allEvents
+          .where((e) => e.id == eventId)
+          .firstOrNull;
+
+      if (event != null) {
+        final challenge = event.challenges
+            .where((c) => c.id == challengeId)
+            .firstOrNull;
+
+        if (challenge != null && progress >= challenge.targetCount) {
+          await _firestore
+              .collection('users')
+              .doc(_userId)
+              .collection('seasonal_challenge_progress')
+              .doc(docId)
+              .update({
+            'isCompleted': true,
+            'completedAt': Timestamp.now(),
+          });
+        }
+      }
+    } catch (e) {
+      throw Exception('Failed to update seasonal challenge progress: $e');
+    }
+  }
+
+  @override
+  Future<void> claimSeasonalChallengeReward(
+    String eventId,
+    String challengeId,
+  ) async {
+    try {
+      final docId = '${eventId}_$challengeId';
+
+      final doc = await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('seasonal_challenge_progress')
+          .doc(docId)
+          .get();
+
+      if (!doc.exists) {
+        throw Exception('Seasonal challenge progress not found');
+      }
+
+      final data = doc.data()!;
+      if (!(data['isCompleted'] as bool? ?? false)) {
+        throw Exception('Seasonal challenge not completed yet');
+      }
+
+      if (data['isRewardClaimed'] as bool? ?? false) {
+        throw Exception('Seasonal reward already claimed');
+      }
+
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('seasonal_challenge_progress')
+          .doc(docId)
+          .update({
+        'isRewardClaimed': true,
+        'rewardClaimedAt': Timestamp.now(),
+      });
+    } catch (e) {
+      throw Exception('Failed to claim seasonal challenge reward: $e');
+    }
+  }
+
+  // ==================== Video Call Language Tracking ====================
+
+  @override
+  Future<void> trackVideoCallLanguageUse(String languageCode, Duration duration) async {
+    try {
+      await _firestore
+          .collection('users')
+          .doc(_userId)
+          .collection('video_call_language_usage')
+          .add({
+        'languageCode': languageCode,
+        'durationSeconds': duration.inSeconds,
+        'trackedAt': Timestamp.now(),
+      });
+
+      // Update language progress with video call practice time
+      await _userProgressCollection.doc(languageCode).set({
+        'videoCallMinutes': FieldValue.increment(duration.inMinutes),
+        'lastPracticeDate': Timestamp.now(),
+      }, SetOptions(merge: true));
+
+      // Update learning streak
+      await updateLearningStreak();
+    } catch (e) {
+      throw Exception('Failed to track video call language use: $e');
+    }
   }
 }

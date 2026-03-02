@@ -71,6 +71,27 @@ class Profile extends Equatable {
   final bool isOnline;
   final DateTime? lastSeen;
 
+  // Language learning fields
+  final List<String> preferredLanguages; // Languages the user wants to learn
+  final String? nativeLanguage; // User's native language
+
+  // Travel preference
+  final String? travelPreference; // 'learn_travel', 'help_travelers', 'both'
+
+  // Local guide fields
+  final bool isLocalGuide;
+  final String? localGuideCity;
+
+  // Video profile fields
+  final String? videoProfileUrl;
+  final bool hasVideoProfile;
+
+  // Map visibility
+  final bool showOnMap;
+
+  // Safety academy progress
+  final List<String> completedSafetyModules;
+
   const Profile({
     required this.userId,
     required this.displayName,
@@ -119,6 +140,15 @@ class Profile extends Equatable {
     this.baseMembershipEndDate,
     this.isOnline = false,
     this.lastSeen,
+    this.preferredLanguages = const [],
+    this.nativeLanguage,
+    this.travelPreference,
+    this.isLocalGuide = false,
+    this.localGuideCity,
+    this.videoProfileUrl,
+    this.hasVideoProfile = false,
+    this.showOnMap = true,
+    this.completedSafetyModules = const [],
   });
 
   /// Get formatted nickname with @ prefix
@@ -226,6 +256,15 @@ class Profile extends Equatable {
         baseMembershipEndDate,
         isOnline,
         lastSeen,
+        preferredLanguages,
+        nativeLanguage,
+        travelPreference,
+        isLocalGuide,
+        localGuideCity,
+        videoProfileUrl,
+        hasVideoProfile,
+        showOnMap,
+        completedSafetyModules,
       ];
 
   /// Copy with updated fields
@@ -277,6 +316,15 @@ class Profile extends Equatable {
     DateTime? baseMembershipEndDate,
     bool? isOnline,
     DateTime? lastSeen,
+    List<String>? preferredLanguages,
+    String? nativeLanguage,
+    String? travelPreference,
+    bool? isLocalGuide,
+    String? localGuideCity,
+    String? videoProfileUrl,
+    bool? hasVideoProfile,
+    bool? showOnMap,
+    List<String>? completedSafetyModules,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -326,6 +374,15 @@ class Profile extends Equatable {
       baseMembershipEndDate: baseMembershipEndDate ?? this.baseMembershipEndDate,
       isOnline: isOnline ?? this.isOnline,
       lastSeen: lastSeen ?? this.lastSeen,
+      preferredLanguages: preferredLanguages ?? this.preferredLanguages,
+      nativeLanguage: nativeLanguage ?? this.nativeLanguage,
+      travelPreference: travelPreference ?? this.travelPreference,
+      isLocalGuide: isLocalGuide ?? this.isLocalGuide,
+      localGuideCity: localGuideCity ?? this.localGuideCity,
+      videoProfileUrl: videoProfileUrl ?? this.videoProfileUrl,
+      hasVideoProfile: hasVideoProfile ?? this.hasVideoProfile,
+      showOnMap: showOnMap ?? this.showOnMap,
+      completedSafetyModules: completedSafetyModules ?? this.completedSafetyModules,
     );
   }
 }

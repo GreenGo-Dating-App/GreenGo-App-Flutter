@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/event.dart';
+import '../../data/datasources/events_remote_datasource.dart';
+import '../../data/repositories/events_repository_impl.dart';
+import '../bloc/events_bloc.dart';
+import '../bloc/events_event.dart';
+import '../bloc/events_state.dart';
+import 'event_chat_screen.dart';
 
 /// Events Screen - Discover local events and activities
+///
+/// 3 tabs: Upcoming, Nearby, My Events
+/// Category chips for filtering.
+/// Wired to EventsBloc for all data operations.
 class EventsScreen extends StatefulWidget {
   final String currentUserId;
 
@@ -19,70 +30,151 @@ class EventsScreen extends StatefulWidget {
 class _EventsScreenState extends State<EventsScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  late EventsBloc _eventsBloc;
   EventCategory? _selectedCategory;
-  final List<Event> _events = []; // TODO: Load from repository
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
+
+    // Create the BLoC with repository and datasource
+    final dataSource = EventsRemoteDataSourceImpl();
+    final repository = EventsRepositoryImpl(remoteDataSource: dataSource);
+    _eventsBloc = EventsBloc(repository: repository);
+
+    // Load initial events
+    _eventsBloc.add(const LoadEvents(upcoming: true));
+    _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    _eventsBloc.close();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
-      appBar: AppBar(
+    return BlocProvider.value(
+      value: _eventsBloc,
+      child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
-        title: const Text(
-          'Events',
-          style: TextStyle(color: AppColors.textPrimary),
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add, color: AppColors.richGold),
-            onPressed: () => _showCreateEventDialog(context),
+        appBar: AppBar(
+          backgroundColor: AppColors.backgroundDark,
+          title: const Text(
+            'Events',
+            style: TextStyle(color: AppColors.textPrimary),
           ),
-          IconButton(
-            icon: const Icon(Icons.filter_list, color: AppColors.textPrimary),
-            onPressed: () => _showFilterDialog(context),
-          ),
-        ],
-        bottom: TabBar(
-          controller: _tabController,
-          indicatorColor: AppColors.richGold,
-          labelColor: AppColors.richGold,
-          unselectedLabelColor: AppColors.textSecondary,
-          tabs: const [
-            Tab(text: 'Upcoming'),
-            Tab(text: 'Nearby'),
-            Tab(text: 'My Events'),
-          ],
-        ),
-      ),
-      body: Column(
-        children: [
-          // Category Filter
-          _buildCategoryFilter(),
-          // Events List
-          Expanded(
-            child: TabBarView(
-              controller: _tabController,
-              children: [
-                _buildEventsList(_getUpcomingEvents()),
-                _buildEventsList(_getNearbyEvents()),
-                _buildEventsList(_getMyEvents()),
-              ],
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.add, color: AppColors.richGold),
+              onPressed: () => _showCreateEventDialog(context),
             ),
+            IconButton(
+              icon:
+                  const Icon(Icons.filter_list, color: AppColors.textPrimary),
+              onPressed: () => _showFilterDialog(context),
+            ),
+          ],
+          bottom: TabBar(
+            controller: _tabController,
+            indicatorColor: AppColors.richGold,
+            labelColor: AppColors.richGold,
+            unselectedLabelColor: AppColors.textSecondary,
+            tabs: const [
+              Tab(text: 'Upcoming'),
+              Tab(text: 'Nearby'),
+              Tab(text: 'My Events'),
+            ],
           ),
-        ],
+        ),
+        body: BlocConsumer<EventsBloc, EventsState>(
+          listener: (context, state) {
+            if (state is EventCreated) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Event created successfully!'),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
+              // Reload events
+              _eventsBloc.add(const LoadEvents(upcoming: true));
+              _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+            } else if (state is EventRsvpSuccess) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    state.status == 'cancelled'
+                        ? 'RSVP cancelled'
+                        : 'RSVP updated!',
+                  ),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
+              // Reload events to reflect changes
+              _eventsBloc.add(const LoadEvents(upcoming: true));
+              _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+            } else if (state is EventDeleted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Event deleted'),
+                  backgroundColor: AppColors.successGreen,
+                ),
+              );
+            } else if (state is EventsError) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(state.message),
+                  backgroundColor: AppColors.errorRed,
+                ),
+              );
+            }
+          },
+          builder: (context, state) {
+            return Column(
+              children: [
+                // Category Filter
+                _buildCategoryFilter(),
+                // Events List
+                Expanded(
+                  child: _buildBody(state),
+                ),
+              ],
+            );
+          },
+        ),
       ),
+    );
+  }
+
+  Widget _buildBody(EventsState state) {
+    if (state is EventsLoading) {
+      return const Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
+      );
+    }
+
+    if (state is EventsLoaded) {
+      return TabBarView(
+        controller: _tabController,
+        children: [
+          _buildEventsList(_getUpcomingEvents(state)),
+          _buildEventsList(_getNearbyEvents(state)),
+          _buildEventsList(_getMyEvents(state)),
+        ],
+      );
+    }
+
+    // Default: show empty state for initial/error/other states
+    return TabBarView(
+      controller: _tabController,
+      children: [
+        _buildEventsList([]),
+        _buildEventsList([]),
+        _buildEventsList([]),
+      ],
     );
   }
 
@@ -113,6 +205,7 @@ class _EventsScreenState extends State<EventsScreen>
           setState(() {
             _selectedCategory = selected ? category : null;
           });
+          _eventsBloc.add(FilterByCategory(category: _selectedCategory));
         },
         backgroundColor: AppColors.backgroundCard,
         selectedColor: AppColors.richGold.withOpacity(0.3),
@@ -146,23 +239,42 @@ class _EventsScreenState extends State<EventsScreen>
         return 'Travel';
       case EventCategory.wellness:
         return 'Wellness';
+      case EventCategory.languageExchange:
+        return 'Language';
       case EventCategory.other:
         return 'Other';
     }
   }
 
-  List<Event> _getUpcomingEvents() {
-    return _events.where((e) => e.isUpcoming).toList()
-      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+  List<Event> _getUpcomingEvents(EventsLoaded state) {
+    return state.upcomingEvents;
   }
 
-  List<Event> _getNearbyEvents() {
-    // TODO: Sort by distance
-    return _events.where((e) => e.isUpcoming).toList();
+  List<Event> _getNearbyEvents(EventsLoaded state) {
+    if (state.nearbyEvents.isNotEmpty) {
+      // Apply category filter to nearby events too
+      if (_selectedCategory != null) {
+        return state.nearbyEvents
+            .where((e) => e.category == _selectedCategory)
+            .toList();
+      }
+      return state.nearbyEvents;
+    }
+    // Fallback: show upcoming events if no nearby data
+    return state.upcomingEvents;
   }
 
-  List<Event> _getMyEvents() {
-    return _events.where((e) {
+  List<Event> _getMyEvents(EventsLoaded state) {
+    if (state.userEvents.isNotEmpty) {
+      if (_selectedCategory != null) {
+        return state.userEvents
+            .where((e) => e.category == _selectedCategory)
+            .toList();
+      }
+      return state.userEvents;
+    }
+    // Fallback: filter from all events
+    return state.filteredEvents.where((e) {
       return e.organizerId == widget.currentUserId ||
           e.attendees.any((a) => a.userId == widget.currentUserId);
     }).toList();
@@ -211,17 +323,26 @@ class _EventsScreenState extends State<EventsScreen>
       );
     }
 
-    return ListView.builder(
-      padding: const EdgeInsets.all(12),
-      itemCount: events.length,
-      itemBuilder: (context, index) {
-        return EventCard(
-          event: events[index],
-          currentUserId: widget.currentUserId,
-          onTap: () => _showEventDetails(events[index]),
-          onRSVP: (status) => _handleRSVP(events[index], status),
-        );
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      onRefresh: () async {
+        _eventsBloc.add(const LoadEvents(upcoming: true));
+        _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+        // Wait briefly for the BLoC to process
+        await Future.delayed(const Duration(milliseconds: 500));
       },
+      child: ListView.builder(
+        padding: const EdgeInsets.all(12),
+        itemCount: events.length,
+        itemBuilder: (context, index) {
+          return EventCard(
+            event: events[index],
+            currentUserId: widget.currentUserId,
+            onTap: () => _showEventDetails(events[index]),
+            onRSVP: (status) => _handleRSVP(events[index], status),
+          );
+        },
+      ),
     );
   }
 
@@ -231,7 +352,7 @@ class _EventsScreenState extends State<EventsScreen>
         builder: (context) => CreateEventScreen(
           currentUserId: widget.currentUserId,
           onEventCreated: (event) {
-            // TODO: Save event
+            _eventsBloc.add(CreateEvent(event: event));
             Navigator.of(context).pop();
           },
         ),
@@ -341,16 +462,23 @@ class _EventsScreenState extends State<EventsScreen>
   void _showEventDetails(Event event) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => EventDetailsScreen(
-          event: event,
-          currentUserId: widget.currentUserId,
+        builder: (context) => BlocProvider.value(
+          value: _eventsBloc,
+          child: EventDetailsScreen(
+            event: event,
+            currentUserId: widget.currentUserId,
+          ),
         ),
       ),
     );
   }
 
   void _handleRSVP(Event event, RSVPStatus status) {
-    // TODO: Update RSVP status
+    _eventsBloc.add(RsvpEvent(
+      eventId: event.id,
+      userId: widget.currentUserId,
+      status: status.name,
+    ));
   }
 }
 
@@ -395,7 +523,8 @@ class EventCard extends StatelessWidget {
           children: [
             // Event Image
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(16)),
               child: Stack(
                 children: [
                   Container(
@@ -433,6 +562,42 @@ class EventCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // Language badge for language exchange events
+                  if (event.category == EventCategory.languageExchange &&
+                      event.languagePairs != null)
+                    Positioned(
+                      top: 12,
+                      left: 120,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppColors.infoBlue,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(
+                              Icons.translate,
+                              size: 12,
+                              color: Colors.white,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              event.languagePairs!,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   // Spots Left
                   if (!event.isFull)
                     Positioned(
@@ -484,7 +649,8 @@ class EventCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        DateFormat('EEE, MMM d • h:mm a').format(event.startDate),
+                        DateFormat('EEE, MMM d \u2022 h:mm a')
+                            .format(event.startDate),
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 13,
@@ -580,9 +746,10 @@ class EventCard extends StatelessWidget {
                             ? null
                             : () => onRSVP(RSVPStatus.going),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: userRSVP?.status == RSVPStatus.going
-                              ? Colors.green
-                              : AppColors.richGold,
+                          backgroundColor:
+                              userRSVP?.status == RSVPStatus.going
+                                  ? Colors.green
+                                  : AppColors.richGold,
                           foregroundColor: AppColors.deepBlack,
                           padding: const EdgeInsets.symmetric(
                             horizontal: 16,
@@ -642,6 +809,24 @@ class EventDetailsScreen extends StatelessWidget {
                       ),
                     ),
             ),
+            actions: [
+              // Group Chat button
+              IconButton(
+                icon: const Icon(Icons.chat, color: AppColors.richGold),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => EventChatScreen(
+                        event: event,
+                        currentUserId: currentUserId,
+                        currentUserName: 'User', // TODO: get from profile
+                      ),
+                    ),
+                  );
+                },
+                tooltip: 'Event Group Chat',
+              ),
+            ],
           ),
           SliverToBoxAdapter(
             child: Padding(
@@ -661,9 +846,7 @@ class EventDetailsScreen extends StatelessWidget {
                   _buildInfoRow(
                     Icons.calendar_today,
                     DateFormat('EEEE, MMMM d, yyyy').format(event.startDate),
-                    DateFormat('h:mm a').format(event.startDate) +
-                        ' - ' +
-                        DateFormat('h:mm a').format(event.endDate),
+                    '${DateFormat('h:mm a').format(event.startDate)} - ${DateFormat('h:mm a').format(event.endDate)}',
                   ),
                   const SizedBox(height: 12),
                   _buildInfoRow(
@@ -677,6 +860,17 @@ class EventDetailsScreen extends StatelessWidget {
                     '${event.goingCount} / ${event.maxAttendees} attending',
                     '${event.spotsLeft} spots left',
                   ),
+                  // Language exchange info
+                  if (event.category == EventCategory.languageExchange) ...[
+                    const SizedBox(height: 12),
+                    _buildInfoRow(
+                      Icons.translate,
+                      event.languagePairs ?? 'Language Exchange',
+                      event.languages.isNotEmpty
+                          ? 'Languages: ${event.languages.join(', ')}'
+                          : null,
+                    ),
+                  ],
                   const SizedBox(height: 24),
                   const Text(
                     'About this event',
@@ -695,6 +889,93 @@ class EventDetailsScreen extends StatelessWidget {
                       height: 1.5,
                     ),
                   ),
+                  // Tags
+                  if (event.tags.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: event.tags.map((tag) {
+                        return Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
+                          ),
+                          decoration: BoxDecoration(
+                            color: AppColors.backgroundInput,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Text(
+                            '#$tag',
+                            style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 12,
+                            ),
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                  ],
+                  const SizedBox(height: 24),
+                  // Group Chat link
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => EventChatScreen(
+                            event: event,
+                            currentUserId: currentUserId,
+                            currentUserName: 'User',
+                          ),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: AppColors.backgroundCard,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: AppColors.richGold.withOpacity(0.3),
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.chat_bubble_outline,
+                            color: AppColors.richGold,
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Event Group Chat',
+                                  style: TextStyle(
+                                    color: AppColors.textPrimary,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                Text(
+                                  'Chat with other attendees',
+                                  style: TextStyle(
+                                    color: AppColors.textSecondary,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Icon(
+                            Icons.chevron_right,
+                            color: AppColors.textTertiary,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                   const SizedBox(height: 24),
                   const Text(
                     'Attendees',
@@ -707,42 +988,60 @@ class EventDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 12),
                   SizedBox(
                     height: 80,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: event.attendees
-                          .where((a) => a.status == RSVPStatus.going)
-                          .length,
-                      itemBuilder: (context, index) {
-                        final attendee = event.attendees
+                    child: event.attendees
                             .where((a) => a.status == RSVPStatus.going)
-                            .elementAt(index);
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 12),
-                          child: Column(
-                            children: [
-                              CircleAvatar(
-                                radius: 28,
-                                backgroundImage: attendee.userPhotoUrl != null
-                                    ? NetworkImage(attendee.userPhotoUrl!)
-                                    : null,
-                                backgroundColor: AppColors.backgroundCard,
-                                child: attendee.userPhotoUrl == null
-                                    ? Text(attendee.userName[0].toUpperCase())
-                                    : null,
+                            .isEmpty
+                        ? Center(
+                            child: Text(
+                              'No attendees yet. Be the first to join!',
+                              style: TextStyle(
+                                color: AppColors.textSecondary,
+                                fontSize: 13,
                               ),
-                              const SizedBox(height: 4),
-                              Text(
-                                attendee.userName.split(' ').first,
-                                style: const TextStyle(
-                                  color: AppColors.textSecondary,
-                                  fontSize: 11,
+                            ),
+                          )
+                        : ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: event.attendees
+                                .where((a) => a.status == RSVPStatus.going)
+                                .length,
+                            itemBuilder: (context, index) {
+                              final attendee = event.attendees
+                                  .where((a) => a.status == RSVPStatus.going)
+                                  .elementAt(index);
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 28,
+                                      backgroundImage:
+                                          attendee.userPhotoUrl != null
+                                              ? NetworkImage(
+                                                  attendee.userPhotoUrl!)
+                                              : null,
+                                      backgroundColor:
+                                          AppColors.backgroundCard,
+                                      child: attendee.userPhotoUrl == null
+                                          ? Text(
+                                              attendee.userName[0]
+                                                  .toUpperCase(),
+                                            )
+                                          : null,
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      attendee.userName.split(' ').first,
+                                      style: const TextStyle(
+                                        color: AppColors.textSecondary,
+                                        fontSize: 11,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
-                            ],
+                              );
+                            },
                           ),
-                        );
-                      },
-                    ),
                   ),
                   const SizedBox(height: 100),
                 ],
@@ -757,7 +1056,8 @@ class EventDetailsScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: AppColors.backgroundCard,
             border: Border(
-              top: BorderSide(color: AppColors.textTertiary.withOpacity(0.2)),
+              top: BorderSide(
+                  color: AppColors.textTertiary.withOpacity(0.2)),
             ),
           ),
           child: Row(
@@ -783,7 +1083,16 @@ class EventDetailsScreen extends StatelessWidget {
               const SizedBox(width: 16),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: event.isFull ? null : () {},
+                  onPressed: event.isFull
+                      ? null
+                      : () {
+                          context.read<EventsBloc>().add(RsvpEvent(
+                                eventId: event.id,
+                                userId: currentUserId,
+                                status: RSVPStatus.going.name,
+                              ));
+                          Navigator.pop(context);
+                        },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.richGold,
                     foregroundColor: AppColors.deepBlack,
@@ -860,6 +1169,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final _descriptionController = TextEditingController();
   final _locationController = TextEditingController();
   final _maxAttendeesController = TextEditingController(text: '20');
+  final _languagePairsController = TextEditingController();
   EventCategory _category = EventCategory.social;
   DateTime _startDate = DateTime.now().add(const Duration(days: 1));
   DateTime _endDate = DateTime.now().add(const Duration(days: 1, hours: 2));
@@ -872,6 +1182,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _descriptionController.dispose();
     _locationController.dispose();
     _maxAttendeesController.dispose();
+    _languagePairsController.dispose();
     super.dispose();
   }
 
@@ -919,6 +1230,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               }).toList(),
               onChanged: (v) => setState(() => _category = v!),
             ),
+            // Language Pairs field (shown only for language exchange category)
+            if (_category == EventCategory.languageExchange) ...[
+              const SizedBox(height: 16),
+              TextFormField(
+                controller: _languagePairsController,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: _inputDecoration(
+                  'Language Pairs (e.g., Spanish \u2194 English)',
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
             TextFormField(
               controller: _locationController,
@@ -934,10 +1256,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 style: TextStyle(color: AppColors.textSecondary),
               ),
               subtitle: Text(
-                DateFormat('EEE, MMM d yyyy • h:mm a').format(_startDate),
+                DateFormat('EEE, MMM d yyyy \u2022 h:mm a')
+                    .format(_startDate),
                 style: const TextStyle(color: AppColors.textPrimary),
               ),
-              trailing: const Icon(Icons.calendar_today, color: AppColors.richGold),
+              trailing: const Icon(Icons.calendar_today,
+                  color: AppColors.richGold),
               onTap: () => _selectDateTime(true),
             ),
             ListTile(
@@ -947,10 +1271,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 style: TextStyle(color: AppColors.textSecondary),
               ),
               subtitle: Text(
-                DateFormat('EEE, MMM d yyyy • h:mm a').format(_endDate),
+                DateFormat('EEE, MMM d yyyy \u2022 h:mm a').format(_endDate),
                 style: const TextStyle(color: AppColors.textPrimary),
               ),
-              trailing: const Icon(Icons.calendar_today, color: AppColors.richGold),
+              trailing: const Icon(Icons.calendar_today,
+                  color: AppColors.richGold),
               onTap: () => _selectDateTime(false),
             ),
             const SizedBox(height: 16),
@@ -992,7 +1317,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
               child: const Text(
                 'Create Event',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
           ],
@@ -1023,9 +1349,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     );
     if (date == null) return;
 
+    if (!mounted) return;
     final time = await showTimePicker(
       context: context,
-      initialTime: TimeOfDay.fromDateTime(isStart ? _startDate : _endDate),
+      initialTime:
+          TimeOfDay.fromDateTime(isStart ? _startDate : _endDate),
     );
     if (time == null) return;
 
@@ -1052,7 +1380,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (!_formKey.currentState!.validate()) return;
 
     final event = Event(
-      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      id: '', // Firestore will generate the ID
       organizerId: widget.currentUserId,
       organizerName: 'Current User', // TODO: Get from profile
       title: _titleController.text,
@@ -1064,6 +1392,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       maxAttendees: int.tryParse(_maxAttendeesController.text) ?? 20,
       price: _isFree ? null : _price,
       status: EventStatus.published,
+      languagePairs: _category == EventCategory.languageExchange
+          ? _languagePairsController.text.isNotEmpty
+              ? _languagePairsController.text
+              : null
+          : null,
       createdAt: DateTime.now(),
     );
 

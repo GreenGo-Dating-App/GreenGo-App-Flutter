@@ -113,3 +113,12 @@ logs/
 # Test related
 test/coverage/
 node_modules/
+
+# Firebase local
+.firebase/
+admin-dist/
+
+# Auth exports & dev scripts
+auth_*.json
+reset-users.*
+setup_admin.js

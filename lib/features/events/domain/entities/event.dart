@@ -12,6 +12,7 @@ enum EventCategory {
   gaming,
   travel,
   wellness,
+  languageExchange,
   other,
 }
 
@@ -59,6 +60,10 @@ class Event extends Equatable {
   final int? minAge;
   final int? maxAge;
   final String? genderPreference;
+  final List<String> languages;
+  final String? languagePairs;
+  final String? city;
+  final int attendeeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
 
@@ -89,6 +94,10 @@ class Event extends Equatable {
     this.minAge,
     this.maxAge,
     this.genderPreference,
+    this.languages = const [],
+    this.languagePairs,
+    this.city,
+    this.attendeeCount = 0,
     required this.createdAt,
     this.updatedAt,
   });
@@ -129,6 +138,10 @@ class Event extends Equatable {
         minAge,
         maxAge,
         genderPreference,
+        languages,
+        languagePairs,
+        city,
+        attendeeCount,
         createdAt,
         updatedAt,
       ];
@@ -160,6 +173,10 @@ class Event extends Equatable {
     int? minAge,
     int? maxAge,
     String? genderPreference,
+    List<String>? languages,
+    String? languagePairs,
+    String? city,
+    int? attendeeCount,
     DateTime? createdAt,
     DateTime? updatedAt,
   }) {
@@ -190,6 +207,10 @@ class Event extends Equatable {
       minAge: minAge ?? this.minAge,
       maxAge: maxAge ?? this.maxAge,
       genderPreference: genderPreference ?? this.genderPreference,
+      languages: languages ?? this.languages,
+      languagePairs: languagePairs ?? this.languagePairs,
+      city: city ?? this.city,
+      attendeeCount: attendeeCount ?? this.attendeeCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
     );
