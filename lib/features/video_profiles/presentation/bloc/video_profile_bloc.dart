@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../data/repositories/video_profile_repository_impl.dart';
+import '../../domain/entities/video_profile.dart';
 import '../../domain/repositories/video_profile_repository.dart';
 import 'video_profile_event.dart';
 import 'video_profile_state.dart';
