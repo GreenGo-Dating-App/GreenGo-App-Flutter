@@ -43,7 +43,7 @@ class VibeTagRepositoryImpl implements VibeTagRepository {
 
   @override
   Stream<Either<Failure, UserVibeTags>> streamUserVibeTags(String userId) {
-    return remoteDataSource.streamUserVibeTags(userId).map((tags) {
+    return remoteDataSource.streamUserVibeTags(userId).map<Either<Failure, UserVibeTags>>((tags) {
       return Right(tags);
     }).handleError((e) {
       return Left(ServerFailure(e.toString()));

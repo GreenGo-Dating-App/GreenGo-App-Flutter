@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -318,10 +319,11 @@ class _SwipeCardState extends State<SwipeCard>
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
-              if (widget.card.membershipTier != MembershipTier.free) ...[
+              if (profile.primaryOrigin != null) ...[
                 const SizedBox(width: 8),
-                MembershipBadge(
-                  tier: widget.card.membershipTier,
+                CountryFlagBadge(
+                  primary: profile.primaryOrigin,
+                  secondary: profile.secondaryOrigin,
                   compact: true,
                 ),
               ],

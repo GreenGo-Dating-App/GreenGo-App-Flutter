@@ -101,3 +101,18 @@ class AuthCheckAccessStatusRequested extends AuthEvent {
 class AuthEnableNotificationsRequested extends AuthEvent {
   const AuthEnableNotificationsRequested();
 }
+
+/// Event fired when the user successfully completes selfie verification on login.
+class AuthSelfieVerificationCompleted extends AuthEvent {
+  final String userId;
+
+  const AuthSelfieVerificationCompleted({required this.userId});
+
+  @override
+  List<Object> get props => [userId];
+}
+
+/// Event fired when the user cancels selfie verification on login (triggers sign-out).
+class AuthSelfieVerificationCancelled extends AuthEvent {
+  const AuthSelfieVerificationCancelled();
+}

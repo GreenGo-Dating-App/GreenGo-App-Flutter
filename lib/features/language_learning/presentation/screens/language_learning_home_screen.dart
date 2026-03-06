@@ -1,10 +1,17 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/language_learning_bloc.dart';
 import '../widgets/widgets.dart';
+import '../widgets/xp_hero_section.dart';
+import '../widgets/your_languages_section.dart';
+import '../widgets/compact_streak_strip.dart';
 
 class LanguageLearningHomeScreen extends StatefulWidget {
   const LanguageLearningHomeScreen({super.key});
@@ -15,16 +22,47 @@ class LanguageLearningHomeScreen extends StatefulWidget {
 }
 
 class _LanguageLearningHomeScreenState
-    extends State<LanguageLearningHomeScreen> {
+    extends State<LanguageLearningHomeScreen>
+    with TickerProviderStateMixin {
+  late AnimationController _particleController;
+  late AnimationController _shimmerController;
+  late AnimationController _glowController;
+  late Animation<double> _glowAnimation;
+
   @override
   void initState() {
     super.initState();
     context.read<LanguageLearningBloc>().add(const LoadLanguageLearningData());
     _loadUserPreferredLanguages();
+
+    _particleController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 12),
+    )..repeat();
+
+    _shimmerController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 3000),
+    )..repeat();
+
+    _glowController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2000),
+    )..repeat(reverse: true);
+    _glowAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _glowController, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _particleController.dispose();
+    _shimmerController.dispose();
+    _glowController.dispose();
+    super.dispose();
   }
 
   void _loadUserPreferredLanguages() {
-    // Try to get user's preferred languages from profile
     final profileState = context.read<ProfileBloc>().state;
     if (profileState is ProfileLoaded) {
       final languages = profileState.profile.languages;
@@ -38,56 +76,64 @@ class _LanguageLearningHomeScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
       body: SafeArea(
-        child: BlocBuilder<LanguageLearningBloc, LanguageLearningState>(
+        child: Stack(
+          children: [
+            // Ambient starfield particle background
+            Positioned.fill(
+              child: AnimatedBuilder(
+                animation: _particleController,
+                builder: (context, _) => CustomPaint(
+                  painter: _LearningHomeParticlePainter(
+                    progress: _particleController.value,
+                  ),
+                ),
+              ),
+            ),
+            BlocBuilder<LanguageLearningBloc, LanguageLearningState>(
           builder: (context, state) {
             if (state.status == LanguageLearningStatus.loading) {
               return const Center(
                 child: CircularProgressIndicator(
-                  color: Color(0xFFD4AF37),
+                  color: AppColors.richGold,
                 ),
               );
             }
 
+            final totalXp = state.allLanguageProgress.fold(
+              0,
+              (sum, p) => sum + p.totalXpEarned,
+            );
+
             return CustomScrollView(
               slivers: [
-                // App Bar
+                // Compact App Bar with leaderboard + achievements icons
                 SliverAppBar(
-                  expandedHeight: 120,
-                  floating: false,
+                  expandedHeight: 60,
+                  floating: true,
                   pinned: true,
                   backgroundColor: const Color(0xFF0A0A0A),
-                  flexibleSpace: FlexibleSpaceBar(
-                    title: const Text(
-                      'Learn Languages',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-                    background: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            Color(0xFF1A1A2E),
-                            Color(0xFF0A0A0A),
-                          ],
-                        ),
-                      ),
+                  title: Text(
+                    l10n.greengoLearn,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
                     ),
                   ),
                   actions: [
                     IconButton(
-                      icon: const Icon(Icons.leaderboard, color: Color(0xFFD4AF37)),
+                      icon: const Icon(Icons.leaderboard,
+                          color: AppColors.richGold),
                       onPressed: () => _navigateToLeaderboard(context),
                     ),
                     IconButton(
-                      icon: const Icon(Icons.emoji_events, color: Color(0xFFD4AF37)),
+                      icon: const Icon(Icons.emoji_events,
+                          color: AppColors.richGold),
                       onPressed: () => _navigateToAchievements(context),
                     ),
                   ],
@@ -98,12 +144,19 @@ class _LanguageLearningHomeScreenState
                   padding: const EdgeInsets.all(16),
                   sliver: SliverList(
                     delegate: SliverChildListDelegate([
-                      // Stats Overview
-                      _buildStatsOverview(state),
+                      // 1. XP Hero Section (animated)
+                      XpHeroSection(
+                        totalXp: totalXp,
+                        languagesLearning: state.totalLanguagesLearning,
+                      ),
+                      const SizedBox(height: 16),
+
+                      // 2. Compact Streak Strip
+                      CompactStreakStrip(streak: state.learningStreak),
                       const SizedBox(height: 20),
 
-                      // Daily Hint Card
-                      if (state.dailyHint != null)
+                      // 3. Daily Hint Card (if available)
+                      if (state.dailyHint != null) ...[
                         DailyHintCard(
                           hint: state.dailyHint!,
                           onViewed: () => context
@@ -113,56 +166,123 @@ class _LanguageLearningHomeScreenState
                               .read<LanguageLearningBloc>()
                               .add(MarkHintAsLearned(state.dailyHint!.id)),
                         ),
-                      const SizedBox(height: 20),
+                        const SizedBox(height: 20),
+                      ],
 
-                      // Learning Streak
-                      if (state.learningStreak != null)
-                        LearningStreakCard(streak: state.learningStreak!),
-                      const SizedBox(height: 20),
-
-                      // Quick Actions
-                      _buildQuickActions(context),
-                      const SizedBox(height: 20),
-
-                      // Daily Challenges Section
-                      _buildSectionHeader('Daily Challenges', Icons.task_alt),
+                      // 4. "Your Languages" — horizontal scroll
+                      _buildSectionHeader(
+                          l10n.yourLanguages, Icons.school),
                       const SizedBox(height: 12),
-                      ...state.dailyChallenges.take(3).map(
-                            (challenge) => Padding(
-                              padding: const EdgeInsets.only(bottom: 8),
-                              child: LanguageChallengeCard(challenge: challenge),
-                            ),
-                          ),
-                      if (state.dailyChallenges.length > 3)
-                        _buildShowMoreButton(
-                          'View All Challenges',
-                          () => _navigateToChallenges(context),
-                        ),
+                      YourLanguagesSection(
+                        languageProgress: state.allLanguageProgress,
+                        onLanguageTap: (code) =>
+                            _navigateToLearningPath(context, code),
+                      ),
                       const SizedBox(height: 20),
 
-                      // Languages Section
-                      _buildSectionHeader('Choose a Language', Icons.language),
+                      // 5. "Explore Languages" — full grid (all languages, 4 cols)
+                      _buildSectionHeader(
+                          l10n.exploreLanguages, Icons.language),
                       const SizedBox(height: 12),
                       _buildLanguageGrid(state.supportedLanguages),
                       const SizedBox(height: 20),
 
-                      // Seasonal Events
-                      if (state.seasonalEvents.isNotEmpty) ...[
-                        _buildSectionHeader('Special Events', Icons.celebration),
+                      // 6. Daily Challenges (compact, 3 cards)
+                      if (state.dailyChallenges.isNotEmpty) ...[
+                        _buildSectionHeader(
+                            l10n.dailyChallengesTitle, Icons.task_alt),
                         const SizedBox(height: 12),
-                        ...state.seasonalEvents.map(
-                          (event) => Padding(
-                            padding: const EdgeInsets.only(bottom: 12),
-                            child: SeasonalEventBanner(event: event),
+                        ...state.dailyChallenges.take(3).map(
+                              (challenge) => Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: LanguageChallengeCard(
+                                    challenge: challenge),
+                              ),
+                            ),
+                        if (state.dailyChallenges.length > 3)
+                          _buildShowMoreButton(
+                            l10n.viewAllChallenges,
+                            () => _navigateToChallenges(context),
                           ),
-                        ),
                         const SizedBox(height: 20),
                       ],
 
-                      // Language Packs Shop
-                      _buildSectionHeader('Language Packs', Icons.shopping_bag),
-                      const SizedBox(height: 12),
-                      _buildLanguagePacksPreview(),
+                      // 7. "Language Packs" button → shop with shimmer
+                      AnimatedBuilder(
+                        animation: _shimmerController,
+                        builder: (context, child) {
+                          final shimmerPos = _shimmerController.value * 2 - 0.5;
+                          return GestureDetector(
+                            onTap: () {
+                              HapticFeedback.lightImpact();
+                              _navigateToShop(context);
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(16),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.all(16),
+                                    decoration: BoxDecoration(
+                                      gradient: const LinearGradient(
+                                        colors: [Color(0xFF1A1A2E), Color(0xFF2D2D44)],
+                                      ),
+                                      borderRadius: BorderRadius.circular(16),
+                                      border: Border.all(
+                                        color: AppColors.richGold.withValues(
+                                            alpha: 0.4 + 0.2 * _glowAnimation.value),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: AppColors.richGold.withValues(
+                                              alpha: 0.06 * _glowAnimation.value),
+                                          blurRadius: 12,
+                                          spreadRadius: 2,
+                                        ),
+                                      ],
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        const Icon(Icons.shopping_bag,
+                                            color: AppColors.richGold, size: 28),
+                                        const SizedBox(width: 12),
+                                        Expanded(
+                                          child: Text(
+                                            l10n.languagePacksBtn,
+                                            style: const TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        const Icon(Icons.arrow_forward_ios,
+                                            color: AppColors.richGold, size: 18),
+                                      ],
+                                    ),
+                                  ),
+                                  // Shimmer sweep
+                                  Positioned.fill(
+                                    child: ShaderMask(
+                                      shaderCallback: (bounds) => LinearGradient(
+                                        begin: Alignment(shimmerPos - 0.3, -1),
+                                        end: Alignment(shimmerPos + 0.3, 1),
+                                        colors: [
+                                          Colors.transparent,
+                                          Colors.white.withValues(alpha: 0.04),
+                                          Colors.transparent,
+                                        ],
+                                      ).createShader(bounds),
+                                      blendMode: BlendMode.srcIn,
+                                      child: Container(color: Colors.white),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      ),
                       const SizedBox(height: 40),
                     ]),
                   ),
@@ -171,132 +291,6 @@ class _LanguageLearningHomeScreenState
             );
           },
         ),
-      ),
-    );
-  }
-
-  Widget _buildStatsOverview(LanguageLearningState state) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF1A1A2E), Color(0xFF2D2D44)],
-        ),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0xFFD4AF37).withOpacity(0.3)),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          _buildStatItem(
-            '${state.totalWordsLearned}',
-            'Words Learned',
-            Icons.menu_book,
-          ),
-          _buildStatItem(
-            '${state.totalLanguagesLearning}',
-            'Languages',
-            Icons.language,
-          ),
-          _buildStatItem(
-            '${state.learningStreak?.currentStreak ?? 0}',
-            'Day Streak',
-            Icons.local_fire_department,
-          ),
-          _buildStatItem(
-            '${state.unlockedAchievementsCount}',
-            'Badges',
-            Icons.emoji_events,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildStatItem(String value, String label, IconData icon) {
-    return Column(
-      children: [
-        Icon(icon, color: const Color(0xFFD4AF37), size: 24),
-        const SizedBox(height: 4),
-        Text(
-          value,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        Text(
-          label,
-          style: TextStyle(
-            color: Colors.white.withOpacity(0.7),
-            fontSize: 12,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildQuickActions(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: _buildQuickActionCard(
-            'Flashcards',
-            Icons.style,
-            const Color(0xFF4CAF50),
-            () => _navigateToFlashcards(context),
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildQuickActionCard(
-            'Quizzes',
-            Icons.quiz,
-            const Color(0xFF2196F3),
-            () => _navigateToQuizzes(context),
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildQuickActionCard(
-            'AI Coach',
-            Icons.smart_toy,
-            const Color(0xFF9C27B0),
-            () => _navigateToAiCoach(context),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildQuickActionCard(
-    String label,
-    IconData icon,
-    Color color,
-    VoidCallback onTap,
-  ) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: const Color(0xFF1A1A1A),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withOpacity(0.5)),
-        ),
-        child: Column(
-          children: [
-            Icon(icon, color: color, size: 32),
-            const SizedBox(height: 8),
-            Text(
-              label,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
           ],
         ),
       ),
@@ -304,19 +298,36 @@ class _LanguageLearningHomeScreenState
   }
 
   Widget _buildSectionHeader(String title, IconData icon) {
-    return Row(
-      children: [
-        Icon(icon, color: const Color(0xFFD4AF37), size: 24),
-        const SizedBox(width: 8),
-        Text(
-          title,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
+    return AnimatedBuilder(
+      animation: _glowAnimation,
+      builder: (context, child) => Row(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.richGold.withValues(alpha: 0.15 * _glowAnimation.value),
+                  blurRadius: 10,
+                  spreadRadius: 2,
+                ),
+              ],
+            ),
+            child: Icon(icon, color: AppColors.richGold, size: 24),
           ),
-        ),
-      ],
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -330,174 +341,61 @@ class _LanguageLearningHomeScreenState
         mainAxisSpacing: 12,
         childAspectRatio: 0.9,
       ),
-      itemCount: languages.take(8).length,
+      itemCount: languages.length,
       itemBuilder: (context, index) {
         final language = languages[index];
-        return GestureDetector(
-          onTap: () => _navigateToLanguageDetail(context, language.code),
-          child: Container(
-            decoration: BoxDecoration(
-              color: const Color(0xFF1A1A1A),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                color: const Color(0xFFD4AF37).withOpacity(0.3),
-              ),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  language.flag,
-                  style: const TextStyle(fontSize: 28),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  language.name,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 10,
-                    fontWeight: FontWeight.w500,
+        return AnimatedBuilder(
+          animation: _glowAnimation,
+          builder: (context, child) {
+            // Stagger the glow across grid items
+            final stagger = (index * 0.15) % 1.0;
+            final glowVal = ((_glowAnimation.value + stagger) % 1.0);
+            return GestureDetector(
+              onTap: () {
+                HapticFeedback.selectionClick();
+                _navigateToLearningPath(context, language.code);
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1A1A1A),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: AppColors.richGold.withValues(alpha: 0.2 + 0.15 * glowVal),
                   ),
-                  textAlign: TextAlign.center,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.richGold.withValues(alpha: 0.04 + 0.04 * glowVal),
+                      blurRadius: 8,
+                      spreadRadius: 1,
+                    ),
+                  ],
                 ),
-              ],
-            ),
-          ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      language.flag,
+                      style: const TextStyle(fontSize: 28),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      language.name,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      textAlign: TextAlign.center,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
         );
       },
-    );
-  }
-
-  Widget _buildLanguagePacksPreview() {
-    final packs = LanguagePack.availablePacks.take(3).toList();
-
-    return SizedBox(
-      height: 140,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: packs.length + 1,
-        itemBuilder: (context, index) {
-          if (index == packs.length) {
-            return _buildShowMorePackCard(context);
-          }
-
-          final pack = packs[index];
-          return Container(
-            width: 140,
-            margin: EdgeInsets.only(right: index == packs.length ? 0 : 12),
-            decoration: BoxDecoration(
-              color: const Color(0xFF1A1A1A),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                color: pack.tier == PackTier.premium
-                    ? const Color(0xFFD4AF37)
-                    : Colors.white.withOpacity(0.2),
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        pack.iconEmoji,
-                        style: const TextStyle(fontSize: 24),
-                      ),
-                      const Spacer(),
-                      if (pack.tier == PackTier.premium)
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 6,
-                            vertical: 2,
-                          ),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFD4AF37),
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: const Text(
-                            'PRO',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 8,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    pack.name,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  const Spacer(),
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.monetization_on,
-                        color: Color(0xFFD4AF37),
-                        size: 14,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        '${pack.coinPrice}',
-                        style: const TextStyle(
-                          color: Color(0xFFD4AF37),
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
-
-  Widget _buildShowMorePackCard(BuildContext context) {
-    return GestureDetector(
-      onTap: () => _navigateToShop(context),
-      child: Container(
-        width: 100,
-        decoration: BoxDecoration(
-          color: const Color(0xFF1A1A1A),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: const Color(0xFFD4AF37).withOpacity(0.5)),
-        ),
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.arrow_forward,
-              color: Color(0xFFD4AF37),
-              size: 32,
-            ),
-            SizedBox(height: 8),
-            Text(
-              'View All',
-              style: TextStyle(
-                color: Color(0xFFD4AF37),
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 
@@ -510,14 +408,14 @@ class _LanguageLearningHomeScreenState
           Text(
             text,
             style: const TextStyle(
-              color: Color(0xFFD4AF37),
+              color: AppColors.richGold,
               fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(width: 4),
           const Icon(
             Icons.arrow_forward,
-            color: Color(0xFFD4AF37),
+            color: AppColors.richGold,
             size: 16,
           ),
         ],
@@ -534,32 +432,72 @@ class _LanguageLearningHomeScreenState
     Navigator.pushNamed(context, '/language-learning/achievements');
   }
 
-  void _navigateToFlashcards(BuildContext context) {
-    Navigator.pushNamed(context, '/language-learning/flashcards');
-  }
-
-  void _navigateToQuizzes(BuildContext context) {
-    Navigator.pushNamed(context, '/language-learning/quizzes');
-  }
-
-  void _navigateToAiCoach(BuildContext context) {
-    Navigator.pushNamed(context, '/language-learning/ai-coach');
-  }
-
   void _navigateToChallenges(BuildContext context) {
     Navigator.pushNamed(context, '/language-learning/challenges');
   }
 
-  void _navigateToLanguageDetail(BuildContext context, String languageCode) {
+  void _navigateToLearningPath(BuildContext context, String languageCode) {
     context.read<LanguageLearningBloc>().add(SelectLanguage(languageCode));
     Navigator.pushNamed(
       context,
-      '/language-learning/language-detail',
-      arguments: languageCode,
+      '/language-learning/learning-path',
+      arguments: {'languageCode': languageCode},
     );
   }
 
   void _navigateToShop(BuildContext context) {
     Navigator.pushNamed(context, '/language-learning/shop');
+  }
+}
+
+/// Subtle starfield particle painter for the learning home background
+class _LearningHomeParticlePainter extends CustomPainter {
+  final double progress;
+
+  _LearningHomeParticlePainter({required this.progress});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    const count = 30;
+    const seed = 99;
+
+    for (int i = 0; i < count; i++) {
+      final hash = (seed * 31 + i * 41) & 0xFFFF;
+      final baseX = (hash % 1000) / 1000.0 * size.width;
+      final baseY = ((hash * 7 + 321) % 1000) / 1000.0 * size.height;
+      final speed = 0.2 + (hash % 100) / 100.0 * 0.5;
+      final phase = (hash % 628) / 100.0;
+      final radius = 0.8 + (hash % 150) / 100.0;
+
+      final dx = math.sin(progress * math.pi * 2 * speed + phase) * 8;
+      final dy = math.cos(progress * math.pi * 2 * speed * 0.5 + phase) * 6;
+      final twinkle = (0.03 + 0.04 * math.sin(progress * math.pi * 2 * speed * 1.5 + phase))
+          .clamp(0.0, 1.0);
+
+      // Mix of gold and white stars
+      final color = i % 3 == 0
+          ? AppColors.richGold.withValues(alpha: twinkle)
+          : Colors.white.withValues(alpha: twinkle * 0.7);
+
+      canvas.drawCircle(
+        Offset(baseX + dx, baseY + dy),
+        radius,
+        Paint()..color = color,
+      );
+
+      // Subtle glow on every 5th star
+      if (i % 5 == 0) {
+        canvas.drawCircle(
+          Offset(baseX + dx, baseY + dy),
+          radius * 3,
+          Paint()..color = AppColors.richGold.withValues(alpha: twinkle * 0.2),
+        );
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _LearningHomeParticlePainter oldDelegate) {
+    return oldDelegate.progress != progress;
   }
 }

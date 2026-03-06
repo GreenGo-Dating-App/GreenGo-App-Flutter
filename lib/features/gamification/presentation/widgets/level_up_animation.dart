@@ -346,10 +346,7 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
   }
 
   String _getRewardText(LevelReward reward) {
-    if (reward.amount != null && reward.amount! > 0) {
-      return '+${reward.amount} ${reward.type}';
-    }
-    return reward.itemId ?? 'New ${reward.type}';
+    return reward.name;
   }
 }
 

@@ -108,8 +108,37 @@ class AppSoundService {
   bool get isSoundEnabled => _soundEnabled;
   double get volume => _volume;
 
+  // Dedicated player for looping background music
+  AudioPlayer? _bgMusicPlayer;
+
+  /// Play a sound in a loop (for background music / waiting rooms).
+  /// Call [stopBgMusic] to stop.
+  Future<void> playBgMusic(AppSound sound) async {
+    if (!_soundEnabled || !_initialized) return;
+
+    try {
+      await stopBgMusic();
+      _bgMusicPlayer = AudioPlayer();
+      await _bgMusicPlayer!.setVolume(_volume * sound.volumeMultiplier);
+      await _bgMusicPlayer!.setReleaseMode(ReleaseMode.loop);
+      await _bgMusicPlayer!.play(AssetSource(sound.assetPath));
+    } catch (e) {
+      debugPrint('AppSoundService: Failed to play bg music ${sound.name}: $e');
+    }
+  }
+
+  /// Stop background music loop
+  Future<void> stopBgMusic() async {
+    try {
+      await _bgMusicPlayer?.stop();
+      await _bgMusicPlayer?.dispose();
+      _bgMusicPlayer = null;
+    } catch (_) {}
+  }
+
   /// Stop all currently playing sounds
   Future<void> stopAll() async {
+    await stopBgMusic();
     for (final player in _playerPool) {
       await player.stop();
     }
@@ -185,6 +214,18 @@ enum AppSound {
   // ── Video Profile ──
   videoRecordStart('sounds/record_start.mp3', category: SoundCategory.video),
   videoRecordStop('sounds/record_stop.mp3', category: SoundCategory.video),
+
+  // ── Language Games ──
+  gameWaiting('sounds/game_waiting.mp3', category: SoundCategory.games, volumeMultiplier: 0.4),
+  gameCountdown('sounds/game_countdown.mp3', category: SoundCategory.games),
+  gameStart('sounds/game_start.mp3', category: SoundCategory.games),
+  gameEnd('sounds/game_end.mp3', category: SoundCategory.games),
+  gameCorrect('sounds/game_correct.mp3', category: SoundCategory.games, volumeMultiplier: 0.6),
+  gameWrong('sounds/game_wrong.mp3', category: SoundCategory.games, volumeMultiplier: 0.6),
+  gameVictory('sounds/game_victory.mp3', category: SoundCategory.games),
+  gameDefeat('sounds/game_defeat.mp3', category: SoundCategory.games),
+  bombTick('sounds/bomb_tick.mp3', category: SoundCategory.games, volumeMultiplier: 0.5),
+  bombExplode('sounds/bomb_explode.mp3', category: SoundCategory.games),
   ;
 
   final String assetPath;
@@ -208,7 +249,8 @@ enum SoundCategory {
   ui('UI Sounds'),
   safety('Safety Sounds'),
   events('Event Sounds'),
-  video('Video Sounds');
+  video('Video Sounds'),
+  games('Game Sounds');
 
   final String displayName;
   const SoundCategory(this.displayName);

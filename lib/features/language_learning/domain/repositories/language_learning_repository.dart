@@ -321,4 +321,19 @@ abstract class LanguageLearningRepository {
     String goalId,
     int progress,
   );
+
+  // ==================== Learning Path Progress ====================
+
+  /// Record lesson completion
+  Future<Either<Failure, void>> recordLessonCompletion({
+    required String lessonId,
+    required String languageCode,
+    required int earnedXp,
+    required double accuracy,
+  });
+
+  /// Get completed lesson IDs for a language
+  Future<Either<Failure, List<String>>> getCompletedLessonIds({
+    required String languageCode,
+  });
 }

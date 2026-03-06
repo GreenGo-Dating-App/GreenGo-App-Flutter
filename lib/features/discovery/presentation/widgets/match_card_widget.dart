@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
@@ -108,10 +109,15 @@ class MatchCardWidget extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        // Show membership badge if not free tier
-                        if (profile != null && profile!.membershipTier != MembershipTier.free) ...[
+                        // Show origin flag badge
+                        if (profile != null && profile!.primaryOrigin != null) ...[
                           const SizedBox(width: 6),
-                          MembershipIndicator(tier: profile!.membershipTier),
+                          CountryFlagBadge(
+                            primary: profile!.primaryOrigin,
+                            secondary: profile!.secondaryOrigin,
+                            compact: true,
+                            size: 18,
+                          ),
                         ],
                       ],
                     ),

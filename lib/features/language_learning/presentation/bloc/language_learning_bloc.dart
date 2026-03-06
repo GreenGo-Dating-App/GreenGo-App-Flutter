@@ -1,6 +1,12 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../data/datasources/constellation_datasource.dart';
+import '../../data/datasources/lesson_question_datasource.dart';
+import '../../domain/entities/constellation_node.dart';
 import '../../domain/entities/entities.dart';
+import '../../domain/entities/lesson_question.dart';
 import '../../domain/repositories/language_learning_repository.dart';
 
 part 'language_learning_event.dart';
@@ -9,9 +15,14 @@ part 'language_learning_state.dart';
 class LanguageLearningBloc
     extends Bloc<LanguageLearningEvent, LanguageLearningState> {
   final LanguageLearningRepository repository;
+  final LessonQuestionDatasource? questionDatasource;
+  final ConstellationDatasource? constellationDatasource;
 
-  LanguageLearningBloc({required this.repository})
-      : super(const LanguageLearningState()) {
+  LanguageLearningBloc({
+    required this.repository,
+    this.questionDatasource,
+    this.constellationDatasource,
+  }) : super(const LanguageLearningState()) {
     // Initialization
     on<LoadLanguageLearningData>(_onLoadLanguageLearningData);
 
@@ -88,10 +99,20 @@ class LanguageLearningBloc
     on<PurchaseLessonEvent>(_onPurchaseLesson);
     on<LoadPurchasedLessons>(_onLoadPurchasedLessons);
     on<LoadLessonProgress>(_onLoadLessonProgress);
+    on<CompleteLessonEvent>(_onCompleteLesson);
+    on<LoadLearningPathProgress>(_onLoadLearningPathProgress);
+    on<SaveLessonStars>(_onSaveLessonStars);
 
     // User Preferred Languages
     on<SetUserPreferredLanguages>(_onSetUserPreferredLanguages);
     on<AutoSelectPreferredLanguage>(_onAutoSelectPreferredLanguage);
+
+    // Lesson Questions (flat Firestore)
+    on<LoadLessonQuestions>(_onLoadLessonQuestions);
+
+    // Constellation (dynamic galaxy map)
+    on<LoadConstellation>(_onLoadConstellation);
+    on<InvalidateAndReloadConstellation>(_onInvalidateAndReload);
   }
 
   Future<void> _onLoadLanguageLearningData(
@@ -827,14 +848,19 @@ class LanguageLearningBloc
     );
 
     result.fold(
-      (failure) => emit(state.copyWith(
-        isLessonsLoading: false,
-        lessonsError: failure.message,
-      )),
-      (lessons) => emit(state.copyWith(
-        isLessonsLoading: false,
-        lessons: lessons,
-      )),
+      (failure) {
+        emit(state.copyWith(
+          isLessonsLoading: false,
+          lessonsError: failure.message,
+          lessons: [],
+        ));
+      },
+      (lessons) {
+        emit(state.copyWith(
+          isLessonsLoading: false,
+          lessons: lessons,
+        ));
+      },
     );
   }
 
@@ -941,6 +967,208 @@ class LanguageLearningBloc
 
     if (languageToSelect != null) {
       add(SelectLanguage(languageToSelect));
+    }
+  }
+
+  // ==================== Lesson Completion Handlers ====================
+
+  Future<void> _onCompleteLesson(
+    CompleteLessonEvent event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    try {
+      // Record completion in Firestore
+      await repository.recordLessonCompletion(
+        lessonId: event.lessonId,
+        languageCode: event.languageCode,
+        earnedXp: event.earnedXp,
+        accuracy: event.accuracy,
+      );
+
+      // Auto-calculate stars from accuracy
+      final stars = event.accuracy >= 0.9 ? 3 : (event.accuracy >= 0.7 ? 2 : 1);
+
+      // Update local completed set + stars
+      final newCompletedIds = {...state.completedLessonIds, event.lessonId};
+      final newStars = {...state.lessonStars, event.lessonId: stars};
+      emit(state.copyWith(
+        completedLessonIds: newCompletedIds,
+        lessonStars: newStars,
+      ));
+
+      // Save stars to Firestore
+      add(SaveLessonStars(
+        lessonId: event.lessonId,
+        stars: stars,
+        languageCode: event.languageCode,
+      ));
+
+      // Refresh progress and streak
+      add(LoadLanguageProgress(languageCode: event.languageCode));
+      add(const LoadLearningStreak());
+    } catch (_) {
+      // Silently fail — completion recorded locally even if Firestore fails
+      final stars = event.accuracy >= 0.9 ? 3 : (event.accuracy >= 0.7 ? 2 : 1);
+      final newCompletedIds = {...state.completedLessonIds, event.lessonId};
+      final newStars = {...state.lessonStars, event.lessonId: stars};
+      emit(state.copyWith(
+        completedLessonIds: newCompletedIds,
+        lessonStars: newStars,
+      ));
+    }
+  }
+
+  Future<void> _onLoadLearningPathProgress(
+    LoadLearningPathProgress event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    emit(state.copyWith(isPathProgressLoading: true));
+    try {
+      final result = await repository.getCompletedLessonIds(
+        languageCode: event.languageCode,
+      );
+
+      // Load stars from Firestore
+      Map<String, int> stars = {};
+      try {
+        final userId = FirebaseAuth.instance.currentUser?.uid;
+        if (userId != null) {
+          final starsDoc = await FirebaseFirestore.instance
+              .collection('users')
+              .doc(userId)
+              .collection('learning_stars')
+              .doc(event.languageCode)
+              .get();
+          if (starsDoc.exists) {
+            final data = starsDoc.data() ?? {};
+            stars = data.map((k, v) => MapEntry(k, (v as num).toInt()));
+          }
+        }
+      } catch (_) {
+        // Stars loading is non-critical
+      }
+
+      result.fold(
+        (failure) => emit(state.copyWith(isPathProgressLoading: false)),
+        (completedIds) => emit(state.copyWith(
+          completedLessonIds: completedIds.toSet(),
+          isPathProgressLoading: false,
+          lessonStars: stars.isNotEmpty ? stars : state.lessonStars,
+        )),
+      );
+    } catch (_) {
+      emit(state.copyWith(isPathProgressLoading: false));
+    }
+  }
+
+  // ==================== Star Rating Handlers ====================
+
+  Future<void> _onSaveLessonStars(
+    SaveLessonStars event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    // Update local state
+    final newStars = {...state.lessonStars, event.lessonId: event.stars};
+    emit(state.copyWith(lessonStars: newStars));
+
+    // Persist to Firestore
+    try {
+      final userId = FirebaseAuth.instance.currentUser?.uid;
+      if (userId != null) {
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(userId)
+            .collection('learning_stars')
+            .doc(event.languageCode)
+            .set(
+          {event.lessonId: event.stars},
+          SetOptions(merge: true),
+        );
+      }
+    } catch (_) {
+      // Non-critical — stars saved locally
+    }
+  }
+
+  // ==================== Lesson Questions (Flat Firestore) ====================
+
+  Future<void> _onLoadLessonQuestions(
+    LoadLessonQuestions event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    if (questionDatasource == null) return;
+
+    emit(state.copyWith(isQuestionsLoading: true));
+
+    try {
+      final questions = await questionDatasource!.getQuestions(
+        langSource: event.langSource,
+        langTarget: event.langTarget,
+        unit: event.unit,
+        lesson: event.lesson,
+      );
+
+      emit(state.copyWith(
+        currentQuestions: questions,
+        isQuestionsLoading: false,
+      ));
+    } catch (e) {
+      emit(state.copyWith(isQuestionsLoading: false));
+    }
+  }
+
+  // ==================== Constellation (Dynamic Galaxy Map) ====================
+
+  Future<void> _onLoadConstellation(
+    LoadConstellation event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    if (constellationDatasource == null) return;
+
+    emit(state.copyWith(isConstellationLoading: true));
+
+    try {
+      final nodes = await constellationDatasource!.getConstellation(
+        langSource: event.langSource,
+        langTarget: event.langTarget,
+      );
+
+      emit(state.copyWith(
+        constellationNodes: nodes,
+        isConstellationLoading: false,
+      ));
+    } catch (e) {
+      emit(state.copyWith(isConstellationLoading: false));
+    }
+  }
+
+  Future<void> _onInvalidateAndReload(
+    InvalidateAndReloadConstellation event,
+    Emitter<LanguageLearningState> emit,
+  ) async {
+    if (constellationDatasource == null) return;
+
+    // Clear cache for the old language pair
+    await constellationDatasource!.invalidateCache(
+      event.langSource,
+      event.langTarget,
+    );
+
+    // Re-fetch fresh data
+    emit(state.copyWith(isConstellationLoading: true));
+
+    try {
+      final nodes = await constellationDatasource!.getConstellation(
+        langSource: event.langSource,
+        langTarget: event.langTarget,
+      );
+
+      emit(state.copyWith(
+        constellationNodes: nodes,
+        isConstellationLoading: false,
+      ));
+    } catch (e) {
+      emit(state.copyWith(isConstellationLoading: false));
     }
   }
 }

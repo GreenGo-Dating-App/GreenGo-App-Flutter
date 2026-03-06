@@ -58,6 +58,11 @@ enum PhraseCategory {
   romantic,
   casual,
   idioms,
+  business,
+  emergency,
+  academic,
+  slang,
+  foodDining,
 }
 
 extension PhraseCategoryExtension on PhraseCategory {
@@ -83,6 +88,16 @@ extension PhraseCategoryExtension on PhraseCategory {
         return 'Casual Chat';
       case PhraseCategory.idioms:
         return 'Idioms & Slang';
+      case PhraseCategory.business:
+        return 'Business';
+      case PhraseCategory.emergency:
+        return 'Emergency';
+      case PhraseCategory.academic:
+        return 'Academic';
+      case PhraseCategory.slang:
+        return 'Slang & Modern';
+      case PhraseCategory.foodDining:
+        return 'Food & Dining';
     }
   }
 
@@ -108,6 +123,16 @@ extension PhraseCategoryExtension on PhraseCategory {
         return '🗣️';
       case PhraseCategory.idioms:
         return '🎭';
+      case PhraseCategory.business:
+        return '💼';
+      case PhraseCategory.emergency:
+        return '🚨';
+      case PhraseCategory.academic:
+        return '🎓';
+      case PhraseCategory.slang:
+        return '🤙';
+      case PhraseCategory.foodDining:
+        return '🍽️';
     }
   }
 }

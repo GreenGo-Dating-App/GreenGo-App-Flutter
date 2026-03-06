@@ -9,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/location_refresh_service.dart';
 import '../../domain/entities/discovery_card.dart';
@@ -2001,49 +2002,25 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Tier badge (top right) — only for silver, gold, platinum (not free/base/test)
-            if (profile.membershipTier != MembershipTier.test &&
-                profile.membershipTier != MembershipTier.free &&
+            // Origin flag badge (top right)
+            if (profile.primaryOrigin != null &&
                 widget.actionOverlay != 'matched')
               Positioned(
                 top: 4,
                 right: 4,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: switch (profile.membershipTier) {
-                        MembershipTier.silver => [const Color(0xFFC0C0C0), const Color(0xFF8E8E8E)],
-                        MembershipTier.gold => [const Color(0xFFFFD700), const Color(0xFFDAA520)],
-                        MembershipTier.platinum => [AppColors.platinumBlue, AppColors.platinumBlueDark],
-                        _ => [Colors.grey, Colors.grey],
-                      },
-                    ),
-                    borderRadius: BorderRadius.circular(6),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.4),
-                        blurRadius: 3,
-                        offset: const Offset(0, 1),
-                      ),
-                    ],
-                  ),
-                  child: Icon(
-                    Icons.workspace_premium,
-                    size: 12,
-                    color: profile.membershipTier == MembershipTier.gold
-                        ? const Color(0xFF5D4200)
-                        : Colors.white,
-                  ),
+                child: CountryFlagBadge(
+                  primary: profile.primaryOrigin,
+                  secondary: profile.secondaryOrigin,
+                  compact: true,
+                  size: 20,
                 ),
               ),
 
-            // Traveler badge (top right, below tier badge if present)
+            // Traveler badge (top right, below flag badge if present)
             if (profile.isTravelerActive && widget.actionOverlay != 'matched')
               Positioned(
-                top: profile.membershipTier != MembershipTier.free &&
-                     profile.membershipTier != MembershipTier.test &&
-                     widget.actionOverlay != 'matched' ? 24 : 4,
+                top: profile.primaryOrigin != null &&
+                     widget.actionOverlay != 'matched' ? 28 : 4,
                 right: 4,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
@@ -2078,14 +2055,12 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Boost badge (top right, stacked below tier & traveler badges)
+            // Boost badge (top right, stacked below flag & traveler badges)
             if (isBoosted && widget.actionOverlay != 'matched')
               Positioned(
                 top: () {
                   double offset = 4.0;
-                  final hasTier = profile.membershipTier != MembershipTier.free &&
-                      profile.membershipTier != MembershipTier.test;
-                  if (hasTier) offset += 20.0;
+                  if (profile.primaryOrigin != null) offset += 24.0;
                   if (profile.isTravelerActive) offset += 20.0;
                   return offset;
                 }(),

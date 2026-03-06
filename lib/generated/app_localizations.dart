@@ -506,7 +506,7 @@ abstract class AppLocalizations {
   /// No description provided for @discover.
   ///
   /// In en, this message translates to:
-  /// **'Discover'**
+  /// **'Exchange'**
   String get discover;
 
   /// No description provided for @matches.
@@ -4768,6 +4768,894 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'+ taxes'**
   String get plusTaxes;
+
+  /// No description provided for @greengoLearn.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Learn'**
+  String get greengoLearn;
+
+  /// No description provided for @greengoPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Play'**
+  String get greengoPlay;
+
+  /// No description provided for @totalXpLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Total XP'**
+  String get totalXpLabel;
+
+  /// No description provided for @levelLabelN.
+  ///
+  /// In en, this message translates to:
+  /// **'Level {level}'**
+  String levelLabelN(String level);
+
+  /// No description provided for @xpProgressLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} / {max} XP'**
+  String xpProgressLabel(String current, String max);
+
+  /// No description provided for @nextLevelXp.
+  ///
+  /// In en, this message translates to:
+  /// **'Next level in {xp} XP'**
+  String nextLevelXp(String xp);
+
+  /// No description provided for @yourLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Languages'**
+  String get yourLanguages;
+
+  /// No description provided for @startLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Learning'**
+  String get startLearning;
+
+  /// No description provided for @dayStreakCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} day streak'**
+  String dayStreakCount(String count);
+
+  /// No description provided for @streakActiveToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Active today'**
+  String get streakActiveToday;
+
+  /// No description provided for @streakInactive.
+  ///
+  /// In en, this message translates to:
+  /// **'Start your streak!'**
+  String get streakInactive;
+
+  /// No description provided for @exploreLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore Languages'**
+  String get exploreLanguages;
+
+  /// No description provided for @dailyChallengesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Challenges'**
+  String get dailyChallengesTitle;
+
+  /// No description provided for @weeklyChallengesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly Challenges'**
+  String get weeklyChallengesTitle;
+
+  /// No description provided for @viewAllChallenges.
+  ///
+  /// In en, this message translates to:
+  /// **'View All Challenges'**
+  String get viewAllChallenges;
+
+  /// No description provided for @languagePacksBtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Packs'**
+  String get languagePacksBtn;
+
+  /// No description provided for @viewAllLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get viewAllLabel;
+
+  /// No description provided for @learningPathTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Path'**
+  String get learningPathTitle;
+
+  /// No description provided for @unitLabelN.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit {number}'**
+  String unitLabelN(String number);
+
+  /// No description provided for @lessonLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesson'**
+  String get lessonLabel;
+
+  /// No description provided for @quizCheckpointLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get quizCheckpointLabel;
+
+  /// No description provided for @flashcardReviewLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcards'**
+  String get flashcardReviewLabel;
+
+  /// No description provided for @aiCoachLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'AI Coach'**
+  String get aiCoachLabel;
+
+  /// No description provided for @nodeLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Locked'**
+  String get nodeLocked;
+
+  /// No description provided for @nodeAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get nodeAvailable;
+
+  /// No description provided for @nodeInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In Progress'**
+  String get nodeInProgress;
+
+  /// No description provided for @nodeCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get nodeCompleted;
+
+  /// No description provided for @xpRewardLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'+{xp} XP'**
+  String xpRewardLabel(String xp);
+
+  /// No description provided for @progressNofM.
+  ///
+  /// In en, this message translates to:
+  /// **'{n}/{m}'**
+  String progressNofM(String n, String m);
+
+  /// No description provided for @startLessonBtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Lesson'**
+  String get startLessonBtn;
+
+  /// No description provided for @continueLearningBtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueLearningBtn;
+
+  /// No description provided for @packFocusMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Pack: {packName}'**
+  String packFocusMode(String packName);
+
+  /// No description provided for @achievementsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievements'**
+  String get achievementsTitle;
+
+  /// No description provided for @categoryTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get categoryTranslation;
+
+  /// No description provided for @categoryLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning'**
+  String get categoryLearning;
+
+  /// No description provided for @categoryMultilingual.
+  ///
+  /// In en, this message translates to:
+  /// **'Multilingual'**
+  String get categoryMultilingual;
+
+  /// No description provided for @categoryQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get categoryQuiz;
+
+  /// No description provided for @categoryStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Streak'**
+  String get categoryStreak;
+
+  /// No description provided for @categoryFlashcard.
+  ///
+  /// In en, this message translates to:
+  /// **'Flashcard'**
+  String get categoryFlashcard;
+
+  /// No description provided for @categorySocial.
+  ///
+  /// In en, this message translates to:
+  /// **'Social'**
+  String get categorySocial;
+
+  /// No description provided for @categorySeasonal.
+  ///
+  /// In en, this message translates to:
+  /// **'Seasonal'**
+  String get categorySeasonal;
+
+  /// No description provided for @badgeUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocked'**
+  String get badgeUnlocked;
+
+  /// No description provided for @badgeLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Locked'**
+  String get badgeLocked;
+
+  /// No description provided for @claimRewardBtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Claim'**
+  String get claimRewardBtn;
+
+  /// No description provided for @secretAchievement.
+  ///
+  /// In en, this message translates to:
+  /// **'Secret Achievement'**
+  String get secretAchievement;
+
+  /// No description provided for @achievementProgressLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{current}/{total}'**
+  String achievementProgressLabel(String current, String total);
+
+  /// No description provided for @leaderboardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get leaderboardTitle;
+
+  /// No description provided for @periodWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'This Week'**
+  String get periodWeekly;
+
+  /// No description provided for @periodMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'This Month'**
+  String get periodMonthly;
+
+  /// No description provided for @periodAllTime.
+  ///
+  /// In en, this message translates to:
+  /// **'All Time'**
+  String get periodAllTime;
+
+  /// No description provided for @typeXp.
+  ///
+  /// In en, this message translates to:
+  /// **'XP'**
+  String get typeXp;
+
+  /// No description provided for @typeStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Streak'**
+  String get typeStreak;
+
+  /// No description provided for @typeWordsLearned.
+  ///
+  /// In en, this message translates to:
+  /// **'Words Learned'**
+  String get typeWordsLearned;
+
+  /// No description provided for @typeQuizzes.
+  ///
+  /// In en, this message translates to:
+  /// **'Quizzes'**
+  String get typeQuizzes;
+
+  /// No description provided for @yourRankLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Rank'**
+  String get yourRankLabel;
+
+  /// No description provided for @noLeaderboardData.
+  ///
+  /// In en, this message translates to:
+  /// **'No leaderboard data yet'**
+  String get noLeaderboardData;
+
+  /// No description provided for @rankLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'#{rank}'**
+  String rankLabel(String rank);
+
+  /// No description provided for @languagePacksShopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Packs Shop'**
+  String get languagePacksShopTitle;
+
+  /// No description provided for @allLanguagesFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get allLanguagesFilter;
+
+  /// No description provided for @allCategoriesFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get allCategoriesFilter;
+
+  /// No description provided for @phrasesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} phrases'**
+  String phrasesCount(String count);
+
+  /// No description provided for @buyPackBtn.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy'**
+  String get buyPackBtn;
+
+  /// No description provided for @purchasedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchased'**
+  String get purchasedLabel;
+
+  /// No description provided for @greengoXpLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGoXP'**
+  String get greengoXpLabel;
+
+  /// No description provided for @xpAmountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} XP'**
+  String xpAmountLabel(String amount);
+
+  /// No description provided for @playersRange.
+  ///
+  /// In en, this message translates to:
+  /// **'{min}-{max} players'**
+  String playersRange(String min, String max);
+
+  /// No description provided for @playingCountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} playing'**
+  String playingCountLabel(String count);
+
+  /// No description provided for @waitingCountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} waiting'**
+  String waitingCountLabel(String count);
+
+  /// No description provided for @noActiveGamesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'No active games'**
+  String get noActiveGamesLabel;
+
+  /// No description provided for @tapToContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to continue'**
+  String get tapToContinue;
+
+  /// No description provided for @levelUpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'LEVEL UP!'**
+  String get levelUpTitle;
+
+  /// No description provided for @comingSoonLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming Soon'**
+  String get comingSoonLabel;
+
+  /// No description provided for @romanticCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Romantic'**
+  String get romanticCategory;
+
+  /// No description provided for @travelCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel'**
+  String get travelCategory;
+
+  /// No description provided for @flirtyCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Flirty'**
+  String get flirtyCategory;
+
+  /// No description provided for @businessCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get businessCategory;
+
+  /// No description provided for @emergencyCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency'**
+  String get emergencyCategory;
+
+  /// No description provided for @academicCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Academic'**
+  String get academicCategory;
+
+  /// No description provided for @slangCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Slang'**
+  String get slangCategory;
+
+  /// No description provided for @foodDiningCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Food & Dining'**
+  String get foodDiningCategory;
+
+  /// No description provided for @greetingsCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Greetings'**
+  String get greetingsCategory;
+
+  /// No description provided for @conversationCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation'**
+  String get conversationCategory;
+
+  /// No description provided for @idiomsCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Idioms'**
+  String get idiomsCategory;
+
+  /// No description provided for @casualCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Casual'**
+  String get casualCategory;
+
+  /// No description provided for @videoCallCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Call'**
+  String get videoCallCategory;
+
+  /// No description provided for @datePlanningCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Date Planning'**
+  String get datePlanningCategory;
+
+  /// No description provided for @complimentsCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Compliments'**
+  String get complimentsCategory;
+
+  /// No description provided for @culturalCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural'**
+  String get culturalCategory;
+
+  /// No description provided for @noLanguagesYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No languages yet. Start learning!'**
+  String get noLanguagesYet;
+
+  /// No description provided for @phrasesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'phrases'**
+  String get phrasesLabel;
+
+  /// No description provided for @standardTier.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get standardTier;
+
+  /// No description provided for @premiumTier.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium'**
+  String get premiumTier;
+
+  /// No description provided for @bundleTier.
+  ///
+  /// In en, this message translates to:
+  /// **'Bundle'**
+  String get bundleTier;
+
+  /// No description provided for @proLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'PRO'**
+  String get proLabel;
+
+  /// No description provided for @chooseGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a Game'**
+  String get chooseGame;
+
+  /// No description provided for @targetLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Target Language'**
+  String get targetLanguage;
+
+  /// No description provided for @difficultyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty'**
+  String get difficultyLabel;
+
+  /// No description provided for @quickPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick Play'**
+  String get quickPlay;
+
+  /// No description provided for @privateRoom.
+  ///
+  /// In en, this message translates to:
+  /// **'Private Room'**
+  String get privateRoom;
+
+  /// No description provided for @inviteFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite Friends'**
+  String get inviteFriends;
+
+  /// No description provided for @notEnoughCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough coins'**
+  String get notEnoughCoins;
+
+  /// No description provided for @inviteCodeCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite code copied!'**
+  String get inviteCodeCopied;
+
+  /// No description provided for @waitingForPlayers.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for players...'**
+  String get waitingForPlayers;
+
+  /// No description provided for @allPlayersReady.
+  ///
+  /// In en, this message translates to:
+  /// **'All players ready!'**
+  String get allPlayersReady;
+
+  /// No description provided for @startGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Game'**
+  String get startGame;
+
+  /// No description provided for @readyButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready'**
+  String get readyButton;
+
+  /// No description provided for @yourTurn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Turn!'**
+  String get yourTurn;
+
+  /// No description provided for @roundXofY.
+  ///
+  /// In en, this message translates to:
+  /// **'Round {current}/{total}'**
+  String roundXofY(String current, String total);
+
+  /// No description provided for @timeRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'Time remaining'**
+  String get timeRemaining;
+
+  /// No description provided for @submitAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Answer'**
+  String get submitAnswer;
+
+  /// No description provided for @correctAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct!'**
+  String get correctAnswer;
+
+  /// No description provided for @incorrectAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get incorrectAnswer;
+
+  /// No description provided for @wordAlreadyUsed.
+  ///
+  /// In en, this message translates to:
+  /// **'Word already used'**
+  String get wordAlreadyUsed;
+
+  /// No description provided for @invalidWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid word'**
+  String get invalidWord;
+
+  /// No description provided for @gameOver.
+  ///
+  /// In en, this message translates to:
+  /// **'Game Over'**
+  String get gameOver;
+
+  /// No description provided for @youWin.
+  ///
+  /// In en, this message translates to:
+  /// **'You Win!'**
+  String get youWin;
+
+  /// No description provided for @youLose.
+  ///
+  /// In en, this message translates to:
+  /// **'You Lose'**
+  String get youLose;
+
+  /// No description provided for @xpEarned.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} XP earned'**
+  String xpEarned(String amount);
+
+  /// No description provided for @playAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Again'**
+  String get playAgain;
+
+  /// No description provided for @backToLobby.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Lobby'**
+  String get backToLobby;
+
+  /// No description provided for @typeWordStartingWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a word starting with \"{letter}\"'**
+  String typeWordStartingWith(String letter);
+
+  /// No description provided for @wordReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Word reported'**
+  String get wordReported;
+
+  /// No description provided for @reportWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Report Word'**
+  String get reportWord;
+
+  /// No description provided for @abandonGame.
+  ///
+  /// In en, this message translates to:
+  /// **'Abandon Game'**
+  String get abandonGame;
+
+  /// No description provided for @rounds.
+  ///
+  /// In en, this message translates to:
+  /// **'Rounds'**
+  String get rounds;
+
+  /// No description provided for @usedWords.
+  ///
+  /// In en, this message translates to:
+  /// **'Used Words'**
+  String get usedWords;
+
+  /// No description provided for @translateWord.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate this word'**
+  String get translateWord;
+
+  /// No description provided for @progressLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress'**
+  String get progressLabel;
+
+  /// No description provided for @firstTo30Wins.
+  ///
+  /// In en, this message translates to:
+  /// **'First to 30 wins!'**
+  String get firstTo30Wins;
+
+  /// No description provided for @chooseCorrectAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the correct answer'**
+  String get chooseCorrectAnswer;
+
+  /// No description provided for @vsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'VS'**
+  String get vsLabel;
+
+  /// No description provided for @fillCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill all categories'**
+  String get fillCategories;
+
+  /// No description provided for @categoryName.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get categoryName;
+
+  /// No description provided for @roundTimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Round Timer'**
+  String get roundTimer;
+
+  /// No description provided for @loadingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading...'**
+  String get loadingLabel;
+
+  /// No description provided for @connectionError.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection error'**
+  String get connectionError;
+
+  /// No description provided for @timeoutError.
+  ///
+  /// In en, this message translates to:
+  /// **'Request timed out'**
+  String get timeoutError;
+
+  /// No description provided for @confirmLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirmLabel;
+
+  /// No description provided for @cancelLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancelLabel;
+
+  /// No description provided for @origin.
+  ///
+  /// In en, this message translates to:
+  /// **'Origin'**
+  String get origin;
+
+  /// No description provided for @primaryOrigin.
+  ///
+  /// In en, this message translates to:
+  /// **'Primary Origin'**
+  String get primaryOrigin;
+
+  /// No description provided for @secondaryOrigin.
+  ///
+  /// In en, this message translates to:
+  /// **'Secondary Origin (optional)'**
+  String get secondaryOrigin;
+
+  /// No description provided for @searchCountries.
+  ///
+  /// In en, this message translates to:
+  /// **'Search countries...'**
+  String get searchCountries;
+
+  /// No description provided for @notSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get notSet;
+
+  /// No description provided for @tourLearnTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn Languages'**
+  String get tourLearnTitle;
+
+  /// No description provided for @tourLearnDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Study vocabulary, grammar, and conversation skills'**
+  String get tourLearnDescription;
+
+  /// No description provided for @tourPlayTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Games'**
+  String get tourPlayTitle;
+
+  /// No description provided for @tourPlayDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Challenge others in fun language games'**
+  String get tourPlayDescription;
 }
 
 class _AppLocalizationsDelegate

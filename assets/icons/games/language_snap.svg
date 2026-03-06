@@ -1,0 +1,152 @@
+<!-- Language Snap Icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="lsCard1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="lsCard2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <radialGradient id="lsSnap" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FEF3C7"/>
+      <stop offset="60%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lsCheck" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="cardShadow1">
+      <feDropShadow dx="-3" dy="4" stdDeviation="8" flood-color="#E11D48" flood-opacity="0.3"/>
+    </filter>
+    <filter id="cardShadow2">
+      <feDropShadow dx="3" dy="4" stdDeviation="8" flood-color="#2563EB" flood-opacity="0.3"/>
+    </filter>
+    <filter id="snapGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left card -->
+  <g filter="url(#cardShadow1)">
+    <animateTransform attributeName="transform" type="translate" values="-100,0;0,0;0,0;0,0;0,0;-100,0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;1;1;1;0.4" dur="4s" repeatCount="indefinite"/>
+
+    <!-- Card body -->
+    <rect x="80" y="115" width="175" height="250" rx="20" fill="url(#lsCard1)"/>
+    <!-- Card inner border -->
+    <rect x="92" y="127" width="151" height="226" rx="14" fill="none" stroke="white" stroke-width="2" opacity="0.2"/>
+    <!-- Top shine -->
+    <rect x="92" y="127" width="151" height="30" rx="14" fill="white" opacity="0.1"/>
+
+    <!-- Paw/icon area -->
+    <circle cx="167" cy="200" r="35" fill="white" opacity="0.15"/>
+    <!-- Cat icon (simple) -->
+    <g transform="translate(167,195)" fill="white" opacity="0.9">
+      <!-- Cat head -->
+      <circle cx="0" cy="0" r="16"/>
+      <!-- Ears -->
+      <polygon points="-14,-8 -10,-22 -4,-10"/>
+      <polygon points="14,-8 10,-22 4,-10"/>
+      <!-- Eyes -->
+      <circle cx="-5" cy="-2" r="2.5" fill="#E11D48"/>
+      <circle cx="5" cy="-2" r="2.5" fill="#E11D48"/>
+      <!-- Nose -->
+      <polygon points="0,3 -2,6 2,6" fill="#E11D48"/>
+    </g>
+
+    <!-- Word -->
+    <text x="167" y="275" font-family="Arial,sans-serif" font-weight="900" font-size="38" fill="white" text-anchor="middle">Cat</text>
+
+    <!-- Language tag -->
+    <rect x="117" y="310" width="100" height="26" rx="13" fill="white" opacity="0.2"/>
+    <text x="167" y="328" font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="white" text-anchor="middle">English</text>
+  </g>
+
+  <!-- Right card -->
+  <g filter="url(#cardShadow2)">
+    <animateTransform attributeName="transform" type="translate" values="100,0;0,0;0,0;0,0;0,0;100,0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;1;1;1;0.4" dur="4s" repeatCount="indefinite"/>
+
+    <!-- Card body -->
+    <rect x="257" y="115" width="175" height="250" rx="20" fill="url(#lsCard2)"/>
+    <!-- Card inner border -->
+    <rect x="269" y="127" width="151" height="226" rx="14" fill="none" stroke="white" stroke-width="2" opacity="0.2"/>
+    <!-- Top shine -->
+    <rect x="269" y="127" width="151" height="30" rx="14" fill="white" opacity="0.1"/>
+
+    <!-- Cat icon area -->
+    <circle cx="345" cy="200" r="35" fill="white" opacity="0.15"/>
+    <!-- Cat icon -->
+    <g transform="translate(345,195)" fill="white" opacity="0.9">
+      <circle cx="0" cy="0" r="16"/>
+      <polygon points="-14,-8 -10,-22 -4,-10"/>
+      <polygon points="14,-8 10,-22 4,-10"/>
+      <circle cx="-5" cy="-2" r="2.5" fill="#2563EB"/>
+      <circle cx="5" cy="-2" r="2.5" fill="#2563EB"/>
+      <polygon points="0,3 -2,6 2,6" fill="#2563EB"/>
+    </g>
+
+    <!-- Word -->
+    <text x="345" y="275" font-family="Arial,sans-serif" font-weight="900" font-size="38" fill="white" text-anchor="middle">Gato</text>
+
+    <!-- Language tag -->
+    <rect x="293" y="310" width="104" height="26" rx="13" fill="white" opacity="0.2"/>
+    <text x="345" y="328" font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="white" text-anchor="middle">Espa&#241;ol</text>
+  </g>
+
+  <!-- SNAP flash effect -->
+  <g filter="url(#snapGlow)">
+    <circle cx="256" cy="240" r="30" fill="url(#lsSnap)" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0.3;0;0" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="10;10;55;80;10;10" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Snap burst lines -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;0;0" dur="4s" repeatCount="indefinite"/>
+    <!-- 8 directional rays -->
+    <line x1="256" y1="205" x2="256" y2="165" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <line x1="256" y1="275" x2="256" y2="315" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <line x1="221" y1="240" x2="181" y2="240" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <line x1="291" y1="240" x2="331" y2="240" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <line x1="231" y1="215" x2="205" y2="189" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <line x1="281" y1="215" x2="307" y2="189" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <line x1="231" y1="265" x2="205" y2="291" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <line x1="281" y1="265" x2="307" y2="291" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Match checkmark -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1;1;0" dur="4s" repeatCount="indefinite"/>
+    <circle cx="256" cy="240" r="34" fill="url(#lsCheck)">
+      <animate attributeName="r" values="20;20;20;34;34;20" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <polyline points="238,240 250,253 276,226" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- SNAP text -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;0" dur="4s" repeatCount="indefinite"/>
+    <text x="256" y="430" font-family="Arial,sans-serif" font-weight="900" font-size="40" fill="#1E293B" text-anchor="middle" letter-spacing="8">SNAP!</text>
+  </g>
+
+  <!-- Floating stars -->
+  <path d="M80 70 L84 83 L97 87 L84 91 L80 104 L76 91 L63 87 L76 83 Z" fill="#FBBF24">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M440 90 L443 100 L453 103 L443 106 L440 116 L437 106 L427 103 L437 100 Z" fill="#F472B6">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M430 390 L433 399 L442 402 L433 405 L430 414 L427 405 L418 402 L427 399 Z" fill="#60A5FA">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="2.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M75 400 L78 408 L86 411 L78 414 L75 422 L72 414 L64 411 L72 408 Z" fill="#34D399">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </path>
+</svg>

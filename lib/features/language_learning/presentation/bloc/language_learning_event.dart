@@ -405,3 +405,96 @@ class SetUserPreferredLanguages extends LanguageLearningEvent {
 class AutoSelectPreferredLanguage extends LanguageLearningEvent {
   const AutoSelectPreferredLanguage();
 }
+
+// ==================== Lesson Completion Events ====================
+
+class CompleteLessonEvent extends LanguageLearningEvent {
+  final String lessonId;
+  final String languageCode;
+  final int earnedXp;
+  final double accuracy;
+
+  const CompleteLessonEvent({
+    required this.lessonId,
+    required this.languageCode,
+    required this.earnedXp,
+    required this.accuracy,
+  });
+
+  @override
+  List<Object?> get props => [lessonId, languageCode, earnedXp, accuracy];
+}
+
+class LoadLearningPathProgress extends LanguageLearningEvent {
+  final String languageCode;
+
+  const LoadLearningPathProgress({required this.languageCode});
+
+  @override
+  List<Object?> get props => [languageCode];
+}
+
+// ==================== Star Rating Events ====================
+
+class SaveLessonStars extends LanguageLearningEvent {
+  final String lessonId;
+  final int stars;
+  final String languageCode;
+
+  const SaveLessonStars({
+    required this.lessonId,
+    required this.stars,
+    required this.languageCode,
+  });
+
+  @override
+  List<Object?> get props => [lessonId, stars, languageCode];
+}
+
+// ==================== Lesson Questions (Flat Firestore) ====================
+
+class LoadLessonQuestions extends LanguageLearningEvent {
+  final String langSource;
+  final String langTarget;
+  final int unit;
+  final int lesson;
+
+  const LoadLessonQuestions({
+    required this.langSource,
+    required this.langTarget,
+    required this.unit,
+    required this.lesson,
+  });
+
+  @override
+  List<Object?> get props => [langSource, langTarget, unit, lesson];
+}
+
+// ==================== Constellation (Dynamic Galaxy Map) ====================
+
+class LoadConstellation extends LanguageLearningEvent {
+  final String langSource;
+  final String langTarget;
+
+  const LoadConstellation({
+    required this.langSource,
+    required this.langTarget,
+  });
+
+  @override
+  List<Object?> get props => [langSource, langTarget];
+}
+
+/// Clears constellation cache for a language pair, then re-fetches.
+class InvalidateAndReloadConstellation extends LanguageLearningEvent {
+  final String langSource;
+  final String langTarget;
+
+  const InvalidateAndReloadConstellation({
+    required this.langSource,
+    required this.langTarget,
+  });
+
+  @override
+  List<Object?> get props => [langSource, langTarget];
+}

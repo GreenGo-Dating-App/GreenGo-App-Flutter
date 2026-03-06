@@ -47,6 +47,10 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   final List<double> _vocabScores = [];
   final List<double> _fluencyScores = [];
 
+  // Enhanced: tracking & suggested prompts
+  int _correctionCount = 0;
+  int _messageCount = 0;
+
   @override
   void initState() {
     super.initState();
@@ -143,6 +147,12 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
     // Notify BLoC
     context.read<LanguageLearningBloc>().add(SendCoachMessage(text));
 
+    // Track corrections and new words
+    _messageCount++;
+    if (response.correction != null && response.correction!.isNotEmpty) {
+      _correctionCount++;
+    }
+
     setState(() {
       _messages.add(response);
       _isLoading = false;
@@ -210,6 +220,13 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 : _buildMessagesList(),
           ),
 
+          // Suggested prompts (show when no messages yet or after AI response)
+          if (!_isSessionEnded &&
+              _selectedScenario != null &&
+              !_isLoading &&
+              (_messages.isEmpty || (_messages.isNotEmpty && !_messages.last.isUserMessage)))
+            _buildSuggestedPrompts(),
+
           // Input area
           if (!_isSessionEnded) _buildInputArea(),
         ],
@@ -253,6 +270,32 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
         ],
       ),
       actions: [
+        // Corrections badge
+        if (_correctionCount > 0)
+          Container(
+            margin: const EdgeInsets.only(right: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            decoration: BoxDecoration(
+              color: Colors.teal.withValues(alpha: 0.2),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: Colors.teal.withValues(alpha: 0.4)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.edit, color: Colors.teal, size: 14),
+                const SizedBox(width: 4),
+                Text(
+                  '$_correctionCount',
+                  style: const TextStyle(
+                    color: Colors.teal,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
         if (_selectedScenario != null && !_isSessionEnded)
           TextButton(
             onPressed: _endSession,
@@ -498,27 +541,170 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
     );
   }
 
+  Widget _buildSuggestedPrompts() {
+    final suggestions = _getSuggestedPrompts();
+    if (suggestions.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 6,
+        children: suggestions.map((suggestion) {
+          return GestureDetector(
+            onTap: () => _onSuggestionTapped(suggestion),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              decoration: BoxDecoration(
+                color: AppColors.richGold.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: AppColors.richGold.withValues(alpha: 0.3),
+                ),
+              ),
+              child: Text(
+                suggestion,
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 13,
+                ),
+              ),
+            ),
+          );
+        }).toList(),
+      ),
+    );
+  }
+
+  List<String> _getSuggestedPrompts() {
+    if (_selectedScenario == null) return [];
+
+    // Get last AI message suggestions if available
+    final lastAiMsg = _messages.lastWhere(
+      (m) => !m.isUserMessage,
+      orElse: () => CoachMessage(
+        id: '',
+        content: '',
+        isUserMessage: false,
+        timestamp: DateTime.now(),
+      ),
+    );
+    if (lastAiMsg.suggestedResponses != null &&
+        lastAiMsg.suggestedResponses!.isNotEmpty) {
+      return lastAiMsg.suggestedResponses!.take(3).toList();
+    }
+
+    // Fallback scenario-based prompts
+    switch (_selectedScenario!) {
+      case CoachScenario.firstDate:
+        return ['Tell me about yourself', 'What do you do?', 'This place is nice'];
+      case CoachScenario.gettingToKnow:
+        return ['Where are you from?', 'What are your hobbies?', 'Do you like traveling?'];
+      case CoachScenario.videoCallPrep:
+        return ['Can you hear me?', 'You look great!', 'How was your day?'];
+      case CoachScenario.askingOut:
+        return ['Would you like to meet?', 'Are you free this weekend?', 'I know a great place'];
+      case CoachScenario.complimenting:
+        return ['I love your smile', 'You have great taste', 'That suits you well'];
+      case CoachScenario.discussingInterests:
+        return ['What do you do for fun?', 'Have you seen any good movies?', 'Do you play sports?'];
+      case CoachScenario.travelPlanning:
+        return ['Where should we go?', 'Have you been to...?', 'I love the beach'];
+      case CoachScenario.casualChat:
+        return ['How are you today?', 'What have you been up to?', 'Nice weather today'];
+    }
+  }
+
   Widget _buildScoreView() {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
-      child: CoachScoreCard(
-        score: _sessionScore!,
-        xpEarned: 25,
-        messageCount:
-            _messages.where((m) => m.isUserMessage).length,
-        onPracticeAgain: () {
-          setState(() {
-            _messages.clear();
-            _isSessionEnded = false;
-            _sessionScore = null;
-            _selectedScenario = null;
-            _grammarScores.clear();
-            _vocabScores.clear();
-            _fluencyScores.clear();
-          });
-          _showScenarioSelector();
-        },
-        onDone: () => Navigator.pop(context),
+      child: Column(
+        children: [
+          CoachScoreCard(
+            score: _sessionScore!,
+            xpEarned: 25,
+            messageCount:
+                _messages.where((m) => m.isUserMessage).length,
+            onPracticeAgain: () {
+              setState(() {
+                _messages.clear();
+                _isSessionEnded = false;
+                _sessionScore = null;
+                _selectedScenario = null;
+                _grammarScores.clear();
+                _vocabScores.clear();
+                _fluencyScores.clear();
+                _correctionCount = 0;
+                _messageCount = 0;
+              });
+              _showScenarioSelector();
+            },
+            onDone: () => Navigator.pop(context),
+          ),
+          // Session summary
+          if (_correctionCount > 0 || _messageCount > 0) ...[
+            const SizedBox(height: 16),
+            _buildSessionSummaryCard(),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSessionSummaryCard() {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: AppColors.divider.withValues(alpha: 0.3),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Session Summary',
+            style: TextStyle(
+              color: AppColors.textPrimary,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 12),
+          _summaryRow(Icons.chat, 'Messages sent', '$_messageCount'),
+          _summaryRow(Icons.edit, 'Corrections', '$_correctionCount'),
+        ],
+      ),
+    );
+  }
+
+  Widget _summaryRow(IconData icon, String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        children: [
+          Icon(icon, color: AppColors.textTertiary, size: 16),
+          const SizedBox(width: 8),
+          Text(
+            label,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 13,
+            ),
+          ),
+          const Spacer(),
+          Text(
+            value,
+            style: const TextStyle(
+              color: AppColors.textPrimary,
+              fontSize: 13,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -78,6 +78,10 @@ class Profile extends Equatable {
   // Travel preference
   final String? travelPreference; // 'learn_travel', 'help_travelers', 'both'
 
+  // Origin fields (ISO 3166-1 alpha-2 country codes)
+  final String? primaryOrigin;
+  final String? secondaryOrigin;
+
   // Local guide fields
   final bool isLocalGuide;
   final String? localGuideCity;
@@ -143,6 +147,8 @@ class Profile extends Equatable {
     this.preferredLanguages = const [],
     this.nativeLanguage,
     this.travelPreference,
+    this.primaryOrigin,
+    this.secondaryOrigin,
     this.isLocalGuide = false,
     this.localGuideCity,
     this.videoProfileUrl,
@@ -259,6 +265,8 @@ class Profile extends Equatable {
         preferredLanguages,
         nativeLanguage,
         travelPreference,
+        primaryOrigin,
+        secondaryOrigin,
         isLocalGuide,
         localGuideCity,
         videoProfileUrl,
@@ -319,6 +327,8 @@ class Profile extends Equatable {
     List<String>? preferredLanguages,
     String? nativeLanguage,
     String? travelPreference,
+    String? primaryOrigin,
+    String? secondaryOrigin,
     bool? isLocalGuide,
     String? localGuideCity,
     String? videoProfileUrl,
@@ -377,6 +387,8 @@ class Profile extends Equatable {
       preferredLanguages: preferredLanguages ?? this.preferredLanguages,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       travelPreference: travelPreference ?? this.travelPreference,
+      primaryOrigin: primaryOrigin ?? this.primaryOrigin,
+      secondaryOrigin: secondaryOrigin ?? this.secondaryOrigin,
       isLocalGuide: isLocalGuide ?? this.isLocalGuide,
       localGuideCity: localGuideCity ?? this.localGuideCity,
       videoProfileUrl: videoProfileUrl ?? this.videoProfileUrl,

@@ -158,6 +158,18 @@ class SubscriptionRepositoryImpl implements SubscriptionRepository {
   }
 
   @override
+  Future<Either<Failure, void>> cancelSubscription({
+    required String userId,
+    required String reason,
+  }) async {
+    try {
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, void>> handleFailedPayment({
     required String subscriptionId,
   }) async {

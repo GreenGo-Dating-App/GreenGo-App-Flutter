@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +78,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   void initState() {
     super.initState();
     _currentTier = widget.currentTier ?? SubscriptionTier.basic;
-    _tabController = TabController(length: 3, vsync: this, initialIndex: widget.initialTab.clamp(0, 2));
+    _tabController = TabController(length: 2, vsync: this, initialIndex: widget.initialTab.clamp(0, 1));
 
     try {
       context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
@@ -552,7 +551,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         children: [
           _safeBuild(_buildBuyCoinsTab, 'Coins'),
           _safeBuild(_buildMembershipTab, 'Membership'),
-          _safeBuild(_buildVideoCoinsTab, 'Video'),
         ],
       ),
       ),
@@ -610,16 +608,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 const Text('👑', style: TextStyle(fontSize: 14)),
                 const SizedBox(width: 4),
                 Text(AppLocalizations.of(context)!.shopTabMembership),
-              ],
-            ),
-          ),
-          Tab(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text('🎬', style: TextStyle(fontSize: 14)),
-                const SizedBox(width: 4),
-                Text(AppLocalizations.of(context)!.shopTabVideo),
               ],
             ),
           ),
@@ -1603,140 +1591,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
-  Widget _buildVideoCoinsTab() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Video icon with glow
-          Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  AppColors.richGold.withValues(alpha: 0.3),
-                  AppColors.richGold.withValues(alpha: 0.1),
-                ],
-              ),
-              border: Border.all(
-                color: AppColors.richGold.withValues(alpha: 0.5),
-                width: 2,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.richGold.withValues(alpha: 0.3),
-                  blurRadius: 30,
-                  spreadRadius: 5,
-                ),
-              ],
-            ),
-            child: const Center(
-              child: Text(
-                '🎬',
-                style: TextStyle(fontSize: 50),
-              ),
-            ),
-          ),
-          const SizedBox(height: 32),
-
-          // Coming Soon text with gradient
-          ShaderMask(
-            shaderCallback: (bounds) => const LinearGradient(
-              colors: [Color(0xFFFFD700), AppColors.richGold],
-            ).createShader(bounds),
-            child: Text(
-              AppLocalizations.of(context)!.shopComingSoon,
-              style: const TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-
-          // Description
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
-            child: Text(
-              AppLocalizations.of(context)!.shopVideoCoinsDescription,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-                color: Colors.white.withValues(alpha: 0.7),
-                height: 1.5,
-              ),
-            ),
-          ),
-          const SizedBox(height: 40),
-
-          // Glass notification card
-          ClipRRect(
-            borderRadius: BorderRadius.circular(16),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-              child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 32),
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.3),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: AppColors.richGold.withValues(alpha: 0.3),
-                  ),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: AppColors.richGold.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: const Icon(
-                        Icons.notifications_active,
-                        color: AppColors.richGold,
-                        size: 24,
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            AppLocalizations.of(context)!.shopGetNotified,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            AppLocalizations.of(context)!.shopNotifyMessage,
-                            style: const TextStyle(
-                              color: Colors.white70,
-                              fontSize: 12,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   Widget _buildPackageList(
     List<CoinPackage> packages,

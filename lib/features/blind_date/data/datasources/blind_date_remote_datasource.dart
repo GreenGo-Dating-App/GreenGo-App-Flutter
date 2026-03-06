@@ -77,7 +77,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
       'userId': userId,
     });
 
-    return BlindDateProfileModel.fromJson(
+    return BlindDateProfileModel.fromMap(
       result.data['profile'] as Map<String, dynamic>,
     );
   }
@@ -91,7 +91,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
 
     if (result.data['profile'] == null) return null;
 
-    return BlindDateProfileModel.fromJson(
+    return BlindDateProfileModel.fromMap(
       result.data['profile'] as Map<String, dynamic>,
     );
   }
@@ -117,7 +117,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
 
     final candidates = result.data['candidates'] as List<dynamic>;
     return candidates
-        .map((c) => BlindProfileViewModel.fromJson(c as Map<String, dynamic>))
+        .map((c) => BlindProfileViewModel.fromMap(c as Map<String, dynamic>))
         .toList();
   }
 
@@ -137,11 +137,11 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
       case 'matched':
         return BlindLikeResult.matched;
       case 'pending':
-        return BlindLikeResult.pending;
+        return BlindLikeResult.liked;
       case 'already_actioned':
-        return BlindLikeResult.alreadyActioned;
+        return BlindLikeResult.passed;
       default:
-        return BlindLikeResult.pending;
+        return BlindLikeResult.liked;
     }
   }
 
@@ -166,7 +166,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
 
     final matches = result.data['matches'] as List<dynamic>;
     return matches
-        .map((m) => BlindMatchModel.fromJson(m as Map<String, dynamic>))
+        .map((m) => BlindMatchModel.fromMap(m as Map<String, dynamic>))
         .toList();
   }
 
@@ -193,7 +193,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
       'matchId': matchId,
     });
 
-    return BlindMatchModel.fromJson(
+    return BlindMatchModel.fromMap(
       result.data['match'] as Map<String, dynamic>,
     );
   }
@@ -219,7 +219,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
       'messageCount': newCount,
     });
 
-    return BlindMatchModel.fromJson(
+    return BlindMatchModel.fromMap(
       result.data['match'] as Map<String, dynamic>,
     );
   }
@@ -235,7 +235,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
       'userId': userId,
     });
 
-    return BlindProfileViewModel.fromJson(
+    return BlindProfileViewModel.fromMap(
       result.data['profile'] as Map<String, dynamic>,
     );
   }

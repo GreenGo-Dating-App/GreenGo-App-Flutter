@@ -66,7 +66,7 @@
   "finish": "Finish",
   "step": "Step",
   "stepOf": "of",
-  "discover": "Discover",
+  "discover": "Exchange",
   "matches": "Matches",
   "likes": "Likes",
   "superLikes": "Super Likes",
@@ -1237,5 +1237,229 @@
   "twoFaToggleSubtitle": "Require email code verification on every login",
   "twoFaEnabled": "2FA authentication enabled",
   "twoFaDisabled": "2FA authentication disabled",
-  "plusTaxes": "+ taxes"
+  "plusTaxes": "+ taxes",
+
+  "greengoLearn": "GreenGo Learn",
+  "greengoPlay": "GreenGo Play",
+
+  "totalXpLabel": "Total XP",
+  "levelLabelN": "Level {level}",
+  "@levelLabelN": { "placeholders": { "level": { "type": "String" } } },
+  "xpProgressLabel": "{current} / {max} XP",
+  "@xpProgressLabel": { "placeholders": { "current": { "type": "String" }, "max": { "type": "String" } } },
+  "nextLevelXp": "Next level in {xp} XP",
+  "@nextLevelXp": { "placeholders": { "xp": { "type": "String" } } },
+
+  "yourLanguages": "Your Languages",
+  "startLearning": "Start Learning",
+
+  "dayStreakCount": "{count} day streak",
+  "@dayStreakCount": { "placeholders": { "count": { "type": "String" } } },
+  "streakActiveToday": "Active today",
+  "streakInactive": "Start your streak!",
+
+  "exploreLanguages": "Explore Languages",
+
+  "dailyChallengesTitle": "Daily Challenges",
+  "weeklyChallengesTitle": "Weekly Challenges",
+  "viewAllChallenges": "View All Challenges",
+
+  "languagePacksBtn": "Language Packs",
+  "viewAllLabel": "View All",
+
+  "learningPathTitle": "Learning Path",
+  "unitLabelN": "Unit {number}",
+  "@unitLabelN": { "placeholders": { "number": { "type": "String" } } },
+  "lessonLabel": "Lesson",
+  "quizCheckpointLabel": "Quiz",
+  "flashcardReviewLabel": "Flashcards",
+  "aiCoachLabel": "AI Coach",
+  "nodeLocked": "Locked",
+  "nodeAvailable": "Available",
+  "nodeInProgress": "In Progress",
+  "nodeCompleted": "Completed",
+  "xpRewardLabel": "+{xp} XP",
+  "@xpRewardLabel": { "placeholders": { "xp": { "type": "String" } } },
+  "progressNofM": "{n}/{m}",
+  "@progressNofM": { "placeholders": { "n": { "type": "String" }, "m": { "type": "String" } } },
+  "startLessonBtn": "Start Lesson",
+  "continueLearningBtn": "Continue",
+  "packFocusMode": "Pack: {packName}",
+  "@packFocusMode": { "placeholders": { "packName": { "type": "String" } } },
+
+  "achievementsTitle": "Achievements",
+  "categoryTranslation": "Translation",
+  "categoryLearning": "Learning",
+  "categoryMultilingual": "Multilingual",
+  "categoryQuiz": "Quiz",
+  "categoryStreak": "Streak",
+  "categoryFlashcard": "Flashcard",
+  "categorySocial": "Social",
+  "categorySeasonal": "Seasonal",
+  "badgeUnlocked": "Unlocked",
+  "badgeLocked": "Locked",
+  "claimRewardBtn": "Claim",
+  "secretAchievement": "Secret Achievement",
+  "achievementProgressLabel": "{current}/{total}",
+  "@achievementProgressLabel": { "placeholders": { "current": { "type": "String" }, "total": { "type": "String" } } },
+
+  "leaderboardTitle": "Leaderboard",
+  "periodWeekly": "This Week",
+  "periodMonthly": "This Month",
+  "periodAllTime": "All Time",
+  "typeXp": "XP",
+  "typeStreak": "Streak",
+  "typeWordsLearned": "Words Learned",
+  "typeQuizzes": "Quizzes",
+  "yourRankLabel": "Your Rank",
+  "noLeaderboardData": "No leaderboard data yet",
+  "rankLabel": "#{rank}",
+  "@rankLabel": { "placeholders": { "rank": { "type": "String" } } },
+
+  "languagePacksShopTitle": "Language Packs Shop",
+  "allLanguagesFilter": "All",
+  "allCategoriesFilter": "All",
+  "phrasesCount": "{count} phrases",
+  "@phrasesCount": { "placeholders": { "count": { "type": "String" } } },
+  "buyPackBtn": "Buy",
+  "purchasedLabel": "Purchased",
+
+  "greengoXpLabel": "GreenGoXP",
+  "xpAmountLabel": "{xp} XP",
+  "@xpAmountLabel": { "placeholders": { "xp": { "type": "String" } } },
+
+  "playersRange": "{min}-{max} players",
+  "@playersRange": { "placeholders": { "min": { "type": "String" }, "max": { "type": "String" } } },
+  "playingCountLabel": "{count} playing",
+  "@playingCountLabel": { "placeholders": { "count": { "type": "String" } } },
+  "waitingCountLabel": "{count} waiting",
+  "@waitingCountLabel": { "placeholders": { "count": { "type": "String" } } },
+  "noActiveGamesLabel": "No active games",
+
+  "tapToContinue": "Tap to continue",
+  "levelUpTitle": "LEVEL UP!",
+  "comingSoonLabel": "Coming Soon",
+
+  "romanticCategory": "Romantic",
+  "travelCategory": "Travel",
+  "flirtyCategory": "Flirty",
+  "businessCategory": "Business",
+  "emergencyCategory": "Emergency",
+  "academicCategory": "Academic",
+  "slangCategory": "Slang",
+  "foodDiningCategory": "Food & Dining",
+  "greetingsCategory": "Greetings",
+  "conversationCategory": "Conversation",
+  "idiomsCategory": "Idioms",
+  "casualCategory": "Casual",
+  "videoCallCategory": "Video Call",
+  "datePlanningCategory": "Date Planning",
+  "complimentsCategory": "Compliments",
+  "culturalCategory": "Cultural",
+
+  "noLanguagesYet": "No languages yet. Start learning!",
+  "phrasesLabel": "phrases",
+  "standardTier": "Standard",
+  "premiumTier": "Premium",
+  "bundleTier": "Bundle",
+  "proLabel": "PRO",
+
+  "playersRange": "{min}-{max} players",
+  "@playersRange": {
+    "placeholders": {
+      "min": { "type": "String" },
+      "max": { "type": "String" }
+    }
+  },
+  "playingCountLabel": "{count} playing",
+  "@playingCountLabel": {
+    "placeholders": {
+      "count": { "type": "String" }
+    }
+  },
+  "waitingCountLabel": "{count} waiting",
+  "@waitingCountLabel": {
+    "placeholders": {
+      "count": { "type": "String" }
+    }
+  },
+  "noActiveGamesLabel": "No active games",
+  "greengoXpLabel": "GreenGoXP",
+  "xpAmountLabel": "{amount} XP",
+  "@xpAmountLabel": {
+    "placeholders": {
+      "amount": { "type": "String" }
+    }
+  },
+
+  "chooseGame": "Choose a Game",
+  "targetLanguage": "Target Language",
+  "difficultyLabel": "Difficulty",
+  "quickPlay": "Quick Play",
+  "privateRoom": "Private Room",
+  "inviteFriends": "Invite Friends",
+  "notEnoughCoins": "Not enough coins",
+  "inviteCodeCopied": "Invite code copied!",
+  "waitingForPlayers": "Waiting for players...",
+  "allPlayersReady": "All players ready!",
+  "startGame": "Start Game",
+  "readyButton": "Ready",
+  "yourTurn": "Your Turn!",
+  "roundXofY": "Round {current}/{total}",
+  "@roundXofY": {
+    "placeholders": {
+      "current": { "type": "String" },
+      "total": { "type": "String" }
+    }
+  },
+  "timeRemaining": "Time remaining",
+  "submitAnswer": "Submit Answer",
+  "correctAnswer": "Correct!",
+  "incorrectAnswer": "Incorrect",
+  "wordAlreadyUsed": "Word already used",
+  "invalidWord": "Invalid word",
+  "gameOver": "Game Over",
+  "youWin": "You Win!",
+  "youLose": "You Lose",
+  "xpEarned": "{amount} XP earned",
+  "@xpEarned": {
+    "placeholders": {
+      "amount": { "type": "String" }
+    }
+  },
+  "playAgain": "Play Again",
+  "backToLobby": "Back to Lobby",
+  "typeWordStartingWith": "Type a word starting with \"{letter}\"",
+  "@typeWordStartingWith": {
+    "placeholders": {
+      "letter": { "type": "String" }
+    }
+  },
+  "wordReported": "Word reported",
+  "reportWord": "Report Word",
+  "abandonGame": "Abandon Game",
+  "rounds": "Rounds",
+  "usedWords": "Used Words",
+  "translateWord": "Translate this word",
+  "progressLabel": "Progress",
+  "firstTo30Wins": "First to 30 wins!",
+  "chooseCorrectAnswer": "Choose the correct answer",
+  "vsLabel": "VS",
+  "fillCategories": "Fill all categories",
+  "categoryName": "Category",
+  "roundTimer": "Round Timer",
+  "loadingLabel": "Loading...",
+  "connectionError": "Connection error",
+  "timeoutError": "Request timed out",
+  "confirmLabel": "Confirm",
+  "cancelLabel": "Cancel",
+  "origin": "Origin",
+  "primaryOrigin": "Primary Origin",
+  "secondaryOrigin": "Secondary Origin (optional)",
+  "searchCountries": "Search countries...",
+  "notSet": "Not set",
+  "tourLearnTitle": "Learn Languages",
+  "tourLearnDescription": "Study vocabulary, grammar, and conversation skills",
+  "tourPlayTitle": "Play Games",
+  "tourPlayDescription": "Challenge others in fun language games"
 }

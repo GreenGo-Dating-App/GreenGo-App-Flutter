@@ -152,6 +152,8 @@ class NotificationCard extends StatelessWidget {
         return Icons.monetization_on;
       case NotificationType.progressAchieved:
         return Icons.emoji_events;
+      case NotificationType.gameInvite:
+        return Icons.sports_esports;
     }
   }
 
@@ -177,6 +179,8 @@ class NotificationCard extends StatelessWidget {
       case NotificationType.coinsPurchased:
         return AppColors.richGold;
       case NotificationType.progressAchieved:
+        return AppColors.richGold;
+      case NotificationType.gameInvite:
         return AppColors.richGold;
     }
   }

@@ -1,0 +1,200 @@
+<!-- Categories Icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="catT1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="catT2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="catT3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="catT4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="catT5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="catT6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <linearGradient id="catT7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="catT8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="catT9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="tileShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="tileGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#FBBF24" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Tile 1 - Food -->
+  <g filter="url(#tileShadow)">
+    <rect x="56" y="56" width="120" height="120" rx="20" fill="url(#catT1)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;1;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Icon -->
+    <text x="116" y="110" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">🍎
+      <animate attributeName="opacity" values="0.25;1;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <!-- Label -->
+    <text x="116" y="148" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Food
+      <animate attributeName="opacity" values="0.25;1;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <!-- Highlight bar -->
+    <rect x="68" y="60" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 2 - Animals -->
+  <g filter="url(#tileShadow)">
+    <rect x="196" y="56" width="120" height="120" rx="20" fill="url(#catT2)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="256" y="110" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">🐶
+      <animate attributeName="opacity" values="0.25;0.25;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="256" y="148" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Animals
+      <animate attributeName="opacity" values="0.25;0.25;1;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="208" y="60" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 3 - Colors -->
+  <g filter="url(#tileShadow)">
+    <rect x="336" y="56" width="120" height="120" rx="20" fill="url(#catT3)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="396" y="110" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">🎨
+      <animate attributeName="opacity" values="0.25;0.25;0.25;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="396" y="148" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Colors
+      <animate attributeName="opacity" values="0.25;0.25;0.25;1;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="348" y="60" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0.2;0.2;0.2;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 4 - Sports -->
+  <g filter="url(#tileShadow)">
+    <rect x="56" y="196" width="120" height="120" rx="20" fill="url(#catT4)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="116" y="250" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">⚽
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="116" y="290" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Sports
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;1;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="68" y="200" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0.2;0.2;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 5 - Music -->
+  <g filter="url(#tileShadow)">
+    <rect x="196" y="196" width="120" height="120" rx="20" fill="url(#catT5)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="256" y="250" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">🎵
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="256" y="290" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Music
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;1;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="208" y="200" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0.2;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 6 - Travel -->
+  <g filter="url(#tileShadow)">
+    <rect x="336" y="196" width="120" height="120" rx="20" fill="url(#catT6)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="396" y="250" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">✈️
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="396" y="290" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Travel
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="348" y="200" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0.2;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 7 - School -->
+  <g filter="url(#tileShadow)">
+    <rect x="56" y="336" width="120" height="120" rx="20" fill="url(#catT7)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="116" y="390" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">📚
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="116" y="430" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">School
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="68" y="340" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0.2;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 8 - Family -->
+  <g filter="url(#tileShadow)">
+    <rect x="196" y="336" width="120" height="120" rx="20" fill="url(#catT8)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="256" y="390" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">👨‍👩‍👧
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="256" y="430" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Family
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="208" y="340" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0.2;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tile 9 - Nature -->
+  <g filter="url(#tileShadow)">
+    <rect x="336" y="336" width="120" height="120" rx="20" fill="url(#catT9)" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="396" y="390" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" opacity="0.25">🌿
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="396" y="430" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="white" text-anchor="middle" opacity="0.25">Nature
+      <animate attributeName="opacity" values="0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;0.25;1;0.25" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+    <rect x="348" y="340" width="96" height="8" rx="4" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0.2;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Scan/highlight effect sweeping across tiles -->
+  <rect x="0" y="56" width="8" height="400" rx="4" fill="#FBBF24" opacity="0">
+    <animate attributeName="x" values="46;466;46" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

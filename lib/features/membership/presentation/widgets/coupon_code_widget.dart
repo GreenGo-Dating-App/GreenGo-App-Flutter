@@ -347,6 +347,8 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
         return AppColors.richGold;
       case MembershipTier.platinum:
         return Colors.blueGrey[300]!;
+      case MembershipTier.test:
+        return AppColors.richGold;
     }
   }
 
@@ -360,6 +362,8 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
         return Icons.star;
       case MembershipTier.platinum:
         return Icons.workspace_premium;
+      case MembershipTier.test:
+        return Icons.bug_report;
     }
   }
 

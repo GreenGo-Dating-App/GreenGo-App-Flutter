@@ -163,6 +163,18 @@ enum LessonLevel {
 
 /// Categories for practical daily conversation
 enum LessonCategory {
+  // ── Basic Language Learning (first 10 units) ──
+  greetings_introductions,
+  numbers_counting,
+  family_relationships,
+  colors_descriptions,
+  food_drinks,
+  animals_nature,
+  present_tense,
+  past_tense,
+  future_tense,
+  everyday_objects,
+  // ── Dating & Social (remaining units) ──
   dating_basics,
   first_impressions,
   compliments_flirting,
@@ -190,6 +202,26 @@ enum LessonCategory {
 
   String get displayName {
     switch (this) {
+      case LessonCategory.greetings_introductions:
+        return 'Greetings & Introductions';
+      case LessonCategory.numbers_counting:
+        return 'Numbers & Counting';
+      case LessonCategory.family_relationships:
+        return 'Family & Relationships';
+      case LessonCategory.colors_descriptions:
+        return 'Colors & Descriptions';
+      case LessonCategory.food_drinks:
+        return 'Food & Drinks';
+      case LessonCategory.animals_nature:
+        return 'Animals & Nature';
+      case LessonCategory.present_tense:
+        return 'Present Tense';
+      case LessonCategory.past_tense:
+        return 'Past Tense';
+      case LessonCategory.future_tense:
+        return 'Future Tense';
+      case LessonCategory.everyday_objects:
+        return 'Everyday Objects';
       case LessonCategory.dating_basics:
         return 'Dating Basics';
       case LessonCategory.first_impressions:
@@ -243,6 +275,26 @@ enum LessonCategory {
 
   String get emoji {
     switch (this) {
+      case LessonCategory.greetings_introductions:
+        return '👋';
+      case LessonCategory.numbers_counting:
+        return '🔢';
+      case LessonCategory.family_relationships:
+        return '👨‍👩‍👧';
+      case LessonCategory.colors_descriptions:
+        return '🎨';
+      case LessonCategory.food_drinks:
+        return '🍕';
+      case LessonCategory.animals_nature:
+        return '🐾';
+      case LessonCategory.present_tense:
+        return '⏰';
+      case LessonCategory.past_tense:
+        return '⏪';
+      case LessonCategory.future_tense:
+        return '⏩';
+      case LessonCategory.everyday_objects:
+        return '🏷️';
       case LessonCategory.dating_basics:
         return '💕';
       case LessonCategory.first_impressions:
@@ -389,6 +441,7 @@ class LessonContent extends Equatable {
   final String? audioUrl;
   final String? imageUrl;
   final String? videoUrl;
+  final String? imageEmoji; // Emoji representation for vocabulary nouns
   final Map<String, dynamic>? extras;
 
   const LessonContent({
@@ -400,6 +453,7 @@ class LessonContent extends Equatable {
     this.audioUrl,
     this.imageUrl,
     this.videoUrl,
+    this.imageEmoji,
     this.extras,
   });
 
@@ -429,6 +483,7 @@ class LessonExercise extends Equatable {
   final String? questionTranslation;
   final String? audioUrl;
   final String? imageUrl;
+  final String? imageEmoji; // Emoji representation for vocabulary nouns
   final List<String> options; // For multiple choice
   final String correctAnswer;
   final List<String>? acceptableAnswers; // Alternative correct answers
@@ -444,6 +499,7 @@ class LessonExercise extends Equatable {
     this.questionTranslation,
     this.audioUrl,
     this.imageUrl,
+    this.imageEmoji,
     this.options = const [],
     required this.correctAnswer,
     this.acceptableAnswers,

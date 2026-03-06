@@ -137,6 +137,15 @@ abstract class LanguageLearningRemoteDataSource {
 
   // Video Call Language Tracking
   Future<void> trackVideoCallLanguageUse(String languageCode, Duration duration);
+
+  // Learning Path Progress
+  Future<void> recordLessonCompletion({
+    required String lessonId,
+    required String languageCode,
+    required int earnedXp,
+    required double accuracy,
+  });
+  Future<List<String>> getCompletedLessonIds({required String languageCode});
 }
 
 class LanguageLearningRemoteDataSourceImpl
@@ -991,6 +1000,7 @@ class LanguageLearningRemoteDataSourceImpl
       audioUrl: json['audioUrl'] as String?,
       imageUrl: json['imageUrl'] as String?,
       videoUrl: json['videoUrl'] as String?,
+      imageEmoji: json['imageEmoji'] as String?,
       extras: json['extras'] as Map<String, dynamic>?,
     );
   }
@@ -1006,6 +1016,7 @@ class LanguageLearningRemoteDataSourceImpl
       questionTranslation: json['questionTranslation'] as String?,
       audioUrl: json['audioUrl'] as String?,
       imageUrl: json['imageUrl'] as String?,
+      imageEmoji: json['imageEmoji'] as String?,
       options: (json['options'] as List<dynamic>?)?.map((e) => e as String).toList() ?? [],
       correctAnswer: json['correctAnswer'] as String,
       acceptableAnswers: (json['acceptableAnswers'] as List<dynamic>?)?.map((e) => e as String).toList(),
@@ -2503,5 +2514,54 @@ class LanguageLearningRemoteDataSourceImpl
     } catch (e) {
       throw Exception('Failed to track video call language use: $e');
     }
+  }
+
+  // ==================== Learning Path Progress ====================
+
+  @override
+  Future<void> recordLessonCompletion({
+    required String lessonId,
+    required String languageCode,
+    required int earnedXp,
+    required double accuracy,
+  }) async {
+    final progressRef = _firestore
+        .collection('users')
+        .doc(_userId)
+        .collection('learning_path_progress')
+        .doc(languageCode);
+
+    await progressRef.set({
+      'completedLessonIds': FieldValue.arrayUnion([lessonId]),
+      'totalXpEarned': FieldValue.increment(earnedXp),
+      'totalLessonsCompleted': FieldValue.increment(1),
+      'lastLessonCompletedAt': Timestamp.now(),
+    }, SetOptions(merge: true));
+
+    // Also update the main language progress
+    await _userProgressCollection.doc(languageCode).set({
+      'totalXpEarned': FieldValue.increment(earnedXp),
+      'lastPracticeDate': Timestamp.now(),
+    }, SetOptions(merge: true));
+
+    await updateLearningStreak();
+  }
+
+  @override
+  Future<List<String>> getCompletedLessonIds({
+    required String languageCode,
+  }) async {
+    final doc = await _firestore
+        .collection('users')
+        .doc(_userId)
+        .collection('learning_path_progress')
+        .doc(languageCode)
+        .get();
+
+    if (!doc.exists) return [];
+
+    final data = doc.data()!;
+    final ids = data['completedLessonIds'] as List<dynamic>?;
+    return ids?.map((e) => e.toString()).toList() ?? [];
   }
 }

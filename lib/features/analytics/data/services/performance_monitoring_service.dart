@@ -364,7 +364,7 @@ class PerformanceMonitoringService {
 
   /// Force crash (for testing)
   Future<void> forceCrash() async {
-    await _crashlytics.crash();
+    _crashlytics.crash();
   }
 
   /// Test crash reporting (non-fatal)

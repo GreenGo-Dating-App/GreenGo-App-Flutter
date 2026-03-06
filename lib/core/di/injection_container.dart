@@ -143,6 +143,8 @@ import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
 
 // Language Learning
 import '../../features/language_learning/data/datasources/language_learning_remote_data_source.dart';
+import '../../features/language_learning/data/datasources/constellation_datasource.dart';
+import '../../features/language_learning/data/datasources/lesson_question_datasource.dart';
 import '../../features/language_learning/data/repositories/language_learning_repository_impl.dart';
 import '../../features/language_learning/domain/repositories/language_learning_repository.dart';
 import '../../features/language_learning/presentation/bloc/language_learning_bloc.dart';
@@ -189,7 +191,14 @@ import '../../features/communities/data/repositories/communities_repository_impl
 import '../../features/communities/domain/repositories/communities_repository.dart';
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
 
+// Language Games
+import '../../features/language_games/data/datasources/language_games_remote_datasource.dart';
+import '../../features/language_games/data/repositories/language_games_repository_impl.dart';
+import '../../features/language_games/domain/repositories/language_games_repository.dart';
+import '../../features/language_games/presentation/bloc/language_games_bloc.dart';
+
 // Core Services
+import '../services/cache_service.dart';
 import '../services/pronunciation_service.dart';
 import '../services/visual_vocabulary_service.dart';
 import '../services/app_sound_service.dart';
@@ -672,6 +681,14 @@ Future<void> init() async {
     ),
   );
 
+  sl.registerLazySingleton<LessonQuestionDatasource>(
+    () => LessonQuestionDatasource(firestore: sl(), cacheService: CacheService.instance),
+  );
+
+  sl.registerLazySingleton<ConstellationDatasource>(
+    () => ConstellationDatasource(firestore: sl(), cacheService: CacheService.instance),
+  );
+
   // Repository
   sl.registerLazySingleton<LanguageLearningRepository>(
     () => LanguageLearningRepositoryImpl(remoteDataSource: sl()),
@@ -679,7 +696,11 @@ Future<void> init() async {
 
   // BLoC
   sl.registerFactory(
-    () => LanguageLearningBloc(repository: sl()),
+    () => LanguageLearningBloc(
+      repository: sl(),
+      questionDatasource: sl(),
+      constellationDatasource: sl(),
+    ),
   );
 
   //! Features - Cultural Exchange
@@ -798,6 +819,25 @@ Future<void> init() async {
       repository: sl(),
       remoteDataSource: sl(),
     ),
+  );
+
+  //! Features - Language Games
+  // Data sources
+  sl.registerLazySingleton<LanguageGamesRemoteDataSource>(
+    () => LanguageGamesRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<LanguageGamesRepository>(
+    () => LanguageGamesRepositoryImpl(
+      remoteDataSource: sl(),
+      firestore: sl(),
+    ),
+  );
+
+  // BLoC
+  sl.registerFactory(
+    () => LanguageGamesBloc(repository: sl()),
   );
 
   //! Core Services

@@ -275,4 +275,20 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
       throw ServerException( 'Failed to calculate completion: ${e.toString()}');
     }
   }
+
+  /// Search profiles by nickname prefix (case-insensitive).
+  Future<List<ProfileModel>> searchByNickname(String query) async {
+    if (query.isEmpty) return [];
+    final lowerQuery = query.toLowerCase();
+    final endQuery = '$lowerQuery\uf8ff';
+
+    final snapshot = await firestore
+        .collection('profiles')
+        .where('nicknameLower', isGreaterThanOrEqualTo: lowerQuery)
+        .where('nicknameLower', isLessThanOrEqualTo: endQuery)
+        .limit(20)
+        .get();
+
+    return snapshot.docs.map((doc) => ProfileModel.fromJson(doc.data())).toList();
+  }
 }

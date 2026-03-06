@@ -158,16 +158,20 @@ class PronunciationService {
     final url = Uri.parse(
         'https://texttospeech.googleapis.com/v1/text:synthesize?key=$apiKey');
 
+    // Use Neural2 voice for extremely human-like speech
+    final voiceName = _getNeuralVoice(languageCode);
     final body = jsonEncode({
       'input': {'text': phrase},
       'voice': {
         'languageCode': languageCode,
+        'name': voiceName,
         'ssmlGender': 'FEMALE',
       },
       'audioConfig': {
         'audioEncoding': 'MP3',
-        'speakingRate': 0.85, // Slightly slower for learning
+        'speakingRate': 0.9, // Natural pace for learning
         'pitch': 0.0,
+        'effectsProfileId': ['headphone-class-device'],
       },
     });
 
@@ -188,6 +192,50 @@ class PronunciationService {
           'PronunciationService: TTS API error ${response.statusCode}: ${response.body}');
     }
     return null;
+  }
+
+  /// Get the best Neural2/WaveNet voice for a language code.
+  /// Neural2 voices are the most human-like available on Google Cloud TTS.
+  String _getNeuralVoice(String languageCode) {
+    const neuralVoices = {
+      'en-US': 'en-US-Neural2-F',    // Female, very natural
+      'en-GB': 'en-GB-Neural2-F',
+      'es-ES': 'es-ES-Neural2-A',    // Female
+      'fr-FR': 'fr-FR-Neural2-A',    // Female
+      'de-DE': 'de-DE-Neural2-F',    // Female
+      'it-IT': 'it-IT-Neural2-A',    // Female
+      'pt-BR': 'pt-BR-Neural2-C',    // Female
+      'ru-RU': 'ru-RU-Wavenet-A',    // Female (Neural2 not yet available)
+      'ja-JP': 'ja-JP-Neural2-B',    // Female
+      'ko-KR': 'ko-KR-Neural2-A',   // Female
+      'ar-XA': 'ar-XA-Wavenet-A',   // Female
+      'nl-NL': 'nl-NL-Wavenet-A',   // Female
+      'pl-PL': 'pl-PL-Wavenet-A',   // Female
+      'tr-TR': 'tr-TR-Wavenet-A',   // Female
+      'hi-IN': 'hi-IN-Neural2-A',   // Female
+      'sv-SE': 'sv-SE-Wavenet-A',   // Female
+      'nb-NO': 'nb-NO-Wavenet-A',   // Female
+      'da-DK': 'da-DK-Wavenet-A',   // Female
+      'fi-FI': 'fi-FI-Wavenet-A',   // Female
+      'cs-CZ': 'cs-CZ-Wavenet-A',   // Female
+      'ro-RO': 'ro-RO-Wavenet-A',   // Female
+      'el-GR': 'el-GR-Wavenet-A',   // Female
+      'uk-UA': 'uk-UA-Wavenet-A',   // Female
+      'hu-HU': 'hu-HU-Wavenet-A',   // Female
+      'sk-SK': 'sk-SK-Wavenet-A',   // Female
+      'bg-BG': 'bg-BG-Standard-A',  // Standard (no neural yet)
+      'vi-VN': 'vi-VN-Neural2-A',   // Female
+      'th-TH': 'th-TH-Neural2-C',   // Female
+      'id-ID': 'id-ID-Wavenet-A',   // Female
+    };
+    // Try exact match, then base language
+    final base = languageCode.split('-').first;
+    return neuralVoices[languageCode] ??
+        neuralVoices.entries
+            .where((e) => e.key.startsWith(base))
+            .map((e) => e.value)
+            .firstOrNull ??
+        'en-US-Neural2-F';
   }
 
   /// Map language display names to BCP-47 language codes

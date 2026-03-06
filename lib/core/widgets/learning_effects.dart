@@ -842,6 +842,201 @@ class _ShakeWidgetState extends State<ShakeWidget>
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// STAGGERED ENTRANCE — Fade+scale in with configurable delay (fires once)
+// ─────────────────────────────────────────────────────────────────────────────
+
+class StaggeredEntrance extends StatefulWidget {
+  final Widget child;
+  final Duration delay;
+  final Duration duration;
+
+  const StaggeredEntrance({
+    super.key,
+    required this.child,
+    this.delay = Duration.zero,
+    this.duration = const Duration(milliseconds: 400),
+  });
+
+  @override
+  State<StaggeredEntrance> createState() => _StaggeredEntranceState();
+}
+
+class _StaggeredEntranceState extends State<StaggeredEntrance>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _fadeAnimation;
+  late Animation<double> _scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: widget.duration,
+    );
+    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeOut),
+    );
+    _scaleAnimation = Tween<double>(begin: 0.7, end: 1.0).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeOutBack),
+    );
+    Future.delayed(widget.delay, () {
+      if (mounted) _controller.forward();
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return Opacity(
+          opacity: _fadeAnimation.value,
+          child: Transform.scale(
+            scale: _scaleAnimation.value,
+            child: child,
+          ),
+        );
+      },
+      child: widget.child,
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BREATHING FLOAT — Repeating vertical bob using sine wave
+// ─────────────────────────────────────────────────────────────────────────────
+
+class BreathingFloat extends StatefulWidget {
+  final Widget child;
+  final double amplitude;
+  final Duration period;
+
+  const BreathingFloat({
+    super.key,
+    required this.child,
+    this.amplitude = 3.0,
+    this.period = const Duration(milliseconds: 2000),
+  });
+
+  @override
+  State<BreathingFloat> createState() => _BreathingFloatState();
+}
+
+class _BreathingFloatState extends State<BreathingFloat>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: widget.period,
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        final dy = sin(_controller.value * 2 * pi) * widget.amplitude;
+        return Transform.translate(
+          offset: Offset(0, dy),
+          child: child,
+        );
+      },
+      child: widget.child,
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ANIMATED CONNECTOR CLIP — Reveals child from top to bottom over duration
+// ─────────────────────────────────────────────────────────────────────────────
+
+class AnimatedConnectorClip extends StatefulWidget {
+  final Widget child;
+  final Duration duration;
+  final Duration delay;
+
+  const AnimatedConnectorClip({
+    super.key,
+    required this.child,
+    this.duration = const Duration(milliseconds: 600),
+    this.delay = Duration.zero,
+  });
+
+  @override
+  State<AnimatedConnectorClip> createState() => _AnimatedConnectorClipState();
+}
+
+class _AnimatedConnectorClipState extends State<AnimatedConnectorClip>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: widget.duration,
+    );
+    Future.delayed(widget.delay, () {
+      if (mounted) _controller.forward();
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return ClipRect(
+          clipper: _TopToBottomClipper(_controller.value),
+          child: child,
+        );
+      },
+      child: widget.child,
+    );
+  }
+}
+
+class _TopToBottomClipper extends CustomClipper<Rect> {
+  final double progress;
+  _TopToBottomClipper(this.progress);
+
+  @override
+  Rect getClip(Size size) {
+    return Rect.fromLTRB(0, 0, size.width, size.height * progress);
+  }
+
+  @override
+  bool shouldReclip(covariant _TopToBottomClipper oldClipper) {
+    return oldClipper.progress != progress;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // PULSE GLOW — Makes any widget pulse with a glow (for hints, achievements)
 // ─────────────────────────────────────────────────────────────────────────────
 

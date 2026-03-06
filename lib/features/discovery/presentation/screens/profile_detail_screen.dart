@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
@@ -307,11 +308,12 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 fontSize: 28,
                               ),
                             ),
-                            // Show membership badge if not free tier
-                            if (widget.profile.membershipTier != MembershipTier.free) ...[
+                            // Show origin flag badge
+                            if (widget.profile.primaryOrigin != null) ...[
                               const SizedBox(width: 12),
-                              MembershipBadge(
-                                tier: widget.profile.membershipTier,
+                              CountryFlagBadge(
+                                primary: widget.profile.primaryOrigin,
+                                secondary: widget.profile.secondaryOrigin,
                                 compact: true,
                               ),
                             ],

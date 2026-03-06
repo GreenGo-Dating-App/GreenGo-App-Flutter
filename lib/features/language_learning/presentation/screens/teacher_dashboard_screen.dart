@@ -23,7 +23,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
   }
 
   void _loadTeacherData() {
-    context.read<LanguageLearningBloc>().add(LoadTeacherDashboard());
+    context.read<LanguageLearningBloc>().add(const LoadLanguageLearningData());
   }
 
   @override
@@ -1180,7 +1180,7 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
   final _titleController = TextEditingController();
   final _descriptionController = TextEditingController();
   LessonLevel _selectedLevel = LessonLevel.beginner;
-  LessonCategory _selectedCategory = LessonCategory.greetings;
+  LessonCategory _selectedCategory = LessonCategory.greetings_introductions;
   String _selectedLanguage = 'es';
 
   @override
@@ -1256,9 +1256,8 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
                 DropdownMenuItem(value: 'it', child: Text('Italian')),
                 DropdownMenuItem(value: 'de', child: Text('German')),
                 DropdownMenuItem(value: 'pt', child: Text('Portuguese')),
-                DropdownMenuItem(value: 'ja', child: Text('Japanese')),
-                DropdownMenuItem(value: 'ko', child: Text('Korean')),
-                DropdownMenuItem(value: 'zh', child: Text('Chinese')),
+                DropdownMenuItem(value: 'pt-BR', child: Text('Brazilian Portuguese')),
+                DropdownMenuItem(value: 'en', child: Text('English')),
               ],
               onChanged: (value) =>
                   setState(() => _selectedLanguage = value ?? 'es'),

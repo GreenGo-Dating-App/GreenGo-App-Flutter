@@ -35,6 +35,7 @@ import '../bloc/chat_state.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../../core/utils/country_flag_helper.dart';
 
 /// Chat Screen
 ///
@@ -1660,13 +1661,35 @@ class _ChatScreenState extends State<ChatScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  widget.otherUserProfile.displayName,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Flexible(
+                      child: Text(
+                        widget.otherUserProfile.displayName,
+                        style: const TextStyle(
+                          color: AppColors.textPrimary,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    if (widget.otherUserProfile.primaryOrigin != null) ...[
+                      const SizedBox(width: 6),
+                      Text(
+                        CountryFlagHelper.getFlag(widget.otherUserProfile.primaryOrigin!),
+                        style: const TextStyle(fontSize: 14),
+                      ),
+                    ],
+                    if (widget.otherUserProfile.secondaryOrigin != null) ...[
+                      const SizedBox(width: 2),
+                      Text(
+                        CountryFlagHelper.getFlag(widget.otherUserProfile.secondaryOrigin!),
+                        style: const TextStyle(fontSize: 14),
+                      ),
+                    ],
+                  ],
                 ),
                 BlocBuilder<ChatBloc, ChatState>(
                   builder: (context, state) {

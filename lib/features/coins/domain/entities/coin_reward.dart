@@ -74,12 +74,12 @@ class CoinRewards {
     maxClaims: 1,
   );
 
-  /// Daily login streak: 10 coins per day
+  /// Daily login streak: 100 coins per day
   static const CoinReward dailyLogin = CoinReward(
     rewardId: 'daily_login',
     name: 'Daily Login',
     description: 'Login daily to earn coins',
-    coinAmount: 10,
+    coinAmount: 100,
     type: RewardType.dailyLogin,
     isRecurring: true,
     cooldownPeriod: Duration(days: 1),

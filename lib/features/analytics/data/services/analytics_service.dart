@@ -58,7 +58,7 @@ class AnalyticsService {
         'screen_name': screenName,
         'previous_screen': _currentScreenName ?? 'none',
         'time_on_previous_screen': timeOnPreviousScreen?.inSeconds ?? 0,
-        'session_id': _currentSessionId,
+        'session_id': _currentSessionId ?? '',
       },
     );
 
@@ -102,7 +102,7 @@ class AnalyticsService {
       name: event.eventName,
       parameters: {
         'timestamp': DateTime.now().toIso8601String(),
-        'session_id': _currentSessionId,
+        'session_id': _currentSessionId ?? '',
         ...?parameters,
       },
     );

@@ -20,6 +20,7 @@ class TourStep {
   });
 
   /// All tour steps for the app
+  /// Tab order: Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
   static const List<TourStep> allSteps = [
     TourStep(
       id: 'discovery',
@@ -30,28 +31,28 @@ class TourStep {
       accentColor: Colors.pink,
     ),
     TourStep(
-      id: 'matches',
-      titleKey: 'tourMatchesTitle',
-      descriptionKey: 'tourMatchesDescription',
-      icon: Icons.favorite,
-      tabIndex: 1,
-      accentColor: Colors.red,
-    ),
-    TourStep(
       id: 'messages',
       titleKey: 'tourMessagesTitle',
       descriptionKey: 'tourMessagesDescription',
       icon: Icons.chat_bubble,
-      tabIndex: 2,
+      tabIndex: 1,
       accentColor: Colors.blue,
     ),
     TourStep(
-      id: 'shop',
-      titleKey: 'tourShopTitle',
-      descriptionKey: 'tourShopDescription',
-      icon: Icons.store,
-      tabIndex: 3,
+      id: 'learn',
+      titleKey: 'tourLearnTitle',
+      descriptionKey: 'tourLearnDescription',
+      icon: Icons.school,
+      tabIndex: 2,
       accentColor: Colors.green,
+    ),
+    TourStep(
+      id: 'play',
+      titleKey: 'tourPlayTitle',
+      descriptionKey: 'tourPlayDescription',
+      icon: Icons.sports_esports,
+      tabIndex: 3,
+      accentColor: Colors.orange,
     ),
     TourStep(
       id: 'profile',

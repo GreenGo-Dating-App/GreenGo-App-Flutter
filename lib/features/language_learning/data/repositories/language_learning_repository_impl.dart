@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/entities.dart';
 import '../../domain/repositories/language_learning_repository.dart';
+import '../content/daily_challenges_data.dart';
 import '../datasources/language_learning_remote_data_source.dart';
 import '../models/models.dart';
 
@@ -201,9 +202,11 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
   @override
   Future<Either<Failure, List<LanguageChallenge>>> getDailyChallenges() async {
     try {
-      return Right(LanguageChallenge.dailyChallenges);
+      // 365 rotating daily challenges based on day of year
+      return Right(DailyChallengesData.getChallengesForToday());
     } catch (e) {
-      return Left(ServerFailure( e.toString()));
+      // Fallback to static challenges
+      return Right(LanguageChallenge.dailyChallenges);
     }
   }
 
@@ -849,6 +852,40 @@ class LanguageLearningRepositoryImpl implements LanguageLearningRepository {
     try {
       await remoteDataSource.updateGoalProgress(goalId, progress);
       return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> recordLessonCompletion({
+    required String lessonId,
+    required String languageCode,
+    required int earnedXp,
+    required double accuracy,
+  }) async {
+    try {
+      await remoteDataSource.recordLessonCompletion(
+        lessonId: lessonId,
+        languageCode: languageCode,
+        earnedXp: earnedXp,
+        accuracy: accuracy,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<String>>> getCompletedLessonIds({
+    required String languageCode,
+  }) async {
+    try {
+      final ids = await remoteDataSource.getCompletedLessonIds(
+        languageCode: languageCode,
+      );
+      return Right(ids);
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }

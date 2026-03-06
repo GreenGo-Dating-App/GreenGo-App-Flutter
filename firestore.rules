@@ -539,6 +539,67 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // LANGUAGE GAMES COLLECTIONS
+    // ============================================================================
+    match /game_rooms/{roomId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+
+      // Rounds subcollection (game rounds data)
+      match /rounds/{roundId} {
+        allow read: if isSignedIn();
+        allow create, update: if isSignedIn();
+        allow delete: if false;
+      }
+
+      // Chat subcollection (in-game chat messages)
+      match /chat/{messageId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn();
+        allow update, delete: if false;
+      }
+    }
+
+    // GAME INVITES COLLECTION
+    match /game_invites/{inviteId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /game_matchmaking/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /game_stats/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // CONSTELLATION COLLECTION (Language Learning — galaxy map nodes)
+    // ============================================================================
+    match /constellation/{nodeId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // LESSONS COLLECTION (Language Learning — lesson questions)
+    // ============================================================================
+    match /lessons/{lessonId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {

@@ -71,6 +71,8 @@ class NotificationEntity extends Equatable {
         return 'monetization_on';
       case NotificationType.progressAchieved:
         return 'emoji_events';
+      case NotificationType.gameInvite:
+        return 'sports_esports';
     }
   }
 
@@ -129,6 +131,7 @@ enum NotificationType {
   newChat,           // First message in a conversation
   coinsPurchased,    // Coins purchased successfully
   progressAchieved,  // Achievement unlocked
+  gameInvite,        // Game invite received
 }
 
 /// Extension for NotificationType
@@ -157,6 +160,8 @@ extension NotificationTypeExtension on NotificationType {
         return 'coins_purchased';
       case NotificationType.progressAchieved:
         return 'progress_achieved';
+      case NotificationType.gameInvite:
+        return 'game_invite';
     }
   }
 
@@ -184,6 +189,8 @@ extension NotificationTypeExtension on NotificationType {
         return NotificationType.coinsPurchased;
       case 'progress_achieved':
         return NotificationType.progressAchieved;
+      case 'game_invite':
+        return NotificationType.gameInvite;
       default:
         return NotificationType.system;
     }

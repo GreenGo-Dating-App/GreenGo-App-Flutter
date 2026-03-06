@@ -47,6 +47,9 @@ import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 // Language Learning imports - only used when feature is enabled
 import '../../../language_learning/presentation/screens/language_learning_home_screen.dart';
 import '../../../language_learning/presentation/bloc/language_learning_bloc.dart';
+import '../../../language_games/presentation/screens/game_lobby_screen.dart';
+import '../../../language_games/presentation/bloc/language_games_bloc.dart';
+import '../../../language_games/presentation/widgets/game_invite_listener.dart';
 // Gamification imports (Progress screen hidden from users but code kept)
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
@@ -174,9 +177,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _profileBloc = di.sl<ProfileBloc>()
       ..add(ProfileLoadRequested(userId: widget.userId));
 
-    // Build screens list — educational positioning:
-    // Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
-    // Language learning is always shown as a core feature
+    // Build screens list — social-first positioning:
+    // Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
     _screens = [
       DiscoveryScreen(
         key: _discoveryKey,
@@ -185,12 +187,17 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           if (mounted) setState(() {});
         },
       ),
+      ConversationsScreen(userId: widget.userId),
       BlocProvider(
         create: (context) => di.sl<LanguageLearningBloc>(),
         child: const LanguageLearningHomeScreen(),
       ),
-      ConversationsScreen(userId: widget.userId),
-      CoinShopScreen(userId: widget.userId),
+      BlocProvider(
+        create: (context) => di.sl<LanguageGamesBloc>(),
+        child: GameLobbyScreen(
+          userId: widget.userId,
+        ),
+      ),
       BlocProvider.value(
         value: _profileBloc,
         child: EditProfileScreen(userId: widget.userId),
@@ -238,7 +245,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (mounted) {
       setState(() {
         _showTour = false;
-        _currentIndex = 0; // Redirect to discover tab after tour
+        _currentIndex = 0; // Redirect to Exchange tab after tour
       });
     }
   }
@@ -510,7 +517,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   void _navigateToSettings() {
     // Navigate to Profile/Settings tab
-    // Tabs: Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
+    // Tabs: Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
     setState(() {
       _currentIndex = 4;
     });
@@ -751,9 +758,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
-    // Tabs: Discover(0), Learn(1), Messages(2), Shop(3), Profile(4)
+    // Tabs: Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
     const profileIndex = 4;
-    const learnIndex = 1;
+    const learnIndex = 2;
 
     // Ensure current index is valid
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
@@ -767,7 +774,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           final index = entry.key;
           final screen = entry.value;
 
-          // Learn and Shop tabs don't need verification overlay
+          // Learn and Play tabs don't need verification overlay
           if (index == learnIndex || index == 3) {
             return screen;
           }
@@ -798,14 +805,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           elevation: 0,
           items: [
             BottomNavigationBarItem(
-              icon: const Icon(Icons.explore_outlined),
-              activeIcon: const Icon(Icons.explore),
+              icon: const Icon(Icons.swap_horiz_outlined),
+              activeIcon: const Icon(Icons.swap_horiz),
               label: AppLocalizations.of(context)!.discover,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.school_outlined),
-              activeIcon: const Icon(Icons.school),
-              label: AppLocalizations.of(context)!.learn,
             ),
             BottomNavigationBarItem(
               icon: _buildBadgeIcon(Icons.chat_bubble_outline, _unreadMessageCount),
@@ -813,9 +815,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.store_outlined),
-              activeIcon: const Icon(Icons.store),
-              label: AppLocalizations.of(context)!.shop,
+              icon: const Icon(Icons.school_outlined),
+              activeIcon: const Icon(Icons.school),
+              label: 'Learn',
+            ),
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.sports_esports_outlined),
+              activeIcon: const Icon(Icons.sports_esports),
+              label: 'Play',
             ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.person_outline),
@@ -969,37 +976,51 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       );
     }
 
-    return Stack(
-      children: [
-        _isAdmin
-            ? Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: AppColors.errorRed,
-                    width: 4,
-                  ),
-                ),
-                child: scaffold,
-              )
-            : scaffold,
+    // Get display name from profile state for invite listener
+    String displayName = 'Player';
+    final profileState = _profileBloc.state;
+    if (profileState is ProfileLoaded) {
+      displayName = profileState.profile.displayName;
+    } else if (profileState is ProfileUpdated) {
+      displayName = profileState.profile.displayName;
+    }
 
-        // App Tour Overlay
-        if (_showTour)
-          TourOverlay(
-            onComplete: _completeTour,
-            onSkip: _skipTour,
-            onTabChange: (tabIndex) {
-              setState(() {
-                _currentIndex = tabIndex;
-              });
-            },
-          ),
-      ],
+    return GameInviteListener(
+      userId: widget.userId,
+      displayName: displayName,
+      child: Stack(
+        children: [
+          _isAdmin
+              ? Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: AppColors.errorRed,
+                      width: 4,
+                    ),
+                  ),
+                  child: scaffold,
+                )
+              : scaffold,
+
+          // App Tour Overlay
+          if (_showTour)
+            TourOverlay(
+              onComplete: _completeTour,
+              onSkip: _skipTour,
+              onTabChange: (tabIndex) {
+                setState(() {
+                  _currentIndex = tabIndex;
+                });
+              },
+            ),
+        ],
+      ),
     );
   }
 
   PreferredSizeWidget? _buildAppBar() {
-    // Tab indexes: 0=Discover, 1=Learn, 2=Messages, 3=Shop, 4=Profile
+    final l10n = AppLocalizations.of(context)!;
+    // Tab indexes: 0=Exchange, 1=Messages, 2=Learn, 3=Play, 4=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
       return AppBar(
@@ -1050,12 +1071,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           const SizedBox(width: 4),
         ],
       );
-    } else if (_currentIndex == 2) {
+    } else if (_currentIndex == 1) {
       // Messages - show title and membership badge
       return AppBar(
-        title: const Text(
-          'Messages',
-          style: TextStyle(
+        title: Text(
+          l10n.messages,
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
@@ -1069,7 +1090,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ],
       );
     }
-    // Learn, Shop, and Profile - no app bar (have their own)
+    // Learn, Play, and Profile - no app bar (have their own)
     return null;
   }
 
@@ -1159,10 +1180,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
         return GestureDetector(
           onTap: () {
-            // Navigate to Shop tab (index 3)
-            setState(() {
-              _currentIndex = 3;
-            });
+            // Navigate to Coin Shop screen (no longer a tab)
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => CoinShopScreen(userId: widget.userId),
+              ),
+            );
           },
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),

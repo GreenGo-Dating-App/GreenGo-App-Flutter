@@ -214,7 +214,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get stepOf => 'von';
 
   @override
-  String get discover => 'Entdecken';
+  String get discover => 'Austausch';
 
   @override
   String get matches => 'Übereinstimmungen';
@@ -2646,4 +2646,486 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get plusTaxes => '+ Steuern';
+
+  @override
+  String get greengoLearn => 'GreenGo Learn';
+
+  @override
+  String get greengoPlay => 'GreenGo Play';
+
+  @override
+  String get totalXpLabel => 'Gesamt-XP';
+
+  @override
+  String levelLabelN(String level) {
+    return 'Stufe $level';
+  }
+
+  @override
+  String xpProgressLabel(String current, String max) {
+    return '$current / $max XP';
+  }
+
+  @override
+  String nextLevelXp(String xp) {
+    return 'Nächste Stufe in $xp XP';
+  }
+
+  @override
+  String get yourLanguages => 'Deine Sprachen';
+
+  @override
+  String get startLearning => 'Lernen starten';
+
+  @override
+  String dayStreakCount(String count) {
+    return '$count Tage Serie';
+  }
+
+  @override
+  String get streakActiveToday => 'Heute aktiv';
+
+  @override
+  String get streakInactive => 'Starte deine Serie!';
+
+  @override
+  String get exploreLanguages => 'Sprachen entdecken';
+
+  @override
+  String get dailyChallengesTitle => 'Tägliche Herausforderungen';
+
+  @override
+  String get weeklyChallengesTitle => 'Wöchentliche Herausforderungen';
+
+  @override
+  String get viewAllChallenges => 'Alle Herausforderungen anzeigen';
+
+  @override
+  String get languagePacksBtn => 'Sprachpakete';
+
+  @override
+  String get viewAllLabel => 'Alle anzeigen';
+
+  @override
+  String get learningPathTitle => 'Lernpfad';
+
+  @override
+  String unitLabelN(String number) {
+    return 'Einheit $number';
+  }
+
+  @override
+  String get lessonLabel => 'Lektion';
+
+  @override
+  String get quizCheckpointLabel => 'Quiz';
+
+  @override
+  String get flashcardReviewLabel => 'Karteikarten';
+
+  @override
+  String get aiCoachLabel => 'KI-Coach';
+
+  @override
+  String get nodeLocked => 'Gesperrt';
+
+  @override
+  String get nodeAvailable => 'Verfügbar';
+
+  @override
+  String get nodeInProgress => 'In Bearbeitung';
+
+  @override
+  String get nodeCompleted => 'Abgeschlossen';
+
+  @override
+  String xpRewardLabel(String xp) {
+    return '+$xp XP';
+  }
+
+  @override
+  String progressNofM(String n, String m) {
+    return '$n/$m';
+  }
+
+  @override
+  String get startLessonBtn => 'Lektion starten';
+
+  @override
+  String get continueLearningBtn => 'Weiter';
+
+  @override
+  String packFocusMode(String packName) {
+    return 'Paket: $packName';
+  }
+
+  @override
+  String get achievementsTitle => 'Erfolge';
+
+  @override
+  String get categoryTranslation => 'Übersetzung';
+
+  @override
+  String get categoryLearning => 'Lernen';
+
+  @override
+  String get categoryMultilingual => 'Mehrsprachig';
+
+  @override
+  String get categoryQuiz => 'Quiz';
+
+  @override
+  String get categoryStreak => 'Serie';
+
+  @override
+  String get categoryFlashcard => 'Karteikarte';
+
+  @override
+  String get categorySocial => 'Sozial';
+
+  @override
+  String get categorySeasonal => 'Saisonal';
+
+  @override
+  String get badgeUnlocked => 'Freigeschaltet';
+
+  @override
+  String get badgeLocked => 'Gesperrt';
+
+  @override
+  String get claimRewardBtn => 'Einlösen';
+
+  @override
+  String get secretAchievement => 'Geheimer Erfolg';
+
+  @override
+  String achievementProgressLabel(String current, String total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get leaderboardTitle => 'Bestenliste';
+
+  @override
+  String get periodWeekly => 'Diese Woche';
+
+  @override
+  String get periodMonthly => 'Dieser Monat';
+
+  @override
+  String get periodAllTime => 'Gesamtzeit';
+
+  @override
+  String get typeXp => 'XP';
+
+  @override
+  String get typeStreak => 'Serie';
+
+  @override
+  String get typeWordsLearned => 'Gelernte Wörter';
+
+  @override
+  String get typeQuizzes => 'Quizze';
+
+  @override
+  String get yourRankLabel => 'Dein Rang';
+
+  @override
+  String get noLeaderboardData => 'Noch keine Bestenlisten-Daten';
+
+  @override
+  String rankLabel(String rank) {
+    return '#$rank';
+  }
+
+  @override
+  String get languagePacksShopTitle => 'Sprachpakete-Shop';
+
+  @override
+  String get allLanguagesFilter => 'Alle';
+
+  @override
+  String get allCategoriesFilter => 'Alle';
+
+  @override
+  String phrasesCount(String count) {
+    return '$count Sätze';
+  }
+
+  @override
+  String get buyPackBtn => 'Kaufen';
+
+  @override
+  String get purchasedLabel => 'Gekauft';
+
+  @override
+  String get greengoXpLabel => 'GreenGoXP';
+
+  @override
+  String xpAmountLabel(String amount) {
+    return '$amount XP';
+  }
+
+  @override
+  String playersRange(String min, String max) {
+    return '$min-$max Spieler';
+  }
+
+  @override
+  String playingCountLabel(String count) {
+    return '$count spielen';
+  }
+
+  @override
+  String waitingCountLabel(String count) {
+    return '$count warten';
+  }
+
+  @override
+  String get noActiveGamesLabel => 'Keine aktiven Spiele';
+
+  @override
+  String get tapToContinue => 'Tippen zum Fortfahren';
+
+  @override
+  String get levelUpTitle => 'AUFGESTIEGEN!';
+
+  @override
+  String get comingSoonLabel => 'Demnächst';
+
+  @override
+  String get romanticCategory => 'Romantisch';
+
+  @override
+  String get travelCategory => 'Reise';
+
+  @override
+  String get flirtyCategory => 'Flirtend';
+
+  @override
+  String get businessCategory => 'Geschäft';
+
+  @override
+  String get emergencyCategory => 'Notfall';
+
+  @override
+  String get academicCategory => 'Akademisch';
+
+  @override
+  String get slangCategory => 'Umgangssprache';
+
+  @override
+  String get foodDiningCategory => 'Essen & Trinken';
+
+  @override
+  String get greetingsCategory => 'Begrüßungen';
+
+  @override
+  String get conversationCategory => 'Unterhaltung';
+
+  @override
+  String get idiomsCategory => 'Redewendungen';
+
+  @override
+  String get casualCategory => 'Locker';
+
+  @override
+  String get videoCallCategory => 'Videoanruf';
+
+  @override
+  String get datePlanningCategory => 'Date-Planung';
+
+  @override
+  String get complimentsCategory => 'Komplimente';
+
+  @override
+  String get culturalCategory => 'Kulturell';
+
+  @override
+  String get noLanguagesYet => 'Noch keine Sprachen. Fang an zu lernen!';
+
+  @override
+  String get phrasesLabel => 'Sätze';
+
+  @override
+  String get standardTier => 'Standard';
+
+  @override
+  String get premiumTier => 'Premium';
+
+  @override
+  String get bundleTier => 'Paket';
+
+  @override
+  String get proLabel => 'PRO';
+
+  @override
+  String get chooseGame => 'Wähle ein Spiel';
+
+  @override
+  String get targetLanguage => 'Zielsprache';
+
+  @override
+  String get difficultyLabel => 'Schwierigkeit';
+
+  @override
+  String get quickPlay => 'Schnelles Spiel';
+
+  @override
+  String get privateRoom => 'Privater Raum';
+
+  @override
+  String get inviteFriends => 'Freunde Einladen';
+
+  @override
+  String get notEnoughCoins => 'Nicht genug Münzen';
+
+  @override
+  String get inviteCodeCopied => 'Einladungscode kopiert!';
+
+  @override
+  String get waitingForPlayers => 'Warte auf Spieler...';
+
+  @override
+  String get allPlayersReady => 'Alle Spieler sind bereit!';
+
+  @override
+  String get startGame => 'Spiel Starten';
+
+  @override
+  String get readyButton => 'Bereit';
+
+  @override
+  String get yourTurn => 'Du bist dran!';
+
+  @override
+  String roundXofY(String current, String total) {
+    return 'Runde $current/$total';
+  }
+
+  @override
+  String get timeRemaining => 'Verbleibende Zeit';
+
+  @override
+  String get submitAnswer => 'Antwort Senden';
+
+  @override
+  String get correctAnswer => 'Richtig!';
+
+  @override
+  String get incorrectAnswer => 'Falsch';
+
+  @override
+  String get wordAlreadyUsed => 'Wort bereits verwendet';
+
+  @override
+  String get invalidWord => 'Ungültiges Wort';
+
+  @override
+  String get gameOver => 'Spiel Vorbei';
+
+  @override
+  String get youWin => 'Du hast Gewonnen!';
+
+  @override
+  String get youLose => 'Du hast Verloren';
+
+  @override
+  String xpEarned(String amount) {
+    return '$amount XP verdient';
+  }
+
+  @override
+  String get playAgain => 'Nochmal Spielen';
+
+  @override
+  String get backToLobby => 'Zurück zur Lobby';
+
+  @override
+  String typeWordStartingWith(String letter) {
+    return 'Schreibe ein Wort, das mit \"$letter\" beginnt';
+  }
+
+  @override
+  String get wordReported => 'Wort gemeldet';
+
+  @override
+  String get reportWord => 'Wort Melden';
+
+  @override
+  String get abandonGame => 'Spiel Verlassen';
+
+  @override
+  String get rounds => 'Runden';
+
+  @override
+  String get usedWords => 'Verwendete Wörter';
+
+  @override
+  String get translateWord => 'Übersetze dieses Wort';
+
+  @override
+  String get progressLabel => 'Fortschritt';
+
+  @override
+  String get firstTo30Wins => 'Wer zuerst 30 hat, gewinnt!';
+
+  @override
+  String get chooseCorrectAnswer => 'Wähle die richtige Antwort';
+
+  @override
+  String get vsLabel => 'VS';
+
+  @override
+  String get fillCategories => 'Fülle alle Kategorien aus';
+
+  @override
+  String get categoryName => 'Kategorie';
+
+  @override
+  String get roundTimer => 'Runden-Timer';
+
+  @override
+  String get loadingLabel => 'Laden...';
+
+  @override
+  String get connectionError => 'Verbindungsfehler';
+
+  @override
+  String get timeoutError => 'Zeitüberschreitung';
+
+  @override
+  String get confirmLabel => 'Bestätigen';
+
+  @override
+  String get cancelLabel => 'Abbrechen';
+
+  @override
+  String get origin => 'Herkunft';
+
+  @override
+  String get primaryOrigin => 'Primäre Herkunft';
+
+  @override
+  String get secondaryOrigin => 'Sekundäre Herkunft (optional)';
+
+  @override
+  String get searchCountries => 'Länder suchen...';
+
+  @override
+  String get notSet => 'Nicht festgelegt';
+
+  @override
+  String get tourLearnTitle => 'Sprachen Lernen';
+
+  @override
+  String get tourLearnDescription =>
+      'Lerne Vokabeln, Grammatik und Konversationsfähigkeiten';
+
+  @override
+  String get tourPlayTitle => 'Spiele';
+
+  @override
+  String get tourPlayDescription =>
+      'Fordere andere in lustigen Sprachspielen heraus';
 }

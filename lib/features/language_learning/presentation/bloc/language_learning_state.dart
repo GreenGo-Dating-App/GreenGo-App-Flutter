@@ -90,6 +90,21 @@ class LanguageLearningState extends Equatable {
   // User Preferred Languages (from profile)
   final List<String> userPreferredLanguages;
 
+  // Learning Path Progress
+  final Set<String> completedLessonIds;
+  final bool isPathProgressLoading;
+
+  // Star Ratings (nodeId → 1/2/3 stars)
+  final Map<String, int> lessonStars;
+
+  // Lesson Questions (flat Firestore)
+  final List<LessonQuestion> currentQuestions;
+  final bool isQuestionsLoading;
+
+  // Constellation (dynamic galaxy map)
+  final List<ConstellationNode> constellationNodes;
+  final bool isConstellationLoading;
+
   const LanguageLearningState({
     this.status = LanguageLearningStatus.initial,
     this.errorMessage,
@@ -138,6 +153,13 @@ class LanguageLearningState extends Equatable {
     this.isLessonsLoading = false,
     this.lessonsError,
     this.userPreferredLanguages = const [],
+    this.completedLessonIds = const {},
+    this.isPathProgressLoading = false,
+    this.lessonStars = const {},
+    this.currentQuestions = const [],
+    this.isQuestionsLoading = false,
+    this.constellationNodes = const [],
+    this.isConstellationLoading = false,
   });
 
   LanguageLearningState copyWith({
@@ -188,6 +210,13 @@ class LanguageLearningState extends Equatable {
     bool? isLessonsLoading,
     String? lessonsError,
     List<String>? userPreferredLanguages,
+    Set<String>? completedLessonIds,
+    bool? isPathProgressLoading,
+    Map<String, int>? lessonStars,
+    List<LessonQuestion>? currentQuestions,
+    bool? isQuestionsLoading,
+    List<ConstellationNode>? constellationNodes,
+    bool? isConstellationLoading,
   }) {
     return LanguageLearningState(
       status: status ?? this.status,
@@ -241,6 +270,15 @@ class LanguageLearningState extends Equatable {
       lessonsError: lessonsError ?? this.lessonsError,
       userPreferredLanguages:
           userPreferredLanguages ?? this.userPreferredLanguages,
+      completedLessonIds: completedLessonIds ?? this.completedLessonIds,
+      isPathProgressLoading:
+          isPathProgressLoading ?? this.isPathProgressLoading,
+      lessonStars: lessonStars ?? this.lessonStars,
+      currentQuestions: currentQuestions ?? this.currentQuestions,
+      isQuestionsLoading: isQuestionsLoading ?? this.isQuestionsLoading,
+      constellationNodes: constellationNodes ?? this.constellationNodes,
+      isConstellationLoading:
+          isConstellationLoading ?? this.isConstellationLoading,
     );
   }
 
@@ -312,5 +350,12 @@ class LanguageLearningState extends Equatable {
         isLessonsLoading,
         lessonsError,
         userPreferredLanguages,
+        completedLessonIds,
+        isPathProgressLoading,
+        lessonStars,
+        currentQuestions,
+        isQuestionsLoading,
+        constellationNodes,
+        isConstellationLoading,
       ];
 }

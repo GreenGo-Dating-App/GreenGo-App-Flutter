@@ -7,3 +7,6 @@ export 'lesson_list_screen.dart' hide LessonDetailScreen;
 // export 'teacher_dashboard_screen.dart';
 export 'lesson_detail_screen.dart';
 export 'ai_coach_screen.dart';
+export 'achievements_screen.dart';
+export 'leaderboard_screen.dart';
+export 'language_packs_shop_screen.dart';

@@ -7,6 +7,8 @@ import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/utils/country_flag_helper.dart';
+import 'edit_origin_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
@@ -221,6 +223,11 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
+                  // GreenGoXP Badge
+                  _buildXpBadge(activeProfile.userId),
+
+                  const SizedBox(height: 16),
+
                   // View My Profile Section (top)
                   Container(
                     margin: const EdgeInsets.only(bottom: 24),
@@ -290,6 +297,16 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: activeProfile.location.displayAddress,
                     icon: Icons.location_on,
                     onTap: () => _navigateToEditLocation(context, activeProfile),
+                  ),
+
+                  const SizedBox(height: 16),
+
+                  // Origin Section
+                  EditSectionCard(
+                    title: 'Origin',
+                    subtitle: _getOriginSubtitle(activeProfile),
+                    icon: Icons.flag,
+                    onTap: () => _navigateToEditOrigin(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -395,6 +412,15 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: AppLocalizations.of(context)!.supportCenterSubtitle,
                     icon: Icons.support_agent,
                     onTap: () => _navigateToSupport(context, activeProfile),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Coin Shop
+                  EditSectionCard(
+                    title: 'Coin Shop',
+                    subtitle: 'Purchase coins and premium membership',
+                    icon: Icons.monetization_on,
+                    onTap: () => _navigateToCoinShop(context, activeProfile),
                   ),
                   const SizedBox(height: 16),
 
@@ -547,6 +573,74 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildXpBadge(String userId) {
+    return FutureBuilder<QuerySnapshot>(
+      future: FirebaseFirestore.instance
+          .collection('language_progress')
+          .where('userId', isEqualTo: userId)
+          .get(),
+      builder: (context, snapshot) {
+        int totalXp = 0;
+        if (snapshot.hasData && snapshot.data != null) {
+          for (final doc in snapshot.data!.docs) {
+            final data = doc.data() as Map<String, dynamic>?;
+            if (data != null && data['totalXpEarned'] != null) {
+              totalXp += (data['totalXpEarned'] as num).toInt();
+            }
+          }
+        }
+        final l10n = AppLocalizations.of(context)!;
+        final formattedXp = totalXp.toString().replaceAllMapped(
+          RegExp(r'(\d)(?=(\d{3})+(?!\d))'),
+          (m) => '${m[1]},',
+        );
+        return Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFFDAA520), Color(0xFFF5C842)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: const Color(0xFFDAA520).withValues(alpha: 0.3),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.star, color: Colors.white, size: 20),
+              const SizedBox(width: 8),
+              Text(
+                l10n.greengoXpLabel,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Text(
+                l10n.xpAmountLabel(formattedXp),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   void _navigateToViewProfile(BuildContext context, Profile currentProfile) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -635,6 +729,41 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  String _getOriginSubtitle(Profile profile) {
+    if (profile.primaryOrigin == null) return 'Not set';
+    final primary = CountryFlagHelper.getFlag(profile.primaryOrigin!);
+    final primaryName = CountryFlagHelper.allCountries
+        .where((c) => c.isoCode == profile.primaryOrigin)
+        .map((c) => c.name)
+        .firstOrNull ?? profile.primaryOrigin!;
+    if (profile.secondaryOrigin == null) return '$primary $primaryName';
+    final secondary = CountryFlagHelper.getFlag(profile.secondaryOrigin!);
+    final secondaryName = CountryFlagHelper.allCountries
+        .where((c) => c.isoCode == profile.secondaryOrigin)
+        .map((c) => c.name)
+        .firstOrNull ?? profile.secondaryOrigin!;
+    return '$primary $primaryName / $secondary $secondaryName';
+  }
+
+  Future<void> _navigateToEditOrigin(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => EditOriginScreen(
+          initialPrimary: currentProfile.primaryOrigin,
+          initialSecondary: currentProfile.secondaryOrigin,
+          onSave: (primary, secondary) {
+            final updated = currentProfile.copyWith(
+              primaryOrigin: primary,
+              secondaryOrigin: secondary,
+            );
+            profileBloc.add(ProfileUpdateRequested(profile: updated));
+          },
+        ),
+      ),
+    );
   }
 
   Future<void> _navigateToEditVoice(BuildContext context, Profile currentProfile) async {
@@ -765,8 +894,21 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
+  void _navigateToCoinShop(BuildContext context, Profile profile) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<CoinBloc>()
+            ..add(LoadCoinBalance(profile.userId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: profile.userId),
+        ),
+      ),
+    );
+  }
+
   // Gamification & Coins Navigation Methods - Moved to Progress tab in bottom navigation
-  // void _navigateToCoinShop(BuildContext context, Profile currentProfile) { ... }
   // void _navigateToTransactionHistory(BuildContext context, Profile currentProfile) { ... }
   // void _navigateToAchievements(BuildContext context, Profile currentProfile) { ... }
   // void _navigateToDailyChallenges(BuildContext context, Profile currentProfile) { ... }

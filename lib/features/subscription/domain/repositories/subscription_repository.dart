@@ -33,6 +33,12 @@ abstract class SubscriptionRepository {
   /// Get purchase history
   Future<Either<Failure, List<Purchase>>> getPurchaseHistory(String userId);
 
+  /// Cancel subscription (Point 151)
+  Future<Either<Failure, void>> cancelSubscription({
+    required String userId,
+    required String reason,
+  });
+
   /// Handle failed payment (Point 153)
   Future<Either<Failure, void>> handleFailedPayment({
     required String subscriptionId,

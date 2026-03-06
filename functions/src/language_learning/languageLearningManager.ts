@@ -306,6 +306,8 @@ const languageContent: Record<string, Record<string, Record<string, string>>> = 
 const languageInfo: Record<string, { name: string; nativeName: string; flag: string }> = {
   es: { name: "Spanish", nativeName: "Español", flag: "🇪🇸" },
   en: { name: "English", nativeName: "English", flag: "🇬🇧" },
+  fr: { name: "French", nativeName: "Français", flag: "🇫🇷" },
+  de: { name: "German", nativeName: "Deutsch", flag: "🇩🇪" },
   pt: { name: "Portuguese", nativeName: "Português", flag: "🇵🇹" },
   "pt-BR": { name: "Brazilian Portuguese", nativeName: "Português Brasileiro", flag: "🇧🇷" },
   it: { name: "Italian", nativeName: "Italiano", flag: "🇮🇹" },
