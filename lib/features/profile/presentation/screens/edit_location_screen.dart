@@ -131,12 +131,12 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       if (_selectedLanguages.contains(language)) {
         _selectedLanguages.remove(language);
       } else {
-        if (_selectedLanguages.length < 5) {
+        if (_selectedLanguages.length < 3) {
           _selectedLanguages.add(language);
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('Maximum 5 languages allowed'),
+              content: Text('Maximum 3 languages allowed'),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -340,7 +340,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '${_selectedLanguages.length}/5 languages selected',
+              '${_selectedLanguages.length}/3 languages selected',
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,

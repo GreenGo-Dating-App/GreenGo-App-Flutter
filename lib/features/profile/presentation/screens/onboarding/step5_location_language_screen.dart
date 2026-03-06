@@ -200,12 +200,12 @@ class _Step5LocationLanguageScreenState
       if (_selectedLanguages.contains(language)) {
         _selectedLanguages.remove(language);
       } else {
-        if (_selectedLanguages.length < 5) {
+        if (_selectedLanguages.length < 3) {
           _selectedLanguages.add(language);
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('You can select up to 5 languages'),
+              content: Text('You can select up to 3 languages'),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -416,7 +416,7 @@ class _Step5LocationLanguageScreenState
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        '${_selectedLanguages.length}/5 selected',
+                        '${_selectedLanguages.length}/3 selected',
                         style: TextStyle(
                           color: _selectedLanguages.isNotEmpty
                               ? AppColors.richGold
