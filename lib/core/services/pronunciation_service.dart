@@ -42,11 +42,11 @@ class PronunciationService {
     return _geminiApiKey;
   }
 
-  /// Generate a cache key from phrase + language
+  /// Generate a cache key from phrase + language + voice version
   String _cacheKey(String phrase, String language) {
     // Normalize: lowercase, trim, remove extra spaces
     final normalized = phrase.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
-    return '${language.toLowerCase()}_${normalized.hashCode.abs()}';
+    return 'v2m_${language.toLowerCase()}_${normalized.hashCode.abs()}';
   }
 
   /// Get pronunciation audio URL for a phrase in a specific language.
@@ -165,12 +165,12 @@ class PronunciationService {
       'voice': {
         'languageCode': languageCode,
         'name': voiceName,
-        'ssmlGender': 'FEMALE',
+        'ssmlGender': 'MALE',
       },
       'audioConfig': {
         'audioEncoding': 'MP3',
-        'speakingRate': 0.9, // Natural pace for learning
-        'pitch': 0.0,
+        'speakingRate': 0.95, // Natural conversational pace
+        'pitch': -1.0, // Slightly deeper for natural male voice
         'effectsProfileId': ['headphone-class-device'],
       },
     });
@@ -198,35 +198,35 @@ class PronunciationService {
   /// Neural2 voices are the most human-like available on Google Cloud TTS.
   String _getNeuralVoice(String languageCode) {
     const neuralVoices = {
-      'en-US': 'en-US-Neural2-F',    // Female, very natural
-      'en-GB': 'en-GB-Neural2-F',
-      'es-ES': 'es-ES-Neural2-A',    // Female
-      'fr-FR': 'fr-FR-Neural2-A',    // Female
-      'de-DE': 'de-DE-Neural2-F',    // Female
-      'it-IT': 'it-IT-Neural2-A',    // Female
-      'pt-BR': 'pt-BR-Neural2-C',    // Female
-      'ru-RU': 'ru-RU-Wavenet-A',    // Female (Neural2 not yet available)
-      'ja-JP': 'ja-JP-Neural2-B',    // Female
-      'ko-KR': 'ko-KR-Neural2-A',   // Female
-      'ar-XA': 'ar-XA-Wavenet-A',   // Female
-      'nl-NL': 'nl-NL-Wavenet-A',   // Female
-      'pl-PL': 'pl-PL-Wavenet-A',   // Female
-      'tr-TR': 'tr-TR-Wavenet-A',   // Female
-      'hi-IN': 'hi-IN-Neural2-A',   // Female
-      'sv-SE': 'sv-SE-Wavenet-A',   // Female
-      'nb-NO': 'nb-NO-Wavenet-A',   // Female
-      'da-DK': 'da-DK-Wavenet-A',   // Female
-      'fi-FI': 'fi-FI-Wavenet-A',   // Female
-      'cs-CZ': 'cs-CZ-Wavenet-A',   // Female
-      'ro-RO': 'ro-RO-Wavenet-A',   // Female
-      'el-GR': 'el-GR-Wavenet-A',   // Female
-      'uk-UA': 'uk-UA-Wavenet-A',   // Female
-      'hu-HU': 'hu-HU-Wavenet-A',   // Female
-      'sk-SK': 'sk-SK-Wavenet-A',   // Female
+      'en-US': 'en-US-Neural2-D',    // Male, natural
+      'en-GB': 'en-GB-Neural2-D',    // Male
+      'es-ES': 'es-ES-Neural2-B',    // Male
+      'fr-FR': 'fr-FR-Neural2-D',    // Male
+      'de-DE': 'de-DE-Neural2-B',    // Male
+      'it-IT': 'it-IT-Neural2-C',    // Male
+      'pt-BR': 'pt-BR-Neural2-B',    // Male
+      'ru-RU': 'ru-RU-Wavenet-B',    // Male (Neural2 not yet available)
+      'ja-JP': 'ja-JP-Neural2-C',    // Male
+      'ko-KR': 'ko-KR-Neural2-C',   // Male
+      'ar-XA': 'ar-XA-Wavenet-B',   // Male
+      'nl-NL': 'nl-NL-Wavenet-B',   // Male
+      'pl-PL': 'pl-PL-Wavenet-B',   // Male
+      'tr-TR': 'tr-TR-Wavenet-B',   // Male
+      'hi-IN': 'hi-IN-Neural2-B',   // Male
+      'sv-SE': 'sv-SE-Wavenet-C',   // Male
+      'nb-NO': 'nb-NO-Wavenet-B',   // Male
+      'da-DK': 'da-DK-Wavenet-C',   // Male
+      'fi-FI': 'fi-FI-Wavenet-B',   // Male
+      'cs-CZ': 'cs-CZ-Wavenet-A',   // Male
+      'ro-RO': 'ro-RO-Wavenet-A',   // Male
+      'el-GR': 'el-GR-Wavenet-A',   // Male
+      'uk-UA': 'uk-UA-Wavenet-A',   // Male
+      'hu-HU': 'hu-HU-Wavenet-A',   // Male
+      'sk-SK': 'sk-SK-Wavenet-A',   // Male
       'bg-BG': 'bg-BG-Standard-A',  // Standard (no neural yet)
-      'vi-VN': 'vi-VN-Neural2-A',   // Female
-      'th-TH': 'th-TH-Neural2-C',   // Female
-      'id-ID': 'id-ID-Wavenet-A',   // Female
+      'vi-VN': 'vi-VN-Neural2-D',   // Male
+      'th-TH': 'th-TH-Neural2-A',   // Male
+      'id-ID': 'id-ID-Wavenet-B',   // Male
     };
     // Try exact match, then base language
     final base = languageCode.split('-').first;
@@ -235,7 +235,7 @@ class PronunciationService {
             .where((e) => e.key.startsWith(base))
             .map((e) => e.value)
             .firstOrNull ??
-        'en-US-Neural2-F';
+        'en-US-Neural2-D';
   }
 
   /// Map language display names to BCP-47 language codes

@@ -121,8 +121,8 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     try {
       final ttsLang = _ttsLocale(widget.languageTarget);
       await _tts.setLanguage(ttsLang);
-      await _tts.setSpeechRate(0.5);
-      await _tts.setPitch(1.0);
+      await _tts.setSpeechRate(0.45);
+      await _tts.setPitch(0.85);
       await _tts.setVolume(1.0);
       _tts.setStartHandler(() {
         if (mounted) {
