@@ -150,6 +150,16 @@ class OnboardingTravelPreferenceUpdated extends OnboardingEvent {
   List<Object?> get props => [travelPreference];
 }
 
+class OnboardingOriginUpdated extends OnboardingEvent {
+  final String? primaryOrigin;
+  final String? secondaryOrigin;
+
+  const OnboardingOriginUpdated({this.primaryOrigin, this.secondaryOrigin});
+
+  @override
+  List<Object?> get props => [primaryOrigin, secondaryOrigin];
+}
+
 class OnboardingSocialLinksUpdated extends OnboardingEvent {
   final SocialLinks socialLinks;
 

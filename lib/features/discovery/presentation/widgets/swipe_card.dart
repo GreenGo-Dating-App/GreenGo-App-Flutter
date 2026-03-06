@@ -324,7 +324,6 @@ class _SwipeCardState extends State<SwipeCard>
                 CountryFlagBadge(
                   primary: profile.primaryOrigin,
                   secondary: profile.secondaryOrigin,
-                  compact: true,
                 ),
               ],
               // Traveler badge

@@ -115,8 +115,7 @@ class MatchCardWidget extends StatelessWidget {
                           CountryFlagBadge(
                             primary: profile!.primaryOrigin,
                             secondary: profile!.secondaryOrigin,
-                            compact: true,
-                            size: 18,
+                            fontSize: 18,
                           ),
                         ],
                       ],

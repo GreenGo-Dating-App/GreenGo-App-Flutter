@@ -314,7 +314,6 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                               CountryFlagBadge(
                                 primary: widget.profile.primaryOrigin,
                                 secondary: widget.profile.secondaryOrigin,
-                                compact: true,
                               ),
                             ],
                             // Traveler badge

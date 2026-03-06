@@ -32,6 +32,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingVerificationPhotoUpdated>(_onOnboardingVerificationPhotoUpdated);
     on<OnboardingLearningLanguagesUpdated>(_onOnboardingLearningLanguagesUpdated);
     on<OnboardingTravelPreferenceUpdated>(_onOnboardingTravelPreferenceUpdated);
+    on<OnboardingOriginUpdated>(_onOnboardingOriginUpdated);
     on<OnboardingSocialLinksUpdated>(_onOnboardingSocialLinksUpdated);
     on<OnboardingCompleted>(_onOnboardingCompleted);
   }
@@ -282,6 +283,19 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+  void _onOnboardingOriginUpdated(
+    OnboardingOriginUpdated event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(
+        primaryOrigin: event.primaryOrigin,
+        secondaryOrigin: event.secondaryOrigin,
+      ));
+    }
+  }
+
   void _onOnboardingSocialLinksUpdated(
     OnboardingSocialLinksUpdated event,
     Emitter<OnboardingState> emit,
@@ -325,6 +339,9 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         nativeLanguage: currentState.nativeLanguage,
         // Travel preference
         travelPreference: currentState.travelPreference,
+        // Origin fields
+        primaryOrigin: currentState.primaryOrigin,
+        secondaryOrigin: currentState.secondaryOrigin,
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));

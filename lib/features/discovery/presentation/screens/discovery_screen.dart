@@ -2011,8 +2011,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 child: CountryFlagBadge(
                   primary: profile.primaryOrigin,
                   secondary: profile.secondaryOrigin,
-                  compact: true,
-                  size: 20,
+                  fontSize: 20,
                 ),
               ),
 
