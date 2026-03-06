@@ -2002,24 +2002,23 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Origin flag badge (top right)
-            if (profile.primaryOrigin != null &&
+            // Language flag badge (top right)
+            if (profile.languages.isNotEmpty &&
                 widget.actionOverlay != 'matched')
               Positioned(
                 top: 4,
                 right: 4,
-                child: CountryFlagBadge(
-                  primary: profile.primaryOrigin,
-                  secondary: profile.secondaryOrigin,
-                  fontSize: 20,
+                child: LanguageFlagBadge(
+                  languages: profile.languages,
+                  fontSize: 12,
                 ),
               ),
 
             // Traveler badge (top right, below flag badge if present)
             if (profile.isTravelerActive && widget.actionOverlay != 'matched')
               Positioned(
-                top: profile.primaryOrigin != null &&
-                     widget.actionOverlay != 'matched' ? 28 : 4,
+                top: profile.languages.isNotEmpty &&
+                     widget.actionOverlay != 'matched' ? 22 : 4,
                 right: 4,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
@@ -2059,7 +2058,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
               Positioned(
                 top: () {
                   double offset = 4.0;
-                  if (profile.primaryOrigin != null) offset += 24.0;
+                  if (profile.languages.isNotEmpty) offset += 20.0;
                   if (profile.isTravelerActive) offset += 20.0;
                   return offset;
                 }(),

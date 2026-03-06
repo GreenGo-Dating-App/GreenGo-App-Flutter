@@ -7,8 +7,6 @@ import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
-import '../../../../core/utils/country_flag_helper.dart';
-import 'edit_origin_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
@@ -297,16 +295,6 @@ class EditProfileScreen extends StatelessWidget {
                     subtitle: activeProfile.location.displayAddress,
                     icon: Icons.location_on,
                     onTap: () => _navigateToEditLocation(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Origin Section
-                  EditSectionCard(
-                    title: 'Origin',
-                    subtitle: _getOriginSubtitle(activeProfile),
-                    icon: Icons.flag,
-                    onTap: () => _navigateToEditOrigin(context, activeProfile),
                   ),
 
                   const SizedBox(height: 16),
@@ -729,41 +717,6 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
-  }
-
-  String _getOriginSubtitle(Profile profile) {
-    if (profile.primaryOrigin == null) return 'Not set';
-    final primary = CountryFlagHelper.getFlag(profile.primaryOrigin!);
-    final primaryName = CountryFlagHelper.allCountries
-        .where((c) => c.isoCode == profile.primaryOrigin)
-        .map((c) => c.name)
-        .firstOrNull ?? profile.primaryOrigin!;
-    if (profile.secondaryOrigin == null) return '$primary $primaryName';
-    final secondary = CountryFlagHelper.getFlag(profile.secondaryOrigin!);
-    final secondaryName = CountryFlagHelper.allCountries
-        .where((c) => c.isoCode == profile.secondaryOrigin)
-        .map((c) => c.name)
-        .firstOrNull ?? profile.secondaryOrigin!;
-    return '$primary $primaryName / $secondary $secondaryName';
-  }
-
-  Future<void> _navigateToEditOrigin(BuildContext context, Profile currentProfile) async {
-    final profileBloc = context.read<ProfileBloc>();
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => EditOriginScreen(
-          initialPrimary: currentProfile.primaryOrigin,
-          initialSecondary: currentProfile.secondaryOrigin,
-          onSave: (primary, secondary) {
-            final updated = currentProfile.copyWith(
-              primaryOrigin: primary,
-              secondaryOrigin: secondary,
-            );
-            profileBloc.add(ProfileUpdateRequested(profile: updated));
-          },
-        ),
-      ),
-    );
   }
 
   Future<void> _navigateToEditVoice(BuildContext context, Profile currentProfile) async {

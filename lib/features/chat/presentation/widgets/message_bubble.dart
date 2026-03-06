@@ -38,7 +38,6 @@ class MessageBubble extends StatefulWidget {
 }
 
 class _MessageBubbleState extends State<MessageBubble> {
-  bool _showOriginal = false;
   bool _isStarred = false;
 
   @override
@@ -52,7 +51,9 @@ class _MessageBubbleState extends State<MessageBubble> {
   Widget build(BuildContext context) {
     final message = widget.message;
     final isCurrentUser = widget.isCurrentUser;
-    final hasTranslation = message.translatedContent != null && message.translatedContent!.isNotEmpty;
+    final hasTranslation = message.translatedContent != null &&
+        message.translatedContent!.isNotEmpty &&
+        message.translatedContent != message.content;
 
     // Album share/revoke messages are center-aligned like system messages
     if (message.type == MessageType.albumShare || message.type == MessageType.albumRevoke) {
@@ -60,11 +61,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     return GestureDetector(
-      onDoubleTap: hasTranslation ? () {
-        setState(() {
-          _showOriginal = !_showOriginal;
-        });
-      } : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
@@ -124,16 +120,6 @@ class _MessageBubbleState extends State<MessageBubble> {
                           : AppColors.textTertiary,
                     ),
                     const SizedBox(width: 4),
-                    Text(
-                      _showOriginal ? AppLocalizations.of(context)!.chatMessageOriginal : AppLocalizations.of(context)!.chatMessageTranslated,
-                      style: TextStyle(
-                        color: isCurrentUser
-                            ? AppColors.deepBlack.withOpacity(0.6)
-                            : AppColors.textTertiary,
-                        fontSize: 10,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
                   ],
                   Text(
                     message.timeText,
@@ -342,24 +328,49 @@ class _MessageBubbleState extends State<MessageBubble> {
   Widget _buildMessageContent() {
     final message = widget.message;
     final isCurrentUser = widget.isCurrentUser;
-    final hasTranslation = message.translatedContent != null && message.translatedContent!.isNotEmpty;
-
-    // Determine which content to display
-    // If translated and not showing original, show translated content
-    // Otherwise show original content
-    final displayContent = hasTranslation && !_showOriginal
-        ? message.translatedContent!
-        : message.content;
+    final hasTranslation = message.translatedContent != null &&
+        message.translatedContent!.isNotEmpty &&
+        message.translatedContent != message.content;
 
     switch (message.type) {
       case MessageType.text:
-        return Text(
-          displayContent,
-          style: TextStyle(
-            color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
-            fontSize: 15,
-            height: 1.4,
-          ),
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Translated text as the main readable message
+            Text(
+              hasTranslation ? message.translatedContent! : message.content,
+              style: TextStyle(
+                color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
+                fontSize: 15,
+                height: 1.4,
+              ),
+            ),
+            // Original text shown underneath for learning
+            if (hasTranslation) ...[
+              const SizedBox(height: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                decoration: BoxDecoration(
+                  color: isCurrentUser
+                      ? AppColors.deepBlack.withOpacity(0.08)
+                      : AppColors.backgroundDark.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Text(
+                  message.content,
+                  style: TextStyle(
+                    color: isCurrentUser
+                        ? AppColors.deepBlack.withOpacity(0.7)
+                        : AppColors.textSecondary,
+                    fontSize: 13,
+                    height: 1.3,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+            ],
+          ],
         );
 
       case MessageType.image:

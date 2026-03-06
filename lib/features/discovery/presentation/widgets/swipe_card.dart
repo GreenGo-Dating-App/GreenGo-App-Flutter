@@ -319,11 +319,11 @@ class _SwipeCardState extends State<SwipeCard>
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
-              if (profile.primaryOrigin != null) ...[
+              if (profile.languages.isNotEmpty) ...[
                 const SizedBox(width: 8),
-                CountryFlagBadge(
-                  primary: profile.primaryOrigin,
-                  secondary: profile.secondaryOrigin,
+                LanguageFlagBadge(
+                  languages: profile.languages,
+                  fontSize: 16,
                 ),
               ],
               // Traveler badge

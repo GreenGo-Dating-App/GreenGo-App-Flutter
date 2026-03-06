@@ -308,12 +308,12 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 fontSize: 28,
                               ),
                             ),
-                            // Show origin flag badge
-                            if (widget.profile.primaryOrigin != null) ...[
+                            // Show language flags
+                            if (widget.profile.languages.isNotEmpty) ...[
                               const SizedBox(width: 12),
-                              CountryFlagBadge(
-                                primary: widget.profile.primaryOrigin,
-                                secondary: widget.profile.secondaryOrigin,
+                              LanguageFlagBadge(
+                                languages: widget.profile.languages,
+                                fontSize: 18,
                               ),
                             ],
                             // Traveler badge

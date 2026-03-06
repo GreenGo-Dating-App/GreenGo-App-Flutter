@@ -8,7 +8,6 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../domain/entities/lesson_question.dart';
 import '../bloc/language_learning_bloc.dart';
-import '../widgets/teacher_reaction_widget.dart';
 
 /// Self-contained lesson session driven by flat Firestore `lessons` collection.
 ///
@@ -65,10 +64,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
   bool _isSpeaking = false;
   bool _ttsReady = false;
   final _ttsPlayer = AudioPlayer();
-
-  // Teacher
-  TeacherEmotion _teacherEmotion = TeacherEmotion.greeting;
-  bool _showTeacher = true;
 
   // Animations
   late AnimationController _pulseCtrl;
@@ -133,7 +128,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         if (mounted) {
           setState(() {
             _isSpeaking = true;
-            _teacherEmotion = TeacherEmotion.speaking;
+
           });
         }
       });
@@ -141,7 +136,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         if (mounted) {
           setState(() {
             _isSpeaking = false;
-            if (!_answered) _teacherEmotion = TeacherEmotion.greeting;
           });
         }
       });
@@ -150,7 +144,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         if (mounted) {
           setState(() {
             _isSpeaking = false;
-            if (!_answered) _teacherEmotion = TeacherEmotion.greeting;
           });
         }
       });
@@ -308,7 +301,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     }
     setState(() {
       _isSpeaking = true;
-      _teacherEmotion = TeacherEmotion.speaking;
     });
     // Try neural TTS via Google Translate endpoint
     if (await _speakNeural(text)) return;
@@ -355,8 +347,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     setState(() {
       _selectedAnswer = option;
       _answered = true;
-      _teacherEmotion =
-          isCorrect ? TeacherEmotion.correct : TeacherEmotion.wrong;
       if (isCorrect) _correctAnswers++;
     });
     try {
@@ -373,8 +363,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     setState(() {
       _selectedAnswer = input.trim();
       _answered = true;
-      _teacherEmotion =
-          isCorrect ? TeacherEmotion.correct : TeacherEmotion.wrong;
       if (isCorrect) _correctAnswers++;
     });
     try {
@@ -389,7 +377,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     setState(() {
       _selectedAnswer = _textController.text.trim();
       _answered = true;
-      _teacherEmotion = TeacherEmotion.correct;
       // Free response always counts as correct (no single right answer)
       _correctAnswers++;
     });
@@ -404,8 +391,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     setState(() {
       _selectedAnswer = allCorrect ? 'correct' : 'incorrect';
       _answered = true;
-      _teacherEmotion =
-          allCorrect ? TeacherEmotion.correct : TeacherEmotion.wrong;
       if (allCorrect) _correctAnswers++;
     });
     try {
@@ -423,7 +408,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     if (_currentIndex + 1 >= qs.length) {
       setState(() {
         _completed = true;
-        _teacherEmotion = TeacherEmotion.celebrating;
       });
       _onComplete();
       // Trigger completion animations
@@ -449,7 +433,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
       _selectedMatchLeft = null;
       _hintExpanded = false;
       _passageRevealed = false;
-      _teacherEmotion = TeacherEmotion.greeting;
     });
   }
 
@@ -540,16 +523,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         _buildQuestion(q),
-                        if (_showTeacher) ...[
-                          const SizedBox(height: 12),
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: TeacherReactionWidget(
-                              emotion: _teacherEmotion,
-                              size: 100,
-                            ),
-                          ),
-                        ],
                       ],
                     ),
                   ),
@@ -2776,12 +2749,6 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Teacher celebrating
-                  const TeacherReactionWidget(
-                    emotion: TeacherEmotion.celebrating,
-                  ),
-                  const SizedBox(height: 16),
-
                   // Animated Stars
                   AnimatedBuilder(
                     animation: _starCtrl,

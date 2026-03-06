@@ -109,13 +109,12 @@ class MatchCardWidget extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        // Show origin flag badge
-                        if (profile != null && profile!.primaryOrigin != null) ...[
+                        // Show language flags
+                        if (profile != null && profile!.languages.isNotEmpty) ...[
                           const SizedBox(width: 6),
-                          CountryFlagBadge(
-                            primary: profile!.primaryOrigin,
-                            secondary: profile!.secondaryOrigin,
-                            fontSize: 18,
+                          LanguageFlagBadge(
+                            languages: profile!.languages,
+                            fontSize: 14,
                           ),
                         ],
                       ],

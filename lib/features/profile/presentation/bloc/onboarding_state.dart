@@ -10,8 +10,7 @@ enum OnboardingStep {
   bio, // Step 4: Bio
   interests, // Step 5: Interests
   locationLanguage, // Step 6: Location & Languages
-  origin, // Step 7: Where are you from?
-  learningLanguages, // Step 8: What languages do you want to learn?
+  learningLanguages, // Step 7: What languages do you want to learn?
   travelPreference, // Step 8: How do you want to use GreenGo?
   voice, // Step 9: Voice recording
   personality, // Step 10: Personality quiz
@@ -48,8 +47,6 @@ class OnboardingInProgress extends OnboardingState {
   final List<String> preferredLanguages; // Languages user wants to learn
   final String? nativeLanguage;
   final String? travelPreference; // 'learn_travel', 'help_travelers', 'both'
-  final String? primaryOrigin; // ISO 3166-1 alpha-2
-  final String? secondaryOrigin; // ISO 3166-1 alpha-2
 
   const OnboardingInProgress({
     required this.userId,
@@ -69,8 +66,6 @@ class OnboardingInProgress extends OnboardingState {
     this.preferredLanguages = const [],
     this.nativeLanguage,
     this.travelPreference,
-    this.primaryOrigin,
-    this.secondaryOrigin,
   });
 
   OnboardingInProgress copyWith({
@@ -90,8 +85,6 @@ class OnboardingInProgress extends OnboardingState {
     List<String>? preferredLanguages,
     String? nativeLanguage,
     String? travelPreference,
-    String? primaryOrigin,
-    String? secondaryOrigin,
   }) {
     return OnboardingInProgress(
       userId: userId,
@@ -111,8 +104,6 @@ class OnboardingInProgress extends OnboardingState {
       preferredLanguages: preferredLanguages ?? this.preferredLanguages,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       travelPreference: travelPreference ?? this.travelPreference,
-      primaryOrigin: primaryOrigin ?? this.primaryOrigin,
-      secondaryOrigin: secondaryOrigin ?? this.secondaryOrigin,
     );
   }
 
@@ -138,8 +129,6 @@ class OnboardingInProgress extends OnboardingState {
         return interests.length >= 3;
       case OnboardingStep.locationLanguage:
         return location != null && languages.isNotEmpty;
-      case OnboardingStep.origin:
-        return primaryOrigin != null; // Primary origin is required
       case OnboardingStep.learningLanguages:
         return true; // Optional — user can skip
       case OnboardingStep.travelPreference:
@@ -174,8 +163,6 @@ class OnboardingInProgress extends OnboardingState {
         preferredLanguages,
         nativeLanguage,
         travelPreference,
-        primaryOrigin,
-        secondaryOrigin,
       ];
 }
 

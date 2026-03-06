@@ -35,7 +35,7 @@ import '../bloc/chat_state.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
-import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
 
 /// Chat Screen
 ///
@@ -1675,18 +1675,11 @@ class _ChatScreenState extends State<ChatScreen> {
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
-                    if (widget.otherUserProfile.primaryOrigin != null) ...[
+                    if (widget.otherUserProfile.languages.isNotEmpty) ...[
                       const SizedBox(width: 6),
-                      Text(
-                        CountryFlagHelper.getFlag(widget.otherUserProfile.primaryOrigin!),
-                        style: const TextStyle(fontSize: 14),
-                      ),
-                    ],
-                    if (widget.otherUserProfile.secondaryOrigin != null) ...[
-                      const SizedBox(width: 2),
-                      Text(
-                        CountryFlagHelper.getFlag(widget.otherUserProfile.secondaryOrigin!),
-                        style: const TextStyle(fontSize: 14),
+                      LanguageFlagBadge(
+                        languages: widget.otherUserProfile.languages,
+                        fontSize: 12,
                       ),
                     ],
                   ],
