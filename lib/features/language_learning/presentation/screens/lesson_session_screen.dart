@@ -2382,18 +2382,13 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                     child: SizedBox(
                       width: 140,
                       height: 140,
-                      child: Lottie.asset(
-                        'assets/lottie/teacher/teacher_greeting.json',
-                        fit: BoxFit.contain,
-                        repeat: true,
-                        errorBuilder: (_, __, ___) => Container(
-                          decoration: BoxDecoration(
-                            color: _gold.withOpacity(0.15),
-                            shape: BoxShape.circle,
-                          ),
-                          child: const Icon(Icons.school,
-                              color: _gold, size: 64),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: _gold.withOpacity(0.15),
+                          shape: BoxShape.circle,
                         ),
+                        child: const Icon(Icons.school,
+                            color: _gold, size: 64),
                       ),
                     ),
                   ),

@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 /// Teacher emotions that drive animation + speech bubble content.
 enum TeacherEmotion {
@@ -69,16 +68,6 @@ class _TeacherReactionWidgetState extends State<TeacherReactionWidget>
     TeacherEmotion.speaking: <String>[],
   };
 
-  static const _lottieFiles = {
-    TeacherEmotion.greeting: 'assets/lottie/teacher/teacher_greeting.json',
-    TeacherEmotion.correct: 'assets/lottie/teacher/teacher_correct.json',
-    TeacherEmotion.wrong: 'assets/lottie/teacher/teacher_wrong.json',
-    TeacherEmotion.thinking: 'assets/lottie/teacher/teacher_thinking.json',
-    TeacherEmotion.celebrating:
-        'assets/lottie/teacher/teacher_celebrating.json',
-    TeacherEmotion.speaking: 'assets/lottie/teacher/teacher_speaking.json',
-  };
-
   @override
   void initState() {
     super.initState();
@@ -138,7 +127,6 @@ class _TeacherReactionWidgetState extends State<TeacherReactionWidget>
 
   @override
   Widget build(BuildContext context) {
-    final lottiePath = _lottieFiles[widget.emotion]!;
     final showBubble =
         _message.isNotEmpty && _bubbleEmotions.contains(widget.emotion);
     final s = widget.size;
@@ -147,7 +135,6 @@ class _TeacherReactionWidgetState extends State<TeacherReactionWidget>
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Speech bubble (only for greeting/thinking/celebrating)
         if (showBubble)
           Padding(
             padding: EdgeInsets.only(left: s * 0.2, bottom: 4),
@@ -180,24 +167,18 @@ class _TeacherReactionWidgetState extends State<TeacherReactionWidget>
               ),
             ),
           ),
-        // Teacher Lottie animation — large
         SizedBox(
           width: s,
           height: s,
-          child: Lottie.asset(
-            lottiePath,
-            fit: BoxFit.contain,
-            repeat: true,
-            errorBuilder: (_, __, ___) => Container(
-              decoration: BoxDecoration(
-                color: _emotionColor.withOpacity(0.15),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                _iconForEmotion(widget.emotion),
-                color: _emotionColor,
-                size: s * 0.4,
-              ),
+          child: Container(
+            decoration: BoxDecoration(
+              color: _emotionColor.withOpacity(0.15),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              _iconForEmotion(widget.emotion),
+              color: _emotionColor,
+              size: s * 0.4,
             ),
           ),
         ),

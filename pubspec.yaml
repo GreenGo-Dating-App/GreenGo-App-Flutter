@@ -173,10 +173,8 @@ flutter:
     - assets/icons/games/
     - assets/icon/
     - assets/lottie/
-    - assets/lottie/teacher/
     - assets/fonts/
     - assets/legal/
-    - assets/sounds/
 
   fonts:
     - family: Poppins
