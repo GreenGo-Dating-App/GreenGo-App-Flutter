@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
@@ -52,7 +53,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
           children: [
             if (widget.userName != null) ...[
               Text(
-                '${widget.userName} is typing',
+                AppLocalizations.of(context)!.chatIsTyping(widget.userName!),
                 style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 13,

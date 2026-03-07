@@ -62,7 +62,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to pick image: ${e.toString()}'),
+          content: Text(AppLocalizations.of(context)?.onboardingFailedPickImage(e.toString()) ?? 'Failed to pick image: ${e.toString()}'),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -111,8 +111,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                 const SizedBox(height: 24),
 
                 Text(
-                  'Add Photo',
-                  style: TextStyle(
+                  AppLocalizations.of(context)?.onboardingAddPhoto ?? 'Add Photo',
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -122,8 +122,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 
                 _buildSourceOption(
                   icon: Icons.camera_alt_rounded,
-                  label: 'Take Photo',
-                  subtitle: 'Use your camera',
+                  label: AppLocalizations.of(context)?.onboardingTakePhoto ?? 'Take Photo',
+                  subtitle: AppLocalizations.of(context)?.onboardingUseYourCamera ?? 'Use your camera',
                   onTap: () {
                     Navigator.pop(context);
                     _pickImage(ImageSource.camera);
@@ -132,8 +132,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                 const SizedBox(height: 12),
                 _buildSourceOption(
                   icon: Icons.photo_library_rounded,
-                  label: 'Choose from Gallery',
-                  subtitle: 'Select from your photos',
+                  label: AppLocalizations.of(context)?.onboardingChooseFromGallery ?? 'Choose from Gallery',
+                  subtitle: AppLocalizations.of(context)?.onboardingSelectFromPhotos ?? 'Select from your photos',
                   onTap: () {
                     Navigator.pop(context);
                     _pickImage(ImageSource.gallery);
@@ -235,7 +235,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('OK', style: TextStyle(color: AppColors.richGold)),
+            child: Text(AppLocalizations.of(context)?.ok ?? 'OK', style: const TextStyle(color: AppColors.richGold)),
           ),
         ],
       ),
@@ -246,7 +246,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
     if (photoUrls.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Please upload at least one photo'),
+          content: Text(AppLocalizations.of(context)?.onboardingUploadAtLeastOnePhoto ?? 'Please upload at least one photo'),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -292,8 +292,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
         final isUploading = state is OnboardingPhotoUploading;
 
         return LuxuryOnboardingLayout(
-          title: 'Show yourself',
-          subtitle: 'Add photos that represent the real you',
+          title: AppLocalizations.of(context)?.onboardingShowYourself ?? 'Show yourself',
+          subtitle: AppLocalizations.of(context)?.onboardingAddPhotosSubtitle ?? 'Add photos that represent the real you',
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -362,9 +362,9 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'AI Verified Photos',
-                            style: TextStyle(
+                          Text(
+                            AppLocalizations.of(context)?.onboardingAiVerifiedPhotos ?? 'AI Verified Photos',
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
@@ -372,7 +372,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            'Your photos are verified using AI to ensure authenticity',
+                            AppLocalizations.of(context)?.onboardingAiVerifiedDescription ?? 'Your photos are verified using AI to ensure authenticity',
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.5),
                               fontSize: 12,
@@ -389,7 +389,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 
               // Continue Button
               LuxuryButton(
-                text: 'Continue',
+                text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
                 onPressed: () => _handleContinue(state.photoUrls),
                 isLoading: isUploading,
               ),
@@ -460,9 +460,9 @@ class _PhotoCard extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: const Text(
-                'MAIN',
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(context)?.onboardingMainPhoto ?? 'MAIN',
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
@@ -555,8 +555,8 @@ class _AddPhotoCard extends StatelessWidget {
             if (isFirst) ...[
               const SizedBox(height: 8),
               Text(
-                'Add Photo',
-                style: TextStyle(
+                AppLocalizations.of(context)?.onboardingAddPhoto ?? 'Add Photo',
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 12,
                   fontWeight: FontWeight.w600,

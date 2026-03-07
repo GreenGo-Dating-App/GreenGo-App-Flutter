@@ -600,6 +600,51 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // GAME WORDS COLLECTION (language game vocabulary — read-only for players)
+    // ============================================================================
+    match /game_words/{wordId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME GRAMMAR QUESTIONS (grammar duel questions — read-only for players)
+    // ============================================================================
+    match /game_grammar_questions/{questionId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME TRANSLATION RACE (pre-built translation questions — read-only)
+    // ============================================================================
+    match /game_translation_race/{questionId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME REPORTED WORDS (players can report inappropriate words)
+    // ============================================================================
+    match /game_reported_words/{reportId} {
+      allow read: if isAdminPanelUser();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // PRONUNCIATION CACHE (TTS audio URL cache — shared across all users)
+    // ============================================================================
+    match /pronunciation_cache/{cacheId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isAdminPanelUser();
+    }
+
+    // Note: 'lessons' and 'constellation' collections already have rules above
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {

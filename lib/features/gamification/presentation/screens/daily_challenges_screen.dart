@@ -6,6 +6,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/daily_challenge.dart';
 import '../../domain/usecases/get_daily_challenges.dart';
@@ -47,6 +48,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
       body: BlocConsumer<GamificationBloc, GamificationState>(
@@ -60,7 +62,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                     const Icon(Icons.check_circle, color: Colors.white),
                     const SizedBox(width: 12),
                     Expanded(
-                      child: Text('${state.recentlyCompleted!.name} completed!'),
+                      child: Text(l10n.gamificationChallengeCompleted(state.recentlyCompleted!.name)),
                     ),
                   ],
                 ),
@@ -70,7 +72,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   borderRadius: BorderRadius.circular(12),
                 ),
                 action: SnackBarAction(
-                  label: 'Claim',
+                  label: l10n.gamificationClaim,
                   textColor: Colors.white,
                   onPressed: () {
                     context.read<GamificationBloc>().add(
@@ -127,7 +129,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Loading challenges...',
+                    l10n.gamificationLoadingChallenges,
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.6),
                       fontSize: 14,
@@ -195,7 +197,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   const Text('🎯', style: TextStyle(fontSize: 48)),
                   const SizedBox(height: 16),
                   Text(
-                    'No challenges available',
+                    l10n.gamificationNoChallenges,
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.7),
                       fontSize: 16,
@@ -234,6 +236,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
   }
 
   Widget _buildRewardsSummary(DailyChallengesData data) {
+    final l10n = AppLocalizations.of(context)!;
     return ClipRRect(
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
@@ -264,7 +267,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                     child: _buildRewardCard(
                       '⭐',
                       '${data.totalXPAvailable}',
-                      'XP Available',
+                      l10n.gamificationXpAvailable,
                       const Color(0xFF8B5CF6),
                     ),
                   ),
@@ -273,7 +276,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                     child: _buildRewardCard(
                       '🪙',
                       '${data.totalCoinsAvailable}',
-                      'Coins Available',
+                      l10n.gamificationCoinsAvailable,
                       const Color(0xFFFFD700),
                     ),
                   ),
@@ -285,7 +288,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                 children: [
                   Expanded(
                     child: _buildCompletionProgress(
-                      'Daily',
+                      l10n.gamificationDaily,
                       data.completedDaily,
                       data.totalDaily,
                       const Color(0xFF3B82F6),
@@ -294,7 +297,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   const SizedBox(width: 16),
                   Expanded(
                     child: _buildCompletionProgress(
-                      'Weekly',
+                      l10n.gamificationWeekly,
                       data.completedWeekly,
                       data.totalWeekly,
                       const Color(0xFF10B981),
@@ -412,6 +415,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
   }
 
   Widget _buildTabSelector() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
@@ -434,14 +438,14 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
           fontSize: 14,
           fontWeight: FontWeight.bold,
         ),
-        tabs: const [
+        tabs: [
           Tab(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.today, size: 18),
-                SizedBox(width: 8),
-                Text('Daily'),
+                const Icon(Icons.today, size: 18),
+                const SizedBox(width: 8),
+                Text(l10n.gamificationDaily),
               ],
             ),
           ),
@@ -449,9 +453,9 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.calendar_view_week, size: 18),
-                SizedBox(width: 8),
-                Text('Weekly'),
+                const Icon(Icons.calendar_view_week, size: 18),
+                const SizedBox(width: 8),
+                Text(l10n.gamificationWeekly),
               ],
             ),
           ),
@@ -461,6 +465,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
   }
 
   Widget _buildChallengesList(List<ChallengeWithProgress> challenges, String type) {
+    final l10n = AppLocalizations.of(context)!;
     if (challenges.isEmpty) {
       return Center(
         child: Column(
@@ -481,7 +486,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              'No $type challenges available',
+              l10n.gamificationNoChallengesType(type),
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white.withOpacity(0.6),
@@ -735,14 +740,14 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                           borderRadius: BorderRadius.circular(14),
                         ),
                       ),
-                      child: const Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.card_giftcard, size: 20),
-                          SizedBox(width: 8),
+                          const Icon(Icons.card_giftcard, size: 20),
+                          const SizedBox(width: 8),
                           Text(
-                            'Claim Reward',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.gamificationClaimReward,
+                            style: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w600,
                             ),
@@ -761,6 +766,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
   }
 
   Widget _buildDifficultyBadge(ChallengeDifficulty difficulty) {
+    final l10n = AppLocalizations.of(context)!;
     final colors = {
       ChallengeDifficulty.easy: const Color(0xFF10B981),
       ChallengeDifficulty.medium: const Color(0xFFF59E0B),
@@ -768,10 +774,10 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
       ChallengeDifficulty.epic: const Color(0xFF8B5CF6),
     };
     final labels = {
-      ChallengeDifficulty.easy: 'Easy',
-      ChallengeDifficulty.medium: 'Medium',
-      ChallengeDifficulty.hard: 'Hard',
-      ChallengeDifficulty.epic: 'Epic',
+      ChallengeDifficulty.easy: l10n.gamificationEasy,
+      ChallengeDifficulty.medium: l10n.gamificationMedium,
+      ChallengeDifficulty.hard: l10n.gamificationHard,
+      ChallengeDifficulty.epic: l10n.gamificationEpic,
     };
 
     return Container(

@@ -71,8 +71,8 @@ class AppStrings {
   static const String noMoreProfiles = 'No more profiles to show';
 
   // Matching
-  static const String itsAMatch = 'It\'s a Match!';
-  static const String youAndMatched = 'You and {name} liked each other';
+  static const String itsAMatch = 'Let\'s Exchange!';
+  static const String youAndMatched = 'You and {name} want to exchange languages';
   static const String sendMessage = 'Send Message';
   static const String keepSwiping = 'Keep Swiping';
 

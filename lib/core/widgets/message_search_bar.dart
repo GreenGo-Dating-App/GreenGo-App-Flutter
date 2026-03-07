@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_dimensions.dart';
 
@@ -47,6 +48,7 @@ class _MessageSearchBarState extends State<MessageSearchBar> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: const BoxDecoration(
@@ -74,7 +76,7 @@ class _MessageSearchBarState extends State<MessageSearchBar> {
               onChanged: widget.onSearch,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Search messages...',
+                hintText: l10n.searchMessagesHint,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.search,
@@ -118,7 +120,7 @@ class _MessageSearchBarState extends State<MessageSearchBar> {
               ),
               child: Text(
                 widget.resultCount == 0
-                    ? 'No results'
+                    ? l10n.noResults
                     : '${(widget.currentResultIndex ?? 0) + 1}/${widget.resultCount}',
                 style: const TextStyle(
                   color: AppColors.textSecondary,

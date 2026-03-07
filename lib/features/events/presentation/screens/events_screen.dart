@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/event.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -63,9 +64,9 @@ class _EventsScreenState extends State<EventsScreen>
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
-          title: const Text(
-            'Events',
-            style: TextStyle(color: AppColors.textPrimary),
+          title: Text(
+            AppLocalizations.of(context)!.eventsTitle,
+            style: const TextStyle(color: AppColors.textPrimary),
           ),
           actions: [
             IconButton(
@@ -83,10 +84,10 @@ class _EventsScreenState extends State<EventsScreen>
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.richGold,
             unselectedLabelColor: AppColors.textSecondary,
-            tabs: const [
-              Tab(text: 'Upcoming'),
-              Tab(text: 'Nearby'),
-              Tab(text: 'My Events'),
+            tabs: [
+              Tab(text: AppLocalizations.of(context)!.eventsTabUpcoming),
+              Tab(text: AppLocalizations.of(context)!.eventsTabNearby),
+              Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
             ],
           ),
         ),
@@ -94,8 +95,8 @@ class _EventsScreenState extends State<EventsScreen>
           listener: (context, state) {
             if (state is EventCreated) {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Event created successfully!'),
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.eventsCreatedSuccessfully),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -107,8 +108,8 @@ class _EventsScreenState extends State<EventsScreen>
                 SnackBar(
                   content: Text(
                     state.status == 'cancelled'
-                        ? 'RSVP cancelled'
-                        : 'RSVP updated!',
+                        ? AppLocalizations.of(context)!.eventsRsvpCancelled
+                        : AppLocalizations.of(context)!.eventsRsvpUpdated,
                   ),
                   backgroundColor: AppColors.successGreen,
                 ),
@@ -118,8 +119,8 @@ class _EventsScreenState extends State<EventsScreen>
               _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
             } else if (state is EventDeleted) {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Event deleted'),
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.eventsDeleted),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -292,18 +293,18 @@ class _EventsScreenState extends State<EventsScreen>
               color: AppColors.textTertiary,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'No events found',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.eventsNoEventsFound,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Check back later or create your own event!',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.eventsCheckBackLater,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
               ),
@@ -312,7 +313,7 @@ class _EventsScreenState extends State<EventsScreen>
             ElevatedButton.icon(
               onPressed: () => _showCreateEventDialog(context),
               icon: const Icon(Icons.add),
-              label: const Text('Create Event'),
+              label: Text(AppLocalizations.of(context)!.eventsCreateEvent),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
@@ -378,18 +379,18 @@ class _EventsScreenState extends State<EventsScreen>
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Filter Events',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.eventsFilterEvents,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 20),
-          const Text(
-            'Distance',
-            style: TextStyle(color: AppColors.textSecondary),
+          Text(
+            AppLocalizations.of(context)!.eventsDistance,
+            style: const TextStyle(color: AppColors.textSecondary),
           ),
           Slider(
             value: 25,
@@ -401,9 +402,9 @@ class _EventsScreenState extends State<EventsScreen>
             onChanged: (value) {},
           ),
           const SizedBox(height: 16),
-          const Text(
-            'Date Range',
-            style: TextStyle(color: AppColors.textSecondary),
+          Text(
+            AppLocalizations.of(context)!.eventsDateRange,
+            style: const TextStyle(color: AppColors.textSecondary),
           ),
           const SizedBox(height: 8),
           Row(
@@ -415,7 +416,7 @@ class _EventsScreenState extends State<EventsScreen>
                     foregroundColor: AppColors.textPrimary,
                     side: const BorderSide(color: AppColors.textTertiary),
                   ),
-                  child: const Text('Today'),
+                  child: Text(AppLocalizations.of(context)!.eventsToday),
                 ),
               ),
               const SizedBox(width: 8),
@@ -426,7 +427,7 @@ class _EventsScreenState extends State<EventsScreen>
                     foregroundColor: AppColors.textPrimary,
                     side: const BorderSide(color: AppColors.textTertiary),
                   ),
-                  child: const Text('This Week'),
+                  child: Text(AppLocalizations.of(context)!.eventsThisWeekFilter),
                 ),
               ),
               const SizedBox(width: 8),
@@ -437,7 +438,7 @@ class _EventsScreenState extends State<EventsScreen>
                     foregroundColor: AppColors.textPrimary,
                     side: const BorderSide(color: AppColors.textTertiary),
                   ),
-                  child: const Text('This Month'),
+                  child: Text(AppLocalizations.of(context)!.eventsThisMonth),
                 ),
               ),
             ],
@@ -451,7 +452,7 @@ class _EventsScreenState extends State<EventsScreen>
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
               ),
-              child: const Text('Apply Filters'),
+              child: Text(AppLocalizations.of(context)!.eventsApplyFilters),
             ),
           ),
         ],
@@ -613,7 +614,7 @@ class EventCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          '${event.spotsLeft} spots left',
+                          AppLocalizations.of(context)!.eventsSpotsLeft(event.spotsLeft),
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -693,7 +694,7 @@ class EventCard extends StatelessWidget {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              '${event.goingCount} going',
+                              AppLocalizations.of(context)!.eventsGoing(event.goingCount),
                               style: const TextStyle(
                                 color: AppColors.textTertiary,
                                 fontSize: 12,
@@ -731,9 +732,9 @@ class EventCard extends StatelessWidget {
                             color: Colors.green.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Text(
-                            'FREE',
-                            style: TextStyle(
+                          child: Text(
+                            AppLocalizations.of(context)!.eventsFreeLabel,
+                            style: const TextStyle(
                               color: Colors.green,
                               fontWeight: FontWeight.bold,
                             ),
@@ -758,10 +759,10 @@ class EventCard extends StatelessWidget {
                         ),
                         child: Text(
                           userRSVP?.status == RSVPStatus.going
-                              ? 'Going'
+                              ? AppLocalizations.of(context)!.eventsGoingLabel
                               : event.isFull
-                                  ? 'Full'
-                                  : 'Join',
+                                  ? AppLocalizations.of(context)!.eventsFullLabel
+                                  : AppLocalizations.of(context)!.eventsJoinLabel,
                         ),
                       ),
                     ],
@@ -824,7 +825,7 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                tooltip: 'Event Group Chat',
+                tooltip: AppLocalizations.of(context)!.eventsGroupChatTooltip,
               ),
             ],
           ),
@@ -857,24 +858,24 @@ class EventDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 12),
                   _buildInfoRow(
                     Icons.people,
-                    '${event.goingCount} / ${event.maxAttendees} attending',
-                    '${event.spotsLeft} spots left',
+                    AppLocalizations.of(context)!.eventsAttending(event.goingCount, event.maxAttendees),
+                    AppLocalizations.of(context)!.eventsSpotsLeft(event.spotsLeft),
                   ),
                   // Language exchange info
                   if (event.category == EventCategory.languageExchange) ...[
                     const SizedBox(height: 12),
                     _buildInfoRow(
                       Icons.translate,
-                      event.languagePairs ?? 'Language Exchange',
+                      event.languagePairs ?? AppLocalizations.of(context)!.eventsLanguageExchange,
                       event.languages.isNotEmpty
-                          ? 'Languages: ${event.languages.join(', ')}'
+                          ? AppLocalizations.of(context)!.eventsLanguages(event.languages.join(', '))
                           : null,
                     ),
                   ],
                   const SizedBox(height: 24),
-                  const Text(
-                    'About this event',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.eventsAboutThisEvent,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -950,16 +951,16 @@ class EventDetailsScreen extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  'Event Group Chat',
-                                  style: TextStyle(
+                                Text(
+                                  AppLocalizations.of(context)!.eventsGroupChatTooltip,
+                                  style: const TextStyle(
                                     color: AppColors.textPrimary,
                                     fontSize: 15,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
                                 Text(
-                                  'Chat with other attendees',
+                                  AppLocalizations.of(context)!.eventsChatWithAttendees,
                                   style: TextStyle(
                                     color: AppColors.textSecondary,
                                     fontSize: 12,
@@ -977,9 +978,9 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  const Text(
-                    'Attendees',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.eventsAttendees,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -993,7 +994,7 @@ class EventDetailsScreen extends StatelessWidget {
                             .isEmpty
                         ? Center(
                             child: Text(
-                              'No attendees yet. Be the first to join!',
+                              AppLocalizations.of(context)!.eventsNoAttendeesYet,
                               style: TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 13,
@@ -1072,9 +1073,9 @@ class EventDetailsScreen extends StatelessWidget {
                   ),
                 )
               else
-                const Text(
-                  'FREE',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.eventsFreeLabel,
+                  style: const TextStyle(
                     color: Colors.green,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -1099,7 +1100,7 @@ class EventDetailsScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
                   child: Text(
-                    event.isFull ? 'Event Full' : 'Join Event',
+                    event.isFull ? AppLocalizations.of(context)!.eventsEventFull : AppLocalizations.of(context)!.eventsJoinEvent,
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -1192,9 +1193,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
-        title: const Text(
-          'Create Event',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.eventsCreateEvent,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
       body: Form(
@@ -1205,23 +1206,23 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             TextFormField(
               controller: _titleController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('Event Title'),
-              validator: (v) => v?.isEmpty ?? true ? 'Required' : null,
+              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsEventTitle),
+              validator: (v) => v?.isEmpty ?? true ? AppLocalizations.of(context)!.eventsRequired : null,
             ),
             const SizedBox(height: 16),
             TextFormField(
               controller: _descriptionController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('Description'),
+              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsDescription),
               maxLines: 4,
-              validator: (v) => v?.isEmpty ?? true ? 'Required' : null,
+              validator: (v) => v?.isEmpty ?? true ? AppLocalizations.of(context)!.eventsRequired : null,
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<EventCategory>(
               value: _category,
               dropdownColor: AppColors.backgroundCard,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('Category'),
+              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsCategory),
               items: EventCategory.values.map((c) {
                 return DropdownMenuItem(
                   value: c,
@@ -1237,7 +1238,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 controller: _languagePairsController,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: _inputDecoration(
-                  'Language Pairs (e.g., Spanish \u2194 English)',
+                  AppLocalizations.of(context)!.eventsLanguagePairs,
                 ),
               ),
             ],
@@ -1245,15 +1246,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             TextFormField(
               controller: _locationController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('Location'),
-              validator: (v) => v?.isEmpty ?? true ? 'Required' : null,
+              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsLocation),
+              validator: (v) => v?.isEmpty ?? true ? AppLocalizations.of(context)!.eventsRequired : null,
             ),
             const SizedBox(height: 16),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              title: const Text(
-                'Start Date & Time',
-                style: TextStyle(color: AppColors.textSecondary),
+              title: Text(
+                AppLocalizations.of(context)!.eventsStartDateTime,
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
               subtitle: Text(
                 DateFormat('EEE, MMM d yyyy \u2022 h:mm a')
@@ -1266,9 +1267,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              title: const Text(
-                'End Date & Time',
-                style: TextStyle(color: AppColors.textSecondary),
+              title: Text(
+                AppLocalizations.of(context)!.eventsEndDateTime,
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
               subtitle: Text(
                 DateFormat('EEE, MMM d yyyy \u2022 h:mm a').format(_endDate),
@@ -1282,15 +1283,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             TextFormField(
               controller: _maxAttendeesController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('Max Attendees'),
+              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsMaxAttendees),
               keyboardType: TextInputType.number,
             ),
             const SizedBox(height: 16),
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
-              title: const Text(
-                'Free Event',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.eventsFreeEvent,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               value: _isFree,
               activeColor: AppColors.richGold,
@@ -1315,9 +1316,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 foregroundColor: AppColors.deepBlack,
                 padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              child: const Text(
-                'Create Event',
-                style:
+              child: Text(
+                AppLocalizations.of(context)!.eventsCreateEvent,
+                style: const
                     TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),

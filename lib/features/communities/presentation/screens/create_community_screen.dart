@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -94,9 +95,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: const Text(
-          'Create Community',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.communitiesCreateCommunity,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -106,7 +107,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           TextButton(
             onPressed: _showPreview ? _createCommunity : null,
             child: Text(
-              'Create',
+              AppLocalizations.of(context)!.communitiesCreateAction,
               style: TextStyle(
                 color: _showPreview
                     ? AppColors.richGold
@@ -121,8 +122,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
         listener: (context, state) {
           if (state is CommunityCreated) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Community created!'),
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.communitiesCreated),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -150,18 +151,18 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Name
-            _buildSectionLabel('Community Name'),
+            _buildSectionLabel(AppLocalizations.of(context)!.communitiesCommunityName),
             const SizedBox(height: 6),
             TextFormField(
               controller: _nameController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration('e.g., Spanish Learners NYC'),
+              decoration: _inputDecoration(AppLocalizations.of(context)!.communitiesNameHint),
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
-                  return 'Please enter a name';
+                  return AppLocalizations.of(context)!.communitiesNameRequired;
                 }
                 if (value.trim().length < 3) {
-                  return 'Name must be at least 3 characters';
+                  return AppLocalizations.of(context)!.communitiesNameMinLength;
                 }
                 return null;
               },
@@ -169,21 +170,21 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Description
-            _buildSectionLabel('Description'),
+            _buildSectionLabel(AppLocalizations.of(context)!.communitiesDescriptionLabel),
             const SizedBox(height: 6),
             TextFormField(
               controller: _descriptionController,
               style: const TextStyle(color: AppColors.textPrimary),
               maxLines: 4,
               decoration: _inputDecoration(
-                'What is this community about?',
+                AppLocalizations.of(context)!.communitiesDescriptionHint,
               ),
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
-                  return 'Please enter a description';
+                  return AppLocalizations.of(context)!.communitiesDescriptionRequired;
                 }
                 if (value.trim().length < 10) {
-                  return 'Description must be at least 10 characters';
+                  return AppLocalizations.of(context)!.communitiesDescriptionMinLength;
                 }
                 return null;
               },
@@ -191,7 +192,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Type selector
-            _buildSectionLabel('Community Type'),
+            _buildSectionLabel(AppLocalizations.of(context)!.communitiesCommunityType),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -253,7 +254,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Languages (multi-select)
-            _buildSectionLabel('Languages'),
+            _buildSectionLabel(AppLocalizations.of(context)!.communitiesLanguagesLabel),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -308,7 +309,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Tags
-            _buildSectionLabel('Tags'),
+            _buildSectionLabel(AppLocalizations.of(context)!.communitiesTagsLabel),
             const SizedBox(height: 6),
             Row(
               children: [
@@ -316,7 +317,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                   child: TextField(
                     controller: _tagController,
                     style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: _inputDecoration('Add a tag'),
+                    decoration: _inputDecoration(AppLocalizations.of(context)!.communitiesAddTag),
                     onSubmitted: _addTag,
                   ),
                 ),
@@ -361,7 +362,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
             // City / Country (for local guides or travel groups)
             if (_selectedType == CommunityType.localGuides ||
                 _selectedType == CommunityType.travelGroup) ...[
-              _buildSectionLabel('Location'),
+              _buildSectionLabel(AppLocalizations.of(context)!.communitiesLocationLabel),
               const SizedBox(height: 6),
               Row(
                 children: [
@@ -369,7 +370,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                     child: TextField(
                       controller: _cityController,
                       style: const TextStyle(color: AppColors.textPrimary),
-                      decoration: _inputDecoration('City'),
+                      decoration: _inputDecoration(AppLocalizations.of(context)!.communitiesCityLabel),
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -377,7 +378,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                     child: TextField(
                       controller: _countryController,
                       style: const TextStyle(color: AppColors.textPrimary),
-                      decoration: _inputDecoration('Country'),
+                      decoration: _inputDecoration(AppLocalizations.of(context)!.communitiesCountryLabel),
                     ),
                   ),
                 ],
@@ -406,7 +407,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          _isPublic ? 'Public' : 'Private',
+                          _isPublic ? AppLocalizations.of(context)!.communitiesPublic : AppLocalizations.of(context)!.communitiesPrivate,
                           style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 15,
@@ -415,8 +416,8 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         ),
                         Text(
                           _isPublic
-                              ? 'Anyone can find and join'
-                              : 'Invite only',
+                              ? AppLocalizations.of(context)!.communitiesAnyoneCanJoin
+                              : AppLocalizations.of(context)!.communitiesInviteOnly,
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 12,
@@ -450,9 +451,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         BorderRadius.circular(AppDimensions.radiusFull),
                   ),
                 ),
-                child: const Text(
-                  'Preview',
-                  style: TextStyle(
+                child: Text(
+                  AppLocalizations.of(context)!.communitiesPreview,
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
@@ -474,18 +475,18 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Preview',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.communitiesPreview,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'This is how your community will appear to others.',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.communitiesPreviewSubtitle,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
             ),
@@ -580,7 +581,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                           BorderRadius.circular(AppDimensions.radiusFull),
                     ),
                   ),
-                  child: const Text('Edit'),
+                  child: Text(AppLocalizations.of(context)!.communitiesEditLabel),
                 ),
               ),
               const SizedBox(width: 12),
@@ -597,9 +598,9 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                           BorderRadius.circular(AppDimensions.radiusFull),
                     ),
                   ),
-                  child: const Text(
-                    'Create Community',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context)!.communitiesCreateCommunityAction,
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),

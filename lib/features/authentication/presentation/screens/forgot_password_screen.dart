@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -64,9 +65,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(),
-              child: const Text(
-                'OK',
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(ctx)!.ok,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontWeight: FontWeight.bold,
                 ),
@@ -123,12 +124,13 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text(AppStrings.resetPassword),
+        title: Text(l10n.resetPassword),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -184,7 +186,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 // Email Field
                 AuthTextField(
                   controller: _emailController,
-                  label: AppStrings.email,
+                  label: l10n.email,
                   keyboardType: TextInputType.emailAddress,
                   validator: Validators.validateEmail,
                   prefixIcon: Icons.email_outlined,

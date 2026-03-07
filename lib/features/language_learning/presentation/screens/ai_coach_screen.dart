@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/services/ai_coach_service.dart';
 import '../../domain/entities/ai_coach_session.dart';
 import '../bloc/language_learning_bloc.dart';
@@ -251,9 +252,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'AI Conversation Coach',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.learningAiConversationCoach,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -299,9 +300,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
         if (_selectedScenario != null && !_isSessionEnded)
           TextButton(
             onPressed: _endSession,
-            child: const Text(
-              'End Session',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.learningEndSession,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontWeight: FontWeight.bold,
               ),
@@ -343,7 +344,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                   ),
                 ),
                 Text(
-                  '10 coins/session  |  25 XP reward',
+                  AppLocalizations.of(context)!.learningCoachSessionCost,
                   style: TextStyle(
                     color: AppColors.textTertiary.withValues(alpha: 0.7),
                     fontSize: 11,
@@ -385,7 +386,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Select a scenario to begin',
+              AppLocalizations.of(context)!.learningSelectScenario,
               style: TextStyle(
                 color: AppColors.textTertiary.withValues(alpha: 0.7),
                 fontSize: 16,
@@ -495,8 +496,8 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 ),
                 decoration: InputDecoration(
                   hintText: _selectedScenario == null
-                      ? 'Select a scenario first...'
-                      : 'Type your message...',
+                      ? AppLocalizations.of(context)!.learningSelectScenarioFirst
+                      : AppLocalizations.of(context)!.learningTypeMessageHint,
                   hintStyle: TextStyle(
                     color: AppColors.textTertiary.withValues(alpha: 0.5),
                     fontSize: 15,
@@ -665,17 +666,17 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Session Summary',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.learningSessionSummary,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 12),
-          _summaryRow(Icons.chat, 'Messages sent', '$_messageCount'),
-          _summaryRow(Icons.edit, 'Corrections', '$_correctionCount'),
+          _summaryRow(Icons.chat, AppLocalizations.of(context)!.learningMessagesSent, '$_messageCount'),
+          _summaryRow(Icons.edit, AppLocalizations.of(context)!.learningCorrections, '$_correctionCount'),
         ],
       ),
     );
@@ -717,20 +718,20 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        title: const Text(
-          'End Session?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.learningEndSessionQuestion,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Your current session progress will be lost. Would you like to end the session and see your score first?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.learningEndSessionBody,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text(
-              'Continue',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.learningContinue,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           TextButton(
@@ -738,9 +739,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
               Navigator.pop(context);
               _endSession();
             },
-            child: const Text(
-              'See Score',
-              style: TextStyle(color: AppColors.richGold),
+            child: Text(
+              AppLocalizations.of(context)!.learningSeeScore,
+              style: const TextStyle(color: AppColors.richGold),
             ),
           ),
           TextButton(
@@ -748,9 +749,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
               Navigator.pop(context);
               Navigator.pop(context);
             },
-            child: const Text(
-              'Exit',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(context)!.learningExit,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],

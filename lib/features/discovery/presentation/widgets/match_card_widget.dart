@@ -6,6 +6,7 @@ import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Match Card Widget
 ///
@@ -131,7 +132,7 @@ class MatchCardWidget extends StatelessWidget {
                           ),
                           const SizedBox(width: 4),
                           Text(
-                            '${compatibilityPercent!.toStringAsFixed(0)}% compatible',
+                            AppLocalizations.of(context)!.compatiblePercent(compatibilityPercent!.toStringAsFixed(0)),
                             style: TextStyle(
                               color: _getCompatibilityColor(compatibilityPercent!),
                               fontSize: 13,
@@ -184,8 +185,8 @@ class MatchCardWidget extends StatelessWidget {
                     ),
                   if (isNewMatch) ...[
                     const SizedBox(height: 4),
-                    const Text(
-                      'NEW',
+                    Text(
+                      AppLocalizations.of(context)!.newLabel,
                       style: TextStyle(
                         color: AppColors.richGold,
                         fontSize: 10,

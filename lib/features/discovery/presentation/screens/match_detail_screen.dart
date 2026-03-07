@@ -11,6 +11,7 @@ import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
 import 'profile_detail_screen.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Match Detail Screen
 /// Shows match info with overlapping photos, both users' details, gamification stats
@@ -149,9 +150,9 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
 
                               const SizedBox(height: 24),
 
-                              // "It's a Match!" header
-                              const Text(
-                                "It's a Match!",
+                              // "Let's Exchange!" header
+                              Text(
+                                AppLocalizations.of(context)!.letsExchange,
                                 style: TextStyle(
                                   color: AppColors.richGold,
                                   fontSize: 24,
@@ -163,7 +164,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
 
                               // Match date
                               Text(
-                                'Matched on ${DateFormat('MMMM d, yyyy').format(widget.match.matchedAt)}',
+                                AppLocalizations.of(context)!.matchedOnDate(DateFormat('MMMM d, yyyy').format(widget.match.matchedAt)),
                                 style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 14,
@@ -205,9 +206,9 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
             onPressed: () => Navigator.of(context).pop(),
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           ),
-          const Expanded(
+          Expanded(
             child: Text(
-              'Match Details',
+              AppLocalizations.of(context)!.matchDetailsTitle,
               style: TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
@@ -354,8 +355,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                     color: AppColors.richGold.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: const Text(
-                    'YOU',
+                  child: Text(
+                    AppLocalizations.of(context)!.youLabel,
                     style: TextStyle(
                       color: AppColors.richGold,
                       fontSize: 10,
@@ -375,7 +376,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               ),
               if (age != null)
                 Text(
-                  '$age years',
+                  AppLocalizations.of(context)!.yearsLabel(age),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 13,
@@ -538,7 +539,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               );
             },
             icon: Icons.person_outline,
-            label: 'See Profile',
+            label: AppLocalizations.of(context)!.seeProfile,
             isPrimary: false,
           ),
         const SizedBox(height: 16),
@@ -557,7 +558,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               );
             },
             icon: Icons.chat_bubble_outline,
-            label: 'Start Chat',
+            label: AppLocalizations.of(context)!.startChat,
             isPrimary: true,
           ),
       ],
@@ -626,7 +627,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
     return TextButton(
       onPressed: () => _showUnmatchDialog(context),
       child: Text(
-        'Unmatch',
+        AppLocalizations.of(context)!.unmatchLabel,
         style: TextStyle(
           color: AppColors.textTertiary.withOpacity(0.6),
           fontSize: 14,
@@ -643,20 +644,20 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        title: const Text(
-          'Unmatch',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.unmatchLabel,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to unmatch with ${_otherUserProfile?.displayName ?? 'this user'}? This cannot be undone.',
+          AppLocalizations.of(context)!.unmatchConfirm(_otherUserProfile?.displayName ?? 'this user'),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.cancelLabel,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           TextButton(
@@ -684,14 +685,14 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               Navigator.of(context).pop();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Unmatched with ${_otherUserProfile?.displayName ?? 'user'}'),
+                  content: Text(AppLocalizations.of(context)!.unmatchedWith(_otherUserProfile?.displayName ?? 'user')),
                   backgroundColor: AppColors.backgroundCard,
                 ),
               );
             },
-            child: const Text(
-              'Unmatch',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(context)!.unmatchLabel,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],

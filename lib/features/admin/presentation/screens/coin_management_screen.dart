@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../coins/domain/entities/coin_package.dart';
@@ -45,9 +46,9 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Coin Management',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminCoinManagement,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         bottom: TabBar(
@@ -56,13 +57,13 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.textSecondary,
           isScrollable: true,
-          tabs: const [
-            Tab(text: 'Packages'),
-            Tab(text: 'Video Coins'),
-            Tab(text: 'User Balance'),
-            Tab(text: 'Orders'),
-            Tab(text: 'Invoices'),
-            Tab(text: 'Spend Items'),
+          tabs: [
+            Tab(text: AppLocalizations.of(context)!.adminPackages),
+            Tab(text: AppLocalizations.of(context)!.adminVideoCoins),
+            Tab(text: AppLocalizations.of(context)!.adminUserBalance),
+            Tab(text: AppLocalizations.of(context)!.adminOrders),
+            Tab(text: AppLocalizations.of(context)!.adminInvoices),
+            Tab(text: AppLocalizations.of(context)!.adminSpendItems),
           ],
         ),
       ),
@@ -104,9 +105,9 @@ class _PackagesTabState extends State<_PackagesTab> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
-                'Coin Packages',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.adminCoinPackages,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -119,7 +120,7 @@ class _PackagesTabState extends State<_PackagesTab> {
                   foregroundColor: Colors.black,
                 ),
                 icon: const Icon(Icons.add, size: 18),
-                label: const Text('Add Package'),
+                label: Text(AppLocalizations.of(context)!.adminAddPackage),
               ),
             ],
           ),
@@ -181,20 +182,22 @@ class _PackagesTabState extends State<_PackagesTab> {
   void _confirmDeletePackage(CoinPackage package) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        return AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Package?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminDeletePackageTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to delete "${package.coinAmount} Coins" package?',
+          l10n.adminDeletePackageConfirm(package.coinAmount.toString()),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -208,10 +211,11 @@ class _PackagesTabState extends State<_PackagesTab> {
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.errorRed,
             ),
-            child: const Text('Delete'),
+            child: Text(l10n.delete),
           ),
         ],
-      ),
+      );
+      },
     );
   }
 }
@@ -254,7 +258,7 @@ class _PackageCard extends StatelessWidget {
               ),
             ),
             title: Text(
-              '${package.coinAmount} Coins',
+              AppLocalizations.of(context)!.adminCoinAmountLabel(package.coinAmount.toString()),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontWeight: FontWeight.bold,
@@ -273,7 +277,7 @@ class _PackageCard extends StatelessWidget {
                 ),
                 if (package.bonusCoins != null && package.bonusCoins! > 0)
                   Text(
-                    '+${package.bonusCoins} bonus coins',
+                    AppLocalizations.of(context)!.adminBonusCoins(package.bonusCoins.toString()),
                     style: const TextStyle(
                       color: AppColors.successGreen,
                       fontSize: 12,
@@ -323,7 +327,7 @@ class _PackageCard extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   Text(
-                    package.promotionLabel ?? 'Promotional',
+                    package.promotionLabel ?? AppLocalizations.of(context)!.adminPromotional,
                     style: const TextStyle(
                       color: AppColors.warningAmber,
                       fontSize: 12,
@@ -388,10 +392,11 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return AlertDialog(
       backgroundColor: AppColors.backgroundCard,
       title: Text(
-        widget.package == null ? 'Add Package' : 'Edit Package',
+        widget.package == null ? l10n.adminAddPackage : l10n.adminEditPackage,
         style: const TextStyle(color: AppColors.textPrimary),
       ),
       content: SingleChildScrollView(
@@ -400,35 +405,35 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
           children: [
             _buildTextField(
               controller: _coinsController,
-              label: 'Coin Amount',
+              label: l10n.adminCoinAmount,
               icon: Icons.monetization_on,
               keyboardType: TextInputType.number,
             ),
             const SizedBox(height: AppDimensions.paddingM),
             _buildTextField(
               controller: _priceController,
-              label: 'Price (USD)',
+              label: l10n.adminPriceUsd,
               icon: Icons.attach_money,
               keyboardType: const TextInputType.numberWithOptions(decimal: true),
             ),
             const SizedBox(height: AppDimensions.paddingM),
             _buildTextField(
               controller: _bonusController,
-              label: 'Bonus Coins',
+              label: l10n.adminBonusCoinsLabel,
               icon: Icons.card_giftcard,
               keyboardType: TextInputType.number,
             ),
             const SizedBox(height: AppDimensions.paddingM),
             _buildTextField(
               controller: _productIdController,
-              label: 'Product ID (for IAP)',
+              label: l10n.adminProductIdIap,
               icon: Icons.inventory,
             ),
             const SizedBox(height: AppDimensions.paddingM),
             SwitchListTile(
-              title: const Text(
-                'Promotional Package',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                l10n.adminPromotionalPackage,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               value: _isPromotional,
               activeColor: AppColors.warningAmber,
@@ -440,7 +445,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Cancel'),
+          child: Text(l10n.cancel),
         ),
         ElevatedButton(
           onPressed: _save,
@@ -448,7 +453,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
             backgroundColor: AppColors.richGold,
             foregroundColor: Colors.black,
           ),
-          child: const Text('Save'),
+          child: Text(l10n.save),
         ),
       ],
     );
@@ -490,8 +495,8 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
 
     if (coins <= 0 || price <= 0) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please enter valid coin amount and price'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.adminEnterValidCoinAmountAndPrice),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -547,7 +552,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
             controller: _searchController,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              hintText: 'Search by user ID or email',
+              hintText: AppLocalizations.of(context)!.adminSearchByUserIdOrEmail,
               hintStyle: const TextStyle(color: AppColors.textTertiary),
               prefixIcon: const Icon(Icons.search, color: AppColors.textSecondary),
               suffixIcon: IconButton(
@@ -606,7 +611,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'User ID: $_selectedUserId',
+                              AppLocalizations.of(context)!.adminUserIdLabel(_selectedUserId!),
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontWeight: FontWeight.bold,
@@ -632,9 +637,9 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
-                        'Current Balance',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.adminCurrentBalance,
+                        style: const TextStyle(
                           color: AppColors.textSecondary,
                         ),
                       ),
@@ -672,7 +677,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                             padding: const EdgeInsets.symmetric(vertical: 12),
                           ),
                           icon: const Icon(Icons.add),
-                          label: const Text('Add Coins'),
+                          label: Text(AppLocalizations.of(context)!.adminAddCoins),
                         ),
                       ),
                       const SizedBox(width: AppDimensions.paddingM),
@@ -685,7 +690,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                             padding: const EdgeInsets.symmetric(vertical: 12),
                           ),
                           icon: const Icon(Icons.remove),
-                          label: const Text('Remove Coins'),
+                          label: Text(AppLocalizations.of(context)!.adminRemoveCoins),
                         ),
                       ),
                     ],
@@ -706,9 +711,9 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                       color: AppColors.textTertiary.withValues(alpha: 0.5),
                     ),
                     const SizedBox(height: AppDimensions.paddingM),
-                    const Text(
-                      'Search for a user to manage their coin balance',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.adminSearchForUserCoinBalance,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                       ),
                       textAlign: TextAlign.center,
@@ -729,10 +734,12 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
 
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        return AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          isAdd ? 'Add Coins' : 'Remove Coins',
+          isAdd ? l10n.adminAddCoins : l10n.adminRemoveCoins,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
@@ -744,7 +751,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                labelText: 'Amount',
+                labelText: l10n.adminAmount,
                 labelStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.monetization_on,
@@ -761,7 +768,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
               style: const TextStyle(color: AppColors.textPrimary),
               maxLines: 2,
               decoration: InputDecoration(
-                labelText: 'Reason (required)',
+                labelText: l10n.adminReasonRequired,
                 labelStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.notes,
@@ -777,15 +784,15 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
               final amount = int.tryParse(controller.text) ?? 0;
               if (amount <= 0) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Please enter a valid amount'),
+                  SnackBar(
+                    content: Text(l10n.adminEnterValidAmount),
                     backgroundColor: AppColors.errorRed,
                   ),
                 );
@@ -793,8 +800,8 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
               }
               if (reasonController.text.trim().isEmpty) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Please provide a reason'),
+                  SnackBar(
+                    content: Text(l10n.adminProvideReason),
                     backgroundColor: AppColors.errorRed,
                   ),
                 );
@@ -812,8 +819,8 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                 SnackBar(
                   content: Text(
                     isAdd
-                        ? 'Added $amount coins to user'
-                        : 'Removed $amount coins from user',
+                        ? l10n.adminAddedCoinsToUser(amount.toString())
+                        : l10n.adminRemovedCoinsFromUser(amount.toString()),
                   ),
                   backgroundColor: AppColors.successGreen,
                 ),
@@ -822,10 +829,11 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
             style: ElevatedButton.styleFrom(
               backgroundColor: isAdd ? AppColors.successGreen : AppColors.errorRed,
             ),
-            child: Text(isAdd ? 'Add' : 'Remove'),
+            child: Text(isAdd ? l10n.adminAdd : l10n.adminRemove),
           ),
         ],
-      ),
+      );
+      },
     );
   }
 }
@@ -918,9 +926,9 @@ class _SpendItemCard extends StatelessWidget {
                   color: AppColors.errorRed.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(4),
                 ),
-                child: const Text(
-                  'Disabled',
-                  style: TextStyle(
+                child: Text(
+                  AppLocalizations.of(context)!.adminDisabled,
+                  style: const TextStyle(
                     color: AppColors.errorRed,
                     fontSize: 10,
                   ),
@@ -994,10 +1002,12 @@ class _SpendItemCard extends StatelessWidget {
 
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        return AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          'Edit ${item.name}',
+          l10n.adminEditItem(item.name),
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
@@ -1009,7 +1019,7 @@ class _SpendItemCard extends StatelessWidget {
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                labelText: 'Coin Cost',
+                labelText: l10n.adminCoinCost,
                 labelStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.monetization_on,
@@ -1025,15 +1035,15 @@ class _SpendItemCard extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
               // TODO: Save changes to Firestore
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Changes saved'),
+                SnackBar(
+                  content: Text(l10n.adminChangesSaved),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -1042,10 +1052,11 @@ class _SpendItemCard extends StatelessWidget {
               backgroundColor: AppColors.richGold,
               foregroundColor: Colors.black,
             ),
-            child: const Text('Save'),
+            child: Text(l10n.save),
           ),
         ],
-      ),
+      );
+      },
     );
   }
 }
@@ -1061,9 +1072,9 @@ class _VideoCoinsTab extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       children: [
-        const Text(
-          'Video Coin Packages',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.adminVideoCoinPackages,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -1072,9 +1083,9 @@ class _VideoCoinsTab extends StatelessWidget {
         const SizedBox(height: AppDimensions.paddingM),
         ...VideoCoinPackages.all.map((pkg) => _VideoCoinPackageCard(package: pkg)),
         const SizedBox(height: AppDimensions.paddingL),
-        const Text(
-          'Statistics',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.adminStatistics,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -1096,11 +1107,12 @@ class _VideoCoinsTab extends StatelessWidget {
               totalMinutes += (data['totalVideoCoins'] as num?)?.toInt() ?? 0;
               usedMinutes += (data['usedVideoCoins'] as num?)?.toInt() ?? 0;
             }
+            final l10n = AppLocalizations.of(context)!;
             return Row(
               children: [
                 Expanded(
                   child: _StatCard(
-                    title: 'Total Minutes',
+                    title: l10n.adminTotalMinutes,
                     value: totalMinutes.toString(),
                     icon: Icons.videocam,
                   ),
@@ -1108,7 +1120,7 @@ class _VideoCoinsTab extends StatelessWidget {
                 const SizedBox(width: AppDimensions.paddingM),
                 Expanded(
                   child: _StatCard(
-                    title: 'Used Minutes',
+                    title: l10n.adminUsedMinutes,
                     value: usedMinutes.toString(),
                     icon: Icons.phone_in_talk,
                   ),
@@ -1116,7 +1128,7 @@ class _VideoCoinsTab extends StatelessWidget {
                 const SizedBox(width: AppDimensions.paddingM),
                 Expanded(
                   child: _StatCard(
-                    title: 'Available',
+                    title: l10n.adminAvailable,
                     value: (totalMinutes - usedMinutes).toString(),
                     icon: Icons.timer,
                   ),
@@ -1166,7 +1178,7 @@ class _VideoCoinPackageCard extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      '${package.videoMinutes} Minutes',
+                      AppLocalizations.of(context)!.adminVideoMinutesLabel(package.videoMinutes.toString()),
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontWeight: FontWeight.bold,
@@ -1185,7 +1197,7 @@ class _VideoCoinPackageCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Text(
-                          '+${package.bonusMinutes} bonus',
+                          AppLocalizations.of(context)!.adminBonusMinutes(package.bonusMinutes.toString()),
                           style: const TextStyle(
                             color: AppColors.successGreen,
                             fontSize: 10,
@@ -1300,7 +1312,7 @@ class _OrdersTabState extends State<_OrdersTab> {
                   controller: _searchController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
-                    hintText: 'Search orders...',
+                    hintText: AppLocalizations.of(context)!.adminSearchOrders,
                     hintStyle: const TextStyle(color: AppColors.textTertiary),
                     prefixIcon: const Icon(Icons.search, color: AppColors.textSecondary),
                     border: OutlineInputBorder(
@@ -1323,15 +1335,15 @@ class _OrdersTabState extends State<_OrdersTab> {
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton<OrderStatus?>(
                     value: _filterStatus,
-                    hint: const Text(
-                      'Status',
-                      style: TextStyle(color: AppColors.textTertiary),
+                    hint: Text(
+                      AppLocalizations.of(context)!.adminStatus,
+                      style: const TextStyle(color: AppColors.textTertiary),
                     ),
                     dropdownColor: AppColors.backgroundCard,
                     items: [
-                      const DropdownMenuItem<OrderStatus?>(
+                      DropdownMenuItem<OrderStatus?>(
                         value: null,
-                        child: Text('All', style: TextStyle(color: AppColors.textPrimary)),
+                        child: Text(AppLocalizations.of(context)!.adminAll, style: const TextStyle(color: AppColors.textPrimary)),
                       ),
                       ...OrderStatus.values.map((status) => DropdownMenuItem(
                         value: status,
@@ -1358,10 +1370,10 @@ class _OrdersTabState extends State<_OrdersTab> {
                 return const Center(child: CircularProgressIndicator());
               }
               if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-                return const Center(
+                return Center(
                   child: Text(
-                    'No orders found',
-                    style: TextStyle(color: AppColors.textSecondary),
+                    AppLocalizations.of(context)!.adminNoOrdersFound,
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                 );
               }
@@ -1445,7 +1457,7 @@ class _OrderCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'User: ${(data['userId'] as String).substring(0, 8)}...',
+              AppLocalizations.of(context)!.adminUserIdShort((data['userId'] as String).substring(0, 8)),
               style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
             ),
             if (createdAt != null)
@@ -1506,22 +1518,24 @@ class _OrderCard extends StatelessWidget {
   void _showOrderDetails(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        return AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Order Details',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminOrderDetails,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _DetailRow('Order ID', orderId.substring(0, 8)),
-            _DetailRow('User ID', (data['userId'] as String).substring(0, 8)),
-            _DetailRow('Type', (data['type'] ?? 'Unknown').toString()),
-            _DetailRow('Status', (data['status'] ?? 'Unknown').toString()),
-            _DetailRow('Amount', '\$${((data['total'] as num?)?.toDouble() ?? 0).toStringAsFixed(2)}'),
-            _DetailRow('Payment', (data['paymentMethod'] ?? 'Unknown').toString()),
+            _DetailRow(l10n.adminOrderId, orderId.substring(0, 8)),
+            _DetailRow(l10n.adminUserId, (data['userId'] as String).substring(0, 8)),
+            _DetailRow(l10n.adminType, (data['type'] ?? l10n.adminUnknown).toString()),
+            _DetailRow(l10n.adminStatus, (data['status'] ?? l10n.adminUnknown).toString()),
+            _DetailRow(l10n.adminAmount, '\$${((data['total'] as num?)?.toDouble() ?? 0).toStringAsFixed(2)}'),
+            _DetailRow(l10n.adminPayment, (data['paymentMethod'] ?? l10n.adminUnknown).toString()),
           ],
         ),
         actions: [
@@ -1539,21 +1553,22 @@ class _OrderCard extends StatelessWidget {
                 });
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Order refunded'),
+                    SnackBar(
+                      content: Text(l10n.adminOrderRefunded),
                       backgroundColor: AppColors.successGreen,
                     ),
                   );
                 }
               },
-              child: const Text('Refund', style: TextStyle(color: AppColors.errorRed)),
+              child: Text(l10n.adminRefund, style: const TextStyle(color: AppColors.errorRed)),
             ),
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+            child: Text(l10n.close),
           ),
         ],
-      ),
+      );
+      },
     );
   }
 }
@@ -1601,10 +1616,10 @@ class _InvoicesTabState extends State<_InvoicesTab> {
           padding: const EdgeInsets.all(AppDimensions.paddingM),
           child: Row(
             children: [
-              const Expanded(
+              Expanded(
                 child: Text(
-                  'Invoices',
-                  style: TextStyle(
+                  AppLocalizations.of(context)!.adminInvoices,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -1621,15 +1636,15 @@ class _InvoicesTabState extends State<_InvoicesTab> {
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton<InvoiceStatus?>(
                     value: _filterStatus,
-                    hint: const Text(
-                      'Status',
-                      style: TextStyle(color: AppColors.textTertiary),
+                    hint: Text(
+                      AppLocalizations.of(context)!.adminStatus,
+                      style: const TextStyle(color: AppColors.textTertiary),
                     ),
                     dropdownColor: AppColors.backgroundCard,
                     items: [
-                      const DropdownMenuItem<InvoiceStatus?>(
+                      DropdownMenuItem<InvoiceStatus?>(
                         value: null,
-                        child: Text('All', style: TextStyle(color: AppColors.textPrimary)),
+                        child: Text(AppLocalizations.of(context)!.adminAll, style: const TextStyle(color: AppColors.textPrimary)),
                       ),
                       ...InvoiceStatus.values.map((status) => DropdownMenuItem(
                         value: status,
@@ -1656,10 +1671,10 @@ class _InvoicesTabState extends State<_InvoicesTab> {
                 return const Center(child: CircularProgressIndicator());
               }
               if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-                return const Center(
+                return Center(
                   child: Text(
-                    'No invoices found',
-                    style: TextStyle(color: AppColors.textSecondary),
+                    AppLocalizations.of(context)!.adminNoInvoicesFound,
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                 );
               }

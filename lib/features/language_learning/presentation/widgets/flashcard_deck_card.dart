@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/flashcard.dart';
 
 class FlashcardDeckCard extends StatelessWidget {
@@ -71,9 +72,9 @@ class FlashcardDeckCard extends StatelessWidget {
                               color: const Color(0xFFD4AF37),
                               borderRadius: BorderRadius.circular(4),
                             ),
-                            child: const Text(
-                              'PRO',
-                              style: TextStyle(
+                            child: Text(
+                              AppLocalizations.of(context)!.learningPro,
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 8,
                                 fontWeight: FontWeight.bold,
@@ -174,7 +175,7 @@ class FlashcardDeckCard extends StatelessWidget {
                     const Icon(Icons.monetization_on, size: 18),
                     const SizedBox(width: 8),
                     Text(
-                      'Unlock for ${deck.coinPrice} coins',
+                      AppLocalizations.of(context)!.learningUnlockForCoinsLower(deck.coinPrice),
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],

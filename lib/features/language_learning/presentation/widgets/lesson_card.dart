@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/lesson.dart';
 
 class LessonCard extends StatelessWidget {
@@ -94,9 +95,9 @@ class LessonCard extends StatelessWidget {
                       color: Colors.green.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Text(
-                      'FREE',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context)!.learningFree,
+                      style: const TextStyle(
                         color: Colors.green,
                         fontSize: 10,
                         fontWeight: FontWeight.bold,

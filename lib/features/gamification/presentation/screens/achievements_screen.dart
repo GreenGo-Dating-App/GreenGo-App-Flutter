@@ -6,6 +6,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/achievement.dart';
 import '../../domain/usecases/get_user_achievements.dart';
@@ -70,8 +71,27 @@ class _AchievementsScreenState extends State<AchievementsScreen>
     }
   }
 
+  String _getLocalizedCategoryLabel(int index) {
+    final l10n = AppLocalizations.of(context)!;
+    if (index == 0) return l10n.gamificationAll;
+    final category = AchievementCategory.values[index - 1];
+    switch (category) {
+      case AchievementCategory.social:
+        return l10n.gamificationSocial;
+      case AchievementCategory.engagement:
+        return l10n.gamificationEngagement;
+      case AchievementCategory.premium:
+        return l10n.gamificationPremium;
+      case AchievementCategory.milestones:
+        return l10n.gamificationMilestones;
+      case AchievementCategory.special:
+        return l10n.gamificationSpecial;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
       body: BlocConsumer<GamificationBloc, GamificationState>(
@@ -128,7 +148,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Loading achievements...',
+                    l10n.gamificationLoadingAchievements,
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.6),
                       fontSize: 14,
@@ -196,7 +216,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   const Text('🏆', style: TextStyle(fontSize: 48)),
                   const SizedBox(height: 16),
                   Text(
-                    'No achievements found',
+                    l10n.gamificationNoAchievements,
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.7),
                       fontSize: 16,
@@ -227,6 +247,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
   }
 
   Widget _buildProgressHeader(UserAchievementsData data) {
+    final l10n = AppLocalizations.of(context)!;
     return ClipRRect(
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
@@ -256,7 +277,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   _buildStatItem(
                     '🏆',
                     data.totalAchievements.toString(),
-                    'Total',
+                    l10n.gamificationTotal,
                   ),
                   Container(
                     width: 1,
@@ -266,7 +287,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   _buildStatItem(
                     '✨',
                     data.unlockedCount.toString(),
-                    'Unlocked',
+                    l10n.gamificationUnlocked,
                   ),
                   Container(
                     width: 1,
@@ -276,7 +297,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                   _buildStatItem(
                     '📊',
                     '${data.progressPercentage}%',
-                    'Progress',
+                    l10n.gamificationProgress,
                   ),
                 ],
               ),
@@ -375,7 +396,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
               ),
               child: Center(
                 child: Text(
-                  _categories[index],
+                  _getLocalizedCategoryLabel(index),
                   style: TextStyle(
                     color: isSelected ? Colors.black : Colors.white70,
                     fontSize: 13,
@@ -391,6 +412,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
   }
 
   Widget _buildAchievementsGrid(UserAchievementsData data) {
+    final l10n = AppLocalizations.of(context)!;
     List<AchievementWithProgress> achievements;
 
     if (_selectedCategoryIndex == 0) {
@@ -408,7 +430,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
             const Text('🎯', style: TextStyle(fontSize: 48)),
             const SizedBox(height: 16),
             Text(
-              'No achievements in this category',
+              l10n.gamificationNoAchievementsInCategory,
               style: TextStyle(
                 color: Colors.white.withOpacity(0.7),
                 fontSize: 16,
@@ -531,14 +553,14 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                       color: color.withOpacity(0.3),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.check, color: Colors.white, size: 10),
-                        SizedBox(width: 2),
+                        const Icon(Icons.check, color: Colors.white, size: 10),
+                        const SizedBox(width: 2),
                         Text(
-                          'Done',
-                          style: TextStyle(
+                          AppLocalizations.of(context)!.gamificationDone,
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 8,
                             fontWeight: FontWeight.w600,
@@ -589,6 +611,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
   }
 
   void _showAchievementDetails(AchievementWithProgress achievementWithProgress) {
+    final l10n = AppLocalizations.of(context)!;
     final achievement = achievementWithProgress.achievement;
     final isUnlocked = achievementWithProgress.isUnlocked;
 
@@ -686,9 +709,9 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text(
-                            'Progress',
-                            style: TextStyle(color: Colors.white70),
+                          Text(
+                            l10n.gamificationProgress,
+                            style: const TextStyle(color: Colors.white70),
                           ),
                           Text(
                             '${achievementWithProgress.currentProgress}/${achievement.requiredCount}',
@@ -748,7 +771,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                       const Icon(Icons.star, color: AppColors.richGold, size: 24),
                       const SizedBox(width: 8),
                       Text(
-                        'Reward: ${achievement.rewardAmount} ${achievement.rewardType}',
+                        l10n.gamificationReward(achievement.rewardAmount, achievement.rewardType),
                         style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 16,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../../features/subscription/domain/entities/subscription.dart';
 import 'subscription_celebration_screen.dart';
@@ -30,17 +31,18 @@ class PurchaseSuccessDialog extends StatefulWidget {
     int? bonusCoins,
     VoidCallback? onDismiss,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     final totalCoins = coinsAdded + (bonusCoins ?? 0);
     final bonusText = bonusCoins != null && bonusCoins > 0
-        ? ' (+$bonusCoins bonus!)'
+        ? l10n.bonusCoinsText(bonusCoins, bonusCoins)
         : '';
 
     return showDialog(
       context: context,
       barrierDismissible: true,
       builder: (context) => PurchaseSuccessDialog(
-        title: 'Purchase Successful!',
-        message: '$totalCoins coins added to your account$bonusText',
+        title: l10n.purchaseSuccessfulTitle,
+        message: l10n.coinsAddedMessage(totalCoins, bonusText),
         icon: Icons.monetization_on,
         iconColor: AppColors.richGold,
         onDismiss: onDismiss,
@@ -73,6 +75,7 @@ class PurchaseSuccessDialog extends StatefulWidget {
     int coinsGranted = 0,
     VoidCallback? onDismiss,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     final formattedDate = '${endDate.day}/${endDate.month}/${endDate.year}';
     final coinsText = coinsGranted > 0 ? '\n$coinsGranted GreenGo Coins added!' : '';
 
@@ -80,8 +83,8 @@ class PurchaseSuccessDialog extends StatefulWidget {
       context: context,
       barrierDismissible: true,
       builder: (context) => PurchaseSuccessDialog(
-        title: 'Membership Activated!',
-        message: '$tierName membership active until $formattedDate$coinsText',
+        title: l10n.membershipActivatedTitle,
+        message: l10n.membershipActivatedMessage(tierName, formattedDate, coinsText),
         icon: Icons.workspace_premium,
         iconColor: AppColors.richGold,
         onDismiss: onDismiss,
@@ -145,6 +148,7 @@ class _PurchaseSuccessDialogState extends State<PurchaseSuccessDialog>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Dialog(
       backgroundColor: Colors.transparent,
       child: FadeTransition(
@@ -240,9 +244,9 @@ class _PurchaseSuccessDialogState extends State<PurchaseSuccessDialog>
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text(
-                      'Awesome!',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.awesome,
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),

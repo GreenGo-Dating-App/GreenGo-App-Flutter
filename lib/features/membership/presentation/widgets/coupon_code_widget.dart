@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/membership.dart';
 import '../../data/datasources/membership_remote_datasource.dart';
@@ -77,6 +78,7 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -149,7 +151,7 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                   ),
                   textCapitalization: TextCapitalization.characters,
                   decoration: InputDecoration(
-                    hintText: 'Enter coupon code',
+                    hintText: l10n.membershipEnterCouponHint,
                     hintStyle: const TextStyle(
                       color: AppColors.textTertiary,
                     ),

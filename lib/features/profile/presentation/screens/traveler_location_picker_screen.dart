@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/location.dart' as profile_entity;
@@ -106,7 +107,7 @@ class _TravelerLocationPickerScreenState
         });
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('No results found for "$query"'),
+            content: Text(AppLocalizations.of(context)?.travelerNoResultsFor(query) ?? 'No results found for "$query"'),
             backgroundColor: AppColors.warningAmber,
           ),
         );
@@ -119,18 +120,18 @@ class _TravelerLocationPickerScreenState
     try {
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
-        throw Exception('Location services are disabled');
+        throw Exception(AppLocalizations.of(context)?.travelerLocationServicesDisabled ?? 'Location services are disabled');
       }
 
       LocationPermission permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
-          throw Exception('Location permissions denied');
+          throw Exception(AppLocalizations.of(context)?.travelerLocationPermissionsDenied ?? 'Location permissions denied');
         }
       }
       if (permission == LocationPermission.deniedForever) {
-        throw Exception('Location permissions permanently denied');
+        throw Exception(AppLocalizations.of(context)?.travelerLocationPermissionsPermanentlyDenied ?? 'Location permissions permanently denied');
       }
 
       final position = await Geolocator.getCurrentPosition(
@@ -167,7 +168,7 @@ class _TravelerLocationPickerScreenState
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to get location: $e'),
+            content: Text(AppLocalizations.of(context)?.travelerFailedGetLocation(e.toString()) ?? 'Failed to get location: $e'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -229,13 +230,13 @@ class _TravelerLocationPickerScreenState
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.flight, color: Color(0xFF1E88E5), size: 22),
-            SizedBox(width: 8),
+            const Icon(Icons.flight, color: Color(0xFF1E88E5), size: 22),
+            const SizedBox(width: 8),
             Text(
-              'Select Travel Location',
-              style: TextStyle(color: AppColors.textPrimary, fontSize: 18),
+              AppLocalizations.of(context)?.travelerSelectTravelLocation ?? 'Select Travel Location',
+              style: const TextStyle(color: AppColors.textPrimary, fontSize: 18),
             ),
           ],
         ),
@@ -251,7 +252,7 @@ class _TravelerLocationPickerScreenState
               onChanged: _onSearchChanged,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Search city, address, or place...',
+                hintText: AppLocalizations.of(context)?.profileSearchCityHint ?? 'Search city, address, or place...',
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon:
                     const Icon(Icons.search, color: AppColors.textTertiary),
@@ -328,8 +329,8 @@ class _TravelerLocationPickerScreenState
                           Expanded(
                             child: Text(
                               _isLoadingGps
-                                  ? 'Getting location...'
-                                  : 'Use GPS',
+                                  ? (AppLocalizations.of(context)?.travelerGettingLocation ?? 'Getting location...')
+                                  : (AppLocalizations.of(context)?.travelerUseGps ?? 'Use GPS'),
                               style: const TextStyle(
                                 color: Color(0xFF1E88E5),
                                 fontSize: 14,
@@ -355,12 +356,12 @@ class _TravelerLocationPickerScreenState
                       borderRadius:
                           BorderRadius.circular(AppDimensions.radiusM),
                     ),
-                    child: const Row(
+                    child: Row(
                       children: [
-                        Icon(Icons.map, color: Color(0xFF1E88E5), size: 22),
-                        SizedBox(width: 8),
+                        const Icon(Icons.map, color: Color(0xFF1E88E5), size: 22),
+                        const SizedBox(width: 8),
                         Text(
-                          'Pick on Map',
+                          AppLocalizations.of(context)?.travelerPickOnMap ?? 'Pick on Map',
                           style: TextStyle(
                             color: Color(0xFF1E88E5),
                             fontSize: 14,
@@ -420,13 +421,13 @@ class _TravelerLocationPickerScreenState
                           BorderRadius.circular(AppDimensions.radiusL),
                     ),
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.flight_takeoff, size: 20),
-                      SizedBox(width: 8),
+                      const Icon(Icons.flight_takeoff, size: 20),
+                      const SizedBox(width: 8),
                       Text(
-                        'Confirm Location',
+                        AppLocalizations.of(context)?.travelerConfirmLocation ?? 'Confirm Location',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -510,7 +511,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
     setState(() {
       _selectedLatLng = latLng;
       _isLoadingAddress = true;
-      _addressText = 'Loading address...';
+      _addressText = AppLocalizations.of(context)?.travelerLoadingAddress ?? 'Loading address...';
     });
 
     try {
@@ -573,9 +574,9 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: const Text(
-          'Select on Map',
-          style: TextStyle(color: AppColors.textPrimary, fontSize: 18),
+        title: Text(
+          AppLocalizations.of(context)?.travelerSelectOnMap ?? 'Select on Map',
+          style: const TextStyle(color: AppColors.textPrimary, fontSize: 18),
         ),
       ),
       body: Column(
@@ -688,9 +689,9 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                 borderRadius: BorderRadius.circular(AppDimensions.radiusL),
               ),
             ),
-            child: const Text(
-              'Select This Location',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            child: Text(
+              AppLocalizations.of(context)?.travelerSelectThisLocation ?? 'Select This Location',
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
         ),
@@ -877,17 +878,17 @@ class _SelectedLocationCard extends StatelessWidget {
                   onPressed: onClear,
                   icon: const Icon(Icons.refresh,
                       color: AppColors.textTertiary, size: 18),
-                  label: const Text(
-                    'Change location',
-                    style: TextStyle(color: AppColors.textTertiary),
+                  label: Text(
+                    AppLocalizations.of(context)?.travelerChangeLocation ?? 'Change location',
+                    style: const TextStyle(color: AppColors.textTertiary),
                   ),
                 ),
               ],
             ),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'You will appear in discovery results for this location for 24 hours.',
+          Text(
+            AppLocalizations.of(context)?.travelerAppearFor24Hours ?? 'You will appear in discovery results for this location for 24 hours.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: AppColors.textTertiary,
@@ -917,17 +918,17 @@ class _EmptyState extends StatelessWidget {
               color: AppColors.textTertiary.withOpacity(0.5),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Search for a city or use GPS',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)?.travelerSearchOrGps ?? 'Search for a city or use GPS',
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Your profile will appear in that location\'s discovery feed for 24 hours with a Traveler badge.',
+            Text(
+              AppLocalizations.of(context)?.travelerProfileAppearDescription ?? 'Your profile will appear in that location\'s discovery feed for 24 hours with a Traveler badge.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: AppColors.textTertiary,

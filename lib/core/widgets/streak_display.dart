@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #12: Streak Display Widget
@@ -24,6 +25,7 @@ class StreakDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (isCompact) {
       return GestureDetector(
         onTap: onTap,
@@ -92,7 +94,7 @@ class StreakDisplay extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '$streakDays Day Streak!',
+                    l10n.dayStreakLabel(streakDays),
                     style: TextStyle(
                       color: _getStreakColor(),
                       fontSize: 18,
@@ -101,7 +103,7 @@ class StreakDisplay extends StatelessWidget {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    _getStreakMessage(),
+                    _getStreakMessage(l10n),
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 12,
@@ -120,12 +122,12 @@ class StreakDisplay extends StatelessWidget {
     );
   }
 
-  String _getStreakMessage() {
-    if (streakDays >= 30) return 'Incredible dedication! 🏆';
-    if (streakDays >= 14) return 'Two weeks strong! 💪';
-    if (streakDays >= 7) return 'One week milestone! 🎯';
-    if (streakDays >= 3) return 'Building momentum! 🚀';
-    return 'Keep it up! ✨';
+  String _getStreakMessage(AppLocalizations l10n) {
+    if (streakDays >= 30) return l10n.streakMessageIncredible;
+    if (streakDays >= 14) return l10n.streakMessageTwoWeeks;
+    if (streakDays >= 7) return l10n.streakMessageOneWeek;
+    if (streakDays >= 3) return l10n.streakMessageMomentum;
+    return l10n.streakMessageKeepItUp;
   }
 }
 

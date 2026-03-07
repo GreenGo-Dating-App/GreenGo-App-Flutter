@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/virtual_gift.dart';
 import '../bloc/virtual_gift_bloc.dart';
 import '../bloc/virtual_gift_event.dart';
@@ -63,12 +64,13 @@ class _GiftShopScreenState extends State<GiftShopScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Send Gift to ${widget.receiverName}'),
+        title: Text(l10n.giftSendGiftTo(widget.receiverName)),
         bottom: TabBar(
           controller: _tabController,
           isScrollable: true,
@@ -93,7 +95,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
           } else if (state is GiftSent) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text('Gift sent to ${widget.receiverName}!'),
+                content: Text(l10n.giftSentTo(widget.receiverName)),
                 backgroundColor: Colors.green,
               ),
             );
@@ -133,7 +135,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
             );
           }
 
-          return const Center(child: Text('No gifts available'));
+          return Center(child: Text(l10n.giftNoGiftsAvailable));
         },
       ),
     );
@@ -144,6 +146,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
     List<VirtualGift> gifts,
     GiftCatalogLoaded state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     if (gifts.isEmpty) {
       return Center(
         child: Column(
@@ -156,7 +159,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              'No gifts in this category',
+              l10n.giftNoGiftsInCategory,
               style: Theme.of(context).textTheme.bodyLarge,
             ),
           ],
@@ -196,6 +199,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
     BuildContext context,
     GiftCatalogLoaded state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final selectedGift = state.gifts.firstWhere((g) => g.id == _selectedGiftId);
@@ -254,7 +258,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
                           ),
                           const SizedBox(width: 4),
                           Text(
-                            '${selectedGift.price} coins',
+                            l10n.giftPriceCoins(selectedGift.price),
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: canAfford
                                   ? colorScheme.secondary
@@ -283,7 +287,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
             TextField(
               controller: _messageController,
               decoration: InputDecoration(
-                hintText: 'Add a message (optional)',
+                hintText: l10n.virtualGiftsAddMessageHint,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -309,7 +313,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
                     : const Icon(Icons.send),
-                label: Text(isSending ? 'Sending...' : 'Send Gift'),
+                label: Text(isSending ? l10n.giftSending : l10n.giftSendGift),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
@@ -345,26 +349,27 @@ class _GiftShopScreenState extends State<GiftShopScreen>
     BuildContext context,
     InsufficientCoins state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.monetization_on, color: Colors.orange),
-            SizedBox(width: 8),
-            Text('Not Enough Coins'),
+            const Icon(Icons.monetization_on, color: Colors.orange),
+            const SizedBox(width: 8),
+            Text(l10n.giftNotEnoughCoins),
           ],
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('You need ${state.required} coins for this gift.'),
+            Text(l10n.giftYouNeedCoins(state.required)),
             const SizedBox(height: 8),
-            Text('You have ${state.available} coins.'),
+            Text(l10n.giftYouHaveCoins(state.available)),
             const SizedBox(height: 8),
             Text(
-              'You need ${state.shortfall} more coins.',
+              l10n.giftYouNeedMoreCoins(state.shortfall),
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ],
@@ -380,7 +385,7 @@ class _GiftShopScreenState extends State<GiftShopScreen>
               // Navigate to coin shop
               // Navigator.pushNamed(context, '/shop');
             },
-            child: const Text('Get Coins'),
+            child: Text(l10n.giftGetCoins),
           ),
         ],
       ),
@@ -412,9 +417,10 @@ class _ReceivedGiftsScreenState extends State<ReceivedGiftsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Received Gifts'),
+        title: Text(l10n.giftReceivedGifts),
       ),
       body: BlocBuilder<VirtualGiftBloc, VirtualGiftState>(
         builder: (context, state) {
@@ -435,12 +441,12 @@ class _ReceivedGiftsScreenState extends State<ReceivedGiftsScreen> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'No gifts yet',
+                      l10n.giftNoGiftsYet,
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Gifts you receive will appear here',
+                      l10n.giftReceivedGiftsEmpty,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             color:
                                 Theme.of(context).colorScheme.onSurfaceVariant,
@@ -475,13 +481,14 @@ class _ReceivedGiftsScreenState extends State<ReceivedGiftsScreen> {
             );
           }
 
-          return const Center(child: Text('No gifts available'));
+          return Center(child: Text(l10n.giftNoGiftsAvailable));
         },
       ),
     );
   }
 
   void _showGiftAnimation(BuildContext context, SentVirtualGift gift) {
+    final l10n = AppLocalizations.of(context)!;
     // Mark as viewed
     if (gift.isNew) {
       context.read<VirtualGiftBloc>().add(MarkGiftViewedEvent(gift.id));
@@ -508,7 +515,7 @@ class _ReceivedGiftsScreenState extends State<ReceivedGiftsScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                'From ${gift.senderName}',
+                l10n.giftFromSender(gift.senderName),
                 style: Theme.of(context).textTheme.bodyLarge,
               ),
               if (gift.message != null) ...[

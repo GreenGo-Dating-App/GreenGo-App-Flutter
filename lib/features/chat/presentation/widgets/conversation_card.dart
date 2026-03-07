@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -25,6 +26,7 @@ class ConversationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final hasUnread = conversation.hasUnreadMessages;
     final isTyping = conversation.isOtherUserTyping(currentUserId);
 
@@ -157,7 +159,7 @@ class ConversationCard extends StatelessWidget {
                 children: [
                   // Name
                   Text(
-                    otherUserProfile?.displayName ?? 'Unknown',
+                    otherUserProfile?.displayName ?? l10n.chatUnknown,
                     style: TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
@@ -172,18 +174,18 @@ class ConversationCard extends StatelessWidget {
 
                   // Last message or typing indicator
                   if (isTyping)
-                    const Row(
+                    Row(
                       children: [
                         Text(
-                          'typing',
-                          style: TextStyle(
+                          l10n.chatTyping,
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 14,
                             fontStyle: FontStyle.italic,
                           ),
                         ),
-                        SizedBox(width: 4),
-                        SizedBox(
+                        const SizedBox(width: 4),
+                        const SizedBox(
                           width: 12,
                           height: 12,
                           child: CircularProgressIndicator(

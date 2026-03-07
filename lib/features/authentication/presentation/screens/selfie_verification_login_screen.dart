@@ -49,7 +49,7 @@ class _SelfieVerificationLoginScreenState
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to take photo: ${e.toString()}'),
+          content: Text(AppLocalizations.of(context)!.authFailedToTakePhoto(e.toString())),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -59,8 +59,8 @@ class _SelfieVerificationLoginScreenState
   Future<void> _verifyAndProceed() async {
     if (_capturedPhoto == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please take a selfie to verify your identity'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.authTakeSelfieToVerify),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -91,20 +91,20 @@ class _SelfieVerificationLoginScreenState
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Cancel Verification?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.authCancelVerification,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'You will be signed out if you cancel the verification.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.authCancelVerificationBody,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text(
-              'Stay',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.authStay,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           TextButton(
@@ -112,9 +112,9 @@ class _SelfieVerificationLoginScreenState
               Navigator.pop(context);
               context.read<AuthBloc>().add(const AuthSelfieVerificationCancelled());
             },
-            child: const Text(
-              'Sign Out',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(context)!.authSignOut,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],
@@ -135,9 +135,9 @@ class _SelfieVerificationLoginScreenState
           icon: const Icon(Icons.close, color: AppColors.textPrimary),
           onPressed: _cancelVerification,
         ),
-        title: const Text(
-          'Identity Verification',
-          style: TextStyle(
+        title: Text(
+          l10n.authIdentityVerification,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
           ),
@@ -154,7 +154,7 @@ class _SelfieVerificationLoginScreenState
 
               // Welcome back message
               Text(
-                'Welcome back, ${widget.user.displayName ?? widget.user.email}!',
+                l10n.authWelcomeBack(widget.user.displayName ?? widget.user.email),
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: AppColors.richGold,
                       fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _SelfieVerificationLoginScreenState
               ),
               const SizedBox(height: 8),
               Text(
-                'Please verify your identity with a selfie',
+                l10n.authVerifyWithSelfie,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       color: AppColors.textSecondary,
                     ),
@@ -191,7 +191,7 @@ class _SelfieVerificationLoginScreenState
                         const SizedBox(width: 12),
                         Expanded(
                           child: Text(
-                            'This extra security step helps protect your account',
+                            l10n.authSecurityStep,
                             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                   color: AppColors.textSecondary,
                                 ),
@@ -201,7 +201,7 @@ class _SelfieVerificationLoginScreenState
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'You can disable this in Settings > Security',
+                      l10n.authDisableInSettings,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
                             color: AppColors.textTertiary,
                           ),
@@ -248,9 +248,9 @@ class _SelfieVerificationLoginScreenState
                             strokeWidth: 2,
                           ),
                         )
-                      : const Text(
-                          'Verify & Continue',
-                          style: TextStyle(
+                      : Text(
+                          l10n.authVerifyAndContinue,
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -262,9 +262,9 @@ class _SelfieVerificationLoginScreenState
               // Sign out option
               TextButton(
                 onPressed: _cancelVerification,
-                child: const Text(
-                  'Sign out instead',
-                  style: TextStyle(color: AppColors.textTertiary),
+                child: Text(
+                  l10n.authSignOutInstead,
+                  style: const TextStyle(color: AppColors.textTertiary),
                 ),
               ),
             ],
@@ -286,6 +286,7 @@ class _TakeSelfieCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -318,9 +319,9 @@ class _TakeSelfieCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 24),
-              const Text(
-                'Take a Selfie',
-                style: TextStyle(
+              Text(
+                l10n.authTakeSelfie,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -328,11 +329,11 @@ class _TakeSelfieCard extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
-                  'Look at the camera and tap to capture',
-                  style: TextStyle(
+                  l10n.authSelfieInstruction,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,
                   ),
@@ -396,9 +397,9 @@ class _SelfiePhotoCard extends StatelessWidget {
         TextButton.icon(
           onPressed: onRetake,
           icon: const Icon(Icons.refresh, color: AppColors.richGold),
-          label: const Text(
-            'Retake Photo',
-            style: TextStyle(color: AppColors.richGold),
+          label: Text(
+            AppLocalizations.of(context)!.authRetakePhoto,
+            style: const TextStyle(color: AppColors.richGold),
           ),
         ),
       ],

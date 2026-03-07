@@ -442,7 +442,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                   ),
                 ),
                 Text(
-                  'Delete conversation with $otherUserName?',
+                  AppLocalizations.of(context)!.chatDeleteConversationWith(otherUserName),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
@@ -452,13 +452,13 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                 const SizedBox(height: 16),
                 ListTile(
                   leading: const Icon(Icons.delete_outline, color: AppColors.textSecondary),
-                  title: const Text(
-                    'Delete for me',
-                    style: TextStyle(color: AppColors.textPrimary),
+                  title: Text(
+                    AppLocalizations.of(context)!.chatDeleteForMe,
+                    style: const TextStyle(color: AppColors.textPrimary),
                   ),
-                  subtitle: const Text(
-                    'This chat will be removed from your list only',
-                    style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                  subtitle: Text(
+                    AppLocalizations.of(context)!.chatDeleteForMeDescription,
+                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
                   ),
                   onTap: () {
                     Navigator.pop(bottomSheetContext);
@@ -472,13 +472,13 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                 ),
                 ListTile(
                   leading: const Icon(Icons.delete_forever, color: AppColors.errorRed),
-                  title: const Text(
-                    'Delete for both',
-                    style: TextStyle(color: AppColors.errorRed),
+                  title: Text(
+                    AppLocalizations.of(context)!.chatDeleteForBoth,
+                    style: const TextStyle(color: AppColors.errorRed),
                   ),
-                  subtitle: const Text(
-                    'This chat will be removed for both users',
-                    style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                  subtitle: Text(
+                    AppLocalizations.of(context)!.chatDeleteForBothDescription,
+                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
                   ),
                   onTap: () {
                     Navigator.pop(bottomSheetContext);

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/widgets/learning_effects.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// A gamified quiz widget with animations, sound effects, and visual feedback.
 ///
@@ -311,7 +312,7 @@ class _GamifiedQuizWidgetState extends State<GamifiedQuizWidget>
                                   Text(
                                     (_selectedAnswer ==
                                             question.correctIndex)
-                                        ? 'Correct!'
+                                        ? AppLocalizations.of(context)!.learningCorrect
                                         : 'Explanation',
                                     style: TextStyle(
                                       color: (_selectedAnswer ==
@@ -688,9 +689,9 @@ class _GamifiedQuizWidgetState extends State<GamifiedQuizWidget>
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text(
-                          'Try Again',
-                          style: TextStyle(fontSize: 16),
+                        child: Text(
+                          AppLocalizations.of(context)!.learningTryAgain,
+                          style: const TextStyle(fontSize: 16),
                         ),
                       ),
                     ),
@@ -715,7 +716,7 @@ class _GamifiedQuizWidgetState extends State<GamifiedQuizWidget>
                         elevation: 0,
                       ),
                       child: Text(
-                        passed ? 'Continue' : 'Skip for Now',
+                        passed ? AppLocalizations.of(context)!.learningContinue : 'Skip for Now',
                         style: const TextStyle(fontSize: 16),
                       ),
                     ),

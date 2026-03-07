@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uuid/uuid.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/message_report.dart';
 import '../../data/datasources/reports_admin_remote_datasource.dart';
@@ -61,7 +62,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
       if (mounted) {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading data: $e')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorLoadingData(e.toString()))),
         );
       }
     }
@@ -75,20 +76,21 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text('Reports Management'),
+        title: Text(l10n.adminReportsManagement),
         bottom: TabBar(
           controller: _tabController,
           indicatorColor: AppColors.richGold,
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.textSecondary,
           tabs: [
-            Tab(text: 'Pending (${_pendingReports.length})'),
-            const Tab(text: 'All Reports'),
-            Tab(text: 'Locked (${_lockedAccounts.length})'),
+            Tab(text: l10n.adminPendingCount(_pendingReports.length)),
+            Tab(text: l10n.adminAllReports),
+            Tab(text: l10n.adminLockedCount(_lockedAccounts.length)),
           ],
         ),
         actions: [
@@ -115,15 +117,15 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
 
   Widget _buildPendingReportsList() {
     if (_pendingReports.isEmpty) {
-      return const Center(
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.check_circle, size: 64, color: AppColors.successGreen),
-            SizedBox(height: 16),
+            const Icon(Icons.check_circle, size: 64, color: AppColors.successGreen),
+            const SizedBox(height: 16),
             Text(
-              'No pending reports',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+              AppLocalizations.of(context)!.adminNoPendingReports,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 16),
             ),
           ],
         ),
@@ -141,10 +143,10 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
 
   Widget _buildAllReportsList() {
     if (_allReports.isEmpty) {
-      return const Center(
+      return Center(
         child: Text(
-          'No reports yet',
-          style: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+          AppLocalizations.of(context)!.adminNoReportsYet,
+          style: const TextStyle(color: AppColors.textSecondary, fontSize: 16),
         ),
       );
     }
@@ -159,6 +161,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
   }
 
   Widget _buildReportCard(MessageReport report) {
+    final l10n = AppLocalizations.of(context)!;
     Color statusColor;
     switch (report.status) {
       case ReportStatus.pending:
@@ -211,9 +214,9 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
               ],
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Reported Message:',
-              style: TextStyle(
+            Text(
+              l10n.adminReportedMessage,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
               ),
@@ -236,7 +239,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
             ),
             const SizedBox(height: 12),
             Text(
-              'Reason: ${report.reason}',
+              l10n.adminReasonLabel(report.reason),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
@@ -244,14 +247,14 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
             ),
             const SizedBox(height: 8),
             Text(
-              'Reporter ID: ${report.reporterId.substring(0, 8)}...',
+              l10n.adminReporterIdShort(report.reporterId.substring(0, 8)),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
               ),
             ),
             Text(
-              'Reported User ID: ${report.reportedUserId.substring(0, 8)}...',
+              l10n.adminReportedUserIdShort(report.reportedUserId.substring(0, 8)),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -264,7 +267,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                   child: ElevatedButton.icon(
                     onPressed: () => _viewMessageContext(report),
                     icon: const Icon(Icons.visibility, size: 18),
-                    label: const Text('View Context'),
+                    label: Text(l10n.adminViewContext),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                       foregroundColor: AppColors.deepBlack,
@@ -275,18 +278,18 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                 IconButton(
                   onPressed: () => _chatWithReporter(report),
                   icon: const Icon(Icons.chat, color: AppColors.richGold),
-                  tooltip: 'Chat with Reporter',
+                  tooltip: l10n.adminChatWithReporter,
                 ),
                 if (report.status == ReportStatus.pending) ...[
                   IconButton(
                     onPressed: () => _dismissReport(report),
                     icon: const Icon(Icons.close, color: AppColors.textSecondary),
-                    tooltip: 'Dismiss',
+                    tooltip: l10n.adminDismiss,
                   ),
                   IconButton(
                     onPressed: () => _lockUserAccount(report),
                     icon: const Icon(Icons.lock, color: AppColors.errorRed),
-                    tooltip: 'Lock Account',
+                    tooltip: l10n.adminLockAccount,
                   ),
                 ],
               ],
@@ -298,16 +301,17 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
   }
 
   Widget _buildLockedAccountsList() {
+    final l10n = AppLocalizations.of(context)!;
     if (_lockedAccounts.isEmpty) {
-      return const Center(
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.lock_open, size: 64, color: AppColors.successGreen),
-            SizedBox(height: 16),
+            const Icon(Icons.lock_open, size: 64, color: AppColors.successGreen),
+            const SizedBox(height: 16),
             Text(
-              'No locked accounts',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+              l10n.adminNoLockedAccounts,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 16),
             ),
           ],
         ),
@@ -328,14 +332,14 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
               child: const Icon(Icons.lock, color: AppColors.errorRed),
             ),
             title: Text(
-              account['displayName'] ?? 'Unknown',
+              account['displayName'] ?? l10n.adminUnknown,
               style: const TextStyle(color: AppColors.textPrimary),
             ),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Reason: ${account['lockReason'] ?? 'N/A'}',
+                  l10n.adminLockReasonLabel(account['lockReason'] ?? 'N/A'),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 12,
@@ -343,7 +347,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                 ),
                 if (account['lockedAt'] != null)
                   Text(
-                    'Locked: ${_formatDate(account['lockedAt'])}',
+                    l10n.adminLockedDate(_formatDate(account['lockedAt'])),
                     style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 11,
@@ -357,7 +361,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                 backgroundColor: AppColors.successGreen,
                 foregroundColor: Colors.white,
               ),
-              child: const Text('Unlock'),
+              child: Text(l10n.adminUnlock),
             ),
           ),
         );
@@ -447,7 +451,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
       if (!mounted) return;
       Navigator.pop(context); // Close loading
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error opening chat: $e')),
+        SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorOpeningChat(e.toString()))),
       );
     }
   }
@@ -475,12 +479,13 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
       if (!mounted) return;
       Navigator.pop(context);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error loading context: $e')),
+        SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorLoadingContext(e.toString()))),
       );
     }
   }
 
   void _showMessageContextDialog(List<Message> messages, String reportedMessageId) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (context) => Dialog(
@@ -494,8 +499,8 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Message Context (50 before/after)',
+                  Text(
+                    l10n.adminMessageContext,
                     style: TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
@@ -535,7 +540,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'User: ${message.senderId.substring(0, 8)}...',
+                                l10n.adminUserSenderIdShort(message.senderId.substring(0, 8)),
                                 style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 11,
@@ -562,10 +567,10 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                             ),
                           ),
                           if (isReported)
-                            const Padding(
-                              padding: EdgeInsets.only(top: 4),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
                               child: Text(
-                                '^ REPORTED MESSAGE',
+                                l10n.adminReportedMessageMarker,
                                 style: TextStyle(
                                   color: AppColors.errorRed,
                                   fontSize: 10,
@@ -587,17 +592,18 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
   }
 
   Future<void> _dismissReport(MessageReport report) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirm = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Dismiss Report',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminDismissReport,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Are you sure you want to dismiss this report?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          l10n.adminDismissReportConfirm,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -609,7 +615,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,
             ),
-            child: const Text('Dismiss'),
+            child: Text(l10n.adminDismiss),
           ),
         ],
       ),
@@ -625,7 +631,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         _loadData();
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Report dismissed')),
+            SnackBar(content: Text(l10n.adminReportDismissed)),
           );
         }
       } catch (e) {
@@ -639,6 +645,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
   }
 
   Future<void> _lockUserAccount(MessageReport report) async {
+    final l10n = AppLocalizations.of(context)!;
     final reasonController = TextEditingController();
     final lockDays = ValueNotifier<int?>(null);
 
@@ -646,25 +653,25 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Lock Account',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminLockAccount,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Lock account for user ${report.reportedUserId.substring(0, 8)}...?',
+              l10n.adminLockAccountConfirm(report.reportedUserId.substring(0, 8)),
               style: const TextStyle(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
             TextField(
               controller: reasonController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: const InputDecoration(
-                labelText: 'Reason',
-                labelStyle: TextStyle(color: AppColors.textSecondary),
-                border: OutlineInputBorder(),
+              decoration: InputDecoration(
+                labelText: l10n.adminReason,
+                labelStyle: const TextStyle(color: AppColors.textSecondary),
+                border: const OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 16),
@@ -675,17 +682,17 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                   value: value,
                   dropdownColor: AppColors.backgroundCard,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Lock Duration',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.adminLockDuration,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
-                  items: const [
-                    DropdownMenuItem(value: null, child: Text('Permanent')),
-                    DropdownMenuItem(value: 1, child: Text('1 day')),
-                    DropdownMenuItem(value: 7, child: Text('7 days')),
-                    DropdownMenuItem(value: 30, child: Text('30 days')),
-                    DropdownMenuItem(value: 90, child: Text('90 days')),
+                  items: [
+                    DropdownMenuItem(value: null, child: Text(l10n.adminPermanent)),
+                    DropdownMenuItem(value: 1, child: Text(l10n.adminOneDay)),
+                    DropdownMenuItem(value: 7, child: Text(l10n.adminSevenDays)),
+                    DropdownMenuItem(value: 30, child: Text(l10n.adminThirtyDays)),
+                    DropdownMenuItem(value: 90, child: Text(l10n.adminNinetyDays)),
                   ],
                   onChanged: (v) => lockDays.value = v,
                 );
@@ -703,7 +710,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.errorRed,
             ),
-            child: const Text('Lock Account'),
+            child: Text(l10n.adminLockAccount),
           ),
         ],
       ),
@@ -720,7 +727,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
           adminId: widget.adminId,
           reason: reasonController.text.isNotEmpty
               ? reasonController.text
-              : 'Violation of community guidelines',
+              : l10n.adminViolationOfCommunityGuidelines,
           lockUntil: lockUntil,
         );
 
@@ -734,8 +741,8 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         _loadData();
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Account locked successfully'),
+            SnackBar(
+              content: Text(l10n.adminAccountLockedSuccessfully),
               backgroundColor: AppColors.successGreen,
             ),
           );
@@ -751,17 +758,18 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
   }
 
   Future<void> _unlockAccount(String userId) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirm = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Unlock Account',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminUnlockAccount,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Are you sure you want to unlock this account?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          l10n.adminUnlockAccountConfirm,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -773,7 +781,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.successGreen,
             ),
-            child: const Text('Unlock'),
+            child: Text(l10n.adminUnlock),
           ),
         ],
       ),
@@ -788,8 +796,8 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         _loadData();
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Account unlocked successfully'),
+            SnackBar(
+              content: Text(l10n.adminAccountUnlockedSuccessfully),
               backgroundColor: AppColors.successGreen,
             ),
           );

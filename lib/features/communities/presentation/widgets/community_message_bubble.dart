@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community_message.dart';
 
 /// Community Message Bubble Widget
@@ -28,7 +29,7 @@ class CommunityMessageBubble extends StatelessWidget {
 
     // Special message types (language tip, cultural fact, city tip)
     if (message.isSpecialType) {
-      return _buildSpecialMessage();
+      return _buildSpecialMessage(context);
     }
 
     return _buildRegularMessage();
@@ -139,8 +140,8 @@ class CommunityMessageBubble extends StatelessWidget {
     );
   }
 
-  Widget _buildSpecialMessage() {
-    final config = _getSpecialMessageConfig();
+  Widget _buildSpecialMessage(BuildContext context) {
+    final config = _getSpecialMessageConfig(context);
 
     return Container(
       margin: const EdgeInsets.symmetric(
@@ -237,7 +238,8 @@ class CommunityMessageBubble extends StatelessWidget {
     );
   }
 
-  _SpecialMessageConfig _getSpecialMessageConfig() {
+  _SpecialMessageConfig _getSpecialMessageConfig(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     switch (message.type) {
       case CommunityMessageType.languageTip:
         return _SpecialMessageConfig(
@@ -245,7 +247,7 @@ class CommunityMessageBubble extends StatelessWidget {
           iconColor: AppColors.warningAmber,
           backgroundColor: AppColors.warningAmber.withValues(alpha: 0.08),
           borderColor: AppColors.warningAmber.withValues(alpha: 0.3),
-          label: 'LANGUAGE TIP',
+          label: l10n.communitiesLanguageTipUpper,
         );
       case CommunityMessageType.culturalFact:
         return _SpecialMessageConfig(
@@ -253,7 +255,7 @@ class CommunityMessageBubble extends StatelessWidget {
           iconColor: AppColors.basePurple,
           backgroundColor: AppColors.basePurple.withValues(alpha: 0.08),
           borderColor: AppColors.basePurple.withValues(alpha: 0.3),
-          label: 'CULTURAL FACT',
+          label: l10n.communitiesCulturalFactUpper,
         );
       case CommunityMessageType.cityTip:
         return _SpecialMessageConfig(
@@ -261,7 +263,7 @@ class CommunityMessageBubble extends StatelessWidget {
           iconColor: AppColors.successGreen,
           backgroundColor: AppColors.successGreen.withValues(alpha: 0.08),
           borderColor: AppColors.successGreen.withValues(alpha: 0.3),
-          label: 'CITY TIP',
+          label: l10n.communitiesCityTipUpper,
         );
       default:
         return _SpecialMessageConfig(
@@ -269,7 +271,7 @@ class CommunityMessageBubble extends StatelessWidget {
           iconColor: AppColors.infoBlue,
           backgroundColor: AppColors.infoBlue.withValues(alpha: 0.08),
           borderColor: AppColors.infoBlue.withValues(alpha: 0.3),
-          label: 'INFO',
+          label: l10n.communitiesInfoUpper,
         );
     }
   }

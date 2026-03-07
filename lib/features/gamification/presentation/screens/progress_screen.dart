@@ -174,7 +174,7 @@ class _ProgressScreenState extends State<ProgressScreen>
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Loading your progress...',
+                  l10n.loading,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.6),
                     fontSize: 14,
@@ -428,9 +428,9 @@ class _ProgressScreenState extends State<ProgressScreen>
                   height: 1,
                 ),
               ),
-              const Text(
-                'LEVEL',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.gamificationLevelLabel,
+                style: const TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.w600,
                   color: Colors.white70,
@@ -642,9 +642,9 @@ class _ProgressScreenState extends State<ProgressScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      'Daily Streak',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.gamificationDayStreak,
+                      style: const TextStyle(
                         fontSize: 14,
                         color: Colors.white70,
                       ),

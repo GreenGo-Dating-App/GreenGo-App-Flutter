@@ -110,8 +110,8 @@ class _LanguagePacksShopScreenState extends State<LanguagePacksShopScreen> {
                 .add(PurchaseLanguagePack(_pendingPackId!));
             _pendingPackId = null;
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Pack purchased successfully!'),
+              SnackBar(
+                content: Text(l10n.learningPackPurchased),
                 backgroundColor: Colors.green,
               ),
             );
@@ -287,7 +287,7 @@ class _LanguagePacksShopScreenState extends State<LanguagePacksShopScreen> {
           ),
           const SizedBox(height: 16),
           Text(
-            'No packs found',
+            AppLocalizations.of(context)!.learningNoPacksFound,
             style: TextStyle(
               color: Colors.grey[500],
               fontSize: 16,

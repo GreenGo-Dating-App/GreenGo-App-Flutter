@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
@@ -30,6 +31,8 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
         }
 
         final age = _calculateAge(state.dateOfBirth!);
+
+        final l10n = AppLocalizations.of(context)!;
 
         return LuxuryOnboardingLayout(
           title: 'Profile preview',
@@ -127,12 +130,12 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Basic Info
                             _buildInfoSection(
                               context,
-                              'Basic Info',
+                              l10n.basicInformation,
                               [
                                 _InfoItem(
-                                    'Name', state.displayName ?? 'Not set'),
+                                    'Name', state.displayName ?? l10n.notSet),
                                 _InfoItem('Age', '$age years old'),
-                                _InfoItem('Gender', state.gender ?? 'Not set'),
+                                _InfoItem(l10n.gender, state.gender ?? l10n.notSet),
                               ],
                             ),
 
@@ -141,9 +144,9 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Bio
                             _buildInfoSection(
                               context,
-                              'About Me',
+                              l10n.aboutMe,
                               [
-                                _InfoItem('Bio',
+                                _InfoItem(l10n.bio,
                                     state.bio ?? 'No bio provided',
                                     isMultiline: true),
                               ],
@@ -154,7 +157,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Interests
                             _buildChipSection(
                               context,
-                              'Interests',
+                              l10n.interests,
                               state.interests,
                             ),
 
@@ -163,17 +166,17 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Location & Languages
                             _buildInfoSection(
                               context,
-                              'Location & Languages',
+                              l10n.locationAndLanguages,
                               [
                                 _InfoItem(
-                                  'Location',
+                                  l10n.location,
                                   state.location?.displayAddress ??
-                                      'Not set',
+                                      l10n.notSet,
                                 ),
                                 _InfoItem(
-                                  'Languages',
+                                  l10n.onboardingLanguages,
                                   state.languages.join(', ').isEmpty
-                                      ? 'Not set'
+                                      ? l10n.notSet
                                       : state.languages.join(', '),
                                 ),
                               ],
@@ -184,13 +187,13 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Voice Recording
                             _buildInfoSection(
                               context,
-                              'Voice Introduction',
+                              l10n.voiceIntroduction,
                               [
                                 _InfoItem(
                                   'Status',
                                   (state.voiceUrl != null && state.voiceUrl!.isNotEmpty)
-                                      ? 'Recorded'
-                                      : 'Not recorded',
+                                      ? l10n.voiceRecorded
+                                      : l10n.noVoiceRecording,
                                 ),
                               ],
                             ),

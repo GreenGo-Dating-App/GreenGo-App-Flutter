@@ -192,6 +192,8 @@ import '../../features/communities/domain/repositories/communities_repository.da
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
 
 // Language Games
+import '../../features/language_games/data/datasources/game_word_datasource.dart';
+import '../../features/language_games/data/datasources/game_word_datasource_impl.dart';
 import '../../features/language_games/data/datasources/language_games_remote_datasource.dart';
 import '../../features/language_games/data/repositories/language_games_repository_impl.dart';
 import '../../features/language_games/domain/repositories/language_games_repository.dart';
@@ -823,8 +825,14 @@ Future<void> init() async {
 
   //! Features - Language Games
   // Data sources
+  sl.registerLazySingleton<GameWordDatasource>(
+    () => GameWordDatasourceImpl(firestore: sl()),
+  );
   sl.registerLazySingleton<LanguageGamesRemoteDataSource>(
-    () => LanguageGamesRemoteDataSourceImpl(firestore: sl()),
+    () => LanguageGamesRemoteDataSourceImpl(
+      firestore: sl(),
+      gameWordDatasource: sl(),
+    ),
   );
 
   // Repository

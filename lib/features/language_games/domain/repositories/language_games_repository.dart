@@ -52,6 +52,12 @@ abstract class LanguageGamesRepository {
     required String answer,
   });
 
+  /// Submit a clue for Picture Guess game (appends to round clues array)
+  Future<Either<Failure, void>> submitClue({
+    required String roomId,
+    required String clue,
+  });
+
   /// Stream real-time game room updates
   Stream<GameRoom> getRoomStream(String roomId);
 

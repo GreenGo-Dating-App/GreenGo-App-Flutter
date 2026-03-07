@@ -127,7 +127,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(p.error?.message ?? 'Purchase failed'),
+                content: Text(p.error?.message ?? AppLocalizations.of(context)!.coinsPurchaseFailed),
                 backgroundColor: Colors.red,
               ),
             );
@@ -289,8 +289,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
     try {
       final available = await _iap.isAvailable();
       if (!available) {
-        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
-        _showError('Store not available. Make sure $storeName is installed.');
+        _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
         setState(() => _loading = false);
         return;
       }
@@ -320,7 +319,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
       final bool ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
 
       if (!ok && mounted) {
-        _showError('Failed to initiate purchase');
+        _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
         setState(() => _loading = false);
       }
     } catch (e) {

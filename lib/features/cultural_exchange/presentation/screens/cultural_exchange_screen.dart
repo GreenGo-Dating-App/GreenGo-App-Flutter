@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/cultural_exchange_bloc.dart';
@@ -35,6 +36,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
@@ -63,9 +65,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                     pinned: true,
                     backgroundColor: AppColors.backgroundDark,
                     flexibleSpace: FlexibleSpaceBar(
-                      title: const Text(
-                        'Cultural Exchange',
-                        style: TextStyle(
+                      title: Text(
+                        l10n.culturalExchangeTitle,
+                        style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
@@ -108,7 +110,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                         // Country Spotlight
                         if (state.hasSpotlight) ...[
                           _buildSectionHeader(
-                            'Country Spotlight',
+                            l10n.culturalExchangeCountrySpotlight,
                             icon: Icons.public,
                           ),
                           const SizedBox(height: 10),
@@ -124,7 +126,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
 
                         // Quick Access: Dating Etiquette
                         _buildSectionHeader(
-                          'Dating Etiquette Guide',
+                          l10n.culturalExchangeDatingEtiquetteGuide,
                           icon: Icons.favorite,
                           onViewAll: () =>
                               _navigateToDatingEtiquette(context),
@@ -135,7 +137,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
 
                         // User Cultural Tips
                         _buildSectionHeader(
-                          'Community Tips',
+                          l10n.culturalExchangeCommunityTips,
                           icon: Icons.lightbulb_outline,
                         ),
                         const SizedBox(height: 10),
@@ -182,9 +184,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
           Icons.add,
           color: AppColors.deepBlack,
         ),
-        label: const Text(
-          'Share a Tip',
-          style: TextStyle(
+        label: Text(
+          l10n.culturalExchangeShareTip,
+          style: const TextStyle(
             color: AppColors.deepBlack,
             fontWeight: FontWeight.bold,
           ),
@@ -194,6 +196,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
   }
 
   Widget _buildDailyCulturalHint() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -226,20 +229,20 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
             ),
           ),
           const SizedBox(width: 12),
-          const Expanded(
+          Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Daily Cultural Insight',
-                  style: TextStyle(
+                  l10n.culturalExchangeDailyInsight,
+                  style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 13,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 4),
-                Text(
+                const SizedBox(height: 4),
+                const Text(
                   'In Japan, it is customary to bow when greeting someone. '
                   'The deeper the bow, the more respect you show.',
                   style: TextStyle(
@@ -281,9 +284,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
         if (onViewAll != null)
           GestureDetector(
             onTap: onViewAll,
-            child: const Text(
-              'View All',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.culturalExchangeViewAll,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
@@ -308,9 +311,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
             width: 0.5,
           ),
         ),
-        child: const Center(
+        child: Center(
           child: Text(
-            'Loading countries...',
+            AppLocalizations.of(context)!.culturalExchangeLoadingCountries,
             style: TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
@@ -363,6 +366,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
   }
 
   Widget _buildEmptyTips() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(32),
       decoration: BoxDecoration(
@@ -381,17 +385,17 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
             size: 48,
           ),
           const SizedBox(height: 12),
-          const Text(
-            'No tips yet',
-            style: TextStyle(
+          Text(
+            l10n.culturalExchangeNoTips,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 6),
-          const Text(
-            'Be the first to share a cultural tip!',
+          Text(
+            l10n.culturalExchangeBeFirstTip,
             style: TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
@@ -430,6 +434,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
   }
 
   void _showSubmitTipDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final titleController = TextEditingController();
     final contentController = TextEditingController();
     final countryController = TextEditingController();
@@ -466,9 +471,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                           size: 24,
                         ),
                         const SizedBox(width: 10),
-                        const Text(
-                          'Share a Cultural Tip',
-                          style: TextStyle(
+                        Text(
+                          l10n.culturalExchangeShareCulturalTip,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -489,15 +494,15 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                     // Country field
                     _buildInputField(
                       controller: countryController,
-                      label: 'Country',
-                      hint: 'e.g., Japan, Brazil, France',
+                      label: l10n.culturalExchangeCountry,
+                      hint: l10n.culturalExchangeCountryHint,
                     ),
                     const SizedBox(height: 12),
 
                     // Category selector
-                    const Text(
-                      'Category',
-                      style: TextStyle(
+                    Text(
+                      l10n.culturalExchangeCategory,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
@@ -551,16 +556,16 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                     // Title field
                     _buildInputField(
                       controller: titleController,
-                      label: 'Title',
-                      hint: 'Give your tip a catchy title',
+                      label: l10n.culturalExchangeTipTitle,
+                      hint: l10n.culturalExchangeTipTitleHint,
                     ),
                     const SizedBox(height: 12),
 
                     // Content field
                     _buildInputField(
                       controller: contentController,
-                      label: 'Your Tip',
-                      hint: 'Share your cultural knowledge...',
+                      label: l10n.culturalExchangeYourTip,
+                      hint: l10n.culturalExchangeYourTipHint,
                       maxLines: 4,
                     ),
                     const SizedBox(height: 20),
@@ -597,9 +602,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text(
-                          'Submit Tip',
-                          style: TextStyle(
+                        child: Text(
+                          l10n.culturalExchangeSubmitTip,
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),

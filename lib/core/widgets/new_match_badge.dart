@@ -222,7 +222,7 @@ class _JustMatchedIndicatorState extends State<JustMatchedIndicator>
                   ),
                   const SizedBox(width: 8),
                   const Text(
-                    "It's a Match!",
+                    "Let's Exchange!",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,

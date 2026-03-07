@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/scheduled_date.dart';
 import '../bloc/date_scheduler_bloc.dart';
 
@@ -41,15 +42,16 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Dates'),
+        title: Text(l10n.dateSchedulerTitle),
         bottom: TabBar(
           controller: _tabController,
-          tabs: const [
-            Tab(text: 'Upcoming'),
-            Tab(text: 'Pending'),
-            Tab(text: 'Past'),
+          tabs: [
+            Tab(text: l10n.dateSchedulerTabUpcoming),
+            Tab(text: l10n.dateSchedulerTabPending),
+            Tab(text: l10n.dateSchedulerTabPast),
           ],
         ),
       ),
@@ -64,15 +66,15 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
             );
           } else if (state is DateCreated) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Date scheduled!'),
+              SnackBar(
+                content: Text(l10n.dateSchedulerScheduled),
                 backgroundColor: Colors.green,
               ),
             );
           } else if (state is DateConfirmed) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Date confirmed!'),
+              SnackBar(
+                content: Text(l10n.dateSchedulerConfirmed),
                 backgroundColor: Colors.green,
               ),
             );
@@ -101,7 +103,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
           ? FloatingActionButton.extended(
               onPressed: () => _showCreateDateDialog(context),
               icon: const Icon(Icons.add),
-              label: const Text('Schedule Date'),
+              label: Text(l10n.dateSchedulerSchedule),
             )
           : null,
     );
@@ -171,6 +173,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
   }
 
   void _showCreateDateDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     DateTime selectedDate = DateTime.now().add(const Duration(days: 1));
     TimeOfDay selectedTime = const TimeOfDay(hour: 19, minute: 0);
     final titleController = TextEditingController();
@@ -217,10 +220,10 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                     const SizedBox(height: 24),
                     TextField(
                       controller: titleController,
-                      decoration: const InputDecoration(
-                        labelText: 'What are you planning?',
-                        hintText: 'e.g., Coffee, Dinner, Movie...',
-                        prefixIcon: Icon(Icons.event),
+                      decoration: InputDecoration(
+                        labelText: l10n.dateSchedulerWhatPlanning,
+                        hintText: l10n.dateSchedulerPlanningHint,
+                        prefixIcon: const Icon(Icons.event),
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -268,9 +271,9 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                     const SizedBox(height: 16),
                     TextField(
                       controller: notesController,
-                      decoration: const InputDecoration(
-                        labelText: 'Notes (optional)',
-                        prefixIcon: Icon(Icons.notes),
+                      decoration: InputDecoration(
+                        labelText: l10n.dateSchedulerNotesLabel,
+                        prefixIcon: const Icon(Icons.notes),
                       ),
                       maxLines: 2,
                     ),
@@ -280,7 +283,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                         Expanded(
                           child: OutlinedButton(
                             onPressed: () => Navigator.pop(ctx),
-                            child: const Text('Cancel'),
+                            child: Text(l10n.cancel),
                           ),
                         ),
                         const SizedBox(width: 16),
@@ -289,8 +292,8 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                             onPressed: () {
                               if (titleController.text.isEmpty) {
                                 ScaffoldMessenger.of(context).showSnackBar(
-                                  const SnackBar(
-                                    content: Text('Please enter a title'),
+                                  SnackBar(
+                                    content: Text(l10n.dateSchedulerEnterTitle),
                                   ),
                                 );
                                 return;
@@ -318,7 +321,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                                   );
                               Navigator.pop(ctx);
                             },
-                            child: const Text('Schedule'),
+                            child: Text(l10n.dateSchedulerSchedule),
                           ),
                         ),
                       ],
@@ -334,21 +337,22 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
   }
 
   void _showCancelDialog(BuildContext context, ScheduledDate date) {
+    final l10n = AppLocalizations.of(context)!;
     final reasonController = TextEditingController();
 
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Cancel Date'),
+        title: Text(l10n.dateSchedulerCancelTitle),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('Are you sure you want to cancel this date?'),
+            Text(l10n.dateSchedulerCancelConfirm),
             const SizedBox(height: 16),
             TextField(
               controller: reasonController,
-              decoration: const InputDecoration(
-                labelText: 'Reason (optional)',
+              decoration: InputDecoration(
+                labelText: l10n.dateSchedulerReasonLabel,
               ),
             ),
           ],
@@ -356,7 +360,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Keep Date'),
+            child: Text(l10n.dateSchedulerKeepDate),
           ),
           FilledButton(
             onPressed: () {
@@ -374,7 +378,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
             style: FilledButton.styleFrom(
               backgroundColor: Colors.red,
             ),
-            child: const Text('Cancel Date'),
+            child: Text(l10n.dateSchedulerCancelTitle),
           ),
         ],
       ),
@@ -382,6 +386,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
   }
 
   void _showRescheduleDialog(BuildContext context, ScheduledDate date) {
+    final l10n = AppLocalizations.of(context)!;
     DateTime selectedDate = date.scheduledAt;
     TimeOfDay selectedTime = TimeOfDay.fromDateTime(date.scheduledAt);
 
@@ -390,7 +395,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
       builder: (ctx) => StatefulBuilder(
         builder: (context, setStateLocal) {
           return AlertDialog(
-            title: const Text('Reschedule Date'),
+            title: Text(l10n.dateSchedulerRescheduleTitle),
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -430,7 +435,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(ctx),
-                child: const Text('Cancel'),
+                child: Text(l10n.cancel),
               ),
               FilledButton(
                 onPressed: () {
@@ -449,7 +454,7 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
                         ),
                       );
                 },
-                child: const Text('Reschedule'),
+                child: Text(l10n.dateSchedulerReschedule),
               ),
             ],
           );
@@ -477,6 +482,7 @@ class _DateCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final isPending = date.status == DateStatus.pending;
     final isCreator = date.creatorId == userId;
 
@@ -608,14 +614,14 @@ class _DateCard extends StatelessWidget {
                       style: OutlinedButton.styleFrom(
                         foregroundColor: Colors.red,
                       ),
-                      child: const Text('Decline'),
+                      child: Text(l10n.dateSchedulerDecline),
                     ),
                   ),
                   const SizedBox(width: 16),
                   Expanded(
                     child: FilledButton(
                       onPressed: onConfirm,
-                      child: const Text('Accept'),
+                      child: Text(l10n.dateSchedulerAccept),
                     ),
                   ),
                 ],
@@ -629,12 +635,12 @@ class _DateCard extends StatelessWidget {
                   TextButton.icon(
                     onPressed: onReschedule,
                     icon: const Icon(Icons.edit_calendar, size: 18),
-                    label: const Text('Reschedule'),
+                    label: Text(l10n.dateSchedulerReschedule),
                   ),
                   TextButton.icon(
                     onPressed: onCancel,
                     icon: const Icon(Icons.close, size: 18),
-                    label: const Text('Cancel'),
+                    label: Text(l10n.cancel),
                     style: TextButton.styleFrom(foregroundColor: Colors.red),
                   ),
                 ],

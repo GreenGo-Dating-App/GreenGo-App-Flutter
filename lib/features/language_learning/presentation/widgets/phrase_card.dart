@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/language_phrase.dart';
 
 class PhraseCard extends StatefulWidget {
@@ -97,9 +98,9 @@ class _PhraseCardState extends State<PhraseCard> {
                           color: const Color(0xFFD4AF37),
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: const Text(
-                          'PRO',
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)!.learningPro,
+                          style: const TextStyle(
                             color: Colors.black,
                             fontSize: 8,
                             fontWeight: FontWeight.bold,
@@ -175,7 +176,7 @@ class _PhraseCardState extends State<PhraseCard> {
                           child: Text(
                             _showTranslation
                                 ? widget.phrase.translation
-                                : 'Tap to reveal translation',
+                                : AppLocalizations.of(context)!.learningTapToRevealTranslation,
                             style: TextStyle(
                               color: _showTranslation
                                   ? Colors.white
@@ -214,7 +215,7 @@ class _PhraseCardState extends State<PhraseCard> {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Level ${widget.phrase.requiredLevel}',
+                      AppLocalizations.of(context)!.learningLevelRequired(widget.phrase.requiredLevel),
                       style: TextStyle(
                         color: Colors.white.withOpacity(0.5),
                         fontSize: 12,
@@ -245,7 +246,7 @@ class _PhraseCardState extends State<PhraseCard> {
                     Icons.check_circle_outline,
                     size: 16,
                   ),
-                  label: const Text('Learned'),
+                  label: Text(AppLocalizations.of(context)!.learningLearned),
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.green,
                     padding: const EdgeInsets.symmetric(

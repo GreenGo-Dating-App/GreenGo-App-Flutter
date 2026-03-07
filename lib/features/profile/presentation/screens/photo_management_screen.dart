@@ -91,7 +91,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to pick image: ${e.toString()}'),
+          content: Text(l10n?.photoFailedPickImage(e.toString()) ?? 'Failed to pick image: ${e.toString()}'),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -164,7 +164,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('OK', style: TextStyle(color: AppColors.richGold)),
+            child: Text(l10n?.ok ?? 'OK', style: const TextStyle(color: AppColors.richGold)),
           ),
         ],
       ),
@@ -202,7 +202,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(l10n?.cancel ?? 'Cancel'),
           ),
           TextButton(
             onPressed: () {
@@ -216,9 +216,9 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
               });
               _updateProfile();
             },
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              l10n?.delete ?? 'Delete',
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],
@@ -242,8 +242,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
     }
     if (targetList.contains(photoUrl)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Photo already exists in target album'),
+        SnackBar(
+          content: Text(l10n?.photoAlreadyExistsInAlbum ?? 'Photo already exists in target album'),
           backgroundColor: AppColors.warningAmber,
         ),
       );
@@ -306,9 +306,9 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
             onPressed: () => SafeNavigation.pop(context),
           ),
-          title: const Text(
-            'Manage Photos',
-            style: TextStyle(color: AppColors.textPrimary),
+          title: Text(
+            l10n?.photoManagePhotos ?? 'Manage Photos',
+            style: const TextStyle(color: AppColors.textPrimary),
           ),
           bottom: TabBar(
             controller: _tabController,
@@ -422,7 +422,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              isPrivate ? 'No private photos yet' : 'No photos yet',
+              isPrivate ? (AppLocalizations.of(context)?.photoNoPrivatePhotos ?? 'No private photos yet') : (AppLocalizations.of(context)?.photoNoPhotos ?? 'No photos yet'),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 18,
@@ -431,8 +431,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             const SizedBox(height: 8),
             Text(
               isPrivate
-                  ? 'Add private photos that you can share in chat'
-                  : 'Add photos to complete your profile',
+                  ? (AppLocalizations.of(context)?.photoAddPrivateDescription ?? 'Add private photos that you can share in chat')
+                  : (AppLocalizations.of(context)?.photoAddPublicDescription ?? 'Add photos to complete your profile'),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 14,
@@ -443,7 +443,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
             ElevatedButton.icon(
               onPressed: isLoading ? null : () => _addPhoto(isPrivate: isPrivate),
               icon: const Icon(Icons.add_photo_alternate),
-              label: const Text('Add Photo'),
+              label: Text(AppLocalizations.of(context)?.photoAddPhoto ?? 'Add Photo'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
@@ -478,7 +478,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '${photos.length}/6 photos',
+                      AppLocalizations.of(context)?.photoCountOf6(photos.length) ?? '${photos.length}/6 photos',
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontWeight: FontWeight.w600,
@@ -487,8 +487,8 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
                     const SizedBox(height: 4),
                     Text(
                       isPrivate
-                          ? 'Private photos can be shared in chat'
-                          : 'Long press and drag to reorder',
+                          ? (AppLocalizations.of(context)?.photoPrivateShareInfo ?? 'Private photos can be shared in chat')
+                          : (AppLocalizations.of(context)?.photoLongPressReorder ?? 'Long press and drag to reorder'),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12,
@@ -582,9 +582,9 @@ class _PhotoCard extends StatelessWidget {
                   color: AppColors.richGold,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Text(
-                  'PRIMARY',
-                  style: TextStyle(
+                child: Text(
+                  AppLocalizations.of(context)?.photoPrimary ?? 'PRIMARY',
+                  style: const TextStyle(
                     color: AppColors.deepBlack,
                     fontSize: 12,
                     fontWeight: FontWeight.bold,

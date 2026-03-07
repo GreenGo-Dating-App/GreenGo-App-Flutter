@@ -988,7 +988,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   ),
                   if (_activeFilters.isNotEmpty)
                     Text(
-                      'Filtered from $total',
+                      l10n.filteredFromTotal(total),
                       style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 10,
@@ -1036,14 +1036,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                       color: const Color(0xFF1E88E5).withOpacity(0.3),
                     ),
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.explore, size: 14, color: Color(0xFF42A5F5)),
-                      SizedBox(width: 4),
+                      const Icon(Icons.explore, size: 14, color: Color(0xFF42A5F5)),
+                      const SizedBox(width: 4),
                       Text(
-                        'Travel',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.travelLabel,
+                        style: const TextStyle(
                           color: Color(0xFF42A5F5),
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
@@ -1129,9 +1129,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.favorite_border),
           const SizedBox(width: 6),
-          _buildFilterChip('Travelers', 'travelers', Icons.flight),
+          _buildFilterChip(l10n.discoveryFilterTravelers, 'travelers', Icons.flight),
           const SizedBox(width: 6),
-          _buildFilterChip('Guides', 'guides', Icons.shield),
+          _buildFilterChip(l10n.discoveryFilterGuides, 'guides', Icons.shield),
         ],
       ),
     );
@@ -2035,14 +2035,14 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       ),
                     ],
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.flight, size: 10, color: Colors.white),
-                      SizedBox(width: 2),
+                      const Icon(Icons.flight, size: 10, color: Colors.white),
+                      const SizedBox(width: 2),
                       Text(
-                        'Travel',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.travelLabel,
+                        style: const TextStyle(
                           fontSize: 8,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,

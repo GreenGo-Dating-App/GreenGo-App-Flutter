@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Local Guide Badge Widget
 ///
@@ -19,11 +20,11 @@ class LocalGuideBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (compact) return _buildCompact();
-    return _buildFull();
+    if (compact) return _buildCompact(context);
+    return _buildFull(context);
   }
 
-  Widget _buildCompact() {
+  Widget _buildCompact(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
@@ -39,14 +40,14 @@ class LocalGuideBadge extends StatelessWidget {
           ),
         ],
       ),
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.shield, size: 10, color: Colors.white),
-          SizedBox(width: 2),
+          const Icon(Icons.shield, size: 10, color: Colors.white),
+          const SizedBox(width: 2),
           Text(
-            'Guide',
-            style: TextStyle(
+            AppLocalizations.of(context)!.guideBadge,
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 8,
               fontWeight: FontWeight.bold,
@@ -57,7 +58,7 @@ class LocalGuideBadge extends StatelessWidget {
     );
   }
 
-  Widget _buildFull() {
+  Widget _buildFull(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
@@ -82,9 +83,9 @@ class LocalGuideBadge extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'Local Guide',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.localGuideBadge,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 12,
                   fontWeight: FontWeight.bold,

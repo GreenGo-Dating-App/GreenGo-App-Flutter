@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #22: Empty State Illustrations
@@ -31,6 +32,7 @@ class EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -40,7 +42,7 @@ class EmptyState extends StatelessWidget {
             _buildIllustration(),
             const SizedBox(height: 24),
             Text(
-              title ?? _getDefaultTitle(),
+              title ?? _getDefaultTitle(l10n),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 22,
@@ -50,7 +52,7 @@ class EmptyState extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(
-              message ?? _getDefaultMessage(),
+              message ?? _getDefaultMessage(l10n),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 15,
@@ -162,41 +164,41 @@ class EmptyState extends StatelessWidget {
     );
   }
 
-  String _getDefaultTitle() {
+  String _getDefaultTitle(AppLocalizations l10n) {
     switch (type) {
       case EmptyStateType.noMatches:
-        return 'No matches yet';
+        return l10n.emptyStateNoMatchesTitle;
       case EmptyStateType.noMessages:
-        return 'No messages';
+        return l10n.emptyStateNoMessagesTitle;
       case EmptyStateType.noNotifications:
-        return 'All caught up!';
+        return l10n.emptyStateNoNotificationsTitle;
       case EmptyStateType.noLikes:
-        return 'No likes yet';
+        return l10n.emptyStateNoLikesTitle;
       case EmptyStateType.noResults:
-        return 'No results found';
+        return l10n.emptyStateNoResultsTitle;
       case EmptyStateType.noInternet:
-        return 'No connection';
+        return l10n.emptyStateNoInternetTitle;
       case EmptyStateType.error:
-        return 'Something went wrong';
+        return l10n.emptyStateErrorTitle;
     }
   }
 
-  String _getDefaultMessage() {
+  String _getDefaultMessage(AppLocalizations l10n) {
     switch (type) {
       case EmptyStateType.noMatches:
-        return 'Start swiping to find your perfect match!';
+        return l10n.emptyStateNoMatchesMessage;
       case EmptyStateType.noMessages:
-        return 'When you match with someone, you can start chatting here.';
+        return l10n.emptyStateNoMessagesMessage;
       case EmptyStateType.noNotifications:
-        return 'You don\'t have any new notifications.';
+        return l10n.emptyStateNoNotificationsMessage;
       case EmptyStateType.noLikes:
-        return 'Complete your profile to get more likes!';
+        return l10n.emptyStateNoLikesMessage;
       case EmptyStateType.noResults:
-        return 'Try adjusting your search or filters.';
+        return l10n.emptyStateNoResultsMessage;
       case EmptyStateType.noInternet:
-        return 'Please check your internet connection and try again.';
+        return l10n.emptyStateNoInternetMessage;
       case EmptyStateType.error:
-        return 'We couldn\'t load this content. Please try again.';
+        return l10n.emptyStateErrorMessage;
     }
   }
 }

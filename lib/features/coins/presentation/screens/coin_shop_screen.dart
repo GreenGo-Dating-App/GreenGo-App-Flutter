@@ -189,7 +189,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(purchaseDetails.error?.message ?? 'Purchase failed'),
+                content: Text(purchaseDetails.error?.message ?? AppLocalizations.of(context)!.coinsPurchaseFailed),
                 backgroundColor: Colors.red,
               ),
             );
@@ -549,8 +549,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       body: TabBarView(
         controller: _tabController,
         children: [
-          _safeBuild(_buildBuyCoinsTab, 'Coins'),
-          _safeBuild(_buildMembershipTab, 'Membership'),
+          _safeBuild(_buildBuyCoinsTab, AppLocalizations.of(context)!.shopTabCoins),
+          _safeBuild(_buildMembershipTab, AppLocalizations.of(context)!.shopTabMembership),
         ],
       ),
       ),
@@ -634,7 +634,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 const Icon(Icons.warning_amber_rounded, color: Colors.orange, size: 48),
                 const SizedBox(height: 16),
                 Text(
-                  '$tabName tab error',
+                  AppLocalizations.of(context)!.shopTabError(tabName),
                   style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
@@ -883,7 +883,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final upgradeDiscount = _isYearlySelected ? 0.0 : _calculateUpgradeDiscount(currentTier, _selectedTier!);
     final displayPrice = _isYearlySelected ? _selectedTier!.yearlyPrice : _selectedTier!.monthlyPrice;
     final finalPrice = displayPrice - upgradeDiscount;
-    final periodLabel = _isYearlySelected ? '/year' : '/month';
+    final periodLabel = _isYearlySelected ? AppLocalizations.of(context)!.shopPerYear : AppLocalizations.of(context)!.shopPerMonth;
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -1217,7 +1217,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await Future.delayed(const Duration(seconds: 2));
         if (mounted) _handleBaseMembershipPurchase(); // Retry
       } else {
-        _showError('Purchase error: $e');
+        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
         setState(() => _isLoadingSubscription = false);
       }
     }
@@ -1428,15 +1428,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     // Features list
                     _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyLikes'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['superLikes'] as int)),
-                    _buildFeatureRow('Badge', features['badge'] == true ? '✓' : '✗'),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopBadge, features['badge'] == true ? '✓' : '✗'),
                     if (features['advancedFilters'] == true)
-                      _buildFeatureRow('Advanced Filters', '✓'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopAdvancedFilters, '✓'),
                     if (features['readReceipts'] == true)
-                      _buildFeatureRow('Read Receipts', '✓'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopReadReceipts, '✓'),
                     if (features['incognitoMode'] == true)
-                      _buildFeatureRow('Incognito Mode', features['travelling'] == true ? 'Unlimited' : '✓'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopIncognitoMode, features['travelling'] == true ? AppLocalizations.of(context)!.shopUnlimited : '✓'),
                     if (features['travelling'] == true)
-                      _buildFeatureRow('Travelling', 'Unlimited'),
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopTravelling, AppLocalizations.of(context)!.shopUnlimited),
                     if (tier == SubscriptionTier.platinum) ...[
                       _buildFeatureRow(AppLocalizations.of(context)!.shopVipBadge, '✓'),
                       _buildFeatureRow(AppLocalizations.of(context)!.shopPriorityMatching, '✓'),
@@ -1452,7 +1452,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Widget _buildFeatureRow(String feature, String value) {
-    final isEnabled = value == '✓' || value == 'Unlimited' || (int.tryParse(value) ?? 0) > 0;
+    final unlimitedLabel = AppLocalizations.of(context)!.shopUnlimited;
+    final isEnabled = value == '✓' || value == unlimitedLabel || (int.tryParse(value) ?? 0) > 0;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
@@ -1485,7 +1486,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   String _formatLimit(int limit) {
-    if (limit == -1) return 'Unlimited';
+    if (limit == -1) return AppLocalizations.of(context)!.shopUnlimited;
     return limit.toString();
   }
 
@@ -1576,7 +1577,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await Future.delayed(const Duration(seconds: 2));
         if (mounted) _handleSubscribe(); // Retry
       } else {
-        _showError('Purchase error: ${e.toString()}');
+        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
         setState(() => _isLoadingSubscription = false);
       }
     }
@@ -2017,7 +2018,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     } catch (e, stackTrace) {
       debugPrint('[CoinPurchase] Error: $e');
       debugPrint('[CoinPurchase] Stack trace: $stackTrace');
-      _showError('Purchase error: ${e.toString()}');
+      _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
       setState(() => _isLoadingCoinPurchase = false);
     }
   }

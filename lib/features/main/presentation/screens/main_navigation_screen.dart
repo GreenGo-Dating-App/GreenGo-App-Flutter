@@ -418,20 +418,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Subscription Expired',
-          style: TextStyle(color: AppColors.richGold),
+        title: Text(
+          AppLocalizations.of(ctx)!.subscriptionExpired,
+          style: const TextStyle(color: AppColors.richGold),
         ),
         content: Text(
-          'Your $previousTierName subscription has expired. '
-          'You have been moved to the Free tier.\n\n'
-          'Upgrade anytime to restore your premium features!',
+          AppLocalizations.of(ctx)!.subscriptionExpiredBody(previousTierName),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('OK'),
+            child: Text(AppLocalizations.of(ctx)!.ok),
           ),
           ElevatedButton(
             onPressed: () {
@@ -450,7 +448,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               backgroundColor: AppColors.richGold,
               foregroundColor: AppColors.deepBlack,
             ),
-            child: const Text('Upgrade'),
+            child: Text(AppLocalizations.of(ctx)!.upgrade),
           ),
         ],
       ),
@@ -479,8 +477,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final notificationData = {
         'userId': widget.userId,
         'type': 'system',
-        'title': 'Account Approved!',
-        'body': 'Your GreenGo account has been approved. Welcome to the community!',
+        'title': AppLocalizations.of(context)!.accountApproved,
+        'body': AppLocalizations.of(context)!.accountApprovedBody,
         'data': {'action': 'approval'},
         'createdAt': Timestamp.now(),
         'isRead': false,
@@ -500,8 +498,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final notificationData = {
         'userId': widget.userId,
         'type': 'system',
-        'title': 'Access Granted!',
-        'body': 'GreenGo is now live! As a $tierName, you now have full access to all features.',
+        'title': AppLocalizations.of(context)!.accessGranted,
+        'body': AppLocalizations.of(context)!.accessGrantedBody(tierName),
         'data': {'action': 'access_granted'},
         'createdAt': Timestamp.now(),
         'isRead': false,
@@ -817,12 +815,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             BottomNavigationBarItem(
               icon: const Icon(Icons.school_outlined),
               activeIcon: const Icon(Icons.school),
-              label: 'Learn',
+              label: AppLocalizations.of(context)!.navLearn,
             ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.sports_esports_outlined),
               activeIcon: const Icon(Icons.sports_esports),
-              label: 'Play',
+              label: AppLocalizations.of(context)!.navPlay,
             ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.person_outline),
@@ -977,7 +975,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     }
 
     // Get display name from profile state for invite listener
-    String displayName = 'Player';
+    String displayName = AppLocalizations.of(context)!.gameDefaultPlayerName;
     final profileState = _profileBloc.state;
     if (profileState is ProfileLoaded) {
       displayName = profileState.profile.displayName;
@@ -1040,14 +1038,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           IconButton(
             icon: const Icon(Icons.search, color: AppColors.textSecondary, size: 22),
             onPressed: _showNicknameSearch,
-            tooltip: 'Search by nickname',
+            tooltip: AppLocalizations.of(context)!.searchByNicknameTooltip,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
           ),
           IconButton(
             icon: const Icon(Icons.tune, color: AppColors.textSecondary, size: 22),
             onPressed: _openDiscoveryPreferences,
-            tooltip: 'Discovery Preferences',
+            tooltip: AppLocalizations.of(context)!.discoveryPreferencesTooltip,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
           ),
@@ -1063,8 +1061,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               _discoveryKey.currentState?.toggleGridMode();
             },
             tooltip: _discoveryKey.currentState?.isGridMode == true
-                ? 'Switch to swipe mode'
-                : 'Switch to grid mode',
+                ? AppLocalizations.of(context)!.discoverySwitchToSwipe
+                : AppLocalizations.of(context)!.discoverySwitchToGrid,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
           ),
@@ -1369,9 +1367,9 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
                     shaderCallback: (bounds) => const LinearGradient(
                       colors: [Color(0xFFFFD700), AppColors.richGold, Color(0xFFE6C06E)],
                     ).createShader(bounds),
-                    child: const Text(
-                      'My Progress',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context)!.gamificationMyProgress,
+                      style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -1401,27 +1399,27 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       // Level Card
-                      _buildLevelCard(),
+                      _buildLevelCard(context),
                       const SizedBox(height: 20),
 
                       // Stats Row
-                      _buildStatsRow(),
+                      _buildStatsRow(context),
                       const SizedBox(height: 20),
 
                       // Achievements Section
-                      _buildSectionHeader('Achievements', Icons.emoji_events_rounded),
+                      _buildSectionHeader(context, AppLocalizations.of(context)!.gamificationAchievements, Icons.emoji_events_rounded),
                       const SizedBox(height: 12),
                       _buildAchievementsGrid(),
                       const SizedBox(height: 24),
 
                       // Daily Challenges Section
-                      _buildSectionHeader('Daily Challenges', Icons.bolt_rounded),
+                      _buildSectionHeader(context, AppLocalizations.of(context)!.gamificationDailyChallenges, Icons.bolt_rounded),
                       const SizedBox(height: 12),
                       _buildChallengesList(),
                       const SizedBox(height: 24),
 
                       // Leaderboard Preview
-                      _buildSectionHeader('Leaderboard', Icons.leaderboard_rounded),
+                      _buildSectionHeader(context, AppLocalizations.of(context)!.gamificationLeaderboard, Icons.leaderboard_rounded),
                       const SizedBox(height: 12),
                       _buildLeaderboardPreview(),
                       const SizedBox(height: 32),
@@ -1436,7 +1434,7 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLevelCard() {
+  Widget _buildLevelCard(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: BackdropFilter(
@@ -1519,9 +1517,9 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          'Experience Points',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.gamificationExperiencePoints,
+                          style: const TextStyle(
                             fontSize: 14,
                             color: Colors.white70,
                           ),
@@ -1585,14 +1583,14 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStatsRow() {
+  Widget _buildStatsRow(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: _buildStatCard('🔥', '15', 'Day Streak')),
+        Expanded(child: _buildStatCard('🔥', '15', AppLocalizations.of(context)!.gamificationDayStreak)),
         const SizedBox(width: 12),
-        Expanded(child: _buildStatCard('⭐', '23', 'Achievements')),
+        Expanded(child: _buildStatCard('⭐', '23', AppLocalizations.of(context)!.gamificationAchievements)),
         const SizedBox(width: 12),
-        Expanded(child: _buildStatCard('🏆', '#42', 'Rank')),
+        Expanded(child: _buildStatCard('🏆', '#42', AppLocalizations.of(context)!.gamificationRank)),
       ],
     );
   }
@@ -1646,7 +1644,7 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSectionHeader(String title, IconData icon) {
+  Widget _buildSectionHeader(BuildContext context, String title, IconData icon) {
     return Row(
       children: [
         Container(
@@ -1670,7 +1668,7 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
         TextButton(
           onPressed: () {},
           child: Text(
-            'See All',
+            AppLocalizations.of(context)!.seeAll,
             style: TextStyle(
               color: AppColors.richGold.withOpacity(0.8),
               fontSize: 14,

@@ -19,6 +19,7 @@ import '../widgets/galaxy_node.dart';
 import '../widgets/learning_path_node.dart';
 import '../widgets/star_system_info_sheet.dart';
 import 'lesson_detail_screen.dart';
+import '../../../../generated/app_localizations.dart';
 import 'lesson_session_screen.dart';
 
 /// Galaxy/Constellation Map — full-screen vertical constellation path.
@@ -330,14 +331,14 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
   String _nodeTitle(int unitIndex, int nodeIndex) {
     final cNode = _constellationNode(unitIndex, nodeIndex);
     if (cNode != null) return cNode.nodeTitle;
-    return 'Lesson ${nodeIndex + 1}';
+    return AppLocalizations.of(context)!.learningLessonNumber(nodeIndex + 1);
   }
 
   /// Unit title from constellation data.
   String _unitTitle(int unitIndex) {
     final cNode = _constellationNode(unitIndex, 0);
     if (cNode != null) return cNode.unitTitle;
-    return 'Unit ${unitIndex + 1}';
+    return AppLocalizations.of(context)!.learningUnitNumber(unitIndex + 1);
   }
 
   /// Coin cost for a node — from constellation data.
@@ -500,12 +501,12 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
                     Icon(Icons.auto_awesome,
                         color: Colors.white.withValues(alpha: 0.3), size: 64),
                     const SizedBox(height: 16),
-                    Text('No lessons available yet',
+                    Text(AppLocalizations.of(context)!.learningNoLessonsAvailable,
                         style: TextStyle(
                             color: Colors.white.withValues(alpha: 0.5),
                             fontSize: 18)),
                     const SizedBox(height: 8),
-                    Text('Check back soon!',
+                    Text(AppLocalizations.of(context)!.learningCheckBackSoon,
                         style: TextStyle(
                             color: Colors.white.withValues(alpha: 0.3),
                             fontSize: 14)),
@@ -945,8 +946,8 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
                   ),
                   const SizedBox(height: 20),
                   // Title
-                  const Text(
-                    'LESSON COMPLETE!',
+                  Text(
+                    AppLocalizations.of(context)!.learningLessonCompleteUpper,
                     style: TextStyle(
                       color: AppColors.richGold,
                       fontSize: 28,
@@ -983,7 +984,7 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
                   ),
                   const SizedBox(height: 32),
                   Text(
-                    'Tap to continue',
+                    AppLocalizations.of(context)!.learningTapToContinue,
                     style: TextStyle(
                       color: Colors.white.withValues(alpha: 0.5),
                       fontSize: 14,
@@ -1043,7 +1044,7 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
           const Icon(Icons.filter_alt, color: AppColors.richGold, size: 18),
           const SizedBox(width: 8),
           Text(
-            'Pack: ${widget.packCategoryFilter}',
+            AppLocalizations.of(context)!.learningPackFilter(widget.packCategoryFilter!),
             style: const TextStyle(
               color: AppColors.richGold,
               fontSize: 13,
@@ -1059,8 +1060,8 @@ class _GalaxyMapScreenState extends State<GalaxyMapScreen>
                 arguments: {'languageCode': widget.languageCode},
               );
             },
-            child: const Text(
-              'Show All',
+            child: Text(
+              AppLocalizations.of(context)!.learningShowAll,
               style: TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,

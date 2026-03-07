@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../domain/entities/notification_preferences.dart';
@@ -20,12 +21,13 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
       create: (context) => di.sl<NotificationPreferencesBloc>()
         ..add(NotificationPreferencesLoadRequested(userId: userId)),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Notification Settings'),
+          title: Text(l10n.notificationSettingsTitle),
         ),
         body: BlocBuilder<NotificationPreferencesBloc,
             NotificationPreferencesState>(
@@ -69,12 +71,12 @@ class NotificationPreferencesScreen extends StatelessWidget {
                 children: [
                   // Master Controls
                   _buildSection(
-                    title: 'Master Controls',
+                    title: l10n.notificationMasterControls,
                     children: [
                       _buildSwitchTile(
                         context: context,
-                        title: 'Push Notifications',
-                        subtitle: 'Receive notifications on this device',
+                        title: l10n.notificationPushTitle,
+                        subtitle: l10n.notificationPushSubtitle,
                         value: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
                           context.read<NotificationPreferencesBloc>().add(
@@ -88,8 +90,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Email Notifications',
-                        subtitle: 'Receive notifications via email',
+                        title: l10n.notificationEmailTitle,
+                        subtitle: l10n.notificationEmailSubtitle,
                         value: prefs.emailNotificationsEnabled,
                         onChanged: (value) {
                           context.read<NotificationPreferencesBloc>().add(
@@ -108,12 +110,12 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
                   // Notification Types
                   _buildSection(
-                    title: 'Notification Types',
+                    title: l10n.notificationTypes,
                     children: [
                       _buildSwitchTile(
                         context: context,
-                        title: 'New Matches',
-                        subtitle: 'When you get a new match',
+                        title: l10n.notificationNewMatches,
+                        subtitle: l10n.notificationNewMatchesSubtitle,
                         value: prefs.newMatchNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -128,8 +130,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'New Messages',
-                        subtitle: 'When someone sends you a message',
+                        title: l10n.notificationNewMessages,
+                        subtitle: l10n.notificationNewMessagesSubtitle,
                         value: prefs.newMessageNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -144,8 +146,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'New Likes',
-                        subtitle: 'When someone likes you',
+                        title: l10n.notificationNewLikes,
+                        subtitle: l10n.notificationNewLikesSubtitle,
                         value: prefs.newLikeNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -160,8 +162,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Profile Views',
-                        subtitle: 'When someone views your profile',
+                        title: l10n.notificationProfileViews,
+                        subtitle: l10n.notificationProfileViewsSubtitle,
                         value: prefs.profileViewNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -176,8 +178,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Super Likes',
-                        subtitle: 'When someone super likes you',
+                        title: l10n.notificationSuperLikes,
+                        subtitle: l10n.notificationSuperLikesSubtitle,
                         value: prefs.superLikeNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -192,8 +194,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Match Expiring',
-                        subtitle: 'When a match is about to expire',
+                        title: l10n.notificationMatchExpiring,
+                        subtitle: l10n.notificationMatchExpiringSubtitle,
                         value: prefs.matchExpiringNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -208,8 +210,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Promotional',
-                        subtitle: 'Tips, offers, and promotions',
+                        title: l10n.notificationPromotional,
+                        subtitle: l10n.notificationPromotionalSubtitle,
                         value: prefs.promotionalNotifications,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -229,12 +231,12 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
                   // Sound & Vibration
                   _buildSection(
-                    title: 'Sound & Vibration',
+                    title: l10n.notificationSoundVibration,
                     children: [
                       _buildSwitchTile(
                         context: context,
-                        title: 'Sound',
-                        subtitle: 'Play sound for notifications',
+                        title: l10n.notificationSound,
+                        subtitle: l10n.notificationSoundSubtitle,
                         value: prefs.soundEnabled,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -249,8 +251,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       ),
                       _buildSwitchTile(
                         context: context,
-                        title: 'Vibration',
-                        subtitle: 'Vibrate for notifications',
+                        title: l10n.notificationVibration,
+                        subtitle: l10n.notificationVibrationSubtitle,
                         value: prefs.vibrationEnabled,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -270,13 +272,13 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
                   // Quiet Hours
                   _buildSection(
-                    title: 'Quiet Hours',
-                    subtitle: 'Mute notifications during certain hours',
+                    title: l10n.notificationQuietHours,
+                    subtitle: l10n.notificationQuietHoursSubtitle,
                     children: [
                       _buildSwitchTile(
                         context: context,
-                        title: 'Enable Quiet Hours',
-                        subtitle: 'Mute notifications between set times',
+                        title: l10n.notificationEnableQuietHours,
+                        subtitle: l10n.notificationQuietHoursDescription,
                         value: prefs.quietHoursEnabled,
                         enabled: prefs.pushNotificationsEnabled,
                         onChanged: (value) {
@@ -300,7 +302,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                               Expanded(
                                 child: _buildTimePicker(
                                   context: context,
-                                  label: 'Start Time',
+                                  label: l10n.notificationStartTime,
                                   time: prefs.quietHoursStart,
                                   onTimeSelected: (time) {
                                     context
@@ -319,7 +321,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                               Expanded(
                                 child: _buildTimePicker(
                                   context: context,
-                                  label: 'End Time',
+                                  label: l10n.notificationEndTime,
                                   time: prefs.quietHoursEnd,
                                   onTimeSelected: (time) {
                                     context

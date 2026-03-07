@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/app_sound_service.dart';
@@ -211,6 +212,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   Widget build(BuildContext context) {
     return BlocConsumer<LanguageGamesBloc, LanguageGamesState>(
       listener: (context, state) {
+        final l10n = AppLocalizations.of(context)!;
         if (state is LanguageGamesInRoom) {
           final room = state.room;
           final round = state.currentRound;
@@ -219,8 +221,8 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           if (round != null && round.hasPlayerAnswered(widget.userId)) {
             final answer = round.playerAnswers[widget.userId]!;
             final correctionText = answer.isCorrect
-                ? 'Correct! +${answer.pointsEarned} pts'
-                : 'Incorrect. The answer was "${round.correctAnswer ?? ""}"';
+                ? l10n.gamePlayCorrectPlusPts(answer.pointsEarned)
+                : l10n.gamePlayIncorrectAnswerWas(round.correctAnswer ?? '');
             _showAnswerFeedback(answer.isCorrect, correctionText);
           }
 
@@ -252,6 +254,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
         }
       },
       builder: (context, state) {
+        final l10n = AppLocalizations.of(context)!;
         final GameRoom room;
         final int timeRemaining;
         final bool hasAnswered;
@@ -340,6 +343,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildTopBar(GameRoom room, int timeRemaining) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
@@ -356,7 +360,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               borderRadius: BorderRadius.circular(8),
             ),
             child: Text(
-              'Round ${room.currentRound}/${room.totalRounds}',
+              l10n.gameRoundCounter(room.currentRound, room.totalRounds),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
@@ -430,6 +434,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildWordBombArea(GameRoom room, int timeRemaining) {
+    final l10n = AppLocalizations.of(context)!;
     final isMyTurn = room.isPlayerTurn(widget.userId);
     final prompt = room.currentPrompt ?? 'CA';
 
@@ -470,9 +475,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Type a word containing these letters!',
-            style: TextStyle(color: AppColors.textTertiary, fontSize: 13),
+          Text(
+            l10n.gamePlayTypeWordContainingLetters,
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
           ),
           const SizedBox(height: 32),
           // Animated bomb
@@ -517,7 +522,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                '${room.currentTurnPlayer?.displayName ?? "Someone"} is thinking...',
+                l10n.gamePlayPlayerIsThinking(room.currentTurnPlayer?.displayName ?? l10n.gameSomeone),
                 style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 15,
@@ -534,6 +539,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildTranslationRaceArea(GameRoom room, bool hasAnswered) {
+    final l10n = AppLocalizations.of(context)!;
     final prompt = room.currentPrompt ?? 'word';
 
     return SingleChildScrollView(
@@ -541,9 +547,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
       child: Column(
         children: [
           const SizedBox(height: 20),
-          const Text(
-            'TRANSLATE THIS WORD',
-            style: TextStyle(
+          Text(
+            l10n.gamePlayTranslateThisWord,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -582,7 +588,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           ),
           const SizedBox(height: 12),
           Text(
-            'Translate to ${_languageName(room.targetLanguage)}',
+            l10n.gameTranslationRaceTranslateTo(_languageName(room.targetLanguage)),
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
@@ -599,15 +605,15 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                   color: AppColors.successGreen.withValues(alpha: 0.4),
                 ),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.check_circle,
+                  const Icon(Icons.check_circle,
                       color: AppColors.successGreen, size: 20),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
-                    'Answer submitted! Waiting for others...',
-                    style: TextStyle(
+                    l10n.gamePlayAnswerSubmittedWaiting,
+                    style: const TextStyle(
                         color: AppColors.successGreen, fontSize: 14),
                   ),
                 ],
@@ -625,6 +631,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildPictureGuessArea(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final isDescriber = room.currentDescriberId == widget.userId;
     final prompt = room.currentPrompt ?? '';
 
@@ -647,9 +654,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               ),
               child: Column(
                 children: [
-                  const Text(
-                    'DESCRIBE THIS WORD!',
-                    style: TextStyle(
+                  Text(
+                    l10n.gamePlayDescribeThisWord,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
@@ -666,9 +673,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Do not say the word itself!',
-                    style: TextStyle(
+                  Text(
+                    l10n.gamePlayDoNotSayWord,
+                    style: const TextStyle(
                       color: AppColors.warningAmber,
                       fontSize: 12,
                     ),
@@ -677,17 +684,17 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Use the chat to describe the word to other players',
-              style: TextStyle(color: AppColors.textTertiary, fontSize: 13),
+            Text(
+              l10n.gamePlayUseChatToDescribe,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
             ),
           ] else ...[
             const Icon(Icons.image_outlined,
                 color: AppColors.richGold, size: 64),
             const SizedBox(height: 16),
-            const Text(
-              'GUESS THE WORD',
-              style: TextStyle(
+            Text(
+              l10n.gamePlayGuessTheWord,
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 11,
                 fontWeight: FontWeight.bold,
@@ -696,7 +703,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
             ),
             const SizedBox(height: 8),
             Text(
-              '${_getDescriberName(room)} is describing a word...',
+              l10n.gamePlayDescriberIsDescribing(_getDescriberName(room)),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
@@ -704,9 +711,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Type your guess below!',
-              style: TextStyle(color: AppColors.textTertiary, fontSize: 13),
+            Text(
+              l10n.gamePlayTypeYourGuessBelow,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
             ),
           ],
         ],
@@ -719,6 +726,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildGrammarDuelArea(GameRoom room, bool hasAnswered) {
+    final l10n = AppLocalizations.of(context)!;
     final prompt = room.currentPrompt ?? 'Choose the correct form:';
     // In production, options come from GameRound.options
     final options = ['Option A', 'Option B', 'Option C', 'Option D'];
@@ -728,9 +736,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
       child: Column(
         children: [
           const SizedBox(height: 10),
-          const Text(
-            'GRAMMAR QUESTION',
-            style: TextStyle(
+          Text(
+            l10n.gameGrammarDuelGrammarQuestion,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -824,16 +832,16 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                 border: Border.all(
                     color: AppColors.infoBlue.withValues(alpha: 0.3)),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.hourglass_bottom,
+                  const Icon(Icons.hourglass_bottom,
                       color: AppColors.infoBlue, size: 18),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
-                    'Waiting for opponent...',
+                    l10n.gamePlayWaitingForOpponent,
                     style:
-                        TextStyle(color: AppColors.infoBlue, fontSize: 13),
+                        const TextStyle(color: AppColors.infoBlue, fontSize: 13),
                   ),
                 ],
               ),
@@ -849,6 +857,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildVocabularyChainArea(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = room.roundTheme ?? 'Animals';
     final prompt = room.currentPrompt ?? 'S';
     final isMyTurn = room.isPlayerTurn(widget.userId);
@@ -874,7 +883,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                     color: AppColors.richGold, size: 16),
                 const SizedBox(width: 6),
                 Text(
-                  'Theme: $theme',
+                  l10n.gamePlayThemeLabel(theme),
                   style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 14,
@@ -889,9 +898,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           _buildChainVisualization(room.usedWords),
           const SizedBox(height: 24),
           // Letter prompt
-          const Text(
-            'NEXT WORD MUST START WITH',
-            style: TextStyle(
+          Text(
+            l10n.gamePlayNextWordMustStartWith,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -933,7 +942,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           const SizedBox(height: 16),
           if (!isMyTurn)
             Text(
-              '${room.currentTurnPlayer?.displayName ?? "Someone"}\'s turn',
+              l10n.gamePlayersTurn(room.currentTurnPlayer?.displayName ?? l10n.gameSomeone),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 15,
@@ -946,9 +955,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
 
   Widget _buildChainVisualization(List<String> words) {
     if (words.isEmpty) {
-      return const Text(
-        'No words yet - start the chain!',
-        style: TextStyle(
+      return Text(
+        AppLocalizations.of(context)!.gamePlayNoWordsStartChain,
+        style: const TextStyle(
           color: AppColors.textTertiary,
           fontSize: 13,
           fontStyle: FontStyle.italic,
@@ -1010,6 +1019,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildLanguageSnapsArea(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final isMyTurn = room.isPlayerTurn(widget.userId);
     const gridSize = 16; // 4x4 = 8 pairs
 
@@ -1031,8 +1041,8 @@ class _GamePlayScreenState extends State<GamePlayScreen>
             ),
             child: Text(
               isMyTurn
-                  ? 'Your turn - flip two cards!'
-                  : '${room.currentTurnPlayer?.displayName ?? "Someone"}\'s turn',
+                  ? l10n.gamePlayYourTurnFlipCards
+                  : l10n.gamePlayersTurn(room.currentTurnPlayer?.displayName ?? l10n.gameSomeone),
               style: TextStyle(
                 color: isMyTurn ? AppColors.richGold : AppColors.textSecondary,
                 fontSize: 14,
@@ -1134,6 +1144,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildLanguageTapplesArea(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final isMyTurn = room.isPlayerTurn(widget.userId);
     final category = room.roundTheme ?? 'Food';
 
@@ -1150,7 +1161,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               border: Border.all(color: AppColors.richGold),
             ),
             child: Text(
-              'Category: $category',
+              l10n.gamePlayCategoryLabel(category),
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 18,
@@ -1161,19 +1172,19 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           const SizedBox(height: 16),
           if (!isMyTurn)
             Text(
-              '${room.currentTurnPlayer?.displayName ?? "Someone"} is choosing...',
+              l10n.gamePlayPlayerIsChoosing(room.currentTurnPlayer?.displayName ?? l10n.gameSomeone),
               style: const TextStyle(
                   color: AppColors.textSecondary, fontSize: 15),
             ),
           if (isMyTurn && _selectedTapplesLetter == null)
-            const Text(
-              'Pick a letter, then name a word!',
+            Text(
+              l10n.gamePlayPickLetterNameWord,
               style:
-                  TextStyle(color: AppColors.textSecondary, fontSize: 15),
+                  const TextStyle(color: AppColors.textSecondary, fontSize: 15),
             ),
           if (isMyTurn && _selectedTapplesLetter != null)
             Text(
-              'Name a ${_languageName(room.targetLanguage)} word starting with "$_selectedTapplesLetter"',
+              l10n.gamePlayNameLanguageWordStartingWith(_languageName(room.targetLanguage), _selectedTapplesLetter!),
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 15,
@@ -1263,6 +1274,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildCategoriesArea(GameRoom room, bool hasAnswered) {
+    final l10n = AppLocalizations.of(context)!;
     final category = room.roundTheme ?? 'Animals';
     final prompt = room.currentPrompt ?? 'A';
 
@@ -1271,9 +1283,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
       child: Column(
         children: [
           const SizedBox(height: 10),
-          const Text(
-            'CATEGORIES',
-            style: TextStyle(
+          Text(
+            l10n.gamePlayCategoriesHeader,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -1323,7 +1335,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               border: Border.all(color: AppColors.richGold),
             ),
             child: Text(
-              'Category: $category',
+              l10n.gamePlayCategoryLabel(category),
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 16,
@@ -1333,7 +1345,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
           ),
           const SizedBox(height: 12),
           Text(
-            'Name a word in "$category" starting with "$prompt"',
+            l10n.gamePlayNameWordInCategory(category, prompt),
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 14,
@@ -1351,15 +1363,15 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                   color: AppColors.successGreen.withValues(alpha: 0.4),
                 ),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.check_circle,
+                  const Icon(Icons.check_circle,
                       color: AppColors.successGreen, size: 20),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
-                    'Answer submitted! Waiting for others...',
-                    style: TextStyle(
+                    l10n.gamePlayAnswerSubmittedWaiting,
+                    style: const TextStyle(
                         color: AppColors.successGreen, fontSize: 14),
                   ),
                 ],
@@ -1377,6 +1389,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildInputArea(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final isMyTurn = room.isPlayerTurn(widget.userId);
 
     // Grammar duel uses buttons
@@ -1399,19 +1412,19 @@ class _GamePlayScreenState extends State<GamePlayScreen>
     final String hint;
     switch (room.gameType) {
       case GameType.wordBomb:
-        hint = 'Type a word containing "${room.currentPrompt ?? ""}"...';
+        hint = 'Type a word containing "${room.currentPrompt ?? ''}"';
       case GameType.translationRace:
         hint = 'Type the translation...';
       case GameType.pictureGuess:
         hint = room.currentDescriberId == widget.userId
-            ? 'Describe the word (don\'t say it!)...'
+            ? 'Describe the word...'
             : 'Type your guess...';
       case GameType.vocabularyChain:
-        hint = 'Word starting with "${room.currentPrompt ?? ""}"...';
+        hint = 'Type a word starting with "${room.currentPrompt ?? ''}"';
       case GameType.languageTapples:
-        hint = 'Word starting with "$_selectedTapplesLetter"...';
+        hint = 'Type a word starting with "${_selectedTapplesLetter ?? ''}"';
       case GameType.categories:
-        hint = 'Type a word starting with "${room.currentPrompt ?? ""}"...';
+        hint = 'Type a word starting with "${room.currentPrompt ?? ''}"';
       default:
         hint = 'Type your answer...';
     }
@@ -1524,6 +1537,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   }
 
   Widget _buildBoomOverlay() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       color: AppColors.backgroundDark.withValues(alpha: 0.85),
       alignment: Alignment.center,
@@ -1598,7 +1612,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              'BOOM!',
+              l10n.gameWordBombBoom,
               style: TextStyle(
                 color: AppColors.errorRed,
                 fontSize: 48,
@@ -1612,9 +1626,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Time ran out! You lost a life.',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+            Text(
+              l10n.gameWordBombTimeRanOutLostLife,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 16),
             ),
           ],
         ),
@@ -1627,6 +1641,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   // ============================================================
 
   Widget _buildMiniLeaderboard(GameRoom room) {
+    final l10n = AppLocalizations.of(context)!;
     final sorted = room.sortedScores;
     if (sorted.isEmpty) return const SizedBox.shrink();
 
@@ -1640,9 +1655,9 @@ class _GamePlayScreenState extends State<GamePlayScreen>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text(
-            'LEADERBOARD',
-            style: TextStyle(
+          Text(
+            l10n.gamePlayLeaderboard,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 10,
               fontWeight: FontWeight.bold,
@@ -1659,7 +1674,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                 children: [
                   Expanded(
                     child: Text(
-                      isMe ? 'You' : (player?.displayName ?? 'Player'),
+                      isMe ? l10n.gameYou : (player?.displayName ?? l10n.gameDefaultPlayerName),
                       style: TextStyle(
                         color: isMe
                             ? AppColors.richGold
@@ -1669,7 +1684,7 @@ class _GamePlayScreenState extends State<GamePlayScreen>
                     ),
                   ),
                   Text(
-                    '${entry.value} pts',
+                    l10n.gameScorePts(entry.value),
                     style: TextStyle(
                       color: isMe ? AppColors.richGold : AppColors.textPrimary,
                       fontSize: 13,
@@ -1686,9 +1701,10 @@ class _GamePlayScreenState extends State<GamePlayScreen>
   }
 
   String _getDescriberName(GameRoom room) {
-    if (room.currentDescriberId == null) return 'Someone';
+    final l10n = AppLocalizations.of(context)!;
+    if (room.currentDescriberId == null) return l10n.gameSomeone;
     final describer = room.getPlayer(room.currentDescriberId!);
-    return describer?.displayName ?? 'Someone';
+    return describer?.displayName ?? l10n.gameSomeone;
   }
 
   String _languageName(String code) {

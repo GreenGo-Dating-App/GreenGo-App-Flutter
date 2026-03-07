@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/coin_balance.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
@@ -215,9 +216,9 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'GreenGoCoins',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.coinsGreenGoCoins,
+                  style: const TextStyle(
                     fontSize: 11,
                     color: Colors.grey,
                   ),
@@ -264,7 +265,7 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      '${balance.getCoinsExpiringSoon()} expiring',
+                      AppLocalizations.of(context)!.coinsExpiring(balance.getCoinsExpiringSoon()),
                       style: const TextStyle(
                         fontSize: 10,
                         color: Colors.orange,

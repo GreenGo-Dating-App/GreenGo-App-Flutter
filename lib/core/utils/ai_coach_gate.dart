@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../../features/profile/domain/entities/profile.dart';
 import '../../features/membership/domain/entities/membership.dart';
@@ -111,19 +112,21 @@ class AiCoachGate {
 
     if (!context.mounted) return false;
 
+    final l10n = AppLocalizations.of(context)!;
+
     // Show upgrade dialog
     await showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.school, color: AppColors.richGold),
-            SizedBox(width: 8),
+            const Icon(Icons.school, color: AppColors.richGold),
+            const SizedBox(width: 8),
             Text(
-              'Upgrade to Learn More',
-              style: TextStyle(color: AppColors.textPrimary, fontSize: 18),
+              l10n.aiCoachUpgradeTitle,
+              style: const TextStyle(color: AppColors.textPrimary, fontSize: 18),
             ),
           ],
         ),
@@ -131,19 +134,19 @@ class AiCoachGate {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Your free trial of AI Coach has ended.',
-              style: TextStyle(color: AppColors.textSecondary),
+            Text(
+              l10n.aiCoachTrialEnded,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 16),
-            _buildBenefit('Unlimited AI conversation practice'),
-            _buildBenefit('All learning chapters unlocked'),
-            _buildBenefit('Real-time grammar & pronunciation feedback'),
-            _buildBenefit('Personalized learning path'),
+            _buildBenefit(l10n.aiCoachBenefitUnlimited),
+            _buildBenefit(l10n.aiCoachBenefitAllChapters),
+            _buildBenefit(l10n.aiCoachBenefitFeedback),
+            _buildBenefit(l10n.aiCoachBenefitPersonalized),
             const SizedBox(height: 16),
-            const Text(
-              'Upgrade to Silver, Gold, or Platinum to unlock.',
-              style: TextStyle(
+            Text(
+              l10n.aiCoachUpgradePrompt,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontWeight: FontWeight.w600,
               ),
@@ -153,9 +156,9 @@ class AiCoachGate {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text(
-              'Maybe Later',
-              style: TextStyle(color: AppColors.textTertiary),
+            child: Text(
+              l10n.maybeLater,
+              style: const TextStyle(color: AppColors.textTertiary),
             ),
           ),
           ElevatedButton(
@@ -170,7 +173,7 @@ class AiCoachGate {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
             ),
-            child: const Text('Upgrade Now'),
+            child: Text(l10n.upgradeNow),
           ),
         ],
       ),

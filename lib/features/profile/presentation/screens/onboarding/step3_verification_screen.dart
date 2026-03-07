@@ -40,7 +40,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to take photo: ${e.toString()}'),
+          content: Text(AppLocalizations.of(context)?.onboardingFailedTakePhoto(e.toString()) ?? 'Failed to take photo: ${e.toString()}'),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -276,8 +276,8 @@ class _TakePhotoCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
-                  'Hold your ID next to your face',
-                  style: TextStyle(
+                  AppLocalizations.of(context)?.onboardingHoldIdNextToFace ?? 'Hold your ID next to your face',
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,
                   ),

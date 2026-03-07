@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../chat/domain/entities/conversation.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
@@ -73,13 +74,14 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
-        title: const Text(
-          'Support Tickets',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminSupportTickets,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
@@ -91,10 +93,10 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.textSecondary,
           tabs: [
-            Tab(text: 'Open (${_stats['open'] ?? 0})'),
-            Tab(text: 'Active (${(_stats['assigned'] ?? 0) + (_stats['inProgress'] ?? 0)})'),
-            Tab(text: 'Waiting (${_stats['waitingOnUser'] ?? 0})'),
-            Tab(text: 'Resolved (${_stats['resolvedTotal'] ?? 0})'),
+            Tab(text: l10n.adminOpenCount(_stats['open'] ?? 0)),
+            Tab(text: l10n.adminActiveCount((_stats['assigned'] ?? 0) + (_stats['inProgress'] ?? 0))),
+            Tab(text: l10n.adminWaitingCount(_stats['waitingOnUser'] ?? 0)),
+            Tab(text: l10n.adminResolvedCount(_stats['resolvedTotal'] ?? 0)),
           ],
         ),
         actions: [
@@ -133,8 +135,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          _buildStatItem('Active', _stats['activeTotal'] ?? 0, Colors.orange),
-          _buildStatItem('Resolved', _stats['resolvedTotal'] ?? 0, Colors.green),
+          _buildStatItem(AppLocalizations.of(context)!.adminActive, _stats['activeTotal'] ?? 0, Colors.orange),
+          _buildStatItem(AppLocalizations.of(context)!.adminResolved, _stats['resolvedTotal'] ?? 0, Colors.green),
         ],
       ),
     );
@@ -180,7 +182,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
         if (snapshot.hasError) {
           return Center(
             child: Text(
-              'Error: ${snapshot.error}',
+              AppLocalizations.of(context)!.adminErrorSnapshot(snapshot.error.toString()),
               style: const TextStyle(color: AppColors.errorRed),
             ),
           );
@@ -200,7 +202,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'No ${statuses.first} tickets',
+                  AppLocalizations.of(context)!.adminNoTickets(statuses.first),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 16,
@@ -229,7 +231,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
 
   Widget _buildTicketCard(String ticketId, Map<String, dynamic> data) {
     final userId = data['userId1'] as String?;
-    final subject = data['supportSubject'] as String? ?? 'Support Request';
+    final subject = data['supportSubject'] as String? ?? AppLocalizations.of(context)!.adminSupportRequest;
     final status = data['supportTicketStatus'] as String? ?? 'open';
     final priority = data['supportPriority'] as String? ?? 'medium';
     final createdAt = data['createdAt'] as Timestamp?;
@@ -241,8 +243,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
           : null,
       builder: (context, profileSnapshot) {
         final userName = profileSnapshot.data?.data() != null
-            ? (profileSnapshot.data!.data() as Map<String, dynamic>)['displayName'] as String? ?? 'Unknown'
-            : 'Loading...';
+            ? (profileSnapshot.data!.data() as Map<String, dynamic>)['displayName'] as String? ?? AppLocalizations.of(context)!.adminUnknown
+            : AppLocalizations.of(context)!.adminLoading;
 
         return Card(
           color: AppColors.backgroundCard,
@@ -313,19 +315,19 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
                         children: [
                           if (status == 'open')
                             _buildActionButton(
-                              'Assign to me',
+                              AppLocalizations.of(context)!.adminAssignToMe,
                               Icons.person_add,
                               () => _assignToMe(ticketId),
                             ),
                           if (status == 'assigned' || status == 'inProgress')
                             _buildActionButton(
-                              'Resolve',
+                              AppLocalizations.of(context)!.adminResolve,
                               Icons.check_circle,
                               () => _resolveTicket(ticketId),
                             ),
                           if (status == 'waitingOnUser')
                             _buildActionButton(
-                              'Close',
+                              AppLocalizations.of(context)!.adminClosed,
                               Icons.close,
                               () => _closeTicket(ticketId),
                             ),
@@ -343,33 +345,34 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
   }
 
   Widget _buildStatusBadge(String status) {
+    final l10n = AppLocalizations.of(context)!;
     Color color;
     String text;
 
     switch (status) {
       case 'open':
         color = Colors.orange;
-        text = 'Open';
+        text = l10n.adminOpen;
         break;
       case 'assigned':
         color = Colors.blue;
-        text = 'Assigned';
+        text = l10n.adminAssigned;
         break;
       case 'inProgress':
         color = Colors.green;
-        text = 'In Progress';
+        text = l10n.adminInProgress;
         break;
       case 'waitingOnUser':
         color = Colors.purple;
-        text = 'Waiting';
+        text = l10n.adminWaiting;
         break;
       case 'resolved':
         color = Colors.teal;
-        text = 'Resolved';
+        text = l10n.adminResolved;
         break;
       case 'closed':
         color = Colors.grey;
-        text = 'Closed';
+        text = l10n.adminClosed;
         break;
       default:
         color = Colors.grey;
@@ -481,8 +484,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Ticket assigned to you'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.adminTicketAssignedToYou),
             backgroundColor: Colors.green,
           ),
         );
@@ -514,8 +517,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Ticket resolved'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.adminTicketResolved),
             backgroundColor: Colors.green,
           ),
         );
@@ -543,8 +546,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Ticket closed'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.adminTicketClosed),
             backgroundColor: Colors.green,
           ),
         );
@@ -568,15 +571,15 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Resolution Note',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminResolutionNote,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: TextField(
           controller: controller,
           style: const TextStyle(color: AppColors.textPrimary),
-          decoration: const InputDecoration(
-            hintText: 'Add a resolution note...',
+          decoration: InputDecoration(
+            hintText: AppLocalizations.of(context)!.adminAddResolutionNote,
             hintStyle: TextStyle(color: AppColors.textTertiary),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(color: AppColors.divider),
@@ -601,7 +604,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
               backgroundColor: AppColors.richGold,
               foregroundColor: AppColors.deepBlack,
             ),
-            child: const Text('Resolve'),
+            child: Text(AppLocalizations.of(context)!.adminResolve),
           ),
         ],
       ),

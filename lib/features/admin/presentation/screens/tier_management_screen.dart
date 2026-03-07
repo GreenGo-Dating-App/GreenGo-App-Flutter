@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../membership/domain/entities/membership.dart';
@@ -49,14 +50,15 @@ class _TierManagementScreenState extends State<TierManagementScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Tier Management',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminTierManagement,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         actions: [
@@ -74,13 +76,13 @@ class _TierManagementScreenState extends State<TierManagementScreen>
                     )
                   : const Icon(Icons.save, color: AppColors.richGold),
               label: Text(
-                _isSaving ? 'Saving...' : 'Save',
+                _isSaving ? l10n.adminSaving : l10n.save,
                 style: const TextStyle(color: AppColors.richGold),
               ),
             ),
           IconButton(
             icon: const Icon(Icons.restore),
-            tooltip: 'Reset to Defaults',
+            tooltip: l10n.adminResetToDefaults,
             onPressed: _showResetConfirmation,
           ),
         ],
@@ -103,7 +105,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
                     ),
                   ),
                   const SizedBox(width: 6),
-                  const Text('FREE'),
+                  Text(l10n.adminTierFree),
                 ],
               ),
             ),
@@ -120,7 +122,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
                     ),
                   ),
                   const SizedBox(width: 6),
-                  const Text('SILVER'),
+                  Text(l10n.adminTierSilver),
                 ],
               ),
             ),
@@ -137,7 +139,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
                     ),
                   ),
                   const SizedBox(width: 6),
-                  const Text('GOLD'),
+                  Text(l10n.adminTierGold),
                 ],
               ),
             ),
@@ -156,7 +158,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
                     ),
                   ),
                   const SizedBox(width: 6),
-                  const Text('PLATINUM'),
+                  Text(l10n.adminTierPlatinum),
                 ],
               ),
             ),
@@ -182,17 +184,18 @@ class _TierManagementScreenState extends State<TierManagementScreen>
   }
 
   void _showResetConfirmation() {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Reset to Defaults?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminResetToDefaultsTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'This will reset all tier configurations to their default values. This action cannot be undone.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          l10n.adminResetToDefaultsConfirm,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -207,7 +210,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.errorRed,
             ),
-            child: const Text('Reset'),
+            child: Text(l10n.adminReset),
           ),
         ],
       ),
@@ -222,8 +225,8 @@ class _TierManagementScreenState extends State<TierManagementScreen>
       _hasChanges = true;
     });
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Configurations reset to defaults. Save to apply.'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.adminConfigurationsResetToDefaults),
         backgroundColor: AppColors.warningAmber,
       ),
     );
@@ -250,8 +253,8 @@ class _TierManagementScreenState extends State<TierManagementScreen>
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Tier configurations saved successfully'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.adminTierConfigsSavedSuccessfully),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -261,7 +264,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to save: $e'),
+            content: Text(AppLocalizations.of(context)!.adminFailedToSave(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -283,44 +286,45 @@ class _TierConfigEditor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Tier header
-          _buildTierHeader(),
+          _buildTierHeader(context),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Limits section
-          _buildSectionHeader('Daily Limits'),
+          _buildSectionHeader(l10n.adminDailyLimits),
           const SizedBox(height: AppDimensions.paddingS),
-          _buildLimitsSection(),
+          _buildLimitsSection(context),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Features section
-          _buildSectionHeader('Features'),
+          _buildSectionHeader(l10n.adminFeatures),
           const SizedBox(height: AppDimensions.paddingS),
-          _buildFeaturesSection(),
+          _buildFeaturesSection(context),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Filters section
-          _buildSectionHeader('Filter Options'),
+          _buildSectionHeader(l10n.adminFilterOptions),
           const SizedBox(height: AppDimensions.paddingS),
-          _buildFiltersSection(),
+          _buildFiltersSection(context),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Matching section
-          _buildSectionHeader('Matching & Visibility'),
+          _buildSectionHeader(l10n.adminMatchingAndVisibility),
           const SizedBox(height: AppDimensions.paddingS),
-          _buildMatchingSection(),
+          _buildMatchingSection(context),
           const SizedBox(height: AppDimensions.paddingXL),
         ],
       ),
     );
   }
 
-  Widget _buildTierHeader() {
+  Widget _buildTierHeader(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
@@ -351,7 +355,7 @@ class _TierConfigEditor extends StatelessWidget {
                 ),
               ),
               Text(
-                'Configure limits and features',
+                AppLocalizations.of(context)!.adminConfigureLimitsAndFeatures,
                 style: TextStyle(
                   color: Colors.white.withValues(alpha: 0.8),
                   fontSize: 14,
@@ -405,11 +409,12 @@ class _TierConfigEditor extends StatelessWidget {
     );
   }
 
-  Widget _buildLimitsSection() {
+  Widget _buildLimitsSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _LimitSlider(
-          label: 'Daily Messages',
+          label: l10n.adminDailyMessages,
           value: config.rules.dailyMessageLimit,
           min: 0,
           max: 200,
@@ -419,7 +424,7 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _LimitSlider(
-          label: 'Daily Swipes',
+          label: l10n.adminDailySwipes,
           value: config.rules.dailySwipeLimit,
           min: 0,
           max: 200,
@@ -429,7 +434,7 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _LimitSlider(
-          label: 'Daily Super Likes',
+          label: l10n.adminDailySuperLikes,
           value: config.rules.dailySuperLikeLimit,
           min: 0,
           max: 50,
@@ -443,12 +448,13 @@ class _TierConfigEditor extends StatelessWidget {
     );
   }
 
-  Widget _buildFeaturesSection() {
+  Widget _buildFeaturesSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _FeatureToggle(
-          label: 'Can Send Media',
-          description: 'Send images and videos in chat',
+          label: l10n.adminCanSendMedia,
+          description: l10n.adminSendImagesAndVideosInChat,
           value: config.rules.canSendMedia,
           icon: Icons.photo,
           onChanged: (value) => _updateRules(
@@ -456,8 +462,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Read Receipts',
-          description: 'See when messages are read',
+          label: l10n.adminReadReceipts,
+          description: l10n.adminSeeWhenMessagesAreRead,
           value: config.rules.canSeeReadReceipts,
           icon: Icons.done_all,
           onChanged: (value) => _updateRules(
@@ -465,8 +471,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Incognito Mode',
-          description: 'Browse profiles anonymously',
+          label: l10n.adminIncognitoMode,
+          description: l10n.adminBrowseProfilesAnonymously,
           value: config.rules.canUseIncognitoMode,
           icon: Icons.visibility_off,
           onChanged: (value) => _updateRules(
@@ -474,8 +480,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Profile Visitors',
-          description: 'See who visited their profile',
+          label: l10n.adminProfileVisitors,
+          description: l10n.adminSeeWhoVisitedProfile,
           value: config.rules.canSeeProfileVisitors,
           icon: Icons.people,
           onChanged: (value) => _updateRules(
@@ -483,8 +489,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Video Chat',
-          description: 'Use video calling feature',
+          label: l10n.adminVideoChat,
+          description: l10n.adminUseVideoCallingFeature,
           value: config.rules.canUseVideoChat,
           icon: Icons.videocam,
           onChanged: (value) => _updateRules(
@@ -495,12 +501,13 @@ class _TierConfigEditor extends StatelessWidget {
     );
   }
 
-  Widget _buildFiltersSection() {
+  Widget _buildFiltersSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _FeatureToggle(
-          label: 'Advanced Filters',
-          description: 'Enable advanced filtering options',
+          label: l10n.adminAdvancedFilters,
+          description: l10n.adminEnableAdvancedFilteringOptions,
           value: config.rules.canUseAdvancedFilters,
           icon: Icons.filter_list,
           onChanged: (value) => _updateRules(
@@ -508,8 +515,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Location Filter',
-          description: 'Filter by specific location',
+          label: l10n.adminLocationFilter,
+          description: l10n.adminFilterBySpecificLocation,
           value: config.rules.canFilterByLocation,
           icon: Icons.location_on,
           onChanged: (value) => _updateRules(
@@ -517,8 +524,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Interest Filter',
-          description: 'Filter by interests',
+          label: l10n.adminInterestFilter,
+          description: l10n.adminFilterByInterests,
           value: config.rules.canFilterByInterests,
           icon: Icons.interests,
           onChanged: (value) => _updateRules(
@@ -526,8 +533,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Language Filter',
-          description: 'Filter by spoken languages',
+          label: l10n.adminLanguageFilter,
+          description: l10n.adminFilterBySpokenLanguages,
           value: config.rules.canFilterByLanguage,
           icon: Icons.language,
           onChanged: (value) => _updateRules(
@@ -535,8 +542,8 @@ class _TierConfigEditor extends StatelessWidget {
           ),
         ),
         _FeatureToggle(
-          label: 'Verification Filter',
-          description: 'Filter by verification status',
+          label: l10n.adminVerificationFilter,
+          description: l10n.adminFilterByVerificationStatus,
           value: config.rules.canFilterByVerification,
           icon: Icons.verified,
           onChanged: (value) => _updateRules(
@@ -547,18 +554,19 @@ class _TierConfigEditor extends StatelessWidget {
     );
   }
 
-  Widget _buildMatchingSection() {
+  Widget _buildMatchingSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _LimitSlider(
-          label: 'Match Priority',
+          label: l10n.adminMatchPriority,
           value: config.rules.matchPriority,
           min: 0,
           max: 10,
           allowUnlimited: false,
           icon: Icons.priority_high,
           iconColor: AppColors.richGold,
-          description: 'Higher priority = shown first in discovery',
+          description: l10n.adminHigherPriorityDescription,
           onChanged: (value) => _updateRules(
             config.rules.copyWith(matchPriority: value),
           ),
@@ -633,7 +641,7 @@ class _LimitSlider extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppDimensions.radiusS),
                 ),
                 child: Text(
-                  isUnlimited ? 'Unlimited' : value.toString(),
+                  isUnlimited ? AppLocalizations.of(context)!.adminUnlimited : value.toString(),
                   style: TextStyle(
                     color: isUnlimited ? AppColors.successGreen : AppColors.richGold,
                     fontWeight: FontWeight.bold,
@@ -691,7 +699,7 @@ class _LimitSlider extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
-                  'Unlimited',
+                  AppLocalizations.of(context)!.adminUnlimited,
                   style: TextStyle(
                     color: isUnlimited
                         ? AppColors.successGreen

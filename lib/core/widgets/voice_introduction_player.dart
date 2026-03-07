@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Voice Introduction Player Widget
@@ -102,8 +103,8 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
       debugPrint('Error playing audio: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Unable to play voice introduction'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.unableToPlayVoiceIntro),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -131,6 +132,7 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -162,7 +164,7 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
               ),
               const SizedBox(width: 12),
               Text(
-                widget.label ?? 'Voice Introduction',
+                widget.label ?? l10n.voiceIntroduction,
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
@@ -366,6 +368,7 @@ class _VoiceIntroductionPlayerCompactState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return GestureDetector(
       onTap: _togglePlayPause,
       child: Container(
@@ -397,7 +400,7 @@ class _VoiceIntroductionPlayerCompactState
                   ),
             const SizedBox(width: 6),
             Text(
-              _isPlaying ? 'Playing...' : 'Voice Intro',
+              _isPlaying ? l10n.playing : l10n.voiceIntroShort,
               style: TextStyle(
                 color: _accentColor,
                 fontSize: 12,

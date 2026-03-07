@@ -8,6 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Screen for searching users by nickname
 class UserSearchScreen extends StatefulWidget {
@@ -126,9 +127,9 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
-        title: const Text(
-          'Find Users',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.profileFindUsers,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
       body: Column(
@@ -141,7 +142,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
               focusNode: _focusNode,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Search by @nickname',
+                hintText: AppLocalizations.of(context)!.profileSearchByNickname,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
                 suffixIcon: _searchController.text.isNotEmpty
@@ -210,7 +211,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
               ),
-              child: const Text('Retry'),
+              child: Text(AppLocalizations.of(context)!.retry),
             ),
           ],
         ),
@@ -229,16 +230,16 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'No users found for "@${_searchController.text}"',
+              AppLocalizations.of(context)!.profileNoUsersFound(_searchController.text),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Try a different nickname',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileTryDifferentNickname,
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 14,
               ),
@@ -272,17 +273,17 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
             size: 64,
           ),
           const SizedBox(height: 16),
-          const Text(
-            'Search for users by nickname',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.profileSearchForUsers,
+            style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 16,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Enter a nickname starting with @',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.profileEnterNicknameWith,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
             ),

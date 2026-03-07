@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Animated success dialog for profile actions
@@ -21,120 +22,132 @@ class ActionSuccessDialog extends StatefulWidget {
 
   /// Show nickname updated success dialog
   static Future<void> showNicknameUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Nickname Updated!',
-      message: 'Your new nickname is now active',
+      title: l10n.nicknameUpdatedTitle,
+      message: l10n.nicknameUpdatedMessage,
       icon: Icons.badge,
     );
   }
 
   /// Show bio updated success dialog
   static Future<void> showBioUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Bio Updated!',
-      message: 'Your profile bio has been saved',
+      title: l10n.bioUpdatedTitle,
+      message: l10n.bioUpdatedMessage,
       icon: Icons.edit_note,
     );
   }
 
   /// Show profile updated success dialog
   static Future<void> showProfileUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Profile Updated!',
-      message: 'Your changes have been saved',
+      title: l10n.profileUpdatedTitle,
+      message: l10n.profileUpdatedMessage,
       icon: Icons.person,
     );
   }
 
   /// Show preferences saved success dialog
   static Future<void> showPreferencesSaved(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Preferences Saved!',
-      message: 'Your discovery preferences have been updated',
+      title: l10n.preferencesSavedTitle,
+      message: l10n.preferencesSavedMessage,
       icon: Icons.tune,
     );
   }
 
   /// Show image uploaded success dialog
   static Future<void> showImageUploaded(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Photo Uploaded!',
-      message: 'Your photo has been added to your profile',
+      title: l10n.photoUploadedTitle,
+      message: l10n.photoUploadedMessage,
       icon: Icons.photo_camera,
     );
   }
 
   /// Show basic info updated success dialog
   static Future<void> showBasicInfoUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Info Updated!',
-      message: 'Your basic information has been saved',
+      title: l10n.infoUpdatedTitle,
+      message: l10n.infoUpdatedMessage,
       icon: Icons.info,
     );
   }
 
   /// Show interests updated success dialog
   static Future<void> showInterestsUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Interests Updated!',
-      message: 'Your interests have been saved',
+      title: l10n.interestsUpdatedTitle,
+      message: l10n.interestsUpdatedMessage,
       icon: Icons.favorite,
     );
   }
 
   /// Show location updated success dialog
   static Future<void> showLocationUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Location Updated!',
-      message: 'Your location settings have been saved',
+      title: l10n.locationUpdatedTitle,
+      message: l10n.locationUpdatedMessage,
       icon: Icons.location_on,
     );
   }
 
   /// Show voice recording success dialog
   static Future<void> showVoiceUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Voice Saved!',
-      message: 'Your voice introduction has been updated',
+      title: l10n.voiceSavedTitle,
+      message: l10n.voiceSavedMessage,
       icon: Icons.mic,
     );
   }
 
   /// Show social links updated success dialog
   static Future<void> showSocialLinksUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Social Links Updated!',
-      message: 'Your social profiles have been saved',
+      title: l10n.socialLinksUpdatedTitle,
+      message: l10n.socialLinksUpdatedMessage,
       icon: Icons.share,
     );
   }
 
   /// Show photos updated success dialog
   static Future<void> showPhotosUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Photos Updated!',
-      message: 'Your photo gallery has been saved',
+      title: l10n.photosUpdatedTitle,
+      message: l10n.photosUpdatedMessage,
       icon: Icons.photo_library,
     );
   }
 
   /// Show chat deleted for me success dialog
   static Future<void> showChatDeletedForMe(BuildContext context, {VoidCallback? onDismiss}) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Chat Deleted!',
-      message: 'This chat has been removed from your inbox',
+      title: l10n.chatDeletedTitle,
+      message: l10n.chatDeletedForMeMessage,
       icon: Icons.delete_outline,
       onDismiss: onDismiss,
     );
@@ -142,10 +155,11 @@ class ActionSuccessDialog extends StatefulWidget {
 
   /// Show chat deleted for both success dialog
   static Future<void> showChatDeletedForBoth(BuildContext context, {VoidCallback? onDismiss}) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Chat Deleted!',
-      message: 'This chat has been permanently removed',
+      title: l10n.chatDeletedTitle,
+      message: l10n.chatDeletedForBothMessage,
       icon: Icons.delete_forever,
       onDismiss: onDismiss,
     );
@@ -153,10 +167,11 @@ class ActionSuccessDialog extends StatefulWidget {
 
   /// Show user blocked success dialog
   static Future<void> showUserBlocked(BuildContext context, String displayName, {VoidCallback? onDismiss}) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'User Blocked!',
-      message: '$displayName has been blocked',
+      title: l10n.userBlockedTitle,
+      message: l10n.userBlockedMessage(displayName),
       icon: Icons.block,
       onDismiss: onDismiss,
     );
@@ -164,10 +179,11 @@ class ActionSuccessDialog extends StatefulWidget {
 
   /// Show user reported success dialog
   static Future<void> showUserReported(BuildContext context, {VoidCallback? onDismiss}) {
+    final l10n = AppLocalizations.of(context)!;
     return _show(
       context,
-      title: 'Report Submitted!',
-      message: 'Thank you for helping keep our community safe',
+      title: l10n.reportSubmittedTitle,
+      message: l10n.reportSubmittedMessage,
       icon: Icons.flag,
       onDismiss: onDismiss,
     );

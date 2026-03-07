@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/social_links.dart';
 
@@ -110,20 +111,20 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
                     ),
                   ),
                   const SizedBox(width: 12),
-                  const Column(
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Social Profiles',
-                        style: TextStyle(
+                        AppLocalizations.of(context)?.socialProfiles ?? 'Social Profiles',
+                        style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        'Connect your social accounts',
-                        style: TextStyle(
+                        AppLocalizations.of(context)?.socialConnectAccounts ?? 'Connect your social accounts',
+                        style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
                         ),
@@ -154,35 +155,35 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
             _buildSocialInput(
               controller: _facebookController,
               label: 'Facebook',
-              hint: 'Username or profile URL',
+              hint: AppLocalizations.of(context)?.socialHintUsernameOrUrl ?? 'Username or profile URL',
               icon: Icons.facebook,
               color: const Color(0xFF1877F2),
             ),
             _buildSocialInput(
               controller: _instagramController,
               label: 'Instagram',
-              hint: 'Username (without @)',
+              hint: AppLocalizations.of(context)?.socialHintUsername ?? 'Username (without @)',
               icon: Icons.camera_alt,
               color: const Color(0xFFE4405F),
             ),
             _buildSocialInput(
               controller: _tiktokController,
               label: 'TikTok',
-              hint: 'Username (without @)',
+              hint: AppLocalizations.of(context)?.socialHintUsername ?? 'Username (without @)',
               icon: Icons.music_note,
               color: const Color(0xFF000000),
             ),
             _buildSocialInput(
               controller: _linkedinController,
               label: 'LinkedIn',
-              hint: 'Username or profile URL',
+              hint: AppLocalizations.of(context)?.socialHintUsernameOrUrl ?? 'Username or profile URL',
               icon: Icons.work,
               color: const Color(0xFF0A66C2),
             ),
             _buildSocialInput(
               controller: _xController,
               label: 'X (Twitter)',
-              hint: 'Username (without @)',
+              hint: AppLocalizations.of(context)?.socialHintUsername ?? 'Username (without @)',
               icon: Icons.alternate_email,
               color: const Color(0xFF000000),
             ),
@@ -213,7 +214,7 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('Cancel'),
+                    child: Text(AppLocalizations.of(context)?.cancel ?? 'Cancel'),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -228,9 +229,9 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text(
-                      'Save',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                    child: Text(
+                      AppLocalizations.of(context)?.save ?? 'Save',
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
@@ -351,7 +352,7 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
         ),
       ),
       subtitle: Text(
-        hasValue ? (value.startsWith('http') ? value.split('/').last : value) : 'Not connected',
+        hasValue ? (value.startsWith('http') ? value.split('/').last : value) : (AppLocalizations.of(context)?.socialNotConnected ?? 'Not connected'),
         style: TextStyle(
           color: hasValue ? AppColors.textPrimary : AppColors.textTertiary,
           fontSize: 15,

@@ -7,8 +7,15 @@ import '../bloc/language_games_bloc.dart';
 import '../bloc/language_games_event.dart';
 import '../bloc/language_games_state.dart';
 import 'game_waiting_screen.dart';
+import 'categories_screen.dart';
 import 'game_play_screen.dart';
 import 'game_results_screen.dart';
+import 'grammar_duel_screen.dart';
+import 'picture_guess_screen.dart';
+import 'translation_race_screen.dart';
+import 'language_snaps_screen.dart';
+import 'language_tapples_screen.dart';
+import 'vocabulary_chain_screen.dart';
 
 /// Game room screen - routes to appropriate sub-screen based on game status
 class GameRoomScreen extends StatefulWidget {
@@ -60,6 +67,55 @@ class _GameRoomScreenState extends State<GameRoomScreen> {
                 room: room,
               );
             case GameStatus.inProgress:
+              if (room.gameType == GameType.translationRace) {
+                return TranslationRaceScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.pictureGuess) {
+                return PictureGuessScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.grammarDuel) {
+                return GrammarDuelScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.vocabularyChain) {
+                return VocabularyChainScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.languageSnaps) {
+                return LanguageSnapsScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.languageTapples) {
+                return LanguageTapplesScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
+              if (room.gameType == GameType.categories) {
+                return CategoriesScreen(
+                  room: room,
+                  currentUserId: widget.currentUserId,
+                  currentRound: state.currentRound,
+                );
+              }
               return GamePlayScreen(
                 userId: widget.currentUserId,
                 room: room,

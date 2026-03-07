@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/second_chance.dart';
 import '../bloc/second_chance_bloc.dart';
 import '../bloc/second_chance_event.dart';
@@ -29,9 +30,10 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Second Chance'),
+        title: Text(l10n.secondChanceTitle),
         actions: [
           BlocBuilder<SecondChanceBloc, SecondChanceState>(
             builder: (context, state) {
@@ -61,8 +63,8 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
             _showPurchaseDialog(context, state.usage);
           } else if (state is UnlimitedPurchased) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Unlimited second chances unlocked!'),
+              SnackBar(
+                content: Text(l10n.secondChanceUnlimitedUnlocked),
                 backgroundColor: Colors.green,
               ),
             );
@@ -88,6 +90,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
   }
 
   Widget _buildUsageBadge(SecondChanceUsage usage) {
+    final l10n = AppLocalizations.of(context)!;
     if (usage.hasUnlimited) {
       return Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -95,14 +98,14 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
           color: Colors.amber,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: const Row(
+        child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.all_inclusive, size: 14, color: Colors.white),
-            SizedBox(width: 4),
+            const Icon(Icons.all_inclusive, size: 14, color: Colors.white),
+            const SizedBox(width: 4),
             Text(
-              'Unlimited',
-              style: TextStyle(
+              l10n.secondChanceUnlimited,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
@@ -120,7 +123,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
-        '${usage.freeRemaining}/${SecondChanceConfig.freePerDay} free',
+        l10n.secondChanceFreeRemaining(usage.freeRemaining, SecondChanceConfig.freePerDay),
         style: TextStyle(
           color: Theme.of(context).colorScheme.onPrimaryContainer,
           fontSize: 12,
@@ -131,6 +134,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
   }
 
   Widget _buildInfoScreen(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -152,14 +156,14 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
             ),
             const SizedBox(height: 32),
             Text(
-              'Second Chance',
+              l10n.secondChanceTitle,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
             const SizedBox(height: 16),
             Text(
-              'See profiles you passed on who actually liked you!',
+              l10n.secondChanceDescription,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Theme.of(context)
@@ -176,7 +180,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                     );
               },
               icon: const Icon(Icons.search),
-              label: const Text('Find Second Chances'),
+              label: Text(l10n.secondChanceFindButton),
             ),
           ],
         ),
@@ -185,6 +189,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
   }
 
   Widget _buildEmptyState(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -198,12 +203,12 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'No second chances available',
+              l10n.secondChanceEmpty,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(
-              'Check back later for more opportunities!',
+              l10n.secondChanceEmptySubtitle,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context)
@@ -220,7 +225,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                     );
               },
               icon: const Icon(Icons.refresh),
-              label: const Text('Refresh'),
+              label: Text(l10n.secondChanceRefresh),
             ),
           ],
         ),
@@ -232,6 +237,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
     BuildContext context,
     SecondChanceProfilesLoaded state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     final profile = state.currentProfile;
     if (profile == null) return _buildEmptyState(context);
 
@@ -256,7 +262,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
               const Icon(Icons.favorite, color: Colors.white, size: 20),
               const SizedBox(width: 8),
               Text(
-                'They liked you ${profile.likedYouAgo}',
+                l10n.secondChanceLikedYouAgo(profile.likedYouAgo),
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -366,7 +372,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                                 ),
                                 const SizedBox(width: 4),
                                 Text(
-                                  '${profile.distance!.toStringAsFixed(1)} km away',
+                                  l10n.secondChanceDistanceAway(profile.distance!.toStringAsFixed(1)),
                                   style: const TextStyle(color: Colors.white70),
                                 ),
                               ],
@@ -433,7 +439,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                 context,
                 icon: Icons.close,
                 color: Colors.red,
-                label: 'Pass',
+                label: l10n.secondChancePass,
                 onTap: () {
                   context.read<SecondChanceBloc>().add(
                         PassSecondChanceEvent(
@@ -447,7 +453,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                 context,
                 icon: Icons.favorite,
                 color: Colors.green,
-                label: 'Like',
+                label: l10n.secondChanceLike,
                 isLarge: true,
                 onTap: () {
                   context.read<SecondChanceBloc>().add(
@@ -509,23 +515,24 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
   }
 
   void _showMatchDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
         title: Row(
           children: [
-            Icon(Icons.favorite, color: Theme.of(context).colorScheme.primary),
+            Icon(Icons.swap_horiz, color: Theme.of(context).colorScheme.primary),
             const SizedBox(width: 8),
-            const Text("It's a Match!"),
+            Text(l10n.secondChanceMatchTitle),
           ],
         ),
-        content: const Text(
-          'You and this person both like each other! Start a conversation.',
+        content: Text(
+          l10n.secondChanceMatchBody,
         ),
         actions: [
           FilledButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Start Chat'),
+            child: Text(l10n.secondChanceStartChat),
           ),
         ],
       ),
@@ -533,13 +540,13 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
   }
 
   void _showPurchaseDialog(BuildContext context, SecondChanceUsage usage) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Out of Second Chances'),
+        title: Text(l10n.secondChanceOutOf),
         content: Text(
-          'You\'ve used all ${SecondChanceConfig.freePerDay} free second chances for today.\n\n'
-          'Get unlimited for ${SecondChanceConfig.unlimitedCost} coins!',
+          l10n.secondChancePurchaseBody(SecondChanceConfig.freePerDay, SecondChanceConfig.unlimitedCost),
         ),
         actions: [
           TextButton(
@@ -554,7 +561,7 @@ class _SecondChanceScreenState extends State<SecondChanceScreen> {
                   );
             },
             icon: const Icon(Icons.all_inclusive),
-            label: Text('Get Unlimited (${SecondChanceConfig.unlimitedCost})'),
+            label: Text(l10n.secondChanceGetUnlimited(SecondChanceConfig.unlimitedCost)),
           ),
         ],
       ),

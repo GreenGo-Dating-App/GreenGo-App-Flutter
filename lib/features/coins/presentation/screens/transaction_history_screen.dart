@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/coin_transaction.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
@@ -24,6 +25,7 @@ class TransactionHistoryScreen extends StatefulWidget {
 class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   final DateFormat _dateFormat = DateFormat('MMM d, y');
   final DateFormat _timeFormat = DateFormat('h:mm a');
+  AppLocalizations? _l10n;
 
   @override
   void initState() {
@@ -35,11 +37,13 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    _l10n = l10n;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.grey[900],
-        title: const Text('Transaction History'),
+        title: Text(l10n.coinsTransactionHistory),
         actions: [
           IconButton(
             icon: const Icon(Icons.filter_list),
@@ -78,17 +82,17 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
                             ),
                           );
                     },
-                    child: const Text('Retry'),
+                    child: Text(l10n.coinsRetry),
                   ),
                 ],
               ),
             );
           }
 
-          return const Center(
+          return Center(
             child: Text(
-              'No transactions yet',
-              style: TextStyle(color: Colors.grey),
+              l10n.coinsNoTransactionsYet,
+              style: const TextStyle(color: Colors.grey),
             ),
           );
         },
@@ -97,6 +101,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   }
 
   Widget _buildTransactionList(List<CoinTransaction> transactions) {
+    final l10n = AppLocalizations.of(context)!;
     if (transactions.isEmpty) {
       return Center(
         child: Column(
@@ -104,17 +109,17 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
           children: [
             Icon(Icons.receipt_long, size: 64, color: Colors.grey[700]),
             const SizedBox(height: 16),
-            const Text(
-              'No transactions yet',
-              style: TextStyle(
+            Text(
+              l10n.coinsNoTransactionsYet,
+              style: const TextStyle(
                 fontSize: 18,
                 color: Colors.grey,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Your coin transactions will appear here',
-              style: TextStyle(
+            Text(
+              l10n.coinsTransactionsAppearHere,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.grey,
               ),
@@ -161,6 +166,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   }
 
   Widget _buildTransactionCard(CoinTransaction transaction) {
+    final l10n = AppLocalizations.of(context)!;
     final isCredit = transaction.type == CoinTransactionType.credit;
     final color = isCredit ? const Color(0xFF4CAF50) : const Color(0xFFFF5252);
     final icon = _getIconForReason(transaction.reason, isCredit);
@@ -224,7 +230,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
                 ),
               ),
               Text(
-                'Balance: ${transaction.balanceAfter}',
+                l10n.coinsBalance(transaction.balanceAfter),
                 style: TextStyle(
                   fontSize: 11,
                   color: Colors.grey[500],
@@ -264,9 +270,9 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
     final yesterday = today.subtract(const Duration(days: 1));
 
     if (date == today) {
-      return 'Today';
+      return _l10n?.coinsToday ?? 'Today';
     } else if (date == yesterday) {
-      return 'Yesterday';
+      return _l10n?.coinsYesterday ?? 'Yesterday';
     } else {
       return _dateFormat.format(date);
     }
@@ -317,16 +323,17 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   }
 
   void _showFilterDialog() {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: Colors.grey[900],
-        title: const Text('Filter Transactions'),
+        title: Text(l10n.coinsFilterTransactions),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             ListTile(
-              title: const Text('All Transactions'),
+              title: Text(l10n.coinsAllTransactions),
               leading: Radio<String>(
                 value: 'all',
                 groupValue: 'all',
@@ -334,7 +341,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               ),
             ),
             ListTile(
-              title: const Text('Credits Only'),
+              title: Text(l10n.coinsCreditsOnly),
               leading: Radio<String>(
                 value: 'credits',
                 groupValue: 'all',
@@ -342,7 +349,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
               ),
             ),
             ListTile(
-              title: const Text('Debits Only'),
+              title: Text(l10n.coinsDebitsOnly),
               leading: Radio<String>(
                 value: 'debits',
                 groupValue: 'all',
@@ -354,14 +361,14 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(l10n.coinsCancelLabel),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();
               // Apply filter
             },
-            child: const Text('Apply'),
+            child: Text(l10n.coinsApply),
           ),
         ],
       ),

@@ -229,7 +229,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                 : Row(
                     children: [
                       Text(
-                        '${_selectedUserIds.length} selected',
+                        l10n.adminSelectedCount(_selectedUserIds.length),
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontWeight: FontWeight.bold,
@@ -256,7 +256,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                           _clearSelection();
                         },
                         icon: const Icon(Icons.check, size: 16),
-                        label: const Text('Approve Selected'),
+                        label: Text(l10n.adminApproveSelected),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.successGreen,
                           foregroundColor: Colors.white,
@@ -267,7 +267,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                         onPressed: () =>
                             _showBulkRequestBetterPhotoDialog(context, l10n),
                         icon: const Icon(Icons.refresh, size: 16),
-                        label: const Text('Request New Photo'),
+                        label: Text(l10n.adminRequestNewPhoto),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.richGold,
                           foregroundColor: Colors.white,
@@ -295,8 +295,8 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                   onTap: _selectAll,
                   child: Text(
                     _selectedUserIds.length == widget.profiles.length
-                        ? 'Deselect all'
-                        : 'Select all',
+                        ? l10n.adminDeselectAll
+                        : l10n.adminSelectAll,
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 13,
@@ -437,19 +437,19 @@ class _VerificationHistoryTab extends StatelessWidget {
     final dateFormatter = DateFormat('MMM dd, yyyy HH:mm');
 
     if (profiles.isEmpty) {
-      return const Center(
+      return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.history,
               size: 64,
               color: AppColors.textTertiary,
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
-              'No verification history',
-              style: TextStyle(
+              l10n.adminNoVerificationHistory,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
               ),
@@ -470,13 +470,13 @@ class _VerificationHistoryTab extends StatelessWidget {
           dataRowMinHeight: 48,
           dataRowMaxHeight: 64,
           columnSpacing: 16,
-          columns: const [
-            DataColumn(label: Text('#', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
-            DataColumn(label: Text('User', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
-            DataColumn(label: Text('Status', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
-            DataColumn(label: Text('Reviewed By', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
-            DataColumn(label: Text('Date', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
-            DataColumn(label: Text('Reason', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+          columns: [
+            const DataColumn(label: Text('#', style: TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text(l10n.adminUser, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text(l10n.adminStatus, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text(l10n.adminReviewedBy, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text(l10n.adminDate, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
+            DataColumn(label: Text(l10n.adminReason, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold))),
           ],
           rows: List.generate(profiles.length, (index) {
             final profile = profiles[index];
@@ -680,7 +680,7 @@ class _VerificationCard extends StatelessWidget {
                   child: ElevatedButton.icon(
                     onPressed: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
                     icon: const Icon(Icons.fullscreen, size: 18),
-                    label: const Text('View Document'),
+                    label: Text(l10n.adminViewDocument),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black.withValues(alpha: 0.7),
                       foregroundColor: Colors.white,

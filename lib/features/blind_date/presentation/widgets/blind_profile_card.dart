@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/blind_date.dart';
 
 /// Card widget for displaying a blind profile (no photos)
@@ -18,6 +19,7 @@ class BlindProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -122,7 +124,7 @@ class BlindProfileCard extends StatelessWidget {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              '${profile.distance!.toStringAsFixed(1)} km away',
+                              l10n.blindDateKmAway(profile.distance!.toStringAsFixed(1)),
                               style: Theme.of(context)
                                   .textTheme
                                   .bodyMedium
@@ -170,7 +172,7 @@ class BlindProfileCard extends StatelessWidget {
                     ],
                     if (profile.interests.isNotEmpty) ...[
                       Text(
-                        'Interests',
+                        l10n.blindDateInterests,
                         style: Theme.of(context).textTheme.labelLarge?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
@@ -227,7 +229,7 @@ class BlindProfileCard extends StatelessWidget {
                           const SizedBox(width: 8),
                           Expanded(
                             child: Text(
-                              'Photos reveal after ${BlindDateConfig.revealThreshold} messages',
+                              l10n.blindDatePhotosRevealHint(BlindDateConfig.revealThreshold),
                               style: Theme.of(context)
                                   .textTheme
                                   .bodySmall
@@ -348,6 +350,7 @@ class BlindMatchCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       shape: RoundedRectangleBorder(
@@ -427,7 +430,7 @@ class BlindMatchCard extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        '${match.messagesUntilReveal} messages until reveal',
+                        l10n.blindDateMessagesUntilReveal(match.messagesUntilReveal),
                         style: Theme.of(context).textTheme.bodySmall?.copyWith(
                               color: Theme.of(context)
                                   .colorScheme
@@ -437,7 +440,7 @@ class BlindMatchCard extends StatelessWidget {
                       ),
                     ] else ...[
                       Text(
-                        'Photos revealed!',
+                        l10n.blindDatePhotosRevealedLabel,
                         style: Theme.of(context).textTheme.bodySmall?.copyWith(
                               color: Colors.green,
                               fontWeight: FontWeight.w500,
@@ -452,7 +455,7 @@ class BlindMatchCard extends StatelessWidget {
                 IconButton(
                   onPressed: onReveal,
                   icon: const Icon(Icons.visibility),
-                  tooltip: 'Instant reveal (${BlindDateConfig.instantRevealCost} coins)',
+                  tooltip: l10n.blindDateInstantRevealTooltip(BlindDateConfig.instantRevealCost),
                   color: Theme.of(context).colorScheme.primary,
                 ),
             ],
@@ -476,6 +479,7 @@ class RevealProgressWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (match.isRevealed) {
       return Container(
         padding: const EdgeInsets.all(12),
@@ -489,7 +493,7 @@ class RevealProgressWidget extends StatelessWidget {
             const Icon(Icons.visibility, color: Colors.green, size: 20),
             const SizedBox(width: 8),
             Text(
-              'Photos revealed!',
+              l10n.blindDatePhotosRevealedLabel,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Colors.green,
                     fontWeight: FontWeight.w500,
@@ -517,7 +521,7 @@ class RevealProgressWidget extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Photo Reveal Progress',
+                l10n.blindDatePhotoRevealProgress,
                 style: Theme.of(context).textTheme.titleSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -539,12 +543,12 @@ class RevealProgressWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                '${match.messageCount} / ${BlindDateConfig.revealThreshold} messages',
+                l10n.blindDateMessageProgress(match.messageCount, BlindDateConfig.revealThreshold),
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               if (match.messagesUntilReveal > 0)
                 Text(
-                  '${match.messagesUntilReveal} to go',
+                  l10n.blindDateMessagesToGo(match.messagesUntilReveal),
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.w500,
@@ -560,7 +564,7 @@ class RevealProgressWidget extends StatelessWidget {
                 onPressed: onInstantReveal,
                 icon: const Icon(Icons.bolt),
                 label: Text(
-                  'Instant Reveal (${BlindDateConfig.instantRevealCost} coins)',
+                  l10n.blindDateInstantRevealTooltip(BlindDateConfig.instantRevealCost),
                 ),
               ),
             ),

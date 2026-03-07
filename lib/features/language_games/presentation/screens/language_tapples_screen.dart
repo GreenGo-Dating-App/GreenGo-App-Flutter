@@ -7,25 +7,26 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../data/content/game_content.dart';
 import '../../domain/entities/game_room.dart';
 import '../../domain/entities/game_round.dart';
 import '../bloc/language_games_bloc.dart';
 import '../bloc/language_games_event.dart';
 import '../bloc/language_games_state.dart';
 import '../widgets/answer_input.dart';
-import '../widgets/chain_bubble.dart';
 import '../widgets/game_timer.dart';
 import '../widgets/player_avatar_circle.dart';
+import '../widgets/tapples_letter_wheel.dart';
 
-/// Vocabulary Chain game screen
-/// Players chain words together where each word must start with the last letter
-/// of the previous word, within a given theme/category
-class VocabularyChainScreen extends StatefulWidget {
+/// Language Tapples — word category game with letter constraints.
+/// Players take turns picking a letter, then naming a word in the current
+/// category starting with that letter. Lives-based (3 lives), 10 pts per word.
+class LanguageTapplesScreen extends StatefulWidget {
   final GameRoom room;
   final String currentUserId;
   final GameRound? currentRound;
 
-  const VocabularyChainScreen({
+  const LanguageTapplesScreen({
     super.key,
     required this.room,
     required this.currentUserId,
@@ -33,23 +34,13 @@ class VocabularyChainScreen extends StatefulWidget {
   });
 
   @override
-  State<VocabularyChainScreen> createState() => _VocabularyChainScreenState();
+  State<LanguageTapplesScreen> createState() => _LanguageTapplesScreenState();
 }
 
-class _VocabularyChainScreenState extends State<VocabularyChainScreen>
+class _LanguageTapplesScreenState extends State<LanguageTapplesScreen>
     with TickerProviderStateMixin {
-  // ── Animation controllers ──
-  late AnimationController _particleController;
-  late AnimationController _pulseController;
-  late Animation<double> _pulseAnimation;
-  late AnimationController _turnGlowController;
-  late Animation<double> _turnGlowAnimation;
-  late AnimationController _feedbackController;
-  late Animation<double> _feedbackScale;
-  late AnimationController _turnTransitionController;
-  late Animation<double> _turnTransitionScale;
-  late AnimationController _chainBreakController;
-  late Animation<double> _chainBreakAnimation;
+  // ── Letter selection ──
+  String? _selectedLetter;
 
   // ── Timer ──
   Timer? _countdownTimer;
@@ -61,71 +52,66 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   bool _feedbackCorrect = false;
   String _feedbackText = '';
   bool _hasSubmittedThisTurn = false;
+  late AnimationController _feedbackController;
+  late Animation<double> _feedbackScale;
 
   // ── Turn transition ──
   bool _showTurnTransition = false;
   String _turnTransitionText = '';
+  String _turnTransitionSub = '';
   String? _previousTurnUserId;
+  late AnimationController _turnTransitionController;
+  late Animation<double> _turnTransitionScale;
 
-  // ── Chain break ──
-  bool _showChainBreak = false;
-  String _chainBreakPlayerName = '';
+  // ── Life lost ──
+  bool _showLifeLost = false;
+  String _lifeLostPlayerName = '';
+  late AnimationController _lifeLostController;
+  late Animation<double> _lifeLostScale;
 
-  // ── Score tracking ──
-  Map<String, int> _previousScores = {};
+  // ── Score pop ──
   bool _showScorePop = false;
   String _scorePopText = '';
+  Map<String, int> _previousScores = {};
 
-  // ── Chain tracking ──
-  int _previousWordCount = 0;
-  final ScrollController _scrollController = ScrollController();
+  // ── Particle background ──
+  late AnimationController _particleController;
+
+  // ── Category glow ──
+  late AnimationController _categoryGlowController;
+  late Animation<double> _categoryGlowAnimation;
 
   bool get _isMyTurn => widget.room.currentTurnUserId == widget.currentUserId;
   bool get _isHost => widget.room.isHost(widget.currentUserId);
 
-  String get _lastLetter {
-    if (widget.room.usedWords.isEmpty) return '';
-    final lastWord = widget.room.usedWords.last;
-    return lastWord.isNotEmpty
-        ? lastWord[lastWord.length - 1].toUpperCase()
-        : '';
+  String _category(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return widget.room.roundTheme ?? l10n.gameCategoryAnimals;
   }
+  String _categoryIcon(BuildContext context) => GameContent.getTapplesCategoryIcon(_category(context));
 
-  int _playerIndex(String playerId) {
-    final idx = widget.room.players
-        .indexWhere((p) => p.userId == playerId);
-    return idx >= 0 ? idx : 0;
+  /// Derive used letters from words already submitted this round.
+  Set<String> get _usedLetters {
+    final letters = <String>{};
+    for (final word in widget.room.usedWords) {
+      if (word.isNotEmpty) {
+        letters.add(word[0].toUpperCase());
+      }
+    }
+    return letters;
   }
 
   @override
   void initState() {
     super.initState();
 
-    // Particle background
+    // Particles
     _particleController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 10),
     )..repeat();
 
-    // Letter prompt pulse
-    _pulseController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 2000),
-    )..repeat(reverse: true);
-    _pulseAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut),
-    );
-
-    // Turn glow
-    _turnGlowController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1200),
-    )..repeat(reverse: true);
-    _turnGlowAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _turnGlowController, curve: Curves.easeInOut),
-    );
-
-    // Feedback animation
+    // Feedback
     _feedbackController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 400),
@@ -134,7 +120,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
       CurvedAnimation(parent: _feedbackController, curve: Curves.elasticOut),
     );
 
-    // Turn transition animation
+    // Turn transition
     _turnTransitionController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 400),
@@ -144,55 +130,47 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
           parent: _turnTransitionController, curve: Curves.elasticOut),
     );
 
-    // Chain break animation
-    _chainBreakController = AnimationController(
+    // Life lost
+    _lifeLostController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 600),
+      duration: const Duration(milliseconds: 500),
     );
-    _chainBreakAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-          parent: _chainBreakController, curve: Curves.easeOutBack),
+    _lifeLostScale = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _lifeLostController, curve: Curves.easeOutBack),
     );
 
-    // Init state
+    // Category glow
+    _categoryGlowController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2000),
+    )..repeat(reverse: true);
+    _categoryGlowAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+          parent: _categoryGlowController, curve: Curves.easeInOut),
+    );
+
     _previousScores = Map.from(widget.room.scores);
-    _previousWordCount = widget.room.usedWords.length;
     _previousTurnUserId = widget.room.currentTurnUserId;
 
     _startTimer();
   }
 
   @override
-  void didUpdateWidget(covariant VocabularyChainScreen oldWidget) {
+  void didUpdateWidget(covariant LanguageTapplesScreen oldWidget) {
     super.didUpdateWidget(oldWidget);
 
     // Detect turn change
     if (widget.room.currentTurnUserId != oldWidget.room.currentTurnUserId) {
       _hasTimedOut = false;
       _hasSubmittedThisTurn = false;
+      _selectedLetter = null;
       _startTimer();
 
-      // Show turn transition
       if (_previousTurnUserId != null &&
           _previousTurnUserId != widget.room.currentTurnUserId) {
         _showTurnTransitionOverlay();
       }
       _previousTurnUserId = widget.room.currentTurnUserId;
-    }
-
-    // Detect new word added to chain
-    if (widget.room.usedWords.length > _previousWordCount) {
-      _previousWordCount = widget.room.usedWords.length;
-      // Auto-scroll to latest
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (_scrollController.hasClients) {
-          _scrollController.animateTo(
-            0,
-            duration: const Duration(milliseconds: 300),
-            curve: Curves.easeOut,
-          );
-        }
-      });
     }
 
     // Detect score change
@@ -204,12 +182,12 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     }
     _previousScores = Map.from(newScores);
 
-    // Detect life lost (chain break) — lives decreased for someone
-    final l10n = AppLocalizations.of(context)!;
+    // Detect life lost
     for (final player in widget.room.players) {
       final oldPlayer = oldWidget.room.getPlayer(player.userId);
       if (oldPlayer != null && player.lives < oldPlayer.lives) {
-        _showChainBreakAnimation(
+        final l10n = AppLocalizations.of(context)!;
+        _showLifeLostOverlay(
           player.userId == widget.currentUserId
               ? l10n.gameYou
               : player.displayName,
@@ -242,12 +220,11 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
         _countdownTimer?.cancel();
         HapticFeedback.heavyImpact();
 
-        // Only the host dispatches timeout to prevent duplicate dispatches
         if (_isHost) {
           final timedOutUserId = widget.room.currentTurnUserId;
           if (timedOutUserId != null) {
             context.read<LanguageGamesBloc>().add(
-                  VocabularyChainTimeout(
+                  TapplesTimeout(
                     roomId: widget.room.id,
                     userId: timedOutUserId,
                   ),
@@ -258,15 +235,65 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     });
   }
 
+  void _onLetterSelected(String letter) {
+    setState(() => _selectedLetter = letter);
+  }
+
+  void _onSubmitAnswer(String answer) {
+    if (!_isMyTurn || _hasSubmittedThisTurn || _selectedLetter == null) return;
+
+    final trimmed = answer.trim().toLowerCase();
+    if (trimmed.isEmpty) return;
+
+    // Client-side: must start with selected letter
+    final l10n = AppLocalizations.of(context)!;
+    if (!trimmed.startsWith(_selectedLetter!.toLowerCase())) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.gameWordMustStartWith(_selectedLetter!)),
+          backgroundColor: AppColors.errorRed,
+          duration: const Duration(seconds: 2),
+        ),
+      );
+      return;
+    }
+
+    // Client-side: not already used
+    if (widget.room.usedWords.any((w) => w.toLowerCase() == trimmed)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.gameWordAlreadyUsed),
+          backgroundColor: AppColors.errorRed,
+          duration: const Duration(seconds: 2),
+        ),
+      );
+      return;
+    }
+
+    _hasSubmittedThisTurn = true;
+
+    // Submit in LETTER:word format
+    context.read<LanguageGamesBloc>().add(SubmitAnswer(
+          roomId: widget.room.id,
+          userId: widget.currentUserId,
+          answer: '$_selectedLetter:${answer.trim()}',
+        ));
+
+    // Optimistic feedback
+    _showAnswerFeedback(true, '+10');
+  }
+
   void _showTurnTransitionOverlay() {
     final l10n = AppLocalizations.of(context)!;
     if (_isMyTurn) {
       _turnTransitionText = l10n.gameYourTurn;
+      _turnTransitionSub = l10n.gameTapplesPickLetterNameWord;
       HapticFeedback.mediumImpact();
     } else {
       final player = widget.room.currentTurnPlayer;
       final name = player?.displayName ?? l10n.gameOpponent;
       _turnTransitionText = l10n.gamePlayersTurn(name);
+      _turnTransitionSub = '';
     }
     setState(() => _showTurnTransition = true);
     _turnTransitionController.forward(from: 0);
@@ -303,63 +330,18 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     });
   }
 
-  void _showChainBreakAnimation(String playerName) {
+  void _showLifeLostOverlay(String playerName) {
     setState(() {
-      _showChainBreak = true;
-      _chainBreakPlayerName = playerName;
+      _showLifeLost = true;
+      _lifeLostPlayerName = playerName;
     });
-    _chainBreakController.forward(from: 0);
+    _lifeLostController.forward(from: 0);
     HapticFeedback.heavyImpact();
 
     Future.delayed(const Duration(milliseconds: 2000), () {
       if (!mounted) return;
-      setState(() => _showChainBreak = false);
+      setState(() => _showLifeLost = false);
     });
-  }
-
-  void _onSubmitAnswer(String answer) {
-    if (!_isMyTurn || _hasSubmittedThisTurn) return;
-
-    final trimmed = answer.trim().toLowerCase();
-    if (trimmed.isEmpty) return;
-
-    final l10n = AppLocalizations.of(context)!;
-
-    // Client-side validation: starts with correct letter
-    if (_lastLetter.isNotEmpty &&
-        !trimmed.startsWith(_lastLetter.toLowerCase())) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.gameWordMustStartWith(_lastLetter)),
-          backgroundColor: AppColors.errorRed,
-          duration: const Duration(seconds: 2),
-        ),
-      );
-      return;
-    }
-
-    // Client-side validation: not already used
-    if (widget.room.usedWords
-        .any((w) => w.toLowerCase() == trimmed)) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.gameWordAlreadyUsed),
-          backgroundColor: AppColors.errorRed,
-          duration: const Duration(seconds: 2),
-        ),
-      );
-      return;
-    }
-
-    _hasSubmittedThisTurn = true;
-    context.read<LanguageGamesBloc>().add(SubmitAnswer(
-          roomId: widget.room.id,
-          userId: widget.currentUserId,
-          answer: answer.trim(),
-        ));
-
-    // Optimistic feedback — will be corrected if server rejects
-    _showAnswerFeedback(true, '+10');
   }
 
   void _showAbandonDialog() {
@@ -400,12 +382,10 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   void dispose() {
     _countdownTimer?.cancel();
     _particleController.dispose();
-    _pulseController.dispose();
-    _turnGlowController.dispose();
     _feedbackController.dispose();
     _turnTransitionController.dispose();
-    _chainBreakController.dispose();
-    _scrollController.dispose();
+    _lifeLostController.dispose();
+    _categoryGlowController.dispose();
     super.dispose();
   }
 
@@ -415,7 +395,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     return BlocListener<LanguageGamesBloc, LanguageGamesState>(
       listener: (context, state) {
         if (state is LanguageGamesError) {
-          // Server rejected the answer
+          // Server rejected
           if (_hasSubmittedThisTurn) {
             _showAnswerFeedback(false, l10n.gameInvalidAnswer);
             _hasSubmittedThisTurn = false;
@@ -432,7 +412,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           title: Text(
-            '${widget.room.gameType.emoji} ${l10n.gameChainTitle}',
+            '${widget.room.gameType.emoji} ${l10n.gameTapplesTitle}',
             style: const TextStyle(
               color: AppColors.textPrimary,
               fontWeight: FontWeight.bold,
@@ -463,12 +443,12 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
         ),
         body: Stack(
           children: [
-            // Chain-themed particle background
+            // Particle background
             Positioned.fill(
               child: AnimatedBuilder(
                 animation: _particleController,
                 builder: (context, _) => CustomPaint(
-                  painter: _ChainParticlePainter(
+                  painter: _TapplesParticlePainter(
                     progress: _particleController.value,
                   ),
                 ),
@@ -478,56 +458,45 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
             // Main content
             Column(
               children: [
-                // Player avatars with lives
+                // Player avatars with lives + scores
                 _buildPlayerAvatars(),
-                const SizedBox(height: 8),
+                const SizedBox(height: 4),
 
-                // Theme badge and turn indicator
-                _buildThemeAndTurnRow(),
-                const SizedBox(height: 8),
+                // Category badge with glow
+                _buildCategoryBadge(),
+                const SizedBox(height: 4),
 
-                // Timer
-                GameTimer(
-                  remainingSeconds: _remainingSeconds,
-                  totalSeconds: widget.room.turnDurationSeconds,
-                  size: 48,
-                ),
-                const SizedBox(height: 8),
+                // Turn indicator + timer
+                _buildTurnAndTimer(),
+                const SizedBox(height: 4),
 
-                // Next letter prompt
-                if (_lastLetter.isNotEmpty) _buildLetterPrompt(),
-                const SizedBox(height: 8),
+                // Instructions
+                _buildInstructions(),
+                const SizedBox(height: 4),
 
-                // Chain of words
-                Expanded(child: _buildWordChain()),
+                // Letter wheel
+                Expanded(child: _buildLetterWheel()),
 
-                // Chain stats
-                _buildChainStats(),
+                // Used words count
+                _buildUsedWordsCount(),
 
-                // Answer input
-                AnswerInput(
-                  hintText: _isMyTurn
-                      ? _lastLetter.isNotEmpty
-                          ? l10n.gameChainTypeStartingWithHint(_lastLetter)
-                          : l10n.gameChainTypeToStartHint
-                      : l10n.gameWaitForYourTurn,
-                  enabled: _isMyTurn && !_hasSubmittedThisTurn,
-                  onSubmitted: _onSubmitAnswer,
-                ),
+                // Answer input (only when letter selected + my turn)
+                if (_isMyTurn && _selectedLetter != null && !_hasSubmittedThisTurn)
+                  AnswerInput(
+                    hintText: l10n.gameTapplesWordStartingWithHint(_selectedLetter!),
+                    enabled: true,
+                    onSubmitted: _onSubmitAnswer,
+                  )
+                else
+                  const SizedBox(height: 8),
               ],
             ),
 
-            // Turn transition overlay
-            if (_showTurnTransition) _buildTurnTransition(),
-
-            // Answer feedback overlay
+            // Overlays
+            if (_showTurnTransition) _buildTurnTransitionOverlay(),
             if (_showFeedback) _buildFeedbackOverlay(),
-
-            // Score pop overlay
-            if (_showScorePop) _buildScorePop(),
-
-            // Chain break overlay
-            if (_showChainBreak) _buildChainBreak(),
+            if (_showScorePop) _buildScorePopOverlay(),
+            if (_showLifeLost) _buildLifeLostOverlay(),
           ],
         ),
       ),
@@ -537,7 +506,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   // ── Player Avatars ──
   Widget _buildPlayerAvatars() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: widget.room.players.map((player) {
@@ -548,56 +517,70 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
             isCurrentUser: player.userId == widget.currentUserId,
             showLives: true,
             showScore: true,
-            size: 40,
+            size: 38,
           );
         }).toList(),
       ),
     );
   }
 
-  // ── Theme Badge + Turn Indicator ──
-  Widget _buildThemeAndTurnRow() {
-    final l10n = AppLocalizations.of(context)!;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        if (widget.room.roundTheme != null)
-          Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-            decoration: BoxDecoration(
-              color: AppColors.infoBlue.withValues(alpha: 0.15),
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(
-                color: AppColors.infoBlue.withValues(alpha: 0.3),
+  // ── Category Badge ──
+  Widget _buildCategoryBadge() {
+    return AnimatedBuilder(
+      animation: _categoryGlowAnimation,
+      builder: (context, child) => Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.richGold.withValues(alpha: 0.08),
+              AppColors.richGold.withValues(
+                  alpha: 0.04 + 0.06 * _categoryGlowAnimation.value),
+            ],
+          ),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: AppColors.richGold.withValues(
+                alpha: 0.3 + 0.2 * _categoryGlowAnimation.value),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.richGold.withValues(
+                  alpha: 0.1 * _categoryGlowAnimation.value),
+              blurRadius: 8,
+              spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(_categoryIcon(context), style: const TextStyle(fontSize: 20)),
+            const SizedBox(width: 8),
+            Text(
+              _category(context),
+              style: const TextStyle(
+                color: AppColors.richGold,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(Icons.category,
-                    color: AppColors.infoBlue, size: 14),
-                const SizedBox(width: 4),
-                Text(
-                  widget.room.roundTheme!,
-                  style: const TextStyle(
-                    color: AppColors.infoBlue,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          ],
+        ),
+      ),
+    );
+  }
 
-        const SizedBox(width: 10),
-
-        // Turn indicator with glow
-        AnimatedBuilder(
-          animation: _turnGlowAnimation,
-          builder: (context, child) => Container(
-            padding: const EdgeInsets.symmetric(
-                horizontal: 12, vertical: 5),
+  // ── Turn & Timer ──
+  Widget _buildTurnAndTimer() {
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(
               color: _isMyTurn
                   ? AppColors.richGold.withValues(alpha: 0.15)
@@ -606,11 +589,8 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
               boxShadow: _isMyTurn
                   ? [
                       BoxShadow(
-                        color: AppColors.richGold.withValues(
-                            alpha:
-                                0.15 * _turnGlowAnimation.value),
+                        color: AppColors.richGold.withValues(alpha: 0.2),
                         blurRadius: 8,
-                        spreadRadius: 1,
                       ),
                     ]
                   : null,
@@ -618,7 +598,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
             child: Text(
               _isMyTurn
                   ? l10n.gameYourTurn
-                  : l10n.gamePlayersTurn(widget.room.currentTurnPlayer?.displayName ?? l10n.gameWaiting),
+                  : l10n.gamePlayersTurn(widget.room.currentTurnPlayer?.displayName ?? l10n.gameOpponent),
               style: TextStyle(
                 color: _isMyTurn
                     ? AppColors.richGold
@@ -628,145 +608,63 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
               ),
             ),
           ),
-        ),
-      ],
+          const SizedBox(width: 12),
+          GameTimer(
+            remainingSeconds: _remainingSeconds,
+            totalSeconds: widget.room.turnDurationSeconds,
+            size: 40,
+          ),
+        ],
+      ),
     );
   }
 
-  // ── Letter Prompt ──
-  Widget _buildLetterPrompt() {
+  // ── Instructions ──
+  Widget _buildInstructions() {
     final l10n = AppLocalizations.of(context)!;
-    return AnimatedBuilder(
-      animation: _pulseAnimation,
-      builder: (context, child) => Container(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        decoration: BoxDecoration(
-          color: AppColors.richGold.withValues(alpha: 0.1),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              l10n.gameChainNextMustStartWith,
-              style: const TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 13,
-              ),
-            ),
-            Container(
-              width: 32,
-              height: 32,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: AppColors.richGold,
-                borderRadius: BorderRadius.circular(8),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.richGold.withValues(
-                        alpha: 0.3 + 0.3 * _pulseAnimation.value),
-                    blurRadius: 8 + 6 * _pulseAnimation.value,
-                    spreadRadius: 1,
-                  ),
-                ],
-              ),
-              child: Text(
-                _lastLetter,
-                style: const TextStyle(
-                  color: AppColors.backgroundDark,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ],
+    String text;
+    if (!_isMyTurn) {
+      text = l10n.gameWaitForYourTurn;
+    } else if (_selectedLetter == null) {
+      text = l10n.gameTapplesPickLetterFromWheel;
+    } else {
+      text = l10n.gameTapplesNameWordStartingWith(_selectedLetter!);
+    }
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: _isMyTurn ? AppColors.textPrimary : AppColors.textTertiary,
+          fontSize: 13,
         ),
       ),
     );
   }
 
-  // ── Word Chain ──
-  Widget _buildWordChain() {
-    final l10n = AppLocalizations.of(context)!;
-    if (widget.room.usedWords.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.link_off, color: AppColors.textTertiary, size: 48),
-            const SizedBox(height: 12),
-            Text(
-              l10n.gameChainNoWordsYet,
-              style:
-                  const TextStyle(color: AppColors.textTertiary, fontSize: 16),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              l10n.gameChainStartWithAnyWord,
-              style:
-                  const TextStyle(color: AppColors.textTertiary, fontSize: 12),
-            ),
-          ],
-        ),
-      );
-    }
-
-    final displayWords = widget.room.usedWords;
-
-    return ListView.builder(
-      controller: _scrollController,
-      reverse: true,
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-      itemCount: displayWords.length,
-      itemBuilder: (context, index) {
-        final wordIndex = displayWords.length - 1 - index;
-        final word = displayWords[wordIndex];
-        final isLatest = wordIndex == displayWords.length - 1;
-
-        // Find player who submitted this word
-        String? playerName;
-        int playerIdx = 0;
-        if (widget.currentRound != null) {
-          for (final entry
-              in widget.currentRound!.playerAnswers.entries) {
-            if (entry.value.answer.toLowerCase() ==
-                word.toLowerCase()) {
-              final player = widget.room.getPlayer(entry.key);
-              if (player != null) {
-                playerName = player.userId == widget.currentUserId
-                    ? l10n.gameYou
-                    : player.displayName;
-                playerIdx = _playerIndex(entry.key);
-              }
-              break;
-            }
-          }
-        }
-
-        return Align(
-          alignment: Alignment.center,
-          child: ChainBubble(
-            word: word,
-            isLatest: isLatest,
-            showConnector: wordIndex > 0,
-            playerName: playerName,
-            playerIndex: playerIdx,
-            animateIn: isLatest,
-          ),
-        );
-      },
+  // ── Letter Wheel ──
+  Widget _buildLetterWheel() {
+    return Center(
+      child: TapplesLetterWheel(
+        usedLetters: _usedLetters,
+        selectedLetter: _selectedLetter,
+        enabled: _isMyTurn && !_hasSubmittedThisTurn,
+        onLetterTap: _onLetterSelected,
+        categoryName: _category(context),
+        categoryIcon: _categoryIcon(context),
+      ),
     );
   }
 
-  // ── Chain Stats ──
-  Widget _buildChainStats() {
+  // ── Used Words Count ──
+  Widget _buildUsedWordsCount() {
     final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       child: Container(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
         decoration: BoxDecoration(
           color: AppColors.backgroundCard,
           borderRadius: BorderRadius.circular(12),
@@ -776,11 +674,11 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.link,
+            const Icon(Icons.check_circle_outline,
                 color: AppColors.textTertiary, size: 14),
             const SizedBox(width: 4),
             Text(
-              l10n.gameChainWordsChained(widget.room.usedWords.length),
+              l10n.gameTapplesWordsUsedLettersLeft(widget.room.usedWords.length, 26 - _usedLetters.length),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -793,7 +691,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   }
 
   // ── Turn Transition Overlay ──
-  Widget _buildTurnTransition() {
+  Widget _buildTurnTransitionOverlay() {
     return Positioned.fill(
       child: IgnorePointer(
         child: Center(
@@ -826,12 +724,8 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(
-                    _isMyTurn
-                        ? Icons.keyboard_arrow_down_rounded
-                        : Icons.hourglass_top_rounded,
-                    color: _isMyTurn
-                        ? AppColors.richGold
-                        : AppColors.textTertiary,
+                    _isMyTurn ? Icons.touch_app_rounded : Icons.hourglass_top_rounded,
+                    color: _isMyTurn ? AppColors.richGold : AppColors.textTertiary,
                     size: 36,
                   ),
                   const SizedBox(height: 8),
@@ -845,6 +739,16 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  if (_turnTransitionSub.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      _turnTransitionSub,
+                      style: const TextStyle(
+                        color: AppColors.textSecondary,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),
@@ -854,7 +758,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     );
   }
 
-  // ── Answer Feedback ──
+  // ── Feedback Overlay ──
   Widget _buildFeedbackOverlay() {
     return Positioned.fill(
       child: IgnorePointer(
@@ -907,7 +811,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   }
 
   // ── Score Pop ──
-  Widget _buildScorePop() {
+  Widget _buildScorePopOverlay() {
     return Positioned(
       top: 80,
       left: 0,
@@ -933,10 +837,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
                 shadows: [
-                  Shadow(
-                    color: Colors.black54,
-                    blurRadius: 8,
-                  ),
+                  Shadow(color: Colors.black54, blurRadius: 8),
                 ],
               ),
             ),
@@ -946,14 +847,14 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
     );
   }
 
-  // ── Chain Break ──
-  Widget _buildChainBreak() {
+  // ── Life Lost Overlay ──
+  Widget _buildLifeLostOverlay() {
     final l10n = AppLocalizations.of(context)!;
     return Positioned.fill(
       child: IgnorePointer(
         child: Center(
           child: ScaleTransition(
-            scale: _chainBreakAnimation,
+            scale: _lifeLostScale,
             child: Container(
               padding: const EdgeInsets.symmetric(
                   horizontal: 28, vertical: 18),
@@ -972,13 +873,13 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Icon(
-                    Icons.link_off,
+                    Icons.heart_broken,
                     color: Colors.white,
                     size: 40,
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    l10n.gameChainBreak,
+                    l10n.gameTapplesTimeUp,
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 22,
@@ -987,7 +888,7 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    l10n.gameTapplesPlayerLostLife(_chainBreakPlayerName),
+                    l10n.gameTapplesPlayerLostLife(_lifeLostPlayerName),
                     style: const TextStyle(
                       color: Colors.white70,
                       fontSize: 14,
@@ -1003,62 +904,44 @@ class _VocabularyChainScreenState extends State<VocabularyChainScreen>
   }
 }
 
-/// Chain-themed particles — connected dots floating
-class _ChainParticlePainter extends CustomPainter {
+/// Letter-themed floating particles
+class _TapplesParticlePainter extends CustomPainter {
   final double progress;
 
-  _ChainParticlePainter({required this.progress});
+  _TapplesParticlePainter({required this.progress});
 
   @override
   void paint(Canvas canvas, Size size) {
-    const count = 20;
-    const seed = 33;
-    final points = <Offset>[];
+    const count = 18;
+    const seed = 55;
 
     for (int i = 0; i < count; i++) {
-      final hash = (seed * 31 + i * 47) & 0xFFFF;
+      final hash = (seed * 31 + i * 43) & 0xFFFF;
       final baseX = (hash % 1000) / 1000.0 * size.width;
-      final baseY = ((hash * 7 + 321) % 1000) / 1000.0 * size.height;
-      final speed = 0.2 + (hash % 100) / 100.0 * 0.5;
+      final baseY = ((hash * 7 + 789) % 1000) / 1000.0 * size.height;
+      final speed = 0.15 + (hash % 100) / 100.0 * 0.4;
       final phase = (hash % 628) / 100.0;
 
       final dx = math.sin(progress * math.pi * 2 * speed + phase) * 10;
       final dy =
-          math.cos(progress * math.pi * 2 * speed * 0.6 + phase) * 8;
+          math.cos(progress * math.pi * 2 * speed * 0.7 + phase) * 8;
       final opacity =
-          (0.04 + 0.04 * math.sin(progress * math.pi * 2 * speed + phase))
+          (0.03 + 0.04 * math.sin(progress * math.pi * 2 * speed + phase))
               .clamp(0.0, 1.0);
 
       final pos = Offset(baseX + dx, baseY + dy);
-      points.add(pos);
 
+      // Draw small letter-shaped dots
       canvas.drawCircle(
         pos,
-        1.2,
+        1.5,
         Paint()..color = AppColors.richGold.withValues(alpha: opacity),
       );
-    }
-
-    // Draw subtle connecting lines between nearby particles
-    final linePaint = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.5;
-
-    for (int i = 0; i < points.length; i++) {
-      for (int j = i + 1; j < points.length; j++) {
-        final dist = (points[i] - points[j]).distance;
-        if (dist < 80) {
-          final alpha = (0.03 * (1.0 - dist / 80)).clamp(0.0, 1.0);
-          linePaint.color =
-              AppColors.richGold.withValues(alpha: alpha);
-          canvas.drawLine(points[i], points[j], linePaint);
-        }
-      }
     }
   }
 
   @override
-  bool shouldRepaint(covariant _ChainParticlePainter oldDelegate) {
+  bool shouldRepaint(covariant _TapplesParticlePainter oldDelegate) {
     return oldDelegate.progress != progress;
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
 import '../../bloc/onboarding_bloc.dart';
@@ -79,8 +80,8 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
           _selectedInterests.add(interest);
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('You can select up to 10 interests'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context)!.onboardingMaxInterests),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -92,8 +93,8 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
   void _handleContinue() {
     if (_selectedInterests.length < 3) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please select at least 3 interests'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.onboardingMinInterests),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -113,8 +114,57 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
     context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
   }
 
+  /// Map internal interest key to localized display name
+  String _localizedInterest(BuildContext context, String interest) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (interest) {
+      case 'Travel': return l10n.interestTravel;
+      case 'Photography': return l10n.interestPhotography;
+      case 'Music': return l10n.interestMusic;
+      case 'Movies': return l10n.interestMovies;
+      case 'Sports': return l10n.interestSports;
+      case 'Fitness': return l10n.interestFitness;
+      case 'Cooking': return l10n.interestCooking;
+      case 'Reading': return l10n.interestReading;
+      case 'Art': return l10n.interestArt;
+      case 'Gaming': return l10n.interestGaming;
+      case 'Technology': return l10n.interestTechnology;
+      case 'Fashion': return l10n.interestFashion;
+      case 'Dancing': return l10n.interestDancing;
+      case 'Yoga': return l10n.interestYoga;
+      case 'Hiking': return l10n.interestHiking;
+      case 'Swimming': return l10n.interestSwimming;
+      case 'Running': return l10n.interestRunning;
+      case 'Cycling': return l10n.interestCycling;
+      case 'Meditation': return l10n.interestMeditation;
+      case 'Writing': return l10n.interestWriting;
+      case 'Poetry': return l10n.interestPoetry;
+      case 'Coffee': return l10n.interestCoffee;
+      case 'Wine': return l10n.interestWine;
+      case 'Beer': return l10n.interestBeer;
+      case 'Food': return l10n.interestFood;
+      case 'Vegetarian': return l10n.interestVegetarian;
+      case 'Vegan': return l10n.interestVegan;
+      case 'Pets': return l10n.interestPets;
+      case 'Dogs': return l10n.interestDogs;
+      case 'Cats': return l10n.interestCats;
+      case 'Nature': return l10n.interestNature;
+      case 'Environment': return l10n.interestEnvironment;
+      case 'Volunteering': return l10n.interestVolunteering;
+      case 'Languages': return l10n.interestLanguages;
+      case 'History': return l10n.interestHistory;
+      case 'Science': return l10n.interestScience;
+      case 'Politics': return l10n.interestPolitics;
+      case 'Business': return l10n.interestBusiness;
+      case 'Entrepreneurship': return l10n.interestEntrepreneurship;
+      case 'Investing': return l10n.interestInvesting;
+      default: return interest;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return BlocBuilder<OnboardingBloc, OnboardingState>(
       builder: (context, state) {
         if (state is! OnboardingInProgress) {
@@ -122,8 +172,8 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
         }
 
         return LuxuryOnboardingLayout(
-          title: 'Your interests',
-          subtitle: 'Select at least 3 interests (max 10)',
+          title: l10n.onboardingYourInterests,
+          subtitle: l10n.onboardingInterestsSubtitle,
           showBackButton: true,
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
@@ -146,7 +196,7 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
-                    '${_selectedInterests.length}/10 selected',
+                    l10n.interestsSelectedCount(_selectedInterests.length, 10),
                     style: TextStyle(
                       color: _selectedInterests.length >= 3
                           ? AppColors.successGreen
@@ -170,7 +220,7 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
                     children: _availableInterests.map((interest) {
                       final isSelected = _selectedInterests.contains(interest);
                       return LuxuryChip(
-                        label: interest,
+                        label: _localizedInterest(context, interest),
                         isSelected: isSelected,
                         onTap: () => _toggleInterest(interest),
                       );
@@ -202,7 +252,7 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
                           const SizedBox(width: 12),
                           Expanded(
                             child: Text(
-                              'Your interests help us find better matches for you',
+                              l10n.onboardingInterestsHelpMatches,
                               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                     color: AppColors.textSecondary,
                                   ),
@@ -216,7 +266,7 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
 
                     // Continue Button
                     LuxuryButton(
-                      text: 'Continue',
+                      text: l10n.onboardingContinue,
                       onPressed: _handleContinue,
                     ),
                   ],

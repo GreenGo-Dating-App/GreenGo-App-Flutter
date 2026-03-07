@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 
@@ -62,7 +63,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
               ),
             ),
             Text(
-              'Event Group Chat',
+              AppLocalizations.of(context)!.eventsGroupChatTooltip,
               style: TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
@@ -90,7 +91,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                 if (snapshot.hasError) {
                   return Center(
                     child: Text(
-                      'Error loading messages',
+                      AppLocalizations.of(context)!.eventsErrorLoadingMessages,
                       style: TextStyle(color: AppColors.textSecondary),
                     ),
                   );
@@ -110,7 +111,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                         ),
                         const SizedBox(height: 16),
                         Text(
-                          'No messages yet',
+                          AppLocalizations.of(context)!.eventsNoMessagesYet,
                           style: TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 18,
@@ -119,7 +120,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          'Be the first to say something!',
+                          AppLocalizations.of(context)!.eventsBeFirstToSay,
                           style: TextStyle(
                             color: AppColors.textSecondary,
                             fontSize: 14,
@@ -274,7 +275,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
               controller: _messageController,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Type a message...',
+                hintText: AppLocalizations.of(context)!.eventsTypeAMessage,
                 hintStyle: TextStyle(color: AppColors.textTertiary),
                 filled: true,
                 fillColor: AppColors.backgroundInput,

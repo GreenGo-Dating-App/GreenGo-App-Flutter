@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/usage_limit_service.dart';
 import '../../features/membership/domain/entities/membership.dart';
@@ -60,6 +61,7 @@ class LimitReachedDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Dialog(
       backgroundColor: Colors.transparent,
       child: Container(
@@ -79,7 +81,7 @@ class LimitReachedDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             // Header with icon
-            _buildHeader(),
+            _buildHeader(l10n),
             // Content
             Padding(
               padding: const EdgeInsets.all(24),
@@ -97,15 +99,15 @@ class LimitReachedDialog extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   // Usage stats
-                  _buildUsageStats(),
+                  _buildUsageStats(l10n),
                   const SizedBox(height: 24),
                   // Tier comparison if upgrade is available
                   if (limitResult.suggestedTier != null) ...[
-                    _buildTierComparison(),
+                    _buildTierComparison(l10n),
                     const SizedBox(height: 24),
                   ],
                   // Action buttons
-                  _buildActionButtons(context),
+                  _buildActionButtons(context, l10n),
                 ],
               ),
             ),
@@ -115,7 +117,7 @@ class LimitReachedDialog extends StatelessWidget {
     );
   }
 
-  Widget _buildHeader() {
+  Widget _buildHeader(AppLocalizations l10n) {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(24),
@@ -146,9 +148,9 @@ class LimitReachedDialog extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          const Text(
-            'Limit Reached',
-            style: TextStyle(
+          Text(
+            l10n.limitReachedTitle,
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -156,7 +158,7 @@ class LimitReachedDialog extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            _getLimitTypeTitle(),
+            _getLimitTypeTitle(l10n),
             style: TextStyle(
               color: Colors.white.withValues(alpha: 0.9),
               fontSize: 14,
@@ -167,14 +169,14 @@ class LimitReachedDialog extends StatelessWidget {
     );
   }
 
-  String _getLimitTypeTitle() {
+  String _getLimitTypeTitle(AppLocalizations l10n) {
     if (limitResult.limit == 0) {
-      return 'Feature not available on ${limitResult.currentTier.displayName}';
+      return l10n.featureNotAvailableOnTier(limitResult.currentTier.displayName);
     }
-    return 'Daily limit of ${limitResult.limit} reached';
+    return l10n.dailyLimitReached(limitResult.limit);
   }
 
-  Widget _buildUsageStats() {
+  Widget _buildUsageStats(AppLocalizations l10n) {
     if (limitResult.isUnlimited || limitResult.limit == 0) {
       return const SizedBox.shrink();
     }
@@ -193,7 +195,7 @@ class LimitReachedDialog extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Used today',
+                l10n.usedToday,
                 style: TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
@@ -224,7 +226,7 @@ class LimitReachedDialog extends StatelessWidget {
     );
   }
 
-  Widget _buildTierComparison() {
+  Widget _buildTierComparison(AppLocalizations l10n) {
     final suggestedTier = limitResult.suggestedTier!;
     final suggestedRules = MembershipRules.getDefaultsForTier(suggestedTier);
     final currentRules = MembershipRules.getDefaultsForTier(limitResult.currentTier);
@@ -256,7 +258,7 @@ class LimitReachedDialog extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Upgrade to ${suggestedTier.displayName}',
+                l10n.upgradeToTier(suggestedTier.displayName),
                 style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 16,
@@ -267,23 +269,23 @@ class LimitReachedDialog extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           _buildComparisonRow(
-            'Daily Swipes',
-            _formatLimit(currentRules.dailySwipeLimit),
-            _formatLimit(suggestedRules.dailySwipeLimit),
+            l10n.dailySwipes,
+            _formatLimit(currentRules.dailySwipeLimit, l10n),
+            _formatLimit(suggestedRules.dailySwipeLimit, l10n),
           ),
           _buildComparisonRow(
-            'Daily Messages',
-            _formatLimit(currentRules.dailyMessageLimit),
-            _formatLimit(suggestedRules.dailyMessageLimit),
+            l10n.dailyMessages,
+            _formatLimit(currentRules.dailyMessageLimit, l10n),
+            _formatLimit(suggestedRules.dailyMessageLimit, l10n),
           ),
           _buildComparisonRow(
-            'Super Likes',
-            _formatLimit(currentRules.dailySuperLikeLimit),
-            _formatLimit(suggestedRules.dailySuperLikeLimit),
+            l10n.superLikes,
+            _formatLimit(currentRules.dailySuperLikeLimit, l10n),
+            _formatLimit(suggestedRules.dailySuperLikeLimit, l10n),
           ),
           if (suggestedRules.canSendMedia && !currentRules.canSendMedia)
             _buildComparisonRow(
-              'Send Media',
+              l10n.sendMedia,
               'No',
               'Yes',
             ),
@@ -292,8 +294,8 @@ class LimitReachedDialog extends StatelessWidget {
     );
   }
 
-  String _formatLimit(int limit) {
-    return limit == -1 ? 'Unlimited' : limit.toString();
+  String _formatLimit(int limit, AppLocalizations l10n) {
+    return limit == -1 ? l10n.unlimited : limit.toString();
   }
 
   Widget _buildComparisonRow(String label, String current, String upgraded) {
@@ -345,7 +347,7 @@ class LimitReachedDialog extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButtons(BuildContext context) {
+  Widget _buildActionButtons(BuildContext context, AppLocalizations l10n) {
     return Column(
       children: [
         // Primary action - Upgrade
@@ -378,7 +380,7 @@ class LimitReachedDialog extends StatelessWidget {
                   const Icon(Icons.star, size: 20),
                   const SizedBox(width: 8),
                   Text(
-                    'Upgrade to ${limitResult.suggestedTier!.displayName}',
+                    l10n.upgradeToTier(limitResult.suggestedTier!.displayName),
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -415,14 +417,14 @@ class LimitReachedDialog extends StatelessWidget {
               );
               onBuyCoins?.call();
             },
-            child: const Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.monetization_on, size: 20),
-                SizedBox(width: 8),
+                const Icon(Icons.monetization_on, size: 20),
+                const SizedBox(width: 8),
                 Text(
-                  'Buy Coins',
-                  style: TextStyle(
+                  l10n.buyCoins,
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
@@ -440,9 +442,9 @@ class LimitReachedDialog extends StatelessWidget {
               const LimitDialogResult(action: LimitDialogAction.dismiss),
             );
           },
-          child: const Text(
-            'Maybe Later',
-            style: TextStyle(
+          child: Text(
+            l10n.maybeLater,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
             ),
@@ -480,7 +482,7 @@ class LimitWarningSnackBar {
             const SizedBox(width: 12),
             Expanded(
               child: Text(
-                '$remaining $limitType remaining today',
+                AppLocalizations.of(context)!.remainingToday(remaining, limitType, limitType),
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 14,
@@ -491,7 +493,7 @@ class LimitWarningSnackBar {
         ),
         action: onUpgrade != null
             ? SnackBarAction(
-                label: 'Upgrade',
+                label: AppLocalizations.of(context)!.upgrade,
                 textColor: AppColors.richGold,
                 onPressed: onUpgrade,
               )
@@ -614,7 +616,7 @@ class FeatureNotAvailableDialog extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      'Requires ${requiredTier.displayName}',
+                      AppLocalizations.of(context)!.requiresTier(requiredTier.displayName),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 14,
@@ -647,7 +649,7 @@ class FeatureNotAvailableDialog extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    'Upgrade to ${requiredTier.displayName}',
+                    AppLocalizations.of(context)!.upgradeToTier(requiredTier.displayName),
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -664,9 +666,9 @@ class FeatureNotAvailableDialog extends StatelessWidget {
                     const LimitDialogResult(action: LimitDialogAction.dismiss),
                   );
                 },
-                child: const Text(
-                  'Not Now',
-                  style: TextStyle(
+                child: Text(
+                  AppLocalizations.of(context)!.notNow,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 14,
                   ),

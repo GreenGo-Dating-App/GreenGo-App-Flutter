@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/language_learning_bloc.dart';
 import '../widgets/widgets.dart';
@@ -55,7 +56,7 @@ class _LessonListScreenState extends State<LessonListScreen>
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
         title: Text(
-          'Learn ${widget.languageName}',
+          AppLocalizations.of(context)!.learningLearnLanguage(widget.languageName),
           style: const TextStyle(
             color: AppColors.pureWhite,
             fontWeight: FontWeight.bold,
@@ -66,10 +67,10 @@ class _LessonListScreenState extends State<LessonListScreen>
           indicatorColor: AppColors.richGold,
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.pureWhite.withOpacity(0.6),
-          tabs: const [
-            Tab(text: 'All Lessons'),
-            Tab(text: 'My Progress'),
-            Tab(text: 'Purchased'),
+          tabs: [
+            Tab(text: AppLocalizations.of(context)!.learningTabAllLessons),
+            Tab(text: AppLocalizations.of(context)!.learningTabMyProgress),
+            Tab(text: AppLocalizations.of(context)!.learningTabPurchased),
           ],
         ),
         actions: [
@@ -125,7 +126,7 @@ class _LessonListScreenState extends State<LessonListScreen>
 
         final lessons = state.lessons;
         if (lessons.isEmpty) {
-          return _buildEmptyState('No lessons available yet');
+          return _buildEmptyState(AppLocalizations.of(context)!.learningNoLessonsAvailable);
         }
 
         // Group lessons by week
@@ -165,7 +166,7 @@ class _LessonListScreenState extends State<LessonListScreen>
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
-                  'Week $weekNumber',
+                  AppLocalizations.of(context)!.learningWeek(weekNumber),
                   style: const TextStyle(
                     color: AppColors.deepBlack,
                     fontWeight: FontWeight.bold,
@@ -319,9 +320,9 @@ class _LessonListScreenState extends State<LessonListScreen>
                         color: AppColors.successGreen.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: const Text(
-                        'FREE',
-                        style: TextStyle(
+                      child: Text(
+                        AppLocalizations.of(context)!.learningFree,
+                        style: const TextStyle(
                           color: AppColors.successGreen,
                           fontWeight: FontWeight.bold,
                           fontSize: 12,
@@ -447,9 +448,9 @@ class _LessonListScreenState extends State<LessonListScreen>
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildStatItem('Total XP', '2,450', Icons.star),
-              _buildStatItem('Lessons', '24', Icons.book),
-              _buildStatItem('Streak', '7', Icons.local_fire_department),
+              _buildStatItem(AppLocalizations.of(context)!.learningTotalXp, '2,450', Icons.star),
+              _buildStatItem(AppLocalizations.of(context)!.learningLessonsLabel, '24', Icons.book),
+              _buildStatItem(AppLocalizations.of(context)!.learningStreak, '7', Icons.local_fire_department),
             ],
           ),
           const SizedBox(height: 20),
@@ -460,9 +461,9 @@ class _LessonListScreenState extends State<LessonListScreen>
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Beginner Progress',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.learningBeginnerProgress,
+                    style: const TextStyle(
                       color: AppColors.deepBlack,
                       fontWeight: FontWeight.w600,
                     ),
@@ -521,9 +522,9 @@ class _LessonListScreenState extends State<LessonListScreen>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Weekly Goals',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningWeeklyGoals,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -538,11 +539,11 @@ class _LessonListScreenState extends State<LessonListScreen>
           ),
           child: Column(
             children: [
-              _buildGoalRow('Complete 5 lessons', 3, 5),
+              _buildGoalRow(AppLocalizations.of(context)!.learningGoalCompleteLessons, 3, 5),
               const SizedBox(height: 12),
-              _buildGoalRow('Earn 500 XP', 320, 500),
+              _buildGoalRow(AppLocalizations.of(context)!.learningGoalEarnXp, 320, 500),
               const SizedBox(height: 12),
-              _buildGoalRow('Practice 30 minutes', 18, 30),
+              _buildGoalRow(AppLocalizations.of(context)!.learningGoalPracticeMinutes, 18, 30),
             ],
           ),
         ),
@@ -593,9 +594,9 @@ class _LessonListScreenState extends State<LessonListScreen>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Category Progress',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningCategoryProgress,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -657,9 +658,9 @@ class _LessonListScreenState extends State<LessonListScreen>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Recent Milestones',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningRecentMilestones,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -771,7 +772,7 @@ class _LessonListScreenState extends State<LessonListScreen>
       builder: (context, state) {
         // Mock purchased lessons - in real app, filter from state
         return _buildEmptyState(
-          'Your purchased lessons will appear here',
+          AppLocalizations.of(context)!.learningPurchasedLessonsEmpty,
           icon: Icons.shopping_bag_outlined,
         );
       },
@@ -821,9 +822,9 @@ class _LessonListScreenState extends State<LessonListScreen>
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Filter Lessons',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.learningFilterLessons,
+                style: const TextStyle(
                   color: AppColors.pureWhite,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -832,9 +833,9 @@ class _LessonListScreenState extends State<LessonListScreen>
               const SizedBox(height: 20),
 
               // Level filter
-              const Text(
-                'Level',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.learningLevel,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -845,7 +846,7 @@ class _LessonListScreenState extends State<LessonListScreen>
                 spacing: 8,
                 children: [
                   _buildFilterChip(
-                    'All Levels',
+                    AppLocalizations.of(context)!.learningAllLevels,
                     _selectedLevel == null,
                     () => setSheetState(() => _selectedLevel = null),
                   ),
@@ -861,9 +862,9 @@ class _LessonListScreenState extends State<LessonListScreen>
               const SizedBox(height: 16),
 
               // Category filter
-              const Text(
-                'Category',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.learningCategory,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -875,7 +876,7 @@ class _LessonListScreenState extends State<LessonListScreen>
                 runSpacing: 8,
                 children: [
                   _buildFilterChip(
-                    'All Categories',
+                    AppLocalizations.of(context)!.learningAllCategories,
                     _selectedCategory == null,
                     () => setSheetState(() => _selectedCategory = null),
                   ),
@@ -906,9 +907,9 @@ class _LessonListScreenState extends State<LessonListScreen>
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Apply Filters',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  child: Text(
+                    AppLocalizations.of(context)!.learningApplyFilters,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -1044,9 +1045,9 @@ class LessonDetailScreen extends StatelessWidget {
 
                   // Objectives
                   if (lesson.objectives.isNotEmpty) ...[
-                    const Text(
-                      'What you will learn',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.learningWhatYouWillLearn,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -1079,9 +1080,9 @@ class LessonDetailScreen extends StatelessWidget {
                   ],
 
                   // Sections
-                  const Text(
-                    'Lesson Content',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.learningLessonContent,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -1125,9 +1126,9 @@ class LessonDetailScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Start Lesson',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context)!.learningStartLesson,
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
@@ -1149,7 +1150,7 @@ class LessonDetailScreen extends StatelessWidget {
                       const Icon(Icons.monetization_on, size: 20),
                       const SizedBox(width: 8),
                       Text(
-                        'Unlock for ${lesson.coinPrice} Coins',
+                        AppLocalizations.of(context)!.learningUnlockForCoins(lesson.coinPrice),
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
@@ -1252,8 +1253,8 @@ class LessonDetailScreen extends StatelessWidget {
   void _startLesson(BuildContext context) {
     // Navigate to lesson player
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Starting lesson...'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.learningStartingLesson),
         backgroundColor: AppColors.successGreen,
       ),
     );
@@ -1264,12 +1265,12 @@ class LessonDetailScreen extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.charcoal,
-        title: const Text(
-          'Unlock Lesson',
-          style: TextStyle(color: AppColors.pureWhite),
+        title: Text(
+          AppLocalizations.of(context)!.learningUnlockLesson,
+          style: const TextStyle(color: AppColors.pureWhite),
         ),
         content: Text(
-          'Spend ${lesson.coinPrice} coins to unlock this lesson?',
+          AppLocalizations.of(context)!.learningSpendCoinsToUnlock(lesson.coinPrice),
           style: TextStyle(color: AppColors.pureWhite.withOpacity(0.7)),
         ),
         actions: [
@@ -1291,7 +1292,7 @@ class LessonDetailScreen extends StatelessWidget {
               backgroundColor: AppColors.richGold,
               foregroundColor: AppColors.deepBlack,
             ),
-            child: const Text('Unlock'),
+            child: Text(AppLocalizations.of(context)!.learningUnlock),
           ),
         ],
       ),

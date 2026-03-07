@@ -12,6 +12,7 @@ class GameRound extends Equatable {
   final DateTime startedAt;
   final int durationSeconds;
   final String? winnerId;
+  final List<String> clues;
 
   const GameRound({
     required this.roundNumber,
@@ -22,6 +23,7 @@ class GameRound extends Equatable {
     required this.startedAt,
     this.durationSeconds = 15,
     this.winnerId,
+    this.clues = const [],
   });
 
   /// Check if a player has already answered
@@ -52,6 +54,7 @@ class GameRound extends Equatable {
     DateTime? startedAt,
     int? durationSeconds,
     String? winnerId,
+    List<String>? clues,
   }) {
     return GameRound(
       roundNumber: roundNumber ?? this.roundNumber,
@@ -62,6 +65,7 @@ class GameRound extends Equatable {
       startedAt: startedAt ?? this.startedAt,
       durationSeconds: durationSeconds ?? this.durationSeconds,
       winnerId: winnerId ?? this.winnerId,
+      clues: clues ?? this.clues,
     );
   }
 
@@ -75,6 +79,7 @@ class GameRound extends Equatable {
         startedAt,
         durationSeconds,
         winnerId,
+        clues,
       ];
 }
 

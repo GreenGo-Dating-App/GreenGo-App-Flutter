@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../gamification/domain/entities/achievement.dart';
@@ -60,14 +61,15 @@ class _GamificationManagementScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Gamification',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminGamification,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         bottom: TabBar(
@@ -76,11 +78,11 @@ class _GamificationManagementScreenState
           indicatorColor: AppColors.richGold,
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.textSecondary,
-          tabs: const [
-            Tab(icon: Icon(Icons.emoji_events), text: 'Achievements'),
-            Tab(icon: Icon(Icons.today), text: 'Challenges'),
-            Tab(icon: Icon(Icons.local_fire_department), text: 'Streaks'),
-            Tab(icon: Icon(Icons.celebration), text: 'Events'),
+          tabs: [
+            Tab(icon: const Icon(Icons.emoji_events), text: l10n.adminAchievements),
+            Tab(icon: const Icon(Icons.today), text: l10n.adminChallenges),
+            Tab(icon: const Icon(Icons.local_fire_department), text: l10n.adminStreaks),
+            Tab(icon: const Icon(Icons.celebration), text: l10n.adminEvents),
           ],
         ),
       ),
@@ -133,7 +135,7 @@ class _AchievementsTab extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '${achievements.length} achievements',
+                    AppLocalizations.of(context)!.adminAchievementCount(achievements.length),
                     style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 12,
@@ -168,9 +170,9 @@ class _AchievementsTab extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Edit Achievement',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminEditAchievement,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: SingleChildScrollView(
           child: Column(
@@ -178,20 +180,20 @@ class _AchievementsTab extends StatelessWidget {
             children: [
               _buildTextField(
                 controller: nameController,
-                label: 'Name',
+                label: AppLocalizations.of(context)!.adminName,
                 icon: Icons.title,
               ),
               const SizedBox(height: AppDimensions.paddingM),
               _buildTextField(
                 controller: descController,
-                label: 'Description',
+                label: AppLocalizations.of(context)!.adminDescription,
                 icon: Icons.description,
                 maxLines: 2,
               ),
               const SizedBox(height: AppDimensions.paddingM),
               _buildTextField(
                 controller: countController,
-                label: 'Required Count',
+                label: AppLocalizations.of(context)!.adminRequiredCount,
                 icon: Icons.numbers,
                 keyboardType: TextInputType.number,
               ),
@@ -201,7 +203,7 @@ class _AchievementsTab extends StatelessWidget {
                   Expanded(
                     child: _buildTextField(
                       controller: rewardController,
-                      label: 'Reward Amount',
+                      label: AppLocalizations.of(context)!.adminRewardAmount,
                       icon: Icons.card_giftcard,
                       keyboardType: TextInputType.number,
                     ),
@@ -238,8 +240,8 @@ class _AchievementsTab extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Achievement updated'),
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.adminAchievementUpdated),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -380,7 +382,7 @@ class _AchievementCard extends StatelessWidget {
                 const Icon(Icons.flag, color: AppColors.textTertiary, size: 14),
                 const SizedBox(width: 4),
                 Text(
-                  'Requires: ${achievement.requiredCount}',
+                  AppLocalizations.of(context)!.adminRequiresCount(achievement.requiredCount),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 11,
@@ -427,15 +429,15 @@ class _ChallengesTab extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 14),
               ),
               icon: const Icon(Icons.add),
-              label: const Text('Create New Challenge'),
+              label: Text(AppLocalizations.of(context)!.adminCreateNewChallenge),
             ),
           ),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Daily Challenges
-          const Text(
-            'Daily Challenges',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.adminDailyChallenges,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -446,8 +448,8 @@ class _ChallengesTab extends StatelessWidget {
           const SizedBox(height: AppDimensions.paddingL),
 
           // Weekly Challenges
-          const Text(
-            'Weekly Challenges',
+          Text(
+            AppLocalizations.of(context)!.adminWeeklyChallenges,
             style: TextStyle(
               color: AppColors.textPrimary,
               fontSize: 18,
@@ -466,13 +468,13 @@ class _ChallengesTab extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Create Challenge',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminCreateChallenge,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Challenge creation interface coming soon.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.adminChallengeCreationComingSoon,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -642,20 +644,20 @@ class _StreaksTab extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: AppDimensions.paddingM),
-                const Expanded(
+                Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Login Streak System',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.adminLoginStreakSystem,
+                        style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        'Configure milestone rewards for consecutive logins',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.adminConfigureMilestoneRewards,
+                        style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 12,
                         ),
@@ -669,9 +671,9 @@ class _StreaksTab extends StatelessWidget {
           const SizedBox(height: AppDimensions.paddingL),
 
           // Daily Login Rewards
-          const Text(
-            'Daily Login Rewards',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.adminDailyLoginRewards,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -682,9 +684,9 @@ class _StreaksTab extends StatelessWidget {
           const SizedBox(height: AppDimensions.paddingL),
 
           // Milestone Rewards
-          const Text(
-            'Streak Milestones',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.adminStreakMilestones,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -701,6 +703,7 @@ class _StreaksTab extends StatelessWidget {
 class _DailyRewardConfigCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
@@ -711,22 +714,22 @@ class _DailyRewardConfigCard extends StatelessWidget {
       child: Column(
         children: [
           _ConfigRow(
-            label: 'Base Coins',
+            label: l10n.adminBaseCoins,
             value: '5',
             icon: Icons.monetization_on,
             iconColor: AppColors.richGold,
           ),
           const Divider(color: AppColors.divider),
           _ConfigRow(
-            label: 'Base XP',
+            label: l10n.adminBaseXp,
             value: '5',
             icon: Icons.star,
             iconColor: Colors.purple,
           ),
           const Divider(color: AppColors.divider),
           _ConfigRow(
-            label: 'Streak Multiplier',
-            value: '1.5x per day',
+            label: l10n.adminStreakMultiplier,
+            value: l10n.adminStreakMultiplierValue,
             icon: Icons.trending_up,
             iconColor: AppColors.successGreen,
           ),
@@ -866,9 +869,9 @@ class _MilestoneCard extends StatelessWidget {
                   const SizedBox(width: 12),
                   const Icon(Icons.military_tech, color: Colors.orange, size: 14),
                   const SizedBox(width: 4),
-                  const Text(
-                    'Badge',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.adminBadge,
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 11,
                     ),
@@ -888,6 +891,7 @@ class _MilestoneCard extends StatelessWidget {
   }
 
   void _showEditMilestoneDialog(BuildContext context, StreakMilestone milestone) {
+    final l10n = AppLocalizations.of(context)!;
     final coinsController =
         TextEditingController(text: milestone.coinReward.toString());
     final xpController =
@@ -898,7 +902,7 @@ class _MilestoneCard extends StatelessWidget {
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          'Edit ${milestone.name}',
+          l10n.adminEditMilestone(milestone.name),
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
@@ -910,7 +914,7 @@ class _MilestoneCard extends StatelessWidget {
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                labelText: 'Coin Reward',
+                labelText: l10n.adminCoinReward,
                 labelStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.monetization_on,
@@ -928,7 +932,7 @@ class _MilestoneCard extends StatelessWidget {
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                labelText: 'XP Reward',
+                labelText: l10n.adminXpReward,
                 labelStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(Icons.star, color: Colors.purple),
                 border: OutlineInputBorder(
@@ -947,8 +951,8 @@ class _MilestoneCard extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Milestone updated'),
+                SnackBar(
+                  content: Text(l10n.adminMilestoneUpdated),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -993,16 +997,16 @@ class _EventsTab extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 14),
               ),
               icon: const Icon(Icons.add),
-              label: const Text('Create Seasonal Event'),
+              label: Text(AppLocalizations.of(context)!.adminCreateSeasonalEvent),
             ),
           ),
           const SizedBox(height: AppDimensions.paddingL),
 
           // Active event highlight
           if (activeEvent != null) ...[
-            const Text(
-              'Active Event',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.adminActiveEvent,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -1014,9 +1018,9 @@ class _EventsTab extends StatelessWidget {
           ],
 
           // All events
-          const Text(
-            'Scheduled Events',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.adminScheduledEvents,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -1037,13 +1041,13 @@ class _EventsTab extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Create Event',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminCreateEvent,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Event creation interface coming soon.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.adminEventCreationComingSoon,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -1126,8 +1130,8 @@ class _EventCard extends StatelessWidget {
                                 color: AppColors.successGreen,
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              child: const Text(
-                                'ACTIVE',
+                              child: Text(
+                                AppLocalizations.of(context)!.adminActive,
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 10,
@@ -1179,7 +1183,7 @@ class _EventCard extends StatelessWidget {
                         color: AppColors.textTertiary, size: 16),
                     const SizedBox(width: 8),
                     Text(
-                      '${event.challenges.length} challenges',
+                      AppLocalizations.of(context)!.adminChallengeCount(event.challenges.length),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12,

@@ -44,6 +44,11 @@ class LanguageGamesBloc extends Bloc<LanguageGamesEvent, LanguageGamesState> {
     on<SendGameInvite>(_onSendGameInvite);
     on<RespondToGameInvite>(_onRespondToGameInvite);
     on<ReportWord>(_onReportWord);
+    on<WordBombTimeout>(_onWordBombTimeout);
+    on<VocabularyChainTimeout>(_onVocabularyChainTimeout);
+    on<SnapTimeout>(_onSnapTimeout);
+    on<TapplesTimeout>(_onTapplesTimeout);
+    on<SubmitClue>(_onSubmitClue);
   }
 
   final LanguageGamesRepository repository;
@@ -563,6 +568,143 @@ class LanguageGamesBloc extends Bloc<LanguageGamesEvent, LanguageGamesState> {
     );
   }
 
+  /// Word Bomb timeout — remove a life from the timed-out player, then advance.
+  Future<void> _onWordBombTimeout(
+    WordBombTimeout event,
+    Emitter<LanguageGamesState> emit,
+  ) async {
+    debugPrint(
+        '[LanguageGamesBloc] WordBombTimeout: room=${event.roomId} user=${event.userId}');
+
+    // Remove a life first
+    final lifeResult = await repository.removeLife(
+      roomId: event.roomId,
+      userId: event.userId,
+    );
+
+    lifeResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] removeLife failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint('[LanguageGamesBloc] Life removed for ${event.userId}');
+      },
+    );
+
+    // Then advance the turn
+    final turnResult = await repository.advanceTurn(roomId: event.roomId);
+
+    turnResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] advanceTurn after timeout failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint(
+            '[LanguageGamesBloc] Turn advanced after timeout -- awaiting stream update');
+      },
+    );
+  }
+
+  /// Vocabulary Chain timeout — remove a life from the timed-out player, then advance.
+  Future<void> _onVocabularyChainTimeout(
+    VocabularyChainTimeout event,
+    Emitter<LanguageGamesState> emit,
+  ) async {
+    debugPrint(
+        '[LanguageGamesBloc] VocabularyChainTimeout: room=${event.roomId} user=${event.userId}');
+
+    // Remove a life first
+    final lifeResult = await repository.removeLife(
+      roomId: event.roomId,
+      userId: event.userId,
+    );
+
+    lifeResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] removeLife failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint('[LanguageGamesBloc] Life removed for ${event.userId}');
+      },
+    );
+
+    // Then advance the turn
+    final turnResult = await repository.advanceTurn(roomId: event.roomId);
+
+    turnResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] advanceTurn after chain timeout failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint(
+            '[LanguageGamesBloc] Turn advanced after chain timeout -- awaiting stream update');
+      },
+    );
+  }
+
+  /// Language Snaps timeout — just advance the turn (no life loss).
+  Future<void> _onSnapTimeout(
+    SnapTimeout event,
+    Emitter<LanguageGamesState> emit,
+  ) async {
+    debugPrint(
+        '[LanguageGamesBloc] SnapTimeout: room=${event.roomId}');
+
+    final turnResult = await repository.advanceTurn(roomId: event.roomId);
+
+    turnResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] advanceTurn after snap timeout failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint(
+            '[LanguageGamesBloc] Turn advanced after snap timeout -- awaiting stream update');
+      },
+    );
+  }
+
+  /// Language Tapples timeout — remove a life from timed-out player, then advance.
+  Future<void> _onTapplesTimeout(
+    TapplesTimeout event,
+    Emitter<LanguageGamesState> emit,
+  ) async {
+    debugPrint(
+        '[LanguageGamesBloc] TapplesTimeout: room=${event.roomId} user=${event.userId}');
+
+    final lifeResult = await repository.removeLife(
+      roomId: event.roomId,
+      userId: event.userId,
+    );
+
+    lifeResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] removeLife failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint('[LanguageGamesBloc] Life removed for ${event.userId}');
+      },
+    );
+
+    final turnResult = await repository.advanceTurn(roomId: event.roomId);
+
+    turnResult.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] advanceTurn after tapples timeout failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint(
+            '[LanguageGamesBloc] Turn advanced after tapples timeout -- awaiting stream update');
+      },
+    );
+  }
+
   /// End the game and calculate final results.
   Future<void> _onEndGame(
     EndGame event,
@@ -708,6 +850,29 @@ class LanguageGamesBloc extends Bloc<LanguageGamesEvent, LanguageGamesState> {
       },
       onError: (error) {
         debugPrint('[LanguageGamesBloc] Chat stream error: $error');
+      },
+    );
+  }
+
+  /// Submit a clue for Picture Guess (describer only).
+  Future<void> _onSubmitClue(
+    SubmitClue event,
+    Emitter<LanguageGamesState> emit,
+  ) async {
+    debugPrint('[LanguageGamesBloc] Submitting clue in room ${event.roomId}');
+
+    final result = await repository.submitClue(
+      roomId: event.roomId,
+      clue: event.clue,
+    );
+
+    result.fold(
+      (failure) {
+        debugPrint(
+            '[LanguageGamesBloc] Submit clue failed: ${failure.message}');
+      },
+      (_) {
+        debugPrint('[LanguageGamesBloc] Clue submitted');
       },
     );
   }

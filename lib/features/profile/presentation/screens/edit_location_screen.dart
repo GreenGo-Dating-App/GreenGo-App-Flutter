@@ -11,6 +11,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditLocationScreen extends StatefulWidget {
   final Profile profile;
@@ -116,7 +117,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to get location: ${e.toString()}'),
+            content: Text(AppLocalizations.of(context)!.profileLocationFailed(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -135,8 +136,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           _selectedLanguages.add(language);
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Maximum 3 languages allowed'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context)!.profileMaxLanguagesAllowed),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -150,8 +151,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
 
     if (_selectedLocation == null || _selectedLanguages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please set location and select at least one language'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.profileSetLocationAndLanguage),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -206,9 +207,9 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
-        title: const Text(
-          'Edit Location & Languages',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.profileEditLocation,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
           if (_isSaving)
@@ -227,7 +228,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             TextButton(
               onPressed: isValid ? _saveChanges : null,
               child: Text(
-                'Save',
+                AppLocalizations.of(context)!.save,
                 style: TextStyle(
                   color: isValid ? AppColors.richGold : AppColors.textTertiary,
                   fontSize: 16,
@@ -243,9 +244,9 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Location Section
-            const Text(
-              'Location',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileLocationSectionTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -314,8 +315,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                             )
                           : const Icon(Icons.my_location),
                       label: Text(_isLoadingLocation
-                          ? 'Getting Location...'
-                          : 'Update Current Location'),
+                          ? AppLocalizations.of(context)!.profileGettingLocation
+                          : AppLocalizations.of(context)!.profileUpdateCurrentLocation),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.richGold,
                         foregroundColor: AppColors.deepBlack,
@@ -330,9 +331,9 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             const SizedBox(height: 32),
 
             // Languages Section
-            const Text(
-              'Languages',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileLanguagesSectionTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -340,7 +341,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '${_selectedLanguages.length}/3 languages selected',
+              AppLocalizations.of(context)!.profileLanguagesSelectedCount(_selectedLanguages.length),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,

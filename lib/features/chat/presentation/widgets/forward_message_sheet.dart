@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
@@ -145,7 +146,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         });
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load conversations: $e'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadConversations}: $e'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -202,7 +203,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'Message forwarded to ${_selectedMatchIds.length} conversation${_selectedMatchIds.length > 1 ? 's' : ''}',
+              AppLocalizations.of(context)!.chatMessageForwarded(_selectedMatchIds.length),
             ),
             backgroundColor: AppColors.successGreen,
           ),
@@ -215,7 +216,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         });
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to forward message: $e'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToForwardMessage}: $e'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -225,6 +226,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         // Header
@@ -254,10 +256,10 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
                     icon: const Icon(Icons.close, color: AppColors.textSecondary),
                     onPressed: () => Navigator.of(context).pop(),
                   ),
-                  const Expanded(
+                  Expanded(
                     child: Text(
-                      'Forward Message',
-                      style: TextStyle(
+                      l10n.chatForwardMessage,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -279,7 +281,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
                             ),
                           )
                         : Text(
-                            'Send (${_selectedMatchIds.length})',
+                            l10n.chatSendCount(_selectedMatchIds.length),
                             style: TextStyle(
                               color: _selectedMatchIds.isNotEmpty
                                   ? AppColors.richGold
@@ -335,7 +337,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
             controller: _searchController,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              hintText: 'Search conversations...',
+              hintText: l10n.chatSearchConversationsHint,
               hintStyle: const TextStyle(color: AppColors.textTertiary),
               prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
               filled: true,
@@ -369,8 +371,8 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
                           const SizedBox(height: 16),
                           Text(
                             _searchController.text.isEmpty
-                                ? 'No conversations to forward to'
-                                : 'No matching conversations',
+                                ? l10n.chatNoConversationsToForward
+                                : l10n.chatNoMatchingConversations,
                             style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 16,

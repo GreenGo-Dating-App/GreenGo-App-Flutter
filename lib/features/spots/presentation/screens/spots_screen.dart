@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -59,9 +60,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Cultural Spots',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.spotsCulturalSpots,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -108,9 +109,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
                           size: 48,
                         ),
                         const SizedBox(height: 16),
-                        const Text(
-                          'Could not load spots',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.spotsCouldNotLoad,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 16,
                           ),
@@ -174,9 +175,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
         backgroundColor: AppColors.richGold,
         foregroundColor: AppColors.deepBlack,
         icon: const Icon(Icons.add_location_alt),
-        label: const Text(
-          'Add a Spot',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        label: Text(
+          AppLocalizations.of(context)!.spotsAddSpot,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
     );
@@ -191,7 +192,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
         child: Row(
           children: [
             // "All" chip
-            _buildFilterChip(null, 'All'),
+            _buildFilterChip(null, AppLocalizations.of(context)!.spotsAll),
             const SizedBox(width: 8),
             ...SpotCategory.values.map((cat) {
               return Padding(
@@ -244,8 +245,8 @@ class _SpotsScreenState extends State<SpotsScreen> {
               size: 72,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'No spots found',
+            Text(
+              AppLocalizations.of(context)!.spotsNoSpotsFound,
               style: TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
@@ -270,6 +271,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
   }
 
   void _showCreateSpotDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final nameController = TextEditingController();
     final descriptionController = TextEditingController();
     SpotCategory selectedCategory = SpotCategory.restaurant;
@@ -308,9 +310,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    const Text(
-                      'Add a New Spot',
-                      style: TextStyle(
+                    Text(
+                      l10n.spotsAddNewSpot,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -322,7 +324,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
                       controller: nameController,
                       style: const TextStyle(color: AppColors.textPrimary),
                       decoration: InputDecoration(
-                        labelText: 'Spot Name',
+                        labelText: l10n.spotsNameLabel,
                         labelStyle:
                             const TextStyle(color: AppColors.textTertiary),
                         filled: true,
@@ -345,7 +347,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
                       style: const TextStyle(color: AppColors.textPrimary),
                       maxLines: 3,
                       decoration: InputDecoration(
-                        labelText: 'Description',
+                        labelText: l10n.spotsDescriptionLabel,
                         labelStyle:
                             const TextStyle(color: AppColors.textTertiary),
                         filled: true,
@@ -363,9 +365,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
                     ),
                     const SizedBox(height: 16),
                     // Category selector
-                    const Text(
-                      'Category',
-                      style: TextStyle(
+                    Text(
+                      l10n.spotsCategory,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 14,
                       ),
@@ -440,9 +442,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text(
-                          'Create Spot',
-                          style: TextStyle(
+                        child: Text(
+                          l10n.spotsCreateSpot,
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),

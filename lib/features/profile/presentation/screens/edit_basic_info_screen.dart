@@ -8,6 +8,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditBasicInfoScreen extends StatefulWidget {
   final Profile profile;
@@ -113,9 +114,9 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
-        title: const Text(
-          'Edit Basic Info',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.profileEditBasicInfo,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
           if (_isSaving)
@@ -134,7 +135,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
             TextButton(
               onPressed: _isValid ? _saveChanges : null,
               child: Text(
-                'Save',
+                AppLocalizations.of(context)!.save,
                 style: TextStyle(
                   color: _isValid ? AppColors.richGold : AppColors.textTertiary,
                   fontSize: 16,
@@ -150,9 +151,9 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Display Name
-            const Text(
-              'Display Name',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileDisplayName,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -166,7 +167,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                 fontSize: 16,
               ),
               decoration: InputDecoration(
-                hintText: 'Enter your name',
+                hintText: AppLocalizations.of(context)!.profileEnterNameHint,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 filled: true,
                 fillColor: AppColors.backgroundInput,
@@ -189,9 +190,9 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
             const SizedBox(height: 24),
 
             // Date of Birth (Read-only)
-            const Text(
-              'Date of Birth',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileDateOfBirth,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -226,7 +227,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          'Age ${widget.profile.age} - Cannot be changed for verification',
+                          AppLocalizations.of(context)!.profileAgeCannotChange(widget.profile.age),
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 12,
@@ -242,9 +243,9 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
             const SizedBox(height: 24),
 
             // Gender
-            const Text(
-              'Gender',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileGender,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -306,18 +307,18 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
             const SizedBox(height: 24),
 
             // Sexual Orientation
-            const Text(
-              'Sexual Orientation',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileSexualOrientation,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
               ),
             ),
             const SizedBox(height: 4),
-            const Text(
-              'This is private and not shown on your profile card',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileOrientationPrivate,
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
               ),
@@ -395,8 +396,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      'Your date of birth cannot be changed for age verification purposes. '
-                      'Your exact age is visible to matches.',
+                      AppLocalizations.of(context)!.profileDobInfo,
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12,

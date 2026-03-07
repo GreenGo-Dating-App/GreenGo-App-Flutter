@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -26,6 +27,17 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
     {'label': 'Non-binary', 'icon': Icons.transgender},
     {'label': 'Other', 'icon': Icons.more_horiz},
   ];
+
+  String _localizedGender(BuildContext context, String label) {
+    final l10n = AppLocalizations.of(context);
+    switch (label) {
+      case 'Male': return l10n?.onboardingGenderMale ?? label;
+      case 'Female': return l10n?.onboardingGenderFemale ?? label;
+      case 'Non-binary': return l10n?.onboardingGenderNonBinary ?? label;
+      case 'Other': return l10n?.onboardingGenderOther ?? label;
+      default: return label;
+    }
+  }
 
   @override
   void dispose() {
@@ -77,7 +89,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Please complete all fields'),
+          content: Text(AppLocalizations.of(context)?.onboardingCompleteAllFields ?? 'Please complete all fields'),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -95,8 +107,8 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
         }
 
         return LuxuryOnboardingLayout(
-          title: "Let's get started",
-          subtitle: 'Tell us a bit about yourself',
+          title: AppLocalizations.of(context)?.onboardingLetsGetStarted ?? "Let's get started",
+          subtitle: AppLocalizations.of(context)?.onboardingTellUsAboutYourself ?? 'Tell us a bit about yourself',
           showBackButton: true,
           onBack: () => Navigator.of(context).pop(),
           progressBar: OnboardingProgressBar(
@@ -113,15 +125,15 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                   // Name Field
                   LuxuryTextField(
                     controller: _nameController,
-                    label: 'Display Name',
-                    hint: 'How should we call you?',
+                    label: AppLocalizations.of(context)?.onboardingDisplayName ?? 'Display Name',
+                    hint: AppLocalizations.of(context)?.onboardingDisplayNameHint ?? 'How should we call you?',
                     prefixIcon: Icons.person_outline,
                     validator: (value) {
                       if (value == null || value.trim().isEmpty) {
-                        return 'Please enter your name';
+                        return AppLocalizations.of(context)?.onboardingEnterYourName ?? 'Please enter your name';
                       }
                       if (value.trim().length < 2) {
-                        return 'Name must be at least 2 characters';
+                        return AppLocalizations.of(context)?.onboardingNameMinLength ?? 'Name must be at least 2 characters';
                       }
                       return null;
                     },
@@ -136,7 +148,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
 
                   // Gender Selection
                   Text(
-                    'I identify as',
+                    AppLocalizations.of(context)?.onboardingIdentifyAs ?? 'I identify as',
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.9),
                       fontSize: 16,
@@ -152,7 +164,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                     children: _genders.map((gender) {
                       final isSelected = _selectedGender == gender['label'];
                       return LuxuryChip(
-                        label: gender['label'],
+                        label: _localizedGender(context, gender['label']),
                         icon: gender['icon'],
                         isSelected: isSelected,
                         onTap: () {
@@ -168,7 +180,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
 
                   // Continue Button
                   LuxuryButton(
-                    text: 'Continue',
+                    text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
                     onPressed: _handleContinue,
                   ),
 
@@ -219,7 +231,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Date of Birth',
+                    AppLocalizations.of(context)?.onboardingDateOfBirth ?? 'Date of Birth',
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.5),
                       fontSize: 12,

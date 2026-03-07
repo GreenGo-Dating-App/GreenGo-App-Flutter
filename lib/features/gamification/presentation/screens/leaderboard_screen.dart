@@ -7,6 +7,7 @@ import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/repositories/gamification_repository.dart';
 import '../bloc/gamification_bloc.dart';
@@ -51,6 +52,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
@@ -90,14 +92,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
-              tabs: const [
+              tabs: [
                 Tab(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.public, size: 18),
-                      SizedBox(width: 8),
-                      Text('Global'),
+                      const Icon(Icons.public, size: 18),
+                      const SizedBox(width: 8),
+                      Text(l10n.gamificationGlobal),
                     ],
                   ),
                 ),
@@ -105,9 +107,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.location_on, size: 18),
-                      SizedBox(width: 8),
-                      Text('Regional'),
+                      const Icon(Icons.location_on, size: 18),
+                      const SizedBox(width: 8),
+                      Text(l10n.gamificationRegional),
                     ],
                   ),
                 ),
@@ -146,7 +148,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                         ),
                         const SizedBox(height: 16),
                         Text(
-                          'Loading rankings...',
+                          l10n.gamificationLoadingRankings,
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.6),
                             fontSize: 14,
@@ -218,7 +220,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                         const Text('🏆', style: TextStyle(fontSize: 48)),
                         const SizedBox(height: 16),
                         Text(
-                          'No leaderboard data',
+                          l10n.gamificationNoLeaderboard,
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.7),
                             fontSize: 16,
@@ -260,6 +262,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
   }
 
   Widget _buildUserRankCard(data) {
+    final l10n = AppLocalizations.of(context)!;
     return ClipRRect(
       borderRadius: BorderRadius.circular(24),
       child: BackdropFilter(
@@ -319,9 +322,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const Text(
-                        'RANK',
-                        style: TextStyle(
+                      Text(
+                        l10n.gamificationRank,
+                        style: const TextStyle(
                           color: Colors.black54,
                           fontSize: 9,
                           fontWeight: FontWeight.w600,
@@ -339,9 +342,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                   children: [
                     Row(
                       children: [
-                        const Text(
-                          'Your Position',
-                          style: TextStyle(
+                        Text(
+                          l10n.gamificationYourPosition,
+                          style: const TextStyle(
                             color: Colors.white70,
                             fontSize: 14,
                           ),
@@ -382,7 +385,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Level ${data.userEntry!.level}',
+                      l10n.gamificationLevel(data.userEntry!.level),
                       style: TextStyle(
                         color: Colors.white.withOpacity(0.6),
                         fontSize: 13,
@@ -691,7 +694,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'Level ${entry.level}',
+                  AppLocalizations.of(context)!.gamificationLevel(entry.level),
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.white.withOpacity(0.5),

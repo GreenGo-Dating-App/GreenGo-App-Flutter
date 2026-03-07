@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/translation_service.dart';
 
@@ -40,7 +41,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
   int _currentIndex = 0;
   String _currentLanguage = '';
   bool _hasError = false;
-  String _errorMessage = '';
+  String _failedLanguageName = '';
 
   @override
   void initState() {
@@ -66,7 +67,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
       if (!success) {
         setState(() {
           _hasError = true;
-          _errorMessage = 'Failed to download ${TranslationService.getLanguageName(lang)} model';
+          _failedLanguageName = TranslationService.getLanguageName(lang);
         });
         // Continue with other languages even if one fails
       }
@@ -86,10 +87,12 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return AlertDialog(
       backgroundColor: AppColors.backgroundCard,
       title: Text(
-        _isDownloading ? 'Downloading Translation Data' : 'Enable Auto-Translation',
+        _isDownloading ? l10n.downloadingTranslationData : l10n.enableAutoTranslation,
         style: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 18,
@@ -106,9 +109,9 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
               color: AppColors.richGold,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'To enable automatic message translation, we need to download language data for offline use.',
-              style: TextStyle(
+            Text(
+              l10n.translationDownloadExplanation,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
               ),
@@ -116,8 +119,8 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Languages to download:',
-              style: TextStyle(
+              l10n.languagesToDownloadLabel,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
@@ -142,7 +145,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
             )),
             const SizedBox(height: 16),
             Text(
-              'This is a one-time download of approximately ${widget.languagesToDownload.length * 30}MB.',
+              l10n.oneTimeDownloadSize(widget.languagesToDownload.length * 30),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -157,7 +160,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Downloading ${TranslationService.getLanguageName(_currentLanguage)}...',
+              l10n.downloadingLanguage(TranslationService.getLanguageName(_currentLanguage)),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 14,
@@ -165,7 +168,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
             ),
             const SizedBox(height: 8),
             Text(
-              '${_currentIndex + 1} of ${widget.languagesToDownload.length}',
+              l10n.downloadProgress(_currentIndex + 1, widget.languagesToDownload.length),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
@@ -181,7 +184,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
             ),
             const SizedBox(height: 16),
             Text(
-              _errorMessage,
+              l10n.failedToDownloadModel(_failedLanguageName),
               style: const TextStyle(
                 color: AppColors.errorRed,
                 fontSize: 14,
@@ -196,7 +199,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
             child: Text(
-              _hasError ? 'Close' : 'Cancel',
+              _hasError ? l10n.close : l10n.cancel,
               style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
@@ -207,7 +210,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
               ),
-              child: const Text('Download'),
+              child: Text(l10n.download),
             ),
           if (_hasError)
             ElevatedButton(
@@ -216,7 +219,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
               ),
-              child: const Text('Retry'),
+              child: Text(l10n.retry),
             ),
         ],
       ],

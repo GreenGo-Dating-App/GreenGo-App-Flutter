@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:lottie/lottie.dart';
 import '../../domain/entities/virtual_gift.dart';
 
@@ -229,7 +230,7 @@ class GiftDetailCard extends StatelessWidget {
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  '${gift.price} coins',
+                  AppLocalizations.of(context)!.giftPriceCoins(gift.price),
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: canAfford
@@ -244,7 +245,7 @@ class GiftDetailCard extends StatelessWidget {
           if (!canAfford && userCoins != null) ...[
             const SizedBox(height: 8),
             Text(
-              'You need ${gift.price - userCoins!} more coins',
+              AppLocalizations.of(context)!.giftYouNeedMoreCoins(gift.price - userCoins!),
               style: theme.textTheme.bodySmall?.copyWith(
                 color: colorScheme.error,
               ),
@@ -265,7 +266,7 @@ class GiftDetailCard extends StatelessWidget {
                       child: CircularProgressIndicator(strokeWidth: 2),
                     )
                   : const Icon(Icons.card_giftcard),
-              label: Text(isLoading ? 'Sending...' : 'Send Gift'),
+              label: Text(isLoading ? AppLocalizations.of(context)!.giftSending : AppLocalizations.of(context)!.giftSendGift),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
@@ -372,7 +373,7 @@ class ReceivedGiftCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'From ${sentGift.senderName}',
+                    AppLocalizations.of(context)!.giftFromSender(sentGift.senderName),
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: colorScheme.onSurface.withOpacity(0.7),
                     ),

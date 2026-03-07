@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/video_coin.dart';
 import '../../domain/entities/coin_gift.dart';
@@ -73,14 +74,15 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Shop',
-          style: TextStyle(
+        title: Text(
+          l10n.coinsShopLabel,
+          style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -106,9 +108,9 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
                 labelColor: AppColors.richGold,
                 unselectedLabelColor: AppColors.textTertiary,
                 tabs: [
-                  const Tab(text: 'Coins'),
-                  if (_showVideoCoins) const Tab(text: 'Video Coins'),
-                  const Tab(text: 'Gifts'),
+                  Tab(text: l10n.coinsTabCoins),
+                  if (_showVideoCoins) Tab(text: l10n.coinsTabVideoCoins),
+                  Tab(text: l10n.coinsTabGifts),
                 ],
               ),
             ],
@@ -138,6 +140,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
   }
 
   Widget _buildBalanceHeader() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
@@ -147,7 +150,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
           _BalanceChip(
             icon: Icons.monetization_on,
             iconColor: AppColors.richGold,
-            label: 'Coins',
+            label: l10n.coinsTabCoins,
             value: _coinBalance.toString(),
           ),
           // Video coin balance - only show if video calls enabled
@@ -155,7 +158,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
             _BalanceChip(
               icon: Icons.videocam,
               iconColor: Colors.blueAccent,
-              label: 'Video Min',
+              label: l10n.coinsVideoMin,
               value: _videoCoinBalance.toString(),
             ),
         ],
@@ -174,26 +177,27 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
 
   Future<void> _handleCoinPurchase(CoinPackage package) async {
     // Show purchase confirmation
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text('Confirm Purchase', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.coinsConfirmPurchase, style: const TextStyle(color: Colors.white)),
         content: Text(
-          'Purchase ${package.totalCoins} coins for ${package.displayPrice}?',
+          l10n.coinsPurchaseCoinsQuestion(package.totalCoins, package.displayPrice),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(l10n.coinsCancelLabel),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,
             ),
             onPressed: () => Navigator.pop(context, true),
-            child: const Text('Purchase', style: TextStyle(color: Colors.black)),
+            child: Text(l10n.coinsPurchaseLabel, style: const TextStyle(color: Colors.black)),
           ),
         ],
       ),
@@ -239,7 +243,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Successfully purchased ${package.totalCoins} coins!'),
+            content: Text(AppLocalizations.of(context)!.coinsPurchasedCoins(package.totalCoins)),
             backgroundColor: Colors.green,
           ),
         );
@@ -248,7 +252,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Purchase failed: $e'),
+            content: Text('${AppLocalizations.of(context)!.coinsPurchaseFailed}: $e'),
             backgroundColor: Colors.red,
           ),
         );
@@ -257,26 +261,27 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
   }
 
   Future<void> _handleVideoCoinPurchase(VideoCoinPackage package) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text('Confirm Purchase', style: TextStyle(color: Colors.white)),
+        title: Text(l10n.coinsConfirmPurchase, style: const TextStyle(color: Colors.white)),
         content: Text(
-          'Purchase ${package.totalMinutes} video minutes for ${package.displayPrice}?',
+          l10n.coinsPurchaseMinutesQuestion(package.totalMinutes, package.displayPrice),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(l10n.coinsCancelLabel),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blueAccent,
             ),
             onPressed: () => Navigator.pop(context, true),
-            child: const Text('Purchase', style: TextStyle(color: Colors.white)),
+            child: Text(l10n.coinsPurchaseLabel, style: const TextStyle(color: Colors.white)),
           ),
         ],
       ),
@@ -318,7 +323,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Successfully purchased ${package.totalMinutes} video minutes!'),
+            content: Text(AppLocalizations.of(context)!.coinsPurchasedMinutes(package.totalMinutes)),
             backgroundColor: Colors.green,
           ),
         );
@@ -327,7 +332,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Purchase failed: $e'),
+            content: Text('${AppLocalizations.of(context)!.coinsPurchaseFailed}: $e'),
             backgroundColor: Colors.red,
           ),
         );
@@ -367,8 +372,8 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
   Future<void> _handleSendGift(String receiverId, int amount, String? message) async {
     if (_coinBalance < amount) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Insufficient coins'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.coinsInsufficientCoins),
           backgroundColor: Colors.red,
         ),
       );
@@ -404,7 +409,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Gift of $amount coins sent!'),
+            content: Text(AppLocalizations.of(context)!.coinsGiftSent(amount)),
             backgroundColor: Colors.green,
           ),
         );
@@ -413,7 +418,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to send gift: $e'),
+            content: Text('${AppLocalizations.of(context)!.coinsGiftSendFailed}: $e'),
             backgroundColor: Colors.red,
           ),
         );
@@ -508,9 +513,9 @@ class _CoinsTab extends StatelessWidget {
             children: [
               const Icon(Icons.monetization_on, size: 48, color: Colors.white),
               const SizedBox(height: 8),
-              const Text(
-                'GreenGoCoins',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.coinsGreenGoCoins,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -518,7 +523,7 @@ class _CoinsTab extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Unlock premium features',
+                AppLocalizations.of(context)!.coinsUnlockPremium,
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.white.withValues(alpha: 0.8),
@@ -580,9 +585,9 @@ class _CoinPackageCard extends StatelessWidget {
                       bottomLeft: Radius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'POPULAR',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context)!.coinsPopular,
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
@@ -629,9 +634,9 @@ class _CoinPackageCard extends StatelessWidget {
                                   color: Colors.green,
                                 ),
                               ),
-                            const Text(
-                              ' Coins',
-                              style: TextStyle(
+                            Text(
+                              ' ${AppLocalizations.of(context)!.coinsLabel}',
+                              style: const TextStyle(
                                 fontSize: 14,
                                 color: AppColors.textSecondary,
                               ),
@@ -704,9 +709,9 @@ class _VideoCoinsTab extends StatelessWidget {
             children: [
               const Icon(Icons.videocam, size: 48, color: Colors.white),
               const SizedBox(height: 8),
-              const Text(
-                'Video Minutes',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.coinsVideoMinutes,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -714,7 +719,7 @@ class _VideoCoinsTab extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Video call with your matches',
+                AppLocalizations.of(context)!.coinsVideoCallMatches,
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.white.withValues(alpha: 0.8),
@@ -732,13 +737,13 @@ class _VideoCoinsTab extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             border: Border.all(color: Colors.blueAccent.withValues(alpha: 0.5)),
           ),
-          child: const Row(
+          child: Row(
             children: [
-              Icon(Icons.info_outline, color: Colors.blueAccent, size: 20),
-              SizedBox(width: 8),
+              const Icon(Icons.info_outline, color: Colors.blueAccent, size: 20),
+              const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  '1 Video Coin = 1 minute of video call',
+                  AppLocalizations.of(context)!.coinsVideoCoinInfo,
                   style: TextStyle(
                     color: Colors.blueAccent,
                     fontSize: 12,
@@ -847,9 +852,9 @@ class _VideoCoinPackageCard extends StatelessWidget {
                                   color: Colors.green,
                                 ),
                               ),
-                            const Text(
-                              ' mins',
-                              style: TextStyle(
+                            Text(
+                              ' ${AppLocalizations.of(context)!.coinsMins}',
+                              style: const TextStyle(
                                 fontSize: 14,
                                 color: AppColors.textSecondary,
                               ),
@@ -946,9 +951,9 @@ class _GiftsTabState extends State<_GiftsTab> {
       children: [
         // Pending gifts to receive
         if (_pendingGifts.isNotEmpty) ...[
-          const Text(
-            'Pending Gifts',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.coinsPendingGifts,
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -978,9 +983,9 @@ class _GiftsTabState extends State<_GiftsTab> {
             children: [
               const Icon(Icons.card_giftcard, size: 48, color: Colors.white),
               const SizedBox(height: 8),
-              const Text(
-                'Send Gift',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.coinsSendGift,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -988,7 +993,7 @@ class _GiftsTabState extends State<_GiftsTab> {
               ),
               const SizedBox(height: 4),
               Text(
-                'Share coins with someone special',
+                AppLocalizations.of(context)!.coinsShareCoins,
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.white.withValues(alpha: 0.8),
@@ -1000,9 +1005,9 @@ class _GiftsTabState extends State<_GiftsTab> {
         const SizedBox(height: 16),
 
         // Amount selection
-        const Text(
-          'Select Amount',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.coinsSelectAmount,
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
             color: Colors.white,
@@ -1036,7 +1041,7 @@ class _GiftsTabState extends State<_GiftsTab> {
           controller: _receiverController,
           style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
-            labelText: 'Receiver User ID',
+            labelText: AppLocalizations.of(context)!.coinsReceiverIdLabel,
             labelStyle: const TextStyle(color: AppColors.textSecondary),
             filled: true,
             fillColor: AppColors.backgroundCard,
@@ -1055,7 +1060,7 @@ class _GiftsTabState extends State<_GiftsTab> {
           style: const TextStyle(color: Colors.white),
           maxLines: 2,
           decoration: InputDecoration(
-            labelText: 'Message (optional)',
+            labelText: AppLocalizations.of(context)!.coinsMessageLabel,
             labelStyle: const TextStyle(color: AppColors.textSecondary),
             filled: true,
             fillColor: AppColors.backgroundCard,
@@ -1084,7 +1089,7 @@ class _GiftsTabState extends State<_GiftsTab> {
                     final receiverId = _receiverController.text.trim();
                     if (receiverId.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Enter receiver ID')),
+                        SnackBar(content: Text(AppLocalizations.of(context)!.coinsEnterReceiverId)),
                       );
                       return;
                     }
@@ -1098,7 +1103,7 @@ class _GiftsTabState extends State<_GiftsTab> {
                   }
                 : null,
             child: Text(
-              'Send $_selectedAmount Coins',
+              AppLocalizations.of(context)!.coinsSendCoinsAmount(_selectedAmount),
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -1136,7 +1141,7 @@ class _GiftsTabState extends State<_GiftsTab> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Accepted ${gift['amount']} coins!'),
+            content: Text(AppLocalizations.of(context)!.coinsGiftAccepted(gift['amount'])),
             backgroundColor: Colors.green,
           ),
         );
@@ -1170,8 +1175,8 @@ class _GiftsTabState extends State<_GiftsTab> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Gift declined'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.coinsGiftDeclined),
             backgroundColor: Colors.orange,
           ),
         );
@@ -1221,7 +1226,7 @@ class _PendingGiftCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '${gift['amount']} Coins',
+                    AppLocalizations.of(context)!.coinsAmountCoins(gift['amount']),
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -1266,7 +1271,7 @@ class _TransactionHistoryScreen extends StatelessWidget {
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
-        title: const Text('Transaction History'),
+        title: Text(AppLocalizations.of(context)!.coinsTransactionHistory),
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
@@ -1281,10 +1286,10 @@ class _TransactionHistoryScreen extends StatelessWidget {
           }
 
           if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-            return const Center(
+            return Center(
               child: Text(
-                'No transactions yet',
-                style: TextStyle(color: AppColors.textSecondary),
+                AppLocalizations.of(context)!.coinsNoTransactionsYet,
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
             );
           }
@@ -1310,8 +1315,8 @@ class _TransactionHistoryScreen extends StatelessWidget {
                   ),
                   title: Text(
                     data['type'] == 'coins'
-                        ? '${data['amount']} Coins'
-                        : '${data['amount']} Video Minutes',
+                        ? AppLocalizations.of(context)!.coinsAmountCoins(data['amount'])
+                        : AppLocalizations.of(context)!.coinsAmountVideoMinutes(data['amount']),
                     style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

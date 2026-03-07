@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../domain/entities/profile.dart' as profile_entity;
@@ -75,8 +76,8 @@ class _Step5LocationLanguageScreenState
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
         _showLocationError(
-          'Location Services Disabled',
-          'Please enable location services in your device settings to use this feature.',
+          AppLocalizations.of(context)?.locationServicesDisabled ?? 'Location Services Disabled',
+          AppLocalizations.of(context)?.locationServicesDisabledMessage ?? 'Please enable location services in your device settings to use this feature.',
         );
         return;
       }
@@ -87,8 +88,8 @@ class _Step5LocationLanguageScreenState
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
           _showLocationError(
-            'Permission Denied',
-            'Location permission is required to detect your current location. Please grant permission to continue.',
+            AppLocalizations.of(context)?.locationPermissionDenied ?? 'Permission Denied',
+            AppLocalizations.of(context)?.locationPermissionDeniedMessage ?? 'Location permission is required to detect your current location. Please grant permission to continue.',
           );
           return;
         }
@@ -96,8 +97,8 @@ class _Step5LocationLanguageScreenState
 
       if (permission == LocationPermission.deniedForever) {
         _showLocationError(
-          'Permission Permanently Denied',
-          'Location permission has been permanently denied. Please enable it in your device settings to use this feature.',
+          AppLocalizations.of(context)?.locationPermissionPermanentlyDenied ?? 'Permission Permanently Denied',
+          AppLocalizations.of(context)?.locationPermissionPermanentlyDeniedMessage ?? 'Location permission has been permanently denied. Please enable it in your device settings to use this feature.',
         );
         return;
       }
@@ -136,8 +137,8 @@ class _Step5LocationLanguageScreenState
         });
       } else {
         _showLocationError(
-          'Location Not Found',
-          'We could not determine your address. Please try again or set your location manually later.',
+          AppLocalizations.of(context)?.locationNotFound ?? 'Location Not Found',
+          AppLocalizations.of(context)?.locationNotFoundMessage ?? 'We could not determine your address. Please try again or set your location manually later.',
         );
       }
     } on PlatformException catch (e) {
@@ -150,11 +151,11 @@ class _Step5LocationLanguageScreenState
       } else {
         message = 'Unable to get your location. Please check your device settings or try again later.';
       }
-      _showLocationError('Location Error', message);
+      _showLocationError(AppLocalizations.of(context)?.locationError ?? 'Location Error', message);
     } on TimeoutException {
       _showLocationError(
-        'Request Timeout',
-        'Getting your location took too long. Please check your connection and try again.',
+        AppLocalizations.of(context)?.locationRequestTimeout ?? 'Request Timeout',
+        AppLocalizations.of(context)?.locationRequestTimeoutMessage ?? 'Getting your location took too long. Please check your connection and try again.',
       );
     } catch (e) {
       // Handle any other errors gracefully
@@ -170,10 +171,10 @@ class _Step5LocationLanguageScreenState
       } else if (errorMessage.contains('timeout')) {
         userMessage = 'Getting your location took too long. Please try again.';
       } else {
-        userMessage = 'Unable to get your location at the moment. You can set it manually later in settings.';
+        userMessage = AppLocalizations.of(context)?.locationUnavailable ?? 'Unable to get your location at the moment. You can set it manually later in settings.';
       }
 
-      _showLocationError('Location Unavailable', userMessage);
+      _showLocationError(AppLocalizations.of(context)?.locationUnavailableTitle ?? 'Location Unavailable', userMessage);
     }
   }
 
@@ -204,8 +205,8 @@ class _Step5LocationLanguageScreenState
           _selectedLanguages.add(language);
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('You can select up to 3 languages'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context)?.onboardingMaxLanguages ?? 'You can select up to 3 languages'),
               backgroundColor: AppColors.warningAmber,
             ),
           );
@@ -218,8 +219,8 @@ class _Step5LocationLanguageScreenState
     // Only require language selection - location is optional
     if (_selectedLanguages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please select at least one language'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)?.onboardingMinLanguage ?? 'Please select at least one language'),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -274,8 +275,8 @@ class _Step5LocationLanguageScreenState
         }
 
         return LuxuryOnboardingLayout(
-          title: 'Where are you?',
-          subtitle: 'Set your preferred languages and location (optional)',
+          title: AppLocalizations.of(context)?.onboardingWhereAreYou ?? 'Where are you?',
+          subtitle: AppLocalizations.of(context)?.onboardingWhereAreYouSubtitle ?? 'Set your preferred languages and location (optional)',
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -293,8 +294,8 @@ class _Step5LocationLanguageScreenState
                     Row(
                       children: [
                         Text(
-                          'Location',
-                          style: TextStyle(
+                          AppLocalizations.of(context)?.onboardingLocation ?? 'Location',
+                          style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
@@ -314,7 +315,7 @@ class _Step5LocationLanguageScreenState
                             ),
                           ),
                           child: Text(
-                            'Optional',
+                            AppLocalizations.of(context)?.onboardingOptional ?? 'Optional',
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.5),
                               fontSize: 11,
@@ -326,7 +327,7 @@ class _Step5LocationLanguageScreenState
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'You can set your location later in settings',
+                      AppLocalizations.of(context)?.onboardingLocationLater ?? 'You can set your location later in settings',
                       style: TextStyle(
                         color: Colors.white.withOpacity(0.5),
                         fontSize: 13,
@@ -359,7 +360,7 @@ class _Step5LocationLanguageScreenState
                           Expanded(
                             child: Text(
                               _selectedLocation?.displayAddress ??
-                                  'No location selected',
+                                  (AppLocalizations.of(context)?.onboardingNoLocationSelected ?? 'No location selected'),
                               style: TextStyle(
                                 color: _selectedLocation != null
                                     ? Colors.white
@@ -376,7 +377,7 @@ class _Step5LocationLanguageScreenState
 
                     // Get Location Button
                     LuxuryButton(
-                      text: 'Use Current Location',
+                      text: AppLocalizations.of(context)?.onboardingUseCurrentLocation ?? 'Use Current Location',
                       onPressed: _isLoadingLocation ? null : _getCurrentLocation,
                       isLoading: _isLoadingLocation,
                       isSecondary: true,
@@ -398,8 +399,8 @@ class _Step5LocationLanguageScreenState
 
                     // Languages Section
                     Text(
-                      'Languages',
-                      style: TextStyle(
+                      AppLocalizations.of(context)?.onboardingLanguages ?? 'Languages',
+                      style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
                         fontSize: 16,
@@ -416,7 +417,7 @@ class _Step5LocationLanguageScreenState
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        '${_selectedLanguages.length}/3 selected',
+                        AppLocalizations.of(context)?.onboardingLanguagesSelected(_selectedLanguages.length) ?? '${_selectedLanguages.length}/3 selected',
                         style: TextStyle(
                           color: _selectedLanguages.isNotEmpty
                               ? AppColors.richGold
@@ -455,7 +456,7 @@ class _Step5LocationLanguageScreenState
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 16, 0, 24),
                 child: LuxuryButton(
-                  text: 'Continue',
+                  text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
                   onPressed: _handleContinue,
                 ),
               ),

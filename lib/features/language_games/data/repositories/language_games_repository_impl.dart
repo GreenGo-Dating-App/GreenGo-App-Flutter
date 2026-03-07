@@ -186,6 +186,25 @@ class LanguageGamesRepositoryImpl implements LanguageGamesRepository {
   }
 
   // ---------------------------------------------------------------
+  //  SUBMIT CLUE
+  // ---------------------------------------------------------------
+
+  @override
+  Future<Either<Failure, void>> submitClue({
+    required String roomId,
+    required String clue,
+  }) async {
+    try {
+      await remoteDataSource.submitClue(roomId: roomId, clue: clue);
+      return const Right(null);
+    } catch (e) {
+      debugPrint('[LanguageGamesRepo] submitClue ERROR: $e');
+      return Left(
+          ServerFailure('Failed to submit clue: ${e.toString()}'));
+    }
+  }
+
+  // ---------------------------------------------------------------
   //  STREAMS (pass-through)
   // ---------------------------------------------------------------
 

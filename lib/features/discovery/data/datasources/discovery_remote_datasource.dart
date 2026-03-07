@@ -813,7 +813,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId1,
         type: 'new_match',
-        title: "It's a Match!",
+        title: "Let's Exchange!",
         message: "You matched with $displayName2. Start chatting now.",
         data: {
           'matchId': matchId,
@@ -828,7 +828,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId2,
         type: 'new_match',
-        title: "It's a Match!",
+        title: "Let's Exchange!",
         message: "You matched with $displayName1. Start chatting now.",
         data: {
           'matchId': matchId,

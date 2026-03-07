@@ -109,8 +109,8 @@ class EditProfileScreen extends StatelessWidget {
             if (state is ProfileDeleted) {
               // Account deleted — sign out to trigger AuthWrapper navigation
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Account deleted successfully.'),
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.profileAccountDeletedSuccess),
                   backgroundColor: Colors.green,
                 ),
               );
@@ -121,7 +121,7 @@ class EditProfileScreen extends StatelessWidget {
               final remaining = state.expiry.difference(DateTime.now());
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Profile boosted for ${remaining.inMinutes} minutes!'),
+                  content: Text(AppLocalizations.of(context)!.profileBoostedForMinutes(remaining.inMinutes)),
                   backgroundColor: const Color(0xFFDAA520),
                 ),
               );
@@ -129,10 +129,10 @@ class EditProfileScreen extends StatelessWidget {
             if (state is ProfileBoostInsufficientCoins) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Not enough coins! Need ${state.required}, have ${state.available}'),
+                  content: Text(AppLocalizations.of(context)!.profileNotEnoughCoins(state.required, state.available)),
                   backgroundColor: AppColors.errorRed,
                   action: SnackBarAction(
-                    label: 'Get Coins',
+                    label: AppLocalizations.of(context)!.profileGetCoins,
                     textColor: Colors.white,
                     onPressed: () {
                       if (userId != null) {
@@ -240,7 +240,7 @@ class EditProfileScreen extends StatelessWidget {
                   // Photos Section
                   EditSectionCard(
                     title: AppLocalizations.of(context)!.photos,
-                    subtitle: '${activeProfile.photoUrls.length}/6 photos',
+                    subtitle: AppLocalizations.of(context)!.profilePhotosCount(activeProfile.photoUrls.length),
                     icon: Icons.photo_library,
                     onTap: () => _navigateToPhotoManagement(context, activeProfile),
                   ),
@@ -282,7 +282,7 @@ class EditProfileScreen extends StatelessWidget {
                   // Interests Section
                   EditSectionCard(
                     title: AppLocalizations.of(context)!.interests,
-                    subtitle: '${activeProfile.interests.length} interests',
+                    subtitle: AppLocalizations.of(context)!.profileInterestsCount(activeProfile.interests.length),
                     icon: Icons.favorite,
                     onTap: () => _navigateToEditInterests(context, activeProfile),
                   ),
@@ -348,9 +348,9 @@ class EditProfileScreen extends StatelessWidget {
                   const SizedBox(height: 16),
 
                   // Premium Features Section
-                  const Text(
-                    'Premium Features',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.profilePremiumFeatures,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -405,8 +405,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Coin Shop
                   EditSectionCard(
-                    title: 'Coin Shop',
-                    subtitle: 'Purchase coins and premium membership',
+                    title: AppLocalizations.of(context)!.profileCoinShop,
+                    subtitle: AppLocalizations.of(context)!.profileCoinShopSubtitle,
                     icon: Icons.monetization_on,
                     onTap: () => _navigateToCoinShop(context, activeProfile),
                   ),
@@ -414,8 +414,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Restart Discovery
                   EditSectionCard(
-                    title: 'Restart Discovery',
-                    subtitle: 'Reset all swipes and start fresh',
+                    title: AppLocalizations.of(context)!.profileRestartDiscovery,
+                    subtitle: AppLocalizations.of(context)!.profileRestartDiscoverySubtitle,
                     icon: Icons.refresh,
                     onTap: () => _showRestartDiscoveryDialog(context, activeProfile),
                   ),
@@ -423,8 +423,8 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Usage Stats
                   EditSectionCard(
-                    title: 'My Usage',
-                    subtitle: 'View your daily usage and tier limits',
+                    title: AppLocalizations.of(context)!.profileMyUsage,
+                    subtitle: AppLocalizations.of(context)!.profileMyUsageSubtitle,
                     icon: Icons.bar_chart,
                     onTap: () => _navigateToUsageStats(context, activeProfile),
                   ),
@@ -762,7 +762,7 @@ class EditProfileScreen extends StatelessWidget {
     if (profile.socialLinks!.linkedin != null) links.add('LinkedIn');
     if (profile.socialLinks!.x != null) links.add('X');
 
-    return '${links.length} profile${links.length == 1 ? '' : 's'} linked';
+    return AppLocalizations.of(context)!.profileLinkedCount(links.length);
   }
 
   Future<void> _navigateToEditSocialLinks(BuildContext context, Profile currentProfile) async {
@@ -908,9 +908,9 @@ class EditProfileScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'GreenGo Membership',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.profileGreengoMembership,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -918,7 +918,7 @@ class EditProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Valid till ${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}',
+                    AppLocalizations.of(context)!.profileMembershipValidTill('${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}'),
                     style: TextStyle(
                       color: isActive ? AppColors.textSecondary : AppColors.errorRed,
                       fontSize: 13,
@@ -934,7 +934,7 @@ class EditProfileScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                isExpired ? 'Expired' : 'Active',
+                isExpired ? AppLocalizations.of(context)!.profileMembershipExpired : AppLocalizations.of(context)!.profileMembershipActive,
                 style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.bold,
@@ -954,7 +954,7 @@ class EditProfileScreen extends StatelessWidget {
         userId: profile.userId,
       ),
       icon: const Icon(Icons.star_outline),
-      label: const Text('Get GreenGo Membership'),
+      label: Text(AppLocalizations.of(context)!.profileGetMembership),
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.richGold,
         side: const BorderSide(color: AppColors.richGold),
@@ -1096,19 +1096,17 @@ class EditProfileScreen extends StatelessWidget {
       builder: (dialogContext) => StatefulBuilder(
         builder: (context, setDialogState) => AlertDialog(
           backgroundColor: AppColors.backgroundCard,
-          title: const Text(
-            'Confirm Your Password',
-            style: TextStyle(color: AppColors.textPrimary),
+          title: Text(
+            AppLocalizations.of(context)!.profileConfirmYourPassword,
+            style: const TextStyle(color: AppColors.textPrimary),
           ),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'This action is permanent and cannot be undone. '
-                'All your data, matches, and messages will be deleted. '
-                'Please enter your password to confirm.',
-                style: TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
+              Text(
+                AppLocalizations.of(context)!.profileDeleteAccountWarning,
+                style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
               ),
               const SizedBox(height: 16),
               TextField(
@@ -1171,7 +1169,7 @@ class EditProfileScreen extends StatelessWidget {
                   if (user == null || user.email == null) {
                     setDialogState(() {
                       isLoading = false;
-                      errorText = 'Unable to verify account';
+                      errorText = AppLocalizations.of(context)!.profileUnableToVerifyAccount;
                     });
                     return;
                   }
@@ -1197,7 +1195,7 @@ class EditProfileScreen extends StatelessWidget {
                     if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
                       errorText = AppLocalizations.of(context)!.authErrorWrongPassword;
                     } else {
-                      errorText = e.message ?? 'Authentication failed';
+                      errorText = e.message ?? AppLocalizations.of(context)!.profileAuthenticationFailed;
                     }
                   });
                 } catch (e) {
@@ -1227,8 +1225,8 @@ class EditProfileScreen extends StatelessWidget {
   void _exportUserData(BuildContext context) {
     // TODO: Implement GDPR data export
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Exporting your data...'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.profileExportingData),
         backgroundColor: AppColors.richGold,
       ),
     );
@@ -1237,8 +1235,8 @@ class EditProfileScreen extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Data export sent to your email'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.profileDataExportSent),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -1299,13 +1297,13 @@ class EditProfileScreen extends StatelessWidget {
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Restart Discovery',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.profileRestartDiscoveryDialogTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'This will erase all your swipes (likes, nopes, super likes) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.profileRestartDiscoveryDialogContent,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
@@ -1317,9 +1315,9 @@ class EditProfileScreen extends StatelessWidget {
               Navigator.pop(dialogContext);
               _restartDiscovery(context, profile);
             },
-            child: const Text(
-              'Restart',
-              style: TextStyle(color: AppColors.richGold),
+            child: Text(
+              AppLocalizations.of(context)!.profileRestart,
+              style: const TextStyle(color: AppColors.richGold),
             ),
           ),
         ],
@@ -1369,8 +1367,8 @@ class EditProfileScreen extends StatelessWidget {
       if (context.mounted) {
         Navigator.pop(context); // Close loading
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Discovery restarted! You can now see all profiles again.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.profileDiscoveryRestarted),
             backgroundColor: AppColors.richGold,
           ),
         );
@@ -1382,7 +1380,7 @@ class EditProfileScreen extends StatelessWidget {
         Navigator.pop(context); // Close loading
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to restart discovery: $e'),
+            content: Text(AppLocalizations.of(context)!.profileFailedRestartDiscovery(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1415,7 +1413,7 @@ class EditProfileScreen extends StatelessWidget {
       final remaining = profile.boostExpiry!.difference(DateTime.now());
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Profile already boosted! ${remaining.inMinutes}m remaining'),
+          content: Text(AppLocalizations.of(context)!.profileAlreadyBoosted(remaining.inMinutes)),
           backgroundColor: const Color(0xFFDAA520),
         ),
       );
@@ -1430,20 +1428,20 @@ class EditProfileScreen extends StatelessWidget {
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.flash_on, color: Color(0xFFDAA520), size: 28),
-            SizedBox(width: 8),
-            Text('Boost Profile', style: TextStyle(color: Colors.white)),
+            const Icon(Icons.flash_on, color: Color(0xFFDAA520), size: 28),
+            const SizedBox(width: 8),
+            Text(AppLocalizations.of(context)!.profileBoostProfile, style: const TextStyle(color: Colors.white)),
           ],
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Your profile will appear at the top of discovery for 30 minutes!',
-              style: TextStyle(color: Colors.white70, fontSize: 14),
+            Text(
+              AppLocalizations.of(context)!.profileBoostDescription,
+              style: const TextStyle(color: Colors.white70, fontSize: 14),
             ),
             const SizedBox(height: 16),
             Container(
@@ -1458,7 +1456,7 @@ class EditProfileScreen extends StatelessWidget {
                   const Icon(Icons.monetization_on, color: AppColors.richGold, size: 24),
                   const SizedBox(width: 8),
                   Text(
-                    'Cost: $cost coins',
+                    AppLocalizations.of(context)!.profileBoostCost(cost),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -1473,7 +1471,7 @@ class EditProfileScreen extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Cancel', style: TextStyle(color: Colors.white54)),
+            child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: Colors.white54)),
           ),
           ElevatedButton(
             onPressed: () => Navigator.pop(ctx, true),
@@ -1482,7 +1480,7 @@ class EditProfileScreen extends StatelessWidget {
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             ),
-            child: const Text('Boost Now'),
+            child: Text(AppLocalizations.of(context)!.profileBoostNow),
           ),
         ],
       ),
@@ -1498,8 +1496,8 @@ class EditProfileScreen extends StatelessWidget {
     // Listen for result
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Activating boost...'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.profileActivatingBoost),
           backgroundColor: Color(0xFFDAA520),
           duration: Duration(seconds: 1),
         ),
@@ -1519,26 +1517,26 @@ class EditProfileScreen extends StatelessWidget {
         context: context,
         builder: (ctx) => AlertDialog(
           backgroundColor: AppColors.backgroundCard,
-          title: const Row(
+          title: Row(
             children: [
-              Icon(Icons.visibility_off, color: AppColors.richGold),
-              SizedBox(width: 8),
-              Text('Activate Incognito?', style: TextStyle(color: AppColors.textPrimary, fontSize: 18)),
+              const Icon(Icons.visibility_off, color: AppColors.richGold),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.profileActivateIncognito, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18)),
             ],
           ),
           content: Text(
-            'Incognito mode hides your profile from discovery for 24 hours.\n\nCost: $costText',
+            AppLocalizations.of(context)!.profileIncognitoDescription(costText),
             style: const TextStyle(color: AppColors.textSecondary),
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(false),
-              child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+              child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
             ),
             ElevatedButton(
               onPressed: () => Navigator.of(ctx).pop(true),
               style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-              child: const Text('Activate', style: TextStyle(color: Colors.white)),
+              child: Text(AppLocalizations.of(context)!.profileActivate, style: const TextStyle(color: Colors.white)),
             ),
           ],
         ),
@@ -1563,15 +1561,15 @@ class EditProfileScreen extends StatelessWidget {
               context: context,
               builder: (ctx) => AlertDialog(
                 backgroundColor: AppColors.backgroundCard,
-                title: const Text('Insufficient Coins', style: TextStyle(color: AppColors.textPrimary)),
+                title: Text(AppLocalizations.of(context)!.profileInsufficientCoins, style: const TextStyle(color: AppColors.textPrimary)),
                 content: Text(
-                  'Incognito mode costs ${CoinFeaturePrices.incognito} coins per day.',
+                  AppLocalizations.of(context)!.profileIncognitoCost(CoinFeaturePrices.incognito),
                   style: const TextStyle(color: AppColors.textSecondary),
                 ),
                 actions: [
                   TextButton(
                     onPressed: () => Navigator.of(ctx).pop(),
-                    child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+                    child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -1581,7 +1579,7 @@ class EditProfileScreen extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-                    child: const Text('Buy Coins', style: TextStyle(color: Colors.white)),
+                    child: Text(AppLocalizations.of(context)!.profileBuyCoins, style: const TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
@@ -1618,8 +1616,8 @@ class EditProfileScreen extends StatelessWidget {
         if (context.mounted) {
           context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Incognito mode activated for 24 hours!'),
+            SnackBar(
+              content: Text(AppLocalizations.of(context)!.profileIncognitoActivated),
               backgroundColor: AppColors.successGreen,
             ),
           );
@@ -1640,8 +1638,8 @@ class EditProfileScreen extends StatelessWidget {
       if (context.mounted) {
         context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Incognito mode deactivated.'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.profileIncognitoDeactivated),
             backgroundColor: AppColors.richGold,
           ),
         );
@@ -1660,26 +1658,26 @@ class EditProfileScreen extends StatelessWidget {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.flight, color: Color(0xFF1E88E5)),
-            SizedBox(width: 8),
-            Text('Activate Traveler Mode?', style: TextStyle(color: AppColors.textPrimary, fontSize: 18)),
+            const Icon(Icons.flight, color: Color(0xFF1E88E5)),
+            const SizedBox(width: 8),
+            Text(AppLocalizations.of(context)!.profileActivateTravelerMode, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18)),
           ],
         ),
         content: Text(
-          'Traveler mode lets you appear in a different city\'s discovery feed for 24 hours.\n\nCost: $costText',
+          AppLocalizations.of(context)!.profileTravelerDescription(costText),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+            child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(ctx).pop(true),
             style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF1E88E5)),
-            child: const Text('Continue', style: TextStyle(color: Colors.white)),
+            child: Text(AppLocalizations.of(context)!.profileContinue, style: const TextStyle(color: Colors.white)),
           ),
         ],
       ),
@@ -1704,15 +1702,15 @@ class EditProfileScreen extends StatelessWidget {
             context: context,
             builder: (ctx) => AlertDialog(
               backgroundColor: AppColors.backgroundCard,
-              title: const Text('Insufficient Coins', style: TextStyle(color: AppColors.textPrimary)),
+              title: Text(AppLocalizations.of(context)!.profileInsufficientCoins, style: const TextStyle(color: AppColors.textPrimary)),
               content: Text(
-                'Traveler mode costs ${CoinFeaturePrices.traveler} coins per day.',
+                AppLocalizations.of(context)!.profileTravelerCost(CoinFeaturePrices.traveler),
                 style: const TextStyle(color: AppColors.textSecondary),
               ),
               actions: [
                 TextButton(
                   onPressed: () => Navigator.of(ctx).pop(),
-                  child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+                  child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -1722,7 +1720,7 @@ class EditProfileScreen extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-                  child: const Text('Buy Coins', style: TextStyle(color: Colors.white)),
+                  child: Text(AppLocalizations.of(context)!.profileBuyCoins, style: const TextStyle(color: Colors.white)),
                 ),
               ],
             ),
@@ -1780,7 +1778,7 @@ class EditProfileScreen extends StatelessWidget {
       context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Traveler mode activated! Appearing in ${location.city} for 24 hours.'),
+          content: Text(AppLocalizations.of(context)!.profileTravelerActivated(location.city)),
           backgroundColor: const Color(0xFF1E88E5),
         ),
       );
@@ -1796,8 +1794,8 @@ class EditProfileScreen extends StatelessWidget {
     if (context.mounted) {
       context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Traveler mode deactivated. Back to your real location.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.profileTravelerDeactivated),
           backgroundColor: AppColors.richGold,
         ),
       );
@@ -1845,9 +1843,9 @@ class _TravelerToggleCard extends StatelessWidget {
           Icons.flight,
           color: isActive ? const Color(0xFF1E88E5) : AppColors.textTertiary,
         ),
-        title: const Text(
-          'Traveler Mode',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.profileTravelerMode,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,
           ),
@@ -1864,7 +1862,7 @@ class _TravelerToggleCard extends StatelessWidget {
         trailing: isActive
             ? TextButton(
                 onPressed: onDeactivate,
-                child: const Text('Stop', style: TextStyle(color: AppColors.errorRed, fontSize: 12)),
+                child: Text(AppLocalizations.of(context)!.profileStop, style: const TextStyle(color: AppColors.errorRed, fontSize: 12)),
               )
             : ElevatedButton(
                 onPressed: onActivate,
@@ -1873,7 +1871,7 @@ class _TravelerToggleCard extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   minimumSize: const Size(0, 32),
                 ),
-                child: const Text('Activate', style: TextStyle(color: Colors.white, fontSize: 12)),
+                child: Text(AppLocalizations.of(context)!.profileActivate, style: const TextStyle(color: Colors.white, fontSize: 12)),
               ),
       ),
     );
@@ -1961,7 +1959,7 @@ class _BoostProfileCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        isActive ? 'Profile Boosted!' : 'Boost Profile',
+                        isActive ? AppLocalizations.of(context)!.profileBoosted : AppLocalizations.of(context)!.profileBoostProfile,
                         style: TextStyle(
                           color: isActive ? AppColors.richGold : AppColors.textPrimary,
                           fontSize: 16,
@@ -1972,7 +1970,7 @@ class _BoostProfileCard extends StatelessWidget {
                       Text(
                         isActive
                             ? '${remaining.inMinutes}m remaining'
-                            : 'Be seen first for 30 minutes',
+                            : AppLocalizations.of(context)!.profileBoostSubtitle,
                         style: TextStyle(
                           color: isActive
                               ? AppColors.richGold.withOpacity(0.7)
@@ -1999,9 +1997,9 @@ class _BoostProfileCard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: const Text(
-                      'ACTIVE',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context)!.profileActiveLabel,
+                      style: const TextStyle(
                         color: Color(0xFF2A1F0E),
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
@@ -2040,9 +2038,9 @@ class _BoostProfileCard extends StatelessWidget {
                       children: [
                         const Icon(Icons.flash_on, color: Color(0xFF2A1F0E), size: 20),
                         const SizedBox(width: 8),
-                        const Text(
-                          'Boost Now',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.profileBoostNow,
+                          style: const TextStyle(
                             color: Color(0xFF2A1F0E),
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
@@ -2117,9 +2115,9 @@ class _IncognitoToggleCard extends StatelessWidget {
           Icons.visibility_off,
           color: isActive ? AppColors.richGold : AppColors.textTertiary,
         ),
-        title: const Text(
-          'Incognito Mode',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.profileIncognitoMode,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,
           ),
@@ -2129,7 +2127,7 @@ class _IncognitoToggleCard extends StatelessWidget {
               ? '${remaining.inHours}h ${remaining.inMinutes % 60}m remaining'
               : (profile.membershipTier == MembershipTier.platinum ||
                       profile.membershipTier == MembershipTier.test)
-                  ? 'Free with Platinum - Hidden from discovery'
+                  ? AppLocalizations.of(context)!.profileIncognitoFreePlatinum
                   : '${CoinFeaturePrices.incognito} coins/day - Hidden from discovery',
           style: TextStyle(
             color: isActive ? AppColors.richGold : AppColors.textTertiary,

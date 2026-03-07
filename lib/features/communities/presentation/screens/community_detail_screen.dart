@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -90,8 +91,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             setState(() => _isMember = true);
             _loadCommunityDetail();
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Joined community!'),
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.communitiesJoined),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -143,10 +144,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             );
           }
 
-          return const Center(
+          return Center(
             child: Text(
-              'Unable to load community',
-              style: TextStyle(color: AppColors.textTertiary),
+              AppLocalizations.of(context)!.communitiesUnableToLoad,
+              style: const TextStyle(color: AppColors.textTertiary),
             ),
           );
         },
@@ -176,7 +177,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             overflow: TextOverflow.ellipsis,
           ),
           Text(
-            '${widget.community.memberCount} members',
+            AppLocalizations.of(context)!.communitiesMembersCount(widget.community.memberCount),
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 12,
@@ -205,26 +206,26 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             }
           },
           itemBuilder: (context) => [
-            const PopupMenuItem(
+            PopupMenuItem(
               value: 'info',
               child: Row(
                 children: [
-                  Icon(Icons.info_outline, color: AppColors.textSecondary, size: 20),
-                  SizedBox(width: 12),
-                  Text('Community Info',
-                      style: TextStyle(color: AppColors.textPrimary)),
+                  const Icon(Icons.info_outline, color: AppColors.textSecondary, size: 20),
+                  const SizedBox(width: 12),
+                  Text(AppLocalizations.of(context)!.communitiesCommunityInfo,
+                      style: const TextStyle(color: AppColors.textPrimary)),
                 ],
               ),
             ),
             if (_isMember)
-              const PopupMenuItem(
+              PopupMenuItem(
                 value: 'leave',
                 child: Row(
                   children: [
-                    Icon(Icons.exit_to_app, color: AppColors.errorRed, size: 20),
-                    SizedBox(width: 12),
-                    Text('Leave Community',
-                        style: TextStyle(color: AppColors.errorRed)),
+                    const Icon(Icons.exit_to_app, color: AppColors.errorRed, size: 20),
+                    const SizedBox(width: 12),
+                    Text(AppLocalizations.of(context)!.communitiesLeaveCommunity,
+                        style: const TextStyle(color: AppColors.errorRed)),
                   ],
                 ),
               ),
@@ -274,18 +275,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             color: AppColors.textTertiary.withValues(alpha: 0.5),
           ),
           const SizedBox(height: AppDimensions.paddingM),
-          const Text(
-            'No messages yet',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.communitiesNoMessagesYet,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Be the first to say something!',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.communitiesBeFirstToSay,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
             ),
@@ -391,26 +392,26 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
         child: Row(
           children: [
             _buildTypeChip(
-              label: 'Text',
+              label: AppLocalizations.of(context)!.communitiesTextLabel,
               icon: Icons.chat_bubble_outline,
               type: CommunityMessageType.text,
             ),
             const SizedBox(width: 6),
             _buildTypeChip(
-              label: 'Language Tip',
+              label: AppLocalizations.of(context)!.communitiesLanguageTipLabel,
               icon: Icons.lightbulb_outline,
               type: CommunityMessageType.languageTip,
             ),
             const SizedBox(width: 6),
             _buildTypeChip(
-              label: 'Cultural Fact',
+              label: AppLocalizations.of(context)!.communitiesCulturalFactLabel,
               icon: Icons.auto_awesome,
               type: CommunityMessageType.culturalFact,
             ),
             if (canPostCityTip) ...[
               const SizedBox(width: 6),
               _buildTypeChip(
-                label: 'City Tip',
+                label: AppLocalizations.of(context)!.communitiesCityTipLabel,
                 icon: Icons.location_on,
                 type: CommunityMessageType.cityTip,
               ),
@@ -490,9 +491,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                     BorderRadius.circular(AppDimensions.radiusFull),
               ),
             ),
-            child: const Text(
-              'Join Community',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.communitiesJoinCommunity,
+              style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
               ),
@@ -504,17 +505,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   }
 
   String _getHintText() {
+    final l10n = AppLocalizations.of(context)!;
     switch (_selectedMessageType) {
       case CommunityMessageType.text:
-        return 'Type a message...';
+        return l10n.communitiesTypeAMessage;
       case CommunityMessageType.languageTip:
-        return 'Share a language tip...';
+        return l10n.communitiesShareLanguageTip;
       case CommunityMessageType.culturalFact:
-        return 'Share a cultural fact...';
+        return l10n.communitiesShareCulturalFact;
       case CommunityMessageType.cityTip:
-        return 'Share a city tip...';
+        return l10n.communitiesShareCityTip;
       default:
-        return 'Type a message...';
+        return l10n.communitiesTypeAMessage;
     }
   }
 
@@ -564,20 +566,20 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Leave Community',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(this.context)!.communitiesLeaveTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to leave "${widget.community.name}"?',
+          AppLocalizations.of(this.context)!.communitiesLeaveConfirm(widget.community.name),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textTertiary),
+            child: Text(
+              AppLocalizations.of(this.context)!.communitiesCancelLabel,
+              style: const TextStyle(color: AppColors.textTertiary),
             ),
           ),
           TextButton(
@@ -593,9 +595,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                     );
               }
             },
-            child: const Text(
-              'Leave',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(this.context)!.communitiesLeaveLabel,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],
@@ -642,9 +644,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                   ),
                   child: Row(
                     children: [
-                      const Text(
-                        'Members',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(this.context)!.communitiesMembersTitle,
+                        style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -748,9 +750,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                   const SizedBox(height: 16),
 
                   // Description
-                  const Text(
-                    'Description',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(this.context)!.communitiesDescription,
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
@@ -769,9 +771,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
 
                   // Languages
                   if (widget.community.languages.isNotEmpty) ...[
-                    const Text(
-                      'Languages',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(this.context)!.communitiesLanguages,
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
@@ -805,9 +807,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
 
                   // Tags
                   if (widget.community.tags.isNotEmpty) ...[
-                    const Text(
-                      'Tags',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(this.context)!.communitiesTags,
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
@@ -841,9 +843,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                   // City / Country
                   if (widget.community.city != null ||
                       widget.community.country != null) ...[
-                    const Text(
-                      'Location',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(this.context)!.communitiesLocation,
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
@@ -874,9 +876,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                   ],
 
                   // Stats
-                  const Text(
-                    'Stats',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(this.context)!.communitiesStats,
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
@@ -888,13 +890,13 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                       _buildStatItem(
                         Icons.people_outline,
                         '${widget.community.memberCount}',
-                        'Members',
+                        AppLocalizations.of(this.context)!.communitiesMembersStatLabel,
                       ),
                       const SizedBox(width: 24),
                       _buildStatItem(
                         Icons.calendar_today_outlined,
                         _formatDate(widget.community.createdAt),
-                        'Created',
+                        AppLocalizations.of(this.context)!.communitiesCreatedStatLabel,
                       ),
                     ],
                   ),
@@ -902,7 +904,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
 
                   // Created by
                   Text(
-                    'Created by ${widget.community.createdByName}',
+                    AppLocalizations.of(this.context)!.communitiesCreatedBy(widget.community.createdByName),
                     style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 12,

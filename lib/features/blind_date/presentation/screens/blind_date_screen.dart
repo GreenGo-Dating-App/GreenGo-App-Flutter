@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/blind_date.dart';
 import '../bloc/blind_date_bloc.dart';
 import '../bloc/blind_date_event.dart';
@@ -40,14 +41,15 @@ class _BlindDateScreenState extends State<BlindDateScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Blind Date'),
+        title: Text(l10n.blindDateTitle),
         bottom: TabBar(
           controller: _tabController,
-          tabs: const [
-            Tab(icon: Icon(Icons.explore), text: 'Discover'),
-            Tab(icon: Icon(Icons.favorite), text: 'Matches'),
+          tabs: [
+            Tab(icon: const Icon(Icons.explore), text: l10n.blindDateTabDiscover),
+            Tab(icon: const Icon(Icons.favorite), text: l10n.blindDateTabMatches),
           ],
         ),
         actions: [
@@ -57,7 +59,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
                 return IconButton(
                   icon: const Icon(Icons.power_settings_new),
                   onPressed: () => _showDeactivateDialog(context),
-                  tooltip: 'Deactivate Blind Date Mode',
+                  tooltip: l10n.blindDateDeactivateTooltip,
                 );
               }
               return const SizedBox.shrink();
@@ -76,8 +78,8 @@ class _BlindDateScreenState extends State<BlindDateScreen>
             );
           } else if (state is BlindDateModeActivated) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Blind Date mode activated!'),
+              SnackBar(
+                content: Text(l10n.blindDateModeActivated),
                 backgroundColor: Colors.green,
               ),
             );
@@ -90,7 +92,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
           } else if (state is InstantRevealCompleted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text('Photos revealed! ${state.coinsSpent} coins spent.'),
+                content: Text(l10n.blindDatePhotosRevealed(state.coinsSpent)),
                 backgroundColor: Colors.green,
               ),
             );
@@ -120,6 +122,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   Widget _buildActivationScreen(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -146,14 +149,14 @@ class _BlindDateScreenState extends State<BlindDateScreen>
             ),
             const SizedBox(height: 32),
             Text(
-              'Blind Date Mode',
+              l10n.blindDateModeTitle,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
             ),
             const SizedBox(height: 16),
             Text(
-              'Match based on personality, not looks.\nPhotos reveal after ${BlindDateConfig.revealThreshold} messages.',
+              l10n.blindDateModeDescription(BlindDateConfig.revealThreshold),
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Theme.of(context)
@@ -170,7 +173,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
                     );
               },
               icon: const Icon(Icons.play_arrow),
-              label: const Text('Activate Blind Date Mode'),
+              label: Text(l10n.blindDateActivate),
               style: FilledButton.styleFrom(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 32,
@@ -187,11 +190,12 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   Widget _buildFeatureList(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final features = [
-      ('No profile photos visible initially', Icons.visibility_off),
-      ('Focus on personality & interests', Icons.psychology),
-      ('Photos unlock after chatting', Icons.lock_open),
-      ('Instant reveal for ${BlindDateConfig.instantRevealCost} coins', Icons.bolt),
+      (l10n.blindDateFeatureNoPhotos, Icons.visibility_off),
+      (l10n.blindDateFeaturePersonality, Icons.psychology),
+      (l10n.blindDateFeatureUnlock, Icons.lock_open),
+      (l10n.blindDateFeatureInstantReveal(BlindDateConfig.instantRevealCost), Icons.bolt),
     ];
 
     return Column(
@@ -220,6 +224,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   Widget _buildDiscoverTab(BuildContext context, BlindDateState state) {
+    final l10n = AppLocalizations.of(context)!;
     if (state is NoMoreCandidates) {
       return Center(
         child: Column(
@@ -243,7 +248,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
                     );
               },
               icon: const Icon(Icons.refresh),
-              label: const Text('Refresh'),
+              label: Text(l10n.refresh),
             ),
           ],
         ),
@@ -253,7 +258,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
     if (state is BlindCandidatesLoaded) {
       final candidate = state.currentCandidate;
       if (candidate == null) {
-        return const Center(child: Text('No candidates available'));
+        return Center(child: Text(l10n.blindDateNoCandidates));
       }
 
       return BlindProfileCard(
@@ -288,6 +293,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   Widget _buildMatchesTab(BuildContext context, BlindDateState state) {
+    final l10n = AppLocalizations.of(context)!;
     // Load matches if not already loaded
     if (state is! BlindMatchesLoaded) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -308,12 +314,12 @@ class _BlindDateScreenState extends State<BlindDateScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              'No matches yet',
+              l10n.blindDateNoMatches,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(
-              'Start swiping to find your blind date!',
+              l10n.blindDateStartSwiping,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context)
                         .colorScheme
@@ -332,7 +338,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
           Padding(
             padding: const EdgeInsets.all(16),
             child: Text(
-              'Pending Reveal (${state.pendingMatches.length})',
+              l10n.blindDatePendingReveal(state.pendingMatches.length),
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -342,7 +348,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
             // In a real app, you'd fetch the other profile
             final otherProfile = BlindProfileView(
               odldid: match.getOtherUserId(widget.userId),
-              displayName: 'Mystery Person',
+              displayName: l10n.blindDateMysteryPerson,
               age: 25,
             );
             return BlindMatchCard(
@@ -357,7 +363,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
           Padding(
             padding: const EdgeInsets.all(16),
             child: Text(
-              'Revealed (${state.revealedMatches.length})',
+              l10n.blindDateRevealed(state.revealedMatches.length),
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
@@ -366,7 +372,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
           ...state.revealedMatches.map((match) {
             final otherProfile = BlindProfileView(
               odldid: match.getOtherUserId(widget.userId),
-              displayName: 'Revealed Match',
+              displayName: l10n.blindDateRevealedMatch,
               age: 25,
               isRevealed: true,
             );
@@ -382,17 +388,18 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   void _showDeactivateDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Deactivate Blind Date Mode?'),
-        content: const Text(
-          'Your blind date profile will be hidden. You can reactivate anytime.',
+        title: Text(l10n.blindDateDeactivateTitle),
+        content: Text(
+          l10n.blindDateDeactivateMessage,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
@@ -404,7 +411,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
             style: FilledButton.styleFrom(
               backgroundColor: Colors.red,
             ),
-            child: const Text('Deactivate'),
+            child: Text(l10n.blindDateDeactivate),
           ),
         ],
       ),
@@ -412,21 +419,22 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   void _showMatchDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
         title: Row(
           children: [
             Icon(
-              Icons.favorite,
+              Icons.swap_horiz,
               color: Theme.of(context).colorScheme.primary,
             ),
             const SizedBox(width: 8),
-            const Text("It's a Match!"),
+            Text(l10n.blindDateLetsExchange),
           ],
         ),
-        content: const Text(
-          'You both liked each other! Start chatting to reveal your photos.',
+        content: Text(
+          l10n.blindDateMatchMessage,
         ),
         actions: [
           FilledButton(
@@ -434,7 +442,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
               Navigator.pop(ctx);
               _tabController.animateTo(1); // Go to matches tab
             },
-            child: const Text('View Match'),
+            child: Text(l10n.blindDateViewMatch),
           ),
         ],
       ),
@@ -445,24 +453,25 @@ class _BlindDateScreenState extends State<BlindDateScreen>
     BuildContext context,
     InsufficientCoinsForReveal state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Insufficient Coins'),
+        title: Text(l10n.blindDateInsufficientCoins),
         content: Text(
-          'You need ${state.required} coins for instant reveal, but you only have ${state.available}. Get ${state.shortfall} more coins.',
+          l10n.blindDateInsufficientCoinsMessage(state.required),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
               Navigator.pop(ctx);
               // Navigate to coin purchase
             },
-            child: const Text('Get Coins'),
+            child: Text(l10n.blindDateGetCoins),
           ),
         ],
       ),
@@ -470,17 +479,18 @@ class _BlindDateScreenState extends State<BlindDateScreen>
   }
 
   void _confirmInstantReveal(BuildContext context, BlindMatch match) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Instant Reveal'),
+        title: Text(l10n.blindDateInstantReveal),
         content: Text(
-          'Spend ${BlindDateConfig.instantRevealCost} coins to reveal photos now?',
+          l10n.blindDateInstantRevealMessage(BlindDateConfig.instantRevealCost),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           FilledButton(
             onPressed: () {
@@ -492,7 +502,7 @@ class _BlindDateScreenState extends State<BlindDateScreen>
                     ),
                   );
             },
-            child: const Text('Reveal'),
+            child: Text(l10n.blindDateReveal),
           ),
         ],
       ),

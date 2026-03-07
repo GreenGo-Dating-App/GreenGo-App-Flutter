@@ -99,7 +99,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         setState(() {
           _isSearching = false;
           _hasSearched = true;
-          _errorMessage = 'No profile found with @$nickname';
+          _errorMessage = AppLocalizations.of(context)!.nicknameSearchNoProfile(nickname);
         });
       } else {
         final profileDoc = querySnapshot.docs.first;
@@ -110,7 +110,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
           setState(() {
             _isSearching = false;
             _hasSearched = true;
-            _errorMessage = "That's your own profile!";
+            _errorMessage = AppLocalizations.of(context)!.nicknameSearchOwnProfile;
           });
         } else {
           // Check if either user has blocked the other
@@ -121,7 +121,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             setState(() {
               _isSearching = false;
               _hasSearched = true;
-              _errorMessage = 'No profile found with @$nickname';
+              _errorMessage = AppLocalizations.of(context)!.nicknameSearchNoProfile(nickname);
             });
           } else {
             setState(() {
@@ -137,7 +137,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
       setState(() {
         _isSearching = false;
         _hasSearched = true;
-        _errorMessage = 'Error searching. Please try again.';
+        _errorMessage = AppLocalizations.of(context)!.nicknameSearchError;
       });
     }
   }
@@ -289,18 +289,18 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Insufficient Coins',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.insufficientCoinsTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Direct messaging costs ${CoinFeaturePrices.directMessage} coins. Would you like to buy more coins?',
+          AppLocalizations.of(context)!.directMessageCost(CoinFeaturePrices.directMessage),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text('Cancel', style: TextStyle(color: AppColors.textTertiary)),
+            child: Text(AppLocalizations.of(context)!.cancelLabel, style: const TextStyle(color: AppColors.textTertiary)),
           ),
           ElevatedButton(
             onPressed: () {
@@ -316,7 +316,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-            child: const Text('Buy Coins', style: TextStyle(color: Colors.white)),
+            child: Text(AppLocalizations.of(context)!.buyCoinsBtnLabel, style: const TextStyle(color: Colors.white)),
           ),
         ],
       ),
@@ -345,9 +345,9 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                   size: 24,
                 ),
                 const SizedBox(width: 12),
-                const Expanded(
+                Expanded(
                   child: Text(
-                    'Search by Nickname',
+                    AppLocalizations.of(context)!.nicknameSearchTitle,
                     style: TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
@@ -378,7 +378,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
-                hintText: 'Enter nickname',
+                hintText: AppLocalizations.of(context)!.enterNicknameHint,
                 hintStyle: TextStyle(
                   color: AppColors.textTertiary.withOpacity(0.6),
                 ),
@@ -475,7 +475,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        'Enter a nickname to find someone directly',
+                        AppLocalizations.of(context)!.nicknameSearchHelp,
                         style: TextStyle(
                           color: AppColors.textTertiary.withOpacity(0.8),
                           fontSize: 13,
@@ -627,8 +627,8 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                     color: AppColors.richGold,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Text(
-                    'View',
+                  child: Text(
+                    AppLocalizations.of(context)!.nicknameSearchView,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,

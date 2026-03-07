@@ -233,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen>
                             keyboardType: TextInputType.emailAddress,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {
-                                return 'Please enter your email';
+                                return l10n.authPleaseEnterEmail;
                               }
                               return null;
                             },
@@ -381,8 +381,8 @@ class _LoginScreenState extends State<LoginScreen>
                                         : () {
                                             // TODO: Implement Apple Sign In
                                             ScaffoldMessenger.of(context).showSnackBar(
-                                              const SnackBar(
-                                                content: Text('Apple Sign-In coming soon'),
+                                              SnackBar(
+                                                content: Text(l10n.authAppleSignInComingSoon),
                                               ),
                                             );
                                           },

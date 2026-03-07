@@ -8,7 +8,8 @@ import '../../domain/entities/game_round.dart';
 import '../../domain/repositories/language_games_repository.dart';
 import '../models/game_room_model.dart';
 import '../models/game_round_model.dart';
-import '../content/game_content.dart';
+import '../content/categories_data.dart';
+import 'game_word_datasource.dart';
 
 /// Language Games Remote Data Source
 ///
@@ -54,6 +55,11 @@ abstract class LanguageGamesRemoteDataSource {
     required String roomId,
     required String userId,
     required String answer,
+  });
+
+  Future<void> submitClue({
+    required String roomId,
+    required String clue,
   });
 
   Stream<GameRoomModel> getRoomStream(String roomId);
@@ -153,8 +159,12 @@ abstract class LanguageGamesRemoteDataSource {
 class LanguageGamesRemoteDataSourceImpl
     implements LanguageGamesRemoteDataSource {
   final FirebaseFirestore firestore;
+  final GameWordDatasource gameWordDatasource;
 
-  LanguageGamesRemoteDataSourceImpl({required this.firestore});
+  LanguageGamesRemoteDataSourceImpl({
+    required this.firestore,
+    required this.gameWordDatasource,
+  });
 
   // ---------------------------------------------------------------
   //  Collection references
@@ -418,6 +428,25 @@ class LanguageGamesRemoteDataSourceImpl
 
     final docRef = _roomsCollection.doc(roomId);
 
+    // Pre-read room to know game type and language for data fetching
+    final preSnapshot = await docRef.get();
+    if (!preSnapshot.exists) throw Exception('Room not found');
+    final preRoom = GameRoomModel.fromFirestore(preSnapshot);
+    final preDifficulty = _getRoomDifficulty(preSnapshot);
+
+    // Pre-fetch game data from Firestore before the transaction
+    final roundData = await _generateRoundData(
+      preRoom.gameType,
+      preRoom.targetLanguage,
+      preDifficulty,
+    );
+    final firstPrompt = roundData.prompt;
+    final correctAnswer = roundData.correctAnswer;
+    final options = roundData.options;
+    final theme = preRoom.gameType == GameType.vocabularyChain
+        ? await gameWordDatasource.getRandomTheme(preRoom.targetLanguage)
+        : null;
+
     await firestore.runTransaction((transaction) async {
       final snapshot = await transaction.get(docRef);
       if (!snapshot.exists) throw Exception('Room not found');
@@ -427,18 +456,7 @@ class LanguageGamesRemoteDataSourceImpl
         throw Exception('Not all players are ready');
       }
 
-      final difficulty = _getRoomDifficulty(snapshot);
-
-      // Generate first prompt based on difficulty
-      final firstPrompt = _generatePrompt(
-        room.gameType,
-        room.targetLanguage,
-        difficulty,
-      );
       final firstTurnPlayer = room.players.first.userId;
-      final theme = room.gameType == GameType.vocabularyChain
-          ? GameContent.getRandomTheme()
-          : null;
 
       final updates = <String, dynamic>{
         'status': GameStatus.starting.name,
@@ -454,21 +472,18 @@ class LanguageGamesRemoteDataSourceImpl
         updates['currentDescriberId'] = firstTurnPlayer;
       }
 
+      // For categories, store the 9 category names on the room
+      if (room.gameType == GameType.categories && options.isNotEmpty) {
+        updates['roundCategories'] = options;
+      }
+
       // Create first round document
       final roundRef = docRef.collection('rounds').doc('1');
       transaction.set(roundRef, {
         'roundNumber': 1,
         'prompt': firstPrompt,
-        'correctAnswer': _getCorrectAnswer(
-          room.gameType,
-          room.targetLanguage,
-          firstPrompt,
-        ),
-        'options': _generateOptions(
-          room.gameType,
-          room.targetLanguage,
-          firstPrompt,
-        ),
+        'correctAnswer': correctAnswer,
+        'options': options,
         'playerAnswers': {},
         'startedAt': FieldValue.serverTimestamp(),
         'durationSeconds': room.turnDurationSeconds,
@@ -534,7 +549,7 @@ class LanguageGamesRemoteDataSourceImpl
     // Base points per game type (before multipliers)
     switch (room.gameType) {
       case GameType.wordBomb:
-        isCorrect = GameContent.isValidWordBombWord(
+        isCorrect = await gameWordDatasource.isValidWordBombWord(
           answer,
           room.currentPrompt ?? '',
           room.targetLanguage,
@@ -552,23 +567,18 @@ class LanguageGamesRemoteDataSourceImpl
       case GameType.translationRace:
         if (roundSnapshot.exists) {
           final round = GameRoundModel.fromFirestore(roundSnapshot);
-          final result = GameContent.checkTranslation(
+          isCorrect = await gameWordDatasource.checkTranslation(
             answer,
             round.correctAnswer ?? '',
           );
-          isCorrect = result.isExact || result.isClose;
 
           // Speed-based scoring: first correct gets most points
           final correctCount = round.playerAnswers.values
               .where((a) => a.isCorrect)
               .length;
 
-          if (result.isExact) {
+          if (isCorrect) {
             points = correctCount == 0 ? 3 : (correctCount == 1 ? 2 : 1);
-          } else if (result.isClose) {
-            final fullPoints =
-                correctCount == 0 ? 3 : (correctCount == 1 ? 2 : 1);
-            points = (fullPoints / 2).ceil();
           }
         }
         break;
@@ -576,12 +586,21 @@ class LanguageGamesRemoteDataSourceImpl
       case GameType.pictureGuess:
         if (roundSnapshot.exists) {
           final round = GameRoundModel.fromFirestore(roundSnapshot);
-          final result = GameContent.checkTranslation(
+          isCorrect = await gameWordDatasource.checkTranslation(
             answer,
             round.correctAnswer ?? '',
           );
-          isCorrect = result.isExact || result.isClose;
-          if (isCorrect) points = 10;
+          if (isCorrect) {
+            points = 10;
+            // Award describer bonus: +5 per correct guesser
+            if (room.currentDescriberId != null &&
+                room.currentDescriberId != userId) {
+              await docRef.update({
+                'scores.${room.currentDescriberId}':
+                    FieldValue.increment(5),
+              });
+            }
+          }
         }
         break;
 
@@ -612,8 +631,8 @@ class LanguageGamesRemoteDataSourceImpl
         final lastWord =
             room.usedWords.isNotEmpty ? room.usedWords.last : '';
         final lastLetter =
-            lastWord.isNotEmpty ? GameContent.getLastLetter(lastWord) : '';
-        isCorrect = GameContent.isValidChainWord(
+            lastWord.isNotEmpty ? lastWord[lastWord.length - 1] : '';
+        isCorrect = await gameWordDatasource.isValidChainWord(
           answer,
           lastLetter,
           room.targetLanguage,
@@ -629,9 +648,16 @@ class LanguageGamesRemoteDataSourceImpl
         break;
 
       case GameType.languageSnaps:
-        // Snaps matching handled client-side; server validates pairs
-        isCorrect = true;
-        points = 5;
+        // Snaps matching validated client-side with deterministic card layout.
+        // Server awards points only for match-prefixed answers (client confirmed match).
+        if (answer.startsWith('match:')) {
+          isCorrect = true;
+          points = 5;
+        } else {
+          // Legacy format or mismatch — no points
+          isCorrect = false;
+          points = 0;
+        }
         break;
 
       case GameType.languageTapples:
@@ -642,7 +668,7 @@ class LanguageGamesRemoteDataSourceImpl
         final tapplesLetter = answer.contains(':')
             ? answer.substring(0, answer.indexOf(':'))
             : (room.currentPrompt ?? 'A');
-        isCorrect = GameContent.isValidTapplesWord(
+        isCorrect = await gameWordDatasource.isValidTapplesWord(
           tapplesWord,
           room.targetLanguage,
           room.roundTheme ?? 'Animals',
@@ -721,6 +747,27 @@ class LanguageGamesRemoteDataSourceImpl
         '| points=$points | difficulty=$difficulty');
 
     return gameAnswer;
+  }
+
+  // ---------------------------------------------------------------
+  //  SUBMIT CLUE (Picture Guess — appends to clues array)
+  // ---------------------------------------------------------------
+
+  @override
+  Future<void> submitClue({
+    required String roomId,
+    required String clue,
+  }) async {
+    debugPrint('[LanguageGames] submitClue: room=$roomId | clue=$clue');
+    final docRef = _roomsCollection.doc(roomId);
+    final snapshot = await docRef.get();
+    if (!snapshot.exists) throw Exception('Room not found');
+
+    final room = GameRoomModel.fromFirestore(snapshot);
+    final roundRef = docRef.collection('rounds').doc('${room.currentRound}');
+    await roundRef.update({
+      'clues': FieldValue.arrayUnion([clue]),
+    });
   }
 
   // ---------------------------------------------------------------
@@ -902,16 +949,54 @@ class LanguageGamesRemoteDataSourceImpl
 
     final docRef = _roomsCollection.doc(roomId);
 
+    // Pre-read room for game data fetching
+    final preSnapshot = await docRef.get();
+    if (!preSnapshot.exists) return;
+    final preRoom = GameRoomModel.fromFirestore(preSnapshot);
+    final preDifficulty = _getRoomDifficulty(preSnapshot);
+
+    if (preRoom.currentRound + 1 > preRoom.totalRounds) {
+      // Game over — no need to pre-fetch, just finish in transaction
+      await firestore.runTransaction((transaction) async {
+        final snapshot = await transaction.get(docRef);
+        if (!snapshot.exists) return;
+        final room = GameRoomModel.fromFirestore(snapshot);
+        final nextRound = room.currentRound + 1;
+        if (nextRound > room.totalRounds) {
+          final sortedScores = room.sortedScores;
+          final winnerId =
+              sortedScores.isNotEmpty ? sortedScores.first.key : null;
+          transaction.update(docRef, {
+            'status': GameStatus.finished.name,
+            'winnerId': winnerId,
+          });
+        }
+      });
+      debugPrint('[LanguageGames] advanceRound: game over (round limit)');
+      return;
+    }
+
+    // Pre-fetch game data before transaction
+    final roundData = await _generateRoundData(
+      preRoom.gameType,
+      preRoom.targetLanguage,
+      preDifficulty,
+    );
+    final nextPrompt = roundData.prompt;
+    final correctAnswer = roundData.correctAnswer;
+    final options = roundData.options;
+    final nextTheme = preRoom.gameType == GameType.vocabularyChain
+        ? await gameWordDatasource.getRandomTheme(preRoom.targetLanguage)
+        : null;
+
     await firestore.runTransaction((transaction) async {
       final snapshot = await transaction.get(docRef);
       if (!snapshot.exists) return;
 
       final room = GameRoomModel.fromFirestore(snapshot);
-      final difficulty = _getRoomDifficulty(snapshot);
       final nextRound = room.currentRound + 1;
 
       if (nextRound > room.totalRounds) {
-        // Game over
         final sortedScores = room.sortedScores;
         final winnerId =
             sortedScores.isNotEmpty ? sortedScores.first.key : null;
@@ -919,18 +1004,8 @@ class LanguageGamesRemoteDataSourceImpl
           'status': GameStatus.finished.name,
           'winnerId': winnerId,
         });
-        debugPrint('[LanguageGames] advanceRound: game over (round limit)');
         return;
       }
-
-      final nextPrompt = _generatePrompt(
-        room.gameType,
-        room.targetLanguage,
-        difficulty,
-      );
-      final nextTheme = room.gameType == GameType.vocabularyChain
-          ? GameContent.getRandomTheme()
-          : room.roundTheme;
 
       // Rotate turns
       final playerIds = room.players.map((p) => p.userId).toList();
@@ -944,31 +1019,30 @@ class LanguageGamesRemoteDataSourceImpl
       transaction.set(roundRef, {
         'roundNumber': nextRound,
         'prompt': nextPrompt,
-        'correctAnswer': _getCorrectAnswer(
-          room.gameType,
-          room.targetLanguage,
-          nextPrompt,
-        ),
-        'options': _generateOptions(
-          room.gameType,
-          room.targetLanguage,
-          nextPrompt,
-        ),
+        'correctAnswer': correctAnswer,
+        'options': options,
         'playerAnswers': {},
         'startedAt': FieldValue.serverTimestamp(),
         'durationSeconds': room.turnDurationSeconds,
         'winnerId': null,
       });
 
-      transaction.update(docRef, {
+      final roomUpdates = <String, dynamic>{
         'currentRound': nextRound,
         'currentPrompt': nextPrompt,
         'currentTurnUserId': nextTurnUserId,
         'turnStartedAt': FieldValue.serverTimestamp(),
-        'roundTheme': nextTheme,
-        if (room.gameType == GameType.pictureGuess)
-          'currentDescriberId': nextTurnUserId,
-      });
+        'roundTheme': nextTheme ?? room.roundTheme,
+        // Clear used words for new round
+        'usedWords': <String>[],
+      };
+      if (room.gameType == GameType.pictureGuess) {
+        roomUpdates['currentDescriberId'] = nextTurnUserId;
+      }
+      if (room.gameType == GameType.categories && options.isNotEmpty) {
+        roomUpdates['roundCategories'] = options;
+      }
+      transaction.update(docRef, roomUpdates);
     });
 
     debugPrint('[LanguageGames] advanceRound: done');
@@ -984,6 +1058,18 @@ class LanguageGamesRemoteDataSourceImpl
 
     final docRef = _roomsCollection.doc(roomId);
 
+    // Pre-read room to check if we need a new prompt
+    final preSnapshot = await docRef.get();
+    if (!preSnapshot.exists) return;
+    final preRoom = GameRoomModel.fromFirestore(preSnapshot);
+
+    // Pre-fetch Word Bomb prompt before transaction
+    String? newPrompt;
+    if (preRoom.gameType == GameType.wordBomb) {
+      newPrompt = await gameWordDatasource.getWordBombPrompt(
+          preRoom.targetLanguage);
+    }
+
     await firestore.runTransaction((transaction) async {
       final snapshot = await transaction.get(docRef);
       if (!snapshot.exists) return;
@@ -993,7 +1079,8 @@ class LanguageGamesRemoteDataSourceImpl
       // Get alive players for turn-based games
       List<String> eligiblePlayerIds;
       if (room.gameType == GameType.wordBomb ||
-          room.gameType == GameType.vocabularyChain) {
+          room.gameType == GameType.vocabularyChain ||
+          room.gameType == GameType.languageTapples) {
         eligiblePlayerIds =
             room.alivePlayers.map((p) => p.userId).toList();
       } else {
@@ -1018,13 +1105,6 @@ class LanguageGamesRemoteDataSourceImpl
       final currentIdx =
           eligiblePlayerIds.indexOf(room.currentTurnUserId ?? '');
       final nextIdx = (currentIdx + 1) % eligiblePlayerIds.length;
-
-      // For Word Bomb, generate new prompt occasionally
-      String? newPrompt;
-      if (room.gameType == GameType.wordBomb) {
-        newPrompt =
-            GameContent.getRandomWordBombPrompt(room.targetLanguage);
-      }
 
       transaction.update(docRef, {
         'currentTurnUserId': eligiblePlayerIds[nextIdx],
@@ -1606,76 +1686,93 @@ class LanguageGamesRemoteDataSourceImpl
     }
   }
 
-  String _generatePrompt(
+  /// Generates all round data (prompt, correct answer, options) in one call.
+  /// Returns a self-contained [_RoundData] object — no shared mutable state.
+  Future<_RoundData> _generateRoundData(
     GameType type,
     String language, [
     int difficulty = 5,
-  ]) {
+  ]) async {
     switch (type) {
       case GameType.wordBomb:
-        return GameContent.getRandomWordBombPrompt(language);
+        final prompt = await gameWordDatasource.getWordBombPrompt(language);
+        return _RoundData(prompt: prompt);
       case GameType.translationRace:
-        final pair = GameContent.getRandomTranslationPair(language);
-        return pair.key; // English word to translate
+        // Try pre-built questions first (have 12 shuffled options)
+        try {
+          final questions = await gameWordDatasource.getTranslationRaceQuestions(
+            sourceLang: 'en',
+            targetLang: language,
+            minDifficulty: (difficulty - 2).clamp(1, 10),
+            maxDifficulty: (difficulty + 2).clamp(1, 10),
+            limit: 10,
+          );
+          if (questions.isNotEmpty) {
+            final q = questions[Random().nextInt(questions.length)];
+            return _RoundData(
+              prompt: q.word,
+              correctAnswer: q.correctAnswer,
+              options: q.allOptions,
+            );
+          }
+        } catch (_) {}
+        // Fallback: use translation pair + generate wrong options from other words
+        final pair =
+            await gameWordDatasource.getRandomTranslationPair(language);
+        final correct = pair?.value ?? 'word';
+        final wrongOptions = <String>[];
+        try {
+          final words = await gameWordDatasource.getWords(
+            language: language,
+            limit: 30,
+          );
+          final candidates = words
+              .map((w) => w.word)
+              .where((w) => w.toLowerCase() != correct.toLowerCase())
+              .toList()
+            ..shuffle();
+          wrongOptions.addAll(candidates.take(11));
+        } catch (_) {}
+        // Pad with placeholders if we don't have enough
+        while (wrongOptions.length < 11) {
+          wrongOptions.add('---');
+        }
+        final allOptions = [correct, ...wrongOptions]..shuffle();
+        return _RoundData(
+          prompt: pair?.key ?? 'hello',
+          correctAnswer: correct,
+          options: allOptions,
+        );
       case GameType.pictureGuess:
-        final pair = GameContent.getRandomTranslationPair(language);
-        return pair.value; // Word in target language to describe
+        final pair =
+            await gameWordDatasource.getRandomTranslationPair(language);
+        final targetWord = pair?.value ?? 'word';
+        return _RoundData(prompt: targetWord, correctAnswer: targetWord);
       case GameType.grammarDuel:
         final question =
-            GameContent.getRandomGrammarQuestion(language);
-        return question.question;
-      case GameType.vocabularyChain:
-        return ''; // Chain starts fresh
-      case GameType.languageSnaps:
-        return ''; // Cards dealt client-side
-      case GameType.languageTapples:
-        final category = GameContent.getTapplesCategory(language);
-        return category;
-      case GameType.categories:
-        // Random letter for the round
-        const letters = 'ABCDEFGHILMNOPRSTV';
-        return letters[Random().nextInt(letters.length)];
-    }
-  }
-
-  String? _getCorrectAnswer(
-    GameType type,
-    String language,
-    String prompt,
-  ) {
-    switch (type) {
-      case GameType.translationRace:
-        final pairs = GameContent.translationPairs[language] ?? {};
-        return pairs[prompt];
-      case GameType.pictureGuess:
-        return prompt; // The word itself is the answer
-      case GameType.grammarDuel:
-        final questions =
-            GameContent.grammarQuestions[language] ?? [];
-        final question = questions.firstWhere(
-          (q) => q.question == prompt,
-          orElse: () => questions.first,
+            await gameWordDatasource.getRandomGrammarQuestion(language);
+        return _RoundData(
+          prompt: question?.question ?? '',
+          correctAnswer: question != null
+              ? question.options[question.correctIndex]
+              : null,
+          options: question?.options ?? [],
         );
-        return '${question.correctIndex}';
-      default:
-        return null;
+      case GameType.vocabularyChain:
+        return _RoundData(prompt: '');
+      case GameType.languageSnaps:
+        return _RoundData(prompt: '');
+      case GameType.languageTapples:
+        final cat = await gameWordDatasource.getTapplesCategory(language);
+        return _RoundData(prompt: cat);
+      case GameType.categories:
+        final letter = CategoriesData.getRandomLetter();
+        final cats = CategoriesData.getRandomCategories(9);
+        return _RoundData(
+          prompt: letter,
+          options: cats.map((c) => c.name).toList(),
+        );
     }
-  }
-
-  List<String> _generateOptions(
-    GameType type,
-    String language,
-    String prompt,
-  ) {
-    if (type != GameType.grammarDuel) return [];
-
-    final questions =
-        GameContent.grammarQuestions[language] ?? [];
-    final question = questions.firstWhere(
-      (q) => q.question == prompt,
-      orElse: () => questions.first,
-    );
-    return question.options;
   }
 
   // ---------------------------------------------------------------
@@ -1757,4 +1854,18 @@ class LanguageGamesRemoteDataSourceImpl
       }).toList();
     });
   }
+}
+
+/// Thread-safe data object returned by [_generateRoundData].
+/// Contains all round information — no shared mutable state needed.
+class _RoundData {
+  final String prompt;
+  final String? correctAnswer;
+  final List<String> options;
+
+  const _RoundData({
+    required this.prompt,
+    this.correctAnswer,
+    this.options = const [],
+  });
 }

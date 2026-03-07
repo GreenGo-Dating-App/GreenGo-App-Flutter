@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../membership/domain/entities/membership.dart';
@@ -91,7 +92,7 @@ class PracticeModeToggle extends StatelessWidget {
             ),
             const SizedBox(width: 4),
             Text(
-              'Practice',
+              AppLocalizations.of(context)!.chatPractice,
               style: TextStyle(
                 color:
                     isActive ? AppColors.richGold : AppColors.textSecondary,
@@ -132,13 +133,13 @@ class PracticeModeToggle extends StatelessWidget {
         if (context.mounted) {
           onToggle(true);
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
+            SnackBar(
               content: Text(
-                'Practice mode trial started! 30 minutes free.',
-                style: TextStyle(color: AppColors.textPrimary),
+                AppLocalizations.of(context)!.chatPracticeTrialStarted,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               backgroundColor: AppColors.backgroundCard,
-              duration: Duration(seconds: 3),
+              duration: const Duration(seconds: 3),
             ),
           );
         }
@@ -198,6 +199,7 @@ class PracticeModeToggle extends StatelessWidget {
   }
 
   void _showUpgradeDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (dialogContext) => AlertDialog(
@@ -205,46 +207,46 @@ class PracticeModeToggle extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusL),
         ),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.school, color: AppColors.richGold, size: 24),
-            SizedBox(width: 8),
+            const Icon(Icons.school, color: AppColors.richGold, size: 24),
+            const SizedBox(width: 8),
             Text(
-              'Practice Mode',
-              style: TextStyle(
+              l10n.chatPracticeMode,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
               ),
             ),
           ],
         ),
-        content: const Column(
+        content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Your free trial has expired.',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
+              l10n.chatTrialExpired,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             Text(
-              'Upgrade to Silver VIP or higher to unlock unlimited Practice Mode with AI language tips.',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
+              l10n.chatUpgradePracticeMode,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
             ),
-            SizedBox(height: 16),
-            _FeatureRow(icon: Icons.auto_awesome, text: 'AI vocabulary suggestions'),
-            SizedBox(height: 6),
-            _FeatureRow(icon: Icons.spellcheck, text: 'Grammar corrections'),
-            SizedBox(height: 6),
-            _FeatureRow(icon: Icons.lightbulb_outline, text: 'Cultural context tips'),
+            const SizedBox(height: 16),
+            _FeatureRow(icon: Icons.auto_awesome, text: l10n.chatFeatureVocabulary),
+            const SizedBox(height: 6),
+            _FeatureRow(icon: Icons.spellcheck, text: l10n.chatFeatureGrammar),
+            const SizedBox(height: 6),
+            _FeatureRow(icon: Icons.lightbulb_outline, text: l10n.chatFeatureCulturalTips),
           ],
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
-            child: const Text(
-              'Maybe later',
-              style: TextStyle(color: AppColors.textTertiary),
+            child: Text(
+              l10n.chatMaybeLater,
+              style: const TextStyle(color: AppColors.textTertiary),
             ),
           ),
           ElevatedButton(
@@ -259,9 +261,9 @@ class PracticeModeToggle extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppDimensions.radiusS),
               ),
             ),
-            child: const Text(
-              'Upgrade',
-              style: TextStyle(fontWeight: FontWeight.bold),
+            child: Text(
+              l10n.chatUpgrade,
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
         ],
@@ -595,9 +597,9 @@ class _PracticeModeOverlayState extends State<PracticeModeOverlay>
                   color: AppColors.richGold,
                 ),
                 const SizedBox(width: 8),
-                const Text(
-                  'Practice Mode',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.chatPracticeMode,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
@@ -696,11 +698,11 @@ class _PracticeModeOverlayState extends State<PracticeModeOverlay>
     }
 
     if (_tips.isEmpty) {
-      return const Padding(
-        padding: EdgeInsets.all(20),
+      return Padding(
+        padding: const EdgeInsets.all(20),
         child: Text(
-          'Send a few messages and language tips will appear here.',
-          style: TextStyle(
+          AppLocalizations.of(context)!.chatSendMessagesForTips,
+          style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 13,
           ),

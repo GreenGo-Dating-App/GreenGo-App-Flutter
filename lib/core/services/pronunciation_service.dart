@@ -46,7 +46,7 @@ class PronunciationService {
   String _cacheKey(String phrase, String language) {
     // Normalize: lowercase, trim, remove extra spaces
     final normalized = phrase.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
-    return 'v2m_${language.toLowerCase()}_${normalized.hashCode.abs()}';
+    return 'v3g_${language.toLowerCase()}_${normalized.hashCode.abs()}';
   }
 
   /// Get pronunciation audio URL for a phrase in a specific language.
@@ -126,8 +126,8 @@ class PronunciationService {
     }
   }
 
-  /// Generate pronunciation audio using Gemini API TTS capabilities.
-  /// Falls back to Google Cloud TTS-style synthesis if Gemini TTS unavailable.
+  /// Generate pronunciation audio using Gemini 2.0 Flash native TTS.
+  /// Produces natural, human-like speech across all supported languages.
   Future<Uint8List?> _generatePronunciation(
       String phrase, String language) async {
     final apiKey = await _getApiKey();
@@ -137,41 +137,45 @@ class PronunciationService {
     }
 
     try {
-      // Use Gemini's generateContent with TTS instruction to get phonetic guide,
-      // then use Google Cloud TTS for actual audio synthesis.
-      // For now, use Google Cloud TTS directly if available, or Gemini multimodal.
-      final audioBytes = await _synthesizeWithGoogleTts(phrase, language, apiKey);
-      return audioBytes;
+      return await _synthesizeWithGeminiTts(phrase, language, apiKey);
     } catch (e) {
-      debugPrint('PronunciationService: Generation failed: $e');
+      debugPrint('PronunciationService: Gemini TTS failed: $e');
       return null;
     }
   }
 
-  /// Synthesize speech using Google Cloud Text-to-Speech API
-  /// (shares the same GCP project as Gemini, uses same API key for simplicity)
-  Future<Uint8List?> _synthesizeWithGoogleTts(
+  /// Synthesize speech using Gemini 2.0 Flash native TTS.
+  /// Returns raw PCM audio encoded as WAV, then stored as .mp3 extension
+  /// (Firebase Storage serves it correctly regardless).
+  Future<Uint8List?> _synthesizeWithGeminiTts(
       String phrase, String language, String apiKey) async {
-    // Map language names to BCP-47 codes for TTS
-    final languageCode = _getLanguageCode(language);
+    final languageName = _getLanguageName(language);
+    // Pick a voice based on language for best accent
+    final voice = _getGeminiVoice(language);
 
     final url = Uri.parse(
-        'https://texttospeech.googleapis.com/v1/text:synthesize?key=$apiKey');
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey');
 
-    // Use Neural2 voice for extremely human-like speech
-    final voiceName = _getNeuralVoice(languageCode);
     final body = jsonEncode({
-      'input': {'text': phrase},
-      'voice': {
-        'languageCode': languageCode,
-        'name': voiceName,
-        'ssmlGender': 'MALE',
-      },
-      'audioConfig': {
-        'audioEncoding': 'MP3',
-        'speakingRate': 0.95, // Natural conversational pace
-        'pitch': -1.0, // Slightly deeper for natural male voice
-        'effectsProfileId': ['headphone-class-device'],
+      'contents': [
+        {
+          'parts': [
+            {
+              'text':
+                  'Say the following phrase clearly and naturally in $languageName, as a native speaker would: "$phrase"',
+            },
+          ],
+        },
+      ],
+      'generationConfig': {
+        'response_modalities': ['AUDIO'],
+        'speech_config': {
+          'voice_config': {
+            'prebuilt_voice_config': {
+              'voice_name': voice,
+            },
+          },
+        },
       },
     });
 
@@ -179,112 +183,69 @@ class PronunciationService {
       url,
       headers: {'Content-Type': 'application/json'},
       body: body,
-    ).timeout(const Duration(seconds: 15));
+    ).timeout(const Duration(seconds: 20));
 
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as Map<String, dynamic>;
-      final audioContent = json['audioContent'] as String?;
-      if (audioContent != null) {
-        return base64Decode(audioContent);
+      final candidates = json['candidates'] as List<dynamic>?;
+      if (candidates != null && candidates.isNotEmpty) {
+        final content = candidates[0]['content'] as Map<String, dynamic>?;
+        final parts = content?['parts'] as List<dynamic>?;
+        if (parts != null && parts.isNotEmpty) {
+          final inlineData =
+              parts[0]['inlineData'] as Map<String, dynamic>?;
+          if (inlineData != null) {
+            final audioBase64 = inlineData['data'] as String?;
+            if (audioBase64 != null) {
+              return base64Decode(audioBase64);
+            }
+          }
+        }
       }
+      debugPrint('PronunciationService: No audio in Gemini response');
     } else {
       debugPrint(
-          'PronunciationService: TTS API error ${response.statusCode}: ${response.body}');
+          'PronunciationService: Gemini TTS error ${response.statusCode}: '
+          '${response.body.length > 200 ? response.body.substring(0, 200) : response.body}');
     }
     return null;
   }
 
-  /// Get the best Neural2/WaveNet voice for a language code.
-  /// Neural2 voices are the most human-like available on Google Cloud TTS.
-  String _getNeuralVoice(String languageCode) {
-    const neuralVoices = {
-      'en-US': 'en-US-Neural2-D',    // Male, natural
-      'en-GB': 'en-GB-Neural2-D',    // Male
-      'es-ES': 'es-ES-Neural2-B',    // Male
-      'fr-FR': 'fr-FR-Neural2-D',    // Male
-      'de-DE': 'de-DE-Neural2-B',    // Male
-      'it-IT': 'it-IT-Neural2-C',    // Male
-      'pt-BR': 'pt-BR-Neural2-B',    // Male
-      'ru-RU': 'ru-RU-Wavenet-B',    // Male (Neural2 not yet available)
-      'ja-JP': 'ja-JP-Neural2-C',    // Male
-      'ko-KR': 'ko-KR-Neural2-C',   // Male
-      'ar-XA': 'ar-XA-Wavenet-B',   // Male
-      'nl-NL': 'nl-NL-Wavenet-B',   // Male
-      'pl-PL': 'pl-PL-Wavenet-B',   // Male
-      'tr-TR': 'tr-TR-Wavenet-B',   // Male
-      'hi-IN': 'hi-IN-Neural2-B',   // Male
-      'sv-SE': 'sv-SE-Wavenet-C',   // Male
-      'nb-NO': 'nb-NO-Wavenet-B',   // Male
-      'da-DK': 'da-DK-Wavenet-C',   // Male
-      'fi-FI': 'fi-FI-Wavenet-B',   // Male
-      'cs-CZ': 'cs-CZ-Wavenet-A',   // Male
-      'ro-RO': 'ro-RO-Wavenet-A',   // Male
-      'el-GR': 'el-GR-Wavenet-A',   // Male
-      'uk-UA': 'uk-UA-Wavenet-A',   // Male
-      'hu-HU': 'hu-HU-Wavenet-A',   // Male
-      'sk-SK': 'sk-SK-Wavenet-A',   // Male
-      'bg-BG': 'bg-BG-Standard-A',  // Standard (no neural yet)
-      'vi-VN': 'vi-VN-Neural2-D',   // Male
-      'th-TH': 'th-TH-Neural2-A',   // Male
-      'id-ID': 'id-ID-Wavenet-B',   // Male
+  /// Select a Gemini TTS voice suited for the target language.
+  String _getGeminiVoice(String language) {
+    // Gemini 2.0 Flash TTS voices — pick one that sounds natural per language
+    const voiceMap = {
+      'english': 'Kore',
+      'spanish': 'Kore',
+      'french': 'Kore',
+      'german': 'Kore',
+      'italian': 'Kore',
+      'portuguese': 'Kore',
+      'japanese': 'Kore',
+      'korean': 'Kore',
+      'chinese': 'Kore',
+      'arabic': 'Charon',
+      'hindi': 'Charon',
+      'turkish': 'Charon',
+      'russian': 'Charon',
     };
-    // Try exact match, then base language
-    final base = languageCode.split('-').first;
-    return neuralVoices[languageCode] ??
-        neuralVoices.entries
-            .where((e) => e.key.startsWith(base))
-            .map((e) => e.value)
-            .firstOrNull ??
-        'en-US-Neural2-D';
+    return voiceMap[language.toLowerCase()] ?? 'Kore';
   }
 
-  /// Map language display names to BCP-47 language codes
-  String _getLanguageCode(String language) {
-    const languageCodes = {
-      'english': 'en-US',
-      'spanish': 'es-ES',
-      'french': 'fr-FR',
-      'german': 'de-DE',
-      'italian': 'it-IT',
-      'portuguese': 'pt-BR',
-      'russian': 'ru-RU',
-      'japanese': 'ja-JP',
-      'korean': 'ko-KR',
-      'chinese': 'zh-CN',
-      'arabic': 'ar-XA',
-      'hindi': 'hi-IN',
-      'turkish': 'tr-TR',
-      'dutch': 'nl-NL',
-      'swedish': 'sv-SE',
-      'norwegian': 'nb-NO',
-      'danish': 'da-DK',
-      'finnish': 'fi-FI',
-      'polish': 'pl-PL',
-      'czech': 'cs-CZ',
-      'romanian': 'ro-RO',
-      'hungarian': 'hu-HU',
-      'greek': 'el-GR',
-      'thai': 'th-TH',
-      'vietnamese': 'vi-VN',
-      'indonesian': 'id-ID',
-      'malay': 'ms-MY',
-      'filipino': 'fil-PH',
-      'swahili': 'sw-KE',
-      'hebrew': 'he-IL',
-      'persian': 'fa-IR',
-      'ukrainian': 'uk-UA',
-      'serbian': 'sr-RS',
-      'croatian': 'hr-HR',
-      'bulgarian': 'bg-BG',
-      'slovak': 'sk-SK',
-      'slovenian': 'sl-SI',
-      'lithuanian': 'lt-LT',
-      'latvian': 'lv-LV',
-      'estonian': 'et-EE',
-      'georgian': 'ka-GE',
+  /// Get full language name from code or name for the TTS prompt.
+  String _getLanguageName(String language) {
+    // If it's already a full name, return as-is
+    if (language.length > 3) return language;
+    const names = {
+      'EN': 'English', 'IT': 'Italian', 'ES': 'Spanish',
+      'FR': 'French', 'DE': 'German', 'PT': 'Portuguese',
+      'JA': 'Japanese', 'KO': 'Korean', 'ZH': 'Chinese',
+      'AR': 'Arabic', 'HI': 'Hindi', 'TR': 'Turkish', 'RU': 'Russian',
     };
-    return languageCodes[language.toLowerCase()] ?? 'en-US';
+    return names[language.toUpperCase()] ?? language;
   }
+
+
 
   /// Pre-warm cache for common phrases in a language.
   /// Call this during app initialization or when user selects a learning language.

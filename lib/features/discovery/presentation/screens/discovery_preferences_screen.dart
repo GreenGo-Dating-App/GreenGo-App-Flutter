@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/match_preferences.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Discovery Preferences Screen
 ///
@@ -77,7 +78,7 @@ class _DiscoveryPreferencesScreenState
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to save preferences: $e'),
+            content: Text(AppLocalizations.of(context)!.failedToSavePreferences(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -112,8 +113,8 @@ class _DiscoveryPreferencesScreenState
 
     if (availableToAdd.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('All deal breakers have been added'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.allDealBreakersAdded),
           backgroundColor: AppColors.richGold,
         ),
       );
@@ -124,9 +125,9 @@ class _DiscoveryPreferencesScreenState
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Add Deal Breaker',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.addDealBreakerTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: SizedBox(
           width: double.maxFinite,
@@ -155,9 +156,9 @@ class _DiscoveryPreferencesScreenState
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.cancelLabel,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
         ],
@@ -308,9 +309,9 @@ class _DiscoveryPreferencesScreenState
 
             return AlertDialog(
               backgroundColor: AppColors.backgroundCard,
-              title: const Text(
-                'Select Country',
-                style: TextStyle(color: AppColors.textPrimary),
+              title: Text(
+                AppLocalizations.of(context)!.preferenceSelectCountry,
+                style: const TextStyle(color: AppColors.textPrimary),
               ),
               content: SizedBox(
                 width: double.maxFinite,
@@ -321,7 +322,7 @@ class _DiscoveryPreferencesScreenState
                       controller: searchController,
                       style: const TextStyle(color: AppColors.textPrimary),
                       decoration: InputDecoration(
-                        hintText: 'Search country...',
+                        hintText: AppLocalizations.of(context)!.searchCountryHint,
                         hintStyle: const TextStyle(color: AppColors.textTertiary),
                         prefixIcon: const Icon(Icons.search, color: AppColors.richGold),
                         enabledBorder: OutlineInputBorder(
@@ -347,9 +348,9 @@ class _DiscoveryPreferencesScreenState
                                 children: [
                                   const Icon(Icons.star, color: AppColors.richGold, size: 18),
                                   const SizedBox(width: 8),
-                                  const Text(
-                                    'Most Popular',
-                                    style: TextStyle(
+                                  Text(
+                                    AppLocalizations.of(context)!.preferenceMostPopular,
+                                    style: const TextStyle(
                                       color: AppColors.richGold,
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
@@ -393,9 +394,9 @@ class _DiscoveryPreferencesScreenState
                             const Divider(color: AppColors.divider),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-                              child: const Text(
-                                'All Countries',
-                                style: TextStyle(
+                              child: Text(
+                                AppLocalizations.of(context)!.preferenceAllCountries,
+                                style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
@@ -419,12 +420,12 @@ class _DiscoveryPreferencesScreenState
                             ),
                           // Full country list (or search results)
                           if (filtered.isEmpty)
-                            const Padding(
-                              padding: EdgeInsets.all(32),
+                            Padding(
+                              padding: const EdgeInsets.all(32),
                               child: Center(
                                 child: Text(
-                                  'No countries found',
-                                  style: TextStyle(color: AppColors.textTertiary),
+                                  AppLocalizations.of(context)!.preferenceNoCountriesFound,
+                                  style: const TextStyle(color: AppColors.textTertiary),
                                 ),
                               ),
                             )
@@ -481,13 +482,14 @@ class _DiscoveryPreferencesScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text(
-          'Discovery Preferences',
+        title: Text(
+          l10n.discoveryPreferencesTitle,
           style: TextStyle(
             color: AppColors.richGold,
             fontWeight: FontWeight.bold,
@@ -509,8 +511,8 @@ class _DiscoveryPreferencesScreenState
                   )
                 : TextButton(
                     onPressed: _savePreferences,
-                    child: const Text(
-                      'Save',
+                    child: Text(
+                      l10n.preferenceSave,
                       style: TextStyle(
                         color: AppColors.richGold,
                         fontSize: 16,
@@ -525,14 +527,14 @@ class _DiscoveryPreferencesScreenState
         children: [
           // Age range
           _buildSectionCard(
-            title: 'Age Range',
+            title: l10n.preferenceAgeRange,
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
-                      'Age Range',
+                    Text(
+                      l10n.preferenceAgeRange,
                       style: TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
@@ -575,14 +577,14 @@ class _DiscoveryPreferencesScreenState
 
           // Distance
           _buildSectionCard(
-            title: 'Maximum Distance',
+            title: l10n.preferenceMaxDistance,
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
-                      'Within',
+                    Text(
+                      l10n.preferenceWithin,
                       style: TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
@@ -590,8 +592,8 @@ class _DiscoveryPreferencesScreenState
                     ),
                     Text(
                       _preferences.maxDistanceKm != null
-                          ? '${_preferences.maxDistanceKm} km'
-                          : 'Unlimited',
+                          ? l10n.preferenceDistanceKm(_preferences.maxDistanceKm!)
+                          : l10n.preferenceUnlimited,
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 16,
@@ -617,8 +619,8 @@ class _DiscoveryPreferencesScreenState
                 ),
                 const SizedBox(height: 8),
                 SwitchListTile(
-                  title: const Text(
-                    'No distance limit',
+                  title: Text(
+                    l10n.preferenceNoDistanceLimit,
                     style: TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
@@ -643,13 +645,13 @@ class _DiscoveryPreferencesScreenState
 
           // Country filter
           _buildSectionCard(
-            title: 'Country',
+            title: l10n.preferenceCountry,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Only show people from specific countries (leave empty to show all)',
-                  style: TextStyle(
+                Text(
+                  l10n.preferenceCountryDescription,
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 14,
                   ),
@@ -688,8 +690,8 @@ class _DiscoveryPreferencesScreenState
                         .toList(),
                   )
                 else
-                  const Text(
-                    'No country filter — showing worldwide',
+                  Text(
+                    l10n.preferenceNoCountryFilter,
                     style: TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 14,
@@ -703,8 +705,8 @@ class _DiscoveryPreferencesScreenState
                     Icons.add,
                     color: AppColors.richGold,
                   ),
-                  label: const Text(
-                    'Add Country',
+                  label: Text(
+                    l10n.preferenceAddCountry,
                     style: TextStyle(
                       color: AppColors.richGold,
                     ),
@@ -718,13 +720,13 @@ class _DiscoveryPreferencesScreenState
 
           // Gender preference
           _buildSectionCard(
-            title: 'Show Me',
+            title: l10n.preferenceShowMe,
             child: Column(
               children: [
                 _buildRadioOption(
                   value: 'men',
                   groupValue: _preferences.interestedInGender,
-                  label: 'Men',
+                  label: l10n.preferenceMen,
                   onChanged: (value) {
                     _updatePreferences(
                       _preferences.copyWith(interestedInGender: value),
@@ -734,7 +736,7 @@ class _DiscoveryPreferencesScreenState
                 _buildRadioOption(
                   value: 'women',
                   groupValue: _preferences.interestedInGender,
-                  label: 'Women',
+                  label: l10n.preferenceWomen,
                   onChanged: (value) {
                     _updatePreferences(
                       _preferences.copyWith(interestedInGender: value),
@@ -744,7 +746,7 @@ class _DiscoveryPreferencesScreenState
                 _buildRadioOption(
                   value: 'everyone',
                   groupValue: _preferences.interestedInGender,
-                  label: 'Everyone',
+                  label: l10n.preferenceEveryone,
                   onChanged: (value) {
                     _updatePreferences(
                       _preferences.copyWith(interestedInGender: value),
@@ -759,13 +761,13 @@ class _DiscoveryPreferencesScreenState
 
           // Sexual Orientation filter
           _buildSectionCard(
-            title: 'Sexual Orientation',
+            title: l10n.preferenceSexualOrientation,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Filter by orientation (leave all unchecked to show everyone)',
-                  style: TextStyle(
+                Text(
+                  l10n.preferenceOrientationDescription,
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 14,
                   ),
@@ -805,21 +807,21 @@ class _DiscoveryPreferencesScreenState
 
           // Advanced filters
           _buildSectionCard(
-            title: 'Advanced Filters',
+            title: l10n.preferenceAdvancedFilters,
             child: Column(
               children: [
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text(
-                    'Only show verified profiles',
-                    style: TextStyle(
+                  title: Text(
+                    l10n.preferenceOnlyVerified,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
                     ),
                   ),
-                  subtitle: const Text(
-                    'All profiles must be verified',
-                    style: TextStyle(
+                  subtitle: Text(
+                    l10n.preferenceAllVerified,
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
                     ),
@@ -831,16 +833,16 @@ class _DiscoveryPreferencesScreenState
                 const Divider(color: AppColors.divider),
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text(
-                    'Recently active',
-                    style: TextStyle(
+                  title: Text(
+                    l10n.preferenceRecentlyActive,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
                     ),
                   ),
-                  subtitle: const Text(
-                    'Show only profiles active in the last 7 days',
-                    style: TextStyle(
+                  subtitle: Text(
+                    l10n.preferenceRecentlyActiveDesc,
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
                     ),
@@ -854,16 +856,16 @@ class _DiscoveryPreferencesScreenState
                   },
                 ),
                 SwitchListTile(
-                  title: const Text(
-                    'Online Now',
-                    style: TextStyle(
+                  title: Text(
+                    l10n.preferenceOnlineNow,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
                     ),
                   ),
-                  subtitle: const Text(
-                    'Show only profiles that are currently online',
-                    style: TextStyle(
+                  subtitle: Text(
+                    l10n.preferenceOnlineNowDesc,
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
                     ),
@@ -884,13 +886,13 @@ class _DiscoveryPreferencesScreenState
 
           // Deal breakers
           _buildSectionCard(
-            title: 'Deal Breakers',
+            title: l10n.preferenceDealBreakers,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Never show me profiles with these characteristics',
-                  style: TextStyle(
+                Text(
+                  l10n.preferenceDealBreakersDesc,
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 14,
                   ),
@@ -905,8 +907,8 @@ class _DiscoveryPreferencesScreenState
                         .toList(),
                   )
                 else
-                  const Text(
-                    'No deal breakers set',
+                  Text(
+                    l10n.preferenceNoDealBreakers,
                     style: TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 14,
@@ -920,9 +922,9 @@ class _DiscoveryPreferencesScreenState
                     Icons.add,
                     color: AppColors.richGold,
                   ),
-                  label: const Text(
-                    'Add Deal Breaker',
-                    style: TextStyle(
+                  label: Text(
+                    l10n.preferenceAddDealBreaker,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                     ),
                   ),
@@ -946,7 +948,7 @@ class _DiscoveryPreferencesScreenState
               side: const BorderSide(color: AppColors.divider),
               padding: const EdgeInsets.symmetric(vertical: 16),
             ),
-            child: const Text('Reset to Default'),
+            child: Text(l10n.resetToDefault),
           ),
 
           const SizedBox(height: 24),

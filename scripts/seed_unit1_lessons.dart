@@ -124,6 +124,13 @@ const kVocabulary = <String, Map<String, String>>{
 // ─────────────────────────────────────────────────────────────────────────────
 
 /// Generate questions for a single lesson in a language pair.
+///
+/// Uses the app's field format:
+///   - questionType: multiple_choice, fill_in_blank, translation, true_false, matching
+///   - question: the prompt text
+///   - answers: pipe-separated options (for multiple_choice/true_false) or
+///              "Left:Right|Left:Right" for matching
+///   - rightAnswer: the correct answer string
 List<Map<String, dynamic>> generateLessonQuestions({
   required String source,
   required String target,
@@ -153,11 +160,10 @@ List<Map<String, dynamic>> generateLessonQuestions({
 
     questions.add({
       'questionIndex': qIdx++,
-      'type': 'multiple_choice',
-      'prompt': 'What is "$word" in ${_langName(target)}?',
-      'options': options,
-      'correctAnswer': correct,
-      'difficulty': 1,
+      'questionType': 'multiple_choice',
+      'question': 'What is "$word" in ${_langName(target)}?',
+      'answers': options.join('|'),
+      'rightAnswer': correct,
     });
   }
 
@@ -169,10 +175,10 @@ List<Map<String, dynamic>> generateLessonQuestions({
 
     questions.add({
       'questionIndex': qIdx++,
-      'type': 'fill_in_blank',
-      'prompt': 'Translate "$word" to ${_langName(target)}:',
-      'correctAnswer': correct,
-      'difficulty': 2,
+      'questionType': 'fill_in_blank',
+      'question': 'Translate "$word" to ${_langName(target)}:',
+      'answers': '',
+      'rightAnswer': correct,
     });
   }
 
@@ -184,10 +190,10 @@ List<Map<String, dynamic>> generateLessonQuestions({
 
     questions.add({
       'questionIndex': qIdx++,
-      'type': 'translation',
-      'prompt': 'What does "$word" mean in ${_langName(source)}?',
-      'correctAnswer': correct,
-      'difficulty': 2,
+      'questionType': 'translation',
+      'question': 'What does "$word" mean in ${_langName(source)}?',
+      'answers': '',
+      'rightAnswer': correct,
     });
   }
 
@@ -200,28 +206,25 @@ List<Map<String, dynamic>> generateLessonQuestions({
 
     questions.add({
       'questionIndex': qIdx++,
-      'type': 'true_false',
-      'prompt': '"$word" translates to "$wrongTranslation" in ${_langName(target)}.',
-      'correctAnswer': 'false',
-      'difficulty': 1,
+      'questionType': 'true_false',
+      'question': '"$word" translates to "$wrongTranslation" in ${_langName(target)}.',
+      'answers': 'True|False',
+      'rightAnswer': 'False',
     });
   }
 
   // 1 matching (pair 4 words)
-  final matchPairs = <Map<String, String>>[];
+  final matchPairs = <String>[];
   for (int i = 0; i < 4 && i < lessonVocab.length; i++) {
     final key = lessonVocab[i];
-    matchPairs.add({
-      'source': kVocabulary[key]![source]!,
-      'target': kVocabulary[key]![target]!,
-    });
+    matchPairs.add('${kVocabulary[key]![source]!}:${kVocabulary[key]![target]!}');
   }
   questions.add({
     'questionIndex': qIdx++,
-    'type': 'matching',
-    'prompt': 'Match the words:',
-    'pairs': matchPairs,
-    'difficulty': 2,
+    'questionType': 'matching',
+    'question': 'Match the words:',
+    'answers': matchPairs.join('|'),
+    'rightAnswer': matchPairs.join('|'),
   });
 
   return questions;
@@ -256,9 +259,10 @@ Future<void> main() async {
 
       // Check if already seeded
       final existingCheck = await firestore
-          .collection('lesson_questions')
-          .where('pairId', isEqualTo: pairId)
-          .where('unitId', isEqualTo: kUnit1Id)
+          .collection('lessons')
+          .where('languageSource', isEqualTo: source)
+          .where('languageTarget', isEqualTo: target)
+          .where('unit', isEqualTo: 1)
           .limit(1)
           .get();
 
@@ -280,15 +284,14 @@ Future<void> main() async {
         );
 
         for (final q in questions) {
-          final docRef = firestore.collection('lesson_questions').doc();
+          final docRef = firestore.collection('lessons').doc();
           batch.set(docRef, {
             ...q,
-            'pairId': pairId,
-            'sourceLanguage': source,
-            'targetLanguage': target,
-            'unitId': kUnit1Id,
-            'lessonId': lesson['id'],
-            'lessonIndex': lesson['index'],
+            'questionNumber': q['questionIndex'],
+            'languageSource': source,
+            'languageTarget': target,
+            'unit': 1,
+            'lesson': lesson['index'],
             'createdAt': FieldValue.serverTimestamp(),
           });
           batchCount++;
@@ -314,15 +317,14 @@ Future<void> main() async {
       ];
 
       for (final node in nodeTypes) {
-        final docRef = firestore.collection('constellation_nodes').doc();
+        final docRef = firestore.collection('constellation').doc();
         batch.set(docRef, {
-          'pairId': pairId,
-          'sourceLanguage': source,
-          'targetLanguage': target,
-          'unitId': kUnit1Id,
+          'languageSource': source,
+          'languageTarget': target,
+          'unit': 1,
+          'nodeIndex': node['order'],
           'nodeType': node['type'],
           'lessonId': node['lessonId'],
-          'order': node['order'],
           'isLocked': (node['order'] as int) > 1,
           'createdAt': FieldValue.serverTimestamp(),
         });

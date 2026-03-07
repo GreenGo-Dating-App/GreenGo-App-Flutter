@@ -156,19 +156,20 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   Widget _buildAlbumMessage(BuildContext context, Message message, bool isCurrentUser) {
+    final l10n = AppLocalizations.of(context)!;
     final isShare = message.type == MessageType.albumShare;
-    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? 'Someone';
+    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? l10n.chatSomeone;
 
     // Determine display text
     String displayText;
     if (isShare) {
       displayText = isCurrentUser
-          ? 'You shared your private album'
-          : '$albumOwnerName shared their private album with you';
+          ? l10n.chatYouSharedAlbum
+          : l10n.chatOtherSharedAlbum(albumOwnerName);
     } else {
       displayText = isCurrentUser
-          ? 'You revoked your shared album'
-          : '$albumOwnerName revoked their album';
+          ? l10n.chatYouRevokedAlbum
+          : l10n.chatOtherRevokedAlbum(albumOwnerName);
     }
 
     // albumShare is tappable for the receiver; albumRevoke is never tappable
@@ -211,7 +212,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               if (isTappable) ...[
                 const SizedBox(height: 4),
                 Text(
-                  'Tap to view album',
+                  l10n.chatTapToViewAlbum,
                   style: TextStyle(
                     color: AppColors.richGold.withOpacity(0.8),
                     fontSize: 11,
@@ -235,8 +236,9 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   Widget _buildReplyIndicator() {
+    final l10n = AppLocalizations.of(context)!;
     final isCurrentUser = widget.isCurrentUser;
-    final replyContent = widget.message.metadata?['replyContent'] as String? ?? 'Message';
+    final replyContent = widget.message.metadata?['replyContent'] as String? ?? l10n.chatMessage;
     final isMediaUrl = replyContent.contains('firebasestorage.googleapis.com') ||
         replyContent.startsWith('https://') && (replyContent.contains('/chat_images/') || replyContent.contains('/chat_videos/'));
 
@@ -286,7 +288,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  replyContent.contains('/chat_videos/') ? 'Video' : 'Photo',
+                  replyContent.contains('/chat_videos/') ? l10n.chatVideo : l10n.chatPhoto,
                   style: TextStyle(
                     color: isCurrentUser
                         ? AppColors.deepBlack.withOpacity(0.7)
@@ -326,6 +328,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   Widget _buildMessageContent() {
+    final l10n = AppLocalizations.of(context)!;
     final message = widget.message;
     final isCurrentUser = widget.isCurrentUser;
     final hasTranslation = message.translatedContent != null &&
@@ -407,14 +410,14 @@ class _MessageBubbleState extends State<MessageBubble> {
                       // Semi-transparent overlay + tap icon
                       Container(
                         color: Colors.black.withOpacity(0.2),
-                        child: const Column(
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.visibility, color: Colors.white70, size: 32),
-                            SizedBox(height: 6),
+                            const Icon(Icons.visibility, color: Colors.white70, size: 32),
+                            const SizedBox(height: 6),
                             Text(
-                              'Tap to view',
-                              style: TextStyle(
+                              l10n.chatTapToView,
+                              style: const TextStyle(
                                 color: Colors.white70,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
@@ -786,13 +789,13 @@ class _FullScreenVideoPlayerState extends State<_FullScreenVideoPlayer> {
       ),
       body: Center(
         child: _hasError
-            ? const Column(
+            ? Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.error_outline, color: Colors.white54, size: 48),
-                  SizedBox(height: 12),
-                  Text('Failed to load video',
-                      style: TextStyle(color: Colors.white70)),
+                  const Icon(Icons.error_outline, color: Colors.white54, size: 48),
+                  const SizedBox(height: 12),
+                  Text(AppLocalizations.of(context)!.chatFailedToLoadVideo,
+                      style: const TextStyle(color: Colors.white70)),
                 ],
               )
             : !_isInitialized

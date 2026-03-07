@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../bloc/language_games_bloc.dart';
@@ -138,8 +139,9 @@ class _GameResultsScreenState extends State<GameResultsScreen>
       final available = (coinDoc.data()?['availableCoins'] as int?) ?? 0;
       if (available < 10) {
         if (mounted) {
+          final l10n = AppLocalizations.of(context)!;
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Not enough coins (10 required)')),
+            SnackBar(content: Text(l10n.gameResultsNotEnoughCoins(10))),
           );
         }
         return;
@@ -170,6 +172,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
@@ -222,6 +225,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildTrophyHeader() {
+    final l10n = AppLocalizations.of(context)!;
     return AnimatedBuilder(
       animation: _glowPulseAnimation,
       builder: (context, _) {
@@ -272,7 +276,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                           : null,
                     ),
                     child: Text(
-                      _isWinner ? 'VICTORY!' : 'GAME OVER',
+                      _isWinner ? l10n.gameResultsVictory : l10n.gameResultsGameOver,
                       style: TextStyle(
                         color: _isWinner
                             ? AppColors.backgroundDark
@@ -293,6 +297,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildWinnerAnnouncement() {
+    final l10n = AppLocalizations.of(context)!;
     final winner = widget.room.getPlayer(widget.winnerId ?? '');
     if (winner == null) return const SizedBox.shrink();
 
@@ -331,9 +336,9 @@ class _GameResultsScreenState extends State<GameResultsScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Winner',
-                    style: TextStyle(
+                  Text(
+                    l10n.gameResultsWinner,
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 11,
                       fontWeight: FontWeight.bold,
@@ -342,7 +347,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    isMe ? 'You won!' : winner.displayName,
+                    isMe ? l10n.gameResultsYouWon : winner.displayName,
                     style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 20,
@@ -353,7 +358,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
               ),
             ),
             Text(
-              '${widget.finalScores[winner.userId] ?? 0} pts',
+              l10n.gameScorePts(widget.finalScores[winner.userId] ?? 0),
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 24,
@@ -367,14 +372,15 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildLeaderboard() {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'FINAL STANDINGS',
-            style: TextStyle(
+          Text(
+            l10n.gameResultsFinalStandings,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -435,6 +441,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
     required bool isMe,
     required bool isLast,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     final String rankText;
     final Color rankColor;
     switch (rank) {
@@ -488,7 +495,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
           // Player name
           Expanded(
             child: Text(
-              isMe ? 'You' : (player?.displayName ?? 'Player'),
+              isMe ? l10n.gameYou : (player?.displayName ?? l10n.gameDefaultPlayerName),
               style: TextStyle(
                 color: isMe ? AppColors.richGold : AppColors.textPrimary,
                 fontSize: 15,
@@ -498,7 +505,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
           ),
           // Score
           Text(
-            '$score pts',
+            l10n.gameScorePts(score),
             style: TextStyle(
               color: rank == 1 ? AppColors.richGold : AppColors.textSecondary,
               fontSize: 16,
@@ -511,6 +518,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildXpBreakdown() {
+    final l10n = AppLocalizations.of(context)!;
     final baseXp = 25;
     final difficultyBonus = widget.room.difficulty * 5;
     final winnerBonus = _isWinner ? 50 : 0;
@@ -523,9 +531,9 @@ class _GameResultsScreenState extends State<GameResultsScreen>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'REWARDS EARNED',
-            style: TextStyle(
+          Text(
+            l10n.gameResultsRewardsEarned,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,
               fontWeight: FontWeight.bold,
@@ -542,11 +550,11 @@ class _GameResultsScreenState extends State<GameResultsScreen>
             ),
             child: Column(
               children: [
-                _buildXpRow('Base XP', '+$baseXp'),
+                _buildXpRow(l10n.gameResultsBaseXp, l10n.gameResultsPlusXp(baseXp)),
                 _buildXpRow(
-                    'Difficulty Bonus (Lv.${widget.room.difficulty})',
-                    '+$difficultyBonus'),
-                if (_isWinner) _buildXpRow('Winner Bonus', '+$winnerBonus'),
+                    l10n.gameResultsDifficultyBonus(widget.room.difficulty),
+                    l10n.gameResultsPlusXp(difficultyBonus)),
+                if (_isWinner) _buildXpRow(l10n.gameResultsWinnerBonus, l10n.gameResultsPlusXp(winnerBonus)),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Divider(color: AppColors.divider, height: 1),
@@ -558,16 +566,16 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                     return Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          'Total XP',
-                          style: TextStyle(
+                        Text(
+                          l10n.gameResultsTotalXp,
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          '+$countUp XP',
+                          l10n.gameResultsPlusXp(countUp),
                           style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 18,
@@ -583,9 +591,9 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
-                        'Coins Earned',
-                        style: TextStyle(
+                      Text(
+                        l10n.gameResultsCoinsEarned,
+                        style: const TextStyle(
                           color: AppColors.accentGold,
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
@@ -648,6 +656,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildLearningSection() {
+    final l10n = AppLocalizations.of(context)!;
     // Words learned come from the game rounds (usedWords on the room)
     final words = widget.room.usedWords;
     if (words.isEmpty) return const SizedBox.shrink();
@@ -657,13 +666,13 @@ class _GameResultsScreenState extends State<GameResultsScreen>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.school_rounded, color: AppColors.richGold, size: 18),
-              SizedBox(width: 6),
+              const Icon(Icons.school_rounded, color: AppColors.richGold, size: 18),
+              const SizedBox(width: 6),
               Text(
-                'WHAT YOU LEARNED',
-                style: TextStyle(
+                l10n.gameResultsWhatYouLearned,
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 11,
                   fontWeight: FontWeight.bold,
@@ -712,6 +721,7 @@ class _GameResultsScreenState extends State<GameResultsScreen>
   }
 
   Widget _buildActionButtons() {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 24, 20, 0),
       child: Column(
@@ -730,14 +740,14 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                 ),
                 elevation: 4,
               ),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.replay_rounded, size: 22),
-                  SizedBox(width: 8),
+                  const Icon(Icons.replay_rounded, size: 22),
+                  const SizedBox(width: 8),
                   Text(
-                    'Play Again',
-                    style: TextStyle(
+                    l10n.gameResultsPlayAgain,
+                    style: const TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.bold,
                     ),
@@ -762,9 +772,9 @@ class _GameResultsScreenState extends State<GameResultsScreen>
                   borderRadius: BorderRadius.circular(14),
                 ),
               ),
-              child: const Text(
-                'Back to Lobby',
-                style: TextStyle(
+              child: Text(
+                l10n.gameResultsBackToLobby,
+                style: const TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
                 ),

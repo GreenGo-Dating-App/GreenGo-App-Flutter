@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../profile/domain/entities/profile.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Traveler Overlay Widget
 ///
@@ -27,11 +28,11 @@ class TravelerOverlay extends StatelessWidget {
         : profile.location.country;
     final travelCity = profile.travelerLocation?.city ?? '';
 
-    if (compact) return _buildCompact(originCity, travelCity);
-    return _buildFull(originCity, travelCity);
+    if (compact) return _buildCompact(context, originCity, travelCity);
+    return _buildFull(context, originCity, travelCity);
   }
 
-  Widget _buildCompact(String originCity, String travelCity) {
+  Widget _buildCompact(BuildContext context, String originCity, String travelCity) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
       decoration: BoxDecoration(
@@ -62,9 +63,9 @@ class TravelerOverlay extends StatelessWidget {
               ),
             )
           else
-            const Text(
-              'Traveler',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.travelerBadge,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 8,
                 fontWeight: FontWeight.bold,
@@ -75,7 +76,7 @@ class TravelerOverlay extends StatelessWidget {
     );
   }
 
-  Widget _buildFull(String originCity, String travelCity) {
+  Widget _buildFull(BuildContext context, String originCity, String travelCity) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
@@ -108,9 +109,9 @@ class TravelerOverlay extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'Traveler',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.travelerBadge,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 11,
                   fontWeight: FontWeight.bold,
@@ -147,7 +148,7 @@ class TravelerOverlay extends StatelessWidget {
                 )
               else if (travelCity.isNotEmpty)
                 Text(
-                  'In $travelCity',
+                  AppLocalizations.of(context)!.travelerInCity(travelCity),
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.85),
                     fontSize: 10,

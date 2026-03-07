@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -41,7 +42,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
     if (bio.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Please write something about yourself'),
+          content: Text(AppLocalizations.of(context)?.onboardingWriteSomethingAboutYourself ?? 'Please write something about yourself'),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -53,7 +54,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
     if (bio.length < 50) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Bio must be at least 50 characters'),
+          content: Text(AppLocalizations.of(context)?.onboardingBioMinLength ?? 'Bio must be at least 50 characters'),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -86,8 +87,8 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
         final isValidLength = charCount >= 50;
 
         return LuxuryOnboardingLayout(
-          title: 'Express yourself',
-          subtitle: 'Write something that captures who you are',
+          title: AppLocalizations.of(context)?.onboardingExpressYourself ?? 'Express yourself',
+          subtitle: AppLocalizations.of(context)?.onboardingExpressYourselfSubtitle ?? 'Write something that captures who you are',
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -136,7 +137,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                                 ),
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  hintText: 'Tell us about your interests, hobbies, what you\'re looking for...',
+                                  hintText: AppLocalizations.of(context)?.onboardingBioHint ?? 'Tell us about your interests, hobbies, what you\'re looking for...',
                                   hintStyle: TextStyle(
                                     color: Colors.white.withOpacity(0.3),
                                     fontSize: 16,
@@ -222,8 +223,8 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                           ),
                         ),
                         const SizedBox(width: 12),
-                        const Text(
-                          'Writing tips',
+                        Text(
+                          AppLocalizations.of(context)?.onboardingWritingTips ?? 'Writing tips',
                           style: TextStyle(
                             color: AppColors.richGold,
                             fontSize: 16,
@@ -233,10 +234,10 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                       ],
                     ),
                     const SizedBox(height: 16),
-                    _buildTip('Be authentic and genuine'),
-                    _buildTip('Share your passions and hobbies'),
-                    _buildTip('What makes you unique?'),
-                    _buildTip('Keep it positive'),
+                    _buildTip(AppLocalizations.of(context)?.onboardingTipAuthentic ?? 'Be authentic and genuine'),
+                    _buildTip(AppLocalizations.of(context)?.onboardingTipPassions ?? 'Share your passions and hobbies'),
+                    _buildTip(AppLocalizations.of(context)?.onboardingTipUnique ?? 'What makes you unique?'),
+                    _buildTip(AppLocalizations.of(context)?.onboardingTipPositive ?? 'Keep it positive'),
                   ],
                 ),
               ),
@@ -245,7 +246,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
 
               // Continue Button
               LuxuryButton(
-                text: 'Continue',
+                text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
                 onPressed: _handleContinue,
               ),
 

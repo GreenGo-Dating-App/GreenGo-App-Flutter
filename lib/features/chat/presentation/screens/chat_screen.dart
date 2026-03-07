@@ -904,9 +904,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context)?.privateAlbum != null
-                ? 'No private photos to send'
-                : 'No private photos to send'),
+            content: Text(AppLocalizations.of(context)!.chatNoPrivatePhotos),
             backgroundColor: AppColors.warningAmber,
           ),
         );
@@ -1089,7 +1087,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load album: ${e.toString()}'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1144,8 +1142,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('No private photos available'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.chatNoPrivatePhotos),
             backgroundColor: AppColors.warningAmber,
           ),
         );
@@ -1230,7 +1228,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load album: ${e.toString()}'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1319,7 +1317,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to share album: ${e.toString()}'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToShareAlbum}: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1355,7 +1353,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to revoke access: ${e.toString()}'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToRevokeAccess}: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -1391,7 +1389,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to load album: ${e.toString()}'),
+            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
             backgroundColor: AppColors.errorRed,
           ),
         );

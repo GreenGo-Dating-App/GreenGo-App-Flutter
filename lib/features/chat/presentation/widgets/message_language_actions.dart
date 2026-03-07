@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uuid/uuid.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
@@ -72,7 +73,7 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
 
     final targetLanguage = widget.userNativeLanguage;
     if (targetLanguage == null) {
-      _showSnackBar('Set your native language in profile settings', isError: true);
+      _showSnackBar(AppLocalizations.of(context)!.chatSetNativeLanguage, isError: true);
       return;
     }
 
@@ -95,13 +96,13 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
           widget.onTranslated?.call(translated);
           HapticFeedback.lightImpact();
         } else {
-          _showSnackBar('Message is already in your language');
+          _showSnackBar(AppLocalizations.of(context)!.chatAlreadyInYourLanguage);
         }
       }
     } catch (e) {
       if (mounted) {
         setState(() => _isTranslating = false);
-        _showSnackBar('Translation failed. Try again.', isError: true);
+        _showSnackBar(AppLocalizations.of(context)!.chatTranslationFailed, isError: true);
       }
     }
   }
@@ -151,12 +152,12 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
       if (mounted) {
         setState(() => _isSavingFlashcard = false);
         HapticFeedback.mediumImpact();
-        _showSnackBar('Phrase saved to your flashcard deck!');
+        _showSnackBar(AppLocalizations.of(context)!.chatPhraseSaved);
       }
     } catch (e) {
       if (mounted) {
         setState(() => _isSavingFlashcard = false);
-        _showSnackBar('Failed to save flashcard', isError: true);
+        _showSnackBar(AppLocalizations.of(context)!.chatFailedToSaveFlashcard, isError: true);
       }
     }
   }
@@ -164,7 +165,7 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
   /// Text-to-speech placeholder
   void _listenToPronunciation() {
     HapticFeedback.lightImpact();
-    _showSnackBar('Text-to-speech coming soon');
+    _showSnackBar(AppLocalizations.of(context)!.chatTtsComingSoon);
   }
 
   void _showSnackBar(String message, {bool isError = false}) {
@@ -208,21 +209,21 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
               _buildActionPill(
                 icon: _isTranslating ? null : Icons.translate,
                 label: _isTranslating
-                    ? 'Translating...'
-                    : (_translatedText != null ? 'Translated' : 'Translate'),
+                    ? AppLocalizations.of(context)!.chatTranslating
+                    : (_translatedText != null ? AppLocalizations.of(context)!.chatTranslated : AppLocalizations.of(context)!.chatTranslate),
                 onTap: _translatedText != null ? null : _translateMessage,
                 isLoading: _isTranslating,
                 isCompleted: _translatedText != null,
               ),
               _buildActionPill(
                 icon: _isSavingFlashcard ? null : Icons.school_outlined,
-                label: _isSavingFlashcard ? 'Saving...' : 'Learn This',
+                label: _isSavingFlashcard ? AppLocalizations.of(context)!.chatSaving : AppLocalizations.of(context)!.chatLearnThis,
                 onTap: _saveAsFlashcard,
                 isLoading: _isSavingFlashcard,
               ),
               _buildActionPill(
                 icon: Icons.volume_up_outlined,
-                label: 'Listen',
+                label: AppLocalizations.of(context)!.chatListen,
                 onTap: _listenToPronunciation,
               ),
             ],

@@ -466,7 +466,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           if (widget.profile.weight != null)
                             _buildDetailRow(
                               icon: Icons.fitness_center,
-                              label: 'Weight',
+                              label: AppLocalizations.of(context)!.weightLabel,
                               value: '${widget.profile.weight} kg',
                             ),
                           if (widget.profile.education != null)
@@ -519,7 +519,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 const SizedBox(width: 12),
                                 Expanded(
                                   child: Text(
-                                    'You matched with ${widget.profile.displayName} on ${_formatMatchDate(widget.match!.matchedAt)}',
+                                    AppLocalizations.of(context)!.matchedWithDate(widget.profile.displayName, _formatMatchDate(widget.match!.matchedAt)),
                                     style: const TextStyle(
                                       color: AppColors.richGold,
                                       fontSize: 14,

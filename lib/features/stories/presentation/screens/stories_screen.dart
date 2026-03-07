@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/story.dart';
 
@@ -162,13 +163,14 @@ class _StoriesScreenState extends State<StoriesScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (widget.userStories.isEmpty) {
-      return const Scaffold(
+      return Scaffold(
         backgroundColor: Colors.black,
         body: Center(
           child: Text(
-            'No stories available',
-            style: TextStyle(color: Colors.white),
+            l10n.storiesNoStories,
+            style: const TextStyle(color: Colors.white),
           ),
         ),
       );
@@ -178,12 +180,12 @@ class _StoriesScreenState extends State<StoriesScreen>
     final stories = currentUser.activeStories;
 
     if (stories.isEmpty) {
-      return const Scaffold(
+      return Scaffold(
         backgroundColor: Colors.black,
         body: Center(
           child: Text(
-            'No active stories',
-            style: TextStyle(color: Colors.white),
+            l10n.storiesNoActive,
+            style: const TextStyle(color: Colors.white),
           ),
         ),
       );
@@ -342,7 +344,7 @@ class _StoriesScreenState extends State<StoriesScreen>
                           child: TextField(
                             style: const TextStyle(color: Colors.white),
                             decoration: InputDecoration(
-                              hintText: 'Send a message...',
+                              hintText: l10n.storiesSendMessageHint,
                               hintStyle: TextStyle(color: Colors.white.withOpacity(0.5)),
                               border: InputBorder.none,
                             ),
@@ -404,13 +406,14 @@ class _StoriesScreenState extends State<StoriesScreen>
   }
 
   String _getTimeAgo(DateTime dateTime) {
+    final l10n = AppLocalizations.of(context)!;
     final difference = DateTime.now().difference(dateTime);
     if (difference.inMinutes < 60) {
-      return '${difference.inMinutes}m ago';
+      return l10n.storiesMinutesAgo(difference.inMinutes);
     } else if (difference.inHours < 24) {
-      return '${difference.inHours}h ago';
+      return l10n.storiesHoursAgo(difference.inHours);
     }
-    return '${difference.inDays}d ago';
+    return l10n.storiesDaysAgo(difference.inDays);
   }
 }
 
@@ -470,9 +473,9 @@ class StoriesRow extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 4),
-            const Text(
-              'Your Story',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.storiesYourStory,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 11,
               ),
@@ -668,11 +671,12 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Create Story'),
+        title: Text(l10n.storiesCreateStory),
         actions: [
           if (_selectedFile != null)
             TextButton(
@@ -686,9 +690,9 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
                         color: AppColors.richGold,
                       ),
                     )
-                  : const Text(
-                      'Post',
-                      style: TextStyle(
+                  : Text(
+                      l10n.storiesPost,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
@@ -704,6 +708,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   }
 
   Widget _buildMediaPicker() {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -714,18 +719,18 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
             color: AppColors.textTertiary,
           ),
           const SizedBox(height: 24),
-          const Text(
-            'Share a moment',
-            style: TextStyle(
+          Text(
+            l10n.storiesShareMoment,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Your story will disappear after 24 hours',
-            style: TextStyle(
+          Text(
+            l10n.storiesDisappearAfter24h,
+            style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 14,
             ),
@@ -736,19 +741,19 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
             children: [
               _buildOptionButton(
                 icon: Icons.photo_library,
-                label: 'Gallery',
+                label: l10n.storiesGallery,
                 onTap: _pickImage,
               ),
               const SizedBox(width: 24),
               _buildOptionButton(
                 icon: Icons.camera_alt,
-                label: 'Photo',
+                label: l10n.storiesPhoto,
                 onTap: _takePhoto,
               ),
               const SizedBox(width: 24),
               _buildOptionButton(
                 icon: Icons.videocam,
-                label: 'Video',
+                label: l10n.storiesVideo,
                 onTap: _recordVideo,
               ),
             ],
@@ -790,6 +795,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   }
 
   Widget _buildPreview() {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         Expanded(
@@ -830,7 +836,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
             controller: _captionController,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              hintText: 'Add a caption...',
+              hintText: l10n.storiesAddCaptionHint,
               hintStyle: const TextStyle(color: AppColors.textTertiary),
               filled: true,
               fillColor: AppColors.backgroundDark,

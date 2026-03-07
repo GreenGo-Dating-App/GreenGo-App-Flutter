@@ -289,6 +289,76 @@ class RespondToGameInvite extends LanguageGamesEvent {
   List<Object?> get props => [inviteId, accepted, roomId, userId, displayName];
 }
 
+/// Word Bomb timeout — current player ran out of time.
+/// Removes a life and advances the turn atomically.
+class WordBombTimeout extends LanguageGamesEvent {
+  const WordBombTimeout({
+    required this.roomId,
+    required this.userId,
+  });
+
+  final String roomId;
+  final String userId;
+
+  @override
+  List<Object?> get props => [roomId, userId];
+}
+
+/// Vocabulary Chain timeout — current player ran out of time.
+/// Removes a life and advances the turn atomically.
+class VocabularyChainTimeout extends LanguageGamesEvent {
+  const VocabularyChainTimeout({
+    required this.roomId,
+    required this.userId,
+  });
+
+  final String roomId;
+  final String userId;
+
+  @override
+  List<Object?> get props => [roomId, userId];
+}
+
+/// Language Snaps timeout — current player ran out of time.
+/// Just advances the turn (no life loss for memory game).
+class SnapTimeout extends LanguageGamesEvent {
+  const SnapTimeout({required this.roomId});
+
+  final String roomId;
+
+  @override
+  List<Object?> get props => [roomId];
+}
+
+/// Language Tapples timeout — current player ran out of time.
+/// Removes a life and advances the turn.
+class TapplesTimeout extends LanguageGamesEvent {
+  const TapplesTimeout({
+    required this.roomId,
+    required this.userId,
+  });
+
+  final String roomId;
+  final String userId;
+
+  @override
+  List<Object?> get props => [roomId, userId];
+}
+
+/// Submit a clue for Picture Guess game (describer only).
+class SubmitClue extends LanguageGamesEvent {
+  const SubmitClue({
+    required this.roomId,
+    required this.clue,
+  });
+
+  final String roomId;
+  final String clue;
+
+  @override
+  List<Object?> get props => [roomId, clue];
+}
+
 /// Report a word as incorrect or inappropriate.
 class ReportWord extends LanguageGamesEvent {
   const ReportWord({

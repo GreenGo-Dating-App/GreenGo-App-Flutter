@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/dating_etiquette.dart';
 import '../bloc/cultural_exchange_bloc.dart';
@@ -51,9 +52,9 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: const Text(
-          'Dating Etiquette',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.culturalExchangeDatingEtiquette,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
             fontSize: 20,

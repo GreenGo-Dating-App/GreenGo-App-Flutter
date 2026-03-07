@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/conversation_expiry.dart';
 
 /// Widget to display conversation expiry countdown
@@ -57,6 +58,7 @@ class ExpiryTimerWidget extends StatelessWidget {
   }
 
   Widget _buildFull(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final color = _getStatusColor(expiry.status);
 
     return Container(
@@ -122,7 +124,7 @@ class ExpiryTimerWidget extends StatelessWidget {
                 OutlinedButton.icon(
                   onPressed: onExtend,
                   icon: const Icon(Icons.add_alarm, size: 16),
-                  label: Text('Extend (${ExpiryConfig.extensionCost} coins)'),
+                  label: Text(l10n.extendCoinsLabel(ExpiryConfig.extensionCost)),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: color,
                     side: BorderSide(color: color),
@@ -246,6 +248,7 @@ class ExpiringConversationItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final color = _getStatusColor(expiry.status);
 
     return Card(
@@ -310,7 +313,7 @@ class ExpiringConversationItem extends StatelessWidget {
                   onPressed: onExtend,
                   icon: const Icon(Icons.add_alarm),
                   color: color,
-                  tooltip: 'Extend',
+                  tooltip: l10n.extendTooltip,
                 ),
             ],
           ),

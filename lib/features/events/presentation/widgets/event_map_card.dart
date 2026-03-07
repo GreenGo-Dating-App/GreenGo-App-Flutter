@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/event.dart';
 
 /// Event Map Card Widget
@@ -111,7 +112,7 @@ class EventMapCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          _formatDistance(distance),
+                          _formatDistance(distance, context),
                           style: const TextStyle(
                             color: AppColors.deepBlack,
                             fontSize: 11,
@@ -247,13 +248,14 @@ class EventMapCard extends StatelessWidget {
     return degrees * pi / 180;
   }
 
-  String _formatDistance(double km) {
+  String _formatDistance(double km, BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (km < 1) {
-      return '${(km * 1000).round()}m away';
+      return l10n.eventsMAwayFormat((km * 1000).round());
     } else if (km < 10) {
-      return '${km.toStringAsFixed(1)}km away';
+      return l10n.eventsKmAwayFormat(km.toStringAsFixed(1));
     } else {
-      return '${km.round()}km away';
+      return l10n.eventsKmAwayFormat(km.round().toString());
     }
   }
 }

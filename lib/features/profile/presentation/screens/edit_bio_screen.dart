@@ -9,6 +9,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditBioScreen extends StatefulWidget {
   final Profile profile;
@@ -121,9 +122,9 @@ class _EditBioScreenState extends State<EditBioScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
-        title: const Text(
-          'About Me',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.profileAboutMe,
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
@@ -146,7 +147,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
             TextButton(
               onPressed: _isValid ? _save : null,
               child: Text(
-                'Save',
+                AppLocalizations.of(context)!.save,
                 style: TextStyle(
                   color: _isValid ? AppColors.richGold : AppColors.textTertiary,
                   fontSize: 16,
@@ -172,17 +173,17 @@ class _EditBioScreenState extends State<EditBioScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Row(
+                  Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.lightbulb_outline,
                         color: AppColors.richGold,
                         size: 20,
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Text(
-                        'Tips for a great bio',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.profileTipsForGreatBio,
+                        style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
@@ -191,10 +192,10 @@ class _EditBioScreenState extends State<EditBioScreen> {
                     ],
                   ),
                   const SizedBox(height: 12),
-                  _buildTip('Be authentic and genuine'),
-                  _buildTip('Mention your hobbies and passions'),
-                  _buildTip('Add a touch of humor'),
-                  _buildTip('Keep it positive'),
+                  _buildTip(AppLocalizations.of(context)!.profileTipAuthentic),
+                  _buildTip(AppLocalizations.of(context)!.profileTipHobbies),
+                  _buildTip(AppLocalizations.of(context)!.profileTipHumor),
+                  _buildTip(AppLocalizations.of(context)!.profileTipPositive),
                 ],
               ),
             ),
@@ -211,7 +212,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
                 fontSize: 16,
               ),
               decoration: InputDecoration(
-                hintText: 'Tell people about yourself...',
+                hintText: AppLocalizations.of(context)!.profileTellAboutYourselfHint,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 filled: true,
                 fillColor: AppColors.backgroundInput,
@@ -258,7 +259,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        'Bio must be at least $_minLength characters',
+                        AppLocalizations.of(context)!.profileBioMinLength(_minLength),
                         style: const TextStyle(
                           color: AppColors.errorRed,
                           fontSize: 14,
@@ -272,18 +273,18 @@ class _EditBioScreenState extends State<EditBioScreen> {
             const SizedBox(height: 24),
 
             // Additional Details Section
-            const Text(
-              'Additional Details',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileAdditionalDetails,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 4),
-            const Text(
-              'Optional — helps others get to know you',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.profileOptionalDetails,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 13,
               ),
@@ -296,7 +297,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
                 Expanded(
                   child: _buildNumberField(
                     controller: _weightController,
-                    label: 'Weight (kg)',
+                    label: AppLocalizations.of(context)!.profileWeightKg,
                     icon: Icons.fitness_center,
                   ),
                 ),
@@ -304,7 +305,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
                 Expanded(
                   child: _buildNumberField(
                     controller: _heightController,
-                    label: 'Height (cm)',
+                    label: AppLocalizations.of(context)!.profileHeightCm,
                     icon: Icons.height,
                   ),
                 ),
@@ -315,27 +316,27 @@ class _EditBioScreenState extends State<EditBioScreen> {
             // Education
             _buildTextField(
               controller: _educationController,
-              label: 'Education',
+              label: AppLocalizations.of(context)!.profileEducation,
               icon: Icons.school,
-              hint: 'e.g. Bachelor in Computer Science',
+              hint: AppLocalizations.of(context)!.profileEducationHint,
             ),
             const SizedBox(height: 16),
 
             // Occupation
             _buildTextField(
               controller: _occupationController,
-              label: 'Occupation',
+              label: AppLocalizations.of(context)!.profileOccupation,
               icon: Icons.work,
-              hint: 'e.g. Software Engineer',
+              hint: AppLocalizations.of(context)!.profileOccupationHint,
             ),
             const SizedBox(height: 16),
 
             // Looking For
             _buildTextField(
               controller: _lookingForController,
-              label: 'Looking For',
+              label: AppLocalizations.of(context)!.profileLookingFor,
               icon: Icons.favorite,
-              hint: 'e.g. Long-term relationship',
+              hint: AppLocalizations.of(context)!.profileLookingForHint,
             ),
 
             const SizedBox(height: 32),

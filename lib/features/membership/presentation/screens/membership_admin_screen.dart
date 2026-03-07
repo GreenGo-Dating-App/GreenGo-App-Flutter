@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/membership.dart';
 import '../../domain/entities/coupon_code.dart';
@@ -61,7 +62,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
       if (mounted) {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading data: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context)!.membershipErrorLoadingData}: $e')),
         );
       }
     }
@@ -612,6 +613,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
   }
 
   void _showCreateCouponDialog() {
+    final l10n = AppLocalizations.of(context)!;
     final codeController = TextEditingController();
     final nameController = TextEditingController();
     final maxUsesController = TextEditingController();
@@ -627,7 +629,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
         builder: (context, setDialogState) => AlertDialog(
           backgroundColor: AppColors.backgroundCard,
           title: const Text(
-            'Create Coupon Code',
+            'Create Coupon Code',  // Admin-only, not translated
             style: TextStyle(color: AppColors.textPrimary),
           ),
           content: SingleChildScrollView(
@@ -638,22 +640,22 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: codeController,
                   textCapitalization: TextCapitalization.characters,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Coupon Code *',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    hintText: 'e.g., GOLD2024',
-                    hintStyle: TextStyle(color: AppColors.textTertiary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipCouponCodeLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    hintText: l10n.membershipCouponHint,
+                    hintStyle: const TextStyle(color: AppColors.textTertiary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
                 TextField(
                   controller: nameController,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Name/Description',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipNameDescriptionLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -661,10 +663,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   value: selectedTier,
                   dropdownColor: AppColors.backgroundCard,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Membership Tier *',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipTierLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
                   items: MembershipTier.values.where((t) => t != MembershipTier.free).map((tier) {
                     return DropdownMenuItem(
@@ -683,12 +685,12 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: durationController,
                   keyboardType: TextInputType.number,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Duration (days)',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    hintText: 'Leave empty for lifetime',
-                    hintStyle: TextStyle(color: AppColors.textTertiary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipDurationLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    hintText: l10n.membershipLeaveEmptyLifetime,
+                    hintStyle: const TextStyle(color: AppColors.textTertiary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -696,12 +698,12 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: maxUsesController,
                   keyboardType: TextInputType.number,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Max Uses',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    hintText: 'Leave empty for unlimited',
-                    hintStyle: TextStyle(color: AppColors.textTertiary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipMaxUsesLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    hintText: l10n.membershipLeaveEmptyUnlimited,
+                    hintStyle: const TextStyle(color: AppColors.textTertiary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -737,10 +739,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: notesController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   maxLines: 2,
-                  decoration: const InputDecoration(
-                    labelText: 'Notes',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipNotesLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -761,7 +763,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+              child: Text(l10n.cancel),
             ),
             ElevatedButton(
               onPressed: () async {
@@ -829,6 +831,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
   }
 
   void _showEditCouponDialog(CouponCodeModel coupon) {
+    final l10n = AppLocalizations.of(context)!;
     final nameController = TextEditingController(text: coupon.name);
     final maxUsesController = TextEditingController(
       text: coupon.maxUses?.toString() ?? '',
@@ -852,10 +855,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                 TextField(
                   controller: nameController,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Name/Description',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipNameDescriptionLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -863,12 +866,12 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: maxUsesController,
                   keyboardType: TextInputType.number,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  decoration: const InputDecoration(
-                    labelText: 'Max Uses',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    hintText: 'Leave empty for unlimited',
-                    hintStyle: TextStyle(color: AppColors.textTertiary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipMaxUsesLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    hintText: l10n.membershipLeaveEmptyUnlimited,
+                    hintStyle: const TextStyle(color: AppColors.textTertiary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -876,10 +879,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   controller: notesController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   maxLines: 2,
-                  decoration: const InputDecoration(
-                    labelText: 'Notes',
-                    labelStyle: TextStyle(color: AppColors.textSecondary),
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.membershipNotesLabel,
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -900,7 +903,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+              child: Text(l10n.cancel),
             ),
             ElevatedButton(
               onPressed: () async {
@@ -957,6 +960,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
   }
 
   void _showEditTierRulesDialog(MembershipTier tier, MembershipRulesModel rules) {
+    final l10n = AppLocalizations.of(context)!;
     final dailyMessagesController = TextEditingController(
       text: rules.dailyMessageLimit == -1 ? '' : rules.dailyMessageLimit.toString(),
     );
@@ -992,10 +996,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     controller: dailyMessagesController,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: const InputDecoration(
-                      labelText: 'Daily Messages (empty = unlimited)',
-                      labelStyle: TextStyle(color: AppColors.textSecondary),
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: l10n.membershipDailyMessagesLabel,
+                      labelStyle: const TextStyle(color: AppColors.textSecondary),
+                      border: const OutlineInputBorder(),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -1003,10 +1007,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     controller: dailySwipesController,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: const InputDecoration(
-                      labelText: 'Daily Swipes (empty = unlimited)',
-                      labelStyle: TextStyle(color: AppColors.textSecondary),
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: l10n.membershipDailySwipesLabel,
+                      labelStyle: const TextStyle(color: AppColors.textSecondary),
+                      border: const OutlineInputBorder(),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -1014,10 +1018,10 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     controller: superLikesController,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(color: AppColors.textPrimary),
-                    decoration: const InputDecoration(
-                      labelText: 'Super Likes/Day (empty = unlimited)',
-                      labelStyle: TextStyle(color: AppColors.textSecondary),
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: l10n.membershipSuperLikesLabel,
+                      labelStyle: const TextStyle(color: AppColors.textSecondary),
+                      border: const OutlineInputBorder(),
                     ),
                   ),
                   const Divider(height: 24),
@@ -1046,7 +1050,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+              child: Text(l10n.cancel),
             ),
             ElevatedButton(
               onPressed: () async {

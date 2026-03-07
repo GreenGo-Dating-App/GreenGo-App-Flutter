@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -62,14 +63,15 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'People Near You',
-          style: TextStyle(
+        title: Text(
+          l10n.exploreMapPeopleNearYou,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -85,7 +87,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'Visible',
+                    l10n.exploreMapVisible,
                     style: TextStyle(
                       color: showOnMap
                           ? AppColors.successGreen
@@ -146,7 +148,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                         ),
                         const SizedBox(height: 16),
                         Text(
-                          'Could not load nearby users',
+                          l10n.exploreMapError,
                           style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 16,
@@ -198,6 +200,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
   }
 
   Widget _buildRadiusSelector() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       color: AppColors.backgroundDark,
@@ -209,9 +212,9 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
             size: 20,
           ),
           const SizedBox(width: 8),
-          const Text(
-            'Radius:',
-            style: TextStyle(
+          Text(
+            l10n.exploreMapRadius,
+            style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 14,
             ),
@@ -266,6 +269,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
   }
 
   Widget _buildUserCard(MapUser user) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       decoration: BoxDecoration(
@@ -325,7 +329,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                     children: [
                       Expanded(
                         child: Text(
-                          user.displayName ?? 'Nearby User',
+                          user.displayName ?? l10n.exploreMapNearbyUser,
                           style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 16,
@@ -365,7 +369,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        '~${user.distanceKm?.toStringAsFixed(1) ?? '?'} km away',
+                        l10n.exploreMapDistanceAway(user.distanceKm?.toStringAsFixed(1) ?? '?'),
                         style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 13,
@@ -373,9 +377,9 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                       ),
                       if (user.isOnline) ...[
                         const SizedBox(width: 12),
-                        const Text(
-                          'Online now',
-                          style: TextStyle(
+                        Text(
+                          l10n.exploreMapOnlineNow,
+                          style: const TextStyle(
                             color: AppColors.online,
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
@@ -426,6 +430,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -438,9 +443,9 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
               size: 72,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'No one nearby',
-              style: TextStyle(
+            Text(
+              l10n.exploreMapNoOneNearby,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -448,7 +453,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Try increasing your search radius to find more people.',
+              l10n.exploreMapExpandRadiusHint,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: AppColors.textTertiary,
@@ -469,7 +474,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                 _loadNearbyUsers();
               },
               icon: const Icon(Icons.zoom_out_map, size: 18),
-              label: const Text('Expand Radius'),
+              label: Text(l10n.exploreMapExpandRadius),
               style: OutlinedButton.styleFrom(
                 foregroundColor: AppColors.richGold,
                 side: const BorderSide(color: AppColors.richGold),

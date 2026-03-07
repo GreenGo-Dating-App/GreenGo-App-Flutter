@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #11: Daily Login Reward Popup
@@ -50,6 +51,7 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Dialog(
       backgroundColor: Colors.transparent,
       child: Container(
@@ -69,7 +71,7 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
           children: [
             // Header
             Text(
-              widget.isStreakBonus ? '🔥 Streak Bonus!' : '🎁 Daily Reward',
+              widget.isStreakBonus ? '🔥 ${l10n.streakBonusHeader}' : '🎁 ${l10n.dailyRewardHeader}',
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 20,
@@ -78,7 +80,7 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
             ),
             const SizedBox(height: 8),
             Text(
-              'Day ${widget.day}',
+              l10n.dayNumber(widget.day),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
@@ -132,7 +134,7 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
                     const Text('🔥', style: TextStyle(fontSize: 18)),
                     const SizedBox(width: 6),
                     Text(
-                      '${widget.streakDays} Day Streak!',
+                      l10n.dayStreakLabel(widget.streakDays),
                       style: const TextStyle(
                         color: AppColors.warningAmber,
                         fontWeight: FontWeight.bold,
@@ -150,14 +152,14 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
                 _RewardItem(
                   icon: Icons.monetization_on,
                   value: widget.coins,
-                  label: 'Coins',
+                  label: l10n.coins,
                   color: AppColors.richGold,
                 ),
                 const SizedBox(width: 24),
                 _RewardItem(
                   icon: Icons.star,
                   value: widget.xp,
-                  label: 'XP',
+                  label: l10n.xp,
                   color: AppColors.infoBlue,
                 ),
               ],
@@ -182,9 +184,9 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
                     borderRadius: BorderRadius.circular(24),
                   ),
                 ),
-                child: const Text(
-                  'Claim Reward',
-                  style: TextStyle(
+                child: Text(
+                  l10n.claimReward,
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
@@ -252,11 +254,12 @@ class _WeeklyProgress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
-        const Text(
-          'This Week',
-          style: TextStyle(
+        Text(
+          l10n.thisWeek,
+          style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 12,
           ),

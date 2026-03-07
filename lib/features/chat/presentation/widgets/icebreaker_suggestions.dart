@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
@@ -281,9 +282,9 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
                       color: AppColors.richGold.withValues(alpha: 0.8),
                     ),
                     const SizedBox(width: 6),
-                    const Text(
-                      'Icebreakers',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.chatIcebreakers,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,

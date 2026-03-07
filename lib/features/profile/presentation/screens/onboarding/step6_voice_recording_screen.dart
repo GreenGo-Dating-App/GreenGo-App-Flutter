@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:path_provider/path_provider.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../bloc/onboarding_bloc.dart';
@@ -73,7 +74,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to start recording: ${e.toString()}'),
+          content: Text(AppLocalizations.of(context)!.voiceFailedStartRecording(e.toString())),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -121,7 +122,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Failed to upload recording: ${e.toString()}'),
+          content: Text(AppLocalizations.of(context)!.voiceFailedUploadRecording(e.toString())),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -157,9 +158,10 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
           return const SizedBox.shrink();
         }
 
+        final l10n = AppLocalizations.of(context)!;
         return LuxuryOnboardingLayout(
-          title: 'Voice introduction',
-          subtitle: 'Record a short voice message (optional)',
+          title: l10n.voiceIntroductionTitle,
+          subtitle: l10n.voiceIntroductionSubtitle,
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -233,9 +235,9 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
                       Text(
                         _isRecording
-                            ? 'Recording... (max $_maxDuration seconds)'
+                            ? l10n.voiceRecordingInProgress(_maxDuration)
                             : _hasRecording
-                                ? 'Recording ready'
+                                ? l10n.voiceRecordingReady
                                 : '',
                         style:
                             Theme.of(context).textTheme.bodyLarge?.copyWith(
@@ -253,9 +255,9 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
                             Icons.delete_outline,
                             color: AppColors.errorRed,
                           ),
-                          label: const Text(
-                            'Delete Recording',
-                            style: TextStyle(color: AppColors.errorRed),
+                          label: Text(
+                            l10n.voiceDeleteRecording,
+                            style: const TextStyle(color: AppColors.errorRed),
                           ),
                         ),
                     ],
@@ -285,7 +287,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
                       const SizedBox(width: 12),
                       Expanded(
                         child: Text(
-                          'Voice introductions help others get to know you better. This step is optional.',
+                          l10n.voiceIntroductionInfo,
                           style:
                               Theme.of(context).textTheme.bodySmall?.copyWith(
                                     color: Colors.white.withOpacity(0.6),
@@ -301,7 +303,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
               // Continue/Skip Button
               LuxuryButton(
-                text: _hasRecording ? 'Continue' : 'Skip',
+                text: _hasRecording ? l10n.onboardingContinue : l10n.skip,
                 onPressed: _handleContinue,
                 isLoading: _isUploading,
               ),

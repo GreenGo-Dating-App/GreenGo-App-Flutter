@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/vibe_tag.dart';
 import '../bloc/vibe_tag_bloc.dart';
 import '../bloc/vibe_tag_event.dart';
@@ -33,16 +34,17 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Your Vibe'),
+        title: Text(l10n.vibeTagsTitle),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Done'),
+            child: Text(l10n.gamificationDone),
           ),
         ],
       ),
@@ -68,13 +70,14 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
             return _buildContent(context, state);
           }
 
-          return const Center(child: Text('No tags available'));
+          return Center(child: Text(l10n.vibeTagsNoTags));
         },
       ),
     );
   }
 
   Widget _buildContent(BuildContext context, VibeTagSelectionState state) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
@@ -96,7 +99,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      'Show your vibe',
+                      l10n.vibeTagsShowYourVibe,
                       style: theme.textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -105,7 +108,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Select tags that match your current mood and intentions',
+                  l10n.vibeTagsSelectDescription,
                   style: theme.textTheme.bodyMedium?.copyWith(
                     color: colorScheme.onSurface.withOpacity(0.7),
                   ),
@@ -123,7 +126,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
               child: Text(
-                'Your Selected Tags',
+                l10n.vibeTagsYourSelected,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.w600,
                 ),
@@ -158,7 +161,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                   ),
                   const SizedBox(width: 8),
                   Text(
-                    'Temporary Tag (24h)',
+                    l10n.vibeTagsTemporaryTag,
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.w600,
                       color: colorScheme.tertiary,
@@ -240,6 +243,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
   }
 
   Widget _buildTagCounter(BuildContext context, VibeTagSelectionState state) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final selectedCount = state.userTags.selectedTagIds.length;
@@ -256,7 +260,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Text(
-            '$selectedCount / $limit tags selected',
+            l10n.vibeTagsCountSelected(selectedCount, limit),
             style: theme.textTheme.bodyMedium?.copyWith(
               color:
                   selectedCount >= limit ? colorScheme.error : colorScheme.primary,
@@ -269,7 +273,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
           TextButton.icon(
             onPressed: () => _showUpgradeDialog(context),
             icon: const Icon(Icons.star, size: 16),
-            label: const Text('Get 5 tags'),
+            label: Text(l10n.vibeTagsGet5Tags),
             style: TextButton.styleFrom(
               foregroundColor: Colors.amber.shade700,
             ),
@@ -322,6 +326,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
   }
 
   Widget _buildTagOptionsSheet(BuildContext context, VibeTag tag) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -329,8 +334,8 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
         children: [
           ListTile(
             leading: const Icon(Icons.timer),
-            title: const Text('Set as temporary tag (24h)'),
-            subtitle: const Text('Show this vibe for the next 24 hours'),
+            title: Text(l10n.vibeTagsSetTemporary),
+            subtitle: Text(l10n.vibeTagsTemporaryDescription),
             onTap: () {
               Navigator.pop(context);
               context.read<VibeTagBloc>().add(
@@ -348,7 +353,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                   .isTagSelected(tag.id))
             ListTile(
               leading: const Icon(Icons.remove_circle_outline),
-              title: const Text('Remove tag'),
+              title: Text(l10n.vibeTagsRemoveTag),
               onTap: () {
                 Navigator.pop(context);
                 context.read<VibeTagBloc>().add(
@@ -366,14 +371,15 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
 
   void _showLimitReachedDialog(
       BuildContext context, VibeTagLimitReached state) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Tag Limit Reached'),
+        title: Text(l10n.vibeTagsLimitReached),
         content: Text(
           state.isPremium
-              ? 'You\'ve reached your maximum of ${state.limit} tags. Remove one to add another.'
-              : 'Free users can select up to ${state.limit} tags. Upgrade to Premium for 5 tags!',
+              ? l10n.vibeTagsLimitReachedPremium(state.limit)
+              : l10n.vibeTagsLimitReachedFree(state.limit),
         ),
         actions: [
           TextButton(
@@ -394,6 +400,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
   }
 
   void _showUpgradeDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -401,19 +408,19 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
           children: [
             Icon(Icons.star, color: Colors.amber.shade600),
             const SizedBox(width: 8),
-            const Text('Upgrade to Premium'),
+            Text(l10n.vibeTagsUpgradeToPremium),
           ],
         ),
-        content: const Column(
+        content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Get access to:'),
-            SizedBox(height: 8),
-            Text('• 5 vibe tags instead of 3'),
-            Text('• Exclusive premium tags'),
-            Text('• Priority in search results'),
-            Text('• And much more!'),
+            Text(l10n.vibeTagsGetAccessTo),
+            const SizedBox(height: 8),
+            Text('• ${l10n.vibeTagsPremiumFeature1}'),
+            Text('• ${l10n.vibeTagsPremiumFeature2}'),
+            Text('• ${l10n.vibeTagsPremiumFeature3}'),
+            Text('• ${l10n.vibeTagsPremiumFeature4}'),
           ],
         ),
         actions: [
@@ -427,7 +434,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
               // Navigate to subscription page
               // Navigator.pushNamed(context, '/subscription');
             },
-            child: const Text('View Plans'),
+            child: Text(l10n.vibeTagsViewPlans),
           ),
         ],
       ),

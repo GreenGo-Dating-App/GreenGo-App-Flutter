@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../profile/domain/entities/profile.dart';
@@ -22,12 +23,13 @@ class NotificationsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
       create: (context) => di.sl<NotificationsBloc>()
         ..add(NotificationsLoadRequested(userId: userId)),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Notifications'),
+          title: Text(l10n.notificationsTitle),
           actions: [
             BlocBuilder<NotificationsBloc, NotificationsState>(
               builder: (context, state) {
@@ -38,9 +40,9 @@ class NotificationsScreen extends StatelessWidget {
                             NotificationsMarkedAllAsRead(userId),
                           );
                     },
-                    child: const Text(
-                      'Mark all read',
-                      style: TextStyle(color: AppColors.richGold),
+                    child: Text(
+                      l10n.notificationsMarkAllRead,
+                      style: const TextStyle(color: AppColors.richGold),
                     ),
                   );
                 }
@@ -106,18 +108,18 @@ class NotificationsScreen extends StatelessWidget {
                       color: AppColors.textSecondary.withOpacity(0.5),
                     ),
                     const SizedBox(height: 16),
-                    const Text(
-                      'No notifications yet',
-                      style: TextStyle(
+                    Text(
+                      l10n.notificationsEmpty,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     const SizedBox(height: 8),
-                    const Text(
-                      'When you get notifications, they\'ll show up here',
-                      style: TextStyle(
+                    Text(
+                      l10n.notificationsEmptySubtitle,
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 14,
                       ),

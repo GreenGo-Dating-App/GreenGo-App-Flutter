@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #16: Distance Display
@@ -15,13 +16,13 @@ class DistanceDisplay extends StatelessWidget {
     this.showIcon = true,
   });
 
-  String _formatDistance() {
+  String _formatDistance(AppLocalizations l10n) {
     if (distanceKm < 1) {
-      return '< 1 km';
+      return l10n.lessThanOneKm;
     } else if (distanceKm < 10) {
-      return '${distanceKm.toStringAsFixed(1)} km';
+      return l10n.distanceKm(distanceKm.toStringAsFixed(1));
     } else {
-      return '${distanceKm.toInt()} km';
+      return l10n.distanceKm(distanceKm.toInt().toString());
     }
   }
 
@@ -34,6 +35,7 @@ class DistanceDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (isCompact) {
       return Row(
         mainAxisSize: MainAxisSize.min,
@@ -46,7 +48,7 @@ class DistanceDisplay extends StatelessWidget {
             ),
           if (showIcon) const SizedBox(width: 2),
           Text(
-            _formatDistance(),
+            _formatDistance(l10n),
             style: TextStyle(
               color: _getDistanceColor(),
               fontSize: 12,
@@ -76,7 +78,7 @@ class DistanceDisplay extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            _formatDistance(),
+            _formatDistance(l10n),
             style: TextStyle(
               color: _getDistanceColor(),
               fontSize: 13,
@@ -85,7 +87,7 @@ class DistanceDisplay extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            'away',
+            l10n.away,
             style: TextStyle(
               color: _getDistanceColor().withOpacity(0.7),
               fontSize: 11,
@@ -108,6 +110,7 @@ class DistanceBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final isNearby = distanceKm < 5;
 
     return Container(
@@ -129,10 +132,10 @@ class DistanceBadge extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             distanceKm < 1
-                ? 'Nearby'
+                ? l10n.nearby
                 : distanceKm < 10
-                    ? '${distanceKm.toStringAsFixed(1)} km'
-                    : '${distanceKm.toInt()} km',
+                    ? l10n.distanceKm(distanceKm.toStringAsFixed(1))
+                    : l10n.distanceKm(distanceKm.toInt().toString()),
             style: TextStyle(
               color: isNearby ? Colors.white : AppColors.textSecondary,
               fontSize: 11,

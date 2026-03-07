@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community_member.dart';
 
 /// Community Member Tile Widget
@@ -121,9 +122,9 @@ class CommunityMemberTile extends StatelessWidget {
                 color: AppColors.successGreen.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: const Text(
-                'Guide',
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(context)!.communitiesGuide,
+                style: const TextStyle(
                   color: AppColors.successGreen,
                   fontSize: 11,
                   fontWeight: FontWeight.w600,

@@ -1,6 +1,7 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/message.dart';
@@ -34,6 +35,7 @@ class EnhancedMessageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     // Album share/revoke messages are center-aligned like system messages
     if (message.type == MessageType.albumShare || message.type == MessageType.albumRevoke) {
       return _buildAlbumMessage(context);
@@ -113,7 +115,7 @@ class EnhancedMessageBubble extends StatelessWidget {
                                     ),
                                     const SizedBox(width: 4),
                                     Text(
-                                      'Translated',
+                                      l10n.chatTranslated,
                                       style: TextStyle(
                                         color: isCurrentUser
                                             ? AppColors.deepBlack
@@ -180,18 +182,19 @@ class EnhancedMessageBubble extends StatelessWidget {
   }
 
   Widget _buildAlbumMessage(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final isShare = message.type == MessageType.albumShare;
-    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? 'Someone';
+    final albumOwnerName = message.metadata?['albumOwnerName'] as String? ?? l10n.chatSomeone;
 
     String displayText;
     if (isShare) {
       displayText = isCurrentUser
-          ? 'You shared your private album'
-          : '$albumOwnerName shared their private album with you';
+          ? l10n.chatYouSharedAlbum
+          : l10n.chatOtherSharedAlbum(albumOwnerName);
     } else {
       displayText = isCurrentUser
-          ? 'You revoked your shared album'
-          : '$albumOwnerName revoked their album';
+          ? l10n.chatYouRevokedAlbum
+          : l10n.chatOtherRevokedAlbum(albumOwnerName);
     }
 
     final bool isTappable = isShare && !isCurrentUser;
@@ -233,7 +236,7 @@ class EnhancedMessageBubble extends StatelessWidget {
               if (isTappable) ...[
                 const SizedBox(height: 4),
                 Text(
-                  'Tap to view album',
+                  l10n.chatTapToViewAlbum,
                   style: TextStyle(
                     color: AppColors.richGold.withOpacity(0.8),
                     fontSize: 11,
@@ -257,6 +260,7 @@ class EnhancedMessageBubble extends StatelessWidget {
   }
 
   Widget _buildMessageContent(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     switch (message.type) {
       case MessageType.text:
         return Text(
@@ -302,14 +306,14 @@ class EnhancedMessageBubble extends StatelessWidget {
                       // Semi-transparent overlay + tap icon
                       Container(
                         color: Colors.black.withOpacity(0.2),
-                        child: const Column(
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.visibility, color: Colors.white70, size: 32),
-                            SizedBox(height: 6),
+                            const Icon(Icons.visibility, color: Colors.white70, size: 32),
+                            const SizedBox(height: 6),
                             Text(
-                              'Tap to view',
-                              style: TextStyle(
+                              l10n.chatTapToView,
+                              style: const TextStyle(
                                 color: Colors.white70,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
@@ -542,6 +546,7 @@ class EnhancedMessageBubble extends StatelessWidget {
   }
 
   void _showContextMenu(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.backgroundCard,
@@ -588,7 +593,7 @@ class EnhancedMessageBubble extends StatelessWidget {
               _buildMenuItem(
                 context,
                 icon: Icons.copy,
-                title: 'Copy',
+                title: l10n.chatCopy,
                 onTap: () {
                   Navigator.pop(context);
                   Clipboard.setData(ClipboardData(text: message.content));
@@ -600,7 +605,7 @@ class EnhancedMessageBubble extends StatelessWidget {
               _buildMenuItem(
                 context,
                 icon: Icons.translate,
-                title: 'Translate',
+                title: l10n.chatTranslate,
                 onTap: () {
                   Navigator.pop(context);
                   if (onTranslate != null) onTranslate!();
@@ -610,7 +615,7 @@ class EnhancedMessageBubble extends StatelessWidget {
             _buildMenuItem(
               context,
               icon: Icons.forward,
-              title: 'Forward',
+              title: l10n.chatForward,
               onTap: () {
                 Navigator.pop(context);
                 if (onForward != null) onForward!();
@@ -621,7 +626,7 @@ class EnhancedMessageBubble extends StatelessWidget {
               _buildMenuItem(
                 context,
                 icon: Icons.delete,
-                title: 'Delete',
+                title: l10n.chatDelete,
                 color: AppColors.errorRed,
                 onTap: () {
                   Navigator.pop(context);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #15: Profile Boost Indicator
@@ -69,6 +70,7 @@ class _BoostIndicatorState extends State<BoostIndicator>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (!widget.isActive) {
       return GestureDetector(
         onTap: widget.onTap,
@@ -88,9 +90,9 @@ class _BoostIndicatorState extends State<BoostIndicator>
                 size: 18,
               ),
               const SizedBox(width: 6),
-              const Text(
-                'Boost',
-                style: TextStyle(
+              Text(
+                l10n.boost,
+                style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 14,
                 ),
@@ -136,9 +138,9 @@ class _BoostIndicatorState extends State<BoostIndicator>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Text(
-                        'BOOSTED!',
-                        style: TextStyle(
+                      Text(
+                        l10n.boosted,
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
@@ -238,9 +240,9 @@ class BoostButton extends StatelessWidget {
               children: [
                 const Icon(Icons.flash_on, size: 20),
                 const SizedBox(width: 8),
-                const Text(
-                  'Boost Now',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.boostNow,
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),

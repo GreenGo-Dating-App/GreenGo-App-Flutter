@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../domain/entities/lesson.dart';
@@ -258,7 +259,7 @@ class StarSystemInfoSheet extends StatelessWidget {
           onStartLesson();
         },
         icon: const Icon(Icons.replay, size: 18),
-        label: const Text('Review'),
+        label: Text(AppLocalizations.of(context)!.learningReview),
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.green.withOpacity(0.3),
           foregroundColor: Colors.green,
@@ -274,7 +275,7 @@ class StarSystemInfoSheet extends StatelessWidget {
       return ElevatedButton.icon(
         onPressed: () => _unlockLesson(context),
         icon: const Icon(Icons.lock_open, size: 18),
-        label: Text('Unlock for ${lesson!.coinPrice} coins'),
+        label: Text(AppLocalizations.of(context)!.learningUnlockForCoinsLower(lesson!.coinPrice)),
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.richGold,
           foregroundColor: Colors.black,
@@ -287,16 +288,17 @@ class StarSystemInfoSheet extends StatelessWidget {
     }
 
     // Label based on node type
+    final l10n = AppLocalizations.of(context)!;
     String buttonLabel;
     switch (nodeType) {
       case PathNodeType.lesson:
-        buttonLabel = 'Start Lesson';
+        buttonLabel = l10n.learningStartLesson;
       case PathNodeType.quiz:
-        buttonLabel = 'Start Quiz';
+        buttonLabel = l10n.learningStartQuiz;
       case PathNodeType.flashcard:
-        buttonLabel = 'Start Flashcards';
+        buttonLabel = l10n.learningStartFlashcards;
       case PathNodeType.aiCoach:
-        buttonLabel = 'Open AI Coach';
+        buttonLabel = l10n.learningOpenAiCoach;
     }
 
     return ElevatedButton.icon(

@@ -6,6 +6,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:lottie/lottie.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/lesson_question.dart';
 import '../bloc/language_learning_bloc.dart';
 
@@ -492,15 +493,15 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 children: [
                   const Icon(Icons.school, color: _gold, size: 48),
                   const SizedBox(height: 16),
-                  const Text(
-                    'No questions available yet.',
-                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                  Text(
+                    AppLocalizations.of(context)!.learningNoQuestionsAvailable,
+                    style: const TextStyle(color: Colors.white70, fontSize: 16),
                   ),
                   const SizedBox(height: 24),
                   TextButton(
                     onPressed: () => Navigator.pop(context),
-                    child: const Text('Go Back',
-                        style: TextStyle(color: _gold, fontSize: 16)),
+                    child: Text(AppLocalizations.of(context)!.learningGoBack,
+                        style: const TextStyle(color: _gold, fontSize: 16)),
                   ),
                 ],
               ),
@@ -625,7 +626,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
               ),
               const SizedBox(width: 8),
               Text(
-                isCorrect ? 'Correct!' : 'Not quite',
+                isCorrect ? AppLocalizations.of(context)!.learningCorrect : AppLocalizations.of(context)!.learningNotQuite,
                 style: TextStyle(
                   color: isCorrect ? Colors.green : Colors.red,
                   fontSize: 17,
@@ -643,7 +644,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
           if (!isCorrect && _currentQuestion != null) ...[
             const SizedBox(height: 6),
             Text(
-              'Answer: ${_currentQuestion!.rightAnswer}',
+              AppLocalizations.of(context)!.learningAnswer(_currentQuestion!.rightAnswer),
               style: const TextStyle(color: Colors.green, fontSize: 14),
             ),
           ],
@@ -659,8 +660,8 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
               ),
-              child: const Text('Continue',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              child: Text(AppLocalizations.of(context)!.learningContinue,
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             ),
           ),
         ],
@@ -837,7 +838,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 Icon(Icons.lightbulb_outline,
                     color: _gold.withOpacity(0.7), size: 18),
                 const SizedBox(width: 6),
-                Text('Hint',
+                Text(AppLocalizations.of(context)!.learningHint,
                     style: TextStyle(
                         color: _gold.withOpacity(0.8),
                         fontSize: 13,
@@ -1054,7 +1055,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
       return Column(
         children: [
           if (!_answered) ...[
-            _buildTextInput('Type your answer...'),
+            _buildTextInput(AppLocalizations.of(context)!.learningTypeAnswerHint),
             const SizedBox(height: 12),
             _buildSubmitBtn(
               enabled: _textInput.trim().isNotEmpty,
@@ -1133,7 +1134,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
             children: [
               const Icon(Icons.translate, color: Colors.purple, size: 16),
               const SizedBox(width: 6),
-              Text('Translate this phrase',
+              Text(AppLocalizations.of(context)!.learningTranslatePhrase,
                   style: TextStyle(
                       color: Colors.purple.shade200,
                       fontSize: 12,
@@ -1143,7 +1144,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         ),
         const SizedBox(height: 16),
         if (!_answered) ...[
-          _buildTextInput('Type your translation...'),
+          _buildTextInput(AppLocalizations.of(context)!.learningTypeTranslationHint),
           const SizedBox(height: 12),
           _buildSubmitBtn(
             enabled: _textInput.trim().isNotEmpty,
@@ -1190,12 +1191,12 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         ),
         const SizedBox(height: 8),
         Text(
-          _isSpeaking ? 'Playing...' : 'Tap to listen',
+          _isSpeaking ? AppLocalizations.of(context)!.learningPlaying : AppLocalizations.of(context)!.learningTapToListen,
           style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 13),
         ),
         const SizedBox(height: 20),
         if (!_answered) ...[
-          _buildTextInput('Type what you heard...'),
+          _buildTextInput(AppLocalizations.of(context)!.learningTypeWhatYouHeardHint),
           const SizedBox(height: 12),
           _buildSubmitBtn(
             enabled: _textInput.trim().isNotEmpty,
@@ -1222,7 +1223,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
             children: [
               const Icon(Icons.mic, color: Colors.orange, size: 16),
               const SizedBox(width: 6),
-              Text('Type your answer below',
+              Text(AppLocalizations.of(context)!.learningTypeAnswerBelow,
                   style: TextStyle(
                       color: Colors.orange.shade200,
                       fontSize: 12,
@@ -1232,7 +1233,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         ),
         const SizedBox(height: 16),
         if (!_answered) ...[
-          _buildTextInput('Type the sentence...'),
+          _buildTextInput(AppLocalizations.of(context)!.learningTypeSentenceHint),
           const SizedBox(height: 12),
           _buildSubmitBtn(
             enabled: _textInput.trim().isNotEmpty,
@@ -1278,7 +1279,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
 
     return Column(
       children: [
-        Text('Tap items to match them',
+        Text(AppLocalizations.of(context)!.learningTapToMatch,
             style:
                 TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13)),
         const SizedBox(height: 16),
@@ -1434,7 +1435,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
           ),
           child: _reorderedWords.isEmpty && !_answered
               ? Center(
-                  child: Text('Tap words below to build the sentence',
+                  child: Text(AppLocalizations.of(context)!.learningTapWordsToBuild,
                       style: TextStyle(
                           color: Colors.white.withOpacity(0.3), fontSize: 14)))
               : Wrap(
@@ -1522,7 +1523,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
             enabled: _availableWords.isEmpty,
             onPressed: () =>
                 _submitReorder(_reorderedWords.join(' '), q.rightAnswer),
-            label: 'Check',
+            label: AppLocalizations.of(context)!.learningCheck,
           ),
         ],
 
@@ -1541,7 +1542,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 const Icon(Icons.check, color: Colors.green, size: 18),
                 const SizedBox(width: 8),
                 Expanded(
-                  child: Text('Correct: ${q.rightAnswer}',
+                  child: Text(AppLocalizations.of(context)!.learningCorrectAnswer(q.rightAnswer),
                       style:
                           const TextStyle(color: Colors.green, fontSize: 14)),
                 ),
@@ -1558,11 +1559,11 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
     return Row(
       children: [
         Expanded(
-          child: _tfButton('True', Icons.check_circle_outline, Colors.green, q),
+          child: _tfButton(AppLocalizations.of(context)!.learningTrue, Icons.check_circle_outline, Colors.green, q),
         ),
         const SizedBox(width: 16),
         Expanded(
-          child: _tfButton('False', Icons.cancel_outlined, Colors.red, q),
+          child: _tfButton(AppLocalizations.of(context)!.learningFalse, Icons.cancel_outlined, Colors.red, q),
         ),
       ],
     );
@@ -1692,7 +1693,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
             style: const TextStyle(color: Colors.white, fontSize: 16),
             maxLines: 4,
             decoration: InputDecoration(
-              hintText: 'Write your answer...',
+              hintText: AppLocalizations.of(context)!.learningWriteAnswerHint,
               hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
               filled: true,
               fillColor: _cardBg,
@@ -1731,7 +1732,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 const SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    'Response recorded',
+                    AppLocalizations.of(context)!.learningResponseRecorded,
                     style: TextStyle(
                         color: Colors.green.shade300,
                         fontSize: 14,
@@ -1778,7 +1779,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                     Icon(Icons.menu_book,
                         color: _gold.withOpacity(0.7), size: 18),
                     const SizedBox(width: 8),
-                    Text('Read the passage',
+                    Text(AppLocalizations.of(context)!.learningReadPassage,
                         style: TextStyle(
                             color: _gold.withOpacity(0.8),
                             fontSize: 13,
@@ -1887,7 +1888,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      _isSpeaking ? 'Stop' : 'Listen',
+                      _isSpeaking ? AppLocalizations.of(context)!.learningStop : AppLocalizations.of(context)!.learningListen,
                       style: TextStyle(
                         color: _isSpeaking
                             ? Colors.white
@@ -1906,8 +1907,8 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
         Center(
           child: Text(
             _isSpeaking
-                ? 'Listening...'
-                : 'Tap to hear the passage',
+                ? AppLocalizations.of(context)!.learningListening
+                : AppLocalizations.of(context)!.learningTapToHearPassage,
             style:
                 TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 13),
           ),
@@ -1933,7 +1934,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                     const Icon(Icons.visibility,
                         color: Colors.deepOrange, size: 16),
                     const SizedBox(width: 6),
-                    Text('Passage (revealed)',
+                    Text(AppLocalizations.of(context)!.learningPassageRevealed,
                         style: TextStyle(
                             color: Colors.deepOrange.shade200,
                             fontSize: 12,
@@ -1959,7 +1960,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
               onPressed: () => setState(() => _passageRevealed = true),
               icon: Icon(Icons.visibility_off,
                   color: Colors.white.withOpacity(0.4), size: 16),
-              label: Text('Show passage text',
+              label: Text(AppLocalizations.of(context)!.learningShowPassageText,
                   style: TextStyle(
                       color: Colors.white.withOpacity(0.4), fontSize: 12)),
             ),
@@ -2035,8 +2036,9 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
   Widget _buildSubmitBtn({
     required bool enabled,
     required VoidCallback onPressed,
-    String label = 'Submit',
+    String? label,
   }) {
+    label ??= AppLocalizations.of(context)!.learningSubmit;
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
@@ -2088,7 +2090,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  isCorrect ? 'Correct!' : 'Your answer: $_selectedAnswer',
+                  isCorrect ? AppLocalizations.of(context)!.learningCorrect : AppLocalizations.of(context)!.learningYourAnswer(_selectedAnswer ?? ''),
                   style: TextStyle(
                     color: isCorrect ? Colors.green : Colors.red,
                     fontSize: 14,
@@ -2102,7 +2104,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
           ),
           if (!isCorrect) ...[
             const SizedBox(height: 6),
-            Text('Correct answer: $correct',
+            Text(AppLocalizations.of(context)!.learningCorrectAnswerIs(correct),
                 style: const TextStyle(
                     color: Colors.green,
                     fontSize: 14,
@@ -2420,7 +2422,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                           child: Text(
                             widget.languageSource == 'IT'
                                 ? 'Parole e Frasi'
-                                : 'Words & Phrases',
+                                : AppLocalizations.of(context)!.learningWordsAndPhrases,
                             style: const TextStyle(
                               color: _gold,
                               fontSize: 17,
@@ -2431,7 +2433,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                         Text(
                           widget.languageSource == 'IT'
                               ? 'Tieni premuto per tradurre'
-                              : 'Long-press for translation',
+                              : AppLocalizations.of(context)!.learningLongPressForTranslation,
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.4),
                             fontSize: 11,
@@ -2474,7 +2476,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                     const SizedBox(height: 12),
                     Center(
                       child: Text(
-                        '${questions.length} questions in this lesson',
+                        AppLocalizations.of(context)!.learningQuestionsInLesson(questions.length),
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.4),
                           fontSize: 13,
@@ -2509,7 +2511,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                 child: Text(
                     widget.languageSource == 'IT'
                         ? 'Iniziamo!'
-                        : "Let's Start!",
+                        : AppLocalizations.of(context)!.learningLetsStart,
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold)),
               ),
@@ -2785,9 +2787,9 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                   // Title
                   ScaleTransition(
                     scale: _completionAnim,
-                    child: const Text(
-                      'Lesson Complete!',
-                      style: TextStyle(
+                    child: Text(
+                      AppLocalizations.of(context)!.learningLessonComplete,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
@@ -2821,12 +2823,12 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                         child: Column(
                           children: [
                             _statRow(Icons.check_circle, Colors.green,
-                                'Correct', '$_correctAnswers / $total'),
+                                AppLocalizations.of(context)!.learningCorrectLabel, '$_correctAnswers / $total'),
                             const SizedBox(height: 12),
                             _statRow(
                                 Icons.percent,
                                 Colors.blue,
-                                'Accuracy',
+                                AppLocalizations.of(context)!.learningAccuracy,
                                 '${(accuracy * 100).toStringAsFixed(0)}%'),
                             const SizedBox(height: 12),
                             // Animated XP counter
@@ -2836,7 +2838,7 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                                 final animXp =
                                     (_xpCountAnim.value * xp).round();
                                 return _statRow(
-                                    Icons.bolt, _gold, 'XP Earned', '+$animXp');
+                                    Icons.bolt, _gold, AppLocalizations.of(context)!.learningXpEarned, '+$animXp');
                               },
                             ),
                           ],
@@ -2863,8 +2865,8 @@ class _LessonSessionScreenState extends State<LessonSessionScreen>
                           elevation: 4 + 4 * _pulseAnim.value,
                           shadowColor: _gold.withOpacity(0.4),
                         ),
-                        child: const Text('Continue',
-                            style: TextStyle(
+                        child: Text(AppLocalizations.of(context)!.learningContinue,
+                            style: const TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold)),
                       ),
                     ),

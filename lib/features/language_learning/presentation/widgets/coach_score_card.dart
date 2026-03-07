@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/services/ai_coach_service.dart';
 import '../../domain/entities/ai_coach_session.dart';
 
@@ -30,10 +31,11 @@ class CoachScoreCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         // Header
-        _buildHeader(),
+        _buildHeader(l10n),
         const SizedBox(height: 20),
 
         // Overall grade circle
@@ -41,17 +43,17 @@ class CoachScoreCard extends StatelessWidget {
         const SizedBox(height: 24),
 
         // Category scores
-        _buildCategoryScores(),
+        _buildCategoryScores(l10n),
         const SizedBox(height: 20),
 
         // Session stats
-        _buildSessionStats(),
+        _buildSessionStats(l10n),
         const SizedBox(height: 20),
 
         // Strengths
         if (score.strengths.isNotEmpty) ...[
           _buildListSection(
-            title: 'Strengths',
+            title: l10n.learningStrengths,
             icon: Icons.thumb_up_outlined,
             iconColor: AppColors.successGreen,
             items: score.strengths,
@@ -62,7 +64,7 @@ class CoachScoreCard extends StatelessWidget {
         // Areas to improve
         if (score.areasToImprove.isNotEmpty) ...[
           _buildListSection(
-            title: 'Areas to Improve',
+            title: l10n.learningAreasToImprove,
             icon: Icons.trending_up,
             iconColor: AppColors.warningAmber,
             items: score.areasToImprove,
@@ -71,13 +73,13 @@ class CoachScoreCard extends StatelessWidget {
         ],
 
         // Action buttons
-        _buildActionButtons(),
+        _buildActionButtons(l10n),
         const SizedBox(height: 16),
       ],
     );
   }
 
-  Widget _buildHeader() {
+  Widget _buildHeader(AppLocalizations l10n) {
     return Column(
       children: [
         const Icon(
@@ -86,9 +88,9 @@ class CoachScoreCard extends StatelessWidget {
           size: 48,
         ),
         const SizedBox(height: 12),
-        const Text(
-          'Session Complete!',
-          style: TextStyle(
+        Text(
+          l10n.learningSessionComplete,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -151,7 +153,7 @@ class CoachScoreCard extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryScores() {
+  Widget _buildCategoryScores(AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -165,7 +167,7 @@ class CoachScoreCard extends StatelessWidget {
         children: [
           Expanded(
             child: _buildCategoryItem(
-              label: 'Grammar',
+              label: l10n.learningGrammar,
               score: score.grammarAccuracy,
               icon: Icons.spellcheck,
             ),
@@ -177,7 +179,7 @@ class CoachScoreCard extends StatelessWidget {
           ),
           Expanded(
             child: _buildCategoryItem(
-              label: 'Vocabulary',
+              label: l10n.learningVocabulary,
               score: score.vocabularyUsage,
               icon: Icons.menu_book,
             ),
@@ -189,7 +191,7 @@ class CoachScoreCard extends StatelessWidget {
           ),
           Expanded(
             child: _buildCategoryItem(
-              label: 'Fluency',
+              label: l10n.learningFluency,
               score: score.fluency,
               icon: Icons.record_voice_over,
             ),
@@ -238,7 +240,7 @@ class CoachScoreCard extends StatelessWidget {
     );
   }
 
-  Widget _buildSessionStats() {
+  Widget _buildSessionStats(AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
       decoration: BoxDecoration(
@@ -254,7 +256,7 @@ class CoachScoreCard extends StatelessWidget {
           _buildStatItem(
             icon: Icons.chat_bubble_outline,
             value: '$messageCount',
-            label: 'Messages',
+            label: l10n.learningMessages,
           ),
           Container(
             width: 1,
@@ -264,7 +266,7 @@ class CoachScoreCard extends StatelessWidget {
           _buildStatItem(
             icon: Icons.star,
             value: '+$xpEarned XP',
-            label: 'Earned',
+            label: l10n.learningEarned,
             valueColor: AppColors.richGold,
           ),
         ],
@@ -372,14 +374,14 @@ class CoachScoreCard extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButtons() {
+  Widget _buildActionButtons(AppLocalizations l10n) {
     return Row(
       children: [
         Expanded(
           child: OutlinedButton.icon(
             onPressed: onPracticeAgain,
             icon: const Icon(Icons.replay, size: 18),
-            label: const Text('Practice Again'),
+            label: Text(l10n.learningPracticeAgain),
             style: OutlinedButton.styleFrom(
               foregroundColor: AppColors.richGold,
               side: const BorderSide(color: AppColors.richGold),
@@ -395,7 +397,7 @@ class CoachScoreCard extends StatelessWidget {
           child: ElevatedButton.icon(
             onPressed: onDone,
             icon: const Icon(Icons.check, size: 18),
-            label: const Text('Done'),
+            label: Text(l10n.learningDone),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,
               foregroundColor: AppColors.deepBlack,

@@ -15,6 +15,7 @@ import '../bloc/matches_event.dart';
 import '../bloc/matches_state.dart';
 import '../widgets/match_card_widget.dart';
 import 'match_detail_screen.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Matches Screen
 ///
@@ -207,7 +208,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                       backgroundColor: AppColors.richGold,
                       foregroundColor: AppColors.deepBlack,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(AppLocalizations.of(context)!.retry),
                   ),
                 ],
               ),
@@ -228,29 +229,29 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.6,
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.favorite_border,
                           size: 80,
                           color: AppColors.textTertiary,
                         ),
-                        SizedBox(height: 24),
+                        const SizedBox(height: 24),
                         Text(
-                          'No matches yet',
-                          style: TextStyle(
+                          AppLocalizations.of(context)!.matchesNoMatchesYet,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 12),
+                        const SizedBox(height: 12),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 40),
+                          padding: const EdgeInsets.symmetric(horizontal: 40),
                           child: Text(
-                            'Start swiping to find your matches!',
-                            style: TextStyle(
+                            AppLocalizations.of(context)!.matchesStartSwiping,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 16,
                             ),
@@ -306,8 +307,8 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                           Expanded(
                             child: Text(
                               _searchQuery.isNotEmpty || _filterType != 'all'
-                                  ? '${filteredMatches.length} of ${allMatches.length} matches'
-                                  : '${allMatches.length} matches',
+                                  ? AppLocalizations.of(context)!.matchesOfCount(filteredMatches.length, allMatches.length)
+                                  : AppLocalizations.of(context)!.matchesCount(allMatches.length),
                               style: const TextStyle(
                                 color: AppColors.textTertiary,
                                 fontSize: 13,
@@ -356,7 +357,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                                   ),
                                   const SizedBox(width: 4),
                                   Text(
-                                    'Compatibility',
+                                    AppLocalizations.of(context)!.compatibilityLabel,
                                     style: TextStyle(
                                       color: _sortOrder != 'none'
                                           ? AppColors.richGold
@@ -389,9 +390,9 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                               color: AppColors.textTertiary,
                             ),
                             const SizedBox(height: 16),
-                            const Text(
-                              'No matches found',
-                              style: TextStyle(
+                            Text(
+                              AppLocalizations.of(context)!.matchesNoMatchesFound,
+                              style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
@@ -399,7 +400,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              'Try a different search or filter',
+                              AppLocalizations.of(context)!.matchesTryDifferent,
                               style: TextStyle(
                                 color: AppColors.textTertiary.withOpacity(0.7),
                                 fontSize: 14,
@@ -415,9 +416,9 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                                   _sortOrder = 'none';
                                 });
                               },
-                              child: const Text(
-                                'Clear Filters',
-                                style: TextStyle(color: AppColors.richGold),
+                              child: Text(
+                                AppLocalizations.of(context)!.matchesClearFilters,
+                                style: const TextStyle(color: AppColors.richGold),
                               ),
                             ),
                           ],
@@ -509,7 +510,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
             controller: _searchController,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              hintText: 'Search by name or @nickname',
+              hintText: AppLocalizations.of(context)!.searchByNameOrNickname,
               hintStyle: TextStyle(
                 color: AppColors.textTertiary.withOpacity(0.6),
               ),
@@ -555,11 +556,11 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
           // Filter chips
           Row(
             children: [
-              _buildFilterChip('All', 'all'),
+              _buildFilterChip(AppLocalizations.of(context)!.matchesFilterAll, 'all'),
               const SizedBox(width: 8),
-              _buildFilterChip('New', 'new'),
+              _buildFilterChip(AppLocalizations.of(context)!.matchesFilterNew, 'new'),
               const SizedBox(width: 8),
-              _buildFilterChip('Messaged', 'messaged'),
+              _buildFilterChip(AppLocalizations.of(context)!.matchesFilterMessaged, 'messaged'),
             ],
           ),
         ],

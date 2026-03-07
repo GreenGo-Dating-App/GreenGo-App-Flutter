@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/language_learning_bloc.dart';
 
@@ -34,13 +35,14 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.deepBlack,
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
-        title: const Text(
-          'Teacher Dashboard',
-          style: TextStyle(
+        title: Text(
+          l10n.learningTeacherDashboardTitle,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontWeight: FontWeight.bold,
           ),
@@ -51,11 +53,11 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
           indicatorColor: AppColors.richGold,
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.pureWhite.withOpacity(0.6),
-          tabs: const [
-            Tab(text: 'Overview'),
-            Tab(text: 'My Lessons'),
-            Tab(text: 'Earnings'),
-            Tab(text: 'Students'),
+          tabs: [
+            Tab(text: l10n.learningTabOverview),
+            Tab(text: l10n.learningTabMyLessons),
+            Tab(text: l10n.learningTabEarnings),
+            Tab(text: l10n.learningTabStudents),
           ],
         ),
       ),
@@ -72,9 +74,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
         onPressed: _createNewLesson,
         backgroundColor: AppColors.richGold,
         icon: const Icon(Icons.add, color: AppColors.deepBlack),
-        label: const Text(
-          'Create Lesson',
-          style: TextStyle(
+        label: Text(
+          l10n.learningCreateLesson,
+          style: const TextStyle(
             color: AppColors.deepBlack,
             fontWeight: FontWeight.bold,
           ),
@@ -114,6 +116,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
   }
 
   Widget _buildStatsGrid() {
+    final l10n = AppLocalizations.of(context)!;
     return GridView.count(
       crossAxisCount: 2,
       shrinkWrap: true,
@@ -123,28 +126,28 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
       childAspectRatio: 1.5,
       children: [
         _buildStatCard(
-          'Total Students',
+          l10n.learningTotalStudents,
           '1,234',
           Icons.people,
           AppColors.infoBlue,
           '+12% this month',
         ),
         _buildStatCard(
-          'Published Lessons',
+          l10n.learningPublishedLessons,
           '24',
           Icons.book,
           AppColors.successGreen,
           '3 drafts pending',
         ),
         _buildStatCard(
-          'Monthly Earnings',
+          l10n.learningMonthlyEarnings,
           '\$2,450',
           Icons.monetization_on,
           AppColors.richGold,
           '+8% vs last month',
         ),
         _buildStatCard(
-          'Average Rating',
+          l10n.learningAverageRating,
           '4.8',
           Icons.star,
           AppColors.warningAmber,
@@ -335,9 +338,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              'Recent Activity',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.learningRecentActivity,
+              style: const TextStyle(
                 color: AppColors.pureWhite,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -345,9 +348,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
             ),
             TextButton(
               onPressed: () {},
-              child: const Text(
-                'View All',
-                style: TextStyle(color: AppColors.richGold),
+              child: Text(
+                AppLocalizations.of(context)!.learningViewAll,
+                style: const TextStyle(color: AppColors.richGold),
               ),
             ),
           ],
@@ -457,9 +460,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Quick Actions',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningQuickActions,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -470,7 +473,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
           children: [
             Expanded(
               child: _buildQuickActionCard(
-                'Create Lesson',
+                AppLocalizations.of(context)!.learningCreateLesson,
                 Icons.add_box,
                 AppColors.successGreen,
                 _createNewLesson,
@@ -479,7 +482,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
             const SizedBox(width: 12),
             Expanded(
               child: _buildQuickActionCard(
-                'View Analytics',
+                AppLocalizations.of(context)!.learningViewAnalytics,
                 Icons.analytics,
                 AppColors.infoBlue,
                 () {},
@@ -488,7 +491,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
             const SizedBox(width: 12),
             Expanded(
               child: _buildQuickActionCard(
-                'Withdraw',
+                AppLocalizations.of(context)!.learningWithdraw,
                 Icons.account_balance_wallet,
                 AppColors.richGold,
                 _showWithdrawDialog,
@@ -543,10 +546,10 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              _buildLessonFilterChip('All', true),
-              _buildLessonFilterChip('Published', false),
-              _buildLessonFilterChip('Draft', false),
-              _buildLessonFilterChip('Under Review', false),
+              _buildLessonFilterChip(AppLocalizations.of(context)!.learningFilterAll, true),
+              _buildLessonFilterChip(AppLocalizations.of(context)!.learningFilterPublished, false),
+              _buildLessonFilterChip(AppLocalizations.of(context)!.learningFilterDraft, false),
+              _buildLessonFilterChip(AppLocalizations.of(context)!.learningFilterUnderReview, false),
             ],
           ),
         ),
@@ -686,7 +689,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
                     foregroundColor: AppColors.pureWhite,
                     side: BorderSide(color: AppColors.pureWhite.withOpacity(0.3)),
                   ),
-                  child: const Text('Edit'),
+                  child: Text(AppLocalizations.of(context)!.learningEdit),
                 ),
               ),
               const SizedBox(width: 8),
@@ -697,7 +700,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
                     foregroundColor: AppColors.richGold,
                     side: const BorderSide(color: AppColors.richGold),
                   ),
-                  child: const Text('Analytics'),
+                  child: Text(AppLocalizations.of(context)!.learningAnalytics),
                 ),
               ),
             ],
@@ -720,9 +723,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
           ),
           child: Column(
             children: [
-              const Text(
-                'Available Balance',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.learningAvailableBalance,
+                style: const TextStyle(
                   color: AppColors.deepBlack,
                   fontSize: 14,
                 ),
@@ -744,7 +747,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
                   foregroundColor: AppColors.richGold,
                   padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                 ),
-                child: const Text('Withdraw Funds'),
+                child: Text(AppLocalizations.of(context)!.learningWithdrawFunds),
               ),
             ],
           ),
@@ -755,20 +758,20 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
         Row(
           children: [
             Expanded(
-              child: _buildEarningsStat('This Month', '\$485.00', '+12%'),
+              child: _buildEarningsStat(AppLocalizations.of(context)!.learningThisMonth, '\$485.00', '+12%'),
             ),
             const SizedBox(width: 12),
             Expanded(
-              child: _buildEarningsStat('Last Month', '\$432.50', '+8%'),
+              child: _buildEarningsStat(AppLocalizations.of(context)!.learningLastMonth, '\$432.50', '+8%'),
             ),
           ],
         ),
         const SizedBox(height: 24),
 
         // Recent Transactions
-        const Text(
-          'Recent Transactions',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningRecentTransactions,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -899,20 +902,20 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
         Row(
           children: [
             Expanded(
-              child: _buildStudentStat('Total Students', '1,234'),
+              child: _buildStudentStat(AppLocalizations.of(context)!.learningTotalStudentsLabel, '1,234'),
             ),
             const SizedBox(width: 12),
             Expanded(
-              child: _buildStudentStat('Active This Week', '456'),
+              child: _buildStudentStat(AppLocalizations.of(context)!.learningActiveThisWeek, '456'),
             ),
           ],
         ),
         const SizedBox(height: 24),
 
         // Top Students
-        const Text(
-          'Top Performing Students',
-          style: TextStyle(
+        Text(
+          AppLocalizations.of(context)!.learningTopPerformingStudents,
+          style: const TextStyle(
             color: AppColors.pureWhite,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -1048,9 +1051,9 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Teacher Tiers',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.learningTeacherTiers,
+              style: const TextStyle(
                 color: AppColors.pureWhite,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -1105,16 +1108,16 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.charcoal,
-        title: const Text(
-          'Withdraw Funds',
-          style: TextStyle(color: AppColors.pureWhite),
+        title: Text(
+          AppLocalizations.of(context)!.learningWithdrawFunds,
+          style: const TextStyle(color: AppColors.pureWhite),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             TextField(
               decoration: InputDecoration(
-                labelText: 'Amount',
+                labelText: AppLocalizations.of(context)!.learningAmountLabel,
                 labelStyle: TextStyle(color: AppColors.pureWhite.withOpacity(0.6)),
                 prefixText: '\$ ',
                 prefixStyle: const TextStyle(color: AppColors.richGold),
@@ -1130,7 +1133,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
             ),
             const SizedBox(height: 16),
             Text(
-              'Minimum withdrawal: \$50.00',
+              AppLocalizations.of(context)!.learningMinimumWithdrawal,
               style: TextStyle(
                 color: AppColors.pureWhite.withOpacity(0.5),
                 fontSize: 12,
@@ -1150,8 +1153,8 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
             onPressed: () {
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Withdrawal request submitted!'),
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!.learningWithdrawalSubmitted),
                   backgroundColor: AppColors.successGreen,
                 ),
               );
@@ -1160,7 +1163,7 @@ class _TeacherDashboardScreenState extends State<TeacherDashboardScreen>
               backgroundColor: AppColors.richGold,
               foregroundColor: AppColors.deepBlack,
             ),
-            child: const Text('Withdraw'),
+            child: Text(AppLocalizations.of(context)!.learningWithdraw),
           ),
         ],
       ),
@@ -1189,16 +1192,16 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
       backgroundColor: AppColors.deepBlack,
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
-        title: const Text(
-          'Create New Lesson',
-          style: TextStyle(color: AppColors.pureWhite),
+        title: Text(
+          AppLocalizations.of(context)!.learningCreateNewLesson,
+          style: const TextStyle(color: AppColors.pureWhite),
         ),
         actions: [
           TextButton(
             onPressed: _saveDraft,
-            child: const Text(
-              'Save Draft',
-              style: TextStyle(color: AppColors.richGold),
+            child: Text(
+              AppLocalizations.of(context)!.learningDraftSave,
+              style: const TextStyle(color: AppColors.richGold),
             ),
           ),
         ],
@@ -1211,34 +1214,34 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
             // Title
             TextFormField(
               controller: _titleController,
-              decoration: const InputDecoration(
-                labelText: 'Lesson Title',
-                hintText: 'e.g., "Spanish Greetings for Dating"',
+              decoration: InputDecoration(
+                labelText: AppLocalizations.of(context)!.learningLessonTitleLabel,
+                hintText: AppLocalizations.of(context)!.learningLessonTitleHint,
               ),
               style: const TextStyle(color: AppColors.pureWhite),
               validator: (value) =>
-                  value?.isEmpty ?? true ? 'Please enter a title' : null,
+                  value?.isEmpty ?? true ? AppLocalizations.of(context)!.learningPleaseEnterTitle : null,
             ),
             const SizedBox(height: 16),
 
             // Description
             TextFormField(
               controller: _descriptionController,
-              decoration: const InputDecoration(
-                labelText: 'Description',
-                hintText: 'What will students learn?',
+              decoration: InputDecoration(
+                labelText: AppLocalizations.of(context)!.learningDescriptionLabel,
+                hintText: AppLocalizations.of(context)!.learningDescriptionHint,
               ),
               style: const TextStyle(color: AppColors.pureWhite),
               maxLines: 3,
               validator: (value) =>
-                  value?.isEmpty ?? true ? 'Please enter a description' : null,
+                  value?.isEmpty ?? true ? AppLocalizations.of(context)!.learningPleaseEnterDescription : null,
             ),
             const SizedBox(height: 24),
 
             // Language Selection
-            const Text(
-              'Target Language',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.learningTargetLanguage,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
@@ -1250,14 +1253,14 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
               decoration: const InputDecoration(),
               dropdownColor: AppColors.charcoal,
               style: const TextStyle(color: AppColors.pureWhite),
-              items: const [
-                DropdownMenuItem(value: 'es', child: Text('Spanish')),
-                DropdownMenuItem(value: 'fr', child: Text('French')),
-                DropdownMenuItem(value: 'it', child: Text('Italian')),
-                DropdownMenuItem(value: 'de', child: Text('German')),
-                DropdownMenuItem(value: 'pt', child: Text('Portuguese')),
-                DropdownMenuItem(value: 'pt-BR', child: Text('Brazilian Portuguese')),
-                DropdownMenuItem(value: 'en', child: Text('English')),
+              items: [
+                DropdownMenuItem(value: 'es', child: Text(AppLocalizations.of(context)!.learningLangSpanish)),
+                DropdownMenuItem(value: 'fr', child: Text(AppLocalizations.of(context)!.learningLangFrench)),
+                DropdownMenuItem(value: 'it', child: Text(AppLocalizations.of(context)!.learningLangItalian)),
+                DropdownMenuItem(value: 'de', child: Text(AppLocalizations.of(context)!.learningLangGerman)),
+                DropdownMenuItem(value: 'pt', child: Text(AppLocalizations.of(context)!.learningLangPortuguese)),
+                DropdownMenuItem(value: 'pt-BR', child: Text(AppLocalizations.of(context)!.learningLangBrazilianPortuguese)),
+                DropdownMenuItem(value: 'en', child: Text(AppLocalizations.of(context)!.learningLangEnglish)),
               ],
               onChanged: (value) =>
                   setState(() => _selectedLanguage = value ?? 'es'),
@@ -1265,9 +1268,9 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
             const SizedBox(height: 24),
 
             // Level Selection
-            const Text(
-              'Difficulty Level',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.learningDifficultyLevel,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
@@ -1294,9 +1297,9 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
             const SizedBox(height: 24),
 
             // Category Selection
-            const Text(
-              'Category',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.learningCategory,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
@@ -1327,7 +1330,7 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
             OutlinedButton.icon(
               onPressed: _addSection,
               icon: const Icon(Icons.add),
-              label: const Text('Add Lesson Section'),
+              label: Text(AppLocalizations.of(context)!.learningAddLessonSection),
               style: OutlinedButton.styleFrom(
                 foregroundColor: AppColors.richGold,
                 side: const BorderSide(color: AppColors.richGold),
@@ -1361,9 +1364,9 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            child: const Text(
-              'Submit for Review',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            child: Text(
+              AppLocalizations.of(context)!.learningSubmitForReview,
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
           ),
         ),
@@ -1373,8 +1376,8 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
 
   void _saveDraft() {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Draft saved!'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.learningDraftSaved),
         backgroundColor: AppColors.successGreen,
       ),
     );
@@ -1383,8 +1386,8 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
   void _addSection() {
     // Navigate to section editor
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Section editor coming soon!'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.learningSectionEditorComingSoon),
         backgroundColor: AppColors.infoBlue,
       ),
     );
@@ -1396,12 +1399,12 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
         context: context,
         builder: (context) => AlertDialog(
           backgroundColor: AppColors.charcoal,
-          title: const Text(
-            'Submit for Review?',
-            style: TextStyle(color: AppColors.pureWhite),
+          title: Text(
+            AppLocalizations.of(context)!.learningSubmitForReviewQuestion,
+            style: const TextStyle(color: AppColors.pureWhite),
           ),
           content: Text(
-            'Your lesson will be reviewed by our team before it goes live. This usually takes 24-48 hours.',
+            AppLocalizations.of(context)!.learningSubmitForReviewBody,
             style: TextStyle(color: AppColors.pureWhite.withOpacity(0.7)),
           ),
           actions: [
@@ -1417,8 +1420,8 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
                 Navigator.pop(context);
                 Navigator.pop(context);
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Lesson submitted for review!'),
+                  SnackBar(
+                    content: Text(AppLocalizations.of(context)!.learningLessonSubmitted),
                     backgroundColor: AppColors.successGreen,
                   ),
                 );
@@ -1427,7 +1430,7 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
               ),
-              child: const Text('Submit'),
+              child: Text(AppLocalizations.of(context)!.learningSubmit),
             ),
           ],
         ),

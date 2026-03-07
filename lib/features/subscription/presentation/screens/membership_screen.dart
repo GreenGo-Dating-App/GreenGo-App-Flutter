@@ -50,7 +50,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Buy Membership'),
+        title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
         backgroundColor: Colors.black,
         foregroundColor: AppColors.richGold,
         elevation: 0,
@@ -93,9 +93,9 @@ class _MembershipScreenState extends State<MembershipScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       // Header
-                      const Text(
-                        'Extend Your Membership',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.membershipExtendTitle,
+                        style: const TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
                           color: AppColors.richGold,
@@ -103,9 +103,9 @@ class _MembershipScreenState extends State<MembershipScreen> {
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 8),
-                      const Text(
-                        'Buy once, enjoy premium features for 1 month or 1 year',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.membershipSubtitle,
+                        style: const TextStyle(
                           fontSize: 16,
                           color: Colors.white70,
                         ),
@@ -150,7 +150,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
 
                       // Terms
                       Text(
-                        'One-time purchase. Membership will be extended from your current end date.',
+                        AppLocalizations.of(context)!.membershipTerms,
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey[600],
@@ -187,14 +187,15 @@ class _MembershipScreenState extends State<MembershipScreen> {
     final isBase = product.id.contains('base');
     final tierColor = _getTierColor(product.id);
 
-    String tierName = 'GreenGo Base';
-    if (product.id.contains('platinum')) tierName = 'Platinum';
-    else if (product.id.contains('gold')) tierName = 'Gold';
-    else if (product.id.contains('silver')) tierName = 'Silver';
+    final l10n = AppLocalizations.of(context)!;
+    String tierName = l10n.membershipGreenGoBase;
+    if (product.id.contains('platinum')) tierName = l10n.membershipPlatinum;
+    else if (product.id.contains('gold')) tierName = l10n.membershipGold;
+    else if (product.id.contains('silver')) tierName = l10n.membershipSilver;
 
-    String duration = '1 month';
-    if (isYearly) duration = '1 year';
-    if (isBase) duration = 'Base';
+    String duration = l10n.membershipOneMonth;
+    if (isYearly) duration = l10n.membershipOneYear;
+    if (isBase) duration = l10n.membershipBase;
 
     return GestureDetector(
       onTap: onSelect,
@@ -219,7 +220,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '$tierName Membership',
+                      l10n.membershipTierName(tierName),
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -247,7 +248,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      'SAVE ${_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)}%',
+                      l10n.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -269,7 +270,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
             const SizedBox(height: 8),
             if (isYearly)
               Text(
-                'Equivalent to ${_calculateMonthlyPrice(product)}/month',
+                l10n.membershipEquivalentMonthly(_calculateMonthlyPrice(product)),
                 style: const TextStyle(
                   fontSize: 14,
                   color: Colors.white70,

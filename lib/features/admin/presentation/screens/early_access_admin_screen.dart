@@ -2,6 +2,7 @@ import 'dart:io' show File, Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/early_access_service.dart';
@@ -112,7 +113,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
 
       if (emails.isEmpty) {
         setState(() {
-          _errorMessage = 'No valid email addresses found in the file';
+          _errorMessage = AppLocalizations.of(context)!.adminNoValidEmailsFound;
           _isUploading = false;
         });
         return;
@@ -141,7 +142,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       }
     } catch (e) {
       setState(() {
-        _errorMessage = 'Error uploading file: $e';
+        _errorMessage = AppLocalizations.of(context)!.adminErrorUploadingFile(e.toString());
         _isUploading = false;
       });
     }
@@ -152,7 +153,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
     if (email.isEmpty) return;
 
     if (!_isValidEmail(email)) {
-      setState(() => _errorMessage = 'Please enter a valid email address');
+      setState(() => _errorMessage = AppLocalizations.of(context)!.adminPleaseEnterValidEmail);
       return;
     }
 
@@ -172,29 +173,30 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$email added to early access list'),
+            content: Text(AppLocalizations.of(context)!.adminEmailAddedToEarlyAccess(email)),
             backgroundColor: AppColors.successGreen,
           ),
         );
       }
     } catch (e) {
-      setState(() => _errorMessage = 'Error adding email: $e');
+      setState(() => _errorMessage = AppLocalizations.of(context)!.adminErrorAddingEmail(e.toString()));
     } finally {
       setState(() => _isLoading = false);
     }
   }
 
   Future<void> _removeEmail(String email) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Remove Email',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminRemoveEmail,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Are you sure you want to remove "$email" from the early access list?',
+          l10n.adminRemoveEmailConfirm(email),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -205,7 +207,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: AppColors.errorRed),
-            child: const Text('Remove'),
+            child: Text(l10n.adminRemove),
           ),
         ],
       ),
@@ -219,7 +221,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$email removed from early access list'),
+            content: Text(l10n.adminEmailRemovedFromEarlyAccess(email)),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -228,7 +230,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Error removing email: $e'),
+            content: Text(l10n.adminErrorRemovingEmail(e.toString())),
             backgroundColor: AppColors.errorRed,
           ),
         );
@@ -247,9 +249,9 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Early Access List',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminEarlyAccessList,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         actions: [
@@ -331,9 +333,9 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Early Access Program',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.adminEarlyAccessProgram,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -341,8 +343,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Users in this list get access on March 14, 2026.\n'
-                  'All other users get access on April 14, 2026.',
+                  AppLocalizations.of(context)!.adminEarlyAccessDates,
                   style: TextStyle(
                     color: AppColors.textSecondary.withValues(alpha: 0.8),
                     fontSize: 13,
@@ -368,13 +369,13 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.upload_file, color: AppColors.richGold, size: 24),
-              SizedBox(width: AppDimensions.paddingS),
+              const Icon(Icons.upload_file, color: AppColors.richGold, size: 24),
+              const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Upload CSV File',
-                style: TextStyle(
+                AppLocalizations.of(context)!.adminUploadCsvFile,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -384,7 +385,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           ),
           const SizedBox(height: AppDimensions.paddingS),
           Text(
-            'Upload a CSV file containing email addresses (one per line or comma-separated)',
+            AppLocalizations.of(context)!.adminUploadCsvDescription,
             style: TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
@@ -402,7 +403,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                       child: CircularProgressIndicator(strokeWidth: 2),
                     )
                   : const Icon(Icons.cloud_upload),
-              label: Text(_isUploading ? 'Uploading...' : 'Select CSV File'),
+              label: Text(_isUploading ? AppLocalizations.of(context)!.adminUploading : AppLocalizations.of(context)!.adminSelectCsvFile),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: Colors.black,
@@ -429,13 +430,13 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.person_add, color: AppColors.successGreen, size: 24),
-              SizedBox(width: AppDimensions.paddingS),
+              const Icon(Icons.person_add, color: AppColors.successGreen, size: 24),
+              const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Add Single Email',
-                style: TextStyle(
+                AppLocalizations.of(context)!.adminAddSingleEmail,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -451,7 +452,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                   controller: _emailController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
-                    hintText: 'Enter email address',
+                    hintText: AppLocalizations.of(context)!.adminEnterEmailAddress,
                     hintStyle: const TextStyle(color: AppColors.textTertiary),
                     filled: true,
                     fillColor: AppColors.backgroundInput,
@@ -491,7 +492,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                           color: Colors.white,
                         ),
                       )
-                    : const Text('Add'),
+                    : Text(AppLocalizations.of(context)!.adminAdd),
               ),
             ],
           ),
@@ -528,7 +529,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
               ),
               const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Import Result',
+                AppLocalizations.of(context)!.adminImportResult,
                 style: TextStyle(
                   color: result.hasErrors
                       ? AppColors.warningAmber
@@ -546,7 +547,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           if (result.errors.isNotEmpty) ...[
             const SizedBox(height: AppDimensions.paddingS),
             Text(
-              'Errors:',
+              AppLocalizations.of(context)!.adminErrors,
               style: TextStyle(
                 color: AppColors.errorRed,
                 fontSize: 12,
@@ -562,7 +563,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                 )),
             if (result.errors.length > 5)
               Text(
-                '  ... and ${result.errors.length - 5} more errors',
+                AppLocalizations.of(context)!.adminMoreErrors(result.errors.length - 5),
                 style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
@@ -621,9 +622,9 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                   children: [
                     const Icon(Icons.list, color: AppColors.infoBlue, size: 24),
                     const SizedBox(width: AppDimensions.paddingS),
-                    const Text(
-                      'Email List',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.adminEmailList,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -644,7 +645,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(
-                            '$count emails',
+                            AppLocalizations.of(context)!.adminEmailCount(count),
                             style: const TextStyle(
                               color: AppColors.richGold,
                               fontSize: 12,
@@ -662,7 +663,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                   controller: _searchController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
-                    hintText: 'Search emails...',
+                    hintText: AppLocalizations.of(context)!.adminSearchEmails,
                     hintStyle: const TextStyle(color: AppColors.textTertiary),
                     prefixIcon: const Icon(
                       Icons.search,
@@ -713,8 +714,8 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                         const SizedBox(height: AppDimensions.paddingM),
                         Text(
                           _searchController.text.isNotEmpty
-                              ? 'No matching emails found'
-                              : 'No emails in early access list',
+                              ? AppLocalizations.of(context)!.adminNoMatchingEmailsFound
+                              : AppLocalizations.of(context)!.adminNoEmailsInEarlyAccessList,
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 14,
@@ -756,7 +757,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
                     ),
                     subtitle: email.addedAt != null
                         ? Text(
-                            'Added ${_formatDate(email.addedAt!)}',
+                            AppLocalizations.of(context)!.adminAddedDate(_formatDate(email.addedAt!)),
                             style: const TextStyle(
                               color: AppColors.textTertiary,
                               fontSize: 12,
@@ -781,17 +782,18 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
   }
 
   void _showInfoDialog() {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.info_outline, color: AppColors.richGold),
-            SizedBox(width: 8),
+            const Icon(Icons.info_outline, color: AppColors.richGold),
+            const SizedBox(width: 8),
             Text(
-              'Early Access Info',
-              style: TextStyle(color: AppColors.textPrimary),
+              l10n.adminEarlyAccessInfo,
+              style: const TextStyle(color: AppColors.textPrimary),
             ),
           ],
         ),
@@ -799,9 +801,9 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Access Dates:',
-              style: TextStyle(
+            Text(
+              l10n.adminAccessDates,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontWeight: FontWeight.bold,
               ),
@@ -810,31 +812,28 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
             _buildInfoRow(
               Icons.star,
               AppColors.richGold,
-              'Early Access (in list)',
-              'March 14, 2026',
+              l10n.adminEarlyAccessInList,
+              l10n.adminEarlyAccessDate,
             ),
             const SizedBox(height: 8),
             _buildInfoRow(
               Icons.people,
               AppColors.textSecondary,
-              'General Access',
-              'April 14, 2026',
+              l10n.adminGeneralAccess,
+              l10n.adminGeneralAccessDate,
             ),
             const SizedBox(height: 16),
-            const Text(
-              'CSV Format:',
-              style: TextStyle(
+            Text(
+              l10n.adminCsvFormat,
+              style: const TextStyle(
                 color: AppColors.richGold,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              '• One email per line, or\n'
-              '• Comma-separated values\n'
-              '• Quotes are automatically removed\n'
-              '• Invalid emails are skipped',
-              style: TextStyle(
+            Text(
+              l10n.adminCsvFormatDescription,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 13,
               ),

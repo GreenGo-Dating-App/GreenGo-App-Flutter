@@ -4,10 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/domain/entities/profile.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
-/// Amazing Match Screen with Dynamic Love Effects
+/// Amazing Match Screen with Dynamic Flag Effects
 ///
-/// Shows both user profile pictures with hearts, particles, and animations
+/// Shows both user profile pictures with flag confetti, particles, and animations
 class MatchNotification extends StatefulWidget {
   final Profile currentUserProfile;
   final Profile matchedProfile;
@@ -31,7 +32,7 @@ class MatchNotification extends StatefulWidget {
 class _MatchNotificationState extends State<MatchNotification>
     with TickerProviderStateMixin {
   late AnimationController _mainController;
-  late AnimationController _heartsController;
+  late AnimationController _flagsController;
   late AnimationController _pulseController;
   late AnimationController _particleController;
 
@@ -39,12 +40,36 @@ class _MatchNotificationState extends State<MatchNotification>
   late Animation<double> _fadeAnimation;
   late Animation<double> _photoLeftAnimation;
   late Animation<double> _photoRightAnimation;
-  late Animation<double> _heartScaleAnimation;
+  late Animation<double> _flagScaleAnimation;
   late Animation<double> _pulseAnimation;
 
-  final List<_HeartParticle> _hearts = [];
+  final List<_FlagParticle> _flags = [];
   final List<_SparkleParticle> _sparkles = [];
   final math.Random _random = math.Random();
+
+  // Flag emojis for confetti
+  static const _flagEmojis = [
+    '\u{1F1FA}\u{1F1F8}', // US
+    '\u{1F1EE}\u{1F1F9}', // IT
+    '\u{1F1EA}\u{1F1F8}', // ES
+    '\u{1F1EB}\u{1F1F7}', // FR
+    '\u{1F1E9}\u{1F1EA}', // DE
+    '\u{1F1E7}\u{1F1F7}', // BR
+    '\u{1F1EF}\u{1F1F5}', // JP
+    '\u{1F1EC}\u{1F1E7}', // GB
+    '\u{1F1F0}\u{1F1F7}', // KR
+    '\u{1F1F5}\u{1F1F9}', // PT
+    '\u{1F1E8}\u{1F1F3}', // CN
+    '\u{1F1F7}\u{1F1FA}', // RU
+    '\u{1F1F2}\u{1F1FD}', // MX
+    '\u{1F1E8}\u{1F1E6}', // CA
+    '\u{1F1E6}\u{1F1FA}', // AU
+    '\u{1F1EE}\u{1F1F3}', // IN
+    '\u{1F1F8}\u{1F1E6}', // SA
+    '\u{1F1F9}\u{1F1F7}', // TR
+    '\u{1F1F3}\u{1F1EC}', // NG
+    '\u{1F1E6}\u{1F1F7}', // AR
+  ];
 
   @override
   void initState() {
@@ -59,13 +84,13 @@ class _MatchNotificationState extends State<MatchNotification>
       vsync: this,
     );
 
-    // Hearts controller for floating hearts
-    _heartsController = AnimationController(
+    // Flags controller for floating flags
+    _flagsController = AnimationController(
       duration: const Duration(milliseconds: 3000),
       vsync: this,
     )..repeat();
 
-    // Pulse animation for the center heart
+    // Pulse animation for the center icon
     _pulseController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -109,8 +134,8 @@ class _MatchNotificationState extends State<MatchNotification>
       ),
     );
 
-    // Heart scale animation
-    _heartScaleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+    // Flag scale animation
+    _flagScaleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: _mainController,
         curve: const Interval(0.5, 1.0, curve: Curves.elasticOut),
@@ -125,21 +150,23 @@ class _MatchNotificationState extends State<MatchNotification>
       ),
     );
 
-    // Generate floating hearts
-    _generateHearts();
+    // Generate floating flags
+    _generateFlags();
     _generateSparkles();
 
     _mainController.forward();
   }
 
-  void _generateHearts() {
-    for (int i = 0; i < 15; i++) {
-      _hearts.add(_HeartParticle(
+  void _generateFlags() {
+    for (int i = 0; i < 20; i++) {
+      _flags.add(_FlagParticle(
         x: _random.nextDouble(),
         y: _random.nextDouble(),
-        size: 12 + _random.nextDouble() * 20,
+        size: 16 + _random.nextDouble() * 18,
         speed: 0.3 + _random.nextDouble() * 0.5,
         delay: _random.nextDouble(),
+        flag: _flagEmojis[_random.nextInt(_flagEmojis.length)],
+        rotation: _random.nextDouble() * 0.6 - 0.3,
       ));
     }
   }
@@ -159,7 +186,7 @@ class _MatchNotificationState extends State<MatchNotification>
   @override
   void dispose() {
     _mainController.dispose();
-    _heartsController.dispose();
+    _flagsController.dispose();
     _pulseController.dispose();
     _particleController.dispose();
     super.dispose();
@@ -173,10 +200,10 @@ class _MatchNotificationState extends State<MatchNotification>
         color: Colors.black.withOpacity(0.85),
         child: Stack(
           children: [
-            // Floating hearts background
+            // Floating flags background
             AnimatedBuilder(
-              animation: _heartsController,
-              builder: (context, child) => _buildFloatingHearts(),
+              animation: _flagsController,
+              builder: (context, child) => _buildFloatingFlags(),
             ),
 
             // Sparkles
@@ -226,11 +253,11 @@ class _MatchNotificationState extends State<MatchNotification>
                             AppColors.richGold,
                           ],
                         ).createShader(bounds),
-                        child: const Text(
-                          "IT'S A MATCH!",
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)!.matchNotifLetsExchange,
+                          style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 36,
+                            fontSize: 34,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 2,
                           ),
@@ -240,7 +267,7 @@ class _MatchNotificationState extends State<MatchNotification>
                       const SizedBox(height: 8),
 
                       Text(
-                        'You and ${widget.matchedProfile.displayName} have liked each other!',
+                        AppLocalizations.of(context)!.matchNotifExchangeMsg(widget.matchedProfile.displayName),
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                           color: AppColors.textSecondary,
@@ -250,7 +277,7 @@ class _MatchNotificationState extends State<MatchNotification>
 
                       const SizedBox(height: 32),
 
-                      // Profile pictures with heart
+                      // Profile pictures with exchange icon
                       SizedBox(
                         height: 180,
                         child: Stack(
@@ -280,32 +307,32 @@ class _MatchNotificationState extends State<MatchNotification>
                               ),
                             ),
 
-                            // Center heart with pulse
+                            // Center exchange icon with pulse
                             AnimatedBuilder(
                               animation: Listenable.merge([
                                 _mainController,
                                 _pulseController,
                               ]),
                               builder: (context, child) => Transform.scale(
-                                scale: _heartScaleAnimation.value *
+                                scale: _flagScaleAnimation.value *
                                     _pulseAnimation.value,
                                 child: Container(
                                   width: 70,
                                   height: 70,
                                   decoration: BoxDecoration(
-                                    color: Colors.red,
+                                    color: AppColors.richGold,
                                     shape: BoxShape.circle,
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.red.withOpacity(0.5),
+                                        color: AppColors.richGold.withOpacity(0.5),
                                         blurRadius: 20,
                                         spreadRadius: 5,
                                       ),
                                     ],
                                   ),
                                   child: const Icon(
-                                    Icons.favorite,
-                                    color: Colors.white,
+                                    Icons.swap_horiz,
+                                    color: AppColors.deepBlack,
                                     size: 40,
                                   ),
                                 ),
@@ -336,14 +363,14 @@ class _MatchNotificationState extends State<MatchNotification>
                             elevation: 8,
                             shadowColor: AppColors.richGold.withOpacity(0.5),
                           ),
-                          child: const Row(
+                          child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.chat_bubble, size: 22),
-                              SizedBox(width: 10),
+                              const Icon(Icons.chat_bubble, size: 22),
+                              const SizedBox(width: 10),
                               Text(
-                                "Let's Chat!",
-                                style: TextStyle(
+                                AppLocalizations.of(context)!.matchNotifLetsChat,
+                                style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 1,
@@ -375,9 +402,9 @@ class _MatchNotificationState extends State<MatchNotification>
                               borderRadius: BorderRadius.circular(16),
                             ),
                           ),
-                          child: const Text(
-                            'View Profile',
-                            style: TextStyle(
+                          child: Text(
+                            AppLocalizations.of(context)!.matchNotifViewProfile,
+                            style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -393,9 +420,9 @@ class _MatchNotificationState extends State<MatchNotification>
                           Navigator.of(context).pop();
                           widget.onKeepSwiping?.call();
                         },
-                        child: const Text(
-                          'Keep Swiping',
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)!.matchNotifKeepSwiping,
+                          style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 14,
                           ),
@@ -460,13 +487,13 @@ class _MatchNotificationState extends State<MatchNotification>
     );
   }
 
-  Widget _buildFloatingHearts() {
+  Widget _buildFloatingFlags() {
     return IgnorePointer(
       child: SizedBox.expand(
         child: CustomPaint(
-          painter: _HeartsPainter(
-            hearts: _hearts,
-            progress: _heartsController.value,
+          painter: _FlagsPainter(
+            flags: _flags,
+            progress: _flagsController.value,
           ),
         ),
       ),
@@ -487,19 +514,23 @@ class _MatchNotificationState extends State<MatchNotification>
   }
 }
 
-class _HeartParticle {
+class _FlagParticle {
   final double x;
   final double y;
   final double size;
   final double speed;
   final double delay;
+  final String flag;
+  final double rotation;
 
-  _HeartParticle({
+  _FlagParticle({
     required this.x,
     required this.y,
     required this.size,
     required this.speed,
     required this.delay,
+    required this.flag,
+    required this.rotation,
   });
 }
 
@@ -519,18 +550,18 @@ class _SparkleParticle {
   });
 }
 
-class _HeartsPainter extends CustomPainter {
-  final List<_HeartParticle> hearts;
+class _FlagsPainter extends CustomPainter {
+  final List<_FlagParticle> flags;
   final double progress;
 
-  _HeartsPainter({required this.hearts, required this.progress});
+  _FlagsPainter({required this.flags, required this.progress});
 
   @override
   void paint(Canvas canvas, Size size) {
-    for (final heart in hearts) {
-      final adjustedProgress = (progress + heart.delay) % 1.0;
-      final y = size.height * (1 - adjustedProgress * heart.speed);
-      final x = size.width * heart.x +
+    for (final flag in flags) {
+      final adjustedProgress = (progress + flag.delay) % 1.0;
+      final y = size.height * (1 - adjustedProgress * flag.speed);
+      final x = size.width * flag.x +
           math.sin(adjustedProgress * math.pi * 4) * 20;
 
       final opacity = adjustedProgress < 0.2
@@ -539,38 +570,41 @@ class _HeartsPainter extends CustomPainter {
               ? (1 - adjustedProgress) * 5
               : 1.0;
 
-      final paint = Paint()
-        ..color = Colors.red.withOpacity(opacity * 0.6)
-        ..style = PaintingStyle.fill;
+      canvas.save();
+      canvas.translate(x, y);
+      canvas.rotate(flag.rotation * math.sin(adjustedProgress * math.pi * 2));
 
-      _drawHeart(canvas, Offset(x, y), heart.size, paint);
+      final textPainter = TextPainter(
+        text: TextSpan(
+          text: flag.flag,
+          style: TextStyle(fontSize: flag.size),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout();
+
+      textPainter.paint(
+        canvas,
+        Offset(-textPainter.width / 2, -textPainter.height / 2),
+      );
+
+      // Apply opacity by drawing a semi-transparent overlay when fading
+      if (opacity < 1.0) {
+        canvas.drawRect(
+          Rect.fromCenter(
+            center: Offset.zero,
+            width: textPainter.width,
+            height: textPainter.height,
+          ),
+          Paint()..color = Colors.black.withOpacity((1 - opacity) * 0.85),
+        );
+      }
+
+      canvas.restore();
     }
   }
 
-  void _drawHeart(Canvas canvas, Offset center, double size, Paint paint) {
-    final path = Path();
-    path.moveTo(center.dx, center.dy + size * 0.3);
-    path.cubicTo(
-      center.dx - size * 0.5,
-      center.dy - size * 0.3,
-      center.dx - size * 0.5,
-      center.dy - size * 0.6,
-      center.dx,
-      center.dy - size * 0.3,
-    );
-    path.cubicTo(
-      center.dx + size * 0.5,
-      center.dy - size * 0.6,
-      center.dx + size * 0.5,
-      center.dy - size * 0.3,
-      center.dx,
-      center.dy + size * 0.3,
-    );
-    canvas.drawPath(path, paint);
-  }
-
   @override
-  bool shouldRepaint(covariant _HeartsPainter oldDelegate) {
+  bool shouldRepaint(covariant _FlagsPainter oldDelegate) {
     return oldDelegate.progress != progress;
   }
 }

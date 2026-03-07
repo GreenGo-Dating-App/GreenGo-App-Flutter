@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -80,9 +81,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Communities',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.communitiesTitle,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -97,10 +98,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             fontWeight: FontWeight.w600,
             fontSize: 14,
           ),
-          tabs: const [
-            Tab(text: 'My Groups'),
-            Tab(text: 'Discover'),
-            Tab(text: 'Language Circles'),
+          tabs: [
+            Tab(text: AppLocalizations.of(context)!.communitiesTabMyGroups),
+            Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
+            Tab(text: AppLocalizations.of(context)!.communitiesTabLanguageCircles),
           ],
         ),
       ),
@@ -120,9 +121,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         onPressed: () => _navigateToCreateCommunity(),
         backgroundColor: AppColors.richGold,
         icon: const Icon(Icons.add, color: AppColors.deepBlack),
-        label: const Text(
-          'Create',
-          style: TextStyle(
+        label: Text(
+          AppLocalizations.of(context)!.communitiesCreateLabel,
+          style: const TextStyle(
             color: AppColors.deepBlack,
             fontWeight: FontWeight.w600,
           ),
@@ -147,10 +148,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     if (userCommunities.isEmpty) {
       return _buildEmptyState(
         icon: Icons.group_outlined,
-        title: 'No Communities Yet',
-        subtitle:
-            'Join communities to connect with people who share your interests and languages.',
-        actionLabel: 'Discover Communities',
+        title: AppLocalizations.of(context)!.communitiesNoCommunities,
+        subtitle: AppLocalizations.of(context)!.communitiesJoinPrompt,
+        actionLabel: AppLocalizations.of(context)!.communitiesDiscoverCommunities,
         onAction: () => _tabController.animateTo(1),
       );
     }
@@ -206,7 +206,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
               controller: _searchController,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Search communities...',
+                hintText: AppLocalizations.of(context)!.communitiesSearchHint,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 prefixIcon: const Icon(
                   Icons.search,
@@ -243,7 +243,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
               ),
               children: [
                 CommunityTypeChip(
-                  label: 'All',
+                  label: AppLocalizations.of(context)!.communitiesAllFilter,
                   isSelected: _selectedFilter == null,
                   onTap: () {
                     setState(() => _selectedFilter = null);
@@ -276,17 +276,17 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
         // Recommended section
         if (recommended.isNotEmpty) ...[
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(
+              padding: const EdgeInsets.fromLTRB(
                 AppDimensions.paddingM,
                 AppDimensions.paddingL,
                 AppDimensions.paddingM,
                 AppDimensions.paddingS,
               ),
               child: Text(
-                'Recommended for You',
-                style: TextStyle(
+                AppLocalizations.of(context)!.communitiesRecommendedForYou,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -308,17 +308,17 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         ],
 
         // All communities section
-        const SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(
+            padding: const EdgeInsets.fromLTRB(
               AppDimensions.paddingM,
               AppDimensions.paddingL,
               AppDimensions.paddingM,
               AppDimensions.paddingS,
             ),
             child: Text(
-              'All Communities',
-              style: TextStyle(
+              AppLocalizations.of(context)!.communitiesAllCommunities,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -331,8 +331,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           SliverToBoxAdapter(
             child: _buildEmptyState(
               icon: Icons.search_off,
-              title: 'No Communities Found',
-              subtitle: 'Try adjusting your search or filters.',
+              title: AppLocalizations.of(context)!.communitiesNoCommunitiesFound,
+              subtitle: AppLocalizations.of(context)!.communitiesAdjustSearch,
             ),
           )
         else
@@ -380,10 +380,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     if (languageCircles.isEmpty) {
       return _buildEmptyState(
         icon: Icons.translate,
-        title: 'No Language Circles',
-        subtitle:
-            'Language circles will appear here when available. Create one to get started!',
-        actionLabel: 'Create Language Circle',
+        title: AppLocalizations.of(context)!.communitiesNoLanguageCircles,
+        subtitle: AppLocalizations.of(context)!.communitiesLanguageCirclesPrompt,
+        actionLabel: AppLocalizations.of(context)!.communitiesCreateLanguageCircle,
         onAction: () => _navigateToCreateCommunity(
           preselectedType: CommunityType.languageCircle,
         ),

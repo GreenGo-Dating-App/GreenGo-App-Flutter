@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/date_checkin.dart';
@@ -113,8 +114,8 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
 
     if (_emergencyContacts.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please add at least one emergency contact'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.safetyAddAtLeastOneContact),
           backgroundColor: AppColors.errorRed,
         ),
       );
@@ -147,8 +148,8 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
     widget.onCheckInCreated?.call(checkIn);
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Date check-in scheduled!'),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.safetyCheckInScheduled),
         backgroundColor: AppColors.successGreen,
       ),
     );
@@ -158,6 +159,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -167,9 +169,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
-          'Date Check-In',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.safetyDateCheckIn,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
       body: Form(
@@ -201,9 +203,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Stay Safe',
-                            style: TextStyle(
+                          Text(
+                            l10n.safetyStaySafe,
+                            style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -211,7 +213,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            'Set up a check-in for your date. We\'ll remind you to check in, and alert your contacts if you don\'t respond.',
+                            l10n.safetyCheckInDescription,
                             style: TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 13,
@@ -228,9 +230,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
 
               // Meeting with
               if (widget.matchName != null) ...[
-                const Text(
-                  'Meeting with',
-                  style: TextStyle(
+                Text(
+                  l10n.safetyMeetingWith,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
@@ -265,9 +267,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
               ],
 
               // Location
-              const Text(
-                'Location',
-                style: TextStyle(
+              Text(
+                l10n.safetyLocation,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -278,7 +280,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                 controller: _locationController,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: InputDecoration(
-                  hintText: 'Where are you meeting?',
+                  hintText: l10n.safetyMeetingLocationHint,
                   hintStyle: const TextStyle(color: AppColors.textTertiary),
                   prefixIcon: const Icon(Icons.location_on, color: AppColors.richGold),
                   filled: true,
@@ -290,7 +292,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a location';
+                    return l10n.safetyPleaseEnterLocation;
                   }
                   return null;
                 },
@@ -299,9 +301,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
               const SizedBox(height: 20),
 
               // Date & Time
-              const Text(
-                'Date & Time',
-                style: TextStyle(
+              Text(
+                l10n.safetyDateTime,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -361,9 +363,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
               const SizedBox(height: 20),
 
               // Check-in interval
-              const Text(
-                'Check-in every',
-                style: TextStyle(
+              Text(
+                l10n.safetyCheckInEvery,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -374,22 +376,22 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                 spacing: 8,
                 children: [
                   _IntervalChip(
-                    label: '15 min',
+                    label: l10n.safetyInterval15Min,
                     selected: _checkInInterval.inMinutes == 15,
                     onTap: () => setState(() => _checkInInterval = const Duration(minutes: 15)),
                   ),
                   _IntervalChip(
-                    label: '30 min',
+                    label: l10n.safetyInterval30Min,
                     selected: _checkInInterval.inMinutes == 30,
                     onTap: () => setState(() => _checkInInterval = const Duration(minutes: 30)),
                   ),
                   _IntervalChip(
-                    label: '1 hour',
+                    label: l10n.safetyInterval1Hour,
                     selected: _checkInInterval.inMinutes == 60,
                     onTap: () => setState(() => _checkInInterval = const Duration(minutes: 60)),
                   ),
                   _IntervalChip(
-                    label: '2 hours',
+                    label: l10n.safetyInterval2Hours,
                     selected: _checkInInterval.inMinutes == 120,
                     onTap: () => setState(() => _checkInInterval = const Duration(minutes: 120)),
                   ),
@@ -413,15 +415,15 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Share live location',
-                            style: TextStyle(
+                          Text(
+                            l10n.safetyShareLiveLocation,
+                            style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
                           Text(
-                            'Emergency contacts can see your location',
+                            l10n.safetyEmergencyContactsLocation,
                             style: TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 12,
@@ -445,9 +447,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Emergency Contacts',
-                    style: TextStyle(
+                  Text(
+                    l10n.safetyEmergencyContacts,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
@@ -456,7 +458,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                   TextButton.icon(
                     onPressed: _addEmergencyContact,
                     icon: const Icon(Icons.add, size: 18),
-                    label: const Text('Add'),
+                    label: Text(l10n.safetyAdd),
                     style: TextButton.styleFrom(
                       foregroundColor: AppColors.richGold,
                     ),
@@ -481,14 +483,14 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'Add emergency contacts',
+                        l10n.safetyAddEmergencyContacts,
                         style: TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
                         ),
                       ),
                       Text(
-                        'They\'ll be notified if you need help',
+                        l10n.safetyEmergencyContactsHelp,
                         style: TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 12,
@@ -506,9 +508,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
               const SizedBox(height: 20),
 
               // Notes
-              const Text(
-                'Notes (Optional)',
-                style: TextStyle(
+              Text(
+                l10n.safetyNotesOptional,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -520,7 +522,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                 style: const TextStyle(color: AppColors.textPrimary),
                 maxLines: 3,
                 decoration: InputDecoration(
-                  hintText: 'Any additional details...',
+                  hintText: l10n.safetyAdditionalDetailsHint,
                   hintStyle: const TextStyle(color: AppColors.textTertiary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -544,9 +546,9 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                     borderRadius: BorderRadius.circular(AppDimensions.radiusM),
                   ),
                 ),
-                child: const Text(
-                  'Schedule Check-In',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                child: Text(
+                  l10n.safetyScheduleCheckIn,
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
 
@@ -680,11 +682,12 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return AlertDialog(
       backgroundColor: AppColors.backgroundCard,
-      title: const Text(
-        'Add Emergency Contact',
-        style: TextStyle(color: AppColors.textPrimary),
+      title: Text(
+        l10n.safetyAddEmergencyContact,
+        style: const TextStyle(color: AppColors.textPrimary),
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
@@ -692,9 +695,9 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
           TextField(
             controller: _nameController,
             style: const TextStyle(color: AppColors.textPrimary),
-            decoration: const InputDecoration(
-              labelText: 'Name',
-              labelStyle: TextStyle(color: AppColors.textSecondary),
+            decoration: InputDecoration(
+              labelText: l10n.safetyNameLabel,
+              labelStyle: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           const SizedBox(height: 16),
@@ -702,9 +705,9 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
             controller: _phoneController,
             style: const TextStyle(color: AppColors.textPrimary),
             keyboardType: TextInputType.phone,
-            decoration: const InputDecoration(
-              labelText: 'Phone Number',
-              labelStyle: TextStyle(color: AppColors.textSecondary),
+            decoration: InputDecoration(
+              labelText: l10n.safetyPhoneLabel,
+              labelStyle: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           const SizedBox(height: 16),
@@ -712,13 +715,17 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
             value: _relationship,
             dropdownColor: AppColors.backgroundCard,
             style: const TextStyle(color: AppColors.textPrimary),
-            decoration: const InputDecoration(
-              labelText: 'Relationship',
-              labelStyle: TextStyle(color: AppColors.textSecondary),
+            decoration: InputDecoration(
+              labelText: l10n.safetyRelationshipLabel,
+              labelStyle: const TextStyle(color: AppColors.textSecondary),
             ),
-            items: ['Friend', 'Family', 'Partner', 'Roommate', 'Other']
-                .map((r) => DropdownMenuItem(value: r, child: Text(r)))
-                .toList(),
+            items: [
+                  DropdownMenuItem(value: 'Friend', child: Text(l10n.safetyRelationshipFriend)),
+                  DropdownMenuItem(value: 'Family', child: Text(l10n.safetyRelationshipFamily)),
+                  DropdownMenuItem(value: 'Partner', child: Text(l10n.safetyRelationshipPartner)),
+                  DropdownMenuItem(value: 'Roommate', child: Text(l10n.safetyRelationshipRoommate)),
+                  DropdownMenuItem(value: 'Other', child: Text(l10n.safetyRelationshipOther)),
+                ],
             onChanged: (value) {
               if (value != null) {
                 setState(() => _relationship = value);
@@ -747,7 +754,7 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.richGold,
           ),
-          child: const Text('Add'),
+          child: Text(l10n.safetyAdd),
         ),
       ],
     );

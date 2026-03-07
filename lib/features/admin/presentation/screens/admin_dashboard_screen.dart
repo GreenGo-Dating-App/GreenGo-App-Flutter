@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/admin_role.dart';
@@ -17,14 +18,15 @@ class AdminDashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Admin Dashboard',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminDashboard,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         actions: [
@@ -59,7 +61,7 @@ class AdminDashboardScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Welcome header
-            _buildWelcomeHeader(),
+            _buildWelcomeHeader(context),
             const SizedBox(height: AppDimensions.paddingL),
 
             // Quick stats
@@ -67,9 +69,9 @@ class AdminDashboardScreen extends StatelessWidget {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Management sections
-            const Text(
-              'User Management',
-              style: TextStyle(
+            Text(
+              l10n.adminUserManagement,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -80,9 +82,9 @@ class AdminDashboardScreen extends StatelessWidget {
             const SizedBox(height: AppDimensions.paddingL),
 
             // System configuration
-            const Text(
-              'System Configuration',
-              style: TextStyle(
+            Text(
+              l10n.adminSystemConfiguration,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -93,9 +95,9 @@ class AdminDashboardScreen extends StatelessWidget {
             const SizedBox(height: AppDimensions.paddingL),
 
             // Gamification
-            const Text(
-              'Gamification & Rewards',
-              style: TextStyle(
+            Text(
+              l10n.adminGamificationAndRewards,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -107,9 +109,9 @@ class AdminDashboardScreen extends StatelessWidget {
 
             // Support Chat Management
             if (_hasPermission(Permission.viewSupportTickets)) ...[
-              const Text(
-                'Support Management',
-                style: TextStyle(
+              Text(
+                l10n.adminSupportManagement,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -122,9 +124,9 @@ class AdminDashboardScreen extends StatelessWidget {
 
             // Analytics
             if (_hasPermission(Permission.viewAnalytics)) ...[
-              const Text(
-                'Analytics & Reports',
-                style: TextStyle(
+              Text(
+                l10n.adminAnalyticsAndReports,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -139,7 +141,7 @@ class AdminDashboardScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildWelcomeHeader() {
+  Widget _buildWelcomeHeader(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingL),
       decoration: BoxDecoration(
@@ -174,9 +176,9 @@ class AdminDashboardScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Welcome, Admin',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.adminWelcome,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -184,7 +186,7 @@ class AdminDashboardScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Manage your GreenGo application settings',
+                  AppLocalizations.of(context)!.adminManageAppSettings,
                   style: TextStyle(
                     color: AppColors.textSecondary.withValues(alpha: 0.8),
                     fontSize: 14,
@@ -199,6 +201,7 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildQuickStats(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         Row(
@@ -207,9 +210,9 @@ class AdminDashboardScreen extends StatelessWidget {
               child: _StatCard(
                 icon: Icons.people,
                 iconColor: AppColors.successGreen,
-                title: 'Active Users',
+                title: l10n.adminActiveUsers,
                 value: '--',
-                subtitle: 'Today',
+                subtitle: l10n.adminToday,
               ),
             ),
             const SizedBox(width: AppDimensions.paddingM),
@@ -217,9 +220,9 @@ class AdminDashboardScreen extends StatelessWidget {
               child: _StatCard(
                 icon: Icons.verified_user,
                 iconColor: AppColors.richGold,
-                title: 'Pending',
+                title: l10n.adminPending,
                 value: '--',
-                subtitle: 'Verifications',
+                subtitle: l10n.adminVerifications,
               ),
             ),
             const SizedBox(width: AppDimensions.paddingM),
@@ -227,9 +230,9 @@ class AdminDashboardScreen extends StatelessWidget {
               child: _StatCard(
                 icon: Icons.report,
                 iconColor: AppColors.errorRed,
-                title: 'Reports',
+                title: l10n.adminReports,
                 value: '--',
-                subtitle: 'Unresolved',
+                subtitle: l10n.adminUnresolved,
               ),
             ),
           ],
@@ -242,9 +245,9 @@ class AdminDashboardScreen extends StatelessWidget {
                 child: _StatCard(
                   icon: Icons.support_agent,
                   iconColor: Colors.blue,
-                  title: 'Support',
+                  title: l10n.adminSupport,
                   value: '--',
-                  subtitle: 'Open Tickets',
+                  subtitle: l10n.adminOpenTickets,
                 ),
               ),
               const SizedBox(width: AppDimensions.paddingM),
@@ -252,9 +255,9 @@ class AdminDashboardScreen extends StatelessWidget {
                 child: _StatCard(
                   icon: Icons.hourglass_empty,
                   iconColor: Colors.orange,
-                  title: 'Waiting',
+                  title: l10n.adminWaiting,
                   value: '--',
-                  subtitle: 'Unassigned',
+                  subtitle: l10n.adminUnassigned,
                 ),
               ),
               const SizedBox(width: AppDimensions.paddingM),
@@ -262,9 +265,9 @@ class AdminDashboardScreen extends StatelessWidget {
                 child: _StatCard(
                   icon: Icons.check_circle,
                   iconColor: AppColors.successGreen,
-                  title: 'Resolved',
+                  title: l10n.adminResolved,
                   value: '--',
-                  subtitle: 'Today',
+                  subtitle: l10n.adminToday,
                 ),
               ),
             ],
@@ -275,30 +278,31 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildUserManagementSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         if (_hasPermission(Permission.viewUserProfiles))
           _AdminMenuItem(
             icon: Icons.verified_user,
             iconColor: AppColors.successGreen,
-            title: 'User Verifications',
-            subtitle: 'Approve or reject user verification requests',
+            title: l10n.adminUserVerifications,
+            subtitle: l10n.adminUserVerificationsSubtitle,
             onTap: () => _navigateTo(context, 'verifications'),
           ),
         if (_hasPermission(Permission.viewReports))
           _AdminMenuItem(
             icon: Icons.report_problem,
             iconColor: AppColors.warningAmber,
-            title: 'User Reports',
-            subtitle: 'Review and handle user reports',
+            title: l10n.adminUserReports,
+            subtitle: l10n.adminUserReportsSubtitle,
             onTap: () => _navigateTo(context, 'reports'),
           ),
         if (_hasPermission(Permission.banUsers))
           _AdminMenuItem(
             icon: Icons.block,
             iconColor: AppColors.errorRed,
-            title: 'User Moderation',
-            subtitle: 'Manage user bans and suspensions',
+            title: l10n.adminUserModeration,
+            subtitle: l10n.adminUserModerationSubtitle,
             onTap: () => _navigateTo(context, 'moderation'),
           ),
       ],
@@ -306,38 +310,39 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildSystemConfigSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.stars,
             iconColor: AppColors.richGold,
-            title: 'Early Access List',
-            subtitle: 'Manage early access email list (CSV upload)',
+            title: l10n.adminEarlyAccessList,
+            subtitle: l10n.adminEarlyAccessList,
             onTap: () => _navigateTo(context, 'early_access'),
           ),
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.star,
             iconColor: AppColors.richGold,
-            title: 'Tier Management',
-            subtitle: 'Configure tier limits and features',
+            title: l10n.adminTierManagement,
+            subtitle: l10n.adminTierManagementSubtitle,
             onTap: () => _navigateTo(context, 'tiers'),
           ),
         if (_hasPermission(Permission.adjustCoins))
           _AdminMenuItem(
             icon: Icons.monetization_on,
             iconColor: Colors.amber,
-            title: 'Coin Management',
-            subtitle: 'Manage coin packages and user balances',
+            title: l10n.adminCoinManagement,
+            subtitle: l10n.adminCoinManagementSubtitle,
             onTap: () => _navigateTo(context, 'coins'),
           ),
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.settings,
             iconColor: AppColors.textSecondary,
-            title: 'App Settings',
-            subtitle: 'General application settings',
+            title: l10n.adminAppSettings,
+            subtitle: l10n.adminAppSettingsSubtitle,
             onTap: () => _navigateTo(context, 'settings'),
           ),
       ],
@@ -345,38 +350,39 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildGamificationSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.emoji_events,
             iconColor: Colors.amber,
-            title: 'Achievements',
-            subtitle: 'Manage achievements and badges',
+            title: l10n.adminAchievements,
+            subtitle: l10n.adminAchievementsSubtitle,
             onTap: () => _navigateTo(context, 'achievements'),
           ),
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.today,
             iconColor: AppColors.successGreen,
-            title: 'Daily Challenges',
-            subtitle: 'Configure daily challenges and rewards',
+            title: l10n.adminDailyChallenges,
+            subtitle: l10n.adminDailyChallengesSubtitle,
             onTap: () => _navigateTo(context, 'challenges'),
           ),
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.local_fire_department,
             iconColor: Colors.orange,
-            title: 'Login Streaks',
-            subtitle: 'Configure streak milestones and rewards',
+            title: l10n.adminLoginStreaks,
+            subtitle: l10n.adminLoginStreaksSubtitle,
             onTap: () => _navigateTo(context, 'streaks'),
           ),
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
             icon: Icons.card_giftcard,
             iconColor: Colors.purple,
-            title: 'Promotions',
-            subtitle: 'Manage special offers and promotions',
+            title: l10n.adminPromotions,
+            subtitle: l10n.adminPromotionsSubtitle,
             onTap: () => _navigateTo(context, 'promotions'),
           ),
       ],
@@ -384,29 +390,30 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildSupportSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _AdminMenuItem(
           icon: Icons.support_agent,
           iconColor: Colors.blue,
-          title: 'Support Tickets',
-          subtitle: 'View and manage user support conversations',
+          title: l10n.adminSupportTickets,
+          subtitle: l10n.adminSupportTicketsSubtitle,
           onTap: () => _navigateTo(context, 'support_tickets'),
         ),
         if (_hasPermission(Permission.assignSupportTickets))
           _AdminMenuItem(
             icon: Icons.assignment_ind,
             iconColor: Colors.teal,
-            title: 'Ticket Assignment',
-            subtitle: 'Assign tickets to support agents',
+            title: l10n.adminTicketAssignment,
+            subtitle: l10n.adminTicketAssignmentSubtitle,
             onTap: () => _navigateTo(context, 'ticket_assignment'),
           ),
         if (_hasPermission(Permission.manageAdmins))
           _AdminMenuItem(
             icon: Icons.group_add,
             iconColor: Colors.purple,
-            title: 'Support Agents',
-            subtitle: 'Manage support agent accounts',
+            title: l10n.adminSupportAgents,
+            subtitle: l10n.adminSupportAgentsSubtitle,
             onTap: () => _navigateTo(context, 'support_agents'),
           ),
       ],
@@ -414,27 +421,28 @@ class AdminDashboardScreen extends StatelessWidget {
   }
 
   Widget _buildAnalyticsSection(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         _AdminMenuItem(
           icon: Icons.analytics,
           iconColor: AppColors.richGold,
-          title: 'User Analytics',
-          subtitle: 'View user engagement and growth metrics',
+          title: l10n.adminUserAnalytics,
+          subtitle: l10n.adminUserAnalyticsSubtitle,
           onTap: () => _navigateTo(context, 'user_analytics'),
         ),
         _AdminMenuItem(
           icon: Icons.attach_money,
           iconColor: AppColors.successGreen,
-          title: 'Revenue Analytics',
-          subtitle: 'Track purchases and revenue',
+          title: l10n.adminRevenueAnalytics,
+          subtitle: l10n.adminRevenueAnalyticsSubtitle,
           onTap: () => _navigateTo(context, 'revenue_analytics'),
         ),
         _AdminMenuItem(
           icon: Icons.trending_up,
           iconColor: Colors.blue,
-          title: 'Engagement Reports',
-          subtitle: 'View matching and messaging statistics',
+          title: l10n.adminEngagementReports,
+          subtitle: l10n.adminEngagementReportsSubtitle,
           onTap: () => _navigateTo(context, 'engagement_reports'),
         ),
       ],
@@ -529,7 +537,7 @@ class AdminDashboardScreen extends StatelessWidget {
       default:
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$route coming soon'),
+            content: Text(AppLocalizations.of(context)!.adminComingSoon(route)),
             backgroundColor: AppColors.charcoal,
           ),
         );

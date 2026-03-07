@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import 'support_chat_screen.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -24,13 +25,14 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.deepBlack,
-        title: const Text(
-          'My Support Tickets',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.chatMySupportTickets,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.richGold),
@@ -58,13 +60,13 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
                   const Icon(Icons.error_outline, color: AppColors.errorRed, size: 48),
                   const SizedBox(height: 16),
                   Text(
-                    'Error loading tickets',
-                    style: TextStyle(color: AppColors.textSecondary),
+                    l10n.chatErrorLoadingTickets,
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 8),
                   ElevatedButton(
                     onPressed: () => setState(() {}),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -85,21 +87,21 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
                   ),
                   const SizedBox(height: 24),
                   Text(
-                    'No Support Tickets',
+                    l10n.chatNoSupportTickets,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           color: AppColors.textPrimary,
                         ),
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Need help? Create a new ticket.',
-                    style: TextStyle(color: AppColors.textSecondary),
+                    l10n.chatNeedHelpCreateTicket,
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(
                     onPressed: () => _createNewTicket(context),
                     icon: const Icon(Icons.add),
-                    label: const Text('Create Ticket'),
+                    label: Text(l10n.chatCreateTicket),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                       foregroundColor: AppColors.deepBlack,
@@ -233,7 +235,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
         backgroundColor: AppColors.richGold,
         foregroundColor: AppColors.deepBlack,
         icon: const Icon(Icons.add),
-        label: const Text('New Ticket'),
+        label: Text(l10n.chatNewTicket),
       ),
     );
   }
@@ -297,19 +299,20 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
   }
 
   String _getStatusLabel(String status) {
+    final l10n = AppLocalizations.of(context)!;
     switch (status.toLowerCase()) {
       case 'open':
-        return 'Open';
+        return l10n.chatStatusOpen;
       case 'assigned':
-        return 'Assigned';
+        return l10n.chatStatusAssigned;
       case 'in_progress':
-        return 'In Progress';
+        return l10n.chatStatusInProgress;
       case 'waiting_on_user':
-        return 'Awaiting Reply';
+        return l10n.chatStatusAwaitingReply;
       case 'resolved':
-        return 'Resolved';
+        return l10n.chatStatusResolved;
       case 'closed':
-        return 'Closed';
+        return l10n.chatStatusClosed;
       default:
         return status;
     }
@@ -319,10 +322,11 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
     final now = DateTime.now();
     final diff = now.difference(date);
 
-    if (diff.inMinutes < 1) return 'Just now';
-    if (diff.inHours < 1) return '${diff.inMinutes}m ago';
-    if (diff.inDays < 1) return '${diff.inHours}h ago';
-    if (diff.inDays < 7) return '${diff.inDays}d ago';
+    final l10n = AppLocalizations.of(context)!;
+    if (diff.inMinutes < 1) return l10n.chatJustNow;
+    if (diff.inHours < 1) return l10n.chatMinutesAgo(diff.inMinutes);
+    if (diff.inDays < 1) return l10n.chatHoursAgo(diff.inHours);
+    if (diff.inDays < 7) return l10n.chatDaysAgo(diff.inDays);
 
     return '${date.day}/${date.month}/${date.year}';
   }
@@ -347,14 +351,17 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
   String _selectedCategory = 'general';
   bool _isCreating = false;
 
-  final List<Map<String, String>> _categories = [
-    {'value': 'general', 'label': 'General Question'},
-    {'value': 'technical', 'label': 'Technical Issue'},
-    {'value': 'billing', 'label': 'Billing & Payments'},
-    {'value': 'account', 'label': 'Account Help'},
-    {'value': 'safety', 'label': 'Safety Concern'},
-    {'value': 'feedback', 'label': 'Feedback'},
-  ];
+  List<Map<String, String>> _getCategories(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return [
+      {'value': 'general', 'label': l10n.chatCategoryGeneral},
+      {'value': 'technical', 'label': l10n.chatCategoryTechnical},
+      {'value': 'billing', 'label': l10n.chatCategoryBilling},
+      {'value': 'account', 'label': l10n.chatCategoryAccount},
+      {'value': 'safety', 'label': l10n.chatCategorySafety},
+      {'value': 'feedback', 'label': l10n.chatCategoryFeedback},
+    ];
+  }
 
   @override
   void dispose() {
@@ -366,7 +373,7 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
   Future<void> _createTicket() async {
     if (_subjectController.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter a subject')),
+        SnackBar(content: Text(AppLocalizations.of(context)!.chatPleaseEnterSubject)),
       );
       return;
     }
@@ -392,7 +399,7 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
       }
 
       // Find category label
-      final categoryLabel = _categories.firstWhere(
+      final categoryLabel = _getCategories(context).firstWhere(
         (cat) => cat['value'] == _selectedCategory,
         orElse: () => {'label': _selectedCategory},
       )['label'] ?? _selectedCategory;
@@ -449,7 +456,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to create ticket: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context)!.chatFailedToCreateTicket}: $e')),
         );
         setState(() => _isCreating = false);
       }
@@ -458,11 +465,12 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return AlertDialog(
       backgroundColor: AppColors.backgroundCard,
-      title: const Text(
-        'Create Support Ticket',
-        style: TextStyle(color: AppColors.textPrimary),
+      title: Text(
+        l10n.chatCreateSupportTicket,
+        style: const TextStyle(color: AppColors.textPrimary),
       ),
       content: SingleChildScrollView(
         child: Column(
@@ -471,8 +479,8 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
           children: [
             // Category dropdown
             Text(
-              'Category',
-              style: TextStyle(
+              l10n.chatCategory,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
               ),
@@ -491,7 +499,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
                   isExpanded: true,
                   dropdownColor: AppColors.backgroundCard,
                   style: const TextStyle(color: AppColors.textPrimary),
-                  items: _categories.map((cat) {
+                  items: _getCategories(context).map((cat) {
                     return DropdownMenuItem(
                       value: cat['value'],
                       child: Text(cat['label']!),
@@ -509,8 +517,8 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
 
             // Subject field
             Text(
-              'Subject',
-              style: TextStyle(
+              l10n.chatSubject,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
               ),
@@ -520,7 +528,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
               controller: _subjectController,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: 'Brief description of your issue',
+                hintText: l10n.chatSubjectHint,
                 hintStyle: TextStyle(color: AppColors.textSecondary),
                 filled: true,
                 fillColor: AppColors.backgroundDark,
@@ -542,8 +550,8 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
 
             // Description field
             Text(
-              'Description (Optional)',
-              style: TextStyle(
+              l10n.chatDescriptionOptional,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
               ),
@@ -554,7 +562,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
               style: const TextStyle(color: AppColors.textPrimary),
               maxLines: 4,
               decoration: InputDecoration(
-                hintText: 'Provide more details about your issue...',
+                hintText: l10n.chatDetailsHint,
                 hintStyle: TextStyle(color: AppColors.textSecondary),
                 filled: true,
                 fillColor: AppColors.backgroundDark,
@@ -579,8 +587,8 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
         TextButton(
           onPressed: _isCreating ? null : () => Navigator.pop(context),
           child: Text(
-            'Cancel',
-            style: TextStyle(color: AppColors.textSecondary),
+            l10n.cancel,
+            style: const TextStyle(color: AppColors.textSecondary),
           ),
         ),
         ElevatedButton(
@@ -595,7 +603,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
                   height: 20,
                   child: CircularProgressIndicator(strokeWidth: 2),
                 )
-              : const Text('Create'),
+              : Text(l10n.chatCreate),
         ),
       ],
     );

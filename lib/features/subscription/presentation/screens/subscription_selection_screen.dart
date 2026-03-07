@@ -105,7 +105,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Buy Membership'),
+        title: Text(AppLocalizations.of(context)!.membershipBuyTitle),
         backgroundColor: Colors.black,
         foregroundColor: const Color(0xFFD4AF37),
         elevation: 0,
@@ -170,9 +170,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                       const SizedBox(height: 24),
 
                       // Header
-                      const Text(
-                        'Extend Your Membership',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.membershipExtendTitle,
+                        style: const TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
                           color: Color(0xFFD4AF37),
@@ -180,9 +180,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 8),
-                      const Text(
-                        'Buy once, enjoy premium features for 1 month or 1 year',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.membershipSubtitle,
+                        style: const TextStyle(
                           fontSize: 16,
                           color: Colors.white70,
                         ),
@@ -194,7 +194,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                       if (baseProduct != null)
                         _buildProductCard(
                           product: baseProduct,
-                          duration: 'Permanent',
+                          duration: AppLocalizations.of(context)!.membershipPermanent,
                           isSelected: _selectedProduct?.id == baseProduct.id,
                           onSelect: () =>
                               setState(() => _selectedProduct = baseProduct),
@@ -204,9 +204,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
                       // Monthly Memberships
                       if (monthlyProducts.isNotEmpty) ...[
-                        const Text(
-                          'Monthly Memberships',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.membershipMonthly,
+                          style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -217,7 +217,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               padding: const EdgeInsets.only(bottom: 16),
                               child: _buildProductCard(
                                 product: product,
-                                duration: '1 month',
+                                duration: AppLocalizations.of(context)!.membershipOneMonth,
                                 isSelected:
                                     _selectedProduct?.id == product.id,
                                 onSelect: () =>
@@ -231,16 +231,16 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                       // Yearly Memberships (Save XX%)
                       if (yearlyProducts.isNotEmpty) ...[
                         Text(
-                          'Yearly Memberships (Save up to ${SubscriptionTier.platinum.yearlySavingsPercent.toStringAsFixed(0)}%)',
+                          AppLocalizations.of(context)!.membershipYearly(SubscriptionTier.platinum.yearlySavingsPercent.toStringAsFixed(0)),
                           style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFD4AF37),
                           ),
                         ),
-                        const Text(
-                          'Best value for long-term commitment!',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)!.membershipBestValue,
+                          style: const TextStyle(
                             fontSize: 14,
                             color: Colors.white70,
                           ),
@@ -250,7 +250,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               padding: const EdgeInsets.only(bottom: 16),
                               child: _buildProductCard(
                                 product: product,
-                                duration: '1 year',
+                                duration: AppLocalizations.of(context)!.membershipOneYear,
                                 isSelected:
                                     _selectedProduct?.id == product.id,
                                 onSelect: () =>
@@ -290,7 +290,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
                       // Terms
                       Text(
-                        'One-time purchase. Membership will be extended from your current end date. Higher tier purchases override lower tiers.',
+                        AppLocalizations.of(context)!.membershipTermsExtended,
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey[600],
@@ -340,9 +340,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          const Text(
-            'Current Membership',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.membershipCurrent,
+            style: const TextStyle(
               fontSize: 14,
               color: Colors.white70,
             ),
@@ -359,23 +359,23 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
           if (isActive) ...[
             const SizedBox(height: 4),
             Text(
-              '$daysRemaining days remaining',
+              AppLocalizations.of(context)!.membershipDaysRemaining(daysRemaining.toString()),
               style: const TextStyle(
                 fontSize: 16,
                 color: Colors.white70,
               ),
             ),
             Text(
-              'Expires: ${_currentEndDate!.day}/${_currentEndDate!.month}/${_currentEndDate!.year}',
+              AppLocalizations.of(context)!.membershipExpires('${_currentEndDate!.day}/${_currentEndDate!.month}/${_currentEndDate!.year}'),
               style: const TextStyle(
                 fontSize: 12,
                 color: Colors.white54,
               ),
             ),
           ] else
-            const Text(
-              'No active membership',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.membershipNoActive,
+              style: const TextStyle(
                 fontSize: 14,
                 color: Colors.white54,
               ),
@@ -487,7 +487,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      isLocked ? 'Lower than your current tier' : duration,
+                      isLocked ? AppLocalizations.of(context)!.membershipLowerThanCurrent : duration,
                       style: TextStyle(
                         fontSize: 14,
                         color: isLocked ? Colors.red[300] : Colors.white54,
@@ -554,24 +554,24 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Feature Comparison',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.membershipFeatureComparison,
+            style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Color(0xFFD4AF37),
             ),
           ),
           const SizedBox(height: 16),
-          _buildComparisonRow('Daily Likes', '10', '100', 'Unlimited'),
-          _buildComparisonRow('Super Likes', '1', '5', '10'),
-          _buildComparisonRow('Rewinds', '0', '5', 'Unlimited'),
-          _buildComparisonRow('Boosts/month', '0', '1', '3'),
-          _buildComparisonRow('See Who Likes You', '✗', '✓', '✓'),
-          _buildComparisonRow('Advanced Filters', '✗', '✓', '✓'),
-          _buildComparisonRow('Read Receipts', '✗', '✓', '✓'),
-          _buildComparisonRow('Incognito Mode', '✗', '✗', '✓'),
-          _buildComparisonRow('Priority Support', '✗', '✗', '✓'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipDailyLikes, '10', '100', AppLocalizations.of(context)!.shopUnlimited),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipSuperLikes, '1', '5', '10'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipRewinds, '0', '5', AppLocalizations.of(context)!.shopUnlimited),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipBoostsMonth, '0', '1', '3'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipSeeWhoLikes, '✗', '✓', '✓'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipAdvancedFilters, '✗', '✓', '✓'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipReadReceipts, '✗', '✓', '✓'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipIncognitoMode, '✗', '✗', '✓'),
+          _buildComparisonRow(AppLocalizations.of(context)!.membershipPrioritySupport, '✗', '✗', '✓'),
         ],
       ),
     );
@@ -632,11 +632,12 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
   }
 
   String _getTierDisplayName(String productId) {
-    if (productId.contains('platinum')) return 'Platinum';
-    if (productId.contains('gold')) return 'Gold';
-    if (productId.contains('silver')) return 'Silver';
-    if (productId == 'greengo_base_membership') return 'Base Membership';
-    return 'Membership';
+    final l10n = AppLocalizations.of(context)!;
+    if (productId.contains('platinum')) return l10n.membershipPlatinum;
+    if (productId.contains('gold')) return l10n.membershipGold;
+    if (productId.contains('silver')) return l10n.membershipSilver;
+    if (productId == 'greengo_base_membership') return l10n.membershipBaseMembership;
+    return l10n.membershipGeneric;
   }
 
   Color _getTierColor(String productId) {

@@ -365,14 +365,14 @@ class _SwipeCardState extends State<SwipeCard>
                     ),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.shield, color: Colors.white, size: 12),
-                      SizedBox(width: 3),
+                      const Icon(Icons.shield, color: Colors.white, size: 12),
+                      const SizedBox(width: 3),
                       Text(
-                        'Guide',
-                        style: TextStyle(
+                        AppLocalizations.of(context)!.guideBadge,
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
@@ -488,14 +488,14 @@ class _SwipeCardState extends State<SwipeCard>
                       ),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.star, color: Colors.white, size: 10),
-                        SizedBox(width: 2),
+                        const Icon(Icons.star, color: Colors.white, size: 10),
+                        const SizedBox(width: 2),
                         Text(
-                          'Lang Match',
-                          style: TextStyle(
+                          AppLocalizations.of(context)!.langMatchBadge,
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 9,
                             fontWeight: FontWeight.bold,
@@ -542,7 +542,7 @@ class _SwipeCardState extends State<SwipeCard>
               const Icon(Icons.favorite, color: AppColors.richGold, size: 16),
               const SizedBox(width: 4),
               Text(
-                '${widget.card.matchPercentage} match',
+                AppLocalizations.of(context)!.matchPercentage(widget.card.matchPercentage),
                 style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 13,
@@ -559,8 +559,14 @@ class _SwipeCardState extends State<SwipeCard>
               const Icon(Icons.photo_library, color: Colors.white70, size: 16),
               const SizedBox(width: 4),
               Text(
-                'Photos: ${widget.card.candidate.profile.photoUrls.length} public'
-                '${widget.card.candidate.profile.privatePhotoUrls.isNotEmpty ? ' + ${widget.card.candidate.profile.privatePhotoUrls.length} private' : ''}',
+                widget.card.candidate.profile.privatePhotoUrls.isNotEmpty
+                    ? AppLocalizations.of(context)!.photosPublicPrivateCount(
+                        widget.card.candidate.profile.photoUrls.length,
+                        widget.card.candidate.profile.privatePhotoUrls.length,
+                      )
+                    : AppLocalizations.of(context)!.photosPublicCount(
+                        widget.card.candidate.profile.photoUrls.length,
+                      ),
                 style: const TextStyle(
                   color: Colors.white70,
                   fontSize: 13,
@@ -686,7 +692,7 @@ class _SwipeCardState extends State<SwipeCard>
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
                     child: _buildIndicatorBox(
-                      'LIKE',
+                      AppLocalizations.of(context)!.swipeIndicatorLike,
                       AppColors.successGreen,
                       opacity,
                     ),
@@ -704,7 +710,7 @@ class _SwipeCardState extends State<SwipeCard>
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
                     child: _buildIndicatorBox(
-                      'NOPE',
+                      AppLocalizations.of(context)!.swipeIndicatorNope,
                       AppColors.errorRed,
                       opacity,
                     ),
@@ -722,7 +728,7 @@ class _SwipeCardState extends State<SwipeCard>
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
                     child: _buildIndicatorBox(
-                      'SUPER LIKE',
+                      AppLocalizations.of(context)!.swipeIndicatorSuperLike,
                       AppColors.richGold,
                       opacity,
                     ),
@@ -740,7 +746,7 @@ class _SwipeCardState extends State<SwipeCard>
                   child: Transform.scale(
                     scale: _bounceAnimation.value,
                     child: _buildIndicatorBox(
-                      'SKIP',
+                      AppLocalizations.of(context)!.swipeIndicatorSkip,
                       AppColors.infoBlue,
                       opacity,
                     ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -36,14 +37,15 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: BlocConsumer<SpotsBloc, SpotsState>(
         listener: (context, state) {
           if (state is ReviewAdded) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Review added!'),
+              SnackBar(
+                content: Text(l10n.spotsReviewAdded),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -68,9 +70,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                   const Icon(Icons.error_outline,
                       color: AppColors.errorRed, size: 48),
                   const SizedBox(height: 16),
-                  const Text(
-                    'Could not load spot',
-                    style:
+                  Text(
+                    l10n.spotsCouldNotLoadSpot,
+                    style: const
                         TextStyle(color: AppColors.textPrimary, fontSize: 16),
                   ),
                   const SizedBox(height: 8),
@@ -93,6 +95,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   }
 
   Widget _buildDetailContent(Spot spot, List<SpotReview> reviews) {
+    final l10n = AppLocalizations.of(context)!;
     return CustomScrollView(
       slivers: [
         // App bar with photo gallery
@@ -190,9 +193,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                 const SizedBox(height: 20),
                 // Description
                 if (spot.description.isNotEmpty) ...[
-                  const Text(
-                    'About',
-                    style: TextStyle(
+                  Text(
+                    l10n.spotsAbout,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
@@ -211,7 +214,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                 ],
                 // Created by
                 Text(
-                  'Added by ${spot.createdByName}',
+                  l10n.spotsAddedBy(spot.createdByName),
                   style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,
@@ -225,7 +228,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Reviews (${reviews.length})',
+                      l10n.spotsReviewsCount(reviews.length),
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 18,
@@ -235,7 +238,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     TextButton.icon(
                       onPressed: () => _showReviewDialog(context, spot.id),
                       icon: const Icon(Icons.rate_review_outlined, size: 18),
-                      label: const Text('Write a Review'),
+                      label: Text(l10n.spotsWriteReview),
                       style: TextButton.styleFrom(
                         foregroundColor: AppColors.richGold,
                       ),
@@ -250,9 +253,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                       color: AppColors.backgroundCard,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text(
-                        'No reviews yet. Be the first to write one!',
+                        l10n.spotsNoReviews,
                         style: TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 14,
@@ -442,6 +445,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   }
 
   void _showReviewDialog(BuildContext context, String spotId) {
+    final l10n = AppLocalizations.of(context)!;
     final textController = TextEditingController();
     int selectedRating = 5;
 
@@ -479,9 +483,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    const Text(
-                      'Write a Review',
-                      style: TextStyle(
+                    Text(
+                      l10n.spotsWriteReview,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -489,9 +493,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     ),
                     const SizedBox(height: 20),
                     // Star rating selector
-                    const Text(
-                      'Your Rating',
-                      style: TextStyle(
+                    Text(
+                      l10n.spotsYourRating,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 14,
                       ),
@@ -527,7 +531,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                       style: const TextStyle(color: AppColors.textPrimary),
                       maxLines: 4,
                       decoration: InputDecoration(
-                        hintText: 'Share your experience...',
+                        hintText: l10n.spotsShareExperienceHint,
                         hintStyle:
                             const TextStyle(color: AppColors.textTertiary),
                         filled: true,
@@ -582,9 +586,9 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text(
-                          'Submit Review',
-                          style: TextStyle(
+                        child: Text(
+                          l10n.spotsSubmitReview,
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
@@ -621,15 +625,16 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   }
 
   String _formatDate(DateTime date) {
+    final l10n = AppLocalizations.of(context)!;
     final now = DateTime.now();
     final diff = now.difference(date);
 
-    if (diff.inDays == 0) return 'Today';
-    if (diff.inDays == 1) return 'Yesterday';
-    if (diff.inDays < 7) return '${diff.inDays} days ago';
-    if (diff.inDays < 30) return '${(diff.inDays / 7).floor()} weeks ago';
-    if (diff.inDays < 365) return '${(diff.inDays / 30).floor()} months ago';
-    return '${(diff.inDays / 365).floor()} years ago';
+    if (diff.inDays == 0) return l10n.spotsDateToday;
+    if (diff.inDays == 1) return l10n.spotsDateYesterday;
+    if (diff.inDays < 7) return l10n.spotsDateDaysAgo(diff.inDays);
+    if (diff.inDays < 30) return l10n.spotsDateWeeksAgo((diff.inDays / 7).floor());
+    if (diff.inDays < 365) return l10n.spotsDateMonthsAgo((diff.inDays / 30).floor());
+    return l10n.spotsDateYearsAgo((diff.inDays / 365).floor());
   }
 
   Color _getCategoryColor(SpotCategory category) {

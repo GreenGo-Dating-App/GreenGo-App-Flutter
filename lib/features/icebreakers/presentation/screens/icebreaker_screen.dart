@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/icebreaker.dart';
@@ -64,35 +65,36 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
   }
 
   String _getCategoryName(IcebreakerCategory category) {
+    final l10n = AppLocalizations.of(context)!;
     switch (category) {
       case IcebreakerCategory.funnyQuestions:
-        return 'Funny';
+        return l10n.icebreakersCategoryFunny;
       case IcebreakerCategory.deepQuestions:
-        return 'Deep';
+        return l10n.icebreakersCategoryDeep;
       case IcebreakerCategory.wouldYouRather:
-        return 'Would You Rather';
+        return l10n.icebreakersCategoryWouldYouRather;
       case IcebreakerCategory.twoTruths:
-        return 'Two Truths';
+        return l10n.icebreakersCategoryTwoTruths;
       case IcebreakerCategory.dateIdeas:
-        return 'Date Ideas';
+        return l10n.icebreakersCategoryDateIdeas;
       case IcebreakerCategory.compliments:
-        return 'Compliments';
+        return l10n.icebreakersCategoryCompliments;
       case IcebreakerCategory.hobbies:
-        return 'Hobbies';
+        return l10n.icebreakersCategoryHobbies;
       case IcebreakerCategory.travel:
-        return 'Travel';
+        return l10n.icebreakersCategoryTravel;
       case IcebreakerCategory.food:
-        return 'Food';
+        return l10n.icebreakersCategoryFood;
       case IcebreakerCategory.music:
-        return 'Music';
+        return l10n.icebreakersCategoryMusic;
       case IcebreakerCategory.movies:
-        return 'Movies';
+        return l10n.icebreakersCategoryMovies;
       case IcebreakerCategory.dreams:
-        return 'Dreams';
+        return l10n.icebreakersCategoryDreams;
       case IcebreakerCategory.hypothetical:
-        return 'Hypothetical';
+        return l10n.icebreakersCategoryHypothetical;
       case IcebreakerCategory.personality:
-        return 'Personality';
+        return l10n.icebreakersCategoryPersonality;
     }
   }
 
@@ -160,9 +162,9 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Quick answers:',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.icebreakersQuickAnswers,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
               ),
@@ -190,7 +192,7 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
                 Navigator.pop(context);
                 _sendIcebreaker(icebreaker, null);
               },
-              child: const Text('Send without answer'),
+              child: Text(AppLocalizations.of(context)!.icebreakersSendWithoutAnswer),
             ),
           ],
         ),
@@ -208,6 +210,7 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -220,15 +223,15 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Icebreakers',
-              style: TextStyle(
+            Text(
+              l10n.icebreakersTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
               ),
             ),
             Text(
-              'Send to ${widget.receiverName}',
+              l10n.icebreakersSendTo(widget.receiverName),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
@@ -260,7 +263,7 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
           return categoryIcebreakers.isEmpty
               ? Center(
                   child: Text(
-                    'No icebreakers in this category',
+                    l10n.icebreakersNoneInCategory,
                     style: TextStyle(color: AppColors.textSecondary),
                   ),
                 )
@@ -384,7 +387,7 @@ class IcebreakerSuggestionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tooltip(
-      message: 'Send an icebreaker',
+      message: AppLocalizations.of(context)!.icebreakersSendAnIcebreaker,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
@@ -406,9 +409,9 @@ class IcebreakerSuggestionButton extends StatelessWidget {
                 size: 16,
               ),
               const SizedBox(width: 4),
-              const Text(
-                'Icebreaker',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.icebreakersLabel,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 12,
                   fontWeight: FontWeight.w500,

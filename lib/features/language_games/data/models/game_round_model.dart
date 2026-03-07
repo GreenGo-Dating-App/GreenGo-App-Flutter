@@ -13,6 +13,7 @@ class GameRoundModel extends GameRound {
     required super.startedAt,
     super.durationSeconds,
     super.winnerId,
+    super.clues,
   });
 
   /// Create from Firestore document
@@ -32,6 +33,11 @@ class GameRoundModel extends GameRound {
             .toList() ??
         [];
 
+    final clues = (data['clues'] as List<dynamic>?)
+            ?.map((e) => e.toString())
+            .toList() ??
+        [];
+
     return GameRoundModel(
       roundNumber: (data['roundNumber'] as num?)?.toInt() ?? 0,
       prompt: data['prompt'] as String? ?? '',
@@ -41,6 +47,7 @@ class GameRoundModel extends GameRound {
       startedAt: (data['startedAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
       durationSeconds: (data['durationSeconds'] as num?)?.toInt() ?? 15,
       winnerId: data['winnerId'] as String?,
+      clues: clues,
     );
   }
 
@@ -67,6 +74,7 @@ class GameRoundModel extends GameRound {
       'startedAt': Timestamp.fromDate(startedAt),
       'durationSeconds': durationSeconds,
       'winnerId': winnerId,
+      'clues': clues,
     };
   }
 
@@ -81,6 +89,7 @@ class GameRoundModel extends GameRound {
       startedAt: round.startedAt,
       durationSeconds: round.durationSeconds,
       winnerId: round.winnerId,
+      clues: round.clues,
     );
   }
 }

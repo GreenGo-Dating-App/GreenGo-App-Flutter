@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/lesson.dart';
 
 /// Card shown at the start of each unit in the learning path.
@@ -131,7 +132,7 @@ class _UnitHeaderCardState extends State<UnitHeaderCard>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Unit ${widget.unitNumber}',
+                  AppLocalizations.of(context)!.learningUnitNumber(widget.unitNumber),
                   style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,

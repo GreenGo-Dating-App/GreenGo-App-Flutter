@@ -10,6 +10,7 @@ import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditNicknameScreen extends StatefulWidget {
   final Profile profile;
@@ -76,7 +77,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
           _isChecking = false;
           _isAvailable = !isTaken;
           if (isTaken) {
-            _validationError = 'This nickname is already taken';
+            _validationError = AppLocalizations.of(context)!.profileNicknameAlreadyTaken;
           }
         });
       }
@@ -85,7 +86,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
         setState(() {
           _isChecking = false;
           _isAvailable = false;
-          _validationError = 'Error checking availability';
+          _validationError = AppLocalizations.of(context)!.profileNicknameCheckError;
         });
       }
     }
@@ -135,9 +136,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context),
         ),
-        title: const Text(
-          'Edit Nickname',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.profileEditNickname,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
           BlocBuilder<ProfileBloc, ProfileState>(
@@ -153,9 +154,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                           color: AppColors.richGold,
                         ),
                       )
-                    : const Text(
-                        'Save',
-                        style: TextStyle(
+                    : Text(
+                        AppLocalizations.of(context)!.save,
+                        style: const TextStyle(
                           color: AppColors.richGold,
                           fontWeight: FontWeight.bold,
                         ),
@@ -208,8 +209,8 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                     Expanded(
                       child: Text(
                         widget.profile.nickname != null
-                            ? 'Your nickname is unique and can be used to find you. Others can search for you using @${widget.profile.nickname}'
-                            : 'Your nickname is unique and can be used to find you. Set one below to let others discover you.',
+                            ? AppLocalizations.of(context)!.profileNicknameInfoWithNickname(widget.profile.nickname!)
+                            : AppLocalizations.of(context)!.profileNicknameInfoWithout,
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
@@ -223,9 +224,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
               const SizedBox(height: 24),
 
               // Nickname input
-              const Text(
-                'Nickname',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.profileNicknameLabel,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -241,7 +242,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                     color: AppColors.richGold,
                     fontWeight: FontWeight.bold,
                   ),
-                  hintText: 'Enter nickname',
+                  hintText: AppLocalizations.of(context)!.profileEnterNicknameHint,
                   hintStyle: const TextStyle(color: AppColors.textTertiary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -284,9 +285,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
               ),
 
               const SizedBox(height: 8),
-              const Text(
-                '3-20 characters. Letters, numbers, and underscores only.',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.profileNicknameCharRules,
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
                 ),
@@ -298,9 +299,9 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Suggestions',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.profileNicknameSuggestions,
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -309,7 +310,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                   TextButton.icon(
                     onPressed: _regenerateSuggestions,
                     icon: const Icon(Icons.refresh, size: 18),
-                    label: const Text('Refresh'),
+                    label: Text(AppLocalizations.of(context)!.profileNicknameRefresh),
                     style: TextButton.styleFrom(
                       foregroundColor: AppColors.richGold,
                     ),
@@ -347,20 +348,20 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      'Nickname Rules',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.profileNicknameRules,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     const SizedBox(height: 12),
-                    _buildRule('Must be 3-20 characters'),
-                    _buildRule('Start with a letter'),
-                    _buildRule('Only letters, numbers, and underscores'),
-                    _buildRule('No consecutive underscores'),
-                    _buildRule('Cannot contain reserved words'),
+                    _buildRule(AppLocalizations.of(context)!.profileNicknameRule1),
+                    _buildRule(AppLocalizations.of(context)!.profileNicknameRule2),
+                    _buildRule(AppLocalizations.of(context)!.profileNicknameRule3),
+                    _buildRule(AppLocalizations.of(context)!.profileNicknameRule4),
+                    _buildRule(AppLocalizations.of(context)!.profileNicknameRule5),
                   ],
                 ),
               ),
