@@ -170,7 +170,6 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/icons/games/
     - assets/icon/
     - assets/lottie/
     - assets/fonts/

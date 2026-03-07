@@ -42,7 +42,6 @@ class FeatureFlagsService extends ChangeNotifier {
     'advancedFilters': true,
 
     // Extended Features
-    'languageLearning': true,
     'gamification': true,
     'achievements': true,
     'dailyChallenges': true,
@@ -148,7 +147,6 @@ class FeatureFlagsService extends ChangeNotifier {
   bool get advancedFiltersEnabled => isEnabled('advancedFilters');
 
   // Extended Features
-  bool get languageLearningEnabled => isEnabled('languageLearning');
   bool get gamificationEnabled => isEnabled('gamification');
   bool get achievementsEnabled => isEnabled('achievements');
   bool get dailyChallengesEnabled => isEnabled('dailyChallenges');

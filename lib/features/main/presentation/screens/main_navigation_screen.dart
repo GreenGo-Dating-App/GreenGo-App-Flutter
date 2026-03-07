@@ -44,12 +44,7 @@ import '../../../../core/services/push_notification_service.dart';
 import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
-// Language Learning imports - only used when feature is enabled
-import '../../../language_learning/presentation/screens/language_learning_home_screen.dart';
-import '../../../language_learning/presentation/bloc/language_learning_bloc.dart';
-import '../../../language_games/presentation/screens/game_lobby_screen.dart';
-import '../../../language_games/presentation/bloc/language_games_bloc.dart';
-import '../../../language_games/presentation/widgets/game_invite_listener.dart';
+import '../../../coins/presentation/screens/shop_screen.dart';
 // Gamification imports (Progress screen hidden from users but code kept)
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
@@ -188,16 +183,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         },
       ),
       ConversationsScreen(userId: widget.userId),
-      BlocProvider(
-        create: (context) => di.sl<LanguageLearningBloc>(),
-        child: const LanguageLearningHomeScreen(),
-      ),
-      BlocProvider(
-        create: (context) => di.sl<LanguageGamesBloc>(),
-        child: GameLobbyScreen(
-          userId: widget.userId,
-        ),
-      ),
+      ShopScreen(userId: widget.userId),
       BlocProvider.value(
         value: _profileBloc,
         child: EditProfileScreen(userId: widget.userId),
@@ -225,18 +211,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Future<void> _checkAppTour() async {
-    final prefs = await SharedPreferences.getInstance();
-    final hasCompletedTour = prefs.getBool(_tourPrefKey) ?? false;
-    if (!hasCompletedTour && mounted) {
-      // Delay tour to let the app load first
-      Future.delayed(const Duration(milliseconds: 500), () {
-        if (mounted) {
-          setState(() {
-            _showTour = true;
-          });
-        }
-      });
-    }
+    // App tour disabled
+    return;
   }
 
   Future<void> _completeTour() async {
@@ -756,9 +732,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
-    // Tabs: Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
-    const profileIndex = 4;
-    const learnIndex = 2;
+    // Tabs: Exchange(0), Messages(1), Shop(2), Profile(3)
+    const profileIndex = 3;
 
     // Ensure current index is valid
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
@@ -771,11 +746,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         children: _screens.asMap().entries.map((entry) {
           final index = entry.key;
           final screen = entry.value;
-
-          // Learn and Play tabs don't need verification overlay
-          if (index == learnIndex || index == 3) {
-            return screen;
-          }
 
           // Verification is gated at login level — no in-app overlay needed
           return screen;
@@ -813,14 +783,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.school_outlined),
-              activeIcon: const Icon(Icons.school),
-              label: AppLocalizations.of(context)!.navLearn,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.sports_esports_outlined),
-              activeIcon: const Icon(Icons.sports_esports),
-              label: AppLocalizations.of(context)!.navPlay,
+              icon: const Icon(Icons.store_outlined),
+              activeIcon: const Icon(Icons.store),
+              label: AppLocalizations.of(context)!.shop,
             ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.person_outline),
@@ -974,19 +939,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       );
     }
 
-    // Get display name from profile state for invite listener
-    String displayName = AppLocalizations.of(context)!.gameDefaultPlayerName;
-    final profileState = _profileBloc.state;
-    if (profileState is ProfileLoaded) {
-      displayName = profileState.profile.displayName;
-    } else if (profileState is ProfileUpdated) {
-      displayName = profileState.profile.displayName;
-    }
-
-    return GameInviteListener(
-      userId: widget.userId,
-      displayName: displayName,
-      child: Stack(
+    return Stack(
         children: [
           _isAdmin
               ? Container(
@@ -1012,13 +965,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               },
             ),
         ],
-      ),
     );
   }
 
   PreferredSizeWidget? _buildAppBar() {
     final l10n = AppLocalizations.of(context)!;
-    // Tab indexes: 0=Exchange, 1=Messages, 2=Learn, 3=Play, 4=Profile
+    // Tab indexes: 0=Exchange, 1=Messages, 2=Shop, 3=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
       return AppBar(
@@ -1088,7 +1040,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ],
       );
     }
-    // Learn, Play, and Profile - no app bar (have their own)
+    // Shop and Profile - no app bar (have their own)
     return null;
   }
 

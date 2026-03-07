@@ -37,18 +37,6 @@ import 'features/authentication/presentation/screens/register_screen.dart';
 import 'features/authentication/presentation/screens/forgot_password_screen.dart';
 import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
 import 'features/main/presentation/screens/main_navigation_screen.dart';
-import 'features/language_learning/presentation/screens/language_learning_home_screen.dart';
-import 'features/language_learning/presentation/bloc/language_learning_bloc.dart';
-import 'features/language_learning/presentation/screens/language_detail_screen.dart';
-import 'features/language_learning/presentation/screens/flashcard_session_screen.dart';
-import 'features/language_learning/presentation/screens/ai_coach_screen.dart';
-import 'features/language_learning/presentation/screens/learning_path_screen.dart';
-import 'features/language_learning/presentation/screens/galaxy_map_screen.dart';
-import 'features/language_learning/presentation/screens/achievements_screen.dart';
-import 'features/language_learning/presentation/screens/leaderboard_screen.dart';
-import 'features/language_learning/presentation/screens/language_packs_shop_screen.dart';
-import 'features/language_learning/presentation/screens/quiz_session_screen.dart';
-import 'features/language_learning/presentation/screens/daily_challenges_screen.dart';
 import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
 import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
 import 'features/safety_academy/presentation/screens/safety_academy_screen.dart';
@@ -66,9 +54,6 @@ import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
 import 'features/spots/presentation/bloc/spots_bloc.dart';
 import 'features/communities/presentation/bloc/communities_bloc.dart';
 import 'features/communities/presentation/screens/communities_screen.dart';
-import 'features/language_games/presentation/screens/game_lobby_screen.dart';
-import 'features/language_games/presentation/screens/game_room_screen.dart';
-import 'features/language_games/presentation/bloc/language_games_bloc.dart';
 import 'features/admin/presentation/screens/early_access_admin_screen.dart';
 import 'features/admin/presentation/screens/support_tickets_screen.dart';
 import 'features/admin/presentation/screens/verification_admin_screen.dart';
@@ -306,202 +291,6 @@ class GreenGoChatApp extends StatelessWidget {
                 }
               }
 
-              // Language Learning routes
-              if (settings.name == '/language-learning') {
-                return MaterialPageRoute(
-                  builder: (context) => const LanguageLearningHomeScreen(),
-                );
-              }
-
-              if (settings.name == '/language-detail') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                final languageCode = args?['languageCode'] as String?;
-                if (languageCode != null) {
-                  return MaterialPageRoute(
-                    builder: (context) => BlocProvider(
-                      create: (context) => di.sl<LanguageLearningBloc>(),
-                      child: LanguageDetailScreen(
-                        languageCode: languageCode,
-                      ),
-                    ),
-                  );
-                }
-              }
-
-              if (settings.name == '/flashcard-session') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const FlashcardSessionScreen(),
-                  ),
-                );
-              }
-
-              // AI Coach route
-              if (settings.name == '/ai-coach') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: AiCoachScreen(
-                      userId: args?['userId'] as String? ?? '',
-                      targetLanguage: args?['targetLanguage'] as String? ?? 'es',
-                      nativeLanguage: args?['nativeLanguage'] as String? ?? 'en',
-                    ),
-                  ),
-                );
-              }
-
-              // Language Learning sub-routes
-              if (settings.name == '/language-learning/flashcards') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const FlashcardSessionScreen(),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/quizzes') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: QuizSessionScreen(
-                      languageCode: args?['languageCode'] as String? ?? 'en',
-                      category: args?['category'] as String?,
-                    ),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/ai-coach') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: AiCoachScreen(
-                      userId: args?['userId'] as String? ?? '',
-                      targetLanguage: args?['targetLanguage'] as String? ?? 'es',
-                      nativeLanguage: args?['nativeLanguage'] as String? ?? 'en',
-                    ),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/leaderboard') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const LeaderboardScreen(),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/achievements') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const AchievementsScreen(),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/challenges') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const DailyChallengesScreen(),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/learning-path') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                final languageCode = args?['languageCode'] as String? ?? 'en';
-                final packCategory = args?['packCategory'] as String?;
-                return MaterialPageRoute(
-                  builder: (context) => MultiBlocProvider(
-                    providers: [
-                      BlocProvider(
-                        create: (context) => di.sl<LanguageLearningBloc>(),
-                      ),
-                      BlocProvider(
-                        create: (context) => di.sl<CoinBloc>(),
-                      ),
-                    ],
-                    child: GalaxyMapScreen(
-                      languageCode: languageCode,
-                      packCategoryFilter: packCategory,
-                    ),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/language-detail') {
-                // Supports both String and Map arguments
-                String? languageCode;
-                if (settings.arguments is String) {
-                  languageCode = settings.arguments as String;
-                } else if (settings.arguments is Map<String, dynamic>) {
-                  final args = settings.arguments as Map<String, dynamic>;
-                  languageCode = args['languageCode'] as String?;
-                }
-                if (languageCode != null) {
-                  return MaterialPageRoute(
-                    builder: (context) => MultiBlocProvider(
-                      providers: [
-                        BlocProvider(
-                          create: (context) => di.sl<LanguageLearningBloc>(),
-                        ),
-                        BlocProvider(
-                          create: (context) => di.sl<CoinBloc>(),
-                        ),
-                      ],
-                      child: LanguageDetailScreen(languageCode: languageCode!),
-                    ),
-                  );
-                }
-              }
-
-              if (settings.name == '/language-learning/flashcard-session') {
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: const FlashcardSessionScreen(),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/quiz-session') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageLearningBloc>(),
-                    child: QuizSessionScreen(
-                      languageCode: args?['languageCode'] as String? ?? 'en',
-                      category: args?['category'] as String?,
-                    ),
-                  ),
-                );
-              }
-
-              if (settings.name == '/language-learning/shop') {
-                return MaterialPageRoute(
-                  builder: (context) => MultiBlocProvider(
-                    providers: [
-                      BlocProvider(
-                        create: (context) => di.sl<LanguageLearningBloc>(),
-                      ),
-                      BlocProvider(
-                        create: (context) => di.sl<CoinBloc>(),
-                      ),
-                    ],
-                    child: const LanguagePacksShopScreen(),
-                  ),
-                );
-              }
-
               // Cultural Exchange routes
               if (settings.name == '/cultural-exchange') {
                 return MaterialPageRoute(
@@ -607,42 +396,6 @@ class GreenGoChatApp extends StatelessWidget {
                   builder: (context) => BlocProvider(
                     create: (context) => di.sl<CommunitiesBloc>(),
                     child: const CommunitiesScreen(),
-                  ),
-                );
-              }
-
-              // Language Games route
-              if (settings.name == '/language-games') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => MultiBlocProvider(
-                    providers: [
-                      BlocProvider(
-                        create: (context) => di.sl<LanguageGamesBloc>(),
-                      ),
-                      BlocProvider(
-                        create: (context) => di.sl<CoinBloc>(),
-                      ),
-                    ],
-                    child: GameLobbyScreen(
-                      userId: args?['userId'] as String? ?? '',
-                    ),
-                  ),
-                );
-              }
-
-              // Language Games Room route
-              if (settings.name == '/language-games/room') {
-                final args = settings.arguments as Map<String, dynamic>?;
-                return MaterialPageRoute(
-                  builder: (context) => BlocProvider(
-                    create: (context) => di.sl<LanguageGamesBloc>(),
-                    child: GameRoomScreen(
-                      roomId: args?['roomId'] as String? ?? '',
-                      currentUserId: args?['userId'] as String? ?? '',
-                      currentDisplayName: args?['displayName'] as String? ?? '',
-                      currentPhotoUrl: args?['photoUrl'] as String?,
-                    ),
                   ),
                 );
               }

@@ -141,13 +141,6 @@ import '../../features/subscription/domain/usecases/purchase_subscription.dart' 
 import '../../features/subscription/domain/usecases/restore_purchases.dart';
 import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
 
-// Language Learning
-import '../../features/language_learning/data/datasources/language_learning_remote_data_source.dart';
-import '../../features/language_learning/data/datasources/constellation_datasource.dart';
-import '../../features/language_learning/data/datasources/lesson_question_datasource.dart';
-import '../../features/language_learning/data/repositories/language_learning_repository_impl.dart';
-import '../../features/language_learning/domain/repositories/language_learning_repository.dart';
-import '../../features/language_learning/presentation/bloc/language_learning_bloc.dart';
 
 // Cultural Exchange
 import '../../features/cultural_exchange/data/datasources/cultural_exchange_remote_datasource.dart';
@@ -191,13 +184,6 @@ import '../../features/communities/data/repositories/communities_repository_impl
 import '../../features/communities/domain/repositories/communities_repository.dart';
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
 
-// Language Games
-import '../../features/language_games/data/datasources/game_word_datasource.dart';
-import '../../features/language_games/data/datasources/game_word_datasource_impl.dart';
-import '../../features/language_games/data/datasources/language_games_remote_datasource.dart';
-import '../../features/language_games/data/repositories/language_games_repository_impl.dart';
-import '../../features/language_games/domain/repositories/language_games_repository.dart';
-import '../../features/language_games/presentation/bloc/language_games_bloc.dart';
 
 // Core Services
 import '../services/cache_service.dart';
@@ -674,36 +660,6 @@ Future<void> init() async {
     ),
   );
 
-  //! Features - Language Learning
-  // Data sources
-  sl.registerLazySingleton<LanguageLearningRemoteDataSource>(
-    () => LanguageLearningRemoteDataSourceImpl(
-      firestore: sl(),
-      auth: sl(),
-    ),
-  );
-
-  sl.registerLazySingleton<LessonQuestionDatasource>(
-    () => LessonQuestionDatasource(firestore: sl(), cacheService: CacheService.instance),
-  );
-
-  sl.registerLazySingleton<ConstellationDatasource>(
-    () => ConstellationDatasource(firestore: sl(), cacheService: CacheService.instance),
-  );
-
-  // Repository
-  sl.registerLazySingleton<LanguageLearningRepository>(
-    () => LanguageLearningRepositoryImpl(remoteDataSource: sl()),
-  );
-
-  // BLoC
-  sl.registerFactory(
-    () => LanguageLearningBloc(
-      repository: sl(),
-      questionDatasource: sl(),
-      constellationDatasource: sl(),
-    ),
-  );
 
   //! Features - Cultural Exchange
   // Data sources
@@ -823,30 +779,6 @@ Future<void> init() async {
     ),
   );
 
-  //! Features - Language Games
-  // Data sources
-  sl.registerLazySingleton<GameWordDatasource>(
-    () => GameWordDatasourceImpl(firestore: sl()),
-  );
-  sl.registerLazySingleton<LanguageGamesRemoteDataSource>(
-    () => LanguageGamesRemoteDataSourceImpl(
-      firestore: sl(),
-      gameWordDatasource: sl(),
-    ),
-  );
-
-  // Repository
-  sl.registerLazySingleton<LanguageGamesRepository>(
-    () => LanguageGamesRepositoryImpl(
-      remoteDataSource: sl(),
-      firestore: sl(),
-    ),
-  );
-
-  // BLoC
-  sl.registerFactory(
-    () => LanguageGamesBloc(repository: sl()),
-  );
 
   //! Core Services
   sl.registerLazySingleton(() => PronunciationService());
