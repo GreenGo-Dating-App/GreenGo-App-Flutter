@@ -56,7 +56,7 @@ class SwipeButtons extends StatelessWidget {
 
         // Like button
         _buildActionButton(
-          icon: Icons.favorite,
+          icon: Icons.connect_without_contact,
           color: AppColors.successGreen,
           size: 60,
           iconSize: 32,

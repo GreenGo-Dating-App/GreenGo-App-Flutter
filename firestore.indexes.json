@@ -903,6 +903,54 @@
         { "fieldPath": "lesson", "order": "ASCENDING" },
         { "fieldPath": "questionNumber", "order": "ASCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "vocabulary_words",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "frequencyScore", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "vocabulary_words",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "rank", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "vocabulary_words",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "text", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "vocabulary_sentences",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "frequencyScore", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "vocabulary_sentences",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "rank", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "words",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "language", "order": "ASCENDING" },
+        { "fieldPath": "firstUsedAt", "order": "DESCENDING" }
+      ]
     }
   ],
   "fieldOverrides": [

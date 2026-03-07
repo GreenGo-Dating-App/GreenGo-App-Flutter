@@ -47,14 +47,12 @@ import '../../../../core/utils/safe_navigation.dart';
 import 'usage_stats_screen.dart';
 import 'traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
-// Gamification/Coins screens disabled due to compile errors
-// import '../../../gamification/presentation/screens/achievements_screen.dart';
-// import '../../../gamification/presentation/screens/journey_screen.dart';
-// import '../../../gamification/presentation/screens/leaderboard_screen.dart';
-// import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
-// import '../../../coins/presentation/screens/coin_shop_screen.dart';
-// import '../../../coins/presentation/screens/transaction_history_screen.dart';
-// import '../../../gamification/presentation/bloc/gamification_bloc.dart';
+import '../../../gamification/presentation/screens/achievements_screen.dart';
+import '../../../gamification/presentation/screens/journey_screen.dart';
+import '../../../gamification/presentation/screens/leaderboard_screen.dart';
+import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
+import '../../../gamification/presentation/bloc/gamification_bloc.dart';
+import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 
@@ -429,27 +427,39 @@ class EditProfileScreen extends StatelessWidget {
                     onTap: () => _navigateToUsageStats(context, activeProfile),
                   ),
 
-                  // Gamification & Rewards Section - Moved to Progress tab in bottom navigation
-                  // TODO: Re-enable when gamification/coins features are fixed
-                  // const SizedBox(height: 32),
-                  // const Divider(color: AppColors.divider),
-                  // const SizedBox(height: 16),
-                  // const Text(
-                  //   'Rewards & Progress',
-                  //   style: TextStyle(
-                  //     color: AppColors.richGold,
-                  //     fontSize: 18,
-                  //     fontWeight: FontWeight.bold,
-                  //   ),
-                  // ),
-                  // const SizedBox(height: 16),
-                  // EditSectionCard(
-                  //   title: 'Coin Shop',
-                  //   subtitle: 'Purchase coins and premium features',
-                  //   icon: Icons.monetization_on,
-                  //   onTap: () => _navigateToCoinShop(context, activeProfile),
-                  // ),
-                  // ... other gamification navigation disabled ...
+                  // Gamification & Rewards Section
+                  const SizedBox(height: 32),
+                  const Divider(color: AppColors.divider),
+                  const SizedBox(height: 16),
+                  Text(
+                    AppLocalizations.of(context)!.profilePremiumFeatures,
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  EditSectionCard(
+                    title: AppLocalizations.of(context)!.leaderboardTitle,
+                    subtitle: AppLocalizations.of(context)!.leaderboardSubtitle,
+                    icon: Icons.leaderboard,
+                    onTap: () => _navigateToLeaderboard(context, activeProfile),
+                  ),
+                  const SizedBox(height: 16),
+                  EditSectionCard(
+                    title: AppLocalizations.of(context)!.achievementsTitle,
+                    subtitle: AppLocalizations.of(context)!.achievementsSubtitle,
+                    icon: Icons.emoji_events,
+                    onTap: () => _navigateToAchievements(context, activeProfile),
+                  ),
+                  const SizedBox(height: 16),
+                  EditSectionCard(
+                    title: AppLocalizations.of(context)!.dailyChallengesTitle,
+                    subtitle: AppLocalizations.of(context)!.dailyChallengesSubtitle,
+                    icon: Icons.today,
+                    onTap: () => _navigateToDailyChallenges(context, activeProfile),
+                  ),
 
                   // Admin Panel Section (only visible to admins)
                   if (activeProfile.isAdmin) ...[
@@ -861,12 +871,41 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  // Gamification & Coins Navigation Methods - Moved to Progress tab in bottom navigation
-  // void _navigateToTransactionHistory(BuildContext context, Profile currentProfile) { ... }
-  // void _navigateToAchievements(BuildContext context, Profile currentProfile) { ... }
-  // void _navigateToDailyChallenges(BuildContext context, Profile currentProfile) { ... }
-  // void _navigateToLeaderboard(BuildContext context, Profile currentProfile) { ... }
-  // void _navigateToJourney(BuildContext context, Profile currentProfile) { ... }
+  void _navigateToLeaderboard(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<GamificationBloc>()
+            ..add(LoadLeaderboard(userId: currentProfile.userId)),
+          child: LeaderboardScreen(userId: currentProfile.userId),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToAchievements(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<GamificationBloc>()
+            ..add(LoadUserAchievements(currentProfile.userId)),
+          child: AchievementsScreen(userId: currentProfile.userId),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToDailyChallenges(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<GamificationBloc>()
+            ..add(LoadDailyChallenges(currentProfile.userId)),
+          child: DailyChallengesScreen(userId: currentProfile.userId),
+        ),
+      ),
+    );
+  }
 
   Widget _buildBaseMembershipSection(BuildContext context, Profile profile) {
     final isActive = profile.isBaseMembershipActive;

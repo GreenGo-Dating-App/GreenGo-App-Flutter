@@ -166,6 +166,31 @@ class XPActions {
     description: 'Purchased coins',
   );
 
+  // Vocabulary
+  static const XPAction vocabularyCommonWord = XPAction(
+    actionType: 'vocabulary_common',
+    xpAmount: 1,
+    description: 'Used a common word in chat',
+  );
+
+  static const XPAction vocabularyMediumWord = XPAction(
+    actionType: 'vocabulary_medium',
+    xpAmount: 3,
+    description: 'Used a medium-frequency word in chat',
+  );
+
+  static const XPAction vocabularyRareWord = XPAction(
+    actionType: 'vocabulary_rare',
+    xpAmount: 5,
+    description: 'Used a rare word in chat',
+  );
+
+  static const XPAction vocabularyUnknownWord = XPAction(
+    actionType: 'vocabulary_unknown',
+    xpAmount: 2,
+    description: 'Used a word not in corpus',
+  );
+
   // Get all actions
   static List<XPAction> get all => [
         profileView,
@@ -181,6 +206,10 @@ class XPActions {
         dailyChallengeCompleted,
         subscriptionPurchased,
         coinsPurchased,
+        vocabularyCommonWord,
+        vocabularyMediumWord,
+        vocabularyRareWord,
+        vocabularyUnknownWord,
       ];
 
   /// Get XP amount for action type

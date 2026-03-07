@@ -227,6 +227,12 @@ abstract class AppLocalizations {
   /// **'Achievements'**
   String get achievements;
 
+  /// No description provided for @achievementsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'View your badges and progress'**
+  String get achievementsSubtitle;
+
   /// No description provided for @achievementsTitle.
   ///
   /// In en, this message translates to:
@@ -5417,6 +5423,12 @@ abstract class AppLocalizations {
   /// **'Share your cultural knowledge...'**
   String get culturalExchangeYourTipHint;
 
+  /// No description provided for @dailyChallengesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete challenges for rewards'**
+  String get dailyChallengesSubtitle;
+
   /// No description provided for @dailyChallengesTitle.
   ///
   /// In en, this message translates to:
@@ -5654,7 +5666,7 @@ abstract class AppLocalizations {
   /// No description provided for @discover.
   ///
   /// In en, this message translates to:
-  /// **'Exchange'**
+  /// **'Network'**
   String get discover;
 
   /// No description provided for @discoveryError.
@@ -8747,6 +8759,12 @@ abstract class AppLocalizations {
   /// **'Last updated'**
   String get lastUpdated;
 
+  /// No description provided for @leaderboardSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See global and regional rankings'**
+  String get leaderboardSubtitle;
+
   /// No description provided for @leaderboardTitle.
   ///
   /// In en, this message translates to:
@@ -10803,7 +10821,7 @@ abstract class AppLocalizations {
   /// No description provided for @messages.
   ///
   /// In en, this message translates to:
-  /// **'Messages'**
+  /// **'Exchanges'**
   String get messages;
 
   /// No description provided for @minutes.
@@ -15093,25 +15111,25 @@ abstract class AppLocalizations {
   /// No description provided for @swipeIndicatorLike.
   ///
   /// In en, this message translates to:
-  /// **'LIKE'**
+  /// **'CONNECT'**
   String get swipeIndicatorLike;
 
   /// No description provided for @swipeIndicatorNope.
   ///
   /// In en, this message translates to:
-  /// **'NOPE'**
+  /// **'PASS'**
   String get swipeIndicatorNope;
 
   /// No description provided for @swipeIndicatorSkip.
   ///
   /// In en, this message translates to:
-  /// **'SKIP'**
+  /// **'EXPLORE NEXT'**
   String get swipeIndicatorSkip;
 
   /// No description provided for @swipeIndicatorSuperLike.
   ///
   /// In en, this message translates to:
-  /// **'SUPER LIKE'**
+  /// **'PRIORITY CONNECT'**
   String get swipeIndicatorSuperLike;
 
   /// No description provided for @takePhoto.

@@ -539,7 +539,7 @@ class _SwipeCardState extends State<SwipeCard>
           // Match percentage
           Row(
             children: [
-              const Icon(Icons.favorite, color: AppColors.richGold, size: 16),
+              const Icon(Icons.connect_without_contact, color: AppColors.richGold, size: 16),
               const SizedBox(width: 4),
               Text(
                 AppLocalizations.of(context)!.matchPercentage(widget.card.matchPercentage),

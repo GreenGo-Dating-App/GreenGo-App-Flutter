@@ -389,6 +389,67 @@ class Achievements {
     rewardAmount: 500,
   );
 
+  // Vocabulary achievements
+  static const Achievement vocabularyBeginner = Achievement(
+    achievementId: 'vocabulary_beginner',
+    name: 'Word Explorer',
+    description: 'Use 100 unique words in chat',
+    category: AchievementCategory.engagement,
+    rarity: AchievementRarity.common,
+    iconUrl: 'assets/achievements/vocabulary_beginner.png',
+    requiredCount: 100,
+    rewardType: 'xp',
+    rewardAmount: 50,
+  );
+
+  static const Achievement vocabularyIntermediate = Achievement(
+    achievementId: 'vocabulary_intermediate',
+    name: 'Wordsmith',
+    description: 'Use 500 unique words in chat',
+    category: AchievementCategory.engagement,
+    rarity: AchievementRarity.uncommon,
+    iconUrl: 'assets/achievements/vocabulary_intermediate.png',
+    requiredCount: 500,
+    rewardType: 'xp',
+    rewardAmount: 150,
+  );
+
+  static const Achievement vocabularyAdvanced = Achievement(
+    achievementId: 'vocabulary_advanced',
+    name: 'Vocabulary Expert',
+    description: 'Use 1000 unique words in chat',
+    category: AchievementCategory.engagement,
+    rarity: AchievementRarity.rare,
+    iconUrl: 'assets/achievements/vocabulary_advanced.png',
+    requiredCount: 1000,
+    rewardType: 'coins',
+    rewardAmount: 200,
+  );
+
+  static const Achievement vocabularyMaster = Achievement(
+    achievementId: 'vocabulary_master',
+    name: 'Vocabulary Master',
+    description: 'Use 5000 unique words in chat',
+    category: AchievementCategory.engagement,
+    rarity: AchievementRarity.legendary,
+    iconUrl: 'assets/achievements/vocabulary_master.png',
+    requiredCount: 5000,
+    rewardType: 'coins',
+    rewardAmount: 500,
+  );
+
+  static const Achievement rareWordHunter = Achievement(
+    achievementId: 'rare_word_hunter',
+    name: 'Rare Word Hunter',
+    description: 'Use 50 rare words (frequency score below 50)',
+    category: AchievementCategory.engagement,
+    rarity: AchievementRarity.epic,
+    iconUrl: 'assets/achievements/rare_word_hunter.png',
+    requiredCount: 50,
+    rewardType: 'xp',
+    rewardAmount: 300,
+  );
+
   // Get all standard achievements
   static List<Achievement> get all => [
         firstMatch,
@@ -411,7 +472,11 @@ class Achievements {
         premiumMember,
         coinCollector,
         monthlyStreak,
-        // Add 30+ more to reach 50+
+        vocabularyBeginner,
+        vocabularyIntermediate,
+        vocabularyAdvanced,
+        vocabularyMaster,
+        rareWordHunter,
       ];
 
   /// Get all achievements (alias for `all` for compatibility)

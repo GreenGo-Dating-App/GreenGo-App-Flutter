@@ -19,6 +19,7 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/services/vocabulary_tracking_service.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
@@ -313,6 +314,14 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     _messageController.clear();
+
+    // Track vocabulary usage for gamification (fire-and-forget)
+    final lang = _languageProvider?.currentLocale.languageCode ?? 'en';
+    VocabularyTrackingService.trackMessage(
+      userId: widget.currentUserId,
+      messageText: content,
+      language: lang,
+    );
 
     // Scroll to bottom after sending (post-frame callback for reliable timing)
     WidgetsBinding.instance.addPostFrameCallback((_) {

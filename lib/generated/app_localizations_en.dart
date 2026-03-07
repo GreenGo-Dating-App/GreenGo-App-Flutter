@@ -78,6 +78,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get achievements => 'Achievements';
 
   @override
+  String get achievementsSubtitle => 'View your badges and progress';
+
+  @override
   String get achievementsTitle => 'Achievements';
 
   @override
@@ -2982,6 +2985,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get culturalExchangeYourTipHint => 'Share your cultural knowledge...';
 
   @override
+  String get dailyChallengesSubtitle => 'Complete challenges for rewards';
+
+  @override
   String get dailyChallengesTitle => 'Daily Challenges';
 
   @override
@@ -3114,7 +3120,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get discover => 'Exchange';
+  String get discover => 'Network';
 
   @override
   String discoveryError(String error) {
@@ -4862,6 +4868,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lastUpdated => 'Last updated';
 
   @override
+  String get leaderboardSubtitle => 'See global and regional rankings';
+
+  @override
   String get leaderboardTitle => 'Leaderboard';
 
   @override
@@ -5980,7 +5989,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get messages => 'Messages';
+  String get messages => 'Exchanges';
 
   @override
   String get minutes => 'Minutes';
@@ -8411,16 +8420,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get supportCenterSubtitle => 'Get help, report issues, contact us';
 
   @override
-  String get swipeIndicatorLike => 'LIKE';
+  String get swipeIndicatorLike => 'CONNECT';
 
   @override
-  String get swipeIndicatorNope => 'NOPE';
+  String get swipeIndicatorNope => 'PASS';
 
   @override
-  String get swipeIndicatorSkip => 'SKIP';
+  String get swipeIndicatorSkip => 'EXPLORE NEXT';
 
   @override
-  String get swipeIndicatorSuperLike => 'SUPER LIKE';
+  String get swipeIndicatorSuperLike => 'PRIORITY CONNECT';
 
   @override
   String get takePhoto => 'Take Photo';
