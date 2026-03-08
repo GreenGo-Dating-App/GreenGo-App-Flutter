@@ -20,6 +20,7 @@ import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/services/vocabulary_tracking_service.dart';
+import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
@@ -37,6 +38,8 @@ import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../core/services/pronunciation_service.dart';
+import 'package:audioplayers/audioplayers.dart' hide Source;
 
 /// Chat Screen
 ///
@@ -90,6 +93,31 @@ class _ChatScreenState extends State<ChatScreen> {
   // Reply state
   Message? _replyingToMessage;
 
+  // Smart replies
+  List<String> _smartReplies = [];
+  List<String> _smartReplyTranslations = [];
+  bool _loadingSmartReplies = false;
+  String? _lastProcessedMessageId;
+
+  // Grammar correction
+  Map<String, dynamic>? _grammarResult;
+  bool _showGrammarBanner = false;
+
+  final ChatLearningService _learningService = ChatLearningService();
+
+  // Chat streak & XP
+  int _chatStreak = 0;
+  int _sessionXp = 0;
+  int _uniqueWordsUsed = 0;
+
+  // Phrase of the Day
+  String? _phraseOfTheDay;
+  String? _phraseTranslation;
+  bool _showPhraseOfDay = true;
+
+  // Shadowing mode
+  bool _isShadowing = false;
+
   // Pagination
   int _messageLimit = 100;
   bool _isLoadingMore = false;
@@ -118,6 +146,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
     _fetchCurrentUserName();
+    _loadPhraseOfTheDay();
   }
 
   Future<void> _fetchCurrentUserName({bool forceServer = false}) async {
@@ -330,6 +359,27 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
+    // Grammar check for non-native language messages
+    if (!_showGrammarBanner && content.split(' ').length >= 3) {
+      final lang = widget.otherUserProfile.languages.isNotEmpty
+          ? widget.otherUserProfile.languages.first
+          : 'en';
+      if (lang != (_userLanguage ?? 'en')) {
+        final result = await _learningService.checkGrammar(content, lang);
+        if (result != null && result['hasErrors'] == true && mounted) {
+          setState(() {
+            _grammarResult = result;
+            _showGrammarBanner = true;
+          });
+          return; // Don't send yet, show correction first
+        }
+      }
+    }
+    // Reset grammar banner
+    if (_showGrammarBanner) {
+      setState(() => _showGrammarBanner = false);
+    }
+
     // Send as reply if replying to a message
     if (_replyingToMessage != null) {
       _chatBloc.add(ChatMessageReplied(
@@ -340,6 +390,9 @@ class _ChatScreenState extends State<ChatScreen> {
     } else {
       _chatBloc.add(ChatMessageSent(content: content));
     }
+
+    // Track XP for learning gamification
+    _trackMessageXp(content);
 
     _messageController.clear();
 
@@ -1450,6 +1503,10 @@ class _ChatScreenState extends State<ChatScreen> {
           appBar: _buildAppBar(),
         body: Column(
           children: [
+            // Phrase of the Day banner
+            _buildPhraseOfDay(),
+            // Chat XP bar
+            if (_sessionXp > 0) _buildXpBar(),
             // Messages list
             Expanded(
               child: BlocBuilder<ChatBloc, ChatState>(
@@ -1500,6 +1557,19 @@ class _ChatScreenState extends State<ChatScreen> {
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         _checkAndDownloadModels(context);
                       });
+                    }
+
+                    // Trigger smart replies for latest received message
+                    if (messages.isNotEmpty) {
+                      final latest = messages.first; // newest message (list is descending)
+                      if (latest.senderId != widget.currentUserId && latest.messageId != _lastProcessedMessageId) {
+                        _lastProcessedMessageId = latest.messageId;
+                        final lang = latest.detectedLanguage ?? latest.metadata?['language'] ?? 'en';
+                        // Use addPostFrameCallback to avoid calling setState during build
+                        WidgetsBinding.instance.addPostFrameCallback((_) {
+                          if (mounted) _loadSmartReplies(latest.content, lang);
+                        });
+                      }
                     }
 
                     if (messages.isEmpty) {
@@ -1620,6 +1690,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
             // Reply preview
             _buildReplyPreview(),
+
+            // Grammar correction banner
+            _buildGrammarBanner(),
+
+            // Smart reply suggestions
+            _buildSmartRepliesBar(),
 
             // Upload progress indicator
             if (_isUploadingMedia)
@@ -1812,6 +1888,14 @@ class _ChatScreenState extends State<ChatScreen> {
           },
         ),
         IconButton(
+          icon: Icon(
+            _isShadowing ? Icons.stop_circle : Icons.headphones,
+            color: _isShadowing ? Colors.red : AppColors.textSecondary,
+          ),
+          tooltip: _isShadowing ? 'Stop Shadowing' : 'Shadowing Mode',
+          onPressed: _isShadowing ? () => setState(() => _isShadowing = false) : _startShadowingMode,
+        ),
+        IconButton(
           icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
           onPressed: () => _showChatOptionsMenu(context),
         ),
@@ -1887,6 +1971,15 @@ class _ChatScreenState extends State<ChatScreen> {
                 _confirmDeleteChatForBoth(context);
               },
             ),
+            _buildOptionItem(
+              icon: Icons.mic,
+              label: 'Pronunciation Challenge',
+              color: AppColors.richGold,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _showPronunciationChallenge();
+              },
+            ),
             const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.block,
@@ -1907,6 +2000,257 @@ class _ChatScreenState extends State<ChatScreen> {
               },
             ),
             const SizedBox(height: 16),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _trackMessageXp(String content) {
+    final words = content.toLowerCase().split(RegExp(r'\s+')).where((w) => w.length > 1).toSet();
+    setState(() {
+      _sessionXp += 5 + (words.length * 2); // Base 5 XP + 2 per word
+      _uniqueWordsUsed += words.length;
+      _chatStreak++;
+    });
+  }
+
+  Widget _buildXpBar() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      color: AppColors.backgroundCard,
+      child: Row(
+        children: [
+          const Icon(Icons.local_fire_department, size: 16, color: Colors.orange),
+          const SizedBox(width: 4),
+          Text(
+            'Streak: $_chatStreak',
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
+          ),
+          const SizedBox(width: 12),
+          const Icon(Icons.star, size: 14, color: AppColors.richGold),
+          const SizedBox(width: 4),
+          Text(
+            '${_sessionXp} XP',
+            style: const TextStyle(color: AppColors.richGold, fontSize: 11, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(width: 12),
+          const Icon(Icons.abc, size: 14, color: AppColors.textTertiary),
+          const SizedBox(width: 4),
+          Text(
+            '$_uniqueWordsUsed words',
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
+          ),
+          const Spacer(),
+          // Small XP progress bar
+          SizedBox(
+            width: 60,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: LinearProgressIndicator(
+                value: (_sessionXp % 100) / 100,
+                backgroundColor: AppColors.backgroundDark,
+                valueColor: const AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                minHeight: 4,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _loadPhraseOfTheDay() async {
+    final phrases = [
+      {'phrase': 'Cómo estás?', 'translation': 'How are you?', 'lang': 'Spanish'},
+      {'phrase': 'Buongiorno!', 'translation': 'Good morning!', 'lang': 'Italian'},
+      {'phrase': 'Comment allez-vous?', 'translation': 'How are you?', 'lang': 'French'},
+      {'phrase': 'Wie geht es Ihnen?', 'translation': 'How are you?', 'lang': 'German'},
+      {'phrase': 'Tudo bem?', 'translation': 'All good?', 'lang': 'Portuguese'},
+      {'phrase': 'Piacere di conoscerti!', 'translation': 'Nice to meet you!', 'lang': 'Italian'},
+      {'phrase': 'Enchanté!', 'translation': 'Pleased to meet you!', 'lang': 'French'},
+      {'phrase': 'Mucho gusto!', 'translation': 'Nice to meet you!', 'lang': 'Spanish'},
+      {'phrase': 'Freut mich!', 'translation': 'Nice to meet you!', 'lang': 'German'},
+      {'phrase': 'Que tal?', 'translation': "What's up?", 'lang': 'Spanish'},
+    ];
+
+    // Pick based on day of year for consistency
+    final dayOfYear = DateTime.now().difference(DateTime(DateTime.now().year)).inDays;
+    final phrase = phrases[dayOfYear % phrases.length];
+
+    if (mounted) {
+      setState(() {
+        _phraseOfTheDay = '${phrase['phrase']}';
+        _phraseTranslation = '${phrase['translation']} (${phrase['lang']})';
+      });
+    }
+  }
+
+  Widget _buildPhraseOfDay() {
+    if (_phraseOfTheDay == null || !_showPhraseOfDay) return const SizedBox.shrink();
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      color: AppColors.backgroundDark,
+      child: Row(
+        children: [
+          const Icon(Icons.today, size: 16, color: AppColors.richGold),
+          const SizedBox(width: 8),
+          const Text(
+            'Phrase of the Day: ',
+            style: TextStyle(color: AppColors.textTertiary, fontSize: 11),
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                // Copy phrase to input
+                _messageController.text = _phraseOfTheDay!;
+              },
+              child: Text(
+                '$_phraseOfTheDay — $_phraseTranslation',
+                style: const TextStyle(color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w500),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () => setState(() => _showPhraseOfDay = false),
+            child: const Icon(Icons.close, size: 14, color: AppColors.textTertiary),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _startShadowingMode() async {
+    if (_isShadowing) return;
+
+    // Get current messages from bloc state
+    final state = _chatBloc.state;
+    if (state is! ChatLoaded) return;
+
+    final receivedMessages = state.messages
+        .where((m) => m.senderId != widget.currentUserId && m.type == MessageType.text)
+        .take(5)
+        .toList()
+        .reversed
+        .toList(); // Oldest first
+
+    if (receivedMessages.isEmpty) return;
+
+    setState(() => _isShadowing = true);
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Shadowing Mode: Listen and repeat each message'),
+        duration: Duration(seconds: 2),
+        backgroundColor: AppColors.backgroundCard,
+      ),
+    );
+
+    final pronunciationService = PronunciationService();
+    final player = AudioPlayer();
+
+    for (final msg in receivedMessages) {
+      if (!mounted || !_isShadowing) break;
+      final lang = msg.detectedLanguage ?? msg.metadata?['language'] ?? 'en';
+      final url = await pronunciationService.getPronunciationUrl(msg.content, lang);
+      if (url != null && mounted) {
+        await player.play(UrlSource(url));
+        await player.onPlayerComplete.first;
+        await Future.delayed(const Duration(seconds: 1));
+      }
+    }
+
+    if (mounted) {
+      setState(() => _isShadowing = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Shadowing complete! Great practice!'),
+          duration: Duration(seconds: 2),
+          backgroundColor: AppColors.backgroundCard,
+        ),
+      );
+    }
+    player.dispose();
+  }
+
+  void _showPronunciationChallenge() async {
+    final state = _chatBloc.state;
+    if (state is! ChatLoaded) return;
+
+    final receivedMessages = state.messages
+        .where((m) => m.senderId != widget.currentUserId && m.type == MessageType.text)
+        .take(3)
+        .toList();
+
+    if (receivedMessages.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('No messages to practice with yet'), backgroundColor: AppColors.backgroundCard),
+      );
+      return;
+    }
+
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (ctx) => Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Row(
+              children: [
+                Icon(Icons.mic, color: AppColors.richGold),
+                SizedBox(width: 8),
+                Text('Pronunciation Challenge', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+              ],
+            ),
+            const SizedBox(height: 4),
+            const Text('Tap to hear, then practice saying each phrase:', style: TextStyle(color: AppColors.textTertiary, fontSize: 13)),
+            const SizedBox(height: 12),
+            ...receivedMessages.map((msg) => Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: GestureDetector(
+                onTap: () async {
+                  final lang = msg.detectedLanguage ?? msg.metadata?['language'] ?? 'en';
+                  final url = await PronunciationService().getPronunciationUrl(msg.content, lang);
+                  if (url != null) {
+                    final player = AudioPlayer();
+                    await player.play(UrlSource(url));
+                    player.onPlayerComplete.first.then((_) => player.dispose());
+                  }
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: AppColors.backgroundDark,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppColors.divider),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.volume_up, color: AppColors.richGold, size: 20),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          msg.content,
+                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            )),
+            const SizedBox(height: 8),
           ],
         ),
       ),
@@ -2369,6 +2713,147 @@ class _ChatScreenState extends State<ChatScreen> {
             onPressed: _clearReplyMessage,
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _loadSmartReplies(String messageText, String language) async {
+    setState(() => _loadingSmartReplies = true);
+    try {
+      final userLang = _userLanguage ?? 'en';
+      final replies = await _learningService.getSmartReplies(messageText, language, userLang);
+      final translations = _learningService.getSmartReplyTranslations(messageText, language);
+      if (mounted) {
+        setState(() {
+          _smartReplies = replies;
+          _smartReplyTranslations = translations;
+          _loadingSmartReplies = false;
+        });
+      }
+    } catch (_) {
+      if (mounted) setState(() => _loadingSmartReplies = false);
+    }
+  }
+
+  Widget _buildSmartRepliesBar() {
+    if (_smartReplies.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      color: AppColors.backgroundCard,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            const Icon(Icons.auto_awesome, size: 16, color: AppColors.richGold),
+            const SizedBox(width: 8),
+            ...List.generate(_smartReplies.length, (i) {
+              final reply = _smartReplies[i];
+              final translation = i < _smartReplyTranslations.length ? _smartReplyTranslations[i] : null;
+              return Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: GestureDetector(
+                  onTap: () {
+                    _messageController.text = reply;
+                    setState(() => _smartReplies = []);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppColors.backgroundDark,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(reply, style: const TextStyle(color: AppColors.textPrimary, fontSize: 13)),
+                        if (translation != null)
+                          Text(translation, style: TextStyle(color: AppColors.textTertiary, fontSize: 10)),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGrammarBanner() {
+    if (!_showGrammarBanner || _grammarResult == null) return const SizedBox.shrink();
+
+    return Container(
+      padding: const EdgeInsets.all(12),
+      color: AppColors.backgroundCard,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.spellcheck, color: Colors.orange, size: 18),
+              const SizedBox(width: 8),
+              const Text('Grammar Suggestion', style: TextStyle(color: AppColors.textPrimary, fontSize: 13, fontWeight: FontWeight.bold)),
+              const Spacer(),
+              GestureDetector(
+                onTap: () => setState(() => _showGrammarBanner = false),
+                child: const Icon(Icons.close, size: 18, color: AppColors.textTertiary),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            _grammarResult!['corrected'] ?? '',
+            style: const TextStyle(color: AppColors.richGold, fontSize: 14),
+          ),
+          if (_grammarResult!['explanation'] != null) ...[
+            const SizedBox(height: 4),
+            Text(
+              _grammarResult!['explanation'],
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
+            ),
+          ],
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    _messageController.text = _grammarResult!['corrected'] ?? _messageController.text;
+                    setState(() => _showGrammarBanner = false);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppColors.richGold,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text('Use Correction', textAlign: TextAlign.center, style: TextStyle(color: AppColors.deepBlack, fontSize: 13, fontWeight: FontWeight.w600)),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() => _showGrammarBanner = false);
+                    _sendMessage(context);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: AppColors.textTertiary),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text('Send Anyway', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textSecondary, fontSize: 13)),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

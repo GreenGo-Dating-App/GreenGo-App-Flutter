@@ -5,6 +5,7 @@ import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../domain/entities/message.dart';
 
@@ -45,10 +46,132 @@ class _MessageBubbleState extends State<MessageBubble> {
   bool _isTtsPlaying = false;
   static final AudioPlayer _ttsPlayer = AudioPlayer();
 
+  // Learning enhancement state
+  String? _difficultyLevel;
+  String? _romanizedText;
+  String? _culturalTooltip;
+  bool _loadingDifficulty = false;
+  bool _loadingRomanization = false;
+
   @override
   void initState() {
     super.initState();
     _isStarred = widget.message.metadata?['isStarred'] == true;
+    if (!widget.isCurrentUser && widget.message.type == MessageType.text) {
+      _loadEnhancements();
+    }
+  }
+
+  Future<void> _loadEnhancements() async {
+    final message = widget.message;
+    final language = message.detectedLanguage ?? message.metadata?['language'] as String? ?? 'en';
+    final service = ChatLearningService();
+
+    // Load difficulty
+    setState(() => _loadingDifficulty = true);
+    try {
+      final level = await service.getMessageDifficulty(message.content, language);
+      if (mounted) setState(() { _difficultyLevel = level; _loadingDifficulty = false; });
+    } catch (e) {
+      if (mounted) setState(() => _loadingDifficulty = false);
+    }
+
+    // Load romanization
+    setState(() => _loadingRomanization = true);
+    try {
+      final romanized = await service.getRomanization(message.content, language);
+      if (mounted) setState(() { _romanizedText = romanized; _loadingRomanization = false; });
+    } catch (e) {
+      if (mounted) setState(() => _loadingRomanization = false);
+    }
+
+    // Load cultural tooltip
+    try {
+      final tooltip = await service.getCulturalTooltip(message.content, language);
+      if (mounted) setState(() => _culturalTooltip = tooltip);
+    } catch (e) {
+      debugPrint('Cultural tooltip error: $e');
+    }
+  }
+
+  Color _getDifficultyColor(String level) {
+    switch (level) {
+      case 'A1': return Colors.green;
+      case 'A2': return Colors.lightGreen;
+      case 'B1': return Colors.orange;
+      case 'B2': return Colors.deepOrange;
+      case 'C1': return Colors.red;
+      case 'C2': return Colors.purple;
+      default: return Colors.grey;
+    }
+  }
+
+  void _showCulturalTooltip() {
+    if (_culturalTooltip == null) return;
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: const Row(
+          children: [
+            Icon(Icons.lightbulb, color: AppColors.richGold),
+            SizedBox(width: 8),
+            Text('Cultural Context', style: TextStyle(color: AppColors.textPrimary)),
+          ],
+        ),
+        content: Text(_culturalTooltip!, style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('OK'))],
+      ),
+    );
+  }
+
+  void _showWordBreakdown() async {
+    final language = widget.message.detectedLanguage ?? widget.message.metadata?['language'] as String? ?? 'en';
+    final words = await ChatLearningService().getWordBreakdown(
+      widget.message.content,
+      language,
+      'en', // Target language for translations
+    );
+    if (words.isEmpty || !mounted) return;
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (ctx) => Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('Word Breakdown', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 12),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: words.map((w) => Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundDark,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: AppColors.divider),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(w['word'] ?? '', style: const TextStyle(color: AppColors.textPrimary, fontSize: 16, fontWeight: FontWeight.w600)),
+                    Text(w['translation'] ?? '', style: const TextStyle(color: AppColors.richGold, fontSize: 12)),
+                    Text(w['pos'] ?? '', style: const TextStyle(color: AppColors.textTertiary, fontSize: 10, fontStyle: FontStyle.italic)),
+                  ],
+                ),
+              )).toList(),
+            ),
+            const SizedBox(height: 16),
+          ],
+        ),
+      ),
+    );
   }
 
   /// Play TTS for the message text on double-tap
@@ -107,6 +230,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     return GestureDetector(
+      onTap: (!isCurrentUser && message.type == MessageType.text) ? _showWordBreakdown : null,
       onDoubleTap: message.type == MessageType.text ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
@@ -177,6 +301,21 @@ class _MessageBubbleState extends State<MessageBubble> {
                       color: isCurrentUser
                           ? AppColors.deepBlack.withOpacity(0.6)
                           : AppColors.richGold,
+                    ),
+                    const SizedBox(width: 4),
+                  ],
+                  // Difficulty badge (CEFR level)
+                  if (_difficultyLevel != null) ...[
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                      decoration: BoxDecoration(
+                        color: _getDifficultyColor(_difficultyLevel!),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        _difficultyLevel!,
+                        style: const TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.bold),
+                      ),
                     ),
                     const SizedBox(width: 4),
                   ],
@@ -440,6 +579,41 @@ class _MessageBubbleState extends State<MessageBubble> {
                     height: 1.3,
                     fontStyle: FontStyle.italic,
                   ),
+                ),
+              ),
+            ],
+            // Romanized text for non-Latin scripts
+            if (_romanizedText != null && !isCurrentUser) ...[
+              const SizedBox(height: 4),
+              Text(
+                _romanizedText!,
+                style: TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 12,
+                  fontStyle: FontStyle.italic,
+                  height: 1.3,
+                ),
+              ),
+            ],
+            // Cultural tooltip icon
+            if (_culturalTooltip != null && !isCurrentUser) ...[
+              const SizedBox(height: 4),
+              GestureDetector(
+                onTap: _showCulturalTooltip,
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text('\u{1F4A1}', style: TextStyle(fontSize: 14)),
+                    SizedBox(width: 4),
+                    Text(
+                      'Cultural context',
+                      style: TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

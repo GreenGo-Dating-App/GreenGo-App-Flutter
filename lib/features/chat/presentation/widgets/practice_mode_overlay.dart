@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../membership/domain/entities/membership.dart';
 
@@ -346,6 +347,8 @@ class _PracticeModeOverlayState extends State<PracticeModeOverlay>
   late AnimationController _slideController;
   late Animation<Offset> _slideAnimation;
 
+  final ChatLearningService _learningService = ChatLearningService();
+
   bool _isCollapsed = false;
   List<_LanguageTip> _tips = [];
   bool _isLoadingTips = false;
@@ -462,52 +465,90 @@ class _PracticeModeOverlayState extends State<PracticeModeOverlay>
     setState(() => _isLoadingTips = true);
 
     try {
-      // Generate contextual tips based on conversation
-      // In production, this would call the AI Coach Service (Gemini)
-      // For now, generate helpful tips based on partner's languages
       final tips = <_LanguageTip>[];
-
       final partnerLang = widget.partnerLanguages.isNotEmpty
           ? widget.partnerLanguages.first
-          : 'their language';
+          : 'en';
 
-      // Vocabulary suggestions based on conversation
-      tips.add(_LanguageTip(
-        type: _TipType.vocabulary,
-        title: 'Useful phrases',
-        content: 'Try saying "Nice to meet you" in $partnerLang '
-            'to make a great first impression.',
-        icon: Icons.auto_awesome,
-      ));
-
-      tips.add(_LanguageTip(
-        type: _TipType.grammar,
-        title: 'Grammar tip',
-        content: 'When chatting in $partnerLang, '
-            'remember to match adjective gender with the noun.',
-        icon: Icons.spellcheck,
-      ));
-
-      tips.add(_LanguageTip(
-        type: _TipType.cultural,
-        title: 'Cultural context',
-        content: 'In many cultures, asking about someone\'s day '
-            'is a warm way to start a conversation.',
-        icon: Icons.lightbulb_outline,
-      ));
-
-      // Add message-specific tips if there are recent messages
+      // Try to generate AI-powered tips from conversation context
       if (widget.lastMessages.isNotEmpty) {
         final lastMsg = widget.lastMessages.last;
-        if (lastMsg.length > 10) {
+
+        // Vocabulary tip from word breakdown
+        try {
+          final breakdown = await _learningService.getWordBreakdown(lastMsg, partnerLang, 'en');
+          if (breakdown.isNotEmpty) {
+            final words = breakdown.take(3).map((w) => '${w['word']} = ${w['translation']}').join(', ');
+            tips.add(_LanguageTip(
+              type: _TipType.vocabulary,
+              title: 'Words from chat',
+              content: words,
+              icon: Icons.auto_awesome,
+            ));
+          }
+        } catch (_) {}
+
+        // Difficulty assessment
+        try {
+          final difficulty = await _learningService.getMessageDifficulty(lastMsg, partnerLang);
           tips.add(_LanguageTip(
             type: _TipType.vocabulary,
-            title: 'Reply suggestion',
-            content: 'You could respond with a question about '
-                'what they mentioned to keep the conversation flowing.',
-            icon: Icons.question_answer_outlined,
+            title: 'Message level',
+            content: 'Last message is CEFR level $difficulty. Keep chatting to improve!',
+            icon: Icons.trending_up,
           ));
-        }
+        } catch (_) {}
+
+        // Grammar tip
+        try {
+          final grammar = await _learningService.checkGrammar(lastMsg, partnerLang);
+          if (grammar != null && grammar['hasErrors'] == true) {
+            tips.add(_LanguageTip(
+              type: _TipType.grammar,
+              title: 'Grammar note',
+              content: '${grammar['explanation']}',
+              icon: Icons.spellcheck,
+            ));
+          }
+        } catch (_) {}
+
+        // Cultural context
+        try {
+          final cultural = await _learningService.getCulturalTooltip(lastMsg, partnerLang);
+          if (cultural != null) {
+            tips.add(_LanguageTip(
+              type: _TipType.cultural,
+              title: 'Cultural insight',
+              content: cultural,
+              icon: Icons.lightbulb_outline,
+            ));
+          }
+        } catch (_) {}
+      }
+
+      // Fallback to generic tips if no AI tips generated
+      if (tips.isEmpty) {
+        final partnerLangName = widget.partnerLanguages.isNotEmpty
+            ? widget.partnerLanguages.first
+            : 'their language';
+        tips.add(_LanguageTip(
+          type: _TipType.vocabulary,
+          title: 'Useful phrases',
+          content: 'Try saying "Nice to meet you" in $partnerLangName to make a great first impression.',
+          icon: Icons.auto_awesome,
+        ));
+        tips.add(_LanguageTip(
+          type: _TipType.grammar,
+          title: 'Grammar tip',
+          content: 'When chatting in $partnerLangName, remember to match adjective gender with the noun.',
+          icon: Icons.spellcheck,
+        ));
+        tips.add(_LanguageTip(
+          type: _TipType.cultural,
+          title: 'Cultural context',
+          content: "In many cultures, asking about someone's day is a warm way to start a conversation.",
+          icon: Icons.lightbulb_outline,
+        ));
       }
 
       if (mounted) {
