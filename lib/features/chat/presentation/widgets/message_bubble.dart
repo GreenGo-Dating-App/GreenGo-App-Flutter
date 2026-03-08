@@ -24,6 +24,9 @@ class MessageBubble extends StatefulWidget {
   final bool showCulturalTips;
   final bool showWordBreakdown;
   final bool showPronunciation;
+  final bool showLanguageFlags;
+  final bool ttsReadTranslated;
+  final String? userSelectedLanguage;
   final Function(Message)? onReport;
   final Function(Message, bool)? onStar;
   final Function(Message)? onReply;
@@ -41,6 +44,9 @@ class MessageBubble extends StatefulWidget {
     this.showCulturalTips = true,
     this.showWordBreakdown = true,
     this.showPronunciation = true,
+    this.showLanguageFlags = true,
+    this.ttsReadTranslated = false,
+    this.userSelectedLanguage,
     this.onReport,
     this.onStar,
     this.onReply,
@@ -64,6 +70,22 @@ class _MessageBubbleState extends State<MessageBubble> {
   String? _culturalTooltip;
   bool _loadingDifficulty = false;
   bool _loadingRomanization = false;
+
+  /// Get flag emoji for a language code
+  static String _flagForLanguage(String? langCode) {
+    if (langCode == null || langCode.isEmpty) return '';
+    final code = langCode.toLowerCase().replaceAll('-', '_');
+    const flags = {
+      'en': '\u{1F1EC}\u{1F1E7}', // 🇬🇧
+      'de': '\u{1F1E9}\u{1F1EA}', // 🇩🇪
+      'es': '\u{1F1EA}\u{1F1F8}', // 🇪🇸
+      'fr': '\u{1F1EB}\u{1F1F7}', // 🇫🇷
+      'it': '\u{1F1EE}\u{1F1F9}', // 🇮🇹
+      'pt': '\u{1F1F5}\u{1F1F9}', // 🇵🇹
+      'pt_br': '\u{1F1E7}\u{1F1F7}', // 🇧🇷
+    };
+    return flags[code] ?? '\u{1F310}'; // 🌐 globe fallback
+  }
 
   @override
   void initState() {
@@ -198,14 +220,22 @@ class _MessageBubbleState extends State<MessageBubble> {
       return;
     }
 
-    final text = message.content;
+    // Choose text and language based on TTS setting
+    final String text;
+    final String lang;
+    if (widget.ttsReadTranslated && message.translatedContent != null && message.translatedContent!.isNotEmpty) {
+      // Read the translated version in the user's selected language
+      text = message.translatedContent!;
+      lang = widget.userSelectedLanguage ?? widget.otherUserLanguage ?? 'en';
+    } else {
+      // Read the original version
+      text = message.content;
+      lang = message.detectedLanguage
+          ?? message.metadata?['language'] as String?
+          ?? widget.otherUserLanguage
+          ?? 'en';
+    }
     if (text.isEmpty) return;
-
-    // Use detected language from message, then other user's language, then 'en'
-    final lang = message.detectedLanguage
-        ?? message.metadata?['language'] as String?
-        ?? widget.otherUserLanguage
-        ?? 'en';
 
     setState(() => _isTtsLoading = true);
 
@@ -563,18 +593,49 @@ class _MessageBubbleState extends State<MessageBubble> {
 
     switch (message.type) {
       case MessageType.text:
+        // Determine flags for translated and original languages
+        final translatedFlag = widget.showLanguageFlags && hasTranslation
+            ? _flagForLanguage(widget.userSelectedLanguage ?? widget.otherUserLanguage)
+            : '';
+        final originalLang = message.detectedLanguage ??
+            message.metadata?['language'] as String? ??
+            widget.otherUserLanguage;
+        final originalFlag = widget.showLanguageFlags && hasTranslation
+            ? _flagForLanguage(originalLang)
+            : '';
+
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Translated text as the main readable message
-            Text(
-              hasTranslation ? message.translatedContent! : message.content,
-              style: TextStyle(
-                color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
-                fontSize: 15,
-                height: 1.4,
+            if (hasTranslation && widget.showLanguageFlags) ...[
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(translatedFlag, style: const TextStyle(fontSize: 14)),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      message.translatedContent!,
+                      style: TextStyle(
+                        color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
+                        fontSize: 15,
+                        height: 1.4,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ),
+            ] else ...[
+              Text(
+                hasTranslation ? message.translatedContent! : message.content,
+                style: TextStyle(
+                  color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
+                  fontSize: 15,
+                  height: 1.4,
+                ),
+              ),
+            ],
             // Original text shown underneath for learning
             if (hasTranslation && widget.showOriginalText) ...[
               const SizedBox(height: 6),
@@ -582,20 +643,31 @@ class _MessageBubbleState extends State<MessageBubble> {
                 padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
                 decoration: BoxDecoration(
                   color: isCurrentUser
-                      ? AppColors.deepBlack.withOpacity(0.08)
-                      : AppColors.backgroundDark.withOpacity(0.5),
+                      ? AppColors.deepBlack.withValues(alpha: 0.08)
+                      : AppColors.backgroundDark.withValues(alpha: 0.5),
                   borderRadius: BorderRadius.circular(6),
                 ),
-                child: Text(
-                  message.content,
-                  style: TextStyle(
-                    color: isCurrentUser
-                        ? AppColors.deepBlack.withOpacity(0.7)
-                        : AppColors.textSecondary,
-                    fontSize: 13,
-                    height: 1.3,
-                    fontStyle: FontStyle.italic,
-                  ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (widget.showLanguageFlags) ...[
+                      Text(originalFlag, style: const TextStyle(fontSize: 12)),
+                      const SizedBox(width: 5),
+                    ],
+                    Expanded(
+                      child: Text(
+                        message.content,
+                        style: TextStyle(
+                          color: isCurrentUser
+                              ? AppColors.deepBlack.withValues(alpha: 0.7)
+                              : AppColors.textSecondary,
+                          fontSize: 13,
+                          height: 1.3,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

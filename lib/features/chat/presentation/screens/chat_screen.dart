@@ -92,6 +92,7 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _showWordBreakdown = true;      // Tap message for word breakdown
   bool _showPronunciation = true;      // Double-tap for TTS pronunciation
   bool _ttsReadTranslated = false;    // TTS reads translated text (true) or original (false)
+  bool _showLanguageFlags = true;     // Show flag emoji next to translated/original text
   bool _showXpBar = true;             // Show streak & XP progress bar
   bool _showPhraseOfDaySetting = true; // Show phrase of the day banner
 
@@ -1684,6 +1685,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               showCulturalTips: _showCulturalTips,
                               showWordBreakdown: _showWordBreakdown,
                               showPronunciation: _showPronunciation,
+                              showLanguageFlags: _showLanguageFlags,
                               ttsReadTranslated: _ttsReadTranslated,
                               userSelectedLanguage: _targetLanguage,
                               onReport: (msg) => _reportMessage(context, msg),
@@ -2154,6 +2156,14 @@ class _ChatScreenState extends State<ChatScreen> {
                 subtitle: 'Display the original message below translation',
                 value: _showOriginalText,
                 onChanged: (v) => setState(() => _showOriginalText = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.flag,
+                label: 'Language Flags',
+                subtitle: 'Show flag emoji next to translated and original text',
+                value: _showLanguageFlags,
+                onChanged: (v) => setState(() => _showLanguageFlags = v),
               ),
               _buildSettingToggle(
                 setSheetState,
