@@ -51,20 +51,24 @@ class PronunciationService {
     return 'v3g_${language.toLowerCase()}_${normalized.hashCode.abs()}';
   }
 
-  /// Get pronunciation audio URL for a phrase in a specific language.
+  // Local file path cache (messageKey -> local file path)
+  final Map<String, String> _filePathCache = {};
+
+  /// Get pronunciation audio as a local file path for playback.
   ///
-  /// Returns a Firebase Storage download URL, or null if generation fails.
-  /// The audio is cached — subsequent calls for the same phrase+language
-  /// return instantly from cache.
-  Future<String?> getPronunciationUrl(String phrase, String language) async {
+  /// Strategy: memory cache → local file → Firestore/Storage cache → Gemini generate.
+  /// Audio is saved to Firebase Storage for cross-device/cross-session reuse.
+  Future<String?> getPronunciationFilePath(String phrase, String language) async {
     final key = _cacheKey(phrase, language);
 
-    // 1. Check in-memory cache
-    if (_memoryCache.containsKey(key)) {
-      return _memoryCache[key];
+    // 1. Check local file cache
+    if (_filePathCache.containsKey(key)) {
+      final path = _filePathCache[key]!;
+      if (File(path).existsSync()) return path;
+      _filePathCache.remove(key); // File was cleaned up
     }
 
-    // 2. Check Firestore cache
+    // 2. Check Firestore cache → download from Storage
     try {
       final doc = await _firestore
           .collection('pronunciation_cache')
@@ -74,44 +78,65 @@ class PronunciationService {
       if (doc.exists) {
         final url = doc.data()?['audioUrl'] as String?;
         if (url != null) {
-          _memoryCache[key] = url;
-          // Update access count for analytics
-          doc.reference.update({
-            'accessCount': FieldValue.increment(1),
-            'lastAccessed': FieldValue.serverTimestamp(),
-          }).catchError((_) {}); // Fire and forget
-          return url;
+          // Download to local file
+          final localPath = await _downloadToLocal(key, url);
+          if (localPath != null) {
+            doc.reference.update({
+              'accessCount': FieldValue.increment(1),
+              'lastAccessed': FieldValue.serverTimestamp(),
+            }).catchError((_) {});
+            return localPath;
+          }
         }
       }
     } catch (e) {
-      debugPrint('PronunciationService: Firestore cache read failed: $e');
+      debugPrint('PronunciationService: Firestore cache check failed: $e');
     }
 
     // 3. Generate via Gemini AI
     final audioBytes = await _generatePronunciation(phrase, language);
     if (audioBytes == null) return null;
 
-    // 4. Save to local temp file for playback
+    // 4. Save locally for immediate playback
+    final localPath = await _saveLocally(key, audioBytes);
+    if (localPath == null) return null;
+
+    // 5. Upload to Firebase Storage + cache in Firestore (background)
+    _uploadToFirebase(key, phrase, language, audioBytes).catchError((_) {});
+
+    return localPath;
+  }
+
+  /// Download audio from URL to a local temp file
+  Future<String?> _downloadToLocal(String key, String url) async {
+    try {
+      final response = await http.get(Uri.parse(url)).timeout(const Duration(seconds: 15));
+      if (response.statusCode == 200) {
+        return await _saveLocally(key, response.bodyBytes);
+      }
+    } catch (e) {
+      debugPrint('PronunciationService: Download failed: $e');
+    }
+    return null;
+  }
+
+  /// Save audio bytes to local temp file
+  Future<String?> _saveLocally(String key, Uint8List audioBytes) async {
     try {
       final tempDir = await getTemporaryDirectory();
       final file = File('${tempDir.path}/tts_$key.wav');
       await file.writeAsBytes(audioBytes);
-      final fileUri = file.uri.toString();
-      _memoryCache[key] = fileUri;
-      debugPrint('PronunciationService: Audio saved locally: ${file.path}');
-
-      // Try Firebase cache in background (non-blocking)
-      _cacheToFirebase(key, phrase, language, audioBytes).catchError((_) {});
-
-      return fileUri;
+      _filePathCache[key] = file.path;
+      debugPrint('PronunciationService: Saved to ${file.path} (${audioBytes.length} bytes)');
+      return file.path;
     } catch (e) {
-      debugPrint('PronunciationService: Local file save failed: $e');
+      debugPrint('PronunciationService: Local save failed: $e');
       return null;
     }
   }
 
-  /// Background upload to Firebase for cross-device caching
-  Future<void> _cacheToFirebase(String key, String phrase, String language, Uint8List audioBytes) async {
+  /// Upload to Firebase Storage and cache URL in Firestore (background, non-blocking)
+  Future<void> _uploadToFirebase(String key, String phrase, String language, Uint8List audioBytes) async {
     try {
       final storagePath = 'pronunciation_audio/$language/$key.wav';
       final ref = _storage.ref(storagePath);
@@ -123,13 +148,19 @@ class PronunciationService {
         'audioUrl': downloadUrl,
         'storagePath': storagePath,
         'createdAt': FieldValue.serverTimestamp(),
+        'lastAccessed': FieldValue.serverTimestamp(),
         'accessCount': 1,
       });
-      // Update memory cache with the Firebase URL for future use
-      _memoryCache[key] = downloadUrl;
+      debugPrint('PronunciationService: Uploaded to Firebase Storage');
     } catch (e) {
-      debugPrint('PronunciationService: Firebase cache failed (non-blocking): $e');
+      debugPrint('PronunciationService: Firebase upload failed (non-blocking): $e');
     }
+  }
+
+  /// Legacy URL-based method (kept for compatibility)
+  Future<String?> getPronunciationUrl(String phrase, String language) async {
+    final filePath = await getPronunciationFilePath(phrase, language);
+    return filePath != null ? 'file://$filePath' : null;
   }
 
   /// Try multiple Gemini model names for TTS until one works.
