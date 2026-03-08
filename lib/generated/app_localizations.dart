@@ -7859,6 +7859,18 @@ abstract class AppLocalizations {
   /// **'Milestones'**
   String get gamificationMilestones;
 
+  /// No description provided for @gamificationMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get gamificationMonthly;
+
+  /// No description provided for @gamificationYearly.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get gamificationYearly;
+
   /// No description provided for @gamificationMyProgress.
   ///
   /// In en, this message translates to:

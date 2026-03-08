@@ -4436,6 +4436,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get gamificationMilestones => 'Marcos';
 
   @override
+  String get gamificationMonthly => 'Mes';
+
+  @override
+  String get gamificationYearly => 'Ano';
+
+  @override
   String get gamificationMyProgress => 'O Meu Progresso';
 
   @override
@@ -13798,6 +13804,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get gamificationMilestones => 'Marcos';
+
+  @override
+  String get gamificationMonthly => 'Mes';
+
+  @override
+  String get gamificationYearly => 'Ano';
 
   @override
   String get gamificationMyProgress => 'Meu Progresso';

@@ -45,11 +45,11 @@ import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../../../coins/presentation/screens/shop_screen.dart';
-// Gamification imports (Progress screen hidden from users but code kept)
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
+import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 // App Tour imports
 import '../../../app_tour/presentation/widgets/tour_overlay.dart';
 import '../../../../generated/app_localizations.dart';
@@ -172,8 +172,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _profileBloc = di.sl<ProfileBloc>()
       ..add(ProfileLoadRequested(userId: widget.userId));
 
-    // Build screens list — social-first positioning:
-    // Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)
+    // Build screens list:
+    // Network(0), Exchanges(1), Leaderboard(2), Shop(3), Profile(4)
     _screens = [
       DiscoveryScreen(
         key: _discoveryKey,
@@ -183,6 +183,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         },
       ),
       ConversationsScreen(userId: widget.userId),
+      BlocProvider(
+        create: (context) => di.sl<GamificationBloc>()
+          ..add(LoadLeaderboard(userId: widget.userId)),
+        child: LeaderboardScreen(userId: widget.userId),
+      ),
       ShopScreen(userId: widget.userId),
       BlocProvider.value(
         value: _profileBloc,
@@ -783,6 +788,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
+              icon: const Icon(Icons.leaderboard_outlined),
+              activeIcon: const Icon(Icons.leaderboard),
+              label: AppLocalizations.of(context)!.leaderboardTitle,
+            ),
+            BottomNavigationBarItem(
               icon: const Icon(Icons.store_outlined),
               activeIcon: const Icon(Icons.store),
               label: AppLocalizations.of(context)!.shop,
@@ -970,7 +980,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   PreferredSizeWidget? _buildAppBar() {
     final l10n = AppLocalizations.of(context)!;
-    // Tab indexes: 0=Exchange, 1=Messages, 2=Shop, 3=Profile
+    // Tab indexes: 0=Network, 1=Exchanges, 2=Leaderboard, 3=Shop, 4=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
       return AppBar(
@@ -1039,6 +1049,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           const SizedBox(width: 8),
         ],
       );
+    } else if (_currentIndex == 2) {
+      // Leaderboard - no app bar (has its own)
+      return null;
     }
     // Shop and Profile - no app bar (have their own)
     return null;
