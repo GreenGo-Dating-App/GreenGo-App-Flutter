@@ -270,8 +270,8 @@ class _ChatScreenState extends State<ChatScreen> {
     if (message.content.trim().isEmpty) return message;
 
     final selectedLang = _targetLanguage;
-    // Google Translate uses ISO 639-1 codes: pt_BR -> pt, etc.
-    final translateTo = selectedLang.contains('_') ? selectedLang.split('_').first : selectedLang;
+    // Google Translate uses hyphens: pt_BR -> pt-BR
+    final translateTo = selectedLang.replaceAll('_', '-');
 
     // Check cache — keyed by messageId+language
     final cacheKey = '${message.messageId}_$selectedLang';
