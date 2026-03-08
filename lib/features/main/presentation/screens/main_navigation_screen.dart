@@ -777,13 +777,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           elevation: 0,
           items: [
             BottomNavigationBarItem(
-              icon: const Icon(Icons.swap_horiz_outlined),
-              activeIcon: const Icon(Icons.swap_horiz),
+              icon: const Icon(Icons.people_outline),
+              activeIcon: const Icon(Icons.people),
               label: AppLocalizations.of(context)!.discover,
             ),
             BottomNavigationBarItem(
-              icon: _buildBadgeIcon(Icons.chat_bubble_outline, _unreadMessageCount),
-              activeIcon: _buildBadgeIcon(Icons.chat_bubble, _unreadMessageCount),
+              icon: _buildBadgeIcon(Icons.forum_outlined, _unreadMessageCount),
+              activeIcon: _buildBadgeIcon(Icons.forum, _unreadMessageCount),
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(

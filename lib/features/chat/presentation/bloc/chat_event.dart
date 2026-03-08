@@ -11,11 +11,13 @@ class ChatConversationLoaded extends ChatEvent {
   final String matchId;
   final String currentUserId;
   final String otherUserId;
+  final int? limit;
 
   const ChatConversationLoaded({
     required this.matchId,
     required this.currentUserId,
     required this.otherUserId,
+    this.limit,
   });
 }
 
