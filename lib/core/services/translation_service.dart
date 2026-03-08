@@ -1,16 +1,15 @@
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:translator/translator.dart';
+import 'package:http/http.dart' as http;
 
 /// Translation Service
 ///
-/// Handles online translation using Google Translate API
-/// Works on all devices including emulators
+/// Handles online translation using Google Translate free API directly.
+/// Supports all Google Translate language codes including pt-BR.
 class TranslationService {
   static final TranslationService _instance = TranslationService._internal();
   factory TranslationService() => _instance;
   TranslationService._internal();
-
-  final GoogleTranslator _translator = GoogleTranslator();
 
   // Cache translations to avoid repeated API calls
   final Map<String, String> _translationCache = {};
@@ -22,6 +21,7 @@ class TranslationService {
     'es': 'Español',
     'fr': 'Français',
     'pt': 'Português',
+    'pt-BR': 'Português (BR)',
     'de': 'Deutsch',
   };
 
@@ -32,19 +32,17 @@ class TranslationService {
 
   /// Initialize service (no-op for online translation)
   Future<void> initialize() async {
-    debugPrint('TranslationService: Using online Google Translate');
+    debugPrint('TranslationService: Using Google Translate API');
   }
 
   /// Check if a language model is downloaded (always true for online)
   Future<bool> isModelDownloaded(String languageCode) async {
-    // Online translation - no models needed
-    return _languageNames.containsKey(languageCode);
+    return true;
   }
 
   /// Download a language model (no-op for online translation)
   Future<bool> downloadModel(String languageCode) async {
-    // Online translation - no download needed
-    return _languageNames.containsKey(languageCode);
+    return true;
   }
 
   /// Delete a downloaded language model (no-op for online)
@@ -68,30 +66,50 @@ class TranslationService {
     }
 
     try {
-      // Use 'auto' for automatic language detection
       final from = sourceLanguage == 'auto' ? 'auto' : sourceLanguage;
 
-      final translation = await _translator.translate(
-        text,
-        from: from,
-        to: targetLanguage,
+      final url = Uri.parse(
+        'https://translate.googleapis.com/translate_a/single'
+        '?client=gtx'
+        '&sl=${Uri.encodeComponent(from)}'
+        '&tl=${Uri.encodeComponent(targetLanguage)}'
+        '&dt=t'
+        '&q=${Uri.encodeComponent(text)}',
       );
 
-      final result = translation.text;
+      final response = await http.get(url).timeout(const Duration(seconds: 10));
 
-      // Cache the result
-      _translationCache[cacheKey] = result;
+      if (response.statusCode == 200) {
+        final decoded = jsonDecode(response.body);
+        // Response format: [[["translated text","original text",null,null,x],...],null,"detected_lang",...]
+        final translations = decoded[0] as List;
+        final buffer = StringBuffer();
+        for (final part in translations) {
+          if (part is List && part.isNotEmpty && part[0] is String) {
+            buffer.write(part[0]);
+          }
+        }
+        final result = buffer.toString();
 
-      // Limit cache size
-      if (_translationCache.length > 500) {
-        final keysToRemove = _translationCache.keys.take(100).toList();
-        for (final key in keysToRemove) {
-          _translationCache.remove(key);
+        if (result.isNotEmpty) {
+          // Cache the result
+          _translationCache[cacheKey] = result;
+
+          // Limit cache size
+          if (_translationCache.length > 500) {
+            final keysToRemove = _translationCache.keys.take(100).toList();
+            for (final key in keysToRemove) {
+              _translationCache.remove(key);
+            }
+          }
+
+          debugPrint('Translated: "$text" -> "$result"');
+          return result;
         }
       }
 
-      debugPrint('Translated: "$text" -> "$result"');
-      return result;
+      debugPrint('Translation failed: HTTP ${response.statusCode}');
+      return text;
     } catch (e) {
       debugPrint('Translation error: $e');
       return text;
@@ -110,7 +128,6 @@ class TranslationService {
 
   /// Check if translation is available between two languages
   Future<bool> canTranslate(String sourceLanguage, String targetLanguage) async {
-    // Online translation always available
     return true;
   }
 
