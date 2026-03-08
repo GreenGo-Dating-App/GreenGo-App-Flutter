@@ -265,41 +265,44 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Translate ALL messages to the selected chat language.
   /// The translated text is shown as the main content, with the original below it.
   Future<Message> _translateMessage(Message message) async {
-    // Don't translate if translation is disabled
-    if (!_translationEnabled) return message;
-
     // Don't translate non-text messages
     if (message.type != MessageType.text) return message;
+    if (message.content.trim().isEmpty) return message;
 
-    // Check cache — use our own cache keyed by messageId+language
-    final cacheKey = '${message.messageId}_$_targetLanguage';
+    final selectedLang = _targetLanguage;
+    // Google Translate uses ISO 639-1 codes: pt_BR -> pt, etc.
+    final translateTo = selectedLang.contains('_') ? selectedLang.split('_').first : selectedLang;
+
+    // Check cache — keyed by messageId+language
+    final cacheKey = '${message.messageId}_$selectedLang';
     if (_translatedMessages.containsKey(cacheKey)) {
-      return message.copyWith(
-        translatedContent: _translatedMessages[cacheKey],
-      );
+      final cached = _translatedMessages[cacheKey]!;
+      if (cached != message.content) {
+        return message.copyWith(translatedContent: cached);
+      }
+      return message;
     }
 
-    final translateTo = _targetLanguage;
+    debugPrint('TRANSLATE: "${message.content.length > 40 ? message.content.substring(0, 40) : message.content}" -> $translateTo');
 
     try {
-      final canTranslate = await _translationService.canTranslate('auto', translateTo);
-      if (!canTranslate) return message;
-
       final translatedText = await _translationService.translate(
         text: message.content,
         sourceLanguage: 'auto',
         targetLanguage: translateTo,
       );
 
-      // Only cache if translation is different from original
+      debugPrint('TRANSLATE RESULT: "${translatedText.length > 40 ? translatedText.substring(0, 40) : translatedText}"');
+
+      // Cache result
+      _translatedMessages[cacheKey] = translatedText;
+
+      // Return with translation if different from original
       if (translatedText != message.content) {
-        _translatedMessages[cacheKey] = translatedText;
-        return message.copyWith(
-          translatedContent: translatedText,
-        );
+        return message.copyWith(translatedContent: translatedText);
       }
-    } catch (_) {
-      // Silently fail - translation is optional
+    } catch (e) {
+      debugPrint('TRANSLATE ERROR: $e');
     }
 
     return message;
