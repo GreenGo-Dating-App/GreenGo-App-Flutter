@@ -91,55 +91,56 @@ class PronunciationService {
     final audioBytes = await _generatePronunciation(phrase, language);
     if (audioBytes == null) return null;
 
-    // 4. Try uploading to Firebase Storage + Firestore cache
-    final storagePath = 'pronunciation_audio/$language/$key.wav';
-    try {
-      final ref = _storage.ref(storagePath);
-      await ref.putData(
-        audioBytes,
-        SettableMetadata(
-          contentType: 'audio/wav',
-          customMetadata: {
-            'phrase': phrase,
-            'language': language,
-          },
-        ),
-      );
-      final downloadUrl = await ref.getDownloadURL();
-
-      // Cache in Firestore (fire and forget if permission denied)
-      _firestore.collection('pronunciation_cache').doc(key).set({
-        'phrase': phrase,
-        'language': language,
-        'audioUrl': downloadUrl,
-        'storagePath': storagePath,
-        'createdAt': FieldValue.serverTimestamp(),
-        'lastAccessed': FieldValue.serverTimestamp(),
-        'accessCount': 1,
-      }).catchError((_) {});
-
-      _memoryCache[key] = downloadUrl;
-      return downloadUrl;
-    } catch (e) {
-      debugPrint('PronunciationService: Firebase upload failed, using local file: $e');
-    }
-
-    // 5. Fallback: save to local temp file and return file URI
+    // 4. Save to local temp file for playback
     try {
       final tempDir = await getTemporaryDirectory();
       final file = File('${tempDir.path}/tts_$key.wav');
       await file.writeAsBytes(audioBytes);
       final fileUri = file.uri.toString();
       _memoryCache[key] = fileUri;
+      debugPrint('PronunciationService: Audio saved locally: ${file.path}');
+
+      // Try Firebase cache in background (non-blocking)
+      _cacheToFirebase(key, phrase, language, audioBytes).catchError((_) {});
+
       return fileUri;
     } catch (e) {
-      debugPrint('PronunciationService: Local file save also failed: $e');
+      debugPrint('PronunciationService: Local file save failed: $e');
       return null;
     }
   }
 
-  /// Generate pronunciation audio using Gemini 2.0 Flash native TTS.
-  /// Produces natural, human-like speech across all supported languages.
+  /// Background upload to Firebase for cross-device caching
+  Future<void> _cacheToFirebase(String key, String phrase, String language, Uint8List audioBytes) async {
+    try {
+      final storagePath = 'pronunciation_audio/$language/$key.wav';
+      final ref = _storage.ref(storagePath);
+      await ref.putData(audioBytes, SettableMetadata(contentType: 'audio/wav'));
+      final downloadUrl = await ref.getDownloadURL();
+      await _firestore.collection('pronunciation_cache').doc(key).set({
+        'phrase': phrase,
+        'language': language,
+        'audioUrl': downloadUrl,
+        'storagePath': storagePath,
+        'createdAt': FieldValue.serverTimestamp(),
+        'accessCount': 1,
+      });
+      // Update memory cache with the Firebase URL for future use
+      _memoryCache[key] = downloadUrl;
+    } catch (e) {
+      debugPrint('PronunciationService: Firebase cache failed (non-blocking): $e');
+    }
+  }
+
+  /// Try multiple Gemini model names for TTS until one works.
+  static const _ttsModels = [
+    'gemini-2.5-flash-preview-tts',
+    'gemini-2.0-flash-live-001',
+    'gemini-2.0-flash',
+  ];
+  String? _workingModel; // Cache the model that works
+
+  /// Generate pronunciation audio using Gemini native TTS.
   Future<Uint8List?> _generatePronunciation(
       String phrase, String language) async {
     final apiKey = await _getApiKey();
@@ -148,24 +149,43 @@ class PronunciationService {
       return null;
     }
 
-    try {
-      return await _synthesizeWithGeminiTts(phrase, language, apiKey);
-    } catch (e) {
-      debugPrint('PronunciationService: Gemini TTS failed: $e');
-      return null;
+    // If we already found a working model, use it directly
+    if (_workingModel != null) {
+      try {
+        final result = await _synthesizeWithGeminiTts(phrase, language, apiKey, _workingModel!);
+        if (result != null) return result;
+      } catch (_) {}
     }
+
+    // Try each model until one works
+    for (final model in _ttsModels) {
+      try {
+        debugPrint('PronunciationService: Trying model $model');
+        final result = await _synthesizeWithGeminiTts(phrase, language, apiKey, model);
+        if (result != null) {
+          _workingModel = model;
+          debugPrint('PronunciationService: Model $model works!');
+          return result;
+        }
+      } catch (e) {
+        debugPrint('PronunciationService: Model $model failed: $e');
+      }
+    }
+
+    debugPrint('PronunciationService: All TTS models failed');
+    return null;
   }
 
-  /// Synthesize speech using Gemini 2.0 Flash native TTS.
+  /// Synthesize speech using Gemini native TTS.
   /// Returns audio wrapped in a proper WAV header so AudioPlayer can decode it.
   Future<Uint8List?> _synthesizeWithGeminiTts(
-      String phrase, String language, String apiKey) async {
+      String phrase, String language, String apiKey, String model) async {
     final languageName = _getLanguageName(language);
     // Pick a voice based on language for best accent
     final voice = _getGeminiVoice(language);
 
     final url = Uri.parse(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=$apiKey');
+        'https://generativelanguage.googleapis.com/v1beta/models/$model:generateContent?key=$apiKey');
 
     final body = jsonEncode({
       'contents': [

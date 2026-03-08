@@ -1,12 +1,11 @@
 import 'dart:ui' as ui;
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/chat_learning_service.dart';
-import '../../../../core/services/pronunciation_service.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Bubble Widget
@@ -62,7 +61,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   bool _isStarred = false;
   bool _isTtsLoading = false;
   bool _isTtsPlaying = false;
-  static final AudioPlayer _ttsPlayer = AudioPlayer();
+  static final FlutterTts _flutterTts = FlutterTts();
 
   // Learning enhancement state
   String? _difficultyLevel;
@@ -208,6 +207,21 @@ class _MessageBubbleState extends State<MessageBubble> {
     );
   }
 
+  /// Map language codes to TTS locale codes
+  static String _ttsLocale(String lang) {
+    final code = lang.toLowerCase().replaceAll('-', '_');
+    const localeMap = {
+      'en': 'en-US',
+      'it': 'it-IT',
+      'es': 'es-ES',
+      'fr': 'fr-FR',
+      'de': 'de-DE',
+      'pt': 'pt-PT',
+      'pt_br': 'pt-BR',
+    };
+    return localeMap[code] ?? 'en-US';
+  }
+
   /// Play TTS for the message text on double-tap
   Future<void> _playTts() async {
     final message = widget.message;
@@ -215,7 +229,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
     // If already playing, stop
     if (_isTtsPlaying) {
-      await _ttsPlayer.stop();
+      await _flutterTts.stop();
       if (mounted) setState(() => _isTtsPlaying = false);
       return;
     }
@@ -224,11 +238,9 @@ class _MessageBubbleState extends State<MessageBubble> {
     final String text;
     final String lang;
     if (widget.ttsReadTranslated && message.translatedContent != null && message.translatedContent!.isNotEmpty) {
-      // Read the translated version in the user's selected language
       text = message.translatedContent!;
       lang = widget.userSelectedLanguage ?? widget.otherUserLanguage ?? 'en';
     } else {
-      // Read the original version
       text = message.content;
       lang = message.detectedLanguage
           ?? message.metadata?['language'] as String?
@@ -237,26 +249,23 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
     if (text.isEmpty) return;
 
-    setState(() => _isTtsLoading = true);
+    setState(() {
+      _isTtsLoading = true;
+      _isTtsPlaying = true;
+    });
 
     try {
-      final url = await PronunciationService().getPronunciationUrl(text, lang);
-      if (url != null && mounted) {
-        setState(() {
-          _isTtsLoading = false;
-          _isTtsPlaying = true;
-        });
+      await _flutterTts.setLanguage(_ttsLocale(lang));
+      await _flutterTts.setSpeechRate(0.45);
+      await _flutterTts.setVolume(1.0);
+      await _flutterTts.setPitch(1.0);
 
-        // Listen once for completion (avoid stacking listeners)
-        _ttsPlayer.onPlayerComplete.first.then((_) {
-          if (mounted) setState(() => _isTtsPlaying = false);
-        });
+      _flutterTts.setCompletionHandler(() {
+        if (mounted) setState(() => _isTtsPlaying = false);
+      });
 
-        await _ttsPlayer.play(UrlSource(url));
-      } else {
-        debugPrint('TTS: No audio URL returned for lang=$lang text="${text.length > 30 ? text.substring(0, 30) : text}"');
-        if (mounted) setState(() => _isTtsLoading = false);
-      }
+      if (mounted) setState(() => _isTtsLoading = false);
+      await _flutterTts.speak(text);
     } catch (e) {
       debugPrint('TTS playback error: $e');
       if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
