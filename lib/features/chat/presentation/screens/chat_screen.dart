@@ -255,12 +255,10 @@ class _ChatScreenState extends State<ChatScreen> {
     // Translation will work automatically on real devices where models may already exist
   }
 
-  /// Get the target language for this chat (other user's language)
+  /// Get the language the current user wants to read the chat in.
+  /// Defaults to the user's own app language.
   String get _targetLanguage {
-    return _chatTargetLanguage
-        ?? (widget.otherUserProfile.languages.isNotEmpty
-            ? widget.otherUserProfile.languages.first
-            : 'en');
+    return _chatTargetLanguage ?? _userLanguage ?? 'en';
   }
 
   /// Translate ALL messages to the selected chat language.
@@ -1911,7 +1909,7 @@ class _ChatScreenState extends State<ChatScreen> {
             const SizedBox(height: 16),
             _buildOptionItem(
               icon: Icons.language,
-              label: 'Chat Language ($_targetLanguage)',
+              label: 'Your Language (${_targetLanguage.toUpperCase()})',
               color: AppColors.richGold,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1968,12 +1966,12 @@ class _ChatScreenState extends State<ChatScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Chat Language',
+              'Your Language',
               style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
             const Text(
-              'Choose the language you want to practice in this chat. TTS and translations will use this language.',
+              'Choose the language you want to read this conversation in. All messages will be translated for you.',
               style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
             ),
             const SizedBox(height: 12),
