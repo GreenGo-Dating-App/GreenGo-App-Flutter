@@ -1807,6 +1807,8 @@
   "gamificationLoadingRankings": "Cargando clasificaciones...",
   "gamificationMedium": "Medio",
   "gamificationMilestones": "Hitos",
+  "gamificationMonthly": "Mes",
+  "gamificationYearly": "Ano",
   "gamificationMyProgress": "Mi progreso",
   "gamificationNoAchievements": "No se encontraron logros",
   "gamificationNoAchievementsInCategory": "No hay logros en esta categoría",

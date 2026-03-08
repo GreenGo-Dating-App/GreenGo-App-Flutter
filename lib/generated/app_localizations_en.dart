@@ -4390,6 +4390,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gamificationMilestones => 'Milestones';
 
   @override
+  String get gamificationMonthly => 'Month';
+
+  @override
+  String get gamificationYearly => 'Year';
+
+  @override
   String get gamificationMyProgress => 'My Progress';
 
   @override

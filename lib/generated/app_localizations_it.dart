@@ -4449,6 +4449,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get gamificationMilestones => 'Traguardi';
 
   @override
+  String get gamificationMonthly => 'Mese';
+
+  @override
+  String get gamificationYearly => 'Anno';
+
+  @override
   String get gamificationMyProgress => 'I miei progressi';
 
   @override

@@ -1,6 +1,7 @@
 /**
  * Leaderboard Screen
  * Point 191: Display global and regional rankings with premium UI
+ * Supports week/month/year time periods and country display in regional view
  */
 
 import 'dart:ui';
@@ -14,6 +15,8 @@ import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
 import '../widgets/level_display_widget.dart';
+
+enum TimePeriod { week, month, year }
 
 class LeaderboardScreen extends StatefulWidget {
   final String userId;
@@ -31,6 +34,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   LeaderboardType _currentType = LeaderboardType.global;
+  TimePeriod _selectedPeriod = TimePeriod.week;
 
   @override
   void initState() {
@@ -50,16 +54,42 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
     super.dispose();
   }
 
+  void _loadLeaderboard() {
+    context.read<GamificationBloc>().add(LoadLeaderboard(
+          userId: widget.userId,
+          type: _currentType,
+        ));
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        elevation: 0,
+        automaticallyImplyLeading: false,
+        title: Text(
+          l10n.gamificationLeaderboard,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: Column(
         children: [
-          // Custom Tab Bar
+          // Time period selector
+          _buildTimePeriodSelector(l10n),
+
+          const SizedBox(height: 8),
+
+          // Global / Regional tab bar
           Container(
-            margin: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+            margin: const EdgeInsets.fromLTRB(16, 0, 16, 8),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.05),
               borderRadius: BorderRadius.circular(16),
@@ -72,11 +102,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                       ? LeaderboardType.global
                       : LeaderboardType.regional;
                 });
-
-                context.read<GamificationBloc>().add(LoadLeaderboard(
-                      userId: widget.userId,
-                      type: _currentType,
-                    ));
+                _loadLeaderboard();
               },
               labelColor: Colors.black,
               unselectedLabelColor: Colors.white70,
@@ -122,113 +148,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
             child: BlocBuilder<GamificationBloc, GamificationState>(
               builder: (context, state) {
                 if (state.leaderboardLoading) {
-                  return Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            gradient: LinearGradient(
-                              colors: [
-                                AppColors.richGold.withOpacity(0.3),
-                                AppColors.richGold.withOpacity(0.1),
-                              ],
-                            ),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(15),
-                            child: CircularProgressIndicator(
-                              color: AppColors.richGold,
-                              strokeWidth: 3,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          l10n.gamificationLoadingRankings,
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.6),
-                            fontSize: 14,
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
+                  return _buildLoadingState(l10n);
                 }
 
                 if (state.leaderboardError != null) {
-                  return Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.red.withOpacity(0.1),
-                          ),
-                          child: const Icon(
-                            Icons.error_outline,
-                            color: Colors.red,
-                            size: 40,
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          state.leaderboardError!,
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.7),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        const SizedBox(height: 24),
-                        ElevatedButton.icon(
-                          onPressed: () {
-                            context.read<GamificationBloc>().add(LoadLeaderboard(
-                                  userId: widget.userId,
-                                  type: _currentType,
-                                ));
-                          },
-                          icon: const Icon(Icons.refresh),
-                          label: const Text('Retry'),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.richGold,
-                            foregroundColor: Colors.black,
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 24,
-                              vertical: 12,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
+                  return _buildErrorState(state, l10n);
                 }
 
                 if (state.leaderboardData == null) {
-                  return Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text('🏆', style: TextStyle(fontSize: 48)),
-                        const SizedBox(height: 16),
-                        Text(
-                          l10n.gamificationNoLeaderboard,
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.7),
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
+                  return _buildEmptyState(l10n);
                 }
 
                 final data = state.leaderboardData!;
@@ -244,7 +172,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                       const SizedBox(height: 24),
 
                       // Top 3 podium
-                      if (data.topTen.length >= 3) _buildTopThreePodium(data.topTen),
+                      if (data.topTen.length >= 3)
+                        _buildTopThreePodium(data.topTen),
 
                       const SizedBox(height: 24),
 
@@ -254,6 +183,169 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                   ),
                 );
               },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTimePeriodSelector(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        children: [
+          _buildPeriodChip(TimePeriod.week, l10n.gamificationWeekly),
+          const SizedBox(width: 8),
+          _buildPeriodChip(TimePeriod.month, l10n.gamificationMonthly),
+          const SizedBox(width: 8),
+          _buildPeriodChip(TimePeriod.year, l10n.gamificationYearly),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPeriodChip(TimePeriod period, String label) {
+    final isSelected = _selectedPeriod == period;
+    return Expanded(
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            _selectedPeriod = period;
+          });
+          _loadLeaderboard();
+        },
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            gradient: isSelected
+                ? const LinearGradient(
+                    colors: [Color(0xFFFFD700), AppColors.richGold],
+                  )
+                : null,
+            color: isSelected ? null : Colors.white.withOpacity(0.05),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isSelected
+                  ? AppColors.richGold.withOpacity(0.6)
+                  : Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          child: Center(
+            child: Text(
+              label,
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: isSelected ? Colors.black : Colors.white70,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLoadingState(AppLocalizations l10n) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: LinearGradient(
+                colors: [
+                  AppColors.richGold.withOpacity(0.3),
+                  AppColors.richGold.withOpacity(0.1),
+                ],
+              ),
+            ),
+            child: const Padding(
+              padding: EdgeInsets.all(15),
+              child: CircularProgressIndicator(
+                color: AppColors.richGold,
+                strokeWidth: 3,
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            l10n.gamificationLoadingRankings,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.6),
+              fontSize: 14,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildErrorState(GamificationState state, AppLocalizations l10n) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: 80,
+            height: 80,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.red.withOpacity(0.1),
+            ),
+            child: const Icon(
+              Icons.error_outline,
+              color: Colors.red,
+              size: 40,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            state.leaderboardError!,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.7),
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton.icon(
+            onPressed: _loadLeaderboard,
+            icon: const Icon(Icons.refresh),
+            label: const Text('Retry'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: Colors.black,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 24,
+                vertical: 12,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildEmptyState(AppLocalizations l10n) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text('🏆', style: TextStyle(fontSize: 48)),
+          const SizedBox(height: 16),
+          Text(
+            l10n.gamificationNoLeaderboard,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.7),
+              fontSize: 16,
             ),
           ),
         ],
@@ -363,7 +455,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: const Text(
-                              '👑 VIP',
+                              'VIP',
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 10,
@@ -431,6 +523,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
     };
     final heights = {1: 140.0, 2: 110.0, 3: 90.0};
     final medals = {1: '🥇', 2: '🥈', 3: '🥉'};
+    final showCountry = _currentType == LeaderboardType.regional;
 
     return Column(
       children: [
@@ -452,9 +545,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
             child: CircleAvatar(
               radius: rank == 1 ? 36 : 28,
               backgroundColor: Colors.black,
-              backgroundImage: entry.photoUrl != null && entry.photoUrl!.isNotEmpty
-                  ? CachedNetworkImageProvider(entry.photoUrl!)
-                  : null,
+              backgroundImage:
+                  entry.photoUrl != null && entry.photoUrl!.isNotEmpty
+                      ? CachedNetworkImageProvider(entry.photoUrl!)
+                      : null,
               child: entry.photoUrl == null || entry.photoUrl!.isEmpty
                   ? Text(
                       entry.username.isNotEmpty
@@ -484,6 +578,33 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
+        // Country for regional
+        if (showCountry && entry.region != null && entry.region!.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  _countryCodeToFlag(entry.region!),
+                  style: const TextStyle(fontSize: 12),
+                ),
+                const SizedBox(width: 3),
+                Flexible(
+                  child: Text(
+                    _countryCodeToName(entry.region!),
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.white.withOpacity(0.6),
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+          ),
         const SizedBox(height: 2),
         Text(
           '${entry.totalXP} XP',
@@ -495,7 +616,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
         const SizedBox(height: 8),
         // Podium
         ClipRRect(
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+          borderRadius:
+              const BorderRadius.vertical(top: Radius.circular(12)),
           child: Container(
             width: double.infinity,
             height: heights[rank],
@@ -552,9 +674,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
 
   Widget _buildLeaderboardList(data) {
     // Skip top 3 as they're shown in podium
-    final List<dynamic> entries = data.entries.length > 3
-        ? data.entries.sublist(3)
-        : <dynamic>[];
+    final List<dynamic> entries =
+        data.entries.length > 3 ? data.entries.sublist(3) : <dynamic>[];
 
     if (entries.isEmpty) {
       return const SizedBox.shrink();
@@ -595,11 +716,16 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
     );
   }
 
-  Widget _buildLeaderboardEntry(entry, int rank, bool isCurrentUser, {bool isLast = false}) {
+  Widget _buildLeaderboardEntry(entry, int rank, bool isCurrentUser,
+      {bool isLast = false}) {
+    final showCountry = _currentType == LeaderboardType.regional;
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
-        color: isCurrentUser ? AppColors.richGold.withOpacity(0.1) : Colors.transparent,
+        color: isCurrentUser
+            ? AppColors.richGold.withOpacity(0.1)
+            : Colors.transparent,
         border: isLast
             ? null
             : Border(
@@ -640,15 +766,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
           // User photo
           CircleAvatar(
             radius: 20,
-            backgroundColor: entry.isVIP
-                ? const Color(0xFFFFD700)
-                : Colors.blue.shade400,
+            backgroundColor:
+                entry.isVIP ? const Color(0xFFFFD700) : Colors.blue.shade400,
             child: CircleAvatar(
               radius: 18,
               backgroundColor: Colors.black,
-              backgroundImage: entry.photoUrl != null && entry.photoUrl!.isNotEmpty
-                  ? CachedNetworkImageProvider(entry.photoUrl!)
-                  : null,
+              backgroundImage:
+                  entry.photoUrl != null && entry.photoUrl!.isNotEmpty
+                      ? CachedNetworkImageProvider(entry.photoUrl!)
+                      : null,
               child: entry.photoUrl == null || entry.photoUrl!.isEmpty
                   ? Text(
                       entry.username.isNotEmpty
@@ -680,7 +806,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
-                          color: isCurrentUser ? AppColors.richGold : Colors.white,
+                          color:
+                              isCurrentUser ? AppColors.richGold : Colors.white,
                         ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
@@ -693,12 +820,38 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
                   ],
                 ),
                 const SizedBox(height: 2),
-                Text(
-                  AppLocalizations.of(context)!.gamificationLevel(entry.level),
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.white.withOpacity(0.5),
-                  ),
+                Row(
+                  children: [
+                    Text(
+                      AppLocalizations.of(context)!
+                          .gamificationLevel(entry.level),
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white.withOpacity(0.5),
+                      ),
+                    ),
+                    if (showCountry &&
+                        entry.region != null &&
+                        entry.region!.isNotEmpty) ...[
+                      const SizedBox(width: 8),
+                      Text(
+                        _countryCodeToFlag(entry.region!),
+                        style: const TextStyle(fontSize: 12),
+                      ),
+                      const SizedBox(width: 3),
+                      Flexible(
+                        child: Text(
+                          _countryCodeToName(entry.region!),
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: Colors.white.withOpacity(0.4),
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ],
             ),
@@ -725,5 +878,97 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
         ],
       ),
     );
+  }
+
+  /// Convert a 2-letter country code to a flag emoji
+  String _countryCodeToFlag(String countryCode) {
+    final code = countryCode.toUpperCase().trim();
+    if (code.length != 2) return '';
+    final first = code.codeUnitAt(0) - 0x41 + 0x1F1E6;
+    final second = code.codeUnitAt(1) - 0x41 + 0x1F1E6;
+    return String.fromCharCodes([first, second]);
+  }
+
+  /// Convert a 2-letter country code to a display name
+  String _countryCodeToName(String countryCode) {
+    const countryNames = {
+      'US': 'United States',
+      'GB': 'United Kingdom',
+      'DE': 'Germany',
+      'FR': 'France',
+      'ES': 'Spain',
+      'IT': 'Italy',
+      'PT': 'Portugal',
+      'BR': 'Brazil',
+      'MX': 'Mexico',
+      'AR': 'Argentina',
+      'CO': 'Colombia',
+      'CL': 'Chile',
+      'PE': 'Peru',
+      'VE': 'Venezuela',
+      'EC': 'Ecuador',
+      'CA': 'Canada',
+      'AU': 'Australia',
+      'NZ': 'New Zealand',
+      'JP': 'Japan',
+      'KR': 'South Korea',
+      'CN': 'China',
+      'IN': 'India',
+      'RU': 'Russia',
+      'ZA': 'South Africa',
+      'NG': 'Nigeria',
+      'EG': 'Egypt',
+      'KE': 'Kenya',
+      'GH': 'Ghana',
+      'AT': 'Austria',
+      'CH': 'Switzerland',
+      'BE': 'Belgium',
+      'NL': 'Netherlands',
+      'SE': 'Sweden',
+      'NO': 'Norway',
+      'DK': 'Denmark',
+      'FI': 'Finland',
+      'PL': 'Poland',
+      'CZ': 'Czech Republic',
+      'IE': 'Ireland',
+      'GR': 'Greece',
+      'TR': 'Turkey',
+      'IL': 'Israel',
+      'AE': 'UAE',
+      'SA': 'Saudi Arabia',
+      'TH': 'Thailand',
+      'PH': 'Philippines',
+      'ID': 'Indonesia',
+      'MY': 'Malaysia',
+      'SG': 'Singapore',
+      'VN': 'Vietnam',
+      'TW': 'Taiwan',
+      'HK': 'Hong Kong',
+      'UY': 'Uruguay',
+      'PY': 'Paraguay',
+      'BO': 'Bolivia',
+      'CR': 'Costa Rica',
+      'PA': 'Panama',
+      'DO': 'Dominican Republic',
+      'GT': 'Guatemala',
+      'HN': 'Honduras',
+      'SV': 'El Salvador',
+      'NI': 'Nicaragua',
+      'CU': 'Cuba',
+      'PR': 'Puerto Rico',
+      'RO': 'Romania',
+      'HU': 'Hungary',
+      'BG': 'Bulgaria',
+      'HR': 'Croatia',
+      'RS': 'Serbia',
+      'SK': 'Slovakia',
+      'SI': 'Slovenia',
+      'UA': 'Ukraine',
+      'LT': 'Lithuania',
+      'LV': 'Latvia',
+      'EE': 'Estonia',
+    };
+    final code = countryCode.toUpperCase().trim();
+    return countryNames[code] ?? code;
   }
 }
