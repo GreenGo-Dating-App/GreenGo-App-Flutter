@@ -1,4 +1,6 @@
 import 'dart:ui' as ui;
+import 'package:audioplayers/audioplayers.dart' hide Source;
+import 'package:audioplayers/audioplayers.dart' as ap show Source, DeviceFileSource;
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:video_player/video_player.dart';
@@ -6,6 +8,7 @@ import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/chat_learning_service.dart';
+import '../../../../core/services/pronunciation_service.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Bubble Widget
@@ -61,6 +64,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   bool _isStarred = false;
   bool _isTtsLoading = false;
   bool _isTtsPlaying = false;
+  static final AudioPlayer _audioPlayer = AudioPlayer();
   static final FlutterTts _flutterTts = FlutterTts();
 
   // Learning enhancement state
@@ -222,13 +226,15 @@ class _MessageBubbleState extends State<MessageBubble> {
     return localeMap[code] ?? 'en-US';
   }
 
-  /// Play TTS for the message text on double-tap
+  /// Play TTS for the message text on double-tap.
+  /// Uses Gemini AI for human-like speech; falls back to device TTS.
   Future<void> _playTts() async {
     final message = widget.message;
     if (message.type != MessageType.text) return;
 
     // If already playing, stop
     if (_isTtsPlaying) {
+      await _audioPlayer.stop();
       await _flutterTts.stop();
       if (mounted) setState(() => _isTtsPlaying = false);
       return;
@@ -249,12 +255,31 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
     if (text.isEmpty) return;
 
-    setState(() {
-      _isTtsLoading = true;
-      _isTtsPlaying = true;
-    });
+    setState(() => _isTtsLoading = true);
 
+    // Try Gemini AI TTS first (human-like voice)
     try {
+      final filePath = await PronunciationService().getPronunciationFilePath(text, lang);
+      if (filePath != null && mounted) {
+        debugPrint('TTS: Playing Gemini audio from $filePath');
+        setState(() { _isTtsLoading = false; _isTtsPlaying = true; });
+
+        _audioPlayer.onPlayerComplete.first.then((_) {
+          if (mounted) setState(() => _isTtsPlaying = false);
+        });
+
+        await _audioPlayer.play(ap.DeviceFileSource(filePath));
+        return;
+      }
+    } catch (e) {
+      debugPrint('TTS: Gemini playback failed: $e');
+    }
+
+    // Fallback to device TTS
+    debugPrint('TTS: Falling back to device TTS');
+    try {
+      if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = true; });
+
       await _flutterTts.setLanguage(_ttsLocale(lang));
       await _flutterTts.setSpeechRate(0.45);
       await _flutterTts.setVolume(1.0);
@@ -264,10 +289,9 @@ class _MessageBubbleState extends State<MessageBubble> {
         if (mounted) setState(() => _isTtsPlaying = false);
       });
 
-      if (mounted) setState(() => _isTtsLoading = false);
       await _flutterTts.speak(text);
     } catch (e) {
-      debugPrint('TTS playback error: $e');
+      debugPrint('TTS: Device TTS also failed: $e');
       if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
     }
   }
