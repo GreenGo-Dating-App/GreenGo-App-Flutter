@@ -214,7 +214,7 @@ class _LoginScreenState extends State<LoginScreen>
                     FadeTransition(
                       opacity: _fadeAnimation,
                       child: const AnimatedLuxuryLogo(
-                        assetPath: 'assets/images/greengo_main_logo_gold.png',
+                        assetPath: 'assets/images/greengo_logo.png',
                         size: 200,
                       ),
                     ),
