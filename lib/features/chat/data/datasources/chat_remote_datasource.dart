@@ -367,6 +367,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         }).toList();
       }
 
+      // Sort by sentAt descending to ensure consistent ordering by server timestamp.
+      // Messages with pending server timestamps (DateTime.now() fallback) appear at top.
+      messages.sort((a, b) => b.sentAt.compareTo(a.sentAt));
+
       return messages;
     });
   }
@@ -402,6 +406,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .collection('messages')
           .doc();
 
+      final localNow = DateTime.now();
       final message = MessageModel(
         messageId: messageRef.id,
         matchId: matchId,
@@ -410,16 +415,19 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         receiverId: receiverId,
         content: content,
         type: type,
-        sentAt: DateTime.now(),
-        deliveredAt: DateTime.now(),
+        sentAt: localNow,
+        deliveredAt: localNow,
         status: MessageStatus.sent,
         metadata: metadata,
       );
 
-      // Save message
-      await messageRef.set(message.toFirestore());
+      // Save message with server timestamp for consistent ordering
+      final messageData = message.toFirestore();
+      messageData['sentAt'] = FieldValue.serverTimestamp();
+      messageData['deliveredAt'] = FieldValue.serverTimestamp();
+      await messageRef.set(messageData);
 
-      // Update conversation with last message
+      // Update conversation with last message using server timestamp
       await firestore
           .collection('conversations')
           .doc(conversation.conversationId)
@@ -430,9 +438,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           'receiverId': message.receiverId,
           'content': message.content,
           'type': message.type.value,
-          'sentAt': Timestamp.fromDate(message.sentAt),
+          'sentAt': FieldValue.serverTimestamp(),
         },
-        'lastMessageAt': Timestamp.fromDate(message.sentAt),
+        'lastMessageAt': FieldValue.serverTimestamp(),
         'unreadCount': FieldValue.increment(1),
       });
 
@@ -451,7 +459,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // Update match with last message info (skip for search and superlike conversations)
       if (!matchId.startsWith('search_') && !matchId.startsWith('superlike_')) {
         await firestore.collection('matches').doc(matchId).update({
-          'lastMessageAt': Timestamp.fromDate(message.sentAt),
+          'lastMessageAt': FieldValue.serverTimestamp(),
           'lastMessage': content,
         });
       }
@@ -601,9 +609,17 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         .orderBy('lastMessageAt', descending: true)
         .snapshots()
         .asyncMap((snapshot) async {
-      final conversations = snapshot.docs
-          .map((doc) => ConversationModel.fromFirestore(doc))
-          .toList();
+      final conversations = <ConversationModel>[];
+      for (final doc in snapshot.docs) {
+        var conv = ConversationModel.fromFirestore(doc);
+        // If user deleted messages for themselves, clear the last message preview
+        final data = doc.data() as Map<String, dynamic>? ?? {};
+        final messagesDeletedFor = data['messagesDeletedFor'] as Map<String, dynamic>?;
+        if (messagesDeletedFor != null && messagesDeletedFor.containsKey(userId)) {
+          conv = ConversationModel.fromEntity(conv.copyWith(clearLastMessage: true));
+        }
+        conversations.add(conv);
+      }
 
       // Filter out deleted and blocked conversations
       final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
@@ -612,7 +628,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         // Filter out conversations deleted for both
         if (conv.isDeleted) return false;
 
-        // Filter out conversations deleted for this user
+        // Filter out conversations deleted for this user (legacy support)
         final deletedFor = conv.deletedFor;
         if (deletedFor != null && deletedFor.containsKey(userId)) return false;
 
@@ -1378,7 +1394,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           },
         );
 
-        await messageRef.set(forwardedMessage.toFirestore());
+        final fwdData = forwardedMessage.toFirestore();
+        fwdData['sentAt'] = FieldValue.serverTimestamp();
+        fwdData['deliveredAt'] = FieldValue.serverTimestamp();
+        await messageRef.set(fwdData);
 
         // Update conversation with last message
         await firestore
@@ -1391,9 +1410,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'receiverId': forwardedMessage.receiverId,
             'content': forwardedMessage.content,
             'type': forwardedMessage.type.value,
-            'sentAt': Timestamp.fromDate(forwardedMessage.sentAt),
+            'sentAt': FieldValue.serverTimestamp(),
           },
-          'lastMessageAt': Timestamp.fromDate(forwardedMessage.sentAt),
+          'lastMessageAt': FieldValue.serverTimestamp(),
           'unreadCount': FieldValue.increment(1),
         });
       }
@@ -1407,43 +1426,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String conversationId,
     required String userId,
   }) async {
-    // CORE: Mark conversation as deleted for this user — this is the only
-    // operation that MUST succeed for the chat to disappear from the list.
-    try {
-      await firestore.collection('conversations').doc(conversationId).update({
-        'deletedFor.$userId': Timestamp.fromDate(DateTime.now()),
-      });
-    } catch (e) {
-      // Handle document-not-found gracefully
-      if (e.toString().contains('NOT_FOUND') || e.toString().contains('not-found')) {
-        debugPrint('Warning: conversation document not found (may already be deleted): $e');
-        return; // Nothing more to clean up
-      }
-      rethrow;
-    }
+    // "Delete for me" clears the conversation content (messages) for this user
+    // but keeps the chat itself visible in the exchanges list.
+    // The conversation document is NOT marked as deleted — only messages are.
 
-    // Everything below is best-effort cleanup. Failures are logged but
-    // do NOT prevent the deletion from succeeding.
-
-    String? otherUserId;
-    String? matchId;
-    try {
-      final conversationDoc = await firestore
-          .collection('conversations')
-          .doc(conversationId)
-          .get();
-      if (conversationDoc.exists) {
-        final data = conversationDoc.data()!;
-        final userId1 = data['userId1'] as String?;
-        final userId2 = data['userId2'] as String?;
-        otherUserId = userId1 == userId ? userId2 : userId1;
-        matchId = data['matchId'] as String?;
-      }
-    } catch (e) {
-      debugPrint('Warning: could not read conversation data: $e');
-    }
-
-    // Best-effort: mark messages as deleted for this user
+    // Mark all messages as deleted for this user
     try {
       final messagesSnapshot = await firestore
           .collection('conversations')
@@ -1465,33 +1452,16 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       debugPrint('Warning: could not mark messages as deleted: $e');
     }
 
-    // Best-effort: deactivate the match for this user
-    if (matchId != null && matchId.isNotEmpty) {
-      try {
-        final matchDoc = await firestore.collection('matches').doc(matchId).get();
-        if (matchDoc.exists) {
-          await firestore.collection('matches').doc(matchId).update({
-            'deactivatedFor.$userId': true,
-          });
-        }
-      } catch (e) {
-        debugPrint('Warning: could not deactivate match: $e');
-      }
-    }
-
-    // Best-effort: delete own swipe records
-    if (otherUserId != null) {
-      try {
-        final mySwipes = await firestore
-            .collection('swipes')
-            .where('userId', isEqualTo: userId)
-            .where('targetUserId', isEqualTo: otherUserId)
-            .get();
-        for (final doc in mySwipes.docs) {
-          await doc.reference.delete();
-        }
-      } catch (e) {
-        debugPrint('Warning: could not delete swipe records: $e');
+    // Clear the last message preview so the chat appears empty for this user
+    try {
+      await firestore.collection('conversations').doc(conversationId).update({
+        'messagesDeletedFor.$userId': Timestamp.fromDate(DateTime.now()),
+      });
+    } catch (e) {
+      if (e.toString().contains('NOT_FOUND') || e.toString().contains('not-found')) {
+        debugPrint('Warning: conversation document not found: $e');
+      } else {
+        debugPrint('Warning: could not update messagesDeletedFor: $e');
       }
     }
   }
@@ -1704,7 +1674,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': userId,
         'content': 'Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: $subject',
         'type': 'system',
-        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });
 
@@ -1795,7 +1765,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': '',
         'content': '$agentName has joined the conversation and will assist you.',
         'type': 'system',
-        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });
     } catch (e) {
@@ -1857,7 +1827,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': '',
         'content': statusMessage,
         'type': 'system',
-        'sentAt': Timestamp.fromDate(DateTime.now()),
+        'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });
     } catch (e) {

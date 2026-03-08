@@ -9,11 +9,13 @@ import 'package:path_provider/path_provider.dart';
 
 /// Service for generating and caching pronunciation audio.
 ///
+/// Uses Google Cloud TTS (Chirp 3 HD) for high-quality neural voices.
+/// Each TTS listen costs 1 coin — coin deduction is handled by the caller.
+///
 /// Strategy: Check Firestore cache first. If the phrase+language combination
-/// already has a cached audio URL, return it. Otherwise, call Gemini AI to
+/// already has a cached audio URL, return it. Otherwise, call Cloud TTS to
 /// generate the audio, upload to Firebase Storage, cache the URL in Firestore,
-/// and return it. This means millions of users asking for the same phrase in
-/// the same language will only trigger ONE API call.
+/// and return it.
 class PronunciationService {
   static final PronunciationService _instance = PronunciationService._();
   factory PronunciationService() => _instance;
@@ -25,30 +27,32 @@ class PronunciationService {
   // In-memory cache to avoid repeated Firestore reads within same session
   final Map<String, String> _memoryCache = {};
 
-  String? _geminiApiKey;
+  String? _cloudTtsApiKey;
 
   /// Load API key from Firestore config (never hardcoded)
   Future<String?> _getApiKey() async {
-    if (_geminiApiKey != null) return _geminiApiKey;
+    if (_cloudTtsApiKey != null) return _cloudTtsApiKey;
     try {
       final doc = await _firestore
           .collection('app_config')
           .doc('api_keys')
           .get();
       if (doc.exists) {
-        _geminiApiKey = doc.data()?['gemini_api_key'] as String?;
+        // Use dedicated cloud_tts_api_key, or fall back to gemini_api_key
+        // (same Google Cloud project key works for both)
+        _cloudTtsApiKey = doc.data()?['cloud_tts_api_key'] as String?
+            ?? doc.data()?['gemini_api_key'] as String?;
       }
     } catch (e) {
       debugPrint('PronunciationService: Failed to load API key: $e');
     }
-    return _geminiApiKey;
+    return _cloudTtsApiKey;
   }
 
   /// Generate a cache key from phrase + language + voice version
   String _cacheKey(String phrase, String language) {
-    // Normalize: lowercase, trim, remove extra spaces
     final normalized = phrase.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
-    return 'v3g_${language.toLowerCase()}_${normalized.hashCode.abs()}';
+    return 'v5c_${language.toLowerCase()}_${normalized.hashCode.abs()}';
   }
 
   // Local file path cache (messageKey -> local file path)
@@ -56,16 +60,17 @@ class PronunciationService {
 
   /// Get pronunciation audio as a local file path for playback.
   ///
-  /// Strategy: memory cache → local file → Firestore/Storage cache → Gemini generate.
+  /// Strategy: local file cache → Firestore/Storage cache → Cloud TTS generate.
   /// Audio is saved to Firebase Storage for cross-device/cross-session reuse.
-  Future<String?> getPronunciationFilePath(String phrase, String language) async {
-    final key = _cacheKey(phrase, language);
+  Future<String?> getPronunciationFilePath(String phrase, String language, {bool isMale = true}) async {
+    final genderSuffix = isMale ? '_m' : '_f';
+    final key = '${_cacheKey(phrase, language)}$genderSuffix';
 
     // 1. Check local file cache
     if (_filePathCache.containsKey(key)) {
       final path = _filePathCache[key]!;
       if (File(path).existsSync()) return path;
-      _filePathCache.remove(key); // File was cleaned up
+      _filePathCache.remove(key);
     }
 
     // 2. Check Firestore cache → download from Storage
@@ -78,7 +83,6 @@ class PronunciationService {
       if (doc.exists) {
         final url = doc.data()?['audioUrl'] as String?;
         if (url != null) {
-          // Download to local file
           final localPath = await _downloadToLocal(key, url);
           if (localPath != null) {
             doc.reference.update({
@@ -93,8 +97,8 @@ class PronunciationService {
       debugPrint('PronunciationService: Firestore cache check failed: $e');
     }
 
-    // 3. Generate via Gemini AI
-    final audioBytes = await _generatePronunciation(phrase, language);
+    // 3. Generate via Google Cloud TTS (Chirp 3 HD)
+    final audioBytes = await _generatePronunciation(phrase, language, isMale: isMale);
     if (audioBytes == null) return null;
 
     // 4. Save locally for immediate playback
@@ -124,7 +128,7 @@ class PronunciationService {
   Future<String?> _saveLocally(String key, Uint8List audioBytes) async {
     try {
       final tempDir = await getTemporaryDirectory();
-      final file = File('${tempDir.path}/tts_$key.wav');
+      final file = File('${tempDir.path}/tts_$key.mp3');
       await file.writeAsBytes(audioBytes);
       _filePathCache[key] = file.path;
       debugPrint('PronunciationService: Saved to ${file.path} (${audioBytes.length} bytes)');
@@ -138,9 +142,9 @@ class PronunciationService {
   /// Upload to Firebase Storage and cache URL in Firestore (background, non-blocking)
   Future<void> _uploadToFirebase(String key, String phrase, String language, Uint8List audioBytes) async {
     try {
-      final storagePath = 'pronunciation_audio/$language/$key.wav';
+      final storagePath = 'pronunciation_audio/$language/$key.mp3';
       final ref = _storage.ref(storagePath);
-      await ref.putData(audioBytes, SettableMetadata(contentType: 'audio/wav'));
+      await ref.putData(audioBytes, SettableMetadata(contentType: 'audio/mpeg'));
       final downloadUrl = await ref.getDownloadURL();
       await _firestore.collection('pronunciation_cache').doc(key).set({
         'phrase': phrase,
@@ -158,88 +162,63 @@ class PronunciationService {
   }
 
   /// Legacy URL-based method (kept for compatibility)
-  Future<String?> getPronunciationUrl(String phrase, String language) async {
-    final filePath = await getPronunciationFilePath(phrase, language);
+  Future<String?> getPronunciationUrl(String phrase, String language, {bool isMale = true}) async {
+    final filePath = await getPronunciationFilePath(phrase, language, isMale: isMale);
     return filePath != null ? 'file://$filePath' : null;
   }
 
-  /// Try multiple Gemini model names for TTS until one works.
-  static const _ttsModels = [
-    'gemini-2.5-flash-preview-tts',
-    'gemini-2.0-flash-live-001',
-    'gemini-2.0-flash',
-  ];
-  String? _workingModel; // Cache the model that works
+  // ===== Google Cloud TTS (Chirp 3 HD) =====
 
-  /// Generate pronunciation audio using Gemini native TTS.
-  Future<Uint8List?> _generatePronunciation(
-      String phrase, String language) async {
-    final apiKey = await _getApiKey();
-    if (apiKey == null || apiKey.isEmpty) {
-      debugPrint('PronunciationService: No API key configured');
-      return null;
+  /// Map language code to Google Cloud TTS language code
+  String _getCloudTtsLanguageCode(String language) {
+    final lower = language.toLowerCase().replaceAll('_', '-');
+    const mapping = {
+      'en': 'en-US',
+      'it': 'it-IT',
+      'es': 'es-ES',
+      'fr': 'fr-FR',
+      'de': 'de-DE',
+      'pt': 'pt-PT',
+      'pt-br': 'pt-BR',
+      'ja': 'ja-JP',
+      'ko': 'ko-KR',
+      'zh': 'cmn-CN',
+      'ar': 'ar-XA',
+      'hi': 'hi-IN',
+      'tr': 'tr-TR',
+      'ru': 'ru-RU',
+    };
+    // If already a full code like en-US, use as-is or map it
+    if (lower.contains('-') && lower.length >= 4) {
+      return mapping[lower] ?? lower;
     }
-
-    // If we already found a working model, use it directly
-    if (_workingModel != null) {
-      try {
-        final result = await _synthesizeWithGeminiTts(phrase, language, apiKey, _workingModel!);
-        if (result != null) return result;
-      } catch (_) {}
-    }
-
-    // Try each model until one works
-    for (final model in _ttsModels) {
-      try {
-        debugPrint('PronunciationService: Trying model $model');
-        final result = await _synthesizeWithGeminiTts(phrase, language, apiKey, model);
-        if (result != null) {
-          _workingModel = model;
-          debugPrint('PronunciationService: Model $model works!');
-          return result;
-        }
-      } catch (e) {
-        debugPrint('PronunciationService: Model $model failed: $e');
-      }
-    }
-
-    debugPrint('PronunciationService: All TTS models failed');
-    return null;
+    return mapping[lower] ?? 'en-US';
   }
 
-  /// Synthesize speech using Gemini native TTS.
-  /// Returns audio wrapped in a proper WAV header so AudioPlayer can decode it.
-  Future<Uint8List?> _synthesizeWithGeminiTts(
-      String phrase, String language, String apiKey, String model) async {
-    final languageName = _getLanguageName(language);
-    // Pick a voice based on language for best accent
-    final voice = _getGeminiVoice(language);
+  /// Get Chirp 3 HD voice name. Male: Orus, Female: Kore.
+  String _getChirp3VoiceName(String languageCode, {bool isMale = true}) {
+    final voiceName = isMale ? 'Orus' : 'Kore';
+    return '$languageCode-Chirp3-HD-$voiceName';
+  }
 
+  /// Synthesize speech using Google Cloud TTS Chirp 3 HD. Returns MP3 bytes.
+  Future<Uint8List?> _synthesizeWithCloudTts(
+      String phrase, String apiKey, String languageCode, String voiceName) async {
     final url = Uri.parse(
-        'https://generativelanguage.googleapis.com/v1beta/models/$model:generateContent?key=$apiKey');
+        'https://texttospeech.googleapis.com/v1/text:synthesize?key=$apiKey');
 
     final body = jsonEncode({
-      'contents': [
-        {
-          'parts': [
-            {
-              'text':
-                  'Say the following phrase clearly and naturally in $languageName, as a native speaker would: "$phrase"',
-            },
-          ],
-        },
-      ],
-      'generationConfig': {
-        'response_modalities': ['AUDIO'],
-        'speech_config': {
-          'voice_config': {
-            'prebuilt_voice_config': {
-              'voice_name': voice,
-            },
-          },
-        },
+      'input': {'text': phrase},
+      'voice': {
+        'languageCode': languageCode,
+        'name': voiceName,
+      },
+      'audioConfig': {
+        'audioEncoding': 'MP3',
       },
     });
+
+    debugPrint('PronunciationService: Cloud TTS - voice=$voiceName, lang=$languageCode');
 
     final response = await http.post(
       url,
@@ -249,151 +228,61 @@ class PronunciationService {
 
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as Map<String, dynamic>;
-      final candidates = json['candidates'] as List<dynamic>?;
-      if (candidates != null && candidates.isNotEmpty) {
-        final content = candidates[0]['content'] as Map<String, dynamic>?;
-        final parts = content?['parts'] as List<dynamic>?;
-        if (parts != null && parts.isNotEmpty) {
-          final inlineData =
-              parts[0]['inlineData'] as Map<String, dynamic>?;
-          if (inlineData != null) {
-            final audioBase64 = inlineData['data'] as String?;
-            final mimeType = inlineData['mimeType'] as String? ?? 'audio/L16;rate=24000';
-            if (audioBase64 != null) {
-              final rawPcm = base64Decode(audioBase64);
-              // Gemini returns raw PCM (linear16). Wrap in WAV header for playback.
-              if (mimeType.contains('L16') || mimeType.contains('pcm') || mimeType.contains('raw')) {
-                // Parse sample rate from mime type (e.g., "audio/L16;rate=24000")
-                int sampleRate = 24000;
-                final rateMatch = RegExp(r'rate=(\d+)').firstMatch(mimeType);
-                if (rateMatch != null) {
-                  sampleRate = int.parse(rateMatch.group(1)!);
-                }
-                return _addWavHeader(rawPcm, sampleRate: sampleRate);
-              }
-              // Already in a playable format (WAV/MP3)
-              return rawPcm;
-            }
-          }
-        }
+      final audioContent = json['audioContent'] as String?;
+      if (audioContent != null && audioContent.isNotEmpty) {
+        debugPrint('PronunciationService: Cloud TTS success (Chirp 3 HD)');
+        return base64Decode(audioContent);
       }
-      debugPrint('PronunciationService: No audio in Gemini response');
+      debugPrint('PronunciationService: Cloud TTS - no audioContent in response');
     } else {
       debugPrint(
-          'PronunciationService: Gemini TTS error ${response.statusCode}: '
-          '${response.body.length > 200 ? response.body.substring(0, 200) : response.body}');
+          'PronunciationService: Cloud TTS error ${response.statusCode}: '
+          '${response.body.length > 300 ? response.body.substring(0, 300) : response.body}');
     }
     return null;
   }
 
-  /// Add a 44-byte WAV header to raw PCM data (mono, 16-bit, given sample rate).
-  Uint8List _addWavHeader(Uint8List pcmData, {int sampleRate = 24000, int channels = 1, int bitsPerSample = 16}) {
-    final byteRate = sampleRate * channels * (bitsPerSample ~/ 8);
-    final blockAlign = channels * (bitsPerSample ~/ 8);
-    final dataSize = pcmData.length;
-    final fileSize = 36 + dataSize;
+  /// Generate pronunciation audio using Google Cloud TTS (Chirp 3 HD).
+  /// Retries up to 3 times.
+  Future<Uint8List?> _generatePronunciation(
+      String phrase, String language, {bool isMale = true}) async {
+    final apiKey = await _getApiKey();
+    if (apiKey == null || apiKey.isEmpty) {
+      debugPrint('PronunciationService: No API key configured');
+      return null;
+    }
 
-    final header = ByteData(44);
-    // RIFF header
-    header.setUint8(0, 0x52); // R
-    header.setUint8(1, 0x49); // I
-    header.setUint8(2, 0x46); // F
-    header.setUint8(3, 0x46); // F
-    header.setUint32(4, fileSize, Endian.little);
-    header.setUint8(8, 0x57);  // W
-    header.setUint8(9, 0x41);  // A
-    header.setUint8(10, 0x56); // V
-    header.setUint8(11, 0x45); // E
-    // fmt chunk
-    header.setUint8(12, 0x66); // f
-    header.setUint8(13, 0x6D); // m
-    header.setUint8(14, 0x74); // t
-    header.setUint8(15, 0x20); // (space)
-    header.setUint32(16, 16, Endian.little); // chunk size
-    header.setUint16(20, 1, Endian.little);  // PCM format
-    header.setUint16(22, channels, Endian.little);
-    header.setUint32(24, sampleRate, Endian.little);
-    header.setUint32(28, byteRate, Endian.little);
-    header.setUint16(32, blockAlign, Endian.little);
-    header.setUint16(34, bitsPerSample, Endian.little);
-    // data chunk
-    header.setUint8(36, 0x64); // d
-    header.setUint8(37, 0x61); // a
-    header.setUint8(38, 0x74); // t
-    header.setUint8(39, 0x61); // a
-    header.setUint32(40, dataSize, Endian.little);
+    final languageCode = _getCloudTtsLanguageCode(language);
+    final voiceName = _getChirp3VoiceName(languageCode, isMale: isMale);
 
-    // Combine header + PCM data
-    final wav = Uint8List(44 + dataSize);
-    wav.setRange(0, 44, header.buffer.asUint8List());
-    wav.setRange(44, 44 + dataSize, pcmData);
-    return wav;
+    for (int attempt = 1; attempt <= 3; attempt++) {
+      try {
+        debugPrint('PronunciationService: Attempt $attempt - Cloud TTS (Chirp 3 HD)');
+        final result = await _synthesizeWithCloudTts(phrase, apiKey, languageCode, voiceName);
+        if (result != null) return result;
+      } catch (e) {
+        debugPrint('PronunciationService: Attempt $attempt failed: $e');
+      }
+
+      if (attempt < 3) {
+        await Future.delayed(Duration(milliseconds: 500 * attempt));
+      }
+    }
+
+    debugPrint('PronunciationService: All TTS attempts failed after 3 retries');
+    return null;
   }
-
-  /// Select a Gemini TTS voice suited for the target language.
-  String _getGeminiVoice(String language) {
-    // Gemini 2.0 Flash TTS voices — pick one that sounds natural per language
-    const voiceMap = {
-      'english': 'Kore',
-      'spanish': 'Kore',
-      'french': 'Kore',
-      'german': 'Kore',
-      'italian': 'Kore',
-      'portuguese': 'Kore',
-      'brazilian portuguese': 'Kore',
-      'japanese': 'Kore',
-      'korean': 'Kore',
-      'chinese': 'Kore',
-      'arabic': 'Charon',
-      'hindi': 'Charon',
-      'turkish': 'Charon',
-      'russian': 'Charon',
-    };
-    // Resolve language code to name first, then look up voice
-    final langName = _getLanguageName(language).toLowerCase();
-    return voiceMap[langName] ?? voiceMap[language.toLowerCase()] ?? 'Kore';
-  }
-
-  /// Get full language name from code or name for the TTS prompt.
-  String _getLanguageName(String language) {
-    final upper = language.toUpperCase().replaceAll('-', '_');
-    const names = {
-      'EN': 'English', 'IT': 'Italian', 'ES': 'Spanish',
-      'FR': 'French', 'DE': 'German', 'PT': 'Portuguese',
-      'PT_BR': 'Brazilian Portuguese',
-      'JA': 'Japanese', 'KO': 'Korean', 'ZH': 'Chinese',
-      'AR': 'Arabic', 'HI': 'Hindi', 'TR': 'Turkish', 'RU': 'Russian',
-    };
-    // Check map first, then return as-is if it looks like a full name
-    return names[upper] ?? (language.length > 5 ? language : language);
-  }
-
-
 
   /// Pre-warm cache for common phrases in a language.
-  /// Call this during app initialization or when user selects a learning language.
   Future<void> prewarmCommonPhrases(String language) async {
     const commonPhrases = [
-      'Hello',
-      'Goodbye',
-      'Thank you',
-      'Please',
-      'Yes',
-      'No',
-      'How are you?',
-      'Nice to meet you',
-      'My name is...',
-      'I don\'t understand',
-      'Can you help me?',
-      'Where is...?',
-      'How much does it cost?',
-      'I love you',
-      'Good morning',
-      'Good night',
+      'Hello', 'Goodbye', 'Thank you', 'Please', 'Yes', 'No',
+      'How are you?', 'Nice to meet you', 'My name is...',
+      'I don\'t understand', 'Can you help me?', 'Where is...?',
+      'How much does it cost?', 'Good morning', 'Good night',
     ];
 
     for (final phrase in commonPhrases) {
-      // Check if already cached before generating
       final key = _cacheKey(phrase, language);
       final doc = await _firestore
           .collection('pronunciation_cache')
@@ -401,7 +290,6 @@ class PronunciationService {
           .get();
       if (!doc.exists) {
         await getPronunciationUrl(phrase, language);
-        // Small delay to avoid rate limiting
         await Future.delayed(const Duration(milliseconds: 500));
       }
     }

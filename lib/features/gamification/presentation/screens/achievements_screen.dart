@@ -94,6 +94,23 @@ class _AchievementsScreenState extends State<AchievementsScreen>
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          l10n.achievementsTitle,
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: BlocConsumer<GamificationBloc, GamificationState>(
         listener: (context, state) {
           // Show unlock dialog
@@ -276,17 +293,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                 children: [
                   _buildStatItem(
                     '🏆',
-                    data.totalAchievements.toString(),
-                    l10n.gamificationTotal,
-                  ),
-                  Container(
-                    width: 1,
-                    height: 40,
-                    color: Colors.white.withOpacity(0.1),
-                  ),
-                  _buildStatItem(
-                    '✨',
-                    data.unlockedCount.toString(),
+                    '${data.unlockedCount}/${data.totalAchievements}',
                     l10n.gamificationUnlocked,
                   ),
                   Container(
@@ -521,7 +528,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                         : null,
                   ),
                   child: Icon(
-                    _getCategoryIcon(achievement.category),
+                    _getAchievementIcon(achievement.achievementId),
                     color: isUnlocked ? Colors.white : Colors.grey,
                     size: 18,
                   ),
@@ -559,7 +566,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                         const Icon(Icons.check, color: Colors.white, size: 10),
                         const SizedBox(width: 2),
                         Text(
-                          AppLocalizations.of(context)!.gamificationDone,
+                          '${achievementWithProgress.currentProgress}/${achievement.requiredCount}',
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 8,
@@ -594,7 +601,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${(progress * 100).toInt()}%',
+                        '${achievementWithProgress.currentProgress}/${achievement.requiredCount}',
                         style: TextStyle(
                           fontSize: 8,
                           color: Colors.white.withOpacity(0.5),
@@ -667,7 +674,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                         : null,
                   ),
                   child: Icon(
-                    _getCategoryIcon(achievement.category),
+                    _getAchievementIcon(achievement.achievementId),
                     color: isUnlocked ? Colors.white : Colors.grey,
                     size: 36,
                   ),
@@ -802,6 +809,64 @@ class _AchievementsScreenState extends State<AchievementsScreen>
         return Icons.flag_rounded;
       case AchievementCategory.special:
         return Icons.star_rounded;
+    }
+  }
+
+  /// Get a unique icon for each achievement
+  static IconData _getAchievementIcon(String achievementId) {
+    switch (achievementId) {
+      case 'first_match':
+        return Icons.handshake;
+      case 'conversation_starter':
+        return Icons.chat_bubble;
+      case 'video_champion':
+        return Icons.videocam;
+      case 'profile_master':
+        return Icons.person_pin;
+      case 'globe_trotter':
+        return Icons.public;
+      case 'generous_heart':
+        return Icons.card_giftcard;
+      case 'daily_dedication':
+        return Icons.calendar_today;
+      case 'super_star':
+        return Icons.star;
+      case 'social_butterfly':
+        return Icons.groups;
+      case 'perfect_week':
+        return Icons.event_available;
+      case 'early_bird':
+        return Icons.wb_sunny;
+      case 'night_owl':
+        return Icons.nightlight_round;
+      case 'centurion':
+        return Icons.military_tech;
+      case 'speed_dater':
+        return Icons.bolt;
+      case 'photo_collector':
+        return Icons.photo_library;
+      case 'trend_setter':
+        return Icons.trending_up;
+      case 'verified':
+        return Icons.verified;
+      case 'premium_member':
+        return Icons.workspace_premium;
+      case 'coin_collector':
+        return Icons.monetization_on;
+      case 'monthly_streak':
+        return Icons.local_fire_department;
+      case 'vocabulary_beginner':
+        return Icons.abc;
+      case 'vocabulary_intermediate':
+        return Icons.spellcheck;
+      case 'vocabulary_advanced':
+        return Icons.menu_book;
+      case 'vocabulary_master':
+        return Icons.auto_stories;
+      case 'rare_word_hunter':
+        return Icons.search;
+      default:
+        return Icons.emoji_events;
     }
   }
 }

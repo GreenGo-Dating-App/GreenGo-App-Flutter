@@ -3395,6 +3395,12 @@ abstract class AppLocalizations {
   /// **'Forward to another chat'**
   String get chatForwardToChat;
 
+  /// No description provided for @chatGrammarSuggestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Grammar Suggestion'**
+  String get chatGrammarSuggestion;
+
   /// No description provided for @chatHoursAgo.
   ///
   /// In en, this message translates to:
@@ -3418,6 +3424,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Just now'**
   String get chatJustNow;
+
+  /// No description provided for @chatLanguagePickerHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the language you want to read this conversation in. All messages will be translated for you.'**
+  String get chatLanguagePickerHint;
+
+  /// No description provided for @chatLanguageSetTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat language set to {language}'**
+  String chatLanguageSetTo(String language);
+
+  /// No description provided for @chatLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages'**
+  String get chatLanguages;
 
   /// No description provided for @chatLearnThis.
   ///
@@ -3539,6 +3563,12 @@ abstract class AppLocalizations {
   /// **'No matching conversations'**
   String get chatNoMatchingConversations;
 
+  /// No description provided for @chatNoMessagesToPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'No messages to practice with yet'**
+  String get chatNoMessagesToPractice;
+
   /// No description provided for @chatNoMessagesYet.
   ///
   /// In en, this message translates to:
@@ -3556,6 +3586,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No Support Tickets'**
   String get chatNoSupportTickets;
+
+  /// No description provided for @chatOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline'**
+  String get chatOffline;
+
+  /// No description provided for @chatOnline.
+  ///
+  /// In en, this message translates to:
+  /// **'Online'**
+  String get chatOnline;
+
+  /// No description provided for @chatOnlineDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Online {days}d ago'**
+  String chatOnlineDaysAgo(int days);
+
+  /// No description provided for @chatOnlineHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Online {hours}h ago'**
+  String chatOnlineHoursAgo(int hours);
+
+  /// No description provided for @chatOnlineJustNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Online just now'**
+  String get chatOnlineJustNow;
+
+  /// No description provided for @chatOnlineMinutesAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Online {minutes}m ago'**
+  String chatOnlineMinutesAgo(int minutes);
 
   /// No description provided for @chatOptions.
   ///
@@ -3622,6 +3688,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Preview Video'**
   String get chatPreviewVideo;
+
+  /// No description provided for @chatPronunciationChallenge.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation Challenge'**
+  String get chatPronunciationChallenge;
+
+  /// No description provided for @chatPronunciationHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to hear, then practice saying each phrase:'**
+  String get chatPronunciationHint;
 
   /// No description provided for @chatRemoveFromStarred.
   ///
@@ -3815,6 +3893,12 @@ abstract class AppLocalizations {
   /// **'Say hi to {name}!'**
   String chatSayHiTo(String name);
 
+  /// No description provided for @chatScrollUpForOlder.
+  ///
+  /// In en, this message translates to:
+  /// **'Scroll up for older messages'**
+  String get chatScrollUpForOlder;
+
   /// No description provided for @chatSearchByNameOrNickname.
   ///
   /// In en, this message translates to:
@@ -3827,11 +3911,23 @@ abstract class AppLocalizations {
   /// **'Search conversations...'**
   String get chatSearchConversationsHint;
 
+  /// No description provided for @chatSelectPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'Select photos to send'**
+  String get chatSelectPhotos;
+
   /// No description provided for @chatSend.
   ///
   /// In en, this message translates to:
   /// **'Send'**
   String get chatSend;
+
+  /// No description provided for @chatSendAnyway.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Anyway'**
+  String get chatSendAnyway;
 
   /// No description provided for @chatSendAttachment.
   ///
@@ -3862,6 +3958,174 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Set your native language in settings first'**
   String get chatSetNativeLanguage;
+
+  /// No description provided for @chatSettingCulturalTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Tips'**
+  String get chatSettingCulturalTips;
+
+  /// No description provided for @chatSettingCulturalTipsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show cultural context for idioms and expressions'**
+  String get chatSettingCulturalTipsDesc;
+
+  /// No description provided for @chatSettingDifficultyBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty Badges'**
+  String get chatSettingDifficultyBadges;
+
+  /// No description provided for @chatSettingDifficultyBadgesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show CEFR level (A1-C2) on messages'**
+  String get chatSettingDifficultyBadgesDesc;
+
+  /// No description provided for @chatSettingGrammarCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Grammar Check'**
+  String get chatSettingGrammarCheck;
+
+  /// No description provided for @chatSettingGrammarCheckDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Check grammar before sending messages'**
+  String get chatSettingGrammarCheckDesc;
+
+  /// No description provided for @chatSettingLanguageFlags.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Flags'**
+  String get chatSettingLanguageFlags;
+
+  /// No description provided for @chatSettingLanguageFlagsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show flag emoji next to translated and original text'**
+  String get chatSettingLanguageFlagsDesc;
+
+  /// No description provided for @chatSettingPhraseOfDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrase of the Day'**
+  String get chatSettingPhraseOfDay;
+
+  /// No description provided for @chatSettingPhraseOfDayDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show a daily phrase to practice'**
+  String get chatSettingPhraseOfDayDesc;
+
+  /// No description provided for @chatSettingPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation (TTS)'**
+  String get chatSettingPronunciation;
+
+  /// No description provided for @chatSettingPronunciationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-tap messages to hear pronunciation'**
+  String get chatSettingPronunciationDesc;
+
+  /// No description provided for @chatSettingShowOriginal.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Original Text'**
+  String get chatSettingShowOriginal;
+
+  /// No description provided for @chatSettingShowOriginalDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Display the original message below translation'**
+  String get chatSettingShowOriginalDesc;
+
+  /// No description provided for @chatSettingSmartReplies.
+  ///
+  /// In en, this message translates to:
+  /// **'Smart Replies'**
+  String get chatSettingSmartReplies;
+
+  /// No description provided for @chatSettingSmartRepliesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggest replies in the target language'**
+  String get chatSettingSmartRepliesDesc;
+
+  /// No description provided for @chatSettingTtsTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'TTS Reads Translation'**
+  String get chatSettingTtsTranslation;
+
+  /// No description provided for @chatSettingTtsTranslationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the translated text instead of original'**
+  String get chatSettingTtsTranslationDesc;
+
+  /// No description provided for @chatSettingWordBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Word Breakdown'**
+  String get chatSettingWordBreakdown;
+
+  /// No description provided for @chatSettingWordBreakdownDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap messages for word-by-word translation'**
+  String get chatSettingWordBreakdownDesc;
+
+  /// No description provided for @chatSettingXpBar.
+  ///
+  /// In en, this message translates to:
+  /// **'XP & Streak Bar'**
+  String get chatSettingXpBar;
+
+  /// No description provided for @chatSettingXpBarDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show session XP and word count progress'**
+  String get chatSettingXpBarDesc;
+
+  /// No description provided for @chatSettingsSaveAllChats.
+  ///
+  /// In en, this message translates to:
+  /// **'Save settings for all chats'**
+  String get chatSettingsSaveAllChats;
+
+  /// No description provided for @chatSettingsSaveThisChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Save settings to this chat'**
+  String get chatSettingsSaveThisChat;
+
+  /// No description provided for @chatSettingsSavedAllChats.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings saved for all chats'**
+  String get chatSettingsSavedAllChats;
+
+  /// No description provided for @chatSettingsSavedThisChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings saved for this chat'**
+  String get chatSettingsSavedThisChat;
+
+  /// No description provided for @chatSettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Customise your learning experience in this chat'**
+  String get chatSettingsSubtitle;
+
+  /// No description provided for @chatSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Settings'**
+  String get chatSettingsTitle;
 
   /// No description provided for @chatSomeone.
   ///
@@ -3916,6 +4180,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Resolved'**
   String get chatStatusResolved;
+
+  /// No description provided for @chatStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Streak: {count}'**
+  String chatStreak(int count);
 
   /// No description provided for @chatSubject.
   ///
@@ -4235,6 +4505,12 @@ abstract class AppLocalizations {
   /// **'Uploading...'**
   String get chatUploading;
 
+  /// No description provided for @chatUseCorrection.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Correction'**
+  String get chatUseCorrection;
+
   /// No description provided for @chatUserBlocked.
   ///
   /// In en, this message translates to:
@@ -4283,6 +4559,12 @@ abstract class AppLocalizations {
   /// **'Chat with {name}'**
   String chatWithName(String name);
 
+  /// No description provided for @chatWords.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} words'**
+  String chatWords(int count);
+
   /// No description provided for @chatYou.
   ///
   /// In en, this message translates to:
@@ -4300,6 +4582,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You shared your private album'**
   String get chatYouSharedAlbum;
+
+  /// No description provided for @chatYourLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Language'**
+  String get chatYourLanguage;
 
   /// No description provided for @checkBackLater.
   ///
@@ -5690,7 +5978,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoveryFilterLiked.
   ///
   /// In en, this message translates to:
-  /// **'Liked'**
+  /// **'Connected'**
   String get discoveryFilterLiked;
 
   /// No description provided for @discoveryFilterMatches.
@@ -5708,13 +5996,13 @@ abstract class AppLocalizations {
   /// No description provided for @discoveryFilterSkipped.
   ///
   /// In en, this message translates to:
-  /// **'Skipped'**
+  /// **'Explored'**
   String get discoveryFilterSkipped;
 
   /// No description provided for @discoveryFilterSuperLiked.
   ///
   /// In en, this message translates to:
-  /// **'Super Liked'**
+  /// **'Priority'**
   String get discoveryFilterSuperLiked;
 
   /// No description provided for @discoveryFilterTravelers.
@@ -7865,12 +8153,6 @@ abstract class AppLocalizations {
   /// **'Month'**
   String get gamificationMonthly;
 
-  /// No description provided for @gamificationYearly.
-  ///
-  /// In en, this message translates to:
-  /// **'Year'**
-  String get gamificationYearly;
-
   /// No description provided for @gamificationMyProgress.
   ///
   /// In en, this message translates to:
@@ -7996,6 +8278,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'XP Available'**
   String get gamificationXpAvailable;
+
+  /// No description provided for @gamificationYearly.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get gamificationYearly;
 
   /// No description provided for @gamificationYourPosition.
   ///
@@ -11964,6 +12252,84 @@ abstract class AppLocalizations {
   /// **'This Week'**
   String get periodWeekly;
 
+  /// No description provided for @personalStatistics.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Statistics'**
+  String get personalStatistics;
+
+  /// No description provided for @personalStatisticsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Charts, goals, and language progress'**
+  String get personalStatisticsSubtitle;
+
+  /// No description provided for @personalStatsActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Activity'**
+  String get personalStatsActivity;
+
+  /// No description provided for @personalStatsChatStats.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Stats'**
+  String get personalStatsChatStats;
+
+  /// No description provided for @personalStatsConversations.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversations'**
+  String get personalStatsConversations;
+
+  /// No description provided for @personalStatsGoalsAchieved.
+  ///
+  /// In en, this message translates to:
+  /// **'Goals Achieved'**
+  String get personalStatsGoalsAchieved;
+
+  /// No description provided for @personalStatsLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get personalStatsLevel;
+
+  /// No description provided for @personalStatsNextLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Level'**
+  String get personalStatsNextLevel;
+
+  /// No description provided for @personalStatsNoActivityYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No activity recorded yet'**
+  String get personalStatsNoActivityYet;
+
+  /// No description provided for @personalStatsNoWordsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'Start chatting to discover new words'**
+  String get personalStatsNoWordsYet;
+
+  /// No description provided for @personalStatsTotalMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages Sent'**
+  String get personalStatsTotalMessages;
+
+  /// No description provided for @personalStatsWordsDiscovered.
+  ///
+  /// In en, this message translates to:
+  /// **'Words Discovered'**
+  String get personalStatsWordsDiscovered;
+
+  /// No description provided for @personalStatsXpOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'XP Overview'**
+  String get personalStatsXpOverview;
+
   /// No description provided for @photoAddPhoto.
   ///
   /// In en, this message translates to:
@@ -13019,6 +13385,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Premium Features'**
   String get profilePremiumFeatures;
+
+  /// No description provided for @profileProgressGrowth.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress & Growth'**
+  String get profileProgressGrowth;
 
   /// No description provided for @profileRestart.
   ///
@@ -16601,6 +16973,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your Turn!'**
   String get yourTurn;
+
+  /// No description provided for @achievementBadges.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Badges'**
+  String get achievementBadges;
+
+  /// No description provided for @achievementBadgesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to select which badges to display on your profile (max 5)'**
+  String get achievementBadgesSubtitle;
+
+  /// No description provided for @noBadgesYet.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock achievements to earn badges!'**
+  String get noBadgesYet;
 }
 
 class _AppLocalizationsDelegate

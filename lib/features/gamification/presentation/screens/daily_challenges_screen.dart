@@ -51,6 +51,23 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          l10n.dailyChallengesTitle,
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: BlocConsumer<GamificationBloc, GamificationState>(
         listener: (context, state) {
           // Show completion notification

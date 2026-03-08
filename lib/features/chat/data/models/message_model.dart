@@ -60,7 +60,9 @@ class MessageModel extends Message {
       receiverId: data['receiverId'] as String? ?? '',
       content: data['content'] as String? ?? '',
       type: MessageTypeExtension.fromString(data['type'] as String),
-      sentAt: (data['sentAt'] as Timestamp).toDate(),
+      sentAt: data['sentAt'] != null
+          ? (data['sentAt'] as Timestamp).toDate()
+          : DateTime.now(),
       deliveredAt: data['deliveredAt'] != null
           ? (data['deliveredAt'] as Timestamp).toDate()
           : null,

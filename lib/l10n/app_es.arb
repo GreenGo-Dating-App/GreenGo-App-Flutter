@@ -1,520 +1,5 @@
 {
   "@@locale": "es",
-  "@admin2faCodeSent": {
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
-  "@admin2faResendIn": {
-    "placeholders": {
-      "seconds": {
-        "type": "String"
-      }
-    }
-  },
-  "@albumRevokedMessage": {
-    "placeholders": {
-      "username": {
-        "type": "String"
-      }
-    }
-  },
-  "@albumSharedMessage": {
-    "placeholders": {
-      "username": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatBlockUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatBlockUserMessage": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatDeleteChatForBothMessage": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatFailedToPickImage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatFailedToPickVideo": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatFailedToReportMessage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatFailedToUploadImage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatFailedToUploadVideo": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatMessageBlockedContains": {
-    "placeholders": {
-      "violations": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatReplyingTo": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatReportUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatSayHiTo": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatSupportAgent": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatSupportDaysAgo": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
-  "@chatSupportFailedToReopen": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatSupportFailedToSend": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatSupportHoursAgo": {
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
-  "@chatSupportMinutesAgo": {
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
-  },
-  "@chatUserBlocked": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatWhyReportUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@chatWithName": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@coinsCost": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
-  "@coinsRequired": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
-  "@daysAgo": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@discoveryError": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "@freeActionsRemaining": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@interestsCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@interestsSelectedCount": {
-    "placeholders": {
-      "selected": {
-        "type": "int"
-      },
-      "max": {
-        "type": "int"
-      }
-    }
-  },
-  "@languageChangedTo": {
-    "placeholders": {
-      "language": {
-        "type": "String"
-      }
-    }
-  },
-  "@levelUpYouReachedLevel": {
-    "placeholders": {
-      "level": {
-        "type": "int"
-      }
-    }
-  },
-  "@matchPercentage": {
-    "placeholders": {
-      "percentage": {
-        "type": "String"
-      }
-    }
-  },
-  "@matchesCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@matchesOfTotal": {
-    "placeholders": {
-      "filtered": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "@maximumInterestsAllowed": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@moreAchievements": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@needCoinsForProfiles": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
-  "@nicknameInfoText": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@noProfileFoundWithNickname": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationAchievementUnlocked": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationCoinsPurchased": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
-  "@notificationNewChat": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationNewLike": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationNewMatch": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationNewMessage": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@notificationSuperLike": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@photosCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@profilesLinkedCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@progressLevel": {
-    "placeholders": {
-      "level": {
-        "type": "int"
-      }
-    }
-  },
-  "@rejectionReason": {
-    "placeholders": {
-      "reason": {
-        "type": "String"
-      }
-    }
-  },
-  "@reviewedBy": {
-    "placeholders": {
-      "admin": {
-        "type": "String"
-      }
-    }
-  },
-  "@seeMoreProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@selectAtLeastInterests": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@sendCoinsConfirm": {
-    "placeholders": {
-      "amount": {
-        "type": "String"
-      },
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
-  "@showingProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "@submittedOn": {
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
-  "@superLikedYou": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@toNextLevel": {
-    "placeholders": {
-      "percent": {
-        "type": "int"
-      },
-      "level": {
-        "type": "int"
-      }
-    }
-  },
-  "@travelerModeActivated": {
-    "placeholders": {
-      "city": {
-        "type": "String"
-      }
-    }
-  },
-  "@unlockMoreProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "cost": {
-        "type": "int"
-      }
-    }
-  },
-  "@voiceRecordIntroDescription": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@waitingAccessDatePremium": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "@waitingDaysRemaining": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
-  "@waitingHoursRemaining": {
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
-  "@waitingMinutesRemaining": {
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
-  },
-  "@waitingSecondsRemaining": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
-  "@youAndMatched": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "@youMatchedWithOnDate": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      },
-      "date": {
-        "type": "String"
-      }
-    }
-  },
   "abandonGame": "Abandonar Partida",
   "about": "Acerca de",
   "aboutMe": "Sobre Mí",
@@ -543,11 +28,25 @@
   "adjustPreferences": "Ajustar Preferencias",
   "admin": "Admin",
   "admin2faCodeSent": "Código enviado a {email}",
+  "@admin2faCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
   "admin2faExpired": "Código expirado. Solicita uno nuevo.",
   "admin2faInvalidCode": "Código de verificación inválido",
   "admin2faMaxAttempts": "Demasiados intentos. Solicita un nuevo código.",
   "admin2faResend": "Reenviar Código",
   "admin2faResendIn": "Reenviar en {seconds}s",
+  "@admin2faResendIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
   "admin2faSending": "Enviando código...",
   "admin2faSignOut": "Cerrar Sesión",
   "admin2faSubtitle": "Ingresa el código de 6 dígitos enviado a tu correo",
@@ -864,7 +363,21 @@
   "albumNotShared": "Álbum no compartido",
   "albumOption": "Álbum",
   "albumRevokedMessage": "{username} revocó el acceso al álbum",
+  "@albumRevokedMessage": {
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
   "albumSharedMessage": "{username} compartió su álbum contigo",
+  "@albumSharedMessage": {
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
   "allCategoriesFilter": "Todas",
   "allDealBreakersAdded": "Todos los filtros eliminatorios han sido añadidos",
   "allLanguagesFilter": "Todos",
@@ -1008,7 +521,21 @@
   "chatAttachVideo": "Video",
   "chatBlock": "Bloquear",
   "chatBlockUser": "Bloquear a {name}",
+  "@chatBlockUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatBlockUserMessage": "¿Estás seguro de que quieres bloquear a {name}? Ya no podrán contactarte.",
+  "@chatBlockUserMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatBlockUserTitle": "Bloquear Usuario",
   "chatCannotBlockAdmin": "No puedes bloquear a un administrador.",
   "chatCannotReportAdmin": "No puedes reportar a un administrador.",
@@ -1027,6 +554,13 @@
   "chatDelete": "Eliminar",
   "chatDeleteChat": "Eliminar Chat",
   "chatDeleteChatForBothMessage": "Esto eliminará todos los mensajes para ti y {name}. Esta acción no se puede deshacer.",
+  "@chatDeleteChatForBothMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatDeleteChatForEveryone": "Eliminar Chat para Todos",
   "chatDeleteChatForMeMessage": "Esto eliminará el chat solo de tu dispositivo. La otra persona seguirá viendo los mensajes.",
   "chatDeleteConversationWith": "¿Eliminar conversación con {name}?",
@@ -1050,23 +584,69 @@
   "chatFailedToLoadImage": "Error al cargar imagen",
   "chatFailedToLoadVideo": "Error al cargar el vídeo",
   "chatFailedToPickImage": "Error al seleccionar imagen: {error}",
+  "@chatFailedToPickImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatFailedToPickVideo": "Error al seleccionar video: {error}",
+  "@chatFailedToPickVideo": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatFailedToReportMessage": "Error al reportar mensaje: {error}",
+  "@chatFailedToReportMessage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatFailedToRevokeAccess": "Error al revocar el acceso",
   "chatFailedToSaveFlashcard": "Error al guardar la tarjeta",
   "chatFailedToShareAlbum": "Error al compartir el álbum",
   "chatFailedToUploadImage": "Error al subir imagen: {error}",
+  "@chatFailedToUploadImage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatFailedToUploadVideo": "Error al subir video: {error}",
+  "@chatFailedToUploadVideo": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatFeatureCulturalTips": "Consejos culturales y contexto",
   "chatFeatureGrammar": "Retroalimentación gramatical en tiempo real",
   "chatFeatureVocabulary": "Ejercicios de vocabulario",
   "chatForward": "Reenviar",
   "chatForwardMessage": "Reenviar Mensaje",
   "chatForwardToChat": "Reenviar a otro chat",
+  "chatGrammarSuggestion": "Sugerencia gramatical",
   "chatHoursAgo": "hace {count}h",
   "chatIcebreakers": "Rompehielos",
   "chatIsTyping": "{userName} está escribiendo",
   "chatJustNow": "Ahora mismo",
+  "chatLanguagePickerHint": "Elige el idioma en el que quieres leer esta conversación. Todos los mensajes serán traducidos para ti.",
+  "chatLanguageSetTo": "Idioma del chat establecido a {language}",
+  "@chatLanguageSetTo": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "chatLanguages": "Idiomas",
   "chatLearnThis": "Aprender Esto",
   "chatListen": "Escuchar",
   "chatLoadingVideo": "Cargando video...",
@@ -1074,6 +654,13 @@
   "chatMediaLimitReached": "Límite de medios alcanzado",
   "chatMessage": "Mensaje",
   "chatMessageBlockedContains": "Mensaje bloqueado: Contiene {violations}. Por tu seguridad, no se permite compartir datos de contacto personales.",
+  "@chatMessageBlockedContains": {
+    "placeholders": {
+      "violations": {
+        "type": "String"
+      }
+    }
+  },
   "chatMessageForwarded": "Mensaje reenviado a {count} conversación(es)",
   "chatMessageOptions": "Opciones de Mensaje",
   "chatMessageOriginal": "Original",
@@ -1087,9 +674,37 @@
   "chatNewTicket": "Nuevo Ticket",
   "chatNoConversationsToForward": "No hay conversaciones para reenviar",
   "chatNoMatchingConversations": "No hay conversaciones coincidentes",
+  "chatNoMessagesToPractice": "Aún no hay mensajes para practicar",
   "chatNoMessagesYet": "No hay mensajes aún",
   "chatNoPrivatePhotos": "No hay fotos privadas disponibles",
   "chatNoSupportTickets": "Sin Tickets de Soporte",
+  "chatOffline": "Desconectado",
+  "chatOnline": "En línea",
+  "chatOnlineDaysAgo": "En línea hace {days}d",
+  "@chatOnlineDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "chatOnlineHoursAgo": "En línea hace {hours}h",
+  "@chatOnlineHoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "chatOnlineJustNow": "En línea ahora",
+  "chatOnlineMinutesAgo": "En línea hace {minutes}min",
+  "@chatOnlineMinutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "chatOptions": "Opciones de Chat",
   "chatOtherRevokedAlbum": "{name} revocó el acceso al álbum",
   "chatOtherSharedAlbum": "{name} compartió su álbum privado",
@@ -1101,10 +716,19 @@
   "chatPracticeTrialStarted": "¡Prueba del modo práctica iniciada! Tienes 3 sesiones gratis.",
   "chatPreviewImage": "Vista previa de Imagen",
   "chatPreviewVideo": "Vista previa de Video",
+  "chatPronunciationChallenge": "Desafío de pronunciación",
+  "chatPronunciationHint": "Toca para escuchar y practica cada frase:",
   "chatRemoveFromStarred": "Quitar de mensajes destacados",
   "chatReply": "Responder",
   "chatReplyToMessage": "Responder a este mensaje",
   "chatReplyingTo": "Respondiendo a {name}",
+  "@chatReplyingTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatReportInappropriate": "Reportar contenido inapropiado",
   "chatReportMessage": "Reportar Mensaje",
   "chatReportReasonFakeProfile": "Perfil falso / Catfishing",
@@ -1116,6 +740,13 @@
   "chatReportReasonThreatening": "Comportamiento amenazante",
   "chatReportReasonUnderage": "Usuario menor de edad",
   "chatReportUser": "Reportar a {name}",
+  "@chatReportUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatReportUserTitle": "Reportar Usuario",
   "chatSafetyGotIt": "Entendido",
   "chatSafetySubtitle": "Tu seguridad es nuestra prioridad. Ten en cuenta estos consejos.",
@@ -1133,14 +764,52 @@
   "chatSafetyTitle": "Chatea de Forma Segura",
   "chatSaving": "Guardando...",
   "chatSayHiTo": "¡Saluda a {name}!",
+  "@chatSayHiTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatScrollUpForOlder": "Desliza hacia arriba para ver mensajes anteriores",
   "chatSearchByNameOrNickname": "Buscar por nombre o @apodo",
   "chatSearchConversationsHint": "Buscar conversaciones...",
+  "chatSelectPhotos": "Seleccionar fotos para enviar",
   "chatSend": "Enviar",
+  "chatSendAnyway": "Enviar de todos modos",
   "chatSendAttachment": "Enviar Adjunto",
   "chatSendCount": "Enviar ({count})",
   "chatSendMessageToStart": "Envía un mensaje para iniciar la conversación",
   "chatSendMessagesForTips": "¡Envía mensajes para obtener consejos de idiomas!",
   "chatSetNativeLanguage": "Primero configura tu idioma nativo en ajustes",
+  "chatSettingCulturalTips": "Consejos culturales",
+  "chatSettingCulturalTipsDesc": "Mostrar contexto cultural de modismos y expresiones",
+  "chatSettingDifficultyBadges": "Insignias de dificultad",
+  "chatSettingDifficultyBadgesDesc": "Mostrar nivel MCER (A1-C2) en mensajes",
+  "chatSettingGrammarCheck": "Revisión gramatical",
+  "chatSettingGrammarCheckDesc": "Revisar gramática antes de enviar mensajes",
+  "chatSettingLanguageFlags": "Banderas de idioma",
+  "chatSettingLanguageFlagsDesc": "Mostrar emoji de bandera junto al texto traducido y original",
+  "chatSettingPhraseOfDay": "Frase del día",
+  "chatSettingPhraseOfDayDesc": "Mostrar una frase diaria para practicar",
+  "chatSettingPronunciation": "Pronunciación (TTS)",
+  "chatSettingPronunciationDesc": "Doble toque para escuchar la pronunciación",
+  "chatSettingShowOriginal": "Mostrar texto original",
+  "chatSettingShowOriginalDesc": "Mostrar el mensaje original debajo de la traducción",
+  "chatSettingSmartReplies": "Respuestas inteligentes",
+  "chatSettingSmartRepliesDesc": "Sugerir respuestas en el idioma objetivo",
+  "chatSettingTtsTranslation": "TTS lee traducción",
+  "chatSettingTtsTranslationDesc": "Leer el texto traducido en lugar del original",
+  "chatSettingWordBreakdown": "Desglose de palabras",
+  "chatSettingWordBreakdownDesc": "Toca mensajes para traducción palabra por palabra",
+  "chatSettingXpBar": "Barra de XP y racha",
+  "chatSettingXpBarDesc": "Mostrar XP de sesión y progreso de palabras",
+  "chatSettingsSaveAllChats": "Guardar para todos los chats",
+  "chatSettingsSaveThisChat": "Guardar para este chat",
+  "chatSettingsSavedAllChats": "Ajustes guardados para todos los chats",
+  "chatSettingsSavedThisChat": "Ajustes guardados para este chat",
+  "chatSettingsSubtitle": "Personaliza tu experiencia de aprendizaje en este chat",
+  "chatSettingsTitle": "Ajustes del chat",
   "chatSomeone": "Alguien",
   "chatStarMessage": "Destacar Mensaje",
   "chatStartSwipingToChat": "¡Desliza y haz match para chatear con personas!",
@@ -1150,23 +819,73 @@
   "chatStatusInProgress": "En Progreso",
   "chatStatusOpen": "Abierto",
   "chatStatusResolved": "Resuelto",
+  "chatStreak": "Racha: {count}",
+  "@chatStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "chatSubject": "Asunto",
   "chatSubjectHint": "Breve descripción de tu problema",
   "chatSupportAddAttachment": "Agregar Adjunto",
   "chatSupportAddCaptionOptional": "Agregar descripción (opcional)...",
   "chatSupportAgent": "Agente: {name}",
+  "@chatSupportAgent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatSupportAgentLabel": "Agente",
   "chatSupportCategory": "Categoría",
   "chatSupportClose": "Cerrar",
   "chatSupportDaysAgo": "hace {days}d",
+  "@chatSupportDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
   "chatSupportErrorLoading": "Error al cargar mensajes",
   "chatSupportFailedToReopen": "Error al reabrir ticket: {error}",
+  "@chatSupportFailedToReopen": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatSupportFailedToSend": "Error al enviar mensaje: {error}",
+  "@chatSupportFailedToSend": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "chatSupportGeneral": "General",
   "chatSupportGeneralSupport": "Soporte General",
   "chatSupportHoursAgo": "hace {hours}h",
+  "@chatSupportHoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
   "chatSupportJustNow": "Ahora mismo",
   "chatSupportMinutesAgo": "hace {minutes}min",
+  "@chatSupportMinutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "chatSupportReopenTicket": "¿Necesitas más ayuda? Toca para reabrir",
   "chatSupportStartMessage": "Envía un mensaje para iniciar la conversación.\nNuestro equipo responderá lo antes posible.",
   "chatSupportStatus": "Estado",
@@ -1203,17 +922,48 @@
   "chatUpgrade": "Mejorar",
   "chatUpgradePracticeMode": "Mejora a Silver VIP o superior para seguir practicando idiomas en tus chats.",
   "chatUploading": "Subiendo...",
+  "chatUseCorrection": "Usar corrección",
   "chatUserBlocked": "{name} ha sido bloqueado",
+  "@chatUserBlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatUserReported": "Usuario reportado. Revisaremos tu reporte en breve.",
   "chatVideo": "Vídeo",
   "chatVideoPlayer": "Reproductor de Video",
   "chatVideoTooLarge": "Video demasiado grande. El tamaño máximo es 50MB.",
   "chatWhyReportMessage": "¿Por qué reportas este mensaje?",
   "chatWhyReportUser": "¿Por qué reportas a {name}?",
+  "@chatWhyReportUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatWithName": "Chatear con {name}",
+  "@chatWithName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWords": "{count} palabras",
+  "@chatWords": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "chatYou": "Tú",
   "chatYouRevokedAlbum": "Revocaste el acceso al álbum",
   "chatYouSharedAlbum": "Compartiste tu álbum privado",
+  "chatYourLanguage": "Tu idioma",
   "checkBackLater": "Vuelve más tarde para ver nuevas personas, o ajusta tus preferencias",
   "chooseCorrectAnswer": "Elige la respuesta correcta",
   "chooseFromGallery": "Elegir de la Galería",
@@ -1233,6 +983,13 @@
   "coinsCancelLabel": "Cancelar",
   "coinsConfirmPurchase": "Confirmar Compra",
   "coinsCost": "{amount} monedas",
+  "@coinsCost": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
   "coinsCreditsOnly": "Solo Créditos",
   "coinsDebitsOnly": "Solo Débitos",
   "coinsEnterReceiverId": "Ingresa el ID del receptor",
@@ -1258,6 +1015,13 @@
   "coinsPurchasedMinutes": "¡{totalMinutes} minutos de video comprados exitosamente!",
   "coinsReceiverIdLabel": "ID del Receptor",
   "coinsRequired": "{amount} monedas requeridas",
+  "@coinsRequired": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
   "coinsRetry": "Reintentar",
   "coinsSelectAmount": "Seleccionar Cantidad",
   "coinsSendCoinsAmount": "Enviar {amount} Monedas",
@@ -1435,6 +1199,13 @@
   "dayStreakLabel": "¡Racha de {days} Días!",
   "days": "Días",
   "daysAgo": "hace {count} días",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "delete": "Eliminar",
   "deleteAccount": "Eliminar Cuenta",
   "deleteAccountConfirmation": "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer y todos tus datos serán eliminados permanentemente.",
@@ -1443,13 +1214,20 @@
   "directMessageCost": "Los mensajes directos cuestan {cost} monedas. Quieres comprar mas monedas?",
   "discover": "Red",
   "discoveryError": "Error: {error}",
+  "@discoveryError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "discoveryFilterAll": "Todos",
   "discoveryFilterGuides": "Guias",
-  "discoveryFilterLiked": "Me gusta",
+  "discoveryFilterLiked": "Conectados",
   "discoveryFilterMatches": "Matches",
   "discoveryFilterPassed": "Rechazados",
-  "discoveryFilterSkipped": "Omitidos",
-  "discoveryFilterSuperLiked": "Super Like",
+  "discoveryFilterSkipped": "Explorados",
+  "discoveryFilterSuperLiked": "Prioritario",
   "discoveryFilterTravelers": "Viajeros",
   "discoveryPreferencesTitle": "Preferencias de Descubrimiento",
   "discoveryPreferencesTooltip": "Preferencias de Descubrimiento",
@@ -1589,6 +1367,13 @@
   "foodDiningCategory": "Comida y Restaurantes",
   "forgotPassword": "¿Olvidaste tu Contraseña?",
   "freeActionsRemaining": "{count} acciones gratuitas restantes hoy",
+  "@freeActionsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "friendship": "Amistad",
   "gameAbandon": "Abandonar",
   "gameAbandonLoseMessage": "Perderás esta partida si te vas ahora.",
@@ -1808,7 +1593,6 @@
   "gamificationMedium": "Medio",
   "gamificationMilestones": "Hitos",
   "gamificationMonthly": "Mes",
-  "gamificationYearly": "Ano",
   "gamificationMyProgress": "Mi progreso",
   "gamificationNoAchievements": "No se encontraron logros",
   "gamificationNoAchievementsInCategory": "No hay logros en esta categoría",
@@ -1830,6 +1614,7 @@
   "gamificationVipMember": "Miembro VIP",
   "gamificationWeekly": "Semanal",
   "gamificationXpAvailable": "XP disponible",
+  "gamificationYearly": "Ano",
   "gamificationYourPosition": "Tu posición",
   "gender": "Género",
   "getStarted": "Comenzar",
@@ -1942,7 +1727,24 @@
   "interestYoga": "Yoga",
   "interests": "Intereses",
   "interestsCount": "{count} intereses",
+  "@interestsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "interestsSelectedCount": "{selected}/{max} intereses seleccionados",
+  "@interestsSelectedCount": {
+    "placeholders": {
+      "selected": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "interestsUpdatedMessage": "Tus intereses han sido guardados",
   "interestsUpdatedTitle": "¡Intereses Actualizados!",
   "invalidWord": "Palabra no válida",
@@ -1954,6 +1756,13 @@
   "langMatchBadge": "Idioma Compatible",
   "language": "Idioma",
   "languageChangedTo": "Idioma cambiado a {language}",
+  "@languageChangedTo": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
   "languagePacksBtn": "Paquetes de Idiomas",
   "languagePacksShopTitle": "Tienda de Paquetes de Idiomas",
   "languagesToDownloadLabel": "Idiomas a descargar:",
@@ -2190,6 +1999,13 @@
   "levelUpTitle": "¡SUBISTE DE NIVEL!",
   "levelUpVIPUnlocked": "¡Estado VIP Desbloqueado!",
   "levelUpYouReachedLevel": "Alcanzaste el Nivel {level}",
+  "@levelUpYouReachedLevel": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "likes": "Me Gusta",
   "limitReachedTitle": "Límite Alcanzado",
   "listenMe": "¡Escúchame!",
@@ -2229,11 +2045,25 @@
   "matchNotifLetsExchange": "INTERCAMBIEMOS!",
   "matchNotifViewProfile": "Ver Perfil",
   "matchPercentage": "{percentage} compatibilidad",
+  "@matchPercentage": {
+    "placeholders": {
+      "percentage": {
+        "type": "String"
+      }
+    }
+  },
   "matchedOnDate": "Match el {date}",
   "matchedWithDate": "Hiciste match con {name} el {date}",
   "matches": "Coincidencias",
   "matchesClearFilters": "Limpiar Filtros",
   "matchesCount": "{count} coincidencias",
+  "@matchesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "matchesFilterAll": "Todos",
   "matchesFilterMessaged": "Con Mensajes",
   "matchesFilterNew": "Nuevos",
@@ -2241,9 +2071,26 @@
   "matchesNoMatchesYet": "Sin matches aun",
   "matchesOfCount": "{filtered} de {total} matches",
   "matchesOfTotal": "{filtered} de {total} coincidencias",
+  "@matchesOfTotal": {
+    "placeholders": {
+      "filtered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "matchesStartSwiping": "Empieza a deslizar para encontrar tus matches!",
   "matchesTryDifferent": "Intenta una busqueda o filtro diferente",
   "maximumInterestsAllowed": "Máximo {count} intereses permitidos",
+  "@maximumInterestsAllowed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "maybeLater": "Quizás Después",
   "membershipActivatedMessage": "Membresía {tierName} activa hasta {formattedDate}{coinsText}",
   "membershipActivatedTitle": "¡Membresía Activada!",
@@ -2305,6 +2152,13 @@
   "messages": "Intercambios",
   "minutes": "Minutos",
   "moreAchievements": "+{count} más logros",
+  "@moreAchievements": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "myBadges": "Mis Insignias",
   "myProgress": "Mi Progreso",
   "myUsage": "Mi Uso",
@@ -2312,6 +2166,13 @@
   "navPlay": "Jugar",
   "nearby": "Cerca",
   "needCoinsForProfiles": "Necesitas {amount} monedas para desbloquear más perfiles.",
+  "@needCoinsForProfiles": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
   "newLabel": "NUEVO",
   "next": "Siguiente",
   "nextLevelXp": "Siguiente nivel en {xp} XP",
@@ -2319,6 +2180,13 @@
   "nicknameAlreadyTaken": "Este apodo ya está en uso",
   "nicknameCheckError": "Error al verificar disponibilidad",
   "nicknameInfoText": "Tu apodo es único y puede usarse para encontrarte. Otros pueden buscarte usando @{nickname}",
+  "@nicknameInfoText": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "nicknameMustBe3To20Chars": "Debe tener 3-20 caracteres",
   "nicknameNoConsecutiveUnderscores": "Sin guiones bajos consecutivos",
   "nicknameNoReservedWords": "No puede contener palabras reservadas",
@@ -2351,6 +2219,13 @@
   "noPhotoSubmitted": "Ninguna foto enviada",
   "noPreviousProfile": "No hay perfil anterior para deshacer",
   "noProfileFoundWithNickname": "No se encontró perfil con @{nickname}",
+  "@noProfileFoundWithNickname": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "noResults": "Sin resultados",
   "noSocialProfilesLinked": "Sin perfiles sociales vinculados",
   "noVoiceRecording": "Sin grabación de voz",
@@ -2362,7 +2237,21 @@
   "notNow": "Ahora No",
   "notSet": "No establecido",
   "notificationAchievementUnlocked": "Logro Desbloqueado: {name}",
+  "@notificationAchievementUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "notificationCoinsPurchased": "Compraste exitosamente {amount} monedas.",
+  "@notificationCoinsPurchased": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
   "notificationDialogEnable": "Activar",
   "notificationDialogMessage": "Activa las notificaciones para saber cuándo recibes matches, mensajes y super likes.",
   "notificationDialogNotNow": "Ahora no",
@@ -2375,13 +2264,41 @@
   "notificationMatchExpiring": "Match por expirar",
   "notificationMatchExpiringSubtitle": "Cuando un match está por expirar",
   "notificationNewChat": "@{nickname} inició una conversación contigo.",
+  "@notificationNewChat": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "notificationNewLike": "Recibiste un me gusta de @{nickname}",
+  "@notificationNewLike": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "notificationNewLikes": "Nuevos likes",
   "notificationNewLikesSubtitle": "Cuando alguien te da like",
   "notificationNewMatch": "¡Es un Match! Hiciste match con @{nickname}. Comienza a chatear ahora.",
+  "@notificationNewMatch": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "notificationNewMatches": "Nuevos matches",
   "notificationNewMatchesSubtitle": "Cuando obtienes un nuevo match",
   "notificationNewMessage": "Nuevo mensaje de @{nickname}",
+  "@notificationNewMessage": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "notificationNewMessages": "Nuevos mensajes",
   "notificationNewMessagesSubtitle": "Cuando alguien te envía un mensaje",
   "notificationProfileViews": "Visitas al perfil",
@@ -2400,6 +2317,13 @@
   "notificationSoundVibration": "Sonido y vibración",
   "notificationStartTime": "Hora de inicio",
   "notificationSuperLike": "Recibiste un super me gusta de @{nickname}",
+  "@notificationSuperLike": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "notificationSuperLikes": "Super Likes",
   "notificationSuperLikesSubtitle": "Cuando alguien te da un Super Like",
   "notificationTypes": "Tipos de notificación",
@@ -2491,6 +2415,19 @@
   "periodAllTime": "Todo el Tiempo",
   "periodMonthly": "Este Mes",
   "periodWeekly": "Esta Semana",
+  "personalStatistics": "Estadísticas personales",
+  "personalStatisticsSubtitle": "Gráficos, metas y progreso de idiomas",
+  "personalStatsActivity": "Actividad reciente",
+  "personalStatsChatStats": "Estadísticas del chat",
+  "personalStatsConversations": "Conversaciones",
+  "personalStatsGoalsAchieved": "Metas alcanzadas",
+  "personalStatsLevel": "Nivel",
+  "personalStatsNextLevel": "Siguiente nivel",
+  "personalStatsNoActivityYet": "Aún no hay actividad registrada",
+  "personalStatsNoWordsYet": "Empieza a chatear para descubrir nuevas palabras",
+  "personalStatsTotalMessages": "Mensajes enviados",
+  "personalStatsWordsDiscovered": "Palabras descubiertas",
+  "personalStatsXpOverview": "Resumen de XP",
   "photoAddPhoto": "Añadir foto",
   "photoAddPrivateDescription": "Añade fotos privadas que puedes compartir en el chat",
   "photoAddPublicDescription": "Añade fotos para completar tu perfil",
@@ -2521,6 +2458,13 @@
   "photoValidating": "Validando foto...",
   "photos": "Fotos",
   "photosCount": "{count}/6 fotos",
+  "@photosCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "photosPublicCount": "Fotos: {count} publicas",
   "photosPublicPrivateCount": "Fotos: {publicCount} publicas + {privateCount} privadas",
   "photosUpdatedMessage": "Tu galería de fotos ha sido guardada",
@@ -2667,6 +2611,7 @@
   "profileOrientationPrivate": "Esto es privado y no se muestra en tu perfil",
   "profilePhotosCount": "{count}/6 fotos",
   "profilePremiumFeatures": "Funciones premium",
+  "profileProgressGrowth": "Progreso y crecimiento",
   "profileRestart": "Reiniciar",
   "profileRestartDiscovery": "Reiniciar descubrimiento",
   "profileRestartDiscoveryDialogContent": "Esto borrará todos tus swipes (likes, nopes, super likes) para que puedas redescubrir a todos desde cero.\n\nTus matches y chats NO se verán afectados.",
@@ -2699,6 +2644,13 @@
   "profileUpdatedTitle": "¡Perfil Actualizado!",
   "profileWeightKg": "Peso (kg)",
   "profilesLinkedCount": "{count} perfil{count, plural, =1{} other{es}} vinculado{count, plural, =1{} other{s}}",
+  "@profilesLinkedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "profilingDescription": "Permitir analizar tus preferencias para proporcionar mejores sugerencias de coincidencia",
   "progress": "Progreso",
   "progressAchievements": "Insignias",
@@ -2710,6 +2662,13 @@
   "progressLabel": "Progreso",
   "progressLeaderboard": "Clasificación",
   "progressLevel": "Nivel {level}",
+  "@progressLevel": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "progressNofM": "{n}/{m}",
   "progressOverview": "Resumen",
   "progressRecentAchievements": "Logros Recientes",
@@ -2733,6 +2692,13 @@
   "register": "Registrarse",
   "rejectVerification": "Rechazar",
   "rejectionReason": "Razón: {reason}",
+  "@rejectionReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
   "rejectionReasonRequired": "Por favor ingresa una razón para el rechazo",
   "remainingToday": "{remaining} {limitType} restantes hoy",
   "reportSubmittedMessage": "Gracias por ayudar a mantener segura nuestra comunidad",
@@ -2767,6 +2733,13 @@
   "reviewReportedMessages": "Revisar mensajes reportados y gestionar cuentas",
   "reviewUserVerifications": "Revisar verificaciones de usuarios",
   "reviewedBy": "Revisado por {admin}",
+  "@reviewedBy": {
+    "placeholders": {
+      "admin": {
+        "type": "String"
+      }
+    }
+  },
   "revokeAccess": "Revocar acceso al álbum",
   "rewardsAndProgress": "Recompensas y Progreso",
   "romanticCategory": "Romántico",
@@ -2840,13 +2813,37 @@
   "seeAll": "Ver todo",
   "seeHowOthersViewProfile": "Ve cómo otros ven tu perfil",
   "seeMoreProfiles": "Ver {count} más",
+  "@seeMoreProfiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "seeMoreProfilesTitle": "Ver Más Perfiles",
   "seeProfile": "Ver Perfil",
   "selectAtLeastInterests": "Selecciona al menos {count} intereses",
+  "@selectAtLeastInterests": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "selectLanguage": "Seleccionar Idioma",
   "selectTravelLocation": "Seleccionar ubicación de viaje",
   "sendCoins": "Enviar monedas",
   "sendCoinsConfirm": "¿Enviar {amount} monedas a @{nickname}?",
+  "@sendCoinsConfirm": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
   "sendMedia": "Enviar Media",
   "sendMessage": "Enviar Mensaje",
   "serverUnavailableMessage": "Nuestros servidores están temporalmente no disponibles. Inténtalo en unos momentos.",
@@ -2930,6 +2927,13 @@
   "shopYouSave": "Ahorras {amount}/mes al mejorar desde {tier}",
   "shortTermRelationship": "Relación a corto plazo",
   "showingProfiles": "{count} perfiles",
+  "@showingProfiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "signIn": "Iniciar Sesión",
   "signOut": "Cerrar Sesión",
   "signUp": "Regístrate",
@@ -3007,6 +3011,13 @@
   "submitAnswer": "Enviar Respuesta",
   "submitVerification": "Enviar para Verificación",
   "submittedOn": "Enviado el {date}",
+  "@submittedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "subscribe": "Suscribirse",
   "subscribeNow": "Suscribirse ahora",
   "subscriptionExpired": "Suscripción expirada",
@@ -3014,6 +3025,13 @@
   "suggestions": "Sugerencias",
   "superLike": "Super Like",
   "superLikedYou": "¡{name} te dio un Super Like!",
+  "@superLikedYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "superLikes": "Super Me Gusta",
   "supportCenter": "Centro de Soporte",
   "supportCenterSubtitle": "Obtener ayuda, reportar problemas, contáctanos",
@@ -3033,6 +3051,16 @@
   "timeRemaining": "Tiempo restante",
   "timeoutError": "Tiempo de espera agotado",
   "toNextLevel": "{percent}% al Nivel {level}",
+  "@toNextLevel": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "level": {
+        "type": "int"
+      }
+    }
+  },
   "today": "hoy",
   "totalXpLabel": "XP Total",
   "tourDiscoveryDescription": "Desliza perfiles para encontrar tu match perfecto. Desliza a la derecha si te interesa, a la izquierda para pasar.",
@@ -3071,6 +3099,13 @@
   "travelerLocationPermissionsPermanentlyDenied": "Permisos de ubicación denegados permanentemente",
   "travelerLocationServicesDisabled": "Los servicios de ubicación están desactivados",
   "travelerModeActivated": "¡Modo viajero activado! Apareciendo en {city} durante 24 horas.",
+  "@travelerModeActivated": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
   "travelerModeActive": "Modo viajero activo",
   "travelerModeDeactivated": "Modo viajero desactivado. De vuelta a tu ubicación real.",
   "travelerModeDescription": "Aparece en el feed de descubrimiento de otra ciudad durante 24 horas",
@@ -3104,6 +3139,16 @@
   "unlimited": "Ilimitado",
   "unlock": "Desbloquear",
   "unlockMoreProfiles": "Desbloquea {count} perfiles más en la cuadrícula por {cost} monedas.",
+  "@unlockMoreProfiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
   "unmatchConfirm": "Estas seguro de que quieres deshacer el match con {name}? Esto no se puede deshacer.",
   "unmatchLabel": "Deshacer Match",
   "unmatchedWith": "Dejaste de ser match con {name}",
@@ -3192,6 +3237,13 @@
   "voiceMicrophonePermissionRequired": "Se requiere permiso del micrófono",
   "voiceRecordAgain": "Grabar de Nuevo",
   "voiceRecordIntroDescription": "Graba una breve presentación de {seconds} segundos para que otros escuchen tu personalidad.",
+  "@voiceRecordIntroDescription": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "voiceRecorded": "Voz grabada",
   "voiceRecordingInProgress": "Grabando... (máx. {maxDuration} segundos)",
   "voiceRecordingReady": "Grabación lista",
@@ -3210,12 +3262,26 @@
   "vsLabel": "VS",
   "waitingAccessDateBasic": "Tu acceso comenzará el 15 de marzo de 2026",
   "waitingAccessDatePremium": "¡Como miembro {tier}, tienes acceso anticipado el 1 de marzo de 2026!",
+  "@waitingAccessDatePremium": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
   "waitingAccessDateTitle": "Tu Fecha de Acceso",
   "waitingCountLabel": "{count} esperando",
   "waitingCountdownLabel": "Cuenta regresiva para el lanzamiento",
   "waitingCountdownSubtitle": "¡Gracias por registrarte! GreenGo Chat se lanzará pronto. Prepárate para una experiencia exclusiva.",
   "waitingCountdownTitle": "Cuenta Regresiva para el Lanzamiento",
   "waitingDaysRemaining": "{days} días",
+  "@waitingDaysRemaining": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
   "waitingEarlyAccessMember": "Miembro de Acceso Anticipado",
   "waitingEnableNotificationsSubtitle": "Activa las notificaciones para ser el primero en saber cuándo puedes acceder a la app.",
   "waitingEnableNotificationsTitle": "Mantente actualizado",
@@ -3223,14 +3289,35 @@
   "waitingForPlayers": "Esperando jugadores...",
   "waitingForVerification": "Esperando verificación...",
   "waitingHoursRemaining": "{hours} horas",
+  "@waitingHoursRemaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
   "waitingMessageApproved": "¡Buenas noticias! Tu cuenta ha sido aprobada. Podrás acceder a GreenGoChat en la fecha indicada a continuación.",
   "waitingMessagePending": "Tu cuenta está pendiente de aprobación por nuestro equipo. Te notificaremos una vez que tu cuenta haya sido revisada.",
   "waitingMessageRejected": "Lamentablemente, tu cuenta no pudo ser aprobada en este momento. Por favor contacta a soporte para más información.",
   "waitingMinutesRemaining": "{minutes} minutos",
+  "@waitingMinutesRemaining": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "waitingNotificationEnabled": "Notificaciones habilitadas - ¡te avisaremos cuando puedas acceder a la app!",
   "waitingProfileUnderReview": "Perfil en revisión",
   "waitingReviewMessage": "¡La app ya está activa! Nuestro equipo está revisando tu perfil para garantizar la mejor experiencia para nuestra comunidad. Esto suele tardar 24-48 horas.",
   "waitingSecondsRemaining": "{seconds} segundos",
+  "@waitingSecondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "waitingStayTuned": "¡Mantente atento! Te notificaremos cuando sea hora de comenzar a conectar.",
   "waitingStepActivation": "Activación de cuenta",
   "waitingStepRegistration": "Registro completado",
@@ -3256,12 +3343,32 @@
   "yes": "Sí",
   "yesterday": "ayer",
   "youAndMatched": "Tú y {name} se gustaron mutuamente",
+  "@youAndMatched": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "youGotSuperLike": "¡Recibiste un Super Like!",
   "youLabel": "TU",
   "youLose": "Perdiste",
   "youMatchedWithOnDate": "Hiciste match con {name} el {date}",
+  "@youMatchedWithOnDate": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "youWin": "¡Ganaste!",
   "yourLanguages": "Tus Idiomas",
   "yourRankLabel": "Tu Rango",
-  "yourTurn": "¡Tu Turno!"
+  "yourTurn": "¡Tu Turno!",
+  "achievementBadges": "Insignias de Logros",
+  "achievementBadgesSubtitle": "Toca para seleccionar qué insignias mostrar en tu perfil (máx. 5)",
+  "noBadgesYet": "¡Desbloquea logros para ganar insignias!"
 }

@@ -23,6 +23,7 @@ class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
       type: params.type,
       region: params.region,
       limit: params.limit,
+      timePeriod: params.timePeriod,
     );
 
     if (leaderboardResult.isLeft()) {
@@ -89,12 +90,14 @@ class GetLeaderboardParams {
   final String? region;
   final int limit;
   final String? userId; // To get user's rank
+  final String? timePeriod; // 'week', 'month', 'year'
 
   GetLeaderboardParams({
     this.type = LeaderboardType.global,
     this.region,
     this.limit = 100,
     this.userId,
+    this.timePeriod,
   });
 }
 

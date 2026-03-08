@@ -92,16 +92,18 @@ class LoadLeaderboard extends GamificationEvent {
   final LeaderboardType type;
   final String? region;
   final int limit;
+  final String? timePeriod; // 'week', 'month', 'year'
 
   const LoadLeaderboard({
     this.userId,
     this.type = LeaderboardType.global,
     this.region,
     this.limit = 20,
+    this.timePeriod,
   });
 
   @override
-  List<Object?> get props => [userId, type, region, limit];
+  List<Object?> get props => [userId, type, region, limit, timePeriod];
 }
 
 class ClaimLevelRewardsEvent extends GamificationEvent {

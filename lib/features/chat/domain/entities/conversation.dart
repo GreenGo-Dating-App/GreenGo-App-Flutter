@@ -291,14 +291,15 @@ class Conversation extends Equatable {
     String? superLikeSenderId,
     bool? isDeleted,
     Map<String, dynamic>? deletedFor,
+    bool clearLastMessage = false,
   }) {
     return Conversation(
       conversationId: conversationId ?? this.conversationId,
       matchId: matchId ?? this.matchId,
       userId1: userId1 ?? this.userId1,
       userId2: userId2 ?? this.userId2,
-      lastMessage: lastMessage ?? this.lastMessage,
-      lastMessageAt: lastMessageAt ?? this.lastMessageAt,
+      lastMessage: clearLastMessage ? null : (lastMessage ?? this.lastMessage),
+      lastMessageAt: clearLastMessage ? null : (lastMessageAt ?? this.lastMessageAt),
       unreadCount: unreadCount ?? this.unreadCount,
       isTyping: isTyping ?? this.isTyping,
       typingUserId: typingUserId ?? this.typingUserId,

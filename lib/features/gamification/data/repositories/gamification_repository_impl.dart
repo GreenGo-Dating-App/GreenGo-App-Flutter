@@ -177,12 +177,14 @@ class GamificationRepositoryImpl implements GamificationRepository {
     LeaderboardType type = LeaderboardType.global,
     String? region,
     int limit = 100,
+    String? timePeriod,
   }) async {
     try {
       final leaderboard = await remoteDataSource.getLeaderboard(
         type: type,
         region: region,
         limit: limit,
+        timePeriod: timePeriod,
       );
       return Right(leaderboard);
     } on ServerException catch (e) {

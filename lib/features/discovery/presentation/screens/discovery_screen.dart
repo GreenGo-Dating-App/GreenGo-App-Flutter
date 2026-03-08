@@ -1119,15 +1119,15 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         children: [
           _buildFilterChip(l10n.discoveryFilterAll, 'all', Icons.grid_view),
           const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterLiked, 'liked', Icons.favorite),
+          _buildFilterChip(l10n.discoveryFilterLiked, 'liked', Icons.connect_without_contact),
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterSuperLiked, 'superLiked', Icons.star),
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterPassed, 'passed', Icons.close),
           const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterSkipped, 'skipped', Icons.arrow_downward),
+          _buildFilterChip(l10n.discoveryFilterSkipped, 'skipped', Icons.explore),
           const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.favorite_border),
+          _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.handshake),
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterTravelers, 'travelers', Icons.flight),
           const SizedBox(width: 6),
@@ -1870,7 +1870,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Match heart icon (top right)
+            // Match badge (top right) — handshake icon instead of heart
             if (widget.actionOverlay == 'matched')
               Positioned(
                 top: 4,
@@ -1878,17 +1878,17 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 child: Container(
                   padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
-                    color: AppColors.errorRed.withOpacity(0.9),
+                    color: AppColors.richGold.withOpacity(0.9),
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: AppColors.errorRed.withOpacity(0.5),
+                        color: AppColors.richGold.withOpacity(0.5),
                         blurRadius: 6,
                         spreadRadius: 1,
                       ),
                     ],
                   ),
-                  child: const Icon(Icons.favorite, color: Colors.white, size: 14),
+                  child: const Icon(Icons.handshake, color: Colors.white, size: 14),
                 ),
               ),
 
@@ -1972,7 +1972,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                     SizedBox(height: widget.gridColumns == 3 ? 2 : 3),
                     Row(
                       children: [
-                        Icon(Icons.favorite, color: AppColors.richGold.withOpacity(0.8), size: widget.gridColumns == 3 ? 10 : 13),
+                        Icon(Icons.connect_without_contact, color: AppColors.richGold.withOpacity(0.8), size: widget.gridColumns == 3 ? 10 : 13),
                         SizedBox(width: widget.gridColumns == 3 ? 2 : 3),
                         Text(
                           widget.card.matchPercentage,
@@ -2184,7 +2184,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               setState(() => _showMenu = false);
                               widget.onAction(widget.card, SwipeActionType.superLike);
                             }),
-                            _buildInCardAction(Icons.favorite, AppColors.successGreen, () {
+                            _buildInCardAction(Icons.connect_without_contact, AppColors.successGreen, () {
                               setState(() => _showMenu = false);
                               widget.onAction(widget.card, SwipeActionType.like);
                             }),
@@ -2259,7 +2259,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                           // Match %
                           Row(
                             children: [
-                              Icon(Icons.favorite, color: AppColors.richGold, size: widget.gridColumns == 3 ? 12 : 15),
+                              Icon(Icons.connect_without_contact, color: AppColors.richGold, size: widget.gridColumns == 3 ? 12 : 15),
                               const SizedBox(width: 4),
                               Text(
                                 '${widget.card.matchPercentage} match',

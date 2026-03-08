@@ -12,6 +12,7 @@ class ConversationCard extends StatelessWidget {
   final Conversation conversation;
   final Profile? otherUserProfile;
   final String currentUserId;
+  final String? chatLanguage; // The language set for this chat (null = user default)
   final VoidCallback? onTap;
   final VoidCallback? onLongPress;
 
@@ -20,15 +21,42 @@ class ConversationCard extends StatelessWidget {
     required this.conversation,
     required this.otherUserProfile,
     required this.currentUserId,
+    this.chatLanguage,
     this.onTap,
     this.onLongPress,
   });
+
+  /// Map language codes to flag emojis
+  static String _flagForLanguage(String? langCode) {
+    if (langCode == null || langCode.isEmpty) return '';
+    final code = langCode.toLowerCase().replaceAll('-', '_');
+    const flags = {
+      'en': '\u{1F1EC}\u{1F1E7}', // 🇬🇧
+      'de': '\u{1F1E9}\u{1F1EA}', // 🇩🇪
+      'es': '\u{1F1EA}\u{1F1F8}', // 🇪🇸
+      'fr': '\u{1F1EB}\u{1F1F7}', // 🇫🇷
+      'it': '\u{1F1EE}\u{1F1F9}', // 🇮🇹
+      'pt': '\u{1F1F5}\u{1F1F9}', // 🇵🇹
+      'pt_br': '\u{1F1E7}\u{1F1F7}', // 🇧🇷
+      'ja': '\u{1F1EF}\u{1F1F5}', // 🇯🇵
+      'ko': '\u{1F1F0}\u{1F1F7}', // 🇰🇷
+      'zh': '\u{1F1E8}\u{1F1F3}', // 🇨🇳
+      'ar': '\u{1F1F8}\u{1F1E6}', // 🇸🇦
+      'hi': '\u{1F1EE}\u{1F1F3}', // 🇮🇳
+      'tr': '\u{1F1F9}\u{1F1F7}', // 🇹🇷
+      'ru': '\u{1F1F7}\u{1F1FA}', // 🇷🇺
+    };
+    return flags[code] ?? '';
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final hasUnread = conversation.hasUnreadMessages;
     final isTyping = conversation.isOtherUserTyping(currentUserId);
+
+    // Build language flags for the other user's spoken languages
+    final userLanguageFlags = _buildUserLanguageFlags();
 
     return InkWell(
       onTap: onTap,
@@ -157,17 +185,30 @@ class ConversationCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Name
-                  Text(
-                    otherUserProfile?.displayName ?? l10n.chatUnknown,
-                    style: TextStyle(
-                      color: AppColors.textPrimary,
-                      fontSize: 16,
-                      fontWeight:
-                          hasUnread ? FontWeight.bold : FontWeight.w500,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                  // Name + user's spoken language flags
+                  Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          otherUserProfile?.displayName ?? l10n.chatUnknown,
+                          style: TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 16,
+                            fontWeight:
+                                hasUnread ? FontWeight.bold : FontWeight.w500,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      if (userLanguageFlags.isNotEmpty) ...[
+                        const SizedBox(width: 6),
+                        Text(
+                          userLanguageFlags,
+                          style: const TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ],
                   ),
 
                   const SizedBox(height: 4),
@@ -213,10 +254,18 @@ class ConversationCard extends StatelessWidget {
               ),
             ),
 
-            // Time
+            // Time + chat language flag
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
+                // Chat language flag (only if different from default)
+                if (chatLanguage != null && chatLanguage!.isNotEmpty) ...[
+                  Text(
+                    _flagForLanguage(chatLanguage),
+                    style: const TextStyle(fontSize: 14),
+                  ),
+                  const SizedBox(height: 2),
+                ],
                 Text(
                   conversation.timeSinceLastMessage,
                   style: TextStyle(
@@ -233,5 +282,26 @@ class ConversationCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  /// Build a string of flag emojis for the other user's spoken languages
+  String _buildUserLanguageFlags() {
+    final profile = otherUserProfile;
+    if (profile == null) return '';
+
+    final flags = <String>[];
+    // Add native language flag first
+    if (profile.nativeLanguage != null && profile.nativeLanguage!.isNotEmpty) {
+      final f = _flagForLanguage(profile.nativeLanguage);
+      if (f.isNotEmpty) flags.add(f);
+    }
+    // Add other spoken languages
+    for (final lang in profile.languages) {
+      final f = _flagForLanguage(lang);
+      if (f.isNotEmpty && !flags.contains(f)) {
+        flags.add(f);
+      }
+    }
+    return flags.join('');
   }
 }
