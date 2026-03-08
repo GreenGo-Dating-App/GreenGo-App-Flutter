@@ -1,9 +1,11 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
+import 'package:path_provider/path_provider.dart';
 
 /// Service for generating and caching pronunciation audio.
 ///
@@ -89,7 +91,7 @@ class PronunciationService {
     final audioBytes = await _generatePronunciation(phrase, language);
     if (audioBytes == null) return null;
 
-    // 4. Upload to Firebase Storage
+    // 4. Try uploading to Firebase Storage + Firestore cache
     final storagePath = 'pronunciation_audio/$language/$key.wav';
     try {
       final ref = _storage.ref(storagePath);
@@ -105,8 +107,8 @@ class PronunciationService {
       );
       final downloadUrl = await ref.getDownloadURL();
 
-      // 5. Cache in Firestore
-      await _firestore.collection('pronunciation_cache').doc(key).set({
+      // Cache in Firestore (fire and forget if permission denied)
+      _firestore.collection('pronunciation_cache').doc(key).set({
         'phrase': phrase,
         'language': language,
         'audioUrl': downloadUrl,
@@ -114,14 +116,24 @@ class PronunciationService {
         'createdAt': FieldValue.serverTimestamp(),
         'lastAccessed': FieldValue.serverTimestamp(),
         'accessCount': 1,
-      });
+      }).catchError((_) {});
 
-      // 6. Cache in memory
       _memoryCache[key] = downloadUrl;
-
       return downloadUrl;
     } catch (e) {
-      debugPrint('PronunciationService: Upload/cache failed: $e');
+      debugPrint('PronunciationService: Firebase upload failed, using local file: $e');
+    }
+
+    // 5. Fallback: save to local temp file and return file URI
+    try {
+      final tempDir = await getTemporaryDirectory();
+      final file = File('${tempDir.path}/tts_$key.wav');
+      await file.writeAsBytes(audioBytes);
+      final fileUri = file.uri.toString();
+      _memoryCache[key] = fileUri;
+      return fileUri;
+    } catch (e) {
+      debugPrint('PronunciationService: Local file save also failed: $e');
       return null;
     }
   }
@@ -153,7 +165,7 @@ class PronunciationService {
     final voice = _getGeminiVoice(language);
 
     final url = Uri.parse(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=$apiKey');
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=$apiKey');
 
     final body = jsonEncode({
       'contents': [
