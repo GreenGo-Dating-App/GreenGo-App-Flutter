@@ -30,28 +30,17 @@ class LeaderboardScreen extends StatefulWidget {
   State<LeaderboardScreen> createState() => _LeaderboardScreenState();
 }
 
-class _LeaderboardScreenState extends State<LeaderboardScreen>
-    with SingleTickerProviderStateMixin {
-  late TabController _tabController;
+class _LeaderboardScreenState extends State<LeaderboardScreen> {
   LeaderboardType _currentType = LeaderboardType.global;
   TimePeriod _selectedPeriod = TimePeriod.week;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
-
-    // Load global leaderboard
     context.read<GamificationBloc>().add(LoadLeaderboard(
           userId: widget.userId,
           type: LeaderboardType.global,
         ));
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
   }
 
   void _loadLeaderboard() {
@@ -82,66 +71,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
       ),
       body: Column(
         children: [
-          // Time period selector
-          _buildTimePeriodSelector(l10n),
+          // Global / Regional toggle
+          _buildTypeToggle(l10n),
 
           const SizedBox(height: 8),
 
-          // Global / Regional tab bar
-          Container(
-            margin: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.05),
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: TabBar(
-              controller: _tabController,
-              onTap: (index) {
-                setState(() {
-                  _currentType = index == 0
-                      ? LeaderboardType.global
-                      : LeaderboardType.regional;
-                });
-                _loadLeaderboard();
-              },
-              labelColor: Colors.black,
-              unselectedLabelColor: Colors.white70,
-              indicator: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFFFFD700), AppColors.richGold],
-                ),
-                borderRadius: BorderRadius.circular(16),
-              ),
-              indicatorSize: TabBarIndicatorSize.tab,
-              dividerColor: Colors.transparent,
-              labelStyle: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
-              tabs: [
-                Tab(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(Icons.public, size: 18),
-                      const SizedBox(width: 8),
-                      Text(l10n.gamificationGlobal),
-                    ],
-                  ),
-                ),
-                Tab(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(Icons.location_on, size: 18),
-                      const SizedBox(width: 8),
-                      Text(l10n.gamificationRegional),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Time period toggle (Week / Month / Year)
+          _buildTimePeriodSelector(l10n),
+
+          const SizedBox(height: 8),
 
           // Leaderboard Content
           Expanded(
@@ -186,6 +124,82 @@ class _LeaderboardScreenState extends State<LeaderboardScreen>
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildTypeToggle(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        children: [
+          _buildToggleItem(
+            label: l10n.gamificationGlobal,
+            icon: Icons.public,
+            isSelected: _currentType == LeaderboardType.global,
+            onTap: () {
+              setState(() => _currentType = LeaderboardType.global);
+              _loadLeaderboard();
+            },
+          ),
+          const SizedBox(width: 8),
+          _buildToggleItem(
+            label: l10n.gamificationRegional,
+            icon: Icons.location_on,
+            isSelected: _currentType == LeaderboardType.regional,
+            onTap: () {
+              setState(() => _currentType = LeaderboardType.regional);
+              _loadLeaderboard();
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildToggleItem({
+    required String label,
+    required IconData icon,
+    required bool isSelected,
+    required VoidCallback onTap,
+  }) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            gradient: isSelected
+                ? const LinearGradient(
+                    colors: [Color(0xFFFFD700), AppColors.richGold],
+                  )
+                : null,
+            color: isSelected ? null : Colors.white.withOpacity(0.05),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isSelected
+                  ? AppColors.richGold.withOpacity(0.6)
+                  : Colors.white.withOpacity(0.1),
+              width: 1,
+            ),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, size: 16, color: isSelected ? Colors.black : Colors.white70),
+              const SizedBox(width: 6),
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                  color: isSelected ? Colors.black : Colors.white70,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
