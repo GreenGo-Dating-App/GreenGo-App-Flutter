@@ -73,10 +73,8 @@ class _ChatScreenState extends State<ChatScreen> {
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
 
-  // Cache for translated messages
+  // Cache for translated messages (all messages translated to selected language)
   final Map<String, String> _translatedMessages = {};
-  // Cache for own messages translated to target language
-  final Map<String, String> _ownTranslatedMessages = {};
   bool _hasCheckedModels = false;
   String? _userLanguage;
   // The language the user wants to practice/use in this chat (can be changed per chat)
@@ -265,8 +263,8 @@ class _ChatScreenState extends State<ChatScreen> {
             : 'en');
   }
 
-  /// Translate a message to the user's language (received) or target language (own)
-  /// Translation is automatic and silent - no error prompts
+  /// Translate ALL messages to the selected chat language.
+  /// The translated text is shown as the main content, with the original below it.
   Future<Message> _translateMessage(Message message) async {
     // Don't translate if translation is disabled
     if (!_translationEnabled) return message;
@@ -274,67 +272,26 @@ class _ChatScreenState extends State<ChatScreen> {
     // Don't translate non-text messages
     if (message.type != MessageType.text) return message;
 
-    final isOwnMessage = message.senderId == widget.currentUserId;
-
-    if (isOwnMessage) {
-      // Translate OWN messages to the target user's language
-      // So user can see how their message looks in the other language
-      if (message.translatedContent != null) return message;
-
-      // Check own-message cache
-      if (_ownTranslatedMessages.containsKey(message.messageId)) {
-        return message.copyWith(
-          translatedContent: _ownTranslatedMessages[message.messageId],
-        );
-      }
-
-      final targetLang = _targetLanguage;
-      try {
-        final canTranslate = await _translationService.canTranslate('auto', targetLang);
-        if (!canTranslate) return message;
-
-        final translatedText = await _translationService.translate(
-          text: message.content,
-          sourceLanguage: 'auto',
-          targetLanguage: targetLang,
-        );
-
-        if (translatedText != message.content) {
-          _ownTranslatedMessages[message.messageId] = translatedText;
-          return message.copyWith(
-            translatedContent: translatedText,
-          );
-        }
-      } catch (_) {
-        // Silently fail
-      }
-      return message;
-    }
-
-    // Translate RECEIVED messages to user's language
+    // Don't translate if already has translation from this language selection
     if (message.translatedContent != null) return message;
 
-    // Check if translation is in cache
+    // Check cache (single unified cache for all messages)
     if (_translatedMessages.containsKey(message.messageId)) {
       return message.copyWith(
         translatedContent: _translatedMessages[message.messageId],
       );
     }
 
-    if (_userLanguage == null) return message;
+    final translateTo = _targetLanguage;
 
-    // Try to detect and translate if the message is in a different language
-    // This is a best-effort approach - if translation fails, just show original
     try {
-      // Check if models are available (won't prompt for download)
-      final canTranslate = await _translationService.canTranslate('auto', _userLanguage!);
+      final canTranslate = await _translationService.canTranslate('auto', translateTo);
       if (!canTranslate) return message;
 
-      // Translate the message (auto-detect source language)
       final translatedText = await _translationService.translate(
         text: message.content,
         sourceLanguage: 'auto',
-        targetLanguage: _userLanguage!,
+        targetLanguage: translateTo,
       );
 
       // Only cache if translation is different from original
@@ -344,9 +301,8 @@ class _ChatScreenState extends State<ChatScreen> {
           translatedContent: translatedText,
         );
       }
-    } catch (e) {
+    } catch (_) {
       // Silently fail - translation is optional
-      // Message will display in original language
     }
 
     return message;
@@ -1916,10 +1872,10 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       actions: [
-        // Tools menu (learning features)
+        // Languages & learning menu
         IconButton(
-          icon: const Icon(Icons.build_outlined, color: AppColors.textSecondary),
-          tooltip: 'Tools',
+          icon: const Icon(Icons.translate, color: AppColors.textSecondary),
+          tooltip: 'Languages',
           onPressed: _showToolsMenu,
         ),
         // Chat options menu (admin: delete, block, report)
@@ -1947,9 +1903,9 @@ class _ChatScreenState extends State<ChatScreen> {
           children: [
             const Row(
               children: [
-                Icon(Icons.build_outlined, color: AppColors.richGold),
+                Icon(Icons.translate, color: AppColors.richGold),
                 SizedBox(width: 8),
-                Text('Tools', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                Text('Languages', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
               ],
             ),
             const SizedBox(height: 16),
@@ -2043,9 +1999,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     onTap: () {
                       setState(() {
                         _chatTargetLanguage = lang['code'];
-                        // Clear translation caches to re-translate with new language
+                        // Clear translation cache to re-translate with new language
                         _translatedMessages.clear();
-                        _ownTranslatedMessages.clear();
                       });
                       Navigator.pop(ctx);
                       ScaffoldMessenger.of(context).showSnackBar(
