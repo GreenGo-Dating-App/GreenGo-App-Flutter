@@ -75,8 +75,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Cache for translated messages
   final Map<String, String> _translatedMessages = {};
+  // Cache for own messages translated to target language
+  final Map<String, String> _ownTranslatedMessages = {};
   bool _hasCheckedModels = false;
   String? _userLanguage;
+  // The language the user wants to practice/use in this chat (can be changed per chat)
+  String? _chatTargetLanguage;
   bool _translationEnabled = false; // Translation toggle state — disabled by default
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
@@ -245,19 +249,61 @@ class _ChatScreenState extends State<ChatScreen> {
     // Translation will work automatically on real devices where models may already exist
   }
 
-  /// Translate a message to the user's language
+  /// Get the target language for this chat (other user's language)
+  String get _targetLanguage {
+    return _chatTargetLanguage
+        ?? (widget.otherUserProfile.languages.isNotEmpty
+            ? widget.otherUserProfile.languages.first
+            : 'en');
+  }
+
+  /// Translate a message to the user's language (received) or target language (own)
   /// Translation is automatic and silent - no error prompts
   Future<Message> _translateMessage(Message message) async {
     // Don't translate if translation is disabled
     if (!_translationEnabled) return message;
 
-    // Don't translate messages from current user
-    if (message.senderId == widget.currentUserId) return message;
-
     // Don't translate non-text messages
     if (message.type != MessageType.text) return message;
 
-    // Don't translate if already translated
+    final isOwnMessage = message.senderId == widget.currentUserId;
+
+    if (isOwnMessage) {
+      // Translate OWN messages to the target user's language
+      // So user can see how their message looks in the other language
+      if (message.translatedContent != null) return message;
+
+      // Check own-message cache
+      if (_ownTranslatedMessages.containsKey(message.messageId)) {
+        return message.copyWith(
+          translatedContent: _ownTranslatedMessages[message.messageId],
+        );
+      }
+
+      final targetLang = _targetLanguage;
+      try {
+        final canTranslate = await _translationService.canTranslate('auto', targetLang);
+        if (!canTranslate) return message;
+
+        final translatedText = await _translationService.translate(
+          text: message.content,
+          sourceLanguage: 'auto',
+          targetLanguage: targetLang,
+        );
+
+        if (translatedText != message.content) {
+          _ownTranslatedMessages[message.messageId] = translatedText;
+          return message.copyWith(
+            translatedContent: translatedText,
+          );
+        }
+      } catch (_) {
+        // Silently fail
+      }
+      return message;
+    }
+
+    // Translate RECEIVED messages to user's language
     if (message.translatedContent != null) return message;
 
     // Check if translation is in cache
@@ -272,10 +318,6 @@ class _ChatScreenState extends State<ChatScreen> {
     // Try to detect and translate if the message is in a different language
     // This is a best-effort approach - if translation fails, just show original
     try {
-      // Use language detection or assume message is in a different language
-      // For now, skip translation on emulators (ML Kit issues)
-      // Translation will work on real devices with Google Play Services
-
       // Check if models are available (won't prompt for download)
       final canTranslate = await _translationService.canTranslate('auto', _userLanguage!);
       if (!canTranslate) return message;
@@ -1863,6 +1905,29 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       actions: [
+        // Language picker for this chat
+        GestureDetector(
+          onTap: _showLanguagePicker,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            decoration: BoxDecoration(
+              color: AppColors.backgroundDark,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: AppColors.divider),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.language, size: 14, color: AppColors.richGold),
+                const SizedBox(width: 2),
+                Text(
+                  _targetLanguage.toUpperCase(),
+                  style: const TextStyle(color: AppColors.richGold, fontSize: 10, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
         // Translation toggle button
         IconButton(
           icon: Icon(
@@ -1875,6 +1940,7 @@ class _ChatScreenState extends State<ChatScreen> {
               _translationEnabled = !_translationEnabled;
               if (!_translationEnabled) {
                 _translatedMessages.clear();
+                _ownTranslatedMessages.clear();
               }
             });
             ScaffoldMessenger.of(context).showSnackBar(
@@ -1903,6 +1969,92 @@ class _ChatScreenState extends State<ChatScreen> {
           onPressed: () => _showChatOptionsMenu(context),
         ),
       ],
+    );
+  }
+
+  /// Show language picker for this chat
+  void _showLanguagePicker() {
+    const languages = [
+      {'code': 'en', 'name': 'English', 'flag': '🇬🇧'},
+      {'code': 'es', 'name': 'Español', 'flag': '🇪🇸'},
+      {'code': 'fr', 'name': 'Français', 'flag': '🇫🇷'},
+      {'code': 'de', 'name': 'Deutsch', 'flag': '🇩🇪'},
+      {'code': 'it', 'name': 'Italiano', 'flag': '🇮🇹'},
+      {'code': 'pt', 'name': 'Português', 'flag': '🇵🇹'},
+      {'code': 'pt_BR', 'name': 'Português (BR)', 'flag': '🇧🇷'},
+      {'code': 'ja', 'name': '日本語', 'flag': '🇯🇵'},
+      {'code': 'ko', 'name': '한국어', 'flag': '🇰🇷'},
+      {'code': 'zh', 'name': '中文', 'flag': '🇨🇳'},
+      {'code': 'ar', 'name': 'العربية', 'flag': '🇸🇦'},
+      {'code': 'hi', 'name': 'हिन्दी', 'flag': '🇮🇳'},
+      {'code': 'ru', 'name': 'Русский', 'flag': '🇷🇺'},
+      {'code': 'tr', 'name': 'Türkçe', 'flag': '🇹🇷'},
+    ];
+
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (ctx) => Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Chat Language',
+              style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 4),
+            const Text(
+              'Choose the language you want to practice in this chat. TTS and translations will use this language.',
+              style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 250,
+              child: ListView.builder(
+                itemCount: languages.length,
+                itemBuilder: (context, index) {
+                  final lang = languages[index];
+                  final isSelected = _targetLanguage == lang['code'];
+                  return ListTile(
+                    leading: Text(lang['flag']!, style: const TextStyle(fontSize: 24)),
+                    title: Text(
+                      lang['name']!,
+                      style: TextStyle(
+                        color: isSelected ? AppColors.richGold : AppColors.textPrimary,
+                        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                      ),
+                    ),
+                    trailing: isSelected
+                        ? const Icon(Icons.check_circle, color: AppColors.richGold)
+                        : null,
+                    onTap: () {
+                      setState(() {
+                        _chatTargetLanguage = lang['code'];
+                        // Clear translation caches to re-translate with new language
+                        _translatedMessages.clear();
+                        _ownTranslatedMessages.clear();
+                      });
+                      Navigator.pop(ctx);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Chat language set to ${lang['name']}'),
+                          duration: const Duration(seconds: 1),
+                          backgroundColor: AppColors.backgroundCard,
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
