@@ -1903,6 +1903,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatForwardToChat => 'Reenviar a otro chat';
 
   @override
+  String get chatGrammarSuggestion => 'Sugerencia gramatical';
+
+  @override
   String chatHoursAgo(int count) {
     return 'hace ${count}h';
   }
@@ -1917,6 +1920,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatJustNow => 'Ahora mismo';
+
+  @override
+  String get chatLanguagePickerHint =>
+      'Elige el idioma en el que quieres leer esta conversación. Todos los mensajes serán traducidos para ti.';
+
+  @override
+  String chatLanguageSetTo(String language) {
+    return 'Idioma del chat establecido a $language';
+  }
+
+  @override
+  String get chatLanguages => 'Idiomas';
 
   @override
   String get chatLearnThis => 'Aprender Esto';
@@ -1989,6 +2004,9 @@ class AppLocalizationsEs extends AppLocalizations {
       'No hay conversaciones coincidentes';
 
   @override
+  String get chatNoMessagesToPractice => 'Aún no hay mensajes para practicar';
+
+  @override
   String get chatNoMessagesYet => 'No hay mensajes aún';
 
   @override
@@ -1996,6 +2014,30 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatNoSupportTickets => 'Sin Tickets de Soporte';
+
+  @override
+  String get chatOffline => 'Desconectado';
+
+  @override
+  String get chatOnline => 'En línea';
+
+  @override
+  String chatOnlineDaysAgo(int days) {
+    return 'En línea hace ${days}d';
+  }
+
+  @override
+  String chatOnlineHoursAgo(int hours) {
+    return 'En línea hace ${hours}h';
+  }
+
+  @override
+  String get chatOnlineJustNow => 'En línea ahora';
+
+  @override
+  String chatOnlineMinutesAgo(int minutes) {
+    return 'En línea hace ${minutes}min';
+  }
 
   @override
   String get chatOptions => 'Opciones de Chat';
@@ -2034,6 +2076,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatPreviewVideo => 'Vista previa de Video';
+
+  @override
+  String get chatPronunciationChallenge => 'Desafío de pronunciación';
+
+  @override
+  String get chatPronunciationHint =>
+      'Toca para escuchar y practica cada frase:';
 
   @override
   String get chatRemoveFromStarred => 'Quitar de mensajes destacados';
@@ -2144,13 +2193,23 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get chatScrollUpForOlder =>
+      'Desliza hacia arriba para ver mensajes anteriores';
+
+  @override
   String get chatSearchByNameOrNickname => 'Buscar por nombre o @apodo';
 
   @override
   String get chatSearchConversationsHint => 'Buscar conversaciones...';
 
   @override
+  String get chatSelectPhotos => 'Seleccionar fotos para enviar';
+
+  @override
   String get chatSend => 'Enviar';
+
+  @override
+  String get chatSendAnyway => 'Enviar de todos modos';
 
   @override
   String get chatSendAttachment => 'Enviar Adjunto';
@@ -2171,6 +2230,103 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get chatSetNativeLanguage =>
       'Primero configura tu idioma nativo en ajustes';
+
+  @override
+  String get chatSettingCulturalTips => 'Consejos culturales';
+
+  @override
+  String get chatSettingCulturalTipsDesc =>
+      'Mostrar contexto cultural de modismos y expresiones';
+
+  @override
+  String get chatSettingDifficultyBadges => 'Insignias de dificultad';
+
+  @override
+  String get chatSettingDifficultyBadgesDesc =>
+      'Mostrar nivel MCER (A1-C2) en mensajes';
+
+  @override
+  String get chatSettingGrammarCheck => 'Revisión gramatical';
+
+  @override
+  String get chatSettingGrammarCheckDesc =>
+      'Revisar gramática antes de enviar mensajes';
+
+  @override
+  String get chatSettingLanguageFlags => 'Banderas de idioma';
+
+  @override
+  String get chatSettingLanguageFlagsDesc =>
+      'Mostrar emoji de bandera junto al texto traducido y original';
+
+  @override
+  String get chatSettingPhraseOfDay => 'Frase del día';
+
+  @override
+  String get chatSettingPhraseOfDayDesc =>
+      'Mostrar una frase diaria para practicar';
+
+  @override
+  String get chatSettingPronunciation => 'Pronunciación (TTS)';
+
+  @override
+  String get chatSettingPronunciationDesc =>
+      'Doble toque para escuchar la pronunciación';
+
+  @override
+  String get chatSettingShowOriginal => 'Mostrar texto original';
+
+  @override
+  String get chatSettingShowOriginalDesc =>
+      'Mostrar el mensaje original debajo de la traducción';
+
+  @override
+  String get chatSettingSmartReplies => 'Respuestas inteligentes';
+
+  @override
+  String get chatSettingSmartRepliesDesc =>
+      'Sugerir respuestas en el idioma objetivo';
+
+  @override
+  String get chatSettingTtsTranslation => 'TTS lee traducción';
+
+  @override
+  String get chatSettingTtsTranslationDesc =>
+      'Leer el texto traducido en lugar del original';
+
+  @override
+  String get chatSettingWordBreakdown => 'Desglose de palabras';
+
+  @override
+  String get chatSettingWordBreakdownDesc =>
+      'Toca mensajes para traducción palabra por palabra';
+
+  @override
+  String get chatSettingXpBar => 'Barra de XP y racha';
+
+  @override
+  String get chatSettingXpBarDesc =>
+      'Mostrar XP de sesión y progreso de palabras';
+
+  @override
+  String get chatSettingsSaveAllChats => 'Guardar para todos los chats';
+
+  @override
+  String get chatSettingsSaveThisChat => 'Guardar para este chat';
+
+  @override
+  String get chatSettingsSavedAllChats =>
+      'Ajustes guardados para todos los chats';
+
+  @override
+  String get chatSettingsSavedThisChat => 'Ajustes guardados para este chat';
+
+  @override
+  String get chatSettingsSubtitle =>
+      'Personaliza tu experiencia de aprendizaje en este chat';
+
+  @override
+  String get chatSettingsTitle => 'Ajustes del chat';
 
   @override
   String get chatSomeone => 'Alguien';
@@ -2199,6 +2355,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatStatusResolved => 'Resuelto';
+
+  @override
+  String chatStreak(int count) {
+    return 'Racha: $count';
+  }
 
   @override
   String get chatSubject => 'Asunto';
@@ -2377,6 +2538,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatUploading => 'Subiendo...';
 
   @override
+  String get chatUseCorrection => 'Usar corrección';
+
+  @override
   String chatUserBlocked(String name) {
     return '$name ha sido bloqueado';
   }
@@ -2409,6 +2573,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String chatWords(int count) {
+    return '$count palabras';
+  }
+
+  @override
   String get chatYou => 'Tú';
 
   @override
@@ -2416,6 +2585,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatYouSharedAlbum => 'Compartiste tu álbum privado';
+
+  @override
+  String get chatYourLanguage => 'Tu idioma';
 
   @override
   String get checkBackLater =>
@@ -3185,7 +3357,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoveryFilterGuides => 'Guias';
 
   @override
-  String get discoveryFilterLiked => 'Me gusta';
+  String get discoveryFilterLiked => 'Conectados';
 
   @override
   String get discoveryFilterMatches => 'Matches';
@@ -3194,10 +3366,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoveryFilterPassed => 'Rechazados';
 
   @override
-  String get discoveryFilterSkipped => 'Omitidos';
+  String get discoveryFilterSkipped => 'Explorados';
 
   @override
-  String get discoveryFilterSuperLiked => 'Super Like';
+  String get discoveryFilterSuperLiked => 'Prioritario';
 
   @override
   String get discoveryFilterTravelers => 'Viajeros';
@@ -4456,9 +4628,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationMonthly => 'Mes';
 
   @override
-  String get gamificationYearly => 'Ano';
-
-  @override
   String get gamificationMyProgress => 'Mi progreso';
 
   @override
@@ -4525,6 +4694,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationXpAvailable => 'XP disponible';
+
+  @override
+  String get gamificationYearly => 'Ano';
 
   @override
   String get gamificationYourPosition => 'Tu posición';
@@ -6716,6 +6888,47 @@ class AppLocalizationsEs extends AppLocalizations {
   String get periodWeekly => 'Esta Semana';
 
   @override
+  String get personalStatistics => 'Estadísticas personales';
+
+  @override
+  String get personalStatisticsSubtitle =>
+      'Gráficos, metas y progreso de idiomas';
+
+  @override
+  String get personalStatsActivity => 'Actividad reciente';
+
+  @override
+  String get personalStatsChatStats => 'Estadísticas del chat';
+
+  @override
+  String get personalStatsConversations => 'Conversaciones';
+
+  @override
+  String get personalStatsGoalsAchieved => 'Metas alcanzadas';
+
+  @override
+  String get personalStatsLevel => 'Nivel';
+
+  @override
+  String get personalStatsNextLevel => 'Siguiente nivel';
+
+  @override
+  String get personalStatsNoActivityYet => 'Aún no hay actividad registrada';
+
+  @override
+  String get personalStatsNoWordsYet =>
+      'Empieza a chatear para descubrir nuevas palabras';
+
+  @override
+  String get personalStatsTotalMessages => 'Mensajes enviados';
+
+  @override
+  String get personalStatsWordsDiscovered => 'Palabras descubiertas';
+
+  @override
+  String get personalStatsXpOverview => 'Resumen de XP';
+
+  @override
   String get photoAddPhoto => 'Añadir foto';
 
   @override
@@ -7330,6 +7543,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profilePremiumFeatures => 'Funciones premium';
+
+  @override
+  String get profileProgressGrowth => 'Progreso y crecimiento';
 
   @override
   String get profileRestart => 'Reiniciar';
@@ -9388,4 +9604,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get yourTurn => '¡Tu Turno!';
+
+  @override
+  String get achievementBadges => 'Insignias de Logros';
+
+  @override
+  String get achievementBadgesSubtitle =>
+      'Toca para seleccionar qué insignias mostrar en tu perfil (máx. 5)';
+
+  @override
+  String get noBadgesYet => '¡Desbloquea logros para ganar insignias!';
 }

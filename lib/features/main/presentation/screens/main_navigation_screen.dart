@@ -49,9 +49,12 @@ import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
+import '../../../coins/data/datasources/coin_remote_datasource.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
 // App Tour imports
 import '../../../app_tour/presentation/widgets/tour_overlay.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/widgets/base_membership_dialog.dart';
 
 /// Main Navigation Screen
 ///
@@ -167,6 +170,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       ..add(LoadCoinBalance(widget.userId))
       ..add(SubscribeToCoinBalance(widget.userId));
 
+    // Grant daily 100 free coins
+    _grantDailyFreeCoins();
+
     // Initialize profile bloc for shared profile state (MUST be before _screens)
     _profileBloc = di.sl<ProfileBloc>()
       ..add(ProfileLoadRequested(userId: widget.userId));
@@ -248,6 +254,53 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       setState(() {
         _isCheckingProfile = false;
       });
+    }
+  }
+
+  bool _membershipCheckDone = false;
+
+  /// Check base membership on app start — show purchase dialog if not active
+  void _checkBaseMembership(Profile profile) {
+    if (_membershipCheckDone) return;
+    _membershipCheckDone = true;
+    if (profile.isBaseMembershipActive) return;
+    // Show membership dialog after a short delay to let the UI settle
+    Future.delayed(const Duration(milliseconds: 500), () {
+      if (mounted) {
+        BaseMembershipDialog.show(context: context, userId: widget.userId);
+      }
+    });
+  }
+
+  /// Grant 100 free coins daily (once per calendar day)
+  Future<void> _grantDailyFreeCoins() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final today = DateTime.now();
+      final todayKey = '${today.year}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
+      final lastGranted = prefs.getString('daily_coins_last_granted_${widget.userId}');
+
+      if (lastGranted == todayKey) return; // Already granted today
+
+      final coinDs = di.sl<CoinRemoteDataSource>();
+      await coinDs.updateBalance(
+        userId: widget.userId,
+        amount: 100,
+        type: CoinTransactionType.credit,
+        reason: CoinTransactionReason.dailyLoginStreakReward,
+        metadata: {'type': 'daily_free_coins', 'date': todayKey},
+      );
+
+      await prefs.setString('daily_coins_last_granted_${widget.userId}', todayKey);
+
+      // Refresh coin balance
+      if (mounted) {
+        _coinBloc.add(LoadCoinBalance(widget.userId));
+      }
+
+      debugPrint('Daily free coins: Granted 100 coins for $todayKey');
+    } catch (e) {
+      debugPrint('Daily free coins: Error: $e');
     }
   }
 
@@ -890,6 +943,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               setState(() {
                 _membershipTier = state.profile.membershipTier;
               });
+              // Check base membership on first profile load
+              _checkBaseMembership(state.profile);
             } else if (state is ProfileUpdated) {
               _lastProcessedTier = state.profile.membershipTier;
               setState(() {
@@ -1012,7 +1067,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           ),
           IconButton(
             icon: Icon(
-              _discoveryKey.currentState?.isGridMode == true
+              (_discoveryKey.currentState?.isGridMode ?? true)
                   ? Icons.swipe
                   : Icons.grid_view,
               color: AppColors.textSecondary,
@@ -1021,7 +1076,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             onPressed: () {
               _discoveryKey.currentState?.toggleGridMode();
             },
-            tooltip: _discoveryKey.currentState?.isGridMode == true
+            tooltip: (_discoveryKey.currentState?.isGridMode ?? true)
                 ? AppLocalizations.of(context)!.discoverySwitchToSwipe
                 : AppLocalizations.of(context)!.discoverySwitchToGrid,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),

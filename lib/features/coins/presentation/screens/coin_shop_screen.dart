@@ -2146,7 +2146,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Future<void> _handleSendCoins() async {
-    final nickname = _nicknameController.text.trim().toLowerCase();
+    final nickname = _nicknameController.text.trim();
     final amountText = _amountController.text.trim();
 
     if (nickname.isEmpty || amountText.isEmpty) {
@@ -2170,14 +2170,24 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     try {
       final firestore = FirebaseFirestore.instance;
 
-      // Find recipient by nickname
-      final recipientQuery = await firestore
+      // Find recipient by nickname — try exact case match first
+      var recipientQuery = await firestore
           .collection('profiles')
           .where('nickname', isEqualTo: nickname)
           .limit(1)
           .get();
 
+      // Fallback: try case-insensitive match via nickname_lowercase field
       if (recipientQuery.docs.isEmpty) {
+        recipientQuery = await firestore
+            .collection('profiles')
+            .where('nickname_lowercase', isEqualTo: nickname.toLowerCase())
+            .limit(1)
+            .get();
+      }
+
+      if (recipientQuery.docs.isEmpty) {
+        debugPrint('SendCoins: no user found for nickname "$nickname"');
         _showError(AppLocalizations.of(context)!.shopUserNotFound);
         setState(() => _isSendingCoins = false);
         return;
@@ -2299,26 +2309,38 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final coinDataSource = di.sl<CoinRemoteDataSource>();
 
       // Debit sender — updates totalCoins, spentCoins, and coinBatches (FIFO)
-      await coinDataSource.updateBalance(
-        userId: widget.userId,
-        amount: amount,
-        type: CoinTransactionType.debit,
-        reason: CoinTransactionReason.giftSent,
-        relatedUserId: recipientId,
-        metadata: {
-          'recipientNickname': nickname,
-          'recipientName': recipientName,
-        },
-      );
+      try {
+        await coinDataSource.updateBalance(
+          userId: widget.userId,
+          amount: amount,
+          type: CoinTransactionType.debit,
+          reason: CoinTransactionReason.giftSent,
+          relatedUserId: recipientId,
+          metadata: {
+            'recipientNickname': nickname,
+            'recipientName': recipientName,
+          },
+        );
+      } catch (e, stackTrace) {
+        debugPrint('SendCoins: failed to debit sender ${widget.userId}: $e\n$stackTrace');
+        rethrow;
+      }
 
       // Credit recipient — adds a new coin batch
-      await coinDataSource.updateBalance(
-        userId: recipientId,
-        amount: amount,
-        type: CoinTransactionType.credit,
-        reason: CoinTransactionReason.giftReceived,
-        relatedUserId: widget.userId,
-      );
+      try {
+        await coinDataSource.updateBalance(
+          userId: recipientId,
+          amount: amount,
+          type: CoinTransactionType.credit,
+          reason: CoinTransactionReason.giftReceived,
+          relatedUserId: widget.userId,
+        );
+      } catch (e, stackTrace) {
+        debugPrint('SendCoins: debited sender but FAILED to credit recipient $recipientId: $e\n$stackTrace');
+        // Coins were already debited from sender but failed to credit recipient.
+        // The outer catch will show an error to the user. This needs manual resolution.
+        rethrow;
+      }
 
       if (mounted) {
         setState(() {
@@ -2336,7 +2358,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         );
       }
-    } catch (e) {
+    } catch (e, stackTrace) {
+      debugPrint('SendCoins error: $e\n$stackTrace');
       _showError(AppLocalizations.of(context)!.shopFailedToSendCoins);
       setState(() => _isSendingCoins = false);
     }

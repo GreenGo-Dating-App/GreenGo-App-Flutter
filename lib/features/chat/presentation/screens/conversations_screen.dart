@@ -1,9 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:provider/provider.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/providers/language_provider.dart';
 import '../../../../core/utils/base_membership_gate.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -37,12 +40,31 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   String _searchQuery = '';
   ConversationFilter _selectedFilter = ConversationFilter.all;
   final Map<String, Profile?> _profileCache = {};
+  final Map<String, String> _chatLanguageCache = {};
   Profile? _currentUserProfile;
+  SharedPreferences? _prefs;
+  String? _userDefaultLanguage;
 
   @override
   void initState() {
     super.initState();
     _loadCurrentUserProfile();
+    _loadPrefs();
+  }
+
+  Future<void> _loadPrefs() async {
+    _prefs = await SharedPreferences.getInstance();
+  }
+
+  /// Get saved chat language for a conversation (null = user default, not shown)
+  String? _getChatLanguage(String matchId) {
+    if (_chatLanguageCache.containsKey(matchId)) {
+      final lang = _chatLanguageCache[matchId];
+      return (lang != null && lang != _userDefaultLanguage) ? lang : null;
+    }
+    final lang = _prefs?.getString('chat_${matchId}_language');
+    _chatLanguageCache[matchId] = lang ?? '';
+    return (lang != null && lang.isNotEmpty && lang != _userDefaultLanguage) ? lang : null;
   }
 
   Future<void> _loadCurrentUserProfile({bool forceServer = false}) async {
@@ -204,6 +226,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    _userDefaultLanguage = Provider.of<LanguageProvider>(context, listen: false).currentLocale.languageCode;
     return BlocProvider(
       create: (context) => di.sl<ConversationsBloc>()
         ..add(ConversationsLoadRequested(widget.userId)),
@@ -351,6 +374,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 conversation: conversation,
                                 otherUserProfile: profile,
                                 currentUserId: widget.userId,
+                                chatLanguage: _getChatLanguage(conversation.matchId),
                                 onLongPress: () {
                                   _showDeleteBottomSheet(
                                     context,

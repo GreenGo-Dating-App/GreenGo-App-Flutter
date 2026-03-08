@@ -51,8 +51,10 @@ import '../../../gamification/presentation/screens/achievements_screen.dart';
 import '../../../gamification/presentation/screens/journey_screen.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
+import '../../../gamification/presentation/screens/personal_stats_screen.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
+import '../../../gamification/domain/entities/achievement.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 
@@ -218,9 +220,6 @@ class EditProfileScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-
-                  // GreenGoXP Badge
-                  _buildXpBadge(activeProfile.userId),
 
                   const SizedBox(height: 16),
 
@@ -427,12 +426,12 @@ class EditProfileScreen extends StatelessWidget {
                     onTap: () => _navigateToUsageStats(context, activeProfile),
                   ),
 
-                  // Gamification & Rewards Section
+                  // Progress & Growth Section
                   const SizedBox(height: 32),
                   const Divider(color: AppColors.divider),
                   const SizedBox(height: 16),
                   Text(
-                    AppLocalizations.of(context)!.profilePremiumFeatures,
+                    AppLocalizations.of(context)!.profileProgressGrowth,
                     style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 18,
@@ -441,10 +440,10 @@ class EditProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   EditSectionCard(
-                    title: AppLocalizations.of(context)!.leaderboardTitle,
-                    subtitle: AppLocalizations.of(context)!.leaderboardSubtitle,
-                    icon: Icons.leaderboard,
-                    onTap: () => _navigateToLeaderboard(context, activeProfile),
+                    title: AppLocalizations.of(context)!.personalStatistics,
+                    subtitle: AppLocalizations.of(context)!.personalStatisticsSubtitle,
+                    icon: Icons.insights,
+                    onTap: () => _navigateToPersonalStats(context, activeProfile),
                   ),
                   const SizedBox(height: 16),
                   EditSectionCard(
@@ -460,6 +459,12 @@ class EditProfileScreen extends StatelessWidget {
                     icon: Icons.today,
                     onTap: () => _navigateToDailyChallenges(context, activeProfile),
                   ),
+
+                  // Achievement Badges Section
+                  const SizedBox(height: 32),
+                  const Divider(color: AppColors.divider),
+                  const SizedBox(height: 16),
+                  _AchievementBadgesSection(userId: activeProfile.userId),
 
                   // Admin Panel Section (only visible to admins)
                   if (activeProfile.isAdmin) ...[
@@ -903,6 +908,14 @@ class EditProfileScreen extends StatelessWidget {
             ..add(LoadDailyChallenges(currentProfile.userId)),
           child: DailyChallengesScreen(userId: currentProfile.userId),
         ),
+      ),
+    );
+  }
+
+  void _navigateToPersonalStats(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => PersonalStatsScreen(userId: currentProfile.userId),
       ),
     );
   }
@@ -2181,5 +2194,280 @@ class _IncognitoToggleCard extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Achievement badges section for profile page
+/// Shows unlocked achievements as badges, user can toggle which to display on profile
+class _AchievementBadgesSection extends StatefulWidget {
+  final String userId;
+
+  const _AchievementBadgesSection({required this.userId});
+
+  @override
+  State<_AchievementBadgesSection> createState() => _AchievementBadgesSectionState();
+}
+
+class _AchievementBadgesSectionState extends State<_AchievementBadgesSection> {
+  bool _isLoading = true;
+  List<_AchievementBadgeData> _unlockedAchievements = [];
+  Set<String> _displayedBadgeIds = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _loadAchievementBadges();
+  }
+
+  Future<void> _loadAchievementBadges() async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Load unlocked achievements
+      final progressDocs = await firestore
+          .collection('achievement_progress')
+          .where('userId', isEqualTo: widget.userId)
+          .where('isUnlocked', isEqualTo: true)
+          .get();
+
+      // Load displayed badges preference
+      final prefDoc = await firestore
+          .collection('user_badge_preferences')
+          .doc(widget.userId)
+          .get();
+
+      final displayed = <String>{};
+      if (prefDoc.exists) {
+        final list = prefDoc.data()?['displayedBadges'] as List<dynamic>? ?? [];
+        displayed.addAll(list.cast<String>());
+      }
+
+      final unlocked = <_AchievementBadgeData>[];
+      for (final doc in progressDocs.docs) {
+        final data = doc.data();
+        final achievementId = data['achievementId'] as String? ?? '';
+        final achievement = Achievements.getById(achievementId);
+        if (achievement != null) {
+          unlocked.add(_AchievementBadgeData(
+            achievement: achievement,
+            unlockedAt: (data['unlockedAt'] as Timestamp?)?.toDate(),
+          ));
+        }
+      }
+
+      if (mounted) {
+        setState(() {
+          _unlockedAchievements = unlocked;
+          _displayedBadgeIds = displayed;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      debugPrint('Error loading achievement badges: $e');
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  Future<void> _toggleBadgeDisplay(String achievementId) async {
+    final newSet = Set<String>.from(_displayedBadgeIds);
+    if (newSet.contains(achievementId)) {
+      newSet.remove(achievementId);
+    } else {
+      if (newSet.length >= 5) return; // Max 5 displayed badges
+      newSet.add(achievementId);
+    }
+
+    setState(() => _displayedBadgeIds = newSet);
+
+    // Save to Firestore
+    FirebaseFirestore.instance
+        .collection('user_badge_preferences')
+        .doc(widget.userId)
+        .set({
+      'displayedBadges': newSet.toList(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    }).catchError((_) {});
+  }
+
+  static IconData _getAchievementIcon(String achievementId) {
+    switch (achievementId) {
+      case 'first_match': return Icons.handshake;
+      case 'conversation_starter': return Icons.chat_bubble;
+      case 'video_champion': return Icons.videocam;
+      case 'profile_master': return Icons.person_pin;
+      case 'globe_trotter': return Icons.public;
+      case 'generous_heart': return Icons.card_giftcard;
+      case 'daily_dedication': return Icons.calendar_today;
+      case 'super_star': return Icons.star;
+      case 'social_butterfly': return Icons.groups;
+      case 'perfect_week': return Icons.event_available;
+      case 'early_bird': return Icons.wb_sunny;
+      case 'night_owl': return Icons.nightlight_round;
+      case 'centurion': return Icons.military_tech;
+      case 'speed_dater': return Icons.bolt;
+      case 'photo_collector': return Icons.photo_library;
+      case 'trend_setter': return Icons.trending_up;
+      case 'verified': return Icons.verified;
+      case 'premium_member': return Icons.workspace_premium;
+      case 'coin_collector': return Icons.monetization_on;
+      case 'monthly_streak': return Icons.local_fire_department;
+      case 'vocabulary_beginner': return Icons.abc;
+      case 'vocabulary_intermediate': return Icons.spellcheck;
+      case 'vocabulary_advanced': return Icons.menu_book;
+      case 'vocabulary_master': return Icons.auto_stories;
+      case 'rare_word_hunter': return Icons.search;
+      default: return Icons.emoji_events;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(Icons.shield, color: AppColors.richGold, size: 20),
+            const SizedBox(width: 8),
+            Text(
+              l10n.achievementBadges,
+              style: const TextStyle(
+                color: AppColors.richGold,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Text(
+          l10n.achievementBadgesSubtitle,
+          style: const TextStyle(
+            color: AppColors.textTertiary,
+            fontSize: 12,
+          ),
+        ),
+        const SizedBox(height: 16),
+
+        if (_isLoading)
+          const Center(
+            child: Padding(
+              padding: EdgeInsets.all(20),
+              child: CircularProgressIndicator(color: AppColors.richGold, strokeWidth: 2),
+            ),
+          )
+        else if (_unlockedAchievements.isEmpty)
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: AppColors.backgroundCard,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.divider.withValues(alpha: 0.3)),
+            ),
+            child: Column(
+              children: [
+                const Icon(Icons.emoji_events, color: AppColors.textTertiary, size: 36),
+                const SizedBox(height: 8),
+                Text(
+                  l10n.noBadgesYet,
+                  style: const TextStyle(color: AppColors.textTertiary, fontSize: 14),
+                ),
+              ],
+            ),
+          )
+        else
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: _unlockedAchievements.map((data) {
+              final isDisplayed = _displayedBadgeIds.contains(data.achievement.achievementId);
+              final rarityColor = Color(data.achievement.rarity.colorValue);
+
+              return GestureDetector(
+                onTap: () => _toggleBadgeDisplay(data.achievement.achievementId),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  width: 72,
+                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                  decoration: BoxDecoration(
+                    color: isDisplayed
+                        ? rarityColor.withValues(alpha: 0.15)
+                        : AppColors.backgroundCard,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: isDisplayed ? rarityColor : AppColors.divider.withValues(alpha: 0.3),
+                      width: isDisplayed ? 2 : 1,
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Stack(
+                        children: [
+                          Container(
+                            width: 36,
+                            height: 36,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              gradient: LinearGradient(
+                                colors: [rarityColor, rarityColor.withValues(alpha: 0.7)],
+                              ),
+                              boxShadow: isDisplayed
+                                  ? [BoxShadow(color: rarityColor.withValues(alpha: 0.4), blurRadius: 8)]
+                                  : null,
+                            ),
+                            child: Icon(
+                              _getAchievementIcon(data.achievement.achievementId),
+                              color: Colors.white,
+                              size: 18,
+                            ),
+                          ),
+                          if (isDisplayed)
+                            Positioned(
+                              right: -2,
+                              top: -2,
+                              child: Container(
+                                width: 14,
+                                height: 14,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: AppColors.richGold,
+                                ),
+                                child: const Icon(Icons.check, color: Colors.white, size: 10),
+                              ),
+                            ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        data.achievement.name,
+                        style: TextStyle(
+                          color: isDisplayed ? AppColors.textPrimary : AppColors.textSecondary,
+                          fontSize: 8,
+                          fontWeight: isDisplayed ? FontWeight.bold : FontWeight.normal,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+      ],
+    );
+  }
+}
+
+class _AchievementBadgeData {
+  final Achievement achievement;
+  final DateTime? unlockedAt;
+
+  _AchievementBadgeData({required this.achievement, this.unlockedAt});
 }
 

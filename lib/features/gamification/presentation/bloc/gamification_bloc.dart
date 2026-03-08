@@ -251,6 +251,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
       type: event.type,
       region: event.region,
       limit: event.limit,
+      timePeriod: event.timePeriod,
     );
 
     final result = await getLeaderboard(params);

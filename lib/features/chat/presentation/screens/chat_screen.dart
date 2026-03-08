@@ -10,6 +10,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/push_notification_service.dart';
@@ -93,7 +94,7 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _showCulturalTips = true;       // Show cultural context tooltips
   bool _showWordBreakdown = true;      // Tap message for word breakdown
   bool _showPronunciation = true;      // Double-tap for TTS pronunciation
-  bool _ttsReadTranslated = false;    // TTS reads translated text (true) or original (false)
+  bool _ttsReadTranslated = true;     // TTS reads translated text (true) or original (false)
   bool _showLanguageFlags = true;     // Show flag emoji next to translated/original text
   bool _showXpBar = true;             // Show streak & XP progress bar
   bool _showPhraseOfDaySetting = true; // Show phrase of the day banner
@@ -161,6 +162,72 @@ class _ChatScreenState extends State<ChatScreen> {
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
     _fetchCurrentUserName();
     _loadPhraseOfTheDay();
+    _loadChatSettings();
+  }
+
+  /// Load chat settings: per-chat first, then global defaults
+  Future<void> _loadChatSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (!mounted) return;
+
+    // Check if this chat has custom settings
+    final prefix = 'chat_${widget.matchId}_';
+    final hasCustom = prefs.getBool('${prefix}hasCustomSettings') ?? false;
+    final p = hasCustom ? prefix : 'chat_'; // Per-chat or global prefix
+
+    // Load per-chat language if set
+    final savedLang = prefs.getString('chat_${widget.matchId}_language');
+    if (savedLang != null) {
+      _chatTargetLanguage = savedLang;
+    }
+
+    setState(() {
+      _showOriginalText = prefs.getBool('${p}showOriginalText') ?? true;
+      _showDifficultyBadge = prefs.getBool('${p}showDifficultyBadge') ?? true;
+      _showSmartReplies = prefs.getBool('${p}showSmartReplies') ?? true;
+      _showGrammarCheck = prefs.getBool('${p}showGrammarCheck') ?? true;
+      _showCulturalTips = prefs.getBool('${p}showCulturalTips') ?? true;
+      _showWordBreakdown = prefs.getBool('${p}showWordBreakdown') ?? true;
+      _showPronunciation = prefs.getBool('${p}showPronunciation') ?? true;
+      _ttsReadTranslated = prefs.getBool('${p}ttsReadTranslated') ?? true;
+      _showLanguageFlags = prefs.getBool('${p}showLanguageFlags') ?? true;
+      _showXpBar = prefs.getBool('${p}showXpBar') ?? true;
+      _showPhraseOfDaySetting = prefs.getBool('${p}showPhraseOfDay') ?? true;
+    });
+  }
+
+  /// Save current chat settings for this specific chat only
+  Future<void> _saveSettingsToThisChat() async {
+    final prefs = await SharedPreferences.getInstance();
+    final prefix = 'chat_${widget.matchId}_';
+    await prefs.setBool('${prefix}showOriginalText', _showOriginalText);
+    await prefs.setBool('${prefix}showDifficultyBadge', _showDifficultyBadge);
+    await prefs.setBool('${prefix}showSmartReplies', _showSmartReplies);
+    await prefs.setBool('${prefix}showGrammarCheck', _showGrammarCheck);
+    await prefs.setBool('${prefix}showCulturalTips', _showCulturalTips);
+    await prefs.setBool('${prefix}showWordBreakdown', _showWordBreakdown);
+    await prefs.setBool('${prefix}showPronunciation', _showPronunciation);
+    await prefs.setBool('${prefix}ttsReadTranslated', _ttsReadTranslated);
+    await prefs.setBool('${prefix}showLanguageFlags', _showLanguageFlags);
+    await prefs.setBool('${prefix}showXpBar', _showXpBar);
+    await prefs.setBool('${prefix}showPhraseOfDay', _showPhraseOfDaySetting);
+    await prefs.setBool('${prefix}hasCustomSettings', true);
+  }
+
+  /// Save current chat settings to SharedPreferences (applies to all chats)
+  Future<void> _saveSettingsToAllChats() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('chat_showOriginalText', _showOriginalText);
+    await prefs.setBool('chat_showDifficultyBadge', _showDifficultyBadge);
+    await prefs.setBool('chat_showSmartReplies', _showSmartReplies);
+    await prefs.setBool('chat_showGrammarCheck', _showGrammarCheck);
+    await prefs.setBool('chat_showCulturalTips', _showCulturalTips);
+    await prefs.setBool('chat_showWordBreakdown', _showWordBreakdown);
+    await prefs.setBool('chat_showPronunciation', _showPronunciation);
+    await prefs.setBool('chat_ttsReadTranslated', _ttsReadTranslated);
+    await prefs.setBool('chat_showLanguageFlags', _showLanguageFlags);
+    await prefs.setBool('chat_showXpBar', _showXpBar);
+    await prefs.setBool('chat_showPhraseOfDay', _showPhraseOfDaySetting);
   }
 
   Future<void> _fetchCurrentUserName({bool forceServer = false}) async {
@@ -191,6 +258,8 @@ class _ChatScreenState extends State<ChatScreen> {
       _languageProvider = provider;
       _languageProvider!.addListener(_onLanguageChanged);
     }
+    // Always set user language from provider so _targetLanguage is correct
+    _userLanguage = provider.currentLocale.languageCode;
   }
 
   void _onLanguageChanged() {
@@ -260,7 +329,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Get the language the current user wants to read the chat in.
-  /// Defaults to the user's own app language.
+  /// Defaults to the current user's app language.
   String get _targetLanguage {
     return _chatTargetLanguage ?? _userLanguage ?? 'en';
   }
@@ -298,16 +367,28 @@ class _ChatScreenState extends State<ChatScreen> {
         targetLanguage: translateTo,
       );
 
-      debugPrint('TRANSLATE RESULT: "${translatedText.length > 40 ? translatedText.substring(0, 40) : translatedText}"');
-
-      // Cache result
-      _translatedMessages[cacheKey] = translatedText;
-
       // Store detected source language for flag display
       final detectedLang = _translationService.lastDetectedLanguage;
       if (detectedLang != null) {
         _detectedLanguages[message.messageId] = detectedLang;
       }
+
+      debugPrint('TRANSLATE RESULT: "${translatedText.length > 40 ? translatedText.substring(0, 40) : translatedText}" (detected: $detectedLang)');
+
+      // If detected language matches target, skip — no point translating Italian→Italian
+      final detectedNorm = (detectedLang ?? '').toLowerCase().replaceAll('-', '').replaceAll('_', '');
+      final targetNorm = translateTo.toLowerCase().replaceAll('-', '').replaceAll('_', '');
+      if (detectedNorm.isNotEmpty && (
+          detectedNorm == targetNorm ||
+          targetNorm.startsWith(detectedNorm) ||
+          detectedNorm.startsWith(targetNorm))) {
+        debugPrint('TRANSLATE: Same language ($detectedLang == $translateTo), no translation needed');
+        _translatedMessages[cacheKey] = message.content;
+        return message.copyWith(detectedLanguage: detectedLang);
+      }
+
+      // Cache result
+      _translatedMessages[cacheKey] = translatedText;
 
       // Return with translation if different from original
       if (translatedText != message.content) {
@@ -380,8 +461,10 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
-    // Grammar check for non-native language messages
-    if (!_showGrammarBanner && content.split(' ').length >= 3) {
+    // Grammar check for non-native language messages (Silver+ only)
+    final userTier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final isSilverPlus = userTier != MembershipTier.free;
+    if (isSilverPlus && !_showGrammarBanner && content.split(' ').length >= 3) {
       final lang = widget.otherUserProfile.languages.isNotEmpty
           ? widget.otherUserProfile.languages.first
           : 'en';
@@ -1058,9 +1141,9 @@ class _ChatScreenState extends State<ChatScreen> {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  const Text(
-                    'Select photos to send',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.chatSelectPhotos,
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 12,
                     ),
@@ -1668,7 +1751,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       child: CircularProgressIndicator(strokeWidth: 2),
                                     )
                                   : Text(
-                                      'Scroll up for older messages',
+                                      AppLocalizations.of(context)!.chatScrollUpForOlder,
                                       style: TextStyle(
                                         color: AppColors.textSecondary,
                                         fontSize: 12,
@@ -1702,6 +1785,9 @@ class _ChatScreenState extends State<ChatScreen> {
                               showLanguageFlags: _showLanguageFlags,
                               ttsReadTranslated: _ttsReadTranslated,
                               userSelectedLanguage: _targetLanguage,
+                              otherUserIsMale: widget.otherUserProfile.gender.toLowerCase() != 'female',
+                              currentUserIsMale: (_currentUserProfile?.gender ?? 'male').toLowerCase() != 'female',
+                              userMembershipTier: _currentUserProfile?.membershipTier,
                               onReport: (msg) => _reportMessage(context, msg),
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
                               onReply: (msg) => _setReplyMessage(msg),
@@ -1781,12 +1867,13 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   String _formatLastSeen(DateTime lastSeen) {
+    final l10n = AppLocalizations.of(context)!;
     final diff = DateTime.now().difference(lastSeen);
-    if (diff.inMinutes < 1) return 'Online just now';
-    if (diff.inMinutes < 60) return 'Online ${diff.inMinutes}m ago';
-    if (diff.inHours < 24) return 'Online ${diff.inHours}h ago';
-    if (diff.inDays < 5) return 'Online ${diff.inDays}d ago';
-    return 'Offline';
+    if (diff.inMinutes < 1) return l10n.chatOnlineJustNow;
+    if (diff.inMinutes < 60) return l10n.chatOnlineMinutesAgo(diff.inMinutes);
+    if (diff.inHours < 24) return l10n.chatOnlineHoursAgo(diff.inHours);
+    if (diff.inDays < 5) return l10n.chatOnlineDaysAgo(diff.inDays);
+    return l10n.chatOffline;
   }
 
   PreferredSizeWidget _buildAppBar() {
@@ -1865,9 +1952,9 @@ class _ChatScreenState extends State<ChatScreen> {
                     }
                     // Show online status or last seen
                     if (widget.otherUserProfile.isOnline) {
-                      return const Text(
-                        'Online',
-                        style: TextStyle(
+                      return Text(
+                        AppLocalizations.of(context)!.chatOnline,
+                        style: const TextStyle(
                           color: AppColors.successGreen,
                           fontSize: 12,
                         ),
@@ -1894,7 +1981,7 @@ class _ChatScreenState extends State<ChatScreen> {
         // Languages & learning menu
         IconButton(
           icon: const Icon(Icons.translate, color: AppColors.textSecondary),
-          tooltip: 'Languages',
+          tooltip: AppLocalizations.of(context)!.chatLanguages,
           onPressed: _showToolsMenu,
         ),
         // Chat options menu (admin: delete, block, report)
@@ -1920,17 +2007,17 @@ class _ChatScreenState extends State<ChatScreen> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
+            Row(
               children: [
-                Icon(Icons.translate, color: AppColors.richGold),
-                SizedBox(width: 8),
-                Text('Languages', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                const Icon(Icons.translate, color: AppColors.richGold),
+                const SizedBox(width: 8),
+                Text(AppLocalizations.of(context)!.chatLanguages, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
               ],
             ),
             const SizedBox(height: 16),
             _buildOptionItem(
               icon: Icons.language,
-              label: 'Your Language (${_targetLanguage.toUpperCase()})',
+              label: '${AppLocalizations.of(context)!.chatYourLanguage} (${_targetLanguage.toUpperCase()})',
               color: AppColors.richGold,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -1939,20 +2026,11 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             _buildOptionItem(
               icon: Icons.tune,
-              label: 'Chat Settings',
+              label: AppLocalizations.of(context)!.chatSettingsTitle,
               color: AppColors.textPrimary,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
                 _showChatSettings();
-              },
-            ),
-            _buildOptionItem(
-              icon: Icons.mic,
-              label: 'Pronunciation Challenge',
-              color: AppColors.richGold,
-              onTap: () {
-                Navigator.pop(bottomSheetContext);
-                _showPronunciationChallenge();
               },
             ),
             const SizedBox(height: 8),
@@ -1986,14 +2064,14 @@ class _ChatScreenState extends State<ChatScreen> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Your Language',
-              style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold),
+            Text(
+              AppLocalizations.of(context)!.chatYourLanguage,
+              style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
-            const Text(
-              'Choose the language you want to read this conversation in. All messages will be translated for you.',
-              style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
+            Text(
+              AppLocalizations.of(context)!.chatLanguagePickerHint,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
             ),
             const SizedBox(height: 12),
             SizedBox(
@@ -2015,16 +2093,21 @@ class _ChatScreenState extends State<ChatScreen> {
                     trailing: isSelected
                         ? const Icon(Icons.check_circle, color: AppColors.richGold)
                         : null,
-                    onTap: () {
+                    onTap: () async {
                       setState(() {
                         _chatTargetLanguage = lang['code'];
                         // Clear translation cache to re-translate with new language
                         _translatedMessages.clear();
                       });
+                      // Persist chat language for this conversation
+                      final prefs = await SharedPreferences.getInstance();
+                      if (_chatTargetLanguage != null) {
+                        await prefs.setString('chat_${widget.matchId}_language', _chatTargetLanguage!);
+                      }
                       Navigator.pop(ctx);
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: Text('Chat language set to ${lang['name']}'),
+                          content: Text(AppLocalizations.of(context)!.chatLanguageSetTo(lang['name']!)),
                           duration: const Duration(seconds: 1),
                           backgroundColor: AppColors.backgroundCard,
                         ),
@@ -2150,106 +2233,158 @@ class _ChatScreenState extends State<ChatScreen> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.tune, color: AppColors.richGold),
-                  SizedBox(width: 8),
-                  Text('Chat Settings', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                  const Icon(Icons.tune, color: AppColors.richGold),
+                  const SizedBox(width: 8),
+                  Text(AppLocalizations.of(context)!.chatSettingsTitle, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
                 ],
               ),
               const SizedBox(height: 4),
-              const Text(
-                'Customise your learning experience in this chat',
-                style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
+              Text(
+                AppLocalizations.of(context)!.chatSettingsSubtitle,
+                style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
               ),
               const SizedBox(height: 16),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.text_fields,
-                label: 'Show Original Text',
-                subtitle: 'Display the original message below translation',
+                label: AppLocalizations.of(context)!.chatSettingShowOriginal,
+                subtitle: AppLocalizations.of(context)!.chatSettingShowOriginalDesc,
                 value: _showOriginalText,
                 onChanged: (v) => setState(() => _showOriginalText = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.flag,
-                label: 'Language Flags',
-                subtitle: 'Show flag emoji next to translated and original text',
+                label: AppLocalizations.of(context)!.chatSettingLanguageFlags,
+                subtitle: AppLocalizations.of(context)!.chatSettingLanguageFlagsDesc,
                 value: _showLanguageFlags,
                 onChanged: (v) => setState(() => _showLanguageFlags = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.school,
-                label: 'Difficulty Badges',
-                subtitle: 'Show CEFR level (A1-C2) on messages',
+                label: AppLocalizations.of(context)!.chatSettingDifficultyBadges,
+                subtitle: AppLocalizations.of(context)!.chatSettingDifficultyBadgesDesc,
                 value: _showDifficultyBadge,
                 onChanged: (v) => setState(() => _showDifficultyBadge = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.auto_awesome,
-                label: 'Smart Replies',
-                subtitle: 'Suggest replies in the target language',
+                label: AppLocalizations.of(context)!.chatSettingSmartReplies,
+                subtitle: AppLocalizations.of(context)!.chatSettingSmartRepliesDesc,
                 value: _showSmartReplies,
                 onChanged: (v) => setState(() => _showSmartReplies = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.spellcheck,
-                label: 'Grammar Check',
-                subtitle: 'Check grammar before sending messages',
+                label: AppLocalizations.of(context)!.chatSettingGrammarCheck,
+                subtitle: AppLocalizations.of(context)!.chatSettingGrammarCheckDesc,
                 value: _showGrammarCheck,
                 onChanged: (v) => setState(() => _showGrammarCheck = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.lightbulb_outline,
-                label: 'Cultural Tips',
-                subtitle: 'Show cultural context for idioms and expressions',
+                label: AppLocalizations.of(context)!.chatSettingCulturalTips,
+                subtitle: AppLocalizations.of(context)!.chatSettingCulturalTipsDesc,
                 value: _showCulturalTips,
                 onChanged: (v) => setState(() => _showCulturalTips = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.segment,
-                label: 'Word Breakdown',
-                subtitle: 'Tap messages for word-by-word translation',
+                label: AppLocalizations.of(context)!.chatSettingWordBreakdown,
+                subtitle: AppLocalizations.of(context)!.chatSettingWordBreakdownDesc,
                 value: _showWordBreakdown,
                 onChanged: (v) => setState(() => _showWordBreakdown = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.volume_up,
-                label: 'Pronunciation (TTS)',
-                subtitle: 'Double-tap messages to hear pronunciation',
+                label: AppLocalizations.of(context)!.chatSettingPronunciation,
+                subtitle: AppLocalizations.of(context)!.chatSettingPronunciationDesc,
                 value: _showPronunciation,
                 onChanged: (v) => setState(() => _showPronunciation = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.record_voice_over,
-                label: 'TTS Reads Translation',
-                subtitle: 'Read the translated text instead of original',
+                label: AppLocalizations.of(context)!.chatSettingTtsTranslation,
+                subtitle: AppLocalizations.of(context)!.chatSettingTtsTranslationDesc,
                 value: _ttsReadTranslated,
                 onChanged: (v) => setState(() => _ttsReadTranslated = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.local_fire_department,
-                label: 'XP & Streak Bar',
-                subtitle: 'Show session XP and word count progress',
+                label: AppLocalizations.of(context)!.chatSettingXpBar,
+                subtitle: AppLocalizations.of(context)!.chatSettingXpBarDesc,
                 value: _showXpBar,
                 onChanged: (v) => setState(() => _showXpBar = v),
               ),
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.today,
-                label: 'Phrase of the Day',
-                subtitle: 'Show a daily phrase to practice',
+                label: AppLocalizations.of(context)!.chatSettingPhraseOfDay,
+                subtitle: AppLocalizations.of(context)!.chatSettingPhraseOfDayDesc,
                 value: _showPhraseOfDaySetting,
                 onChanged: (v) => setState(() => _showPhraseOfDaySetting = v),
+              ),
+              const SizedBox(height: 16),
+              // Save to this chat button
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () async {
+                    await _saveSettingsToThisChat();
+                    if (mounted) {
+                      Navigator.pop(context);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(AppLocalizations.of(context)!.chatSettingsSavedThisChat)),
+                      );
+                    }
+                  },
+                  icon: const Icon(Icons.chat_bubble_outline, size: 18),
+                  label: Text(AppLocalizations.of(context)!.chatSettingsSaveThisChat),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.richGold,
+                    side: const BorderSide(color: AppColors.richGold),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 8),
+              // Save to all chats button
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: () async {
+                    await _saveSettingsToAllChats();
+                    if (mounted) {
+                      Navigator.pop(context);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(AppLocalizations.of(context)!.chatSettingsSavedAllChats)),
+                      );
+                    }
+                  },
+                  icon: const Icon(Icons.save, size: 18),
+                  label: Text(AppLocalizations.of(context)!.chatSettingsSaveAllChats),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: Colors.black,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(height: 8),
             ],
@@ -2298,11 +2433,41 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void _trackMessageXp(String content) {
     final words = content.toLowerCase().split(RegExp(r'\s+')).where((w) => w.length > 1).toSet();
+    final xpEarned = 5 + (words.length * 2); // Base 5 XP + 2 per word
     setState(() {
-      _sessionXp += 5 + (words.length * 2); // Base 5 XP + 2 per word
+      _sessionXp += xpEarned;
       _uniqueWordsUsed += words.length;
       _chatStreak++;
     });
+
+    // Persist XP to Firebase so it reflects on leaderboard
+    _persistMessageXp(widget.currentUserId, xpEarned);
+  }
+
+  /// Submit message XP to Firestore user_levels (fire-and-forget)
+  Future<void> _persistMessageXp(String userId, int xp) async {
+    try {
+      final userLevelRef = FirebaseFirestore.instance
+          .collection('user_levels')
+          .doc(userId);
+      final doc = await userLevelRef.get();
+      if (doc.exists) {
+        await userLevelRef.update({
+          'currentXP': FieldValue.increment(xp),
+          'totalXP': FieldValue.increment(xp),
+          'lastUpdated': FieldValue.serverTimestamp(),
+        });
+      }
+      // Log XP transaction
+      await FirebaseFirestore.instance.collection('xp_transactions').add({
+        'userId': userId,
+        'actionType': 'message_sent',
+        'xpAmount': xp,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+    } catch (e) {
+      debugPrint('XP persist error: $e');
+    }
   }
 
   Widget _buildXpBar() {
@@ -2314,7 +2479,7 @@ class _ChatScreenState extends State<ChatScreen> {
           const Icon(Icons.local_fire_department, size: 16, color: Colors.orange),
           const SizedBox(width: 4),
           Text(
-            'Streak: $_chatStreak',
+            AppLocalizations.of(context)!.chatStreak(_chatStreak),
             style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
           ),
           const SizedBox(width: 12),
@@ -2328,7 +2493,7 @@ class _ChatScreenState extends State<ChatScreen> {
           const Icon(Icons.abc, size: 14, color: AppColors.textTertiary),
           const SizedBox(width: 4),
           Text(
-            '$_uniqueWordsUsed words',
+            AppLocalizations.of(context)!.chatWords(_uniqueWordsUsed),
             style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
           ),
           const Spacer(),
@@ -2351,6 +2516,31 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _loadPhraseOfTheDay() async {
+    final today = DateTime.now();
+    final dateKey = '${today.year}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
+
+    // Try to load from Firestore cache first
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('daily_phrases')
+          .doc(dateKey)
+          .get();
+
+      if (doc.exists) {
+        final data = doc.data()!;
+        if (mounted) {
+          setState(() {
+            _phraseOfTheDay = data['phrase'] as String?;
+            _phraseTranslation = '${data['translation']} (${data['lang']})';
+          });
+        }
+        return;
+      }
+    } catch (e) {
+      debugPrint('Phrase of day: Firestore read failed: $e');
+    }
+
+    // Fallback to local phrases and cache to Firestore
     final phrases = [
       {'phrase': 'Cómo estás?', 'translation': 'How are you?', 'lang': 'Spanish'},
       {'phrase': 'Buongiorno!', 'translation': 'Good morning!', 'lang': 'Italian'},
@@ -2365,7 +2555,7 @@ class _ChatScreenState extends State<ChatScreen> {
     ];
 
     // Pick based on day of year for consistency
-    final dayOfYear = DateTime.now().difference(DateTime(DateTime.now().year)).inDays;
+    final dayOfYear = today.difference(DateTime(today.year)).inDays;
     final phrase = phrases[dayOfYear % phrases.length];
 
     if (mounted) {
@@ -2374,6 +2564,13 @@ class _ChatScreenState extends State<ChatScreen> {
         _phraseTranslation = '${phrase['translation']} (${phrase['lang']})';
       });
     }
+
+    // Cache to Firestore for future use (non-blocking)
+    FirebaseFirestore.instance
+        .collection('daily_phrases')
+        .doc(dateKey)
+        .set(phrase)
+        .catchError((_) {});
   }
 
   Widget _buildPhraseOfDay() {
@@ -2423,7 +2620,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     if (receivedMessages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('No messages to practice with yet'), backgroundColor: AppColors.backgroundCard),
+        SnackBar(content: Text(AppLocalizations.of(context)!.chatNoMessagesToPractice), backgroundColor: AppColors.backgroundCard),
       );
       return;
     }
@@ -2440,15 +2637,15 @@ class _ChatScreenState extends State<ChatScreen> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
+            Row(
               children: [
-                Icon(Icons.mic, color: AppColors.richGold),
-                SizedBox(width: 8),
-                Text('Pronunciation Challenge', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                const Icon(Icons.mic, color: AppColors.richGold),
+                const SizedBox(width: 8),
+                Text(AppLocalizations.of(context)!.chatPronunciationChallenge, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
               ],
             ),
             const SizedBox(height: 4),
-            const Text('Tap to hear, then practice saying each phrase:', style: TextStyle(color: AppColors.textTertiary, fontSize: 13)),
+            Text(AppLocalizations.of(context)!.chatPronunciationHint, style: const TextStyle(color: AppColors.textTertiary, fontSize: 13)),
             const SizedBox(height: 12),
             ...receivedMessages.map((msg) => Padding(
               padding: const EdgeInsets.only(bottom: 8),
@@ -2957,6 +3154,10 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _loadSmartReplies(String messageText, String language) async {
+    // Smart replies are Silver+ only
+    final userTier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    if (userTier == MembershipTier.free) return;
+
     setState(() => _loadingSmartReplies = true);
     try {
       final userLang = _userLanguage ?? 'en';
@@ -3034,7 +3235,7 @@ class _ChatScreenState extends State<ChatScreen> {
             children: [
               const Icon(Icons.spellcheck, color: Colors.orange, size: 18),
               const SizedBox(width: 8),
-              const Text('Grammar Suggestion', style: TextStyle(color: AppColors.textPrimary, fontSize: 13, fontWeight: FontWeight.bold)),
+              Text(AppLocalizations.of(context)!.chatGrammarSuggestion, style: const TextStyle(color: AppColors.textPrimary, fontSize: 13, fontWeight: FontWeight.bold)),
               const Spacer(),
               GestureDetector(
                 onTap: () => setState(() => _showGrammarBanner = false),
@@ -3069,7 +3270,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       color: AppColors.richGold,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Text('Use Correction', textAlign: TextAlign.center, style: TextStyle(color: AppColors.deepBlack, fontSize: 13, fontWeight: FontWeight.w600)),
+                    child: Text(AppLocalizations.of(context)!.chatUseCorrection, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.deepBlack, fontSize: 13, fontWeight: FontWeight.w600)),
                   ),
                 ),
               ),
@@ -3086,7 +3287,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       border: Border.all(color: AppColors.textTertiary),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Text('Send Anyway', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textSecondary, fontSize: 13)),
+                    child: Text(AppLocalizations.of(context)!.chatSendAnyway, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13)),
                   ),
                 ),
               ),
@@ -3149,6 +3350,17 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                       maxLines: 4,
                       minLines: 1,
+                      maxLength: 200,
+                      buildCounter: (context, {required currentLength, required isFocused, maxLength}) {
+                        if (!isFocused && currentLength == 0) return null;
+                        return Text(
+                          '$currentLength/$maxLength',
+                          style: TextStyle(
+                            color: currentLength >= maxLength! ? Colors.red : AppColors.textTertiary,
+                            fontSize: 12,
+                          ),
+                        );
+                      },
                       textCapitalization: TextCapitalization.sentences,
                     ),
                   ),

@@ -6,6 +6,7 @@
 
 import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
@@ -33,20 +34,40 @@ class LeaderboardScreen extends StatefulWidget {
 class _LeaderboardScreenState extends State<LeaderboardScreen> {
   LeaderboardType _currentType = LeaderboardType.global;
   TimePeriod _selectedPeriod = TimePeriod.week;
+  String? _userCountry;
 
   @override
   void initState() {
     super.initState();
-    context.read<GamificationBloc>().add(LoadLeaderboard(
-          userId: widget.userId,
-          type: LeaderboardType.global,
-        ));
+    _initLeaderboard();
+  }
+
+  /// Load user country first, then load leaderboard with correct region data
+  Future<void> _initLeaderboard() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      if (doc.exists && mounted) {
+        final data = doc.data();
+        final location = data?['location'] as Map<String, dynamic>?;
+        _userCountry = location?['country'] as String?;
+      }
+    } catch (_) {
+      // Silently fail - regional filtering will just not apply
+    }
+    if (mounted) {
+      _loadLeaderboard();
+    }
   }
 
   void _loadLeaderboard() {
     context.read<GamificationBloc>().add(LoadLeaderboard(
           userId: widget.userId,
           type: _currentType,
+          timePeriod: _selectedPeriod.name,
+          region: _currentType == LeaderboardType.regional ? _userCountry : null,
         ));
   }
 

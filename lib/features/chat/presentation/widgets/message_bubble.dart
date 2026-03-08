@@ -1,14 +1,18 @@
 import 'dart:ui' as ui;
 import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:audioplayers/audioplayers.dart' as ap show Source, DeviceFileSource;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
+import '../../../../features/coins/data/datasources/coin_remote_datasource.dart';
+import '../../../../features/coins/domain/entities/coin_transaction.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../features/membership/domain/entities/membership.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Bubble Widget
@@ -29,11 +33,14 @@ class MessageBubble extends StatefulWidget {
   final bool showLanguageFlags;
   final bool ttsReadTranslated;
   final String? userSelectedLanguage;
+  final bool otherUserIsMale;
+  final bool currentUserIsMale;
   final Function(Message)? onReport;
   final Function(Message, bool)? onStar;
   final Function(Message)? onReply;
   final Function(Message)? onForward;
   final Function(Message)? onAlbumTap;
+  final MembershipTier? userMembershipTier;
 
   const MessageBubble({
     super.key,
@@ -49,11 +56,14 @@ class MessageBubble extends StatefulWidget {
     this.showLanguageFlags = true,
     this.ttsReadTranslated = false,
     this.userSelectedLanguage,
+    this.otherUserIsMale = true,
+    this.currentUserIsMale = true,
     this.onReport,
     this.onStar,
     this.onReply,
     this.onForward,
     this.onAlbumTap,
+    this.userMembershipTier,
   });
 
   @override
@@ -65,7 +75,6 @@ class _MessageBubbleState extends State<MessageBubble> {
   bool _isTtsLoading = false;
   bool _isTtsPlaying = false;
   static final AudioPlayer _audioPlayer = AudioPlayer();
-  static final FlutterTts _flutterTts = FlutterTts();
 
   // Learning enhancement state
   String? _difficultyLevel;
@@ -163,6 +172,15 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   void _showWordBreakdown() async {
+    final tier = widget.userMembershipTier ?? MembershipTier.free;
+    if (tier == MembershipTier.free) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Word breakdown is available for Silver, Gold, and Platinum members')),
+        );
+      }
+      return;
+    }
     final language = widget.message.detectedLanguage ?? widget.message.metadata?['language'] as String? ?? widget.otherUserLanguage ?? 'en';
     final words = await ChatLearningService().getWordBreakdown(
       widget.message.content,
@@ -227,7 +245,9 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   /// Play TTS for the message text on double-tap.
-  /// Uses Gemini AI for human-like speech; falls back to device TTS.
+  /// Uses Google Cloud TTS (Chirp 3 HD) for human-like speech.
+  /// The sender's gender determines the voice (male sender = male voice).
+  /// Each listen costs 5 coins.
   Future<void> _playTts() async {
     final message = widget.message;
     if (message.type != MessageType.text) return;
@@ -235,7 +255,6 @@ class _MessageBubbleState extends State<MessageBubble> {
     // If already playing, stop
     if (_isTtsPlaying) {
       await _audioPlayer.stop();
-      await _flutterTts.stop();
       if (mounted) setState(() => _isTtsPlaying = false);
       return;
     }
@@ -255,43 +274,61 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
     if (text.isEmpty) return;
 
+    // Deduct 5 coins before playing
+    final userId = widget.currentUserId;
+    if (userId == null) return;
+
+    try {
+      final coinDs = di.sl<CoinRemoteDataSource>();
+      final balance = await coinDs.getBalance(userId);
+      if (balance.totalCoins < 5) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Not enough coins for TTS (5 coins required)')),
+          );
+        }
+        return;
+      }
+      await coinDs.updateBalance(
+        userId: userId,
+        amount: 5,
+        type: CoinTransactionType.debit,
+        reason: CoinTransactionReason.featurePurchase,
+        metadata: {'feature': 'tts_listen', 'messageId': message.messageId},
+      );
+      debugPrint('TTS: Deducted 5 coins from $userId');
+    } catch (e) {
+      debugPrint('TTS: Coin deduction failed: $e');
+      // Allow playback even if coin deduction fails (e.g. emulator issues)
+    }
+
+    // Sender's gender determines the voice
+    final bool senderIsMale = widget.isCurrentUser
+        ? widget.currentUserIsMale
+        : widget.otherUserIsMale;
+
     setState(() => _isTtsLoading = true);
 
-    // Try Gemini AI TTS first (human-like voice)
     try {
-      final filePath = await PronunciationService().getPronunciationFilePath(text, lang);
+      final filePath = await PronunciationService().getPronunciationFilePath(
+        text, lang, isMale: senderIsMale,
+      );
       if (filePath != null && mounted) {
-        debugPrint('TTS: Playing Gemini audio from $filePath');
+        debugPrint('TTS: Playing Cloud TTS audio (${senderIsMale ? "male" : "female"} voice) from $filePath');
         setState(() { _isTtsLoading = false; _isTtsPlaying = true; });
 
         _audioPlayer.onPlayerComplete.first.then((_) {
           if (mounted) setState(() => _isTtsPlaying = false);
         });
 
+        await _audioPlayer.setVolume(1.0);
         await _audioPlayer.play(ap.DeviceFileSource(filePath));
-        return;
+      } else {
+        debugPrint('TTS: Cloud TTS failed after 3 retries');
+        if (mounted) setState(() => _isTtsLoading = false);
       }
     } catch (e) {
-      debugPrint('TTS: Gemini playback failed: $e');
-    }
-
-    // Fallback to device TTS
-    debugPrint('TTS: Falling back to device TTS');
-    try {
-      if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = true; });
-
-      await _flutterTts.setLanguage(_ttsLocale(lang));
-      await _flutterTts.setSpeechRate(0.45);
-      await _flutterTts.setVolume(1.0);
-      await _flutterTts.setPitch(1.0);
-
-      _flutterTts.setCompletionHandler(() {
-        if (mounted) setState(() => _isTtsPlaying = false);
-      });
-
-      await _flutterTts.speak(text);
-    } catch (e) {
-      debugPrint('TTS: Device TTS also failed: $e');
+      debugPrint('TTS: Playback error: $e');
       if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
     }
   }
@@ -311,7 +348,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
     return GestureDetector(
       onTap: (!isCurrentUser && message.type == MessageType.text && widget.showWordBreakdown) ? _showWordBreakdown : null,
-      onDoubleTap: (message.type == MessageType.text && widget.showPronunciation && hasTranslation) ? _playTts : null,
+      onDoubleTap: (message.type == MessageType.text && widget.showPronunciation) ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,

@@ -101,12 +101,27 @@ class ChatLearningService {
     return _smartReplyCache[cacheKey] ?? [];
   }
 
-  /// Check grammar and suggest corrections
+  /// Check grammar and suggest corrections (Firestore cached)
   Future<Map<String, dynamic>?> checkGrammar(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_correctionCache.containsKey(cacheKey)) {
       return jsonDecode(_correctionCache[cacheKey]!) as Map<String, dynamic>;
     }
+
+    // Check Firestore cache
+    try {
+      final doc = await _firestore.collection('ai_cache').doc('gram_$cacheKey').get();
+      if (doc.exists) {
+        final data = doc.data()!;
+        final result = <String, dynamic>{
+          'hasErrors': data['hasErrors'],
+          'corrected': data['corrected'],
+          'explanation': data['explanation'],
+        };
+        _correctionCache[cacheKey] = jsonEncode(result);
+        return result;
+      }
+    } catch (_) {}
 
     final langName = _langName(language);
     final result = await _callGemini(
@@ -117,15 +132,35 @@ class ChatLearningService {
 
     if (result != null && result.containsKey('hasErrors')) {
       _correctionCache[cacheKey] = jsonEncode(result);
+
+      // Cache to Firestore (non-blocking)
+      _firestore.collection('ai_cache').doc('gram_$cacheKey').set({
+        ...result, 'text': text, 'language': language,
+        'createdAt': FieldValue.serverTimestamp(),
+      }).catchError((_) {});
+
       return result;
     }
     return null;
   }
 
-  /// Get cultural context for idioms/slang in a message
+  /// Get cultural context for idioms/slang in a message (Firestore cached)
   Future<String?> getCulturalTooltip(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_culturalTooltipCache.containsKey(cacheKey)) return _culturalTooltipCache[cacheKey];
+
+    // Check Firestore cache
+    try {
+      final doc = await _firestore.collection('ai_cache').doc('cult_$cacheKey').get();
+      if (doc.exists) {
+        final tooltip = doc.data()?['tooltip'] as String?;
+        if (tooltip != null) {
+          _culturalTooltipCache[cacheKey] = tooltip;
+          return tooltip;
+        }
+        return null; // Cached as no context
+      }
+    } catch (_) {}
 
     final langName = _langName(language);
     final result = await _callGemini(
@@ -140,15 +175,43 @@ class ChatLearningService {
           'Meaning: ${result['meaning']}\n'
           '${result['cultural_note'] ?? ''}';
       _culturalTooltipCache[cacheKey] = tooltip;
+
+      // Cache to Firestore (non-blocking)
+      _firestore.collection('ai_cache').doc('cult_$cacheKey').set({
+        'tooltip': tooltip, 'text': text, 'language': language,
+        'createdAt': FieldValue.serverTimestamp(),
+      }).catchError((_) {});
+
       return tooltip;
     }
+
+    // Cache negative result too
+    _firestore.collection('ai_cache').doc('cult_$cacheKey').set({
+      'tooltip': null, 'text': text, 'language': language,
+      'createdAt': FieldValue.serverTimestamp(),
+    }).catchError((_) {});
+
     return null;
   }
 
-  /// Break down a message word by word with translations
+  /// Break down a message word by word with translations (Firestore cached)
   Future<List<Map<String, String>>> getWordBreakdown(String text, String sourceLanguage, String targetLanguage) async {
     final cacheKey = '${text.hashCode}_${sourceLanguage}_$targetLanguage';
     if (_wordBreakdownCache.containsKey(cacheKey)) return _wordBreakdownCache[cacheKey]!;
+
+    // Check Firestore cache
+    try {
+      final doc = await _firestore.collection('ai_cache').doc('wb_$cacheKey').get();
+      if (doc.exists && doc.data()?['words'] != null) {
+        final words = (doc.data()!['words'] as List).map((w) => Map<String, String>.from({
+          'word': w['word']?.toString() ?? '',
+          'translation': w['translation']?.toString() ?? '',
+          'pos': w['pos']?.toString() ?? '',
+        })).toList();
+        _wordBreakdownCache[cacheKey] = words;
+        return words;
+      }
+    } catch (_) {}
 
     final srcName = _langName(sourceLanguage);
     final tgtName = _langName(targetLanguage);
@@ -165,15 +228,33 @@ class ChatLearningService {
         'pos': w['pos']?.toString() ?? '',
       })).toList();
       _wordBreakdownCache[cacheKey] = words;
+
+      // Cache to Firestore (non-blocking)
+      _firestore.collection('ai_cache').doc('wb_$cacheKey').set({
+        'words': words, 'text': text,
+        'sourceLanguage': sourceLanguage, 'targetLanguage': targetLanguage,
+        'createdAt': FieldValue.serverTimestamp(),
+      }).catchError((_) {});
+
       return words;
     }
     return [];
   }
 
-  /// Get CEFR difficulty level for a message
+  /// Get CEFR difficulty level for a message (Firestore cached)
   Future<String> getMessageDifficulty(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_difficultyCache.containsKey(cacheKey)) return _difficultyCache[cacheKey]!;
+
+    // Check Firestore cache
+    try {
+      final doc = await _firestore.collection('ai_cache').doc('diff_$cacheKey').get();
+      if (doc.exists) {
+        final level = doc.data()?['level'] as String? ?? 'A1';
+        _difficultyCache[cacheKey] = level;
+        return level;
+      }
+    } catch (_) {}
 
     final langName = _langName(language);
     final result = await _callGemini(
@@ -183,6 +264,13 @@ class ChatLearningService {
 
     final level = result?['level'] as String? ?? 'A1';
     _difficultyCache[cacheKey] = level;
+
+    // Cache to Firestore (non-blocking)
+    _firestore.collection('ai_cache').doc('diff_$cacheKey').set({
+      'level': level, 'text': text, 'language': language,
+      'createdAt': FieldValue.serverTimestamp(),
+    }).catchError((_) {});
+
     return level;
   }
 

@@ -5,6 +5,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart';
 import '../../domain/entities/achievement.dart';
 import '../../domain/entities/user_level.dart';
 import '../../domain/entities/daily_challenge.dart';
@@ -40,6 +41,7 @@ abstract class GamificationRemoteDataSource {
     required LeaderboardType type,
     String? region,
     required int limit,
+    String? timePeriod,
   });
   Future<int> getUserRank(String userId, LeaderboardType type);
   Future<List<LevelReward>> getLevelRewards(int level);
@@ -351,7 +353,24 @@ class GamificationRemoteDataSourceImpl
     required LeaderboardType type,
     String? region,
     required int limit,
+    String? timePeriod,
   }) async {
+    // If a time period is specified, aggregate XP from xp_transactions
+    if (timePeriod != null) {
+      try {
+        return await _getTimePeriodLeaderboard(
+          type: type,
+          region: region,
+          limit: limit,
+          timePeriod: timePeriod,
+        );
+      } catch (e) {
+        debugPrint('Leaderboard: Time period query failed, falling back to all-time: $e');
+        // Fall through to all-time query
+      }
+    }
+
+    // Default: all-time leaderboard from user_levels
     Query query = _userLevelsCollection
         .orderBy('totalXP', descending: true)
         .limit(limit);
@@ -373,6 +392,85 @@ class GamificationRemoteDataSourceImpl
         username: data['displayName'] as String? ?? data['username'] as String? ?? 'Unknown',
         level: data['level'] as int,
         totalXP: data['totalXP'] as int,
+        region: data['region'] as String? ?? '',
+        isVIP: data['isVIP'] as bool? ?? false,
+        photoUrl: data['photoUrl'] as String?,
+      ));
+    }
+
+    return entries;
+  }
+
+  /// Fetch leaderboard filtered by time period using xp_transactions collection.
+  /// Aggregates XP per user from transactions within the period, then fetches
+  /// user details from user_levels for display.
+  Future<List<LeaderboardEntryModel>> _getTimePeriodLeaderboard({
+    required LeaderboardType type,
+    String? region,
+    required int limit,
+    required String timePeriod,
+  }) async {
+    final now = DateTime.now();
+    DateTime startDate;
+    switch (timePeriod) {
+      case 'week':
+        startDate = now.subtract(const Duration(days: 7));
+        break;
+      case 'month':
+        startDate = DateTime(now.year, now.month - 1, now.day);
+        break;
+      case 'year':
+        startDate = DateTime(now.year - 1, now.month, now.day);
+        break;
+      default:
+        startDate = DateTime(2020); // all time fallback
+    }
+
+    // Query xp_transactions since startDate
+    final txSnapshot = await _xpTransactionsCollection
+        .where('createdAt',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(startDate))
+        .orderBy('createdAt', descending: true)
+        .limit(1000)
+        .get();
+
+    // Aggregate XP by userId
+    final xpByUser = <String, int>{};
+    for (var doc in txSnapshot.docs) {
+      final data = doc.data() as Map<String, dynamic>;
+      final userId = data['userId'] as String;
+      final xp = (data['xpAmount'] as num?)?.toInt() ?? 0;
+      xpByUser[userId] = (xpByUser[userId] ?? 0) + xp;
+    }
+
+    // Sort by XP descending
+    final sorted = xpByUser.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value));
+
+    // Fetch user details and apply regional filter
+    final entries = <LeaderboardEntryModel>[];
+    int rank = 1;
+    for (var entry in sorted) {
+      if (entries.length >= limit) break;
+
+      final userDoc = await _userLevelsCollection.doc(entry.key).get();
+      if (!userDoc.exists) continue;
+      final data = userDoc.data() as Map<String, dynamic>;
+
+      // Regional filter: skip if region doesn't match
+      if (type == LeaderboardType.regional && region != null) {
+        final userRegion = data['region'] as String? ?? '';
+        if (userRegion != region) continue;
+      }
+
+      entries.add(LeaderboardEntryModel(
+        rank: rank++,
+        userId: entry.key,
+        username: data['displayName'] as String? ??
+            data['username'] as String? ??
+            'Unknown',
+        level: data['level'] as int? ?? 1,
+        totalXP: entry.value, // period XP, not all-time
         region: data['region'] as String? ?? '',
         isVIP: data['isVIP'] as bool? ?? false,
         photoUrl: data['photoUrl'] as String?,

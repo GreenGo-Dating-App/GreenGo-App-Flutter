@@ -67,6 +67,7 @@ abstract class GamificationRepository {
     LeaderboardType type = LeaderboardType.global,
     String? region,
     int limit = 100,
+    String? timePeriod,
   });
 
   /// Get user's rank
