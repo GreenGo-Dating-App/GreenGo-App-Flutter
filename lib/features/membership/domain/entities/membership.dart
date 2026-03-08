@@ -146,9 +146,9 @@ class MembershipRules extends Equatable {
     this.badgeIcon,
   });
 
-  /// Default rules for FREE tier
+  /// Default rules for FREE tier (Base membership)
   static const MembershipRules freeDefaults = MembershipRules(
-    dailyMessageLimit: 10,
+    dailyMessageLimit: 100,
     dailySwipeLimit: 20,
     dailySuperLikeLimit: 1,
     hourlyLikeLimit: 5,
@@ -171,7 +171,7 @@ class MembershipRules extends Equatable {
 
   /// Default rules for SILVER tier
   static const MembershipRules silverDefaults = MembershipRules(
-    dailyMessageLimit: 50,
+    dailyMessageLimit: 500,
     dailySwipeLimit: 100,
     dailySuperLikeLimit: 3,
     hourlyLikeLimit: 10,
@@ -194,7 +194,7 @@ class MembershipRules extends Equatable {
 
   /// Default rules for GOLD tier
   static const MembershipRules goldDefaults = MembershipRules(
-    dailyMessageLimit: -1, // Unlimited
+    dailyMessageLimit: 2000,
     dailySwipeLimit: -1, // Unlimited
     dailySuperLikeLimit: 5,
     hourlyLikeLimit: 15,

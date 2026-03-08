@@ -221,6 +221,7 @@ class PronunciationService {
       'german': 'Kore',
       'italian': 'Kore',
       'portuguese': 'Kore',
+      'brazilian portuguese': 'Kore',
       'japanese': 'Kore',
       'korean': 'Kore',
       'chinese': 'Kore',
@@ -229,20 +230,24 @@ class PronunciationService {
       'turkish': 'Charon',
       'russian': 'Charon',
     };
-    return voiceMap[language.toLowerCase()] ?? 'Kore';
+    // Resolve language code to name first, then look up voice
+    final langName = _getLanguageName(language).toLowerCase();
+    return voiceMap[langName] ?? voiceMap[language.toLowerCase()] ?? 'Kore';
   }
 
   /// Get full language name from code or name for the TTS prompt.
   String _getLanguageName(String language) {
     // If it's already a full name, return as-is
     if (language.length > 3) return language;
+    final upper = language.toUpperCase().replaceAll('-', '_');
     const names = {
       'EN': 'English', 'IT': 'Italian', 'ES': 'Spanish',
       'FR': 'French', 'DE': 'German', 'PT': 'Portuguese',
+      'PT_BR': 'Brazilian Portuguese',
       'JA': 'Japanese', 'KO': 'Korean', 'ZH': 'Chinese',
       'AR': 'Arabic', 'HI': 'Hindi', 'TR': 'Turkish', 'RU': 'Russian',
     };
-    return names[language.toUpperCase()] ?? language;
+    return names[upper] ?? language;
   }
 
 
