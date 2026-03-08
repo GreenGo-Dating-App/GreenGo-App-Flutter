@@ -1,9 +1,11 @@
 import 'dart:ui' as ui;
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/pronunciation_service.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Bubble Widget
@@ -39,12 +41,56 @@ class MessageBubble extends StatefulWidget {
 
 class _MessageBubbleState extends State<MessageBubble> {
   bool _isStarred = false;
+  bool _isTtsLoading = false;
+  bool _isTtsPlaying = false;
+  static final AudioPlayer _ttsPlayer = AudioPlayer();
 
   @override
   void initState() {
     super.initState();
-    // Check if message is starred from metadata
     _isStarred = widget.message.metadata?['isStarred'] == true;
+  }
+
+  /// Play TTS for the message text on double-tap
+  Future<void> _playTts() async {
+    final message = widget.message;
+    if (message.type != MessageType.text) return;
+
+    // If already playing, stop
+    if (_isTtsPlaying) {
+      await _ttsPlayer.stop();
+      if (mounted) setState(() => _isTtsPlaying = false);
+      return;
+    }
+
+    final text = message.content;
+    if (text.isEmpty) return;
+
+    // Use detected language from message, or default to 'en'
+    final lang = message.detectedLanguage ?? message.metadata?['language'] as String? ?? 'en';
+
+    setState(() => _isTtsLoading = true);
+
+    try {
+      final url = await PronunciationService().getPronunciationUrl(text, lang);
+      if (url != null && mounted) {
+        setState(() {
+          _isTtsLoading = false;
+          _isTtsPlaying = true;
+        });
+
+        _ttsPlayer.onPlayerComplete.listen((_) {
+          if (mounted) setState(() => _isTtsPlaying = false);
+        });
+
+        await _ttsPlayer.play(UrlSource(url));
+      } else {
+        if (mounted) setState(() => _isTtsLoading = false);
+      }
+    } catch (e) {
+      debugPrint('TTS playback error: $e');
+      if (mounted) setState(() { _isTtsLoading = false; _isTtsPlaying = false; });
+    }
   }
 
   @override
@@ -61,6 +107,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     return GestureDetector(
+      onDoubleTap: message.type == MessageType.text ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
@@ -95,10 +142,33 @@ class _MessageBubbleState extends State<MessageBubble> {
 
               const SizedBox(height: 4),
 
-              // Translation indicator, star, and time
+              // TTS, translation indicator, star, and time
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  // TTS indicator
+                  if (_isTtsLoading) ...[
+                    SizedBox(
+                      width: 12,
+                      height: 12,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 1.5,
+                        color: isCurrentUser
+                            ? AppColors.deepBlack.withOpacity(0.6)
+                            : AppColors.richGold,
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                  ] else if (_isTtsPlaying) ...[
+                    Icon(
+                      Icons.volume_up,
+                      size: 14,
+                      color: isCurrentUser
+                          ? AppColors.deepBlack.withOpacity(0.6)
+                          : AppColors.richGold,
+                    ),
+                    const SizedBox(width: 4),
+                  ],
                   // Star indicator
                   if (_isStarred) ...[
                     Icon(
