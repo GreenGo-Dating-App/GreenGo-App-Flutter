@@ -1671,6 +1671,9 @@ class _ChatScreenState extends State<ChatScreen> {
                               isCurrentUser:
                                   message.senderId == widget.currentUserId,
                               currentUserId: widget.currentUserId,
+                              otherUserLanguage: widget.otherUserProfile.languages.isNotEmpty
+                                  ? widget.otherUserProfile.languages.first
+                                  : null,
                               onReport: (msg) => _reportMessage(context, msg),
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
                               onReply: (msg) => _setReplyMessage(msg),

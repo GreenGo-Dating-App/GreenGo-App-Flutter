@@ -18,6 +18,7 @@ class MessageBubble extends StatefulWidget {
   final Message message;
   final bool isCurrentUser;
   final String? currentUserId;
+  final String? otherUserLanguage;
   final Function(Message)? onReport;
   final Function(Message, bool)? onStar;
   final Function(Message)? onReply;
@@ -29,6 +30,7 @@ class MessageBubble extends StatefulWidget {
     required this.message,
     required this.isCurrentUser,
     this.currentUserId,
+    this.otherUserLanguage,
     this.onReport,
     this.onStar,
     this.onReply,
@@ -64,7 +66,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
   Future<void> _loadEnhancements() async {
     final message = widget.message;
-    final language = message.detectedLanguage ?? message.metadata?['language'] as String? ?? 'en';
+    final language = message.detectedLanguage ?? message.metadata?['language'] as String? ?? widget.otherUserLanguage ?? 'en';
     final service = ChatLearningService();
 
     // Load difficulty
@@ -126,7 +128,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   void _showWordBreakdown() async {
-    final language = widget.message.detectedLanguage ?? widget.message.metadata?['language'] as String? ?? 'en';
+    final language = widget.message.detectedLanguage ?? widget.message.metadata?['language'] as String? ?? widget.otherUserLanguage ?? 'en';
     final words = await ChatLearningService().getWordBreakdown(
       widget.message.content,
       language,
@@ -189,8 +191,11 @@ class _MessageBubbleState extends State<MessageBubble> {
     final text = message.content;
     if (text.isEmpty) return;
 
-    // Use detected language from message, or default to 'en'
-    final lang = message.detectedLanguage ?? message.metadata?['language'] as String? ?? 'en';
+    // Use detected language from message, then other user's language, then 'en'
+    final lang = message.detectedLanguage
+        ?? message.metadata?['language'] as String?
+        ?? widget.otherUserLanguage
+        ?? 'en';
 
     setState(() => _isTtsLoading = true);
 
@@ -202,12 +207,14 @@ class _MessageBubbleState extends State<MessageBubble> {
           _isTtsPlaying = true;
         });
 
-        _ttsPlayer.onPlayerComplete.listen((_) {
+        // Listen once for completion (avoid stacking listeners)
+        _ttsPlayer.onPlayerComplete.first.then((_) {
           if (mounted) setState(() => _isTtsPlaying = false);
         });
 
         await _ttsPlayer.play(UrlSource(url));
       } else {
+        debugPrint('TTS: No audio URL returned for lang=$lang text="${text.length > 30 ? text.substring(0, 30) : text}"');
         if (mounted) setState(() => _isTtsLoading = false);
       }
     } catch (e) {

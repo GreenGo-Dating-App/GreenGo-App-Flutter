@@ -90,13 +90,13 @@ class PronunciationService {
     if (audioBytes == null) return null;
 
     // 4. Upload to Firebase Storage
-    final storagePath = 'pronunciation_audio/$language/$key.mp3';
+    final storagePath = 'pronunciation_audio/$language/$key.wav';
     try {
       final ref = _storage.ref(storagePath);
       await ref.putData(
         audioBytes,
         SettableMetadata(
-          contentType: 'audio/mpeg',
+          contentType: 'audio/wav',
           customMetadata: {
             'phrase': phrase,
             'language': language,
@@ -145,8 +145,7 @@ class PronunciationService {
   }
 
   /// Synthesize speech using Gemini 2.0 Flash native TTS.
-  /// Returns raw PCM audio encoded as WAV, then stored as .mp3 extension
-  /// (Firebase Storage serves it correctly regardless).
+  /// Returns audio wrapped in a proper WAV header so AudioPlayer can decode it.
   Future<Uint8List?> _synthesizeWithGeminiTts(
       String phrase, String language, String apiKey) async {
     final languageName = _getLanguageName(language);
@@ -183,7 +182,7 @@ class PronunciationService {
       url,
       headers: {'Content-Type': 'application/json'},
       body: body,
-    ).timeout(const Duration(seconds: 20));
+    ).timeout(const Duration(seconds: 30));
 
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as Map<String, dynamic>;
@@ -196,8 +195,21 @@ class PronunciationService {
               parts[0]['inlineData'] as Map<String, dynamic>?;
           if (inlineData != null) {
             final audioBase64 = inlineData['data'] as String?;
+            final mimeType = inlineData['mimeType'] as String? ?? 'audio/L16;rate=24000';
             if (audioBase64 != null) {
-              return base64Decode(audioBase64);
+              final rawPcm = base64Decode(audioBase64);
+              // Gemini returns raw PCM (linear16). Wrap in WAV header for playback.
+              if (mimeType.contains('L16') || mimeType.contains('pcm') || mimeType.contains('raw')) {
+                // Parse sample rate from mime type (e.g., "audio/L16;rate=24000")
+                int sampleRate = 24000;
+                final rateMatch = RegExp(r'rate=(\d+)').firstMatch(mimeType);
+                if (rateMatch != null) {
+                  sampleRate = int.parse(rateMatch.group(1)!);
+                }
+                return _addWavHeader(rawPcm, sampleRate: sampleRate);
+              }
+              // Already in a playable format (WAV/MP3)
+              return rawPcm;
             }
           }
         }
@@ -209,6 +221,50 @@ class PronunciationService {
           '${response.body.length > 200 ? response.body.substring(0, 200) : response.body}');
     }
     return null;
+  }
+
+  /// Add a 44-byte WAV header to raw PCM data (mono, 16-bit, given sample rate).
+  Uint8List _addWavHeader(Uint8List pcmData, {int sampleRate = 24000, int channels = 1, int bitsPerSample = 16}) {
+    final byteRate = sampleRate * channels * (bitsPerSample ~/ 8);
+    final blockAlign = channels * (bitsPerSample ~/ 8);
+    final dataSize = pcmData.length;
+    final fileSize = 36 + dataSize;
+
+    final header = ByteData(44);
+    // RIFF header
+    header.setUint8(0, 0x52); // R
+    header.setUint8(1, 0x49); // I
+    header.setUint8(2, 0x46); // F
+    header.setUint8(3, 0x46); // F
+    header.setUint32(4, fileSize, Endian.little);
+    header.setUint8(8, 0x57);  // W
+    header.setUint8(9, 0x41);  // A
+    header.setUint8(10, 0x56); // V
+    header.setUint8(11, 0x45); // E
+    // fmt chunk
+    header.setUint8(12, 0x66); // f
+    header.setUint8(13, 0x6D); // m
+    header.setUint8(14, 0x74); // t
+    header.setUint8(15, 0x20); // (space)
+    header.setUint32(16, 16, Endian.little); // chunk size
+    header.setUint16(20, 1, Endian.little);  // PCM format
+    header.setUint16(22, channels, Endian.little);
+    header.setUint32(24, sampleRate, Endian.little);
+    header.setUint32(28, byteRate, Endian.little);
+    header.setUint16(32, blockAlign, Endian.little);
+    header.setUint16(34, bitsPerSample, Endian.little);
+    // data chunk
+    header.setUint8(36, 0x64); // d
+    header.setUint8(37, 0x61); // a
+    header.setUint8(38, 0x74); // t
+    header.setUint8(39, 0x61); // a
+    header.setUint32(40, dataSize, Endian.little);
+
+    // Combine header + PCM data
+    final wav = Uint8List(44 + dataSize);
+    wav.setRange(0, 44, header.buffer.asUint8List());
+    wav.setRange(44, 44 + dataSize, pcmData);
+    return wav;
   }
 
   /// Select a Gemini TTS voice suited for the target language.
