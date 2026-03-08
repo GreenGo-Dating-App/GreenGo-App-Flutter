@@ -119,9 +119,6 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _phraseTranslation;
   bool _showPhraseOfDay = true;
 
-  // Shadowing mode
-  bool _isShadowing = false;
-
   // Pagination
   int _messageLimit = 100;
   bool _isLoadingMore = false;
@@ -1905,28 +1902,11 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       actions: [
-        // Language picker for this chat
-        GestureDetector(
-          onTap: _showLanguagePicker,
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-            decoration: BoxDecoration(
-              color: AppColors.backgroundDark,
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: AppColors.divider),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(Icons.language, size: 14, color: AppColors.richGold),
-                const SizedBox(width: 2),
-                Text(
-                  _targetLanguage.toUpperCase(),
-                  style: const TextStyle(color: AppColors.richGold, fontSize: 10, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-          ),
+        // Language picker icon
+        IconButton(
+          icon: const Icon(Icons.language, color: AppColors.textSecondary),
+          tooltip: 'Chat Language',
+          onPressed: _showLanguagePicker,
         ),
         // Translation toggle button
         IconButton(
@@ -1955,14 +1935,6 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             );
           },
-        ),
-        IconButton(
-          icon: Icon(
-            _isShadowing ? Icons.stop_circle : Icons.headphones,
-            color: _isShadowing ? Colors.red : AppColors.textSecondary,
-          ),
-          tooltip: _isShadowing ? 'Stop Shadowing' : 'Shadowing Mode',
-          onPressed: _isShadowing ? () => setState(() => _isShadowing = false) : _startShadowingMode,
         ),
         IconButton(
           icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
@@ -2268,59 +2240,6 @@ class _ChatScreenState extends State<ChatScreen> {
         ],
       ),
     );
-  }
-
-  void _startShadowingMode() async {
-    if (_isShadowing) return;
-
-    // Get current messages from bloc state
-    final state = _chatBloc.state;
-    if (state is! ChatLoaded) return;
-
-    final receivedMessages = state.messages
-        .where((m) => m.senderId != widget.currentUserId && m.type == MessageType.text)
-        .take(5)
-        .toList()
-        .reversed
-        .toList(); // Oldest first
-
-    if (receivedMessages.isEmpty) return;
-
-    setState(() => _isShadowing = true);
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Shadowing Mode: Listen and repeat each message'),
-        duration: Duration(seconds: 2),
-        backgroundColor: AppColors.backgroundCard,
-      ),
-    );
-
-    final pronunciationService = PronunciationService();
-    final player = AudioPlayer();
-
-    for (final msg in receivedMessages) {
-      if (!mounted || !_isShadowing) break;
-      final lang = msg.detectedLanguage ?? msg.metadata?['language'] ?? 'en';
-      final url = await pronunciationService.getPronunciationUrl(msg.content, lang);
-      if (url != null && mounted) {
-        await player.play(UrlSource(url));
-        await player.onPlayerComplete.first;
-        await Future.delayed(const Duration(seconds: 1));
-      }
-    }
-
-    if (mounted) {
-      setState(() => _isShadowing = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Shadowing complete! Great practice!'),
-          duration: Duration(seconds: 2),
-          backgroundColor: AppColors.backgroundCard,
-        ),
-      );
-    }
-    player.dispose();
   }
 
   void _showPronunciationChallenge() async {
