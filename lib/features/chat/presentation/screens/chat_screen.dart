@@ -1916,17 +1916,74 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       actions: [
-        // Language picker icon
+        // Tools menu (learning features)
         IconButton(
-          icon: const Icon(Icons.language, color: AppColors.textSecondary),
-          tooltip: 'Chat Language',
-          onPressed: _showLanguagePicker,
+          icon: const Icon(Icons.build_outlined, color: AppColors.textSecondary),
+          tooltip: 'Tools',
+          onPressed: _showToolsMenu,
         ),
+        // Chat options menu (admin: delete, block, report)
         IconButton(
           icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
           onPressed: () => _showChatOptionsMenu(context),
         ),
       ],
+    );
+  }
+
+  /// Show tools menu with language and learning features
+  void _showToolsMenu() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (bottomSheetContext) => Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Row(
+              children: [
+                Icon(Icons.build_outlined, color: AppColors.richGold),
+                SizedBox(width: 8),
+                Text('Tools', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+              ],
+            ),
+            const SizedBox(height: 16),
+            _buildOptionItem(
+              icon: Icons.language,
+              label: 'Chat Language ($_targetLanguage)',
+              color: AppColors.richGold,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _showLanguagePicker();
+              },
+            ),
+            _buildOptionItem(
+              icon: Icons.tune,
+              label: 'Chat Settings',
+              color: AppColors.textPrimary,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _showChatSettings();
+              },
+            ),
+            _buildOptionItem(
+              icon: Icons.mic,
+              label: 'Pronunciation Challenge',
+              color: AppColors.richGold,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _showPronunciationChallenge();
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
     );
   }
 
@@ -2075,24 +2132,6 @@ class _ChatScreenState extends State<ChatScreen> {
               onTap: () {
                 Navigator.pop(bottomSheetContext);
                 _confirmDeleteChatForBoth(context);
-              },
-            ),
-            _buildOptionItem(
-              icon: Icons.mic,
-              label: 'Pronunciation Challenge',
-              color: AppColors.richGold,
-              onTap: () {
-                Navigator.pop(bottomSheetContext);
-                _showPronunciationChallenge();
-              },
-            ),
-            _buildOptionItem(
-              icon: Icons.tune,
-              label: 'Chat Settings',
-              color: AppColors.textPrimary,
-              onTap: () {
-                Navigator.pop(bottomSheetContext);
-                _showChatSettings();
               },
             ),
             const Divider(color: AppColors.divider, height: 1),
