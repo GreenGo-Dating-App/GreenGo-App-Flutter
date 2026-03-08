@@ -278,7 +278,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
     return GestureDetector(
       onTap: (!isCurrentUser && message.type == MessageType.text && widget.showWordBreakdown) ? _showWordBreakdown : null,
-      onDoubleTap: (message.type == MessageType.text && widget.showPronunciation) ? _playTts : null,
+      onDoubleTap: (message.type == MessageType.text && widget.showPronunciation && hasTranslation) ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,

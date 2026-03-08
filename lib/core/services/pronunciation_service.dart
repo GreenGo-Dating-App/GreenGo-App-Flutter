@@ -153,7 +153,7 @@ class PronunciationService {
     final voice = _getGeminiVoice(language);
 
     final url = Uri.parse(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey');
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=$apiKey');
 
     final body = jsonEncode({
       'contents': [
@@ -293,8 +293,6 @@ class PronunciationService {
 
   /// Get full language name from code or name for the TTS prompt.
   String _getLanguageName(String language) {
-    // If it's already a full name, return as-is
-    if (language.length > 3) return language;
     final upper = language.toUpperCase().replaceAll('-', '_');
     const names = {
       'EN': 'English', 'IT': 'Italian', 'ES': 'Spanish',
@@ -303,7 +301,8 @@ class PronunciationService {
       'JA': 'Japanese', 'KO': 'Korean', 'ZH': 'Chinese',
       'AR': 'Arabic', 'HI': 'Hindi', 'TR': 'Turkish', 'RU': 'Russian',
     };
-    return names[upper] ?? language;
+    // Check map first, then return as-is if it looks like a full name
+    return names[upper] ?? (language.length > 5 ? language : language);
   }
 
 
