@@ -1976,19 +1976,12 @@ class _ChatScreenState extends State<ChatScreen> {
   void _showLanguagePicker() {
     const languages = [
       {'code': 'en', 'name': 'English', 'flag': '🇬🇧'},
+      {'code': 'de', 'name': 'Deutsch', 'flag': '🇩🇪'},
       {'code': 'es', 'name': 'Español', 'flag': '🇪🇸'},
       {'code': 'fr', 'name': 'Français', 'flag': '🇫🇷'},
-      {'code': 'de', 'name': 'Deutsch', 'flag': '🇩🇪'},
       {'code': 'it', 'name': 'Italiano', 'flag': '🇮🇹'},
       {'code': 'pt', 'name': 'Português', 'flag': '🇵🇹'},
       {'code': 'pt_BR', 'name': 'Português (BR)', 'flag': '🇧🇷'},
-      {'code': 'ja', 'name': '日本語', 'flag': '🇯🇵'},
-      {'code': 'ko', 'name': '한국어', 'flag': '🇰🇷'},
-      {'code': 'zh', 'name': '中文', 'flag': '🇨🇳'},
-      {'code': 'ar', 'name': 'العربية', 'flag': '🇸🇦'},
-      {'code': 'hi', 'name': 'हिन्दी', 'flag': '🇮🇳'},
-      {'code': 'ru', 'name': 'Русский', 'flag': '🇷🇺'},
-      {'code': 'tr', 'name': 'Türkçe', 'flag': '🇹🇷'},
     ];
 
     showModalBottomSheet(
