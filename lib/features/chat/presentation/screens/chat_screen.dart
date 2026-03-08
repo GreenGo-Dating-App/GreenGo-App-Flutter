@@ -74,7 +74,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final Map<String, String> _translatedMessages = {};
   bool _hasCheckedModels = false;
   String? _userLanguage;
-  bool _translationEnabled = true; // Translation toggle state
+  bool _translationEnabled = false; // Translation toggle state — disabled by default
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
 
@@ -90,6 +90,10 @@ class _ChatScreenState extends State<ChatScreen> {
   // Reply state
   Message? _replyingToMessage;
 
+  // Pagination
+  int _messageLimit = 100;
+  bool _isLoadingMore = false;
+
   LanguageProvider? _languageProvider;
   String? _currentUserName;
   Profile? _currentUserProfile;
@@ -100,11 +104,13 @@ class _ChatScreenState extends State<ChatScreen> {
     // Suppress foreground push notifications for this conversation
     PushNotificationService.activeConversationId = widget.matchId;
     _translationService.initialize();
+    _scrollController.addListener(_onScroll);
     _chatBloc = di.sl<ChatBloc>()
       ..add(ChatConversationLoaded(
         matchId: widget.matchId,
         currentUserId: widget.currentUserId,
         otherUserId: widget.otherUserId,
+        limit: _messageLimit,
       ));
     _chatDataSource = ChatRemoteDataSourceImpl(
       firestore: FirebaseFirestore.instance,
@@ -156,8 +162,30 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   @override
+  /// Load more messages when user scrolls to the top (oldest messages)
+  void _onScroll() {
+    if (_isLoadingMore) return;
+    // In a reversed ListView, maxScrollExtent is the top (oldest messages)
+    if (_scrollController.position.pixels >=
+        _scrollController.position.maxScrollExtent - 100) {
+      setState(() => _isLoadingMore = true);
+      _messageLimit += 100;
+      _chatBloc.add(ChatConversationLoaded(
+        matchId: widget.matchId,
+        currentUserId: widget.currentUserId,
+        otherUserId: widget.otherUserId,
+        limit: _messageLimit,
+      ));
+      // Reset loading flag after a short delay
+      Future.delayed(const Duration(seconds: 1), () {
+        if (mounted) setState(() => _isLoadingMore = false);
+      });
+    }
+  }
+
   @override
   void dispose() {
+    _scrollController.removeListener(_onScroll);
     // Clear active conversation so notifications resume
     if (PushNotificationService.activeConversationId == widget.matchId) {
       PushNotificationService.activeConversationId = null;
@@ -1522,15 +1550,41 @@ class _ChatScreenState extends State<ChatScreen> {
                       );
                     }
 
+                    final hasMoreMessages = messages.length >= _messageLimit;
+                    final extraItems = (isOtherUserTyping ? 1 : 0) + (hasMoreMessages ? 1 : 0);
+
                     return ListView.builder(
                       controller: _scrollController,
                       reverse: true,
                       padding: const EdgeInsets.symmetric(vertical: 16),
-                      itemCount: messages.length + (isOtherUserTyping ? 1 : 0),
+                      itemCount: messages.length + extraItems,
                       itemBuilder: (context, index) {
-                        // Typing indicator
+                        // Typing indicator at position 0
                         if (index == 0 && isOtherUserTyping) {
                           return _buildTypingIndicator();
+                        }
+
+                        // "Load more" indicator at the end (top of chat in reversed list)
+                        final loadMoreIndex = messages.length + (isOtherUserTyping ? 1 : 0);
+                        if (hasMoreMessages && index == loadMoreIndex) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Center(
+                              child: _isLoadingMore
+                                  ? const SizedBox(
+                                      width: 24,
+                                      height: 24,
+                                      child: CircularProgressIndicator(strokeWidth: 2),
+                                    )
+                                  : Text(
+                                      'Scroll up for older messages',
+                                      style: TextStyle(
+                                        color: AppColors.textSecondary,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                            ),
+                          );
                         }
 
                         final messageIndex =

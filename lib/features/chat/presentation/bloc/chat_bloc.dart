@@ -42,6 +42,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   String? _currentUserId;
   String? _otherUserId;
   bool _hasLoadedOnce = false;
+  int _messageLimit = 100;
 
   ChatBloc({
     required this.getConversation,
@@ -87,6 +88,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         matchId: _matchId!,
         currentUserId: _currentUserId!,
         otherUserId: _otherUserId!,
+        limit: _messageLimit,
       ));
     }
   }
@@ -119,6 +121,9 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
 
     _conversationId = conversation.conversationId;
     _hasLoadedOnce = true;
+    if (event.limit != null) {
+      _messageLimit = event.limit!;
+    }
 
     // Use emit.forEach to properly handle stream emissions
     await emit.forEach(
@@ -126,6 +131,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         GetMessagesParams(
           conversationId: conversation.conversationId,
           userId: event.currentUserId,
+          limit: _messageLimit,
         ),
       ),
       onData: (messagesResult) {
