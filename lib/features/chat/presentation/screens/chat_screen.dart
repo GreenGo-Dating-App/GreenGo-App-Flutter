@@ -85,6 +85,17 @@ class _ChatScreenState extends State<ChatScreen> {
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
 
+  // Chat learning settings (user-customizable)
+  bool _showOriginalText = true;       // Show original text below translation
+  bool _showDifficultyBadge = true;    // Show CEFR level badge on messages
+  bool _showSmartReplies = true;       // Show smart reply suggestions
+  bool _showGrammarCheck = true;       // Check grammar before sending
+  bool _showCulturalTips = true;       // Show cultural context tooltips
+  bool _showWordBreakdown = true;      // Tap message for word breakdown
+  bool _showPronunciation = true;      // Double-tap for TTS pronunciation
+  bool _showXpBar = true;             // Show streak & XP progress bar
+  bool _showPhraseOfDaySetting = true; // Show phrase of the day banner
+
   // Media preview state
   File? _selectedImage;
   File? _selectedVideo;
@@ -1543,9 +1554,9 @@ class _ChatScreenState extends State<ChatScreen> {
         body: Column(
           children: [
             // Phrase of the Day banner
-            _buildPhraseOfDay(),
+            if (_showPhraseOfDaySetting) _buildPhraseOfDay(),
             // Chat XP bar
-            if (_sessionXp > 0) _buildXpBar(),
+            if (_showXpBar && _sessionXp > 0) _buildXpBar(),
             // Messages list
             Expanded(
               child: BlocBuilder<ChatBloc, ChatState>(
@@ -1710,9 +1721,12 @@ class _ChatScreenState extends State<ChatScreen> {
                               isCurrentUser:
                                   message.senderId == widget.currentUserId,
                               currentUserId: widget.currentUserId,
-                              otherUserLanguage: widget.otherUserProfile.languages.isNotEmpty
-                                  ? widget.otherUserProfile.languages.first
-                                  : null,
+                              otherUserLanguage: _targetLanguage,
+                              showOriginalText: _showOriginalText,
+                              showDifficultyBadge: _showDifficultyBadge,
+                              showCulturalTips: _showCulturalTips,
+                              showWordBreakdown: _showWordBreakdown,
+                              showPronunciation: _showPronunciation,
                               onReport: (msg) => _reportMessage(context, msg),
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
                               onReply: (msg) => _setReplyMessage(msg),
@@ -1734,10 +1748,10 @@ class _ChatScreenState extends State<ChatScreen> {
             _buildReplyPreview(),
 
             // Grammar correction banner
-            _buildGrammarBanner(),
+            if (_showGrammarCheck) _buildGrammarBanner(),
 
             // Smart reply suggestions
-            _buildSmartRepliesBar(),
+            if (_showSmartReplies) _buildSmartRepliesBar(),
 
             // Upload progress indicator
             if (_isUploadingMedia)
@@ -2072,6 +2086,15 @@ class _ChatScreenState extends State<ChatScreen> {
                 _showPronunciationChallenge();
               },
             ),
+            _buildOptionItem(
+              icon: Icons.tune,
+              label: 'Chat Settings',
+              color: AppColors.textPrimary,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _showChatSettings();
+              },
+            ),
             const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.block,
@@ -2094,6 +2117,152 @@ class _ChatScreenState extends State<ChatScreen> {
             const SizedBox(height: 16),
           ],
         ),
+      ),
+    );
+  }
+
+  /// Show chat learning settings panel
+  void _showChatSettings() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (ctx) => StatefulBuilder(
+        builder: (context, setSheetState) => Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Row(
+                children: [
+                  Icon(Icons.tune, color: AppColors.richGold),
+                  SizedBox(width: 8),
+                  Text('Chat Settings', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                ],
+              ),
+              const SizedBox(height: 4),
+              const Text(
+                'Customise your learning experience in this chat',
+                style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
+              ),
+              const SizedBox(height: 16),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.text_fields,
+                label: 'Show Original Text',
+                subtitle: 'Display the original message below translation',
+                value: _showOriginalText,
+                onChanged: (v) => setState(() => _showOriginalText = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.school,
+                label: 'Difficulty Badges',
+                subtitle: 'Show CEFR level (A1-C2) on messages',
+                value: _showDifficultyBadge,
+                onChanged: (v) => setState(() => _showDifficultyBadge = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.auto_awesome,
+                label: 'Smart Replies',
+                subtitle: 'Suggest replies in the target language',
+                value: _showSmartReplies,
+                onChanged: (v) => setState(() => _showSmartReplies = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.spellcheck,
+                label: 'Grammar Check',
+                subtitle: 'Check grammar before sending messages',
+                value: _showGrammarCheck,
+                onChanged: (v) => setState(() => _showGrammarCheck = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.lightbulb_outline,
+                label: 'Cultural Tips',
+                subtitle: 'Show cultural context for idioms and expressions',
+                value: _showCulturalTips,
+                onChanged: (v) => setState(() => _showCulturalTips = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.segment,
+                label: 'Word Breakdown',
+                subtitle: 'Tap messages for word-by-word translation',
+                value: _showWordBreakdown,
+                onChanged: (v) => setState(() => _showWordBreakdown = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.volume_up,
+                label: 'Pronunciation (TTS)',
+                subtitle: 'Double-tap messages to hear pronunciation',
+                value: _showPronunciation,
+                onChanged: (v) => setState(() => _showPronunciation = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.local_fire_department,
+                label: 'XP & Streak Bar',
+                subtitle: 'Show session XP and word count progress',
+                value: _showXpBar,
+                onChanged: (v) => setState(() => _showXpBar = v),
+              ),
+              _buildSettingToggle(
+                setSheetState,
+                icon: Icons.today,
+                label: 'Phrase of the Day',
+                subtitle: 'Show a daily phrase to practice',
+                value: _showPhraseOfDaySetting,
+                onChanged: (v) => setState(() => _showPhraseOfDaySetting = v),
+              ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSettingToggle(
+    StateSetter setSheetState, {
+    required IconData icon,
+    required String label,
+    required String subtitle,
+    required bool value,
+    required ValueChanged<bool> onChanged,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Row(
+        children: [
+          Icon(icon, size: 20, color: value ? AppColors.richGold : AppColors.textTertiary),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(label, style: TextStyle(color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w500)),
+                Text(subtitle, style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
+              ],
+            ),
+          ),
+          Switch(
+            value: value,
+            onChanged: (v) {
+              setSheetState(() {});
+              onChanged(v);
+            },
+            activeColor: AppColors.richGold,
+            inactiveTrackColor: AppColors.backgroundDark,
+          ),
+        ],
       ),
     );
   }

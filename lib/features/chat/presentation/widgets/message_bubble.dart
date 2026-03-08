@@ -19,6 +19,11 @@ class MessageBubble extends StatefulWidget {
   final bool isCurrentUser;
   final String? currentUserId;
   final String? otherUserLanguage;
+  final bool showOriginalText;
+  final bool showDifficultyBadge;
+  final bool showCulturalTips;
+  final bool showWordBreakdown;
+  final bool showPronunciation;
   final Function(Message)? onReport;
   final Function(Message, bool)? onStar;
   final Function(Message)? onReply;
@@ -31,6 +36,11 @@ class MessageBubble extends StatefulWidget {
     required this.isCurrentUser,
     this.currentUserId,
     this.otherUserLanguage,
+    this.showOriginalText = true,
+    this.showDifficultyBadge = true,
+    this.showCulturalTips = true,
+    this.showWordBreakdown = true,
+    this.showPronunciation = true,
     this.onReport,
     this.onStar,
     this.onReply,
@@ -59,7 +69,7 @@ class _MessageBubbleState extends State<MessageBubble> {
   void initState() {
     super.initState();
     _isStarred = widget.message.metadata?['isStarred'] == true;
-    if (!widget.isCurrentUser && widget.message.type == MessageType.text) {
+    if (!widget.isCurrentUser && widget.message.type == MessageType.text && (widget.showDifficultyBadge || widget.showCulturalTips)) {
       _loadEnhancements();
     }
   }
@@ -237,8 +247,8 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     return GestureDetector(
-      onTap: (!isCurrentUser && message.type == MessageType.text) ? _showWordBreakdown : null,
-      onDoubleTap: message.type == MessageType.text ? _playTts : null,
+      onTap: (!isCurrentUser && message.type == MessageType.text && widget.showWordBreakdown) ? _showWordBreakdown : null,
+      onDoubleTap: (message.type == MessageType.text && widget.showPronunciation) ? _playTts : null,
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
@@ -312,7 +322,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                     const SizedBox(width: 4),
                   ],
                   // Difficulty badge (CEFR level)
-                  if (_difficultyLevel != null) ...[
+                  if (_difficultyLevel != null && widget.showDifficultyBadge) ...[
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                       decoration: BoxDecoration(
@@ -566,7 +576,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               ),
             ),
             // Original text shown underneath for learning
-            if (hasTranslation) ...[
+            if (hasTranslation && widget.showOriginalText) ...[
               const SizedBox(height: 6),
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -603,7 +613,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               ),
             ],
             // Cultural tooltip icon
-            if (_culturalTooltip != null && !isCurrentUser) ...[
+            if (_culturalTooltip != null && !isCurrentUser && widget.showCulturalTips) ...[
               const SizedBox(height: 4),
               GestureDetector(
                 onTap: _showCulturalTooltip,
