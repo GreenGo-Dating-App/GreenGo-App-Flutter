@@ -81,7 +81,7 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _userLanguage;
   // The language the user wants to practice/use in this chat (can be changed per chat)
   String? _chatTargetLanguage;
-  bool _translationEnabled = false; // Translation toggle state — disabled by default
+  bool _translationEnabled = true; // Translation always active
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
 
@@ -1907,34 +1907,6 @@ class _ChatScreenState extends State<ChatScreen> {
           icon: const Icon(Icons.language, color: AppColors.textSecondary),
           tooltip: 'Chat Language',
           onPressed: _showLanguagePicker,
-        ),
-        // Translation toggle button
-        IconButton(
-          icon: Icon(
-            _translationEnabled ? Icons.translate : Icons.translate_outlined,
-            color: _translationEnabled ? AppColors.richGold : AppColors.textSecondary,
-          ),
-          tooltip: _translationEnabled ? AppLocalizations.of(context)!.chatDisableTranslation : AppLocalizations.of(context)!.chatEnableTranslation,
-          onPressed: () {
-            setState(() {
-              _translationEnabled = !_translationEnabled;
-              if (!_translationEnabled) {
-                _translatedMessages.clear();
-                _ownTranslatedMessages.clear();
-              }
-            });
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  _translationEnabled
-                      ? AppLocalizations.of(context)!.chatTranslationEnabled
-                      : AppLocalizations.of(context)!.chatTranslationDisabled,
-                ),
-                duration: const Duration(seconds: 1),
-                backgroundColor: AppColors.backgroundCard,
-              ),
-            );
-          },
         ),
         IconButton(
           icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
