@@ -271,13 +271,11 @@ class _ChatScreenState extends State<ChatScreen> {
     // Don't translate non-text messages
     if (message.type != MessageType.text) return message;
 
-    // Don't translate if already has translation from this language selection
-    if (message.translatedContent != null) return message;
-
-    // Check cache (single unified cache for all messages)
-    if (_translatedMessages.containsKey(message.messageId)) {
+    // Check cache — use our own cache keyed by messageId+language
+    final cacheKey = '${message.messageId}_$_targetLanguage';
+    if (_translatedMessages.containsKey(cacheKey)) {
       return message.copyWith(
-        translatedContent: _translatedMessages[message.messageId],
+        translatedContent: _translatedMessages[cacheKey],
       );
     }
 
@@ -295,7 +293,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       // Only cache if translation is different from original
       if (translatedText != message.content) {
-        _translatedMessages[message.messageId] = translatedText;
+        _translatedMessages[cacheKey] = translatedText;
         return message.copyWith(
           translatedContent: translatedText,
         );
@@ -1668,6 +1666,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
                         // Apply translation asynchronously
                         return FutureBuilder<Message>(
+                          key: ValueKey('${message.messageId}_$_targetLanguage'),
                           future: _translateMessage(message),
                           builder: (context, snapshot) {
                             final translatedMessage = snapshot.data ?? message;
