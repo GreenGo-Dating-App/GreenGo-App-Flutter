@@ -75,6 +75,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Cache for translated messages (all messages translated to selected language)
   final Map<String, String> _translatedMessages = {};
+  // Cache for detected source languages per message
+  final Map<String, String> _detectedLanguages = {};
   bool _hasCheckedModels = false;
   String? _userLanguage;
   // The language the user wants to practice/use in this chat (can be changed per chat)
@@ -279,7 +281,10 @@ class _ChatScreenState extends State<ChatScreen> {
     if (_translatedMessages.containsKey(cacheKey)) {
       final cached = _translatedMessages[cacheKey]!;
       if (cached != message.content) {
-        return message.copyWith(translatedContent: cached);
+        return message.copyWith(
+          translatedContent: cached,
+          detectedLanguage: _detectedLanguages[message.messageId] ?? message.detectedLanguage,
+        );
       }
       return message;
     }
@@ -298,9 +303,18 @@ class _ChatScreenState extends State<ChatScreen> {
       // Cache result
       _translatedMessages[cacheKey] = translatedText;
 
+      // Store detected source language for flag display
+      final detectedLang = _translationService.lastDetectedLanguage;
+      if (detectedLang != null) {
+        _detectedLanguages[message.messageId] = detectedLang;
+      }
+
       // Return with translation if different from original
       if (translatedText != message.content) {
-        return message.copyWith(translatedContent: translatedText);
+        return message.copyWith(
+          translatedContent: translatedText,
+          detectedLanguage: detectedLang ?? message.detectedLanguage,
+        );
       }
     } catch (e) {
       debugPrint('TRANSLATE ERROR: $e');

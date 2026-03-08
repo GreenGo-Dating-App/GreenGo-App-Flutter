@@ -14,6 +14,12 @@ class TranslationService {
   // Cache translations to avoid repeated API calls
   final Map<String, String> _translationCache = {};
 
+  // Last detected source language from translation
+  String? _lastDetectedLanguage;
+
+  /// Get the last detected source language from the most recent translation
+  String? get lastDetectedLanguage => _lastDetectedLanguage;
+
   /// Map language codes for display
   static final Map<String, String> _languageNames = {
     'en': 'English',
@@ -91,6 +97,11 @@ class TranslationService {
         }
         final result = buffer.toString();
 
+        // Extract detected source language (index 2 in response array)
+        if (decoded is List && decoded.length > 2 && decoded[2] is String) {
+          _lastDetectedLanguage = decoded[2] as String;
+        }
+
         if (result.isNotEmpty) {
           // Cache the result
           _translationCache[cacheKey] = result;
@@ -103,7 +114,7 @@ class TranslationService {
             }
           }
 
-          debugPrint('Translated: "$text" -> "$result"');
+          debugPrint('Translated: "$text" -> "$result" (detected: $_lastDetectedLanguage)');
           return result;
         }
       }
