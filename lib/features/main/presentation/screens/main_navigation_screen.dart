@@ -44,7 +44,6 @@ import '../../../../core/services/push_notification_service.dart';
 import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
-import '../../../coins/presentation/screens/shop_screen.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
@@ -188,7 +187,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           ..add(LoadLeaderboard(userId: widget.userId)),
         child: LeaderboardScreen(userId: widget.userId),
       ),
-      ShopScreen(userId: widget.userId),
+      CoinShopScreen(userId: widget.userId),
       BlocProvider.value(
         value: _profileBloc,
         child: EditProfileScreen(userId: widget.userId),
