@@ -2342,6 +2342,22 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         rethrow;
       }
 
+      // Create gift record
+      try {
+        final giftId = DateTime.now().millisecondsSinceEpoch.toString();
+        await FirebaseFirestore.instance.collection('coinGifts').doc(giftId).set({
+          'giftId': giftId,
+          'senderId': widget.userId,
+          'receiverId': recipientId,
+          'amount': amount,
+          'status': 'accepted',
+          'sentAt': FieldValue.serverTimestamp(),
+          'receivedAt': FieldValue.serverTimestamp(),
+        });
+      } catch (_) {
+        // Non-critical — gift record is for history only
+      }
+
       if (mounted) {
         setState(() {
           _currentCoinBalance -= amount;
@@ -2358,10 +2374,100 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         );
       }
+
+      // Send chat message (non-blocking)
+      _sendGiftChatMessage(
+        recipientId: recipientId,
+        senderName: (await FirebaseFirestore.instance.collection('profiles').doc(widget.userId).get())
+            .data()?['nickname'] as String? ?? 'Someone',
+        amount: amount,
+      );
     } catch (e, stackTrace) {
       debugPrint('SendCoins error: $e\n$stackTrace');
       _showError(AppLocalizations.of(context)!.shopFailedToSendCoins);
       setState(() => _isSendingCoins = false);
+    }
+  }
+
+  Future<void> _sendGiftChatMessage({
+    required String recipientId,
+    required String senderName,
+    required int amount,
+  }) async {
+    try {
+      final db = FirebaseFirestore.instance;
+
+      // Find existing conversation
+      String? conversationId;
+      var q = await db.collection('conversations')
+          .where('userId1', isEqualTo: widget.userId)
+          .where('userId2', isEqualTo: recipientId)
+          .limit(1).get();
+      if (q.docs.isNotEmpty) {
+        conversationId = q.docs.first.id;
+      } else {
+        q = await db.collection('conversations')
+            .where('userId1', isEqualTo: recipientId)
+            .where('userId2', isEqualTo: widget.userId)
+            .limit(1).get();
+        if (q.docs.isNotEmpty) {
+          conversationId = q.docs.first.id;
+        }
+      }
+
+      // Create conversation if needed
+      if (conversationId == null) {
+        final convRef = db.collection('conversations').doc();
+        conversationId = convRef.id;
+        final sortedIds = [widget.userId, recipientId]..sort();
+        await convRef.set({
+          'conversationId': conversationId,
+          'matchId': 'gift_${sortedIds[0]}_${sortedIds[1]}',
+          'userId1': widget.userId,
+          'userId2': recipientId,
+          'createdAt': FieldValue.serverTimestamp(),
+          'unreadCount': 0,
+          'isTyping': false,
+          'isPinned': false,
+          'isMuted': false,
+          'isArchived': false,
+          'isDeleted': false,
+          'conversationType': 'match',
+          'theme': 'gold',
+        });
+      }
+
+      // Send system message
+      final msgRef = db.collection('conversations')
+          .doc(conversationId).collection('messages').doc();
+      final systemMsg = '$senderName sent you $amount coins!';
+
+      await msgRef.set({
+        'messageId': msgRef.id,
+        'conversationId': conversationId,
+        'senderId': widget.userId,
+        'receiverId': recipientId,
+        'content': systemMsg,
+        'type': 'system',
+        'sentAt': FieldValue.serverTimestamp(),
+        'deliveredAt': FieldValue.serverTimestamp(),
+        'status': 'delivered',
+      });
+
+      await db.collection('conversations').doc(conversationId).set({
+        'lastMessage': {
+          'messageId': msgRef.id,
+          'senderId': widget.userId,
+          'receiverId': recipientId,
+          'content': systemMsg,
+          'type': 'system',
+          'sentAt': Timestamp.fromDate(DateTime.now()),
+        },
+        'lastMessageAt': FieldValue.serverTimestamp(),
+        'unreadCount': FieldValue.increment(1),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('[CoinGift] Chat notification failed: $e');
     }
   }
 

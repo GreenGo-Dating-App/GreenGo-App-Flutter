@@ -67,6 +67,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           userId: widget.userId,
           type: _currentType,
           timePeriod: _selectedPeriod.name,
+          limit: 100,
           region: _currentType == LeaderboardType.regional ? _userCountry : null,
         ));
   }

@@ -57,13 +57,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   /// Get saved chat language for a conversation (null = user default, not shown)
+  /// Always reads fresh from SharedPreferences to reflect language changes made in chat.
   String? _getChatLanguage(String matchId) {
-    if (_chatLanguageCache.containsKey(matchId)) {
-      final lang = _chatLanguageCache[matchId];
-      return (lang != null && lang != _userDefaultLanguage) ? lang : null;
-    }
     final lang = _prefs?.getString('chat_${matchId}_language');
-    _chatLanguageCache[matchId] = lang ?? '';
     return (lang != null && lang.isNotEmpty && lang != _userDefaultLanguage) ? lang : null;
   }
 
