@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/video_coin.dart';
 import '../../domain/entities/coin_gift.dart';
@@ -381,28 +383,13 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
     }
 
     try {
-      final giftId = DateTime.now().millisecondsSinceEpoch.toString();
-
-      // Create gift
-      await FirebaseFirestore.instance.collection('coinGifts').doc(giftId).set({
-        'giftId': giftId,
-        'senderId': widget.userId,
-        'receiverId': receiverId,
-        'amount': amount,
-        'message': message,
-        'status': 'pending',
-        'sentAt': FieldValue.serverTimestamp(),
-        'expiresAt': Timestamp.fromDate(DateTime.now().add(const Duration(days: 7))),
-      });
-
-      // Deduct from sender
-      await FirebaseFirestore.instance
-          .collection('coinBalances')
-          .doc(widget.userId)
-          .update({
-        'totalCoins': FieldValue.increment(-amount),
-        'lastUpdated': FieldValue.serverTimestamp(),
-      });
+      final datasource = GetIt.instance<CoinRemoteDataSource>();
+      await datasource.sendGift(
+        senderId: widget.userId,
+        receiverId: receiverId,
+        amount: amount,
+        message: message,
+      );
 
       await _loadBalances();
 
