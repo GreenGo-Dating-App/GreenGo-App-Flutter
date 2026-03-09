@@ -37,6 +37,7 @@ import 'features/authentication/presentation/screens/register_screen.dart';
 import 'features/authentication/presentation/screens/forgot_password_screen.dart';
 import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
 import 'features/main/presentation/screens/main_navigation_screen.dart';
+import 'features/splash/presentation/screens/post_login_splash_screen.dart';
 import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
 import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
 import 'features/safety_academy/presentation/screens/safety_academy_screen.dart';
@@ -511,6 +512,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
   bool _notificationPromptShown = false;
   bool _admin2FAVerified = false;
   bool _needsOnboarding = false;
+  bool _showPostLoginSplash = false;
+  String? _splashUserId;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
 
@@ -645,6 +648,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
       _needsOnboarding = false;
       _notificationPromptShown = false;
       _admin2FAVerified = false;
+      _showPostLoginSplash = false;
+      _splashUserId = null;
       Admin2FAScreen.resetVerification();
     });
   }
@@ -826,6 +831,23 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
+  /// Returns PostLoginSplashScreen if splash hasn't been shown yet,
+  /// otherwise returns MainNavigationScreen directly.
+  Widget _buildMainOrSplash(String userId) {
+    if (_showPostLoginSplash) {
+      return PostLoginSplashScreen(
+        onComplete: () {
+          if (mounted) {
+            setState(() {
+              _showPostLoginSplash = false;
+            });
+          }
+        },
+      );
+    }
+    return MainNavigationScreen(userId: userId);
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
@@ -836,6 +858,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
           // (builder runs before async work completes)
           setState(() {
             _isCheckingAccess = true;
+            // Show post-login splash on fresh login
+            if (!_showPostLoginSplash && _splashUserId != state.user.uid) {
+              _showPostLoginSplash = true;
+              _splashUserId = state.user.uid;
+            }
           });
           // Ensure admin profiles have isAdmin=true and approvalStatus=approved
           // in the users collection BEFORE checking access (prevents "under review")
@@ -869,6 +896,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
             _needsOnboarding = false;
             _isCheckingAccess = false;
             _admin2FAVerified = false;
+            _showPostLoginSplash = false;
+            _splashUserId = null;
             Admin2FAScreen.resetVerification();
           });
         }
@@ -890,21 +919,21 @@ class _AuthWrapperState extends State<AuthWrapper> {
             if (_needsOnboarding) {
               return profile.OnboardingScreen(userId: state.user.uid);
             }
-            return MainNavigationScreen(userId: state.user.uid);
+            return _buildMainOrSplash(state.user.uid);
           }
           // Also bypass if tier is 'test' (from auth state directly)
           if (state.membershipTier == 'test') {
             if (_needsOnboarding) {
               return profile.OnboardingScreen(userId: state.user.uid);
             }
-            return MainNavigationScreen(userId: state.user.uid);
+            return _buildMainOrSplash(state.user.uid);
           }
           // Approved users bypass waiting — profile is verified
           if (state.approvalStatus == 'approved') {
             if (_needsOnboarding) {
               return profile.OnboardingScreen(userId: state.user.uid);
             }
-            return MainNavigationScreen(userId: state.user.uid);
+            return _buildMainOrSplash(state.user.uid);
           }
           // User is waiting for access (pending or rejected)
           final waitingApprovalStatus = ApprovalStatus.values.firstWhere(
@@ -945,11 +974,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
                   onSignOut: _handleSignOut,
                 );
               }
-              return MainNavigationScreen(userId: state.user.uid);
+              return _buildMainOrSplash(state.user.uid);
             }
             // Approved users (verified profile) — let them into the app
             if (_accessData!.approvalStatus == ApprovalStatus.approved) {
-              return MainNavigationScreen(userId: state.user.uid);
+              return _buildMainOrSplash(state.user.uid);
             }
             // Rejected users — show rejected waiting screen
             if (_accessData!.approvalStatus == ApprovalStatus.rejected) {
@@ -974,7 +1003,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
             return const SplashScreen();
           }
           // User can access the app
-          return MainNavigationScreen(userId: state.user.uid);
+          return _buildMainOrSplash(state.user.uid);
         } else {
           return const LoginScreen();
         }
@@ -983,53 +1012,29 @@ class _AuthWrapperState extends State<AuthWrapper> {
   }
 }
 
-/// Temporary Splash Screen
-/// TODO: Move to features/splash/presentation/screens/splash_screen.dart
+/// Initial loading splash screen (shown while checking auth state)
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Theme.of(context).colorScheme.background,
-              Theme.of(context).colorScheme.surface,
-            ],
-          ),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Logo placeholder
-              Icon(
-                Icons.favorite,
-                size: 100,
-                color: Theme.of(context).primaryColor,
-              ),
-              const SizedBox(height: 24),
-              Text(
-                AppStrings.appName,
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      color: Theme.of(context).primaryColor,
-                    ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                AppStrings.appTagline,
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              const SizedBox(height: 48),
-              CircularProgressIndicator(
-                color: Theme.of(context).primaryColor,
-              ),
-            ],
-          ),
+      backgroundColor: const Color(0xFF0A0A0A),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/greengo_logo.png',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(height: 48),
+            CircularProgressIndicator(
+              color: Theme.of(context).primaryColor,
+            ),
+          ],
         ),
       ),
     );
