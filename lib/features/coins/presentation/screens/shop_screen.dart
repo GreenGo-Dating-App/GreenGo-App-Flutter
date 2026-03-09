@@ -496,18 +496,18 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
         });
       }
 
-      // Send system message
+      // Send message as if sender is writing to receiver
       final msgRef = db.collection('conversations')
           .doc(conversationId).collection('messages').doc();
-      final systemMsg = '$senderName sent you $amount coins!';
+      final giftMsg = 'I just sent you $amount coins!';
 
       await msgRef.set({
         'messageId': msgRef.id,
         'conversationId': conversationId,
         'senderId': widget.userId,
         'receiverId': receiverId,
-        'content': systemMsg,
-        'type': 'system',
+        'content': giftMsg,
+        'type': 'text',
         'sentAt': FieldValue.serverTimestamp(),
         'deliveredAt': FieldValue.serverTimestamp(),
         'status': 'delivered',
@@ -519,8 +519,8 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
           'messageId': msgRef.id,
           'senderId': widget.userId,
           'receiverId': receiverId,
-          'content': systemMsg,
-          'type': 'system',
+          'content': giftMsg,
+          'type': 'text',
           'sentAt': Timestamp.fromDate(DateTime.now()),
         },
         'lastMessageAt': FieldValue.serverTimestamp(),
