@@ -6932,6 +6932,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Entdeckte Wörter';
 
   @override
+  String get personalStatsWordsLearned => 'Gelernte Wörter';
+
+  @override
   String get personalStatsXpOverview => 'XP-Übersicht';
 
   @override

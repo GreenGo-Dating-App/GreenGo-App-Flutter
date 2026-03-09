@@ -12324,6 +12324,12 @@ abstract class AppLocalizations {
   /// **'Words Discovered'**
   String get personalStatsWordsDiscovered;
 
+  /// No description provided for @personalStatsWordsLearned.
+  ///
+  /// In en, this message translates to:
+  /// **'Words Learned'**
+  String get personalStatsWordsLearned;
+
   /// No description provided for @personalStatsXpOverview.
   ///
   /// In en, this message translates to:

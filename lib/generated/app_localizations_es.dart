@@ -6927,6 +6927,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Palabras descubiertas';
 
   @override
+  String get personalStatsWordsLearned => 'Palabras Aprendidas';
+
+  @override
   String get personalStatsXpOverview => 'Resumen de XP';
 
   @override

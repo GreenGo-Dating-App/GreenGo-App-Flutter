@@ -6831,6 +6831,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Words Discovered';
 
   @override
+  String get personalStatsWordsLearned => 'Words Learned';
+
+  @override
   String get personalStatsXpOverview => 'XP Overview';
 
   @override
