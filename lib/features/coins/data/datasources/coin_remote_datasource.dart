@@ -447,6 +447,170 @@ class CoinRemoteDataSource {
 
   // ===== Gift Operations =====
 
+  /// Debit coins from a user's balance within an existing transaction.
+  /// Returns the new total balance after deduction.
+  Future<int> _debitInTransaction(
+    Transaction transaction, {
+    required String userId,
+    required int amount,
+    required CoinTransactionReason reason,
+    String? relatedUserId,
+    Map<String, dynamic>? metadata,
+  }) async {
+    final balanceRef = _balancesCollection.doc(userId);
+    final balanceDoc = await transaction.get(balanceRef);
+
+    CoinBalanceModel currentBalance;
+    if (!balanceDoc.exists) {
+      currentBalance = CoinBalanceModel.empty(userId);
+    } else {
+      currentBalance = CoinBalanceModel.fromFirestore(balanceDoc);
+    }
+
+    if (currentBalance.totalCoins < amount) {
+      throw Exception('Insufficient coins');
+    }
+
+    final newTotal = currentBalance.totalCoins - amount;
+    final newSpent = currentBalance.spentCoins + amount;
+
+    // Deduct from oldest non-expired batches first (FIFO)
+    int remainingToDeduct = amount;
+    List<CoinBatch> newBatches = currentBalance.coinBatches.map((batch) {
+      if (remainingToDeduct <= 0) return batch;
+      if (batch.isExpired(DateTime.now())) return batch;
+      final deductAmount = batch.remainingCoins <= remainingToDeduct
+          ? batch.remainingCoins
+          : remainingToDeduct;
+      remainingToDeduct -= deductAmount;
+      return CoinBatch(
+        batchId: batch.batchId,
+        initialCoins: batch.initialCoins,
+        remainingCoins: batch.remainingCoins - deductAmount,
+        source: batch.source,
+        acquiredDate: batch.acquiredDate,
+        expirationDate: batch.expirationDate,
+      );
+    }).where((batch) => batch.remainingCoins > 0).toList();
+
+    final updatedBalance = CoinBalanceModel(
+      userId: userId,
+      totalCoins: newTotal,
+      earnedCoins: currentBalance.earnedCoins,
+      purchasedCoins: currentBalance.purchasedCoins,
+      giftedCoins: currentBalance.giftedCoins,
+      spentCoins: newSpent,
+      lastUpdated: DateTime.now(),
+      coinBatches: newBatches,
+    );
+
+    transaction.set(balanceRef, updatedBalance.toFirestore());
+
+    // Create transaction record
+    final transactionId = uuid.v4();
+    final txnModel = CoinTransactionModel(
+      transactionId: transactionId,
+      userId: userId,
+      type: CoinTransactionType.debit,
+      amount: amount,
+      balanceAfter: newTotal,
+      reason: reason,
+      relatedUserId: relatedUserId,
+      metadata: metadata,
+      createdAt: DateTime.now(),
+    );
+    transaction.set(
+      _transactionsCollection.doc(transactionId),
+      txnModel.toFirestore(),
+    );
+
+    return newTotal;
+  }
+
+  /// Credit coins to a user's balance within an existing transaction.
+  /// Returns the new total balance after credit.
+  Future<int> _creditInTransaction(
+    Transaction transaction, {
+    required String userId,
+    required int amount,
+    required CoinTransactionReason reason,
+    String? relatedUserId,
+    Map<String, dynamic>? metadata,
+  }) async {
+    final balanceRef = _balancesCollection.doc(userId);
+    final balanceDoc = await transaction.get(balanceRef);
+
+    CoinBalanceModel currentBalance;
+    if (!balanceDoc.exists) {
+      currentBalance = CoinBalanceModel.empty(userId);
+    } else {
+      currentBalance = CoinBalanceModel.fromFirestore(balanceDoc);
+    }
+
+    final newTotal = currentBalance.totalCoins + amount;
+
+    int newEarned = currentBalance.earnedCoins;
+    int newPurchased = currentBalance.purchasedCoins;
+    int newGifted = currentBalance.giftedCoins;
+
+    if (reason == CoinTransactionReason.coinPurchase) {
+      newPurchased += amount;
+    } else if (reason == CoinTransactionReason.giftReceived) {
+      newGifted += amount;
+    } else {
+      newEarned += amount;
+    }
+
+    // Create coin batch
+    final source = _getCoinSource(reason);
+    final batchId = uuid.v4();
+    final acquiredDate = DateTime.now();
+    final expirationDate = acquiredDate.add(const Duration(days: 365));
+
+    List<CoinBatch> newBatches = List.from(currentBalance.coinBatches);
+    newBatches.add(CoinBatch(
+      batchId: batchId,
+      initialCoins: amount,
+      remainingCoins: amount,
+      source: source,
+      acquiredDate: acquiredDate,
+      expirationDate: expirationDate,
+    ));
+
+    final updatedBalance = CoinBalanceModel(
+      userId: userId,
+      totalCoins: newTotal,
+      earnedCoins: newEarned,
+      purchasedCoins: newPurchased,
+      giftedCoins: newGifted,
+      spentCoins: currentBalance.spentCoins,
+      lastUpdated: DateTime.now(),
+      coinBatches: newBatches,
+    );
+
+    transaction.set(balanceRef, updatedBalance.toFirestore());
+
+    // Create transaction record
+    final transactionId = uuid.v4();
+    final txnModel = CoinTransactionModel(
+      transactionId: transactionId,
+      userId: userId,
+      type: CoinTransactionType.credit,
+      amount: amount,
+      balanceAfter: newTotal,
+      reason: reason,
+      relatedUserId: relatedUserId,
+      metadata: metadata,
+      createdAt: DateTime.now(),
+    );
+    transaction.set(
+      _transactionsCollection.doc(transactionId),
+      txnModel.toFirestore(),
+    );
+
+    return newTotal;
+  }
+
   /// Send gift
   Future<CoinGiftModel> sendGift({
     required String senderId,
@@ -457,11 +621,11 @@ class CoinRemoteDataSource {
     CoinGiftModel? gift;
 
     await firestore.runTransaction((transaction) async {
-      // Deduct coins from sender
-      await updateBalance(
+      // Deduct coins from sender (inline, no nested transaction)
+      await _debitInTransaction(
+        transaction,
         userId: senderId,
         amount: amount,
-        type: CoinTransactionType.debit,
         reason: CoinTransactionReason.giftSent,
         relatedUserId: receiverId,
         metadata: {'toUserId': receiverId},
@@ -484,7 +648,132 @@ class CoinRemoteDataSource {
       transaction.set(_giftsCollection.doc(giftId), gift!.toFirestore());
     });
 
+    // After transaction succeeds, create a chat notification for the receiver
+    try {
+      await _createGiftChatNotification(
+        senderId: senderId,
+        receiverId: receiverId,
+        amount: amount,
+      );
+    } catch (e) {
+      debugPrint('[CoinGift] Failed to create chat notification: $e');
+      // Don't throw — the gift was already sent successfully
+    }
+
     return gift!;
+  }
+
+  /// Create a conversation and send a system message when coins are gifted
+  Future<void> _createGiftChatNotification({
+    required String senderId,
+    required String receiverId,
+    required int amount,
+  }) async {
+    // Get sender's display name
+    final senderProfile = await firestore.collection('profiles').doc(senderId).get();
+    final senderName = senderProfile.exists
+        ? (senderProfile.data()?['nickname'] as String? ??
+           senderProfile.data()?['displayName'] as String? ??
+           'Someone')
+        : 'Someone';
+
+    // Check for existing conversation between these two users
+    String? conversationId;
+
+    // Try to find existing conversation (check both user orderings)
+    final convQuery1 = await firestore.collection('conversations')
+        .where('userId1', isEqualTo: senderId)
+        .where('userId2', isEqualTo: receiverId)
+        .limit(1)
+        .get();
+
+    if (convQuery1.docs.isNotEmpty) {
+      conversationId = convQuery1.docs.first.id;
+    } else {
+      final convQuery2 = await firestore.collection('conversations')
+          .where('userId1', isEqualTo: receiverId)
+          .where('userId2', isEqualTo: senderId)
+          .limit(1)
+          .get();
+
+      if (convQuery2.docs.isNotEmpty) {
+        conversationId = convQuery2.docs.first.id;
+      }
+    }
+
+    // If no conversation exists, create one
+    if (conversationId == null) {
+      final convRef = firestore.collection('conversations').doc();
+      conversationId = convRef.id;
+
+      // Create synthetic matchId for coin gift conversations
+      final sortedIds = [senderId, receiverId]..sort();
+      final matchId = 'gift_${sortedIds[0]}_${sortedIds[1]}';
+
+      await convRef.set({
+        'conversationId': conversationId,
+        'matchId': matchId,
+        'userId1': senderId,
+        'userId2': receiverId,
+        'createdAt': FieldValue.serverTimestamp(),
+        'unreadCount': 0,
+        'isTyping': false,
+        'isPinned': false,
+        'isMuted': false,
+        'isArchived': false,
+        'isDeleted': false,
+        'conversationType': 'match',
+        'theme': 'gold',
+      });
+    }
+
+    // Send a system message in the conversation
+    final messageId = uuid.v4();
+    final messageRef = firestore
+        .collection('conversations')
+        .doc(conversationId)
+        .collection('messages')
+        .doc(messageId);
+
+    final systemMessage = '$senderName sent you $amount coins!';
+
+    await messageRef.set({
+      'messageId': messageId,
+      'conversationId': conversationId,
+      'senderId': senderId,
+      'receiverId': receiverId,
+      'content': systemMessage,
+      'type': 'system',
+      'sentAt': FieldValue.serverTimestamp(),
+      'deliveredAt': FieldValue.serverTimestamp(),
+      'status': 'delivered',
+    });
+
+    // Update conversation with last message
+    await firestore.collection('conversations').doc(conversationId).update({
+      'lastMessage': {
+        'messageId': messageId,
+        'senderId': senderId,
+        'receiverId': receiverId,
+        'content': systemMessage,
+        'type': 'system',
+        'sentAt': Timestamp.fromDate(DateTime.now()),
+      },
+      'lastMessageAt': FieldValue.serverTimestamp(),
+      'unreadCount': FieldValue.increment(1),
+    });
+
+    // Create notification for receiver
+    await firestore.collection('notifications').add({
+      'userId': receiverId,
+      'type': 'coin_gift',
+      'title': 'You received coins!',
+      'body': systemMessage,
+      'senderId': senderId,
+      'conversationId': conversationId,
+      'isRead': false,
+      'createdAt': FieldValue.serverTimestamp(),
+    });
   }
 
   /// Accept gift
@@ -510,11 +799,11 @@ class CoinRemoteDataSource {
         throw Exception('Gift already processed');
       }
 
-      // Credit coins to receiver
-      await updateBalance(
+      // Credit coins to receiver (inline, no nested transaction)
+      await _creditInTransaction(
+        transaction,
         userId: userId,
         amount: gift.amount,
-        type: CoinTransactionType.credit,
         reason: CoinTransactionReason.giftReceived,
         relatedUserId: gift.senderId,
         metadata: {'fromUserId': gift.senderId},
@@ -547,11 +836,11 @@ class CoinRemoteDataSource {
         throw Exception('Not authorized to decline this gift');
       }
 
-      // Refund sender
-      await updateBalance(
+      // Refund sender (inline, no nested transaction)
+      await _creditInTransaction(
+        transaction,
         userId: gift.senderId,
         amount: gift.amount,
-        type: CoinTransactionType.credit,
         reason: CoinTransactionReason.refund,
         metadata: {'reason': 'gift_declined'},
       );

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
@@ -46,7 +47,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     final userId = widget.userId;
 
     try {
-      // Always read XP from user_levels (authoritative source) to avoid stale cache
+      // Always read XP from user_levels (authoritative source)
       int totalXp = 0;
       int level = 1;
       final userLevelDoc = await firestore.collection('user_levels').doc(userId).get();
@@ -56,41 +57,58 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
         level = (lvlData['level'] as num?)?.toInt() ?? ((totalXp / 100).floor() + 1);
       }
 
-      // Try to read other stats from the denormalized user_stats document (fast path)
+      // Read cached stats from user_stats (kept fresh by daily Cloud Function)
       final statsDoc = await firestore.collection('user_stats').doc(userId).get();
 
-      // Always load learned words from source (not cached, since useCount changes)
-      final learnedWords = await _loadLearnedWords(firestore, userId);
-
       if (statsDoc.exists) {
-        final data = statsDoc.data()!;
-        final wordsMap = data['wordsPerLanguage'] as Map<String, dynamic>? ?? {};
-        final activityMap = data['dailyActivity'] as Map<String, dynamic>? ?? {};
-
-        if (mounted) {
-          setState(() {
-            _totalXp = totalXp;
-            _currentLevel = level;
-            _totalMessagesSent = (data['messagesSent'] as num?)?.toInt() ?? 0;
-            _totalConversations = (data['totalConversations'] as num?)?.toInt() ?? 0;
-            _wordsPerLanguage = wordsMap.map((k, v) => MapEntry(k, (v as num).toInt()));
-            _wordsLearnedPerLanguage = learnedWords;
-            _achievementsUnlocked = (data['achievementsUnlocked'] as num?)?.toInt() ?? 0;
-            _challengesCompleted = (data['challengesCompleted'] as num?)?.toInt() ?? 0;
-            _dailyActivity = activityMap.map((k, v) => MapEntry(k, (v as num).toInt()));
-            _isLoading = false;
-          });
-        }
+        _applyStatsFromDoc(statsDoc.data()!, totalXp, level);
         return;
       }
 
-      // Fallback: compute stats from source collections and write to user_stats
+      // No cached stats yet — compute locally and cache
       await _computeAndCacheStats(firestore, userId);
     } catch (e) {
       debugPrint('Error loading personal stats: $e');
       if (mounted) {
         setState(() => _isLoading = false);
       }
+    }
+  }
+
+  /// Apply stats data from a Firestore document to the UI state
+  void _applyStatsFromDoc(Map<String, dynamic> data, int totalXp, int level) {
+    final wordsMap = data['wordsPerLanguage'] as Map<String, dynamic>? ?? {};
+    final learnedMap = data['wordsLearnedPerLanguage'] as Map<String, dynamic>? ?? {};
+    final activityMap = data['dailyActivity'] as Map<String, dynamic>? ?? {};
+
+    if (mounted) {
+      setState(() {
+        _totalXp = totalXp;
+        _currentLevel = level;
+        _totalMessagesSent = (data['messagesSent'] as num?)?.toInt() ?? 0;
+        _totalConversations = (data['totalConversations'] as num?)?.toInt() ?? 0;
+        _wordsPerLanguage = wordsMap.map((k, v) => MapEntry(k, (v as num).toInt()));
+        _wordsLearnedPerLanguage = learnedMap.map((k, v) => MapEntry(k, (v as num).toInt()));
+        _achievementsUnlocked = (data['achievementsUnlocked'] as num?)?.toInt() ?? 0;
+        _challengesCompleted = (data['challengesCompleted'] as num?)?.toInt() ?? 0;
+        _dailyActivity = activityMap.map((k, v) => MapEntry(k, (v as num).toInt()));
+        _isLoading = false;
+      });
+    }
+  }
+
+  /// Refresh stats by calling the Cloud Function, then reload from cache
+  Future<void> _refreshStats() async {
+    setState(() => _isLoading = true);
+    try {
+      // Call Cloud Function to recompute stats server-side
+      await FirebaseFunctions.instance.httpsCallable('refreshMyStats').call({});
+      // Reload from the freshly computed cache
+      await _loadStats();
+    } catch (e) {
+      debugPrint('Error refreshing stats via Cloud Function: $e');
+      // Fallback: compute locally
+      await _computeAndCacheStats(FirebaseFirestore.instance, widget.userId);
     }
   }
 
@@ -296,16 +314,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh, color: AppColors.textSecondary),
-            onPressed: () {
-              setState(() => _isLoading = true);
-              // Force recompute by deleting cached doc first
-              FirebaseFirestore.instance
-                  .collection('user_stats')
-                  .doc(widget.userId)
-                  .delete()
-                  .catchError((_) {});
-              _loadStats();
-            },
+            onPressed: _isLoading ? null : _refreshStats,
           ),
         ],
       ),
