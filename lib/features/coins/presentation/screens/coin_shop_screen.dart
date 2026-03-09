@@ -2437,18 +2437,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         });
       }
 
-      // Send system message
+      // Send message as if user A is writing to user B
       final msgRef = db.collection('conversations')
           .doc(conversationId).collection('messages').doc();
-      final systemMsg = '$senderName sent you $amount coins!';
+      final giftMsg = 'I just sent you $amount coins!';
 
       await msgRef.set({
         'messageId': msgRef.id,
         'conversationId': conversationId,
         'senderId': widget.userId,
         'receiverId': recipientId,
-        'content': systemMsg,
-        'type': 'system',
+        'content': giftMsg,
+        'type': 'text',
         'sentAt': FieldValue.serverTimestamp(),
         'deliveredAt': FieldValue.serverTimestamp(),
         'status': 'delivered',
@@ -2459,8 +2459,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           'messageId': msgRef.id,
           'senderId': widget.userId,
           'receiverId': recipientId,
-          'content': systemMsg,
-          'type': 'system',
+          'content': giftMsg,
+          'type': 'text',
           'sentAt': Timestamp.fromDate(DateTime.now()),
         },
         'lastMessageAt': FieldValue.serverTimestamp(),
