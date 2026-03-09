@@ -1,10 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/video_coin.dart';
 import '../../domain/entities/coin_gift.dart';
@@ -382,26 +381,43 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       return;
     }
 
+    // Step 1: Transfer coins (atomic batch)
     try {
-      final datasource = GetIt.instance<CoinRemoteDataSource>();
-      await datasource.sendGift(
-        senderId: widget.userId,
-        receiverId: receiverId,
-        amount: amount,
-        message: message,
-      );
+      final db = FirebaseFirestore.instance;
+      final batch = db.batch();
+      final giftId = DateTime.now().millisecondsSinceEpoch.toString();
 
-      await _loadBalances();
+      // Gift record (already accepted - instant transfer)
+      batch.set(db.collection('coinGifts').doc(giftId), {
+        'giftId': giftId,
+        'senderId': widget.userId,
+        'receiverId': receiverId,
+        'amount': amount,
+        'message': message,
+        'status': 'accepted',
+        'sentAt': FieldValue.serverTimestamp(),
+        'receivedAt': FieldValue.serverTimestamp(),
+      });
 
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.coinsGiftSent(amount)),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
+      // Deduct from sender
+      batch.set(db.collection('coinBalances').doc(widget.userId), {
+        'totalCoins': FieldValue.increment(-amount),
+        'spentCoins': FieldValue.increment(amount),
+        'lastUpdated': FieldValue.serverTimestamp(),
+        'userId': widget.userId,
+      }, SetOptions(merge: true));
+
+      // Credit to receiver
+      batch.set(db.collection('coinBalances').doc(receiverId), {
+        'totalCoins': FieldValue.increment(amount),
+        'giftedCoins': FieldValue.increment(amount),
+        'lastUpdated': FieldValue.serverTimestamp(),
+        'userId': receiverId,
+      }, SetOptions(merge: true));
+
+      await batch.commit();
     } catch (e) {
+      debugPrint('[CoinGift] Transfer failed: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -410,6 +426,108 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
           ),
         );
       }
+      return; // Stop here if transfer failed
+    }
+
+    // Step 2: Show success immediately
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.coinsGiftSent(amount)),
+          backgroundColor: Colors.green,
+        ),
+      );
+    }
+
+    // Step 3: Refresh balance display
+    _loadBalances();
+
+    // Step 4: Send chat message (non-blocking, errors won't affect user)
+    _createGiftChat(receiverId, amount);
+  }
+
+  Future<void> _createGiftChat(String receiverId, int amount) async {
+    try {
+      final db = FirebaseFirestore.instance;
+
+      // Get sender name
+      final senderDoc = await db.collection('profiles').doc(widget.userId).get();
+      final senderName = senderDoc.data()?['nickname'] as String? ??
+          senderDoc.data()?['displayName'] as String? ??
+          'Someone';
+
+      // Find existing conversation
+      String? conversationId;
+      var q = await db.collection('conversations')
+          .where('userId1', isEqualTo: widget.userId)
+          .where('userId2', isEqualTo: receiverId)
+          .limit(1).get();
+      if (q.docs.isNotEmpty) {
+        conversationId = q.docs.first.id;
+      } else {
+        q = await db.collection('conversations')
+            .where('userId1', isEqualTo: receiverId)
+            .where('userId2', isEqualTo: widget.userId)
+            .limit(1).get();
+        if (q.docs.isNotEmpty) {
+          conversationId = q.docs.first.id;
+        }
+      }
+
+      // Create conversation if needed
+      if (conversationId == null) {
+        final convRef = db.collection('conversations').doc();
+        conversationId = convRef.id;
+        final sortedIds = [widget.userId, receiverId]..sort();
+        await convRef.set({
+          'conversationId': conversationId,
+          'matchId': 'gift_${sortedIds[0]}_${sortedIds[1]}',
+          'userId1': widget.userId,
+          'userId2': receiverId,
+          'createdAt': FieldValue.serverTimestamp(),
+          'unreadCount': 0,
+          'isTyping': false,
+          'isPinned': false,
+          'isMuted': false,
+          'isArchived': false,
+          'isDeleted': false,
+          'conversationType': 'match',
+          'theme': 'gold',
+        });
+      }
+
+      // Send system message
+      final msgRef = db.collection('conversations')
+          .doc(conversationId).collection('messages').doc();
+      final systemMsg = '$senderName sent you $amount coins!';
+
+      await msgRef.set({
+        'messageId': msgRef.id,
+        'conversationId': conversationId,
+        'senderId': widget.userId,
+        'receiverId': receiverId,
+        'content': systemMsg,
+        'type': 'system',
+        'sentAt': FieldValue.serverTimestamp(),
+        'deliveredAt': FieldValue.serverTimestamp(),
+        'status': 'delivered',
+      });
+
+      // Update conversation last message using set+merge (works if conversation was just created)
+      await db.collection('conversations').doc(conversationId).set({
+        'lastMessage': {
+          'messageId': msgRef.id,
+          'senderId': widget.userId,
+          'receiverId': receiverId,
+          'content': systemMsg,
+          'type': 'system',
+          'sentAt': Timestamp.fromDate(DateTime.now()),
+        },
+        'lastMessageAt': FieldValue.serverTimestamp(),
+        'unreadCount': FieldValue.increment(1),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('[CoinGift] Chat notification failed: $e');
     }
   }
 }
