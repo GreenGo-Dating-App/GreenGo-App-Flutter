@@ -1,6 +1,6 @@
 /**
  * Gamification Service
- * 8 Cloud Functions for managing XP, achievements, challenges, and leaderboards
+ * 10 Cloud Functions for managing XP, achievements, challenges, leaderboards, and stats
  */
 
 import { onCall } from 'firebase-functions/v2/https';
@@ -17,6 +17,7 @@ import {
   handleResetDailyChallenges,
   handleUpdateLeaderboardRankings,
 } from './handlers';
+import { computeUserStats, computeAllUserStats } from './userStatsCompute';
 
 // XP Configuration
 const XP_ACTIONS = {
@@ -324,6 +325,45 @@ export const updateLeaderboardRankings = onSchedule(
     } catch (error) {
       logError('Error updating leaderboard rankings:', error);
       throw error;
+    }
+  }
+);
+
+// ========== 9. COMPUTE USER STATS - DAILY BATCH (Scheduled - 3 AM UTC) ==========
+
+export const computeDailyUserStats = onSchedule(
+  {
+    schedule: '0 3 * * *', // Daily at 3 AM UTC
+    timeZone: 'UTC',
+    memory: '1GiB',
+    timeoutSeconds: 540, // 9 minutes max
+  },
+  async () => {
+    try {
+      const count = await computeAllUserStats();
+      logError(`Daily stats computed for ${count} users`, null);
+    } catch (error) {
+      logError('Error computing daily user stats:', error);
+      throw error;
+    }
+  }
+);
+
+// ========== 10. REFRESH MY STATS (HTTP Callable - user-triggered) ==========
+
+export const refreshMyStats = onCall(
+  {
+    memory: '512MiB',
+    timeoutSeconds: 60,
+  },
+  async (request) => {
+    try {
+      const uid = await verifyAuth(request.auth);
+      const stats = await computeUserStats(uid);
+      return { success: true, stats };
+    } catch (error) {
+      logError('Error refreshing user stats:', error);
+      throw handleError(error);
     }
   }
 );
