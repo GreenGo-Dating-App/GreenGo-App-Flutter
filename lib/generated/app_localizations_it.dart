@@ -6919,6 +6919,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Parole scoperte';
 
   @override
+  String get personalStatsWordsLearned => 'Parole Imparate';
+
+  @override
   String get personalStatsXpOverview => 'Panoramica XP';
 
   @override

@@ -6900,6 +6900,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Palavras descobertas';
 
   @override
+  String get personalStatsWordsLearned => 'Palavras Aprendidas';
+
+  @override
   String get personalStatsXpOverview => 'Resumo de XP';
 
   @override
@@ -16489,6 +16492,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get personalStatsWordsDiscovered => 'Palavras descobertas';
+
+  @override
+  String get personalStatsWordsLearned => 'Palavras Aprendidas';
 
   @override
   String get personalStatsXpOverview => 'Resumo de XP';

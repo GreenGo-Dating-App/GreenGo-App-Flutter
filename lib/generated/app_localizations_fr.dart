@@ -6956,6 +6956,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get personalStatsWordsDiscovered => 'Mots découverts';
 
   @override
+  String get personalStatsWordsLearned => 'Mots Appris';
+
+  @override
   String get personalStatsXpOverview => 'Aperçu XP';
 
   @override

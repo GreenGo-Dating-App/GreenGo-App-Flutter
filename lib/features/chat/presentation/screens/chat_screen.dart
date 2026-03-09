@@ -501,11 +501,11 @@ class _ChatScreenState extends State<ChatScreen> {
     _messageController.clear();
 
     // Track vocabulary usage for gamification (fire-and-forget)
-    final lang = _languageProvider?.currentLocale.languageCode ?? 'en';
+    // Uses the chat's "Your Language" setting — the language the user is typing in
     VocabularyTrackingService.trackMessage(
       userId: widget.currentUserId,
       messageText: content,
-      language: lang,
+      language: _targetLanguage,
     );
 
     // Scroll to bottom after sending (post-frame callback for reliable timing)

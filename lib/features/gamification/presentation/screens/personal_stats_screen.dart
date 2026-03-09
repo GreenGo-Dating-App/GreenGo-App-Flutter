@@ -27,8 +27,10 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   int _achievementsUnlocked = 0;
   int _challengesCompleted = 0;
 
-  // Words per language
+  // Words per language (all tracked)
   Map<String, int> _wordsPerLanguage = {};
+  // Words learned per language (useCount >= 3)
+  Map<String, int> _wordsLearnedPerLanguage = {};
 
   // Activity (messages per day, last 7 days)
   Map<String, int> _dailyActivity = {};
@@ -57,6 +59,9 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       // Try to read other stats from the denormalized user_stats document (fast path)
       final statsDoc = await firestore.collection('user_stats').doc(userId).get();
 
+      // Always load learned words from source (not cached, since useCount changes)
+      final learnedWords = await _loadLearnedWords(firestore, userId);
+
       if (statsDoc.exists) {
         final data = statsDoc.data()!;
         final wordsMap = data['wordsPerLanguage'] as Map<String, dynamic>? ?? {};
@@ -69,6 +74,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
             _totalMessagesSent = (data['messagesSent'] as num?)?.toInt() ?? 0;
             _totalConversations = (data['totalConversations'] as num?)?.toInt() ?? 0;
             _wordsPerLanguage = wordsMap.map((k, v) => MapEntry(k, (v as num).toInt()));
+            _wordsLearnedPerLanguage = learnedWords;
             _achievementsUnlocked = (data['achievementsUnlocked'] as num?)?.toInt() ?? 0;
             _challengesCompleted = (data['challengesCompleted'] as num?)?.toInt() ?? 0;
             _dailyActivity = activityMap.map((k, v) => MapEntry(k, (v as num).toInt()));
@@ -153,16 +159,22 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       messagesSent = (profileDoc.data()?['messagesSent'] as num?)?.toInt() ?? 0;
     }
 
-    // Vocabulary words per language
+    // Vocabulary words per language (all tracked + learned with useCount >= 3)
     final Map<String, int> wordsPerLang = {};
+    final Map<String, int> wordsLearnedPerLang = {};
     final vocabDocs = await firestore
         .collection('user_vocabulary')
         .doc(userId)
         .collection('words')
         .get();
     for (final doc in vocabDocs.docs) {
-      final lang = doc.data()['language'] as String? ?? 'unknown';
+      final data = doc.data();
+      final lang = data['language'] as String? ?? 'unknown';
       wordsPerLang[lang] = (wordsPerLang[lang] ?? 0) + 1;
+      final useCount = (data['useCount'] as num?)?.toInt() ?? 0;
+      if (useCount >= 3) {
+        wordsLearnedPerLang[lang] = (wordsLearnedPerLang[lang] ?? 0) + 1;
+      }
     }
 
     // Achievements unlocked count
@@ -202,12 +214,62 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
         _totalMessagesSent = messagesSent;
         _totalConversations = totalConvos;
         _wordsPerLanguage = wordsPerLang;
+        _wordsLearnedPerLanguage = wordsLearnedPerLang;
         _achievementsUnlocked = achieveCount.count ?? 0;
         _challengesCompleted = challengeCount.count ?? 0;
         _dailyActivity = dailyActivity;
         _isLoading = false;
       });
     }
+  }
+
+  /// Load learned words (useCount >= 3) per language from Firestore
+  Future<Map<String, int>> _loadLearnedWords(
+    FirebaseFirestore firestore,
+    String userId,
+  ) async {
+    final Map<String, int> learned = {};
+    try {
+      final vocabDocs = await firestore
+          .collection('user_vocabulary')
+          .doc(userId)
+          .collection('words')
+          .where('useCount', isGreaterThanOrEqualTo: 3)
+          .get();
+      for (final doc in vocabDocs.docs) {
+        final lang = doc.data()['language'] as String? ?? 'unknown';
+        learned[lang] = (learned[lang] ?? 0) + 1;
+      }
+    } catch (e) {
+      debugPrint('Error loading learned words: $e');
+    }
+    return learned;
+  }
+
+  static String _flagForLanguage(String code) {
+    const flags = {
+      'en': '🇬🇧',
+      'de': '🇩🇪',
+      'es': '🇪🇸',
+      'fr': '🇫🇷',
+      'it': '🇮🇹',
+      'pt': '🇵🇹',
+      'pt_br': '🇧🇷',
+    };
+    return flags[code.toLowerCase()] ?? '🌐';
+  }
+
+  static String _languageName(String code) {
+    const names = {
+      'en': 'English',
+      'de': 'Deutsch',
+      'es': 'Español',
+      'fr': 'Français',
+      'it': 'Italiano',
+      'pt': 'Português',
+      'pt_br': 'Português (BR)',
+    };
+    return names[code.toLowerCase()] ?? code.toUpperCase();
   }
 
   @override
@@ -322,54 +384,11 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
 
                   const SizedBox(height: 16),
 
-                  // Words Discovered Card
+                  // Words Learned Card (table with flags)
                   _buildSectionCard(
-                    icon: Icons.abc,
-                    title: l10n.personalStatsWordsDiscovered,
-                    child: _wordsPerLanguage.isEmpty
-                        ? Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8),
-                            child: Text(
-                              l10n.personalStatsNoWordsYet,
-                              style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
-                            ),
-                          )
-                        : Column(
-                            children: _wordsPerLanguage.entries.map((entry) {
-                              final maxWords = _wordsPerLanguage.values.reduce((a, b) => a > b ? a : b);
-                              return Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
-                                child: Row(
-                                  children: [
-                                    SizedBox(
-                                      width: 50,
-                                      child: Text(
-                                        _langLabel(entry.key),
-                                        style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 8),
-                                    Expanded(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(4),
-                                        child: LinearProgressIndicator(
-                                          value: maxWords > 0 ? entry.value / maxWords : 0,
-                                          backgroundColor: AppColors.backgroundDark,
-                                          valueColor: const AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                                          minHeight: 12,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      '${entry.value}',
-                                      style: const TextStyle(color: AppColors.textPrimary, fontSize: 13, fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
-                              );
-                            }).toList(),
-                          ),
+                    icon: Icons.school,
+                    title: l10n.personalStatsWordsLearned,
+                    child: _buildWordsLearnedTable(),
                   ),
 
                   const SizedBox(height: 16),
@@ -458,6 +477,169 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
           style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 11,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildWordsLearnedTable() {
+    // Always show all 7 supported languages
+    const allLanguages = ['en', 'de', 'es', 'fr', 'it', 'pt', 'pt_br'];
+
+    final totalLearned = _wordsLearnedPerLanguage.values.fold(0, (a, b) => a + b);
+    final totalDiscovered = _wordsPerLanguage.values.fold(0, (a, b) => a + b);
+
+    return Column(
+      children: [
+        // Header row
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Row(
+            children: [
+              const Expanded(
+                flex: 3,
+                child: Text(
+                  'Language',
+                  style: TextStyle(
+                    color: AppColors.textTertiary,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Text(
+                  'Learned',
+                  style: const TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const Expanded(
+                flex: 2,
+                child: Text(
+                  'Discovered',
+                  style: TextStyle(
+                    color: AppColors.textTertiary,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+          ),
+        ),
+        const Divider(color: AppColors.divider, height: 1),
+        const SizedBox(height: 8),
+        // Language rows
+        ...allLanguages.map((lang) {
+          final learned = _wordsLearnedPerLanguage[lang] ?? 0;
+          final discovered = _wordsPerLanguage[lang] ?? 0;
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(
+              children: [
+                // Flag + Language name
+                Expanded(
+                  flex: 3,
+                  child: Row(
+                    children: [
+                      Text(
+                        _flagForLanguage(lang),
+                        style: const TextStyle(fontSize: 20),
+                      ),
+                      const SizedBox(width: 8),
+                      Flexible(
+                        child: Text(
+                          _languageName(lang),
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 14,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                // Learned count
+                Expanded(
+                  flex: 2,
+                  child: Text(
+                    '$learned',
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                // Discovered count
+                Expanded(
+                  flex: 2,
+                  child: Text(
+                    '$discovered',
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 14,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
+            ),
+          );
+        }),
+        // Total row
+        const SizedBox(height: 8),
+        const Divider(color: AppColors.divider, height: 1),
+        Padding(
+          padding: const EdgeInsets.only(top: 10),
+          child: Row(
+            children: [
+              const Expanded(
+                flex: 3,
+                child: Text(
+                  'Total',
+                  style: TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Text(
+                  '$totalLearned',
+                  style: const TextStyle(
+                    color: AppColors.richGold,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Text(
+                  '$totalDiscovered',
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
           ),
         ),
       ],
