@@ -74,16 +74,16 @@ class MembershipRules extends Equatable {
   final int dailySwipeLimit;
 
   /// Maximum super likes per day — legacy, kept for backwards compat
-  final int dailySuperLikeLimit;
+  final int dailyPriorityConnectLimit;
 
   /// Maximum likes (right swipe) per hour (-1 for unlimited)
-  final int hourlyLikeLimit;
+  final int hourlyConnectLimit;
 
   /// Maximum nopes (left swipe) per hour (-1 for unlimited)
-  final int hourlyNopeLimit;
+  final int hourlyPassLimit;
 
   /// Maximum super likes (up swipe) per hour (-1 for unlimited)
-  final int hourlySuperLikeLimit;
+  final int hourlyPriorityConnectLimit;
 
   /// Can use advanced filters (age, distance, interests, etc.)
   final bool canUseAdvancedFilters;
@@ -127,10 +127,10 @@ class MembershipRules extends Equatable {
   const MembershipRules({
     this.dailyMessageLimit = 10,
     this.dailySwipeLimit = 20,
-    this.dailySuperLikeLimit = 0,
-    this.hourlyLikeLimit = 5,
-    this.hourlyNopeLimit = 10,
-    this.hourlySuperLikeLimit = 0,
+    this.dailyPriorityConnectLimit = 0,
+    this.hourlyConnectLimit = 5,
+    this.hourlyPassLimit = 10,
+    this.hourlyPriorityConnectLimit = 0,
     this.canUseAdvancedFilters = false,
     this.canFilterByLocation = false,
     this.canFilterByInterests = false,
@@ -150,10 +150,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules freeDefaults = MembershipRules(
     dailyMessageLimit: 100,
     dailySwipeLimit: 20,
-    dailySuperLikeLimit: 1,
-    hourlyLikeLimit: 5,
-    hourlyNopeLimit: 10,
-    hourlySuperLikeLimit: 1,
+    dailyPriorityConnectLimit: 1,
+    hourlyConnectLimit: 5,
+    hourlyPassLimit: 10,
+    hourlyPriorityConnectLimit: 1,
     canUseAdvancedFilters: false,
     canFilterByLocation: false,
     canFilterByInterests: false,
@@ -173,10 +173,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules silverDefaults = MembershipRules(
     dailyMessageLimit: 500,
     dailySwipeLimit: 100,
-    dailySuperLikeLimit: 3,
-    hourlyLikeLimit: 10,
-    hourlyNopeLimit: 25,
-    hourlySuperLikeLimit: 2,
+    dailyPriorityConnectLimit: 3,
+    hourlyConnectLimit: 10,
+    hourlyPassLimit: 25,
+    hourlyPriorityConnectLimit: 2,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
@@ -196,10 +196,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules goldDefaults = MembershipRules(
     dailyMessageLimit: 2000,
     dailySwipeLimit: -1, // Unlimited
-    dailySuperLikeLimit: 5,
-    hourlyLikeLimit: 15,
-    hourlyNopeLimit: 40,
-    hourlySuperLikeLimit: 4,
+    dailyPriorityConnectLimit: 5,
+    hourlyConnectLimit: 15,
+    hourlyPassLimit: 40,
+    hourlyPriorityConnectLimit: 4,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
@@ -219,10 +219,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules platinumDefaults = MembershipRules(
     dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: -1, // Unlimited
-    dailySuperLikeLimit: -1, // Unlimited
-    hourlyLikeLimit: 20,
-    hourlyNopeLimit: 50,
-    hourlySuperLikeLimit: 5,
+    dailyPriorityConnectLimit: -1, // Unlimited
+    hourlyConnectLimit: 20,
+    hourlyPassLimit: 50,
+    hourlyPriorityConnectLimit: 5,
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
@@ -243,10 +243,10 @@ class MembershipRules extends Equatable {
   static const MembershipRules testDefaults = MembershipRules(
     dailyMessageLimit: -1, // Unlimited by default, admin configurable
     dailySwipeLimit: -1, // Unlimited by default, admin configurable
-    dailySuperLikeLimit: -1, // Unlimited by default, admin configurable
-    hourlyLikeLimit: 20, // Same as Platinum max
-    hourlyNopeLimit: 50, // Same as Platinum max
-    hourlySuperLikeLimit: 5, // Same as Platinum max
+    dailyPriorityConnectLimit: -1, // Unlimited by default, admin configurable
+    hourlyConnectLimit: 20, // Same as Platinum max
+    hourlyPassLimit: 50, // Same as Platinum max
+    hourlyPriorityConnectLimit: 5, // Same as Platinum max
     canUseAdvancedFilters: true,
     canFilterByLocation: true,
     canFilterByInterests: true,
@@ -285,10 +285,10 @@ class MembershipRules extends Equatable {
   List<Object?> get props => [
         dailyMessageLimit,
         dailySwipeLimit,
-        dailySuperLikeLimit,
-        hourlyLikeLimit,
-        hourlyNopeLimit,
-        hourlySuperLikeLimit,
+        dailyPriorityConnectLimit,
+        hourlyConnectLimit,
+        hourlyPassLimit,
+        hourlyPriorityConnectLimit,
         canUseAdvancedFilters,
         canFilterByLocation,
         canFilterByInterests,

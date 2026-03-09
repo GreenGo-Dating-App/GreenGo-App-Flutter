@@ -121,7 +121,7 @@
   "adminDailyLimits": "Limiti giornalieri",
   "adminDailyLoginRewards": "Ricompense accesso giornaliero",
   "adminDailyMessages": "Messaggi giornalieri",
-  "adminDailySuperLikes": "Super Like giornalieri",
+  "adminDailySuperLikes": "Connessioni Prioritarie giornaliere",
   "adminDailySwipes": "Swipe giornalieri",
   "adminDashboard": "Pannello di amministrazione",
   "adminDate": "Data",
@@ -2103,7 +2103,7 @@
   "membershipCouponCodeLabel": "Codice Coupon *",
   "membershipCouponHint": "es. GOLD2024",
   "membershipCurrent": "Abbonamento attuale",
-  "membershipDailyLikes": "Like giornalieri",
+  "membershipDailyLikes": "Connessioni Giornaliere",
   "membershipDailyMessagesLabel": "Messaggi Giornalieri (vuoto = illimitati)",
   "membershipDailySwipesLabel": "Swipe Giornalieri (vuoto = illimitati)",
   "membershipDaysRemaining": "{days} giorni rimanenti",
@@ -2138,11 +2138,11 @@
   "membershipRequiredDescription": "Devi essere un membro di GreenGo per eseguire questa azione.",
   "membershipRewinds": "Ripristini",
   "membershipSavePercent": "RISPARMIA {percent}%",
-  "membershipSeeWhoLikes": "Vedi chi ti ha messo like",
+  "membershipSeeWhoLikes": "Vedi chi si connette",
   "membershipSilver": "Silver",
   "membershipSubtitle": "Acquista una volta, goditi le funzionalità premium per 1 mese o 1 anno",
-  "membershipSuperLikes": "Super Like",
-  "membershipSuperLikesLabel": "Super Like/Giorno (vuoto = illimitati)",
+  "membershipSuperLikes": "Connessioni Prioritarie",
+  "membershipSuperLikesLabel": "Connessioni Prioritarie/Giorno (vuoto = illimitati)",
   "membershipTerms": "Acquisto singolo. L'abbonamento verrà esteso dalla data di scadenza attuale.",
   "membershipTermsExtended": "Acquisto singolo. L'abbonamento verrà esteso dalla data di scadenza attuale. Gli acquisti di livello superiore sostituiscono i livelli inferiori.",
   "membershipTierLabel": "Livello Abbonamento *",
@@ -2253,7 +2253,7 @@
     }
   },
   "notificationDialogEnable": "Attiva",
-  "notificationDialogMessage": "Attiva le notifiche per sapere quando ricevi match, messaggi e super like.",
+  "notificationDialogMessage": "Attiva le notifiche per sapere quando ricevi match, messaggi e connessioni prioritarie.",
   "notificationDialogNotNow": "Non ora",
   "notificationDialogTitle": "Resta connesso",
   "notificationEmailSubtitle": "Ricevi notifiche via e-mail",
@@ -2316,7 +2316,7 @@
   "notificationSoundSubtitle": "Riproduci suono per le notifiche",
   "notificationSoundVibration": "Suono e vibrazione",
   "notificationStartTime": "Ora di inizio",
-  "notificationSuperLike": "Hai ricevuto un super mi piace da @{nickname}",
+  "notificationSuperLike": "Hai ricevuto una connessione prioritaria da @{nickname}",
   "@notificationSuperLike": {
     "placeholders": {
       "nickname": {
@@ -2324,8 +2324,8 @@
       }
     }
   },
-  "notificationSuperLikes": "Super Like",
-  "notificationSuperLikesSubtitle": "Quando qualcuno ti manda un Super Like",
+  "notificationSuperLikes": "Connessioni Prioritarie",
+  "notificationSuperLikesSubtitle": "Quando qualcuno si connette prioritariamente con te",
   "notificationTypes": "Tipi di notifiche",
   "notificationVibration": "Vibrazione",
   "notificationVibrationSubtitle": "Vibra per le notifiche",
@@ -2614,7 +2614,7 @@
   "profileProgressGrowth": "Progressi e crescita",
   "profileRestart": "Riavvia",
   "profileRestartDiscovery": "Riavvia scoperta",
-  "profileRestartDiscoveryDialogContent": "Questo cancellerà tutti i tuoi swipe (like, nope, super like) in modo da poter riscoprire tutti da zero.\n\nI tuoi match e le chat NON saranno influenzati.",
+  "profileRestartDiscoveryDialogContent": "Questo cancellerà tutti i tuoi swipe (connessioni, rifiuti, connessioni prioritarie) in modo da poter riscoprire tutti da zero.\n\nI tuoi match e le chat NON saranno influenzati.",
   "profileRestartDiscoveryDialogTitle": "Riavvia scoperta",
   "profileRestartDiscoverySubtitle": "Reimposta tutti gli swipe e ricomincia da capo",
   "profileSearchByNickname": "Cerca per @nickname",
@@ -2871,7 +2871,7 @@
   "shopCurrent": "ATTUALE",
   "shopCurrentExpires": "ATTUALE - Scade il {date}",
   "shopCurrentPlan": "Piano attuale: {tier}",
-  "shopDailyLikes": "Like giornalieri",
+  "shopDailyLikes": "Connessioni Giornaliere",
   "shopDaysLeft": "{days}g rimanenti",
   "shopEnterAmount": "Inserisci l'importo",
   "shopEnterBothFields": "Inserisci nickname e importo",
@@ -2900,11 +2900,11 @@
   "shopRecipientNickname": "Nickname del destinatario",
   "shopRetry": "Riprova",
   "shopSavePercent": "RISPARMIA {percent}%",
-  "shopSeeWhoLikesYou": "Vedi chi ti piace",
+  "shopSeeWhoLikesYou": "Vedi chi si connette",
   "shopSend": "Invia",
   "shopSendCoins": "Invia monete",
   "shopStoreNotAvailable": "Negozio non disponibile. Controlla le impostazioni del dispositivo.",
-  "shopSuperLikes": "Super Like",
+  "shopSuperLikes": "Connessioni Prioritarie",
   "shopTabCoins": "Monete",
   "shopTabError": "Errore scheda {tabName}",
   "shopTabMembership": "Iscrizione",
@@ -3023,8 +3023,8 @@
   "subscriptionExpired": "Abbonamento scaduto",
   "subscriptionExpiredBody": "Il tuo abbonamento {tierName} è scaduto. Sei stato spostato al livello Free.\n\nEffettua l'upgrade in qualsiasi momento per ripristinare le funzionalità premium!",
   "suggestions": "Suggerimenti",
-  "superLike": "Super Like",
-  "superLikedYou": "{name} ti ha messo Super Like!",
+  "superLike": "Connessione Prioritaria",
+  "superLikedYou": "{name} si è connesso prioritariamente con te!",
   "@superLikedYou": {
     "placeholders": {
       "name": {
@@ -3032,7 +3032,7 @@
       }
     }
   },
-  "superLikes": "Super Mi Piace",
+  "superLikes": "Connessioni Prioritarie",
   "supportCenter": "Centro Supporto",
   "supportCenterSubtitle": "Ottieni aiuto, segnala problemi, contattaci",
   "swipeIndicatorLike": "CONNETTI",
@@ -3350,7 +3350,7 @@
       }
     }
   },
-  "youGotSuperLike": "Hai ricevuto un Super Like!",
+  "youGotSuperLike": "Hai ricevuto una Connessione Prioritaria!",
   "youLabel": "TU",
   "youLose": "Hai Perso",
   "youMatchedWithOnDate": "Hai fatto match con {name} il {date}",

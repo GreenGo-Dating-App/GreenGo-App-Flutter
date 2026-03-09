@@ -752,7 +752,7 @@ abstract class AppLocalizations {
   /// No description provided for @adminDailySuperLikes.
   ///
   /// In en, this message translates to:
-  /// **'Daily Super Likes'**
+  /// **'Daily Priority Connects'**
   String get adminDailySuperLikes;
 
   /// No description provided for @adminDailySwipes.
@@ -10845,7 +10845,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipDailyLikes.
   ///
   /// In en, this message translates to:
-  /// **'Daily Likes'**
+  /// **'Daily Connects'**
   String get membershipDailyLikes;
 
   /// No description provided for @membershipDailyMessagesLabel.
@@ -11055,7 +11055,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipSeeWhoLikes.
   ///
   /// In en, this message translates to:
-  /// **'See Who Likes You'**
+  /// **'See Who Connects'**
   String get membershipSeeWhoLikes;
 
   /// No description provided for @membershipSilver.
@@ -11073,13 +11073,13 @@ abstract class AppLocalizations {
   /// No description provided for @membershipSuperLikes.
   ///
   /// In en, this message translates to:
-  /// **'Super Likes'**
+  /// **'Priority Connects'**
   String get membershipSuperLikes;
 
   /// No description provided for @membershipSuperLikesLabel.
   ///
   /// In en, this message translates to:
-  /// **'Super Likes/Day (empty = unlimited)'**
+  /// **'Priority Connects/Day (empty = unlimited)'**
   String get membershipSuperLikesLabel;
 
   /// No description provided for @membershipTerms.
@@ -11493,7 +11493,7 @@ abstract class AppLocalizations {
   /// No description provided for @notificationDialogMessage.
   ///
   /// In en, this message translates to:
-  /// **'Enable notifications to know when you get matches, messages, and super likes.'**
+  /// **'Enable notifications to know when you get matches, messages, and priority connects.'**
   String get notificationDialogMessage;
 
   /// No description provided for @notificationDialogNotNow.
@@ -11703,19 +11703,19 @@ abstract class AppLocalizations {
   /// No description provided for @notificationSuperLike.
   ///
   /// In en, this message translates to:
-  /// **'You received a super like from @{nickname}'**
+  /// **'You received a priority connect from @{nickname}'**
   String notificationSuperLike(String nickname);
 
   /// No description provided for @notificationSuperLikes.
   ///
   /// In en, this message translates to:
-  /// **'Super Likes'**
+  /// **'Priority Connects'**
   String get notificationSuperLikes;
 
   /// No description provided for @notificationSuperLikesSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'When someone super likes you'**
+  /// **'When someone priority connects with you'**
   String get notificationSuperLikesSubtitle;
 
   /// No description provided for @notificationTypes.
@@ -13407,7 +13407,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileRestartDiscoveryDialogContent.
   ///
   /// In en, this message translates to:
-  /// **'This will erase all your swipes (likes, nopes, super likes) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.'**
+  /// **'This will erase all your swipes (connects, passes, priority connects) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.'**
   String get profileRestartDiscoveryDialogContent;
 
   /// No description provided for @profileRestartDiscoveryDialogTitle.
@@ -14637,7 +14637,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopDailyLikes.
   ///
   /// In en, this message translates to:
-  /// **'Daily Likes'**
+  /// **'Daily Connects'**
   String get shopDailyLikes;
 
   /// No description provided for @shopDaysLeft.
@@ -14811,7 +14811,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopSeeWhoLikesYou.
   ///
   /// In en, this message translates to:
-  /// **'See Who Likes You'**
+  /// **'See Who Connects'**
   String get shopSeeWhoLikesYou;
 
   /// No description provided for @shopSend.
@@ -14835,7 +14835,7 @@ abstract class AppLocalizations {
   /// No description provided for @shopSuperLikes.
   ///
   /// In en, this message translates to:
-  /// **'Super Likes'**
+  /// **'Priority Connects'**
   String get shopSuperLikes;
 
   /// No description provided for @shopTabCoins.
@@ -15465,19 +15465,19 @@ abstract class AppLocalizations {
   /// No description provided for @superLike.
   ///
   /// In en, this message translates to:
-  /// **'Super Like'**
+  /// **'Priority Connect'**
   String get superLike;
 
   /// No description provided for @superLikedYou.
   ///
   /// In en, this message translates to:
-  /// **'{name} super liked you!'**
+  /// **'{name} priority connected with you!'**
   String superLikedYou(String name);
 
   /// No description provided for @superLikes.
   ///
   /// In en, this message translates to:
-  /// **'Super Likes'**
+  /// **'Priority Connects'**
   String get superLikes;
 
   /// No description provided for @supportCenter.
@@ -16929,7 +16929,7 @@ abstract class AppLocalizations {
   /// No description provided for @youGotSuperLike.
   ///
   /// In en, this message translates to:
-  /// **'You got a Super Like!'**
+  /// **'You got a Priority Connect!'**
   String get youGotSuperLike;
 
   /// No description provided for @youLabel.

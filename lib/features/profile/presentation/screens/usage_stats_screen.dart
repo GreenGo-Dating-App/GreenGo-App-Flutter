@@ -250,25 +250,25 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                     // Hourly limits
                     _buildUsageStat(
                       icon: Icons.favorite,
-                      label: 'Likes This Hour',
+                      label: 'Connects This Hour',
                       used: _usageStats[UsageLimitType.likes] ?? 0,
-                      limit: rules.hourlyLikeLimit,
+                      limit: rules.hourlyConnectLimit,
                     ),
                     const SizedBox(height: 12),
 
                     _buildUsageStat(
                       icon: Icons.close,
-                      label: 'Nopes This Hour',
+                      label: 'Passes This Hour',
                       used: _usageStats[UsageLimitType.nopes] ?? 0,
-                      limit: rules.hourlyNopeLimit,
+                      limit: rules.hourlyPassLimit,
                     ),
                     const SizedBox(height: 12),
 
                     _buildUsageStat(
                       icon: Icons.star,
-                      label: 'Super Likes This Hour',
+                      label: 'Priority Connects This Hour',
                       used: _usageStats[UsageLimitType.superLikes] ?? 0,
-                      limit: rules.hourlySuperLikeLimit,
+                      limit: rules.hourlyPriorityConnectLimit,
                     ),
                     const SizedBox(height: 12),
 
@@ -674,7 +674,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           ),
           const SizedBox(height: 12),
           _buildComparisonRow('Swipes', currentRules.dailySwipeLimit, nextRules.dailySwipeLimit),
-          _buildComparisonRow('Super Likes', currentRules.dailySuperLikeLimit, nextRules.dailySuperLikeLimit),
+          _buildComparisonRow('Priority Connects', currentRules.dailyPriorityConnectLimit, nextRules.dailyPriorityConnectLimit),
           _buildComparisonRow('Messages', currentRules.dailyMessageLimit, nextRules.dailyMessageLimit),
           _buildComparisonRow('Media Sends', currentRules.dailyMediaSendLimit, nextRules.dailyMediaSendLimit),
         ],

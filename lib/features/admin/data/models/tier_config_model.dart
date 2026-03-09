@@ -81,7 +81,7 @@ class MembershipRulesModel {
     return MembershipRules(
       dailyMessageLimit: map['dailyMessageLimit'] as int? ?? 10,
       dailySwipeLimit: map['dailySwipeLimit'] as int? ?? 20,
-      dailySuperLikeLimit: map['dailySuperLikeLimit'] as int? ?? 0,
+      dailyPriorityConnectLimit: map['dailyPriorityConnectLimit'] as int? ?? 0,
       canUseAdvancedFilters: map['canUseAdvancedFilters'] as bool? ?? false,
       canFilterByLocation: map['canFilterByLocation'] as bool? ?? false,
       canFilterByInterests: map['canFilterByInterests'] as bool? ?? false,
@@ -102,7 +102,7 @@ class MembershipRulesModel {
     return {
       'dailyMessageLimit': rules.dailyMessageLimit,
       'dailySwipeLimit': rules.dailySwipeLimit,
-      'dailySuperLikeLimit': rules.dailySuperLikeLimit,
+      'dailyPriorityConnectLimit': rules.dailyPriorityConnectLimit,
       'canUseAdvancedFilters': rules.canUseAdvancedFilters,
       'canFilterByLocation': rules.canFilterByLocation,
       'canFilterByInterests': rules.canFilterByInterests,

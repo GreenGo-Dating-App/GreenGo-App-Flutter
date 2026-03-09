@@ -452,8 +452,8 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     rules.dailyMessageLimit == -1 ? 'Unlimited' : '${rules.dailyMessageLimit}'),
                 _buildRuleRow('Daily Swipes',
                     rules.dailySwipeLimit == -1 ? 'Unlimited' : '${rules.dailySwipeLimit}'),
-                _buildRuleRow('Super Likes/Day',
-                    rules.dailySuperLikeLimit == -1 ? 'Unlimited' : '${rules.dailySuperLikeLimit}'),
+                _buildRuleRow('Priority Connects/Day',
+                    rules.dailyPriorityConnectLimit == -1 ? 'Unlimited' : '${rules.dailyPriorityConnectLimit}'),
                 _buildRuleRow('Advanced Filters', rules.canUseAdvancedFilters ? 'Yes' : 'No'),
                 _buildRuleRow('Match Priority', '${rules.matchPriority}'),
                 _buildRuleRow('Read Receipts', rules.canSeeReadReceipts ? 'Yes' : 'No'),
@@ -967,8 +967,8 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
     final dailySwipesController = TextEditingController(
       text: rules.dailySwipeLimit == -1 ? '' : rules.dailySwipeLimit.toString(),
     );
-    final superLikesController = TextEditingController(
-      text: rules.dailySuperLikeLimit == -1 ? '' : rules.dailySuperLikeLimit.toString(),
+    final priorityConnectsController = TextEditingController(
+      text: rules.dailyPriorityConnectLimit == -1 ? '' : rules.dailyPriorityConnectLimit.toString(),
     );
     bool canUseAdvancedFilters = rules.canUseAdvancedFilters;
     bool canSeeReadReceipts = rules.canSeeReadReceipts;
@@ -1015,7 +1015,7 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                   ),
                   const SizedBox(height: 8),
                   TextField(
-                    controller: superLikesController,
+                    controller: priorityConnectsController,
                     keyboardType: TextInputType.number,
                     style: const TextStyle(color: AppColors.textPrimary),
                     decoration: InputDecoration(
@@ -1062,8 +1062,8 @@ class _MembershipAdminScreenState extends State<MembershipAdminScreen>
                     dailySwipeLimit: dailySwipesController.text.isNotEmpty
                         ? int.tryParse(dailySwipesController.text) ?? 20
                         : -1,
-                    dailySuperLikeLimit: superLikesController.text.isNotEmpty
-                        ? int.tryParse(superLikesController.text) ?? 0
+                    dailyPriorityConnectLimit: priorityConnectsController.text.isNotEmpty
+                        ? int.tryParse(priorityConnectsController.text) ?? 0
                         : -1,
                     canUseAdvancedFilters: canUseAdvancedFilters,
                     canSeeReadReceipts: canSeeReadReceipts,

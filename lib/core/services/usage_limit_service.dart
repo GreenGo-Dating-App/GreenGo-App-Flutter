@@ -5,10 +5,10 @@ import '../../features/membership/domain/entities/membership.dart';
 /// Types of usage limits that can be tracked
 enum UsageLimitType {
   swipes,           // Legacy — all swipes combined (daily)
-  likes,            // Right swipes — hourly
-  nopes,            // Left swipes — hourly
-  superLikes,       // Up swipes — hourly
-  dailySuperLikes,  // Up swipes — daily cap
+  likes,            // Connects (right swipes) — hourly
+  nopes,            // Passes (left swipes) — hourly
+  superLikes,            // Priority connects — hourly
+  dailySuperLikes,       // Priority connects — daily cap
   messages,         // Daily
   mediaSends,       // Daily
 }
@@ -38,7 +38,7 @@ class UsageLimitResult {
 
 /// Service to track and enforce usage limits based on membership tier.
 ///
-/// Likes, nopes, and super likes are tracked HOURLY.
+/// Likes, nopes, and priority connects are tracked HOURLY.
 /// Messages and media sends are tracked DAILY.
 /// Boosts are tracked MONTHLY.
 /// All data is persisted in Firestore so it survives logout/login.
@@ -198,13 +198,13 @@ class UsageLimitService {
   int _getLimit(UsageLimitType limitType, MembershipRules rules) {
     switch (limitType) {
       case UsageLimitType.likes:
-        return rules.hourlyLikeLimit;
+        return rules.hourlyConnectLimit;
       case UsageLimitType.nopes:
-        return rules.hourlyNopeLimit;
+        return rules.hourlyPassLimit;
       case UsageLimitType.superLikes:
-        return rules.hourlySuperLikeLimit;
+        return rules.hourlyPriorityConnectLimit;
       case UsageLimitType.dailySuperLikes:
-        return rules.dailySuperLikeLimit;
+        return rules.dailyPriorityConnectLimit;
       case UsageLimitType.swipes:
         return rules.dailySwipeLimit;
       case UsageLimitType.messages:
@@ -238,13 +238,13 @@ class UsageLimitService {
   String _getLimitTypeName(UsageLimitType limitType) {
     switch (limitType) {
       case UsageLimitType.likes:
-        return 'likes';
+        return 'connects';
       case UsageLimitType.nopes:
-        return 'nopes';
+        return 'passes';
       case UsageLimitType.superLikes:
-        return 'super likes';
+        return 'Priority Connects';
       case UsageLimitType.dailySuperLikes:
-        return 'daily super likes';
+        return 'daily Priority Connects';
       case UsageLimitType.swipes:
         return 'swipes';
       case UsageLimitType.messages:
@@ -264,16 +264,16 @@ class UsageLimitService {
   ) {
     switch (limitType) {
       case UsageLimitType.likes:
-        return "You've used all $limit likes this hour. Upgrade for more or wait until next hour.";
+        return "You've used all $limit connects this hour. Upgrade for more or wait until next hour.";
       case UsageLimitType.nopes:
-        return "You've used all $limit nopes this hour. Upgrade for more or wait until next hour.";
+        return "You've used all $limit passes this hour. Upgrade for more or wait until next hour.";
       case UsageLimitType.superLikes:
         if (limit == 0) {
-          return 'Super Likes are not available on the ${currentTier.displayName} plan. Upgrade to unlock this feature!';
+          return 'Priority Connects are not available on the ${currentTier.displayName} plan. Upgrade to unlock this feature!';
         }
-        return "You've used all $limit super likes this hour. Upgrade for more or wait until next hour.";
+        return "You've used all $limit Priority Connects this hour. Upgrade for more or wait until next hour.";
       case UsageLimitType.dailySuperLikes:
-        return "You've used your $limit free super like${limit == 1 ? '' : 's'} for today. Use coins for more or wait until tomorrow.";
+        return "You've used your $limit free priority connect${limit == 1 ? '' : 's'} for today. Use coins for more or wait until tomorrow.";
       case UsageLimitType.swipes:
         return "You've used all $limit swipes for today. Upgrade to get more swipes or wait until tomorrow.";
       case UsageLimitType.messages:

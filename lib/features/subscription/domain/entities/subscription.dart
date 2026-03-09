@@ -155,10 +155,10 @@ extension SubscriptionTierExtension on SubscriptionTier {
     switch (this) {
       case SubscriptionTier.basic:
         return {
-          'dailyLikes': 10,
-          'superLikes': 1,
+          'dailyConnects': 10,
+          'priorityConnects': 1,
           'rewinds': 0,
-          'unlimitedLikes': false,
+          'unlimitedConnects': false,
           'advancedFilters': false,
           'readReceipts': false,
           'prioritySupport': false,
@@ -168,10 +168,10 @@ extension SubscriptionTierExtension on SubscriptionTier {
         };
       case SubscriptionTier.silver:
         return {
-          'dailyLikes': 100,
-          'superLikes': 5,
+          'dailyConnects': 100,
+          'priorityConnects': 5,
           'rewinds': 5,
-          'unlimitedLikes': false,
+          'unlimitedConnects': false,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': false,
@@ -181,10 +181,10 @@ extension SubscriptionTierExtension on SubscriptionTier {
         };
       case SubscriptionTier.gold:
         return {
-          'dailyLikes': -1, // unlimited
-          'superLikes': 10,
+          'dailyConnects': -1, // unlimited
+          'priorityConnects': 10,
           'rewinds': -1, // unlimited
-          'unlimitedLikes': true,
+          'unlimitedConnects': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
@@ -194,10 +194,10 @@ extension SubscriptionTierExtension on SubscriptionTier {
         };
       case SubscriptionTier.platinum:
         return {
-          'dailyLikes': -1, // unlimited
-          'superLikes': -1, // unlimited
+          'dailyConnects': -1, // unlimited
+          'priorityConnects': -1, // unlimited
           'rewinds': -1, // unlimited
-          'unlimitedLikes': true,
+          'unlimitedConnects': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,
@@ -211,10 +211,10 @@ extension SubscriptionTierExtension on SubscriptionTier {
       case SubscriptionTier.test:
         // Test tier - all features enabled, limits configurable from admin panel
         return {
-          'dailyLikes': -1, // unlimited (admin configurable)
-          'superLikes': -1, // unlimited (admin configurable)
+          'dailyConnects': -1, // unlimited (admin configurable)
+          'priorityConnects': -1, // unlimited (admin configurable)
           'rewinds': -1, // unlimited (admin configurable)
-          'unlimitedLikes': true,
+          'unlimitedConnects': true,
           'advancedFilters': true,
           'readReceipts': true,
           'prioritySupport': true,

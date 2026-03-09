@@ -1426,8 +1426,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     const SizedBox(height: 16),
 
                     // Features list
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyLikes'] as int)),
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['superLikes'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyConnects'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['priorityConnects'] as int)),
                     _buildFeatureRow(AppLocalizations.of(context)!.shopBadge, features['badge'] == true ? '✓' : '✗'),
                     if (features['advancedFilters'] == true)
                       _buildFeatureRow(AppLocalizations.of(context)!.shopAdvancedFilters, '✓'),

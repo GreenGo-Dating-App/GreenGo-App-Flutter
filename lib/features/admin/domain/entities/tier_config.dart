@@ -157,8 +157,8 @@ class TierConfigProvider {
         return rules.dailyMessageLimit;
       case 'dailySwipes':
         return rules.dailySwipeLimit;
-      case 'dailySuperLikes':
-        return rules.dailySuperLikeLimit;
+      case 'dailyPriorityConnects':
+        return rules.dailyPriorityConnectLimit;
       case 'matchPriority':
         return rules.matchPriority;
       default:

@@ -121,7 +121,7 @@
   "adminDailyLimits": "Límites diarios",
   "adminDailyLoginRewards": "Recompensas de inicio de sesión diarias",
   "adminDailyMessages": "Mensajes diarios",
-  "adminDailySuperLikes": "Super Likes diarios",
+  "adminDailySuperLikes": "Conexiones Prioritarias diarias",
   "adminDailySwipes": "Swipes diarios",
   "adminDashboard": "Panel de administración",
   "adminDate": "Fecha",
@@ -2103,7 +2103,7 @@
   "membershipCouponCodeLabel": "Código de Cupón *",
   "membershipCouponHint": "ej., GOLD2024",
   "membershipCurrent": "Membresía actual",
-  "membershipDailyLikes": "Likes diarios",
+  "membershipDailyLikes": "Conexiones Diarias",
   "membershipDailyMessagesLabel": "Mensajes Diarios (vacío = ilimitado)",
   "membershipDailySwipesLabel": "Deslizamientos Diarios (vacío = ilimitado)",
   "membershipDaysRemaining": "{days} días restantes",
@@ -2138,11 +2138,11 @@
   "membershipRequiredDescription": "Necesitas ser miembro de GreenGo para realizar esta acción.",
   "membershipRewinds": "Retrocesos",
   "membershipSavePercent": "AHORRA {percent}%",
-  "membershipSeeWhoLikes": "Ver quién te gusta",
+  "membershipSeeWhoLikes": "Ver quién conecta",
   "membershipSilver": "Silver",
   "membershipSubtitle": "Compra una vez, disfruta de funciones premium durante 1 mes o 1 año",
-  "membershipSuperLikes": "Super Likes",
-  "membershipSuperLikesLabel": "Super Likes/Día (vacío = ilimitado)",
+  "membershipSuperLikes": "Conexiones Prioritarias",
+  "membershipSuperLikesLabel": "Conexiones Prioritarias/Día (vacío = ilimitado)",
   "membershipTerms": "Compra única. La membresía se extenderá desde tu fecha de finalización actual.",
   "membershipTermsExtended": "Compra única. La membresía se extenderá desde tu fecha de finalización actual. Las compras de niveles superiores anulan los inferiores.",
   "membershipTierLabel": "Nivel de Membresía *",
@@ -2253,7 +2253,7 @@
     }
   },
   "notificationDialogEnable": "Activar",
-  "notificationDialogMessage": "Activa las notificaciones para saber cuándo recibes matches, mensajes y super likes.",
+  "notificationDialogMessage": "Activa las notificaciones para saber cuándo recibes matches, mensajes y conexiones prioritarias.",
   "notificationDialogNotNow": "Ahora no",
   "notificationDialogTitle": "Mantente conectado",
   "notificationEmailSubtitle": "Recibir notificaciones por correo electrónico",
@@ -2316,7 +2316,7 @@
   "notificationSoundSubtitle": "Reproducir sonido para las notificaciones",
   "notificationSoundVibration": "Sonido y vibración",
   "notificationStartTime": "Hora de inicio",
-  "notificationSuperLike": "Recibiste un super me gusta de @{nickname}",
+  "notificationSuperLike": "Recibiste una conexión prioritaria de @{nickname}",
   "@notificationSuperLike": {
     "placeholders": {
       "nickname": {
@@ -2324,8 +2324,8 @@
       }
     }
   },
-  "notificationSuperLikes": "Super Likes",
-  "notificationSuperLikesSubtitle": "Cuando alguien te da un Super Like",
+  "notificationSuperLikes": "Conexiones Prioritarias",
+  "notificationSuperLikesSubtitle": "Cuando alguien conecta prioritariamente contigo",
   "notificationTypes": "Tipos de notificación",
   "notificationVibration": "Vibración",
   "notificationVibrationSubtitle": "Vibrar para las notificaciones",
@@ -2614,7 +2614,7 @@
   "profileProgressGrowth": "Progreso y crecimiento",
   "profileRestart": "Reiniciar",
   "profileRestartDiscovery": "Reiniciar descubrimiento",
-  "profileRestartDiscoveryDialogContent": "Esto borrará todos tus swipes (likes, nopes, super likes) para que puedas redescubrir a todos desde cero.\n\nTus matches y chats NO se verán afectados.",
+  "profileRestartDiscoveryDialogContent": "Esto borrará todos tus swipes (conexiones, rechazos, conexiones prioritarias) para que puedas redescubrir a todos desde cero.\n\nTus matches y chats NO se verán afectados.",
   "profileRestartDiscoveryDialogTitle": "Reiniciar descubrimiento",
   "profileRestartDiscoverySubtitle": "Restablecer todos los swipes y empezar de nuevo",
   "profileSearchByNickname": "Buscar por @apodo",
@@ -2871,7 +2871,7 @@
   "shopCurrent": "ACTUAL",
   "shopCurrentExpires": "ACTUAL - Expira {date}",
   "shopCurrentPlan": "Plan actual: {tier}",
-  "shopDailyLikes": "Likes diarios",
+  "shopDailyLikes": "Conexiones Diarias",
   "shopDaysLeft": "{days}d restantes",
   "shopEnterAmount": "Ingresa la cantidad",
   "shopEnterBothFields": "Ingresa el nickname y la cantidad",
@@ -2900,11 +2900,11 @@
   "shopRecipientNickname": "Nickname del destinatario",
   "shopRetry": "Reintentar",
   "shopSavePercent": "AHORRA {percent}%",
-  "shopSeeWhoLikesYou": "Ver quién te gusta",
+  "shopSeeWhoLikesYou": "Ver quién conecta",
   "shopSend": "Enviar",
   "shopSendCoins": "Enviar monedas",
   "shopStoreNotAvailable": "Tienda no disponible. Revisa la configuración de tu dispositivo.",
-  "shopSuperLikes": "Super Likes",
+  "shopSuperLikes": "Conexiones Prioritarias",
   "shopTabCoins": "Monedas",
   "shopTabError": "Error en la pestaña {tabName}",
   "shopTabMembership": "Membresía",
@@ -3023,8 +3023,8 @@
   "subscriptionExpired": "Suscripción expirada",
   "subscriptionExpiredBody": "Tu suscripción {tierName} ha expirado. Has sido movido al nivel Free.\n\n¡Actualiza en cualquier momento para restaurar tus funciones premium!",
   "suggestions": "Sugerencias",
-  "superLike": "Super Like",
-  "superLikedYou": "¡{name} te dio un Super Like!",
+  "superLike": "Conexión Prioritaria",
+  "superLikedYou": "¡{name} conectó prioritariamente contigo!",
   "@superLikedYou": {
     "placeholders": {
       "name": {
@@ -3032,7 +3032,7 @@
       }
     }
   },
-  "superLikes": "Super Me Gusta",
+  "superLikes": "Conexiones Prioritarias",
   "supportCenter": "Centro de Soporte",
   "supportCenterSubtitle": "Obtener ayuda, reportar problemas, contáctanos",
   "swipeIndicatorLike": "CONECTAR",
@@ -3350,7 +3350,7 @@
       }
     }
   },
-  "youGotSuperLike": "¡Recibiste un Super Like!",
+  "youGotSuperLike": "¡Recibiste una Conexión Prioritaria!",
   "youLabel": "TU",
   "youLose": "Perdiste",
   "youMatchedWithOnDate": "Hiciste match con {name} el {date}",
