@@ -37,7 +37,7 @@ class FeatureFlagsService extends ChangeNotifier {
     'inAppPurchases': true,
 
     // Social Features
-    'superLikes': true,
+    'priorityConnects': true,
     'profileBoosts': true,
     'advancedFilters': true,
 
@@ -142,7 +142,7 @@ class FeatureFlagsService extends ChangeNotifier {
   bool get inAppPurchasesEnabled => isEnabled('inAppPurchases');
 
   // Social Features
-  bool get superLikesEnabled => isEnabled('superLikes');
+  bool get priorityConnectsEnabled => isEnabled('priorityConnects');
   bool get profileBoostsEnabled => isEnabled('profileBoosts');
   bool get advancedFiltersEnabled => isEnabled('advancedFilters');
 

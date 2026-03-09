@@ -165,9 +165,9 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final rules = membershipRules ?? MembershipRules.freeDefaults;
     final tier = membershipTier ?? MembershipTier.free;
 
-    // ── Super Like: check base membership first, then limits, then coins ──
+    // ── Priority Connect: check base membership first, then limits, then coins ──
     if (actionType == SwipeActionType.superLike) {
-      // Check if user has base membership before processing super like
+      // Check if user has base membership before processing priority connect
       {
         try {
           final profileDoc = await FirebaseFirestore.instance
@@ -197,25 +197,25 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       }
       bool usedFreeAllowance = false;
 
-      // Step 1: Check daily super like limit
-      final dailySuperLikeLimit = await _usageLimitService.checkLimit(
+      // Step 1: Check daily priority connect limit
+      final dailyPriorityConnectLimit = await _usageLimitService.checkLimit(
         userId: userId,
         limitType: UsageLimitType.dailySuperLikes,
         rules: rules,
         currentTier: tier,
       );
 
-      if (dailySuperLikeLimit.isAllowed) {
-        // Step 2: Check hourly super like limit
-        final superLikeLimit = await _usageLimitService.checkLimit(
+      if (dailyPriorityConnectLimit.isAllowed) {
+        // Step 2: Check hourly priority connect limit
+        final priorityConnectLimit = await _usageLimitService.checkLimit(
           userId: userId,
           limitType: UsageLimitType.superLikes,
           rules: rules,
           currentTier: tier,
         );
 
-        if (superLikeLimit.isAllowed) {
-          // Free super like available from tier allowance — no coins needed
+        if (priorityConnectLimit.isAllowed) {
+          // Free priority connect available from tier allowance — no coins needed
           usedFreeAllowance = true;
         }
       }
@@ -225,7 +225,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         emit(DiscoverySuperLikeLimitReached(
           cards: currentState.cards,
           currentIndex: currentState.currentIndex,
-          limitResult: dailySuperLikeLimit,
+          limitResult: dailyPriorityConnectLimit,
         ));
         return;
       }
@@ -248,7 +248,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
             currentIndex: currentState.currentIndex,
             required: CoinFeaturePrices.superLike,
             available: available,
-            featureName: 'Super Like',
+            featureName: 'Priority Connect',
           ));
           emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
           return;
@@ -267,7 +267,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           currentIndex: currentState.currentIndex,
           required: CoinFeaturePrices.superLike,
           available: 0,
-          featureName: 'Super Like',
+          featureName: 'Priority Connect',
         ));
         emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
         return;
@@ -285,7 +285,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         hourlyType = UsageLimitType.nopes;
         break;
       case SwipeActionType.superLike:
-        // Already checked above via super like flow
+        // Already checked above via priority connect flow
         hourlyType = null;
         break;
       case SwipeActionType.skip:

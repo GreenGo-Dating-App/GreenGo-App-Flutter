@@ -206,20 +206,20 @@ class _SubscriptionCelebrationScreenState
       rows.add(_buildBenefitRow(icon, label, value));
     }
 
-    // Daily Likes
-    final dailyLikes = features['dailyLikes'] as int? ?? 0;
-    if (dailyLikes == -1) {
-      addRow(Icons.favorite, 'Daily Likes', 'Unlimited');
-    } else if (dailyLikes > 0) {
-      addRow(Icons.favorite, 'Daily Likes', '$dailyLikes');
+    // Daily Connects
+    final dailyConnects = features['dailyConnects'] as int? ?? 0;
+    if (dailyConnects == -1) {
+      addRow(Icons.handshake, 'Daily Connects', 'Unlimited');
+    } else if (dailyConnects > 0) {
+      addRow(Icons.handshake, 'Daily Connects', '$dailyConnects');
     }
 
-    // Super Likes
-    final superLikes = features['superLikes'] as int? ?? 0;
-    if (superLikes == -1) {
-      addRow(Icons.star, 'Super Likes', 'Unlimited');
-    } else if (superLikes > 0) {
-      addRow(Icons.star, 'Super Likes', '$superLikes/day');
+    // Priority Connects
+    final priorityConnects = features['priorityConnects'] as int? ?? 0;
+    if (priorityConnects == -1) {
+      addRow(Icons.star, 'Priority Connects', 'Unlimited');
+    } else if (priorityConnects > 0) {
+      addRow(Icons.star, 'Priority Connects', '$priorityConnects/day');
     }
 
     // Rewinds

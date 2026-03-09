@@ -280,8 +280,8 @@ class LimitReachedDialog extends StatelessWidget {
           ),
           _buildComparisonRow(
             l10n.superLikes,
-            _formatLimit(currentRules.dailySuperLikeLimit, l10n),
-            _formatLimit(suggestedRules.dailySuperLikeLimit, l10n),
+            _formatLimit(currentRules.dailyPriorityConnectLimit, l10n),
+            _formatLimit(suggestedRules.dailyPriorityConnectLimit, l10n),
           ),
           if (suggestedRules.canSendMedia && !currentRules.canSendMedia)
             _buildComparisonRow(

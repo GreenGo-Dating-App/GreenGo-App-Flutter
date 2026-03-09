@@ -121,7 +121,7 @@
   "adminDailyLimits": "Tägliche Limits",
   "adminDailyLoginRewards": "Tägliche Anmeldebelohnungen",
   "adminDailyMessages": "Tägliche Nachrichten",
-  "adminDailySuperLikes": "Tägliche Super-Likes",
+  "adminDailySuperLikes": "Tägliche Prioritätsverbindungen",
   "adminDailySwipes": "Tägliche Swipes",
   "adminDashboard": "Admin-Dashboard",
   "adminDate": "Datum",
@@ -2103,7 +2103,7 @@
   "membershipCouponCodeLabel": "Gutscheincode *",
   "membershipCouponHint": "z. B. GOLD2024",
   "membershipCurrent": "Aktuelle Mitgliedschaft",
-  "membershipDailyLikes": "Tägliche Likes",
+  "membershipDailyLikes": "Tägliche Verbindungen",
   "membershipDailyMessagesLabel": "Tägliche Nachrichten (leer = unbegrenzt)",
   "membershipDailySwipesLabel": "Tägliche Swipes (leer = unbegrenzt)",
   "membershipDaysRemaining": "{days} Tage verbleibend",
@@ -2138,11 +2138,11 @@
   "membershipRequiredDescription": "Du musst Mitglied bei GreenGo sein, um diese Aktion durchzuführen.",
   "membershipRewinds": "Zurückspulen",
   "membershipSavePercent": "SPARE {percent}%",
-  "membershipSeeWhoLikes": "Sieh, wer dich mag",
+  "membershipSeeWhoLikes": "Sehen wer sich verbindet",
   "membershipSilver": "Silver",
   "membershipSubtitle": "Einmal kaufen, Premium-Funktionen für 1 Monat oder 1 Jahr genießen",
-  "membershipSuperLikes": "Super-Likes",
-  "membershipSuperLikesLabel": "Super-Likes/Tag (leer = unbegrenzt)",
+  "membershipSuperLikes": "Prioritätsverbindungen",
+  "membershipSuperLikesLabel": "Prioritätsverbindungen/Tag (leer = unbegrenzt)",
   "membershipTerms": "Einmalkauf. Die Mitgliedschaft wird ab deinem aktuellen Enddatum verlängert.",
   "membershipTermsExtended": "Einmalkauf. Die Mitgliedschaft wird ab deinem aktuellen Enddatum verlängert. Käufe höherer Stufen überschreiben niedrigere.",
   "membershipTierLabel": "Mitgliedschaftsstufe *",
@@ -2253,7 +2253,7 @@
     }
   },
   "notificationDialogEnable": "Aktivieren",
-  "notificationDialogMessage": "Aktiviere Benachrichtigungen, um über Matches, Nachrichten und Super-Likes informiert zu werden.",
+  "notificationDialogMessage": "Aktiviere Benachrichtigungen, um über Matches, Nachrichten und Prioritätsverbindungen informiert zu werden.",
   "notificationDialogNotNow": "Nicht jetzt",
   "notificationDialogTitle": "Bleib verbunden",
   "notificationEmailSubtitle": "Benachrichtigungen per E-Mail erhalten",
@@ -2316,7 +2316,7 @@
   "notificationSoundSubtitle": "Ton bei Benachrichtigungen abspielen",
   "notificationSoundVibration": "Ton & Vibration",
   "notificationStartTime": "Startzeit",
-  "notificationSuperLike": "Du hast ein Super Gefällt mir von @{nickname} erhalten",
+  "notificationSuperLike": "Du hast eine Prioritätsverbindung von @{nickname} erhalten",
   "@notificationSuperLike": {
     "placeholders": {
       "nickname": {
@@ -2324,8 +2324,8 @@
       }
     }
   },
-  "notificationSuperLikes": "Super-Likes",
-  "notificationSuperLikesSubtitle": "Wenn jemand dir ein Super-Like gibt",
+  "notificationSuperLikes": "Prioritätsverbindungen",
+  "notificationSuperLikesSubtitle": "Wenn sich jemand prioritär mit dir verbindet",
   "notificationTypes": "Benachrichtigungstypen",
   "notificationVibration": "Vibration",
   "notificationVibrationSubtitle": "Vibration bei Benachrichtigungen",
@@ -2614,7 +2614,7 @@
   "profileProgressGrowth": "Fortschritt & Wachstum",
   "profileRestart": "Neu starten",
   "profileRestartDiscovery": "Suche neu starten",
-  "profileRestartDiscoveryDialogContent": "Dadurch werden alle deine Swipes (Likes, Nopes, Super-Likes) gelöscht, sodass du alle wieder von vorne entdecken kannst.\n\nDeine Matches und Chats werden NICHT beeinflusst.",
+  "profileRestartDiscoveryDialogContent": "Dadurch werden alle deine Swipes (Verbindungen, Ablehnungen, Prioritätsverbindungen) gelöscht, sodass du alle wieder von vorne entdecken kannst.\n\nDeine Matches und Chats werden NICHT beeinflusst.",
   "profileRestartDiscoveryDialogTitle": "Suche neu starten",
   "profileRestartDiscoverySubtitle": "Alle Swipes zurücksetzen und neu beginnen",
   "profileSearchByNickname": "Nach @Spitzname suchen",
@@ -2871,7 +2871,7 @@
   "shopCurrent": "AKTUELL",
   "shopCurrentExpires": "AKTUELL - Läuft ab {date}",
   "shopCurrentPlan": "Aktueller Plan: {tier}",
-  "shopDailyLikes": "Tägliche Likes",
+  "shopDailyLikes": "Tägliche Verbindungen",
   "shopDaysLeft": "{days}T übrig",
   "shopEnterAmount": "Betrag eingeben",
   "shopEnterBothFields": "Bitte gib Nickname und Betrag ein",
@@ -2900,11 +2900,11 @@
   "shopRecipientNickname": "Empfänger-Nickname",
   "shopRetry": "Erneut versuchen",
   "shopSavePercent": "SPARE {percent}%",
-  "shopSeeWhoLikesYou": "Sehen, wer dich mag",
+  "shopSeeWhoLikesYou": "Sehen wer sich verbindet",
   "shopSend": "Senden",
   "shopSendCoins": "Münzen senden",
   "shopStoreNotAvailable": "Store nicht verfügbar. Bitte überprüfe deine Geräteeinstellungen.",
-  "shopSuperLikes": "Super Likes",
+  "shopSuperLikes": "Prioritätsverbindungen",
   "shopTabCoins": "Münzen",
   "shopTabError": "Fehler im Tab {tabName}",
   "shopTabMembership": "Mitgliedschaft",
@@ -3023,8 +3023,8 @@
   "subscriptionExpired": "Abonnement abgelaufen",
   "subscriptionExpiredBody": "Dein {tierName}-Abonnement ist abgelaufen. Du wurdest in die Free-Stufe verschoben.\n\nUpgrade jederzeit, um deine Premium-Funktionen wiederherzustellen!",
   "suggestions": "Vorschläge",
-  "superLike": "Super Like",
-  "superLikedYou": "{name} hat dir ein Super Like gegeben!",
+  "superLike": "Prioritätsverbindung",
+  "superLikedYou": "{name} hat sich prioritär mit dir verbunden!",
   "@superLikedYou": {
     "placeholders": {
       "name": {
@@ -3032,7 +3032,7 @@
       }
     }
   },
-  "superLikes": "Super Gefällt mir",
+  "superLikes": "Prioritätsverbindungen",
   "supportCenter": "Support-Center",
   "supportCenterSubtitle": "Hilfe erhalten, Probleme melden, kontaktiere uns",
   "swipeIndicatorLike": "VERBINDEN",
@@ -3350,7 +3350,7 @@
       }
     }
   },
-  "youGotSuperLike": "Du hast ein Super Like bekommen!",
+  "youGotSuperLike": "Du hast eine Prioritätsverbindung erhalten!",
   "youLabel": "DU",
   "youLose": "Du hast Verloren",
   "youMatchedWithOnDate": "Du hast mit {name} am {date} gematcht",

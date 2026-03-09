@@ -435,13 +435,13 @@ class _TierConfigEditor extends StatelessWidget {
         ),
         _LimitSlider(
           label: l10n.adminDailySuperLikes,
-          value: config.rules.dailySuperLikeLimit,
+          value: config.rules.dailyPriorityConnectLimit,
           min: 0,
           max: 50,
           icon: Icons.favorite,
           iconColor: Colors.pink,
           onChanged: (value) => _updateRules(
-            config.rules.copyWith(dailySuperLikeLimit: value),
+            config.rules.copyWith(dailyPriorityConnectLimit: value),
           ),
         ),
       ],
@@ -787,7 +787,7 @@ extension MembershipRulesCopyWith on MembershipRules {
   MembershipRules copyWith({
     int? dailyMessageLimit,
     int? dailySwipeLimit,
-    int? dailySuperLikeLimit,
+    int? dailyPriorityConnectLimit,
     bool? canUseAdvancedFilters,
     bool? canFilterByLocation,
     bool? canFilterByInterests,
@@ -804,7 +804,7 @@ extension MembershipRulesCopyWith on MembershipRules {
     return MembershipRules(
       dailyMessageLimit: dailyMessageLimit ?? this.dailyMessageLimit,
       dailySwipeLimit: dailySwipeLimit ?? this.dailySwipeLimit,
-      dailySuperLikeLimit: dailySuperLikeLimit ?? this.dailySuperLikeLimit,
+      dailyPriorityConnectLimit: dailyPriorityConnectLimit ?? this.dailyPriorityConnectLimit,
       canUseAdvancedFilters: canUseAdvancedFilters ?? this.canUseAdvancedFilters,
       canFilterByLocation: canFilterByLocation ?? this.canFilterByLocation,
       canFilterByInterests: canFilterByInterests ?? this.canFilterByInterests,

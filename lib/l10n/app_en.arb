@@ -131,7 +131,7 @@
   "adminDailyLimits": "Daily Limits",
   "adminDailyLoginRewards": "Daily Login Rewards",
   "adminDailyMessages": "Daily Messages",
-  "adminDailySuperLikes": "Daily Super Likes",
+  "adminDailySuperLikes": "Daily Priority Connects",
   "adminDailySwipes": "Daily Swipes",
   "adminDashboard": "Admin Dashboard",
   "adminDate": "Date",
@@ -2999,7 +2999,7 @@
   "membershipCouponCodeLabel": "Coupon Code *",
   "membershipCouponHint": "e.g., GOLD2024",
   "membershipCurrent": "Current Membership",
-  "membershipDailyLikes": "Daily Likes",
+  "membershipDailyLikes": "Daily Connects",
   "membershipDailyMessagesLabel": "Daily Messages (empty = unlimited)",
   "membershipDailySwipesLabel": "Daily Swipes (empty = unlimited)",
   "membershipDaysRemaining": "{days} days remaining",
@@ -3034,11 +3034,11 @@
   "membershipRequiredDescription": "You need to be a member of GreenGo to perform this action.",
   "membershipRewinds": "Rewinds",
   "membershipSavePercent": "SAVE {percent}%",
-  "membershipSeeWhoLikes": "See Who Likes You",
+  "membershipSeeWhoLikes": "See Who Connects",
   "membershipSilver": "Silver",
   "membershipSubtitle": "Buy once, enjoy premium features for 1 month or 1 year",
-  "membershipSuperLikes": "Super Likes",
-  "membershipSuperLikesLabel": "Super Likes/Day (empty = unlimited)",
+  "membershipSuperLikes": "Priority Connects",
+  "membershipSuperLikesLabel": "Priority Connects/Day (empty = unlimited)",
   "membershipTerms": "One-time purchase. Membership will be extended from your current end date.",
   "membershipTermsExtended": "One-time purchase. Membership will be extended from your current end date. Higher tier purchases override lower tiers.",
   "membershipTierLabel": "Membership Tier *",
@@ -3163,7 +3163,7 @@
     }
   },
   "notificationDialogEnable": "Enable",
-  "notificationDialogMessage": "Enable notifications to know when you get matches, messages, and super likes.",
+  "notificationDialogMessage": "Enable notifications to know when you get matches, messages, and priority connects.",
   "notificationDialogNotNow": "Not Now",
   "notificationDialogTitle": "Stay Connected",
   "notificationEmailSubtitle": "Receive notifications via email",
@@ -3226,7 +3226,7 @@
   "notificationSoundSubtitle": "Play sound for notifications",
   "notificationSoundVibration": "Sound & Vibration",
   "notificationStartTime": "Start Time",
-  "notificationSuperLike": "You received a super like from @{nickname}",
+  "notificationSuperLike": "You received a priority connect from @{nickname}",
   "@notificationSuperLike": {
     "placeholders": {
       "nickname": {
@@ -3234,8 +3234,8 @@
       }
     }
   },
-  "notificationSuperLikes": "Super Likes",
-  "notificationSuperLikesSubtitle": "When someone super likes you",
+  "notificationSuperLikes": "Priority Connects",
+  "notificationSuperLikesSubtitle": "When someone priority connects with you",
   "notificationTypes": "Notification Types",
   "notificationVibration": "Vibration",
   "notificationVibrationSubtitle": "Vibrate for notifications",
@@ -3635,7 +3635,7 @@
   "profileProgressGrowth": "Progress & Growth",
   "profileRestart": "Restart",
   "profileRestartDiscovery": "Restart Discovery",
-  "profileRestartDiscoveryDialogContent": "This will erase all your swipes (likes, nopes, super likes) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.",
+  "profileRestartDiscoveryDialogContent": "This will erase all your swipes (connects, passes, priority connects) so you can rediscover everyone from scratch.\n\nYour matches and chats will NOT be affected.",
   "profileRestartDiscoveryDialogTitle": "Restart Discovery",
   "profileRestartDiscoverySubtitle": "Reset all swipes and start fresh",
   "profileSearchByNickname": "Search by @nickname",
@@ -3963,7 +3963,7 @@
       }
     }
   },
-  "shopDailyLikes": "Daily Likes",
+  "shopDailyLikes": "Daily Connects",
   "shopDaysLeft": "{days}d left",
   "shopEnterAmount": "Enter amount",
   "shopEnterBothFields": "Please enter both nickname and amount",
@@ -4033,11 +4033,11 @@
       }
     }
   },
-  "shopSeeWhoLikesYou": "See Who Likes You",
+  "shopSeeWhoLikesYou": "See Who Connects",
   "shopSend": "Send",
   "shopSendCoins": "Send Coins",
   "shopStoreNotAvailable": "Store not available. Please check your device settings.",
-  "shopSuperLikes": "Super Likes",
+  "shopSuperLikes": "Priority Connects",
   "shopTabCoins": "Coins",
   "shopTabError": "{tabName} tab error",
   "shopTabMembership": "Membership",
@@ -4183,8 +4183,8 @@
   "subscriptionExpired": "Subscription Expired",
   "subscriptionExpiredBody": "Your {tierName} subscription has expired. You have been moved to the Free tier.\n\nUpgrade anytime to restore your premium features!",
   "suggestions": "Suggestions",
-  "superLike": "Super Like",
-  "superLikedYou": "{name} super liked you!",
+  "superLike": "Priority Connect",
+  "superLikedYou": "{name} priority connected with you!",
   "@superLikedYou": {
     "placeholders": {
       "name": {
@@ -4192,7 +4192,7 @@
       }
     }
   },
-  "superLikes": "Super Likes",
+  "superLikes": "Priority Connects",
   "supportCenter": "Support Center",
   "supportCenterSubtitle": "Get help, report issues, contact us",
   "swipeIndicatorLike": "CONNECT",
@@ -4611,7 +4611,7 @@
       }
     }
   },
-  "youGotSuperLike": "You got a Super Like!",
+  "youGotSuperLike": "You got a Priority Connect!",
   "youLabel": "YOU",
   "youLose": "You Lose",
   "youMatchedWithOnDate": "You matched with {name} on {date}",

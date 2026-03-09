@@ -373,7 +373,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get adminDailyMessages => 'Mensagens Diárias';
 
   @override
-  String get adminDailySuperLikes => 'Super Likes Diários';
+  String get adminDailySuperLikes => 'Conexões Prioritárias Diárias';
 
   @override
   String get adminDailySwipes => 'Swipes Diários';
@@ -6065,7 +6065,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get membershipCurrent => 'Subscrição Atual';
 
   @override
-  String get membershipDailyLikes => 'Likes Diários';
+  String get membershipDailyLikes => 'Conexões Diárias';
 
   @override
   String get membershipDailyMessagesLabel =>
@@ -6181,7 +6181,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get membershipSeeWhoLikes => 'Ver Quem Gosta de Si';
+  String get membershipSeeWhoLikes => 'Ver quem conecta';
 
   @override
   String get membershipSilver => 'Silver';
@@ -6191,11 +6191,11 @@ class AppLocalizationsPt extends AppLocalizations {
       'Compre uma vez, desfrute de funcionalidades premium por 1 mês ou 1 ano';
 
   @override
-  String get membershipSuperLikes => 'Super Likes';
+  String get membershipSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get membershipSuperLikesLabel =>
-      'Super Likes/Dia (vazio = ilimitados)';
+      'Conexões Prioritárias/Dia (vazio = ilimitados)';
 
   @override
   String get membershipTerms =>
@@ -6428,7 +6428,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get notificationDialogMessage =>
-      'Ativa as notificações para saberes quando recebes matches, mensagens e super likes.';
+      'Ativa as notificações para saberes quando recebes matches, mensagens e conexões prioritárias.';
 
   @override
   String get notificationDialogNotNow => 'Agora não';
@@ -6549,15 +6549,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String notificationSuperLike(String nickname) {
-    return 'Recebeste um super gosto de @$nickname';
+    return 'Recebeste uma conexão prioritária de @$nickname';
   }
 
   @override
-  String get notificationSuperLikes => 'Super Likes';
+  String get notificationSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get notificationSuperLikesSubtitle =>
-      'Quando alguém lhe dá super like';
+      'Quando alguém conecta prioritariamente consigo';
 
   @override
   String get notificationTypes => 'Tipos de Notificação';
@@ -7529,7 +7529,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get profileRestartDiscoveryDialogContent =>
-      'Isto irá apagar todos os seus swipes (likes, nopes, super likes) para que possa redescobrir todos do início.';
+      'Isto irá apagar todos os seus swipes (conexões, rejeições, conexões prioritárias) para que possa redescobrir todos do início.';
 
   @override
   String get profileRestartDiscoveryDialogTitle => 'Reiniciar Descoberta';
@@ -8237,7 +8237,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get shopDailyLikes => 'Likes diários';
+  String get shopDailyLikes => 'Conexões Diárias';
 
   @override
   String shopDaysLeft(Object days) {
@@ -8340,7 +8340,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get shopSeeWhoLikesYou => 'Ver quem gosta de ti';
+  String get shopSeeWhoLikesYou => 'Ver quem conecta';
 
   @override
   String get shopSend => 'Enviar';
@@ -8353,7 +8353,7 @@ class AppLocalizationsPt extends AppLocalizations {
       'Loja indisponível. Verifica as definições do dispositivo.';
 
   @override
-  String get shopSuperLikes => 'Super Likes';
+  String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get shopTabCoins => 'Moedas';
@@ -8708,15 +8708,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get suggestions => 'Sugestões';
 
   @override
-  String get superLike => 'Super Like';
+  String get superLike => 'Conexão Prioritária';
 
   @override
   String superLikedYou(String name) {
-    return '$name deu-te um Super Like!';
+    return '$name conectou-se prioritariamente contigo!';
   }
 
   @override
-  String get superLikes => 'Super Gostos';
+  String get superLikes => 'Conexões Prioritárias';
 
   @override
   String get supportCenter => 'Centro de Suporte';
@@ -9555,7 +9555,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get youGotSuperLike => 'Recebeste um Super Like!';
+  String get youGotSuperLike => 'Recebeste uma Conexão Prioritária!';
 
   @override
   String get youLabel => 'TU';
@@ -9960,7 +9960,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get adminDailyMessages => 'Mensagens Diárias';
 
   @override
-  String get adminDailySuperLikes => 'Super Likes Diários';
+  String get adminDailySuperLikes => 'Conexões Prioritárias Diárias';
 
   @override
   String get adminDailySwipes => 'Swipes Diários';
@@ -15659,7 +15659,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get membershipCurrent => 'Assinatura Atual';
 
   @override
-  String get membershipDailyLikes => 'Likes Diários';
+  String get membershipDailyLikes => 'Conexões Diárias';
 
   @override
   String get membershipDailyMessagesLabel =>
@@ -15774,7 +15774,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get membershipSeeWhoLikes => 'Ver Quem Curte Você';
+  String get membershipSeeWhoLikes => 'Ver quem conecta';
 
   @override
   String get membershipSilver => 'Silver';
@@ -15784,10 +15784,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Compre uma vez, aproveite funcionalidades premium por 1 mês ou 1 ano';
 
   @override
-  String get membershipSuperLikes => 'Super Likes';
+  String get membershipSuperLikes => 'Conexões Prioritárias';
 
   @override
-  String get membershipSuperLikesLabel => 'Super Likes/Dia (vazio = ilimitado)';
+  String get membershipSuperLikesLabel =>
+      'Conexões Prioritárias/Dia (vazio = ilimitado)';
 
   @override
   String get membershipTerms =>
@@ -16020,7 +16021,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationDialogMessage =>
-      'Ative as notificações para saber quando receber matches, mensagens e super likes.';
+      'Ative as notificações para saber quando receber matches, mensagens e conexões prioritárias.';
 
   @override
   String get notificationDialogNotNow => 'Agora não';
@@ -16140,15 +16141,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String notificationSuperLike(String nickname) {
-    return 'Você recebeu uma super curtida de @$nickname';
+    return 'Você recebeu uma conexão prioritária de @$nickname';
   }
 
   @override
-  String get notificationSuperLikes => 'Super Likes';
+  String get notificationSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get notificationSuperLikesSubtitle =>
-      'Quando alguém dá super like em você';
+      'Quando alguém conecta prioritariamente com você';
 
   @override
   String get notificationTypes => 'Tipos de Notificação';
@@ -17118,7 +17119,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get profileRestartDiscoveryDialogContent =>
-      'Isto irá apagar todos os seus swipes (likes, nopes, super likes) para que você possa redescobrir todos do início.';
+      'Isto irá apagar todos os seus swipes (conexões, rejeições, conexões prioritárias) para que você possa redescobrir todos do início.';
 
   @override
   String get profileRestartDiscoveryDialogTitle => 'Reiniciar Descoberta';
@@ -17827,7 +17828,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get shopDailyLikes => 'Curtidas diárias';
+  String get shopDailyLikes => 'Conexões Diárias';
 
   @override
   String shopDaysLeft(Object days) {
@@ -17930,7 +17931,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get shopSeeWhoLikesYou => 'Ver quem curtiu você';
+  String get shopSeeWhoLikesYou => 'Ver quem conecta';
 
   @override
   String get shopSend => 'Enviar';
@@ -17943,7 +17944,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Loja indisponível. Verifique as configurações do dispositivo.';
 
   @override
-  String get shopSuperLikes => 'Super Curtidas';
+  String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
   String get shopTabCoins => 'Moedas';
@@ -18297,15 +18298,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get suggestions => 'Sugestões';
 
   @override
-  String get superLike => 'Super Like';
+  String get superLike => 'Conexão Prioritária';
 
   @override
   String superLikedYou(String name) {
-    return '$name te deu um Super Like!';
+    return '$name conectou-se prioritariamente com você!';
   }
 
   @override
-  String get superLikes => 'Super Curtidas';
+  String get superLikes => 'Conexões Prioritárias';
 
   @override
   String get supportCenter => 'Central de Suporte';
@@ -19145,7 +19146,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get youGotSuperLike => 'Você recebeu um Super Like!';
+  String get youGotSuperLike => 'Você recebeu uma Conexão Prioritária!';
 
   @override
   String get youLabel => 'VOCE';
