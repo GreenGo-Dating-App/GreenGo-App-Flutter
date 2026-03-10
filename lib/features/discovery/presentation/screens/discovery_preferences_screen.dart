@@ -482,15 +482,17 @@ class _DiscoveryPreferencesScreenState
 
   void _showInterestPickerDialog() {
     final searchController = TextEditingController();
+    // Same list as profile edit (edit_interests_screen.dart)
     final allInterests = [
-      'Travel', 'Music', 'Sports', 'Fitness', 'Photography', 'Cooking',
-      'Art', 'Reading', 'Movies', 'Gaming', 'Hiking', 'Yoga',
-      'Dancing', 'Fashion', 'Technology', 'Nature', 'Animals',
-      'Volunteering', 'Wine', 'Coffee', 'Beach', 'Camping',
-      'Cycling', 'Running', 'Swimming', 'Meditation', 'Writing',
-      'Languages', 'History', 'Science', 'Gardening', 'DIY',
-      'Board Games', 'Foodie', 'Nightlife', 'Theater', 'Concerts',
-      'Surfing', 'Skiing', 'Climbing', 'Martial Arts',
+      'Travel', 'Photography', 'Music', 'Fitness', 'Cooking',
+      'Reading', 'Movies', 'Gaming', 'Art', 'Dance',
+      'Yoga', 'Hiking', 'Swimming', 'Cycling', 'Running',
+      'Sports', 'Fashion', 'Technology', 'Writing', 'Coffee',
+      'Wine', 'Beer', 'Food', 'Vegetarian', 'Vegan',
+      'Pets', 'Dogs', 'Cats', 'Nature', 'Beach',
+      'Mountains', 'Camping', 'Surfing', 'Skiing', 'Snowboarding',
+      'Meditation', 'Spirituality', 'Volunteering', 'Environment',
+      'Politics', 'Science', 'History', 'Languages', 'Teaching',
     ];
 
     final available = allInterests
@@ -869,7 +871,9 @@ class _DiscoveryPreferencesScreenState
                       value: null,
                       child: Text(l10n.preferenceAnyLanguage),
                     ),
-                    ...['English', 'Deutsch', 'Español', 'Français', 'Italiano', 'Português', 'Português (BR)']
+                    // Only the 7 app-supported languages
+                    ...['English', 'German', 'Spanish', 'French', 'Italian',
+                        'Portuguese', 'Portuguese (Brazil)']
                         .map((lang) => DropdownMenuItem(
                               value: lang,
                               child: Text(lang),
