@@ -6916,6 +6916,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get personalStatsLevel => 'Stufe';
 
   @override
+  String get personalStatsLanguage => 'Sprache';
+
+  @override
+  String get personalStatsTotal => 'Gesamt';
+
+  @override
   String get personalStatsNextLevel => 'Nächste Stufe';
 
   @override

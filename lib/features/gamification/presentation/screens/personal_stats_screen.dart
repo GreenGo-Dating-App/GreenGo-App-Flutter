@@ -16,6 +16,12 @@ class PersonalStatsScreen extends StatefulWidget {
 class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   bool _isLoading = true;
 
+  // Level XP thresholds (must match backend LEVEL_XP_REQUIREMENTS)
+  static const _levelXpRequirements = [
+    0, 100, 250, 500, 1000, 2000, 3500, 5500, 8000, 11000, 15000, 20000,
+    26000, 33000, 41000, 50000,
+  ];
+
   // XP & Level
   int _totalXp = 0;
   int _currentLevel = 1;
@@ -36,6 +42,48 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   // Activity (messages per day, last 7 days)
   Map<String, int> _dailyActivity = {};
 
+  /// XP needed to reach the next level from current XP
+  int get _xpForNextLevel {
+    if (_currentLevel >= _levelXpRequirements.length) return 0;
+    return _levelXpRequirements[_currentLevel] - _totalXp;
+  }
+
+  /// Progress fraction within the current level (0.0 to 1.0)
+  double get _levelProgress {
+    final currentThreshold =
+        _currentLevel <= _levelXpRequirements.length
+            ? _levelXpRequirements[_currentLevel - 1]
+            : _levelXpRequirements.last;
+    final nextThreshold =
+        _currentLevel < _levelXpRequirements.length
+            ? _levelXpRequirements[_currentLevel]
+            : currentThreshold + 10000;
+    final range = nextThreshold - currentThreshold;
+    if (range <= 0) return 1.0;
+    return ((_totalXp - currentThreshold) / range).clamp(0.0, 1.0);
+  }
+
+  /// XP earned within the current level and total needed for this level
+  int get _xpInCurrentLevel {
+    final currentThreshold =
+        _currentLevel <= _levelXpRequirements.length
+            ? _levelXpRequirements[_currentLevel - 1]
+            : _levelXpRequirements.last;
+    return _totalXp - currentThreshold;
+  }
+
+  int get _xpRangeForCurrentLevel {
+    final currentThreshold =
+        _currentLevel <= _levelXpRequirements.length
+            ? _levelXpRequirements[_currentLevel - 1]
+            : _levelXpRequirements.last;
+    final nextThreshold =
+        _currentLevel < _levelXpRequirements.length
+            ? _levelXpRequirements[_currentLevel]
+            : currentThreshold + 10000;
+    return nextThreshold - currentThreshold;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -54,7 +102,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       if (userLevelDoc.exists) {
         final lvlData = userLevelDoc.data()!;
         totalXp = (lvlData['totalXP'] as num?)?.toInt() ?? 0;
-        level = (lvlData['level'] as num?)?.toInt() ?? ((totalXp / 100).floor() + 1);
+        level = (lvlData['level'] as num?)?.toInt() ?? _calculateLevel(totalXp);
       }
 
       // Read cached stats from user_stats (kept fresh by daily Cloud Function)
@@ -133,16 +181,18 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       for (final doc in langDocs.docs) {
         totalXp += (doc.data()['totalXpEarned'] as num?)?.toInt() ?? 0;
       }
-      level = (totalXp / 100).floor() + 1;
+      level = _calculateLevel(totalXp);
     }
 
-    // Load daily activity from xp_transactions (for activity chart only)
+    // Load daily activity from xp_transactions (last 30 days only)
     final Map<String, int> dailyActivity = {};
+    final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
     final xpDocs = await firestore
         .collection('xp_transactions')
         .where('userId', isEqualTo: userId)
+        .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
         .orderBy('createdAt', descending: true)
-        .limit(500)
+        .limit(1000)
         .get();
     for (final doc in xpDocs.docs) {
       final data = doc.data();
@@ -215,6 +265,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       'messagesSent': messagesSent,
       'totalConversations': totalConvos,
       'wordsPerLanguage': wordsPerLang,
+      'wordsLearnedPerLanguage': wordsLearnedPerLang,
       'achievementsUnlocked': achieveCount.count ?? 0,
       'challengesCompleted': challengeCount.count ?? 0,
       'dailyActivity': dailyActivity,
@@ -238,27 +289,14 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     }
   }
 
-  /// Load learned words (useCount >= 3) per language from Firestore
-  Future<Map<String, int>> _loadLearnedWords(
-    FirebaseFirestore firestore,
-    String userId,
-  ) async {
-    final Map<String, int> learned = {};
-    try {
-      final vocabDocs = await firestore
-          .collection('user_vocabulary')
-          .doc(userId)
-          .collection('words')
-          .where('useCount', isGreaterThanOrEqualTo: 3)
-          .get();
-      for (final doc in vocabDocs.docs) {
-        final lang = doc.data()['language'] as String? ?? 'unknown';
-        learned[lang] = (learned[lang] ?? 0) + 1;
-      }
-    } catch (e) {
-      debugPrint('Error loading learned words: $e');
+  /// Calculate level from XP using the same thresholds as the backend
+  static int _calculateLevel(int totalXp) {
+    int level = 1;
+    while (level < _levelXpRequirements.length &&
+        totalXp >= _levelXpRequirements[level]) {
+      level++;
     }
-    return learned;
+    return level;
   }
 
   static String _flagForLanguage(String code) {
@@ -335,7 +373,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                           children: [
                             _buildStatItem(l10n.personalStatsLevel, '$_currentLevel', Icons.shield),
                             _buildStatItem('XP', '$_totalXp', Icons.star),
-                            _buildStatItem(l10n.personalStatsNextLevel, '${100 - (_totalXp % 100)}', Icons.arrow_upward),
+                            _buildStatItem(l10n.personalStatsNextLevel, '$_xpForNextLevel', Icons.arrow_upward),
                           ],
                         ),
                         const SizedBox(height: 12),
@@ -343,7 +381,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(6),
                           child: LinearProgressIndicator(
-                            value: (_totalXp % 100) / 100,
+                            value: _levelProgress,
                             backgroundColor: AppColors.backgroundDark,
                             valueColor: const AlwaysStoppedAnimation<Color>(AppColors.richGold),
                             minHeight: 8,
@@ -351,7 +389,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          '${_totalXp % 100}/100 XP',
+                          '$_xpInCurrentLevel/$_xpRangeForCurrentLevel XP',
                           style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
                         ),
                       ],
@@ -490,6 +528,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   }
 
   Widget _buildWordsLearnedTable() {
+    final l10n = AppLocalizations.of(context)!;
     // Always show all 7 supported languages
     const allLanguages = ['en', 'de', 'es', 'fr', 'it', 'pt', 'pt_br'];
 
@@ -503,11 +542,11 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
           padding: const EdgeInsets.only(bottom: 12),
           child: Row(
             children: [
-              const Expanded(
+              Expanded(
                 flex: 3,
                 child: Text(
-                  'Language',
-                  style: TextStyle(
+                  l10n.personalStatsLanguage,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -517,7 +556,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
               Expanded(
                 flex: 2,
                 child: Text(
-                  'Learned',
+                  l10n.personalStatsWordsLearned,
                   style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 12,
@@ -526,11 +565,11 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              const Expanded(
+              Expanded(
                 flex: 2,
                 child: Text(
-                  'Discovered',
-                  style: TextStyle(
+                  l10n.personalStatsWordsDiscovered,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -610,11 +649,11 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
           padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
-              const Expanded(
+              Expanded(
                 flex: 3,
                 child: Text(
-                  'Total',
-                  style: TextStyle(
+                  l10n.personalStatsTotal,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -690,16 +729,4 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     }).toList();
   }
 
-  String _langLabel(String code) {
-    const labels = {
-      'en': 'EN',
-      'de': 'DE',
-      'es': 'ES',
-      'fr': 'FR',
-      'it': 'IT',
-      'pt': 'PT',
-      'pt_br': 'BR',
-    };
-    return labels[code.toLowerCase()] ?? code.toUpperCase();
-  }
 }

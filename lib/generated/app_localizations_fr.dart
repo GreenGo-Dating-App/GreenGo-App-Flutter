@@ -6940,6 +6940,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get personalStatsLevel => 'Niveau';
 
   @override
+  String get personalStatsLanguage => 'Langue';
+
+  @override
+  String get personalStatsTotal => 'Total';
+
+  @override
   String get personalStatsNextLevel => 'Niveau suivant';
 
   @override

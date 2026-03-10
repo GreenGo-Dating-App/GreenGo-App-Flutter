@@ -6911,6 +6911,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get personalStatsLevel => 'Nivel';
 
   @override
+  String get personalStatsLanguage => 'Idioma';
+
+  @override
+  String get personalStatsTotal => 'Total';
+
+  @override
   String get personalStatsNextLevel => 'Siguiente nivel';
 
   @override

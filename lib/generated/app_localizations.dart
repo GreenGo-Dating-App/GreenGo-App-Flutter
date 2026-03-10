@@ -12294,6 +12294,18 @@ abstract class AppLocalizations {
   /// **'Level'**
   String get personalStatsLevel;
 
+  /// No description provided for @personalStatsLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get personalStatsLanguage;
+
+  /// No description provided for @personalStatsTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get personalStatsTotal;
+
   /// No description provided for @personalStatsNextLevel.
   ///
   /// In en, this message translates to:
