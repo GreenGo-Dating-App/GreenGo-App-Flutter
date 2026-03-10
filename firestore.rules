@@ -646,6 +646,30 @@ service cloud.firestore {
     // Note: 'lessons' and 'constellation' collections already have rules above
 
     // ============================================================================
+    // USER VOCABULARY (tracked words per user, written client-side on message send)
+    // ============================================================================
+    match /user_vocabulary/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+
+      match /words/{wordId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+      }
+    }
+
+    // ============================================================================
+    // VOCABULARY WORDS (word frequency corpus — read-only for clients)
+    // ============================================================================
+    match /vocabulary_words/{langId} {
+      allow read: if isSignedIn();
+
+      match /words/{wordId} {
+        allow read: if isSignedIn();
+      }
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {
