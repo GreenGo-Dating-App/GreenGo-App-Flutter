@@ -101,6 +101,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   // In-memory cache keyed by userId — survives bloc recreation (datasource is singleton)
   final Map<String, _CachedStack> _cache = {};
 
+  // Cached admin candidate (session-level, avoids query on every discovery load)
+  MatchCandidate? _cachedAdminCandidate;
+  DateTime? _adminCacheFetchedAt;
+  static const _adminCacheTtl = Duration(hours: 1);
+
+  // Cached current user profile to avoid re-reading on every load
+  Map<String, dynamic>? _cachedUserProfile;
+  String? _cachedUserProfileId;
+
   DiscoveryRemoteDataSourceImpl({
     required this.firestore,
     required this.matchingDataSource,
@@ -170,29 +179,40 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       limit: 500, // Cap to avoid loading entire database into memory
     );
 
-    print('[Discovery] Candidates from matching: ${candidates.length}');
+    debugPrint('[Discovery] Candidates from matching: ${candidates.length}');
 
     // Check if current user is admin/support — admins bypass all discovery filters
-    final currentUserDoc = await firestore.collection('profiles').doc(userId).get();
-    final isCurrentUserPrivileged = currentUserDoc.exists &&
-        ((currentUserDoc.data()?['isAdmin'] as bool? ?? false) ||
-         (currentUserDoc.data()?['isSupport'] as bool? ?? false));
+    // Cache the user profile to avoid re-reading on every load
+    Map<String, dynamic>? currentUserData;
+    if (_cachedUserProfileId == userId && _cachedUserProfile != null) {
+      currentUserData = _cachedUserProfile;
+    } else {
+      final currentUserDoc = await firestore.collection('profiles').doc(userId).get();
+      currentUserData = currentUserDoc.data();
+      _cachedUserProfile = currentUserData;
+      _cachedUserProfileId = userId;
+    }
+
+    final isCurrentUserPrivileged = currentUserData != null &&
+        ((currentUserData['isAdmin'] as bool? ?? false) ||
+         (currentUserData['isSupport'] as bool? ?? false));
 
     // Determine viewer's tier for boost visibility limit
-    final viewerTierStr = currentUserDoc.data()?['membershipTier'] as String? ?? 'FREE';
+    final viewerTierStr = currentUserData?['membershipTier'] as String? ?? 'FREE';
     final maxBoostedVisible = _getMaxBoostedVisible(viewerTierStr);
 
-    // Get user's swipe history with action types
-    final swipeHistory = await _getSwipeHistoryWithTypes(userId);
-    print('[Discovery] Swipe history entries: ${swipeHistory.length}');
+    // Run all historical data queries in parallel (cost-efficient: one round trip)
+    final results = await Future.wait([
+      _getSwipeHistoryWithTypes(userId),
+      _getMatchedUserIds(userId),
+      blockedUsersService.getBlockedUserIds(userId),
+    ]);
 
-    // Get matches (mutual likes) to exclude them
-    final matchedUserIds = await _getMatchedUserIds(userId);
-    print('[Discovery] Matched user IDs: ${matchedUserIds.length}');
+    final swipeHistory = results[0] as Map<String, _SwipeRecord>;
+    final matchedUserIds = results[1] as Set<String>;
+    final blockedUserIds = results[2] as Set<String>;
 
-    // Get blocked user IDs (bidirectional) to exclude them
-    final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
-    print('[Discovery] Blocked user IDs: ${blockedUserIds.length}');
+    print('[Discovery] Swipe: ${swipeHistory.length}, Matches: ${matchedUserIds.length}, Blocked: ${blockedUserIds.length}');
 
     // Log travelers that made it through matching filters
     for (final c in candidates) {
@@ -453,11 +473,15 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }
 
   /// Get swipe history with action types and timestamps
+  /// Only fetches last 90 days (nope cooldown) to reduce reads at scale
   Future<Map<String, _SwipeRecord>> _getSwipeHistoryWithTypes(String userId) async {
+    final ninetyDaysAgo = DateTime.now().subtract(const Duration(days: 90));
     final querySnapshot = await firestore
         .collection('swipes')
         .where('userId', isEqualTo: userId)
-        .limit(5000)
+        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(ninetyDaysAgo))
+        .orderBy('timestamp', descending: true)
+        .limit(2000)
         .get();
 
     final Map<String, _SwipeRecord> history = {};
@@ -477,30 +501,30 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }
 
   /// Get all matched user IDs (mutual likes)
+  /// Uses select() to fetch only the needed field, reducing bandwidth and cost
   Future<Set<String>> _getMatchedUserIds(String userId) async {
     final Set<String> matchedIds = {};
 
-    // Query matches where user is userId1
-    final query1 = await firestore
-        .collection('matches')
-        .where('userId1', isEqualTo: userId)
-        .where('isActive', isEqualTo: true)
-        .limit(2000)
-        .get();
+    // Fetch only the other userId field (not full docs) to reduce bandwidth
+    final results = await Future.wait([
+      firestore
+          .collection('matches')
+          .where('userId1', isEqualTo: userId)
+          .where('isActive', isEqualTo: true)
+          .limit(1000)
+          .get(),
+      firestore
+          .collection('matches')
+          .where('userId2', isEqualTo: userId)
+          .where('isActive', isEqualTo: true)
+          .limit(1000)
+          .get(),
+    ]);
 
-    for (final doc in query1.docs) {
+    for (final doc in results[0].docs) {
       matchedIds.add(doc.data()['userId2'] as String);
     }
-
-    // Query matches where user is userId2
-    final query2 = await firestore
-        .collection('matches')
-        .where('userId2', isEqualTo: userId)
-        .where('isActive', isEqualTo: true)
-        .limit(2000)
-        .get();
-
-    for (final doc in query2.docs) {
+    for (final doc in results[1].docs) {
       matchedIds.add(doc.data()['userId1'] as String);
     }
 
@@ -508,8 +532,17 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }
 
   /// Get admin profile as a match candidate — always visible to all users
+  /// Cached for 1 hour to avoid querying on every discovery load (cost saving)
   Future<MatchCandidate?> _getAdminCandidate(String userId) async {
     try {
+      // Return cached admin if still valid
+      if (_cachedAdminCandidate != null &&
+          _adminCacheFetchedAt != null &&
+          DateTime.now().difference(_adminCacheFetchedAt!) < _adminCacheTtl &&
+          _cachedAdminCandidate!.profile.userId != userId) {
+        return _cachedAdminCandidate;
+      }
+
       // Query for admin profile
       final adminQuery = await firestore
           .collection('profiles')
@@ -517,12 +550,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           .limit(1)
           .get();
 
-      print('[Discovery] _getAdminCandidate: query returned ${adminQuery.docs.length} docs');
-
       if (adminQuery.docs.isEmpty) return null;
 
       final adminDoc = adminQuery.docs.first;
-      print('[Discovery] _getAdminCandidate: found admin doc ${adminDoc.id}');
 
       // Don't show admin to themselves
       if (adminDoc.id == userId) return null;
@@ -583,13 +613,19 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         calculatedAt: DateTime.now(),
       );
 
-      return MatchCandidate(
+      final candidate = MatchCandidate(
         profile: adminProfile,
         matchScore: adminMatchScore,
         distance: 0.0,
         suggestedAt: DateTime.now(),
         isSuperLike: true,
       );
+
+      // Cache for 1 hour
+      _cachedAdminCandidate = candidate;
+      _adminCacheFetchedAt = DateTime.now();
+
+      return candidate;
     } catch (e, stack) {
       print('[Discovery] _getAdminCandidate FAILED completely: $e');
       print('[Discovery] Stack: $stack');

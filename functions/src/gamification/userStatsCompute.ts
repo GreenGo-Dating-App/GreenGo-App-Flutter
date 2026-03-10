@@ -9,6 +9,17 @@
 
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
 
+/** XP thresholds for each level (index = level - 1). Must match client. */
+const LEVEL_XP_REQUIREMENTS = [0, 100, 250, 500, 1000, 2000, 3500, 5500, 8000, 11000, 15000, 20000, 26000, 33000, 41000, 50000];
+
+function calculateLevel(totalXp: number): number {
+  let level = 1;
+  while (level < LEVEL_XP_REQUIREMENTS.length && totalXp >= LEVEL_XP_REQUIREMENTS[level]) {
+    level++;
+  }
+  return level;
+}
+
 /**
  * Compute and cache stats for a single user
  */
@@ -22,7 +33,7 @@ export async function computeUserStats(userId: string): Promise<Record<string, a
   if (userLevelDoc.exists) {
     const data = userLevelDoc.data()!;
     totalXp = (data.totalXP as number) || 0;
-    level = (data.level as number) || Math.floor(totalXp / 100) + 1;
+    level = calculateLevel(totalXp);
   }
 
   // Fallback: check language_progress
@@ -32,7 +43,7 @@ export async function computeUserStats(userId: string): Promise<Record<string, a
     for (const doc of langDocs.docs) {
       totalXp += (doc.data().totalXpEarned as number) || 0;
     }
-    level = Math.floor(totalXp / 100) + 1;
+    level = calculateLevel(totalXp);
   }
 
   // 2. XP transactions + daily activity (last 30 days)
@@ -123,39 +134,103 @@ export async function computeUserStats(userId: string): Promise<Record<string, a
   return statsData;
 }
 
+/** Page size for Firestore cursor-based pagination */
+const PAGE_SIZE = 100;
+
+/** Concurrency batch size for Promise.allSettled */
+const BATCH_SIZE = 20;
+
+/** Maximum runtime before graceful stop (8 minutes in ms) */
+const TIMEOUT_MS = 480_000;
+
+/** Log progress every N users */
+const LOG_INTERVAL = 500;
+
 /**
  * Compute stats for ALL users (batch job)
- * Iterates through all user profiles and computes stats for each.
+ * Uses Firestore cursor-based pagination to avoid loading all user IDs
+ * into memory at once. Processes users in concurrent batches and stops
+ * gracefully if the elapsed time exceeds 8 minutes.
  */
 export async function computeAllUserStats(): Promise<number> {
   logInfo('Starting daily user stats computation for all users');
 
-  // Get all user IDs from profiles collection
-  const profilesSnapshot = await db.collection('profiles').select().get();
-  const userIds = profilesSnapshot.docs.map(doc => doc.id);
-
-  logInfo(`Found ${userIds.length} users to process`);
-
+  const startTime = Date.now();
   let processed = 0;
   let errors = 0;
+  let totalSeen = 0;
+  let timedOut = false;
 
-  // Process in batches of 10 to avoid overloading
-  for (let i = 0; i < userIds.length; i += 10) {
-    const batch = userIds.slice(i, i + 10);
-    const results = await Promise.allSettled(
-      batch.map(userId => computeUserStats(userId))
-    );
+  // Cursor-based pagination through profiles collection
+  let query = db.collection('profiles').select().orderBy('__name__').limit(PAGE_SIZE);
+  let hasMore = true;
 
-    for (const result of results) {
-      if (result.status === 'fulfilled') {
-        processed++;
-      } else {
-        errors++;
-        logError('Error computing user stats', result.reason);
+  while (hasMore) {
+    // Timeout safety check before fetching the next page
+    if (Date.now() - startTime > TIMEOUT_MS) {
+      timedOut = true;
+      logInfo(`Timeout reached after ${Math.round((Date.now() - startTime) / 1000)}s. Stopping gracefully.`);
+      break;
+    }
+
+    const pageSnapshot = await query.get();
+    const docs = pageSnapshot.docs;
+
+    if (docs.length === 0) {
+      hasMore = false;
+      break;
+    }
+
+    const userIds = docs.map(doc => doc.id);
+    totalSeen += userIds.length;
+
+    // Process this page in concurrent batches of BATCH_SIZE
+    for (let i = 0; i < userIds.length; i += BATCH_SIZE) {
+      // Timeout safety check before each batch
+      if (Date.now() - startTime > TIMEOUT_MS) {
+        timedOut = true;
+        logInfo(`Timeout reached after ${Math.round((Date.now() - startTime) / 1000)}s. Stopping gracefully.`);
+        break;
       }
+
+      const batch = userIds.slice(i, i + BATCH_SIZE);
+      const results = await Promise.allSettled(
+        batch.map(userId => computeUserStats(userId))
+      );
+
+      for (const result of results) {
+        if (result.status === 'fulfilled') {
+          processed++;
+        } else {
+          errors++;
+          logError('Error computing user stats', result.reason);
+        }
+      }
+
+      // Progress logging
+      if (processed % LOG_INTERVAL < BATCH_SIZE && processed >= LOG_INTERVAL) {
+        const elapsed = Math.round((Date.now() - startTime) / 1000);
+        logInfo(`Progress: ${processed} processed, ${errors} errors, ${elapsed}s elapsed`);
+      }
+    }
+
+    if (timedOut) break;
+
+    // Set cursor for the next page
+    const lastDoc = docs[docs.length - 1];
+    if (docs.length < PAGE_SIZE) {
+      hasMore = false;
+    } else {
+      query = db.collection('profiles').select().orderBy('__name__').startAfter(lastDoc).limit(PAGE_SIZE);
     }
   }
 
-  logInfo(`Daily stats computation complete: ${processed} processed, ${errors} errors out of ${userIds.length} users`);
+  const elapsed = Math.round((Date.now() - startTime) / 1000);
+  if (timedOut) {
+    logInfo(`Daily stats computation STOPPED (timeout): ${processed} processed, ${errors} errors, ${totalSeen} seen in ${elapsed}s`);
+  } else {
+    logInfo(`Daily stats computation complete: ${processed} processed, ${errors} errors out of ${totalSeen} users in ${elapsed}s`);
+  }
+
   return processed;
 }

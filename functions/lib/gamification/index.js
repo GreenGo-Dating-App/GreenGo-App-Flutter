@@ -1,15 +1,18 @@
 "use strict";
 /**
  * Gamification Service
- * 8 Cloud Functions for managing XP, achievements, challenges, and leaderboards
+ * 10 Cloud Functions for managing XP, achievements, challenges, leaderboards, and stats
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateLeaderboardRankings = exports.resetDailyChallenges = exports.claimChallengeReward = exports.trackChallengeProgress = exports.claimLevelRewards = exports.unlockAchievementReward = exports.trackAchievementProgress = exports.grantXP = void 0;
+exports.refreshMyStats = exports.computeDailyUserStats = exports.updateLeaderboardRankings = exports.resetDailyChallenges = exports.claimChallengeReward = exports.trackChallengeProgress = exports.claimLevelRewards = exports.unlockAchievementReward = exports.trackAchievementProgress = exports.grantXP = exports.onMessageCreatedVocabulary = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const utils_1 = require("../shared/utils");
 const types_1 = require("../shared/types");
 const handlers_1 = require("./handlers");
+const userStatsCompute_1 = require("./userStatsCompute");
+var vocabularyProcessor_1 = require("./vocabularyProcessor");
+Object.defineProperty(exports, "onMessageCreatedVocabulary", { enumerable: true, get: function () { return vocabularyProcessor_1.onMessageCreatedVocabulary; } });
 // XP Configuration
 const XP_ACTIONS = {
     profile_complete: 50,
@@ -248,6 +251,37 @@ exports.updateLeaderboardRankings = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('Error updating leaderboard rankings:', error);
         throw error;
+    }
+});
+// ========== 9. COMPUTE USER STATS - DAILY BATCH (Scheduled - 3 AM UTC) ==========
+exports.computeDailyUserStats = (0, scheduler_1.onSchedule)({
+    schedule: '0 3 * * *', // Daily at 3 AM UTC
+    timeZone: 'UTC',
+    memory: '1GiB',
+    timeoutSeconds: 540, // 9 minutes max
+}, async () => {
+    try {
+        const count = await (0, userStatsCompute_1.computeAllUserStats)();
+        (0, utils_1.logInfo)(`Daily stats computed for ${count} users`);
+    }
+    catch (error) {
+        (0, utils_1.logError)('Error computing daily user stats:', error);
+        throw error;
+    }
+});
+// ========== 10. REFRESH MY STATS (HTTP Callable - user-triggered) ==========
+exports.refreshMyStats = (0, https_1.onCall)({
+    memory: '512MiB',
+    timeoutSeconds: 60,
+}, async (request) => {
+    try {
+        const uid = await (0, utils_1.verifyAuth)(request.auth);
+        const stats = await (0, userStatsCompute_1.computeUserStats)(uid);
+        return { success: true, stats };
+    }
+    catch (error) {
+        (0, utils_1.logError)('Error refreshing user stats:', error);
+        throw (0, utils_1.handleError)(error);
     }
 });
 //# sourceMappingURL=index.js.map
