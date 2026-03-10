@@ -7092,6 +7092,36 @@ class AppLocalizationsIt extends AppLocalizations {
   String get preferenceAddCountry => 'Aggiungi Paese';
 
   @override
+  String get preferenceLanguageFilter => 'Lingua';
+
+  @override
+  String get preferenceLanguageFilterDesc =>
+      'Mostra solo le persone che parlano una lingua specifica';
+
+  @override
+  String get preferenceAnyLanguage => 'Qualsiasi lingua';
+
+  @override
+  String get preferenceInterestFilter => 'Interessi';
+
+  @override
+  String get preferenceInterestFilterDesc =>
+      'Mostra solo le persone che condividono i tuoi interessi';
+
+  @override
+  String get preferenceNoInterestFilter =>
+      'Nessun filtro interessi — mostrando tutti';
+
+  @override
+  String get preferenceAddInterest => 'Aggiungi interesse';
+
+  @override
+  String get preferenceSearchInterest => 'Cerca interessi...';
+
+  @override
+  String get preferenceNoInterestsFound => 'Nessun interesse trovato';
+
+  @override
   String get preferenceAddDealBreaker => 'Aggiungi Criterio Eliminatorio';
 
   @override

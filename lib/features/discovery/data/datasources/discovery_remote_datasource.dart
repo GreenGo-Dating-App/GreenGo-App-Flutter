@@ -265,6 +265,21 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         print('[Discovery] Language filter ($langFilter): $before -> ${filteredCandidates.length}');
       }
 
+      // Apply interest filter — only return candidates who share at least one preferred interest
+      if (preferences.preferredInterests.isNotEmpty) {
+        final wantedInterests = preferences.preferredInterests
+            .map((i) => i.toLowerCase().trim())
+            .toSet();
+        final before = filteredCandidates.length;
+        filteredCandidates = filteredCandidates.where((candidate) {
+          final candidateInterests = candidate.profile.interests
+              .map((i) => i.toLowerCase().trim())
+              .toSet();
+          return candidateInterests.intersection(wantedInterests).isNotEmpty;
+        }).toList();
+        print('[Discovery] Interest filter (${wantedInterests.join(', ')}): $before -> ${filteredCandidates.length}');
+      }
+
       // Apply travelers-only filter — only return active travelers
       if (preferences.travelersOnly) {
         final before = filteredCandidates.length;

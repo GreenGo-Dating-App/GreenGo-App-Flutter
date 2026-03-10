@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
@@ -149,14 +151,21 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   Future<void> _refreshStats() async {
     setState(() => _isLoading = true);
     try {
-      // Call Cloud Function to recompute stats server-side
-      await FirebaseFunctions.instance.httpsCallable('refreshMyStats').call({});
+      // Try Cloud Function first (may not be deployed yet)
+      await FirebaseFunctions.instance
+          .httpsCallable('refreshMyStats')
+          .call({})
+          .timeout(const Duration(seconds: 15));
       // Reload from the freshly computed cache
       await _loadStats();
     } catch (e) {
-      debugPrint('Error refreshing stats via Cloud Function: $e');
-      // Fallback: compute locally
-      await _computeAndCacheStats(FirebaseFirestore.instance, widget.userId);
+      debugPrint('Cloud Function refresh failed, computing locally: $e');
+      try {
+        await _computeAndCacheStats(FirebaseFirestore.instance, widget.userId);
+      } catch (e2) {
+        debugPrint('Local compute also failed: $e2');
+        if (mounted) setState(() => _isLoading = false);
+      }
     }
   }
 
@@ -185,23 +194,28 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     }
 
     // Load daily activity from xp_transactions (last 30 days only)
+    // Wrapped in try-catch: this query requires a composite index that may not exist yet
     final Map<String, int> dailyActivity = {};
-    final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
-    final xpDocs = await firestore
-        .collection('xp_transactions')
-        .where('userId', isEqualTo: userId)
-        .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
-        .orderBy('createdAt', descending: true)
-        .limit(1000)
-        .get();
-    for (final doc in xpDocs.docs) {
-      final data = doc.data();
-      final createdAt = data['createdAt'] as Timestamp?;
-      if (createdAt != null) {
-        final date = createdAt.toDate();
-        final key = '${date.month}/${date.day}';
-        dailyActivity[key] = (dailyActivity[key] ?? 0) + 1;
+    try {
+      final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
+      final xpDocs = await firestore
+          .collection('xp_transactions')
+          .where('userId', isEqualTo: userId)
+          .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
+          .orderBy('createdAt', descending: true)
+          .limit(1000)
+          .get();
+      for (final doc in xpDocs.docs) {
+        final data = doc.data();
+        final createdAt = data['createdAt'] as Timestamp?;
+        if (createdAt != null) {
+          final date = createdAt.toDate();
+          final key = '${date.month}/${date.day}';
+          dailyActivity[key] = (dailyActivity[key] ?? 0) + 1;
+        }
       }
+    } catch (e) {
+      debugPrint('xp_transactions query failed (index may be missing): $e');
     }
 
     // Conversations count (two queries, count only)

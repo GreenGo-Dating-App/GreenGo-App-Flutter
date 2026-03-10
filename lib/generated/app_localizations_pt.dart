@@ -7071,6 +7071,36 @@ class AppLocalizationsPt extends AppLocalizations {
   String get preferenceAddCountry => 'Adicionar Pais';
 
   @override
+  String get preferenceLanguageFilter => 'Idioma';
+
+  @override
+  String get preferenceLanguageFilterDesc =>
+      'Mostrar apenas pessoas que falam um idioma específico';
+
+  @override
+  String get preferenceAnyLanguage => 'Qualquer idioma';
+
+  @override
+  String get preferenceInterestFilter => 'Interesses';
+
+  @override
+  String get preferenceInterestFilterDesc =>
+      'Mostrar apenas pessoas que partilham os seus interesses';
+
+  @override
+  String get preferenceNoInterestFilter =>
+      'Sem filtro de interesses — a mostrar todos';
+
+  @override
+  String get preferenceAddInterest => 'Adicionar interesse';
+
+  @override
+  String get preferenceSearchInterest => 'Pesquisar interesses...';
+
+  @override
+  String get preferenceNoInterestsFound => 'Nenhum interesse encontrado';
+
+  @override
   String get preferenceAddDealBreaker => 'Adicionar Criterio Eliminatorio';
 
   @override
@@ -16669,6 +16699,36 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get preferenceAddCountry => 'Adicionar Pais';
+
+  @override
+  String get preferenceLanguageFilter => 'Idioma';
+
+  @override
+  String get preferenceLanguageFilterDesc =>
+      'Mostrar apenas pessoas que falam um idioma específico';
+
+  @override
+  String get preferenceAnyLanguage => 'Qualquer idioma';
+
+  @override
+  String get preferenceInterestFilter => 'Interesses';
+
+  @override
+  String get preferenceInterestFilterDesc =>
+      'Mostrar apenas pessoas que compartilham seus interesses';
+
+  @override
+  String get preferenceNoInterestFilter =>
+      'Sem filtro de interesses — mostrando todos';
+
+  @override
+  String get preferenceAddInterest => 'Adicionar interesse';
+
+  @override
+  String get preferenceSearchInterest => 'Pesquisar interesses...';
+
+  @override
+  String get preferenceNoInterestsFound => 'Nenhum interesse encontrado';
 
   @override
   String get preferenceAddDealBreaker => 'Adicionar Criterio Eliminatorio';

@@ -7102,6 +7102,36 @@ class AppLocalizationsDe extends AppLocalizations {
   String get preferenceAddCountry => 'Land hinzufuegen';
 
   @override
+  String get preferenceLanguageFilter => 'Sprache';
+
+  @override
+  String get preferenceLanguageFilterDesc =>
+      'Nur Personen anzeigen, die eine bestimmte Sprache sprechen';
+
+  @override
+  String get preferenceAnyLanguage => 'Alle Sprachen';
+
+  @override
+  String get preferenceInterestFilter => 'Interessen';
+
+  @override
+  String get preferenceInterestFilterDesc =>
+      'Nur Personen anzeigen, die Ihre Interessen teilen';
+
+  @override
+  String get preferenceNoInterestFilter =>
+      'Kein Interessenfilter — alle anzeigen';
+
+  @override
+  String get preferenceAddInterest => 'Interesse hinzufügen';
+
+  @override
+  String get preferenceSearchInterest => 'Interessen suchen...';
+
+  @override
+  String get preferenceNoInterestsFound => 'Keine Interessen gefunden';
+
+  @override
   String get preferenceAddDealBreaker => 'Ausschlusskriterium hinzufuegen';
 
   @override
