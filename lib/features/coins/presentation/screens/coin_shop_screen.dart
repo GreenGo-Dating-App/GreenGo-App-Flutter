@@ -539,7 +539,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
         ),
         centerTitle: true,
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
+        leading: Navigator.of(context).canPop()
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            : null,
         actions: const [],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48),
@@ -2375,11 +2381,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         );
       }
 
-      // Send chat message (non-blocking)
-      _sendGiftChatMessage(
+      // Send chat messages for both sender and receiver
+      final senderProfile = await FirebaseFirestore.instance.collection('profiles').doc(widget.userId).get();
+      final senderName = senderProfile.data()?['nickname'] as String? ?? 'Someone';
+      await _sendGiftChatMessage(
         recipientId: recipientId,
-        senderName: (await FirebaseFirestore.instance.collection('profiles').doc(widget.userId).get())
-            .data()?['nickname'] as String? ?? 'Someone',
+        senderName: senderName,
+        recipientName: recipientName,
         amount: amount,
       );
     } catch (e, stackTrace) {
@@ -2392,6 +2400,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Future<void> _sendGiftChatMessage({
     required String recipientId,
     required String senderName,
+    required String recipientName,
     required int amount,
   }) async {
     try {
@@ -2399,12 +2408,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // Find existing conversation
       String? conversationId;
+      String? matchId;
       var q = await db.collection('conversations')
           .where('userId1', isEqualTo: widget.userId)
           .where('userId2', isEqualTo: recipientId)
           .limit(1).get();
       if (q.docs.isNotEmpty) {
         conversationId = q.docs.first.id;
+        matchId = q.docs.first.data()['matchId'] as String? ?? '';
       } else {
         q = await db.collection('conversations')
             .where('userId1', isEqualTo: recipientId)
@@ -2412,6 +2423,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             .limit(1).get();
         if (q.docs.isNotEmpty) {
           conversationId = q.docs.first.id;
+          matchId = q.docs.first.data()['matchId'] as String? ?? '';
         }
       }
 
@@ -2420,9 +2432,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         final convRef = db.collection('conversations').doc();
         conversationId = convRef.id;
         final sortedIds = [widget.userId, recipientId]..sort();
+        matchId = 'gift_${sortedIds[0]}_${sortedIds[1]}';
         await convRef.set({
           'conversationId': conversationId,
-          'matchId': 'gift_${sortedIds[0]}_${sortedIds[1]}',
+          'matchId': matchId,
           'userId1': widget.userId,
           'userId2': recipientId,
           'createdAt': FieldValue.serverTimestamp(),
@@ -2437,35 +2450,67 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         });
       }
 
-      // Send message as if user A is writing to user B
+      // Message from sender to receiver
       final msgRef = db.collection('conversations')
           .doc(conversationId).collection('messages').doc();
-      final giftMsg = 'I just sent you $amount coins!';
+      final senderMsg = 'I just sent you $amount coins!';
 
       await msgRef.set({
         'messageId': msgRef.id,
+        'matchId': matchId ?? '',
         'conversationId': conversationId,
         'senderId': widget.userId,
         'receiverId': recipientId,
-        'content': giftMsg,
+        'content': senderMsg,
         'type': 'text',
         'sentAt': FieldValue.serverTimestamp(),
         'deliveredAt': FieldValue.serverTimestamp(),
         'status': 'delivered',
       });
 
+      // Confirmation message from receiver to sender (auto-reply)
+      final replyRef = db.collection('conversations')
+          .doc(conversationId).collection('messages').doc();
+      final replyMsg = 'Thank you for the $amount coins, $senderName!';
+
+      await replyRef.set({
+        'messageId': replyRef.id,
+        'matchId': matchId ?? '',
+        'conversationId': conversationId,
+        'senderId': recipientId,
+        'receiverId': widget.userId,
+        'content': replyMsg,
+        'type': 'text',
+        'sentAt': FieldValue.serverTimestamp(),
+        'deliveredAt': FieldValue.serverTimestamp(),
+        'status': 'delivered',
+      });
+
+      // Update conversation with last message
       await db.collection('conversations').doc(conversationId).set({
         'lastMessage': {
-          'messageId': msgRef.id,
-          'senderId': widget.userId,
-          'receiverId': recipientId,
-          'content': giftMsg,
+          'messageId': replyRef.id,
+          'senderId': recipientId,
+          'receiverId': widget.userId,
+          'content': replyMsg,
           'type': 'text',
           'sentAt': Timestamp.fromDate(DateTime.now()),
         },
         'lastMessageAt': FieldValue.serverTimestamp(),
         'unreadCount': FieldValue.increment(1),
       }, SetOptions(merge: true));
+
+      // Create notification for receiver
+      await db.collection('notifications').add({
+        'userId': recipientId,
+        'type': 'coin_gift',
+        'title': 'You received coins!',
+        'body': '$senderName sent you $amount coins!',
+        'senderId': widget.userId,
+        'conversationId': conversationId,
+        'isRead': false,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
     } catch (e) {
       debugPrint('[CoinGift] Chat notification failed: $e');
     }
