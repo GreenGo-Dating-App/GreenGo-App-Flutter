@@ -12606,6 +12606,60 @@ abstract class AppLocalizations {
   /// **'Add Country'**
   String get preferenceAddCountry;
 
+  /// No description provided for @preferenceLanguageFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get preferenceLanguageFilter;
+
+  /// No description provided for @preferenceLanguageFilterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Only show people who speak a specific language'**
+  String get preferenceLanguageFilterDesc;
+
+  /// No description provided for @preferenceAnyLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Any language'**
+  String get preferenceAnyLanguage;
+
+  /// No description provided for @preferenceInterestFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Interests'**
+  String get preferenceInterestFilter;
+
+  /// No description provided for @preferenceInterestFilterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Only show people who share your interests'**
+  String get preferenceInterestFilterDesc;
+
+  /// No description provided for @preferenceNoInterestFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'No interest filter — showing everyone'**
+  String get preferenceNoInterestFilter;
+
+  /// No description provided for @preferenceAddInterest.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Interest'**
+  String get preferenceAddInterest;
+
+  /// No description provided for @preferenceSearchInterest.
+  ///
+  /// In en, this message translates to:
+  /// **'Search interests...'**
+  String get preferenceSearchInterest;
+
+  /// No description provided for @preferenceNoInterestsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No interests found'**
+  String get preferenceNoInterestsFound;
+
   /// No description provided for @preferenceAddDealBreaker.
   ///
   /// In en, this message translates to:

@@ -687,6 +687,14 @@
       ]
     },
     {
+      "collectionGroup": "xp_transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "seasonal_events",
       "queryScope": "COLLECTION",
       "fields": [

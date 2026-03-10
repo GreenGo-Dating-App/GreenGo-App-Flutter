@@ -480,6 +480,119 @@ class _DiscoveryPreferencesScreenState
     );
   }
 
+  void _showInterestPickerDialog() {
+    final searchController = TextEditingController();
+    final allInterests = [
+      'Travel', 'Music', 'Sports', 'Fitness', 'Photography', 'Cooking',
+      'Art', 'Reading', 'Movies', 'Gaming', 'Hiking', 'Yoga',
+      'Dancing', 'Fashion', 'Technology', 'Nature', 'Animals',
+      'Volunteering', 'Wine', 'Coffee', 'Beach', 'Camping',
+      'Cycling', 'Running', 'Swimming', 'Meditation', 'Writing',
+      'Languages', 'History', 'Science', 'Gardening', 'DIY',
+      'Board Games', 'Foodie', 'Nightlife', 'Theater', 'Concerts',
+      'Surfing', 'Skiing', 'Climbing', 'Martial Arts',
+    ];
+
+    final available = allInterests
+        .where((i) => !_preferences.preferredInterests.contains(i))
+        .toList();
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            final query = searchController.text.toLowerCase();
+            final filtered = query.isNotEmpty
+                ? available.where((i) => i.toLowerCase().contains(query)).toList()
+                : available;
+
+            return AlertDialog(
+              backgroundColor: AppColors.backgroundCard,
+              title: Text(
+                AppLocalizations.of(context)!.preferenceAddInterest,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              content: SizedBox(
+                width: double.maxFinite,
+                height: 400,
+                child: Column(
+                  children: [
+                    TextField(
+                      controller: searchController,
+                      style: const TextStyle(color: AppColors.textPrimary),
+                      decoration: InputDecoration(
+                        hintText: AppLocalizations.of(context)!.preferenceSearchInterest,
+                        hintStyle: const TextStyle(color: AppColors.textTertiary),
+                        prefixIcon: const Icon(Icons.search, color: AppColors.richGold),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: AppColors.divider),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: const BorderSide(color: AppColors.richGold),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      onChanged: (_) => setDialogState(() {}),
+                    ),
+                    const SizedBox(height: 12),
+                    Expanded(
+                      child: filtered.isEmpty
+                          ? Center(
+                              child: Text(
+                                AppLocalizations.of(context)!.preferenceNoInterestsFound,
+                                style: const TextStyle(color: AppColors.textTertiary),
+                              ),
+                            )
+                          : ListView.builder(
+                              itemCount: filtered.length,
+                              itemBuilder: (context, index) {
+                                final interest = filtered[index];
+                                return ListTile(
+                                  leading: const Icon(
+                                    Icons.interests,
+                                    color: AppColors.richGold,
+                                    size: 20,
+                                  ),
+                                  title: Text(
+                                    interest,
+                                    style: const TextStyle(color: AppColors.textPrimary),
+                                  ),
+                                  onTap: () {
+                                    _updatePreferences(
+                                      _preferences.copyWith(
+                                        preferredInterests: [
+                                          ..._preferences.preferredInterests,
+                                          interest,
+                                        ],
+                                      ),
+                                    );
+                                    Navigator.of(context).pop();
+                                  },
+                                );
+                              },
+                            ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: Text(
+                    AppLocalizations.of(context)!.cancelLabel,
+                    style: const TextStyle(color: AppColors.textSecondary),
+                  ),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -708,6 +821,140 @@ class _DiscoveryPreferencesScreenState
                   label: Text(
                     l10n.preferenceAddCountry,
                     style: TextStyle(
+                      color: AppColors.richGold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Language filter
+          _buildSectionCard(
+            title: l10n.preferenceLanguageFilter,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.preferenceLanguageFilterDesc,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<String>(
+                  value: _preferences.languageFilter,
+                  dropdownColor: AppColors.backgroundCard,
+                  style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
+                  decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: AppColors.divider),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: AppColors.richGold),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  ),
+                  hint: Text(
+                    l10n.preferenceAnyLanguage,
+                    style: const TextStyle(color: AppColors.textTertiary),
+                  ),
+                  items: [
+                    DropdownMenuItem<String>(
+                      value: null,
+                      child: Text(l10n.preferenceAnyLanguage),
+                    ),
+                    ...['English', 'Deutsch', 'Español', 'Français', 'Italiano', 'Português', 'Português (BR)']
+                        .map((lang) => DropdownMenuItem(
+                              value: lang,
+                              child: Text(lang),
+                            )),
+                  ],
+                  onChanged: (value) {
+                    _updatePreferences(
+                      _preferences.copyWith(
+                        languageFilter: value,
+                        clearLanguageFilter: value == null,
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Interest filter
+          _buildSectionCard(
+            title: l10n.preferenceInterestFilter,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.preferenceInterestFilterDesc,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                if (_preferences.preferredInterests.isNotEmpty)
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: _preferences.preferredInterests
+                        .map((interest) => Chip(
+                              label: Text(
+                                interest,
+                                style: const TextStyle(
+                                  color: AppColors.textPrimary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              deleteIcon: const Icon(
+                                Icons.close,
+                                size: 18,
+                                color: AppColors.errorRed,
+                              ),
+                              onDeleted: () {
+                                _updatePreferences(
+                                  _preferences.copyWith(
+                                    preferredInterests: List.from(
+                                        _preferences.preferredInterests)
+                                      ..remove(interest),
+                                  ),
+                                );
+                              },
+                              backgroundColor: AppColors.backgroundDark,
+                              side: const BorderSide(color: AppColors.richGold),
+                            ))
+                        .toList(),
+                  )
+                else
+                  Text(
+                    l10n.preferenceNoInterestFilter,
+                    style: const TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 14,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                const SizedBox(height: 12),
+                TextButton.icon(
+                  onPressed: _showInterestPickerDialog,
+                  icon: const Icon(
+                    Icons.add,
+                    color: AppColors.richGold,
+                  ),
+                  label: Text(
+                    l10n.preferenceAddInterest,
+                    style: const TextStyle(
                       color: AppColors.richGold,
                     ),
                   ),

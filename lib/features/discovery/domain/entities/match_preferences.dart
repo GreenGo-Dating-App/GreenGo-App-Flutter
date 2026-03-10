@@ -14,6 +14,7 @@ class MatchPreferences extends Equatable {
   final bool sortByDistance; // true = sort closest first
   final bool onlyOnlineNow; // true = show only online users
   final String? languageFilter; // filter candidates by spoken language
+  final List<String> preferredInterests; // filter by shared interests (empty = show all)
   final bool travelersOnly; // true = only show active travelers
   final bool localGuidesOnly; // true = only show local guides
 
@@ -31,6 +32,7 @@ class MatchPreferences extends Equatable {
     this.sortByDistance = false,
     this.onlyOnlineNow = false,
     this.languageFilter,
+    this.preferredInterests = const [],
     this.travelersOnly = false,
     this.localGuidesOnly = false,
   });
@@ -49,6 +51,7 @@ class MatchPreferences extends Equatable {
       preferredCountries: const [],
       onlyOnlineNow: false,
       languageFilter: null,
+      preferredInterests: const [],
       travelersOnly: false,
       localGuidesOnly: false,
     );
@@ -70,6 +73,7 @@ class MatchPreferences extends Equatable {
     bool? onlyOnlineNow,
     String? languageFilter,
     bool clearLanguageFilter = false,
+    List<String>? preferredInterests,
     bool? travelersOnly,
     bool? localGuidesOnly,
   }) {
@@ -87,6 +91,7 @@ class MatchPreferences extends Equatable {
       sortByDistance: sortByDistance ?? this.sortByDistance,
       onlyOnlineNow: onlyOnlineNow ?? this.onlyOnlineNow,
       languageFilter: clearLanguageFilter ? null : (languageFilter ?? this.languageFilter),
+      preferredInterests: preferredInterests ?? this.preferredInterests,
       travelersOnly: travelersOnly ?? this.travelersOnly,
       localGuidesOnly: localGuidesOnly ?? this.localGuidesOnly,
     );
@@ -108,6 +113,7 @@ class MatchPreferences extends Equatable {
       'sortByDistance': sortByDistance,
       'onlyOnlineNow': onlyOnlineNow,
       'languageFilter': languageFilter,
+      'preferredInterests': preferredInterests,
       'travelersOnly': travelersOnly,
       'localGuidesOnly': localGuidesOnly,
     };
@@ -138,6 +144,10 @@ class MatchPreferences extends Equatable {
       sortByDistance: map['sortByDistance'] as bool? ?? false,
       onlyOnlineNow: map['onlyOnlineNow'] as bool? ?? false,
       languageFilter: map['languageFilter'] as String?,
+      preferredInterests: (map['preferredInterests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
       travelersOnly: map['travelersOnly'] as bool? ?? false,
       localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
     );
@@ -158,6 +168,7 @@ class MatchPreferences extends Equatable {
         sortByDistance,
         onlyOnlineNow,
         languageFilter,
+        preferredInterests,
         travelersOnly,
         localGuidesOnly,
       ];

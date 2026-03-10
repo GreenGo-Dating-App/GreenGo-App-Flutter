@@ -7000,6 +7000,36 @@ class AppLocalizationsEn extends AppLocalizations {
   String get preferenceAddCountry => 'Add Country';
 
   @override
+  String get preferenceLanguageFilter => 'Language';
+
+  @override
+  String get preferenceLanguageFilterDesc =>
+      'Only show people who speak a specific language';
+
+  @override
+  String get preferenceAnyLanguage => 'Any language';
+
+  @override
+  String get preferenceInterestFilter => 'Interests';
+
+  @override
+  String get preferenceInterestFilterDesc =>
+      'Only show people who share your interests';
+
+  @override
+  String get preferenceNoInterestFilter =>
+      'No interest filter — showing everyone';
+
+  @override
+  String get preferenceAddInterest => 'Add Interest';
+
+  @override
+  String get preferenceSearchInterest => 'Search interests...';
+
+  @override
+  String get preferenceNoInterestsFound => 'No interests found';
+
+  @override
   String get preferenceAddDealBreaker => 'Add Deal Breaker';
 
   @override
