@@ -423,6 +423,20 @@
   "backToLobby": "Volver al Vestíbulo",
   "badgeLocked": "Bloqueado",
   "badgeUnlocked": "Desbloqueado",
+  "achievementUnlockedTitle": "¡LOGRO DESBLOQUEADO!",
+  "achievementUnlockedAwesome": "¡Genial!",
+  "achievementRarityCommon": "COMÚN",
+  "achievementRarityUncommon": "POCO COMÚN",
+  "achievementRarityRare": "RARO",
+  "achievementRarityEpic": "ÉPICO",
+  "achievementRarityLegendary": "LEGENDARIO",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Insignias",
   "basic": "Básico",
   "basicInformation": "Información Básica",

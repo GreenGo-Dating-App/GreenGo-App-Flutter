@@ -423,6 +423,20 @@
   "backToLobby": "Retour au Salon",
   "badgeLocked": "Verrouillé",
   "badgeUnlocked": "Débloqué",
+  "achievementUnlockedTitle": "SUCCÈS DÉBLOQUÉ !",
+  "achievementUnlockedAwesome": "Génial !",
+  "achievementRarityCommon": "COMMUN",
+  "achievementRarityUncommon": "PEU COMMUN",
+  "achievementRarityRare": "RARE",
+  "achievementRarityEpic": "ÉPIQUE",
+  "achievementRarityLegendary": "LÉGENDAIRE",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Badges",
   "basic": "Basique",
   "basicInformation": "Informations de Base",

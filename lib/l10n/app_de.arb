@@ -423,6 +423,20 @@
   "backToLobby": "Zurück zur Lobby",
   "badgeLocked": "Gesperrt",
   "badgeUnlocked": "Freigeschaltet",
+  "achievementUnlockedTitle": "ERFOLG FREIGESCHALTET!",
+  "achievementUnlockedAwesome": "Super!",
+  "achievementRarityCommon": "GEWÖHNLICH",
+  "achievementRarityUncommon": "UNGEWÖHNLICH",
+  "achievementRarityRare": "SELTEN",
+  "achievementRarityEpic": "EPISCH",
+  "achievementRarityLegendary": "LEGENDÄR",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Abzeichen",
   "basic": "Basis",
   "basicInformation": "Grundinformationen",

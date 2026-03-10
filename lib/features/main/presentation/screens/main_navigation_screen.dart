@@ -48,6 +48,9 @@ import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
+import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dart';
+import '../../../gamification/domain/entities/achievement.dart';
+import '../../../gamification/domain/entities/user_level.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../coins/data/datasources/coin_remote_datasource.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
@@ -132,6 +135,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   StreamSubscription? _matchCountSub;
   StreamSubscription? _messageCountSub;
 
+  // Real-time level-up & achievement listeners
+  StreamSubscription? _levelUpSub;
+  StreamSubscription? _achievementSub;
+  int? _lastKnownLevel; // track to detect level changes
+  Set<String> _knownUnlockedAchievements = {}; // track already-unlocked achievements
+
   @override
   void initState() {
     super.initState();
@@ -156,6 +165,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (AppConfig.enableGamification) {
       _gamificationBloc = di.sl<GamificationBloc>()
         ..add(LoadUserLevel(widget.userId));
+      // Start real-time listeners for level-up and achievement unlock celebrations
+      _startLevelUpListener();
+      _startAchievementListener();
     }
 
     // Initialize notifications bloc for badge count
@@ -653,6 +665,98 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
   }
 
+  // XP level thresholds (must match backend LEVEL_XP_REQUIREMENTS)
+  static const _levelXpRequirements = [
+    0, 100, 250, 500, 1000, 2000, 3500, 5500, 8000, 11000, 15000, 20000,
+    26000, 33000, 41000, 50000,
+  ];
+
+  static int _calculateLevel(int totalXp) {
+    int level = 1;
+    while (level < _levelXpRequirements.length &&
+        totalXp >= _levelXpRequirements[level]) {
+      level++;
+    }
+    return level;
+  }
+
+  /// Listen to user_levels/{userId} for real-time level changes
+  void _startLevelUpListener() {
+    final fs = FirebaseFirestore.instance;
+    _levelUpSub = fs
+        .collection('user_levels')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((snapshot) {
+      if (!mounted || !snapshot.exists) return;
+      final data = snapshot.data()!;
+      final totalXp = (data['totalXP'] as num?)?.toInt() ?? 0;
+      final newLevel = _calculateLevel(totalXp);
+
+      if (_lastKnownLevel == null) {
+        // First snapshot — just record the current level
+        _lastKnownLevel = newLevel;
+        return;
+      }
+
+      if (newLevel > _lastKnownLevel!) {
+        final previousLevel = _lastKnownLevel!;
+        _lastKnownLevel = newLevel;
+
+        // Show level-up celebration
+        if (mounted) {
+          final rewards = StandardLevelRewards.getRewardsForLevel(newLevel);
+          LevelUpCelebrationDialog.show(
+            context,
+            newLevel: newLevel,
+            previousLevel: previousLevel,
+            rewards: rewards,
+            isVIP: newLevel >= 50,
+          );
+        }
+      } else {
+        _lastKnownLevel = newLevel;
+      }
+    });
+  }
+
+  /// Listen to user_achievements for newly unlocked achievements
+  void _startAchievementListener() {
+    final fs = FirebaseFirestore.instance;
+    _achievementSub = fs
+        .collection('user_achievements')
+        .where('userId', isEqualTo: widget.userId)
+        .where('isUnlocked', isEqualTo: true)
+        .snapshots()
+        .listen((snapshot) {
+      if (!mounted) return;
+
+      final currentIds = snapshot.docs.map((d) => d.data()['achievementId'] as String? ?? d.id).toSet();
+
+      if (_knownUnlockedAchievements.isEmpty) {
+        // First snapshot — record all currently unlocked achievements
+        _knownUnlockedAchievements = currentIds;
+        return;
+      }
+
+      // Find newly unlocked achievements
+      final newlyUnlocked = currentIds.difference(_knownUnlockedAchievements);
+      _knownUnlockedAchievements = currentIds;
+
+      for (final achievementId in newlyUnlocked) {
+        final achievement = Achievements.getById(achievementId);
+        if (achievement != null && mounted) {
+          showDialog(
+            context: context,
+            barrierDismissible: false,
+            barrierColor: Colors.black87,
+            builder: (ctx) => AchievementUnlockDialog(achievement: achievement),
+          );
+        }
+      }
+    });
+  }
+
   void _startBadgeCountListeners() {
     final fs = FirebaseFirestore.instance;
     final uid = widget.userId;
@@ -735,6 +839,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   void dispose() {
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
+    _levelUpSub?.cancel();
+    _achievementSub?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     _presenceService.dispose();
     _activityTrackingService.dispose();

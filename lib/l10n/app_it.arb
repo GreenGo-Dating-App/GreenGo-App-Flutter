@@ -423,6 +423,20 @@
   "backToLobby": "Torna alla Lobby",
   "badgeLocked": "Bloccato",
   "badgeUnlocked": "Sbloccato",
+  "achievementUnlockedTitle": "OBIETTIVO SBLOCCATO!",
+  "achievementUnlockedAwesome": "Fantastico!",
+  "achievementRarityCommon": "COMUNE",
+  "achievementRarityUncommon": "NON COMUNE",
+  "achievementRarityRare": "RARO",
+  "achievementRarityEpic": "EPICO",
+  "achievementRarityLegendary": "LEGGENDARIO",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Badge",
   "basic": "Base",
   "basicInformation": "Informazioni Base",

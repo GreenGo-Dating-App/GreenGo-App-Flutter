@@ -1372,6 +1372,32 @@ class AppLocalizationsFr extends AppLocalizations {
   String get badgeUnlocked => 'Débloqué';
 
   @override
+  String get achievementUnlockedTitle => 'SUCCÈS DÉBLOQUÉ !';
+
+  @override
+  String get achievementUnlockedAwesome => 'Génial !';
+
+  @override
+  String get achievementRarityCommon => 'COMMUN';
+
+  @override
+  String get achievementRarityUncommon => 'PEU COMMUN';
+
+  @override
+  String get achievementRarityRare => 'RARE';
+
+  @override
+  String get achievementRarityEpic => 'ÉPIQUE';
+
+  @override
+  String get achievementRarityLegendary => 'LÉGENDAIRE';
+
+  @override
+  String achievementRewardLabel(int amount, String type) {
+    return '+$amount $type';
+  }
+
+  @override
   String get badges => 'Badges';
 
   @override
