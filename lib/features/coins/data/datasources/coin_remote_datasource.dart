@@ -679,6 +679,7 @@ class CoinRemoteDataSource {
 
     // Check for existing conversation between these two users
     String? conversationId;
+    String? matchId;
 
     // Try to find existing conversation (check both user orderings)
     final convQuery1 = await firestore.collection('conversations')
@@ -689,6 +690,7 @@ class CoinRemoteDataSource {
 
     if (convQuery1.docs.isNotEmpty) {
       conversationId = convQuery1.docs.first.id;
+      matchId = convQuery1.docs.first.data()['matchId'] as String? ?? '';
     } else {
       final convQuery2 = await firestore.collection('conversations')
           .where('userId1', isEqualTo: receiverId)
@@ -698,6 +700,7 @@ class CoinRemoteDataSource {
 
       if (convQuery2.docs.isNotEmpty) {
         conversationId = convQuery2.docs.first.id;
+        matchId = convQuery2.docs.first.data()['matchId'] as String? ?? '';
       }
     }
 
@@ -708,7 +711,7 @@ class CoinRemoteDataSource {
 
       // Create synthetic matchId for coin gift conversations
       final sortedIds = [senderId, receiverId]..sort();
-      final matchId = 'gift_${sortedIds[0]}_${sortedIds[1]}';
+      matchId = 'gift_${sortedIds[0]}_${sortedIds[1]}';
 
       await convRef.set({
         'conversationId': conversationId,
@@ -739,6 +742,7 @@ class CoinRemoteDataSource {
 
     await messageRef.set({
       'messageId': messageId,
+      'matchId': matchId ?? '',
       'conversationId': conversationId,
       'senderId': senderId,
       'receiverId': receiverId,
@@ -749,14 +753,37 @@ class CoinRemoteDataSource {
       'status': 'delivered',
     });
 
+    // Auto-reply confirmation from receiver
+    final replyId = uuid.v4();
+    final replyRef = firestore
+        .collection('conversations')
+        .doc(conversationId)
+        .collection('messages')
+        .doc(replyId);
+
+    final replyMessage = 'Thank you for the $amount coins, $senderName!';
+
+    await replyRef.set({
+      'messageId': replyId,
+      'matchId': matchId ?? '',
+      'conversationId': conversationId,
+      'senderId': receiverId,
+      'receiverId': senderId,
+      'content': replyMessage,
+      'type': 'text',
+      'sentAt': FieldValue.serverTimestamp(),
+      'deliveredAt': FieldValue.serverTimestamp(),
+      'status': 'delivered',
+    });
+
     // Update conversation with last message
     await firestore.collection('conversations').doc(conversationId).update({
       'lastMessage': {
-        'messageId': messageId,
-        'senderId': senderId,
-        'receiverId': receiverId,
-        'content': systemMessage,
-        'type': 'system',
+        'messageId': replyId,
+        'senderId': receiverId,
+        'receiverId': senderId,
+        'content': replyMessage,
+        'type': 'text',
         'sentAt': Timestamp.fromDate(DateTime.now()),
       },
       'lastMessageAt': FieldValue.serverTimestamp(),

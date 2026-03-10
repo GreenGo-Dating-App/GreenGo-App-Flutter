@@ -136,9 +136,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       level = (totalXp / 100).floor() + 1;
     }
 
-    // Also check xp_transactions for additional XP + daily activity
+    // Load daily activity from xp_transactions (for activity chart only)
     final Map<String, int> dailyActivity = {};
-    int txnXp = 0;
     final xpDocs = await firestore
         .collection('xp_transactions')
         .where('userId', isEqualTo: userId)
@@ -147,7 +146,6 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
         .get();
     for (final doc in xpDocs.docs) {
       final data = doc.data();
-      txnXp += (data['xpAmount'] as num?)?.toInt() ?? 0;
       final createdAt = data['createdAt'] as Timestamp?;
       if (createdAt != null) {
         final date = createdAt.toDate();
@@ -155,7 +153,6 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
         dailyActivity[key] = (dailyActivity[key] ?? 0) + 1;
       }
     }
-    if (txnXp > totalXp) totalXp = txnXp;
 
     // Conversations count (two queries, count only)
     final convos1 = await firestore
