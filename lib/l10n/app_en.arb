@@ -433,6 +433,20 @@
   "backToLobby": "Back to Lobby",
   "badgeLocked": "Locked",
   "badgeUnlocked": "Unlocked",
+  "achievementUnlockedTitle": "ACHIEVEMENT UNLOCKED!",
+  "achievementUnlockedAwesome": "Awesome!",
+  "achievementRarityCommon": "COMMON",
+  "achievementRarityUncommon": "UNCOMMON",
+  "achievementRarityRare": "RARE",
+  "achievementRarityEpic": "EPIC",
+  "achievementRarityLegendary": "LEGENDARY",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Badges",
   "basic": "Basic",
   "basicInformation": "Basic Information",

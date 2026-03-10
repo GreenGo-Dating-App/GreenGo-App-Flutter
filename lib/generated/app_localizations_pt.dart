@@ -1367,6 +1367,32 @@ class AppLocalizationsPt extends AppLocalizations {
   String get badgeUnlocked => 'Desbloqueado';
 
   @override
+  String get achievementUnlockedTitle => 'CONQUISTA DESBLOQUEADA!';
+
+  @override
+  String get achievementUnlockedAwesome => 'Incrível!';
+
+  @override
+  String get achievementRarityCommon => 'COMUM';
+
+  @override
+  String get achievementRarityUncommon => 'INCOMUM';
+
+  @override
+  String get achievementRarityRare => 'RARO';
+
+  @override
+  String get achievementRarityEpic => 'ÉPICO';
+
+  @override
+  String get achievementRarityLegendary => 'LENDÁRIO';
+
+  @override
+  String achievementRewardLabel(int amount, String type) {
+    return '+$amount $type';
+  }
+
+  @override
   String get badges => 'Emblemas';
 
   @override
@@ -10993,6 +11019,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get badgeUnlocked => 'Desbloqueado';
+
+  @override
+  String get achievementUnlockedTitle => 'CONQUISTA DESBLOQUEADA!';
+
+  @override
+  String get achievementUnlockedAwesome => 'Incrível!';
+
+  @override
+  String get achievementRarityCommon => 'COMUM';
+
+  @override
+  String get achievementRarityUncommon => 'INCOMUM';
+
+  @override
+  String get achievementRarityRare => 'RARO';
+
+  @override
+  String get achievementRarityEpic => 'ÉPICO';
+
+  @override
+  String get achievementRarityLegendary => 'LENDÁRIO';
+
+  @override
+  String achievementRewardLabel(int amount, String type) {
+    return '+$amount $type';
+  }
 
   @override
   String get badges => 'Emblemas';

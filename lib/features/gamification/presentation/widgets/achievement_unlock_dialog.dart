@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import '../../domain/entities/achievement.dart';
+import '../../../../generated/app_localizations.dart';
 
 class AchievementUnlockDialog extends StatefulWidget {
   final Achievement achievement;
@@ -117,9 +118,9 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Text(
-                      'ACHIEVEMENT UNLOCKED!',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)?.achievementUnlockedTitle ?? 'ACHIEVEMENT UNLOCKED!',
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1.2,
@@ -214,7 +215,7 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                           ),
                           const SizedBox(width: 8),
                           Text(
-                            '+${widget.achievement.rewardAmount} ${widget.achievement.rewardType}',
+                            AppLocalizations.of(context)?.achievementRewardLabel(widget.achievement.rewardAmount, widget.achievement.rewardType) ?? '+${widget.achievement.rewardAmount} ${widget.achievement.rewardType}',
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -239,9 +240,9 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: const Text(
-                          'Awesome!',
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)?.achievementUnlockedAwesome ?? 'Awesome!',
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -302,17 +303,18 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
   }
 
   String _getRarityName(AchievementRarity rarity) {
+    final l10n = AppLocalizations.of(context);
     switch (rarity) {
       case AchievementRarity.common:
-        return 'COMMON';
+        return l10n?.achievementRarityCommon ?? 'COMMON';
       case AchievementRarity.uncommon:
-        return 'UNCOMMON';
+        return l10n?.achievementRarityUncommon ?? 'UNCOMMON';
       case AchievementRarity.rare:
-        return 'RARE';
+        return l10n?.achievementRarityRare ?? 'RARE';
       case AchievementRarity.epic:
-        return 'EPIC';
+        return l10n?.achievementRarityEpic ?? 'EPIC';
       case AchievementRarity.legendary:
-        return 'LEGENDARY';
+        return l10n?.achievementRarityLegendary ?? 'LEGENDARY';
     }
   }
 }

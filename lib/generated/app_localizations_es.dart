@@ -1377,6 +1377,32 @@ class AppLocalizationsEs extends AppLocalizations {
   String get badgeUnlocked => 'Desbloqueado';
 
   @override
+  String get achievementUnlockedTitle => '¡LOGRO DESBLOQUEADO!';
+
+  @override
+  String get achievementUnlockedAwesome => '¡Genial!';
+
+  @override
+  String get achievementRarityCommon => 'COMÚN';
+
+  @override
+  String get achievementRarityUncommon => 'POCO COMÚN';
+
+  @override
+  String get achievementRarityRare => 'RARO';
+
+  @override
+  String get achievementRarityEpic => 'ÉPICO';
+
+  @override
+  String get achievementRarityLegendary => 'LEGENDARIO';
+
+  @override
+  String achievementRewardLabel(int amount, String type) {
+    return '+$amount $type';
+  }
+
+  @override
   String get badges => 'Insignias';
 
   @override

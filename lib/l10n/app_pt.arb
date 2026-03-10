@@ -423,6 +423,20 @@
   "backToLobby": "Voltar ao Lobby",
   "badgeLocked": "Bloqueado",
   "badgeUnlocked": "Desbloqueado",
+  "achievementUnlockedTitle": "CONQUISTA DESBLOQUEADA!",
+  "achievementUnlockedAwesome": "Incrível!",
+  "achievementRarityCommon": "COMUM",
+  "achievementRarityUncommon": "INCOMUM",
+  "achievementRarityRare": "RARO",
+  "achievementRarityEpic": "ÉPICO",
+  "achievementRarityLegendary": "LENDÁRIO",
+  "achievementRewardLabel": "+{amount} {type}",
+  "@achievementRewardLabel": {
+    "placeholders": {
+      "amount": {"type": "int"},
+      "type": {"type": "String"}
+    }
+  },
   "badges": "Emblemas",
   "basic": "Básico",
   "basicInformation": "Informações Básicas",

@@ -2477,6 +2477,54 @@ abstract class AppLocalizations {
   /// **'Unlocked'**
   String get badgeUnlocked;
 
+  /// No description provided for @achievementUnlockedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'ACHIEVEMENT UNLOCKED!'**
+  String get achievementUnlockedTitle;
+
+  /// No description provided for @achievementUnlockedAwesome.
+  ///
+  /// In en, this message translates to:
+  /// **'Awesome!'**
+  String get achievementUnlockedAwesome;
+
+  /// No description provided for @achievementRarityCommon.
+  ///
+  /// In en, this message translates to:
+  /// **'COMMON'**
+  String get achievementRarityCommon;
+
+  /// No description provided for @achievementRarityUncommon.
+  ///
+  /// In en, this message translates to:
+  /// **'UNCOMMON'**
+  String get achievementRarityUncommon;
+
+  /// No description provided for @achievementRarityRare.
+  ///
+  /// In en, this message translates to:
+  /// **'RARE'**
+  String get achievementRarityRare;
+
+  /// No description provided for @achievementRarityEpic.
+  ///
+  /// In en, this message translates to:
+  /// **'EPIC'**
+  String get achievementRarityEpic;
+
+  /// No description provided for @achievementRarityLegendary.
+  ///
+  /// In en, this message translates to:
+  /// **'LEGENDARY'**
+  String get achievementRarityLegendary;
+
+  /// No description provided for @achievementRewardLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'+{amount} {type}'**
+  String achievementRewardLabel(int amount, String type);
+
   /// No description provided for @badges.
   ///
   /// In en, this message translates to:

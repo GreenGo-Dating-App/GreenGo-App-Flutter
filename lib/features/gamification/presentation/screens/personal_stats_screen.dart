@@ -104,7 +104,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       if (userLevelDoc.exists) {
         final lvlData = userLevelDoc.data()!;
         totalXp = (lvlData['totalXP'] as num?)?.toInt() ?? 0;
-        level = (lvlData['level'] as num?)?.toInt() ?? _calculateLevel(totalXp);
+        level = _calculateLevel(totalXp);
       }
 
       // Read cached stats from user_stats (kept fresh by daily Cloud Function)
@@ -178,7 +178,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     if (userLevelDoc.exists) {
       final data = userLevelDoc.data()!;
       totalXp = (data['totalXP'] as num?)?.toInt() ?? 0;
-      level = (data['level'] as num?)?.toInt() ?? 1;
+      level = _calculateLevel(totalXp);
     }
 
     // Fallback: check language_progress if user_levels has no data

@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import '../../domain/entities/user_level.dart';
+import '../../../../generated/app_localizations.dart';
 
 class LevelUpAnimation extends StatefulWidget {
   final int newLevel;
@@ -155,9 +156,9 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       // Level Up Text
-                      const Text(
-                        'LEVEL UP!',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)?.levelUp ?? 'LEVEL UP!',
+                        style: const TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -224,17 +225,17 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: const Row(
+                          child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text(
+                              const Text(
                                 '👑',
                                 style: TextStyle(fontSize: 20),
                               ),
-                              SizedBox(width: 8),
+                              const SizedBox(width: 8),
                               Text(
-                                'VIP STATUS UNLOCKED!',
-                                style: TextStyle(
+                                AppLocalizations.of(context)?.levelUpVIPUnlocked ?? 'VIP STATUS UNLOCKED!',
+                                style: const TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: Color(0xFFFFD700),
@@ -248,9 +249,9 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
 
                       // Rewards (Point 190)
                       if (widget.rewards.isNotEmpty) ...[
-                        const Text(
-                          'REWARDS',
-                          style: TextStyle(
+                        Text(
+                          AppLocalizations.of(context)?.levelUpRewards ?? 'REWARDS',
+                          style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -308,9 +309,9 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          child: const Text(
-                            'Continue',
-                            style: TextStyle(
+                          child: Text(
+                            AppLocalizations.of(context)?.levelUpContinue ?? 'Continue',
+                            style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
