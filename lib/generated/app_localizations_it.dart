@@ -6903,6 +6903,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get personalStatsLevel => 'Livello';
 
   @override
+  String get personalStatsLanguage => 'Lingua';
+
+  @override
+  String get personalStatsTotal => 'Totale';
+
+  @override
   String get personalStatsNextLevel => 'Prossimo livello';
 
   @override

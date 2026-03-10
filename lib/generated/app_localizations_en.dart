@@ -6816,6 +6816,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get personalStatsLevel => 'Level';
 
   @override
+  String get personalStatsLanguage => 'Language';
+
+  @override
+  String get personalStatsTotal => 'Total';
+
+  @override
   String get personalStatsNextLevel => 'Next Level';
 
   @override

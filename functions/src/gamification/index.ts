@@ -5,7 +5,7 @@
 
 import { onCall } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
-import { verifyAuth, handleError, logError } from '../shared/utils';
+import { verifyAuth, handleError, logError, logInfo } from '../shared/utils';
 import { AchievementType, ChallengeType } from '../shared/types';
 import {
   handleGrantXP,
@@ -341,7 +341,7 @@ export const computeDailyUserStats = onSchedule(
   async () => {
     try {
       const count = await computeAllUserStats();
-      logError(`Daily stats computed for ${count} users`, null);
+      logInfo(`Daily stats computed for ${count} users`);
     } catch (error) {
       logError('Error computing daily user stats:', error);
       throw error;

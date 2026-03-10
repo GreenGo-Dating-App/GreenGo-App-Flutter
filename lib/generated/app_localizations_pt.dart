@@ -6884,6 +6884,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get personalStatsLevel => 'Nível';
 
   @override
+  String get personalStatsLanguage => 'Idioma';
+
+  @override
+  String get personalStatsTotal => 'Total';
+
+  @override
   String get personalStatsNextLevel => 'Próximo nível';
 
   @override
@@ -16476,6 +16482,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get personalStatsLevel => 'Nível';
+
+  @override
+  String get personalStatsLanguage => 'Idioma';
+
+  @override
+  String get personalStatsTotal => 'Total';
 
   @override
   String get personalStatsNextLevel => 'Próximo nível';
