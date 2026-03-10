@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/services/vocabulary_tracking_service.dart';
 import '../../../../generated/app_localizations.dart';
 
 class PersonalStatsScreen extends StatefulWidget {
@@ -239,12 +238,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       messagesSent = (profileDoc.data()?['messagesSent'] as num?)?.toInt() ?? 0;
     }
 
-    // Process vocabulary from recent messages (extract words from user's sent messages)
-    try {
-      await _processVocabularyFromMessages(firestore, userId);
-    } catch (e) {
-      debugPrint('Vocabulary processing failed: $e');
-    }
+    // Vocabulary is now processed server-side by the onMessageCreatedVocabulary
+    // Cloud Function trigger. We just read the cached data here.
 
     // Vocabulary words per language (all tracked + learned with useCount >= 3)
     final Map<String, int> wordsPerLang = {};
@@ -319,77 +314,6 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       level++;
     }
     return level;
-  }
-
-  /// Process vocabulary from user's sent messages across all conversations.
-  /// Called only on manual refresh or scheduled stats computation — not on every message send.
-  static Future<void> _processVocabularyFromMessages(
-    FirebaseFirestore firestore,
-    String userId,
-  ) async {
-    // Find the last time vocabulary was processed to avoid re-scanning old messages
-    final vocabMeta = await firestore
-        .collection('user_vocabulary')
-        .doc(userId)
-        .get();
-    DateTime? lastProcessed;
-    if (vocabMeta.exists) {
-      final ts = vocabMeta.data()?['lastProcessedAt'] as Timestamp?;
-      lastProcessed = ts?.toDate();
-    }
-
-    // Get all conversations the user is part of
-    final convos1 = await firestore
-        .collection('conversations')
-        .where('userId1', isEqualTo: userId)
-        .get();
-    final convos2 = await firestore
-        .collection('conversations')
-        .where('userId2', isEqualTo: userId)
-        .get();
-    final allConvos = [...convos1.docs, ...convos2.docs];
-
-    for (final convo in allConvos) {
-      try {
-        // Determine the language for this conversation
-        final convoData = convo.data();
-        final lang = convoData['language'] as String? ?? 'en';
-
-        // Query only messages sent by this user, after last processed time
-        var query = firestore
-            .collection('conversations')
-            .doc(convo.id)
-            .collection('messages')
-            .where('senderId', isEqualTo: userId)
-            .orderBy('timestamp', descending: false);
-
-        if (lastProcessed != null) {
-          query = query.where('timestamp',
-              isGreaterThan: Timestamp.fromDate(lastProcessed));
-        }
-
-        final msgs = await query.limit(500).get();
-
-        for (final msgDoc in msgs.docs) {
-          final text = msgDoc.data()['content'] as String? ?? '';
-          if (text.length >= 2) {
-            await VocabularyTrackingService.trackMessage(
-              userId: userId,
-              messageText: text,
-              language: lang,
-            );
-          }
-        }
-      } catch (e) {
-        // Skip conversations with index issues
-        debugPrint('Vocabulary scan for convo ${convo.id} failed: $e');
-      }
-    }
-
-    // Update last processed timestamp
-    await firestore.collection('user_vocabulary').doc(userId).set({
-      'lastProcessedAt': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true));
   }
 
   static String _flagForLanguage(String code) {

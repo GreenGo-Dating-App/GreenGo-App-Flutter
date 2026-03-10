@@ -18,6 +18,7 @@ import {
   handleUpdateLeaderboardRankings,
 } from './handlers';
 import { computeUserStats, computeAllUserStats } from './userStatsCompute';
+export { onMessageCreatedVocabulary } from './vocabularyProcessor';
 
 // XP Configuration
 const XP_ACTIONS = {
