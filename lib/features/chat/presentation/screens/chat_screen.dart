@@ -20,7 +20,6 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../../../../core/utils/safe_navigation.dart';
-import '../../../../core/services/vocabulary_tracking_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -500,13 +499,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     _messageController.clear();
 
-    // Track vocabulary usage for gamification (fire-and-forget)
-    // Uses the chat's "Your Language" setting — the language the user is typing in
-    VocabularyTrackingService.trackMessage(
-      userId: widget.currentUserId,
-      messageText: content,
-      language: _targetLanguage,
-    );
+    // Vocabulary tracking is handled async during scheduled stats refresh (3AM UTC)
+    // or when user manually refreshes on the Personal Statistics page.
 
     // Scroll to bottom after sending (post-frame callback for reliable timing)
     WidgetsBinding.instance.addPostFrameCallback((_) {
