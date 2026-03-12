@@ -278,12 +278,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // If user has an active trial membership, show one-time welcome popup
     if (profile.isBaseMembershipActive && profile.baseMembershipEndDate != null) {
-      _showTrialWelcomeDialog(profile.baseMembershipEndDate!);
+      // Delay to ensure the widget tree is fully built before showing dialog
+      Future.delayed(const Duration(milliseconds: 800), () {
+        if (mounted) _showTrialWelcomeDialog(profile.baseMembershipEndDate!);
+      });
       return;
     }
 
     // No active membership — show purchase dialog
-    Future.delayed(const Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 800), () {
       if (mounted) {
         BaseMembershipDialog.show(context: context, userId: widget.userId);
       }
