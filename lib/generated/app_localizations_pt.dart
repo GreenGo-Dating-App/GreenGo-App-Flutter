@@ -6126,7 +6126,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get membershipExtendTitle => 'Prolongar a Sua Subscrição';
+  String get membershipExtendTitle => 'Prolongar a tua subscrição';
 
   @override
   String get membershipFeatureComparison => 'Comparação de Funcionalidades';
@@ -6197,6 +6197,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get membershipRequiredDescription =>
       'Precisas de ser membro do GreenGo para realizar esta ação.';
+
+  @override
+  String get membershipExtendDescription =>
+      'A tua subscrição base está ativa. Compra mais um ano para prolongar a data de expiração.';
 
   @override
   String get membershipRewinds => 'Rewinds';
@@ -9612,7 +9616,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get yearlyMembership => 'Subscrição anual';
+  String get yearlyMembership => 'Subscrição anual — 4,99 \$/ano';
 
   @override
   String yearsLabel(int age) {
@@ -15795,7 +15799,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get membershipExtendTitle => 'Estender Sua Assinatura';
+  String get membershipExtendTitle => 'Estenda sua assinatura';
 
   @override
   String get membershipFeatureComparison => 'Comparação de Funcionalidades';
@@ -15866,6 +15870,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get membershipRequiredDescription =>
       'Você precisa ser membro do GreenGo para realizar esta ação.';
+
+  @override
+  String get membershipExtendDescription =>
+      'Sua assinatura base está ativa. Compre mais um ano para estender a data de vencimento.';
 
   @override
   String get membershipRewinds => 'Rewinds';
@@ -19279,7 +19287,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get yearlyMembership => 'Assinatura anual';
+  String get yearlyMembership => 'Assinatura anual — R\$4,99/ano';
 
   @override
   String yearsLabel(int age) {

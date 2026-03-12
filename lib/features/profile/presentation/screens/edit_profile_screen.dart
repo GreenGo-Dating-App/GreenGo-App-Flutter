@@ -925,9 +925,15 @@ class EditProfileScreen extends StatelessWidget {
     final endDate = profile.baseMembershipEndDate;
 
     if (profile.hasBaseMembership && endDate != null) {
-      // Show membership card with status
+      // Show membership card with status — tappable to extend
       final isExpired = endDate.isBefore(DateTime.now());
-      return Container(
+      return GestureDetector(
+        onTap: () => BaseMembershipDialog.show(
+          context: context,
+          userId: profile.userId,
+          isExtending: isActive,
+        ),
+        child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: AppColors.backgroundCard,
@@ -996,6 +1002,7 @@ class EditProfileScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
       );
     }
 

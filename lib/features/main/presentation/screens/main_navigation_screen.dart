@@ -290,6 +290,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     });
   }
 
+  /// Open membership dialog to extend (called from profile/shop)
+  void showExtendMembershipDialog() {
+    BaseMembershipDialog.show(
+      context: context,
+      userId: widget.userId,
+      isExtending: true,
+    );
+  }
+
   /// Show a one-time trial welcome popup after first login
   Future<void> _showTrialWelcomeDialog(DateTime expirationDate) async {
     final prefs = await SharedPreferences.getInstance();

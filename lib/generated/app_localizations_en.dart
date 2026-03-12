@@ -6139,6 +6139,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'You need to be a member of GreenGo to perform this action.';
 
   @override
+  String get membershipExtendDescription =>
+      'Your base membership is active. Purchase another year to extend your expiration date.';
+
+  @override
   String get membershipRewinds => 'Rewinds';
 
   @override
@@ -9521,7 +9525,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get yearlyMembership => 'Yearly Membership';
+  String get yearlyMembership => 'Yearly Membership — \$4.99/year';
 
   @override
   String yearsLabel(int age) {
