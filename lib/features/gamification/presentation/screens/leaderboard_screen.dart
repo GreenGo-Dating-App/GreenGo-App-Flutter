@@ -599,46 +599,34 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           ),
         ),
         const SizedBox(height: 8),
-        // Name
-        Text(
-          entry.username.isNotEmpty
-              ? entry.username
-              : 'User ${entry.userId.substring(0, 6)}',
-          style: TextStyle(
-            fontSize: rank == 1 ? 14 : 12,
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
-        // Country for regional
-        if (entry.region != null && entry.region!.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.only(top: 2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  _countryCodeToFlag(entry.region!),
-                  style: const TextStyle(fontSize: 12),
+        // Name + flag
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (entry.region != null && entry.region!.isNotEmpty) ...[
+              Text(
+                _countryCodeToFlag(entry.region!),
+                style: const TextStyle(fontSize: 12),
+              ),
+              const SizedBox(width: 4),
+            ],
+            Flexible(
+              child: Text(
+                entry.username.isNotEmpty
+                    ? entry.username
+                    : 'User ${entry.userId.substring(0, 6)}',
+                style: TextStyle(
+                  fontSize: rank == 1 ? 14 : 12,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
                 ),
-                const SizedBox(width: 3),
-                Flexible(
-                  child: Text(
-                    _countryCodeToName(entry.region!),
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: Colors.white.withOpacity(0.6),
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-              ],
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
-          ),
+          ],
+        ),
         const SizedBox(height: 2),
         Text(
           '${entry.totalXP} XP',
@@ -830,6 +818,14 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               children: [
                 Row(
                   children: [
+                    if (entry.region != null &&
+                        entry.region!.isNotEmpty) ...[
+                      Text(
+                        _countryCodeToFlag(entry.region!),
+                        style: const TextStyle(fontSize: 14),
+                      ),
+                      const SizedBox(width: 6),
+                    ],
                     Flexible(
                       child: Text(
                         entry.username.isNotEmpty
@@ -852,37 +848,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   ],
                 ),
                 const SizedBox(height: 2),
-                Row(
-                  children: [
-                    Text(
-                      AppLocalizations.of(context)!
-                          .gamificationLevel(entry.level),
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.white.withOpacity(0.5),
-                      ),
-                    ),
-                    if (entry.region != null &&
-                        entry.region!.isNotEmpty) ...[
-                      const SizedBox(width: 8),
-                      Text(
-                        _countryCodeToFlag(entry.region!),
-                        style: const TextStyle(fontSize: 12),
-                      ),
-                      const SizedBox(width: 3),
-                      Flexible(
-                        child: Text(
-                          _countryCodeToName(entry.region!),
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: Colors.white.withOpacity(0.4),
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                    ],
-                  ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .gamificationLevel(entry.level),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white.withOpacity(0.5),
+                  ),
                 ),
               ],
             ),
