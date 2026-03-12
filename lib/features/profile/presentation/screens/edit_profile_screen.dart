@@ -928,6 +928,7 @@ class EditProfileScreen extends StatelessWidget {
       // Show membership card with status — tappable to extend
       final isExpired = endDate.isBefore(DateTime.now());
       return GestureDetector(
+        behavior: HitTestBehavior.opaque,
         onTap: () => BaseMembershipDialog.show(
           context: context,
           userId: profile.userId,
