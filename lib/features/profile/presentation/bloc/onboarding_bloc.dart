@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/entities/profile.dart';
@@ -335,8 +337,46 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
 
       result.fold(
         (failure) => emit(OnboardingError(message: failure.message)),
-        (createdProfile) => emit(OnboardingComplete(profile: createdProfile)),
+        (createdProfile) {
+          // Grant 100 welcome coins on registration (fire-and-forget)
+          _grantWelcomeCoins(currentState.userId);
+          emit(OnboardingComplete(profile: createdProfile));
+        },
       );
+    }
+  }
+
+  /// Grant 100 welcome coins to a newly registered user
+  Future<void> _grantWelcomeCoins(String userId) async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+      final now = DateTime.now();
+      final balanceRef = firestore.collection('coinBalances').doc(userId);
+      final batchEntry = {
+        'batchId': 'welcome_${now.millisecondsSinceEpoch}',
+        'initialCoins': 100,
+        'remainingCoins': 100,
+        'source': 'reward',
+        'acquiredDate': Timestamp.fromDate(now),
+        'expirationDate': null,
+      };
+
+      final balanceDoc = await balanceRef.get();
+      if (!balanceDoc.exists) {
+        await balanceRef.set({
+          'userId': userId,
+          'totalCoins': 100,
+          'earnedCoins': 100,
+          'purchasedCoins': 0,
+          'giftedCoins': 0,
+          'spentCoins': 0,
+          'lastUpdated': Timestamp.fromDate(now),
+          'coinBatches': [batchEntry],
+        });
+      }
+      // If balance already exists, daily coins will handle it
+    } catch (e) {
+      debugPrint('Welcome coins error: $e');
     }
   }
 }
