@@ -3108,6 +3108,16 @@
   "tourShopDescription": "Ottieni monete e funzionalità premium per migliorare la tua esperienza.",
   "tourShopTitle": "Shop e Monete",
   "tourSkip": "Salta",
+  "trialWelcomeTitle": "Benvenuto su GreenGo!",
+  "trialWelcomeMessage": "Stai utilizzando la versione di prova. La tua iscrizione base gratuita è attiva fino al {expirationDate}. Buona esplorazione su GreenGo!",
+  "@trialWelcomeMessage": {
+    "placeholders": {
+      "expirationDate": {
+        "type": "String"
+      }
+    }
+  },
+  "trialWelcomeButton": "Inizia",
   "translateWord": "Traduci questa parola",
   "translationDownloadExplanation": "Per attivare la traduzione automatica dei messaggi, dobbiamo scaricare i dati linguistici per l'uso offline.",
   "travelCategory": "Viaggio",

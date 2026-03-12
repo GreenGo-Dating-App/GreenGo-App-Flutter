@@ -4268,6 +4268,16 @@
   "tourShopDescription": "Get coins and premium features to boost your dating experience.",
   "tourShopTitle": "Shop & Coins",
   "tourSkip": "Skip",
+  "trialWelcomeTitle": "Welcome to GreenGo!",
+  "trialWelcomeMessage": "You are currently using the trial version. Your free base membership is active until {expirationDate}. Enjoy exploring GreenGo!",
+  "@trialWelcomeMessage": {
+    "placeholders": {
+      "expirationDate": {
+        "type": "String"
+      }
+    }
+  },
+  "trialWelcomeButton": "Get Started",
   "translateWord": "Translate this word",
   "translationDownloadExplanation": "To enable automatic message translation, we need to download language data for offline use.",
   "travelCategory": "Travel",

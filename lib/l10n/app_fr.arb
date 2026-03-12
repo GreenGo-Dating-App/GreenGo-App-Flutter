@@ -3108,6 +3108,16 @@
   "tourShopDescription": "Obtenez des pièces et des fonctionnalités premium pour améliorer votre expérience.",
   "tourShopTitle": "Boutique et Pièces",
   "tourSkip": "Passer",
+  "trialWelcomeTitle": "Bienvenue sur GreenGo !",
+  "trialWelcomeMessage": "Vous utilisez la version d'essai. Votre abonnement de base gratuit est actif jusqu'au {expirationDate}. Profitez de GreenGo !",
+  "@trialWelcomeMessage": {
+    "placeholders": {
+      "expirationDate": {
+        "type": "String"
+      }
+    }
+  },
+  "trialWelcomeButton": "Commencer",
   "translateWord": "Traduire ce mot",
   "translationDownloadExplanation": "Pour activer la traduction automatique des messages, nous devons télécharger les données linguistiques pour une utilisation hors ligne.",
   "travelCategory": "Voyage",

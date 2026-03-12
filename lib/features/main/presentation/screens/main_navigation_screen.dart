@@ -271,17 +271,102 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   bool _membershipCheckDone = false;
 
-  /// Check base membership on app start — show purchase dialog if not active
+  /// Check base membership on app start — show trial welcome or purchase dialog
   void _checkBaseMembership(Profile profile) {
     if (_membershipCheckDone) return;
     _membershipCheckDone = true;
-    if (profile.isBaseMembershipActive) return;
-    // Show membership dialog after a short delay to let the UI settle
+
+    // If user has an active trial membership, show one-time welcome popup
+    if (profile.isBaseMembershipActive && profile.baseMembershipEndDate != null) {
+      _showTrialWelcomeDialog(profile.baseMembershipEndDate!);
+      return;
+    }
+
+    // No active membership — show purchase dialog
     Future.delayed(const Duration(milliseconds: 500), () {
       if (mounted) {
         BaseMembershipDialog.show(context: context, userId: widget.userId);
       }
     });
+  }
+
+  /// Show a one-time trial welcome popup after first login
+  Future<void> _showTrialWelcomeDialog(DateTime expirationDate) async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'trial_welcome_shown_${widget.userId}';
+    if (prefs.getBool(key) == true) return;
+
+    // Mark as shown immediately to prevent double-showing
+    await prefs.setBool(key, true);
+
+    if (!mounted) return;
+
+    final l10n = AppLocalizations.of(context);
+    final formattedDate = '${expirationDate.day.toString().padLeft(2, '0')}/'
+        '${expirationDate.month.toString().padLeft(2, '0')}/'
+        '${expirationDate.year}';
+
+    await showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => Dialog(
+        backgroundColor: AppColors.charcoal,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+          side: const BorderSide(color: AppColors.richGold, width: 1.5),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.card_giftcard,
+                  color: AppColors.richGold, size: 48),
+              const SizedBox(height: 16),
+              Text(
+                l10n?.trialWelcomeTitle ?? 'Welcome to GreenGo!',
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                l10n?.trialWelcomeMessage(formattedDate) ??
+                    'You are currently using the trial version. Your free base membership is active until $formattedDate. Enjoy exploring GreenGo!',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 15,
+                  height: 1.5,
+                ),
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: Text(
+                    l10n?.trialWelcomeButton ?? 'Get Started',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   /// Grant 100 free coins daily (once per calendar day)

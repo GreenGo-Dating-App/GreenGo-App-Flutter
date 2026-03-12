@@ -8913,6 +8913,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tourSkip => 'Saltar';
 
   @override
+  String get trialWelcomeTitle => 'Bem-vindo ao GreenGo!';
+
+  @override
+  String trialWelcomeMessage(String expirationDate) {
+    return 'Estás a utilizar a versão de teste. A tua subscrição base gratuita está ativa até $expirationDate. Diverte-te a explorar o GreenGo!';
+  }
+
+  @override
+  String get trialWelcomeButton => 'Começar';
+
+  @override
   String get translateWord => 'Traduz esta palavra';
 
   @override
@@ -18566,6 +18577,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tourSkip => 'Pular';
+
+  @override
+  String get trialWelcomeTitle => 'Bem-vindo ao GreenGo!';
+
+  @override
+  String trialWelcomeMessage(String expirationDate) {
+    return 'Você está usando a versão de teste. Sua assinatura base gratuita está ativa até $expirationDate. Aproveite para explorar o GreenGo!';
+  }
+
+  @override
+  String get trialWelcomeButton => 'Começar';
 
   @override
   String get translateWord => 'Traduza esta palavra';
