@@ -109,14 +109,20 @@ class UserAccessData {
   /// Check if user can access the app
   /// User can access if:
   /// 1. They are an admin or test user (bypass all restrictions), OR
-  /// 2. They are approved by admin (verified profile = full access)
+  /// 2. They are approved by admin (verified profile = full access), OR
+  /// 3. They are pending approval (allowed during trial period)
+  /// Only rejected users are blocked.
   bool get canAccessApp {
     // Admin and test users bypass ALL restrictions
     if (isAdmin || isTestUser) {
       return true;
     }
-    // Approved (verified) users can access regardless of countdown
-    return approvalStatus == ApprovalStatus.approved;
+    // Rejected users cannot access — must resubmit verification
+    if (approvalStatus == ApprovalStatus.rejected) {
+      return false;
+    }
+    // Pending and approved users can access the app
+    return true;
   }
 
   /// Check if countdown is still active (access date not reached yet)
@@ -131,16 +137,15 @@ class UserAccessData {
   }
 
   /// Check if user should see pending approval screen
-  /// Only show when:
-  /// 1. User is NOT an admin or test user, AND
-  /// 2. Countdown is over (access date has passed), AND
-  /// 3. User is still pending approval
+  /// Only show when user has been rejected by admin.
+  /// Pending users are allowed to use the app (trial period).
   bool get shouldShowPendingApproval {
     // Admin and test users never see pending approval screen
     if (isAdmin || isTestUser) {
       return false;
     }
-    return !isCountdownActive && approvalStatus == ApprovalStatus.pending;
+    // Only rejected users see the review/resubmission screen
+    return approvalStatus == ApprovalStatus.rejected;
   }
 
   /// Get time remaining until access

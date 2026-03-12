@@ -56,17 +56,11 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
   @override
   Future<void> approveVerification(String userId, String adminId) async {
     try {
-      final now = DateTime.now();
-      final trialEndDate = now.add(const Duration(days: 7));
-
       await firestore.collection('profiles').doc(userId).update({
         'verificationStatus': VerificationStatus.approved.name,
         'verificationReviewedAt': FieldValue.serverTimestamp(),
         'verificationReviewedBy': adminId,
         'verificationRejectionReason': null,
-        // Grant 7-day free base membership on approval
-        'hasBaseMembership': true,
-        'baseMembershipEndDate': Timestamp.fromDate(trialEndDate),
       });
 
       // Also update users collection so verified status is visible app-wide
@@ -137,8 +131,6 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
   @override
   Future<void> bulkApproveVerifications(List<String> userIds, String adminId) async {
     try {
-      final now = DateTime.now();
-      final trialEndDate = now.add(const Duration(days: 7));
       final batch = firestore.batch();
       for (final userId in userIds) {
         final profileRef = firestore.collection('profiles').doc(userId);
@@ -147,9 +139,6 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
           'verificationReviewedAt': FieldValue.serverTimestamp(),
           'verificationReviewedBy': adminId,
           'verificationRejectionReason': null,
-          // Grant 7-day free base membership on approval
-          'hasBaseMembership': true,
-          'baseMembershipEndDate': Timestamp.fromDate(trialEndDate),
         });
         final userRef = firestore.collection('users').doc(userId);
         batch.update(userRef, {
