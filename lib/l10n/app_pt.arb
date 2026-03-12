@@ -3108,6 +3108,16 @@
   "tourShopDescription": "Obtém moedas e funcionalidades premium para melhorar a tua experiência.",
   "tourShopTitle": "Loja e Moedas",
   "tourSkip": "Saltar",
+  "trialWelcomeTitle": "Bem-vindo ao GreenGo!",
+  "trialWelcomeMessage": "Estás a utilizar a versão de teste. A tua subscrição base gratuita está ativa até {expirationDate}. Diverte-te a explorar o GreenGo!",
+  "@trialWelcomeMessage": {
+    "placeholders": {
+      "expirationDate": {
+        "type": "String"
+      }
+    }
+  },
+  "trialWelcomeButton": "Começar",
   "translateWord": "Traduz esta palavra",
   "translationDownloadExplanation": "Para ativar a tradução automática de mensagens, precisamos de transferir dados linguísticos para uso offline.",
   "travelCategory": "Viagem",

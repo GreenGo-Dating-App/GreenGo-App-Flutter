@@ -15834,6 +15834,24 @@ abstract class AppLocalizations {
   /// **'Skip'**
   String get tourSkip;
 
+  /// No description provided for @trialWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGo!'**
+  String get trialWelcomeTitle;
+
+  /// No description provided for @trialWelcomeMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You are currently using the trial version. Your free base membership is active until {expirationDate}. Enjoy exploring GreenGo!'**
+  String trialWelcomeMessage(String expirationDate);
+
+  /// No description provided for @trialWelcomeButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get trialWelcomeButton;
+
   /// No description provided for @translateWord.
   ///
   /// In en, this message translates to:

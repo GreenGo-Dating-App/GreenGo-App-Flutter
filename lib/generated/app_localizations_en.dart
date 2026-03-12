@@ -8825,6 +8825,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourSkip => 'Skip';
 
   @override
+  String get trialWelcomeTitle => 'Welcome to GreenGo!';
+
+  @override
+  String trialWelcomeMessage(String expirationDate) {
+    return 'You are currently using the trial version. Your free base membership is active until $expirationDate. Enjoy exploring GreenGo!';
+  }
+
+  @override
+  String get trialWelcomeButton => 'Get Started';
+
+  @override
   String get translateWord => 'Translate this word';
 
   @override
