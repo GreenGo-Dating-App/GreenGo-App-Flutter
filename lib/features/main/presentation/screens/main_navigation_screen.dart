@@ -303,13 +303,25 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   /// Show a one-time trial welcome popup after first login
+  /// Uses Firestore `users/{userId}.trialWelcomeShown` to persist across devices/reinstalls
   Future<void> _showTrialWelcomeDialog(DateTime expirationDate) async {
-    final prefs = await SharedPreferences.getInstance();
-    final key = 'trial_welcome_shown_${widget.userId}';
-    if (prefs.getBool(key) == true) return;
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .get();
+      if (doc.data()?['trialWelcomeShown'] == true) return;
 
-    // Mark as shown immediately to prevent double-showing
-    await prefs.setBool(key, true);
+      // Mark as shown immediately in Firestore
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .update({'trialWelcomeShown': true});
+    } catch (e) {
+      // If Firestore fails, skip the popup rather than crash
+      debugPrint('Trial welcome check error: $e');
+      return;
+    }
 
     if (!mounted) return;
 

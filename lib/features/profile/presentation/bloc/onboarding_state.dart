@@ -10,8 +10,7 @@ enum OnboardingStep {
   bio, // Step 4: Bio
   interests, // Step 5: Interests
   locationLanguage, // Step 6: Location & Languages
-  learningLanguages, // Step 7: What languages do you want to learn?
-  travelPreference, // Step 8: How do you want to use GreenGo?
+  travelPreference, // Step 7: How do you want to use GreenGo?
   voice, // Step 9: Voice recording
   personality, // Step 10: Personality quiz
   socialLinks, // Step 11: Social media links
@@ -129,8 +128,6 @@ class OnboardingInProgress extends OnboardingState {
         return interests.length >= 3;
       case OnboardingStep.locationLanguage:
         return location != null && languages.isNotEmpty;
-      case OnboardingStep.learningLanguages:
-        return true; // Optional — user can skip
       case OnboardingStep.travelPreference:
         return true; // Optional — user can skip
       case OnboardingStep.voice:
