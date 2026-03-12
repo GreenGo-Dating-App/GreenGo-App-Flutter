@@ -559,8 +559,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     };
     final heights = {1: 140.0, 2: 110.0, 3: 90.0};
     final medals = {1: '🥇', 2: '🥈', 3: '🥉'};
-    final showCountry = _currentType == LeaderboardType.regional;
-
     return Column(
       children: [
         // Avatar with glow
@@ -615,7 +613,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           overflow: TextOverflow.ellipsis,
         ),
         // Country for regional
-        if (showCountry && entry.region != null && entry.region!.isNotEmpty)
+        if (entry.region != null && entry.region!.isNotEmpty)
           Padding(
             padding: const EdgeInsets.only(top: 2),
             child: Row(
@@ -754,8 +752,6 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
   Widget _buildLeaderboardEntry(entry, int rank, bool isCurrentUser,
       {bool isLast = false}) {
-    final showCountry = _currentType == LeaderboardType.regional;
-
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
@@ -866,8 +862,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         color: Colors.white.withOpacity(0.5),
                       ),
                     ),
-                    if (showCountry &&
-                        entry.region != null &&
+                    if (entry.region != null &&
                         entry.region!.isNotEmpty) ...[
                       const SizedBox(width: 8),
                       Text(
