@@ -23,18 +23,21 @@ class BaseMembershipDialog extends StatefulWidget {
   final String userId;
   final CoinBloc? coinBloc;
   final ProfileBloc? profileBloc;
+  final bool isExtending;
 
   const BaseMembershipDialog({
     super.key,
     required this.userId,
     this.coinBloc,
     this.profileBloc,
+    this.isExtending = false,
   });
 
   /// Convenience method – returns `true` when the user successfully purchases.
   static Future<bool> show({
     required BuildContext context,
     required String userId,
+    bool isExtending = false,
   }) async {
     // Capture blocs from the parent context before opening the dialog,
     // since the dialog's own context won't have access to them.
@@ -50,6 +53,7 @@ class BaseMembershipDialog extends StatefulWidget {
         userId: userId,
         coinBloc: coinBloc,
         profileBloc: profileBloc,
+        isExtending: isExtending,
       ),
     );
     return result ?? false;
@@ -370,7 +374,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Lock icon with gold gradient
+              // Icon with gold gradient
               Container(
                 width: 72,
                 height: 72,
@@ -383,15 +387,17 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
                     ],
                   ),
                 ),
-                child: const Icon(
-                  Icons.lock_outline,
+                child: Icon(
+                  widget.isExtending ? Icons.autorenew : Icons.lock_outline,
                   color: AppColors.richGold,
                   size: 36,
                 ),
               ),
               const SizedBox(height: 16),
               Text(
-                AppLocalizations.of(context)!.membershipRequired,
+                widget.isExtending
+                    ? AppLocalizations.of(context)!.membershipExtendTitle
+                    : AppLocalizations.of(context)!.membershipRequired,
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 20,
@@ -400,7 +406,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
               ),
               const SizedBox(height: 8),
               Text(
-                AppLocalizations.of(context)!.membershipRequiredDescription,
+                widget.isExtending
+                    ? AppLocalizations.of(context)!.membershipExtendDescription
+                    : AppLocalizations.of(context)!.membershipRequiredDescription,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   color: AppColors.textSecondary,

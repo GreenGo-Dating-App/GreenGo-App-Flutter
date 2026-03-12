@@ -11088,6 +11088,12 @@ abstract class AppLocalizations {
   /// **'You need to be a member of GreenGo to perform this action.'**
   String get membershipRequiredDescription;
 
+  /// No description provided for @membershipExtendDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your base membership is active. Purchase another year to extend your expiration date.'**
+  String get membershipExtendDescription;
+
   /// No description provided for @membershipRewinds.
   ///
   /// In en, this message translates to:
@@ -17037,7 +17043,7 @@ abstract class AppLocalizations {
   /// No description provided for @yearlyMembership.
   ///
   /// In en, this message translates to:
-  /// **'Yearly Membership'**
+  /// **'Yearly Membership — \$4.99/year'**
   String get yearlyMembership;
 
   /// No description provided for @yearsLabel.

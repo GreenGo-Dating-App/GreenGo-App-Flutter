@@ -3046,6 +3046,8 @@
   "membershipReadReceipts": "Read Receipts",
   "membershipRequired": "Membership Required",
   "membershipRequiredDescription": "You need to be a member of GreenGo to perform this action.",
+  "membershipExtendTitle": "Extend Your Membership",
+  "membershipExtendDescription": "Your base membership is active. Purchase another year to extend your expiration date.",
   "membershipRewinds": "Rewinds",
   "membershipSavePercent": "SAVE {percent}%",
   "membershipSeeWhoLikes": "See Who Connects",
@@ -4628,7 +4630,7 @@
       }
     }
   },
-  "yearlyMembership": "Yearly Membership",
+  "yearlyMembership": "Yearly Membership — $4.99/year",
   "yearsLabel": "{age} years",
   "@yearsLabel": {
     "placeholders": {

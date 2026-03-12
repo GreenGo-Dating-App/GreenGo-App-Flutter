@@ -6146,7 +6146,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get membershipExtendTitle => 'Estendi il tuo abbonamento';
+  String get membershipExtendTitle => 'Estendi la tua iscrizione';
 
   @override
   String get membershipFeatureComparison => 'Confronto funzionalità';
@@ -6218,6 +6218,10 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get membershipRequiredDescription =>
       'Devi essere un membro di GreenGo per eseguire questa azione.';
+
+  @override
+  String get membershipExtendDescription =>
+      'La tua iscrizione base è attiva. Acquista un altro anno per estendere la data di scadenza.';
 
   @override
   String get membershipRewinds => 'Ripristini';
@@ -9634,7 +9638,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get yearlyMembership => 'Iscrizione annuale';
+  String get yearlyMembership => 'Iscrizione annuale — 4,99 \$/anno';
 
   @override
   String yearsLabel(int age) {
