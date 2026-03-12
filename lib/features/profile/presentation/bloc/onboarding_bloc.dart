@@ -300,6 +300,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       final currentState = state as OnboardingInProgress;
 
       // Create profile from onboarding data
+      final now = DateTime.now();
       final profile = Profile(
         userId: currentState.userId,
         displayName: currentState.displayName!,
@@ -313,18 +314,21 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         voiceRecordingUrl: currentState.voiceUrl,
         personalityTraits: currentState.personalityTraits,
         socialLinks: currentState.socialLinks,
-        createdAt: DateTime.now(),
-        updatedAt: DateTime.now(),
+        createdAt: now,
+        updatedAt: now,
         isComplete: true,
         // Verification fields
         verificationStatus: VerificationStatus.pending,
         verificationPhotoUrl: currentState.verificationPhotoUrl,
-        verificationSubmittedAt: currentState.verificationPhotoUrl != null ? DateTime.now() : null,
+        verificationSubmittedAt: currentState.verificationPhotoUrl != null ? now : null,
         // Language learning fields
         preferredLanguages: currentState.preferredLanguages,
         nativeLanguage: currentState.nativeLanguage,
         // Travel preference
         travelPreference: currentState.travelPreference,
+        // 7-day free trial starts from registration
+        hasBaseMembership: true,
+        baseMembershipEndDate: now.add(const Duration(days: 7)),
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));

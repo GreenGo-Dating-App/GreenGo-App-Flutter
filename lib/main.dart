@@ -906,58 +906,40 @@ class _AuthWrapperState extends State<AuthWrapper> {
         if (state is AuthInitial || _isCheckingAccess) {
           return const SplashScreen();
         } else if (state is AuthWaitingForAccess) {
-          // Admin and test users bypass waiting — go straight to app
-          if (_accessData != null && (_accessData!.isAdmin || _accessData!.isTestUser)) {
-            // Admin users must complete 2FA before accessing the app
-            if (_accessData!.isAdmin && !_admin2FAVerified) {
-              return Admin2FAScreen(
-                onVerified: () => setState(() => _admin2FAVerified = true),
-                onSignOut: _handleSignOut,
-              );
-            }
-            // Check if profile is complete before entering app
-            if (_needsOnboarding) {
-              return profile.OnboardingScreen(userId: state.user.uid);
-            }
-            return _buildMainOrSplash(state.user.uid);
+          // Admin users must complete 2FA before accessing the app
+          if (_accessData != null && _accessData!.isAdmin && !_admin2FAVerified) {
+            return Admin2FAScreen(
+              onVerified: () => setState(() => _admin2FAVerified = true),
+              onSignOut: _handleSignOut,
+            );
           }
-          // Also bypass if tier is 'test' (from auth state directly)
-          if (state.membershipTier == 'test') {
-            if (_needsOnboarding) {
-              return profile.OnboardingScreen(userId: state.user.uid);
-            }
-            return _buildMainOrSplash(state.user.uid);
+          // Check if profile is complete before entering app
+          if (_needsOnboarding) {
+            return profile.OnboardingScreen(userId: state.user.uid);
           }
-          // Approved users bypass waiting — profile is verified
-          if (state.approvalStatus == 'approved') {
-            if (_needsOnboarding) {
-              return profile.OnboardingScreen(userId: state.user.uid);
-            }
-            return _buildMainOrSplash(state.user.uid);
-          }
-          // User is waiting for access (pending or rejected)
-          final waitingApprovalStatus = ApprovalStatus.values.firstWhere(
-            (e) => e.name == state.approvalStatus,
-            orElse: () => ApprovalStatus.pending,
-          );
-          return WaitingScreen(
-            accessData: UserAccessData(
-              userId: state.user.uid,
-              approvalStatus: waitingApprovalStatus,
-              accessDate: state.accessDate,
-              membershipTier: SubscriptionTier.values.firstWhere(
-                (e) => e.name == state.membershipTier,
-                orElse: () => SubscriptionTier.basic,
+          // Rejected users — show review screen with resubmission request
+          if (state.approvalStatus == 'rejected') {
+            final waitingApprovalStatus = ApprovalStatus.rejected;
+            return WaitingScreen(
+              accessData: UserAccessData(
+                userId: state.user.uid,
+                approvalStatus: waitingApprovalStatus,
+                accessDate: state.accessDate,
+                membershipTier: SubscriptionTier.values.firstWhere(
+                  (e) => e.name == state.membershipTier,
+                  orElse: () => SubscriptionTier.basic,
+                ),
+                notificationsEnabled: false,
+                hasEarlyAccess: state.accessDate.isBefore(AccessControlService.generalAccessDate),
               ),
-              notificationsEnabled: false,
-              hasEarlyAccess: state.accessDate.isBefore(AccessControlService.generalAccessDate),
-            ),
-            onSignOut: _handleSignOut,
-            onRefresh: _handleRefresh,
-            onEnableNotifications: _handleEnableNotifications,
-            onReverify: waitingApprovalStatus == ApprovalStatus.rejected ? _handleReverify : null,
-            onContactSupport: waitingApprovalStatus == ApprovalStatus.rejected ? _handleContactSupport : null,
-          );
+              onSignOut: _handleSignOut,
+              onRefresh: _handleRefresh,
+              onReverify: _handleReverify,
+              onContactSupport: _handleContactSupport,
+            );
+          }
+          // Pending and approved users — go straight to app
+          return _buildMainOrSplash(state.user.uid);
         } else if (state is AuthAuthenticated) {
           // If profile is incomplete, always redirect to onboarding first
           if (_needsOnboarding) {
@@ -965,22 +947,14 @@ class _AuthWrapperState extends State<AuthWrapper> {
           }
           // Check if we have access data and if user should wait
           if (_accessData != null) {
-            // Admin and test users ALWAYS bypass — never show waiting screen
-            if (_accessData!.isAdmin || _accessData!.isTestUser) {
-              // Admin users must complete 2FA before accessing the app
-              if (_accessData!.isAdmin && !_admin2FAVerified) {
-                return Admin2FAScreen(
-                  onVerified: () => setState(() => _admin2FAVerified = true),
-                  onSignOut: _handleSignOut,
-                );
-              }
-              return _buildMainOrSplash(state.user.uid);
+            // Admin users must complete 2FA before accessing the app
+            if (_accessData!.isAdmin && !_admin2FAVerified) {
+              return Admin2FAScreen(
+                onVerified: () => setState(() => _admin2FAVerified = true),
+                onSignOut: _handleSignOut,
+              );
             }
-            // Approved users (verified profile) — let them into the app
-            if (_accessData!.approvalStatus == ApprovalStatus.approved) {
-              return _buildMainOrSplash(state.user.uid);
-            }
-            // Rejected users — show rejected waiting screen
+            // Rejected users — show review screen with resubmission request
             if (_accessData!.approvalStatus == ApprovalStatus.rejected) {
               return WaitingScreen(
                 accessData: _accessData,
@@ -990,16 +964,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 onContactSupport: _handleContactSupport,
               );
             }
-            // Pending users — show countdown (if active) or "under review" screen
-            return WaitingScreen(
-              accessData: _accessData,
-              onSignOut: _handleSignOut,
-              onRefresh: _handleRefresh,
-              onEnableNotifications: _handleEnableNotifications,
-            );
+            // Pending and approved users — let them into the app
+            return _buildMainOrSplash(state.user.uid);
           } else if (_accessControlService.isPreLaunchMode) {
             // Pre-launch mode but no access data yet - show splash while loading
-            // (the listener already set _isCheckingAccess = true, so this is a fallback)
             return const SplashScreen();
           }
           // User can access the app
