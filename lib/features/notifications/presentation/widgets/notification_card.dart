@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification.dart';
 
 /// Notification Card Widget
@@ -74,7 +75,7 @@ class NotificationCard extends StatelessWidget {
                   children: [
                     // Title
                     Text(
-                      notification.title,
+                      _resolveL10n(context, notification.title),
                       style: TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
@@ -88,7 +89,7 @@ class NotificationCard extends StatelessWidget {
 
                     // Message
                     Text(
-                      notification.message,
+                      _resolveL10n(context, notification.message),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 14,
@@ -187,5 +188,21 @@ class NotificationCard extends StatelessWidget {
 
   Color _getIconBackgroundColor() {
     return _getIconColor().withOpacity(0.1);
+  }
+
+  /// Resolve `l10n:key` prefixed strings to localized text
+  String _resolveL10n(BuildContext context, String text) {
+    if (!text.startsWith('l10n:')) return text;
+    final key = text.substring(5);
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null) return text;
+    switch (key) {
+      case 'priorityConnectNotificationTitle':
+        return l10n.priorityConnectNotificationTitle;
+      case 'priorityConnectNotificationMessage':
+        return l10n.priorityConnectNotificationMessage;
+      default:
+        return text;
+    }
   }
 }

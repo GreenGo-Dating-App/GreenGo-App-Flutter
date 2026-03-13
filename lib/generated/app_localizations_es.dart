@@ -7279,6 +7279,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get primaryOrigin => 'Origen Principal';
 
   @override
+  String get priorityConnectNotificationMessage =>
+      '¡Alguien quiere conectar contigo!';
+
+  @override
+  String get priorityConnectNotificationTitle => 'Priority Connect!';
+
+  @override
   String get privacyPolicy => 'Política de Privacidad';
 
   @override
