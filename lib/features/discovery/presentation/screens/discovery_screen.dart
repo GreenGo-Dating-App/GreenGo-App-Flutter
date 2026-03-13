@@ -149,26 +149,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   MatchPreferences get _currentPreferences =>
       _savedPreferences ?? MatchPreferences.defaultFor(userId);
 
-  /// Get grid profile limit based on membership tier
+  /// Get grid profile limit — fixed at 50 profiles per page
   int get _gridProfileLimit {
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
-    int baseRows;
-    switch (tier) {
-      case MembershipTier.free:
-        baseRows = 3;
-        break;
-      case MembershipTier.silver:
-        baseRows = 30;
-        break;
-      case MembershipTier.gold:
-        baseRows = 60;
-        break;
-      case MembershipTier.platinum:
-      case MembershipTier.test:
-        baseRows = 100;
-        break;
-    }
-    return (baseRows * _gridColumns) + (_gridExtraPurchased * _gridColumns * 3);
+    return 50 + (_gridExtraPurchased * _gridColumns * 3);
   }
 
   @override
@@ -900,7 +883,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final limit = _gridProfileLimit;
     final visibleCount = filteredCards.length.clamp(0, limit);
     final visibleCards = filteredCards.take(visibleCount).toList();
-    final hasMore = visibleCount >= limit;
+    final hasMore = filteredCards.length > limit;
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
 
         return Column(
