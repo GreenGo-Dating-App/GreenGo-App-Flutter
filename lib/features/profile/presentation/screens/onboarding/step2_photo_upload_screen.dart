@@ -289,7 +289,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
           return const SizedBox.shrink();
         }
 
-        final isUploading = state is OnboardingPhotoUploading;
+        final isUploading = state.isUploading;
 
         return LuxuryOnboardingLayout(
           title: AppLocalizations.of(context)?.onboardingShowYourself ?? 'Show yourself',

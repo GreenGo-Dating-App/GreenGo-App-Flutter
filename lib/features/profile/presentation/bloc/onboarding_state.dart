@@ -11,10 +11,10 @@ enum OnboardingStep {
   interests, // Step 5: Interests
   locationLanguage, // Step 6: Location & Languages
   travelPreference, // Step 7: How do you want to use GreenGo?
-  voice, // Step 9: Voice recording
-  personality, // Step 10: Personality quiz
-  socialLinks, // Step 11: Social media links
-  preview, // Step 12: Profile preview
+  voice, // Step 8: Voice recording
+  personality, // Step 9: Personality quiz
+  socialLinks, // Step 10: Social media links
+  preview, // Step 11: Profile preview
 }
 
 abstract class OnboardingState extends Equatable {
@@ -43,9 +43,10 @@ class OnboardingInProgress extends OnboardingState {
   final PersonalityTraits? personalityTraits;
   final String? verificationPhotoUrl;
   final SocialLinks? socialLinks;
-  final List<String> preferredLanguages; // Languages user wants to learn
+  final List<String> preferredLanguages;
   final String? nativeLanguage;
-  final String? travelPreference; // 'learn_travel', 'help_travelers', 'both'
+  final String? travelPreference;
+  final bool isUploading;
 
   const OnboardingInProgress({
     required this.userId,
@@ -65,6 +66,7 @@ class OnboardingInProgress extends OnboardingState {
     this.preferredLanguages = const [],
     this.nativeLanguage,
     this.travelPreference,
+    this.isUploading = false,
   });
 
   OnboardingInProgress copyWith({
@@ -84,6 +86,7 @@ class OnboardingInProgress extends OnboardingState {
     List<String>? preferredLanguages,
     String? nativeLanguage,
     String? travelPreference,
+    bool? isUploading,
   }) {
     return OnboardingInProgress(
       userId: userId,
@@ -103,6 +106,7 @@ class OnboardingInProgress extends OnboardingState {
       preferredLanguages: preferredLanguages ?? this.preferredLanguages,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       travelPreference: travelPreference ?? this.travelPreference,
+      isUploading: isUploading ?? this.isUploading,
     );
   }
 
@@ -160,11 +164,8 @@ class OnboardingInProgress extends OnboardingState {
         preferredLanguages,
         nativeLanguage,
         travelPreference,
+        isUploading,
       ];
-}
-
-class OnboardingPhotoUploading extends OnboardingState {
-  const OnboardingPhotoUploading();
 }
 
 class OnboardingComplete extends OnboardingState {
