@@ -1138,39 +1138,39 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
               ),
             ],
-            if (!isActive) ...[
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.basePurple,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.basePurple,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: _isLoadingSubscription
-                      ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: Colors.white,
-                          ),
-                        )
-                      : Text(
-                          AppLocalizations.of(context)!.subscribeNow,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
                 ),
+                child: _isLoadingSubscription
+                    ? const SizedBox(
+                        height: 20,
+                        width: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.white,
+                        ),
+                      )
+                    : Text(
+                        isActive
+                            ? AppLocalizations.of(context)!.membershipExtendTitle
+                            : AppLocalizations.of(context)!.subscribeNow,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
               ),
-            ],
+            ),
           ],
         ),
       ),
