@@ -147,8 +147,8 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         }
       }
 
-      // Validation passed — now show uploading state and upload
-      emit(const OnboardingPhotoUploading());
+      // Validation passed — show uploading indicator and upload
+      emit(currentState.copyWith(isUploading: true));
 
       final uploadResult = await uploadPhoto(
         UploadPhotoParams(userId: currentState.userId, photo: event.photo),
@@ -157,12 +157,12 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       uploadResult.fold(
         (failure) {
           emit(OnboardingError(message: failure.message));
-          emit(currentState);
+          emit(currentState.copyWith(isUploading: false));
         },
         (photoUrl) {
           final updatedPhotoUrls = List<String>.from(currentState.photoUrls)
             ..add(photoUrl);
-          emit(currentState.copyWith(photoUrls: updatedPhotoUrls));
+          emit(currentState.copyWith(photoUrls: updatedPhotoUrls, isUploading: false));
         },
       );
     }
@@ -228,7 +228,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     if (state is OnboardingInProgress) {
       final currentState = state as OnboardingInProgress;
 
-      emit(const OnboardingPhotoUploading());
+      emit(currentState.copyWith(isUploading: true));
 
       // Upload verification photo (separate from profile photos)
       final uploadResult = await uploadPhoto(
@@ -242,10 +242,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       uploadResult.fold(
         (failure) {
           emit(OnboardingError(message: failure.message));
-          emit(currentState);
+          emit(currentState.copyWith(isUploading: false));
         },
         (photoUrl) {
-          emit(currentState.copyWith(verificationPhotoUrl: photoUrl));
+          emit(currentState.copyWith(verificationPhotoUrl: photoUrl, isUploading: false));
         },
       );
     }

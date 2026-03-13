@@ -86,7 +86,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
           return const SizedBox.shrink();
         }
 
-        final isUploading = context.read<OnboardingBloc>().state is OnboardingPhotoUploading;
+        final isUploading = state.isUploading;
 
         return LuxuryOnboardingLayout(
           title: l10n.verificationTitle,

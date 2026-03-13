@@ -225,6 +225,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Check base membership expiry
     _checkBaseMembershipExpiry();
 
+    // Direct Firestore check for trial welcome popup (fallback if BlocListener doesn't fire)
+    _checkBaseMembershipDirect();
+
     // Check if app tour should be shown
     _checkAppTour();
 
@@ -291,6 +294,40 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         BaseMembershipDialog.show(context: context, userId: widget.userId);
       }
     });
+  }
+
+  /// Directly fetch profile from Firestore and trigger membership check
+  /// This is a fallback in case the BlocListener doesn't fire
+  Future<void> _checkBaseMembershipDirect() async {
+    // Wait for widget tree to be fully built
+    await Future.delayed(const Duration(seconds: 2));
+    if (!mounted || _membershipCheckDone) return;
+
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      if (!doc.exists || !mounted || _membershipCheckDone) return;
+
+      final data = doc.data()!;
+      final hasBase = data['hasBaseMembership'] as bool? ?? false;
+      final endTs = data['baseMembershipEndDate'] as Timestamp?;
+      final endDate = endTs?.toDate();
+      final isActive = hasBase && endDate != null && endDate.isAfter(DateTime.now());
+
+      _membershipCheckDone = true;
+
+      if (isActive && endDate != null) {
+        if (mounted) _showTrialWelcomeDialog(endDate);
+      } else {
+        if (mounted) {
+          BaseMembershipDialog.show(context: context, userId: widget.userId);
+        }
+      }
+    } catch (e) {
+      debugPrint('Direct membership check error: $e');
+    }
   }
 
   /// Open membership dialog to extend (called from profile/shop)
