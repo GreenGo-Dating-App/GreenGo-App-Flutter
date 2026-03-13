@@ -671,11 +671,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Create like notification for target user
       final notificationType = actionType == SwipeActionType.superLike ? 'super_like' : 'new_like';
       final notificationTitle = actionType == SwipeActionType.superLike
-          ? 'You received a Super Like!'
+          ? 'l10n:priorityConnectNotificationTitle'
           : 'You received a Like!';
-      final notificationMessage = senderNickname.isNotEmpty
-          ? 'You received a ${actionType == SwipeActionType.superLike ? 'super like' : 'like'} from @$senderNickname. See profile.'
-          : 'You received a ${actionType == SwipeActionType.superLike ? 'super like' : 'like'} from $senderName. See profile.';
+      final notificationMessage = actionType == SwipeActionType.superLike
+          ? 'l10n:priorityConnectNotificationMessage'
+          : (senderNickname.isNotEmpty
+              ? 'You received a like from @$senderNickname. See profile.'
+              : 'You received a like from $senderName. See profile.');
 
       await _createNotification(
         userId: targetUserId,

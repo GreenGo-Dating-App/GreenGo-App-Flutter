@@ -7251,6 +7251,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get primaryOrigin => 'Origem Principal';
 
   @override
+  String get priorityConnectNotificationMessage =>
+      'Alguém quer se conectar com você!';
+
+  @override
+  String get priorityConnectNotificationTitle => 'Priority Connect!';
+
+  @override
   String get privacyPolicy => 'Política de Privacidade';
 
   @override
@@ -16920,6 +16927,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get primaryOrigin => 'Origem Principal';
+
+  @override
+  String get priorityConnectNotificationMessage =>
+      'Alguém quer se conectar com você!';
+
+  @override
+  String get priorityConnectNotificationTitle => 'Priority Connect!';
 
   @override
   String get privacyPolicy => 'Política de Privacidade';

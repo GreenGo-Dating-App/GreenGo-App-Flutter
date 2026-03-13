@@ -12930,6 +12930,18 @@ abstract class AppLocalizations {
   /// **'Primary Origin'**
   String get primaryOrigin;
 
+  /// No description provided for @priorityConnectNotificationMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone wants to connect with you!'**
+  String get priorityConnectNotificationMessage;
+
+  /// No description provided for @priorityConnectNotificationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Connect!'**
+  String get priorityConnectNotificationTitle;
+
   /// No description provided for @privacyPolicy.
   ///
   /// In en, this message translates to:
