@@ -42,14 +42,19 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
-          child: Column(
-            children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(AppDimensions.paddingL),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+          bottomChild: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: LuxuryButton(
+              text: 'Complete Profile',
+              onPressed: () => _handleComplete(context),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(AppDimensions.paddingL),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                       // Profile Card
                       Container(
                         decoration: BoxDecoration(
@@ -255,20 +260,8 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ),
-
-              // Bottom Section
-              Padding(
-                padding: const EdgeInsets.all(AppDimensions.paddingL),
-                child: LuxuryButton(
-                  text: 'Complete Profile',
-                  onPressed: () => _handleComplete(context),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         );
       },

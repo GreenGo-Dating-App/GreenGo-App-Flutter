@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter/foundation.dart' show kDebugMode;
+import 'package:flutter/foundation.dart' show kDebugMode, kIsWeb;
 import 'package:firebase_core/firebase_core.dart';
 import 'core/utils/admin_data_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -140,7 +140,8 @@ void main() async {
 
   // Initialize Firebase App Check
   // Skip App Check when using local emulators (it doesn't work with emulators)
-  if (!AppConfig.useLocalEmulators) {
+  // Skip on web — App Check for web requires reCAPTCHA Enterprise setup
+  if (!AppConfig.useLocalEmulators && !kIsWeb) {
     await FirebaseAppCheck.instance.activate(
       // Use Play Integrity for production builds, debug for development
       androidProvider: kDebugMode
@@ -151,6 +152,8 @@ void main() async {
           : AppleProvider.appAttest,
     );
     debugPrint('✓ Firebase App Check activated (${kDebugMode ? 'debug' : 'production'} mode)');
+  } else if (kIsWeb) {
+    debugPrint('⚠️ Firebase App Check skipped (web platform)');
   } else {
     debugPrint('⚠️ Firebase App Check skipped (using local emulators)');
 

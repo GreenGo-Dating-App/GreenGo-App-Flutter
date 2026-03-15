@@ -92,9 +92,25 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
-          child: SingleChildScrollView(
+          bottomChild: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              LuxuryButton(
+                text: 'Continue',
+                onPressed: _saveAndContinue,
+              ),
+              const SizedBox(height: 8),
+              LuxuryButton(
+                text: 'Skip',
+                onPressed: _skip,
+                isSecondary: true,
+              ),
+            ],
+          ),
+          child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Social Links Inputs
@@ -161,24 +177,7 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
                   ),
                 ),
 
-                const SizedBox(height: 32),
-
-                // Continue Button
-                LuxuryButton(
-                  text: 'Continue',
-                  onPressed: _saveAndContinue,
-                ),
-
-                const SizedBox(height: 12),
-
-                // Skip Button
-                LuxuryButton(
-                  text: 'Skip',
-                  onPressed: _skip,
-                  isSecondary: true,
-                ),
-
-                const SizedBox(height: 24),
+                const SizedBox(height: 16),
               ],
             ),
           ),

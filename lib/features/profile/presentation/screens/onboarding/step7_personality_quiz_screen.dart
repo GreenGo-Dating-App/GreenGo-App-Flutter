@@ -118,135 +118,125 @@ class _Step7PersonalityQuizScreenState
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
-          child: Column(
-            children: [
-              // Quiz Progress
-              Padding(
-                padding: const EdgeInsets.fromLTRB(24, 16, 24, 0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Quiz Progress
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.6),
-                            fontSize: 14,
-                          ),
-                        ),
-                        Text(
-                          '${(progress * 100).toInt()}%',
-                          style: const TextStyle(
-                            color: AppColors.richGold,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
+                    Text(
+                      'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.6),
+                        fontSize: 14,
+                      ),
                     ),
-                    const SizedBox(height: 8),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: LinearProgressIndicator(
-                        value: progress,
-                        backgroundColor: Colors.white.withOpacity(0.1),
-                        valueColor:
-                            const AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                        minHeight: 6,
+                    Text(
+                      '${(progress * 100).toInt()}%',
+                      style: const TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
                 ),
-              ),
-
-              const SizedBox(height: 32),
-
-              // Question Card
-              Expanded(
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: Container(
-                      padding: const EdgeInsets.all(26),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            Colors.white.withOpacity(0.1),
-                            Colors.white.withOpacity(0.05),
-                          ],
-                        ),
-                        borderRadius:
-                            BorderRadius.circular(AppDimensions.radiusL),
-                        border: Border.all(
-                          color: AppColors.richGold.withOpacity(0.4),
-                          width: 2,
-                        ),
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            question.question,
-                            textAlign: TextAlign.center,
-                            style: Theme.of(context)
-                                .textTheme
-                                .headlineSmall
-                                ?.copyWith(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                          const SizedBox(height: 40),
-
-                          // Answer Options
-                          _buildAnswerButton('Strongly Disagree', 1),
-                          const SizedBox(height: 12),
-                          _buildAnswerButton('Disagree', 2),
-                          const SizedBox(height: 12),
-                          _buildAnswerButton('Neutral', 3),
-                          const SizedBox(height: 12),
-                          _buildAnswerButton('Agree', 4),
-                          const SizedBox(height: 12),
-                          _buildAnswerButton('Strongly Agree', 5),
-                        ],
-                      ),
-                    ),
+                const SizedBox(height: 8),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: LinearProgressIndicator(
+                    value: progress,
+                    backgroundColor: Colors.white.withOpacity(0.1),
+                    valueColor:
+                        const AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                    minHeight: 6,
                   ),
                 ),
-              ),
 
-              const SizedBox(height: 24),
+                const SizedBox(height: 24),
 
-              // Info Box
-              LuxuryGlassCard(
-                padding: const EdgeInsets.all(16),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.psychology_outlined,
-                      color: AppColors.richGold,
-                      size: 20,
+                // Question Card
+                Container(
+                  padding: const EdgeInsets.all(26),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.white.withOpacity(0.1),
+                        Colors.white.withOpacity(0.05),
+                      ],
                     ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        'Based on the Big Five personality traits model',
-                        style:
-                            Theme.of(context).textTheme.bodySmall?.copyWith(
-                                  color: Colors.white.withOpacity(0.7),
-                                ),
+                    borderRadius:
+                        BorderRadius.circular(AppDimensions.radiusL),
+                    border: Border.all(
+                      color: AppColors.richGold.withOpacity(0.4),
+                      width: 2,
+                    ),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        question.question,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineSmall
+                            ?.copyWith(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
+                      const SizedBox(height: 32),
 
-              const SizedBox(height: 24),
-            ],
+                      // Answer Options
+                      _buildAnswerButton('Strongly Disagree', 1),
+                      const SizedBox(height: 10),
+                      _buildAnswerButton('Disagree', 2),
+                      const SizedBox(height: 10),
+                      _buildAnswerButton('Neutral', 3),
+                      const SizedBox(height: 10),
+                      _buildAnswerButton('Agree', 4),
+                      const SizedBox(height: 10),
+                      _buildAnswerButton('Strongly Agree', 5),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 20),
+
+                // Info Box
+                LuxuryGlassCard(
+                  margin: EdgeInsets.zero,
+                  padding: const EdgeInsets.all(16),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.psychology_outlined,
+                        color: AppColors.richGold,
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          'Based on the Big Five personality traits model',
+                          style:
+                              Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Colors.white.withOpacity(0.7),
+                                  ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 16),
+              ],
+            ),
           ),
         );
       },

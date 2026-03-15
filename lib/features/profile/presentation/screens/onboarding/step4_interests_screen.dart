@@ -180,7 +180,12 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
+          bottomChild: LuxuryButton(
+            text: l10n.onboardingContinue,
+            onPressed: _handleContinue,
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Counter badge
@@ -210,68 +215,57 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
 
               const SizedBox(height: 16),
 
-              // Interests chips - scrollable area
-              Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: Wrap(
-                    spacing: 12,
-                    runSpacing: 12,
-                    children: _availableInterests.map((interest) {
-                      final isSelected = _selectedInterests.contains(interest);
-                      return LuxuryChip(
-                        label: _localizedInterest(context, interest),
-                        isSelected: isSelected,
-                        onTap: () => _toggleInterest(interest),
-                      );
-                    }).toList(),
+              // Interests chips
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Wrap(
+                  spacing: 12,
+                  runSpacing: 12,
+                  children: _availableInterests.map((interest) {
+                    final isSelected = _selectedInterests.contains(interest);
+                    return LuxuryChip(
+                      label: _localizedInterest(context, interest),
+                      isSelected: isSelected,
+                      onTap: () => _toggleInterest(interest),
+                    );
+                  }).toList(),
+                ),
+              ),
+
+              const SizedBox(height: 16),
+
+              // Info Box
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: AppColors.backgroundCard,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                    border: Border.all(color: AppColors.divider),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.info_outline,
+                        color: AppColors.richGold,
+                        size: 20,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          l10n.onboardingInterestsHelpMatches,
+                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                color: AppColors.textSecondary,
+                              ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
 
-              // Bottom Section
-              Padding(
-                padding: const EdgeInsets.all(AppDimensions.paddingL),
-                child: Column(
-                  children: [
-                    // Info Box
-                    Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: AppColors.backgroundCard,
-                        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                        border: Border.all(color: AppColors.divider),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(
-                            Icons.info_outline,
-                            color: AppColors.richGold,
-                            size: 20,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              l10n.onboardingInterestsHelpMatches,
-                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                    color: AppColors.textSecondary,
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    const SizedBox(height: 16),
-
-                    // Continue Button
-                    LuxuryButton(
-                      text: l10n.onboardingContinue,
-                      onPressed: _handleContinue,
-                    ),
-                  ],
-                ),
-              ),
+              const SizedBox(height: 16),
             ],
           ),
         );

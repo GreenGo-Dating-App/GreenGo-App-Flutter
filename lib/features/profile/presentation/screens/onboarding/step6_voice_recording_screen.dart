@@ -167,14 +167,20 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
-          child: Column(
-            children: [
-              // Recording UI
-              Expanded(
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+          bottomChild: LuxuryButton(
+            text: _hasRecording ? l10n.onboardingContinue : l10n.skip,
+            onPressed: _handleContinue,
+            isLoading: _isUploading,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Recording UI
+                Column(
+                  children: [
+                    const SizedBox(height: 24),
                       // Recording Circle
                       GestureDetector(
                         onTap: _isRecording ? _stopRecording : _startRecording,
@@ -262,8 +268,8 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
                         ),
                     ],
                   ),
-                ),
-              ),
+
+              const SizedBox(height: 20),
 
               // Info Box
               Padding(
@@ -299,17 +305,9 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
                 ),
               ),
 
-              const SizedBox(height: 20),
-
-              // Continue/Skip Button
-              LuxuryButton(
-                text: _hasRecording ? l10n.onboardingContinue : l10n.skip,
-                onPressed: _handleContinue,
-                isLoading: _isUploading,
-              ),
-
-              const SizedBox(height: 24),
-            ],
+              const SizedBox(height: 16),
+              ],
+            ),
           ),
         );
       },

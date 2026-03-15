@@ -78,16 +78,51 @@ class _Step5cTravelPreferenceScreenState
           onBack: () {
             context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
           },
-          child: Column(
-            children: [
-              const SizedBox(height: 16),
-              ..._options.map((option) => Padding(
-                    padding: const EdgeInsets.only(bottom: 16),
-                    child: _buildOptionCard(option),
-                  )),
-              const SizedBox(height: 24),
-              // Info text
-              Container(
+          bottomChild: SizedBox(
+            width: double.infinity,
+            height: 52,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: ElevatedButton(
+                onPressed: () {
+                  if (_selectedPreference != null) {
+                    context.read<OnboardingBloc>().add(
+                      OnboardingTravelPreferenceUpdated(
+                        travelPreference: _selectedPreference!,
+                      ),
+                    );
+                  }
+                  context.read<OnboardingBloc>().add(const OnboardingNextStep());
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.richGold,
+                  foregroundColor: Colors.black,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: Text(
+                  _selectedPreference == null ? 'Skip' : 'Next',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ..._options.map((option) => Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: _buildOptionCard(option),
+                    )),
+                const SizedBox(height: 8),
+                // Info text
+                Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: AppColors.richGold.withValues(alpha: 0.1),
@@ -112,39 +147,9 @@ class _Step5cTravelPreferenceScreenState
                   ],
                 ),
               ),
-              const SizedBox(height: 24),
-              // Next / Skip button
-              SizedBox(
-                width: double.infinity,
-                height: 52,
-                child: ElevatedButton(
-                  onPressed: () {
-                    if (_selectedPreference != null) {
-                      context.read<OnboardingBloc>().add(
-                        OnboardingTravelPreferenceUpdated(
-                          travelPreference: _selectedPreference!,
-                        ),
-                      );
-                    }
-                    context.read<OnboardingBloc>().add(const OnboardingNextStep());
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(
-                    _selectedPreference == null ? 'Skip' : 'Next',
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+                const SizedBox(height: 16),
+              ],
+            ),
           ),
         );
       },

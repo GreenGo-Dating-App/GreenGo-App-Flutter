@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get_it/get_it.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
@@ -1396,18 +1397,36 @@ class EditProfileScreen extends StatelessWidget {
         ),
       );
 
-      // Delete all swipe records for this user
+      // Delete all swipe records for this user (connect, nope, priority connect, explore next)
       final swipesQuery = await FirebaseFirestore.instance
           .collection('swipes')
           .where('userId', isEqualTo: profile.userId)
           .get();
 
-      // Delete in batches
-      final batch = FirebaseFirestore.instance.batch();
-      for (final doc in swipesQuery.docs) {
-        batch.delete(doc.reference);
+      // Delete in batches of 500 (Firestore limit)
+      for (var i = 0; i < swipesQuery.docs.length; i += 500) {
+        final batch = FirebaseFirestore.instance.batch();
+        final end = (i + 500).clamp(0, swipesQuery.docs.length);
+        for (var j = i; j < end; j++) {
+          batch.delete(swipesQuery.docs[j].reference);
+        }
+        await batch.commit();
       }
-      await batch.commit();
+
+      // Also delete photo likes by this user
+      final photoLikesQuery = await FirebaseFirestore.instance
+          .collection('photo_likes')
+          .where('likerId', isEqualTo: profile.userId)
+          .get();
+
+      for (var i = 0; i < photoLikesQuery.docs.length; i += 500) {
+        final batch = FirebaseFirestore.instance.batch();
+        final end = (i + 500).clamp(0, photoLikesQuery.docs.length);
+        for (var j = i; j < end; j++) {
+          batch.delete(photoLikesQuery.docs[j].reference);
+        }
+        await batch.commit();
+      }
 
       // Clear in-memory discovery cache so fresh profiles load
       try {
@@ -1415,14 +1434,9 @@ class EditProfileScreen extends StatelessWidget {
         datasource.clearDiscoveryCache(profile.userId);
       } catch (_) {}
 
-      // Also reset daily swipe usage counter
-      final todayKey = _getTodayKey();
-      await FirebaseFirestore.instance
-          .collection('dailyUsage')
-          .doc(profile.userId)
-          .collection('days')
-          .doc(todayKey)
-          .set({'swipeCount': 0}, SetOptions(merge: true));
+      // NOTE: Usage counters (daily swipes, hourly limits, super likes cap)
+      // are intentionally NOT reset — otherwise users could restart discovery
+      // endlessly to bypass rate limits and navigate for free.
 
       if (context.mounted) {
         Navigator.pop(context); // Close loading
@@ -1446,11 +1460,6 @@ class EditProfileScreen extends StatelessWidget {
         );
       }
     }
-  }
-
-  String _getTodayKey() {
-    final now = DateTime.now();
-    return '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
   }
 
   void _navigateToUsageStats(BuildContext context, Profile profile) {

@@ -12,6 +12,8 @@ class LuxuryOnboardingLayout extends StatefulWidget {
   final Widget? progressBar;
   final VoidCallback? onBack;
   final bool showBackButton;
+  /// Fixed widget at the bottom (e.g. Continue button), always visible above keyboard
+  final Widget? bottomChild;
 
   const LuxuryOnboardingLayout({
     super.key,
@@ -21,6 +23,7 @@ class LuxuryOnboardingLayout extends StatefulWidget {
     this.progressBar,
     this.onBack,
     this.showBackButton = true,
+    this.bottomChild,
   });
 
   @override
@@ -37,6 +40,10 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
   late Animation<double> _floatAnimation;
   late Animation<double> _pulseAnimation;
   late Animation<double> _sparkleAnimation;
+
+  // Scroll support
+  final ScrollController _scrollController = ScrollController();
+  bool _showScrollIndicator = false;
 
   // Random sparkle positions generated once
   late List<_SparkleParticle> _sparkles;
@@ -83,6 +90,10 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
 
     _sparkleAnimation = Tween<double>(begin: 0, end: 1).animate(_sparkleController);
 
+    // Scroll indicator logic
+    _scrollController.addListener(_onScroll);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkScrollable());
+
     // Generate random sparkle particles
     final rng = math.Random(42);
     _sparkles = List.generate(25, (i) => _SparkleParticle(
@@ -94,8 +105,25 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
     ));
   }
 
+  void _checkScrollable() {
+    if (!mounted || !_scrollController.hasClients) return;
+    final canScroll = _scrollController.position.maxScrollExtent > 0;
+    final isNearBottom = _scrollController.offset >=
+        _scrollController.position.maxScrollExtent - 50;
+    if (_showScrollIndicator != (canScroll && !isNearBottom)) {
+      setState(() {
+        _showScrollIndicator = canScroll && !isNearBottom;
+      });
+    }
+  }
+
+  void _onScroll() {
+    _checkScrollable();
+  }
+
   @override
   void dispose() {
+    _scrollController.dispose();
     _shimmerController.dispose();
     _floatController.dispose();
     _pulseController.dispose();
@@ -140,64 +168,99 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
           SafeArea(
             child: Column(
               children: [
-                // App bar with glass effect
+                // App bar with glass effect (fixed at top)
                 _buildGlassAppBar(context),
 
-                // Header section with title
-                _buildHeader(context),
-
-                // Content area wrapped in elegant glass card
+                // Scrollable content area (header + glass card scroll together)
                 Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(28),
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
-                        child: AnimatedBuilder(
-                          animation: _pulseAnimation,
-                          builder: (context, child) {
-                            return Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(28),
-                                gradient: LinearGradient(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors: [
-                                    Colors.white.withOpacity(0.09),
-                                    Colors.white.withOpacity(0.04),
-                                    Colors.white.withOpacity(0.02),
-                                  ],
-                                  stops: const [0.0, 0.5, 1.0],
-                                ),
-                                border: Border.all(
-                                  color: AppColors.richGold.withOpacity(0.15 + 0.08 * _pulseAnimation.value),
-                                  width: 1.0,
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black.withOpacity(0.4),
-                                    blurRadius: 30,
-                                    offset: const Offset(0, 12),
+                  child: Stack(
+                    children: [
+                      Scrollbar(
+                        thumbVisibility: true,
+                        controller: _scrollController,
+                        child: SingleChildScrollView(
+                          controller: _scrollController,
+                          physics: const BouncingScrollPhysics(),
+                          child: Column(
+                            children: [
+                              // Header scrolls with content
+                              _buildHeader(context),
+
+                              // Glass card wrapping child content
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(28),
+                                  child: BackdropFilter(
+                                    filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+                                    child: AnimatedBuilder(
+                                      animation: _pulseAnimation,
+                                      builder: (context, child) {
+                                        return Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(28),
+                                            gradient: LinearGradient(
+                                              begin: Alignment.topLeft,
+                                              end: Alignment.bottomRight,
+                                              colors: [
+                                                Colors.white.withOpacity(0.09),
+                                                Colors.white.withOpacity(0.04),
+                                                Colors.white.withOpacity(0.02),
+                                              ],
+                                              stops: const [0.0, 0.5, 1.0],
+                                            ),
+                                            border: Border.all(
+                                              color: AppColors.richGold.withOpacity(0.15 + 0.08 * _pulseAnimation.value),
+                                              width: 1.0,
+                                            ),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black.withOpacity(0.4),
+                                                blurRadius: 30,
+                                                offset: const Offset(0, 12),
+                                              ),
+                                              BoxShadow(
+                                                color: AppColors.richGold.withOpacity(0.04 * _pulseAnimation.value),
+                                                blurRadius: 20,
+                                                spreadRadius: 1,
+                                              ),
+                                            ],
+                                          ),
+                                          child: child,
+                                        );
+                                      },
+                                      child: widget.child,
+                                    ),
                                   ),
-                                  BoxShadow(
-                                    color: AppColors.richGold.withOpacity(0.04 * _pulseAnimation.value),
-                                    blurRadius: 20,
-                                    spreadRadius: 1,
-                                  ),
-                                ],
+                                ),
                               ),
-                              child: child,
-                            );
-                          },
-                          child: widget.child,
+
+                              const SizedBox(height: 16),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
+
+                      // Animated scroll-down indicator
+                      if (_showScrollIndicator)
+                        Positioned(
+                          bottom: 8,
+                          left: 0,
+                          right: 0,
+                          child: _buildScrollIndicator(),
+                        ),
+                    ],
                   ),
                 ),
 
-                const SizedBox(height: 16),
+                // Fixed bottom widget (always visible above keyboard)
+                if (widget.bottomChild != null)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 8, 0, 16),
+                    child: widget.bottomChild!,
+                  )
+                else
+                  const SizedBox(height: 16),
               ],
             ),
           ),
@@ -471,6 +534,37 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
           ),
         );
       },
+    );
+  }
+
+  Widget _buildScrollIndicator() {
+    return IgnorePointer(
+      child: Center(
+        child: AnimatedBuilder(
+          animation: _floatAnimation,
+          builder: (context, child) {
+            return Transform.translate(
+              offset: Offset(0, _floatAnimation.value * 6),
+              child: child,
+            );
+          },
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.6),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: AppColors.richGold.withOpacity(0.4),
+              ),
+            ),
+            child: Icon(
+              Icons.keyboard_double_arrow_down,
+              color: AppColors.richGold.withOpacity(0.8),
+              size: 20,
+            ),
+          ),
+        ),
+      ),
     );
   }
 

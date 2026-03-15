@@ -2672,7 +2672,7 @@ abstract class AppLocalizations {
   /// No description provided for @blindDateLetsExchange.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s Exchange!'**
+  /// **'Start Connecting!'**
   String get blindDateLetsExchange;
 
   /// No description provided for @blindDateMatchMessage.
@@ -9044,7 +9044,7 @@ abstract class AppLocalizations {
   /// No description provided for @itsAMatch.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s Exchange!'**
+  /// **'Start Connecting!'**
   String get itsAMatch;
 
   /// No description provided for @joinMessage.
@@ -10394,7 +10394,7 @@ abstract class AppLocalizations {
   /// No description provided for @letsExchange.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s Exchange!'**
+  /// **'Start Connecting!'**
   String get letsExchange;
 
   /// No description provided for @levelLabel.
@@ -10712,7 +10712,7 @@ abstract class AppLocalizations {
   /// No description provided for @matchNotifLetsExchange.
   ///
   /// In en, this message translates to:
-  /// **'LET\'S EXCHANGE!'**
+  /// **'START CONNECTING!'**
   String get matchNotifLetsExchange;
 
   /// No description provided for @matchNotifViewProfile.
@@ -10822,6 +10822,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Maybe Later'**
   String get maybeLater;
+
+  /// No description provided for @discoverWorldwideTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Expand your horizons!'**
+  String get discoverWorldwideTitle;
+
+  /// No description provided for @discoverWorldwideMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'There aren\'t many people in your area yet, but GreenGo connects you with people worldwide! Go to Filters and add more countries to discover amazing people from around the globe.'**
+  String get discoverWorldwideMessage;
+
+  /// No description provided for @openFilters.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Filters'**
+  String get openFilters;
 
   /// No description provided for @membershipActivatedMessage.
   ///
@@ -12810,6 +12828,18 @@ abstract class AppLocalizations {
   /// **'No country filter — showing worldwide'**
   String get preferenceNoCountryFilter;
 
+  /// No description provided for @preferenceCountryRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'At least one country must be selected'**
+  String get preferenceCountryRequired;
+
+  /// No description provided for @preferenceByUsers.
+  ///
+  /// In en, this message translates to:
+  /// **'By users'**
+  String get preferenceByUsers;
+
   /// No description provided for @preferenceNoDealBreakers.
   ///
   /// In en, this message translates to:
@@ -14481,7 +14511,7 @@ abstract class AppLocalizations {
   /// No description provided for @secondChanceMatchTitle.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s Exchange!'**
+  /// **'Start Connecting!'**
   String get secondChanceMatchTitle;
 
   /// No description provided for @secondChanceOutOf.
@@ -17147,6 +17177,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unlock achievements to earn badges!'**
   String get noBadgesYet;
+
+  /// No description provided for @guideTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How GreenGo Works'**
+  String get guideTitle;
+
+  /// No description provided for @guideSwipeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Swiping Profiles'**
+  String get guideSwipeTitle;
+
+  /// No description provided for @guideSwipeItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe right to Connect with someone, swipe left to Nope.'**
+  String get guideSwipeItem1;
+
+  /// No description provided for @guideSwipeItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe up to send a Priority Connect (uses coins).'**
+  String get guideSwipeItem2;
+
+  /// No description provided for @guideSwipeItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe down to Explore Next and skip a profile for now.'**
+  String get guideSwipeItem3;
+
+  /// No description provided for @guideSwipeItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'You can switch between swipe and grid mode using the toggle icon in the top bar.'**
+  String get guideSwipeItem4;
+
+  /// No description provided for @guideGridTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid View'**
+  String get guideGridTitle;
+
+  /// No description provided for @guideGridItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse profiles in a grid layout for a quick overview.'**
+  String get guideGridItem1;
+
+  /// No description provided for @guideGridItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap on a profile image to reveal the four action buttons: Connect, Priority Connect, Nope, and Explore Next.'**
+  String get guideGridItem2;
+
+  /// No description provided for @guideGridItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Long press on a profile image to see their details without opening the full profile.'**
+  String get guideGridItem3;
+
+  /// No description provided for @guideConnectionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Connecting with People'**
+  String get guideConnectionsTitle;
+
+  /// No description provided for @guideConnectionsItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'When two people Connect with each other, it\'s a match!'**
+  String get guideConnectionsItem1;
+
+  /// No description provided for @guideConnectionsItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'After matching, you can start chatting right away.'**
+  String get guideConnectionsItem2;
+
+  /// No description provided for @guideConnectionsItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Priority Connect to stand out and increase your chances.'**
+  String get guideConnectionsItem3;
+
+  /// No description provided for @guideConnectionsItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the Exchanges tab to see all your matches and conversations.'**
+  String get guideConnectionsItem4;
+
+  /// No description provided for @guideChatTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat & Messaging'**
+  String get guideChatTitle;
+
+  /// No description provided for @guideChatItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Send text messages, photos, and voice notes.'**
+  String get guideChatItem1;
+
+  /// No description provided for @guideChatItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the translation feature to chat in different languages.'**
+  String get guideChatItem2;
+
+  /// No description provided for @guideChatItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Open chat settings to customize your experience: toggle grammar check, smart replies, cultural tips, word breakdown, pronunciation help, and more.'**
+  String get guideChatItem3;
+
+  /// No description provided for @guideChatItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable text-to-speech to hear translations, show language flags, and track your language learning XP.'**
+  String get guideChatItem4;
+
+  /// No description provided for @guideFiltersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discovery Filters'**
+  String get guideFiltersTitle;
+
+  /// No description provided for @guideFiltersItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the filter icon to set your preferences: age range, distance, languages, and more.'**
+  String get guideFiltersItem1;
+
+  /// No description provided for @guideFiltersItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Country filter is optional. When no country is selected, you\'ll see the closest people worldwide (up to 500). Add countries to narrow your search to specific regions.'**
+  String get guideFiltersItem2;
+
+  /// No description provided for @guideFiltersItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters help you find people who match what you\'re looking for. You can adjust them anytime.'**
+  String get guideFiltersItem3;
+
+  /// No description provided for @guideTravelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel & Explore'**
+  String get guideTravelTitle;
+
+  /// No description provided for @guideTravelItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Activate Traveler Mode to appear in discovery for a city you plan to visit for 24 hours.'**
+  String get guideTravelItem1;
+
+  /// No description provided for @guideTravelItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Guides can help travelers discover their city and culture.'**
+  String get guideTravelItem2;
+
+  /// No description provided for @guideTravelItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Language exchange partners are matched based on what you speak and what you want to learn.'**
+  String get guideTravelItem3;
+
+  /// No description provided for @guideMembershipTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Base Membership'**
+  String get guideMembershipTitle;
+
+  /// No description provided for @guideMembershipItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your base membership gives you access to all core features: swiping, chatting, and matching.'**
+  String get guideMembershipItem1;
+
+  /// No description provided for @guideMembershipItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership starts with a free trial after your first sign-up.'**
+  String get guideMembershipItem2;
+
+  /// No description provided for @guideMembershipItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'When your membership expires, you can renew it to continue using the app.'**
+  String get guideMembershipItem3;
+
+  /// No description provided for @guideTiersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Tiers (Silver, Gold, Platinum)'**
+  String get guideTiersTitle;
+
+  /// No description provided for @guideTiersItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver: Get more daily connects, see who connected with you, and priority support.'**
+  String get guideTiersItem1;
+
+  /// No description provided for @guideTiersItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold: Everything in Silver plus unlimited connects, advanced filters, and read receipts.'**
+  String get guideTiersItem2;
+
+  /// No description provided for @guideTiersItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum: Everything in Gold plus profile boost, top picks, and exclusive features.'**
+  String get guideTiersItem3;
+
+  /// No description provided for @guideTiersItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP tiers are independent from your base membership and provide extra perks.'**
+  String get guideTiersItem4;
+
+  /// No description provided for @guideCoinsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins'**
+  String get guideCoinsTitle;
+
+  /// No description provided for @guideCoinsItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins are used for premium actions. Here are the costs:'**
+  String get guideCoinsItem1;
+
+  /// No description provided for @guideCoinsItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Message: 50 coins'**
+  String get guideCoinsItem2;
+
+  /// No description provided for @guideCoinsItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'• Incognito: 30 coins/day  • Traveler: 100 coins/day'**
+  String get guideCoinsItem3;
+
+  /// No description provided for @guideCoinsItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'• Listen (TTS): 5 coins  • Grid Extend: 10 coins  • Learning Coach: 10 coins/session'**
+  String get guideCoinsItem4;
+
+  /// No description provided for @guideCoinsItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'You receive 20 free coins daily. Earn more through achievements, leaderboard rankings, and the Shop.'**
+  String get guideCoinsItem5;
+
+  /// No description provided for @guideLeaderboardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get guideLeaderboardTitle;
+
+  /// No description provided for @guideLeaderboardItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Compete with other users to climb the leaderboard and earn rewards.'**
+  String get guideLeaderboardItem1;
+
+  /// No description provided for @guideLeaderboardItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn points by being active, completing your profile, and engaging with others.'**
+  String get guideLeaderboardItem2;
+
+  /// No description provided for @guideSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety & Privacy'**
+  String get guideSafetyTitle;
+
+  /// No description provided for @guideSafetyItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'All photos are AI-verified to ensure authentic profiles.'**
+  String get guideSafetyItem1;
+
+  /// No description provided for @guideSafetyItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'You can block or report any user at any time from their profile.'**
+  String get guideSafetyItem2;
+
+  /// No description provided for @guideSafetyItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your personal information is protected and never shared without your consent.'**
+  String get guideSafetyItem3;
 }
 
 class _AppLocalizationsDelegate

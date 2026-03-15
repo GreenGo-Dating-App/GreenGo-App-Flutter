@@ -94,11 +94,15 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
+          bottomChild: LuxuryButton(
+            text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
+            onPressed: _handleContinue,
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               // Bio Text Field
-              Expanded(
-                child: Padding(
+              Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
@@ -123,13 +127,16 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                           ),
                         ),
                         child: Column(
+                          mainAxisSize: MainAxisSize.min,
                           children: [
-                            Expanded(
+                            SizedBox(
+                              height: 180,
                               child: TextField(
                                 controller: _bioController,
                                 focusNode: _focusNode,
                                 maxLength: _maxLength,
                                 maxLines: null,
+                                expands: true,
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -198,7 +205,6 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                     ),
                   ),
                 ),
-              ),
 
               const SizedBox(height: 20),
 
@@ -242,15 +248,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                 ),
               ),
 
-              const SizedBox(height: 24),
-
-              // Continue Button
-              LuxuryButton(
-                text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
-                onPressed: _handleContinue,
-              ),
-
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
             ],
           ),
         );

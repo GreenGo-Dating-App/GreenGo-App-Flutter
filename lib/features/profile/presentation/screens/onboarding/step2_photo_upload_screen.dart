@@ -299,21 +299,28 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
+          bottomChild: LuxuryButton(
+            text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
+            onPressed: () => _handleContinue(state.photoUrls),
+            isLoading: isUploading,
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               // Photo Grid
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
-                      crossAxisSpacing: 12,
-                      mainAxisSpacing: 12,
-                      childAspectRatio: 0.75,
-                    ),
-                    itemCount: 6,
-                    itemBuilder: (context, index) {
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                child: GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
+                    childAspectRatio: 0.75,
+                  ),
+                  itemCount: 6,
+                  itemBuilder: (context, index) {
                       final hasPhoto = index < state.photoUrls.length;
 
                       if (hasPhoto) {
@@ -337,7 +344,6 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                     },
                   ),
                 ),
-              ),
 
               // Info Box
               LuxuryGlassCard(
@@ -385,16 +391,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
                 ),
               ),
 
-              const SizedBox(height: 24),
-
-              // Continue Button
-              LuxuryButton(
-                text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
-                onPressed: () => _handleContinue(state.photoUrls),
-                isLoading: isUploading,
-              ),
-
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
             ],
           ),
         );

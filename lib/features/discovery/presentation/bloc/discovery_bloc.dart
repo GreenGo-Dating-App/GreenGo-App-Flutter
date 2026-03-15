@@ -168,6 +168,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     // ── Priority Connect: check base membership first, then limits, then coins ──
     if (actionType == SwipeActionType.superLike) {
       // Check if user has base membership before processing priority connect
+      bool _isTesterUser = false;
       {
         try {
           final profileDoc = await FirebaseFirestore.instance
@@ -182,7 +183,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
               endTs.toDate().isAfter(DateTime.now());
           // Also allow test tier users through
           final memberTier = profileData?['membershipTier'] as String? ?? '';
-          if (!isActive && memberTier != 'test') {
+          _isTesterUser = memberTier == 'test' || memberTier == 'TEST';
+          if (!isActive && !_isTesterUser) {
             emit(DiscoveryBaseMembershipRequired(
               cards: currentState.cards,
               currentIndex: currentState.currentIndex,
@@ -195,6 +197,10 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           debugPrint('Error checking base membership: $e');
         }
       }
+      // Testers bypass all coin/limit checks — use features for free
+      final isTester = _isTesterUser;
+
+      if (!isTester) {
       bool usedFreeAllowance = false;
 
       // Step 1: Check daily priority connect limit
@@ -272,6 +278,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
         return;
       }
+      } // end !isTester
     }
 
     // ── Hourly limit check per action type ──
@@ -441,8 +448,19 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final cards = data.cards;
     final currentIndex = data.currentIndex;
 
-    // Check coins for undo (3 coins)
-    if (coinRepository != null) {
+    // Check if user is a tester — testers bypass coin checks
+    bool isRewindTester = false;
+    try {
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(event.userId)
+          .get();
+      final memberTier = profileDoc.data()?['membershipTier'] as String? ?? '';
+      isRewindTester = memberTier == 'test' || memberTier == 'TEST';
+    } catch (_) {}
+
+    // Check coins for undo (3 coins) — testers skip this
+    if (!isRewindTester && coinRepository != null) {
       final balanceResult = await coinRepository!.getBalance(event.userId);
       final insufficient = balanceResult.fold(
         (failure) => true,
@@ -500,8 +518,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       return;
     }
 
-    // Deduct coins for successful undo
-    if (coinRepository != null) {
+    // Deduct coins for successful undo — testers skip this
+    if (!isRewindTester && coinRepository != null) {
       await coinRepository!.purchaseFeature(
         userId: event.userId,
         featureName: 'undo',

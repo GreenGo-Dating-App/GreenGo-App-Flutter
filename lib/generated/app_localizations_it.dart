@@ -1481,7 +1481,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get blindDateLetsExchange => 'Scambiamoci!';
+  String get blindDateLetsExchange => 'Inizia a connetterti!';
 
   @override
   String get blindDateMatchMessage =>
@@ -5099,7 +5099,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get inviteFriends => 'Invita Amici';
 
   @override
-  String get itsAMatch => 'Scambiamoci!';
+  String get itsAMatch => 'Inizia a connetterti!';
 
   @override
   String get joinMessage =>
@@ -5827,7 +5827,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get letsChat => 'Chattiamo!';
 
   @override
-  String get letsExchange => 'Scambiamoci!';
+  String get letsExchange => 'Inizia a connetterti!';
 
   @override
   String get levelLabel => 'Livello';
@@ -6002,7 +6002,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get matchNotifLetsChat => 'Chattiamo!';
 
   @override
-  String get matchNotifLetsExchange => 'SCAMBIAMOCI!';
+  String get matchNotifLetsExchange => 'INIZIA A CONNETTERTI!';
 
   @override
   String get matchNotifViewProfile => 'Vedi Profilo';
@@ -6072,6 +6072,16 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get maybeLater => 'Forse Più Tardi';
+
+  @override
+  String get discoverWorldwideTitle => 'Amplia i tuoi orizzonti!';
+
+  @override
+  String get discoverWorldwideMessage =>
+      'Non ci sono ancora molte persone nella tua zona, ma GreenGo ti connette con persone in tutto il mondo! Vai ai Filtri e aggiungi altri paesi per scoprire persone fantastiche da ogni angolo del pianeta.';
+
+  @override
+  String get openFilters => 'Apri Filtri';
 
   @override
   String membershipActivatedMessage(
@@ -7206,6 +7216,13 @@ class AppLocalizationsIt extends AppLocalizations {
       'Nessun filtro paese - mostra globalmente';
 
   @override
+  String get preferenceCountryRequired =>
+      'Deve essere selezionato almeno un paese';
+
+  @override
+  String get preferenceByUsers => 'Per utenti';
+
+  @override
   String get preferenceNoDealBreakers =>
       'Nessun criterio eliminatorio impostato';
 
@@ -8158,7 +8175,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'Vi piacete a vicenda! Inizia una conversazione.';
 
   @override
-  String get secondChanceMatchTitle => 'È un match!';
+  String get secondChanceMatchTitle => 'Inizia a connetterti!';
 
   @override
   String get secondChanceOutOf => 'Seconde possibilità esaurite';
@@ -9698,4 +9715,191 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get noBadgesYet => 'Sblocca traguardi per guadagnare badge!';
+
+  @override
+  String get guideTitle => 'Come funziona GreenGo';
+
+  @override
+  String get guideSwipeTitle => 'Scorrere i profili';
+
+  @override
+  String get guideSwipeItem1 =>
+      'Scorri a destra per Connect con qualcuno, scorri a sinistra per Nope.';
+
+  @override
+  String get guideSwipeItem2 =>
+      'Scorri verso l\'alto per inviare un Priority Connect (usa monete).';
+
+  @override
+  String get guideSwipeItem3 =>
+      'Scorri verso il basso per Explore Next e salta un profilo per ora.';
+
+  @override
+  String get guideSwipeItem4 =>
+      'Puoi passare dalla modalità scorrimento alla modalità griglia usando l\'icona di commutazione nella barra superiore.';
+
+  @override
+  String get guideGridTitle => 'Vista a griglia';
+
+  @override
+  String get guideGridItem1 =>
+      'Sfoglia i profili in una disposizione a griglia per una panoramica rapida.';
+
+  @override
+  String get guideGridItem2 =>
+      'Tocca un\'immagine del profilo per mostrare i quattro pulsanti di azione: Connect, Priority Connect, Nope ed Explore Next.';
+
+  @override
+  String get guideGridItem3 =>
+      'Tieni premuto su un\'immagine del profilo per vedere i dettagli senza aprire il profilo completo.';
+
+  @override
+  String get guideConnectionsTitle => 'Connettersi con le persone';
+
+  @override
+  String get guideConnectionsItem1 =>
+      'Quando due persone fanno Connect a vicenda, è un match!';
+
+  @override
+  String get guideConnectionsItem2 =>
+      'Dopo il match, puoi iniziare a chattare subito.';
+
+  @override
+  String get guideConnectionsItem3 =>
+      'Usa Priority Connect per distinguerti e aumentare le tue possibilità.';
+
+  @override
+  String get guideConnectionsItem4 =>
+      'Controlla la scheda Scambi per vedere tutti i tuoi match e le conversazioni.';
+
+  @override
+  String get guideChatTitle => 'Chat e messaggistica';
+
+  @override
+  String get guideChatItem1 => 'Invia messaggi di testo, foto e note vocali.';
+
+  @override
+  String get guideChatItem2 =>
+      'Usa la funzione di traduzione per chattare in diverse lingue.';
+
+  @override
+  String get guideChatItem3 =>
+      'Apri le impostazioni della chat per personalizzare la tua esperienza: attiva il controllo grammaticale, le risposte intelligenti, i consigli culturali, la scomposizione delle parole, l\'aiuto alla pronuncia e altro ancora.';
+
+  @override
+  String get guideChatItem4 =>
+      'Attiva la sintesi vocale per ascoltare le traduzioni, mostrare le bandiere delle lingue e monitorare i tuoi XP di apprendimento linguistico.';
+
+  @override
+  String get guideFiltersTitle => 'Filtri di scoperta';
+
+  @override
+  String get guideFiltersItem1 =>
+      'Tocca l\'icona del filtro per impostare le tue preferenze: fascia d\'età, distanza, lingue e altro.';
+
+  @override
+  String get guideFiltersItem2 =>
+      'Il filtro per paese è opzionale. Quando nessun paese è selezionato, vedrai le persone più vicine in tutto il mondo (fino a 500). Aggiungi paesi per limitare la ricerca a regioni specifiche.';
+
+  @override
+  String get guideFiltersItem3 =>
+      'I filtri ti aiutano a trovare persone che corrispondono a ciò che cerchi. Puoi modificarli in qualsiasi momento.';
+
+  @override
+  String get guideTravelTitle => 'Viaggi ed esplorazione';
+
+  @override
+  String get guideTravelItem1 =>
+      'Attiva la Modalità Viaggiatore per apparire nella scoperta di una città che intendi visitare per 24 ore.';
+
+  @override
+  String get guideTravelItem2 =>
+      'Le guide locali possono aiutare i viaggiatori a scoprire la loro città e cultura.';
+
+  @override
+  String get guideTravelItem3 =>
+      'I partner di scambio linguistico vengono abbinati in base a ciò che parli e a ciò che vuoi imparare.';
+
+  @override
+  String get guideMembershipTitle => 'Abbonamento base';
+
+  @override
+  String get guideMembershipItem1 =>
+      'Il tuo abbonamento base ti dà accesso a tutte le funzionalità principali: scorrere, chattare e fare match.';
+
+  @override
+  String get guideMembershipItem2 =>
+      'L\'abbonamento inizia con una prova gratuita dopo la prima registrazione.';
+
+  @override
+  String get guideMembershipItem3 =>
+      'Quando il tuo abbonamento scade, puoi rinnovarlo per continuare a usare l\'app.';
+
+  @override
+  String get guideTiersTitle => 'Livelli VIP (Argento, Oro, Platino)';
+
+  @override
+  String get guideTiersItem1 =>
+      'Argento: Ottieni più connect giornalieri, vedi chi ha fatto Connect con te e supporto prioritario.';
+
+  @override
+  String get guideTiersItem2 =>
+      'Oro: Tutto ciò che è in Argento più connect illimitati, filtri avanzati e conferme di lettura.';
+
+  @override
+  String get guideTiersItem3 =>
+      'Platino: Tutto ciò che è in Oro più boost del profilo, migliori scelte e funzionalità esclusive.';
+
+  @override
+  String get guideTiersItem4 =>
+      'I livelli VIP sono indipendenti dal tuo abbonamento base e offrono vantaggi extra.';
+
+  @override
+  String get guideCoinsTitle => 'Monete';
+
+  @override
+  String get guideCoinsItem1 =>
+      'Le monete vengono usate per le azioni premium. Ecco i costi:';
+
+  @override
+  String get guideCoinsItem2 =>
+      '• Priority Connect: 10 monete  • Boost: 50 monete  • Messaggio diretto: 50 monete';
+
+  @override
+  String get guideCoinsItem3 =>
+      '• Incognito: 30 monete/giorno  • Viaggiatore: 100 monete/giorno';
+
+  @override
+  String get guideCoinsItem4 =>
+      '• Ascolta (TTS): 5 monete  • Estendi griglia: 10 monete  • Coach di apprendimento: 10 monete/sessione';
+
+  @override
+  String get guideCoinsItem5 =>
+      'Ricevi 20 monete gratis al giorno. Guadagna di più con traguardi, classifiche e il Negozio.';
+
+  @override
+  String get guideLeaderboardTitle => 'Classifica';
+
+  @override
+  String get guideLeaderboardItem1 =>
+      'Competi con altri utenti per scalare la classifica e guadagnare ricompense.';
+
+  @override
+  String get guideLeaderboardItem2 =>
+      'Guadagna punti essendo attivo, completando il tuo profilo e interagendo con gli altri.';
+
+  @override
+  String get guideSafetyTitle => 'Sicurezza e privacy';
+
+  @override
+  String get guideSafetyItem1 =>
+      'Tutte le foto sono verificate dall\'IA per garantire profili autentici.';
+
+  @override
+  String get guideSafetyItem2 =>
+      'Puoi bloccare o segnalare qualsiasi utente in qualsiasi momento dal suo profilo.';
+
+  @override
+  String get guideSafetyItem3 =>
+      'Le tue informazioni personali sono protette e non vengono mai condivise senza il tuo consenso.';
 }
