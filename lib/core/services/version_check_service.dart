@@ -162,6 +162,9 @@ class VersionCheckService extends ChangeNotifier {
 
   /// Get the appropriate version config for current platform
   VersionConfig get _platformConfig {
+    if (kIsWeb) {
+      return VersionConfig.defaultConfig;
+    }
     if (Platform.isAndroid) {
       return _androidConfig ?? VersionConfig.defaultConfig;
     } else if (Platform.isIOS) {

@@ -13,6 +13,7 @@ import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
+import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -430,7 +431,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
   }
 
-  /// Grant 100 free coins daily (once per calendar day)
+  /// Grant 20 free coins daily (once per calendar day)
   Future<void> _grantDailyFreeCoins() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -443,7 +444,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final coinDs = di.sl<CoinRemoteDataSource>();
       await coinDs.updateBalance(
         userId: widget.userId,
-        amount: 100,
+        amount: 20,
         type: CoinTransactionType.credit,
         reason: CoinTransactionReason.dailyLoginStreakReward,
         metadata: {'type': 'daily_free_coins', 'date': todayKey},
@@ -456,7 +457,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         _coinBloc.add(LoadCoinBalance(widget.userId));
       }
 
-      debugPrint('Daily free coins: Granted 100 coins for $todayKey');
+      debugPrint('Daily free coins: Granted 20 coins for $todayKey');
     } catch (e) {
       debugPrint('Daily free coins: Error: $e');
     }
@@ -1302,7 +1303,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
-          // RIGHT side: search, filter, grid toggle
+          // RIGHT side: help, search, filter, grid toggle
+          IconButton(
+            icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const AppGuideScreen()),
+              );
+            },
+            tooltip: AppLocalizations.of(context)!.guideTitle,
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
+          ),
           IconButton(
             icon: const Icon(Icons.search, color: AppColors.textSecondary, size: 22),
             onPressed: _showNicknameSearch,

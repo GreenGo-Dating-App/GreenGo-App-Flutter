@@ -5,9 +5,11 @@ import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
 import '../../../matching/domain/entities/match_score.dart';
+import '../../../matching/domain/usecases/feature_engineer.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../models/match_model.dart';
@@ -260,6 +262,80 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         }).toList();
       }
 
+      // Get user location for distance sorting (used by fallback and final sort)
+      final userLoc = currentUserData != null
+          ? (currentUserData['effectiveLocation'] as Map<String, dynamic>? ??
+             currentUserData['location'] as Map<String, dynamic>? ?? {})
+          : <String, dynamic>{};
+      final userLat = (userLoc['latitude'] as num?)?.toDouble() ?? 0.0;
+      final userLng = (userLoc['longitude'] as num?)?.toDouble() ?? 0.0;
+      final fe = FeatureEngineer();
+
+      // Worldwide fallback: if pool has fewer than 500 candidates,
+      // fill up to 500 with the closest worldwide profiles.
+      // This ensures new users in small countries still see a full grid.
+      const minCandidates = 500;
+      if (filteredCandidates.length < minCandidates) {
+        print('[Discovery] Pool has ${filteredCandidates.length} candidates (< $minCandidates), fetching worldwide fallback');
+
+        // Fetch worldwide candidates (no country restriction)
+        final worldwideCandidates = await matchingDataSource.getMatchCandidates(
+          userId: userId,
+          preferences: matching.MatchPreferences(
+            userId: preferences.userId,
+            minAge: preferences.minAge,
+            maxAge: preferences.maxAge,
+            maxDistance: 99999.0,
+            preferredGenders: preferredGenders,
+            showOnlyVerified: preferences.onlyVerified,
+            preferredCountries: const [], // No country filter
+            updatedAt: DateTime.now(),
+          ),
+          limit: 500,
+        );
+
+        // Collect IDs already in filtered list
+        final existingIds = filteredCandidates
+            .map((c) => c.profile.userId)
+            .toSet();
+
+        // Get worldwide candidates not already included
+        var worldwideNew = worldwideCandidates
+            .where((c) => !existingIds.contains(c.profile.userId))
+            .toList();
+
+        // Sort worldwide candidates by distance to user (closest first)
+        if (userLat != 0 && userLng != 0) {
+          worldwideNew.sort((a, b) {
+            final aLoc = a.profile.effectiveLocation;
+            final bLoc = b.profile.effectiveLocation;
+            final aDist = fe.calculateDistance(userLat, userLng, aLoc.latitude, aLoc.longitude);
+            final bDist = fe.calculateDistance(userLat, userLng, bLoc.latitude, bLoc.longitude);
+            return aDist.compareTo(bDist);
+          });
+        }
+
+        // Fill up to minCandidates
+        final needed = minCandidates - filteredCandidates.length;
+        final toAdd = worldwideNew.take(needed).toList();
+        filteredCandidates.addAll(toAdd);
+
+        print('[Discovery] Added ${toAdd.length} worldwide candidates (total: ${filteredCandidates.length})');
+      }
+
+      // Always sort the entire pool by distance so nearest profiles appear
+      // first in grid mode — critical for user experience in small countries
+      if (userLat != 0 && userLng != 0) {
+        filteredCandidates.sort((a, b) {
+          final aLoc = a.profile.effectiveLocation;
+          final bLoc = b.profile.effectiveLocation;
+          final aDist = fe.calculateDistance(userLat, userLng, aLoc.latitude, aLoc.longitude);
+          final bDist = fe.calculateDistance(userLat, userLng, bLoc.latitude, bLoc.longitude);
+          return aDist.compareTo(bDist);
+        });
+        print('[Discovery] Sorted ${filteredCandidates.length} candidates by distance');
+      }
+
       // Apply online-only filter
       if (preferences.onlyOnlineNow) {
         filteredCandidates = filteredCandidates
@@ -374,6 +450,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
               candidateProfile.incognitoExpiry!.isAfter(now))) {
         if (candidateProfile.isTravelerActive) print('[Discovery] TRAVELER ${candidateProfile.nickname} EXCLUDED: incognito');
         print('[Discovery] Excluded ${candidateProfile.displayName}: incognito');
+        continue;
+      }
+
+      // Skip test users — testers should never be visible to regular users
+      if (!isCurrentUserPrivileged &&
+          candidateProfile.membershipTier == MembershipTier.test) {
+        print('[Discovery] Excluded ${candidateProfile.displayName}: tester account');
         continue;
       }
 
@@ -846,7 +929,77 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Send match notifications to BOTH users
     await _sendMatchNotifications(userId, targetUserId, createdMatch.matchId);
 
+    // Create conversation with "Start Connecting!" system message for both users
+    await _createMatchConversation(
+      userId1: userId,
+      userId2: targetUserId,
+      matchId: createdMatch.matchId,
+    );
+
     return createdMatch;
+  }
+
+  /// Create a conversation for a new match with a system message visible to both users
+  Future<void> _createMatchConversation({
+    required String userId1,
+    required String userId2,
+    required String matchId,
+  }) async {
+    try {
+      // Check if conversation already exists for this match
+      final existing = await firestore
+          .collection('conversations')
+          .where('matchId', isEqualTo: matchId)
+          .limit(1)
+          .get();
+
+      if (existing.docs.isNotEmpty) return;
+
+      final conversationRef = firestore.collection('conversations').doc();
+      final now = Timestamp.now();
+
+      await conversationRef.set({
+        'conversationId': conversationRef.id,
+        'matchId': matchId,
+        'userId1': userId1,
+        'userId2': userId2,
+        'createdAt': now,
+        'unreadCount': 0,
+        'isTyping': false,
+        'isPinned': false,
+        'isMuted': false,
+        'isArchived': false,
+        'isDeleted': false,
+        'lastMessageAt': now,
+      });
+
+      // Create "Start Connecting!" system message visible to both users
+      final msgRef = conversationRef.collection('messages').doc();
+      await msgRef.set({
+        'messageId': msgRef.id,
+        'senderId': 'system',
+        'receiverId': 'all',
+        'content': 'Start Connecting!',
+        'type': 'system',
+        'sentAt': now,
+        'status': 'sent',
+      });
+
+      // Update lastMessage on the conversation
+      await conversationRef.update({
+        'lastMessage': {
+          'messageId': msgRef.id,
+          'senderId': 'system',
+          'receiverId': 'all',
+          'content': 'Start Connecting!',
+          'type': 'system',
+          'sentAt': now,
+        },
+      });
+    } catch (e) {
+      // Silently fail — conversation will be created on-demand when user opens chat
+      print('[Discovery] Failed to create match conversation: $e');
+    }
   }
 
   /// Send match notifications to both users
@@ -866,7 +1019,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId1,
         type: 'new_match',
-        title: "Let's Exchange!",
+        title: "Start Connecting!",
         message: "You matched with $displayName2. Start chatting now.",
         data: {
           'matchId': matchId,
@@ -881,7 +1034,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId2,
         type: 'new_match',
-        title: "Let's Exchange!",
+        title: "Start Connecting!",
         message: "You matched with $displayName1. Start chatting now.",
         data: {
           'matchId': matchId,

@@ -115,11 +115,16 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
+          bottomChild: LuxuryButton(
+            text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
+            onPressed: _handleContinue,
+          ),
           child: Form(
             key: _formKey,
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Name Field
@@ -176,15 +181,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
                     }).toList(),
                   ),
 
-                  const SizedBox(height: 48),
-
-                  // Continue Button
-                  LuxuryButton(
-                    text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
-                    onPressed: _handleContinue,
-                  ),
-
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 16),
                 ],
               ),
             ),

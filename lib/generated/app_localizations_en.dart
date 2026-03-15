@@ -1457,7 +1457,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get blindDateLetsExchange => 'Let\'s Exchange!';
+  String get blindDateLetsExchange => 'Start Connecting!';
 
   @override
   String get blindDateMatchMessage =>
@@ -5033,7 +5033,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get inviteFriends => 'Invite Friends';
 
   @override
-  String get itsAMatch => 'Let\'s Exchange!';
+  String get itsAMatch => 'Start Connecting!';
 
   @override
   String get joinMessage => 'Join GreenGoChat and find your perfect match';
@@ -5752,7 +5752,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get letsChat => 'Let\'s Chat!';
 
   @override
-  String get letsExchange => 'Let\'s Exchange!';
+  String get letsExchange => 'Start Connecting!';
 
   @override
   String get levelLabel => 'Level';
@@ -5925,7 +5925,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get matchNotifLetsChat => 'Let\'s Chat!';
 
   @override
-  String get matchNotifLetsExchange => 'LET\'S EXCHANGE!';
+  String get matchNotifLetsExchange => 'START CONNECTING!';
 
   @override
   String get matchNotifViewProfile => 'View Profile';
@@ -5994,6 +5994,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get maybeLater => 'Maybe Later';
+
+  @override
+  String get discoverWorldwideTitle => 'Expand your horizons!';
+
+  @override
+  String get discoverWorldwideMessage =>
+      'There aren\'t many people in your area yet, but GreenGo connects you with people worldwide! Go to Filters and add more countries to discover amazing people from around the globe.';
+
+  @override
+  String get openFilters => 'Open Filters';
 
   @override
   String membershipActivatedMessage(
@@ -7113,6 +7123,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'No country filter — showing worldwide';
 
   @override
+  String get preferenceCountryRequired =>
+      'At least one country must be selected';
+
+  @override
+  String get preferenceByUsers => 'By users';
+
+  @override
   String get preferenceNoDealBreakers => 'No deal breakers set';
 
   @override
@@ -8056,7 +8073,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'You and this person both like each other! Start a conversation.';
 
   @override
-  String get secondChanceMatchTitle => 'Let\'s Exchange!';
+  String get secondChanceMatchTitle => 'Start Connecting!';
 
   @override
   String get secondChanceOutOf => 'Out of Second Chances';
@@ -9585,4 +9602,191 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get noBadgesYet => 'Unlock achievements to earn badges!';
+
+  @override
+  String get guideTitle => 'How GreenGo Works';
+
+  @override
+  String get guideSwipeTitle => 'Swiping Profiles';
+
+  @override
+  String get guideSwipeItem1 =>
+      'Swipe right to Connect with someone, swipe left to Nope.';
+
+  @override
+  String get guideSwipeItem2 =>
+      'Swipe up to send a Priority Connect (uses coins).';
+
+  @override
+  String get guideSwipeItem3 =>
+      'Swipe down to Explore Next and skip a profile for now.';
+
+  @override
+  String get guideSwipeItem4 =>
+      'You can switch between swipe and grid mode using the toggle icon in the top bar.';
+
+  @override
+  String get guideGridTitle => 'Grid View';
+
+  @override
+  String get guideGridItem1 =>
+      'Browse profiles in a grid layout for a quick overview.';
+
+  @override
+  String get guideGridItem2 =>
+      'Tap on a profile image to reveal the four action buttons: Connect, Priority Connect, Nope, and Explore Next.';
+
+  @override
+  String get guideGridItem3 =>
+      'Long press on a profile image to see their details without opening the full profile.';
+
+  @override
+  String get guideConnectionsTitle => 'Connecting with People';
+
+  @override
+  String get guideConnectionsItem1 =>
+      'When two people Connect with each other, it\'s a match!';
+
+  @override
+  String get guideConnectionsItem2 =>
+      'After matching, you can start chatting right away.';
+
+  @override
+  String get guideConnectionsItem3 =>
+      'Use Priority Connect to stand out and increase your chances.';
+
+  @override
+  String get guideConnectionsItem4 =>
+      'Check the Exchanges tab to see all your matches and conversations.';
+
+  @override
+  String get guideChatTitle => 'Chat & Messaging';
+
+  @override
+  String get guideChatItem1 => 'Send text messages, photos, and voice notes.';
+
+  @override
+  String get guideChatItem2 =>
+      'Use the translation feature to chat in different languages.';
+
+  @override
+  String get guideChatItem3 =>
+      'Open chat settings to customize your experience: toggle grammar check, smart replies, cultural tips, word breakdown, pronunciation help, and more.';
+
+  @override
+  String get guideChatItem4 =>
+      'Enable text-to-speech to hear translations, show language flags, and track your language learning XP.';
+
+  @override
+  String get guideFiltersTitle => 'Discovery Filters';
+
+  @override
+  String get guideFiltersItem1 =>
+      'Tap the filter icon to set your preferences: age range, distance, languages, and more.';
+
+  @override
+  String get guideFiltersItem2 =>
+      'Country filter is optional. When no country is selected, you\'ll see the closest people worldwide (up to 500). Add countries to narrow your search to specific regions.';
+
+  @override
+  String get guideFiltersItem3 =>
+      'Filters help you find people who match what you\'re looking for. You can adjust them anytime.';
+
+  @override
+  String get guideTravelTitle => 'Travel & Explore';
+
+  @override
+  String get guideTravelItem1 =>
+      'Activate Traveler Mode to appear in discovery for a city you plan to visit for 24 hours.';
+
+  @override
+  String get guideTravelItem2 =>
+      'Local Guides can help travelers discover their city and culture.';
+
+  @override
+  String get guideTravelItem3 =>
+      'Language exchange partners are matched based on what you speak and what you want to learn.';
+
+  @override
+  String get guideMembershipTitle => 'Base Membership';
+
+  @override
+  String get guideMembershipItem1 =>
+      'Your base membership gives you access to all core features: swiping, chatting, and matching.';
+
+  @override
+  String get guideMembershipItem2 =>
+      'Membership starts with a free trial after your first sign-up.';
+
+  @override
+  String get guideMembershipItem3 =>
+      'When your membership expires, you can renew it to continue using the app.';
+
+  @override
+  String get guideTiersTitle => 'VIP Tiers (Silver, Gold, Platinum)';
+
+  @override
+  String get guideTiersItem1 =>
+      'Silver: Get more daily connects, see who connected with you, and priority support.';
+
+  @override
+  String get guideTiersItem2 =>
+      'Gold: Everything in Silver plus unlimited connects, advanced filters, and read receipts.';
+
+  @override
+  String get guideTiersItem3 =>
+      'Platinum: Everything in Gold plus profile boost, top picks, and exclusive features.';
+
+  @override
+  String get guideTiersItem4 =>
+      'VIP tiers are independent from your base membership and provide extra perks.';
+
+  @override
+  String get guideCoinsTitle => 'Coins';
+
+  @override
+  String get guideCoinsItem1 =>
+      'Coins are used for premium actions. Here are the costs:';
+
+  @override
+  String get guideCoinsItem2 =>
+      '• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Message: 50 coins';
+
+  @override
+  String get guideCoinsItem3 =>
+      '• Incognito: 30 coins/day  • Traveler: 100 coins/day';
+
+  @override
+  String get guideCoinsItem4 =>
+      '• Listen (TTS): 5 coins  • Grid Extend: 10 coins  • Learning Coach: 10 coins/session';
+
+  @override
+  String get guideCoinsItem5 =>
+      'You receive 20 free coins daily. Earn more through achievements, leaderboard rankings, and the Shop.';
+
+  @override
+  String get guideLeaderboardTitle => 'Leaderboard';
+
+  @override
+  String get guideLeaderboardItem1 =>
+      'Compete with other users to climb the leaderboard and earn rewards.';
+
+  @override
+  String get guideLeaderboardItem2 =>
+      'Earn points by being active, completing your profile, and engaging with others.';
+
+  @override
+  String get guideSafetyTitle => 'Safety & Privacy';
+
+  @override
+  String get guideSafetyItem1 =>
+      'All photos are AI-verified to ensure authentic profiles.';
+
+  @override
+  String get guideSafetyItem2 =>
+      'You can block or report any user at any time from their profile.';
+
+  @override
+  String get guideSafetyItem3 =>
+      'Your personal information is protected and never shared without your consent.';
 }

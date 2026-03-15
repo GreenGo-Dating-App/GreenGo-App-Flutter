@@ -97,13 +97,17 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+          bottomChild: LuxuryButton(
+            text: l10n.next,
+            onPressed: () => _handleContinue(state.verificationPhotoUrl),
+            isLoading: isUploading,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 16),
-
                 // Instructions
                 Container(
                   padding: const EdgeInsets.all(16),
@@ -166,16 +170,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
                       ),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 32),
-
-                // Continue Button
-                LuxuryButton(
-                  text: l10n.next,
-                  onPressed: () => _handleContinue(state.verificationPhotoUrl),
-                  isLoading: isUploading,
-                ),
-
-                const SizedBox(height: 32),
+                const SizedBox(height: 16),
               ],
             ),
           ),

@@ -139,6 +139,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   int _swipeShuffledForHash = 0; // Track which card set was shuffled
   int _swipeCurrentIndex = 0; // Current position in shuffled swipe cards
 
+  // Small country popup - show once per session
+  bool _shownSmallCountryPopup = false;
+
   // Online status refresh
   Timer? _onlineStatusTimer;
   final Map<String, bool> _onlineStatusOverrides = {}; // userId -> isOnline
@@ -149,9 +152,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   MatchPreferences get _currentPreferences =>
       _savedPreferences ?? MatchPreferences.defaultFor(userId);
 
-  /// Get grid profile limit — fixed at 50 profiles per page
+  /// Get grid profile limit — starts at 50, extends up to max 500
+  static const int _gridMaxProfiles = 500;
   int get _gridProfileLimit {
-    return 50 + (_gridExtraPurchased * _gridColumns * 3);
+    final limit = 50 + (_gridExtraPurchased * _gridColumns * 3);
+    return limit.clamp(0, _gridMaxProfiles);
   }
 
   @override
@@ -182,6 +187,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     } catch (e) {
       debugPrint('Could not load saved preferences: $e');
     }
+
+    // If no preferences exist yet, use defaults (no country filter = worldwide)
+    _savedPreferences ??= MatchPreferences.defaultFor(userId);
 
     if (mounted) {
       context.read<DiscoveryBloc>().add(DiscoveryStackLoadRequested(
@@ -457,6 +465,21 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   backgroundColor: Colors.red.shade700,
                 ),
               );
+            }
+            // Show popup when filters result in < 50 profiles (once per session)
+            if (state is DiscoveryLoaded && !_shownSmallCountryPopup) {
+              _shownSmallCountryPopup = true;
+              final prefs = _currentPreferences;
+              final hasActiveFilter = prefs.preferredCountries.isNotEmpty ||
+                  prefs.preferredInterests.isNotEmpty ||
+                  prefs.travelersOnly ||
+                  prefs.localGuidesOnly ||
+                  (prefs.maxDistanceKm != null && prefs.maxDistanceKm! < 500);
+              if (state.cards.length < 50 && hasActiveFilter) {
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  if (mounted) _showSmallCountryPopup(context);
+                });
+              }
             }
             if (state is DiscoveryInsufficientCoins) {
               _showInsufficientCoinsDialog(context, state);
@@ -883,7 +906,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final limit = _gridProfileLimit;
     final visibleCount = filteredCards.length.clamp(0, limit);
     final visibleCards = filteredCards.take(visibleCount).toList();
-    final hasMore = filteredCards.length > limit;
+    final hasMore = filteredCards.length > limit && limit < _gridMaxProfiles;
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
 
         return Column(
@@ -1403,7 +1426,19 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   /// Refresh the discovery stack
   void refresh() {
+    // Clear all grid action state so the grid looks brand new
+    setState(() {
+      _gridActionOverlays.clear();
+      _gridSkippedIds.clear();
+      _gridStartIndex = 0;
+      _gridExtraPurchased = 0;
+      _onlineStatusOverrides.clear();
+      _swipeShuffledCards = [];
+      _swipeShuffledForHash = 0;
+      _swipeCurrentIndex = 0;
+    });
     _loadSavedPreferencesAndStart();
+    _loadSwipeHistoryOverlays();
   }
 
   /// Refresh with new preferences — resets grid state and reloads stack
@@ -1591,6 +1626,61 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         },
       );
     }
+  }
+
+  void _showSmallCountryPopup(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            const Icon(Icons.travel_explore, color: AppColors.richGold, size: 28),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                l10n.discoverWorldwideTitle,
+                style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
+        content: Text(
+          l10n.discoverWorldwideMessage,
+          style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.5),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: Text(l10n.maybeLater, style: const TextStyle(color: AppColors.textTertiary)),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(ctx).pop();
+              // Open the filter/preferences screen
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => DiscoveryPreferencesScreen(
+                    userId: userId,
+                    currentPreferences: _savedPreferences,
+                    onSave: (newPrefs) {
+                      refreshWithPreferences(newPrefs);
+                    },
+                  ),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+            child: Text(l10n.openFilters, style: const TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
   }
 
   void _showInsufficientCoinsDialog(BuildContext context, DiscoveryInsufficientCoins state) {

@@ -282,7 +282,12 @@ class _Step5LocationLanguageScreenState
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,
           ),
+          bottomChild: LuxuryButton(
+            text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
+            onPressed: _handleContinue,
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
@@ -433,33 +438,24 @@ class _Step5LocationLanguageScreenState
               ),
 
               // Languages List
-              Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: Wrap(
-                    spacing: 10,
-                    runSpacing: 10,
-                    children: _availableLanguages.map((language) {
-                      final isSelected = _selectedLanguages.contains(language);
-                      return LuxuryChip(
-                        label: language,
-                        isSelected: isSelected,
-                        onTap: () => _toggleLanguage(language),
-                        icon: isSelected ? Icons.check_circle : null,
-                      );
-                    }).toList(),
-                  ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: _availableLanguages.map((language) {
+                    final isSelected = _selectedLanguages.contains(language);
+                    return LuxuryChip(
+                      label: language,
+                      isSelected: isSelected,
+                      onTap: () => _toggleLanguage(language),
+                      icon: isSelected ? Icons.check_circle : null,
+                    );
+                  }).toList(),
                 ),
               ),
 
-              // Bottom Section
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 16, 0, 24),
-                child: LuxuryButton(
-                  text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
-                  onPressed: _handleContinue,
-                ),
-              ),
+              const SizedBox(height: 16),
             ],
           ),
         );

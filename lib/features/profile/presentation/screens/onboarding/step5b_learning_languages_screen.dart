@@ -102,7 +102,40 @@ class _Step5bLearningLanguagesScreenState
           onBack: () {
             context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
           },
+          bottomChild: SizedBox(
+            width: double.infinity,
+            height: 52,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: ElevatedButton(
+                onPressed: () {
+                  context.read<OnboardingBloc>().add(
+                    OnboardingLearningLanguagesUpdated(
+                      preferredLanguages: _selectedLanguages,
+                      nativeLanguage: _nativeLanguage,
+                    ),
+                  );
+                  context.read<OnboardingBloc>().add(const OnboardingNextStep());
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.richGold,
+                  foregroundColor: Colors.black,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: Text(
+                  _selectedLanguages.isEmpty ? 'Skip' : 'Next',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Native language selector
@@ -200,16 +233,17 @@ class _Step5bLearningLanguagesScreenState
               ],
 
               // Language grid
-              Expanded(
-                child: GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 3,
-                    crossAxisSpacing: 8,
-                    mainAxisSpacing: 8,
-                  ),
-                  itemCount: _filteredLanguages.length,
-                  itemBuilder: (context, index) {
+              GridView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 3,
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
+                ),
+                itemCount: _filteredLanguages.length,
+                itemBuilder: (context, index) {
                     final language = _filteredLanguages[index];
                     final isSelected = _selectedLanguages.contains(language);
                     final isNative = _nativeLanguage == language;
@@ -271,38 +305,7 @@ class _Step5bLearningLanguagesScreenState
                   },
                 ),
               ),
-              const SizedBox(height: 24),
-              // Next / Skip button
-              SizedBox(
-                width: double.infinity,
-                height: 52,
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Save language selections
-                    context.read<OnboardingBloc>().add(
-                      OnboardingLearningLanguagesUpdated(
-                        preferredLanguages: _selectedLanguages,
-                        nativeLanguage: _nativeLanguage,
-                      ),
-                    );
-                    context.read<OnboardingBloc>().add(const OnboardingNextStep());
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(
-                    _selectedLanguages.isEmpty ? 'Skip' : 'Next',
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-              ),
+              const SizedBox(height: 16),
             ],
           ),
         );

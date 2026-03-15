@@ -245,7 +245,7 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
 
 /// Coin feature prices (Point 161)
 class CoinFeaturePrices {
-  static const int superLike = 20;
+  static const int superLike = 10;
   static const int boost = 50;
   static const int undo = 3;
   static const int seeWhoLikedYou = 20;

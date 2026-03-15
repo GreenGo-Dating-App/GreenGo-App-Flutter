@@ -277,7 +277,9 @@ class _DiscoveryPreferencesScreenState
 
     // Fetch top countries from Firestore
     List<MapEntry<String, int>> topCountries = [];
+    Map<String, int> countryUserCounts = {};
     bool isLoadingTop = true;
+    bool sortByUsers = false; // false = alphabetical, true = by user count
 
     showDialog(
       context: context,
@@ -291,6 +293,7 @@ class _DiscoveryPreferencesScreenState
                   topCountries = result
                       .where((e) => !_preferences.preferredCountries.contains(e.key))
                       .toList();
+                  countryUserCounts = {for (final e in result) e.key: e.value};
                   isLoadingTop = false;
                 });
               });
@@ -298,11 +301,20 @@ class _DiscoveryPreferencesScreenState
 
             final query = searchController.text.toLowerCase();
             final isSearching = query.isNotEmpty;
-            final filtered = isSearching
+            var filtered = isSearching
                 ? availableCountries
                     .where((c) => c.toLowerCase().contains(query))
                     .toList()
-                : availableCountries;
+                : availableCountries.toList();
+
+            // Sort by user count (descending) when toggled
+            if (sortByUsers && !isLoadingTop) {
+              filtered.sort((a, b) {
+                final aCount = countryUserCounts[a] ?? 0;
+                final bCount = countryUserCounts[b] ?? 0;
+                return bCount.compareTo(aCount); // Descending
+              });
+            }
 
             // Top country names for marking in the full list
             final topCountryNames = topCountries.map((e) => e.key).toSet();
@@ -336,12 +348,65 @@ class _DiscoveryPreferencesScreenState
                       ),
                       onChanged: (_) => setDialogState(() {}),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 8),
+                    // Sort toggle: Alphabetical / By Users
+                    Row(
+                      children: [
+                        Expanded(
+                          child: GestureDetector(
+                            onTap: () => setDialogState(() => sortByUsers = false),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              decoration: BoxDecoration(
+                                color: !sortByUsers ? AppColors.richGold.withOpacity(0.15) : Colors.transparent,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: !sortByUsers ? AppColors.richGold : AppColors.divider,
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.sort_by_alpha, size: 16, color: !sortByUsers ? AppColors.richGold : AppColors.textTertiary),
+                                  const SizedBox(width: 4),
+                                  Text('A-Z', style: TextStyle(color: !sortByUsers ? AppColors.richGold : AppColors.textTertiary, fontSize: 13, fontWeight: FontWeight.w600)),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: GestureDetector(
+                            onTap: () => setDialogState(() => sortByUsers = true),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              decoration: BoxDecoration(
+                                color: sortByUsers ? AppColors.richGold.withOpacity(0.15) : Colors.transparent,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: sortByUsers ? AppColors.richGold : AppColors.divider,
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.people, size: 16, color: sortByUsers ? AppColors.richGold : AppColors.textTertiary),
+                                  const SizedBox(width: 4),
+                                  Text(AppLocalizations.of(context)!.preferenceByUsers, style: TextStyle(color: sortByUsers ? AppColors.richGold : AppColors.textTertiary, fontSize: 13, fontWeight: FontWeight.w600)),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
                     Expanded(
                       child: ListView(
                         children: [
-                          // Top 10 countries section (shown before search, hidden during search)
-                          if (!isSearching && topCountries.isNotEmpty) ...[
+                          // Top 10 countries section (shown when alphabetical, hidden during search or user-count sort)
+                          if (!isSearching && !sortByUsers && topCountries.isNotEmpty) ...[
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
                               child: Row(
@@ -432,6 +497,7 @@ class _DiscoveryPreferencesScreenState
                           else
                             ...filtered.map((country) {
                               final isTop = topCountryNames.contains(country);
+                              final userCount = countryUserCounts[country] ?? 0;
                               return ListTile(
                                 leading: Icon(
                                   isTop ? Icons.star : Icons.public,
@@ -445,6 +511,15 @@ class _DiscoveryPreferencesScreenState
                                     fontWeight: isTop ? FontWeight.w600 : FontWeight.normal,
                                   ),
                                 ),
+                                trailing: (sortByUsers || isTop) && userCount > 0
+                                    ? Text(
+                                        '$userCount',
+                                        style: const TextStyle(
+                                          color: AppColors.textTertiary,
+                                          fontSize: 12,
+                                        ),
+                                      )
+                                    : null,
                                 onTap: () {
                                   _updatePreferences(
                                     _preferences.copyWith(
@@ -791,14 +866,14 @@ class _DiscoveryPreferencesScreenState
                                 color: AppColors.errorRed,
                               ),
                               onDeleted: () {
-                                _updatePreferences(
-                                  _preferences.copyWith(
-                                    preferredCountries: List.from(
-                                        _preferences.preferredCountries)
-                                      ..remove(country),
-                                  ),
-                                );
-                              },
+                                      _updatePreferences(
+                                        _preferences.copyWith(
+                                          preferredCountries: List.from(
+                                              _preferences.preferredCountries)
+                                            ..remove(country),
+                                        ),
+                                      );
+                                    },
                               backgroundColor: AppColors.backgroundDark,
                               side: const BorderSide(color: AppColors.richGold),
                             ))

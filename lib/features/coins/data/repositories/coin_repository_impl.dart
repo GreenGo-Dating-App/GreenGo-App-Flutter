@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/coin_balance.dart';
@@ -233,6 +234,26 @@ class CoinRepositoryImpl implements CoinRepository {
     String? relatedId,
   }) async {
     try {
+      // Testers use all features for free — skip coin deduction
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(userId)
+          .get();
+      final memberTier = profileDoc.data()?['membershipTier'] as String? ?? '';
+      if (memberTier == 'test' || memberTier == 'TEST') {
+        // Return a dummy transaction for testers (no actual deduction)
+        return Right(CoinTransaction(
+          transactionId: 'tester_free_${DateTime.now().millisecondsSinceEpoch}',
+          userId: userId,
+          amount: 0,
+          balanceAfter: 0,
+          type: CoinTransactionType.debit,
+          reason: _getReasonFromFeature(featureName),
+          createdAt: DateTime.now(),
+          metadata: {'feature': featureName, 'tester': true},
+        ));
+      }
+
       // Get reason from feature name
       final reason = _getReasonFromFeature(featureName);
 
@@ -263,6 +284,16 @@ class CoinRepositoryImpl implements CoinRepository {
     required int cost,
   }) async {
     try {
+      // Testers can always afford any feature
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(userId)
+          .get();
+      final memberTier = profileDoc.data()?['membershipTier'] as String? ?? '';
+      if (memberTier == 'test' || memberTier == 'TEST') {
+        return const Right(true);
+      }
+
       final balance = await remoteDataSource.getBalance(userId);
       return Right(balance.availableCoins >= cost);
     } catch (e) {
