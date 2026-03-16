@@ -6000,7 +6000,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discoverWorldwideMessage =>
-      'There aren\'t many people in your area yet, but GreenGo connects you with people worldwide! Go to Filters and add more countries to discover amazing people from around the globe.';
+      'There aren\'t many people in your country yet, so we\'re also showing you people from other countries close to you and around the world. The more you explore, the more connections you\'ll find!';
 
   @override
   String get openFilters => 'Open Filters';
@@ -9789,4 +9789,29 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get guideSafetyItem3 =>
       'Your personal information is protected and never shared without your consent.';
+
+  @override
+  String get firstStepsTitle => 'First Steps';
+
+  @override
+  String get firstStepsReview =>
+      'Your documents will be reviewed within 24-48 hours after submission.';
+
+  @override
+  String get firstStepsStatusUpdate =>
+      'The app needs approximately 15 minutes to update your current status after first login.';
+
+  @override
+  String get firstStepsSupportChat =>
+      'You can contact support through chat or by opening a ticket directly.';
+
+  @override
+  String get showSupportUser => 'Show GreenGo Support';
+
+  @override
+  String get showSupportUserDescription =>
+      'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get yourProfile => 'You';
 }

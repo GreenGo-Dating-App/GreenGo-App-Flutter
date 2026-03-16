@@ -13,6 +13,15 @@ class AppGuideScreen extends StatelessWidget {
 
     final sections = [
       _GuideSection(
+        icon: Icons.rocket_launch,
+        title: l10n.firstStepsTitle,
+        items: [
+          l10n.firstStepsReview,
+          l10n.firstStepsStatusUpdate,
+          l10n.firstStepsSupportChat,
+        ],
+      ),
+      _GuideSection(
         icon: Icons.swipe,
         title: l10n.guideSwipeTitle,
         items: [

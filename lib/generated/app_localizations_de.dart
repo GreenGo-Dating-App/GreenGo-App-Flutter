@@ -9911,4 +9911,29 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get guideSafetyItem3 =>
       'Deine persönlichen Daten sind geschützt und werden niemals ohne deine Zustimmung weitergegeben.';
+
+  @override
+  String get firstStepsTitle => 'First Steps';
+
+  @override
+  String get firstStepsReview =>
+      'Your documents will be reviewed within 24-48 hours after submission.';
+
+  @override
+  String get firstStepsStatusUpdate =>
+      'The app needs approximately 15 minutes to update your current status after first login.';
+
+  @override
+  String get firstStepsSupportChat =>
+      'You can contact support through chat or by opening a ticket directly.';
+
+  @override
+  String get showSupportUser => 'Show GreenGo Support';
+
+  @override
+  String get showSupportUserDescription =>
+      'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get yourProfile => 'You';
 }

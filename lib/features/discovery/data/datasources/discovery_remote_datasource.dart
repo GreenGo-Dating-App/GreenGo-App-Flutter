@@ -435,11 +435,18 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
       final candidateProfile = candidate.profile;
-      final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
+      final isPrivileged = candidateProfile.isAdmin ||
+          (candidateProfile.isSupport && preferences.showSupportUser);
 
-      // Admin/support always visible — skip match/block/incognito/swipe filters
+      // Admin always visible; support visible only when showSupportUser is true
+      // Skip match/block/incognito/swipe filters for privileged profiles
       if (isPrivileged) {
         priority0Boosted.add(candidate);
+        continue;
+      }
+
+      // Support profiles hidden when showSupportUser is false — skip entirely
+      if (candidateProfile.isSupport && !preferences.showSupportUser) {
         continue;
       }
 

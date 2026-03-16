@@ -17,6 +17,7 @@ class MatchPreferences extends Equatable {
   final List<String> preferredInterests; // filter by shared interests (empty = show all)
   final bool travelersOnly; // true = only show active travelers
   final bool localGuidesOnly; // true = only show local guides
+  final bool showSupportUser; // true = show GreenGo Support user in discovery grid
 
   const MatchPreferences({
     required this.userId,
@@ -35,6 +36,7 @@ class MatchPreferences extends Equatable {
     this.preferredInterests = const [],
     this.travelersOnly = false,
     this.localGuidesOnly = false,
+    this.showSupportUser = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -54,6 +56,7 @@ class MatchPreferences extends Equatable {
       preferredInterests: const [],
       travelersOnly: false,
       localGuidesOnly: false,
+      showSupportUser: false,
     );
   }
 
@@ -76,6 +79,7 @@ class MatchPreferences extends Equatable {
     List<String>? preferredInterests,
     bool? travelersOnly,
     bool? localGuidesOnly,
+    bool? showSupportUser,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -94,6 +98,7 @@ class MatchPreferences extends Equatable {
       preferredInterests: preferredInterests ?? this.preferredInterests,
       travelersOnly: travelersOnly ?? this.travelersOnly,
       localGuidesOnly: localGuidesOnly ?? this.localGuidesOnly,
+      showSupportUser: showSupportUser ?? this.showSupportUser,
     );
   }
 
@@ -116,6 +121,7 @@ class MatchPreferences extends Equatable {
       'preferredInterests': preferredInterests,
       'travelersOnly': travelersOnly,
       'localGuidesOnly': localGuidesOnly,
+      'showSupportUser': showSupportUser,
     };
   }
 
@@ -150,6 +156,7 @@ class MatchPreferences extends Equatable {
           const [],
       travelersOnly: map['travelersOnly'] as bool? ?? false,
       localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
+      showSupportUser: map['showSupportUser'] as bool? ?? false,
     );
   }
 
@@ -171,5 +178,6 @@ class MatchPreferences extends Equatable {
         preferredInterests,
         travelersOnly,
         localGuidesOnly,
+        showSupportUser,
       ];
 }

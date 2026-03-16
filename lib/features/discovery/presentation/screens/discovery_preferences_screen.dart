@@ -1204,6 +1204,31 @@ class _DiscoveryPreferencesScreenState
                     );
                   },
                 ),
+                const Divider(color: AppColors.divider),
+                SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: Text(
+                    l10n.showSupportUser,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 16,
+                    ),
+                  ),
+                  subtitle: Text(
+                    l10n.showSupportUserDescription,
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 14,
+                    ),
+                  ),
+                  value: _preferences.showSupportUser,
+                  activeColor: AppColors.richGold,
+                  onChanged: (bool value) {
+                    _updatePreferences(
+                      _preferences.copyWith(showSupportUser: value),
+                    );
+                  },
+                ),
               ],
             ),
           ),
