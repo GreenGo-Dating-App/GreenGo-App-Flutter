@@ -186,7 +186,9 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
             candidateLoc.longitude,
           );
 
-          if (distance > preferences.maxDistance) {
+          // When no country filter is active, skip distance filter so users
+          // see people from around the world sorted by distance.
+          if (preferences.preferredCountries.isNotEmpty && distance > preferences.maxDistance) {
             continue;
           }
         }
@@ -269,15 +271,13 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     if (candidatePoolService == null) return null;
 
     try {
-      // Use preferred countries if set, otherwise fall back to user's own country
-      List<String> countries;
-      if (preferences.preferredCountries.isNotEmpty) {
-        countries = preferences.preferredCountries;
-      } else {
-        final country = userProfile.effectiveLocation.country;
-        if (country.isEmpty || country == 'Unknown') return null;
-        countries = [country];
+      // Use preferred countries if set; when no country filter is active,
+      // skip the pool entirely so the fallback full scan returns worldwide profiles.
+      if (preferences.preferredCountries.isEmpty) {
+        debugPrint('[Matching] No country filter — skipping pool, using worldwide fallback');
+        return null;
       }
+      final countries = preferences.preferredCountries;
 
       final poolCandidates = await candidatePoolService!.getCandidatesFromPools(
         countries: countries,
@@ -333,14 +333,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     required MatchPreferences preferences,
   }) async {
     try {
-      List<String> countries;
-      if (preferences.preferredCountries.isNotEmpty) {
-        countries = preferences.preferredCountries.map((c) => c.toLowerCase()).toList();
-      } else {
-        final country = userProfile.effectiveLocation.country;
-        if (country.isEmpty || country == 'Unknown') return [];
-        countries = [country.toLowerCase()];
-      }
+      // When no country filter is active, include all travelers worldwide
+      final bool filterByCountry = preferences.preferredCountries.isNotEmpty;
+      final List<String> countries = filterByCountry
+          ? preferences.preferredCountries.map((c) => c.toLowerCase()).toList()
+          : [];
 
       final now = DateTime.now();
       final travelerIds = <String>[];
@@ -361,12 +358,14 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           continue;
         }
 
-        // Check traveler country matches target countries
-        final travelerLoc = data['travelerLocation'] as Map<String, dynamic>?;
-        if (travelerLoc == null) continue;
-        final travelerCountry = (travelerLoc['country'] as String? ?? '').toLowerCase();
-        if (travelerCountry.isEmpty || !countries.contains(travelerCountry)) {
-          continue;
+        // Check traveler country matches target countries (skip if no filter)
+        if (filterByCountry) {
+          final travelerLoc = data['travelerLocation'] as Map<String, dynamic>?;
+          if (travelerLoc == null) continue;
+          final travelerCountry = (travelerLoc['country'] as String? ?? '').toLowerCase();
+          if (travelerCountry.isEmpty || !countries.contains(travelerCountry)) {
+            continue;
+          }
         }
 
         travelerIds.add(doc.id);
