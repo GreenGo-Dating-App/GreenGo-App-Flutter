@@ -4700,7 +4700,7 @@
   "guideChatItem4": "Enable text-to-speech to hear translations, show language flags, and track your language learning XP.",
   "guideFiltersTitle": "Discovery Filters",
   "guideFiltersItem1": "Tap the filter icon to set your preferences: age range, distance, languages, and more.",
-  "guideFiltersItem2": "Country filter is optional. When no country is selected, you'll see the closest people worldwide (up to 500). Add countries to narrow your search to specific regions.",
+  "guideFiltersItem2": "Random Mode: enable this toggle to discover random people from all over the world, sorted by distance. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.",
   "guideFiltersItem3": "Filters help you find people who match what you're looking for. You can adjust them anytime.",
   "guideTravelTitle": "Travel & Explore",
   "guideTravelItem1": "Activate Traveler Mode to appear in discovery for a city you plan to visit for 24 hours.",
@@ -4734,5 +4734,7 @@
   "firstStepsSupportChat": "You can contact support through chat or by opening a ticket directly.",
   "showSupportUser": "Show GreenGo Support",
   "showSupportUserDescription": "Show GreenGo Support user in discovery grid",
+  "randomMode": "Random Mode",
+  "randomModeDescription": "Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.",
   "yourProfile": "You"
 }

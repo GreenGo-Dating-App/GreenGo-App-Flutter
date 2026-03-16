@@ -9686,7 +9686,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'Country filter is optional. When no country is selected, you\'ll see the closest people worldwide (up to 500). Add countries to narrow your search to specific regions.';
+      'Random Mode: enable this toggle to discover random people from all over the world, sorted by distance. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9811,6 +9811,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get showSupportUserDescription =>
       'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get randomMode => 'Random Mode';
+
+  @override
+  String get randomModeDescription =>
+      'Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.';
 
   @override
   String get yourProfile => 'You';

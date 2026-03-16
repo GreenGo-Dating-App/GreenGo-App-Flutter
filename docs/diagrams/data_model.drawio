@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2026-03-10">
+  <diagram name="Firestore Data Model" id="datamodel">
+    <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="GreenGo Firestore Data Model (ERD)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        <!-- Users/Profiles -->
+        <mxCell id="profiles" value="profiles {userId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;displayName: String&#xa;nickname: String?&#xa;dateOfBirth: Timestamp&#xa;gender: String&#xa;accountStatus: String&#xa;photoUrls: String[]&#xa;bio: String&#xa;interests: String[]&#xa;location: GeoPoint&#xa;languages: String[]&#xa;verificationStatus: String&#xa;membershipTier: String&#xa;isAdmin: Boolean&#xa;isOnline: Boolean&#xa;lastSeen: Timestamp&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;childLayout=tableLayout;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="240" height="340" as="geometry" />
+        </mxCell>
+        <!-- Conversations -->
+        <mxCell id="conversations" value="conversations {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId1: String (FK)&#xa;userId2: String (FK)&#xa;matchId: String (FK)&#xa;lastMessage: Object&#xa;lastMessageAt: Timestamp&#xa;conversationType: String&#xa;createdAt: Timestamp&#xa;&#xa;  ▸ messages (subcollection)&#xa;    senderId: String&#xa;    content: String&#xa;    type: text|image|voice&#xa;    sentAt: Timestamp&#xa;    readAt: Timestamp?" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="260" height="310" as="geometry" />
+        </mxCell>
+        <!-- Matches -->
+        <mxCell id="matches" value="matches {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId1: String (FK)&#xa;userId2: String (FK)&#xa;matchedAt: Timestamp&#xa;isActive: Boolean&#xa;lastMessageAt: Timestamp?&#xa;user1Seen: Boolean&#xa;user2Seen: Boolean" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#e6d0de;fontColor=#000000;strokeColor=#AE4132;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="430" width="240" height="200" as="geometry" />
+        </mxCell>
+        <!-- Swipes -->
+        <mxCell id="swipes" value="swipes {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId: String (FK)&#xa;targetUserId: String (FK)&#xa;actionType: like|nope|superLike&#xa;timestamp: Timestamp&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="260" height="170" as="geometry" />
+        </mxCell>
+        <!-- User Levels -->
+        <mxCell id="user_levels" value="user_levels {userId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;level: Number&#xa;currentXP: Number&#xa;totalXP: Number&#xa;region: String&#xa;regionalRank: Number&#xa;isVIP: Boolean&#xa;lastUpdated: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="80" width="220" height="200" as="geometry" />
+        </mxCell>
+        <!-- XP Transactions -->
+        <mxCell id="xp_txn" value="xp_transactions {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId: String (FK)&#xa;actionType: String&#xa;xpAmount: Number&#xa;newWords: Number?&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="310" width="220" height="170" as="geometry" />
+        </mxCell>
+        <!-- User Vocabulary -->
+        <mxCell id="user_vocab" value="user_vocabulary {userId}&#xa;  ▸ words {lang_word}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;word: String&#xa;language: String&#xa;frequencyScore: Number&#xa;firstUsedAt: Timestamp&#xa;useCount: Number" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="510" width="220" height="180" as="geometry" />
+        </mxCell>
+        <!-- User Stats Cache -->
+        <mxCell id="user_stats" value="user_stats {userId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;totalXp: Number&#xa;level: Number&#xa;messagesSent: Number&#xa;totalConversations: Number&#xa;wordsPerLanguage: Map&#xa;wordsLearnedPerLanguage: Map&#xa;achievementsUnlocked: Number&#xa;challengesCompleted: Number&#xa;dailyActivity: Map&#xa;updatedAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="80" width="250" height="240" as="geometry" />
+        </mxCell>
+        <!-- Coin Balances -->
+        <mxCell id="coinbal" value="coinBalances {userId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;totalCoins: Number&#xa;earnedCoins: Number&#xa;purchasedCoins: Number&#xa;spentCoins: Number&#xa;coinBatches: Object[]&#xa;lastUpdated: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#d79b00;fontColor=#ffffff;strokeColor=#B57900;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="360" width="220" height="170" as="geometry" />
+        </mxCell>
+        <!-- Notifications -->
+        <mxCell id="notifs" value="notifications {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId: String (FK)&#xa;type: String&#xa;title: String&#xa;message: String&#xa;isRead: Boolean&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="560" width="220" height="170" as="geometry" />
+        </mxCell>
+        <!-- Memberships -->
+        <mxCell id="memberships" value="memberships {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;userId: String (FK)&#xa;tier: basic|silver|gold|platinum&#xa;startDate: Timestamp&#xa;endDate: Timestamp&#xa;isActive: Boolean&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#d79b00;fontColor=#ffffff;strokeColor=#B57900;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="100" y="670" width="240" height="160" as="geometry" />
+        </mxCell>
+        <!-- Blocked Users -->
+        <mxCell id="blocked" value="blocked_users {autoId}&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;blockerId: String (FK)&#xa;blockedUserId: String (FK)&#xa;reason: String?&#xa;createdAt: Timestamp" style="shape=table;startSize=30;container=0;collapsible=0;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11;align=left;whiteSpace=wrap;html=1;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="670" width="230" height="140" as="geometry" />
+        </mxCell>
+        <!-- Relationships -->
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="profiles" target="conversations" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="profiles" target="swipes" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="profiles" target="user_levels" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="swipes" target="matches" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="user_levels" target="xp_txn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;strokeColor=#666666" edge="1" source="user_levels" target="user_vocab" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

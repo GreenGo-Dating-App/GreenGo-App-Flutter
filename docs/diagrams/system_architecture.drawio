@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" modified="2026-03-10" agent="GreenGo Technical Documentation">
+  <diagram name="System Architecture" id="arch">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="GreenGo System Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        <!-- Client Layer -->
+        <mxCell id="client_group" value="CLIENT LAYER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="1400" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="flutter_app" value="Flutter Mobile App&#xa;(Android / iOS)&#xa;Clean Architecture + BLoC&#xa;41 Feature Modules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="150" y="110" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_panel" value="Admin Panel&#xa;(Web - React)&#xa;User Management&#xa;Moderation&#xa;Analytics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="450" y="110" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="localization" value="Localization&#xa;7 Languages&#xa;EN DE ES FR IT PT PT-BR&#xa;ARB + Generated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="720" y="110" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="state_mgmt" value="State Management&#xa;flutter_bloc 8.x&#xa;provider 6.x&#xa;get_it DI&#xa;equatable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="970" y="110" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="offline" value="Offline Support&#xa;Hive / SharedPrefs&#xa;Firestore Persistence&#xa;Image Cache" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="1220" y="110" width="200" height="110" as="geometry" />
+        </mxCell>
+        <!-- Firebase Services Layer -->
+        <mxCell id="firebase_group" value="FIREBASE SERVICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="1400" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="firestore" value="Cloud Firestore&#xa;170+ Collections&#xa;Real-time Sync&#xa;Offline Persistence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="150" y="310" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="Firebase Auth&#xa;Email/Password&#xa;Google Sign-In&#xa;Apple Sign-In" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" value="Cloud Storage&#xa;Photos / Videos&#xa;Voice Messages&#xa;PDFs / Exports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="630" y="310" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fcm" value="FCM&#xa;Push Notifications&#xa;In-App Messages&#xa;Topic Subscriptions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="860" y="310" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics_svc" value="Analytics&#xa;Firebase Analytics&#xa;Crashlytics&#xa;Performance&#xa;Remote Config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1090" y="310" width="180" height="110" as="geometry" />
+        </mxCell>
+        <!-- Cloud Functions Layer -->
+        <mxCell id="functions_group" value="CLOUD FUNCTIONS (Node.js 22 / TypeScript)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="100" y="480" width="1400" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_media" value="Media Processing&#xa;(10 Functions)&#xa;Image Compress&#xa;Video Process&#xa;Voice Transcribe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="120" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_messaging" value="Messaging&#xa;(8 Functions)&#xa;Translation&#xa;Scheduling&#xa;Auto-Translate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="290" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_gamification" value="Gamification&#xa;(14 Functions)&#xa;XP / Levels&#xa;Achievements&#xa;Vocabulary&#xa;Stats" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_safety" value="Safety&#xa;(11 Functions)&#xa;Photo Moderation&#xa;Text Moderation&#xa;Reporting&#xa;Blocking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="630" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_analytics" value="Analytics&#xa;(22 Functions)&#xa;Revenue&#xa;Cohort&#xa;Churn&#xa;A/B Testing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="800" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_admin" value="Admin&#xa;(35 Functions)&#xa;Dashboard&#xa;User Mgmt&#xa;Role Mgmt&#xa;Moderation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="970" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_video" value="Video&#xa;(20 Functions)&#xa;1:1 Calls&#xa;Group Calls&#xa;Features&#xa;Recording" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1140" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_notif" value="Notifications&#xa;(19 Functions)&#xa;Push (FCM)&#xa;Email (Brevo)&#xa;Triggers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1310" y="510" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_coins" value="Coins&#xa;(8 Functions)&#xa;Purchase Verify&#xa;Allowances&#xa;Expiration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="120" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_sub" value="Subscriptions&#xa;(6 Functions)&#xa;Purchase Verify&#xa;Membership&#xa;Expiration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="290" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_learning" value="Language Learning&#xa;(15 Functions)&#xa;Lessons&#xa;Teachers&#xa;Progress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="460" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_discovery" value="Discovery&#xa;(3 Functions)&#xa;Candidate Pools&#xa;Precompute&#xa;Stats" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="630" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_presence" value="Presence&#xa;(2 Functions)&#xa;Online Status&#xa;Stale Cleanup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="800" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_security" value="Security&#xa;(5 Functions)&#xa;Audit&#xa;Reports&#xa;Identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="970" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_backup" value="Backup&#xa;(8 Functions)&#xa;Conv Backup&#xa;PDF Export&#xa;Cleanup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1140" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_mvp" value="MVP Access&#xa;(8 Functions)&#xa;Approve/Reject&#xa;Tier Mgmt&#xa;Broadcasting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;fontColor=#ffffff;strokeColor=#6C4A8A;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1310" y="630" width="150" height="100" as="geometry" />
+        </mxCell>
+        <!-- External Services -->
+        <mxCell id="external_group" value="EXTERNAL SERVICES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="1400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_brevo" value="Brevo&#xa;Email Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="150" y="830" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_gplay" value="Google Play&#xa;Billing API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="350" y="830" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_appstore" value="App Store&#xa;StoreKit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="550" y="830" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_maps" value="Google Maps&#xa;Geocoding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="750" y="830" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_webrtc" value="WebRTC&#xa;Video Calls" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="950" y="830" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_ai" value="AI Services&#xa;Content Moderation&#xa;Translation&#xa;Churn Prediction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;fontColor=#ffffff;strokeColor=#943A3A;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="1150" y="830" width="180" height="70" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jetSize=auto;" edge="1" source="flutter_app" target="firestore" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="flutter_app" target="auth" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" edge="1" source="firestore" target="fn_gamification" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

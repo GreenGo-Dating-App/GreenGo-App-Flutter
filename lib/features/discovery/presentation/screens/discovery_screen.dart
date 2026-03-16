@@ -33,6 +33,7 @@ import '../widgets/swipe_buttons.dart';
 import '../widgets/match_notification.dart';
 import 'discovery_preferences_screen.dart';
 import 'profile_detail_screen.dart';
+import '../../../profile/presentation/screens/edit_profile_screen.dart';
 import '../widgets/nickname_search_dialog.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -2173,7 +2174,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
               ),
 
             // Boost badge (top right, stacked below flag & traveler badges)
-            if (isBoosted && widget.actionOverlay != 'matched')
+            if (isBoosted && !widget.isSelfProfile && widget.actionOverlay != 'matched')
               Positioned(
                 top: () {
                   double offset = 4.0;
@@ -2213,6 +2214,14 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       child: GestureDetector(
                         behavior: HitTestBehavior.opaque,
                         onTap: () {
+                          if (widget.isSelfProfile) {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                              ),
+                            );
+                            return;
+                          }
                           if (hasMultiplePhotos && _currentPhotoIndex > 0) {
                             HapticFeedback.selectionClick();
                             setState(() => _currentPhotoIndex--);
@@ -2234,6 +2243,14 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       child: GestureDetector(
                         behavior: HitTestBehavior.opaque,
                         onTap: () {
+                          if (widget.isSelfProfile) {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                              ),
+                            );
+                            return;
+                          }
                           if (widget.actionOverlay != null) return;
                           HapticFeedback.lightImpact();
                           setState(() => _showMenu = true);
@@ -2250,6 +2267,14 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       child: GestureDetector(
                         behavior: HitTestBehavior.opaque,
                         onTap: () {
+                          if (widget.isSelfProfile) {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                              ),
+                            );
+                            return;
+                          }
                           if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1) {
                             HapticFeedback.selectionClick();
                             setState(() => _currentPhotoIndex++);
