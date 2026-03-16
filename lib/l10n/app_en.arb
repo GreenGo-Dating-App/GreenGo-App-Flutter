@@ -4727,5 +4727,12 @@
   "guideSafetyTitle": "Safety & Privacy",
   "guideSafetyItem1": "All photos are AI-verified to ensure authentic profiles.",
   "guideSafetyItem2": "You can block or report any user at any time from their profile.",
-  "guideSafetyItem3": "Your personal information is protected and never shared without your consent."
+  "guideSafetyItem3": "Your personal information is protected and never shared without your consent.",
+  "firstStepsTitle": "First Steps",
+  "firstStepsReview": "Your documents will be reviewed within 24-48 hours after submission.",
+  "firstStepsStatusUpdate": "The app needs approximately 15 minutes to update your current status after first login.",
+  "firstStepsSupportChat": "You can contact support through chat or by opening a ticket directly.",
+  "showSupportUser": "Show GreenGo Support",
+  "showSupportUserDescription": "Show GreenGo Support user in discovery grid",
+  "yourProfile": "You"
 }

@@ -9881,6 +9881,31 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get guideSafetyItem3 =>
       'As suas informações pessoais estão protegidas e nunca são partilhadas sem o seu consentimento.';
+
+  @override
+  String get firstStepsTitle => 'First Steps';
+
+  @override
+  String get firstStepsReview =>
+      'Your documents will be reviewed within 24-48 hours after submission.';
+
+  @override
+  String get firstStepsStatusUpdate =>
+      'The app needs approximately 15 minutes to update your current status after first login.';
+
+  @override
+  String get firstStepsSupportChat =>
+      'You can contact support through chat or by opening a ticket directly.';
+
+  @override
+  String get showSupportUser => 'Show GreenGo Support';
+
+  @override
+  String get showSupportUserDescription =>
+      'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get yourProfile => 'You';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).

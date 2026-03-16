@@ -10832,7 +10832,7 @@ abstract class AppLocalizations {
   /// No description provided for @discoverWorldwideMessage.
   ///
   /// In en, this message translates to:
-  /// **'There aren\'t many people in your area yet, but GreenGo connects you with people worldwide! Go to Filters and add more countries to discover amazing people from around the globe.'**
+  /// **'There aren\'t many people in your country yet, so we\'re also showing you people from other countries close to you and around the world. The more you explore, the more connections you\'ll find!'**
   String get discoverWorldwideMessage;
 
   /// No description provided for @openFilters.
@@ -17477,6 +17477,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your personal information is protected and never shared without your consent.'**
   String get guideSafetyItem3;
+
+  /// No description provided for @firstStepsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'First Steps'**
+  String get firstStepsTitle;
+
+  /// No description provided for @firstStepsReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Your documents will be reviewed within 24-48 hours after submission.'**
+  String get firstStepsReview;
+
+  /// No description provided for @firstStepsStatusUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'The app needs approximately 15 minutes to update your current status after first login.'**
+  String get firstStepsStatusUpdate;
+
+  /// No description provided for @firstStepsSupportChat.
+  ///
+  /// In en, this message translates to:
+  /// **'You can contact support through chat or by opening a ticket directly.'**
+  String get firstStepsSupportChat;
+
+  /// No description provided for @showSupportUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Show GreenGo Support'**
+  String get showSupportUser;
+
+  /// No description provided for @showSupportUserDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Show GreenGo Support user in discovery grid'**
+  String get showSupportUserDescription;
+
+  /// No description provided for @yourProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get yourProfile;
 }
 
 class _AppLocalizationsDelegate

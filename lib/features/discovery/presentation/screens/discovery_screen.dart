@@ -14,6 +14,8 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/location_refresh_service.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
+import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../matching/domain/entities/match_score.dart';
 import '../../../matching/domain/repositories/matching_repository.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -899,8 +901,35 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       }).toList();
     }
 
-    // Admin/support always first, then regular profiles
+    // Build self-profile card from current user profile (shown at position 0 with boost animation)
+    DiscoveryCard? selfCard;
+    if (_currentUserProfile != null) {
+      final selfCandidate = MatchCandidate(
+        profile: _currentUserProfile!,
+        matchScore: MatchScore(
+          userId1: userId,
+          userId2: userId,
+          overallScore: 100.0,
+          breakdown: const ScoreBreakdown(
+            locationScore: 100.0,
+            ageCompatibilityScore: 100.0,
+            interestOverlapScore: 100.0,
+            languageScore: 100.0,
+          ),
+          calculatedAt: DateTime.now(),
+        ),
+        distance: 0.0,
+        suggestedAt: DateTime.now(),
+      );
+      selfCard = DiscoveryCard(
+        candidate: selfCandidate,
+        position: 0,
+      );
+    }
+
+    // Self-profile first, then admin/support, then regular profiles
     final List<DiscoveryCard> filteredCards = [
+      if (selfCard != null) selfCard,
       ...adminCards,
       ...filteredRegular,
     ];
@@ -1196,13 +1225,15 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final effectiveCols = _gridColumns == 0
         ? _autoColumns(MediaQuery.of(context).size.width - 8) // account for padding
         : _gridColumns;
+    final isSelf = card.userId == userId;
     return _GridProfileCard(
       key: ValueKey(card.userId),
       card: card,
       gridColumns: effectiveCols,
-      actionOverlay: _gridActionOverlays[card.userId],
+      actionOverlay: isSelf ? null : _gridActionOverlays[card.userId],
       isOnlineOverride: _onlineStatusOverrides[card.userId],
       onAction: _gridAction,
+      isSelfProfile: isSelf,
     );
   }
 
@@ -1769,6 +1800,7 @@ class _GridProfileCard extends StatefulWidget {
   final String? actionOverlay; // 'liked', 'superLiked', 'matched'
   final bool? isOnlineOverride; // Refreshed online status (overrides profile.isOnline)
   final Function(DiscoveryCard, SwipeActionType) onAction;
+  final bool isSelfProfile; // true = current user's own card (no actions, boost animation)
 
   const _GridProfileCard({
     super.key,
@@ -1777,6 +1809,7 @@ class _GridProfileCard extends StatefulWidget {
     required this.onAction,
     this.actionOverlay,
     this.isOnlineOverride,
+    this.isSelfProfile = false,
   });
 
   @override
@@ -1829,10 +1862,11 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final distanceText = widget.card.candidate.distanceText;
     final cityText = location.city.isNotEmpty ? location.city : '';
 
-    // Check if profile is boosted
-    final isBoosted = profile.isBoosted &&
+    // Check if profile is boosted (self-profile always gets boost animation)
+    final isBoosted = widget.isSelfProfile ||
+        (profile.isBoosted &&
         profile.boostExpiry != null &&
-        profile.boostExpiry!.isAfter(DateTime.now());
+        profile.boostExpiry!.isAfter(DateTime.now()));
 
     // Current photo URL based on carousel index
     final currentPhotoUrl = photoUrls.isNotEmpty && _currentPhotoIndex < photoUrls.length
@@ -2235,8 +2269,37 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Tap action menu overlay - 4 action buttons in 2x2 grid
-            if (_showMenu)
+            // "You" label for self-profile card
+            if (widget.isSelfProfile)
+              Positioned(
+                top: 4,
+                right: 4,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFD700).withOpacity(0.9),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFFFFD700).withOpacity(0.5),
+                        blurRadius: 6,
+                        spreadRadius: 1,
+                      ),
+                    ],
+                  ),
+                  child: Text(
+                    AppLocalizations.of(context)!.yourProfile,
+                    style: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 11,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+
+            // Tap action menu overlay - 4 action buttons in 2x2 grid (disabled for self-profile)
+            if (_showMenu && !widget.isSelfProfile)
               Positioned.fill(
                 child: GestureDetector(
                   onTap: () => setState(() => _showMenu = false),
