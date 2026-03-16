@@ -174,17 +174,22 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     // Get candidates from matching datasource
-    // No distance limit by default (99999 = worldwide)
+    // When randomMode is ON, pass empty countries to trigger random worldwide query
+    final effectiveCountries = preferences.randomMode
+        ? const <String>[]
+        : preferences.preferredCountries;
     final candidates = await matchingDataSource.getMatchCandidates(
       userId: userId,
       preferences: matching.MatchPreferences(
         userId: preferences.userId,
         minAge: preferences.minAge,
         maxAge: preferences.maxAge,
-        maxDistance: (preferences.maxDistanceKm ?? 99999).toDouble(),
+        maxDistance: preferences.randomMode
+            ? 99999.0
+            : (preferences.maxDistanceKm ?? 99999).toDouble(),
         preferredGenders: preferredGenders,
         showOnlyVerified: preferences.onlyVerified,
-        preferredCountries: preferences.preferredCountries,
+        preferredCountries: effectiveCountries,
         updatedAt: DateTime.now(),
       ),
       limit: 500, // Cap to avoid loading entire database into memory
@@ -253,7 +258,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
       // When user has a country filter, profiles with unknown/empty country are excluded
-      if (preferences.preferredCountries.isNotEmpty) {
+      // Skip country filter when randomMode is ON (worldwide random)
+      if (!preferences.randomMode && preferences.preferredCountries.isNotEmpty) {
         print('[Discovery] Country filter active: ${preferences.preferredCountries}');
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
@@ -431,22 +437,25 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final now = DateTime.now();
     const nopeCooldownDays = 90;
     const likeCooldownDays = 30;
+    bool addedAdminOrSupport = false;
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
       final candidateProfile = candidate.profile;
-      final isPrivileged = candidateProfile.isAdmin ||
-          (candidateProfile.isSupport && preferences.showSupportUser);
+      final isPrivileged = (candidateProfile.isAdmin || candidateProfile.isSupport) && preferences.showSupportUser;
 
-      // Admin always visible; support visible only when showSupportUser is true
+      // Admin/support visible only when showSupportUser is true
       // Skip match/block/incognito/swipe filters for privileged profiles
       if (isPrivileged) {
-        priority0Boosted.add(candidate);
+        if (!addedAdminOrSupport) {
+          priority0Boosted.add(candidate);
+          addedAdminOrSupport = true;
+        }
         continue;
       }
 
-      // Support profiles hidden when showSupportUser is false — skip entirely
-      if (candidateProfile.isSupport && !preferences.showSupportUser) {
+      // Admin/Support profiles hidden when showSupportUser is false — skip entirely
+      if ((candidateProfile.isAdmin || candidateProfile.isSupport) && !preferences.showSupportUser) {
         continue;
       }
 
@@ -521,7 +530,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     if (priority0Boosted.length > maxBoostedVisible) {
       // Admin/support profiles (added earlier) should stay — only trim real boosted
       final admins = priority0Boosted.where((c) =>
-          c.profile.isAdmin || c.profile.isSupport).toList();
+          c.profile.isAdmin || c.profile.isSupport).take(1).toList();
       final realBoosted = priority0Boosted.where((c) =>
           !c.profile.isAdmin && !c.profile.isSupport).toList();
       final kept = realBoosted.take(maxBoostedVisible).toList();
@@ -553,17 +562,21 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Then priority 3 (liked no response)
     prioritizedCandidates.addAll(priority3LikedNoResponse);
 
-    // Always add admin/support profile at the beginning
-    final adminCandidate = await _getAdminCandidate(userId);
-    // Remove admin from prioritized list to avoid duplicates
-    if (adminCandidate != null) {
-      prioritizedCandidates.removeWhere(
-        (c) => c.profile.userId == adminCandidate.profile.userId,
-      );
+    // Add admin/support profile at the beginning only when showSupportUser is enabled
+    final List<MatchCandidate> result;
+    if (preferences.showSupportUser) {
+      final adminCandidate = await _getAdminCandidate(userId);
+      if (adminCandidate != null) {
+        prioritizedCandidates.removeWhere(
+          (c) => c.profile.userId == adminCandidate.profile.userId,
+        );
+        result = [adminCandidate, ...prioritizedCandidates];
+      } else {
+        result = prioritizedCandidates;
+      }
+    } else {
+      result = prioritizedCandidates;
     }
-    final result = adminCandidate != null
-        ? [adminCandidate, ...prioritizedCandidates]
-        : prioritizedCandidates;
 
     // Store in in-memory cache
     _cache[userId] = _CachedStack(result);

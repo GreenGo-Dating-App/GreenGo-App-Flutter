@@ -18,6 +18,7 @@ class MatchPreferences extends Equatable {
   final bool travelersOnly; // true = only show active travelers
   final bool localGuidesOnly; // true = only show local guides
   final bool showSupportUser; // true = show GreenGo Support user in discovery grid
+  final bool randomMode; // true = show random worldwide people sorted by distance
 
   const MatchPreferences({
     required this.userId,
@@ -37,6 +38,7 @@ class MatchPreferences extends Equatable {
     this.travelersOnly = false,
     this.localGuidesOnly = false,
     this.showSupportUser = false,
+    this.randomMode = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -57,6 +59,7 @@ class MatchPreferences extends Equatable {
       travelersOnly: false,
       localGuidesOnly: false,
       showSupportUser: false,
+      randomMode: false,
     );
   }
 
@@ -80,6 +83,7 @@ class MatchPreferences extends Equatable {
     bool? travelersOnly,
     bool? localGuidesOnly,
     bool? showSupportUser,
+    bool? randomMode,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -99,6 +103,7 @@ class MatchPreferences extends Equatable {
       travelersOnly: travelersOnly ?? this.travelersOnly,
       localGuidesOnly: localGuidesOnly ?? this.localGuidesOnly,
       showSupportUser: showSupportUser ?? this.showSupportUser,
+      randomMode: randomMode ?? this.randomMode,
     );
   }
 
@@ -122,6 +127,7 @@ class MatchPreferences extends Equatable {
       'travelersOnly': travelersOnly,
       'localGuidesOnly': localGuidesOnly,
       'showSupportUser': showSupportUser,
+      'randomMode': randomMode,
     };
   }
 
@@ -157,6 +163,7 @@ class MatchPreferences extends Equatable {
       travelersOnly: map['travelersOnly'] as bool? ?? false,
       localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
       showSupportUser: map['showSupportUser'] as bool? ?? false,
+      randomMode: map['randomMode'] as bool? ?? false,
     );
   }
 
@@ -179,5 +186,6 @@ class MatchPreferences extends Equatable {
         travelersOnly,
         localGuidesOnly,
         showSupportUser,
+        randomMode,
       ];
 }

@@ -17313,7 +17313,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideFiltersItem2.
   ///
   /// In en, this message translates to:
-  /// **'Country filter is optional. When no country is selected, you\'ll see the closest people worldwide (up to 500). Add countries to narrow your search to specific regions.'**
+  /// **'Random Mode: enable this toggle to discover random people from all over the world, sorted by distance. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.'**
   String get guideFiltersItem2;
 
   /// No description provided for @guideFiltersItem3.
@@ -17513,6 +17513,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show GreenGo Support user in discovery grid'**
   String get showSupportUserDescription;
+
+  /// No description provided for @randomMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Random Mode'**
+  String get randomMode;
+
+  /// No description provided for @randomModeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.'**
+  String get randomModeDescription;
 
   /// No description provided for @yourProfile.
   ///

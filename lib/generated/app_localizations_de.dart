@@ -9935,5 +9935,12 @@ class AppLocalizationsDe extends AppLocalizations {
       'Show GreenGo Support user in discovery grid';
 
   @override
+  String get randomMode => 'Random Mode';
+
+  @override
+  String get randomModeDescription =>
+      'Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.';
+
+  @override
   String get yourProfile => 'You';
 }

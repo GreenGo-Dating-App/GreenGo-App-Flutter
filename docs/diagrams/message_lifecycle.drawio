@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2026-03-10">
+  <diagram name="Message Lifecycle" id="message">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Message Lifecycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="300" height="40" as="geometry" />
+        </mxCell>
+        <!-- User types message -->
+        <mxCell id="step1" value="User Types Message&#xa;in Chat Screen" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        <!-- Send immediately -->
+        <mxCell id="step2" value="Message Sent&#xa;Immediately&#xa;(No blocking operations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="180" height="60" as="geometry" />
+        </mxCell>
+        <!-- Firestore write -->
+        <mxCell id="step3" value="Write to Firestore&#xa;conversations/{id}/messages/{msgId}&#xa;senderId, content, type, sentAt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;fontColor=#ffffff;strokeColor=#CC7000;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="240" height="60" as="geometry" />
+        </mxCell>
+        <!-- Triggers fire -->
+        <mxCell id="triggers" value="Firestore Triggers Fire" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="200" height="40" as="geometry" />
+        </mxCell>
+        <!-- Vocabulary -->
+        <mxCell id="t_vocab" value="onMessageCreatedVocabulary&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;Extract words from text&#xa;Track in user_vocabulary&#xa;Award XP for new words&#xa;(256MiB / 30s)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="300" y="400" width="200" height="120" as="geometry" />
+        </mxCell>
+        <!-- Push notification -->
+        <mxCell id="t_push" value="onNewMessagePush&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;Send FCM push notification&#xa;to receiver&#xa;Bundle if multiple" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="530" y="400" width="180" height="100" as="geometry" />
+        </mxCell>
+        <!-- Auto translate -->
+        <mxCell id="t_translate" value="autoTranslateMessage&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;Detect language&#xa;Auto-translate if different&#xa;from receiver's language" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="740" y="400" width="190" height="100" as="geometry" />
+        </mxCell>
+        <!-- Receiver sees message -->
+        <mxCell id="step4" value="Receiver Gets&#xa;Real-time Update&#xa;(Firestore listener)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="200" height="60" as="geometry" />
+        </mxCell>
+        <!-- Read receipt -->
+        <mxCell id="step5" value="Read Receipt&#xa;readAt updated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="540" width="160" height="40" as="geometry" />
+        </mxCell>
+        <!-- Stats at 3AM -->
+        <mxCell id="stats_3am" value="Daily Stats Compute (3 AM)&#xa;━━━━━━━━━━━━━━━━━━━━━━━━&#xa;Aggregate all XP transactions&#xa;Count vocabulary per language&#xa;Cache in user_stats/{userId}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d79b00;fontColor=#ffffff;strokeColor=#B57900;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="250" height="80" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="a1" style="rounded=1" edge="1" source="step1" target="step2" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a2" style="rounded=1" edge="1" source="step2" target="step3" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a3" style="rounded=1" edge="1" source="step3" target="triggers" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a4" style="rounded=1" edge="1" source="triggers" target="t_vocab" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a5" style="rounded=1" edge="1" source="triggers" target="t_push" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a6" style="rounded=1" edge="1" source="triggers" target="t_translate" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a7" style="rounded=1" edge="1" source="step3" target="step4" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a8" style="rounded=1" edge="1" source="step4" target="step5" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a9" style="dashed=1;rounded=1" edge="1" source="t_vocab" target="stats_3am" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

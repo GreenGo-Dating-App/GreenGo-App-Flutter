@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net" modified="2026-03-10">
+  <diagram name="Gamification XP and Level Flow" id="gamification">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Gamification: XP, Levels &amp; Vocabulary Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="500" height="40" as="geometry" />
+        </mxCell>
+        <!-- XP Actions -->
+        <mxCell id="actions_group" value="XP-Earning Actions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="300" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="a_msg" value="Send Message → Vocabulary Trigger" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_match" value="Get a Match → 20 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_profile" value="Complete Profile → 50 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_daily" value="Daily Login → 10 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_convo" value="Start Conversation → 30 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_video" value="Video Call → 100 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_vocab" value="New Vocabulary Word → 1 XP each" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="330" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_photo" value="Photo Upload → 15 XP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="260" height="30" as="geometry" />
+        </mxCell>
+        <!-- Vocabulary Processing -->
+        <mxCell id="vocab_process" value="onMessageCreatedVocabulary&#xa;(Cloud Function Trigger)&#xa;━━━━━━━━━━━━━━━━━━&#xa;1. Extract words from message&#xa;2. Check user_vocabulary/{uid}/words&#xa;3. New word → set doc + 1 XP&#xa;4. Existing → increment useCount&#xa;5. Award XP to user_levels&#xa;6. Log xp_transaction&#xa;&#xa;Batch: 450 words/commit&#xa;Memory: 256MiB | 30s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="250" height="220" as="geometry" />
+        </mxCell>
+        <!-- Level Thresholds -->
+        <mxCell id="levels" value="Level XP Thresholds (Non-Linear)&#xa;━━━━━━━━━━━━━━━━━━━━━━━━━━━&#xa;Level 1: 0 XP          Level 9: 8,000 XP&#xa;Level 2: 100 XP      Level 10: 11,000 XP&#xa;Level 3: 250 XP      Level 11: 15,000 XP&#xa;Level 4: 500 XP      Level 12: 20,000 XP&#xa;Level 5: 1,000 XP   Level 13: 26,000 XP&#xa;Level 6: 2,000 XP   Level 14: 33,000 XP&#xa;Level 7: 3,500 XP   Level 15: 41,000 XP&#xa;Level 8: 5,500 XP   Level 16: 50,000 XP&#xa;&#xa;Level ALWAYS derived from XP (never stored)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="700" y="60" width="300" height="220" as="geometry" />
+        </mxCell>
+        <!-- Stats Computation -->
+        <mxCell id="stats_compute" value="computeDailyUserStats&#xa;(Scheduled: 3 AM UTC)&#xa;━━━━━━━━━━━━━━━━━━&#xa;Cursor-based pagination&#xa;100 users/page&#xa;20 concurrent per batch&#xa;8-minute timeout guard&#xa;&#xa;Writes to user_stats/{uid}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d79b00;fontColor=#ffffff;strokeColor=#B57900;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="220" height="170" as="geometry" />
+        </mxCell>
+        <!-- Achievements -->
+        <mxCell id="achievements" value="Achievements (6 Types)&#xa;━━━━━━━━━━━━━━━━━━━━━━&#xa;First Match → 50 XP + 10 Coins&#xa;Social Butterfly (100 msgs) → 100 XP&#xa;Popular (50 matches) → 200 XP&#xa;Video Enthusiast (10 calls) → 250 XP&#xa;7-Day Streak → 150 XP + 30 Coins&#xa;30-Day Streak → 500 XP + 100 Coins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="700" y="320" width="260" height="150" as="geometry" />
+        </mxCell>
+        <!-- Daily Challenges -->
+        <mxCell id="challenges" value="Daily Challenges (Reset Midnight UTC)&#xa;━━━━━━━━━━━━━━━━━━━━━━━━━━&#xa;Send 5 Messages → 20 XP + 5 Coins&#xa;Get 3 Matches → 30 XP + 10 Coins&#xa;Complete Profile → 25 XP + 5 Coins&#xa;1 Video Call → 50 XP + 15 Coins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="700" y="500" width="280" height="120" as="geometry" />
+        </mxCell>
+        <!-- Celebrations -->
+        <mxCell id="celebrations" value="Real-Time Celebrations&#xa;━━━━━━━━━━━━━━━━━━━━&#xa;Level Up → LevelUpCelebrationDialog&#xa;Achievement → AchievementUnlockDialog&#xa;&#xa;Firestore snapshot listeners&#xa;detect changes in real-time&#xa;Particle animations + localized text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=10;align=left" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="250" height="140" as="geometry" />
+        </mxCell>
+        <!-- Leaderboard -->
+        <mxCell id="leaderboard" value="Leaderboard&#xa;(Updated Hourly)&#xa;Global + Regional&#xa;Ranked by totalXP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1050" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="arr1" style="rounded=1" edge="1" source="a_msg" target="vocab_process" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="arr2" style="rounded=1" edge="1" source="vocab_process" target="levels" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="arr3" style="rounded=1" edge="1" source="levels" target="celebrations" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="arr4" style="rounded=1" edge="1" source="stats_compute" target="celebrations" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

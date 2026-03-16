@@ -98,14 +98,33 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       profileDocs = await _fetchProfilesByIds(allIds);
     } else {
       // Fallback: full scan (pools unavailable, stale, or empty)
-      // Also explicitly fetch travelers to ensure they're included even if
-      // the limit(500) scan misses them
+      // When no country filter is active, use random starting point so each
+      // refresh gives a different set of worldwide profiles.
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
-      final querySnapshot = await firestore
-          .collection('profiles')
-          .limit(500)
-          .get();
-      profileDocs = querySnapshot.docs;
+
+      if (preferences.preferredCountries.isEmpty) {
+        // Random Mode: pick a random document ID as pivot and fetch from both sides
+        final randomKey = _generateRandomDocId();
+        debugPrint('[Matching] Random worldwide mode — pivot: $randomKey');
+        final queryA = await firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, isGreaterThanOrEqualTo: randomKey)
+            .limit(250)
+            .get();
+        final queryB = await firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, isLessThan: randomKey)
+            .limit(250)
+            .get();
+        profileDocs = [...queryA.docs, ...queryB.docs];
+        debugPrint('[Matching] Random scan: ${queryA.docs.length} + ${queryB.docs.length} = ${profileDocs.length}');
+      } else {
+        final querySnapshot = await firestore
+            .collection('profiles')
+            .limit(500)
+            .get();
+        profileDocs = querySnapshot.docs;
+      }
 
       // Merge travelers that may not be in the first 500 docs
       final existingIds = profileDocs.map((d) => d.id).toSet();
@@ -502,5 +521,14 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     } catch (e) {
       return 50.0; // Default to neutral on error
     }
+  }
+
+  /// Generate a random Firestore-style document ID for random pivot queries
+  static String _generateRandomDocId() {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    final rng = Random();
+    return String.fromCharCodes(
+      Iterable.generate(20, (_) => chars.codeUnitAt(rng.nextInt(chars.length))),
+    );
   }
 }

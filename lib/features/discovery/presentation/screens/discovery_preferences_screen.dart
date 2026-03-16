@@ -1208,6 +1208,31 @@ class _DiscoveryPreferencesScreenState
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
                   title: Text(
+                    l10n.randomMode,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 16,
+                    ),
+                  ),
+                  subtitle: Text(
+                    l10n.randomModeDescription,
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 14,
+                    ),
+                  ),
+                  value: _preferences.randomMode,
+                  activeColor: AppColors.richGold,
+                  onChanged: (bool value) {
+                    _updatePreferences(
+                      _preferences.copyWith(randomMode: value),
+                    );
+                  },
+                ),
+                const Divider(color: AppColors.divider),
+                SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: Text(
                     l10n.showSupportUser,
                     style: const TextStyle(
                       color: AppColors.textPrimary,
