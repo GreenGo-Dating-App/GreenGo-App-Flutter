@@ -22,10 +22,12 @@ class DiscoveryLoading extends DiscoveryState {
 class DiscoveryLoaded extends DiscoveryState {
   final List<DiscoveryCard> cards;
   final int currentIndex;
+  final bool usedWorldwideFallback;
 
   const DiscoveryLoaded({
     required this.cards,
     this.currentIndex = 0,
+    this.usedWorldwideFallback = false,
   });
 
   /// Get current card
@@ -42,10 +44,12 @@ class DiscoveryLoaded extends DiscoveryState {
   DiscoveryLoaded copyWith({
     List<DiscoveryCard>? cards,
     int? currentIndex,
+    bool? usedWorldwideFallback,
   }) {
     return DiscoveryLoaded(
       cards: cards ?? this.cards,
       currentIndex: currentIndex ?? this.currentIndex,
+      usedWorldwideFallback: usedWorldwideFallback ?? this.usedWorldwideFallback,
     );
   }
 }

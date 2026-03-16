@@ -92,8 +92,9 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
                   ))
               .toList();
 
-          debugPrint('📱 Discovery queue loaded: ${cards.length} profiles ready');
-          emit(DiscoveryLoaded(cards: cards, currentIndex: 0));
+          final usedFallback = discoveryDataSource?.lastUsedWorldwideFallback ?? false;
+          debugPrint('📱 Discovery queue loaded: ${cards.length} profiles ready (worldwide=$usedFallback)');
+          emit(DiscoveryLoaded(cards: cards, currentIndex: 0, usedWorldwideFallback: usedFallback));
         }
       },
     );
@@ -647,7 +648,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
                     isFocused: entry.key == 0,
                   ))
               .toList();
-          emit(DiscoveryLoaded(cards: cards, currentIndex: 0));
+          final usedFallback = discoveryDataSource?.lastUsedWorldwideFallback ?? false;
+          emit(DiscoveryLoaded(cards: cards, currentIndex: 0, usedWorldwideFallback: usedFallback));
         }
       },
     );

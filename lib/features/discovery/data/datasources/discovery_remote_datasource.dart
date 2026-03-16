@@ -17,6 +17,10 @@ import '../models/swipe_action_model.dart';
 
 /// Discovery Remote Data Source Interface
 abstract class DiscoveryRemoteDataSource {
+  /// Whether the last getDiscoveryStack call used the worldwide fallback
+  /// (country pool had fewer than 500 candidates)
+  bool get lastUsedWorldwideFallback;
+
   Future<List<MatchCandidate>> getDiscoveryStack({
     required String userId,
     required MatchPreferences preferences,
@@ -100,6 +104,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   final MatchingRemoteDataSource matchingDataSource;
   final BlockedUsersService blockedUsersService;
 
+  @override
+  bool lastUsedWorldwideFallback = false;
+
   // In-memory cache keyed by userId — survives bloc recreation (datasource is singleton)
   final Map<String, _CachedStack> _cache = {};
 
@@ -137,6 +144,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     int limit = 20,
     bool forceRefresh = false,
   }) async {
+    lastUsedWorldwideFallback = false;
+
     // Serve from cache when valid and not a forced refresh
     if (!forceRefresh) {
       final cached = _cache[userId];
@@ -275,6 +284,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // fill up to 500 with the closest worldwide profiles.
       // This ensures new users in small countries still see a full grid.
       const minCandidates = 500;
+      lastUsedWorldwideFallback = filteredCandidates.length < minCandidates;
       if (filteredCandidates.length < minCandidates) {
         print('[Discovery] Pool has ${filteredCandidates.length} candidates (< $minCandidates), fetching worldwide fallback');
 

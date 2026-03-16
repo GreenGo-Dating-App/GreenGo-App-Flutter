@@ -2990,7 +2990,7 @@
   },
   "maybeLater": "Maybe Later",
   "discoverWorldwideTitle": "Expand your horizons!",
-  "discoverWorldwideMessage": "There aren't many people in your area yet, but GreenGo connects you with people worldwide! Go to Filters and add more countries to discover amazing people from around the globe.",
+  "discoverWorldwideMessage": "There aren't many people in your country yet, so we're also showing you people from other countries close to you and around the world. The more you explore, the more connections you'll find!",
   "openFilters": "Open Filters",
   "membershipActivatedMessage": "{tierName} membership active until {formattedDate}{coinsText}",
   "@membershipActivatedMessage": {

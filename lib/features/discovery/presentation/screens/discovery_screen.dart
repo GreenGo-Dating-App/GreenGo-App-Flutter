@@ -127,7 +127,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   // Grid mode state
   bool _isGridMode = true;
-  int _gridColumns = 3; // 2, 3, or 4 columns
+  int _gridColumns = 0; // 0 = auto (responsive based on screen width)
   int _gridExtraPurchased = 0; // Number of extra batches purchased
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
@@ -148,6 +148,13 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   String get userId => widget.userId;
 
+  /// Auto-detect grid columns based on available width
+  int _autoColumns(double width) {
+    if (width < 300) return 2;
+    if (width < 450) return 3;
+    return 4;
+  }
+
   /// Get current preferences (saved from Firestore, or default)
   MatchPreferences get _currentPreferences =>
       _savedPreferences ?? MatchPreferences.defaultFor(userId);
@@ -155,7 +162,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   /// Get grid profile limit — starts at 50, extends up to max 500
   static const int _gridMaxProfiles = 500;
   int get _gridProfileLimit {
-    final limit = 50 + (_gridExtraPurchased * _gridColumns * 3);
+    final cols = _gridColumns == 0 ? 3 : _gridColumns; // fallback for auto mode
+    final limit = 50 + (_gridExtraPurchased * cols * 3);
     return limit.clamp(0, _gridMaxProfiles);
   }
 
@@ -466,16 +474,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 ),
               );
             }
-            // Show popup when filters result in < 50 profiles (once per session)
+            // Show popup when worldwide fallback was used (< 500 in country, once per session)
             if (state is DiscoveryLoaded && !_shownSmallCountryPopup) {
               _shownSmallCountryPopup = true;
-              final prefs = _currentPreferences;
-              final hasActiveFilter = prefs.preferredCountries.isNotEmpty ||
-                  prefs.preferredInterests.isNotEmpty ||
-                  prefs.travelersOnly ||
-                  prefs.localGuidesOnly ||
-                  (prefs.maxDistanceKm != null && prefs.maxDistanceKm! < 500);
-              if (state.cards.length < 50 && hasActiveFilter) {
+              if (state.usedWorldwideFallback) {
                 WidgetsBinding.instance.addPostFrameCallback((_) {
                   if (mounted) _showSmallCountryPopup(context);
                 });
@@ -943,13 +945,18 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 onTimeout: () {},
               );
             },
-            child: GridView.builder(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final effectiveCols = _gridColumns == 0
+                    ? _autoColumns(constraints.maxWidth)
+                    : _gridColumns;
+                return GridView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: _gridColumns,
+                crossAxisCount: effectiveCols,
                 crossAxisSpacing: 3,
                 mainAxisSpacing: 3,
-                childAspectRatio: _gridColumns == 4 ? 0.8 : 0.7,
+                childAspectRatio: effectiveCols >= 4 ? 0.8 : 0.7,
               ),
               itemCount: visibleCount + (hasMore ? 1 : 0),
               itemBuilder: (context, index) {
@@ -957,6 +964,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                   return _buildLoadMoreCard();
                 }
                 return _buildGridProfileCard(context, visibleCards[index]);
+              },
+            );
               },
             ),
           ),
@@ -1081,7 +1090,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: [2, 3, 4].map((cols) {
+        children: [0, 2, 3, 4].map((cols) {
           final isSelected = _gridColumns == cols;
           return GestureDetector(
             onTap: () {
@@ -1100,7 +1109,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                '$cols',
+                cols == 0 ? 'Auto' : '$cols',
                 style: TextStyle(
                   color: isSelected ? Colors.white : AppColors.textTertiary,
                   fontSize: 12,
@@ -1184,10 +1193,13 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   Widget _buildGridProfileCard(BuildContext context, DiscoveryCard card) {
+    final effectiveCols = _gridColumns == 0
+        ? _autoColumns(MediaQuery.of(context).size.width - 8) // account for padding
+        : _gridColumns;
     return _GridProfileCard(
       key: ValueKey(card.userId),
       card: card,
-      gridColumns: _gridColumns,
+      gridColumns: effectiveCols,
       actionOverlay: _gridActionOverlays[card.userId],
       isOnlineOverride: _onlineStatusOverrides[card.userId],
       onAction: _gridAction,
