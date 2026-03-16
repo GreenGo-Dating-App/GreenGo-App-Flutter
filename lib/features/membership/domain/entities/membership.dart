@@ -148,7 +148,7 @@ class MembershipRules extends Equatable {
 
   /// Default rules for FREE tier (Base membership)
   static const MembershipRules freeDefaults = MembershipRules(
-    dailyMessageLimit: 100,
+    dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: 20,
     dailyPriorityConnectLimit: 1,
     hourlyConnectLimit: 5,
@@ -165,13 +165,13 @@ class MembershipRules extends Equatable {
     matchPriority: 0,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 10,
+    dailyMediaSendLimit: -1, // Unlimited
     badgeIcon: null,
   );
 
   /// Default rules for SILVER tier
   static const MembershipRules silverDefaults = MembershipRules(
-    dailyMessageLimit: 500,
+    dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: 100,
     dailyPriorityConnectLimit: 3,
     hourlyConnectLimit: 10,
@@ -188,13 +188,13 @@ class MembershipRules extends Equatable {
     matchPriority: 1,
     canSeeProfileVisitors: false,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 50,
+    dailyMediaSendLimit: -1, // Unlimited
     badgeIcon: 'silver_badge',
   );
 
   /// Default rules for GOLD tier
   static const MembershipRules goldDefaults = MembershipRules(
-    dailyMessageLimit: 2000,
+    dailyMessageLimit: -1, // Unlimited
     dailySwipeLimit: -1, // Unlimited
     dailyPriorityConnectLimit: 5,
     hourlyConnectLimit: 15,
@@ -211,7 +211,7 @@ class MembershipRules extends Equatable {
     matchPriority: 2,
     canSeeProfileVisitors: true,
     canUseVideoChat: false,
-    dailyMediaSendLimit: 500,
+    dailyMediaSendLimit: -1, // Unlimited
     badgeIcon: 'gold_badge',
   );
 

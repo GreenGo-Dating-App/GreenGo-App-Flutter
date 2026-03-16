@@ -147,17 +147,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         if (isCurrentUserAdmin) {
           // Admin sees everyone — skip all filters
         } else {
-          // Verification filter: only show verified profiles (skip for admin/support candidates)
-          if (!isPrivileged && !candidateProfile.isVerified) {
-            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: not verified');
-            continue;
-          }
-
-          // Must have at least one photo (skip for admin/support candidates)
-          if (!isPrivileged && candidateProfile.photoUrls.isEmpty) {
-            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: no photos');
-            continue;
-          }
+          // Users are visible immediately after registration — no verification or photo gate
+          // Verified badge is shown in the UI but does not block discovery visibility
 
           // Apply age filter (skip for admin/support candidates)
           final age = candidateProfile.age;
