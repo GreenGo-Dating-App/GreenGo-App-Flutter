@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/action_success_dialog.dart';
 import '../../domain/entities/match_preferences.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
@@ -62,17 +61,10 @@ class _DiscoveryPreferencesScreenState
             'matchPreferences': _preferences.toMap(),
           }, SetOptions(merge: true));
 
-      // Call callback if provided
-      if (widget.onSave != null) {
-        widget.onSave!(_preferences);
-      }
-
       if (mounted) {
-        // Show success dialog
-        await ActionSuccessDialog.showPreferencesSaved(context);
-        if (mounted) {
-          Navigator.of(context).pop();
-        }
+        // Pop with the saved preferences as result — the discovery screen
+        // handles the refresh in its .then() callback after pop completes
+        Navigator.of(context).pop(_preferences);
       }
     } catch (e) {
       if (mounted) {

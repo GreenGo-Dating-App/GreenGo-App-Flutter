@@ -126,8 +126,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   List<DiscoveryCard> _lastKnownCards = []; // Preserve cards for grid when bloc emits StackEmpty
 
   // Traveler tracking — detect when traveler mode activates to refresh discovery
-  bool _wasTravelerActive = false;
+  // Nullable: null = initial state (not yet known), prevents false "just activated" on first profile load
+  bool? _wasTravelerActive;
   String _prevTravelerCity = '';
+  bool _preferencesLoaded = false;
 
   // Grid mode state
   bool _isGridMode = true;
@@ -202,6 +204,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
     // If no preferences exist yet, use defaults (no country filter = worldwide)
     _savedPreferences ??= MatchPreferences.defaultFor(userId);
+    _preferencesLoaded = true;
 
     if (mounted) {
       context.read<DiscoveryBloc>().add(DiscoveryStackLoadRequested(
@@ -416,12 +419,15 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         // Always keep local profile reference up to date (membership, etc.)
         _currentUserProfile = profile;
 
-        final travelerJustActivated = isNowActive && !_wasTravelerActive;
-        final travelerCityChanged = isNowActive && _wasTravelerActive && nowCity != _prevTravelerCity;
+        // Only detect changes after initial state is known (skip first profile load)
+        if (_wasTravelerActive != null && _preferencesLoaded) {
+          final travelerJustActivated = isNowActive && !_wasTravelerActive!;
+          final travelerCityChanged = isNowActive && _wasTravelerActive! && nowCity != _prevTravelerCity;
 
-        if (travelerJustActivated || travelerCityChanged) {
-          debugPrint('[Discovery] Traveler activated/changed → refreshing stack');
-          refreshWithPreferences(_currentPreferences);
+          if (travelerJustActivated || travelerCityChanged) {
+            debugPrint('[Discovery] Traveler activated/changed → refreshing stack');
+            refreshWithPreferences(_currentPreferences);
+          }
         }
 
         _wasTravelerActive = isNowActive;
@@ -769,18 +775,18 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           ),
           const SizedBox(height: 32),
           ElevatedButton.icon(
-            onPressed: () {
-              Navigator.of(context).push(
+            onPressed: () async {
+              final result = await Navigator.of(context).push<MatchPreferences>(
                 MaterialPageRoute(
                   builder: (context) => DiscoveryPreferencesScreen(
                     userId: userId,
                     currentPreferences: _savedPreferences,
-                    onSave: (preferences) {
-                      refreshWithPreferences(preferences);
-                    },
                   ),
                 ),
               );
+              if (result != null) {
+                refreshWithPreferences(result);
+              }
             },
             icon: const Icon(Icons.tune),
             label: Text(AppLocalizations.of(context)!.adjustPreferences),
@@ -1471,21 +1477,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   /// Current saved preferences - used by MainNavigationScreen
   MatchPreferences? get savedPreferences => _savedPreferences;
 
-  /// Refresh the discovery stack
+  /// Refresh the discovery stack (always bypasses cache)
   void refresh() {
-    // Clear all grid action state so the grid looks brand new
-    setState(() {
-      _gridActionOverlays.clear();
-      _gridSkippedIds.clear();
-      _gridStartIndex = 0;
-      _gridExtraPurchased = 0;
-      _onlineStatusOverrides.clear();
-      _swipeShuffledCards = [];
-      _swipeShuffledForHash = 0;
-      _swipeCurrentIndex = 0;
-    });
-    _loadSavedPreferencesAndStart();
     _loadSwipeHistoryOverlays();
+    refreshWithPreferences(_currentPreferences);
   }
 
   /// Refresh with new preferences — resets grid state and reloads stack
@@ -1704,20 +1699,20 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             child: Text(l10n.maybeLater, style: const TextStyle(color: AppColors.textTertiary)),
           ),
           ElevatedButton(
-            onPressed: () {
+            onPressed: () async {
               Navigator.of(ctx).pop();
               // Open the filter/preferences screen
-              Navigator.of(context).push(
+              final result = await Navigator.of(context).push<MatchPreferences>(
                 MaterialPageRoute(
                   builder: (_) => DiscoveryPreferencesScreen(
                     userId: userId,
                     currentPreferences: _savedPreferences,
-                    onSave: (newPrefs) {
-                      refreshWithPreferences(newPrefs);
-                    },
                   ),
                 ),
               );
+              if (result != null) {
+                refreshWithPreferences(result);
+              }
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,

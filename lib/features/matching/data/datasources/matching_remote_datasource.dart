@@ -87,15 +87,41 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     List<QueryDocumentSnapshot<Map<String, dynamic>>> profileDocs;
 
     if (poolCandidateIds != null && poolCandidateIds.isNotEmpty) {
-      // Pool path: fetch only the profiles we know match the criteria
-      // Also fetch travelers visiting the target countries (pools only index home country)
+      // Pool path: fetch pool candidates + supplement with direct country scan
+      // Pool only contains verified profiles with photos — direct scan catches the rest
       final travelerIds = await _getTravelerIdsInCountries(
         userProfile: userProfile,
         preferences: preferences,
       );
-      final allIds = {...poolCandidateIds, ...travelerIds}.toList();
-      debugPrint('[Matching] Using pool: ${poolCandidateIds.length} pool + ${travelerIds.length} travelers = ${allIds.length}');
-      profileDocs = await _fetchProfilesByIds(allIds);
+      final allIds = {...poolCandidateIds, ...travelerIds};
+
+      // Also do a direct country scan to catch profiles not in pools
+      if (preferences.preferredCountries.isNotEmpty) {
+        final countries = preferences.preferredCountries;
+        final countriesLower = countries.map((c) => c.toLowerCase()).toList();
+        final primaryQuery = await firestore
+            .collection('profiles')
+            .where('location.country', whereIn: countries)
+            .limit(500)
+            .get();
+        for (final doc in primaryQuery.docs) {
+          allIds.add(doc.id);
+        }
+        try {
+          final secondaryQuery = await firestore
+              .collection('profiles')
+              .where('location.countryLower', whereIn: countriesLower)
+              .limit(500)
+              .get();
+          for (final doc in secondaryQuery.docs) {
+            allIds.add(doc.id);
+          }
+        } catch (_) {}
+      }
+
+      final idList = allIds.toList();
+      debugPrint('[Matching] Using pool: ${poolCandidateIds.length} pool + ${idList.length - poolCandidateIds.length} extra = ${idList.length}');
+      profileDocs = await _fetchProfilesByIds(idList);
     } else {
       // Fallback: full scan (pools unavailable, stale, or empty)
       // When no country filter is active, use random starting point so each
@@ -103,7 +129,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
 
       if (preferences.preferredCountries.isEmpty) {
-        // No country filter: random worldwide scan
+        // No country filter: random worldwide scan (closest 500 via random pivot)
         final randomKey = _generateRandomDocId();
         debugPrint('[Matching] Random worldwide mode — pivot: $randomKey');
         final queryA = await firestore
@@ -120,15 +146,19 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         debugPrint('[Matching] Random scan: ${queryA.docs.length} + ${queryB.docs.length} = ${profileDocs.length}');
       } else {
         // Country filter active: query both location.country and location.countryLower
+        // to handle locale-dependent country names from geocoding
         final countries = preferences.preferredCountries;
         final countriesLower = countries.map((c) => c.toLowerCase()).toList();
 
+        // Primary query: exact match on location.country (e.g., "Italy")
         final primaryQuery = await firestore
             .collection('profiles')
             .where('location.country', whereIn: countries)
             .limit(500)
             .get();
 
+        // Secondary query: lowercase match on location.countryLower (e.g., "italia", "italy")
+        // This catches profiles saved with geocoding in a different locale
         QuerySnapshot<Map<String, dynamic>>? secondaryQuery;
         try {
           secondaryQuery = await firestore
@@ -136,8 +166,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
               .where('location.countryLower', whereIn: countriesLower)
               .limit(500)
               .get();
-        } catch (_) {}
+        } catch (_) {
+          // countryLower field may not exist yet on older profiles
+        }
 
+        // Merge results, dedup by doc ID
         final seenIds = <String>{};
         profileDocs = [];
         for (final doc in primaryQuery.docs) {
@@ -292,12 +325,9 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           isSuperLike: matchScore.overallScore >= 80.0,
         ));
       } catch (e) {
-        print('[Discovery] Error parsing profile ${doc.id}: $e');
         continue;
       }
     }
-
-    print('[Discovery] Final candidate count: ${candidates.length}');
 
     // Shuffle candidates randomly so users see a different order each time
     candidates.shuffle(Random());
