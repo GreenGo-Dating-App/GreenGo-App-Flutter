@@ -103,7 +103,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
 
       if (preferences.preferredCountries.isEmpty) {
-        // Random Mode: pick a random document ID as pivot and fetch from both sides
+        // No country filter: random worldwide scan
         final randomKey = _generateRandomDocId();
         debugPrint('[Matching] Random worldwide mode — pivot: $randomKey');
         final queryA = await firestore
@@ -119,15 +119,36 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         profileDocs = [...queryA.docs, ...queryB.docs];
         debugPrint('[Matching] Random scan: ${queryA.docs.length} + ${queryB.docs.length} = ${profileDocs.length}');
       } else {
-        // Country filter active: query by country field to avoid loading unrelated profiles
-        // Firestore whereIn supports up to 30 values (countries list is typically 1-3)
-        final querySnapshot = await firestore
+        // Country filter active: query both location.country and location.countryLower
+        final countries = preferences.preferredCountries;
+        final countriesLower = countries.map((c) => c.toLowerCase()).toList();
+
+        final primaryQuery = await firestore
             .collection('profiles')
-            .where('location.country', whereIn: preferences.preferredCountries)
+            .where('location.country', whereIn: countries)
             .limit(500)
             .get();
-        profileDocs = querySnapshot.docs;
-        debugPrint('[Matching] Country-filtered scan: ${profileDocs.length} profiles for ${preferences.preferredCountries}');
+
+        QuerySnapshot<Map<String, dynamic>>? secondaryQuery;
+        try {
+          secondaryQuery = await firestore
+              .collection('profiles')
+              .where('location.countryLower', whereIn: countriesLower)
+              .limit(500)
+              .get();
+        } catch (_) {}
+
+        final seenIds = <String>{};
+        profileDocs = [];
+        for (final doc in primaryQuery.docs) {
+          if (seenIds.add(doc.id)) profileDocs.add(doc);
+        }
+        if (secondaryQuery != null) {
+          for (final doc in secondaryQuery.docs) {
+            if (seenIds.add(doc.id)) profileDocs.add(doc);
+          }
+        }
+        debugPrint('[Matching] Country-filtered scan: ${profileDocs.length} profiles for $countries');
       }
 
       // Merge travelers that may not be in the first 500 docs

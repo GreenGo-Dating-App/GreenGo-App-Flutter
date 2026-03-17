@@ -438,6 +438,7 @@ class LocationModel extends Location {
       'longitude': longitude,
       'city': city,
       'country': country,
+      'countryLower': country.toLowerCase(),
       'displayAddress': displayAddress,
     };
   }
