@@ -33,7 +33,7 @@ class ConversationsScreen extends StatefulWidget {
   State<ConversationsScreen> createState() => _ConversationsScreenState();
 }
 
-enum ConversationFilter { all, newMessages, notReplied, fromMatch, fromSearch }
+enum ConversationFilter { all, newMessages, notReplied, fromMatch, fromSearch, favorites, toApprove }
 
 class _ConversationsScreenState extends State<ConversationsScreen> {
   final TextEditingController _searchController = TextEditingController();
@@ -48,8 +48,25 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   @override
   void initState() {
     super.initState();
+    _selectedFilter = ConversationFilter.all;
+    _searchQuery = '';
+    _searchController.clear();
     _loadCurrentUserProfile();
     _loadPrefs();
+  }
+
+  @override
+  void didUpdateWidget(covariant ConversationsScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.userId != widget.userId) {
+      setState(() {
+        _selectedFilter = ConversationFilter.all;
+        _searchQuery = '';
+        _searchController.clear();
+        _profileCache.clear();
+      });
+      _loadCurrentUserProfile();
+    }
   }
 
   Future<void> _loadPrefs() async {
@@ -163,7 +180,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     final filters = [
       (ConversationFilter.all, l10n?.filterAll ?? 'All'),
       (ConversationFilter.newMessages, l10n?.filterNewMessages ?? 'New'),
-      (ConversationFilter.notReplied, l10n?.filterNotReplied ?? 'No Reply'),
+      (ConversationFilter.notReplied, l10n?.filterNotReplied ?? 'Unread'),
+      (ConversationFilter.favorites, l10n?.filterFavorites ?? 'Favorites'),
+      (ConversationFilter.toApprove, l10n?.filterToApprove ?? 'To Approve'),
       (ConversationFilter.fromMatch, l10n?.filterFromMatch ?? 'Match'),
       (ConversationFilter.fromSearch, l10n?.filterFromSearch ?? 'Search'),
     ];
@@ -207,12 +226,21 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   bool _passesFilter(Conversation conversation) {
     switch (_selectedFilter) {
       case ConversationFilter.all:
-        return true;
+        // "All" excludes support, search (directs), and pending superLikes
+        return conversation.conversationType != ConversationType.support &&
+            conversation.conversationType != ConversationType.search &&
+            !(conversation.isSuperLikeConversation && conversation.visibleTo != null);
       case ConversationFilter.newMessages:
         return conversation.unreadCount > 0;
       case ConversationFilter.notReplied:
-        return conversation.lastMessage != null &&
-            conversation.lastMessage!.senderId != widget.userId;
+        return conversation.unreadCount > 0;
+      case ConversationFilter.favorites:
+        return conversation.isFavoritedBy(widget.userId);
+      case ConversationFilter.toApprove:
+        // Show all superLike conversations (pending ones needing approval)
+        return conversation.isSuperLikeConversation &&
+            conversation.visibleTo != null &&
+            conversation.visibleTo!.contains(widget.userId);
       case ConversationFilter.fromMatch:
         return conversation.conversationType == ConversationType.match;
       case ConversationFilter.fromSearch:
@@ -371,6 +399,30 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 otherUserProfile: profile,
                                 currentUserId: widget.userId,
                                 chatLanguage: _getChatLanguage(conversation.matchId),
+                                onToggleFavorite: () {
+                                  context.read<ConversationsBloc>().add(
+                                    ConversationToggleFavoriteRequested(
+                                      conversationId: conversation.conversationId,
+                                      userId: widget.userId,
+                                      isFavorite: !conversation.isFavoritedBy(widget.userId),
+                                    ),
+                                  );
+                                },
+                                onAcceptSuperLike: () {
+                                  context.read<ConversationsBloc>().add(
+                                    ConversationAcceptSuperLikeRequested(
+                                      conversationId: conversation.conversationId,
+                                    ),
+                                  );
+                                },
+                                onRejectSuperLike: () {
+                                  context.read<ConversationsBloc>().add(
+                                    ConversationRejectSuperLikeRequested(
+                                      conversationId: conversation.conversationId,
+                                      userId: widget.userId,
+                                    ),
+                                  );
+                                },
                                 onLongPress: () {
                                   _showDeleteBottomSheet(
                                     context,

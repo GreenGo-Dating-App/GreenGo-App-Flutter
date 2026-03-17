@@ -12,6 +12,7 @@ import '../../domain/usecases/star_message.dart';
 import '../../domain/usecases/forward_message.dart';
 import '../../domain/usecases/delete_conversation.dart';
 import '../../../../core/services/usage_limit_service.dart';
+import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../../membership/domain/entities/membership.dart';
 import 'chat_event.dart';
 import 'chat_state.dart';
@@ -36,6 +37,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   final DeleteConversationForMe deleteConversationForMe;
   final DeleteConversationForBoth deleteConversationForBoth;
   final UsageLimitService _usageLimitService;
+  final TrackUserAction? _trackUserAction;
 
   String? _conversationId;
   String? _matchId;
@@ -61,7 +63,9 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     required this.deleteConversationForMe,
     required this.deleteConversationForBoth,
     UsageLimitService? usageLimitService,
+    TrackUserAction? trackUserAction,
   })  : _usageLimitService = usageLimitService ?? UsageLimitService(),
+        _trackUserAction = trackUserAction,
         super(const ChatInitial()) {
     on<ChatConversationLoaded>(_onConversationLoaded);
     on<ChatMessageSent>(_onMessageSent);
@@ -225,6 +229,12 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
           await _usageLimitService.recordUsage(
             userId: _currentUserId!,
             limitType: UsageLimitType.messages,
+          );
+        }
+        // Track gamification challenge progress
+        if (_currentUserId != null && _trackUserAction != null) {
+          _trackUserAction!.call(
+            TrackUserActionParams.messageSent(_currentUserId!),
           );
         }
         // Re-subscribe to the Firestore stream (emit.forEach was cancelled)

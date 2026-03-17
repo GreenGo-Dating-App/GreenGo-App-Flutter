@@ -24,6 +24,7 @@ class Profile extends Equatable {
   final DateTime? boostExpiry;
   final bool isIncognito;
   final DateTime? incognitoExpiry;
+  final bool isGhostMode; // Ghost Mode: enhanced incognito (Gold/Platinum) - hidden from discovery + nickname search, unlimited
   final bool isTraveler;
   final DateTime? travelerExpiry;
   final Location? travelerLocation; // Temporary location while traveling
@@ -108,6 +109,7 @@ class Profile extends Equatable {
     this.boostExpiry,
     this.isIncognito = false,
     this.incognitoExpiry,
+    this.isGhostMode = false,
     this.isTraveler = false,
     this.travelerExpiry,
     this.travelerLocation,
@@ -226,6 +228,7 @@ class Profile extends Equatable {
         boostExpiry,
         isIncognito,
         incognitoExpiry,
+        isGhostMode,
         isTraveler,
         travelerExpiry,
         travelerLocation,
@@ -288,6 +291,7 @@ class Profile extends Equatable {
     DateTime? boostExpiry,
     bool? isIncognito,
     DateTime? incognitoExpiry,
+    bool? isGhostMode,
     bool? isTraveler,
     DateTime? travelerExpiry,
     Location? travelerLocation,
@@ -348,6 +352,7 @@ class Profile extends Equatable {
       boostExpiry: boostExpiry ?? this.boostExpiry,
       isIncognito: isIncognito ?? this.isIncognito,
       incognitoExpiry: incognitoExpiry ?? this.incognitoExpiry,
+      isGhostMode: isGhostMode ?? this.isGhostMode,
       isTraveler: isTraveler ?? this.isTraveler,
       travelerExpiry: travelerExpiry ?? this.travelerExpiry,
       travelerLocation: travelerLocation ?? this.travelerLocation,

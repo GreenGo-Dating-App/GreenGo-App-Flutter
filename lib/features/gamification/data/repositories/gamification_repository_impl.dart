@@ -389,4 +389,24 @@ class GamificationRepositoryImpl implements GamificationRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> trackActionProgress(
+    String userId,
+    String actionType, {
+    int incrementBy = 1,
+  }) async {
+    try {
+      await remoteDataSource.trackActionProgress(
+        userId,
+        actionType,
+        incrementBy: incrementBy,
+      );
+      return const Right(null);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }

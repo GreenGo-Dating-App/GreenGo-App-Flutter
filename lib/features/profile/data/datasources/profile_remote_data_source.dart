@@ -257,6 +257,9 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         .limit(20)
         .get();
 
-    return snapshot.docs.map((doc) => ProfileModel.fromJson(doc.data())).toList();
+    return snapshot.docs
+        .map((doc) => ProfileModel.fromJson(doc.data()))
+        .where((profile) => !profile.isGhostMode) // Ghost mode users hidden from nickname search
+        .toList();
   }
 }

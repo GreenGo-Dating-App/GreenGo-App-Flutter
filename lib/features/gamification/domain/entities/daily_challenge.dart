@@ -136,13 +136,19 @@ class UserChallengeProgress extends Equatable {
 
 /// Standard Daily Challenges (Point 196)
 class DailyChallenges {
+  /// Date key for stable daily challenge IDs
+  static String get _dailyKey {
+    final now = DateTime.now();
+    return '${now.year}_${now.month.toString().padLeft(2, '0')}_${now.day.toString().padLeft(2, '0')}';
+  }
+
   /// Send 5 messages
   static DailyChallenge get sendMessages {
     final now = DateTime.now();
     final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
     return DailyChallenge(
-      challengeId: 'daily_send_messages_${now.millisecondsSinceEpoch}',
+      challengeId: 'daily_send_messages_$_dailyKey',
       name: 'Message Master',
       description: 'Send 5 messages to your matches',
       type: ChallengeType.daily,
@@ -164,7 +170,7 @@ class DailyChallenges {
     final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
     return DailyChallenge(
-      challengeId: 'daily_video_call_${now.millisecondsSinceEpoch}',
+      challengeId: 'daily_video_call_$_dailyKey',
       name: 'Video Enthusiast',
       description: 'Complete 1 video call with a match',
       type: ChallengeType.daily,
@@ -186,7 +192,7 @@ class DailyChallenges {
     final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
     return DailyChallenge(
-      challengeId: 'daily_update_photo_${now.millisecondsSinceEpoch}',
+      challengeId: 'daily_update_photo_$_dailyKey',
       name: 'Photo Refresh',
       description: 'Update or add a new profile photo',
       type: ChallengeType.daily,
@@ -208,7 +214,7 @@ class DailyChallenges {
     final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
     return DailyChallenge(
-      challengeId: 'daily_get_matches_${now.millisecondsSinceEpoch}',
+      challengeId: 'daily_get_matches_$_dailyKey',
       name: 'Match Maker',
       description: 'Get 3 new matches today',
       type: ChallengeType.daily,
@@ -230,7 +236,7 @@ class DailyChallenges {
     final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
     return DailyChallenge(
-      challengeId: 'daily_super_likes_${now.millisecondsSinceEpoch}',
+      challengeId: 'daily_super_likes_$_dailyKey',
       name: 'Super Liker',
       description: 'Send 3 super likes',
       type: ChallengeType.daily,
@@ -274,13 +280,20 @@ class DailyChallenges {
 
 /// Weekly Mega-Challenges (Point 199)
 class WeeklyChallenges {
+  /// Week key for stable weekly challenge IDs (ISO week number)
+  static String get _weekKey {
+    final now = DateTime.now();
+    final weekNumber = ((now.difference(DateTime(now.year, 1, 1)).inDays) / 7).ceil();
+    return '${now.year}_w${weekNumber.toString().padLeft(2, '0')}';
+  }
+
   /// Complete all daily challenges for 7 days
   static DailyChallenge get perfectWeek {
     final now = DateTime.now();
     final nextWeek = now.add(const Duration(days: 7));
 
     return DailyChallenge(
-      challengeId: 'weekly_perfect_${now.millisecondsSinceEpoch}',
+      challengeId: 'weekly_perfect_$_weekKey',
       name: 'Perfect Week',
       description: 'Complete all daily challenges for 7 consecutive days',
       type: ChallengeType.weekly,
@@ -303,7 +316,7 @@ class WeeklyChallenges {
     final nextWeek = now.add(const Duration(days: 7));
 
     return DailyChallenge(
-      challengeId: 'weekly_matches_${now.millisecondsSinceEpoch}',
+      challengeId: 'weekly_matches_$_weekKey',
       name: 'Weekly Match Champion',
       description: 'Get 20 matches this week',
       type: ChallengeType.weekly,
@@ -325,7 +338,7 @@ class WeeklyChallenges {
     final nextWeek = now.add(const Duration(days: 7));
 
     return DailyChallenge(
-      challengeId: 'weekly_messages_${now.millisecondsSinceEpoch}',
+      challengeId: 'weekly_messages_$_weekKey',
       name: 'Chat Master',
       description: 'Send 50 messages this week',
       type: ChallengeType.weekly,

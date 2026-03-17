@@ -35,6 +35,7 @@ class ConversationModel extends Conversation {
     super.supportResolvedAt,
     super.visibleTo,
     super.superLikeSenderId,
+    super.favorites,
     super.isDeleted,
     super.deletedFor,
   });
@@ -69,6 +70,7 @@ class ConversationModel extends Conversation {
       supportResolvedAt: conversation.supportResolvedAt,
       visibleTo: conversation.visibleTo,
       superLikeSenderId: conversation.superLikeSenderId,
+      favorites: conversation.favorites,
       isDeleted: conversation.isDeleted,
       deletedFor: conversation.deletedFor,
     );
@@ -165,6 +167,9 @@ class ConversationModel extends Conversation {
           ? List<String>.from(data['visibleTo'] as List)
           : null,
       superLikeSenderId: data['superLikeSenderId'] as String?,
+      favorites: data['favorites'] != null
+          ? Map<String, bool>.from(data['favorites'] as Map)
+          : null,
       isDeleted: data['isDeleted'] as bool? ?? false,
       deletedFor: data['deletedFor'] as Map<String, dynamic>?,
     );
@@ -237,6 +242,7 @@ class ConversationModel extends Conversation {
           : null,
       'visibleTo': visibleTo,
       'superLikeSenderId': superLikeSenderId,
+      'favorites': favorites,
     };
   }
 
@@ -288,6 +294,7 @@ class ConversationModel extends Conversation {
       supportResolvedAt: supportResolvedAt,
       visibleTo: visibleTo,
       superLikeSenderId: superLikeSenderId,
+      favorites: favorites,
       isDeleted: isDeleted,
       deletedFor: deletedFor,
     );

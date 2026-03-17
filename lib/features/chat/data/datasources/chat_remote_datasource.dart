@@ -262,6 +262,24 @@ abstract class ChatRemoteDataSource {
     required String currentUserId,
     required String otherUserId,
   });
+
+  /// Toggle favorite status for a conversation
+  Future<void> toggleFavorite({
+    required String conversationId,
+    required String userId,
+    required bool isFavorite,
+  });
+
+  /// Accept a super like conversation (make visible to both)
+  Future<void> acceptSuperLike({
+    required String conversationId,
+  });
+
+  /// Reject a super like conversation (delete for recipient)
+  Future<void> rejectSuperLike({
+    required String conversationId,
+    required String userId,
+  });
 }
 
 /// Implementation
@@ -1918,6 +1936,38 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     } catch (e) {
       throw Exception('Failed to get or create search conversation: $e');
     }
+  }
+
+  @override
+  Future<void> toggleFavorite({
+    required String conversationId,
+    required String userId,
+    required bool isFavorite,
+  }) async {
+    await firestore.collection('conversations').doc(conversationId).update({
+      'favorites.$userId': isFavorite,
+    });
+  }
+
+  @override
+  Future<void> acceptSuperLike({
+    required String conversationId,
+  }) async {
+    await firestore.collection('conversations').doc(conversationId).update({
+      'visibleTo': null,
+    });
+  }
+
+  @override
+  Future<void> rejectSuperLike({
+    required String conversationId,
+    required String userId,
+  }) async {
+    // Mark as deleted for the recipient
+    await firestore.collection('conversations').doc(conversationId).update({
+      'deletedFor.$userId': FieldValue.serverTimestamp(),
+      'isDeleted': true,
+    });
   }
 }
 

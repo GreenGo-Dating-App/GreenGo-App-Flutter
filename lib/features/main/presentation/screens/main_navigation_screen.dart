@@ -15,6 +15,7 @@ import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
+import '../../../../core/widgets/loading_indicator.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -1024,7 +1025,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       return Scaffold(
         backgroundColor: AppColors.backgroundDark,
         body: const Center(
-          child: CircularProgressIndicator(
+          child: LoadingIndicator(
             color: AppColors.richGold,
           ),
         ),

@@ -15,6 +15,9 @@ class ConversationCard extends StatelessWidget {
   final String? chatLanguage; // The language set for this chat (null = user default)
   final VoidCallback? onTap;
   final VoidCallback? onLongPress;
+  final VoidCallback? onToggleFavorite;
+  final VoidCallback? onAcceptSuperLike;
+  final VoidCallback? onRejectSuperLike;
 
   const ConversationCard({
     super.key,
@@ -24,6 +27,9 @@ class ConversationCard extends StatelessWidget {
     this.chatLanguage,
     this.onTap,
     this.onLongPress,
+    this.onToggleFavorite,
+    this.onAcceptSuperLike,
+    this.onRejectSuperLike,
   });
 
   /// Map language codes to flag emojis
@@ -254,9 +260,10 @@ class ConversationCard extends StatelessWidget {
               ),
             ),
 
-            // Time + chat language flag
+            // Time + favorite + accept/reject
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 // Chat language flag (only if different from default)
                 if (chatLanguage != null && chatLanguage!.isNotEmpty) ...[
@@ -266,6 +273,7 @@ class ConversationCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 2),
                 ],
+                // Time
                 Text(
                   conversation.timeSinceLastMessage,
                   style: TextStyle(
@@ -276,6 +284,69 @@ class ConversationCard extends StatelessWidget {
                     fontWeight: hasUnread ? FontWeight.bold : FontWeight.normal,
                   ),
                 ),
+                const SizedBox(height: 4),
+                // Favorite star button
+                if (onToggleFavorite != null)
+                  GestureDetector(
+                    onTap: onToggleFavorite,
+                    child: Icon(
+                      conversation.isFavoritedBy(currentUserId)
+                          ? Icons.star
+                          : Icons.star_border,
+                      color: conversation.isFavoritedBy(currentUserId)
+                          ? AppColors.richGold
+                          : AppColors.textTertiary,
+                      size: 22,
+                    ),
+                  ),
+                // Accept/Reject buttons for pending super likes
+                if (conversation.isPendingSuperLikeFor(currentUserId)) ...[
+                  const SizedBox(height: 4),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (onAcceptSuperLike != null)
+                        GestureDetector(
+                          onTap: onAcceptSuperLike,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: AppColors.successGreen,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              l10n.priorityConnectAccept,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      const SizedBox(width: 4),
+                      if (onRejectSuperLike != null)
+                        GestureDetector(
+                          onTap: onRejectSuperLike,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: AppColors.errorRed,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              l10n.priorityConnectReject,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ],
               ],
             ),
           ],

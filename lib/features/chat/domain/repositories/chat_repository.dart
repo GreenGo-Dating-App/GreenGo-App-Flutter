@@ -207,4 +207,22 @@ abstract class ChatRepository {
     required String currentUserId,
     required String otherUserId,
   });
+
+  /// Toggle favorite status for a conversation
+  Future<Either<Failure, void>> toggleFavorite({
+    required String conversationId,
+    required String userId,
+    required bool isFavorite,
+  });
+
+  /// Accept a super like conversation
+  Future<Either<Failure, void>> acceptSuperLike({
+    required String conversationId,
+  });
+
+  /// Reject a super like conversation
+  Future<Either<Failure, void>> rejectSuperLike({
+    required String conversationId,
+    required String userId,
+  });
 }

@@ -17,6 +17,7 @@ class ProfileModel extends Profile {
     super.boostExpiry,
     super.isIncognito,
     super.incognitoExpiry,
+    super.isGhostMode,
     super.isTraveler,
     super.travelerExpiry,
     super.travelerLocation,
@@ -85,6 +86,7 @@ class ProfileModel extends Profile {
       incognitoExpiry: json['incognitoExpiry'] != null
           ? (json['incognitoExpiry'] as Timestamp).toDate()
           : null,
+      isGhostMode: json['isGhostMode'] as bool? ?? false,
       isTraveler: json['isTraveler'] as bool? ?? false,
       travelerExpiry: json['travelerExpiry'] != null
           ? (json['travelerExpiry'] as Timestamp).toDate()
@@ -235,6 +237,7 @@ class ProfileModel extends Profile {
       'incognitoExpiry': incognitoExpiry != null
           ? Timestamp.fromDate(incognitoExpiry!)
           : null,
+      'isGhostMode': isGhostMode,
       'isTraveler': isTraveler,
       'travelerExpiry': travelerExpiry != null
           ? Timestamp.fromDate(travelerExpiry!)
@@ -318,6 +321,7 @@ class ProfileModel extends Profile {
       boostExpiry: profile.boostExpiry,
       isIncognito: profile.isIncognito,
       incognitoExpiry: profile.incognitoExpiry,
+      isGhostMode: profile.isGhostMode,
       isTraveler: profile.isTraveler,
       travelerExpiry: profile.travelerExpiry,
       travelerLocation: profile.travelerLocation,

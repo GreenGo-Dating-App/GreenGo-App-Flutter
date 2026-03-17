@@ -119,11 +119,15 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         profileDocs = [...queryA.docs, ...queryB.docs];
         debugPrint('[Matching] Random scan: ${queryA.docs.length} + ${queryB.docs.length} = ${profileDocs.length}');
       } else {
+        // Country filter active: query by country field to avoid loading unrelated profiles
+        // Firestore whereIn supports up to 30 values (countries list is typically 1-3)
         final querySnapshot = await firestore
             .collection('profiles')
+            .where('location.country', whereIn: preferences.preferredCountries)
             .limit(500)
             .get();
         profileDocs = querySnapshot.docs;
+        debugPrint('[Matching] Country-filtered scan: ${profileDocs.length} profiles for ${preferences.preferredCountries}');
       }
 
       // Merge travelers that may not be in the first 500 docs

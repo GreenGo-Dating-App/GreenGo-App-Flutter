@@ -544,4 +544,50 @@ class ChatRepositoryImpl implements ChatRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> toggleFavorite({
+    required String conversationId,
+    required String userId,
+    required bool isFavorite,
+  }) async {
+    try {
+      await remoteDataSource.toggleFavorite(
+        conversationId: conversationId,
+        userId: userId,
+        isFavorite: isFavorite,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> acceptSuperLike({
+    required String conversationId,
+  }) async {
+    try {
+      await remoteDataSource.acceptSuperLike(conversationId: conversationId);
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> rejectSuperLike({
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.rejectSuperLike(
+        conversationId: conversationId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }

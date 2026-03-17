@@ -1575,45 +1575,102 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _toggleIncognito(BuildContext context, Profile profile, bool enabled) async {
-    if (enabled) {
-      // Platinum/Test gets it free, others pay coins
-      final isPlatinum = profile.membershipTier == MembershipTier.platinum ||
-          profile.membershipTier == MembershipTier.test;
+    // Ghost Mode: free & unlimited for Gold, Platinum, Test tiers
+    final isGhostEligible = profile.membershipTier == MembershipTier.gold ||
+        profile.membershipTier == MembershipTier.platinum ||
+        profile.membershipTier == MembershipTier.test;
 
-      // Show confirmation dialog
-      final costText = isPlatinum ? 'Free with Platinum' : '${CoinFeaturePrices.incognito} coins';
-      final confirmed = await showDialog<bool>(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          backgroundColor: AppColors.backgroundCard,
-          title: Row(
-            children: [
-              const Icon(Icons.visibility_off, color: AppColors.richGold),
-              const SizedBox(width: 8),
-              Text(AppLocalizations.of(context)!.profileActivateIncognito, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18)),
+    if (enabled) {
+      if (isGhostEligible) {
+        // Gold/Platinum/Test: free unlimited ghost mode — no coins, no expiry
+        final confirmed = await showDialog<bool>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: Row(
+              children: [
+                const Icon(Icons.visibility_off, color: AppColors.richGold),
+                const SizedBox(width: 8),
+                Text(AppLocalizations.of(context)!.profileActivateIncognito, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18)),
+              ],
+            ),
+            content: Text(
+              AppLocalizations.of(context)!.profileIncognitoDescription('Free - Unlimited'),
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(ctx).pop(false),
+                child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
+              ),
+              ElevatedButton(
+                onPressed: () => Navigator.of(ctx).pop(true),
+                style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
+                child: Text(AppLocalizations.of(context)!.profileActivate, style: const TextStyle(color: Colors.white)),
+              ),
             ],
           ),
-          content: Text(
-            AppLocalizations.of(context)!.profileIncognitoDescription(costText),
-            style: const TextStyle(color: AppColors.textSecondary),
+        );
+
+        if (confirmed != true || !context.mounted) return;
+
+        try {
+          await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
+            'isGhostMode': true,
+            'isIncognito': false, // Disable incognito when ghost mode is on
+            'incognitoExpiry': null,
+          });
+
+          if (context.mounted) {
+            context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.profileIncognitoActivated),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+          }
+        } catch (e) {
+          if (context.mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
+            );
+          }
+        }
+      } else {
+        // Non-eligible tiers: pay coins for 24h
+        final costText = '${CoinFeaturePrices.incognito} coins';
+        final confirmed = await showDialog<bool>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: Row(
+              children: [
+                const Icon(Icons.visibility_off, color: AppColors.richGold),
+                const SizedBox(width: 8),
+                Text(AppLocalizations.of(context)!.profileActivateIncognito, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18)),
+              ],
+            ),
+            content: Text(
+              AppLocalizations.of(context)!.profileIncognitoDescription(costText),
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(ctx).pop(false),
+                child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
+              ),
+              ElevatedButton(
+                onPressed: () => Navigator.of(ctx).pop(true),
+                style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
+                child: Text(AppLocalizations.of(context)!.profileActivate, style: const TextStyle(color: Colors.white)),
+              ),
+            ],
           ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(ctx).pop(false),
-              child: Text(AppLocalizations.of(context)!.cancel, style: const TextStyle(color: AppColors.textTertiary)),
-            ),
-            ElevatedButton(
-              onPressed: () => Navigator.of(ctx).pop(true),
-              style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-              child: Text(AppLocalizations.of(context)!.profileActivate, style: const TextStyle(color: Colors.white)),
-            ),
-          ],
-        ),
-      );
+        );
 
-      if (confirmed != true || !context.mounted) return;
+        if (confirmed != true || !context.mounted) return;
 
-      if (!isPlatinum) {
         try {
           final coinRepository = GetIt.instance<CoinRepository>();
           final balanceResult = await coinRepository.getBalance(profile.userId);
@@ -1662,47 +1719,43 @@ class EditProfileScreen extends StatelessWidget {
             featureName: 'incognito',
             cost: CoinFeaturePrices.incognito,
           );
+
+          if (!context.mounted) return;
+
+          // Update profile with 24h expiry
+          final expiry = DateTime.now().add(const Duration(hours: 24));
+          await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
+            'isIncognito': true,
+            'incognitoExpiry': Timestamp.fromDate(expiry),
+          });
+
+          if (context.mounted) {
+            context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.profileIncognitoActivated),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+          }
         } catch (e) {
           if (context.mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
             );
           }
-          return;
-        }
-      }
-
-      if (!context.mounted) return;
-
-      // Update profile
-      try {
-        final expiry = DateTime.now().add(const Duration(hours: 24));
-        await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
-          'isIncognito': true,
-          'incognitoExpiry': Timestamp.fromDate(expiry),
-        });
-
-        if (context.mounted) {
-          context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(AppLocalizations.of(context)!.profileIncognitoActivated),
-              backgroundColor: AppColors.successGreen,
-            ),
-          );
-        }
-      } catch (e) {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
-          );
         }
       }
     } else {
-      // Disable incognito
-      await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
-        'isIncognito': false,
-      });
+      // Disable incognito or ghost mode
+      final updates = <String, dynamic>{};
+      if (isGhostEligible) {
+        updates['isGhostMode'] = false;
+      } else {
+        updates['isIncognito'] = false;
+        updates['incognitoExpiry'] = null;
+      }
+      await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update(updates);
 
       if (context.mounted) {
         context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
@@ -2163,13 +2216,39 @@ class _IncognitoToggleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isActive = profile.isIncognito &&
+    final isGhostEligible = profile.membershipTier == MembershipTier.gold ||
+        profile.membershipTier == MembershipTier.platinum ||
+        profile.membershipTier == MembershipTier.test;
+
+    // Ghost mode: uses isGhostMode field. Incognito: uses isIncognito + expiry.
+    final bool isActive;
+    if (isGhostEligible) {
+      isActive = profile.isGhostMode;
+    } else {
+      isActive = profile.isIncognito &&
+          profile.incognitoExpiry != null &&
+          profile.incognitoExpiry!.isAfter(DateTime.now());
+    }
+
+    final hasExpiry = !isGhostEligible && isActive &&
         profile.incognitoExpiry != null &&
         profile.incognitoExpiry!.isAfter(DateTime.now());
-
-    final remaining = isActive
+    final remaining = hasExpiry
         ? profile.incognitoExpiry!.difference(DateTime.now())
         : Duration.zero;
+
+    String subtitle;
+    if (isActive) {
+      if (isGhostEligible) {
+        subtitle = 'Ghost Mode - Unlimited - Hidden from discovery & search';
+      } else {
+        subtitle = '${remaining.inHours}h ${remaining.inMinutes % 60}m remaining';
+      }
+    } else if (isGhostEligible) {
+      subtitle = 'Free - Unlimited - Hidden from discovery & nickname search';
+    } else {
+      subtitle = '${CoinFeaturePrices.incognito} coins/24h - Hidden from discovery';
+    }
 
     return Container(
       decoration: BoxDecoration(
@@ -2185,19 +2264,14 @@ class _IncognitoToggleCard extends StatelessWidget {
           color: isActive ? AppColors.richGold : AppColors.textTertiary,
         ),
         title: Text(
-          AppLocalizations.of(context)!.profileIncognitoMode,
+          isGhostEligible ? 'Ghost Mode' : AppLocalizations.of(context)!.profileIncognitoMode,
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,
           ),
         ),
         subtitle: Text(
-          isActive
-              ? '${remaining.inHours}h ${remaining.inMinutes % 60}m remaining'
-              : (profile.membershipTier == MembershipTier.platinum ||
-                      profile.membershipTier == MembershipTier.test)
-                  ? AppLocalizations.of(context)!.profileIncognitoFreePlatinum
-                  : '${CoinFeaturePrices.incognito} coins/day - Hidden from discovery',
+          subtitle,
           style: TextStyle(
             color: isActive ? AppColors.richGold : AppColors.textTertiary,
             fontSize: 12,

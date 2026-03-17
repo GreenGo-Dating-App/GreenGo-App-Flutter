@@ -11,6 +11,7 @@ import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
+import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../data/datasources/discovery_remote_datasource.dart';
 import 'discovery_event.dart';
 import 'discovery_state.dart';
@@ -26,6 +27,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
   final UsageLimitService _usageLimitService;
   final CoinRepository? coinRepository;
   final DiscoveryRemoteDataSource? discoveryDataSource;
+  final TrackUserAction? trackUserAction;
 
   // Queue management
   static const int queueSize = 20;
@@ -46,6 +48,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     UsageLimitService? usageLimitService,
     this.coinRepository,
     this.discoveryDataSource,
+    this.trackUserAction,
   })  : _usageLimitService = usageLimitService ?? UsageLimitService(),
         super(const DiscoveryInitial()) {
     on<DiscoveryStackLoadRequested>(_onLoadStack);
@@ -385,6 +388,16 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       _lastSwipedCard = currentState.cards[currentState.currentIndex];
       _lastSwipeType = actionType;
       _lastSwipeCreatedMatch = swipeAction.createdMatch;
+    }
+
+    // Track gamification challenge progress
+    if (trackUserAction != null && _currentUserId != null) {
+      if (swipeAction.createdMatch) {
+        trackUserAction!.call(TrackUserActionParams.match(_currentUserId!));
+      }
+      if (actionType == SwipeActionType.superLike) {
+        trackUserAction!.call(TrackUserActionParams.superLike(_currentUserId!));
+      }
     }
 
     // Move to next card (swipe mode) or stay in place (grid mode)

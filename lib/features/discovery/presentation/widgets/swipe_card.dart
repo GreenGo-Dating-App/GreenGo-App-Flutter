@@ -23,6 +23,7 @@ class SwipeCard extends StatefulWidget {
   final ValueChanged<double>? onDragProgress;
   final bool? isOnlineOverride;
   final Profile? currentUserProfile;
+  final bool isRandomMode;
 
   const SwipeCard({
     super.key,
@@ -33,6 +34,7 @@ class SwipeCard extends StatefulWidget {
     this.onDragProgress,
     this.isOnlineOverride,
     this.currentUserProfile,
+    this.isRandomMode = false,
   });
 
   @override
@@ -415,7 +417,11 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  widget.card.distanceText,
+                  (widget.isRandomMode || widget.card.distanceText.isEmpty)
+                      ? (profile.effectiveLocation.city.isNotEmpty
+                          ? profile.effectiveLocation.city
+                          : profile.effectiveLocation.country)
+                      : widget.card.distanceText,
                   style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 14,

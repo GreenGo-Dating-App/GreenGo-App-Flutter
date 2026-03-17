@@ -135,6 +135,13 @@ abstract class GamificationRepository {
 
   /// Apply seasonal theme (Point 200)
   Future<Either<Failure, Map<String, dynamic>>> getSeasonalThemeConfig();
+
+  /// Track progress for all active challenges matching an action type
+  Future<Either<Failure, void>> trackActionProgress(
+    String userId,
+    String actionType, {
+    int incrementBy = 1,
+  });
 }
 
 /// Leaderboard types

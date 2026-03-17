@@ -174,17 +174,19 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     // Get candidates from matching datasource
-    // When randomMode is ON, pass empty countries to trigger random worldwide query
-    final effectiveCountries = preferences.randomMode
-        ? const <String>[]
-        : preferences.preferredCountries;
+    // When no countries selected: worldwide (pass empty to get all)
+    // When countries selected: pass them to filter (regardless of randomMode)
+    final hasCountryFilter = preferences.preferredCountries.isNotEmpty;
+    final effectiveCountries = hasCountryFilter
+        ? preferences.preferredCountries
+        : const <String>[];
     final candidates = await matchingDataSource.getMatchCandidates(
       userId: userId,
       preferences: matching.MatchPreferences(
         userId: preferences.userId,
         minAge: preferences.minAge,
         maxAge: preferences.maxAge,
-        maxDistance: preferences.randomMode
+        maxDistance: (preferences.randomMode && !hasCountryFilter)
             ? 99999.0
             : (preferences.maxDistanceKm ?? 99999).toDouble(),
         preferredGenders: preferredGenders,
@@ -258,8 +260,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
       // When user has a country filter, profiles with unknown/empty country are excluded
-      // Skip country filter when randomMode is ON (worldwide random)
-      if (!preferences.randomMode && preferences.preferredCountries.isNotEmpty) {
+      // Apply country filter when countries are selected (regardless of randomMode)
+      if (preferences.preferredCountries.isNotEmpty) {
         print('[Discovery] Country filter active: ${preferences.preferredCountries}');
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
@@ -286,12 +288,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final userLng = (userLoc['longitude'] as num?)?.toDouble() ?? 0.0;
       final fe = FeatureEngineer();
 
-      // Worldwide fallback: if pool has fewer than 500 candidates,
-      // fill up to 500 with the closest worldwide profiles.
-      // This ensures new users in small countries still see a full grid.
+      // Worldwide fallback: only when no country filter is active.
+      // When a country IS selected, show only people from that country (no padding).
       const minCandidates = 500;
-      lastUsedWorldwideFallback = filteredCandidates.length < minCandidates;
-      if (filteredCandidates.length < minCandidates) {
+      final shouldFallback = preferences.preferredCountries.isEmpty &&
+          filteredCandidates.length < minCandidates;
+      lastUsedWorldwideFallback = shouldFallback;
+      if (shouldFallback) {
         print('[Discovery] Pool has ${filteredCandidates.length} candidates (< $minCandidates), fetching worldwide fallback');
 
         // Fetch worldwide candidates (no country restriction)
@@ -469,12 +472,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         continue;
       }
 
-      // Skip incognito profiles (hidden from discovery)
-      // Incognito with no expiry = permanent; with future expiry = active session
+      // Skip ghost mode profiles (hidden from discovery + nickname search, unlimited)
+      if (candidateProfile.isGhostMode) {
+        print('[Discovery] Excluded ${candidateProfile.displayName}: ghost mode');
+        continue;
+      }
+
+      // Skip incognito profiles (hidden from discovery for 24h)
       if (candidateProfile.isIncognito &&
-          (candidateProfile.incognitoExpiry == null ||
-              candidateProfile.incognitoExpiry!.isAfter(now))) {
-        if (candidateProfile.isTravelerActive) print('[Discovery] TRAVELER ${candidateProfile.nickname} EXCLUDED: incognito');
+          candidateProfile.incognitoExpiry != null &&
+          candidateProfile.incognitoExpiry!.isAfter(now)) {
         print('[Discovery] Excluded ${candidateProfile.displayName}: incognito');
         continue;
       }
