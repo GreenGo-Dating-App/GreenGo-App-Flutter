@@ -36,3 +36,36 @@ class ConversationDeleteForBothRequested extends ConversationsEvent {
     required this.userId,
   });
 }
+
+/// Toggle favorite status
+class ConversationToggleFavoriteRequested extends ConversationsEvent {
+  final String conversationId;
+  final String userId;
+  final bool isFavorite;
+
+  const ConversationToggleFavoriteRequested({
+    required this.conversationId,
+    required this.userId,
+    required this.isFavorite,
+  });
+}
+
+/// Accept a super like conversation
+class ConversationAcceptSuperLikeRequested extends ConversationsEvent {
+  final String conversationId;
+
+  const ConversationAcceptSuperLikeRequested({
+    required this.conversationId,
+  });
+}
+
+/// Reject a super like conversation
+class ConversationRejectSuperLikeRequested extends ConversationsEvent {
+  final String conversationId;
+  final String userId;
+
+  const ConversationRejectSuperLikeRequested({
+    required this.conversationId,
+    required this.userId,
+  });
+}

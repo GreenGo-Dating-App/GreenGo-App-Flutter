@@ -69,6 +69,13 @@ abstract class GamificationRemoteDataSource {
   );
   Future<Map<String, dynamic>> getSeasonalThemeConfig();
 
+  // Action-based progress tracking
+  Future<void> trackActionProgress(
+    String userId,
+    String actionType, {
+    int incrementBy = 1,
+  });
+
   // User Initialization
   Future<void> initializeUserGamification(String userId);
 }
@@ -96,6 +103,20 @@ class GamificationRemoteDataSourceImpl
       firestore.collection('seasonal_events');
   CollectionReference get _levelRewardsClaimedCollection =>
       firestore.collection('level_rewards_claimed');
+
+  /// Check if a user is admin or support (should be excluded from leaderboard)
+  Future<bool> _isAdminOrSupport(String userId) async {
+    try {
+      final doc = await firestore.collection('profiles').doc(userId).get();
+      if (!doc.exists) return false;
+      final data = doc.data() as Map<String, dynamic>?;
+      if (data == null) return false;
+      return (data['isAdmin'] as bool? ?? false) ||
+             (data['isSupport'] as bool? ?? false);
+    } catch (_) {
+      return false;
+    }
+  }
 
   // ===== Achievement Operations =====
 
@@ -371,9 +392,10 @@ class GamificationRemoteDataSourceImpl
     }
 
     // Default: all-time leaderboard from user_levels
+    // Fetch extra entries to account for filtered admin/support users
     Query query = _userLevelsCollection
         .orderBy('totalXP', descending: true)
-        .limit(limit);
+        .limit(limit + 20);
 
     if (type == LeaderboardType.regional && region != null) {
       query = query.where('region', isEqualTo: region);
@@ -385,6 +407,9 @@ class GamificationRemoteDataSourceImpl
     int rank = 1;
 
     for (var doc in snapshot.docs) {
+      if (entries.length >= limit) break;
+      // Exclude admins and supporters from leaderboard
+      if (await _isAdminOrSupport(doc.id)) continue;
       final data = doc.data() as Map<String, dynamic>;
       entries.add(LeaderboardEntryModel(
         rank: rank++,
@@ -455,6 +480,8 @@ class GamificationRemoteDataSourceImpl
 
       final userDoc = await _userLevelsCollection.doc(entry.key).get();
       if (!userDoc.exists) continue;
+      // Exclude admins and supporters from leaderboard
+      if (await _isAdminOrSupport(entry.key)) continue;
       final data = userDoc.data() as Map<String, dynamic>;
 
       // Regional filter: skip if region doesn't match
@@ -727,6 +754,41 @@ class GamificationRemoteDataSourceImpl
     }
 
     return event.themeConfig;
+  }
+
+  // ===== Action-Based Progress Tracking =====
+
+  /// Track progress for all active challenges matching an action type.
+  /// Called when a user performs an action (send message, match, super like, etc.)
+  @override
+  Future<void> trackActionProgress(
+    String userId,
+    String actionType, {
+    int incrementBy = 1,
+  }) async {
+    // Get all active challenges (daily + weekly)
+    final dailyChallenges = DailyChallenges.getRotatingChallenges();
+    final weeklyChallenges = WeeklyChallenges.getAllWeeklyChallenges();
+    final allChallenges = [...dailyChallenges, ...weeklyChallenges];
+
+    // Find challenges matching this action type
+    final matchingChallenges = allChallenges
+        .where((c) => c.actionType == actionType && c.isCurrentlyActive)
+        .toList();
+
+    // Track progress for each matching challenge
+    for (final challenge in matchingChallenges) {
+      try {
+        await trackChallengeProgress(
+          userId,
+          challenge.challengeId,
+          incrementBy,
+        );
+        debugPrint('[Gamification] Tracked $actionType for challenge ${challenge.name}');
+      } catch (e) {
+        debugPrint('[Gamification] Failed to track ${challenge.name}: $e');
+      }
+    }
   }
 
   // ===== User Initialization =====

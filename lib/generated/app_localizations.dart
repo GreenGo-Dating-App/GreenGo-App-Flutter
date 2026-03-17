@@ -6824,7 +6824,7 @@ abstract class AppLocalizations {
   /// No description provided for @filterNotReplied.
   ///
   /// In en, this message translates to:
-  /// **'No Reply'**
+  /// **'Unread'**
   String get filterNotReplied;
 
   /// No description provided for @filteredFromTotal.
@@ -17531,6 +17531,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You'**
   String get yourProfile;
+
+  /// No description provided for @loadingMsg1.
+  ///
+  /// In en, this message translates to:
+  /// **'Looking for amazing profiles around the world...'**
+  String get loadingMsg1;
+
+  /// No description provided for @loadingMsg2.
+  ///
+  /// In en, this message translates to:
+  /// **'Connecting hearts across continents...'**
+  String get loadingMsg2;
+
+  /// No description provided for @loadingMsg3.
+  ///
+  /// In en, this message translates to:
+  /// **'Discovering incredible people near you...'**
+  String get loadingMsg3;
+
+  /// No description provided for @loadingMsg4.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing your personalized matches...'**
+  String get loadingMsg4;
+
+  /// No description provided for @loadingMsg5.
+  ///
+  /// In en, this message translates to:
+  /// **'Exploring profiles from every corner of the globe...'**
+  String get loadingMsg5;
+
+  /// No description provided for @loadingMsg6.
+  ///
+  /// In en, this message translates to:
+  /// **'Finding people who share your interests...'**
+  String get loadingMsg6;
+
+  /// No description provided for @loadingMsg7.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting up your discovery experience...'**
+  String get loadingMsg7;
+
+  /// No description provided for @loadingMsg8.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading beautiful profiles just for you...'**
+  String get loadingMsg8;
+
+  /// No description provided for @loadingMsg9.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching for your perfect match...'**
+  String get loadingMsg9;
+
+  /// No description provided for @loadingMsg10.
+  ///
+  /// In en, this message translates to:
+  /// **'Bringing the world closer to you...'**
+  String get loadingMsg10;
+
+  /// No description provided for @loadingMsg11.
+  ///
+  /// In en, this message translates to:
+  /// **'Curating profiles based on your preferences...'**
+  String get loadingMsg11;
+
+  /// No description provided for @loadingMsg12.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost there! Great things take a moment...'**
+  String get loadingMsg12;
+
+  /// No description provided for @loadingMsg13.
+  ///
+  /// In en, this message translates to:
+  /// **'Connecting you to a world of possibilities...'**
+  String get loadingMsg13;
+
+  /// No description provided for @loadingMsg14.
+  ///
+  /// In en, this message translates to:
+  /// **'Finding the best matches in your area...'**
+  String get loadingMsg14;
+
+  /// No description provided for @loadingMsg15.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocking new connections around you...'**
+  String get loadingMsg15;
+
+  /// No description provided for @loadingMsg16.
+  ///
+  /// In en, this message translates to:
+  /// **'Your next great conversation is just a swipe away...'**
+  String get loadingMsg16;
+
+  /// No description provided for @loadingMsg17.
+  ///
+  /// In en, this message translates to:
+  /// **'Gathering profiles from around the world...'**
+  String get loadingMsg17;
+
+  /// No description provided for @loadingMsg18.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing something special for you...'**
+  String get loadingMsg18;
+
+  /// No description provided for @loadingMsg19.
+  ///
+  /// In en, this message translates to:
+  /// **'Making sure everything is perfect...'**
+  String get loadingMsg19;
+
+  /// No description provided for @loadingMsg20.
+  ///
+  /// In en, this message translates to:
+  /// **'Love knows no borders, and neither do we...'**
+  String get loadingMsg20;
+
+  /// No description provided for @loadingMsg21.
+  ///
+  /// In en, this message translates to:
+  /// **'Warming up your discovery feed...'**
+  String get loadingMsg21;
+
+  /// No description provided for @loadingMsg22.
+  ///
+  /// In en, this message translates to:
+  /// **'Scanning the globe for interesting people...'**
+  String get loadingMsg22;
+
+  /// No description provided for @loadingMsg23.
+  ///
+  /// In en, this message translates to:
+  /// **'Great connections start here...'**
+  String get loadingMsg23;
+
+  /// No description provided for @loadingMsg24.
+  ///
+  /// In en, this message translates to:
+  /// **'Your adventure is about to begin...'**
+  String get loadingMsg24;
+
+  /// No description provided for @filterFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get filterFavorites;
+
+  /// No description provided for @filterToApprove.
+  ///
+  /// In en, this message translates to:
+  /// **'To Approve'**
+  String get filterToApprove;
+
+  /// No description provided for @priorityConnectAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get priorityConnectAccept;
+
+  /// No description provided for @priorityConnectReject.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get priorityConnectReject;
+
+  /// No description provided for @priorityConnectPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending approval'**
+  String get priorityConnectPending;
 }
 
 class _AppLocalizationsDelegate

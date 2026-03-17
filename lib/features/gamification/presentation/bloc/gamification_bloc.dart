@@ -4,6 +4,8 @@
  */
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
+import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../domain/usecases/get_user_achievements.dart';
 import '../../domain/usecases/unlock_achievement.dart';
 import '../../domain/usecases/track_achievement_progress.dart';
@@ -32,6 +34,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
   final ClaimChallengeReward claimChallengeReward;
   final GetSeasonalEvent getSeasonalEvent;
   final GamificationRepository repository;
+  final CoinRepository coinRepository;
 
   GamificationBloc({
     required this.getUserAchievements,
@@ -46,6 +49,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     required this.claimChallengeReward,
     required this.getSeasonalEvent,
     required this.repository,
+    required this.coinRepository,
   }) : super(GamificationState.initial()) {
     // Achievement Events
     on<LoadUserAchievements>(_onLoadUserAchievements);
@@ -282,6 +286,18 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     result.fold(
       (failure) => emit(state.copyWith(errorMessage: failure.message)),
       (claimResult) {
+        // Grant coin reward for level-up
+        if (claimResult.totalCoins > 0) {
+          coinRepository.updateBalance(
+            userId: event.userId,
+            amount: claimResult.totalCoins,
+            type: CoinTransactionType.credit,
+            reason: CoinTransactionReason.achievementReward,
+            relatedId: 'level_${event.level}',
+            metadata: {'source': 'level_reward', 'level': event.level},
+          );
+        }
+
         emit(state.copyWith(
           pendingRewards: [],
           successMessage:
@@ -391,6 +407,18 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
             xpAmount: claimResult.totalXP,
             reason: 'challenge_completed',
           ));
+        }
+
+        // Grant coin reward
+        if (claimResult.totalCoins > 0) {
+          coinRepository.updateBalance(
+            userId: event.userId,
+            amount: claimResult.totalCoins,
+            type: CoinTransactionType.credit,
+            reason: CoinTransactionReason.achievementReward,
+            relatedId: event.challengeId,
+            metadata: {'source': 'challenge_reward', 'challengeName': claimResult.challengeName},
+          );
         }
 
         emit(state.copyWith(

@@ -85,6 +85,9 @@ class Conversation extends Equatable {
   final List<String>? visibleTo; // null = visible to both, list = only those users
   final String? superLikeSenderId; // Who initiated the super like
 
+  // Favorites
+  final Map<String, bool>? favorites; // userId → true if favorited
+
   // Deletion tracking
   final bool isDeleted;
   final Map<String, dynamic>? deletedFor; // userId → Timestamp of deletion
@@ -117,6 +120,7 @@ class Conversation extends Equatable {
     this.supportResolvedAt,
     this.visibleTo,
     this.superLikeSenderId,
+    this.favorites,
     this.isDeleted = false,
     this.deletedFor,
   });
@@ -145,6 +149,17 @@ class Conversation extends Equatable {
 
   /// Check if this is a super like conversation
   bool get isSuperLikeConversation => conversationType == ConversationType.superLike;
+
+  /// Check if conversation is favorited by a specific user
+  bool isFavoritedBy(String userId) => favorites?[userId] == true;
+
+  /// Check if this is a pending super like that needs approval from the given user
+  bool isPendingSuperLikeFor(String userId) =>
+      isSuperLikeConversation &&
+      superLikeSenderId != null &&
+      superLikeSenderId != userId &&
+      visibleTo != null &&
+      visibleTo!.contains(userId);
 
   /// Check if conversation is visible to a specific user
   bool isVisibleTo(String userId) {
@@ -289,6 +304,7 @@ class Conversation extends Equatable {
     DateTime? supportResolvedAt,
     List<String>? visibleTo,
     String? superLikeSenderId,
+    Map<String, bool>? favorites,
     bool? isDeleted,
     Map<String, dynamic>? deletedFor,
     bool clearLastMessage = false,
@@ -321,6 +337,7 @@ class Conversation extends Equatable {
       supportResolvedAt: supportResolvedAt ?? this.supportResolvedAt,
       visibleTo: visibleTo ?? this.visibleTo,
       superLikeSenderId: superLikeSenderId ?? this.superLikeSenderId,
+      favorites: favorites ?? this.favorites,
       isDeleted: isDeleted ?? this.isDeleted,
       deletedFor: deletedFor ?? this.deletedFor,
     );
@@ -355,6 +372,7 @@ class Conversation extends Equatable {
         supportResolvedAt,
         visibleTo,
         superLikeSenderId,
+        favorites,
         isDeleted,
         deletedFor,
       ];

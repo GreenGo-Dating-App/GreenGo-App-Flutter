@@ -1,4 +1,6 @@
+import 'dart:async';
 import 'dart:ui';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
@@ -30,6 +32,7 @@ class ProgressScreen extends StatefulWidget {
 class _ProgressScreenState extends State<ProgressScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  StreamSubscription? _progressSubscription;
 
   @override
   void initState() {
@@ -42,10 +45,23 @@ class _ProgressScreenState extends State<ProgressScreen>
       ..add(LoadUserAchievements(widget.userId))
       ..add(LoadDailyChallenges(widget.userId))
       ..add(LoadLeaderboard(userId: widget.userId));
+
+    // Watch for real-time challenge progress changes
+    _progressSubscription = FirebaseFirestore.instance
+        .collection('challenge_progress')
+        .where('userId', isEqualTo: widget.userId)
+        .snapshots()
+        .skip(1) // Skip initial snapshot (already loaded above)
+        .listen((_) {
+      if (mounted) {
+        context.read<GamificationBloc>().add(LoadDailyChallenges(widget.userId));
+      }
+    });
   }
 
   @override
   void dispose() {
+    _progressSubscription?.cancel();
     _tabController.dispose();
     super.dispose();
   }

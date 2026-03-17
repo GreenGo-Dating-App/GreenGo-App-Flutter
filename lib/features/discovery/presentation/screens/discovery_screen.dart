@@ -8,6 +8,7 @@ import '../../../../core/services/presence_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/loading_indicator.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -689,7 +690,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   Widget _buildLoading() {
     return const Center(
-      child: CircularProgressIndicator(
+      child: LoadingIndicator(
         color: AppColors.richGold,
       ),
     );
@@ -815,6 +816,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         isFront: true,
         isOnlineOverride: _onlineStatusOverrides[cards[currentIndex].userId],
         currentUserProfile: _currentUserProfile,
+        isRandomMode: _savedPreferences?.randomMode ?? false,
         onSwipe: enabled
             ? (direction) => _handleSwipe(context, cards[currentIndex], direction)
             : null,
@@ -1235,6 +1237,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       isOnlineOverride: _onlineStatusOverrides[card.userId],
       onAction: _gridAction,
       isSelfProfile: isSelf,
+      isRandomMode: _savedPreferences?.randomMode ?? false,
     );
   }
 
@@ -1802,6 +1805,7 @@ class _GridProfileCard extends StatefulWidget {
   final bool? isOnlineOverride; // Refreshed online status (overrides profile.isOnline)
   final Function(DiscoveryCard, SwipeActionType) onAction;
   final bool isSelfProfile; // true = current user's own card (no actions, boost animation)
+  final bool isRandomMode;
 
   const _GridProfileCard({
     super.key,
@@ -1811,6 +1815,7 @@ class _GridProfileCard extends StatefulWidget {
     this.actionOverlay,
     this.isOnlineOverride,
     this.isSelfProfile = false,
+    this.isRandomMode = false,
   });
 
   @override
@@ -1860,7 +1865,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final hasMultiplePhotos = photoUrls.length > 1;
     final showText = widget.gridColumns <= 3;
     final location = profile.effectiveLocation;
-    final distanceText = widget.card.candidate.distanceText;
+    final distanceText = widget.isRandomMode ? '' : widget.card.candidate.distanceText;
     final cityText = location.city.isNotEmpty ? location.city : '';
 
     // Check if profile is boosted (self-profile always gets boost animation)
@@ -2012,8 +2017,8 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Distance badge (top left) — hidden for admin/support
-            if (!profile.isAdmin && !profile.isSupport)
+            // Distance badge (top left) — hidden for admin/support/randomMode/no location
+            if (!profile.isAdmin && !profile.isSupport && !widget.isRandomMode && distanceText.isNotEmpty)
               Positioned(
                 top: 4,
                 left: 4,
@@ -2217,7 +2222,10 @@ class _GridProfileCardState extends State<_GridProfileCard>
                           if (widget.isSelfProfile) {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                                builder: (_) => ProfileDetailScreen(
+                                  profile: widget.card.candidate.profile,
+                                  currentUserId: widget.card.candidate.profile.userId,
+                                ),
                               ),
                             );
                             return;
@@ -2246,7 +2254,10 @@ class _GridProfileCardState extends State<_GridProfileCard>
                           if (widget.isSelfProfile) {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                                builder: (_) => ProfileDetailScreen(
+                                  profile: widget.card.candidate.profile,
+                                  currentUserId: widget.card.candidate.profile.userId,
+                                ),
                               ),
                             );
                             return;
@@ -2270,7 +2281,10 @@ class _GridProfileCardState extends State<_GridProfileCard>
                           if (widget.isSelfProfile) {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (_) => EditProfileScreen(userId: widget.card.candidate.profile.userId),
+                                builder: (_) => ProfileDetailScreen(
+                                  profile: widget.card.candidate.profile,
+                                  currentUserId: widget.card.candidate.profile.userId,
+                                ),
                               ),
                             );
                             return;
@@ -2417,7 +2431,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               const SizedBox(width: 4),
                               Expanded(
                                 child: Text(
-                                  cityText.isNotEmpty ? '$distanceText · $cityText' : distanceText,
+                                  widget.isRandomMode
+                                      ? (cityText.isNotEmpty ? cityText : location.country)
+                                      : (cityText.isNotEmpty ? '$distanceText · $cityText' : distanceText),
                                   style: TextStyle(
                                     color: Colors.white70,
                                     fontSize: widget.gridColumns == 3 ? 11 : 14,

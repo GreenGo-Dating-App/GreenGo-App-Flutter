@@ -126,6 +126,7 @@ import '../../features/gamification/domain/usecases/get_daily_challenges.dart';
 import '../../features/gamification/domain/usecases/track_challenge_progress.dart';
 import '../../features/gamification/domain/usecases/claim_challenge_reward.dart' as gamification;
 import '../../features/gamification/domain/usecases/get_seasonal_event.dart';
+import '../../features/gamification/domain/usecases/track_user_action.dart';
 import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
 
 // Coins
@@ -318,6 +319,7 @@ Future<void> init() async {
       undoSwipe: sl(),
       coinRepository: sl(),
       discoveryDataSource: sl(),
+      trackUserAction: sl(),
     ),
   );
 
@@ -368,6 +370,7 @@ Future<void> init() async {
       forwardMessage: sl(),
       deleteConversationForMe: sl(),
       deleteConversationForBoth: sl(),
+      trackUserAction: sl(),
     ),
   );
 
@@ -376,6 +379,7 @@ Future<void> init() async {
       getConversations: sl(),
       deleteConversationForMe: sl(),
       deleteConversationForBoth: sl(),
+      chatRepository: sl(),
     ),
   );
 
@@ -534,6 +538,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => TrackChallengeProgress(sl()));
   sl.registerLazySingleton(() => gamification.ClaimChallengeReward(sl()));
   sl.registerLazySingleton(() => GetSeasonalEvent(sl()));
+  sl.registerLazySingleton(() => TrackUserAction(sl()));
 
   // Gamification BLoC
   sl.registerFactory(
@@ -550,6 +555,7 @@ Future<void> init() async {
       claimChallengeReward: sl(),
       getSeasonalEvent: sl(),
       repository: sl(),
+      coinRepository: sl(),
     ),
   );
 

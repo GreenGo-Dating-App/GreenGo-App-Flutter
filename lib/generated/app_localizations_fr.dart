@@ -3833,7 +3833,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get filterNewMessages => 'Nouveaux';
 
   @override
-  String get filterNotReplied => 'Sans réponse';
+  String get filterNotReplied => 'Non lu';
 
   @override
   String filteredFromTotal(int total) {
@@ -9976,5 +9976,102 @@ class AppLocalizationsFr extends AppLocalizations {
       'Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.';
 
   @override
-  String get yourProfile => 'You';
+  String get yourProfile => 'Vous';
+
+  @override
+  String get loadingMsg1 =>
+      'Recherche de profils incroyables à travers le monde...';
+
+  @override
+  String get loadingMsg2 => 'Connecter les cœurs à travers les continents...';
+
+  @override
+  String get loadingMsg3 =>
+      'Découvrir des personnes incroyables près de chez vous...';
+
+  @override
+  String get loadingMsg4 => 'Préparer vos correspondances personnalisées...';
+
+  @override
+  String get loadingMsg5 => 'Explorer des profils des quatre coins du monde...';
+
+  @override
+  String get loadingMsg6 =>
+      'Trouver des personnes qui partagent vos intérêts...';
+
+  @override
+  String get loadingMsg7 => 'Configurer votre expérience de découverte...';
+
+  @override
+  String get loadingMsg8 => 'Charger de beaux profils rien que pour vous...';
+
+  @override
+  String get loadingMsg9 => 'À la recherche de votre match parfait...';
+
+  @override
+  String get loadingMsg10 => 'Rapprocher le monde de vous...';
+
+  @override
+  String get loadingMsg11 =>
+      'Sélectionner des profils selon vos préférences...';
+
+  @override
+  String get loadingMsg12 =>
+      'Presque prêt ! Les bonnes choses prennent un moment...';
+
+  @override
+  String get loadingMsg13 => 'Vous connecter à un monde de possibilités...';
+
+  @override
+  String get loadingMsg14 =>
+      'Trouver les meilleures correspondances dans votre région...';
+
+  @override
+  String get loadingMsg15 =>
+      'Débloquer de nouvelles connexions autour de vous...';
+
+  @override
+  String get loadingMsg16 =>
+      'Votre prochaine grande conversation n\'est qu\'un swipe...';
+
+  @override
+  String get loadingMsg17 => 'Rassembler des profils du monde entier...';
+
+  @override
+  String get loadingMsg18 => 'Préparer quelque chose de spécial pour vous...';
+
+  @override
+  String get loadingMsg19 => 'S\'assurer que tout est parfait...';
+
+  @override
+  String get loadingMsg20 =>
+      'L\'amour ne connaît pas de frontières, et nous non plus...';
+
+  @override
+  String get loadingMsg21 => 'Réchauffer votre fil de découverte...';
+
+  @override
+  String get loadingMsg22 =>
+      'Scanner le globe à la recherche de personnes intéressantes...';
+
+  @override
+  String get loadingMsg23 => 'Les grandes connexions commencent ici...';
+
+  @override
+  String get loadingMsg24 => 'Votre aventure est sur le point de commencer...';
+
+  @override
+  String get filterFavorites => 'Favoris';
+
+  @override
+  String get filterToApprove => 'À approuver';
+
+  @override
+  String get priorityConnectAccept => 'Accepter';
+
+  @override
+  String get priorityConnectReject => 'Refuser';
+
+  @override
+  String get priorityConnectPending => 'En attente d\'approbation';
 }

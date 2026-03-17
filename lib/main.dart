@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -984,11 +985,54 @@ class _AuthWrapperState extends State<AuthWrapper> {
 }
 
 /// Initial loading splash screen (shown while checking auth state)
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  late final Timer _timer;
+  int _currentMsgIndex = 0;
+  late final List<int> _shuffledIndices;
+
+  List<String> _getLoadingMessages(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null) return ['Loading...'];
+    return [
+      l10n.loadingMsg1, l10n.loadingMsg2, l10n.loadingMsg3, l10n.loadingMsg4,
+      l10n.loadingMsg5, l10n.loadingMsg6, l10n.loadingMsg7, l10n.loadingMsg8,
+      l10n.loadingMsg9, l10n.loadingMsg10, l10n.loadingMsg11, l10n.loadingMsg12,
+      l10n.loadingMsg13, l10n.loadingMsg14, l10n.loadingMsg15, l10n.loadingMsg16,
+      l10n.loadingMsg17, l10n.loadingMsg18, l10n.loadingMsg19, l10n.loadingMsg20,
+      l10n.loadingMsg21, l10n.loadingMsg22, l10n.loadingMsg23, l10n.loadingMsg24,
+    ];
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffledIndices = List.generate(24, (i) => i)..shuffle();
+    _timer = Timer.periodic(const Duration(seconds: 3), (_) {
+      if (mounted) {
+        setState(() {
+          _currentMsgIndex = (_currentMsgIndex + 1) % _shuffledIndices.length;
+        });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final messages = _getLoadingMessages(context);
+    final displayIndex = _shuffledIndices[_currentMsgIndex] % messages.length;
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
       body: Center(
@@ -1004,6 +1048,23 @@ class SplashScreen extends StatelessWidget {
             const SizedBox(height: 48),
             CircularProgressIndicator(
               color: Theme.of(context).primaryColor,
+            ),
+            const SizedBox(height: 32),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 500),
+              child: Padding(
+                key: ValueKey<int>(displayIndex),
+                padding: const EdgeInsets.symmetric(horizontal: 32),
+                child: Text(
+                  messages[displayIndex],
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white70,
+                    fontSize: 14,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

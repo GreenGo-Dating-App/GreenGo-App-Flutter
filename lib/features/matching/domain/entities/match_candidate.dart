@@ -20,8 +20,12 @@ class MatchCandidate {
     this.isSuperLike = false,
   });
 
-  /// Get formatted distance string
+  /// Whether distance is valid (both users have real locations)
+  bool get hasValidDistance => distance > 0 || profile.location.latitude != 0.0 || profile.location.longitude != 0.0;
+
+  /// Get formatted distance string (empty if distance is not available)
   String get distanceText {
+    if (distance == 0.0) return '';
     if (distance < 1) {
       return '${(distance * 1000).toStringAsFixed(0)}m away';
     } else if (distance < 100) {
