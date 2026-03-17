@@ -86,7 +86,7 @@ function toPoolMember(doc: admin.firestore.DocumentSnapshot): PoolMember | null 
   if (status === 'suspended' || status === 'banned' || status === 'deleted') return null;
 
   // Must be verified and have at least one photo
-  const isVerified = d.isVerified === true || d.verificationStatus === 'approved';
+  const isVerified = d.isVerified === true || d.verificationStatus === 'approved' || d.verificationStatus === 'verified';
   const photoUrls = d.photoUrls as string[] | undefined;
   if (!isVerified || !photoUrls || photoUrls.length === 0) return null;
 

@@ -21,6 +21,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
 import '../../../discovery/presentation/screens/matches_screen.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
+import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/widgets/nickname_search_dialog.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
@@ -1376,20 +1377,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     return null;
   }
 
-  void _openDiscoveryPreferences() {
-    Navigator.of(context).push(
+  void _openDiscoveryPreferences() async {
+    final result = await Navigator.of(context).push<MatchPreferences>(
       MaterialPageRoute(
         builder: (context) => DiscoveryPreferencesScreen(
           userId: widget.userId,
           currentPreferences:
               _discoveryKey.currentState?.savedPreferences,
-          onSave: (preferences) {
-            // Refresh discovery stack with new filters (resets grid state too)
-            _discoveryKey.currentState?.refreshWithPreferences(preferences);
-          },
         ),
       ),
     );
+    if (result != null) {
+      _discoveryKey.currentState?.refreshWithPreferences(result);
+    }
   }
 
   void _showNicknameSearch() {

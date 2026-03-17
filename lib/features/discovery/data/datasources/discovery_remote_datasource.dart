@@ -91,11 +91,13 @@ abstract class DiscoveryRemoteDataSource {
 class _CachedStack {
   final List<MatchCandidate> candidates;
   final DateTime fetchedAt;
+  final String preferencesHash;
   static const ttl = Duration(minutes: 5);
 
-  _CachedStack(this.candidates) : fetchedAt = DateTime.now();
+  _CachedStack(this.candidates, this.preferencesHash) : fetchedAt = DateTime.now();
 
-  bool get isValid => DateTime.now().difference(fetchedAt) < ttl;
+  bool isValid(String currentHash) =>
+      DateTime.now().difference(fetchedAt) < ttl && preferencesHash == currentHash;
 }
 
 /// Discovery Remote Data Source Implementation
@@ -146,10 +148,23 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }) async {
     lastUsedWorldwideFallback = false;
 
-    // Serve from cache when valid and not a forced refresh
+    // Build a hash of preferences so cache invalidates when filters change
+    final prefHash = '${preferences.preferredCountries.join(',')}'
+        '|${preferences.interestedInGender}'
+        '|${preferences.minAge}-${preferences.maxAge}'
+        '|${preferences.maxDistanceKm}'
+        '|${preferences.randomMode}'
+        '|${preferences.onlyVerified}'
+        '|${preferences.onlyOnlineNow}'
+        '|${preferences.languageFilter}'
+        '|${preferences.travelersOnly}'
+        '|${preferences.preferredInterests.join(',')}'
+        '|${preferences.preferredOrientations.join(',')}';
+
+    // Serve from cache when valid, not forced, and preferences haven't changed
     if (!forceRefresh) {
       final cached = _cache[userId];
-      if (cached != null && cached.isValid) {
+      if (cached != null && cached.isValid(prefHash)) {
         debugPrint('[Discovery] Cache hit — ${cached.candidates.length} profiles (${DateTime.now().difference(cached.fetchedAt).inSeconds}s old)');
         return cached.candidates;
       }
@@ -230,15 +245,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final matchedUserIds = results[1] as Set<String>;
     final blockedUserIds = results[2] as Set<String>;
 
-    print('[Discovery] Swipe: ${swipeHistory.length}, Matches: ${matchedUserIds.length}, Blocked: ${blockedUserIds.length}');
-
-    // Log travelers that made it through matching filters
-    for (final c in candidates) {
-      if (c.profile.isTravelerActive) {
-        print('[Discovery] TRAVELER ${c.profile.nickname} in candidates from matching (effectiveLoc: ${c.profile.effectiveLocation.country}/${c.profile.effectiveLocation.city})');
-      }
-    }
-
     // Admin/support users bypass all discovery preference filters (see all users)
     var filteredCandidates = candidates.toList();
 
@@ -250,31 +256,24 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           final orientation = candidate.profile.sexualOrientation;
           if (orientation == null || orientation.isEmpty) return true;
           if (!preferences.preferredOrientations.contains(orientation)) {
-            if (candidate.profile.isTravelerActive) print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: orientation $orientation');
             return false;
           }
           return true;
         }).toList();
-        if (before != filteredCandidates.length) print('[Discovery] Orientation filter: $before → ${filteredCandidates.length}');
       }
 
       // Apply country filter — use effectiveLocation so traveler candidates show in correct country
       // When user has a country filter, profiles with unknown/empty country are excluded
       // Apply country filter when countries are selected (regardless of randomMode)
       if (preferences.preferredCountries.isNotEmpty) {
-        print('[Discovery] Country filter active: ${preferences.preferredCountries}');
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
           if (country.isEmpty || country == 'Unknown') {
-            if (candidate.profile.isTravelerActive) print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: empty/unknown country');
             return false;
           }
           final matches = preferences.preferredCountries
               .map((c) => c.toLowerCase())
               .contains(country.toLowerCase());
-          if (!matches && candidate.profile.isTravelerActive) {
-            print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: country $country not in ${preferences.preferredCountries}');
-          }
           return matches;
         }).toList();
       }
@@ -295,8 +294,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           filteredCandidates.length < minCandidates;
       lastUsedWorldwideFallback = shouldFallback;
       if (shouldFallback) {
-        print('[Discovery] Pool has ${filteredCandidates.length} candidates (< $minCandidates), fetching worldwide fallback');
-
         // Fetch worldwide candidates (no country restriction)
         final worldwideCandidates = await matchingDataSource.getMatchCandidates(
           userId: userId,
@@ -339,7 +336,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         final toAdd = worldwideNew.take(needed).toList();
         filteredCandidates.addAll(toAdd);
 
-        print('[Discovery] Added ${toAdd.length} worldwide candidates (total: ${filteredCandidates.length})');
       }
 
       // Always sort the entire pool by distance so nearest profiles appear
@@ -352,16 +348,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           final bDist = fe.calculateDistance(userLat, userLng, bLoc.latitude, bLoc.longitude);
           return aDist.compareTo(bDist);
         });
-        print('[Discovery] Sorted ${filteredCandidates.length} candidates by distance');
       }
 
       // Apply online-only filter
       if (preferences.onlyOnlineNow) {
         filteredCandidates = filteredCandidates
             .where((candidate) {
-              if (!candidate.profile.isOnline && candidate.profile.isTravelerActive) {
-                print('[Discovery] TRAVELER ${candidate.profile.nickname} EXCLUDED: not online (onlyOnline filter)');
-              }
               return candidate.profile.isOnline;
             })
             .toList();
@@ -377,7 +369,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
               .toList();
           return candidateLangs.contains(langFilter);
         }).toList();
-        print('[Discovery] Language filter ($langFilter): $before -> ${filteredCandidates.length}');
       }
 
       // Apply interest filter — only return candidates who share at least one preferred interest
@@ -392,7 +383,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
               .toSet();
           return candidateInterests.intersection(wantedInterests).isNotEmpty;
         }).toList();
-        print('[Discovery] Interest filter (${wantedInterests.join(', ')}): $before -> ${filteredCandidates.length}');
       }
 
       // Apply travelers-only filter — only return active travelers
@@ -401,7 +391,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         filteredCandidates = filteredCandidates.where((candidate) {
           return candidate.profile.isTravelerActive;
         }).toList();
-        print('[Discovery] Travelers-only filter: $before -> ${filteredCandidates.length}');
       }
 
       // Apply local-guides-only filter
@@ -412,17 +401,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
               candidate.profile.localGuideCity != null &&
               candidate.profile.localGuideCity!.isNotEmpty;
         }).toList();
-        print('[Discovery] Local-guides-only filter: $before -> ${filteredCandidates.length}');
       }
     } else {
-      print('[Discovery] Admin/support user — skipping preference filters');
-    }
-
-    // Log travelers that survived all filters
-    for (final c in filteredCandidates) {
-      if (c.profile.isTravelerActive) {
-        print('[Discovery] TRAVELER ${c.profile.nickname} SURVIVED all discovery filters');
-      }
+      // Admin/support user — skip preference filters
     }
 
     // Categorize candidates into priority tiers:
@@ -440,15 +421,22 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final now = DateTime.now();
     const nopeCooldownDays = 90;
     const likeCooldownDays = 30;
+
     bool addedAdminOrSupport = false;
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
       final candidateProfile = candidate.profile;
+      final isAdmin = candidateProfile.isAdmin;
+      final isSupportOnly = !candidateProfile.isAdmin && candidateProfile.isSupport;
       final isPrivileged = (candidateProfile.isAdmin || candidateProfile.isSupport) && preferences.showSupportUser;
 
-      // Admin/support visible only when showSupportUser is true
-      // Skip match/block/incognito/swipe filters for privileged profiles
+      // Admin/support hidden when showSupportUser is disabled
+      if ((candidateProfile.isAdmin || candidateProfile.isSupport) && !preferences.showSupportUser) {
+        continue;
+      }
+
+      // Admin/support visible — only add one
       if (isPrivileged) {
         if (!addedAdminOrSupport) {
           priority0Boosted.add(candidate);
@@ -457,24 +445,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         continue;
       }
 
-      // Admin/Support profiles hidden when showSupportUser is false — skip entirely
-      if ((candidateProfile.isAdmin || candidateProfile.isSupport) && !preferences.showSupportUser) {
-        continue;
-      }
-
       // Matched users still appear in discovery grid (with 'matched' overlay)
       // They are only filtered out in swipe card mode by the UI layer
 
       // Skip blocked users (bidirectional) - they shouldn't appear in discovery
       if (blockedUserIds.contains(candidateId)) {
-        if (candidateProfile.isTravelerActive) print('[Discovery] TRAVELER ${candidateProfile.nickname} EXCLUDED: blocked');
-        print('[Discovery] Excluded ${candidateProfile.displayName}: blocked');
         continue;
       }
 
       // Skip ghost mode profiles (hidden from discovery + nickname search, unlimited)
       if (candidateProfile.isGhostMode) {
-        print('[Discovery] Excluded ${candidateProfile.displayName}: ghost mode');
         continue;
       }
 
@@ -482,14 +462,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       if (candidateProfile.isIncognito &&
           candidateProfile.incognitoExpiry != null &&
           candidateProfile.incognitoExpiry!.isAfter(now)) {
-        print('[Discovery] Excluded ${candidateProfile.displayName}: incognito');
         continue;
       }
 
       // Skip test users — testers should never be visible to regular users
       if (!isCurrentUserPrivileged &&
           candidateProfile.membershipTier == MembershipTier.test) {
-        print('[Discovery] Excluded ${candidateProfile.displayName}: tester account');
         continue;
       }
 
@@ -549,8 +527,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       priority1NotSeen.addAll(overflow);
     }
 
-    print('[Discovery] After filtering: P0=${priority0Boosted.length} P1=${priority1NotSeen.length} P2=${priority2Skipped.length} P3=${priority3LikedNoResponse.length}');
-
     // Build the final list with priority ordering (no limit - endless)
     final List<MatchCandidate> prioritizedCandidates = [];
 
@@ -585,8 +561,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       result = prioritizedCandidates;
     }
 
-    // Store in in-memory cache
-    _cache[userId] = _CachedStack(result);
+    // Store in in-memory cache (keyed by userId + preferences hash)
+    _cache[userId] = _CachedStack(result, prefHash);
     debugPrint('[Discovery] Cache stored — ${result.length} profiles for $userId');
 
     return result;
@@ -680,10 +656,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       Profile adminProfile;
       try {
         adminProfile = ProfileModel.fromFirestore(adminDoc);
-        print('[Discovery] _getAdminCandidate: parsed profile OK — ${adminProfile.displayName}');
       } catch (parseError, parseStack) {
-        print('[Discovery] _getAdminCandidate: ProfileModel.fromFirestore FAILED: $parseError');
-        print('[Discovery] _getAdminCandidate: stack: $parseStack');
         // Fallback: build minimal profile from raw data
         final data = adminDoc.data();
         final loc = data['location'] as Map<String, dynamic>?;
@@ -716,7 +689,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           isAdmin: true,
           verificationStatus: VerificationStatus.approved,
         );
-        print('[Discovery] _getAdminCandidate: using fallback profile for ${adminProfile.displayName}');
       }
 
       // Create a special match score for admin (always shown as recommended)
@@ -747,8 +719,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       return candidate;
     } catch (e, stack) {
-      print('[Discovery] _getAdminCandidate FAILED completely: $e');
-      print('[Discovery] Stack: $stack');
       return null;
     }
   }
@@ -1035,7 +1005,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       });
     } catch (e) {
       // Silently fail — conversation will be created on-demand when user opens chat
-      print('[Discovery] Failed to create match conversation: $e');
     }
   }
 
