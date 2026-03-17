@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/match_preferences.dart';
+import '../../../membership/domain/entities/membership.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Discovery Preferences Screen
@@ -30,12 +31,151 @@ class _DiscoveryPreferencesScreenState
   late MatchPreferences _preferences;
   bool _hasChanges = false;
   bool _isSaving = false;
+  bool _isRestarting = false;
+  DateTime? _lastRestartDate;
+  MembershipTier _membershipTier = MembershipTier.free;
 
   @override
   void initState() {
     super.initState();
     _preferences = widget.currentPreferences ??
         MatchPreferences.defaultFor(widget.userId);
+    _loadRestartInfo();
+  }
+
+  Future<void> _loadRestartInfo() async {
+    try {
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .get();
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      if (mounted) {
+        setState(() {
+          final ts = userDoc.data()?['lastDiscoveryRestart'] as Timestamp?;
+          _lastRestartDate = ts?.toDate();
+          final tierStr = profileDoc.data()?['membershipTier'] as String? ?? 'FREE';
+          _membershipTier = MembershipTier.values.firstWhere(
+            (t) => t.value == tierStr,
+            orElse: () => MembershipTier.free,
+          );
+        });
+      }
+    } catch (_) {}
+  }
+
+  int _getCooldownDays() {
+    switch (_membershipTier) {
+      case MembershipTier.gold:
+      case MembershipTier.platinum:
+      case MembershipTier.test:
+        return 7;
+      case MembershipTier.silver:
+        return 15;
+      case MembershipTier.free:
+        return 30;
+    }
+  }
+
+  int? _daysUntilRestart() {
+    if (_lastRestartDate == null) return null;
+    final cooldown = _getCooldownDays();
+    final nextAllowed = _lastRestartDate!.add(Duration(days: cooldown));
+    final remaining = nextAllowed.difference(DateTime.now()).inDays;
+    return remaining > 0 ? remaining : null;
+  }
+
+  Future<void> _restartDiscovery() async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          l10n.profileRestartDiscoveryDialogTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          l10n.profileRestartDiscoveryDialogContent,
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: Text(l10n.cancel, style: const TextStyle(color: AppColors.textSecondary)),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red.shade700,
+              foregroundColor: Colors.white,
+            ),
+            child: Text(l10n.profileRestart),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+
+    setState(() => _isRestarting = true);
+    try {
+      // Delete all swipes for this user in batches
+      final firestore = FirebaseFirestore.instance;
+      WriteBatch batch = firestore.batch();
+      int count = 0;
+      QuerySnapshot snapshot;
+      do {
+        snapshot = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: widget.userId)
+            .limit(500)
+            .get();
+        for (final doc in snapshot.docs) {
+          batch.delete(doc.reference);
+          count++;
+          if (count % 500 == 0) {
+            await batch.commit();
+            batch = firestore.batch();
+          }
+        }
+        if (snapshot.docs.isNotEmpty && count % 500 != 0) {
+          await batch.commit();
+          batch = firestore.batch();
+        }
+      } while (snapshot.docs.length == 500);
+
+      // Record the restart timestamp
+      await firestore.collection('users').doc(widget.userId).set(
+        {'lastDiscoveryRestart': FieldValue.serverTimestamp()},
+        SetOptions(merge: true),
+      );
+
+      if (mounted) {
+        setState(() {
+          _lastRestartDate = DateTime.now();
+          _isRestarting = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(l10n.profileDiscoveryRestarted),
+            backgroundColor: Colors.green.shade700,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isRestarting = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(l10n.profileFailedRestartDiscovery(e.toString())),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    }
   }
 
   void _updatePreferences(MatchPreferences newPreferences) {
@@ -1302,6 +1442,50 @@ class _DiscoveryPreferencesScreenState
           ),
 
           const SizedBox(height: 32),
+
+          // Restart Discovery button
+          Builder(builder: (context) {
+            final daysLeft = _daysUntilRestart();
+            final canRestart = daysLeft == null;
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ElevatedButton.icon(
+                  onPressed: canRestart && !_isRestarting ? _restartDiscovery : null,
+                  icon: _isRestarting
+                      ? const SizedBox(
+                          width: 18, height: 18,
+                          child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
+                      : const Icon(Icons.restart_alt),
+                  label: Text(AppLocalizations.of(context)!.profileRestartDiscovery),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: canRestart ? Colors.red.shade700 : AppColors.backgroundCard,
+                    foregroundColor: canRestart ? Colors.white : AppColors.textSecondary,
+                    disabledBackgroundColor: AppColors.backgroundCard,
+                    disabledForegroundColor: AppColors.textSecondary,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                ),
+                if (!canRestart)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Text(
+                      'Available again in $daysLeft day${daysLeft == 1 ? '' : 's'}',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
+                    ),
+                  ),
+                const SizedBox(height: 4),
+                Text(
+                  AppLocalizations.of(context)!.profileRestartDiscoverySubtitle,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                ),
+              ],
+            );
+          }),
+
+          const SizedBox(height: 24),
 
           // Reset button
           OutlinedButton(
