@@ -841,6 +841,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final data = snapshot.data()!;
       final totalXp = (data['totalXP'] as num?)?.toInt() ?? 0;
       final newLevel = _calculateLevel(totalXp);
+      final lastCelebratedLevel = (data['lastCelebratedLevel'] as num?)?.toInt() ?? 0;
 
       if (_lastKnownLevel == null) {
         // First snapshot — just record the current level
@@ -848,7 +849,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         return;
       }
 
-      if (newLevel > _lastKnownLevel!) {
+      if (newLevel > _lastKnownLevel! && newLevel > lastCelebratedLevel) {
         final previousLevel = _lastKnownLevel!;
         _lastKnownLevel = newLevel;
 
@@ -861,6 +862,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             previousLevel: previousLevel,
             rewards: rewards,
             isVIP: newLevel >= 50,
+            onDismiss: () {
+              // Persist that this level was celebrated so it won't show again
+              fs.collection('user_levels').doc(widget.userId).set(
+                {'lastCelebratedLevel': newLevel},
+                SetOptions(merge: true),
+              );
+            },
           );
         }
       } else {
@@ -1221,18 +1229,37 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           },
           child: _gamificationBloc != null
               ? BlocListener<GamificationBloc, GamificationState>(
-                  listener: (context, state) {
+                  listener: (context, state) async {
                     // Show level-up celebration dialog when user levels up
                     if (state.leveledUp && state.userLevel != null) {
+                      final newLevel = state.userLevel!.level;
+                      // Check if this level was already celebrated
+                      final doc = await FirebaseFirestore.instance
+                          .collection('user_levels')
+                          .doc(widget.userId)
+                          .get();
+                      final lastCelebrated = (doc.data()?['lastCelebratedLevel'] as num?)?.toInt() ?? 0;
+                      if (newLevel <= lastCelebrated) {
+                        _gamificationBloc!.add(const ClearLevelUpFlag());
+                        return;
+                      }
+                      if (!mounted) return;
                       LevelUpCelebrationDialog.show(
                         context,
-                        newLevel: state.userLevel!.level,
-                        previousLevel: state.previousLevel ?? (state.userLevel!.level - 1),
+                        newLevel: newLevel,
+                        previousLevel: state.previousLevel ?? (newLevel - 1),
                         rewards: state.pendingRewards,
                         isVIP: state.userLevel!.isVIP,
                         onDismiss: () {
-                          // Clear the level-up flag after showing dialog
+                          // Clear the level-up flag and persist celebrated level
                           _gamificationBloc!.add(const ClearLevelUpFlag());
+                          FirebaseFirestore.instance
+                              .collection('user_levels')
+                              .doc(widget.userId)
+                              .set(
+                            {'lastCelebratedLevel': newLevel},
+                            SetOptions(merge: true),
+                          );
                         },
                       );
                     }
