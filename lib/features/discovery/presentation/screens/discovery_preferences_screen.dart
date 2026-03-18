@@ -1340,6 +1340,31 @@ class _DiscoveryPreferencesScreenState
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
                   title: Text(
+                    l10n.preferenceShowMyNetwork,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 16,
+                    ),
+                  ),
+                  subtitle: Text(
+                    l10n.preferenceShowMyNetworkDesc,
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 14,
+                    ),
+                  ),
+                  value: _preferences.showMyNetwork,
+                  activeColor: AppColors.richGold,
+                  onChanged: (bool value) {
+                    _updatePreferences(
+                      _preferences.copyWith(showMyNetwork: value),
+                    );
+                  },
+                ),
+                const Divider(color: AppColors.divider),
+                SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: Text(
                     l10n.randomMode,
                     style: const TextStyle(
                       color: AppColors.textPrimary,

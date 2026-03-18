@@ -3392,6 +3392,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get discoveryFilterSuperLiked => 'Priorität';
 
   @override
+  String get discoveryFilterNetwork => 'Mein Netzwerk';
+
+  @override
   String get discoveryFilterTravelers => 'Reisende';
 
   @override
@@ -9898,6 +9901,92 @@ class AppLocalizationsDe extends AppLocalizations {
       'Sammle Punkte, indem du aktiv bist, dein Profil vervollständigst und mit anderen interagierst.';
 
   @override
+  String get guideGridFiltersTitle => 'Rasterfilter';
+
+  @override
+  String get guideGridFiltersItem1 =>
+      'Verwende im Rastermodus die Filterchips oben, um Profile einzugrenzen.';
+
+  @override
+  String get guideGridFiltersItem2 =>
+      'Alle: Zeigt alle Personen in deinem Entdeckungspool.';
+
+  @override
+  String get guideGridFiltersItem3 =>
+      'Verbunden: Personen, denen du eine Verbindungsanfrage gesendet hast.';
+
+  @override
+  String get guideGridFiltersItem4 =>
+      'Priorität: Personen, denen du eine Prioritätsverbindung gesendet hast.';
+
+  @override
+  String get guideGridFiltersItem5 =>
+      'Abgelehnt: Personen, die du übersprungen hast.';
+
+  @override
+  String get guideGridFiltersItem6 =>
+      'Erkundet: Personen, die du ohne Entscheidung übersprungen hast — du kannst sie später erneut ansehen.';
+
+  @override
+  String get guideGridFiltersItem7 =>
+      'Matches: Personen, mit denen ihr euch gegenseitig verbunden habt.';
+
+  @override
+  String get guideGridFiltersItem8 =>
+      'Mein Netzwerk: Alle Personen, mit denen du verbunden bist — einschließlich Matches und akzeptierter Prioritätsverbindungen.';
+
+  @override
+  String get guideGridFiltersItem9 =>
+      'Reisende: Personen mit aktivem Reisemodus, die eine Stadt in deiner Nähe besuchen.';
+
+  @override
+  String get guideGridFiltersItem10 =>
+      'Guides: Lokale Guides, die Reisenden helfen, ihre Stadt zu entdecken.';
+
+  @override
+  String get guideGridFiltersItem11 =>
+      'Du kannst mehrere Filter gleichzeitig kombinieren, um deine Suche zu verfeinern.';
+
+  @override
+  String get guideExchangesTitle => 'Austausch (Chat)';
+
+  @override
+  String get guideExchangesItem1 =>
+      'Im Austausch befinden sich alle deine Unterhaltungen. Du findest ihn im unteren Menü.';
+
+  @override
+  String get guideExchangesItem2 =>
+      'Das rote Abzeichen am Austausch-Symbol zeigt die Anzahl der Unterhaltungen mit ungelesenen Nachrichten oder ausstehenden Genehmigungen.';
+
+  @override
+  String get guideExchangesItem3 =>
+      'Verwende die Filterchips, um deine Chats zu organisieren: Alle, Neu, Ungelesen, Favoriten, Zu genehmigen, Matches und Direkt.';
+
+  @override
+  String get guideExchangesItem4 =>
+      'Neu und Ungelesen zeigen Unterhaltungen mit Nachrichten, die du noch nicht gelesen hast. Der Filterchip zeigt die Anzahl, wenn sie größer als 0 ist.';
+
+  @override
+  String get guideExchangesItem5 =>
+      'Zu genehmigen zeigt Prioritätsverbindungsanfragen, die auf deine Entscheidung warten. Akzeptiere oder lehne sie direkt aus der Liste ab.';
+
+  @override
+  String get guideExchangesItem6 =>
+      'Ungelesene Unterhaltungen werden mit fettem Text und einem goldenen Schimmereffekt hervorgehoben.';
+
+  @override
+  String get guideExchangesItem7 =>
+      'Tippe auf eine Unterhaltung, um den Chat zu öffnen. Nach dem Öffnen wird sie als gelesen markiert und die Abzeichenzahl verringert sich.';
+
+  @override
+  String get guideExchangesItem8 =>
+      'Halte eine Unterhaltung lang gedrückt für weitere Optionen. Verwende das Sternsymbol, um einen Chat zu deinen Favoriten hinzuzufügen.';
+
+  @override
+  String get guideExchangesItem9 =>
+      'Jede Unterhaltung zeigt die Sprachflaggen des anderen Benutzers, damit du weißt, welche Sprachen er spricht.';
+
+  @override
   String get guideSafetyTitle => 'Sicherheit & Datenschutz';
 
   @override
@@ -9933,6 +10022,13 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get showSupportUserDescription =>
       'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get preferenceShowMyNetwork => 'Mein Netzwerk';
+
+  @override
+  String get preferenceShowMyNetworkDesc =>
+      'Nur Personen in deinem Netzwerk anzeigen (Matches und akzeptierte Priority Connect).';
 
   @override
   String get randomMode => 'Random Mode';

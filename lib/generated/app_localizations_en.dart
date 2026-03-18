@@ -3343,6 +3343,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get discoveryFilterSuperLiked => 'Priority';
 
   @override
+  String get discoveryFilterNetwork => 'My Network';
+
+  @override
   String get discoveryFilterTravelers => 'Travelers';
 
   @override
@@ -9776,6 +9779,91 @@ class AppLocalizationsEn extends AppLocalizations {
       'Earn points by being active, completing your profile, and engaging with others.';
 
   @override
+  String get guideGridFiltersTitle => 'Grid Filters';
+
+  @override
+  String get guideGridFiltersItem1 =>
+      'In grid mode, use the filter chips at the top to narrow down profiles.';
+
+  @override
+  String get guideGridFiltersItem2 =>
+      'All: Shows everyone in your discovery pool.';
+
+  @override
+  String get guideGridFiltersItem3 =>
+      'Connected: People you sent a Connect to.';
+
+  @override
+  String get guideGridFiltersItem4 =>
+      'Priority: People you sent a Priority Connect to.';
+
+  @override
+  String get guideGridFiltersItem5 => 'Passed: People you chose to pass on.';
+
+  @override
+  String get guideGridFiltersItem6 =>
+      'Explored: People you skipped without deciding yet — you can revisit them later.';
+
+  @override
+  String get guideGridFiltersItem7 =>
+      'Matches: People you mutually Connected with (both said Let\'s Connect).';
+
+  @override
+  String get guideGridFiltersItem8 =>
+      'My Network: All people you\'re connected with — includes Matches and accepted Priority Connects.';
+
+  @override
+  String get guideGridFiltersItem9 =>
+      'Travelers: People with Traveler Mode active, visiting a city near you.';
+
+  @override
+  String get guideGridFiltersItem10 =>
+      'Guides: Local Guides ready to help travelers discover their city.';
+
+  @override
+  String get guideGridFiltersItem11 =>
+      'You can combine multiple filters at once to refine your search.';
+
+  @override
+  String get guideExchangesTitle => 'Exchanges (Chat)';
+
+  @override
+  String get guideExchangesItem1 =>
+      'Exchanges is where all your conversations live. You\'ll find it in the bottom menu.';
+
+  @override
+  String get guideExchangesItem2 =>
+      'The red badge on the Exchanges icon shows the number of conversations with unread messages or pending approvals.';
+
+  @override
+  String get guideExchangesItem3 =>
+      'Use the filter chips to organize your chats: All, New, Unread, Favorites, To Approve, Matches, and Direct.';
+
+  @override
+  String get guideExchangesItem4 =>
+      'New and Unread show conversations with messages you haven\'t read yet. The filter chip shows the count when greater than 0.';
+
+  @override
+  String get guideExchangesItem5 =>
+      'To Approve shows Priority Connect requests waiting for your decision. Accept or reject them directly from the list.';
+
+  @override
+  String get guideExchangesItem6 =>
+      'Unread conversations are highlighted with bold text and a gold shimmer effect so you can spot them easily.';
+
+  @override
+  String get guideExchangesItem7 =>
+      'Tap a conversation to open the chat. Once opened, it\'s marked as read and the badge count decreases.';
+
+  @override
+  String get guideExchangesItem8 =>
+      'Long press a conversation for more options. Use the star icon to add a chat to your Favorites.';
+
+  @override
+  String get guideExchangesItem9 =>
+      'Each conversation shows the other user\'s language flags, so you know what languages they speak.';
+
+  @override
   String get guideSafetyTitle => 'Safety & Privacy';
 
   @override
@@ -9811,6 +9899,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get showSupportUserDescription =>
       'Show GreenGo Support user in discovery grid';
+
+  @override
+  String get preferenceShowMyNetwork => 'My Network';
+
+  @override
+  String get preferenceShowMyNetworkDesc =>
+      'Show only people in your network (matches and accepted Priority Connect).';
 
   @override
   String get randomMode => 'Random Mode';
