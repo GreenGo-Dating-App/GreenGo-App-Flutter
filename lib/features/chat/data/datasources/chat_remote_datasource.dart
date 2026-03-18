@@ -607,13 +607,17 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         });
       }
 
-      // Decrement unread count by the number of messages actually read
-      batch.update(
-        firestore.collection('conversations').doc(conversationId),
-        {'unreadCount': FieldValue.increment(-messagesSnapshot.docs.length)},
-      );
-
       await batch.commit();
+
+      // Use a transaction to safely decrement unreadCount and clamp to 0
+      final convRef = firestore.collection('conversations').doc(conversationId);
+      await firestore.runTransaction((transaction) async {
+        final convDoc = await transaction.get(convRef);
+        if (!convDoc.exists) return;
+        final current = (convDoc.data()?['unreadCount'] as int?) ?? 0;
+        final newCount = (current - messagesSnapshot.docs.length).clamp(0, 999999);
+        transaction.update(convRef, {'unreadCount': newCount});
+      });
     } catch (e) {
       throw Exception('Failed to mark conversation as read: $e');
     }
