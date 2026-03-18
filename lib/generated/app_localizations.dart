@@ -10694,7 +10694,7 @@ abstract class AppLocalizations {
   /// No description provided for @matchDetailsTitle.
   ///
   /// In en, this message translates to:
-  /// **'Match Details'**
+  /// **'Exchange Details'**
   String get matchDetailsTitle;
 
   /// No description provided for @matchNotifExchangeMsg.

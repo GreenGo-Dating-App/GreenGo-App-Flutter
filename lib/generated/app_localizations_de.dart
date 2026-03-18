@@ -5997,7 +5997,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Gutscheine, Stufen und Regeln verwalten';
 
   @override
-  String get matchDetailsTitle => 'Match-Details';
+  String get matchDetailsTitle => 'Austausch-Details';
 
   @override
   String matchNotifExchangeMsg(String name) {

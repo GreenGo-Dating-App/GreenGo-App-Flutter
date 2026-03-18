@@ -5971,7 +5971,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get manageCouponsTiersRules => 'Gerir cupões, níveis e regras';
 
   @override
-  String get matchDetailsTitle => 'Detalhes do Match';
+  String get matchDetailsTitle => 'Detalhes da Troca';
 
   @override
   String matchNotifExchangeMsg(String name) {
@@ -16078,7 +16078,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get manageCouponsTiersRules => 'Gerenciar cupons, níveis e regras';
 
   @override
-  String get matchDetailsTitle => 'Detalhes do Match';
+  String get matchDetailsTitle => 'Detalhes da Troca';
 
   @override
   String matchNotifExchangeMsg(String name) {

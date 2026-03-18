@@ -6017,7 +6017,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get manageCouponsTiersRules => 'Gérer coupons, niveaux et règles';
 
   @override
-  String get matchDetailsTitle => 'Details du Match';
+  String get matchDetailsTitle => 'Détails de l\'échange';
 
   @override
   String matchNotifExchangeMsg(String name) {

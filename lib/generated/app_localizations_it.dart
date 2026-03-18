@@ -5991,7 +5991,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get manageCouponsTiersRules => 'Gestisci coupon, livelli e regole';
 
   @override
-  String get matchDetailsTitle => 'Dettagli Match';
+  String get matchDetailsTitle => 'Dettagli Scambio';
 
   @override
   String matchNotifExchangeMsg(String name) {
