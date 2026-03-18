@@ -242,8 +242,8 @@ class _Step5LocationLanguageScreenState
               location: location_entity.Location(
                 latitude: 0.0,
                 longitude: 0.0,
-                city: 'Unknown',
-                country: 'Unknown',
+                city: '',
+                country: '',
                 displayAddress: 'Location not set',
               ),
               languages: _selectedLanguages,

@@ -99,9 +99,12 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
             ?? place.subAdministrativeArea
             ?? place.administrativeArea
             ?? place.name
-            ?? 'Unknown';
-        final country = place.country ?? 'Unknown';
-        final displayAddress = city != 'Unknown' ? '$city, $country' : country;
+            ?? '';
+        final country = place.country ?? '';
+        if (city.isEmpty && country.isEmpty) {
+          throw Exception('Could not resolve address');
+        }
+        final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
         setState(() {
           _selectedLocation = profile_entity.Location(

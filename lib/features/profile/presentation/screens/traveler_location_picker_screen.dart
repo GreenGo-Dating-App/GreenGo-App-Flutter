@@ -149,8 +149,12 @@ class _TravelerLocationPickerScreenState
             place.subLocality ??
             place.subAdministrativeArea ??
             place.administrativeArea ??
-            'Unknown';
-        final country = place.country ?? 'Unknown';
+            '';
+        final country = place.country ?? '';
+        if (city.isEmpty && country.isEmpty) {
+          throw Exception('Could not resolve address from coordinates');
+        }
+        final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
         setState(() {
           _selectedLocation = profile_entity.Location(
@@ -158,7 +162,7 @@ class _TravelerLocationPickerScreenState
             longitude: position.longitude,
             city: city,
             country: country,
-            displayAddress: '$city, $country',
+            displayAddress: displayAddress,
           );
           _searchResults = [];
           _searchController.clear();
@@ -526,9 +530,19 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
             place.subLocality ??
             place.subAdministrativeArea ??
             place.administrativeArea ??
-            'Unknown';
-        final country = place.country ?? 'Unknown';
+            '';
+        final country = place.country ?? '';
         final region = place.administrativeArea ?? '';
+
+        if (city.isEmpty && country.isEmpty) {
+          setState(() {
+            _city = '';
+            _country = '';
+            _addressText = '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)} — could not resolve address';
+            _isLoadingAddress = false;
+          });
+          return;
+        }
 
         setState(() {
           _city = city;
@@ -541,10 +555,10 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
     } catch (_) {
       if (mounted) {
         setState(() {
-          _city = 'Unknown';
-          _country = 'Unknown';
+          _city = '';
+          _country = '';
           _addressText =
-              '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)}';
+              '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)} — could not resolve address';
           _isLoadingAddress = false;
         });
       }
