@@ -19,6 +19,7 @@ class MatchPreferences extends Equatable {
   final bool localGuidesOnly; // true = only show local guides
   final bool showSupportUser; // true = show GreenGo Support user in discovery grid
   final bool randomMode; // true = show random worldwide people sorted by distance
+  final bool showMyNetwork; // true = show only users in my network (matches + accepted priority connects)
 
   const MatchPreferences({
     required this.userId,
@@ -39,6 +40,7 @@ class MatchPreferences extends Equatable {
     this.localGuidesOnly = false,
     this.showSupportUser = false,
     this.randomMode = false,
+    this.showMyNetwork = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -60,6 +62,7 @@ class MatchPreferences extends Equatable {
       localGuidesOnly: false,
       showSupportUser: false,
       randomMode: false,
+      showMyNetwork: false,
     );
   }
 
@@ -84,6 +87,7 @@ class MatchPreferences extends Equatable {
     bool? localGuidesOnly,
     bool? showSupportUser,
     bool? randomMode,
+    bool? showMyNetwork,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -104,6 +108,7 @@ class MatchPreferences extends Equatable {
       localGuidesOnly: localGuidesOnly ?? this.localGuidesOnly,
       showSupportUser: showSupportUser ?? this.showSupportUser,
       randomMode: randomMode ?? this.randomMode,
+      showMyNetwork: showMyNetwork ?? this.showMyNetwork,
     );
   }
 
@@ -128,6 +133,7 @@ class MatchPreferences extends Equatable {
       'localGuidesOnly': localGuidesOnly,
       'showSupportUser': showSupportUser,
       'randomMode': randomMode,
+      'showMyNetwork': showMyNetwork,
     };
   }
 
@@ -164,6 +170,7 @@ class MatchPreferences extends Equatable {
       localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
       showSupportUser: map['showSupportUser'] as bool? ?? false,
       randomMode: map['randomMode'] as bool? ?? false,
+      showMyNetwork: map['showMyNetwork'] as bool? ?? false,
     );
   }
 
@@ -187,5 +194,6 @@ class MatchPreferences extends Equatable {
         localGuidesOnly,
         showSupportUser,
         randomMode,
+        showMyNetwork,
       ];
 }

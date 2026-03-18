@@ -6053,6 +6053,12 @@ abstract class AppLocalizations {
   /// **'Priority'**
   String get discoveryFilterSuperLiked;
 
+  /// No description provided for @discoveryFilterNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'My Network'**
+  String get discoveryFilterNetwork;
+
   /// No description provided for @discoveryFilterTravelers.
   ///
   /// In en, this message translates to:
@@ -17454,6 +17460,138 @@ abstract class AppLocalizations {
   /// **'Earn points by being active, completing your profile, and engaging with others.'**
   String get guideLeaderboardItem2;
 
+  /// No description provided for @guideGridFiltersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid Filters'**
+  String get guideGridFiltersTitle;
+
+  /// No description provided for @guideGridFiltersItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'In grid mode, use the filter chips at the top to narrow down profiles.'**
+  String get guideGridFiltersItem1;
+
+  /// No description provided for @guideGridFiltersItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'All: Shows everyone in your discovery pool.'**
+  String get guideGridFiltersItem2;
+
+  /// No description provided for @guideGridFiltersItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Connected: People you sent a Connect to.'**
+  String get guideGridFiltersItem3;
+
+  /// No description provided for @guideGridFiltersItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority: People you sent a Priority Connect to.'**
+  String get guideGridFiltersItem4;
+
+  /// No description provided for @guideGridFiltersItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Passed: People you chose to pass on.'**
+  String get guideGridFiltersItem5;
+
+  /// No description provided for @guideGridFiltersItem6.
+  ///
+  /// In en, this message translates to:
+  /// **'Explored: People you skipped without deciding yet — you can revisit them later.'**
+  String get guideGridFiltersItem6;
+
+  /// No description provided for @guideGridFiltersItem7.
+  ///
+  /// In en, this message translates to:
+  /// **'Matches: People you mutually Connected with (both said Let\'s Connect).'**
+  String get guideGridFiltersItem7;
+
+  /// No description provided for @guideGridFiltersItem8.
+  ///
+  /// In en, this message translates to:
+  /// **'My Network: All people you\'re connected with — includes Matches and accepted Priority Connects.'**
+  String get guideGridFiltersItem8;
+
+  /// No description provided for @guideGridFiltersItem9.
+  ///
+  /// In en, this message translates to:
+  /// **'Travelers: People with Traveler Mode active, visiting a city near you.'**
+  String get guideGridFiltersItem9;
+
+  /// No description provided for @guideGridFiltersItem10.
+  ///
+  /// In en, this message translates to:
+  /// **'Guides: Local Guides ready to help travelers discover their city.'**
+  String get guideGridFiltersItem10;
+
+  /// No description provided for @guideGridFiltersItem11.
+  ///
+  /// In en, this message translates to:
+  /// **'You can combine multiple filters at once to refine your search.'**
+  String get guideGridFiltersItem11;
+
+  /// No description provided for @guideExchangesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Exchanges (Chat)'**
+  String get guideExchangesTitle;
+
+  /// No description provided for @guideExchangesItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Exchanges is where all your conversations live. You\'ll find it in the bottom menu.'**
+  String get guideExchangesItem1;
+
+  /// No description provided for @guideExchangesItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'The red badge on the Exchanges icon shows the number of conversations with unread messages or pending approvals.'**
+  String get guideExchangesItem2;
+
+  /// No description provided for @guideExchangesItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the filter chips to organize your chats: All, New, Unread, Favorites, To Approve, Matches, and Direct.'**
+  String get guideExchangesItem3;
+
+  /// No description provided for @guideExchangesItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'New and Unread show conversations with messages you haven\'t read yet. The filter chip shows the count when greater than 0.'**
+  String get guideExchangesItem4;
+
+  /// No description provided for @guideExchangesItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'To Approve shows Priority Connect requests waiting for your decision. Accept or reject them directly from the list.'**
+  String get guideExchangesItem5;
+
+  /// No description provided for @guideExchangesItem6.
+  ///
+  /// In en, this message translates to:
+  /// **'Unread conversations are highlighted with bold text and a gold shimmer effect so you can spot them easily.'**
+  String get guideExchangesItem6;
+
+  /// No description provided for @guideExchangesItem7.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a conversation to open the chat. Once opened, it\'s marked as read and the badge count decreases.'**
+  String get guideExchangesItem7;
+
+  /// No description provided for @guideExchangesItem8.
+  ///
+  /// In en, this message translates to:
+  /// **'Long press a conversation for more options. Use the star icon to add a chat to your Favorites.'**
+  String get guideExchangesItem8;
+
+  /// No description provided for @guideExchangesItem9.
+  ///
+  /// In en, this message translates to:
+  /// **'Each conversation shows the other user\'s language flags, so you know what languages they speak.'**
+  String get guideExchangesItem9;
+
   /// No description provided for @guideSafetyTitle.
   ///
   /// In en, this message translates to:
@@ -17513,6 +17651,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show GreenGo Support user in discovery grid'**
   String get showSupportUserDescription;
+
+  /// No description provided for @preferenceShowMyNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'My Network'**
+  String get preferenceShowMyNetwork;
+
+  /// No description provided for @preferenceShowMyNetworkDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show only people in your network (matches and accepted Priority Connect).'**
+  String get preferenceShowMyNetworkDesc;
 
   /// No description provided for @randomMode.
   ///

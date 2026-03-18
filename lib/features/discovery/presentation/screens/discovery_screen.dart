@@ -138,6 +138,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
   final Map<String, String> _gridActionOverlays = {}; // userId -> 'liked'|'superLiked'|'matched'
+  final Set<String> _networkUserIds = {}; // Users in the current user's network (matches + accepted superLikes)
   String? _lastAttemptedGridCardId; // Track last grid action for limit-hit overlay revert
 
   // Swipe mode: shuffled card order (random people from all over the world)
@@ -279,9 +280,37 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         if (u2 == userId && u1 != null) matchedUserIds.add(u1);
       }
 
+      // Load accepted superLike conversations (visibleTo == null means accepted)
+      final superLikeConvSnapshot = await firestore
+          .collection('conversations')
+          .where('conversationType', isEqualTo: 'superLike')
+          .where(Filter.or(
+            Filter('userId1', isEqualTo: userId),
+            Filter('userId2', isEqualTo: userId),
+          ))
+          .get();
+
+      final acceptedSuperLikeUserIds = <String>{};
+      for (final doc in superLikeConvSnapshot.docs) {
+        final data = doc.data();
+        final visibleTo = data['visibleTo'] as List<dynamic>?;
+        // visibleTo == null means both users accepted (conversation is open)
+        if (visibleTo == null) {
+          final u1 = data['userId1'] as String?;
+          final u2 = data['userId2'] as String?;
+          if (u1 == userId && u2 != null) acceptedSuperLikeUserIds.add(u2);
+          if (u2 == userId && u1 != null) acceptedSuperLikeUserIds.add(u1);
+        }
+      }
+
       if (!mounted) return;
 
       setState(() {
+        // Build network: matches + accepted superLikes
+        _networkUserIds.clear();
+        _networkUserIds.addAll(matchedUserIds);
+        _networkUserIds.addAll(acceptedSuperLikeUserIds);
+
         for (final doc in swipesSnapshot.docs) {
           final data = doc.data();
           final targetUserId = data['targetUserId'] as String?;
@@ -877,12 +906,19 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final regularCards = allCards.where((card) =>
         !card.candidate.profile.isAdmin && !card.candidate.profile.isSupport).toList();
 
+    // Apply "My Network" preference filter first (AND with everything else)
+    List<DiscoveryCard> networkFiltered = regularCards;
+    if (_currentPreferences.showMyNetwork) {
+      networkFiltered = regularCards.where((card) =>
+          _networkUserIds.contains(card.userId)).toList();
+    }
+
     // Apply action filters to regular cards only
     List<DiscoveryCard> filteredRegular;
     if (_activeFilters.isEmpty) {
-      filteredRegular = regularCards;
+      filteredRegular = networkFiltered;
     } else {
-      filteredRegular = regularCards.where((card) {
+      filteredRegular = networkFiltered.where((card) {
         final overlay = _gridActionOverlays[card.userId];
         final profile = card.candidate.profile;
 
@@ -890,15 +926,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         if (_activeFilters.contains('travelers') && profile.isTravelerActive) {
           return true;
         }
-        if (_activeFilters.contains('guides') && profile.isLocalGuide) {
-          return true;
-        }
 
         // If only profile-attribute filters are active, don't apply action filters
         final hasActionFilters = _activeFilters.any(
-            (f) => f != 'travelers' && f != 'guides' && f != 'all');
+            (f) => f != 'travelers' && f != 'all');
         if (!hasActionFilters && !_activeFilters.contains('all')) {
-          // Only profile attribute filters are set; if card didn't match above, exclude
           return false;
         }
 
@@ -1178,13 +1210,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterPassed, 'passed', Icons.close),
           const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterSkipped, 'skipped', Icons.explore),
-          const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterMatches, 'matched', Icons.handshake),
-          const SizedBox(width: 6),
           _buildFilterChip(l10n.discoveryFilterTravelers, 'travelers', Icons.flight),
-          const SizedBox(width: 6),
-          _buildFilterChip(l10n.discoveryFilterGuides, 'guides', Icons.shield),
         ],
       ),
     );
@@ -1861,7 +1887,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final showText = widget.gridColumns <= 3;
     final location = profile.effectiveLocation;
     final distanceText = widget.isRandomMode ? '' : widget.card.candidate.distanceText;
-    final cityText = location.city.isNotEmpty ? location.city : '';
+    final cityText = location.city.isNotEmpty && location.city != 'Unknown'
+        ? location.city
+        : (location.country.isNotEmpty && location.country != 'Unknown' ? location.country : '');
 
     // Check if profile is boosted (self-profile always gets boost animation)
     final isBoosted = widget.isSelfProfile ||
