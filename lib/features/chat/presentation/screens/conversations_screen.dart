@@ -486,7 +486,10 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                           .add(const ConversationsRefreshRequested());
                                     }
                                     // Decrement badge by 1 conversation (Instagram style)
-                                    if (conversation.unreadCount > 0) {
+                                    // Only decrement if truly unread for current user
+                                    if (conversation.unreadCount > 0 &&
+                                        conversation.lastMessage != null &&
+                                        !conversation.lastMessage!.isSentBy(widget.userId)) {
                                       widget.onBadgeDecrement?.call(1);
                                     }
                                   }
