@@ -95,7 +95,7 @@ function toPoolMember(doc) {
     if (status === 'suspended' || status === 'banned' || status === 'deleted')
         return null;
     // Must be verified and have at least one photo
-    const isVerified = d.isVerified === true || d.verificationStatus === 'approved';
+    const isVerified = d.isVerified === true || d.verificationStatus === 'approved' || d.verificationStatus === 'verified';
     const photoUrls = d.photoUrls;
     if (!isVerified || !photoUrls || photoUrls.length === 0)
         return null;

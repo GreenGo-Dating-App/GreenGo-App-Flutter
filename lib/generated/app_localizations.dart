@@ -3845,6 +3845,12 @@ abstract class AppLocalizations {
   /// **'Report User'**
   String get chatReportUserTitle;
 
+  /// No description provided for @chatSeeExchangeDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'See Exchange Details with {name}'**
+  String chatSeeExchangeDetails(String name);
+
   /// No description provided for @chatSafetyGotIt.
   ///
   /// In en, this message translates to:

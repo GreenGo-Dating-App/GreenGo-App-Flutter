@@ -2124,6 +2124,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chatReportUserTitle => 'Report User';
 
   @override
+  String chatSeeExchangeDetails(String name) {
+    return 'See Exchange Details with $name';
+  }
+
+  @override
   String get chatSafetyGotIt => 'Got It';
 
   @override

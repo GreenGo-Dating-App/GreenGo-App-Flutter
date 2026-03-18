@@ -762,6 +762,14 @@
     }
   },
   "chatReportUserTitle": "Denunciar Utilizador",
+  "chatSeeExchangeDetails": "Ver Detalhes da Troca com {name}",
+  "@chatSeeExchangeDetails": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatSafetyGotIt": "Entendido",
   "chatSafetySubtitle": "A tua segurança é a nossa prioridade. Tem em mente estas dicas.",
   "chatSafetyTip": "Dica de Segurança",
