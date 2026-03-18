@@ -23,10 +23,12 @@ import 'chat_screen.dart';
 /// Displays list of user's conversations
 class ConversationsScreen extends StatefulWidget {
   final String userId;
+  final void Function(int decrementBy)? onBadgeDecrement;
 
   const ConversationsScreen({
     super.key,
     required this.userId,
+    this.onBadgeDecrement,
   });
 
   @override
@@ -175,7 +177,15 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     );
   }
 
-  Widget _buildFilterChips() {
+  int _countForFilter(ConversationFilter filter, List<Conversation> conversations) {
+    final saved = _selectedFilter;
+    _selectedFilter = filter;
+    final count = conversations.where(_passesFilter).length;
+    _selectedFilter = saved;
+    return count;
+  }
+
+  Widget _buildFilterChips(List<Conversation> conversations) {
     final l10n = AppLocalizations.of(context);
     final filters = [
       (ConversationFilter.all, l10n?.filterAll ?? 'All'),
@@ -197,10 +207,15 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         itemBuilder: (context, index) {
           final (filter, label) = filters[index];
           final isSelected = _selectedFilter == filter;
+          final showCount = filter == ConversationFilter.newMessages ||
+              filter == ConversationFilter.notReplied ||
+              filter == ConversationFilter.toApprove;
+          final count = showCount ? _countForFilter(filter, conversations) : 0;
+          final chipLabel = showCount && count > 0 ? '$label ($count)' : label;
 
           return FilterChip(
             selected: isSelected,
-            label: Text(label),
+            label: Text(chipLabel),
             labelStyle: TextStyle(
               color: isSelected ? AppColors.deepBlack : AppColors.textSecondary,
               fontSize: 13,
@@ -231,8 +246,15 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             conversation.conversationType != ConversationType.search &&
             !(conversation.isSuperLikeConversation && conversation.visibleTo != null);
       case ConversationFilter.newMessages:
+        // Exclude pending superLike/priority connect — those go to "To Approve"
+        if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
+          return false;
+        }
         return conversation.unreadCount > 0;
       case ConversationFilter.notReplied:
+        if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
+          return false;
+        }
         return conversation.unreadCount > 0;
       case ConversationFilter.favorites:
         return conversation.isFavoritedBy(widget.userId);
@@ -357,7 +379,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                     SliverToBoxAdapter(
                       child: Padding(
                         padding: const EdgeInsets.only(bottom: 8),
-                        child: _buildFilterChips(),
+                        child: _buildFilterChips(state.conversations),
                       ),
                     ),
                     // Conversations list
@@ -395,6 +417,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                               }
 
                               return ConversationCard(
+                                key: ValueKey(conversation.conversationId),
                                 conversation: conversation,
                                 otherUserProfile: profile,
                                 currentUserId: widget.userId,
@@ -414,6 +437,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                       conversationId: conversation.conversationId,
                                     ),
                                   );
+                                  widget.onBadgeDecrement?.call(1);
                                 },
                                 onRejectSuperLike: () {
                                   context.read<ConversationsBloc>().add(
@@ -422,6 +446,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                       userId: widget.userId,
                                     ),
                                   );
+                                  widget.onBadgeDecrement?.call(1);
                                 },
                                 onLongPress: () {
                                   _showDeleteBottomSheet(
@@ -459,6 +484,10 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                       context
                                           .read<ConversationsBloc>()
                                           .add(const ConversationsRefreshRequested());
+                                    }
+                                    // Decrement badge by 1 conversation (Instagram style)
+                                    if (conversation.unreadCount > 0) {
+                                      widget.onBadgeDecrement?.call(1);
                                     }
                                   }
                                 },

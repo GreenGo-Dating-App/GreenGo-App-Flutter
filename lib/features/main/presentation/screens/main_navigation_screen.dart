@@ -202,7 +202,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           if (mounted) setState(() {});
         },
       ),
-      ConversationsScreen(userId: widget.userId),
+      ConversationsScreen(userId: widget.userId, onBadgeDecrement: _decrementBadgeCount),
       BlocProvider(
         create: (context) => di.sl<GamificationBloc>()
           ..add(LoadLeaderboard(userId: widget.userId)),
@@ -234,7 +234,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Check if app tour should be shown
     _checkAppTour();
 
-    // Listen for new match count and unread message count
+    // Start live Firestore listeners for badge counts
     _startBadgeCountListeners();
   }
 
@@ -906,6 +906,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     });
   }
 
+  /// Decrement badge count for instant UI feedback (Firestore listener will confirm)
+  void _decrementBadgeCount(int amount) {
+    final newCount = (_unreadMessageCount - amount).clamp(0, 999);
+    if (newCount != _unreadMessageCount) {
+      setState(() => _unreadMessageCount = newCount);
+    }
+  }
+
   void _startBadgeCountListeners() {
     final fs = FirebaseFirestore.instance;
     final uid = widget.userId;
@@ -938,7 +946,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       }
     });
 
-    // Unread chats: count conversations where someone sent me a message I haven't seen
+    // Badge count: Firestore is single source of truth for unread + to approve count
     _messageCountSub = fs
         .collection('conversations')
         .where(Filter.or(
@@ -955,29 +963,31 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         final uid2 = data['userId2'] as String?;
         if (uid1 != uid && uid2 != uid) continue;
 
-        // Skip deleted conversations
         if (data['isDeleted'] == true) continue;
         final deletedFor = data['deletedFor'] as Map<String, dynamic>?;
         if (deletedFor != null && deletedFor.containsKey(uid)) continue;
 
-        // Skip conversations hidden via visibleTo (super like not yet accepted)
         final visibleTo = data['visibleTo'] as List<dynamic>?;
-        if (visibleTo != null && visibleTo.isNotEmpty && !visibleTo.contains(uid)) continue;
-
-        // Skip super like conversations
         final conversationType = data['conversationType'] as String?;
-        if (conversationType == 'superLike') continue;
+
+        if (conversationType == 'superLike' &&
+            visibleTo != null && visibleTo.contains(uid)) {
+          count++;
+          continue;
+        }
+
+        if (visibleTo != null && visibleTo.isNotEmpty && !visibleTo.contains(uid)) continue;
+        if (conversationType == 'support') continue;
 
         final unread = (data['unreadCount'] as int?) ?? 0;
         if (unread <= 0) continue;
-
-        // Only count if last message was sent by the other person
         final lastMsg = data['lastMessage'] as Map<String, dynamic>?;
         final lastSenderId = lastMsg?['senderId'] as String?;
         if (lastSenderId != null && lastSenderId != uid) {
-          count += unread;
+          count++; // Count conversations, not messages (Instagram style)
         }
       }
+      // Always update to match Firestore truth
       if (mounted && count != _unreadMessageCount) {
         setState(() => _unreadMessageCount = count);
       }

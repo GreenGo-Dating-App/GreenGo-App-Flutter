@@ -762,6 +762,14 @@
     }
   },
   "chatReportUserTitle": "Benutzer melden",
+  "chatSeeExchangeDetails": "Austauschdetails mit {name} anzeigen",
+  "@chatSeeExchangeDetails": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatSafetyGotIt": "Verstanden",
   "chatSafetySubtitle": "Deine Sicherheit hat Priorität. Behalte diese Tipps im Kopf.",
   "chatSafetyTip": "Sicherheitstipp",

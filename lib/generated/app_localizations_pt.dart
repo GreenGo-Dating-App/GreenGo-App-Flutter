@@ -2148,6 +2148,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatReportUserTitle => 'Denunciar Utilizador';
 
   @override
+  String chatSeeExchangeDetails(String name) {
+    return 'Ver Detalhes da Troca com $name';
+  }
+
+  @override
   String get chatSafetyGotIt => 'Entendido';
 
   @override
@@ -12250,6 +12255,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatReportUserTitle => 'Denunciar Usuário';
+
+  @override
+  String chatSeeExchangeDetails(String name) {
+    return 'Ver Detalhes da Troca com $name';
+  }
 
   @override
   String get chatSafetyGotIt => 'Entendi';

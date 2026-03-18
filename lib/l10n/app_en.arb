@@ -936,6 +936,14 @@
     }
   },
   "chatReportUserTitle": "Report User",
+  "chatSeeExchangeDetails": "See Exchange Details with {name}",
+  "@chatSeeExchangeDetails": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "chatSafetyGotIt": "Got It",
   "chatSafetySubtitle": "Your safety is our priority. Please keep these tips in mind.",
   "chatSafetyTip": "Safety Tip",

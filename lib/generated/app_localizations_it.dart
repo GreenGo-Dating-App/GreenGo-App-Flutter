@@ -2158,6 +2158,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get chatReportUserTitle => 'Segnala Utente';
 
   @override
+  String chatSeeExchangeDetails(String name) {
+    return 'Vedi Dettagli dello Scambio con $name';
+  }
+
+  @override
   String get chatSafetyGotIt => 'Capito';
 
   @override

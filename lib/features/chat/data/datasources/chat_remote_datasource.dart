@@ -586,9 +586,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String userId,
   }) async {
     try {
-      final batch = firestore.batch();
-
-      // Get all unread messages
+      // Get all unread messages for this user
       final messagesSnapshot = await firestore
           .collection('conversations')
           .doc(conversationId)
@@ -597,6 +595,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .where('readAt', isNull: true)
           .get();
 
+      // Only update if there are actually unread messages for this user
+      if (messagesSnapshot.docs.isEmpty) return;
+
+      final batch = firestore.batch();
+
       // Mark all as read
       for (final doc in messagesSnapshot.docs) {
         batch.update(doc.reference, {
@@ -604,10 +607,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         });
       }
 
-      // Reset unread count
+      // Decrement unread count by the number of messages actually read
       batch.update(
         firestore.collection('conversations').doc(conversationId),
-        {'unreadCount': 0},
+        {'unreadCount': FieldValue.increment(-messagesSnapshot.docs.length)},
       );
 
       await batch.commit();

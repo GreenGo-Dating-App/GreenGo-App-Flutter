@@ -37,6 +37,8 @@ import '../bloc/chat_state.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../discovery/presentation/screens/match_detail_screen.dart';
+import '../../../discovery/domain/entities/match.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import 'package:audioplayers/audioplayers.dart' hide Source;
@@ -140,6 +142,9 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _currentUserName;
   Profile? _currentUserProfile;
 
+  // Match data for Exchange Details
+  Match? _matchData;
+
   @override
   void initState() {
     super.initState();
@@ -162,6 +167,31 @@ class _ChatScreenState extends State<ChatScreen> {
     _fetchCurrentUserName();
     _loadPhraseOfTheDay();
     _loadChatSettings();
+    _fetchMatchData();
+  }
+
+  /// Fetch match data to enable "See Exchange Details" option
+  Future<void> _fetchMatchData() async {
+    try {
+      final matchDoc = await FirebaseFirestore.instance
+          .collection('matches')
+          .doc(widget.matchId)
+          .get();
+      if (matchDoc.exists && mounted) {
+        final data = matchDoc.data()!;
+        setState(() {
+          _matchData = Match(
+            matchId: matchDoc.id,
+            userId1: data['userId1'] as String? ?? '',
+            userId2: data['userId2'] as String? ?? '',
+            matchedAt: (data['matchedAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
+            isActive: data['isActive'] as bool? ?? true,
+          );
+        });
+      }
+    } catch (_) {
+      // No match found — option won't appear
+    }
   }
 
   /// Load chat settings: per-chat first, then global defaults
@@ -2166,6 +2196,26 @@ class _ChatScreenState extends State<ChatScreen> {
                 _revokeAlbumAccess(context);
               },
             ),
+            if (_matchData != null) ...[
+              const Divider(color: AppColors.divider, height: 1),
+              _buildOptionItem(
+                icon: Icons.info_outline,
+                label: AppLocalizations.of(context)?.chatSeeExchangeDetails(widget.otherUserProfile.displayName) ?? 'See Exchange Details with ${widget.otherUserProfile.displayName}',
+                color: AppColors.richGold,
+                onTap: () {
+                  Navigator.pop(bottomSheetContext);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => MatchDetailScreen(
+                        match: _matchData!,
+                        profile: widget.otherUserProfile,
+                        currentUserId: widget.currentUserId,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ],
             const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.delete_outline,

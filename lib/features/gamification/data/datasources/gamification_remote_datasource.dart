@@ -104,15 +104,33 @@ class GamificationRemoteDataSourceImpl
   CollectionReference get _levelRewardsClaimedCollection =>
       firestore.collection('level_rewards_claimed');
 
-  /// Check if a user is admin or support (should be excluded from leaderboard)
-  Future<bool> _isAdminOrSupport(String userId) async {
+  /// Check if a user should be excluded from leaderboard
+  /// Excludes: admins, support, inactive/banned/deleted accounts, users not seen in 30+ days
+  Future<bool> _shouldExcludeFromLeaderboard(String userId) async {
     try {
       final doc = await firestore.collection('profiles').doc(userId).get();
-      if (!doc.exists) return false;
+      if (!doc.exists) return true; // No profile = exclude
       final data = doc.data() as Map<String, dynamic>?;
-      if (data == null) return false;
-      return (data['isAdmin'] as bool? ?? false) ||
-             (data['isSupport'] as bool? ?? false);
+      if (data == null) return true;
+
+      // Exclude admins and supporters
+      if ((data['isAdmin'] as bool? ?? false) ||
+          (data['isSupport'] as bool? ?? false)) {
+        return true;
+      }
+
+      // Exclude non-active accounts (suspended, banned, deleted)
+      final accountStatus = data['accountStatus'] as String? ?? 'active';
+      if (accountStatus != 'active') return true;
+
+      // Exclude users not seen in the last 30 days
+      final lastSeen = data['lastSeen'];
+      if (lastSeen != null) {
+        final lastSeenDate = (lastSeen as Timestamp).toDate();
+        if (DateTime.now().difference(lastSeenDate).inDays > 30) return true;
+      }
+
+      return false;
     } catch (_) {
       return false;
     }
@@ -409,7 +427,7 @@ class GamificationRemoteDataSourceImpl
     for (var doc in snapshot.docs) {
       if (entries.length >= limit) break;
       // Exclude admins and supporters from leaderboard
-      if (await _isAdminOrSupport(doc.id)) continue;
+      if (await _shouldExcludeFromLeaderboard(doc.id)) continue;
       final data = doc.data() as Map<String, dynamic>;
       entries.add(LeaderboardEntryModel(
         rank: rank++,
@@ -481,7 +499,7 @@ class GamificationRemoteDataSourceImpl
       final userDoc = await _userLevelsCollection.doc(entry.key).get();
       if (!userDoc.exists) continue;
       // Exclude admins and supporters from leaderboard
-      if (await _isAdminOrSupport(entry.key)) continue;
+      if (await _shouldExcludeFromLeaderboard(entry.key)) continue;
       final data = userDoc.data() as Map<String, dynamic>;
 
       // Regional filter: skip if region doesn't match

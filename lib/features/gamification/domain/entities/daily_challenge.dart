@@ -134,237 +134,177 @@ class UserChallengeProgress extends Equatable {
       ];
 }
 
-/// Standard Daily Challenges (Point 196)
+/// Year-Round Daily Challenge Dataset (Point 196)
+/// Provides 3 unique challenges per day, rotating through a pool of 21 challenge
+/// templates based on day-of-year so every day feels different.
 class DailyChallenges {
-  /// Date key for stable daily challenge IDs
   static String get _dailyKey {
     final now = DateTime.now();
     return '${now.year}_${now.month.toString().padLeft(2, '0')}_${now.day.toString().padLeft(2, '0')}';
   }
 
-  /// Send 5 messages
-  static DailyChallenge get sendMessages {
-    final now = DateTime.now();
-    final tomorrow = DateTime(now.year, now.month, now.day + 1);
+  /// Full pool of daily challenge templates (21 unique challenges)
+  static final List<_ChallengeTemplate> _pool = [
+    // Messaging challenges
+    _ChallengeTemplate('send_3_messages', 'Quick Chat', 'Send 3 messages', 'message_sent', 3, ChallengeDifficulty.easy, 30, 10),
+    _ChallengeTemplate('send_5_messages', 'Message Master', 'Send 5 messages to your matches', 'message_sent', 5, ChallengeDifficulty.easy, 50, 20),
+    _ChallengeTemplate('send_10_messages', 'Conversation King', 'Send 10 messages today', 'message_sent', 10, ChallengeDifficulty.medium, 80, 35),
+    _ChallengeTemplate('send_15_messages', 'Chat Marathon', 'Send 15 messages today', 'message_sent', 15, ChallengeDifficulty.hard, 120, 50),
+    // Match challenges
+    _ChallengeTemplate('get_1_match', 'First Spark', 'Get 1 new match today', 'match', 1, ChallengeDifficulty.easy, 40, 15),
+    _ChallengeTemplate('get_3_matches', 'Match Maker', 'Get 3 new matches today', 'match', 3, ChallengeDifficulty.medium, 60, 25),
+    _ChallengeTemplate('get_5_matches', 'Love Magnet', 'Get 5 new matches today', 'match', 5, ChallengeDifficulty.hard, 100, 40),
+    // Super Like challenges
+    _ChallengeTemplate('send_1_superlike', 'Priority Pick', 'Send 1 super like', 'super_like', 1, ChallengeDifficulty.easy, 35, 15),
+    _ChallengeTemplate('send_3_superlikes', 'Super Liker', 'Send 3 super likes', 'super_like', 3, ChallengeDifficulty.medium, 55, 25),
+    _ChallengeTemplate('send_5_superlikes', 'Super Star', 'Send 5 super likes', 'super_like', 5, ChallengeDifficulty.hard, 90, 40),
+    // Video call challenges
+    _ChallengeTemplate('video_call_1', 'Video Enthusiast', 'Complete 1 video call', 'video_call', 1, ChallengeDifficulty.medium, 75, 50),
+    _ChallengeTemplate('video_call_2', 'Video Pro', 'Complete 2 video calls', 'video_call', 2, ChallengeDifficulty.hard, 120, 80),
+    // Photo challenges
+    _ChallengeTemplate('add_photo', 'Photo Refresh', 'Add or update a profile photo', 'photo_added', 1, ChallengeDifficulty.easy, 40, 15),
+    _ChallengeTemplate('add_2_photos', 'Photo Gallery', 'Add 2 new profile photos', 'photo_added', 2, ChallengeDifficulty.medium, 70, 30),
+    // Gift challenges
+    _ChallengeTemplate('send_1_gift', 'Gift Giver', 'Send 1 gift to a match', 'gift_sent', 1, ChallengeDifficulty.easy, 45, 20),
+    _ChallengeTemplate('send_3_gifts', 'Generous Heart', 'Send 3 gifts today', 'gift_sent', 3, ChallengeDifficulty.medium, 80, 35),
+    _ChallengeTemplate('send_5_gifts', 'Gift Master', 'Send 5 gifts today', 'gift_sent', 5, ChallengeDifficulty.hard, 130, 55),
+    // Mixed difficulty combos
+    _ChallengeTemplate('chat_starter', 'Ice Breaker', 'Send 7 messages to different matches', 'message_sent', 7, ChallengeDifficulty.medium, 65, 30),
+    _ChallengeTemplate('social_butterfly', 'Social Butterfly', 'Send 20 messages today', 'message_sent', 20, ChallengeDifficulty.epic, 150, 70),
+    _ChallengeTemplate('match_rush', 'Match Rush', 'Get 7 matches today', 'match', 7, ChallengeDifficulty.epic, 140, 60),
+    _ChallengeTemplate('video_marathon', 'Video Marathon', 'Complete 3 video calls', 'video_call', 3, ChallengeDifficulty.epic, 180, 100),
+  ];
 
-    return DailyChallenge(
-      challengeId: 'daily_send_messages_$_dailyKey',
-      name: 'Message Master',
-      description: 'Send 5 messages to your matches',
-      type: ChallengeType.daily,
-      difficulty: ChallengeDifficulty.easy,
-      requiredCount: 5,
-      actionType: 'message_sent',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 50),
-        ChallengeReward(type: 'coins', amount: 20),
-      ],
-      startDate: DateTime(now.year, now.month, now.day),
-      endDate: tomorrow,
-    );
-  }
-
-  /// Complete 1 video call
-  static DailyChallenge get videoCall {
-    final now = DateTime.now();
-    final tomorrow = DateTime(now.year, now.month, now.day + 1);
-
-    return DailyChallenge(
-      challengeId: 'daily_video_call_$_dailyKey',
-      name: 'Video Enthusiast',
-      description: 'Complete 1 video call with a match',
-      type: ChallengeType.daily,
-      difficulty: ChallengeDifficulty.medium,
-      requiredCount: 1,
-      actionType: 'video_call',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 75),
-        ChallengeReward(type: 'coins', amount: 50),
-      ],
-      startDate: DateTime(now.year, now.month, now.day),
-      endDate: tomorrow,
-    );
-  }
-
-  /// Update profile photo
-  static DailyChallenge get updatePhoto {
-    final now = DateTime.now();
-    final tomorrow = DateTime(now.year, now.month, now.day + 1);
-
-    return DailyChallenge(
-      challengeId: 'daily_update_photo_$_dailyKey',
-      name: 'Photo Refresh',
-      description: 'Update or add a new profile photo',
-      type: ChallengeType.daily,
-      difficulty: ChallengeDifficulty.easy,
-      requiredCount: 1,
-      actionType: 'photo_added',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 40),
-        ChallengeReward(type: 'coins', amount: 15),
-      ],
-      startDate: DateTime(now.year, now.month, now.day),
-      endDate: tomorrow,
-    );
-  }
-
-  /// Get 3 matches
-  static DailyChallenge get getMatches {
-    final now = DateTime.now();
-    final tomorrow = DateTime(now.year, now.month, now.day + 1);
-
-    return DailyChallenge(
-      challengeId: 'daily_get_matches_$_dailyKey',
-      name: 'Match Maker',
-      description: 'Get 3 new matches today',
-      type: ChallengeType.daily,
-      difficulty: ChallengeDifficulty.medium,
-      requiredCount: 3,
-      actionType: 'match',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 60),
-        ChallengeReward(type: 'boost', amount: 1),
-      ],
-      startDate: DateTime(now.year, now.month, now.day),
-      endDate: tomorrow,
-    );
-  }
-
-  /// Send super likes
-  static DailyChallenge get superLikes {
-    final now = DateTime.now();
-    final tomorrow = DateTime(now.year, now.month, now.day + 1);
-
-    return DailyChallenge(
-      challengeId: 'daily_super_likes_$_dailyKey',
-      name: 'Super Liker',
-      description: 'Send 3 super likes',
-      type: ChallengeType.daily,
-      difficulty: ChallengeDifficulty.easy,
-      requiredCount: 3,
-      actionType: 'super_like',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 45),
-        ChallengeReward(type: 'coins', amount: 25),
-      ],
-      startDate: DateTime(now.year, now.month, now.day),
-      endDate: tomorrow,
-    );
-  }
-
-  /// Get all daily challenges
+  /// Get 3 challenges for today based on day-of-year rotation.
+  /// Each day picks a unique combination from the pool.
   static List<DailyChallenge> getRotatingChallenges() {
-    // Rotate challenges based on day of week
-    final dayOfWeek = DateTime.now().weekday;
+    final now = DateTime.now();
+    final dayOfYear = now.difference(DateTime(now.year, 1, 1)).inDays;
+    final tomorrow = DateTime(now.year, now.month, now.day + 1);
 
-    switch (dayOfWeek) {
-      case DateTime.monday:
-        return [sendMessages, getMatches, updatePhoto];
-      case DateTime.tuesday:
-        return [videoCall, superLikes, sendMessages];
-      case DateTime.wednesday:
-        return [getMatches, updatePhoto, videoCall];
-      case DateTime.thursday:
-        return [sendMessages, superLikes, getMatches];
-      case DateTime.friday:
-        return [videoCall, sendMessages, updatePhoto];
-      case DateTime.saturday:
-        return [getMatches, videoCall, superLikes];
-      case DateTime.sunday:
-        return [sendMessages, updatePhoto, superLikes];
-      default:
-        return [sendMessages, getMatches, videoCall];
-    }
+    // Use day-of-year to pick 3 non-overlapping challenges from the pool
+    // Rotate through groups of 3, cycling the full pool over 7 days
+    final startIndex = (dayOfYear * 3) % _pool.length;
+    final indices = [
+      startIndex % _pool.length,
+      (startIndex + 1) % _pool.length,
+      (startIndex + 2) % _pool.length,
+    ];
+
+    return indices.map((i) {
+      final t = _pool[i];
+      return DailyChallenge(
+        challengeId: 'daily_${t.id}_$_dailyKey',
+        name: t.name,
+        description: t.description,
+        type: ChallengeType.daily,
+        difficulty: t.difficulty,
+        requiredCount: t.requiredCount,
+        actionType: t.actionType,
+        rewards: [
+          ChallengeReward(type: 'xp', amount: t.xp),
+          ChallengeReward(type: 'coins', amount: t.coins),
+        ],
+        startDate: DateTime(now.year, now.month, now.day),
+        endDate: tomorrow,
+      );
+    }).toList();
   }
 }
 
-/// Weekly Mega-Challenges (Point 199)
+/// Year-Round Weekly Challenge Dataset (Point 199)
+/// Provides 3 weekly challenges that rotate each week through a pool of 15 templates.
 class WeeklyChallenges {
-  /// Week key for stable weekly challenge IDs (ISO week number)
   static String get _weekKey {
     final now = DateTime.now();
     final weekNumber = ((now.difference(DateTime(now.year, 1, 1)).inDays) / 7).ceil();
     return '${now.year}_w${weekNumber.toString().padLeft(2, '0')}';
   }
 
-  /// Complete all daily challenges for 7 days
-  static DailyChallenge get perfectWeek {
+  static int get _weekNumber {
     final now = DateTime.now();
-    final nextWeek = now.add(const Duration(days: 7));
-
-    return DailyChallenge(
-      challengeId: 'weekly_perfect_$_weekKey',
-      name: 'Perfect Week',
-      description: 'Complete all daily challenges for 7 consecutive days',
-      type: ChallengeType.weekly,
-      difficulty: ChallengeDifficulty.epic,
-      requiredCount: 7,
-      actionType: 'daily_challenges_completed',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 500),
-        ChallengeReward(type: 'coins', amount: 250),
-        ChallengeReward(type: 'badge', amount: 1, itemId: 'perfect_week_badge'),
-      ],
-      startDate: now,
-      endDate: nextWeek,
-    );
+    return ((now.difference(DateTime(now.year, 1, 1)).inDays) / 7).ceil();
   }
 
-  /// Get 20 matches in a week
-  static DailyChallenge get weeklyMatcher {
-    final now = DateTime.now();
-    final nextWeek = now.add(const Duration(days: 7));
+  /// Full pool of weekly challenge templates (15 unique challenges)
+  static final List<_ChallengeTemplate> _pool = [
+    // Messaging
+    _ChallengeTemplate('weekly_messages_30', 'Chat Enthusiast', 'Send 30 messages this week', 'message_sent', 30, ChallengeDifficulty.easy, 200, 100),
+    _ChallengeTemplate('weekly_messages_50', 'Chat Master', 'Send 50 messages this week', 'message_sent', 50, ChallengeDifficulty.medium, 300, 150),
+    _ChallengeTemplate('weekly_messages_100', 'Chat Legend', 'Send 100 messages this week', 'message_sent', 100, ChallengeDifficulty.hard, 500, 250),
+    // Matches
+    _ChallengeTemplate('weekly_matches_10', 'Weekly Connector', 'Get 10 matches this week', 'match', 10, ChallengeDifficulty.easy, 250, 120),
+    _ChallengeTemplate('weekly_matches_20', 'Weekly Match Champion', 'Get 20 matches this week', 'match', 20, ChallengeDifficulty.hard, 400, 200),
+    _ChallengeTemplate('weekly_matches_30', 'Match Machine', 'Get 30 matches this week', 'match', 30, ChallengeDifficulty.epic, 600, 300),
+    // Super Likes
+    _ChallengeTemplate('weekly_superlikes_5', 'Weekly Super Liker', 'Send 5 super likes this week', 'super_like', 5, ChallengeDifficulty.easy, 180, 90),
+    _ChallengeTemplate('weekly_superlikes_10', 'Super Fan', 'Send 10 super likes this week', 'super_like', 10, ChallengeDifficulty.medium, 300, 150),
+    _ChallengeTemplate('weekly_superlikes_15', 'Priority King', 'Send 15 super likes this week', 'super_like', 15, ChallengeDifficulty.hard, 450, 220),
+    // Video Calls
+    _ChallengeTemplate('weekly_video_3', 'Video Socialite', 'Complete 3 video calls this week', 'video_call', 3, ChallengeDifficulty.medium, 350, 180),
+    _ChallengeTemplate('weekly_video_5', 'Video Star', 'Complete 5 video calls this week', 'video_call', 5, ChallengeDifficulty.hard, 500, 250),
+    // Gifts
+    _ChallengeTemplate('weekly_gifts_5', 'Weekly Gift Giver', 'Send 5 gifts this week', 'gift_sent', 5, ChallengeDifficulty.easy, 200, 100),
+    _ChallengeTemplate('weekly_gifts_10', 'Generous Soul', 'Send 10 gifts this week', 'gift_sent', 10, ChallengeDifficulty.medium, 350, 175),
+    // Photos
+    _ChallengeTemplate('weekly_photos_3', 'Photo Week', 'Add 3 photos this week', 'photo_added', 3, ChallengeDifficulty.easy, 180, 90),
+    // Epic combos
+    _ChallengeTemplate('weekly_perfect', 'Perfect Week', 'Complete all daily challenges 7 days in a row', 'daily_challenges_completed', 7, ChallengeDifficulty.epic, 700, 350),
+  ];
 
-    return DailyChallenge(
-      challengeId: 'weekly_matches_$_weekKey',
-      name: 'Weekly Match Champion',
-      description: 'Get 20 matches this week',
-      type: ChallengeType.weekly,
-      difficulty: ChallengeDifficulty.hard,
-      requiredCount: 20,
-      actionType: 'match',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 400),
-        ChallengeReward(type: 'coins', amount: 200),
-      ],
-      startDate: now,
-      endDate: nextWeek,
-    );
-  }
-
-  /// Send 50 messages
-  static DailyChallenge get weeklyMessenger {
-    final now = DateTime.now();
-    final nextWeek = now.add(const Duration(days: 7));
-
-    return DailyChallenge(
-      challengeId: 'weekly_messages_$_weekKey',
-      name: 'Chat Master',
-      description: 'Send 50 messages this week',
-      type: ChallengeType.weekly,
-      difficulty: ChallengeDifficulty.medium,
-      requiredCount: 50,
-      actionType: 'message_sent',
-      rewards: const [
-        ChallengeReward(type: 'xp', amount: 300),
-        ChallengeReward(type: 'coins', amount: 150),
-      ],
-      startDate: now,
-      endDate: nextWeek,
-    );
-  }
-
-  /// Get all weekly challenges
+  /// Get 3 weekly challenges based on week-of-year rotation.
   static List<DailyChallenge> getWeeklyChallenges() {
-    return [
-      perfectWeek,
-      weeklyMatcher,
-      weeklyMessenger,
+    final now = DateTime.now();
+    // Start of this week (Monday)
+    final weekStart = now.subtract(Duration(days: now.weekday - 1));
+    final weekEnd = weekStart.add(const Duration(days: 7));
+
+    final startIndex = (_weekNumber * 3) % _pool.length;
+    final indices = [
+      startIndex % _pool.length,
+      (startIndex + 1) % _pool.length,
+      (startIndex + 2) % _pool.length,
     ];
+
+    return indices.map((i) {
+      final t = _pool[i];
+      return DailyChallenge(
+        challengeId: 'weekly_${t.id}_$_weekKey',
+        name: t.name,
+        description: t.description,
+        type: ChallengeType.weekly,
+        difficulty: t.difficulty,
+        requiredCount: t.requiredCount,
+        actionType: t.actionType,
+        rewards: [
+          ChallengeReward(type: 'xp', amount: t.xp),
+          ChallengeReward(type: 'coins', amount: t.coins),
+        ],
+        startDate: DateTime(weekStart.year, weekStart.month, weekStart.day),
+        endDate: DateTime(weekEnd.year, weekEnd.month, weekEnd.day),
+      );
+    }).toList();
   }
 
-  /// Alias for getWeeklyChallenges (for datasource compatibility)
+  /// Alias for datasource compatibility
   static List<DailyChallenge> getAllWeeklyChallenges() => getWeeklyChallenges();
+}
+
+/// Internal challenge template used by DailyChallenges and WeeklyChallenges pools
+class _ChallengeTemplate {
+  final String id;
+  final String name;
+  final String description;
+  final String actionType;
+  final int requiredCount;
+  final ChallengeDifficulty difficulty;
+  final int xp;
+  final int coins;
+
+  const _ChallengeTemplate(
+    this.id, this.name, this.description, this.actionType,
+    this.requiredCount, this.difficulty, this.xp, this.coins,
+  );
 }
 
 /// Seasonal Events (Point 200)

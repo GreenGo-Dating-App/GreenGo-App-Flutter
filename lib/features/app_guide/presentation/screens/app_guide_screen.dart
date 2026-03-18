@@ -70,6 +70,38 @@ class AppGuideScreen extends StatelessWidget {
         ],
       ),
       _GuideSection(
+        icon: Icons.filter_list,
+        title: l10n.guideGridFiltersTitle,
+        items: [
+          l10n.guideGridFiltersItem1,
+          l10n.guideGridFiltersItem2,
+          l10n.guideGridFiltersItem3,
+          l10n.guideGridFiltersItem4,
+          l10n.guideGridFiltersItem5,
+          l10n.guideGridFiltersItem6,
+          l10n.guideGridFiltersItem7,
+          l10n.guideGridFiltersItem8,
+          l10n.guideGridFiltersItem9,
+          l10n.guideGridFiltersItem10,
+          l10n.guideGridFiltersItem11,
+        ],
+      ),
+      _GuideSection(
+        icon: Icons.forum,
+        title: l10n.guideExchangesTitle,
+        items: [
+          l10n.guideExchangesItem1,
+          l10n.guideExchangesItem2,
+          l10n.guideExchangesItem3,
+          l10n.guideExchangesItem4,
+          l10n.guideExchangesItem5,
+          l10n.guideExchangesItem6,
+          l10n.guideExchangesItem7,
+          l10n.guideExchangesItem8,
+          l10n.guideExchangesItem9,
+        ],
+      ),
+      _GuideSection(
         icon: Icons.flight_takeoff,
         title: l10n.guideTravelTitle,
         items: [
