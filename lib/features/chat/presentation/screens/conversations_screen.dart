@@ -250,12 +250,16 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
           return false;
         }
-        return conversation.unreadCount > 0;
+        return conversation.unreadCount > 0 &&
+            conversation.lastMessage != null &&
+            !conversation.lastMessage!.isSentBy(widget.userId);
       case ConversationFilter.notReplied:
         if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
           return false;
         }
-        return conversation.unreadCount > 0;
+        return conversation.unreadCount > 0 &&
+            conversation.lastMessage != null &&
+            !conversation.lastMessage!.isSentBy(widget.userId);
       case ConversationFilter.favorites:
         return conversation.isFavoritedBy(widget.userId);
       case ConversationFilter.toApprove:
