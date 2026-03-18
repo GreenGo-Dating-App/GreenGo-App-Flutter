@@ -79,11 +79,6 @@ class AppGuideScreen extends StatelessWidget {
           l10n.guideGridFiltersItem4,
           l10n.guideGridFiltersItem5,
           l10n.guideGridFiltersItem6,
-          l10n.guideGridFiltersItem7,
-          l10n.guideGridFiltersItem8,
-          l10n.guideGridFiltersItem9,
-          l10n.guideGridFiltersItem10,
-          l10n.guideGridFiltersItem11,
         ],
       ),
       _GuideSection(

@@ -9811,7 +9811,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'El filtro de país es opcional. Cuando no hay ningún país seleccionado, verás las personas más cercanas en todo el mundo (hasta 500). Agrega países para limitar tu búsqueda a regiones específicas.';
+      'Modo Aleatorio: activa este interruptor para descubrir personas aleatorias de todo el mundo. Cada actualización te muestra un nuevo conjunto de perfiles. Cuando el Modo Aleatorio está desactivado, solo se muestran personas cerca de ti. También puedes seleccionar países específicos para acotar tu búsqueda.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9925,27 +9925,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Explorados: Personas que saltaste sin decidir — puedes revisarlas después.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches: Personas con las que ambos se conectaron mutuamente.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'Mi Red: Todas las personas con las que estás conectado — incluye Matches y Conexiones Prioritarias aceptadas.';
-
-  @override
-  String get guideGridFiltersItem9 =>
-      'Viajeros: Personas con Modo Viajero activo, visitando una ciudad cerca de ti.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guías: Guías locales listos para ayudar a los viajeros a descubrir su ciudad.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Puedes combinar varios filtros a la vez para refinar tu búsqueda.';
+      'Viajeros: Personas con el Modo Viajero activo, visitando una ciudad cerca de ti.';
 
   @override
   String get guideExchangesTitle => 'Intercambios (Chat)';
@@ -9960,11 +9940,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Usa los chips de filtro para organizar tus chats: Todos, Nuevos, No leídos, Favoritos, Por aprobar, Matches y Directos.';
+      'Usa los filtros para organizar tus chats: Todos, Nuevos, Sin responder, Favoritos, Por aprobar, Match y Búsqueda.';
 
   @override
   String get guideExchangesItem4 =>
-      'Nuevos y No leídos muestran conversaciones con mensajes que aún no has leído. El chip muestra el conteo cuando es mayor a 0.';
+      'Nuevos muestra conversaciones con mensajes nuevos que no has leído. Sin responder muestra mensajes a los que aún no has respondido.';
 
   @override
   String get guideExchangesItem5 =>

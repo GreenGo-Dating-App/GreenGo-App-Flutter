@@ -17325,7 +17325,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideFiltersItem2.
   ///
   /// In en, this message translates to:
-  /// **'Random Mode: enable this toggle to discover random people from all over the world, sorted by distance. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.'**
+  /// **'Random Mode: enable this toggle to discover random people from all over the world. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.'**
   String get guideFiltersItem2;
 
   /// No description provided for @guideFiltersItem3.
@@ -17505,38 +17505,8 @@ abstract class AppLocalizations {
   /// No description provided for @guideGridFiltersItem6.
   ///
   /// In en, this message translates to:
-  /// **'Explored: People you skipped without deciding yet — you can revisit them later.'**
-  String get guideGridFiltersItem6;
-
-  /// No description provided for @guideGridFiltersItem7.
-  ///
-  /// In en, this message translates to:
-  /// **'Matches: People you mutually Connected with (both said Let\'s Connect).'**
-  String get guideGridFiltersItem7;
-
-  /// No description provided for @guideGridFiltersItem8.
-  ///
-  /// In en, this message translates to:
-  /// **'My Network: All people you\'re connected with — includes Matches and accepted Priority Connects.'**
-  String get guideGridFiltersItem8;
-
-  /// No description provided for @guideGridFiltersItem9.
-  ///
-  /// In en, this message translates to:
   /// **'Travelers: People with Traveler Mode active, visiting a city near you.'**
-  String get guideGridFiltersItem9;
-
-  /// No description provided for @guideGridFiltersItem10.
-  ///
-  /// In en, this message translates to:
-  /// **'Guides: Local Guides ready to help travelers discover their city.'**
-  String get guideGridFiltersItem10;
-
-  /// No description provided for @guideGridFiltersItem11.
-  ///
-  /// In en, this message translates to:
-  /// **'You can combine multiple filters at once to refine your search.'**
-  String get guideGridFiltersItem11;
+  String get guideGridFiltersItem6;
 
   /// No description provided for @guideExchangesTitle.
   ///
@@ -17559,13 +17529,13 @@ abstract class AppLocalizations {
   /// No description provided for @guideExchangesItem3.
   ///
   /// In en, this message translates to:
-  /// **'Use the filter chips to organize your chats: All, New, Unread, Favorites, To Approve, Matches, and Direct.'**
+  /// **'Use the filter chips to organize your chats: All, New, Not Replied, Favorites, To Approve, Match, and Search.'**
   String get guideExchangesItem3;
 
   /// No description provided for @guideExchangesItem4.
   ///
   /// In en, this message translates to:
-  /// **'New and Unread show conversations with messages you haven\'t read yet. The filter chip shows the count when greater than 0.'**
+  /// **'New shows conversations with new messages you haven\'t read. Not Replied shows messages you haven\'t responded to yet.'**
   String get guideExchangesItem4;
 
   /// No description provided for @guideExchangesItem5.
