@@ -2902,7 +2902,7 @@
   "lookingFor": "Looking for",
   "lvl": "LVL",
   "manageCouponsTiersRules": "Manage coupons, tiers & rules",
-  "matchDetailsTitle": "Match Details",
+  "matchDetailsTitle": "Exchange Details",
   "matchNotifExchangeMsg": "You and {name} want to exchange languages!",
   "@matchNotifExchangeMsg": {
     "placeholders": {
