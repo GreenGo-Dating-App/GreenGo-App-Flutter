@@ -595,28 +595,29 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .where('readAt', isNull: true)
           .get();
 
-      // Only update if there are actually unread messages for this user
-      if (messagesSnapshot.docs.isEmpty) return;
+      if (messagesSnapshot.docs.isNotEmpty) {
+        final batch = firestore.batch();
 
-      final batch = firestore.batch();
+        // Mark all as read
+        for (final doc in messagesSnapshot.docs) {
+          batch.update(doc.reference, {
+            'readAt': Timestamp.fromDate(DateTime.now()),
+          });
+        }
 
-      // Mark all as read
-      for (final doc in messagesSnapshot.docs) {
-        batch.update(doc.reference, {
-          'readAt': Timestamp.fromDate(DateTime.now()),
-        });
+        await batch.commit();
       }
 
-      await batch.commit();
-
-      // Use a transaction to safely decrement unreadCount and clamp to 0
+      // Always fix unreadCount: decrement by messages read, and clamp to 0
       final convRef = firestore.collection('conversations').doc(conversationId);
       await firestore.runTransaction((transaction) async {
         final convDoc = await transaction.get(convRef);
         if (!convDoc.exists) return;
         final current = (convDoc.data()?['unreadCount'] as int?) ?? 0;
-        final newCount = (current - messagesSnapshot.docs.length).clamp(0, 999999);
-        transaction.update(convRef, {'unreadCount': newCount});
+        if (current < 0 || messagesSnapshot.docs.isNotEmpty) {
+          final newCount = (current - messagesSnapshot.docs.length).clamp(0, 999999);
+          transaction.update(convRef, {'unreadCount': newCount});
+        }
       });
     } catch (e) {
       throw Exception('Failed to mark conversation as read: $e');
