@@ -9807,7 +9807,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'Il filtro per paese è opzionale. Quando nessun paese è selezionato, vedrai le persone più vicine in tutto il mondo (fino a 500). Aggiungi paesi per limitare la ricerca a regioni specifiche.';
+      'Modalità Casuale: attiva questo interruttore per scoprire persone casuali da tutto il mondo. Ogni aggiornamento ti mostra un nuovo gruppo di profili. Quando la Modalità Casuale è disattivata, vengono mostrate solo le persone vicine a te. Puoi anche selezionare paesi specifici per restringere la ricerca.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9921,27 +9921,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Esplorati: Persone che hai saltato senza decidere — puoi rivederle in seguito.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Match: Persone con cui vi siete connessi reciprocamente.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'La Mia Rete: Tutte le persone con cui sei connesso — include Match e Connessioni Prioritarie accettate.';
-
-  @override
-  String get guideGridFiltersItem9 =>
       'Viaggiatori: Persone con la Modalità Viaggiatore attiva, in visita in una città vicino a te.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guide: Guide locali pronte ad aiutare i viaggiatori a scoprire la loro città.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Puoi combinare più filtri contemporaneamente per affinare la ricerca.';
 
   @override
   String get guideExchangesTitle => 'Scambi (Chat)';
@@ -9956,11 +9936,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Usa i chip filtro per organizzare le tue chat: Tutti, Nuovi, Non letti, Preferiti, Da approvare, Match e Diretti.';
+      'Usa i filtri per organizzare le tue chat: Tutti, Nuovi, Senza risposta, Preferiti, Da approvare, Match e Ricerca.';
 
   @override
   String get guideExchangesItem4 =>
-      'Nuovi e Non letti mostrano conversazioni con messaggi che non hai ancora letto. Il chip mostra il conteggio quando è maggiore di 0.';
+      'Nuovi mostra le conversazioni con nuovi messaggi non letti. Senza risposta mostra i messaggi a cui non hai ancora risposto.';
 
   @override
   String get guideExchangesItem5 =>

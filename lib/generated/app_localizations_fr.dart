@@ -9850,7 +9850,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'Le filtre de pays est optionnel. Lorsqu\'aucun pays n\'est sélectionné, vous verrez les personnes les plus proches dans le monde entier (jusqu\'à 500). Ajoutez des pays pour limiter votre recherche à des régions spécifiques.';
+      'Mode Aléatoire : activez ce bouton pour découvrir des personnes aléatoires du monde entier. Chaque actualisation vous donne un nouveau groupe de profils. Lorsque le Mode Aléatoire est désactivé, seules les personnes proches de vous sont affichées. Vous pouvez également sélectionner des pays spécifiques pour affiner votre recherche.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9964,27 +9964,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Explorés : Personnes que vous avez passées sans décider — vous pouvez y revenir plus tard.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches : Personnes avec lesquelles vous vous êtes mutuellement connectés.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'Mon Réseau : Toutes les personnes avec lesquelles vous êtes connecté — inclut les Matches et les Connexions Prioritaires acceptées.';
-
-  @override
-  String get guideGridFiltersItem9 =>
       'Voyageurs : Personnes avec le Mode Voyageur actif, visitant une ville près de chez vous.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guides : Guides locaux prêts à aider les voyageurs à découvrir leur ville.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Vous pouvez combiner plusieurs filtres à la fois pour affiner votre recherche.';
 
   @override
   String get guideExchangesTitle => 'Échanges (Chat)';
@@ -9999,11 +9979,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Utilisez les puces de filtre pour organiser vos chats : Tous, Nouveaux, Non lus, Favoris, À approuver, Matches et Directs.';
+      'Utilisez les filtres pour organiser vos chats : Tous, Nouveau, Non répondu, Favoris, À approuver, Match et Recherche.';
 
   @override
   String get guideExchangesItem4 =>
-      'Nouveaux et Non lus affichent les conversations avec des messages que vous n\'avez pas encore lus. La puce affiche le nombre quand il est supérieur à 0.';
+      'Nouveau affiche les conversations avec de nouveaux messages non lus. Non répondu affiche les messages auxquels vous n\'avez pas encore répondu.';
 
   @override
   String get guideExchangesItem5 =>

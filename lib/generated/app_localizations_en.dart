@@ -9694,7 +9694,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'Random Mode: enable this toggle to discover random people from all over the world, sorted by distance. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.';
+      'Random Mode: enable this toggle to discover random people from all over the world. Each refresh gives you a new set of profiles. When Random Mode is off, only people close to you are shown. You can also select specific countries to narrow your search.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9807,27 +9807,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Explored: People you skipped without deciding yet — you can revisit them later.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches: People you mutually Connected with (both said Let\'s Connect).';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'My Network: All people you\'re connected with — includes Matches and accepted Priority Connects.';
-
-  @override
-  String get guideGridFiltersItem9 =>
       'Travelers: People with Traveler Mode active, visiting a city near you.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guides: Local Guides ready to help travelers discover their city.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'You can combine multiple filters at once to refine your search.';
 
   @override
   String get guideExchangesTitle => 'Exchanges (Chat)';
@@ -9842,11 +9822,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Use the filter chips to organize your chats: All, New, Unread, Favorites, To Approve, Matches, and Direct.';
+      'Use the filter chips to organize your chats: All, New, Not Replied, Favorites, To Approve, Match, and Search.';
 
   @override
   String get guideExchangesItem4 =>
-      'New and Unread show conversations with messages you haven\'t read yet. The filter chip shows the count when greater than 0.';
+      'New shows conversations with new messages you haven\'t read. Not Replied shows messages you haven\'t responded to yet.';
 
   @override
   String get guideExchangesItem5 =>

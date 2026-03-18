@@ -9786,7 +9786,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'O filtro de país é opcional. Quando nenhum país está selecionado, verá as pessoas mais próximas em todo o mundo (até 500). Adicione países para limitar a sua pesquisa a regiões específicas.';
+      'Modo Aleatório: ative este interruptor para descobrir pessoas aleatórias de todo o mundo. Cada atualização mostra-lhe um novo conjunto de perfis. Quando o Modo Aleatório está desativado, apenas são mostradas pessoas perto de si. Também pode selecionar países específicos para restringir a sua pesquisa.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9899,27 +9899,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Explorados: Pessoas que saltou sem decidir — pode revê-las mais tarde.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches: Pessoas com quem se conectaram mutuamente.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'Minha Rede: Todas as pessoas com quem está conectado — inclui Matches e Conexões Prioritárias aceites.';
-
-  @override
-  String get guideGridFiltersItem9 =>
-      'Viajantes: Pessoas com o Modo Viajante ativo, a visitar uma cidade perto de si.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guias: Guias locais prontos para ajudar viajantes a descobrir a sua cidade.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Pode combinar vários filtros ao mesmo tempo para refinar a sua pesquisa.';
+      'Viajantes: Pessoas com o Modo Viajante ativo, visitando uma cidade perto de si.';
 
   @override
   String get guideExchangesTitle => 'Trocas (Chat)';
@@ -9934,11 +9914,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Use os chips de filtro para organizar os seus chats: Todos, Novos, Não lidos, Favoritos, Por aprovar, Matches e Diretos.';
+      'Use os filtros para organizar os seus chats: Todos, Novos, Sem resposta, Favoritos, A aprovar, Match e Pesquisa.';
 
   @override
   String get guideExchangesItem4 =>
-      'Novos e Não lidos mostram conversas com mensagens que ainda não leu. O chip mostra a contagem quando é superior a 0.';
+      'Novos mostra conversas com novas mensagens não lidas. Sem resposta mostra mensagens às quais ainda não respondeu.';
 
   @override
   String get guideExchangesItem5 =>
@@ -19895,7 +19875,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideFiltersItem2 =>
-      'O filtro de país é opcional. Quando nenhum país está selecionado, você verá as pessoas mais próximas no mundo todo (até 500). Adicione países para limitar sua busca a regiões específicas.';
+      'Modo Aleatório: ative este interruptor para descobrir pessoas aleatórias de todo o mundo. Cada atualização mostra um novo conjunto de perfis. Quando o Modo Aleatório está desativado, apenas são mostradas pessoas perto de você. Você também pode selecionar países específicos para restringir sua busca.';
 
   @override
   String get guideFiltersItem3 =>
@@ -20009,27 +19989,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Explorados: Pessoas que você pulou sem decidir — você pode revê-las depois.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches: Pessoas com quem vocês se conectaram mutuamente.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'Minha Rede: Todas as pessoas com quem você está conectado — inclui Matches e Conexões Prioritárias aceitas.';
-
-  @override
-  String get guideGridFiltersItem9 =>
       'Viajantes: Pessoas com o Modo Viajante ativo, visitando uma cidade perto de você.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guias: Guias locais prontos para ajudar viajantes a descobrir sua cidade.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Você pode combinar vários filtros ao mesmo tempo para refinar sua busca.';
 
   @override
   String get guideExchangesTitle => 'Trocas (Chat)';
@@ -20044,11 +20004,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get guideExchangesItem3 =>
-      'Use os chips de filtro para organizar seus chats: Todos, Novos, Não lidos, Favoritos, Para aprovar, Matches e Diretos.';
+      'Use os filtros para organizar seus chats: Todos, Novos, Sem resposta, Favoritos, A aprovar, Match e Pesquisa.';
 
   @override
   String get guideExchangesItem4 =>
-      'Novos e Não lidos mostram conversas com mensagens que você ainda não leu. O chip mostra a contagem quando é maior que 0.';
+      'Novos mostra conversas com novas mensagens não lidas. Sem resposta mostra mensagens que você ainda não respondeu.';
 
   @override
   String get guideExchangesItem5 =>

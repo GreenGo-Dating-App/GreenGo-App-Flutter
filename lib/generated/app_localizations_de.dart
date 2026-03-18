@@ -9816,7 +9816,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideFiltersItem2 =>
-      'Der Länderfilter ist optional. Wenn kein Land ausgewählt ist, siehst du die nächsten Personen weltweit (bis zu 500). Füge Länder hinzu, um deine Suche auf bestimmte Regionen einzugrenzen.';
+      'Zufallsmodus: Aktiviere diesen Schalter, um zufällige Personen aus der ganzen Welt zu entdecken. Jede Aktualisierung zeigt dir neue Profile. Wenn der Zufallsmodus deaktiviert ist, werden nur Personen in deiner Nähe angezeigt. Du kannst auch bestimmte Länder auswählen, um deine Suche einzugrenzen.';
 
   @override
   String get guideFiltersItem3 =>
@@ -9930,27 +9930,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideGridFiltersItem6 =>
-      'Erkundet: Personen, die du ohne Entscheidung übersprungen hast — du kannst sie später erneut ansehen.';
-
-  @override
-  String get guideGridFiltersItem7 =>
-      'Matches: Personen, mit denen ihr euch gegenseitig verbunden habt.';
-
-  @override
-  String get guideGridFiltersItem8 =>
-      'Mein Netzwerk: Alle Personen, mit denen du verbunden bist — einschließlich Matches und akzeptierter Prioritätsverbindungen.';
-
-  @override
-  String get guideGridFiltersItem9 =>
       'Reisende: Personen mit aktivem Reisemodus, die eine Stadt in deiner Nähe besuchen.';
-
-  @override
-  String get guideGridFiltersItem10 =>
-      'Guides: Lokale Guides, die Reisenden helfen, ihre Stadt zu entdecken.';
-
-  @override
-  String get guideGridFiltersItem11 =>
-      'Du kannst mehrere Filter gleichzeitig kombinieren, um deine Suche zu verfeinern.';
 
   @override
   String get guideExchangesTitle => 'Austausch (Chat)';
@@ -9965,11 +9945,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Verwende die Filterchips, um deine Chats zu organisieren: Alle, Neu, Ungelesen, Favoriten, Zu genehmigen, Matches und Direkt.';
+      'Verwende die Filterchips, um deine Chats zu organisieren: Alle, Neu, Nicht beantwortet, Favoriten, Zu genehmigen, Match und Suche.';
 
   @override
   String get guideExchangesItem4 =>
-      'Neu und Ungelesen zeigen Unterhaltungen mit Nachrichten, die du noch nicht gelesen hast. Der Filterchip zeigt die Anzahl, wenn sie größer als 0 ist.';
+      'Neu zeigt Unterhaltungen mit neuen Nachrichten, die du nicht gelesen hast. Nicht beantwortet zeigt Nachrichten, auf die du noch nicht geantwortet hast.';
 
   @override
   String get guideExchangesItem5 =>
