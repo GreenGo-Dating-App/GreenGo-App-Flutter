@@ -62,10 +62,15 @@ class _ConversationCardState extends State<ConversationCard>
     with SingleTickerProviderStateMixin {
   AnimationController? _shimmerController;
 
+  bool get _isUnreadForCurrentUser =>
+      widget.conversation.hasUnreadMessages &&
+      widget.conversation.lastMessage != null &&
+      !widget.conversation.lastMessage!.isSentBy(widget.currentUserId);
+
   @override
   void initState() {
     super.initState();
-    if (widget.conversation.hasUnreadMessages) {
+    if (_isUnreadForCurrentUser) {
       // Small delay so the list is fully visible before the shimmer plays
       Future.delayed(const Duration(milliseconds: 300), () {
         if (mounted) _initShimmer();
@@ -77,7 +82,7 @@ class _ConversationCardState extends State<ConversationCard>
   void didUpdateWidget(covariant ConversationCard oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Trigger shimmer when conversation becomes unread or gets a new message
-    if (widget.conversation.hasUnreadMessages &&
+    if (_isUnreadForCurrentUser &&
         (!oldWidget.conversation.hasUnreadMessages ||
          widget.conversation.unreadCount > oldWidget.conversation.unreadCount)) {
       if (mounted) _initShimmer();
@@ -103,7 +108,7 @@ class _ConversationCardState extends State<ConversationCard>
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final hasUnread = widget.conversation.hasUnreadMessages;
+    final hasUnread = _isUnreadForCurrentUser;
     final isTyping = widget.conversation.isOtherUserTyping(widget.currentUserId);
     final userLanguageFlags = _buildUserLanguageFlags();
 

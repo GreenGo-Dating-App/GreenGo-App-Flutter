@@ -1353,37 +1353,104 @@ class EditProfileScreen extends StatelessWidget {
     }
   }
 
-  void _showRestartDiscoveryDialog(BuildContext context, Profile profile) {
-    showDialog(
+  Future<void> _showRestartDiscoveryDialog(BuildContext context, Profile profile) async {
+    final l10n = AppLocalizations.of(context)!;
+    final firestore = FirebaseFirestore.instance;
+
+    // Load cooldown info
+    DateTime? lastRestartDate;
+    MembershipTier membershipTier = MembershipTier.free;
+    try {
+      final userDoc = await firestore.collection('users').doc(profile.userId).get();
+      final profileDoc = await firestore.collection('profiles').doc(profile.userId).get();
+      final ts = userDoc.data()?['lastDiscoveryRestart'] as Timestamp?;
+      lastRestartDate = ts?.toDate();
+      final tierStr = profileDoc.data()?['membershipTier'] as String? ?? 'FREE';
+      membershipTier = MembershipTier.values.firstWhere(
+        (t) => t.value == tierStr,
+        orElse: () => MembershipTier.free,
+      );
+    } catch (_) {}
+
+    // Calculate cooldown
+    int cooldownDays;
+    switch (membershipTier) {
+      case MembershipTier.gold:
+      case MembershipTier.platinum:
+      case MembershipTier.test:
+        cooldownDays = 7;
+      case MembershipTier.silver:
+        cooldownDays = 15;
+      case MembershipTier.free:
+        cooldownDays = 30;
+    }
+
+    int? daysLeft;
+    if (lastRestartDate != null) {
+      final nextAllowed = lastRestartDate.add(Duration(days: cooldownDays));
+      final remaining = nextAllowed.difference(DateTime.now()).inDays;
+      if (remaining > 0) daysLeft = remaining;
+    }
+
+    if (!context.mounted) return;
+
+    if (daysLeft != null) {
+      // Cooldown active - show info dialog
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(
+            l10n.profileRestartDiscoveryDialogTitle,
+            style: const TextStyle(color: AppColors.textPrimary),
+          ),
+          content: Text(
+            'Available again in $daysLeft day${daysLeft == 1 ? '' : 's'}',
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.ok, style: const TextStyle(color: AppColors.richGold)),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+
+    // No cooldown - show confirmation
+    final confirmed = await showDialog<bool>(
       context: context,
-      builder: (dialogContext) => AlertDialog(
+      builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          AppLocalizations.of(context)!.profileRestartDiscoveryDialogTitle,
+          l10n.profileRestartDiscoveryDialogTitle,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(context)!.profileRestartDiscoveryDialogContent,
+          l10n.profileRestartDiscoveryDialogContent,
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(AppLocalizations.of(context)!.cancel),
+            onPressed: () => Navigator.pop(ctx, false),
+            child: Text(l10n.cancel),
           ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(dialogContext);
-              _restartDiscovery(context, profile);
-            },
-            child: Text(
-              AppLocalizations.of(context)!.profileRestart,
-              style: const TextStyle(color: AppColors.richGold),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red.shade700,
+              foregroundColor: Colors.white,
             ),
+            child: Text(l10n.profileRestart),
           ),
         ],
       ),
     );
+    if (confirmed != true || !context.mounted) return;
+
+    _restartDiscovery(context, profile);
   }
 
   Future<void> _restartDiscovery(BuildContext context, Profile profile) async {
@@ -1397,36 +1464,52 @@ class EditProfileScreen extends StatelessWidget {
         ),
       );
 
-      // Delete all swipe records for this user (connect, nope, priority connect, explore next)
-      final swipesQuery = await FirebaseFirestore.instance
-          .collection('swipes')
-          .where('userId', isEqualTo: profile.userId)
-          .get();
+      final firestore = FirebaseFirestore.instance;
 
-      // Delete in batches of 500 (Firestore limit)
-      for (var i = 0; i < swipesQuery.docs.length; i += 500) {
-        final batch = FirebaseFirestore.instance.batch();
-        final end = (i + 500).clamp(0, swipesQuery.docs.length);
-        for (var j = i; j < end; j++) {
-          batch.delete(swipesQuery.docs[j].reference);
+      // Delete all swipe records for this user in batches
+      WriteBatch batch = firestore.batch();
+      int count = 0;
+      QuerySnapshot snapshot;
+      do {
+        snapshot = await firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: profile.userId)
+            .limit(500)
+            .get();
+        for (final doc in snapshot.docs) {
+          batch.delete(doc.reference);
+          count++;
+          if (count % 500 == 0) {
+            await batch.commit();
+            batch = firestore.batch();
+          }
         }
-        await batch.commit();
-      }
+        if (snapshot.docs.isNotEmpty && count % 500 != 0) {
+          await batch.commit();
+          batch = firestore.batch();
+        }
+      } while (snapshot.docs.length == 500);
 
       // Also delete photo likes by this user
-      final photoLikesQuery = await FirebaseFirestore.instance
+      final photoLikesQuery = await firestore
           .collection('photo_likes')
           .where('likerId', isEqualTo: profile.userId)
           .get();
 
       for (var i = 0; i < photoLikesQuery.docs.length; i += 500) {
-        final batch = FirebaseFirestore.instance.batch();
+        final b = firestore.batch();
         final end = (i + 500).clamp(0, photoLikesQuery.docs.length);
         for (var j = i; j < end; j++) {
-          batch.delete(photoLikesQuery.docs[j].reference);
+          b.delete(photoLikesQuery.docs[j].reference);
         }
-        await batch.commit();
+        await b.commit();
       }
+
+      // Record the restart timestamp for cooldown
+      await firestore.collection('users').doc(profile.userId).set(
+        {'lastDiscoveryRestart': FieldValue.serverTimestamp()},
+        SetOptions(merge: true),
+      );
 
       // Clear in-memory discovery cache so fresh profiles load
       try {
@@ -1443,7 +1526,7 @@ class EditProfileScreen extends StatelessWidget {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)!.profileDiscoveryRestarted),
-            backgroundColor: AppColors.richGold,
+            backgroundColor: Colors.green.shade700,
           ),
         );
         // Refresh the discovery tab so it rebuilds with fresh data
