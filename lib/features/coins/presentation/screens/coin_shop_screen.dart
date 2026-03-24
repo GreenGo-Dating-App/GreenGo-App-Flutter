@@ -1275,10 +1275,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         tierColor = Colors.grey;
     }
 
+    final isLocked = isDowngrade || (isCurrentPlan && _membershipEndDate != null && _membershipEndDate!.isAfter(DateTime.now()));
+
     return GestureDetector(
-      onTap: isDowngrade ? null : () => setState(() => _selectedTier = tier),
+      onTap: isLocked ? null : () => setState(() => _selectedTier = tier),
       child: Opacity(
-        opacity: isDowngrade ? 0.5 : 1.0,
+        opacity: isLocked ? 0.5 : 1.0,
         child: Container(
           margin: const EdgeInsets.only(bottom: 16),
           decoration: BoxDecoration(
