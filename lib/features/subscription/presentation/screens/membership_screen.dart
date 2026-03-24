@@ -21,12 +21,69 @@ class MembershipScreen extends StatefulWidget {
 
 class _MembershipScreenState extends State<MembershipScreen> {
   ProductDetails? _selectedProduct;
+  String? _currentTierName;
+  DateTime? _currentEndDate;
+  bool _hasActiveBaseMembership = false;
 
   @override
   void initState() {
     super.initState();
     // Load available products
     context.read<SubscriptionBloc>().add(const LoadAvailableProducts());
+    _loadCurrentMembership();
+  }
+
+  Future<void> _loadCurrentMembership() async {
+    if (widget.currentUserId != null) {
+      try {
+        final doc = await cloud_firestore.FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+        if (doc.exists && mounted) {
+          final data = doc.data()!;
+          final endDate = data['membershipEndDate'] as cloud_firestore.Timestamp?;
+          final tier = data['membershipTier'] as String? ?? 'BASIC';
+          final hasBase = data['hasBaseMembership'] as bool? ?? false;
+          final baseEndTs = data['baseMembershipEndDate'] as cloud_firestore.Timestamp?;
+          final baseEndDate = baseEndTs?.toDate();
+          final baseActive = hasBase && baseEndDate != null && baseEndDate.isAfter(DateTime.now());
+          setState(() {
+            _currentTierName = tier;
+            _currentEndDate = endDate?.toDate();
+            _hasActiveBaseMembership = baseActive;
+          });
+        }
+      } catch (e) {
+        debugPrint('Error loading membership: $e');
+      }
+    }
+  }
+
+  bool _isProductLocked(String productId) {
+    if (productId == 'greengo_base_membership') return _hasActiveBaseMembership;
+    if (_currentTierName == null || _currentEndDate == null) return false;
+    final isActive = _currentEndDate!.isAfter(DateTime.now());
+    if (!isActive) return false;
+    final currentRank = _tierRankFromName(_currentTierName!);
+    final productRank = _tierRankFromProductId(productId);
+    return productRank <= currentRank;
+  }
+
+  int _tierRankFromName(String tierName) {
+    switch (tierName.toUpperCase()) {
+      case 'PLATINUM': return 3;
+      case 'GOLD': return 2;
+      case 'SILVER': return 1;
+      default: return 0;
+    }
+  }
+
+  int _tierRankFromProductId(String productId) {
+    if (productId.contains('platinum')) return 3;
+    if (productId.contains('gold')) return 2;
+    if (productId.contains('silver')) return 1;
+    return 0;
   }
 
   /// Get subscription tier from product ID
@@ -115,11 +172,15 @@ class _MembershipScreenState extends State<MembershipScreen> {
 
                       // Product List
                       if (products.isNotEmpty)
-                        ...products.map((product) => _buildProductCard(
-                          product: product,
-                          isSelected: _selectedProduct?.id == product.id,
-                          onSelect: () => setState(() => _selectedProduct = product),
-                        )),
+                        ...products.map((product) {
+                          final isLocked = _isProductLocked(product.id);
+                          return _buildProductCard(
+                            product: product,
+                            isSelected: _selectedProduct?.id == product.id,
+                            isLocked: isLocked,
+                            onSelect: isLocked ? () {} : () => setState(() => _selectedProduct = product),
+                          );
+                        }),
 
                       const SizedBox(height: 32),
 
@@ -182,6 +243,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
     required ProductDetails product,
     required bool isSelected,
     required VoidCallback onSelect,
+    bool isLocked = false,
   }) {
     final isYearly = product.id.contains('1_year');
     final isBase = product.id.contains('base');
@@ -198,8 +260,10 @@ class _MembershipScreenState extends State<MembershipScreen> {
     if (isBase) duration = l10n.membershipBase;
 
     return GestureDetector(
-      onTap: onSelect,
-      child: Container(
+      onTap: isLocked ? null : onSelect,
+      child: Opacity(
+        opacity: isLocked ? 0.4 : 1.0,
+        child: Container(
         margin: const EdgeInsets.only(bottom: 16),
         decoration: BoxDecoration(
           color: isSelected ? Colors.grey[900] : Colors.grey[850],
@@ -237,7 +301,23 @@ class _MembershipScreenState extends State<MembershipScreen> {
                     ),
                   ],
                 ),
-                if (isYearly)
+                if (isLocked)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: Colors.green[700],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Text(
+                      l10n.membershipActive,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                else if (isYearly)
                   Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 12,
@@ -278,6 +358,7 @@ class _MembershipScreenState extends State<MembershipScreen> {
               ),
           ],
         ),
+      ),
       ),
     );
   }

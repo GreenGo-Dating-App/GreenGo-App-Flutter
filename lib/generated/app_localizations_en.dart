@@ -6015,7 +6015,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName membership active until $formattedDate$coinsText';
   }
 
@@ -6118,6 +6121,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get membershipNameDescriptionLabel => 'Name/Description';
+
+  @override
+  String get membershipActive => 'Active';
 
   @override
   String get membershipNoActive => 'No active membership';

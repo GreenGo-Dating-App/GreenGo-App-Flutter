@@ -26,6 +26,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
   ProductDetails? _selectedProduct;
   String? _currentTierName;
   DateTime? _currentEndDate;
+  bool _hasActiveBaseMembership = false;
 
   @override
   void initState() {
@@ -48,9 +49,14 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
           final endDate =
               data['membershipEndDate'] as cloud_firestore.Timestamp?;
           final tier = data['membershipTier'] as String? ?? 'BASIC';
+          final hasBase = data['hasBaseMembership'] as bool? ?? false;
+          final baseEndTs = data['baseMembershipEndDate'] as cloud_firestore.Timestamp?;
+          final baseEndDate = baseEndTs?.toDate();
+          final baseActive = hasBase && baseEndDate != null && baseEndDate.isAfter(DateTime.now());
           setState(() {
             _currentTierName = tier;
             _currentEndDate = endDate?.toDate();
+            _hasActiveBaseMembership = baseActive;
           });
         }
       } catch (e) {
@@ -91,13 +97,16 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     return 0;
   }
 
-  /// Returns true if the product's tier is lower than the user's current active tier.
+  /// Returns true if the product should be locked (not selectable).
+  /// Locked when: active base membership being re-purchased, or tier <= current active tier.
   bool _isLowerThanCurrentTier(String productId) {
-    if (productId == 'greengo_base_membership') return false; // Base is always purchasable
+    // Block re-purchasing active base membership
+    if (productId == 'greengo_base_membership') return _hasActiveBaseMembership;
     final currentRank = _currentTierRank();
     if (currentRank <= 0) return false; // No active premium tier, everything allowed
     final productRank = _tierRankFromProductId(productId);
-    return productRank < currentRank;
+    // Block same tier AND lower tiers (can only upgrade)
+    return productRank <= currentRank;
   }
 
   @override
@@ -432,11 +441,15 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 8, vertical: 2),
                             decoration: BoxDecoration(
-                              color: Colors.red[700],
+                              color: Colors.green[700],
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Text(
-                              'You have ${_currentTierName!}',
+                              product.id == 'greengo_base_membership'
+                                  ? AppLocalizations.of(context)!.membershipActive
+                                  : (_tierRankFromProductId(product.id) == _currentTierRank()
+                                      ? AppLocalizations.of(context)!.membershipActive
+                                      : 'You have ${_currentTierName!}'),
                               style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
