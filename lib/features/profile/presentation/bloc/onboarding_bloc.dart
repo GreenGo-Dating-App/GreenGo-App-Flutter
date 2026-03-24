@@ -328,9 +328,8 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         nativeLanguage: currentState.nativeLanguage,
         // Travel preference
         travelPreference: currentState.travelPreference,
-        // 7-day free trial starts from registration
-        hasBaseMembership: true,
-        baseMembershipEndDate: now.add(const Duration(days: 7)),
+        // No trial bypass — membership is granted only via Apple/Google store subscription
+        hasBaseMembership: false,
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));
