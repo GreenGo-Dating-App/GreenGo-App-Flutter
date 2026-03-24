@@ -6073,7 +6073,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -6178,6 +6181,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get membershipNameDescriptionLabel => 'Nome/Descrição';
+
+  @override
+  String get membershipActive => 'Ativo';
 
   @override
   String get membershipNoActive => 'Sem subscrição ativa';
@@ -16165,7 +16171,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16269,6 +16278,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipNameDescriptionLabel => 'Nome/Descrição';
+
+  @override
+  String get membershipActive => 'Ativo';
 
   @override
   String get membershipNoActive => 'Sem assinatura ativa';

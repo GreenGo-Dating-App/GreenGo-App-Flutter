@@ -6098,7 +6098,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Membresía $tierName activa hasta $formattedDate$coinsText';
   }
 
@@ -6203,6 +6206,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get membershipNameDescriptionLabel => 'Nombre/Descripción';
+
+  @override
+  String get membershipActive => 'Activa';
 
   @override
   String get membershipNoActive => 'Sin membresía activa';
