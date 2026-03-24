@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @abandonGame.
@@ -10858,10 +10858,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -17840,6 +17837,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Pending approval'**
   String get priorityConnectPending;
+
+  /// No description provided for @membershipTrialTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Your Free Trial!'**
+  String get membershipTrialTitle;
+
+  /// No description provided for @membershipTrialSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'7 days free, then just \$4.99/year'**
+  String get membershipTrialSubtitle;
+
+  /// No description provided for @membershipTrialFeature1.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited Swipes & Connections'**
+  String get membershipTrialFeature1;
+
+  /// No description provided for @membershipTrialFeature2.
+  ///
+  /// In en, this message translates to:
+  /// **'500 Bonus Coins on Activation'**
+  String get membershipTrialFeature2;
+
+  /// No description provided for @membershipTrialFeature3.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Access to All Features'**
+  String get membershipTrialFeature3;
+
+  /// No description provided for @membershipTrialCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Start 7-Day Free Trial'**
+  String get membershipTrialCta;
+
+  /// No description provided for @membershipTrialFooter.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel anytime during trial. No charge until day 8.'**
+  String get membershipTrialFooter;
+
+  /// No description provided for @membershipTrialBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'FREE FOR 7 DAYS'**
+  String get membershipTrialBadge;
 }
 
 class _AppLocalizationsDelegate
@@ -17853,13 +17898,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -17895,9 +17940,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

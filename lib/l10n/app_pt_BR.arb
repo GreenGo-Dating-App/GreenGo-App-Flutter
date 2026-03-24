@@ -3524,5 +3524,13 @@
   "priorityConnectReject": "Rejeitar",
   "priorityConnectPending": "Aprovação pendente",
   "preferenceShowMyNetwork": "Minha Rede",
-  "preferenceShowMyNetworkDesc": "Mostrar apenas pessoas na sua rede (matches e Priority Connect aceitos)."
+  "preferenceShowMyNetworkDesc": "Mostrar apenas pessoas na sua rede (matches e Priority Connect aceitos).",
+  "membershipTrialTitle": "Comece seu teste grátis!",
+  "membershipTrialSubtitle": "7 dias grátis, depois apenas R$24,99/ano",
+  "membershipTrialFeature1": "Swipes e conexões ilimitadas",
+  "membershipTrialFeature2": "500 moedas bônus na ativação",
+  "membershipTrialFeature3": "Acesso completo a todas as funcionalidades",
+  "membershipTrialCta": "Iniciar teste de 7 dias",
+  "membershipTrialFooter": "Cancele a qualquer momento durante o teste. Sem cobrança até o dia 8.",
+  "membershipTrialBadge": "GRÁTIS POR 7 DIAS"
 }

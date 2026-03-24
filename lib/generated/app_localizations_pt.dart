@@ -6073,10 +6073,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -10093,6 +10090,33 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get priorityConnectPending => 'Aprovação pendente';
+
+  @override
+  String get membershipTrialTitle => 'Comece o seu teste grátis!';
+
+  @override
+  String get membershipTrialSubtitle =>
+      '7 dias grátis, depois apenas 4,99 \$/ano';
+
+  @override
+  String get membershipTrialFeature1 => 'Swipes e conexões ilimitadas';
+
+  @override
+  String get membershipTrialFeature2 => '500 moedas bónus na ativação';
+
+  @override
+  String get membershipTrialFeature3 =>
+      'Acesso total a todas as funcionalidades';
+
+  @override
+  String get membershipTrialCta => 'Iniciar teste de 7 dias';
+
+  @override
+  String get membershipTrialFooter =>
+      'Cancele a qualquer momento durante o teste. Sem cobrança até ao dia 8.';
+
+  @override
+  String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -16171,10 +16195,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -20160,4 +20181,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get priorityConnectPending => 'Aprovação pendente';
+
+  @override
+  String get membershipTrialTitle => 'Comece seu teste grátis!';
+
+  @override
+  String get membershipTrialSubtitle =>
+      '7 dias grátis, depois apenas R\$24,99/ano';
+
+  @override
+  String get membershipTrialFeature1 => 'Swipes e conexões ilimitadas';
+
+  @override
+  String get membershipTrialFeature2 => '500 moedas bônus na ativação';
+
+  @override
+  String get membershipTrialFeature3 =>
+      'Acesso completo a todas as funcionalidades';
+
+  @override
+  String get membershipTrialCta => 'Iniciar teste de 7 dias';
+
+  @override
+  String get membershipTrialFooter =>
+      'Cancele a qualquer momento durante o teste. Sem cobrança até o dia 8.';
+
+  @override
+  String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';
 }

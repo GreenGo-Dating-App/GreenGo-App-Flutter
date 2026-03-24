@@ -3524,5 +3524,13 @@
   "priorityConnectReject": "Ablehnen",
   "priorityConnectPending": "Genehmigung ausstehend",
   "preferenceShowMyNetwork": "Mein Netzwerk",
-  "preferenceShowMyNetworkDesc": "Nur Personen in deinem Netzwerk anzeigen (Matches und akzeptierte Priority Connect)."
+  "preferenceShowMyNetworkDesc": "Nur Personen in deinem Netzwerk anzeigen (Matches und akzeptierte Priority Connect).",
+  "membershipTrialTitle": "Starte deine Gratis-Testphase!",
+  "membershipTrialSubtitle": "7 Tage kostenlos, danach nur 4,99 $/Jahr",
+  "membershipTrialFeature1": "Unbegrenzte Swipes & Verbindungen",
+  "membershipTrialFeature2": "500 Bonus-Münzen bei Aktivierung",
+  "membershipTrialFeature3": "Voller Zugriff auf alle Funktionen",
+  "membershipTrialCta": "7-Tage-Testphase starten",
+  "membershipTrialFooter": "Jederzeit während der Testphase kündbar. Keine Gebühr bis Tag 8.",
+  "membershipTrialBadge": "7 TAGE GRATIS"
 }
