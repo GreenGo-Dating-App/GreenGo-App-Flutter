@@ -514,9 +514,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               );
             }
             // Show popup when worldwide fallback was used (< 500 in country, once per session)
+            // Only show for users with active base membership
             if (state is DiscoveryLoaded && !_shownSmallCountryPopup) {
               _shownSmallCountryPopup = true;
-              if (state.usedWorldwideFallback) {
+              final hasBaseMembership = _currentUserProfile?.isBaseMembershipActive ?? false;
+              if (state.usedWorldwideFallback && hasBaseMembership) {
                 WidgetsBinding.instance.addPostFrameCallback((_) {
                   if (mounted) _showSmallCountryPopup(context);
                 });
@@ -1884,7 +1886,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final profile = widget.card.candidate.profile;
     final photoUrls = profile.photoUrls;
     final hasMultiplePhotos = photoUrls.length > 1;
-    final showText = widget.gridColumns <= 3;
+    final showText = widget.gridColumns <= 4;
     final location = profile.effectiveLocation;
     final distanceText = widget.isRandomMode ? '' : widget.card.candidate.distanceText;
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
@@ -2098,12 +2100,12 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // Name, age, compatibility, and city (2-3 column mode)
+            // Name, age, compatibility, and city
             if (showText)
               Positioned(
-                left: 6,
-                right: 6,
-                bottom: 6,
+                left: widget.gridColumns >= 4 ? 4 : 6,
+                right: widget.gridColumns >= 4 ? 4 : 6,
+                bottom: widget.gridColumns >= 4 ? 4 : 6,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -2111,33 +2113,33 @@ class _GridProfileCardState extends State<_GridProfileCard>
                       '${widget.card.displayName}, ${widget.card.age}',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: widget.gridColumns == 3 ? 13 : 17,
+                        fontSize: widget.gridColumns >= 4 ? 11 : (widget.gridColumns == 3 ? 13 : 17),
                         fontWeight: FontWeight.bold,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    SizedBox(height: widget.gridColumns == 3 ? 2 : 3),
+                    SizedBox(height: widget.gridColumns >= 4 ? 1 : (widget.gridColumns == 3 ? 2 : 3)),
                     Row(
                       children: [
-                        Icon(Icons.connect_without_contact, color: AppColors.richGold.withOpacity(0.8), size: widget.gridColumns == 3 ? 10 : 13),
-                        SizedBox(width: widget.gridColumns == 3 ? 2 : 3),
+                        Icon(Icons.connect_without_contact, color: AppColors.richGold.withOpacity(0.8), size: widget.gridColumns >= 4 ? 9 : (widget.gridColumns == 3 ? 10 : 13)),
+                        SizedBox(width: widget.gridColumns >= 4 ? 1 : (widget.gridColumns == 3 ? 2 : 3)),
                         Text(
                           widget.card.matchPercentage,
                           style: TextStyle(
                             color: AppColors.richGold.withOpacity(0.9),
-                            fontSize: widget.gridColumns == 3 ? 11 : 14,
+                            fontSize: widget.gridColumns >= 4 ? 9 : (widget.gridColumns == 3 ? 11 : 14),
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                         if (cityText.isNotEmpty) ...[
-                          SizedBox(width: widget.gridColumns == 3 ? 4 : 6),
+                          SizedBox(width: widget.gridColumns >= 4 ? 2 : (widget.gridColumns == 3 ? 4 : 6)),
                           Expanded(
                             child: Text(
                               cityText,
                               style: TextStyle(
                                 color: Colors.white60,
-                                fontSize: widget.gridColumns == 3 ? 10 : 13,
+                                fontSize: widget.gridColumns >= 4 ? 8 : (widget.gridColumns == 3 ? 10 : 13),
                               ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,

@@ -4794,5 +4794,13 @@
   "filterToApprove": "To Approve",
   "priorityConnectAccept": "Accept",
   "priorityConnectReject": "Reject",
-  "priorityConnectPending": "Pending approval"
+  "priorityConnectPending": "Pending approval",
+  "membershipTrialTitle": "Start Your Free Trial!",
+  "membershipTrialSubtitle": "7 days free, then just $4.99/year",
+  "membershipTrialFeature1": "Unlimited Swipes & Connections",
+  "membershipTrialFeature2": "500 Bonus Coins on Activation",
+  "membershipTrialFeature3": "Full Access to All Features",
+  "membershipTrialCta": "Start 7-Day Free Trial",
+  "membershipTrialFooter": "Cancel anytime during trial. No charge until day 8.",
+  "membershipTrialBadge": "FREE FOR 7 DAYS"
 }

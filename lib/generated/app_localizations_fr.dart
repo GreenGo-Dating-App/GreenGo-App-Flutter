@@ -6119,10 +6119,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abonnement $tierName actif jusqu\'au $formattedDate$coinsText';
   }
 
@@ -10161,4 +10158,31 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get priorityConnectPending => 'En attente d\'approbation';
+
+  @override
+  String get membershipTrialTitle => 'Commencez votre essai gratuit !';
+
+  @override
+  String get membershipTrialSubtitle =>
+      '7 jours gratuits, puis seulement 4,99 \$/an';
+
+  @override
+  String get membershipTrialFeature1 => 'Swipes et connexions illimités';
+
+  @override
+  String get membershipTrialFeature2 => '500 pièces bonus à l\'activation';
+
+  @override
+  String get membershipTrialFeature3 =>
+      'Accès complet à toutes les fonctionnalités';
+
+  @override
+  String get membershipTrialCta => 'Démarrer l\'essai de 7 jours';
+
+  @override
+  String get membershipTrialFooter =>
+      'Annulez à tout moment pendant l\'essai. Aucun frais avant le jour 8.';
+
+  @override
+  String get membershipTrialBadge => 'GRATUIT PENDANT 7 JOURS';
 }
