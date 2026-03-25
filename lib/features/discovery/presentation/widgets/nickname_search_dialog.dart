@@ -20,6 +20,8 @@ import '../screens/profile_detail_screen.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/record_swipe.dart';
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Nickname Search Dialog
 ///
@@ -291,59 +293,161 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
     if (_foundProfile == null) return;
 
     final l10n = AppLocalizations.of(context)!;
+    final usageLimitService = UsageLimitService();
+    final nickname = _foundProfile!.nickname ?? _foundProfile!.displayName;
 
-    // For Priority Connect (superLike), check base membership first
-    if (actionType == SwipeActionType.superLike) {
-      try {
-        final profileDoc = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(widget.currentUserId)
-            .get();
-        final profileData = profileDoc.data();
+    // Determine membership tier for limit checks
+    MembershipTier tier = MembershipTier.free;
+    MembershipRules rules = MembershipRules.freeDefaults;
+    bool isTester = false;
+
+    try {
+      final profileDoc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.currentUserId)
+          .get();
+      final profileData = profileDoc.data();
+      final memberTierStr = profileData?['membershipTier'] as String? ?? '';
+      isTester = memberTierStr == 'test' || memberTierStr == 'TEST';
+      tier = MembershipTier.values.firstWhere(
+        (t) => t.name == memberTierStr,
+        orElse: () => MembershipTier.free,
+      );
+      rules = MembershipRules.getDefaultsForTier(tier);
+
+      // ── Priority Connect: membership + daily limit + coins ──
+      if (actionType == SwipeActionType.superLike) {
         final hasBaseMembership = profileData?['hasBaseMembership'] as bool? ?? false;
         final endTs = profileData?['baseMembershipEndDate'] as Timestamp?;
         final isActive = hasBaseMembership &&
             endTs != null &&
             endTs.toDate().isAfter(DateTime.now());
-        final memberTier = profileData?['membershipTier'] as String? ?? '';
-        final isTester = memberTier == 'test' || memberTier == 'TEST';
 
         if (!isActive && !isTester) {
           if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(l10n.shopBaseMembershipDescription)),
+            SnackBar(
+              content: Text(l10n.shopBaseMembershipDescription),
+              backgroundColor: AppColors.richGold,
+            ),
           );
           return;
         }
 
-        // Charge coins for Priority Connect (non-tester)
         if (!isTester) {
-          final coinRepository = GetIt.instance<CoinRepository>();
-          final balanceResult = await coinRepository.getBalance(widget.currentUserId);
-          final hasEnough = balanceResult.fold(
-            (failure) => false,
-            (balance) => balance.availableCoins >= CoinFeaturePrices.superLike,
+          // Check daily priority connect limit
+          final dailyLimit = await usageLimitService.checkLimit(
+            userId: widget.currentUserId,
+            limitType: UsageLimitType.dailySuperLikes,
+            rules: rules,
+            currentTier: tier,
           );
 
-          if (!hasEnough) {
+          if (!dailyLimit.isAllowed) {
             if (!mounted) return;
-            _showInsufficientCoinsDialog();
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(l10n.nicknameSearchLimitReached('Priority Connect')),
+                backgroundColor: AppColors.richGold,
+              ),
+            );
             return;
           }
 
-          await coinRepository.purchaseFeature(
+          // Check hourly limit
+          final hourlyLimit = await usageLimitService.checkLimit(
             userId: widget.currentUserId,
-            featureName: 'superlike',
-            cost: CoinFeaturePrices.superLike,
+            limitType: UsageLimitType.superLikes,
+            rules: rules,
+            currentTier: tier,
           );
+
+          bool usedFreeAllowance = dailyLimit.isAllowed && hourlyLimit.isAllowed;
+
+          // Free users: strictly limited to daily allowance
+          if (!usedFreeAllowance && tier == MembershipTier.free) {
+            if (!mounted) return;
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(l10n.nicknameSearchLimitReached('Priority Connect')),
+                backgroundColor: AppColors.richGold,
+              ),
+            );
+            return;
+          }
+
+          // If no free allowance (paid tiers), charge coins
+          if (!usedFreeAllowance) {
+            final coinRepository = GetIt.instance<CoinRepository>();
+            final balanceResult = await coinRepository.getBalance(widget.currentUserId);
+            final hasEnough = balanceResult.fold(
+              (failure) => false,
+              (balance) => balance.availableCoins >= CoinFeaturePrices.superLike,
+            );
+
+            if (!hasEnough) {
+              if (!mounted) return;
+              _showInsufficientCoinsDialog();
+              return;
+            }
+
+            await coinRepository.purchaseFeature(
+              userId: widget.currentUserId,
+              featureName: 'superlike',
+              cost: CoinFeaturePrices.superLike,
+            );
+          }
         }
-      } catch (e) {
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
-        return;
       }
+
+      // ── Hourly limit check for likes and passes ──
+      if (!isTester) {
+        UsageLimitType? hourlyType;
+        switch (actionType) {
+          case SwipeActionType.like:
+            hourlyType = UsageLimitType.likes;
+            break;
+          case SwipeActionType.pass:
+            hourlyType = UsageLimitType.nopes;
+            break;
+          case SwipeActionType.superLike:
+          case SwipeActionType.skip:
+            hourlyType = null;
+            break;
+        }
+
+        if (hourlyType != null) {
+          final hourlyLimit = await usageLimitService.checkLimit(
+            userId: widget.currentUserId,
+            limitType: hourlyType,
+            rules: rules,
+            currentTier: tier,
+          );
+
+          if (!hourlyLimit.isAllowed) {
+            if (!mounted) return;
+            final actionName = actionType == SwipeActionType.like
+                ? "Let's Connect"
+                : 'Nope';
+            final color = actionType == SwipeActionType.like
+                ? AppColors.successGreen
+                : AppColors.errorRed;
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(l10n.nicknameSearchLimitReached(actionName)),
+                backgroundColor: color,
+              ),
+            );
+            return;
+          }
+        }
+      }
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+      return;
     }
 
     // Record the swipe action
@@ -365,32 +469,74 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         },
         (swipeAction) {
           HapticFeedback.mediumImpact();
+
+          // Record usage for limit tracking
+          try {
+            switch (actionType) {
+              case SwipeActionType.like:
+                usageLimitService.recordUsage(
+                  userId: widget.currentUserId,
+                  limitType: UsageLimitType.likes,
+                );
+                break;
+              case SwipeActionType.pass:
+                usageLimitService.recordUsage(
+                  userId: widget.currentUserId,
+                  limitType: UsageLimitType.nopes,
+                );
+                break;
+              case SwipeActionType.superLike:
+                usageLimitService.recordUsage(
+                  userId: widget.currentUserId,
+                  limitType: UsageLimitType.superLikes,
+                );
+                usageLimitService.recordUsage(
+                  userId: widget.currentUserId,
+                  limitType: UsageLimitType.dailySuperLikes,
+                );
+                break;
+              case SwipeActionType.skip:
+                break;
+            }
+          } catch (_) {}
+
           Navigator.of(context).pop();
 
+          // Build colored message
           String message;
+          Color snackColor;
           switch (actionType) {
             case SwipeActionType.pass:
-              message = l10n.swipeIndicatorNope;
+              message = l10n.nicknameSearchActionNope(nickname);
+              snackColor = AppColors.errorRed;
               break;
             case SwipeActionType.skip:
-              message = l10n.swipeIndicatorSkip;
+              message = l10n.nicknameSearchActionSkip(nickname);
+              snackColor = AppColors.infoBlue;
               break;
             case SwipeActionType.superLike:
-              message = l10n.swipeIndicatorSuperLike;
+              message = l10n.nicknameSearchActionPriorityConnect(nickname);
+              snackColor = AppColors.richGold;
               break;
             case SwipeActionType.like:
-              message = l10n.swipeIndicatorLike;
+              message = l10n.nicknameSearchActionConnect(nickname);
+              snackColor = AppColors.successGreen;
               break;
           }
 
           if (swipeAction.createdMatch) {
-            message = '${l10n.swipeIndicatorLike} — It\'s a match!';
+            message = l10n.nicknameSearchActionMatch(nickname);
+            snackColor = AppColors.successGreen;
           }
 
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text(message),
-              duration: const Duration(seconds: 2),
+              content: Text(
+                message,
+                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+              ),
+              backgroundColor: snackColor,
+              duration: const Duration(seconds: 3),
             ),
           );
         },

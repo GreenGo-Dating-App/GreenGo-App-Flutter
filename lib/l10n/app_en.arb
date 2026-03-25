@@ -3139,6 +3139,54 @@
   "nicknameSearchOwnProfile": "That's your own profile!",
   "nicknameSearchTitle": "Search by Nickname",
   "nicknameSearchView": "View",
+  "nicknameSearchActionNope": "You just selected \"Nope\" for @{nickname}",
+  "@nicknameSearchActionNope": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "nicknameSearchActionSkip": "You just selected \"Skip\" for @{nickname}",
+  "@nicknameSearchActionSkip": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "nicknameSearchActionPriorityConnect": "You just selected \"Priority Connect\" for @{nickname}",
+  "@nicknameSearchActionPriorityConnect": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "nicknameSearchActionConnect": "You just selected \"Let's Connect\" for @{nickname}",
+  "@nicknameSearchActionConnect": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "nicknameSearchActionMatch": "It's a match with @{nickname}!",
+  "@nicknameSearchActionMatch": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "nicknameSearchLimitReached": "You've reached your {action} limit. Try again later.",
+  "@nicknameSearchLimitReached": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
   "nicknameStartWithLetter": "Start with a letter",
   "nicknameUpdatedMessage": "Your new nickname is now active",
   "nicknameUpdatedSuccess": "Nickname updated successfully",
