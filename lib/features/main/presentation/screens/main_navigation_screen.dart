@@ -1337,7 +1337,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         automaticallyImplyLeading: false,
         title: Row(
           children: [
-            const SizedBox(width: 12),
+            const SizedBox(width: 4),
+            IconButton(
+              icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const AppGuideScreen()),
+                );
+              },
+              tooltip: AppLocalizations.of(context)!.guideTitle,
+              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              padding: EdgeInsets.zero,
+            ),
+            const SizedBox(width: 4),
             _buildAppBarCoinBalance(),
           ],
         ),
@@ -1358,18 +1370,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               );
             },
             tooltip: 'Explore Globe',
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-            padding: EdgeInsets.zero,
-          ),
-          // RIGHT side: help, search, filter, grid toggle
-          IconButton(
-            icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const AppGuideScreen()),
-              );
-            },
-            tooltip: AppLocalizations.of(context)!.guideTitle,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
           ),
