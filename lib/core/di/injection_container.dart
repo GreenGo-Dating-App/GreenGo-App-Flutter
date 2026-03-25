@@ -173,6 +173,14 @@ import '../../features/explore_map/data/repositories/explore_map_repository_impl
 import '../../features/explore_map/domain/repositories/explore_map_repository.dart';
 import '../../features/explore_map/presentation/bloc/explore_map_bloc.dart';
 
+// Globe Explore
+import '../../features/globe_explore/data/datasources/globe_remote_datasource.dart';
+import '../../features/globe_explore/data/repositories/globe_repository_impl.dart';
+import '../../features/globe_explore/domain/repositories/globe_repository.dart';
+import '../../features/globe_explore/domain/usecases/get_globe_data.dart';
+import '../../features/globe_explore/domain/usecases/watch_globe_updates.dart';
+import '../../features/globe_explore/presentation/bloc/globe_bloc.dart';
+
 // Spots
 import '../../features/spots/data/datasources/spots_remote_datasource.dart';
 import '../../features/spots/data/repositories/spots_repository_impl.dart';
@@ -748,6 +756,29 @@ Future<void> init() async {
   // BLoC
   sl.registerFactory(
     () => ExploreMapBloc(remoteDataSource: sl()),
+  );
+
+  //! Features - Globe Explore
+  // Data sources
+  sl.registerLazySingleton<GlobeRemoteDataSource>(
+    () => GlobeRemoteDataSourceImpl(firestore: sl()),
+  );
+
+  // Repository
+  sl.registerLazySingleton<GlobeRepository>(
+    () => GlobeRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // Use cases
+  sl.registerLazySingleton(() => GetGlobeData(sl()));
+  sl.registerLazySingleton(() => WatchGlobeUpdates(sl()));
+
+  // BLoC
+  sl.registerFactory(
+    () => GlobeBloc(
+      getGlobeData: sl(),
+      repository: sl<GlobeRepository>(),
+    ),
   );
 
   //! Features - Spots

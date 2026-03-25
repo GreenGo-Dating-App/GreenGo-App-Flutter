@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A next-generation dating application with Flutter and GCP
 publish_to: 'none'
-version: 1.4.2+35
+version: 1.5.0+36
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -71,10 +71,12 @@ dependencies:
   shimmer: ^3.0.0
   flutter_staggered_animations: ^1.1.1
 
-  # Location
+  # Location & Map
   geolocator: ^10.1.0
   geocoding: ^2.1.1
   google_maps_flutter: ^2.5.0
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
 
   # Networking
   dio: ^5.4.0

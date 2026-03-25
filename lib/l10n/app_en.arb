@@ -4802,5 +4802,71 @@
   "membershipTrialFeature3": "Full Access to All Features",
   "membershipTrialCta": "Start 7-Day Free Trial",
   "membershipTrialFooter": "Cancel anytime during trial. No charge until day 8.",
-  "membershipTrialBadge": "FREE FOR 7 DAYS"
+  "membershipTrialBadge": "FREE FOR 7 DAYS",
+
+  "globeMyNetwork": "My Network",
+  "globeYou": "You",
+  "globeConnections": "Connections",
+  "globeTraveler": "Traveler",
+  "globeConnectionCount": "{count} {count, plural, =1{connection} other{connections}}",
+  "@globeConnectionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "globeConnectionsHere": "{count} {count, plural, =1{connection} other{connections}} here",
+  "@globeConnectionsHere": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "globeThisIsYou": "This is you!",
+  "globeTravelingTo": "Traveling to {country}",
+  "@globeTravelingTo": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "globeNoConnectionsInCountry": "No connections in {country} yet",
+  "@globeNoConnectionsInCountry": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "globeNoConnectionsHint": "Keep connecting to find people here!",
+  "globeProfile": "Profile",
+  "globeChat": "Chat",
+  "globeViewProfileTooltip": "View Profile",
+  "globeOpenChatTooltip": "Open Chat",
+  "globeNoConnectionsInCountryTitle": "No connections in {country}",
+  "@globeNoConnectionsInCountryTitle": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+
+  "discoverabilityExact": "Exact",
+  "discoverabilityExactDesc": "Pin at your exact location (<1km)",
+  "discoverabilityApproximate": "Approximate",
+  "discoverabilityApproximateDesc": "Pin in your region (~50km grid, default)",
+  "discoverabilityCountry": "Country",
+  "discoverabilityCountryDesc": "Pin somewhere in your country",
+  "discoverabilityHidden": "Hidden",
+  "discoverabilityHiddenDesc": "Not discoverable on the Map",
+  "discoverabilityTitle": "Globe Discoverability",
+  "discoverabilityInfo": "Your connections always see you on the Map, regardless of this setting.",
+  "discoverabilityChangedExact": "Location set to exact",
+  "discoverabilityChangedApproximate": "Location set to approximate",
+  "discoverabilityChangedCountry": "Location set to country level",
+  "discoverabilityChangedHidden": "You are now hidden from the map"
 }

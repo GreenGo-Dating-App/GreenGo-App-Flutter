@@ -32,6 +32,8 @@ import '../../../coins/domain/entities/coin_balance.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
+import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
+import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -1342,6 +1344,23 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          // 3D Globe explore
+          IconButton(
+            icon: const Icon(Icons.public, color: AppColors.textSecondary, size: 22),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => BlocProvider(
+                    create: (_) => di.sl<GlobeBloc>(),
+                    child: GlobeScreen(userId: widget.userId),
+                  ),
+                ),
+              );
+            },
+            tooltip: 'Explore Globe',
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
+          ),
           // RIGHT side: help, search, filter, grid toggle
           IconButton(
             icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
