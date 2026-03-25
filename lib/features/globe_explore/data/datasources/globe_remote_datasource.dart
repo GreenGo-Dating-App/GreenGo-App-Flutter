@@ -111,6 +111,15 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
         // Skip ghost mode users
         if (profileData['isGhostMode'] as bool? ?? false) continue;
 
+        // Skip users with unknown/missing location
+        final loc = profileData['location'] as Map<String, dynamic>?;
+        final hasLocation = loc != null &&
+            loc['latitude'] != null &&
+            loc['longitude'] != null &&
+            loc['country'] != null &&
+            (loc['country'] as String?) != 'Unknown';
+        if (!hasLocation) continue;
+
         matchedUsers.add(GlobeUserModel.fromFirestore(
           data: profileData,
           odcId: otherUserId,
@@ -224,6 +233,14 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
           if (!profileDoc.exists) continue;
           final profileData = profileDoc.data()!;
           if (profileData['accountStatus'] != 'active') continue;
+
+          // Skip users with unknown/missing location
+          final loc = profileData['location'] as Map<String, dynamic>?;
+          if (loc == null ||
+              loc['latitude'] == null ||
+              loc['longitude'] == null ||
+              (loc['country'] as String?) == null ||
+              (loc['country'] as String?) == 'Unknown') continue;
 
           matchedUsers.add(GlobeUserModel.fromFirestore(
             data: profileData,
