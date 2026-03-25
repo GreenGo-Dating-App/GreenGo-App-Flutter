@@ -11388,6 +11388,42 @@ abstract class AppLocalizations {
   /// **'View'**
   String get nicknameSearchView;
 
+  /// No description provided for @nicknameSearchActionNope.
+  ///
+  /// In en, this message translates to:
+  /// **'You just selected \"Nope\" for @{nickname}'**
+  String nicknameSearchActionNope(String nickname);
+
+  /// No description provided for @nicknameSearchActionSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'You just selected \"Skip\" for @{nickname}'**
+  String nicknameSearchActionSkip(String nickname);
+
+  /// No description provided for @nicknameSearchActionPriorityConnect.
+  ///
+  /// In en, this message translates to:
+  /// **'You just selected \"Priority Connect\" for @{nickname}'**
+  String nicknameSearchActionPriorityConnect(String nickname);
+
+  /// No description provided for @nicknameSearchActionConnect.
+  ///
+  /// In en, this message translates to:
+  /// **'You just selected \"Let\'s Connect\" for @{nickname}'**
+  String nicknameSearchActionConnect(String nickname);
+
+  /// No description provided for @nicknameSearchActionMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s a match with @{nickname}!'**
+  String nicknameSearchActionMatch(String nickname);
+
+  /// No description provided for @nicknameSearchLimitReached.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached your {action} limit. Try again later.'**
+  String nicknameSearchLimitReached(String action);
+
   /// No description provided for @nicknameStartWithLetter.
   ///
   /// In en, this message translates to:

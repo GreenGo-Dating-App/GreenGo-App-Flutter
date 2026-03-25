@@ -6407,6 +6407,36 @@ class AppLocalizationsDe extends AppLocalizations {
   String get nicknameSearchView => 'Ansehen';
 
   @override
+  String nicknameSearchActionNope(String nickname) {
+    return 'You just selected \"Nope\" for @$nickname';
+  }
+
+  @override
+  String nicknameSearchActionSkip(String nickname) {
+    return 'You just selected \"Skip\" for @$nickname';
+  }
+
+  @override
+  String nicknameSearchActionPriorityConnect(String nickname) {
+    return 'You just selected \"Priority Connect\" for @$nickname';
+  }
+
+  @override
+  String nicknameSearchActionConnect(String nickname) {
+    return 'You just selected \"Let\'s Connect\" for @$nickname';
+  }
+
+  @override
+  String nicknameSearchActionMatch(String nickname) {
+    return 'It\'s a match with @$nickname!';
+  }
+
+  @override
+  String nicknameSearchLimitReached(String action) {
+    return 'You\'ve reached your $action limit. Try again later.';
+  }
+
+  @override
   String get nicknameStartWithLetter => 'Mit einem Buchstaben beginnen';
 
   @override
