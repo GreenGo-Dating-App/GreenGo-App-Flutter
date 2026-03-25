@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -17,6 +18,8 @@ import '../../../../core/di/injection_container.dart' as di;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../screens/profile_detail_screen.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../domain/entities/swipe_action.dart';
+import '../../domain/usecases/record_swipe.dart';
 
 /// Nickname Search Dialog
 ///
@@ -284,6 +287,122 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
     }
   }
 
+  Future<void> _handleSwipeAction(SwipeActionType actionType) async {
+    if (_foundProfile == null) return;
+
+    final l10n = AppLocalizations.of(context)!;
+
+    // For Priority Connect (superLike), check base membership first
+    if (actionType == SwipeActionType.superLike) {
+      try {
+        final profileDoc = await FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.currentUserId)
+            .get();
+        final profileData = profileDoc.data();
+        final hasBaseMembership = profileData?['hasBaseMembership'] as bool? ?? false;
+        final endTs = profileData?['baseMembershipEndDate'] as Timestamp?;
+        final isActive = hasBaseMembership &&
+            endTs != null &&
+            endTs.toDate().isAfter(DateTime.now());
+        final memberTier = profileData?['membershipTier'] as String? ?? '';
+        final isTester = memberTier == 'test' || memberTier == 'TEST';
+
+        if (!isActive && !isTester) {
+          if (!mounted) return;
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(l10n.shopBaseMembershipDescription)),
+          );
+          return;
+        }
+
+        // Charge coins for Priority Connect (non-tester)
+        if (!isTester) {
+          final coinRepository = GetIt.instance<CoinRepository>();
+          final balanceResult = await coinRepository.getBalance(widget.currentUserId);
+          final hasEnough = balanceResult.fold(
+            (failure) => false,
+            (balance) => balance.availableCoins >= CoinFeaturePrices.superLike,
+          );
+
+          if (!hasEnough) {
+            if (!mounted) return;
+            _showInsufficientCoinsDialog();
+            return;
+          }
+
+          await coinRepository.purchaseFeature(
+            userId: widget.currentUserId,
+            featureName: 'superlike',
+            cost: CoinFeaturePrices.superLike,
+          );
+        }
+      } catch (e) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: $e')),
+        );
+        return;
+      }
+    }
+
+    // Record the swipe action
+    try {
+      final recordSwipe = GetIt.instance<RecordSwipe>();
+      final result = await recordSwipe(RecordSwipeParams(
+        userId: widget.currentUserId,
+        targetUserId: _foundProfile!.userId,
+        actionType: actionType,
+      ));
+
+      if (!mounted) return;
+
+      result.fold(
+        (failure) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: ${failure.message}')),
+          );
+        },
+        (swipeAction) {
+          HapticFeedback.mediumImpact();
+          Navigator.of(context).pop();
+
+          String message;
+          switch (actionType) {
+            case SwipeActionType.pass:
+              message = l10n.swipeIndicatorNope;
+              break;
+            case SwipeActionType.skip:
+              message = l10n.swipeIndicatorSkip;
+              break;
+            case SwipeActionType.superLike:
+              message = l10n.swipeIndicatorSuperLike;
+              break;
+            case SwipeActionType.like:
+              message = l10n.swipeIndicatorLike;
+              break;
+          }
+
+          if (swipeAction.createdMatch) {
+            message = '${l10n.swipeIndicatorLike} — It\'s a match!';
+          }
+
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(message),
+              duration: const Duration(seconds: 2),
+            ),
+          );
+        },
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
+  }
+
   void _showInsufficientCoinsDialog() {
     showDialog(
       context: context,
@@ -501,143 +620,234 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
         color: AppColors.backgroundDark,
         borderRadius: BorderRadius.circular(AppDimensions.radiusM),
       ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: _viewProfile,
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(
-              children: [
-                // Profile photo
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(25),
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                    color: AppColors.backgroundCard,
-                    child: hasPhoto
-                        ? Image.network(
-                            profile.photoUrls.first,
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => const Icon(
-                              Icons.person,
-                              color: AppColors.textTertiary,
-                              size: 24,
-                            ),
-                          )
-                        : const Icon(
-                            Icons.person,
-                            color: AppColors.textTertiary,
-                            size: 24,
-                          ),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                // Profile info
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Flexible(
-                            child: Text(
-                              profile.displayName,
-                              style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Profile info row (tappable to view profile)
+            Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: _viewProfile,
+                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                child: Row(
+                  children: [
+                    // Profile photo
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(25),
+                      child: Container(
+                        width: 50,
+                        height: 50,
+                        color: AppColors.backgroundCard,
+                        child: hasPhoto
+                            ? Image.network(
+                                profile.photoUrls.first,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) => const Icon(
+                                  Icons.person,
+                                  color: AppColors.textTertiary,
+                                  size: 24,
+                                ),
+                              )
+                            : const Icon(
+                                Icons.person,
+                                color: AppColors.textTertiary,
+                                size: 24,
                               ),
-                              overflow: TextOverflow.ellipsis,
-                            ),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    // Profile info
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Flexible(
+                                child: Text(
+                                  profile.displayName,
+                                  style: const TextStyle(
+                                    color: AppColors.textPrimary,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                '${profile.age}',
+                                style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
                           ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '${profile.age}',
-                            style: const TextStyle(
-                              color: AppColors.textSecondary,
-                              fontSize: 14,
+                          const SizedBox(height: 4),
+                          if (profile.nickname != null)
+                            Text(
+                              '@${profile.nickname}',
+                              style: const TextStyle(
+                                color: AppColors.richGold,
+                                fontSize: 13,
+                              ),
                             ),
-                          ),
+                          if (profile.effectiveLocation.city.isNotEmpty)
+                            Text(
+                              profile.effectiveLocation.city,
+                              style: const TextStyle(
+                                color: AppColors.textTertiary,
+                                fontSize: 12,
+                              ),
+                            ),
                         ],
                       ),
-                      const SizedBox(height: 4),
-                      if (profile.nickname != null)
-                        Text(
-                          '@${profile.nickname}',
-                          style: const TextStyle(
-                            color: AppColors.richGold,
-                            fontSize: 13,
-                          ),
-                        ),
-                      if (profile.effectiveLocation.city.isNotEmpty)
-                        Text(
-                          profile.effectiveLocation.city,
-                          style: const TextStyle(
-                            color: AppColors.textTertiary,
-                            fontSize: 12,
-                          ),
-                        ),
-                    ],
-                  ),
-                ),
-                // Chat button
-                GestureDetector(
-                  onTap: _openChat,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 8,
                     ),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.richGold),
-                      borderRadius: BorderRadius.circular(20),
+                    // Chat button
+                    GestureDetector(
+                      onTap: _openChat,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 8,
+                        ),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: AppColors.richGold),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(
+                              Icons.chat_bubble_outline,
+                              color: AppColors.richGold,
+                              size: 14,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              AppLocalizations.of(context)?.nicknameSearchChat ?? 'Chat',
+                              style: const TextStyle(
+                                color: AppColors.richGold,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(
-                          Icons.chat_bubble_outline,
+                    const SizedBox(width: 8),
+                    // View button
+                    GestureDetector(
+                      onTap: _viewProfile,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 8,
+                        ),
+                        decoration: BoxDecoration(
                           color: AppColors.richGold,
-                          size: 14,
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                        const SizedBox(width: 4),
-                        Text(
-                          AppLocalizations.of(context)?.nicknameSearchChat ?? 'Chat',
+                        child: Text(
+                          AppLocalizations.of(context)!.nicknameSearchView,
                           style: const TextStyle(
-                            color: AppColors.richGold,
+                            color: Colors.white,
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-                const SizedBox(width: 8),
-                // View button
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 8,
-                  ),
-                  decoration: BoxDecoration(
-                    color: AppColors.richGold,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    AppLocalizations.of(context)!.nicknameSearchView,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+              ),
+            ),
+
+            const SizedBox(height: 12),
+
+            // 4 Action buttons row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                // Nope (Pass)
+                _buildSwipeActionButton(
+                  icon: Icons.close,
+                  color: AppColors.errorRed,
+                  size: 46,
+                  iconSize: 24,
+                  label: AppLocalizations.of(context)!.swipeIndicatorNope,
+                  onPressed: () => _handleSwipeAction(SwipeActionType.pass),
+                ),
+                // Skip (Explore Next)
+                _buildSwipeActionButton(
+                  icon: Icons.arrow_downward,
+                  color: AppColors.infoBlue,
+                  size: 40,
+                  iconSize: 22,
+                  label: AppLocalizations.of(context)!.skip,
+                  onPressed: () => _handleSwipeAction(SwipeActionType.skip),
+                ),
+                // Priority Connect (SuperLike)
+                _buildSwipeActionButton(
+                  icon: Icons.star,
+                  color: AppColors.richGold,
+                  size: 40,
+                  iconSize: 22,
+                  label: AppLocalizations.of(context)!.swipeIndicatorSuperLike,
+                  onPressed: () => _handleSwipeAction(SwipeActionType.superLike),
+                ),
+                // Let's Connect (Like)
+                _buildSwipeActionButton(
+                  icon: Icons.connect_without_contact,
+                  color: AppColors.successGreen,
+                  size: 46,
+                  iconSize: 24,
+                  label: AppLocalizations.of(context)!.swipeIndicatorLike,
+                  onPressed: () => _handleSwipeAction(SwipeActionType.like),
                 ),
               ],
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSwipeActionButton({
+    required IconData icon,
+    required Color color,
+    required double size,
+    required double iconSize,
+    required String label,
+    required VoidCallback onPressed,
+  }) {
+    return Tooltip(
+      message: label,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onPressed,
+          customBorder: const CircleBorder(),
+          child: Container(
+            width: size,
+            height: size,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.backgroundCard,
+              border: Border.all(color: color, width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: color.withOpacity(0.3),
+                  blurRadius: 8,
+                  spreadRadius: 1,
+                ),
+              ],
+            ),
+            child: Icon(icon, color: color, size: iconSize),
           ),
         ),
       ),
