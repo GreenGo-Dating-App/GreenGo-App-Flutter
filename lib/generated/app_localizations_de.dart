@@ -10147,4 +10147,115 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get membershipTrialBadge => '7 TAGE GRATIS';
+
+  @override
+  String get globeMyNetwork => 'My Network';
+
+  @override
+  String get globeYou => 'You';
+
+  @override
+  String get globeConnections => 'Connections';
+
+  @override
+  String get globeTraveler => 'Traveler';
+
+  @override
+  String globeConnectionCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'connections',
+      one: 'connection',
+    );
+    return '$count $_temp0';
+  }
+
+  @override
+  String globeConnectionsHere(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'connections',
+      one: 'connection',
+    );
+    return '$count $_temp0 here';
+  }
+
+  @override
+  String get globeThisIsYou => 'This is you!';
+
+  @override
+  String globeTravelingTo(String country) {
+    return 'Traveling to $country';
+  }
+
+  @override
+  String globeNoConnectionsInCountry(String country) {
+    return 'No connections in $country yet';
+  }
+
+  @override
+  String get globeNoConnectionsHint => 'Keep connecting to find people here!';
+
+  @override
+  String get globeProfile => 'Profile';
+
+  @override
+  String get globeChat => 'Chat';
+
+  @override
+  String get globeViewProfileTooltip => 'View Profile';
+
+  @override
+  String get globeOpenChatTooltip => 'Open Chat';
+
+  @override
+  String globeNoConnectionsInCountryTitle(String country) {
+    return 'No connections in $country';
+  }
+
+  @override
+  String get discoverabilityExact => 'Exact';
+
+  @override
+  String get discoverabilityExactDesc => 'Pin at your exact location (<1km)';
+
+  @override
+  String get discoverabilityApproximate => 'Approximate';
+
+  @override
+  String get discoverabilityApproximateDesc =>
+      'Pin in your region (~50km grid, default)';
+
+  @override
+  String get discoverabilityCountry => 'Country';
+
+  @override
+  String get discoverabilityCountryDesc => 'Pin somewhere in your country';
+
+  @override
+  String get discoverabilityHidden => 'Hidden';
+
+  @override
+  String get discoverabilityHiddenDesc => 'Not discoverable on the Map';
+
+  @override
+  String get discoverabilityTitle => 'Globe Discoverability';
+
+  @override
+  String get discoverabilityInfo =>
+      'Your connections always see you on the Map, regardless of this setting.';
+
+  @override
+  String get discoverabilityChangedExact => 'Location set to exact';
+
+  @override
+  String get discoverabilityChangedApproximate => 'Location set to approximate';
+
+  @override
+  String get discoverabilityChangedCountry => 'Location set to country level';
+
+  @override
+  String get discoverabilityChangedHidden => 'You are now hidden from the map';
 }

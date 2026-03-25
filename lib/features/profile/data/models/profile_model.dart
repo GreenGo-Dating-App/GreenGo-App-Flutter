@@ -64,6 +64,7 @@ class ProfileModel extends Profile {
     super.videoProfileUrl,
     super.hasVideoProfile,
     super.showOnMap,
+    super.globeDiscoverability,
     super.completedSafetyModules,
   });
 
@@ -170,6 +171,7 @@ class ProfileModel extends Profile {
       videoProfileUrl: json['videoProfileUrl'] as String?,
       hasVideoProfile: json['hasVideoProfile'] as bool? ?? false,
       showOnMap: json['showOnMap'] as bool? ?? true,
+      globeDiscoverability: _parseGlobeDiscoverability(json['globeDiscoverability'] as String?),
       completedSafetyModules: json['completedSafetyModules'] != null
           ? List<String>.from(json['completedSafetyModules'] as List)
           : <String>[],
@@ -188,6 +190,21 @@ class ProfileModel extends Profile {
         return VerificationStatus.needsResubmission;
       default:
         return VerificationStatus.notSubmitted;
+    }
+  }
+
+  static GlobeDiscoverability _parseGlobeDiscoverability(String? value) {
+    switch (value) {
+      case 'exact':
+        return GlobeDiscoverability.exact;
+      case 'approximate':
+        return GlobeDiscoverability.approximate;
+      case 'hidden':
+        return GlobeDiscoverability.hidden;
+      case 'country':
+        return GlobeDiscoverability.country;
+      default:
+        return GlobeDiscoverability.approximate;
     }
   }
 
@@ -304,6 +321,7 @@ class ProfileModel extends Profile {
       'videoProfileUrl': videoProfileUrl,
       'hasVideoProfile': hasVideoProfile,
       'showOnMap': showOnMap,
+      'globeDiscoverability': globeDiscoverability.name,
       'completedSafetyModules': completedSafetyModules,
     };
   }
@@ -368,6 +386,7 @@ class ProfileModel extends Profile {
       videoProfileUrl: profile.videoProfileUrl,
       hasVideoProfile: profile.hasVideoProfile,
       showOnMap: profile.showOnMap,
+      globeDiscoverability: profile.globeDiscoverability,
       completedSafetyModules: profile.completedSafetyModules,
     );
   }

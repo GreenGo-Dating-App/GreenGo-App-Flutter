@@ -3,6 +3,14 @@ import 'location.dart';
 import 'social_links.dart';
 import '../../../membership/domain/entities/membership.dart';
 
+/// Controls how the user appears on the Globe map for discovery.
+enum GlobeDiscoverability {
+  exact,
+  approximate,
+  country,
+  hidden,
+}
+
 /// Verification status for identity verification
 enum VerificationStatus {
   notSubmitted,  // User hasn't submitted verification yet
@@ -94,6 +102,9 @@ class Profile extends Equatable {
   // Map visibility
   final bool showOnMap;
 
+  // Globe discoverability -- controls how (or if) user appears on 3D globe
+  final GlobeDiscoverability globeDiscoverability;
+
   // Safety academy progress
   final List<String> completedSafetyModules;
 
@@ -156,6 +167,7 @@ class Profile extends Equatable {
     this.videoProfileUrl,
     this.hasVideoProfile = false,
     this.showOnMap = true,
+    this.globeDiscoverability = GlobeDiscoverability.approximate,
     this.completedSafetyModules = const [],
   });
 
@@ -275,6 +287,7 @@ class Profile extends Equatable {
         videoProfileUrl,
         hasVideoProfile,
         showOnMap,
+        globeDiscoverability,
         completedSafetyModules,
       ];
 
@@ -338,6 +351,7 @@ class Profile extends Equatable {
     String? videoProfileUrl,
     bool? hasVideoProfile,
     bool? showOnMap,
+    GlobeDiscoverability? globeDiscoverability,
     List<String>? completedSafetyModules,
   }) {
     return Profile(
@@ -399,6 +413,7 @@ class Profile extends Equatable {
       videoProfileUrl: videoProfileUrl ?? this.videoProfileUrl,
       hasVideoProfile: hasVideoProfile ?? this.hasVideoProfile,
       showOnMap: showOnMap ?? this.showOnMap,
+      globeDiscoverability: globeDiscoverability ?? this.globeDiscoverability,
       completedSafetyModules: completedSafetyModules ?? this.completedSafetyModules,
     );
   }

@@ -17885,6 +17885,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'FREE FOR 7 DAYS'**
   String get membershipTrialBadge;
+
+  /// No description provided for @globeMyNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'My Network'**
+  String get globeMyNetwork;
+
+  /// No description provided for @globeYou.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get globeYou;
+
+  /// No description provided for @globeConnections.
+  ///
+  /// In en, this message translates to:
+  /// **'Connections'**
+  String get globeConnections;
+
+  /// No description provided for @globeTraveler.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler'**
+  String get globeTraveler;
+
+  /// No description provided for @globeConnectionCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} {count, plural, =1{connection} other{connections}}'**
+  String globeConnectionCount(int count);
+
+  /// No description provided for @globeConnectionsHere.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} {count, plural, =1{connection} other{connections}} here'**
+  String globeConnectionsHere(int count);
+
+  /// No description provided for @globeThisIsYou.
+  ///
+  /// In en, this message translates to:
+  /// **'This is you!'**
+  String get globeThisIsYou;
+
+  /// No description provided for @globeTravelingTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveling to {country}'**
+  String globeTravelingTo(String country);
+
+  /// No description provided for @globeNoConnectionsInCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'No connections in {country} yet'**
+  String globeNoConnectionsInCountry(String country);
+
+  /// No description provided for @globeNoConnectionsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep connecting to find people here!'**
+  String get globeNoConnectionsHint;
+
+  /// No description provided for @globeProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get globeProfile;
+
+  /// No description provided for @globeChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get globeChat;
+
+  /// No description provided for @globeViewProfileTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'View Profile'**
+  String get globeViewProfileTooltip;
+
+  /// No description provided for @globeOpenChatTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Chat'**
+  String get globeOpenChatTooltip;
+
+  /// No description provided for @globeNoConnectionsInCountryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No connections in {country}'**
+  String globeNoConnectionsInCountryTitle(String country);
+
+  /// No description provided for @discoverabilityExact.
+  ///
+  /// In en, this message translates to:
+  /// **'Exact'**
+  String get discoverabilityExact;
+
+  /// No description provided for @discoverabilityExactDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin at your exact location (<1km)'**
+  String get discoverabilityExactDesc;
+
+  /// No description provided for @discoverabilityApproximate.
+  ///
+  /// In en, this message translates to:
+  /// **'Approximate'**
+  String get discoverabilityApproximate;
+
+  /// No description provided for @discoverabilityApproximateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin in your region (~50km grid, default)'**
+  String get discoverabilityApproximateDesc;
+
+  /// No description provided for @discoverabilityCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get discoverabilityCountry;
+
+  /// No description provided for @discoverabilityCountryDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin somewhere in your country'**
+  String get discoverabilityCountryDesc;
+
+  /// No description provided for @discoverabilityHidden.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden'**
+  String get discoverabilityHidden;
+
+  /// No description provided for @discoverabilityHiddenDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Not discoverable on the Map'**
+  String get discoverabilityHiddenDesc;
+
+  /// No description provided for @discoverabilityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Globe Discoverability'**
+  String get discoverabilityTitle;
+
+  /// No description provided for @discoverabilityInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Your connections always see you on the Map, regardless of this setting.'**
+  String get discoverabilityInfo;
+
+  /// No description provided for @discoverabilityChangedExact.
+  ///
+  /// In en, this message translates to:
+  /// **'Location set to exact'**
+  String get discoverabilityChangedExact;
+
+  /// No description provided for @discoverabilityChangedApproximate.
+  ///
+  /// In en, this message translates to:
+  /// **'Location set to approximate'**
+  String get discoverabilityChangedApproximate;
+
+  /// No description provided for @discoverabilityChangedCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Location set to country level'**
+  String get discoverabilityChangedCountry;
+
+  /// No description provided for @discoverabilityChangedHidden.
+  ///
+  /// In en, this message translates to:
+  /// **'You are now hidden from the map'**
+  String get discoverabilityChangedHidden;
 }
 
 class _AppLocalizationsDelegate

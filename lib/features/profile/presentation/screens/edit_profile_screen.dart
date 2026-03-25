@@ -364,6 +364,15 @@ class EditProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
+                  // Globe Discoverability (3-tier)
+                  _GlobeDiscoverabilityCard(
+                    profile: activeProfile,
+                    onChanged: (level) =>
+                        _changeGlobeDiscoverability(context, activeProfile, level),
+                  ),
+
+                  const SizedBox(height: 16),
+
                   // Traveler Mode Toggle
                   _TravelerToggleCard(
                     profile: activeProfile,
@@ -1657,6 +1666,34 @@ class EditProfileScreen extends StatelessWidget {
     }
   }
 
+  Future<void> _changeGlobeDiscoverability(
+    BuildContext context,
+    Profile profile,
+    GlobeDiscoverability level,
+  ) async {
+    await FirebaseFirestore.instance
+        .collection('profiles')
+        .doc(profile.userId)
+        .update({'globeDiscoverability': level.name});
+
+    if (context.mounted) {
+      final l10n = AppLocalizations.of(context)!;
+      final messages = {
+        GlobeDiscoverability.exact: l10n.discoverabilityChangedExact,
+        GlobeDiscoverability.approximate: l10n.discoverabilityChangedApproximate,
+        GlobeDiscoverability.country: l10n.discoverabilityChangedCountry,
+        GlobeDiscoverability.hidden: l10n.discoverabilityChangedHidden,
+      };
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(messages[level]!),
+          backgroundColor: AppColors.backgroundCard,
+        ),
+      );
+    }
+  }
+
   Future<void> _toggleIncognito(BuildContext context, Profile profile, bool enabled) async {
     // Ghost Mode: free & unlimited for Gold, Platinum, Test tiers
     final isGhostEligible = profile.membershipTier == MembershipTier.gold ||
@@ -2643,5 +2680,205 @@ class _AchievementBadgeData {
   final DateTime? unlockedAt;
 
   _AchievementBadgeData({required this.achievement, this.unlockedAt});
+}
+
+class _GlobeDiscoverabilityCard extends StatefulWidget {
+  final Profile profile;
+  final ValueChanged<GlobeDiscoverability> onChanged;
+
+  const _GlobeDiscoverabilityCard({
+    required this.profile,
+    required this.onChanged,
+  });
+
+  @override
+  State<_GlobeDiscoverabilityCard> createState() =>
+      _GlobeDiscoverabilityCardState();
+}
+
+class _GlobeDiscoverabilityCardState
+    extends State<_GlobeDiscoverabilityCard> {
+  late GlobeDiscoverability _current;
+
+  @override
+  void initState() {
+    super.initState();
+    _current = widget.profile.globeDiscoverability;
+  }
+
+  void _select(GlobeDiscoverability level) {
+    setState(() => _current = level);
+    widget.onChanged(level);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final current = _current;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+        border: current != GlobeDiscoverability.hidden
+            ? Border.all(color: AppColors.richGold.withOpacity(0.3))
+            : null,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.public,
+                color: current != GlobeDiscoverability.hidden
+                    ? AppColors.richGold
+                    : AppColors.textTertiary,
+                size: 22,
+              ),
+              const SizedBox(width: 10),
+              Text(
+                AppLocalizations.of(context)!.discoverabilityTitle,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          const SizedBox(height: 14),
+          _GlobeOption(
+            icon: Icons.my_location,
+            title: AppLocalizations.of(context)!.discoverabilityExact,
+            subtitle: AppLocalizations.of(context)!.discoverabilityExactDesc,
+            isSelected: current == GlobeDiscoverability.exact,
+            onTap: () => _select(GlobeDiscoverability.exact),
+            accentColor: Colors.green,
+          ),
+          const SizedBox(height: 8),
+          _GlobeOption(
+            icon: Icons.grid_on,
+            title: AppLocalizations.of(context)!.discoverabilityApproximate,
+            subtitle: AppLocalizations.of(context)!.discoverabilityApproximateDesc,
+            isSelected: current == GlobeDiscoverability.approximate,
+            onTap: () => _select(GlobeDiscoverability.approximate),
+            accentColor: Colors.orange,
+          ),
+          const SizedBox(height: 8),
+          _GlobeOption(
+            icon: Icons.flag,
+            title: AppLocalizations.of(context)!.discoverabilityCountry,
+            subtitle: AppLocalizations.of(context)!.discoverabilityCountryDesc,
+            isSelected: current == GlobeDiscoverability.country,
+            onTap: () => _select(GlobeDiscoverability.country),
+            accentColor: AppColors.richGold,
+          ),
+          const SizedBox(height: 8),
+          _GlobeOption(
+            icon: Icons.visibility_off,
+            title: AppLocalizations.of(context)!.discoverabilityHidden,
+            subtitle: AppLocalizations.of(context)!.discoverabilityHiddenDesc,
+            isSelected: current == GlobeDiscoverability.hidden,
+            onTap: () => _select(GlobeDiscoverability.hidden),
+            accentColor: AppColors.textTertiary,
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              Icon(Icons.info_outline,
+                  color: AppColors.textTertiary, size: 14),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  AppLocalizations.of(context)!.discoverabilityInfo,
+                  style: TextStyle(
+                    color: AppColors.textTertiary,
+                    fontSize: 11,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _GlobeOption extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final bool isSelected;
+  final VoidCallback onTap;
+  final Color accentColor;
+
+  const _GlobeOption({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.isSelected,
+    required this.onTap,
+    required this.accentColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? accentColor.withOpacity(0.1)
+              : Colors.transparent,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: isSelected
+                ? accentColor.withOpacity(0.6)
+                : AppColors.divider,
+            width: isSelected ? 1.5 : 1,
+          ),
+        ),
+        child: Row(
+          children: [
+            Icon(icon,
+                color: isSelected ? accentColor : AppColors.textTertiary,
+                size: 20),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      color: isSelected
+                          ? AppColors.textPrimary
+                          : AppColors.textSecondary,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                    ),
+                  ),
+                  Text(
+                    subtitle,
+                    style: TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            if (isSelected)
+              Icon(Icons.check_circle, color: accentColor, size: 20),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
