@@ -7,7 +7,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/services/web_geocoding_service.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../domain/entities/profile.dart' as profile_entity;
 import '../../../domain/entities/location.dart' as location_entity;
@@ -56,12 +55,6 @@ class _Step5LocationLanguageScreenState
   bool _isLoadingLocation = false;
   String? _locationError;
 
-  // Autocomplete search
-  final TextEditingController _searchController = TextEditingController();
-  Timer? _searchDebounce;
-  List<PlaceAutocompleteSuggestion> _autocompleteSuggestions = [];
-  bool _isSearching = false;
-
   @override
   void initState() {
     super.initState();
@@ -69,62 +62,6 @@ class _Step5LocationLanguageScreenState
     if (state is OnboardingInProgress) {
       _selectedLanguages = List.from(state.languages);
       _selectedLocation = state.location;
-    }
-  }
-
-  @override
-  void dispose() {
-    _searchController.dispose();
-    _searchDebounce?.cancel();
-    super.dispose();
-  }
-
-  void _onSearchChanged(String query) {
-    _searchDebounce?.cancel();
-    if (query.trim().length < 2) {
-      setState(() {
-        _autocompleteSuggestions = [];
-        _isSearching = false;
-      });
-      return;
-    }
-    setState(() => _isSearching = true);
-    _searchDebounce = Timer(const Duration(milliseconds: 400), () async {
-      final suggestions = await WebGeocodingService.autocomplete(query);
-      if (mounted) {
-        setState(() {
-          _autocompleteSuggestions = suggestions;
-          _isSearching = false;
-        });
-      }
-    });
-  }
-
-  Future<void> _selectAutocompleteSuggestion(PlaceAutocompleteSuggestion suggestion) async {
-    setState(() {
-      _searchController.clear();
-      _autocompleteSuggestions = [];
-      _isLoadingLocation = true;
-      _locationError = null;
-    });
-
-    final details = await WebGeocodingService.getPlaceDetails(suggestion.placeId);
-    if (details != null && mounted) {
-      setState(() {
-        _selectedLocation = location_entity.Location(
-          latitude: details.latitude,
-          longitude: details.longitude,
-          city: details.city,
-          country: details.country,
-          displayAddress: details.displayAddress,
-        );
-        _isLoadingLocation = false;
-      });
-    } else if (mounted) {
-      setState(() {
-        _isLoadingLocation = false;
-        _locationError = 'Could not get location details. Please try again.';
-      });
     }
   }
 
@@ -440,149 +377,6 @@ class _Step5LocationLanguageScreenState
                         ],
                       ),
                     ),
-
-                    const SizedBox(height: 12),
-
-                    // Search field for autocomplete
-                    TextField(
-                      controller: _searchController,
-                      onChanged: _onSearchChanged,
-                      style: const TextStyle(color: Colors.white, fontSize: 15),
-                      decoration: InputDecoration(
-                        hintText: 'Search for a city...',
-                        hintStyle: TextStyle(
-                          color: Colors.white.withOpacity(0.4),
-                          fontSize: 15,
-                        ),
-                        prefixIcon: Icon(
-                          Icons.search,
-                          color: Colors.white.withOpacity(0.4),
-                        ),
-                        suffixIcon: _isSearching
-                            ? const Padding(
-                                padding: EdgeInsets.all(12),
-                                child: SizedBox(
-                                  width: 20,
-                                  height: 20,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
-                                    color: AppColors.richGold,
-                                  ),
-                                ),
-                              )
-                            : _searchController.text.isNotEmpty
-                                ? IconButton(
-                                    icon: Icon(
-                                      Icons.clear,
-                                      color: Colors.white.withOpacity(0.4),
-                                    ),
-                                    onPressed: () {
-                                      _searchController.clear();
-                                      setState(() {
-                                        _autocompleteSuggestions = [];
-                                      });
-                                    },
-                                  )
-                                : null,
-                        filled: true,
-                        fillColor: Colors.white.withOpacity(0.06),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(16),
-                          borderSide: BorderSide(
-                            color: Colors.white.withOpacity(0.1),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(16),
-                          borderSide: BorderSide(
-                            color: Colors.white.withOpacity(0.1),
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(16),
-                          borderSide: BorderSide(
-                            color: AppColors.richGold.withOpacity(0.5),
-                          ),
-                        ),
-                        contentPadding: const EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 14,
-                        ),
-                      ),
-                    ),
-
-                    // Autocomplete suggestions
-                    if (_autocompleteSuggestions.isNotEmpty)
-                      Container(
-                        margin: const EdgeInsets.only(top: 4),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF1E1E2E),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: Colors.white.withOpacity(0.1),
-                          ),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: _autocompleteSuggestions.map((suggestion) {
-                              return InkWell(
-                                onTap: () => _selectAutocompleteSuggestion(suggestion),
-                                child: Container(
-                                  width: double.infinity,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 16,
-                                    vertical: 12,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border(
-                                      bottom: BorderSide(
-                                        color: Colors.white.withOpacity(0.05),
-                                      ),
-                                    ),
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Icon(
-                                        Icons.location_on_outlined,
-                                        color: AppColors.richGold.withOpacity(0.7),
-                                        size: 20,
-                                      ),
-                                      const SizedBox(width: 12),
-                                      Expanded(
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              suggestion.mainText,
-                                              style: const TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                            ),
-                                            if (suggestion.description != suggestion.mainText)
-                                              Text(
-                                                suggestion.description,
-                                                style: TextStyle(
-                                                  color: Colors.white.withOpacity(0.5),
-                                                  fontSize: 12,
-                                                ),
-                                                maxLines: 1,
-                                                overflow: TextOverflow.ellipsis,
-                                              ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              );
-                            }).toList(),
-                          ),
-                        ),
-                      ),
 
                     const SizedBox(height: 12),
 
