@@ -163,6 +163,15 @@ class OnboardingCompleted extends OnboardingEvent {
   const OnboardingCompleted();
 }
 
+class OnboardingPhoneVerificationCompleted extends OnboardingEvent {
+  final String phoneNumber;
+
+  const OnboardingPhoneVerificationCompleted({required this.phoneNumber});
+
+  @override
+  List<Object?> get props => [phoneNumber];
+}
+
 class OnboardingSkipped extends OnboardingEvent {
   const OnboardingSkipped();
 }

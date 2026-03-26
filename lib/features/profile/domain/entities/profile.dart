@@ -56,6 +56,8 @@ class Profile extends Equatable {
   // Verification fields
   final VerificationStatus verificationStatus;
   final String? verificationPhotoUrl;  // Photo of user holding ID
+  final String? verificationMethod; // 'photo' or 'phone'
+  final String? verificationPhone; // Phone number if verified by SMS
   final String? verificationRejectionReason;
   final DateTime? verificationSubmittedAt;
   final DateTime? verificationReviewedAt;
@@ -142,6 +144,8 @@ class Profile extends Equatable {
     required this.isComplete,
     this.verificationStatus = VerificationStatus.notSubmitted,
     this.verificationPhotoUrl,
+    this.verificationMethod,
+    this.verificationPhone,
     this.verificationRejectionReason,
     this.verificationSubmittedAt,
     this.verificationReviewedAt,
@@ -262,6 +266,8 @@ class Profile extends Equatable {
         isComplete,
         verificationStatus,
         verificationPhotoUrl,
+        verificationMethod,
+        verificationPhone,
         verificationRejectionReason,
         verificationSubmittedAt,
         verificationReviewedAt,
@@ -326,6 +332,8 @@ class Profile extends Equatable {
     bool? isComplete,
     VerificationStatus? verificationStatus,
     String? verificationPhotoUrl,
+    String? verificationMethod,
+    String? verificationPhone,
     String? verificationRejectionReason,
     DateTime? verificationSubmittedAt,
     DateTime? verificationReviewedAt,
@@ -388,6 +396,8 @@ class Profile extends Equatable {
       isComplete: isComplete ?? this.isComplete,
       verificationStatus: verificationStatus ?? this.verificationStatus,
       verificationPhotoUrl: verificationPhotoUrl ?? this.verificationPhotoUrl,
+      verificationMethod: verificationMethod ?? this.verificationMethod,
+      verificationPhone: verificationPhone ?? this.verificationPhone,
       verificationRejectionReason: verificationRejectionReason ?? this.verificationRejectionReason,
       verificationSubmittedAt: verificationSubmittedAt ?? this.verificationSubmittedAt,
       verificationReviewedAt: verificationReviewedAt ?? this.verificationReviewedAt,

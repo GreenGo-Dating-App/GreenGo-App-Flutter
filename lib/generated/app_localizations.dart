@@ -16494,6 +16494,156 @@ abstract class AppLocalizations {
   /// **'Verify Your Identity'**
   String get verificationTitle;
 
+  /// No description provided for @verificationPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data is safe with us'**
+  String get verificationPrivacyTitle;
+
+  /// No description provided for @verificationPrivacyEncryption.
+  ///
+  /// In en, this message translates to:
+  /// **'All documents are encrypted with end-to-end encryption. Not even GreenGo engineers can access your data.'**
+  String get verificationPrivacyEncryption;
+
+  /// No description provided for @verificationPrivacyAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Your information can only be accessed through your personal request via official channels or email.'**
+  String get verificationPrivacyAccess;
+
+  /// No description provided for @verificationPrivacySafety.
+  ///
+  /// In en, this message translates to:
+  /// **'This step is essential to protect all members. We invite you to report any suspicious behaviour and let GreenGo take action.'**
+  String get verificationPrivacySafety;
+
+  /// No description provided for @verificationPrivacyReporting.
+  ///
+  /// In en, this message translates to:
+  /// **'If something happens, report it immediately. GreenGo will investigate and act to keep the community safe.'**
+  String get verificationPrivacyReporting;
+
+  /// No description provided for @verificationChooseMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your verification method'**
+  String get verificationChooseMethod;
+
+  /// No description provided for @verificationMethodPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'ID Document'**
+  String get verificationMethodPhoto;
+
+  /// No description provided for @verificationMethodPhotoDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a photo holding your ID next to your face'**
+  String get verificationMethodPhotoDesc;
+
+  /// No description provided for @verificationMethodPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number'**
+  String get verificationMethodPhone;
+
+  /// No description provided for @verificationMethodPhoneDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify via SMS code sent to your phone'**
+  String get verificationMethodPhoneDesc;
+
+  /// No description provided for @verificationPhoneTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Verification'**
+  String get verificationPhoneTitle;
+
+  /// No description provided for @verificationPhoneSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your phone number to receive a verification code via SMS'**
+  String get verificationPhoneSubtitle;
+
+  /// No description provided for @verificationPhoneLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get verificationPhoneLabel;
+
+  /// No description provided for @verificationPhoneHint.
+  ///
+  /// In en, this message translates to:
+  /// **'+1 234 567 8900'**
+  String get verificationPhoneHint;
+
+  /// No description provided for @verificationSendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Code'**
+  String get verificationSendCode;
+
+  /// No description provided for @verificationEnterCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the 6-digit code sent to your phone'**
+  String get verificationEnterCode;
+
+  /// No description provided for @verificationCodeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification code'**
+  String get verificationCodeLabel;
+
+  /// No description provided for @verificationVerifyCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify Code'**
+  String get verificationVerifyCode;
+
+  /// No description provided for @verificationPhoneSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number verified successfully!'**
+  String get verificationPhoneSuccess;
+
+  /// No description provided for @verificationPhoneResponsibility.
+  ///
+  /// In en, this message translates to:
+  /// **'By verifying with your phone number, you acknowledge that the owner of this number is personally responsible for all actions performed on this account.'**
+  String get verificationPhoneResponsibility;
+
+  /// No description provided for @verificationResendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get verificationResendCode;
+
+  /// No description provided for @verificationCodeSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Code sent to {phoneNumber}'**
+  String verificationCodeSent(String phoneNumber);
+
+  /// No description provided for @verificationPhoneError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to verify phone number. Please try again.'**
+  String get verificationPhoneError;
+
+  /// No description provided for @verificationInvalidCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid code. Please check and try again.'**
+  String get verificationInvalidCode;
+
+  /// No description provided for @verificationOr.
+  ///
+  /// In en, this message translates to:
+  /// **'or'**
+  String get verificationOr;
+
   /// No description provided for @verifyNow.
   ///
   /// In en, this message translates to:
