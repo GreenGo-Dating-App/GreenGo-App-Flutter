@@ -1,9 +1,10 @@
 import 'package:dio/dio.dart';
+import 'api_key_service.dart';
 
 /// Geocoding service using Google Maps REST API for web platform,
 /// where the `geocoding` Flutter package has no implementation.
 class WebGeocodingService {
-  static const _apiKey = 'AIzaSyDlLwg3WeJREzSXUGzU4eEcs1osE5jXcgI';
+  static String get _apiKey => ApiKeyService.googleMapsApiKey;
   static const _baseUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
   static final _dio = Dio();
 
