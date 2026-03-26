@@ -35,6 +35,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingLearningLanguagesUpdated>(_onOnboardingLearningLanguagesUpdated);
     on<OnboardingTravelPreferenceUpdated>(_onOnboardingTravelPreferenceUpdated);
     on<OnboardingSocialLinksUpdated>(_onOnboardingSocialLinksUpdated);
+    on<OnboardingPhoneVerificationCompleted>(_onOnboardingPhoneVerificationCompleted);
     on<OnboardingCompleted>(_onOnboardingCompleted);
   }
 
@@ -294,6 +295,19 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+  void _onOnboardingPhoneVerificationCompleted(
+    OnboardingPhoneVerificationCompleted event,
+    Emitter<OnboardingState> emit,
+  ) {
+    if (state is OnboardingInProgress) {
+      final currentState = state as OnboardingInProgress;
+      emit(currentState.copyWith(
+        verificationMethod: 'phone',
+        verificationPhone: event.phoneNumber,
+      ));
+    }
+  }
+
   Future<void> _onOnboardingCompleted(
     OnboardingCompleted event,
     Emitter<OnboardingState> emit,
@@ -320,9 +334,15 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         updatedAt: now,
         isComplete: true,
         // Verification fields
-        verificationStatus: VerificationStatus.pending,
+        // Phone verification = auto-approved; photo = pending admin review
+        verificationStatus: currentState.verificationMethod == 'phone'
+            ? VerificationStatus.approved
+            : VerificationStatus.pending,
         verificationPhotoUrl: currentState.verificationPhotoUrl,
-        verificationSubmittedAt: currentState.verificationPhotoUrl != null ? now : null,
+        verificationMethod: currentState.verificationMethod,
+        verificationPhone: currentState.verificationPhone,
+        verificationSubmittedAt: (currentState.verificationPhotoUrl != null || currentState.verificationPhone != null) ? now : null,
+        verificationReviewedAt: currentState.verificationMethod == 'phone' ? now : null,
         // Language learning fields
         preferredLanguages: currentState.preferredLanguages,
         nativeLanguage: currentState.nativeLanguage,

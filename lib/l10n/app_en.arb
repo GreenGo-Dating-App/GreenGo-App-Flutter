@@ -4501,6 +4501,38 @@
   "verificationTip4": "All text on the ID should be readable",
   "verificationTips": "Tips for a successful verification:",
   "verificationTitle": "Verify Your Identity",
+  "verificationPrivacyTitle": "Your data is safe with us",
+  "verificationPrivacyEncryption": "All documents are encrypted with end-to-end encryption. Not even GreenGo engineers can access your data.",
+  "verificationPrivacyAccess": "Your information can only be accessed through your personal request via official channels or email.",
+  "verificationPrivacySafety": "This step is essential to protect all members. We invite you to report any suspicious behaviour and let GreenGo take action.",
+  "verificationPrivacyReporting": "If something happens, report it immediately. GreenGo will investigate and act to keep the community safe.",
+  "verificationChooseMethod": "Choose your verification method",
+  "verificationMethodPhoto": "ID Document",
+  "verificationMethodPhotoDesc": "Take a photo holding your ID next to your face",
+  "verificationMethodPhone": "Phone Number",
+  "verificationMethodPhoneDesc": "Verify via SMS code sent to your phone",
+  "verificationPhoneTitle": "Phone Verification",
+  "verificationPhoneSubtitle": "Enter your phone number to receive a verification code via SMS",
+  "verificationPhoneLabel": "Phone number",
+  "verificationPhoneHint": "+1 234 567 8900",
+  "verificationSendCode": "Send Code",
+  "verificationEnterCode": "Enter the 6-digit code sent to your phone",
+  "verificationCodeLabel": "Verification code",
+  "verificationVerifyCode": "Verify Code",
+  "verificationPhoneSuccess": "Phone number verified successfully!",
+  "verificationPhoneResponsibility": "By verifying with your phone number, you acknowledge that the owner of this number is personally responsible for all actions performed on this account.",
+  "verificationResendCode": "Resend code",
+  "verificationCodeSent": "Code sent to {phoneNumber}",
+  "@verificationCodeSent": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  "verificationPhoneError": "Failed to verify phone number. Please try again.",
+  "verificationInvalidCode": "Invalid code. Please check and try again.",
+  "verificationOr": "or",
   "verifyNow": "Verify Now",
   "vibeTagsCountSelected": "{count} / {limit} tags selected",
   "vibeTagsGet5Tags": "Get 5 tags",

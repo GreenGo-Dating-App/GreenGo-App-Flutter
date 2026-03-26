@@ -42,6 +42,8 @@ class OnboardingInProgress extends OnboardingState {
   final String? voiceUrl;
   final PersonalityTraits? personalityTraits;
   final String? verificationPhotoUrl;
+  final String? verificationMethod;
+  final String? verificationPhone;
   final SocialLinks? socialLinks;
   final List<String> preferredLanguages;
   final String? nativeLanguage;
@@ -62,6 +64,8 @@ class OnboardingInProgress extends OnboardingState {
     this.voiceUrl,
     this.personalityTraits,
     this.verificationPhotoUrl,
+    this.verificationMethod,
+    this.verificationPhone,
     this.socialLinks,
     this.preferredLanguages = const [],
     this.nativeLanguage,
@@ -82,6 +86,8 @@ class OnboardingInProgress extends OnboardingState {
     String? voiceUrl,
     PersonalityTraits? personalityTraits,
     String? verificationPhotoUrl,
+    String? verificationMethod,
+    String? verificationPhone,
     SocialLinks? socialLinks,
     List<String>? preferredLanguages,
     String? nativeLanguage,
@@ -102,6 +108,8 @@ class OnboardingInProgress extends OnboardingState {
       voiceUrl: voiceUrl ?? this.voiceUrl,
       personalityTraits: personalityTraits ?? this.personalityTraits,
       verificationPhotoUrl: verificationPhotoUrl ?? this.verificationPhotoUrl,
+      verificationMethod: verificationMethod ?? this.verificationMethod,
+      verificationPhone: verificationPhone ?? this.verificationPhone,
       socialLinks: socialLinks ?? this.socialLinks,
       preferredLanguages: preferredLanguages ?? this.preferredLanguages,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
@@ -125,7 +133,8 @@ class OnboardingInProgress extends OnboardingState {
       case OnboardingStep.photos:
         return photoUrls.isNotEmpty;
       case OnboardingStep.verification:
-        return verificationPhotoUrl != null && verificationPhotoUrl!.isNotEmpty;
+        return (verificationPhotoUrl != null && verificationPhotoUrl!.isNotEmpty) ||
+            (verificationMethod == 'phone' && verificationPhone != null && verificationPhone!.isNotEmpty);
       case OnboardingStep.bio:
         return bio != null && bio!.isNotEmpty;
       case OnboardingStep.interests:
@@ -160,6 +169,8 @@ class OnboardingInProgress extends OnboardingState {
         voiceUrl,
         personalityTraits,
         verificationPhotoUrl,
+        verificationMethod,
+        verificationPhone,
         socialLinks,
         preferredLanguages,
         nativeLanguage,

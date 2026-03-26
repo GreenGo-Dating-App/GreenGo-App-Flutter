@@ -9326,6 +9326,94 @@ class AppLocalizationsIt extends AppLocalizations {
   String get verificationTitle => 'Verifica la Tua Identità';
 
   @override
+  String get verificationPrivacyTitle => 'Your data is safe with us';
+
+  @override
+  String get verificationPrivacyEncryption =>
+      'All documents are encrypted with end-to-end encryption. Not even GreenGo engineers can access your data.';
+
+  @override
+  String get verificationPrivacyAccess =>
+      'Your information can only be accessed through your personal request via official channels or email.';
+
+  @override
+  String get verificationPrivacySafety =>
+      'This step is essential to protect all members. We invite you to report any suspicious behaviour and let GreenGo take action.';
+
+  @override
+  String get verificationPrivacyReporting =>
+      'If something happens, report it immediately. GreenGo will investigate and act to keep the community safe.';
+
+  @override
+  String get verificationChooseMethod => 'Choose your verification method';
+
+  @override
+  String get verificationMethodPhoto => 'ID Document';
+
+  @override
+  String get verificationMethodPhotoDesc =>
+      'Take a photo holding your ID next to your face';
+
+  @override
+  String get verificationMethodPhone => 'Phone Number';
+
+  @override
+  String get verificationMethodPhoneDesc =>
+      'Verify via SMS code sent to your phone';
+
+  @override
+  String get verificationPhoneTitle => 'Phone Verification';
+
+  @override
+  String get verificationPhoneSubtitle =>
+      'Enter your phone number to receive a verification code via SMS';
+
+  @override
+  String get verificationPhoneLabel => 'Phone number';
+
+  @override
+  String get verificationPhoneHint => '+1 234 567 8900';
+
+  @override
+  String get verificationSendCode => 'Send Code';
+
+  @override
+  String get verificationEnterCode =>
+      'Enter the 6-digit code sent to your phone';
+
+  @override
+  String get verificationCodeLabel => 'Verification code';
+
+  @override
+  String get verificationVerifyCode => 'Verify Code';
+
+  @override
+  String get verificationPhoneSuccess => 'Phone number verified successfully!';
+
+  @override
+  String get verificationPhoneResponsibility =>
+      'By verifying with your phone number, you acknowledge that the owner of this number is personally responsible for all actions performed on this account.';
+
+  @override
+  String get verificationResendCode => 'Resend code';
+
+  @override
+  String verificationCodeSent(String phoneNumber) {
+    return 'Code sent to $phoneNumber';
+  }
+
+  @override
+  String get verificationPhoneError =>
+      'Failed to verify phone number. Please try again.';
+
+  @override
+  String get verificationInvalidCode =>
+      'Invalid code. Please check and try again.';
+
+  @override
+  String get verificationOr => 'or';
+
+  @override
   String get verifyNow => 'Verifica Ora';
 
   @override

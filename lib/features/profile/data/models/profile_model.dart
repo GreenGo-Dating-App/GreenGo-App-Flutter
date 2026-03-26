@@ -39,6 +39,8 @@ class ProfileModel extends Profile {
     required super.isComplete,
     super.verificationStatus,
     super.verificationPhotoUrl,
+    super.verificationMethod,
+    super.verificationPhone,
     super.verificationRejectionReason,
     super.verificationSubmittedAt,
     super.verificationReviewedAt,
@@ -130,6 +132,8 @@ class ProfileModel extends Profile {
       isComplete: json['isComplete'] as bool? ?? false,
       verificationStatus: _parseVerificationStatus(json['verificationStatus'] as String?),
       verificationPhotoUrl: json['verificationPhotoUrl'] as String?,
+      verificationMethod: json['verificationMethod'] as String?,
+      verificationPhone: json['verificationPhone'] as String?,
       verificationRejectionReason: json['verificationRejectionReason'] as String?,
       verificationSubmittedAt: json['verificationSubmittedAt'] != null
           ? (json['verificationSubmittedAt'] as Timestamp).toDate()
@@ -282,6 +286,8 @@ class ProfileModel extends Profile {
       'isComplete': isComplete,
       'verificationStatus': verificationStatus.name,
       'verificationPhotoUrl': verificationPhotoUrl,
+      'verificationMethod': verificationMethod,
+      'verificationPhone': verificationPhone,
       'verificationRejectionReason': verificationRejectionReason,
       'verificationSubmittedAt': verificationSubmittedAt != null
           ? Timestamp.fromDate(verificationSubmittedAt!)
@@ -361,6 +367,8 @@ class ProfileModel extends Profile {
       isComplete: profile.isComplete,
       verificationStatus: profile.verificationStatus,
       verificationPhotoUrl: profile.verificationPhotoUrl,
+      verificationMethod: profile.verificationMethod,
+      verificationPhone: profile.verificationPhone,
       verificationRejectionReason: profile.verificationRejectionReason,
       verificationSubmittedAt: profile.verificationSubmittedAt,
       verificationReviewedAt: profile.verificationReviewedAt,

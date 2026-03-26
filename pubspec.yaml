@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A next-generation dating application with Flutter and GCP
 publish_to: 'none'
-version: 1.5.3+39
+version: 1.5.4+40
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
