@@ -113,11 +113,21 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
 
       // Delete voice recording if exists
       if (profile.voiceRecordingUrl != null) {
-        final ref = storage.refFromURL(profile.voiceRecordingUrl!);
-        await ref.delete();
+        try {
+          final ref = storage.refFromURL(profile.voiceRecordingUrl!);
+          await ref.delete();
+        } catch (_) {}
       }
 
-      // Delete profile document
+      // Delete verification photo if exists
+      if (profile.verificationPhotoUrl != null && profile.verificationPhotoUrl!.isNotEmpty) {
+        try {
+          final ref = storage.refFromURL(profile.verificationPhotoUrl!);
+          await ref.delete();
+        } catch (_) {}
+      }
+
+      // Delete profile document (includes phone number, verification data, all personal info)
       await firestore.collection('profiles').doc(userId).delete();
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to delete profile');
