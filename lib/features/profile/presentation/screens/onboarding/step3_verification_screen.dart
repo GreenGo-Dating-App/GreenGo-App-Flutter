@@ -39,6 +39,60 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
   Timer? _resendTimer;
   int _resendCountdown = 0;
 
+  // Country code selector
+  String _selectedCountry = 'US';
+  static const List<_CountryCode> _countryCodes = [
+    _CountryCode('US', '\u{1F1FA}\u{1F1F8}', '+1'),
+    _CountryCode('GB', '\u{1F1EC}\u{1F1E7}', '+44'),
+    _CountryCode('DE', '\u{1F1E9}\u{1F1EA}', '+49'),
+    _CountryCode('FR', '\u{1F1EB}\u{1F1F7}', '+33'),
+    _CountryCode('IT', '\u{1F1EE}\u{1F1F9}', '+39'),
+    _CountryCode('ES', '\u{1F1EA}\u{1F1F8}', '+34'),
+    _CountryCode('PT', '\u{1F1F5}\u{1F1F9}', '+351'),
+    _CountryCode('BR', '\u{1F1E7}\u{1F1F7}', '+55'),
+    _CountryCode('CH', '\u{1F1E8}\u{1F1ED}', '+41'),
+    _CountryCode('AT', '\u{1F1E6}\u{1F1F9}', '+43'),
+    _CountryCode('NL', '\u{1F1F3}\u{1F1F1}', '+31'),
+    _CountryCode('BE', '\u{1F1E7}\u{1F1EA}', '+32'),
+    _CountryCode('SE', '\u{1F1F8}\u{1F1EA}', '+46'),
+    _CountryCode('NO', '\u{1F1F3}\u{1F1F4}', '+47'),
+    _CountryCode('DK', '\u{1F1E9}\u{1F1F0}', '+45'),
+    _CountryCode('FI', '\u{1F1EB}\u{1F1EE}', '+358'),
+    _CountryCode('PL', '\u{1F1F5}\u{1F1F1}', '+48'),
+    _CountryCode('GR', '\u{1F1EC}\u{1F1F7}', '+30'),
+    _CountryCode('TR', '\u{1F1F9}\u{1F1F7}', '+90'),
+    _CountryCode('RU', '\u{1F1F7}\u{1F1FA}', '+7'),
+    _CountryCode('UA', '\u{1F1FA}\u{1F1E6}', '+380'),
+    _CountryCode('IN', '\u{1F1EE}\u{1F1F3}', '+91'),
+    _CountryCode('CN', '\u{1F1E8}\u{1F1F3}', '+86'),
+    _CountryCode('JP', '\u{1F1EF}\u{1F1F5}', '+81'),
+    _CountryCode('KR', '\u{1F1F0}\u{1F1F7}', '+82'),
+    _CountryCode('AU', '\u{1F1E6}\u{1F1FA}', '+61'),
+    _CountryCode('NZ', '\u{1F1F3}\u{1F1FF}', '+64'),
+    _CountryCode('CA', '\u{1F1E8}\u{1F1E6}', '+1'),
+    _CountryCode('MX', '\u{1F1F2}\u{1F1FD}', '+52'),
+    _CountryCode('AR', '\u{1F1E6}\u{1F1F7}', '+54'),
+    _CountryCode('CL', '\u{1F1E8}\u{1F1F1}', '+56'),
+    _CountryCode('CO', '\u{1F1E8}\u{1F1F4}', '+57'),
+    _CountryCode('PE', '\u{1F1F5}\u{1F1EA}', '+51'),
+    _CountryCode('ZA', '\u{1F1FF}\u{1F1E6}', '+27'),
+    _CountryCode('NG', '\u{1F1F3}\u{1F1EC}', '+234'),
+    _CountryCode('EG', '\u{1F1EA}\u{1F1EC}', '+20'),
+    _CountryCode('SA', '\u{1F1F8}\u{1F1E6}', '+966'),
+    _CountryCode('AE', '\u{1F1E6}\u{1F1EA}', '+971'),
+    _CountryCode('IL', '\u{1F1EE}\u{1F1F1}', '+972'),
+    _CountryCode('TH', '\u{1F1F9}\u{1F1ED}', '+66'),
+    _CountryCode('PH', '\u{1F1F5}\u{1F1ED}', '+63'),
+    _CountryCode('ID', '\u{1F1EE}\u{1F1E9}', '+62'),
+    _CountryCode('MY', '\u{1F1F2}\u{1F1FE}', '+60'),
+    _CountryCode('SG', '\u{1F1F8}\u{1F1EC}', '+65'),
+    _CountryCode('IE', '\u{1F1EE}\u{1F1EA}', '+353'),
+    _CountryCode('RO', '\u{1F1F7}\u{1F1F4}', '+40'),
+    _CountryCode('CZ', '\u{1F1E8}\u{1F1FF}', '+420'),
+    _CountryCode('HU', '\u{1F1ED}\u{1F1FA}', '+36'),
+    _CountryCode('HR', '\u{1F1ED}\u{1F1F7}', '+385'),
+  ];
+
   @override
   void dispose() {
     _phoneController.dispose();
@@ -73,9 +127,12 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
     }
   }
 
+  String get _selectedDialCode => _countryCodes.firstWhere((c) => c.code == _selectedCountry).dialCode;
+  String get _fullPhoneNumber => '$_selectedDialCode${_phoneController.text.trim()}';
+
   Future<void> _sendPhoneCode() async {
-    final phone = _phoneController.text.trim();
-    if (phone.isEmpty) return;
+    final phone = _fullPhoneNumber;
+    if (_phoneController.text.trim().isEmpty) return;
 
     setState(() {
       _isVerifyingPhone = true;
@@ -193,7 +250,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
           _isVerifyingPhone = false;
         });
         context.read<OnboardingBloc>().add(
-          OnboardingPhoneVerificationCompleted(phoneNumber: _phoneController.text.trim()),
+          OnboardingPhoneVerificationCompleted(phoneNumber: _fullPhoneNumber),
         );
       }
     } on FirebaseAuthException catch (e) {
@@ -449,7 +506,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    _phoneController.text,
+                    _fullPhoneNumber,
                     style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
                   ),
                 ],
@@ -457,28 +514,72 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
             ),
           ),
         ] else if (!_codeSent) ...[
-          // Phone input
-          TextField(
-            controller: _phoneController,
-            keyboardType: TextInputType.phone,
-            style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
-            decoration: InputDecoration(
-              labelText: l10n?.verificationPhoneLabel ?? 'Phone number',
-              labelStyle: const TextStyle(color: AppColors.textTertiary),
-              hintText: l10n?.verificationPhoneHint ?? '+1 234 567 8900',
-              hintStyle: const TextStyle(color: AppColors.textTertiary),
-              prefixIcon: const Icon(Icons.phone, color: AppColors.richGold),
-              filled: true,
-              fillColor: AppColors.backgroundCard,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                borderSide: BorderSide.none,
+          // Phone input with country code selector
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Country code dropdown
+              Container(
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundCard,
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                ),
+                child: DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: _selectedCountry,
+                    dropdownColor: AppColors.backgroundCard,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                    icon: const Icon(Icons.arrow_drop_down, color: AppColors.richGold, size: 20),
+                    selectedItemBuilder: (context) => _countryCodes.map((c) {
+                      return Center(
+                        child: Text(
+                          '${c.flag} ${c.dialCode}',
+                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
+                        ),
+                      );
+                    }).toList(),
+                    items: _countryCodes.map((c) {
+                      return DropdownMenuItem<String>(
+                        value: c.code,
+                        child: Text(
+                          '${c.flag}  ${c.code}  ${c.dialCode}',
+                          style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+                        ),
+                      );
+                    }).toList(),
+                    onChanged: (value) {
+                      if (value != null) setState(() => _selectedCountry = value);
+                    },
+                  ),
+                ),
               ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                borderSide: const BorderSide(color: AppColors.richGold, width: 1.5),
+              const SizedBox(width: 10),
+              // Phone number field
+              Expanded(
+                child: TextField(
+                  controller: _phoneController,
+                  keyboardType: TextInputType.phone,
+                  style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
+                  decoration: InputDecoration(
+                    labelText: l10n?.verificationPhoneLabel ?? 'Phone number',
+                    labelStyle: const TextStyle(color: AppColors.textTertiary),
+                    hintText: '234 567 8900',
+                    hintStyle: const TextStyle(color: AppColors.textTertiary),
+                    filled: true,
+                    fillColor: AppColors.backgroundCard,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                      borderSide: BorderSide.none,
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                      borderSide: const BorderSide(color: AppColors.richGold, width: 1.5),
+                    ),
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
           const SizedBox(height: 16),
 
@@ -500,7 +601,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
         ] else ...[
           // Code sent - show input
           Text(
-            l10n?.verificationCodeSent(_phoneController.text) ?? 'Code sent to ${_phoneController.text}',
+            l10n?.verificationCodeSent(_fullPhoneNumber) ?? 'Code sent to $_fullPhoneNumber',
             style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
           ),
           const SizedBox(height: 12),
@@ -814,6 +915,14 @@ class _VerificationTip extends StatelessWidget {
       ),
     );
   }
+}
+
+class _CountryCode {
+  final String code;
+  final String flag;
+  final String dialCode;
+
+  const _CountryCode(this.code, this.flag, this.dialCode);
 }
 
 class _TakePhotoCard extends StatelessWidget {
