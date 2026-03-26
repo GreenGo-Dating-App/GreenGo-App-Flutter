@@ -200,6 +200,7 @@ void main() async {
       'max_photos_per_profile': 6,
       'max_distance_km': 100,
       'subscription_prices_usd': '{"basic": 0, "silver": 9.99, "gold": 19.99}',
+      'google_maps_api_key': '',
     });
 
     // Fetch and activate config
