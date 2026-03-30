@@ -163,8 +163,8 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
 
                   const SizedBox(height: 40),
 
-                  // Upgrade banner (for basic users)
-                  if (!hasEarlyAccess) _buildUpgradeBanner(),
+                  // Upgrade banner hidden during pre-launch phase
+                  // if (!hasEarlyAccess) _buildUpgradeBanner(),
 
                   const SizedBox(height: 24),
 

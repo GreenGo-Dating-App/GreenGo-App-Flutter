@@ -57,6 +57,7 @@ import 'features/spots/presentation/bloc/spots_bloc.dart';
 import 'features/communities/presentation/bloc/communities_bloc.dart';
 import 'features/communities/presentation/screens/communities_screen.dart';
 import 'features/admin/presentation/screens/early_access_admin_screen.dart';
+import 'features/admin/presentation/screens/pre_sale_admin_screen.dart';
 import 'features/admin/presentation/screens/support_tickets_screen.dart';
 import 'features/admin/presentation/screens/verification_admin_screen.dart';
 import 'features/admin/presentation/screens/reports_admin_screen.dart';
@@ -407,6 +408,15 @@ class GreenGoChatApp extends StatelessWidget {
               }
 
               // Admin routes
+              if (settings.name == '/admin/pre_sale') {
+                final adminId = settings.arguments as String? ?? '';
+                return MaterialPageRoute(
+                  builder: (context) => PreSaleAdminScreen(
+                    adminId: adminId,
+                  ),
+                );
+              }
+
               if (settings.name == '/admin/early_access') {
                 final adminId = settings.arguments as String? ?? '';
                 return MaterialPageRoute(
@@ -657,6 +667,39 @@ class _AuthWrapperState extends State<AuthWrapper> {
       _splashUserId = null;
       Admin2FAScreen.resetVerification();
     });
+  }
+
+  /// Create the missing users document so the access check can succeed.
+  /// This handles cases where registration didn't create the doc (e.g. network
+  /// issues, Firestore timeout, or legacy accounts).
+  bool _isCreatingAccessData = false;
+  Future<void> _createMissingAccessData(String userId) async {
+    if (_isCreatingAccessData) return;
+    _isCreatingAccessData = true;
+    try {
+      final email = FirebaseAuth.instance.currentUser?.email;
+      await _accessControlService.initializeUserAccess(
+        userId: userId,
+        email: email ?? '',
+      );
+      // Re-check access now that the doc exists
+      await _checkAccessStatus(userId);
+    } catch (e) {
+      debugPrint('⚠️ Failed to create access data: $e');
+      // Even if creation fails, don't leave user stuck — let them through
+      if (mounted) {
+        setState(() {
+          _accessData = UserAccessData(
+            userId: userId,
+            approvalStatus: ApprovalStatus.pending,
+            accessDate: AccessControlService.generalAccessDate,
+            membershipTier: SubscriptionTier.basic,
+          );
+        });
+      }
+    } finally {
+      _isCreatingAccessData = false;
+    }
   }
 
   void _handleRefresh() {
@@ -971,9 +1014,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
             }
             // Pending and approved users — let them into the app
             return _buildMainOrSplash(state.user.uid);
-          } else if (_accessControlService.isPreLaunchMode) {
-            // Pre-launch mode but no access data yet - show splash while loading
-            return const SplashScreen();
+          } else {
+            // No access data found (users doc missing or Firestore error).
+            // Create it now so the user isn't stuck on splash forever.
+            _createMissingAccessData(state.user.uid);
           }
           // User can access the app
           return _buildMainOrSplash(state.user.uid);
