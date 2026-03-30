@@ -280,8 +280,16 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   bool _membershipCheckDone = false;
 
   /// Check base membership on app start — show trial welcome or purchase dialog
+  /// Suppressed during countdown phase (pre-launch)
   void _checkBaseMembership(Profile profile) {
     if (_membershipCheckDone) return;
+
+    // Suppress all membership popups during countdown phase
+    if (_accessData != null && _accessData!.isCountdownActive) {
+      _membershipCheckDone = true;
+      return;
+    }
+
     _membershipCheckDone = true;
 
     // If user has an active trial membership, show one-time welcome popup
@@ -303,10 +311,17 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   /// Directly fetch profile from Firestore and trigger membership check
   /// This is a fallback in case the BlocListener doesn't fire
+  /// Suppressed during countdown phase (pre-launch)
   Future<void> _checkBaseMembershipDirect() async {
     // Wait for widget tree to be fully built
     await Future.delayed(const Duration(seconds: 2));
     if (!mounted || _membershipCheckDone) return;
+
+    // Suppress during countdown phase
+    if (_accessData != null && _accessData!.isCountdownActive) {
+      _membershipCheckDone = true;
+      return;
+    }
 
     try {
       final doc = await FirebaseFirestore.instance

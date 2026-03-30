@@ -315,6 +315,14 @@ class AdminDashboardScreen extends StatelessWidget {
       children: [
         if (_hasPermission(Permission.systemSettings))
           _AdminMenuItem(
+            icon: Icons.shopping_bag,
+            iconColor: Colors.deepPurple,
+            title: 'Pre-Sale Management',
+            subtitle: 'Manage pre-sale tiers & CSV import',
+            onTap: () => _navigateTo(context, 'pre_sale'),
+          ),
+        if (_hasPermission(Permission.systemSettings))
+          _AdminMenuItem(
             icon: Icons.stars,
             iconColor: AppColors.richGold,
             title: l10n.adminEarlyAccessList,
@@ -477,6 +485,12 @@ class AdminDashboardScreen extends StatelessWidget {
       case 'reports':
         Navigator.of(context).pushNamed(
           '/admin/reports',
+          arguments: adminId,
+        );
+        break;
+      case 'pre_sale':
+        Navigator.of(context).pushNamed(
+          '/admin/pre_sale',
           arguments: adminId,
         );
         break;

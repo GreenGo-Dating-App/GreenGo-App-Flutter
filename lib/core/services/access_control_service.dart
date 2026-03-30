@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/foundation.dart';
 import '../../features/subscription/domain/entities/subscription.dart';
 import 'early_access_service.dart';
+import 'pre_sale_service.dart';
 
 /// Approval status for user accounts
 enum ApprovalStatus {
@@ -47,6 +48,10 @@ class UserAccessData {
   final bool notificationsEnabled;
   final bool hasEarlyAccess;
   final bool isAdmin;
+  final String? preSaleTier;
+  final int? preSaleNumberOfDays;
+  final DateTime? subscriptionExpiryDate;
+  final DateTime? baseMembershipExpiryDate;
 
   UserAccessData({
     required this.userId,
@@ -58,6 +63,10 @@ class UserAccessData {
     this.notificationsEnabled = false,
     this.hasEarlyAccess = false,
     this.isAdmin = false,
+    this.preSaleTier,
+    this.preSaleNumberOfDays,
+    this.subscriptionExpiryDate,
+    this.baseMembershipExpiryDate,
   });
 
   factory UserAccessData.fromFirestore(Map<String, dynamic> data, String docId) {
@@ -87,6 +96,14 @@ class UserAccessData {
       notificationsEnabled: data['notificationsEnabled'] as bool? ?? false,
       hasEarlyAccess: data['hasEarlyAccess'] as bool? ?? false,
       isAdmin: data['isAdmin'] as bool? ?? false,
+      preSaleTier: data['preSaleTier'] as String?,
+      preSaleNumberOfDays: data['preSaleNumberOfDays'] as int?,
+      subscriptionExpiryDate: data['subscriptionExpiryDate'] != null
+          ? (data['subscriptionExpiryDate'] as Timestamp).toDate()
+          : null,
+      baseMembershipExpiryDate: data['baseMembershipExpiryDate'] != null
+          ? (data['baseMembershipExpiryDate'] as Timestamp).toDate()
+          : null,
     );
   }
 
@@ -100,6 +117,12 @@ class UserAccessData {
       'notificationsEnabled': notificationsEnabled,
       'hasEarlyAccess': hasEarlyAccess,
       'isAdmin': isAdmin,
+      if (preSaleTier != null) 'preSaleTier': preSaleTier,
+      if (preSaleNumberOfDays != null) 'preSaleNumberOfDays': preSaleNumberOfDays,
+      if (subscriptionExpiryDate != null)
+        'subscriptionExpiryDate': Timestamp.fromDate(subscriptionExpiryDate!),
+      if (baseMembershipExpiryDate != null)
+        'baseMembershipExpiryDate': Timestamp.fromDate(baseMembershipExpiryDate!),
     };
   }
 
@@ -251,13 +274,17 @@ class AccessControlService {
     }
   }
 
+  final PreSaleService _preSaleService;
+
   AccessControlService({
     FirebaseFirestore? firestore,
     auth.FirebaseAuth? firebaseAuth,
     EarlyAccessService? earlyAccessService,
+    PreSaleService? preSaleService,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = firebaseAuth ?? auth.FirebaseAuth.instance,
-        _earlyAccessService = earlyAccessService ?? EarlyAccessService();
+        _earlyAccessService = earlyAccessService ?? EarlyAccessService(),
+        _preSaleService = preSaleService ?? PreSaleService();
 
   /// Get current user's access data
   /// When [forceServer] is true, bypasses Firestore cache to get fresh data.
@@ -348,21 +375,67 @@ class AccessControlService {
 
   /// Initialize user access data on registration
   /// Access date is determined by:
-  /// 1. Email in early access CSV list -> March 14, 2026 (same as Platinum)
-  /// 2. Subscription tier -> Platinum March 14, Gold March 28, Silver April 7
-  /// 3. All other users -> April 14, 2026 (official release)
+  /// 1. Email in pre_sale collection -> tier-specific countdown date
+  /// 2. Email in early access CSV list -> March 14, 2026 (same as Platinum)
+  /// 3. Subscription tier -> Platinum March 14, Gold March 28, Silver April 7
+  /// 4. All other users -> April 14, 2026 (official release)
   Future<void> initializeUserAccess({
     required String userId,
     String? email,
     SubscriptionTier tier = SubscriptionTier.basic,
   }) async {
-    // Check if email is in early access list
+    // 1. Check pre-sale collection first (highest priority)
+    PreSaleEntry? preSaleEntry;
+    if (email != null) {
+      preSaleEntry = await _preSaleService.getPreSaleEntry(email);
+    }
+
+    if (preSaleEntry != null) {
+      // Pre-sale user: assign tier, countdown date, and subscription expiry
+      final preSaleTier = preSaleEntry.tier;
+      final accessDate = PreSaleService.getCountdownEndDate(preSaleTier);
+      final subscriptionExpiry = PreSaleService.calculateSubscriptionExpiry(
+        preSaleTier, preSaleEntry.numberOfDays,
+      );
+      final baseMembershipExpiry = subscriptionExpiry; // Same as subscription
+
+      // Map pre-sale tier to subscription tier
+      final SubscriptionTier mappedTier;
+      switch (preSaleTier) {
+        case PreSaleTier.platinum:
+          mappedTier = SubscriptionTier.platinum;
+        case PreSaleTier.gold:
+          mappedTier = SubscriptionTier.gold;
+        case PreSaleTier.silver:
+          mappedTier = SubscriptionTier.silver;
+      }
+
+      await _firestore.collection('users').doc(userId).set({
+        'approvalStatus': ApprovalStatus.pending.name,
+        'accessDate': Timestamp.fromDate(accessDate),
+        'membershipTier': mappedTier.name.toLowerCase(),
+        'hasEarlyAccess': true,
+        'preSaleTier': preSaleTier.value,
+        'preSaleNumberOfDays': preSaleEntry.numberOfDays,
+        'subscriptionExpiryDate': Timestamp.fromDate(subscriptionExpiry),
+        'baseMembershipExpiryDate': Timestamp.fromDate(baseMembershipExpiry),
+        'notificationsEnabled': false,
+        'createdAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+
+      debugPrint('Pre-sale user registered: ${preSaleEntry.email} '
+          'tier=${preSaleTier.displayName} days=${preSaleEntry.numberOfDays} '
+          'access=$accessDate expires=$subscriptionExpiry');
+      return;
+    }
+
+    // 2. Check early access list
     bool hasEarlyAccess = false;
     if (email != null) {
       hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
     }
 
-    // Determine access date: early access list takes priority, then tier-based
+    // 3. Determine access date: early access list takes priority, then tier-based
     final DateTime accessDate;
     if (hasEarlyAccess) {
       accessDate = earlyAccessDate; // Same as Platinum
