@@ -31,6 +31,8 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
   late AnimationController _pulseController;
   late Animation<double> _pulseAnimation;
 
+  static const String _fontFamily = 'Poppins';
+
   @override
   void initState() {
     super.initState();
@@ -99,7 +101,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                   ScaleTransition(
                     scale: _pulseAnimation,
                     child: const AnimatedLuxuryLogo(
-                      assetPath: 'assets/images/greengo_main_logo_gold.png',
+                      assetPath: 'assets/images/greengo_logo.png',
                       size: 100,
                     ),
                   ),
@@ -110,6 +112,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                   const Text(
                     'Almost There!',
                     style: TextStyle(
+                      fontFamily: _fontFamily,
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
                       color: AppColors.richGold,
@@ -147,6 +150,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                               ? 'VIP Early Access'
                               : 'Launch Date: ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}',
                           style: TextStyle(
+                            fontFamily: _fontFamily,
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: hasEarlyAccess ? AppColors.richGold : Colors.white,
@@ -180,6 +184,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                       label: Text(
                         'Log Out',
                         style: TextStyle(
+                          fontFamily: _fontFamily,
                           color: Colors.white.withOpacity(0.6),
                           fontSize: 14,
                         ),
@@ -222,6 +227,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
           const Text(
             'Time Until Launch',
             style: TextStyle(
+              fontFamily: _fontFamily,
               fontSize: 16,
               fontWeight: FontWeight.w600,
               color: Colors.white,
@@ -258,6 +264,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
           child: Text(
             value,
             style: const TextStyle(
+              fontFamily: _fontFamily,
               fontSize: 28,
               fontWeight: FontWeight.bold,
               color: AppColors.richGold,
@@ -269,6 +276,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
         Text(
           label,
           style: TextStyle(
+            fontFamily: _fontFamily,
             fontSize: 11,
             fontWeight: FontWeight.w500,
             color: Colors.white.withOpacity(0.6),
@@ -285,6 +293,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
       child: Text(
         ':',
         style: TextStyle(
+          fontFamily: _fontFamily,
           fontSize: 28,
           fontWeight: FontWeight.bold,
           color: AppColors.richGold,
@@ -323,6 +332,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                 const Text(
                   'Want Earlier Access?',
                   style: TextStyle(
+                    fontFamily: _fontFamily,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: AppColors.richGold,
@@ -332,6 +342,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                 Text(
                   'Upgrade your tier to get earlier access before ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}!',
                   style: TextStyle(
+                    fontFamily: _fontFamily,
                     fontSize: 12,
                     color: Colors.white.withOpacity(0.8),
                   ),
