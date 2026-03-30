@@ -80,6 +80,12 @@ android {
             // TODO: Re-enable and fix ProGuard rules for ML Kit
             isMinifyEnabled = false
             isShrinkResources = false
+
+            // Skip native debug symbol stripping (SDK path contains spaces
+            // which breaks NDK strip tool)
+            ndk {
+                debugSymbolLevel = "none"
+            }
         }
     }
 }
