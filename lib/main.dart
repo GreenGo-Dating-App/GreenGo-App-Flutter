@@ -74,6 +74,8 @@ import 'core/services/app_sound_service.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'features/profile/presentation/screens/reverification_screen.dart';
 import 'features/admin/presentation/screens/admin_2fa_screen.dart';
+import 'package:get_it/get_it.dart';
+import 'features/discovery/data/datasources/discovery_remote_datasource.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -657,6 +659,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
   }
 
   void _handleSignOut() {
+    // Clear discovery caches before signing out (same as profile logout)
+    try {
+      final datasource = GetIt.I<DiscoveryRemoteDataSource>();
+      datasource.clearAllDiscoveryCaches();
+    } catch (_) {}
     context.read<AuthBloc>().add(AuthSignOutRequested());
     setState(() {
       _accessData = null;

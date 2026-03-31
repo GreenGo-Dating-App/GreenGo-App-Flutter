@@ -17100,6 +17100,18 @@ abstract class AppLocalizations {
   /// **'Time till you\'ll be eligible to use the app'**
   String get waitingExclusiveAccess;
 
+  /// No description provided for @waitingGeneralLaunchDate.
+  ///
+  /// In en, this message translates to:
+  /// **'General Launch Date'**
+  String get waitingGeneralLaunchDate;
+
+  /// No description provided for @waitingYourAccessDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Access Date'**
+  String get waitingYourAccessDate;
+
   /// No description provided for @waitingForPlayers.
   ///
   /// In en, this message translates to:

@@ -9566,6 +9566,12 @@ class AppLocalizationsEn extends AppLocalizations {
       'Time till you\'ll be eligible to use the app';
 
   @override
+  String get waitingGeneralLaunchDate => 'General Launch Date';
+
+  @override
+  String get waitingYourAccessDate => 'Your Access Date';
+
+  @override
   String get waitingForPlayers => 'Waiting for players...';
 
   @override
