@@ -9537,7 +9537,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get waitingCountdownLabel => 'App Launch Countdown';
+  String get waitingCountdownLabel => 'Your Launch Date';
 
   @override
   String get waitingCountdownSubtitle =>
@@ -9562,7 +9562,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get waitingEnableNotificationsTitle => 'Stay Updated';
 
   @override
-  String get waitingExclusiveAccess => 'Your exclusive access date';
+  String get waitingExclusiveAccess =>
+      'Time till you\'ll be eligible to use the app';
 
   @override
   String get waitingForPlayers => 'Waiting for players...';

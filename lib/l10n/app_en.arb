@@ -4629,7 +4629,7 @@
       }
     }
   },
-  "waitingCountdownLabel": "App Launch Countdown",
+  "waitingCountdownLabel": "Your Launch Date",
   "waitingCountdownSubtitle": "Thank you for registering! GreenGo Chat is launching soon. Get ready for an exclusive experience.",
   "waitingCountdownTitle": "Countdown to Launch",
   "waitingDaysRemaining": "{days} days",
@@ -4643,7 +4643,7 @@
   "waitingEarlyAccessMember": "Early Access Member",
   "waitingEnableNotificationsSubtitle": "Enable notifications to be the first to know when you can access the app.",
   "waitingEnableNotificationsTitle": "Stay Updated",
-  "waitingExclusiveAccess": "Your exclusive access date",
+  "waitingExclusiveAccess": "Time till you'll be eligible to use the app",
   "waitingForPlayers": "Waiting for players...",
   "waitingForVerification": "Waiting for verification...",
   "waitingHoursRemaining": "{hours} hours",

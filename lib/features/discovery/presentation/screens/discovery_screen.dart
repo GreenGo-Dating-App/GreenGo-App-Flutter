@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/services/presence_service.dart';
+import '../../../../core/services/access_control_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -514,13 +515,17 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
               );
             }
             // Show popup when worldwide fallback was used (< 500 in country, once per session)
-            // Only show for users with active base membership
+            // Only show for users with active base membership AND after countdown is over
             if (state is DiscoveryLoaded && !_shownSmallCountryPopup) {
               _shownSmallCountryPopup = true;
               final hasBaseMembership = _currentUserProfile?.isBaseMembershipActive ?? false;
               if (state.usedWorldwideFallback && hasBaseMembership) {
-                WidgetsBinding.instance.addPostFrameCallback((_) {
-                  if (mounted) _showSmallCountryPopup(context);
+                AccessControlService().getCurrentUserAccess().then((accessData) {
+                  if (accessData != null && !accessData.isCountdownActive && mounted) {
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      if (mounted) _showSmallCountryPopup(context);
+                    });
+                  }
                 });
               }
             }

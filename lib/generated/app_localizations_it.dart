@@ -9650,7 +9650,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get waitingCountdownLabel => 'Conto alla rovescia per il lancio';
+  String get waitingCountdownLabel => 'La tua data di lancio';
 
   @override
   String get waitingCountdownSubtitle =>
@@ -9675,7 +9675,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get waitingEnableNotificationsTitle => 'Rimani aggiornato';
 
   @override
-  String get waitingExclusiveAccess => 'La tua data di accesso esclusivo';
+  String get waitingExclusiveAccess => 'Tempo rimanente per poter usare l\'app';
 
   @override
   String get waitingForPlayers => 'In attesa dei giocatori...';
