@@ -9678,6 +9678,12 @@ class AppLocalizationsIt extends AppLocalizations {
   String get waitingExclusiveAccess => 'Tempo rimanente per poter usare l\'app';
 
   @override
+  String get waitingGeneralLaunchDate => 'Data di lancio generale';
+
+  @override
+  String get waitingYourAccessDate => 'La tua data di accesso';
+
+  @override
   String get waitingForPlayers => 'In attesa dei giocatori...';
 
   @override

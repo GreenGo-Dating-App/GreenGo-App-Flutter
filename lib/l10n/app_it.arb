@@ -3341,6 +3341,8 @@
   "waitingEnableNotificationsSubtitle": "Attiva le notifiche per essere il primo a sapere quando puoi accedere all'app.",
   "waitingEnableNotificationsTitle": "Rimani aggiornato",
   "waitingExclusiveAccess": "Tempo rimanente per poter usare l'app",
+  "waitingGeneralLaunchDate": "Data di lancio generale",
+  "waitingYourAccessDate": "La tua data di accesso",
   "waitingForPlayers": "In attesa dei giocatori...",
   "waitingForVerification": "In attesa di verifica...",
   "waitingHoursRemaining": "{hours} ore",

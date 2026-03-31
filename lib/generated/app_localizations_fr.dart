@@ -9721,6 +9721,12 @@ class AppLocalizationsFr extends AppLocalizations {
       'Temps restant avant de pouvoir utiliser l\'app';
 
   @override
+  String get waitingGeneralLaunchDate => 'Date de lancement général';
+
+  @override
+  String get waitingYourAccessDate => 'Votre date d\'accès';
+
+  @override
   String get waitingForPlayers => 'En attente des joueurs...';
 
   @override

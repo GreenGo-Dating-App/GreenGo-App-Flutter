@@ -284,10 +284,14 @@ class _WaitingScreenState extends State<WaitingScreen>
     UserAccessData accessData,
     BoxConstraints constraints,
   ) {
+    final generalDate = AccessControlService.generalAccessDate;
+    final userDate = accessData.accessDate;
+    final hasEarlierAccess = userDate.isBefore(generalDate);
+
     return Column(
       children: [
         LuxuryCountdownWidget(
-          targetDate: accessData.accessDate,
+          targetDate: userDate,
           title: l10n.waitingCountdownLabel,
           subtitle: accessData.hasEarlyAccess
               ? l10n.waitingEarlyAccessMember
@@ -296,9 +300,109 @@ class _WaitingScreenState extends State<WaitingScreen>
           compact: constraints.maxHeight < 700,
         ),
         const SizedBox(height: 16),
+        // Show general launch date and user's own access date
+        _buildDateInfoSection(context, l10n, generalDate, userDate, hasEarlierAccess),
+        const SizedBox(height: 16),
         _buildNotificationReminder(context, l10n, accessData),
       ],
     );
+  }
+
+  Widget _buildDateInfoSection(
+    BuildContext context,
+    AppLocalizations l10n,
+    DateTime generalDate,
+    DateTime userDate,
+    bool hasEarlierAccess,
+  ) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.richGold.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: AppColors.richGold.withValues(alpha: 0.2),
+        ),
+      ),
+      child: Column(
+        children: [
+          // General launch date
+          Row(
+            children: [
+              Icon(
+                Icons.rocket_launch,
+                color: Colors.white.withValues(alpha: 0.7),
+                size: 18,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                l10n.waitingGeneralLaunchDate,
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.white.withValues(alpha: 0.7),
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const Spacer(),
+              Text(
+                _formatDate(generalDate),
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.white.withValues(alpha: 0.9),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+          // User's own access date (if different from general)
+          if (hasEarlierAccess) ...[
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Divider(
+                color: AppColors.richGold.withValues(alpha: 0.2),
+                height: 1,
+              ),
+            ),
+            Row(
+              children: [
+                const Icon(
+                  Icons.star,
+                  color: AppColors.richGold,
+                  size: 18,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  l10n.waitingYourAccessDate,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    color: AppColors.richGold,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const Spacer(),
+                Text(
+                  _formatDate(userDate),
+                  style: const TextStyle(
+                    fontSize: 13,
+                    color: AppColors.richGold,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  String _formatDate(DateTime date) {
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    return '${months[date.month - 1]} ${date.day}, ${date.year}';
   }
 
   Widget _buildNotificationReminder(

@@ -9656,6 +9656,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get waitingExclusiveAccess => 'Tempo até poder usar a app';
 
   @override
+  String get waitingGeneralLaunchDate => 'Data de lançamento geral';
+
+  @override
+  String get waitingYourAccessDate => 'A sua data de acesso';
+
+  @override
   String get waitingForPlayers => 'À espera de jogadores...';
 
   @override
@@ -19884,6 +19890,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get waitingExclusiveAccess => 'Tempo até você poder usar o app';
+
+  @override
+  String get waitingGeneralLaunchDate => 'Data de lançamento geral';
+
+  @override
+  String get waitingYourAccessDate => 'Sua data de acesso';
 
   @override
   String get waitingForPlayers => 'Aguardando jogadores...';

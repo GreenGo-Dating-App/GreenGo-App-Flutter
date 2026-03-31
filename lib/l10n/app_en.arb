@@ -4644,6 +4644,8 @@
   "waitingEnableNotificationsSubtitle": "Enable notifications to be the first to know when you can access the app.",
   "waitingEnableNotificationsTitle": "Stay Updated",
   "waitingExclusiveAccess": "Time till you'll be eligible to use the app",
+  "waitingGeneralLaunchDate": "General Launch Date",
+  "waitingYourAccessDate": "Your Access Date",
   "waitingForPlayers": "Waiting for players...",
   "waitingForVerification": "Waiting for verification...",
   "waitingHoursRemaining": "{hours} hours",
