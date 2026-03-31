@@ -17055,7 +17055,7 @@ abstract class AppLocalizations {
   /// No description provided for @waitingCountdownLabel.
   ///
   /// In en, this message translates to:
-  /// **'App Launch Countdown'**
+  /// **'Your Launch Date'**
   String get waitingCountdownLabel;
 
   /// No description provided for @waitingCountdownSubtitle.
@@ -17097,7 +17097,7 @@ abstract class AppLocalizations {
   /// No description provided for @waitingExclusiveAccess.
   ///
   /// In en, this message translates to:
-  /// **'Your exclusive access date'**
+  /// **'Time till you\'ll be eligible to use the app'**
   String get waitingExclusiveAccess;
 
   /// No description provided for @waitingForPlayers.

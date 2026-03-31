@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -33,9 +33,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     setState(() => _isLoading = true);
 
     try {
-      await FirebaseAuth.instance.sendPasswordResetEmail(
-        email: _emailController.text.trim(),
-      );
+      await FirebaseFunctions.instance
+          .httpsCallable('sendPasswordResetViaResend')
+          .call({'email': _emailController.text.trim()});
 
       if (!mounted) return;
 
@@ -79,18 +79,15 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
       if (!mounted) return;
       Navigator.of(context).pop(); // Return to login
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseFunctionsException catch (e) {
       if (!mounted) return;
       String message;
       switch (e.code) {
-        case 'user-not-found':
-          message = 'No account found with this email address.';
-          break;
-        case 'invalid-email':
+        case 'invalid-argument':
           message = 'Invalid email address.';
           break;
-        case 'too-many-requests':
-          message = 'Too many requests. Please try again later.';
+        case 'unavailable':
+          message = 'Service temporarily unavailable. Please try again later.';
           break;
         default:
           message = e.message ?? 'Failed to send reset email. Please try again.';

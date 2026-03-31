@@ -9628,7 +9628,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get waitingCountdownLabel => 'Contagem decrescente para o lançamento';
+  String get waitingCountdownLabel => 'A sua data de lançamento';
 
   @override
   String get waitingCountdownSubtitle =>
@@ -9653,7 +9653,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get waitingEnableNotificationsTitle => 'Mantenha-se atualizado';
 
   @override
-  String get waitingExclusiveAccess => 'A sua data de acesso exclusivo';
+  String get waitingExclusiveAccess => 'Tempo até poder usar a app';
 
   @override
   String get waitingForPlayers => 'À espera de jogadores...';
@@ -19858,7 +19858,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get waitingCountdownLabel => 'Contagem regressiva para o lançamento';
+  String get waitingCountdownLabel => 'Sua data de lançamento';
 
   @override
   String get waitingCountdownSubtitle =>
@@ -19883,7 +19883,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get waitingEnableNotificationsTitle => 'Fique por dentro';
 
   @override
-  String get waitingExclusiveAccess => 'Sua data de acesso exclusivo';
+  String get waitingExclusiveAccess => 'Tempo até você poder usar o app';
 
   @override
   String get waitingForPlayers => 'Aguardando jogadores...';
