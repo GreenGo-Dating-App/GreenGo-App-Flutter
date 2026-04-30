@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../authentication/presentation/bloc/auth_bloc.dart';
+import '../../../authentication/presentation/bloc/auth_event.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/app_config.dart';
@@ -1303,9 +1305,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       return CountdownBlurOverlay(
         accessData: overlayAccessData,
         onLogout: () async {
-          await FirebaseAuth.instance.signOut();
+          context.read<AuthBloc>().add(const AuthSignOutRequested());
           if (context.mounted) {
-            Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+            Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
           }
         },
         child: scaffold,

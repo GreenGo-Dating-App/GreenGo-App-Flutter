@@ -106,7 +106,7 @@ class _PaymentResultScreenState extends State<PaymentResultScreen> {
         (route) => false,
       );
     } else {
-      Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
+      Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
     }
   }
 
