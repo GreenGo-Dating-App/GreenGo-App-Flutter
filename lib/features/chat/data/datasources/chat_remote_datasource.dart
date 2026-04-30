@@ -91,6 +91,20 @@ abstract class ChatRemoteDataSource {
     required bool isMuted,
   });
 
+  /// Per-user mute (recipient-side). Writes to conversations.mutedBy map.
+  Future<void> setConversationMutedForUser({
+    required String conversationId,
+    required String userId,
+    required bool isMuted,
+    DateTime? mutedUntil,
+  });
+
+  /// Returns true if [userId] muted [conversationId] (and the mute hasn't expired).
+  Future<bool> isConversationMutedForUser({
+    required String conversationId,
+    required String userId,
+  });
+
   /// Archive conversation
   Future<void> archiveConversation({
     required String conversationId,
@@ -883,6 +897,52 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .update(updateData);
     } catch (e) {
       throw Exception('Failed to mute conversation: $e');
+    }
+  }
+
+  /// Per-user mute. Writes to `conversations/{convId}.mutedBy[userId]`.
+  /// Value semantics: 0 = muted forever, otherwise epoch ms expiry.
+  /// Cloud Function `onNewMessagePush` reads this map to skip push for muted recipient.
+  Future<void> setConversationMutedForUser({
+    required String conversationId,
+    required String userId,
+    required bool isMuted,
+    DateTime? mutedUntil,
+  }) async {
+    try {
+      if (isMuted) {
+        final value = mutedUntil != null ? mutedUntil.millisecondsSinceEpoch : 0;
+        await firestore.collection('conversations').doc(conversationId).set({
+          'mutedBy': {userId: value},
+        }, SetOptions(merge: true));
+      } else {
+        await firestore.collection('conversations').doc(conversationId).update({
+          'mutedBy.$userId': FieldValue.delete(),
+        });
+      }
+    } catch (e) {
+      throw Exception('Failed to set conversation mute: $e');
+    }
+  }
+
+  /// Returns true if [userId] has muted [conversationId] and the mute hasn't expired.
+  Future<bool> isConversationMutedForUser({
+    required String conversationId,
+    required String userId,
+  }) async {
+    try {
+      final doc =
+          await firestore.collection('conversations').doc(conversationId).get();
+      if (!doc.exists) return false;
+      final mutedBy = doc.data()?['mutedBy'] as Map<String, dynamic>?;
+      if (mutedBy == null) return false;
+      final value = mutedBy[userId];
+      if (value == null) return false;
+      if (value == 0) return true;
+      final expiry = (value as num).toInt();
+      return expiry > DateTime.now().millisecondsSinceEpoch;
+    } catch (_) {
+      return false;
     }
   }
 

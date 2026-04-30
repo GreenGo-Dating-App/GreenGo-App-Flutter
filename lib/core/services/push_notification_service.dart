@@ -1,9 +1,12 @@
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import '../../../features/chat/presentation/screens/support_chat_screen.dart';
+import '../../../features/chat/presentation/screens/chat_screen.dart';
+import '../../../features/profile/data/models/profile_model.dart';
 
 /// Top-level background message handler (must be a top-level function)
 @pragma('vm:entry-point')
@@ -48,6 +51,12 @@ class PushNotificationService {
   Future<void> initialize() async {
     if (_isInitialized) return;
 
+    // Skip on web — uses a different (service-worker) flow.
+    if (kIsWeb) {
+      _isInitialized = true;
+      return;
+    }
+
     // Register background handler
     FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
@@ -86,7 +95,7 @@ class PushNotificationService {
       _handleNotificationTap(initialMessage);
     }
 
-    // Listen for token refresh
+    // Listen for token refresh — persist new token immediately
     FirebaseMessaging.instance.onTokenRefresh.listen(_handleTokenRefresh);
 
     _isInitialized = true;
@@ -102,15 +111,25 @@ class PushNotificationService {
 
     // Suppress notification if user is currently viewing this conversation
     final incomingConvId = message.data['conversationId'];
-    if (incomingConvId != null &&
-        incomingConvId == activeConversationId) {
+    if (incomingConvId != null && incomingConvId == activeConversationId) {
       debugPrint('[FCM] Suppressed notification for active conversation $incomingConvId');
       return;
     }
 
-    // Show local notification so user sees it in foreground
+    // Group key for stacking per-conversation
+    final groupKey = (incomingConvId is String && incomingConvId.isNotEmpty)
+        ? 'conversation_$incomingConvId'
+        : null;
+    final tag = (incomingConvId is String && incomingConvId.isNotEmpty)
+        ? incomingConvId
+        : null;
+
+    // Notification ID: use conversationId hash so subsequent messages from the same
+    // conversation REPLACE the existing card (WhatsApp behavior) rather than stacking.
+    final notifId = tag != null ? tag.hashCode : notification.hashCode;
+
     await _localNotifications.show(
-      notification.hashCode,
+      notifId,
       notification.title ?? 'GreenGo',
       notification.body ?? '',
       NotificationDetails(
@@ -121,11 +140,15 @@ class PushNotificationService {
           importance: Importance.high,
           priority: Priority.high,
           icon: '@drawable/ic_launcher_foreground',
+          tag: tag,
+          groupKey: groupKey,
+          setAsGroupSummary: false,
         ),
-        iOS: const DarwinNotificationDetails(
+        iOS: DarwinNotificationDetails(
           presentAlert: true,
           presentBadge: true,
           presentSound: true,
+          threadIdentifier: groupKey,
         ),
       ),
       payload: jsonEncode(message.data),
@@ -151,7 +174,7 @@ class PushNotificationService {
   }
 
   /// Navigate based on notification data payload
-  void _navigateFromNotificationData(Map<String, dynamic> data) {
+  Future<void> _navigateFromNotificationData(Map<String, dynamic> data) async {
     final action = data['action'] as String?;
     final type = data['type'] as String?;
     final conversationId = data['conversationId'] as String?;
@@ -163,8 +186,8 @@ class PushNotificationService {
       return;
     }
 
-    // Support message notification → open the support chat
-    if ((action == 'support_message' || type == 'support_message') &&
+    // Support message → support chat
+    if ((action == 'support_message' || type == 'support_message' || type == 'supportReply' || type == 'supportMessage') &&
         conversationId != null) {
       navigator.push(
         MaterialPageRoute(
@@ -174,14 +197,117 @@ class PushNotificationService {
           ),
         ),
       );
+      return;
+    }
+
+    // Regular message → chat screen
+    if (type == 'newMessage' && conversationId != null) {
+      await _openChatScreen(conversationId: conversationId, currentUserId: userId);
+      return;
+    }
+
+    // Match — open chat with matched user (matchId == conversationId in this app)
+    if (type == 'newMatch') {
+      final matchId = data['matchId'] as String?;
+      if (matchId != null) {
+        await _openChatScreen(conversationId: matchId, currentUserId: userId);
+      }
+      return;
     }
   }
 
-  /// Handle FCM token refresh — save new token to Firestore
+  /// Open ChatScreen for a given conversation. Fetches participants + other-user
+  /// profile from Firestore. Silent no-op on failure.
+  Future<void> _openChatScreen({
+    required String conversationId,
+    required String currentUserId,
+  }) async {
+    final navigator = navigatorKey.currentState;
+    if (navigator == null) return;
+
+    try {
+      final firestore = FirebaseFirestore.instance;
+
+      // Look up conversation to find participants
+      final convDoc =
+          await firestore.collection('conversations').doc(conversationId).get();
+      List<String> participants = [];
+      if (convDoc.exists) {
+        participants =
+            (convDoc.data()?['participants'] as List?)?.cast<String>() ?? [];
+      }
+
+      // Fall back to matches doc (matchId == conversationId)
+      if (participants.isEmpty) {
+        final matchDoc =
+            await firestore.collection('matches').doc(conversationId).get();
+        if (matchDoc.exists) {
+          final m = matchDoc.data()!;
+          participants = [
+            (m['userId1'] as String?) ?? '',
+            (m['userId2'] as String?) ?? '',
+          ].where((s) => s.isNotEmpty).toList();
+        }
+      }
+
+      if (participants.isEmpty) {
+        debugPrint('[FCM] No participants for conversation $conversationId');
+        return;
+      }
+
+      final otherUserId = participants.firstWhere(
+        (id) => id != currentUserId,
+        orElse: () => '',
+      );
+      if (otherUserId.isEmpty) return;
+
+      final profileDoc =
+          await firestore.collection('profiles').doc(otherUserId).get();
+      if (!profileDoc.exists) {
+        debugPrint('[FCM] Other user profile $otherUserId not found');
+        return;
+      }
+
+      final profile = ProfileModel.fromFirestore(profileDoc);
+
+      navigator.push(
+        MaterialPageRoute(
+          builder: (_) => ChatScreen(
+            matchId: conversationId,
+            currentUserId: currentUserId,
+            otherUserId: otherUserId,
+            otherUserProfile: profile,
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('[FCM] _openChatScreen error: $e');
+    }
+  }
+
+  /// Handle FCM token refresh — persist new token immediately so the user
+  /// keeps receiving pushes even if the token rotates mid-session.
   void _handleTokenRefresh(String token) {
     debugPrint('[FCM] Token refreshed');
-    // Token will be saved on next app start via the existing flow
-    // The token is also refreshed in the notification datasource
+    final userId = currentUserId;
+    if (userId == null) return;
+    final tokenData = {
+      'fcmToken': token,
+      'fcmTokenUpdatedAt': Timestamp.now(),
+    };
+    Future.wait([
+      FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(userId)
+          .set(tokenData, SetOptions(merge: true)),
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .set(tokenData, SetOptions(merge: true)),
+    ]).catchError((e) {
+      debugPrint('[FCM] Token refresh save error: $e');
+      return <void>[];
+    });
   }
 }
 

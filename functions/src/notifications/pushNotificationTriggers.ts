@@ -11,6 +11,42 @@ import { logInfo, logError } from '../shared/utils';
 const db = admin.firestore();
 const messaging = admin.messaging();
 
+// Maps notification "type" to the flat boolean field used by the Flutter app.
+const TYPE_TO_PREF_FIELD: Record<string, string> = {
+  newMessage: 'newMessageNotifications',
+  newMatch: 'newMatchNotifications',
+  newLike: 'newLikeNotifications',
+  superLike: 'superLikeNotifications',
+  profileView: 'profileViewNotifications',
+  matchExpiring: 'matchExpiringNotifications',
+};
+
+interface SendOptions {
+  imageUrl?: string;
+  collapseKey?: string; // Android tag + APNs apns-collapse-id (used for replace-in-tray)
+  threadId?: string; // iOS group key
+  isCritical?: boolean; // bypasses quiet hours, sets time-sensitive on iOS
+}
+
+function isInQuietHours(prefs: any): boolean {
+  if (!prefs?.quietHoursEnabled) return false;
+  const start = prefs.quietHoursStart;
+  const end = prefs.quietHoursEnd;
+  if (!start || !end) return false;
+  const now = new Date();
+  // Note: quiet hours interpreted in UTC. Future improvement: honor user TZ.
+  const cur = now.getUTCHours() * 60 + now.getUTCMinutes();
+  const [sh, sm] = String(start).split(':').map(Number);
+  const [eh, em] = String(end).split(':').map(Number);
+  if ([sh, sm, eh, em].some((n) => Number.isNaN(n))) return false;
+  const startMin = sh * 60 + sm;
+  const endMin = eh * 60 + em;
+  if (startMin === endMin) return false;
+  if (startMin < endMin) return cur >= startMin && cur < endMin;
+  // Crosses midnight
+  return cur >= startMin || cur < endMin;
+}
+
 /**
  * Helper: Send FCM push notification to a user
  * Reads FCM token, checks notification preferences, sends via FCM, and writes in-app notification
@@ -21,6 +57,7 @@ async function sendPushToUser(
   title: string,
   body: string,
   data?: Record<string, string>,
+  options?: SendOptions,
 ): Promise<boolean> {
   try {
     const userDoc = await db.collection('users').doc(userId).get();
@@ -32,37 +69,53 @@ async function sendPushToUser(
     const userData = userDoc.data()!;
     const fcmToken = userData.fcmToken;
 
-    if (!fcmToken) {
-      logInfo(`sendPushToUser: No FCM token for user ${userId}`);
-      // Still write in-app notification even without FCM token
-      await db.collection('notifications').add({
-        userId,
-        type,
-        title,
-        body,
-        createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        isRead: false,
-        ...(data || {}),
-      });
-      return false;
-    }
-
-    // Check notification preferences
+    // Notification preferences
     const prefsDoc = await db.collection('notification_preferences').doc(userId).get();
     if (prefsDoc.exists) {
       const prefs = prefsDoc.data()!;
+
+      // Master toggle (only blocks push, not in-app)
+      if (prefs.pushNotificationsEnabled === false) {
+        logInfo(`sendPushToUser: Push disabled (master) for user ${userId}`);
+        await writeInAppNotification(userId, type, title, body, data);
+        return false;
+      }
+
+      // Per-type toggle (flat field shape used by Flutter app)
+      const fieldName = TYPE_TO_PREF_FIELD[type];
+      if (fieldName && prefs[fieldName] === false) {
+        logInfo(`sendPushToUser: Type ${type} disabled for user ${userId}`);
+        await writeInAppNotification(userId, type, title, body, data);
+        return false;
+      }
+
+      // Legacy enabledTypes map shape (backward compat)
       if (prefs.enabledTypes && prefs.enabledTypes[type] === false) {
-        logInfo(`sendPushToUser: Notification type ${type} disabled for user ${userId}`);
+        await writeInAppNotification(userId, type, title, body, data);
+        return false;
+      }
+
+      // Quiet hours (skip suppression for critical notifications)
+      if (!options?.isCritical && isInQuietHours(prefs)) {
+        logInfo(`sendPushToUser: In quiet hours for user ${userId}`);
+        await writeInAppNotification(userId, type, title, body, data);
         return false;
       }
     }
 
-    // Send FCM notification
+    if (!fcmToken) {
+      logInfo(`sendPushToUser: No FCM token for user ${userId}`);
+      await writeInAppNotification(userId, type, title, body, data);
+      return false;
+    }
+
+    // Build FCM message
     const message: admin.messaging.Message = {
       token: fcmToken,
       notification: {
         title,
         body,
+        ...(options?.imageUrl ? { imageUrl: options.imageUrl } : {}),
       },
       data: {
         type,
@@ -71,47 +124,41 @@ async function sendPushToUser(
       },
       android: {
         priority: 'high',
+        ...(options?.collapseKey ? { collapseKey: options.collapseKey } : {}),
         notification: {
-          sound: 'gold_chime',
-          channelId: 'default',
+          sound: 'default',
+          channelId: 'greengo_notifications',
           priority: 'high' as any,
+          ...(options?.collapseKey ? { tag: options.collapseKey } : {}),
+          ...(options?.imageUrl ? { imageUrl: options.imageUrl } : {}),
         },
       },
       apns: {
+        ...(options?.collapseKey
+          ? { headers: { 'apns-collapse-id': options.collapseKey } }
+          : {}),
         payload: {
           aps: {
-            sound: 'gold_chime.mp3',
+            sound: 'default',
             badge: 1,
+            ...(options?.threadId ? { 'thread-id': options.threadId } : {}),
+            ...(options?.isCritical ? { 'interruption-level': 'time-sensitive' as any } : {}),
           },
         },
       },
     };
 
     const response = await messaging.send(message);
-
-    // Write in-app notification
-    await db.collection('notifications').add({
-      userId,
-      type,
-      title,
-      body,
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
-      sentAt: admin.firestore.FieldValue.serverTimestamp(),
-      isRead: false,
-      fcmMessageId: response,
-      ...(data || {}),
-    });
-
+    await writeInAppNotification(userId, type, title, body, data, response);
     logInfo(`sendPushToUser: Sent ${type} notification to user ${userId}`);
     return true;
   } catch (error: any) {
-    // Handle invalid/expired FCM tokens gracefully
     if (
       error.code === 'messaging/invalid-registration-token' ||
       error.code === 'messaging/registration-token-not-registered'
     ) {
       logInfo(`sendPushToUser: Clearing stale FCM token for user ${userId}`);
-      await db.collection('users').doc(userId).update({ fcmToken: null });
+      await db.collection('users').doc(userId).update({ fcmToken: null }).catch(() => {});
     } else {
       logError(`sendPushToUser: Error sending to user ${userId}`, error);
     }
@@ -119,9 +166,60 @@ async function sendPushToUser(
   }
 }
 
+async function writeInAppNotification(
+  userId: string,
+  type: string,
+  title: string,
+  body: string,
+  data?: Record<string, string>,
+  fcmMessageId?: string,
+): Promise<void> {
+  try {
+    await db.collection('notifications').add({
+      userId,
+      type,
+      title,
+      message: body, // Flutter NotificationModel reads `message`
+      body, // legacy field for older clients
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      isRead: false,
+      ...(fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {}),
+      ...(data ? { data } : {}),
+    });
+  } catch (e) {
+    logError('writeInAppNotification error', e);
+  }
+}
+
+/**
+ * Bidirectional block check between two users.
+ * Returns true if either has blocked the other.
+ */
+async function isBlocked(userA: string, userB: string): Promise<boolean> {
+  try {
+    const [a, b] = await Promise.all([
+      db
+        .collection('blockedUsers')
+        .where('blockerId', '==', userA)
+        .where('blockedUserId', '==', userB)
+        .limit(1)
+        .get(),
+      db
+        .collection('blockedUsers')
+        .where('blockerId', '==', userB)
+        .where('blockedUserId', '==', userA)
+        .limit(1)
+        .get(),
+    ]);
+    return !a.empty || !b.empty;
+  } catch (e) {
+    logError('isBlocked error', e);
+    return false;
+  }
+}
+
 /**
  * onNewLikePush - Trigger on likes/{likeId} create
- * Sends "Someone liked your profile!" or "You received a Super Like!" depending on type
  */
 export const onNewLikePush = onDocumentCreated(
   {
@@ -135,16 +233,28 @@ export const onNewLikePush = onDocumentCreated(
 
       const likedUserId = data.likedUserId;
       const likerId = data.likerId;
-      const likeType = data.type; // 'like' or 'super_like'
+      const likeType = data.type;
 
       if (!likedUserId || !likerId) {
         logError('onNewLikePush: Missing likedUserId or likerId');
         return;
       }
 
-      // Get liker's display name for the notification
+      // Suppress if blocked either way
+      if (await isBlocked(likerId, likedUserId)) {
+        logInfo(`onNewLikePush: ${likerId} <-> ${likedUserId} blocked, skip`);
+        return;
+      }
+
       const likerDoc = await db.collection('users').doc(likerId).get();
       const likerName = likerDoc.data()?.displayName || 'Someone';
+
+      let likerAvatar: string | undefined;
+      try {
+        const profDoc = await db.collection('profiles').doc(likerId).get();
+        const profData = profDoc.data();
+        likerAvatar = profData?.profilePhotoUrl || profData?.photos?.[0];
+      } catch {}
 
       if (likeType === 'super_like') {
         await sendPushToUser(
@@ -153,6 +263,7 @@ export const onNewLikePush = onDocumentCreated(
           'You received a Super Like!',
           `${likerName} sent you a Super Like!`,
           { fromUserId: likerId },
+          { imageUrl: likerAvatar, threadId: 'likes' },
         );
       } else {
         await sendPushToUser(
@@ -161,6 +272,7 @@ export const onNewLikePush = onDocumentCreated(
           'Someone liked your profile!',
           `${likerName} liked your profile`,
           { fromUserId: likerId },
+          { imageUrl: likerAvatar, threadId: 'likes' },
         );
       }
     } catch (error) {
@@ -171,7 +283,6 @@ export const onNewLikePush = onDocumentCreated(
 
 /**
  * onNewMatchPush - Trigger on matches/{matchId} create
- * Sends "You have a new match!" to BOTH matched users
  */
 export const onNewMatchPush = onDocumentCreated(
   {
@@ -183,7 +294,6 @@ export const onNewMatchPush = onDocumentCreated(
       const data = event.data?.data();
       if (!data) return;
 
-      // matches typically store users as an array or as user1Id/user2Id
       const users: string[] = data.users || [];
       const user1Id = data.user1Id || users[0];
       const user2Id = data.user2Id || users[1];
@@ -193,7 +303,11 @@ export const onNewMatchPush = onDocumentCreated(
         return;
       }
 
-      // Get both users' names
+      if (await isBlocked(user1Id, user2Id)) {
+        logInfo(`onNewMatchPush: ${user1Id} <-> ${user2Id} blocked, skip`);
+        return;
+      }
+
       const [user1Doc, user2Doc] = await Promise.all([
         db.collection('users').doc(user1Id).get(),
         db.collection('users').doc(user2Id).get(),
@@ -202,9 +316,19 @@ export const onNewMatchPush = onDocumentCreated(
       const user1Name = user1Doc.data()?.displayName || 'Someone';
       const user2Name = user2Doc.data()?.displayName || 'Someone';
 
+      let user1Avatar: string | undefined;
+      let user2Avatar: string | undefined;
+      try {
+        const [p1, p2] = await Promise.all([
+          db.collection('profiles').doc(user1Id).get(),
+          db.collection('profiles').doc(user2Id).get(),
+        ]);
+        user1Avatar = p1.data()?.profilePhotoUrl || p1.data()?.photos?.[0];
+        user2Avatar = p2.data()?.profilePhotoUrl || p2.data()?.photos?.[0];
+      } catch {}
+
       const matchId = event.params.matchId;
 
-      // Notify both users in parallel
       await Promise.all([
         sendPushToUser(
           user1Id,
@@ -212,6 +336,7 @@ export const onNewMatchPush = onDocumentCreated(
           'You have a new match!',
           `You matched with ${user2Name}!`,
           { matchId, matchedUserId: user2Id },
+          { imageUrl: user2Avatar, threadId: 'matches' },
         ),
         sendPushToUser(
           user2Id,
@@ -219,6 +344,7 @@ export const onNewMatchPush = onDocumentCreated(
           'You have a new match!',
           `You matched with ${user1Name}!`,
           { matchId, matchedUserId: user1Id },
+          { imageUrl: user1Avatar, threadId: 'matches' },
         ),
       ]);
     } catch (error) {
@@ -229,7 +355,9 @@ export const onNewMatchPush = onDocumentCreated(
 
 /**
  * onNewMessagePush - Trigger on conversations/{convId}/messages/{msgId} create
- * Sends "New message from {senderName}" to the recipient
+ * Sends "{senderName}" with message preview to recipient(s).
+ * Honors per-user mute (`conversations.mutedBy[recipientId]`), legacy global mute,
+ * bidirectional blocks, and stacks notifications per-conversation via collapseKey/threadId.
  */
 export const onNewMessagePush = onDocumentCreated(
   {
@@ -249,7 +377,6 @@ export const onNewMessagePush = onDocumentCreated(
         return;
       }
 
-      // Get conversation to find participants
       const convDoc = await db.collection('conversations').doc(convId).get();
       if (!convDoc.exists) {
         logError(`onNewMessagePush: Conversation ${convId} not found`);
@@ -258,41 +385,77 @@ export const onNewMessagePush = onDocumentCreated(
 
       const convData = convDoc.data()!;
       const participants: string[] = convData.participants || [];
+      const mutedBy: Record<string, number> = convData.mutedBy || {};
+      const globallyMuted =
+        convData.isMuted === true &&
+        (!convData.mutedUntil || convData.mutedUntil.toMillis() > Date.now());
 
-      // Get sender name
+      // Sender info for title + avatar
       const senderDoc = await db.collection('users').doc(senderId).get();
-      const senderName = senderDoc.data()?.displayName || 'Someone';
+      const senderData = senderDoc.data() || {};
+      const senderName = senderData.displayName || 'Someone';
 
-      // Message preview (truncate long messages)
+      let senderAvatar: string | undefined;
+      try {
+        const profDoc = await db.collection('profiles').doc(senderId).get();
+        const profData = profDoc.data();
+        senderAvatar = profData?.profilePhotoUrl || profData?.photos?.[0];
+      } catch {}
+
+      // Build message preview
       const messageText = data.text || data.content || '';
       const messageType = data.type || 'text';
       let preview: string;
+      if (messageType === 'image') preview = '📷 Photo';
+      else if (messageType === 'voice') preview = '🎤 Voice message';
+      else if (messageType === 'video') preview = '🎥 Video';
+      else if (messageText.length > 100) preview = messageText.substring(0, 97) + '...';
+      else preview = messageText;
 
-      if (messageType === 'image') {
-        preview = 'Sent a photo';
-      } else if (messageType === 'voice') {
-        preview = 'Sent a voice message';
-      } else if (messageType === 'video') {
-        preview = 'Sent a video';
-      } else if (messageText.length > 100) {
-        preview = messageText.substring(0, 97) + '...';
-      } else {
-        preview = messageText;
-      }
-
-      // Notify all participants except the sender
       const recipients = participants.filter((id: string) => id !== senderId);
+      const now = Date.now();
 
       await Promise.all(
-        recipients.map((recipientId: string) =>
-          sendPushToUser(
+        recipients.map(async (recipientId: string) => {
+          // Per-user mute (mutedBy map: 0 = forever, > 0 = epoch ms expiry)
+          const mutedExpiry = mutedBy[recipientId];
+          if (mutedExpiry !== undefined) {
+            if (mutedExpiry === 0 || mutedExpiry > now) {
+              logInfo(`onNewMessagePush: conv ${convId} muted for ${recipientId}, skip`);
+              return;
+            }
+          }
+
+          // Legacy global mute (per-conversation)
+          if (globallyMuted) {
+            logInfo(`onNewMessagePush: conv ${convId} globally muted, skip`);
+            return;
+          }
+
+          // Bidirectional block list
+          if (await isBlocked(senderId, recipientId)) {
+            logInfo(`onNewMessagePush: ${senderId} <-> ${recipientId} blocked, skip`);
+            return;
+          }
+
+          await sendPushToUser(
             recipientId,
             'newMessage',
-            `New message from ${senderName}`,
+            senderName,
             preview,
-            { conversationId: convId, fromUserId: senderId },
-          ),
-        ),
+            {
+              conversationId: convId,
+              fromUserId: senderId,
+              senderName,
+              messageType,
+            },
+            {
+              imageUrl: senderAvatar,
+              collapseKey: convId, // Replaces previous notif from same conversation
+              threadId: convId, // iOS groups them
+            },
+          );
+        }),
       );
     } catch (error) {
       logError('onNewMessagePush: Error', error);
@@ -302,7 +465,6 @@ export const onNewMessagePush = onDocumentCreated(
 
 /**
  * onSupportMessagePush - Trigger on support_messages/{msgId} create
- * Notifies user when admin replies, and admin when user sends a message
  */
 export const onSupportMessagePush = onDocumentCreated(
   {
@@ -314,7 +476,7 @@ export const onSupportMessagePush = onDocumentCreated(
       const data = event.data?.data();
       if (!data) return;
 
-      const senderType = data.senderType; // 'admin' or 'user'
+      const senderType = data.senderType;
       const conversationId = data.conversationId;
 
       if (!conversationId) {
@@ -322,7 +484,6 @@ export const onSupportMessagePush = onDocumentCreated(
         return;
       }
 
-      // Read the support_chats document to get user/admin info
       const chatDoc = await db.collection('support_chats').doc(conversationId).get();
       if (!chatDoc.exists) {
         logError(`onSupportMessagePush: support_chats/${conversationId} not found`);
@@ -332,7 +493,6 @@ export const onSupportMessagePush = onDocumentCreated(
       const chatData = chatDoc.data()!;
 
       if (senderType === 'admin') {
-        // Admin replied → notify the user
         const userId = chatData.userId;
         if (!userId) {
           logError('onSupportMessagePush: No userId in support_chats doc');
@@ -344,10 +504,10 @@ export const onSupportMessagePush = onDocumentCreated(
           'supportReply',
           'Support replied to your ticket',
           data.text || 'You have a new reply from support.',
-          { conversationId },
+          { conversationId, action: 'support_message' },
+          { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` },
         );
       } else if (senderType === 'user') {
-        // User sent a message → notify the assigned agent
         const agentId = chatData.supportAgentId || chatData.assignedTo;
         if (!agentId) {
           logInfo('onSupportMessagePush: No assigned agent for this ticket');
@@ -359,7 +519,8 @@ export const onSupportMessagePush = onDocumentCreated(
           'supportMessage',
           'New message on support ticket',
           data.text || 'A user sent a new message.',
-          { conversationId },
+          { conversationId, action: 'support_message' },
+          { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` },
         );
       }
     } catch (error) {
@@ -370,7 +531,6 @@ export const onSupportMessagePush = onDocumentCreated(
 
 /**
  * checkExpiringModes - Scheduled every 15 minutes
- * Warns users whose Incognito or Traveler mode expires within 1 hour
  */
 export const checkExpiringModes = onSchedule(
   {
@@ -385,7 +545,6 @@ export const checkExpiringModes = onSchedule(
         now.toMillis() + 60 * 60 * 1000,
       );
 
-      // --- Incognito mode expiry warnings ---
       const incognitoSnap = await db
         .collection('profiles')
         .where('isIncognito', '==', true)
@@ -408,7 +567,6 @@ export const checkExpiringModes = onSchedule(
         logInfo(`checkExpiringModes: Warned ${doc.id} about incognito expiry`);
       }
 
-      // --- Traveler mode expiry warnings ---
       const travelerSnap = await db
         .collection('profiles')
         .where('isTraveler', '==', true)
@@ -438,7 +596,6 @@ export const checkExpiringModes = onSchedule(
 
 /**
  * onVerificationStatusChange - Trigger on profiles/{userId} update
- * Sends notification when verificationStatus changes (approved, needsResubmission, rejected)
  */
 export const onVerificationStatusChange = onDocumentUpdated(
   {
@@ -454,7 +611,6 @@ export const onVerificationStatusChange = onDocumentUpdated(
       const beforeStatus = beforeData.verificationStatus;
       const afterStatus = afterData.verificationStatus;
 
-      // Only act when verificationStatus actually changed
       if (beforeStatus === afterStatus) return;
 
       const userId = event.params.userId;
@@ -466,6 +622,8 @@ export const onVerificationStatusChange = onDocumentUpdated(
           'verification',
           'Profile Verified!',
           'Your profile has been verified! You now have a verified badge.',
+          undefined,
+          { isCritical: true },
         );
       } else if (afterStatus === 'needsResubmission') {
         const body = reason
@@ -476,6 +634,8 @@ export const onVerificationStatusChange = onDocumentUpdated(
           'verification',
           'New Verification Photo Needed',
           body,
+          undefined,
+          { isCritical: true },
         );
       } else if (afterStatus === 'rejected') {
         const body = reason
@@ -486,6 +646,8 @@ export const onVerificationStatusChange = onDocumentUpdated(
           'verification',
           'Verification Update',
           body,
+          undefined,
+          { isCritical: true },
         );
       }
     } catch (error) {

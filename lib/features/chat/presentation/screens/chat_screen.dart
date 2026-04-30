@@ -145,6 +145,9 @@ class _ChatScreenState extends State<ChatScreen> {
   // Match data for Exchange Details
   Match? _matchData;
 
+  // Push-notification mute state for this conversation (per-user)
+  bool _isConversationMuted = false;
+
   @override
   void initState() {
     super.initState();
@@ -167,7 +170,46 @@ class _ChatScreenState extends State<ChatScreen> {
     _fetchCurrentUserName();
     _loadPhraseOfTheDay();
     _loadChatSettings();
+    _loadMuteState();
     _fetchMatchData();
+  }
+
+  /// Load whether this conversation is muted for the current user
+  Future<void> _loadMuteState() async {
+    try {
+      final muted = await _chatDataSource.isConversationMutedForUser(
+        conversationId: widget.matchId,
+        userId: widget.currentUserId,
+      );
+      if (mounted) setState(() => _isConversationMuted = muted);
+    } catch (_) {}
+  }
+
+  /// Toggle mute for this conversation (per-user)
+  Future<void> _toggleConversationMute() async {
+    final newValue = !_isConversationMuted;
+    setState(() => _isConversationMuted = newValue);
+    try {
+      await _chatDataSource.setConversationMutedForUser(
+        conversationId: widget.matchId,
+        userId: widget.currentUserId,
+        isMuted: newValue,
+      );
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(newValue
+              ? 'Notifications muted for this chat'
+              : 'Notifications unmuted'),
+          duration: const Duration(seconds: 2),
+          backgroundColor: AppColors.backgroundCard,
+        ),
+      );
+    } catch (e) {
+      // Revert on failure
+      if (mounted) setState(() => _isConversationMuted = !newValue);
+      debugPrint('Mute toggle error: $e');
+    }
   }
 
   /// Fetch match data to enable "See Exchange Details" option
@@ -2216,6 +2258,20 @@ class _ChatScreenState extends State<ChatScreen> {
                 },
               ),
             ],
+            const Divider(color: AppColors.divider, height: 1),
+            _buildOptionItem(
+              icon: _isConversationMuted
+                  ? Icons.notifications_off_outlined
+                  : Icons.notifications_active_outlined,
+              label: _isConversationMuted
+                  ? 'Unmute notifications'
+                  : 'Mute notifications',
+              color: _isConversationMuted ? AppColors.richGold : AppColors.textPrimary,
+              onTap: () {
+                Navigator.pop(bottomSheetContext);
+                _toggleConversationMute();
+              },
+            ),
             const Divider(color: AppColors.divider, height: 1),
             _buildOptionItem(
               icon: Icons.delete_outline,

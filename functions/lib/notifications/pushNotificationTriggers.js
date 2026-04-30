@@ -44,11 +44,43 @@ const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
 const db = admin.firestore();
 const messaging = admin.messaging();
+// Maps notification "type" to the flat boolean field used by the Flutter app.
+const TYPE_TO_PREF_FIELD = {
+    newMessage: 'newMessageNotifications',
+    newMatch: 'newMatchNotifications',
+    newLike: 'newLikeNotifications',
+    superLike: 'superLikeNotifications',
+    profileView: 'profileViewNotifications',
+    matchExpiring: 'matchExpiringNotifications',
+};
+function isInQuietHours(prefs) {
+    if (!(prefs === null || prefs === void 0 ? void 0 : prefs.quietHoursEnabled))
+        return false;
+    const start = prefs.quietHoursStart;
+    const end = prefs.quietHoursEnd;
+    if (!start || !end)
+        return false;
+    const now = new Date();
+    // Note: quiet hours interpreted in UTC. Future improvement: honor user TZ.
+    const cur = now.getUTCHours() * 60 + now.getUTCMinutes();
+    const [sh, sm] = String(start).split(':').map(Number);
+    const [eh, em] = String(end).split(':').map(Number);
+    if ([sh, sm, eh, em].some((n) => Number.isNaN(n)))
+        return false;
+    const startMin = sh * 60 + sm;
+    const endMin = eh * 60 + em;
+    if (startMin === endMin)
+        return false;
+    if (startMin < endMin)
+        return cur >= startMin && cur < endMin;
+    // Crosses midnight
+    return cur >= startMin || cur < endMin;
+}
 /**
  * Helper: Send FCM push notification to a user
  * Reads FCM token, checks notification preferences, sends via FCM, and writes in-app notification
  */
-async function sendPushToUser(userId, type, title, body, data) {
+async function sendPushToUser(userId, type, title, body, data, options) {
     try {
         const userDoc = await db.collection('users').doc(userId).get();
         if (!userDoc.exists) {
@@ -57,64 +89,63 @@ async function sendPushToUser(userId, type, title, body, data) {
         }
         const userData = userDoc.data();
         const fcmToken = userData.fcmToken;
-        if (!fcmToken) {
-            (0, utils_1.logInfo)(`sendPushToUser: No FCM token for user ${userId}`);
-            // Still write in-app notification even without FCM token
-            await db.collection('notifications').add(Object.assign({ userId,
-                type,
-                title,
-                body, createdAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false }, (data || {})));
-            return false;
-        }
-        // Check notification preferences
+        // Notification preferences
         const prefsDoc = await db.collection('notification_preferences').doc(userId).get();
         if (prefsDoc.exists) {
             const prefs = prefsDoc.data();
+            // Master toggle (only blocks push, not in-app)
+            if (prefs.pushNotificationsEnabled === false) {
+                (0, utils_1.logInfo)(`sendPushToUser: Push disabled (master) for user ${userId}`);
+                await writeInAppNotification(userId, type, title, body, data);
+                return false;
+            }
+            // Per-type toggle (flat field shape used by Flutter app)
+            const fieldName = TYPE_TO_PREF_FIELD[type];
+            if (fieldName && prefs[fieldName] === false) {
+                (0, utils_1.logInfo)(`sendPushToUser: Type ${type} disabled for user ${userId}`);
+                await writeInAppNotification(userId, type, title, body, data);
+                return false;
+            }
+            // Legacy enabledTypes map shape (backward compat)
             if (prefs.enabledTypes && prefs.enabledTypes[type] === false) {
-                (0, utils_1.logInfo)(`sendPushToUser: Notification type ${type} disabled for user ${userId}`);
+                await writeInAppNotification(userId, type, title, body, data);
+                return false;
+            }
+            // Quiet hours (skip suppression for critical notifications)
+            if (!(options === null || options === void 0 ? void 0 : options.isCritical) && isInQuietHours(prefs)) {
+                (0, utils_1.logInfo)(`sendPushToUser: In quiet hours for user ${userId}`);
+                await writeInAppNotification(userId, type, title, body, data);
                 return false;
             }
         }
-        // Send FCM notification
+        if (!fcmToken) {
+            (0, utils_1.logInfo)(`sendPushToUser: No FCM token for user ${userId}`);
+            await writeInAppNotification(userId, type, title, body, data);
+            return false;
+        }
+        // Build FCM message
         const message = {
             token: fcmToken,
-            notification: {
-                title,
-                body,
-            },
+            notification: Object.assign({ title,
+                body }, ((options === null || options === void 0 ? void 0 : options.imageUrl) ? { imageUrl: options.imageUrl } : {})),
             data: Object.assign({ type, timestamp: new Date().toISOString() }, (data || {})),
-            android: {
-                priority: 'high',
-                notification: {
-                    sound: 'gold_chime',
-                    channelId: 'default',
-                    priority: 'high',
-                },
-            },
-            apns: {
-                payload: {
-                    aps: {
-                        sound: 'gold_chime.mp3',
-                        badge: 1,
-                    },
-                },
-            },
+            android: Object.assign(Object.assign({ priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { collapseKey: options.collapseKey } : {})), { notification: Object.assign(Object.assign({ sound: 'default', channelId: 'greengo_notifications', priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { tag: options.collapseKey } : {})), ((options === null || options === void 0 ? void 0 : options.imageUrl) ? { imageUrl: options.imageUrl } : {})) }),
+            apns: Object.assign(Object.assign({}, ((options === null || options === void 0 ? void 0 : options.collapseKey)
+                ? { headers: { 'apns-collapse-id': options.collapseKey } }
+                : {})), { payload: {
+                    aps: Object.assign(Object.assign({ sound: 'default', badge: 1 }, ((options === null || options === void 0 ? void 0 : options.threadId) ? { 'thread-id': options.threadId } : {})), ((options === null || options === void 0 ? void 0 : options.isCritical) ? { 'interruption-level': 'time-sensitive' } : {})),
+                } }),
         };
         const response = await messaging.send(message);
-        // Write in-app notification
-        await db.collection('notifications').add(Object.assign({ userId,
-            type,
-            title,
-            body, createdAt: admin.firestore.FieldValue.serverTimestamp(), sentAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false, fcmMessageId: response }, (data || {})));
+        await writeInAppNotification(userId, type, title, body, data, response);
         (0, utils_1.logInfo)(`sendPushToUser: Sent ${type} notification to user ${userId}`);
         return true;
     }
     catch (error) {
-        // Handle invalid/expired FCM tokens gracefully
         if (error.code === 'messaging/invalid-registration-token' ||
             error.code === 'messaging/registration-token-not-registered') {
             (0, utils_1.logInfo)(`sendPushToUser: Clearing stale FCM token for user ${userId}`);
-            await db.collection('users').doc(userId).update({ fcmToken: null });
+            await db.collection('users').doc(userId).update({ fcmToken: null }).catch(() => { });
         }
         else {
             (0, utils_1.logError)(`sendPushToUser: Error sending to user ${userId}`, error);
@@ -122,34 +153,82 @@ async function sendPushToUser(userId, type, title, body, data) {
         return false;
     }
 }
+async function writeInAppNotification(userId, type, title, body, data, fcmMessageId) {
+    try {
+        await db.collection('notifications').add(Object.assign(Object.assign({ userId,
+            type,
+            title, message: body, // Flutter NotificationModel reads `message`
+            body, createdAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false }, (fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {})), (data ? { data } : {})));
+    }
+    catch (e) {
+        (0, utils_1.logError)('writeInAppNotification error', e);
+    }
+}
+/**
+ * Bidirectional block check between two users.
+ * Returns true if either has blocked the other.
+ */
+async function isBlocked(userA, userB) {
+    try {
+        const [a, b] = await Promise.all([
+            db
+                .collection('blockedUsers')
+                .where('blockerId', '==', userA)
+                .where('blockedUserId', '==', userB)
+                .limit(1)
+                .get(),
+            db
+                .collection('blockedUsers')
+                .where('blockerId', '==', userB)
+                .where('blockedUserId', '==', userA)
+                .limit(1)
+                .get(),
+        ]);
+        return !a.empty || !b.empty;
+    }
+    catch (e) {
+        (0, utils_1.logError)('isBlocked error', e);
+        return false;
+    }
+}
 /**
  * onNewLikePush - Trigger on likes/{likeId} create
- * Sends "Someone liked your profile!" or "You received a Super Like!" depending on type
  */
 exports.onNewLikePush = (0, firestore_1.onDocumentCreated)({
     document: 'likes/{likeId}',
     memory: '256MiB',
 }, async (event) => {
-    var _a, _b;
+    var _a, _b, _c;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
         if (!data)
             return;
         const likedUserId = data.likedUserId;
         const likerId = data.likerId;
-        const likeType = data.type; // 'like' or 'super_like'
+        const likeType = data.type;
         if (!likedUserId || !likerId) {
             (0, utils_1.logError)('onNewLikePush: Missing likedUserId or likerId');
             return;
         }
-        // Get liker's display name for the notification
+        // Suppress if blocked either way
+        if (await isBlocked(likerId, likedUserId)) {
+            (0, utils_1.logInfo)(`onNewLikePush: ${likerId} <-> ${likedUserId} blocked, skip`);
+            return;
+        }
         const likerDoc = await db.collection('users').doc(likerId).get();
         const likerName = ((_b = likerDoc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
+        let likerAvatar;
+        try {
+            const profDoc = await db.collection('profiles').doc(likerId).get();
+            const profData = profDoc.data();
+            likerAvatar = (profData === null || profData === void 0 ? void 0 : profData.profilePhotoUrl) || ((_c = profData === null || profData === void 0 ? void 0 : profData.photos) === null || _c === void 0 ? void 0 : _c[0]);
+        }
+        catch (_d) { }
         if (likeType === 'super_like') {
-            await sendPushToUser(likedUserId, 'superLike', 'You received a Super Like!', `${likerName} sent you a Super Like!`, { fromUserId: likerId });
+            await sendPushToUser(likedUserId, 'superLike', 'You received a Super Like!', `${likerName} sent you a Super Like!`, { fromUserId: likerId }, { imageUrl: likerAvatar, threadId: 'likes' });
         }
         else {
-            await sendPushToUser(likedUserId, 'newLike', 'Someone liked your profile!', `${likerName} liked your profile`, { fromUserId: likerId });
+            await sendPushToUser(likedUserId, 'newLike', 'Someone liked your profile!', `${likerName} liked your profile`, { fromUserId: likerId }, { imageUrl: likerAvatar, threadId: 'likes' });
         }
     }
     catch (error) {
@@ -158,18 +237,16 @@ exports.onNewLikePush = (0, firestore_1.onDocumentCreated)({
 });
 /**
  * onNewMatchPush - Trigger on matches/{matchId} create
- * Sends "You have a new match!" to BOTH matched users
  */
 exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
     document: 'matches/{matchId}',
     memory: '256MiB',
 }, async (event) => {
-    var _a, _b, _c;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
         if (!data)
             return;
-        // matches typically store users as an array or as user1Id/user2Id
         const users = data.users || [];
         const user1Id = data.user1Id || users[0];
         const user2Id = data.user2Id || users[1];
@@ -177,18 +254,31 @@ exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
             (0, utils_1.logError)('onNewMatchPush: Missing user IDs in match document');
             return;
         }
-        // Get both users' names
+        if (await isBlocked(user1Id, user2Id)) {
+            (0, utils_1.logInfo)(`onNewMatchPush: ${user1Id} <-> ${user2Id} blocked, skip`);
+            return;
+        }
         const [user1Doc, user2Doc] = await Promise.all([
             db.collection('users').doc(user1Id).get(),
             db.collection('users').doc(user2Id).get(),
         ]);
         const user1Name = ((_b = user1Doc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
         const user2Name = ((_c = user2Doc.data()) === null || _c === void 0 ? void 0 : _c.displayName) || 'Someone';
+        let user1Avatar;
+        let user2Avatar;
+        try {
+            const [p1, p2] = await Promise.all([
+                db.collection('profiles').doc(user1Id).get(),
+                db.collection('profiles').doc(user2Id).get(),
+            ]);
+            user1Avatar = ((_d = p1.data()) === null || _d === void 0 ? void 0 : _d.profilePhotoUrl) || ((_f = (_e = p1.data()) === null || _e === void 0 ? void 0 : _e.photos) === null || _f === void 0 ? void 0 : _f[0]);
+            user2Avatar = ((_g = p2.data()) === null || _g === void 0 ? void 0 : _g.profilePhotoUrl) || ((_j = (_h = p2.data()) === null || _h === void 0 ? void 0 : _h.photos) === null || _j === void 0 ? void 0 : _j[0]);
+        }
+        catch (_k) { }
         const matchId = event.params.matchId;
-        // Notify both users in parallel
         await Promise.all([
-            sendPushToUser(user1Id, 'newMatch', 'You have a new match!', `You matched with ${user2Name}!`, { matchId, matchedUserId: user2Id }),
-            sendPushToUser(user2Id, 'newMatch', 'You have a new match!', `You matched with ${user1Name}!`, { matchId, matchedUserId: user1Id }),
+            sendPushToUser(user1Id, 'newMatch', 'You have a new match!', `You matched with ${user2Name}!`, { matchId, matchedUserId: user2Id }, { imageUrl: user2Avatar, threadId: 'matches' }),
+            sendPushToUser(user2Id, 'newMatch', 'You have a new match!', `You matched with ${user1Name}!`, { matchId, matchedUserId: user1Id }, { imageUrl: user1Avatar, threadId: 'matches' }),
         ]);
     }
     catch (error) {
@@ -197,7 +287,9 @@ exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
 });
 /**
  * onNewMessagePush - Trigger on conversations/{convId}/messages/{msgId} create
- * Sends "New message from {senderName}" to the recipient
+ * Sends "{senderName}" with message preview to recipient(s).
+ * Honors per-user mute (`conversations.mutedBy[recipientId]`), legacy global mute,
+ * bidirectional blocks, and stacks notifications per-conversation via collapseKey/threadId.
  */
 exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'conversations/{convId}/messages/{msgId}',
@@ -214,7 +306,6 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
             (0, utils_1.logError)('onNewMessagePush: Missing senderId');
             return;
         }
-        // Get conversation to find participants
         const convDoc = await db.collection('conversations').doc(convId).get();
         if (!convDoc.exists) {
             (0, utils_1.logError)(`onNewMessagePush: Conversation ${convId} not found`);
@@ -222,31 +313,66 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
         }
         const convData = convDoc.data();
         const participants = convData.participants || [];
-        // Get sender name
+        const mutedBy = convData.mutedBy || {};
+        const globallyMuted = convData.isMuted === true &&
+            (!convData.mutedUntil || convData.mutedUntil.toMillis() > Date.now());
+        // Sender info for title + avatar
         const senderDoc = await db.collection('users').doc(senderId).get();
-        const senderName = ((_b = senderDoc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
-        // Message preview (truncate long messages)
+        const senderData = senderDoc.data() || {};
+        const senderName = senderData.displayName || 'Someone';
+        let senderAvatar;
+        try {
+            const profDoc = await db.collection('profiles').doc(senderId).get();
+            const profData = profDoc.data();
+            senderAvatar = (profData === null || profData === void 0 ? void 0 : profData.profilePhotoUrl) || ((_b = profData === null || profData === void 0 ? void 0 : profData.photos) === null || _b === void 0 ? void 0 : _b[0]);
+        }
+        catch (_c) { }
+        // Build message preview
         const messageText = data.text || data.content || '';
         const messageType = data.type || 'text';
         let preview;
-        if (messageType === 'image') {
-            preview = 'Sent a photo';
-        }
-        else if (messageType === 'voice') {
-            preview = 'Sent a voice message';
-        }
-        else if (messageType === 'video') {
-            preview = 'Sent a video';
-        }
-        else if (messageText.length > 100) {
+        if (messageType === 'image')
+            preview = '📷 Photo';
+        else if (messageType === 'voice')
+            preview = '🎤 Voice message';
+        else if (messageType === 'video')
+            preview = '🎥 Video';
+        else if (messageText.length > 100)
             preview = messageText.substring(0, 97) + '...';
-        }
-        else {
+        else
             preview = messageText;
-        }
-        // Notify all participants except the sender
         const recipients = participants.filter((id) => id !== senderId);
-        await Promise.all(recipients.map((recipientId) => sendPushToUser(recipientId, 'newMessage', `New message from ${senderName}`, preview, { conversationId: convId, fromUserId: senderId })));
+        const now = Date.now();
+        await Promise.all(recipients.map(async (recipientId) => {
+            // Per-user mute (mutedBy map: 0 = forever, > 0 = epoch ms expiry)
+            const mutedExpiry = mutedBy[recipientId];
+            if (mutedExpiry !== undefined) {
+                if (mutedExpiry === 0 || mutedExpiry > now) {
+                    (0, utils_1.logInfo)(`onNewMessagePush: conv ${convId} muted for ${recipientId}, skip`);
+                    return;
+                }
+            }
+            // Legacy global mute (per-conversation)
+            if (globallyMuted) {
+                (0, utils_1.logInfo)(`onNewMessagePush: conv ${convId} globally muted, skip`);
+                return;
+            }
+            // Bidirectional block list
+            if (await isBlocked(senderId, recipientId)) {
+                (0, utils_1.logInfo)(`onNewMessagePush: ${senderId} <-> ${recipientId} blocked, skip`);
+                return;
+            }
+            await sendPushToUser(recipientId, 'newMessage', senderName, preview, {
+                conversationId: convId,
+                fromUserId: senderId,
+                senderName,
+                messageType,
+            }, {
+                imageUrl: senderAvatar,
+                collapseKey: convId, // Replaces previous notif from same conversation
+                threadId: convId, // iOS groups them
+            });
+        }));
     }
     catch (error) {
         (0, utils_1.logError)('onNewMessagePush: Error', error);
@@ -254,7 +380,6 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
 });
 /**
  * onSupportMessagePush - Trigger on support_messages/{msgId} create
- * Notifies user when admin replies, and admin when user sends a message
  */
 exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'support_messages/{msgId}',
@@ -265,13 +390,12 @@ exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
         if (!data)
             return;
-        const senderType = data.senderType; // 'admin' or 'user'
+        const senderType = data.senderType;
         const conversationId = data.conversationId;
         if (!conversationId) {
             (0, utils_1.logError)('onSupportMessagePush: Missing conversationId');
             return;
         }
-        // Read the support_chats document to get user/admin info
         const chatDoc = await db.collection('support_chats').doc(conversationId).get();
         if (!chatDoc.exists) {
             (0, utils_1.logError)(`onSupportMessagePush: support_chats/${conversationId} not found`);
@@ -279,22 +403,20 @@ exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
         }
         const chatData = chatDoc.data();
         if (senderType === 'admin') {
-            // Admin replied → notify the user
             const userId = chatData.userId;
             if (!userId) {
                 (0, utils_1.logError)('onSupportMessagePush: No userId in support_chats doc');
                 return;
             }
-            await sendPushToUser(userId, 'supportReply', 'Support replied to your ticket', data.text || 'You have a new reply from support.', { conversationId });
+            await sendPushToUser(userId, 'supportReply', 'Support replied to your ticket', data.text || 'You have a new reply from support.', { conversationId, action: 'support_message' }, { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` });
         }
         else if (senderType === 'user') {
-            // User sent a message → notify the assigned agent
             const agentId = chatData.supportAgentId || chatData.assignedTo;
             if (!agentId) {
                 (0, utils_1.logInfo)('onSupportMessagePush: No assigned agent for this ticket');
                 return;
             }
-            await sendPushToUser(agentId, 'supportMessage', 'New message on support ticket', data.text || 'A user sent a new message.', { conversationId });
+            await sendPushToUser(agentId, 'supportMessage', 'New message on support ticket', data.text || 'A user sent a new message.', { conversationId, action: 'support_message' }, { collapseKey: `support_${conversationId}`, threadId: `support_${conversationId}` });
         }
     }
     catch (error) {
@@ -303,7 +425,6 @@ exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
 });
 /**
  * checkExpiringModes - Scheduled every 15 minutes
- * Warns users whose Incognito or Traveler mode expires within 1 hour
  */
 exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
     schedule: 'every 15 minutes',
@@ -313,7 +434,6 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
     try {
         const now = admin.firestore.Timestamp.now();
         const oneHourFromNow = admin.firestore.Timestamp.fromMillis(now.toMillis() + 60 * 60 * 1000);
-        // --- Incognito mode expiry warnings ---
         const incognitoSnap = await db
             .collection('profiles')
             .where('isIncognito', '==', true)
@@ -328,7 +448,6 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
             await doc.ref.update({ incognitoWarningNotified: true });
             (0, utils_1.logInfo)(`checkExpiringModes: Warned ${doc.id} about incognito expiry`);
         }
-        // --- Traveler mode expiry warnings ---
         const travelerSnap = await db
             .collection('profiles')
             .where('isTraveler', '==', true)
@@ -350,7 +469,6 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
 });
 /**
  * onVerificationStatusChange - Trigger on profiles/{userId} update
- * Sends notification when verificationStatus changes (approved, needsResubmission, rejected)
  */
 exports.onVerificationStatusChange = (0, firestore_1.onDocumentUpdated)({
     document: 'profiles/{userId}',
@@ -364,25 +482,24 @@ exports.onVerificationStatusChange = (0, firestore_1.onDocumentUpdated)({
             return;
         const beforeStatus = beforeData.verificationStatus;
         const afterStatus = afterData.verificationStatus;
-        // Only act when verificationStatus actually changed
         if (beforeStatus === afterStatus)
             return;
         const userId = event.params.userId;
         const reason = afterData.verificationReason || afterData.verificationNote || '';
         if (afterStatus === 'approved') {
-            await sendPushToUser(userId, 'verification', 'Profile Verified!', 'Your profile has been verified! You now have a verified badge.');
+            await sendPushToUser(userId, 'verification', 'Profile Verified!', 'Your profile has been verified! You now have a verified badge.', undefined, { isCritical: true });
         }
         else if (afterStatus === 'needsResubmission') {
             const body = reason
                 ? `Please submit a new verification photo. Reason: ${reason}`
                 : 'Please submit a new verification photo.';
-            await sendPushToUser(userId, 'verification', 'New Verification Photo Needed', body);
+            await sendPushToUser(userId, 'verification', 'New Verification Photo Needed', body, undefined, { isCritical: true });
         }
         else if (afterStatus === 'rejected') {
             const body = reason
                 ? `Your verification was not approved. Reason: ${reason}`
                 : 'Your verification was not approved. Please try again.';
-            await sendPushToUser(userId, 'verification', 'Verification Update', body);
+            await sendPushToUser(userId, 'verification', 'Verification Update', body, undefined, { isCritical: true });
         }
     }
     catch (error) {

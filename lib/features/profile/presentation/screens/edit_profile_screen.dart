@@ -30,6 +30,7 @@ import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
+import '../../../../core/services/cache_service.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
 import 'photo_management_screen.dart';
 import 'edit_basic_info_screen.dart';
@@ -1348,10 +1349,13 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _logout(BuildContext context) {
-    // Clear discovery caches before signing out
+    // Clear all caches before signing out
     try {
       final datasource = GetIt.I<DiscoveryRemoteDataSource>();
       datasource.clearAllDiscoveryCaches();
+    } catch (_) {}
+    try {
+      CacheService.instance.clearAll();
     } catch (_) {}
     // Sign out via AuthBloc, with direct Firebase fallback
     try {

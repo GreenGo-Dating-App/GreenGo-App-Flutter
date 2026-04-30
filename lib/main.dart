@@ -584,34 +584,66 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
 
     try {
-      // Check if user profile exists and is complete
+      // Check if user profile exists and is complete (force server to avoid stale cache)
       try {
         final profileDoc = await FirebaseFirestore.instance
             .collection('profiles')
             .doc(userId)
-            .get();
+            .get(const GetOptions(source: Source.server));
         _needsOnboarding = !profileDoc.exists ||
             profileDoc.data()?['isComplete'] != true;
       } catch (e) {
         debugPrint('Profile check error: $e');
-        _needsOnboarding = true;
+        // Fallback to default source if server unavailable
+        try {
+          final profileDoc = await FirebaseFirestore.instance
+              .collection('profiles')
+              .doc(userId)
+              .get();
+          _needsOnboarding = !profileDoc.exists ||
+              profileDoc.data()?['isComplete'] != true;
+        } catch (_) {
+          _needsOnboarding = true;
+        }
       }
 
-      final accessData = await _accessControlService.getCurrentUserAccess();
+      var accessData = await _accessControlService.getCurrentUserAccess();
       debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
           'isTestUser=${accessData?.isTestUser}, '
           'approvalStatus=${accessData?.approvalStatus}, '
           'tier=${accessData?.membershipTier}');
 
+      // If no access data exists, create it now
+      if (accessData == null) {
+        debugPrint('🔑 No access data found — creating for $userId');
+        try {
+          final email = FirebaseAuth.instance.currentUser?.email;
+          await _accessControlService.initializeUserAccess(
+            userId: userId,
+            email: email ?? '',
+          );
+          accessData = await _accessControlService.getCurrentUserAccess();
+        } catch (e) {
+          debugPrint('⚠️ Failed to create access data: $e');
+        }
+        // If still null, use a fallback so user isn't stuck
+        accessData ??= UserAccessData(
+          userId: userId,
+          approvalStatus: ApprovalStatus.pending,
+          accessDate: AccessControlService.generalAccessDate,
+          membershipTier: SubscriptionTier.basic,
+        );
+      }
+
       // Admin and test users ALWAYS get through — force approve if needed
-      if (accessData != null && (accessData.isAdmin || accessData.isTestUser)) {
+      if (accessData.isAdmin || accessData.isTestUser) {
         if (accessData.approvalStatus != ApprovalStatus.approved) {
           debugPrint('🔑 Force-approving admin/test user $userId');
           await _accessControlService.approveUser(userId, 'system');
           final correctedData = await _accessControlService.getCurrentUserAccess();
           if (mounted) {
             setState(() {
-              _accessData = correctedData;
+              _accessData = correctedData ?? accessData;
               _isCheckingAccess = false;
             });
             // Prompt for notifications after frame renders
@@ -640,8 +672,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
           _isCheckingAccess = false;
         });
         // Show notification prompt for approved non-admin users
-        if (accessData != null &&
-            accessData.approvalStatus == ApprovalStatus.approved) {
+        if (accessData.approvalStatus == ApprovalStatus.approved) {
           WidgetsBinding.instance.addPostFrameCallback((_) {
             _maybeShowNotificationPrompt(userId);
           });
@@ -651,19 +682,32 @@ class _AuthWrapperState extends State<AuthWrapper> {
       debugPrint('🔑 Access check error: $e');
       if (mounted) {
         setState(() {
-          _accessData = null;
+          // Use fallback so user isn't stuck on splash
+          _accessData = UserAccessData(
+            userId: userId,
+            approvalStatus: ApprovalStatus.pending,
+            accessDate: AccessControlService.generalAccessDate,
+            membershipTier: SubscriptionTier.basic,
+          );
           _isCheckingAccess = false;
         });
       }
     }
   }
 
+  bool _isSigningOut = false;
+
   void _handleSignOut() {
-    // Clear discovery caches before signing out (same as profile logout)
+    _isSigningOut = true;
+    // Clear all caches before signing out
     try {
       final datasource = GetIt.I<DiscoveryRemoteDataSource>();
       datasource.clearAllDiscoveryCaches();
     } catch (_) {}
+    try {
+      CacheService.instance.clearAll();
+    } catch (_) {}
+
     context.read<AuthBloc>().add(AuthSignOutRequested());
     setState(() {
       _accessData = null;
@@ -672,42 +716,11 @@ class _AuthWrapperState extends State<AuthWrapper> {
       _admin2FAVerified = false;
       _showPostLoginSplash = false;
       _splashUserId = null;
+      _isCheckingAccess = false;
       Admin2FAScreen.resetVerification();
     });
   }
 
-  /// Create the missing users document so the access check can succeed.
-  /// This handles cases where registration didn't create the doc (e.g. network
-  /// issues, Firestore timeout, or legacy accounts).
-  bool _isCreatingAccessData = false;
-  Future<void> _createMissingAccessData(String userId) async {
-    if (_isCreatingAccessData) return;
-    _isCreatingAccessData = true;
-    try {
-      final email = FirebaseAuth.instance.currentUser?.email;
-      await _accessControlService.initializeUserAccess(
-        userId: userId,
-        email: email ?? '',
-      );
-      // Re-check access now that the doc exists
-      await _checkAccessStatus(userId);
-    } catch (e) {
-      debugPrint('⚠️ Failed to create access data: $e');
-      // Even if creation fails, don't leave user stuck — let them through
-      if (mounted) {
-        setState(() {
-          _accessData = UserAccessData(
-            userId: userId,
-            approvalStatus: ApprovalStatus.pending,
-            accessDate: AccessControlService.generalAccessDate,
-            membershipTier: SubscriptionTier.basic,
-          );
-        });
-      }
-    } finally {
-      _isCreatingAccessData = false;
-    }
-  }
 
   void _handleRefresh() {
     setState(() {
@@ -907,8 +920,16 @@ class _AuthWrapperState extends State<AuthWrapper> {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
       listener: (context, state) async {
+        // Reset signing-out flag as soon as we get any new auth state,
+        // so it never blocks a subsequent re-login
+        if (state is AuthAuthenticated) {
+          _isSigningOut = false;
+        }
         // When user becomes authenticated, check their access status and load language
         if (state is AuthAuthenticated) {
+          // Guard: skip if already checking access for this user (prevents duplicate calls
+          // from double AuthAuthenticated emission via login handler + auth stream)
+          if (_isCheckingAccess && _splashUserId == state.user.uid) return;
           // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
           // (builder runs before async work completes)
           setState(() {
@@ -945,7 +966,9 @@ class _AuthWrapperState extends State<AuthWrapper> {
           }
         }
         // When user signs out, reset access state to prevent stuck splash
-        if (state is AuthInitial) {
+        if (state is AuthInitial || state is AuthUnauthenticated) {
+          _isSigningOut = false;
+      
           setState(() {
             _accessData = null;
             _needsOnboarding = false;
@@ -1021,13 +1044,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
             }
             // Pending and approved users — let them into the app
             return _buildMainOrSplash(state.user.uid);
-          } else {
-            // No access data found (users doc missing or Firestore error).
-            // Create it now so the user isn't stuck on splash forever.
-            _createMissingAccessData(state.user.uid);
           }
-          // User can access the app
-          return _buildMainOrSplash(state.user.uid);
+          // Access data not loaded yet (listener is running _checkAccessStatus)
+          // Show splash while we wait — no side effects in build
+          return const SplashScreen();
         } else {
           return const LoginScreen();
         }
