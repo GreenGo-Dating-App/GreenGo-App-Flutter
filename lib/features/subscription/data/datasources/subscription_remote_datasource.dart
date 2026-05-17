@@ -18,18 +18,18 @@ class SubscriptionRemoteDataSource {
   final InAppPurchase inAppPurchase;
   final FirebaseFunctions functions;
 
-    // Product IDs for one-time membership purchases
+    // Subscription product IDs (auto-renewing, Google Play Console)
   static const String baseMembershipProductId = 'greengo_base_membership';
-  
-  // Monthly memberships
-  static const String silverMonthlyProductId = '1_month_silver';
-  static const String goldMonthlyProductId = '1_month_gold';
-  static const String platinumMonthlyProductId = '1_month_platinum';
-  
-  // Yearly memberships (with discount)
-  static const String silverYearlyProductId = '1_year_silver';
-  static const String goldYearlyProductId = '1_year_gold';
-  static const String platinumYearlyProductId = '1_year_platinum_membership';
+
+  // Monthly subscriptions
+  static const String silverMonthlyProductId = 'silver_premium_monthly';
+  static const String goldMonthlyProductId = 'gold_premium_monthly';
+  static const String platinumMonthlyProductId = 'platinum_vip_monthly';
+
+  // Yearly subscriptions (with discount)
+  static const String silverYearlyProductId = 'greengo_silver_yearly';
+  static const String goldYearlyProductId = 'greengo_gold_yearly';
+  static const String platinumYearlyProductId = 'greengo_platinum_yearly';
 
   static const Set<String> _productIds = {
     baseMembershipProductId,
@@ -39,6 +39,16 @@ class SubscriptionRemoteDataSource {
     silverYearlyProductId,
     goldYearlyProductId,
     platinumYearlyProductId,
+  };
+
+  // Legacy product IDs (for backwards compatibility with existing one-time purchases)
+  static const Set<String> _legacyProductIds = {
+    '1_month_silver',
+    '1_year_silver',
+    '1_month_gold',
+    '1_year_gold',
+    '1_month_platinum',
+    '1_year_platinum_membership',
   };
 
   // Purchase stream subscription for monitoring
@@ -89,22 +99,18 @@ class SubscriptionRemoteDataSource {
     return response.productDetails;
   }
 
-      /// Purchase membership (one-time purchase)
-  /// Users can buy membership for 1 month or 1 year
+      /// Purchase membership subscription (auto-renewing)
+  /// Users subscribe for 1 month or 1 year with auto-renewal
   Future<void> purchaseMembership({
     required ProductDetails product,
     required String userId,
   }) async {
-    // For one-time purchases, we don't check if already owned
-    // because users can buy multiple times to extend membership
-    
     final PurchaseParam purchaseParam;
 
     if (Platform.isAndroid) {
       purchaseParam = GooglePlayPurchaseParam(
         productDetails: product,
         applicationUserName: userId,
-        changeSubscriptionParam: null,
       );
     } else {
       purchaseParam = PurchaseParam(
@@ -113,8 +119,9 @@ class SubscriptionRemoteDataSource {
       );
     }
 
-    // Use buyConsumable for one-time purchases
-    await inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
+    // Use buyNonConsumable for auto-renewing subscriptions
+    // The store (Google Play / App Store) manages auto-renewal
+    await inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
   }
 
     /// Restore purchases (Point 154)
@@ -262,6 +269,7 @@ class SubscriptionRemoteDataSource {
       final duration = details['duration'] as Duration;
       final durationDays = duration.inDays;
       final tierName = tier.name.toUpperCase();
+      final isSubscription = details['isSubscription'] as bool? ?? false;
 
       final now = DateTime.now();
 
@@ -295,6 +303,7 @@ class SubscriptionRemoteDataSource {
       'purchaseToken': purchaseDetails.purchaseID,
       'transactionId': purchaseDetails.purchaseID,
       'orderId': purchaseDetails.purchaseID,
+      'autoRenew': isSubscription,
       'price': tier.monthlyPrice,
       'currency': 'USD',
       'createdAt': FieldValue.serverTimestamp(),
@@ -385,37 +394,40 @@ class SubscriptionRemoteDataSource {
   }
 
       /// Helper: Get tier and duration from product ID
+  /// Handles both new subscription IDs and legacy one-time purchase IDs
   Map<String, dynamic> _getMembershipDetailsFromProductId(String productId) {
     SubscriptionTier tier;
     Duration duration;
-    
-    // Determine tier
-    if (productId.contains('platinum')) {
+    final isSubscription = SubscriptionTierExtension.isSubscriptionProductId(productId);
+
+    // Determine tier (works for both old and new IDs)
+    if (productId.contains('platinum') || productId.contains('vip')) {
       tier = SubscriptionTier.platinum;
     } else if (productId.contains('gold')) {
       tier = SubscriptionTier.gold;
     } else if (productId.contains('silver')) {
       tier = SubscriptionTier.silver;
-    } else if (productId.contains('base')) {
+    } else if (productId.contains('base') || productId == 'greengo_base_membership') {
       tier = SubscriptionTier.basic;
     } else {
       tier = SubscriptionTier.basic;
     }
-    
-    // Determine duration
-    if (productId.contains('1_year') || productId.contains('year')) {
+
+    // Determine duration (works for both old and new IDs)
+    if (productId.contains('year')) {
       duration = const Duration(days: 365); // 1 year
-    } else if (productId.contains('1_month') || productId.contains('month')) {
+    } else if (productId.contains('month')) {
       duration = const Duration(days: 30); // 1 month
     } else {
-      // Default to 1 month for base membership
-      duration = const Duration(days: 30);
+      // Base membership is yearly only
+      duration = const Duration(days: 365);
     }
-    
+
     return {
       'tier': tier,
       'duration': duration,
       'isYearly': duration.inDays >= 365,
+      'isSubscription': isSubscription,
     };
   }
 

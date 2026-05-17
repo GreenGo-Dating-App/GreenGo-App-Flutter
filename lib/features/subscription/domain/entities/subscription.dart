@@ -85,8 +85,40 @@ extension SubscriptionTierExtension on SubscriptionTier {
     return ((monthlyTotal - yearlyPrice) / monthlyTotal) * 100;
   }
 
-  /// Monthly product ID (for store lookup)
+  /// Monthly subscription product ID (for store lookup)
   String get monthlyProductId {
+    switch (this) {
+      case SubscriptionTier.basic:
+        return 'greengo_base_membership'; // Base is yearly only
+      case SubscriptionTier.silver:
+        return 'silver_premium_monthly';
+      case SubscriptionTier.gold:
+        return 'gold_premium_monthly';
+      case SubscriptionTier.platinum:
+        return 'platinum_vip_monthly';
+      case SubscriptionTier.test:
+        return 'test_user';
+    }
+  }
+
+  /// Yearly subscription product ID (for store lookup)
+  String get yearlyProductId {
+    switch (this) {
+      case SubscriptionTier.basic:
+        return 'greengo_base_membership'; // Base is yearly only
+      case SubscriptionTier.silver:
+        return 'greengo_silver_yearly';
+      case SubscriptionTier.gold:
+        return 'greengo_gold_yearly';
+      case SubscriptionTier.platinum:
+        return 'greengo_platinum_yearly';
+      case SubscriptionTier.test:
+        return 'test_user';
+    }
+  }
+
+  /// Legacy monthly product IDs (for backwards compatibility with existing purchases)
+  String get legacyMonthlyProductId {
     switch (this) {
       case SubscriptionTier.basic:
         return 'greengo_base_membership';
@@ -101,11 +133,11 @@ extension SubscriptionTierExtension on SubscriptionTier {
     }
   }
 
-  /// Yearly product ID (for store lookup)
-  String get yearlyProductId {
+  /// Legacy yearly product IDs (for backwards compatibility with existing purchases)
+  String get legacyYearlyProductId {
     switch (this) {
       case SubscriptionTier.basic:
-        return 'greengo_base_membership'; // Base is one-time, no yearly variant
+        return 'greengo_base_membership';
       case SubscriptionTier.silver:
         return '1_year_silver';
       case SubscriptionTier.gold:
@@ -119,6 +151,32 @@ extension SubscriptionTierExtension on SubscriptionTier {
 
   /// Legacy getter for backwards compatibility
   String get productId => monthlyProductId;
+
+  /// All subscription product IDs (Google Play Console)
+  static const Set<String> allSubscriptionProductIds = {
+    'greengo_base_membership',
+    'silver_premium_monthly',
+    'greengo_silver_yearly',
+    'gold_premium_monthly',
+    'greengo_gold_yearly',
+    'platinum_vip_monthly',
+    'greengo_platinum_yearly',
+  };
+
+  /// All legacy product IDs (old one-time purchases)
+  static const Set<String> allLegacyProductIds = {
+    '1_month_silver',
+    '1_year_silver',
+    '1_month_gold',
+    '1_year_gold',
+    '1_month_platinum',
+    '1_year_platinum_membership',
+  };
+
+  /// Check if a product ID is a subscription vs legacy one-time purchase
+  static bool isSubscriptionProductId(String productId) {
+    return allSubscriptionProductIds.contains(productId);
+  }
 
   /// Check if this tier bypasses countdown restrictions
   bool get bypassesCountdown {
@@ -343,7 +401,7 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
 }
 
 /// Subscription Entity
-/// Represents a user's one-time membership purchase
+/// Represents a user's auto-renewing subscription or legacy one-time membership purchase
 class Subscription extends Equatable {
   final String subscriptionId;
   final String userId;
@@ -358,6 +416,11 @@ class Subscription extends Equatable {
   final String? purchaseToken;
   final String? transactionId;
   final String? orderId;
+
+  // Subscription management
+  final bool autoRenew; // true for auto-renewing subscriptions
+  final String? stripeSubscriptionId; // Stripe subscription ID (web only)
+  final String? stripeCustomerId; // Stripe customer ID (web only)
 
   // Pricing
   final double price;
@@ -379,6 +442,9 @@ class Subscription extends Equatable {
     this.purchaseToken,
     this.transactionId,
     this.orderId,
+    this.autoRenew = false,
+    this.stripeSubscriptionId,
+    this.stripeCustomerId,
     required this.price,
     this.currency = 'USD',
     required this.createdAt,
@@ -440,6 +506,9 @@ class Subscription extends Equatable {
     String? purchaseToken,
     String? transactionId,
     String? orderId,
+    bool? autoRenew,
+    String? stripeSubscriptionId,
+    String? stripeCustomerId,
     double? price,
     String? currency,
     DateTime? createdAt,
@@ -457,6 +526,9 @@ class Subscription extends Equatable {
       purchaseToken: purchaseToken ?? this.purchaseToken,
       transactionId: transactionId ?? this.transactionId,
       orderId: orderId ?? this.orderId,
+      autoRenew: autoRenew ?? this.autoRenew,
+      stripeSubscriptionId: stripeSubscriptionId ?? this.stripeSubscriptionId,
+      stripeCustomerId: stripeCustomerId ?? this.stripeCustomerId,
       price: price ?? this.price,
       currency: currency ?? this.currency,
       createdAt: createdAt ?? this.createdAt,
@@ -477,6 +549,9 @@ class Subscription extends Equatable {
         purchaseToken,
         transactionId,
         orderId,
+        autoRenew,
+        stripeSubscriptionId,
+        stripeCustomerId,
         price,
         currency,
         createdAt,

@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/subscription.dart';
 
 /// Subscription Model
-/// Data layer model with Firestore serialization for one-time membership purchases
+/// Data layer model with Firestore serialization for auto-renewing subscriptions
 class SubscriptionModel extends Subscription {
   const SubscriptionModel({
     required super.subscriptionId,
@@ -16,6 +16,9 @@ class SubscriptionModel extends Subscription {
     super.purchaseToken,
     super.transactionId,
     super.orderId,
+    super.autoRenew,
+    super.stripeSubscriptionId,
+    super.stripeCustomerId,
     required super.price,
     super.currency,
     required super.createdAt,
@@ -36,6 +39,9 @@ class SubscriptionModel extends Subscription {
       purchaseToken: subscription.purchaseToken,
       transactionId: subscription.transactionId,
       orderId: subscription.orderId,
+      autoRenew: subscription.autoRenew,
+      stripeSubscriptionId: subscription.stripeSubscriptionId,
+      stripeCustomerId: subscription.stripeCustomerId,
       price: subscription.price,
       currency: subscription.currency,
       createdAt: subscription.createdAt,
@@ -59,6 +65,9 @@ class SubscriptionModel extends Subscription {
       purchaseToken: data['purchaseToken'] as String?,
       transactionId: data['transactionId'] as String?,
       orderId: data['orderId'] as String?,
+      autoRenew: data['autoRenew'] as bool? ?? false,
+      stripeSubscriptionId: data['stripeSubscriptionId'] as String?,
+      stripeCustomerId: data['stripeCustomerId'] as String?,
       price: (data['price'] as num?)?.toDouble() ?? 0.0,
       currency: data['currency'] as String? ?? 'USD',
       createdAt: (data['createdAt'] as Timestamp).toDate(),
@@ -81,6 +90,9 @@ class SubscriptionModel extends Subscription {
       'purchaseToken': purchaseToken,
       'transactionId': transactionId,
       'orderId': orderId,
+      'autoRenew': autoRenew,
+      'stripeSubscriptionId': stripeSubscriptionId,
+      'stripeCustomerId': stripeCustomerId,
       'price': price,
       'currency': currency,
       'createdAt': Timestamp.fromDate(createdAt),
@@ -102,6 +114,9 @@ class SubscriptionModel extends Subscription {
       purchaseToken: purchaseToken,
       transactionId: transactionId,
       orderId: orderId,
+      autoRenew: autoRenew,
+      stripeSubscriptionId: stripeSubscriptionId,
+      stripeCustomerId: stripeCustomerId,
       price: price,
       currency: currency,
       createdAt: createdAt,

@@ -134,6 +134,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   // Grid mode state
   bool _isGridMode = true;
   int _gridColumns = 0; // 0 = auto (responsive based on screen width)
+  int _lastEffectiveCols = 2; // Actual columns from LayoutBuilder (used by card builder)
   int _gridExtraPurchased = 0; // Number of extra batches purchased
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
@@ -157,6 +158,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   /// Auto-detect grid columns based on available width
   int _autoColumns(double width) {
+    if (kIsWeb) {
+      if (width < 400) return 3;
+      if (width < 700) return 4;
+      if (width < 1100) return 6;
+      return 8;
+    }
     if (width < 300) return 2;
     if (width < 450) return 3;
     return 4;
@@ -1020,13 +1027,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 final effectiveCols = _gridColumns == 0
                     ? _autoColumns(constraints.maxWidth)
                     : _gridColumns;
+                _lastEffectiveCols = effectiveCols;
                 return GridView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: effectiveCols,
                 crossAxisSpacing: 3,
                 mainAxisSpacing: 3,
-                childAspectRatio: effectiveCols >= 4 ? 0.8 : 0.7,
+                childAspectRatio: effectiveCols >= 6 ? 0.85 : (effectiveCols >= 4 ? 0.8 : 0.7),
               ),
               itemCount: visibleCount + (hasMore ? 1 : 0),
               itemBuilder: (context, index) {
@@ -1160,7 +1168,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: [0, 2, 3, 4].map((cols) {
+        children: (kIsWeb ? [0, 3, 4, 6, 8] : [0, 2, 3, 4]).map((cols) {
           final isSelected = _gridColumns == cols;
           return GestureDetector(
             onTap: () {
@@ -1257,9 +1265,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   Widget _buildGridProfileCard(BuildContext context, DiscoveryCard card) {
-    final effectiveCols = _gridColumns == 0
-        ? _autoColumns(MediaQuery.of(context).size.width - 8) // account for padding
-        : _gridColumns;
+    final effectiveCols = _lastEffectiveCols;
     final isSelf = card.userId == userId;
     return _GridProfileCard(
       key: ValueKey(card.userId),
@@ -1884,7 +1890,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final profile = widget.card.candidate.profile;
     final photoUrls = profile.photoUrls;
     final hasMultiplePhotos = photoUrls.length > 1;
-    final showText = widget.gridColumns <= 3;
+    final showText = true; // Always show name, age, match %, city
     final location = profile.effectiveLocation;
     final distanceText = widget.isRandomMode ? '' : widget.card.candidate.distanceText;
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
@@ -2331,11 +2337,11 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 ),
               ),
 
-            // "You" label for self-profile card
+            // "You" label for self-profile card (top-left)
             if (widget.isSelfProfile)
               Positioned(
                 top: 4,
-                right: 4,
+                left: 4,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(

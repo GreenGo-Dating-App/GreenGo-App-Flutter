@@ -61,6 +61,7 @@ import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../app_tour/presentation/widgets/tour_overlay.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
+import '../../../../core/widgets/trial_subscription_popup.dart';
 
 /// Main Navigation Screen
 ///
@@ -277,24 +278,61 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   bool _membershipCheckDone = false;
 
-  /// Check base membership on app start — show trial welcome or purchase dialog
+  /// Check base membership on app start.
+  /// - If user has active base membership → do nothing (already unlocked)
+  /// - If trial offer not yet shown → show trial popup (user must accept to get 7-day trial)
+  /// - If trial was declined or expired → show purchase dialog
   void _checkBaseMembership(Profile profile) {
     if (_membershipCheckDone) return;
     _membershipCheckDone = true;
 
-    // If user has an active trial membership, show one-time welcome popup
-    if (profile.isBaseMembershipActive && profile.baseMembershipEndDate != null) {
-      // Delay to ensure the widget tree is fully built before showing dialog
-      Future.delayed(const Duration(milliseconds: 800), () {
-        if (mounted) _showTrialWelcomeDialog(profile.baseMembershipEndDate!);
-      });
-      return;
-    }
+    // If user already has an active base membership, nothing to do
+    if (profile.isBaseMembershipActive) return;
 
-    // No active membership — show purchase dialog
-    Future.delayed(const Duration(milliseconds: 800), () {
-      if (mounted) {
-        BaseMembershipDialog.show(context: context, userId: widget.userId);
+    // No active membership — check trial status
+    Future.delayed(const Duration(milliseconds: 800), () async {
+      if (!mounted) return;
+      try {
+        final doc = await FirebaseFirestore.instance
+            .collection('users')
+            .doc(widget.userId)
+            .get();
+        final trialOfferShown = doc.data()?['trialOfferShown'] == true;
+
+        if (!mounted) return;
+
+        if (!trialOfferShown) {
+          // Check if this email was already used for a trial (prevents delete+recreate abuse)
+          final email = FirebaseAuth.instance.currentUser?.email;
+          if (email != null && email.isNotEmpty) {
+            final trialHistory = await FirebaseFirestore.instance
+                .collection('trialHistory')
+                .where('email', isEqualTo: email.toLowerCase())
+                .limit(1)
+                .get();
+            if (trialHistory.docs.isNotEmpty) {
+              // Email already used a trial — mark as shown so popup won't appear
+              await FirebaseFirestore.instance
+                  .collection('users')
+                  .doc(widget.userId)
+                  .set({'trialOfferShown': true}, SetOptions(merge: true));
+              debugPrint('[Trial] Email $email already used a trial — skipping popup');
+              return;
+            }
+          }
+
+          // First time — show membership popup. User must subscribe to get base membership.
+          if (!mounted) return;
+          await TrialSubscriptionPopup.show(
+            context: context,
+            userId: widget.userId,
+          );
+        }
+        // If trial was already offered but user has no membership,
+        // don't nag on every app open. The user can purchase from
+        // the coin shop or membership screen when they're ready.
+      } catch (e) {
+        debugPrint('Trial offer check error: $e');
       }
     });
   }
@@ -314,19 +352,34 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       if (!doc.exists || !mounted || _membershipCheckDone) return;
 
       final data = doc.data()!;
+      // Check if ANY membership is active (base, silver, gold, platinum)
+      final membershipTier = data['membershipTier'] as String? ?? 'free';
+      final membershipEndTs = data['membershipEndDate'] as Timestamp?;
+      final membershipEndDate = membershipEndTs?.toDate();
       final hasBase = data['hasBaseMembership'] as bool? ?? false;
-      final endTs = data['baseMembershipEndDate'] as Timestamp?;
-      final endDate = endTs?.toDate();
-      final isActive = hasBase && endDate != null && endDate.isAfter(DateTime.now());
+      final baseEndTs = data['baseMembershipEndDate'] as Timestamp?;
+      final baseEndDate = baseEndTs?.toDate();
+      final isActive = (membershipTier != 'free' && membershipEndDate != null && membershipEndDate.isAfter(DateTime.now())) ||
+          (hasBase && baseEndDate != null && baseEndDate.isAfter(DateTime.now()));
 
       _membershipCheckDone = true;
 
-      if (isActive && endDate != null) {
-        if (mounted) _showTrialWelcomeDialog(endDate);
-      } else {
-        if (mounted) {
-          BaseMembershipDialog.show(context: context, userId: widget.userId);
-        }
+      if (isActive) {
+        // User already has active base membership — nothing to do
+        return;
+      }
+
+      // No active membership — check trial status
+      final userDoc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(widget.userId)
+          .get();
+      final trialOfferShown = userDoc.data()?['trialOfferShown'] == true;
+      if (mounted && !trialOfferShown) {
+        await TrialSubscriptionPopup.show(
+          context: context,
+          userId: widget.userId,
+        );
       }
     } catch (e) {
       debugPrint('Direct membership check error: $e');
@@ -342,96 +395,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
   }
 
-  /// Show a one-time trial welcome popup after first login
-  /// Uses Firestore `users/{userId}.trialWelcomeShown` to persist across devices/reinstalls
-  Future<void> _showTrialWelcomeDialog(DateTime expirationDate) async {
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(widget.userId)
-          .get();
-      if (doc.data()?['trialWelcomeShown'] == true) return;
-
-      // Mark as shown immediately in Firestore
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(widget.userId)
-          .update({'trialWelcomeShown': true});
-    } catch (e) {
-      // If Firestore fails, skip the popup rather than crash
-      debugPrint('Trial welcome check error: $e');
-      return;
-    }
-
-    if (!mounted) return;
-
-    final l10n = AppLocalizations.of(context);
-    final formattedDate = '${expirationDate.day.toString().padLeft(2, '0')}/'
-        '${expirationDate.month.toString().padLeft(2, '0')}/'
-        '${expirationDate.year}';
-
-    await showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => Dialog(
-        backgroundColor: AppColors.charcoal,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: const BorderSide(color: AppColors.richGold, width: 1.5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Icon(Icons.card_giftcard,
-                  color: AppColors.richGold, size: 48),
-              const SizedBox(height: 16),
-              Text(
-                l10n?.trialWelcomeTitle ?? 'Welcome to GreenGo!',
-                style: const TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                l10n?.trialWelcomeMessage(formattedDate) ??
-                    'You are currently using the trial version. Your free base membership is active until $formattedDate. Enjoy exploring GreenGo!',
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 15,
-                  height: 1.5,
-                ),
-              ),
-              const SizedBox(height: 24),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  onPressed: () => Navigator.of(ctx).pop(),
-                  child: Text(
-                    l10n?.trialWelcomeButton ?? 'Get Started',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 16),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 
   /// Grant 20 free coins daily (once per calendar day)
   Future<void> _grantDailyFreeCoins() async {

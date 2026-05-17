@@ -274,8 +274,11 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
       debugPrint('[BaseMembership] Firestore update failed: $e');
     }
 
-    // Complete and consume the purchase so it can be bought again
-    await _completeAndConsume(p);
+    // Complete the purchase (acknowledge it with the store)
+    // For subscriptions, do NOT consume — the store manages renewal
+    if (p.pendingCompletePurchase) {
+      await _iap.completePurchase(p);
+    }
 
     if (mounted) {
       // Refresh coin balance and profile in the UI using the captured blocs
@@ -311,16 +314,48 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog> {
         return;
       }
 
-      // All products are managed (in-app) products — use buyConsumable
-      final product = response.productDetails.first;
-      debugPrint('[BaseMembership] Product: ${product.id}, title: ${product.title}, '
-          'price: ${product.price}, rawPrice: ${product.rawPrice}');
+      // Log all returned products for diagnostics
+      for (final p in response.productDetails) {
+        if (p is GooglePlayProductDetails) {
+          debugPrint('[BaseMembership] Found: ${p.id}'
+              ', type=${p.productDetails.productType}'
+              ', offerToken=${p.offerToken}'
+              ', subscriptionIndex=${p.subscriptionIndex}'
+              ', price=${p.price}');
+        } else {
+          debugPrint('[BaseMembership] Found: ${p.id}, price=${p.price}');
+        }
+      }
 
-      final param = PurchaseParam(
-        productDetails: product,
-        applicationUserName: widget.userId,
-      );
-      final bool ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
+      // On Android, prefer the subscription version (with offerToken) over inapp
+      ProductDetails product = response.productDetails.first;
+      if (Platform.isAndroid) {
+        final subProduct = response.productDetails
+            .whereType<GooglePlayProductDetails>()
+            .where((p) => p.offerToken != null)
+            .firstOrNull;
+        if (subProduct != null) {
+          product = subProduct;
+          debugPrint('[BaseMembership] Selected subscription product with offerToken: ${subProduct.offerToken}');
+        } else {
+          debugPrint('[BaseMembership] WARNING: No product with offerToken found!');
+        }
+      }
+
+      // For Android subscriptions, must use GooglePlayPurchaseParam to pass offer token
+      late PurchaseParam param;
+      if (Platform.isAndroid && product is GooglePlayProductDetails) {
+        param = GooglePlayPurchaseParam(
+          productDetails: product,
+          applicationUserName: widget.userId,
+        );
+      } else {
+        param = PurchaseParam(
+          productDetails: product,
+          applicationUserName: widget.userId,
+        );
+      }
+      final bool ok = await _iap.buyNonConsumable(purchaseParam: param);
 
       if (!ok && mounted) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);

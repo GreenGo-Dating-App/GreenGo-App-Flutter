@@ -1,8 +1,10 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
@@ -93,7 +95,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
   /// Returns true if the product's tier is lower than the user's current active tier.
   bool _isLowerThanCurrentTier(String productId) {
-    if (productId == 'greengo_base_membership') return false; // Base is always purchasable
+    if (productId.contains('greengo_base_membership')) return false; // Base is always purchasable
     final currentRank = _currentTierRank();
     if (currentRank <= 0) return false; // No active premium tier, everything allowed
     final productRank = _tierRankFromProductId(productId);
@@ -152,7 +154,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
           final yearlyProducts =
               products.where((p) => p.id.contains('1_year')).toList();
           final baseProducts =
-              products.where((p) => p.id == 'greengo_base_membership').toList();
+              products.where((p) => p.id.contains('greengo_base_membership')).toList();
           final baseProduct = baseProducts.isNotEmpty ? baseProducts.first : null;
 
           return Stack(
@@ -380,9 +382,36 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                 color: Colors.white54,
               ),
             ),
+          if (isActive) ...[
+            const SizedBox(height: 12),
+            TextButton.icon(
+              onPressed: _openSubscriptionManagement,
+              icon: const Icon(Icons.settings, size: 16, color: Colors.white70),
+              label: const Text(
+                'Manage Subscription',
+                style: TextStyle(color: Colors.white70, fontSize: 13),
+              ),
+            ),
+          ],
         ],
       ),
     );
+  }
+
+  /// Open platform-specific subscription management page
+  Future<void> _openSubscriptionManagement() async {
+    Uri uri;
+    if (Platform.isAndroid) {
+      uri = Uri.parse('https://play.google.com/store/account/subscriptions');
+    } else if (Platform.isIOS) {
+      uri = Uri.parse('https://apps.apple.com/account/subscriptions');
+    } else {
+      // Web — direct to app settings or Stripe customer portal
+      return;
+    }
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
   }
 
   Widget _buildProductCard({
@@ -464,7 +493,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                           ),
                         ],
-                        if (product.id == 'greengo_base_membership') ...[
+                        if (product.id.contains('greengo_base_membership')) ...[
                           const SizedBox(width: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(
@@ -636,7 +665,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
     if (productId.contains('platinum')) return l10n.membershipPlatinum;
     if (productId.contains('gold')) return l10n.membershipGold;
     if (productId.contains('silver')) return l10n.membershipSilver;
-    if (productId == 'greengo_base_membership') return l10n.membershipBaseMembership;
+    if (productId.contains('greengo_base_membership')) return l10n.membershipBaseMembership;
     return l10n.membershipGeneric;
   }
 

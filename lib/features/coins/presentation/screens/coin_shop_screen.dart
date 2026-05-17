@@ -174,8 +174,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           break;
 
         case PurchaseStatus.purchased:
-        case PurchaseStatus.restored:
           _handleSuccessfulPurchase(purchaseDetails);
+          break;
+
+        case PurchaseStatus.restored:
+          // Restored purchases should only be consumed/completed, not treated as new purchases.
+          // This prevents the celebration splash from showing on every app open.
+          debugPrint('[IAP] Restored purchase: ${purchaseDetails.productID} — completing without celebration');
+          _completeAndConsume(purchaseDetails);
           break;
 
         case PurchaseStatus.error:
@@ -216,7 +222,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final productId = purchaseDetails.productID;
 
     // Check if this is a base membership purchase
-    if (productId == 'greengo_base_membership') {
+    if (productId.contains('greengo_base_membership')) {
       debugPrint('[IAP] Base membership purchase successful');
       final now = DateTime.now();
       final firestore = FirebaseFirestore.instance;
@@ -454,9 +460,42 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
-  /// Buy a product — all products are managed (in-app) products, use buyConsumable
+  /// Buy a product — subscriptions use buyNonConsumable, coins use buyConsumable
   Future<bool> _buyProduct(ProductDetails product) async {
     debugPrint('[CoinShop] Buying product: ${product.id}, price: ${product.price}');
+    // Membership subscriptions are non-consumable (auto-renewing)
+    if (SubscriptionTierExtension.allSubscriptionProductIds.contains(product.id)) {
+      // For Android subscriptions, must use GooglePlayPurchaseParam with offer token
+      // Ensure we have the subscription version (with offerToken), not inapp version
+      ProductDetails selectedProduct = product;
+      if (Platform.isAndroid && product is GooglePlayProductDetails && product.offerToken == null) {
+        debugPrint('[CoinShop] WARNING: Product ${product.id} has null offerToken, re-querying...');
+        final response = await _inAppPurchase!.queryProductDetails({product.id});
+        final subProduct = response.productDetails
+            .whereType<GooglePlayProductDetails>()
+            .where((p) => p.offerToken != null)
+            .firstOrNull;
+        if (subProduct != null) {
+          selectedProduct = subProduct;
+          debugPrint('[CoinShop] Found subscription version with offerToken: ${subProduct.offerToken}');
+        }
+      }
+
+      late PurchaseParam param;
+      if (Platform.isAndroid && selectedProduct is GooglePlayProductDetails) {
+        param = GooglePlayPurchaseParam(
+          productDetails: selectedProduct,
+          applicationUserName: widget.userId,
+        );
+      } else {
+        param = PurchaseParam(
+          productDetails: selectedProduct,
+          applicationUserName: widget.userId,
+        );
+      }
+      return await _inAppPurchase!.buyNonConsumable(purchaseParam: param);
+    }
+    // Coins and legacy products are consumable
     final param = PurchaseParam(
       productDetails: product,
       applicationUserName: widget.userId,
@@ -1142,9 +1181,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
+                onPressed: isActive || _isLoadingSubscription ? null : _handleBaseMembershipPurchase,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.basePurple,
+                  backgroundColor: isActive ? Colors.grey[700] : AppColors.basePurple,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
@@ -1162,11 +1201,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       )
                     : Text(
                         isActive
-                            ? AppLocalizations.of(context)!.membershipExtendTitle
+                            ? AppLocalizations.of(context)!.shopActive
                             : AppLocalizations.of(context)!.subscribeNow,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
+                          color: isActive ? Colors.white38 : Colors.white,
                         ),
                       ),
               ),
@@ -1250,10 +1290,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         tierColor = Colors.grey;
     }
 
+    // Block selecting current active plan or downgrade
+    final isCurrentActive = isCurrentPlan && _membershipEndDate != null && _membershipEndDate!.isAfter(DateTime.now());
+    final isBlocked = isDowngrade || isCurrentActive;
+
     return GestureDetector(
-      onTap: isDowngrade ? null : () => setState(() => _selectedTier = tier),
+      onTap: isBlocked ? null : () => setState(() => _selectedTier = tier),
       child: Opacity(
-        opacity: isDowngrade ? 0.5 : 1.0,
+        opacity: isBlocked ? 0.5 : 1.0,
         child: Container(
           margin: const EdgeInsets.only(bottom: 16),
           decoration: BoxDecoration(
@@ -1498,6 +1542,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Future<void> _handleSubscribe() async {
     if (_selectedTier == null) return;
+
+    // Block purchasing the same tier if membership is still active
+    if (_selectedTier == _currentTier && _membershipEndDate != null && _membershipEndDate!.isAfter(DateTime.now())) {
+      _showError('You already have an active ${_currentTier.displayName} membership.');
+      return;
+    }
 
     setState(() => _isLoadingSubscription = true);
 

@@ -504,6 +504,27 @@ async function downgradeToBasic(userId: string) {
     platform: 'system',
     createdAt: admin.firestore.FieldValue.serverTimestamp(),
   });
+
+  // Update profile to reflect downgrade
+  try {
+    await firestore.collection('profiles').doc(userId).update({
+      membershipTier: 'BASIC',
+      hasBaseMembership: false,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  } catch (e) {
+    console.error(`Failed to update profile for ${userId}:`, e);
+  }
+
+  // Also update users collection
+  try {
+    await firestore.collection('users').doc(userId).update({
+      subscriptionTier: 'BASIC',
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  } catch (e) {
+    console.error(`Failed to update users collection for ${userId}:`, e);
+  }
 }
 
 /**
