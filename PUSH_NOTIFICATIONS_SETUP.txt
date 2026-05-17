@@ -1,0 +1,243 @@
+================================================================================
+GREENGO PUSH NOTIFICATIONS — SETUP PROCEDURE (ANDROID + iOS)
+================================================================================
+Last updated: 2026-04-29
+Firebase project: greengo-chat
+Backend triggers (already deployed to production):
+  - onNewMessagePush       conversations/{convId}/messages/{msgId}
+  - onNewLikePush          likes/{likeId}
+  - onNewMatchPush         matches/{matchId}
+  - onSupportMessagePush   support_messages/{msgId}
+  - onVerificationStatusChange  profiles/{userId} update
+  - checkExpiringModes     scheduled (every 15 minutes)
+
+================================================================================
+PART A — ANDROID
+================================================================================
+
+A1. Firebase / google-services.json
+-----------------------------------
+1. Open https://console.firebase.google.com → project "greengo-chat".
+2. Project Settings → "Your apps" → ensure the Android app is registered:
+       Package name: com.greengochat.greengochatapp
+3. Download google-services.json and replace:
+       android/app/google-services.json
+   (already present and committed for the production build).
+
+A2. AndroidManifest.xml — already wired
+---------------------------------------
+File: android/app/src/main/AndroidManifest.xml
+
+Required entries (verify these exist):
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- Inside <application> -->
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_channel_id"
+        android:value="greengo_notifications" />
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@drawable/ic_launcher_foreground" />
+
+The channel ID MUST match the one created at runtime in
+  lib/core/services/push_notification_service.dart  → AndroidNotificationChannel('greengo_notifications', ...)
+and the one sent by the Cloud Function:
+  functions/src/notifications/pushNotificationTriggers.ts → channelId: 'greengo_notifications'.
+
+A3. Notification icon
+---------------------
+Place a white-on-transparent icon at:
+    android/app/src/main/res/drawable/ic_launcher_foreground.xml  (or .png in mipmap-*)
+A coloured icon will appear as a white square on Android 5.0+.
+
+A4. (Optional) Custom sound
+---------------------------
+We currently use the system default. If you want a branded sound:
+1. Drop the audio file at:
+       android/app/src/main/res/raw/gold_chime.mp3      (lowercase, no spaces)
+2. In pushNotificationTriggers.ts, change in the message builder:
+       sound: 'default'  →  sound: 'gold_chime'
+3. Recreate the channel with the new sound (existing channels can NOT be edited
+   on user devices — bump the channel ID, e.g. 'greengo_notifications_v2',
+   and update both Flutter + Cloud Function strings).
+
+A5. Build + install
+-------------------
+    flutter build apk --release
+    # If you previously installed a debug build:
+    adb uninstall com.greengochat.greengochatapp
+    adb install build/app/outputs/flutter-apk/app-release.apk
+
+A6. Test push delivery
+----------------------
+1. Open the app → log in → accept the "Stay Connected" dialog when prompted.
+2. Verify FCM token saved:
+       Firestore → users/{uid}.fcmToken      (string)
+       Firestore → profiles/{uid}.fcmToken   (mirror)
+3. From a different device/account, send a chat message.
+4. Expected: notification appears within a few seconds with sender's name as
+   title and a message preview as body.
+5. Tap → opens that conversation directly.
+
+A7. Common Android issues
+-------------------------
+- "Notifications received but no sound"  → channel ID mismatch. Confirm
+  Cloud Function sends 'greengo_notifications' (case-sensitive).
+- "Notifications work in foreground only" → user has not granted
+  POST_NOTIFICATIONS permission (Android 13+). Re-prompt via app settings.
+- "No notifications when app is killed"  → battery optimisation / Doze.
+  On Xiaomi/Huawei/OnePlus, the user must whitelist the app manually.
+- "Token saved but pushes not arriving" → the FCM token may be stale. The
+  app's onTokenRefresh handler now writes the new token automatically.
+
+================================================================================
+PART B — iOS
+================================================================================
+
+B1. Apple Developer account prerequisites
+-----------------------------------------
+- Paid Apple Developer Program membership.
+- App ID matching the bundle ID (com.greengochat.greengochatapp) with
+  "Push Notifications" capability enabled.
+
+B2. APNs Authentication Key (one-time)
+--------------------------------------
+1. https://developer.apple.com/account → Certificates, IDs & Profiles → Keys.
+2. Create a new key with "Apple Push Notifications service (APNs)" enabled.
+3. Download the .p8 file (you can ONLY download it once — store securely).
+4. Note the Key ID and your Team ID.
+
+B3. Upload APNs key to Firebase
+-------------------------------
+1. Firebase Console → Project Settings → Cloud Messaging tab.
+2. Under "Apple app configuration" → upload the .p8 file.
+3. Enter Key ID + Team ID.
+4. Save.  (Firebase now relays push from FCM → APNs on your behalf.)
+
+B4. Xcode project capabilities
+------------------------------
+Open ios/Runner.xcworkspace, select the Runner target → Signing & Capabilities:
+1. Add capability: "Push Notifications".
+2. Add capability: "Background Modes" → check:
+       [x] Remote notifications
+       [x] Background fetch
+3. Ensure your Provisioning Profile (Automatic) is signed by the team that
+   owns the App ID with Push enabled.
+
+B5. GoogleService-Info.plist
+----------------------------
+Download from Firebase Console (project Settings → Your apps → iOS app),
+place at:
+    ios/Runner/GoogleService-Info.plist
+(must be added to the Runner target — drag into Xcode if missing).
+
+B6. Info.plist
+--------------
+File: ios/Runner/Info.plist
+
+Add (only if missing):
+
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <false/>
+    <key>UIBackgroundModes</key>
+    <array>
+      <string>fetch</string>
+      <string>remote-notification</string>
+    </array>
+
+B7. (Optional) Notification Service Extension — for sender avatars / inline reply
+---------------------------------------------------------------------------------
+Currently NOT included. To enable rich notifications later:
+1. Xcode → File → New → Target → Notification Service Extension.
+2. In the extension's NotificationService.swift, fetch `imageUrl` from the
+   notification payload, download, and attach as UNNotificationAttachment.
+3. Add the same App Group entitlement to both Runner and the extension to
+   share the FCM token / config.
+The Cloud Function already sends `notification.imageUrl` (sender photo).
+
+B8. Build + run
+---------------
+Local debug:
+    flutter run -d <ios device id>
+Release:
+    flutter build ipa --release
+    # then upload via Xcode Organizer or `xcrun altool`.
+
+B9. Test push delivery
+----------------------
+1. Run on a PHYSICAL device (push does not work in iOS Simulator).
+2. Log in → grant notification permission when prompted.
+3. Verify token in Firestore as for Android.
+4. Send a chat message from another account.
+5. Expected: banner notification, sound, badge updates.
+6. Tap → opens ChatScreen.
+
+B10. Common iOS issues
+----------------------
+- "No push received in production"  → wrong APNs environment. Firebase
+  needs the .p8 key (works for both sandbox + prod). Older p12 cert flows
+  must match Debug=sandbox, Release=production.
+- "Token retrieved but FCM send returns InvalidRegistration" → the user
+  just installed; iOS hasn't issued the APNs token yet. The Flutter app
+  retries on next login.
+- "Notifications work in dev but not TestFlight/AppStore" → re-check the
+  Provisioning Profile is the correct distribution profile and Push
+  Notifications capability is on the App ID.
+
+================================================================================
+PART C — VERIFY END-TO-END
+================================================================================
+
+C1. Smoke test (any platform)
+-----------------------------
+1. User A and User B both have the app installed.
+2. Both have logged in at least once (so fcmToken is populated in Firestore).
+3. User B closes the app (background or fully terminated).
+4. User A sends a chat message to User B.
+5. Within ~5 seconds, B's device shows a notification:
+       Title:   {A's display name}
+       Body:    message preview (or "📷 Photo" / "🎤 Voice message" / "🎥 Video")
+       Avatar:  A's profile photo (Android only without iOS NSE)
+6. Tap → ChatScreen opens directly to that conversation.
+
+C2. Verify per-feature behavior
+-------------------------------
+- Mute test:        chat menu → "Mute notifications" → send a message → no push.
+                    Unmute → send → push arrives.
+- Block test:       block User A → A sends message → no push (Cloud Function
+                    short-circuits via blockedUsers collection).
+- Quiet hours:      Settings → set quiet hours covering current UTC time →
+                    push is skipped, in-app notification still written.
+- Suppression test: open the chat with User A → A sends a message →
+                    no foreground notification (already in chat).
+- Group/stack test: receive 3 messages from same conversation while phone
+                    locked → only ONE card visible (replaces previous).
+
+C3. Inspect server-side
+-----------------------
+Live function logs:
+    firebase functions:log --only onNewMessagePush --project greengo-chat
+Look for the log lines emitted by the trigger:
+    sendPushToUser: Sent newMessage notification to user {uid}
+    onNewMessagePush: conv {id} muted for {uid}, skip
+    onNewMessagePush: {sender} <-> {recipient} blocked, skip
+
+================================================================================
+PART D — RELATED FILES (FOR REFERENCE)
+================================================================================
+  Backend trigger:         functions/src/notifications/pushNotificationTriggers.ts
+  Flutter service:         lib/core/services/push_notification_service.dart
+  Notification feature:    lib/features/notifications/
+  Chat mute methods:       lib/features/chat/data/datasources/chat_remote_datasource.dart
+                            (setConversationMutedForUser / isConversationMutedForUser)
+  Chat options menu:       lib/features/chat/presentation/screens/chat_screen.dart
+                            (_showChatOptionsMenu — "Mute notifications" item)
+  Android manifest:        android/app/src/main/AndroidManifest.xml
+  iOS info plist:          ios/Runner/Info.plist
+  Firebase config:         firebase.json + .firebaserc
+================================================================================
