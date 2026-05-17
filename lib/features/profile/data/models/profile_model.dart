@@ -109,7 +109,7 @@ class ProfileModel extends Profile {
           : <String>[],
       location: json['location'] != null
           ? LocationModel.fromJson(json['location'] as Map<String, dynamic>)
-          : const LocationModel(latitude: 0, longitude: 0, city: 'Unknown', country: 'Unknown', displayAddress: 'Unknown'),
+          : const LocationModel(latitude: 0, longitude: 0, city: '', country: '', displayAddress: ''),
       languages: json['languages'] != null
           ? List<String>.from(json['languages'] as List)
           : <String>[],
@@ -450,12 +450,18 @@ class LocationModel extends Location {
   });
 
   factory LocationModel.fromJson(Map<String, dynamic> json) {
+    // Treat the legacy "Unknown" sentinel as empty so UI can render
+    // "No location set" instead of fake values.
+    String _clean(dynamic v) {
+      final s = v as String? ?? '';
+      return s == 'Unknown' ? '' : s;
+    }
     return LocationModel(
       latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
       longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
-      city: json['city'] as String? ?? 'Unknown',
-      country: json['country'] as String? ?? 'Unknown',
-      displayAddress: json['displayAddress'] as String? ?? 'Unknown',
+      city: _clean(json['city']),
+      country: _clean(json['country']),
+      displayAddress: _clean(json['displayAddress']),
     );
   }
 

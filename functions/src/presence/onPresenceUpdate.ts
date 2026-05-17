@@ -61,7 +61,9 @@ async function reverseGeocode(lat: number, lng: number): Promise<GeocodingResult
 
     if (!country) return null;
 
-    return { city: city || 'Unknown', country };
+    // Return empty city instead of "Unknown" sentinel so callers can decide
+    // whether to skip the write rather than poisoning the profile.
+    return { city: city || '', country };
   } catch (error) {
     logError(`onPresenceUpdate: Geocoding API error: ${error}`);
     return null;
@@ -122,7 +124,7 @@ export const onPresenceUpdate = onDocumentUpdated(
 
     // Build update — only overwrite fields that were missing/Unknown
     const update: Record<string, unknown> = {};
-    if (needsCity && geocoded.city && geocoded.city !== 'Unknown') {
+    if (needsCity && geocoded.city) {
       update['location.city'] = geocoded.city;
     }
     if (needsCountry && geocoded.country) {

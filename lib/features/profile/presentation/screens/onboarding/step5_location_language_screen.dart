@@ -216,7 +216,17 @@ class _Step5LocationLanguageScreenState
   }
 
   void _handleContinue() {
-    // Only require language selection - location is optional
+    // Both location AND language are required.
+    if (_selectedLocation == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)?.onboardingMinLocation ??
+              'Please set your location to continue'),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
     if (_selectedLanguages.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -227,29 +237,12 @@ class _Step5LocationLanguageScreenState
       return;
     }
 
-    // If location is set, update it
-    if (_selectedLocation != null) {
-      context.read<OnboardingBloc>().add(
-            OnboardingLocationUpdated(
-              location: _selectedLocation! as location_entity.Location,
-              languages: _selectedLanguages,
-            ),
-          );
-    } else {
-      // Just update languages if no location
-      context.read<OnboardingBloc>().add(
-            OnboardingLocationUpdated(
-              location: location_entity.Location(
-                latitude: 0.0,
-                longitude: 0.0,
-                city: '',
-                country: '',
-                displayAddress: 'Location not set',
-              ),
-              languages: _selectedLanguages,
-            ),
-          );
-    }
+    context.read<OnboardingBloc>().add(
+          OnboardingLocationUpdated(
+            location: _selectedLocation! as location_entity.Location,
+            languages: _selectedLanguages,
+          ),
+        );
 
     context.read<OnboardingBloc>().add(const OnboardingNextStep());
   }
@@ -276,7 +269,7 @@ class _Step5LocationLanguageScreenState
 
         return LuxuryOnboardingLayout(
           title: AppLocalizations.of(context)?.onboardingWhereAreYou ?? 'Where are you?',
-          subtitle: AppLocalizations.of(context)?.onboardingWhereAreYouSubtitle ?? 'Set your preferred languages and location (optional)',
+          subtitle: AppLocalizations.of(context)?.onboardingWhereAreYouSubtitle ?? 'Set your preferred languages and your location',
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -295,47 +288,13 @@ class _Step5LocationLanguageScreenState
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Location Section
-                    Row(
-                      children: [
-                        Text(
-                          AppLocalizations.of(context)?.onboardingLocation ?? 'Location',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 16,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 8,
-                            vertical: 2,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.08),
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: Colors.white.withOpacity(0.15),
-                            ),
-                          ),
-                          child: Text(
-                            AppLocalizations.of(context)?.onboardingOptional ?? 'Optional',
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.5),
-                              fontSize: 11,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 8),
+                    // Location Section (mandatory)
                     Text(
-                      AppLocalizations.of(context)?.onboardingLocationLater ?? 'You can set your location later in settings',
-                      style: TextStyle(
-                        color: Colors.white.withOpacity(0.5),
-                        fontSize: 13,
+                      AppLocalizations.of(context)?.onboardingLocation ?? 'Location',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
                       ),
                     ),
                     const SizedBox(height: 12),
