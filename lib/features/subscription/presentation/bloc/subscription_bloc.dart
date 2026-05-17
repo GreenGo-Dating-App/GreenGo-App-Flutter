@@ -66,7 +66,10 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     if (p.pendingCompletePurchase) {
       await inAppPurchase.completePurchase(p);
     }
-    if (Platform.isAndroid) {
+    // Do NOT consume subscription products — only consumables should be consumed.
+    // Subscriptions are managed by the store and must not be consumed.
+    final isSubscription = SubscriptionTierExtension.allSubscriptionProductIds.contains(p.productID);
+    if (Platform.isAndroid && !isSubscription) {
       try {
         final androidAddition = inAppPurchase
             .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
@@ -114,12 +117,12 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
 
             const productIds = {
         'greengo_base_membership',
-        '1_month_silver',
-        '1_month_gold',
-        '1_month_platinum',
-        '1_year_silver',
-        '1_year_gold',
-        '1_year_platinum_membership',
+        'silver_premium_monthly',
+        'gold_premium_monthly',
+        'platinum_vip_monthly',
+        'greengo_silver_yearly',
+        'greengo_gold_yearly',
+        'greengo_platinum_yearly',
       };
 
       final response = await inAppPurchase.queryProductDetails(productIds);
@@ -148,9 +151,9 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   };
 
   int _tierRankFromProductId(String productId) {
-    if (productId.contains('platinum')) return 3;
+    if (productId.contains('platinum') || productId.contains('vip')) return 3;
     if (productId.contains('gold')) return 2;
-    if (productId.contains('silver')) return 1;
+    if (productId.contains('silver') || productId.contains('premium')) return 1;
     return 0;
   }
 
@@ -187,14 +190,41 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         }
       }
 
-      // All products are managed (in-app) products — use buyConsumable
-      final purchaseParam = PurchaseParam(
-        productDetails: event.product,
-        applicationUserName: _currentUserId,
-      );
-      final bool success = await inAppPurchase.buyConsumable(
+      // All membership products are auto-renewing subscriptions — use buyNonConsumable
+      ProductDetails selectedProduct = event.product;
+
+      // On Android, ensure we have the subscription version with offerToken
+      if (Platform.isAndroid && selectedProduct is GooglePlayProductDetails) {
+        if (selectedProduct.offerToken == null) {
+          // Re-query to get the subscription version with offer token
+          debugPrint('[SubscriptionBloc] No offerToken, re-querying ${selectedProduct.id}');
+          final response = await inAppPurchase.queryProductDetails({selectedProduct.id});
+          final subProduct = response.productDetails
+              .whereType<GooglePlayProductDetails>()
+              .where((p) => p.offerToken != null)
+              .firstOrNull;
+          if (subProduct != null) {
+            selectedProduct = subProduct;
+            debugPrint('[SubscriptionBloc] Found subscription version with offerToken');
+          }
+        }
+      }
+
+      late PurchaseParam purchaseParam;
+      if (Platform.isAndroid && selectedProduct is GooglePlayProductDetails) {
+        purchaseParam = GooglePlayPurchaseParam(
+          productDetails: selectedProduct,
+          applicationUserName: _currentUserId,
+        );
+      } else {
+        purchaseParam = PurchaseParam(
+          productDetails: selectedProduct,
+          applicationUserName: _currentUserId,
+        );
+      }
+
+      final bool success = await inAppPurchase.buyNonConsumable(
         purchaseParam: purchaseParam,
-        autoConsume: false,
       );
 
       if (!success) {
@@ -330,7 +360,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
                 'coinBatches': [batchEntry],
               });
             }
-            coinsGranted = 500;
+            coinsGranted = 200;
           } catch (e) {
             debugPrint('Error granting base membership coins: $e');
           }
@@ -376,9 +406,9 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   }
 
     SubscriptionTier _getTierFromProductId(String productId) {
-    if (productId.contains('platinum')) return SubscriptionTier.platinum;
+    if (productId.contains('platinum') || productId.contains('vip')) return SubscriptionTier.platinum;
     if (productId.contains('gold')) return SubscriptionTier.gold;
-    if (productId.contains('silver')) return SubscriptionTier.silver;
+    if (productId.contains('silver') || productId.contains('premium')) return SubscriptionTier.silver;
     if (productId.contains('base')) return SubscriptionTier.basic;
     return SubscriptionTier.basic;
   }
@@ -386,28 +416,28 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   Map<String, dynamic> _getMembershipDetailsFromProductId(String productId) {
     SubscriptionTier tier;
     Duration duration;
-    
+
     // Determine tier
-    if (productId.contains('platinum')) {
+    if (productId.contains('platinum') || productId.contains('vip')) {
       tier = SubscriptionTier.platinum;
     } else if (productId.contains('gold')) {
       tier = SubscriptionTier.gold;
-    } else if (productId.contains('silver')) {
+    } else if (productId.contains('silver') || productId.contains('premium')) {
       tier = SubscriptionTier.silver;
     } else if (productId.contains('base')) {
       tier = SubscriptionTier.basic;
     } else {
       tier = SubscriptionTier.basic;
     }
-    
+
     // Determine duration
-    if (productId.contains('1_year') || productId.contains('year')) {
+    if (productId.contains('yearly') || productId.contains('1_year') || productId == 'greengo_base_membership') {
       duration = const Duration(days: 365); // 1 year
-    } else if (productId.contains('1_month') || productId.contains('month')) {
+    } else if (productId.contains('monthly') || productId.contains('1_month')) {
       duration = const Duration(days: 30); // 1 month
     } else {
-      // Default to 1 month for base membership
-      duration = const Duration(days: 30);
+      // Default to 1 year
+      duration = const Duration(days: 365);
     }
     
     return {

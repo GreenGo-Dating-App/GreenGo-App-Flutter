@@ -58,15 +58,13 @@ export {
   cleanupExpiredExports,
 } from './backup/pdfExport';
 
-// Legacy Subscription Functions (webhooks disabled — using one-time purchases now)
-// Webhook handlers are no longer needed for one-time purchase model.
-// Expiration checks are now handled by ./subscription/index.ts
-// export {
-//   handlePlayStoreWebhook,
-//   handleAppStoreWebhook,
-//   checkExpiringSubscriptions,
-//   handleExpiredGracePeriods,
-// } from './subscriptions/subscriptionManager';
+// Subscription Webhook Handlers (re-enabled for auto-renewing subscriptions)
+export {
+  handlePlayStoreWebhook,
+  handleAppStoreWebhook,
+  checkExpiringSubscriptions as checkExpiringSubscriptionWebhooks,
+  handleExpiredGracePeriods,
+} from './subscriptions/subscriptionManager';
 
 // Membership Purchase Verification & Expiration Management
 export {

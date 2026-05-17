@@ -46,14 +46,23 @@ const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
 const purchase_verification_1 = require("../shared/purchase_verification");
 // Product ID → tier and duration mapping
+// Includes both new subscription IDs and legacy one-time purchase IDs
 const PRODUCT_CONFIG = {
-    'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
-    '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
-    '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
-    '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
-    '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90 },
-    '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
-    '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
+    // Subscription product IDs (auto-renewing, Google Play Console)
+    'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99, isSubscription: true },
+    'silver_premium_monthly': { tier: 'SILVER', durationDays: 30, price: 9.99, isSubscription: true },
+    'greengo_silver_yearly': { tier: 'SILVER', durationDays: 365, price: 48.99, isSubscription: true },
+    'gold_premium_monthly': { tier: 'GOLD', durationDays: 30, price: 19.99, isSubscription: true },
+    'greengo_gold_yearly': { tier: 'GOLD', durationDays: 365, price: 69.99, isSubscription: true },
+    'platinum_vip_monthly': { tier: 'PLATINUM', durationDays: 30, price: 29.99, isSubscription: true },
+    'greengo_platinum_yearly': { tier: 'PLATINUM', durationDays: 365, price: 89.99, isSubscription: true },
+    // Legacy one-time purchase IDs (backwards compatibility)
+    '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99, isSubscription: false },
+    '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90, isSubscription: false },
+    '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99, isSubscription: false },
+    '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90, isSubscription: false },
+    '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99, isSubscription: false },
+    '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90, isSubscription: false },
 };
 // Tier hierarchy for upgrade logic
 const TIER_RANK = {
@@ -192,6 +201,7 @@ exports.verifyPurchase = (0, https_1.onCall)({
             transactionId: purchaseToken,
             orderId: purchaseToken,
             productId: productId,
+            autoRenew: config.isSubscription,
             price: config.price,
             currency: 'USD',
             createdAt: now,

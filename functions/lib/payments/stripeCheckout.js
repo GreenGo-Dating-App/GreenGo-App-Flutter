@@ -64,9 +64,17 @@ const COIN_PACKAGES = {
     'greengo_coins_1000': { coins: 1000, priceUsd: 699, priceEur: 699, priceBrl: 3490, name: 'Value - 1,000 Coins' },
     'greengo_coins_5000': { coins: 5000, priceUsd: 2999, priceEur: 2999, priceBrl: 14990, name: 'Premium - 5,000 Coins' },
 };
-// Membership definitions
+// Membership subscription definitions (auto-renewing via Stripe)
 const MEMBERSHIP_PRODUCTS = {
-    'greengo_base_membership': { name: 'Base Membership (1 Year)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 365, tier: 'BASE' },
+    // Subscription product IDs (matching Google Play Console)
+    'greengo_base_membership': { name: 'Base Membership (1 Year)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 365, tier: 'BASE', interval: 'year', intervalCount: 1 },
+    'silver_premium_monthly': { name: 'Silver Membership (Monthly)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 30, tier: 'SILVER', interval: 'month', intervalCount: 1 },
+    'gold_premium_monthly': { name: 'Gold Membership (Monthly)', priceUsd: 1999, priceEur: 1999, priceBrl: 9990, durationDays: 30, tier: 'GOLD', interval: 'month', intervalCount: 1 },
+    'platinum_vip_monthly': { name: 'Platinum Membership (Monthly)', priceUsd: 2999, priceEur: 2999, priceBrl: 14990, durationDays: 30, tier: 'PLATINUM', interval: 'month', intervalCount: 1 },
+    'greengo_silver_yearly': { name: 'Silver Membership (Yearly)', priceUsd: 4899, priceEur: 4899, priceBrl: 24990, durationDays: 365, tier: 'SILVER', interval: 'year', intervalCount: 1 },
+    'greengo_gold_yearly': { name: 'Gold Membership (Yearly)', priceUsd: 6999, priceEur: 6999, priceBrl: 34990, durationDays: 365, tier: 'GOLD', interval: 'year', intervalCount: 1 },
+    'greengo_platinum_yearly': { name: 'Platinum Membership (Yearly)', priceUsd: 8999, priceEur: 8999, priceBrl: 44990, durationDays: 365, tier: 'PLATINUM', interval: 'year', intervalCount: 1 },
+    // Legacy one-time purchase IDs (backwards compatibility)
     '1_month_silver': { name: 'Silver Membership (1 Month)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 30, tier: 'SILVER' },
     '1_month_gold': { name: 'Gold Membership (1 Month)', priceUsd: 1999, priceEur: 1999, priceBrl: 9990, durationDays: 30, tier: 'GOLD' },
     '1_month_platinum': { name: 'Platinum Membership (1 Month)', priceUsd: 2999, priceEur: 2999, priceBrl: 14990, durationDays: 30, tier: 'PLATINUM' },
@@ -136,24 +144,34 @@ exports.createStripeCheckoutSession = functions
     }
     try {
         const stripe = getStripe();
+        const isSubscription = membership && membership.interval;
+        const mode = isSubscription ? 'subscription' : 'payment';
+        const priceData = {
+            currency: currency,
+            product_data: {
+                name: name,
+                description: coinPackage
+                    ? `${coinPackage.coins} GreenGo Coins`
+                    : `${membership.tier} Membership`,
+            },
+            unit_amount: priceInCents,
+        };
+        // Add recurring interval for subscription products
+        if (isSubscription) {
+            priceData.recurring = {
+                interval: membership.interval,
+                interval_count: membership.intervalCount || 1,
+            };
+        }
         const session = await stripe.checkout.sessions.create({
             payment_method_types: paymentMethods,
             line_items: [
                 {
-                    price_data: {
-                        currency: currency,
-                        product_data: {
-                            name: name,
-                            description: coinPackage
-                                ? `${coinPackage.coins} GreenGo Coins`
-                                : `${membership.tier} Membership`,
-                        },
-                        unit_amount: priceInCents,
-                    },
+                    price_data: priceData,
                     quantity: 1,
                 },
             ],
-            mode: 'payment',
+            mode: mode,
             success_url: successUrl,
             cancel_url: cancelUrl,
             client_reference_id: userId,
@@ -215,6 +233,26 @@ exports.stripeWebhook = functions
         const session = event.data.object;
         await handleCompletedCheckout(session);
     }
+    else if (event.type === 'invoice.paid') {
+        // Subscription renewal — invoice.paid fires on each renewal
+        const invoice = event.data.object;
+        if (invoice.subscription && invoice.billing_reason === 'subscription_cycle') {
+            await handleSubscriptionRenewal(invoice);
+        }
+    }
+    else if (event.type === 'customer.subscription.deleted') {
+        // Subscription cancelled/expired
+        const subscription = event.data.object;
+        await handleSubscriptionCancelled(subscription);
+    }
+    else if (event.type === 'customer.subscription.updated') {
+        // Subscription updated (plan change, etc.)
+        const subscription = event.data.object;
+        if (subscription.cancel_at_period_end) {
+            // User requested cancellation — will cancel at period end
+            await handleSubscriptionPendingCancellation(subscription);
+        }
+    }
     res.status(200).json({ received: true });
 });
 /**
@@ -254,7 +292,9 @@ async function handleCompletedCheckout(session) {
         await creditCoins(userId, productId, session.id);
     }
     else if (type === 'membership') {
-        await activateMembership(userId, productId, session.id);
+        const stripeSubscriptionId = session.subscription || null;
+        const stripeCustomerId = session.customer || null;
+        await activateMembership(userId, productId, session.id, stripeSubscriptionId, stripeCustomerId);
     }
 }
 /**
@@ -318,7 +358,7 @@ async function creditCoins(userId, productId, sessionId) {
 /**
  * Activate membership after successful Stripe payment
  */
-async function activateMembership(userId, productId, sessionId) {
+async function activateMembership(userId, productId, sessionId, stripeSubscriptionId, stripeCustomerId) {
     var _a, _b;
     const membership = MEMBERSHIP_PRODUCTS[productId];
     if (!membership) {
@@ -401,7 +441,147 @@ async function activateMembership(userId, productId, sessionId) {
         platform: 'web',
         purchasedAt: admin.firestore.Timestamp.now(),
         endDate: endTimestamp,
+        stripeSubscriptionId: stripeSubscriptionId || null,
+        stripeCustomerId: stripeCustomerId || null,
+        autoRenew: !!stripeSubscriptionId,
     });
+    // Also store subscription record for webhook lookups
+    if (stripeSubscriptionId) {
+        await db.collection('subscriptions').add({
+            userId: userId,
+            tier: membership.tier,
+            status: 'active',
+            startDate: admin.firestore.Timestamp.now(),
+            endDate: endTimestamp,
+            durationDays: membership.durationDays,
+            platform: 'web',
+            productId: productId,
+            autoRenew: true,
+            stripeSubscriptionId: stripeSubscriptionId,
+            stripeCustomerId: stripeCustomerId,
+            price: membership.priceUsd / 100,
+            currency: 'USD',
+            createdAt: admin.firestore.Timestamp.now(),
+        });
+    }
     console.log(`✅ Activated ${membership.tier} membership for user ${userId} via Stripe (expires ${endDate.toISOString()})`);
+}
+/**
+ * Handle Stripe subscription renewal (invoice.paid with billing_reason=subscription_cycle)
+ */
+async function handleSubscriptionRenewal(invoice) {
+    const subscriptionId = invoice.subscription;
+    if (!subscriptionId) return;
+    // Find the subscription record by Stripe subscription ID
+    const subSnapshot = await db.collection('subscriptions')
+        .where('stripeSubscriptionId', '==', subscriptionId)
+        .limit(1)
+        .get();
+    if (subSnapshot.empty) {
+        console.error(`No subscription found for Stripe sub ${subscriptionId}`);
+        return;
+    }
+    const subDoc = subSnapshot.docs[0];
+    const subData = subDoc.data();
+    const userId = subData.userId;
+    const productId = subData.productId;
+    const membership = MEMBERSHIP_PRODUCTS[productId];
+    if (!membership) {
+        console.error(`Unknown product ${productId} for renewal`);
+        return;
+    }
+    const now = new Date();
+    const durationMs = membership.durationDays * 24 * 60 * 60 * 1000;
+    const newEndDate = new Date(now.getTime() + durationMs);
+    const endTimestamp = admin.firestore.Timestamp.fromDate(newEndDate);
+    // Update subscription record
+    await subDoc.ref.update({
+        endDate: endTimestamp,
+        status: 'active',
+        updatedAt: admin.firestore.Timestamp.now(),
+    });
+    // Update profile
+    const profileRef = db.collection('profiles').doc(userId);
+    if (productId.includes('greengo_base_membership')) {
+        await profileRef.set({
+            hasBaseMembership: true,
+            baseMembershipEndDate: endTimestamp,
+        }, { merge: true });
+    } else {
+        await profileRef.set({
+            membershipTier: membership.tier,
+            membershipEndDate: endTimestamp,
+        }, { merge: true });
+    }
+    console.log(`✅ Renewed ${membership.tier} membership for user ${userId} via Stripe (expires ${newEndDate.toISOString()})`);
+}
+/**
+ * Handle Stripe subscription cancelled/deleted
+ */
+async function handleSubscriptionCancelled(subscription) {
+    const subscriptionId = subscription.id;
+    const subSnapshot = await db.collection('subscriptions')
+        .where('stripeSubscriptionId', '==', subscriptionId)
+        .limit(1)
+        .get();
+    if (subSnapshot.empty) {
+        console.error(`No subscription found for Stripe sub ${subscriptionId}`);
+        return;
+    }
+    const subDoc = subSnapshot.docs[0];
+    const subData = subDoc.data();
+    const userId = subData.userId;
+    await subDoc.ref.update({
+        status: 'expired',
+        autoRenew: false,
+        updatedAt: admin.firestore.Timestamp.now(),
+    });
+    // Downgrade profile to basic
+    const profileRef = db.collection('profiles').doc(userId);
+    await profileRef.set({
+        membershipTier: 'BASIC',
+        hasBaseMembership: false,
+        updatedAt: admin.firestore.Timestamp.now(),
+    }, { merge: true });
+    // Send notification
+    await db.collection('notifications').add({
+        userId: userId,
+        type: 'subscription_expired',
+        title: 'Subscription Ended',
+        body: 'Your subscription has ended. Subscribe again to restore premium features.',
+        read: false,
+        sent: false,
+        createdAt: admin.firestore.Timestamp.now(),
+    });
+    console.log(`Subscription cancelled for user ${userId} via Stripe`);
+}
+/**
+ * Handle Stripe subscription pending cancellation (cancel_at_period_end)
+ */
+async function handleSubscriptionPendingCancellation(subscription) {
+    const subscriptionId = subscription.id;
+    const subSnapshot = await db.collection('subscriptions')
+        .where('stripeSubscriptionId', '==', subscriptionId)
+        .limit(1)
+        .get();
+    if (subSnapshot.empty) return;
+    const subDoc = subSnapshot.docs[0];
+    const userId = subDoc.data().userId;
+    await subDoc.ref.update({
+        status: 'cancelled',
+        autoRenew: false,
+        updatedAt: admin.firestore.Timestamp.now(),
+    });
+    // Notify user
+    await db.collection('notifications').add({
+        userId: userId,
+        type: 'subscription_cancelled',
+        title: 'Subscription Cancellation Scheduled',
+        body: 'Your subscription will remain active until the end of the current billing period.',
+        read: false,
+        sent: false,
+        createdAt: admin.firestore.Timestamp.now(),
+    });
+    console.log(`Subscription pending cancellation for user ${userId} via Stripe`);
 }
 //# sourceMappingURL=stripeCheckout.js.map
