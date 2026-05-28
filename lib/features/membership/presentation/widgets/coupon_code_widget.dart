@@ -54,13 +54,13 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
     });
 
     try {
-      final membership = await _dataSource.redeemCouponCode(
+      final result = await _dataSource.redeemCouponCode(
         userId: widget.userId,
         couponCode: _codeController.text.trim(),
       );
 
       setState(() {
-        _successMessage = 'Congratulations! You are now a ${membership.tier.displayName} member!';
+        _successMessage = 'Redeemed: ${result.grantSummary}';
         _codeController.clear();
       });
 
