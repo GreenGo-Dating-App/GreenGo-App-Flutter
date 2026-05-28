@@ -110,6 +110,11 @@ class Profile extends Equatable {
   // Safety academy progress
   final List<String> completedSafetyModules;
 
+  // Signup auto-grants (applied server-side by applySignupGrants trigger).
+  // The client renders a one-time welcome banner per grant where dismissed == false.
+  final List<SignupGrant> signupGrantsApplied;
+  final DateTime? signupGrantsAppliedAt;
+
   const Profile({
     required this.userId,
     required this.displayName,
@@ -173,6 +178,8 @@ class Profile extends Equatable {
     this.showOnMap = true,
     this.globeDiscoverability = GlobeDiscoverability.approximate,
     this.completedSafetyModules = const [],
+    this.signupGrantsApplied = const [],
+    this.signupGrantsAppliedAt,
   });
 
   /// Get formatted nickname with @ prefix
@@ -295,6 +302,8 @@ class Profile extends Equatable {
         showOnMap,
         globeDiscoverability,
         completedSafetyModules,
+        signupGrantsApplied,
+        signupGrantsAppliedAt,
       ];
 
   /// Copy with updated fields
@@ -361,6 +370,8 @@ class Profile extends Equatable {
     bool? showOnMap,
     GlobeDiscoverability? globeDiscoverability,
     List<String>? completedSafetyModules,
+    List<SignupGrant>? signupGrantsApplied,
+    DateTime? signupGrantsAppliedAt,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -425,8 +436,50 @@ class Profile extends Equatable {
       showOnMap: showOnMap ?? this.showOnMap,
       globeDiscoverability: globeDiscoverability ?? this.globeDiscoverability,
       completedSafetyModules: completedSafetyModules ?? this.completedSafetyModules,
+      signupGrantsApplied: signupGrantsApplied ?? this.signupGrantsApplied,
+      signupGrantsAppliedAt: signupGrantsAppliedAt ?? this.signupGrantsAppliedAt,
     );
   }
+}
+
+/// A grant applied automatically at signup based on the email allowlist.
+/// Written by the applySignupGrants Cloud Function trigger.
+class SignupGrant extends Equatable {
+  final String couponId;
+  final String couponCode;
+  final String grantSummary; // e.g. "GOLD +30d + BASE +30d" or "+500 coins"
+  final bool dismissed;
+
+  const SignupGrant({
+    required this.couponId,
+    required this.couponCode,
+    required this.grantSummary,
+    this.dismissed = false,
+  });
+
+  SignupGrant copyWith({bool? dismissed}) => SignupGrant(
+        couponId: couponId,
+        couponCode: couponCode,
+        grantSummary: grantSummary,
+        dismissed: dismissed ?? this.dismissed,
+      );
+
+  factory SignupGrant.fromMap(Map<String, dynamic> m) => SignupGrant(
+        couponId: (m['couponId'] as String?) ?? '',
+        couponCode: (m['couponCode'] as String?) ?? '',
+        grantSummary: (m['grantSummary'] as String?) ?? '',
+        dismissed: (m['dismissed'] as bool?) ?? false,
+      );
+
+  Map<String, dynamic> toMap() => {
+        'couponId': couponId,
+        'couponCode': couponCode,
+        'grantSummary': grantSummary,
+        'dismissed': dismissed,
+      };
+
+  @override
+  List<Object?> get props => [couponId, couponCode, grantSummary, dismissed];
 }
 
 class PersonalityTraits extends Equatable {

@@ -68,6 +68,8 @@ class ProfileModel extends Profile {
     super.showOnMap,
     super.globeDiscoverability,
     super.completedSafetyModules,
+    super.signupGrantsApplied,
+    super.signupGrantsAppliedAt,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
@@ -179,6 +181,14 @@ class ProfileModel extends Profile {
       completedSafetyModules: json['completedSafetyModules'] != null
           ? List<String>.from(json['completedSafetyModules'] as List)
           : <String>[],
+      signupGrantsApplied: json['signupGrantsApplied'] != null
+          ? (json['signupGrantsApplied'] as List)
+              .map((e) => SignupGrant.fromMap(Map<String, dynamic>.from(e as Map)))
+              .toList()
+          : const <SignupGrant>[],
+      signupGrantsAppliedAt: json['signupGrantsAppliedAt'] != null
+          ? (json['signupGrantsAppliedAt'] as Timestamp).toDate()
+          : null,
     );
   }
 
@@ -329,6 +339,11 @@ class ProfileModel extends Profile {
       'showOnMap': showOnMap,
       'globeDiscoverability': globeDiscoverability.name,
       'completedSafetyModules': completedSafetyModules,
+      'signupGrantsApplied':
+          signupGrantsApplied.map((g) => g.toMap()).toList(),
+      'signupGrantsAppliedAt': signupGrantsAppliedAt != null
+          ? Timestamp.fromDate(signupGrantsAppliedAt!)
+          : null,
     };
   }
 
@@ -396,6 +411,8 @@ class ProfileModel extends Profile {
       showOnMap: profile.showOnMap,
       globeDiscoverability: profile.globeDiscoverability,
       completedSafetyModules: profile.completedSafetyModules,
+      signupGrantsApplied: profile.signupGrantsApplied,
+      signupGrantsAppliedAt: profile.signupGrantsAppliedAt,
     );
   }
 }
