@@ -7,6 +7,7 @@ import { onCall, HttpsError, CallableRequest } from 'firebase-functions/v2/https
 import * as admin from 'firebase-admin';
 import { db, verifyAdminAuth, handleError, logInfo } from '../shared/utils';
 import { TierName } from '../shared/grants';
+import { Grant, validateGrant } from './grants';
 
 const VALID_DURATIONS_DAYS = [7, 14, 30, 60, 90, 180, 365];
 const VALID_TIERS: TierName[] = ['BASIC', 'SILVER', 'GOLD', 'PLATINUM'];
@@ -14,10 +15,14 @@ const VALID_TIERS: TierName[] = ['BASIC', 'SILVER', 'GOLD', 'PLATINUM'];
 interface UpsertCouponRequest {
   couponId?: string | null;
   code: string;
-  type: 'membership' | 'base_membership' | 'coins';
+  // Legacy single-grant fields (still accepted for simple coupons; ignored
+  // when `grants` is non-empty).
+  type?: 'membership' | 'base_membership' | 'coins';
   tier?: TierName | null;
   coinAmount?: number | null;
-  durationDays: number;
+  durationDays?: number;
+  // New bundle field. Non-empty `grants` supersedes the legacy fields above.
+  grants?: Grant[];
   maxRedemptions?: number | null;
   expiresAt?: string | null; // ISO date string
   allowedEmail?: string | null;
@@ -55,25 +60,38 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
         throw new HttpsError('invalid-argument', 'Code must be 3–64 characters');
       }
 
-      if (!['membership', 'base_membership', 'coins'].includes(data.type)) {
-        throw new HttpsError('invalid-argument', `Invalid type: ${data.type}`);
-      }
+      const isBundle = Array.isArray(data.grants) && data.grants.length > 0;
 
-      if (!VALID_DURATIONS_DAYS.includes(data.durationDays)) {
-        throw new HttpsError(
-          'invalid-argument',
-          `durationDays must be one of ${VALID_DURATIONS_DAYS.join(', ')}`,
-        );
-      }
-
-      if (data.type === 'membership') {
-        if (!data.tier || !VALID_TIERS.includes(data.tier)) {
-          throw new HttpsError('invalid-argument', 'Membership coupon requires a valid tier');
+      if (isBundle) {
+        // Validate every grant; reject the whole upsert if any is malformed.
+        try {
+          (data.grants as Grant[]).forEach((g, i) => validateGrant(g, i));
+        } catch (e: any) {
+          throw new HttpsError('invalid-argument', String(e?.message || e));
         }
-      }
-      if (data.type === 'coins') {
-        if (!data.coinAmount || data.coinAmount <= 0) {
-          throw new HttpsError('invalid-argument', 'Coin coupon requires a positive coinAmount');
+      } else {
+        // Legacy single-grant validation
+        if (!data.type || !['membership', 'base_membership', 'coins'].includes(data.type)) {
+          throw new HttpsError('invalid-argument', `Invalid type: ${data.type}`);
+        }
+        if (
+          typeof data.durationDays !== 'number' ||
+          !VALID_DURATIONS_DAYS.includes(data.durationDays)
+        ) {
+          throw new HttpsError(
+            'invalid-argument',
+            `durationDays must be one of ${VALID_DURATIONS_DAYS.join(', ')}`,
+          );
+        }
+        if (data.type === 'membership') {
+          if (!data.tier || !VALID_TIERS.includes(data.tier)) {
+            throw new HttpsError('invalid-argument', 'Membership coupon requires a valid tier');
+          }
+        }
+        if (data.type === 'coins') {
+          if (!data.coinAmount || data.coinAmount <= 0) {
+            throw new HttpsError('invalid-argument', 'Coin coupon requires a positive coinAmount');
+          }
         }
       }
 
@@ -99,10 +117,13 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
       const now = admin.firestore.Timestamp.now();
       const payload: Record<string, any> = {
         code,
-        type: data.type,
-        tier: data.type === 'membership' ? data.tier : null,
-        coinAmount: data.type === 'coins' ? data.coinAmount : null,
-        durationDays: data.durationDays,
+        // Persist legacy single-grant fields only when the admin didn't
+        // supply a bundle. Bundle coupons store only `grants`.
+        type: isBundle ? null : data.type,
+        tier: !isBundle && data.type === 'membership' ? data.tier : null,
+        coinAmount: !isBundle && data.type === 'coins' ? data.coinAmount : null,
+        durationDays: isBundle ? null : data.durationDays,
+        grants: isBundle ? data.grants : null,
         maxRedemptions:
           data.maxRedemptions === undefined || data.maxRedemptions === null
             ? null
