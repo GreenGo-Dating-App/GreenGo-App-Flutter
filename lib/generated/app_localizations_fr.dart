@@ -6215,6 +6215,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get couponErrorGeneric => 'Could not redeem coupon. Please try again.';
 
   @override
+  String get welcomeGrantTitle => 'Welcome to GreenGo!';
+
+  @override
+  String get welcomeGrantDismiss => 'Got it';
+
+  @override
   String membershipEquivalentMonthly(Object price) {
     return 'Équivalent à $price/mois';
   }

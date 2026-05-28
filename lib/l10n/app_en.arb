@@ -3043,6 +3043,8 @@
   "couponErrorAlreadyRedeemed": "You have already used this coupon",
   "couponErrorDisabled": "This coupon is no longer active",
   "couponErrorGeneric": "Could not redeem coupon. Please try again.",
+  "welcomeGrantTitle": "Welcome to GreenGo!",
+  "welcomeGrantDismiss": "Got it",
   "membershipEquivalentMonthly": "Equivalent to {price}/month",
   "membershipErrorLoadingData": "Error loading data",
   "membershipExpires": "Expires: {date}",
