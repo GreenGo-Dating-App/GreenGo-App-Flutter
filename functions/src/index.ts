@@ -93,6 +93,7 @@ export {
   getCouponRedemptions,
   setCouponDisabled,
 } from './coupons/adminCoupons';
+export { applySignupGrants } from './coupons/applySignupGrants';
 
 // Analytics Functions
 export {
