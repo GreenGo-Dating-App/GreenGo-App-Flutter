@@ -53,22 +53,36 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
       _successMessage = null;
     });
 
+    final l10n = AppLocalizations.of(context)!;
     try {
       final result = await _dataSource.redeemCouponCode(
         userId: widget.userId,
         couponCode: _codeController.text.trim(),
       );
 
+      if (!mounted) return;
       setState(() {
-        _successMessage = 'Redeemed: ${result.grantSummary}';
+        _successMessage = l10n.couponRedeemedSuccess(result.grantSummary);
         _codeController.clear();
       });
 
       widget.onRedemptionSuccess?.call();
-    } catch (e) {
-      setState(() {
-        _errorMessage = e.toString().replaceAll('Exception: ', '');
-      });
+    } on CouponNotFoundFailure {
+      setState(() => _errorMessage = l10n.couponErrorInvalid);
+    } on CouponExpiredFailure {
+      setState(() => _errorMessage = l10n.couponErrorExpired);
+    } on CouponMaxReachedFailure {
+      setState(() => _errorMessage = l10n.couponErrorMaxUsesReached);
+    } on CouponDisabledFailure {
+      setState(() => _errorMessage = l10n.couponErrorDisabled);
+    } on CouponEmailMismatchFailure {
+      setState(() => _errorMessage = l10n.couponErrorEmailMismatch);
+    } on CouponAlreadyRedeemedFailure {
+      setState(() => _errorMessage = l10n.couponErrorAlreadyRedeemed);
+    } on CouponFailure {
+      setState(() => _errorMessage = l10n.couponErrorGeneric);
+    } catch (_) {
+      setState(() => _errorMessage = l10n.couponErrorGeneric);
     } finally {
       setState(() {
         _isLoading = false;
@@ -109,17 +123,17 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      'Redeem Coupon Code',
-                      style: TextStyle(
+                    Text(
+                      l10n.couponRedeemTitle,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      'Enter your coupon code to upgrade',
-                      style: TextStyle(
+                      l10n.couponRedeemSubtitle,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 14,
                       ),
@@ -276,9 +290,9 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                               ),
                             ),
                           )
-                        : const Text(
-                            'Redeem Coupon',
-                            style: TextStyle(
+                        : Text(
+                            l10n.couponRedeemButton,
+                            style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),

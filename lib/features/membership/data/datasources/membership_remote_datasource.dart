@@ -1,21 +1,21 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import '../../domain/entities/membership.dart';
 import '../models/membership_model.dart';
 
 /// Membership data source.
 ///
-/// Coupon admin operations (create / update / delete / list) have moved to
-/// the admin panel + Cloud Functions for security. Coupon redemption is
-/// performed via the `redeemCoupon` callable — see the next commit for the
-/// implementation; this commit leaves a guarded stub so the legacy
-/// Firestore-direct path is gone but the widget continues to compile.
+/// Coupon admin operations (create / update / delete / list) live in the
+/// admin panel + Cloud Functions for security. Coupon redemption is
+/// performed via the `redeemCoupon` callable — never directly against
+/// Firestore — so max-redemption caps, email gates, and per-user one-shot
+/// enforcement happen server-side.
 abstract class MembershipRemoteDataSource {
   Future<MembershipModel?> getMembership(String userId);
   Future<MembershipModel> saveMembership(MembershipModel membership);
 
   /// Redeem a coupon code via the secure server callable.
-  /// Throws on any validation failure (expired, limit reached, wrong email,
-  /// already redeemed, not found, disabled).
+  /// Throws a [CouponFailure] subclass on any validation failure.
   Future<CouponRedeemResult> redeemCouponCode({
     required String userId,
     required String couponCode,
@@ -44,10 +44,51 @@ class CouponRedeemResult {
   });
 }
 
+/// Base class for all coupon-redemption failures. UI layer should switch on
+/// the runtimeType to pick a localized message.
+sealed class CouponFailure implements Exception {
+  final String message;
+  const CouponFailure(this.message);
+  @override
+  String toString() => message;
+}
+
+class CouponNotFoundFailure extends CouponFailure {
+  const CouponNotFoundFailure([super.message = 'Coupon code not found']);
+}
+
+class CouponExpiredFailure extends CouponFailure {
+  const CouponExpiredFailure([super.message = 'This coupon has expired']);
+}
+
+class CouponMaxReachedFailure extends CouponFailure {
+  const CouponMaxReachedFailure([super.message = 'This coupon has reached its usage limit']);
+}
+
+class CouponDisabledFailure extends CouponFailure {
+  const CouponDisabledFailure([super.message = 'This coupon is no longer active']);
+}
+
+class CouponEmailMismatchFailure extends CouponFailure {
+  const CouponEmailMismatchFailure([super.message = 'This coupon is restricted to a different account']);
+}
+
+class CouponAlreadyRedeemedFailure extends CouponFailure {
+  const CouponAlreadyRedeemedFailure([super.message = 'You have already used this coupon']);
+}
+
+class CouponGenericFailure extends CouponFailure {
+  const CouponGenericFailure([super.message = 'Could not redeem coupon']);
+}
+
 class MembershipRemoteDataSourceImpl implements MembershipRemoteDataSource {
   final FirebaseFirestore firestore;
+  final FirebaseFunctions functions;
 
-  MembershipRemoteDataSourceImpl({required this.firestore});
+  MembershipRemoteDataSourceImpl({
+    required this.firestore,
+    FirebaseFunctions? functions,
+  }) : functions = functions ?? FirebaseFunctions.instance;
 
   @override
   Future<MembershipModel?> getMembership(String userId) async {
@@ -93,7 +134,6 @@ class MembershipRemoteDataSourceImpl implements MembershipRemoteDataSource {
 
       await docRef.set(membershipToSave.toJson());
 
-      // Also update the user's profile with membership info
       await firestore.collection('profiles').doc(membership.userId).update({
         'membershipTier': membership.tier.value,
         'membershipStartDate': Timestamp.fromDate(membership.startDate),
@@ -113,12 +153,61 @@ class MembershipRemoteDataSourceImpl implements MembershipRemoteDataSource {
     required String userId,
     required String couponCode,
   }) async {
-    // Stubbed — wired to the redeemCoupon callable in the next commit.
-    // The legacy client-side path that wrote to Firestore directly has been
-    // removed in this commit because it bypassed max-use and email gates.
-    throw UnimplementedError(
-      'redeemCouponCode is being rewired to the redeemCoupon callable',
-    );
+    try {
+      final callable = functions.httpsCallable('redeemCoupon');
+      final response = await callable.call<Map<String, dynamic>>({
+        'code': couponCode.trim().toUpperCase(),
+      });
+      final data = response.data;
+      final type = data['type'] as String;
+      MembershipTier? tier;
+      final tierStr = data['tier'] as String?;
+      if (tierStr != null) {
+        tier = MembershipTier.values.firstWhere(
+          (t) => t.value == tierStr,
+          orElse: () => MembershipTier.silver,
+        );
+      }
+      DateTime? newEndDate;
+      final newEndIso = data['newEndDate'] as String?;
+      if (newEndIso != null) {
+        newEndDate = DateTime.tryParse(newEndIso);
+      }
+
+      return CouponRedeemResult(
+        type: type,
+        tier: tier,
+        coinAmount: (data['coinAmount'] as num?)?.toInt(),
+        durationDays: (data['durationDays'] as num).toInt(),
+        newEndDate: newEndDate,
+        grantSummary: data['grantSummary'] as String? ?? '',
+      );
+    } on FirebaseFunctionsException catch (e) {
+      throw _mapFunctionException(e);
+    } catch (e) {
+      throw const CouponGenericFailure();
+    }
+  }
+
+  CouponFailure _mapFunctionException(FirebaseFunctionsException e) {
+    switch (e.code) {
+      case 'not-found':
+        return CouponNotFoundFailure(e.message ?? 'Coupon code not found');
+      case 'failed-precondition':
+        final msg = e.message ?? '';
+        if (msg.contains('expired')) return CouponExpiredFailure(msg);
+        if (msg.contains('limit')) return CouponMaxReachedFailure(msg);
+        if (msg.contains('active')) return CouponDisabledFailure(msg);
+        return CouponGenericFailure(msg.isEmpty ? 'Coupon validation failed' : msg);
+      case 'permission-denied':
+        return CouponEmailMismatchFailure(e.message ?? 'This coupon is restricted to a different account');
+      case 'already-exists':
+        return CouponAlreadyRedeemedFailure(e.message ?? 'You have already used this coupon');
+      case 'unauthenticated':
+        return CouponGenericFailure(e.message ?? 'Please sign in to redeem');
+      default:
+        return CouponGenericFailure(e.message ?? 'Could not redeem coupon');
+    }
   }
 
   @override
