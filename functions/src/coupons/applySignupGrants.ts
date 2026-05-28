@@ -19,8 +19,9 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
-import { TierName, computeMembershipExtension } from '../shared/grants';
+import { computeMembershipExtension } from '../shared/grants';
 import { sendCouponRedeemedEmail } from '../notifications/couponEmails';
+import { effectiveGrants, hasBaseGrant, summariseGrants } from './grants';
 
 const COIN_EXPIRATION_DAYS = 365;
 
@@ -170,117 +171,124 @@ async function applyOneCoupon(
     }
 
     const redemptionRef = couponRef.collection('redemptions').doc(uid);
+    const profileRef = db.collection('profiles').doc(uid);
+    const userRef = db.collection('users').doc(uid);
+    const balanceRef = db.collection('coinBalances').doc(uid);
+
+    const grants = effectiveGrants(c);
+    if (grants.length === 0) return null;
+
+    // ── All reads up-front (Firestore tx rule) ──
+    const needsBalance = grants.some((g) => g.kind === 'coins');
+    // Profile is needed for both membership and base_membership; also for the
+    // implicit bonus rule when grants include a membership without an
+    // explicit base grant.
+    const couponHasBaseGrant = hasBaseGrant(c);
+    const needsProfile =
+      grants.some((g) => g.kind === 'membership' || g.kind === 'base_membership');
+
     const existing = await tx.get(redemptionRef);
     if (existing.exists) return null;
 
-    const durationDays = Number(c.durationDays) || 0;
-    const durationMs = durationDays * 24 * 60 * 60 * 1000;
-    const profileRef = db.collection('profiles').doc(uid);
-    const userRef = db.collection('users').doc(uid);
+    const profSnap = needsProfile ? await tx.get(profileRef) : null;
+    const balanceSnap = needsBalance ? await tx.get(balanceRef) : null;
 
-    let grantSummary = '';
+    // ── Accumulate updates ──
+    const profileUpdate: Record<string, any> = {};
+    const userUpdate: Record<string, any> = {};
+    let runningTier: string = (profSnap?.data()?.membershipTier as string) || 'BASIC';
+    let runningTierEnd: Date | null =
+      (profSnap?.data()?.membershipEndDate as admin.firestore.Timestamp | undefined)?.toDate() ??
+      null;
+    let runningBaseEnd: Date | null =
+      (profSnap?.data()?.baseMembershipEndDate as admin.firestore.Timestamp | undefined)?.toDate() ??
+      null;
 
-    if (c.type === 'membership') {
-      const tier = c.tier as TierName;
-      const profSnap = await tx.get(profileRef);
-      const prof = profSnap.data() || {};
-      const currentTier = (prof.membershipTier as string) || 'BASIC';
-      const currentEndTs = prof.membershipEndDate as admin.firestore.Timestamp | undefined;
-      const currentEnd = currentEndTs ? currentEndTs.toDate() : null;
+    const balanceData = balanceSnap?.exists ? (balanceSnap.data() as any) : {};
+    let runningBalance: number = (balanceData?.totalCoins as number) || 0;
+    const coinBatches: any[] = (balanceData?.coinBatches as any[]) || [];
+    let totalCoinsGranted = 0;
 
-      const ext = computeMembershipExtension(
-        currentTier,
-        currentEnd,
-        tier,
-        durationMs,
-        now.toDate(),
-      );
+    // Track whether any membership grant was applied so we know whether to
+    // append the implicit base-membership bonus.
+    let membershipGrantApplied = false;
+    let largestMembershipDurationMs = 0;
 
-      // Tier writes
-      tx.set(
-        profileRef,
-        {
-          membershipTier: ext.effectiveTier,
-          membershipStartDate: now,
-          membershipEndDate: ext.newEndTimestamp,
-          updatedAt: now,
-        },
-        { merge: true },
-      );
-      tx.set(
-        userRef,
-        {
-          subscriptionTier: ext.effectiveTier,
-          membershipEndDate: ext.newEndTimestamp,
-          updatedAt: now,
-        },
-        { merge: true },
-      );
-
-      // ── Bonus rule: same-duration base membership ──
-      const currentBaseEndTs = prof.baseMembershipEndDate as
-        | admin.firestore.Timestamp
-        | undefined;
-      const currentBaseEnd = currentBaseEndTs ? currentBaseEndTs.toDate() : null;
-      const baseStart =
-        currentBaseEnd && currentBaseEnd > now.toDate() ? currentBaseEnd : now.toDate();
-      const newBaseEnd = new Date(baseStart.getTime() + durationMs);
-      tx.set(
-        profileRef,
-        {
-          hasBaseMembership: true,
-          baseMembershipEndDate: admin.firestore.Timestamp.fromDate(newBaseEnd),
-        },
-        { merge: true },
-      );
-
-      grantSummary = `${ext.effectiveTier} +${durationDays}d + BASE +${durationDays}d`;
-    } else if (c.type === 'base_membership') {
-      const profSnap = await tx.get(profileRef);
-      const prof = profSnap.data() || {};
-      const currentEndTs = prof.baseMembershipEndDate as
-        | admin.firestore.Timestamp
-        | undefined;
-      const currentEnd = currentEndTs ? currentEndTs.toDate() : null;
-      const baseStart = currentEnd && currentEnd > now.toDate() ? currentEnd : now.toDate();
-      const newEnd = new Date(baseStart.getTime() + durationMs);
-      tx.set(
-        profileRef,
-        {
-          hasBaseMembership: true,
-          baseMembershipEndDate: admin.firestore.Timestamp.fromDate(newEnd),
-          updatedAt: now,
-        },
-        { merge: true },
-      );
-      grantSummary = `BASE +${durationDays}d`;
-    } else if (c.type === 'coins') {
-      const amount = Number(c.coinAmount) || 0;
-      if (amount <= 0) return null;
-      const balanceRef = db.collection('coinBalances').doc(uid);
-      const balanceSnap = await tx.get(balanceRef);
-      let currentBalance = 0;
-      let coinBatches: any[] = [];
-      if (balanceSnap.exists) {
-        const data = balanceSnap.data() as any;
-        currentBalance = data.totalCoins || 0;
-        coinBatches = data.coinBatches || [];
+    for (const g of grants) {
+      if (g.kind === 'membership' && g.tier && g.durationDays) {
+        const durationMs = g.durationDays * 24 * 60 * 60 * 1000;
+        const ext = computeMembershipExtension(
+          runningTier,
+          runningTierEnd,
+          g.tier,
+          durationMs,
+          now.toDate(),
+        );
+        runningTier = ext.effectiveTier;
+        runningTierEnd = ext.newEndDate;
+        profileUpdate.membershipTier = ext.effectiveTier;
+        profileUpdate.membershipStartDate = now;
+        profileUpdate.membershipEndDate = ext.newEndTimestamp;
+        userUpdate.subscriptionTier = ext.effectiveTier;
+        userUpdate.membershipEndDate = ext.newEndTimestamp;
+        membershipGrantApplied = true;
+        if (durationMs > largestMembershipDurationMs) {
+          largestMembershipDurationMs = durationMs;
+        }
+      } else if (g.kind === 'base_membership' && g.durationDays) {
+        const durationMs = g.durationDays * 24 * 60 * 60 * 1000;
+        const baseStart =
+          runningBaseEnd && runningBaseEnd > now.toDate() ? runningBaseEnd : now.toDate();
+        const newBaseEnd = new Date(baseStart.getTime() + durationMs);
+        runningBaseEnd = newBaseEnd;
+        profileUpdate.hasBaseMembership = true;
+        profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+      } else if (g.kind === 'coins' && g.coinAmount && g.coinAmount > 0) {
+        const amount = g.coinAmount;
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
+        coinBatches.push({
+          batchId: db.collection('temp').doc().id,
+          initialCoins: amount,
+          remainingCoins: amount,
+          source: 'coupon',
+          acquiredDate: now,
+          expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
+        });
+        runningBalance += amount;
+        totalCoinsGranted += amount;
       }
-      const expirationDate = new Date();
-      expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
-      coinBatches.push({
-        batchId: db.collection('temp').doc().id,
-        initialCoins: amount,
-        remainingCoins: amount,
-        source: 'coupon',
-        acquiredDate: now,
-        expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
-      });
+    }
+
+    // ── Implicit bonus rule: signup membership grants get a same-duration ──
+    // base membership for free, UNLESS the coupon already includes a base
+    // grant in its bundle (no double-stack).
+    let bonusApplied = false;
+    if (membershipGrantApplied && !couponHasBaseGrant && largestMembershipDurationMs > 0) {
+      const baseStart =
+        runningBaseEnd && runningBaseEnd > now.toDate() ? runningBaseEnd : now.toDate();
+      const newBaseEnd = new Date(baseStart.getTime() + largestMembershipDurationMs);
+      runningBaseEnd = newBaseEnd;
+      profileUpdate.hasBaseMembership = true;
+      profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+      bonusApplied = true;
+    }
+
+    // ── Writes ──
+    if (Object.keys(profileUpdate).length > 0) {
+      profileUpdate.updatedAt = now;
+      tx.set(profileRef, profileUpdate, { merge: true });
+    }
+    if (Object.keys(userUpdate).length > 0) {
+      userUpdate.updatedAt = now;
+      tx.set(userRef, userUpdate, { merge: true });
+    }
+    if (totalCoinsGranted > 0) {
       tx.set(
         balanceRef,
         {
           userId: uid,
-          totalCoins: currentBalance + amount,
+          totalCoins: runningBalance,
           lastUpdated: now,
           coinBatches,
         },
@@ -290,18 +298,23 @@ async function applyOneCoupon(
       tx.set(txnRef, {
         userId: uid,
         type: 'credit',
-        amount,
-        balanceAfter: currentBalance + amount,
+        amount: totalCoinsGranted,
+        balanceAfter: runningBalance,
         reason: 'coupon',
         metadata: { couponId: couponRef.id, couponCode: c.code, source: 'signup_grant' },
         createdAt: now,
       });
-      grantSummary = `+${amount} coins`;
-    } else {
-      return null;
     }
 
-    // Mark redemption + bump counter
+    // Build the summary — append " + BASE +Nd" if the implicit bonus fired.
+    let grantSummary = summariseGrants(grants);
+    if (bonusApplied) {
+      const bonusDays = Math.round(largestMembershipDurationMs / (24 * 60 * 60 * 1000));
+      grantSummary = `${grantSummary} · BASE +${bonusDays}d`;
+    }
+
+    // Mark redemption + bump counter (one per coupon, not one per grant —
+    // preserves maxRedemptions semantics).
     tx.set(redemptionRef, {
       redeemedAt: now,
       userEmail,
