@@ -66,10 +66,9 @@ export const applySignupGrants = onDocumentCreated(
     if (couponsSnap.empty) {
       logInfo(`applySignupGrants: no allowlist coupons for ${email}`);
       // Still mark as processed so we don't keep querying on every doc update.
-      await profileRef.set(
-        { signupGrantsAppliedAt: admin.firestore.Timestamp.now() },
-        { merge: true },
-      );
+      // Transactional to avoid racing with a concurrent invocation that
+      // also processed an (empty) grant list.
+      await markProcessedIfFresh(profileRef, []);
       return;
     }
 
@@ -88,15 +87,19 @@ export const applySignupGrants = onDocumentCreated(
     }
 
     // ── Record the applied grants so the client can show a welcome banner ──
-    const now = admin.firestore.Timestamp.now();
-    await profileRef.set(
-      {
-        signupGrantsApplied: applied,
-        signupGrantsAppliedAt: now,
-        updatedAt: now,
-      },
-      { merge: true },
-    );
+    // Wrapped in a transaction that re-checks signupGrantsAppliedAt — under
+    // at-least-once trigger delivery two invocations can both pass the
+    // out-of-tx idempotency check above, but only one of them has the
+    // populated `applied` list (the other's per-coupon redemption-doc checks
+    // all bail out, leaving `applied` empty). Without this guard the loser
+    // would clobber the winner's banner data.
+    const wrote = await markProcessedIfFresh(profileRef, applied);
+    if (!wrote) {
+      logInfo(
+        `applySignupGrants: another invocation already wrote grants for ${uid}, skipping notify`,
+      );
+      return;
+    }
 
     // ── Best-effort email per grant (already non-fatal inside the helper) ──
     for (const g of applied) {
@@ -109,6 +112,35 @@ export const applySignupGrants = onDocumentCreated(
     logInfo(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
   },
 );
+
+/**
+ * Writes `signupGrantsApplied` + `signupGrantsAppliedAt` to the profile only
+ * if no prior invocation already wrote `signupGrantsAppliedAt`. Returns true
+ * if this call did the write (so the caller can do follow-up side effects
+ * like sending the welcome email).
+ */
+async function markProcessedIfFresh(
+  profileRef: FirebaseFirestore.DocumentReference,
+  applied: AppliedGrant[],
+): Promise<boolean> {
+  return db.runTransaction(async (tx) => {
+    const snap = await tx.get(profileRef);
+    if (snap.exists && snap.data()?.signupGrantsAppliedAt) {
+      return false;
+    }
+    const now = admin.firestore.Timestamp.now();
+    tx.set(
+      profileRef,
+      {
+        signupGrantsApplied: applied,
+        signupGrantsAppliedAt: now,
+        updatedAt: now,
+      },
+      { merge: true },
+    );
+    return true;
+  });
+}
 
 /**
  * Redeems a single coupon for a new user inside a transaction.

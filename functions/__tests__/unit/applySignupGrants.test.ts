@@ -49,7 +49,16 @@ const fakeDb: any = {
     profileWrites.push(data);
   }),
   runTransaction: jest.fn(async (cb: any) => {
-    const tx = { get: jest.fn(), set: jest.fn(), update: jest.fn() };
+    const tx: any = {
+      get: jest.fn(async () => ({
+        exists: mockProfileData !== null,
+        data: () => mockProfileData,
+      })),
+      set: jest.fn((_ref: any, data: any) => {
+        profileWrites.push(data);
+      }),
+      update: jest.fn(),
+    };
     return cb(tx);
   }),
 };
@@ -99,10 +108,26 @@ describe('applySignupGrants — guard paths', () => {
     mockProfileData = null;
     mockCouponDocs = []; // no matches
     await fire({ uid: 'u1', email: 'newuser@b.com' });
-    // Should NOT have entered the per-coupon transaction loop.
-    expect(fakeDb.runTransaction).not.toHaveBeenCalled();
-    // But SHOULD have written a marker so we don't re-query forever.
+    // Should have entered the marker transaction exactly once.
+    expect(fakeDb.runTransaction).toHaveBeenCalledTimes(1);
     expect(profileWrites).toHaveLength(1);
     expect(profileWrites[0]).toHaveProperty('signupGrantsAppliedAt');
+  });
+
+  it('skips the final write when a concurrent invocation already wrote signupGrantsAppliedAt', async () => {
+    // First call: profile starts empty, marker is written.
+    mockProfileData = null;
+    mockCouponDocs = [];
+    await fire({ uid: 'u1', email: 'newuser@b.com' });
+    expect(profileWrites).toHaveLength(1);
+
+    // Second call: simulate the profile now has the marker (winner of the race).
+    // The outer guard catches it before the transaction; transaction never fires.
+    profileWrites.length = 0;
+    mockProfileData = { signupGrantsAppliedAt: { toDate: () => new Date(), toMillis: () => 1 } };
+    (fakeDb.runTransaction as jest.Mock).mockClear();
+    await fire({ uid: 'u1', email: 'newuser@b.com' });
+    expect(fakeDb.runTransaction).not.toHaveBeenCalled();
+    expect(profileWrites).toHaveLength(0);
   });
 });
