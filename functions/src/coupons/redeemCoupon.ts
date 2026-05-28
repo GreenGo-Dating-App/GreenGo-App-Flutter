@@ -5,35 +5,22 @@
  *  - Looks up the coupon by code.
  *  - Validates: not disabled, not expired, redemptions left, email gate (if any),
  *    not already redeemed by this user.
- *  - Applies the grant (membership tier extension, base membership flag, or coins)
- *    using the never-downgrade extension rule.
- *  - Writes the redemption record and increments the counter.
+ *  - Applies every grant in the coupon (a coupon can carry coins + base +
+ *    a tier as a bundle) using the never-downgrade extension rule per grant.
+ *  - Writes the redemption record and increments the per-coupon counter
+ *    (once per redemption, regardless of how many grants are in the bundle).
  *
- * All in a single Firestore transaction so concurrent attempts can't over-redeem
- * a capped coupon or double-grant the same user.
+ * All in a single Firestore transaction so concurrent attempts can't over-
+ * redeem a capped coupon or double-grant the same user.
  */
 
 import { onCall, HttpsError, CallableRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
 import { TierName, computeMembershipExtension } from '../shared/grants';
+import { Grant, effectiveGrants, summariseGrants } from './grants';
 
 const COIN_EXPIRATION_DAYS = 365;
-
-type CouponType = 'membership' | 'base_membership' | 'coins';
-
-interface CouponDoc {
-  code: string;
-  type: CouponType;
-  tier: TierName | null;
-  coinAmount: number | null;
-  durationDays: number;
-  maxRedemptions: number | null;
-  redemptionsCount: number;
-  expiresAt: admin.firestore.Timestamp | null;
-  allowedEmail: string | null;
-  disabled: boolean;
-}
 
 interface RedeemCouponRequest {
   code: string;
@@ -41,13 +28,14 @@ interface RedeemCouponRequest {
 
 interface RedeemCouponResponse {
   ok: true;
-  type: CouponType;
+  type: string; // legacy field — derived from the first grant for older clients
   tier?: TierName;
   coinAmount?: number;
   durationDays: number;
   effectiveTier?: TierName;
   newEndDate?: string;
   grantSummary: string;
+  grants: Grant[];
 }
 
 export const redeemCoupon = onCall<RedeemCouponRequest>(
@@ -77,14 +65,14 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
           throw new HttpsError('not-found', 'Coupon code not found');
         }
         const couponRef = couponQuery.docs[0].ref;
-        const coupon = couponQuery.docs[0].data() as CouponDoc;
+        const coupon = couponQuery.docs[0].data() as any;
 
         // ── Validate coupon state ──
         if (coupon.disabled) {
           throw new HttpsError('failed-precondition', 'This coupon is no longer active');
         }
         const now = admin.firestore.Timestamp.now();
-        if (coupon.expiresAt && coupon.expiresAt.toDate() <= now.toDate()) {
+        if (coupon.expiresAt && (coupon.expiresAt as admin.firestore.Timestamp).toDate() <= now.toDate()) {
           throw new HttpsError('failed-precondition', 'This coupon has expired');
         }
         if (
@@ -95,166 +83,153 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
           throw new HttpsError('failed-precondition', 'This coupon has reached its redemption limit');
         }
         if (coupon.allowedEmail) {
-          const allowed = coupon.allowedEmail.toLowerCase();
+          const allowed = String(coupon.allowedEmail).toLowerCase();
           if (!userEmail || userEmail !== allowed) {
             throw new HttpsError('permission-denied', 'This coupon is restricted to a different account');
           }
         }
 
+        const grants = effectiveGrants(coupon);
+        if (grants.length === 0) {
+          throw new HttpsError('failed-precondition', 'Coupon is misconfigured: no grants');
+        }
+
         // ── Reject if this user already redeemed this coupon ──
         const redemptionRef = couponRef.collection('redemptions').doc(uid);
+        const profileRef = db.collection('profiles').doc(uid);
+        const userRef = db.collection('users').doc(uid);
+        const balanceRef = db.collection('coinBalances').doc(uid);
+
+        // ── All reads up-front (Firestore tx rule) ──
+        const needsProfile = grants.some(
+          (g) => g.kind === 'membership' || g.kind === 'base_membership',
+        );
+        const needsBalance = grants.some((g) => g.kind === 'coins');
+
         const existingRedemption = await tx.get(redemptionRef);
         if (existingRedemption.exists) {
           throw new HttpsError('already-exists', 'You have already redeemed this coupon');
         }
 
-        const durationMs = coupon.durationDays * 24 * 60 * 60 * 1000;
-        const profileRef = db.collection('profiles').doc(uid);
-        const userRef = db.collection('users').doc(uid);
-        const balanceRef = db.collection('coinBalances').doc(uid);
+        const profileSnap = needsProfile ? await tx.get(profileRef) : null;
+        const balanceSnap = needsBalance ? await tx.get(balanceRef) : null;
 
-        let grantSummary = '';
-        const response: RedeemCouponResponse = {
-          ok: true,
-          type: coupon.type,
-          durationDays: coupon.durationDays,
-          grantSummary: '',
-        };
+        // ── Accumulate updates across the grant list ──
+        const profileUpdate: Record<string, any> = {};
+        const userUpdate: Record<string, any> = {};
+        let runningTier: string = (profileSnap?.data()?.membershipTier as string) || 'BASIC';
+        let runningTierEnd: Date | null =
+          (profileSnap?.data()?.membershipEndDate as admin.firestore.Timestamp | undefined)?.toDate() ??
+          null;
+        let runningBaseEnd: Date | null =
+          (profileSnap?.data()?.baseMembershipEndDate as admin.firestore.Timestamp | undefined)?.toDate() ??
+          null;
 
-        if (coupon.type === 'membership') {
-          if (!coupon.tier) {
-            throw new HttpsError('failed-precondition', 'Coupon is misconfigured: missing tier');
+        const balanceData = balanceSnap?.exists ? (balanceSnap.data() as any) : {};
+        let runningBalance: number = (balanceData?.totalCoins as number) || 0;
+        const coinBatches: any[] = (balanceData?.coinBatches as any[]) || [];
+        let totalCoinsGranted = 0;
+        let firstMembershipExt: { effectiveTier: TierName; newEndDate: Date } | null = null;
+        let firstCoinAmount: number | undefined;
+        let firstDurationDays: number | undefined;
+        let firstTier: TierName | undefined;
+
+        for (const g of grants) {
+          if (g.kind === 'membership' && g.tier && g.durationDays) {
+            const ext = computeMembershipExtension(
+              runningTier,
+              runningTierEnd,
+              g.tier,
+              g.durationDays * 24 * 60 * 60 * 1000,
+              now.toDate(),
+            );
+            runningTier = ext.effectiveTier;
+            runningTierEnd = ext.newEndDate;
+            profileUpdate.membershipTier = ext.effectiveTier;
+            profileUpdate.membershipStartDate = now;
+            profileUpdate.membershipEndDate = ext.newEndTimestamp;
+            userUpdate.subscriptionTier = ext.effectiveTier;
+            userUpdate.membershipEndDate = ext.newEndTimestamp;
+            if (!firstMembershipExt) {
+              firstMembershipExt = { effectiveTier: ext.effectiveTier, newEndDate: ext.newEndDate };
+              firstTier = g.tier;
+              firstDurationDays ??= g.durationDays;
+            }
+          } else if (g.kind === 'base_membership' && g.durationDays) {
+            const baseStart =
+              runningBaseEnd && runningBaseEnd > now.toDate() ? runningBaseEnd : now.toDate();
+            const newBaseEnd = new Date(baseStart.getTime() + g.durationDays * 24 * 60 * 60 * 1000);
+            runningBaseEnd = newBaseEnd;
+            profileUpdate.hasBaseMembership = true;
+            profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+            firstDurationDays ??= g.durationDays;
+          } else if (g.kind === 'coins' && g.coinAmount) {
+            const amount = g.coinAmount;
+            const expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
+            coinBatches.push({
+              batchId: db.collection('temp').doc().id,
+              initialCoins: amount,
+              remainingCoins: amount,
+              source: 'coupon',
+              acquiredDate: now,
+              expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
+            });
+            runningBalance += amount;
+            totalCoinsGranted += amount;
+            firstCoinAmount ??= amount;
+          } else {
+            throw new HttpsError(
+              'failed-precondition',
+              `Coupon is misconfigured: invalid grant ${JSON.stringify(g)}`,
+            );
           }
-          // Read profile inside the transaction (all reads must come before writes)
-          const profileSnap = await tx.get(profileRef);
-          const profileData = profileSnap.data() || {};
-          const currentTier = (profileData.membershipTier as string) || 'BASIC';
-          const currentEndTs = profileData.membershipEndDate as admin.firestore.Timestamp | undefined;
-          const currentEndDate = currentEndTs ? currentEndTs.toDate() : null;
+        }
 
-          const extension = computeMembershipExtension(
-            currentTier,
-            currentEndDate,
-            coupon.tier,
-            durationMs,
-            now.toDate(),
-          );
+        // ── Write profile + user (single set per ref) ──
+        if (Object.keys(profileUpdate).length > 0) {
+          profileUpdate.updatedAt = now;
+          tx.set(profileRef, profileUpdate, { merge: true });
+        }
+        if (Object.keys(userUpdate).length > 0) {
+          userUpdate.updatedAt = now;
+          tx.set(userRef, userUpdate, { merge: true });
+        }
 
-          tx.set(
-            profileRef,
-            {
-              membershipTier: extension.effectiveTier,
-              membershipStartDate: now,
-              membershipEndDate: extension.newEndTimestamp,
-              updatedAt: now,
-            },
-            { merge: true },
-          );
-          tx.set(
-            userRef,
-            {
-              subscriptionTier: extension.effectiveTier,
-              membershipEndDate: extension.newEndTimestamp,
-              updatedAt: now,
-            },
-            { merge: true },
-          );
-
-          grantSummary = `${extension.effectiveTier} +${coupon.durationDays}d`;
-          response.tier = coupon.tier;
-          response.effectiveTier = extension.effectiveTier;
-          response.newEndDate = extension.newEndDate.toISOString();
-        } else if (coupon.type === 'base_membership') {
-          const profileSnap = await tx.get(profileRef);
-          const profileData = profileSnap.data() || {};
-          const currentEndTs = profileData.baseMembershipEndDate as admin.firestore.Timestamp | undefined;
-          const currentEndDate = currentEndTs ? currentEndTs.toDate() : null;
-          const baseStart =
-            currentEndDate && currentEndDate > now.toDate() ? currentEndDate : now.toDate();
-          const newEndDate = new Date(baseStart.getTime() + durationMs);
-          const newEndTimestamp = admin.firestore.Timestamp.fromDate(newEndDate);
-
-          tx.set(
-            profileRef,
-            {
-              hasBaseMembership: true,
-              baseMembershipEndDate: newEndTimestamp,
-              updatedAt: now,
-            },
-            { merge: true },
-          );
-
-          grantSummary = `BASE +${coupon.durationDays}d`;
-          response.newEndDate = newEndDate.toISOString();
-        } else if (coupon.type === 'coins') {
-          const amount = coupon.coinAmount || 0;
-          if (amount <= 0) {
-            throw new HttpsError('failed-precondition', 'Coupon is misconfigured: missing coin amount');
-          }
-          const balanceSnap = await tx.get(balanceRef);
-          let currentBalance = 0;
-          let earnedCoins = 0;
-          let purchasedCoins = 0;
-          let giftedCoins = 0;
-          let spentCoins = 0;
-          let coinBatches: any[] = [];
-          if (balanceSnap.exists) {
-            const data = balanceSnap.data() as any;
-            currentBalance = data.totalCoins || 0;
-            earnedCoins = data.earnedCoins || 0;
-            purchasedCoins = data.purchasedCoins || 0;
-            giftedCoins = data.giftedCoins || 0;
-            spentCoins = data.spentCoins || 0;
-            coinBatches = data.coinBatches || [];
-          }
-          const expirationDate = new Date();
-          expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
-          const batchId = db.collection('temp').doc().id;
-          coinBatches.push({
-            batchId,
-            initialCoins: amount,
-            remainingCoins: amount,
-            source: 'coupon',
-            acquiredDate: now,
-            expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
-          });
-
+        // ── Write coin balance + a single aggregate transaction record ──
+        if (totalCoinsGranted > 0) {
           tx.set(
             balanceRef,
             {
               userId: uid,
-              totalCoins: currentBalance + amount,
-              earnedCoins,
-              purchasedCoins,
-              giftedCoins,
-              spentCoins,
+              totalCoins: runningBalance,
+              earnedCoins: balanceData?.earnedCoins || 0,
+              purchasedCoins: balanceData?.purchasedCoins || 0,
+              giftedCoins: balanceData?.giftedCoins || 0,
+              spentCoins: balanceData?.spentCoins || 0,
               lastUpdated: now,
               coinBatches,
             },
             { merge: true },
           );
-
-          const transactionRef = db.collection('coinTransactions').doc();
-          tx.set(transactionRef, {
+          const txnRef = db.collection('coinTransactions').doc();
+          tx.set(txnRef, {
             userId: uid,
             type: 'credit',
-            amount,
-            balanceAfter: currentBalance + amount,
+            amount: totalCoinsGranted,
+            balanceAfter: runningBalance,
             reason: 'coupon',
             metadata: { couponId: couponRef.id, couponCode: coupon.code, source: 'coupon' },
             createdAt: now,
           });
-
-          grantSummary = `+${amount} coins`;
-          response.coinAmount = amount;
-        } else {
-          throw new HttpsError('failed-precondition', `Unknown coupon type: ${coupon.type}`);
         }
 
-        // ── Write redemption record + increment counter ──
+        const grantSummary = summariseGrants(grants);
+
+        // ── Write redemption record + bump counter (one per coupon redemption) ──
         tx.set(redemptionRef, {
           redeemedAt: now,
-          userEmail: userEmail,
+          userEmail,
           grantSummary,
           couponCode: coupon.code,
         });
@@ -263,7 +238,21 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
           lastRedeemedAt: now,
         });
 
-        response.grantSummary = grantSummary;
+        // ── Build backward-compatible response ──
+        const response: RedeemCouponResponse = {
+          ok: true,
+          type: (coupon.type as string) || grants[0].kind,
+          durationDays: firstDurationDays ?? 0,
+          grantSummary,
+          grants,
+        };
+        if (firstTier) response.tier = firstTier;
+        if (firstCoinAmount !== undefined) response.coinAmount = firstCoinAmount;
+        if (firstMembershipExt) {
+          response.effectiveTier = firstMembershipExt.effectiveTier;
+          response.newEndDate = firstMembershipExt.newEndDate.toISOString();
+        }
+
         logInfo(`redeemCoupon uid=${uid} couponId=${couponRef.id} code=${coupon.code} grant=${grantSummary}`);
         return response;
       });
