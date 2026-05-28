@@ -85,6 +85,9 @@ export {
   claimReward,
 } from './coins/coinManager';
 
+// Coupon Redemption
+export { redeemCoupon } from './coupons/redeemCoupon';
+
 // Analytics Functions
 export {
   getRevenueDashboard,
