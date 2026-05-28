@@ -85,8 +85,14 @@ export {
   claimReward,
 } from './coins/coinManager';
 
-// Coupon Redemption
+// Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';
+export {
+  upsertCoupon,
+  listCoupons,
+  getCouponRedemptions,
+  setCouponDisabled,
+} from './coupons/adminCoupons';
 
 // Analytics Functions
 export {
