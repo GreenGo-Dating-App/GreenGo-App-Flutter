@@ -366,14 +366,24 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   /// Flips the `dismissed` flag on a single signup grant in Firestore.
-  Future<void> _markSignupGrantDismissed(Profile profile, String couponId) async {
+  /// Wrapped in a transaction so a late-firing applySignupGrants trigger that
+  /// writes the array between our read and our write can't lose this dismiss
+  /// (and vice-versa we don't clobber its newly added grants).
+  Future<void> _markSignupGrantDismissed(Profile _, String couponId) async {
     try {
-      final updated = profile.signupGrantsApplied
-          .map((g) => g.couponId == couponId ? g.copyWith(dismissed: true) : g)
-          .map((g) => g.toMap())
-          .toList();
-      await FirebaseFirestore.instance.collection('profiles').doc(widget.userId).update({
-        'signupGrantsApplied': updated,
+      final profileRef =
+          FirebaseFirestore.instance.collection('profiles').doc(widget.userId);
+      await FirebaseFirestore.instance.runTransaction((tx) async {
+        final snap = await tx.get(profileRef);
+        final raw = (snap.data()?['signupGrantsApplied'] as List?) ?? const [];
+        final next = raw.map((e) {
+          final m = Map<String, dynamic>.from(e as Map);
+          if (m['couponId'] == couponId) {
+            m['dismissed'] = true;
+          }
+          return m;
+        }).toList();
+        tx.update(profileRef, {'signupGrantsApplied': next});
       });
     } catch (e) {
       debugPrint('[SignupGrants] Failed to mark $couponId dismissed: $e');
