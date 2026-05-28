@@ -242,6 +242,7 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Icon(
                           Icons.check_circle_outline,
@@ -252,9 +253,12 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                         Expanded(
                           child: Text(
                             _successMessage!,
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
                               color: AppColors.successGreen,
                               fontSize: 14,
+                              height: 1.3,
                             ),
                           ),
                         ),
