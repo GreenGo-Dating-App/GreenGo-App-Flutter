@@ -13,9 +13,15 @@ import {
   verifyGooglePlayPurchase,
   verifyAppStorePurchase,
 } from '../shared/purchase_verification';
+import {
+  TierName,
+  computeMembershipExtension,
+  grantBaseMembership,
+  grantCoins,
+} from '../shared/grants';
 
 // Product ID → tier and duration mapping
-const PRODUCT_CONFIG: Record<string, { tier: string; durationDays: number; price: number }> = {
+const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: number; price: number }> = {
   'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
   '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
   '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
@@ -23,14 +29,6 @@ const PRODUCT_CONFIG: Record<string, { tier: string; durationDays: number; price
   '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90 },
   '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
   '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
-};
-
-// Tier hierarchy for upgrade logic
-const TIER_RANK: Record<string, number> = {
-  'BASIC': 0,
-  'SILVER': 1,
-  'GOLD': 2,
-  'PLATINUM': 3,
 };
 
 // ========== 0. VERIFY PURCHASE (Callable) ==========
@@ -141,38 +139,21 @@ export const verifyPurchase = onCall(
       }
 
       const now = admin.firestore.Timestamp.now();
-      const nowDate = now.toDate();
 
-      // ── Compute new end date with extension/upgrade logic ──
+      // ── Compute new end date with extension/upgrade logic + apply grants via shared helpers ──
       const profileDoc = await db.collection('profiles').doc(userId).get();
       const profileData = profileDoc.data() || {};
       const currentTier = (profileData.membershipTier as string) || 'BASIC';
       const currentEndTimestamp = profileData.membershipEndDate as admin.firestore.Timestamp | undefined;
       const currentEndDate = currentEndTimestamp ? currentEndTimestamp.toDate() : null;
 
-      let newEndDate: Date;
-      let effectiveTier = tier;
-
-      if (currentEndDate && currentEndDate > nowDate) {
-        // User has active membership
-        const purchasedRank = TIER_RANK[tier] || 0;
-        const currentRank = TIER_RANK[currentTier] || 0;
-
-        if (purchasedRank >= currentRank) {
-          // Same or higher tier: user gets higher tier immediately, end date extends from current end
-          newEndDate = new Date(currentEndDate.getTime() + durationMs);
-          effectiveTier = tier;
-        } else {
-          // Lower tier: keep higher tier, extend end date from current end
-          newEndDate = new Date(currentEndDate.getTime() + durationMs);
-          effectiveTier = currentTier;
-        }
-      } else {
-        // No active membership or expired — start from now
-        newEndDate = new Date(nowDate.getTime() + durationMs);
-      }
-
-      const endTimestamp = admin.firestore.Timestamp.fromDate(newEndDate);
+      const { effectiveTier, newEndDate, newEndTimestamp: endTimestamp } = computeMembershipExtension(
+        currentTier,
+        currentEndDate,
+        tier,
+        durationMs,
+        now.toDate(),
+      );
 
       // ── Create subscription record ──
       await db.collection('subscriptions').add({
@@ -212,21 +193,13 @@ export const verifyPurchase = onCall(
         verificationMethod: 'cloud_function',
       });
 
-      // ── Update profile with membership info ──
-      const profileUpdate: Record<string, any> = {
+      // ── Update profile + users docs (tier extension) ──
+      await db.collection('profiles').doc(userId).update({
         membershipTier: effectiveTier,
         membershipEndDate: endTimestamp,
         membershipStartDate: now,
         updatedAt: now,
-      };
-
-      // For base membership, also set the baseMembership fields used by app gates
-      if (productId === 'greengo_base_membership') {
-        profileUpdate.hasBaseMembership = true;
-        profileUpdate.baseMembershipEndDate = endTimestamp;
-      }
-
-      await db.collection('profiles').doc(userId).update(profileUpdate);
+      });
 
       await db.collection('users').doc(userId).update({
         subscriptionTier: effectiveTier,
@@ -234,35 +207,12 @@ export const verifyPurchase = onCall(
         updatedAt: now,
       });
 
-      // ── Grant 500 coins for base membership ──
+      // ── Apply base membership flag + 500 coin welcome bonus for the base product ──
       let coinsGranted = 0;
       if (productId === 'greengo_base_membership') {
-        const balanceRef = db.collection('coinBalances').doc(userId);
-        const balanceDoc = await balanceRef.get();
-
-        if (balanceDoc.exists) {
-          const currentTotal = (balanceDoc.data()?.totalCoins as number) || 0;
-          await balanceRef.update({ totalCoins: currentTotal + 500 });
-        } else {
-          await balanceRef.set({
-            userId: userId,
-            totalCoins: 500,
-            spentCoins: 0,
-            lastUpdated: now,
-          });
-        }
-
-        await balanceRef.collection('coinBatches').add({
-          amount: 500,
-          remainingCoins: 500,
-          source: 'membership_bonus',
-          reason: 'Base membership welcome bonus',
-          createdAt: now,
-          expiresAt: endTimestamp,
-        });
-
+        await grantBaseMembership(userId, durationMs);
+        await grantCoins(userId, 500, 'membership_bonus', 'Base membership welcome bonus', { productId });
         coinsGranted = 500;
-        logInfo(`Granted 500 bonus coins to user ${userId}`);
       }
 
       logInfo(`Membership purchase verified for user ${userId}: tier=${effectiveTier}, endDate=${newEndDate.toISOString()}, coins=${coinsGranted}`);
