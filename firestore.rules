@@ -670,6 +670,18 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // COUPONS — Cloud Functions only.
+    // Clients (including admins) must use redeemCoupon / upsertCoupon callables.
+    // Direct reads are denied so coupon codes cannot be leaked or enumerated.
+    // ============================================================================
+    match /coupons/{couponId} {
+      allow read, write: if false;
+      match /redemptions/{userId} {
+        allow read, write: if false;
+      }
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {
