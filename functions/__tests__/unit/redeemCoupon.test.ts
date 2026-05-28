@@ -27,18 +27,30 @@ jest.mock('firebase-admin', () => {
 let mockCouponDoc: any = null;
 let mockRedemptionExists = false;
 
-const makeRef = (path: string) => ({ id: 'doc1', path });
+const makeRef = (path: string): any => {
+  const ref: any = { id: path.split('/').pop() || 'doc', path };
+  ref.collection = (name: string) => ({
+    doc: (id: string) => makeRef(`${path}/${name}/${id}`),
+  });
+  return ref;
+};
+
+// A "query" is a separate object from a doc ref so the tx.get dispatcher
+// can tell them apart.
+const QUERY_MARKER: any = { __query: true };
+QUERY_MARKER.where = jest.fn(() => QUERY_MARKER);
+QUERY_MARKER.limit = jest.fn(() => QUERY_MARKER);
 
 const fakeDb: any = {
-  collection: jest.fn(() => fakeDb),
-  doc: jest.fn(() => fakeDb),
-  where: jest.fn(() => fakeDb),
-  limit: jest.fn(() => fakeDb),
+  collection: jest.fn((name: string) => ({
+    where: (..._args: any[]) => QUERY_MARKER,
+    doc: (id: string) => makeRef(`${name}/${id || 'auto'}`),
+    add: jest.fn(),
+  })),
   runTransaction: jest.fn(async (cb: any) => {
     const tx: any = {
       get: jest.fn(async (refOrQuery: any) => {
-        if (refOrQuery === fakeDb) {
-          // Query — return coupon docs collection result
+        if (refOrQuery === QUERY_MARKER || refOrQuery?.__query) {
           return {
             empty: mockCouponDoc === null,
             docs: mockCouponDoc
@@ -46,27 +58,21 @@ const fakeDb: any = {
               : [],
           };
         }
-        // Direct doc reads — redemption + profile + balance
+        // Direct doc reads — redemption / profile / balance.
         if (refOrQuery?.path?.includes('/redemptions/')) {
           return { exists: mockRedemptionExists };
         }
-        if (refOrQuery?.path?.includes('profiles/')) {
-          return { data: () => ({}) };
+        if (refOrQuery?.path?.startsWith('profiles/')) {
+          return { exists: false, data: () => ({}) };
+        }
+        if (refOrQuery?.path?.startsWith('coinBalances/')) {
+          return { exists: false, data: () => ({}) };
         }
         return { exists: false, data: () => ({}) };
       }),
       set: jest.fn(),
       update: jest.fn(),
     };
-    // Patch the doc() chain so coupon.collection('redemptions').doc(uid) returns a path
-    // marker the tx.get inspects above.
-    fakeDb.collection.mockImplementation((c: string) => {
-      if (c === 'redemptions') {
-        const sub: any = { doc: () => makeRef('coupons/c1/redemptions/uid1') };
-        return sub;
-      }
-      return fakeDb;
-    });
     return cb(tx);
   }),
 };
@@ -100,7 +106,11 @@ beforeEach(() => {
   mockCouponDoc = null;
   mockRedemptionExists = false;
   jest.clearAllMocks();
-  fakeDb.collection.mockImplementation(() => fakeDb);
+  fakeDb.collection.mockImplementation((name: string) => ({
+    where: (..._args: any[]) => QUERY_MARKER,
+    doc: (id: string) => makeRef(`${name}/${id || 'auto'}`),
+    add: jest.fn(),
+  }));
 });
 
 describe('redeemCoupon — error mapping', () => {
@@ -190,5 +200,51 @@ describe('redeemCoupon — error mapping', () => {
     await expect(
       callRedeem({ uid: 'u1', email: 'other@user.com', code: 'GG-X' }),
     ).rejects.toMatchObject({ code: 'permission-denied' });
+  });
+
+  it('accepts a bundle coupon with coins + base + membership and returns a multi-part summary', async () => {
+    mockCouponDoc = {
+      code: 'GG-BUNDLE',
+      // Legacy fields absent — effectiveGrants reads from the bundle.
+      type: null,
+      tier: null,
+      coinAmount: null,
+      durationDays: null,
+      grants: [
+        { kind: 'coins', coinAmount: 500 },
+        { kind: 'base_membership', durationDays: 90 },
+        { kind: 'membership', tier: 'GOLD', durationDays: 30 },
+      ],
+      maxRedemptions: 1,
+      redemptionsCount: 0,
+      expiresAt: null,
+      allowedEmail: null,
+      disabled: false,
+    };
+    const res: any = await callRedeem({ uid: 'u1', email: 'a@b.com', code: 'GG-BUNDLE' });
+    expect(res.ok).toBe(true);
+    expect(res.grantSummary).toContain('+500 coins');
+    expect(res.grantSummary).toContain('BASE +90d');
+    expect(res.grantSummary).toContain('GOLD +30d');
+    expect(res.grants).toHaveLength(3);
+    // Backward-compat fields populated from the first matching grant.
+    expect(res.tier).toBe('GOLD');
+    expect(res.coinAmount).toBe(500);
+  });
+
+  it('rejects a misconfigured coupon with neither type nor grants', async () => {
+    mockCouponDoc = {
+      code: 'GG-EMPTY',
+      type: null,
+      grants: [],
+      maxRedemptions: null,
+      redemptionsCount: 0,
+      expiresAt: null,
+      allowedEmail: null,
+      disabled: false,
+    };
+    await expect(
+      callRedeem({ uid: 'u1', email: 'a@b.com', code: 'GG-EMPTY' }),
+    ).rejects.toMatchObject({ code: 'failed-precondition' });
   });
 });
