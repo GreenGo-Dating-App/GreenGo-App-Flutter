@@ -21,6 +21,7 @@ interface UpsertCouponRequest {
   maxRedemptions?: number | null;
   expiresAt?: string | null; // ISO date string
   allowedEmail?: string | null;
+  autoGrantOnSignup?: boolean;
   disabled?: boolean;
   notes?: string;
 }
@@ -76,6 +77,15 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
         }
       }
 
+      // autoGrantOnSignup only makes sense for a per-email coupon — otherwise
+      // every new user with any email would trip the trigger.
+      if (data.autoGrantOnSignup && !data.allowedEmail) {
+        throw new HttpsError(
+          'invalid-argument',
+          'autoGrantOnSignup requires allowedEmail to be set',
+        );
+      }
+
       // ── Code uniqueness (case-insensitive) ──
       const existing = await db
         .collection('coupons')
@@ -99,6 +109,7 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
             : Number(data.maxRedemptions),
         expiresAt: data.expiresAt ? admin.firestore.Timestamp.fromDate(new Date(data.expiresAt)) : null,
         allowedEmail: data.allowedEmail ? String(data.allowedEmail).toLowerCase().trim() : null,
+        autoGrantOnSignup: !!data.autoGrantOnSignup,
         disabled: !!data.disabled,
         notes: data.notes ? String(data.notes).slice(0, 500) : '',
         updatedAt: now,
