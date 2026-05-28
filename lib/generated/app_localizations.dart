@@ -10956,6 +10956,72 @@ abstract class AppLocalizations {
   /// **'Enter coupon code'**
   String get membershipEnterCouponHint;
 
+  /// No description provided for @couponRedeemTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Coupon Code'**
+  String get couponRedeemTitle;
+
+  /// No description provided for @couponRedeemSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your code to upgrade your membership or get free coins'**
+  String get couponRedeemSubtitle;
+
+  /// No description provided for @couponRedeemButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Coupon'**
+  String get couponRedeemButton;
+
+  /// No description provided for @couponRedeemedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeemed: {grantSummary}'**
+  String couponRedeemedSuccess(String grantSummary);
+
+  /// No description provided for @couponErrorInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'This coupon code is not valid'**
+  String get couponErrorInvalid;
+
+  /// No description provided for @couponErrorExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'This coupon has expired'**
+  String get couponErrorExpired;
+
+  /// No description provided for @couponErrorMaxUsesReached.
+  ///
+  /// In en, this message translates to:
+  /// **'This coupon has reached its usage limit'**
+  String get couponErrorMaxUsesReached;
+
+  /// No description provided for @couponErrorEmailMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'This coupon is restricted to a different account'**
+  String get couponErrorEmailMismatch;
+
+  /// No description provided for @couponErrorAlreadyRedeemed.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already used this coupon'**
+  String get couponErrorAlreadyRedeemed;
+
+  /// No description provided for @couponErrorDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'This coupon is no longer active'**
+  String get couponErrorDisabled;
+
+  /// No description provided for @couponErrorGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not redeem coupon. Please try again.'**
+  String get couponErrorGeneric;
+
   /// No description provided for @membershipEquivalentMonthly.
   ///
   /// In en, this message translates to:

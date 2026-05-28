@@ -6177,6 +6177,44 @@ class AppLocalizationsFr extends AppLocalizations {
   String get membershipEnterCouponHint => 'Entrez un code promo';
 
   @override
+  String get couponRedeemTitle => 'Redeem Coupon Code';
+
+  @override
+  String get couponRedeemSubtitle =>
+      'Enter your code to upgrade your membership or get free coins';
+
+  @override
+  String get couponRedeemButton => 'Redeem Coupon';
+
+  @override
+  String couponRedeemedSuccess(String grantSummary) {
+    return 'Redeemed: $grantSummary';
+  }
+
+  @override
+  String get couponErrorInvalid => 'This coupon code is not valid';
+
+  @override
+  String get couponErrorExpired => 'This coupon has expired';
+
+  @override
+  String get couponErrorMaxUsesReached =>
+      'This coupon has reached its usage limit';
+
+  @override
+  String get couponErrorEmailMismatch =>
+      'This coupon is restricted to a different account';
+
+  @override
+  String get couponErrorAlreadyRedeemed => 'You have already used this coupon';
+
+  @override
+  String get couponErrorDisabled => 'This coupon is no longer active';
+
+  @override
+  String get couponErrorGeneric => 'Could not redeem coupon. Please try again.';
+
+  @override
   String membershipEquivalentMonthly(Object price) {
     return 'Équivalent à $price/mois';
   }
