@@ -6770,6 +6770,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingMinLanguage => 'Please select at least one language';
 
   @override
+  String get onboardingMinLocation => 'Please set your location to continue';
+
+  @override
   String get onboardingNameMinLength => 'Name must be at least 2 characters';
 
   @override
