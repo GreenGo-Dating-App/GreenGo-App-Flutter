@@ -67,6 +67,7 @@ export type EmailTrigger =
   | 'super_like_purchased' | 'spotlight_purchased' | 'spotlight_activated'
   | 'spotlight_expired' | 'bundle_purchased' | 'purchase_refunded'
   | 'invoice_generated' | 'payment_receipt' | 'payment_failed'
+  | 'coupon_redeemed'
   // Gamification
   | 'achievement_unlocked' | 'badge_earned' | 'level_up'
   | 'daily_streak_milestone' | 'streak_at_risk' | 'streak_lost'
@@ -244,6 +245,7 @@ const EMAIL_CATEGORY_MAP: Record<EmailTrigger, EmailCategory> = {
   invoice_generated: 'purchase',
   payment_receipt: 'purchase',
   payment_failed: 'purchase',
+  coupon_redeemed: 'purchase',
   // Gamification
   achievement_unlocked: 'gamification',
   badge_earned: 'gamification',
@@ -877,6 +879,20 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       ),
     },
     // Purchase
+    coupon_redeemed: {
+      subject: 'Coupon redeemed — welcome to your reward!',
+      htmlContent: baseTemplate(
+        'Coupon Redeemed!',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your coupon code <strong style="color: ${branding.textColor}; font-family: monospace; letter-spacing: 1px;">${variables.couponCode || ''}</strong> has been applied to your account.</p>
+        <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid ${branding.primaryColor};">
+          <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Reward:</strong> ${variables.grantSummary || 'Applied'}</p>
+          ${variables.newEndDate ? `<p style=\"color: ${branding.textColor}; margin: 0;\"><strong>Active until:</strong> ${variables.newEndDate}</p>` : ''}
+        </div>
+        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Open the app to enjoy your new perks.</p>`,
+        'https://greengo.app',
+        'Open GreenGo'
+      ),
+    },
     coins_purchased: {
       subject: 'Coins purchased successfully!',
       htmlContent: baseTemplate(
