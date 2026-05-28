@@ -22,7 +22,6 @@ import '../widgets/edit_section_card.dart';
 import '../../../admin/presentation/screens/admin_2fa_screen.dart';
 import '../../../admin/presentation/screens/verification_admin_screen.dart';
 import '../../../admin/presentation/screens/reports_admin_screen.dart';
-import '../../../membership/presentation/screens/membership_admin_screen.dart';
 import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
 import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
 import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
@@ -505,12 +504,6 @@ class EditProfileScreen extends StatelessWidget {
                       onTap: () => _navigateToAdminReports(context, activeProfile),
                     ),
                     const SizedBox(height: 16),
-                    EditSectionCard(
-                      title: AppLocalizations.of(context)!.membershipPanel,
-                      subtitle: AppLocalizations.of(context)!.manageCouponsTiersRules,
-                      icon: Icons.card_membership,
-                      onTap: () => _navigateToAdminMembership(context, activeProfile),
-                    ),
                   ],
 
                   const SizedBox(height: 32),
@@ -858,17 +851,6 @@ class EditProfileScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => ReportsAdminScreen(adminId: currentProfile.userId),
-      ),
-    );
-  }
-
-  Future<void> _navigateToAdminMembership(BuildContext context, Profile currentProfile) async {
-    if (!await _verify2FA(context)) return;
-    if (!context.mounted) return;
-
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => MembershipAdminScreen(adminId: currentProfile.userId),
       ),
     );
   }
