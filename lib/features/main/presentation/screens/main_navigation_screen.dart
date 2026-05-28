@@ -123,6 +123,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   MembershipTier? _lastProcessedTier;
   bool _isProcessingState = false;
 
+  // Tracks signup grants that have already been surfaced as a MaterialBanner
+  // in this session, so a profile refresh doesn't re-show the same banner.
+  final Set<String> _shownSignupGrantIds = <String>{};
+
   // Global gamification bloc for level-up celebrations (only when enabled)
   GamificationBloc? _gamificationBloc;
 
@@ -309,6 +313,71 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         BaseMembershipDialog.show(context: context, userId: widget.userId);
       }
     });
+  }
+
+  /// Shows a one-time MaterialBanner per ungated signup grant.
+  /// Marks each grant dismissed in Firestore when the user taps "Got it"
+  /// so the banner doesn't re-appear on the next launch / device.
+  void _maybeShowSignupGrantBanners(Profile profile) {
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null) return;
+    final pending = profile.signupGrantsApplied
+        .where((g) => !g.dismissed && !_shownSignupGrantIds.contains(g.couponId))
+        .toList();
+    if (pending.isEmpty) return;
+
+    for (final grant in pending) {
+      _shownSignupGrantIds.add(grant.couponId);
+      final messenger = ScaffoldMessenger.of(context);
+      messenger.showMaterialBanner(
+        MaterialBanner(
+          backgroundColor: AppColors.backgroundDark,
+          content: RichText(
+            text: TextSpan(
+              style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+              children: [
+                TextSpan(text: '${l10n.welcomeGrantTitle}\n'),
+                TextSpan(
+                  text: grant.grantSummary,
+                  style: const TextStyle(
+                    color: AppColors.richGold,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          leading: const Icon(Icons.card_giftcard, color: AppColors.richGold),
+          actions: [
+            TextButton(
+              onPressed: () async {
+                messenger.hideCurrentMaterialBanner();
+                await _markSignupGrantDismissed(profile, grant.couponId);
+              },
+              child: Text(
+                l10n.welcomeGrantDismiss,
+                style: const TextStyle(color: AppColors.richGold),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
+  /// Flips the `dismissed` flag on a single signup grant in Firestore.
+  Future<void> _markSignupGrantDismissed(Profile profile, String couponId) async {
+    try {
+      final updated = profile.signupGrantsApplied
+          .map((g) => g.couponId == couponId ? g.copyWith(dismissed: true) : g)
+          .map((g) => g.toMap())
+          .toList();
+      await FirebaseFirestore.instance.collection('profiles').doc(widget.userId).update({
+        'signupGrantsApplied': updated,
+      });
+    } catch (e) {
+      debugPrint('[SignupGrants] Failed to mark $couponId dismissed: $e');
+    }
   }
 
   /// Directly fetch profile from Firestore and trigger membership check
@@ -1237,11 +1306,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               });
               // Check base membership on first profile load
               _checkBaseMembership(state.profile);
+              // Show welcome banner(s) for any auto-applied signup grants
+              _maybeShowSignupGrantBanners(state.profile);
             } else if (state is ProfileUpdated) {
               _lastProcessedTier = state.profile.membershipTier;
               setState(() {
                 _membershipTier = state.profile.membershipTier;
               });
+              _maybeShowSignupGrantBanners(state.profile);
             }
 
             _isProcessingState = false;

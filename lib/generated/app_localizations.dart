@@ -11022,6 +11022,18 @@ abstract class AppLocalizations {
   /// **'Could not redeem coupon. Please try again.'**
   String get couponErrorGeneric;
 
+  /// No description provided for @welcomeGrantTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGo!'**
+  String get welcomeGrantTitle;
+
+  /// No description provided for @welcomeGrantDismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get welcomeGrantDismiss;
+
   /// No description provided for @membershipEquivalentMonthly.
   ///
   /// In en, this message translates to:
