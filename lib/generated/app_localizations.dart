@@ -12186,6 +12186,12 @@ abstract class AppLocalizations {
   /// **'Please select at least one language'**
   String get onboardingMinLanguage;
 
+  /// No description provided for @onboardingMinLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Please set your location to continue'**
+  String get onboardingMinLocation;
+
   /// No description provided for @onboardingNameMinLength.
   ///
   /// In en, this message translates to:

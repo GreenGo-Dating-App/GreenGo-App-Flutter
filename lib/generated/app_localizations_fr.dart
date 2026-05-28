@@ -6892,6 +6892,9 @@ class AppLocalizationsFr extends AppLocalizations {
       'Veuillez sélectionner au moins une langue';
 
   @override
+  String get onboardingMinLocation => 'Please set your location to continue';
+
+  @override
   String get onboardingNameMinLength =>
       'Le nom doit contenir au moins 2 caractères';
 

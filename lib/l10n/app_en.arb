@@ -3371,6 +3371,7 @@
   "onboardingMaxLanguages": "You can select up to 3 languages",
   "onboardingMinInterests": "Please select at least 3 interests",
   "onboardingMinLanguage": "Please select at least one language",
+  "onboardingMinLocation": "Please set your location to continue",
   "onboardingNameMinLength": "Name must be at least 2 characters",
   "onboardingNoLocationSelected": "No location selected",
   "onboardingOptional": "Optional",

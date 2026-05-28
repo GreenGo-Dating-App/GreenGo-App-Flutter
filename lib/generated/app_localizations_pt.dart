@@ -6836,6 +6836,9 @@ class AppLocalizationsPt extends AppLocalizations {
       'Por favor, selecione pelo menos um idioma';
 
   @override
+  String get onboardingMinLocation => 'Please set your location to continue';
+
+  @override
   String get onboardingNameMinLength =>
       'O nome deve ter pelo menos 2 caracteres';
 
