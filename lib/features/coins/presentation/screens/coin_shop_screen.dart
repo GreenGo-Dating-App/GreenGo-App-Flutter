@@ -17,6 +17,8 @@ import '../../domain/entities/coin_promotion.dart';
 import '../../domain/entities/coin_transaction.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../membership/domain/entities/membership.dart' as membership_entity;
+import '../../../membership/presentation/widgets/coupon_code_widget.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
@@ -546,7 +548,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 onPressed: () => Navigator.of(context).pop(),
               )
             : null,
-        actions: const [],
+        actions: [
+          IconButton(
+            tooltip: AppLocalizations.of(context)!.couponRedeemButton,
+            icon: const Icon(Icons.card_giftcard, color: AppColors.richGold),
+            onPressed: _openCouponSheet,
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48),
           child: _buildTabBar(),
@@ -570,6 +578,80 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return '${(coins / 1000).toStringAsFixed(1)}K';
     }
     return coins.toString();
+  }
+
+  /// Maps the shop's local SubscriptionTier enum to the membership domain
+  /// MembershipTier so the CouponCodeWidget can render the current tier.
+  membership_entity.MembershipTier _toMembershipTier(SubscriptionTier t) {
+    switch (t) {
+      case SubscriptionTier.silver:
+        return membership_entity.MembershipTier.silver;
+      case SubscriptionTier.gold:
+        return membership_entity.MembershipTier.gold;
+      case SubscriptionTier.platinum:
+        return membership_entity.MembershipTier.platinum;
+      case SubscriptionTier.basic:
+      default:
+        return membership_entity.MembershipTier.free;
+    }
+  }
+
+  /// Opens a bottom sheet that hosts the CouponCodeWidget.
+  /// On successful redemption, refreshes the profile + coin balance so the
+  /// shop reflects the new entitlement without a manual reload.
+  void _openCouponSheet() {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (sheetContext) {
+        return Padding(
+          padding: EdgeInsets.only(
+            bottom: MediaQuery.of(sheetContext).viewInsets.bottom,
+          ),
+          child: Container(
+            decoration: const BoxDecoration(
+              color: AppColors.backgroundDark,
+              borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            ),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: AppColors.divider,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                CouponCodeWidget(
+                  userId: widget.userId,
+                  currentTier: _toMembershipTier(_currentTier),
+                  membershipEndDate: _membershipEndDate,
+                  onRedemptionSuccess: () {
+                    // Refresh profile (membership badge) and coin balance.
+                    try {
+                      context.read<ProfileBloc>().add(
+                        ProfileLoadRequested(userId: widget.userId),
+                      );
+                    } catch (_) {
+                      // ProfileBloc may not be in scope — non-fatal.
+                    }
+                    try {
+                      context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+                    } catch (_) {}
+                    _loadCurrentTierFromFirestore();
+                  },
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
   }
 
   Widget _buildTabBar() {
