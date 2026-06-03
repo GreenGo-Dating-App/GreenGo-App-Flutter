@@ -3549,5 +3549,13 @@
   "onboardingExitMessage": "Você será desconectado. Você pode terminar de configurar seu perfil no próximo login.",
   "onboardingExitConfirm": "Sair",
   "onboardingExitCancel": "Cancelar",
-  "loginEmailOrNickname": "E-mail / Apelido"
+  "loginEmailOrNickname": "E-mail / Apelido",
+  "paymentVerifying": "Verificando seu pagamento...",
+  "paymentSuccess": "Pagamento bem-sucedido!",
+  "paymentSuccessMessage": "Sua compra foi creditada na sua conta.",
+  "paymentPending": "Processando pagamento",
+  "paymentPendingMessage": "Seu pagamento está sendo processado. Pode levar alguns minutos para aparecer.",
+  "paymentCancelled": "Pagamento cancelado",
+  "paymentCancelledMessage": "Seu pagamento foi cancelado. Nenhuma cobrança foi feita.",
+  "continueToApp": "Continuar"
 }

@@ -10464,4 +10464,31 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get loginEmailOrNickname => 'E-Mail / Spitzname';
+
+  @override
+  String get paymentVerifying => 'Zahlung wird überprüft...';
+
+  @override
+  String get paymentSuccess => 'Zahlung erfolgreich!';
+
+  @override
+  String get paymentSuccessMessage =>
+      'Dein Kauf wurde deinem Konto gutgeschrieben.';
+
+  @override
+  String get paymentPending => 'Zahlung wird verarbeitet';
+
+  @override
+  String get paymentPendingMessage =>
+      'Deine Zahlung wird verarbeitet. Es kann einige Minuten dauern, bis sie erscheint.';
+
+  @override
+  String get paymentCancelled => 'Zahlung abgebrochen';
+
+  @override
+  String get paymentCancelledMessage =>
+      'Deine Zahlung wurde abgebrochen. Es wurden keine Kosten berechnet.';
+
+  @override
+  String get continueToApp => 'Weiter';
 }

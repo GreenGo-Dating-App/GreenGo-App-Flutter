@@ -18407,6 +18407,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Email / Nickname'**
   String get loginEmailOrNickname;
+
+  /// No description provided for @paymentVerifying.
+  ///
+  /// In en, this message translates to:
+  /// **'Verifying your payment...'**
+  String get paymentVerifying;
+
+  /// No description provided for @paymentSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Successful!'**
+  String get paymentSuccess;
+
+  /// No description provided for @paymentSuccessMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your purchase has been credited to your account.'**
+  String get paymentSuccessMessage;
+
+  /// No description provided for @paymentPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Processing'**
+  String get paymentPending;
+
+  /// No description provided for @paymentPendingMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your payment is being processed. It may take a few minutes to appear.'**
+  String get paymentPendingMessage;
+
+  /// No description provided for @paymentCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Cancelled'**
+  String get paymentCancelled;
+
+  /// No description provided for @paymentCancelledMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your payment was cancelled. No charges were made.'**
+  String get paymentCancelledMessage;
+
+  /// No description provided for @continueToApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueToApp;
 }
 
 class _AppLocalizationsDelegate

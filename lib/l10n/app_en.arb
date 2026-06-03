@@ -4982,5 +4982,13 @@
   "onboardingExitMessage": "You'll be signed out. You can finish setting up your profile next time you log in.",
   "onboardingExitConfirm": "Sign Out",
   "onboardingExitCancel": "Cancel",
-  "loginEmailOrNickname": "Email / Nickname"
+  "loginEmailOrNickname": "Email / Nickname",
+  "paymentVerifying": "Verifying your payment...",
+  "paymentSuccess": "Payment Successful!",
+  "paymentSuccessMessage": "Your purchase has been credited to your account.",
+  "paymentPending": "Payment Processing",
+  "paymentPendingMessage": "Your payment is being processed. It may take a few minutes to appear.",
+  "paymentCancelled": "Payment Cancelled",
+  "paymentCancelledMessage": "Your payment was cancelled. No charges were made.",
+  "continueToApp": "Continue"
 }

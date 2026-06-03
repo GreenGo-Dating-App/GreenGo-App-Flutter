@@ -10455,4 +10455,31 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get loginEmailOrNickname => 'Email / Nickname';
+
+  @override
+  String get paymentVerifying => 'Verifica del pagamento in corso...';
+
+  @override
+  String get paymentSuccess => 'Pagamento riuscito!';
+
+  @override
+  String get paymentSuccessMessage =>
+      'Il tuo acquisto è stato accreditato sul tuo account.';
+
+  @override
+  String get paymentPending => 'Elaborazione del pagamento';
+
+  @override
+  String get paymentPendingMessage =>
+      'Il pagamento è in elaborazione. Potrebbero volerci alcuni minuti.';
+
+  @override
+  String get paymentCancelled => 'Pagamento annullato';
+
+  @override
+  String get paymentCancelledMessage =>
+      'Il pagamento è stato annullato. Nessun addebito effettuato.';
+
+  @override
+  String get continueToApp => 'Continua';
 }

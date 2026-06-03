@@ -10434,6 +10434,33 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get loginEmailOrNickname => 'Email / Alcunha';
+
+  @override
+  String get paymentVerifying => 'A verificar o seu pagamento...';
+
+  @override
+  String get paymentSuccess => 'Pagamento bem-sucedido!';
+
+  @override
+  String get paymentSuccessMessage =>
+      'A sua compra foi creditada na sua conta.';
+
+  @override
+  String get paymentPending => 'A processar pagamento';
+
+  @override
+  String get paymentPendingMessage =>
+      'O seu pagamento está a ser processado. Pode demorar alguns minutos a aparecer.';
+
+  @override
+  String get paymentCancelled => 'Pagamento cancelado';
+
+  @override
+  String get paymentCancelledMessage =>
+      'O seu pagamento foi cancelado. Não foram efetuadas cobranças.';
+
+  @override
+  String get continueToApp => 'Continuar';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -20569,4 +20596,30 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get loginEmailOrNickname => 'E-mail / Apelido';
+
+  @override
+  String get paymentVerifying => 'Verificando seu pagamento...';
+
+  @override
+  String get paymentSuccess => 'Pagamento bem-sucedido!';
+
+  @override
+  String get paymentSuccessMessage => 'Sua compra foi creditada na sua conta.';
+
+  @override
+  String get paymentPending => 'Processando pagamento';
+
+  @override
+  String get paymentPendingMessage =>
+      'Seu pagamento está sendo processado. Pode levar alguns minutos para aparecer.';
+
+  @override
+  String get paymentCancelled => 'Pagamento cancelado';
+
+  @override
+  String get paymentCancelledMessage =>
+      'Seu pagamento foi cancelado. Nenhuma cobrança foi feita.';
+
+  @override
+  String get continueToApp => 'Continuar';
 }

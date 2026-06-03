@@ -3547,5 +3547,13 @@
   "onboardingExitMessage": "Vous serez déconnecté. Vous pourrez terminer la configuration de votre profil à votre prochaine connexion.",
   "onboardingExitConfirm": "Se déconnecter",
   "onboardingExitCancel": "Annuler",
-  "loginEmailOrNickname": "E-mail / Pseudo"
+  "loginEmailOrNickname": "E-mail / Pseudo",
+  "paymentVerifying": "Vérification de votre paiement...",
+  "paymentSuccess": "Paiement réussi !",
+  "paymentSuccessMessage": "Votre achat a été crédité sur votre compte.",
+  "paymentPending": "Traitement du paiement",
+  "paymentPendingMessage": "Votre paiement est en cours de traitement. Cela peut prendre quelques minutes.",
+  "paymentCancelled": "Paiement annulé",
+  "paymentCancelledMessage": "Votre paiement a été annulé. Aucun frais n'a été prélevé.",
+  "continueToApp": "Continuer"
 }

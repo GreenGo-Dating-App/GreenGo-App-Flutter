@@ -3547,5 +3547,13 @@
   "onboardingExitMessage": "Se cerrará tu sesión. Podrás terminar de configurar tu perfil la próxima vez que inicies sesión.",
   "onboardingExitConfirm": "Cerrar sesión",
   "onboardingExitCancel": "Cancelar",
-  "loginEmailOrNickname": "Correo / Apodo"
+  "loginEmailOrNickname": "Correo / Apodo",
+  "paymentVerifying": "Verificando tu pago...",
+  "paymentSuccess": "¡Pago exitoso!",
+  "paymentSuccessMessage": "Tu compra ha sido acreditada a tu cuenta.",
+  "paymentPending": "Procesando pago",
+  "paymentPendingMessage": "Tu pago se está procesando. Puede tardar unos minutos en aparecer.",
+  "paymentCancelled": "Pago cancelado",
+  "paymentCancelledMessage": "Tu pago fue cancelado. No se realizaron cargos.",
+  "continueToApp": "Continuar"
 }
