@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/services/presence_service.dart';
+import '../../../../core/services/app_sound_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -565,6 +566,9 @@ class _ChatScreenState extends State<ChatScreen> {
     } else {
       _chatBloc.add(ChatMessageSent(content: content));
     }
+
+    // Play the "message sent" sound effect.
+    AppSoundService().play(AppSound.messageSent);
 
     // Track XP for learning gamification
     _trackMessageXp(content);

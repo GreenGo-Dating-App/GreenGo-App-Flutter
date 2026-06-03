@@ -443,8 +443,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Badges",
@@ -3032,10 +3036,20 @@
   "membershipDurationLabel": "Duration (days)",
   "membershipEnterCouponHint": "Enter coupon code",
   "couponRedeemTitle": "Redeem Coupon Code",
+  "couponApplyButton": "Apply",
+  "couponAppliedSuccess": "Coupon Applied",
+  "couponNotValid": "Coupon not Valid",
+  "freeBaseWeekInfo": "No coupon needed — you still get 1 week of Base membership free!",
   "couponRedeemSubtitle": "Enter your code to upgrade your membership or get free coins",
   "couponRedeemButton": "Redeem Coupon",
   "couponRedeemedSuccess": "Redeemed: {grantSummary}",
-  "@couponRedeemedSuccess": { "placeholders": { "grantSummary": { "type": "String" } } },
+  "@couponRedeemedSuccess": {
+    "placeholders": {
+      "grantSummary": {
+        "type": "String"
+      }
+    }
+  },
   "couponErrorInvalid": "This coupon code is not valid",
   "couponErrorExpired": "This coupon has expired",
   "couponErrorMaxUsesReached": "This coupon has reached its usage limit",
@@ -3043,6 +3057,8 @@
   "couponErrorAlreadyRedeemed": "You have already used this coupon",
   "couponErrorDisabled": "This coupon is no longer active",
   "couponErrorGeneric": "Could not redeem coupon. Please try again.",
+  "registerCouponLabel": "Coupon code (optional)",
+  "registerCouponHint": "Enter a coupon code",
   "welcomeGrantTitle": "Welcome to GreenGo!",
   "welcomeGrantDismiss": "Got it",
   "membershipEquivalentMonthly": "Equivalent to {price}/month",
@@ -3073,7 +3089,6 @@
   "membershipReadReceipts": "Read Receipts",
   "membershipRequired": "Membership Required",
   "membershipRequiredDescription": "You need to be a member of GreenGo to perform this action.",
-  "membershipExtendTitle": "Extend Your Membership",
   "membershipExtendDescription": "Your base membership is active. Purchase another year to extend your expiration date.",
   "membershipRewinds": "Rewinds",
   "membershipSavePercent": "SAVE {percent}%",
@@ -4784,7 +4799,6 @@
   "achievementBadges": "Achievement Badges",
   "achievementBadgesSubtitle": "Tap to select which badges to display on your profile (max 5)",
   "noBadgesYet": "Unlock achievements to earn badges!",
-
   "guideTitle": "How GreenGo Works",
   "guideSwipeTitle": "Swiping Profiles",
   "guideSwipeItem1": "Swipe right to Connect with someone, swipe left to Nope.",
@@ -4900,7 +4914,6 @@
   "membershipTrialCta": "Start 7-Day Free Trial",
   "membershipTrialFooter": "Cancel anytime during trial. No charge until day 8.",
   "membershipTrialBadge": "FREE FOR 7 DAYS",
-
   "globeMyNetwork": "My Network",
   "globeYou": "You",
   "globeConnections": "Connections",
@@ -4951,7 +4964,6 @@
       }
     }
   },
-
   "discoverabilityExact": "Exact",
   "discoverabilityExactDesc": "Pin at your exact location (<1km)",
   "discoverabilityApproximate": "Approximate",
@@ -4965,5 +4977,10 @@
   "discoverabilityChangedExact": "Location set to exact",
   "discoverabilityChangedApproximate": "Location set to approximate",
   "discoverabilityChangedCountry": "Location set to country level",
-  "discoverabilityChangedHidden": "You are now hidden from the map"
+  "discoverabilityChangedHidden": "You are now hidden from the map",
+  "onboardingExitTitle": "Exit registration?",
+  "onboardingExitMessage": "You'll be signed out. You can finish setting up your profile next time you log in.",
+  "onboardingExitConfirm": "Sign Out",
+  "onboardingExitCancel": "Cancel",
+  "loginEmailOrNickname": "Email / Nickname"
 }

@@ -433,8 +433,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Badges",
@@ -1166,6 +1170,11 @@
   "correctAnswer": "Correct !",
   "couldNotOpenLink": "Impossible d'ouvrir le lien",
   "createAccount": "Créer un Compte",
+  "couponRedeemTitle": "Utiliser un code promo",
+  "couponApplyButton": "Appliquer",
+  "couponAppliedSuccess": "Coupon appliqué",
+  "couponNotValid": "Coupon non valide",
+  "freeBaseWeekInfo": "Pas de coupon ? 1 semaine de membre Base offerte !",
   "culturalCategory": "Culturel",
   "culturalExchangeBeFirstTip": "Soyez le premier à partager un conseil culturel !",
   "culturalExchangeCategory": "Catégorie",
@@ -2138,7 +2147,7 @@
   "membershipEquivalentMonthly": "Équivalent à {price}/mois",
   "membershipErrorLoadingData": "Erreur lors du chargement des données",
   "membershipExpires": "Expire le : {date}",
-  "membershipExtendTitle": "Prolonger votre abonnement",
+  "membershipExtendTitle": "Prolonger votre adhésion",
   "membershipFeatureComparison": "Comparaison des fonctionnalités",
   "membershipGeneric": "Abonnement",
   "membershipGold": "Gold",
@@ -2163,7 +2172,6 @@
   "membershipReadReceipts": "Accusés de lecture",
   "membershipRequired": "Adhésion requise",
   "membershipRequiredDescription": "Vous devez être membre de GreenGo pour effectuer cette action.",
-  "membershipExtendTitle": "Prolonger votre adhésion",
   "membershipExtendDescription": "Votre adhésion de base est active. Achetez une année supplémentaire pour prolonger votre date d'expiration.",
   "membershipRewinds": "Retours en arrière",
   "membershipSavePercent": "ÉCONOMISEZ {percent}%",
@@ -3534,5 +3542,10 @@
   "membershipTrialFeature3": "Accès complet à toutes les fonctionnalités",
   "membershipTrialCta": "Démarrer l'essai de 7 jours",
   "membershipTrialFooter": "Annulez à tout moment pendant l'essai. Aucun frais avant le jour 8.",
-  "membershipTrialBadge": "GRATUIT PENDANT 7 JOURS"
+  "membershipTrialBadge": "GRATUIT PENDANT 7 JOURS",
+  "onboardingExitTitle": "Quitter l'inscription ?",
+  "onboardingExitMessage": "Vous serez déconnecté. Vous pourrez terminer la configuration de votre profil à votre prochaine connexion.",
+  "onboardingExitConfirm": "Se déconnecter",
+  "onboardingExitCancel": "Annuler",
+  "loginEmailOrNickname": "E-mail / Pseudo"
 }

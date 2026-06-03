@@ -339,14 +339,33 @@ class _MembershipScreenState extends State<MembershipScreen> {
               ],
             ),
             const SizedBox(height: 16),
-            Text(
-              '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: tierColor,
+            if (isBase)
+              // Highlighted price for the entry-level Base membership.
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                decoration: BoxDecoration(
+                  color: tierColor.withOpacity(0.18),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: tierColor, width: 2),
+                ),
+                child: Text(
+                  '${product.price}  ${l10n.plusTaxes} / ${l10n.membershipOneYear}',
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    color: tierColor,
+                  ),
+                ),
+              )
+            else
+              Text(
+                '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: tierColor,
+                ),
               ),
-            ),
             const SizedBox(height: 8),
             if (isYearly)
               Text(

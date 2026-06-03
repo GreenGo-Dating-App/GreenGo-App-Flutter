@@ -4,12 +4,7 @@
  * Point 166: BigQuery integration for financial analytics
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DATASET_ID = exports.bigquery = exports.taxRecordsSchema = exports.abTestResultsSchema = exports.refundEventsSchema = exports.userCohortsSchema = exports.subscriptionEventsSchema = exports.revenueEventsSchema = void 0;
-exports.initializeBigQuery = initializeBigQuery;
-exports.insertRevenueEvent = insertRevenueEvent;
-exports.insertSubscriptionEvent = insertSubscriptionEvent;
-exports.insertRefundEvent = insertRefundEvent;
-exports.upsertUserCohort = upsertUserCohort;
+exports.DATASET_ID = exports.bigquery = exports.upsertUserCohort = exports.insertRefundEvent = exports.insertSubscriptionEvent = exports.insertRevenueEvent = exports.initializeBigQuery = exports.taxRecordsSchema = exports.abTestResultsSchema = exports.refundEventsSchema = exports.userCohortsSchema = exports.subscriptionEventsSchema = exports.revenueEventsSchema = void 0;
 const bigquery_1 = require("@google-cloud/bigquery");
 const bigquery = new bigquery_1.BigQuery();
 exports.bigquery = bigquery;
@@ -187,6 +182,7 @@ async function initializeBigQuery() {
         throw error;
     }
 }
+exports.initializeBigQuery = initializeBigQuery;
 /**
  * Insert revenue event into BigQuery
  */
@@ -217,6 +213,7 @@ async function insertRevenueEvent(data) {
     };
     await table.insert([row]);
 }
+exports.insertRevenueEvent = insertRevenueEvent;
 /**
  * Insert subscription event into BigQuery
  */
@@ -243,6 +240,7 @@ async function insertSubscriptionEvent(data) {
     };
     await table.insert([row]);
 }
+exports.insertSubscriptionEvent = insertSubscriptionEvent;
 /**
  * Insert refund event into BigQuery
  */
@@ -268,6 +266,7 @@ async function insertRefundEvent(data) {
     };
     await table.insert([row]);
 }
+exports.insertRefundEvent = insertRefundEvent;
 /**
  * Update user cohort data
  */
@@ -338,4 +337,5 @@ async function upsertUserCohort(data) {
         },
     });
 }
+exports.upsertUserCohort = upsertUserCohort;
 //# sourceMappingURL=bigQuerySetup.js.map

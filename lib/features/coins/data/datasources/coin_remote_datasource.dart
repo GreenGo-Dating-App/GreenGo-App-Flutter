@@ -863,12 +863,16 @@ class CoinRemoteDataSource {
         throw Exception('Not authorized to decline this gift');
       }
 
-      // Refund sender (inline, no nested transaction)
+      // Refund sender (inline, no nested transaction).
+      // relatedUserId is the declining receiver (== current user) so the
+      // ledger write satisfies the coinTransactions security rule, which
+      // requires the writer to be a party to the entry.
       await _creditInTransaction(
         transaction,
         userId: gift.senderId,
         amount: gift.amount,
         reason: CoinTransactionReason.refund,
+        relatedUserId: gift.receiverId,
         metadata: {'reason': 'gift_declined'},
       );
 

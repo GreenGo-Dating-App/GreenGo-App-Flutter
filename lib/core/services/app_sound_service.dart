@@ -1,39 +1,92 @@
+import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart';
+
 /// Centralized sound management for the GreenGo app.
 ///
-/// Sounds are currently disabled. All play methods are no-ops.
+/// Plays short asset-based sound effects. Only sounds whose asset files exist
+/// under `assets/sounds/` will play; any others fail silently (caught).
 class AppSoundService {
   static final AppSoundService _instance = AppSoundService._();
   factory AppSoundService() => _instance;
   AppSoundService._();
 
-  bool _soundEnabled = false;
-  double _volume = 0.7;
+  final AudioPlayer _player = AudioPlayer(playerId: 'greengo_sfx');
+  bool _soundEnabled = true;
+  double _volume = 0.85;
+  bool _ready = false;
 
-  Future<void> initialize() async {}
-  Future<void> play(AppSound sound) async {}
-  Future<void> playWithVolume(AppSound sound, double volume) async {}
+  Future<void> initialize() async {
+    try {
+      await _player.setReleaseMode(ReleaseMode.stop);
+      await _player.setPlayerMode(PlayerMode.lowLatency);
+      _ready = true;
+    } catch (e) {
+      if (kDebugMode) debugPrint('[Sound] init failed: $e');
+    }
+  }
+
+  Future<void> play(AppSound sound) async {
+    if (!_soundEnabled) return;
+    final vol = (_volume * sound.volumeMultiplier).clamp(0.0, 1.0);
+    await _playPath(sound.assetPath, vol);
+  }
+
+  Future<void> playWithVolume(AppSound sound, double volume) async {
+    if (!_soundEnabled) return;
+    await _playPath(sound.assetPath, volume.clamp(0.0, 1.0));
+  }
+
+  Future<void> _playPath(String assetPath, double volume) async {
+    try {
+      if (!_ready) await initialize();
+      // Restart so rapid effects (e.g. quick messages) retrigger cleanly.
+      await _player.stop();
+      await _player.play(AssetSource(assetPath), volume: volume);
+    } catch (e) {
+      // Missing asset / platform issue — never let SFX break the app.
+      if (kDebugMode) debugPrint('[Sound] play $assetPath failed: $e');
+    }
+  }
+
   Future<void> setSoundEnabled(bool enabled) async {
     _soundEnabled = enabled;
   }
+
   Future<void> setVolume(double volume) async {
     _volume = volume.clamp(0.0, 1.0);
   }
+
   bool get isSoundEnabled => _soundEnabled;
   double get volume => _volume;
+
   Future<void> playBgMusic(AppSound sound) async {}
   Future<void> stopBgMusic() async {}
-  Future<void> stopAll() async {}
-  Future<void> dispose() async {}
+  Future<void> stopAll() async {
+    try {
+      await _player.stop();
+    } catch (_) {}
+  }
+
+  Future<void> dispose() async {
+    try {
+      await _player.dispose();
+    } catch (_) {}
+  }
 }
 
-/// All sounds used across the GreenGo app.
+/// All sounds used across the GreenGo app. Only the three chat/match sounds
+/// below have asset files; the rest are kept for call-site compatibility and
+/// no-op (missing asset, caught) until their files are added.
 enum AppSound {
+  // Chat — the active, shipped sounds:
   newMessage('sounds/new_message.mp3', category: SoundCategory.chat),
-  messageSent('sounds/message_sent.mp3', category: SoundCategory.chat),
-  messageReceived('sounds/message_received.mp3', category: SoundCategory.chat),
+  newMessageFirstTime('sounds/new_message_first.mp3', category: SoundCategory.chat),
+  messageSent('sounds/sent_message.mp3', category: SoundCategory.chat),
+  messageReceived('sounds/new_message.mp3', category: SoundCategory.chat),
   typingIndicator('sounds/typing.mp3', category: SoundCategory.chat, volumeMultiplier: 0.3),
   newMatch('sounds/new_match.mp3', category: SoundCategory.matching),
-  superLike('sounds/super_like.mp3', category: SoundCategory.matching),
+  // Super-like reuses the "first message from a user" sound per product spec.
+  superLike('sounds/new_message_first.mp3', category: SoundCategory.matching),
   swipeRight('sounds/swipe_right.mp3', category: SoundCategory.matching, volumeMultiplier: 0.5),
   swipeLeft('sounds/swipe_left.mp3', category: SoundCategory.matching, volumeMultiplier: 0.4),
   cardFlip('sounds/card_flip.mp3', category: SoundCategory.matching, volumeMultiplier: 0.5),

@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/social_links.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
 
 enum OnboardingStep {
   basicInfo, // Step 1: Name, DOB, Gender
@@ -182,10 +183,14 @@ class OnboardingInProgress extends OnboardingState {
 class OnboardingComplete extends OnboardingState {
   final Profile profile;
 
-  const OnboardingComplete({required this.profile});
+  /// Outcome of redeeming a coupon code typed during registration, if any.
+  /// Null when the coupon flow wasn't exercised.
+  final SignupCouponOutcome? couponOutcome;
+
+  const OnboardingComplete({required this.profile, this.couponOutcome});
 
   @override
-  List<Object?> get props => [profile];
+  List<Object?> get props => [profile, couponOutcome];
 }
 
 class OnboardingError extends OnboardingState {

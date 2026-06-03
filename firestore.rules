@@ -150,19 +150,18 @@ service cloud.firestore {
     // COIN BALANCES COLLECTION
     // ============================================================================
     match /coin_balances/{userId} {
-      allow read: if isSignedIn();
-      allow create, update: if isOwner(userId);
-      allow delete: if false;
+      // Legacy/unused collection — the app uses `coinBalances` (camelCase).
+      // Backend functions use the Admin SDK (bypasses rules); deny all client
+      // access to reduce attack surface.
+      allow read, write: if false;
     }
 
     // ============================================================================
     // COIN TRANSACTIONS COLLECTION
     // ============================================================================
     match /coin_transactions/{transactionId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update: if false;
-      allow delete: if false;
+      // Legacy/unused collection — the app uses `coinTransactions` (camelCase).
+      allow read, write: if false;
     }
 
     // ============================================================================
@@ -325,7 +324,14 @@ service cloud.firestore {
     match /coinBalances/{userId} {
       allow read: if isSignedIn();
       allow create: if isSignedIn();
-      allow update: if isOwner(userId) || isSignedIn();
+      // Owner may update their own balance (spend / earn / welcome coins).
+      // A non-owner (e.g. gifting or refunding coins to another user) may ONLY
+      // INCREASE totalCoins — never decrement or zero out someone else's
+      // balance. Full balance integrity needs server-side mutations; this
+      // closes the worst case (draining/zeroing another user).
+      allow update: if isOwner(userId)
+        || (isSignedIn()
+            && request.resource.data.totalCoins > resource.data.totalCoins);
       allow delete: if false;
     }
 
@@ -344,7 +350,12 @@ service cloud.firestore {
     // ============================================================================
     match /coinTransactions/{transactionId} {
       allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      // A user may only create ledger entries they're a party to — their own
+      // (userId) or as the counterparty of a gift/refund (relatedUserId).
+      // Blocks forging arbitrary third-party ledger entries.
+      allow create: if isSignedIn()
+        && (request.resource.data.userId == request.auth.uid
+            || request.resource.data.get('relatedUserId', '') == request.auth.uid);
       allow update: if false;
       allow delete: if false;
     }

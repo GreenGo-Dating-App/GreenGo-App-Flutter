@@ -19,35 +19,15 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleModeratePhoto = handleModeratePhoto;
-exports.handleModerateText = handleModerateText;
-exports.handleDetectSpam = handleDetectSpam;
-exports.handleDetectFakeProfile = handleDetectFakeProfile;
-exports.handleDetectScam = handleDetectScam;
-exports.handleSubmitReport = handleSubmitReport;
-exports.handleReviewReport = handleReviewReport;
-exports.handleSubmitAppeal = handleSubmitAppeal;
-exports.handleBlockUser = handleBlockUser;
-exports.handleUnblockUser = handleUnblockUser;
-exports.handleGetBlockList = handleGetBlockList;
+exports.handleGetBlockList = exports.handleUnblockUser = exports.handleBlockUser = exports.handleSubmitAppeal = exports.handleReviewReport = exports.handleSubmitReport = exports.handleDetectScam = exports.handleDetectFakeProfile = exports.handleDetectSpam = exports.handleModerateText = exports.handleModeratePhoto = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const vision_1 = require("@google-cloud/vision");
 const language_1 = require("@google-cloud/language");
@@ -141,6 +121,7 @@ async function handleModeratePhoto(params) {
         scores,
     };
 }
+exports.handleModeratePhoto = handleModeratePhoto;
 async function handleModerateText(params) {
     var _a;
     const { text, userId, requestingUid, context = 'message' } = params;
@@ -223,6 +204,7 @@ async function handleModerateText(params) {
         toxicityScore,
     };
 }
+exports.handleModerateText = handleModerateText;
 async function handleDetectSpam(params) {
     const { content, userId, type } = params;
     if (!content) {
@@ -289,6 +271,7 @@ async function handleDetectSpam(params) {
         indicators,
     };
 }
+exports.handleDetectSpam = handleDetectSpam;
 async function handleDetectFakeProfile(params) {
     const { userId } = params;
     if (!userId) {
@@ -353,6 +336,7 @@ async function handleDetectFakeProfile(params) {
         indicators,
     };
 }
+exports.handleDetectFakeProfile = handleDetectFakeProfile;
 async function handleDetectScam(params) {
     const { conversationId, messageContent } = params;
     if (!messageContent) {
@@ -436,6 +420,7 @@ async function handleDetectScam(params) {
         indicators,
     };
 }
+exports.handleDetectScam = handleDetectScam;
 async function handleSubmitReport(params) {
     const { reporterId, reportedUserId, reason, description, reportedContentId } = params;
     if (!reportedUserId || !reason || !description) {
@@ -467,6 +452,7 @@ async function handleSubmitReport(params) {
         message: 'Report submitted successfully',
     };
 }
+exports.handleSubmitReport = handleSubmitReport;
 async function handleReviewReport(params) {
     const { adminUid, reportId, action, notes } = params;
     if (!reportId || !action) {
@@ -531,6 +517,7 @@ async function handleReviewReport(params) {
         message: `Report ${action}ed successfully`,
     };
 }
+exports.handleReviewReport = handleReviewReport;
 async function handleSubmitAppeal(params) {
     const { userId, reportId, suspensionId, appealText } = params;
     if (!appealText) {
@@ -551,6 +538,7 @@ async function handleSubmitAppeal(params) {
         message: 'Appeal submitted for review',
     };
 }
+exports.handleSubmitAppeal = handleSubmitAppeal;
 async function handleBlockUser(params) {
     const { userId, blockedUserId } = params;
     if (!blockedUserId) {
@@ -566,6 +554,7 @@ async function handleBlockUser(params) {
         message: 'User blocked successfully',
     };
 }
+exports.handleBlockUser = handleBlockUser;
 async function handleUnblockUser(params) {
     const { userId, blockedUserId } = params;
     if (!blockedUserId) {
@@ -580,6 +569,7 @@ async function handleUnblockUser(params) {
         message: 'User unblocked successfully',
     };
 }
+exports.handleUnblockUser = handleUnblockUser;
 async function handleGetBlockList(params) {
     const { userId } = params;
     const userDoc = await utils_1.db.collection('users').doc(userId).get();
@@ -591,4 +581,5 @@ async function handleGetBlockList(params) {
         total: blockedUsers.length,
     };
 }
+exports.handleGetBlockList = handleGetBlockList;
 //# sourceMappingURL=handlers.js.map

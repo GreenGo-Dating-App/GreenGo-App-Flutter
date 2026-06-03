@@ -29,29 +29,18 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.verifyGooglePlayPurchase = verifyGooglePlayPurchase;
-exports.verifyAppStorePurchase = verifyAppStorePurchase;
+exports.getGooglePlaySubscriptionExpiry = exports.decodeAppStoreNotification = exports.verifyAppStorePurchase = exports.verifyGooglePlayPurchase = void 0;
 const googleapis_1 = require("googleapis");
 const axios_1 = __importDefault(require("axios"));
 const utils_1 = require("./utils");
@@ -113,6 +102,7 @@ async function verifyGooglePlayPurchase(productId, token) {
         return { verified: false, error: msg };
     }
 }
+exports.verifyGooglePlayPurchase = verifyGooglePlayPurchase;
 // ========== APP STORE (iOS) VERIFICATION ==========
 let cachedAppleRootCerts = null;
 /**
@@ -189,6 +179,11 @@ async function verifyAppStorePurchase(signedTransaction, expectedProductId, appA
         return {
             verified: true,
             transactionId: String(transaction.transactionId),
+            originalTransactionId: transaction.originalTransactionId
+                ? String(transaction.originalTransactionId)
+                : undefined,
+            // For auto-renewable subscriptions StoreKit includes expiresDate (epoch ms).
+            expiresDateMs: typeof transaction.expiresDate === 'number' ? transaction.expiresDate : undefined,
         };
     }
     catch (error) {
@@ -196,4 +191,80 @@ async function verifyAppStorePurchase(signedTransaction, expectedProductId, appA
         return { verified: false, error: (error === null || error === void 0 ? void 0 : error.message) || 'App Store verification failed' };
     }
 }
+exports.verifyAppStorePurchase = verifyAppStorePurchase;
+/**
+ * Verify + decode an App Store Server Notification V2 `signedPayload` and the
+ * transaction it carries. Tries Production then Sandbox (TestFlight/sandbox).
+ * Reuses the same Apple root certs / library as purchase verification.
+ */
+async function decodeAppStoreNotification(signedPayload, appAppleId) {
+    const { SignedDataVerifier, Environment } = await Promise.resolve().then(() => __importStar(require('@apple/app-store-server-library')));
+    const rootCerts = await getAppleRootCerts();
+    const tryEnv = async (env) => {
+        var _a, _b;
+        const verifier = new SignedDataVerifier(rootCerts, true, env, BUNDLE_ID, appAppleId);
+        const payload = await verifier.verifyAndDecodeNotification(signedPayload);
+        let tx;
+        const signedTx = (_a = payload === null || payload === void 0 ? void 0 : payload.data) === null || _a === void 0 ? void 0 : _a.signedTransactionInfo;
+        if (signedTx) {
+            tx = await verifier.verifyAndDecodeTransaction(signedTx);
+        }
+        return {
+            notificationType: String((_b = payload === null || payload === void 0 ? void 0 : payload.notificationType) !== null && _b !== void 0 ? _b : ''),
+            subtype: (payload === null || payload === void 0 ? void 0 : payload.subtype) ? String(payload.subtype) : undefined,
+            productId: (tx === null || tx === void 0 ? void 0 : tx.productId) ? String(tx.productId) : undefined,
+            originalTransactionId: (tx === null || tx === void 0 ? void 0 : tx.originalTransactionId)
+                ? String(tx.originalTransactionId)
+                : undefined,
+            expiresDateMs: typeof (tx === null || tx === void 0 ? void 0 : tx.expiresDate) === 'number' ? tx.expiresDate : undefined,
+        };
+    };
+    try {
+        return await tryEnv(Environment.PRODUCTION);
+    }
+    catch (_a) {
+        return await tryEnv(Environment.SANDBOX);
+    }
+}
+exports.decodeAppStoreNotification = decodeAppStoreNotification;
+/**
+ * Look up the current expiry of a Google Play subscription by its purchase
+ * token (used to extend entitlement on a renewal RTDN). Returns the latest
+ * line-item expiry. Falls back gracefully if the API isn't configured.
+ */
+async function getGooglePlaySubscriptionExpiry(token) {
+    var _a;
+    try {
+        const publisher = await getAndroidPublisher();
+        const res = await publisher.purchases.subscriptionsv2.get({
+            packageName: PACKAGE_NAME,
+            token,
+        });
+        const lineItems = ((_a = res.data) === null || _a === void 0 ? void 0 : _a.lineItems) || [];
+        let latestMs;
+        let productId;
+        for (const li of lineItems) {
+            if (li.expiryTime) {
+                const ms = new Date(li.expiryTime).getTime();
+                if (!latestMs || ms > latestMs) {
+                    latestMs = ms;
+                    productId = li.productId || undefined;
+                }
+            }
+        }
+        return { expiresDateMs: latestMs, productId };
+    }
+    catch (error) {
+        const msg = (error === null || error === void 0 ? void 0 : error.message) || String(error);
+        const isApiError = msg.includes('403') || msg.includes('401') || msg.includes('not enabled') ||
+            msg.includes('PERMISSION_DENIED') || msg.includes('accessNotConfigured');
+        if (isApiError) {
+            (0, utils_1.logError)('Google Play subscriptions API not configured for RTDN handling:', msg);
+            return { apiUnavailable: true };
+        }
+        (0, utils_1.logError)('Google Play subscription lookup error:', msg);
+        return { error: msg };
+    }
+}
+exports.getGooglePlaySubscriptionExpiry = getGooglePlaySubscriptionExpiry;
 //# sourceMappingURL=purchase_verification.js.map

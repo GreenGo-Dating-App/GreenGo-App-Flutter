@@ -48,7 +48,7 @@ interface SetCouponDisabledRequest {
 }
 
 export const upsertCoupon = onCall<UpsertCouponRequest>(
-  { memory: '256MiB', timeoutSeconds: 30 },
+  { memory: '512MiB', timeoutSeconds: 30 },
   async (request: CallableRequest<UpsertCouponRequest>) => {
     try {
       const adminUid = await verifyAdminAuth(request.auth);
@@ -159,7 +159,7 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
 );
 
 export const listCoupons = onCall<ListCouponsRequest>(
-  { memory: '256MiB', timeoutSeconds: 30 },
+  { memory: '512MiB', timeoutSeconds: 30 },
   async (request: CallableRequest<ListCouponsRequest>) => {
     try {
       await verifyAdminAuth(request.auth);
@@ -205,7 +205,7 @@ export const listCoupons = onCall<ListCouponsRequest>(
 );
 
 export const getCouponRedemptions = onCall<GetCouponRedemptionsRequest>(
-  { memory: '256MiB', timeoutSeconds: 30 },
+  { memory: '512MiB', timeoutSeconds: 30 },
   async (request: CallableRequest<GetCouponRedemptionsRequest>) => {
     try {
       await verifyAdminAuth(request.auth);
@@ -238,7 +238,7 @@ export const getCouponRedemptions = onCall<GetCouponRedemptionsRequest>(
 );
 
 export const setCouponDisabled = onCall<SetCouponDisabledRequest>(
-  { memory: '128MiB', timeoutSeconds: 15 },
+  { memory: '512MiB', timeoutSeconds: 15 },
   async (request: CallableRequest<SetCouponDisabledRequest>) => {
     try {
       const adminUid = await verifyAdminAuth(request.auth);

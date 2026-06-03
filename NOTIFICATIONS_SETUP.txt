@@ -1,0 +1,137 @@
+==============================================================================
+GREENGO — PUSH NOTIFICATION SETUP (iOS + Android)
+Deployment: Codemagic (App Store Connect API + automatic signing)
+==============================================================================
+
+KNOWN VALUES (prefilled)
+------------------------------------------------------------------------------
+Firebase project ID ......... greengo-chat
+FCM Sender ID ............... 666632803027
+iOS/Android Bundle ID ....... com.greengochat.greengochatapp
+Apple Team ID ............... 9885DQB8RF        (App ID Prefix)
+Apple account ............... Mauro Tommasi
+APNs Auth Key ID ............ __________________  (fill in at step 2)
+APNs .p8 file ............... __________________  (downloaded once at step 2)
+
+Firebase init uses DefaultFirebaseOptions (firebase_options.dart), so
+GoogleService-Info.plist is NOT strictly required for FCM. Codemagic still
+injects it from a base64 env var (harmless).
+
+==============================================================================
+WHAT IS ALREADY DONE (do NOT redo)
+==============================================================================
+ANDROID
+  [x] google-services.json present (injected in CI from $GOOGLE_SERVICES_JSON)
+  [x] com.google.gms.google-services plugin applied (4.3.15)
+  [x] Permissions: INTERNET, POST_NOTIFICATIONS (Android 13+), VIBRATE
+  [x] Default channel meta-data: greengo_notifications + notification icon
+  [x] Notification channel created in code (PushNotificationService)
+
+iOS
+  [x] Info.plist -> UIBackgroundModes: remote-notification
+  [x] Runner.entitlements (aps-environment=development)
+  [x] RunnerRelease.entitlements (aps-environment=production)
+      ...both wired in Runner.xcodeproj/project.pbxproj
+  [x] Podfile platform :ios, '15.5'
+
+CODE
+  [x] firebase_core ^3, firebase_messaging ^15, flutter_local_notifications ^18
+  [x] PushNotificationService: permission request, token save to
+      profiles/{uid}.fcmToken and users/{uid}.fcmToken, foreground = no banner
+      (WhatsApp style) + in-app sound, tap routing, token-refresh persistence
+  [x] Backend Cloud Functions send via Admin SDK (FCM v1) — no server key needed
+
+CODEMAGIC (codemagic.yaml)
+  [x] App Store Connect integration "Codemagic" + automatic signing
+  [x] fetch-signing-files --type IOS_APP_STORE --create + xcode-project use-profiles
+  [x] Injects GoogleService-Info.plist, firebase_options.dart, google-services.json
+      from the firebase_credentials env group
+
+==============================================================================
+WHAT YOU MUST DO  (only iOS — Android needs nothing)
+==============================================================================
+
+STEP 1 — Enable Push on the App ID  (Apple Developer)
+------------------------------------------------------------------------------
+  Certificates, Identifiers & Profiles -> Identifiers ->
+    com.greengochat.greengochatapp (GreenGo)
+  - Tick the "Enable" checkbox next to "Push Notifications".
+  - Do NOT click Configure / Broadcast Capability.
+  - Do NOT create an APNs SSL certificate (Certificates (0)) — use the .p8 key.
+  - Click Save.
+
+STEP 2 — Create the APNs Authentication Key (.p8)  (Apple Developer)
+------------------------------------------------------------------------------
+  Certificates, Identifiers & Profiles -> Keys -> (+) Register a New Key
+  - Name: "GreenGo APNs"
+  - Tick: "Apple Push Notifications service (APNs)"
+  - Continue -> Register -> DOWNLOAD the .p8 file (ONE-TIME download; store safely)
+  - Write down the KEY ID (10 chars) shown on the key page.
+  NOTE: one .p8 works for BOTH development (sandbox) and production, forever.
+
+STEP 3 — Upload the APNs key to Firebase  (Firebase Console)
+------------------------------------------------------------------------------
+  Firebase Console -> project greengo-chat -> Project Settings ->
+    Cloud Messaging tab -> "Apple app configuration" section ->
+    APNs Authentication Key -> Upload
+  - Upload the .p8 file
+  - Key ID:  (from step 2)
+  - Team ID: 9885DQB8RF
+  - Save
+  (Also confirm an iOS app with bundle com.greengochat.greengochatapp is
+   registered under Project Settings -> General. Add it if missing.)
+
+STEP 4 — Refresh the provisioning profile so it includes Push  (one-time)
+------------------------------------------------------------------------------
+  Codemagic's fetch-signing-files REUSES an existing App Store profile if one
+  exists — a stale profile created before Step 1 will NOT contain the push
+  entitlement, causing a signing/validation failure or silent no-push.
+  - Apple Developer -> Profiles -> delete the existing App Store distribution
+    profile for com.greengochat.greengochatapp (if any).
+  - Re-run the Codemagic "iOS TestFlight Beta" workflow; it recreates a fresh
+    profile that now includes Push Notifications.
+
+STEP 5 — Verify Codemagic env group  (Codemagic, one-time check)
+------------------------------------------------------------------------------
+  Codemagic -> app settings -> Environment variables, group "firebase_credentials":
+    GOOGLE_SERVICE_INFO_PLIST  = base64 of ios GoogleService-Info.plist  (optional but referenced)
+    FIREBASE_OPTIONS_DART      = base64 of lib/firebase_options.dart
+    GOOGLE_SERVICES_JSON       = base64 of android google-services.json
+    GOOGLE_MAPS_API_KEY        = maps key
+    CERTIFICATE_PRIVATE_KEY    = signing key
+  No NEW variable is needed for push — the APNs key lives in Firebase, not here.
+
+==============================================================================
+TESTING  (via TestFlight — your pipeline auto-submits)
+==============================================================================
+  1. Run "iOS TestFlight Beta" workflow; install the build from TestFlight on a
+     REAL iPhone (push does NOT work on the iOS Simulator).
+  2. Log in -> accept the notification permission prompt.
+  3. Confirm Firestore: profiles/{uid}.fcmToken is written.
+  4. Firebase Console -> Cloud Messaging -> "Send test message" -> paste the
+     token -> Send:
+        - app backgrounded/closed -> OS notification appears
+        - app foregrounded -> NO banner, in-app sound + list update (by design)
+  5. Two-account end-to-end: send a chat message/like -> push arrives on the
+     other (backgrounded) device; tapping it deep-links to the chat.
+  NOTE: TestFlight builds use the PRODUCTION APNs environment (matches
+  RunnerRelease.entitlements). The .p8 key serves both, so nothing to switch.
+
+==============================================================================
+TROUBLESHOOTING
+==============================================================================
+  - Build error "provisioning profile doesn't include
+    com.apple.developer.aps-environment"
+      -> Step 1 (App ID Push) not done, OR Step 4 (stale profile) not refreshed.
+  - iOS device gets an FCM token but no notification arrives
+      -> Step 2/3: the APNs .p8 was not uploaded to Firebase (most common).
+  - Android notification not shown when app killed
+      -> ensure payload has a `notification` block (it does) and the device is
+         not battery-optimizing the app.
+  - The second package "com.greengo.dating" inside google-services.json is a
+    stale entry and is harmless (applicationId is com.greengochat.greengochatapp).
+
+==============================================================================
+SUMMARY: the only manual work is iOS Steps 1-4 (Apple Developer + Firebase).
+Android and all app/CI code are already configured.
+==============================================================================

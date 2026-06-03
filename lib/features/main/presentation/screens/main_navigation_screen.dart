@@ -17,7 +17,7 @@ import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
-import '../../../../core/widgets/loading_indicator.dart';
+import '../../../../core/widgets/home_skeleton.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -33,6 +33,7 @@ import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/domain/entities/coin_balance.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import '../../../profile/presentation/screens/edit_profile_screen.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
@@ -158,6 +159,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Set current user ID for push notification navigation
     PushNotificationService.currentUserId = widget.userId;
+
+    // Safety net: redeem a signup coupon that was captured at registration but
+    // not yet applied (e.g. app killed right after onboarding completed). Safe
+    // here because a completed profile guarantees welcome coins already exist,
+    // so the coupon's coin batch appends rather than clobbers. No-ops when
+    // nothing is pending.
+    SignupCouponService().tryRedeemPending(widget.userId);
 
     // Initialize access control service and load countdown dates from Firestore
     _accessControlService = AccessControlService();
@@ -1137,16 +1145,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   @override
   Widget build(BuildContext context) {
-    // Show loading while checking profile
+    // Show a skeleton of the home shell while resolving profile/access — feels
+    // far faster than a blank spinner, especially right after signup.
     if (_isCheckingProfile) {
-      return Scaffold(
-        backgroundColor: AppColors.backgroundDark,
-        body: const Center(
-          child: LoadingIndicator(
-            color: AppColors.richGold,
-          ),
-        ),
-      );
+      return const HomeSkeleton();
     }
 
     // Check if countdown is active (access date in the future)

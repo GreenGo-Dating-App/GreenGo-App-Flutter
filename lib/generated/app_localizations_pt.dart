@@ -6131,7 +6131,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get membershipEnterCouponHint => 'Introduz o código de cupão';
 
   @override
-  String get couponRedeemTitle => 'Redeem Coupon Code';
+  String get couponRedeemTitle => 'Resgatar código de cupom';
+
+  @override
+  String get couponApplyButton => 'Aplicar';
+
+  @override
+  String get couponAppliedSuccess => 'Cupom aplicado';
+
+  @override
+  String get couponNotValid => 'Cupom inválido';
+
+  @override
+  String get freeBaseWeekInfo =>
+      'Sem cupom? Você ganha 1 semana de Base grátis!';
 
   @override
   String get couponRedeemSubtitle =>
@@ -6167,6 +6180,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get couponErrorGeneric => 'Could not redeem coupon. Please try again.';
+
+  @override
+  String get registerCouponLabel => 'Código de cupom (opcional)';
+
+  @override
+  String get registerCouponHint => 'Insira um código de cupom';
 
   @override
   String get welcomeGrantTitle => 'Welcome to GreenGo!';
@@ -10399,6 +10418,22 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get discoverabilityChangedHidden => 'You are now hidden from the map';
+
+  @override
+  String get onboardingExitTitle => 'Sair do registo?';
+
+  @override
+  String get onboardingExitMessage =>
+      'A sua sessão será terminada. Pode concluir a configuração do perfil no próximo início de sessão.';
+
+  @override
+  String get onboardingExitConfirm => 'Terminar sessão';
+
+  @override
+  String get onboardingExitCancel => 'Cancelar';
+
+  @override
+  String get loginEmailOrNickname => 'Email / Alcunha';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -16534,6 +16569,28 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get membershipEnterCouponHint => 'Insira o código do cupom';
 
   @override
+  String get couponRedeemTitle => 'Resgatar código de cupom';
+
+  @override
+  String get couponApplyButton => 'Aplicar';
+
+  @override
+  String get couponAppliedSuccess => 'Cupom aplicado';
+
+  @override
+  String get couponNotValid => 'Cupom inválido';
+
+  @override
+  String get freeBaseWeekInfo =>
+      'Sem cupom? Você ganha 1 semana de Base grátis!';
+
+  @override
+  String get registerCouponLabel => 'Código de cupom (opcional)';
+
+  @override
+  String get registerCouponHint => 'Insira um código de cupom';
+
+  @override
   String membershipEquivalentMonthly(Object price) {
     return 'Equivalente a $price/mês';
   }
@@ -20496,4 +20553,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';
+
+  @override
+  String get onboardingExitTitle => 'Sair do cadastro?';
+
+  @override
+  String get onboardingExitMessage =>
+      'Você será desconectado. Você pode terminar de configurar seu perfil no próximo login.';
+
+  @override
+  String get onboardingExitConfirm => 'Sair';
+
+  @override
+  String get onboardingExitCancel => 'Cancelar';
+
+  @override
+  String get loginEmailOrNickname => 'E-mail / Apelido';
 }

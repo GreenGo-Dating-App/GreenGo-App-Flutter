@@ -20,34 +20,25 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleExpiredMemberships = exports.checkExpiringSubscriptions = exports.verifyPurchase = void 0;
+exports.handleExpiredMemberships = exports.checkExpiringSubscriptions = exports.verifyPurchase = exports.PRODUCT_CONFIG = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
 const purchase_verification_1 = require("../shared/purchase_verification");
+const grants_1 = require("../shared/grants");
 // Product ID → tier and duration mapping
-const PRODUCT_CONFIG = {
-    'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
+exports.PRODUCT_CONFIG = {
+    'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 4.99 },
     '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
     '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
     '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
@@ -55,19 +46,11 @@ const PRODUCT_CONFIG = {
     '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
     '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
 };
-// Tier hierarchy for upgrade logic
-const TIER_RANK = {
-    'BASIC': 0,
-    'SILVER': 1,
-    'GOLD': 2,
-    'PLATINUM': 3,
-};
 // ========== 0. VERIFY PURCHASE (Callable) ==========
 exports.verifyPurchase = (0, https_1.onCall)({
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 30,
 }, async (request) => {
-    var _a;
     // Verify user is authenticated
     if (!request.auth) {
         throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
@@ -84,8 +67,11 @@ exports.verifyPurchase = (0, https_1.onCall)({
     const userEmail = request.auth.token.email || null;
     try {
         (0, utils_1.logInfo)(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
+        // iOS auto-renewable subscription IDs are prefixed `subscription_`;
+        // normalize to the shared catalog key (Android uses the unprefixed IDs).
+        const catalogId = productId.replace(/^subscription_/, '');
         // Look up product configuration
-        const config = PRODUCT_CONFIG[productId];
+        const config = exports.PRODUCT_CONFIG[catalogId];
         if (!config) {
             throw new https_1.HttpsError('invalid-argument', `Unknown product ID: ${productId}`);
         }
@@ -94,6 +80,10 @@ exports.verifyPurchase = (0, https_1.onCall)({
         const durationMs = durationDays * 24 * 60 * 60 * 1000;
         // Verify purchase with the respective store
         let verified = false;
+        // Subscription identity used to match later renewal/expiry notifications.
+        // iOS: Apple's originalTransactionId. Android: the subscription purchase token.
+        let originalTransactionId;
+        let storeExpiryMs;
         if (platform === 'android') {
             // verificationData = Google Play purchase token (from serverVerificationData)
             if (!verificationData) {
@@ -101,6 +91,7 @@ exports.verifyPurchase = (0, https_1.onCall)({
             }
             const result = await (0, purchase_verification_1.verifyGooglePlayPurchase)(productId, verificationData);
             verified = result.verified;
+            originalTransactionId = verificationData; // Play RTDN matches on purchaseToken
             if (!verified) {
                 (0, utils_1.logError)(`Google Play verification failed for ${productId}: ${result.error}`);
             }
@@ -113,6 +104,8 @@ exports.verifyPurchase = (0, https_1.onCall)({
             const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
             const result = await (0, purchase_verification_1.verifyAppStorePurchase)(verificationData, productId, appAppleId);
             verified = result.verified;
+            originalTransactionId = result.originalTransactionId;
+            storeExpiryMs = result.expiresDateMs;
             if (!verified) {
                 (0, utils_1.logError)(`App Store verification failed for ${productId}: ${result.error}`);
             }
@@ -149,36 +142,17 @@ exports.verifyPurchase = (0, https_1.onCall)({
             }
         }
         const now = admin.firestore.Timestamp.now();
-        const nowDate = now.toDate();
-        // ── Compute new end date with extension/upgrade logic ──
+        // ── Compute new end date with extension/upgrade logic + apply grants via shared helpers ──
         const profileDoc = await utils_1.db.collection('profiles').doc(userId).get();
         const profileData = profileDoc.data() || {};
         const currentTier = profileData.membershipTier || 'BASIC';
         const currentEndTimestamp = profileData.membershipEndDate;
         const currentEndDate = currentEndTimestamp ? currentEndTimestamp.toDate() : null;
-        let newEndDate;
-        let effectiveTier = tier;
-        if (currentEndDate && currentEndDate > nowDate) {
-            // User has active membership
-            const purchasedRank = TIER_RANK[tier] || 0;
-            const currentRank = TIER_RANK[currentTier] || 0;
-            if (purchasedRank >= currentRank) {
-                // Same or higher tier: user gets higher tier immediately, end date extends from current end
-                newEndDate = new Date(currentEndDate.getTime() + durationMs);
-                effectiveTier = tier;
-            }
-            else {
-                // Lower tier: keep higher tier, extend end date from current end
-                newEndDate = new Date(currentEndDate.getTime() + durationMs);
-                effectiveTier = currentTier;
-            }
-        }
-        else {
-            // No active membership or expired — start from now
-            newEndDate = new Date(nowDate.getTime() + durationMs);
-        }
-        const endTimestamp = admin.firestore.Timestamp.fromDate(newEndDate);
+        const { effectiveTier, newEndDate, newEndTimestamp: endTimestamp } = (0, grants_1.computeMembershipExtension)(currentTier, currentEndDate, tier, durationMs, now.toDate());
         // ── Create subscription record ──
+        // `originalTransactionId` is the stable key store renewal/expiry
+        // notifications carry (Apple originalTransactionId / Play purchaseToken),
+        // so the webhook handlers can find this user when the store auto-renews.
         await utils_1.db.collection('subscriptions').add({
             userId: userId,
             userEmail: userEmail,
@@ -191,9 +165,14 @@ exports.verifyPurchase = (0, https_1.onCall)({
             purchaseToken: purchaseToken,
             transactionId: purchaseToken,
             orderId: purchaseToken,
+            originalTransactionId: originalTransactionId || purchaseToken,
+            storeExpiryDate: storeExpiryMs
+                ? admin.firestore.Timestamp.fromMillis(storeExpiryMs)
+                : null,
             productId: productId,
             price: config.price,
             currency: 'USD',
+            autoRenewing: true,
             createdAt: now,
         });
         // ── Create purchase record ──
@@ -214,51 +193,24 @@ exports.verifyPurchase = (0, https_1.onCall)({
             verifiedAt: now,
             verificationMethod: 'cloud_function',
         });
-        // ── Update profile with membership info ──
-        const profileUpdate = {
+        // ── Update profile + users docs (tier extension) ──
+        await utils_1.db.collection('profiles').doc(userId).update({
             membershipTier: effectiveTier,
             membershipEndDate: endTimestamp,
             membershipStartDate: now,
             updatedAt: now,
-        };
-        // For base membership, also set the baseMembership fields used by app gates
-        if (productId === 'greengo_base_membership') {
-            profileUpdate.hasBaseMembership = true;
-            profileUpdate.baseMembershipEndDate = endTimestamp;
-        }
-        await utils_1.db.collection('profiles').doc(userId).update(profileUpdate);
+        });
         await utils_1.db.collection('users').doc(userId).update({
             subscriptionTier: effectiveTier,
             membershipEndDate: endTimestamp,
             updatedAt: now,
         });
-        // ── Grant 500 coins for base membership ──
+        // ── Apply base membership flag + 500 coin welcome bonus for the base product ──
         let coinsGranted = 0;
-        if (productId === 'greengo_base_membership') {
-            const balanceRef = utils_1.db.collection('coinBalances').doc(userId);
-            const balanceDoc = await balanceRef.get();
-            if (balanceDoc.exists) {
-                const currentTotal = ((_a = balanceDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
-                await balanceRef.update({ totalCoins: currentTotal + 500 });
-            }
-            else {
-                await balanceRef.set({
-                    userId: userId,
-                    totalCoins: 500,
-                    spentCoins: 0,
-                    lastUpdated: now,
-                });
-            }
-            await balanceRef.collection('coinBatches').add({
-                amount: 500,
-                remainingCoins: 500,
-                source: 'membership_bonus',
-                reason: 'Base membership welcome bonus',
-                createdAt: now,
-                expiresAt: endTimestamp,
-            });
+        if (catalogId === 'greengo_base_membership') {
+            await (0, grants_1.grantBaseMembership)(userId, durationMs);
+            await (0, grants_1.grantCoins)(userId, 500, 'membership_bonus', 'Base membership welcome bonus', { productId });
             coinsGranted = 500;
-            (0, utils_1.logInfo)(`Granted 500 bonus coins to user ${userId}`);
         }
         (0, utils_1.logInfo)(`Membership purchase verified for user ${userId}: tier=${effectiveTier}, endDate=${newEndDate.toISOString()}, coins=${coinsGranted}`);
         return {
@@ -280,7 +232,7 @@ exports.verifyPurchase = (0, https_1.onCall)({
 exports.checkExpiringSubscriptions = (0, scheduler_1.onSchedule)({
     schedule: '0 9 * * *', // Daily at 9 AM UTC
     timeZone: 'UTC',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 300,
 }, async () => {
     var _a;
@@ -326,7 +278,7 @@ exports.checkExpiringSubscriptions = (0, scheduler_1.onSchedule)({
 exports.handleExpiredMemberships = (0, scheduler_1.onSchedule)({
     schedule: '0 * * * *', // Every hour
     timeZone: 'UTC',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
 }, async () => {
     (0, utils_1.logInfo)('Checking for expired memberships');

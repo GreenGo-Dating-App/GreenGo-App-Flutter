@@ -112,7 +112,10 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         return;
       }
 
-            const productIds = {
+      // Membership product IDs. iOS auto-renewable subscriptions use a
+      // `subscription_` prefix (the old consumable IDs can't be reused as
+      // subscriptions in App Store Connect); Android keeps the original IDs.
+      const baseProductIds = [
         'greengo_base_membership',
         '1_month_silver',
         '1_month_gold',
@@ -120,7 +123,10 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         '1_year_silver',
         '1_year_gold',
         '1_year_platinum_membership',
-      };
+      ];
+      final productIds = Platform.isIOS
+          ? baseProductIds.map((id) => 'subscription_$id').toSet()
+          : baseProductIds.toSet();
 
       final response = await inAppPurchase.queryProductDetails(productIds);
 
@@ -162,7 +168,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
 
     try {
       // Block purchasing a lower tier than the user's current active membership
-      if (_currentUserId != null && event.product.id != 'greengo_base_membership') {
+      if (_currentUserId != null && !event.product.id.endsWith('greengo_base_membership')) {
         try {
           final profileDoc = await FirebaseFirestore.instance
               .collection('profiles')
@@ -187,14 +193,17 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         }
       }
 
-      // All products are managed (in-app) products — use buyConsumable
+      // Memberships are auto-renewable subscriptions (App Store) / subscriptions
+      // (Google Play). The in_app_purchase plugin purchases both subscriptions
+      // and non-consumables via buyNonConsumable — NOT buyConsumable (which is
+      // only for consumable coin packs). Using buyConsumable on a subscription
+      // causes the store to treat it incorrectly and breaks renewal/restore.
       final purchaseParam = PurchaseParam(
         productDetails: event.product,
         applicationUserName: _currentUserId,
       );
-      final bool success = await inAppPurchase.buyConsumable(
+      final bool success = await inAppPurchase.buyNonConsumable(
         purchaseParam: purchaseParam,
-        autoConsume: false,
       );
 
       if (!success) {
@@ -296,7 +305,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         }
 
         // Grant 500 coins for base membership (write to coinBatches array field, not subcollection)
-        if (purchase.productID == 'greengo_base_membership' && userId != null) {
+        if (purchase.productID.endsWith('greengo_base_membership') && userId != null) {
           try {
             final now = DateTime.now();
             final balanceRef = FirebaseFirestore.instance

@@ -1,0 +1,147 @@
+===============================================================================
+GREENGO — AUTO-RENEWABLE SUBSCRIPTION SETUP (Apple + Google)
+What YOU must do in the consoles. The code is already done (see end).
+===============================================================================
+
+WHY: Memberships must be Auto-Renewable Subscriptions (they renew). Coin packs
+stay Consumable (unchanged). The app + backend code is updated; it only works
+once the store products are subscriptions and the renewal notifications point
+at our new endpoints.
+
+PRODUCT-ID SCHEME (important):
+  - iOS / Apple : auto-renewable subscription IDs are PREFIXED  subscription_<id>
+                  (the old consumable IDs cannot be reused as subscriptions).
+  - Android / Google : keep the ORIGINAL unprefixed IDs.
+  The app queries the right ID per platform and the backend normalizes the
+  `subscription_` prefix, so both map to the same tier/price internally.
+
+-------------------------------------------------------------------------------
+TABLE 1 — MEMBERSHIP SUBSCRIPTIONS (Auto-Renewable, both stores)
+-------------------------------------------------------------------------------
+| Reference name      | Tier     | Period  | Price(USD) | Apple product ID                        | Google product ID            | Type                |
+|---------------------|----------|---------|-----------|------------------------------------------|------------------------------|---------------------|
+| Base Membership     | BASE     | Yearly  |    4.99   | subscription_greengo_base_membership     | greengo_base_membership      | Auto-Renewable Sub  |
+| Silver Monthly      | SILVER   | Monthly |    9.99   | subscription_1_month_silver              | 1_month_silver               | Auto-Renewable Sub  |
+| Silver Yearly       | SILVER   | Yearly  |   99.90   | subscription_1_year_silver               | 1_year_silver                | Auto-Renewable Sub  |
+| Gold Monthly        | GOLD     | Monthly |   19.99   | subscription_1_month_gold                | 1_month_gold                 | Auto-Renewable Sub  |
+| Gold Yearly         | GOLD     | Yearly  |  199.90   | subscription_1_year_gold                 | 1_year_gold                  | Auto-Renewable Sub  |
+| Platinum Monthly    | PLATINUM | Monthly |   29.99   | subscription_1_month_platinum            | 1_month_platinum             | Auto-Renewable Sub  |
+| Platinum Yearly     | PLATINUM | Yearly  |  299.90   | subscription_1_year_platinum_membership  | 1_year_platinum_membership   | Auto-Renewable Sub  |
+
+Grouping:
+  Apple  -> Group "GreenGo VIP": Silver, Gold, Platinum (each with monthly+yearly).
+            Group "GreenGo Base": Base Membership (yearly). (Separate group so it
+            stacks independently of the VIP tier.)
+  Google -> One subscription per tier with monthly + yearly BASE PLANS;
+            Base = its own subscription (yearly base plan).
+
+-------------------------------------------------------------------------------
+TABLE 2 — COIN PACKS (Consumable — DO NOT CHANGE, same ID on both stores)
+-------------------------------------------------------------------------------
+| Reference name | Coins | Price(USD) | Product ID (Apple & Google) | Type       |
+|----------------|-------|-----------|------------------------------|------------|
+| 100 Coins      |   100 |    0.99   | greengo_coins_100            | Consumable |
+| 500 Coins      |   500 |    4.99   | greengo_coins_500            | Consumable |
+| 1000 Coins     |  1000 |    8.99   | greengo_coins_1000           | Consumable |
+| 5000 Coins     |  5000 |   39.99   | greengo_coins_5000           | Consumable |
+
+-------------------------------------------------------------------------------
+TABLE 3 — STORE NOTIFICATION ENDPOINTS (set after we deploy the functions)
+-------------------------------------------------------------------------------
+| Provider | Mechanism                              | Point it to                                                                 |
+|----------|----------------------------------------|------------------------------------------------------------------------------|
+| Apple    | App Store Server Notifications V2      | https://us-central1-greengo-chat.cloudfunctions.net/appStoreNotificationsV2 |
+| Google   | Real-time Dev Notifications (Pub/Sub)  | topic projects/greengo-chat/topics/play-rtdn -> push to                      |
+|          |                                        | https://us-central1-greengo-chat.cloudfunctions.net/playStoreNotifications  |
+
+-------------------------------------------------------------------------------
+APPLE — App Store Connect  (https://appstoreconnect.apple.com)
+-------------------------------------------------------------------------------
+1. App Store Connect -> your app -> Subscriptions.
+
+2. Group "GreenGo VIP" — add as Auto-Renewable (use the Apple product IDs in Table 1):
+     SILVER   : subscription_1_month_silver , subscription_1_year_silver
+     GOLD     : subscription_1_month_gold   , subscription_1_year_gold
+     PLATINUM : subscription_1_month_platinum , subscription_1_year_platinum_membership
+   One group lets users upgrade/downgrade. Set ranking (Platinum highest);
+   add localized name, price (Table 1), and review screenshot.
+
+3. Group "GreenGo Base" — one Auto-Renewable yearly product:
+     subscription_greengo_base_membership   ($4.99/yr)
+
+4. In-App Purchase Key (backend needs it for the App Store Server API):
+   Users and Access -> Integrations -> In-App Purchase -> generate a key.
+   Send me the ISSUER ID, KEY ID, and the .p8 file (secret — share securely).
+
+5. APPLE_APP_ID: your app -> App Information -> "Apple ID" (numeric).
+   Send it; I set it in functions/.env (APPLE_APP_ID=...).
+
+6. App Store Server Notifications V2 (App Information -> App Store Server
+   Notifications): set Production AND Sandbox URL to the Apple endpoint in
+   Table 3. Version: Version 2.
+
+-------------------------------------------------------------------------------
+GOOGLE — Play Console  (https://play.google.com/console)
+-------------------------------------------------------------------------------
+1. Monetize -> Products -> Subscriptions. Create one subscription per tier with
+   monthly + yearly base plans, using the Google product IDs in Table 1
+   (1_month_silver, 1_year_silver, 1_month_gold, ...). Base = its own yearly sub.
+   If Play forces a different ID scheme, send me the final IDs and I'll update
+   PRODUCT_CONFIG (functions) + the app's ID list.
+
+2. API access / service account (needed to read renewal expiry):
+   Setup -> API access -> link the GCP project "greengo-chat". Grant the Firebase
+   service account (greengo-chat@appspot.gserviceaccount.com):
+     "View financial data, orders, and cancellation survey responses"
+     "Manage orders and subscriptions"
+   Confirm to me when done.
+
+3. Real-time Developer Notifications (RTDN):
+   Monetize -> Monetization setup -> RTDN. Topic: projects/greengo-chat/topics/play-rtdn
+   - Create that Pub/Sub topic if it doesn't exist.
+   - Grant google-play-developer-notifications@system.gserviceaccount.com the
+     "Pub/Sub Publisher" role on the topic.
+   - Create a PUSH subscription delivering to the Google endpoint in Table 3.
+   - Use "Send test notification" to verify.
+
+-------------------------------------------------------------------------------
+WHAT I (the code) ALREADY DID  — committed, NOT deployed yet
+-------------------------------------------------------------------------------
+APP (Flutter, ships when you build/submit a new app version):
+  - Memberships purchase via buyNonConsumable (correct for subscriptions);
+    coins still buyConsumable.
+  - On iOS the app queries the subscription_<id> products; Android uses the
+    originals. Base-membership detection is prefix-agnostic.
+
+BACKEND (functions/src):
+  - verifyPurchase normalizes the subscription_ prefix, stores the subscription
+    identity (originalTransactionId / purchaseToken) + store expiry so renewals
+    can be matched to the user.
+  - NEW endpoints:
+      appStoreNotificationsV2   (App Store Server Notifications V2)
+      playStoreNotifications    (Google Play RTDN via Pub/Sub push)
+    They verify the signed payload, find the user, and on renewal extend
+    membershipEndDate to the store's real expiry; on cancel keep access until
+    expiry; on refund/revoke/expire downgrade to BASIC. Base membership renews
+    independently of the VIP tier (never clobbers a higher active tier).
+
+-------------------------------------------------------------------------------
+DEPLOY ORDER (do NOT skip — wrong order breaks live purchases)
+-------------------------------------------------------------------------------
+1. You finish the Apple + Google product setup above (subscriptions exist).
+2. Send me: APPLE_APP_ID, Apple IAP key (issuer/keyId/.p8), confirmation the
+   Play service account + RTDN topic are set, and any changed product IDs.
+3. I set APPLE_APP_ID in functions/.env and deploy ONLY these functions
+   (targeted, never --force):
+       firebase deploy --only functions:verifyPurchase,functions:appStoreNotificationsV2,functions:playStoreNotifications
+4. You set the App Store + Play notification URLs (Table 3).
+5. You build & submit the new app version (so buyNonConsumable ships).
+6. TEST in sandbox: buy -> tier set; auto-renew (sandbox renews fast) ->
+   membershipEndDate extends; cancel -> access until expiry; refund -> downgrade.
+
+OPEN ITEMS / RECOMMENDATIONS
+  - Existing one-time "members": their membershipEndDate still works; they just
+    won't auto-renew until they buy the new subscription.
+  - I recommend moving the membership grant fully server-side (the client still
+    writes tier directly today) — same hardening class as the coin rules.
+===============================================================================
