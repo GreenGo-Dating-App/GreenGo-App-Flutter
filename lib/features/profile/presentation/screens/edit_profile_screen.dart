@@ -8,6 +8,7 @@ import 'package:get_it/get_it.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/settings_accordion.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
@@ -235,278 +236,235 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // Photos Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.photos,
-                    subtitle: AppLocalizations.of(context)!.profilePhotosCount(activeProfile.photoUrls.length),
-                    icon: Icons.photo_library,
-                    onTap: () => _navigateToPhotoManagement(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Nickname Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.nickname,
-                    subtitle: activeProfile.nickname != null
-                        ? '@${activeProfile.nickname}'
-                        : AppLocalizations.of(context)!.setYourUniqueNickname,
-                    icon: Icons.alternate_email,
-                    onTap: () => _navigateToEditNickname(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Basic Info Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.basicInformation,
-                    subtitle: '${activeProfile.displayName}, ${activeProfile.age}',
-                    icon: Icons.person,
-                    onTap: () => _navigateToEditBasicInfo(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // About Me Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.aboutMe,
-                    subtitle: _getAboutMeSubtitle(context, activeProfile),
-                    icon: Icons.edit_note,
-                    onTap: () => _navigateToEditBio(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Interests Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.interests,
-                    subtitle: AppLocalizations.of(context)!.profileInterestsCount(activeProfile.interests.length),
-                    icon: Icons.favorite,
-                    onTap: () => _navigateToEditInterests(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Location & Languages Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.locationAndLanguages,
-                    subtitle: activeProfile.location.displayAddress,
-                    icon: Icons.location_on,
-                    onTap: () => _navigateToEditLocation(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Voice Recording Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.voiceIntroduction,
-                    subtitle: activeProfile.voiceRecordingUrl != null
-                        ? AppLocalizations.of(context)!.voiceRecorded
-                        : AppLocalizations.of(context)!.noVoiceRecording,
-                    icon: Icons.mic,
-                    onTap: () => _navigateToEditVoice(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Social Links Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.socialProfiles,
-                    subtitle: _getSocialLinksSubtitle(context, activeProfile),
-                    icon: Icons.share,
-                    onTap: () => _navigateToEditSocialLinks(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // App Language Section
-                  Consumer<LanguageProvider>(
-                    builder: (context, languageProvider, child) {
-                      return EditSectionCard(
-                        title: AppLocalizations.of(context)!.appLanguage,
-                        subtitle: languageProvider.currentLanguageName,
-                        icon: Icons.language,
-                        onTap: () => _showLanguageDialog(context, languageProvider),
-                      );
-                    },
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Change Password Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.changePassword,
-                    subtitle: AppLocalizations.of(context)!.changePasswordSubtitle,
-                    icon: Icons.lock_outline,
-                    onTap: () => _navigateToChangePassword(context),
-                  ),
-
-                  const SizedBox(height: 32),
-                  const Divider(color: AppColors.divider),
-                  const SizedBox(height: 16),
-
-                  // Premium Features Section
-                  Text(
-                    AppLocalizations.of(context)!.profilePremiumFeatures,
-                    style: const TextStyle(
-                      color: AppColors.richGold,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Incognito Mode Toggle
-                  _IncognitoToggleCard(
-                    profile: activeProfile,
-                    onToggle: (enabled) => _toggleIncognito(context, activeProfile, enabled),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Globe Discoverability (3-tier)
-                  _GlobeDiscoverabilityCard(
-                    profile: activeProfile,
-                    onChanged: (level) =>
-                        _changeGlobeDiscoverability(context, activeProfile, level),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Traveler Mode Toggle
-                  _TravelerToggleCard(
-                    profile: activeProfile,
-                    onActivate: () => _activateTraveler(context, activeProfile),
-                    onDeactivate: () => _deactivateTraveler(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  // Boost Profile
-                  _BoostProfileCard(
-                    profile: activeProfile,
-                    onBoost: () => _activateBoost(context, activeProfile),
-                  ),
-
-                  const SizedBox(height: 32),
-                  const Divider(color: AppColors.divider),
-                  const SizedBox(height: 16),
-                  Text(
-                    AppLocalizations.of(context)!.helpAndSupport,
-                    style: const TextStyle(
-                      color: AppColors.richGold,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Support Section
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.supportCenter,
-                    subtitle: AppLocalizations.of(context)!.supportCenterSubtitle,
-                    icon: Icons.support_agent,
-                    onTap: () => _navigateToSupport(context, activeProfile),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Coin Shop
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.profileCoinShop,
-                    subtitle: AppLocalizations.of(context)!.profileCoinShopSubtitle,
-                    icon: Icons.monetization_on,
-                    onTap: () => _navigateToCoinShop(context, activeProfile),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Restart Discovery
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.profileRestartDiscovery,
-                    subtitle: AppLocalizations.of(context)!.profileRestartDiscoverySubtitle,
-                    icon: Icons.refresh,
-                    onTap: () => _showRestartDiscoveryDialog(context, activeProfile),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // Usage Stats
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.profileMyUsage,
-                    subtitle: AppLocalizations.of(context)!.profileMyUsageSubtitle,
-                    icon: Icons.bar_chart,
-                    onTap: () => _navigateToUsageStats(context, activeProfile),
-                  ),
-
-                  // Progress & Growth Section
-                  const SizedBox(height: 32),
-                  const Divider(color: AppColors.divider),
-                  const SizedBox(height: 16),
-                  Text(
-                    AppLocalizations.of(context)!.profileProgressGrowth,
-                    style: const TextStyle(
-                      color: AppColors.richGold,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.personalStatistics,
-                    subtitle: AppLocalizations.of(context)!.personalStatisticsSubtitle,
-                    icon: Icons.insights,
-                    onTap: () => _navigateToPersonalStats(context, activeProfile),
-                  ),
-                  const SizedBox(height: 16),
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.achievementsTitle,
-                    subtitle: AppLocalizations.of(context)!.achievementsSubtitle,
-                    icon: Icons.emoji_events,
-                    onTap: () => _navigateToAchievements(context, activeProfile),
-                  ),
-                  const SizedBox(height: 16),
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.dailyChallengesTitle,
-                    subtitle: AppLocalizations.of(context)!.dailyChallengesSubtitle,
-                    icon: Icons.today,
-                    onTap: () => _navigateToDailyChallenges(context, activeProfile),
-                  ),
-
-                  // Achievement Badges Section
-                  const SizedBox(height: 32),
-                  const Divider(color: AppColors.divider),
-                  const SizedBox(height: 16),
-                  _AchievementBadgesSection(userId: activeProfile.userId),
-
-                  // Admin Panel Section (only visible to admins)
-                  if (activeProfile.isAdmin) ...[
-                    const SizedBox(height: 32),
-                    const Divider(color: AppColors.divider),
-                    const SizedBox(height: 16),
-                    Text(
-                      AppLocalizations.of(context)!.admin,
-                      style: const TextStyle(
-                        color: AppColors.richGold,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                  // ── Edit Profile (expanded by default) ──
+                  SettingsAccordion(
+                    title: AppLocalizations.of(context)!.editProfile,
+                    icon: Icons.person_outline,
+                    initiallyExpanded: true,
+                    children: [
+                      // Photos Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.photos,
+                        subtitle: AppLocalizations.of(context)!.profilePhotosCount(activeProfile.photoUrls.length),
+                        icon: Icons.photo_library,
+                        onTap: () => _navigateToPhotoManagement(context, activeProfile),
                       ),
-                    ),
-                    const SizedBox(height: 16),
-                    EditSectionCard(
-                      title: AppLocalizations.of(context)!.verificationPanel,
-                      subtitle: AppLocalizations.of(context)!.reviewUserVerifications,
-                      icon: Icons.verified_user,
-                      onTap: () => _navigateToAdminVerification(context, activeProfile),
-                    ),
-                    const SizedBox(height: 16),
-                    EditSectionCard(
-                      title: AppLocalizations.of(context)!.reportsPanel,
-                      subtitle: AppLocalizations.of(context)!.reviewReportedMessages,
-                      icon: Icons.report,
-                      onTap: () => _navigateToAdminReports(context, activeProfile),
-                    ),
-                    const SizedBox(height: 16),
-                  ],
+                      const SizedBox(height: 16),
+                      // Nickname Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.nickname,
+                        subtitle: activeProfile.nickname != null
+                            ? '@${activeProfile.nickname}'
+                            : AppLocalizations.of(context)!.setYourUniqueNickname,
+                        icon: Icons.alternate_email,
+                        onTap: () => _navigateToEditNickname(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Basic Info Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.basicInformation,
+                        subtitle: '${activeProfile.displayName}, ${activeProfile.age}',
+                        icon: Icons.person,
+                        onTap: () => _navigateToEditBasicInfo(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // About Me Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.aboutMe,
+                        subtitle: _getAboutMeSubtitle(context, activeProfile),
+                        icon: Icons.edit_note,
+                        onTap: () => _navigateToEditBio(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Interests Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.interests,
+                        subtitle: AppLocalizations.of(context)!.profileInterestsCount(activeProfile.interests.length),
+                        icon: Icons.favorite,
+                        onTap: () => _navigateToEditInterests(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Location & Languages Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.locationAndLanguages,
+                        subtitle: activeProfile.location.displayAddress,
+                        icon: Icons.location_on,
+                        onTap: () => _navigateToEditLocation(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Voice Recording Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.voiceIntroduction,
+                        subtitle: activeProfile.voiceRecordingUrl != null
+                            ? AppLocalizations.of(context)!.voiceRecorded
+                            : AppLocalizations.of(context)!.noVoiceRecording,
+                        icon: Icons.mic,
+                        onTap: () => _navigateToEditVoice(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Social Links Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.socialProfiles,
+                        subtitle: _getSocialLinksSubtitle(context, activeProfile),
+                        icon: Icons.share,
+                        onTap: () => _navigateToEditSocialLinks(context, activeProfile),
+                      ),
+                    ],
+                  ),
 
-                  const SizedBox(height: 32),
+                  // ── Account & Settings ──
+                  SettingsAccordion(
+                    title: AppLocalizations.of(context)!.accountSettings,
+                    icon: Icons.settings,
+                    children: [
+                      // App Language Section
+                      Consumer<LanguageProvider>(
+                        builder: (context, languageProvider, child) {
+                          return EditSectionCard(
+                            title: AppLocalizations.of(context)!.appLanguage,
+                            subtitle: languageProvider.currentLanguageName,
+                            icon: Icons.language,
+                            onTap: () => _showLanguageDialog(context, languageProvider),
+                          );
+                        },
+                      ),
+                      const SizedBox(height: 16),
+                      // Change Password Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.changePassword,
+                        subtitle: AppLocalizations.of(context)!.changePasswordSubtitle,
+                        icon: Icons.lock_outline,
+                        onTap: () => _navigateToChangePassword(context),
+                      ),
+                    ],
+                  ),
+
+                  // ── Premium Features ──
+                  SettingsAccordion(
+                    title: AppLocalizations.of(context)!.profilePremiumFeatures,
+                    icon: Icons.workspace_premium,
+                    children: [
+                      // Incognito Mode Toggle
+                      _IncognitoToggleCard(
+                        profile: activeProfile,
+                        onToggle: (enabled) => _toggleIncognito(context, activeProfile, enabled),
+                      ),
+                      const SizedBox(height: 16),
+                      // Globe Discoverability (3-tier)
+                      _GlobeDiscoverabilityCard(
+                        profile: activeProfile,
+                        onChanged: (level) =>
+                            _changeGlobeDiscoverability(context, activeProfile, level),
+                      ),
+                      const SizedBox(height: 16),
+                      // Traveler Mode Toggle
+                      _TravelerToggleCard(
+                        profile: activeProfile,
+                        onActivate: () => _activateTraveler(context, activeProfile),
+                        onDeactivate: () => _deactivateTraveler(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Boost Profile
+                      _BoostProfileCard(
+                        profile: activeProfile,
+                        onBoost: () => _activateBoost(context, activeProfile),
+                      ),
+                    ],
+                  ),
+
+                  // ── Help & Support ──
+                  SettingsAccordion(
+                    title: AppLocalizations.of(context)!.helpAndSupport,
+                    icon: Icons.help_outline,
+                    children: [
+                      // Support Section
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.supportCenter,
+                        subtitle: AppLocalizations.of(context)!.supportCenterSubtitle,
+                        icon: Icons.support_agent,
+                        onTap: () => _navigateToSupport(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Coin Shop
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.profileCoinShop,
+                        subtitle: AppLocalizations.of(context)!.profileCoinShopSubtitle,
+                        icon: Icons.monetization_on,
+                        onTap: () => _navigateToCoinShop(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Restart Discovery
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.profileRestartDiscovery,
+                        subtitle: AppLocalizations.of(context)!.profileRestartDiscoverySubtitle,
+                        icon: Icons.refresh,
+                        onTap: () => _showRestartDiscoveryDialog(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Usage Stats
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.profileMyUsage,
+                        subtitle: AppLocalizations.of(context)!.profileMyUsageSubtitle,
+                        icon: Icons.bar_chart,
+                        onTap: () => _navigateToUsageStats(context, activeProfile),
+                      ),
+                    ],
+                  ),
+
+                  // ── Progress & Growth ──
+                  SettingsAccordion(
+                    title: AppLocalizations.of(context)!.profileProgressGrowth,
+                    icon: Icons.trending_up,
+                    children: [
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.personalStatistics,
+                        subtitle: AppLocalizations.of(context)!.personalStatisticsSubtitle,
+                        icon: Icons.insights,
+                        onTap: () => _navigateToPersonalStats(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.achievementsTitle,
+                        subtitle: AppLocalizations.of(context)!.achievementsSubtitle,
+                        icon: Icons.emoji_events,
+                        onTap: () => _navigateToAchievements(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.dailyChallengesTitle,
+                        subtitle: AppLocalizations.of(context)!.dailyChallengesSubtitle,
+                        icon: Icons.today,
+                        onTap: () => _navigateToDailyChallenges(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Achievement Badges
+                      _AchievementBadgesSection(userId: activeProfile.userId),
+                    ],
+                  ),
+
+                  // ── Admin (only visible to admins) ──
+                  if (activeProfile.isAdmin)
+                    SettingsAccordion(
+                      title: AppLocalizations.of(context)!.admin,
+                      icon: Icons.admin_panel_settings,
+                      children: [
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.verificationPanel,
+                          subtitle: AppLocalizations.of(context)!.reviewUserVerifications,
+                          icon: Icons.verified_user,
+                          onTap: () => _navigateToAdminVerification(context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.reportsPanel,
+                          subtitle: AppLocalizations.of(context)!.reviewReportedMessages,
+                          icon: Icons.report,
+                          onTap: () => _navigateToAdminReports(context, activeProfile),
+                        ),
+                      ],
+                    ),
+
+                  const SizedBox(height: 16),
 
                   // Base Membership Section
                   _buildBaseMembershipSection(context, activeProfile),

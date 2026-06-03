@@ -26,6 +26,10 @@ export interface VerificationResult {
   error?: string;
   /** True when the store API is unreachable / not configured (not an invalid purchase) */
   apiUnavailable?: boolean;
+  /** Subscription identity (used to match later renewal/expiry notifications to this user). */
+  originalTransactionId?: string;
+  /** Store-authoritative expiry for auto-renewable subscriptions, epoch ms. */
+  expiresDateMs?: number;
 }
 
 // ========== GOOGLE PLAY VERIFICATION ==========
@@ -209,9 +213,105 @@ export async function verifyAppStorePurchase(
     return {
       verified: true,
       transactionId: String(transaction.transactionId),
+      originalTransactionId: transaction.originalTransactionId
+        ? String(transaction.originalTransactionId)
+        : undefined,
+      // For auto-renewable subscriptions StoreKit includes expiresDate (epoch ms).
+      expiresDateMs:
+        typeof transaction.expiresDate === 'number' ? transaction.expiresDate : undefined,
     };
   } catch (error: any) {
     logError('App Store verification error:', error?.message || error);
     return { verified: false, error: error?.message || 'App Store verification failed' };
+  }
+}
+
+// ========== SUBSCRIPTION NOTIFICATIONS SUPPORT ==========
+
+export interface AppStoreNotificationInfo {
+  notificationType: string;
+  subtype?: string;
+  productId?: string;
+  originalTransactionId?: string;
+  /** Subscription expiry from the signed transaction, epoch ms. */
+  expiresDateMs?: number;
+}
+
+/**
+ * Verify + decode an App Store Server Notification V2 `signedPayload` and the
+ * transaction it carries. Tries Production then Sandbox (TestFlight/sandbox).
+ * Reuses the same Apple root certs / library as purchase verification.
+ */
+export async function decodeAppStoreNotification(
+  signedPayload: string,
+  appAppleId: number,
+): Promise<AppStoreNotificationInfo> {
+  const { SignedDataVerifier, Environment } = await import('@apple/app-store-server-library');
+  const rootCerts = await getAppleRootCerts();
+
+  const tryEnv = async (env: any): Promise<AppStoreNotificationInfo> => {
+    const verifier = new SignedDataVerifier(rootCerts, true, env, BUNDLE_ID, appAppleId);
+    const payload: any = await verifier.verifyAndDecodeNotification(signedPayload);
+    let tx: any;
+    const signedTx = payload?.data?.signedTransactionInfo;
+    if (signedTx) {
+      tx = await verifier.verifyAndDecodeTransaction(signedTx);
+    }
+    return {
+      notificationType: String(payload?.notificationType ?? ''),
+      subtype: payload?.subtype ? String(payload.subtype) : undefined,
+      productId: tx?.productId ? String(tx.productId) : undefined,
+      originalTransactionId: tx?.originalTransactionId
+        ? String(tx.originalTransactionId)
+        : undefined,
+      expiresDateMs: typeof tx?.expiresDate === 'number' ? tx.expiresDate : undefined,
+    };
+  };
+
+  try {
+    return await tryEnv(Environment.PRODUCTION);
+  } catch {
+    return await tryEnv(Environment.SANDBOX);
+  }
+}
+
+/**
+ * Look up the current expiry of a Google Play subscription by its purchase
+ * token (used to extend entitlement on a renewal RTDN). Returns the latest
+ * line-item expiry. Falls back gracefully if the API isn't configured.
+ */
+export async function getGooglePlaySubscriptionExpiry(
+  token: string,
+): Promise<{ expiresDateMs?: number; productId?: string; apiUnavailable?: boolean; error?: string }> {
+  try {
+    const publisher = await getAndroidPublisher();
+    const res: any = await publisher.purchases.subscriptionsv2.get({
+      packageName: PACKAGE_NAME,
+      token,
+    });
+    const lineItems: any[] = res.data?.lineItems || [];
+    let latestMs: number | undefined;
+    let productId: string | undefined;
+    for (const li of lineItems) {
+      if (li.expiryTime) {
+        const ms = new Date(li.expiryTime).getTime();
+        if (!latestMs || ms > latestMs) {
+          latestMs = ms;
+          productId = li.productId || undefined;
+        }
+      }
+    }
+    return { expiresDateMs: latestMs, productId };
+  } catch (error: any) {
+    const msg = error?.message || String(error);
+    const isApiError =
+      msg.includes('403') || msg.includes('401') || msg.includes('not enabled') ||
+      msg.includes('PERMISSION_DENIED') || msg.includes('accessNotConfigured');
+    if (isApiError) {
+      logError('Google Play subscriptions API not configured for RTDN handling:', msg);
+      return { apiUnavailable: true };
+    }
+    logError('Google Play subscription lookup error:', msg);
+    return { error: msg };
   }
 }

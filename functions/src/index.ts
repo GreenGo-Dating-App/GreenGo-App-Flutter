@@ -75,6 +75,13 @@ export {
   handleExpiredMemberships,
 } from './subscription/index';
 
+// Auto-renewable subscription server notifications (renewals/cancel/refund/expiry).
+// Inert until the store notification URLs are pointed at these endpoints.
+export {
+  appStoreNotificationsV2,
+  playStoreNotifications,
+} from './subscription/storeNotifications';
+
 // Coin Functions
 export {
   verifyGooglePlayCoinPurchase,
@@ -87,6 +94,7 @@ export {
 
 // Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';
+export { validateCoupon } from './coupons/validateCoupon';
 export {
   upsertCoupon,
   listCoupons,

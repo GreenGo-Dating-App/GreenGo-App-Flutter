@@ -21,8 +21,8 @@ import {
 } from '../shared/grants';
 
 // Product ID → tier and duration mapping
-const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: number; price: number }> = {
-  'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 9.99 },
+export const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: number; price: number }> = {
+  'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 4.99 },
   '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
   '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
   '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
@@ -35,7 +35,7 @@ const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: number; pri
 
 export const verifyPurchase = onCall(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 30,
   },
   async (request) => {
@@ -61,8 +61,12 @@ export const verifyPurchase = onCall(
     try {
       logInfo(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
 
+      // iOS auto-renewable subscription IDs are prefixed `subscription_`;
+      // normalize to the shared catalog key (Android uses the unprefixed IDs).
+      const catalogId = productId.replace(/^subscription_/, '');
+
       // Look up product configuration
-      const config = PRODUCT_CONFIG[productId];
+      const config = PRODUCT_CONFIG[catalogId];
       if (!config) {
         throw new HttpsError('invalid-argument', `Unknown product ID: ${productId}`);
       }
@@ -73,6 +77,10 @@ export const verifyPurchase = onCall(
 
       // Verify purchase with the respective store
       let verified = false;
+      // Subscription identity used to match later renewal/expiry notifications.
+      // iOS: Apple's originalTransactionId. Android: the subscription purchase token.
+      let originalTransactionId: string | undefined;
+      let storeExpiryMs: number | undefined;
 
       if (platform === 'android') {
         // verificationData = Google Play purchase token (from serverVerificationData)
@@ -81,6 +89,7 @@ export const verifyPurchase = onCall(
         }
         const result = await verifyGooglePlayPurchase(productId, verificationData);
         verified = result.verified;
+        originalTransactionId = verificationData; // Play RTDN matches on purchaseToken
         if (!verified) {
           logError(`Google Play verification failed for ${productId}: ${result.error}`);
         }
@@ -92,6 +101,8 @@ export const verifyPurchase = onCall(
         const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
         const result = await verifyAppStorePurchase(verificationData, productId, appAppleId);
         verified = result.verified;
+        originalTransactionId = result.originalTransactionId;
+        storeExpiryMs = result.expiresDateMs;
         if (!verified) {
           logError(`App Store verification failed for ${productId}: ${result.error}`);
         }
@@ -156,6 +167,9 @@ export const verifyPurchase = onCall(
       );
 
       // ── Create subscription record ──
+      // `originalTransactionId` is the stable key store renewal/expiry
+      // notifications carry (Apple originalTransactionId / Play purchaseToken),
+      // so the webhook handlers can find this user when the store auto-renews.
       await db.collection('subscriptions').add({
         userId: userId,
         userEmail: userEmail,
@@ -168,9 +182,14 @@ export const verifyPurchase = onCall(
         purchaseToken: purchaseToken,
         transactionId: purchaseToken,
         orderId: purchaseToken,
+        originalTransactionId: originalTransactionId || purchaseToken,
+        storeExpiryDate: storeExpiryMs
+          ? admin.firestore.Timestamp.fromMillis(storeExpiryMs)
+          : null,
         productId: productId,
         price: config.price,
         currency: 'USD',
+        autoRenewing: true,
         createdAt: now,
       });
 
@@ -209,7 +228,7 @@ export const verifyPurchase = onCall(
 
       // ── Apply base membership flag + 500 coin welcome bonus for the base product ──
       let coinsGranted = 0;
-      if (productId === 'greengo_base_membership') {
+      if (catalogId === 'greengo_base_membership') {
         await grantBaseMembership(userId, durationMs);
         await grantCoins(userId, 500, 'membership_bonus', 'Base membership welcome bonus', { productId });
         coinsGranted = 500;
@@ -241,7 +260,7 @@ export const checkExpiringSubscriptions = onSchedule(
   {
     schedule: '0 9 * * *', // Daily at 9 AM UTC
     timeZone: 'UTC',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 300,
   },
   async () => {
@@ -299,7 +318,7 @@ export const handleExpiredMemberships = onSchedule(
   {
     schedule: '0 * * * *', // Every hour
     timeZone: 'UTC',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   async () => {

@@ -540,6 +540,15 @@ class _AuthWrapperState extends State<AuthWrapper> {
     // Check version after first frame is rendered
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _checkVersion();
+      // If the user is ALREADY authenticated when this wrapper mounts — e.g. a
+      // fresh AuthWrapper is pushed right after the onboarding wizard completes
+      // (`pushNamedAndRemoveUntil('/')`) — the BlocConsumer listener won't fire
+      // for the already-current AuthAuthenticated state, so the access check
+      // would never run and we'd sit on the splash forever. Kick it off here.
+      final authState = context.read<AuthBloc>().state;
+      if (authState is AuthAuthenticated && !_isCheckingAccess) {
+        _onAuthenticated(authState.user);
+      }
     });
   }
 
@@ -572,6 +581,53 @@ class _AuthWrapperState extends State<AuthWrapper> {
       case UpdateType.none:
         // No update needed
         break;
+    }
+  }
+
+  /// Runs when an authenticated user is detected — from the BlocConsumer
+  /// listener on a state change, OR from initState when this wrapper mounts and
+  /// the user is already authenticated (e.g. right after onboarding completes).
+  /// The `_isCheckingAccess` / `_splashUserId` guards make it idempotent so the
+  /// two entry points never double-run the work.
+  Future<void> _onAuthenticated(dynamic user) async {
+    _isSigningOut = false;
+    // Guard: skip if already checking access for this user (prevents duplicate
+    // calls from double AuthAuthenticated emission via login handler + auth
+    // stream, or from listener + initState).
+    if (_isCheckingAccess && _splashUserId == user.uid) return;
+    // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
+    // (builder runs before async work completes)
+    setState(() {
+      _isCheckingAccess = true;
+      // Show post-login splash on fresh login
+      if (!_showPostLoginSplash && _splashUserId != user.uid) {
+        _showPostLoginSplash = true;
+        _splashUserId = user.uid;
+      }
+    });
+    // Ensure admin profiles have isAdmin=true and approvalStatus=approved
+    // in the users collection BEFORE checking access (prevents "under review")
+    await AdminDataUtils.ensureAdminDataComplete();
+    _checkAccessStatus(user.uid);
+    // Load user's saved language from Firestore
+    if (mounted) {
+      context.read<LanguageProvider>().loadFromDatabase();
+    }
+    // Save FCM token to Firestore on each login (ensures token is always fresh)
+    try {
+      final notificationRepo = di.sl<NotificationRepository>();
+      final tokenResult = await notificationRepo.getFCMToken();
+      tokenResult.fold(
+        (_) {},
+        (token) async {
+          if (token != null) {
+            await notificationRepo.saveFCMToken(user.uid, token);
+            debugPrint('✓ FCM token saved for ${user.uid}');
+          }
+        },
+      );
+    } catch (e) {
+      debugPrint('⚠ FCM token save failed: $e');
     }
   }
 
@@ -927,43 +983,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
         }
         // When user becomes authenticated, check their access status and load language
         if (state is AuthAuthenticated) {
-          // Guard: skip if already checking access for this user (prevents duplicate calls
-          // from double AuthAuthenticated emission via login handler + auth stream)
-          if (_isCheckingAccess && _splashUserId == state.user.uid) return;
-          // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
-          // (builder runs before async work completes)
-          setState(() {
-            _isCheckingAccess = true;
-            // Show post-login splash on fresh login
-            if (!_showPostLoginSplash && _splashUserId != state.user.uid) {
-              _showPostLoginSplash = true;
-              _splashUserId = state.user.uid;
-            }
-          });
-          // Ensure admin profiles have isAdmin=true and approvalStatus=approved
-          // in the users collection BEFORE checking access (prevents "under review")
-          await AdminDataUtils.ensureAdminDataComplete();
-          _checkAccessStatus(state.user.uid);
-          // Load user's saved language from Firestore
-          if (context.mounted) {
-            context.read<LanguageProvider>().loadFromDatabase();
-          }
-          // Save FCM token to Firestore on each login (ensures token is always fresh)
-          try {
-            final notificationRepo = di.sl<NotificationRepository>();
-            final tokenResult = await notificationRepo.getFCMToken();
-            tokenResult.fold(
-              (_) {},
-              (token) async {
-                if (token != null) {
-                  await notificationRepo.saveFCMToken(state.user.uid, token);
-                  debugPrint('✓ FCM token saved for ${state.user.uid}');
-                }
-              },
-            );
-          } catch (e) {
-            debugPrint('⚠ FCM token save failed: $e');
-          }
+          await _onAuthenticated(state.user);
         }
         // When user signs out, reset access state to prevent stuck splash
         if (state is AuthInitial || state is AuthUnauthenticated) {

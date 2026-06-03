@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'app_sound_service.dart';
 import '../../../features/chat/presentation/screens/support_chat_screen.dart';
 import '../../../features/chat/presentation/screens/chat_screen.dart';
 import '../../../features/profile/data/models/profile_model.dart';
@@ -102,57 +103,37 @@ class PushNotificationService {
     debugPrint('[FCM] Push notification service initialized');
   }
 
-  /// Handle foreground messages — show a local notification
+  /// Foreground messages: do NOT show an OS/local notification while the app is
+  /// in use. `FirebaseMessaging.onMessage` fires only when the app is in the
+  /// foreground; backgrounded/terminated messages are displayed by the OS
+  /// automatically (not via this handler). The in-app notifications list
+  /// (Firestore `notifications`) still updates, so the user still sees it
+  /// inside the app — they just don't get a phone notification while using it.
   Future<void> _handleForegroundMessage(RemoteMessage message) async {
-    debugPrint('[FCM] Foreground message: ${message.messageId}');
-
-    final notification = message.notification;
-    if (notification == null) return;
-
-    // Suppress notification if user is currently viewing this conversation
-    final incomingConvId = message.data['conversationId'];
-    if (incomingConvId != null && incomingConvId == activeConversationId) {
-      debugPrint('[FCM] Suppressed notification for active conversation $incomingConvId');
-      return;
-    }
-
-    // Group key for stacking per-conversation
-    final groupKey = (incomingConvId is String && incomingConvId.isNotEmpty)
-        ? 'conversation_$incomingConvId'
-        : null;
-    final tag = (incomingConvId is String && incomingConvId.isNotEmpty)
-        ? incomingConvId
-        : null;
-
-    // Notification ID: use conversationId hash so subsequent messages from the same
-    // conversation REPLACE the existing card (WhatsApp behavior) rather than stacking.
-    final notifId = tag != null ? tag.hashCode : notification.hashCode;
-
-    await _localNotifications.show(
-      notifId,
-      notification.title ?? 'GreenGo',
-      notification.body ?? '',
-      NotificationDetails(
-        android: AndroidNotificationDetails(
-          _channel.id,
-          _channel.name,
-          channelDescription: _channel.description,
-          importance: Importance.high,
-          priority: Priority.high,
-          icon: '@drawable/ic_launcher_foreground',
-          tag: tag,
-          groupKey: groupKey,
-          setAsGroupSummary: false,
-        ),
-        iOS: DarwinNotificationDetails(
-          presentAlert: true,
-          presentBadge: true,
-          presentSound: true,
-          threadIdentifier: groupKey,
-        ),
-      ),
-      payload: jsonEncode(message.data),
-    );
+    debugPrint(
+        '[FCM] Foreground message ${message.messageId} — not shown (app in use)');
+    // No OS notification while the app is open, but play an in-app sound
+    // effect (WhatsApp-style) based on context:
+    //  - viewing this chat        -> "message sent" sound
+    //  - super-like / first msg   -> "new message (first time)" sound
+    //  - message from existing chat -> "new message" sound
+    try {
+      final data = message.data;
+      final convId = data['conversationId'];
+      final type = (data['type'] ?? data['notificationType'] ?? '')
+          .toString()
+          .toLowerCase();
+      if (convId != null && convId == activeConversationId) {
+        AppSoundService().play(AppSound.messageSent);
+      } else if (type.contains('super')) {
+        AppSoundService().play(AppSound.newMessageFirstTime);
+      } else if (type.contains('chat')) {
+        // 'new_chat' = first message from this user.
+        AppSoundService().play(AppSound.newMessageFirstTime);
+      } else if (type.contains('message')) {
+        AppSoundService().play(AppSound.newMessage);
+      }
+    } catch (_) {}
   }
 
   /// Handle notification tap when app was in background

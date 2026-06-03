@@ -16,6 +16,7 @@ class AuthTextField extends StatelessWidget {
   final TextInputAction? textInputAction;
   final Function(String)? onChanged;
   final Function(String)? onSubmitted;
+  final TextCapitalization textCapitalization;
 
   const AuthTextField({
     super.key,
@@ -32,6 +33,7 @@ class AuthTextField extends StatelessWidget {
     this.textInputAction,
     this.onChanged,
     this.onSubmitted,
+    this.textCapitalization = TextCapitalization.none,
   });
 
   @override
@@ -43,6 +45,7 @@ class AuthTextField extends StatelessWidget {
       validator: validator,
       enabled: enabled,
       maxLines: maxLines,
+      textCapitalization: textCapitalization,
       textInputAction: textInputAction,
       onChanged: onChanged,
       onFieldSubmitted: onSubmitted,

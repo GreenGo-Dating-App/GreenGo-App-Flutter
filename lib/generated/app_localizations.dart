@@ -10962,6 +10962,30 @@ abstract class AppLocalizations {
   /// **'Redeem Coupon Code'**
   String get couponRedeemTitle;
 
+  /// No description provided for @couponApplyButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get couponApplyButton;
+
+  /// No description provided for @couponAppliedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Coupon Applied'**
+  String get couponAppliedSuccess;
+
+  /// No description provided for @couponNotValid.
+  ///
+  /// In en, this message translates to:
+  /// **'Coupon not Valid'**
+  String get couponNotValid;
+
+  /// No description provided for @freeBaseWeekInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'No coupon needed — you still get 1 week of Base membership free!'**
+  String get freeBaseWeekInfo;
+
   /// No description provided for @couponRedeemSubtitle.
   ///
   /// In en, this message translates to:
@@ -11021,6 +11045,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not redeem coupon. Please try again.'**
   String get couponErrorGeneric;
+
+  /// No description provided for @registerCouponLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Coupon code (optional)'**
+  String get registerCouponLabel;
+
+  /// No description provided for @registerCouponHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a coupon code'**
+  String get registerCouponHint;
 
   /// No description provided for @welcomeGrantTitle.
   ///
@@ -18341,6 +18377,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You are now hidden from the map'**
   String get discoverabilityChangedHidden;
+
+  /// No description provided for @onboardingExitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit registration?'**
+  String get onboardingExitTitle;
+
+  /// No description provided for @onboardingExitMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ll be signed out. You can finish setting up your profile next time you log in.'**
+  String get onboardingExitMessage;
+
+  /// No description provided for @onboardingExitConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get onboardingExitConfirm;
+
+  /// No description provided for @onboardingExitCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get onboardingExitCancel;
+
+  /// No description provided for @loginEmailOrNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Email / Nickname'**
+  String get loginEmailOrNickname;
 }
 
 class _AppLocalizationsDelegate

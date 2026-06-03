@@ -6,6 +6,7 @@ import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/upload_photo.dart';
 import '../../domain/usecases/verify_photo.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import 'onboarding_event.dart';
 import 'onboarding_state.dart';
 
@@ -354,12 +355,29 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
 
       final result = await createProfile(CreateProfileParams(profile: profile));
 
-      result.fold(
-        (failure) => emit(OnboardingError(message: failure.message)),
-        (createdProfile) {
-          // Grant 100 welcome coins on registration (fire-and-forget)
-          _grantWelcomeCoins(currentState.userId);
-          emit(OnboardingComplete(profile: createdProfile));
+      await result.fold(
+        (failure) async => emit(OnboardingError(message: failure.message)),
+        (createdProfile) async {
+          // Grant 100 welcome coins on registration. Awaited (not fire-and-
+          // forget) so the balance doc exists BEFORE any coupon redemption —
+          // otherwise redeemCoupon would create the doc and the welcome-coin
+          // write would then be skipped (it only writes when absent).
+          await _grantWelcomeCoins(currentState.userId);
+
+          // Grant every new user a 7-day Base membership trial (so the
+          // "1 week free" promise at signup is real). A coupon's base grant,
+          // if any, stacks on top via the never-downgrade extension rule.
+          await _grantBaseTrial(currentState.userId);
+
+          // Redeem a coupon typed during registration, if one is pending.
+          // Never blocks completion; a bad code is surfaced as a notice.
+          final couponOutcome =
+              await SignupCouponService().tryRedeemPending(currentState.userId);
+
+          emit(OnboardingComplete(
+            profile: createdProfile,
+            couponOutcome: couponOutcome,
+          ));
         },
       );
     }
@@ -396,6 +414,23 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       // If balance already exists, daily coins will handle it
     } catch (e) {
       debugPrint('Welcome coins error: $e');
+    }
+  }
+
+  /// Grant a 7-day Base membership trial to a newly registered user, so the
+  /// "1 week of Base membership free" shown at signup is actually delivered.
+  Future<void> _grantBaseTrial(String userId) async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+      final now = DateTime.now();
+      final end = now.add(const Duration(days: 7));
+      await firestore.collection('profiles').doc(userId).set({
+        'hasBaseMembership': true,
+        'baseMembershipEndDate': Timestamp.fromDate(end),
+        'updatedAt': Timestamp.fromDate(now),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('Base trial grant error: $e');
     }
   }
 }

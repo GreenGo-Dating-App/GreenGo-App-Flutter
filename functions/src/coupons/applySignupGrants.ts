@@ -35,7 +35,7 @@ interface AppliedGrant {
 export const applySignupGrants = onDocumentCreated(
   {
     document: 'users/{userId}',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   async (event) => {

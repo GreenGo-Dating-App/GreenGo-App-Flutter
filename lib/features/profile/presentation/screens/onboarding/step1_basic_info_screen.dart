@@ -7,6 +7,7 @@ import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
+import 'onboarding_exit.dart';
 
 class Step1BasicInfoScreen extends StatefulWidget {
   const Step1BasicInfoScreen({super.key});
@@ -110,7 +111,9 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
           title: AppLocalizations.of(context)?.onboardingLetsGetStarted ?? "Let's get started",
           subtitle: AppLocalizations.of(context)?.onboardingTellUsAboutYourself ?? 'Tell us a bit about yourself',
           showBackButton: true,
-          onBack: () => Navigator.of(context).pop(),
+          // First step: "back" exits registration (sign out → login) rather than
+          // popping the only route, which would show a black screen.
+          onBack: () => showOnboardingExitDialog(context),
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
             totalSteps: state.totalSteps,

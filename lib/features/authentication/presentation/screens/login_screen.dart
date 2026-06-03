@@ -226,10 +226,10 @@ class _LoginScreenState extends State<LoginScreen>
                       position: _slideAnimation,
                       child: Column(
                         children: [
-                          // Email Field
+                          // Email / Nickname Field (login accepts either)
                           AuthTextField(
                             controller: _emailController,
-                            label: l10n.email,
+                            label: l10n.loginEmailOrNickname,
                             keyboardType: TextInputType.emailAddress,
                             validator: (value) {
                               if (value == null || value.trim().isEmpty) {

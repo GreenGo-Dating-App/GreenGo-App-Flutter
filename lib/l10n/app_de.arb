@@ -433,8 +433,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Abzeichen",
@@ -1166,6 +1170,11 @@
   "correctAnswer": "Richtig!",
   "couldNotOpenLink": "Link konnte nicht geöffnet werden",
   "createAccount": "Konto Erstellen",
+  "couponRedeemTitle": "Gutscheincode einlösen",
+  "couponApplyButton": "Anwenden",
+  "couponAppliedSuccess": "Gutschein angewendet",
+  "couponNotValid": "Gutschein ungültig",
+  "freeBaseWeekInfo": "Kein Gutschein? 1 Woche Base-Mitgliedschaft gratis!",
   "culturalCategory": "Kulturell",
   "culturalExchangeBeFirstTip": "Sei der Erste, der einen Kulturtipp teilt!",
   "culturalExchangeCategory": "Kategorie",
@@ -2138,7 +2147,7 @@
   "membershipEquivalentMonthly": "Entspricht {price}/Monat",
   "membershipErrorLoadingData": "Fehler beim Laden der Daten",
   "membershipExpires": "Läuft ab: {date}",
-  "membershipExtendTitle": "Deine Mitgliedschaft verlängern",
+  "membershipExtendTitle": "Mitgliedschaft verlängern",
   "membershipFeatureComparison": "Funktionsvergleich",
   "membershipGeneric": "Mitgliedschaft",
   "membershipGold": "Gold",
@@ -2163,7 +2172,6 @@
   "membershipReadReceipts": "Lesebestätigungen",
   "membershipRequired": "Mitgliedschaft erforderlich",
   "membershipRequiredDescription": "Du musst Mitglied bei GreenGo sein, um diese Aktion durchzuführen.",
-  "membershipExtendTitle": "Mitgliedschaft verlängern",
   "membershipExtendDescription": "Deine Basismitgliedschaft ist aktiv. Kaufe ein weiteres Jahr, um dein Ablaufdatum zu verlängern.",
   "membershipRewinds": "Zurückspulen",
   "membershipSavePercent": "SPARE {percent}%",
@@ -3534,5 +3542,10 @@
   "membershipTrialFeature3": "Voller Zugriff auf alle Funktionen",
   "membershipTrialCta": "7-Tage-Testphase starten",
   "membershipTrialFooter": "Jederzeit während der Testphase kündbar. Keine Gebühr bis Tag 8.",
-  "membershipTrialBadge": "7 TAGE GRATIS"
+  "membershipTrialBadge": "7 TAGE GRATIS",
+  "onboardingExitTitle": "Registrierung beenden?",
+  "onboardingExitMessage": "Du wirst abgemeldet. Du kannst dein Profil beim nächsten Login fertig einrichten.",
+  "onboardingExitConfirm": "Abmelden",
+  "onboardingExitCancel": "Abbrechen",
+  "loginEmailOrNickname": "E-Mail / Spitzname"
 }

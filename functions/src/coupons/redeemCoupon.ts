@@ -39,7 +39,7 @@ interface RedeemCouponResponse {
 }
 
 export const redeemCoupon = onCall<RedeemCouponRequest>(
-  { memory: '256MiB', timeoutSeconds: 30 },
+  { memory: '512MiB', timeoutSeconds: 30 },
   async (request: CallableRequest<RedeemCouponRequest>): Promise<RedeemCouponResponse> => {
     if (!request.auth) {
       throw new HttpsError('unauthenticated', 'You must be signed in to redeem a coupon');

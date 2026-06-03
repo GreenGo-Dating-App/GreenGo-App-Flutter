@@ -6151,7 +6151,19 @@ class AppLocalizationsIt extends AppLocalizations {
   String get membershipEnterCouponHint => 'Inserisci codice coupon';
 
   @override
-  String get couponRedeemTitle => 'Redeem Coupon Code';
+  String get couponRedeemTitle => 'Riscatta codice coupon';
+
+  @override
+  String get couponApplyButton => 'Applica';
+
+  @override
+  String get couponAppliedSuccess => 'Coupon applicato';
+
+  @override
+  String get couponNotValid => 'Coupon non valido';
+
+  @override
+  String get freeBaseWeekInfo => 'Niente coupon? 1 settimana di Base gratis!';
 
   @override
   String get couponRedeemSubtitle =>
@@ -6187,6 +6199,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get couponErrorGeneric => 'Could not redeem coupon. Please try again.';
+
+  @override
+  String get registerCouponLabel => 'Coupon code (optional)';
+
+  @override
+  String get registerCouponHint => 'Enter a coupon code';
 
   @override
   String get welcomeGrantTitle => 'Welcome to GreenGo!';
@@ -10421,4 +10439,20 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get discoverabilityChangedHidden => 'You are now hidden from the map';
+
+  @override
+  String get onboardingExitTitle => 'Uscire dalla registrazione?';
+
+  @override
+  String get onboardingExitMessage =>
+      'Verrai disconnesso. Potrai completare la configurazione del profilo al prossimo accesso.';
+
+  @override
+  String get onboardingExitConfirm => 'Esci';
+
+  @override
+  String get onboardingExitCancel => 'Annulla';
+
+  @override
+  String get loginEmailOrNickname => 'Email / Nickname';
 }

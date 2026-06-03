@@ -433,8 +433,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Emblemas",
@@ -1166,6 +1170,13 @@
   "correctAnswer": "Correto!",
   "couldNotOpenLink": "Não foi possível abrir o link",
   "createAccount": "Criar Conta",
+  "couponRedeemTitle": "Resgatar código de cupom",
+  "couponApplyButton": "Aplicar",
+  "couponAppliedSuccess": "Cupom aplicado",
+  "couponNotValid": "Cupom inválido",
+  "freeBaseWeekInfo": "Sem cupom? Você ganha 1 semana de Base grátis!",
+  "registerCouponLabel": "Código de cupom (opcional)",
+  "registerCouponHint": "Insira um código de cupom",
   "culturalCategory": "Cultural",
   "culturalExchangeBeFirstTip": "Seja o primeiro a partilhar uma dica cultural!",
   "culturalExchangeCategory": "Categoria",
@@ -2138,7 +2149,7 @@
   "membershipEquivalentMonthly": "Equivalente a {price}/mês",
   "membershipErrorLoadingData": "Erro ao carregar dados",
   "membershipExpires": "Expira: {date}",
-  "membershipExtendTitle": "Prolongar a Sua Subscrição",
+  "membershipExtendTitle": "Prolongar a tua subscrição",
   "membershipFeatureComparison": "Comparação de Funcionalidades",
   "membershipGeneric": "Subscrição",
   "membershipGold": "Gold",
@@ -2163,7 +2174,6 @@
   "membershipReadReceipts": "Confirmação de Leitura",
   "membershipRequired": "Subscrição necessária",
   "membershipRequiredDescription": "Precisas de ser membro do GreenGo para realizar esta ação.",
-  "membershipExtendTitle": "Prolongar a tua subscrição",
   "membershipExtendDescription": "A tua subscrição base está ativa. Compra mais um ano para prolongar a data de expiração.",
   "membershipRewinds": "Rewinds",
   "membershipSavePercent": "POUPE {percent}%",
@@ -3534,5 +3544,10 @@
   "membershipTrialFeature3": "Acesso total a todas as funcionalidades",
   "membershipTrialCta": "Iniciar teste de 7 dias",
   "membershipTrialFooter": "Cancele a qualquer momento durante o teste. Sem cobrança até ao dia 8.",
-  "membershipTrialBadge": "GRÁTIS POR 7 DIAS"
+  "membershipTrialBadge": "GRÁTIS POR 7 DIAS",
+  "onboardingExitTitle": "Sair do registo?",
+  "onboardingExitMessage": "A sua sessão será terminada. Pode concluir a configuração do perfil no próximo início de sessão.",
+  "onboardingExitConfirm": "Terminar sessão",
+  "onboardingExitCancel": "Cancelar",
+  "loginEmailOrNickname": "Email / Alcunha"
 }

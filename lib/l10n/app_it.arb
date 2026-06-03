@@ -433,8 +433,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Badge",
@@ -1166,6 +1170,11 @@
   "correctAnswer": "Corretto!",
   "couldNotOpenLink": "Impossibile aprire il link",
   "createAccount": "Crea Account",
+  "couponRedeemTitle": "Riscatta codice coupon",
+  "couponApplyButton": "Applica",
+  "couponAppliedSuccess": "Coupon applicato",
+  "couponNotValid": "Coupon non valido",
+  "freeBaseWeekInfo": "Niente coupon? 1 settimana di Base gratis!",
   "culturalCategory": "Culturale",
   "culturalExchangeBeFirstTip": "Sii il primo a condividere un consiglio culturale!",
   "culturalExchangeCategory": "Categoria",
@@ -2138,7 +2147,7 @@
   "membershipEquivalentMonthly": "Equivalente a {price}/mese",
   "membershipErrorLoadingData": "Errore nel caricamento dei dati",
   "membershipExpires": "Scade il: {date}",
-  "membershipExtendTitle": "Estendi il tuo abbonamento",
+  "membershipExtendTitle": "Estendi la tua iscrizione",
   "membershipFeatureComparison": "Confronto funzionalità",
   "membershipGeneric": "Abbonamento",
   "membershipGold": "Gold",
@@ -2163,7 +2172,6 @@
   "membershipReadReceipts": "Conferme di lettura",
   "membershipRequired": "Iscrizione richiesta",
   "membershipRequiredDescription": "Devi essere un membro di GreenGo per eseguire questa azione.",
-  "membershipExtendTitle": "Estendi la tua iscrizione",
   "membershipExtendDescription": "La tua iscrizione base è attiva. Acquista un altro anno per estendere la data di scadenza.",
   "membershipRewinds": "Ripristini",
   "membershipSavePercent": "RISPARMIA {percent}%",
@@ -3534,5 +3542,10 @@
   "membershipTrialFeature3": "Accesso completo a tutte le funzionalità",
   "membershipTrialCta": "Inizia la prova di 7 giorni",
   "membershipTrialFooter": "Cancella in qualsiasi momento durante la prova. Nessun addebito fino al giorno 8.",
-  "membershipTrialBadge": "GRATIS PER 7 GIORNI"
+  "membershipTrialBadge": "GRATIS PER 7 GIORNI",
+  "onboardingExitTitle": "Uscire dalla registrazione?",
+  "onboardingExitMessage": "Verrai disconnesso. Potrai completare la configurazione del profilo al prossimo accesso.",
+  "onboardingExitConfirm": "Esci",
+  "onboardingExitCancel": "Annulla",
+  "loginEmailOrNickname": "Email / Nickname"
 }

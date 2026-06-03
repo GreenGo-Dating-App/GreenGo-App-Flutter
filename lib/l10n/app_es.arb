@@ -433,8 +433,12 @@
   "achievementRewardLabel": "+{amount} {type}",
   "@achievementRewardLabel": {
     "placeholders": {
-      "amount": {"type": "int"},
-      "type": {"type": "String"}
+      "amount": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
     }
   },
   "badges": "Insignias",
@@ -1166,6 +1170,11 @@
   "correctAnswer": "¡Correcto!",
   "couldNotOpenLink": "No se pudo abrir el enlace",
   "createAccount": "Crear Cuenta",
+  "couponRedeemTitle": "Canjear código de cupón",
+  "couponApplyButton": "Aplicar",
+  "couponAppliedSuccess": "Cupón aplicado",
+  "couponNotValid": "Cupón no válido",
+  "freeBaseWeekInfo": "Sin cupón: obtienes 1 semana de membresía Base gratis.",
   "culturalCategory": "Cultural",
   "culturalExchangeBeFirstTip": "¡Sé el primero en compartir un consejo cultural!",
   "culturalExchangeCategory": "Categoría",
@@ -2138,7 +2147,7 @@
   "membershipEquivalentMonthly": "Equivalente a {price}/mes",
   "membershipErrorLoadingData": "Error al cargar los datos",
   "membershipExpires": "Expira: {date}",
-  "membershipExtendTitle": "Extender tu membresía",
+  "membershipExtendTitle": "Extiende tu membresía",
   "membershipFeatureComparison": "Comparación de funciones",
   "membershipGeneric": "Membresía",
   "membershipGold": "Gold",
@@ -2163,7 +2172,6 @@
   "membershipReadReceipts": "Confirmaciones de lectura",
   "membershipRequired": "Membresía requerida",
   "membershipRequiredDescription": "Necesitas ser miembro de GreenGo para realizar esta acción.",
-  "membershipExtendTitle": "Extiende tu membresía",
   "membershipExtendDescription": "Tu membresía base está activa. Compra otro año para extender tu fecha de vencimiento.",
   "membershipRewinds": "Retrocesos",
   "membershipSavePercent": "AHORRA {percent}%",
@@ -3534,5 +3542,10 @@
   "membershipTrialFeature3": "Acceso completo a todas las funciones",
   "membershipTrialCta": "Iniciar prueba de 7 días",
   "membershipTrialFooter": "Cancela en cualquier momento durante la prueba. Sin cargo hasta el día 8.",
-  "membershipTrialBadge": "GRATIS POR 7 DÍAS"
+  "membershipTrialBadge": "GRATIS POR 7 DÍAS",
+  "onboardingExitTitle": "¿Salir del registro?",
+  "onboardingExitMessage": "Se cerrará tu sesión. Podrás terminar de configurar tu perfil la próxima vez que inicies sesión.",
+  "onboardingExitConfirm": "Cerrar sesión",
+  "onboardingExitCancel": "Cancelar",
+  "loginEmailOrNickname": "Correo / Apodo"
 }
