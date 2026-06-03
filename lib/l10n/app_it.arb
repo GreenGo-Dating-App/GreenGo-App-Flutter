@@ -3547,5 +3547,13 @@
   "onboardingExitMessage": "Verrai disconnesso. Potrai completare la configurazione del profilo al prossimo accesso.",
   "onboardingExitConfirm": "Esci",
   "onboardingExitCancel": "Annulla",
-  "loginEmailOrNickname": "Email / Nickname"
+  "loginEmailOrNickname": "Email / Nickname",
+  "paymentVerifying": "Verifica del pagamento in corso...",
+  "paymentSuccess": "Pagamento riuscito!",
+  "paymentSuccessMessage": "Il tuo acquisto è stato accreditato sul tuo account.",
+  "paymentPending": "Elaborazione del pagamento",
+  "paymentPendingMessage": "Il pagamento è in elaborazione. Potrebbero volerci alcuni minuti.",
+  "paymentCancelled": "Pagamento annullato",
+  "paymentCancelledMessage": "Il pagamento è stato annullato. Nessun addebito effettuato.",
+  "continueToApp": "Continua"
 }

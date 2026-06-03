@@ -3547,5 +3547,13 @@
   "onboardingExitMessage": "Du wirst abgemeldet. Du kannst dein Profil beim nächsten Login fertig einrichten.",
   "onboardingExitConfirm": "Abmelden",
   "onboardingExitCancel": "Abbrechen",
-  "loginEmailOrNickname": "E-Mail / Spitzname"
+  "loginEmailOrNickname": "E-Mail / Spitzname",
+  "paymentVerifying": "Zahlung wird überprüft...",
+  "paymentSuccess": "Zahlung erfolgreich!",
+  "paymentSuccessMessage": "Dein Kauf wurde deinem Konto gutgeschrieben.",
+  "paymentPending": "Zahlung wird verarbeitet",
+  "paymentPendingMessage": "Deine Zahlung wird verarbeitet. Es kann einige Minuten dauern, bis sie erscheint.",
+  "paymentCancelled": "Zahlung abgebrochen",
+  "paymentCancelledMessage": "Deine Zahlung wurde abgebrochen. Es wurden keine Kosten berechnet.",
+  "continueToApp": "Weiter"
 }

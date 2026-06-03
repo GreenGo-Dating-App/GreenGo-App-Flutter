@@ -3549,5 +3549,13 @@
   "onboardingExitMessage": "A sua sessão será terminada. Pode concluir a configuração do perfil no próximo início de sessão.",
   "onboardingExitConfirm": "Terminar sessão",
   "onboardingExitCancel": "Cancelar",
-  "loginEmailOrNickname": "Email / Alcunha"
+  "loginEmailOrNickname": "Email / Alcunha",
+  "paymentVerifying": "A verificar o seu pagamento...",
+  "paymentSuccess": "Pagamento bem-sucedido!",
+  "paymentSuccessMessage": "A sua compra foi creditada na sua conta.",
+  "paymentPending": "A processar pagamento",
+  "paymentPendingMessage": "O seu pagamento está a ser processado. Pode demorar alguns minutos a aparecer.",
+  "paymentCancelled": "Pagamento cancelado",
+  "paymentCancelledMessage": "O seu pagamento foi cancelado. Não foram efetuadas cobranças.",
+  "continueToApp": "Continuar"
 }
