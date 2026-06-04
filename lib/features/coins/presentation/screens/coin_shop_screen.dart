@@ -216,7 +216,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Handle a successful purchase (coins or subscription)
   Future<void> _handleSuccessfulPurchase(PurchaseDetails purchaseDetails) async {
-    final productId = purchaseDetails.productID;
+    // Normalize the iOS `subscription_` prefix so all downstream matching
+    // (base membership / tier lookup) works with the bare IDs on both stores.
+    final productId = _baseProductId(purchaseDetails.productID);
 
     // Check if this is a base membership purchase
     if (productId == 'greengo_base_membership') {
@@ -426,6 +428,20 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       _isLoadingSubscription = false;
     });
   }
+
+  /// On iOS, App Store Connect subscription products use a `subscription_`
+  /// prefix (the original consumable IDs can't be reused as auto-renewable
+  /// subscriptions). Android keeps the original bare IDs. Convert a bare
+  /// product ID to the store-specific one used when querying/purchasing.
+  String _storeProductId(String baseId) =>
+      Platform.isIOS ? 'subscription_$baseId' : baseId;
+
+  /// Inverse of [_storeProductId]: strip the iOS `subscription_` prefix so a
+  /// returned purchase can be matched back to a tier / base membership.
+  String _baseProductId(String storeId) =>
+      storeId.startsWith('subscription_')
+          ? storeId.substring('subscription_'.length)
+          : storeId;
 
   /// Map a product ID back to a SubscriptionTier
   SubscriptionTier? _tierFromProductId(String productId) {
@@ -1300,7 +1316,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      const productId = 'greengo_base_membership';
+      final productId = _storeProductId('greengo_base_membership');
       final response = await _inAppPurchase!.queryProductDetails({productId});
 
       if (response.productDetails.isEmpty) {
@@ -1625,10 +1641,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      // Query product details from store (monthly or yearly based on toggle)
-      final productId = _isYearlySelected
+      // Query product details from store (monthly or yearly based on toggle).
+      // iOS subscriptions carry the `subscription_` prefix; Android stays bare.
+      final baseProductId = _isYearlySelected
           ? _selectedTier!.yearlyProductId
           : _selectedTier!.monthlyProductId;
+      final productId = _storeProductId(baseProductId);
       final productIds = {productId};
       debugPrint('[Subscription] Querying product IDs: $productIds');
 
