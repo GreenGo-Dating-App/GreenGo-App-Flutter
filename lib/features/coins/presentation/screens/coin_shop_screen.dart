@@ -54,6 +54,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   bool _isLoadingSubscription = false;
   bool _isLoadingCoinPurchase = false;
   bool _isRestoring = false;
+  /// Localized recurring price of the base membership from the store (e.g. "R$ 24,99").
+  String? _basePrice;
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
@@ -118,9 +120,27 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       // Restore old purchases on init to consume any unconsumed ones
       // This clears "already owned" state from previous sessions
       _consumeOldPurchases();
+      // Load the store's localized base price (no hard-coded currency in the UI).
+      _loadBasePrice();
     } catch (e) {
       debugPrint('[CoinShop] IAP initialization failed: $e');
       _inAppPurchase = null;
+    }
+  }
+
+  /// Load the base membership's localized recurring price from the store so the
+  /// Shop card shows the real region-correct amount instead of a hard-coded one.
+  Future<void> _loadBasePrice() async {
+    if (_inAppPurchase == null) return;
+    try {
+      if (!await _inAppPurchase!.isAvailable()) return;
+      final resp = await _inAppPurchase!.queryProductDetails({ProductCatalog.baseStoreId});
+      if (resp.productDetails.isEmpty) return;
+      final label =
+          ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
+      if (mounted && label != null) setState(() => _basePrice = label);
+    } catch (e) {
+      debugPrint('[CoinShop] base price load failed: $e');
     }
   }
 
@@ -1205,15 +1225,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           color: Colors.white70,
                         ),
                       ),
-                      const SizedBox(height: 4),
-                      Text(
-                        '\$4.99/year  ${AppLocalizations.of(context)!.plusTaxes}',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.basePurple,
+                      if (_basePrice != null) ...[
+                        const SizedBox(height: 4),
+                        Text(
+                          '$_basePrice  ${AppLocalizations.of(context)!.plusTaxes}',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.basePurple,
+                          ),
                         ),
-                      ),
+                      ],
                     ],
                   ),
                 ),

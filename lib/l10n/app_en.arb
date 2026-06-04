@@ -4762,7 +4762,7 @@
       }
     }
   },
-  "yearlyMembership": "Yearly Membership — $4.99/year",
+  "yearlyMembership": "Yearly subscription",
   "yearsLabel": "{age} years",
   "@yearsLabel": {
     "placeholders": {
@@ -4910,7 +4910,7 @@
   "priorityConnectReject": "Reject",
   "priorityConnectPending": "Pending approval",
   "membershipTrialTitle": "Start Your Free Trial!",
-  "membershipTrialSubtitle": "7 days free, then just $4.99/year",
+  "membershipTrialSubtitle": "7 days free, then auto-renews yearly",
   "membershipTrialFeature1": "Unlimited Swipes & Connections",
   "membershipTrialFeature2": "500 Bonus Coins on Activation",
   "membershipTrialFeature3": "Full Access to All Features",

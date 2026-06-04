@@ -9872,7 +9872,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get yearlyMembership => 'Iscrizione annuale — 4,99 \$/anno';
+  String get yearlyMembership => 'Abbonamento annuale';
 
   @override
   String yearsLabel(int age) {
@@ -10316,8 +10316,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get membershipTrialTitle => 'Inizia la tua prova gratuita!';
 
   @override
-  String get membershipTrialSubtitle =>
-      '7 giorni gratis, poi solo 4,99 \$/anno';
+  String get membershipTrialSubtitle => '7 giorni gratis, poi rinnovo annuale';
 
   @override
   String get membershipTrialFeature1 => 'Swipe e connessioni illimitati';
