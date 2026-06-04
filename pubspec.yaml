@@ -153,11 +153,13 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/icon/app_icon.png"
+  # iOS App Store uses the 1024x1024 logo; Android (AAB) uses the 512x512 logo.
+  image_path_ios: "assets/icon/app_icon_1024.png"
+  image_path_android: "assets/icon/app_icon_512.png"
   min_sdk_android: 21
   remove_alpha_ios: true
   adaptive_icon_background: "#1A1A1A"
-  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  adaptive_icon_foreground: "assets/icon/app_icon_512.png"
 
 flutter:
   uses-material-design: true
