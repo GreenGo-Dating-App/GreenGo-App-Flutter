@@ -4,15 +4,7 @@ import 'package:equatable/equatable.dart';
 /// Point 156: Virtual currency with $0.99 = 100 coins exchange rate
 /// Point 158: Coin balance with animated display
 /// Point 164: Coin expiration after 365 days
-class CoinBalance extends Equatable {
-  final String userId;
-  final int totalCoins;
-  final int earnedCoins;
-  final int purchasedCoins;
-  final int giftedCoins;
-  final int spentCoins;
-  final DateTime lastUpdated;
-  final List<CoinBatch> coinBatches; // For tracking expiration
+class CoinBalance extends Equatable { // For tracking expiration
 
   const CoinBalance({
     required this.userId,
@@ -24,11 +16,19 @@ class CoinBalance extends Equatable {
     required this.lastUpdated,
     this.coinBatches = const [],
   });
+  final String userId;
+  final int totalCoins;
+  final int earnedCoins;
+  final int purchasedCoins;
+  final int giftedCoins;
+  final int spentCoins;
+  final DateTime lastUpdated;
+  final List<CoinBatch> coinBatches;
 
   /// Get available (non-expired) coins
   int get availableCoins {
     final now = DateTime.now();
-    int available = 0;
+    var available = 0;
     for (final batch in coinBatches) {
       if (!batch.isExpired(now)) {
         available += batch.remainingCoins;
@@ -40,7 +40,7 @@ class CoinBalance extends Equatable {
   /// Get expired coins
   int get expiredCoins {
     final now = DateTime.now();
-    int expired = 0;
+    var expired = 0;
     for (final batch in coinBatches) {
       if (batch.isExpired(now)) {
         expired += batch.remainingCoins;
@@ -52,7 +52,7 @@ class CoinBalance extends Equatable {
   /// Get coins expiring soon (within 30 days)
   int getCoinsExpiringSoon({int days = 30}) {
     final threshold = DateTime.now().add(Duration(days: days));
-    int expiringSoon = 0;
+    var expiringSoon = 0;
     for (final batch in coinBatches) {
       if (!batch.isExpired(DateTime.now()) &&
           batch.expirationDate.isBefore(threshold)) {
@@ -83,12 +83,6 @@ class CoinBalance extends Equatable {
 /// Represents a batch of coins with expiration date
 /// Point 164: Coins expire after 365 days
 class CoinBatch extends Equatable {
-  final String batchId;
-  final int initialCoins;
-  final int remainingCoins;
-  final CoinSource source;
-  final DateTime acquiredDate;
-  final DateTime expirationDate;
 
   const CoinBatch({
     required this.batchId,
@@ -98,6 +92,12 @@ class CoinBatch extends Equatable {
     required this.acquiredDate,
     required this.expirationDate,
   });
+  final String batchId;
+  final int initialCoins;
+  final int remainingCoins;
+  final CoinSource source;
+  final DateTime acquiredDate;
+  final DateTime expirationDate;
 
   /// Check if batch has expired
   bool isExpired(DateTime now) {

@@ -1,12 +1,18 @@
-/**
- * Localization Entity
- * Points 286-300: Internationalization and Accessibility
- */
+/// Localization Entity
+/// Points 286-300: Internationalization and Accessibility
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Supported locale (Points 286-287)
 class AppLocale extends Equatable {
+
+  const AppLocale({
+    required this.languageCode,
+    required this.displayName, required this.nativeName, required this.flagEmoji, this.countryCode,
+    this.isRTL = false,
+    this.textDirection = TextDirection.ltr,
+  });
   final String languageCode; // ISO 639-1 (en, es, fr, etc.)
   final String? countryCode; // ISO 3166-1 (US, ES, FR, etc.)
   final String displayName;
@@ -14,16 +20,6 @@ class AppLocale extends Equatable {
   final String flagEmoji;
   final bool isRTL; // Point 289
   final TextDirection textDirection;
-
-  const AppLocale({
-    required this.languageCode,
-    this.countryCode,
-    required this.displayName,
-    required this.nativeName,
-    required this.flagEmoji,
-    this.isRTL = false,
-    this.textDirection = TextDirection.ltr,
-  });
 
   String get localeCode => countryCode != null
       ? '${languageCode}_$countryCode'
@@ -415,11 +411,6 @@ class SupportedLocales {
 
 /// Locale-aware formatting (Point 290)
 class LocaleFormatting extends Equatable {
-  final AppLocale locale;
-  final DateFormat dateFormat;
-  final TimeFormat timeFormat;
-  final CurrencyFormat currencyFormat;
-  final NumberFormat numberFormat;
 
   const LocaleFormatting({
     required this.locale,
@@ -428,6 +419,11 @@ class LocaleFormatting extends Equatable {
     required this.currencyFormat,
     required this.numberFormat,
   });
+  final AppLocale locale;
+  final DateFormat dateFormat;
+  final TimeFormat timeFormat;
+  final CurrencyFormat currencyFormat;
+  final NumberFormat numberFormat;
 
   @override
   List<Object?> get props => [
@@ -476,12 +472,6 @@ enum TimeFormat {
 
 /// Currency format (Point 290)
 class CurrencyFormat extends Equatable {
-  final String currencyCode; // USD, EUR, GBP, etc.
-  final String symbol; // $, €, £, etc.
-  final CurrencyPosition symbolPosition;
-  final String decimalSeparator;
-  final String thousandsSeparator;
-  final int decimalPlaces;
 
   const CurrencyFormat({
     required this.currencyCode,
@@ -491,6 +481,12 @@ class CurrencyFormat extends Equatable {
     this.thousandsSeparator = ',',
     this.decimalPlaces = 2,
   });
+  final String currencyCode; // USD, EUR, GBP, etc.
+  final String symbol; // $, €, £, etc.
+  final CurrencyPosition symbolPosition;
+  final String decimalSeparator;
+  final String thousandsSeparator;
+  final int decimalPlaces;
 
   String format(double amount) {
     final formatted = amount.toStringAsFixed(decimalPlaces);
@@ -499,8 +495,8 @@ class CurrencyFormat extends Equatable {
     final decPart = parts.length > 1 ? parts[1] : '';
 
     // Add thousands separators
-    String formattedInt = '';
-    for (int i = 0; i < intPart.length; i++) {
+    var formattedInt = '';
+    for (var i = 0; i < intPart.length; i++) {
       if (i > 0 && (intPart.length - i) % 3 == 0) {
         formattedInt += thousandsSeparator;
       }
@@ -531,13 +527,13 @@ enum CurrencyPosition { before, after }
 
 /// Number format
 class NumberFormat extends Equatable {
-  final String decimalSeparator;
-  final String thousandsSeparator;
 
   const NumberFormat({
     this.decimalSeparator = '.',
     this.thousandsSeparator = ',',
   });
+  final String decimalSeparator;
+  final String thousandsSeparator;
 
   @override
   List<Object?> get props => [decimalSeparator, thousandsSeparator];

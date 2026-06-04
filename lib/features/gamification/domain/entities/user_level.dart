@@ -4,15 +4,7 @@ import 'package:equatable/equatable.dart';
 
 /// User Level Entity
 /// Points 186-195: Level & Progression System
-class UserLevel extends Equatable {
-  final String userId;
-  final int level;
-  final int currentXP;
-  final int totalXP;
-  final DateTime lastUpdated;
-  final String region;
-  final int regionalRank;
-  final bool isVIP; // Level 50+
+class UserLevel extends Equatable { // Level 50+
 
   UserLevel({
     required this.userId,
@@ -24,6 +16,14 @@ class UserLevel extends Equatable {
     this.regionalRank = 0,
     this.isVIP = false,
   }) : lastUpdated = lastUpdated ?? DateTime.now();
+  final String userId;
+  final int level;
+  final int currentXP;
+  final int totalXP;
+  final DateTime lastUpdated;
+  final String region;
+  final int regionalRank;
+  final bool isVIP;
 
   /// Get XP required for next level
   int get xpForNextLevel {
@@ -68,15 +68,15 @@ class UserLevel extends Equatable {
 /// XP Action
 /// Point 187: XP rewards for different actions
 class XPAction {
-  final String actionType;
-  final int xpAmount;
-  final String description;
 
   const XPAction({
     required this.actionType,
     required this.xpAmount,
     required this.description,
   });
+  final String actionType;
+  final int xpAmount;
+  final String description;
 }
 
 /// XP Actions (Point 187)
@@ -231,14 +231,14 @@ class LevelSystem {
   static int xpRequiredForLevel(int level) {
     if (level <= 1) return 0;
 
-    const int baseXP = 100;
+    const baseXP = 100;
     return (baseXP * math.pow(level, 1.5)).round();
   }
 
   /// Calculate total XP required to reach a level
   static int totalXPForLevel(int level) {
-    int total = 0;
-    for (int i = 1; i <= level; i++) {
+    var total = 0;
+    for (var i = 1; i <= level; i++) {
       total += xpRequiredForLevel(i);
     }
     return total;
@@ -246,7 +246,7 @@ class LevelSystem {
 
   /// Calculate level from total XP
   static int levelFromXP(int totalXP) {
-    int level = 1;
+    var level = 1;
     while (totalXPForLevel(level + 1) <= totalXP && level < 100) {
       level++;
     }
@@ -260,8 +260,8 @@ class LevelSystem {
 
   /// Get XP breakdown for levels
   static Map<int, int> getXPBreakdown() {
-    final Map<int, int> breakdown = {};
-    for (int level = 1; level <= 100; level++) {
+    final breakdown = <int, int>{};
+    for (var level = 1; level <= 100; level++) {
       breakdown[level] = xpRequiredForLevel(level);
     }
     return breakdown;
@@ -277,20 +277,16 @@ class LevelSystem {
 
 /// Level Rewards (Point 190)
 class LevelRewards {
-  final int level;
-  final List<LevelReward> rewards;
 
   const LevelRewards({
     required this.level,
     required this.rewards,
   });
+  final int level;
+  final List<LevelReward> rewards;
 }
 
 class LevelReward {
-  final String type; // frame, badge, coins, feature
-  final String itemId;
-  final String name;
-  final String description;
 
   const LevelReward({
     required this.type,
@@ -298,6 +294,10 @@ class LevelReward {
     required this.name,
     required this.description,
   });
+  final String type; // frame, badge, coins, feature
+  final String itemId;
+  final String name;
+  final String description;
 }
 
 /// Standard Level Rewards
@@ -460,6 +460,15 @@ class StandardLevelRewards {
 
 /// Leaderboard Entry (Point 191)
 class LeaderboardEntry extends Equatable {
+
+  const LeaderboardEntry({
+    required this.rank,
+    required this.userId,
+    required this.username,
+    required this.level, required this.totalXP, this.photoUrl,
+    this.region = 'global',
+    this.isVIP = false,
+  });
   final int rank;
   final String userId;
   final String username;
@@ -468,17 +477,6 @@ class LeaderboardEntry extends Equatable {
   final int totalXP;
   final String region;
   final bool isVIP;
-
-  const LeaderboardEntry({
-    required this.rank,
-    required this.userId,
-    required this.username,
-    this.photoUrl,
-    required this.level,
-    required this.totalXP,
-    this.region = 'global',
-    this.isVIP = false,
-  });
 
   @override
   List<Object?> get props => [
@@ -495,14 +493,6 @@ class LeaderboardEntry extends Equatable {
 
 /// XP Transaction
 class XPTransaction extends Equatable {
-  final String transactionId;
-  final String userId;
-  final String actionType;
-  final int xpAmount;
-  final int levelBefore;
-  final int levelAfter;
-  final DateTime createdAt;
-  final Map<String, dynamic>? metadata;
 
   const XPTransaction({
     required this.transactionId,
@@ -514,6 +504,14 @@ class XPTransaction extends Equatable {
     required this.createdAt,
     this.metadata,
   });
+  final String transactionId;
+  final String userId;
+  final String actionType;
+  final int xpAmount;
+  final int levelBefore;
+  final int levelAfter;
+  final DateTime createdAt;
+  final Map<String, dynamic>? metadata;
 
   bool get didLevelUp => levelAfter > levelBefore;
 

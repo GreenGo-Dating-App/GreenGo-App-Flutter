@@ -7,9 +7,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 
 class PersonalStatsScreen extends StatefulWidget {
-  final String userId;
 
-  const PersonalStatsScreen({super.key, required this.userId});
+  const PersonalStatsScreen({required this.userId, super.key});
+  final String userId;
 
   @override
   State<PersonalStatsScreen> createState() => _PersonalStatsScreenState();
@@ -98,8 +98,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
 
     try {
       // Always read XP from user_levels (authoritative source)
-      int totalXp = 0;
-      int level = 1;
+      var totalXp = 0;
+      var level = 1;
       final userLevelDoc = await firestore.collection('user_levels').doc(userId).get();
       if (userLevelDoc.exists) {
         final lvlData = userLevelDoc.data()!;
@@ -172,8 +172,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   /// Compute stats from source collections and cache in user_stats/{userId}
   Future<void> _computeAndCacheStats(FirebaseFirestore firestore, String userId) async {
     // Load XP from user_levels (primary authoritative source)
-    int totalXp = 0;
-    int level = 1;
+    var totalXp = 0;
+    var level = 1;
     final userLevelDoc = await firestore.collection('user_levels').doc(userId).get();
     if (userLevelDoc.exists) {
       final data = userLevelDoc.data()!;
@@ -195,7 +195,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
 
     // Load daily activity from xp_transactions (last 30 days only)
     // Wrapped in try-catch: this query requires a composite index that may not exist yet
-    final Map<String, int> dailyActivity = {};
+    final dailyActivity = <String, int>{};
     try {
       final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
       final xpDocs = await firestore
@@ -232,7 +232,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     final totalConvos = (convos1.count ?? 0) + (convos2.count ?? 0);
 
     // Messages sent count from profile or estimate
-    int messagesSent = 0;
+    var messagesSent = 0;
     final profileDoc = await firestore.collection('profiles').doc(userId).get();
     if (profileDoc.exists) {
       messagesSent = (profileDoc.data()?['messagesSent'] as num?)?.toInt() ?? 0;
@@ -242,8 +242,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     // Cloud Function trigger. We just read the cached data here.
 
     // Vocabulary words per language (all tracked + learned with useCount >= 3)
-    final Map<String, int> wordsPerLang = {};
-    final Map<String, int> wordsLearnedPerLang = {};
+    final wordsPerLang = <String, int>{};
+    final wordsLearnedPerLang = <String, int>{};
     final vocabDocs = await firestore
         .collection('user_vocabulary')
         .doc(userId)
@@ -308,7 +308,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
 
   /// Calculate level from XP using the same thresholds as the backend
   static int _calculateLevel(int totalXp) {
-    int level = 1;
+    var level = 1;
     while (level < _levelXpRequirements.length &&
         totalXp >= _levelXpRequirements[level]) {
       level++;

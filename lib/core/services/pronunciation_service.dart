@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
@@ -17,9 +16,9 @@ import 'package:path_provider/path_provider.dart';
 /// generate the audio, upload to Firebase Storage, cache the URL in Firestore,
 /// and return it.
 class PronunciationService {
-  static final PronunciationService _instance = PronunciationService._();
   factory PronunciationService() => _instance;
   PronunciationService._();
+  static final PronunciationService _instance = PronunciationService._();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseStorage _storage = FirebaseStorage.instance;
@@ -255,7 +254,7 @@ class PronunciationService {
     final languageCode = _getCloudTtsLanguageCode(language);
     final voiceName = _getChirp3VoiceName(languageCode, isMale: isMale);
 
-    for (int attempt = 1; attempt <= 3; attempt++) {
+    for (var attempt = 1; attempt <= 3; attempt++) {
       try {
         debugPrint('PronunciationService: Attempt $attempt - Cloud TTS (Chirp 3 HD)');
         final result = await _synthesizeWithCloudTts(phrase, apiKey, languageCode, voiceName);

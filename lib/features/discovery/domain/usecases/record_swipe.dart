@@ -8,13 +8,13 @@ import '../repositories/discovery_repository.dart';
 ///
 /// Records a user's swipe action and checks for matches
 class RecordSwipe implements UseCase<SwipeAction, RecordSwipeParams> {
-  final DiscoveryRepository repository;
 
   RecordSwipe(this.repository);
+  final DiscoveryRepository repository;
 
   @override
   Future<Either<Failure, SwipeAction>> call(RecordSwipeParams params) async {
-    return await repository.recordSwipe(
+    return repository.recordSwipe(
       userId: params.userId,
       targetUserId: params.targetUserId,
       actionType: params.actionType,
@@ -23,13 +23,13 @@ class RecordSwipe implements UseCase<SwipeAction, RecordSwipeParams> {
 }
 
 class RecordSwipeParams {
-  final String userId;
-  final String targetUserId;
-  final SwipeActionType actionType;
 
   RecordSwipeParams({
     required this.userId,
     required this.targetUserId,
     required this.actionType,
   });
+  final String userId;
+  final String targetUserId;
+  final SwipeActionType actionType;
 }

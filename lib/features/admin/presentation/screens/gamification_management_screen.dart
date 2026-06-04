@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/domain/entities/daily_challenge.dart';
 import '../../../gamification/domain/entities/login_streak.dart';
@@ -10,14 +11,13 @@ import '../../../gamification/domain/entities/login_streak.dart';
 /// Gamification Management Screen
 /// Admin interface for managing achievements, challenges, and streaks
 class GamificationManagementScreen extends StatefulWidget {
-  final String adminId;
-  final String? initialTab;
 
   const GamificationManagementScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
     this.initialTab,
   });
+  final String adminId;
+  final String? initialTab;
 
   @override
   State<GamificationManagementScreen> createState() =>
@@ -101,13 +101,13 @@ class _GamificationManagementScreenState
 
 /// Achievements Tab
 class _AchievementsTab extends StatelessWidget {
-  final String adminId;
 
   const _AchievementsTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
-    final categories = AchievementCategory.values;
+    const categories = AchievementCategory.values;
 
     return ListView.builder(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
@@ -290,13 +290,13 @@ class _AchievementsTab extends StatelessWidget {
 }
 
 class _AchievementCard extends StatelessWidget {
-  final Achievement achievement;
-  final VoidCallback onEdit;
 
   const _AchievementCard({
     required this.achievement,
     required this.onEdit,
   });
+  final Achievement achievement;
+  final VoidCallback onEdit;
 
   @override
   Widget build(BuildContext context) {
@@ -404,9 +404,9 @@ class _AchievementCard extends StatelessWidget {
 
 /// Challenges Tab
 class _ChallengesTab extends StatelessWidget {
-  final String adminId;
 
   const _ChallengesTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
@@ -450,7 +450,7 @@ class _ChallengesTab extends StatelessWidget {
           // Weekly Challenges
           Text(
             AppLocalizations.of(context)!.adminWeeklyChallenges,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -488,9 +488,9 @@ class _ChallengesTab extends StatelessWidget {
 }
 
 class _ChallengeCard extends StatelessWidget {
-  final DailyChallenge challenge;
 
   const _ChallengeCard({required this.challenge});
+  final DailyChallenge challenge;
 
   @override
   Widget build(BuildContext context) {
@@ -602,13 +602,13 @@ class _ChallengeCard extends StatelessWidget {
 
 /// Streaks Tab
 class _StreaksTab extends StatelessWidget {
-  final String adminId;
 
   const _StreaksTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
-    final milestones = StreakMilestones.all;
+    const milestones = StreakMilestones.all;
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
@@ -740,10 +740,6 @@ class _DailyRewardConfigCard extends StatelessWidget {
 }
 
 class _ConfigRow extends StatelessWidget {
-  final String label;
-  final String value;
-  final IconData icon;
-  final Color iconColor;
 
   const _ConfigRow({
     required this.label,
@@ -751,6 +747,10 @@ class _ConfigRow extends StatelessWidget {
     required this.icon,
     required this.iconColor,
   });
+  final String label;
+  final String value;
+  final IconData icon;
+  final Color iconColor;
 
   @override
   Widget build(BuildContext context) {
@@ -788,9 +788,9 @@ class _ConfigRow extends StatelessWidget {
 }
 
 class _MilestoneCard extends StatelessWidget {
-  final StreakMilestone milestone;
 
   const _MilestoneCard({required this.milestone});
+  final StreakMilestone milestone;
 
   @override
   Widget build(BuildContext context) {
@@ -971,9 +971,9 @@ class _MilestoneCard extends StatelessWidget {
 
 /// Events Tab
 class _EventsTab extends StatelessWidget {
-  final String adminId;
 
   const _EventsTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
@@ -1061,13 +1061,13 @@ class _EventsTab extends StatelessWidget {
 }
 
 class _EventCard extends StatelessWidget {
-  final SeasonalEvent event;
-  final bool isActive;
 
   const _EventCard({
     required this.event,
     required this.isActive,
   });
+  final SeasonalEvent event;
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {
@@ -1132,7 +1132,7 @@ class _EventCard extends StatelessWidget {
                               ),
                               child: Text(
                                 AppLocalizations.of(context)!.adminActive,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold,

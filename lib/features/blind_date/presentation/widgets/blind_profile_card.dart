@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/blind_date.dart';
 
 /// Card widget for displaying a blind profile (no photos)
 class BlindProfileCard extends StatelessWidget {
-  final BlindProfileView profile;
-  final VoidCallback? onLike;
-  final VoidCallback? onPass;
-  final VoidCallback? onTap;
 
   const BlindProfileCard({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
     this.onLike,
     this.onPass,
     this.onTap,
   });
+  final BlindProfileView profile;
+  final VoidCallback? onLike;
+  final VoidCallback? onPass;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -335,18 +334,16 @@ class BlindProfileCard extends StatelessWidget {
 
 /// Compact blind match card for the matches list
 class BlindMatchCard extends StatelessWidget {
+
+  const BlindMatchCard({
+    required this.match, required this.otherProfile, super.key,
+    this.onTap,
+    this.onReveal,
+  });
   final BlindMatch match;
   final BlindProfileView otherProfile;
   final VoidCallback? onTap;
   final VoidCallback? onReveal;
-
-  const BlindMatchCard({
-    super.key,
-    required this.match,
-    required this.otherProfile,
-    this.onTap,
-    this.onReveal,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -468,14 +465,13 @@ class BlindMatchCard extends StatelessWidget {
 
 /// Reveal progress widget
 class RevealProgressWidget extends StatelessWidget {
-  final BlindMatch match;
-  final VoidCallback? onInstantReveal;
 
   const RevealProgressWidget({
-    super.key,
-    required this.match,
+    required this.match, super.key,
     this.onInstantReveal,
   });
+  final BlindMatch match;
+  final VoidCallback? onInstantReveal;
 
   @override
   Widget build(BuildContext context) {

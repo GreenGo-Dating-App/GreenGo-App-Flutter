@@ -4,16 +4,15 @@ import '../constants/app_colors.dart';
 /// Enhancement #29: New Match Badge
 /// Highlights recent matches with animated badge
 class NewMatchBadge extends StatefulWidget {
-  final Widget child;
-  final bool isNew;
-  final Duration newDuration;
 
   const NewMatchBadge({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.isNew = true,
     this.newDuration = const Duration(hours: 24),
   });
+  final Widget child;
+  final bool isNew;
+  final Duration newDuration;
 
   @override
   State<NewMatchBadge> createState() => _NewMatchBadgeState();
@@ -104,16 +103,14 @@ class _NewMatchBadgeState extends State<NewMatchBadge>
 
 /// Time-based new indicator
 class TimedNewBadge extends StatelessWidget {
+
+  const TimedNewBadge({
+    required this.matchedAt, required this.child, super.key,
+    this.newThreshold = const Duration(hours: 24),
+  });
   final DateTime matchedAt;
   final Widget child;
   final Duration newThreshold;
-
-  const TimedNewBadge({
-    super.key,
-    required this.matchedAt,
-    required this.child,
-    this.newThreshold = const Duration(hours: 24),
-  });
 
   bool get isNew => DateTime.now().difference(matchedAt) < newThreshold;
 
@@ -128,12 +125,12 @@ class TimedNewBadge extends StatelessWidget {
 
 /// "Just matched" celebration indicator
 class JustMatchedIndicator extends StatefulWidget {
-  final VoidCallback? onDismiss;
 
   const JustMatchedIndicator({
     super.key,
     this.onDismiss,
   });
+  final VoidCallback? onDismiss;
 
   @override
   State<JustMatchedIndicator> createState() => _JustMatchedIndicatorState();
@@ -222,7 +219,7 @@ class _JustMatchedIndicatorState extends State<JustMatchedIndicator>
                   ),
                   const SizedBox(width: 8),
                   const Text(
-                    "Start Connecting!",
+                    'Start Connecting!',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -255,16 +252,13 @@ class _JustMatchedIndicatorState extends State<JustMatchedIndicator>
 
 /// Match count badge for navigation
 class MatchCountBadge extends StatelessWidget {
+
+  const MatchCountBadge({
+    required this.totalMatches, required this.newMatches, required this.child, super.key,
+  });
   final int totalMatches;
   final int newMatches;
   final Widget child;
-
-  const MatchCountBadge({
-    super.key,
-    required this.totalMatches,
-    required this.newMatches,
-    required this.child,
-  });
 
   @override
   Widget build(BuildContext context) {

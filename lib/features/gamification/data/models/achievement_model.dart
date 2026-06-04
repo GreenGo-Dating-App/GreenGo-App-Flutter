@@ -1,7 +1,6 @@
-/**
- * Achievement Data Models
- * Points 176-185: Firestore serialization for achievements
- */
+/// Achievement Data Models
+/// Points 176-185: Firestore serialization for achievements
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/achievement.dart';
@@ -16,6 +15,20 @@ class UserAchievementProgressModel extends UserAchievementProgress {
     super.unlockedAt,
     super.rewardsClaimed,
   });
+
+  factory UserAchievementProgressModel.fromEntity(
+    UserAchievementProgress entity,
+  ) {
+    return UserAchievementProgressModel(
+      userId: entity.userId,
+      achievementId: entity.achievementId,
+      progress: entity.progress,
+      requiredCount: entity.requiredCount,
+      isUnlocked: entity.isUnlocked,
+      unlockedAt: entity.unlockedAt,
+      rewardsClaimed: entity.rewardsClaimed,
+    );
+  }
 
   factory UserAchievementProgressModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -59,20 +72,6 @@ class UserAchievementProgressModel extends UserAchievementProgress {
       'rewardsClaimed': rewardsClaimed,
       'updatedAt': FieldValue.serverTimestamp(),
     };
-  }
-
-  factory UserAchievementProgressModel.fromEntity(
-    UserAchievementProgress entity,
-  ) {
-    return UserAchievementProgressModel(
-      userId: entity.userId,
-      achievementId: entity.achievementId,
-      progress: entity.progress,
-      requiredCount: entity.requiredCount,
-      isUnlocked: entity.isUnlocked,
-      unlockedAt: entity.unlockedAt,
-      rewardsClaimed: entity.rewardsClaimed,
-    );
   }
 
   UserAchievementProgressModel copyWith({

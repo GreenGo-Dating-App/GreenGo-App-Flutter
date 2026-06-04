@@ -5,16 +5,6 @@ import 'package:equatable/equatable.dart';
 /// Coordinates are snapped to a ~500m grid (3 decimal places) for privacy,
 /// so the displayed location is approximate.
 class MapUser extends Equatable {
-  final String userId;
-  final double approximateLatitude;
-  final double approximateLongitude;
-  final int matchPercentage;
-  final List<String> languagesShared;
-  final bool isOnline;
-  final DateTime? lastSeen;
-  final String? displayName;
-  final String? photoUrl;
-  final double? distanceKm;
 
   const MapUser({
     required this.userId,
@@ -28,6 +18,16 @@ class MapUser extends Equatable {
     this.photoUrl,
     this.distanceKm,
   });
+  final String userId;
+  final double approximateLatitude;
+  final double approximateLongitude;
+  final int matchPercentage;
+  final List<String> languagesShared;
+  final bool isOnline;
+  final DateTime? lastSeen;
+  final String? displayName;
+  final String? photoUrl;
+  final double? distanceKm;
 
   @override
   List<Object?> get props => [

@@ -10,15 +10,13 @@ class SubscriptionModel extends Subscription {
     required super.tier,
     required super.status,
     required super.startDate,
-    super.endDate,
+    required super.price, required super.createdAt, super.endDate,
     super.durationDays,
     super.platform,
     super.purchaseToken,
     super.transactionId,
     super.orderId,
-    required super.price,
     super.currency,
-    required super.createdAt,
     super.updatedAt,
   });
 

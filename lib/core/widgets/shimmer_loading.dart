@@ -5,14 +5,13 @@ import '../constants/app_colors.dart';
 /// Enhancement #23: Shimmer Loading Skeletons
 /// Loading placeholders with shimmer effect
 class ShimmerLoading extends StatelessWidget {
-  final Widget child;
-  final bool isLoading;
 
   const ShimmerLoading({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.isLoading = true,
   });
+  final Widget child;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -151,12 +150,12 @@ class MatchCardSkeleton extends StatelessWidget {
 
 /// Message bubble loading skeleton
 class MessageSkeleton extends StatelessWidget {
-  final bool isCurrentUser;
 
   const MessageSkeleton({
     super.key,
     this.isCurrentUser = false,
   });
+  final bool isCurrentUser;
 
   @override
   Widget build(BuildContext context) {
@@ -203,14 +202,14 @@ class MessageSkeleton extends StatelessWidget {
 
 /// List loading skeleton
 class ListSkeleton extends StatelessWidget {
-  final int itemCount;
-  final Widget Function(int index)? itemBuilder;
 
   const ListSkeleton({
     super.key,
     this.itemCount = 5,
     this.itemBuilder,
   });
+  final int itemCount;
+  final Widget Function(int index)? itemBuilder;
 
   @override
   Widget build(BuildContext context) {

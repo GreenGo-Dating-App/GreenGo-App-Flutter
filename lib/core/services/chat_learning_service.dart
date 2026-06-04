@@ -7,9 +7,9 @@ import 'package:http/http.dart' as http;
 /// Uses Gemini API for: smart replies, grammar correction, cultural tooltips,
 /// word breakdown, difficulty assessment, and romanization.
 class ChatLearningService {
-  static final ChatLearningService _instance = ChatLearningService._();
   factory ChatLearningService() => _instance;
   ChatLearningService._();
+  static final ChatLearningService _instance = ChatLearningService._();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   String? _geminiApiKey;

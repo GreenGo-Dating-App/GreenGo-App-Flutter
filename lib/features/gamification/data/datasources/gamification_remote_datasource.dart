@@ -1,18 +1,18 @@
-/**
- * Gamification Remote Data Source
- * Points 176-200: Firestore operations for gamification
- */
+/// Gamification Remote Data Source
+/// Points 176-200: Firestore operations for gamification
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../domain/entities/achievement.dart';
-import '../../domain/entities/user_level.dart';
 import '../../domain/entities/daily_challenge.dart';
+import '../../domain/entities/user_level.dart';
 import '../../domain/repositories/gamification_repository.dart';
 import '../models/achievement_model.dart';
-import '../models/user_level_model.dart';
 import '../models/daily_challenge_model.dart';
+import '../models/user_level_model.dart';
 
 abstract class GamificationRemoteDataSource {
   // Achievement Operations
@@ -39,8 +39,7 @@ abstract class GamificationRemoteDataSource {
   Future<List<XPTransactionModel>> getXPHistory(String userId, int limit);
   Future<List<LeaderboardEntryModel>> getLeaderboard({
     required LeaderboardType type,
-    String? region,
-    required int limit,
+    required int limit, String? region,
     String? timePeriod,
   });
   Future<int> getUserRank(String userId, LeaderboardType type);
@@ -82,13 +81,13 @@ abstract class GamificationRemoteDataSource {
 
 class GamificationRemoteDataSourceImpl
     implements GamificationRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final FirebaseFunctions functions;
 
   GamificationRemoteDataSourceImpl({
     required this.firestore,
     required this.functions,
   });
+  final FirebaseFirestore firestore;
+  final FirebaseFunctions functions;
 
   // Collections
   CollectionReference get _achievementProgressCollection =>
@@ -110,7 +109,7 @@ class GamificationRemoteDataSourceImpl
     try {
       final doc = await firestore.collection('profiles').doc(userId).get();
       if (!doc.exists) return true; // No profile = exclude
-      final data = doc.data() as Map<String, dynamic>?;
+      final data = doc.data();
       if (data == null) return true;
 
       // Exclude admins and supporters
@@ -153,7 +152,7 @@ class GamificationRemoteDataSourceImpl
         .get();
 
     return snapshot.docs
-        .map((doc) => UserAchievementProgressModel.fromFirestore(doc))
+        .map(UserAchievementProgressModel.fromFirestore)
         .toList();
   }
 
@@ -201,7 +200,7 @@ class GamificationRemoteDataSourceImpl
         throw Exception('Achievement progress not found');
       }
 
-      final currentProgress = UserAchievementProgressModel.fromFirestore(doc as DocumentSnapshot<Object?>);
+      final currentProgress = UserAchievementProgressModel.fromFirestore(doc);
 
       if (currentProgress.isUnlocked) {
         throw Exception('Achievement already unlocked');
@@ -253,7 +252,7 @@ class GamificationRemoteDataSourceImpl
           rewardsClaimed: false,
         );
       } else {
-        currentProgress = UserAchievementProgressModel.fromFirestore(doc as DocumentSnapshot<Object?>);
+        currentProgress = UserAchievementProgressModel.fromFirestore(doc);
       }
 
       final updated = currentProgress.copyWith(
@@ -332,7 +331,7 @@ class GamificationRemoteDataSourceImpl
           isVIP: false,
         );
       } else {
-        currentLevel = UserLevelModel.fromFirestore(doc as DocumentSnapshot<Object?>);
+        currentLevel = UserLevelModel.fromFirestore(doc);
       }
 
       final newTotalXP = currentLevel.totalXP + xpAmount;
@@ -383,15 +382,14 @@ class GamificationRemoteDataSourceImpl
         .get();
 
     return snapshot.docs
-        .map((doc) => XPTransactionModel.fromFirestore(doc))
+        .map(XPTransactionModel.fromFirestore)
         .toList();
   }
 
   @override
   Future<List<LeaderboardEntryModel>> getLeaderboard({
     required LeaderboardType type,
-    String? region,
-    required int limit,
+    required int limit, String? region,
     String? timePeriod,
   }) async {
     // If a time period is specified, aggregate XP from xp_transactions
@@ -411,7 +409,7 @@ class GamificationRemoteDataSourceImpl
 
     // Default: all-time leaderboard from user_levels
     // Fetch extra entries to account for filtered admin/support users
-    Query query = _userLevelsCollection
+    var query = _userLevelsCollection
         .orderBy('totalXP', descending: true)
         .limit(limit + 20);
 
@@ -422,9 +420,9 @@ class GamificationRemoteDataSourceImpl
     final snapshot = await query.get();
 
     final entries = <LeaderboardEntryModel>[];
-    int rank = 1;
+    var rank = 1;
 
-    for (var doc in snapshot.docs) {
+    for (final doc in snapshot.docs) {
       if (entries.length >= limit) break;
       // Exclude admins and supporters from leaderboard
       if (await _shouldExcludeFromLeaderboard(doc.id)) continue;
@@ -449,9 +447,7 @@ class GamificationRemoteDataSourceImpl
   /// user details from user_levels for display.
   Future<List<LeaderboardEntryModel>> _getTimePeriodLeaderboard({
     required LeaderboardType type,
-    String? region,
-    required int limit,
-    required String timePeriod,
+    required int limit, required String timePeriod, String? region,
   }) async {
     final now = DateTime.now();
     DateTime startDate;
@@ -479,7 +475,7 @@ class GamificationRemoteDataSourceImpl
 
     // Aggregate XP by userId
     final xpByUser = <String, int>{};
-    for (var doc in txSnapshot.docs) {
+    for (final doc in txSnapshot.docs) {
       final data = doc.data() as Map<String, dynamic>;
       final userId = data['userId'] as String;
       final xp = (data['xpAmount'] as num?)?.toInt() ?? 0;
@@ -492,8 +488,8 @@ class GamificationRemoteDataSourceImpl
 
     // Fetch user details and apply regional filter
     final entries = <LeaderboardEntryModel>[];
-    int rank = 1;
-    for (var entry in sorted) {
+    var rank = 1;
+    for (final entry in sorted) {
       if (entries.length >= limit) break;
 
       final userDoc = await _userLevelsCollection.doc(entry.key).get();
@@ -615,7 +611,7 @@ class GamificationRemoteDataSourceImpl
         .get();
 
     return snapshot.docs
-        .map((doc) => UserChallengeProgressModel.fromFirestore(doc))
+        .map(UserChallengeProgressModel.fromFirestore)
         .toList();
   }
 
@@ -653,7 +649,7 @@ class GamificationRemoteDataSourceImpl
           rewardsClaimed: false,
         );
       } else {
-        currentProgress = UserChallengeProgressModel.fromFirestore(doc as DocumentSnapshot<Object?>);
+        currentProgress = UserChallengeProgressModel.fromFirestore(doc);
       }
 
       final newProgress = currentProgress.progress + incrementBy;
@@ -689,7 +685,7 @@ class GamificationRemoteDataSourceImpl
         throw Exception('Challenge progress not found');
       }
 
-      final progress = UserChallengeProgressModel.fromFirestore(doc as DocumentSnapshot<Object?>);
+      final progress = UserChallengeProgressModel.fromFirestore(doc);
 
       if (!progress.isCompleted) {
         throw Exception('Challenge not completed');

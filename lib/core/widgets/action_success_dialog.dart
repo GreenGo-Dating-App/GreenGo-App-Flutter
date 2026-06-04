@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Animated success dialog for profile actions
 /// Shows a beautiful modal with checkmark animation
 class ActionSuccessDialog extends StatefulWidget {
+
+  const ActionSuccessDialog({
+    required this.title, required this.message, super.key,
+    this.icon = Icons.check_circle,
+    this.autoDismiss = const Duration(seconds: 2),
+    this.onDismiss,
+  });
   final String title;
   final String message;
   final IconData icon;
   final Duration autoDismiss;
   final VoidCallback? onDismiss;
-
-  const ActionSuccessDialog({
-    super.key,
-    required this.title,
-    required this.message,
-    this.icon = Icons.check_circle,
-    this.autoDismiss = const Duration(seconds: 2),
-    this.onDismiss,
-  });
 
   /// Show nickname updated success dialog
   static Future<void> showNicknameUpdated(BuildContext context) {

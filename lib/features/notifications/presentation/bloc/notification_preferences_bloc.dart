@@ -9,8 +9,6 @@ import 'notification_preferences_state.dart';
 /// Manages notification preferences state
 class NotificationPreferencesBloc
     extends Bloc<NotificationPreferencesEvent, NotificationPreferencesState> {
-  final GetNotificationPreferences getNotificationPreferences;
-  final UpdateNotificationPreferences updateNotificationPreferences;
 
   NotificationPreferencesBloc({
     required this.getNotificationPreferences,
@@ -19,6 +17,8 @@ class NotificationPreferencesBloc
     on<NotificationPreferencesLoadRequested>(_onLoadRequested);
     on<NotificationPreferencesUpdated>(_onUpdated);
   }
+  final GetNotificationPreferences getNotificationPreferences;
+  final UpdateNotificationPreferences updateNotificationPreferences;
 
   Future<void> _onLoadRequested(
     NotificationPreferencesLoadRequested event,

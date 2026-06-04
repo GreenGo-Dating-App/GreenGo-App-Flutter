@@ -1,7 +1,6 @@
-/**
- * User Level Data Models
- * Points 186-195: Firestore serialization for levels and XP
- */
+/// User Level Data Models
+/// Points 186-195: Firestore serialization for levels and XP
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/user_level.dart';
@@ -17,6 +16,19 @@ class UserLevelModel extends UserLevel {
     super.regionalRank,
     super.isVIP,
   });
+
+  factory UserLevelModel.fromEntity(UserLevel entity) {
+    return UserLevelModel(
+      userId: entity.userId,
+      level: entity.level,
+      currentXP: entity.currentXP,
+      totalXP: entity.totalXP,
+      lastUpdated: entity.lastUpdated,
+      region: entity.region,
+      regionalRank: entity.regionalRank,
+      isVIP: entity.isVIP,
+    );
+  }
 
   factory UserLevelModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -61,19 +73,6 @@ class UserLevelModel extends UserLevel {
       'regionalRank': regionalRank,
       'isVIP': isVIP,
     };
-  }
-
-  factory UserLevelModel.fromEntity(UserLevel entity) {
-    return UserLevelModel(
-      userId: entity.userId,
-      level: entity.level,
-      currentXP: entity.currentXP,
-      totalXP: entity.totalXP,
-      lastUpdated: entity.lastUpdated,
-      region: entity.region,
-      regionalRank: entity.regionalRank,
-      isVIP: entity.isVIP,
-    );
   }
 
   UserLevelModel copyWith({

@@ -1,16 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/utils/base_membership_gate.dart';
-import '../../../profile/domain/repositories/profile_repository.dart';
-import '../../../profile/domain/entities/profile.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../domain/entities/conversation.dart';
 import '../bloc/conversations_bloc.dart';
 import '../bloc/conversations_event.dart';
@@ -22,14 +23,13 @@ import 'chat_screen.dart';
 ///
 /// Displays list of user's conversations
 class ConversationsScreen extends StatefulWidget {
-  final String userId;
-  final void Function(int decrementBy)? onBadgeDecrement;
 
   const ConversationsScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.onBadgeDecrement,
   });
+  final String userId;
+  final void Function(int decrementBy)? onBadgeDecrement;
 
   @override
   State<ConversationsScreen> createState() => _ConversationsScreenState();

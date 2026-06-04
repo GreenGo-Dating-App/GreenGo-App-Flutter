@@ -1,23 +1,22 @@
-/**
- * My Progress Screen
- * Comprehensive view of user's badges, level, XP, and achievements
- */
+/// My Progress Screen
+/// Comprehensive view of user's badges, level, XP, and achievements
+library;
 
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/safe_navigation.dart';
+import '../../domain/entities/achievement.dart';
 import '../../domain/entities/badge.dart';
 import '../../domain/entities/user_level.dart';
-import '../../domain/entities/achievement.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 class MyProgressScreen extends StatefulWidget {
-  final String userId;
 
   const MyProgressScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<MyProgressScreen> createState() => _MyProgressScreenState();
@@ -60,7 +59,7 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
           .where('userId', isEqualTo: widget.userId)
           .get();
 
-      final List<UserBadgeWithDetails> badges = [];
+      final badges = <UserBadgeWithDetails>[];
       for (final doc in badgesSnapshot.docs) {
         final data = doc.data();
         final badgeId = data['badgeId'] as String?;
@@ -629,7 +628,7 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
       ),
       child: Column(
         children: [
-          ...displayedAchievements.map((achievement) => _buildAchievementItem(achievement)),
+          ...displayedAchievements.map(_buildAchievementItem),
           if (allAchievements.length > 5) ...[
             const SizedBox(height: 12),
             Text(
@@ -653,11 +652,11 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
           Container(
             width: 40,
             height: 40,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.divider,
             ),
-            child: Icon(
+            child: const Icon(
               Icons.emoji_events,
               color: AppColors.textTertiary,
               size: 20,

@@ -10,14 +10,32 @@ class VideoCallModel extends VideoCall {
     required super.type,
     required super.status,
     required super.initiatedAt,
-    super.answeredAt,
+    required super.callMetrics, super.answeredAt,
     super.endedAt,
     super.duration,
     super.quality,
-    required super.callMetrics,
     super.wasRecorded,
     super.recordingUrl,
   });
+
+  /// Create from entity
+  factory VideoCallModel.fromEntity(VideoCall entity) {
+    return VideoCallModel(
+      callId: entity.callId,
+      callerId: entity.callerId,
+      receiverId: entity.receiverId,
+      type: entity.type,
+      status: entity.status,
+      initiatedAt: entity.initiatedAt,
+      answeredAt: entity.answeredAt,
+      endedAt: entity.endedAt,
+      duration: entity.duration,
+      quality: entity.quality,
+      callMetrics: entity.callMetrics,
+      wasRecorded: entity.wasRecorded,
+      recordingUrl: entity.recordingUrl,
+    );
+  }
 
   /// Create from Firestore document
   factory VideoCallModel.fromFirestore(DocumentSnapshot doc) {
@@ -88,25 +106,6 @@ class VideoCallModel extends VideoCall {
         wasRecorded: wasRecorded,
         recordingUrl: recordingUrl,
       );
-
-  /// Create from entity
-  factory VideoCallModel.fromEntity(VideoCall entity) {
-    return VideoCallModel(
-      callId: entity.callId,
-      callerId: entity.callerId,
-      receiverId: entity.receiverId,
-      type: entity.type,
-      status: entity.status,
-      initiatedAt: entity.initiatedAt,
-      answeredAt: entity.answeredAt,
-      endedAt: entity.endedAt,
-      duration: entity.duration,
-      quality: entity.quality,
-      callMetrics: entity.callMetrics,
-      wasRecorded: entity.wasRecorded,
-      recordingUrl: entity.recordingUrl,
-    );
-  }
 }
 
 /// VideoCallQuality Model
@@ -226,14 +225,10 @@ class CallHistoryEntryModel extends CallHistoryEntry {
     required super.callId,
     required super.userId,
     required super.otherUserId,
-    super.otherUserName,
+    required super.type, required super.status, required super.timestamp, required super.wasIncoming, super.otherUserName,
     super.otherUserPhotoUrl,
-    required super.type,
-    required super.status,
-    required super.timestamp,
     super.duration,
     super.quality,
-    required super.wasIncoming,
   });
 
   factory CallHistoryEntryModel.fromFirestore(DocumentSnapshot doc) {
@@ -296,8 +291,7 @@ class VideoSDKConfigModel extends VideoSDKConfig {
     required super.provider,
     required super.appId,
     required super.channelId,
-    super.token,
-    required super.uid,
+    required super.uid, super.token,
     super.mode,
   });
 

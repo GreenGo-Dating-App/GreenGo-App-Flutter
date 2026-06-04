@@ -5,6 +5,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 /// Service to track user activity for re-engagement notifications
 /// Updates lastActiveAt field periodically when user is active
 class ActivityTrackingService {
+
+  ActivityTrackingService({
+    FirebaseFirestore? firestore,
+    FirebaseAuth? auth,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
@@ -13,12 +19,6 @@ class ActivityTrackingService {
 
   /// Minimum interval between updates (5 minutes)
   static const Duration _updateInterval = Duration(minutes: 5);
-
-  ActivityTrackingService({
-    FirebaseFirestore? firestore,
-    FirebaseAuth? auth,
-  })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _auth = auth ?? FirebaseAuth.instance;
 
   /// Start tracking user activity
   /// Call this when the app becomes active

@@ -8,11 +8,22 @@ class SpotReviewModel extends SpotReview {
     required super.spotId,
     required super.userId,
     required super.userName,
-    super.userPhotoUrl,
-    required super.rating,
-    required super.text,
-    required super.createdAt,
+    required super.rating, required super.text, required super.createdAt, super.userPhotoUrl,
   });
+
+  /// Create a [SpotReviewModel] from a domain [SpotReview] entity.
+  factory SpotReviewModel.fromEntity(SpotReview review) {
+    return SpotReviewModel(
+      id: review.id,
+      spotId: review.spotId,
+      userId: review.userId,
+      userName: review.userName,
+      userPhotoUrl: review.userPhotoUrl,
+      rating: review.rating,
+      text: review.text,
+      createdAt: review.createdAt,
+    );
+  }
 
   /// Create a [SpotReviewModel] from a Firestore document snapshot.
   ///
@@ -43,19 +54,5 @@ class SpotReviewModel extends SpotReview {
       'text': text,
       'createdAt': Timestamp.fromDate(createdAt),
     };
-  }
-
-  /// Create a [SpotReviewModel] from a domain [SpotReview] entity.
-  factory SpotReviewModel.fromEntity(SpotReview review) {
-    return SpotReviewModel(
-      id: review.id,
-      spotId: review.spotId,
-      userId: review.userId,
-      userName: review.userName,
-      userPhotoUrl: review.userPhotoUrl,
-      rating: review.rating,
-      text: review.text,
-      createdAt: review.createdAt,
-    );
   }
 }

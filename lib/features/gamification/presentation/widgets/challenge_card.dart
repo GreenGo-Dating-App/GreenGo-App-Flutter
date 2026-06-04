@@ -1,22 +1,20 @@
-/**
- * Challenge Card Widget
- * Points 196-199: Display challenge with progress and rewards
- */
+/// Challenge Card Widget
+/// Points 196-199: Display challenge with progress and rewards
+library;
 
 import 'package:flutter/material.dart';
 import '../../domain/entities/daily_challenge.dart';
 
 class ChallengeCard extends StatelessWidget {
+
+  const ChallengeCard({
+    required this.challenge, super.key,
+    this.progress,
+    this.onClaim,
+  });
   final DailyChallenge challenge;
   final UserChallengeProgress? progress;
   final VoidCallback? onClaim;
-
-  const ChallengeCard({
-    Key? key,
-    required this.challenge,
-    this.progress,
-    this.onClaim,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

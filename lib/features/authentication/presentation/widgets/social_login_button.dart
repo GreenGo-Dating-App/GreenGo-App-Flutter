@@ -3,16 +3,15 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
 class SocialLoginButton extends StatelessWidget {
-  final String icon;
-  final VoidCallback? onPressed;
-  final String? label;
 
   const SocialLoginButton({
-    super.key,
-    required this.icon,
+    required this.icon, super.key,
     this.onPressed,
     this.label,
   });
+  final String icon;
+  final VoidCallback? onPressed;
+  final String? label;
 
   @override
   Widget build(BuildContext context) {

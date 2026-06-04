@@ -1,26 +1,25 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/story.dart';
 
 /// Stories Screen - Instagram-like 24-hour stories
 class StoriesScreen extends StatefulWidget {
+
+  const StoriesScreen({
+    required this.currentUserId, required this.userStories, super.key,
+    this.initialUserIndex = 0,
+    this.initialStoryIndex = 0,
+  });
   final String currentUserId;
   final List<UserStories> userStories;
   final int initialUserIndex;
   final int initialStoryIndex;
-
-  const StoriesScreen({
-    super.key,
-    required this.currentUserId,
-    required this.userStories,
-    this.initialUserIndex = 0,
-    this.initialStoryIndex = 0,
-  });
 
   @override
   State<StoriesScreen> createState() => _StoriesScreenState();
@@ -419,18 +418,15 @@ class _StoriesScreenState extends State<StoriesScreen>
 
 /// Stories Row Widget for home/discover screen
 class StoriesRow extends StatelessWidget {
+
+  const StoriesRow({
+    required this.currentUserId, required this.userStories, required this.onAddStory, super.key,
+    this.onStoryTap,
+  });
   final String currentUserId;
   final List<UserStories> userStories;
   final VoidCallback onAddStory;
   final Function(int userIndex)? onStoryTap;
-
-  const StoriesRow({
-    super.key,
-    required this.currentUserId,
-    required this.userStories,
-    required this.onAddStory,
-    this.onStoryTap,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -565,14 +561,12 @@ class StoriesRow extends StatelessWidget {
 
 /// Create Story Screen
 class CreateStoryScreen extends StatefulWidget {
-  final String userId;
-  final Function(File file, StoryType type, String? caption) onPost;
 
   const CreateStoryScreen({
-    super.key,
-    required this.userId,
-    required this.onPost,
+    required this.userId, required this.onPost, super.key,
   });
+  final String userId;
+  final Function(File file, StoryType type, String? caption) onPost;
 
   @override
   State<CreateStoryScreen> createState() => _CreateStoryScreenState();
@@ -587,7 +581,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   bool _isPosting = false;
 
   Future<void> _pickImage() async {
-    final XFile? image = await _picker.pickImage(
+    final image = await _picker.pickImage(
       source: ImageSource.gallery,
       maxWidth: 1080,
       maxHeight: 1920,
@@ -602,7 +596,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   }
 
   Future<void> _pickVideo() async {
-    final XFile? video = await _picker.pickVideo(
+    final video = await _picker.pickVideo(
       source: ImageSource.gallery,
       maxDuration: const Duration(seconds: 30),
     );
@@ -618,7 +612,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   }
 
   Future<void> _takePhoto() async {
-    final XFile? image = await _picker.pickImage(
+    final image = await _picker.pickImage(
       source: ImageSource.camera,
       maxWidth: 1080,
       maxHeight: 1920,
@@ -633,7 +627,7 @@ class _CreateStoryScreenState extends State<CreateStoryScreen> {
   }
 
   Future<void> _recordVideo() async {
-    final XFile? video = await _picker.pickVideo(
+    final video = await _picker.pickVideo(
       source: ImageSource.camera,
       maxDuration: const Duration(seconds: 30),
     );

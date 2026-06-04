@@ -21,13 +21,13 @@ abstract class ProfileRemoteDataSource {
 }
 
 class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final FirebaseStorage storage;
 
   ProfileRemoteDataSourceImpl({
     required this.firestore,
     required this.storage,
   });
+  final FirebaseFirestore firestore;
+  final FirebaseStorage storage;
 
   @override
   Future<ProfileModel> createProfile(ProfileModel profile) async {
@@ -140,7 +140,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   Future<String> uploadPhoto(String userId, File photo, {String? folder}) async {
     try {
       // Compress image before upload to reduce storage costs
-      File photoToUpload = photo;
+      var photoToUpload = photo;
       try {
         photoToUpload = await ImageCompression.compressProfilePhoto(photo);
         debugPrint('Photo compressed for upload');
@@ -235,8 +235,8 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
     try {
       final profile = await getProfile(userId);
 
-      int completedFields = 0;
-      int totalFields = 9;
+      var completedFields = 0;
+      const totalFields = 9;
 
       if (profile.displayName.isNotEmpty) completedFields++;
       if (profile.photoUrls.isNotEmpty) completedFields++;

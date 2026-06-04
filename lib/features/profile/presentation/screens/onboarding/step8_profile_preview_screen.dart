@@ -2,9 +2,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -432,7 +433,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
 
   int _calculateAge(DateTime birthDate) {
     final now = DateTime.now();
-    int age = now.year - birthDate.year;
+    var age = now.year - birthDate.year;
     if (now.month < birthDate.month ||
         (now.month == birthDate.month && now.day < birthDate.day)) {
       age--;
@@ -442,9 +443,9 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
 }
 
 class _InfoItem {
+
+  _InfoItem(this.label, this.value, {this.isMultiline = false});
   final String label;
   final String value;
   final bool isMultiline;
-
-  _InfoItem(this.label, this.value, {this.isMultiline = false});
 }

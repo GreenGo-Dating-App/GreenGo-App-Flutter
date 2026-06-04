@@ -5,13 +5,11 @@ import '../../domain/entities/login_streak.dart';
 class LoginStreakModel extends LoginStreak {
   const LoginStreakModel({
     required super.userId,
-    super.currentStreak,
+    required super.createdAt, required super.updatedAt, super.currentStreak,
     super.longestStreak,
     super.lastLoginDate,
     super.totalDaysLoggedIn,
     super.claimedMilestones,
-    required super.createdAt,
-    required super.updatedAt,
   });
 
   /// Create from Firestore document
@@ -62,7 +60,7 @@ class LoginStreakModel extends LoginStreak {
           lastLoginDate != null ? Timestamp.fromDate(lastLoginDate!) : null,
       'totalDaysLoggedIn': totalDaysLoggedIn,
       'claimedMilestones': claimedMilestones
-          .map((m) => StreakMilestoneModel.toMap(m))
+          .map(StreakMilestoneModel.toMap)
           .toList(),
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': Timestamp.fromDate(updatedAt),

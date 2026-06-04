@@ -1,11 +1,12 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uuid/uuid.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Language Actions Widget
@@ -25,6 +26,13 @@ import '../../domain/entities/message.dart';
 /// )
 /// ```
 class MessageLanguageActions extends StatefulWidget {
+
+  const MessageLanguageActions({
+    required this.message, required this.currentUserId, super.key,
+    this.userNativeLanguage,
+    this.onTranslated,
+    this.existingTranslation,
+  });
   /// The message to provide actions for
   final Message message;
 
@@ -39,15 +47,6 @@ class MessageLanguageActions extends StatefulWidget {
 
   /// Optional: existing translation from cache (avoids re-translating)
   final String? existingTranslation;
-
-  const MessageLanguageActions({
-    super.key,
-    required this.message,
-    required this.currentUserId,
-    this.userNativeLanguage,
-    this.onTranslated,
-    this.existingTranslation,
-  });
 
   @override
   State<MessageLanguageActions> createState() => _MessageLanguageActionsState();
@@ -276,8 +275,7 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
   }
 
   Widget _buildActionPill({
-    IconData? icon,
-    required String label,
+    required String label, IconData? icon,
     VoidCallback? onTap,
     bool isLoading = false,
     bool isCompleted = false,

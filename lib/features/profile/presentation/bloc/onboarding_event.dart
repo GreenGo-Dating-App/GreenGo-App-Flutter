@@ -1,7 +1,9 @@
 import 'dart:io';
+
 import 'package:equatable/equatable.dart';
-import '../../domain/entities/profile.dart';
+
 import '../../domain/entities/location.dart';
+import '../../domain/entities/profile.dart';
 import '../../domain/entities/social_links.dart';
 
 abstract class OnboardingEvent extends Equatable {
@@ -12,9 +14,9 @@ abstract class OnboardingEvent extends Equatable {
 }
 
 class OnboardingStarted extends OnboardingEvent {
-  final String userId;
 
   const OnboardingStarted({required this.userId});
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -29,131 +31,131 @@ class OnboardingPreviousStep extends OnboardingEvent {
 }
 
 class OnboardingBasicInfoUpdated extends OnboardingEvent {
-  final String displayName;
-  final DateTime dateOfBirth;
-  final String gender;
 
   const OnboardingBasicInfoUpdated({
     required this.displayName,
     required this.dateOfBirth,
     required this.gender,
   });
+  final String displayName;
+  final DateTime dateOfBirth;
+  final String gender;
 
   @override
   List<Object?> get props => [displayName, dateOfBirth, gender];
 }
 
 class OnboardingPhotosUpdated extends OnboardingEvent {
-  final List<String> photoUrls;
 
   const OnboardingPhotosUpdated({required this.photoUrls});
+  final List<String> photoUrls;
 
   @override
   List<Object?> get props => [photoUrls];
 }
 
 class OnboardingPhotoAdded extends OnboardingEvent {
-  final File photo;
 
   const OnboardingPhotoAdded({required this.photo});
+  final File photo;
 
   @override
   List<Object?> get props => [photo];
 }
 
 class OnboardingBioUpdated extends OnboardingEvent {
-  final String bio;
 
   const OnboardingBioUpdated({required this.bio});
+  final String bio;
 
   @override
   List<Object?> get props => [bio];
 }
 
 class OnboardingInterestsUpdated extends OnboardingEvent {
-  final List<String> interests;
 
   const OnboardingInterestsUpdated({required this.interests});
+  final List<String> interests;
 
   @override
   List<Object?> get props => [interests];
 }
 
 class OnboardingLocationUpdated extends OnboardingEvent {
-  final Location location;
-  final List<String> languages;
 
   const OnboardingLocationUpdated({
     required this.location,
     required this.languages,
   });
+  final Location location;
+  final List<String> languages;
 
   @override
   List<Object?> get props => [location, languages];
 }
 
 class OnboardingVoiceUpdated extends OnboardingEvent {
-  final String voiceUrl;
 
   const OnboardingVoiceUpdated({required this.voiceUrl});
+  final String voiceUrl;
 
   @override
   List<Object?> get props => [voiceUrl];
 }
 
 class OnboardingPersonalityUpdated extends OnboardingEvent {
-  final PersonalityTraits traits;
 
   const OnboardingPersonalityUpdated({required this.traits});
+  final PersonalityTraits traits;
 
   @override
   List<Object?> get props => [traits];
 }
 
 class OnboardingVerificationPhotoAdded extends OnboardingEvent {
-  final File photo;
 
   const OnboardingVerificationPhotoAdded({required this.photo});
+  final File photo;
 
   @override
   List<Object?> get props => [photo];
 }
 
 class OnboardingVerificationPhotoUpdated extends OnboardingEvent {
-  final String photoUrl;
 
   const OnboardingVerificationPhotoUpdated({required this.photoUrl});
+  final String photoUrl;
 
   @override
   List<Object?> get props => [photoUrl];
 }
 
 class OnboardingLearningLanguagesUpdated extends OnboardingEvent {
-  final List<String> preferredLanguages;
-  final String? nativeLanguage;
 
   const OnboardingLearningLanguagesUpdated({
     required this.preferredLanguages,
     this.nativeLanguage,
   });
+  final List<String> preferredLanguages;
+  final String? nativeLanguage;
 
   @override
   List<Object?> get props => [preferredLanguages, nativeLanguage];
 }
 
 class OnboardingTravelPreferenceUpdated extends OnboardingEvent {
-  final String travelPreference;
 
   const OnboardingTravelPreferenceUpdated({required this.travelPreference});
+  final String travelPreference;
 
   @override
   List<Object?> get props => [travelPreference];
 }
 
 class OnboardingSocialLinksUpdated extends OnboardingEvent {
-  final SocialLinks socialLinks;
 
   const OnboardingSocialLinksUpdated({required this.socialLinks});
+  final SocialLinks socialLinks;
 
   @override
   List<Object?> get props => [socialLinks];
@@ -164,9 +166,9 @@ class OnboardingCompleted extends OnboardingEvent {
 }
 
 class OnboardingPhoneVerificationCompleted extends OnboardingEvent {
-  final String phoneNumber;
 
   const OnboardingPhoneVerificationCompleted({required this.phoneNumber});
+  final String phoneNumber;
 
   @override
   List<Object?> get props => [phoneNumber];

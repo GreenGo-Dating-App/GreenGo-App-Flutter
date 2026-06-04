@@ -1,13 +1,15 @@
 import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../domain/entities/match.dart' as domain;
-import '../../domain/usecases/get_matches.dart';
 import '../../domain/repositories/discovery_repository.dart';
+import '../../domain/usecases/get_matches.dart';
 import 'matches_event.dart';
 import 'matches_state.dart';
 
@@ -15,14 +17,6 @@ import 'matches_state.dart';
 ///
 /// Manages user's matches with real-time Firestore stream updates
 class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
-  final GetMatches getMatches;
-  final DiscoveryRepository repository;
-  final ProfileRepository profileRepository;
-
-  StreamSubscription<QuerySnapshot>? _matchesStream1;
-  StreamSubscription<QuerySnapshot>? _matchesStream2;
-  String? _currentUserId;
-  Timer? _streamDebounce;
 
   MatchesBloc({
     required this.getMatches,
@@ -35,6 +29,14 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
     on<MatchUnmatchRequested>(_onUnmatch);
     on<MatchesStreamUpdated>(_onStreamUpdated);
   }
+  final GetMatches getMatches;
+  final DiscoveryRepository repository;
+  final ProfileRepository profileRepository;
+
+  StreamSubscription<QuerySnapshot>? _matchesStream1;
+  StreamSubscription<QuerySnapshot>? _matchesStream2;
+  String? _currentUserId;
+  Timer? _streamDebounce;
 
   Future<void> _onLoadMatches(
     MatchesLoadRequested event,
@@ -87,7 +89,7 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
     List<domain.Match> matches,
     String currentUserId,
   ) async {
-    final Map<String, Profile> profiles = {};
+    final profiles = <String, Profile>{};
     final userIds = <String>{currentUserId};
 
     for (final match in matches) {
@@ -234,8 +236,8 @@ class MatchesBloc extends Bloc<MatchesEvent, MatchesState> {
         final updatedMatches = currentState.matches.map((match) {
           if (match.matchId == event.matchId) {
             return match.copyWith(
-              user1Seen: event.userId == match.userId1 ? true : match.user1Seen,
-              user2Seen: event.userId == match.userId2 ? true : match.user2Seen,
+              user1Seen: event.userId == match.userId1 || match.user1Seen,
+              user2Seen: event.userId == match.userId2 || match.user2Seen,
             );
           }
           return match;

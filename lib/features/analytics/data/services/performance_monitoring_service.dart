@@ -1,11 +1,11 @@
-/**
- * Performance Monitoring Service
- * Points 261-270: Firebase Performance Monitoring integration
- */
+/// Performance Monitoring Service
+/// Points 261-270: Firebase Performance Monitoring integration
+library;
 
-import 'package:firebase_performance/firebase_performance.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../domain/entities/performance_metrics.dart';
 
 class PerformanceMonitoringService {
@@ -23,9 +23,7 @@ class PerformanceMonitoringService {
     await _crashlytics.setCrashlyticsCollectionEnabled(true);
 
     // Set up Flutter error handling
-    FlutterError.onError = (FlutterErrorDetails details) {
-      _crashlytics.recordFlutterFatalError(details);
-    };
+    FlutterError.onError = _crashlytics.recordFlutterFatalError;
 
     // Set up Dart error handling
     PlatformDispatcher.instance.onError = (error, stack) {
@@ -143,7 +141,7 @@ class PerformanceMonitoringService {
       return;
     }
 
-    final Uri uri = Uri.parse(url);
+    final uri = Uri.parse(url);
     final metric = _performance.newHttpMetric(url, HttpMethod.values.firstWhere(
       (m) => m.name.toUpperCase() == httpMethod.toUpperCase(),
       orElse: () => HttpMethod.Get,

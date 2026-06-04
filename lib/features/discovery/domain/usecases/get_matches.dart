@@ -8,13 +8,13 @@ import '../repositories/discovery_repository.dart';
 ///
 /// Retrieves the user's matches
 class GetMatches implements UseCase<List<Match>, GetMatchesParams> {
-  final DiscoveryRepository repository;
 
   GetMatches(this.repository);
+  final DiscoveryRepository repository;
 
   @override
   Future<Either<Failure, List<Match>>> call(GetMatchesParams params) async {
-    return await repository.getMatches(
+    return repository.getMatches(
       userId: params.userId,
       activeOnly: params.activeOnly,
     );
@@ -22,11 +22,11 @@ class GetMatches implements UseCase<List<Match>, GetMatchesParams> {
 }
 
 class GetMatchesParams {
-  final String userId;
-  final bool activeOnly;
 
   GetMatchesParams({
     required this.userId,
     this.activeOnly = true,
   });
+  final String userId;
+  final bool activeOnly;
 }

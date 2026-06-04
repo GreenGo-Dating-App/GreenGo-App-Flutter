@@ -6,14 +6,12 @@ import '../services/version_check_service.dart';
 ///
 /// Non-dismissible dialog that blocks app usage until user updates
 class ForceUpdateDialog extends StatelessWidget {
-  final VersionCheckResult result;
-  final VoidCallback onUpdate;
 
   const ForceUpdateDialog({
-    super.key,
-    required this.result,
-    required this.onUpdate,
+    required this.result, required this.onUpdate, super.key,
   });
+  final VersionCheckResult result;
+  final VoidCallback onUpdate;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +55,7 @@ class ForceUpdateDialog extends StatelessWidget {
               const SizedBox(height: 12),
 
               // Message
-              Text(
+              const Text(
                 'A new version of GreenGo is available. Please update to continue using the app.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -193,16 +191,13 @@ class ForceUpdateDialog extends StatelessWidget {
 ///
 /// Dismissible dialog that prompts user to update but allows skipping
 class SoftUpdateDialog extends StatelessWidget {
+
+  const SoftUpdateDialog({
+    required this.result, required this.onUpdate, required this.onSkip, super.key,
+  });
   final VersionCheckResult result;
   final VoidCallback onUpdate;
   final VoidCallback onSkip;
-
-  const SoftUpdateDialog({
-    super.key,
-    required this.result,
-    required this.onUpdate,
-    required this.onSkip,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -244,7 +239,7 @@ class SoftUpdateDialog extends StatelessWidget {
             const SizedBox(height: 12),
 
             // Message
-            Text(
+            const Text(
               'A new version of GreenGo is available with improvements and new features.',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -403,12 +398,11 @@ class SoftUpdateDialog extends StatelessWidget {
 ///
 /// Full screen shown when app is under maintenance
 class MaintenanceScreen extends StatelessWidget {
-  final String message;
 
   const MaintenanceScreen({
-    super.key,
-    required this.message,
+    required this.message, super.key,
   });
+  final String message;
 
   @override
   Widget build(BuildContext context) {
@@ -492,7 +486,7 @@ class UpdateDialogHelper {
       barrierDismissible: false,
       builder: (context) => ForceUpdateDialog(
         result: result,
-        onUpdate: () => versionCheck.openStore(),
+        onUpdate: versionCheck.openStore,
       ),
     );
   }

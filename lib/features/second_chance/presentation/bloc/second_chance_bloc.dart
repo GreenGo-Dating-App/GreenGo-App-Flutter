@@ -6,15 +6,6 @@ import 'second_chance_state.dart';
 
 /// Second Chance BLoC
 class SecondChanceBloc extends Bloc<SecondChanceEvent, SecondChanceState> {
-  final GetSecondChanceProfiles getSecondChanceProfiles;
-  final GetSecondChanceUsage getSecondChanceUsage;
-  final LikeSecondChance likeSecondChance;
-  final PassSecondChance passSecondChance;
-  final PurchaseUnlimitedSecondChances purchaseUnlimited;
-
-  List<SecondChanceProfile> _profilesCache = [];
-  SecondChanceUsage? _usageCache;
-  int _currentIndex = 0;
 
   SecondChanceBloc({
     required this.getSecondChanceProfiles,
@@ -30,6 +21,15 @@ class SecondChanceBloc extends Bloc<SecondChanceEvent, SecondChanceState> {
     on<PurchaseUnlimitedEvent>(_onPurchaseUnlimited);
     on<SelectSecondChanceProfile>(_onSelectProfile);
   }
+  final GetSecondChanceProfiles getSecondChanceProfiles;
+  final GetSecondChanceUsage getSecondChanceUsage;
+  final LikeSecondChance likeSecondChance;
+  final PassSecondChance passSecondChance;
+  final PurchaseUnlimitedSecondChances purchaseUnlimited;
+
+  List<SecondChanceProfile> _profilesCache = [];
+  SecondChanceUsage? _usageCache;
+  int _currentIndex = 0;
 
   /// Load second chance profiles
   Future<void> _onLoadProfiles(

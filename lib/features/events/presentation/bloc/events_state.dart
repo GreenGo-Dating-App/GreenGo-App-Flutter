@@ -17,6 +17,14 @@ class EventsLoading extends EventsState {
 
 /// Events loaded successfully
 class EventsLoaded extends EventsState {
+
+  const EventsLoaded({
+    required this.events,
+    this.selectedCategory,
+    this.attendeesMap = const {},
+    this.userEvents = const [],
+    this.nearbyEvents = const [],
+  });
   /// All events from the repository (unfiltered)
   final List<Event> events;
 
@@ -31,14 +39,6 @@ class EventsLoaded extends EventsState {
 
   /// Nearby events
   final List<Event> nearbyEvents;
-
-  const EventsLoaded({
-    required this.events,
-    this.selectedCategory,
-    this.attendeesMap = const {},
-    this.userEvents = const [],
-    this.nearbyEvents = const [],
-  });
 
   /// Get filtered events based on selected category
   List<Event> get filteredEvents {
@@ -78,40 +78,40 @@ class EventsLoaded extends EventsState {
 
 /// Error loading events
 class EventsError extends EventsState {
-  final String message;
 
   const EventsError(this.message);
+  final String message;
 }
 
 /// Event created successfully
 class EventCreated extends EventsState {
-  final String eventId;
 
   const EventCreated({required this.eventId});
+  final String eventId;
 }
 
 /// Event RSVP updated successfully
 class EventRsvpSuccess extends EventsState {
-  final String eventId;
-  final String status;
 
   const EventRsvpSuccess({required this.eventId, required this.status});
+  final String eventId;
+  final String status;
 }
 
 /// Event deleted successfully
 class EventDeleted extends EventsState {
-  final String eventId;
 
   const EventDeleted({required this.eventId});
+  final String eventId;
 }
 
 /// Single event loaded
 class EventDetailLoaded extends EventsState {
-  final Event event;
-  final List<EventAttendee> attendees;
 
   const EventDetailLoaded({
     required this.event,
     this.attendees = const [],
   });
+  final Event event;
+  final List<EventAttendee> attendees;
 }

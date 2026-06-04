@@ -1,82 +1,78 @@
 import 'dart:async';
 import 'dart:ui';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import '../../../authentication/presentation/bloc/auth_bloc.dart';
-import '../../../authentication/presentation/bloc/auth_event.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../core/constants/app_colors.dart';
+
 import '../../../../core/config/app_config.dart';
-import '../../../../core/services/feature_flags_service.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/presence_service.dart';
+import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
-import '../../../app_guide/presentation/screens/app_guide_screen.dart';
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/home_skeleton.dart';
 import '../../../../core/widgets/membership_badge.dart';
-import '../../../../core/di/injection_container.dart' as di;
-import '../../../discovery/presentation/screens/discovery_screen.dart';
-import '../../../discovery/presentation/screens/matches_screen.dart';
-import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
-import '../../../discovery/domain/entities/match_preferences.dart';
-import '../../../discovery/presentation/widgets/nickname_search_dialog.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../app_guide/presentation/screens/app_guide_screen.dart';
+// App Tour imports
+import '../../../app_tour/presentation/widgets/tour_overlay.dart';
+import '../../../authentication/presentation/bloc/auth_bloc.dart';
+import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
-import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../coins/data/datasources/coin_remote_datasource.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
-import '../../../coins/domain/entities/coin_balance.dart';
-import '../../../../core/services/usage_limit_service.dart';
-import '../../../membership/domain/entities/membership.dart';
-import '../../../membership/data/datasources/pending_signup_coupon.dart';
-import '../../../profile/presentation/screens/edit_profile_screen.dart';
-import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
-import '../../../globe_explore/presentation/screens/globe_screen.dart';
-import '../../../profile/presentation/bloc/profile_bloc.dart';
-import '../../../profile/presentation/bloc/profile_event.dart';
-import '../../../profile/presentation/bloc/profile_state.dart';
-import '../../../profile/presentation/screens/onboarding_screen.dart' as profile;
-import '../../../profile/presentation/widgets/verification_status_widget.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../../notifications/presentation/screens/notifications_screen.dart';
-import '../../../notifications/presentation/bloc/notifications_bloc.dart';
-import '../../../notifications/presentation/bloc/notifications_event.dart';
-import '../../../notifications/presentation/bloc/notifications_state.dart';
-import '../../../notifications/domain/entities/notification.dart' as notif;
-import '../../../../core/services/push_notification_service.dart';
-import '../../../subscription/domain/entities/subscription.dart';
-import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
-import '../../../subscription/presentation/bloc/subscription_bloc.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../discovery/domain/entities/match_preferences.dart';
+import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
+import '../../../discovery/presentation/screens/discovery_screen.dart';
+import '../../../discovery/presentation/widgets/nickname_search_dialog.dart';
+import '../../../gamification/domain/entities/achievement.dart';
+import '../../../gamification/domain/entities/user_level.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
-import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
-import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dart';
-import '../../../gamification/domain/entities/achievement.dart';
-import '../../../gamification/domain/entities/user_level.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
-import '../../../coins/data/datasources/coin_remote_datasource.dart';
-import '../../../coins/domain/entities/coin_transaction.dart';
-// App Tour imports
-import '../../../app_tour/presentation/widgets/tour_overlay.dart';
-import '../../../../generated/app_localizations.dart';
-import '../../../../core/widgets/base_membership_dialog.dart';
+import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dart';
+import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
+import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
+import '../../../globe_explore/presentation/screens/globe_screen.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../../../notifications/presentation/bloc/notifications_bloc.dart';
+import '../../../notifications/presentation/bloc/notifications_event.dart';
+import '../../../notifications/presentation/bloc/notifications_state.dart';
+import '../../../notifications/presentation/screens/notifications_screen.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../../profile/presentation/screens/edit_profile_screen.dart';
+import '../../../profile/presentation/screens/onboarding_screen.dart' as profile;
+import '../../../subscription/domain/entities/subscription.dart';
+import '../../../subscription/presentation/bloc/subscription_bloc.dart';
+import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 
 /// Main Navigation Screen
 ///
 /// Bottom navigation with Discovery, Matches, Messages, and Profile tabs
 class MainNavigationScreen extends StatefulWidget {
-  final String userId;
 
   const MainNavigationScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   MainNavigationScreenState createState() => MainNavigationScreenState();
@@ -427,7 +423,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
       _membershipCheckDone = true;
 
-      if (isActive && endDate != null) {
+      if (isActive) {
         if (mounted) _showTrialWelcomeDialog(endDate);
       } else {
         if (mounted) {
@@ -862,7 +858,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         // Check verification status
         final data = profileDoc.data()!;
         final statusString = data['verificationStatus'] as String?;
-        VerificationStatus status = VerificationStatus.notSubmitted;
+        var status = VerificationStatus.notSubmitted;
 
         switch (statusString) {
           case 'pending':
@@ -884,7 +880,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
         // Get membership tier
         final membershipTierString = data['membershipTier'] as String?;
-        MembershipTier membershipTier = MembershipTier.free;
+        var membershipTier = MembershipTier.free;
         if (membershipTierString != null) {
           membershipTier = MembershipTier.fromString(membershipTierString);
         }
@@ -927,7 +923,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   ];
 
   static int _calculateLevel(int totalXp) {
-    int level = 1;
+    var level = 1;
     while (level < _levelXpRequirements.length &&
         totalXp >= _levelXpRequirements[level]) {
       level++;
@@ -1044,7 +1040,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         .snapshots()
         .listen((snapshot) {
       if (!mounted) return;
-      int count = 0;
+      var count = 0;
       for (final doc in snapshot.docs) {
         final data = doc.data();
         final uid1 = data['userId1'] as String?;
@@ -1070,7 +1066,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         .snapshots()
         .listen((snapshot) {
       if (!mounted) return;
-      int count = 0;
+      var count = 0;
       for (final doc in snapshot.docs) {
         final data = doc.data();
         final uid1 = data['userId1'] as String?;
@@ -1400,8 +1396,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     return Stack(
         children: [
-          _isAdmin
-              ? Container(
+          if (_isAdmin) Container(
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: AppColors.errorRed,
@@ -1409,8 +1404,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
                     ),
                   ),
                   child: scaffold,
-                )
-              : scaffold,
+                ) else scaffold,
 
           // App Tour Overlay
           if (_showTour)
@@ -1534,7 +1528,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     return null;
   }
 
-  void _openDiscoveryPreferences() async {
+  Future<void> _openDiscoveryPreferences() async {
     final result = await Navigator.of(context).push<MatchPreferences>(
       MaterialPageRoute(
         builder: (context) => DiscoveryPreferencesScreen(
@@ -1556,7 +1550,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   Widget _buildNotificationButton() {
     return BlocBuilder<NotificationsBloc, NotificationsState>(
       builder: (context, state) {
-        int unreadCount = 0;
+        var unreadCount = 0;
         if (state is NotificationsLoaded) {
           unreadCount = state.unreadCount;
         }
@@ -1610,7 +1604,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   Widget _buildCoinBalanceWidget() {
     return BlocBuilder<CoinBloc, CoinState>(
       builder: (context, state) {
-        int coinBalance = 0;
+        var coinBalance = 0;
         if (state is CoinBalanceLoaded) {
           coinBalance = state.balance.availableCoins;
         } else if (state is CoinBalanceUpdated) {

@@ -1,27 +1,24 @@
-/**
- * Performance Metrics Entity
- * Points 261-270: Performance monitoring and optimization
- */
+/// Performance Metrics Entity
+/// Points 261-270: Performance monitoring and optimization
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Performance trace (Point 262)
 class PerformanceTrace extends Equatable {
+
+  const PerformanceTrace({
+    required this.traceName,
+    required this.startTime,
+    required this.metrics, required this.attributes, this.endTime,
+    this.duration,
+  });
   final String traceName;
   final DateTime startTime;
   final DateTime? endTime;
   final Duration? duration;
   final Map<String, int> metrics;
   final Map<String, String> attributes;
-
-  const PerformanceTrace({
-    required this.traceName,
-    required this.startTime,
-    this.endTime,
-    this.duration,
-    required this.metrics,
-    required this.attributes,
-  });
 
   bool get isCompleted => endTime != null && duration != null;
 
@@ -92,15 +89,6 @@ enum CriticalTrace {
 
 /// Crash report (Point 263)
 class CrashReport extends Equatable {
-  final String crashId;
-  final DateTime timestamp;
-  final String exceptionType;
-  final String message;
-  final String stackTrace;
-  final DeviceInfo deviceInfo;
-  final AppInfo appInfo;
-  final Map<String, dynamic> customKeys;
-  final bool isFatal;
 
   const CrashReport({
     required this.crashId,
@@ -113,6 +101,15 @@ class CrashReport extends Equatable {
     required this.customKeys,
     required this.isFatal,
   });
+  final String crashId;
+  final DateTime timestamp;
+  final String exceptionType;
+  final String message;
+  final String stackTrace;
+  final DeviceInfo deviceInfo;
+  final AppInfo appInfo;
+  final Map<String, dynamic> customKeys;
+  final bool isFatal;
 
   @override
   List<Object?> get props => [
@@ -130,14 +127,6 @@ class CrashReport extends Equatable {
 
 /// Device information
 class DeviceInfo extends Equatable {
-  final String platform; // iOS, Android, Web
-  final String osVersion;
-  final String deviceModel;
-  final String deviceManufacturer;
-  final String screenResolution;
-  final int memoryMB;
-  final int storageMB;
-  final bool isPhysicalDevice;
 
   const DeviceInfo({
     required this.platform,
@@ -149,6 +138,14 @@ class DeviceInfo extends Equatable {
     required this.storageMB,
     required this.isPhysicalDevice,
   });
+  final String platform; // iOS, Android, Web
+  final String osVersion;
+  final String deviceModel;
+  final String deviceManufacturer;
+  final String screenResolution;
+  final int memoryMB;
+  final int storageMB;
+  final bool isPhysicalDevice;
 
   @override
   List<Object?> get props => [
@@ -165,10 +162,6 @@ class DeviceInfo extends Equatable {
 
 /// App information
 class AppInfo extends Equatable {
-  final String appVersion;
-  final String buildNumber;
-  final String flutterVersion;
-  final String dartVersion;
 
   const AppInfo({
     required this.appVersion,
@@ -176,6 +169,10 @@ class AppInfo extends Equatable {
     required this.flutterVersion,
     required this.dartVersion,
   });
+  final String appVersion;
+  final String buildNumber;
+  final String flutterVersion;
+  final String dartVersion;
 
   @override
   List<Object?> get props => [
@@ -188,13 +185,6 @@ class AppInfo extends Equatable {
 
 /// ANR (Application Not Responding) detection (Point 264)
 class ANRReport extends Equatable {
-  final String anrId;
-  final DateTime timestamp;
-  final Duration blockDuration;
-  final String threadName;
-  final String stackTrace;
-  final DeviceInfo deviceInfo;
-  final String? causingOperation;
 
   const ANRReport({
     required this.anrId,
@@ -205,6 +195,13 @@ class ANRReport extends Equatable {
     required this.deviceInfo,
     this.causingOperation,
   });
+  final String anrId;
+  final DateTime timestamp;
+  final Duration blockDuration;
+  final String threadName;
+  final String stackTrace;
+  final DeviceInfo deviceInfo;
+  final String? causingOperation;
 
   @override
   List<Object?> get props => [
@@ -219,12 +216,7 @@ class ANRReport extends Equatable {
 }
 
 /// Performance budget (Point 265)
-class PerformanceBudget extends Equatable {
-  final String metricName;
-  final Duration budgetValue;
-  final Duration actualValue;
-  final bool isWithinBudget;
-  final double variance; // Percentage over/under budget
+class PerformanceBudget extends Equatable { // Percentage over/under budget
 
   const PerformanceBudget({
     required this.metricName,
@@ -233,6 +225,11 @@ class PerformanceBudget extends Equatable {
     required this.isWithinBudget,
     required this.variance,
   });
+  final String metricName;
+  final Duration budgetValue;
+  final Duration actualValue;
+  final bool isWithinBudget;
+  final double variance;
 
   @override
   List<Object?> get props => [
@@ -256,12 +253,6 @@ class PerformanceBudgets {
 
 /// Core Web Vitals for Flutter Web (Point 266)
 class CoreWebVitals extends Equatable {
-  final double lcp; // Largest Contentful Paint (ms)
-  final double fid; // First Input Delay (ms)
-  final double cls; // Cumulative Layout Shift (score)
-  final double fcp; // First Contentful Paint (ms)
-  final double ttfb; // Time to First Byte (ms)
-  final DateTime measuredAt;
 
   const CoreWebVitals({
     required this.lcp,
@@ -271,6 +262,12 @@ class CoreWebVitals extends Equatable {
     required this.ttfb,
     required this.measuredAt,
   });
+  final double lcp; // Largest Contentful Paint (ms)
+  final double fid; // First Input Delay (ms)
+  final double cls; // Cumulative Layout Shift (score)
+  final double fcp; // First Contentful Paint (ms)
+  final double ttfb; // Time to First Byte (ms)
+  final DateTime measuredAt;
 
   /// Check if metrics pass Core Web Vitals thresholds
   bool get passesLCP => lcp <= 2500; // Good: <= 2.5s
@@ -285,16 +282,6 @@ class CoreWebVitals extends Equatable {
 
 /// Network performance metrics (Point 267)
 class NetworkPerformanceMetrics extends Equatable {
-  final String endpoint;
-  final Duration latency;
-  final int responseSize; // Bytes
-  final int statusCode;
-  final bool isSuccess;
-  final DateTime timestamp;
-  final String httpMethod;
-  final Duration? connectionTime;
-  final Duration? dnsLookupTime;
-  final Duration? sslHandshakeTime;
 
   const NetworkPerformanceMetrics({
     required this.endpoint,
@@ -308,6 +295,16 @@ class NetworkPerformanceMetrics extends Equatable {
     this.dnsLookupTime,
     this.sslHandshakeTime,
   });
+  final String endpoint;
+  final Duration latency;
+  final int responseSize; // Bytes
+  final int statusCode;
+  final bool isSuccess;
+  final DateTime timestamp;
+  final String httpMethod;
+  final Duration? connectionTime;
+  final Duration? dnsLookupTime;
+  final Duration? sslHandshakeTime;
 
   bool get exceedsBudget => latency > PerformanceBudgets.apiCall;
 
@@ -328,13 +325,6 @@ class NetworkPerformanceMetrics extends Equatable {
 
 /// Network failure analysis (Point 267)
 class NetworkFailureAnalysis extends Equatable {
-  final DateTime timeWindow;
-  final int totalRequests;
-  final int failedRequests;
-  final double failureRate; // Percentage
-  final Map<String, int> failuresByEndpoint;
-  final Map<int, int> failuresByStatusCode;
-  final Duration avgFailureLatency;
 
   const NetworkFailureAnalysis({
     required this.timeWindow,
@@ -345,6 +335,13 @@ class NetworkFailureAnalysis extends Equatable {
     required this.failuresByStatusCode,
     required this.avgFailureLatency,
   });
+  final DateTime timeWindow;
+  final int totalRequests;
+  final int failedRequests;
+  final double failureRate; // Percentage
+  final Map<String, int> failuresByEndpoint;
+  final Map<int, int> failuresByStatusCode;
+  final Duration avgFailureLatency;
 
   @override
   List<Object?> get props => [
@@ -360,12 +357,6 @@ class NetworkFailureAnalysis extends Equatable {
 
 /// Battery usage metrics (Point 268)
 class BatteryUsageMetrics extends Equatable {
-  final double batteryDrainPerHour; // Percentage
-  final Map<String, double> drainByFeature;
-  final bool isCharging;
-  final int batteryLevel; // 0-100
-  final DateTime measuredAt;
-  final Duration appUsageDuration;
 
   const BatteryUsageMetrics({
     required this.batteryDrainPerHour,
@@ -375,6 +366,12 @@ class BatteryUsageMetrics extends Equatable {
     required this.measuredAt,
     required this.appUsageDuration,
   });
+  final double batteryDrainPerHour; // Percentage
+  final Map<String, double> drainByFeature;
+  final bool isCharging;
+  final int batteryLevel; // 0-100
+  final DateTime measuredAt;
+  final Duration appUsageDuration;
 
   bool get isExcessiveDrain => batteryDrainPerHour > 10.0; // > 10% per hour
 
@@ -391,14 +388,6 @@ class BatteryUsageMetrics extends Equatable {
 
 /// Memory usage metrics (Point 269)
 class MemoryUsageMetrics extends Equatable {
-  final int usedMemoryMB;
-  final int totalMemoryMB;
-  final double usagePercentage;
-  final int heapSizeMB;
-  final int externalMemoryMB;
-  final bool hasMemoryLeak;
-  final List<MemoryLeakIndicator>? leakIndicators;
-  final DateTime measuredAt;
 
   const MemoryUsageMetrics({
     required this.usedMemoryMB,
@@ -407,9 +396,16 @@ class MemoryUsageMetrics extends Equatable {
     required this.heapSizeMB,
     required this.externalMemoryMB,
     required this.hasMemoryLeak,
-    this.leakIndicators,
-    required this.measuredAt,
+    required this.measuredAt, this.leakIndicators,
   });
+  final int usedMemoryMB;
+  final int totalMemoryMB;
+  final double usagePercentage;
+  final int heapSizeMB;
+  final int externalMemoryMB;
+  final bool hasMemoryLeak;
+  final List<MemoryLeakIndicator>? leakIndicators;
+  final DateTime measuredAt;
 
   bool get isHighUsage => usagePercentage > 80.0; // > 80% memory usage
 
@@ -428,10 +424,6 @@ class MemoryUsageMetrics extends Equatable {
 
 /// Memory leak indicator
 class MemoryLeakIndicator extends Equatable {
-  final String className;
-  final int instanceCount;
-  final int expectedCount;
-  final String suspectedCause;
 
   const MemoryLeakIndicator({
     required this.className,
@@ -439,6 +431,10 @@ class MemoryLeakIndicator extends Equatable {
     required this.expectedCount,
     required this.suspectedCause,
   });
+  final String className;
+  final int instanceCount;
+  final int expectedCount;
+  final String suspectedCause;
 
   @override
   List<Object?> get props => [
@@ -451,13 +447,6 @@ class MemoryLeakIndicator extends Equatable {
 
 /// App size metrics (Point 270)
 class AppSizeMetrics extends Equatable {
-  final int apkSizeMB; // Android
-  final int ipaSizeMB; // iOS
-  final int downloadSizeMB;
-  final int installSizeMB;
-  final Map<String, int> sizeByComponent; // Assets, code, resources
-  final bool exceedsSizeLimit; // 50MB limit
-  final DateTime measuredAt;
 
   const AppSizeMetrics({
     required this.apkSizeMB,
@@ -468,6 +457,13 @@ class AppSizeMetrics extends Equatable {
     required this.exceedsSizeLimit,
     required this.measuredAt,
   });
+  final int apkSizeMB; // Android
+  final int ipaSizeMB; // iOS
+  final int downloadSizeMB;
+  final int installSizeMB;
+  final Map<String, int> sizeByComponent; // Assets, code, resources
+  final bool exceedsSizeLimit; // 50MB limit
+  final DateTime measuredAt;
 
   static const int maxSizeMB = 50;
 
@@ -484,12 +480,7 @@ class AppSizeMetrics extends Equatable {
 }
 
 /// Performance dashboard summary (Point 261)
-class PerformanceDashboard extends Equatable {
-  final DateTime generatedAt;
-  final AppPerformanceSummary appPerformance;
-  final NetworkPerformanceSummary networkPerformance;
-  final List<PerformanceIssue> criticalIssues;
-  final Map<String, double> performanceScores; // 0-100
+class PerformanceDashboard extends Equatable { // 0-100
 
   const PerformanceDashboard({
     required this.generatedAt,
@@ -498,6 +489,11 @@ class PerformanceDashboard extends Equatable {
     required this.criticalIssues,
     required this.performanceScores,
   });
+  final DateTime generatedAt;
+  final AppPerformanceSummary appPerformance;
+  final NetworkPerformanceSummary networkPerformance;
+  final List<PerformanceIssue> criticalIssues;
+  final Map<String, double> performanceScores;
 
   double get overallScore {
     if (performanceScores.isEmpty) return 0.0;
@@ -517,13 +513,6 @@ class PerformanceDashboard extends Equatable {
 
 /// App performance summary
 class AppPerformanceSummary extends Equatable {
-  final Duration avgAppLaunchTime;
-  final Duration avgScreenTransitionTime;
-  final int crashCount;
-  final int anrCount;
-  final double crashFreeRate; // Percentage
-  final MemoryUsageMetrics memoryUsage;
-  final BatteryUsageMetrics? batteryUsage;
 
   const AppPerformanceSummary({
     required this.avgAppLaunchTime,
@@ -534,6 +523,13 @@ class AppPerformanceSummary extends Equatable {
     required this.memoryUsage,
     this.batteryUsage,
   });
+  final Duration avgAppLaunchTime;
+  final Duration avgScreenTransitionTime;
+  final int crashCount;
+  final int anrCount;
+  final double crashFreeRate; // Percentage
+  final MemoryUsageMetrics memoryUsage;
+  final BatteryUsageMetrics? batteryUsage;
 
   @override
   List<Object?> get props => [
@@ -549,11 +545,6 @@ class AppPerformanceSummary extends Equatable {
 
 /// Network performance summary
 class NetworkPerformanceSummary extends Equatable {
-  final Duration avgApiLatency;
-  final double apiSuccessRate; // Percentage
-  final int totalApiCalls;
-  final int failedApiCalls;
-  final Map<String, Duration> latencyByEndpoint;
 
   const NetworkPerformanceSummary({
     required this.avgApiLatency,
@@ -562,6 +553,11 @@ class NetworkPerformanceSummary extends Equatable {
     required this.failedApiCalls,
     required this.latencyByEndpoint,
   });
+  final Duration avgApiLatency;
+  final double apiSuccessRate; // Percentage
+  final int totalApiCalls;
+  final int failedApiCalls;
+  final Map<String, Duration> latencyByEndpoint;
 
   @override
   List<Object?> get props => [
@@ -575,14 +571,6 @@ class NetworkPerformanceSummary extends Equatable {
 
 /// Performance issue
 class PerformanceIssue extends Equatable {
-  final String issueId;
-  final PerformanceIssueSeverity severity;
-  final String title;
-  final String description;
-  final DateTime detectedAt;
-  final Map<String, dynamic> metadata;
-  final List<String> affectedUsers;
-  final String? suggestedFix;
 
   const PerformanceIssue({
     required this.issueId,
@@ -594,6 +582,14 @@ class PerformanceIssue extends Equatable {
     required this.affectedUsers,
     this.suggestedFix,
   });
+  final String issueId;
+  final PerformanceIssueSeverity severity;
+  final String title;
+  final String description;
+  final DateTime detectedAt;
+  final Map<String, dynamic> metadata;
+  final List<String> affectedUsers;
+  final String? suggestedFix;
 
   @override
   List<Object?> get props => [

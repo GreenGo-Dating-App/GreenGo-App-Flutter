@@ -6,18 +6,6 @@ import 'package:flutter/foundation.dart';
 /// Contains just enough data for the matching pipeline to filter and
 /// score without fetching the full profile document.
 class PoolCandidate {
-  final String userId;
-  final int age;
-  final double lat;
-  final double lng;
-  final List<String> interests;
-  final List<String> languages;
-  final bool isVerified;
-  final bool isBoosted;
-  final DateTime? boostExpiry;
-  final bool isOnline;
-  final DateTime? lastActive;
-  final String? sexualOrientation;
 
   const PoolCandidate({
     required this.userId,
@@ -28,8 +16,7 @@ class PoolCandidate {
     required this.languages,
     required this.isVerified,
     required this.isBoosted,
-    this.boostExpiry,
-    required this.isOnline,
+    required this.isOnline, this.boostExpiry,
     this.lastActive,
     this.sexualOrientation,
   });
@@ -54,16 +41,22 @@ class PoolCandidate {
       sexualOrientation: map['sexualOrientation'] as String?,
     );
   }
+  final String userId;
+  final int age;
+  final double lat;
+  final double lng;
+  final List<String> interests;
+  final List<String> languages;
+  final bool isVerified;
+  final bool isBoosted;
+  final DateTime? boostExpiry;
+  final bool isOnline;
+  final DateTime? lastActive;
+  final String? sexualOrientation;
 }
 
 /// Pre-computed candidate pool read from Firestore.
 class CandidatePool {
-  final String poolKey;
-  final String country;
-  final String gender;
-  final String ageBucket;
-  final List<PoolCandidate> members;
-  final DateTime? updatedAt;
 
   const CandidatePool({
     required this.poolKey,
@@ -73,6 +66,12 @@ class CandidatePool {
     required this.members,
     this.updatedAt,
   });
+  final String poolKey;
+  final String country;
+  final String gender;
+  final String ageBucket;
+  final List<PoolCandidate> members;
+  final DateTime? updatedAt;
 
   /// Pool is considered stale if older than 1 hour.
   bool get isStale {
@@ -83,9 +82,9 @@ class CandidatePool {
 
 /// Age bucket definitions — must match the Cloud Function.
 class _AgeBucket {
+  const _AgeBucket(this.min, this.max);
   final int min;
   final int max;
-  const _AgeBucket(this.min, this.max);
   String get key => '$min-$max';
 }
 
@@ -103,6 +102,8 @@ const _ageBuckets = [
 /// Used by the matching pipeline to narrow the set of profiles to fetch
 /// instead of scanning the entire profiles collection.
 class CandidatePoolService {
+
+  CandidatePoolService({required this.firestore});
   final FirebaseFirestore firestore;
 
   static const _poolCollection = 'candidate_pools';
@@ -110,8 +111,6 @@ class CandidatePoolService {
 
   /// In-memory cache: poolKey → CandidatePool
   final Map<String, _CachedPool> _cache = {};
-
-  CandidatePoolService({required this.firestore});
 
   /// Returns candidate user IDs from pools matching the given preferences.
   ///
@@ -262,10 +261,10 @@ class CandidatePoolService {
 }
 
 class _CachedPool {
-  final CandidatePool pool;
-  final DateTime fetchedAt;
 
   _CachedPool(this.pool) : fetchedAt = DateTime.now();
+  final CandidatePool pool;
+  final DateTime fetchedAt;
 
   bool get isValid =>
       DateTime.now().difference(fetchedAt) < CandidatePoolService._cacheTtl;

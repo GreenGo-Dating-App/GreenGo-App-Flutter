@@ -5,15 +5,15 @@ import '../repositories/subscription_repository.dart';
 /// Cancel Subscription Use Case
 /// Point 151: Handle subscription cancellation
 class CancelSubscription {
-  final SubscriptionRepository repository;
 
   CancelSubscription(this.repository);
+  final SubscriptionRepository repository;
 
   Future<Either<Failure, void>> call({
     required String subscriptionId,
     required String reason,
   }) async {
-    return await repository.cancelSubscription(
+    return repository.cancelSubscription(
       userId: '', // Will be extracted from subscription
       reason: reason,
     );

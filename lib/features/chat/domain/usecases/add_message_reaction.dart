@@ -6,9 +6,9 @@ import '../repositories/chat_repository.dart';
 ///
 /// Adds an emoji reaction to a message
 class AddMessageReaction {
-  final ChatRepository repository;
 
   AddMessageReaction(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String messageId,
@@ -16,7 +16,7 @@ class AddMessageReaction {
     required String userId,
     required String emoji,
   }) async {
-    return await repository.addReaction(
+    return repository.addReaction(
       messageId: messageId,
       conversationId: conversationId,
       userId: userId,

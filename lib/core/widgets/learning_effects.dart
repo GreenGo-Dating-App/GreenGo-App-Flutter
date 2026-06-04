@@ -9,18 +9,16 @@ import '../services/app_sound_service.dart';
 // ─────────────────────────────────────────────────────────────────────────────
 
 class ConfettiOverlay extends StatefulWidget {
+
+  const ConfettiOverlay({
+    required this.trigger, required this.child, super.key,
+    this.particleCount = 50,
+    this.duration = const Duration(milliseconds: 2000),
+  });
   final bool trigger;
   final Widget child;
   final int particleCount;
   final Duration duration;
-
-  const ConfettiOverlay({
-    super.key,
-    required this.trigger,
-    required this.child,
-    this.particleCount = 50,
-    this.duration = const Duration(milliseconds: 2000),
-  });
 
   @override
   State<ConfettiOverlay> createState() => _ConfettiOverlayState();
@@ -109,8 +107,6 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
 }
 
 class _ConfettiParticle {
-  double x, y, velocityX, velocityY, rotation, rotationSpeed, size;
-  Color color;
 
   _ConfettiParticle({
     required this.x,
@@ -122,13 +118,15 @@ class _ConfettiParticle {
     required this.size,
     required this.color,
   });
+  double x, y, velocityX, velocityY, rotation, rotationSpeed, size;
+  Color color;
 }
 
 class _ConfettiPainter extends CustomPainter {
-  final List<_ConfettiParticle> particles;
-  final double progress;
 
   _ConfettiPainter({required this.particles, required this.progress});
+  final List<_ConfettiParticle> particles;
+  final double progress;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -165,20 +163,17 @@ class _ConfettiPainter extends CustomPainter {
 // ─────────────────────────────────────────────────────────────────────────────
 
 class XpProgressBar extends StatefulWidget {
+
+  const XpProgressBar({
+    required this.currentXp, required this.maxXp, required this.level, super.key,
+    this.showLabel = true,
+    this.height = 20,
+  });
   final int currentXp;
   final int maxXp;
   final int level;
   final bool showLabel;
   final double height;
-
-  const XpProgressBar({
-    super.key,
-    required this.currentXp,
-    required this.maxXp,
-    required this.level,
-    this.showLabel = true,
-    this.height = 20,
-  });
 
   @override
   State<XpProgressBar> createState() => _XpProgressBarState();
@@ -333,16 +328,15 @@ class _XpProgressBarState extends State<XpProgressBar>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class StreakFlame extends StatefulWidget {
-  final int streakDays;
-  final bool isActive;
-  final double size;
 
   const StreakFlame({
-    super.key,
-    required this.streakDays,
+    required this.streakDays, super.key,
     this.isActive = true,
     this.size = 40,
   });
+  final int streakDays;
+  final bool isActive;
+  final double size;
 
   @override
   State<StreakFlame> createState() => _StreakFlameState();
@@ -421,14 +415,13 @@ class _StreakFlameState extends State<StreakFlame>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class AnswerFeedback extends StatefulWidget {
-  final bool isCorrect;
-  final VoidCallback? onComplete;
 
   const AnswerFeedback({
-    super.key,
-    required this.isCorrect,
+    required this.isCorrect, super.key,
     this.onComplete,
   });
+  final bool isCorrect;
+  final VoidCallback? onComplete;
 
   @override
   State<AnswerFeedback> createState() => _AnswerFeedbackState();
@@ -523,14 +516,13 @@ class _AnswerFeedbackState extends State<AnswerFeedback>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class XpGainedPopup extends StatefulWidget {
-  final int xpAmount;
-  final VoidCallback? onComplete;
 
   const XpGainedPopup({
-    super.key,
-    required this.xpAmount,
+    required this.xpAmount, super.key,
     this.onComplete,
   });
+  final int xpAmount;
+  final VoidCallback? onComplete;
 
   @override
   State<XpGainedPopup> createState() => _XpGainedPopupState();
@@ -627,16 +619,15 @@ class _XpGainedPopupState extends State<XpGainedPopup>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class LevelUpCelebration extends StatefulWidget {
-  final int newLevel;
-  final String? title;
-  final VoidCallback? onDismiss;
 
   const LevelUpCelebration({
-    super.key,
-    required this.newLevel,
+    required this.newLevel, super.key,
     this.title,
     this.onDismiss,
   });
+  final int newLevel;
+  final String? title;
+  final VoidCallback? onDismiss;
 
   @override
   State<LevelUpCelebration> createState() => _LevelUpCelebrationState();
@@ -773,16 +764,14 @@ class _LevelUpCelebrationState extends State<LevelUpCelebration>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class ShakeWidget extends StatefulWidget {
+
+  const ShakeWidget({
+    required this.child, required this.trigger, super.key,
+    this.shakeOffset = 10.0,
+  });
   final Widget child;
   final bool trigger;
   final double shakeOffset;
-
-  const ShakeWidget({
-    super.key,
-    required this.child,
-    required this.trigger,
-    this.shakeOffset = 10.0,
-  });
 
   @override
   State<ShakeWidget> createState() => _ShakeWidgetState();
@@ -846,16 +835,15 @@ class _ShakeWidgetState extends State<ShakeWidget>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class StaggeredEntrance extends StatefulWidget {
-  final Widget child;
-  final Duration delay;
-  final Duration duration;
 
   const StaggeredEntrance({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.delay = Duration.zero,
     this.duration = const Duration(milliseconds: 400),
   });
+  final Widget child;
+  final Duration delay;
+  final Duration duration;
 
   @override
   State<StaggeredEntrance> createState() => _StaggeredEntranceState();
@@ -914,16 +902,15 @@ class _StaggeredEntranceState extends State<StaggeredEntrance>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class BreathingFloat extends StatefulWidget {
-  final Widget child;
-  final double amplitude;
-  final Duration period;
 
   const BreathingFloat({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.amplitude = 3.0,
     this.period = const Duration(milliseconds: 2000),
   });
+  final Widget child;
+  final double amplitude;
+  final Duration period;
 
   @override
   State<BreathingFloat> createState() => _BreathingFloatState();
@@ -969,16 +956,15 @@ class _BreathingFloatState extends State<BreathingFloat>
 // ─────────────────────────────────────────────────────────────────────────────
 
 class AnimatedConnectorClip extends StatefulWidget {
-  final Widget child;
-  final Duration duration;
-  final Duration delay;
 
   const AnimatedConnectorClip({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.duration = const Duration(milliseconds: 600),
     this.delay = Duration.zero,
   });
+  final Widget child;
+  final Duration duration;
+  final Duration delay;
 
   @override
   State<AnimatedConnectorClip> createState() => _AnimatedConnectorClipState();
@@ -1022,8 +1008,8 @@ class _AnimatedConnectorClipState extends State<AnimatedConnectorClip>
 }
 
 class _TopToBottomClipper extends CustomClipper<Rect> {
-  final double progress;
   _TopToBottomClipper(this.progress);
+  final double progress;
 
   @override
   Rect getClip(Size size) {
@@ -1041,16 +1027,15 @@ class _TopToBottomClipper extends CustomClipper<Rect> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 class PulseGlow extends StatefulWidget {
-  final Widget child;
-  final Color glowColor;
-  final bool isActive;
 
   const PulseGlow({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.glowColor = AppColors.richGold,
     this.isActive = true,
   });
+  final Widget child;
+  final Color glowColor;
+  final bool isActive;
 
   @override
   State<PulseGlow> createState() => _PulseGlowState();

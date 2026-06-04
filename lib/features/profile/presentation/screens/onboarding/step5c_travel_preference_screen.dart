@@ -227,10 +227,6 @@ class _Step5cTravelPreferenceScreenState
 }
 
 class _TravelOption {
-  final String value;
-  final IconData icon;
-  final String title;
-  final String description;
 
   const _TravelOption({
     required this.value,
@@ -238,4 +234,8 @@ class _TravelOption {
     required this.title,
     required this.description,
   });
+  final String value;
+  final IconData icon;
+  final String title;
+  final String description;
 }

@@ -4,9 +4,9 @@ import '../repositories/chat_repository.dart';
 
 /// Set Typing Indicator Use Case
 class SetTypingIndicator {
-  final ChatRepository repository;
 
   SetTypingIndicator(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(SetTypingIndicatorParams params) {
     return repository.setTypingIndicator(
@@ -19,13 +19,13 @@ class SetTypingIndicator {
 
 /// Parameters for SetTypingIndicator use case
 class SetTypingIndicatorParams {
-  final String conversationId;
-  final String userId;
-  final bool isTyping;
 
   SetTypingIndicatorParams({
     required this.conversationId,
     required this.userId,
     required this.isTyping,
   });
+  final String conversationId;
+  final String userId;
+  final bool isTyping;
 }

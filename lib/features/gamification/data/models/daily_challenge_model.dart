@@ -1,7 +1,6 @@
-/**
- * Daily Challenge Data Models
- * Points 196-200: Firestore serialization for challenges
- */
+/// Daily Challenge Data Models
+/// Points 196-200: Firestore serialization for challenges
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/daily_challenge.dart';
@@ -17,6 +16,20 @@ class UserChallengeProgressModel extends UserChallengeProgress {
     super.createdAt,
     super.rewardsClaimed,
   });
+
+  factory UserChallengeProgressModel.fromEntity(
+    UserChallengeProgress entity,
+  ) {
+    return UserChallengeProgressModel(
+      userId: entity.userId,
+      challengeId: entity.challengeId,
+      progress: entity.progress,
+      requiredCount: entity.requiredCount,
+      isCompleted: entity.isCompleted,
+      completedAt: entity.completedAt,
+      rewardsClaimed: entity.rewardsClaimed,
+    );
+  }
 
   factory UserChallengeProgressModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -62,20 +75,6 @@ class UserChallengeProgressModel extends UserChallengeProgress {
     };
   }
 
-  factory UserChallengeProgressModel.fromEntity(
-    UserChallengeProgress entity,
-  ) {
-    return UserChallengeProgressModel(
-      userId: entity.userId,
-      challengeId: entity.challengeId,
-      progress: entity.progress,
-      requiredCount: entity.requiredCount,
-      isCompleted: entity.isCompleted,
-      completedAt: entity.completedAt,
-      rewardsClaimed: entity.rewardsClaimed,
-    );
-  }
-
   UserChallengeProgressModel copyWith({
     String? userId,
     String? challengeId,
@@ -109,6 +108,19 @@ class SeasonalEventModel extends SeasonalEvent {
     required super.challenges,
     required super.themeConfig,
   });
+
+  factory SeasonalEventModel.fromEntity(SeasonalEvent entity) {
+    return SeasonalEventModel(
+      eventId: entity.eventId,
+      name: entity.name,
+      description: entity.description,
+      theme: entity.theme,
+      startDate: entity.startDate,
+      endDate: entity.endDate,
+      challenges: entity.challenges,
+      themeConfig: entity.themeConfig,
+    );
+  }
 
   factory SeasonalEventModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -188,18 +200,5 @@ class SeasonalEventModel extends SeasonalEvent {
           .toList(),
       'themeConfig': themeConfig,
     };
-  }
-
-  factory SeasonalEventModel.fromEntity(SeasonalEvent entity) {
-    return SeasonalEventModel(
-      eventId: entity.eventId,
-      name: entity.name,
-      description: entity.description,
-      theme: entity.theme,
-      startDate: entity.startDate,
-      endDate: entity.endDate,
-      challenges: entity.challenges,
-      themeConfig: entity.themeConfig,
-    );
   }
 }

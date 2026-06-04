@@ -7,10 +7,10 @@ import '../../features/membership/domain/entities/membership.dart';
 /// On app start, checks if the user's active membership has expired.
 /// If expired, rolls back to the free tier and creates a downgrade notification.
 class SubscriptionExpiryService {
-  final FirebaseFirestore _firestore;
 
   SubscriptionExpiryService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   /// Check if the user's membership has expired and handle downgrade.
   /// Returns the previous tier name if a downgrade occurred, or null if no change.

@@ -4,14 +4,13 @@ import '../../domain/entities/country_spotlight.dart';
 
 /// Featured card for displaying the active country spotlight
 class CountrySpotlightCard extends StatelessWidget {
-  final CountrySpotlight spotlight;
-  final VoidCallback? onTap;
 
   const CountrySpotlightCard({
-    super.key,
-    required this.spotlight,
+    required this.spotlight, super.key,
     this.onTap,
   });
+  final CountrySpotlight spotlight;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {

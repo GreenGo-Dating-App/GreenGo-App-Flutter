@@ -6,9 +6,9 @@ import '../datasources/virtual_gift_remote_datasource.dart';
 
 /// Virtual Gift Repository Implementation
 class VirtualGiftRepositoryImpl implements VirtualGiftRepository {
-  final VirtualGiftRemoteDataSource remoteDataSource;
 
   VirtualGiftRepositoryImpl({required this.remoteDataSource});
+  final VirtualGiftRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<VirtualGift>>> getGiftCatalog() async {

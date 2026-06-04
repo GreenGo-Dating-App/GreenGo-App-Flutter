@@ -21,9 +21,9 @@ class ConversationExpiryLoading extends ConversationExpiryState {
 
 /// Error state
 class ConversationExpiryError extends ConversationExpiryState {
-  final String message;
 
   const ConversationExpiryError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
@@ -31,9 +31,9 @@ class ConversationExpiryError extends ConversationExpiryState {
 
 /// Single expiry loaded
 class ConversationExpiryLoaded extends ConversationExpiryState {
-  final ConversationExpiry expiry;
 
   const ConversationExpiryLoaded(this.expiry);
+  final ConversationExpiry expiry;
 
   @override
   List<Object?> get props => [expiry];
@@ -41,9 +41,6 @@ class ConversationExpiryLoaded extends ConversationExpiryState {
 
 /// User expiries loaded
 class UserExpiriesLoaded extends ConversationExpiryState {
-  final List<ConversationExpiry> expiries;
-  final List<ConversationExpiry> expiringSoon;
-  final List<ConversationExpiry> active;
 
   UserExpiriesLoaded({required this.expiries})
       : expiringSoon = expiries
@@ -51,6 +48,9 @@ class UserExpiriesLoaded extends ConversationExpiryState {
             .toList()
           ..sort((a, b) => a.expiresAt.compareTo(b.expiresAt)),
         active = expiries.where((e) => !e.isExpired).toList();
+  final List<ConversationExpiry> expiries;
+  final List<ConversationExpiry> expiringSoon;
+  final List<ConversationExpiry> active;
 
   @override
   List<Object?> get props => [expiries, expiringSoon, active];
@@ -58,13 +58,13 @@ class UserExpiriesLoaded extends ConversationExpiryState {
 
 /// Extension successful
 class ConversationExtended extends ConversationExpiryState {
-  final ConversationExpiry expiry;
-  final int coinsSpent;
 
   const ConversationExtended({
     required this.expiry,
     required this.coinsSpent,
   });
+  final ConversationExpiry expiry;
+  final int coinsSpent;
 
   @override
   List<Object?> get props => [expiry, coinsSpent];
@@ -72,13 +72,13 @@ class ConversationExtended extends ConversationExpiryState {
 
 /// Extension failed due to insufficient coins
 class InsufficientCoinsForExtension extends ConversationExpiryState {
-  final int required;
-  final int available;
 
   const InsufficientCoinsForExtension({
     required this.required,
     required this.available,
   });
+  final int required;
+  final int available;
 
   int get shortfall => required - available;
 
@@ -88,9 +88,9 @@ class InsufficientCoinsForExtension extends ConversationExpiryState {
 
 /// Conversation expired
 class ConversationExpiredState extends ConversationExpiryState {
-  final String conversationId;
 
   const ConversationExpiredState(this.conversationId);
+  final String conversationId;
 
   @override
   List<Object?> get props => [conversationId];
@@ -98,9 +98,9 @@ class ConversationExpiredState extends ConversationExpiryState {
 
 /// Activity recorded
 class ActivityRecorded extends ConversationExpiryState {
-  final ConversationExpiry expiry;
 
   const ActivityRecorded(this.expiry);
+  final ConversationExpiry expiry;
 
   @override
   List<Object?> get props => [expiry];

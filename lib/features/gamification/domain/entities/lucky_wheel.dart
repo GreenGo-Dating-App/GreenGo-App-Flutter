@@ -3,13 +3,6 @@ import 'package:equatable/equatable.dart';
 
 /// Lucky Wheel Entity - Daily spin for rewards
 class LuckyWheel extends Equatable {
-  final String wheelId;
-  final String name;
-  final List<WheelSegment> segments;
-  final int freeSpinsPerDay;
-  final int premiumSpinsPerDay;
-  final int coinCostPerSpin;
-  final bool isActive;
 
   const LuckyWheel({
     required this.wheelId,
@@ -20,12 +13,19 @@ class LuckyWheel extends Equatable {
     this.coinCostPerSpin = 50,
     this.isActive = true,
   });
+  final String wheelId;
+  final String name;
+  final List<WheelSegment> segments;
+  final int freeSpinsPerDay;
+  final int premiumSpinsPerDay;
+  final int coinCostPerSpin;
+  final bool isActive;
 
   /// Spin the wheel and get result
   WheelSegment spin() {
     final random = Random();
-    double totalWeight = segments.fold(0, (sum, s) => sum + s.weight);
-    double randomValue = random.nextDouble() * totalWeight;
+    final totalWeight = segments.fold<double>(0, (sum, s) => sum + s.weight);
+    final randomValue = random.nextDouble() * totalWeight;
 
     double cumulativeWeight = 0;
     for (final segment in segments) {
@@ -51,6 +51,14 @@ class LuckyWheel extends Equatable {
 
 /// Wheel Segment - One slice of the wheel
 class WheelSegment extends Equatable {
+
+  const WheelSegment({
+    required this.segmentId,
+    required this.name,
+    required this.rewardType,
+    required this.rewardAmount,
+    required this.weight, required this.colorValue, required this.iconName, this.itemId,
+  });
   final String segmentId;
   final String name;
   final String rewardType; // coins, xp, boost, super_like, premium_day, badge, nothing
@@ -59,17 +67,6 @@ class WheelSegment extends Equatable {
   final double weight; // Probability weight (higher = more likely)
   final int colorValue;
   final String iconName;
-
-  const WheelSegment({
-    required this.segmentId,
-    required this.name,
-    required this.rewardType,
-    required this.rewardAmount,
-    this.itemId,
-    required this.weight,
-    required this.colorValue,
-    required this.iconName,
-  });
 
   bool get isJackpot => rewardType == 'jackpot';
   bool get isEmpty => rewardType == 'nothing';
@@ -89,13 +86,6 @@ class WheelSegment extends Equatable {
 
 /// User Wheel Spin - Record of a spin
 class UserWheelSpin extends Equatable {
-  final String spinId;
-  final String odId;
-  final String wheelId;
-  final WheelSegment result;
-  final DateTime spunAt;
-  final bool wasFree;
-  final int? coinsCost;
 
   const UserWheelSpin({
     required this.spinId,
@@ -106,6 +96,13 @@ class UserWheelSpin extends Equatable {
     this.wasFree = true,
     this.coinsCost,
   });
+  final String spinId;
+  final String odId;
+  final String wheelId;
+  final WheelSegment result;
+  final DateTime spunAt;
+  final bool wasFree;
+  final int? coinsCost;
 
   @override
   List<Object?> get props => [
@@ -121,6 +118,15 @@ class UserWheelSpin extends Equatable {
 
 /// User Wheel State - Daily spin tracking
 class UserWheelState extends Equatable {
+
+  const UserWheelState({
+    required this.odId,
+    required this.freeSpinsRemaining,
+    required this.lastSpinDate, this.paidSpinsToday = 0,
+    this.nextFreeSpinAt,
+    this.totalLifetimeSpins = 0,
+    this.jackpotsWon = 0,
+  });
   final String odId;
   final int freeSpinsRemaining;
   final int paidSpinsToday;
@@ -128,16 +134,6 @@ class UserWheelState extends Equatable {
   final DateTime? nextFreeSpinAt;
   final int totalLifetimeSpins;
   final int jackpotsWon;
-
-  const UserWheelState({
-    required this.odId,
-    required this.freeSpinsRemaining,
-    this.paidSpinsToday = 0,
-    required this.lastSpinDate,
-    this.nextFreeSpinAt,
-    this.totalLifetimeSpins = 0,
-    this.jackpotsWon = 0,
-  });
 
   bool get canSpinFree => freeSpinsRemaining > 0;
 

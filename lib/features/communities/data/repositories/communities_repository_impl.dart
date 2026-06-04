@@ -1,19 +1,20 @@
 import 'package:dartz/dartz.dart';
+
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
 import '../../domain/entities/community_message.dart';
 import '../../domain/repositories/communities_repository.dart';
 import '../datasources/communities_remote_datasource.dart';
-import '../models/community_model.dart';
 import '../models/community_member_model.dart';
 import '../models/community_message_model.dart';
+import '../models/community_model.dart';
 
 /// Communities Repository Implementation
 class CommunitiesRepositoryImpl implements CommunitiesRepository {
-  final CommunitiesRemoteDataSource remoteDataSource;
 
   CommunitiesRepositoryImpl({required this.remoteDataSource});
+  final CommunitiesRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<Community>>> getCommunities({

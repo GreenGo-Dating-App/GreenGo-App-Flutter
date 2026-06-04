@@ -4,17 +4,9 @@ import '../constants/app_colors.dart';
 /// Enhancement #20 & #21: Swipe Actions for Block/Report
 /// Swipeable card with block and report actions
 class SwipeActionCard extends StatefulWidget {
-  final Widget child;
-  final VoidCallback? onBlock;
-  final VoidCallback? onReport;
-  final VoidCallback? onDelete;
-  final bool enableBlock;
-  final bool enableReport;
-  final bool enableDelete;
 
   const SwipeActionCard({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.onBlock,
     this.onReport,
     this.onDelete,
@@ -22,6 +14,13 @@ class SwipeActionCard extends StatefulWidget {
     this.enableReport = true,
     this.enableDelete = false,
   });
+  final Widget child;
+  final VoidCallback? onBlock;
+  final VoidCallback? onReport;
+  final VoidCallback? onDelete;
+  final bool enableBlock;
+  final bool enableReport;
+  final bool enableDelete;
 
   @override
   State<SwipeActionCard> createState() => _SwipeActionCardState();
@@ -113,10 +112,6 @@ class _SwipeActionCardState extends State<SwipeActionCard> {
 }
 
 class _ActionButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final Color color;
-  final VoidCallback onTap;
 
   const _ActionButton({
     required this.icon,
@@ -124,6 +119,10 @@ class _ActionButton extends StatelessWidget {
     required this.color,
     required this.onTap,
   });
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -158,9 +157,6 @@ class _ActionButton extends StatelessWidget {
 
 /// Quick action buttons row
 class QuickActionButtons extends StatelessWidget {
-  final VoidCallback? onBlock;
-  final VoidCallback? onReport;
-  final VoidCallback? onUnmatch;
 
   const QuickActionButtons({
     super.key,
@@ -168,6 +164,9 @@ class QuickActionButtons extends StatelessWidget {
     this.onReport,
     this.onUnmatch,
   });
+  final VoidCallback? onBlock;
+  final VoidCallback? onReport;
+  final VoidCallback? onUnmatch;
 
   @override
   Widget build(BuildContext context) {
@@ -198,10 +197,6 @@ class QuickActionButtons extends StatelessWidget {
 }
 
 class _QuickActionButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final Color color;
-  final VoidCallback? onTap;
 
   const _QuickActionButton({
     required this.icon,
@@ -209,6 +204,10 @@ class _QuickActionButton extends StatelessWidget {
     required this.color,
     this.onTap,
   });
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {

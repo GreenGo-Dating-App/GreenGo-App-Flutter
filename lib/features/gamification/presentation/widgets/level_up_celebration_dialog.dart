@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_level.dart';
 
 /// Level-up celebration dialog with Lottie confetti animation
 /// Shows when user reaches a new level with multilingual support
 class LevelUpCelebrationDialog extends StatefulWidget {
+
+  const LevelUpCelebrationDialog({
+    required this.newLevel, required this.previousLevel, super.key,
+    this.rewards = const [],
+    this.isVIP = false,
+    this.onDismiss,
+  });
   final int newLevel;
   final int previousLevel;
   final List<LevelReward> rewards;
   final bool isVIP;
   final VoidCallback? onDismiss;
-
-  const LevelUpCelebrationDialog({
-    super.key,
-    required this.newLevel,
-    required this.previousLevel,
-    this.rewards = const [],
-    this.isVIP = false,
-    this.onDismiss,
-  });
 
   /// Show the level-up celebration dialog
   static Future<void> show(

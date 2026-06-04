@@ -1,13 +1,13 @@
-/**
- * Gamification Repository Interface
- * Points 176-200: Achievement, Level, and Challenge operations
- */
+/// Gamification Repository Interface
+/// Points 176-200: Achievement, Level, and Challenge operations
+library;
 
 import 'package:dartz/dartz.dart';
+
 import '../../../../core/error/failures.dart';
 import '../entities/achievement.dart';
-import '../entities/user_level.dart';
 import '../entities/daily_challenge.dart';
+import '../entities/user_level.dart';
 
 abstract class GamificationRepository {
   // Achievement Operations (Points 176-185)

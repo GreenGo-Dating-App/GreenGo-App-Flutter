@@ -4,6 +4,15 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents a user's membership in a community
 class CommunityMember extends Equatable {
+
+  const CommunityMember({
+    required this.userId,
+    required this.displayName,
+    required this.joinedAt, this.photoUrl,
+    this.role = CommunityRole.member,
+    this.languages = const [],
+    this.isLocalGuide = false,
+  });
   final String userId;
   final String displayName;
   final String? photoUrl;
@@ -11,16 +20,6 @@ class CommunityMember extends Equatable {
   final DateTime joinedAt;
   final List<String> languages;
   final bool isLocalGuide;
-
-  const CommunityMember({
-    required this.userId,
-    required this.displayName,
-    this.photoUrl,
-    this.role = CommunityRole.member,
-    required this.joinedAt,
-    this.languages = const [],
-    this.isLocalGuide = false,
-  });
 
   /// Check if member is an admin or owner
   bool get isAdminOrOwner =>

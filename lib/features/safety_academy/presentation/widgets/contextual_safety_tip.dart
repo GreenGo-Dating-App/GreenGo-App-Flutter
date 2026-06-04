@@ -8,17 +8,16 @@ import '../../../../core/constants/app_colors.dart';
 /// "coffee", "date", "address", "where") and displays a relevant safety
 /// tip in a dismissible card at the top of the chat.
 class ContextualSafetyTip extends StatefulWidget {
+
+  const ContextualSafetyTip({
+    required this.messageText, super.key,
+    this.onDismiss,
+  });
   /// The latest message text to check for trigger keywords
   final String messageText;
 
   /// Optional callback when the tip is dismissed
   final VoidCallback? onDismiss;
-
-  const ContextualSafetyTip({
-    super.key,
-    required this.messageText,
-    this.onDismiss,
-  });
 
   @override
   State<ContextualSafetyTip> createState() => _ContextualSafetyTipState();
@@ -68,7 +67,7 @@ class _ContextualSafetyTipState extends State<ContextualSafetyTip>
   bool get _shouldShow {
     if (_isDismissed) return false;
     final text = widget.messageText.toLowerCase();
-    return _meetingKeywords.any((keyword) => text.contains(keyword));
+    return _meetingKeywords.any(text.contains);
   }
 
   String get _tipText {

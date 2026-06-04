@@ -11,6 +11,9 @@ import 'feature_engineer.dart';
 /// - Language overlap (20%)
 /// - Age compatibility (25%)
 class CompatibilityScorer {
+
+  CompatibilityScorer({FeatureEngineer? featureEngineer})
+      : _featureEngineer = featureEngineer ?? FeatureEngineer();
   final FeatureEngineer _featureEngineer;
 
   // Scoring weights (must sum to 1.0)
@@ -18,9 +21,6 @@ class CompatibilityScorer {
   static const double INTEREST_WEIGHT = 0.30;
   static const double LANGUAGE_WEIGHT = 0.20;
   static const double AGE_WEIGHT = 0.25;
-
-  CompatibilityScorer({FeatureEngineer? featureEngineer})
-      : _featureEngineer = featureEngineer ?? FeatureEngineer();
 
   /// Calculate comprehensive compatibility score between two profiles
   MatchScore calculateScore({
@@ -106,7 +106,7 @@ class CompatibilityScorer {
       'Surfing', 'Skiing', 'Snowboarding', 'Languages', 'Teaching'
     ];
 
-    double bonus = 0.0;
+    var bonus = 0.0;
     for (final interest in sharedInterests) {
       if (nicheInterests.contains(interest)) {
         bonus += 5.0; // +5% for each shared niche interest

@@ -1,19 +1,20 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../domain/entities/message.dart';
-import '../../domain/usecases/get_conversation.dart';
-import '../../domain/usecases/get_messages.dart';
-import '../../domain/usecases/mark_as_read.dart';
-import '../../domain/usecases/send_message.dart';
-import '../../domain/usecases/set_typing_indicator.dart';
-import '../../domain/usecases/delete_message.dart';
-import '../../domain/usecases/block_user.dart';
-import '../../domain/usecases/report_user.dart';
-import '../../domain/usecases/star_message.dart';
-import '../../domain/usecases/forward_message.dart';
-import '../../domain/usecases/delete_conversation.dart';
+
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/message.dart';
+import '../../domain/usecases/block_user.dart';
+import '../../domain/usecases/delete_conversation.dart';
+import '../../domain/usecases/delete_message.dart';
+import '../../domain/usecases/forward_message.dart';
+import '../../domain/usecases/get_conversation.dart';
+import '../../domain/usecases/get_messages.dart';
+import '../../domain/usecases/mark_as_read.dart';
+import '../../domain/usecases/report_user.dart';
+import '../../domain/usecases/send_message.dart';
+import '../../domain/usecases/set_typing_indicator.dart';
+import '../../domain/usecases/star_message.dart';
 import 'chat_event.dart';
 import 'chat_state.dart';
 
@@ -21,30 +22,6 @@ import 'chat_state.dart';
 ///
 /// Manages chat conversation state and real-time messaging
 class ChatBloc extends Bloc<ChatEvent, ChatState> {
-  final GetConversation getConversation;
-  final GetMessages getMessages;
-  final SendMessage sendMessage;
-  final MarkAsRead markAsRead;
-  final SetTypingIndicator setTypingIndicator;
-  final DeleteMessage deleteMessage;
-  final DeleteMessageForMe deleteMessageForMe;
-  final DeleteMessageForBoth deleteMessageForBoth;
-  final BlockUser blockUser;
-  final UnblockUser unblockUser;
-  final ReportUser reportUser;
-  final StarMessage starMessage;
-  final ForwardMessage forwardMessage;
-  final DeleteConversationForMe deleteConversationForMe;
-  final DeleteConversationForBoth deleteConversationForBoth;
-  final UsageLimitService _usageLimitService;
-  final TrackUserAction? _trackUserAction;
-
-  String? _conversationId;
-  String? _matchId;
-  String? _currentUserId;
-  String? _otherUserId;
-  bool _hasLoadedOnce = false;
-  int _messageLimit = 100;
 
   ChatBloc({
     required this.getConversation,
@@ -84,6 +61,30 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     on<ChatMessageDeletedForMe>(_onMessageDeletedForMe);
     on<ChatMessageDeletedForBoth>(_onMessageDeletedForBoth);
   }
+  final GetConversation getConversation;
+  final GetMessages getMessages;
+  final SendMessage sendMessage;
+  final MarkAsRead markAsRead;
+  final SetTypingIndicator setTypingIndicator;
+  final DeleteMessage deleteMessage;
+  final DeleteMessageForMe deleteMessageForMe;
+  final DeleteMessageForBoth deleteMessageForBoth;
+  final BlockUser blockUser;
+  final UnblockUser unblockUser;
+  final ReportUser reportUser;
+  final StarMessage starMessage;
+  final ForwardMessage forwardMessage;
+  final DeleteConversationForMe deleteConversationForMe;
+  final DeleteConversationForBoth deleteConversationForBoth;
+  final UsageLimitService _usageLimitService;
+  final TrackUserAction? _trackUserAction;
+
+  String? _conversationId;
+  String? _matchId;
+  String? _currentUserId;
+  String? _otherUserId;
+  bool _hasLoadedOnce = false;
+  int _messageLimit = 100;
 
   /// Re-subscribes to the Firestore messages stream
   void _resubscribeToMessages() {
@@ -371,7 +372,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     if (event.membershipRules != null && event.membershipTier != null) {
       if (!event.membershipRules!.canSendMedia) {
         // Find the minimum tier that allows media sending
-        MembershipTier requiredTier = MembershipTier.gold; // Default to gold
+        var requiredTier = MembershipTier.gold; // Default to gold
         for (final tier in MembershipTier.values) {
           final rules = MembershipRules.getDefaultsForTier(tier);
           if (rules.canSendMedia) {
@@ -418,7 +419,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     if (event.membershipRules != null && event.membershipTier != null) {
       if (!event.membershipRules!.canSendMedia) {
         // Find the minimum tier that allows media sending
-        MembershipTier requiredTier = MembershipTier.gold; // Default to gold
+        var requiredTier = MembershipTier.gold; // Default to gold
         for (final tier in MembershipTier.values) {
           final rules = MembershipRules.getDefaultsForTier(tier);
           if (rules.canSendMedia) {
@@ -661,8 +662,4 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     );
   }
 
-  @override
-  Future<void> close() {
-    return super.close();
-  }
 }

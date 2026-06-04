@@ -1,7 +1,6 @@
-/**
- * Track Achievement Progress Use Case
- * Points 176-185: Update achievement progress and auto-unlock when complete
- */
+/// Track Achievement Progress Use Case
+/// Points 176-185: Update achievement progress and auto-unlock when complete
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -11,9 +10,9 @@ import '../repositories/gamification_repository.dart';
 
 class TrackAchievementProgress
     implements UseCase<AchievementProgressResult, TrackAchievementProgressParams> {
-  final GamificationRepository repository;
 
   TrackAchievementProgress(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, AchievementProgressResult>> call(
@@ -57,25 +56,25 @@ class TrackAchievementProgress
 }
 
 class TrackAchievementProgressParams {
-  final String userId;
-  final String achievementId;
-  final int incrementBy;
 
   TrackAchievementProgressParams({
     required this.userId,
     required this.achievementId,
     this.incrementBy = 1,
   });
+  final String userId;
+  final String achievementId;
+  final int incrementBy;
 }
 
 class AchievementProgressResult {
-  final UserAchievementProgress progress;
-  final bool wasCompleted;
-  final Achievement? achievement;
 
   AchievementProgressResult({
     required this.progress,
     required this.wasCompleted,
     this.achievement,
   });
+  final UserAchievementProgress progress;
+  final bool wasCompleted;
+  final Achievement? achievement;
 }

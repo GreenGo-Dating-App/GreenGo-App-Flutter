@@ -11,7 +11,6 @@ import 'spots_state.dart';
 /// Handles loading spots by city/category, loading spot details with
 /// reviews, creating new spots, and adding reviews.
 class SpotsBloc extends Bloc<SpotsEvent, SpotsState> {
-  final SpotsRemoteDataSource remoteDataSource;
 
   SpotsBloc({required this.remoteDataSource}) : super(const SpotsInitial()) {
     on<LoadSpots>(_onLoadSpots);
@@ -19,6 +18,7 @@ class SpotsBloc extends Bloc<SpotsEvent, SpotsState> {
     on<CreateSpot>(_onCreateSpot);
     on<AddReview>(_onAddReview);
   }
+  final SpotsRemoteDataSource remoteDataSource;
 
   Future<void> _onLoadSpots(
     LoadSpots event,

@@ -1,17 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
 
 /// Silently refreshes the current user's GPS location in Firestore.
 ///
 /// Used on pull-to-refresh in discovery so distance sorting and country
 /// filtering always reflect the user's real position.
 class LocationRefreshService {
-  final FirebaseFirestore _firestore;
 
   LocationRefreshService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   /// Attempt to refresh the user's location. Returns silently on any failure
   /// (no permission, GPS off, timeout, etc.) — this is best-effort.
@@ -45,9 +45,9 @@ class LocationRefreshService {
       });
 
       // Reverse-geocode to get city + country
-      String city = '';
-      String country = '';
-      String displayAddress = '';
+      var city = '';
+      var country = '';
+      var displayAddress = '';
       try {
         final placemarks = await placemarkFromCoordinates(
           position.latitude,

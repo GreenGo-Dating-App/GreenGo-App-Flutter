@@ -1,6 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
@@ -118,7 +119,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => _navigateToCreateCommunity(),
+        onPressed: _navigateToCreateCommunity,
         backgroundColor: AppColors.richGold,
         icon: const Icon(Icons.add, color: AppColors.deepBlack),
         label: Text(
@@ -140,7 +141,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    List<Community> userCommunities = [];
+    var userCommunities = <Community>[];
     if (state is CommunitiesLoaded) {
       userCommunities = state.userCommunities;
     }
@@ -189,8 +190,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    List<Community> communities = [];
-    List<Community> recommended = [];
+    var communities = <Community>[];
+    var recommended = <Community>[];
     if (state is CommunitiesLoaded) {
       communities = state.communities;
       recommended = state.recommended;
@@ -365,7 +366,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    List<Community> languageCircles = [];
+    var languageCircles = <Community>[];
     if (state is CommunitiesLoaded) {
       languageCircles = state.languageCircles;
 

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
@@ -12,12 +13,11 @@ import '../bloc/notification_preferences_state.dart';
 ///
 /// Allows users to configure their notification settings
 class NotificationPreferencesScreen extends StatelessWidget {
-  final String userId;
 
   const NotificationPreferencesScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   Widget build(BuildContext context) {
@@ -356,8 +356,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
   Widget _buildSection({
     required String title,
-    String? subtitle,
-    required List<Widget> children,
+    required List<Widget> children, String? subtitle,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -419,7 +418,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
       ),
       value: value,
       onChanged: enabled ? onChanged : null,
-      activeColor: AppColors.richGold,
+      activeThumbColor: AppColors.richGold,
     );
   }
 
@@ -431,7 +430,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
   }) {
     return InkWell(
       onTap: () async {
-        final TimeOfDay? picked = await showTimePicker(
+        final picked = await showTimePicker(
           context: context,
           initialTime: _parseTime(time),
           builder: (context, child) {

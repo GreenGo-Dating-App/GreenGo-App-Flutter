@@ -7,12 +7,7 @@ class GlobeUserModel extends GlobeUser {
   const GlobeUserModel({
     required super.userId,
     required super.displayName,
-    super.photoUrl,
-    required super.pinLatitude,
-    required super.pinLongitude,
-    required super.country,
-    required super.city,
-    required super.pinType,
+    required super.pinLatitude, required super.pinLongitude, required super.country, required super.city, required super.pinType, super.photoUrl,
     super.isOnline,
     super.isTravelerActive,
     super.travelerCountry,

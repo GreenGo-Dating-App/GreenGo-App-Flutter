@@ -27,12 +27,6 @@ abstract class MembershipRemoteDataSource {
 
 /// Lightweight result returned by the server when redemption succeeds.
 class CouponRedeemResult {
-  final String type; // 'membership' | 'base_membership' | 'coins'
-  final MembershipTier? tier;
-  final int? coinAmount;
-  final int durationDays;
-  final DateTime? newEndDate;
-  final String grantSummary;
 
   const CouponRedeemResult({
     required this.type,
@@ -42,13 +36,19 @@ class CouponRedeemResult {
     this.coinAmount,
     this.newEndDate,
   });
+  final String type; // 'membership' | 'base_membership' | 'coins'
+  final MembershipTier? tier;
+  final int? coinAmount;
+  final int durationDays;
+  final DateTime? newEndDate;
+  final String grantSummary;
 }
 
 /// Base class for all coupon-redemption failures. UI layer should switch on
 /// the runtimeType to pick a localized message.
 sealed class CouponFailure implements Exception {
-  final String message;
   const CouponFailure(this.message);
+  final String message;
   @override
   String toString() => message;
 }
@@ -82,13 +82,13 @@ class CouponGenericFailure extends CouponFailure {
 }
 
 class MembershipRemoteDataSourceImpl implements MembershipRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final FirebaseFunctions functions;
 
   MembershipRemoteDataSourceImpl({
     required this.firestore,
     FirebaseFunctions? functions,
   }) : functions = functions ?? FirebaseFunctions.instance;
+  final FirebaseFirestore firestore;
+  final FirebaseFunctions functions;
 
   @override
   Future<MembershipModel?> getMembership(String userId) async {

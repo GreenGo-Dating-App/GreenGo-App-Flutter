@@ -40,7 +40,39 @@ enum SupportTicketStatus {
 /// Conversation Entity
 ///
 /// Represents a chat conversation between two matched users
-class Conversation extends Equatable {
+class Conversation extends Equatable { // userId → Timestamp of deletion
+
+  const Conversation({
+    required this.conversationId,
+    required this.matchId,
+    required this.userId1,
+    required this.userId2,
+    required this.createdAt, this.lastMessage,
+    this.lastMessageAt,
+    this.unreadCount = 0,
+    this.isTyping = false,
+    this.typingUserId,
+    this.isPinned = false,
+    this.pinnedAt,
+    this.isMuted = false,
+    this.mutedUntil,
+    this.isArchived = false,
+    this.archivedAt,
+    this.theme = ChatTheme.gold,
+    this.settings,
+    this.conversationType = ConversationType.match,
+    this.supportAgentId,
+    this.supportPriority,
+    this.supportTicketStatus,
+    this.supportCategory,
+    this.supportSubject,
+    this.supportResolvedAt,
+    this.visibleTo,
+    this.superLikeSenderId,
+    this.favorites,
+    this.isDeleted = false,
+    this.deletedFor,
+  });
   final String conversationId;
   final String matchId;
   final String userId1;
@@ -90,40 +122,7 @@ class Conversation extends Equatable {
 
   // Deletion tracking
   final bool isDeleted;
-  final Map<String, dynamic>? deletedFor; // userId → Timestamp of deletion
-
-  const Conversation({
-    required this.conversationId,
-    required this.matchId,
-    required this.userId1,
-    required this.userId2,
-    this.lastMessage,
-    this.lastMessageAt,
-    this.unreadCount = 0,
-    this.isTyping = false,
-    this.typingUserId,
-    required this.createdAt,
-    this.isPinned = false,
-    this.pinnedAt,
-    this.isMuted = false,
-    this.mutedUntil,
-    this.isArchived = false,
-    this.archivedAt,
-    this.theme = ChatTheme.gold,
-    this.settings,
-    this.conversationType = ConversationType.match,
-    this.supportAgentId,
-    this.supportPriority,
-    this.supportTicketStatus,
-    this.supportCategory,
-    this.supportSubject,
-    this.supportResolvedAt,
-    this.visibleTo,
-    this.superLikeSenderId,
-    this.favorites,
-    this.isDeleted = false,
-    this.deletedFor,
-  });
+  final Map<String, dynamic>? deletedFor;
 
   /// Get the other user's ID
   String getOtherUserId(String currentUserId) {

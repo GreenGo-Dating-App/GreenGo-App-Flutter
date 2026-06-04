@@ -1,23 +1,24 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../../../generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../profile/data/models/profile_model.dart';
-import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../profile/data/models/profile_model.dart';
 import '../../domain/entities/globe_user.dart';
 import '../bloc/globe_bloc.dart';
 import '../bloc/globe_event.dart';
 import '../bloc/globe_state.dart';
-import '../widgets/globe_map_view.dart';
 import '../widgets/globe_country_search.dart';
+import '../widgets/globe_map_view.dart';
 
 class GlobeScreen extends StatelessWidget {
-  final String userId;
 
-  const GlobeScreen({super.key, required this.userId});
+  const GlobeScreen({required this.userId, super.key});
+  final String userId;
 
   @override
   Widget build(BuildContext context) {
@@ -163,7 +164,7 @@ class GlobeScreen extends StatelessWidget {
 
   void _showCountrySearch(BuildContext context) {
     final state = context.read<GlobeBloc>().state;
-    List<String> countries = [];
+    var countries = <String>[];
     if (state is GlobeLoaded) {
       countries = state.data.allCountries;
     } else if (state is GlobePinSelected) {
@@ -640,7 +641,7 @@ class GlobeScreen extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               AppLocalizations.of(context)!.globeNoConnectionsHint,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 13,
               ),
@@ -731,11 +732,11 @@ class GlobeScreen extends StatelessWidget {
 }
 
 class _LegendItem extends StatelessWidget {
+
+  const _LegendItem({required this.label, this.color, this.icon});
   final Color? color;
   final IconData? icon;
   final String label;
-
-  const _LegendItem({this.color, this.icon, required this.label});
 
   @override
   Widget build(BuildContext context) {

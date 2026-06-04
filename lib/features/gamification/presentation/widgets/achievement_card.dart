@@ -1,22 +1,20 @@
-/**
- * Achievement Card Widget
- * Points 176-185: Display individual achievement with progress
- */
+/// Achievement Card Widget
+/// Points 176-185: Display individual achievement with progress
+library;
 
 import 'package:flutter/material.dart';
 import '../../domain/entities/achievement.dart';
 
 class AchievementCard extends StatelessWidget {
+
+  const AchievementCard({
+    required this.achievement, super.key,
+    this.progress,
+    this.onTap,
+  });
   final Achievement achievement;
   final UserAchievementProgress? progress;
   final VoidCallback? onTap;
-
-  const AchievementCard({
-    Key? key,
-    required this.achievement,
-    this.progress,
-    this.onTap,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

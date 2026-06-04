@@ -4,9 +4,9 @@ import '../repositories/chat_repository.dart';
 
 /// Report User Use Case
 class ReportUser {
-  final ChatRepository repository;
 
   ReportUser(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(ReportUserParams params) {
     return repository.reportUser(
@@ -22,12 +22,6 @@ class ReportUser {
 
 /// Parameters for ReportUser use case
 class ReportUserParams {
-  final String reporterId;
-  final String reportedUserId;
-  final String reason;
-  final String? conversationId;
-  final String? messageId;
-  final String? additionalDetails;
 
   ReportUserParams({
     required this.reporterId,
@@ -37,4 +31,10 @@ class ReportUserParams {
     this.messageId,
     this.additionalDetails,
   });
+  final String reporterId;
+  final String reportedUserId;
+  final String reason;
+  final String? conversationId;
+  final String? messageId;
+  final String? additionalDetails;
 }

@@ -1,12 +1,21 @@
-/**
- * User Management Entity
- * Points 236-245: Admin user management tools
- */
+/// User Management Entity
+/// Points 236-245: Admin user management tools
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Admin user search result (Point 236)
-class UserSearchResult extends Equatable {
+class UserSearchResult extends Equatable { // Relevance to search query
+
+  const UserSearchResult({
+    required this.userId,
+    required this.displayName,
+    required this.email,
+    required this.age,
+    required this.accountStatus, required this.createdAt, required this.matchScore, this.photoUrl,
+    this.lastActiveAt,
+    this.subscriptionTier,
+  });
   final String userId;
   final String displayName;
   final String email;
@@ -16,20 +25,7 @@ class UserSearchResult extends Equatable {
   final DateTime createdAt;
   final DateTime? lastActiveAt;
   final String? subscriptionTier;
-  final double matchScore; // Relevance to search query
-
-  const UserSearchResult({
-    required this.userId,
-    required this.displayName,
-    required this.email,
-    required this.age,
-    this.photoUrl,
-    required this.accountStatus,
-    required this.createdAt,
-    this.lastActiveAt,
-    this.subscriptionTier,
-    required this.matchScore,
-  });
+  final double matchScore;
 
   @override
   List<Object?> get props => [
@@ -48,6 +44,13 @@ class UserSearchResult extends Equatable {
 
 /// Detailed user profile for admin view (Point 237)
 class AdminUserProfile extends Equatable {
+
+  const AdminUserProfile({
+    required this.userId,
+    required this.basicInfo,
+    required this.accountInfo,
+    required this.coinInfo, required this.activityInfo, required this.moderationInfo, required this.verificationInfo, required this.flags, required this.tags, this.subscriptionInfo,
+  });
   final String userId;
   final UserBasicInfo basicInfo;
   final UserAccountInfo accountInfo;
@@ -58,19 +61,6 @@ class AdminUserProfile extends Equatable {
   final UserVerificationInfo verificationInfo;
   final List<UserFlag> flags;
   final List<String> tags;
-
-  const AdminUserProfile({
-    required this.userId,
-    required this.basicInfo,
-    required this.accountInfo,
-    this.subscriptionInfo,
-    required this.coinInfo,
-    required this.activityInfo,
-    required this.moderationInfo,
-    required this.verificationInfo,
-    required this.flags,
-    required this.tags,
-  });
 
   @override
   List<Object?> get props => [
@@ -89,6 +79,16 @@ class AdminUserProfile extends Equatable {
 
 /// User basic info
 class UserBasicInfo extends Equatable {
+
+  const UserBasicInfo({
+    required this.displayName,
+    required this.email,
+    required this.age, required this.gender, required this.photoUrls, this.phoneNumber,
+    this.bio,
+    this.location,
+    this.latitude,
+    this.longitude,
+  });
   final String displayName;
   final String email;
   final String? phoneNumber;
@@ -99,19 +99,6 @@ class UserBasicInfo extends Equatable {
   final String? location;
   final double? latitude;
   final double? longitude;
-
-  const UserBasicInfo({
-    required this.displayName,
-    required this.email,
-    this.phoneNumber,
-    required this.age,
-    required this.gender,
-    required this.photoUrls,
-    this.bio,
-    this.location,
-    this.latitude,
-    this.longitude,
-  });
 
   @override
   List<Object?> get props => [
@@ -130,6 +117,15 @@ class UserBasicInfo extends Equatable {
 
 /// User account info
 class UserAccountInfo extends Equatable {
+
+  const UserAccountInfo({
+    required this.createdAt,
+    required this.accountStatus, required this.isEmailVerified, required this.isPhoneVerified, required this.devicePlatform, required this.appVersion, this.lastLoginAt,
+    this.suspensionReason,
+    this.suspendedUntil,
+    this.bannedAt,
+    this.banReason,
+  });
   final DateTime createdAt;
   final DateTime? lastLoginAt;
   final String accountStatus; // active, suspended, banned, deleted
@@ -141,20 +137,6 @@ class UserAccountInfo extends Equatable {
   final bool isPhoneVerified;
   final String devicePlatform;
   final String appVersion;
-
-  const UserAccountInfo({
-    required this.createdAt,
-    this.lastLoginAt,
-    required this.accountStatus,
-    this.suspensionReason,
-    this.suspendedUntil,
-    this.bannedAt,
-    this.banReason,
-    required this.isEmailVerified,
-    required this.isPhoneVerified,
-    required this.devicePlatform,
-    required this.appVersion,
-  });
 
   @override
   List<Object?> get props => [
@@ -174,6 +156,15 @@ class UserAccountInfo extends Equatable {
 
 /// User subscription info (Point 240)
 class UserSubscriptionInfo extends Equatable {
+
+  const UserSubscriptionInfo({
+    required this.subscriptionId,
+    required this.tier,
+    required this.status,
+    required this.purchaseDate,
+    required this.expirationDate,
+    required this.autoRenew, required this.platform, required this.price, required this.currency, required this.renewalCount, this.canceledAt,
+  });
   final String subscriptionId;
   final String tier; // Silver, Gold, Platinum
   final String status; // active, canceled, expired, in_grace_period
@@ -185,20 +176,6 @@ class UserSubscriptionInfo extends Equatable {
   final double price;
   final String currency;
   final int renewalCount;
-
-  const UserSubscriptionInfo({
-    required this.subscriptionId,
-    required this.tier,
-    required this.status,
-    required this.purchaseDate,
-    required this.expirationDate,
-    this.canceledAt,
-    required this.autoRenew,
-    required this.platform,
-    required this.price,
-    required this.currency,
-    required this.renewalCount,
-  });
 
   @override
   List<Object?> get props => [
@@ -218,21 +195,20 @@ class UserSubscriptionInfo extends Equatable {
 
 /// User coin info (Point 241)
 class UserCoinInfo extends Equatable {
-  final int totalCoins;
-  final int lifetimePurchased;
-  final int lifetimeSpent;
-  final int lifetimeEarned;
-  final DateTime? lastPurchaseAt;
-  final List<CoinBatchInfo> batches;
 
   const UserCoinInfo({
     required this.totalCoins,
     required this.lifetimePurchased,
     required this.lifetimeSpent,
     required this.lifetimeEarned,
-    this.lastPurchaseAt,
-    required this.batches,
+    required this.batches, this.lastPurchaseAt,
   });
+  final int totalCoins;
+  final int lifetimePurchased;
+  final int lifetimeSpent;
+  final int lifetimeEarned;
+  final DateTime? lastPurchaseAt;
+  final List<CoinBatchInfo> batches;
 
   @override
   List<Object?> get props => [
@@ -247,12 +223,6 @@ class UserCoinInfo extends Equatable {
 
 /// Coin batch info
 class CoinBatchInfo extends Equatable {
-  final String batchId;
-  final int initialCoins;
-  final int remainingCoins;
-  final String source;
-  final DateTime acquiredAt;
-  final DateTime expirationDate;
 
   const CoinBatchInfo({
     required this.batchId,
@@ -262,6 +232,12 @@ class CoinBatchInfo extends Equatable {
     required this.acquiredAt,
     required this.expirationDate,
   });
+  final String batchId;
+  final int initialCoins;
+  final int remainingCoins;
+  final String source;
+  final DateTime acquiredAt;
+  final DateTime expirationDate;
 
   @override
   List<Object?> get props => [
@@ -276,6 +252,15 @@ class CoinBatchInfo extends Equatable {
 
 /// User activity info
 class UserActivityInfo extends Equatable {
+
+  const UserActivityInfo({
+    required this.totalMatches,
+    required this.totalMessages,
+    required this.totalLikes,
+    required this.totalSuperLikes,
+    required this.totalBoosts,
+    required this.daysActive, required this.avgSessionDuration, required this.totalSessions, this.lastActiveAt,
+  });
   final int totalMatches;
   final int totalMessages;
   final int totalLikes;
@@ -285,18 +270,6 @@ class UserActivityInfo extends Equatable {
   final int daysActive; // Days with activity
   final double avgSessionDuration; // Minutes
   final int totalSessions;
-
-  const UserActivityInfo({
-    required this.totalMatches,
-    required this.totalMessages,
-    required this.totalLikes,
-    required this.totalSuperLikes,
-    required this.totalBoosts,
-    this.lastActiveAt,
-    required this.daysActive,
-    required this.avgSessionDuration,
-    required this.totalSessions,
-  });
 
   @override
   List<Object?> get props => [
@@ -314,6 +287,15 @@ class UserActivityInfo extends Equatable {
 
 /// User moderation info
 class UserModerationInfo extends Equatable {
+
+  const UserModerationInfo({
+    required this.reportCount,
+    required this.warningCount,
+    required this.suspensionCount,
+    required this.isShadowBanned, required this.appliedRestrictions, this.lastWarningAt,
+    this.lastSuspensionAt,
+    this.visibilityReduction,
+  });
   final int reportCount; // Times reported by others
   final int warningCount;
   final int suspensionCount;
@@ -322,17 +304,6 @@ class UserModerationInfo extends Equatable {
   final bool isShadowBanned;
   final double? visibilityReduction;
   final List<String> appliedRestrictions;
-
-  const UserModerationInfo({
-    required this.reportCount,
-    required this.warningCount,
-    required this.suspensionCount,
-    this.lastWarningAt,
-    this.lastSuspensionAt,
-    required this.isShadowBanned,
-    this.visibilityReduction,
-    required this.appliedRestrictions,
-  });
 
   @override
   List<Object?> get props => [
@@ -348,22 +319,20 @@ class UserModerationInfo extends Equatable {
 }
 
 /// User verification info
-class UserVerificationInfo extends Equatable {
+class UserVerificationInfo extends Equatable { // veryLow, low, medium, high, veryHigh
+
+  const UserVerificationInfo({
+    required this.isPhotoVerified,
+    required this.isIdVerified,
+    required this.trustScore, required this.trustLevel, this.photoVerifiedAt,
+    this.idVerifiedAt,
+  });
   final bool isPhotoVerified;
   final bool isIdVerified;
   final DateTime? photoVerifiedAt;
   final DateTime? idVerifiedAt;
   final double trustScore; // 0-100
-  final String trustLevel; // veryLow, low, medium, high, veryHigh
-
-  const UserVerificationInfo({
-    required this.isPhotoVerified,
-    required this.isIdVerified,
-    this.photoVerifiedAt,
-    this.idVerifiedAt,
-    required this.trustScore,
-    required this.trustLevel,
-  });
+  final String trustLevel;
 
   @override
   List<Object?> get props => [
@@ -378,11 +347,6 @@ class UserVerificationInfo extends Equatable {
 
 /// User flag (admin-added notes)
 class UserFlag extends Equatable {
-  final String flagId;
-  final FlagType type;
-  final String description;
-  final String addedBy;
-  final DateTime addedAt;
 
   const UserFlag({
     required this.flagId,
@@ -391,6 +355,11 @@ class UserFlag extends Equatable {
     required this.addedBy,
     required this.addedAt,
   });
+  final String flagId;
+  final FlagType type;
+  final String description;
+  final String addedBy;
+  final DateTime addedAt;
 
   @override
   List<Object?> get props => [
@@ -414,17 +383,6 @@ enum FlagType {
 
 /// Mass action operation (Point 242)
 class MassActionOperation extends Equatable {
-  final String operationId;
-  final MassActionType type;
-  final List<String> targetUserIds;
-  final Map<String, dynamic> parameters;
-  final String initiatedBy;
-  final DateTime initiatedAt;
-  final MassActionStatus status;
-  final int totalTargets;
-  final int successCount;
-  final int failureCount;
-  final List<MassActionResult> results;
 
   const MassActionOperation({
     required this.operationId,
@@ -439,6 +397,17 @@ class MassActionOperation extends Equatable {
     required this.failureCount,
     required this.results,
   });
+  final String operationId;
+  final MassActionType type;
+  final List<String> targetUserIds;
+  final Map<String, dynamic> parameters;
+  final String initiatedBy;
+  final DateTime initiatedAt;
+  final MassActionStatus status;
+  final int totalTargets;
+  final int successCount;
+  final int failureCount;
+  final List<MassActionResult> results;
 
   @override
   List<Object?> get props => [
@@ -477,15 +446,15 @@ enum MassActionStatus {
 
 /// Mass action result
 class MassActionResult extends Equatable {
-  final String userId;
-  final bool success;
-  final String? errorMessage;
 
   const MassActionResult({
     required this.userId,
     required this.success,
     this.errorMessage,
   });
+  final String userId;
+  final bool success;
+  final String? errorMessage;
 
   @override
   List<Object?> get props => [userId, success, errorMessage];
@@ -493,15 +462,6 @@ class MassActionResult extends Equatable {
 
 /// User communication message (Point 243)
 class UserCommunicationMessage extends Equatable {
-  final String messageId;
-  final String userId;
-  final String subject;
-  final String body;
-  final CommunicationType type;
-  final String sentBy;
-  final DateTime sentAt;
-  final bool isRead;
-  final DateTime? readAt;
 
   const UserCommunicationMessage({
     required this.messageId,
@@ -514,6 +474,15 @@ class UserCommunicationMessage extends Equatable {
     required this.isRead,
     this.readAt,
   });
+  final String messageId;
+  final String userId;
+  final String subject;
+  final String body;
+  final CommunicationType type;
+  final String sentBy;
+  final DateTime sentAt;
+  final bool isRead;
+  final DateTime? readAt;
 
   @override
   List<Object?> get props => [

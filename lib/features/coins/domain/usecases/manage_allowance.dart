@@ -5,16 +5,16 @@ import '../repositories/coin_repository.dart';
 /// Grant Monthly Allowance Use Case
 /// Point 163: Grant monthly coin allowance to Silver (100) and Gold (250) subscribers
 class GrantMonthlyAllowance {
-  final CoinRepository repository;
 
   GrantMonthlyAllowance(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, void>> call({
     required String userId,
     required int amount,
     required String tier,
   }) async {
-    return await repository.grantMonthlyAllowance(
+    return repository.grantMonthlyAllowance(
       userId: userId,
       amount: amount,
       tier: tier,
@@ -24,16 +24,16 @@ class GrantMonthlyAllowance {
 
 /// Check if Monthly Allowance Received Use Case
 class HasReceivedMonthlyAllowance {
-  final CoinRepository repository;
 
   HasReceivedMonthlyAllowance(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, bool>> call({
     required String userId,
     required int year,
     required int month,
   }) async {
-    return await repository.hasReceivedMonthlyAllowance(
+    return repository.hasReceivedMonthlyAllowance(
       userId: userId,
       year: year,
       month: month,

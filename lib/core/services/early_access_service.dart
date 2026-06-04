@@ -4,7 +4,13 @@ import 'package:firebase_auth/firebase_auth.dart' as auth;
 /// Service for managing early access email list
 /// Users in this list get access on March 14, 2026 (same as Platinum tier)
 /// All other users get access on April 14, 2026 (official release)
-class EarlyAccessService {
+class EarlyAccessService { // April 14, 2026
+
+  EarlyAccessService({
+    FirebaseFirestore? firestore,
+    auth.FirebaseAuth? firebaseAuth,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = firebaseAuth ?? auth.FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final auth.FirebaseAuth _auth;
 
@@ -14,13 +20,7 @@ class EarlyAccessService {
 
   // Access dates
   static final DateTime earlyAccessDate = DateTime(2026, 3, 14);  // March 14, 2026
-  static final DateTime generalAccessDate = DateTime(2026, 4, 14); // April 14, 2026
-
-  EarlyAccessService({
-    FirebaseFirestore? firestore,
-    auth.FirebaseAuth? firebaseAuth,
-  })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _auth = firebaseAuth ?? auth.FirebaseAuth.instance;
+  static final DateTime generalAccessDate = DateTime(2026, 4, 14);
 
   /// Check if email is in early access list
   Future<bool> isEmailInEarlyAccessList(String email) async {
@@ -87,13 +87,13 @@ class EarlyAccessService {
     List<String> emails, {
     String? addedBy,
   }) async {
-    int successCount = 0;
-    int duplicateCount = 0;
-    int errorCount = 0;
-    final List<String> errors = [];
+    var successCount = 0;
+    var duplicateCount = 0;
+    var errorCount = 0;
+    final errors = <String>[];
 
     final batch = _firestore.batch();
-    final Set<String> processedEmails = {};
+    final processedEmails = <String>{};
 
     for (final rawEmail in emails) {
       final email = rawEmail.toLowerCase().trim();
@@ -191,10 +191,6 @@ class EarlyAccessService {
 
 /// Result of importing emails from CSV
 class EarlyAccessImportResult {
-  final int successCount;
-  final int duplicateCount;
-  final int errorCount;
-  final List<String> errors;
 
   EarlyAccessImportResult({
     required this.successCount,
@@ -202,6 +198,10 @@ class EarlyAccessImportResult {
     required this.errorCount,
     required this.errors,
   });
+  final int successCount;
+  final int duplicateCount;
+  final int errorCount;
+  final List<String> errors;
 
   int get totalProcessed => successCount + duplicateCount + errorCount;
 
@@ -213,9 +213,6 @@ class EarlyAccessImportResult {
 
 /// Email entry in early access list
 class EarlyAccessEmail {
-  final String email;
-  final DateTime? addedAt;
-  final String? addedBy;
 
   EarlyAccessEmail({
     required this.email,
@@ -232,4 +229,7 @@ class EarlyAccessEmail {
       addedBy: data['addedBy'] as String?,
     );
   }
+  final String email;
+  final DateTime? addedAt;
+  final String? addedBy;
 }

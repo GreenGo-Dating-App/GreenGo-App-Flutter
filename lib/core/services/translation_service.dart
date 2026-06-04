@@ -7,9 +7,9 @@ import 'package:http/http.dart' as http;
 /// Handles online translation using Google Translate free API directly.
 /// Supports all Google Translate language codes including pt-BR.
 class TranslationService {
-  static final TranslationService _instance = TranslationService._internal();
   factory TranslationService() => _instance;
   TranslationService._internal();
+  static final TranslationService _instance = TranslationService._internal();
 
   // Cache translations to avoid repeated API calls
   final Map<String, String> _translationCache = {};

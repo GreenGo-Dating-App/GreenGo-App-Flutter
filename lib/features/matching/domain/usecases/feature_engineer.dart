@@ -194,7 +194,7 @@ class FeatureEngineer {
     final diff5 = (traits1.neuroticism - traits2.neuroticism).abs();
 
     final totalDiff = diff1 + diff2 + diff3 + diff4 + diff5;
-    final maxDiff = 5 * 4; // Maximum possible difference
+    const maxDiff = 5 * 4; // Maximum possible difference
 
     // Convert to similarity score (0-100)
     return ((maxDiff - totalDiff) / maxDiff) * 100;

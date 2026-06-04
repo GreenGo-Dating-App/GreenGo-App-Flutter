@@ -6,7 +6,6 @@ import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
-import '../../domain/entities/purchase.dart' as domain;
 import '../../domain/entities/subscription.dart';
 import '../models/subscription_model.dart';
 
@@ -14,6 +13,12 @@ import '../models/subscription_model.dart';
 /// Handles in-app purchases and Firestore operations
 /// Points 146-147: Google Play & Apple StoreKit integration
 class SubscriptionRemoteDataSource {
+
+  SubscriptionRemoteDataSource({
+    required this.firestore,
+    required this.inAppPurchase,
+    FirebaseFunctions? functions,
+  }) : functions = functions ?? FirebaseFunctions.instance;
   final FirebaseFirestore firestore;
   final InAppPurchase inAppPurchase;
   final FirebaseFunctions functions;
@@ -49,12 +54,6 @@ class SubscriptionRemoteDataSource {
   Function(PurchaseDetails, String)? _onPurchaseError;
   Function(PurchaseDetails)? _onPurchasePending;
 
-  SubscriptionRemoteDataSource({
-    required this.firestore,
-    required this.inAppPurchase,
-    FirebaseFunctions? functions,
-  }) : functions = functions ?? FirebaseFunctions.instance;
-
   /// Initialize in-app purchases (Points 146-147)
   Future<bool> initializePurchases() async {
     final available = await inAppPurchase.isAvailable();
@@ -75,7 +74,7 @@ class SubscriptionRemoteDataSource {
 
   /// Get available products from store
   Future<List<ProductDetails>> getAvailableProducts() async {
-    final ProductDetailsResponse response =
+    final response =
         await inAppPurchase.queryProductDetails(_productIds);
 
     if (response.error != null) {
@@ -130,7 +129,7 @@ class SubscriptionRemoteDataSource {
       // Get past purchases from the store
       final purchaseStream = inAppPurchase.purchaseStream;
       final completer = Completer<List<PurchaseDetails>>();
-      final List<PurchaseDetails> restoredPurchases = [];
+      final restoredPurchases = <PurchaseDetails>[];
       
       // Listen for restored purchases
       StreamSubscription<List<PurchaseDetails>>? subscription;

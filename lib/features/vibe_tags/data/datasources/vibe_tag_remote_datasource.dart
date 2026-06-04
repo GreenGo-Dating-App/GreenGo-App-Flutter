@@ -47,14 +47,14 @@ abstract class VibeTagRemoteDataSource {
 
 /// Implementation of Vibe Tag Remote Data Source
 class VibeTagRemoteDataSourceImpl implements VibeTagRemoteDataSource {
-  final FirebaseFirestore _firestore;
-  final FirebaseFunctions _functions;
 
   VibeTagRemoteDataSourceImpl({
     FirebaseFirestore? firestore,
     FirebaseFunctions? functions,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _functions = functions ?? FirebaseFunctions.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseFunctions _functions;
 
   @override
   Future<List<VibeTagModel>> getVibeTags() async {
@@ -77,7 +77,7 @@ class VibeTagRemoteDataSourceImpl implements VibeTagRemoteDataSource {
         .orderBy('sortOrder')
         .get();
 
-    return snapshot.docs.map((doc) => VibeTagModel.fromFirestore(doc)).toList();
+    return snapshot.docs.map(VibeTagModel.fromFirestore).toList();
   }
 
   @override

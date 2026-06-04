@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/tier_config_model.dart';
-import '../../domain/entities/tier_config.dart';
+
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/tier_config.dart';
+import '../models/tier_config_model.dart';
 
 /// Tier Config Remote Data Source
 abstract class TierConfigRemoteDataSource {
@@ -26,11 +27,11 @@ abstract class TierConfigRemoteDataSource {
 
 /// Implementation of TierConfigRemoteDataSource
 class TierConfigRemoteDataSourceImpl implements TierConfigRemoteDataSource {
+
+  TierConfigRemoteDataSourceImpl({required this.firestore});
   final FirebaseFirestore firestore;
 
   static const String _collection = 'tier_configs';
-
-  TierConfigRemoteDataSourceImpl({required this.firestore});
 
   @override
   Future<List<TierConfigModel>> getTierConfigs() async {
@@ -40,7 +41,7 @@ class TierConfigRemoteDataSourceImpl implements TierConfigRemoteDataSource {
         .get();
 
     return snapshot.docs
-        .map((doc) => TierConfigModel.fromFirestore(doc))
+        .map(TierConfigModel.fromFirestore)
         .toList();
   }
 
@@ -98,7 +99,7 @@ class TierConfigRemoteDataSourceImpl implements TierConfigRemoteDataSource {
         .where('isActive', isEqualTo: true)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => TierConfigModel.fromFirestore(doc))
+            .map(TierConfigModel.fromFirestore)
             .toList());
   }
 }

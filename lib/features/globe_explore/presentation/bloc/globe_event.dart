@@ -9,83 +9,83 @@ abstract class GlobeEvent extends Equatable {
 }
 
 class GlobeLoadRequested extends GlobeEvent {
-  final String userId;
 
   const GlobeLoadRequested({required this.userId});
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class GlobeRefreshRequested extends GlobeEvent {
-  final String userId;
 
   const GlobeRefreshRequested({required this.userId});
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class GlobePinTapped extends GlobeEvent {
-  final String tappedUserId;
-  final GlobePinType pinType;
 
   const GlobePinTapped({
     required this.tappedUserId,
     required this.pinType,
   });
+  final String tappedUserId;
+  final GlobePinType pinType;
 
   @override
   List<Object?> get props => [tappedUserId, pinType];
 }
 
 class GlobeFilterToggled extends GlobeEvent {
-  final bool? showMatched;
-  final bool? showDiscovery;
 
   const GlobeFilterToggled({this.showMatched, this.showDiscovery});
+  final bool? showMatched;
+  final bool? showDiscovery;
 
   @override
   List<Object?> get props => [showMatched, showDiscovery];
 }
 
 class GlobeFlyToCountry extends GlobeEvent {
-  final String country;
 
   const GlobeFlyToCountry({required this.country});
+  final String country;
 
   @override
   List<Object?> get props => [country];
 }
 
 class GlobeCountryTapped extends GlobeEvent {
-  final String countryName;
-  final double latitude;
-  final double longitude;
 
   const GlobeCountryTapped({
     required this.countryName,
     required this.latitude,
     required this.longitude,
   });
+  final String countryName;
+  final double latitude;
+  final double longitude;
 
   @override
   List<Object?> get props => [countryName, latitude, longitude];
 }
 
 class GlobeMatchesUpdated extends GlobeEvent {
-  final List<GlobeUser> updatedMatches;
 
   const GlobeMatchesUpdated({required this.updatedMatches});
+  final List<GlobeUser> updatedMatches;
 
   @override
   List<Object?> get props => [updatedMatches];
 }
 
 class GlobeOnlineStatusUpdated extends GlobeEvent {
-  final Map<String, bool> onlineStatusMap;
 
   const GlobeOnlineStatusUpdated({required this.onlineStatusMap});
+  final Map<String, bool> onlineStatusMap;
 
   @override
   List<Object?> get props => [onlineStatusMap];

@@ -5,9 +5,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Answer Call Use Case
 class AnswerCall {
-  final VideoCallingRepository repository;
 
   AnswerCall(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, VideoCall>> call(AnswerCallParams params) {
     return repository.answerCall(
@@ -19,11 +19,11 @@ class AnswerCall {
 
 /// Parameters for AnswerCall use case
 class AnswerCallParams {
-  final String callId;
-  final String userId;
 
   AnswerCallParams({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }

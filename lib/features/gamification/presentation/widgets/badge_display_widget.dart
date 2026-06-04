@@ -4,20 +4,19 @@ import '../../domain/entities/badge.dart';
 
 /// Widget for displaying badges on profile
 class BadgeDisplayWidget extends StatelessWidget {
-  final List<Badge> badges;
-  final double badgeSize;
-  final bool showTooltip;
-  final bool isCompact;
-  final VoidCallback? onTap;
 
   const BadgeDisplayWidget({
-    super.key,
-    required this.badges,
+    required this.badges, super.key,
     this.badgeSize = 32,
     this.showTooltip = true,
     this.isCompact = false,
     this.onTap,
   });
+  final List<Badge> badges;
+  final double badgeSize;
+  final bool showTooltip;
+  final bool isCompact;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -64,15 +63,15 @@ class BadgeDisplayWidget extends StatelessWidget {
 
 /// Single badge icon
 class _BadgeIcon extends StatelessWidget {
-  final Badge badge;
-  final double size;
-  final bool showTooltip;
 
   const _BadgeIcon({
     required this.badge,
     required this.size,
     this.showTooltip = true,
   });
+  final Badge badge;
+  final double size;
+  final bool showTooltip;
 
   @override
   Widget build(BuildContext context) {
@@ -194,22 +193,21 @@ class _BadgeIcon extends StatelessWidget {
 
 /// Profile badge row for profile header
 class ProfileBadgeRow extends StatelessWidget {
-  final List<Badge> displayedBadges;
-  final bool isVerified;
-  final bool isPremium;
-  final bool isVIP;
-  final int level;
-  final VoidCallback? onBadgeTap;
 
   const ProfileBadgeRow({
-    super.key,
-    required this.displayedBadges,
+    required this.displayedBadges, super.key,
     this.isVerified = false,
     this.isPremium = false,
     this.isVIP = false,
     this.level = 1,
     this.onBadgeTap,
   });
+  final List<Badge> displayedBadges;
+  final bool isVerified;
+  final bool isPremium;
+  final bool isVIP;
+  final int level;
+  final VoidCallback? onBadgeTap;
 
   @override
   Widget build(BuildContext context) {
@@ -222,8 +220,8 @@ class ProfileBadgeRow extends StatelessWidget {
 
         // Verified badge
         if (isVerified)
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
+          const Padding(
+            padding: EdgeInsets.only(right: 8),
             child: Tooltip(
               message: 'Verified User',
               child: Icon(
@@ -236,8 +234,8 @@ class ProfileBadgeRow extends StatelessWidget {
 
         // VIP badge
         if (isVIP)
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
+          const Padding(
+            padding: EdgeInsets.only(right: 8),
             child: Tooltip(
               message: 'VIP Member',
               child: Icon(
@@ -250,8 +248,8 @@ class ProfileBadgeRow extends StatelessWidget {
 
         // Premium badge
         if (isPremium && !isVIP)
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
+          const Padding(
+            padding: EdgeInsets.only(right: 8),
             child: Tooltip(
               message: 'Premium Member',
               child: Icon(
@@ -277,9 +275,9 @@ class ProfileBadgeRow extends StatelessWidget {
 
 /// Level badge
 class _LevelBadge extends StatelessWidget {
-  final int level;
 
   const _LevelBadge({required this.level});
+  final int level;
 
   @override
   Widget build(BuildContext context) {
@@ -294,7 +292,7 @@ class _LevelBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
+          const Icon(
             Icons.stars,
             size: 14,
             color: Colors.white,
@@ -332,18 +330,17 @@ class _LevelBadge extends StatelessWidget {
 
 /// Badge grid for badge selection/viewing
 class BadgeGrid extends StatelessWidget {
-  final List<Badge> badges;
-  final Set<String> selectedBadgeIds;
-  final ValueChanged<String>? onBadgeSelected;
-  final int maxSelections;
 
   const BadgeGrid({
-    super.key,
-    required this.badges,
+    required this.badges, super.key,
     this.selectedBadgeIds = const {},
     this.onBadgeSelected,
     this.maxSelections = 3,
   });
+  final List<Badge> badges;
+  final Set<String> selectedBadgeIds;
+  final ValueChanged<String>? onBadgeSelected;
+  final int maxSelections;
 
   @override
   Widget build(BuildContext context) {
@@ -418,16 +415,15 @@ class BadgeGrid extends StatelessWidget {
 
 /// Badge showcase dialog
 class BadgeShowcaseDialog extends StatelessWidget {
-  final Badge badge;
-  final bool isEarned;
-  final DateTime? earnedAt;
 
   const BadgeShowcaseDialog({
-    super.key,
-    required this.badge,
+    required this.badge, super.key,
     this.isEarned = false,
     this.earnedAt,
   });
+  final Badge badge;
+  final bool isEarned;
+  final DateTime? earnedAt;
 
   @override
   Widget build(BuildContext context) {
@@ -512,7 +508,7 @@ class BadgeShowcaseDialog extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
+                const Icon(
                   Icons.category,
                   size: 16,
                   color: AppColors.textTertiary,
@@ -534,7 +530,7 @@ class BadgeShowcaseDialog extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.check_circle,
                     size: 16,
                     color: AppColors.successGreen,

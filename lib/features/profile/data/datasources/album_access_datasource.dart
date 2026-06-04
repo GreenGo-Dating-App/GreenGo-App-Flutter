@@ -4,9 +4,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 ///
 /// Manages private album access grants between users
 class AlbumAccessDatasource {
-  final FirebaseFirestore firestore;
 
   AlbumAccessDatasource({required this.firestore});
+  final FirebaseFirestore firestore;
 
   /// Grant access to private album
   Future<void> grantAccess({

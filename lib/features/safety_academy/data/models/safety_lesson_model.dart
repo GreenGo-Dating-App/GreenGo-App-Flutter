@@ -10,9 +10,7 @@ class SafetyLessonModel extends SafetyLesson {
     required super.moduleId,
     required super.title,
     required super.contentSections,
-    super.quiz,
-    required super.xpReward,
-    required super.order,
+    required super.xpReward, required super.order, super.quiz,
   });
 
   factory SafetyLessonModel.fromFirestore(DocumentSnapshot doc) {

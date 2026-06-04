@@ -1,8 +1,9 @@
 import 'package:equatable/equatable.dart';
-import '../../domain/entities/profile.dart';
-import '../../domain/entities/location.dart';
-import '../../domain/entities/social_links.dart';
+
 import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../domain/entities/location.dart';
+import '../../domain/entities/profile.dart';
+import '../../domain/entities/social_links.dart';
 
 enum OnboardingStep {
   basicInfo, // Step 1: Name, DOB, Gender
@@ -30,26 +31,6 @@ class OnboardingInitial extends OnboardingState {
 }
 
 class OnboardingInProgress extends OnboardingState {
-  final String userId;
-  final OnboardingStep currentStep;
-  final String? displayName;
-  final DateTime? dateOfBirth;
-  final String? gender;
-  final List<String> photoUrls;
-  final String? bio;
-  final List<String> interests;
-  final Location? location;
-  final List<String> languages;
-  final String? voiceUrl;
-  final PersonalityTraits? personalityTraits;
-  final String? verificationPhotoUrl;
-  final String? verificationMethod;
-  final String? verificationPhone;
-  final SocialLinks? socialLinks;
-  final List<String> preferredLanguages;
-  final String? nativeLanguage;
-  final String? travelPreference;
-  final bool isUploading;
 
   const OnboardingInProgress({
     required this.userId,
@@ -73,6 +54,26 @@ class OnboardingInProgress extends OnboardingState {
     this.travelPreference,
     this.isUploading = false,
   });
+  final String userId;
+  final OnboardingStep currentStep;
+  final String? displayName;
+  final DateTime? dateOfBirth;
+  final String? gender;
+  final List<String> photoUrls;
+  final String? bio;
+  final List<String> interests;
+  final Location? location;
+  final List<String> languages;
+  final String? voiceUrl;
+  final PersonalityTraits? personalityTraits;
+  final String? verificationPhotoUrl;
+  final String? verificationMethod;
+  final String? verificationPhone;
+  final SocialLinks? socialLinks;
+  final List<String> preferredLanguages;
+  final String? nativeLanguage;
+  final String? travelPreference;
+  final bool isUploading;
 
   OnboardingInProgress copyWith({
     OnboardingStep? currentStep,
@@ -181,22 +182,22 @@ class OnboardingInProgress extends OnboardingState {
 }
 
 class OnboardingComplete extends OnboardingState {
+
+  const OnboardingComplete({required this.profile, this.couponOutcome});
   final Profile profile;
 
   /// Outcome of redeeming a coupon code typed during registration, if any.
   /// Null when the coupon flow wasn't exercised.
   final SignupCouponOutcome? couponOutcome;
 
-  const OnboardingComplete({required this.profile, this.couponOutcome});
-
   @override
   List<Object?> get props => [profile, couponOutcome];
 }
 
 class OnboardingError extends OnboardingState {
-  final String message;
 
   const OnboardingError({required this.message});
+  final String message;
 
   @override
   List<Object?> get props => [message];

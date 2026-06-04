@@ -5,7 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/get_profile.dart';
 import '../../domain/usecases/update_profile.dart';
@@ -15,12 +14,6 @@ import 'profile_event.dart';
 import 'profile_state.dart';
 
 class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
-  final GetProfile getProfile;
-  final CreateProfile createProfile;
-  final UpdateProfile updateProfile;
-  final UploadPhoto uploadPhoto;
-  final VerifyPhoto verifyPhoto;
-  final CoinRepository? coinRepository;
 
   ProfileBloc({
     required this.getProfile,
@@ -39,6 +32,12 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     on<ProfileDeleteRequested>(_onProfileDeleteRequested);
     on<ProfileBoostRequested>(_onProfileBoostRequested);
   }
+  final GetProfile getProfile;
+  final CreateProfile createProfile;
+  final UpdateProfile updateProfile;
+  final UploadPhoto uploadPhoto;
+  final VerifyPhoto verifyPhoto;
+  final CoinRepository? coinRepository;
 
   Future<void> _onProfileLoadRequested(
     ProfileLoadRequested event,
@@ -199,16 +198,16 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       if (profile.isBoosted &&
           profile.boostExpiry != null &&
           profile.boostExpiry!.isAfter(DateTime.now())) {
-        emit(ProfileError(message: 'Profile is already boosted!'));
+        emit(const ProfileError(message: 'Profile is already boosted!'));
         emit(ProfileLoaded(profile: profile));
         return;
       }
 
       // All users pay 50 coins for boost
-      final cost = CoinFeaturePrices.boost;
+      const cost = CoinFeaturePrices.boost;
 
       if (coinRepository == null) {
-        emit(ProfileBoostInsufficientCoins(required: cost, available: 0));
+        emit(const ProfileBoostInsufficientCoins(required: cost, available: 0));
         if (state is! ProfileLoaded) emit(ProfileLoaded(profile: profile));
         return;
       }
@@ -372,7 +371,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       // We do this before emitting state because emit triggers sign-out which
       // may dispose the bloc and prevent Auth deletion from completing.
       // The user was already re-authenticated in the UI before dispatching this event.
-      bool authDeleted = false;
+      var authDeleted = false;
       try {
         final currentUser = FirebaseAuth.instance.currentUser;
         if (currentUser != null) {

@@ -66,18 +66,18 @@ class SeedData {
   ];
 
   static const _bioTemplates = [
-    "Love exploring new places and meeting interesting people. Always up for an adventure! {interests}",
-    "Passionate about {interest1} and {interest2}. Looking for someone to share experiences with.",
+    'Love exploring new places and meeting interesting people. Always up for an adventure! {interests}',
+    'Passionate about {interest1} and {interest2}. Looking for someone to share experiences with.',
     "Life is too short to be boring. Let's make some memories together! I enjoy {interests}.",
-    "Coffee enthusiast, {interest1} lover, and eternal optimist. Swipe right if you like spontaneous adventures.",
+    'Coffee enthusiast, {interest1} lover, and eternal optimist. Swipe right if you like spontaneous adventures.',
     "Work hard, play harder. When I'm not working, you'll find me {interest1} or {interest2}.",
-    "Believer in good vibes and great conversations. Interests include {interests}.",
-    "Not here for games, just genuine connections. I love {interest1}, {interest2}, and good food.",
-    "Adventure seeker with a love for {interest1}. Looking for my partner in crime.",
+    'Believer in good vibes and great conversations. Interests include {interests}.',
+    'Not here for games, just genuine connections. I love {interest1}, {interest2}, and good food.',
+    'Adventure seeker with a love for {interest1}. Looking for my partner in crime.',
     "Simple person with big dreams. Passionate about {interests}. Let's chat!",
-    "Love laughing and making others laugh. Into {interest1} and {interest2}. What about you?",
-    "Foodie, traveler, and {interest1} enthusiast. Always looking for the next great experience.",
-    "Creative soul who loves {interest1} and {interest2}. Looking for deep conversations and real connections.",
+    'Love laughing and making others laugh. Into {interest1} and {interest2}. What about you?',
+    'Foodie, traveler, and {interest1} enthusiast. Always looking for the next great experience.',
+    'Creative soul who loves {interest1} and {interest2}. Looking for deep conversations and real connections.',
   ];
 
   // Image services for random profile photos
@@ -115,14 +115,14 @@ class SeedData {
       }
 
       // Create users in smaller batches for reliability
-      int totalCreated = 0;
-      const int batchSize = 100; // Smaller batches for emulator
+      var totalCreated = 0;
+      const batchSize = 100; // Smaller batches for emulator
 
-      for (int i = 0; i < count; i += batchSize) {
-        final WriteBatch batch = firestore.batch();
-        final int end = (i + batchSize > count) ? count : i + batchSize;
+      for (var i = 0; i < count; i += batchSize) {
+        final batch = firestore.batch();
+        final end = (i + batchSize > count) ? count : i + batchSize;
 
-        for (int j = i; j < end; j++) {
+        for (var j = i; j < end; j++) {
           final profile = _generateRandomProfile(j);
           final docRef = firestore.collection('profiles').doc(profile['userId']);
           batch.set(docRef, profile);
@@ -130,7 +130,7 @@ class SeedData {
 
         try {
           await batch.commit();
-          totalCreated += (end - i);
+          totalCreated += end - i;
           debugPrint('✓ Created $totalCreated/$count users...');
         } catch (e) {
           debugPrint('❌ Batch commit failed at $i: $e');
@@ -372,7 +372,7 @@ class SeedData {
     final urls = <String>[];
     final gender = isMale ? 'men' : 'women';
 
-    for (int i = 0; i < count; i++) {
+    for (var i = 0; i < count; i++) {
       // Randomize which image index to use (0-99 for randomuser.me)
       final imageIndex = (userIndex * 7 + i * 13 + _random.nextInt(50)) % 100;
 

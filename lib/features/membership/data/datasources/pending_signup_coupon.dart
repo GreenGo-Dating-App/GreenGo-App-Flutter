@@ -50,8 +50,8 @@ class SignupCouponNothing extends SignupCouponOutcome {
 
 /// The coupon was redeemed; [grantSummary] describes the items granted.
 class SignupCouponApplied extends SignupCouponOutcome {
-  final String grantSummary;
   const SignupCouponApplied(this.grantSummary);
+  final String grantSummary;
   @override
   List<Object?> get props => [grantSummary];
 }
@@ -59,8 +59,8 @@ class SignupCouponApplied extends SignupCouponOutcome {
 /// The coupon was rejected for a terminal reason (invalid / expired / etc).
 /// The pending code has been cleared.
 class SignupCouponRejected extends SignupCouponOutcome {
-  final CouponFailure failure;
   const SignupCouponRejected(this.failure);
+  final CouponFailure failure;
   @override
   List<Object?> get props => [failure.runtimeType, failure.message];
 }
@@ -74,11 +74,11 @@ class SignupCouponDeferred extends SignupCouponOutcome {
 /// Redeems the pending signup coupon (if any) for the given user via the
 /// existing secure `redeemCoupon` callable.
 class SignupCouponService {
-  final MembershipRemoteDataSource _membership;
 
   SignupCouponService({MembershipRemoteDataSource? membership})
       : _membership = membership ??
             MembershipRemoteDataSourceImpl(firestore: FirebaseFirestore.instance);
+  final MembershipRemoteDataSource _membership;
 
   /// Attempts redemption. Safe to call repeatedly: it no-ops when nothing is
   /// pending, and the server enforces one-redemption-per-user.

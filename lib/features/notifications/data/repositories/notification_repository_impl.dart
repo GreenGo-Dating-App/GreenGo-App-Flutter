@@ -8,9 +8,9 @@ import '../models/notification_preferences_model.dart';
 
 /// Notification Repository Implementation
 class NotificationRepositoryImpl implements NotificationRepository {
-  final NotificationRemoteDataSource remoteDataSource;
 
   NotificationRepositoryImpl({required this.remoteDataSource});
+  final NotificationRemoteDataSource remoteDataSource;
 
   @override
   Stream<Either<Failure, List<NotificationEntity>>> getNotificationsStream(

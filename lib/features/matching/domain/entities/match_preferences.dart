@@ -2,21 +2,10 @@
 ///
 /// User's preferences for finding matches.
 class MatchPreferences {
-  final String userId;
-  final int minAge;
-  final int maxAge;
-  final double maxDistance; // in kilometers
-  final List<String> preferredGenders;
-  final bool showOnlyVerified;
-  final bool showOnlyWithPhotos;
-  final List<String> dealBreakerInterests; // Must have these interests
-  final List<String> preferredLanguages; // Preferred common languages
-  final List<String> preferredCountries; // Empty = user's own country
-  final DateTime updatedAt;
 
   const MatchPreferences({
     required this.userId,
-    this.minAge = 18,
+    required this.updatedAt, this.minAge = 18,
     this.maxAge = 99,
     this.maxDistance = 100.0, // Default 100km
     this.preferredGenders = const ['Female', 'Male', 'Non-binary'],
@@ -25,7 +14,6 @@ class MatchPreferences {
     this.dealBreakerInterests = const [],
     this.preferredLanguages = const [],
     this.preferredCountries = const [],
-    required this.updatedAt,
   });
 
   /// Create default preferences for a user
@@ -44,6 +32,17 @@ class MatchPreferences {
       updatedAt: DateTime.now(),
     );
   }
+  final String userId;
+  final int minAge;
+  final int maxAge;
+  final double maxDistance; // in kilometers
+  final List<String> preferredGenders;
+  final bool showOnlyVerified;
+  final bool showOnlyWithPhotos;
+  final List<String> dealBreakerInterests; // Must have these interests
+  final List<String> preferredLanguages; // Preferred common languages
+  final List<String> preferredCountries; // Empty = user's own country
+  final DateTime updatedAt;
 
   /// Get age range as string
   String get ageRangeText => '$minAge-$maxAge years';

@@ -271,13 +271,13 @@ class _Step7PersonalityQuizScreenState
 }
 
 class QuizQuestion {
-  final String question;
-  final String trait;
-  final bool isPositive;
 
   QuizQuestion({
     required this.question,
     required this.trait,
     required this.isPositive,
   });
+  final String question;
+  final String trait;
+  final bool isPositive;
 }

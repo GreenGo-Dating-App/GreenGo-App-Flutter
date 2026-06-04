@@ -7,20 +7,6 @@ import 'blind_date_state.dart';
 /// Blind Date BLoC
 /// Manages blind date mode, matching, and reveal
 class BlindDateBloc extends Bloc<BlindDateEvent, BlindDateState> {
-  final CreateBlindProfile createBlindProfile;
-  final GetBlindProfile getBlindProfile;
-  final DeactivateBlindProfile deactivateBlindProfile;
-  final GetBlindCandidates getBlindCandidates;
-  final LikeBlindProfile likeBlindProfile;
-  final PassBlindProfile passBlindProfile;
-  final GetBlindMatches getBlindMatches;
-  final InstantReveal instantReveal;
-  final GetRevealedProfile getRevealedProfile;
-
-  // Cache
-  List<BlindProfileView> _candidatesCache = [];
-  int _currentIndex = 0;
-  int? _userCoins;
 
   BlindDateBloc({
     required this.createBlindProfile,
@@ -45,6 +31,20 @@ class BlindDateBloc extends Bloc<BlindDateEvent, BlindDateState> {
     on<LoadRevealedProfile>(_onLoadRevealedProfile);
     on<SelectBlindCandidate>(_onSelectBlindCandidate);
   }
+  final CreateBlindProfile createBlindProfile;
+  final GetBlindProfile getBlindProfile;
+  final DeactivateBlindProfile deactivateBlindProfile;
+  final GetBlindCandidates getBlindCandidates;
+  final LikeBlindProfile likeBlindProfile;
+  final PassBlindProfile passBlindProfile;
+  final GetBlindMatches getBlindMatches;
+  final InstantReveal instantReveal;
+  final GetRevealedProfile getRevealedProfile;
+
+  // Cache
+  List<BlindProfileView> _candidatesCache = [];
+  int _currentIndex = 0;
+  int? _userCoins;
 
   /// Set user coins for instant reveal check
   void setUserCoins(int coins) {

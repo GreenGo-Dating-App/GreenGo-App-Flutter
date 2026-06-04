@@ -65,21 +65,21 @@ class NicknameGenerator {
   /// - No consecutive underscores
   static NicknameValidationResult validate(String nickname) {
     if (nickname.isEmpty) {
-      return NicknameValidationResult(
+      return const NicknameValidationResult(
         isValid: false,
         error: 'Nickname cannot be empty',
       );
     }
 
     if (nickname.length < 3) {
-      return NicknameValidationResult(
+      return const NicknameValidationResult(
         isValid: false,
         error: 'Nickname must be at least 3 characters',
       );
     }
 
     if (nickname.length > 20) {
-      return NicknameValidationResult(
+      return const NicknameValidationResult(
         isValid: false,
         error: 'Nickname must be 20 characters or less',
       );
@@ -89,12 +89,12 @@ class NicknameGenerator {
     final validPattern = RegExp(r'^[a-zA-Z][a-zA-Z0-9_]*$');
     if (!validPattern.hasMatch(nickname)) {
       if (!RegExp(r'^[a-zA-Z]').hasMatch(nickname)) {
-        return NicknameValidationResult(
+        return const NicknameValidationResult(
           isValid: false,
           error: 'Nickname must start with a letter',
         );
       }
-      return NicknameValidationResult(
+      return const NicknameValidationResult(
         isValid: false,
         error: 'Nickname can only contain letters, numbers, and underscores',
       );
@@ -102,7 +102,7 @@ class NicknameGenerator {
 
     // Check for consecutive underscores
     if (nickname.contains('__')) {
-      return NicknameValidationResult(
+      return const NicknameValidationResult(
         isValid: false,
         error: 'Nickname cannot contain consecutive underscores',
       );
@@ -116,14 +116,14 @@ class NicknameGenerator {
     final lowerNickname = nickname.toLowerCase();
     for (final word in reservedWords) {
       if (lowerNickname.contains(word)) {
-        return NicknameValidationResult(
+        return const NicknameValidationResult(
           isValid: false,
           error: 'Nickname cannot contain reserved words',
         );
       }
     }
 
-    return NicknameValidationResult(isValid: true);
+    return const NicknameValidationResult(isValid: true);
   }
 
   /// Normalize nickname for comparison (lowercase)
@@ -139,11 +139,11 @@ class NicknameGenerator {
 
 /// Result of nickname validation
 class NicknameValidationResult {
-  final bool isValid;
-  final String? error;
 
   const NicknameValidationResult({
     required this.isValid,
     this.error,
   });
+  final bool isValid;
+  final String? error;
 }

@@ -50,7 +50,7 @@ class VocabularyService {
     const pageSize = 5000;
 
     while (true) {
-      Query<Map<String, dynamic>> query = _firestore
+      var query = _firestore
           .collection('vocabulary_words')
           .where('language', isEqualTo: language)
           .orderBy('rank')

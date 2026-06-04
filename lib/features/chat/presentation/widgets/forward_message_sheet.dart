@@ -1,26 +1,24 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
-import '../../domain/entities/message.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
+import '../../domain/entities/message.dart';
 
 /// Bottom sheet for forwarding a message to other conversations
-class ForwardMessageSheet extends StatefulWidget {
+class ForwardMessageSheet extends StatefulWidget { // Option to include current conversation in list
+
+  const ForwardMessageSheet({
+    required this.message, required this.currentUserId, required this.fromConversationId, super.key,
+    this.includeCurrentChat = true, // Include current chat by default
+  });
   final Message message;
   final String currentUserId;
   final String fromConversationId;
-  final bool includeCurrentChat; // Option to include current conversation in list
-
-  const ForwardMessageSheet({
-    super.key,
-    required this.message,
-    required this.currentUserId,
-    required this.fromConversationId,
-    this.includeCurrentChat = true, // Include current chat by default
-  });
+  final bool includeCurrentChat;
 
   /// Show the forward message sheet
   static Future<void> show(
@@ -232,7 +230,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         // Header
         Container(
           padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: AppColors.backgroundCard,
             border: Border(
               bottom: BorderSide(color: AppColors.divider),
@@ -307,7 +305,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
           ),
           child: Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.reply,
                 color: AppColors.textTertiary,
                 size: 20,
@@ -363,7 +361,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.chat_bubble_outline,
                             size: 64,
                             color: AppColors.textTertiary,

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/spot.dart';
@@ -247,7 +248,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
             const SizedBox(height: 16),
             Text(
               AppLocalizations.of(context)!.spotsNoSpotsFound,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -274,7 +275,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
     final l10n = AppLocalizations.of(context)!;
     final nameController = TextEditingController();
     final descriptionController = TextEditingController();
-    SpotCategory selectedCategory = SpotCategory.restaurant;
+    var selectedCategory = SpotCategory.restaurant;
 
     showModalBottomSheet(
       context: context,

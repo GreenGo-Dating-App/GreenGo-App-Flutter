@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../bloc/verification_admin_bloc.dart';
 import '../bloc/verification_admin_event.dart';
 import '../bloc/verification_admin_state.dart';
 
 class VerificationAdminScreen extends StatefulWidget {
-  final String adminId;
 
   const VerificationAdminScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<VerificationAdminScreen> createState() => _VerificationAdminScreenState();
@@ -95,8 +95,8 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
             );
           }
 
-          List<Profile> pending = [];
-          List<Profile> history = [];
+          var pending = <Profile>[];
+          var history = <Profile>[];
 
           if (state is VerificationAdminLoaded) {
             pending = state.pendingVerifications;
@@ -111,11 +111,11 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
                 adminId: widget.adminId,
                 isLoading: state is VerificationAdminActionLoading,
                 loadingUserId: state is VerificationAdminActionLoading
-                    ? (state).userId
+                    ? state.userId
                     : null,
                 isBulkLoading: state is VerificationAdminBulkActionLoading,
                 bulkLoadingUserIds: state is VerificationAdminBulkActionLoading
-                    ? (state).userIds
+                    ? state.userIds
                     : const [],
               ),
               _VerificationHistoryTab(profiles: history),
@@ -128,12 +128,6 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
 }
 
 class _PendingVerificationsTab extends StatefulWidget {
-  final List<Profile> profiles;
-  final String adminId;
-  final bool isLoading;
-  final String? loadingUserId;
-  final bool isBulkLoading;
-  final List<String> bulkLoadingUserIds;
 
   const _PendingVerificationsTab({
     required this.profiles,
@@ -143,6 +137,12 @@ class _PendingVerificationsTab extends StatefulWidget {
     this.isBulkLoading = false,
     this.bulkLoadingUserIds = const [],
   });
+  final List<Profile> profiles;
+  final String adminId;
+  final bool isLoading;
+  final String? loadingUserId;
+  final bool isBulkLoading;
+  final List<String> bulkLoadingUserIds;
 
   @override
   State<_PendingVerificationsTab> createState() => _PendingVerificationsTabState();
@@ -172,9 +172,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
   }
 
   void _clearSelection() {
-    setState(() {
-      _selectedUserIds.clear();
-    });
+    setState(_selectedUserIds.clear);
   }
 
   @override
@@ -427,9 +425,9 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
 }
 
 class _VerificationHistoryTab extends StatelessWidget {
-  final List<Profile> profiles;
 
   const _VerificationHistoryTab({required this.profiles});
+  final List<Profile> profiles;
 
   @override
   Widget build(BuildContext context) {
@@ -560,6 +558,14 @@ class _VerificationHistoryTab extends StatelessWidget {
 }
 
 class _VerificationCard extends StatelessWidget {
+
+  const _VerificationCard({
+    required this.profile,
+    required this.adminId,
+    required this.isLoading,
+    required this.onApprove, required this.onReject, required this.onRequestBetter, this.isSelected = false,
+    this.onToggleSelect,
+  });
   final Profile profile;
   final String adminId;
   final bool isLoading;
@@ -568,17 +574,6 @@ class _VerificationCard extends StatelessWidget {
   final VoidCallback onApprove;
   final Function(String) onReject;
   final Function(String) onRequestBetter;
-
-  const _VerificationCard({
-    required this.profile,
-    required this.adminId,
-    required this.isLoading,
-    this.isSelected = false,
-    this.onToggleSelect,
-    required this.onApprove,
-    required this.onReject,
-    required this.onRequestBetter,
-  });
 
   @override
   Widget build(BuildContext context) {

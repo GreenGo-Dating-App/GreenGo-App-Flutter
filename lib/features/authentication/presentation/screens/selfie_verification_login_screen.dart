@@ -1,10 +1,12 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -12,12 +14,11 @@ import '../bloc/auth_event.dart';
 /// Screen for selfie verification during login.
 /// This is shown when a user has enabled requireSelfieOnLogin in their security settings.
 class SelfieVerificationLoginScreen extends StatefulWidget {
-  final User user;
 
   const SelfieVerificationLoginScreen({
-    super.key,
-    required this.user,
+    required this.user, super.key,
   });
+  final User user;
 
   @override
   State<SelfieVerificationLoginScreen> createState() =>
@@ -32,7 +33,7 @@ class _SelfieVerificationLoginScreenState
 
   Future<void> _takeSelfie() async {
     try {
-      final XFile? image = await _picker.pickImage(
+      final image = await _picker.pickImage(
         source: ImageSource.camera,
         preferredCameraDevice: CameraDevice.front,
         maxWidth: 1920,
@@ -276,13 +277,13 @@ class _SelfieVerificationLoginScreenState
 }
 
 class _TakeSelfieCard extends StatelessWidget {
-  final VoidCallback? onTap;
-  final bool isLoading;
 
   const _TakeSelfieCard({
     this.onTap,
     this.isLoading = false,
   });
+  final VoidCallback? onTap;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -349,13 +350,13 @@ class _TakeSelfieCard extends StatelessWidget {
 }
 
 class _SelfiePhotoCard extends StatelessWidget {
-  final File photo;
-  final VoidCallback onRetake;
 
   const _SelfiePhotoCard({
     required this.photo,
     required this.onRetake,
   });
+  final File photo;
+  final VoidCallback onRetake;
 
   @override
   Widget build(BuildContext context) {

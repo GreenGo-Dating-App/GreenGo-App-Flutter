@@ -1,74 +1,73 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get_it/get_it.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/membership_badge.dart';
-import '../../../../core/widgets/settings_accordion.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
-import '../../domain/entities/profile.dart';
+import '../../../../core/services/cache_service.dart';
+import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/base_membership_dialog.dart';
+import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/settings_accordion.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
+import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
+import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
+import '../../../admin/presentation/screens/admin_2fa_screen.dart';
+import '../../../admin/presentation/screens/reports_admin_screen.dart';
+import '../../../admin/presentation/screens/verification_admin_screen.dart';
+import '../../../authentication/presentation/bloc/auth_bloc.dart';
+import '../../../authentication/presentation/bloc/auth_event.dart';
+import '../../../authentication/presentation/screens/change_password_screen.dart';
+import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
+import '../../../coins/domain/repositories/coin_repository.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
+// Progress screen moved to bottom navigation - import removed
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../gamification/domain/entities/achievement.dart';
+import '../../../gamification/presentation/bloc/gamification_bloc.dart';
+import '../../../gamification/presentation/bloc/gamification_event.dart';
+import '../../../gamification/presentation/screens/achievements_screen.dart';
+import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
+import '../../../gamification/presentation/screens/leaderboard_screen.dart';
+import '../../../gamification/presentation/screens/personal_stats_screen.dart';
+import '../../../main/presentation/screens/main_navigation_screen.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
+import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../authentication/presentation/bloc/auth_bloc.dart';
-import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../widgets/edit_section_card.dart';
-import '../../../admin/presentation/screens/admin_2fa_screen.dart';
-import '../../../admin/presentation/screens/verification_admin_screen.dart';
-import '../../../admin/presentation/screens/reports_admin_screen.dart';
-import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
-import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
-import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
-import '../../../coins/domain/entities/coin_transaction.dart';
-import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../../coins/presentation/screens/coin_shop_screen.dart';
-import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
-import '../../../../core/services/cache_service.dart';
-import '../../../../core/widgets/base_membership_dialog.dart';
-import 'photo_management_screen.dart';
 import 'edit_basic_info_screen.dart';
 import 'edit_bio_screen.dart';
 import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
-import 'edit_social_links_screen.dart';
 import 'edit_nickname_screen.dart';
+import 'edit_social_links_screen.dart';
 import 'edit_voice_screen.dart';
-// Progress screen moved to bottom navigation - import removed
-import '../../../discovery/presentation/screens/profile_detail_screen.dart';
-import '../../../authentication/presentation/screens/change_password_screen.dart';
-import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
-import '../../../main/presentation/screens/main_navigation_screen.dart';
-import '../../../../core/utils/safe_navigation.dart';
-import 'usage_stats_screen.dart';
+import 'photo_management_screen.dart';
 import 'traveler_location_picker_screen.dart';
-import '../../../../generated/app_localizations.dart';
-import '../../../gamification/presentation/screens/achievements_screen.dart';
-import '../../../gamification/presentation/screens/journey_screen.dart';
-import '../../../gamification/presentation/screens/leaderboard_screen.dart';
-import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
-import '../../../gamification/presentation/screens/personal_stats_screen.dart';
-import '../../../gamification/presentation/bloc/gamification_bloc.dart';
-import '../../../gamification/presentation/bloc/gamification_event.dart';
-import '../../../gamification/domain/entities/achievement.dart';
-import '../../../coins/presentation/bloc/coin_bloc.dart';
-import '../../../coins/presentation/bloc/coin_event.dart';
+import 'usage_stats_screen.dart';
 
 class EditProfileScreen extends StatelessWidget {
-  final String? userId;
-  final Profile? profile;
 
   const EditProfileScreen({
     super.key,
     this.userId,
     this.profile,
   });
+  final String? userId;
+  final Profile? profile;
 
   @override
   Widget build(BuildContext context) {
@@ -545,7 +544,7 @@ class EditProfileScreen extends StatelessWidget {
           .where('userId', isEqualTo: userId)
           .get(),
       builder: (context, snapshot) {
-        int totalXp = 0;
+        var totalXp = 0;
         if (snapshot.hasData && snapshot.data != null) {
           for (final doc in snapshot.data!.docs) {
             final data = doc.data() as Map<String, dynamic>?;
@@ -1097,9 +1096,9 @@ class EditProfileScreen extends StatelessWidget {
 
   void _showPasswordConfirmDialog(BuildContext screenContext, Profile currentProfile) {
     final passwordController = TextEditingController();
-    bool obscurePassword = true;
+    var obscurePassword = true;
     String? errorText;
-    bool isLoading = false;
+    var isLoading = false;
 
     showDialog(
       context: screenContext,
@@ -1312,7 +1311,7 @@ class EditProfileScreen extends StatelessWidget {
 
     // Load cooldown info
     DateTime? lastRestartDate;
-    MembershipTier membershipTier = MembershipTier.free;
+    var membershipTier = MembershipTier.free;
     try {
       final userDoc = await firestore.collection('users').doc(profile.userId).get();
       final profileDoc = await firestore.collection('profiles').doc(profile.userId).get();
@@ -1420,8 +1419,8 @@ class EditProfileScreen extends StatelessWidget {
       final firestore = FirebaseFirestore.instance;
 
       // Delete all swipe records for this user in batches
-      WriteBatch batch = firestore.batch();
-      int count = 0;
+      var batch = firestore.batch();
+      var count = 0;
       QuerySnapshot snapshot;
       do {
         snapshot = await firestore
@@ -1525,7 +1524,7 @@ class EditProfileScreen extends StatelessWidget {
       return;
     }
 
-    final cost = CoinFeaturePrices.boost;
+    const cost = CoinFeaturePrices.boost;
 
     // Show confirmation dialog
     final confirmed = await showDialog<bool>(
@@ -1603,8 +1602,8 @@ class EditProfileScreen extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(AppLocalizations.of(context)!.profileActivatingBoost),
-          backgroundColor: Color(0xFFDAA520),
-          duration: Duration(seconds: 1),
+          backgroundColor: const Color(0xFFDAA520),
+          duration: const Duration(seconds: 1),
         ),
       );
     }
@@ -1703,7 +1702,7 @@ class EditProfileScreen extends StatelessWidget {
         }
       } else {
         // Non-eligible tiers: pay coins for 24h
-        final costText = '${CoinFeaturePrices.incognito} coins';
+        const costText = '${CoinFeaturePrices.incognito} coins';
         final confirmed = await showDialog<bool>(
           context: context,
           builder: (ctx) => AlertDialog(
@@ -1991,15 +1990,15 @@ class EditProfileScreen extends StatelessWidget {
 
 /// Traveler toggle card widget
 class _TravelerToggleCard extends StatelessWidget {
-  final Profile profile;
-  final VoidCallback onActivate;
-  final VoidCallback onDeactivate;
 
   const _TravelerToggleCard({
     required this.profile,
     required this.onActivate,
     required this.onDeactivate,
   });
+  final Profile profile;
+  final VoidCallback onActivate;
+  final VoidCallback onDeactivate;
 
   @override
   Widget build(BuildContext context) {
@@ -2066,13 +2065,13 @@ class _TravelerToggleCard extends StatelessWidget {
 
 /// Incognito toggle card widget
 class _BoostProfileCard extends StatelessWidget {
-  final Profile profile;
-  final VoidCallback onBoost;
 
   const _BoostProfileCard({
     required this.profile,
     required this.onBoost,
   });
+  final Profile profile;
+  final VoidCallback onBoost;
 
   @override
   Widget build(BuildContext context) {
@@ -2270,13 +2269,13 @@ class _BoostProfileCard extends StatelessWidget {
 }
 
 class _IncognitoToggleCard extends StatelessWidget {
-  final Profile profile;
-  final Function(bool) onToggle;
 
   const _IncognitoToggleCard({
     required this.profile,
     required this.onToggle,
   });
+  final Profile profile;
+  final Function(bool) onToggle;
 
   @override
   Widget build(BuildContext context) {
@@ -2344,7 +2343,7 @@ class _IncognitoToggleCard extends StatelessWidget {
         trailing: Switch(
           value: isActive,
           onChanged: onToggle,
-          activeColor: AppColors.richGold,
+          activeThumbColor: AppColors.richGold,
         ),
       ),
     );
@@ -2354,9 +2353,9 @@ class _IncognitoToggleCard extends StatelessWidget {
 /// Achievement badges section for profile page
 /// Shows unlocked achievements as badges, user can toggle which to display on profile
 class _AchievementBadgesSection extends StatefulWidget {
-  final String userId;
 
   const _AchievementBadgesSection({required this.userId});
+  final String userId;
 
   @override
   State<_AchievementBadgesSection> createState() => _AchievementBadgesSectionState();
@@ -2620,20 +2619,20 @@ class _AchievementBadgesSectionState extends State<_AchievementBadgesSection> {
 }
 
 class _AchievementBadgeData {
-  final Achievement achievement;
-  final DateTime? unlockedAt;
 
   _AchievementBadgeData({required this.achievement, this.unlockedAt});
+  final Achievement achievement;
+  final DateTime? unlockedAt;
 }
 
 class _GlobeDiscoverabilityCard extends StatefulWidget {
-  final Profile profile;
-  final ValueChanged<GlobeDiscoverability> onChanged;
 
   const _GlobeDiscoverabilityCard({
     required this.profile,
     required this.onChanged,
   });
+  final Profile profile;
+  final ValueChanged<GlobeDiscoverability> onChanged;
 
   @override
   State<_GlobeDiscoverabilityCard> createState() =>
@@ -2731,13 +2730,13 @@ class _GlobeDiscoverabilityCardState
           const SizedBox(height: 12),
           Row(
             children: [
-              Icon(Icons.info_outline,
+              const Icon(Icons.info_outline,
                   color: AppColors.textTertiary, size: 14),
               const SizedBox(width: 6),
               Expanded(
                 child: Text(
                   AppLocalizations.of(context)!.discoverabilityInfo,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 11,
                     fontStyle: FontStyle.italic,
@@ -2753,12 +2752,6 @@ class _GlobeDiscoverabilityCardState
 }
 
 class _GlobeOption extends StatelessWidget {
-  final IconData icon;
-  final String title;
-  final String subtitle;
-  final bool isSelected;
-  final VoidCallback onTap;
-  final Color accentColor;
 
   const _GlobeOption({
     required this.icon,
@@ -2768,6 +2761,12 @@ class _GlobeOption extends StatelessWidget {
     required this.onTap,
     required this.accentColor,
   });
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final bool isSelected;
+  final VoidCallback onTap;
+  final Color accentColor;
 
   @override
   Widget build(BuildContext context) {
@@ -2809,7 +2808,7 @@ class _GlobeOption extends StatelessWidget {
                   ),
                   Text(
                     subtitle,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 11,
                     ),

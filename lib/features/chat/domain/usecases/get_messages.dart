@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Get Messages Stream Use Case
 class GetMessages {
-  final ChatRepository repository;
 
   GetMessages(this.repository);
+  final ChatRepository repository;
 
   Stream<Either<Failure, List<Message>>> call(GetMessagesParams params) {
     return repository.getMessagesStream(
@@ -20,13 +20,13 @@ class GetMessages {
 
 /// Parameters for GetMessages use case
 class GetMessagesParams {
-  final String conversationId;
-  final String? userId;
-  final int? limit;
 
   GetMessagesParams({
     required this.conversationId,
     this.userId,
     this.limit,
   });
+  final String conversationId;
+  final String? userId;
+  final int? limit;
 }

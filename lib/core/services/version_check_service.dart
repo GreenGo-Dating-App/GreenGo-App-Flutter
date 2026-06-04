@@ -15,12 +15,6 @@ enum UpdateType {
 
 /// Version Configuration from Firestore
 class VersionConfig {
-  final String minVersion;
-  final String recommendedVersion;
-  final String currentVersion;
-  final String storeUrl;
-  final String releaseNotes;
-  final DateTime releaseDate;
 
   const VersionConfig({
     required this.minVersion,
@@ -43,6 +37,12 @@ class VersionConfig {
           : DateTime.now(),
     );
   }
+  final String minVersion;
+  final String recommendedVersion;
+  final String currentVersion;
+  final String storeUrl;
+  final String releaseNotes;
+  final DateTime releaseDate;
 
   // Default configuration
   static VersionConfig get defaultConfig => VersionConfig(
@@ -57,21 +57,20 @@ class VersionConfig {
 
 /// App Version Check Result
 class VersionCheckResult {
+
+  const VersionCheckResult({
+    required this.updateType,
+    required this.installedVersion, this.storeUrl,
+    this.releaseNotes,
+    this.maintenanceMessage,
+    this.requiredVersion,
+  });
   final UpdateType updateType;
   final String? storeUrl;
   final String? releaseNotes;
   final String? maintenanceMessage;
   final String installedVersion;
   final String? requiredVersion;
-
-  const VersionCheckResult({
-    required this.updateType,
-    this.storeUrl,
-    this.releaseNotes,
-    this.maintenanceMessage,
-    required this.installedVersion,
-    this.requiredVersion,
-  });
 }
 
 /// Version Check Service
@@ -79,9 +78,9 @@ class VersionCheckResult {
 /// Checks app version against Firestore configuration and determines
 /// if a force update, soft update, or maintenance mode is required.
 class VersionCheckService extends ChangeNotifier {
-  static final VersionCheckService _instance = VersionCheckService._internal();
   factory VersionCheckService() => _instance;
   VersionCheckService._internal();
+  static final VersionCheckService _instance = VersionCheckService._internal();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   StreamSubscription<DocumentSnapshot>? _subscription;
@@ -229,7 +228,7 @@ class VersionCheckService extends ChangeNotifier {
 
     final uri = Uri.parse(config.storeUrl);
     if (await canLaunchUrl(uri)) {
-      return await launchUrl(uri, mode: LaunchMode.externalApplication);
+      return launchUrl(uri, mode: LaunchMode.externalApplication);
     }
     return false;
   }
@@ -242,7 +241,7 @@ class VersionCheckService extends ChangeNotifier {
 
     final maxLength = parts1.length > parts2.length ? parts1.length : parts2.length;
 
-    for (int i = 0; i < maxLength; i++) {
+    for (var i = 0; i < maxLength; i++) {
       final p1 = i < parts1.length ? parts1[i] : 0;
       final p2 = i < parts2.length ? parts2[i] : 0;
 

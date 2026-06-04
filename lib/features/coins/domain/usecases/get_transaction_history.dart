@@ -6,9 +6,9 @@ import '../repositories/coin_repository.dart';
 /// Get Transaction History Use Case
 /// Point 159: Get coin transaction history
 class GetTransactionHistory {
-  final CoinRepository repository;
 
   GetTransactionHistory(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinTransaction>>> call({
     required String userId,
@@ -16,7 +16,7 @@ class GetTransactionHistory {
     DateTime? startDate,
     DateTime? endDate,
   }) async {
-    return await repository.getTransactionHistory(
+    return repository.getTransactionHistory(
       userId: userId,
       limit: limit,
       startDate: startDate,

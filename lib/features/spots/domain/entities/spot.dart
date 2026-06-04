@@ -59,6 +59,21 @@ enum SpotCategory {
 /// A cultural spot (restaurant, cafe, cultural site, market, or viewpoint)
 /// that users can discover and review.
 class Spot extends Equatable {
+
+  const Spot({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.category,
+    required this.latitude,
+    required this.longitude,
+    required this.city,
+    required this.country,
+    required this.createdByUserId, required this.createdByName, this.rating = 0.0,
+    this.reviewCount = 0,
+    this.photos = const [],
+    this.createdAt,
+  });
   final String id;
   final String name;
   final String description;
@@ -73,23 +88,6 @@ class Spot extends Equatable {
   final String createdByUserId;
   final String createdByName;
   final DateTime? createdAt;
-
-  const Spot({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.category,
-    required this.latitude,
-    required this.longitude,
-    required this.city,
-    required this.country,
-    this.rating = 0.0,
-    this.reviewCount = 0,
-    this.photos = const [],
-    required this.createdByUserId,
-    required this.createdByName,
-    this.createdAt,
-  });
 
   @override
   List<Object?> get props => [

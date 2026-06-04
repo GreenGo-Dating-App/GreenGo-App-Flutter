@@ -4,10 +4,6 @@ import '../constants/app_colors.dart';
 /// Enhancement #30: Animated Typing Indicator
 /// Enhanced typing dots animation for chat
 class TypingIndicator extends StatefulWidget {
-  final bool isTyping;
-  final String? userName;
-  final Color? dotColor;
-  final double dotSize;
 
   const TypingIndicator({
     super.key,
@@ -16,6 +12,10 @@ class TypingIndicator extends StatefulWidget {
     this.dotColor,
     this.dotSize = 8,
   });
+  final bool isTyping;
+  final String? userName;
+  final Color? dotColor;
+  final double dotSize;
 
   @override
   State<TypingIndicator> createState() => _TypingIndicatorState();
@@ -48,7 +48,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
   }
 
   void _startAnimations() {
-    for (int i = 0; i < _controllers.length; i++) {
+    for (var i = 0; i < _controllers.length; i++) {
       Future.delayed(Duration(milliseconds: i * 150), () {
         if (mounted) {
           _controllers[i].repeat();
@@ -59,7 +59,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
 
   @override
   void dispose() {
-    for (var controller in _controllers) {
+    for (final controller in _controllers) {
       controller.dispose();
     }
     super.dispose();
@@ -117,14 +117,13 @@ class _TypingIndicatorState extends State<TypingIndicator>
 
 /// Inline typing indicator for message list
 class InlineTypingIndicator extends StatefulWidget {
-  final String userName;
-  final String? userAvatar;
 
   const InlineTypingIndicator({
-    super.key,
-    required this.userName,
+    required this.userName, super.key,
     this.userAvatar,
   });
+  final String userName;
+  final String? userAvatar;
 
   @override
   State<InlineTypingIndicator> createState() => _InlineTypingIndicatorState();
@@ -200,14 +199,14 @@ class _InlineTypingIndicatorState extends State<InlineTypingIndicator>
 
 /// Simple typing dots widget
 class TypingDots extends StatefulWidget {
-  final Color? color;
-  final double size;
 
   const TypingDots({
     super.key,
     this.color,
     this.size = 6,
   });
+  final Color? color;
+  final double size;
 
   @override
   State<TypingDots> createState() => _TypingDotsState();
@@ -239,9 +238,9 @@ class _TypingDotsState extends State<TypingDots>
     _startSequentialAnimation();
   }
 
-  void _startSequentialAnimation() async {
+  Future<void> _startSequentialAnimation() async {
     while (mounted) {
-      for (int i = 0; i < _controllers.length; i++) {
+      for (var i = 0; i < _controllers.length; i++) {
         if (!mounted) return;
         await _controllers[i].forward();
         _controllers[i].reset();
@@ -253,7 +252,7 @@ class _TypingDotsState extends State<TypingDots>
 
   @override
   void dispose() {
-    for (var controller in _controllers) {
+    for (final controller in _controllers) {
       controller.dispose();
     }
     super.dispose();
@@ -290,14 +289,13 @@ class _TypingDotsState extends State<TypingDots>
 
 /// Recording indicator for voice messages
 class RecordingIndicator extends StatefulWidget {
-  final Duration duration;
-  final VoidCallback? onStop;
 
   const RecordingIndicator({
-    super.key,
-    required this.duration,
+    required this.duration, super.key,
     this.onStop,
   });
+  final Duration duration;
+  final VoidCallback? onStop;
 
   @override
   State<RecordingIndicator> createState() => _RecordingIndicatorState();
@@ -376,7 +374,7 @@ class _RecordingIndicatorState extends State<RecordingIndicator>
               onTap: widget.onStop,
               child: Container(
                 padding: const EdgeInsets.all(6),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: AppColors.errorRed,
                   shape: BoxShape.circle,
                 ),
@@ -396,12 +394,11 @@ class _RecordingIndicatorState extends State<RecordingIndicator>
 
 /// "User is typing..." text indicator
 class TypingTextIndicator extends StatefulWidget {
-  final String userName;
 
   const TypingTextIndicator({
-    super.key,
-    required this.userName,
+    required this.userName, super.key,
   });
+  final String userName;
 
   @override
   State<TypingTextIndicator> createState() => _TypingTextIndicatorState();

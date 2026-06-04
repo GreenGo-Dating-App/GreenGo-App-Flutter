@@ -4,23 +4,6 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents a chat message between two users with reactions and status
 class Message extends Equatable {
-  final String messageId;
-  final String matchId;
-  final String conversationId;
-  final String senderId;
-  final String receiverId;
-  final String content;
-  final MessageType type;
-  final DateTime sentAt;
-  final DateTime? deliveredAt;
-  final DateTime? readAt;
-  final MessageStatus status;
-  final Map<String, String>? reactions; // userId -> emoji
-  final Map<String, dynamic>? metadata;
-  final String? translatedContent;
-  final String? detectedLanguage;
-  final bool isScheduled;
-  final DateTime? scheduledFor;
 
   const Message({
     required this.messageId,
@@ -41,6 +24,23 @@ class Message extends Equatable {
     this.isScheduled = false,
     this.scheduledFor,
   });
+  final String messageId;
+  final String matchId;
+  final String conversationId;
+  final String senderId;
+  final String receiverId;
+  final String content;
+  final MessageType type;
+  final DateTime sentAt;
+  final DateTime? deliveredAt;
+  final DateTime? readAt;
+  final MessageStatus status;
+  final Map<String, String>? reactions; // userId -> emoji
+  final Map<String, dynamic>? metadata;
+  final String? translatedContent;
+  final String? detectedLanguage;
+  final bool isScheduled;
+  final DateTime? scheduledFor;
 
   /// Check if message has been read
   bool get isRead => readAt != null;

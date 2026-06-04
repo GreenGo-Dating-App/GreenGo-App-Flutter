@@ -17,13 +17,13 @@ class ConversationsLoading extends ConversationsState {
 
 /// Conversations loaded
 class ConversationsLoaded extends ConversationsState {
-  final List<Conversation> conversations;
-  final int totalUnreadCount;
 
   const ConversationsLoaded({
     required this.conversations,
     this.totalUnreadCount = 0,
   });
+  final List<Conversation> conversations;
+  final int totalUnreadCount;
 
   int get unreadCount {
     return conversations.fold(0, (sum, conv) => sum + conv.unreadCount);
@@ -37,7 +37,7 @@ class ConversationsEmpty extends ConversationsState {
 
 /// Error state
 class ConversationsError extends ConversationsState {
-  final String message;
 
   const ConversationsError(this.message);
+  final String message;
 }

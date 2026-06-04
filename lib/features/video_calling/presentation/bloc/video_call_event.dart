@@ -7,9 +7,9 @@ abstract class VideoCallEvent {
 
 /// Start listening for incoming calls
 class VideoCallStartListening extends VideoCallEvent {
-  final String userId;
 
   const VideoCallStartListening(this.userId);
+  final String userId;
 }
 
 /// Stop listening for incoming calls
@@ -19,17 +19,13 @@ class VideoCallStopListening extends VideoCallEvent {
 
 /// Incoming call received
 class VideoCallIncoming extends VideoCallEvent {
-  final VideoCall call;
 
   const VideoCallIncoming(this.call);
+  final VideoCall call;
 }
 
 /// Initiate outgoing call
 class VideoCallInitiate extends VideoCallEvent {
-  final String callerId;
-  final String receiverId;
-  final String receiverName;
-  final String? receiverPhotoUrl;
 
   const VideoCallInitiate({
     required this.callerId,
@@ -37,39 +33,43 @@ class VideoCallInitiate extends VideoCallEvent {
     required this.receiverName,
     this.receiverPhotoUrl,
   });
+  final String callerId;
+  final String receiverId;
+  final String receiverName;
+  final String? receiverPhotoUrl;
 }
 
 /// Answer incoming call
 class VideoCallAnswer extends VideoCallEvent {
-  final String callId;
-  final String userId;
 
   const VideoCallAnswer({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }
 
 /// Decline incoming call
 class VideoCallDecline extends VideoCallEvent {
-  final String callId;
-  final String userId;
 
   const VideoCallDecline({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }
 
 /// End active call
 class VideoCallEnd extends VideoCallEvent {
-  final String callId;
-  final String userId;
 
   const VideoCallEnd({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }
 
 /// Toggle audio mute
@@ -94,37 +94,37 @@ class VideoCallToggleSpeaker extends VideoCallEvent {
 
 /// Remote user joined
 class VideoCallRemoteUserJoined extends VideoCallEvent {
-  final int remoteUid;
 
   const VideoCallRemoteUserJoined(this.remoteUid);
+  final int remoteUid;
 }
 
 /// Remote user left
 class VideoCallRemoteUserLeft extends VideoCallEvent {
-  final int remoteUid;
 
   const VideoCallRemoteUserLeft(this.remoteUid);
+  final int remoteUid;
 }
 
 /// Call status updated
 class VideoCallStatusUpdated extends VideoCallEvent {
-  final VideoCall call;
 
   const VideoCallStatusUpdated(this.call);
+  final VideoCall call;
 }
 
 /// Connection quality changed
 class VideoCallQualityChanged extends VideoCallEvent {
-  final ConnectionQuality quality;
 
   const VideoCallQualityChanged(this.quality);
+  final ConnectionQuality quality;
 }
 
 /// Call error occurred
 class VideoCallError extends VideoCallEvent {
-  final String message;
 
   const VideoCallError(this.message);
+  final String message;
 }
 
 /// Call connected (Agora joined channel)
@@ -134,23 +134,18 @@ class VideoCallConnected extends VideoCallEvent {
 
 /// Load call history
 class VideoCallLoadHistory extends VideoCallEvent {
-  final String userId;
 
   const VideoCallLoadHistory(this.userId);
+  final String userId;
 }
 
 /// Submit call feedback
 class VideoCallDurationTick extends VideoCallEvent {
-  final Duration duration;
   const VideoCallDurationTick(this.duration);
+  final Duration duration;
 }
 
 class VideoCallSubmitFeedback extends VideoCallEvent {
-  final String callId;
-  final String userId;
-  final int rating;
-  final List<String>? issues;
-  final String? comments;
 
   const VideoCallSubmitFeedback({
     required this.callId,
@@ -159,4 +154,9 @@ class VideoCallSubmitFeedback extends VideoCallEvent {
     this.issues,
     this.comments,
   });
+  final String callId;
+  final String userId;
+  final int rating;
+  final List<String>? issues;
+  final String? comments;
 }

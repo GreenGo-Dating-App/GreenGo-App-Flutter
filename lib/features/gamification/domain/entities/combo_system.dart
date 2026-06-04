@@ -2,13 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Combo System - Rewards for consecutive actions
 class ComboSystem extends Equatable {
-  final String odId;
-  final int currentCombo;
-  final int maxCombo;
-  final ComboType activeComboType;
-  final DateTime? comboStartedAt;
-  final DateTime? lastActionAt;
-  final int comboTimeoutMinutes;
 
   const ComboSystem({
     required this.odId,
@@ -19,6 +12,13 @@ class ComboSystem extends Equatable {
     this.lastActionAt,
     this.comboTimeoutMinutes = 5,
   });
+  final String odId;
+  final int currentCombo;
+  final int maxCombo;
+  final ComboType activeComboType;
+  final DateTime? comboStartedAt;
+  final DateTime? lastActionAt;
+  final int comboTimeoutMinutes;
 
   /// Check if combo is still active
   bool get isComboActive {
@@ -66,11 +66,6 @@ enum ComboType {
 
 /// Combo Milestone - Rewards at certain combo levels
 class ComboMilestone extends Equatable {
-  final int comboCount;
-  final String name;
-  final String rewardType;
-  final int rewardAmount;
-  final String? badgeId;
 
   const ComboMilestone({
     required this.comboCount,
@@ -79,6 +74,11 @@ class ComboMilestone extends Equatable {
     required this.rewardAmount,
     this.badgeId,
   });
+  final int comboCount;
+  final String name;
+  final String rewardType;
+  final int rewardAmount;
+  final String? badgeId;
 
   @override
   List<Object?> get props => [comboCount, name, rewardType, rewardAmount, badgeId];
@@ -203,6 +203,17 @@ class ComboMilestones {
 
 /// Power-Up Entity
 class PowerUp extends Equatable {
+
+  const PowerUp({
+    required this.powerUpId,
+    required this.name,
+    required this.description,
+    required this.iconUrl,
+    required this.type,
+    required this.durationMinutes,
+    required this.coinCost, this.effectMultiplier = 1.0,
+    this.isPremiumOnly = false,
+  });
   final String powerUpId;
   final String name;
   final String description;
@@ -212,18 +223,6 @@ class PowerUp extends Equatable {
   final double effectMultiplier;
   final int coinCost;
   final bool isPremiumOnly;
-
-  const PowerUp({
-    required this.powerUpId,
-    required this.name,
-    required this.description,
-    required this.iconUrl,
-    required this.type,
-    required this.durationMinutes,
-    this.effectMultiplier = 1.0,
-    required this.coinCost,
-    this.isPremiumOnly = false,
-  });
 
   @override
   List<Object?> get props => [
@@ -253,12 +252,6 @@ enum PowerUpType {
 
 /// Active Power-Up
 class ActivePowerUp extends Equatable {
-  final String id;
-  final String odId;
-  final String powerUpId;
-  final DateTime activatedAt;
-  final DateTime expiresAt;
-  final bool isActive;
 
   const ActivePowerUp({
     required this.id,
@@ -268,6 +261,12 @@ class ActivePowerUp extends Equatable {
     required this.expiresAt,
     this.isActive = true,
   });
+  final String id;
+  final String odId;
+  final String powerUpId;
+  final DateTime activatedAt;
+  final DateTime expiresAt;
+  final bool isActive;
 
   /// Get remaining time
   Duration get timeRemaining {
@@ -292,15 +291,15 @@ class ActivePowerUp extends Equatable {
 
 /// User Power-Up Inventory
 class UserPowerUpInventory extends Equatable {
-  final String odId;
-  final Map<String, int> powerUps; // powerUpId -> quantity
-  final List<ActivePowerUp> activePowerUps;
 
   const UserPowerUpInventory({
     required this.odId,
     required this.powerUps,
     this.activePowerUps = const [],
   });
+  final String odId;
+  final Map<String, int> powerUps; // powerUpId -> quantity
+  final List<ActivePowerUp> activePowerUps;
 
   /// Get quantity of a power-up
   int getQuantity(String powerUpId) => powerUps[powerUpId] ?? 0;

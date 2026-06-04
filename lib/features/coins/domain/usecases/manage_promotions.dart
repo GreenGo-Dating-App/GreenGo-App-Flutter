@@ -6,37 +6,37 @@ import '../repositories/coin_repository.dart';
 /// Get Active Promotions Use Case
 /// Point 165: Get promotional campaigns with bonus percentages
 class GetActivePromotions {
-  final CoinRepository repository;
 
   GetActivePromotions(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinPromotion>>> call() async {
-    return await repository.getActivePromotions();
+    return repository.getActivePromotions();
   }
 }
 
 /// Get Promotion by Code Use Case
 class GetPromotionByCode {
-  final CoinRepository repository;
 
   GetPromotionByCode(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinPromotion?>> call(String code) async {
-    return await repository.getPromotionByCode(code);
+    return repository.getPromotionByCode(code);
   }
 }
 
 /// Check if Promotion is Applicable Use Case
 class IsPromotionApplicable {
-  final CoinRepository repository;
 
   IsPromotionApplicable(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, bool>> call({
     required String promotionId,
     required String userId,
   }) async {
-    return await repository.isPromotionApplicable(
+    return repository.isPromotionApplicable(
       promotionId: promotionId,
       userId: userId,
     );

@@ -15,9 +15,6 @@ import '../datasources/matching_remote_datasource.dart';
 ///
 /// Implements the matching repository interface with error handling
 class MatchingRepositoryImpl implements MatchingRepository {
-  final MatchingRemoteDataSource remoteDataSource;
-  final FeatureEngineer featureEngineer;
-  final CompatibilityScorer compatibilityScorer;
 
   MatchingRepositoryImpl({
     required this.remoteDataSource,
@@ -25,6 +22,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
     CompatibilityScorer? compatibilityScorer,
   })  : featureEngineer = featureEngineer ?? FeatureEngineer(),
         compatibilityScorer = compatibilityScorer ?? CompatibilityScorer();
+  final MatchingRemoteDataSource remoteDataSource;
+  final FeatureEngineer featureEngineer;
+  final CompatibilityScorer compatibilityScorer;
 
   @override
   Future<Either<Failure, List<MatchCandidate>>> getMatchCandidates({
@@ -40,9 +40,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       );
       return Right(candidates);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -56,9 +56,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       // For now, returns a placeholder
       throw UnimplementedError('Direct compatibility calculation not yet implemented');
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -70,9 +70,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       final vector = await remoteDataSource.getUserVector(userId);
       return Right(vector);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -85,9 +85,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       await remoteDataSource.saveUserVector(vector);
       return Right(vector);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -100,9 +100,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       await remoteDataSource.saveUserVector(vector);
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -114,9 +114,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       final preferences = await remoteDataSource.getMatchPreferences(userId);
       return Right(preferences);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -128,9 +128,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       await remoteDataSource.saveMatchPreferences(preferences);
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -160,9 +160,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       // For now, returns empty as this is a placeholder
       return const Right([]);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -195,9 +195,9 @@ class MatchingRepositoryImpl implements MatchingRepository {
       );
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 }

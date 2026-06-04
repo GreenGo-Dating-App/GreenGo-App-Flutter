@@ -8,14 +8,13 @@ import '../../domain/entities/user_journey.dart';
 /// Shows user's progression path with milestones and rewards
 /// Premium glass morphism UI design
 class JourneyScreen extends StatefulWidget {
-  final String userId;
-  final UserJourney? journey;
 
   const JourneyScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.journey,
   });
+  final String userId;
+  final UserJourney? journey;
 
   @override
   State<JourneyScreen> createState() => _JourneyScreenState();
@@ -387,15 +386,15 @@ class _JourneyScreenState extends State<JourneyScreen>
 }
 
 class _MilestonesListView extends StatelessWidget {
-  final JourneyCategory category;
-  final List<JourneyMilestone> milestones;
-  final Set<String> completedIds;
 
   const _MilestonesListView({
     required this.category,
     required this.milestones,
     required this.completedIds,
   });
+  final JourneyCategory category;
+  final List<JourneyMilestone> milestones;
+  final Set<String> completedIds;
 
   @override
   Widget build(BuildContext context) {
@@ -562,11 +561,6 @@ class _MilestonesListView extends StatelessWidget {
 }
 
 class _GlassMilestoneCard extends StatefulWidget {
-  final JourneyMilestone milestone;
-  final bool isCompleted;
-  final bool isLocked;
-  final int progress;
-  final int index;
 
   const _GlassMilestoneCard({
     required this.milestone,
@@ -575,6 +569,11 @@ class _GlassMilestoneCard extends StatefulWidget {
     required this.progress,
     required this.index,
   });
+  final JourneyMilestone milestone;
+  final bool isCompleted;
+  final bool isLocked;
+  final int progress;
+  final int index;
 
   @override
   State<_GlassMilestoneCard> createState() => _GlassMilestoneCardState();
@@ -950,13 +949,13 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
 }
 
 class _GlassRewardChip extends StatelessWidget {
-  final JourneyReward reward;
-  final bool isLocked;
 
   const _GlassRewardChip({
     required this.reward,
     required this.isLocked,
   });
+  final JourneyReward reward;
+  final bool isLocked;
 
   @override
   Widget build(BuildContext context) {
@@ -1047,15 +1046,15 @@ class _GlassRewardChip extends StatelessWidget {
 }
 
 class _GlassMilestoneDetailsSheet extends StatelessWidget {
-  final JourneyMilestone milestone;
-  final bool isCompleted;
-  final int progress;
 
   const _GlassMilestoneDetailsSheet({
     required this.milestone,
     required this.isCompleted,
     required this.progress,
   });
+  final JourneyMilestone milestone;
+  final bool isCompleted;
+  final int progress;
 
   @override
   Widget build(BuildContext context) {

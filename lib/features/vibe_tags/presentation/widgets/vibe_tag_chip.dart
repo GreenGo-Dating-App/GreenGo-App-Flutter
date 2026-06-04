@@ -3,22 +3,21 @@ import '../../domain/entities/vibe_tag.dart';
 
 /// A single vibe tag chip widget
 class VibeTagChip extends StatelessWidget {
-  final VibeTag tag;
-  final bool isSelected;
-  final bool isTemporary;
-  final bool isDisabled;
-  final VoidCallback? onTap;
-  final VoidCallback? onLongPress;
 
   const VibeTagChip({
-    super.key,
-    required this.tag,
+    required this.tag, super.key,
     this.isSelected = false,
     this.isTemporary = false,
     this.isDisabled = false,
     this.onTap,
     this.onLongPress,
   });
+  final VibeTag tag;
+  final bool isSelected;
+  final bool isTemporary;
+  final bool isDisabled;
+  final VoidCallback? onTap;
+  final VoidCallback? onLongPress;
 
   @override
   Widget build(BuildContext context) {
@@ -104,14 +103,13 @@ class VibeTagChip extends StatelessWidget {
 
 /// Mini version of vibe tag chip for profile display
 class VibeTagMiniChip extends StatelessWidget {
-  final VibeTag tag;
-  final bool isTemporary;
 
   const VibeTagMiniChip({
-    super.key,
-    required this.tag,
+    required this.tag, super.key,
     this.isTemporary = false,
   });
+  final VibeTag tag;
+  final bool isTemporary;
 
   @override
   Widget build(BuildContext context) {
@@ -149,20 +147,9 @@ class VibeTagMiniChip extends StatelessWidget {
 
 /// List of vibe tag chips in a wrap layout
 class VibeTagChipList extends StatelessWidget {
-  final List<VibeTag> tags;
-  final List<String> selectedTagIds;
-  final String? temporaryTagId;
-  final bool showAll;
-  final int maxVisible;
-  final Function(VibeTag)? onTagTap;
-  final Function(VibeTag)? onTagLongPress;
-  final bool isSelectable;
-  final bool showPremiumBadge;
-  final int? maxSelectable;
 
   const VibeTagChipList({
-    super.key,
-    required this.tags,
+    required this.tags, super.key,
     this.selectedTagIds = const [],
     this.temporaryTagId,
     this.showAll = false,
@@ -173,6 +160,16 @@ class VibeTagChipList extends StatelessWidget {
     this.showPremiumBadge = true,
     this.maxSelectable,
   });
+  final List<VibeTag> tags;
+  final List<String> selectedTagIds;
+  final String? temporaryTagId;
+  final bool showAll;
+  final int maxVisible;
+  final Function(VibeTag)? onTagTap;
+  final Function(VibeTag)? onTagLongPress;
+  final bool isSelectable;
+  final bool showPremiumBadge;
+  final int? maxSelectable;
 
   @override
   Widget build(BuildContext context) {

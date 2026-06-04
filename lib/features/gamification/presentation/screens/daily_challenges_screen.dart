@@ -1,29 +1,28 @@
-/**
- * Daily Challenges Screen
- * Points 196-199: Display daily and weekly challenges with premium UI
- */
+/// Daily Challenges Screen
+/// Points 196-199: Display daily and weekly challenges with premium UI
+library;
 
 import 'dart:async';
 import 'dart:ui';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/daily_challenge.dart';
 import '../../domain/usecases/get_daily_challenges.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
-import '../widgets/challenge_card.dart';
 
 class DailyChallengesScreen extends StatefulWidget {
-  final String userId;
 
   const DailyChallengesScreen({
-    Key? key,
-    required this.userId,
-  }) : super(key: key);
+    required this.userId, super.key,
+  });
+  final String userId;
 
   @override
   State<DailyChallengesScreen> createState() => _DailyChallengesScreenState();

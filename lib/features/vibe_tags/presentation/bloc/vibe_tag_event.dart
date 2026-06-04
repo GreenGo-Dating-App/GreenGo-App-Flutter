@@ -15,9 +15,9 @@ class LoadVibeTags extends VibeTagEvent {
 
 /// Load vibe tags by category
 class LoadVibeTagsByCategory extends VibeTagEvent {
-  final String category;
 
   const LoadVibeTagsByCategory(this.category);
+  final String category;
 
   @override
   List<Object?> get props => [category];
@@ -25,9 +25,9 @@ class LoadVibeTagsByCategory extends VibeTagEvent {
 
 /// Load user's selected vibe tags
 class LoadUserVibeTags extends VibeTagEvent {
-  final String userId;
 
   const LoadUserVibeTags(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -35,9 +35,9 @@ class LoadUserVibeTags extends VibeTagEvent {
 
 /// Subscribe to user's vibe tags stream
 class SubscribeToUserVibeTags extends VibeTagEvent {
-  final String userId;
 
   const SubscribeToUserVibeTags(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -45,13 +45,13 @@ class SubscribeToUserVibeTags extends VibeTagEvent {
 
 /// Update user's selected vibe tags
 class UpdateUserVibeTagsEvent extends VibeTagEvent {
-  final String userId;
-  final List<String> tagIds;
 
   const UpdateUserVibeTagsEvent({
     required this.userId,
     required this.tagIds,
   });
+  final String userId;
+  final List<String> tagIds;
 
   @override
   List<Object?> get props => [userId, tagIds];
@@ -59,13 +59,13 @@ class UpdateUserVibeTagsEvent extends VibeTagEvent {
 
 /// Add a vibe tag to user's selection
 class AddVibeTag extends VibeTagEvent {
-  final String userId;
-  final String tagId;
 
   const AddVibeTag({
     required this.userId,
     required this.tagId,
   });
+  final String userId;
+  final String tagId;
 
   @override
   List<Object?> get props => [userId, tagId];
@@ -73,13 +73,13 @@ class AddVibeTag extends VibeTagEvent {
 
 /// Remove a vibe tag from user's selection
 class RemoveVibeTagEvent extends VibeTagEvent {
-  final String userId;
-  final String tagId;
 
   const RemoveVibeTagEvent({
     required this.userId,
     required this.tagId,
   });
+  final String userId;
+  final String tagId;
 
   @override
   List<Object?> get props => [userId, tagId];
@@ -87,13 +87,13 @@ class RemoveVibeTagEvent extends VibeTagEvent {
 
 /// Set a temporary vibe tag (24 hours)
 class SetTemporaryVibeTagEvent extends VibeTagEvent {
-  final String userId;
-  final String tagId;
 
   const SetTemporaryVibeTagEvent({
     required this.userId,
     required this.tagId,
   });
+  final String userId;
+  final String tagId;
 
   @override
   List<Object?> get props => [userId, tagId];
@@ -101,15 +101,15 @@ class SetTemporaryVibeTagEvent extends VibeTagEvent {
 
 /// Search users by vibe tags
 class SearchByVibeTags extends VibeTagEvent {
-  final List<String> tagIds;
-  final int limit;
-  final String? lastUserId;
 
   const SearchByVibeTags({
     required this.tagIds,
     this.limit = 20,
     this.lastUserId,
   });
+  final List<String> tagIds;
+  final int limit;
+  final String? lastUserId;
 
   @override
   List<Object?> get props => [tagIds, limit, lastUserId];
@@ -117,15 +117,15 @@ class SearchByVibeTags extends VibeTagEvent {
 
 /// Toggle a vibe tag selection (add if not selected, remove if selected)
 class ToggleVibeTag extends VibeTagEvent {
-  final String userId;
-  final String tagId;
-  final bool isPremium;
 
   const ToggleVibeTag({
     required this.userId,
     required this.tagId,
     this.isPremium = false,
   });
+  final String userId;
+  final String tagId;
+  final bool isPremium;
 
   @override
   List<Object?> get props => [userId, tagId, isPremium];

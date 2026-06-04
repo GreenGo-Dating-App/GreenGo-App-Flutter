@@ -2,18 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Quest Entity - Multi-step missions with bigger rewards
 class Quest extends Equatable {
-  final String questId;
-  final String name;
-  final String description;
-  final String iconUrl;
-  final QuestType type;
-  final QuestDifficulty difficulty;
-  final List<QuestStep> steps;
-  final List<QuestReward> rewards;
-  final DateTime? startDate;
-  final DateTime? endDate;
-  final bool isActive;
-  final int requiredLevel;
 
   const Quest({
     required this.questId,
@@ -29,6 +17,18 @@ class Quest extends Equatable {
     this.isActive = true,
     this.requiredLevel = 1,
   });
+  final String questId;
+  final String name;
+  final String description;
+  final String iconUrl;
+  final QuestType type;
+  final QuestDifficulty difficulty;
+  final List<QuestStep> steps;
+  final List<QuestReward> rewards;
+  final DateTime? startDate;
+  final DateTime? endDate;
+  final bool isActive;
+  final int requiredLevel;
 
   /// Get total steps count
   int get totalSteps => steps.length;
@@ -84,13 +84,6 @@ enum QuestDifficulty {
 
 /// Quest Step - Individual task within a quest
 class QuestStep extends Equatable {
-  final String stepId;
-  final int order;
-  final String title;
-  final String description;
-  final String actionType;
-  final int requiredCount;
-  final int xpReward;
 
   const QuestStep({
     required this.stepId,
@@ -101,6 +94,13 @@ class QuestStep extends Equatable {
     required this.requiredCount,
     this.xpReward = 0,
   });
+  final String stepId;
+  final int order;
+  final String title;
+  final String description;
+  final String actionType;
+  final int requiredCount;
+  final int xpReward;
 
   @override
   List<Object?> get props => [
@@ -116,10 +116,6 @@ class QuestStep extends Equatable {
 
 /// Quest Reward
 class QuestReward extends Equatable {
-  final String type; // xp, coins, badge, boost, premium_time, exclusive_item
-  final int amount;
-  final String? itemId;
-  final String? description;
 
   const QuestReward({
     required this.type,
@@ -127,6 +123,10 @@ class QuestReward extends Equatable {
     this.itemId,
     this.description,
   });
+  final String type; // xp, coins, badge, boost, premium_time, exclusive_item
+  final int amount;
+  final String? itemId;
+  final String? description;
 
   @override
   List<Object?> get props => [type, amount, itemId, description];
@@ -134,15 +134,6 @@ class QuestReward extends Equatable {
 
 /// User Quest Progress
 class UserQuestProgress extends Equatable {
-  final String id;
-  final String odId;
-  final String questId;
-  final int currentStep;
-  final Map<String, int> stepProgress; // stepId -> progress
-  final QuestProgressStatus status;
-  final DateTime startedAt;
-  final DateTime? completedAt;
-  final bool rewardsClaimed;
 
   const UserQuestProgress({
     required this.id,
@@ -155,6 +146,15 @@ class UserQuestProgress extends Equatable {
     this.completedAt,
     this.rewardsClaimed = false,
   });
+  final String id;
+  final String odId;
+  final String questId;
+  final int currentStep;
+  final Map<String, int> stepProgress; // stepId -> progress
+  final QuestProgressStatus status;
+  final DateTime startedAt;
+  final DateTime? completedAt;
+  final bool rewardsClaimed;
 
   @override
   List<Object?> get props => [
@@ -182,14 +182,14 @@ enum QuestProgressStatus {
 /// Standard Quests
 class Quests {
   /// Onboarding Quest - Profile Setup
-  static Quest get profileSetup => Quest(
+  static Quest get profileSetup => const Quest(
         questId: 'quest_profile_setup',
         name: 'Perfect Profile',
         description: 'Complete your profile to attract more matches',
         iconUrl: 'assets/quests/profile_setup.png',
         type: QuestType.onboarding,
         difficulty: QuestDifficulty.beginner,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_photo',
             order: 1,
@@ -227,7 +227,7 @@ class Quests {
             xpReward: 50,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 200),
           QuestReward(type: 'coins', amount: 100),
           QuestReward(type: 'boost', amount: 1, description: 'Free profile boost'),
@@ -235,14 +235,14 @@ class Quests {
       );
 
   /// First Week Quest
-  static Quest get firstWeek => Quest(
+  static Quest get firstWeek => const Quest(
         questId: 'quest_first_week',
         name: 'First Week Adventure',
         description: 'Explore GreenGo in your first week',
         iconUrl: 'assets/quests/first_week.png',
         type: QuestType.onboarding,
         difficulty: QuestDifficulty.easy,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_swipe',
             order: 1,
@@ -280,7 +280,7 @@ class Quests {
             xpReward: 50,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 300),
           QuestReward(type: 'coins', amount: 200),
           QuestReward(type: 'super_like', amount: 5),
@@ -288,7 +288,7 @@ class Quests {
       );
 
   /// Social Butterfly Quest
-  static Quest get socialButterfly => Quest(
+  static Quest get socialButterfly => const Quest(
         questId: 'quest_social_butterfly',
         name: 'Social Butterfly',
         description: 'Become a conversation master',
@@ -296,7 +296,7 @@ class Quests {
         type: QuestType.story,
         difficulty: QuestDifficulty.medium,
         requiredLevel: 5,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_matches',
             order: 1,
@@ -334,7 +334,7 @@ class Quests {
             xpReward: 100,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 500),
           QuestReward(type: 'coins', amount: 300),
           QuestReward(
@@ -347,7 +347,7 @@ class Quests {
       );
 
   /// Video Dating Quest
-  static Quest get videoDateMaster => Quest(
+  static Quest get videoDateMaster => const Quest(
         questId: 'quest_video_master',
         name: 'Video Date Master',
         description: 'Become comfortable with video calls',
@@ -355,7 +355,7 @@ class Quests {
         type: QuestType.story,
         difficulty: QuestDifficulty.hard,
         requiredLevel: 10,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_video_profile',
             order: 1,
@@ -393,7 +393,7 @@ class Quests {
             xpReward: 150,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 750),
           QuestReward(type: 'coins', amount: 500),
           QuestReward(
@@ -406,7 +406,7 @@ class Quests {
       );
 
   /// Globe Trotter Quest
-  static Quest get globeTrotter => Quest(
+  static Quest get globeTrotter => const Quest(
         questId: 'quest_globe_trotter',
         name: 'Globe Trotter',
         description: 'Connect with people around the world',
@@ -414,7 +414,7 @@ class Quests {
         type: QuestType.story,
         difficulty: QuestDifficulty.expert,
         requiredLevel: 15,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_countries_3',
             order: 1,
@@ -452,7 +452,7 @@ class Quests {
             xpReward: 200,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 1000),
           QuestReward(type: 'coins', amount: 750),
           QuestReward(
@@ -465,14 +465,14 @@ class Quests {
       );
 
   /// Premium Experience Quest
-  static Quest get premiumExperience => Quest(
+  static Quest get premiumExperience => const Quest(
         questId: 'quest_premium',
         name: 'Premium Experience',
         description: 'Unlock the full power of GreenGo',
         iconUrl: 'assets/quests/premium.png',
         type: QuestType.premium,
         difficulty: QuestDifficulty.medium,
-        steps: const [
+        steps: [
           QuestStep(
             stepId: 'step_subscribe',
             order: 1,
@@ -510,7 +510,7 @@ class Quests {
             xpReward: 100,
           ),
         ],
-        rewards: const [
+        rewards: [
           QuestReward(type: 'xp', amount: 600),
           QuestReward(type: 'coins', amount: 500),
           QuestReward(type: 'premium_time', amount: 7, description: '7 days free premium'),

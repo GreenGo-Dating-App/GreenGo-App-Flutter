@@ -39,18 +39,18 @@ abstract class VideoProfileRemoteDataSource {
 }
 
 class VideoProfileRemoteDataSourceImpl implements VideoProfileRemoteDataSource {
-  final FirebaseFirestore _firestore;
-  final FirebaseStorage _storage;
-
-  static const String _collection = 'video_profiles';
-  static const String _storagePath = 'video_profiles';
-  static const int _maxDurationSeconds = 30;
 
   VideoProfileRemoteDataSourceImpl({
     FirebaseFirestore? firestore,
     FirebaseStorage? storage,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _storage = storage ?? FirebaseStorage.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseStorage _storage;
+
+  static const String _collection = 'video_profiles';
+  static const String _storagePath = 'video_profiles';
+  static const int _maxDurationSeconds = 30;
 
   @override
   Future<VideoProfileModel> uploadVideoProfile({
@@ -246,7 +246,7 @@ class VideoProfileRemoteDataSourceImpl implements VideoProfileRemoteDataSource {
       final querySnapshot = await query.get();
 
       return querySnapshot.docs
-          .map((doc) => VideoProfileModel.fromFirestore(doc))
+          .map(VideoProfileModel.fromFirestore)
           .toList();
     } on FirebaseException catch (e) {
       debugPrint('[VideoProfileDS] Firebase error loading discovery: $e');

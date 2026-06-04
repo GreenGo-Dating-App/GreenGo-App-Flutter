@@ -21,27 +21,21 @@ class SpeechToText {
 }
 
 class SpeechRecognitionResult {
+  const SpeechRecognitionResult({this.recognizedWords = '', this.finalResult = false});
   final String recognizedWords;
   final bool finalResult;
-  const SpeechRecognitionResult({this.recognizedWords = '', this.finalResult = false});
 }
 
 class LocaleName {
+  const LocaleName(this.localeId, this.name);
   final String localeId;
   final String name;
-  const LocaleName(this.localeId, this.name);
 }
 
 enum ListenMode { dictation }
 
 /// Subtitle data class
 class SubtitleData {
-  final String originalText;
-  final String translatedText;
-  final String sourceLanguage;
-  final String targetLanguage;
-  final bool isFinal;
-  final DateTime timestamp;
 
   SubtitleData({
     required this.originalText,
@@ -51,6 +45,12 @@ class SubtitleData {
     required this.isFinal,
     DateTime? timestamp,
   }) : timestamp = timestamp ?? DateTime.now();
+  final String originalText;
+  final String translatedText;
+  final String sourceLanguage;
+  final String targetLanguage;
+  final bool isFinal;
+  final DateTime timestamp;
 }
 
 /// Translation Service for real-time video call subtitles
@@ -159,7 +159,7 @@ class TranslationService {
   }
 
   /// Handle speech recognition results
-  void _onSpeechResult(SpeechRecognitionResult result) async {
+  Future<void> _onSpeechResult(SpeechRecognitionResult result) async {
     if (!_isEnabled || result.recognizedWords.isEmpty) return;
 
     final originalText = result.recognizedWords;

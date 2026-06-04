@@ -5,11 +5,11 @@ import '../repositories/subscription_repository.dart';
 
 /// Get Current Subscription Use Case
 class GetCurrentSubscription {
-  final SubscriptionRepository repository;
 
   GetCurrentSubscription(this.repository);
+  final SubscriptionRepository repository;
 
   Future<Either<Failure, Subscription?>> call(String userId) async {
-    return await repository.getCurrentSubscription(userId);
+    return repository.getCurrentSubscription(userId);
   }
 }

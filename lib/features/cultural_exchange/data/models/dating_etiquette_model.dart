@@ -8,6 +8,14 @@ class DatingEtiquetteModel extends DatingEtiquette {
     required super.lastUpdated,
   });
 
+  factory DatingEtiquetteModel.fromEntity(DatingEtiquette entity) {
+    return DatingEtiquetteModel(
+      country: entity.country,
+      sections: entity.sections,
+      lastUpdated: entity.lastUpdated,
+    );
+  }
+
   factory DatingEtiquetteModel.fromFirestore(
     DocumentSnapshot<Map<String, dynamic>> doc,
   ) {
@@ -41,14 +49,6 @@ class DatingEtiquetteModel extends DatingEtiquette {
       'lastUpdated': Timestamp.fromDate(lastUpdated),
     };
   }
-
-  factory DatingEtiquetteModel.fromEntity(DatingEtiquette entity) {
-    return DatingEtiquetteModel(
-      country: entity.country,
-      sections: entity.sections,
-      lastUpdated: entity.lastUpdated,
-    );
-  }
 }
 
 class EtiquetteSectionModel extends EtiquetteSection {
@@ -58,6 +58,15 @@ class EtiquetteSectionModel extends EtiquetteSection {
     super.doList,
     super.dontList,
   });
+
+  factory EtiquetteSectionModel.fromEntity(EtiquetteSection entity) {
+    return EtiquetteSectionModel(
+      title: entity.title,
+      content: entity.content,
+      doList: entity.doList,
+      dontList: entity.dontList,
+    );
+  }
 
   factory EtiquetteSectionModel.fromJson(Map<String, dynamic> json) {
     return EtiquetteSectionModel(
@@ -81,14 +90,5 @@ class EtiquetteSectionModel extends EtiquetteSection {
       'doList': doList,
       'dontList': dontList,
     };
-  }
-
-  factory EtiquetteSectionModel.fromEntity(EtiquetteSection entity) {
-    return EtiquetteSectionModel(
-      title: entity.title,
-      content: entity.content,
-      doList: entity.doList,
-      dontList: entity.dontList,
-    );
   }
 }

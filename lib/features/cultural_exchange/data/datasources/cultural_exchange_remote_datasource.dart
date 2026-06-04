@@ -19,11 +19,11 @@ abstract class CulturalExchangeRemoteDataSource {
 
 class CulturalExchangeRemoteDataSourceImpl
     implements CulturalExchangeRemoteDataSource {
-  final FirebaseFirestore _firestore;
 
   CulturalExchangeRemoteDataSourceImpl({
     required FirebaseFirestore firestore,
   }) : _firestore = firestore;
+  final FirebaseFirestore _firestore;
 
   // ==================== Collection References ====================
 
@@ -78,7 +78,7 @@ class CulturalExchangeRemoteDataSourceImpl
           .get();
 
       return snapshot.docs
-          .map((doc) => CountrySpotlightModel.fromFirestore(doc))
+          .map(CountrySpotlightModel.fromFirestore)
           .toList();
     } catch (e) {
       return [];
@@ -109,7 +109,7 @@ class CulturalExchangeRemoteDataSourceImpl
           .get();
 
       return snapshot.docs
-          .map((doc) => CulturalTipModel.fromFirestore(doc))
+          .map(CulturalTipModel.fromFirestore)
           .toList();
     } catch (e) {
       // Fallback without ordering if index is missing
@@ -123,7 +123,7 @@ class CulturalExchangeRemoteDataSourceImpl
         final snapshot = await query.limit(50).get();
 
         final tips = snapshot.docs
-            .map((doc) => CulturalTipModel.fromFirestore(doc))
+            .map(CulturalTipModel.fromFirestore)
             .toList();
 
         // Filter category locally if needed

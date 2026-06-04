@@ -7,13 +7,13 @@ import '../repositories/discovery_repository.dart';
 ///
 /// Deletes the most recent swipe record for a user on a target
 class UndoSwipe implements UseCase<void, UndoSwipeParams> {
-  final DiscoveryRepository repository;
 
   UndoSwipe(this.repository);
+  final DiscoveryRepository repository;
 
   @override
   Future<Either<Failure, void>> call(UndoSwipeParams params) async {
-    return await repository.undoSwipe(
+    return repository.undoSwipe(
       userId: params.userId,
       targetUserId: params.targetUserId,
     );
@@ -21,11 +21,11 @@ class UndoSwipe implements UseCase<void, UndoSwipeParams> {
 }
 
 class UndoSwipeParams {
-  final String userId;
-  final String targetUserId;
 
   UndoSwipeParams({
     required this.userId,
     required this.targetUserId,
   });
+  final String userId;
+  final String targetUserId;
 }

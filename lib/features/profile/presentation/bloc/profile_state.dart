@@ -18,54 +18,54 @@ class ProfileLoading extends ProfileState {
 }
 
 class ProfileLoaded extends ProfileState {
-  final Profile profile;
 
   const ProfileLoaded({required this.profile});
+  final Profile profile;
 
   @override
   List<Object?> get props => [profile];
 }
 
 class ProfileCreated extends ProfileState {
-  final Profile profile;
 
   const ProfileCreated({required this.profile});
+  final Profile profile;
 
   @override
   List<Object?> get props => [profile];
 }
 
 class ProfileUpdated extends ProfileState {
-  final Profile profile;
 
   const ProfileUpdated({required this.profile});
+  final Profile profile;
 
   @override
   List<Object?> get props => [profile];
 }
 
 class ProfilePhotoUploaded extends ProfileState {
-  final String photoUrl;
 
   const ProfilePhotoUploaded({required this.photoUrl});
+  final String photoUrl;
 
   @override
   List<Object?> get props => [photoUrl];
 }
 
 class ProfilePhotoVerified extends ProfileState {
-  final bool isVerified;
 
   const ProfilePhotoVerified({required this.isVerified});
+  final bool isVerified;
 
   @override
   List<Object?> get props => [isVerified];
 }
 
 class ProfileVoiceUploaded extends ProfileState {
-  final String voiceUrl;
 
   const ProfileVoiceUploaded({required this.voiceUrl});
+  final String voiceUrl;
 
   @override
   List<Object?> get props => [voiceUrl];
@@ -76,9 +76,9 @@ class ProfileDeleted extends ProfileState {
 }
 
 class ProfileCompletionLoaded extends ProfileState {
-  final int completionPercentage;
 
   const ProfileCompletionLoaded({required this.completionPercentage});
+  final int completionPercentage;
 
   @override
   List<Object?> get props => [completionPercentage];
@@ -89,38 +89,38 @@ class ProfilePhotoValidating extends ProfileState {
 }
 
 class ProfilePhotoValidationFailed extends ProfileState {
-  final PhotoValidationError? errorCode;
 
   const ProfilePhotoValidationFailed({this.errorCode});
+  final PhotoValidationError? errorCode;
 
   @override
   List<Object?> get props => [errorCode];
 }
 
 class ProfileError extends ProfileState {
-  final String message;
 
   const ProfileError({required this.message});
+  final String message;
 
   @override
   List<Object?> get props => [message];
 }
 
 class ProfileBoostActivated extends ProfileState {
-  final Profile profile;
-  final DateTime expiry;
 
   const ProfileBoostActivated({required this.profile, required this.expiry});
+  final Profile profile;
+  final DateTime expiry;
 
   @override
   List<Object?> get props => [profile, expiry];
 }
 
 class ProfileBoostInsufficientCoins extends ProfileState {
-  final int required;
-  final int available;
 
   const ProfileBoostInsufficientCoins({required this.required, required this.available});
+  final int required;
+  final int available;
 
   @override
   List<Object?> get props => [required, available];

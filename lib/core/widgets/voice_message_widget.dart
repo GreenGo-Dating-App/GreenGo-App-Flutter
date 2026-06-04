@@ -4,20 +4,19 @@ import '../constants/app_colors.dart';
 /// Enhancement #8: Voice Message Widget
 /// For recording and playing voice messages
 class VoiceMessageWidget extends StatefulWidget {
+
+  const VoiceMessageWidget({
+    required this.isCurrentUser, super.key,
+    this.audioUrl,
+    this.duration,
+    this.onPlay,
+    this.onPause,
+  });
   final String? audioUrl;
   final Duration? duration;
   final bool isCurrentUser;
   final VoidCallback? onPlay;
   final VoidCallback? onPause;
-
-  const VoiceMessageWidget({
-    super.key,
-    this.audioUrl,
-    this.duration,
-    required this.isCurrentUser,
-    this.onPlay,
-    this.onPause,
-  });
 
   @override
   State<VoiceMessageWidget> createState() => _VoiceMessageWidgetState();
@@ -25,7 +24,7 @@ class VoiceMessageWidget extends StatefulWidget {
 
 class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
   bool _isPlaying = false;
-  double _progress = 0.0;
+  final double _progress = 0.0;
 
   String _formatDuration(Duration? duration) {
     if (duration == null) return '0:00';
@@ -138,9 +137,6 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
 
 /// Voice recording button
 class VoiceRecordButton extends StatefulWidget {
-  final Function(Duration duration)? onRecordingComplete;
-  final VoidCallback? onRecordingStart;
-  final VoidCallback? onRecordingCancel;
 
   const VoiceRecordButton({
     super.key,
@@ -148,6 +144,9 @@ class VoiceRecordButton extends StatefulWidget {
     this.onRecordingStart,
     this.onRecordingCancel,
   });
+  final Function(Duration duration)? onRecordingComplete;
+  final VoidCallback? onRecordingStart;
+  final VoidCallback? onRecordingCancel;
 
   @override
   State<VoiceRecordButton> createState() => _VoiceRecordButtonState();
@@ -155,7 +154,7 @@ class VoiceRecordButton extends StatefulWidget {
 
 class _VoiceRecordButtonState extends State<VoiceRecordButton> {
   bool _isRecording = false;
-  Duration _recordingDuration = Duration.zero;
+  final Duration _recordingDuration = Duration.zero;
 
   @override
   Widget build(BuildContext context) {

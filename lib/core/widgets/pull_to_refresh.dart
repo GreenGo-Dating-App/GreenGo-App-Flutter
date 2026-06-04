@@ -4,18 +4,16 @@ import '../constants/app_colors.dart';
 /// Enhancement #24: Custom Pull to Refresh
 /// Custom refresh indicator with GreenGo branding
 class CustomRefreshIndicator extends StatelessWidget {
+
+  const CustomRefreshIndicator({
+    required this.child, required this.onRefresh, super.key,
+    this.color,
+    this.backgroundColor,
+  });
   final Widget child;
   final Future<void> Function() onRefresh;
   final Color? color;
   final Color? backgroundColor;
-
-  const CustomRefreshIndicator({
-    super.key,
-    required this.child,
-    required this.onRefresh,
-    this.color,
-    this.backgroundColor,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -32,18 +30,16 @@ class CustomRefreshIndicator extends StatelessWidget {
 
 /// Custom refresh header with logo
 class GreenGoRefreshHeader extends StatelessWidget {
+
+  const GreenGoRefreshHeader({
+    required this.onRefresh, required this.child, super.key,
+    this.refreshTriggerPullDistance = 100.0,
+    this.refreshIndicatorExtent = 60.0,
+  });
   final double refreshTriggerPullDistance;
   final double refreshIndicatorExtent;
   final RefreshCallback onRefresh;
   final Widget child;
-
-  const GreenGoRefreshHeader({
-    super.key,
-    this.refreshTriggerPullDistance = 100.0,
-    this.refreshIndicatorExtent = 60.0,
-    required this.onRefresh,
-    required this.child,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,12 +52,12 @@ class GreenGoRefreshHeader extends StatelessWidget {
 
 /// Pull instruction hint
 class PullToRefreshHint extends StatelessWidget {
-  final String message;
 
   const PullToRefreshHint({
     super.key,
     this.message = 'Pull to refresh',
   });
+  final String message;
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +66,7 @@ class PullToRefreshHint extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.arrow_downward,
             size: 16,
             color: AppColors.textTertiary,

@@ -1,23 +1,23 @@
-import 'dart:io' show File, Platform;
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter/material.dart';
+import 'dart:io' show File;
+
 import 'package:file_picker/file_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/early_access_service.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Admin screen for managing the early access email list
 /// - Upload CSV files with email addresses
 /// - View and manage existing entries
 /// - Remove emails from the list
 class EarlyAccessAdminScreen extends StatefulWidget {
-  final String adminId;
 
   const EarlyAccessAdminScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<EarlyAccessAdminScreen> createState() => _EarlyAccessAdminScreenState();
@@ -386,7 +386,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           const SizedBox(height: AppDimensions.paddingS),
           Text(
             AppLocalizations.of(context)!.adminUploadCsvDescription,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
             ),
@@ -548,7 +548,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
             const SizedBox(height: AppDimensions.paddingS),
             Text(
               AppLocalizations.of(context)!.adminErrors,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.errorRed,
                 fontSize: 12,
                 fontWeight: FontWeight.bold,

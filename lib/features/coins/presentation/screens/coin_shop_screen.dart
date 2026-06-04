@@ -1,24 +1,26 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../generated/app_localizations.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../membership/domain/entities/membership.dart' as membership_entity;
+import '../../../membership/presentation/widgets/coupon_code_widget.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../subscription/domain/entities/subscription.dart';
 import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
 import '../../domain/entities/coin_transaction.dart';
-import '../../../profile/presentation/bloc/profile_bloc.dart';
-import '../../../profile/presentation/bloc/profile_event.dart';
-import '../../../membership/domain/entities/membership.dart' as membership_entity;
-import '../../../membership/presentation/widgets/coupon_code_widget.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
@@ -26,16 +28,15 @@ import '../bloc/coin_state.dart';
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
 class CoinShopScreen extends StatefulWidget {
-  final String userId;
-  final SubscriptionTier? currentTier;
-  final int initialTab;
 
   const CoinShopScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.currentTier,
     this.initialTab = 0,
   });
+  final String userId;
+  final SubscriptionTier? currentTier;
+  final int initialTab;
 
   @override
   State<CoinShopScreen> createState() => _CoinShopScreenState();
@@ -463,7 +464,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       productDetails: product,
       applicationUserName: widget.userId,
     );
-    return await _inAppPurchase!.buyConsumable(purchaseParam: param, autoConsume: false);
+    return _inAppPurchase!.buyConsumable(purchaseParam: param, autoConsume: false);
   }
 
   /// Update Firestore profile with new membership tier
@@ -1615,7 +1616,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final isUpgrade = _selectedTier!.index > currentTier.index;
 
       // Check if store is available
-      final bool available = await _inAppPurchase!.isAvailable();
+      final available = await _inAppPurchase!.isAvailable();
       debugPrint('[Subscription] Store available: $available');
 
       if (!available) {
@@ -1631,7 +1632,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final productIds = {productId};
       debugPrint('[Subscription] Querying product IDs: $productIds');
 
-      final ProductDetailsResponse response =
+      final response =
           await _inAppPurchase!.queryProductDetails(productIds);
 
       debugPrint('[Subscription] Query response - notFoundIDs: ${response.notFoundIDs}');
@@ -2014,7 +2015,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              '${(package.coinsPerDollar).toStringAsFixed(0)} coins/\$',
+                              '${package.coinsPerDollar.toStringAsFixed(0)} coins/\$',
                               style: const TextStyle(
                                 fontSize: 11,
                                 color: Colors.grey,
@@ -2067,7 +2068,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
     try {
       // Check if store is available
-      final bool available = await _inAppPurchase!.isAvailable();
+      final available = await _inAppPurchase!.isAvailable();
       debugPrint('[CoinPurchase] Store available: $available');
 
       if (!available) {
@@ -2080,7 +2081,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final productIds = {_selectedPackage!.productId};
       debugPrint('[CoinPurchase] Querying product IDs: $productIds');
 
-      final ProductDetailsResponse response =
+      final response =
           await _inAppPurchase!.queryProductDetails(productIds);
 
       debugPrint('[CoinPurchase] Query response - notFoundIDs: ${response.notFoundIDs}');
@@ -2120,7 +2121,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       // This triggers the store purchase dialog (Google Play on Android, App Store on iOS)
       // Result will be handled by the purchase stream listener
-      final bool success = await _inAppPurchase!.buyConsumable(
+      final success = await _inAppPurchase!.buyConsumable(
         purchaseParam: purchaseParam,
       );
 

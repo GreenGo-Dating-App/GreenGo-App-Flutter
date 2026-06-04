@@ -15,9 +15,9 @@ class LoadGiftCatalog extends VirtualGiftEvent {
 
 /// Load gifts by category
 class LoadGiftsByCategory extends VirtualGiftEvent {
-  final String category;
 
   const LoadGiftsByCategory(this.category);
+  final String category;
 
   @override
   List<Object?> get props => [category];
@@ -25,12 +25,6 @@ class LoadGiftsByCategory extends VirtualGiftEvent {
 
 /// Send a gift
 class SendGiftEvent extends VirtualGiftEvent {
-  final String senderId;
-  final String senderName;
-  final String receiverId;
-  final String receiverName;
-  final String giftId;
-  final String? message;
 
   const SendGiftEvent({
     required this.senderId,
@@ -40,6 +34,12 @@ class SendGiftEvent extends VirtualGiftEvent {
     required this.giftId,
     this.message,
   });
+  final String senderId;
+  final String senderName;
+  final String receiverId;
+  final String receiverName;
+  final String giftId;
+  final String? message;
 
   @override
   List<Object?> get props =>
@@ -48,15 +48,15 @@ class SendGiftEvent extends VirtualGiftEvent {
 
 /// Load received gifts
 class LoadReceivedGifts extends VirtualGiftEvent {
-  final String userId;
-  final int limit;
-  final String? lastGiftId;
 
   const LoadReceivedGifts({
     required this.userId,
     this.limit = 20,
     this.lastGiftId,
   });
+  final String userId;
+  final int limit;
+  final String? lastGiftId;
 
   @override
   List<Object?> get props => [userId, limit, lastGiftId];
@@ -64,9 +64,9 @@ class LoadReceivedGifts extends VirtualGiftEvent {
 
 /// Subscribe to received gifts stream
 class SubscribeToReceivedGifts extends VirtualGiftEvent {
-  final String userId;
 
   const SubscribeToReceivedGifts(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -74,15 +74,15 @@ class SubscribeToReceivedGifts extends VirtualGiftEvent {
 
 /// Load sent gifts
 class LoadSentGifts extends VirtualGiftEvent {
-  final String userId;
-  final int limit;
-  final String? lastGiftId;
 
   const LoadSentGifts({
     required this.userId,
     this.limit = 20,
     this.lastGiftId,
   });
+  final String userId;
+  final int limit;
+  final String? lastGiftId;
 
   @override
   List<Object?> get props => [userId, limit, lastGiftId];
@@ -90,9 +90,9 @@ class LoadSentGifts extends VirtualGiftEvent {
 
 /// Mark gift as viewed
 class MarkGiftViewedEvent extends VirtualGiftEvent {
-  final String giftId;
 
   const MarkGiftViewedEvent(this.giftId);
+  final String giftId;
 
   @override
   List<Object?> get props => [giftId];
@@ -100,9 +100,9 @@ class MarkGiftViewedEvent extends VirtualGiftEvent {
 
 /// Load gift stats
 class LoadGiftStats extends VirtualGiftEvent {
-  final String userId;
 
   const LoadGiftStats(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -110,9 +110,9 @@ class LoadGiftStats extends VirtualGiftEvent {
 
 /// Load unviewed gift count
 class LoadUnviewedGiftCount extends VirtualGiftEvent {
-  final String userId;
 
   const LoadUnviewedGiftCount(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -120,9 +120,9 @@ class LoadUnviewedGiftCount extends VirtualGiftEvent {
 
 /// Select a gift for sending
 class SelectGift extends VirtualGiftEvent {
-  final String giftId;
 
   const SelectGift(this.giftId);
+  final String giftId;
 
   @override
   List<Object?> get props => [giftId];

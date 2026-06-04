@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Match Card Widget
 ///
 /// Displays a match in the matches list with photo, info, and compatibility
 class MatchCardWidget extends StatelessWidget {
+
+  const MatchCardWidget({
+    required this.match, required this.currentUserId, super.key,
+    this.profile,
+    this.compatibilityPercent,
+    this.onTap,
+  });
   final Match match;
   final Profile? profile;
   final String currentUserId;
   final double? compatibilityPercent;
   final VoidCallback? onTap;
-
-  const MatchCardWidget({
-    super.key,
-    required this.match,
-    this.profile,
-    required this.currentUserId,
-    this.compatibilityPercent,
-    this.onTap,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -187,7 +184,7 @@ class MatchCardWidget extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       AppLocalizations.of(context)!.newLabel,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 10,
                         fontWeight: FontWeight.bold,

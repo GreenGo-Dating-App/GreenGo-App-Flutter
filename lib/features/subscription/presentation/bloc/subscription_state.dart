@@ -16,9 +16,9 @@ class SubscriptionLoading extends SubscriptionState {}
 
 /// Subscription loaded
 class SubscriptionLoaded extends SubscriptionState {
-  final Subscription subscription;
 
   const SubscriptionLoaded(this.subscription);
+  final Subscription subscription;
 
   @override
   List<Object?> get props => [subscription];
@@ -31,9 +31,9 @@ class NoSubscription extends SubscriptionState {
 
 /// Products loaded from store
 class ProductsLoaded extends SubscriptionState {
-  final List<ProductDetails> products;
 
   const ProductsLoaded(this.products);
+  final List<ProductDetails> products;
 
   @override
   List<Object?> get props => [products];
@@ -41,11 +41,11 @@ class ProductsLoaded extends SubscriptionState {
 
 /// Subscription purchased successfully
 class SubscriptionPurchased extends SubscriptionState {
+
+  const SubscriptionPurchased(this.tier, {this.endDate, this.coinsGranted = 0});
   final SubscriptionTier tier;
   final DateTime? endDate;
   final int coinsGranted;
-
-  const SubscriptionPurchased(this.tier, {this.endDate, this.coinsGranted = 0});
 
   @override
   List<Object?> get props => [tier, endDate, coinsGranted];
@@ -53,9 +53,9 @@ class SubscriptionPurchased extends SubscriptionState {
 
 /// Purchases restored
 class PurchasesRestored extends SubscriptionState {
-  final int count;
 
   const PurchasesRestored(this.count);
+  final int count;
 
   @override
   List<Object?> get props => [count];
@@ -63,9 +63,9 @@ class PurchasesRestored extends SubscriptionState {
 
 /// Error state
 class SubscriptionError extends SubscriptionState {
-  final String message;
 
   const SubscriptionError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];

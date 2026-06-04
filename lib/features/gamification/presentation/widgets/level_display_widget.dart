@@ -1,24 +1,22 @@
-/**
- * Level Display Widget
- * Point 194: Display user level on profile cards
- */
+/// Level Display Widget
+/// Point 194: Display user level on profile cards
+library;
 
 import 'package:flutter/material.dart';
 import '../../domain/entities/user_level.dart';
 
 class LevelDisplayWidget extends StatelessWidget {
+
+  const LevelDisplayWidget({
+    required this.userLevel, super.key,
+    this.showProgress = false,
+    this.showVIPBadge = true,
+    this.size = 60,
+  });
   final UserLevel userLevel;
   final bool showProgress;
   final bool showVIPBadge;
   final double size;
-
-  const LevelDisplayWidget({
-    Key? key,
-    required this.userLevel,
-    this.showProgress = false,
-    this.showVIPBadge = true,
-    this.size = 60,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -138,16 +136,15 @@ class LevelDisplayWidget extends StatelessWidget {
 
 /// Compact level badge for use in lists
 class LevelBadge extends StatelessWidget {
+
+  const LevelBadge({
+    required this.level, super.key,
+    this.isVIP = false,
+    this.size = 32,
+  });
   final int level;
   final bool isVIP;
   final double size;
-
-  const LevelBadge({
-    Key? key,
-    required this.level,
-    this.isVIP = false,
-    this.size = 32,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -203,14 +200,13 @@ class LevelBadge extends StatelessWidget {
 
 /// XP Progress Bar
 class XPProgressBar extends StatelessWidget {
-  final UserLevel userLevel;
-  final bool showLabel;
 
   const XPProgressBar({
-    Key? key,
-    required this.userLevel,
+    required this.userLevel, super.key,
     this.showLabel = true,
-  }) : super(key: key);
+  });
+  final UserLevel userLevel;
+  final bool showLabel;
 
   @override
   Widget build(BuildContext context) {

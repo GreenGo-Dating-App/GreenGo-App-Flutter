@@ -10,15 +10,15 @@ import '../repositories/discovery_repository.dart';
 /// Retrieves a stack of potential matches for the user to swipe through
 class GetDiscoveryStack
     implements UseCase<List<MatchCandidate>, GetDiscoveryStackParams> {
-  final DiscoveryRepository repository;
 
   GetDiscoveryStack(this.repository);
+  final DiscoveryRepository repository;
 
   @override
   Future<Either<Failure, List<MatchCandidate>>> call(
     GetDiscoveryStackParams params,
   ) async {
-    return await repository.getDiscoveryStack(
+    return repository.getDiscoveryStack(
       userId: params.userId,
       preferences: params.preferences,
       limit: params.limit,
@@ -28,10 +28,6 @@ class GetDiscoveryStack
 }
 
 class GetDiscoveryStackParams {
-  final String userId;
-  final MatchPreferences preferences;
-  final int limit;
-  final bool forceRefresh;
 
   GetDiscoveryStackParams({
     required this.userId,
@@ -39,4 +35,8 @@ class GetDiscoveryStackParams {
     this.limit = 20,
     this.forceRefresh = false,
   });
+  final String userId;
+  final MatchPreferences preferences;
+  final int limit;
+  final bool forceRefresh;
 }

@@ -10,14 +10,13 @@ import '../screens/coin_shop_screen.dart';
 /// Coin Balance Widget
 /// Point 158: Animated gold coin icon in navigation bar
 class CoinBalanceWidget extends StatefulWidget {
-  final String userId;
-  final bool compact;
 
   const CoinBalanceWidget({
-    Key? key,
-    required this.userId,
+    required this.userId, super.key,
     this.compact = false,
-  }) : super(key: key);
+  });
+  final String userId;
+  final bool compact;
 
   @override
   State<CoinBalanceWidget> createState() => _CoinBalanceWidgetState();
@@ -99,7 +98,7 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
 
   Widget _buildCompactBalance(CoinBalance? balance) {
     return GestureDetector(
-      onTap: () => _navigateToShop(),
+      onTap: _navigateToShop,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
@@ -154,7 +153,7 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
 
   Widget _buildFullBalance(CoinBalance? balance) {
     return GestureDetector(
-      onTap: () => _navigateToShop(),
+      onTap: _navigateToShop,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
@@ -305,14 +304,12 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
 /// Floating Coin Animation
 /// Shows animated coins when balance increases
 class FloatingCoinAnimation extends StatefulWidget {
-  final int coinsAdded;
-  final VoidCallback onComplete;
 
   const FloatingCoinAnimation({
-    Key? key,
-    required this.coinsAdded,
-    required this.onComplete,
-  }) : super(key: key);
+    required this.coinsAdded, required this.onComplete, super.key,
+  });
+  final int coinsAdded;
+  final VoidCallback onComplete;
 
   @override
   State<FloatingCoinAnimation> createState() => _FloatingCoinAnimationState();

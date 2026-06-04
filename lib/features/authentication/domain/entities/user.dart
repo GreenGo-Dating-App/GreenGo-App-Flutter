@@ -1,6 +1,14 @@
 import 'package:equatable/equatable.dart';
 
 class User extends Equatable {
+
+  const User({
+    required this.id,
+    required this.email,
+    required this.emailVerified, required this.createdAt, this.displayName,
+    this.photoUrl,
+    this.lastLoginAt,
+  });
   final String id;
   final String email;
   final String? displayName;
@@ -8,16 +16,6 @@ class User extends Equatable {
   final bool emailVerified;
   final DateTime createdAt;
   final DateTime? lastLoginAt;
-
-  const User({
-    required this.id,
-    required this.email,
-    this.displayName,
-    this.photoUrl,
-    required this.emailVerified,
-    required this.createdAt,
-    this.lastLoginAt,
-  });
 
   // Getter for compatibility with Firebase Auth's uid property
   String get uid => id;

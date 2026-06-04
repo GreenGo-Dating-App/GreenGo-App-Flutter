@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/scheduled_date.dart';
 import '../bloc/date_scheduler_bloc.dart';
 
 /// Date Scheduler Screen
 class DateSchedulerScreen extends StatefulWidget {
-  final String userId;
-  final String? matchId;
-  final String? partnerId;
-  final String? partnerName;
 
   const DateSchedulerScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.matchId,
     this.partnerId,
     this.partnerName,
   });
+  final String userId;
+  final String? matchId;
+  final String? partnerId;
+  final String? partnerName;
 
   @override
   State<DateSchedulerScreen> createState() => _DateSchedulerScreenState();
@@ -174,8 +173,8 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
 
   void _showCreateDateDialog(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    DateTime selectedDate = DateTime.now().add(const Duration(days: 1));
-    TimeOfDay selectedTime = const TimeOfDay(hour: 19, minute: 0);
+    var selectedDate = DateTime.now().add(const Duration(days: 1));
+    var selectedTime = const TimeOfDay(hour: 19, minute: 0);
     final titleController = TextEditingController();
     final notesController = TextEditingController();
 
@@ -387,8 +386,8 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
 
   void _showRescheduleDialog(BuildContext context, ScheduledDate date) {
     final l10n = AppLocalizations.of(context)!;
-    DateTime selectedDate = date.scheduledAt;
-    TimeOfDay selectedTime = TimeOfDay.fromDateTime(date.scheduledAt);
+    var selectedDate = date.scheduledAt;
+    var selectedTime = TimeOfDay.fromDateTime(date.scheduledAt);
 
     showDialog(
       context: context,
@@ -466,11 +465,6 @@ class _DateSchedulerScreenState extends State<DateSchedulerScreen>
 
 /// Date Card Widget
 class _DateCard extends StatelessWidget {
-  final ScheduledDate date;
-  final String userId;
-  final VoidCallback? onConfirm;
-  final VoidCallback? onCancel;
-  final VoidCallback? onReschedule;
 
   const _DateCard({
     required this.date,
@@ -479,6 +473,11 @@ class _DateCard extends StatelessWidget {
     this.onCancel,
     this.onReschedule,
   });
+  final ScheduledDate date;
+  final String userId;
+  final VoidCallback? onConfirm;
+  final VoidCallback? onCancel;
+  final VoidCallback? onReschedule;
 
   @override
   Widget build(BuildContext context) {

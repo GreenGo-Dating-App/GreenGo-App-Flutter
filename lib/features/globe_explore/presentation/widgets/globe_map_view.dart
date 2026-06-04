@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'dart:math';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import '../../../../generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
 import '../../domain/entities/globe_user.dart';
 
@@ -21,6 +23,12 @@ double _clusterThresholdForZoom(double zoom) {
 }
 
 class GlobeMapView extends StatefulWidget {
+
+  const GlobeMapView({
+    required this.data, required this.showMatched, required this.showDiscovery, required this.onPinTapped, required this.onCountryTapped, super.key,
+    this.flyToCountry,
+    this.onClusterTapped,
+  });
   final GlobeData data;
   final bool showMatched;
   final bool showDiscovery;
@@ -29,17 +37,6 @@ class GlobeMapView extends StatefulWidget {
   final void Function(String countryName, double lat, double lng)
       onCountryTapped;
   final void Function(List<GlobeUser> users)? onClusterTapped;
-
-  const GlobeMapView({
-    super.key,
-    required this.data,
-    required this.showMatched,
-    required this.showDiscovery,
-    this.flyToCountry,
-    required this.onPinTapped,
-    required this.onCountryTapped,
-    this.onClusterTapped,
-  });
 
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
@@ -168,12 +165,12 @@ class _GlobeMapViewState extends State<GlobeMapView>
     final clusters = <List<GlobeUser>>[];
     final thresholdSq = threshold * threshold;
 
-    for (int i = 0; i < users.length; i++) {
+    for (var i = 0; i < users.length; i++) {
       if (assigned[i]) continue;
       final cluster = <GlobeUser>[users[i]];
       assigned[i] = true;
 
-      for (int j = i + 1; j < users.length; j++) {
+      for (var j = i + 1; j < users.length; j++) {
         if (assigned[j]) continue;
         final dLat = users[i].pinLatitude - users[j].pinLatitude;
         final dLng = users[i].pinLongitude - users[j].pinLongitude;
@@ -428,7 +425,9 @@ class _GlobeMapViewState extends State<GlobeMapView>
     for (final user in widget.data.matchedUsers) {
       if (!user.isTravelerActive ||
           user.realCountryLatitude == null ||
-          user.realCountryLongitude == null) continue;
+          user.realCountryLongitude == null) {
+        continue;
+      }
 
       final start =
           LatLng(user.realCountryLatitude!, user.realCountryLongitude!);
@@ -446,7 +445,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
   List<LatLng> _buildArcPoints(LatLng start, LatLng end) {
     const segments = 30;
     final points = <LatLng>[];
-    for (int i = 0; i <= segments; i++) {
+    for (var i = 0; i <= segments; i++) {
       final t = i / segments;
       final lat = start.latitude + t * (end.latitude - start.latitude);
       final lng = start.longitude + t * (end.longitude - start.longitude);
@@ -457,7 +456,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
 
   String? _findNearestCountry(double lat, double lng) {
     String? nearest;
-    double minDist = double.infinity;
+    var minDist = double.infinity;
     for (final entry in countryCentroids.entries) {
       final cLat = entry.value[0];
       final cLng = entry.value[1];

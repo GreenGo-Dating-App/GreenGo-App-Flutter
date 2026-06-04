@@ -17,14 +17,13 @@ import 'profile_detail_screen.dart';
 /// Each card shows: photo, name, origin city, languages, distance.
 /// Filter toggle: "In my city" / "Worldwide".
 class TravelExploreMapScreen extends StatefulWidget {
-  final String userId;
-  final Profile? currentUserProfile;
 
   const TravelExploreMapScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.currentUserProfile,
   });
+  final String userId;
+  final Profile? currentUserProfile;
 
   @override
   State<TravelExploreMapScreen> createState() => _TravelExploreMapScreenState();
@@ -272,9 +271,9 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
         children: [
           const Icon(Icons.error_outline, color: AppColors.errorRed, size: 48),
           const SizedBox(height: 16),
-          Text(
+          const Text(
             'Could not load travelers',
-            style: const TextStyle(
+            style: TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
             ),
@@ -302,7 +301,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
     }
 
     // Build the list of city sections
-    final List<Widget> sections = [];
+    final sections = <Widget>[];
 
     // Stats bar
     sections.add(_buildStatsBar(travelers.length, guides.length));
@@ -535,7 +534,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
                   // Origin -> Travel city route
                   Row(
                     children: [
-                      Icon(Icons.home, size: 12,
+                      const Icon(Icons.home, size: 12,
                           color: AppColors.textTertiary),
                       const SizedBox(width: 3),
                       Text(
@@ -550,7 +549,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
                         child: Icon(Icons.arrow_forward,
                             size: 10, color: AppColors.textTertiary),
                       ),
-                      Icon(Icons.flight_land, size: 12,
+                      const Icon(Icons.flight_land, size: 12,
                           color: AppColors.infoBlue),
                       const SizedBox(width: 3),
                       Flexible(
@@ -657,7 +656,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
                         ),
                       ),
                       const SizedBox(width: 6),
-                      LocalGuideBadge(
+                      const LocalGuideBadge(
                         localGuideCity: null,
                         compact: true,
                       ),

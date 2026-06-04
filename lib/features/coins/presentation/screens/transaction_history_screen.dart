@@ -10,12 +10,11 @@ import '../bloc/coin_state.dart';
 /// Transaction History Screen
 /// Point 159: Transaction history showing earnings and spending
 class TransactionHistoryScreen extends StatefulWidget {
-  final String userId;
 
   const TransactionHistoryScreen({
-    Key? key,
-    required this.userId,
-  }) : super(key: key);
+    required this.userId, super.key,
+  });
+  final String userId;
 
   @override
   State<TransactionHistoryScreen> createState() =>
@@ -157,8 +156,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
             ),
 
             // Transactions for this date
-            ...dayTransactions.map((transaction) =>
-                _buildTransactionCard(transaction)),
+            ...dayTransactions.map(_buildTransactionCard),
           ],
         );
       },
@@ -246,7 +244,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   Map<DateTime, List<CoinTransaction>> _groupTransactionsByDate(
     List<CoinTransaction> transactions,
   ) {
-    final Map<DateTime, List<CoinTransaction>> grouped = {};
+    final grouped = <DateTime, List<CoinTransaction>>{};
 
     for (final transaction in transactions) {
       final date = DateTime(

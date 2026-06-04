@@ -4,18 +4,17 @@ import '../constants/app_colors.dart';
 /// Enhancement #25: Double Tap to Like
 /// Heart animation on double tap (like Instagram)
 class DoubleTapLike extends StatefulWidget {
-  final Widget child;
-  final VoidCallback? onDoubleTap;
-  final VoidCallback? onTap;
-  final bool enabled;
 
   const DoubleTapLike({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.onDoubleTap,
     this.onTap,
     this.enabled = true,
   });
+  final Widget child;
+  final VoidCallback? onDoubleTap;
+  final VoidCallback? onTap;
+  final bool enabled;
 
   @override
   State<DoubleTapLike> createState() => _DoubleTapLikeState();
@@ -141,16 +140,15 @@ class _DoubleTapLikeState extends State<DoubleTapLike>
 
 /// Message like indicator
 class MessageLikeIndicator extends StatelessWidget {
-  final bool isLiked;
-  final int likeCount;
-  final VoidCallback? onTap;
 
   const MessageLikeIndicator({
-    super.key,
-    required this.isLiked,
+    required this.isLiked, super.key,
     this.likeCount = 0,
     this.onTap,
   });
+  final bool isLiked;
+  final int likeCount;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {

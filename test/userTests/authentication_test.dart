@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'test_helpers.dart';
+
 import 'test_app.dart';
+import 'test_helpers.dart';
 
 /// Authentication User Tests (15 tests)
 /// Tests cover: Registration, Login, Password Reset, Session Management

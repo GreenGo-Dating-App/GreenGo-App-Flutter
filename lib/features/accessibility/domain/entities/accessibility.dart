@@ -1,21 +1,11 @@
-/**
- * Accessibility Entity
- * Points 296-300: Accessibility features
- */
+/// Accessibility Entity
+/// Points 296-300: Accessibility features
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Accessibility settings (Points 296-300)
 class AccessibilitySettings extends Equatable {
-  final bool screenReaderEnabled; // Point 296
-  final bool highContrastMode; // Point 297
-  final double textScaleFactor; // Point 298 (1.0 - 2.0)
-  final bool keyboardNavigationEnabled; // Point 299
-  final bool reduceMotion;
-  final bool reduceTransparency;
-  final ColorBlindnessMode? colorBlindnessMode;
-  final bool boldText;
-  final bool largerText;
 
   const AccessibilitySettings({
     this.screenReaderEnabled = false,
@@ -28,6 +18,15 @@ class AccessibilitySettings extends Equatable {
     this.boldText = false,
     this.largerText = false,
   });
+  final bool screenReaderEnabled; // Point 296
+  final bool highContrastMode; // Point 297
+  final double textScaleFactor; // Point 298 (1.0 - 2.0)
+  final bool keyboardNavigationEnabled; // Point 299
+  final bool reduceMotion;
+  final bool reduceTransparency;
+  final ColorBlindnessMode? colorBlindnessMode;
+  final bool boldText;
+  final bool largerText;
 
   bool get hasAccessibilityEnabled =>
       screenReaderEnabled ||
@@ -56,14 +55,6 @@ class AccessibilitySettings extends Equatable {
 
 /// Screen reader semantics (Point 296)
 class SemanticLabel extends Equatable {
-  final String label;
-  final String? hint;
-  final String? value;
-  final bool isButton;
-  final bool isHeader;
-  final bool isImage;
-  final bool isLink;
-  final bool isLiveRegion;
 
   const SemanticLabel({
     required this.label,
@@ -75,6 +66,14 @@ class SemanticLabel extends Equatable {
     this.isLink = false,
     this.isLiveRegion = false,
   });
+  final String label;
+  final String? hint;
+  final String? value;
+  final bool isButton;
+  final bool isHeader;
+  final bool isImage;
+  final bool isLink;
+  final bool isLiveRegion;
 
   String get fullAnnouncement {
     final parts = <String>[];
@@ -111,13 +110,7 @@ class SemanticLabel extends Equatable {
 }
 
 /// High contrast theme (Point 297)
-class HighContrastTheme extends Equatable {
-  final String backgroundColor;
-  final String foregroundColor;
-  final String accentColor;
-  final String borderColor;
-  final double borderWidth;
-  final double minimumContrastRatio; // WCAG AA: 4.5:1, AAA: 7:1
+class HighContrastTheme extends Equatable { // WCAG AA: 4.5:1, AAA: 7:1
 
   const HighContrastTheme({
     this.backgroundColor = '#000000', // Pure black
@@ -127,6 +120,12 @@ class HighContrastTheme extends Equatable {
     this.borderWidth = 2.0,
     this.minimumContrastRatio = 7.0, // WCAG AAA
   });
+  final String backgroundColor;
+  final String foregroundColor;
+  final String accentColor;
+  final String borderColor;
+  final double borderWidth;
+  final double minimumContrastRatio;
 
   @override
   List<Object?> get props => [
@@ -175,10 +174,6 @@ enum ColorBlindnessMode {
 
 /// Text scaling preferences (Point 298)
 class TextScalingPreferences extends Equatable {
-  final double scaleFactor; // 1.0 - 2.0 (100% - 200%)
-  final bool boldText;
-  final bool increasedLineHeight;
-  final bool increasedLetterSpacing;
 
   const TextScalingPreferences({
     this.scaleFactor = 1.0,
@@ -186,6 +181,10 @@ class TextScalingPreferences extends Equatable {
     this.increasedLineHeight = false,
     this.increasedLetterSpacing = false,
   });
+  final double scaleFactor; // 1.0 - 2.0 (100% - 200%)
+  final bool boldText;
+  final bool increasedLineHeight;
+  final bool increasedLetterSpacing;
 
   double get lineHeightMultiplier =>
       increasedLineHeight ? 1.5 : 1.2;
@@ -204,14 +203,6 @@ class TextScalingPreferences extends Equatable {
 
 /// Keyboard navigation (Point 299)
 class KeyboardNavigationSettings extends Equatable {
-  final bool enabled;
-  final bool showFocusIndicator;
-  final String focusIndicatorColor;
-  final double focusIndicatorWidth;
-  final bool enableTabNavigation;
-  final bool enableArrowKeyNavigation;
-  final bool enableShortcuts;
-  final Map<String, KeyboardShortcut> shortcuts;
 
   const KeyboardNavigationSettings({
     this.enabled = false,
@@ -223,6 +214,14 @@ class KeyboardNavigationSettings extends Equatable {
     this.enableShortcuts = true,
     this.shortcuts = const {},
   });
+  final bool enabled;
+  final bool showFocusIndicator;
+  final String focusIndicatorColor;
+  final double focusIndicatorWidth;
+  final bool enableTabNavigation;
+  final bool enableArrowKeyNavigation;
+  final bool enableShortcuts;
+  final Map<String, KeyboardShortcut> shortcuts;
 
   @override
   List<Object?> get props => [
@@ -239,21 +238,20 @@ class KeyboardNavigationSettings extends Equatable {
 
 /// Keyboard shortcut
 class KeyboardShortcut extends Equatable {
+
+  const KeyboardShortcut({
+    required this.action,
+    required this.key,
+    required this.description, this.ctrlKey = false,
+    this.altKey = false,
+    this.shiftKey = false,
+  });
   final String action;
   final String key;
   final bool ctrlKey;
   final bool altKey;
   final bool shiftKey;
   final String description;
-
-  const KeyboardShortcut({
-    required this.action,
-    required this.key,
-    this.ctrlKey = false,
-    this.altKey = false,
-    this.shiftKey = false,
-    required this.description,
-  });
 
   String get shortcutString {
     final parts = <String>[];
@@ -366,12 +364,6 @@ enum WCAGLevel {
 
 /// Accessibility audit result (Point 300)
 class AccessibilityAudit extends Equatable {
-  final DateTime auditDate;
-  final WCAGLevel targetLevel;
-  final bool passed;
-  final List<AccessibilityIssue> issues;
-  final double overallScore; // 0-100
-  final Map<String, bool> criteriaChecks;
 
   const AccessibilityAudit({
     required this.auditDate,
@@ -381,6 +373,12 @@ class AccessibilityAudit extends Equatable {
     required this.overallScore,
     required this.criteriaChecks,
   });
+  final DateTime auditDate;
+  final WCAGLevel targetLevel;
+  final bool passed;
+  final List<AccessibilityIssue> issues;
+  final double overallScore; // 0-100
+  final Map<String, bool> criteriaChecks;
 
   int get criticalIssueCount =>
       issues.where((i) => i.severity == IssueSeverity.critical).length;
@@ -404,14 +402,6 @@ class AccessibilityAudit extends Equatable {
 
 /// Accessibility issue
 class AccessibilityIssue extends Equatable {
-  final String issueId;
-  final IssueSeverity severity;
-  final String principle; // Perceivable, Operable, Understandable, Robust
-  final String guideline;
-  final String successCriterion;
-  final String description;
-  final String location;
-  final String recommendation;
 
   const AccessibilityIssue({
     required this.issueId,
@@ -423,6 +413,14 @@ class AccessibilityIssue extends Equatable {
     required this.location,
     required this.recommendation,
   });
+  final String issueId;
+  final IssueSeverity severity;
+  final String principle; // Perceivable, Operable, Understandable, Robust
+  final String guideline;
+  final String successCriterion;
+  final String description;
+  final String location;
+  final String recommendation;
 
   @override
   List<Object?> get props => [

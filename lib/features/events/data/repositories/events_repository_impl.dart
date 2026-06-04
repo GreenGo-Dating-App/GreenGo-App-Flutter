@@ -11,9 +11,9 @@ import '../datasources/events_remote_datasource.dart';
 /// Delegates all operations to the remote data source.
 /// Wraps exceptions into Failure types for clean error handling.
 class EventsRepositoryImpl implements EventsRepository {
-  final EventsRemoteDataSource remoteDataSource;
 
   EventsRepositoryImpl({required this.remoteDataSource});
+  final EventsRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<Event>>> getEvents({

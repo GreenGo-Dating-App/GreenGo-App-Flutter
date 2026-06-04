@@ -20,15 +20,6 @@ enum Environment {
 }
 
 class EnvironmentConfig {
-  final Environment environment;
-  final String apiBaseUrl;
-  final bool useEmulators;
-  final String emulatorHost;
-  final String firebaseProjectId;
-  final bool enableAnalytics;
-  final bool enableCrashReporting;
-  final bool enablePerformanceMonitoring;
-  final LogLevel logLevel;
 
   const EnvironmentConfig({
     required this.environment,
@@ -41,6 +32,15 @@ class EnvironmentConfig {
     required this.enablePerformanceMonitoring,
     required this.logLevel,
   });
+  final Environment environment;
+  final String apiBaseUrl;
+  final bool useEmulators;
+  final String emulatorHost;
+  final String firebaseProjectId;
+  final bool enableAnalytics;
+  final bool enableCrashReporting;
+  final bool enablePerformanceMonitoring;
+  final LogLevel logLevel;
 
   bool get isDevelopment => environment == Environment.development;
   bool get isStaging => environment == Environment.staging;

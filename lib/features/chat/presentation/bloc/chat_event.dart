@@ -1,5 +1,5 @@
-import '../../domain/entities/message.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/message.dart';
 
 /// Chat Events
 abstract class ChatEvent {
@@ -8,10 +8,6 @@ abstract class ChatEvent {
 
 /// Load conversation and start listening to messages
 class ChatConversationLoaded extends ChatEvent {
-  final String matchId;
-  final String currentUserId;
-  final String otherUserId;
-  final int? limit;
 
   const ChatConversationLoaded({
     required this.matchId,
@@ -19,15 +15,14 @@ class ChatConversationLoaded extends ChatEvent {
     required this.otherUserId,
     this.limit,
   });
+  final String matchId;
+  final String currentUserId;
+  final String otherUserId;
+  final int? limit;
 }
 
 /// Send a message
 class ChatMessageSent extends ChatEvent {
-  final String content;
-  final MessageType type;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
-  final Map<String, dynamic>? metadata;
 
   const ChatMessageSent({
     required this.content,
@@ -36,6 +31,11 @@ class ChatMessageSent extends ChatEvent {
     this.membershipTier,
     this.metadata,
   });
+  final String content;
+  final MessageType type;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
+  final Map<String, dynamic>? metadata;
 }
 
 /// Mark messages as read
@@ -45,24 +45,20 @@ class ChatMessagesMarkedAsRead extends ChatEvent {
 
 /// Typing indicator changed
 class ChatTypingIndicatorChanged extends ChatEvent {
-  final bool isTyping;
 
   const ChatTypingIndicatorChanged(this.isTyping);
+  final bool isTyping;
 }
 
 /// Delete a message
 class ChatMessageDeleted extends ChatEvent {
-  final String messageId;
 
   const ChatMessageDeleted(this.messageId);
+  final String messageId;
 }
 
 /// Send an image message
 class ChatImageSent extends ChatEvent {
-  final String imagePath;
-  final String? caption;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
 
   const ChatImageSent({
     required this.imagePath,
@@ -70,14 +66,14 @@ class ChatImageSent extends ChatEvent {
     this.membershipRules,
     this.membershipTier,
   });
+  final String imagePath;
+  final String? caption;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
 }
 
 /// Send a video message
 class ChatVideoSent extends ChatEvent {
-  final String videoPath;
-  final String? caption;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
 
   const ChatVideoSent({
     required this.videoPath,
@@ -85,6 +81,10 @@ class ChatVideoSent extends ChatEvent {
     this.membershipRules,
     this.membershipTier,
   });
+  final String videoPath;
+  final String? caption;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
 }
 
 /// Delete chat for current user only
@@ -99,18 +99,14 @@ class ChatDeletedForBoth extends ChatEvent {
 
 /// Block a user
 class ChatUserBlocked extends ChatEvent {
-  final String userId;
-  final String? reason;
 
   const ChatUserBlocked(this.userId, {this.reason});
+  final String userId;
+  final String? reason;
 }
 
 /// Report a user
 class ChatUserReported extends ChatEvent {
-  final String userId;
-  final String reason;
-  final String? messageId;
-  final String? additionalDetails;
 
   const ChatUserReported({
     required this.userId,
@@ -118,53 +114,57 @@ class ChatUserReported extends ChatEvent {
     this.messageId,
     this.additionalDetails,
   });
+  final String userId;
+  final String reason;
+  final String? messageId;
+  final String? additionalDetails;
 }
 
 /// Star a message
 class ChatMessageStarred extends ChatEvent {
-  final String messageId;
-  final bool isStarred;
 
   const ChatMessageStarred({
     required this.messageId,
     required this.isStarred,
   });
+  final String messageId;
+  final bool isStarred;
 }
 
 /// Reply to a message
 class ChatMessageReplied extends ChatEvent {
-  final String content;
-  final String replyToMessageId;
-  final MessageType type;
 
   const ChatMessageReplied({
     required this.content,
     required this.replyToMessageId,
     this.type = MessageType.text,
   });
+  final String content;
+  final String replyToMessageId;
+  final MessageType type;
 }
 
 /// Forward a message
 class ChatMessageForwarded extends ChatEvent {
-  final String messageId;
-  final List<String> toMatchIds;
 
   const ChatMessageForwarded({
     required this.messageId,
     required this.toMatchIds,
   });
+  final String messageId;
+  final List<String> toMatchIds;
 }
 
 /// Delete a message for current user only
 class ChatMessageDeletedForMe extends ChatEvent {
-  final String messageId;
 
   const ChatMessageDeletedForMe(this.messageId);
+  final String messageId;
 }
 
 /// Delete a message for both users
 class ChatMessageDeletedForBoth extends ChatEvent {
-  final String messageId;
 
   const ChatMessageDeletedForBoth(this.messageId);
+  final String messageId;
 }

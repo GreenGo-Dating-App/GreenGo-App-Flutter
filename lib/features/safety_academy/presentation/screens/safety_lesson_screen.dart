@@ -15,14 +15,12 @@ import 'safety_quiz_screen.dart';
 /// with text, tips, warnings, and checklists. Includes quiz navigation
 /// and lesson completion tracking.
 class SafetyLessonScreen extends StatefulWidget {
-  final String userId;
-  final SafetyModule module;
 
   const SafetyLessonScreen({
-    super.key,
-    required this.userId,
-    required this.module,
+    required this.userId, required this.module, super.key,
   });
+  final String userId;
+  final SafetyModule module;
 
   @override
   State<SafetyLessonScreen> createState() => _SafetyLessonScreenState();
@@ -268,7 +266,7 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
 
           // Content sections
           ...lesson.contentSections
-              .map((section) => _buildContentSection(section)),
+              .map(_buildContentSection),
 
           const SizedBox(height: 16),
 
@@ -525,7 +523,7 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
     // Count completed lessons including the one just completed
     final completedIds = {...progress.completedLessons, completedLessonId};
     final allLessonIds = lessons.map((l) => l.id).toSet();
-    final allDone = allLessonIds.every((id) => completedIds.contains(id));
+    final allDone = allLessonIds.every(completedIds.contains);
 
     if (allDone) {
       context.read<SafetyAcademyBloc>().add(

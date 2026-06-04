@@ -14,9 +14,9 @@ abstract class VerificationAdminRemoteDataSource {
 }
 
 class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   VerificationAdminRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   @override
   Future<List<ProfileModel>> getPendingVerifications() async {
@@ -27,7 +27,7 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
           .orderBy('verificationSubmittedAt', descending: false)
           .get();
 
-      return snapshot.docs.map((doc) => ProfileModel.fromFirestore(doc)).toList();
+      return snapshot.docs.map(ProfileModel.fromFirestore).toList();
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to get pending verifications');
     } catch (e) {
@@ -45,7 +45,7 @@ class VerificationAdminRemoteDataSourceImpl implements VerificationAdminRemoteDa
           .limit(limit)
           .get();
 
-      return snapshot.docs.map((doc) => ProfileModel.fromFirestore(doc)).toList();
+      return snapshot.docs.map(ProfileModel.fromFirestore).toList();
     } on FirebaseException catch (e) {
       throw ServerException(e.message ?? 'Failed to get verification history');
     } catch (e) {

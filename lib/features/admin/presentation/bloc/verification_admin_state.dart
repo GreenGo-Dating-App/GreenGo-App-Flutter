@@ -17,13 +17,13 @@ class VerificationAdminLoading extends VerificationAdminState {
 }
 
 class VerificationAdminLoaded extends VerificationAdminState {
-  final List<Profile> pendingVerifications;
-  final List<Profile> verificationHistory;
 
   const VerificationAdminLoaded({
     required this.pendingVerifications,
     this.verificationHistory = const [],
   });
+  final List<Profile> pendingVerifications;
+  final List<Profile> verificationHistory;
 
   VerificationAdminLoaded copyWith({
     List<Profile>? pendingVerifications,
@@ -40,52 +40,52 @@ class VerificationAdminLoaded extends VerificationAdminState {
 }
 
 class VerificationAdminActionLoading extends VerificationAdminLoaded {
-  final String userId;
 
   const VerificationAdminActionLoading({
     required super.pendingVerifications,
     required super.verificationHistory,
     required this.userId,
   });
+  final String userId;
 
   @override
   List<Object?> get props => [pendingVerifications, verificationHistory, userId];
 }
 
 class VerificationAdminBulkActionLoading extends VerificationAdminLoaded {
-  final List<String> userIds;
 
   const VerificationAdminBulkActionLoading({
     required super.pendingVerifications,
     required super.verificationHistory,
     required this.userIds,
   });
+  final List<String> userIds;
 
   @override
   List<Object?> get props => [pendingVerifications, verificationHistory, userIds];
 }
 
 class VerificationAdminActionSuccess extends VerificationAdminLoaded {
-  final String message;
 
   const VerificationAdminActionSuccess({
     required super.pendingVerifications,
     required super.verificationHistory,
     required this.message,
   });
+  final String message;
 
   @override
   List<Object?> get props => [pendingVerifications, verificationHistory, message];
 }
 
 class VerificationAdminError extends VerificationAdminLoaded {
-  final String message;
 
   const VerificationAdminError({
     required this.message,
     super.pendingVerifications = const [],
     super.verificationHistory = const [],
   });
+  final String message;
 
   @override
   List<Object?> get props => [message, pendingVerifications, verificationHistory];

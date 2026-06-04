@@ -1,21 +1,20 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../chat/domain/entities/conversation.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
 
 /// Support Tickets Admin Screen
 ///
 /// Allows admins/support agents to manage support tickets
 class SupportTicketsScreen extends StatefulWidget {
-  final String adminId;
 
   const SupportTicketsScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<SupportTicketsScreen> createState() => _SupportTicketsScreenState();
@@ -195,7 +194,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
+                const Icon(
                   Icons.inbox_outlined,
                   size: 64,
                   color: AppColors.textTertiary,
@@ -580,11 +579,11 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
           style: const TextStyle(color: AppColors.textPrimary),
           decoration: InputDecoration(
             hintText: AppLocalizations.of(context)!.adminAddResolutionNote,
-            hintStyle: TextStyle(color: AppColors.textTertiary),
-            enabledBorder: OutlineInputBorder(
+            hintStyle: const TextStyle(color: AppColors.textTertiary),
+            enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: AppColors.divider),
             ),
-            focusedBorder: OutlineInputBorder(
+            focusedBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: AppColors.richGold),
             ),
           ),

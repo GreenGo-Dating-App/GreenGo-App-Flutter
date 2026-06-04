@@ -1,24 +1,24 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../domain/entities/message_report.dart';
-import '../../data/datasources/reports_admin_remote_datasource.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/entities/message.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
+import '../../data/datasources/reports_admin_remote_datasource.dart';
+import '../../domain/entities/message_report.dart';
 
 /// Reports Admin Screen
 ///
 /// Allows admins to view and manage reported messages
 /// Shows 50 messages before and after the reported message for context
 class ReportsAdminScreen extends StatefulWidget {
-  final String adminId;
 
   const ReportsAdminScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<ReportsAdminScreen> createState() => _ReportsAdminScreenState();
@@ -501,7 +501,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                 children: [
                   Text(
                     l10n.adminMessageContext,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -571,7 +571,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
                               padding: const EdgeInsets.only(top: 4),
                               child: Text(
                                 l10n.adminReportedMessageMarker,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: AppColors.errorRed,
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold,
@@ -679,7 +679,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
               valueListenable: lockDays,
               builder: (context, value, child) {
                 return DropdownButtonFormField<int?>(
-                  value: value,
+                  initialValue: value,
                   dropdownColor: AppColors.backgroundCard,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(

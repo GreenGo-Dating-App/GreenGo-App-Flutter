@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/language_provider.dart';
+
 import '../constants/app_colors.dart';
+import '../providers/language_provider.dart';
 
 class LanguageSelector extends StatelessWidget {
-  final bool showLabel;
-  final Color? iconColor;
-  final Color? textColor;
 
   const LanguageSelector({
     super.key,
@@ -14,6 +12,9 @@ class LanguageSelector extends StatelessWidget {
     this.iconColor,
     this.textColor,
   });
+  final bool showLabel;
+  final Color? iconColor;
+  final Color? textColor;
 
   @override
   Widget build(BuildContext context) {

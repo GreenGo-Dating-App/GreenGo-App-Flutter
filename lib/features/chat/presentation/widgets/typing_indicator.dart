@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Typing Indicator Widget
 ///
 /// Animated dots that appear when the other user is typing
 class TypingIndicator extends StatefulWidget {
-  final String? userName;
 
   const TypingIndicator({
     super.key,
     this.userName,
   });
+  final String? userName;
 
   @override
   State<TypingIndicator> createState() => _TypingIndicatorState();

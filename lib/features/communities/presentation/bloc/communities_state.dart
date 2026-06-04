@@ -19,10 +19,6 @@ class CommunitiesLoading extends CommunitiesState {
 
 /// Communities loaded (list view)
 class CommunitiesLoaded extends CommunitiesState {
-  final List<Community> communities;
-  final List<Community> userCommunities;
-  final List<Community> recommended;
-  final List<Community> languageCircles;
 
   const CommunitiesLoaded({
     this.communities = const [],
@@ -30,6 +26,10 @@ class CommunitiesLoaded extends CommunitiesState {
     this.recommended = const [],
     this.languageCircles = const [],
   });
+  final List<Community> communities;
+  final List<Community> userCommunities;
+  final List<Community> recommended;
+  final List<Community> languageCircles;
 
   CommunitiesLoaded copyWith({
     List<Community>? communities,
@@ -48,11 +48,6 @@ class CommunitiesLoaded extends CommunitiesState {
 
 /// Community detail loaded (single community view)
 class CommunityDetailLoaded extends CommunitiesState {
-  final Community community;
-  final List<CommunityMember> members;
-  final List<CommunityMessage> messages;
-  final bool isMember;
-  final bool isSending;
 
   const CommunityDetailLoaded({
     required this.community,
@@ -61,6 +56,11 @@ class CommunityDetailLoaded extends CommunitiesState {
     this.isMember = false,
     this.isSending = false,
   });
+  final Community community;
+  final List<CommunityMember> members;
+  final List<CommunityMessage> messages;
+  final bool isMember;
+  final bool isSending;
 
   CommunityDetailLoaded copyWith({
     Community? community,
@@ -81,28 +81,28 @@ class CommunityDetailLoaded extends CommunitiesState {
 
 /// Community created successfully
 class CommunityCreated extends CommunitiesState {
-  final Community community;
 
   const CommunityCreated({required this.community});
+  final Community community;
 }
 
 /// Community joined successfully
 class CommunityJoined extends CommunitiesState {
-  final String communityId;
 
   const CommunityJoined({required this.communityId});
+  final String communityId;
 }
 
 /// Community left successfully
 class CommunityLeft extends CommunitiesState {
-  final String communityId;
 
   const CommunityLeft({required this.communityId});
+  final String communityId;
 }
 
 /// Error state
 class CommunitiesError extends CommunitiesState {
-  final String message;
 
   const CommunitiesError({required this.message});
+  final String message;
 }

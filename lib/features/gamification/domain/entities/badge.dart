@@ -2,15 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Badge Entity - Visual rewards displayed on profile
 class Badge extends Equatable {
-  final String badgeId;
-  final String name;
-  final String description;
-  final String iconUrl;
-  final BadgeCategory category;
-  final BadgeRarity rarity;
-  final bool isAnimated;
-  final String? animationUrl;
-  final int displayOrder;
 
   const Badge({
     required this.badgeId,
@@ -23,6 +14,15 @@ class Badge extends Equatable {
     this.animationUrl,
     this.displayOrder = 0,
   });
+  final String badgeId;
+  final String name;
+  final String description;
+  final String iconUrl;
+  final BadgeCategory category;
+  final BadgeRarity rarity;
+  final bool isAnimated;
+  final String? animationUrl;
+  final int displayOrder;
 
   @override
   List<Object?> get props => [
@@ -59,14 +59,7 @@ enum BadgeRarity {
 }
 
 /// User Badge - Badge earned by user
-class UserBadge extends Equatable {
-  final String id;
-  final String odId;
-  final String badgeId;
-  final DateTime earnedAt;
-  final bool isDisplayed;  // Currently shown on profile
-  final int displayPosition; // Position on profile (1-3)
-  final String? source; // achievement_id, level, event_id
+class UserBadge extends Equatable { // achievement_id, level, event_id
 
   const UserBadge({
     required this.id,
@@ -77,6 +70,13 @@ class UserBadge extends Equatable {
     this.displayPosition = 0,
     this.source,
   });
+  final String id;
+  final String odId;
+  final String badgeId;
+  final DateTime earnedAt;
+  final bool isDisplayed;  // Currently shown on profile
+  final int displayPosition; // Position on profile (1-3)
+  final String? source;
 
   @override
   List<Object?> get props => [
@@ -92,13 +92,13 @@ class UserBadge extends Equatable {
 
 /// Badge with user data combined
 class UserBadgeWithDetails extends Equatable {
-  final UserBadge userBadge;
-  final Badge badge;
 
   const UserBadgeWithDetails({
     required this.userBadge,
     required this.badge,
   });
+  final UserBadge userBadge;
+  final Badge badge;
 
   @override
   List<Object?> get props => [userBadge, badge];

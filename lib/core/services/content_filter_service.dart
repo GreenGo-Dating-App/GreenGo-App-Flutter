@@ -5,9 +5,9 @@ import 'package:flutter/foundation.dart';
 /// Detects and filters sensitive content like emails, phone numbers,
 /// and other contact information from messages
 class ContentFilterService {
-  static final ContentFilterService _instance = ContentFilterService._internal();
   factory ContentFilterService() => _instance;
   ContentFilterService._internal();
+  static final ContentFilterService _instance = ContentFilterService._internal();
 
   // Email pattern - matches most common email formats
   static final RegExp _emailPattern = RegExp(
@@ -81,7 +81,7 @@ class ContentFilterService {
   /// Convert written number words to digits
   /// e.g., "three three four one one two" -> "334112"
   String _convertWordNumbersToDigits(String text) {
-    String result = text.toLowerCase();
+    var result = text.toLowerCase();
 
     // Sort by length (longest first) to avoid partial replacements
     final sortedWords = _numberWords.keys.toList()
@@ -161,7 +161,7 @@ class ContentFilterService {
     final hasWrittenPhone = containsWrittenPhoneNumber(text);
     final hasContactInfo = hasEmail || hasPhone || hasSocialMedia;
 
-    List<String> violations = [];
+    final violations = <String>[];
     if (hasEmail) violations.add('email address');
     if (hasPhone) {
       if (hasWrittenPhone) {
@@ -183,7 +183,7 @@ class ContentFilterService {
 
   /// Mask contact information in text
   String maskContactInfo(String text) {
-    String maskedText = text;
+    var maskedText = text;
 
     // Mask emails
     maskedText = maskedText.replaceAllMapped(
@@ -232,11 +232,6 @@ class ContentFilterService {
 
 /// Result of content filtering analysis
 class ContentFilterResult {
-  final bool hasContactInfo;
-  final bool hasEmail;
-  final bool hasPhone;
-  final bool hasSocialMedia;
-  final List<String> violations;
 
   const ContentFilterResult({
     required this.hasContactInfo,
@@ -245,6 +240,11 @@ class ContentFilterResult {
     required this.hasSocialMedia,
     required this.violations,
   });
+  final bool hasContactInfo;
+  final bool hasEmail;
+  final bool hasPhone;
+  final bool hasSocialMedia;
+  final List<String> violations;
 
   @override
   String toString() {

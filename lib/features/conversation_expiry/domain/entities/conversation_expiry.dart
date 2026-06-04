@@ -20,16 +20,6 @@ class ExpiryConfig {
 
 /// Conversation Expiry Entity
 class ConversationExpiry extends Equatable {
-  final String id;
-  final String matchId;
-  final String conversationId;
-  final DateTime createdAt;
-  final DateTime expiresAt;
-  final bool isExpired;
-  final bool hasActivity;
-  final int extensionCount;
-  final DateTime? lastExtendedAt;
-  final String? extendedByUserId;
 
   const ConversationExpiry({
     required this.id,
@@ -43,6 +33,16 @@ class ConversationExpiry extends Equatable {
     this.lastExtendedAt,
     this.extendedByUserId,
   });
+  final String id;
+  final String matchId;
+  final String conversationId;
+  final DateTime createdAt;
+  final DateTime expiresAt;
+  final bool isExpired;
+  final bool hasActivity;
+  final int extensionCount;
+  final DateTime? lastExtendedAt;
+  final String? extendedByUserId;
 
   @override
   List<Object?> get props => [
@@ -145,10 +145,6 @@ extension ExpiryStatusExtension on ConversationExpiry {
 
 /// Expiry Extension Result
 class ExtensionResult extends Equatable {
-  final bool success;
-  final ConversationExpiry? expiry;
-  final int? coinsSpent;
-  final String? errorMessage;
 
   const ExtensionResult({
     required this.success,
@@ -156,6 +152,10 @@ class ExtensionResult extends Equatable {
     this.coinsSpent,
     this.errorMessage,
   });
+  final bool success;
+  final ConversationExpiry? expiry;
+  final int? coinsSpent;
+  final String? errorMessage;
 
   @override
   List<Object?> get props => [success, expiry, coinsSpent, errorMessage];

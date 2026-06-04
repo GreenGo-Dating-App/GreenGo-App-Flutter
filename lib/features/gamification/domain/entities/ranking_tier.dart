@@ -2,16 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Ranking Tier Entity - Competitive ranking system
 class RankingTier extends Equatable {
-  final String tierId;
-  final String name;
-  final String description;
-  final String iconUrl;
-  final RankDivision division;
-  final int tier; // 1-5 within division (5 = highest)
-  final int minPoints;
-  final int maxPoints;
-  final List<TierPerk> perks;
-  final int colorValue;
 
   const RankingTier({
     required this.tierId,
@@ -25,6 +15,16 @@ class RankingTier extends Equatable {
     required this.perks,
     required this.colorValue,
   });
+  final String tierId;
+  final String name;
+  final String description;
+  final String iconUrl;
+  final RankDivision division;
+  final int tier; // 1-5 within division (5 = highest)
+  final int minPoints;
+  final int maxPoints;
+  final List<TierPerk> perks;
+  final int colorValue;
 
   /// Get full tier name (e.g., "Gold III")
   String get fullName => '$name ${_romanNumeral(tier)}';
@@ -75,10 +75,6 @@ enum RankDivision {
 
 /// Tier Perk
 class TierPerk extends Equatable {
-  final String perkId;
-  final String name;
-  final String description;
-  final String iconName;
 
   const TierPerk({
     required this.perkId,
@@ -86,6 +82,10 @@ class TierPerk extends Equatable {
     required this.description,
     required this.iconName,
   });
+  final String perkId;
+  final String name;
+  final String description;
+  final String iconName;
 
   @override
   List<Object?> get props => [perkId, name, description, iconName];
@@ -93,6 +93,21 @@ class TierPerk extends Equatable {
 
 /// User Rank
 class UserRank extends Equatable {
+
+  const UserRank({
+    required this.odId,
+    required this.division,
+    required this.tier,
+    required this.rankPoints,
+    required this.seasonStartDate, this.globalRank = 0,
+    this.regionalRank = 0,
+    this.region = 'global',
+    this.wins = 0,
+    this.losses = 0,
+    this.currentWinStreak = 0,
+    this.bestWinStreak = 0,
+    this.lastRankUpdate,
+  });
   final String odId;
   final RankDivision division;
   final int tier;
@@ -106,22 +121,6 @@ class UserRank extends Equatable {
   final int bestWinStreak;
   final DateTime seasonStartDate;
   final DateTime? lastRankUpdate;
-
-  const UserRank({
-    required this.odId,
-    required this.division,
-    required this.tier,
-    required this.rankPoints,
-    this.globalRank = 0,
-    this.regionalRank = 0,
-    this.region = 'global',
-    this.wins = 0,
-    this.losses = 0,
-    this.currentWinStreak = 0,
-    this.bestWinStreak = 0,
-    required this.seasonStartDate,
-    this.lastRankUpdate,
-  });
 
   /// Get win rate
   double get winRate {
@@ -156,12 +155,6 @@ class UserRank extends Equatable {
 
 /// Rank Season
 class RankSeason extends Equatable {
-  final String seasonId;
-  final String name;
-  final DateTime startDate;
-  final DateTime endDate;
-  final List<SeasonReward> rewards;
-  final bool isActive;
 
   const RankSeason({
     required this.seasonId,
@@ -171,6 +164,12 @@ class RankSeason extends Equatable {
     required this.rewards,
     this.isActive = true,
   });
+  final String seasonId;
+  final String name;
+  final DateTime startDate;
+  final DateTime endDate;
+  final List<SeasonReward> rewards;
+  final bool isActive;
 
   /// Get days remaining
   int get daysRemaining {
@@ -200,19 +199,18 @@ class RankSeason extends Equatable {
 
 /// Season Reward
 class SeasonReward extends Equatable {
-  final RankDivision requiredDivision;
-  final String rewardType;
-  final int amount;
-  final String? itemId;
-  final String description;
 
   const SeasonReward({
     required this.requiredDivision,
     required this.rewardType,
     required this.amount,
-    this.itemId,
-    required this.description,
+    required this.description, this.itemId,
   });
+  final RankDivision requiredDivision;
+  final String rewardType;
+  final int amount;
+  final String? itemId;
+  final String description;
 
   @override
   List<Object?> get props => [requiredDivision, rewardType, amount, itemId, description];
@@ -464,31 +462,31 @@ class RankingTiers {
     final tiers = <RankingTier>[];
 
     // Bronze I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(bronze(i));
     }
     // Silver I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(silver(i));
     }
     // Gold I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(gold(i));
     }
     // Platinum I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(platinum(i));
     }
     // Diamond I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(diamond(i));
     }
     // Master I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(master(i));
     }
     // Grandmaster I-V
-    for (int i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) {
       tiers.add(grandmaster(i));
     }
     // Legend

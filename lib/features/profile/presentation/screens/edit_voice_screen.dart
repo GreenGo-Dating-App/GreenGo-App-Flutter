@@ -1,30 +1,31 @@
 import 'dart:io';
+
+import 'package:audioplayers/audioplayers.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:record/record.dart';
-import 'package:audioplayers/audioplayers.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:uuid/uuid.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 /// Edit Voice Introduction Screen
 /// Allows users to record, play, and save a voice introduction
 class EditVoiceScreen extends StatefulWidget {
-  final Profile profile;
 
   const EditVoiceScreen({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
   });
+  final Profile profile;
 
   @override
   State<EditVoiceScreen> createState() => _EditVoiceScreenState();

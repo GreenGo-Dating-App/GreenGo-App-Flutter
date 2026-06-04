@@ -6,9 +6,9 @@ import '../datasources/second_chance_remote_datasource.dart';
 
 /// Implementation of Second Chance repository
 class SecondChanceRepositoryImpl implements SecondChanceRepository {
-  final SecondChanceRemoteDataSource remoteDataSource;
 
   SecondChanceRepositoryImpl({required this.remoteDataSource});
+  final SecondChanceRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<SecondChanceProfile>>> getSecondChanceProfiles(
@@ -82,6 +82,6 @@ class SecondChanceRepositoryImpl implements SecondChanceRepository {
   ) {
     return remoteDataSource
         .streamSecondChances(userId)
-        .map((profiles) => Right<Failure, List<SecondChanceProfile>>(profiles));
+        .map(Right<Failure, List<SecondChanceProfile>>.new);
   }
 }

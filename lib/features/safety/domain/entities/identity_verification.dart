@@ -1,12 +1,22 @@
-/**
- * Identity Verification Entity
- * Points 221-225: Identity verification and trust score
- */
+/// Identity Verification Entity
+/// Points 221-225: Identity verification and trust score
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Identity verification (Points 221-224)
 class IdentityVerification extends Equatable {
+
+  const IdentityVerification({
+    required this.verificationId,
+    required this.userId,
+    required this.type,
+    required this.status,
+    required this.initiatedAt,
+    required this.attemptCount, this.completedAt,
+    this.result,
+    this.rejectionReason,
+  });
   final String verificationId;
   final String userId;
   final VerificationType type;
@@ -16,18 +26,6 @@ class IdentityVerification extends Equatable {
   final VerificationResult? result;
   final String? rejectionReason;
   final int attemptCount;
-
-  const IdentityVerification({
-    required this.verificationId,
-    required this.userId,
-    required this.type,
-    required this.status,
-    required this.initiatedAt,
-    this.completedAt,
-    this.result,
-    this.rejectionReason,
-    required this.attemptCount,
-  });
 
   bool get isVerified => status == VerificationStatus.verified;
   bool get isPending => status == VerificationStatus.pending;
@@ -64,18 +62,17 @@ enum VerificationStatus {
 }
 
 /// Verification result
-class VerificationResult extends Equatable {
+class VerificationResult extends Equatable { // 0-1
+
+  const VerificationResult({
+    required this.overallConfidence, this.photoResult,
+    this.idResult,
+    this.livenessResult,
+  });
   final PhotoVerificationResult? photoResult;
   final IDVerificationResult? idResult;
   final LivenessDetectionResult? livenessResult;
-  final double overallConfidence; // 0-1
-
-  const VerificationResult({
-    this.photoResult,
-    this.idResult,
-    this.livenessResult,
-    required this.overallConfidence,
-  });
+  final double overallConfidence;
 
   @override
   List<Object?> get props => [
@@ -88,11 +85,6 @@ class VerificationResult extends Equatable {
 
 /// Photo verification result (Point 221)
 class PhotoVerificationResult extends Equatable {
-  final String selfieUrl;
-  final List<String> profilePhotoUrls;
-  final double matchScore; // 0-1, how well selfie matches profile
-  final FaceMatchAnalysis faceMatch;
-  final bool passed;
 
   const PhotoVerificationResult({
     required this.selfieUrl,
@@ -101,6 +93,11 @@ class PhotoVerificationResult extends Equatable {
     required this.faceMatch,
     required this.passed,
   });
+  final String selfieUrl;
+  final List<String> profilePhotoUrls;
+  final double matchScore; // 0-1, how well selfie matches profile
+  final FaceMatchAnalysis faceMatch;
+  final bool passed;
 
   @override
   List<Object?> get props => [
@@ -113,16 +110,16 @@ class PhotoVerificationResult extends Equatable {
 }
 
 /// Face matching analysis
-class FaceMatchAnalysis extends Equatable {
-  final double similarity; // 0-1
-  final bool samePerson;
-  final Map<String, double> featureMatches; // eyes, nose, mouth, etc.
+class FaceMatchAnalysis extends Equatable { // eyes, nose, mouth, etc.
 
   const FaceMatchAnalysis({
     required this.similarity,
     required this.samePerson,
     required this.featureMatches,
   });
+  final double similarity; // 0-1
+  final bool samePerson;
+  final Map<String, double> featureMatches;
 
   @override
   List<Object?> get props => [similarity, samePerson, featureMatches];
@@ -130,6 +127,14 @@ class FaceMatchAnalysis extends Equatable {
 
 /// ID verification result (Point 222)
 class IDVerificationResult extends Equatable {
+
+  const IDVerificationResult({
+    required this.documentType,
+    required this.documentNumber,
+    required this.fullName,
+    required this.expirationDate, required this.ocrResult, required this.authenticity, required this.passed, this.dateOfBirth,
+    this.nationality,
+  });
   final String documentType;
   final String documentNumber;
   final String fullName;
@@ -139,18 +144,6 @@ class IDVerificationResult extends Equatable {
   final OCRResult ocrResult;
   final DocumentAuthenticity authenticity;
   final bool passed;
-
-  const IDVerificationResult({
-    required this.documentType,
-    required this.documentNumber,
-    required this.fullName,
-    this.dateOfBirth,
-    this.nationality,
-    required this.expirationDate,
-    required this.ocrResult,
-    required this.authenticity,
-    required this.passed,
-  });
 
   @override
   List<Object?> get props => [
@@ -168,15 +161,15 @@ class IDVerificationResult extends Equatable {
 
 /// OCR extraction result
 class OCRResult extends Equatable {
-  final Map<String, String> extractedFields;
-  final double confidence; // 0-1
-  final List<String> missingFields;
 
   const OCRResult({
     required this.extractedFields,
     required this.confidence,
     required this.missingFields,
   });
+  final Map<String, String> extractedFields;
+  final double confidence; // 0-1
+  final List<String> missingFields;
 
   @override
   List<Object?> get props => [extractedFields, confidence, missingFields];
@@ -184,15 +177,15 @@ class OCRResult extends Equatable {
 
 /// Document authenticity check
 class DocumentAuthenticity extends Equatable {
-  final bool isAuthentic;
-  final double confidence; // 0-1
-  final List<AuthenticityCheck> checks;
 
   const DocumentAuthenticity({
     required this.isAuthentic,
     required this.confidence,
     required this.checks,
   });
+  final bool isAuthentic;
+  final double confidence; // 0-1
+  final List<AuthenticityCheck> checks;
 
   @override
   List<Object?> get props => [isAuthentic, confidence, checks];
@@ -200,15 +193,15 @@ class DocumentAuthenticity extends Equatable {
 
 /// Individual authenticity check
 class AuthenticityCheck extends Equatable {
-  final String checkType;
-  final bool passed;
-  final String description;
 
   const AuthenticityCheck({
     required this.checkType,
     required this.passed,
     required this.description,
   });
+  final String checkType;
+  final bool passed;
+  final String description;
 
   @override
   List<Object?> get props => [checkType, passed, description];
@@ -216,10 +209,6 @@ class AuthenticityCheck extends Equatable {
 
 /// Liveness detection result (Point 223)
 class LivenessDetectionResult extends Equatable {
-  final bool isLive;
-  final double confidence; // 0-1
-  final List<LivenessCheck> checks;
-  final String? failureReason;
 
   const LivenessDetectionResult({
     required this.isLive,
@@ -227,6 +216,10 @@ class LivenessDetectionResult extends Equatable {
     required this.checks,
     this.failureReason,
   });
+  final bool isLive;
+  final double confidence; // 0-1
+  final List<LivenessCheck> checks;
+  final String? failureReason;
 
   @override
   List<Object?> get props => [isLive, confidence, checks, failureReason];
@@ -234,15 +227,15 @@ class LivenessDetectionResult extends Equatable {
 
 /// Liveness check
 class LivenessCheck extends Equatable {
-  final LivenessCheckType type;
-  final bool passed;
-  final String description;
 
   const LivenessCheck({
     required this.type,
     required this.passed,
     required this.description,
   });
+  final LivenessCheckType type;
+  final bool passed;
+  final String description;
 
   @override
   List<Object?> get props => [type, passed, description];
@@ -259,11 +252,6 @@ enum LivenessCheckType {
 
 /// Verification badge (Point 224)
 class VerificationBadge extends Equatable {
-  final String userId;
-  final BadgeLevel level;
-  final DateTime verifiedAt;
-  final DateTime expiresAt;
-  final List<VerificationType> verificationsMet;
 
   const VerificationBadge({
     required this.userId,
@@ -272,6 +260,11 @@ class VerificationBadge extends Equatable {
     required this.expiresAt,
     required this.verificationsMet,
   });
+  final String userId;
+  final BadgeLevel level;
+  final DateTime verifiedAt;
+  final DateTime expiresAt;
+  final List<VerificationType> verificationsMet;
 
   bool get isExpired => DateTime.now().isAfter(expiresAt);
   bool get isValid => !isExpired;
@@ -296,12 +289,6 @@ enum BadgeLevel {
 
 /// Trust score (Point 225)
 class TrustScore extends Equatable {
-  final String userId;
-  final double score; // 0-100
-  final TrustLevel level;
-  final Map<String, double> components;
-  final DateTime calculatedAt;
-  final List<TrustFactor> factors;
 
   const TrustScore({
     required this.userId,
@@ -311,6 +298,12 @@ class TrustScore extends Equatable {
     required this.calculatedAt,
     required this.factors,
   });
+  final String userId;
+  final double score; // 0-100
+  final TrustLevel level;
+  final Map<String, double> components;
+  final DateTime calculatedAt;
+  final List<TrustFactor> factors;
 
   @override
   List<Object?> get props => [
@@ -334,10 +327,6 @@ enum TrustLevel {
 
 /// Trust score factors
 class TrustFactor extends Equatable {
-  final String factorName;
-  final double weight; // Contribution to overall score
-  final double value; // 0-100
-  final String description;
 
   const TrustFactor({
     required this.factorName,
@@ -345,6 +334,10 @@ class TrustFactor extends Equatable {
     required this.value,
     required this.description,
   });
+  final String factorName;
+  final double weight; // Contribution to overall score
+  final double value; // 0-100
+  final String description;
 
   @override
   List<Object?> get props => [factorName, weight, value, description];

@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'dart:typed_data';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
+import 'package:path_provider/path_provider.dart';
 
 /// Image Compression Utility
 /// Reduces image file sizes before uploading to Firebase Storage
@@ -116,7 +116,7 @@ class ImageCompression {
       );
 
       // Compress image
-      XFile? compressedXFile = await FlutterImageCompress.compressAndGetFile(
+      var compressedXFile = await FlutterImageCompress.compressAndGetFile(
         file.absolute.path,
         targetPath,
         quality: quality,
@@ -130,12 +130,12 @@ class ImageCompression {
         return file;
       }
 
-      File compressedFile = File(compressedXFile.path);
-      int compressedSize = await compressedFile.length();
+      var compressedFile = File(compressedXFile.path);
+      var compressedSize = await compressedFile.length();
 
       // If still too large, compress more aggressively
       if (compressedSize > maxFileSize) {
-        int newQuality = quality - 20;
+        var newQuality = quality - 20;
         while (compressedSize > maxFileSize && newQuality > 20) {
           final retryPath = path.join(
             tempDir.path,
@@ -220,7 +220,7 @@ class ImageCompression {
     int maxHeight = 1080,
     int maxFileSize = 500 * 1024,
   }) async {
-    final List<File> compressed = [];
+    final compressed = <File>[];
 
     for (final file in files) {
       final result = await _compressImage(

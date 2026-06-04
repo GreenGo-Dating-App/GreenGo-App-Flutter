@@ -6,9 +6,9 @@ import '../../domain/repositories/verification_admin_repository.dart';
 import '../datasources/verification_admin_remote_data_source.dart';
 
 class VerificationAdminRepositoryImpl implements VerificationAdminRepository {
-  final VerificationAdminRemoteDataSource remoteDataSource;
 
   VerificationAdminRepositoryImpl({required this.remoteDataSource});
+  final VerificationAdminRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<Profile>>> getPendingVerifications() async {

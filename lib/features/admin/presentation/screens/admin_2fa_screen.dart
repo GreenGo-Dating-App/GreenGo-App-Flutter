@@ -6,14 +6,14 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 
 class Admin2FAScreen extends StatefulWidget {
+
+  const Admin2FAScreen({super.key, this.onVerified, this.onSignOut});
   /// Optional callback for inline usage (e.g., AuthWrapper).
   /// If provided, called on success instead of Navigator.pop.
   final VoidCallback? onVerified;
 
   /// Optional sign-out callback shown as a button on the screen.
   final VoidCallback? onSignOut;
-
-  const Admin2FAScreen({super.key, this.onVerified, this.onSignOut});
 
   /// Session-level cache: once verified, skip 2FA for the rest of the app session.
   static bool _verified = false;

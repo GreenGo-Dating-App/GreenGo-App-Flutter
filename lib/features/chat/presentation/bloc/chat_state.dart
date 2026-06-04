@@ -1,7 +1,7 @@
-import '../../domain/entities/conversation.dart';
-import '../../domain/entities/message.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/conversation.dart';
+import '../../domain/entities/message.dart';
 
 /// Chat States
 abstract class ChatState {
@@ -20,11 +20,6 @@ class ChatLoading extends ChatState {
 
 /// Chat loaded with messages
 class ChatLoaded extends ChatState {
-  final Conversation conversation;
-  final List<Message> messages;
-  final String currentUserId;
-  final String otherUserId;
-  final bool isOtherUserTyping;
 
   const ChatLoaded({
     required this.conversation,
@@ -33,6 +28,11 @@ class ChatLoaded extends ChatState {
     required this.otherUserId,
     this.isOtherUserTyping = false,
   });
+  final Conversation conversation;
+  final List<Message> messages;
+  final String currentUserId;
+  final String otherUserId;
+  final bool isOtherUserTyping;
 
   ChatLoaded copyWith({
     Conversation? conversation,
@@ -53,10 +53,6 @@ class ChatLoaded extends ChatState {
 
 /// Sending message
 class ChatSending extends ChatState {
-  final Conversation conversation;
-  final List<Message> messages;
-  final String currentUserId;
-  final String otherUserId;
 
   const ChatSending({
     required this.conversation,
@@ -64,20 +60,24 @@ class ChatSending extends ChatState {
     required this.currentUserId,
     required this.otherUserId,
   });
+  final Conversation conversation;
+  final List<Message> messages;
+  final String currentUserId;
+  final String otherUserId;
 }
 
 /// Error state
 class ChatError extends ChatState {
-  final String message;
 
   const ChatError(this.message);
+  final String message;
 }
 
 /// Message action success (star, forward, delete, etc.)
 class ChatMessageActionSuccess extends ChatState {
-  final String message;
 
   const ChatMessageActionSuccess(this.message);
+  final String message;
 }
 
 /// Conversation deleted state
@@ -87,9 +87,9 @@ class ChatConversationDeleted extends ChatState {
 
 /// User blocked successfully
 class ChatUserBlockedSuccess extends ChatState {
-  final String blockedUserId;
 
   const ChatUserBlockedSuccess(this.blockedUserId);
+  final String blockedUserId;
 }
 
 /// User reported successfully
@@ -99,11 +99,6 @@ class ChatUserReportedSuccess extends ChatState {
 
 /// Message limit reached state
 class ChatMessageLimitReached extends ChatState {
-  final Conversation conversation;
-  final List<Message> messages;
-  final String currentUserId;
-  final String otherUserId;
-  final UsageLimitResult limitResult;
 
   const ChatMessageLimitReached({
     required this.conversation,
@@ -112,16 +107,15 @@ class ChatMessageLimitReached extends ChatState {
     required this.otherUserId,
     required this.limitResult,
   });
-}
-
-/// Media sending not allowed state
-class ChatMediaNotAllowed extends ChatState {
   final Conversation conversation;
   final List<Message> messages;
   final String currentUserId;
   final String otherUserId;
-  final MembershipTier currentTier;
-  final MembershipTier requiredTier;
+  final UsageLimitResult limitResult;
+}
+
+/// Media sending not allowed state
+class ChatMediaNotAllowed extends ChatState {
 
   const ChatMediaNotAllowed({
     required this.conversation,
@@ -131,4 +125,10 @@ class ChatMediaNotAllowed extends ChatState {
     required this.currentTier,
     required this.requiredTier,
   });
+  final Conversation conversation;
+  final List<Message> messages;
+  final String currentUserId;
+  final String otherUserId;
+  final MembershipTier currentTier;
+  final MembershipTier requiredTier;
 }

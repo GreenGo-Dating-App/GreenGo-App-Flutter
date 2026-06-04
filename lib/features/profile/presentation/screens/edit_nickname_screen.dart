@@ -1,24 +1,24 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/nickname_generator.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../../core/utils/safe_navigation.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditNicknameScreen extends StatefulWidget {
-  final Profile profile;
 
   const EditNicknameScreen({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
   });
+  final Profile profile;
 
   @override
   State<EditNicknameScreen> createState() => _EditNicknameScreenState();
@@ -200,7 +200,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
                 ),
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.info_outline,
                       color: AppColors.richGold,
                       size: 24,

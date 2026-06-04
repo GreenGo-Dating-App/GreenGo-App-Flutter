@@ -5,13 +5,13 @@ import '../../../../core/usecases/usecase.dart';
 import '../repositories/profile_repository.dart';
 
 class UploadPhoto implements UseCase<String, UploadPhotoParams> {
-  final ProfileRepository repository;
 
   UploadPhoto(this.repository);
+  final ProfileRepository repository;
 
   @override
   Future<Either<Failure, String>> call(UploadPhotoParams params) async {
-    return await repository.uploadPhoto(
+    return repository.uploadPhoto(
       params.userId,
       params.photo,
       folder: params.folder,
@@ -20,13 +20,13 @@ class UploadPhoto implements UseCase<String, UploadPhotoParams> {
 }
 
 class UploadPhotoParams {
-  final String userId;
-  final File photo;
-  final String? folder;
 
   UploadPhotoParams({
     required this.userId,
     required this.photo,
     this.folder,
   });
+  final String userId;
+  final File photo;
+  final String? folder;
 }

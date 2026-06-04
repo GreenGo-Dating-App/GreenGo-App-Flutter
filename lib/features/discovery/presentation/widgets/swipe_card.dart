@@ -1,33 +1,23 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/widgets/language_badge.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/discovery_card.dart';
-import '../../../../generated/app_localizations.dart';
 
 /// Swipeable Card Widget
 ///
 /// Displays a profile card with fade in/out transitions.
 /// Gesture detection determines swipe direction for like/pass/superlike/skip.
 class SwipeCard extends StatefulWidget {
-  final DiscoveryCard card;
-  final Function(SwipeDirection)? onSwipe;
-  final VoidCallback? onTap;
-  final bool isFront;
-  final ValueChanged<double>? onDragProgress;
-  final bool? isOnlineOverride;
-  final Profile? currentUserProfile;
-  final bool isRandomMode;
 
   const SwipeCard({
-    super.key,
-    required this.card,
+    required this.card, super.key,
     this.onSwipe,
     this.onTap,
     this.isFront = false,
@@ -36,6 +26,14 @@ class SwipeCard extends StatefulWidget {
     this.currentUserProfile,
     this.isRandomMode = false,
   });
+  final DiscoveryCard card;
+  final Function(SwipeDirection)? onSwipe;
+  final VoidCallback? onTap;
+  final bool isFront;
+  final ValueChanged<double>? onDragProgress;
+  final bool? isOnlineOverride;
+  final Profile? currentUserProfile;
+  final bool isRandomMode;
 
   @override
   State<SwipeCard> createState() => _SwipeCardState();
@@ -103,7 +101,7 @@ class _SwipeCardState extends State<SwipeCard>
     final photoUrls = _photoUrls;
     final hasMultiplePhotos = photoUrls.length > 1;
 
-    Widget cardContent = SizedBox(
+    final Widget cardContent = SizedBox(
       height: screenSize.height * 0.75,
       child: Stack(
         children: [
@@ -858,7 +856,7 @@ class _SwipeCardState extends State<SwipeCard>
 
     final screenWidth = MediaQuery.of(context).size.width;
     final velocity = details.velocity.pixelsPerSecond;
-    final velocityThreshold = 800.0;
+    const velocityThreshold = 800.0;
     final positionThreshold = screenWidth * 0.25;
 
     // Determine if the swipe crosses threshold

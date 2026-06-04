@@ -7,16 +7,16 @@ import '../repositories/coin_repository.dart';
 /// Claim Reward Use Case
 /// Point 160: Claim coin rewards for achievements
 class ClaimReward {
-  final CoinRepository repository;
 
   ClaimReward(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinTransaction>> call({
     required String userId,
     required CoinReward reward,
     Map<String, dynamic>? metadata,
   }) async {
-    return await repository.claimReward(
+    return repository.claimReward(
       userId: userId,
       reward: reward,
       metadata: metadata,
@@ -26,15 +26,15 @@ class ClaimReward {
 
 /// Check if Reward Can Be Claimed Use Case
 class CanClaimReward {
-  final CoinRepository repository;
 
   CanClaimReward(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, bool>> call({
     required String userId,
     required String rewardId,
   }) async {
-    return await repository.canClaimReward(
+    return repository.canClaimReward(
       userId: userId,
       rewardId: rewardId,
     );
@@ -43,11 +43,11 @@ class CanClaimReward {
 
 /// Get Claimed Rewards Use Case
 class GetClaimedRewards {
-  final CoinRepository repository;
 
   GetClaimedRewards(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<ClaimedReward>>> call(String userId) async {
-    return await repository.getClaimedRewards(userId);
+    return repository.getClaimedRewards(userId);
   }
 }

@@ -19,6 +19,24 @@ enum PurchaseStatus {
 /// Purchase Entity
 /// Represents a single purchase transaction
 class Purchase extends Equatable {
+
+  const Purchase({
+    required this.purchaseId,
+    required this.userId,
+    required this.type,
+    required this.status,
+    required this.productId,
+    required this.productName,
+    required this.price, required this.platform, required this.purchaseDate, this.tier,
+    this.currency = 'USD',
+    this.purchaseToken,
+    this.transactionId,
+    this.orderId,
+    this.receipt,
+    this.verifiedAt,
+    this.refundedAt,
+    this.metadata,
+  });
   final String purchaseId;
   final String userId;
   final PurchaseType type;
@@ -47,27 +65,6 @@ class Purchase extends Equatable {
 
   // Metadata
   final Map<String, dynamic>? metadata;
-
-  const Purchase({
-    required this.purchaseId,
-    required this.userId,
-    required this.type,
-    required this.status,
-    required this.productId,
-    required this.productName,
-    this.tier,
-    required this.price,
-    this.currency = 'USD',
-    required this.platform,
-    this.purchaseToken,
-    this.transactionId,
-    this.orderId,
-    this.receipt,
-    required this.purchaseDate,
-    this.verifiedAt,
-    this.refundedAt,
-    this.metadata,
-  });
 
   bool get isVerified => verifiedAt != null;
   bool get isRefunded => status == PurchaseStatus.refunded;

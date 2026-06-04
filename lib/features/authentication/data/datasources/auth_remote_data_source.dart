@@ -81,16 +81,16 @@ abstract class AuthRemoteDataSource {
   Stream<UserModel?> get authStateChanges;
 }
 
-class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
-  final firebase_auth.FirebaseAuth firebaseAuth;
-  final dynamic googleSignIn; // Will be GoogleSignIn? when enabled
-  final dynamic facebookAuth; // Will be FacebookAuth? when enabled
+class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be FacebookAuth? when enabled
 
   AuthRemoteDataSourceImpl({
     required this.firebaseAuth,
     this.googleSignIn,
     this.facebookAuth,
   });
+  final firebase_auth.FirebaseAuth firebaseAuth;
+  final dynamic googleSignIn; // Will be GoogleSignIn? when enabled
+  final dynamic facebookAuth;
 
   @override
   Future<UserModel> signInWithEmail({
@@ -100,11 +100,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
     try {
       // Check if input is a nickname rather than an email
       // Strip leading '@' since users often type @nickname
-      String input = email.trim();
+      var input = email.trim();
       if (input.startsWith('@')) {
         input = input.substring(1);
       }
-      String resolvedEmail = input;
+      var resolvedEmail = input;
       if (!input.contains('@')) {
         // Treat as nickname - look up email from Firestore profiles
         resolvedEmail = await _resolveNicknameToEmail(input);
@@ -343,7 +343,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
       }
 
       // Create a credential from the access token
-      final firebase_auth.OAuthCredential facebookAuthCredential =
+      final facebookAuthCredential =
           firebase_auth.FacebookAuthProvider.credential(
         loginResult.accessToken!.token,
       );

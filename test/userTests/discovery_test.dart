@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'test_helpers.dart';
+
 import 'test_app.dart';
+import 'test_helpers.dart';
 
 /// Discovery & Swiping User Tests (12 tests)
 /// Tests cover: Swiping, likes, super likes, profile viewing, preferences

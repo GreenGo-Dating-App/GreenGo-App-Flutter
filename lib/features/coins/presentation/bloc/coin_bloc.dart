@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/coin_balance.dart';
@@ -11,7 +10,6 @@ import '../../domain/entities/coin_package.dart';
 import '../../domain/usecases/claim_reward.dart';
 import '../../domain/usecases/get_coin_balance.dart';
 import '../../domain/usecases/get_transaction_history.dart';
-import '../../domain/usecases/manage_allowance.dart';
 import '../../domain/usecases/manage_expiration.dart';
 import '../../domain/usecases/manage_gifts.dart';
 import '../../domain/usecases/manage_promotions.dart';
@@ -23,27 +21,6 @@ import 'coin_state.dart';
 /// Coin BLoC
 /// Manages all coin-related state and operations
 class CoinBloc extends Bloc<CoinEvent, CoinState> {
-  final GetCoinBalance getCoinBalance;
-  final PurchaseCoins purchaseCoins;
-  final GetAvailablePackages getAvailablePackages;
-  final GetTransactionHistory getTransactionHistory;
-  final ClaimReward claimReward;
-  final CanClaimReward canClaimReward;
-  final GetClaimedRewards getClaimedRewards;
-  final PurchaseFeature purchaseFeature;
-  final CanAffordFeature canAffordFeature;
-  final SendCoinGift sendGift;
-  final AcceptCoinGift acceptGift;
-  final DeclineCoinGift declineGift;
-  final GetPendingGifts getPendingGifts;
-  final GetSentGifts getSentGifts;
-  final ProcessExpiredCoins processExpiredCoins;
-  final GetExpiringCoins getExpiringCoins;
-  final GetActivePromotions getActivePromotions;
-  final GetPromotionByCode getPromotionByCode;
-  final IsPromotionApplicable isPromotionApplicable;
-
-  StreamSubscription? _balanceSubscription;
 
   CoinBloc({
     required this.getCoinBalance,
@@ -104,6 +81,27 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     on<ApplyPromoCode>(_onApplyPromoCode);
     on<CheckPromotionApplicability>(_onCheckPromotionApplicability);
   }
+  final GetCoinBalance getCoinBalance;
+  final PurchaseCoins purchaseCoins;
+  final GetAvailablePackages getAvailablePackages;
+  final GetTransactionHistory getTransactionHistory;
+  final ClaimReward claimReward;
+  final CanClaimReward canClaimReward;
+  final GetClaimedRewards getClaimedRewards;
+  final PurchaseFeature purchaseFeature;
+  final CanAffordFeature canAffordFeature;
+  final SendCoinGift sendGift;
+  final AcceptCoinGift acceptGift;
+  final DeclineCoinGift declineGift;
+  final GetPendingGifts getPendingGifts;
+  final GetSentGifts getSentGifts;
+  final ProcessExpiredCoins processExpiredCoins;
+  final GetExpiringCoins getExpiringCoins;
+  final GetActivePromotions getActivePromotions;
+  final GetPromotionByCode getPromotionByCode;
+  final IsPromotionApplicable isPromotionApplicable;
+
+  StreamSubscription? _balanceSubscription;
 
   // ===== Balance Event Handlers =====
 
@@ -240,7 +238,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
       onData: (result) {
         return result.fold(
           (failure) => CoinError(failure.toString()),
-          (transactions) => TransactionHistoryLoaded(transactions),
+          TransactionHistoryLoaded.new,
         );
       },
     );
@@ -565,8 +563,8 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
 
 /// Internal event — not exported, used only by the balance stream subscription
 class _CoinBalanceStreamUpdated extends CoinEvent {
-  final Either<Failure, CoinBalance> result;
   const _CoinBalanceStreamUpdated(this.result);
+  final Either<Failure, CoinBalance> result;
 
   @override
   List<Object?> get props => [result];

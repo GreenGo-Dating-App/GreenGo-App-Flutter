@@ -1,21 +1,11 @@
-/**
- * Moderation Result Entity
- * Points 201-210: Content moderation results
- */
+/// Moderation Result Entity
+/// Points 201-210: Content moderation results
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Moderation result for content (text, image, etc.)
 class ModerationResult extends Equatable {
-  final String moderationId;
-  final String contentId;
-  final ContentType contentType;
-  final ModerationStatus status;
-  final List<ModerationFlag> flags;
-  final double overallScore; // 0-1, higher = more problematic
-  final DateTime moderatedAt;
-  final String? moderatorId; // Null if automated
-  final String? reviewNotes;
 
   const ModerationResult({
     required this.moderationId,
@@ -28,6 +18,15 @@ class ModerationResult extends Equatable {
     this.moderatorId,
     this.reviewNotes,
   });
+  final String moderationId;
+  final String contentId;
+  final ContentType contentType;
+  final ModerationStatus status;
+  final List<ModerationFlag> flags;
+  final double overallScore; // 0-1, higher = more problematic
+  final DateTime moderatedAt;
+  final String? moderatorId; // Null if automated
+  final String? reviewNotes;
 
   bool get isApproved => status == ModerationStatus.approved;
   bool get isRejected => status == ModerationStatus.rejected;
@@ -49,10 +48,6 @@ class ModerationResult extends Equatable {
 
 /// Individual moderation flag
 class ModerationFlag extends Equatable {
-  final FlagType type;
-  final double confidence; // 0-1
-  final String reason;
-  final FlagSeverity severity;
 
   const ModerationFlag({
     required this.type,
@@ -60,6 +55,10 @@ class ModerationFlag extends Equatable {
     required this.reason,
     required this.severity,
   });
+  final FlagType type;
+  final double confidence; // 0-1
+  final String reason;
+  final FlagSeverity severity;
 
   @override
   List<Object?> get props => [type, confidence, reason, severity];
@@ -133,21 +132,19 @@ enum FlagSeverity {
 
 /// Photo moderation result (Point 201)
 class PhotoModerationResult extends Equatable {
+
+  const PhotoModerationResult({
+    required this.photoId,
+    required this.safeSearch,
+    required this.labels,
+    required this.isApproved, required this.violations, this.faces,
+  });
   final String photoId;
   final SafeSearchAnnotation safeSearch;
   final List<Label> labels;
   final FaceDetectionResult? faces;
   final bool isApproved;
   final List<ModerationFlag> violations;
-
-  const PhotoModerationResult({
-    required this.photoId,
-    required this.safeSearch,
-    required this.labels,
-    this.faces,
-    required this.isApproved,
-    required this.violations,
-  });
 
   @override
   List<Object?> get props => [
@@ -162,11 +159,6 @@ class PhotoModerationResult extends Equatable {
 
 /// Safe search annotation from Cloud Vision API
 class SafeSearchAnnotation extends Equatable {
-  final Likelihood adult;
-  final Likelihood violence;
-  final Likelihood racy;
-  final Likelihood medical;
-  final Likelihood spoof;
 
   const SafeSearchAnnotation({
     required this.adult,
@@ -175,6 +167,11 @@ class SafeSearchAnnotation extends Equatable {
     required this.medical,
     required this.spoof,
   });
+  final Likelihood adult;
+  final Likelihood violence;
+  final Likelihood racy;
+  final Likelihood medical;
+  final Likelihood spoof;
 
   /// Strict safety check: blocks all nudity and racy content
   bool get isSafe =>
@@ -198,13 +195,13 @@ enum Likelihood {
 
 /// Label detected in image
 class Label extends Equatable {
-  final String description;
-  final double score;
 
   const Label({
     required this.description,
     required this.score,
   });
+  final String description;
+  final double score;
 
   @override
   List<Object?> get props => [description, score];
@@ -212,13 +209,13 @@ class Label extends Equatable {
 
 /// Face detection result
 class FaceDetectionResult extends Equatable {
-  final int faceCount;
-  final List<FaceAnnotation> faces;
 
   const FaceDetectionResult({
     required this.faceCount,
     required this.faces,
   });
+  final int faceCount;
+  final List<FaceAnnotation> faces;
 
   @override
   List<Object?> get props => [faceCount, faces];
@@ -226,10 +223,6 @@ class FaceDetectionResult extends Equatable {
 
 /// Individual face annotation
 class FaceAnnotation extends Equatable {
-  final double joyLikelihood;
-  final double sorrowLikelihood;
-  final double angerLikelihood;
-  final double surpriseLikelihood;
 
   const FaceAnnotation({
     required this.joyLikelihood,
@@ -237,6 +230,10 @@ class FaceAnnotation extends Equatable {
     required this.angerLikelihood,
     required this.surpriseLikelihood,
   });
+  final double joyLikelihood;
+  final double sorrowLikelihood;
+  final double angerLikelihood;
+  final double surpriseLikelihood;
 
   @override
   List<Object?> get props => [
@@ -249,13 +246,6 @@ class FaceAnnotation extends Equatable {
 
 /// Text moderation result (Point 202)
 class TextModerationResult extends Equatable {
-  final String textId;
-  final String text;
-  final double toxicityScore; // 0-1
-  final Map<String, double> attributeScores; // toxicity, profanity, etc.
-  final List<String> detectedProfanity;
-  final bool isApproved;
-  final List<ModerationFlag> violations;
 
   const TextModerationResult({
     required this.textId,
@@ -266,6 +256,13 @@ class TextModerationResult extends Equatable {
     required this.isApproved,
     required this.violations,
   });
+  final String textId;
+  final String text;
+  final double toxicityScore; // 0-1
+  final Map<String, double> attributeScores; // toxicity, profanity, etc.
+  final List<String> detectedProfanity;
+  final bool isApproved;
+  final List<ModerationFlag> violations;
 
   bool get isToxic => toxicityScore > 0.7;
   bool get hasProfanity => detectedProfanity.isNotEmpty;
@@ -284,10 +281,6 @@ class TextModerationResult extends Equatable {
 
 /// Spam detection result (Point 204)
 class SpamDetectionResult extends Equatable {
-  final String messageId;
-  final double spamScore; // 0-1
-  final List<SpamIndicator> indicators;
-  final bool isSpam;
 
   const SpamDetectionResult({
     required this.messageId,
@@ -295,6 +288,10 @@ class SpamDetectionResult extends Equatable {
     required this.indicators,
     required this.isSpam,
   });
+  final String messageId;
+  final double spamScore; // 0-1
+  final List<SpamIndicator> indicators;
+  final bool isSpam;
 
   @override
   List<Object?> get props => [messageId, spamScore, indicators, isSpam];
@@ -312,10 +309,6 @@ enum SpamIndicator {
 
 /// Fake profile detection result (Point 205)
 class FakeProfileDetectionResult extends Equatable {
-  final String userId;
-  final double fakeScore; // 0-1
-  final List<FakeProfileIndicator> indicators;
-  final bool isSuspicious;
 
   const FakeProfileDetectionResult({
     required this.userId,
@@ -323,6 +316,10 @@ class FakeProfileDetectionResult extends Equatable {
     required this.indicators,
     required this.isSuspicious,
   });
+  final String userId;
+  final double fakeScore; // 0-1
+  final List<FakeProfileIndicator> indicators;
+  final bool isSuspicious;
 
   @override
   List<Object?> get props => [userId, fakeScore, indicators, isSuspicious];
@@ -341,10 +338,6 @@ enum FakeProfileIndicator {
 
 /// Scam detection result (Point 206)
 class ScamDetectionResult extends Equatable {
-  final String conversationId;
-  final double scamScore; // 0-1
-  final List<ScamIndicator> indicators;
-  final bool isScam;
 
   const ScamDetectionResult({
     required this.conversationId,
@@ -352,6 +345,10 @@ class ScamDetectionResult extends Equatable {
     required this.indicators,
     required this.isScam,
   });
+  final String conversationId;
+  final double scamScore; // 0-1
+  final List<ScamIndicator> indicators;
+  final bool isScam;
 
   @override
   List<Object?> get props => [conversationId, scamScore, indicators, isScam];
@@ -369,19 +366,18 @@ enum ScamIndicator {
 
 /// Catfish detection result (Point 207)
 class CatfishDetectionResult extends Equatable {
-  final String userId;
-  final double catfishScore; // 0-1
-  final List<CatfishIndicator> indicators;
-  final FaceConsistencyAnalysis? faceConsistency;
-  final bool isSuspicious;
 
   const CatfishDetectionResult({
     required this.userId,
     required this.catfishScore,
     required this.indicators,
-    this.faceConsistency,
-    required this.isSuspicious,
+    required this.isSuspicious, this.faceConsistency,
   });
+  final String userId;
+  final double catfishScore; // 0-1
+  final List<CatfishIndicator> indicators;
+  final FaceConsistencyAnalysis? faceConsistency;
+  final bool isSuspicious;
 
   @override
   List<Object?> get props => [
@@ -405,15 +401,15 @@ enum CatfishIndicator {
 
 /// Face consistency analysis
 class FaceConsistencyAnalysis extends Equatable {
-  final double consistencyScore; // 0-1, higher = more consistent
-  final int photosAnalyzed;
-  final List<String> inconsistentPhotoIds;
 
   const FaceConsistencyAnalysis({
     required this.consistencyScore,
     required this.photosAnalyzed,
     required this.inconsistentPhotoIds,
   });
+  final double consistencyScore; // 0-1, higher = more consistent
+  final int photosAnalyzed;
+  final List<String> inconsistentPhotoIds;
 
   bool get isConsistent => consistencyScore > 0.7;
 

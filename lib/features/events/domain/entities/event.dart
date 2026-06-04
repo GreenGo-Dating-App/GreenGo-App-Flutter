@@ -34,6 +34,32 @@ enum RSVPStatus {
 /// Event Entity
 /// Local events and activities for users to meet
 class Event extends Equatable {
+
+  const Event({
+    required this.id,
+    required this.organizerId,
+    required this.organizerName,
+    required this.title, required this.description, required this.category, required this.startDate, required this.endDate, required this.locationName, required this.maxAttendees, required this.status, required this.createdAt, this.organizerPhotoUrl,
+    this.imageUrl,
+    this.photoUrls = const [],
+    this.latitude,
+    this.longitude,
+    this.address,
+    this.price,
+    this.currency,
+    this.attendees = const [],
+    this.tags = const [],
+    this.isVerified = false,
+    this.requiresApproval = false,
+    this.minAge,
+    this.maxAge,
+    this.genderPreference,
+    this.languages = const [],
+    this.languagePairs,
+    this.city,
+    this.attendeeCount = 0,
+    this.updatedAt,
+  });
   final String id;
   final String organizerId;
   final String organizerName;
@@ -66,41 +92,6 @@ class Event extends Equatable {
   final int attendeeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
-
-  const Event({
-    required this.id,
-    required this.organizerId,
-    required this.organizerName,
-    this.organizerPhotoUrl,
-    required this.title,
-    required this.description,
-    required this.category,
-    this.imageUrl,
-    this.photoUrls = const [],
-    required this.startDate,
-    required this.endDate,
-    required this.locationName,
-    this.latitude,
-    this.longitude,
-    this.address,
-    required this.maxAttendees,
-    this.price,
-    this.currency,
-    required this.status,
-    this.attendees = const [],
-    this.tags = const [],
-    this.isVerified = false,
-    this.requiresApproval = false,
-    this.minAge,
-    this.maxAge,
-    this.genderPreference,
-    this.languages = const [],
-    this.languagePairs,
-    this.city,
-    this.attendeeCount = 0,
-    required this.createdAt,
-    this.updatedAt,
-  });
 
   int get goingCount => attendees.where((a) => a.status == RSVPStatus.going).length;
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
@@ -219,6 +210,15 @@ class Event extends Equatable {
 
 /// Event Attendee
 class EventAttendee extends Equatable {
+
+  const EventAttendee({
+    required this.id,
+    required this.eventId,
+    required this.userId,
+    required this.userName,
+    required this.status, required this.rsvpDate, this.userPhotoUrl,
+    this.isApproved = false,
+  });
   final String id;
   final String eventId;
   final String userId;
@@ -227,17 +227,6 @@ class EventAttendee extends Equatable {
   final RSVPStatus status;
   final DateTime rsvpDate;
   final bool isApproved;
-
-  const EventAttendee({
-    required this.id,
-    required this.eventId,
-    required this.userId,
-    required this.userName,
-    this.userPhotoUrl,
-    required this.status,
-    required this.rsvpDate,
-    this.isApproved = false,
-  });
 
   @override
   List<Object?> get props => [

@@ -1,13 +1,15 @@
 import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'app_sound_service.dart';
-import '../../../features/chat/presentation/screens/support_chat_screen.dart';
+
 import '../../../features/chat/presentation/screens/chat_screen.dart';
+import '../../../features/chat/presentation/screens/support_chat_screen.dart';
 import '../../../features/profile/data/models/profile_model.dart';
+import 'app_sound_service.dart';
 
 /// Top-level background message handler (must be a top-level function)
 @pragma('vm:entry-point')
@@ -19,9 +21,9 @@ Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 /// Service for handling push notifications
 class PushNotificationService {
-  static final PushNotificationService _instance = PushNotificationService._();
   factory PushNotificationService() => _instance;
   PushNotificationService._();
+  static final PushNotificationService _instance = PushNotificationService._();
 
   final FlutterLocalNotificationsPlugin _localNotifications =
       FlutterLocalNotificationsPlugin();
@@ -212,7 +214,7 @@ class PushNotificationService {
       // Look up conversation to find participants
       final convDoc =
           await firestore.collection('conversations').doc(conversationId).get();
-      List<String> participants = [];
+      var participants = <String>[];
       if (convDoc.exists) {
         participants =
             (convDoc.data()?['participants'] as List?)?.cast<String>() ?? [];

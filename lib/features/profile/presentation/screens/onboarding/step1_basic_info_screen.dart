@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -47,7 +48,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
   }
 
   Future<void> _selectDate(BuildContext context) async {
-    final DateTime? picked = await showDatePicker(
+    final picked = await showDatePicker(
       context: context,
       initialDate: DateTime(2000),
       firstDate: DateTime(1940),
@@ -60,8 +61,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
               onPrimary: Colors.black,
               surface: Color(0xFF1A1A1A),
               onSurface: Colors.white,
-            ),
-            dialogBackgroundColor: const Color(0xFF0D0D0D),
+            ), dialogTheme: const DialogThemeData(backgroundColor: Color(0xFF0D0D0D)),
           ),
           child: child!,
         );

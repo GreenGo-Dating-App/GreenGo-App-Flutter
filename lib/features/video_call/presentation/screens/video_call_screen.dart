@@ -5,18 +5,9 @@ import '../../domain/entities/video_call.dart';
 
 /// Video Call Screen - In-app video dating
 class VideoCallScreen extends StatefulWidget {
-  final VideoCall call;
-  final bool isIncoming;
-  final VoidCallback? onAccept;
-  final VoidCallback? onDecline;
-  final VoidCallback? onEnd;
-  final VoidCallback? onToggleVideo;
-  final VoidCallback? onToggleAudio;
-  final VoidCallback? onSwitchCamera;
 
   const VideoCallScreen({
-    super.key,
-    required this.call,
+    required this.call, super.key,
     this.isIncoming = false,
     this.onAccept,
     this.onDecline,
@@ -25,6 +16,14 @@ class VideoCallScreen extends StatefulWidget {
     this.onToggleAudio,
     this.onSwitchCamera,
   });
+  final VideoCall call;
+  final bool isIncoming;
+  final VoidCallback? onAccept;
+  final VoidCallback? onDecline;
+  final VoidCallback? onEnd;
+  final VoidCallback? onToggleVideo;
+  final VoidCallback? onToggleAudio;
+  final VoidCallback? onSwitchCamera;
 
   @override
   State<VideoCallScreen> createState() => _VideoCallScreenState();
@@ -154,7 +153,7 @@ class _VideoCallScreenState extends State<VideoCallScreen>
                             ? NetworkImage(widget.call.receiverPhotoUrl!)
                             : null),
                     backgroundColor: AppColors.backgroundCard,
-                    child: Icon(
+                    child: const Icon(
                       Icons.person,
                       size: 60,
                       color: AppColors.textTertiary,
@@ -514,16 +513,13 @@ class _VideoCallScreenState extends State<VideoCallScreen>
 
 /// Incoming Call Notification Widget
 class IncomingCallNotification extends StatelessWidget {
+
+  const IncomingCallNotification({
+    required this.call, required this.onAccept, required this.onDecline, super.key,
+  });
   final VideoCall call;
   final VoidCallback onAccept;
   final VoidCallback onDecline;
-
-  const IncomingCallNotification({
-    super.key,
-    required this.call,
-    required this.onAccept,
-    required this.onDecline,
-  });
 
   @override
   Widget build(BuildContext context) {

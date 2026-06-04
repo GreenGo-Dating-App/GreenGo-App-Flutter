@@ -1,9 +1,11 @@
 import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../domain/usecases/get_notifications.dart';
-import '../../domain/usecases/mark_notification_read.dart';
 import '../../domain/usecases/mark_all_notifications_read.dart';
+import '../../domain/usecases/mark_notification_read.dart';
 import 'notifications_event.dart';
 import 'notifications_state.dart';
 
@@ -11,11 +13,6 @@ import 'notifications_state.dart';
 ///
 /// Manages notifications state and real-time updates
 class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
-  final GetNotifications getNotifications;
-  final MarkNotificationRead markNotificationRead;
-  final MarkAllNotificationsRead markAllNotificationsRead;
-
-  String? _userId;
 
   NotificationsBloc({
     required this.getNotifications,
@@ -28,6 +25,11 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     on<NotificationDeleted>(_onDeleted);
     on<NotificationTapped>(_onTapped);
   }
+  final GetNotifications getNotifications;
+  final MarkNotificationRead markNotificationRead;
+  final MarkAllNotificationsRead markAllNotificationsRead;
+
+  String? _userId;
 
   Future<void> _onLoadRequested(
     NotificationsLoadRequested event,
@@ -116,8 +118,4 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     // Navigation will be handled by UI layer using actionUrl
   }
 
-  @override
-  Future<void> close() {
-    return super.close();
-  }
 }

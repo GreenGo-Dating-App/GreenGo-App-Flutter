@@ -16,10 +16,6 @@ enum PhotoValidationError {
 
 /// Photo validation results
 class PhotoValidationResult {
-  final bool isValid;
-  final String? errorMessage;
-  final PhotoValidationError? errorCode;
-  final bool hasFace;
 
   const PhotoValidationResult({
     required this.isValid,
@@ -40,6 +36,10 @@ class PhotoValidationResult {
         errorMessage: message,
         errorCode: code,
       );
+  final bool isValid;
+  final String? errorMessage;
+  final PhotoValidationError? errorCode;
+  final bool hasFace;
 }
 
 /// Service for validating profile photos — ALL processing runs locally on-device
@@ -50,9 +50,9 @@ class PhotoValidationResult {
 ///   2. Google ML Kit Image Labeling (on-device model)
 ///   3. Face detection (Google ML Kit on-device)
 class PhotoValidationService {
-  static final PhotoValidationService _instance = PhotoValidationService._();
   factory PhotoValidationService() => _instance;
   PhotoValidationService._();
+  static final PhotoValidationService _instance = PhotoValidationService._();
 
   FaceDetector? _faceDetector;
   ImageLabeler? _imageLabeler;
@@ -165,7 +165,7 @@ class PhotoValidationService {
       }
 
       // Check that at least one face is front-facing enough
-      bool hasGoodFace = false;
+      var hasGoodFace = false;
       for (final face in faces) {
         final yAngle = face.headEulerAngleY ?? 0;
         final zAngle = face.headEulerAngleZ ?? 0;
@@ -274,11 +274,11 @@ class PhotoValidationService {
       if (byteData == null) return 0.0;
 
       final pixels = byteData.buffer.asUint8List();
-      int skinPixels = 0;
-      int totalPixels = 0;
+      var skinPixels = 0;
+      var totalPixels = 0;
 
       // Sample every 2nd pixel for speed
-      for (int i = 0; i < pixels.length; i += 8) {
+      for (var i = 0; i < pixels.length; i += 8) {
         final r = pixels[i];
         final g = pixels[i + 1];
         final b = pixels[i + 2];
@@ -332,13 +332,13 @@ class PhotoValidationService {
         final confidence = label.confidence;
 
         // Check against explicit label list
-        if (_explicitLabels.any((el) => text.contains(el)) &&
+        if (_explicitLabels.any(text.contains) &&
             confidence > 0.5) {
           explicitLabels.add('${label.label} (${(confidence * 100).toInt()}%)');
         }
 
         // Check against safe label list
-        if (_safeLabels.any((sl) => text.contains(sl)) && confidence > 0.4) {
+        if (_safeLabels.any(text.contains) && confidence > 0.4) {
           safeLabels.add(label.label);
         }
       }
@@ -380,11 +380,11 @@ class PhotoValidationService {
 }
 
 class _LabelCheckResult {
-  final List<String> explicitLabels;
-  final List<String> safeLabels;
 
   const _LabelCheckResult({
     required this.explicitLabels,
     required this.safeLabels,
   });
+  final List<String> explicitLabels;
+  final List<String> safeLabels;
 }

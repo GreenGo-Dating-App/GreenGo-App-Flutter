@@ -1,9 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Icebreaker Suggestions Widget
 ///
@@ -26,6 +27,13 @@ import '../../../../core/constants/app_dimensions.dart';
 /// )
 /// ```
 class IcebreakerSuggestions extends StatefulWidget {
+
+  const IcebreakerSuggestions({
+    required this.messageCount, required this.onIcebreakerSelected, super.key,
+    this.partnerCountry,
+    this.partnerLanguages = const [],
+    this.hideAfterMessages = 3,
+  });
   /// The partner's country for filtering relevant icebreakers
   final String? partnerCountry;
 
@@ -40,15 +48,6 @@ class IcebreakerSuggestions extends StatefulWidget {
 
   /// Maximum messages before the widget auto-hides (default: 3)
   final int hideAfterMessages;
-
-  const IcebreakerSuggestions({
-    super.key,
-    this.partnerCountry,
-    this.partnerLanguages = const [],
-    required this.messageCount,
-    required this.onIcebreakerSelected,
-    this.hideAfterMessages = 3,
-  });
 
   @override
   State<IcebreakerSuggestions> createState() => _IcebreakerSuggestionsState();
@@ -85,7 +84,7 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
 
   Future<void> _loadIcebreakers() async {
     try {
-      List<_Icebreaker> results = [];
+      var results = <_Icebreaker>[];
 
       // Try to load country-specific icebreakers first
       if (widget.partnerCountry != null &&
@@ -98,7 +97,7 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
             .get();
 
         results = countryQuery.docs
-            .map((doc) => _Icebreaker.fromFirestore(doc))
+            .map(_Icebreaker.fromFirestore)
             .toList();
       }
 
@@ -116,7 +115,7 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
         results.addAll(
           langQuery.docs
               .where((doc) => !existingIds.contains(doc.id))
-              .map((doc) => _Icebreaker.fromFirestore(doc)),
+              .map(_Icebreaker.fromFirestore),
         );
       }
 
@@ -133,7 +132,7 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
         results.addAll(
           generalQuery.docs
               .where((doc) => !existingIds.contains(doc.id))
-              .map((doc) => _Icebreaker.fromFirestore(doc)),
+              .map(_Icebreaker.fromFirestore),
         );
       }
 
@@ -337,13 +336,13 @@ class _IcebreakerSuggestionsState extends State<IcebreakerSuggestions>
 
 /// Individual icebreaker card widget
 class _IcebreakerCard extends StatelessWidget {
-  final _Icebreaker icebreaker;
-  final VoidCallback onTap;
 
   const _IcebreakerCard({
     required this.icebreaker,
     required this.onTap,
   });
+  final _Icebreaker icebreaker;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -391,12 +390,6 @@ class _IcebreakerCard extends StatelessWidget {
 
 /// Internal icebreaker data model
 class _Icebreaker {
-  final String id;
-  final String text;
-  final String? emoji;
-  final String? category;
-  final String? country;
-  final String? language;
 
   _Icebreaker({
     required this.id,
@@ -418,4 +411,10 @@ class _Icebreaker {
       language: data['language'] as String?,
     );
   }
+  final String id;
+  final String text;
+  final String? emoji;
+  final String? category;
+  final String? country;
+  final String? language;
 }

@@ -12,9 +12,9 @@ import '../datasources/coin_remote_datasource.dart';
 
 /// Coin Repository Implementation
 class CoinRepositoryImpl implements CoinRepository {
-  final CoinRemoteDataSource remoteDataSource;
 
   CoinRepositoryImpl({required this.remoteDataSource});
+  final CoinRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, CoinBalance>> getBalance(String userId) async {
@@ -30,7 +30,7 @@ class CoinRepositoryImpl implements CoinRepository {
   Stream<Either<Failure, CoinBalance>> balanceStream(String userId) {
     try {
       return remoteDataSource.balanceStream(userId).map(
-            (balance) => Right<Failure, CoinBalance>(balance),
+            Right<Failure, CoinBalance>.new,
           );
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
@@ -83,7 +83,7 @@ class CoinRepositoryImpl implements CoinRepository {
   }) async {
     try {
       // Calculate total coins including promotion bonus
-      int totalCoins = package.coinAmount;
+      var totalCoins = package.coinAmount;
       if (promotion != null && promotion.isCurrentlyActive) {
         totalCoins += promotion.calculateBonus(package.coinAmount, package.price);
       }
@@ -163,7 +163,7 @@ class CoinRepositoryImpl implements CoinRepository {
       return remoteDataSource
           .transactionStream(userId: userId, limit: limit)
           .map(
-            (transactions) => Right<Failure, List<CoinTransaction>>(transactions),
+            Right<Failure, List<CoinTransaction>>.new,
           );
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
@@ -184,7 +184,7 @@ class CoinRepositoryImpl implements CoinRepository {
       );
 
       if (!canClaim) {
-        return Left(ServerFailure('Reward cannot be claimed'));
+        return const Left(ServerFailure('Reward cannot be claimed'));
       }
 
       final transaction = await remoteDataSource.claimReward(
@@ -339,7 +339,7 @@ class CoinRepositoryImpl implements CoinRepository {
     try {
       // Validate amount
       if (!CoinGiftConstraints.isValidAmount(amount)) {
-        return Left(ServerFailure(
+        return const Left(ServerFailure(
           'Gift amount must be between ${CoinGiftConstraints.minAmount} and ${CoinGiftConstraints.maxAmount}',
         ));
       }
@@ -347,7 +347,7 @@ class CoinRepositoryImpl implements CoinRepository {
       // Check if sender has enough coins
       final balance = await remoteDataSource.getBalance(senderId);
       if (balance.availableCoins < amount) {
-        return Left(ServerFailure('Insufficient coins'));
+        return const Left(ServerFailure('Insufficient coins'));
       }
 
       final gift = await remoteDataSource.sendGift(

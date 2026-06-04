@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 /// Splash screen shown briefly after login before entering the main app.
 /// Displays only the GreenGo logo centered on a dark background.
 class PostLoginSplashScreen extends StatefulWidget {
-  final VoidCallback onComplete;
 
   const PostLoginSplashScreen({
-    super.key,
-    required this.onComplete,
+    required this.onComplete, super.key,
   });
+  final VoidCallback onComplete;
 
   @override
   State<PostLoginSplashScreen> createState() => _PostLoginSplashScreenState();

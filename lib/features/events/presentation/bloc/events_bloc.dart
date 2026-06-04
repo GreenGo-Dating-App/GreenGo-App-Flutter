@@ -10,14 +10,6 @@ import 'events_state.dart';
 /// Manages events loading, filtering, RSVP, and CRUD operations.
 /// Uses EventsRepository (Either<Failure, T>) for all data operations.
 class EventsBloc extends Bloc<EventsEvent, EventsState> {
-  final EventsRepository repository;
-
-  // Cache the full events list for client-side filtering
-  List<Event> _allEvents = [];
-  List<Event> _userEvents = [];
-  List<Event> _nearbyEvents = [];
-  Map<String, List<EventAttendee>> _attendeesMap = {};
-  EventCategory? _selectedCategory;
 
   EventsBloc({required this.repository}) : super(const EventsInitial()) {
     on<LoadEvents>(_onLoadEvents);
@@ -32,6 +24,14 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     on<FilterByCategory>(_onFilterByCategory);
     on<LoadNearbyEvents>(_onLoadNearbyEvents);
   }
+  final EventsRepository repository;
+
+  // Cache the full events list for client-side filtering
+  List<Event> _allEvents = [];
+  List<Event> _userEvents = [];
+  List<Event> _nearbyEvents = [];
+  Map<String, List<EventAttendee>> _attendeesMap = {};
+  EventCategory? _selectedCategory;
 
   Future<void> _onLoadEvents(
     LoadEvents event,

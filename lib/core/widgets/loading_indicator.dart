@@ -6,14 +6,14 @@ import '../../generated/app_localizations.dart';
 /// A loading indicator that shows a CircularProgressIndicator
 /// with a random localized message that changes every 3 seconds.
 class LoadingIndicator extends StatefulWidget {
-  final Color? color;
-  final double? strokeWidth;
 
   const LoadingIndicator({
     super.key,
     this.color,
     this.strokeWidth,
   });
+  final Color? color;
+  final double? strokeWidth;
 
   @override
   State<LoadingIndicator> createState() => _LoadingIndicatorState();

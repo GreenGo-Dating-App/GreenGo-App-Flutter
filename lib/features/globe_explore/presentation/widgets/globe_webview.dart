@@ -1,12 +1,19 @@
 import 'dart:convert';
+
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
 import '../../data/country_centroids.dart';
 import '../../domain/entities/globe_user.dart';
 
 class GlobeWebView extends StatefulWidget {
+
+  const GlobeWebView({
+    required this.data, required this.showMatched, required this.showDiscovery, required this.onPinTapped, required this.onCountryTapped, super.key,
+    this.flyToCountry,
+  });
   final GlobeData data;
   final bool showMatched;
   final bool showDiscovery;
@@ -14,16 +21,6 @@ class GlobeWebView extends StatefulWidget {
   final void Function(String userId, GlobePinType pinType) onPinTapped;
   final void Function(String countryName, double lat, double lng)
       onCountryTapped;
-
-  const GlobeWebView({
-    super.key,
-    required this.data,
-    required this.showMatched,
-    required this.showDiscovery,
-    this.flyToCountry,
-    required this.onPinTapped,
-    required this.onCountryTapped,
-  });
 
   @override
   State<GlobeWebView> createState() => _GlobeWebViewState();
@@ -131,7 +128,7 @@ class _GlobeWebViewState extends State<GlobeWebView> {
     final centroid = countryCentroids[country];
     if (centroid != null) {
       _controller.runJavaScript(
-        "flyToLocation(${centroid[0]}, ${centroid[1]})",
+        'flyToLocation(${centroid[0]}, ${centroid[1]})',
       );
     }
   }

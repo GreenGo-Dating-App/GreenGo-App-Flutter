@@ -8,6 +8,19 @@ enum CulturalExchangeStatus {
 }
 
 class CulturalExchangeState extends Equatable {
+
+  const CulturalExchangeState({
+    this.status = CulturalExchangeStatus.initial,
+    this.errorMessage,
+    this.activeSpotlight,
+    this.spotlightHistory = const [],
+    this.isSpotlightLoading = false,
+    this.culturalTips = const [],
+    this.isTipsLoading = false,
+    this.selectedEtiquette,
+    this.isEtiquetteLoading = false,
+    this.availableCountries = const [],
+  });
   final CulturalExchangeStatus status;
   final String? errorMessage;
 
@@ -26,19 +39,6 @@ class CulturalExchangeState extends Equatable {
 
   // Countries
   final List<String> availableCountries;
-
-  const CulturalExchangeState({
-    this.status = CulturalExchangeStatus.initial,
-    this.errorMessage,
-    this.activeSpotlight,
-    this.spotlightHistory = const [],
-    this.isSpotlightLoading = false,
-    this.culturalTips = const [],
-    this.isTipsLoading = false,
-    this.selectedEtiquette,
-    this.isEtiquetteLoading = false,
-    this.availableCountries = const [],
-  });
 
   CulturalExchangeState copyWith({
     CulturalExchangeStatus? status,

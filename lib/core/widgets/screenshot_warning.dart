@@ -4,14 +4,14 @@ import '../constants/app_colors.dart';
 /// Enhancement #19: Screenshot Warning Dialog
 /// Warns user that screenshot was detected
 class ScreenshotWarningDialog extends StatelessWidget {
-  final VoidCallback? onDismiss;
-  final String? otherUserName;
 
   const ScreenshotWarningDialog({
     super.key,
     this.onDismiss,
     this.otherUserName,
   });
+  final VoidCallback? onDismiss;
+  final String? otherUserName;
 
   @override
   Widget build(BuildContext context) {
@@ -90,14 +90,13 @@ class ScreenshotWarningDialog extends StatelessWidget {
 
 /// Screenshot notification banner
 class ScreenshotNotificationBanner extends StatelessWidget {
-  final String userName;
-  final VoidCallback? onDismiss;
 
   const ScreenshotNotificationBanner({
-    super.key,
-    required this.userName,
+    required this.userName, super.key,
     this.onDismiss,
   });
+  final String userName;
+  final VoidCallback? onDismiss;
 
   @override
   Widget build(BuildContext context) {

@@ -21,9 +21,9 @@ class VideoProfileLoading extends VideoProfileState {
 
 /// Upload in progress with a progress value (0.0 to 1.0).
 class VideoProfileUploading extends VideoProfileState {
-  final double progress;
 
   const VideoProfileUploading({required this.progress});
+  final double progress;
 
   @override
   List<Object?> get props => [progress];
@@ -31,16 +31,16 @@ class VideoProfileUploading extends VideoProfileState {
 
 /// Successfully loaded a video profile and/or discovery videos.
 class VideoProfileLoaded extends VideoProfileState {
-  /// The current user's video profile (null if none exists).
-  final VideoProfile? videoProfile;
-
-  /// List of video profiles for the discovery feed.
-  final List<VideoProfile> discoveryVideos;
 
   const VideoProfileLoaded({
     this.videoProfile,
     this.discoveryVideos = const [],
   });
+  /// The current user's video profile (null if none exists).
+  final VideoProfile? videoProfile;
+
+  /// List of video profiles for the discovery feed.
+  final List<VideoProfile> discoveryVideos;
 
   @override
   List<Object?> get props => [videoProfile, discoveryVideos];
@@ -59,9 +59,9 @@ class VideoProfileLoaded extends VideoProfileState {
 
 /// An error occurred during a video profile operation.
 class VideoProfileError extends VideoProfileState {
-  final String message;
 
   const VideoProfileError({required this.message});
+  final String message;
 
   @override
   List<Object?> get props => [message];

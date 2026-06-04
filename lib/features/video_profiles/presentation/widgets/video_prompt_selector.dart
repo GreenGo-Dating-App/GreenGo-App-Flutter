@@ -7,13 +7,12 @@ import '../../../../core/constants/app_dimensions.dart';
 /// A bottom sheet widget that presents multilingual video prompts
 /// for users to choose from when recording their video introduction.
 class VideoPromptSelector extends StatelessWidget {
-  /// Callback when a prompt is selected.
-  final void Function(String prompt) onPromptSelected;
 
   const VideoPromptSelector({
-    super.key,
-    required this.onPromptSelected,
+    required this.onPromptSelected, super.key,
   });
+  /// Callback when a prompt is selected.
+  final void Function(String prompt) onPromptSelected;
 
   /// Show the prompt selector as a modal bottom sheet.
   static Future<String?> show(BuildContext context) {
@@ -109,11 +108,11 @@ class VideoPromptSelector extends StatelessWidget {
           ),
 
           // Header
-          Padding(
-            padding: const EdgeInsets.all(AppDimensions.paddingL),
+          const Padding(
+            padding: EdgeInsets.all(AppDimensions.paddingL),
             child: Column(
               children: [
-                const Text(
+                Text(
                   'Choose a Prompt',
                   style: TextStyle(
                     color: AppColors.textPrimary,
@@ -121,8 +120,8 @@ class VideoPromptSelector extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 4),
-                const Text(
+                SizedBox(height: 4),
+                Text(
                   'Pick a topic for your video introduction',
                   style: TextStyle(
                     color: AppColors.textSecondary,
@@ -165,13 +164,13 @@ class VideoPromptSelector extends StatelessWidget {
 
 /// A prompt card widget displayed in the selector list.
 class _PromptCard extends StatelessWidget {
-  final VideoPrompt prompt;
-  final VoidCallback onTap;
 
   const _PromptCard({
     required this.prompt,
     required this.onTap,
   });
+  final VideoPrompt prompt;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -251,12 +250,6 @@ class _PromptCard extends StatelessWidget {
 
 /// Data class representing a video recording prompt.
 class VideoPrompt {
-  final String title;
-  final String description;
-  final IconData icon;
-
-  /// The template text for this prompt. Null means free-style (no prompt).
-  final String? template;
 
   const VideoPrompt({
     required this.title,
@@ -264,4 +257,10 @@ class VideoPrompt {
     required this.icon,
     this.template,
   });
+  final String title;
+  final String description;
+  final IconData icon;
+
+  /// The template text for this prompt. Null means free-style (no prompt).
+  final String? template;
 }

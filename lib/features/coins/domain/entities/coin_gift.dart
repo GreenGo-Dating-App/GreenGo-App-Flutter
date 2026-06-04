@@ -3,6 +3,16 @@ import 'package:equatable/equatable.dart';
 /// Coin Gift Entity
 /// Point 162: Coin gifting system
 class CoinGift extends Equatable {
+
+  const CoinGift({
+    required this.giftId,
+    required this.senderId,
+    required this.receiverId,
+    required this.amount,
+    required this.status, required this.sentAt, this.message,
+    this.receivedAt,
+    this.expiresAt,
+  });
   final String giftId;
   final String senderId;
   final String receiverId;
@@ -12,18 +22,6 @@ class CoinGift extends Equatable {
   final DateTime sentAt;
   final DateTime? receivedAt;
   final DateTime? expiresAt;
-
-  const CoinGift({
-    required this.giftId,
-    required this.senderId,
-    required this.receiverId,
-    required this.amount,
-    this.message,
-    required this.status,
-    required this.sentAt,
-    this.receivedAt,
-    this.expiresAt,
-  });
 
   /// Check if gift has expired
   bool get isExpired {

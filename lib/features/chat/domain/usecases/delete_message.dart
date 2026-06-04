@@ -4,9 +4,9 @@ import '../repositories/chat_repository.dart';
 
 /// Delete Message Use Case
 class DeleteMessage {
-  final ChatRepository repository;
 
   DeleteMessage(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(DeleteMessageParams params) {
     return repository.deleteMessage(
@@ -18,20 +18,20 @@ class DeleteMessage {
 
 /// Parameters for DeleteMessage use case
 class DeleteMessageParams {
-  final String messageId;
-  final String conversationId;
 
   DeleteMessageParams({
     required this.messageId,
     required this.conversationId,
   });
+  final String messageId;
+  final String conversationId;
 }
 
 /// Delete Message For Me Use Case
 class DeleteMessageForMe {
-  final ChatRepository repository;
 
   DeleteMessageForMe(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(DeleteMessageForMeParams params) {
     return repository.deleteMessageForMe(
@@ -44,22 +44,22 @@ class DeleteMessageForMe {
 
 /// Parameters for DeleteMessageForMe use case
 class DeleteMessageForMeParams {
-  final String messageId;
-  final String conversationId;
-  final String userId;
 
   DeleteMessageForMeParams({
     required this.messageId,
     required this.conversationId,
     required this.userId,
   });
+  final String messageId;
+  final String conversationId;
+  final String userId;
 }
 
 /// Delete Message For Both Use Case
 class DeleteMessageForBoth {
-  final ChatRepository repository;
 
   DeleteMessageForBoth(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(DeleteMessageForBothParams params) {
     return repository.deleteMessageForBoth(
@@ -72,13 +72,13 @@ class DeleteMessageForBoth {
 
 /// Parameters for DeleteMessageForBoth use case
 class DeleteMessageForBothParams {
-  final String messageId;
-  final String conversationId;
-  final String userId;
 
   DeleteMessageForBothParams({
     required this.messageId,
     required this.conversationId,
     required this.userId,
   });
+  final String messageId;
+  final String conversationId;
+  final String userId;
 }

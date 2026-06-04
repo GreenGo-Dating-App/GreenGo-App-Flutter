@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
+
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Traveler Overlay Widget
 ///
 /// Overlay for swipe/grid cards when the user is an active traveler.
 /// Shows origin city -> current traveling city, flight icon, and "Traveler" badge.
 class TravelerOverlay extends StatelessWidget {
+
+  const TravelerOverlay({
+    required this.profile, super.key,
+    this.compact = false,
+  });
   /// The traveler's profile
   final Profile profile;
 
   /// Whether to use compact mode (for grid cards)
   final bool compact;
-
-  const TravelerOverlay({
-    super.key,
-    required this.profile,
-    this.compact = false,
-  });
 
   @override
   Widget build(BuildContext context) {

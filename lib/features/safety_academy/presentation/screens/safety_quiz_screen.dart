@@ -10,18 +10,14 @@ import '../../domain/entities/safety_quiz.dart';
 /// immediate correct/incorrect feedback with explanations,
 /// and a summary screen showing pass/fail with retry option.
 class SafetyQuizScreen extends StatefulWidget {
+
+  const SafetyQuizScreen({
+    required this.userId, required this.lesson, required this.quiz, required this.onComplete, super.key,
+  });
   final String userId;
   final SafetyLesson lesson;
   final SafetyQuiz quiz;
   final void Function(int score) onComplete;
-
-  const SafetyQuizScreen({
-    super.key,
-    required this.userId,
-    required this.lesson,
-    required this.quiz,
-    required this.onComplete,
-  });
 
   @override
   State<SafetyQuizScreen> createState() => _SafetyQuizScreenState();
@@ -172,9 +168,9 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
     final isSelected = _selectedOptionIndex == index;
     final isCorrect = index == _currentQuestion.correctIndex;
 
-    Color borderColor = AppColors.divider;
+    var borderColor = AppColors.divider;
     Color? backgroundColor;
-    Color textColor = AppColors.textPrimary;
+    var textColor = AppColors.textPrimary;
 
     if (_hasAnswered) {
       if (isCorrect) {

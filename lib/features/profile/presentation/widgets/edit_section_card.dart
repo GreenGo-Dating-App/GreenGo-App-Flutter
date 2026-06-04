@@ -3,18 +3,14 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
 class EditSectionCard extends StatelessWidget {
+
+  const EditSectionCard({
+    required this.title, required this.subtitle, required this.icon, required this.onTap, super.key,
+  });
   final String title;
   final String subtitle;
   final IconData icon;
   final VoidCallback onTap;
-
-  const EditSectionCard({
-    super.key,
-    required this.title,
-    required this.subtitle,
-    required this.icon,
-    required this.onTap,
-  });
 
   @override
   Widget build(BuildContext context) {

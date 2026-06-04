@@ -12,15 +12,15 @@ enum LessonContentType {
 
 /// A single section of lesson content
 class LessonContent extends Equatable {
-  final LessonContentType type;
-  final String content;
-  final List<String> items;
 
   const LessonContent({
     required this.type,
     required this.content,
     this.items = const [],
   });
+  final LessonContentType type;
+  final String content;
+  final List<String> items;
 
   @override
   List<Object?> get props => [type, content, items];
@@ -31,6 +31,14 @@ class LessonContent extends Equatable {
 /// Represents a single lesson within a safety module.
 /// Contains structured content sections and an optional quiz.
 class SafetyLesson extends Equatable {
+
+  const SafetyLesson({
+    required this.id,
+    required this.moduleId,
+    required this.title,
+    required this.contentSections,
+    required this.xpReward, required this.order, this.quiz,
+  });
   final String id;
   final String moduleId;
   final String title;
@@ -38,16 +46,6 @@ class SafetyLesson extends Equatable {
   final SafetyQuiz? quiz;
   final int xpReward;
   final int order;
-
-  const SafetyLesson({
-    required this.id,
-    required this.moduleId,
-    required this.title,
-    required this.contentSections,
-    this.quiz,
-    required this.xpReward,
-    required this.order,
-  });
 
   @override
   List<Object?> get props => [

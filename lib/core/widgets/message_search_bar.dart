@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_dimensions.dart';
 
 /// Enhancement #18: Message Search Bar
 /// Search within conversation messages
 class MessageSearchBar extends StatefulWidget {
-  final Function(String) onSearch;
-  final VoidCallback? onClose;
-  final int? resultCount;
-  final int? currentResultIndex;
-  final VoidCallback? onPrevious;
-  final VoidCallback? onNext;
 
   const MessageSearchBar({
-    super.key,
-    required this.onSearch,
+    required this.onSearch, super.key,
     this.onClose,
     this.resultCount,
     this.currentResultIndex,
     this.onPrevious,
     this.onNext,
   });
+  final Function(String) onSearch;
+  final VoidCallback? onClose;
+  final int? resultCount;
+  final int? currentResultIndex;
+  final VoidCallback? onPrevious;
+  final VoidCallback? onNext;
 
   @override
   State<MessageSearchBar> createState() => _MessageSearchBarState();

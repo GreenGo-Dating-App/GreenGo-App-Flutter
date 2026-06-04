@@ -1,7 +1,6 @@
-/**
- * Get Seasonal Event Use Case
- * Point 200: Get active seasonal events with themed UI
- */
+/// Get Seasonal Event Use Case
+/// Point 200: Get active seasonal events with themed UI
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/daily_challenge.dart';
 import '../repositories/gamification_repository.dart';
 
 class GetSeasonalEvent implements UseCase<SeasonalEventData, String> {
-  final GamificationRepository repository;
 
   GetSeasonalEvent(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, SeasonalEventData>> call(String userId) async {
@@ -68,7 +67,7 @@ class GetSeasonalEvent implements UseCase<SeasonalEventData, String> {
 
     // Map progress to challenges
     final progressMap = {
-      for (var p in allProgress) p.challengeId: p,
+      for (final p in allProgress) p.challengeId: p,
     };
 
     final challengesWithProgress = challenges.map((challenge) {
@@ -109,13 +108,13 @@ class GetSeasonalEvent implements UseCase<SeasonalEventData, String> {
 }
 
 class SeasonalChallengeWithProgress {
-  final DailyChallenge challenge;
-  final UserChallengeProgress? progress;
 
   SeasonalChallengeWithProgress({
     required this.challenge,
     this.progress,
   });
+  final DailyChallenge challenge;
+  final UserChallengeProgress? progress;
 
   bool get isCompleted => progress?.isCompleted ?? false;
   bool get canClaim => progress?.canClaim ?? false;
@@ -124,13 +123,6 @@ class SeasonalChallengeWithProgress {
 }
 
 class SeasonalEventData {
-  final bool hasActiveEvent;
-  final SeasonalEvent? event;
-  final List<SeasonalChallengeWithProgress> challenges;
-  final Map<String, dynamic>? themeConfig;
-  final int daysRemaining;
-  final int totalChallenges;
-  final int completedChallenges;
 
   SeasonalEventData({
     required this.hasActiveEvent,
@@ -141,6 +133,13 @@ class SeasonalEventData {
     this.totalChallenges = 0,
     this.completedChallenges = 0,
   });
+  final bool hasActiveEvent;
+  final SeasonalEvent? event;
+  final List<SeasonalChallengeWithProgress> challenges;
+  final Map<String, dynamic>? themeConfig;
+  final int daysRemaining;
+  final int totalChallenges;
+  final int completedChallenges;
 
   /// Get theme colors
   int? get primaryColor => themeConfig?['primaryColor'] as int?;

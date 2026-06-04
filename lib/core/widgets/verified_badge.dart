@@ -4,14 +4,14 @@ import '../constants/app_colors.dart';
 /// Enhancement #2: Verified Badge
 /// Shows a verification checkmark for verified users
 class VerifiedBadge extends StatelessWidget {
-  final double size;
-  final bool isPremium;
 
   const VerifiedBadge({
     super.key,
     this.size = 16,
     this.isPremium = false,
   });
+  final double size;
+  final bool isPremium;
 
   @override
   Widget build(BuildContext context) {
@@ -33,12 +33,12 @@ class VerifiedBadge extends StatelessWidget {
 
 /// Premium/Gold member badge
 class PremiumBadge extends StatelessWidget {
-  final double size;
 
   const PremiumBadge({
     super.key,
     this.size = 20,
   });
+  final double size;
 
   @override
   Widget build(BuildContext context) {

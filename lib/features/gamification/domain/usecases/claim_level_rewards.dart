@@ -1,7 +1,6 @@
-/**
- * Claim Level Rewards Use Case
- * Point 190: Claim rewards when reaching new levels
- */
+/// Claim Level Rewards Use Case
+/// Point 190: Claim rewards when reaching new levels
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/user_level.dart';
 import '../repositories/gamification_repository.dart';
 
 class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRewardsParams> {
-  final GamificationRepository repository;
 
   ClaimLevelRewards(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, LevelRewardsClaimResult>> call(
@@ -69,13 +68,13 @@ class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRe
     );
 
     if (!claimed) {
-      return Left(CacheFailure('Failed to claim rewards'));
+      return const Left(CacheFailure('Failed to claim rewards'));
     }
 
     // Categorize rewards - count coin rewards
     final coinRewards = rewards.where((r) => r.type == 'coins').toList();
     // Parse coin amounts from the name (e.g., "50 Bonus Coins" -> 50)
-    int coins = 0;
+    var coins = 0;
     for (final reward in coinRewards) {
       final match = RegExp(r'(\d+)').firstMatch(reward.name);
       if (match != null) {
@@ -102,21 +101,16 @@ class ClaimLevelRewards implements UseCase<LevelRewardsClaimResult, ClaimLevelRe
 }
 
 class ClaimLevelRewardsParams {
-  final String userId;
-  final int level;
 
   ClaimLevelRewardsParams({
     required this.userId,
     required this.level,
   });
+  final String userId;
+  final int level;
 }
 
 class LevelRewardsClaimResult {
-  final int level;
-  final List<LevelReward> rewards;
-  final int totalCoins;
-  final List<LevelReward> itemsUnlocked;
-  final List<LevelReward> featuresUnlocked;
 
   LevelRewardsClaimResult({
     required this.level,
@@ -125,4 +119,9 @@ class LevelRewardsClaimResult {
     required this.itemsUnlocked,
     required this.featuresUnlocked,
   });
+  final int level;
+  final List<LevelReward> rewards;
+  final int totalCoins;
+  final List<LevelReward> itemsUnlocked;
+  final List<LevelReward> featuresUnlocked;
 }

@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/admin_role.dart';
 
 /// Admin Dashboard Screen
 /// Main hub for all admin management features
 class AdminDashboardScreen extends StatelessWidget {
-  final String adminId;
-  final AdminUser adminUser;
 
   const AdminDashboardScreen({
-    super.key,
-    required this.adminId,
-    required this.adminUser,
+    required this.adminId, required this.adminUser, super.key,
   });
+  final String adminId;
+  final AdminUser adminUser;
 
   @override
   Widget build(BuildContext context) {
@@ -560,11 +559,6 @@ class AdminDashboardScreen extends StatelessWidget {
 }
 
 class _StatCard extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String title;
-  final String value;
-  final String subtitle;
 
   const _StatCard({
     required this.icon,
@@ -573,6 +567,11 @@ class _StatCard extends StatelessWidget {
     required this.value,
     required this.subtitle,
   });
+  final IconData icon;
+  final Color iconColor;
+  final String title;
+  final String value;
+  final String subtitle;
 
   @override
   Widget build(BuildContext context) {
@@ -610,11 +609,6 @@ class _StatCard extends StatelessWidget {
 }
 
 class _AdminMenuItem extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String title;
-  final String subtitle;
-  final VoidCallback onTap;
 
   const _AdminMenuItem({
     required this.icon,
@@ -623,6 +617,11 @@ class _AdminMenuItem extends StatelessWidget {
     required this.subtitle,
     required this.onTap,
   });
+  final IconData icon;
+  final Color iconColor;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {

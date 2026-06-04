@@ -3,19 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Coin Promotion Entity
 /// Point 165: Promotional campaigns with bonus percentages
 class CoinPromotion extends Equatable {
-  final String promotionId;
-  final String name;
-  final String description;
-  final PromotionType type;
-  final int? bonusPercentage;
-  final int? bonusCoins;
-  final DateTime? startDate;
-  final DateTime? endDate;
-  final bool isActive;
-  final List<String>? applicablePackageIds;
-  final int? minPurchaseAmount;
-  final String? bannerImageUrl;
-  final String? promoCode;
 
   const CoinPromotion({
     required this.promotionId,
@@ -32,6 +19,19 @@ class CoinPromotion extends Equatable {
     this.bannerImageUrl,
     this.promoCode,
   });
+  final String promotionId;
+  final String name;
+  final String description;
+  final PromotionType type;
+  final int? bonusPercentage;
+  final int? bonusCoins;
+  final DateTime? startDate;
+  final DateTime? endDate;
+  final bool isActive;
+  final List<String>? applicablePackageIds;
+  final int? minPurchaseAmount;
+  final String? bannerImageUrl;
+  final String? promoCode;
 
   /// Check if promotion is currently active
   bool get isCurrentlyActive {

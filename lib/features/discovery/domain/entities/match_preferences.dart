@@ -1,32 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-class MatchPreferences extends Equatable {
-  final String userId;
-  final int minAge;
-  final int maxAge;
-  final int? maxDistanceKm;
-  final String interestedInGender; // 'men', 'women', 'everyone'
-  final bool onlyVerified;
-  final bool onlyRecentlyActive;
-  final List<String> dealBreakers;
-  final List<String> preferredOrientations; // empty = show all
-  final List<String> preferredCountries; // empty = show all
-  final bool sortByDistance; // true = sort closest first
-  final bool onlyOnlineNow; // true = show only online users
-  final String? languageFilter; // filter candidates by spoken language
-  final List<String> preferredInterests; // filter by shared interests (empty = show all)
-  final bool travelersOnly; // true = only show active travelers
-  final bool localGuidesOnly; // true = only show local guides
-  final bool showSupportUser; // true = show GreenGo Support user in discovery grid
-  final bool randomMode; // true = show random worldwide people sorted by distance
-  final bool showMyNetwork; // true = show only users in my network (matches + accepted priority connects)
+class MatchPreferences extends Equatable { // true = show only users in my network (matches + accepted priority connects)
 
   const MatchPreferences({
     required this.userId,
     required this.minAge,
     required this.maxAge,
-    this.maxDistanceKm,
-    required this.interestedInGender,
+    required this.interestedInGender, this.maxDistanceKm,
     this.onlyVerified = false,
     this.onlyRecentlyActive = false,
     this.dealBreakers = const [],
@@ -65,6 +45,62 @@ class MatchPreferences extends Equatable {
       showMyNetwork: false,
     );
   }
+
+  /// Create from Firestore Map
+  factory MatchPreferences.fromMap(Map<String, dynamic> map) {
+    return MatchPreferences(
+      userId: map['userId'] as String? ?? '',
+      minAge: map['minAge'] as int? ?? 18,
+      maxAge: map['maxAge'] as int? ?? 99,
+      maxDistanceKm: map['maxDistanceKm'] as int?,
+      interestedInGender: map['interestedInGender'] as String? ?? 'everyone',
+      onlyVerified: map['onlyVerified'] as bool? ?? false,
+      onlyRecentlyActive: map['onlyRecentlyActive'] as bool? ?? false,
+      dealBreakers: (map['dealBreakers'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      preferredOrientations: (map['preferredOrientations'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      preferredCountries: (map['preferredCountries'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      sortByDistance: map['sortByDistance'] as bool? ?? false,
+      onlyOnlineNow: map['onlyOnlineNow'] as bool? ?? false,
+      languageFilter: map['languageFilter'] as String?,
+      preferredInterests: (map['preferredInterests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      travelersOnly: map['travelersOnly'] as bool? ?? false,
+      localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
+      showSupportUser: map['showSupportUser'] as bool? ?? false,
+      randomMode: map['randomMode'] as bool? ?? false,
+      showMyNetwork: map['showMyNetwork'] as bool? ?? false,
+    );
+  }
+  final String userId;
+  final int minAge;
+  final int maxAge;
+  final int? maxDistanceKm;
+  final String interestedInGender; // 'men', 'women', 'everyone'
+  final bool onlyVerified;
+  final bool onlyRecentlyActive;
+  final List<String> dealBreakers;
+  final List<String> preferredOrientations; // empty = show all
+  final List<String> preferredCountries; // empty = show all
+  final bool sortByDistance; // true = sort closest first
+  final bool onlyOnlineNow; // true = show only online users
+  final String? languageFilter; // filter candidates by spoken language
+  final List<String> preferredInterests; // filter by shared interests (empty = show all)
+  final bool travelersOnly; // true = only show active travelers
+  final bool localGuidesOnly; // true = only show local guides
+  final bool showSupportUser; // true = show GreenGo Support user in discovery grid
+  final bool randomMode; // true = show random worldwide people sorted by distance
+  final bool showMyNetwork;
 
   MatchPreferences copyWith({
     String? userId,
@@ -135,43 +171,6 @@ class MatchPreferences extends Equatable {
       'randomMode': randomMode,
       'showMyNetwork': showMyNetwork,
     };
-  }
-
-  /// Create from Firestore Map
-  factory MatchPreferences.fromMap(Map<String, dynamic> map) {
-    return MatchPreferences(
-      userId: map['userId'] as String? ?? '',
-      minAge: map['minAge'] as int? ?? 18,
-      maxAge: map['maxAge'] as int? ?? 99,
-      maxDistanceKm: map['maxDistanceKm'] as int?,
-      interestedInGender: map['interestedInGender'] as String? ?? 'everyone',
-      onlyVerified: map['onlyVerified'] as bool? ?? false,
-      onlyRecentlyActive: map['onlyRecentlyActive'] as bool? ?? false,
-      dealBreakers: (map['dealBreakers'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
-      preferredOrientations: (map['preferredOrientations'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
-      preferredCountries: (map['preferredCountries'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
-      sortByDistance: map['sortByDistance'] as bool? ?? false,
-      onlyOnlineNow: map['onlyOnlineNow'] as bool? ?? false,
-      languageFilter: map['languageFilter'] as String?,
-      preferredInterests: (map['preferredInterests'] as List<dynamic>?)
-              ?.map((e) => e as String)
-              .toList() ??
-          const [],
-      travelersOnly: map['travelersOnly'] as bool? ?? false,
-      localGuidesOnly: map['localGuidesOnly'] as bool? ?? false,
-      showSupportUser: map['showSupportUser'] as bool? ?? false,
-      randomMode: map['randomMode'] as bool? ?? false,
-      showMyNetwork: map['showMyNetwork'] as bool? ?? false,
-    );
   }
 
   @override

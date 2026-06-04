@@ -13,10 +13,6 @@ class GlobeInitial extends GlobeState {}
 class GlobeLoading extends GlobeState {}
 
 class GlobeLoaded extends GlobeState {
-  final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
-  final String? flyToCountry;
 
   const GlobeLoaded({
     required this.data,
@@ -24,25 +20,25 @@ class GlobeLoaded extends GlobeState {
     this.showDiscovery = true,
     this.flyToCountry,
   });
+  final GlobeData data;
+  final bool showMatched;
+  final bool showDiscovery;
+  final String? flyToCountry;
 
   @override
   List<Object?> get props => [data, showMatched, showDiscovery, flyToCountry];
 }
 
 class GlobeError extends GlobeState {
-  final String message;
 
   const GlobeError({required this.message});
+  final String message;
 
   @override
   List<Object?> get props => [message];
 }
 
 class GlobePinSelected extends GlobeState {
-  final GlobeUser selectedUser;
-  final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
 
   const GlobePinSelected({
     required this.selectedUser,
@@ -50,17 +46,16 @@ class GlobePinSelected extends GlobeState {
     required this.showMatched,
     required this.showDiscovery,
   });
+  final GlobeUser selectedUser;
+  final GlobeData data;
+  final bool showMatched;
+  final bool showDiscovery;
 
   @override
   List<Object?> get props => [selectedUser, data, showMatched, showDiscovery];
 }
 
 class GlobeCountrySelected extends GlobeState {
-  final String countryName;
-  final List<GlobeUser> matchesInCountry;
-  final GlobeData data;
-  final bool showMatched;
-  final bool showDiscovery;
 
   const GlobeCountrySelected({
     required this.countryName,
@@ -69,6 +64,11 @@ class GlobeCountrySelected extends GlobeState {
     required this.showMatched,
     required this.showDiscovery,
   });
+  final String countryName;
+  final List<GlobeUser> matchesInCountry;
+  final GlobeData data;
+  final bool showMatched;
+  final bool showDiscovery;
 
   @override
   List<Object?> get props =>

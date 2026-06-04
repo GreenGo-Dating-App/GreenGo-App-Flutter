@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../domain/entities/tier_config.dart';
+
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/tier_config.dart';
 
 /// Tier Config Model for Firestore serialization
 class TierConfigModel extends TierConfig {
@@ -8,9 +9,7 @@ class TierConfigModel extends TierConfig {
     required super.configId,
     required super.tier,
     required super.rules,
-    super.updatedBy,
-    required super.updatedAt,
-    required super.createdAt,
+    required super.updatedAt, required super.createdAt, super.updatedBy,
     super.isActive,
   });
 

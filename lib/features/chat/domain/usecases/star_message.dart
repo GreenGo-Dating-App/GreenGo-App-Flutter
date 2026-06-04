@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Star Message Use Case
 class StarMessage {
-  final ChatRepository repository;
 
   StarMessage(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(StarMessageParams params) {
     return repository.starMessage(
@@ -21,10 +21,6 @@ class StarMessage {
 
 /// Parameters for StarMessage use case
 class StarMessageParams {
-  final String messageId;
-  final String conversationId;
-  final String userId;
-  final bool isStarred;
 
   StarMessageParams({
     required this.messageId,
@@ -32,13 +28,17 @@ class StarMessageParams {
     required this.userId,
     required this.isStarred,
   });
+  final String messageId;
+  final String conversationId;
+  final String userId;
+  final bool isStarred;
 }
 
 /// Get Starred Messages Use Case
 class GetStarredMessages {
-  final ChatRepository repository;
 
   GetStarredMessages(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, List<Message>>> call(GetStarredMessagesParams params) {
     return repository.getStarredMessages(
@@ -50,11 +50,11 @@ class GetStarredMessages {
 
 /// Parameters for GetStarredMessages use case
 class GetStarredMessagesParams {
-  final String userId;
-  final int? limit;
 
   GetStarredMessagesParams({
     required this.userId,
     this.limit,
   });
+  final String userId;
+  final int? limit;
 }

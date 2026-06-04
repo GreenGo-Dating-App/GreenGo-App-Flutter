@@ -1,24 +1,24 @@
 import 'dart:async';
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import '../constants/app_colors.dart';
 import 'package:intl/intl.dart';
+
+import '../constants/app_colors.dart';
 import '../services/access_control_service.dart';
 import '../widgets/animated_luxury_logo.dart';
 
 /// A blur overlay widget that shows a countdown timer
 /// Displayed on top of app content when user is approved but waiting for access date
 class CountdownBlurOverlay extends StatefulWidget {
+
+  const CountdownBlurOverlay({
+    required this.child, required this.accessData, super.key,
+    this.onLogout,
+  });
   final Widget child;
   final UserAccessData accessData;
   final VoidCallback? onLogout;
-
-  const CountdownBlurOverlay({
-    super.key,
-    required this.child,
-    required this.accessData,
-    this.onLogout,
-  });
 
   @override
   State<CountdownBlurOverlay> createState() => _CountdownBlurOverlayState();

@@ -3,6 +3,15 @@ import 'package:equatable/equatable.dart';
 /// Blind Date Profile Entity
 /// Match on personality first, reveal photos after threshold
 class BlindDateProfile extends Equatable {
+
+  const BlindDateProfile({
+    required this.id,
+    required this.odldid,
+    required this.createdAt, this.isActive = true,
+    this.photosRevealed = false,
+    this.messageCount = 0,
+    this.revealedAt,
+  });
   final String id;
   final String odldid;
   final bool isActive;
@@ -10,16 +19,6 @@ class BlindDateProfile extends Equatable {
   final int messageCount;
   final DateTime createdAt;
   final DateTime? revealedAt;
-
-  const BlindDateProfile({
-    required this.id,
-    required this.odldid,
-    this.isActive = true,
-    this.photosRevealed = false,
-    this.messageCount = 0,
-    required this.createdAt,
-    this.revealedAt,
-  });
 
   @override
   List<Object?> get props => [
@@ -46,6 +45,18 @@ class BlindDateProfile extends Equatable {
 
 /// Blind Match - a match between two blind profiles
 class BlindMatch extends Equatable {
+
+  const BlindMatch({
+    required this.id,
+    required this.profile1Id,
+    required this.profile2Id,
+    required this.user1Id,
+    required this.user2Id,
+    required this.matchedAt, this.messageCount = 0,
+    this.isRevealed = false,
+    this.revealedAt,
+    this.conversationId,
+  });
   final String id;
   final String profile1Id;
   final String profile2Id;
@@ -56,19 +67,6 @@ class BlindMatch extends Equatable {
   final DateTime matchedAt;
   final DateTime? revealedAt;
   final String? conversationId;
-
-  const BlindMatch({
-    required this.id,
-    required this.profile1Id,
-    required this.profile2Id,
-    required this.user1Id,
-    required this.user2Id,
-    this.messageCount = 0,
-    this.isRevealed = false,
-    required this.matchedAt,
-    this.revealedAt,
-    this.conversationId,
-  });
 
   @override
   List<Object?> get props => [
@@ -118,19 +116,6 @@ class BlindDateConfig {
 
 /// Blind Profile View Model (for UI display)
 class BlindProfileView extends Equatable {
-  final String odldid;
-  final String displayName;
-  final int age;
-  final String? bio;
-  final List<String> interests;
-  final String? occupation;
-  final String? education;
-  final double? distance;
-  final bool isVerified;
-
-  // Photos are only shown after reveal
-  final List<String>? photos;
-  final bool isRevealed;
 
   const BlindProfileView({
     required this.odldid,
@@ -145,6 +130,19 @@ class BlindProfileView extends Equatable {
     this.photos,
     this.isRevealed = false,
   });
+  final String odldid;
+  final String displayName;
+  final int age;
+  final String? bio;
+  final List<String> interests;
+  final String? occupation;
+  final String? education;
+  final double? distance;
+  final bool isVerified;
+
+  // Photos are only shown after reveal
+  final List<String>? photos;
+  final bool isRevealed;
 
   @override
   List<Object?> get props => [

@@ -1,5 +1,6 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../domain/entities/scheduled_date.dart';
 import '../../domain/usecases/date_scheduler_usecases.dart';
 
@@ -12,33 +13,22 @@ abstract class DateSchedulerEvent extends Equatable {
 }
 
 class LoadUserDates extends DateSchedulerEvent {
-  final String userId;
   const LoadUserDates(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class LoadUpcomingDates extends DateSchedulerEvent {
-  final String userId;
   const LoadUpcomingDates(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class CreateDateEvent extends DateSchedulerEvent {
-  final String matchId;
-  final String creatorId;
-  final String partnerId;
-  final String title;
-  final DateTime scheduledAt;
-  final String? venueName;
-  final String? venueAddress;
-  final double? venueLat;
-  final double? venueLng;
-  final String? venueId;
-  final String? notes;
 
   const CreateDateEvent({
     required this.matchId,
@@ -53,6 +43,17 @@ class CreateDateEvent extends DateSchedulerEvent {
     this.venueId,
     this.notes,
   });
+  final String matchId;
+  final String creatorId;
+  final String partnerId;
+  final String title;
+  final DateTime scheduledAt;
+  final String? venueName;
+  final String? venueAddress;
+  final double? venueLat;
+  final double? venueLng;
+  final String? venueId;
+  final String? notes;
 
   @override
   List<Object?> get props => [
@@ -71,46 +72,42 @@ class CreateDateEvent extends DateSchedulerEvent {
 }
 
 class ConfirmDateEvent extends DateSchedulerEvent {
-  final String dateId;
   const ConfirmDateEvent(this.dateId);
+  final String dateId;
 
   @override
   List<Object?> get props => [dateId];
 }
 
 class CancelDateEvent extends DateSchedulerEvent {
-  final String dateId;
-  final String userId;
-  final String? reason;
 
   const CancelDateEvent({
     required this.dateId,
     required this.userId,
     this.reason,
   });
+  final String dateId;
+  final String userId;
+  final String? reason;
 
   @override
   List<Object?> get props => [dateId, userId, reason];
 }
 
 class RescheduleDateEvent extends DateSchedulerEvent {
-  final String dateId;
-  final DateTime newScheduledAt;
 
   const RescheduleDateEvent({
     required this.dateId,
     required this.newScheduledAt,
   });
+  final String dateId;
+  final DateTime newScheduledAt;
 
   @override
   List<Object?> get props => [dateId, newScheduledAt];
 }
 
 class LoadVenueSuggestions extends DateSchedulerEvent {
-  final double lat;
-  final double lng;
-  final VenueCategory? category;
-  final double radiusKm;
 
   const LoadVenueSuggestions({
     required this.lat,
@@ -118,14 +115,18 @@ class LoadVenueSuggestions extends DateSchedulerEvent {
     this.category,
     this.radiusKm = 5,
   });
+  final double lat;
+  final double lng;
+  final VenueCategory? category;
+  final double radiusKm;
 
   @override
   List<Object?> get props => [lat, lng, category, radiusKm];
 }
 
 class SelectVenue extends DateSchedulerEvent {
-  final VenueSuggestion venue;
   const SelectVenue(this.venue);
+  final VenueSuggestion venue;
 
   @override
   List<Object?> get props => [venue];
@@ -148,18 +149,14 @@ class DateSchedulerLoading extends DateSchedulerState {
 }
 
 class DateSchedulerError extends DateSchedulerState {
-  final String message;
   const DateSchedulerError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
 }
 
 class UserDatesLoaded extends DateSchedulerState {
-  final List<ScheduledDate> dates;
-  final List<ScheduledDate> upcoming;
-  final List<ScheduledDate> pending;
-  final List<ScheduledDate> past;
 
   UserDatesLoaded({required this.dates})
       : upcoming = dates
@@ -173,51 +170,55 @@ class UserDatesLoaded extends DateSchedulerState {
             .where((d) => d.isPast && d.status != DateStatus.pending)
             .toList()
           ..sort((a, b) => b.scheduledAt.compareTo(a.scheduledAt));
+  final List<ScheduledDate> dates;
+  final List<ScheduledDate> upcoming;
+  final List<ScheduledDate> pending;
+  final List<ScheduledDate> past;
 
   @override
   List<Object?> get props => [dates, upcoming, pending, past];
 }
 
 class DateCreated extends DateSchedulerState {
-  final ScheduledDate date;
   const DateCreated(this.date);
+  final ScheduledDate date;
 
   @override
   List<Object?> get props => [date];
 }
 
 class DateConfirmed extends DateSchedulerState {
-  final ScheduledDate date;
   const DateConfirmed(this.date);
+  final ScheduledDate date;
 
   @override
   List<Object?> get props => [date];
 }
 
 class DateCancelled extends DateSchedulerState {
-  final ScheduledDate date;
   const DateCancelled(this.date);
+  final ScheduledDate date;
 
   @override
   List<Object?> get props => [date];
 }
 
 class DateRescheduled extends DateSchedulerState {
-  final ScheduledDate date;
   const DateRescheduled(this.date);
+  final ScheduledDate date;
 
   @override
   List<Object?> get props => [date];
 }
 
 class VenueSuggestionsLoaded extends DateSchedulerState {
-  final List<VenueSuggestion> venues;
-  final VenueSuggestion? selectedVenue;
 
   const VenueSuggestionsLoaded({
     required this.venues,
     this.selectedVenue,
   });
+  final List<VenueSuggestion> venues;
+  final VenueSuggestion? selectedVenue;
 
   @override
   List<Object?> get props => [venues, selectedVenue];
@@ -225,17 +226,6 @@ class VenueSuggestionsLoaded extends DateSchedulerState {
 
 // BLoC
 class DateSchedulerBloc extends Bloc<DateSchedulerEvent, DateSchedulerState> {
-  final CreateScheduledDate createScheduledDate;
-  final GetUserDates getUserDates;
-  final GetUpcomingDates getUpcomingDates;
-  final ConfirmDate confirmDate;
-  final CancelDate cancelDate;
-  final RescheduleDate rescheduleDate;
-  final GetVenueSuggestions getVenueSuggestions;
-
-  List<ScheduledDate> _datesCache = [];
-  List<VenueSuggestion> _venuesCache = [];
-  VenueSuggestion? _selectedVenue;
 
   DateSchedulerBloc({
     required this.createScheduledDate,
@@ -255,6 +245,17 @@ class DateSchedulerBloc extends Bloc<DateSchedulerEvent, DateSchedulerState> {
     on<LoadVenueSuggestions>(_onLoadVenueSuggestions);
     on<SelectVenue>(_onSelectVenue);
   }
+  final CreateScheduledDate createScheduledDate;
+  final GetUserDates getUserDates;
+  final GetUpcomingDates getUpcomingDates;
+  final ConfirmDate confirmDate;
+  final CancelDate cancelDate;
+  final RescheduleDate rescheduleDate;
+  final GetVenueSuggestions getVenueSuggestions;
+
+  List<ScheduledDate> _datesCache = [];
+  List<VenueSuggestion> _venuesCache = [];
+  VenueSuggestion? _selectedVenue;
 
   Future<void> _onLoadUserDates(
     LoadUserDates event,

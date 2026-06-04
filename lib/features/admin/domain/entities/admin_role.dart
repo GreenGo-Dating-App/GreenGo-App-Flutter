@@ -1,20 +1,11 @@
-/**
- * Admin Role Entity
- * Point 227: Role-based access control (RBAC)
- */
+/// Admin Role Entity
+/// Point 227: Role-based access control (RBAC)
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Admin user with role-based permissions
 class AdminUser extends Equatable {
-  final String userId;
-  final String email;
-  final String displayName;
-  final AdminRole role;
-  final List<Permission> permissions;
-  final DateTime createdAt;
-  final DateTime? lastLoginAt;
-  final bool isActive;
 
   const AdminUser({
     required this.userId,
@@ -23,9 +14,16 @@ class AdminUser extends Equatable {
     required this.role,
     required this.permissions,
     required this.createdAt,
-    this.lastLoginAt,
-    required this.isActive,
+    required this.isActive, this.lastLoginAt,
   });
+  final String userId;
+  final String email;
+  final String displayName;
+  final AdminRole role;
+  final List<Permission> permissions;
+  final DateTime createdAt;
+  final DateTime? lastLoginAt;
+  final bool isActive;
 
   bool hasPermission(Permission permission) {
     return permissions.contains(permission);
@@ -197,16 +195,6 @@ enum Permission {
 
 /// Admin action audit log entry (Point 235)
 class AdminAuditLog extends Equatable {
-  final String logId;
-  final String adminId;
-  final String adminEmail;
-  final AdminRole adminRole;
-  final AdminAction action;
-  final String targetType; // user, report, subscription, etc.
-  final String targetId;
-  final Map<String, dynamic> details;
-  final DateTime timestamp;
-  final String? ipAddress;
 
   const AdminAuditLog({
     required this.logId,
@@ -220,6 +208,16 @@ class AdminAuditLog extends Equatable {
     required this.timestamp,
     this.ipAddress,
   });
+  final String logId;
+  final String adminId;
+  final String adminEmail;
+  final AdminRole adminRole;
+  final AdminAction action;
+  final String targetType; // user, report, subscription, etc.
+  final String targetId;
+  final Map<String, dynamic> details;
+  final DateTime timestamp;
+  final String? ipAddress;
 
   @override
   List<Object?> get props => [

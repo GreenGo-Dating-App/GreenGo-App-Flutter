@@ -4,10 +4,6 @@ import 'package:equatable/equatable.dart';
 /// Special coins used exclusively for video calling
 /// Users can only make video calls if they have video coins
 class VideoCoinBalance extends Equatable {
-  final String userId;
-  final int totalVideoCoins;
-  final int usedVideoCoins;
-  final DateTime lastUpdated;
 
   const VideoCoinBalance({
     required this.userId,
@@ -15,14 +11,6 @@ class VideoCoinBalance extends Equatable {
     required this.usedVideoCoins,
     required this.lastUpdated,
   });
-
-  /// Get available video coins
-  int get availableVideoCoins => totalVideoCoins - usedVideoCoins;
-
-  /// Check if user has enough video coins for a call
-  bool canMakeVideoCall({int minutesCost = 1}) {
-    return availableVideoCoins >= minutesCost;
-  }
 
   /// Create empty balance
   factory VideoCoinBalance.empty(String userId) {
@@ -32,6 +20,18 @@ class VideoCoinBalance extends Equatable {
       usedVideoCoins: 0,
       lastUpdated: DateTime.now(),
     );
+  }
+  final String userId;
+  final int totalVideoCoins;
+  final int usedVideoCoins;
+  final DateTime lastUpdated;
+
+  /// Get available video coins
+  int get availableVideoCoins => totalVideoCoins - usedVideoCoins;
+
+  /// Check if user has enough video coins for a call
+  bool canMakeVideoCall({int minutesCost = 1}) {
+    return availableVideoCoins >= minutesCost;
   }
 
   @override
@@ -45,14 +45,6 @@ class VideoCoinBalance extends Equatable {
 
 /// Video Coin Package for purchase
 class VideoCoinPackage extends Equatable {
-  final String packageId;
-  final String productId;
-  final int videoMinutes; // Each video coin = 1 minute of video call
-  final double price;
-  final String currency;
-  final int? bonusMinutes;
-  final bool isPopular;
-  final String? badge;
 
   const VideoCoinPackage({
     required this.packageId,
@@ -64,6 +56,14 @@ class VideoCoinPackage extends Equatable {
     this.isPopular = false,
     this.badge,
   });
+  final String packageId;
+  final String productId;
+  final int videoMinutes; // Each video coin = 1 minute of video call
+  final double price;
+  final String currency;
+  final int? bonusMinutes;
+  final bool isPopular;
+  final String? badge;
 
   /// Get total minutes including bonus
   int get totalMinutes => videoMinutes + (bonusMinutes ?? 0);
@@ -150,6 +150,16 @@ class VideoCoinPackages {
 
 /// Video Coin Transaction
 class VideoCoinTransaction extends Equatable {
+
+  const VideoCoinTransaction({
+    required this.transactionId,
+    required this.userId,
+    required this.type,
+    required this.minutes,
+    required this.balanceAfter,
+    required this.createdAt, this.relatedUserId,
+    this.callId,
+  });
   final String transactionId;
   final String userId;
   final VideoCoinTransactionType type;
@@ -158,17 +168,6 @@ class VideoCoinTransaction extends Equatable {
   final String? relatedUserId; // For calls
   final String? callId;
   final DateTime createdAt;
-
-  const VideoCoinTransaction({
-    required this.transactionId,
-    required this.userId,
-    required this.type,
-    required this.minutes,
-    required this.balanceAfter,
-    this.relatedUserId,
-    this.callId,
-    required this.createdAt,
-  });
 
   @override
   List<Object?> get props => [

@@ -16,6 +16,21 @@ class ConversationExpiryModel extends ConversationExpiry {
     super.extendedByUserId,
   });
 
+  factory ConversationExpiryModel.fromEntity(ConversationExpiry entity) {
+    return ConversationExpiryModel(
+      id: entity.id,
+      matchId: entity.matchId,
+      conversationId: entity.conversationId,
+      createdAt: entity.createdAt,
+      expiresAt: entity.expiresAt,
+      isExpired: entity.isExpired,
+      hasActivity: entity.hasActivity,
+      extensionCount: entity.extensionCount,
+      lastExtendedAt: entity.lastExtendedAt,
+      extendedByUserId: entity.extendedByUserId,
+    );
+  }
+
   factory ConversationExpiryModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
     return ConversationExpiryModel(
@@ -70,21 +85,6 @@ class ConversationExpiryModel extends ConversationExpiry {
           lastExtendedAt != null ? Timestamp.fromDate(lastExtendedAt!) : null,
       'extendedByUserId': extendedByUserId,
     };
-  }
-
-  factory ConversationExpiryModel.fromEntity(ConversationExpiry entity) {
-    return ConversationExpiryModel(
-      id: entity.id,
-      matchId: entity.matchId,
-      conversationId: entity.conversationId,
-      createdAt: entity.createdAt,
-      expiresAt: entity.expiresAt,
-      isExpired: entity.isExpired,
-      hasActivity: entity.hasActivity,
-      extensionCount: entity.extensionCount,
-      lastExtendedAt: entity.lastExtendedAt,
-      extendedByUserId: entity.extendedByUserId,
-    );
   }
 }
 

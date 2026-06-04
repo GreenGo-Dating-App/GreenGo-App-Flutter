@@ -5,9 +5,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Get SDK Config Use Case
 class GetSDKConfig {
-  final VideoCallingRepository repository;
 
   GetSDKConfig(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, VideoSDKConfig>> call(GetSDKConfigParams params) {
     return repository.getSDKConfig(
@@ -19,11 +19,11 @@ class GetSDKConfig {
 
 /// Parameters for GetSDKConfig use case
 class GetSDKConfigParams {
-  final String callId;
-  final String userId;
 
   GetSDKConfigParams({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }

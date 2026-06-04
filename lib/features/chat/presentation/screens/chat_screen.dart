@@ -1,65 +1,61 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
-import '../../../../core/services/presence_service.dart';
-import '../../../../core/services/app_sound_service.dart';
+
+import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:uuid/uuid.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:uuid/uuid.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/services/blocked_users_service.dart';
-import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
-import '../../../../core/services/translation_service.dart';
-import '../../../../core/services/content_filter_service.dart';
-import '../../../../core/utils/image_compression.dart';
-import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
-import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/services/presence_service.dart';
+import '../../../../core/services/pronunciation_service.dart';
+import '../../../../core/services/push_notification_service.dart';
+import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
-import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/utils/image_compression.dart';
+import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../discovery/domain/entities/match.dart';
+import '../../../discovery/presentation/screens/match_detail_screen.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../domain/entities/message.dart';
-import '../../../profile/data/models/profile_model.dart';
-import '../../data/datasources/chat_remote_datasource.dart';
 import '../../../profile/data/datasources/album_access_datasource.dart';
+import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../data/datasources/chat_remote_datasource.dart';
+import '../../domain/entities/message.dart';
 import '../bloc/chat_bloc.dart';
 import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
-import '../widgets/message_bubble.dart';
 import '../widgets/forward_message_sheet.dart';
-import '../../../discovery/presentation/screens/profile_detail_screen.dart';
-import '../../../discovery/presentation/screens/match_detail_screen.dart';
-import '../../../discovery/domain/entities/match.dart';
-import '../../../../core/widgets/country_flag_badge.dart';
-import '../../../../core/services/pronunciation_service.dart';
-import 'package:audioplayers/audioplayers.dart' hide Source;
+import '../widgets/message_bubble.dart';
 
 /// Chat Screen
 ///
 /// Individual chat conversation with a match
 class ChatScreen extends StatefulWidget {
+
+  const ChatScreen({
+    required this.matchId, required this.currentUserId, required this.otherUserId, required this.otherUserProfile, super.key,
+  });
   final String matchId;
   final String currentUserId;
   final String otherUserId;
   final Profile otherUserProfile;
-
-  const ChatScreen({
-    super.key,
-    required this.matchId,
-    required this.currentUserId,
-    required this.otherUserId,
-    required this.otherUserProfile,
-  });
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
@@ -84,7 +80,7 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _userLanguage;
   // The language the user wants to practice/use in this chat (can be changed per chat)
   String? _chatTargetLanguage;
-  bool _translationEnabled = true; // Translation always active
+  final bool _translationEnabled = true; // Translation always active
   bool _isUploadingMedia = false;
   double _uploadProgress = 0.0;
 
@@ -799,7 +795,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _pickImage(BuildContext context, ImageSource source) async {
     try {
-      final XFile? image = await _imagePicker.pickImage(
+      final image = await _imagePicker.pickImage(
         source: source,
         maxWidth: 1200,
         maxHeight: 1200,
@@ -828,7 +824,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _pickVideo(BuildContext context, ImageSource source) async {
     try {
-      final XFile? video = await _imagePicker.pickVideo(
+      final video = await _imagePicker.pickVideo(
         source: source,
         maxDuration: const Duration(seconds: 60),
       );
@@ -866,7 +862,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     try {
       // Compress image before upload to reduce storage costs
-      File file = File(image.path);
+      var file = File(image.path);
       try {
         file = await ImageCompression.compressChatImage(file);
         debugPrint('Chat image compressed for upload');
@@ -902,7 +898,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       // Create unique filename
       final uuid = const Uuid().v4();
-      final fileName = 'chat_images/${widget.matchId}/${uuid}.jpg';
+      final fileName = 'chat_images/${widget.matchId}/$uuid.jpg';
 
       // Upload to Firebase Storage
       final ref = FirebaseStorage.instance.ref().child(fileName);
@@ -1028,7 +1024,7 @@ class _ChatScreenState extends State<ChatScreen> {
       // Create unique filename
       final uuid = const Uuid().v4();
       final extension = video.path.split('.').last;
-      final fileName = 'chat_videos/${widget.matchId}/${uuid}.$extension';
+      final fileName = 'chat_videos/${widget.matchId}/$uuid.$extension';
 
       // Upload to Firebase Storage
       final ref = FirebaseStorage.instance.ref().child(fileName);
@@ -1094,7 +1090,7 @@ class _ChatScreenState extends State<ChatScreen> {
           .doc(widget.currentUserId)
           .get();
 
-      MembershipTier tier = MembershipTier.free;
+      var tier = MembershipTier.free;
       if (membershipDoc.exists) {
         tier = MembershipTier.fromString(
           membershipDoc.data()?['tier'] as String? ?? 'FREE',
@@ -1143,7 +1139,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Show current user's private album photos for sending in chat
-  void _showMyAlbumPhotos() async {
+  Future<void> _showMyAlbumPhotos() async {
     try {
       // Fetch current user's profile to get private photos (force server to get fresh data)
       DocumentSnapshot profileDoc;
@@ -1373,7 +1369,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// View other user's private album (if access granted)
-  void _viewOtherUserAlbum(BuildContext context) async {
+  Future<void> _viewOtherUserAlbum(BuildContext context) async {
     try {
       // Check if current user has access to other user's album
       final hasAccess = await _albumAccessDatasource.hasAccess(
@@ -1401,7 +1397,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (!mounted) return;
 
-      final data = profileDoc.data() as Map<String, dynamic>?;
+      final data = profileDoc.data();
       final privatePhotos = data?['privatePhotoUrls'] as List<dynamic>? ?? [];
 
       if (privatePhotos.isEmpty) {
@@ -1554,7 +1550,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Grant access to current user's private album to the other user
-  void _grantAlbumAccess(BuildContext context) async {
+  Future<void> _grantAlbumAccess(BuildContext context) async {
     try {
       await _albumAccessDatasource.grantAccess(
         ownerId: widget.currentUserId,
@@ -1590,7 +1586,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Revoke access to current user's private album from the other user
-  void _revokeAlbumAccess(BuildContext context) async {
+  Future<void> _revokeAlbumAccess(BuildContext context) async {
     try {
       await _albumAccessDatasource.revokeAccess(
         ownerId: widget.currentUserId,
@@ -1626,7 +1622,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Handle tapping on an album share message
-  void _onAlbumMessageTapped(Message message) async {
+  Future<void> _onAlbumMessageTapped(Message message) async {
     try {
       final albumOwnerId = message.metadata?['albumOwnerId'] as String?;
       if (albumOwnerId == null) return;
@@ -1722,9 +1718,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         ? state.messages
                         : (state as ChatSending).messages;
 
-                    final isOtherUserTyping = state is ChatLoaded
-                        ? state.isOtherUserTyping
-                        : false;
+                    final isOtherUserTyping = state is ChatLoaded && state.isOtherUserTyping;
 
                     // Check and download models on first load
                     if (!_hasCheckedModels && messages.isNotEmpty) {
@@ -1822,7 +1816,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                     )
                                   : Text(
                                       AppLocalizations.of(context)!.chatScrollUpForOlder,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         color: AppColors.textSecondary,
                                         fontSize: 12,
                                       ),
@@ -1860,9 +1854,9 @@ class _ChatScreenState extends State<ChatScreen> {
                               userMembershipTier: _currentUserProfile?.membershipTier,
                               onReport: (msg) => _reportMessage(context, msg),
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
-                              onReply: (msg) => _setReplyMessage(msg),
+                              onReply: _setReplyMessage,
                               onForward: (msg) => _showForwardDialog(context, msg),
-                              onAlbumTap: (msg) => _onAlbumMessageTapped(msg),
+                              onAlbumTap: _onAlbumMessageTapped,
                             );
                           },
                         );
@@ -2516,7 +2510,7 @@ class _ChatScreenState extends State<ChatScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(label, style: TextStyle(color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w500)),
+                Text(label, style: const TextStyle(color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w500)),
                 Text(subtitle, style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
               ],
             ),
@@ -2527,7 +2521,7 @@ class _ChatScreenState extends State<ChatScreen> {
               setSheetState(() {});
               onChanged(v);
             },
-            activeColor: AppColors.richGold,
+            activeThumbColor: AppColors.richGold,
             inactiveTrackColor: AppColors.backgroundDark,
           ),
         ],
@@ -2590,7 +2584,7 @@ class _ChatScreenState extends State<ChatScreen> {
           const Icon(Icons.star, size: 14, color: AppColors.richGold),
           const SizedBox(width: 4),
           Text(
-            '${_sessionXp} XP',
+            '$_sessionXp XP',
             style: const TextStyle(color: AppColors.richGold, fontSize: 11, fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 12),
@@ -2619,7 +2613,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _loadPhraseOfTheDay() async {
+  Future<void> _loadPhraseOfTheDay() async {
     final today = DateTime.now();
     final dateKey = '${today.year}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
 
@@ -2713,7 +2707,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _showPronunciationChallenge() async {
+  Future<void> _showPronunciationChallenge() async {
     final state = _chatBloc.state;
     if (state is! ChatLoaded) return;
 
@@ -2840,7 +2834,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this._chatBloc;
+      final bloc = _chatBloc;
       final nav = Navigator.of(this.context);
       // Run delete operation FIRST, then show success dialog
       bloc.add(const ChatDeletedForMe());
@@ -2878,7 +2872,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this._chatBloc;
+      final bloc = _chatBloc;
       final nav = Navigator.of(this.context);
       // Run delete operation FIRST, then show success dialog
       bloc.add(const ChatDeletedForBoth());
@@ -2928,7 +2922,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (confirmed == true && mounted) {
-      final bloc = this._chatBloc;
+      final bloc = _chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showUserBlocked(this.context, widget.otherUserProfile.displayName, onDismiss: () {
         bloc.add(ChatUserBlocked(widget.otherUserId));
@@ -2997,7 +2991,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (selectedReason != null && mounted) {
-      final bloc = this._chatBloc;
+      final bloc = _chatBloc;
       final nav = Navigator.of(this.context);
       await ActionSuccessDialog.showUserReported(this.context, onDismiss: () {
         bloc.add(ChatUserReported(
@@ -3202,7 +3196,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: AppColors.backgroundCard,
         border: Border(
           top: BorderSide(color: AppColors.richGold, width: 2),
@@ -3257,7 +3251,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  void _loadSmartReplies(String messageText, String language) async {
+  Future<void> _loadSmartReplies(String messageText, String language) async {
     // Smart replies are Silver+ only
     final userTier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
     if (userTier == MembershipTier.free) return;
@@ -3313,7 +3307,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       children: [
                         Text(reply, style: const TextStyle(color: AppColors.textPrimary, fontSize: 13)),
                         if (translation != null)
-                          Text(translation, style: TextStyle(color: AppColors.textTertiary, fontSize: 10)),
+                          Text(translation, style: const TextStyle(color: AppColors.textTertiary, fontSize: 10)),
                       ],
                     ),
                   ),

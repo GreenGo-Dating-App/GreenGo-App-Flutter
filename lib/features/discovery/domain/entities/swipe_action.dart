@@ -10,12 +10,6 @@ enum SwipeActionType {
 ///
 /// Represents a user's action on another user's profile
 class SwipeAction {
-  final String userId;
-  final String targetUserId;
-  final SwipeActionType actionType;
-  final DateTime timestamp;
-  final bool createdMatch;
-  final String? matchId;
 
   const SwipeAction({
     required this.userId,
@@ -25,6 +19,12 @@ class SwipeAction {
     this.createdMatch = false,
     this.matchId,
   });
+  final String userId;
+  final String targetUserId;
+  final SwipeActionType actionType;
+  final DateTime timestamp;
+  final bool createdMatch;
+  final String? matchId;
 
   SwipeAction copyWith({
     bool? createdMatch,

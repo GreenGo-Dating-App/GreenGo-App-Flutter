@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/widgets/luxury_particles_background.dart';
+import '../../../../core/services/access_control_service.dart';
 import '../../../../core/widgets/animated_luxury_logo.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../core/widgets/luxury_countdown_widget.dart';
-import '../../../../core/services/access_control_service.dart';
+import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../features/subscription/domain/entities/subscription.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Screen shown to users who are registered but waiting for:
 /// 1. Their access date (tier-based: Platinum March 14, Gold March 28, Silver April 7, Free April 14)
@@ -19,12 +20,6 @@ import '../../../../features/subscription/domain/entities/subscription.dart';
 /// - After countdown ends, if not approved, show pending approval message
 /// - Once approved and after access date, user can enter the app
 class WaitingScreen extends StatefulWidget {
-  final UserAccessData? accessData;
-  final VoidCallback? onEnableNotifications;
-  final VoidCallback? onContactSupport;
-  final VoidCallback? onReverify;
-  final VoidCallback? onSignOut;
-  final VoidCallback? onRefresh;
 
   const WaitingScreen({
     super.key,
@@ -35,6 +30,12 @@ class WaitingScreen extends StatefulWidget {
     this.onSignOut,
     this.onRefresh,
   });
+  final UserAccessData? accessData;
+  final VoidCallback? onEnableNotifications;
+  final VoidCallback? onContactSupport;
+  final VoidCallback? onReverify;
+  final VoidCallback? onSignOut;
+  final VoidCallback? onRefresh;
 
   @override
   State<WaitingScreen> createState() => _WaitingScreenState();
@@ -730,7 +731,7 @@ class _WaitingScreenState extends State<WaitingScreen>
     Color secondaryColor;
     IconData badgeIcon;
     String tierLabel;
-    String benefitsLabel = l10n.vipPremiumBenefitsActive;
+    final benefitsLabel = l10n.vipPremiumBenefitsActive;
 
     switch (tier) {
       case SubscriptionTier.platinum:

@@ -7,18 +7,6 @@ import 'vibe_tag_state.dart';
 /// Vibe Tag BLoC
 /// Manages vibe tag selection and display
 class VibeTagBloc extends Bloc<VibeTagEvent, VibeTagState> {
-  final GetVibeTags getVibeTags;
-  final GetVibeTagsByCategory getVibeTagsByCategory;
-  final GetUserVibeTags getUserVibeTags;
-  final UpdateUserVibeTags updateUserVibeTags;
-  final SetTemporaryVibeTag setTemporaryVibeTag;
-  final RemoveVibeTag removeVibeTag;
-  final SearchUsersByVibeTags searchUsersByVibeTags;
-
-  // Cache for tags
-  List<VibeTag> _cachedTags = [];
-  UserVibeTags? _cachedUserTags;
-  bool _isPremium = false;
 
   VibeTagBloc({
     required this.getVibeTags,
@@ -40,6 +28,18 @@ class VibeTagBloc extends Bloc<VibeTagEvent, VibeTagState> {
     on<SearchByVibeTags>(_onSearchByVibeTags);
     on<ToggleVibeTag>(_onToggleVibeTag);
   }
+  final GetVibeTags getVibeTags;
+  final GetVibeTagsByCategory getVibeTagsByCategory;
+  final GetUserVibeTags getUserVibeTags;
+  final UpdateUserVibeTags updateUserVibeTags;
+  final SetTemporaryVibeTag setTemporaryVibeTag;
+  final RemoveVibeTag removeVibeTag;
+  final SearchUsersByVibeTags searchUsersByVibeTags;
+
+  // Cache for tags
+  List<VibeTag> _cachedTags = [];
+  UserVibeTags? _cachedUserTags;
+  bool _isPremium = false;
 
   /// Set premium status (should be called from auth/subscription)
   void setPremiumStatus(bool isPremium) {
@@ -286,7 +286,7 @@ class VibeTagBloc extends Bloc<VibeTagEvent, VibeTagState> {
       userTags: _cachedUserTags ??
           UserVibeTags(
             userId: '',
-            selectedTagIds: [],
+            selectedTagIds: const [],
             updatedAt: DateTime.now(),
           ),
       tagLimit: _tagLimit,

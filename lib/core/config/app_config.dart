@@ -118,7 +118,7 @@ class AppConfig {
 
   /// Get a summary of enabled authentication methods
   static String getEnabledAuthMethods() {
-    final List<String> methods = ['Email/Password'];
+    final methods = <String>['Email/Password'];
 
     if (enableGoogleAuth) methods.add('Google');
     if (enableFacebookAuth) methods.add('Facebook');

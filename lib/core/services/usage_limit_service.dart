@@ -15,13 +15,6 @@ enum UsageLimitType {
 
 /// Result of checking a usage limit
 class UsageLimitResult {
-  final bool isAllowed;
-  final int currentUsage;
-  final int limit;
-  final int remaining;
-  final String message;
-  final MembershipTier currentTier;
-  final MembershipTier? suggestedTier;
 
   const UsageLimitResult({
     required this.isAllowed,
@@ -32,6 +25,13 @@ class UsageLimitResult {
     required this.currentTier,
     this.suggestedTier,
   });
+  final bool isAllowed;
+  final int currentUsage;
+  final int limit;
+  final int remaining;
+  final String message;
+  final MembershipTier currentTier;
+  final MembershipTier? suggestedTier;
 
   bool get isUnlimited => limit == -1;
 }
@@ -43,10 +43,10 @@ class UsageLimitResult {
 /// Boosts are tracked MONTHLY.
 /// All data is persisted in Firestore so it survives logout/login.
 class UsageLimitService {
-  final FirebaseFirestore _firestore;
 
   UsageLimitService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   // ─── Time keys ───────────────────────────────────────────────
 
@@ -352,7 +352,7 @@ class UsageLimitService {
       final currentPeriod = _getTimeKey(limitType);
 
       final cachedPeriod = prefs.getString(dateKey);
-      int currentValue = 0;
+      var currentValue = 0;
 
       if (cachedPeriod == currentPeriod) {
         currentValue = prefs.getInt(key) ?? 0;

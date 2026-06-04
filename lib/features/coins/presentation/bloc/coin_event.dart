@@ -13,18 +13,18 @@ abstract class CoinEvent extends Equatable {
 
 // Balance Events
 class LoadCoinBalance extends CoinEvent {
-  final String userId;
 
   const LoadCoinBalance(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class SubscribeToCoinBalance extends CoinEvent {
-  final String userId;
 
   const SubscribeToCoinBalance(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -36,10 +36,6 @@ class LoadAvailablePackages extends CoinEvent {
 }
 
 class PurchaseCoinPackage extends CoinEvent {
-  final String userId;
-  final CoinPackage package;
-  final String platform;
-  final CoinPromotion? promotion;
 
   const PurchaseCoinPackage({
     required this.userId,
@@ -47,6 +43,10 @@ class PurchaseCoinPackage extends CoinEvent {
     required this.platform,
     this.promotion,
   });
+  final String userId;
+  final CoinPackage package;
+  final String platform;
+  final CoinPromotion? promotion;
 
   @override
   List<Object?> get props => [userId, package, platform, promotion];
@@ -54,10 +54,6 @@ class PurchaseCoinPackage extends CoinEvent {
 
 // Transaction Events
 class LoadTransactionHistory extends CoinEvent {
-  final String userId;
-  final int? limit;
-  final DateTime? startDate;
-  final DateTime? endDate;
 
   const LoadTransactionHistory({
     required this.userId,
@@ -65,19 +61,23 @@ class LoadTransactionHistory extends CoinEvent {
     this.startDate,
     this.endDate,
   });
+  final String userId;
+  final int? limit;
+  final DateTime? startDate;
+  final DateTime? endDate;
 
   @override
   List<Object?> get props => [userId, limit, startDate, endDate];
 }
 
 class SubscribeToTransactions extends CoinEvent {
-  final String userId;
-  final int limit;
 
   const SubscribeToTransactions({
     required this.userId,
     this.limit = 50,
   });
+  final String userId;
+  final int limit;
 
   @override
   List<Object?> get props => [userId, limit];
@@ -85,37 +85,37 @@ class SubscribeToTransactions extends CoinEvent {
 
 // Reward Events
 class ClaimCoinReward extends CoinEvent {
-  final String userId;
-  final CoinReward reward;
-  final Map<String, dynamic>? metadata;
 
   const ClaimCoinReward({
     required this.userId,
     required this.reward,
     this.metadata,
   });
+  final String userId;
+  final CoinReward reward;
+  final Map<String, dynamic>? metadata;
 
   @override
   List<Object?> get props => [userId, reward, metadata];
 }
 
 class CheckRewardEligibility extends CoinEvent {
-  final String userId;
-  final String rewardId;
 
   const CheckRewardEligibility({
     required this.userId,
     required this.rewardId,
   });
+  final String userId;
+  final String rewardId;
 
   @override
   List<Object?> get props => [userId, rewardId];
 }
 
 class LoadClaimedRewards extends CoinEvent {
-  final String userId;
 
   const LoadClaimedRewards(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -123,10 +123,6 @@ class LoadClaimedRewards extends CoinEvent {
 
 // Feature Purchase Events
 class PurchaseFeatureWithCoins extends CoinEvent {
-  final String userId;
-  final String featureName;
-  final int cost;
-  final String? relatedId;
 
   const PurchaseFeatureWithCoins({
     required this.userId,
@@ -134,19 +130,23 @@ class PurchaseFeatureWithCoins extends CoinEvent {
     required this.cost,
     this.relatedId,
   });
+  final String userId;
+  final String featureName;
+  final int cost;
+  final String? relatedId;
 
   @override
   List<Object?> get props => [userId, featureName, cost, relatedId];
 }
 
 class CheckFeatureAffordability extends CoinEvent {
-  final String userId;
-  final int cost;
 
   const CheckFeatureAffordability({
     required this.userId,
     required this.cost,
   });
+  final String userId;
+  final int cost;
 
   @override
   List<Object?> get props => [userId, cost];
@@ -154,10 +154,6 @@ class CheckFeatureAffordability extends CoinEvent {
 
 // Gift Events
 class SendCoinGiftEvent extends CoinEvent {
-  final String senderId;
-  final String receiverId;
-  final int amount;
-  final String? message;
 
   const SendCoinGiftEvent({
     required this.senderId,
@@ -165,50 +161,54 @@ class SendCoinGiftEvent extends CoinEvent {
     required this.amount,
     this.message,
   });
+  final String senderId;
+  final String receiverId;
+  final int amount;
+  final String? message;
 
   @override
   List<Object?> get props => [senderId, receiverId, amount, message];
 }
 
 class AcceptCoinGiftEvent extends CoinEvent {
-  final String giftId;
-  final String userId;
 
   const AcceptCoinGiftEvent({
     required this.giftId,
     required this.userId,
   });
+  final String giftId;
+  final String userId;
 
   @override
   List<Object?> get props => [giftId, userId];
 }
 
 class DeclineCoinGiftEvent extends CoinEvent {
-  final String giftId;
-  final String userId;
 
   const DeclineCoinGiftEvent({
     required this.giftId,
     required this.userId,
   });
+  final String giftId;
+  final String userId;
 
   @override
   List<Object?> get props => [giftId, userId];
 }
 
 class LoadPendingGifts extends CoinEvent {
-  final String userId;
 
   const LoadPendingGifts(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class LoadSentGifts extends CoinEvent {
-  final String userId;
 
   const LoadSentGifts(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -216,22 +216,22 @@ class LoadSentGifts extends CoinEvent {
 
 // Expiration Events
 class CheckExpiringCoins extends CoinEvent {
-  final String userId;
-  final int days;
 
   const CheckExpiringCoins({
     required this.userId,
     this.days = 30,
   });
+  final String userId;
+  final int days;
 
   @override
   List<Object?> get props => [userId, days];
 }
 
 class ProcessExpiredCoinsEvent extends CoinEvent {
-  final String userId;
 
   const ProcessExpiredCoinsEvent(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -243,22 +243,22 @@ class LoadActivePromotions extends CoinEvent {
 }
 
 class ApplyPromoCode extends CoinEvent {
-  final String code;
 
   const ApplyPromoCode(this.code);
+  final String code;
 
   @override
   List<Object?> get props => [code];
 }
 
 class CheckPromotionApplicability extends CoinEvent {
-  final String promotionId;
-  final String userId;
 
   const CheckPromotionApplicability({
     required this.promotionId,
     required this.userId,
   });
+  final String promotionId;
+  final String userId;
 
   @override
   List<Object?> get props => [promotionId, userId];

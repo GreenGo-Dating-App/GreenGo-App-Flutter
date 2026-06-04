@@ -2,6 +2,17 @@ import 'package:equatable/equatable.dart';
 
 /// See Who Liked You Entity
 class SecretAdmirer extends Equatable {
+
+  const SecretAdmirer({
+    required this.id,
+    required this.admirerId,
+    required this.admirerName,
+    required this.admirerAge, required this.likedAt, this.admirerPhotoUrl,
+    this.admirerBio,
+    this.isRevealed = false,
+    this.isSuperLike = false,
+    this.compatibilityScore,
+  });
   final String id;
   final String admirerId;
   final String admirerName;
@@ -12,19 +23,6 @@ class SecretAdmirer extends Equatable {
   final bool isRevealed;
   final bool isSuperLike;
   final double? compatibilityScore;
-
-  const SecretAdmirer({
-    required this.id,
-    required this.admirerId,
-    required this.admirerName,
-    this.admirerPhotoUrl,
-    required this.admirerAge,
-    this.admirerBio,
-    required this.likedAt,
-    this.isRevealed = false,
-    this.isSuperLike = false,
-    this.compatibilityScore,
-  });
 
   @override
   List<Object?> get props => [
@@ -43,6 +41,19 @@ class SecretAdmirer extends Equatable {
 
 /// Travel Mode Entity
 class TravelMode extends Equatable {
+
+  const TravelMode({
+    required this.id,
+    required this.userId,
+    required this.destinationCity,
+    required this.destinationCountry,
+    required this.latitude,
+    required this.longitude,
+    required this.startDate,
+    required this.endDate,
+    required this.createdAt, this.isActive = true,
+    this.showInDestination = true,
+  });
   final String id;
   final String userId;
   final String destinationCity;
@@ -54,20 +65,6 @@ class TravelMode extends Equatable {
   final bool isActive;
   final bool showInDestination;
   final DateTime createdAt;
-
-  const TravelMode({
-    required this.id,
-    required this.userId,
-    required this.destinationCity,
-    required this.destinationCountry,
-    required this.latitude,
-    required this.longitude,
-    required this.startDate,
-    required this.endDate,
-    this.isActive = true,
-    this.showInDestination = true,
-    required this.createdAt,
-  });
 
   bool get isTraveling =>
       isActive &&
@@ -94,28 +91,6 @@ class TravelMode extends Equatable {
 
 /// Advanced Filters Entity
 class AdvancedFilters extends Equatable {
-  final String userId;
-  final int? minHeight;
-  final int? maxHeight;
-  final List<String>? educationLevels;
-  final List<String>? occupations;
-  final List<String>? religions;
-  final List<String>? ethnicities;
-  final List<String>? languages;
-  final bool? hasChildren;
-  final bool? wantsChildren;
-  final List<String>? smokingPreference;
-  final List<String>? drinkingPreference;
-  final List<String>? exerciseFrequency;
-  final List<String>? dietaryPreferences;
-  final List<String>? zodiacSigns;
-  final bool? hasVerifiedPhotos;
-  final bool? hasVideoProfile;
-  final int? minIncome;
-  final int? maxIncome;
-  final List<String>? politicalViews;
-  final List<String>? relationshipGoals;
-  final DateTime? lastUpdated;
 
   const AdvancedFilters({
     required this.userId,
@@ -141,6 +116,28 @@ class AdvancedFilters extends Equatable {
     this.relationshipGoals,
     this.lastUpdated,
   });
+  final String userId;
+  final int? minHeight;
+  final int? maxHeight;
+  final List<String>? educationLevels;
+  final List<String>? occupations;
+  final List<String>? religions;
+  final List<String>? ethnicities;
+  final List<String>? languages;
+  final bool? hasChildren;
+  final bool? wantsChildren;
+  final List<String>? smokingPreference;
+  final List<String>? drinkingPreference;
+  final List<String>? exerciseFrequency;
+  final List<String>? dietaryPreferences;
+  final List<String>? zodiacSigns;
+  final bool? hasVerifiedPhotos;
+  final bool? hasVideoProfile;
+  final int? minIncome;
+  final int? maxIncome;
+  final List<String>? politicalViews;
+  final List<String>? relationshipGoals;
+  final DateTime? lastUpdated;
 
   bool get hasActiveFilters =>
       minHeight != null ||
@@ -238,18 +235,7 @@ class AdvancedFilters extends Equatable {
 }
 
 /// Priority Visibility / Boost Entity
-class ProfileBoost extends Equatable {
-  final String id;
-  final String userId;
-  final DateTime startTime;
-  final DateTime endTime;
-  final int durationMinutes;
-  final int impressions;
-  final int profileViews;
-  final int newLikes;
-  final int newMatches;
-  final bool isActive;
-  final String? boostType; // 'free', 'purchased', 'reward'
+class ProfileBoost extends Equatable { // 'free', 'purchased', 'reward'
 
   const ProfileBoost({
     required this.id,
@@ -264,6 +250,17 @@ class ProfileBoost extends Equatable {
     this.isActive = true,
     this.boostType,
   });
+  final String id;
+  final String userId;
+  final DateTime startTime;
+  final DateTime endTime;
+  final int durationMinutes;
+  final int impressions;
+  final int profileViews;
+  final int newLikes;
+  final int newMatches;
+  final bool isActive;
+  final String? boostType;
 
   Duration get remainingTime =>
       isActive ? endTime.difference(DateTime.now()) : Duration.zero;

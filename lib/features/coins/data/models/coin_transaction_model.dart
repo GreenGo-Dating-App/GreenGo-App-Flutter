@@ -10,10 +10,9 @@ class CoinTransactionModel extends CoinTransaction {
     required super.amount,
     required super.balanceAfter,
     required super.reason,
-    super.relatedId,
+    required super.createdAt, super.relatedId,
     super.relatedUserId,
     super.metadata,
-    required super.createdAt,
   });
 
   /// Create from Firestore document

@@ -3,13 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Vibe Tag Entity
 /// Quick mood/intention tags for profiles (Coffee Chat, Serious, Adventurous)
 class VibeTag extends Equatable {
-  final String id;
-  final String name;
-  final String emoji;
-  final String category;
-  final bool isActive;
-  final bool isPremium;
-  final int sortOrder;
 
   const VibeTag({
     required this.id,
@@ -20,6 +13,13 @@ class VibeTag extends Equatable {
     this.isPremium = false,
     this.sortOrder = 0,
   });
+  final String id;
+  final String name;
+  final String emoji;
+  final String category;
+  final bool isActive;
+  final bool isPremium;
+  final int sortOrder;
 
   @override
   List<Object?> get props => [
@@ -97,19 +97,18 @@ extension VibeTagCategoryExtension on VibeTagCategory {
 
 /// User Vibe Tags - tags selected by a user
 class UserVibeTags extends Equatable {
+
+  const UserVibeTags({
+    required this.userId,
+    required this.selectedTagIds,
+    required this.updatedAt, this.temporaryTagId,
+    this.temporaryTagExpiresAt,
+  });
   final String userId;
   final List<String> selectedTagIds;
   final String? temporaryTagId;
   final DateTime? temporaryTagExpiresAt;
   final DateTime updatedAt;
-
-  const UserVibeTags({
-    required this.userId,
-    required this.selectedTagIds,
-    this.temporaryTagId,
-    this.temporaryTagExpiresAt,
-    required this.updatedAt,
-  });
 
   /// Check if temporary tag is active
   bool get hasActiveTemporaryTag {

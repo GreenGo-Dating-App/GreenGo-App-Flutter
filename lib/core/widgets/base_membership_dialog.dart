@@ -1,18 +1,19 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
-import '../constants/app_colors.dart';
+
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
+import '../constants/app_colors.dart';
 
 /// Dialog shown when a non-member tries to perform a gated action.
 /// Offers a yearly "greengo_base_membership" IAP subscription.
@@ -20,18 +21,17 @@ import '../../generated/app_localizations.dart';
 /// Purchase ownership is tracked in Firestore `membership_purchases/{purchaseToken}`
 /// to prevent a Google Play account's subscription from being applied to the wrong app user.
 class BaseMembershipDialog extends StatefulWidget {
-  final String userId;
-  final CoinBloc? coinBloc;
-  final ProfileBloc? profileBloc;
-  final bool isExtending;
 
   const BaseMembershipDialog({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.coinBloc,
     this.profileBloc,
     this.isExtending = false,
   });
+  final String userId;
+  final CoinBloc? coinBloc;
+  final ProfileBloc? profileBloc;
+  final bool isExtending;
 
   /// Convenience method – returns `true` when the user successfully purchases.
   static Future<bool> show({
@@ -357,7 +357,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
         productDetails: product,
         applicationUserName: widget.userId,
       );
-      final bool ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
+      final ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
 
       if (!ok && mounted) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
@@ -503,7 +503,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         AppColors.accentGold,
                                         AppColors.richGold,

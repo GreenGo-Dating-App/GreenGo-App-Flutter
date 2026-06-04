@@ -5,9 +5,9 @@ import '../repositories/share_my_date_repository.dart';
 
 /// Add a trusted contact
 class AddTrustedContact {
-  final ShareMyDateRepository repository;
 
   AddTrustedContact(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, TrustedContact>> call({
     required String userId,
@@ -26,9 +26,9 @@ class AddTrustedContact {
 
 /// Remove a trusted contact
 class RemoveTrustedContact {
-  final ShareMyDateRepository repository;
 
   RemoveTrustedContact(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, void>> call(String contactId) {
     return repository.removeTrustedContact(contactId);
@@ -37,9 +37,9 @@ class RemoveTrustedContact {
 
 /// Get trusted contacts
 class GetTrustedContacts {
-  final ShareMyDateRepository repository;
 
   GetTrustedContacts(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, List<TrustedContact>>> call(String userId) {
     return repository.getTrustedContacts(userId);
@@ -48,16 +48,15 @@ class GetTrustedContacts {
 
 /// Share a date
 class ShareDate {
-  final ShareMyDateRepository repository;
 
   ShareDate(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, SharedDate>> call({
     required String userId,
     required String scheduledDateId,
     required String matchName,
-    String? matchPhotoUrl,
-    required DateTime dateTime,
+    required DateTime dateTime, String? matchPhotoUrl,
     String? venueName,
     String? venueAddress,
     double? venueLat,
@@ -81,9 +80,9 @@ class ShareDate {
 
 /// Get shared dates
 class GetSharedDates {
-  final ShareMyDateRepository repository;
 
   GetSharedDates(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, List<SharedDate>>> call(String userId) {
     return repository.getSharedDates(userId);
@@ -92,9 +91,9 @@ class GetSharedDates {
 
 /// Get active shared date
 class GetActiveSharedDate {
-  final ShareMyDateRepository repository;
 
   GetActiveSharedDate(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, SharedDate?>> call(String userId) {
     return repository.getActiveSharedDate(userId);
@@ -103,9 +102,9 @@ class GetActiveSharedDate {
 
 /// Check in at date
 class CheckInAtDate {
-  final ShareMyDateRepository repository;
 
   CheckInAtDate(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, SafetyCheckIn>> call({
     required String sharedDateId,
@@ -124,9 +123,9 @@ class CheckInAtDate {
 
 /// Mark safe arrival
 class MarkSafeArrival {
-  final ShareMyDateRepository repository;
 
   MarkSafeArrival(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, SharedDate>> call(String sharedDateId) {
     return repository.markSafeArrival(sharedDateId);
@@ -135,9 +134,9 @@ class MarkSafeArrival {
 
 /// Trigger emergency
 class TriggerEmergency {
-  final ShareMyDateRepository repository;
 
   TriggerEmergency(this.repository);
+  final ShareMyDateRepository repository;
 
   Future<Either<Failure, EmergencyAlert>> call({
     required String sharedDateId,
@@ -158,9 +157,9 @@ class TriggerEmergency {
 
 /// Stream active date
 class StreamActiveSharedDate {
-  final ShareMyDateRepository repository;
 
   StreamActiveSharedDate(this.repository);
+  final ShareMyDateRepository repository;
 
   Stream<Either<Failure, SharedDate?>> call(String userId) {
     return repository.streamActiveDate(userId);

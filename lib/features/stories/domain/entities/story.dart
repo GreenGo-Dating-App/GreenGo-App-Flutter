@@ -6,6 +6,20 @@ enum StoryType { image, video }
 /// Story Entity
 /// 24-hour ephemeral content like Instagram Stories
 class Story extends Equatable {
+
+  const Story({
+    required this.id,
+    required this.userId,
+    required this.userDisplayName,
+    required this.type, required this.mediaUrl, required this.createdAt, required this.expiresAt, this.userPhotoUrl,
+    this.thumbnailUrl,
+    this.caption,
+    this.viewedBy = const [],
+    this.reactions = const [],
+    this.isActive = true,
+    this.musicTrackId,
+    this.locationName,
+  });
   final String id;
   final String userId;
   final String userDisplayName;
@@ -21,24 +35,6 @@ class Story extends Equatable {
   final bool isActive;
   final String? musicTrackId;
   final String? locationName;
-
-  const Story({
-    required this.id,
-    required this.userId,
-    required this.userDisplayName,
-    this.userPhotoUrl,
-    required this.type,
-    required this.mediaUrl,
-    this.thumbnailUrl,
-    this.caption,
-    required this.createdAt,
-    required this.expiresAt,
-    this.viewedBy = const [],
-    this.reactions = const [],
-    this.isActive = true,
-    this.musicTrackId,
-    this.locationName,
-  });
 
   bool get isExpired => DateTime.now().isAfter(expiresAt);
   int get viewCount => viewedBy.length;
@@ -102,11 +98,6 @@ class Story extends Equatable {
 
 /// Story Reaction
 class StoryReaction extends Equatable {
-  final String id;
-  final String storyId;
-  final String userId;
-  final String emoji;
-  final DateTime createdAt;
 
   const StoryReaction({
     required this.id,
@@ -115,6 +106,11 @@ class StoryReaction extends Equatable {
     required this.emoji,
     required this.createdAt,
   });
+  final String id;
+  final String storyId;
+  final String userId;
+  final String emoji;
+  final DateTime createdAt;
 
   @override
   List<Object?> get props => [id, storyId, userId, emoji, createdAt];
@@ -122,19 +118,18 @@ class StoryReaction extends Equatable {
 
 /// User Stories Collection
 class UserStories extends Equatable {
+
+  const UserStories({
+    required this.userId,
+    required this.userDisplayName,
+    required this.stories, this.userPhotoUrl,
+    this.hasUnviewedStories = false,
+  });
   final String userId;
   final String userDisplayName;
   final String? userPhotoUrl;
   final List<Story> stories;
   final bool hasUnviewedStories;
-
-  const UserStories({
-    required this.userId,
-    required this.userDisplayName,
-    this.userPhotoUrl,
-    required this.stories,
-    this.hasUnviewedStories = false,
-  });
 
   List<Story> get activeStories =>
       stories.where((s) => !s.isExpired && s.isActive).toList();

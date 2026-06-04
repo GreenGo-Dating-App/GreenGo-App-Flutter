@@ -1,28 +1,27 @@
-/**
- * Achievements Screen
- * Points 176-185: Display all achievements with progress and premium UI
- */
+/// Achievements Screen
+/// Points 176-185: Display all achievements with progress and premium UI
+library;
 
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/achievement.dart';
 import '../../domain/usecases/get_user_achievements.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
-import '../widgets/achievement_card.dart';
 import '../widgets/achievement_unlock_dialog.dart';
 
 class AchievementsScreen extends StatefulWidget {
-  final String userId;
 
   const AchievementsScreen({
-    Key? key,
-    required this.userId,
-  }) : super(key: key);
+    required this.userId, super.key,
+  });
+  final String userId;
 
   @override
   State<AchievementsScreen> createState() => _AchievementsScreenState();
@@ -35,7 +34,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
 
   final List<String> _categories = [
     'All',
-    ...AchievementCategory.values.map((c) => _getCategoryName(c)),
+    ...AchievementCategory.values.map(_getCategoryName),
   ];
 
   @override

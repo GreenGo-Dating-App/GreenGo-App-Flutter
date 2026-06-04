@@ -12,18 +12,17 @@ import '../../domain/entities/event.dart';
 /// Falls back to a simple list-style card with distance
 /// if google_maps_flutter is not available.
 class EventMapCard extends StatelessWidget {
-  final Event event;
-  final double? userLatitude;
-  final double? userLongitude;
-  final VoidCallback? onTap;
 
   const EventMapCard({
-    super.key,
-    required this.event,
+    required this.event, super.key,
     this.userLatitude,
     this.userLongitude,
     this.onTap,
   });
+  final Event event;
+  final double? userLatitude;
+  final double? userLongitude;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -51,10 +50,10 @@ class EventMapCard extends StatelessWidget {
             Container(
               height: 120,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColors.backgroundDark,
                 borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(16)),
+                    BorderRadius.vertical(top: Radius.circular(16)),
               ),
               child: Stack(
                 children: [
@@ -68,7 +67,7 @@ class EventMapCard extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.location_on,
                           color: AppColors.richGold,
                           size: 36,
@@ -141,7 +140,7 @@ class EventMapCard extends StatelessWidget {
                       children: [
                         Text(
                           DateFormat('MMM').format(event.startDate).toUpperCase(),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 10,
                             fontWeight: FontWeight.bold,
@@ -177,7 +176,7 @@ class EventMapCard extends StatelessWidget {
                         const SizedBox(height: 4),
                         Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.access_time,
                               size: 12,
                               color: AppColors.textSecondary,
@@ -185,13 +184,13 @@ class EventMapCard extends StatelessWidget {
                             const SizedBox(width: 4),
                             Text(
                               DateFormat('h:mm a').format(event.startDate),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
                               ),
                             ),
                             const SizedBox(width: 12),
-                            Icon(
+                            const Icon(
                               Icons.people_outline,
                               size: 12,
                               color: AppColors.textSecondary,
@@ -199,7 +198,7 @@ class EventMapCard extends StatelessWidget {
                             const SizedBox(width: 4),
                             Text(
                               '${event.goingCount}/${event.maxAttendees}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
                               ),
@@ -210,7 +209,7 @@ class EventMapCard extends StatelessWidget {
                     ),
                   ),
                   // Arrow
-                  Icon(
+                  const Icon(
                     Icons.chevron_right,
                     color: AppColors.textTertiary,
                   ),

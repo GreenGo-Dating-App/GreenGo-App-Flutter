@@ -6,16 +6,16 @@ import '../repositories/chat_repository.dart';
 ///
 /// Point 118: Pin important conversations to the top
 class PinConversation {
-  final ChatRepository repository;
 
   PinConversation(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String conversationId,
     required String userId,
     required bool isPinned,
   }) async {
-    return await repository.pinConversation(
+    return repository.pinConversation(
       conversationId: conversationId,
       userId: userId,
       isPinned: isPinned,

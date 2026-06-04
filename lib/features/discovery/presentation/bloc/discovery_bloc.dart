@@ -1,18 +1,19 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
+import '../../../coins/domain/repositories/coin_repository.dart';
+import '../../../gamification/domain/usecases/track_user_action.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../../data/datasources/discovery_remote_datasource.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/get_discovery_stack.dart';
 import '../../domain/usecases/record_swipe.dart';
 import '../../domain/usecases/undo_swipe.dart';
-import '../../../../core/services/usage_limit_service.dart';
-import '../../../membership/domain/entities/membership.dart';
-import '../../../coins/domain/entities/coin_transaction.dart';
-import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../../gamification/domain/usecases/track_user_action.dart';
-import '../../data/datasources/discovery_remote_datasource.dart';
 import 'discovery_event.dart';
 import 'discovery_state.dart';
 
@@ -21,25 +22,6 @@ import 'discovery_state.dart';
 /// Manages the discovery stack and swipe actions with a 20-profile queue
 /// and automatic pre-fetching when the queue runs low
 class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
-  final GetDiscoveryStack getDiscoveryStack;
-  final RecordSwipe recordSwipe;
-  final UndoSwipe undoSwipe;
-  final UsageLimitService _usageLimitService;
-  final CoinRepository? coinRepository;
-  final DiscoveryRemoteDataSource? discoveryDataSource;
-  final TrackUserAction? trackUserAction;
-
-  // Queue management
-  static const int queueSize = 20;
-  static const int prefetchThreshold = 10;
-  bool _isPrefetching = false;
-  String? _currentUserId;
-  MatchPreferences? _currentPreferences;
-
-  // Rewind tracking (single-level undo)
-  DiscoveryCard? _lastSwipedCard;
-  SwipeActionType? _lastSwipeType;
-  bool _lastSwipeCreatedMatch = false;
 
   DiscoveryBloc({
     required this.getDiscoveryStack,
@@ -59,6 +41,25 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     on<DiscoveryMoreCandidatesRequested>(_onLoadMore);
     on<DiscoveryPrefetchRequested>(_onPrefetch);
   }
+  final GetDiscoveryStack getDiscoveryStack;
+  final RecordSwipe recordSwipe;
+  final UndoSwipe undoSwipe;
+  final UsageLimitService _usageLimitService;
+  final CoinRepository? coinRepository;
+  final DiscoveryRemoteDataSource? discoveryDataSource;
+  final TrackUserAction? trackUserAction;
+
+  // Queue management
+  static const int queueSize = 20;
+  static const int prefetchThreshold = 10;
+  bool _isPrefetching = false;
+  String? _currentUserId;
+  MatchPreferences? _currentPreferences;
+
+  // Rewind tracking (single-level undo)
+  DiscoveryCard? _lastSwipedCard;
+  SwipeActionType? _lastSwipeType;
+  bool _lastSwipeCreatedMatch = false;
 
   Future<void> _onLoadStack(
     DiscoveryStackLoadRequested event,
@@ -153,10 +154,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     required String userId,
     required String targetUserId,
     required SwipeActionType actionType,
-    MembershipRules? membershipRules,
+    required Emitter<DiscoveryState> emit, required bool advanceIndex, MembershipRules? membershipRules,
     MembershipTier? membershipTier,
-    required Emitter<DiscoveryState> emit,
-    required bool advanceIndex,
   }) async {
     final data = _extractCards();
     if (data == null) {
@@ -172,7 +171,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     // ── Priority Connect: check base membership first, then limits, then coins ──
     if (actionType == SwipeActionType.superLike) {
       // Check if user has base membership before processing priority connect
-      bool _isTesterUser = false;
+      var isTesterUser = false;
       {
         try {
           final profileDoc = await FirebaseFirestore.instance
@@ -187,8 +186,8 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
               endTs.toDate().isAfter(DateTime.now());
           // Also allow test tier users through
           final memberTier = profileData?['membershipTier'] as String? ?? '';
-          _isTesterUser = memberTier == 'test' || memberTier == 'TEST';
-          if (!isActive && !_isTesterUser) {
+          isTesterUser = memberTier == 'test' || memberTier == 'TEST';
+          if (!isActive && !isTesterUser) {
             emit(DiscoveryBaseMembershipRequired(
               cards: currentState.cards,
               currentIndex: currentState.currentIndex,
@@ -202,10 +201,10 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         }
       }
       // Testers bypass all coin/limit checks — use features for free
-      final isTester = _isTesterUser;
+      final isTester = isTesterUser;
 
       if (!isTester) {
-      bool usedFreeAllowance = false;
+      var usedFreeAllowance = false;
 
       // Step 1: Check daily priority connect limit
       final dailyPriorityConnectLimit = await _usageLimitService.checkLimit(
@@ -463,7 +462,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     final currentIndex = data.currentIndex;
 
     // Check if user is a tester — testers bypass coin checks
-    bool isRewindTester = false;
+    var isRewindTester = false;
     try {
       final profileDoc = await FirebaseFirestore.instance
           .collection('profiles')

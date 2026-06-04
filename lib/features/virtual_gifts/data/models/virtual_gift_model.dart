@@ -79,11 +79,9 @@ class SentVirtualGiftModel extends SentVirtualGift {
     required super.senderName,
     required super.receiverId,
     required super.receiverName,
-    super.message,
-    required super.sentAt,
+    required super.sentAt, required super.coinsCost, super.message,
     super.isViewed = false,
     super.viewedAt,
-    required super.coinsCost,
     super.gift,
   });
 

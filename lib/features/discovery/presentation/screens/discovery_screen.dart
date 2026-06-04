@@ -1,66 +1,61 @@
 import 'dart:async';
 import 'dart:math';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import '../../../../core/services/presence_service.dart';
-import '../../../../core/services/access_control_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/widgets/loading_indicator.dart';
-import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/location_refresh_service.dart';
-import '../../domain/entities/discovery_card.dart';
-import '../../domain/entities/match_preferences.dart';
-import '../../../matching/domain/entities/match_candidate.dart';
-import '../../../matching/domain/entities/match_score.dart';
-import '../../../matching/domain/repositories/matching_repository.dart';
-import '../../domain/entities/swipe_action.dart';
-import '../../../profile/data/models/profile_model.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../../profile/domain/repositories/profile_repository.dart';
-import '../../../notifications/domain/entities/notification.dart';
-import '../../../notifications/domain/repositories/notification_repository.dart';
-import '../../../membership/domain/entities/membership.dart';
+import '../../../../core/services/presence_service.dart';
+import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../core/widgets/loading_indicator.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
-import '../bloc/discovery_bloc.dart';
-import '../bloc/discovery_event.dart';
-import '../bloc/discovery_state.dart';
-import '../widgets/swipe_card.dart';
-import '../widgets/swipe_buttons.dart';
-import '../widgets/match_notification.dart';
-import 'discovery_preferences_screen.dart';
-import 'profile_detail_screen.dart';
-import '../../../profile/presentation/screens/edit_profile_screen.dart';
-import '../widgets/nickname_search_dialog.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
-import '../../../chat/presentation/screens/chat_screen.dart';
-import '../../domain/entities/match.dart';
-import 'match_detail_screen.dart';
-import '../../../../core/utils/base_membership_gate.dart';
-import '../../../../generated/app_localizations.dart';
+import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../matching/domain/entities/match_score.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../../../notifications/domain/entities/notification.dart';
+import '../../../notifications/domain/repositories/notification_repository.dart';
+import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../domain/entities/discovery_card.dart';
+import '../../domain/entities/match.dart';
+import '../../domain/entities/match_preferences.dart';
+import '../../domain/entities/swipe_action.dart';
+import '../bloc/discovery_bloc.dart';
+import '../bloc/discovery_event.dart';
+import '../bloc/discovery_state.dart';
+import '../widgets/match_notification.dart';
+import '../widgets/swipe_buttons.dart';
+import '../widgets/swipe_card.dart';
+import 'discovery_preferences_screen.dart';
+import 'match_detail_screen.dart';
+import 'profile_detail_screen.dart';
 import 'travel_explore_map_screen.dart';
 
 /// Discovery Screen
 ///
 /// Main screen for browsing and swiping through potential matches
 class DiscoveryScreen extends StatefulWidget {
-  final String userId;
-  final VoidCallback? onGridModeChanged;
 
   const DiscoveryScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.onGridModeChanged,
   });
+  final String userId;
+  final VoidCallback? onGridModeChanged;
 
   @override
   DiscoveryScreenState createState() => DiscoveryScreenState();
@@ -106,14 +101,13 @@ class DiscoveryScreenState extends State<DiscoveryScreen> {
 }
 
 class _DiscoveryScreenContent extends StatefulWidget {
-  final String userId;
-  final VoidCallback? onGridModeChanged;
 
   const _DiscoveryScreenContent({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.onGridModeChanged,
   });
+  final String userId;
+  final VoidCallback? onGridModeChanged;
 
   @override
   State<_DiscoveryScreenContent> createState() => _DiscoveryScreenContentState();
@@ -407,7 +401,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       if (!mounted) return;
 
       // Check if any status actually changed
-      bool changed = false;
+      var changed = false;
       for (final entry in newStatuses.entries) {
         final current = _onlineStatusOverrides[entry.key];
         if (current != entry.value) {
@@ -504,7 +498,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 _lastAttemptedGridCardId = null;
               }
               final message = state is DiscoverySwipeLimitReached
-                  ? (state as DiscoverySwipeLimitReached).limitResult.message
+                  ? state.limitResult.message
                   : (state as DiscoverySuperLikeLimitReached).limitResult.message;
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -683,7 +677,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final primaryFutures = <Future>[];
     final secondaryUrls = <String>[];
 
-    for (int i = currentIndex; i < end; i++) {
+    for (var i = currentIndex; i < end; i++) {
       final photoUrls = cards[i].candidate.profile.photoUrls;
       if (photoUrls.isEmpty) continue;
 
@@ -698,7 +692,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       }
 
       // Collect secondary photos for phase 2
-      for (int j = 1; j < photoUrls.length; j++) {
+      for (var j = 1; j < photoUrls.length; j++) {
         final url = photoUrls[j];
         if (url.isNotEmpty && !_precachedImageUrls.contains(url)) {
           secondaryUrls.add(url);
@@ -914,7 +908,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         !card.candidate.profile.isAdmin && !card.candidate.profile.isSupport).toList();
 
     // Apply "My Network" preference filter first (AND with everything else)
-    List<DiscoveryCard> networkFiltered = regularCards;
+    var networkFiltered = regularCards;
     if (_currentPreferences.showMyNetwork) {
       networkFiltered = regularCards.where((card) =>
           _networkUserIds.contains(card.userId)).toList();
@@ -976,7 +970,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     }
 
     // Self-profile first, then admin/support, then regular profiles
-    final List<DiscoveryCard> filteredCards = [
+    final filteredCards = <DiscoveryCard>[
       if (selfCard != null) selfCard,
       ...adminCards,
       ...filteredRegular,
@@ -1637,7 +1631,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         );
   }
 
-  void _showMatchDialog(BuildContext context, DiscoverySwipeCompleted state) async {
+  Future<void> _showMatchDialog(BuildContext context, DiscoverySwipeCompleted state) async {
     // Find the matched user's profile from the cards list
     Profile? matchedProfile;
     if (state.matchedUserId != null) {
@@ -1827,6 +1821,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 // ───────────────────── Grid Profile Card Widget ─────────────────────
 
 class _GridProfileCard extends StatefulWidget {
+
+  const _GridProfileCard({
+    required this.card, required this.gridColumns, required this.onAction, super.key,
+    this.actionOverlay,
+    this.isOnlineOverride,
+    this.isSelfProfile = false,
+    this.isRandomMode = false,
+  });
   final DiscoveryCard card;
   final int gridColumns;
   final String? actionOverlay; // 'liked', 'superLiked', 'matched'
@@ -1834,17 +1836,6 @@ class _GridProfileCard extends StatefulWidget {
   final Function(DiscoveryCard, SwipeActionType) onAction;
   final bool isSelfProfile; // true = current user's own card (no actions, boost animation)
   final bool isRandomMode;
-
-  const _GridProfileCard({
-    super.key,
-    required this.card,
-    required this.gridColumns,
-    required this.onAction,
-    this.actionOverlay,
-    this.isOnlineOverride,
-    this.isSelfProfile = false,
-    this.isRandomMode = false,
-  });
 
   @override
   State<_GridProfileCard> createState() => _GridProfileCardState();
@@ -1909,7 +1900,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
         ? photoUrls[_currentPhotoIndex]
         : (photoUrls.isNotEmpty ? photoUrls.first : null);
 
-    Widget card = ClipRRect(
+    final Widget card = ClipRRect(
       borderRadius: BorderRadius.circular(8),
       child: Stack(
         fit: StackFit.expand,
@@ -2212,7 +2203,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
             if (isBoosted && !widget.isSelfProfile && widget.actionOverlay != 'matched')
               Positioned(
                 top: () {
-                  double offset = 4.0;
+                  var offset = 4.0;
                   if (profile.languages.isNotEmpty) offset += 20.0;
                   if (profile.isTravelerActive) offset += 20.0;
                   return offset;
@@ -2551,7 +2542,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
           // ── Photo arrows (LAST in stack — always on top) ──
           // Left arrow
           if (hasMultiplePhotos && _currentPhotoIndex > 0 && !_showMenu && !_showPreview)
-            Positioned(
+            const Positioned(
               left: 2,
               top: 0,
               bottom: 0,
@@ -2559,7 +2550,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 child: Center(
                   child: Icon(
                     Icons.arrow_back_ios_new,
-                    color: const Color(0xFFD4A843),
+                    color: Color(0xFFD4A843),
                     size: 14,
                   ),
                 ),
@@ -2568,7 +2559,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
 
           // Right arrow
           if (hasMultiplePhotos && _currentPhotoIndex < photoUrls.length - 1 && !_showMenu && !_showPreview)
-            Positioned(
+            const Positioned(
               right: 2,
               top: 0,
               bottom: 0,
@@ -2576,7 +2567,7 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 child: Center(
                   child: Icon(
                     Icons.arrow_forward_ios,
-                    color: const Color(0xFFD4A843),
+                    color: Color(0xFFD4A843),
                     size: 14,
                   ),
                 ),

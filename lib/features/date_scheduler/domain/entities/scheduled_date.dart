@@ -2,6 +2,26 @@ import 'package:equatable/equatable.dart';
 
 /// Scheduled Date Entity
 class ScheduledDate extends Equatable {
+
+  const ScheduledDate({
+    required this.id,
+    required this.matchId,
+    required this.creatorId,
+    required this.partnerId,
+    required this.title,
+    required this.scheduledAt,
+    required this.createdAt, this.venueName,
+    this.venueAddress,
+    this.venueLat,
+    this.venueLng,
+    this.venueId,
+    this.status = DateStatus.pending,
+    this.notes,
+    this.confirmedAt,
+    this.cancelledAt,
+    this.cancelledBy,
+    this.cancellationReason,
+  });
   final String id;
   final String matchId;
   final String creatorId;
@@ -20,27 +40,6 @@ class ScheduledDate extends Equatable {
   final DateTime? cancelledAt;
   final String? cancelledBy;
   final String? cancellationReason;
-
-  const ScheduledDate({
-    required this.id,
-    required this.matchId,
-    required this.creatorId,
-    required this.partnerId,
-    required this.title,
-    required this.scheduledAt,
-    this.venueName,
-    this.venueAddress,
-    this.venueLat,
-    this.venueLng,
-    this.venueId,
-    this.status = DateStatus.pending,
-    this.notes,
-    required this.createdAt,
-    this.confirmedAt,
-    this.cancelledAt,
-    this.cancelledBy,
-    this.cancellationReason,
-  });
 
   @override
   List<Object?> get props => [
@@ -119,6 +118,20 @@ enum DateStatus {
 
 /// Venue Suggestion
 class VenueSuggestion extends Equatable {
+
+  const VenueSuggestion({
+    required this.id,
+    required this.name,
+    required this.address,
+    required this.lat,
+    required this.lng,
+    required this.category, this.rating,
+    this.reviewCount,
+    this.photoUrl,
+    this.distance,
+    this.priceLevel,
+    this.isOpen = true,
+  });
   final String id;
   final String name;
   final String address;
@@ -131,21 +144,6 @@ class VenueSuggestion extends Equatable {
   final double? distance;
   final String? priceLevel;
   final bool isOpen;
-
-  const VenueSuggestion({
-    required this.id,
-    required this.name,
-    required this.address,
-    required this.lat,
-    required this.lng,
-    this.rating,
-    this.reviewCount,
-    this.photoUrl,
-    required this.category,
-    this.distance,
-    this.priceLevel,
-    this.isOpen = true,
-  });
 
   @override
   List<Object?> get props => [
@@ -232,10 +230,6 @@ extension VenueCategoryExtension on VenueCategory {
 
 /// Date Reminder
 class DateReminder extends Equatable {
-  final String id;
-  final String dateId;
-  final DateTime remindAt;
-  final bool isNotified;
 
   const DateReminder({
     required this.id,
@@ -243,6 +237,10 @@ class DateReminder extends Equatable {
     required this.remindAt,
     this.isNotified = false,
   });
+  final String id;
+  final String dateId;
+  final DateTime remindAt;
+  final bool isNotified;
 
   @override
   List<Object?> get props => [id, dateId, remindAt, isNotified];

@@ -1,38 +1,39 @@
 import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../../profile/data/models/profile_model.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/usage_limit_service.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/usecases/get_search_conversation.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
-import '../../../../core/di/injection_container.dart' as di;
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../screens/profile_detail_screen.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../membership/domain/entities/membership.dart';
+import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/record_swipe.dart';
-import '../../../../core/services/usage_limit_service.dart';
-import '../../../membership/domain/entities/membership.dart';
+import '../screens/profile_detail_screen.dart';
 
 /// Nickname Search Dialog
 ///
 /// Allows users to search for profiles by their unique nickname
 class NicknameSearchDialog extends StatefulWidget {
-  final String currentUserId;
 
   const NicknameSearchDialog({
-    super.key,
-    required this.currentUserId,
+    required this.currentUserId, super.key,
   });
+  final String currentUserId;
 
   static Future<void> show(BuildContext context, String currentUserId) {
     return showDialog(
@@ -297,9 +298,9 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
     final nickname = _foundProfile!.nickname ?? _foundProfile!.displayName;
 
     // Determine membership tier for limit checks
-    MembershipTier tier = MembershipTier.free;
-    MembershipRules rules = MembershipRules.freeDefaults;
-    bool isTester = false;
+    var tier = MembershipTier.free;
+    var rules = MembershipRules.freeDefaults;
+    var isTester = false;
 
     try {
       final profileDoc = await FirebaseFirestore.instance
@@ -362,7 +363,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             currentTier: tier,
           );
 
-          bool usedFreeAllowance = dailyLimit.isAllowed && hourlyLimit.isAllowed;
+          final usedFreeAllowance = dailyLimit.isAllowed && hourlyLimit.isAllowed;
 
           // Free users: strictly limited to daily allowance
           if (!usedFreeAllowance && tier == MembershipTier.free) {
@@ -613,7 +614,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                 Expanded(
                   child: Text(
                     AppLocalizations.of(context)!.nicknameSearchTitle,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

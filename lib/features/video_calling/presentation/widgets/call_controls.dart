@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 /// Call Controls Widget - Bottom control bar for video calls
 class CallControls extends StatelessWidget {
+
+  const CallControls({
+    required this.isAudioMuted, required this.isVideoMuted, required this.isSpeakerOn, required this.isFrontCamera, required this.onToggleAudio, required this.onToggleVideo, required this.onSwitchCamera, required this.onToggleSpeaker, required this.onEndCall, super.key,
+  });
   final bool isAudioMuted;
   final bool isVideoMuted;
   final bool isSpeakerOn;
@@ -12,24 +16,11 @@ class CallControls extends StatelessWidget {
   final VoidCallback onToggleSpeaker;
   final VoidCallback onEndCall;
 
-  const CallControls({
-    super.key,
-    required this.isAudioMuted,
-    required this.isVideoMuted,
-    required this.isSpeakerOn,
-    required this.isFrontCamera,
-    required this.onToggleAudio,
-    required this.onToggleVideo,
-    required this.onSwitchCamera,
-    required this.onToggleSpeaker,
-    required this.onEndCall,
-  });
-
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,

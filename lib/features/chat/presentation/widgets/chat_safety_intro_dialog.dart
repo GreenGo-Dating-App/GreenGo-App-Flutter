@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Chat safety introduction dialog shown on first chat open
 /// Provides important safety tips for users before chatting
 class ChatSafetyIntroDialog extends StatelessWidget {
-  final VoidCallback onDismiss;
 
   const ChatSafetyIntroDialog({
-    super.key,
-    required this.onDismiss,
+    required this.onDismiss, super.key,
   });
+  final VoidCallback onDismiss;
 
   static const String _prefKey = 'has_seen_chat_safety_intro';
 

@@ -21,7 +21,7 @@ class FirestoreHelpers {
     DocumentSnapshot? startAfter,
     int pageSize = defaultPageSize,
   }) async {
-    Query paginatedQuery = query.limit(pageSize + 1); // +1 to check if more exists
+    var paginatedQuery = query.limit(pageSize + 1); // +1 to check if more exists
 
     if (startAfter != null) {
       paginatedQuery = paginatedQuery.startAfterDocument(startAfter);
@@ -75,8 +75,8 @@ class FirestoreHelpers {
     if (operations.isEmpty) return;
 
     final batches = <WriteBatch>[];
-    WriteBatch currentBatch = _firestore.batch();
-    int operationCount = 0;
+    var currentBatch = _firestore.batch();
+    var operationCount = 0;
 
     for (final op in operations) {
       switch (op.type) {
@@ -113,7 +113,7 @@ class FirestoreHelpers {
     // Execute all batches
     debugPrint('Executing ${batches.length} batch(es) with ${operations.length} operations');
 
-    for (int i = 0; i < batches.length; i++) {
+    for (var i = 0; i < batches.length; i++) {
       await batches[i].commit();
       debugPrint('Batch ${i + 1}/${batches.length} committed');
     }
@@ -182,7 +182,7 @@ class FirestoreHelpers {
       // Try cache if server fails
       if (source == Source.server) {
         try {
-          return await ref.get(GetOptions(source: Source.cache));
+          return await ref.get(const GetOptions(source: Source.cache));
         } catch (_) {}
       }
       return null;
@@ -245,7 +245,7 @@ class FirestoreHelpers {
     Future<T> Function(Transaction transaction) handler, {
     int maxAttempts = 3,
   }) async {
-    return await _firestore.runTransaction(handler, maxAttempts: maxAttempts);
+    return _firestore.runTransaction(handler, maxAttempts: maxAttempts);
   }
 
   /// Increment a field atomically
@@ -291,15 +291,15 @@ class FirestoreHelpers {
 
 /// Result of a paginated query
 class PaginatedResult<T> {
-  final List<T> items;
-  final DocumentSnapshot? lastDocument;
-  final bool hasMore;
 
   PaginatedResult({
     required this.items,
     this.lastDocument,
     this.hasMore = false,
   });
+  final List<T> items;
+  final DocumentSnapshot? lastDocument;
+  final bool hasMore;
 
   bool get isEmpty => items.isEmpty;
   bool get isNotEmpty => items.isNotEmpty;
@@ -311,10 +311,6 @@ enum BatchOperationType { set, update, delete }
 
 /// Batch operation wrapper
 class BatchOperation {
-  final BatchOperationType type;
-  final DocumentReference reference;
-  final Map<String, dynamic>? data;
-  final SetOptions? setOptions;
 
   BatchOperation._({
     required this.type,
@@ -353,13 +349,14 @@ class BatchOperation {
       reference: ref,
     );
   }
+  final BatchOperationType type;
+  final DocumentReference reference;
+  final Map<String, dynamic>? data;
+  final SetOptions? setOptions;
 }
 
 /// Query condition for building queries
 class QueryCondition {
-  final String field;
-  final dynamic operator;
-  final dynamic value;
 
   QueryCondition.equals(this.field, this.value) : operator = '==';
   QueryCondition.notEquals(this.field, this.value) : operator = '!=';
@@ -369,6 +366,9 @@ class QueryCondition {
   QueryCondition.greaterThanOrEqual(this.field, this.value) : operator = '>=';
   QueryCondition.whereIn(this.field, this.value) : operator = 'in';
   QueryCondition.arrayContains(this.field, this.value) : operator = 'array-contains';
+  final String field;
+  final dynamic operator;
+  final dynamic value;
 
   Query apply(Query query) {
     switch (operator) {

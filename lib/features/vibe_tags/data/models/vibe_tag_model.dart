@@ -13,6 +13,19 @@ class VibeTagModel extends VibeTag {
     super.sortOrder = 0,
   });
 
+  /// Create from entity
+  factory VibeTagModel.fromEntity(VibeTag entity) {
+    return VibeTagModel(
+      id: entity.id,
+      name: entity.name,
+      emoji: entity.emoji,
+      category: entity.category,
+      isActive: entity.isActive,
+      isPremium: entity.isPremium,
+      sortOrder: entity.sortOrder,
+    );
+  }
+
   /// Create from Firestore document
   factory VibeTagModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -52,19 +65,6 @@ class VibeTagModel extends VibeTag {
       'sortOrder': sortOrder,
     };
   }
-
-  /// Create from entity
-  factory VibeTagModel.fromEntity(VibeTag entity) {
-    return VibeTagModel(
-      id: entity.id,
-      name: entity.name,
-      emoji: entity.emoji,
-      category: entity.category,
-      isActive: entity.isActive,
-      isPremium: entity.isPremium,
-      sortOrder: entity.sortOrder,
-    );
-  }
 }
 
 /// User Vibe Tags Model for Firestore serialization
@@ -72,10 +72,29 @@ class UserVibeTagsModel extends UserVibeTags {
   const UserVibeTagsModel({
     required super.userId,
     required super.selectedTagIds,
-    super.temporaryTagId,
+    required super.updatedAt, super.temporaryTagId,
     super.temporaryTagExpiresAt,
-    required super.updatedAt,
   });
+
+  /// Create from entity
+  factory UserVibeTagsModel.fromEntity(UserVibeTags entity) {
+    return UserVibeTagsModel(
+      userId: entity.userId,
+      selectedTagIds: entity.selectedTagIds,
+      temporaryTagId: entity.temporaryTagId,
+      temporaryTagExpiresAt: entity.temporaryTagExpiresAt,
+      updatedAt: entity.updatedAt,
+    );
+  }
+
+  /// Create empty for user
+  factory UserVibeTagsModel.empty(String userId) {
+    return UserVibeTagsModel(
+      userId: userId,
+      selectedTagIds: const [],
+      updatedAt: DateTime.now(),
+    );
+  }
 
   /// Create from Firestore document
   factory UserVibeTagsModel.fromFirestore(DocumentSnapshot doc) {
@@ -104,25 +123,5 @@ class UserVibeTagsModel extends UserVibeTags {
           : null,
       'updatedAt': Timestamp.fromDate(updatedAt),
     };
-  }
-
-  /// Create from entity
-  factory UserVibeTagsModel.fromEntity(UserVibeTags entity) {
-    return UserVibeTagsModel(
-      userId: entity.userId,
-      selectedTagIds: entity.selectedTagIds,
-      temporaryTagId: entity.temporaryTagId,
-      temporaryTagExpiresAt: entity.temporaryTagExpiresAt,
-      updatedAt: entity.updatedAt,
-    );
-  }
-
-  /// Create empty for user
-  factory UserVibeTagsModel.empty(String userId) {
-    return UserVibeTagsModel(
-      userId: userId,
-      selectedTagIds: [],
-      updatedAt: DateTime.now(),
-    );
   }
 }

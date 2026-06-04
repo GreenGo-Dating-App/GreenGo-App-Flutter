@@ -14,6 +14,20 @@ class CoinBalanceModel extends CoinBalance {
     super.coinBatches,
   });
 
+  /// Create empty balance
+  factory CoinBalanceModel.empty(String userId) {
+    return CoinBalanceModel(
+      userId: userId,
+      totalCoins: 0,
+      earnedCoins: 0,
+      purchasedCoins: 0,
+      giftedCoins: 0,
+      spentCoins: 0,
+      lastUpdated: DateTime.now(),
+      coinBatches: const [],
+    );
+  }
+
   /// Create from Firestore document
   factory CoinBalanceModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -40,7 +54,7 @@ class CoinBalanceModel extends CoinBalance {
       'giftedCoins': giftedCoins,
       'spentCoins': spentCoins,
       'lastUpdated': Timestamp.fromDate(lastUpdated),
-      'coinBatches': coinBatches.map((batch) => _batchToMap(batch)).toList(),
+      'coinBatches': coinBatches.map(_batchToMap).toList(),
     };
   }
 
@@ -70,19 +84,5 @@ class CoinBalanceModel extends CoinBalance {
       'acquiredDate': Timestamp.fromDate(batch.acquiredDate),
       'expirationDate': Timestamp.fromDate(batch.expirationDate),
     };
-  }
-
-  /// Create empty balance
-  factory CoinBalanceModel.empty(String userId) {
-    return CoinBalanceModel(
-      userId: userId,
-      totalCoins: 0,
-      earnedCoins: 0,
-      purchasedCoins: 0,
-      giftedCoins: 0,
-      spentCoins: 0,
-      lastUpdated: DateTime.now(),
-      coinBatches: [],
-    );
   }
 }

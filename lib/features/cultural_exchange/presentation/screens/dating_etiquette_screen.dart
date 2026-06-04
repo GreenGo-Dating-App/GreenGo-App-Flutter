@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/dating_etiquette.dart';
 import '../bloc/cultural_exchange_bloc.dart';
 
 /// Screen for viewing dating etiquette by country
 class DatingEtiquetteScreen extends StatefulWidget {
-  final String? initialCountry;
 
   const DatingEtiquetteScreen({
     super.key,
     this.initialCountry,
   });
+  final String? initialCountry;
 
   @override
   State<DatingEtiquetteScreen> createState() => _DatingEtiquetteScreenState();
@@ -248,8 +249,8 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
           // Do's list
           if (section.doList.isNotEmpty) ...[
             const Divider(color: AppColors.divider, height: 1),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(16, 12, 16, 0),
               child: Row(
                 children: [
                   Icon(
@@ -257,8 +258,8 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
                     color: AppColors.successGreen,
                     size: 18,
                   ),
-                  const SizedBox(width: 6),
-                  const Text(
+                  SizedBox(width: 6),
+                  Text(
                     'Do\'s',
                     style: TextStyle(
                       color: AppColors.successGreen,
@@ -304,8 +305,8 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
           // Don'ts list
           if (section.dontList.isNotEmpty) ...[
             const Divider(color: AppColors.divider, height: 1),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(16, 12, 16, 0),
               child: Row(
                 children: [
                   Icon(
@@ -313,8 +314,8 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
                     color: AppColors.errorRed,
                     size: 18,
                   ),
-                  const SizedBox(width: 6),
-                  const Text(
+                  SizedBox(width: 6),
+                  Text(
                     'Don\'ts',
                     style: TextStyle(
                       color: AppColors.errorRed,

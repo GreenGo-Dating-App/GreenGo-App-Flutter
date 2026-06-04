@@ -6,11 +6,11 @@ import '../repositories/notification_repository.dart';
 ///
 /// Marks all unread notifications as read for a user
 class MarkAllNotificationsRead {
-  final NotificationRepository repository;
 
   MarkAllNotificationsRead(this.repository);
+  final NotificationRepository repository;
 
   Future<Either<Failure, void>> call(String userId) async {
-    return await repository.markAllAsRead(userId);
+    return repository.markAllAsRead(userId);
   }
 }

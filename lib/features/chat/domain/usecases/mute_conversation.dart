@@ -6,9 +6,9 @@ import '../repositories/chat_repository.dart';
 ///
 /// Point 119: Mute notifications for a conversation
 class MuteConversation {
-  final ChatRepository repository;
 
   MuteConversation(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String conversationId,
@@ -16,7 +16,7 @@ class MuteConversation {
     required bool isMuted,
     DateTime? mutedUntil, // null = mute indefinitely
   }) async {
-    return await repository.muteConversation(
+    return repository.muteConversation(
       conversationId: conversationId,
       userId: userId,
       isMuted: isMuted,

@@ -5,9 +5,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Get Call History Use Case
 class GetCallHistory {
-  final VideoCallingRepository repository;
 
   GetCallHistory(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, List<CallHistoryEntry>>> call(
       GetCallHistoryParams params) {
@@ -21,13 +21,13 @@ class GetCallHistory {
 
 /// Parameters for GetCallHistory use case
 class GetCallHistoryParams {
-  final String userId;
-  final int limit;
-  final DateTime? before;
 
   GetCallHistoryParams({
     required this.userId,
     this.limit = 50,
     this.before,
   });
+  final String userId;
+  final int limit;
+  final DateTime? before;
 }

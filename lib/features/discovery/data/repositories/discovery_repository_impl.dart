@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
-import '../../domain/entities/match_preferences.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
+import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/repositories/discovery_repository.dart';
 import '../datasources/discovery_remote_datasource.dart';
@@ -15,13 +16,13 @@ import '../datasources/discovery_remote_datasource.dart';
 /// Delegates in-memory caching to the singleton datasource (5-min TTL).
 /// forceRefresh=true bypasses cache — used on pull-to-refresh and traveler activation.
 class DiscoveryRepositoryImpl implements DiscoveryRepository {
+
+  DiscoveryRepositoryImpl({required this.remoteDataSource});
   final DiscoveryRemoteDataSource remoteDataSource;
 
   // Queue size for discovery profiles
   static const int queueSize = 20;
   static const int prefetchThreshold = 5;
-
-  DiscoveryRepositoryImpl({required this.remoteDataSource});
 
   @override
   Future<Either<Failure, List<MatchCandidate>>> getDiscoveryStack({
@@ -86,9 +87,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return Right(match);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -104,9 +105,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return Right(matches);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -122,9 +123,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return Right(result);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -140,9 +141,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -155,9 +156,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       await remoteDataSource.unmatch(matchId: matchId, userId: userId);
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -169,9 +170,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       final likes = await remoteDataSource.getUserLikes(userId);
       return Right(likes);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -183,9 +184,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       final profiles = await remoteDataSource.getWhoLikedMe(userId);
       return Right(profiles);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -201,9 +202,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return Right(hasSwiped);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 
@@ -219,9 +220,9 @@ class DiscoveryRepositoryImpl implements DiscoveryRepository {
       );
       return const Right(null);
     } on ServerException {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     } catch (e) {
-      return Left(ServerFailure());
+      return const Left(ServerFailure());
     }
   }
 }

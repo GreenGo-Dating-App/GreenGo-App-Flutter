@@ -3,13 +3,12 @@ import '../../../../core/error/failures.dart';
 import '../../domain/entities/blind_date.dart';
 import '../../domain/repositories/blind_date_repository.dart';
 import '../datasources/blind_date_remote_datasource.dart';
-import '../models/blind_date_model.dart';
 
 /// Implementation of BlindDateRepository
 class BlindDateRepositoryImpl implements BlindDateRepository {
-  final BlindDateRemoteDataSource remoteDataSource;
 
   BlindDateRepositoryImpl({required this.remoteDataSource});
+  final BlindDateRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, BlindDateProfile>> createBlindProfile(
@@ -108,7 +107,7 @@ class BlindDateRepositoryImpl implements BlindDateRepository {
   @override
   Stream<Either<Failure, List<BlindMatch>>> streamBlindMatches(String userId) {
     return remoteDataSource.streamBlindMatches(userId).map(
-          (matches) => Right<Failure, List<BlindMatch>>(matches),
+          Right<Failure, List<BlindMatch>>.new,
         );
   }
 

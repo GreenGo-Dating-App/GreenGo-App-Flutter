@@ -20,9 +20,9 @@ class GlobeCountrySearch {
 }
 
 class _CountrySearchDelegate extends SearchDelegate<String?> {
-  final List<String> countries;
 
   _CountrySearchDelegate(this.countries);
+  final List<String> countries;
 
   @override
   ThemeData appBarTheme(BuildContext context) {

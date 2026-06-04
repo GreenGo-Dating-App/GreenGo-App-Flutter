@@ -3,6 +3,17 @@ import 'package:equatable/equatable.dart';
 /// Video Profile Entity
 /// Short video introduction for user profiles
 class VideoProfile extends Equatable {
+
+  const VideoProfile({
+    required this.id,
+    required this.userId,
+    required this.videoUrl,
+    required this.durationSeconds, required this.createdAt, this.thumbnailUrl,
+    this.prompt,
+    this.updatedAt,
+    this.viewCount = 0,
+    this.isActive = true,
+  });
   final String id;
   final String userId;
   final String videoUrl;
@@ -13,19 +24,6 @@ class VideoProfile extends Equatable {
   final DateTime? updatedAt;
   final int viewCount;
   final bool isActive;
-
-  const VideoProfile({
-    required this.id,
-    required this.userId,
-    required this.videoUrl,
-    this.thumbnailUrl,
-    required this.durationSeconds,
-    this.prompt,
-    required this.createdAt,
-    this.updatedAt,
-    this.viewCount = 0,
-    this.isActive = true,
-  });
 
   @override
   List<Object?> get props => [

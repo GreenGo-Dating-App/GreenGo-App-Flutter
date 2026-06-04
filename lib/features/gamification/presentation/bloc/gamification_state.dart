@@ -1,53 +1,18 @@
-/**
- * Gamification State
- * Points 176-200: All gamification-related states
- */
+/// Gamification State
+/// Points 176-200: All gamification-related states
+library;
 
 import 'package:equatable/equatable.dart';
-import '../../domain/usecases/get_user_achievements.dart';
+
+import '../../domain/entities/achievement.dart';
+import '../../domain/entities/daily_challenge.dart';
+import '../../domain/entities/user_level.dart';
 import '../../domain/usecases/get_daily_challenges.dart';
 import '../../domain/usecases/get_leaderboard.dart';
 import '../../domain/usecases/get_seasonal_event.dart';
-import '../../domain/entities/user_level.dart';
-import '../../domain/entities/achievement.dart';
-import '../../domain/entities/daily_challenge.dart';
+import '../../domain/usecases/get_user_achievements.dart';
 
 class GamificationState extends Equatable {
-  // Achievement State
-  final UserAchievementsData? achievementsData;
-  final bool achievementsLoading;
-  final String? achievementsError;
-  final Achievement? recentlyUnlocked;
-
-  // Level & XP State
-  final UserLevel? userLevel;
-  final bool levelLoading;
-  final String? levelError;
-  final List<XPTransaction> xpHistory;
-  final bool leveledUp;
-  final int? previousLevel;
-  final List<LevelReward> pendingRewards;
-
-  // Leaderboard State
-  final LeaderboardData? leaderboardData;
-  final bool leaderboardLoading;
-  final String? leaderboardError;
-
-  // Challenge State
-  final DailyChallengesData? challengesData;
-  final bool challengesLoading;
-  final String? challengesError;
-  final DailyChallenge? recentlyCompleted;
-
-  // Seasonal Event State
-  final SeasonalEventData? seasonalEventData;
-  final bool seasonalEventLoading;
-  final String? seasonalEventError;
-
-  // General State
-  final bool isLoading;
-  final String? errorMessage;
-  final String? successMessage;
 
   const GamificationState({
     // Achievements
@@ -88,6 +53,41 @@ class GamificationState extends Equatable {
   });
 
   factory GamificationState.initial() => const GamificationState();
+  // Achievement State
+  final UserAchievementsData? achievementsData;
+  final bool achievementsLoading;
+  final String? achievementsError;
+  final Achievement? recentlyUnlocked;
+
+  // Level & XP State
+  final UserLevel? userLevel;
+  final bool levelLoading;
+  final String? levelError;
+  final List<XPTransaction> xpHistory;
+  final bool leveledUp;
+  final int? previousLevel;
+  final List<LevelReward> pendingRewards;
+
+  // Leaderboard State
+  final LeaderboardData? leaderboardData;
+  final bool leaderboardLoading;
+  final String? leaderboardError;
+
+  // Challenge State
+  final DailyChallengesData? challengesData;
+  final bool challengesLoading;
+  final String? challengesError;
+  final DailyChallenge? recentlyCompleted;
+
+  // Seasonal Event State
+  final SeasonalEventData? seasonalEventData;
+  final bool seasonalEventLoading;
+  final String? seasonalEventError;
+
+  // General State
+  final bool isLoading;
+  final String? errorMessage;
+  final String? successMessage;
 
   GamificationState copyWith({
     // Achievements
@@ -143,7 +143,7 @@ class GamificationState extends Equatable {
       levelLoading: levelLoading ?? this.levelLoading,
       levelError: levelError ?? this.levelError,
       xpHistory: xpHistory ?? this.xpHistory,
-      leveledUp: clearLeveledUp ? false : (leveledUp ?? this.leveledUp),
+      leveledUp: !clearLeveledUp && (leveledUp ?? this.leveledUp),
       previousLevel: clearLeveledUp ? null : (previousLevel ?? this.previousLevel),
       pendingRewards: pendingRewards ?? this.pendingRewards,
 

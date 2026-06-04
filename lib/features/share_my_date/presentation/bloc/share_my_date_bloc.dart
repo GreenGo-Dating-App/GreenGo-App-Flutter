@@ -1,5 +1,6 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../domain/entities/share_my_date.dart';
 import '../../domain/usecases/share_my_date_usecases.dart';
 
@@ -12,18 +13,14 @@ abstract class ShareMyDateEvent extends Equatable {
 }
 
 class LoadTrustedContacts extends ShareMyDateEvent {
-  final String userId;
   const LoadTrustedContacts(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class AddContactEvent extends ShareMyDateEvent {
-  final String userId;
-  final String contactName;
-  final String contactPhone;
-  final String? contactEmail;
 
   const AddContactEvent({
     required this.userId,
@@ -31,20 +28,36 @@ class AddContactEvent extends ShareMyDateEvent {
     required this.contactPhone,
     this.contactEmail,
   });
+  final String userId;
+  final String contactName;
+  final String contactPhone;
+  final String? contactEmail;
 
   @override
   List<Object?> get props => [userId, contactName, contactPhone, contactEmail];
 }
 
 class RemoveContactEvent extends ShareMyDateEvent {
-  final String contactId;
   const RemoveContactEvent(this.contactId);
+  final String contactId;
 
   @override
   List<Object?> get props => [contactId];
 }
 
 class ShareDateEvent extends ShareMyDateEvent {
+
+  const ShareDateEvent({
+    required this.userId,
+    required this.scheduledDateId,
+    required this.matchName,
+    required this.dateTime, this.matchPhotoUrl,
+    this.venueName,
+    this.venueAddress,
+    this.venueLat,
+    this.venueLng,
+    this.contactIds = const [],
+  });
   final String userId;
   final String scheduledDateId;
   final String matchName;
@@ -55,19 +68,6 @@ class ShareDateEvent extends ShareMyDateEvent {
   final double? venueLat;
   final double? venueLng;
   final List<String> contactIds;
-
-  const ShareDateEvent({
-    required this.userId,
-    required this.scheduledDateId,
-    required this.matchName,
-    this.matchPhotoUrl,
-    required this.dateTime,
-    this.venueName,
-    this.venueAddress,
-    this.venueLat,
-    this.venueLng,
-    this.contactIds = const [],
-  });
 
   @override
   List<Object?> get props => [
@@ -85,10 +85,6 @@ class ShareDateEvent extends ShareMyDateEvent {
 }
 
 class CheckInEvent extends ShareMyDateEvent {
-  final String sharedDateId;
-  final double? lat;
-  final double? lng;
-  final String? note;
 
   const CheckInEvent({
     required this.sharedDateId,
@@ -96,25 +92,24 @@ class CheckInEvent extends ShareMyDateEvent {
     this.lng,
     this.note,
   });
+  final String sharedDateId;
+  final double? lat;
+  final double? lng;
+  final String? note;
 
   @override
   List<Object?> get props => [sharedDateId, lat, lng, note];
 }
 
 class MarkSafeArrivalEvent extends ShareMyDateEvent {
-  final String sharedDateId;
   const MarkSafeArrivalEvent(this.sharedDateId);
+  final String sharedDateId;
 
   @override
   List<Object?> get props => [sharedDateId];
 }
 
 class TriggerEmergencyEvent extends ShareMyDateEvent {
-  final String sharedDateId;
-  final String userId;
-  final double? lat;
-  final double? lng;
-  final String? note;
 
   const TriggerEmergencyEvent({
     required this.sharedDateId,
@@ -123,14 +118,19 @@ class TriggerEmergencyEvent extends ShareMyDateEvent {
     this.lng,
     this.note,
   });
+  final String sharedDateId;
+  final String userId;
+  final double? lat;
+  final double? lng;
+  final String? note;
 
   @override
   List<Object?> get props => [sharedDateId, userId, lat, lng, note];
 }
 
 class LoadActiveDate extends ShareMyDateEvent {
-  final String userId;
   const LoadActiveDate(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -153,17 +153,17 @@ class ShareMyDateLoading extends ShareMyDateState {
 }
 
 class ShareMyDateError extends ShareMyDateState {
-  final String message;
   const ShareMyDateError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
 }
 
 class TrustedContactsLoaded extends ShareMyDateState {
-  final List<TrustedContact> contacts;
 
   const TrustedContactsLoaded(this.contacts);
+  final List<TrustedContact> contacts;
 
   bool get canAddMore => contacts.length < ShareMyDateConfig.maxTrustedContacts;
 
@@ -172,8 +172,8 @@ class TrustedContactsLoaded extends ShareMyDateState {
 }
 
 class ContactAdded extends ShareMyDateState {
-  final TrustedContact contact;
   const ContactAdded(this.contact);
+  final TrustedContact contact;
 
   @override
   List<Object?> get props => [contact];
@@ -184,40 +184,40 @@ class ContactRemoved extends ShareMyDateState {
 }
 
 class DateShared extends ShareMyDateState {
-  final SharedDate sharedDate;
   const DateShared(this.sharedDate);
+  final SharedDate sharedDate;
 
   @override
   List<Object?> get props => [sharedDate];
 }
 
 class CheckedIn extends ShareMyDateState {
-  final SafetyCheckIn checkIn;
   const CheckedIn(this.checkIn);
+  final SafetyCheckIn checkIn;
 
   @override
   List<Object?> get props => [checkIn];
 }
 
 class SafeArrivalMarked extends ShareMyDateState {
-  final SharedDate sharedDate;
   const SafeArrivalMarked(this.sharedDate);
+  final SharedDate sharedDate;
 
   @override
   List<Object?> get props => [sharedDate];
 }
 
 class EmergencyTriggered extends ShareMyDateState {
-  final EmergencyAlert alert;
   const EmergencyTriggered(this.alert);
+  final EmergencyAlert alert;
 
   @override
   List<Object?> get props => [alert];
 }
 
 class ActiveDateLoaded extends ShareMyDateState {
-  final SharedDate? activeDate;
   const ActiveDateLoaded(this.activeDate);
+  final SharedDate? activeDate;
 
   @override
   List<Object?> get props => [activeDate];
@@ -225,16 +225,6 @@ class ActiveDateLoaded extends ShareMyDateState {
 
 // BLoC
 class ShareMyDateBloc extends Bloc<ShareMyDateEvent, ShareMyDateState> {
-  final AddTrustedContact addTrustedContact;
-  final RemoveTrustedContact removeTrustedContact;
-  final GetTrustedContacts getTrustedContacts;
-  final ShareDate shareDate;
-  final CheckInAtDate checkInAtDate;
-  final MarkSafeArrival markSafeArrival;
-  final TriggerEmergency triggerEmergency;
-  final GetActiveSharedDate getActiveSharedDate;
-
-  List<TrustedContact> _contactsCache = [];
 
   ShareMyDateBloc({
     required this.addTrustedContact,
@@ -255,6 +245,16 @@ class ShareMyDateBloc extends Bloc<ShareMyDateEvent, ShareMyDateState> {
     on<TriggerEmergencyEvent>(_onTriggerEmergency);
     on<LoadActiveDate>(_onLoadActiveDate);
   }
+  final AddTrustedContact addTrustedContact;
+  final RemoveTrustedContact removeTrustedContact;
+  final GetTrustedContacts getTrustedContacts;
+  final ShareDate shareDate;
+  final CheckInAtDate checkInAtDate;
+  final MarkSafeArrival markSafeArrival;
+  final TriggerEmergency triggerEmergency;
+  final GetActiveSharedDate getActiveSharedDate;
+
+  List<TrustedContact> _contactsCache = [];
 
   Future<void> _onLoadContacts(
     LoadTrustedContacts event,
@@ -278,7 +278,7 @@ class ShareMyDateBloc extends Bloc<ShareMyDateEvent, ShareMyDateState> {
     Emitter<ShareMyDateState> emit,
   ) async {
     if (_contactsCache.length >= ShareMyDateConfig.maxTrustedContacts) {
-      emit(ShareMyDateError(
+      emit(const ShareMyDateError(
         'Maximum ${ShareMyDateConfig.maxTrustedContacts} contacts allowed',
       ));
       return;

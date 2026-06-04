@@ -8,7 +8,6 @@ part 'cultural_exchange_state.dart';
 
 class CulturalExchangeBloc
     extends Bloc<CulturalExchangeEvent, CulturalExchangeState> {
-  final CulturalExchangeRepository repository;
 
   CulturalExchangeBloc({required this.repository})
       : super(const CulturalExchangeState()) {
@@ -28,6 +27,7 @@ class CulturalExchangeBloc
     on<LoadDatingEtiquette>(_onLoadDatingEtiquette);
     on<LoadAvailableCountries>(_onLoadAvailableCountries);
   }
+  final CulturalExchangeRepository repository;
 
   // ==================== Initialization ====================
 

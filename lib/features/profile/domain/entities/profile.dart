@@ -1,7 +1,8 @@
 import 'package:equatable/equatable.dart';
+
+import '../../../membership/domain/entities/membership.dart';
 import 'location.dart';
 import 'social_links.dart';
-import '../../../membership/domain/entities/membership.dart';
 
 /// Controls how the user appears on the Globe map for discovery.
 enum GlobeDiscoverability {
@@ -21,6 +22,63 @@ enum VerificationStatus {
 }
 
 class Profile extends Equatable {
+
+  const Profile({
+    required this.userId,
+    required this.displayName,
+    required this.dateOfBirth, required this.gender, required this.photoUrls, required this.bio, required this.interests, required this.location, required this.languages, required this.createdAt, required this.updatedAt, required this.isComplete, this.nickname,
+    this.sexualOrientation,
+    this.accountStatus = 'active',
+    this.isBoosted = false,
+    this.boostExpiry,
+    this.isIncognito = false,
+    this.incognitoExpiry,
+    this.isGhostMode = false,
+    this.isTraveler = false,
+    this.travelerExpiry,
+    this.travelerLocation,
+    this.privatePhotoUrls = const [],
+    this.voiceRecordingUrl,
+    this.personalityTraits,
+    this.education,
+    this.occupation,
+    this.lookingFor,
+    this.height,
+    this.weight,
+    this.verificationStatus = VerificationStatus.notSubmitted,
+    this.verificationPhotoUrl,
+    this.verificationMethod,
+    this.verificationPhone,
+    this.verificationRejectionReason,
+    this.verificationSubmittedAt,
+    this.verificationReviewedAt,
+    this.verificationReviewedBy,
+    this.isAdmin = false,
+    this.isSupport = false,
+    this.is2FAEnabled = false,
+    this.socialLinks,
+    this.membershipTier = MembershipTier.free,
+    this.membershipStartDate,
+    this.membershipEndDate,
+    this.hasBaseMembership = false,
+    this.baseMembershipEndDate,
+    this.isOnline = false,
+    this.lastSeen,
+    this.preferredLanguages = const [],
+    this.nativeLanguage,
+    this.travelPreference,
+    this.primaryOrigin,
+    this.secondaryOrigin,
+    this.isLocalGuide = false,
+    this.localGuideCity,
+    this.videoProfileUrl,
+    this.hasVideoProfile = false,
+    this.showOnMap = true,
+    this.globeDiscoverability = GlobeDiscoverability.approximate,
+    this.completedSafetyModules = const [],
+    this.signupGrantsApplied = const [],
+    this.signupGrantsAppliedAt,
+  });
   final String userId;
   final String displayName;
   final String? nickname; // Unique username, format: lowercase alphanumeric + underscores, 3-20 chars
@@ -115,73 +173,6 @@ class Profile extends Equatable {
   final List<SignupGrant> signupGrantsApplied;
   final DateTime? signupGrantsAppliedAt;
 
-  const Profile({
-    required this.userId,
-    required this.displayName,
-    this.nickname,
-    required this.dateOfBirth,
-    required this.gender,
-    this.sexualOrientation,
-    this.accountStatus = 'active',
-    this.isBoosted = false,
-    this.boostExpiry,
-    this.isIncognito = false,
-    this.incognitoExpiry,
-    this.isGhostMode = false,
-    this.isTraveler = false,
-    this.travelerExpiry,
-    this.travelerLocation,
-    required this.photoUrls,
-    this.privatePhotoUrls = const [],
-    required this.bio,
-    required this.interests,
-    required this.location,
-    required this.languages,
-    this.voiceRecordingUrl,
-    this.personalityTraits,
-    this.education,
-    this.occupation,
-    this.lookingFor,
-    this.height,
-    this.weight,
-    required this.createdAt,
-    required this.updatedAt,
-    required this.isComplete,
-    this.verificationStatus = VerificationStatus.notSubmitted,
-    this.verificationPhotoUrl,
-    this.verificationMethod,
-    this.verificationPhone,
-    this.verificationRejectionReason,
-    this.verificationSubmittedAt,
-    this.verificationReviewedAt,
-    this.verificationReviewedBy,
-    this.isAdmin = false,
-    this.isSupport = false,
-    this.is2FAEnabled = false,
-    this.socialLinks,
-    this.membershipTier = MembershipTier.free,
-    this.membershipStartDate,
-    this.membershipEndDate,
-    this.hasBaseMembership = false,
-    this.baseMembershipEndDate,
-    this.isOnline = false,
-    this.lastSeen,
-    this.preferredLanguages = const [],
-    this.nativeLanguage,
-    this.travelPreference,
-    this.primaryOrigin,
-    this.secondaryOrigin,
-    this.isLocalGuide = false,
-    this.localGuideCity,
-    this.videoProfileUrl,
-    this.hasVideoProfile = false,
-    this.showOnMap = true,
-    this.globeDiscoverability = GlobeDiscoverability.approximate,
-    this.completedSafetyModules = const [],
-    this.signupGrantsApplied = const [],
-    this.signupGrantsAppliedAt,
-  });
-
   /// Get formatted nickname with @ prefix
   String? get formattedNickname => nickname != null ? '@$nickname' : null;
 
@@ -230,7 +221,7 @@ class Profile extends Equatable {
 
   int get age {
     final now = DateTime.now();
-    int age = now.year - dateOfBirth.year;
+    var age = now.year - dateOfBirth.year;
     if (now.month < dateOfBirth.month ||
         (now.month == dateOfBirth.month && now.day < dateOfBirth.day)) {
       age--;
@@ -445,10 +436,6 @@ class Profile extends Equatable {
 /// A grant applied automatically at signup based on the email allowlist.
 /// Written by the applySignupGrants Cloud Function trigger.
 class SignupGrant extends Equatable {
-  final String couponId;
-  final String couponCode;
-  final String grantSummary; // e.g. "GOLD +30d + BASE +30d" or "+500 coins"
-  final bool dismissed;
 
   const SignupGrant({
     required this.couponId,
@@ -457,18 +444,22 @@ class SignupGrant extends Equatable {
     this.dismissed = false,
   });
 
-  SignupGrant copyWith({bool? dismissed}) => SignupGrant(
-        couponId: couponId,
-        couponCode: couponCode,
-        grantSummary: grantSummary,
-        dismissed: dismissed ?? this.dismissed,
-      );
-
   factory SignupGrant.fromMap(Map<String, dynamic> m) => SignupGrant(
         couponId: (m['couponId'] as String?) ?? '',
         couponCode: (m['couponCode'] as String?) ?? '',
         grantSummary: (m['grantSummary'] as String?) ?? '',
         dismissed: (m['dismissed'] as bool?) ?? false,
+      );
+  final String couponId;
+  final String couponCode;
+  final String grantSummary; // e.g. "GOLD +30d + BASE +30d" or "+500 coins"
+  final bool dismissed;
+
+  SignupGrant copyWith({bool? dismissed}) => SignupGrant(
+        couponId: couponId,
+        couponCode: couponCode,
+        grantSummary: grantSummary,
+        dismissed: dismissed ?? this.dismissed,
       );
 
   Map<String, dynamic> toMap() => {
@@ -483,11 +474,6 @@ class SignupGrant extends Equatable {
 }
 
 class PersonalityTraits extends Equatable {
-  final int openness;
-  final int conscientiousness;
-  final int extraversion;
-  final int agreeableness;
-  final int neuroticism;
 
   const PersonalityTraits({
     required this.openness,
@@ -496,6 +482,11 @@ class PersonalityTraits extends Equatable {
     required this.agreeableness,
     required this.neuroticism,
   });
+  final int openness;
+  final int conscientiousness;
+  final int extraversion;
+  final int agreeableness;
+  final int neuroticism;
 
   @override
   List<Object?> get props => [

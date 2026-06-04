@@ -1,9 +1,10 @@
 import 'dart:async';
 import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+
 import '../../domain/entities/globe_user.dart';
 import '../models/globe_user_model.dart';
-import '../country_centroids.dart';
 
 abstract class GlobeRemoteDataSource {
   Future<GlobeData> getGlobeData({required String userId});
@@ -12,9 +13,9 @@ abstract class GlobeRemoteDataSource {
 }
 
 class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   GlobeRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   @override
   Future<GlobeData> getGlobeData({required String userId}) async {
@@ -240,7 +241,9 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
               loc['latitude'] == null ||
               loc['longitude'] == null ||
               (loc['country'] as String?) == null ||
-              (loc['country'] as String?) == 'Unknown') continue;
+              (loc['country'] as String?) == 'Unknown') {
+            continue;
+          }
 
           matchedUsers.add(GlobeUserModel.fromFirestore(
             data: profileData,

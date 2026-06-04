@@ -1,20 +1,20 @@
 import 'dart:async';
-import 'package:dartz/dartz.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:dartz/dartz.dart';
+
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/purchase.dart' as domain;
 import '../../domain/entities/subscription.dart';
 import '../../domain/repositories/subscription_repository.dart';
 import '../datasources/subscription_remote_datasource.dart';
-import '../models/subscription_model.dart';
 
 /// Subscription Repository Implementation
 /// Handles subscription and purchase operations
 class SubscriptionRepositoryImpl implements SubscriptionRepository {
-  final SubscriptionRemoteDataSource remoteDataSource;
 
   SubscriptionRepositoryImpl({required this.remoteDataSource});
+  final SubscriptionRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, Subscription?>> getCurrentSubscription(String userId) async {

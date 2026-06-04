@@ -10,9 +10,7 @@ class EventAttendeeModel extends EventAttendee {
     required super.eventId,
     required super.userId,
     required super.userName,
-    super.userPhotoUrl,
-    required super.status,
-    required super.rsvpDate,
+    required super.status, required super.rsvpDate, super.userPhotoUrl,
     super.isApproved = false,
   });
 

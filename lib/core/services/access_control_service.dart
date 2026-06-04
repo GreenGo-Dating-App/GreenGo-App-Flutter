@@ -39,27 +39,12 @@ extension ApprovalStatusExtension on ApprovalStatus {
 
 /// User access control data
 class UserAccessData {
-  final String userId;
-  final ApprovalStatus approvalStatus;
-  final DateTime? approvedAt;
-  final String? approvedBy;
-  final DateTime accessDate;
-  final SubscriptionTier membershipTier;
-  final bool notificationsEnabled;
-  final bool hasEarlyAccess;
-  final bool isAdmin;
-  final String? preSaleTier;
-  final int? preSaleNumberOfDays;
-  final DateTime? subscriptionExpiryDate;
-  final DateTime? baseMembershipExpiryDate;
 
   UserAccessData({
     required this.userId,
     required this.approvalStatus,
-    this.approvedAt,
+    required this.accessDate, required this.membershipTier, this.approvedAt,
     this.approvedBy,
-    required this.accessDate,
-    required this.membershipTier,
     this.notificationsEnabled = false,
     this.hasEarlyAccess = false,
     this.isAdmin = false,
@@ -106,6 +91,19 @@ class UserAccessData {
           : null,
     );
   }
+  final String userId;
+  final ApprovalStatus approvalStatus;
+  final DateTime? approvedAt;
+  final String? approvedBy;
+  final DateTime accessDate;
+  final SubscriptionTier membershipTier;
+  final bool notificationsEnabled;
+  final bool hasEarlyAccess;
+  final bool isAdmin;
+  final String? preSaleTier;
+  final int? preSaleNumberOfDays;
+  final DateTime? subscriptionExpiryDate;
+  final DateTime? baseMembershipExpiryDate;
 
   Map<String, dynamic> toFirestore() {
     return {
@@ -183,6 +181,16 @@ class UserAccessData {
 
 /// Service for managing user access control during MVP release
 class AccessControlService {
+
+  AccessControlService({
+    FirebaseFirestore? firestore,
+    auth.FirebaseAuth? firebaseAuth,
+    EarlyAccessService? earlyAccessService,
+    PreSaleService? preSaleService,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = firebaseAuth ?? auth.FirebaseAuth.instance,
+        _earlyAccessService = earlyAccessService ?? EarlyAccessService(),
+        _preSaleService = preSaleService ?? PreSaleService();
   final FirebaseFirestore _firestore;
   final auth.FirebaseAuth _auth;
   final EarlyAccessService _earlyAccessService;
@@ -275,16 +283,6 @@ class AccessControlService {
   }
 
   final PreSaleService _preSaleService;
-
-  AccessControlService({
-    FirebaseFirestore? firestore,
-    auth.FirebaseAuth? firebaseAuth,
-    EarlyAccessService? earlyAccessService,
-    PreSaleService? preSaleService,
-  })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _auth = firebaseAuth ?? auth.FirebaseAuth.instance,
-        _earlyAccessService = earlyAccessService ?? EarlyAccessService(),
-        _preSaleService = preSaleService ?? PreSaleService();
 
   /// Get current user's access data
   /// When [forceServer] is true, bypasses Firestore cache to get fresh data.
@@ -430,7 +428,7 @@ class AccessControlService {
     }
 
     // 2. Check early access list
-    bool hasEarlyAccess = false;
+    var hasEarlyAccess = false;
     if (email != null) {
       hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
     }
@@ -461,7 +459,7 @@ class AccessControlService {
     final tierString = userDoc.data()?['membershipTier'] as String? ?? 'basic';
     final tier = SubscriptionTierExtension.fromString(tierString);
 
-    bool hasEarlyAccess = false;
+    var hasEarlyAccess = false;
     if (email != null) {
       hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
     }

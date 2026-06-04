@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../../authentication/presentation/bloc/auth_event.dart';
 
@@ -40,6 +41,6 @@ Future<void> showOnboardingExitDialog(BuildContext context) async {
     ),
   );
   if (confirmed == true && context.mounted) {
-    context.read<AuthBloc>().add(AuthSignOutRequested());
+    context.read<AuthBloc>().add(const AuthSignOutRequested());
   }
 }

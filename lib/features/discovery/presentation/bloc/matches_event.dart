@@ -5,47 +5,47 @@ abstract class MatchesEvent {
 
 /// Load user's matches
 class MatchesLoadRequested extends MatchesEvent {
-  final String userId;
-  final bool activeOnly;
 
   const MatchesLoadRequested({
     required this.userId,
     this.activeOnly = true,
   });
+  final String userId;
+  final bool activeOnly;
 }
 
 /// Refresh matches
 class MatchesRefreshRequested extends MatchesEvent {
-  final String userId;
 
   const MatchesRefreshRequested(this.userId);
+  final String userId;
 }
 
 /// Mark match as seen
 class MatchMarkedAsSeen extends MatchesEvent {
-  final String matchId;
-  final String userId;
 
   const MatchMarkedAsSeen({
     required this.matchId,
     required this.userId,
   });
+  final String matchId;
+  final String userId;
 }
 
 /// Unmatch with user
 class MatchUnmatchRequested extends MatchesEvent {
-  final String matchId;
-  final String userId;
 
   const MatchUnmatchRequested({
     required this.matchId,
     required this.userId,
   });
+  final String matchId;
+  final String userId;
 }
 
 /// Internal event: matches stream detected new data
 class MatchesStreamUpdated extends MatchesEvent {
-  final String userId;
 
   const MatchesStreamUpdated(this.userId);
+  final String userId;
 }

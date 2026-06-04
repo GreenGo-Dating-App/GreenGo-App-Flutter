@@ -1,21 +1,20 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import '../../../../generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
 import '../bloc/subscription_bloc.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
 class MembershipSelectionScreen extends StatefulWidget {
-  final String? currentUserId;
 
-  const MembershipSelectionScreen({Key? key, this.currentUserId})
-      : super(key: key);
+  const MembershipSelectionScreen({super.key, this.currentUserId});
+  final String? currentUserId;
 
   @override
   State<MembershipSelectionScreen> createState() =>
@@ -525,7 +524,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                   if (!isLocked && isYearly) ...[
                     Text(
                       '\$${(_getTierFromProductId(product.id).monthlyPrice * 12).toStringAsFixed(2)}',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 14,
                         color: Colors.white38,
                         decoration: TextDecoration.lineThrough,

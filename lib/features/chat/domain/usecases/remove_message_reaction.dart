@@ -6,16 +6,16 @@ import '../repositories/chat_repository.dart';
 ///
 /// Removes a user's emoji reaction from a message
 class RemoveMessageReaction {
-  final ChatRepository repository;
 
   RemoveMessageReaction(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String messageId,
     required String conversationId,
     required String userId,
   }) async {
-    return await repository.removeReaction(
+    return repository.removeReaction(
       messageId: messageId,
       conversationId: conversationId,
       userId: userId,

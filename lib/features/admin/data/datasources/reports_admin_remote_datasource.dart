@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../domain/entities/message_report.dart';
+
 import '../../../chat/data/models/message_model.dart';
 import '../../../chat/domain/entities/message.dart';
+import '../../domain/entities/message_report.dart';
 
 /// Reports Admin Remote Data Source
 ///
@@ -34,9 +35,9 @@ abstract class ReportsAdminRemoteDataSource {
 }
 
 class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   ReportsAdminRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   @override
   Future<List<MessageReport>> getPendingReports() async {
@@ -47,7 +48,7 @@ class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
           .orderBy('reportedAt', descending: true)
           .get();
 
-      return snapshot.docs.map((doc) => _reportFromFirestore(doc)).toList();
+      return snapshot.docs.map(_reportFromFirestore).toList();
     } catch (e) {
       throw Exception('Failed to get pending reports: $e');
     }
@@ -62,7 +63,7 @@ class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
           .limit(limit)
           .get();
 
-      return snapshot.docs.map((doc) => _reportFromFirestore(doc)).toList();
+      return snapshot.docs.map(_reportFromFirestore).toList();
     } catch (e) {
       throw Exception('Failed to get all reports: $e');
     }
@@ -133,7 +134,7 @@ class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
 
       // Add before messages (reverse to chronological order)
       final beforeMessages = beforeQuery.docs
-          .map((doc) => MessageModel.fromFirestore(doc))
+          .map(MessageModel.fromFirestore)
           .toList()
           .reversed;
       messages.addAll(beforeMessages);
@@ -143,7 +144,7 @@ class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
 
       // Add after messages
       final afterMessages = afterQuery.docs
-          .map((doc) => MessageModel.fromFirestore(doc))
+          .map(MessageModel.fromFirestore)
           .toList();
       messages.addAll(afterMessages);
 

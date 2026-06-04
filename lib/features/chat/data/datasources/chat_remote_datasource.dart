@@ -298,14 +298,14 @@ abstract class ChatRemoteDataSource {
 
 /// Implementation
 class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final BlockedUsersService blockedUsersService;
-  final ContentFilterService _contentFilter = ContentFilterService();
 
   ChatRemoteDataSourceImpl({
     required this.firestore,
     required this.blockedUsersService,
   });
+  final FirebaseFirestore firestore;
+  final BlockedUsersService blockedUsersService;
+  final ContentFilterService _contentFilter = ContentFilterService();
 
   @override
   Future<ConversationModel> getConversation(String matchId) async {
@@ -375,7 +375,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
     return query.snapshots().map((snapshot) {
       var messages = snapshot.docs
-          .map((doc) => MessageModel.fromFirestore(doc))
+          .map(MessageModel.fromFirestore)
           .toList();
 
       // Filter out messages deleted for this user (client-side filtering)
@@ -732,7 +732,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           ))
           .get();
 
-      int totalUnread = 0;
+      var totalUnread = 0;
       for (final doc in conversationsSnapshot.docs) {
         final data = doc.data();
         totalUnread += (data['unreadCount'] as int?) ?? 0;
@@ -856,6 +856,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }
 
   /// Pin or unpin conversation (Point 118)
+  @override
   Future<void> pinConversation({
     required String conversationId,
     required String userId,
@@ -877,6 +878,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }
 
   /// Mute or unmute conversation (Point 119)
+  @override
   Future<void> muteConversation({
     required String conversationId,
     required String userId,
@@ -903,6 +905,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   /// Per-user mute. Writes to `conversations/{convId}.mutedBy[userId]`.
   /// Value semantics: 0 = muted forever, otherwise epoch ms expiry.
   /// Cloud Function `onNewMessagePush` reads this map to skip push for muted recipient.
+  @override
   Future<void> setConversationMutedForUser({
     required String conversationId,
     required String userId,
@@ -926,6 +929,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }
 
   /// Returns true if [userId] has muted [conversationId] and the mute hasn't expired.
+  @override
   Future<bool> isConversationMutedForUser({
     required String conversationId,
     required String userId,
@@ -947,6 +951,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }
 
   /// Archive or unarchive conversation (Point 120)
+  @override
   Future<void> archiveConversation({
     required String conversationId,
     required String userId,
@@ -968,6 +973,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   }
 
   /// Update conversation theme (Point 117)
+  @override
   Future<void> updateConversationTheme({
     required String conversationId,
     required String theme,
@@ -1082,7 +1088,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       // Add before messages (reverse to chronological order)
       final beforeMessages = beforeQuery.docs
-          .map((doc) => MessageModel.fromFirestore(doc))
+          .map(MessageModel.fromFirestore)
           .toList()
           .reversed;
       messages.addAll(beforeMessages);
@@ -1092,7 +1098,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       // Add after messages
       final afterMessages = afterQuery.docs
-          .map((doc) => MessageModel.fromFirestore(doc))
+          .map(MessageModel.fromFirestore)
           .toList();
       messages.addAll(afterMessages);
 
@@ -1813,7 +1819,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         .snapshots()
         .map((snapshot) {
       return snapshot.docs
-          .map((doc) => ConversationModel.fromFirestore(doc))
+          .map(ConversationModel.fromFirestore)
           .toList();
     });
   }
@@ -2041,10 +2047,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
 /// Exception thrown when a message is blocked due to contact information
 class ContactInfoBlockedException implements Exception {
-  final String message;
-  final List<String> violations;
 
   ContactInfoBlockedException(this.message, this.violations);
+  final String message;
+  final List<String> violations;
 
   @override
   String toString() => 'ContactInfoBlockedException: $message';

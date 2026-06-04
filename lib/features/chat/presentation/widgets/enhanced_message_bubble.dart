@@ -1,15 +1,27 @@
 import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 
 /// Enhanced Message Bubble Widget
 ///
 /// Displays a chat message with reactions, status indicators, and context menu
 class EnhancedMessageBubble extends StatelessWidget {
+
+  const EnhancedMessageBubble({
+    required this.message, required this.isCurrentUser, required this.currentUserId, super.key,
+    this.onReact,
+    this.onCopy,
+    this.onDelete,
+    this.onForward,
+    this.onTranslate,
+    this.onAlbumTap,
+  });
   final Message message;
   final bool isCurrentUser;
   final String currentUserId;
@@ -19,19 +31,6 @@ class EnhancedMessageBubble extends StatelessWidget {
   final VoidCallback? onForward;
   final VoidCallback? onTranslate;
   final Function(Message)? onAlbumTap;
-
-  const EnhancedMessageBubble({
-    super.key,
-    required this.message,
-    required this.isCurrentUser,
-    required this.currentUserId,
-    this.onReact,
-    this.onCopy,
-    this.onDelete,
-    this.onForward,
-    this.onTranslate,
-    this.onAlbumTap,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +196,7 @@ class EnhancedMessageBubble extends StatelessWidget {
           : l10n.chatOtherRevokedAlbum(albumOwnerName);
     }
 
-    final bool isTappable = isShare && !isCurrentUser;
+    final isTappable = isShare && !isCurrentUser;
 
     return GestureDetector(
       onTap: isTappable ? () => onAlbumTap?.call(message) : null,
@@ -642,7 +641,7 @@ class EnhancedMessageBubble extends StatelessWidget {
   }
 
   Widget _buildQuickReaction(BuildContext context, String emoji) {
-    final bool isReacted = message.getReaction(currentUserId) == emoji;
+    final isReacted = message.getReaction(currentUserId) == emoji;
 
     return GestureDetector(
       onTap: () {

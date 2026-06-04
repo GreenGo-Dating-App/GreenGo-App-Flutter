@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // Agora SDK disabled for development
 // import 'package:agora_rtc_engine/agora_rtc_engine.dart';
-import '../../domain/entities/video_call.dart';
 import '../../domain/services/translation_service.dart';
 import '../bloc/video_call_bloc.dart';
 import '../bloc/video_call_event.dart';
@@ -14,6 +13,14 @@ import '../widgets/subtitle_overlay.dart';
 
 /// Main Video Call Screen
 class VideoCallScreen extends StatefulWidget {
+
+  const VideoCallScreen({
+    required this.callId, required this.currentUserId, required this.otherUserId, required this.otherUserName, super.key,
+    this.otherUserPhotoUrl,
+    this.isIncoming = false,
+    this.currentUserLanguage,
+    this.otherUserLanguage,
+  });
   final String callId;
   final String currentUserId;
   final String otherUserId;
@@ -22,18 +29,6 @@ class VideoCallScreen extends StatefulWidget {
   final bool isIncoming;
   final String? currentUserLanguage;
   final String? otherUserLanguage;
-
-  const VideoCallScreen({
-    super.key,
-    required this.callId,
-    required this.currentUserId,
-    required this.otherUserId,
-    required this.otherUserName,
-    this.otherUserPhotoUrl,
-    this.isIncoming = false,
-    this.currentUserLanguage,
-    this.otherUserLanguage,
-  });
 
   @override
   State<VideoCallScreen> createState() => _VideoCallScreenState();
@@ -400,7 +395,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
           right: 0,
           child: Container(
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,

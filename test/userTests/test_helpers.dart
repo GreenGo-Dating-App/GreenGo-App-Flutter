@@ -70,7 +70,7 @@ class TestHelpers {
     double delta = -100,
     int maxScrolls = 50,
   }) async {
-    int scrolls = 0;
+    var scrolls = 0;
     while (finder.evaluate().isEmpty && scrolls < maxScrolls) {
       await tester.drag(find.byType(Scrollable).first, Offset(0, delta));
       await tester.pumpAndSettle();

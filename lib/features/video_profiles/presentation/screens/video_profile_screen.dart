@@ -16,16 +16,15 @@ import '../widgets/video_prompt_selector.dart';
 /// Integrates with [VideoProfileBloc] for upload operations and
 /// [VideoPromptSelector] for multilingual prompt selection.
 class VideoProfileScreen extends StatefulWidget {
-  final String userId;
-  final VideoProfile? existingProfile;
-  final Function(String videoUrl, String? thumbnailUrl)? onVideoUploaded;
 
   const VideoProfileScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.existingProfile,
     this.onVideoUploaded,
   });
+  final String userId;
+  final VideoProfile? existingProfile;
+  final Function(String videoUrl, String? thumbnailUrl)? onVideoUploaded;
 
   @override
   State<VideoProfileScreen> createState() => _VideoProfileScreenState();
@@ -34,7 +33,7 @@ class VideoProfileScreen extends StatefulWidget {
 class _VideoProfileScreenState extends State<VideoProfileScreen> {
   VideoPlayerController? _videoController;
   File? _videoFile;
-  bool _isRecording = false;
+  final bool _isRecording = false;
   bool _isUploading = false;
   String? _selectedPrompt;
   final int _maxDurationSeconds = 30;
@@ -229,7 +228,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
   @override
   Widget build(BuildContext context) {
     // Wrap with BLoC listener if available
-    Widget body = _buildBody();
+    var body = _buildBody();
 
     try {
       context.read<VideoProfileBloc>();
@@ -425,7 +424,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                     : Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.videocam_outlined,
                             color: AppColors.textTertiary,
                             size: 64,
@@ -583,9 +582,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
 }
 
 class _VideoPlayPauseOverlay extends StatefulWidget {
-  final VideoPlayerController controller;
 
   const _VideoPlayPauseOverlay({required this.controller});
+  final VideoPlayerController controller;
 
   @override
   State<_VideoPlayPauseOverlay> createState() => _VideoPlayPauseOverlayState();
@@ -644,9 +643,9 @@ class _VideoPlayPauseOverlayState extends State<_VideoPlayPauseOverlay> {
 }
 
 class _VideoProgressIndicator extends StatefulWidget {
-  final VideoPlayerController controller;
 
   const _VideoProgressIndicator({required this.controller});
+  final VideoPlayerController controller;
 
   @override
   State<_VideoProgressIndicator> createState() => _VideoProgressIndicatorState();

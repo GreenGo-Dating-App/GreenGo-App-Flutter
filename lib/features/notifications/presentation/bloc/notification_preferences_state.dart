@@ -21,9 +21,9 @@ class NotificationPreferencesLoading extends NotificationPreferencesState {
 
 /// Loaded state
 class NotificationPreferencesLoaded extends NotificationPreferencesState {
-  final NotificationPreferences preferences;
 
   const NotificationPreferencesLoaded({required this.preferences});
+  final NotificationPreferences preferences;
 
   @override
   List<Object?> get props => [preferences];
@@ -31,9 +31,9 @@ class NotificationPreferencesLoaded extends NotificationPreferencesState {
 
 /// Error state
 class NotificationPreferencesError extends NotificationPreferencesState {
-  final String message;
 
   const NotificationPreferencesError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];

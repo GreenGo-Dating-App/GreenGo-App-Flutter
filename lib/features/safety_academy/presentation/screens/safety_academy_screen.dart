@@ -17,9 +17,9 @@ import 'safety_lesson_screen.dart';
 /// Displays all 5 safety modules as cards, total XP earned,
 /// and completion progress for each module.
 class SafetyAcademyScreen extends StatelessWidget {
-  final String userId;
 
-  const SafetyAcademyScreen({super.key, required this.userId});
+  const SafetyAcademyScreen({required this.userId, super.key});
+  final String userId;
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +38,9 @@ class SafetyAcademyScreen extends StatelessWidget {
 }
 
 class _SafetyAcademyScreenContent extends StatelessWidget {
-  final String userId;
 
   const _SafetyAcademyScreenContent({required this.userId});
+  final String userId;
 
   @override
   Widget build(BuildContext context) {

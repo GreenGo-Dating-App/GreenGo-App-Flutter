@@ -12,6 +12,18 @@ class CountrySpotlightModel extends CountrySpotlight {
     super.sections,
   });
 
+  factory CountrySpotlightModel.fromEntity(CountrySpotlight entity) {
+    return CountrySpotlightModel(
+      id: entity.id,
+      country: entity.country,
+      title: entity.title,
+      imageUrl: entity.imageUrl,
+      weekOf: entity.weekOf,
+      isActive: entity.isActive,
+      sections: entity.sections,
+    );
+  }
+
   factory CountrySpotlightModel.fromFirestore(
     DocumentSnapshot<Map<String, dynamic>> doc,
   ) {
@@ -52,27 +64,23 @@ class CountrySpotlightModel extends CountrySpotlight {
           .toList(),
     };
   }
-
-  factory CountrySpotlightModel.fromEntity(CountrySpotlight entity) {
-    return CountrySpotlightModel(
-      id: entity.id,
-      country: entity.country,
-      title: entity.title,
-      imageUrl: entity.imageUrl,
-      weekOf: entity.weekOf,
-      isActive: entity.isActive,
-      sections: entity.sections,
-    );
-  }
 }
 
 class SpotlightSectionModel extends SpotlightSection {
   const SpotlightSectionModel({
     required super.title,
     required super.content,
-    super.imageUrl,
-    required super.type,
+    required super.type, super.imageUrl,
   });
+
+  factory SpotlightSectionModel.fromEntity(SpotlightSection entity) {
+    return SpotlightSectionModel(
+      title: entity.title,
+      content: entity.content,
+      imageUrl: entity.imageUrl,
+      type: entity.type,
+    );
+  }
 
   factory SpotlightSectionModel.fromJson(Map<String, dynamic> json) {
     return SpotlightSectionModel(
@@ -93,14 +101,5 @@ class SpotlightSectionModel extends SpotlightSection {
       'imageUrl': imageUrl,
       'type': type.name,
     };
-  }
-
-  factory SpotlightSectionModel.fromEntity(SpotlightSection entity) {
-    return SpotlightSectionModel(
-      title: entity.title,
-      content: entity.content,
-      imageUrl: entity.imageUrl,
-      type: entity.type,
-    );
   }
 }

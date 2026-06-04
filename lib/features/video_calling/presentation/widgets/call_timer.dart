@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 
 /// Call Timer Widget - Displays call duration
 class CallTimer extends StatelessWidget {
-  final Duration duration;
 
   const CallTimer({
-    super.key,
-    required this.duration,
+    required this.duration, super.key,
   });
+  final Duration duration;
 
   @override
   Widget build(BuildContext context) {

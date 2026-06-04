@@ -9,10 +9,10 @@ import '../models/safety_progress_model.dart';
 /// Handles all Firestore CRUD operations for safety modules,
 /// lessons, and user progress tracking.
 class SafetyAcademyRemoteDatasource {
-  final FirebaseFirestore _firestore;
 
   SafetyAcademyRemoteDatasource({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   // ---------------------------------------------------------------------------
   // Collection references
@@ -42,7 +42,7 @@ class SafetyAcademyRemoteDatasource {
           await _modulesCollection.orderBy('order', descending: false).get();
 
       return snapshot.docs
-          .map((doc) => SafetyModuleModel.fromFirestore(doc))
+          .map(SafetyModuleModel.fromFirestore)
           .toList();
     } catch (e) {
       throw Exception('Failed to fetch safety modules: $e');
@@ -73,7 +73,7 @@ class SafetyAcademyRemoteDatasource {
           .get();
 
       return snapshot.docs
-          .map((doc) => SafetyLessonModel.fromFirestore(doc))
+          .map(SafetyLessonModel.fromFirestore)
           .toList();
     } catch (e) {
       throw Exception('Failed to fetch lessons for module $moduleId: $e');

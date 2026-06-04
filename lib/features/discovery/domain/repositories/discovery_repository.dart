@@ -1,9 +1,10 @@
 import 'package:dartz/dartz.dart';
+
 import '../../../../core/error/failures.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
-import '../entities/match_preferences.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../entities/match.dart';
+import '../entities/match_preferences.dart';
 import '../entities/swipe_action.dart';
 
 /// Discovery Repository Interface

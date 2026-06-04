@@ -3,6 +3,18 @@ import 'package:equatable/equatable.dart';
 /// Coin Transaction Entity
 /// Point 159: Transaction history with earnings and spending
 class CoinTransaction extends Equatable {
+
+  const CoinTransaction({
+    required this.transactionId,
+    required this.userId,
+    required this.type,
+    required this.amount,
+    required this.balanceAfter,
+    required this.reason,
+    required this.createdAt, this.relatedId,
+    this.relatedUserId,
+    this.metadata,
+  });
   final String transactionId;
   final String userId;
   final CoinTransactionType type;
@@ -13,19 +25,6 @@ class CoinTransaction extends Equatable {
   final String? relatedUserId; // For gifts
   final Map<String, dynamic>? metadata;
   final DateTime createdAt;
-
-  const CoinTransaction({
-    required this.transactionId,
-    required this.userId,
-    required this.type,
-    required this.amount,
-    required this.balanceAfter,
-    required this.reason,
-    this.relatedId,
-    this.relatedUserId,
-    this.metadata,
-    required this.createdAt,
-  });
 
   /// Get display amount with sign
   String get displayAmount {

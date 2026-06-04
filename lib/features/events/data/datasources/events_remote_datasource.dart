@@ -1,10 +1,12 @@
 import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../../../core/error/exceptions.dart';
 import '../../domain/entities/event.dart';
-import '../models/event_model.dart';
 import '../models/event_attendee_model.dart';
+import '../models/event_model.dart';
 
 /// Events Remote Data Source Interface
 abstract class EventsRemoteDataSource {
@@ -45,20 +47,12 @@ abstract class EventsRemoteDataSource {
 
 /// Event Chat Message (lightweight, for event group chat sub-collection)
 class EventChatMessage {
-  final String id;
-  final String senderId;
-  final String senderName;
-  final String? senderPhotoUrl;
-  final String text;
-  final DateTime timestamp;
 
   const EventChatMessage({
     required this.id,
     required this.senderId,
     required this.senderName,
-    this.senderPhotoUrl,
-    required this.text,
-    required this.timestamp,
+    required this.text, required this.timestamp, this.senderPhotoUrl,
   });
 
   factory EventChatMessage.fromFirestore(DocumentSnapshot doc) {
@@ -74,6 +68,12 @@ class EventChatMessage {
           : DateTime.now(),
     );
   }
+  final String id;
+  final String senderId;
+  final String senderName;
+  final String? senderPhotoUrl;
+  final String text;
+  final DateTime timestamp;
 
   Map<String, dynamic> toJson() {
     return {
@@ -93,10 +93,10 @@ class EventChatMessage {
 /// Sub-collection: 'events/{eventId}/attendees'
 /// Sub-collection: 'events/{eventId}/messages'
 class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
-  final FirebaseFirestore _firestore;
 
   EventsRemoteDataSourceImpl({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   CollectionReference<Map<String, dynamic>> get _eventsCollection =>
       _firestore.collection('events');
@@ -108,7 +108,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     bool? upcoming,
   }) async {
     try {
-      Query<Map<String, dynamic>> query = _eventsCollection
+      var query = _eventsCollection
           .where('status', isEqualTo: EventStatus.published.name);
 
       // Filter by category
@@ -138,7 +138,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final snapshot = await query.get();
 
       final events = snapshot.docs
-          .map((doc) => EventModel.fromFirestore(doc))
+          .map(EventModel.fromFirestore)
           .toList();
 
       debugPrint('Events loaded: ${events.length} events');
@@ -303,7 +303,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .get();
 
       return snapshot.docs
-          .map((doc) => EventAttendeeModel.fromFirestore(doc))
+          .map(EventAttendeeModel.fromFirestore)
           .toList();
     } catch (e) {
       debugPrint('Error getting attendees: $e');
@@ -331,7 +331,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .get();
 
       final events = snapshot.docs
-          .map((doc) => EventModel.fromFirestore(doc))
+          .map(EventModel.fromFirestore)
           .where((event) {
         if (event.latitude == null || event.longitude == null) return false;
         final distance = _calculateDistanceKm(
@@ -368,7 +368,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .get();
 
       final organizedEvents = organizedSnapshot.docs
-          .map((doc) => EventModel.fromFirestore(doc))
+          .map(EventModel.fromFirestore)
           .toList();
 
       // Get events the user is attending (query attendees sub-collections)
@@ -399,14 +399,14 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           attendingEventIds.difference(organizedIds).toList();
 
       // Fetch attending events by ID (batched)
-      final List<Event> attendingEvents = [];
-      for (int i = 0; i < additionalIds.length; i += 10) {
+      final attendingEvents = <Event>[];
+      for (var i = 0; i < additionalIds.length; i += 10) {
         final batch = additionalIds.skip(i).take(10).toList();
         final batchSnapshot = await _eventsCollection
             .where(FieldPath.documentId, whereIn: batch)
             .get();
         attendingEvents.addAll(
-          batchSnapshot.docs.map((doc) => EventModel.fromFirestore(doc)),
+          batchSnapshot.docs.map(EventModel.fromFirestore),
         );
       }
 
@@ -432,7 +432,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         .snapshots()
         .map((snapshot) {
       return snapshot.docs
-          .map((doc) => EventChatMessage.fromFirestore(doc))
+          .map(EventChatMessage.fromFirestore)
           .toList();
     });
   }

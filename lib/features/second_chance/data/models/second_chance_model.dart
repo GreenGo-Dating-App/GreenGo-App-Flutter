@@ -81,12 +81,10 @@ class SecondChanceProfileModel extends SecondChanceProfile {
     required super.name,
     required super.age,
     required super.photos,
-    super.bio,
+    required super.likedYouAt, required super.entry, super.bio,
     super.interests = const [],
     super.distance,
     super.isVerified = false,
-    required super.likedYouAt,
-    required super.entry,
   });
 
   factory SecondChanceProfileModel.fromMap(Map<String, dynamic> map) {

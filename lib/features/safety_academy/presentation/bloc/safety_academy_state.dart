@@ -6,6 +6,21 @@ import '../../domain/entities/safety_progress.dart';
 
 /// State for the Safety Academy BLoC
 class SafetyAcademyState extends Equatable {
+
+  const SafetyAcademyState({
+    this.modules = const [],
+    this.currentLessons = const [],
+    this.progress,
+    this.isLoadingModules = false,
+    this.isLoadingLessons = false,
+    this.isLoadingProgress = false,
+    this.errorMessage,
+    this.successMessage,
+    this.lessonCompleted = false,
+    this.moduleCompleted = false,
+  });
+
+  factory SafetyAcademyState.initial() => const SafetyAcademyState();
   /// All available safety modules
   final List<SafetyModule> modules;
 
@@ -35,21 +50,6 @@ class SafetyAcademyState extends Equatable {
 
   /// Whether a module was just completed (for UI feedback)
   final bool moduleCompleted;
-
-  const SafetyAcademyState({
-    this.modules = const [],
-    this.currentLessons = const [],
-    this.progress,
-    this.isLoadingModules = false,
-    this.isLoadingLessons = false,
-    this.isLoadingProgress = false,
-    this.errorMessage,
-    this.successMessage,
-    this.lessonCompleted = false,
-    this.moduleCompleted = false,
-  });
-
-  factory SafetyAcademyState.initial() => const SafetyAcademyState();
 
   SafetyAcademyState copyWith({
     List<SafetyModule>? modules,

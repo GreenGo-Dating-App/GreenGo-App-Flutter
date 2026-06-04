@@ -4,19 +4,6 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents a reported message in the system
 class MessageReport extends Equatable {
-  final String reportId;
-  final String messageId;
-  final String conversationId;
-  final String messageContent;
-  final DateTime messageSentAt;
-  final String reporterId;
-  final String reportedUserId;
-  final String reason;
-  final DateTime reportedAt;
-  final ReportStatus status;
-  final String? reviewedBy;
-  final DateTime? reviewedAt;
-  final String? actionTaken;
 
   const MessageReport({
     required this.reportId,
@@ -33,6 +20,19 @@ class MessageReport extends Equatable {
     this.reviewedAt,
     this.actionTaken,
   });
+  final String reportId;
+  final String messageId;
+  final String conversationId;
+  final String messageContent;
+  final DateTime messageSentAt;
+  final String reporterId;
+  final String reportedUserId;
+  final String reason;
+  final DateTime reportedAt;
+  final ReportStatus status;
+  final String? reviewedBy;
+  final DateTime? reviewedAt;
+  final String? actionTaken;
 
   MessageReport copyWith({
     String? reportId,

@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #12: Streak Display Widget
 /// Shows current login streak count
 class StreakDisplay extends StatelessWidget {
-  final int streakDays;
-  final bool isCompact;
-  final VoidCallback? onTap;
 
   const StreakDisplay({
-    super.key,
-    required this.streakDays,
+    required this.streakDays, super.key,
     this.isCompact = false,
     this.onTap,
   });
+  final int streakDays;
+  final bool isCompact;
+  final VoidCallback? onTap;
 
   Color _getStreakColor() {
     if (streakDays >= 30) return AppColors.richGold;
@@ -133,12 +132,11 @@ class StreakDisplay extends StatelessWidget {
 
 /// Mini streak badge for profile/header
 class StreakBadge extends StatelessWidget {
-  final int streakDays;
 
   const StreakBadge({
-    super.key,
-    required this.streakDays,
+    required this.streakDays, super.key,
   });
+  final int streakDays;
 
   @override
   Widget build(BuildContext context) {

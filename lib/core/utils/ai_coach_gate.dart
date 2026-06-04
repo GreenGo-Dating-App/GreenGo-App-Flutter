@@ -1,9 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
-import '../constants/app_colors.dart';
-import '../../features/profile/domain/entities/profile.dart';
+
 import '../../features/membership/domain/entities/membership.dart';
+import '../../features/profile/domain/entities/profile.dart';
+import '../../generated/app_localizations.dart';
+import '../constants/app_colors.dart';
 
 /// Gates the AI Coach feature behind premium membership.
 ///
@@ -206,10 +207,6 @@ class AiCoachGate {
 
 /// Represents user's access status for AI Coach
 class AiCoachAccess {
-  final bool hasAccess;
-  final bool isPremium;
-  final int remainingTrialSeconds;
-  final int trialUsedSeconds;
 
   const AiCoachAccess({
     required this.hasAccess,
@@ -217,6 +214,10 @@ class AiCoachAccess {
     required this.remainingTrialSeconds,
     required this.trialUsedSeconds,
   });
+  final bool hasAccess;
+  final bool isPremium;
+  final int remainingTrialSeconds;
+  final int trialUsedSeconds;
 
   String get remainingTrialFormatted {
     final minutes = remainingTrialSeconds ~/ 60;

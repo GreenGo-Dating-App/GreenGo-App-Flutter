@@ -11,7 +11,6 @@ import 'video_profile_state.dart';
 ///
 /// Handles uploading, loading, deleting, and browsing video profiles.
 class VideoProfileBloc extends Bloc<VideoProfileEvent, VideoProfileState> {
-  final VideoProfileRepository repository;
 
   VideoProfileBloc({required this.repository})
       : super(const VideoProfileInitial()) {
@@ -20,6 +19,7 @@ class VideoProfileBloc extends Bloc<VideoProfileEvent, VideoProfileState> {
     on<DeleteVideoProfile>(_onDeleteVideoProfile);
     on<LoadDiscoveryVideos>(_onLoadDiscoveryVideos);
   }
+  final VideoProfileRepository repository;
 
   Future<void> _onUploadVideoProfile(
     UploadVideoProfile event,

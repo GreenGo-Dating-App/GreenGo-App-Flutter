@@ -8,9 +8,9 @@ import '../repositories/coin_repository.dart';
 /// Purchase Coins Use Case
 /// Point 157: Handle coin package purchases
 class PurchaseCoins {
-  final CoinRepository repository;
 
   PurchaseCoins(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinTransaction>> call({
     required String userId,
@@ -19,7 +19,7 @@ class PurchaseCoins {
     String? purchaseToken,
     CoinPromotion? promotion,
   }) async {
-    return await repository.purchaseCoins(
+    return repository.purchaseCoins(
       userId: userId,
       package: package,
       platform: platform,
@@ -31,27 +31,27 @@ class PurchaseCoins {
 
 /// Get Available Coin Packages Use Case
 class GetAvailablePackages {
-  final CoinRepository repository;
 
   GetAvailablePackages(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinPackage>>> call() async {
-    return await repository.getAvailablePackages();
+    return repository.getAvailablePackages();
   }
 }
 
 /// Verify Coin Purchase Use Case
 class VerifyCoinPurchase {
-  final CoinRepository repository;
 
   VerifyCoinPurchase(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, bool>> call({
     required String userId,
     required String purchaseToken,
     required String platform,
   }) async {
-    return await repository.verifyPurchase(
+    return repository.verifyPurchase(
       userId: userId,
       purchaseToken: purchaseToken,
       platform: platform,

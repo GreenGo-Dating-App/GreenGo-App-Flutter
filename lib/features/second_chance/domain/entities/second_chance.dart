@@ -14,14 +14,6 @@ class SecondChanceConfig {
 
 /// Second Chance Pool Entry
 class SecondChanceEntry extends Equatable {
-  final String id;
-  final String userId;
-  final String skippedUserId;
-  final DateTime skippedAt;
-  final DateTime availableUntil;
-  final bool isUsed;
-  final DateTime? usedAt;
-  final SecondChanceAction? action;
 
   const SecondChanceEntry({
     required this.id,
@@ -33,6 +25,14 @@ class SecondChanceEntry extends Equatable {
     this.usedAt,
     this.action,
   });
+  final String id;
+  final String userId;
+  final String skippedUserId;
+  final DateTime skippedAt;
+  final DateTime availableUntil;
+  final bool isUsed;
+  final DateTime? usedAt;
+  final SecondChanceAction? action;
 
   @override
   List<Object?> get props => [
@@ -75,6 +75,17 @@ enum SecondChanceAction {
 
 /// Second Chance Profile View
 class SecondChanceProfile extends Equatable {
+
+  const SecondChanceProfile({
+    required this.odldid,
+    required this.name,
+    required this.age,
+    required this.photos,
+    required this.likedYouAt, required this.entry, this.bio,
+    this.interests = const [],
+    this.distance,
+    this.isVerified = false,
+  });
   final String odldid;
   final String name;
   final int age;
@@ -85,19 +96,6 @@ class SecondChanceProfile extends Equatable {
   final bool isVerified;
   final DateTime likedYouAt;
   final SecondChanceEntry entry;
-
-  const SecondChanceProfile({
-    required this.odldid,
-    required this.name,
-    required this.age,
-    required this.photos,
-    this.bio,
-    this.interests = const [],
-    this.distance,
-    this.isVerified = false,
-    required this.likedYouAt,
-    required this.entry,
-  });
 
   @override
   List<Object?> get props => [
@@ -127,10 +125,6 @@ class SecondChanceProfile extends Equatable {
 
 /// Second Chance Action Result
 class SecondChanceResult extends Equatable {
-  final bool success;
-  final bool isMatch;
-  final String? matchId;
-  final String? errorMessage;
 
   const SecondChanceResult({
     required this.success,
@@ -138,6 +132,10 @@ class SecondChanceResult extends Equatable {
     this.matchId,
     this.errorMessage,
   });
+  final bool success;
+  final bool isMatch;
+  final String? matchId;
+  final String? errorMessage;
 
   @override
   List<Object?> get props => [success, isMatch, matchId, errorMessage];
@@ -145,11 +143,6 @@ class SecondChanceResult extends Equatable {
 
 /// Daily Second Chance Usage
 class SecondChanceUsage extends Equatable {
-  final String odldid;
-  final DateTime date;
-  final int freeUsed;
-  final bool hasUnlimited;
-  final DateTime? unlimitedExpiresAt;
 
   const SecondChanceUsage({
     required this.odldid,
@@ -158,6 +151,11 @@ class SecondChanceUsage extends Equatable {
     this.hasUnlimited = false,
     this.unlimitedExpiresAt,
   });
+  final String odldid;
+  final DateTime date;
+  final int freeUsed;
+  final bool hasUnlimited;
+  final DateTime? unlimitedExpiresAt;
 
   @override
   List<Object?> get props => [

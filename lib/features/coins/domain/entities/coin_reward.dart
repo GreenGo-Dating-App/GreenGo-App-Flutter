@@ -3,15 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Coin Reward Entity
 /// Point 160: Coin rewards for achievements
 class CoinReward extends Equatable {
-  final String rewardId;
-  final String name;
-  final String description;
-  final int coinAmount;
-  final RewardType type;
-  final String? achievementId;
-  final bool isRecurring;
-  final int? maxClaims;
-  final Duration? cooldownPeriod;
 
   const CoinReward({
     required this.rewardId,
@@ -24,6 +15,15 @@ class CoinReward extends Equatable {
     this.maxClaims,
     this.cooldownPeriod,
   });
+  final String rewardId;
+  final String name;
+  final String description;
+  final int coinAmount;
+  final RewardType type;
+  final String? achievementId;
+  final bool isRecurring;
+  final int? maxClaims;
+  final Duration? cooldownPeriod;
 
   @override
   List<Object?> get props => [
@@ -163,11 +163,6 @@ class CoinRewards {
 
 /// Claimed reward entity
 class ClaimedReward extends Equatable {
-  final String userId;
-  final String rewardId;
-  final int coinAmount;
-  final DateTime claimedAt;
-  final int claimCount;
 
   const ClaimedReward({
     required this.userId,
@@ -176,6 +171,11 @@ class ClaimedReward extends Equatable {
     required this.claimedAt,
     this.claimCount = 1,
   });
+  final String userId;
+  final String rewardId;
+  final int coinAmount;
+  final DateTime claimedAt;
+  final int claimCount;
 
   @override
   List<Object?> get props => [

@@ -21,9 +21,9 @@ class VirtualGiftLoading extends VirtualGiftState {
 
 /// Error state
 class VirtualGiftError extends VirtualGiftState {
-  final String message;
 
   const VirtualGiftError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
@@ -31,10 +31,6 @@ class VirtualGiftError extends VirtualGiftState {
 
 /// Gift catalog loaded
 class GiftCatalogLoaded extends VirtualGiftState {
-  final List<VirtualGift> gifts;
-  final Map<String, List<VirtualGift>> giftsByCategory;
-  final String? selectedGiftId;
-  final int? userCoins;
 
   GiftCatalogLoaded({
     required this.gifts,
@@ -42,6 +38,10 @@ class GiftCatalogLoaded extends VirtualGiftState {
     this.selectedGiftId,
     this.userCoins,
   }) : giftsByCategory = giftsByCategory ?? _groupByCategory(gifts);
+  final List<VirtualGift> gifts;
+  final Map<String, List<VirtualGift>> giftsByCategory;
+  final String? selectedGiftId;
+  final int? userCoins;
 
   static Map<String, List<VirtualGift>> _groupByCategory(
       List<VirtualGift> gifts) {
@@ -99,9 +99,9 @@ class GiftCatalogLoaded extends VirtualGiftState {
 
 /// Gift sent successfully
 class GiftSent extends VirtualGiftState {
-  final SentVirtualGift sentGift;
 
   const GiftSent(this.sentGift);
+  final SentVirtualGift sentGift;
 
   @override
   List<Object?> get props => [sentGift];
@@ -109,15 +109,15 @@ class GiftSent extends VirtualGiftState {
 
 /// Received gifts loaded
 class ReceivedGiftsLoaded extends VirtualGiftState {
-  final List<SentVirtualGift> gifts;
-  final bool hasMore;
-  final int unviewedCount;
 
   const ReceivedGiftsLoaded({
     required this.gifts,
     this.hasMore = false,
     this.unviewedCount = 0,
   });
+  final List<SentVirtualGift> gifts;
+  final bool hasMore;
+  final int unviewedCount;
 
   /// Get new (unviewed) gifts
   List<SentVirtualGift> get newGifts => gifts.where((g) => g.isNew).toList();
@@ -128,13 +128,13 @@ class ReceivedGiftsLoaded extends VirtualGiftState {
 
 /// Sent gifts loaded
 class SentGiftsLoaded extends VirtualGiftState {
-  final List<SentVirtualGift> gifts;
-  final bool hasMore;
 
   const SentGiftsLoaded({
     required this.gifts,
     this.hasMore = false,
   });
+  final List<SentVirtualGift> gifts;
+  final bool hasMore;
 
   @override
   List<Object?> get props => [gifts, hasMore];
@@ -142,9 +142,9 @@ class SentGiftsLoaded extends VirtualGiftState {
 
 /// Gift marked as viewed
 class GiftMarkedViewed extends VirtualGiftState {
-  final String giftId;
 
   const GiftMarkedViewed(this.giftId);
+  final String giftId;
 
   @override
   List<Object?> get props => [giftId];
@@ -152,9 +152,9 @@ class GiftMarkedViewed extends VirtualGiftState {
 
 /// Gift statistics loaded
 class GiftStatsLoaded extends VirtualGiftState {
-  final GiftStats stats;
 
   const GiftStatsLoaded(this.stats);
+  final GiftStats stats;
 
   @override
   List<Object?> get props => [stats];
@@ -162,9 +162,9 @@ class GiftStatsLoaded extends VirtualGiftState {
 
 /// Unviewed gift count loaded
 class UnviewedGiftCountLoaded extends VirtualGiftState {
-  final int count;
 
   const UnviewedGiftCountLoaded(this.count);
+  final int count;
 
   @override
   List<Object?> get props => [count];
@@ -172,13 +172,13 @@ class UnviewedGiftCountLoaded extends VirtualGiftState {
 
 /// Gift sending in progress
 class GiftSending extends VirtualGiftState {
-  final String giftId;
-  final String receiverId;
 
   const GiftSending({
     required this.giftId,
     required this.receiverId,
   });
+  final String giftId;
+  final String receiverId;
 
   @override
   List<Object?> get props => [giftId, receiverId];
@@ -186,13 +186,13 @@ class GiftSending extends VirtualGiftState {
 
 /// Insufficient coins to send gift
 class InsufficientCoins extends VirtualGiftState {
-  final int required;
-  final int available;
 
   const InsufficientCoins({
     required this.required,
     required this.available,
   });
+  final int required;
+  final int available;
 
   int get shortfall => required - available;
 

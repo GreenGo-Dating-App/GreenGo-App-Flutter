@@ -7,16 +7,15 @@ import '../../domain/entities/spot.dart';
 /// Shows the spot's photo, name, category badge, rating stars,
 /// review count, and optional distance.
 class SpotCard extends StatelessWidget {
-  final Spot spot;
-  final VoidCallback? onTap;
-  final double? distanceKm;
 
   const SpotCard({
-    super.key,
-    required this.spot,
+    required this.spot, super.key,
     this.onTap,
     this.distanceKm,
   });
+  final Spot spot;
+  final VoidCallback? onTap;
+  final double? distanceKm;
 
   @override
   Widget build(BuildContext context) {
@@ -182,11 +181,11 @@ class SpotCard extends StatelessWidget {
   }
 
   List<Widget> _buildStars(double rating) {
-    final List<Widget> stars = [];
+    final stars = <Widget>[];
     final fullStars = rating.floor();
     final hasHalfStar = (rating - fullStars) >= 0.5;
 
-    for (int i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
       if (i < fullStars) {
         stars.add(const Icon(Icons.star, color: AppColors.richGold, size: 16));
       } else if (i == fullStars && hasHalfStar) {

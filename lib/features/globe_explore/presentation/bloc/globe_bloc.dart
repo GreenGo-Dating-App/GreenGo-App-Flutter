@@ -8,14 +8,6 @@ import 'globe_event.dart';
 import 'globe_state.dart';
 
 class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
-  final GetGlobeData getGlobeData;
-  final GlobeRepository repository;
-
-  StreamSubscription? _matchSub;
-  StreamSubscription? _onlineSub;
-  bool _showMatched = true;
-  bool _showDiscovery = true;
-  GlobeData? _currentData;
 
   GlobeBloc({
     required this.getGlobeData,
@@ -30,6 +22,14 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
     on<GlobeMatchesUpdated>(_onMatchesUpdated);
     on<GlobeOnlineStatusUpdated>(_onOnlineStatusUpdated);
   }
+  final GetGlobeData getGlobeData;
+  final GlobeRepository repository;
+
+  StreamSubscription? _matchSub;
+  StreamSubscription? _onlineSub;
+  bool _showMatched = true;
+  bool _showDiscovery = true;
+  GlobeData? _currentData;
 
   Future<void> _onLoad(
     GlobeLoadRequested event,

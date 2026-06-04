@@ -1,26 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #11: Daily Login Reward Popup
 /// Shows daily reward on first login
 class DailyRewardPopup extends StatefulWidget {
+
+  const DailyRewardPopup({
+    required this.day, required this.coins, required this.xp, super.key,
+    this.isStreakBonus = false,
+    this.streakDays = 1,
+    this.onClaim,
+  });
   final int day;
   final int coins;
   final int xp;
   final bool isStreakBonus;
   final int streakDays;
   final VoidCallback? onClaim;
-
-  const DailyRewardPopup({
-    super.key,
-    required this.day,
-    required this.coins,
-    required this.xp,
-    this.isStreakBonus = false,
-    this.streakDays = 1,
-    this.onClaim,
-  });
 
   @override
   State<DailyRewardPopup> createState() => _DailyRewardPopupState();
@@ -201,10 +198,6 @@ class _DailyRewardPopupState extends State<DailyRewardPopup>
 }
 
 class _RewardItem extends StatelessWidget {
-  final IconData icon;
-  final int value;
-  final String label;
-  final Color color;
 
   const _RewardItem({
     required this.icon,
@@ -212,6 +205,10 @@ class _RewardItem extends StatelessWidget {
     required this.label,
     required this.color,
   });
+  final IconData icon;
+  final int value;
+  final String label;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -248,9 +245,9 @@ class _RewardItem extends StatelessWidget {
 }
 
 class _WeeklyProgress extends StatelessWidget {
-  final int currentDay;
 
   const _WeeklyProgress({required this.currentDay});
+  final int currentDay;
 
   @override
   Widget build(BuildContext context) {

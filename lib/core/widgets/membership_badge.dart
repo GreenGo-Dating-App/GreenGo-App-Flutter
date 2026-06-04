@@ -5,16 +5,15 @@ import '../constants/app_colors.dart';
 /// Membership Badge Widget
 /// Displays a visual badge indicating the user's membership tier
 class MembershipBadge extends StatelessWidget {
+
+  const MembershipBadge({
+    required this.tier, super.key,
+    this.compact = false,
+    this.onTap,
+  });
   final MembershipTier tier;
   final bool compact;
   final VoidCallback? onTap;
-
-  const MembershipBadge({
-    Key? key,
-    required this.tier,
-    this.compact = false,
-    this.onTap,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -237,14 +236,13 @@ class MembershipBadge extends StatelessWidget {
 
 /// Small inline membership indicator for app bar
 class MembershipIndicator extends StatelessWidget {
-  final MembershipTier tier;
-  final VoidCallback? onTap;
 
   const MembershipIndicator({
-    Key? key,
-    required this.tier,
+    required this.tier, super.key,
     this.onTap,
-  }) : super(key: key);
+  });
+  final MembershipTier tier;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {

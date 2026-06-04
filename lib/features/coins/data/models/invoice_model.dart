@@ -10,19 +10,12 @@ class InvoiceModel extends Invoice {
     required super.invoiceNumber,
     required super.orderId,
     required super.userId,
-    super.userEmail,
+    required super.status, required super.issueDate, required super.lineItems, required super.subtotal, required super.taxAmount, required super.total, required super.paymentMethod, super.userEmail,
     super.userName,
-    required super.status,
-    required super.issueDate,
     super.dueDate,
     super.paidDate,
-    required super.lineItems,
-    required super.subtotal,
     super.taxRate = 0.0,
-    required super.taxAmount,
-    required super.total,
     super.currency = 'USD',
-    required super.paymentMethod,
     super.notes,
     super.billingAddress,
   });
@@ -31,7 +24,7 @@ class InvoiceModel extends Invoice {
   factory InvoiceModel.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
 
-    List<InvoiceLineItem> lineItems = [];
+    var lineItems = <InvoiceLineItem>[];
     if (data['lineItems'] != null) {
       lineItems = (data['lineItems'] as List).map((item) {
         return InvoiceLineItem(

@@ -1,23 +1,11 @@
-/**
- * Dashboard Metrics Entity
- * Points 228-234: Admin dashboard analytics
- */
+/// Dashboard Metrics Entity
+/// Points 228-234: Admin dashboard analytics
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Real-time user activity metrics (Point 228)
 class UserActivityMetrics extends Equatable {
-  final int activeUsersNow; // Currently online
-  final int activeUsersToday; // Active in last 24 hours
-  final int activeUsersWeek; // Active in last 7 days
-  final int activeUsersMonth; // Active in last 30 days
-  final int newSignupsToday;
-  final int newSignupsWeek;
-  final int newSignupsMonth;
-  final int deletedAccountsToday;
-  final int deletedAccountsWeek;
-  final int deletedAccountsMonth;
-  final DateTime calculatedAt;
 
   const UserActivityMetrics({
     required this.activeUsersNow,
@@ -32,6 +20,17 @@ class UserActivityMetrics extends Equatable {
     required this.deletedAccountsMonth,
     required this.calculatedAt,
   });
+  final int activeUsersNow; // Currently online
+  final int activeUsersToday; // Active in last 24 hours
+  final int activeUsersWeek; // Active in last 7 days
+  final int activeUsersMonth; // Active in last 30 days
+  final int newSignupsToday;
+  final int newSignupsWeek;
+  final int newSignupsMonth;
+  final int deletedAccountsToday;
+  final int deletedAccountsWeek;
+  final int deletedAccountsMonth;
+  final DateTime calculatedAt;
 
   @override
   List<Object?> get props => [
@@ -50,12 +49,7 @@ class UserActivityMetrics extends Equatable {
 }
 
 /// User growth chart data (Point 229)
-class UserGrowthChart extends Equatable {
-  final List<GrowthDataPoint> dailyData;
-  final List<GrowthDataPoint> weeklyData;
-  final List<GrowthDataPoint> monthlyData;
-  final GrowthTrend trend;
-  final double growthRate; // Percentage
+class UserGrowthChart extends Equatable { // Percentage
 
   const UserGrowthChart({
     required this.dailyData,
@@ -64,6 +58,11 @@ class UserGrowthChart extends Equatable {
     required this.trend,
     required this.growthRate,
   });
+  final List<GrowthDataPoint> dailyData;
+  final List<GrowthDataPoint> weeklyData;
+  final List<GrowthDataPoint> monthlyData;
+  final GrowthTrend trend;
+  final double growthRate;
 
   @override
   List<Object?> get props => [
@@ -76,12 +75,7 @@ class UserGrowthChart extends Equatable {
 }
 
 /// Growth data point for charts
-class GrowthDataPoint extends Equatable {
-  final DateTime date;
-  final int totalUsers;
-  final int newSignups;
-  final int deletedAccounts;
-  final int netGrowth; // newSignups - deletedAccounts
+class GrowthDataPoint extends Equatable { // newSignups - deletedAccounts
 
   const GrowthDataPoint({
     required this.date,
@@ -90,6 +84,11 @@ class GrowthDataPoint extends Equatable {
     required this.deletedAccounts,
     required this.netGrowth,
   });
+  final DateTime date;
+  final int totalUsers;
+  final int newSignups;
+  final int deletedAccounts;
+  final int netGrowth;
 
   @override
   List<Object?> get props => [
@@ -111,22 +110,6 @@ enum GrowthTrend {
 
 /// Revenue metrics (Point 230)
 class RevenueMetrics extends Equatable {
-  final double todayRevenue;
-  final double weekRevenue;
-  final double monthRevenue;
-  final double yearRevenue;
-  final double mrr; // Monthly Recurring Revenue
-  final double arr; // Annual Recurring Revenue
-  final int activeSubscribers;
-  final int newSubscribersToday;
-  final int newSubscribersWeek;
-  final int newSubscribersMonth;
-  final int churnedSubscribersToday;
-  final int churnedSubscribersWeek;
-  final int churnedSubscribersMonth;
-  final double churnRate; // Percentage
-  final Map<String, double> revenueByTier; // Silver, Gold, Platinum
-  final DateTime calculatedAt;
 
   const RevenueMetrics({
     required this.todayRevenue,
@@ -146,6 +129,22 @@ class RevenueMetrics extends Equatable {
     required this.revenueByTier,
     required this.calculatedAt,
   });
+  final double todayRevenue;
+  final double weekRevenue;
+  final double monthRevenue;
+  final double yearRevenue;
+  final double mrr; // Monthly Recurring Revenue
+  final double arr; // Annual Recurring Revenue
+  final int activeSubscribers;
+  final int newSubscribersToday;
+  final int newSubscribersWeek;
+  final int newSubscribersMonth;
+  final int churnedSubscribersToday;
+  final int churnedSubscribersWeek;
+  final int churnedSubscribersMonth;
+  final double churnRate; // Percentage
+  final Map<String, double> revenueByTier; // Silver, Gold, Platinum
+  final DateTime calculatedAt;
 
   @override
   List<Object?> get props => [
@@ -170,25 +169,6 @@ class RevenueMetrics extends Equatable {
 
 /// Engagement metrics (Point 231)
 class EngagementMetrics extends Equatable {
-  final int totalMessages; // All-time
-  final int messagesToday;
-  final int messagesWeek;
-  final int messagesMonth;
-  final int totalMatches;
-  final int matchesToday;
-  final int matchesWeek;
-  final int matchesMonth;
-  final int totalLikes;
-  final int likesToday;
-  final int likesWeek;
-  final int likesMonth;
-  final double avgMessagesPerUser;
-  final double avgMatchesPerUser;
-  final double avgSessionDuration; // Minutes
-  final double avgDailyActiveUsers;
-  final double engagementRate; // Percentage
-  final Map<String, int> featureUsage; // Super Likes, Boosts, etc.
-  final DateTime calculatedAt;
 
   const EngagementMetrics({
     required this.totalMessages,
@@ -211,6 +191,25 @@ class EngagementMetrics extends Equatable {
     required this.featureUsage,
     required this.calculatedAt,
   });
+  final int totalMessages; // All-time
+  final int messagesToday;
+  final int messagesWeek;
+  final int messagesMonth;
+  final int totalMatches;
+  final int matchesToday;
+  final int matchesWeek;
+  final int matchesMonth;
+  final int totalLikes;
+  final int likesToday;
+  final int likesWeek;
+  final int likesMonth;
+  final double avgMessagesPerUser;
+  final double avgMatchesPerUser;
+  final double avgSessionDuration; // Minutes
+  final double avgDailyActiveUsers;
+  final double engagementRate; // Percentage
+  final Map<String, int> featureUsage; // Super Likes, Boosts, etc.
+  final DateTime calculatedAt;
 
   @override
   List<Object?> get props => [
@@ -238,12 +237,6 @@ class EngagementMetrics extends Equatable {
 
 /// Geographic heatmap data (Point 232)
 class GeographicHeatmap extends Equatable {
-  final List<LocationData> locations;
-  final String topCountry;
-  final String topCity;
-  final int totalCountries;
-  final int totalCities;
-  final DateTime calculatedAt;
 
   const GeographicHeatmap({
     required this.locations,
@@ -253,6 +246,12 @@ class GeographicHeatmap extends Equatable {
     required this.totalCities,
     required this.calculatedAt,
   });
+  final List<LocationData> locations;
+  final String topCountry;
+  final String topCity;
+  final int totalCountries;
+  final int totalCities;
+  final DateTime calculatedAt;
 
   @override
   List<Object?> get props => [
@@ -266,24 +265,19 @@ class GeographicHeatmap extends Equatable {
 }
 
 /// Location data for heatmap
-class LocationData extends Equatable {
+class LocationData extends Equatable { // 0-1 for heatmap visualization
+
+  const LocationData({
+    required this.country,
+    required this.latitude, required this.longitude, required this.userCount, required this.activeUserCount, required this.intensity, this.city,
+  });
   final String country;
   final String? city;
   final double latitude;
   final double longitude;
   final int userCount;
   final int activeUserCount;
-  final double intensity; // 0-1 for heatmap visualization
-
-  const LocationData({
-    required this.country,
-    this.city,
-    required this.latitude,
-    required this.longitude,
-    required this.userCount,
-    required this.activeUserCount,
-    required this.intensity,
-  });
+  final double intensity;
 
   @override
   List<Object?> get props => [
@@ -299,15 +293,6 @@ class LocationData extends Equatable {
 
 /// System health monitoring (Point 233)
 class SystemHealthMetrics extends Equatable {
-  final double apiResponseTime; // Milliseconds
-  final double errorRate; // Percentage
-  final double successRate; // Percentage
-  final int totalRequests;
-  final int failedRequests;
-  final Map<String, EndpointHealth> endpointHealth;
-  final List<SystemAlert> activeAlerts;
-  final SystemStatus status;
-  final DateTime calculatedAt;
 
   const SystemHealthMetrics({
     required this.apiResponseTime,
@@ -320,6 +305,15 @@ class SystemHealthMetrics extends Equatable {
     required this.status,
     required this.calculatedAt,
   });
+  final double apiResponseTime; // Milliseconds
+  final double errorRate; // Percentage
+  final double successRate; // Percentage
+  final int totalRequests;
+  final int failedRequests;
+  final Map<String, EndpointHealth> endpointHealth;
+  final List<SystemAlert> activeAlerts;
+  final SystemStatus status;
+  final DateTime calculatedAt;
 
   bool get isHealthy => status == SystemStatus.healthy;
   bool get hasCriticalAlerts =>
@@ -341,11 +335,6 @@ class SystemHealthMetrics extends Equatable {
 
 /// Endpoint health status
 class EndpointHealth extends Equatable {
-  final String endpoint;
-  final double avgResponseTime;
-  final double errorRate;
-  final int requestCount;
-  final HealthStatus status;
 
   const EndpointHealth({
     required this.endpoint,
@@ -354,6 +343,11 @@ class EndpointHealth extends Equatable {
     required this.requestCount,
     required this.status,
   });
+  final String endpoint;
+  final double avgResponseTime;
+  final double errorRate;
+  final int requestCount;
+  final HealthStatus status;
 
   @override
   List<Object?> get props => [
@@ -382,6 +376,17 @@ enum SystemStatus {
 
 /// System alert (Point 234)
 class SystemAlert extends Equatable {
+
+  const SystemAlert({
+    required this.alertId,
+    required this.title,
+    required this.description,
+    required this.type,
+    required this.severity,
+    required this.triggeredAt,
+    required this.isResolved, required this.metadata, this.resolvedAt,
+    this.resolvedBy,
+  });
   final String alertId;
   final String title;
   final String description;
@@ -392,19 +397,6 @@ class SystemAlert extends Equatable {
   final bool isResolved;
   final String? resolvedBy;
   final Map<String, dynamic> metadata;
-
-  const SystemAlert({
-    required this.alertId,
-    required this.title,
-    required this.description,
-    required this.type,
-    required this.severity,
-    required this.triggeredAt,
-    this.resolvedAt,
-    required this.isResolved,
-    this.resolvedBy,
-    required this.metadata,
-  });
 
   @override
   List<Object?> get props => [

@@ -2,17 +2,17 @@ import 'package:flutter_test/flutter_test.dart';
 
 // Import all test files
 import 'authentication_test.dart' as authentication;
+import 'chat_test.dart' as chat;
+import 'coins_test.dart' as coins;
+import 'discovery_test.dart' as discovery;
+import 'gamification_test.dart' as gamification;
+import 'matching_test.dart' as matching;
+import 'new_features_test.dart' as new_features;
+import 'notifications_test.dart' as notifications;
 import 'onboarding_test.dart' as onboarding;
 import 'profile_editing_test.dart' as profile_editing;
-import 'discovery_test.dart' as discovery;
-import 'matching_test.dart' as matching;
-import 'chat_test.dart' as chat;
-import 'notifications_test.dart' as notifications;
-import 'gamification_test.dart' as gamification;
-import 'coins_test.dart' as coins;
-import 'subscription_test.dart' as subscription;
 import 'settings_test.dart' as settings;
-import 'new_features_test.dart' as new_features;
+import 'subscription_test.dart' as subscription;
 
 /// Main entry point for running all 120 user tests
 ///

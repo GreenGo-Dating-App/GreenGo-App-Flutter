@@ -1,23 +1,24 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_dimensions.dart';
-import '../../domain/entities/profile.dart';
-import '../../data/datasources/profile_remote_data_source.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../data/datasources/profile_remote_data_source.dart';
+import '../../domain/entities/profile.dart';
 
 /// Screen for searching users by nickname
 class UserSearchScreen extends StatefulWidget {
-  final String currentUserId;
 
   const UserSearchScreen({
-    super.key,
-    required this.currentUserId,
+    required this.currentUserId, super.key,
   });
+  final String currentUserId;
 
   @override
   State<UserSearchScreen> createState() => _UserSearchScreenState();
@@ -223,7 +224,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.person_search,
               color: AppColors.textTertiary,
               size: 64,
@@ -267,7 +268,7 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.search,
             color: AppColors.textTertiary,
             size: 64,
@@ -295,13 +296,13 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
 }
 
 class _UserSearchResultCard extends StatelessWidget {
-  final Profile profile;
-  final VoidCallback onTap;
 
   const _UserSearchResultCard({
     required this.profile,
     required this.onTap,
   });
+  final Profile profile;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {

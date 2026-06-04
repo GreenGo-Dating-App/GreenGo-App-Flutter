@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Voice Introduction Player Widget
@@ -8,16 +9,15 @@ import '../constants/app_colors.dart';
 /// A reusable widget for playing voice introduction recordings on profiles.
 /// Features play/pause, progress bar, and duration display.
 class VoiceIntroductionPlayer extends StatefulWidget {
-  final String voiceUrl;
-  final String? label;
-  final Color? accentColor;
 
   const VoiceIntroductionPlayer({
-    super.key,
-    required this.voiceUrl,
+    required this.voiceUrl, super.key,
     this.label,
     this.accentColor,
   });
+  final String voiceUrl;
+  final String? label;
+  final Color? accentColor;
 
   @override
   State<VoiceIntroductionPlayer> createState() => _VoiceIntroductionPlayerState();
@@ -259,14 +259,14 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
                         children: [
                           Text(
                             _formatDuration(_position),
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 12,
                             ),
                           ),
                           Text(
                             _formatDuration(_duration),
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 12,
                             ),
@@ -288,14 +288,13 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
 /// Compact version of the voice introduction player
 /// For use in list items or smaller spaces
 class VoiceIntroductionPlayerCompact extends StatefulWidget {
-  final String voiceUrl;
-  final Color? accentColor;
 
   const VoiceIntroductionPlayerCompact({
-    super.key,
-    required this.voiceUrl,
+    required this.voiceUrl, super.key,
     this.accentColor,
   });
+  final String voiceUrl;
+  final Color? accentColor;
 
   @override
   State<VoiceIntroductionPlayerCompact> createState() =>
@@ -384,16 +383,14 @@ class _VoiceIntroductionPlayerCompactState
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _isLoading
-                ? SizedBox(
+            if (_isLoading) SizedBox(
                     width: 16,
                     height: 16,
                     child: CircularProgressIndicator(
                       strokeWidth: 2,
                       color: _accentColor,
                     ),
-                  )
-                : Icon(
+                  ) else Icon(
                     _isPlaying ? Icons.pause : Icons.play_arrow,
                     color: _accentColor,
                     size: 20,

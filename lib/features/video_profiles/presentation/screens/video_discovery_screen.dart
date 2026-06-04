@@ -236,7 +236,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
             final videos = state.discoveryVideos;
 
             if (videos.isEmpty) {
-              return Center(
+              return const Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -245,16 +245,16 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                       color: AppColors.textTertiary,
                       size: 64,
                     ),
-                    const SizedBox(height: 16),
-                    const Text(
+                    SizedBox(height: 16),
+                    Text(
                       'No video introductions yet',
                       style: TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 18,
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    const Text(
+                    SizedBox(height: 8),
+                    Text(
                       'Be the first to create one!',
                       style: TextStyle(
                         color: AppColors.textTertiary,
@@ -297,17 +297,15 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
 
 /// A single full-screen video page in the discovery feed.
 class _VideoPage extends StatelessWidget {
+
+  const _VideoPage({
+    required this.videoProfile,
+    required this.onLike, required this.onPass, this.controller,
+  });
   final VideoProfile videoProfile;
   final VideoPlayerController? controller;
   final VoidCallback onLike;
   final VoidCallback onPass;
-
-  const _VideoPage({
-    required this.videoProfile,
-    this.controller,
-    required this.onLike,
-    required this.onPass,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -503,10 +501,6 @@ class _VideoPage extends StatelessWidget {
 
 /// Circular action button for the right-side column.
 class _ActionButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final Color color;
-  final VoidCallback onTap;
 
   const _ActionButton({
     required this.icon,
@@ -514,6 +508,10 @@ class _ActionButton extends StatelessWidget {
     required this.color,
     required this.onTap,
   });
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -552,9 +550,9 @@ class _ActionButton extends StatelessWidget {
 
 /// Mute/unmute toggle button for video audio.
 class _MuteButton extends StatefulWidget {
-  final VideoPlayerController controller;
 
   const _MuteButton({required this.controller});
+  final VideoPlayerController controller;
 
   @override
   State<_MuteButton> createState() => _MuteButtonState();

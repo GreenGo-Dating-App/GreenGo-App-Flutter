@@ -3,12 +3,6 @@ import '../../../../core/constants/app_colors.dart';
 
 /// Represents a step in the app tour
 class TourStep {
-  final String id;
-  final String titleKey;
-  final String descriptionKey;
-  final IconData icon;
-  final int tabIndex;
-  final Color accentColor;
 
   const TourStep({
     required this.id,
@@ -18,6 +12,12 @@ class TourStep {
     required this.tabIndex,
     this.accentColor = AppColors.gold,
   });
+  final String id;
+  final String titleKey;
+  final String descriptionKey;
+  final IconData icon;
+  final int tabIndex;
+  final Color accentColor;
 
   /// All tour steps for the app
   /// Tab order: Exchange(0), Messages(1), Learn(2), Play(3), Profile(4)

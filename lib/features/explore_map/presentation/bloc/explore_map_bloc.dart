@@ -9,7 +9,6 @@ import 'explore_map_state.dart';
 /// Manages loading nearby users, refreshing the list, and toggling
 /// the user's "Show me on map" visibility preference.
 class ExploreMapBloc extends Bloc<ExploreMapEvent, ExploreMapState> {
-  final ExploreMapRemoteDataSource remoteDataSource;
 
   ExploreMapBloc({required this.remoteDataSource})
       : super(const ExploreMapInitial()) {
@@ -17,6 +16,7 @@ class ExploreMapBloc extends Bloc<ExploreMapEvent, ExploreMapState> {
     on<RefreshMap>(_onRefreshMap);
     on<ToggleShowOnMap>(_onToggleShowOnMap);
   }
+  final ExploreMapRemoteDataSource remoteDataSource;
 
   Future<void> _onLoadNearbyUsers(
     LoadNearbyUsers event,

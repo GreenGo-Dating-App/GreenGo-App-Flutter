@@ -1,7 +1,6 @@
-/**
- * Gamification Events
- * Points 176-200: All gamification-related events
- */
+/// Gamification Events
+/// Points 176-200: All gamification-related events
+library;
 
 import 'package:equatable/equatable.dart';
 import '../../domain/repositories/gamification_repository.dart';
@@ -16,37 +15,37 @@ abstract class GamificationEvent extends Equatable {
 // ===== Achievement Events =====
 
 class LoadUserAchievements extends GamificationEvent {
-  final String userId;
 
   const LoadUserAchievements(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class UnlockAchievementEvent extends GamificationEvent {
-  final String userId;
-  final String achievementId;
 
   const UnlockAchievementEvent({
     required this.userId,
     required this.achievementId,
   });
+  final String userId;
+  final String achievementId;
 
   @override
   List<Object?> get props => [userId, achievementId];
 }
 
 class TrackAchievementProgressEvent extends GamificationEvent {
-  final String userId;
-  final String achievementId;
-  final int incrementBy;
 
   const TrackAchievementProgressEvent({
     required this.userId,
     required this.achievementId,
     this.incrementBy = 1,
   });
+  final String userId;
+  final String achievementId;
+  final int incrementBy;
 
   @override
   List<Object?> get props => [userId, achievementId, incrementBy];
@@ -55,44 +54,39 @@ class TrackAchievementProgressEvent extends GamificationEvent {
 // ===== Level & XP Events =====
 
 class LoadUserLevel extends GamificationEvent {
-  final String userId;
 
   const LoadUserLevel(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class GrantXPEvent extends GamificationEvent {
-  final String userId;
-  final int xpAmount;
-  final String reason;
 
   const GrantXPEvent({
     required this.userId,
     required this.xpAmount,
     required this.reason,
   });
+  final String userId;
+  final int xpAmount;
+  final String reason;
 
   @override
   List<Object?> get props => [userId, xpAmount, reason];
 }
 
 class LoadXPHistory extends GamificationEvent {
-  final String userId;
 
   const LoadXPHistory(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
-class LoadLeaderboard extends GamificationEvent {
-  final String? userId;
-  final LeaderboardType type;
-  final String? region;
-  final int limit;
-  final String? timePeriod; // 'week', 'month', 'year'
+class LoadLeaderboard extends GamificationEvent { // 'week', 'month', 'year'
 
   const LoadLeaderboard({
     this.userId,
@@ -101,32 +95,37 @@ class LoadLeaderboard extends GamificationEvent {
     this.limit = 100,
     this.timePeriod,
   });
+  final String? userId;
+  final LeaderboardType type;
+  final String? region;
+  final int limit;
+  final String? timePeriod;
 
   @override
   List<Object?> get props => [userId, type, region, limit, timePeriod];
 }
 
 class ClaimLevelRewardsEvent extends GamificationEvent {
-  final String userId;
-  final int level;
 
   const ClaimLevelRewardsEvent({
     required this.userId,
     required this.level,
   });
+  final String userId;
+  final int level;
 
   @override
   List<Object?> get props => [userId, level];
 }
 
 class CheckFeatureUnlockEvent extends GamificationEvent {
-  final String userId;
-  final String featureId;
 
   const CheckFeatureUnlockEvent({
     required this.userId,
     required this.featureId,
   });
+  final String userId;
+  final String featureId;
 
   @override
   List<Object?> get props => [userId, featureId];
@@ -135,37 +134,37 @@ class CheckFeatureUnlockEvent extends GamificationEvent {
 // ===== Challenge Events =====
 
 class LoadDailyChallenges extends GamificationEvent {
-  final String userId;
 
   const LoadDailyChallenges(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
 }
 
 class TrackChallengeProgressEvent extends GamificationEvent {
-  final String userId;
-  final String challengeId;
-  final int incrementBy;
 
   const TrackChallengeProgressEvent({
     required this.userId,
     required this.challengeId,
     this.incrementBy = 1,
   });
+  final String userId;
+  final String challengeId;
+  final int incrementBy;
 
   @override
   List<Object?> get props => [userId, challengeId, incrementBy];
 }
 
 class ClaimChallengeRewardEvent extends GamificationEvent {
-  final String userId;
-  final String challengeId;
 
   const ClaimChallengeRewardEvent({
     required this.userId,
     required this.challengeId,
   });
+  final String userId;
+  final String challengeId;
 
   @override
   List<Object?> get props => [userId, challengeId];
@@ -174,9 +173,9 @@ class ClaimChallengeRewardEvent extends GamificationEvent {
 // ===== Seasonal Event Events =====
 
 class LoadSeasonalEvent extends GamificationEvent {
-  final String userId;
 
   const LoadSeasonalEvent(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
