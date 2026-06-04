@@ -6226,6 +6226,16 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get restorePurchases => 'Ripristina acquisti';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'Gli abbonamenti si rinnovano automaticamente salvo disdetta almeno 24 ore prima della fine del periodo in corso. Gestisci o annulla quando vuoi nelle impostazioni del tuo account dello store.';
+
+  @override
+  String get purchasesRestored => 'Acquisti ripristinati.';
+
+  @override
   String get membershipExtendTitle => 'Estendi la tua iscrizione';
 
   @override

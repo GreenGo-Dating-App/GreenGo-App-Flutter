@@ -6207,6 +6207,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get restorePurchases => 'Restaurar compras';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'As subscrições renovam-se automaticamente, salvo cancelamento até 24 horas antes do fim do período atual. Faça a gestão ou cancele a qualquer momento nas definições da sua conta na loja.';
+
+  @override
+  String get purchasesRestored => 'Compras restauradas.';
+
+  @override
   String get membershipExtendTitle => 'Prolongar a tua subscrição';
 
   @override
@@ -16629,6 +16639,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String membershipExpires(Object date) {
     return 'Expira: $date';
   }
+
+  @override
+  String get restorePurchases => 'Restaurar compras';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele quando quiser nas configurações da sua conta na loja.';
+
+  @override
+  String get purchasesRestored => 'Compras restauradas.';
 
   @override
   String get membershipExtendTitle => 'Estenda sua assinatura';
