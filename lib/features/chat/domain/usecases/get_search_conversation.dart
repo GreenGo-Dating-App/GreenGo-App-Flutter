@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Get or Create Search Conversation Use Case
 class GetSearchConversation {
-  final ChatRepository repository;
 
   GetSearchConversation(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, Conversation>> call({
     required String currentUserId,

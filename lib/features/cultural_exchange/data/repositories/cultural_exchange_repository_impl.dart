@@ -4,9 +4,9 @@ import '../datasources/cultural_exchange_remote_datasource.dart';
 import '../models/cultural_tip_model.dart';
 
 class CulturalExchangeRepositoryImpl implements CulturalExchangeRepository {
-  final CulturalExchangeRemoteDataSource remoteDataSource;
 
   CulturalExchangeRepositoryImpl({required this.remoteDataSource});
+  final CulturalExchangeRemoteDataSource remoteDataSource;
 
   @override
   Future<CountrySpotlight?> getActiveSpotlight() async {

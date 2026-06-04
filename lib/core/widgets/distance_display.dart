@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #16: Distance Display
 /// Shows distance between users
 class DistanceDisplay extends StatelessWidget {
-  final double distanceKm;
-  final bool isCompact;
-  final bool showIcon;
 
   const DistanceDisplay({
-    super.key,
-    required this.distanceKm,
+    required this.distanceKm, super.key,
     this.isCompact = false,
     this.showIcon = true,
   });
+  final double distanceKm;
+  final bool isCompact;
+  final bool showIcon;
 
   String _formatDistance(AppLocalizations l10n) {
     if (distanceKm < 1) {
@@ -101,12 +100,11 @@ class DistanceDisplay extends StatelessWidget {
 
 /// Distance badge for profile cards
 class DistanceBadge extends StatelessWidget {
-  final double distanceKm;
 
   const DistanceBadge({
-    super.key,
-    required this.distanceKm,
+    required this.distanceKm, super.key,
   });
+  final double distanceKm;
 
   @override
   Widget build(BuildContext context) {

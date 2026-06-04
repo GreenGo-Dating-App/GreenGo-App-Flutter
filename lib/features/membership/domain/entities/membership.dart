@@ -67,6 +67,28 @@ enum MembershipTier {
 /// Membership Rules
 /// Configurable limits and permissions for each membership tier
 class MembershipRules extends Equatable {
+
+  const MembershipRules({
+    this.dailyMessageLimit = 10,
+    this.dailySwipeLimit = 20,
+    this.dailyPriorityConnectLimit = 0,
+    this.hourlyConnectLimit = 5,
+    this.hourlyPassLimit = 10,
+    this.hourlyPriorityConnectLimit = 0,
+    this.canUseAdvancedFilters = false,
+    this.canFilterByLocation = false,
+    this.canFilterByInterests = false,
+    this.canFilterByLanguage = false,
+    this.canFilterByVerification = false,
+    this.canSendMedia = false,
+    this.canSeeReadReceipts = false,
+    this.canUseIncognitoMode = false,
+    this.matchPriority = 0,
+    this.canSeeProfileVisitors = false,
+    this.canUseVideoChat = false,
+    this.dailyMediaSendLimit = 0,
+    this.badgeIcon,
+  });
   /// Maximum messages per day (-1 for unlimited)
   final int dailyMessageLimit;
 
@@ -123,28 +145,6 @@ class MembershipRules extends Equatable {
 
   /// Profile badge/icon displayed
   final String? badgeIcon;
-
-  const MembershipRules({
-    this.dailyMessageLimit = 10,
-    this.dailySwipeLimit = 20,
-    this.dailyPriorityConnectLimit = 0,
-    this.hourlyConnectLimit = 5,
-    this.hourlyPassLimit = 10,
-    this.hourlyPriorityConnectLimit = 0,
-    this.canUseAdvancedFilters = false,
-    this.canFilterByLocation = false,
-    this.canFilterByInterests = false,
-    this.canFilterByLanguage = false,
-    this.canFilterByVerification = false,
-    this.canSendMedia = false,
-    this.canSeeReadReceipts = false,
-    this.canUseIncognitoMode = false,
-    this.matchPriority = 0,
-    this.canSeeProfileVisitors = false,
-    this.canUseVideoChat = false,
-    this.dailyMediaSendLimit = 0,
-    this.badgeIcon,
-  });
 
   /// Default rules for FREE tier (Base membership)
   static const MembershipRules freeDefaults = MembershipRules(
@@ -308,6 +308,16 @@ class MembershipRules extends Equatable {
 /// User Membership
 /// Represents a user's current membership status
 class Membership extends Equatable {
+
+  const Membership({
+    required this.membershipId,
+    required this.userId,
+    required this.tier,
+    required this.startDate, required this.isActive, required this.createdAt, required this.updatedAt, this.couponCode,
+    this.endDate,
+    this.customRules,
+    this.activatedBy,
+  });
   /// Unique membership ID
   final String membershipId;
 
@@ -340,20 +350,6 @@ class Membership extends Equatable {
 
   /// Admin who activated/modified this membership (if any)
   final String? activatedBy;
-
-  const Membership({
-    required this.membershipId,
-    required this.userId,
-    required this.tier,
-    this.couponCode,
-    required this.startDate,
-    this.endDate,
-    this.customRules,
-    required this.isActive,
-    required this.createdAt,
-    required this.updatedAt,
-    this.activatedBy,
-  });
 
   /// Get the effective rules (custom or default for tier)
   MembershipRules get rules =>

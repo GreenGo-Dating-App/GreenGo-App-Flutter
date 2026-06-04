@@ -2,15 +2,15 @@ import 'package:equatable/equatable.dart';
 
 /// Represents dating etiquette guidelines for a specific country
 class DatingEtiquette extends Equatable {
-  final String country;
-  final List<EtiquetteSection> sections;
-  final DateTime lastUpdated;
 
   const DatingEtiquette({
     required this.country,
     required this.sections,
     required this.lastUpdated,
   });
+  final String country;
+  final List<EtiquetteSection> sections;
+  final DateTime lastUpdated;
 
   DatingEtiquette copyWith({
     String? country,
@@ -30,10 +30,6 @@ class DatingEtiquette extends Equatable {
 
 /// A section within dating etiquette content
 class EtiquetteSection extends Equatable {
-  final String title;
-  final String content;
-  final List<String> doList;
-  final List<String> dontList;
 
   const EtiquetteSection({
     required this.title,
@@ -41,6 +37,10 @@ class EtiquetteSection extends Equatable {
     this.doList = const [],
     this.dontList = const [],
   });
+  final String title;
+  final String content;
+  final List<String> doList;
+  final List<String> dontList;
 
   @override
   List<Object?> get props => [title, content, doList, dontList];

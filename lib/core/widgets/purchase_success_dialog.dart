@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
-import '../constants/app_colors.dart';
+
 import '../../features/subscription/domain/entities/subscription.dart';
+import '../../generated/app_localizations.dart';
+import '../constants/app_colors.dart';
 import 'subscription_celebration_screen.dart';
 
 /// Animated purchase success dialog
 /// Shown after successful coin or subscription purchase
 class PurchaseSuccessDialog extends StatefulWidget {
+
+  const PurchaseSuccessDialog({
+    required this.title, required this.message, super.key,
+    this.icon = Icons.check_circle,
+    this.iconColor = AppColors.successGreen,
+    this.onDismiss,
+    this.autoDismissDelay = const Duration(seconds: 3),
+  });
   final String title;
   final String message;
   final IconData icon;
   final Color iconColor;
   final VoidCallback? onDismiss;
   final Duration autoDismissDelay;
-
-  const PurchaseSuccessDialog({
-    super.key,
-    required this.title,
-    required this.message,
-    this.icon = Icons.check_circle,
-    this.iconColor = AppColors.successGreen,
-    this.onDismiss,
-    this.autoDismissDelay = const Duration(seconds: 3),
-  });
 
   /// Show dialog for coin purchase success
   static Future<void> showCoinsPurchased(
@@ -274,7 +273,7 @@ class _PurchaseSuccessDialogState extends State<PurchaseSuccessDialog>
       Offset(0, 45),
     ];
 
-    for (int i = 0; i < sparklePositions.length; i++) {
+    for (var i = 0; i < sparklePositions.length; i++) {
       final delay = i * 0.1;
       final value = (_confettiController.value - delay).clamp(0.0, 1.0);
       final opacity = value > 0.5 ? (1 - value) * 2 : value * 2;

@@ -5,9 +5,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Listen For Incoming Calls Use Case
 class ListenForIncomingCalls {
-  final VideoCallingRepository repository;
 
   ListenForIncomingCalls(this.repository);
+  final VideoCallingRepository repository;
 
   Stream<Either<Failure, VideoCall?>> call(String userId) {
     return repository.listenForIncomingCalls(userId);

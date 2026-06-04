@@ -5,13 +5,13 @@ import '../entities/user.dart';
 import '../repositories/auth_repository.dart';
 
 class SignInWithEmail implements UseCase<User, SignInWithEmailParams> {
-  final AuthRepository repository;
 
   SignInWithEmail(this.repository);
+  final AuthRepository repository;
 
   @override
   Future<Either<Failure, User>> call(SignInWithEmailParams params) async {
-    return await repository.signInWithEmail(
+    return repository.signInWithEmail(
       email: params.email,
       password: params.password,
     );
@@ -19,11 +19,11 @@ class SignInWithEmail implements UseCase<User, SignInWithEmailParams> {
 }
 
 class SignInWithEmailParams {
-  final String email;
-  final String password;
 
   const SignInWithEmailParams({
     required this.email,
     required this.password,
   });
+  final String email;
+  final String password;
 }

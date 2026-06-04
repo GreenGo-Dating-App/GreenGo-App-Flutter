@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart';
 import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+
 import '../constants/app_colors.dart';
 
 class LuxuryParticlesBackground extends StatefulWidget {
+  const LuxuryParticlesBackground({required this.child, super.key});
   final Widget child;
-  const LuxuryParticlesBackground({super.key, required this.child});
 
   @override
   State<LuxuryParticlesBackground> createState() =>
@@ -26,7 +28,7 @@ class _LuxuryParticlesBackgroundState extends State<LuxuryParticlesBackground>
     )..repeat();
 
     // Initialize particles
-    for (int i = 0; i < _particleCount; i++) {
+    for (var i = 0; i < _particleCount; i++) {
       _particles.add(Particle());
     }
   }
@@ -77,17 +79,6 @@ class _LuxuryParticlesBackgroundState extends State<LuxuryParticlesBackground>
 }
 
 class Particle {
-  late double x;
-  late double y;
-  late double size;
-  late double speedX;
-  late double speedY;
-  late double opacity;
-  late Color color;
-  late double pulsePhase;
-  late double sparkleSpeed;
-  late double rotation;
-  late double rotationSpeed;
 
   Particle() {
     final random = math.Random();
@@ -112,6 +103,17 @@ class Particle {
                 ? const Color(0xFFFFE55C) // Light gold
                 : const Color(0xFFFFFACD); // Pale gold
   }
+  late double x;
+  late double y;
+  late double size;
+  late double speedX;
+  late double speedY;
+  late double opacity;
+  late Color color;
+  late double pulsePhase;
+  late double sparkleSpeed;
+  late double rotation;
+  late double rotationSpeed;
 
   void update() {
     // Horizontal drift
@@ -148,17 +150,17 @@ class Particle {
 }
 
 class ParticlesPainter extends CustomPainter {
-  final List<Particle> particles;
-  final double animationValue;
 
   ParticlesPainter({
     required this.particles,
     required this.animationValue,
   });
+  final List<Particle> particles;
+  final double animationValue;
 
   @override
   void paint(Canvas canvas, Size size) {
-    for (var particle in particles) {
+    for (final particle in particles) {
       particle.update();
 
       final sparkleOpacity = particle.getSparkleOpacity(animationValue);
@@ -217,7 +219,7 @@ class ParticlesPainter extends CustomPainter {
       canvas.restore();
 
       // Draw light trails between nearby falling particles
-      for (var other in particles) {
+      for (final other in particles) {
         if (particle == other) continue;
 
         final distance = math.sqrt(

@@ -5,9 +5,9 @@ import '../repositories/notification_repository.dart';
 
 /// Get Notification Preferences Use Case
 class GetNotificationPreferences {
-  final NotificationRepository repository;
 
   GetNotificationPreferences(this.repository);
+  final NotificationRepository repository;
 
   Future<Either<Failure, NotificationPreferences>> call(String userId) {
     return repository.getPreferences(userId);

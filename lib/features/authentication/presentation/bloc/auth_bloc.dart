@@ -8,10 +8,6 @@ import 'auth_event.dart';
 import 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
-  final AuthRepository repository;
-  final dynamic localAuth; // Will be LocalAuthentication when biometric is enabled
-  final AccessControlService _accessControlService;
-  late final dynamic _authSubscription;
 
   AuthBloc({
     required this.repository,
@@ -40,6 +36,10 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       if (!isClosed) add(_AuthStateChanged(user));
     });
   }
+  final AuthRepository repository;
+  final dynamic localAuth; // Will be LocalAuthentication when biometric is enabled
+  final AccessControlService _accessControlService;
+  late final dynamic _authSubscription;
 
   Future<void> _onAuthStateChanged(
     _AuthStateChanged event,
@@ -360,9 +360,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
 /// Private event for auth state changes from Firebase stream
 class _AuthStateChanged extends AuthEvent {
-  final dynamic user;
 
   const _AuthStateChanged(this.user);
+  final dynamic user;
 
   @override
   List<Object?> get props => [user];

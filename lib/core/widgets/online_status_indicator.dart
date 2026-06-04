@@ -4,18 +4,17 @@ import '../constants/app_colors.dart';
 /// Enhancement #1: Online Status Indicator
 /// Shows a green dot when user is online, yellow when away, gray when offline
 class OnlineStatusIndicator extends StatelessWidget {
-  final bool isOnline;
-  final bool isAway;
-  final double size;
-  final bool showBorder;
 
   const OnlineStatusIndicator({
-    super.key,
-    required this.isOnline,
+    required this.isOnline, super.key,
     this.isAway = false,
     this.size = 12,
     this.showBorder = true,
   });
+  final bool isOnline;
+  final bool isAway;
+  final double size;
+  final bool showBorder;
 
   @override
   Widget build(BuildContext context) {

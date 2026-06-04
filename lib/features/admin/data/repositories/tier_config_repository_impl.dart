@@ -1,15 +1,16 @@
 import 'package:dartz/dartz.dart';
+
 import '../../../../core/error/failures.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/tier_config.dart';
 import '../../domain/repositories/tier_config_repository.dart';
 import '../datasources/tier_config_datasource.dart';
-import '../../../membership/domain/entities/membership.dart';
 
 /// Implementation of TierConfigRepository
 class TierConfigRepositoryImpl implements TierConfigRepository {
-  final TierConfigRemoteDataSource remoteDataSource;
 
   TierConfigRepositoryImpl({required this.remoteDataSource});
+  final TierConfigRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<TierConfig>>> getTierConfigs() async {

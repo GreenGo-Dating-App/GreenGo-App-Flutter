@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/cultural_exchange_bloc.dart';
 import '../widgets/widgets.dart';
@@ -314,7 +315,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
         child: Center(
           child: Text(
             AppLocalizations.of(context)!.culturalExchangeLoadingCountries,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
             ),
@@ -396,7 +397,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
           const SizedBox(height: 6),
           Text(
             l10n.culturalExchangeBeFirstTip,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
             ),
@@ -438,7 +439,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
     final titleController = TextEditingController();
     final contentController = TextEditingController();
     final countryController = TextEditingController();
-    TipCategory selectedCategory = TipCategory.customs;
+    var selectedCategory = TipCategory.customs;
 
     showModalBottomSheet(
       context: context,
@@ -656,14 +657,14 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
             fillColor: AppColors.backgroundInput,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: AppColors.divider,
                 width: 0.5,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: AppColors.divider,
                 width: 0.5,
               ),

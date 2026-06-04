@@ -8,29 +8,29 @@ import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_reward.dart';
 import '../../domain/entities/coin_transaction.dart';
-import '../../domain/entities/video_coin.dart';
-import '../../domain/entities/order.dart';
 import '../../domain/entities/invoice.dart';
+import '../../domain/entities/order.dart';
+import '../../domain/entities/video_coin.dart';
 import '../models/coin_balance_model.dart';
 import '../models/coin_gift_model.dart';
 import '../models/coin_promotion_model.dart';
 import '../models/coin_transaction_model.dart';
-import '../models/video_coin_model.dart';
-import '../models/order_model.dart';
 import '../models/invoice_model.dart';
+import '../models/order_model.dart';
+import '../models/video_coin_model.dart';
 
 /// Coin Remote Data Source
 /// Handles all coin-related operations with Firestore and in-app purchases
 class CoinRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final InAppPurchase inAppPurchase;
-  final Uuid uuid;
 
   CoinRemoteDataSource({
     required this.firestore,
     required this.inAppPurchase,
     Uuid? uuid,
   }) : uuid = uuid ?? const Uuid();
+  final FirebaseFirestore firestore;
+  final InAppPurchase inAppPurchase;
+  final Uuid uuid;
 
   // Collection references
   CollectionReference get _balancesCollection =>
@@ -109,10 +109,10 @@ class CoinRemoteDataSource {
 
       // Calculate new balance
       int newTotal;
-      int newEarned = currentBalance.earnedCoins;
-      int newPurchased = currentBalance.purchasedCoins;
-      int newGifted = currentBalance.giftedCoins;
-      int newSpent = currentBalance.spentCoins;
+      var newEarned = currentBalance.earnedCoins;
+      var newPurchased = currentBalance.purchasedCoins;
+      var newGifted = currentBalance.giftedCoins;
+      var newSpent = currentBalance.spentCoins;
 
       if (type == CoinTransactionType.credit) {
         newTotal = currentBalance.totalCoins + amount;
@@ -135,7 +135,7 @@ class CoinRemoteDataSource {
       }
 
       // Create coin batch for credits
-      List<CoinBatch> newBatches = List.from(currentBalance.coinBatches);
+      var newBatches = List<CoinBatch>.from(currentBalance.coinBatches);
       if (type == CoinTransactionType.credit) {
         final source = _getCoinSource(reason);
         final batchId = uuid.v4();
@@ -152,7 +152,7 @@ class CoinRemoteDataSource {
         ));
       } else {
         // Debit: Deduct from oldest non-expired batches first (FIFO)
-        int remainingToDeduct = amount;
+        var remainingToDeduct = amount;
         newBatches = newBatches.map((batch) {
           if (remainingToDeduct <= 0) return batch;
           if (batch.isExpired(DateTime.now())) return batch;
@@ -245,7 +245,7 @@ class CoinRemoteDataSource {
           .map((pkg) => pkg.productId)
           .toSet();
 
-      final ProductDetailsResponse response =
+      final response =
           await inAppPurchase.queryProductDetails(productIds);
 
       if (response.error != null) {
@@ -301,7 +301,7 @@ class CoinRemoteDataSource {
     DateTime? startDate,
     DateTime? endDate,
   }) async {
-    Query query = _transactionsCollection
+    var query = _transactionsCollection
         .where('userId', isEqualTo: userId)
         .orderBy('createdAt', descending: true);
 
@@ -321,7 +321,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => CoinTransactionModel.fromFirestore(doc))
+        .map(CoinTransactionModel.fromFirestore)
         .toList();
   }
 
@@ -336,7 +336,7 @@ class CoinRemoteDataSource {
         .limit(limit)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => CoinTransactionModel.fromFirestore(doc))
+            .map(CoinTransactionModel.fromFirestore)
             .toList());
   }
 
@@ -475,8 +475,8 @@ class CoinRemoteDataSource {
     final newSpent = currentBalance.spentCoins + amount;
 
     // Deduct from oldest non-expired batches first (FIFO)
-    int remainingToDeduct = amount;
-    List<CoinBatch> newBatches = currentBalance.coinBatches.map((batch) {
+    var remainingToDeduct = amount;
+    final newBatches = currentBalance.coinBatches.map((batch) {
       if (remainingToDeduct <= 0) return batch;
       if (batch.isExpired(DateTime.now())) return batch;
       final deductAmount = batch.remainingCoins <= remainingToDeduct
@@ -549,9 +549,9 @@ class CoinRemoteDataSource {
 
     final newTotal = currentBalance.totalCoins + amount;
 
-    int newEarned = currentBalance.earnedCoins;
-    int newPurchased = currentBalance.purchasedCoins;
-    int newGifted = currentBalance.giftedCoins;
+    var newEarned = currentBalance.earnedCoins;
+    var newPurchased = currentBalance.purchasedCoins;
+    var newGifted = currentBalance.giftedCoins;
 
     if (reason == CoinTransactionReason.coinPurchase) {
       newPurchased += amount;
@@ -567,7 +567,7 @@ class CoinRemoteDataSource {
     final acquiredDate = DateTime.now();
     final expirationDate = acquiredDate.add(const Duration(days: 365));
 
-    List<CoinBatch> newBatches = List.from(currentBalance.coinBatches);
+    final newBatches = List<CoinBatch>.from(currentBalance.coinBatches);
     newBatches.add(CoinBatch(
       batchId: batchId,
       initialCoins: amount,
@@ -892,7 +892,7 @@ class CoinRemoteDataSource {
         .get();
 
     return snapshot.docs
-        .map((doc) => CoinGiftModel.fromFirestore(doc))
+        .map(CoinGiftModel.fromFirestore)
         .toList();
   }
 
@@ -904,7 +904,7 @@ class CoinRemoteDataSource {
         .get();
 
     return snapshot.docs
-        .map((doc) => CoinGiftModel.fromFirestore(doc))
+        .map(CoinGiftModel.fromFirestore)
         .toList();
   }
 
@@ -952,7 +952,7 @@ class CoinRemoteDataSource {
   Future<void> processExpiredCoins(String userId) async {
     final balance = await getBalance(userId);
     final now = DateTime.now();
-    int totalExpired = 0;
+    var totalExpired = 0;
 
     for (final batch in balance.coinBatches) {
       if (batch.isExpired(now) && batch.remainingCoins > 0) {
@@ -1004,7 +1004,7 @@ class CoinRemoteDataSource {
           final endDate = data?['endDate'] as Timestamp?;
           return endDate != null && endDate.compareTo(nowTimestamp) >= 0;
         })
-        .map((doc) => CoinPromotionModel.fromFirestore(doc))
+        .map(CoinPromotionModel.fromFirestore)
         .toList();
   }
 
@@ -1152,7 +1152,7 @@ class CoinRemoteDataSource {
     required String userId,
     int? limit,
   }) async {
-    Query query = _videoCoinTransactionsCollection
+    var query = _videoCoinTransactionsCollection
         .where('userId', isEqualTo: userId)
         .orderBy('createdAt', descending: true);
 
@@ -1162,7 +1162,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => VideoCoinTransactionModel.fromFirestore(doc))
+        .map(VideoCoinTransactionModel.fromFirestore)
         .toList();
   }
 
@@ -1239,7 +1239,7 @@ class CoinRemoteDataSource {
     int? limit,
     OrderStatus? status,
   }) async {
-    Query query = _ordersCollection
+    var query = _ordersCollection
         .where('userId', isEqualTo: userId)
         .orderBy('createdAt', descending: true);
 
@@ -1253,7 +1253,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => CoinOrderModel.fromFirestore(doc))
+        .map(CoinOrderModel.fromFirestore)
         .toList();
   }
 
@@ -1265,7 +1265,7 @@ class CoinRemoteDataSource {
     DateTime? startDate,
     DateTime? endDate,
   }) async {
-    Query query = _ordersCollection.orderBy('createdAt', descending: true);
+    var query = _ordersCollection.orderBy('createdAt', descending: true);
 
     if (status != null) {
       query = query.where('status', isEqualTo: status.name);
@@ -1291,7 +1291,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => CoinOrderModel.fromFirestore(doc))
+        .map(CoinOrderModel.fromFirestore)
         .toList();
   }
 
@@ -1380,7 +1380,7 @@ class CoinRemoteDataSource {
     required String userId,
     int? limit,
   }) async {
-    Query query = _invoicesCollection
+    var query = _invoicesCollection
         .where('userId', isEqualTo: userId)
         .orderBy('issueDate', descending: true);
 
@@ -1390,7 +1390,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => InvoiceModel.fromFirestore(doc))
+        .map(InvoiceModel.fromFirestore)
         .toList();
   }
 
@@ -1401,7 +1401,7 @@ class CoinRemoteDataSource {
     DateTime? startDate,
     DateTime? endDate,
   }) async {
-    Query query = _invoicesCollection.orderBy('issueDate', descending: true);
+    var query = _invoicesCollection.orderBy('issueDate', descending: true);
 
     if (status != null) {
       query = query.where('status', isEqualTo: status.name);
@@ -1423,7 +1423,7 @@ class CoinRemoteDataSource {
 
     final snapshot = await query.get();
     return snapshot.docs
-        .map((doc) => InvoiceModel.fromFirestore(doc))
+        .map(InvoiceModel.fromFirestore)
         .toList();
   }
 
@@ -1515,7 +1515,7 @@ class CoinRemoteDataSource {
     int? maxBalance,
     int limit = 50,
   }) async {
-    Query query = _balancesCollection.orderBy('totalCoins', descending: true);
+    var query = _balancesCollection.orderBy('totalCoins', descending: true);
 
     if (minBalance != null) {
       query = query.where('totalCoins', isGreaterThanOrEqualTo: minBalance);
@@ -1541,8 +1541,8 @@ class CoinRemoteDataSource {
   Future<Map<String, dynamic>> getCoinStatistics() async {
     // Get total coins in circulation
     final balancesSnapshot = await _balancesCollection.get();
-    int totalCoinsInCirculation = 0;
-    int totalUsersWithCoins = 0;
+    var totalCoinsInCirculation = 0;
+    var totalUsersWithCoins = 0;
 
     for (final doc in balancesSnapshot.docs) {
       final data = doc.data() as Map<String, dynamic>;
@@ -1563,7 +1563,7 @@ class CoinRemoteDataSource {
         .get();
 
     double totalRevenue = 0;
-    int totalOrders = ordersSnapshot.docs.length;
+    final totalOrders = ordersSnapshot.docs.length;
 
     for (final doc in ordersSnapshot.docs) {
       final data = doc.data() as Map<String, dynamic>;

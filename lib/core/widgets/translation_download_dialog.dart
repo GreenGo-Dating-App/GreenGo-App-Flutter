@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/translation_service.dart';
 
 /// Dialog to download translation language models
 class TranslationDownloadDialog extends StatefulWidget {
-  final List<String> languagesToDownload;
-  final VoidCallback? onComplete;
 
   const TranslationDownloadDialog({
-    super.key,
-    required this.languagesToDownload,
+    required this.languagesToDownload, super.key,
     this.onComplete,
   });
+  final List<String> languagesToDownload;
+  final VoidCallback? onComplete;
 
   /// Show the download dialog
   static Future<bool> show(
@@ -54,7 +53,7 @@ class _TranslationDownloadDialogState extends State<TranslationDownloadDialog> {
       _hasError = false;
     });
 
-    for (int i = 0; i < widget.languagesToDownload.length; i++) {
+    for (var i = 0; i < widget.languagesToDownload.length; i++) {
       final lang = widget.languagesToDownload[i];
 
       setState(() {

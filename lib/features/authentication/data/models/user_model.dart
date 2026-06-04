@@ -6,12 +6,27 @@ class UserModel extends User {
   const UserModel({
     required super.id,
     required super.email,
-    super.displayName,
+    required super.emailVerified, required super.createdAt, super.displayName,
     super.photoUrl,
-    required super.emailVerified,
-    required super.createdAt,
     super.lastLoginAt,
   });
+
+  /// Create UserModel from JSON
+  factory UserModel.fromJson(Map<String, dynamic> json) {
+    return UserModel(
+      id: json['id'] ?? '',
+      email: json['email'] ?? '',
+      displayName: json['displayName'],
+      photoUrl: json['photoUrl'],
+      emailVerified: json['emailVerified'] ?? false,
+      createdAt: json['createdAt'] != null
+          ? DateTime.parse(json['createdAt'])
+          : DateTime.now(),
+      lastLoginAt: json['lastLoginAt'] != null
+          ? DateTime.parse(json['lastLoginAt'])
+          : null,
+    );
+  }
 
   /// Create UserModel from Firebase User
   factory UserModel.fromFirebaseUser(
@@ -55,23 +70,6 @@ class UserModel extends User {
     };
   }
 
-  /// Create UserModel from JSON
-  factory UserModel.fromJson(Map<String, dynamic> json) {
-    return UserModel(
-      id: json['id'] ?? '',
-      email: json['email'] ?? '',
-      displayName: json['displayName'],
-      photoUrl: json['photoUrl'],
-      emailVerified: json['emailVerified'] ?? false,
-      createdAt: json['createdAt'] != null
-          ? DateTime.parse(json['createdAt'])
-          : DateTime.now(),
-      lastLoginAt: json['lastLoginAt'] != null
-          ? DateTime.parse(json['lastLoginAt'])
-          : null,
-    );
-  }
-
   /// Convert to JSON
   Map<String, dynamic> toJson() {
     return {
@@ -86,6 +84,7 @@ class UserModel extends User {
   }
 
   /// Copy with method
+  @override
   UserModel copyWith({
     String? id,
     String? email,

@@ -5,9 +5,9 @@ import '../repositories/virtual_gift_repository.dart';
 
 /// Get gift catalog
 class GetGiftCatalog {
-  final VirtualGiftRepository repository;
 
   GetGiftCatalog(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, List<VirtualGift>>> call() {
     return repository.getGiftCatalog();
@@ -16,9 +16,9 @@ class GetGiftCatalog {
 
 /// Get gifts by category
 class GetGiftsByCategory {
-  final VirtualGiftRepository repository;
 
   GetGiftsByCategory(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, List<VirtualGift>>> call(String category) {
     return repository.getGiftsByCategory(category);
@@ -27,9 +27,9 @@ class GetGiftsByCategory {
 
 /// Get gift by ID
 class GetGiftById {
-  final VirtualGiftRepository repository;
 
   GetGiftById(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, VirtualGift>> call(String giftId) {
     return repository.getGiftById(giftId);
@@ -38,9 +38,9 @@ class GetGiftById {
 
 /// Send a virtual gift
 class SendVirtualGift {
-  final VirtualGiftRepository repository;
 
   SendVirtualGift(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, SentVirtualGift>> call({
     required String senderId,
@@ -63,9 +63,9 @@ class SendVirtualGift {
 
 /// Get received gifts
 class GetReceivedGifts {
-  final VirtualGiftRepository repository;
 
   GetReceivedGifts(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, List<SentVirtualGift>>> call({
     required String userId,
@@ -86,9 +86,9 @@ class GetReceivedGifts {
 
 /// Get sent gifts
 class GetSentGifts {
-  final VirtualGiftRepository repository;
 
   GetSentGifts(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, List<SentVirtualGift>>> call({
     required String userId,
@@ -105,9 +105,9 @@ class GetSentGifts {
 
 /// Mark gift as viewed
 class MarkGiftViewed {
-  final VirtualGiftRepository repository;
 
   MarkGiftViewed(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, void>> call(String giftId) {
     return repository.markGiftViewed(giftId);
@@ -116,9 +116,9 @@ class MarkGiftViewed {
 
 /// Get gift statistics
 class GetGiftStats {
-  final VirtualGiftRepository repository;
 
   GetGiftStats(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, GiftStats>> call(String userId) {
     return repository.getGiftStats(userId);
@@ -127,9 +127,9 @@ class GetGiftStats {
 
 /// Get unviewed gift count
 class GetUnviewedGiftCount {
-  final VirtualGiftRepository repository;
 
   GetUnviewedGiftCount(this.repository);
+  final VirtualGiftRepository repository;
 
   Future<Either<Failure, int>> call(String userId) {
     return repository.getUnviewedGiftCount(userId);

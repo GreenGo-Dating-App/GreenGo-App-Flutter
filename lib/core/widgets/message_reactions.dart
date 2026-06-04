@@ -4,18 +4,17 @@ import '../constants/app_colors.dart';
 /// Enhancement #7: Message Reactions
 /// Emoji reactions for chat messages
 class MessageReactions extends StatelessWidget {
-  final Map<String, int> reactions;
-  final String? userReaction;
-  final Function(String emoji)? onReactionTap;
-  final Function(String emoji)? onReactionLongPress;
 
   const MessageReactions({
-    super.key,
-    required this.reactions,
+    required this.reactions, super.key,
     this.userReaction,
     this.onReactionTap,
     this.onReactionLongPress,
   });
+  final Map<String, int> reactions;
+  final String? userReaction;
+  final Function(String emoji)? onReactionTap;
+  final Function(String emoji)? onReactionLongPress;
 
   @override
   Widget build(BuildContext context) {
@@ -67,12 +66,11 @@ class MessageReactions extends StatelessWidget {
 
 /// Reaction picker popup
 class ReactionPicker extends StatelessWidget {
-  final Function(String emoji) onReactionSelected;
 
   const ReactionPicker({
-    super.key,
-    required this.onReactionSelected,
+    required this.onReactionSelected, super.key,
   });
+  final Function(String emoji) onReactionSelected;
 
   static const reactions = ['❤️', '😂', '😮', '😢', '😡', '👍', '👎'];
 

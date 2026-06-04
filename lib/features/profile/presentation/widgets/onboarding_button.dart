@@ -3,18 +3,17 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
 class OnboardingButton extends StatelessWidget {
-  final String text;
-  final VoidCallback? onPressed;
-  final bool isLoading;
-  final bool isPrimary;
 
   const OnboardingButton({
-    super.key,
-    required this.text,
+    required this.text, super.key,
     this.onPressed,
     this.isLoading = false,
     this.isPrimary = true,
   });
+  final String text;
+  final VoidCallback? onPressed;
+  final bool isLoading;
+  final bool isPrimary;
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,14 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -103,7 +104,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
 
   Future<void> _takeVerificationPhoto() async {
     try {
-      final XFile? image = await _picker.pickImage(
+      final image = await _picker.pickImage(
         source: ImageSource.camera,
         preferredCameraDevice: CameraDevice.front,
         maxWidth: 1920,
@@ -780,10 +781,10 @@ class _PrivacySection extends StatelessWidget {
 }
 
 class _PrivacyPoint extends StatelessWidget {
-  final IconData icon;
-  final String text;
 
   const _PrivacyPoint({required this.icon, required this.text});
+  final IconData icon;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -809,10 +810,10 @@ class _PrivacyPoint extends StatelessWidget {
 // ======================== Method Chooser ========================
 
 class _MethodChooser extends StatelessWidget {
-  final VoidCallback onPhotoSelected;
-  final VoidCallback onPhoneSelected;
 
   const _MethodChooser({required this.onPhotoSelected, required this.onPhoneSelected});
+  final VoidCallback onPhotoSelected;
+  final VoidCallback onPhoneSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -845,12 +846,12 @@ class _MethodChooser extends StatelessWidget {
 }
 
 class _MethodCard extends StatelessWidget {
+
+  const _MethodCard({required this.icon, required this.title, required this.subtitle, required this.onTap});
   final IconData icon;
   final String title;
   final String subtitle;
   final VoidCallback onTap;
-
-  const _MethodCard({required this.icon, required this.title, required this.subtitle, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -896,8 +897,8 @@ class _MethodCard extends StatelessWidget {
 // ======================== Photo Widgets ========================
 
 class _VerificationTip extends StatelessWidget {
-  final String text;
   const _VerificationTip({required this.text});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -918,19 +919,19 @@ class _VerificationTip extends StatelessWidget {
 }
 
 class _CountryCode {
+
+  const _CountryCode(this.code, this.flag, this.dialCode);
   final String code;
   final String flag;
   final String dialCode;
-
-  const _CountryCode(this.code, this.flag, this.dialCode);
 }
 
 class _TakePhotoCard extends StatelessWidget {
+
+  const _TakePhotoCard({required this.buttonText, this.onTap, this.isLoading = false});
   final VoidCallback? onTap;
   final String buttonText;
   final bool isLoading;
-
-  const _TakePhotoCard({this.onTap, required this.buttonText, this.isLoading = false});
 
   @override
   Widget build(BuildContext context) {
@@ -982,11 +983,11 @@ class _TakePhotoCard extends StatelessWidget {
 }
 
 class _VerificationPhotoCard extends StatelessWidget {
+
+  const _VerificationPhotoCard({required this.photoUrl, required this.onRetake, required this.retakeText});
   final String photoUrl;
   final VoidCallback onRetake;
   final String retakeText;
-
-  const _VerificationPhotoCard({required this.photoUrl, required this.onRetake, required this.retakeText});
 
   @override
   Widget build(BuildContext context) {

@@ -13,9 +13,9 @@ import 'package:http/http.dart' as http;
 /// Example: "table" → images of different kinds of tables
 /// Example: "run" → images of people running
 class VisualVocabularyService {
-  static final VisualVocabularyService _instance = VisualVocabularyService._();
   factory VisualVocabularyService() => _instance;
   VisualVocabularyService._();
+  static final VisualVocabularyService _instance = VisualVocabularyService._();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
@@ -85,7 +85,7 @@ class VisualVocabularyService {
 
     // 3. Fetch from image API
     await _loadApiKeys();
-    List<VocabularyImage> images = [];
+    var images = <VocabularyImage>[];
 
     // Try Unsplash first (better quality)
     if (_unsplashApiKey != null && _unsplashApiKey!.isNotEmpty) {
@@ -255,15 +255,7 @@ class VisualVocabularyService {
 }
 
 /// Represents a contextual image for a vocabulary word
-class VocabularyImage {
-  final String imageUrl; // Display-ready URL (~400px)
-  final String thumbnailUrl; // Small preview URL (~200px)
-  final String fullUrl; // Full resolution URL
-  final String description; // Alt text describing the image
-  final String photographer; // Photographer name (required for attribution)
-  final String? photographerUrl; // Link to photographer profile
-  final String source; // 'unsplash' or 'pexels'
-  final String attribution; // Full attribution text
+class VocabularyImage { // Full attribution text
 
   const VocabularyImage({
     required this.imageUrl,
@@ -271,23 +263,8 @@ class VocabularyImage {
     required this.fullUrl,
     required this.description,
     required this.photographer,
-    this.photographerUrl,
-    required this.source,
-    required this.attribution,
+    required this.source, required this.attribution, this.photographerUrl,
   });
-
-  Map<String, dynamic> toMap() {
-    return {
-      'imageUrl': imageUrl,
-      'thumbnailUrl': thumbnailUrl,
-      'fullUrl': fullUrl,
-      'description': description,
-      'photographer': photographer,
-      'photographerUrl': photographerUrl,
-      'source': source,
-      'attribution': attribution,
-    };
-  }
 
   factory VocabularyImage.fromMap(Map<String, dynamic> map) {
     return VocabularyImage(
@@ -300,5 +277,26 @@ class VocabularyImage {
       source: map['source'] as String? ?? 'unknown',
       attribution: map['attribution'] as String? ?? '',
     );
+  }
+  final String imageUrl; // Display-ready URL (~400px)
+  final String thumbnailUrl; // Small preview URL (~200px)
+  final String fullUrl; // Full resolution URL
+  final String description; // Alt text describing the image
+  final String photographer; // Photographer name (required for attribution)
+  final String? photographerUrl; // Link to photographer profile
+  final String source; // 'unsplash' or 'pexels'
+  final String attribution;
+
+  Map<String, dynamic> toMap() {
+    return {
+      'imageUrl': imageUrl,
+      'thumbnailUrl': thumbnailUrl,
+      'fullUrl': fullUrl,
+      'description': description,
+      'photographer': photographer,
+      'photographerUrl': photographerUrl,
+      'source': source,
+      'attribution': attribution,
+    };
   }
 }

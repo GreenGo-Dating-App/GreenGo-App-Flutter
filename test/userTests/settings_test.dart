@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'test_helpers.dart';
+
 import 'test_app.dart';
+import 'test_helpers.dart';
 
 /// Settings User Tests (3 tests)
 /// Tests cover: Language settings, app preferences, help/about

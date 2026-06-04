@@ -6,9 +6,9 @@ import '../datasources/vibe_tag_remote_datasource.dart';
 
 /// Vibe Tag Repository Implementation
 class VibeTagRepositoryImpl implements VibeTagRepository {
-  final VibeTagRemoteDataSource remoteDataSource;
 
   VibeTagRepositoryImpl({required this.remoteDataSource});
+  final VibeTagRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<VibeTag>>> getVibeTags() async {

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/social_links.dart';
 
 class SocialLinksEditor extends StatefulWidget {
+
+  const SocialLinksEditor({
+    required this.onSave, super.key,
+    this.initialLinks,
+    this.isEditing = false,
+  });
   final SocialLinks? initialLinks;
   final Function(SocialLinks) onSave;
   final bool isEditing;
-
-  const SocialLinksEditor({
-    super.key,
-    this.initialLinks,
-    required this.onSave,
-    this.isEditing = false,
-  });
 
   @override
   State<SocialLinksEditor> createState() => _SocialLinksEditorState();
@@ -297,7 +297,7 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
         ),
         decoration: InputDecoration(
           labelText: label,
-          labelStyle: TextStyle(color: AppColors.textSecondary),
+          labelStyle: const TextStyle(color: AppColors.textSecondary),
           hintText: hint,
           hintStyle: const TextStyle(color: AppColors.textTertiary),
           filled: true,
@@ -322,10 +322,8 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
 
   Widget _buildSocialItem({
     required String label,
-    String? value,
+    required IconData icon, required Color color, String? value,
     String? url,
-    required IconData icon,
-    required Color color,
   }) {
     final hasValue = value != null && value.isNotEmpty;
 
@@ -373,14 +371,14 @@ class _SocialLinksEditorState extends State<SocialLinksEditor> {
 }
 
 class SocialLinksDisplay extends StatelessWidget {
-  final SocialLinks? socialLinks;
-  final bool compact;
 
   const SocialLinksDisplay({
     super.key,
     this.socialLinks,
     this.compact = false,
   });
+  final SocialLinks? socialLinks;
+  final bool compact;
 
   Future<void> _launchUrl(String url) async {
     try {

@@ -1,26 +1,24 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:video_player/video_player.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Media Preview Screen
 ///
 /// Shows a preview of the selected image/video before sending
 /// Allows adding a caption to the media
 class MediaPreviewScreen extends StatefulWidget {
+
+  const MediaPreviewScreen({
+    required this.mediaFile, required this.isVideo, required this.onSend, required this.onCancel, super.key,
+  });
   final File mediaFile;
   final bool isVideo;
   final Function(String? caption) onSend;
   final VoidCallback onCancel;
-
-  const MediaPreviewScreen({
-    super.key,
-    required this.mediaFile,
-    required this.isVideo,
-    required this.onSend,
-    required this.onCancel,
-  });
 
   @override
   State<MediaPreviewScreen> createState() => _MediaPreviewScreenState();
@@ -90,9 +88,9 @@ class _MediaPreviewScreenState extends State<MediaPreviewScreen> {
           // Caption Input and Send Button
           Container(
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.backgroundCard,
-              borderRadius: const BorderRadius.vertical(
+              borderRadius: BorderRadius.vertical(
                 top: Radius.circular(20),
               ),
             ),

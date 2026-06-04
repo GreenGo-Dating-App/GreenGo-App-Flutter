@@ -2,16 +2,6 @@
 ///
 /// Represents a mutual match between two users
 class Match {
-  final String matchId;
-  final String userId1;
-  final String userId2;
-  final DateTime matchedAt;
-  final bool isActive;
-  final DateTime? lastMessageAt;
-  final String? lastMessage;
-  final int unreadCount;
-  final bool user1Seen;
-  final bool user2Seen;
 
   const Match({
     required this.matchId,
@@ -25,6 +15,16 @@ class Match {
     this.user1Seen = false,
     this.user2Seen = false,
   });
+  final String matchId;
+  final String userId1;
+  final String userId2;
+  final DateTime matchedAt;
+  final bool isActive;
+  final DateTime? lastMessageAt;
+  final String? lastMessage;
+  final int unreadCount;
+  final bool user1Seen;
+  final bool user2Seen;
 
   /// Get the other user's ID given the current user's ID
   String getOtherUserId(String currentUserId) {

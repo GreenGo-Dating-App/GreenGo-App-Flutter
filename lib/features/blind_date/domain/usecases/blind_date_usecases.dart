@@ -5,9 +5,9 @@ import '../repositories/blind_date_repository.dart';
 
 /// Create blind date profile
 class CreateBlindProfile {
-  final BlindDateRepository repository;
 
   CreateBlindProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, BlindDateProfile>> call(String userId) {
     return repository.createBlindProfile(userId);
@@ -16,9 +16,9 @@ class CreateBlindProfile {
 
 /// Get blind date profile
 class GetBlindProfile {
-  final BlindDateRepository repository;
 
   GetBlindProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, BlindDateProfile?>> call(String userId) {
     return repository.getBlindProfile(userId);
@@ -27,9 +27,9 @@ class GetBlindProfile {
 
 /// Deactivate blind date profile
 class DeactivateBlindProfile {
-  final BlindDateRepository repository;
 
   DeactivateBlindProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, void>> call(String userId) {
     return repository.deactivateBlindProfile(userId);
@@ -38,9 +38,9 @@ class DeactivateBlindProfile {
 
 /// Get blind date candidates
 class GetBlindCandidates {
-  final BlindDateRepository repository;
 
   GetBlindCandidates(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, List<BlindProfileView>>> call({
     required String userId,
@@ -52,9 +52,9 @@ class GetBlindCandidates {
 
 /// Like a blind profile
 class LikeBlindProfile {
-  final BlindDateRepository repository;
 
   LikeBlindProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, BlindLikeResult>> call({
     required String userId,
@@ -69,9 +69,9 @@ class LikeBlindProfile {
 
 /// Pass on a blind profile
 class PassBlindProfile {
-  final BlindDateRepository repository;
 
   PassBlindProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, void>> call({
     required String userId,
@@ -86,9 +86,9 @@ class PassBlindProfile {
 
 /// Get blind matches
 class GetBlindMatches {
-  final BlindDateRepository repository;
 
   GetBlindMatches(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, List<BlindMatch>>> call(String userId) {
     return repository.getBlindMatches(userId);
@@ -101,9 +101,9 @@ class GetBlindMatches {
 
 /// Instant reveal photos
 class InstantReveal {
-  final BlindDateRepository repository;
 
   InstantReveal(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, BlindMatch>> call({
     required String userId,
@@ -115,9 +115,9 @@ class InstantReveal {
 
 /// Check reveal status
 class CheckRevealStatus {
-  final BlindDateRepository repository;
 
   CheckRevealStatus(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, bool>> call(String matchId) {
     return repository.checkRevealStatus(matchId);
@@ -126,9 +126,9 @@ class CheckRevealStatus {
 
 /// Get revealed profile
 class GetRevealedProfile {
-  final BlindDateRepository repository;
 
   GetRevealedProfile(this.repository);
+  final BlindDateRepository repository;
 
   Future<Either<Failure, BlindProfileView>> call({
     required String matchId,

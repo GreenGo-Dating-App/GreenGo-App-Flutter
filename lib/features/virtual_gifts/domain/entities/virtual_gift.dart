@@ -3,17 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Virtual Gift Entity
 /// Animated Lottie gifts (roses, coffee, champagne, etc.)
 class VirtualGift extends Equatable {
-  final String id;
-  final String name;
-  final String emoji;
-  final int price;
-  final String category;
-  final String animationUrl;
-  final String? soundUrl;
-  final bool isActive;
-  final bool isPremium;
-  final int sortOrder;
-  final String? description;
 
   const VirtualGift({
     required this.id,
@@ -28,6 +17,17 @@ class VirtualGift extends Equatable {
     this.sortOrder = 0,
     this.description,
   });
+  final String id;
+  final String name;
+  final String emoji;
+  final int price;
+  final String category;
+  final String animationUrl;
+  final String? soundUrl;
+  final bool isActive;
+  final bool isPremium;
+  final int sortOrder;
+  final String? description;
 
   @override
   List<Object?> get props => [
@@ -96,6 +96,19 @@ extension GiftCategoryExtension on GiftCategory {
 
 /// Sent Virtual Gift - a gift sent from one user to another
 class SentVirtualGift extends Equatable {
+
+  const SentVirtualGift({
+    required this.id,
+    required this.giftId,
+    required this.senderId,
+    required this.senderName,
+    required this.receiverId,
+    required this.receiverName,
+    required this.sentAt, required this.coinsCost, this.message,
+    this.isViewed = false,
+    this.viewedAt,
+    this.gift,
+  });
   final String id;
   final String giftId;
   final String senderId;
@@ -108,21 +121,6 @@ class SentVirtualGift extends Equatable {
   final DateTime? viewedAt;
   final int coinsCost;
   final VirtualGift? gift;
-
-  const SentVirtualGift({
-    required this.id,
-    required this.giftId,
-    required this.senderId,
-    required this.senderName,
-    required this.receiverId,
-    required this.receiverName,
-    this.message,
-    required this.sentAt,
-    this.isViewed = false,
-    this.viewedAt,
-    required this.coinsCost,
-    this.gift,
-  });
 
   @override
   List<Object?> get props => [
@@ -149,15 +147,6 @@ class SentVirtualGift extends Equatable {
 
 /// Gift Statistics
 class GiftStats extends Equatable {
-  final String userId;
-  final int totalGiftsSent;
-  final int totalGiftsReceived;
-  final int totalCoinsSpent;
-  final int totalCoinsReceived;
-  final Map<String, int> giftsSentByType;
-  final Map<String, int> giftsReceivedByType;
-  final String? mostSentGiftId;
-  final String? mostReceivedGiftId;
 
   const GiftStats({
     required this.userId,
@@ -170,6 +159,15 @@ class GiftStats extends Equatable {
     this.mostSentGiftId,
     this.mostReceivedGiftId,
   });
+  final String userId;
+  final int totalGiftsSent;
+  final int totalGiftsReceived;
+  final int totalCoinsSpent;
+  final int totalCoinsReceived;
+  final Map<String, int> giftsSentByType;
+  final Map<String, int> giftsReceivedByType;
+  final String? mostSentGiftId;
+  final String? mostReceivedGiftId;
 
   @override
   List<Object?> get props => [

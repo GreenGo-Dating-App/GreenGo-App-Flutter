@@ -5,6 +5,19 @@ enum GlobePinType { currentUser, matched, discovery }
 enum GlobeDiscoverability { exact, approximate, country, hidden }
 
 class GlobeUser extends Equatable {
+
+  const GlobeUser({
+    required this.userId,
+    required this.displayName,
+    required this.pinLatitude, required this.pinLongitude, required this.country, required this.city, required this.pinType, this.photoUrl,
+    this.isOnline = false,
+    this.isTravelerActive = false,
+    this.travelerCountry,
+    this.matchId,
+    this.discoverability = GlobeDiscoverability.approximate,
+    this.realCountryLatitude,
+    this.realCountryLongitude,
+  });
   final String userId;
   final String displayName;
   final String? photoUrl;
@@ -20,24 +33,6 @@ class GlobeUser extends Equatable {
   final GlobeDiscoverability discoverability;
   final double? realCountryLatitude;
   final double? realCountryLongitude;
-
-  const GlobeUser({
-    required this.userId,
-    required this.displayName,
-    this.photoUrl,
-    required this.pinLatitude,
-    required this.pinLongitude,
-    required this.country,
-    required this.city,
-    required this.pinType,
-    this.isOnline = false,
-    this.isTravelerActive = false,
-    this.travelerCountry,
-    this.matchId,
-    this.discoverability = GlobeDiscoverability.approximate,
-    this.realCountryLatitude,
-    this.realCountryLongitude,
-  });
 
   GlobeUser copyWith({
     String? userId,
@@ -96,15 +91,15 @@ class GlobeUser extends Equatable {
 }
 
 class GlobeData extends Equatable {
-  final GlobeUser currentUser;
-  final List<GlobeUser> matchedUsers;
-  final List<GlobeUser> discoveryUsers;
 
   const GlobeData({
     required this.currentUser,
     required this.matchedUsers,
     required this.discoveryUsers,
   });
+  final GlobeUser currentUser;
+  final List<GlobeUser> matchedUsers;
+  final List<GlobeUser> discoveryUsers;
 
   List<GlobeUser> getFilteredUsers({
     required bool showMatched,

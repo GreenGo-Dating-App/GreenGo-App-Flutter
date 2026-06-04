@@ -136,7 +136,7 @@ class Validators {
   /// 3 = Strong
   /// 4 = Very Strong
   static int getPasswordStrength(String password) {
-    int strength = 0;
+    var strength = 0;
 
     if (password.isEmpty) return strength;
 

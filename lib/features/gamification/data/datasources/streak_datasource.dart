@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/login_streak_model.dart';
+
 import '../../domain/entities/login_streak.dart';
+import '../models/login_streak_model.dart';
 
 /// Streak Remote Data Source
 abstract class StreakRemoteDataSource {
@@ -19,11 +20,11 @@ abstract class StreakRemoteDataSource {
 
 /// Implementation of StreakRemoteDataSource
 class StreakRemoteDataSourceImpl implements StreakRemoteDataSource {
+
+  StreakRemoteDataSourceImpl({required this.firestore});
   final FirebaseFirestore firestore;
 
   static const String _collection = 'login_streaks';
-
-  StreakRemoteDataSourceImpl({required this.firestore});
 
   @override
   Future<LoginStreakModel?> getStreak(String oderId) async {
@@ -139,7 +140,7 @@ class StreakRemoteDataSourceImpl implements StreakRemoteDataSource {
 
     await docRef.update({
       'claimedMilestones': updatedMilestones
-          .map((m) => StreakMilestoneModel.toMap(m))
+          .map(StreakMilestoneModel.toMap)
           .toList(),
       'updatedAt': Timestamp.fromDate(DateTime.now()),
     });

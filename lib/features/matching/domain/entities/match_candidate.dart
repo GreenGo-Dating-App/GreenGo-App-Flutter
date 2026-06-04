@@ -5,12 +5,7 @@ import 'match_score.dart';
 ///
 /// Represents a potential match for a user, including their profile
 /// and compatibility score.
-class MatchCandidate {
-  final Profile profile;
-  final MatchScore matchScore;
-  final double distance; // Distance in kilometers
-  final DateTime suggestedAt;
-  final bool isSuperLike; // If this is a premium super-like suggestion
+class MatchCandidate { // If this is a premium super-like suggestion
 
   const MatchCandidate({
     required this.profile,
@@ -19,6 +14,11 @@ class MatchCandidate {
     required this.suggestedAt,
     this.isSuperLike = false,
   });
+  final Profile profile;
+  final MatchScore matchScore;
+  final double distance; // Distance in kilometers
+  final DateTime suggestedAt;
+  final bool isSuperLike;
 
   /// Whether distance is valid (both users have real locations)
   bool get hasValidDistance => distance > 0 || profile.location.latitude != 0.0 || profile.location.longitude != 0.0;

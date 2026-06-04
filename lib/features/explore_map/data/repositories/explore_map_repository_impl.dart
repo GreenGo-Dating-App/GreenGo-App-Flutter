@@ -9,9 +9,9 @@ import '../datasources/explore_map_remote_datasource.dart';
 /// Implementation of [ExploreMapRepository] that delegates to the remote
 /// data source and wraps results in [Either] for error handling.
 class ExploreMapRepositoryImpl implements ExploreMapRepository {
-  final ExploreMapRemoteDataSource remoteDataSource;
 
   ExploreMapRepositoryImpl({required this.remoteDataSource});
+  final ExploreMapRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<MapUser>>> getNearbyUsers({

@@ -4,7 +4,6 @@ import 'verification_admin_event.dart';
 import 'verification_admin_state.dart';
 
 class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdminState> {
-  final VerificationAdminRepository repository;
 
   VerificationAdminBloc({required this.repository}) : super(const VerificationAdminInitial()) {
     on<LoadPendingVerifications>(_onLoadPendingVerifications);
@@ -16,6 +15,7 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
     on<BulkApproveVerifications>(_onBulkApproveVerifications);
     on<BulkRequestBetterPhoto>(_onBulkRequestBetterPhoto);
   }
+  final VerificationAdminRepository repository;
 
   Future<void> _onLoadPendingVerifications(
     LoadPendingVerifications event,

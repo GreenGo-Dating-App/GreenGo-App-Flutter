@@ -22,6 +22,13 @@ import '../../../../core/constants/app_dimensions.dart';
 /// )
 /// ```
 class VideoPlayOverlay extends StatelessWidget {
+
+  const VideoPlayOverlay({
+    required this.videoUrl, super.key,
+    this.iconSize = 48,
+    this.backgroundOpacity = 0.5,
+    this.onTap,
+  });
   /// The URL of the video to play.
   final String? videoUrl;
 
@@ -33,14 +40,6 @@ class VideoPlayOverlay extends StatelessWidget {
 
   /// Optional callback when the overlay is tapped (in addition to playing).
   final VoidCallback? onTap;
-
-  const VideoPlayOverlay({
-    super.key,
-    required this.videoUrl,
-    this.iconSize = 48,
-    this.backgroundOpacity = 0.5,
-    this.onTap,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -110,9 +109,9 @@ class VideoPlayOverlay extends StatelessWidget {
 
 /// Full-screen video player dialog shown when the overlay is tapped.
 class _FullScreenVideoPlayer extends StatefulWidget {
-  final String videoUrl;
 
   const _FullScreenVideoPlayer({required this.videoUrl});
+  final String videoUrl;
 
   @override
   State<_FullScreenVideoPlayer> createState() =>
@@ -257,9 +256,9 @@ class _FullScreenVideoPlayerState extends State<_FullScreenVideoPlayer> {
 
 /// Simple play/pause toggle with timer display.
 class _PlayPauseControl extends StatefulWidget {
-  final VideoPlayerController controller;
 
   const _PlayPauseControl({required this.controller});
+  final VideoPlayerController controller;
 
   @override
   State<_PlayPauseControl> createState() => _PlayPauseControlState();
@@ -317,7 +316,7 @@ class _PlayPauseControlState extends State<_PlayPauseControl> {
           child: Container(
             width: 40,
             height: 40,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.richGold,
               shape: BoxShape.circle,
             ),

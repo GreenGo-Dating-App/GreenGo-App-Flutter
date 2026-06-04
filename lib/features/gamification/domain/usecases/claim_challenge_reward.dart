@@ -1,7 +1,6 @@
-/**
- * Claim Challenge Reward Use Case
- * Point 198: Claim rewards when completing challenges
- */
+/// Claim Challenge Reward Use Case
+/// Point 198: Claim rewards when completing challenges
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -11,9 +10,9 @@ import '../repositories/gamification_repository.dart';
 
 class ClaimChallengeReward
     implements UseCase<ChallengeRewardClaimResult, ClaimChallengeRewardParams> {
-  final GamificationRepository repository;
 
   ClaimChallengeReward(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, ChallengeRewardClaimResult>> call(
@@ -80,12 +79,12 @@ class ClaimChallengeReward
     );
 
     // Categorize rewards (Point 198)
-    int totalXP = 0;
-    int totalCoins = 0;
+    var totalXP = 0;
+    var totalCoins = 0;
     final badges = <ChallengeReward>[];
     final items = <ChallengeReward>[];
 
-    for (var reward in rewards) {
+    for (final reward in rewards) {
       switch (reward.type) {
         case 'xp':
           totalXP += reward.amount;
@@ -117,24 +116,16 @@ class ClaimChallengeReward
 }
 
 class ClaimChallengeRewardParams {
-  final String userId;
-  final String challengeId;
 
   ClaimChallengeRewardParams({
     required this.userId,
     required this.challengeId,
   });
+  final String userId;
+  final String challengeId;
 }
 
 class ChallengeRewardClaimResult {
-  final String challengeId;
-  final String challengeName;
-  final ChallengeType challengeType;
-  final List<ChallengeReward> rewards;
-  final int totalXP;
-  final int totalCoins;
-  final List<ChallengeReward> badges;
-  final List<ChallengeReward> items;
 
   ChallengeRewardClaimResult({
     required this.challengeId,
@@ -146,4 +137,12 @@ class ChallengeRewardClaimResult {
     required this.badges,
     required this.items,
   });
+  final String challengeId;
+  final String challengeName;
+  final ChallengeType challengeType;
+  final List<ChallengeReward> rewards;
+  final int totalXP;
+  final int totalCoins;
+  final List<ChallengeReward> badges;
+  final List<ChallengeReward> items;
 }

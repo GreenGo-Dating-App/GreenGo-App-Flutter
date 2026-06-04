@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #15: Profile Boost Indicator
 /// Shows when profile boost is active
 class BoostIndicator extends StatefulWidget {
-  final bool isActive;
-  final Duration? remainingTime;
-  final int? viewsGained;
-  final VoidCallback? onTap;
 
   const BoostIndicator({
-    super.key,
-    required this.isActive,
+    required this.isActive, super.key,
     this.remainingTime,
     this.viewsGained,
     this.onTap,
   });
+  final bool isActive;
+  final Duration? remainingTime;
+  final int? viewsGained;
+  final VoidCallback? onTap;
 
   @override
   State<BoostIndicator> createState() => _BoostIndicatorState();
@@ -84,7 +83,7 @@ class _BoostIndicatorState extends State<BoostIndicator>
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
+              const Icon(
                 Icons.flash_on,
                 color: AppColors.textTertiary,
                 size: 18,
@@ -203,9 +202,6 @@ class _BoostIndicatorState extends State<BoostIndicator>
 
 /// Boost button for purchasing/activating boost
 class BoostButton extends StatelessWidget {
-  final VoidCallback? onPressed;
-  final int? boostsRemaining;
-  final bool isLoading;
 
   const BoostButton({
     super.key,
@@ -213,6 +209,9 @@ class BoostButton extends StatelessWidget {
     this.boostsRemaining,
     this.isLoading = false,
   });
+  final VoidCallback? onPressed;
+  final int? boostsRemaining;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {

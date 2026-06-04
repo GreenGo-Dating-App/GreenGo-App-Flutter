@@ -1,29 +1,29 @@
 import 'dart:async';
 import 'dart:ui';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_level.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
-import '../widgets/level_display_widget.dart';
 import 'achievements_screen.dart';
 import 'daily_challenges_screen.dart';
-import 'leaderboard_screen.dart';
 import 'journey_screen.dart';
+import 'leaderboard_screen.dart';
 
 /// Progress Screen - Main hub for gamification features
 /// Displays user's level, achievements, challenges, and leaderboard
 class ProgressScreen extends StatefulWidget {
-  final String userId;
 
   const ProgressScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<ProgressScreen> createState() => _ProgressScreenState();
@@ -609,7 +609,7 @@ class _ProgressScreenState extends State<ProgressScreen>
 
   Widget _buildStreakCard(BuildContext context, GamificationState state) {
     // Real streak data - 0 if no data available
-    final streak = 0; // TODO: Add streak field to UserLevel entity when backend supports it
+    const streak = 0; // TODO: Add streak field to UserLevel entity when backend supports it
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
@@ -670,9 +670,9 @@ class _ProgressScreenState extends State<ProgressScreen>
                       crossAxisAlignment: CrossAxisAlignment.baseline,
                       textBaseline: TextBaseline.alphabetic,
                       children: [
-                        Text(
+                        const Text(
                           '$streak',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 36,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -697,9 +697,9 @@ class _ProgressScreenState extends State<ProgressScreen>
                   color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Text(
+                child: const Text(
                   streak >= 7 ? '🎉 On Fire!' : 'Keep going!',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 12,
                     color: Colors.white,
                     fontWeight: FontWeight.w500,

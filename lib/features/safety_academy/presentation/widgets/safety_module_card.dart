@@ -9,16 +9,13 @@ import '../../domain/entities/safety_progress.dart';
 /// Displays the module icon, title, description, lesson progress,
 /// XP reward, and completion status.
 class SafetyModuleCard extends StatelessWidget {
+
+  const SafetyModuleCard({
+    required this.module, required this.progress, required this.onTap, super.key,
+  });
   final SafetyModule module;
   final SafetyProgress? progress;
   final VoidCallback onTap;
-
-  const SafetyModuleCard({
-    super.key,
-    required this.module,
-    required this.progress,
-    required this.onTap,
-  });
 
   bool get _isCompleted =>
       progress?.isModuleCompleted(module.id) ?? false;

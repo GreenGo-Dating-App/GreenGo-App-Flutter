@@ -5,18 +5,18 @@ import '../entities/profile.dart';
 import '../repositories/profile_repository.dart';
 
 class CreateProfile implements UseCase<Profile, CreateProfileParams> {
-  final ProfileRepository repository;
 
   CreateProfile(this.repository);
+  final ProfileRepository repository;
 
   @override
   Future<Either<Failure, Profile>> call(CreateProfileParams params) async {
-    return await repository.createProfile(params.profile);
+    return repository.createProfile(params.profile);
   }
 }
 
 class CreateProfileParams {
-  final Profile profile;
 
   CreateProfileParams({required this.profile});
+  final Profile profile;
 }

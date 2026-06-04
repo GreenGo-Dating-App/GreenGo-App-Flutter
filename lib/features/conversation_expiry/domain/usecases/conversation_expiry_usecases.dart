@@ -5,9 +5,9 @@ import '../repositories/conversation_expiry_repository.dart';
 
 /// Get expiry for a conversation
 class GetConversationExpiry {
-  final ConversationExpiryRepository repository;
 
   GetConversationExpiry(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, ConversationExpiry?>> call(String conversationId) {
     return repository.getExpiry(conversationId);
@@ -16,9 +16,9 @@ class GetConversationExpiry {
 
 /// Get all user expiries
 class GetUserExpiries {
-  final ConversationExpiryRepository repository;
 
   GetUserExpiries(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, List<ConversationExpiry>>> call(String userId) {
     return repository.getUserExpiries(userId);
@@ -27,9 +27,9 @@ class GetUserExpiries {
 
 /// Get expiring soon conversations
 class GetExpiringSoon {
-  final ConversationExpiryRepository repository;
 
   GetExpiringSoon(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, List<ConversationExpiry>>> call(
     String userId, {
@@ -41,9 +41,9 @@ class GetExpiringSoon {
 
 /// Extend a conversation
 class ExtendConversation {
-  final ConversationExpiryRepository repository;
 
   ExtendConversation(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, ExtensionResult>> call({
     required String conversationId,
@@ -58,9 +58,9 @@ class ExtendConversation {
 
 /// Record activity in conversation
 class RecordConversationActivity {
-  final ConversationExpiryRepository repository;
 
   RecordConversationActivity(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, ConversationExpiry>> call(String conversationId) {
     return repository.recordActivity(conversationId);
@@ -69,9 +69,9 @@ class RecordConversationActivity {
 
 /// Check if conversation is expired
 class CheckConversationExpired {
-  final ConversationExpiryRepository repository;
 
   CheckConversationExpired(this.repository);
+  final ConversationExpiryRepository repository;
 
   Future<Either<Failure, bool>> call(String conversationId) {
     return repository.isExpired(conversationId);
@@ -80,9 +80,9 @@ class CheckConversationExpired {
 
 /// Stream expiry updates
 class StreamConversationExpiry {
-  final ConversationExpiryRepository repository;
 
   StreamConversationExpiry(this.repository);
+  final ConversationExpiryRepository repository;
 
   Stream<Either<Failure, ConversationExpiry>> call(String conversationId) {
     return repository.streamExpiry(conversationId);

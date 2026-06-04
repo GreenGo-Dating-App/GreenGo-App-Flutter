@@ -6,9 +6,9 @@ import '../datasources/date_scheduler_remote_datasource.dart';
 
 /// Implementation of Date Scheduler repository
 class DateSchedulerRepositoryImpl implements DateSchedulerRepository {
-  final DateSchedulerRemoteDataSource remoteDataSource;
 
   DateSchedulerRepositoryImpl({required this.remoteDataSource});
+  final DateSchedulerRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, ScheduledDate>> createDate({
@@ -146,7 +146,7 @@ class DateSchedulerRepositoryImpl implements DateSchedulerRepository {
   Stream<Either<Failure, List<ScheduledDate>>> streamDates(String userId) {
     return remoteDataSource
         .streamDates(userId)
-        .map((dates) => Right<Failure, List<ScheduledDate>>(dates));
+        .map(Right<Failure, List<ScheduledDate>>.new);
   }
 
   @override

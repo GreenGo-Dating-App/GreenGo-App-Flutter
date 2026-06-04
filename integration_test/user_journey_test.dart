@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:integration_test/integration_test.dart';
 import 'package:greengo_chat/main.dart' as app;
+import 'package:integration_test/integration_test.dart';
 
 /// Real User Journey Integration Tests
 ///
@@ -149,7 +149,7 @@ void main() {
           print('Logging in with valid credentials...');
 
           // Wait for Firebase authentication with multiple pumps
-          for (int i = 0; i < 10; i++) {
+          for (var i = 0; i < 10; i++) {
             await tester.pump(const Duration(seconds: 1));
           }
           print('Login completed');
@@ -158,7 +158,7 @@ void main() {
 
       print('=== SCENARIO 8: Handle Onboarding Tour ===');
       // The app may show a tour overlay after login - dismiss it
-      for (int i = 0; i < 15; i++) {
+      for (var i = 0; i < 15; i++) {
         await tester.pump(const Duration(milliseconds: 500));
 
         final nextButton = find.text('Next');

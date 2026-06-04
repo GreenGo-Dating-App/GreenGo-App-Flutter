@@ -1,5 +1,6 @@
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+
 import '../models/second_chance_model.dart';
 
 /// Remote data source for Second Chance feature
@@ -31,13 +32,13 @@ abstract class SecondChanceRemoteDataSource {
 
 /// Implementation of Second Chance remote data source
 class SecondChanceRemoteDataSourceImpl implements SecondChanceRemoteDataSource {
-  final FirebaseFunctions functions;
-  final FirebaseFirestore firestore;
 
   SecondChanceRemoteDataSourceImpl({
     required this.functions,
     required this.firestore,
   });
+  final FirebaseFunctions functions;
+  final FirebaseFirestore firestore;
 
   @override
   Future<List<SecondChanceProfileModel>> getSecondChanceProfiles(

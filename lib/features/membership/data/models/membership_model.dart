@@ -25,6 +25,29 @@ class MembershipRulesModel extends MembershipRules {
     super.badgeIcon,
   });
 
+  factory MembershipRulesModel.fromEntity(MembershipRules rules) {
+    return MembershipRulesModel(
+      dailyMessageLimit: rules.dailyMessageLimit,
+      dailySwipeLimit: rules.dailySwipeLimit,
+      dailyPriorityConnectLimit: rules.dailyPriorityConnectLimit,
+      hourlyConnectLimit: rules.hourlyConnectLimit,
+      hourlyPassLimit: rules.hourlyPassLimit,
+      hourlyPriorityConnectLimit: rules.hourlyPriorityConnectLimit,
+      canUseAdvancedFilters: rules.canUseAdvancedFilters,
+      canFilterByLocation: rules.canFilterByLocation,
+      canFilterByInterests: rules.canFilterByInterests,
+      canFilterByLanguage: rules.canFilterByLanguage,
+      canFilterByVerification: rules.canFilterByVerification,
+      canSendMedia: rules.canSendMedia,
+      canSeeReadReceipts: rules.canSeeReadReceipts,
+      canUseIncognitoMode: rules.canUseIncognitoMode,
+      matchPriority: rules.matchPriority,
+      canSeeProfileVisitors: rules.canSeeProfileVisitors,
+      canUseVideoChat: rules.canUseVideoChat,
+      badgeIcon: rules.badgeIcon,
+    );
+  }
+
   factory MembershipRulesModel.fromJson(Map<String, dynamic> json) {
     return MembershipRulesModel(
       dailyMessageLimit: json['dailyMessageLimit'] as int? ?? 10,
@@ -70,29 +93,6 @@ class MembershipRulesModel extends MembershipRules {
       'badgeIcon': badgeIcon,
     };
   }
-
-  factory MembershipRulesModel.fromEntity(MembershipRules rules) {
-    return MembershipRulesModel(
-      dailyMessageLimit: rules.dailyMessageLimit,
-      dailySwipeLimit: rules.dailySwipeLimit,
-      dailyPriorityConnectLimit: rules.dailyPriorityConnectLimit,
-      hourlyConnectLimit: rules.hourlyConnectLimit,
-      hourlyPassLimit: rules.hourlyPassLimit,
-      hourlyPriorityConnectLimit: rules.hourlyPriorityConnectLimit,
-      canUseAdvancedFilters: rules.canUseAdvancedFilters,
-      canFilterByLocation: rules.canFilterByLocation,
-      canFilterByInterests: rules.canFilterByInterests,
-      canFilterByLanguage: rules.canFilterByLanguage,
-      canFilterByVerification: rules.canFilterByVerification,
-      canSendMedia: rules.canSendMedia,
-      canSeeReadReceipts: rules.canSeeReadReceipts,
-      canUseIncognitoMode: rules.canUseIncognitoMode,
-      matchPriority: rules.matchPriority,
-      canSeeProfileVisitors: rules.canSeeProfileVisitors,
-      canUseVideoChat: rules.canUseVideoChat,
-      badgeIcon: rules.badgeIcon,
-    );
-  }
 }
 
 /// Membership Model
@@ -102,15 +102,41 @@ class MembershipModel extends Membership {
     required super.membershipId,
     required super.userId,
     required super.tier,
-    super.couponCode,
-    required super.startDate,
+    required super.startDate, required super.isActive, required super.createdAt, required super.updatedAt, super.couponCode,
     super.endDate,
     super.customRules,
-    required super.isActive,
-    required super.createdAt,
-    required super.updatedAt,
     super.activatedBy,
   });
+
+  factory MembershipModel.fromEntity(Membership membership) {
+    return MembershipModel(
+      membershipId: membership.membershipId,
+      userId: membership.userId,
+      tier: membership.tier,
+      couponCode: membership.couponCode,
+      startDate: membership.startDate,
+      endDate: membership.endDate,
+      customRules: membership.customRules,
+      isActive: membership.isActive,
+      createdAt: membership.createdAt,
+      updatedAt: membership.updatedAt,
+      activatedBy: membership.activatedBy,
+    );
+  }
+
+  /// Create a new FREE membership for a user
+  factory MembershipModel.createFreeMembership(String userId) {
+    final now = DateTime.now();
+    return MembershipModel(
+      membershipId: '',
+      userId: userId,
+      tier: MembershipTier.free,
+      startDate: now,
+      isActive: true,
+      createdAt: now,
+      updatedAt: now,
+    );
+  }
 
   factory MembershipModel.fromJson(Map<String, dynamic> json) {
     return MembershipModel(
@@ -154,35 +180,5 @@ class MembershipModel extends Membership {
       'updatedAt': Timestamp.fromDate(updatedAt),
       'activatedBy': activatedBy,
     };
-  }
-
-  factory MembershipModel.fromEntity(Membership membership) {
-    return MembershipModel(
-      membershipId: membership.membershipId,
-      userId: membership.userId,
-      tier: membership.tier,
-      couponCode: membership.couponCode,
-      startDate: membership.startDate,
-      endDate: membership.endDate,
-      customRules: membership.customRules,
-      isActive: membership.isActive,
-      createdAt: membership.createdAt,
-      updatedAt: membership.updatedAt,
-      activatedBy: membership.activatedBy,
-    );
-  }
-
-  /// Create a new FREE membership for a user
-  factory MembershipModel.createFreeMembership(String userId) {
-    final now = DateTime.now();
-    return MembershipModel(
-      membershipId: '',
-      userId: userId,
-      tier: MembershipTier.free,
-      startDate: now,
-      isActive: true,
-      createdAt: now,
-      updatedAt: now,
-    );
   }
 }

@@ -1,23 +1,23 @@
-/**
- * Gamification Repository Implementation
- * Points 176-200: Repository implementation with error handling
- */
+/// Gamification Repository Implementation
+/// Points 176-200: Repository implementation with error handling
+library;
 
 import 'package:dartz/dartz.dart';
-import '../../../../core/error/failures.dart';
+
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/error/failures.dart';
 import '../../domain/entities/achievement.dart';
-import '../../domain/entities/user_level.dart';
 import '../../domain/entities/daily_challenge.dart';
+import '../../domain/entities/user_level.dart';
 import '../../domain/repositories/gamification_repository.dart';
 import '../datasources/gamification_remote_datasource.dart';
 
 class GamificationRepositoryImpl implements GamificationRepository {
-  final GamificationRemoteDataSource remoteDataSource;
 
   GamificationRepositoryImpl({
     required this.remoteDataSource,
   });
+  final GamificationRemoteDataSource remoteDataSource;
 
   // ===== Achievement Operations =====
 

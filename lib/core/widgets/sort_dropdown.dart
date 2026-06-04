@@ -49,14 +49,12 @@ extension MatchSortOptionExtension on MatchSortOption {
 }
 
 class SortDropdown extends StatelessWidget {
-  final MatchSortOption selectedOption;
-  final Function(MatchSortOption) onChanged;
 
   const SortDropdown({
-    super.key,
-    required this.selectedOption,
-    required this.onChanged,
+    required this.selectedOption, required this.onChanged, super.key,
   });
+  final MatchSortOption selectedOption;
+  final Function(MatchSortOption) onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +76,7 @@ class SortDropdown extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
+            const Icon(
               Icons.sort,
               size: 18,
               color: AppColors.textSecondary,

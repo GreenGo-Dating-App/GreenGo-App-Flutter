@@ -1,27 +1,133 @@
-import 'package:get_it/get_it.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+// Gamification - Full
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+// Notifications
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:get_it/get_it.dart';
+// Coins
+import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-// Conditional imports based on feature flags
-// Uncomment when enabling features in AppConfig
-// import 'package:google_sign_in/google_sign_in.dart';
-// import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-// import 'package:local_auth/local_auth.dart';
-
-import '../config/app_config.dart';
-import '../services/blocked_users_service.dart';
-import '../services/candidate_pool_service.dart';
-
+// Admin - Tier Configuration
+import '../../features/admin/data/datasources/tier_config_datasource.dart';
+import '../../features/admin/data/repositories/tier_config_repository_impl.dart';
+import '../../features/admin/domain/entities/tier_config.dart';
+import '../../features/admin/domain/repositories/tier_config_repository.dart';
 // Authentication
 import '../../features/authentication/data/datasources/auth_remote_data_source.dart';
 import '../../features/authentication/data/repositories/auth_repository_impl.dart';
 import '../../features/authentication/domain/repositories/auth_repository.dart';
-import '../../features/authentication/domain/usecases/sign_in_with_email.dart';
 import '../../features/authentication/domain/usecases/register_with_email.dart';
+import '../../features/authentication/domain/usecases/sign_in_with_email.dart';
 import '../../features/authentication/presentation/bloc/auth_bloc.dart';
-
+// Chat
+import '../../features/chat/data/datasources/chat_remote_datasource.dart';
+import '../../features/chat/data/repositories/chat_repository_impl.dart';
+import '../../features/chat/domain/repositories/chat_repository.dart';
+import '../../features/chat/domain/usecases/block_user.dart';
+import '../../features/chat/domain/usecases/delete_conversation.dart';
+import '../../features/chat/domain/usecases/delete_message.dart';
+import '../../features/chat/domain/usecases/forward_message.dart';
+import '../../features/chat/domain/usecases/get_conversation.dart';
+import '../../features/chat/domain/usecases/get_conversations.dart';
+import '../../features/chat/domain/usecases/get_messages.dart';
+import '../../features/chat/domain/usecases/get_search_conversation.dart';
+import '../../features/chat/domain/usecases/mark_as_read.dart';
+import '../../features/chat/domain/usecases/report_user.dart';
+import '../../features/chat/domain/usecases/send_message.dart';
+import '../../features/chat/domain/usecases/set_typing_indicator.dart';
+import '../../features/chat/domain/usecases/star_message.dart';
+import '../../features/chat/presentation/bloc/chat_bloc.dart';
+import '../../features/chat/presentation/bloc/conversations_bloc.dart';
+import '../../features/coins/data/datasources/coin_remote_datasource.dart';
+import '../../features/coins/data/repositories/coin_repository_impl.dart';
+import '../../features/coins/domain/repositories/coin_repository.dart';
+import '../../features/coins/domain/usecases/claim_reward.dart';
+import '../../features/coins/domain/usecases/get_coin_balance.dart';
+import '../../features/coins/domain/usecases/get_transaction_history.dart';
+import '../../features/coins/domain/usecases/manage_allowance.dart';
+import '../../features/coins/domain/usecases/manage_expiration.dart';
+import '../../features/coins/domain/usecases/manage_gifts.dart';
+import '../../features/coins/domain/usecases/manage_promotions.dart';
+import '../../features/coins/domain/usecases/purchase_coins.dart';
+import '../../features/coins/domain/usecases/purchase_feature.dart';
+import '../../features/coins/presentation/bloc/coin_bloc.dart';
+// Communities
+import '../../features/communities/data/datasources/communities_remote_datasource.dart';
+import '../../features/communities/data/repositories/communities_repository_impl.dart';
+import '../../features/communities/domain/repositories/communities_repository.dart';
+import '../../features/communities/presentation/bloc/communities_bloc.dart';
+// Cultural Exchange
+import '../../features/cultural_exchange/data/datasources/cultural_exchange_remote_datasource.dart';
+import '../../features/cultural_exchange/data/repositories/cultural_exchange_repository_impl.dart';
+import '../../features/cultural_exchange/domain/repositories/cultural_exchange_repository.dart';
+import '../../features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
+// Discovery
+import '../../features/discovery/data/datasources/discovery_remote_datasource.dart';
+import '../../features/discovery/data/repositories/discovery_repository_impl.dart';
+import '../../features/discovery/domain/repositories/discovery_repository.dart';
+import '../../features/discovery/domain/usecases/get_discovery_stack.dart';
+import '../../features/discovery/domain/usecases/get_matches.dart';
+import '../../features/discovery/domain/usecases/record_swipe.dart';
+import '../../features/discovery/domain/usecases/undo_swipe.dart';
+import '../../features/discovery/presentation/bloc/discovery_bloc.dart';
+import '../../features/discovery/presentation/bloc/matches_bloc.dart';
+// Events
+import '../../features/events/data/datasources/events_remote_datasource.dart';
+import '../../features/events/data/repositories/events_repository_impl.dart';
+import '../../features/events/domain/repositories/events_repository.dart';
+import '../../features/events/presentation/bloc/events_bloc.dart';
+// Explore Map
+import '../../features/explore_map/data/datasources/explore_map_remote_datasource.dart';
+import '../../features/explore_map/data/repositories/explore_map_repository_impl.dart';
+import '../../features/explore_map/domain/repositories/explore_map_repository.dart';
+import '../../features/explore_map/presentation/bloc/explore_map_bloc.dart';
+import '../../features/gamification/data/datasources/gamification_remote_datasource.dart';
+// Gamification - Streaks
+import '../../features/gamification/data/datasources/streak_datasource.dart';
+import '../../features/gamification/data/repositories/gamification_repository_impl.dart';
+import '../../features/gamification/data/repositories/streak_repository_impl.dart';
+import '../../features/gamification/domain/repositories/gamification_repository.dart';
+import '../../features/gamification/domain/repositories/streak_repository.dart';
+import '../../features/gamification/domain/usecases/check_feature_unlock.dart';
+import '../../features/gamification/domain/usecases/claim_challenge_reward.dart' as gamification;
+import '../../features/gamification/domain/usecases/claim_level_rewards.dart';
+import '../../features/gamification/domain/usecases/get_daily_challenges.dart';
+import '../../features/gamification/domain/usecases/get_leaderboard.dart';
+import '../../features/gamification/domain/usecases/get_seasonal_event.dart';
+import '../../features/gamification/domain/usecases/get_user_achievements.dart';
+import '../../features/gamification/domain/usecases/grant_xp.dart';
+import '../../features/gamification/domain/usecases/track_achievement_progress.dart';
+import '../../features/gamification/domain/usecases/track_challenge_progress.dart';
+import '../../features/gamification/domain/usecases/track_user_action.dart';
+import '../../features/gamification/domain/usecases/unlock_achievement.dart';
+import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
+// Globe Explore
+import '../../features/globe_explore/data/datasources/globe_remote_datasource.dart';
+import '../../features/globe_explore/data/repositories/globe_repository_impl.dart';
+import '../../features/globe_explore/domain/repositories/globe_repository.dart';
+import '../../features/globe_explore/domain/usecases/get_globe_data.dart';
+import '../../features/globe_explore/domain/usecases/watch_globe_updates.dart';
+import '../../features/globe_explore/presentation/bloc/globe_bloc.dart';
+// Matching
+import '../../features/matching/data/datasources/matching_remote_datasource.dart';
+import '../../features/matching/data/repositories/matching_repository_impl.dart';
+import '../../features/matching/domain/repositories/matching_repository.dart';
+import '../../features/matching/domain/usecases/compatibility_scorer.dart';
+import '../../features/matching/domain/usecases/feature_engineer.dart';
+import '../../features/matching/domain/usecases/get_match_candidates.dart';
+import '../../features/notifications/data/datasources/notification_remote_datasource.dart';
+import '../../features/notifications/data/repositories/notification_repository_impl.dart';
+import '../../features/notifications/domain/repositories/notification_repository.dart';
+import '../../features/notifications/domain/usecases/get_notification_preferences.dart';
+import '../../features/notifications/domain/usecases/get_notifications.dart';
+import '../../features/notifications/domain/usecases/mark_all_notifications_read.dart';
+import '../../features/notifications/domain/usecases/mark_notification_read.dart';
+import '../../features/notifications/domain/usecases/update_notification_preferences.dart';
+import '../../features/notifications/presentation/bloc/notification_preferences_bloc.dart';
+import '../../features/notifications/presentation/bloc/notifications_bloc.dart';
 // Profile
 import '../../features/profile/data/datasources/profile_remote_data_source.dart';
 import '../../features/profile/data/repositories/profile_repository_impl.dart';
@@ -31,108 +137,18 @@ import '../../features/profile/domain/usecases/get_profile.dart';
 import '../../features/profile/domain/usecases/update_profile.dart';
 import '../../features/profile/domain/usecases/upload_photo.dart';
 import '../../features/profile/domain/usecases/verify_photo.dart';
-import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/onboarding_bloc.dart';
-
-// Matching
-import '../../features/matching/data/datasources/matching_remote_datasource.dart';
-import '../../features/matching/data/repositories/matching_repository_impl.dart';
-import '../../features/matching/domain/repositories/matching_repository.dart';
-import '../../features/matching/domain/usecases/feature_engineer.dart';
-import '../../features/matching/domain/usecases/compatibility_scorer.dart';
-import '../../features/matching/domain/usecases/get_match_candidates.dart';
-
-// Discovery
-import '../../features/discovery/data/datasources/discovery_remote_datasource.dart';
-import '../../features/discovery/data/repositories/discovery_repository_impl.dart';
-import '../../features/discovery/domain/repositories/discovery_repository.dart';
-import '../../features/discovery/domain/usecases/get_discovery_stack.dart';
-import '../../features/discovery/domain/usecases/record_swipe.dart';
-import '../../features/discovery/domain/usecases/undo_swipe.dart';
-import '../../features/discovery/domain/usecases/get_matches.dart';
-import '../../features/discovery/presentation/bloc/discovery_bloc.dart';
-import '../../features/discovery/presentation/bloc/matches_bloc.dart';
-
-// Chat
-import '../../features/chat/data/datasources/chat_remote_datasource.dart';
-import '../../features/chat/data/repositories/chat_repository_impl.dart';
-import '../../features/chat/domain/repositories/chat_repository.dart';
-import '../../features/chat/domain/usecases/get_conversation.dart';
-import '../../features/chat/domain/usecases/get_conversations.dart';
-import '../../features/chat/domain/usecases/get_messages.dart';
-import '../../features/chat/domain/usecases/send_message.dart';
-import '../../features/chat/domain/usecases/mark_as_read.dart';
-import '../../features/chat/domain/usecases/set_typing_indicator.dart';
-import '../../features/chat/domain/usecases/delete_message.dart';
-import '../../features/chat/domain/usecases/block_user.dart';
-import '../../features/chat/domain/usecases/report_user.dart';
-import '../../features/chat/domain/usecases/star_message.dart';
-import '../../features/chat/domain/usecases/forward_message.dart';
-import '../../features/chat/domain/usecases/delete_conversation.dart';
-import '../../features/chat/domain/usecases/get_search_conversation.dart';
-import '../../features/chat/presentation/bloc/chat_bloc.dart';
-import '../../features/chat/presentation/bloc/conversations_bloc.dart';
-
-// Notifications
-import 'package:firebase_messaging/firebase_messaging.dart';
-import '../../features/notifications/data/datasources/notification_remote_datasource.dart';
-import '../../features/notifications/data/repositories/notification_repository_impl.dart';
-import '../../features/notifications/domain/repositories/notification_repository.dart';
-import '../../features/notifications/domain/usecases/get_notifications.dart';
-import '../../features/notifications/domain/usecases/mark_notification_read.dart';
-import '../../features/notifications/domain/usecases/mark_all_notifications_read.dart';
-import '../../features/notifications/domain/usecases/get_notification_preferences.dart';
-import '../../features/notifications/domain/usecases/update_notification_preferences.dart';
-import '../../features/notifications/presentation/bloc/notifications_bloc.dart';
-import '../../features/notifications/presentation/bloc/notification_preferences_bloc.dart';
-
-// Video Calling
-import '../../features/video_calling/data/datasources/video_calling_remote_datasource.dart';
-import '../../features/video_calling/data/repositories/video_calling_repository_impl.dart';
-import '../../features/video_calling/domain/repositories/video_calling_repository.dart';
-import '../../features/video_calling/domain/usecases/initiate_call.dart';
-import '../../features/video_calling/domain/usecases/answer_call.dart';
-import '../../features/video_calling/domain/usecases/decline_call.dart';
-import '../../features/video_calling/domain/usecases/end_call.dart';
-import '../../features/video_calling/domain/usecases/get_call_history.dart';
-import '../../features/video_calling/domain/usecases/listen_for_incoming_calls.dart';
-import '../../features/video_calling/domain/usecases/get_sdk_config.dart';
-import '../../features/video_calling/presentation/bloc/video_call_bloc.dart';
-
-// Admin - Tier Configuration
-import '../../features/admin/data/datasources/tier_config_datasource.dart';
-import '../../features/admin/data/repositories/tier_config_repository_impl.dart';
-import '../../features/admin/domain/repositories/tier_config_repository.dart';
-import '../../features/admin/domain/entities/tier_config.dart';
-
-// Gamification - Streaks
-import '../../features/gamification/data/datasources/streak_datasource.dart';
-import '../../features/gamification/data/repositories/streak_repository_impl.dart';
-import '../../features/gamification/domain/repositories/streak_repository.dart';
-
-// Gamification - Full
-import 'package:cloud_functions/cloud_functions.dart';
-import '../../features/gamification/data/datasources/gamification_remote_datasource.dart';
-import '../../features/gamification/data/repositories/gamification_repository_impl.dart';
-import '../../features/gamification/domain/repositories/gamification_repository.dart';
-import '../../features/gamification/domain/usecases/get_user_achievements.dart';
-import '../../features/gamification/domain/usecases/unlock_achievement.dart';
-import '../../features/gamification/domain/usecases/track_achievement_progress.dart';
-import '../../features/gamification/domain/usecases/grant_xp.dart';
-import '../../features/gamification/domain/usecases/get_leaderboard.dart';
-import '../../features/gamification/domain/usecases/claim_level_rewards.dart';
-import '../../features/gamification/domain/usecases/check_feature_unlock.dart';
-import '../../features/gamification/domain/usecases/get_daily_challenges.dart';
-import '../../features/gamification/domain/usecases/track_challenge_progress.dart';
-import '../../features/gamification/domain/usecases/claim_challenge_reward.dart' as gamification;
-import '../../features/gamification/domain/usecases/get_seasonal_event.dart';
-import '../../features/gamification/domain/usecases/track_user_action.dart';
-import '../../features/gamification/presentation/bloc/gamification_bloc.dart';
-
-// Coins
-import 'package:in_app_purchase/in_app_purchase.dart';
-import '../../features/coins/data/datasources/coin_remote_datasource.dart';
-
+import '../../features/profile/presentation/bloc/profile_bloc.dart';
+// Safety Academy
+import '../../features/safety_academy/data/datasources/safety_academy_remote_datasource.dart';
+import '../../features/safety_academy/data/repositories/safety_academy_repository_impl.dart';
+import '../../features/safety_academy/domain/repositories/safety_academy_repository.dart';
+import '../../features/safety_academy/presentation/bloc/safety_academy_bloc.dart';
+// Spots
+import '../../features/spots/data/datasources/spots_remote_datasource.dart';
+import '../../features/spots/data/repositories/spots_repository_impl.dart';
+import '../../features/spots/domain/repositories/spots_repository.dart';
+import '../../features/spots/presentation/bloc/spots_bloc.dart';
 // Subscription
 import '../../features/subscription/data/datasources/subscription_remote_datasource.dart';
 import '../../features/subscription/data/repositories/subscription_repository_impl.dart';
@@ -141,77 +157,35 @@ import '../../features/subscription/domain/usecases/get_current_subscription.dar
 import '../../features/subscription/domain/usecases/purchase_subscription.dart' as domain_purchase;
 import '../../features/subscription/domain/usecases/restore_purchases.dart';
 import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
-
-
-// Cultural Exchange
-import '../../features/cultural_exchange/data/datasources/cultural_exchange_remote_datasource.dart';
-import '../../features/cultural_exchange/data/repositories/cultural_exchange_repository_impl.dart';
-import '../../features/cultural_exchange/domain/repositories/cultural_exchange_repository.dart';
-import '../../features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
-
-// Safety Academy
-import '../../features/safety_academy/data/datasources/safety_academy_remote_datasource.dart';
-import '../../features/safety_academy/data/repositories/safety_academy_repository_impl.dart';
-import '../../features/safety_academy/domain/repositories/safety_academy_repository.dart';
-import '../../features/safety_academy/presentation/bloc/safety_academy_bloc.dart';
-
-// Events
-import '../../features/events/data/datasources/events_remote_datasource.dart';
-import '../../features/events/data/repositories/events_repository_impl.dart';
-import '../../features/events/domain/repositories/events_repository.dart';
-import '../../features/events/presentation/bloc/events_bloc.dart';
-
+// Video Calling
+import '../../features/video_calling/data/datasources/video_calling_remote_datasource.dart';
+import '../../features/video_calling/data/repositories/video_calling_repository_impl.dart';
+import '../../features/video_calling/domain/repositories/video_calling_repository.dart';
+import '../../features/video_calling/domain/usecases/answer_call.dart';
+import '../../features/video_calling/domain/usecases/decline_call.dart';
+import '../../features/video_calling/domain/usecases/end_call.dart';
+import '../../features/video_calling/domain/usecases/get_call_history.dart';
+import '../../features/video_calling/domain/usecases/get_sdk_config.dart';
+import '../../features/video_calling/domain/usecases/initiate_call.dart';
+import '../../features/video_calling/domain/usecases/listen_for_incoming_calls.dart';
+import '../../features/video_calling/presentation/bloc/video_call_bloc.dart';
 // Video Profiles
 import '../../features/video_profiles/data/datasources/video_profile_remote_datasource.dart';
 import '../../features/video_profiles/data/repositories/video_profile_repository_impl.dart';
 import '../../features/video_profiles/domain/repositories/video_profile_repository.dart';
 import '../../features/video_profiles/presentation/bloc/video_profile_bloc.dart';
+// Conditional imports based on feature flags
+// Uncomment when enabling features in AppConfig
+// import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+// import 'package:local_auth/local_auth.dart';
 
-// Explore Map
-import '../../features/explore_map/data/datasources/explore_map_remote_datasource.dart';
-import '../../features/explore_map/data/repositories/explore_map_repository_impl.dart';
-import '../../features/explore_map/domain/repositories/explore_map_repository.dart';
-import '../../features/explore_map/presentation/bloc/explore_map_bloc.dart';
-
-// Globe Explore
-import '../../features/globe_explore/data/datasources/globe_remote_datasource.dart';
-import '../../features/globe_explore/data/repositories/globe_repository_impl.dart';
-import '../../features/globe_explore/domain/repositories/globe_repository.dart';
-import '../../features/globe_explore/domain/usecases/get_globe_data.dart';
-import '../../features/globe_explore/domain/usecases/watch_globe_updates.dart';
-import '../../features/globe_explore/presentation/bloc/globe_bloc.dart';
-
-// Spots
-import '../../features/spots/data/datasources/spots_remote_datasource.dart';
-import '../../features/spots/data/repositories/spots_repository_impl.dart';
-import '../../features/spots/domain/repositories/spots_repository.dart';
-import '../../features/spots/presentation/bloc/spots_bloc.dart';
-
-// Communities
-import '../../features/communities/data/datasources/communities_remote_datasource.dart';
-import '../../features/communities/data/repositories/communities_repository_impl.dart';
-import '../../features/communities/domain/repositories/communities_repository.dart';
-import '../../features/communities/presentation/bloc/communities_bloc.dart';
-
-
-// Core Services
-import '../services/cache_service.dart';
+import '../config/app_config.dart';
+import '../services/app_sound_service.dart';
+import '../services/blocked_users_service.dart';
+import '../services/candidate_pool_service.dart';
 import '../services/pronunciation_service.dart';
 import '../services/visual_vocabulary_service.dart';
-import '../services/app_sound_service.dart';
-
-import '../../features/coins/data/repositories/coin_repository_impl.dart';
-import '../../features/coins/domain/repositories/coin_repository.dart';
-import '../../features/coins/domain/usecases/get_coin_balance.dart';
-import '../../features/coins/domain/usecases/purchase_coins.dart';
-import '../../features/coins/domain/usecases/get_transaction_history.dart';
-import '../../features/coins/domain/usecases/claim_reward.dart';
-import '../../features/coins/domain/usecases/purchase_feature.dart';
-import '../../features/coins/domain/usecases/manage_gifts.dart';
-import '../../features/coins/domain/usecases/manage_allowance.dart';
-import '../../features/coins/domain/usecases/manage_expiration.dart';
-import '../../features/coins/domain/usecases/manage_promotions.dart';
-import '../../features/coins/presentation/bloc/coin_bloc.dart';
 
 final sl = GetIt.instance;
 
@@ -287,7 +261,7 @@ Future<void> init() async {
   //! Features - Matching
   // Use cases
   sl.registerLazySingleton(() => GetMatchCandidates(sl()));
-  sl.registerLazySingleton(() => FeatureEngineer());
+  sl.registerLazySingleton(FeatureEngineer.new);
   sl.registerLazySingleton(() => CompatibilityScorer(featureEngineer: sl()));
 
   // Repository
@@ -510,7 +484,7 @@ Future<void> init() async {
   );
 
   // Provider singleton
-  sl.registerLazySingleton(() => TierConfigProvider());
+  sl.registerLazySingleton(TierConfigProvider.new);
 
   //! Features - Gamification
   // Streak datasources
@@ -818,9 +792,9 @@ Future<void> init() async {
 
 
   //! Core Services
-  sl.registerLazySingleton(() => PronunciationService());
-  sl.registerLazySingleton(() => VisualVocabularyService());
-  sl.registerLazySingleton(() => AppSoundService());
+  sl.registerLazySingleton(PronunciationService.new);
+  sl.registerLazySingleton(VisualVocabularyService.new);
+  sl.registerLazySingleton(AppSoundService.new);
 
   //! External
   final sharedPreferences = await SharedPreferences.getInstance();

@@ -1,19 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/upload_photo.dart';
 import '../../domain/usecases/verify_photo.dart';
-import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import 'onboarding_event.dart';
 import 'onboarding_state.dart';
 
 class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
-  final CreateProfile createProfile;
-  final UploadPhoto uploadPhoto;
-  final VerifyPhoto verifyPhoto;
 
   OnboardingBloc({
     required this.createProfile,
@@ -39,6 +37,9 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingPhoneVerificationCompleted>(_onOnboardingPhoneVerificationCompleted);
     on<OnboardingCompleted>(_onOnboardingCompleted);
   }
+  final CreateProfile createProfile;
+  final UploadPhoto uploadPhoto;
+  final VerifyPhoto verifyPhoto;
 
   void _onOnboardingStarted(
     OnboardingStarted event,

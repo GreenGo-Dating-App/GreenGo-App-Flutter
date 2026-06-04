@@ -6,16 +6,16 @@ import '../repositories/chat_repository.dart';
 ///
 /// Point 120: Archive old conversations
 class ArchiveConversation {
-  final ChatRepository repository;
 
   ArchiveConversation(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String conversationId,
     required String userId,
     required bool isArchived,
   }) async {
-    return await repository.archiveConversation(
+    return repository.archiveConversation(
       conversationId: conversationId,
       userId: userId,
       isArchived: isArchived,

@@ -1,32 +1,32 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../matching/domain/usecases/compatibility_scorer.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
-import '../../../matching/domain/usecases/compatibility_scorer.dart';
 import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
 import '../bloc/matches_state.dart';
 import '../widgets/match_card_widget.dart';
 import 'match_detail_screen.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Matches Screen
 ///
 /// Displays user's matches with search, filter, and sort capabilities
 class MatchesScreen extends StatelessWidget {
-  final String userId;
 
   const MatchesScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   Widget build(BuildContext context) {
@@ -39,9 +39,9 @@ class MatchesScreen extends StatelessWidget {
 }
 
 class _MatchesScreenContent extends StatefulWidget {
-  final String userId;
 
   const _MatchesScreenContent({required this.userId});
+  final String userId;
 
   @override
   State<_MatchesScreenContent> createState() => _MatchesScreenContentState();
@@ -122,7 +122,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
     Map<String, Profile> profiles,
     String userId,
   ) {
-    var filtered = matches.where((match) {
+    final filtered = matches.where((match) {
       final profile = profiles[match.getOtherUserId(userId)];
 
       // Apply search filter

@@ -5,16 +5,15 @@ import 'package:webview_flutter/webview_flutter.dart';
 /// Renders animated SVGs (with `<animate>` tags) using a WebView.
 /// Falls back to a static icon if WebView fails to initialize.
 class AnimatedSvgIcon extends StatefulWidget {
-  final String assetPath;
-  final double width;
-  final double height;
 
   const AnimatedSvgIcon({
-    super.key,
-    required this.assetPath,
+    required this.assetPath, super.key,
     this.width = 64,
     this.height = 64,
   });
+  final String assetPath;
+  final double width;
+  final double height;
 
   /// Cache for loaded SVG strings to avoid repeated asset reads.
   static final Map<String, String> _svgCache = {};

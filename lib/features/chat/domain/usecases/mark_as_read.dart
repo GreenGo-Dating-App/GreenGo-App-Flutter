@@ -4,9 +4,9 @@ import '../repositories/chat_repository.dart';
 
 /// Mark Messages As Read Use Case
 class MarkAsRead {
-  final ChatRepository repository;
 
   MarkAsRead(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call(MarkAsReadParams params) {
     return repository.markConversationAsRead(
@@ -18,11 +18,11 @@ class MarkAsRead {
 
 /// Parameters for MarkAsRead use case
 class MarkAsReadParams {
-  final String conversationId;
-  final String userId;
 
   MarkAsReadParams({
     required this.conversationId,
     required this.userId,
   });
+  final String conversationId;
+  final String userId;
 }

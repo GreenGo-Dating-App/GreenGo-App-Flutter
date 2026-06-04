@@ -5,12 +5,6 @@ import '../../../../core/constants/app_colors.dart';
 ///
 /// Displays pass/skip/super like/like buttons below the card
 class SwipeButtons extends StatelessWidget {
-  final VoidCallback? onRewind;
-  final VoidCallback? onPass;
-  final VoidCallback? onSkip;
-  final VoidCallback? onSuperLike;
-  final VoidCallback? onLike;
-  final bool enabled;
 
   const SwipeButtons({
     super.key,
@@ -21,6 +15,12 @@ class SwipeButtons extends StatelessWidget {
     this.onLike,
     this.enabled = true,
   });
+  final VoidCallback? onRewind;
+  final VoidCallback? onPass;
+  final VoidCallback? onSkip;
+  final VoidCallback? onSuperLike;
+  final VoidCallback? onLike;
+  final bool enabled;
 
   @override
   Widget build(BuildContext context) {

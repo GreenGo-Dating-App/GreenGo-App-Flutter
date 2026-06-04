@@ -1,7 +1,6 @@
-/**
- * Get User Achievements Use Case
- * Points 176-185: Retrieve user's achievement progress
- */
+/// Get User Achievements Use Case
+/// Points 176-185: Retrieve user's achievement progress
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/achievement.dart';
 import '../repositories/gamification_repository.dart';
 
 class GetUserAchievements implements UseCase<UserAchievementsData, String> {
-  final GamificationRepository repository;
 
   GetUserAchievements(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, UserAchievementsData>> call(String userId) async {
@@ -39,7 +38,7 @@ class GetUserAchievements implements UseCase<UserAchievementsData, String> {
 
     // Map progress to achievements
     final progressMap = {
-      for (var p in userProgress) p.achievementId: p,
+      for (final p in userProgress) p.achievementId: p,
     };
 
     final achievementsWithProgress = allAchievements.map((achievement) {
@@ -52,7 +51,7 @@ class GetUserAchievements implements UseCase<UserAchievementsData, String> {
 
     // Group by category
     final byCategory = <AchievementCategory, List<AchievementWithProgress>>{};
-    for (var category in AchievementCategory.values) {
+    for (final category in AchievementCategory.values) {
       byCategory[category] = achievementsWithProgress
           .where((a) => a.achievement.category == category)
           .toList();
@@ -75,13 +74,13 @@ class GetUserAchievements implements UseCase<UserAchievementsData, String> {
 
 /// Achievement with user progress
 class AchievementWithProgress {
-  final Achievement achievement;
-  final UserAchievementProgress? progress;
 
   AchievementWithProgress({
     required this.achievement,
     this.progress,
   });
+  final Achievement achievement;
+  final UserAchievementProgress? progress;
 
   bool get isUnlocked => progress?.isUnlocked ?? false;
   double get progressPercentage => progress?.progressPercentage ?? 0.0;
@@ -90,11 +89,6 @@ class AchievementWithProgress {
 
 /// User achievements data
 class UserAchievementsData {
-  final List<AchievementWithProgress> allAchievements;
-  final Map<AchievementCategory, List<AchievementWithProgress>> byCategory;
-  final int totalAchievements;
-  final int unlockedCount;
-  final int progressPercentage;
 
   UserAchievementsData({
     required this.allAchievements,
@@ -103,4 +97,9 @@ class UserAchievementsData {
     required this.unlockedCount,
     required this.progressPercentage,
   });
+  final List<AchievementWithProgress> allAchievements;
+  final Map<AchievementCategory, List<AchievementWithProgress>> byCategory;
+  final int totalAchievements;
+  final int unlockedCount;
+  final int progressPercentage;
 }

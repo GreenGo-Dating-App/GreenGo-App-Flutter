@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'test_helpers.dart';
+
 import 'test_app.dart';
+import 'test_helpers.dart';
 
 /// Notifications User Tests (8 tests)
 /// Tests cover: View notifications, mark as read, configure preferences

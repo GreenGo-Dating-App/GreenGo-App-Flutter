@@ -1,5 +1,5 @@
-import 'dart:io';
 import 'dart:convert';
+import 'dart:io';
 
 /// Test Report Generator for GreenGo Chat User Tests
 ///
@@ -15,30 +15,29 @@ import 'dart:convert';
 ///   Or use the convenience script:
 ///      dart run tests/userTests/run_tests_with_report.dart
 
-class TestResult {
-  final String name;
-  final String group;
-  final bool passed;
-  final String? error;
-  final int duration; // in milliseconds
+class TestResult { // in milliseconds
 
   TestResult({
     required this.name,
     required this.group,
     required this.passed,
-    this.error,
-    required this.duration,
+    required this.duration, this.error,
   });
+  final String name;
+  final String group;
+  final bool passed;
+  final String? error;
+  final int duration;
 }
 
 class TestCategory {
+
+  TestCategory(this.name, this.total);
   final String name;
   final int total;
   int passed = 0;
   int failed = 0;
   List<TestResult> tests = [];
-
-  TestCategory(this.name, this.total);
 }
 
 void main() async {
@@ -288,7 +287,7 @@ Future<void> generateSampleReport() async {
   print('Test Structure Summary:');
   print('═══════════════════════════════════════════════════════\n');
 
-  int total = 0;
+  var total = 0;
   for (final entry in categories.entries) {
     print('${entry.key}: ${entry.value.total} tests');
     total += entry.value.total;

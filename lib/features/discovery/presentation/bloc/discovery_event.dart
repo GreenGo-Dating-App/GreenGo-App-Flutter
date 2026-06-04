@@ -1,6 +1,6 @@
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
-import '../../../membership/domain/entities/membership.dart';
 
 /// Discovery Events
 abstract class DiscoveryEvent {
@@ -9,24 +9,19 @@ abstract class DiscoveryEvent {
 
 /// Load discovery stack
 class DiscoveryStackLoadRequested extends DiscoveryEvent {
-  final String userId;
-  final MatchPreferences preferences;
-  final int limit;
 
   const DiscoveryStackLoadRequested({
     required this.userId,
     required this.preferences,
     this.limit = 20,
   });
+  final String userId;
+  final MatchPreferences preferences;
+  final int limit;
 }
 
 /// Record a swipe action
 class DiscoverySwipeRecorded extends DiscoveryEvent {
-  final String userId;
-  final String targetUserId;
-  final SwipeActionType actionType;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
 
   const DiscoverySwipeRecorded({
     required this.userId,
@@ -35,15 +30,15 @@ class DiscoverySwipeRecorded extends DiscoveryEvent {
     this.membershipRules,
     this.membershipTier,
   });
-}
-
-/// Record a swipe action from grid mode (does NOT advance currentIndex)
-class DiscoveryGridSwipeRecorded extends DiscoveryEvent {
   final String userId;
   final String targetUserId;
   final SwipeActionType actionType;
   final MembershipRules? membershipRules;
   final MembershipTier? membershipTier;
+}
+
+/// Record a swipe action from grid mode (does NOT advance currentIndex)
+class DiscoveryGridSwipeRecorded extends DiscoveryEvent {
 
   const DiscoveryGridSwipeRecorded({
     required this.userId,
@@ -52,50 +47,55 @@ class DiscoveryGridSwipeRecorded extends DiscoveryEvent {
     this.membershipRules,
     this.membershipTier,
   });
+  final String userId;
+  final String targetUserId;
+  final SwipeActionType actionType;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
 }
 
 /// Refresh discovery stack
 class DiscoveryStackRefreshRequested extends DiscoveryEvent {
-  final String userId;
-  final MatchPreferences preferences;
 
   const DiscoveryStackRefreshRequested({
     required this.userId,
     required this.preferences,
   });
+  final String userId;
+  final MatchPreferences preferences;
 }
 
 /// Load more candidates
 class DiscoveryMoreCandidatesRequested extends DiscoveryEvent {
-  final String userId;
-  final MatchPreferences preferences;
 
   const DiscoveryMoreCandidatesRequested({
     required this.userId,
     required this.preferences,
   });
+  final String userId;
+  final MatchPreferences preferences;
 }
 
 /// Rewind (undo) the last swipe
 class DiscoveryRewindRequested extends DiscoveryEvent {
-  final String userId;
-  final MembershipRules? membershipRules;
-  final MembershipTier? membershipTier;
 
   const DiscoveryRewindRequested({
     required this.userId,
     this.membershipRules,
     this.membershipTier,
   });
+  final String userId;
+  final MembershipRules? membershipRules;
+  final MembershipTier? membershipTier;
 }
 
 /// Prefetch more profiles in background (triggered automatically when queue is low)
 class DiscoveryPrefetchRequested extends DiscoveryEvent {
-  final String userId;
-  final MatchPreferences preferences;
 
   const DiscoveryPrefetchRequested({
     required this.userId,
     required this.preferences,
   });
+  final String userId;
+  final MatchPreferences preferences;
 }

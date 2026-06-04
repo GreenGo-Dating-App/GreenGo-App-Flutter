@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Local Guide Badge Widget
 ///
 /// Displays a green shield icon with "Local Guide" text and the guide's city.
 /// Available in compact mode (for cards) and full mode (for profile screens).
 class LocalGuideBadge extends StatelessWidget {
+
+  const LocalGuideBadge({
+    required this.localGuideCity, super.key,
+    this.compact = false,
+  });
   /// The city where this user is a local guide
   final String? localGuideCity;
 
   /// Whether to use compact mode (smaller, for grid/swipe cards)
   final bool compact;
-
-  const LocalGuideBadge({
-    super.key,
-    required this.localGuideCity,
-    this.compact = false,
-  });
 
   @override
   Widget build(BuildContext context) {

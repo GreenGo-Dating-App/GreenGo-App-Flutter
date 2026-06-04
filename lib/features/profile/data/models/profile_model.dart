@@ -1,16 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../domain/entities/profile.dart';
-import '../../domain/entities/location.dart';
-import '../../domain/entities/social_links.dart';
+
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/location.dart';
+import '../../domain/entities/profile.dart';
+import '../../domain/entities/social_links.dart';
 
 class ProfileModel extends Profile {
   const ProfileModel({
     required super.userId,
     required super.displayName,
-    super.nickname,
-    required super.dateOfBirth,
-    required super.gender,
+    required super.dateOfBirth, required super.gender, required super.photoUrls, required super.bio, required super.interests, required super.location, required super.languages, required super.createdAt, required super.updatedAt, required super.isComplete, super.nickname,
     super.sexualOrientation,
     super.accountStatus,
     super.isBoosted,
@@ -21,12 +20,7 @@ class ProfileModel extends Profile {
     super.isTraveler,
     super.travelerExpiry,
     super.travelerLocation,
-    required super.photoUrls,
     super.privatePhotoUrls,
-    required super.bio,
-    required super.interests,
-    required super.location,
-    required super.languages,
     super.voiceRecordingUrl,
     super.personalityTraits,
     super.education,
@@ -34,9 +28,6 @@ class ProfileModel extends Profile {
     super.lookingFor,
     super.height,
     super.weight,
-    required super.createdAt,
-    required super.updatedAt,
-    required super.isComplete,
     super.verificationStatus,
     super.verificationPhotoUrl,
     super.verificationMethod,
@@ -71,6 +62,80 @@ class ProfileModel extends Profile {
     super.signupGrantsApplied,
     super.signupGrantsAppliedAt,
   });
+
+  factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
+    final data = doc.data() as Map<String, dynamic>;
+    return ProfileModel.fromJson({...data, 'userId': doc.id});
+  }
+
+  factory ProfileModel.fromEntity(Profile profile) {
+    return ProfileModel(
+      userId: profile.userId,
+      displayName: profile.displayName,
+      nickname: profile.nickname,
+      dateOfBirth: profile.dateOfBirth,
+      gender: profile.gender,
+      sexualOrientation: profile.sexualOrientation,
+      accountStatus: profile.accountStatus,
+      isBoosted: profile.isBoosted,
+      boostExpiry: profile.boostExpiry,
+      isIncognito: profile.isIncognito,
+      incognitoExpiry: profile.incognitoExpiry,
+      isGhostMode: profile.isGhostMode,
+      isTraveler: profile.isTraveler,
+      travelerExpiry: profile.travelerExpiry,
+      travelerLocation: profile.travelerLocation,
+      photoUrls: profile.photoUrls,
+      privatePhotoUrls: profile.privatePhotoUrls,
+      bio: profile.bio,
+      interests: profile.interests,
+      location: profile.location,
+      languages: profile.languages,
+      voiceRecordingUrl: profile.voiceRecordingUrl,
+      personalityTraits: profile.personalityTraits,
+      education: profile.education,
+      occupation: profile.occupation,
+      lookingFor: profile.lookingFor,
+      height: profile.height,
+      weight: profile.weight,
+      createdAt: profile.createdAt,
+      updatedAt: profile.updatedAt,
+      isComplete: profile.isComplete,
+      verificationStatus: profile.verificationStatus,
+      verificationPhotoUrl: profile.verificationPhotoUrl,
+      verificationMethod: profile.verificationMethod,
+      verificationPhone: profile.verificationPhone,
+      verificationRejectionReason: profile.verificationRejectionReason,
+      verificationSubmittedAt: profile.verificationSubmittedAt,
+      verificationReviewedAt: profile.verificationReviewedAt,
+      verificationReviewedBy: profile.verificationReviewedBy,
+      isAdmin: profile.isAdmin,
+      isSupport: profile.isSupport,
+      is2FAEnabled: profile.is2FAEnabled,
+      socialLinks: profile.socialLinks,
+      membershipTier: profile.membershipTier,
+      membershipStartDate: profile.membershipStartDate,
+      membershipEndDate: profile.membershipEndDate,
+      hasBaseMembership: profile.hasBaseMembership,
+      baseMembershipEndDate: profile.baseMembershipEndDate,
+      isOnline: profile.isOnline,
+      lastSeen: profile.lastSeen,
+      preferredLanguages: profile.preferredLanguages,
+      nativeLanguage: profile.nativeLanguage,
+      travelPreference: profile.travelPreference,
+      primaryOrigin: profile.primaryOrigin,
+      secondaryOrigin: profile.secondaryOrigin,
+      isLocalGuide: profile.isLocalGuide,
+      localGuideCity: profile.localGuideCity,
+      videoProfileUrl: profile.videoProfileUrl,
+      hasVideoProfile: profile.hasVideoProfile,
+      showOnMap: profile.showOnMap,
+      globeDiscoverability: profile.globeDiscoverability,
+      completedSafetyModules: profile.completedSafetyModules,
+      signupGrantsApplied: profile.signupGrantsApplied,
+      signupGrantsAppliedAt: profile.signupGrantsAppliedAt,
+    );
+  }
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {
     return ProfileModel(
@@ -222,11 +287,6 @@ class ProfileModel extends Profile {
     }
   }
 
-  factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
-    return ProfileModel.fromJson({...data, 'userId': doc.id});
-  }
-
   Map<String, dynamic> toJson() {
     // Handle location conversion - might be Location entity or LocationModel
     Map<String, dynamic> locationJson;
@@ -346,75 +406,6 @@ class ProfileModel extends Profile {
           : null,
     };
   }
-
-  factory ProfileModel.fromEntity(Profile profile) {
-    return ProfileModel(
-      userId: profile.userId,
-      displayName: profile.displayName,
-      nickname: profile.nickname,
-      dateOfBirth: profile.dateOfBirth,
-      gender: profile.gender,
-      sexualOrientation: profile.sexualOrientation,
-      accountStatus: profile.accountStatus,
-      isBoosted: profile.isBoosted,
-      boostExpiry: profile.boostExpiry,
-      isIncognito: profile.isIncognito,
-      incognitoExpiry: profile.incognitoExpiry,
-      isGhostMode: profile.isGhostMode,
-      isTraveler: profile.isTraveler,
-      travelerExpiry: profile.travelerExpiry,
-      travelerLocation: profile.travelerLocation,
-      photoUrls: profile.photoUrls,
-      privatePhotoUrls: profile.privatePhotoUrls,
-      bio: profile.bio,
-      interests: profile.interests,
-      location: profile.location,
-      languages: profile.languages,
-      voiceRecordingUrl: profile.voiceRecordingUrl,
-      personalityTraits: profile.personalityTraits,
-      education: profile.education,
-      occupation: profile.occupation,
-      lookingFor: profile.lookingFor,
-      height: profile.height,
-      weight: profile.weight,
-      createdAt: profile.createdAt,
-      updatedAt: profile.updatedAt,
-      isComplete: profile.isComplete,
-      verificationStatus: profile.verificationStatus,
-      verificationPhotoUrl: profile.verificationPhotoUrl,
-      verificationMethod: profile.verificationMethod,
-      verificationPhone: profile.verificationPhone,
-      verificationRejectionReason: profile.verificationRejectionReason,
-      verificationSubmittedAt: profile.verificationSubmittedAt,
-      verificationReviewedAt: profile.verificationReviewedAt,
-      verificationReviewedBy: profile.verificationReviewedBy,
-      isAdmin: profile.isAdmin,
-      isSupport: profile.isSupport,
-      is2FAEnabled: profile.is2FAEnabled,
-      socialLinks: profile.socialLinks,
-      membershipTier: profile.membershipTier,
-      membershipStartDate: profile.membershipStartDate,
-      membershipEndDate: profile.membershipEndDate,
-      hasBaseMembership: profile.hasBaseMembership,
-      baseMembershipEndDate: profile.baseMembershipEndDate,
-      isOnline: profile.isOnline,
-      lastSeen: profile.lastSeen,
-      preferredLanguages: profile.preferredLanguages,
-      nativeLanguage: profile.nativeLanguage,
-      travelPreference: profile.travelPreference,
-      primaryOrigin: profile.primaryOrigin,
-      secondaryOrigin: profile.secondaryOrigin,
-      isLocalGuide: profile.isLocalGuide,
-      localGuideCity: profile.localGuideCity,
-      videoProfileUrl: profile.videoProfileUrl,
-      hasVideoProfile: profile.hasVideoProfile,
-      showOnMap: profile.showOnMap,
-      globeDiscoverability: profile.globeDiscoverability,
-      completedSafetyModules: profile.completedSafetyModules,
-      signupGrantsApplied: profile.signupGrantsApplied,
-      signupGrantsAppliedAt: profile.signupGrantsAppliedAt,
-    );
-  }
 }
 
 class SocialLinksModel extends SocialLinks {
@@ -425,6 +416,16 @@ class SocialLinksModel extends SocialLinks {
     super.linkedin,
     super.x,
   });
+
+  factory SocialLinksModel.fromEntity(SocialLinks socialLinks) {
+    return SocialLinksModel(
+      facebook: socialLinks.facebook,
+      instagram: socialLinks.instagram,
+      tiktok: socialLinks.tiktok,
+      linkedin: socialLinks.linkedin,
+      x: socialLinks.x,
+    );
+  }
 
   factory SocialLinksModel.fromJson(Map<String, dynamic> json) {
     return SocialLinksModel(
@@ -445,16 +446,6 @@ class SocialLinksModel extends SocialLinks {
       'x': x,
     };
   }
-
-  factory SocialLinksModel.fromEntity(SocialLinks socialLinks) {
-    return SocialLinksModel(
-      facebook: socialLinks.facebook,
-      instagram: socialLinks.instagram,
-      tiktok: socialLinks.tiktok,
-      linkedin: socialLinks.linkedin,
-      x: socialLinks.x,
-    );
-  }
 }
 
 class LocationModel extends Location {
@@ -469,19 +460,20 @@ class LocationModel extends Location {
   factory LocationModel.fromJson(Map<String, dynamic> json) {
     // Treat the legacy "Unknown" sentinel as empty so UI can render
     // "No location set" instead of fake values.
-    String _clean(dynamic v) {
+    String clean(dynamic v) {
       final s = v as String? ?? '';
       return s == 'Unknown' ? '' : s;
     }
     return LocationModel(
       latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
       longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
-      city: _clean(json['city']),
-      country: _clean(json['country']),
-      displayAddress: _clean(json['displayAddress']),
+      city: clean(json['city']),
+      country: clean(json['country']),
+      displayAddress: clean(json['displayAddress']),
     );
   }
 
+  @override
   Map<String, dynamic> toJson() {
     final normalized = normalizeCountryName(country);
     return {

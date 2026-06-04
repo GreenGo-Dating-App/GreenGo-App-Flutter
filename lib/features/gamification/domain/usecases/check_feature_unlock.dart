@@ -1,18 +1,16 @@
-/**
- * Check Feature Unlock Use Case
- * Point 195: Check if level-gated features are unlocked
- */
+/// Check Feature Unlock Use Case
+/// Point 195: Check if level-gated features are unlocked
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/usecases/usecase.dart';
-import '../entities/user_level.dart';
 import '../repositories/gamification_repository.dart';
 
 class CheckFeatureUnlock implements UseCase<FeatureUnlockStatus, CheckFeatureUnlockParams> {
-  final GamificationRepository repository;
 
   CheckFeatureUnlock(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, FeatureUnlockStatus>> call(
@@ -111,16 +109,25 @@ class CheckFeatureUnlock implements UseCase<FeatureUnlockStatus, CheckFeatureUnl
 }
 
 class CheckFeatureUnlockParams {
-  final String userId;
-  final String featureId;
 
   CheckFeatureUnlockParams({
     required this.userId,
     required this.featureId,
   });
+  final String userId;
+  final String featureId;
 }
 
 class FeatureUnlockStatus {
+
+  FeatureUnlockStatus({
+    required this.featureId,
+    required this.isUnlocked,
+    required this.userLevel,
+    required this.featureName, this.requiredLevel,
+    this.levelsRemaining,
+    this.description,
+  });
   final String featureId;
   final bool isUnlocked;
   final int userLevel;
@@ -128,23 +135,9 @@ class FeatureUnlockStatus {
   final int? levelsRemaining;
   final String featureName;
   final String? description;
-
-  FeatureUnlockStatus({
-    required this.featureId,
-    required this.isUnlocked,
-    required this.userLevel,
-    this.requiredLevel,
-    this.levelsRemaining,
-    required this.featureName,
-    this.description,
-  });
 }
 
 class FeatureRequirement {
-  final String featureId;
-  final String featureName;
-  final int requiredLevel;
-  final String description;
 
   FeatureRequirement({
     required this.featureId,
@@ -152,4 +145,8 @@ class FeatureRequirement {
     required this.requiredLevel,
     required this.description,
   });
+  final String featureId;
+  final String featureName;
+  final int requiredLevel;
+  final String description;
 }

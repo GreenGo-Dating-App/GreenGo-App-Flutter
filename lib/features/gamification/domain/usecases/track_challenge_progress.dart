@@ -1,7 +1,6 @@
-/**
- * Track Challenge Progress Use Case
- * Point 197: Track progress on daily and weekly challenges
- */
+/// Track Challenge Progress Use Case
+/// Point 197: Track progress on daily and weekly challenges
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -11,9 +10,9 @@ import '../repositories/gamification_repository.dart';
 
 class TrackChallengeProgress
     implements UseCase<ChallengeProgressResult, TrackChallengeProgressParams> {
-  final GamificationRepository repository;
 
   TrackChallengeProgress(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, ChallengeProgressResult>> call(
@@ -61,9 +60,6 @@ class TrackChallengeProgress
 }
 
 class TrackChallengeProgressParams {
-  final String userId;
-  final String challengeId;
-  final int incrementBy;
 
   TrackChallengeProgressParams({
     required this.userId,
@@ -119,18 +115,20 @@ class TrackChallengeProgressParams {
       incrementBy: 1,
     );
   }
+  final String userId;
+  final String challengeId;
+  final int incrementBy;
 }
 
 class ChallengeProgressResult {
-  final UserChallengeProgress progress;
-  final bool wasCompleted;
-  final DailyChallenge? challenge;
-  final bool canClaim;
 
   ChallengeProgressResult({
     required this.progress,
     required this.wasCompleted,
-    this.challenge,
-    required this.canClaim,
+    required this.canClaim, this.challenge,
   });
+  final UserChallengeProgress progress;
+  final bool wasCompleted;
+  final DailyChallenge? challenge;
+  final bool canClaim;
 }

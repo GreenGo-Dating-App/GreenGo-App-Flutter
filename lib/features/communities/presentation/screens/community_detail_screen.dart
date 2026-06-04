@@ -1,7 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
@@ -12,20 +13,19 @@ import '../../domain/entities/community_message.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
-import '../widgets/community_message_bubble.dart';
 import '../widgets/community_member_tile.dart';
+import '../widgets/community_message_bubble.dart';
 
 /// Community Detail Screen
 ///
 /// Shows the community group chat, members, and info.
 /// Allows joining/leaving and sending messages.
 class CommunityDetailScreen extends StatefulWidget {
-  final Community community;
 
   const CommunityDetailScreen({
-    super.key,
-    required this.community,
+    required this.community, super.key,
   });
+  final Community community;
 
   @override
   State<CommunityDetailScreen> createState() => _CommunityDetailScreenState();
@@ -189,7 +189,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
         // Members list button
         IconButton(
           icon: const Icon(Icons.people_outline, color: AppColors.textSecondary),
-          onPressed: () => _showMembersSheet(),
+          onPressed: _showMembersSheet,
         ),
         // Info / More button
         PopupMenuButton<String>(
@@ -247,7 +247,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
         final isCurrentUser = message.senderId == _currentUserId;
 
         // Determine if we should show sender info (group chat style)
-        bool showSenderInfo = true;
+        var showSenderInfo = true;
         if (index < messages.length - 1) {
           final prevMessage = messages[index + 1]; // Previous in display (next in list)
           if (prevMessage.senderId == message.senderId) {

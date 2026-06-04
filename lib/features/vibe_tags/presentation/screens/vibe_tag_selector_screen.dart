@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/vibe_tag.dart';
 import '../bloc/vibe_tag_bloc.dart';
 import '../bloc/vibe_tag_event.dart';
@@ -10,14 +10,13 @@ import '../widgets/vibe_tag_chip.dart';
 /// Vibe Tag Selector Screen
 /// Allows users to select up to their limit of vibe tags
 class VibeTagSelectorScreen extends StatefulWidget {
-  final String userId;
-  final bool isPremium;
 
   const VibeTagSelectorScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.isPremium = false,
   });
+  final String userId;
+  final bool isPremium;
 
   @override
   State<VibeTagSelectorScreen> createState() => _VibeTagSelectorScreenState();
@@ -141,7 +140,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                 selectedTagIds: state.userTags.selectedTagIds,
                 temporaryTagId: state.userTags.temporaryTagId,
                 showAll: true,
-                onTagTap: (tag) => _onTagTap(tag),
+                onTagTap: _onTagTap,
               ),
             ),
           ),
@@ -224,7 +223,7 @@ class _VibeTagSelectorScreenState extends State<VibeTagSelectorScreen> {
                     showAll: true,
                     isSelectable: true,
                     maxSelectable: state.tagLimit,
-                    onTagTap: (tag) => _onTagTap(tag),
+                    onTagTap: _onTagTap,
                     onTagLongPress: (tag) => _onTagLongPress(context, tag),
                   ),
                 ),

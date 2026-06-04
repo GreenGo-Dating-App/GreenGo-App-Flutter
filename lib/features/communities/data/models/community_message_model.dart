@@ -10,9 +10,7 @@ class CommunityMessageModel extends CommunityMessage {
     required super.communityId,
     required super.senderId,
     required super.senderName,
-    super.senderPhotoUrl,
-    required super.content,
-    required super.sentAt,
+    required super.content, required super.sentAt, super.senderPhotoUrl,
     super.type,
   });
 

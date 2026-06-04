@@ -6,9 +6,9 @@ import '../repositories/coin_repository.dart';
 /// Send Coin Gift Use Case
 /// Point 162: Send coins to matches
 class SendCoinGift {
-  final CoinRepository repository;
 
   SendCoinGift(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinGift>> call({
     required String senderId,
@@ -16,7 +16,7 @@ class SendCoinGift {
     required int amount,
     String? message,
   }) async {
-    return await repository.sendGift(
+    return repository.sendGift(
       senderId: senderId,
       receiverId: receiverId,
       amount: amount,
@@ -27,15 +27,15 @@ class SendCoinGift {
 
 /// Accept Coin Gift Use Case
 class AcceptCoinGift {
-  final CoinRepository repository;
 
   AcceptCoinGift(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, void>> call({
     required String giftId,
     required String userId,
   }) async {
-    return await repository.acceptGift(
+    return repository.acceptGift(
       giftId: giftId,
       userId: userId,
     );
@@ -44,15 +44,15 @@ class AcceptCoinGift {
 
 /// Decline Coin Gift Use Case
 class DeclineCoinGift {
-  final CoinRepository repository;
 
   DeclineCoinGift(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, void>> call({
     required String giftId,
     required String userId,
   }) async {
-    return await repository.declineGift(
+    return repository.declineGift(
       giftId: giftId,
       userId: userId,
     );
@@ -61,22 +61,22 @@ class DeclineCoinGift {
 
 /// Get Pending Gifts Use Case
 class GetPendingGifts {
-  final CoinRepository repository;
 
   GetPendingGifts(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinGift>>> call(String userId) async {
-    return await repository.getPendingGifts(userId);
+    return repository.getPendingGifts(userId);
   }
 }
 
 /// Get Sent Gifts Use Case
 class GetSentGifts {
-  final CoinRepository repository;
 
   GetSentGifts(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinGift>>> call(String userId) async {
-    return await repository.getSentGifts(userId);
+    return repository.getSentGifts(userId);
   }
 }

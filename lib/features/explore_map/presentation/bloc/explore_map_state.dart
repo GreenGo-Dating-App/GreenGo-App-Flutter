@@ -17,20 +17,20 @@ class ExploreMapLoading extends ExploreMapState {
 
 /// Successfully loaded nearby users.
 class ExploreMapLoaded extends ExploreMapState {
-  final List<MapUser> users;
-  final double radiusKm;
-  final bool showOnMap;
 
   const ExploreMapLoaded({
     required this.users,
     required this.radiusKm,
     this.showOnMap = true,
   });
+  final List<MapUser> users;
+  final double radiusKm;
+  final bool showOnMap;
 }
 
 /// Error loading nearby users.
 class ExploreMapError extends ExploreMapState {
-  final String message;
 
   const ExploreMapError(this.message);
+  final String message;
 }

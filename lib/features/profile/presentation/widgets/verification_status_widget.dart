@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 
 /// A widget that displays the current verification status
 class VerificationStatusBanner extends StatelessWidget {
-  final VerificationStatus status;
-  final String? rejectionReason;
-  final VoidCallback? onVerifyNow;
 
   const VerificationStatusBanner({
-    super.key,
-    required this.status,
+    required this.status, super.key,
     this.rejectionReason,
     this.onVerifyNow,
   });
+  final VerificationStatus status;
+  final String? rejectionReason;
+  final VoidCallback? onVerifyNow;
 
   @override
   Widget build(BuildContext context) {
@@ -129,18 +129,16 @@ class VerificationStatusBanner extends StatelessWidget {
 
 /// An overlay that blocks access to content for unverified users
 class VerificationBlockedOverlay extends StatelessWidget {
+
+  const VerificationBlockedOverlay({
+    required this.status, required this.child, super.key,
+    this.rejectionReason,
+    this.onVerifyNow,
+  });
   final VerificationStatus status;
   final String? rejectionReason;
   final VoidCallback? onVerifyNow;
   final Widget child;
-
-  const VerificationBlockedOverlay({
-    super.key,
-    required this.status,
-    this.rejectionReason,
-    this.onVerifyNow,
-    required this.child,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -288,12 +286,11 @@ class VerificationBlockedOverlay extends StatelessWidget {
 
 /// A compact badge that shows verification status
 class VerificationStatusBadge extends StatelessWidget {
-  final VerificationStatus status;
 
   const VerificationStatusBadge({
-    super.key,
-    required this.status,
+    required this.status, super.key,
   });
+  final VerificationStatus status;
 
   @override
   Widget build(BuildContext context) {

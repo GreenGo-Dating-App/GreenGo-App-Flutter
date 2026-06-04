@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';

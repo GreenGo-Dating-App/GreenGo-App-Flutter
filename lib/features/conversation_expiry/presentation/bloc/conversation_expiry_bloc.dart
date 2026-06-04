@@ -8,15 +8,6 @@ import 'conversation_expiry_state.dart';
 /// Conversation Expiry BLoC
 class ConversationExpiryBloc
     extends Bloc<ConversationExpiryEvent, ConversationExpiryState> {
-  final GetConversationExpiry getConversationExpiry;
-  final GetUserExpiries getUserExpiries;
-  final GetExpiringSoon getExpiringSoon;
-  final ExtendConversation extendConversation;
-  final RecordConversationActivity recordConversationActivity;
-  final StreamConversationExpiry streamConversationExpiry;
-
-  Timer? _expiryTimer;
-  ConversationExpiry? _currentExpiry;
 
   ConversationExpiryBloc({
     required this.getConversationExpiry,
@@ -34,6 +25,15 @@ class ConversationExpiryBloc
     on<RecordActivity>(_onRecordActivity);
     on<UpdateExpiryTimer>(_onUpdateExpiryTimer);
   }
+  final GetConversationExpiry getConversationExpiry;
+  final GetUserExpiries getUserExpiries;
+  final GetExpiringSoon getExpiringSoon;
+  final ExtendConversation extendConversation;
+  final RecordConversationActivity recordConversationActivity;
+  final StreamConversationExpiry streamConversationExpiry;
+
+  Timer? _expiryTimer;
+  ConversationExpiry? _currentExpiry;
 
   @override
   Future<void> close() {

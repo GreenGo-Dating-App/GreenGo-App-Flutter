@@ -1,10 +1,17 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Luxury glass-morphism tooltip widget for the app tour
 class TourTooltip extends StatefulWidget {
+
+  const TourTooltip({
+    required this.title, required this.description, required this.icon, required this.accentColor, required this.currentStep, required this.totalSteps, required this.onNext, required this.onSkip, super.key,
+    this.isLast = false,
+  });
   final String title;
   final String description;
   final IconData icon;
@@ -14,19 +21,6 @@ class TourTooltip extends StatefulWidget {
   final VoidCallback onNext;
   final VoidCallback onSkip;
   final bool isLast;
-
-  const TourTooltip({
-    super.key,
-    required this.title,
-    required this.description,
-    required this.icon,
-    required this.accentColor,
-    required this.currentStep,
-    required this.totalSteps,
-    required this.onNext,
-    required this.onSkip,
-    this.isLast = false,
-  });
 
   @override
   State<TourTooltip> createState() => _TourTooltipState();

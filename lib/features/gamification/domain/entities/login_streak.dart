@@ -3,6 +3,15 @@ import 'package:equatable/equatable.dart';
 /// Login Streak Entity
 /// Tracks user daily login streaks and rewards
 class LoginStreak extends Equatable {
+
+  const LoginStreak({
+    required this.userId,
+    required this.createdAt, required this.updatedAt, this.currentStreak = 0,
+    this.longestStreak = 0,
+    this.lastLoginDate,
+    this.totalDaysLoggedIn = 0,
+    this.claimedMilestones = const [],
+  });
   final String userId;
   final int currentStreak;
   final int longestStreak;
@@ -11,17 +20,6 @@ class LoginStreak extends Equatable {
   final List<StreakMilestone> claimedMilestones;
   final DateTime createdAt;
   final DateTime updatedAt;
-
-  const LoginStreak({
-    required this.userId,
-    this.currentStreak = 0,
-    this.longestStreak = 0,
-    this.lastLoginDate,
-    this.totalDaysLoggedIn = 0,
-    this.claimedMilestones = const [],
-    required this.createdAt,
-    required this.updatedAt,
-  });
 
   /// Check if user logged in today
   bool get hasLoggedInToday {
@@ -109,14 +107,6 @@ class LoginStreak extends Equatable {
 
 /// Streak Milestone Definition
 class StreakMilestone extends Equatable {
-  final String id;
-  final String name;
-  final String description;
-  final int daysRequired;
-  final int coinReward;
-  final int xpReward;
-  final String? badgeId;
-  final String iconAsset;
 
   const StreakMilestone({
     required this.id,
@@ -125,9 +115,16 @@ class StreakMilestone extends Equatable {
     required this.daysRequired,
     required this.coinReward,
     required this.xpReward,
-    this.badgeId,
-    required this.iconAsset,
+    required this.iconAsset, this.badgeId,
   });
+  final String id;
+  final String name;
+  final String description;
+  final int daysRequired;
+  final int coinReward;
+  final int xpReward;
+  final String? badgeId;
+  final String iconAsset;
 
   @override
   List<Object?> get props => [
@@ -252,11 +249,6 @@ class StreakMilestones {
 /// Daily Login Reward
 /// Awarded each day the user logs in
 class DailyLoginReward extends Equatable {
-  final int coins;
-  final int xp;
-  final int streakDay;
-  final int bonusCoins;
-  final String? specialReward;
 
   const DailyLoginReward({
     required this.coins,
@@ -265,6 +257,11 @@ class DailyLoginReward extends Equatable {
     this.bonusCoins = 0,
     this.specialReward,
   });
+  final int coins;
+  final int xp;
+  final int streakDay;
+  final int bonusCoins;
+  final String? specialReward;
 
   int get totalCoins => coins + bonusCoins;
 

@@ -3,12 +3,11 @@ import '../../domain/entities/video_call.dart';
 
 /// Connection Quality Indicator Widget
 class ConnectionQualityIndicator extends StatelessWidget {
-  final ConnectionQuality quality;
 
   const ConnectionQualityIndicator({
-    super.key,
-    required this.quality,
+    required this.quality, super.key,
   });
+  final ConnectionQuality quality;
 
   @override
   Widget build(BuildContext context) {

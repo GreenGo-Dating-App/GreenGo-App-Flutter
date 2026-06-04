@@ -9,6 +9,7 @@
 ///
 /// Uses Firestore batch writes (max 500 per batch).
 /// Idempotent: skips if data already exists for a language pair.
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -140,15 +141,15 @@ List<Map<String, dynamic>> generateLessonQuestions({
   // Each lesson uses a slice of vocabulary
   final startIdx = ((lessonIndex - 1) * 4) % vocabKeys.length;
   final lessonVocab = <String>[];
-  for (int i = 0; i < 8; i++) {
+  for (var i = 0; i < 8; i++) {
     lessonVocab.add(vocabKeys[(startIdx + i) % vocabKeys.length]);
   }
 
   final questions = <Map<String, dynamic>>[];
-  int qIdx = 0;
+  var qIdx = 0;
 
   // 3 multiple_choice
-  for (int i = 0; i < 3 && i < lessonVocab.length; i++) {
+  for (var i = 0; i < 3 && i < lessonVocab.length; i++) {
     final key = lessonVocab[i];
     final word = kVocabulary[key]![source]!;
     final correct = kVocabulary[key]![target]!;
@@ -168,7 +169,7 @@ List<Map<String, dynamic>> generateLessonQuestions({
   }
 
   // 2 fill_in_blank
-  for (int i = 3; i < 5 && i < lessonVocab.length; i++) {
+  for (var i = 3; i < 5 && i < lessonVocab.length; i++) {
     final key = lessonVocab[i];
     final word = kVocabulary[key]![source]!;
     final correct = kVocabulary[key]![target]!;
@@ -183,7 +184,7 @@ List<Map<String, dynamic>> generateLessonQuestions({
   }
 
   // 2 translation
-  for (int i = 5; i < 7 && i < lessonVocab.length; i++) {
+  for (var i = 5; i < 7 && i < lessonVocab.length; i++) {
     final key = lessonVocab[i];
     final word = kVocabulary[key]![target]!;
     final correct = kVocabulary[key]![source]!;
@@ -215,7 +216,7 @@ List<Map<String, dynamic>> generateLessonQuestions({
 
   // 1 matching (pair 4 words)
   final matchPairs = <String>[];
-  for (int i = 0; i < 4 && i < lessonVocab.length; i++) {
+  for (var i = 0; i < 4 && i < lessonVocab.length; i++) {
     final key = lessonVocab[i];
     matchPairs.add('${kVocabulary[key]![source]!}:${kVocabulary[key]![target]!}');
   }
@@ -246,9 +247,9 @@ Future<void> main() async {
   await Firebase.initializeApp();
   final firestore = FirebaseFirestore.instance;
 
-  int totalQuestions = 0;
-  int totalNodes = 0;
-  int pairsProcessed = 0;
+  var totalQuestions = 0;
+  var totalNodes = 0;
+  var pairsProcessed = 0;
 
   for (final source in kLanguages) {
     for (final target in kLanguages) {
@@ -273,8 +274,8 @@ Future<void> main() async {
       }
 
       // Generate and write lesson questions
-      WriteBatch batch = firestore.batch();
-      int batchCount = 0;
+      var batch = firestore.batch();
+      var batchCount = 0;
 
       for (final lesson in kLessons) {
         final questions = generateLessonQuestions(
@@ -337,7 +338,7 @@ Future<void> main() async {
       }
 
       pairsProcessed++;
-      print('  Done. Questions: ${totalQuestions}, Nodes: $totalNodes');
+      print('  Done. Questions: $totalQuestions, Nodes: $totalNodes');
     }
   }
 

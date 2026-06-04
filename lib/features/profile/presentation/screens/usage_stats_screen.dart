@@ -1,35 +1,35 @@
 import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/usage_limit_service.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
-import '../../../../core/di/injection_container.dart' as di;
-import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/profile.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 /// Usage Stats Screen
 ///
 /// Shows user's current daily usage vs tier limits with progress bars
 class UsageStatsScreen extends StatefulWidget {
+
+  const UsageStatsScreen({
+    required this.userId, required this.membershipTier, super.key,
+    this.profile,
+  });
   final String userId;
   final MembershipTier membershipTier;
   final Profile? profile;
-
-  const UsageStatsScreen({
-    super.key,
-    required this.userId,
-    required this.membershipTier,
-    this.profile,
-  });
 
   @override
   State<UsageStatsScreen> createState() => _UsageStatsScreenState();
@@ -163,7 +163,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
       final stats = await _usageLimitService.getAllUsageStats(widget.userId);
 
       // Get coin balance
-      int coins = 0;
+      var coins = 0;
       try {
         final coinRepo = GetIt.instance<CoinRepository>();
         final balanceResult = await coinRepo.getBalance(widget.userId);
@@ -408,11 +408,11 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           borderRadius: BorderRadius.circular(AppDimensions.radiusL),
           border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
         ),
-        child: Row(
+        child: const Row(
           children: [
             Icon(Icons.info_outline, color: AppColors.textTertiary, size: 20),
-            const SizedBox(width: 12),
-            const Text(
+            SizedBox(width: 12),
+            Text(
               'No GreenGo Base Membership',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
             ),

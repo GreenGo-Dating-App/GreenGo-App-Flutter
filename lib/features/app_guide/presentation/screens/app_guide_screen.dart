@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// App Guide screen that explains all functionalities of GreenGo.
 /// Accessible from the question mark icon on the Network page.
@@ -254,13 +255,13 @@ class AppGuideScreen extends StatelessWidget {
 }
 
 class _GuideSection {
-  final IconData icon;
-  final String title;
-  final List<String> items;
 
   const _GuideSection({
     required this.icon,
     required this.title,
     required this.items,
   });
+  final IconData icon;
+  final String title;
+  final List<String> items;
 }

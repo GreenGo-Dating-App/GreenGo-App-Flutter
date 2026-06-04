@@ -8,16 +8,13 @@ import 'animated_svg_icon.dart';
 /// the game name, and a loading indicator.
 /// Auto-dismisses after 2 seconds.
 class AnimatedSvgSplash extends StatefulWidget {
+
+  const AnimatedSvgSplash({
+    required this.svgAssetPath, required this.gameName, required this.onComplete, super.key,
+  });
   final String svgAssetPath;
   final String gameName;
   final VoidCallback onComplete;
-
-  const AnimatedSvgSplash({
-    super.key,
-    required this.svgAssetPath,
-    required this.gameName,
-    required this.onComplete,
-  });
 
   @override
   State<AnimatedSvgSplash> createState() => _AnimatedSvgSplashState();

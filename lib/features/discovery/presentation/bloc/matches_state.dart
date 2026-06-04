@@ -17,14 +17,14 @@ class MatchesLoading extends MatchesState {
 }
 
 /// Matches loaded successfully
-class MatchesLoaded extends MatchesState {
-  final List<Match> matches;
-  final Map<String, Profile> profiles; // Cached profiles for matches
+class MatchesLoaded extends MatchesState { // Cached profiles for matches
 
   const MatchesLoaded({
     required this.matches,
     this.profiles = const {},
   });
+  final List<Match> matches;
+  final Map<String, Profile> profiles;
 
   /// Get new matches (not seen by user)
   List<Match> getNewMatches(String userId) {
@@ -63,7 +63,7 @@ class MatchActionInProgress extends MatchesState {
 
 /// Error state
 class MatchesError extends MatchesState {
-  final String message;
 
   const MatchesError(this.message);
+  final String message;
 }

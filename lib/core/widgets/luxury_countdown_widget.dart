@@ -1,25 +1,15 @@
 import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// A luxury animated countdown widget following GreenGo's gold/black theme
 /// Shows countdown with elegant animations, shimmer effects, and pulsing numbers
 class LuxuryCountdownWidget extends StatefulWidget {
-  final DateTime targetDate;
-  final String? title;
-  final String? subtitle;
-  final VoidCallback? onComplete;
-  final bool showDays;
-  final bool showHours;
-  final bool showMinutes;
-  final bool showSeconds;
-  final bool compact;
 
   const LuxuryCountdownWidget({
-    super.key,
-    required this.targetDate,
+    required this.targetDate, super.key,
     this.title,
     this.subtitle,
     this.onComplete,
@@ -29,6 +19,15 @@ class LuxuryCountdownWidget extends StatefulWidget {
     this.showSeconds = true,
     this.compact = false,
   });
+  final DateTime targetDate;
+  final String? title;
+  final String? subtitle;
+  final VoidCallback? onComplete;
+  final bool showDays;
+  final bool showHours;
+  final bool showMinutes;
+  final bool showSeconds;
+  final bool compact;
 
   @override
   State<LuxuryCountdownWidget> createState() => _LuxuryCountdownWidgetState();
@@ -230,7 +229,7 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
     final minutesLabel = l10n?.minutes ?? 'Min';
     final secondsLabel = l10n?.seconds ?? 'Sec';
 
-    final List<Widget> units = [];
+    final units = <Widget>[];
 
     if (widget.showDays && days > 0) {
       units.add(_buildCountdownUnit(days, daysLabel.substring(0, math.min(3, daysLabel.length)).toUpperCase()));
@@ -443,7 +442,7 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
+          const Icon(
             Icons.celebration,
             size: 48,
             color: AppColors.successGreen,
@@ -480,9 +479,9 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
 }
 
 class _SlidingGradientTransform extends GradientTransform {
-  final double slidePercent;
 
   const _SlidingGradientTransform(this.slidePercent);
+  final double slidePercent;
 
   @override
   Matrix4? transform(Rect bounds, {TextDirection? textDirection}) {
@@ -492,14 +491,13 @@ class _SlidingGradientTransform extends GradientTransform {
 
 /// A compact version of the countdown for inline use
 class CompactLuxuryCountdown extends StatelessWidget {
-  final DateTime targetDate;
-  final VoidCallback? onComplete;
 
   const CompactLuxuryCountdown({
-    super.key,
-    required this.targetDate,
+    required this.targetDate, super.key,
     this.onComplete,
   });
+  final DateTime targetDate;
+  final VoidCallback? onComplete;
 
   @override
   Widget build(BuildContext context) {

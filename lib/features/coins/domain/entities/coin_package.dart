@@ -3,17 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Coin Package Entity
 /// Point 157: Coin packages with various amounts and prices
 class CoinPackage extends Equatable {
-  final String packageId;
-  final String productId; // For in-app purchases
-  final int coinAmount;
-  final double price;
-  final String currency;
-  final int? bonusCoins;
-  final double? discountPercentage;
-  final bool isPromotional;
-  final DateTime? promotionStartDate;
-  final DateTime? promotionEndDate;
-  final String? promotionLabel;
 
   const CoinPackage({
     required this.packageId,
@@ -28,6 +17,17 @@ class CoinPackage extends Equatable {
     this.promotionEndDate,
     this.promotionLabel,
   });
+  final String packageId;
+  final String productId; // For in-app purchases
+  final int coinAmount;
+  final double price;
+  final String currency;
+  final int? bonusCoins;
+  final double? discountPercentage;
+  final bool isPromotional;
+  final DateTime? promotionStartDate;
+  final DateTime? promotionEndDate;
+  final String? promotionLabel;
 
   /// Get total coins including bonus
   int get totalCoins => coinAmount + (bonusCoins ?? 0);
@@ -59,7 +59,7 @@ class CoinPackage extends Equatable {
   /// Get savings text for promotional packages
   String? get savingsText {
     if (bonusCoins != null && bonusCoins! > 0) {
-      return '+${bonusCoins} bonus coins';
+      return '+$bonusCoins bonus coins';
     }
     if (discountPercentage != null && discountPercentage! > 0) {
       return '${discountPercentage!.toInt()}% off';
@@ -140,14 +140,6 @@ class CoinPackages {
 /// Coin Spend Item
 /// Defines what users can spend coins on (admin-configurable)
 class CoinSpendItem extends Equatable {
-  final String itemId;
-  final String name;
-  final String description;
-  final int coinCost;
-  final String iconAsset;
-  final CoinSpendCategory category;
-  final bool isActive;
-  final int sortOrder;
 
   const CoinSpendItem({
     required this.itemId,
@@ -159,6 +151,14 @@ class CoinSpendItem extends Equatable {
     this.isActive = true,
     this.sortOrder = 0,
   });
+  final String itemId;
+  final String name;
+  final String description;
+  final int coinCost;
+  final String iconAsset;
+  final CoinSpendCategory category;
+  final bool isActive;
+  final int sortOrder;
 
   @override
   List<Object?> get props => [

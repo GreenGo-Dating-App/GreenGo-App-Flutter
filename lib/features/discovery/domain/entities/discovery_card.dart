@@ -4,16 +4,16 @@ import '../../../membership/domain/entities/membership.dart';
 /// Discovery Card Entity
 ///
 /// Represents a profile card in the discovery stack
-class DiscoveryCard {
-  final MatchCandidate candidate;
-  final int position; // Position in the stack
-  final bool isFocused; // Currently visible card
+class DiscoveryCard { // Currently visible card
 
   const DiscoveryCard({
     required this.candidate,
     required this.position,
     this.isFocused = false,
   });
+  final MatchCandidate candidate;
+  final int position; // Position in the stack
+  final bool isFocused;
 
   /// Get profile from candidate
   String get userId => candidate.profile.userId;

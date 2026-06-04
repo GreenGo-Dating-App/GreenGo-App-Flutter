@@ -5,9 +5,9 @@ import '../repositories/vibe_tag_repository.dart';
 
 /// Get all available vibe tags
 class GetVibeTags {
-  final VibeTagRepository repository;
 
   GetVibeTags(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, List<VibeTag>>> call() {
     return repository.getVibeTags();
@@ -16,9 +16,9 @@ class GetVibeTags {
 
 /// Get vibe tags by category
 class GetVibeTagsByCategory {
-  final VibeTagRepository repository;
 
   GetVibeTagsByCategory(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, List<VibeTag>>> call(String category) {
     return repository.getVibeTagsByCategory(category);
@@ -27,9 +27,9 @@ class GetVibeTagsByCategory {
 
 /// Get user's selected vibe tags
 class GetUserVibeTags {
-  final VibeTagRepository repository;
 
   GetUserVibeTags(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, UserVibeTags>> call(String userId) {
     return repository.getUserVibeTags(userId);
@@ -42,9 +42,9 @@ class GetUserVibeTags {
 
 /// Update user's selected vibe tags
 class UpdateUserVibeTags {
-  final VibeTagRepository repository;
 
   UpdateUserVibeTags(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, UserVibeTags>> call({
     required String userId,
@@ -56,9 +56,9 @@ class UpdateUserVibeTags {
 
 /// Set a temporary vibe tag
 class SetTemporaryVibeTag {
-  final VibeTagRepository repository;
 
   SetTemporaryVibeTag(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, UserVibeTags>> call({
     required String userId,
@@ -70,9 +70,9 @@ class SetTemporaryVibeTag {
 
 /// Remove a vibe tag from user's selection
 class RemoveVibeTag {
-  final VibeTagRepository repository;
 
   RemoveVibeTag(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, UserVibeTags>> call({
     required String userId,
@@ -84,9 +84,9 @@ class RemoveVibeTag {
 
 /// Search users by vibe tags
 class SearchUsersByVibeTags {
-  final VibeTagRepository repository;
 
   SearchUsersByVibeTags(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, List<String>>> call({
     required List<String> tagIds,
@@ -103,9 +103,9 @@ class SearchUsersByVibeTags {
 
 /// Get vibe tag by ID
 class GetVibeTagById {
-  final VibeTagRepository repository;
 
   GetVibeTagById(this.repository);
+  final VibeTagRepository repository;
 
   Future<Either<Failure, VibeTag>> call(String tagId) {
     return repository.getVibeTagById(tagId);

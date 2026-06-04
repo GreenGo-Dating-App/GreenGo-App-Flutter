@@ -8,9 +8,9 @@ import '../datasources/profile_remote_data_source.dart';
 import '../models/profile_model.dart';
 
 class ProfileRepositoryImpl implements ProfileRepository {
-  final ProfileRemoteDataSource remoteDataSource;
 
   ProfileRepositoryImpl({required this.remoteDataSource});
+  final ProfileRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, Profile>> createProfile(Profile profile) async {

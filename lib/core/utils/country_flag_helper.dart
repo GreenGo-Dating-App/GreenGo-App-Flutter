@@ -226,8 +226,8 @@ class CountryFlagHelper {
 
 /// Represents a country with name and ISO code.
 class Country {
-  final String name;
-  final String isoCode;
 
   const Country(this.name, this.isoCode);
+  final String name;
+  final String isoCode;
 }

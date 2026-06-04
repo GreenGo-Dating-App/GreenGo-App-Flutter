@@ -7,9 +7,9 @@ import '../datasources/video_calling_remote_datasource.dart';
 
 /// Implementation of VideoCallingRepository
 class VideoCallingRepositoryImpl implements VideoCallingRepository {
-  final VideoCallingRemoteDataSource remoteDataSource;
 
   VideoCallingRepositoryImpl({required this.remoteDataSource});
+  final VideoCallingRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, VideoCall>> initiateCall({
@@ -274,7 +274,7 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
         startedAt: DateTime.now(),
         fileSizeMB: 0,
         consentGiven: consentGiven,
-        participants: [],
+        participants: const [],
       ));
     } catch (e) {
       return Left(ServerFailure(e.toString()));
@@ -300,7 +300,7 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
         duration: Duration(seconds: result['duration'] as int? ?? 0),
         fileSizeMB: 0,
         consentGiven: true,
-        participants: [],
+        participants: const [],
       ));
     } catch (e) {
       return Left(ServerFailure(e.toString()));
@@ -352,7 +352,7 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
             Duration(seconds: result['totalDurationSeconds'] as int? ?? 0),
         averageQuality: 4.0,
         connectionIssues: 0,
-        qualityBreakdown: {},
+        qualityBreakdown: const {},
       ));
     } catch (e) {
       return Left(ServerFailure(e.toString()));

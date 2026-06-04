@@ -20,22 +20,22 @@ class CoinLoading extends CoinState {}
 
 // Balance States
 class CoinBalanceLoaded extends CoinState {
-  final CoinBalance balance;
 
   const CoinBalanceLoaded(this.balance);
+  final CoinBalance balance;
 
   @override
   List<Object?> get props => [balance];
 }
 
 class CoinBalanceUpdated extends CoinState {
-  final CoinBalance balance;
-  final String message;
 
   const CoinBalanceUpdated({
     required this.balance,
     required this.message,
   });
+  final CoinBalance balance;
+  final String message;
 
   @override
   List<Object?> get props => [balance, message];
@@ -43,28 +43,28 @@ class CoinBalanceUpdated extends CoinState {
 
 // Package States
 class CoinPackagesLoaded extends CoinState {
-  final List<CoinPackage> packages;
-  final List<CoinPromotion> activePromotions;
 
   const CoinPackagesLoaded({
     required this.packages,
     this.activePromotions = const [],
   });
+  final List<CoinPackage> packages;
+  final List<CoinPromotion> activePromotions;
 
   @override
   List<Object?> get props => [packages, activePromotions];
 }
 
 class CoinPackagePurchased extends CoinState {
-  final CoinTransaction transaction;
-  final int coinsAdded;
-  final int? bonusCoins;
 
   const CoinPackagePurchased({
     required this.transaction,
     required this.coinsAdded,
     this.bonusCoins,
   });
+  final CoinTransaction transaction;
+  final int coinsAdded;
+  final int? bonusCoins;
 
   @override
   List<Object?> get props => [transaction, coinsAdded, bonusCoins];
@@ -72,9 +72,9 @@ class CoinPackagePurchased extends CoinState {
 
 // Transaction States
 class TransactionHistoryLoaded extends CoinState {
-  final List<CoinTransaction> transactions;
 
   const TransactionHistoryLoaded(this.transactions);
+  final List<CoinTransaction> transactions;
 
   @override
   List<Object?> get props => [transactions];
@@ -82,35 +82,35 @@ class TransactionHistoryLoaded extends CoinState {
 
 // Reward States
 class RewardEligibilityChecked extends CoinState {
-  final String rewardId;
-  final bool isEligible;
 
   const RewardEligibilityChecked({
     required this.rewardId,
     required this.isEligible,
   });
+  final String rewardId;
+  final bool isEligible;
 
   @override
   List<Object?> get props => [rewardId, isEligible];
 }
 
 class RewardClaimed extends CoinState {
-  final CoinReward reward;
-  final CoinTransaction transaction;
 
   const RewardClaimed({
     required this.reward,
     required this.transaction,
   });
+  final CoinReward reward;
+  final CoinTransaction transaction;
 
   @override
   List<Object?> get props => [reward, transaction];
 }
 
 class ClaimedRewardsLoaded extends CoinState {
-  final List<ClaimedReward> rewards;
 
   const ClaimedRewardsLoaded(this.rewards);
+  final List<ClaimedReward> rewards;
 
   @override
   List<Object?> get props => [rewards];
@@ -118,28 +118,28 @@ class ClaimedRewardsLoaded extends CoinState {
 
 // Feature Purchase States
 class FeatureAffordabilityChecked extends CoinState {
-  final bool canAfford;
-  final int cost;
-  final int currentBalance;
 
   const FeatureAffordabilityChecked({
     required this.canAfford,
     required this.cost,
     required this.currentBalance,
   });
+  final bool canAfford;
+  final int cost;
+  final int currentBalance;
 
   @override
   List<Object?> get props => [canAfford, cost, currentBalance];
 }
 
 class FeaturePurchased extends CoinState {
-  final String featureName;
-  final CoinTransaction transaction;
 
   const FeaturePurchased({
     required this.featureName,
     required this.transaction,
   });
+  final String featureName;
+  final CoinTransaction transaction;
 
   @override
   List<Object?> get props => [featureName, transaction];
@@ -147,49 +147,49 @@ class FeaturePurchased extends CoinState {
 
 // Gift States
 class GiftSent extends CoinState {
-  final CoinGift gift;
 
   const GiftSent(this.gift);
+  final CoinGift gift;
 
   @override
   List<Object?> get props => [gift];
 }
 
 class GiftAccepted extends CoinState {
-  final String giftId;
-  final int amount;
 
   const GiftAccepted({
     required this.giftId,
     required this.amount,
   });
+  final String giftId;
+  final int amount;
 
   @override
   List<Object?> get props => [giftId, amount];
 }
 
 class GiftDeclined extends CoinState {
-  final String giftId;
 
   const GiftDeclined(this.giftId);
+  final String giftId;
 
   @override
   List<Object?> get props => [giftId];
 }
 
 class PendingGiftsLoaded extends CoinState {
-  final List<CoinGift> gifts;
 
   const PendingGiftsLoaded(this.gifts);
+  final List<CoinGift> gifts;
 
   @override
   List<Object?> get props => [gifts];
 }
 
 class SentGiftsLoaded extends CoinState {
-  final List<CoinGift> gifts;
 
   const SentGiftsLoaded(this.gifts);
+  final List<CoinGift> gifts;
 
   @override
   List<Object?> get props => [gifts];
@@ -197,15 +197,15 @@ class SentGiftsLoaded extends CoinState {
 
 // Expiration States
 class ExpiringCoinsLoaded extends CoinState {
-  final List<CoinBatch> expiringBatches;
-  final int totalExpiringCoins;
-  final int daysUntilExpiration;
 
   const ExpiringCoinsLoaded({
     required this.expiringBatches,
     required this.totalExpiringCoins,
     required this.daysUntilExpiration,
   });
+  final List<CoinBatch> expiringBatches;
+  final int totalExpiringCoins;
+  final int daysUntilExpiration;
 
   @override
   List<Object?> get props => [
@@ -216,9 +216,9 @@ class ExpiringCoinsLoaded extends CoinState {
 }
 
 class ExpiredCoinsProcessed extends CoinState {
-  final int expiredAmount;
 
   const ExpiredCoinsProcessed(this.expiredAmount);
+  final int expiredAmount;
 
   @override
   List<Object?> get props => [expiredAmount];
@@ -226,31 +226,31 @@ class ExpiredCoinsProcessed extends CoinState {
 
 // Promotion States
 class PromotionsLoaded extends CoinState {
-  final List<CoinPromotion> promotions;
 
   const PromotionsLoaded(this.promotions);
+  final List<CoinPromotion> promotions;
 
   @override
   List<Object?> get props => [promotions];
 }
 
 class PromoCodeApplied extends CoinState {
-  final CoinPromotion promotion;
 
   const PromoCodeApplied(this.promotion);
+  final CoinPromotion promotion;
 
   @override
   List<Object?> get props => [promotion];
 }
 
 class PromotionApplicabilityChecked extends CoinState {
-  final String promotionId;
-  final bool isApplicable;
 
   const PromotionApplicabilityChecked({
     required this.promotionId,
     required this.isApplicable,
   });
+  final String promotionId;
+  final bool isApplicable;
 
   @override
   List<Object?> get props => [promotionId, isApplicable];
@@ -258,9 +258,9 @@ class PromotionApplicabilityChecked extends CoinState {
 
 // Error State
 class CoinError extends CoinState {
-  final String message;
 
   const CoinError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];

@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/date_checkin.dart';
 
 /// Date Check-in Screen - Safety feature for real dates
 class DateCheckInScreen extends StatefulWidget {
-  final String userId;
-  final String? matchId;
-  final String? matchName;
-  final Function(DateCheckIn)? onCheckInCreated;
 
   const DateCheckInScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.matchId,
     this.matchName,
     this.onCheckInCreated,
   });
+  final String userId;
+  final String? matchId;
+  final String? matchName;
+  final Function(DateCheckIn)? onCheckInCreated;
 
   @override
   State<DateCheckInScreen> createState() => _DateCheckInScreenState();
@@ -214,7 +214,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                           const SizedBox(height: 4),
                           Text(
                             l10n.safetyCheckInDescription,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 13,
                             ),
@@ -424,7 +424,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                           ),
                           Text(
                             l10n.safetyEmergencyContactsLocation,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 12,
                             ),
@@ -435,7 +435,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                     Switch(
                       value: _shareLocation,
                       onChanged: (value) => setState(() => _shareLocation = value),
-                      activeColor: AppColors.richGold,
+                      activeThumbColor: AppColors.richGold,
                     ),
                   ],
                 ),
@@ -476,7 +476,7 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                   ),
                   child: Column(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.contact_phone_outlined,
                         color: AppColors.textTertiary,
                         size: 40,
@@ -484,14 +484,14 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
                       const SizedBox(height: 8),
                       Text(
                         l10n.safetyAddEmergencyContacts,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
                         ),
                       ),
                       Text(
                         l10n.safetyEmergencyContactsHelp,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 12,
                         ),
@@ -562,15 +562,15 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
 }
 
 class _IntervalChip extends StatelessWidget {
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
 
   const _IntervalChip({
     required this.label,
     required this.selected,
     required this.onTap,
   });
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -598,13 +598,13 @@ class _IntervalChip extends StatelessWidget {
 }
 
 class _EmergencyContactCard extends StatelessWidget {
-  final EmergencyContact contact;
-  final VoidCallback onRemove;
 
   const _EmergencyContactCard({
     required this.contact,
     required this.onRemove,
   });
+  final EmergencyContact contact;
+  final VoidCallback onRemove;
 
   @override
   Widget build(BuildContext context) {
@@ -660,9 +660,9 @@ class _EmergencyContactCard extends StatelessWidget {
 }
 
 class _AddEmergencyContactDialog extends StatefulWidget {
-  final Function(EmergencyContact) onAdd;
 
   const _AddEmergencyContactDialog({required this.onAdd});
+  final Function(EmergencyContact) onAdd;
 
   @override
   State<_AddEmergencyContactDialog> createState() => _AddEmergencyContactDialogState();
@@ -712,7 +712,7 @@ class _AddEmergencyContactDialogState extends State<_AddEmergencyContactDialog> 
           ),
           const SizedBox(height: 16),
           DropdownButtonFormField<String>(
-            value: _relationship,
+            initialValue: _relationship,
             dropdownColor: AppColors.backgroundCard,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(

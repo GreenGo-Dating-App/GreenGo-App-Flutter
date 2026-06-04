@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Get Conversation Use Case
 class GetConversation {
-  final ChatRepository repository;
 
   GetConversation(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, Conversation>> call(String matchId) {
     return repository.getConversation(matchId);

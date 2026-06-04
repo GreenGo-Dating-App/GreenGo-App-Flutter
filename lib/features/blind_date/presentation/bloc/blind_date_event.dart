@@ -10,9 +10,9 @@ abstract class BlindDateEvent extends Equatable {
 
 /// Activate blind date mode
 class ActivateBlindDateMode extends BlindDateEvent {
-  final String userId;
 
   const ActivateBlindDateMode(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -20,9 +20,9 @@ class ActivateBlindDateMode extends BlindDateEvent {
 
 /// Deactivate blind date mode
 class DeactivateBlindDateMode extends BlindDateEvent {
-  final String userId;
 
   const DeactivateBlindDateMode(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -30,9 +30,9 @@ class DeactivateBlindDateMode extends BlindDateEvent {
 
 /// Check blind date status
 class CheckBlindDateStatus extends BlindDateEvent {
-  final String userId;
 
   const CheckBlindDateStatus(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -40,13 +40,13 @@ class CheckBlindDateStatus extends BlindDateEvent {
 
 /// Load blind date candidates
 class LoadBlindCandidates extends BlindDateEvent {
-  final String userId;
-  final int limit;
 
   const LoadBlindCandidates({
     required this.userId,
     this.limit = 10,
   });
+  final String userId;
+  final int limit;
 
   @override
   List<Object?> get props => [userId, limit];
@@ -54,13 +54,13 @@ class LoadBlindCandidates extends BlindDateEvent {
 
 /// Like a blind profile
 class LikeBlindProfileEvent extends BlindDateEvent {
-  final String userId;
-  final String targetUserId;
 
   const LikeBlindProfileEvent({
     required this.userId,
     required this.targetUserId,
   });
+  final String userId;
+  final String targetUserId;
 
   @override
   List<Object?> get props => [userId, targetUserId];
@@ -68,13 +68,13 @@ class LikeBlindProfileEvent extends BlindDateEvent {
 
 /// Pass on a blind profile
 class PassBlindProfileEvent extends BlindDateEvent {
-  final String userId;
-  final String targetUserId;
 
   const PassBlindProfileEvent({
     required this.userId,
     required this.targetUserId,
   });
+  final String userId;
+  final String targetUserId;
 
   @override
   List<Object?> get props => [userId, targetUserId];
@@ -82,9 +82,9 @@ class PassBlindProfileEvent extends BlindDateEvent {
 
 /// Load blind matches
 class LoadBlindMatches extends BlindDateEvent {
-  final String userId;
 
   const LoadBlindMatches(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -92,9 +92,9 @@ class LoadBlindMatches extends BlindDateEvent {
 
 /// Subscribe to blind matches stream
 class SubscribeToBlindMatches extends BlindDateEvent {
-  final String userId;
 
   const SubscribeToBlindMatches(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -102,13 +102,13 @@ class SubscribeToBlindMatches extends BlindDateEvent {
 
 /// Request instant photo reveal
 class RequestInstantReveal extends BlindDateEvent {
-  final String userId;
-  final String matchId;
 
   const RequestInstantReveal({
     required this.userId,
     required this.matchId,
   });
+  final String userId;
+  final String matchId;
 
   @override
   List<Object?> get props => [userId, matchId];
@@ -116,13 +116,13 @@ class RequestInstantReveal extends BlindDateEvent {
 
 /// Load revealed profile
 class LoadRevealedProfile extends BlindDateEvent {
-  final String matchId;
-  final String userId;
 
   const LoadRevealedProfile({
     required this.matchId,
     required this.userId,
   });
+  final String matchId;
+  final String userId;
 
   @override
   List<Object?> get props => [matchId, userId];
@@ -130,9 +130,9 @@ class LoadRevealedProfile extends BlindDateEvent {
 
 /// Select a candidate for viewing
 class SelectBlindCandidate extends BlindDateEvent {
-  final int index;
 
   const SelectBlindCandidate(this.index);
+  final int index;
 
   @override
   List<Object?> get props => [index];

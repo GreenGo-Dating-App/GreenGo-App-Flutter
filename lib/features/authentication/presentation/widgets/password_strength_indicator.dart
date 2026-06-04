@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/utils/validators.dart';
 import '../../../../generated/app_localizations.dart';
 
 class PasswordStrengthIndicator extends StatelessWidget {
-  final int strength;
 
   const PasswordStrengthIndicator({
-    super.key,
-    required this.strength,
+    required this.strength, super.key,
   });
+  final int strength;
 
   Color _getStrengthColor() {
     switch (strength) {

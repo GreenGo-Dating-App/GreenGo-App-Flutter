@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+
 import '../constants/app_colors.dart';
 
 /// Cached Profile Image Widget
@@ -7,12 +8,6 @@ import '../constants/app_colors.dart';
 /// A reusable widget for displaying profile images with caching support.
 /// Uses cached_network_image package for efficient image caching.
 class CachedProfileImage extends StatelessWidget {
-  final String? imageUrl;
-  final double size;
-  final double borderRadius;
-  final BoxFit fit;
-  final Widget? placeholder;
-  final Widget? errorWidget;
 
   const CachedProfileImage({
     super.key,
@@ -23,6 +18,12 @@ class CachedProfileImage extends StatelessWidget {
     this.placeholder,
     this.errorWidget,
   });
+  final String? imageUrl;
+  final double size;
+  final double borderRadius;
+  final BoxFit fit;
+  final Widget? placeholder;
+  final Widget? errorWidget;
 
   @override
   Widget build(BuildContext context) {
@@ -87,10 +88,6 @@ class CachedProfileImage extends StatelessWidget {
 
 /// Circular variant of CachedProfileImage
 class CachedProfileAvatar extends StatelessWidget {
-  final String? imageUrl;
-  final double radius;
-  final Widget? placeholder;
-  final Widget? errorWidget;
 
   const CachedProfileAvatar({
     super.key,
@@ -99,6 +96,10 @@ class CachedProfileAvatar extends StatelessWidget {
     this.placeholder,
     this.errorWidget,
   });
+  final String? imageUrl;
+  final double radius;
+  final Widget? placeholder;
+  final Widget? errorWidget;
 
   @override
   Widget build(BuildContext context) {

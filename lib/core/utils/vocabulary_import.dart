@@ -61,7 +61,7 @@ class VocabularyImport {
     onProgress?.call('Selected $totalItems words for $language (random sample)');
 
     final operations = <BatchOperation>[];
-    for (int i = 0; i < entries.length; i++) {
+    for (var i = 0; i < entries.length; i++) {
       final entry = entries[i];
       final rank = i + 1;
       final frequencyScore = _computeFrequencyScore(rank, totalItems);
@@ -97,7 +97,7 @@ class VocabularyImport {
     onProgress?.call('Parsed $totalItems sentences for $language');
 
     final operations = <BatchOperation>[];
-    for (int i = 0; i < entries.length; i++) {
+    for (var i = 0; i < entries.length; i++) {
       final entry = entries[i];
       final rank = i + 1;
       final frequencyScore = _computeFrequencyScore(rank, totalItems);
@@ -129,7 +129,7 @@ class VocabularyImport {
 
     // Fisher-Yates partial shuffle for efficient random sampling
     final list = List<_CsvEntry>.from(source);
-    for (int i = 0; i < count; i++) {
+    for (var i = 0; i < count; i++) {
       final j = i + _random.nextInt(list.length - i);
       final temp = list[i];
       list[i] = list[j];
@@ -152,7 +152,7 @@ class VocabularyImport {
 
       // Skip header line
       final entries = <_CsvEntry>[];
-      for (int i = 1; i < lines.length; i++) {
+      for (var i = 1; i < lines.length; i++) {
         final line = lines[i].trim();
         if (line.isEmpty) continue;
 
@@ -192,8 +192,8 @@ class VocabularyImport {
 }
 
 class _CsvEntry {
-  final String text;
-  final int count;
 
   const _CsvEntry({required this.text, required this.count});
+  final String text;
+  final int count;
 }

@@ -10,18 +10,15 @@ import '../../domain/entities/event.dart';
 /// Uses Firestore sub-collection: events/{eventId}/messages
 /// Real-time updates via StreamBuilder.
 class EventChatScreen extends StatefulWidget {
+
+  const EventChatScreen({
+    required this.event, required this.currentUserId, required this.currentUserName, super.key,
+    this.currentUserPhotoUrl,
+  });
   final Event event;
   final String currentUserId;
   final String currentUserName;
   final String? currentUserPhotoUrl;
-
-  const EventChatScreen({
-    super.key,
-    required this.event,
-    required this.currentUserId,
-    required this.currentUserName,
-    this.currentUserPhotoUrl,
-  });
 
   @override
   State<EventChatScreen> createState() => _EventChatScreenState();
@@ -64,7 +61,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
             ),
             Text(
               AppLocalizations.of(context)!.eventsGroupChatTooltip,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 12,
               ),
@@ -92,7 +89,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                   return Center(
                     child: Text(
                       AppLocalizations.of(context)!.eventsErrorLoadingMessages,
-                      style: TextStyle(color: AppColors.textSecondary),
+                      style: const TextStyle(color: AppColors.textSecondary),
                     ),
                   );
                 }
@@ -104,7 +101,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.chat_bubble_outline,
                           size: 64,
                           color: AppColors.textTertiary,
@@ -112,7 +109,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                         const SizedBox(height: 16),
                         Text(
                           AppLocalizations.of(context)!.eventsNoMessagesYet,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -121,7 +118,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                         const SizedBox(height: 8),
                         Text(
                           AppLocalizations.of(context)!.eventsBeFirstToSay,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.textSecondary,
                             fontSize: 14,
                           ),
@@ -220,7 +217,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                       padding: const EdgeInsets.only(bottom: 4),
                       child: Text(
                         message.senderName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
@@ -237,7 +234,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                   const SizedBox(height: 4),
                   Text(
                     _formatTime(message.timestamp),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 10,
                     ),
@@ -260,7 +257,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
         top: 8,
         bottom: MediaQuery.of(context).padding.bottom + 8,
       ),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: AppColors.backgroundCard,
         border: Border(
           top: BorderSide(
@@ -276,7 +273,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
                 hintText: AppLocalizations.of(context)!.eventsTypeAMessage,
-                hintStyle: TextStyle(color: AppColors.textTertiary),
+                hintStyle: const TextStyle(color: AppColors.textTertiary),
                 filled: true,
                 fillColor: AppColors.backgroundInput,
                 contentPadding: const EdgeInsets.symmetric(
@@ -300,7 +297,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
             child: Container(
               width: 44,
               height: 44,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColors.richGold,
                 shape: BoxShape.circle,
               ),

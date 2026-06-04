@@ -16,6 +16,13 @@ import '../../../../core/constants/app_dimensions.dart';
 /// )
 /// ```
 class LanguageBadge extends StatelessWidget {
+
+  const LanguageBadge({
+    required this.languages, super.key,
+    this.maxDisplay = 3,
+    this.compact = false,
+    this.nativeLanguage,
+  });
   /// List of language names or codes the user speaks
   final List<String> languages;
 
@@ -27,14 +34,6 @@ class LanguageBadge extends StatelessWidget {
 
   /// Optional: highlight the native language with a gold border
   final String? nativeLanguage;
-
-  const LanguageBadge({
-    super.key,
-    required this.languages,
-    this.maxDisplay = 3,
-    this.compact = false,
-    this.nativeLanguage,
-  });
 
   /// Map of language names/codes to flag emojis
   static const Map<String, String> _languageFlags = {

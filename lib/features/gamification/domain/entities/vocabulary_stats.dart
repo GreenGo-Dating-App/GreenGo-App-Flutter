@@ -2,11 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Vocabulary statistics for a user in a specific language
 class VocabularyStats extends Equatable {
-  final String userId;
-  final String language;
-  final int uniqueWordCount;
-  final int totalXpEarned;
-  final Map<String, int> rarityDistribution;
 
   const VocabularyStats({
     required this.userId,
@@ -15,6 +10,11 @@ class VocabularyStats extends Equatable {
     this.totalXpEarned = 0,
     this.rarityDistribution = const {},
   });
+  final String userId;
+  final String language;
+  final int uniqueWordCount;
+  final int totalXpEarned;
+  final Map<String, int> rarityDistribution;
 
   /// Get vocabulary level badge based on unique word count
   String? get vocabularyBadge {

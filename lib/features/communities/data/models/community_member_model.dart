@@ -8,9 +8,8 @@ class CommunityMemberModel extends CommunityMember {
   const CommunityMemberModel({
     required super.userId,
     required super.displayName,
-    super.photoUrl,
+    required super.joinedAt, super.photoUrl,
     super.role,
-    required super.joinedAt,
     super.languages,
     super.isLocalGuide,
   });

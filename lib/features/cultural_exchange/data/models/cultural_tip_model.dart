@@ -10,9 +10,22 @@ class CulturalTipModel extends CulturalTip {
     required super.title,
     required super.content,
     required super.category,
-    super.likes,
-    required super.createdAt,
+    required super.createdAt, super.likes,
   });
+
+  factory CulturalTipModel.fromEntity(CulturalTip entity) {
+    return CulturalTipModel(
+      id: entity.id,
+      userId: entity.userId,
+      userDisplayName: entity.userDisplayName,
+      country: entity.country,
+      title: entity.title,
+      content: entity.content,
+      category: entity.category,
+      likes: entity.likes,
+      createdAt: entity.createdAt,
+    );
+  }
 
   factory CulturalTipModel.fromFirestore(
     DocumentSnapshot<Map<String, dynamic>> doc,
@@ -52,19 +65,5 @@ class CulturalTipModel extends CulturalTip {
       'likes': likes,
       'createdAt': Timestamp.fromDate(createdAt),
     };
-  }
-
-  factory CulturalTipModel.fromEntity(CulturalTip entity) {
-    return CulturalTipModel(
-      id: entity.id,
-      userId: entity.userId,
-      userDisplayName: entity.userDisplayName,
-      country: entity.country,
-      title: entity.title,
-      content: entity.content,
-      category: entity.category,
-      likes: entity.likes,
-      createdAt: entity.createdAt,
-    );
   }
 }

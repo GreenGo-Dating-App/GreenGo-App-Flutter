@@ -57,13 +57,13 @@ abstract class NotificationRemoteDataSource {
 /// Implementation
 class NotificationRemoteDataSourceImpl
     implements NotificationRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final FirebaseMessaging messaging;
 
   NotificationRemoteDataSourceImpl({
     required this.firestore,
     required this.messaging,
   });
+  final FirebaseFirestore firestore;
+  final FirebaseMessaging messaging;
 
   @override
   Stream<List<NotificationModel>> getNotificationsStream(
@@ -86,7 +86,7 @@ class NotificationRemoteDataSourceImpl
 
     return query.snapshots().map((snapshot) {
       return snapshot.docs
-          .map((doc) => NotificationModel.fromFirestore(doc))
+          .map(NotificationModel.fromFirestore)
           .toList();
     });
   }

@@ -7,18 +7,6 @@ import 'virtual_gift_state.dart';
 /// Virtual Gift BLoC
 /// Manages gift catalog, sending, and receiving gifts
 class VirtualGiftBloc extends Bloc<VirtualGiftEvent, VirtualGiftState> {
-  final GetGiftCatalog getGiftCatalog;
-  final GetGiftsByCategory getGiftsByCategory;
-  final SendVirtualGift sendVirtualGift;
-  final GetReceivedGifts getReceivedGifts;
-  final GetSentGifts getSentGifts;
-  final MarkGiftViewed markGiftViewed;
-  final GetGiftStats getGiftStats;
-  final GetUnviewedGiftCount getUnviewedGiftCount;
-
-  // Cache
-  List<VirtualGift> _catalogCache = [];
-  int? _userCoins;
 
   VirtualGiftBloc({
     required this.getGiftCatalog,
@@ -42,6 +30,18 @@ class VirtualGiftBloc extends Bloc<VirtualGiftEvent, VirtualGiftState> {
     on<SelectGift>(_onSelectGift);
     on<ClearGiftSelection>(_onClearGiftSelection);
   }
+  final GetGiftCatalog getGiftCatalog;
+  final GetGiftsByCategory getGiftsByCategory;
+  final SendVirtualGift sendVirtualGift;
+  final GetReceivedGifts getReceivedGifts;
+  final GetSentGifts getSentGifts;
+  final MarkGiftViewed markGiftViewed;
+  final GetGiftStats getGiftStats;
+  final GetUnviewedGiftCount getUnviewedGiftCount;
+
+  // Cache
+  List<VirtualGift> _catalogCache = [];
+  int? _userCoins;
 
   /// Set user's coin balance (called from CoinBloc)
   void setUserCoins(int coins) {

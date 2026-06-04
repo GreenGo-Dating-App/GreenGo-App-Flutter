@@ -4,6 +4,22 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents an interest group, language circle, or local guide community
 class Community extends Equatable {
+
+  const Community({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.type,
+    required this.createdByUserId, required this.createdByName, required this.createdAt, this.imageUrl,
+    this.memberCount = 0,
+    this.languages = const [],
+    this.tags = const [],
+    this.isPublic = true,
+    this.city,
+    this.country,
+    this.lastMessagePreview,
+    this.lastActivityAt,
+  });
   final String id;
   final String name;
   final String description;
@@ -20,25 +36,6 @@ class Community extends Equatable {
   final String? country;
   final String? lastMessagePreview;
   final DateTime? lastActivityAt;
-
-  const Community({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.type,
-    this.imageUrl,
-    required this.createdByUserId,
-    required this.createdByName,
-    required this.createdAt,
-    this.memberCount = 0,
-    this.languages = const [],
-    this.tags = const [],
-    this.isPublic = true,
-    this.city,
-    this.country,
-    this.lastMessagePreview,
-    this.lastActivityAt,
-  });
 
   /// Check if community is a language circle
   bool get isLanguageCircle => type == CommunityType.languageCircle;

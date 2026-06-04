@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+
 import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/constants/app_strings.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
-import '../../../../core/widgets/language_selector.dart';
-import '../../../../core/widgets/luxury_particles_background.dart';
 import '../../../../core/widgets/animated_luxury_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
+import '../../../../core/widgets/language_selector.dart';
+import '../../../../core/widgets/luxury_particles_background.dart';
+import '../../../../generated/app_localizations.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
-import '../widgets/auth_text_field.dart';
 import '../widgets/auth_button.dart';
+import '../widgets/auth_text_field.dart';
 
 // Conditional imports based on feature flags
 // Only import if the corresponding feature is enabled in AppConfig

@@ -7,9 +7,9 @@ import 'package:flutter/foundation.dart';
 /// Manages app-wide feature flags from Firestore.
 /// Provides real-time updates when admins toggle features.
 class FeatureFlagsService extends ChangeNotifier {
-  static final FeatureFlagsService _instance = FeatureFlagsService._internal();
   factory FeatureFlagsService() => _instance;
   FeatureFlagsService._internal();
+  static final FeatureFlagsService _instance = FeatureFlagsService._internal();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   StreamSubscription<DocumentSnapshot>? _subscription;

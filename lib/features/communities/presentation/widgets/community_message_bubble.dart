@@ -9,16 +9,14 @@ import '../../domain/entities/community_message.dart';
 /// Displays a message in the community group chat with sender info,
 /// special styling for language tips, cultural facts, and city tips
 class CommunityMessageBubble extends StatelessWidget {
+
+  const CommunityMessageBubble({
+    required this.message, required this.isCurrentUser, super.key,
+    this.showSenderInfo = true,
+  });
   final CommunityMessage message;
   final bool isCurrentUser;
   final bool showSenderInfo;
-
-  const CommunityMessageBubble({
-    super.key,
-    required this.message,
-    required this.isCurrentUser,
-    this.showSenderInfo = true,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -278,11 +276,6 @@ class CommunityMessageBubble extends StatelessWidget {
 }
 
 class _SpecialMessageConfig {
-  final IconData icon;
-  final Color iconColor;
-  final Color backgroundColor;
-  final Color borderColor;
-  final String label;
 
   const _SpecialMessageConfig({
     required this.icon,
@@ -291,4 +284,9 @@ class _SpecialMessageConfig {
     required this.borderColor,
     required this.label,
   });
+  final IconData icon;
+  final Color iconColor;
+  final Color backgroundColor;
+  final Color borderColor;
+  final String label;
 }

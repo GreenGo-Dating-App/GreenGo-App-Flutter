@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:geolocator/geolocator.dart';
+
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
-import '../../../domain/entities/profile.dart' as profile_entity;
+import '../../../../../generated/app_localizations.dart';
 import '../../../domain/entities/location.dart' as location_entity;
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -73,7 +73,7 @@ class _Step5LocationLanguageScreenState
 
     try {
       // Check if location services are enabled
-      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      final serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
         _showLocationError(
           AppLocalizations.of(context)?.locationServicesDisabled ?? 'Location Services Disabled',
@@ -83,7 +83,7 @@ class _Step5LocationLanguageScreenState
       }
 
       // Check location permissions
-      LocationPermission permission = await Geolocator.checkPermission();
+      var permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
@@ -104,12 +104,12 @@ class _Step5LocationLanguageScreenState
       }
 
       // Get current position
-      Position position = await Geolocator.getCurrentPosition(
+      final position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high,
       );
 
       // Get address from coordinates
-      List<Placemark> placemarks = await placemarkFromCoordinates(
+      final placemarks = await placemarkFromCoordinates(
         position.latitude,
         position.longitude,
       );
@@ -159,7 +159,7 @@ class _Step5LocationLanguageScreenState
       );
     } catch (e) {
       // Handle any other errors gracefully
-      String errorMessage = e.toString().toLowerCase();
+      final errorMessage = e.toString().toLowerCase();
       String userMessage;
 
       if (errorMessage.contains('network') || errorMessage.contains('internet') || errorMessage.contains('connection')) {
@@ -239,7 +239,7 @@ class _Step5LocationLanguageScreenState
 
     context.read<OnboardingBloc>().add(
           OnboardingLocationUpdated(
-            location: _selectedLocation! as location_entity.Location,
+            location: _selectedLocation!,
             languages: _selectedLanguages,
           ),
         );
@@ -251,7 +251,7 @@ class _Step5LocationLanguageScreenState
     if (_selectedLocation != null && _selectedLanguages.isNotEmpty) {
       context.read<OnboardingBloc>().add(
             OnboardingLocationUpdated(
-              location: _selectedLocation! as location_entity.Location,
+              location: _selectedLocation!,
               languages: _selectedLanguages,
             ),
           );

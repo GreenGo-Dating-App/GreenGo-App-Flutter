@@ -17,9 +17,9 @@ class AuthLoading extends AuthState {
 }
 
 class AuthAuthenticated extends AuthState {
-  final User user;
 
   const AuthAuthenticated(this.user);
+  final User user;
 
   @override
   List<Object> get props => [user];
@@ -30,10 +30,10 @@ class AuthUnauthenticated extends AuthState {
 }
 
 class AuthError extends AuthState {
-  final String message;
-  final DateTime timestamp;
 
   AuthError(this.message) : timestamp = DateTime.now();
+  final String message;
+  final DateTime timestamp;
 
   @override
   List<Object> get props => [message, timestamp];
@@ -48,18 +48,18 @@ class AuthEmailVerificationSent extends AuthState {
 }
 
 class AuthPhoneCodeSent extends AuthState {
-  final String verificationId;
 
   const AuthPhoneCodeSent(this.verificationId);
+  final String verificationId;
 
   @override
   List<Object> get props => [verificationId];
 }
 
 class AuthBiometricAvailable extends AuthState {
-  final bool isAvailable;
 
   const AuthBiometricAvailable(this.isAvailable);
+  final bool isAvailable;
 
   @override
   List<Object> get props => [isAvailable];
@@ -68,11 +68,6 @@ class AuthBiometricAvailable extends AuthState {
 /// State when user is authenticated but waiting for access
 /// (pending approval or waiting for access date)
 class AuthWaitingForAccess extends AuthState {
-  final User user;
-  final String approvalStatus; // 'pending', 'approved', 'rejected'
-  final DateTime accessDate;
-  final String membershipTier;
-  final bool canAccessApp;
 
   const AuthWaitingForAccess({
     required this.user,
@@ -81,6 +76,11 @@ class AuthWaitingForAccess extends AuthState {
     required this.membershipTier,
     required this.canAccessApp,
   });
+  final User user;
+  final String approvalStatus; // 'pending', 'approved', 'rejected'
+  final DateTime accessDate;
+  final String membershipTier;
+  final bool canAccessApp;
 
   @override
   List<Object> get props => [user, approvalStatus, accessDate, membershipTier, canAccessApp];

@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/icebreaker.dart';
 
 /// Screen for selecting and sending icebreaker questions
 class IcebreakerScreen extends StatefulWidget {
+
+  const IcebreakerScreen({
+    required this.matchId, required this.receiverName, super.key,
+    this.onIcebreakerSelected,
+  });
   final String matchId;
   final String receiverName;
   final Function(Icebreaker, String?)? onIcebreakerSelected;
-
-  const IcebreakerScreen({
-    super.key,
-    required this.matchId,
-    required this.receiverName,
-    this.onIcebreakerSelected,
-  });
 
   @override
   State<IcebreakerScreen> createState() => _IcebreakerScreenState();
@@ -51,7 +50,7 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
 
   void _loadIcebreakers() {
     // Load from default database
-    int id = 0;
+    var id = 0;
     for (final data in IcebreakerDatabase.defaultIcebreakers) {
       _icebreakers.add(Icebreaker(
         id: 'icebreaker_${id++}',
@@ -264,7 +263,7 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
               ? Center(
                   child: Text(
                     l10n.icebreakersNoneInCategory,
-                    style: TextStyle(color: AppColors.textSecondary),
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                 )
               : ListView.builder(
@@ -285,13 +284,13 @@ class _IcebreakerScreenState extends State<IcebreakerScreen>
 }
 
 class _IcebreakerCard extends StatelessWidget {
-  final Icebreaker icebreaker;
-  final VoidCallback onTap;
 
   const _IcebreakerCard({
     required this.icebreaker,
     required this.onTap,
   });
+  final Icebreaker icebreaker;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -377,12 +376,11 @@ class _IcebreakerCard extends StatelessWidget {
 
 /// Icebreaker suggestion widget for chat input
 class IcebreakerSuggestionButton extends StatelessWidget {
-  final VoidCallback onTap;
 
   const IcebreakerSuggestionButton({
-    super.key,
-    required this.onTap,
+    required this.onTap, super.key,
   });
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {

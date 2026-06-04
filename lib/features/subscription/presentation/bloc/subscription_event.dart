@@ -10,9 +10,9 @@ abstract class SubscriptionEvent extends Equatable {
 
 /// Load current subscription
 class LoadCurrentSubscription extends SubscriptionEvent {
-  final String userId;
 
   const LoadCurrentSubscription(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -25,13 +25,13 @@ class LoadAvailableProducts extends SubscriptionEvent {
 
 /// Purchase subscription
 class PurchaseSubscription extends SubscriptionEvent {
-  final ProductDetails product;
-  final SubscriptionTier tier;
 
   const PurchaseSubscription({
     required this.product,
     required this.tier,
   });
+  final ProductDetails product;
+  final SubscriptionTier tier;
 
   @override
   List<Object?> get props => [product, tier];
@@ -39,9 +39,9 @@ class PurchaseSubscription extends SubscriptionEvent {
 
 /// Restore purchases
 class RestorePurchasesEvent extends SubscriptionEvent {
-  final String userId;
 
   const RestorePurchasesEvent(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -49,9 +49,9 @@ class RestorePurchasesEvent extends SubscriptionEvent {
 
 /// Internal event for purchase stream updates
 class _PurchaseUpdated extends SubscriptionEvent {
-  final List<PurchaseDetails> purchases;
 
   const _PurchaseUpdated(this.purchases);
+  final List<PurchaseDetails> purchases;
 
   @override
   List<Object?> get props => [purchases];

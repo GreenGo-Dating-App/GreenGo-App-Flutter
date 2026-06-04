@@ -1,31 +1,31 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../profile/domain/entities/profile.dart';
-import '../../../profile/data/models/profile_model.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
 import 'profile_detail_screen.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Match Detail Screen
 /// Shows match info with overlapping photos, both users' details, gamification stats
 class MatchDetailScreen extends StatefulWidget {
+
+  const MatchDetailScreen({
+    required this.match, required this.currentUserId, super.key,
+    this.profile,
+  });
   final Match match;
   final Profile? profile;
   final String currentUserId;
-
-  const MatchDetailScreen({
-    super.key,
-    required this.match,
-    this.profile,
-    required this.currentUserId,
-  });
 
   @override
   State<MatchDetailScreen> createState() => _MatchDetailScreenState();
@@ -99,7 +99,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
 
   int _calculateAge(DateTime dateOfBirth) {
     final now = DateTime.now();
-    int age = now.year - dateOfBirth.year;
+    var age = now.year - dateOfBirth.year;
     if (now.month < dateOfBirth.month ||
         (now.month == dateOfBirth.month && now.day < dateOfBirth.day)) {
       age--;
@@ -153,7 +153,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                               // "Let's Exchange!" header
                               Text(
                                 AppLocalizations.of(context)!.letsExchange,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: AppColors.richGold,
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
@@ -209,7 +209,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           Expanded(
             child: Text(
               AppLocalizations.of(context)!.matchDetailsTitle,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -322,12 +322,11 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
 
   Widget _buildUserCard({
     required String name,
-    int? age,
+    required bool isCurrentUser, int? age,
     String? education,
     String? occupation,
     int? height,
     int? weight,
-    required bool isCurrentUser,
   }) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
@@ -357,7 +356,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                   ),
                   child: Text(
                     AppLocalizations.of(context)!.youLabel,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,

@@ -6,9 +6,9 @@ import '../datasources/conversation_expiry_remote_datasource.dart';
 
 /// Implementation of conversation expiry repository
 class ConversationExpiryRepositoryImpl implements ConversationExpiryRepository {
-  final ConversationExpiryRemoteDataSource remoteDataSource;
 
   ConversationExpiryRepositoryImpl({required this.remoteDataSource});
+  final ConversationExpiryRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, ConversationExpiry?>> getExpiry(
@@ -72,7 +72,7 @@ class ConversationExpiryRepositoryImpl implements ConversationExpiryRepository {
   ) {
     return remoteDataSource
         .streamExpiry(conversationId)
-        .map((expiry) => Right<Failure, ConversationExpiry>(expiry));
+        .map(Right<Failure, ConversationExpiry>.new);
   }
 
   @override

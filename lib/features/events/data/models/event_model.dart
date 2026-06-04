@@ -11,22 +11,14 @@ class EventModel extends Event {
     required super.id,
     required super.organizerId,
     required super.organizerName,
-    super.organizerPhotoUrl,
-    required super.title,
-    required super.description,
-    required super.category,
+    required super.title, required super.description, required super.category, required super.startDate, required super.endDate, required super.locationName, required super.maxAttendees, required super.status, required super.createdAt, super.organizerPhotoUrl,
     super.imageUrl,
     super.photoUrls = const [],
-    required super.startDate,
-    required super.endDate,
-    required super.locationName,
     super.latitude,
     super.longitude,
     super.address,
-    required super.maxAttendees,
     super.price,
     super.currency,
-    required super.status,
     super.attendees = const [],
     super.tags = const [],
     super.isVerified = false,
@@ -38,7 +30,6 @@ class EventModel extends Event {
     super.languagePairs,
     super.city,
     super.attendeeCount = 0,
-    required super.createdAt,
     super.updatedAt,
   });
 
@@ -206,7 +197,7 @@ class EventModel extends Event {
     if (value is! List) return [];
     return value
         .whereType<Map<String, dynamic>>()
-        .map((json) => EventAttendeeModel.fromJson(json))
+        .map(EventAttendeeModel.fromJson)
         .toList();
   }
 }

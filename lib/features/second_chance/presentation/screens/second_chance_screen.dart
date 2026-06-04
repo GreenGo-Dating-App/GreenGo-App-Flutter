@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/second_chance.dart';
 import '../bloc/second_chance_bloc.dart';
 import '../bloc/second_chance_event.dart';
@@ -8,12 +8,11 @@ import '../bloc/second_chance_state.dart';
 
 /// Second Chance Screen
 class SecondChanceScreen extends StatefulWidget {
-  final String userId;
 
   const SecondChanceScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<SecondChanceScreen> createState() => _SecondChanceScreenState();

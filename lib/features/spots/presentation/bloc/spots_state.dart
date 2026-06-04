@@ -18,45 +18,45 @@ class SpotsLoading extends SpotsState {
 
 /// Successfully loaded a list of spots.
 class SpotsLoaded extends SpotsState {
-  final List<Spot> spots;
-  final String city;
-  final SpotCategory? selectedCategory;
 
   const SpotsLoaded({
     required this.spots,
     required this.city,
     this.selectedCategory,
   });
+  final List<Spot> spots;
+  final String city;
+  final SpotCategory? selectedCategory;
 }
 
 /// Successfully loaded a spot detail with its reviews.
 class SpotDetailLoaded extends SpotsState {
-  final Spot spot;
-  final List<SpotReview> reviews;
 
   const SpotDetailLoaded({
     required this.spot,
     required this.reviews,
   });
+  final Spot spot;
+  final List<SpotReview> reviews;
 }
 
 /// A spot was successfully created.
 class SpotCreated extends SpotsState {
-  final Spot spot;
 
   const SpotCreated({required this.spot});
+  final Spot spot;
 }
 
 /// A review was successfully added.
 class ReviewAdded extends SpotsState {
-  final SpotReview review;
 
   const ReviewAdded({required this.review});
+  final SpotReview review;
 }
 
 /// Error state.
 class SpotsError extends SpotsState {
-  final String message;
 
   const SpotsError(this.message);
+  final String message;
 }

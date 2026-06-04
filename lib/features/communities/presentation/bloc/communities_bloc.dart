@@ -1,11 +1,13 @@
 import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../data/datasources/communities_remote_datasource.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
 import '../../domain/entities/community_message.dart';
 import '../../domain/repositories/communities_repository.dart';
-import '../../data/datasources/communities_remote_datasource.dart';
 import 'communities_event.dart';
 import 'communities_state.dart';
 
@@ -14,10 +16,6 @@ import 'communities_state.dart';
 /// Manages state for the communities feature including
 /// interest groups, language circles, and local guide program
 class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
-  final CommunitiesRepository _repository;
-  final CommunitiesRemoteDataSource _remoteDataSource;
-
-  StreamSubscription? _messagesSubscription;
 
   CommunitiesBloc({
     required CommunitiesRepository repository,
@@ -37,6 +35,10 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<CommunityMessagesUpdated>(_onMessagesUpdated);
     on<SeedSampleCommunities>(_onSeedSampleCommunities);
   }
+  final CommunitiesRepository _repository;
+  final CommunitiesRemoteDataSource _remoteDataSource;
+
+  StreamSubscription? _messagesSubscription;
 
   Future<void> _onLoadCommunities(
     LoadCommunities event,
@@ -73,9 +75,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   ) async {
     // Preserve current state data if available
     final currentState = state;
-    List<Community> allCommunities = [];
-    List<Community> recommended = [];
-    List<Community> languageCircles = [];
+    var allCommunities = <Community>[];
+    var recommended = <Community>[];
+    var languageCircles = <Community>[];
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;
@@ -105,9 +107,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     Emitter<CommunitiesState> emit,
   ) async {
     final currentState = state;
-    List<Community> allCommunities = [];
-    List<Community> userCommunities = [];
-    List<Community> languageCircles = [];
+    var allCommunities = <Community>[];
+    var userCommunities = <Community>[];
+    var languageCircles = <Community>[];
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;

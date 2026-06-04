@@ -12,9 +12,9 @@ abstract class NotificationPreferencesEvent extends Equatable {
 /// Load notification preferences
 class NotificationPreferencesLoadRequested
     extends NotificationPreferencesEvent {
-  final String userId;
 
   const NotificationPreferencesLoadRequested({required this.userId});
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -22,9 +22,9 @@ class NotificationPreferencesLoadRequested
 
 /// Update notification preferences
 class NotificationPreferencesUpdated extends NotificationPreferencesEvent {
-  final NotificationPreferences preferences;
 
   const NotificationPreferencesUpdated({required this.preferences});
+  final NotificationPreferences preferences;
 
   @override
   List<Object?> get props => [preferences];

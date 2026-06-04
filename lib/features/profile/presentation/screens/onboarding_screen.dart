@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/core/di/injection_container.dart' as di;
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../generated/app_localizations.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../membership/data/datasources/membership_remote_datasource.dart';
@@ -10,26 +11,25 @@ import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import '../bloc/onboarding_bloc.dart';
 import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
+import 'onboarding/onboarding_exit.dart';
 import 'onboarding/step1_basic_info_screen.dart';
 import 'onboarding/step2_photo_upload_screen.dart';
-import 'onboarding/step3_verification_screen.dart';
 import 'onboarding/step3_bio_screen.dart';
+import 'onboarding/step3_verification_screen.dart';
 import 'onboarding/step4_interests_screen.dart';
 import 'onboarding/step5_location_language_screen.dart';
+import 'onboarding/step5c_travel_preference_screen.dart';
 import 'onboarding/step6_voice_recording_screen.dart';
 import 'onboarding/step7_personality_quiz_screen.dart';
-import 'onboarding/step9_social_links_screen.dart';
-import 'onboarding/step5c_travel_preference_screen.dart';
 import 'onboarding/step8_profile_preview_screen.dart';
-import 'onboarding/onboarding_exit.dart';
+import 'onboarding/step9_social_links_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
-  final String userId;
 
   const OnboardingScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   /// Shows a success / error snackbar describing the signup-coupon redemption.
   void _showCouponOutcome(BuildContext context, SignupCouponOutcome? outcome) {
@@ -84,7 +84,7 @@ class OnboardingScreen extends StatelessWidget {
             _showCouponOutcome(context, state.couponOutcome);
             // Trigger access status re-check so auth wrapper shows Verification Pending
             if (context.mounted) {
-              context.read<AuthBloc>().add(AuthCheckAccessStatusRequested());
+              context.read<AuthBloc>().add(const AuthCheckAccessStatusRequested());
               Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
             }
           } else if (state is OnboardingError) {

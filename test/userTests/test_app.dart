@@ -4,12 +4,11 @@ import 'package:flutter_test/flutter_test.dart';
 /// Test app wrapper for user tests
 /// This creates standalone test screens that don't depend on the actual app's BLoCs
 class TestApp extends StatelessWidget {
-  final Widget child;
 
   const TestApp({
-    super.key,
-    required this.child,
+    required this.child, super.key,
   });
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -677,9 +676,9 @@ class _TestDiscoveryScreenState extends State<TestDiscoveryScreen> {
 
 /// Test Profile Detail Screen
 class TestProfileDetailScreen extends StatelessWidget {
-  final Map<String, String> profile;
 
-  const TestProfileDetailScreen({super.key, required this.profile});
+  const TestProfileDetailScreen({required this.profile, super.key});
+  final Map<String, String> profile;
 
   @override
   Widget build(BuildContext context) {
@@ -759,7 +758,7 @@ class TestProfileDetailScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Wrap(
+                    const Wrap(
                       spacing: 8,
                       children: [
                         Chip(label: Text('Music')),
@@ -1020,7 +1019,7 @@ class _TestChatScreenState extends State<TestChatScreen> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => TestProfileDetailScreen(
+                builder: (_) => const TestProfileDetailScreen(
                   profile: {'name': 'Anna', 'age': '25', 'bio': 'Love coffee'},
                 ),
               ),
@@ -1169,10 +1168,10 @@ class TestProfileScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            CircleAvatar(
-              key: const Key('profile_photo'),
+            const CircleAvatar(
+              key: Key('profile_photo'),
               radius: 50,
-              child: const Text('JD', style: TextStyle(fontSize: 32)),
+              child: Text('JD', style: TextStyle(fontSize: 32)),
             ),
             const SizedBox(height: 16),
             const Text(
@@ -1795,27 +1794,27 @@ class TestAchievementsScreen extends StatelessWidget {
           Expanded(
             child: ListView(
               key: const Key('achievements_list'),
-              children: [
+              children: const [
                 ListTile(
-                  key: const Key('unlocked_achievement'),
-                  leading: const Icon(Icons.emoji_events, color: Colors.amber),
-                  title: const Text('First Like'),
+                  key: Key('unlocked_achievement'),
+                  leading: Icon(Icons.emoji_events, color: Colors.amber),
+                  title: Text('First Like'),
                   subtitle: Row(
-                    key: const Key('achievement_progress_0'),
-                    children: const [Text('1/1')],
+                    key: Key('achievement_progress_0'),
+                    children: [Text('1/1')],
                   ),
                 ),
                 ListTile(
-                  key: const Key('locked_achievement'),
-                  leading: const Icon(Icons.emoji_events, color: Colors.grey),
-                  title: const Text('Social Butterfly'),
-                  subtitle: const Text('5/10'),
+                  key: Key('locked_achievement'),
+                  leading: Icon(Icons.emoji_events, color: Colors.grey),
+                  title: Text('Social Butterfly'),
+                  subtitle: Text('5/10'),
                 ),
                 ListTile(
-                  key: const Key('social_achievement'),
-                  leading: const Icon(Icons.people),
-                  title: const Text('Connector'),
-                  subtitle: const Text('3/5'),
+                  key: Key('social_achievement'),
+                  leading: Icon(Icons.people),
+                  title: Text('Connector'),
+                  subtitle: Text('3/5'),
                 ),
               ],
             ),
@@ -1847,11 +1846,11 @@ class TestCoinShopScreen extends StatelessWidget {
                     appBar: AppBar(title: const Text('Transaction History')),
                     body: ListView(
                       key: const Key('transactions_list'),
-                      children: [
+                      children: const [
                         ListTile(
-                          key: const Key('transaction_item_0'),
-                          title: const Text('Purchased 100 coins'),
-                          subtitle: const Text('Yesterday'),
+                          key: Key('transaction_item_0'),
+                          title: Text('Purchased 100 coins'),
+                          subtitle: Text('Yesterday'),
                         ),
                       ],
                     ),
@@ -2016,7 +2015,7 @@ class TestSubscriptionScreen extends StatelessWidget {
             Text(name, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             Text(price),
             const Divider(),
-            ...features.map((f) => Text(f)),
+            ...features.map(Text.new),
           ],
         ),
       ),
@@ -2476,12 +2475,6 @@ class _TestChatScreenWithTranslationState extends State<TestChatScreenWithTransl
 
 /// Test message model
 class TestMessage {
-  final String id;
-  final String content;
-  final bool isCurrentUser;
-  final DateTime timestamp;
-  final String? translatedContent;
-  final bool isTranslated;
 
   TestMessage({
     required this.id,
@@ -2491,6 +2484,12 @@ class TestMessage {
     this.translatedContent,
     this.isTranslated = false,
   });
+  final String id;
+  final String content;
+  final bool isCurrentUser;
+  final DateTime timestamp;
+  final String? translatedContent;
+  final bool isTranslated;
 
   TestMessage copyWith({
     String? id,
@@ -2513,14 +2512,13 @@ class TestMessage {
 
 /// Test message bubble widget
 class TestMessageBubble extends StatelessWidget {
-  final TestMessage message;
-  final VoidCallback? onTranslate;
 
   const TestMessageBubble({
-    super.key,
-    required this.message,
+    required this.message, super.key,
     this.onTranslate,
   });
+  final TestMessage message;
+  final VoidCallback? onTranslate;
 
   @override
   Widget build(BuildContext context) {

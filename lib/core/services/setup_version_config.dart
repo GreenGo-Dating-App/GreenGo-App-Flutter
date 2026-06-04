@@ -9,6 +9,7 @@
 ///   3. Remove the call after first run
 ///
 /// Or run from Firebase Console > Firestore > Create Document manually
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
@@ -129,14 +130,14 @@ Future<void> enableMaintenanceMode({
   final firestore = FirebaseFirestore.instance;
   final docRef = firestore.doc('app_config/version');
 
-  String fullMessage = message;
+  var fullMessage = message;
   if (estimatedDuration != null) {
     final hours = estimatedDuration.inHours;
     final minutes = estimatedDuration.inMinutes % 60;
     if (hours > 0) {
       fullMessage += '\n\nEstimated time: ${hours}h ${minutes}m';
     } else {
-      fullMessage += '\n\nEstimated time: ${minutes} minutes';
+      fullMessage += '\n\nEstimated time: $minutes minutes';
     }
   }
 
@@ -178,7 +179,7 @@ Future<void> forceUpdateBelow({
   final firestore = FirebaseFirestore.instance;
   final docRef = firestore.doc('app_config/version');
 
-  String releaseNotes = securityMessage ??
+  final releaseNotes = securityMessage ??
       'This update includes critical security fixes. Please update immediately.';
 
   await docRef.update({

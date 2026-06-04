@@ -1,19 +1,20 @@
+import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import '../../../../generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
 import '../bloc/subscription_bloc.dart';
-import 'package:cloud_firestore/cloud_firestore.dart' as cloud_firestore;
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
 class MembershipScreen extends StatefulWidget {
-  final String? currentUserId;
 
-  const MembershipScreen({Key? key, this.currentUserId}) : super(key: key);
+  const MembershipScreen({super.key, this.currentUserId});
+  final String? currentUserId;
 
   @override
   State<MembershipScreen> createState() => _MembershipScreenState();
@@ -250,12 +251,13 @@ class _MembershipScreenState extends State<MembershipScreen> {
     final tierColor = _getTierColor(product.id);
 
     final l10n = AppLocalizations.of(context)!;
-    String tierName = l10n.membershipGreenGoBase;
-    if (product.id.contains('platinum')) tierName = l10n.membershipPlatinum;
-    else if (product.id.contains('gold')) tierName = l10n.membershipGold;
+    var tierName = l10n.membershipGreenGoBase;
+    if (product.id.contains('platinum')) {
+      tierName = l10n.membershipPlatinum;
+    } else if (product.id.contains('gold')) tierName = l10n.membershipGold;
     else if (product.id.contains('silver')) tierName = l10n.membershipSilver;
 
-    String duration = l10n.membershipOneMonth;
+    var duration = l10n.membershipOneMonth;
     if (isYearly) duration = l10n.membershipOneYear;
     if (isBase) duration = l10n.membershipBase;
 

@@ -4,14 +4,13 @@ import '../../domain/services/translation_service.dart';
 
 /// Subtitle Overlay Widget - Displays real-time translated subtitles during video calls
 class SubtitleOverlay extends StatefulWidget {
-  final TranslationService translationService;
-  final bool showOriginal;
 
   const SubtitleOverlay({
-    super.key,
-    required this.translationService,
+    required this.translationService, super.key,
     this.showOriginal = false,
   });
+  final TranslationService translationService;
+  final bool showOriginal;
 
   @override
   State<SubtitleOverlay> createState() => _SubtitleOverlayState();
@@ -178,14 +177,13 @@ class _SubtitleOverlayState extends State<SubtitleOverlay>
 
 /// Translation Toggle Button Widget
 class TranslationToggleButton extends StatelessWidget {
-  final TranslationService translationService;
-  final VoidCallback? onTap;
 
   const TranslationToggleButton({
-    super.key,
-    required this.translationService,
+    required this.translationService, super.key,
     this.onTap,
   });
+  final TranslationService translationService;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -255,16 +253,13 @@ class TranslationToggleButton extends StatelessWidget {
 
 /// Language Selector Widget
 class LanguageSelectorWidget extends StatelessWidget {
+
+  const LanguageSelectorWidget({
+    required this.currentLanguage, required this.onLanguageSelected, required this.label, super.key,
+  });
   final String currentLanguage;
   final Function(String) onLanguageSelected;
   final String label;
-
-  const LanguageSelectorWidget({
-    super.key,
-    required this.currentLanguage,
-    required this.onLanguageSelected,
-    required this.label,
-  });
 
   @override
   Widget build(BuildContext context) {

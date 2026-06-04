@@ -21,9 +21,9 @@ class SecondChanceLoading extends SecondChanceState {
 
 /// Error state
 class SecondChanceError extends SecondChanceState {
-  final String message;
 
   const SecondChanceError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
@@ -31,15 +31,15 @@ class SecondChanceError extends SecondChanceState {
 
 /// Profiles loaded
 class SecondChanceProfilesLoaded extends SecondChanceState {
-  final List<SecondChanceProfile> profiles;
-  final SecondChanceUsage usage;
-  final int currentIndex;
 
   const SecondChanceProfilesLoaded({
     required this.profiles,
     required this.usage,
     this.currentIndex = 0,
   });
+  final List<SecondChanceProfile> profiles;
+  final SecondChanceUsage usage;
+  final int currentIndex;
 
   /// Current profile
   SecondChanceProfile? get currentProfile {
@@ -65,13 +65,13 @@ class SecondChanceProfilesLoaded extends SecondChanceState {
 
 /// Like action result
 class SecondChanceLikeResult extends SecondChanceState {
-  final bool isMatch;
-  final String? matchId;
 
   const SecondChanceLikeResult({
     required this.isMatch,
     this.matchId,
   });
+  final bool isMatch;
+  final String? matchId;
 
   @override
   List<Object?> get props => [isMatch, matchId];
@@ -89,9 +89,9 @@ class NoMoreSecondChances extends SecondChanceState {
 
 /// Unlimited purchased
 class UnlimitedPurchased extends SecondChanceState {
-  final SecondChanceUsage usage;
 
   const UnlimitedPurchased(this.usage);
+  final SecondChanceUsage usage;
 
   @override
   List<Object?> get props => [usage];
@@ -99,9 +99,9 @@ class UnlimitedPurchased extends SecondChanceState {
 
 /// Need more uses (show purchase option)
 class NeedMoreSecondChances extends SecondChanceState {
-  final SecondChanceUsage usage;
 
   const NeedMoreSecondChances(this.usage);
+  final SecondChanceUsage usage;
 
   @override
   List<Object?> get props => [usage];

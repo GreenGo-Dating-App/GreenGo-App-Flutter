@@ -4,21 +4,12 @@ import '../../../membership/domain/entities/membership.dart';
 /// Tier Configuration Entity
 /// Admin-configurable tier rules stored in Firestore
 class TierConfig extends Equatable {
-  final String configId;
-  final MembershipTier tier;
-  final MembershipRules rules;
-  final String? updatedBy;
-  final DateTime updatedAt;
-  final DateTime createdAt;
-  final bool isActive;
 
   const TierConfig({
     required this.configId,
     required this.tier,
     required this.rules,
-    this.updatedBy,
-    required this.updatedAt,
-    required this.createdAt,
+    required this.updatedAt, required this.createdAt, this.updatedBy,
     this.isActive = true,
   });
 
@@ -34,6 +25,13 @@ class TierConfig extends Equatable {
       isActive: true,
     );
   }
+  final String configId;
+  final MembershipTier tier;
+  final MembershipRules rules;
+  final String? updatedBy;
+  final DateTime updatedAt;
+  final DateTime createdAt;
+  final bool isActive;
 
   TierConfig copyWith({
     String? configId,
@@ -70,9 +68,9 @@ class TierConfig extends Equatable {
 /// Singleton provider for tier configurations
 /// Caches tier configs loaded from Firestore at app startup
 class TierConfigProvider {
-  static final TierConfigProvider _instance = TierConfigProvider._internal();
   factory TierConfigProvider() => _instance;
   TierConfigProvider._internal();
+  static final TierConfigProvider _instance = TierConfigProvider._internal();
 
   final Map<MembershipTier, TierConfig> _configs = {};
   bool _isLoaded = false;
@@ -175,12 +173,6 @@ class TierConfigProvider {
 /// Reward configuration for tiers
 /// Admin-configurable coin allowances and rewards per tier
 class TierRewardConfig extends Equatable {
-  final MembershipTier tier;
-  final int monthlyCoins;
-  final int dailyLoginCoins;
-  final int dailyLoginXP;
-  final double xpMultiplier;
-  final int referralBonus;
 
   const TierRewardConfig({
     required this.tier,
@@ -190,6 +182,12 @@ class TierRewardConfig extends Equatable {
     this.xpMultiplier = 1.0,
     this.referralBonus = 100,
   });
+  final MembershipTier tier;
+  final int monthlyCoins;
+  final int dailyLoginCoins;
+  final int dailyLoginXP;
+  final double xpMultiplier;
+  final int referralBonus;
 
   /// Default reward configs per tier
   static TierRewardConfig getDefaults(MembershipTier tier) {

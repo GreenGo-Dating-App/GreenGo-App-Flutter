@@ -3,20 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Social Links Entity
 /// Represents user's social media profile links
 class SocialLinks extends Equatable {
-  /// Facebook profile URL or username
-  final String? facebook;
-
-  /// Instagram username (without @)
-  final String? instagram;
-
-  /// TikTok username (without @)
-  final String? tiktok;
-
-  /// LinkedIn profile URL or username
-  final String? linkedin;
-
-  /// X (Twitter) username (without @)
-  final String? x;
 
   const SocialLinks({
     this.facebook,
@@ -33,6 +19,20 @@ class SocialLinks extends Equatable {
         tiktok = null,
         linkedin = null,
         x = null;
+  /// Facebook profile URL or username
+  final String? facebook;
+
+  /// Instagram username (without @)
+  final String? instagram;
+
+  /// TikTok username (without @)
+  final String? tiktok;
+
+  /// LinkedIn profile URL or username
+  final String? linkedin;
+
+  /// X (Twitter) username (without @)
+  final String? x;
 
   /// Check if any social link is set
   bool get hasAnyLink =>
@@ -44,7 +44,7 @@ class SocialLinks extends Equatable {
 
   /// Get the count of linked social profiles
   int get linkedCount {
-    int count = 0;
+    var count = 0;
     if (facebook != null && facebook!.isNotEmpty) count++;
     if (instagram != null && instagram!.isNotEmpty) count++;
     if (tiktok != null && tiktok!.isNotEmpty) count++;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/blind_date.dart';
 import '../bloc/blind_date_bloc.dart';
 import '../bloc/blind_date_event.dart';
@@ -9,12 +9,11 @@ import '../widgets/blind_profile_card.dart';
 
 /// Main Blind Date mode screen
 class BlindDateScreen extends StatefulWidget {
-  final String userId;
 
   const BlindDateScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<BlindDateScreen> createState() => _BlindDateScreenState();

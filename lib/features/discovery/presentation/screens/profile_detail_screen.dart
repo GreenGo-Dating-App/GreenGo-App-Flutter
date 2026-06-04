@@ -1,38 +1,35 @@
+import 'package:audioplayers/audioplayers.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:audioplayers/audioplayers.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
-import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
-import '../../../profile/domain/entities/profile.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
-import '../../../membership/domain/entities/membership.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../widgets/swipe_buttons.dart';
-import '../../../../generated/app_localizations.dart';
 
 /// Profile Detail Screen
 ///
 /// Full profile view with photos, bio, interests, and details
 /// Includes Instagram-like photo likes feature
 class ProfileDetailScreen extends StatefulWidget {
+
+  const ProfileDetailScreen({
+    required this.profile, required this.currentUserId, super.key,
+    this.match,
+    this.onSwipe,
+  });
   final Profile profile;
   final String currentUserId;
   final Match? match;
   final Function(SwipeActionType)? onSwipe;
-
-  const ProfileDetailScreen({
-    super.key,
-    required this.profile,
-    required this.currentUserId,
-    this.match,
-    this.onSwipe,
-  });
 
   @override
   State<ProfileDetailScreen> createState() => _ProfileDetailScreenState();
@@ -43,8 +40,8 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   int _currentPhotoIndex = 0;
 
   // Photo likes state
-  Map<int, bool> _photoLikedByMe = {};
-  Map<int, int> _photoLikeCounts = {};
+  final Map<int, bool> _photoLikedByMe = {};
+  final Map<int, int> _photoLikeCounts = {};
   bool _showLikeAnimation = false;
 
   // Voice playback state
@@ -90,7 +87,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
     final firestore = FirebaseFirestore.instance;
 
-    for (int i = 0; i < widget.profile.photoUrls.length; i++) {
+    for (var i = 0; i < widget.profile.photoUrls.length; i++) {
       final photoUrl = widget.profile.photoUrls[i];
       final photoId = _getPhotoId(photoUrl);
 
@@ -376,36 +373,34 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         const SizedBox(height: 12),
 
                         // Location — uses effectiveLocation to show traveler city when active
-                        if (widget.profile.location != null)
-                          Row(
-                            children: [
-                              Icon(
-                                widget.profile.isTravelerActive ? Icons.flight : Icons.location_on,
-                                color: widget.profile.isTravelerActive
-                                    ? const Color(0xFF42A5F5)
-                                    : AppColors.textTertiary,
-                                size: 16,
+                        Row(
+                          children: [
+                            Icon(
+                              widget.profile.isTravelerActive ? Icons.flight : Icons.location_on,
+                              color: widget.profile.isTravelerActive
+                                  ? const Color(0xFF42A5F5)
+                                  : AppColors.textTertiary,
+                              size: 16,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              widget.profile.effectiveLocation.displayAddress,
+                              style: const TextStyle(
+                                color: AppColors.textSecondary,
+                                fontSize: 16,
                               ),
-                              const SizedBox(width: 4),
-                              Text(
-                                widget.profile.effectiveLocation.displayAddress,
-                                style: const TextStyle(
-                                  color: AppColors.textSecondary,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
+                        ),
 
                         const SizedBox(height: 24),
 
                         // Bio
-                        if (widget.profile.bio != null &&
-                            widget.profile.bio!.isNotEmpty) ...[
+                        if (widget.profile.bio.isNotEmpty) ...[
                           _buildSectionTitle(AppLocalizations.of(context)!.about),
                           const SizedBox(height: 12),
                           Text(
-                            widget.profile.bio!,
+                            widget.profile.bio,
                             style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 16,
@@ -430,7 +425,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                             spacing: 8,
                             runSpacing: 8,
                             children: widget.profile.interests
-                                .map((interest) => _buildInterestChip(interest))
+                                .map(_buildInterestChip)
                                 .toList(),
                           ),
                           const SizedBox(height: 24),
@@ -942,7 +937,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                           : _voiceDuration > Duration.zero
                               ? _formatVoiceDuration(_voiceDuration)
                               : '',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
                       ),
@@ -1073,7 +1068,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
   Future<void> _launchUrl(String url) async {
     // Ensure URL has a scheme
-    String finalUrl = url;
+    var finalUrl = url;
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
       finalUrl = 'https://$url';
     }

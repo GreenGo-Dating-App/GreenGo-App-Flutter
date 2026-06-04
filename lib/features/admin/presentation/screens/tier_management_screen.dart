@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/tier_config.dart';
 
 /// Tier Management Screen
 /// Admin interface for configuring tier limits and features
 class TierManagementScreen extends StatefulWidget {
-  final String adminId;
 
   const TierManagementScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<TierManagementScreen> createState() => _TierManagementScreenState();
@@ -274,15 +273,15 @@ class _TierManagementScreenState extends State<TierManagementScreen>
 }
 
 class _TierConfigEditor extends StatelessWidget {
-  final MembershipTier tier;
-  final TierConfig config;
-  final Function(TierConfig) onConfigChanged;
 
   const _TierConfigEditor({
     required this.tier,
     required this.config,
     required this.onConfigChanged,
   });
+  final MembershipTier tier;
+  final TierConfig config;
+  final Function(TierConfig) onConfigChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -581,6 +580,16 @@ class _TierConfigEditor extends StatelessWidget {
 }
 
 class _LimitSlider extends StatelessWidget {
+
+  const _LimitSlider({
+    required this.label,
+    required this.value,
+    required this.min,
+    required this.max,
+    required this.icon, required this.onChanged, this.allowUnlimited = true,
+    this.iconColor,
+    this.description,
+  });
   final String label;
   final int value;
   final int min;
@@ -590,18 +599,6 @@ class _LimitSlider extends StatelessWidget {
   final Color? iconColor;
   final String? description;
   final Function(int) onChanged;
-
-  const _LimitSlider({
-    required this.label,
-    required this.value,
-    required this.min,
-    required this.max,
-    this.allowUnlimited = true,
-    required this.icon,
-    this.iconColor,
-    this.description,
-    required this.onChanged,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -710,7 +707,7 @@ class _LimitSlider extends StatelessWidget {
                 const SizedBox(width: 8),
                 Switch(
                   value: isUnlimited,
-                  activeColor: AppColors.successGreen,
+                  activeThumbColor: AppColors.successGreen,
                   onChanged: (checked) {
                     if (checked) {
                       onChanged(-1);
@@ -728,11 +725,6 @@ class _LimitSlider extends StatelessWidget {
 }
 
 class _FeatureToggle extends StatelessWidget {
-  final String label;
-  final String description;
-  final bool value;
-  final IconData icon;
-  final Function(bool) onChanged;
 
   const _FeatureToggle({
     required this.label,
@@ -741,6 +733,11 @@ class _FeatureToggle extends StatelessWidget {
     required this.icon,
     required this.onChanged,
   });
+  final String label;
+  final String description;
+  final bool value;
+  final IconData icon;
+  final Function(bool) onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -774,7 +771,7 @@ class _FeatureToggle extends StatelessWidget {
         ),
         trailing: Switch(
           value: value,
-          activeColor: AppColors.successGreen,
+          activeThumbColor: AppColors.successGreen,
           onChanged: onChanged,
         ),
       ),

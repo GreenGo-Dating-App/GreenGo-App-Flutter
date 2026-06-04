@@ -3,6 +3,25 @@ import 'package:equatable/equatable.dart';
 /// Order Entity
 /// Represents a purchase order for coins or video coins
 class CoinOrder extends Equatable {
+
+  const CoinOrder({
+    required this.orderId,
+    required this.userId,
+    required this.type,
+    required this.status,
+    required this.packageId,
+    required this.itemQuantity,
+    required this.subtotal,
+    required this.tax,
+    required this.total,
+    required this.paymentMethod, required this.createdAt, this.currency = 'USD',
+    this.paymentIntentId,
+    this.transactionId,
+    this.completedAt,
+    this.refundedAt,
+    this.refundReason,
+    this.metadata,
+  });
   final String orderId;
   final String userId;
   final OrderType type;
@@ -21,27 +40,6 @@ class CoinOrder extends Equatable {
   final DateTime? refundedAt;
   final String? refundReason;
   final Map<String, dynamic>? metadata;
-
-  const CoinOrder({
-    required this.orderId,
-    required this.userId,
-    required this.type,
-    required this.status,
-    required this.packageId,
-    required this.itemQuantity,
-    required this.subtotal,
-    required this.tax,
-    required this.total,
-    this.currency = 'USD',
-    required this.paymentMethod,
-    this.paymentIntentId,
-    this.transactionId,
-    required this.createdAt,
-    this.completedAt,
-    this.refundedAt,
-    this.refundReason,
-    this.metadata,
-  });
 
   /// Get display total
   String get displayTotal {

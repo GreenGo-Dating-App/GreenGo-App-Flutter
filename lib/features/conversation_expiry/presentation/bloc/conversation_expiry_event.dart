@@ -10,9 +10,9 @@ abstract class ConversationExpiryEvent extends Equatable {
 
 /// Load expiry for a conversation
 class LoadConversationExpiry extends ConversationExpiryEvent {
-  final String conversationId;
 
   const LoadConversationExpiry(this.conversationId);
+  final String conversationId;
 
   @override
   List<Object?> get props => [conversationId];
@@ -20,9 +20,9 @@ class LoadConversationExpiry extends ConversationExpiryEvent {
 
 /// Load all user expiries
 class LoadUserExpiries extends ConversationExpiryEvent {
-  final String userId;
 
   const LoadUserExpiries(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -30,13 +30,13 @@ class LoadUserExpiries extends ConversationExpiryEvent {
 
 /// Load expiring soon conversations
 class LoadExpiringSoon extends ConversationExpiryEvent {
-  final String userId;
-  final int withinHours;
 
   const LoadExpiringSoon({
     required this.userId,
     this.withinHours = 24,
   });
+  final String userId;
+  final int withinHours;
 
   @override
   List<Object?> get props => [userId, withinHours];
@@ -44,13 +44,13 @@ class LoadExpiringSoon extends ConversationExpiryEvent {
 
 /// Extend a conversation
 class ExtendConversationEvent extends ConversationExpiryEvent {
-  final String conversationId;
-  final String userId;
 
   const ExtendConversationEvent({
     required this.conversationId,
     required this.userId,
   });
+  final String conversationId;
+  final String userId;
 
   @override
   List<Object?> get props => [conversationId, userId];
@@ -58,9 +58,9 @@ class ExtendConversationEvent extends ConversationExpiryEvent {
 
 /// Subscribe to expiry updates
 class SubscribeToExpiry extends ConversationExpiryEvent {
-  final String conversationId;
 
   const SubscribeToExpiry(this.conversationId);
+  final String conversationId;
 
   @override
   List<Object?> get props => [conversationId];
@@ -68,9 +68,9 @@ class SubscribeToExpiry extends ConversationExpiryEvent {
 
 /// Record conversation activity
 class RecordActivity extends ConversationExpiryEvent {
-  final String conversationId;
 
   const RecordActivity(this.conversationId);
+  final String conversationId;
 
   @override
   List<Object?> get props => [conversationId];

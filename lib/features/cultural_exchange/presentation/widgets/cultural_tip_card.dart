@@ -4,16 +4,15 @@ import '../../domain/entities/cultural_tip.dart';
 
 /// Card widget for displaying a user-submitted cultural tip
 class CulturalTipCard extends StatelessWidget {
-  final CulturalTip tip;
-  final VoidCallback? onLike;
-  final bool isLiked;
 
   const CulturalTipCard({
-    super.key,
-    required this.tip,
+    required this.tip, super.key,
     this.onLike,
     this.isLiked = false,
   });
+  final CulturalTip tip;
+  final VoidCallback? onLike;
+  final bool isLiked;
 
   @override
   Widget build(BuildContext context) {

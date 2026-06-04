@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
-import '../constants/app_colors.dart';
+
 import '../../generated/app_localizations.dart';
+import '../constants/app_colors.dart';
 
 /// A graceful error dialog for connection and authentication errors
 /// Shows a beautiful modal with icon, message, and retry option
 class ConnectionErrorDialog extends StatefulWidget {
+
+  const ConnectionErrorDialog({
+    required this.title, required this.message, super.key,
+    this.icon = Icons.wifi_off,
+    this.iconColor = AppColors.errorRed,
+    this.onRetry,
+    this.onDismiss,
+    this.showRetryButton = true,
+  });
   final String title;
   final String message;
   final IconData icon;
@@ -12,17 +22,6 @@ class ConnectionErrorDialog extends StatefulWidget {
   final VoidCallback? onRetry;
   final VoidCallback? onDismiss;
   final bool showRetryButton;
-
-  const ConnectionErrorDialog({
-    super.key,
-    required this.title,
-    required this.message,
-    this.icon = Icons.wifi_off,
-    this.iconColor = AppColors.errorRed,
-    this.onRetry,
-    this.onDismiss,
-    this.showRetryButton = true,
-  });
 
   /// Show a network/connection error dialog
   static Future<void> showConnectionError(

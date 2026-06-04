@@ -1,81 +1,81 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter/foundation.dart' show kDebugMode, kIsWeb;
-import 'package:firebase_core/firebase_core.dart';
-import 'core/utils/admin_data_utils.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_performance/firebase_performance.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kDebugMode, kIsWeb;
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
-import 'firebase_options.dart';
+import 'package:get_it/get_it.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'core/config/app_config.dart';
-import 'core/theme/app_theme.dart';
+import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
-import 'core/providers/language_provider.dart';
 import 'core/di/injection_container.dart' as di;
-import 'core/utils/seed_data.dart';
-import 'core/services/feature_flags_service.dart';
+import 'core/providers/language_provider.dart';
+import 'core/services/access_control_service.dart';
+import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
+import 'core/services/feature_flags_service.dart';
+import 'core/services/push_notification_service.dart';
 import 'core/services/version_check_service.dart';
+import 'core/theme/app_theme.dart';
+import 'core/utils/admin_data_utils.dart';
+import 'core/utils/seed_data.dart';
 import 'core/widgets/update_dialog.dart';
+import 'features/admin/presentation/screens/admin_2fa_screen.dart';
+import 'features/admin/presentation/screens/coin_management_screen.dart';
+import 'features/admin/presentation/screens/early_access_admin_screen.dart';
+import 'features/admin/presentation/screens/gamification_management_screen.dart';
+import 'features/admin/presentation/screens/pre_sale_admin_screen.dart';
+import 'features/admin/presentation/screens/reports_admin_screen.dart';
+import 'features/admin/presentation/screens/support_tickets_screen.dart';
+import 'features/admin/presentation/screens/tier_management_screen.dart';
+import 'features/admin/presentation/screens/verification_admin_screen.dart';
 import 'features/authentication/presentation/bloc/auth_bloc.dart';
 import 'features/authentication/presentation/bloc/auth_event.dart';
 import 'features/authentication/presentation/bloc/auth_state.dart';
-import 'features/authentication/presentation/screens/login_screen.dart';
-import 'features/authentication/presentation/screens/waiting_screen.dart';
-import 'core/services/access_control_service.dart';
-import 'features/subscription/domain/entities/subscription.dart';
-import 'features/authentication/presentation/screens/register_screen.dart';
 import 'features/authentication/presentation/screens/forgot_password_screen.dart';
-import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
-import 'features/main/presentation/screens/main_navigation_screen.dart';
-import 'features/splash/presentation/screens/post_login_splash_screen.dart';
-import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
-import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
-import 'features/safety_academy/presentation/screens/safety_academy_screen.dart';
-import 'features/events/presentation/screens/events_screen.dart';
-import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
-import 'features/video_profiles/presentation/screens/video_discovery_screen.dart';
-import 'features/explore_map/presentation/screens/explore_map_screen.dart';
-import 'features/spots/presentation/screens/spots_screen.dart';
-import 'features/spots/presentation/screens/spot_detail_screen.dart';
-import 'features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
-import 'features/safety_academy/presentation/bloc/safety_academy_bloc.dart';
-import 'features/events/presentation/bloc/events_bloc.dart';
-import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
-import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
-import 'features/spots/presentation/bloc/spots_bloc.dart';
+import 'features/authentication/presentation/screens/login_screen.dart';
+import 'features/authentication/presentation/screens/register_screen.dart';
+import 'features/authentication/presentation/screens/waiting_screen.dart';
+import 'features/chat/presentation/screens/support_chat_screen.dart';
+import 'features/chat/presentation/screens/support_tickets_list_screen.dart';
 import 'features/communities/presentation/bloc/communities_bloc.dart';
 import 'features/communities/presentation/screens/communities_screen.dart';
-import 'features/admin/presentation/screens/early_access_admin_screen.dart';
-import 'features/admin/presentation/screens/pre_sale_admin_screen.dart';
-import 'features/admin/presentation/screens/support_tickets_screen.dart';
-import 'features/admin/presentation/screens/verification_admin_screen.dart';
-import 'features/admin/presentation/screens/reports_admin_screen.dart';
-import 'features/admin/presentation/screens/tier_management_screen.dart';
-import 'features/admin/presentation/screens/coin_management_screen.dart';
-import 'features/coins/presentation/bloc/coin_bloc.dart';
-import 'features/admin/presentation/screens/gamification_management_screen.dart';
-import 'features/chat/presentation/screens/support_tickets_list_screen.dart';
-import 'features/chat/presentation/screens/support_chat_screen.dart';
-import 'features/notifications/domain/repositories/notification_repository.dart';
-import 'core/services/push_notification_service.dart';
-import 'core/constants/app_colors.dart';
-import 'core/services/app_sound_service.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'features/profile/presentation/screens/reverification_screen.dart';
-import 'features/admin/presentation/screens/admin_2fa_screen.dart';
-import 'package:get_it/get_it.dart';
+import 'features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
+import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
+import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
 import 'features/discovery/data/datasources/discovery_remote_datasource.dart';
+import 'features/events/presentation/bloc/events_bloc.dart';
+import 'features/events/presentation/screens/events_screen.dart';
+import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
+import 'features/explore_map/presentation/screens/explore_map_screen.dart';
+import 'features/main/presentation/screens/main_navigation_screen.dart';
+import 'features/notifications/domain/repositories/notification_repository.dart';
+import 'features/profile/presentation/screens/onboarding_screen.dart' as profile;
+import 'features/profile/presentation/screens/reverification_screen.dart';
+import 'features/safety_academy/presentation/screens/safety_academy_screen.dart';
+import 'features/splash/presentation/screens/post_login_splash_screen.dart';
+import 'features/spots/presentation/bloc/spots_bloc.dart';
+import 'features/spots/presentation/screens/spot_detail_screen.dart';
+import 'features/spots/presentation/screens/spots_screen.dart';
+import 'features/subscription/domain/entities/subscription.dart';
+import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
+import 'features/video_profiles/presentation/screens/video_discovery_screen.dart';
+import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
+import 'firebase_options.dart';
+import 'generated/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -120,7 +120,7 @@ void main() async {
 
     // Get the emulator host
     // Use 10.0.2.2 for Android Emulator, 127.0.0.1 for iOS Simulator/Web
-    final String emulatorHost = AppConfig.emulatorHost;
+    const emulatorHost = AppConfig.emulatorHost;
 
     try {
       // Connect to Auth Emulator
@@ -239,9 +239,9 @@ void main() async {
 }
 
 class GreenGoChatApp extends StatelessWidget {
-  final String? savedLanguage;
 
   const GreenGoChatApp({super.key, this.savedLanguage});
+  final String? savedLanguage;
 
   @override
   Widget build(BuildContext context) {
@@ -764,7 +764,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
       CacheService.instance.clearAll();
     } catch (_) {}
 
-    context.read<AuthBloc>().add(AuthSignOutRequested());
+    context.read<AuthBloc>().add(const AuthSignOutRequested());
     setState(() {
       _accessData = null;
       _needsOnboarding = false;
@@ -789,7 +789,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
-  void _handleReverify() async {
+  Future<void> _handleReverify() async {
     final userId = FirebaseAuth.instance.currentUser?.uid;
     if (userId == null) return;
 
@@ -806,7 +806,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
-  void _handleContactSupport() async {
+  Future<void> _handleContactSupport() async {
     final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
     final uri = Uri(
       scheme: 'mailto',
@@ -823,7 +823,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
     }
   }
 
-  void _handleEnableNotifications() async {
+  Future<void> _handleEnableNotifications() async {
     final notificationRepo = di.sl<NotificationRepository>();
 
     // 1. Request OS notification permission (shows system dialog)
@@ -851,8 +851,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
     // 3. Set Firestore flag + refresh access data so button disappears
     if (!mounted) return;
     context.read<AuthBloc>()
-      ..add(AuthEnableNotificationsRequested())
-      ..add(AuthCheckAccessStatusRequested());
+      ..add(const AuthEnableNotificationsRequested())
+      ..add(const AuthCheckAccessStatusRequested());
   }
 
   /// Show a one-time styled notification permission dialog for approved users
@@ -1017,7 +1017,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
           }
           // Rejected users — show review screen with resubmission request
           if (state.approvalStatus == 'rejected') {
-            final waitingApprovalStatus = ApprovalStatus.rejected;
+            const waitingApprovalStatus = ApprovalStatus.rejected;
             return WaitingScreen(
               accessData: UserAccessData(
                 userId: state.user.uid,
@@ -1166,8 +1166,8 @@ class _SplashScreenState extends State<SplashScreen> {
 }
 
 class _ComingSoonScreen extends StatelessWidget {
-  final String title;
   const _ComingSoonScreen({required this.title});
+  final String title;
 
   @override
   Widget build(BuildContext context) {

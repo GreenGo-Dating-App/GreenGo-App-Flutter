@@ -5,13 +5,14 @@
 /// This downloads word frequency data from OpenSubtitles GitHub repo,
 /// filters to words with 3+ letters, randomly samples 100k per language,
 /// and batch-writes to Firestore collections.
+library;
 
 import 'dart:math';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-import '../lib/firebase_options.dart';
+import 'package:greengo_chat/firebase_options.dart';
+import 'package:http/http.dart' as http;
 
 const String baseUrl =
     'https://raw.githubusercontent.com/orgtre/top-open-subtitles-sentences/main/bld';
@@ -75,7 +76,7 @@ Future<List<CsvEntry>> downloadAndParse(String url) async {
   final lines = response.body.split('\n');
   final entries = <CsvEntry>[];
 
-  for (int i = 1; i < lines.length; i++) {
+  for (var i = 1; i < lines.length; i++) {
     final line = lines[i].trim();
     if (line.isEmpty) continue;
 
@@ -99,7 +100,7 @@ List<CsvEntry> randomSample(List<CsvEntry> source, int count) {
   if (source.length <= count) return List.from(source);
 
   final list = List<CsvEntry>.from(source);
-  for (int i = 0; i < count; i++) {
+  for (var i = 0; i < count; i++) {
     final j = i + random.nextInt(list.length - i);
     final temp = list[i];
     list[i] = list[j];
@@ -120,11 +121,11 @@ Future<void> batchWriteEntries(
   List<CsvEntry> entries,
 ) async {
   final total = entries.length;
-  int written = 0;
-  WriteBatch batch = firestore.batch();
-  int batchCount = 0;
+  var written = 0;
+  var batch = firestore.batch();
+  var batchCount = 0;
 
-  for (int i = 0; i < entries.length; i++) {
+  for (var i = 0; i < entries.length; i++) {
     final entry = entries[i];
     final rank = i + 1;
     final score = computeFrequencyScore(rank, total);
@@ -156,7 +157,7 @@ Future<void> batchWriteEntries(
 }
 
 class CsvEntry {
+  const CsvEntry({required this.text, required this.count});
   final String text;
   final int count;
-  const CsvEntry({required this.text, required this.count});
 }

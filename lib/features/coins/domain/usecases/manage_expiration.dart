@@ -6,26 +6,26 @@ import '../repositories/coin_repository.dart';
 /// Process Expired Coins Use Case
 /// Point 164: Handle coin expiration after 365 days
 class ProcessExpiredCoins {
-  final CoinRepository repository;
 
   ProcessExpiredCoins(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, void>> call(String userId) async {
-    return await repository.processExpiredCoins(userId);
+    return repository.processExpiredCoins(userId);
   }
 }
 
 /// Get Expiring Coins Use Case
 class GetExpiringCoins {
-  final CoinRepository repository;
 
   GetExpiringCoins(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, List<CoinBatch>>> call({
     required String userId,
     int days = 30,
   }) async {
-    return await repository.getExpiringCoins(
+    return repository.getExpiringCoins(
       userId: userId,
       days: days,
     );

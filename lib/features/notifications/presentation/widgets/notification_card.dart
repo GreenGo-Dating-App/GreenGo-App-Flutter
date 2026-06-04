@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification.dart';
 
@@ -8,16 +7,15 @@ import '../../domain/entities/notification.dart';
 ///
 /// Displays a single notification
 class NotificationCard extends StatelessWidget {
-  final NotificationEntity notification;
-  final VoidCallback? onTap;
-  final VoidCallback? onDismiss;
 
   const NotificationCard({
-    super.key,
-    required this.notification,
+    required this.notification, super.key,
     this.onTap,
     this.onDismiss,
   });
+  final NotificationEntity notification;
+  final VoidCallback? onTap;
+  final VoidCallback? onDismiss;
 
   @override
   Widget build(BuildContext context) {

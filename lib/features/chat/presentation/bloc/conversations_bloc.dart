@@ -1,7 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../domain/repositories/chat_repository.dart';
-import '../../domain/usecases/get_conversations.dart';
 import '../../domain/usecases/delete_conversation.dart';
+import '../../domain/usecases/get_conversations.dart';
 import 'conversations_event.dart';
 import 'conversations_state.dart';
 
@@ -9,12 +10,6 @@ import 'conversations_state.dart';
 ///
 /// Manages list of user's conversations
 class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
-  final GetConversations getConversations;
-  final DeleteConversationForMe deleteConversationForMe;
-  final DeleteConversationForBoth deleteConversationForBoth;
-  final ChatRepository chatRepository;
-
-  String? _userId;
 
   ConversationsBloc({
     required this.getConversations,
@@ -30,6 +25,12 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     on<ConversationAcceptSuperLikeRequested>(_onAcceptSuperLike);
     on<ConversationRejectSuperLikeRequested>(_onRejectSuperLike);
   }
+  final GetConversations getConversations;
+  final DeleteConversationForMe deleteConversationForMe;
+  final DeleteConversationForBoth deleteConversationForBoth;
+  final ChatRepository chatRepository;
+
+  String? _userId;
 
   Future<void> _onLoadRequested(
     ConversationsLoadRequested event,
@@ -142,8 +143,4 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     }
   }
 
-  @override
-  Future<void> close() {
-    return super.close();
-  }
 }

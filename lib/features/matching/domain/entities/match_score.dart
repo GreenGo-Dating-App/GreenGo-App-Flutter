@@ -3,11 +3,6 @@
 /// Represents the compatibility score between two users.
 /// Includes overall score and breakdown by different factors.
 class MatchScore {
-  final String userId1;
-  final String userId2;
-  final double overallScore; // 0-100%
-  final ScoreBreakdown breakdown;
-  final DateTime calculatedAt;
 
   const MatchScore({
     required this.userId1,
@@ -16,6 +11,11 @@ class MatchScore {
     required this.breakdown,
     required this.calculatedAt,
   });
+  final String userId1;
+  final String userId2;
+  final double overallScore; // 0-100%
+  final ScoreBreakdown breakdown;
+  final DateTime calculatedAt;
 
   /// Check if this is a high-quality match (>70%)
   bool get isHighQualityMatch => overallScore >= 70.0;
@@ -37,24 +37,20 @@ class MatchScore {
 }
 
 /// Detailed breakdown of match score components
-class ScoreBreakdown {
-  final double locationScore; // 0-100
-  final double ageCompatibilityScore; // 0-100
-  final double interestOverlapScore; // 0-100
-  final double languageScore; // 0-100
-  final Map<String, double> additionalScores; // Extensible
+class ScoreBreakdown { // Extensible
 
   const ScoreBreakdown({
     required this.locationScore,
     required this.ageCompatibilityScore,
     required this.interestOverlapScore,
     this.languageScore = 0.0,
-    // Keep old params for backward compat but ignore them
-    double personalityCompatibilityScore = 0.0,
-    double activityPatternScore = 0.0,
-    double collaborativeFilteringScore = 0.0,
     this.additionalScores = const {},
   });
+  final double locationScore; // 0-100
+  final double ageCompatibilityScore; // 0-100
+  final double interestOverlapScore; // 0-100
+  final double languageScore; // 0-100
+  final Map<String, double> additionalScores;
 
   /// Get the top 3 compatibility factors
   List<CompatibilityFactor> getTopFactors() {
@@ -87,10 +83,10 @@ class ScoreBreakdown {
 
 /// Individual compatibility factor
 class CompatibilityFactor {
-  final String name;
-  final double score;
 
   const CompatibilityFactor(this.name, this.score);
+  final String name;
+  final double score;
 
   String get scoreText => '${score.toStringAsFixed(0)}%';
 }

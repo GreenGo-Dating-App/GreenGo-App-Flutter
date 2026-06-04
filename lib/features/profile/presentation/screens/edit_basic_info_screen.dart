@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../../core/utils/safe_navigation.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 class EditBasicInfoScreen extends StatefulWidget {
-  final Profile profile;
 
   const EditBasicInfoScreen({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
   });
+  final Profile profile;
 
   @override
   State<EditBasicInfoScreen> createState() => _EditBasicInfoScreenState();
@@ -302,7 +302,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                   ),
                 ),
               );
-            }).toList(),
+            }),
 
             const SizedBox(height: 24),
 
@@ -374,7 +374,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                   ),
                 ),
               );
-            }).toList(),
+            }),
 
             const SizedBox(height: 24),
 

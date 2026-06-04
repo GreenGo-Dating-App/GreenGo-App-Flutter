@@ -5,9 +5,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Initiate Call Use Case
 class InitiateCall {
-  final VideoCallingRepository repository;
 
   InitiateCall(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, VideoCall>> call(InitiateCallParams params) {
     return repository.initiateCall(
@@ -20,13 +20,13 @@ class InitiateCall {
 
 /// Parameters for InitiateCall use case
 class InitiateCallParams {
-  final String callerId;
-  final String receiverId;
-  final VideoCallType type;
 
   InitiateCallParams({
     required this.callerId,
     required this.receiverId,
     this.type = VideoCallType.oneOnOne,
   });
+  final String callerId;
+  final String receiverId;
+  final VideoCallType type;
 }

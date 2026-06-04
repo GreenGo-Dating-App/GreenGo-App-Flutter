@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
-import '../../../profile/domain/entities/profile.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
 import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
@@ -14,12 +14,11 @@ import '../widgets/notification_card.dart';
 ///
 /// Displays all user notifications with real-time updates
 class NotificationsScreen extends StatelessWidget {
-  final String userId;
 
   const NotificationsScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   Widget build(BuildContext context) {

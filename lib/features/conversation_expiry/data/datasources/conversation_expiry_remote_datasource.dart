@@ -1,6 +1,6 @@
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../domain/entities/conversation_expiry.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+
 import '../models/conversation_expiry_model.dart';
 
 /// Remote data source for conversation expiry
@@ -36,13 +36,13 @@ abstract class ConversationExpiryRemoteDataSource {
 /// Implementation of conversation expiry remote data source
 class ConversationExpiryRemoteDataSourceImpl
     implements ConversationExpiryRemoteDataSource {
-  final FirebaseFunctions functions;
-  final FirebaseFirestore firestore;
 
   ConversationExpiryRemoteDataSourceImpl({
     required this.functions,
     required this.firestore,
   });
+  final FirebaseFunctions functions;
+  final FirebaseFirestore firestore;
 
   @override
   Future<ConversationExpiryModel?> getExpiry(String conversationId) async {
@@ -106,7 +106,7 @@ class ConversationExpiryRemoteDataSourceImpl
         .doc(conversationId)
         .snapshots()
         .where((doc) => doc.exists)
-        .map((doc) => ConversationExpiryModel.fromFirestore(doc));
+        .map(ConversationExpiryModel.fromFirestore);
   }
 
   @override

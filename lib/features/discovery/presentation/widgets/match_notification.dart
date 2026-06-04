@@ -1,29 +1,29 @@
 import 'dart:math' as math;
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Amazing Match Screen with Dynamic Flag Effects
 ///
 /// Shows both user profile pictures with flag confetti, particles, and animations
 class MatchNotification extends StatefulWidget {
+
+  const MatchNotification({
+    required this.currentUserProfile, required this.matchedProfile, super.key,
+    this.onKeepSwiping,
+    this.onSendMessage,
+    this.onViewProfile,
+  });
   final Profile currentUserProfile;
   final Profile matchedProfile;
   final VoidCallback? onKeepSwiping;
   final VoidCallback? onSendMessage;
   final VoidCallback? onViewProfile;
-
-  const MatchNotification({
-    super.key,
-    required this.currentUserProfile,
-    required this.matchedProfile,
-    this.onKeepSwiping,
-    this.onSendMessage,
-    this.onViewProfile,
-  });
 
   @override
   State<MatchNotification> createState() => _MatchNotificationState();
@@ -158,7 +158,7 @@ class _MatchNotificationState extends State<MatchNotification>
   }
 
   void _generateFlags() {
-    for (int i = 0; i < 20; i++) {
+    for (var i = 0; i < 20; i++) {
       _flags.add(_FlagParticle(
         x: _random.nextDouble(),
         y: _random.nextDouble(),
@@ -172,7 +172,7 @@ class _MatchNotificationState extends State<MatchNotification>
   }
 
   void _generateSparkles() {
-    for (int i = 0; i < 30; i++) {
+    for (var i = 0; i < 30; i++) {
       _sparkles.add(_SparkleParticle(
         x: _random.nextDouble(),
         y: _random.nextDouble(),
@@ -515,13 +515,6 @@ class _MatchNotificationState extends State<MatchNotification>
 }
 
 class _FlagParticle {
-  final double x;
-  final double y;
-  final double size;
-  final double speed;
-  final double delay;
-  final String flag;
-  final double rotation;
 
   _FlagParticle({
     required this.x,
@@ -532,14 +525,16 @@ class _FlagParticle {
     required this.flag,
     required this.rotation,
   });
-}
-
-class _SparkleParticle {
   final double x;
   final double y;
   final double size;
   final double speed;
   final double delay;
+  final String flag;
+  final double rotation;
+}
+
+class _SparkleParticle {
 
   _SparkleParticle({
     required this.x,
@@ -548,13 +543,18 @@ class _SparkleParticle {
     required this.speed,
     required this.delay,
   });
+  final double x;
+  final double y;
+  final double size;
+  final double speed;
+  final double delay;
 }
 
 class _FlagsPainter extends CustomPainter {
-  final List<_FlagParticle> flags;
-  final double progress;
 
   _FlagsPainter({required this.flags, required this.progress});
+  final List<_FlagParticle> flags;
+  final double progress;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -610,10 +610,10 @@ class _FlagsPainter extends CustomPainter {
 }
 
 class _SparklesPainter extends CustomPainter {
-  final List<_SparkleParticle> sparkles;
-  final double progress;
 
   _SparklesPainter({required this.sparkles, required this.progress});
+  final List<_SparkleParticle> sparkles;
+  final double progress;
 
   @override
   void paint(Canvas canvas, Size size) {

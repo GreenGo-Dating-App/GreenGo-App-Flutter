@@ -5,9 +5,9 @@ import '../repositories/date_scheduler_repository.dart';
 
 /// Create a scheduled date
 class CreateScheduledDate {
-  final DateSchedulerRepository repository;
 
   CreateScheduledDate(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, ScheduledDate>> call({
     required String matchId,
@@ -40,9 +40,9 @@ class CreateScheduledDate {
 
 /// Get a scheduled date
 class GetScheduledDate {
-  final DateSchedulerRepository repository;
 
   GetScheduledDate(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, ScheduledDate>> call(String dateId) {
     return repository.getDate(dateId);
@@ -51,9 +51,9 @@ class GetScheduledDate {
 
 /// Get user dates
 class GetUserDates {
-  final DateSchedulerRepository repository;
 
   GetUserDates(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, List<ScheduledDate>>> call(String userId) {
     return repository.getUserDates(userId);
@@ -62,9 +62,9 @@ class GetUserDates {
 
 /// Get upcoming dates
 class GetUpcomingDates {
-  final DateSchedulerRepository repository;
 
   GetUpcomingDates(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, List<ScheduledDate>>> call(String userId) {
     return repository.getUpcomingDates(userId);
@@ -73,9 +73,9 @@ class GetUpcomingDates {
 
 /// Confirm a date
 class ConfirmDate {
-  final DateSchedulerRepository repository;
 
   ConfirmDate(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, ScheduledDate>> call(String dateId) {
     return repository.confirmDate(dateId);
@@ -84,9 +84,9 @@ class ConfirmDate {
 
 /// Cancel a date
 class CancelDate {
-  final DateSchedulerRepository repository;
 
   CancelDate(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, ScheduledDate>> call({
     required String dateId,
@@ -103,9 +103,9 @@ class CancelDate {
 
 /// Reschedule a date
 class RescheduleDate {
-  final DateSchedulerRepository repository;
 
   RescheduleDate(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, ScheduledDate>> call({
     required String dateId,
@@ -120,9 +120,9 @@ class RescheduleDate {
 
 /// Get venue suggestions
 class GetVenueSuggestions {
-  final DateSchedulerRepository repository;
 
   GetVenueSuggestions(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, List<VenueSuggestion>>> call({
     required double lat,
@@ -141,9 +141,9 @@ class GetVenueSuggestions {
 
 /// Stream user dates
 class StreamUserDates {
-  final DateSchedulerRepository repository;
 
   StreamUserDates(this.repository);
+  final DateSchedulerRepository repository;
 
   Stream<Either<Failure, List<ScheduledDate>>> call(String userId) {
     return repository.streamDates(userId);
@@ -152,9 +152,9 @@ class StreamUserDates {
 
 /// Set reminder for a date
 class SetDateReminder {
-  final DateSchedulerRepository repository;
 
   SetDateReminder(this.repository);
+  final DateSchedulerRepository repository;
 
   Future<Either<Failure, DateReminder>> call({
     required String dateId,

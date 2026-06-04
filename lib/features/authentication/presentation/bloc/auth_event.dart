@@ -12,26 +12,26 @@ class AuthCheckRequested extends AuthEvent {
 }
 
 class AuthSignInWithEmailRequested extends AuthEvent {
-  final String email;
-  final String password;
 
   const AuthSignInWithEmailRequested({
     required this.email,
     required this.password,
   });
+  final String email;
+  final String password;
 
   @override
   List<Object> get props => [email, password];
 }
 
 class AuthRegisterWithEmailRequested extends AuthEvent {
-  final String email;
-  final String password;
 
   const AuthRegisterWithEmailRequested({
     required this.email,
     required this.password,
   });
+  final String email;
+  final String password;
 
   @override
   List<Object> get props => [email, password];
@@ -50,22 +50,22 @@ class AuthSignInWithFacebookRequested extends AuthEvent {
 }
 
 class AuthSignInWithPhoneRequested extends AuthEvent {
-  final String phoneNumber;
 
   const AuthSignInWithPhoneRequested(this.phoneNumber);
+  final String phoneNumber;
 
   @override
   List<Object> get props => [phoneNumber];
 }
 
 class AuthVerifyPhoneCodeRequested extends AuthEvent {
-  final String verificationId;
-  final String smsCode;
 
   const AuthVerifyPhoneCodeRequested({
     required this.verificationId,
     required this.smsCode,
   });
+  final String verificationId;
+  final String smsCode;
 
   @override
   List<Object> get props => [verificationId, smsCode];
@@ -76,9 +76,9 @@ class AuthSignOutRequested extends AuthEvent {
 }
 
 class AuthPasswordResetRequested extends AuthEvent {
-  final String email;
 
   const AuthPasswordResetRequested(this.email);
+  final String email;
 
   @override
   List<Object> get props => [email];
@@ -104,9 +104,9 @@ class AuthEnableNotificationsRequested extends AuthEvent {
 
 /// Event fired when the user successfully completes selfie verification on login.
 class AuthSelfieVerificationCompleted extends AuthEvent {
-  final String userId;
 
   const AuthSelfieVerificationCompleted({required this.userId});
+  final String userId;
 
   @override
   List<Object> get props => [userId];

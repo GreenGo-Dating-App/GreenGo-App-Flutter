@@ -28,16 +28,15 @@ const _languageToCountry = <String, String>{
 
 /// Displays flag emojis for the languages a user speaks.
 class LanguageFlagBadge extends StatelessWidget {
-  final List<String> languages;
-  final double fontSize;
-  final int maxFlags;
 
   const LanguageFlagBadge({
-    super.key,
-    required this.languages,
+    required this.languages, super.key,
     this.fontSize = 14,
     this.maxFlags = 3,
   });
+  final List<String> languages;
+  final double fontSize;
+  final int maxFlags;
 
   @override
   Widget build(BuildContext context) {

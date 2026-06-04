@@ -33,6 +33,12 @@ abstract class VirtualGiftRemoteDataSource {
 
 /// Implementation
 class VirtualGiftRemoteDataSourceImpl implements VirtualGiftRemoteDataSource {
+
+  VirtualGiftRemoteDataSourceImpl({
+    FirebaseFirestore? firestore,
+    FirebaseFunctions? functions,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _functions = functions ?? FirebaseFunctions.instance;
   final FirebaseFirestore _firestore;
   final FirebaseFunctions _functions;
 
@@ -40,12 +46,6 @@ class VirtualGiftRemoteDataSourceImpl implements VirtualGiftRemoteDataSource {
   List<VirtualGiftModel>? _catalogCache;
   DateTime? _catalogCacheTime;
   static const _cacheDuration = Duration(minutes: 30);
-
-  VirtualGiftRemoteDataSourceImpl({
-    FirebaseFirestore? firestore,
-    FirebaseFunctions? functions,
-  })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _functions = functions ?? FirebaseFunctions.instance;
 
   @override
   Future<List<VirtualGiftModel>> getGiftCatalog() async {
@@ -79,7 +79,7 @@ class VirtualGiftRemoteDataSourceImpl implements VirtualGiftRemoteDataSource {
         .get();
 
     return snapshot.docs
-        .map((doc) => VirtualGiftModel.fromFirestore(doc))
+        .map(VirtualGiftModel.fromFirestore)
         .toList();
   }
 

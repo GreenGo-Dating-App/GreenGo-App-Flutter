@@ -1,25 +1,25 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
 /// User takes a new selfie, it uploads to Storage, updates the profile doc
 /// with the new URL and sets verificationStatus back to 'pending'.
 class ReverificationScreen extends StatefulWidget {
-  final String userId;
-  final String? rejectionReason;
 
   const ReverificationScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.rejectionReason,
   });
+  final String userId;
+  final String? rejectionReason;
 
   @override
   State<ReverificationScreen> createState() => _ReverificationScreenState();
@@ -33,7 +33,7 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
 
   Future<void> _takePhoto() async {
     try {
-      final XFile? image = await _picker.pickImage(
+      final image = await _picker.pickImage(
         source: ImageSource.camera,
         preferredCameraDevice: CameraDevice.front,
         maxWidth: 1920,
@@ -375,7 +375,7 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
               // Info text
               Text(
                 l10n.reverificationInfoText,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
                 ),

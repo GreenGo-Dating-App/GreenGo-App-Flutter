@@ -6,6 +6,13 @@ import 'package:flutter/foundation.dart';
 /// A user is considered online only if they performed an action in the last 5 minutes.
 /// Writes `isOnline` and `lastSeen` fields to the user's profile document.
 class PresenceService {
+
+  PresenceService({
+    required this.userId,
+    FirebaseFirestore? firestore,
+  }) : _firestore = firestore ?? FirebaseFirestore.instance {
+    _instance = this;
+  }
   final FirebaseFirestore _firestore;
   final String userId;
 
@@ -24,13 +31,6 @@ class PresenceService {
   DateTime _lastActivity = DateTime.now();
   bool _isCurrentlyOnline = false;
   bool _isAppInForeground = true;
-
-  PresenceService({
-    required this.userId,
-    FirebaseFirestore? firestore,
-  }) : _firestore = firestore ?? FirebaseFirestore.instance {
-    _instance = this;
-  }
 
   /// Record user activity — resets the inactivity timer.
   /// Call this on taps, swipes, messages, navigation changes, etc.

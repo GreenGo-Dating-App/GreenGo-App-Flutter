@@ -1,30 +1,30 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Support Chat Screen
 ///
 /// Dedicated screen for support conversations
 /// Uses 'support_chats' collection to sync with admin panel
 class SupportChatScreen extends StatefulWidget {
+
+  const SupportChatScreen({
+    required this.conversationId, required this.currentUserId, super.key,
+    this.isAdmin = false,
+  });
   final String conversationId;
   final String currentUserId;
   final bool isAdmin;
-
-  const SupportChatScreen({
-    super.key,
-    required this.conversationId,
-    required this.currentUserId,
-    this.isAdmin = false,
-  });
 
   @override
   State<SupportChatScreen> createState() => _SupportChatScreenState();
@@ -145,7 +145,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         // Check for ticket start message in newly loaded messages
         if (_ticketStartMessageId == null) {
           for (final doc in snapshot.docs) {
-            final data = doc.data() as Map<String, dynamic>;
+            final data = doc.data();
             if (data['isTicketStart'] == true) {
               _ticketStartMessageId = doc.id;
               break;
@@ -214,7 +214,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         final data = doc.data()!;
         final agentId = data['assignedTo'] as String?;
 
-        String? agentName = data['assignedToName'] as String?;
+        var agentName = data['assignedToName'] as String?;
         if (agentName == null && agentId != null) {
           final agentProfile = await _firestore
               .collection('admins')
@@ -252,7 +252,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       final now = FieldValue.serverTimestamp();
 
       // Upload image if selected and not already uploaded
-      String? finalImageUrl = imageUrl;
+      var finalImageUrl = imageUrl;
       if (_selectedImage != null && imageUrl == null) {
         finalImageUrl = await _uploadImage(_selectedImage!);
         if (finalImageUrl == null) {
@@ -261,7 +261,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       }
 
       // Get user profile for sender info with defensive handling
-      Map<String, dynamic> userData = {};
+      var userData = <String, dynamic>{};
       try {
         final userProfile = await _firestore
             .collection('profiles')
@@ -276,8 +276,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       }
 
       // Determine message type
-      final String messageType = finalImageUrl != null ? 'image' : 'text';
-      final String content = text.isNotEmpty ? text : (finalImageUrl != null ? '[Image]' : '');
+      final messageType = finalImageUrl != null ? 'image' : 'text';
+      final content = text.isNotEmpty ? text : (finalImageUrl != null ? '[Image]' : '');
 
       // Create message in support_messages collection (matches admin panel)
       final messageRef = _firestore.collection('support_messages').doc();
@@ -292,8 +292,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         'content': content,
         'messageType': messageType,
         if (finalImageUrl != null) 'imageUrl': finalImageUrl,
-        'readByAdmin': widget.isAdmin ? true : false,
-        'readByUser': widget.isAdmin ? false : true,
+        'readByAdmin': widget.isAdmin,
+        'readByUser': !widget.isAdmin,
         'createdAt': now,
       });
 
@@ -305,7 +305,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       final conversationDoc = await conversationRef.get();
       final currentMessageCount = conversationDoc.data()?['messageCount'] ?? 0;
 
-      final String lastMessagePreview = finalImageUrl != null
+      final lastMessagePreview = finalImageUrl != null
           ? '📷 ${text.isNotEmpty ? text : 'Image'}'
           : (text.length > 100 ? text.substring(0, 100) : text);
 
@@ -436,7 +436,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
   Future<void> _pickImage(ImageSource source) async {
     try {
-      final XFile? pickedFile = await _imagePicker.pickImage(
+      final pickedFile = await _imagePicker.pickImage(
         source: source,
         maxWidth: 1920,
         maxHeight: 1920,
@@ -473,16 +473,16 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
         _isUploadingImage = true;
       });
 
-      final String fileName = '${const Uuid().v4()}.jpg';
-      final Reference ref = _storage.ref().child('support_attachments/${widget.conversationId}/$fileName');
+      final fileName = '${const Uuid().v4()}.jpg';
+      final ref = _storage.ref().child('support_attachments/${widget.conversationId}/$fileName');
 
-      final UploadTask uploadTask = ref.putFile(
+      final uploadTask = ref.putFile(
         imageFile,
         SettableMetadata(contentType: 'image/jpeg'),
       );
 
-      final TaskSnapshot snapshot = await uploadTask;
-      final String downloadUrl = await snapshot.ref.getDownloadURL();
+      final snapshot = await uploadTask;
+      final downloadUrl = await snapshot.ref.getDownloadURL();
 
       return downloadUrl;
     } catch (e) {
@@ -610,7 +610,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.error_outline,
                           size: 48,
                           color: AppColors.errorRed,
@@ -1086,7 +1086,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             ),
             const SizedBox(height: 12),
             TextButton(
-              onPressed: () => _reopenTicket(),
+              onPressed: _reopenTicket,
               child: Text(
                 AppLocalizations.of(context)!.chatSupportReopenTicket,
                 style: const TextStyle(
@@ -1170,7 +1170,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                 children: [
                   // Attachment button
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: AppColors.backgroundDark,
                       shape: BoxShape.circle,
                     ),

@@ -9,11 +9,11 @@ import '../datasources/safety_academy_remote_datasource.dart';
 /// Delegates all operations to the remote datasource and handles
 /// XP reward calculation for lesson completion.
 class SafetyAcademyRepositoryImpl implements SafetyAcademyRepository {
-  final SafetyAcademyRemoteDatasource _remoteDatasource;
 
   SafetyAcademyRepositoryImpl({
     required SafetyAcademyRemoteDatasource remoteDatasource,
   }) : _remoteDatasource = remoteDatasource;
+  final SafetyAcademyRemoteDatasource _remoteDatasource;
 
   @override
   Future<List<SafetyModule>> getModules() async {

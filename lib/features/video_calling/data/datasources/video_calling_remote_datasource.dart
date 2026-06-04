@@ -123,9 +123,9 @@ abstract class VideoCallingRemoteDataSource {
 
 /// Implementation of VideoCallingRemoteDataSource
 class VideoCallingRemoteDataSourceImpl implements VideoCallingRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   VideoCallingRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   // Collection references
   CollectionReference get _callsCollection =>
@@ -458,7 +458,7 @@ class VideoCallingRemoteDataSourceImpl implements VideoCallingRemoteDataSource {
     DateTime? before,
   }) async {
     try {
-      Query query = _historyCollection
+      var query = _historyCollection
           .where('userId', isEqualTo: userId)
           .orderBy('timestamp', descending: true)
           .limit(limit);
@@ -470,7 +470,7 @@ class VideoCallingRemoteDataSourceImpl implements VideoCallingRemoteDataSource {
 
       final snapshot = await query.get();
       return snapshot.docs
-          .map((doc) => CallHistoryEntryModel.fromFirestore(doc))
+          .map(CallHistoryEntryModel.fromFirestore)
           .toList();
     } catch (e) {
       throw Exception('Failed to get call history: $e');
@@ -628,10 +628,10 @@ class VideoCallingRemoteDataSourceImpl implements VideoCallingRemoteDataSource {
               isLessThanOrEqualTo: Timestamp.fromDate(periodEnd))
           .get();
 
-      int totalCalls = historyQuery.docs.length;
-      int answeredCalls = 0;
-      int missedCalls = 0;
-      int totalDurationSeconds = 0;
+      final totalCalls = historyQuery.docs.length;
+      var answeredCalls = 0;
+      var missedCalls = 0;
+      var totalDurationSeconds = 0;
 
       for (final doc in historyQuery.docs) {
         final data = doc.data() as Map<String, dynamic>;

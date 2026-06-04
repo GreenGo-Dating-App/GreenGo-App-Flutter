@@ -8,14 +8,14 @@ import 'package:flutter/foundation.dart';
 /// Uses an in-memory cache with a 5-minute TTL to avoid redundant
 /// Firestore reads within the same session.
 class BlockedUsersService {
+
+  BlockedUsersService({required this.firestore});
   final FirebaseFirestore firestore;
 
   static const _cacheTtl = Duration(minutes: 5);
   static const _queryLimit = 1000;
 
   final Map<String, _CachedBlockedIds> _cache = {};
-
-  BlockedUsersService({required this.firestore});
 
   /// Returns the set of user IDs that are blocked bidirectionally
   /// (users the given [userId] blocked + users who blocked [userId]).
@@ -26,7 +26,7 @@ class BlockedUsersService {
       return cached.ids;
     }
 
-    final Set<String> blockedIds = {};
+    final blockedIds = <String>{};
 
     // Users I blocked
     final blockedByMe = await firestore
@@ -72,10 +72,10 @@ class BlockedUsersService {
 }
 
 class _CachedBlockedIds {
-  final Set<String> ids;
-  final DateTime fetchedAt;
 
   _CachedBlockedIds(this.ids) : fetchedAt = DateTime.now();
+  final Set<String> ids;
+  final DateTime fetchedAt;
 
   bool get isValid =>
       DateTime.now().difference(fetchedAt) < BlockedUsersService._cacheTtl;

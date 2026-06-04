@@ -1,13 +1,15 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../domain/entities/location.dart' as profile_entity;
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../domain/entities/location.dart' as profile_entity;
 
 /// Full-screen location picker for Traveler mode.
 /// Uses geocoding for forward/reverse address lookup, GPS for current location,
@@ -118,12 +120,12 @@ class _TravelerLocationPickerScreenState
   Future<void> _useCurrentLocation() async {
     setState(() => _isLoadingGps = true);
     try {
-      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      final serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
         throw Exception(AppLocalizations.of(context)?.travelerLocationServicesDisabled ?? 'Location services are disabled');
       }
 
-      LocationPermission permission = await Geolocator.checkPermission();
+      var permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
@@ -318,16 +320,14 @@ class _TravelerLocationPickerScreenState
                       ),
                       child: Row(
                         children: [
-                          _isLoadingGps
-                              ? const SizedBox(
+                          if (_isLoadingGps) const SizedBox(
                                   width: 22,
                                   height: 22,
                                   child: CircularProgressIndicator(
                                     strokeWidth: 2,
                                     color: Color(0xFF1E88E5),
                                   ),
-                                )
-                              : const Icon(Icons.my_location,
+                                ) else const Icon(Icons.my_location,
                                   color: Color(0xFF1E88E5), size: 22),
                           const SizedBox(width: 8),
                           Expanded(
@@ -366,7 +366,7 @@ class _TravelerLocationPickerScreenState
                         const SizedBox(width: 8),
                         Text(
                           AppLocalizations.of(context)?.travelerPickOnMap ?? 'Pick on Map',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xFF1E88E5),
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
@@ -432,7 +432,7 @@ class _TravelerLocationPickerScreenState
                       const SizedBox(width: 8),
                       Text(
                         AppLocalizations.of(context)?.travelerConfirmLocation ?? 'Confirm Location',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
@@ -449,9 +449,9 @@ class _TravelerLocationPickerScreenState
 
 /// Full-screen Google Maps picker
 class _MapPickerScreen extends StatefulWidget {
-  final profile_entity.Location? initialLocation;
 
   const _MapPickerScreen({this.initialLocation});
+  final profile_entity.Location? initialLocation;
 
   @override
   State<_MapPickerScreen> createState() => _MapPickerScreenState();
@@ -492,7 +492,9 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
         permission = await Geolocator.requestPermission();
       }
       if (permission == LocationPermission.denied ||
-          permission == LocationPermission.deniedForever) return;
+          permission == LocationPermission.deniedForever) {
+        return;
+      }
 
       final position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.medium,
@@ -715,12 +717,6 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
 }
 
 class _SearchResult {
-  final double latitude;
-  final double longitude;
-  final String city;
-  final String country;
-  final String region;
-  final String displayAddress;
 
   _SearchResult({
     required this.latitude,
@@ -730,13 +726,19 @@ class _SearchResult {
     required this.region,
     required this.displayAddress,
   });
+  final double latitude;
+  final double longitude;
+  final String city;
+  final String country;
+  final String region;
+  final String displayAddress;
 }
 
 class _SearchResultTile extends StatelessWidget {
-  final _SearchResult result;
-  final VoidCallback onTap;
 
   const _SearchResultTile({required this.result, required this.onTap});
+  final _SearchResult result;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -787,13 +789,13 @@ class _SearchResultTile extends StatelessWidget {
 }
 
 class _SelectedLocationCard extends StatelessWidget {
-  final profile_entity.Location location;
-  final VoidCallback onClear;
 
   const _SelectedLocationCard({
     required this.location,
     required this.onClear,
   });
+  final profile_entity.Location location;
+  final VoidCallback onClear;
 
   @override
   Widget build(BuildContext context) {
@@ -904,7 +906,7 @@ class _SelectedLocationCard extends StatelessWidget {
           Text(
             AppLocalizations.of(context)?.travelerAppearFor24Hours ?? 'You will appear in discovery results for this location for 24 hours.',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
             ),
@@ -944,7 +946,7 @@ class _EmptyState extends StatelessWidget {
             Text(
               AppLocalizations.of(context)?.travelerProfileAppearDescription ?? 'Your profile will appear in that location\'s discovery feed for 24 hours with a Traveler badge.',
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 13,
               ),

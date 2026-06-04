@@ -1,8 +1,10 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -231,7 +233,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                         const SizedBox(width: 12),
                         Text(
                           AppLocalizations.of(context)?.onboardingWritingTips ?? 'Writing tips',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 16,
                             fontWeight: FontWeight.w600,

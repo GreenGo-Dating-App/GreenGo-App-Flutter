@@ -15,9 +15,9 @@ class LoadModules extends SafetyAcademyEvent {
 
 /// Load lessons for a specific module
 class LoadLessons extends SafetyAcademyEvent {
-  final String moduleId;
 
   const LoadLessons(this.moduleId);
+  final String moduleId;
 
   @override
   List<Object?> get props => [moduleId];
@@ -25,9 +25,9 @@ class LoadLessons extends SafetyAcademyEvent {
 
 /// Load the current user's progress
 class LoadProgress extends SafetyAcademyEvent {
-  final String userId;
 
   const LoadProgress(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -35,15 +35,15 @@ class LoadProgress extends SafetyAcademyEvent {
 
 /// Mark a lesson as completed, optionally with a quiz score
 class CompleteLesson extends SafetyAcademyEvent {
-  final String userId;
-  final String lessonId;
-  final int? quizScore;
 
   const CompleteLesson({
     required this.userId,
     required this.lessonId,
     this.quizScore,
   });
+  final String userId;
+  final String lessonId;
+  final int? quizScore;
 
   @override
   List<Object?> get props => [userId, lessonId, quizScore];
@@ -51,13 +51,13 @@ class CompleteLesson extends SafetyAcademyEvent {
 
 /// Mark a module as completed (all lessons finished)
 class CompleteModule extends SafetyAcademyEvent {
-  final String userId;
-  final String moduleId;
 
   const CompleteModule({
     required this.userId,
     required this.moduleId,
   });
+  final String userId;
+  final String moduleId;
 
   @override
   List<Object?> get props => [userId, moduleId];

@@ -4,16 +4,14 @@ import '../constants/app_colors.dart';
 /// Enhancement #14: Super Like Animation
 /// Star animation effect for super likes
 class SuperLikeAnimation extends StatefulWidget {
+
+  const SuperLikeAnimation({
+    required this.child, required this.trigger, super.key,
+    this.onComplete,
+  });
   final Widget child;
   final bool trigger;
   final VoidCallback? onComplete;
-
-  const SuperLikeAnimation({
-    super.key,
-    required this.child,
-    required this.trigger,
-    this.onComplete,
-  });
 
   @override
   State<SuperLikeAnimation> createState() => _SuperLikeAnimationState();
@@ -56,7 +54,7 @@ class _SuperLikeAnimationState extends State<SuperLikeAnimation>
     });
 
     // Generate particles
-    for (int i = 0; i < 12; i++) {
+    for (var i = 0; i < 12; i++) {
       _particles.add(_StarParticle(
         angle: (i * 30) * (3.14159 / 180),
         delay: i * 0.05,
@@ -136,10 +134,6 @@ class _SuperLikeAnimationState extends State<SuperLikeAnimation>
 }
 
 class _StarParticle {
-  final double angle;
-  final double delay;
-  late double dx;
-  late double dy;
 
   _StarParticle({required this.angle, required this.delay}) {
     dx = 1.0 * (angle / 3.14159).abs().clamp(0.1, 1.0) *
@@ -147,13 +141,14 @@ class _StarParticle {
     dy = 1.0 * ((angle - 3.14159 / 2).abs() / 3.14159).clamp(0.1, 1.0) *
         (angle > 3.14159 ? 1 : -1);
   }
+  final double angle;
+  final double delay;
+  late double dx;
+  late double dy;
 }
 
 /// Super like button with animation
 class SuperLikeButton extends StatefulWidget {
-  final VoidCallback? onPressed;
-  final bool isEnabled;
-  final int? remainingCount;
 
   const SuperLikeButton({
     super.key,
@@ -161,6 +156,9 @@ class SuperLikeButton extends StatefulWidget {
     this.isEnabled = true,
     this.remainingCount,
   });
+  final VoidCallback? onPressed;
+  final bool isEnabled;
+  final int? remainingCount;
 
   @override
   State<SuperLikeButton> createState() => _SuperLikeButtonState();

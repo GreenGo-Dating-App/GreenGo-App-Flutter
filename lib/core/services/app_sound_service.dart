@@ -6,9 +6,9 @@ import 'package:flutter/foundation.dart';
 /// Plays short asset-based sound effects. Only sounds whose asset files exist
 /// under `assets/sounds/` will play; any others fail silently (caught).
 class AppSoundService {
-  static final AppSoundService _instance = AppSoundService._();
   factory AppSoundService() => _instance;
   AppSoundService._();
+  static final AppSoundService _instance = AppSoundService._();
 
   final AudioPlayer _player = AudioPlayer(playerId: 'greengo_sfx');
   bool _soundEnabled = true;

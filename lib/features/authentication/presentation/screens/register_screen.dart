@@ -1,22 +1,22 @@
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/utils/validators.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
+import '../../../../core/utils/validators.dart';
 import '../../../../core/widgets/language_selector.dart';
+import '../../../../generated/app_localizations.dart';
+import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../../profile/presentation/screens/onboarding_screen.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
-import '../widgets/auth_text_field.dart';
 import '../widgets/auth_button.dart';
-import '../widgets/password_strength_indicator.dart';
+import '../widgets/auth_text_field.dart';
 import '../widgets/consent_checkboxes.dart';
-import '../../../membership/data/datasources/pending_signup_coupon.dart';
-import '../../../profile/presentation/screens/onboarding_screen.dart';
+import '../widgets/password_strength_indicator.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

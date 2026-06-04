@@ -1,5 +1,6 @@
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+
 import '../../domain/entities/scheduled_date.dart';
 import '../models/scheduled_date_model.dart';
 
@@ -68,13 +69,13 @@ abstract class DateSchedulerRemoteDataSource {
 
 /// Implementation of Date Scheduler remote data source
 class DateSchedulerRemoteDataSourceImpl implements DateSchedulerRemoteDataSource {
-  final FirebaseFunctions functions;
-  final FirebaseFirestore firestore;
 
   DateSchedulerRemoteDataSourceImpl({
     required this.functions,
     required this.firestore,
   });
+  final FirebaseFunctions functions;
+  final FirebaseFirestore firestore;
 
   @override
   Future<ScheduledDateModel> createDate({
@@ -220,7 +221,7 @@ class DateSchedulerRemoteDataSourceImpl implements DateSchedulerRemoteDataSource
         .orderBy('scheduledAt', descending: false)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => ScheduledDateModel.fromFirestore(doc))
+            .map(ScheduledDateModel.fromFirestore)
             .toList());
   }
 

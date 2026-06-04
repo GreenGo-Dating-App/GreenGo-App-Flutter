@@ -1,12 +1,26 @@
-/**
- * User Report Entity
- * Points 211-220: User reporting and blocking system
- */
+/// User Report Entity
+/// Points 211-220: User reporting and blocking system
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// User report (Point 211-214)
 class UserReport extends Equatable {
+
+  const UserReport({
+    required this.reportId,
+    required this.reporterId,
+    required this.reportedUserId,
+    required this.category,
+    required this.description,
+    required this.screenshotUrls,
+    required this.createdAt, required this.status, required this.priority, this.conversationId,
+    this.messageId,
+    this.assignedModeratorId,
+    this.reviewedAt,
+    this.moderatorNotes,
+    this.action,
+  });
   final String reportId;
   final String reporterId;
   final String reportedUserId;
@@ -22,24 +36,6 @@ class UserReport extends Equatable {
   final DateTime? reviewedAt;
   final String? moderatorNotes;
   final ReportAction? action;
-
-  const UserReport({
-    required this.reportId,
-    required this.reporterId,
-    required this.reportedUserId,
-    required this.category,
-    required this.description,
-    required this.screenshotUrls,
-    this.conversationId,
-    this.messageId,
-    required this.createdAt,
-    required this.status,
-    required this.priority,
-    this.assignedModeratorId,
-    this.reviewedAt,
-    this.moderatorNotes,
-    this.action,
-  });
 
   bool get isPending => status == ReportStatus.pending;
   bool get isResolved => status == ReportStatus.resolved;
@@ -109,16 +105,6 @@ enum ReportAction {
 
 /// Report appeal (Point 210)
 class ReportAppeal extends Equatable {
-  final String appealId;
-  final String reportId;
-  final String userId;
-  final String appealReason;
-  final List<String> evidenceUrls;
-  final DateTime createdAt;
-  final AppealStatus status;
-  final String? reviewerNotes;
-  final DateTime? reviewedAt;
-  final AppealDecision? decision;
 
   const ReportAppeal({
     required this.appealId,
@@ -132,6 +118,16 @@ class ReportAppeal extends Equatable {
     this.reviewedAt,
     this.decision,
   });
+  final String appealId;
+  final String reportId;
+  final String userId;
+  final String appealReason;
+  final List<String> evidenceUrls;
+  final DateTime createdAt;
+  final AppealStatus status;
+  final String? reviewerNotes;
+  final DateTime? reviewedAt;
+  final AppealDecision? decision;
 
   @override
   List<Object?> get props => [
@@ -164,6 +160,14 @@ enum AppealDecision {
 
 /// User block (Points 215-220)
 class UserBlock extends Equatable {
+
+  const UserBlock({
+    required this.blockId,
+    required this.blockerId,
+    required this.blockedUserId,
+    required this.type,
+    required this.createdAt, required this.isActive, this.reason,
+  });
   final String blockId;
   final String blockerId;
   final String blockedUserId;
@@ -171,16 +175,6 @@ class UserBlock extends Equatable {
   final String? reason;
   final DateTime createdAt;
   final bool isActive;
-
-  const UserBlock({
-    required this.blockId,
-    required this.blockerId,
-    required this.blockedUserId,
-    required this.type,
-    this.reason,
-    required this.createdAt,
-    required this.isActive,
-  });
 
   @override
   List<Object?> get props => [
@@ -204,15 +198,15 @@ enum BlockType {
 
 /// Block list
 class BlockList extends Equatable {
-  final String userId;
-  final List<UserBlock> blocks;
-  final int totalBlocked;
 
   const BlockList({
     required this.userId,
     required this.blocks,
     required this.totalBlocked,
   });
+  final String userId;
+  final List<UserBlock> blocks;
+  final int totalBlocked;
 
   @override
   List<Object?> get props => [userId, blocks, totalBlocked];
@@ -220,14 +214,6 @@ class BlockList extends Equatable {
 
 /// Warning issued to user (Point 208)
 class UserWarning extends Equatable {
-  final String warningId;
-  final String userId;
-  final WarningReason reason;
-  final String description;
-  final WarningSeverity severity;
-  final DateTime issuedAt;
-  final bool acknowledged;
-  final DateTime? acknowledgedAt;
 
   const UserWarning({
     required this.warningId,
@@ -239,6 +225,14 @@ class UserWarning extends Equatable {
     required this.acknowledged,
     this.acknowledgedAt,
   });
+  final String warningId;
+  final String userId;
+  final WarningReason reason;
+  final String description;
+  final WarningSeverity severity;
+  final DateTime issuedAt;
+  final bool acknowledged;
+  final DateTime? acknowledgedAt;
 
   @override
   List<Object?> get props => [
@@ -273,6 +267,14 @@ enum WarningSeverity {
 
 /// Moderation queue entry (Point 209)
 class ModerationQueueEntry extends Equatable {
+
+  const ModerationQueueEntry({
+    required this.queueId,
+    required this.itemType,
+    required this.itemId,
+    required this.priority, required this.addedAt, required this.relatedReportIds, required this.metadata, this.userId,
+    this.assignedTo,
+  });
   final String queueId;
   final ModerationItemType itemType;
   final String itemId;
@@ -282,18 +284,6 @@ class ModerationQueueEntry extends Equatable {
   final String? assignedTo;
   final List<String> relatedReportIds;
   final Map<String, dynamic> metadata;
-
-  const ModerationQueueEntry({
-    required this.queueId,
-    required this.itemType,
-    required this.itemId,
-    this.userId,
-    required this.priority,
-    required this.addedAt,
-    this.assignedTo,
-    required this.relatedReportIds,
-    required this.metadata,
-  });
 
   @override
   List<Object?> get props => [

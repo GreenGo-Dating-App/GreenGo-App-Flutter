@@ -1,23 +1,22 @@
-import 'dart:ui';
 import 'dart:math' as math;
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/tour_step.dart';
 import 'tour_tooltip.dart';
 
 /// Full-screen overlay for the app tour with luxury animated styling
 class TourOverlay extends StatefulWidget {
+
+  const TourOverlay({
+    required this.onComplete, required this.onSkip, required this.onTabChange, super.key,
+  });
   final VoidCallback onComplete;
   final VoidCallback onSkip;
   final Function(int) onTabChange;
-
-  const TourOverlay({
-    super.key,
-    required this.onComplete,
-    required this.onSkip,
-    required this.onTabChange,
-  });
 
   @override
   State<TourOverlay> createState() => _TourOverlayState();
@@ -158,7 +157,7 @@ class _TourOverlayState extends State<TourOverlay>
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final steps = TourStep.allSteps;
+    const steps = TourStep.allSteps;
     final currentStep = steps[_currentStepIndex];
 
     final title = _getLocalizedTitle(l10n, currentStep.titleKey);
@@ -508,11 +507,6 @@ class _TourOverlayState extends State<TourOverlay>
 
 /// Sparkle particle data
 class _SparkleParticle {
-  final double x;
-  final double y;
-  final double size;
-  final double speed;
-  final double phase;
 
   const _SparkleParticle({
     required this.x,
@@ -521,19 +515,24 @@ class _SparkleParticle {
     required this.speed,
     required this.phase,
   });
+  final double x;
+  final double y;
+  final double size;
+  final double speed;
+  final double phase;
 }
 
 /// Custom painter for sparkle particles
 class _SparklePainter extends CustomPainter {
-  final List<_SparkleParticle> sparkles;
-  final double progress;
-  final double pulseValue;
 
   _SparklePainter({
     required this.sparkles,
     required this.progress,
     required this.pulseValue,
   });
+  final List<_SparkleParticle> sparkles;
+  final double progress;
+  final double pulseValue;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -566,9 +565,9 @@ class _SparklePainter extends CustomPainter {
 
 /// Luxury diagonal pattern painter
 class _LuxuryPatternPainter extends CustomPainter {
-  final Color color;
 
   _LuxuryPatternPainter({required this.color});
+  final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -579,7 +578,7 @@ class _LuxuryPatternPainter extends CustomPainter {
 
     const spacing = 50.0;
 
-    for (double i = -size.height; i < size.width + size.height; i += spacing) {
+    for (var i = -size.height; i < size.width + size.height; i += spacing) {
       canvas.drawLine(
         Offset(i, 0),
         Offset(i + size.height, size.height),

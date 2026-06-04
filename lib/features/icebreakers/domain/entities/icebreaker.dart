@@ -21,6 +21,17 @@ enum IcebreakerCategory {
 /// Icebreaker Entity
 /// Conversation starter prompts for new matches
 class Icebreaker extends Equatable {
+
+  const Icebreaker({
+    required this.id,
+    required this.question,
+    required this.category,
+    required this.createdAt, this.suggestedAnswers,
+    this.usageCount = 0,
+    this.successRate = 0.0,
+    this.isPremium = false,
+    this.isActive = true,
+  });
   final String id;
   final String question;
   final IcebreakerCategory category;
@@ -30,18 +41,6 @@ class Icebreaker extends Equatable {
   final bool isPremium;
   final bool isActive;
   final DateTime createdAt;
-
-  const Icebreaker({
-    required this.id,
-    required this.question,
-    required this.category,
-    this.suggestedAnswers,
-    this.usageCount = 0,
-    this.successRate = 0.0,
-    this.isPremium = false,
-    this.isActive = true,
-    required this.createdAt,
-  });
 
   @override
   List<Object?> get props => [
@@ -59,14 +58,6 @@ class Icebreaker extends Equatable {
 
 /// Icebreaker Response
 class IcebreakerResponse extends Equatable {
-  final String id;
-  final String icebreakerId;
-  final String matchId;
-  final String senderId;
-  final String receiverId;
-  final String response;
-  final DateTime sentAt;
-  final bool wasReplied;
 
   const IcebreakerResponse({
     required this.id,
@@ -78,6 +69,14 @@ class IcebreakerResponse extends Equatable {
     required this.sentAt,
     this.wasReplied = false,
   });
+  final String id;
+  final String icebreakerId;
+  final String matchId;
+  final String senderId;
+  final String receiverId;
+  final String response;
+  final DateTime sentAt;
+  final bool wasReplied;
 
   @override
   List<Object?> get props => [
@@ -97,7 +96,7 @@ class IcebreakerDatabase {
   static const List<Map<String, dynamic>> defaultIcebreakers = [
     // Funny Questions
     {
-      'question': "If you could have dinner with any fictional character, who would it be and why?",
+      'question': 'If you could have dinner with any fictional character, who would it be and why?',
       'category': IcebreakerCategory.funnyQuestions,
     },
     {
@@ -105,7 +104,7 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.funnyQuestions,
     },
     {
-      'question': "If you were a superhero, what would your useless superpower be?",
+      'question': 'If you were a superhero, what would your useless superpower be?',
       'category': IcebreakerCategory.funnyQuestions,
     },
     {
@@ -122,28 +121,28 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.deepQuestions,
     },
     {
-      'question': "If you could master any skill instantly, what would it be?",
+      'question': 'If you could master any skill instantly, what would it be?',
       'category': IcebreakerCategory.deepQuestions,
     },
     // Would You Rather
     {
-      'question': "Would you rather explore space or the deep ocean?",
+      'question': 'Would you rather explore space or the deep ocean?',
       'category': IcebreakerCategory.wouldYouRather,
       'suggestedAnswers': ['Space', 'Deep Ocean'],
     },
     {
-      'question': "Would you rather be able to fly or be invisible?",
+      'question': 'Would you rather be able to fly or be invisible?',
       'category': IcebreakerCategory.wouldYouRather,
       'suggestedAnswers': ['Fly', 'Invisible'],
     },
     {
-      'question': "Would you rather have unlimited money or unlimited time?",
+      'question': 'Would you rather have unlimited money or unlimited time?',
       'category': IcebreakerCategory.wouldYouRather,
       'suggestedAnswers': ['Unlimited Money', 'Unlimited Time'],
     },
     // Two Truths
     {
-      'question': "Tell me two truths and a lie about yourself!",
+      'question': 'Tell me two truths and a lie about yourself!',
       'category': IcebreakerCategory.twoTruths,
     },
     // Date Ideas
@@ -152,7 +151,7 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.dateIdeas,
     },
     {
-      'question': "Coffee date or adventure date?",
+      'question': 'Coffee date or adventure date?',
       'category': IcebreakerCategory.dateIdeas,
       'suggestedAnswers': ['Coffee date', 'Adventure date'],
     },
@@ -162,7 +161,7 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.travel,
     },
     {
-      'question': "Beach vacation or mountain retreat?",
+      'question': 'Beach vacation or mountain retreat?',
       'category': IcebreakerCategory.travel,
       'suggestedAnswers': ['Beach', 'Mountains'],
     },
@@ -172,17 +171,17 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.food,
     },
     {
-      'question': "Cooking at home or dining out?",
+      'question': 'Cooking at home or dining out?',
       'category': IcebreakerCategory.food,
       'suggestedAnswers': ['Cooking at home', 'Dining out'],
     },
     // Music
     {
-      'question': "What song always puts you in a good mood?",
+      'question': 'What song always puts you in a good mood?',
       'category': IcebreakerCategory.music,
     },
     {
-      'question': "What was the last concert you went to?",
+      'question': 'What was the last concert you went to?',
       'category': IcebreakerCategory.music,
     },
     // Hypothetical
@@ -191,17 +190,17 @@ class IcebreakerDatabase {
       'category': IcebreakerCategory.hypothetical,
     },
     {
-      'question': "If you could live in any era, which would you choose?",
+      'question': 'If you could live in any era, which would you choose?',
       'category': IcebreakerCategory.hypothetical,
     },
     // Personality
     {
-      'question': "Are you more of a morning person or night owl?",
+      'question': 'Are you more of a morning person or night owl?',
       'category': IcebreakerCategory.personality,
       'suggestedAnswers': ['Morning person', 'Night owl'],
     },
     {
-      'question': "Introvert, extrovert, or ambivert?",
+      'question': 'Introvert, extrovert, or ambivert?',
       'category': IcebreakerCategory.personality,
       'suggestedAnswers': ['Introvert', 'Extrovert', 'Ambivert'],
     },

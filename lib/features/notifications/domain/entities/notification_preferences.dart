@@ -5,21 +5,6 @@ import 'package:flutter/material.dart';
 ///
 /// User's notification settings
 class NotificationPreferences extends Equatable {
-  final String userId;
-  final bool pushNotificationsEnabled;
-  final bool emailNotificationsEnabled;
-  final bool newMatchNotifications;
-  final bool newMessageNotifications;
-  final bool newLikeNotifications;
-  final bool profileViewNotifications;
-  final bool superLikeNotifications;
-  final bool matchExpiringNotifications;
-  final bool promotionalNotifications;
-  final bool soundEnabled;
-  final bool vibrationEnabled;
-  final String quietHoursStart; // Format: "22:00"
-  final String quietHoursEnd; // Format: "08:00"
-  final bool quietHoursEnabled;
 
   const NotificationPreferences({
     required this.userId,
@@ -38,6 +23,21 @@ class NotificationPreferences extends Equatable {
     this.quietHoursEnd = '08:00',
     this.quietHoursEnabled = false,
   });
+  final String userId;
+  final bool pushNotificationsEnabled;
+  final bool emailNotificationsEnabled;
+  final bool newMatchNotifications;
+  final bool newMessageNotifications;
+  final bool newLikeNotifications;
+  final bool profileViewNotifications;
+  final bool superLikeNotifications;
+  final bool matchExpiringNotifications;
+  final bool promotionalNotifications;
+  final bool soundEnabled;
+  final bool vibrationEnabled;
+  final String quietHoursStart; // Format: "22:00"
+  final String quietHoursEnd; // Format: "08:00"
+  final bool quietHoursEnabled;
 
   /// Check if notifications are allowed at current time
   bool get isNotificationAllowedNow {

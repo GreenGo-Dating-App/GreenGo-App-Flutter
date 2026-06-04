@@ -33,9 +33,9 @@ abstract class SpotsRemoteDataSource {
 }
 
 class SpotsRemoteDataSourceImpl implements SpotsRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   SpotsRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   @override
   Future<List<SpotModel>> getSpots({
@@ -54,7 +54,7 @@ class SpotsRemoteDataSourceImpl implements SpotsRemoteDataSource {
       final querySnapshot = await query.limit(200).get();
 
       final spots = querySnapshot.docs
-          .map((doc) => SpotModel.fromFirestore(doc))
+          .map(SpotModel.fromFirestore)
           .toList();
 
       // Sort by rating descending (client-side to avoid composite index)

@@ -1,25 +1,26 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 class PhotoManagementScreen extends StatefulWidget {
-  final Profile profile;
 
   const PhotoManagementScreen({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
   });
+  final Profile profile;
 
   @override
   State<PhotoManagementScreen> createState() => _PhotoManagementScreenState();
@@ -65,7 +66,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
     }
 
     try {
-      final XFile? image = await _picker.pickImage(
+      final image = await _picker.pickImage(
         source: ImageSource.gallery,
         maxWidth: 1920,
         maxHeight: 1920,
@@ -535,12 +536,6 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
 }
 
 class _PhotoCard extends StatelessWidget {
-  final String photoUrl;
-  final int index;
-  final VoidCallback onDelete;
-  final bool isPrimary;
-  final bool isPrivate;
-  final VoidCallback? onCopyToOther;
 
   const _PhotoCard({
     required Key key,
@@ -551,6 +546,12 @@ class _PhotoCard extends StatelessWidget {
     this.isPrivate = false,
     this.onCopyToOther,
   }) : super(key: key);
+  final String photoUrl;
+  final int index;
+  final VoidCallback onDelete;
+  final bool isPrimary;
+  final bool isPrivate;
+  final VoidCallback? onCopyToOther;
 
   @override
   Widget build(BuildContext context) {

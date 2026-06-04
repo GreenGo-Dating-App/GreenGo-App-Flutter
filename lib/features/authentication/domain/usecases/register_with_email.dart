@@ -5,13 +5,13 @@ import '../entities/user.dart';
 import '../repositories/auth_repository.dart';
 
 class RegisterWithEmail implements UseCase<User, RegisterWithEmailParams> {
-  final AuthRepository repository;
 
   RegisterWithEmail(this.repository);
+  final AuthRepository repository;
 
   @override
   Future<Either<Failure, User>> call(RegisterWithEmailParams params) async {
-    return await repository.registerWithEmail(
+    return repository.registerWithEmail(
       email: params.email,
       password: params.password,
     );
@@ -19,11 +19,11 @@ class RegisterWithEmail implements UseCase<User, RegisterWithEmailParams> {
 }
 
 class RegisterWithEmailParams {
-  final String email;
-  final String password;
 
   const RegisterWithEmailParams({
     required this.email,
     required this.password,
   });
+  final String email;
+  final String password;
 }

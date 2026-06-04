@@ -42,9 +42,7 @@ class HapticFeedbackHelper {
   /// Match celebration feedback
   static void onMatch() {
     HapticFeedback.heavyImpact();
-    Future.delayed(const Duration(milliseconds: 100), () {
-      HapticFeedback.heavyImpact();
-    });
+    Future.delayed(const Duration(milliseconds: 100), HapticFeedback.heavyImpact);
   }
 
   /// Message sent feedback
@@ -60,12 +58,8 @@ class HapticFeedbackHelper {
   /// Error feedback
   static void onError() {
     HapticFeedback.heavyImpact();
-    Future.delayed(const Duration(milliseconds: 100), () {
-      HapticFeedback.heavyImpact();
-    });
-    Future.delayed(const Duration(milliseconds: 200), () {
-      HapticFeedback.heavyImpact();
-    });
+    Future.delayed(const Duration(milliseconds: 100), HapticFeedback.heavyImpact);
+    Future.delayed(const Duration(milliseconds: 200), HapticFeedback.heavyImpact);
   }
 
   /// Success feedback
@@ -76,16 +70,15 @@ class HapticFeedbackHelper {
 
 /// Widget wrapper that adds haptic feedback on tap
 class HapticButton extends StatelessWidget {
-  final Widget child;
-  final VoidCallback? onPressed;
-  final HapticFeedbackType feedbackType;
 
   const HapticButton({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.onPressed,
     this.feedbackType = HapticFeedbackType.selection,
   });
+  final Widget child;
+  final VoidCallback? onPressed;
+  final HapticFeedbackType feedbackType;
 
   @override
   Widget build(BuildContext context) {

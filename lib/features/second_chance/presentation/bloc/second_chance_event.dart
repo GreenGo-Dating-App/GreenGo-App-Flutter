@@ -10,9 +10,9 @@ abstract class SecondChanceEvent extends Equatable {
 
 /// Load second chance profiles
 class LoadSecondChanceProfiles extends SecondChanceEvent {
-  final String userId;
 
   const LoadSecondChanceProfiles(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -20,9 +20,9 @@ class LoadSecondChanceProfiles extends SecondChanceEvent {
 
 /// Load usage for today
 class LoadSecondChanceUsage extends SecondChanceEvent {
-  final String userId;
 
   const LoadSecondChanceUsage(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -30,13 +30,13 @@ class LoadSecondChanceUsage extends SecondChanceEvent {
 
 /// Like a second chance profile
 class LikeSecondChanceEvent extends SecondChanceEvent {
-  final String userId;
-  final String entryId;
 
   const LikeSecondChanceEvent({
     required this.userId,
     required this.entryId,
   });
+  final String userId;
+  final String entryId;
 
   @override
   List<Object?> get props => [userId, entryId];
@@ -44,13 +44,13 @@ class LikeSecondChanceEvent extends SecondChanceEvent {
 
 /// Pass on a second chance profile
 class PassSecondChanceEvent extends SecondChanceEvent {
-  final String userId;
-  final String entryId;
 
   const PassSecondChanceEvent({
     required this.userId,
     required this.entryId,
   });
+  final String userId;
+  final String entryId;
 
   @override
   List<Object?> get props => [userId, entryId];
@@ -58,9 +58,9 @@ class PassSecondChanceEvent extends SecondChanceEvent {
 
 /// Purchase unlimited second chances
 class PurchaseUnlimitedEvent extends SecondChanceEvent {
-  final String userId;
 
   const PurchaseUnlimitedEvent(this.userId);
+  final String userId;
 
   @override
   List<Object?> get props => [userId];
@@ -68,9 +68,9 @@ class PurchaseUnlimitedEvent extends SecondChanceEvent {
 
 /// Select a profile to view
 class SelectSecondChanceProfile extends SecondChanceEvent {
-  final int index;
 
   const SelectSecondChanceProfile(this.index);
+  final int index;
 
   @override
   List<Object?> get props => [index];

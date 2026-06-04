@@ -5,12 +5,6 @@ import 'package:equatable/equatable.dart';
 /// Tracks a user's progress through the Safety Academy,
 /// including completed modules, lessons, quiz scores, XP, and badges.
 class SafetyProgress extends Equatable {
-  final String userId;
-  final List<String> completedModules;
-  final List<String> completedLessons;
-  final Map<String, int> quizScores;
-  final int totalXpEarned;
-  final List<String> badges;
 
   const SafetyProgress({
     required this.userId,
@@ -20,6 +14,12 @@ class SafetyProgress extends Equatable {
     this.totalXpEarned = 0,
     this.badges = const [],
   });
+  final String userId;
+  final List<String> completedModules;
+  final List<String> completedLessons;
+  final Map<String, int> quizScores;
+  final int totalXpEarned;
+  final List<String> badges;
 
   /// Check if a specific module is completed
   bool isModuleCompleted(String moduleId) =>
@@ -35,7 +35,7 @@ class SafetyProgress extends Equatable {
   /// Count completed lessons within a module
   int completedLessonsInModule(List<String> moduleLessonIds) {
     return moduleLessonIds
-        .where((lessonId) => completedLessons.contains(lessonId))
+        .where(completedLessons.contains)
         .length;
   }
 

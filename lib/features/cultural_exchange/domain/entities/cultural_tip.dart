@@ -2,15 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Represents a user-submitted cultural tip
 class CulturalTip extends Equatable {
-  final String id;
-  final String userId;
-  final String userDisplayName;
-  final String country;
-  final String title;
-  final String content;
-  final TipCategory category;
-  final int likes;
-  final DateTime createdAt;
 
   const CulturalTip({
     required this.id,
@@ -20,9 +11,17 @@ class CulturalTip extends Equatable {
     required this.title,
     required this.content,
     required this.category,
-    this.likes = 0,
-    required this.createdAt,
+    required this.createdAt, this.likes = 0,
   });
+  final String id;
+  final String userId;
+  final String userDisplayName;
+  final String country;
+  final String title;
+  final String content;
+  final TipCategory category;
+  final int likes;
+  final DateTime createdAt;
 
   CulturalTip copyWith({
     String? id,

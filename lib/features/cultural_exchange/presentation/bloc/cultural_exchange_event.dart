@@ -26,29 +26,29 @@ class LoadSpotlightHistory extends CulturalExchangeEvent {
 // ==================== Cultural Tips Events ====================
 
 class LoadCulturalTips extends CulturalExchangeEvent {
-  final String? country;
-  final String? category;
 
   const LoadCulturalTips({this.country, this.category});
+  final String? country;
+  final String? category;
 
   @override
   List<Object?> get props => [country, category];
 }
 
 class SubmitCulturalTip extends CulturalExchangeEvent {
-  final CulturalTip tip;
 
   const SubmitCulturalTip(this.tip);
+  final CulturalTip tip;
 
   @override
   List<Object?> get props => [tip];
 }
 
 class LikeCulturalTip extends CulturalExchangeEvent {
-  final String tipId;
-  final String userId;
 
   const LikeCulturalTip({required this.tipId, required this.userId});
+  final String tipId;
+  final String userId;
 
   @override
   List<Object?> get props => [tipId, userId];
@@ -57,9 +57,9 @@ class LikeCulturalTip extends CulturalExchangeEvent {
 // ==================== Dating Etiquette Events ====================
 
 class LoadDatingEtiquette extends CulturalExchangeEvent {
-  final String country;
 
   const LoadDatingEtiquette(this.country);
+  final String country;
 
   @override
   List<Object?> get props => [country];

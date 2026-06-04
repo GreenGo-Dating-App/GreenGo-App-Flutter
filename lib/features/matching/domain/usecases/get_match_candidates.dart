@@ -10,15 +10,15 @@ import '../repositories/matching_repository.dart';
 /// Retrieves potential matches for a user based on their preferences.
 /// Uses hybrid matching algorithm combining collaborative and content-based filtering.
 class GetMatchCandidates implements UseCase<List<MatchCandidate>, GetMatchCandidatesParams> {
-  final MatchingRepository repository;
 
   GetMatchCandidates(this.repository);
+  final MatchingRepository repository;
 
   @override
   Future<Either<Failure, List<MatchCandidate>>> call(
     GetMatchCandidatesParams params,
   ) async {
-    return await repository.getHybridMatches(
+    return repository.getHybridMatches(
       userId: params.userId,
       preferences: params.preferences,
       limit: params.limit,
@@ -27,13 +27,13 @@ class GetMatchCandidates implements UseCase<List<MatchCandidate>, GetMatchCandid
 }
 
 class GetMatchCandidatesParams {
-  final String userId;
-  final MatchPreferences preferences;
-  final int limit;
 
   GetMatchCandidatesParams({
     required this.userId,
     required this.preferences,
     this.limit = 20,
   });
+  final String userId;
+  final MatchPreferences preferences;
+  final int limit;
 }

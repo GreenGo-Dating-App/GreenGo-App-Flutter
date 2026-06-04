@@ -20,6 +20,19 @@ enum ChallengeStatus {
 
 /// Weekly Challenge Entity
 class Challenge extends Equatable {
+
+  const Challenge({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.type,
+    required this.iconName,
+    required this.targetCount,
+    required this.rewardPoints, required this.startDate, required this.endDate, required this.status, this.currentCount = 0,
+    this.rewardType,
+    this.rewardAmount,
+    this.requirements = const [],
+  });
   final String id;
   final String title;
   final String description;
@@ -34,23 +47,6 @@ class Challenge extends Equatable {
   final DateTime endDate;
   final ChallengeStatus status;
   final List<String> requirements;
-
-  const Challenge({
-    required this.id,
-    required this.title,
-    required this.description,
-    required this.type,
-    required this.iconName,
-    required this.targetCount,
-    this.currentCount = 0,
-    required this.rewardPoints,
-    this.rewardType,
-    this.rewardAmount,
-    required this.startDate,
-    required this.endDate,
-    required this.status,
-    this.requirements = const [],
-  });
 
   double get progress => targetCount > 0 ? currentCount / targetCount : 0;
   bool get isCompleted => currentCount >= targetCount;
@@ -77,6 +73,15 @@ class Challenge extends Equatable {
 
 /// Referral Entity
 class Referral extends Equatable {
+
+  const Referral({
+    required this.id,
+    required this.referrerId,
+    required this.referredUserId,
+    required this.referralCode, required this.createdAt, required this.referrerReward, required this.referredReward, required this.rewardType, this.referredUserName,
+    this.completedAt,
+    this.isCompleted = false,
+  });
   final String id;
   final String referrerId;
   final String referredUserId;
@@ -88,20 +93,6 @@ class Referral extends Equatable {
   final int referrerReward;
   final int referredReward;
   final String rewardType;
-
-  const Referral({
-    required this.id,
-    required this.referrerId,
-    required this.referredUserId,
-    this.referredUserName,
-    required this.referralCode,
-    required this.createdAt,
-    this.completedAt,
-    this.isCompleted = false,
-    required this.referrerReward,
-    required this.referredReward,
-    required this.rewardType,
-  });
 
   @override
   List<Object?> get props => [
@@ -121,6 +112,15 @@ class Referral extends Equatable {
 
 /// User Referral Stats
 class ReferralStats extends Equatable {
+
+  const ReferralStats({
+    required this.userId,
+    required this.referralCode,
+    required this.referralLink, this.totalReferrals = 0,
+    this.completedReferrals = 0,
+    this.pendingReferrals = 0,
+    this.totalEarnings = 0,
+  });
   final String userId;
   final String referralCode;
   final int totalReferrals;
@@ -128,16 +128,6 @@ class ReferralStats extends Equatable {
   final int pendingReferrals;
   final int totalEarnings;
   final String referralLink;
-
-  const ReferralStats({
-    required this.userId,
-    required this.referralCode,
-    this.totalReferrals = 0,
-    this.completedReferrals = 0,
-    this.pendingReferrals = 0,
-    this.totalEarnings = 0,
-    required this.referralLink,
-  });
 
   @override
   List<Object?> get props => [
@@ -153,6 +143,17 @@ class ReferralStats extends Equatable {
 
 /// Dating Coach Tip Entity
 class DatingCoachTip extends Equatable {
+
+  const DatingCoachTip({
+    required this.id,
+    required this.title,
+    required this.content,
+    required this.category,
+    required this.createdAt, this.imageUrl,
+    this.isPremium = false,
+    this.likeCount = 0,
+    this.tags = const [],
+  });
   final String id;
   final String title;
   final String content;
@@ -162,18 +163,6 @@ class DatingCoachTip extends Equatable {
   final int likeCount;
   final DateTime createdAt;
   final List<String> tags;
-
-  const DatingCoachTip({
-    required this.id,
-    required this.title,
-    required this.content,
-    required this.category,
-    this.imageUrl,
-    this.isPremium = false,
-    this.likeCount = 0,
-    required this.createdAt,
-    this.tags = const [],
-  });
 
   @override
   List<Object?> get props => [
@@ -191,6 +180,15 @@ class DatingCoachTip extends Equatable {
 
 /// AI Conversation Suggestion Entity
 class ConversationSuggestion extends Equatable {
+
+  const ConversationSuggestion({
+    required this.id,
+    required this.matchId,
+    required this.suggestion,
+    required this.context,
+    required this.generatedAt, this.confidenceScore = 0.0,
+    this.wasUsed = false,
+  });
   final String id;
   final String matchId;
   final String suggestion;
@@ -198,16 +196,6 @@ class ConversationSuggestion extends Equatable {
   final double confidenceScore;
   final DateTime generatedAt;
   final bool wasUsed;
-
-  const ConversationSuggestion({
-    required this.id,
-    required this.matchId,
-    required this.suggestion,
-    required this.context,
-    this.confidenceScore = 0.0,
-    required this.generatedAt,
-    this.wasUsed = false,
-  });
 
   @override
   List<Object?> get props => [

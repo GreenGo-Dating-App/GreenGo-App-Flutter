@@ -8,9 +8,7 @@ class CoinGiftModel extends CoinGift {
     required super.senderId,
     required super.receiverId,
     required super.amount,
-    super.message,
-    required super.status,
-    required super.sentAt,
+    required super.status, required super.sentAt, super.message,
     super.receivedAt,
     super.expiresAt,
   });

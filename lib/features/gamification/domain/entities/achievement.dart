@@ -3,16 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Achievement Entity
 /// Points 176-185: Comprehensive badge system
 class Achievement extends Equatable {
-  final String achievementId;
-  final String name;
-  final String description;
-  final AchievementCategory category;
-  final AchievementRarity rarity;
-  final String iconUrl;
-  final int requiredCount;
-  final String rewardType; // xp, coins, badge
-  final int rewardAmount;
-  final bool isSecret;
 
   const Achievement({
     required this.achievementId,
@@ -26,6 +16,16 @@ class Achievement extends Equatable {
     this.rewardAmount = 0,
     this.isSecret = false,
   });
+  final String achievementId;
+  final String name;
+  final String description;
+  final AchievementCategory category;
+  final AchievementRarity rarity;
+  final String iconUrl;
+  final int requiredCount;
+  final String rewardType; // xp, coins, badge
+  final int rewardAmount;
+  final bool isSecret;
 
   @override
   List<Object?> get props => [
@@ -62,6 +62,15 @@ enum AchievementRarity {
 
 /// User Achievement (Earned)
 class UserAchievement extends Equatable {
+
+  const UserAchievement({
+    required this.userId,
+    required this.achievementId,
+    required this.progress,
+    required this.requiredCount,
+    required this.createdAt, this.isCompleted = false,
+    this.completedAt,
+  });
   final String userId;
   final String achievementId;
   final int progress;
@@ -69,16 +78,6 @@ class UserAchievement extends Equatable {
   final bool isCompleted;
   final DateTime? completedAt;
   final DateTime createdAt;
-
-  const UserAchievement({
-    required this.userId,
-    required this.achievementId,
-    required this.progress,
-    required this.requiredCount,
-    this.isCompleted = false,
-    this.completedAt,
-    required this.createdAt,
-  });
 
   /// Get progress percentage
   double get progressPercentage {
@@ -100,13 +99,6 @@ class UserAchievement extends Equatable {
 
 /// User Achievement Progress (for tracking progress towards achievements)
 class UserAchievementProgress extends Equatable {
-  final String userId;
-  final String achievementId;
-  final int progress;
-  final int requiredCount;
-  final bool isUnlocked;
-  final DateTime? unlockedAt;
-  final bool rewardsClaimed;
 
   const UserAchievementProgress({
     required this.userId,
@@ -117,6 +109,13 @@ class UserAchievementProgress extends Equatable {
     this.unlockedAt,
     this.rewardsClaimed = false,
   });
+  final String userId;
+  final String achievementId;
+  final int progress;
+  final int requiredCount;
+  final bool isUnlocked;
+  final DateTime? unlockedAt;
+  final bool rewardsClaimed;
 
   /// Get progress percentage
   double get progressPercentage {

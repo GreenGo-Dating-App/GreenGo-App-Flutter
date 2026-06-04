@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Send Message Use Case
 class SendMessage {
-  final ChatRepository repository;
 
   SendMessage(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, Message>> call(SendMessageParams params) {
     return repository.sendMessage(
@@ -23,12 +23,6 @@ class SendMessage {
 
 /// Parameters for SendMessage use case
 class SendMessageParams {
-  final String matchId;
-  final String senderId;
-  final String receiverId;
-  final String content;
-  final MessageType type;
-  final Map<String, dynamic>? metadata;
 
   SendMessageParams({
     required this.matchId,
@@ -38,4 +32,10 @@ class SendMessageParams {
     this.type = MessageType.text,
     this.metadata,
   });
+  final String matchId;
+  final String senderId;
+  final String receiverId;
+  final String content;
+  final MessageType type;
+  final Map<String, dynamic>? metadata;
 }

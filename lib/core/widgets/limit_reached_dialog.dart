@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
+import '../../features/coins/presentation/screens/shop_screen.dart';
+import '../../features/membership/domain/entities/membership.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/usage_limit_service.dart';
-import '../../features/membership/domain/entities/membership.dart';
-import '../../features/coins/presentation/screens/shop_screen.dart';
 
 /// Dialog action types
 enum LimitDialogAction {
@@ -14,30 +15,28 @@ enum LimitDialogAction {
 
 /// Result from the limit reached dialog
 class LimitDialogResult {
-  final LimitDialogAction action;
-  final MembershipTier? selectedTier;
 
   const LimitDialogResult({
     required this.action,
     this.selectedTier,
   });
+  final LimitDialogAction action;
+  final MembershipTier? selectedTier;
 }
 
 /// Displays a stylish dialog when a user reaches their usage limit
 /// Provides options to upgrade membership or buy coins
 class LimitReachedDialog extends StatelessWidget {
+
+  const LimitReachedDialog({
+    required this.limitResult, required this.userId, super.key,
+    this.onUpgrade,
+    this.onBuyCoins,
+  });
   final UsageLimitResult limitResult;
   final String userId;
   final VoidCallback? onUpgrade;
   final VoidCallback? onBuyCoins;
-
-  const LimitReachedDialog({
-    super.key,
-    required this.limitResult,
-    required this.userId,
-    this.onUpgrade,
-    this.onBuyCoins,
-  });
 
   /// Static helper to show the dialog
   static Future<LimitDialogResult?> show({
@@ -196,7 +195,7 @@ class LimitReachedDialog extends StatelessWidget {
             children: [
               Text(
                 l10n.usedToday,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
                 ),
@@ -505,22 +504,17 @@ class LimitWarningSnackBar {
 
 /// Feature not available dialog for features that require higher tier
 class FeatureNotAvailableDialog extends StatelessWidget {
+
+  const FeatureNotAvailableDialog({
+    required this.featureName, required this.description, required this.currentTier, required this.requiredTier, required this.userId, super.key,
+    this.icon,
+  });
   final String featureName;
   final String description;
   final MembershipTier currentTier;
   final MembershipTier requiredTier;
   final String userId;
   final IconData? icon;
-
-  const FeatureNotAvailableDialog({
-    super.key,
-    required this.featureName,
-    required this.description,
-    required this.currentTier,
-    required this.requiredTier,
-    required this.userId,
-    this.icon,
-  });
 
   static Future<LimitDialogResult?> show({
     required BuildContext context,

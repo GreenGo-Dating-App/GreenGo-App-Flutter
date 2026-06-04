@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../../gamification/domain/entities/achievement.dart';
-import '../../../gamification/domain/entities/user_level.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Profile Badges Widget
 /// Displays user's tier badge, level, and top achievements
 class ProfileBadgesWidget extends StatelessWidget {
+
+  const ProfileBadgesWidget({
+    required this.tier, required this.level, required this.xp, required this.xpToNextLevel, super.key,
+    this.achievements,
+    this.isVerified = false,
+    this.onViewAllAchievements,
+  });
   final MembershipTier tier;
   final int level;
   final int xp;
@@ -15,17 +22,6 @@ class ProfileBadgesWidget extends StatelessWidget {
   final List<UserAchievement>? achievements;
   final bool isVerified;
   final VoidCallback? onViewAllAchievements;
-
-  const ProfileBadgesWidget({
-    super.key,
-    required this.tier,
-    required this.level,
-    required this.xp,
-    required this.xpToNextLevel,
-    this.achievements,
-    this.isVerified = false,
-    this.onViewAllAchievements,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -80,9 +76,9 @@ class ProfileBadgesWidget extends StatelessWidget {
 
 /// Tier Badge Widget
 class _TierBadge extends StatelessWidget {
-  final MembershipTier tier;
 
   const _TierBadge({required this.tier});
+  final MembershipTier tier;
 
   @override
   Widget build(BuildContext context) {
@@ -175,15 +171,15 @@ class _TierBadge extends StatelessWidget {
 
 /// Level Badge Widget
 class _LevelBadge extends StatelessWidget {
-  final int level;
-  final int xp;
-  final int xpToNextLevel;
 
   const _LevelBadge({
     required this.level,
     required this.xp,
     required this.xpToNextLevel,
   });
+  final int level;
+  final int xp;
+  final int xpToNextLevel;
 
   @override
   Widget build(BuildContext context) {
@@ -378,13 +374,13 @@ class _VerifiedBadge extends StatelessWidget {
 
 /// XP Progress Bar Widget
 class _XPProgressBar extends StatelessWidget {
-  final int xp;
-  final int xpToNextLevel;
 
   const _XPProgressBar({
     required this.xp,
     required this.xpToNextLevel,
   });
+  final int xp;
+  final int xpToNextLevel;
 
   @override
   Widget build(BuildContext context) {
@@ -449,13 +445,13 @@ class _XPProgressBar extends StatelessWidget {
 
 /// Achievement Showcase Widget
 class _AchievementShowcase extends StatelessWidget {
-  final List<UserAchievement> achievements;
-  final VoidCallback? onViewAll;
 
   const _AchievementShowcase({
     required this.achievements,
     this.onViewAll,
   });
+  final List<UserAchievement> achievements;
+  final VoidCallback? onViewAll;
 
   @override
   Widget build(BuildContext context) {
@@ -517,9 +513,9 @@ class _AchievementShowcase extends StatelessWidget {
 
 /// Single Achievement Badge
 class _AchievementBadge extends StatelessWidget {
-  final Achievement achievement;
 
   const _AchievementBadge({required this.achievement});
+  final Achievement achievement;
 
   @override
   Widget build(BuildContext context) {
@@ -547,16 +543,15 @@ class _AchievementBadge extends StatelessWidget {
 
 /// Compact Profile Badge (for display in other places like discovery cards)
 class CompactProfileBadge extends StatelessWidget {
-  final MembershipTier tier;
-  final bool isVerified;
-  final int? level;
 
   const CompactProfileBadge({
-    super.key,
-    required this.tier,
+    required this.tier, super.key,
     this.isVerified = false,
     this.level,
   });
+  final MembershipTier tier;
+  final bool isVerified;
+  final int? level;
 
   @override
   Widget build(BuildContext context) {
@@ -664,14 +659,13 @@ class CompactProfileBadge extends StatelessWidget {
 
 /// Login Streak Badge Widget
 class StreakBadge extends StatelessWidget {
-  final int currentStreak;
-  final bool isActive;
 
   const StreakBadge({
-    super.key,
-    required this.currentStreak,
+    required this.currentStreak, super.key,
     this.isActive = true,
   });
+  final int currentStreak;
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {
@@ -697,7 +691,7 @@ class StreakBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
+          const Icon(
             Icons.local_fire_department,
             color: Colors.white,
             size: 16,

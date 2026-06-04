@@ -1,12 +1,12 @@
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/validators.dart';
-import '../widgets/auth_text_field.dart';
+import '../../../../generated/app_localizations.dart';
 import '../widgets/auth_button.dart';
+import '../widgets/auth_text_field.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({super.key});

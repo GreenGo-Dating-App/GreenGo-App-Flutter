@@ -3,6 +3,19 @@ import 'package:equatable/equatable.dart';
 /// Blind Date Mode Entity
 /// Match based on personality, photos revealed later
 class BlindDate extends Equatable {
+
+  const BlindDate({
+    required this.id,
+    required this.participantId,
+    required this.anonymousName, required this.anonymousAvatar, required this.personalityTraits, required this.interests, required this.createdAt, required this.phase, this.matchedWithId,
+    this.matchedWithName,
+    this.introMessage,
+    this.matchedAt,
+    this.revealedAt,
+    this.messagesExchanged = 0,
+    this.isActive = true,
+    this.isRevealed = false,
+  });
   final String id;
   final String participantId;
   final String? matchedWithId;
@@ -19,25 +32,6 @@ class BlindDate extends Equatable {
   final bool isActive;
   final bool isRevealed;
   final BlindDatePhase phase;
-
-  const BlindDate({
-    required this.id,
-    required this.participantId,
-    this.matchedWithId,
-    this.matchedWithName,
-    required this.anonymousName,
-    required this.anonymousAvatar,
-    required this.personalityTraits,
-    required this.interests,
-    this.introMessage,
-    required this.createdAt,
-    this.matchedAt,
-    this.revealedAt,
-    this.messagesExchanged = 0,
-    this.isActive = true,
-    this.isRevealed = false,
-    required this.phase,
-  });
 
   bool get canReveal => messagesExchanged >= 20 && !isRevealed;
 
@@ -73,6 +67,25 @@ enum BlindDatePhase {
 
 /// Speed Dating Session Entity
 class SpeedDatingSession extends Equatable {
+
+  const SpeedDatingSession({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.startTime,
+    required this.endTime,
+    required this.roundDurationMinutes,
+    required this.breakDurationMinutes,
+    required this.maxParticipants,
+    required this.status, required this.createdAt, this.currentParticipants = 0,
+    this.participantIds = const [],
+    this.minAge,
+    this.maxAge,
+    this.genderPreference,
+    this.theme,
+    this.entryFee,
+    this.rounds = const [],
+  });
   final String id;
   final String title;
   final String description;
@@ -91,27 +104,6 @@ class SpeedDatingSession extends Equatable {
   final double? entryFee;
   final List<SpeedDatingRound> rounds;
   final DateTime createdAt;
-
-  const SpeedDatingSession({
-    required this.id,
-    required this.title,
-    required this.description,
-    required this.startTime,
-    required this.endTime,
-    required this.roundDurationMinutes,
-    required this.breakDurationMinutes,
-    required this.maxParticipants,
-    this.currentParticipants = 0,
-    this.participantIds = const [],
-    this.minAge,
-    this.maxAge,
-    this.genderPreference,
-    this.theme,
-    required this.status,
-    this.entryFee,
-    this.rounds = const [],
-    required this.createdAt,
-  });
 
   bool get isFull => currentParticipants >= maxParticipants;
   bool get isUpcoming => status == SpeedDatingStatus.scheduled;
@@ -152,16 +144,6 @@ enum SpeedDatingStatus {
 
 /// Speed Dating Round
 class SpeedDatingRound extends Equatable {
-  final String id;
-  final String sessionId;
-  final int roundNumber;
-  final String participant1Id;
-  final String participant2Id;
-  final DateTime startTime;
-  final DateTime endTime;
-  final bool participant1Interested;
-  final bool participant2Interested;
-  final bool isMatch;
 
   const SpeedDatingRound({
     required this.id,
@@ -175,6 +157,16 @@ class SpeedDatingRound extends Equatable {
     this.participant2Interested = false,
     this.isMatch = false,
   });
+  final String id;
+  final String sessionId;
+  final int roundNumber;
+  final String participant1Id;
+  final String participant2Id;
+  final DateTime startTime;
+  final DateTime endTime;
+  final bool participant1Interested;
+  final bool participant2Interested;
+  final bool isMatch;
 
   @override
   List<Object?> get props => [
@@ -193,15 +185,6 @@ class SpeedDatingRound extends Equatable {
 
 /// Music Integration Entity
 class MusicProfile extends Equatable {
-  final String userId;
-  final String? spotifyUserId;
-  final String? appleMusicUserId;
-  final List<String> topArtists;
-  final List<String> topGenres;
-  final List<MusicTrack> favoriteTracks;
-  final String? currentlyPlaying;
-  final String? anthem; // Featured song on profile
-  final DateTime? lastSynced;
 
   const MusicProfile({
     required this.userId,
@@ -214,6 +197,15 @@ class MusicProfile extends Equatable {
     this.anthem,
     this.lastSynced,
   });
+  final String userId;
+  final String? spotifyUserId;
+  final String? appleMusicUserId;
+  final List<String> topArtists;
+  final List<String> topGenres;
+  final List<MusicTrack> favoriteTracks;
+  final String? currentlyPlaying;
+  final String? anthem; // Featured song on profile
+  final DateTime? lastSynced;
 
   bool get isConnected => spotifyUserId != null || appleMusicUserId != null;
 
@@ -233,12 +225,6 @@ class MusicProfile extends Equatable {
 
 /// Music Track
 class MusicTrack extends Equatable {
-  final String id;
-  final String title;
-  final String artist;
-  final String? albumArt;
-  final String? previewUrl;
-  final int? durationMs;
 
   const MusicTrack({
     required this.id,
@@ -248,6 +234,12 @@ class MusicTrack extends Equatable {
     this.previewUrl,
     this.durationMs,
   });
+  final String id;
+  final String title;
+  final String artist;
+  final String? albumArt;
+  final String? previewUrl;
+  final int? durationMs;
 
   @override
   List<Object?> get props => [id, title, artist, albumArt, previewUrl, durationMs];
@@ -255,12 +247,6 @@ class MusicTrack extends Equatable {
 
 /// Music Compatibility
 class MusicCompatibility extends Equatable {
-  final String userId1;
-  final String userId2;
-  final double compatibilityScore; // 0-100
-  final List<String> sharedArtists;
-  final List<String> sharedGenres;
-  final List<MusicTrack> sharedTracks;
 
   const MusicCompatibility({
     required this.userId1,
@@ -270,6 +256,12 @@ class MusicCompatibility extends Equatable {
     this.sharedGenres = const [],
     this.sharedTracks = const [],
   });
+  final String userId1;
+  final String userId2;
+  final double compatibilityScore; // 0-100
+  final List<String> sharedArtists;
+  final List<String> sharedGenres;
+  final List<MusicTrack> sharedTracks;
 
   @override
   List<Object?> get props => [

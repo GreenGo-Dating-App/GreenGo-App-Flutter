@@ -4,6 +4,15 @@ import '../constants/app_colors.dart';
 /// Enhancement #9: Achievement Popup
 /// Celebration popup when user unlocks an achievement
 class AchievementPopup extends StatefulWidget {
+
+  const AchievementPopup({
+    required this.title, required this.description, super.key,
+    this.iconUrl,
+    this.icon,
+    this.xpReward = 0,
+    this.coinReward,
+    this.onDismiss,
+  });
   final String title;
   final String description;
   final String? iconUrl;
@@ -11,17 +20,6 @@ class AchievementPopup extends StatefulWidget {
   final int xpReward;
   final int? coinReward;
   final VoidCallback? onDismiss;
-
-  const AchievementPopup({
-    super.key,
-    required this.title,
-    required this.description,
-    this.iconUrl,
-    this.icon,
-    this.xpReward = 0,
-    this.coinReward,
-    this.onDismiss,
-  });
 
   @override
   State<AchievementPopup> createState() => _AchievementPopupState();
@@ -205,15 +203,15 @@ class _AchievementPopupState extends State<AchievementPopup>
 }
 
 class _RewardChip extends StatelessWidget {
-  final IconData icon;
-  final String value;
-  final Color color;
 
   const _RewardChip({
     required this.icon,
     required this.value,
     required this.color,
   });
+  final IconData icon;
+  final String value;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {

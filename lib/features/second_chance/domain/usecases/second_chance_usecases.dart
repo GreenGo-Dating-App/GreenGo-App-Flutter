@@ -5,9 +5,9 @@ import '../repositories/second_chance_repository.dart';
 
 /// Get second chance profiles
 class GetSecondChanceProfiles {
-  final SecondChanceRepository repository;
 
   GetSecondChanceProfiles(this.repository);
+  final SecondChanceRepository repository;
 
   Future<Either<Failure, List<SecondChanceProfile>>> call(String userId) {
     return repository.getSecondChanceProfiles(userId);
@@ -16,9 +16,9 @@ class GetSecondChanceProfiles {
 
 /// Get second chance usage
 class GetSecondChanceUsage {
-  final SecondChanceRepository repository;
 
   GetSecondChanceUsage(this.repository);
+  final SecondChanceRepository repository;
 
   Future<Either<Failure, SecondChanceUsage>> call(String userId) {
     return repository.getUsage(userId);
@@ -27,9 +27,9 @@ class GetSecondChanceUsage {
 
 /// Like a second chance profile
 class LikeSecondChance {
-  final SecondChanceRepository repository;
 
   LikeSecondChance(this.repository);
+  final SecondChanceRepository repository;
 
   Future<Either<Failure, SecondChanceResult>> call({
     required String userId,
@@ -41,9 +41,9 @@ class LikeSecondChance {
 
 /// Pass on a second chance profile
 class PassSecondChance {
-  final SecondChanceRepository repository;
 
   PassSecondChance(this.repository);
+  final SecondChanceRepository repository;
 
   Future<Either<Failure, void>> call({
     required String userId,
@@ -55,9 +55,9 @@ class PassSecondChance {
 
 /// Purchase unlimited second chances
 class PurchaseUnlimitedSecondChances {
-  final SecondChanceRepository repository;
 
   PurchaseUnlimitedSecondChances(this.repository);
+  final SecondChanceRepository repository;
 
   Future<Either<Failure, SecondChanceUsage>> call(String userId) {
     return repository.purchaseUnlimited(userId);
@@ -66,9 +66,9 @@ class PurchaseUnlimitedSecondChances {
 
 /// Stream second chance profiles
 class StreamSecondChances {
-  final SecondChanceRepository repository;
 
   StreamSecondChances(this.repository);
+  final SecondChanceRepository repository;
 
   Stream<Either<Failure, List<SecondChanceProfile>>> call(String userId) {
     return repository.streamSecondChances(userId);

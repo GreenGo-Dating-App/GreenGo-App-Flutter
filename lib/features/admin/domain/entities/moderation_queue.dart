@@ -1,12 +1,22 @@
-/**
- * Moderation Queue Entity
- * Points 246-250: Content moderation queue management
- */
+/// Moderation Queue Entity
+/// Points 246-250: Content moderation queue management
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Moderation queue item (Point 246)
 class ModerationQueueItem extends Equatable {
+
+  const ModerationQueueItem({
+    required this.queueId,
+    required this.itemType,
+    required this.itemId,
+    required this.userId,
+    required this.priority,
+    required this.addedAt,
+    required this.relatedReportIds, required this.metadata, required this.status, this.assignedTo,
+    this.assignedAt,
+  });
   final String queueId;
   final ModerationItemType itemType;
   final String itemId;
@@ -18,20 +28,6 @@ class ModerationQueueItem extends Equatable {
   final List<String> relatedReportIds;
   final Map<String, dynamic> metadata;
   final ModerationItemStatus status;
-
-  const ModerationQueueItem({
-    required this.queueId,
-    required this.itemType,
-    required this.itemId,
-    required this.userId,
-    required this.priority,
-    required this.addedAt,
-    this.assignedTo,
-    this.assignedAt,
-    required this.relatedReportIds,
-    required this.metadata,
-    required this.status,
-  });
 
   bool get isAssigned => assignedTo != null;
   bool get isPending => status == ModerationItemStatus.pending;
@@ -94,6 +90,15 @@ enum ModerationItemStatus {
 
 /// Detailed moderation review interface (Point 247)
 class ModerationReviewItem extends Equatable {
+
+  const ModerationReviewItem({
+    required this.queueId,
+    required this.itemType,
+    required this.content,
+    required this.userContext,
+    required this.relatedReports,
+    required this.suggestedActions, required this.addedAt, required this.priority, this.history,
+  });
   final String queueId;
   final ModerationItemType itemType;
   final ModerationItemContent content;
@@ -103,18 +108,6 @@ class ModerationReviewItem extends Equatable {
   final List<SuggestedAction> suggestedActions;
   final DateTime addedAt;
   final ModerationPriority priority;
-
-  const ModerationReviewItem({
-    required this.queueId,
-    required this.itemType,
-    required this.content,
-    required this.userContext,
-    required this.relatedReports,
-    this.history,
-    required this.suggestedActions,
-    required this.addedAt,
-    required this.priority,
-  });
 
   @override
   List<Object?> get props => [
@@ -132,19 +125,18 @@ class ModerationReviewItem extends Equatable {
 
 /// Moderation item content
 class ModerationItemContent extends Equatable {
+
+  const ModerationItemContent({
+    required this.itemId,
+    required this.createdAt, this.text,
+    this.photoUrls,
+    this.additionalData,
+  });
   final String itemId;
   final String? text;
   final List<String>? photoUrls;
   final Map<String, dynamic>? additionalData;
   final DateTime createdAt;
-
-  const ModerationItemContent({
-    required this.itemId,
-    this.text,
-    this.photoUrls,
-    this.additionalData,
-    required this.createdAt,
-  });
 
   @override
   List<Object?> get props => [
@@ -158,6 +150,13 @@ class ModerationItemContent extends Equatable {
 
 /// User context for moderation
 class UserContext extends Equatable {
+
+  const UserContext({
+    required this.userId,
+    required this.displayName,
+    required this.age,
+    required this.accountCreatedAt, required this.reportCount, required this.warningCount, required this.suspensionCount, required this.isVerified, required this.trustScore, required this.accountStatus, this.photoUrl,
+  });
   final String userId;
   final String displayName;
   final int age;
@@ -169,20 +168,6 @@ class UserContext extends Equatable {
   final bool isVerified;
   final double trustScore;
   final String accountStatus;
-
-  const UserContext({
-    required this.userId,
-    required this.displayName,
-    required this.age,
-    this.photoUrl,
-    required this.accountCreatedAt,
-    required this.reportCount,
-    required this.warningCount,
-    required this.suspensionCount,
-    required this.isVerified,
-    required this.trustScore,
-    required this.accountStatus,
-  });
 
   @override
   List<Object?> get props => [
@@ -202,12 +187,6 @@ class UserContext extends Equatable {
 
 /// Related report
 class RelatedReport extends Equatable {
-  final String reportId;
-  final String reporterId;
-  final String category;
-  final String description;
-  final DateTime createdAt;
-  final List<String> screenshotUrls;
 
   const RelatedReport({
     required this.reportId,
@@ -217,6 +196,12 @@ class RelatedReport extends Equatable {
     required this.createdAt,
     required this.screenshotUrls,
   });
+  final String reportId;
+  final String reporterId;
+  final String category;
+  final String description;
+  final DateTime createdAt;
+  final List<String> screenshotUrls;
 
   @override
   List<Object?> get props => [
@@ -231,11 +216,6 @@ class RelatedReport extends Equatable {
 
 /// Moderation history
 class ModerationHistory extends Equatable {
-  final List<PastModerationAction> pastActions;
-  final int totalWarnings;
-  final int totalSuspensions;
-  final int totalBans;
-  final DateTime? lastActionAt;
 
   const ModerationHistory({
     required this.pastActions,
@@ -244,6 +224,11 @@ class ModerationHistory extends Equatable {
     required this.totalBans,
     this.lastActionAt,
   });
+  final List<PastModerationAction> pastActions;
+  final int totalWarnings;
+  final int totalSuspensions;
+  final int totalBans;
+  final DateTime? lastActionAt;
 
   @override
   List<Object?> get props => [
@@ -257,10 +242,6 @@ class ModerationHistory extends Equatable {
 
 /// Past moderation action
 class PastModerationAction extends Equatable {
-  final String actionType;
-  final String reason;
-  final String moderatorId;
-  final DateTime actionAt;
 
   const PastModerationAction({
     required this.actionType,
@@ -268,6 +249,10 @@ class PastModerationAction extends Equatable {
     required this.moderatorId,
     required this.actionAt,
   });
+  final String actionType;
+  final String reason;
+  final String moderatorId;
+  final DateTime actionAt;
 
   @override
   List<Object?> get props => [actionType, reason, moderatorId, actionAt];
@@ -275,10 +260,6 @@ class PastModerationAction extends Equatable {
 
 /// Suggested action with AI confidence
 class SuggestedAction extends Equatable {
-  final ModerationActionType actionType;
-  final double confidence; // 0-1
-  final String reasoning;
-  final Map<String, dynamic> parameters;
 
   const SuggestedAction({
     required this.actionType,
@@ -286,6 +267,10 @@ class SuggestedAction extends Equatable {
     required this.reasoning,
     required this.parameters,
   });
+  final ModerationActionType actionType;
+  final double confidence; // 0-1
+  final String reasoning;
+  final Map<String, dynamic> parameters;
 
   @override
   List<Object?> get props => [actionType, confidence, reasoning, parameters];
@@ -307,6 +292,14 @@ enum ModerationActionType {
 
 /// Moderation action result (Point 248)
 class ModerationActionResult extends Equatable {
+
+  const ModerationActionResult({
+    required this.queueId,
+    required this.action,
+    required this.moderatorId,
+    required this.actionAt, required this.success, this.notes,
+    this.errorMessage,
+  });
   final String queueId;
   final ModerationActionType action;
   final String moderatorId;
@@ -314,16 +307,6 @@ class ModerationActionResult extends Equatable {
   final DateTime actionAt;
   final bool success;
   final String? errorMessage;
-
-  const ModerationActionResult({
-    required this.queueId,
-    required this.action,
-    required this.moderatorId,
-    this.notes,
-    required this.actionAt,
-    required this.success,
-    this.errorMessage,
-  });
 
   @override
   List<Object?> get props => [
@@ -339,6 +322,14 @@ class ModerationActionResult extends Equatable {
 
 /// Bulk moderation operation (Point 249)
 class BulkModerationOperation extends Equatable {
+
+  const BulkModerationOperation({
+    required this.operationId,
+    required this.queueIds,
+    required this.action,
+    required this.moderatorId,
+    required this.initiatedAt, required this.status, required this.totalItems, required this.processedItems, required this.successCount, required this.failureCount, required this.results, this.notes,
+  });
   final String operationId;
   final List<String> queueIds;
   final ModerationActionType action;
@@ -351,21 +342,6 @@ class BulkModerationOperation extends Equatable {
   final int successCount;
   final int failureCount;
   final List<BulkOperationResult> results;
-
-  const BulkModerationOperation({
-    required this.operationId,
-    required this.queueIds,
-    required this.action,
-    required this.moderatorId,
-    this.notes,
-    required this.initiatedAt,
-    required this.status,
-    required this.totalItems,
-    required this.processedItems,
-    required this.successCount,
-    required this.failureCount,
-    required this.results,
-  });
 
   double get progressPercentage =>
       totalItems > 0 ? (processedItems / totalItems) * 100 : 0;
@@ -398,15 +374,15 @@ enum BulkOperationStatus {
 
 /// Bulk operation result
 class BulkOperationResult extends Equatable {
-  final String queueId;
-  final bool success;
-  final String? errorMessage;
 
   const BulkOperationResult({
     required this.queueId,
     required this.success,
     this.errorMessage,
   });
+  final String queueId;
+  final bool success;
+  final String? errorMessage;
 
   @override
   List<Object?> get props => [queueId, success, errorMessage];
@@ -414,17 +390,6 @@ class BulkOperationResult extends Equatable {
 
 /// Moderation statistics (Point 250)
 class ModerationStatistics extends Equatable {
-  final int totalPendingReports;
-  final int totalAssignedReports;
-  final int totalResolvedToday;
-  final int totalResolvedWeek;
-  final int totalResolvedMonth;
-  final double avgResolutionTime; // Minutes
-  final Map<String, int> reportsByCategory;
-  final Map<String, int> actionsByType;
-  final Map<String, ModeratorStats> moderatorStats;
-  final List<TrendingIssue> trendingIssues;
-  final DateTime calculatedAt;
 
   const ModerationStatistics({
     required this.totalPendingReports,
@@ -439,6 +404,17 @@ class ModerationStatistics extends Equatable {
     required this.trendingIssues,
     required this.calculatedAt,
   });
+  final int totalPendingReports;
+  final int totalAssignedReports;
+  final int totalResolvedToday;
+  final int totalResolvedWeek;
+  final int totalResolvedMonth;
+  final double avgResolutionTime; // Minutes
+  final Map<String, int> reportsByCategory;
+  final Map<String, int> actionsByType;
+  final Map<String, ModeratorStats> moderatorStats;
+  final List<TrendingIssue> trendingIssues;
+  final DateTime calculatedAt;
 
   @override
   List<Object?> get props => [
@@ -457,16 +433,7 @@ class ModerationStatistics extends Equatable {
 }
 
 /// Moderator statistics
-class ModeratorStats extends Equatable {
-  final String moderatorId;
-  final String moderatorName;
-  final int totalReviewed;
-  final int reviewedToday;
-  final int reviewedWeek;
-  final int reviewedMonth;
-  final double avgResolutionTime; // Minutes
-  final Map<String, int> actionBreakdown;
-  final double accuracy; // Percentage (based on appeal success rate)
+class ModeratorStats extends Equatable { // Percentage (based on appeal success rate)
 
   const ModeratorStats({
     required this.moderatorId,
@@ -479,6 +446,15 @@ class ModeratorStats extends Equatable {
     required this.actionBreakdown,
     required this.accuracy,
   });
+  final String moderatorId;
+  final String moderatorName;
+  final int totalReviewed;
+  final int reviewedToday;
+  final int reviewedWeek;
+  final int reviewedMonth;
+  final double avgResolutionTime; // Minutes
+  final Map<String, int> actionBreakdown;
+  final double accuracy;
 
   @override
   List<Object?> get props => [
@@ -496,10 +472,6 @@ class ModeratorStats extends Equatable {
 
 /// Trending issue
 class TrendingIssue extends Equatable {
-  final String category;
-  final int reportCount;
-  final double growthRate; // Percentage change from previous period
-  final TrendDirection trend;
 
   const TrendingIssue({
     required this.category,
@@ -507,6 +479,10 @@ class TrendingIssue extends Equatable {
     required this.growthRate,
     required this.trend,
   });
+  final String category;
+  final int reportCount;
+  final double growthRate; // Percentage change from previous period
+  final TrendDirection trend;
 
   @override
   List<Object?> get props => [category, reportCount, growthRate, trend];

@@ -6,10 +6,9 @@ class BlindDateProfileModel extends BlindDateProfile {
   const BlindDateProfileModel({
     required super.id,
     required super.odldid,
-    super.isActive = true,
+    required super.createdAt, super.isActive = true,
     super.photosRevealed = false,
     super.messageCount = 0,
-    required super.createdAt,
     super.revealedAt,
   });
 
@@ -67,9 +66,8 @@ class BlindMatchModel extends BlindMatch {
     required super.profile2Id,
     required super.user1Id,
     required super.user2Id,
-    super.messageCount = 0,
+    required super.matchedAt, super.messageCount = 0,
     super.isRevealed = false,
-    required super.matchedAt,
     super.revealedAt,
     super.conversationId,
   });

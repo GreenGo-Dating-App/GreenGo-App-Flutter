@@ -4,21 +4,18 @@ import '../../../membership/domain/entities/membership.dart';
 /// User Journey Entity
 /// Tracks user progression through app milestones and unlocks
 class UserJourney extends Equatable {
+
+  const UserJourney({
+    required this.userId,
+    required this.completedMilestones,
+    required this.totalPoints, required this.createdAt, required this.updatedAt, this.currentMilestone,
+  });
   final String userId;
   final List<JourneyMilestone> completedMilestones;
   final JourneyMilestone? currentMilestone;
   final int totalPoints;
   final DateTime createdAt;
   final DateTime updatedAt;
-
-  const UserJourney({
-    required this.userId,
-    required this.completedMilestones,
-    this.currentMilestone,
-    required this.totalPoints,
-    required this.createdAt,
-    required this.updatedAt,
-  });
 
   /// Get progress percentage through journey
   double get overallProgress {
@@ -64,17 +61,6 @@ class UserJourney extends Equatable {
 /// Journey Milestone Entity
 /// Represents a progression milestone in the user journey
 class JourneyMilestone extends Equatable {
-  final String milestoneId;
-  final String name;
-  final String description;
-  final String iconAsset;
-  final JourneyCategory category;
-  final JourneyMilestoneType type;
-  final int requiredCount;
-  final List<JourneyReward> rewards;
-  final int sortOrder;
-  final MembershipTier? requiredTier;
-  final String? prerequisiteMilestoneId;
 
   const JourneyMilestone({
     required this.milestoneId,
@@ -89,6 +75,17 @@ class JourneyMilestone extends Equatable {
     this.requiredTier,
     this.prerequisiteMilestoneId,
   });
+  final String milestoneId;
+  final String name;
+  final String description;
+  final String iconAsset;
+  final JourneyCategory category;
+  final JourneyMilestoneType type;
+  final int requiredCount;
+  final List<JourneyReward> rewards;
+  final int sortOrder;
+  final MembershipTier? requiredTier;
+  final String? prerequisiteMilestoneId;
 
   @override
   List<Object?> get props => [
@@ -163,10 +160,6 @@ enum JourneyMilestoneType {
 
 /// Journey Reward
 class JourneyReward extends Equatable {
-  final String type; // coins, xp, badge, boost, feature_unlock
-  final int amount;
-  final String? itemId;
-  final String? description;
 
   const JourneyReward({
     required this.type,
@@ -174,6 +167,10 @@ class JourneyReward extends Equatable {
     this.itemId,
     this.description,
   });
+  final String type; // coins, xp, badge, boost, feature_unlock
+  final int amount;
+  final String? itemId;
+  final String? description;
 
   @override
   List<Object?> get props => [type, amount, itemId, description];
@@ -181,6 +178,16 @@ class JourneyReward extends Equatable {
 
 /// User Milestone Progress
 class UserMilestoneProgress extends Equatable {
+
+  const UserMilestoneProgress({
+    required this.userId,
+    required this.milestoneId,
+    required this.progress,
+    required this.requiredCount,
+    required this.createdAt, this.isCompleted = false,
+    this.completedAt,
+    this.rewardsClaimed = false,
+  });
   final String userId;
   final String milestoneId;
   final int progress;
@@ -189,17 +196,6 @@ class UserMilestoneProgress extends Equatable {
   final DateTime? completedAt;
   final bool rewardsClaimed;
   final DateTime createdAt;
-
-  const UserMilestoneProgress({
-    required this.userId,
-    required this.milestoneId,
-    required this.progress,
-    required this.requiredCount,
-    this.isCompleted = false,
-    this.completedAt,
-    this.rewardsClaimed = false,
-    required this.createdAt,
-  });
 
   double get progressPercentage {
     if (requiredCount == 0) return 100.0;

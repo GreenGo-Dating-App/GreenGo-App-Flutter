@@ -1,18 +1,19 @@
 import 'dart:ui' as ui;
+
+import 'package:audioplayers/audioplayers.dart' as ap show DeviceFileSource;
 import 'package:audioplayers/audioplayers.dart' hide Source;
-import 'package:audioplayers/audioplayers.dart' as ap show Source, DeviceFileSource;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../../../features/coins/data/datasources/coin_remote_datasource.dart';
 import '../../../../features/coins/domain/entities/coin_transaction.dart';
-import '../../../../core/di/injection_container.dart' as di;
 import '../../../../features/membership/domain/entities/membership.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 
 /// Message Bubble Widget
@@ -21,6 +22,28 @@ import '../../domain/entities/message.dart';
 /// Double-tap to toggle between translated and original text
 /// Long-press for message options (reply, forward, star, report)
 class MessageBubble extends StatefulWidget {
+
+  const MessageBubble({
+    required this.message, required this.isCurrentUser, super.key,
+    this.currentUserId,
+    this.otherUserLanguage,
+    this.showOriginalText = true,
+    this.showDifficultyBadge = true,
+    this.showCulturalTips = true,
+    this.showWordBreakdown = true,
+    this.showPronunciation = true,
+    this.showLanguageFlags = true,
+    this.ttsReadTranslated = false,
+    this.userSelectedLanguage,
+    this.otherUserIsMale = true,
+    this.currentUserIsMale = true,
+    this.onReport,
+    this.onStar,
+    this.onReply,
+    this.onForward,
+    this.onAlbumTap,
+    this.userMembershipTier,
+  });
   final Message message;
   final bool isCurrentUser;
   final String? currentUserId;
@@ -41,30 +64,6 @@ class MessageBubble extends StatefulWidget {
   final Function(Message)? onForward;
   final Function(Message)? onAlbumTap;
   final MembershipTier? userMembershipTier;
-
-  const MessageBubble({
-    super.key,
-    required this.message,
-    required this.isCurrentUser,
-    this.currentUserId,
-    this.otherUserLanguage,
-    this.showOriginalText = true,
-    this.showDifficultyBadge = true,
-    this.showCulturalTips = true,
-    this.showWordBreakdown = true,
-    this.showPronunciation = true,
-    this.showLanguageFlags = true,
-    this.ttsReadTranslated = false,
-    this.userSelectedLanguage,
-    this.otherUserIsMale = true,
-    this.currentUserIsMale = true,
-    this.onReport,
-    this.onStar,
-    this.onReply,
-    this.onForward,
-    this.onAlbumTap,
-    this.userMembershipTier,
-  });
 
   @override
   State<MessageBubble> createState() => _MessageBubbleState();
@@ -171,7 +170,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     );
   }
 
-  void _showWordBreakdown() async {
+  Future<void> _showWordBreakdown() async {
     final tier = widget.userMembershipTier ?? MembershipTier.free;
     if (tier == MembershipTier.free) {
       if (mounted) {
@@ -303,7 +302,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     // Sender's gender determines the voice
-    final bool senderIsMale = widget.isCurrentUser
+    final senderIsMale = widget.isCurrentUser
         ? widget.currentUserIsMale
         : widget.otherUserIsMale;
 
@@ -499,7 +498,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
 
     // albumShare is tappable for the receiver; albumRevoke is never tappable
-    final bool isTappable = isShare && !isCurrentUser;
+    final isTappable = isShare && !isCurrentUser;
 
     return GestureDetector(
       onTap: isTappable ? () => widget.onAlbumTap?.call(message) : null,
@@ -746,7 +745,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               const SizedBox(height: 4),
               Text(
                 _romanizedText!,
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 12,
                   fontStyle: FontStyle.italic,
@@ -904,7 +903,7 @@ class _MessageBubbleState extends State<MessageBubble> {
       case MessageType.system:
         return Text(
           message.content,
-          style: TextStyle(
+          style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 13,
             fontStyle: FontStyle.italic,
@@ -1145,9 +1144,9 @@ class _MessageBubbleState extends State<MessageBubble> {
 
 /// Full-screen video player widget
 class _FullScreenVideoPlayer extends StatefulWidget {
-  final String videoUrl;
 
   const _FullScreenVideoPlayer({required this.videoUrl});
+  final String videoUrl;
 
   @override
   State<_FullScreenVideoPlayer> createState() => _FullScreenVideoPlayerState();

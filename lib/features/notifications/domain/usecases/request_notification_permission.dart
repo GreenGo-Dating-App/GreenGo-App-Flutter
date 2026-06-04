@@ -4,9 +4,9 @@ import '../repositories/notification_repository.dart';
 
 /// Request Notification Permission Use Case
 class RequestNotificationPermission {
-  final NotificationRepository repository;
 
   RequestNotificationPermission(this.repository);
+  final NotificationRepository repository;
 
   Future<Either<Failure, bool>> call() {
     return repository.requestPermission();
@@ -15,9 +15,9 @@ class RequestNotificationPermission {
 
 /// Get FCM Token Use Case
 class GetFCMToken {
-  final NotificationRepository repository;
 
   GetFCMToken(this.repository);
+  final NotificationRepository repository;
 
   Future<Either<Failure, String?>> call() {
     return repository.getFCMToken();
@@ -26,9 +26,9 @@ class GetFCMToken {
 
 /// Save FCM Token Use Case
 class SaveFCMToken {
-  final NotificationRepository repository;
 
   SaveFCMToken(this.repository);
+  final NotificationRepository repository;
 
   Future<Either<Failure, void>> call(String userId, String token) {
     return repository.saveFCMToken(userId, token);

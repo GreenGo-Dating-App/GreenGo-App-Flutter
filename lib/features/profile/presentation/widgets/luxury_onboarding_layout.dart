@@ -1,11 +1,21 @@
-import 'dart:ui';
 import 'dart:math' as math;
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 
 /// A luxury onboarding layout with glass morphism effects, gradients, and patterns.
 /// Wraps onboarding screens to provide a consistent premium feel.
 class LuxuryOnboardingLayout extends StatefulWidget {
+
+  const LuxuryOnboardingLayout({
+    required this.child, required this.title, required this.subtitle, super.key,
+    this.progressBar,
+    this.onBack,
+    this.showBackButton = true,
+    this.bottomChild,
+  });
   final Widget child;
   final String title;
   final String subtitle;
@@ -14,17 +24,6 @@ class LuxuryOnboardingLayout extends StatefulWidget {
   final bool showBackButton;
   /// Fixed widget at the bottom (e.g. Continue button), always visible above keyboard
   final Widget? bottomChild;
-
-  const LuxuryOnboardingLayout({
-    super.key,
-    required this.child,
-    required this.title,
-    required this.subtitle,
-    this.progressBar,
-    this.onBack,
-    this.showBackButton = true,
-    this.bottomChild,
-  });
 
   @override
   State<LuxuryOnboardingLayout> createState() => _LuxuryOnboardingLayoutState();
@@ -666,11 +665,6 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
 
 /// Sparkle particle data
 class _SparkleParticle {
-  final double x;
-  final double y;
-  final double size;
-  final double speed;
-  final double phase;
 
   const _SparkleParticle({
     required this.x,
@@ -679,19 +673,24 @@ class _SparkleParticle {
     required this.speed,
     required this.phase,
   });
+  final double x;
+  final double y;
+  final double size;
+  final double speed;
+  final double phase;
 }
 
 /// Custom painter for sparkle particles
 class _SparklePainter extends CustomPainter {
-  final List<_SparkleParticle> sparkles;
-  final double progress;
-  final double pulseValue;
 
   _SparklePainter({
     required this.sparkles,
     required this.progress,
     required this.pulseValue,
   });
+  final List<_SparkleParticle> sparkles;
+  final double progress;
+  final double pulseValue;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -728,16 +727,15 @@ class _SparklePainter extends CustomPainter {
 
 /// Luxury glass card for content sections
 class LuxuryGlassCard extends StatelessWidget {
-  final Widget child;
-  final EdgeInsetsGeometry? padding;
-  final EdgeInsetsGeometry? margin;
 
   const LuxuryGlassCard({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.padding,
     this.margin,
   });
+  final Widget child;
+  final EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? margin;
 
   @override
   Widget build(BuildContext context) {
@@ -781,18 +779,17 @@ class LuxuryGlassCard extends StatelessWidget {
 
 /// Luxury button with gradient and glass effect
 class LuxuryButton extends StatefulWidget {
-  final String text;
-  final VoidCallback? onPressed;
-  final bool isLoading;
-  final bool isSecondary;
 
   const LuxuryButton({
-    super.key,
-    required this.text,
+    required this.text, super.key,
     this.onPressed,
     this.isLoading = false,
     this.isSecondary = false,
   });
+  final String text;
+  final VoidCallback? onPressed;
+  final bool isLoading;
+  final bool isSecondary;
 
   @override
   State<LuxuryButton> createState() => _LuxuryButtonState();
@@ -840,13 +837,13 @@ class _LuxuryButtonState extends State<LuxuryButton>
                 borderRadius: BorderRadius.circular(16),
                 gradient: widget.isSecondary
                     ? null
-                    : LinearGradient(
+                    : const LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          const Color(0xFFFFD700),
+                          Color(0xFFFFD700),
                           AppColors.richGold,
-                          const Color(0xFFB8860B),
+                          Color(0xFFB8860B),
                         ],
                       ),
                 color: widget.isSecondary
@@ -900,6 +897,19 @@ class _LuxuryButtonState extends State<LuxuryButton>
 
 /// Luxury text field with glass effect
 class LuxuryTextField extends StatelessWidget {
+
+  const LuxuryTextField({
+    required this.label, super.key,
+    this.controller,
+    this.hint,
+    this.prefixIcon,
+    this.suffix,
+    this.obscureText = false,
+    this.keyboardType,
+    this.maxLines = 1,
+    this.validator,
+    this.onChanged,
+  });
   final TextEditingController? controller;
   final String label;
   final String? hint;
@@ -910,20 +920,6 @@ class LuxuryTextField extends StatelessWidget {
   final int maxLines;
   final String? Function(String?)? validator;
   final ValueChanged<String>? onChanged;
-
-  const LuxuryTextField({
-    super.key,
-    this.controller,
-    required this.label,
-    this.hint,
-    this.prefixIcon,
-    this.suffix,
-    this.obscureText = false,
-    this.keyboardType,
-    this.maxLines = 1,
-    this.validator,
-    this.onChanged,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -993,18 +989,17 @@ class LuxuryTextField extends StatelessWidget {
 
 /// Luxury selection chip
 class LuxuryChip extends StatelessWidget {
-  final String label;
-  final bool isSelected;
-  final VoidCallback? onTap;
-  final IconData? icon;
 
   const LuxuryChip({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.isSelected = false,
     this.onTap,
     this.icon,
   });
+  final String label;
+  final bool isSelected;
+  final VoidCallback? onTap;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -1065,9 +1060,9 @@ class LuxuryChip extends StatelessWidget {
 
 /// Custom painter for luxury diagonal pattern
 class _LuxuryPatternPainter extends CustomPainter {
-  final Color color;
 
   _LuxuryPatternPainter({required this.color});
+  final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -1079,7 +1074,7 @@ class _LuxuryPatternPainter extends CustomPainter {
     const spacing = 50.0;
 
     // Draw diagonal lines
-    for (double i = -size.height; i < size.width + size.height; i += spacing) {
+    for (var i = -size.height; i < size.width + size.height; i += spacing) {
       canvas.drawLine(
         Offset(i, 0),
         Offset(i + size.height, size.height),

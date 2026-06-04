@@ -4,6 +4,15 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents a message sent within a community group chat
 class CommunityMessage extends Equatable {
+
+  const CommunityMessage({
+    required this.id,
+    required this.communityId,
+    required this.senderId,
+    required this.senderName,
+    required this.content, required this.sentAt, this.senderPhotoUrl,
+    this.type = CommunityMessageType.text,
+  });
   final String id;
   final String communityId;
   final String senderId;
@@ -12,17 +21,6 @@ class CommunityMessage extends Equatable {
   final String content;
   final DateTime sentAt;
   final CommunityMessageType type;
-
-  const CommunityMessage({
-    required this.id,
-    required this.communityId,
-    required this.senderId,
-    required this.senderName,
-    this.senderPhotoUrl,
-    required this.content,
-    required this.sentAt,
-    this.type = CommunityMessageType.text,
-  });
 
   /// Check if message was sent by a specific user
   bool isSentBy(String userId) => senderId == userId;

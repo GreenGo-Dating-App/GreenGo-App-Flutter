@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import '../../domain/entities/login_streak.dart';
 
 /// Daily Reward Dialog
 /// Shows celebratory animation when user earns daily login rewards
 class DailyRewardDialog extends StatefulWidget {
+
+  const DailyRewardDialog({
+    required this.reward, required this.currentStreak, super.key,
+    this.nextMilestone,
+    this.daysUntilNextMilestone,
+    this.onClose,
+  });
   final DailyLoginReward reward;
   final int currentStreak;
   final StreakMilestone? nextMilestone;
   final int? daysUntilNextMilestone;
   final VoidCallback? onClose;
-
-  const DailyRewardDialog({
-    super.key,
-    required this.reward,
-    required this.currentStreak,
-    this.nextMilestone,
-    this.daysUntilNextMilestone,
-    this.onClose,
-  });
 
   /// Show the dialog
   static Future<void> show(
@@ -345,14 +342,13 @@ class _DailyRewardDialogState extends State<DailyRewardDialog>
 /// Milestone Claimed Dialog
 /// Shows when user claims a streak milestone
 class MilestoneClaimedDialog extends StatelessWidget {
-  final StreakMilestone milestone;
-  final VoidCallback? onClose;
 
   const MilestoneClaimedDialog({
-    super.key,
-    required this.milestone,
+    required this.milestone, super.key,
     this.onClose,
   });
+  final StreakMilestone milestone;
+  final VoidCallback? onClose;
 
   static Future<void> show(
     BuildContext context, {

@@ -48,11 +48,6 @@ extension PreSaleTierExtension on PreSaleTier {
 
 /// A pre-sale entry from the Firestore `pre_sale` collection
 class PreSaleEntry {
-  final String email;
-  final PreSaleTier tier;
-  final int numberOfDays;
-  final DateTime? addedAt;
-  final String? addedBy;
 
   PreSaleEntry({
     required this.email,
@@ -75,6 +70,11 @@ class PreSaleEntry {
       addedBy: data['addedBy'] as String?,
     );
   }
+  final String email;
+  final PreSaleTier tier;
+  final int numberOfDays;
+  final DateTime? addedAt;
+  final String? addedBy;
 
   Map<String, dynamic> toFirestore() {
     return {
@@ -89,10 +89,6 @@ class PreSaleEntry {
 
 /// Result of importing pre-sale entries from CSV
 class PreSaleImportResult {
-  final int successCount;
-  final int duplicateCount;
-  final int errorCount;
-  final List<String> errors;
 
   PreSaleImportResult({
     required this.successCount,
@@ -100,6 +96,10 @@ class PreSaleImportResult {
     required this.errorCount,
     required this.errors,
   });
+  final int successCount;
+  final int duplicateCount;
+  final int errorCount;
+  final List<String> errors;
 
   int get totalProcessed => successCount + duplicateCount + errorCount;
   bool get hasErrors => errorCount > 0;
@@ -121,13 +121,13 @@ class PreSaleImportResult {
 /// 2. A subscription that starts when countdown ends and lasts `numberOfDays`
 /// 3. A base membership that expires at the same time as the subscription
 class PreSaleService {
-  final FirebaseFirestore _firestore;
-
-  static const String collectionName = 'pre_sale';
 
   PreSaleService({
     FirebaseFirestore? firestore,
   }) : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
+
+  static const String collectionName = 'pre_sale';
 
   /// Normalize email to doc ID
   static String emailToDocId(String email) {
@@ -195,11 +195,11 @@ class PreSaleService {
     List<Map<String, String>> rows, {
     String? addedBy,
   }) async {
-    int successCount = 0;
-    int duplicateCount = 0;
-    int errorCount = 0;
-    final List<String> errors = [];
-    final Set<String> processedEmails = {};
+    var successCount = 0;
+    var duplicateCount = 0;
+    var errorCount = 0;
+    final errors = <String>[];
+    final processedEmails = <String>{};
 
     final batch = _firestore.batch();
 

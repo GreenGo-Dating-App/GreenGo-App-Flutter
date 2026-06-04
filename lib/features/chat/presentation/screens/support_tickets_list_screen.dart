@@ -1,20 +1,20 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import 'support_chat_screen.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../generated/app_localizations.dart';
+import 'support_chat_screen.dart';
 
 /// Support Tickets List Screen
 ///
 /// Shows the user's support tickets and allows creating new ones
 class SupportTicketsListScreen extends StatefulWidget {
-  final String currentUserId;
 
   const SupportTicketsListScreen({
-    super.key,
-    required this.currentUserId,
+    required this.currentUserId, super.key,
   });
+  final String currentUserId;
 
   @override
   State<SupportTicketsListScreen> createState() => _SupportTicketsListScreenState();
@@ -200,7 +200,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
                           if (lastMessageAt != null)
                             Text(
                               _formatDate(lastMessageAt.toDate()),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
                               ),
@@ -333,13 +333,13 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
 }
 
 class _CreateTicketDialog extends StatefulWidget {
-  final String currentUserId;
-  final Function(String conversationId) onCreated;
 
   const _CreateTicketDialog({
     required this.currentUserId,
     required this.onCreated,
   });
+  final String currentUserId;
+  final Function(String conversationId) onCreated;
 
   @override
   State<_CreateTicketDialog> createState() => _CreateTicketDialogState();
@@ -385,7 +385,7 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
       final now = DateTime.now();
 
       // Get user profile for sender info
-      Map<String, dynamic> userData = {};
+      var userData = <String, dynamic>{};
       try {
         final userProfile = await firestore
             .collection('profiles')
@@ -425,7 +425,7 @@ class _CreateTicketDialogState extends State<_CreateTicketDialog> {
       });
 
       // Create the initial ticket message with formatted content
-      final String ticketContent = '''📋 **New Support Ticket**
+      final ticketContent = '''📋 **New Support Ticket**
 
 **Category:** $categoryLabel
 **Subject:** ${_subjectController.text.trim()}
@@ -529,16 +529,16 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
                 hintText: l10n.chatSubjectHint,
-                hintStyle: TextStyle(color: AppColors.textSecondary),
+                hintStyle: const TextStyle(color: AppColors.textSecondary),
                 filled: true,
                 fillColor: AppColors.backgroundDark,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: AppColors.divider),
+                  borderSide: const BorderSide(color: AppColors.divider),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: AppColors.divider),
+                  borderSide: const BorderSide(color: AppColors.divider),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
@@ -563,16 +563,16 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
               maxLines: 4,
               decoration: InputDecoration(
                 hintText: l10n.chatDetailsHint,
-                hintStyle: TextStyle(color: AppColors.textSecondary),
+                hintStyle: const TextStyle(color: AppColors.textSecondary),
                 filled: true,
                 fillColor: AppColors.backgroundDark,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: AppColors.divider),
+                  borderSide: const BorderSide(color: AppColors.divider),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: AppColors.divider),
+                  borderSide: const BorderSide(color: AppColors.divider),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),

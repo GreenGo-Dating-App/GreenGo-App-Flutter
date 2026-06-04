@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../domain/entities/map_user.dart';
 import '../bloc/explore_map_bloc.dart';
 import '../bloc/explore_map_event.dart';
 import '../bloc/explore_map_state.dart';
-import '../../domain/entities/map_user.dart';
 
 /// Explore Map Screen — List-based nearby users view.
 ///
@@ -82,7 +83,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
           BlocBuilder<ExploreMapBloc, ExploreMapState>(
             builder: (context, state) {
               final showOnMap =
-                  state is ExploreMapLoaded ? state.showOnMap : true;
+                  state is! ExploreMapLoaded || state.showOnMap;
               return Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -97,7 +98,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                   ),
                   Switch(
                     value: showOnMap,
-                    activeColor: AppColors.successGreen,
+                    activeThumbColor: AppColors.successGreen,
                     inactiveThumbColor: AppColors.textTertiary,
                     inactiveTrackColor: AppColors.divider,
                     onChanged: (value) {
@@ -455,7 +456,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
             Text(
               l10n.exploreMapExpandRadiusHint,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 14,
               ),

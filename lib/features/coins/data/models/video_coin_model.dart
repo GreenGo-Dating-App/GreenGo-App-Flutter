@@ -52,9 +52,8 @@ class VideoCoinTransactionModel extends VideoCoinTransaction {
     required super.type,
     required super.minutes,
     required super.balanceAfter,
-    super.relatedUserId,
+    required super.createdAt, super.relatedUserId,
     super.callId,
-    required super.createdAt,
   });
 
   /// Create from Firestore document

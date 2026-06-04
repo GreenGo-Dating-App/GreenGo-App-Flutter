@@ -8,9 +8,8 @@ class TrustedContactModel extends TrustedContact {
     required super.userId,
     required super.contactName,
     required super.contactPhone,
-    super.contactEmail,
+    required super.createdAt, super.contactEmail,
     super.isVerified = false,
-    required super.createdAt,
     super.lastNotifiedAt,
   });
 
@@ -70,8 +69,7 @@ class SharedDateModel extends SharedDate {
     required super.userId,
     required super.scheduledDateId,
     required super.matchName,
-    super.matchPhotoUrl,
-    required super.dateTime,
+    required super.dateTime, required super.createdAt, super.matchPhotoUrl,
     super.venueName,
     super.venueAddress,
     super.venueLat,
@@ -80,7 +78,6 @@ class SharedDateModel extends SharedDate {
     super.status = ShareStatus.pending,
     super.checkInTime,
     super.safeArrivalTime,
-    required super.createdAt,
     super.emergencyNote,
   });
 

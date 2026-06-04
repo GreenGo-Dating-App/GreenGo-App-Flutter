@@ -4,6 +4,21 @@ import 'order.dart';
 /// Invoice Entity
 /// Generated for each completed order for record keeping
 class Invoice extends Equatable {
+
+  const Invoice({
+    required this.invoiceId,
+    required this.invoiceNumber,
+    required this.orderId,
+    required this.userId,
+    required this.status, required this.issueDate, required this.lineItems, required this.subtotal, required this.taxAmount, required this.total, required this.paymentMethod, this.userEmail,
+    this.userName,
+    this.dueDate,
+    this.paidDate,
+    this.taxRate = 0.0,
+    this.currency = 'USD',
+    this.notes,
+    this.billingAddress,
+  });
   final String invoiceId;
   final String invoiceNumber; // Human-readable INV-YYYYMMDD-XXXX
   final String orderId;
@@ -23,28 +38,6 @@ class Invoice extends Equatable {
   final PaymentMethod paymentMethod;
   final String? notes;
   final BillingAddress? billingAddress;
-
-  const Invoice({
-    required this.invoiceId,
-    required this.invoiceNumber,
-    required this.orderId,
-    required this.userId,
-    this.userEmail,
-    this.userName,
-    required this.status,
-    required this.issueDate,
-    this.dueDate,
-    this.paidDate,
-    required this.lineItems,
-    required this.subtotal,
-    this.taxRate = 0.0,
-    required this.taxAmount,
-    required this.total,
-    this.currency = 'USD',
-    required this.paymentMethod,
-    this.notes,
-    this.billingAddress,
-  });
 
   /// Get display total
   String get displayTotal {
@@ -83,11 +76,6 @@ class Invoice extends Equatable {
 
 /// Invoice Line Item
 class InvoiceLineItem extends Equatable {
-  final String itemId;
-  final String description;
-  final int quantity;
-  final double unitPrice;
-  final double totalPrice;
 
   const InvoiceLineItem({
     required this.itemId,
@@ -96,6 +84,11 @@ class InvoiceLineItem extends Equatable {
     required this.unitPrice,
     required this.totalPrice,
   });
+  final String itemId;
+  final String description;
+  final int quantity;
+  final double unitPrice;
+  final double totalPrice;
 
   /// Get display price
   String displayTotalPrice(String currency) {
@@ -146,13 +139,6 @@ extension InvoiceStatusExtension on InvoiceStatus {
 
 /// Billing Address
 class BillingAddress extends Equatable {
-  final String? name;
-  final String? addressLine1;
-  final String? addressLine2;
-  final String? city;
-  final String? state;
-  final String? postalCode;
-  final String? country;
 
   const BillingAddress({
     this.name,
@@ -163,6 +149,13 @@ class BillingAddress extends Equatable {
     this.postalCode,
     this.country,
   });
+  final String? name;
+  final String? addressLine1;
+  final String? addressLine2;
+  final String? city;
+  final String? state;
+  final String? postalCode;
+  final String? country;
 
   /// Get formatted address
   String get formattedAddress {

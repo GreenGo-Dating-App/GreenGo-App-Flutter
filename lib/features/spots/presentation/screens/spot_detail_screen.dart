@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/spot.dart';
@@ -20,9 +21,9 @@ import '../bloc/spots_state.dart';
 /// - "Write a Review" button
 /// - Dark theme using AppColors
 class SpotDetailScreen extends StatefulWidget {
-  final String spotId;
 
-  const SpotDetailScreen({super.key, required this.spotId});
+  const SpotDetailScreen({required this.spotId, super.key});
+  final String spotId;
 
   @override
   State<SpotDetailScreen> createState() => _SpotDetailScreenState();
@@ -256,7 +257,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     child: Center(
                       child: Text(
                         l10n.spotsNoReviews,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 14,
                         ),
@@ -264,7 +265,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     ),
                   )
                 else
-                  ...reviews.map((review) => _buildReviewTile(review)),
+                  ...reviews.map(_buildReviewTile),
                 const SizedBox(height: 32),
               ],
             ),
@@ -447,7 +448,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   void _showReviewDialog(BuildContext context, String spotId) {
     final l10n = AppLocalizations.of(context)!;
     final textController = TextEditingController();
-    int selectedRating = 5;
+    var selectedRating = 5;
 
     showModalBottomSheet(
       context: context,
@@ -606,11 +607,11 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
   }
 
   List<Widget> _buildStars(double rating) {
-    final List<Widget> stars = [];
+    final stars = <Widget>[];
     final fullStars = rating.floor();
     final hasHalfStar = (rating - fullStars) >= 0.5;
 
-    for (int i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
       if (i < fullStars) {
         stars.add(const Icon(Icons.star, color: AppColors.richGold, size: 20));
       } else if (i == fullStars && hasHalfStar) {

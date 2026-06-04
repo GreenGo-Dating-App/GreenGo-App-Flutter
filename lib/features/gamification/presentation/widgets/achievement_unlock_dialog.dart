@@ -1,20 +1,20 @@
-/**
- * Achievement Unlock Dialog
- * Points 176-185: Celebration animation when achievement is unlocked
- */
+/// Achievement Unlock Dialog
+/// Points 176-185: Celebration animation when achievement is unlocked
+library;
+
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import '../../domain/entities/achievement.dart';
+
 import '../../../../generated/app_localizations.dart';
+import '../../domain/entities/achievement.dart';
 
 class AchievementUnlockDialog extends StatefulWidget {
-  final Achievement achievement;
 
   const AchievementUnlockDialog({
-    Key? key,
-    required this.achievement,
-  }) : super(key: key);
+    required this.achievement, super.key,
+  });
+  final Achievement achievement;
 
   @override
   State<AchievementUnlockDialog> createState() =>
@@ -321,20 +321,20 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
 
 /// Particle painter for celebration effect
 class ParticlePainter extends CustomPainter {
-  final double progress;
-  final Color color;
 
   ParticlePainter({
     required this.progress,
     required this.color,
   });
+  final double progress;
+  final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()..color = color;
 
     // Generate particles
-    for (int i = 0; i < 20; i++) {
+    for (var i = 0; i < 20; i++) {
       final angle = (i / 20) * 2 * math.pi;
       final distance = progress * size.width / 2;
 

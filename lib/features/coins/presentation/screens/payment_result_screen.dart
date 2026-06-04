@@ -9,14 +9,13 @@ import '../../../main/presentation/screens/main_navigation_screen.dart';
 /// Screen shown after Stripe payment redirect.
 /// Polls Firestore for the stripe_orders document to verify payment.
 class PaymentResultScreen extends StatefulWidget {
-  final bool success;
-  final String? productId;
 
   const PaymentResultScreen({
-    super.key,
-    required this.success,
+    required this.success, super.key,
     this.productId,
   });
+  final bool success;
+  final String? productId;
 
   @override
   State<PaymentResultScreen> createState() => _PaymentResultScreenState();
@@ -54,7 +53,7 @@ class _PaymentResultScreenState extends State<PaymentResultScreen> {
     }
 
     // Poll Firestore for up to 15 seconds to find the completed order
-    int attempts = 0;
+    var attempts = 0;
     while (attempts < 15 && mounted) {
       try {
         final query = await FirebaseFirestore.instance

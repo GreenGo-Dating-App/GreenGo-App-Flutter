@@ -12,9 +12,9 @@ import '../models/spot_review_model.dart';
 /// Implementation of [SpotsRepository] that delegates to the remote
 /// data source and wraps results in [Either] for error handling.
 class SpotsRepositoryImpl implements SpotsRepository {
-  final SpotsRemoteDataSource remoteDataSource;
 
   SpotsRepositoryImpl({required this.remoteDataSource});
+  final SpotsRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, List<Spot>>> getSpots({

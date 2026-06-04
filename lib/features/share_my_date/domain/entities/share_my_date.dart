@@ -2,6 +2,16 @@ import 'package:equatable/equatable.dart';
 
 /// Trusted Contact Entity
 class TrustedContact extends Equatable {
+
+  const TrustedContact({
+    required this.id,
+    required this.userId,
+    required this.contactName,
+    required this.contactPhone,
+    required this.createdAt, this.contactEmail,
+    this.isVerified = false,
+    this.lastNotifiedAt,
+  });
   final String id;
   final String userId;
   final String contactName;
@@ -10,17 +20,6 @@ class TrustedContact extends Equatable {
   final bool isVerified;
   final DateTime createdAt;
   final DateTime? lastNotifiedAt;
-
-  const TrustedContact({
-    required this.id,
-    required this.userId,
-    required this.contactName,
-    required this.contactPhone,
-    this.contactEmail,
-    this.isVerified = false,
-    required this.createdAt,
-    this.lastNotifiedAt,
-  });
 
   @override
   List<Object?> get props => [
@@ -37,6 +36,23 @@ class TrustedContact extends Equatable {
 
 /// Shared Date Entity
 class SharedDate extends Equatable {
+
+  const SharedDate({
+    required this.id,
+    required this.userId,
+    required this.scheduledDateId,
+    required this.matchName,
+    required this.dateTime, required this.createdAt, this.matchPhotoUrl,
+    this.venueName,
+    this.venueAddress,
+    this.venueLat,
+    this.venueLng,
+    this.notifiedContactIds = const [],
+    this.status = ShareStatus.pending,
+    this.checkInTime,
+    this.safeArrivalTime,
+    this.emergencyNote,
+  });
   final String id;
   final String userId;
   final String scheduledDateId;
@@ -53,25 +69,6 @@ class SharedDate extends Equatable {
   final DateTime? safeArrivalTime;
   final DateTime createdAt;
   final String? emergencyNote;
-
-  const SharedDate({
-    required this.id,
-    required this.userId,
-    required this.scheduledDateId,
-    required this.matchName,
-    this.matchPhotoUrl,
-    required this.dateTime,
-    this.venueName,
-    this.venueAddress,
-    this.venueLat,
-    this.venueLng,
-    this.notifiedContactIds = const [],
-    this.status = ShareStatus.pending,
-    this.checkInTime,
-    this.safeArrivalTime,
-    required this.createdAt,
-    this.emergencyNote,
-  });
 
   @override
   List<Object?> get props => [
@@ -137,12 +134,6 @@ class ShareMyDateConfig {
 
 /// Safety Check-In Result
 class SafetyCheckIn extends Equatable {
-  final String sharedDateId;
-  final DateTime checkInTime;
-  final double? lat;
-  final double? lng;
-  final bool atExpectedLocation;
-  final String? note;
 
   const SafetyCheckIn({
     required this.sharedDateId,
@@ -152,6 +143,12 @@ class SafetyCheckIn extends Equatable {
     this.atExpectedLocation = false,
     this.note,
   });
+  final String sharedDateId;
+  final DateTime checkInTime;
+  final double? lat;
+  final double? lng;
+  final bool atExpectedLocation;
+  final String? note;
 
   @override
   List<Object?> get props => [
@@ -166,14 +163,6 @@ class SafetyCheckIn extends Equatable {
 
 /// Emergency Alert
 class EmergencyAlert extends Equatable {
-  final String id;
-  final String sharedDateId;
-  final String userId;
-  final DateTime triggeredAt;
-  final double? lat;
-  final double? lng;
-  final List<String> notifiedContacts;
-  final String? note;
 
   const EmergencyAlert({
     required this.id,
@@ -185,6 +174,14 @@ class EmergencyAlert extends Equatable {
     this.notifiedContacts = const [],
     this.note,
   });
+  final String id;
+  final String sharedDateId;
+  final String userId;
+  final DateTime triggeredAt;
+  final double? lat;
+  final double? lng;
+  final List<String> notifiedContacts;
+  final String? note;
 
   @override
   List<Object?> get props => [

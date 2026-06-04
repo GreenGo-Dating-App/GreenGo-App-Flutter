@@ -1,9 +1,18 @@
-import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LanguageProvider extends ChangeNotifier {
+
+  LanguageProvider({String? initialLanguage}) {
+    if (initialLanguage != null) {
+      final parts = initialLanguage.split('_');
+      _currentLocale = parts.length > 1
+          ? Locale(parts[0], parts[1])
+          : Locale(parts[0]);
+    }
+  }
   Locale _currentLocale = const Locale('en');
   static const String _languageKey = 'selected_language';
 
@@ -28,15 +37,6 @@ class LanguageProvider extends ChangeNotifier {
     'fr': 'Français',
     'de': 'Deutsch',
   };
-
-  LanguageProvider({String? initialLanguage}) {
-    if (initialLanguage != null) {
-      final parts = initialLanguage.split('_');
-      _currentLocale = parts.length > 1
-          ? Locale(parts[0], parts[1])
-          : Locale(parts[0]);
-    }
-  }
 
   /// Load language from Firestore for the current user (call after auth)
   Future<void> loadFromDatabase() async {

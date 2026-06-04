@@ -13,6 +13,21 @@ enum CheckInStatus {
 /// Date Check-In Entity
 /// Safety feature for real-world dates
 class DateCheckIn extends Equatable {
+
+  const DateCheckIn({
+    required this.id,
+    required this.userId,
+    required this.locationName, required this.scheduledDate, required this.status, required this.createdAt, this.matchId,
+    this.matchName,
+    this.latitude,
+    this.longitude,
+    this.checkInTime,
+    this.checkInInterval = const Duration(minutes: 30),
+    this.emergencyContacts = const [],
+    this.notes,
+    this.logs = const [],
+    this.shareLocationEnabled = false,
+  });
   final String id;
   final String userId;
   final String? matchId;
@@ -29,25 +44,6 @@ class DateCheckIn extends Equatable {
   final List<CheckInLog> logs;
   final DateTime createdAt;
   final bool shareLocationEnabled;
-
-  const DateCheckIn({
-    required this.id,
-    required this.userId,
-    this.matchId,
-    this.matchName,
-    required this.locationName,
-    this.latitude,
-    this.longitude,
-    required this.scheduledDate,
-    this.checkInTime,
-    this.checkInInterval = const Duration(minutes: 30),
-    this.emergencyContacts = const [],
-    required this.status,
-    this.notes,
-    this.logs = const [],
-    required this.createdAt,
-    this.shareLocationEnabled = false,
-  });
 
   bool get isActive =>
       status == CheckInStatus.scheduled || status == CheckInStatus.pending;
@@ -122,6 +118,15 @@ class DateCheckIn extends Equatable {
 
 /// Emergency Contact
 class EmergencyContact extends Equatable {
+
+  const EmergencyContact({
+    required this.id,
+    required this.name,
+    required this.phoneNumber,
+    required this.relationship, this.email,
+    this.notifyOnCheckIn = false,
+    this.notifyOnEmergency = true,
+  });
   final String id;
   final String name;
   final String phoneNumber;
@@ -129,16 +134,6 @@ class EmergencyContact extends Equatable {
   final String relationship;
   final bool notifyOnCheckIn;
   final bool notifyOnEmergency;
-
-  const EmergencyContact({
-    required this.id,
-    required this.name,
-    required this.phoneNumber,
-    this.email,
-    required this.relationship,
-    this.notifyOnCheckIn = false,
-    this.notifyOnEmergency = true,
-  });
 
   @override
   List<Object?> get props => [
@@ -154,14 +149,6 @@ class EmergencyContact extends Equatable {
 
 /// Check-In Log Entry
 class CheckInLog extends Equatable {
-  final String id;
-  final String checkInId;
-  final DateTime timestamp;
-  final CheckInStatus status;
-  final double? latitude;
-  final double? longitude;
-  final String? message;
-  final bool automaticCheckIn;
 
   const CheckInLog({
     required this.id,
@@ -173,6 +160,14 @@ class CheckInLog extends Equatable {
     this.message,
     this.automaticCheckIn = false,
   });
+  final String id;
+  final String checkInId;
+  final DateTime timestamp;
+  final CheckInStatus status;
+  final double? latitude;
+  final double? longitude;
+  final String? message;
+  final bool automaticCheckIn;
 
   @override
   List<Object?> get props => [

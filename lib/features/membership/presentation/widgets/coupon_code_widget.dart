@@ -1,23 +1,22 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../domain/entities/membership.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/membership_remote_datasource.dart';
+import '../../domain/entities/membership.dart';
 
 class CouponCodeWidget extends StatefulWidget {
+
+  const CouponCodeWidget({
+    required this.userId, required this.currentTier, super.key,
+    this.membershipEndDate,
+    this.onRedemptionSuccess,
+  });
   final String userId;
   final MembershipTier currentTier;
   final DateTime? membershipEndDate;
   final VoidCallback? onRedemptionSuccess;
-
-  const CouponCodeWidget({
-    super.key,
-    required this.userId,
-    required this.currentTier,
-    this.membershipEndDate,
-    this.onRedemptionSuccess,
-  });
 
   @override
   State<CouponCodeWidget> createState() => _CouponCodeWidgetState();
@@ -344,7 +343,7 @@ class _CouponCodeWidgetState extends State<CouponCodeWidget> {
                 if (widget.membershipEndDate != null)
                   Text(
                     'Expires: ${_formatDate(widget.membershipEndDate!)}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 12,
                     ),

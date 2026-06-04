@@ -1,23 +1,20 @@
-/**
- * Seasonal Event Banner Widget
- * Point 200: Display active seasonal events with themed UI
- */
+/// Seasonal Event Banner Widget
+/// Point 200: Display active seasonal events with themed UI
+library;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../domain/usecases/get_seasonal_event.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
 import '../screens/seasonal_event_screen.dart';
 
 class SeasonalEventBanner extends StatefulWidget {
-  final String userId;
 
   const SeasonalEventBanner({
-    Key? key,
-    required this.userId,
-  }) : super(key: key);
+    required this.userId, super.key,
+  });
+  final String userId;
 
   @override
   State<SeasonalEventBanner> createState() => _SeasonalEventBannerState();

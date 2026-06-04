@@ -1,7 +1,6 @@
-/**
- * Grant XP Use Case
- * Point 187: Grant XP to users for various actions
- */
+/// Grant XP Use Case
+/// Point 187: Grant XP to users for various actions
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/user_level.dart';
 import '../repositories/gamification_repository.dart';
 
 class GrantXP implements UseCase<XPGrantResult, GrantXPParams> {
-  final GamificationRepository repository;
 
   GrantXP(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, XPGrantResult>> call(GrantXPParams params) async {
@@ -83,9 +82,6 @@ class GrantXP implements UseCase<XPGrantResult, GrantXPParams> {
 }
 
 class GrantXPParams {
-  final String userId;
-  final int xpAmount;
-  final String reason;
 
   GrantXPParams({
     required this.userId,
@@ -197,17 +193,12 @@ class GrantXPParams {
       reason: 'event_participation',
     );
   }
+  final String userId;
+  final int xpAmount;
+  final String reason;
 }
 
 class XPGrantResult {
-  final UserLevel oldLevel;
-  final UserLevel newLevel;
-  final int xpGranted;
-  final String reason;
-  final bool leveledUp;
-  final int levelsGained;
-  final List<LevelReward> rewards;
-  final bool becameVIP;
 
   XPGrantResult({
     required this.oldLevel,
@@ -219,4 +210,12 @@ class XPGrantResult {
     required this.rewards,
     required this.becameVIP,
   });
+  final UserLevel oldLevel;
+  final UserLevel newLevel;
+  final int xpGranted;
+  final String reason;
+  final bool leveledUp;
+  final int levelsGained;
+  final List<LevelReward> rewards;
+  final bool becameVIP;
 }

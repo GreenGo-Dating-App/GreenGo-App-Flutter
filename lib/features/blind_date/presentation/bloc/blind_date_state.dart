@@ -21,9 +21,9 @@ class BlindDateLoading extends BlindDateState {
 
 /// Error state
 class BlindDateError extends BlindDateState {
-  final String message;
 
   const BlindDateError(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
@@ -31,13 +31,12 @@ class BlindDateError extends BlindDateState {
 
 /// Blind date status loaded
 class BlindDateStatusLoaded extends BlindDateState {
-  final BlindDateProfile? profile;
-  final bool isActive;
 
   const BlindDateStatusLoaded({
-    this.profile,
-    required this.isActive,
+    required this.isActive, this.profile,
   });
+  final BlindDateProfile? profile;
+  final bool isActive;
 
   @override
   List<Object?> get props => [profile, isActive];
@@ -45,9 +44,9 @@ class BlindDateStatusLoaded extends BlindDateState {
 
 /// Blind date mode activated
 class BlindDateModeActivated extends BlindDateState {
-  final BlindDateProfile profile;
 
   const BlindDateModeActivated(this.profile);
+  final BlindDateProfile profile;
 
   @override
   List<Object?> get props => [profile];
@@ -60,15 +59,15 @@ class BlindDateModeDeactivated extends BlindDateState {
 
 /// Blind candidates loaded for swiping
 class BlindCandidatesLoaded extends BlindDateState {
-  final List<BlindProfileView> candidates;
-  final int currentIndex;
-  final bool hasMore;
 
   const BlindCandidatesLoaded({
     required this.candidates,
     this.currentIndex = 0,
     this.hasMore = false,
   });
+  final List<BlindProfileView> candidates;
+  final int currentIndex;
+  final bool hasMore;
 
   /// Get current candidate
   BlindProfileView? get currentCandidate {
@@ -97,13 +96,13 @@ class BlindCandidatesLoaded extends BlindDateState {
 
 /// Like action result
 class BlindLikeActionResult extends BlindDateState {
-  final BlindLikeResult result;
-  final BlindMatch? match;
 
   const BlindLikeActionResult({
     required this.result,
     this.match,
   });
+  final BlindLikeResult result;
+  final BlindMatch? match;
 
   bool get isMatch => result == BlindLikeResult.matched;
 
@@ -118,13 +117,13 @@ class BlindPassActionCompleted extends BlindDateState {
 
 /// Blind matches loaded
 class BlindMatchesLoaded extends BlindDateState {
-  final List<BlindMatch> matches;
-  final List<BlindMatch> revealedMatches;
-  final List<BlindMatch> pendingMatches;
 
   BlindMatchesLoaded({required this.matches})
       : revealedMatches = matches.where((m) => m.isRevealed).toList(),
         pendingMatches = matches.where((m) => !m.isRevealed).toList();
+  final List<BlindMatch> matches;
+  final List<BlindMatch> revealedMatches;
+  final List<BlindMatch> pendingMatches;
 
   @override
   List<Object?> get props => [matches, revealedMatches, pendingMatches];
@@ -132,13 +131,13 @@ class BlindMatchesLoaded extends BlindDateState {
 
 /// Instant reveal completed
 class InstantRevealCompleted extends BlindDateState {
-  final BlindMatch match;
-  final int coinsSpent;
 
   const InstantRevealCompleted({
     required this.match,
     required this.coinsSpent,
   });
+  final BlindMatch match;
+  final int coinsSpent;
 
   @override
   List<Object?> get props => [match, coinsSpent];
@@ -146,13 +145,13 @@ class InstantRevealCompleted extends BlindDateState {
 
 /// Revealed profile loaded
 class RevealedProfileLoaded extends BlindDateState {
-  final BlindProfileView profile;
-  final BlindMatch match;
 
   const RevealedProfileLoaded({
     required this.profile,
     required this.match,
   });
+  final BlindProfileView profile;
+  final BlindMatch match;
 
   @override
   List<Object?> get props => [profile, match];
@@ -160,13 +159,13 @@ class RevealedProfileLoaded extends BlindDateState {
 
 /// Natural reveal triggered (after message threshold)
 class NaturalRevealTriggered extends BlindDateState {
-  final BlindMatch match;
-  final BlindProfileView profile;
 
   const NaturalRevealTriggered({
     required this.match,
     required this.profile,
   });
+  final BlindMatch match;
+  final BlindProfileView profile;
 
   @override
   List<Object?> get props => [match, profile];
@@ -174,13 +173,13 @@ class NaturalRevealTriggered extends BlindDateState {
 
 /// Insufficient coins for instant reveal
 class InsufficientCoinsForReveal extends BlindDateState {
-  final int required;
-  final int available;
 
   const InsufficientCoinsForReveal({
     required this.required,
     required this.available,
   });
+  final int required;
+  final int available;
 
   int get shortfall => required - available;
 
@@ -190,11 +189,11 @@ class InsufficientCoinsForReveal extends BlindDateState {
 
 /// No more candidates available
 class NoMoreCandidates extends BlindDateState {
-  final String message;
 
   const NoMoreCandidates({
     this.message = 'No more profiles available. Check back later!',
   });
+  final String message;
 
   @override
   List<Object?> get props => [message];

@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/conversation_expiry.dart';
 
 /// Widget to display conversation expiry countdown
 class ExpiryTimerWidget extends StatelessWidget {
-  final ConversationExpiry expiry;
-  final VoidCallback? onExtend;
-  final bool showExtendButton;
-  final bool compact;
 
   const ExpiryTimerWidget({
-    super.key,
-    required this.expiry,
+    required this.expiry, super.key,
     this.onExtend,
     this.showExtendButton = true,
     this.compact = false,
   });
+  final ConversationExpiry expiry;
+  final VoidCallback? onExtend;
+  final bool showExtendButton;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -184,14 +183,13 @@ class ExpiryTimerWidget extends StatelessWidget {
 
 /// Badge showing expiry count for conversations
 class ExpiryBadge extends StatelessWidget {
-  final int expiringSoonCount;
-  final VoidCallback? onTap;
 
   const ExpiryBadge({
-    super.key,
-    required this.expiringSoonCount,
+    required this.expiringSoonCount, super.key,
     this.onTap,
   });
+  final int expiringSoonCount;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -231,20 +229,18 @@ class ExpiryBadge extends StatelessWidget {
 
 /// List item for expiring conversation
 class ExpiringConversationItem extends StatelessWidget {
+
+  const ExpiringConversationItem({
+    required this.expiry, required this.matchName, super.key,
+    this.matchPhoto,
+    this.onTap,
+    this.onExtend,
+  });
   final ConversationExpiry expiry;
   final String matchName;
   final String? matchPhoto;
   final VoidCallback? onTap;
   final VoidCallback? onExtend;
-
-  const ExpiringConversationItem({
-    super.key,
-    required this.expiry,
-    required this.matchName,
-    this.matchPhoto,
-    this.onTap,
-    this.onExtend,
-  });
 
   @override
   Widget build(BuildContext context) {

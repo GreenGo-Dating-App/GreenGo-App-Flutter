@@ -5,15 +5,15 @@ import 'package:flutter/services.dart';
 
 /// Supported language codes
 class SupportedLanguage {
-  final String code;
-  final String name;
-  final String flag;
 
   const SupportedLanguage({
     required this.code,
     required this.name,
     required this.flag,
   });
+  final String code;
+  final String name;
+  final String flag;
 }
 
 /// List of supported languages
@@ -65,16 +65,6 @@ extension LegalDocumentTypeExtension on LegalDocumentType {
 
 /// Legal document model
 class LegalDocument {
-  final String id;
-  final LegalDocumentType type;
-  final String languageCode;
-  final String title;
-  final String content;
-  final String version;
-  final bool isActive;
-  final DateTime lastUpdated;
-  final String updatedBy;
-  final DateTime createdAt;
 
   const LegalDocument({
     required this.id,
@@ -92,7 +82,7 @@ class LegalDocument {
   factory LegalDocument.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>? ?? {};
 
-    LegalDocumentType type = LegalDocumentType.termsAndConditions;
+    var type = LegalDocumentType.termsAndConditions;
     final typeStr = data['type'] as String? ?? 'terms_and_conditions';
     if (typeStr == 'privacy_policy') {
       type = LegalDocumentType.privacyPolicy;
@@ -120,8 +110,8 @@ class LegalDocument {
     String? version,
   }) {
     // Extract title from first line if it looks like a header
-    String title = type.displayName;
-    String body = content;
+    var title = type.displayName;
+    var body = content;
 
     final lines = content.split('\n');
     if (lines.isNotEmpty) {
@@ -149,6 +139,16 @@ class LegalDocument {
       createdAt: DateTime(2026, 1, 26),
     );
   }
+  final String id;
+  final LegalDocumentType type;
+  final String languageCode;
+  final String title;
+  final String content;
+  final String version;
+  final bool isActive;
+  final DateTime lastUpdated;
+  final String updatedBy;
+  final DateTime createdAt;
 
   Map<String, dynamic> toJson() {
     return {
@@ -168,9 +168,9 @@ class LegalDocument {
 
 /// Service for loading legal documents from bundled assets
 class LegalDocumentsService extends ChangeNotifier {
-  static final LegalDocumentsService _instance = LegalDocumentsService._internal();
   factory LegalDocumentsService() => _instance;
   LegalDocumentsService._internal();
+  static final LegalDocumentsService _instance = LegalDocumentsService._internal();
 
   // Cached documents
   final Map<String, LegalDocument> _documentsCache = {};
@@ -205,7 +205,7 @@ class LegalDocumentsService extends ChangeNotifier {
       notifyListeners();
 
       // Try loading the exact language
-      String? content = await _tryLoadAsset(type, normalizedLang);
+      var content = await _tryLoadAsset(type, normalizedLang);
 
       // Try base language (e.g., pt_BR -> pt)
       if (content == null && normalizedLang.contains('_')) {

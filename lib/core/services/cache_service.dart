@@ -1,15 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 /// Cache Service for reducing Firestore reads
 /// Implements in-memory caching with persistent storage fallback
 class CacheService {
-  static CacheService? _instance;
-  static CacheService get instance => _instance ??= CacheService._();
 
   CacheService._();
+  static CacheService? _instance;
+  static CacheService get instance => _instance ??= CacheService._();
 
   // Hive boxes for different data types
   late Box<String> _profilesBox;
@@ -336,7 +335,7 @@ class CacheService {
           return aEntry.createdAt.compareTo(bEntry.createdAt);
         });
 
-      for (int i = 0; i < 10 && sortedKeys.isNotEmpty; i++) {
+      for (var i = 0; i < 10 && sortedKeys.isNotEmpty; i++) {
         _memoryCache.remove(sortedKeys[i]);
       }
     }
@@ -347,11 +346,11 @@ class CacheService {
 
 /// Internal cache entry with TTL tracking
 class _CacheEntry {
+
+  _CacheEntry(this.data, this.ttl) : createdAt = DateTime.now();
   final dynamic data;
   final DateTime createdAt;
   final Duration ttl;
-
-  _CacheEntry(this.data, this.ttl) : createdAt = DateTime.now();
 
   bool get isExpired => DateTime.now().difference(createdAt) > ttl;
 }

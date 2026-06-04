@@ -4,11 +4,6 @@ import '../constants/app_colors.dart';
 /// Enhancement #13: Undo Swipe Button
 /// Allows users to undo their last swipe (premium feature)
 class UndoSwipeButton extends StatefulWidget {
-  final bool isEnabled;
-  final bool isPremiumFeature;
-  final int remainingUndos;
-  final VoidCallback? onUndo;
-  final VoidCallback? onUpgradePressed;
 
   const UndoSwipeButton({
     super.key,
@@ -18,6 +13,11 @@ class UndoSwipeButton extends StatefulWidget {
     this.onUndo,
     this.onUpgradePressed,
   });
+  final bool isEnabled;
+  final bool isPremiumFeature;
+  final int remainingUndos;
+  final VoidCallback? onUndo;
+  final VoidCallback? onUpgradePressed;
 
   @override
   State<UndoSwipeButton> createState() => _UndoSwipeButtonState();

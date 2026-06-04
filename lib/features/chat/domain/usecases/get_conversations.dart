@@ -5,9 +5,9 @@ import '../repositories/chat_repository.dart';
 
 /// Get Conversations Stream Use Case
 class GetConversations {
-  final ChatRepository repository;
 
   GetConversations(this.repository);
+  final ChatRepository repository;
 
   Stream<Either<Failure, List<Conversation>>> call(String userId) {
     return repository.getConversationsStream(userId);

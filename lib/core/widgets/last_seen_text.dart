@@ -4,9 +4,6 @@ import '../constants/app_colors.dart';
 /// Enhancement #3: Last Seen Text
 /// Shows when a user was last active
 class LastSeenText extends StatelessWidget {
-  final DateTime? lastSeen;
-  final bool isOnline;
-  final double fontSize;
 
   const LastSeenText({
     super.key,
@@ -14,6 +11,9 @@ class LastSeenText extends StatelessWidget {
     this.isOnline = false,
     this.fontSize = 12,
   });
+  final DateTime? lastSeen;
+  final bool isOnline;
+  final double fontSize;
 
   String _formatLastSeen() {
     if (isOnline) return 'Online now';

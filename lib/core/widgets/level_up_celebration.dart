@@ -4,18 +4,17 @@ import '../constants/app_colors.dart';
 /// Enhancement #10: Level Up Celebration
 /// Animated celebration when user levels up
 class LevelUpCelebration extends StatefulWidget {
-  final int newLevel;
-  final String? newTitle;
-  final List<String>? unlockedFeatures;
-  final VoidCallback? onDismiss;
 
   const LevelUpCelebration({
-    super.key,
-    required this.newLevel,
+    required this.newLevel, super.key,
     this.newTitle,
     this.unlockedFeatures,
     this.onDismiss,
   });
+  final int newLevel;
+  final String? newTitle;
+  final List<String>? unlockedFeatures;
+  final VoidCallback? onDismiss;
 
   @override
   State<LevelUpCelebration> createState() => _LevelUpCelebrationState();

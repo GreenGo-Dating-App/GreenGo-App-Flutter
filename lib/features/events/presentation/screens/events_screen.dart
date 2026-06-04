@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../domain/entities/event.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
+import '../../domain/entities/event.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
@@ -17,12 +18,11 @@ import 'event_chat_screen.dart';
 /// Category chips for filtering.
 /// Wired to EventsBloc for all data operations.
 class EventsScreen extends StatefulWidget {
-  final String currentUserId;
 
   const EventsScreen({
-    super.key,
-    required this.currentUserId,
+    required this.currentUserId, super.key,
   });
+  final String currentUserId;
 
   @override
   State<EventsScreen> createState() => _EventsScreenState();
@@ -485,18 +485,14 @@ class _EventsScreenState extends State<EventsScreen>
 
 /// Event Card Widget
 class EventCard extends StatelessWidget {
+
+  const EventCard({
+    required this.event, required this.currentUserId, required this.onTap, required this.onRSVP, super.key,
+  });
   final Event event;
   final String currentUserId;
   final VoidCallback onTap;
   final Function(RSVPStatus) onRSVP;
-
-  const EventCard({
-    super.key,
-    required this.event,
-    required this.currentUserId,
-    required this.onTap,
-    required this.onRSVP,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -779,14 +775,12 @@ class EventCard extends StatelessWidget {
 
 /// Event Details Screen
 class EventDetailsScreen extends StatelessWidget {
-  final Event event;
-  final String currentUserId;
 
   const EventDetailsScreen({
-    super.key,
-    required this.event,
-    required this.currentUserId,
+    required this.event, required this.currentUserId, super.key,
   });
+  final Event event;
+  final String currentUserId;
 
   @override
   Widget build(BuildContext context) {
@@ -942,7 +936,7 @@ class EventDetailsScreen extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.chat_bubble_outline,
                             color: AppColors.richGold,
                           ),
@@ -961,7 +955,7 @@ class EventDetailsScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   AppLocalizations.of(context)!.eventsChatWithAttendees,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: AppColors.textSecondary,
                                     fontSize: 12,
                                   ),
@@ -969,7 +963,7 @@ class EventDetailsScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.chevron_right,
                             color: AppColors.textTertiary,
                           ),
@@ -995,7 +989,7 @@ class EventDetailsScreen extends StatelessWidget {
                         ? Center(
                             child: Text(
                               AppLocalizations.of(context)!.eventsNoAttendeesYet,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 13,
                               ),
@@ -1151,14 +1145,12 @@ class EventDetailsScreen extends StatelessWidget {
 
 /// Create Event Screen
 class CreateEventScreen extends StatefulWidget {
-  final String currentUserId;
-  final Function(Event) onEventCreated;
 
   const CreateEventScreen({
-    super.key,
-    required this.currentUserId,
-    required this.onEventCreated,
+    required this.currentUserId, required this.onEventCreated, super.key,
   });
+  final String currentUserId;
+  final Function(Event) onEventCreated;
 
   @override
   State<CreateEventScreen> createState() => _CreateEventScreenState();
@@ -1219,7 +1211,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<EventCategory>(
-              value: _category,
+              initialValue: _category,
               dropdownColor: AppColors.backgroundCard,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: _inputDecoration(AppLocalizations.of(context)!.eventsCategory),
@@ -1294,7 +1286,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 style: const TextStyle(color: AppColors.textPrimary),
               ),
               value: _isFree,
-              activeColor: AppColors.richGold,
+              activeThumbColor: AppColors.richGold,
               onChanged: (v) => setState(() => _isFree = v),
             ),
             if (!_isFree) ...[

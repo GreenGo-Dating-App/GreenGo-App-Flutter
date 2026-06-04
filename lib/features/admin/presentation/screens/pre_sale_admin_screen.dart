@@ -1,8 +1,8 @@
 import 'dart:io' show File;
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter/material.dart';
+
 import 'package:file_picker/file_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/pre_sale_service.dart';
@@ -13,12 +13,11 @@ import '../../../../core/services/pre_sale_service.dart';
 /// - Filter by tier
 /// - Remove entries
 class PreSaleAdminScreen extends StatefulWidget {
-  final String adminId;
 
   const PreSaleAdminScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<PreSaleAdminScreen> createState() => _PreSaleAdminScreenState();
@@ -122,7 +121,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
 
       // Parse data rows
       final rows = <Map<String, String>>[];
-      for (int i = 1; i < lines.length; i++) {
+      for (var i = 1; i < lines.length; i++) {
         final line = lines[i].trim();
         if (line.isEmpty) continue;
         final parts = line.split(',').map((p) => p.trim().replaceAll('"', '').replaceAll("'", '')).toList();
@@ -411,7 +410,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
             ],
           ),
           const SizedBox(height: AppDimensions.paddingS),
-          Text(
+          const Text(
             'CSV format: EMAIL, NUMBER_OF_DAYS, TIER\nTier values: platinum, gold, silver',
             style: TextStyle(
               color: AppColors.textTertiary,

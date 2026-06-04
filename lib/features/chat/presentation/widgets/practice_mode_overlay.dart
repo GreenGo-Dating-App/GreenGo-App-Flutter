@@ -1,11 +1,13 @@
 import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/chat_learning_service.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 
 /// Practice Mode Overlay Widget
@@ -37,6 +39,10 @@ import '../../../membership/domain/entities/membership.dart';
 /// )
 /// ```
 class PracticeModeToggle extends StatelessWidget {
+
+  const PracticeModeToggle({
+    required this.isActive, required this.onToggle, required this.membershipTier, required this.userId, super.key,
+  });
   /// Whether practice mode is currently active
   final bool isActive;
 
@@ -48,14 +54,6 @@ class PracticeModeToggle extends StatelessWidget {
 
   /// Current user's ID
   final String userId;
-
-  const PracticeModeToggle({
-    super.key,
-    required this.isActive,
-    required this.onToggle,
-    required this.membershipTier,
-    required this.userId,
-  });
 
   /// Check if the user can access practice mode
   bool get _hasAccess {
@@ -275,10 +273,10 @@ class PracticeModeToggle extends StatelessWidget {
 
 /// Feature row used in upgrade dialog
 class _FeatureRow extends StatelessWidget {
-  final IconData icon;
-  final String text;
 
   const _FeatureRow({required this.icon, required this.text});
+  final IconData icon;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -306,6 +304,15 @@ enum _TrialStatus { available, active, expired }
 /// The collapsible bottom panel that shows AI language tips during chat.
 /// Slides up from the bottom and can be collapsed to a minimal bar.
 class PracticeModeOverlay extends StatefulWidget {
+
+  const PracticeModeOverlay({
+    required this.isActive, required this.onClose, super.key,
+    this.partnerLanguages = const [],
+    this.userNativeLanguage,
+    this.lastMessages = const [],
+    this.membershipTier = MembershipTier.free,
+    this.userId = '',
+  });
   /// Whether practice mode is currently active
   final bool isActive;
 
@@ -326,17 +333,6 @@ class PracticeModeOverlay extends StatefulWidget {
 
   /// Current user's ID (for trial status check)
   final String userId;
-
-  const PracticeModeOverlay({
-    super.key,
-    required this.isActive,
-    this.partnerLanguages = const [],
-    this.userNativeLanguage,
-    this.lastMessages = const [],
-    required this.onClose,
-    this.membershipTier = MembershipTier.free,
-    this.userId = '',
-  });
 
   @override
   State<PracticeModeOverlay> createState() => _PracticeModeOverlayState();
@@ -770,9 +766,9 @@ class _PracticeModeOverlayState extends State<PracticeModeOverlay>
 
 /// Individual tip card
 class _TipCard extends StatelessWidget {
-  final _LanguageTip tip;
 
   const _TipCard({required this.tip});
+  final _LanguageTip tip;
 
   Color get _accentColor {
     switch (tip.type) {
@@ -837,10 +833,6 @@ enum _TipType { vocabulary, grammar, cultural }
 
 /// Language tip data model
 class _LanguageTip {
-  final _TipType type;
-  final String title;
-  final String content;
-  final IconData icon;
 
   _LanguageTip({
     required this.type,
@@ -848,4 +840,8 @@ class _LanguageTip {
     required this.content,
     required this.icon,
   });
+  final _TipType type;
+  final String title;
+  final String content;
+  final IconData icon;
 }

@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../generated/app_localizations.dart';
 import '../widgets/password_strength_indicator.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 class ChangePasswordScreen extends StatefulWidget {
   const ChangePasswordScreen({super.key});
@@ -275,7 +276,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     onPressed: () => setState(() => _obscureNewPassword = !_obscureNewPassword),
                   ),
                 ),
-                validator: (value) => Validators.validatePassword(value),
+                validator: Validators.validatePassword,
               ),
 
               const SizedBox(height: 8),

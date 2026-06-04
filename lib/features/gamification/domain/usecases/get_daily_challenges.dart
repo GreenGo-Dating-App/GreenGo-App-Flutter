@@ -1,8 +1,7 @@
-/**
- * Get Daily Challenges Use Case
- * Point 196: Get today's rotating daily challenges
- * Point 199: Get weekly mega-challenges
- */
+/// Get Daily Challenges Use Case
+/// Point 196: Get today's rotating daily challenges
+/// Point 199: Get weekly mega-challenges
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -11,9 +10,9 @@ import '../entities/daily_challenge.dart';
 import '../repositories/gamification_repository.dart';
 
 class GetDailyChallenges implements UseCase<DailyChallengesData, String> {
-  final GamificationRepository repository;
 
   GetDailyChallenges(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, DailyChallengesData>> call(String userId) async {
@@ -55,7 +54,7 @@ class GetDailyChallenges implements UseCase<DailyChallengesData, String> {
 
     // Map progress to challenges
     final progressMap = {
-      for (var p in progress) p.challengeId: p,
+      for (final p in progress) p.challengeId: p,
     };
 
     final dailyWithProgress = dailyChallenges.map((challenge) {
@@ -84,12 +83,12 @@ class GetDailyChallenges implements UseCase<DailyChallengesData, String> {
     final canClaimWeekly = weeklyWithProgress.where((c) => c.canClaim).length;
 
     // Calculate potential rewards
-    int totalXPAvailable = 0;
-    int totalCoinsAvailable = 0;
+    var totalXPAvailable = 0;
+    var totalCoinsAvailable = 0;
 
-    for (var c in [...dailyWithProgress, ...weeklyWithProgress]) {
+    for (final c in [...dailyWithProgress, ...weeklyWithProgress]) {
       if (!c.isCompleted) {
-        for (var reward in c.challenge.rewards) {
+        for (final reward in c.challenge.rewards) {
           if (reward.type == 'xp') totalXPAvailable += reward.amount;
           if (reward.type == 'coins') totalCoinsAvailable += reward.amount;
         }
@@ -112,13 +111,13 @@ class GetDailyChallenges implements UseCase<DailyChallengesData, String> {
 }
 
 class ChallengeWithProgress {
-  final DailyChallenge challenge;
-  final UserChallengeProgress? progress;
 
   ChallengeWithProgress({
     required this.challenge,
     this.progress,
   });
+  final DailyChallenge challenge;
+  final UserChallengeProgress? progress;
 
   bool get isCompleted => progress?.isCompleted ?? false;
   bool get canClaim => progress?.canClaim ?? false;
@@ -127,16 +126,6 @@ class ChallengeWithProgress {
 }
 
 class DailyChallengesData {
-  final List<ChallengeWithProgress> dailyChallenges;
-  final List<ChallengeWithProgress> weeklyChallenges;
-  final int totalDaily;
-  final int completedDaily;
-  final int canClaimDaily;
-  final int totalWeekly;
-  final int completedWeekly;
-  final int canClaimWeekly;
-  final int totalXPAvailable;
-  final int totalCoinsAvailable;
 
   DailyChallengesData({
     required this.dailyChallenges,
@@ -150,4 +139,14 @@ class DailyChallengesData {
     required this.totalXPAvailable,
     required this.totalCoinsAvailable,
   });
+  final List<ChallengeWithProgress> dailyChallenges;
+  final List<ChallengeWithProgress> weeklyChallenges;
+  final int totalDaily;
+  final int completedDaily;
+  final int canClaimDaily;
+  final int totalWeekly;
+  final int completedWeekly;
+  final int canClaimWeekly;
+  final int totalXPAvailable;
+  final int totalCoinsAvailable;
 }

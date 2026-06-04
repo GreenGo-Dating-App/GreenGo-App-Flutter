@@ -4,12 +4,11 @@ import '../../domain/entities/country_spotlight.dart';
 
 /// Detail screen for viewing a country spotlight
 class CountrySpotlightScreen extends StatelessWidget {
-  final CountrySpotlight spotlight;
 
   const CountrySpotlightScreen({
-    super.key,
-    required this.spotlight,
+    required this.spotlight, super.key,
   });
+  final CountrySpotlight spotlight;
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +117,7 @@ class CountrySpotlightScreen extends StatelessWidget {
               delegate: SliverChildListDelegate([
                 // Render each section
                 ...spotlight.sections.map(
-                  (section) => _buildSection(section),
+                  _buildSection,
                 ),
 
                 // If no sections, show placeholder

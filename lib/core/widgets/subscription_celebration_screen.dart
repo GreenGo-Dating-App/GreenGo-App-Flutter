@@ -1,21 +1,22 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../constants/app_colors.dart';
+
 import '../../features/subscription/domain/entities/subscription.dart';
+import '../constants/app_colors.dart';
 
 /// Full-screen luxury celebration animation for subscription purchase
 class SubscriptionCelebrationScreen extends StatefulWidget {
-  final String tierName;
-  final SubscriptionTier? tier;
-  final VoidCallback? onComplete;
 
   const SubscriptionCelebrationScreen({
-    super.key,
-    required this.tierName,
+    required this.tierName, super.key,
     this.tier,
     this.onComplete,
   });
+  final String tierName;
+  final SubscriptionTier? tier;
+  final VoidCallback? onComplete;
 
   /// Navigate to this screen as a full-screen overlay
   static Future<void> show(
@@ -399,7 +400,7 @@ class _SubscriptionCelebrationScreenState
                               ),
                             ),
                             const SizedBox(height: 16),
-                            Text(
+                            const Text(
                               'Your premium membership is now active',
                               style: TextStyle(
                                 fontSize: 16,
@@ -517,12 +518,6 @@ class _SubscriptionCelebrationScreenState
 
 /// A single particle for the celebration effect
 class _Particle {
-  late double x;
-  late double y;
-  late double size;
-  late double speed;
-  late double angle;
-  late double opacity;
 
   _Particle(Random random) {
     x = random.nextDouble();
@@ -532,19 +527,25 @@ class _Particle {
     angle = random.nextDouble() * 2 * pi;
     opacity = 0.3 + random.nextDouble() * 0.7;
   }
+  late double x;
+  late double y;
+  late double size;
+  late double speed;
+  late double angle;
+  late double opacity;
 }
 
 /// CustomPainter for particle effects
 class _ParticlePainter extends CustomPainter {
-  final List<_Particle> particles;
-  final double progress;
-  final Color color;
 
   _ParticlePainter({
     required this.particles,
     required this.progress,
     required this.color,
   });
+  final List<_Particle> particles;
+  final double progress;
+  final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {

@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/legal_documents_service.dart';
-import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Screen to display legal documents (Terms & Conditions or Privacy Policy)
 class LegalDocumentScreen extends StatefulWidget {
-  final LegalDocumentType documentType;
-  final String? languageCode;
 
   const LegalDocumentScreen({
-    super.key,
-    required this.documentType,
+    required this.documentType, super.key,
     this.languageCode,
   });
 
@@ -26,6 +24,8 @@ class LegalDocumentScreen extends StatefulWidget {
     super.key,
     this.languageCode,
   }) : documentType = LegalDocumentType.privacyPolicy;
+  final LegalDocumentType documentType;
+  final String? languageCode;
 
   @override
   State<LegalDocumentScreen> createState() => _LegalDocumentScreenState();
@@ -52,7 +52,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
 
     try {
       // Get the language code from the widget or from the current locale
-      String languageCode = widget.languageCode ?? 'en';
+      var languageCode = widget.languageCode ?? 'en';
 
       // Try to get from locale if mounted
       if (mounted) {
@@ -287,9 +287,9 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
 
 /// Wrapper for navigating to Terms & Conditions
 class TermsAndConditionsScreen extends StatelessWidget {
-  final String? languageCode;
 
   const TermsAndConditionsScreen({super.key, this.languageCode});
+  final String? languageCode;
 
   @override
   Widget build(BuildContext context) {
@@ -299,9 +299,9 @@ class TermsAndConditionsScreen extends StatelessWidget {
 
 /// Wrapper for navigating to Privacy Policy
 class PrivacyPolicyScreen extends StatelessWidget {
-  final String? languageCode;
 
   const PrivacyPolicyScreen({super.key, this.languageCode});
+  final String? languageCode;
 
   @override
   Widget build(BuildContext context) {

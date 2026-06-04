@@ -3,17 +3,6 @@ import 'package:equatable/equatable.dart';
 /// Daily Challenge Entity
 /// Points 196-200: Daily Challenges & Events
 class DailyChallenge extends Equatable {
-  final String challengeId;
-  final String name;
-  final String description;
-  final ChallengeType type;
-  final ChallengeDifficulty difficulty;
-  final int requiredCount;
-  final String actionType;
-  final List<ChallengeReward> rewards;
-  final DateTime startDate;
-  final DateTime endDate;
-  final bool isActive;
 
   const DailyChallenge({
     required this.challengeId,
@@ -28,6 +17,17 @@ class DailyChallenge extends Equatable {
     required this.endDate,
     this.isActive = true,
   });
+  final String challengeId;
+  final String name;
+  final String description;
+  final ChallengeType type;
+  final ChallengeDifficulty difficulty;
+  final int requiredCount;
+  final String actionType;
+  final List<ChallengeReward> rewards;
+  final DateTime startDate;
+  final DateTime endDate;
+  final bool isActive;
 
   /// Check if challenge is currently active
   bool get isCurrentlyActive {
@@ -77,27 +77,19 @@ enum ChallengeDifficulty {
 
 /// Challenge Reward
 class ChallengeReward {
-  final String type; // xp, coins, boost, badge
-  final int amount;
-  final String? itemId;
 
   const ChallengeReward({
     required this.type,
     required this.amount,
     this.itemId,
   });
+  final String type; // xp, coins, boost, badge
+  final int amount;
+  final String? itemId;
 }
 
 /// User Challenge Progress
 class UserChallengeProgress extends Equatable {
-  final String userId;
-  final String challengeId;
-  final int progress;
-  final int requiredCount;
-  final bool isCompleted;
-  final DateTime? completedAt;
-  final DateTime createdAt;
-  final bool rewardsClaimed;
 
   UserChallengeProgress({
     required this.userId,
@@ -109,6 +101,14 @@ class UserChallengeProgress extends Equatable {
     DateTime? createdAt,
     this.rewardsClaimed = false,
   }) : createdAt = createdAt ?? DateTime.now();
+  final String userId;
+  final String challengeId;
+  final int progress;
+  final int requiredCount;
+  final bool isCompleted;
+  final DateTime? completedAt;
+  final DateTime createdAt;
+  final bool rewardsClaimed;
 
   /// Get progress percentage
   double get progressPercentage {
@@ -146,33 +146,33 @@ class DailyChallenges {
   /// Full pool of daily challenge templates (21 unique challenges)
   static final List<_ChallengeTemplate> _pool = [
     // Messaging challenges
-    _ChallengeTemplate('send_3_messages', 'Quick Chat', 'Send 3 messages', 'message_sent', 3, ChallengeDifficulty.easy, 30, 10),
-    _ChallengeTemplate('send_5_messages', 'Message Master', 'Send 5 messages to your matches', 'message_sent', 5, ChallengeDifficulty.easy, 50, 20),
-    _ChallengeTemplate('send_10_messages', 'Conversation King', 'Send 10 messages today', 'message_sent', 10, ChallengeDifficulty.medium, 80, 35),
-    _ChallengeTemplate('send_15_messages', 'Chat Marathon', 'Send 15 messages today', 'message_sent', 15, ChallengeDifficulty.hard, 120, 50),
+    const _ChallengeTemplate('send_3_messages', 'Quick Chat', 'Send 3 messages', 'message_sent', 3, ChallengeDifficulty.easy, 30, 10),
+    const _ChallengeTemplate('send_5_messages', 'Message Master', 'Send 5 messages to your matches', 'message_sent', 5, ChallengeDifficulty.easy, 50, 20),
+    const _ChallengeTemplate('send_10_messages', 'Conversation King', 'Send 10 messages today', 'message_sent', 10, ChallengeDifficulty.medium, 80, 35),
+    const _ChallengeTemplate('send_15_messages', 'Chat Marathon', 'Send 15 messages today', 'message_sent', 15, ChallengeDifficulty.hard, 120, 50),
     // Match challenges
-    _ChallengeTemplate('get_1_match', 'First Spark', 'Get 1 new match today', 'match', 1, ChallengeDifficulty.easy, 40, 15),
-    _ChallengeTemplate('get_3_matches', 'Match Maker', 'Get 3 new matches today', 'match', 3, ChallengeDifficulty.medium, 60, 25),
-    _ChallengeTemplate('get_5_matches', 'Love Magnet', 'Get 5 new matches today', 'match', 5, ChallengeDifficulty.hard, 100, 40),
+    const _ChallengeTemplate('get_1_match', 'First Spark', 'Get 1 new match today', 'match', 1, ChallengeDifficulty.easy, 40, 15),
+    const _ChallengeTemplate('get_3_matches', 'Match Maker', 'Get 3 new matches today', 'match', 3, ChallengeDifficulty.medium, 60, 25),
+    const _ChallengeTemplate('get_5_matches', 'Love Magnet', 'Get 5 new matches today', 'match', 5, ChallengeDifficulty.hard, 100, 40),
     // Super Like challenges
-    _ChallengeTemplate('send_1_superlike', 'Priority Pick', 'Send 1 super like', 'super_like', 1, ChallengeDifficulty.easy, 35, 15),
-    _ChallengeTemplate('send_3_superlikes', 'Super Liker', 'Send 3 super likes', 'super_like', 3, ChallengeDifficulty.medium, 55, 25),
-    _ChallengeTemplate('send_5_superlikes', 'Super Star', 'Send 5 super likes', 'super_like', 5, ChallengeDifficulty.hard, 90, 40),
+    const _ChallengeTemplate('send_1_superlike', 'Priority Pick', 'Send 1 super like', 'super_like', 1, ChallengeDifficulty.easy, 35, 15),
+    const _ChallengeTemplate('send_3_superlikes', 'Super Liker', 'Send 3 super likes', 'super_like', 3, ChallengeDifficulty.medium, 55, 25),
+    const _ChallengeTemplate('send_5_superlikes', 'Super Star', 'Send 5 super likes', 'super_like', 5, ChallengeDifficulty.hard, 90, 40),
     // Video call challenges
-    _ChallengeTemplate('video_call_1', 'Video Enthusiast', 'Complete 1 video call', 'video_call', 1, ChallengeDifficulty.medium, 75, 50),
-    _ChallengeTemplate('video_call_2', 'Video Pro', 'Complete 2 video calls', 'video_call', 2, ChallengeDifficulty.hard, 120, 80),
+    const _ChallengeTemplate('video_call_1', 'Video Enthusiast', 'Complete 1 video call', 'video_call', 1, ChallengeDifficulty.medium, 75, 50),
+    const _ChallengeTemplate('video_call_2', 'Video Pro', 'Complete 2 video calls', 'video_call', 2, ChallengeDifficulty.hard, 120, 80),
     // Photo challenges
-    _ChallengeTemplate('add_photo', 'Photo Refresh', 'Add or update a profile photo', 'photo_added', 1, ChallengeDifficulty.easy, 40, 15),
-    _ChallengeTemplate('add_2_photos', 'Photo Gallery', 'Add 2 new profile photos', 'photo_added', 2, ChallengeDifficulty.medium, 70, 30),
+    const _ChallengeTemplate('add_photo', 'Photo Refresh', 'Add or update a profile photo', 'photo_added', 1, ChallengeDifficulty.easy, 40, 15),
+    const _ChallengeTemplate('add_2_photos', 'Photo Gallery', 'Add 2 new profile photos', 'photo_added', 2, ChallengeDifficulty.medium, 70, 30),
     // Gift challenges
-    _ChallengeTemplate('send_1_gift', 'Gift Giver', 'Send 1 gift to a match', 'gift_sent', 1, ChallengeDifficulty.easy, 45, 20),
-    _ChallengeTemplate('send_3_gifts', 'Generous Heart', 'Send 3 gifts today', 'gift_sent', 3, ChallengeDifficulty.medium, 80, 35),
-    _ChallengeTemplate('send_5_gifts', 'Gift Master', 'Send 5 gifts today', 'gift_sent', 5, ChallengeDifficulty.hard, 130, 55),
+    const _ChallengeTemplate('send_1_gift', 'Gift Giver', 'Send 1 gift to a match', 'gift_sent', 1, ChallengeDifficulty.easy, 45, 20),
+    const _ChallengeTemplate('send_3_gifts', 'Generous Heart', 'Send 3 gifts today', 'gift_sent', 3, ChallengeDifficulty.medium, 80, 35),
+    const _ChallengeTemplate('send_5_gifts', 'Gift Master', 'Send 5 gifts today', 'gift_sent', 5, ChallengeDifficulty.hard, 130, 55),
     // Mixed difficulty combos
-    _ChallengeTemplate('chat_starter', 'Ice Breaker', 'Send 7 messages to different matches', 'message_sent', 7, ChallengeDifficulty.medium, 65, 30),
-    _ChallengeTemplate('social_butterfly', 'Social Butterfly', 'Send 20 messages today', 'message_sent', 20, ChallengeDifficulty.epic, 150, 70),
-    _ChallengeTemplate('match_rush', 'Match Rush', 'Get 7 matches today', 'match', 7, ChallengeDifficulty.epic, 140, 60),
-    _ChallengeTemplate('video_marathon', 'Video Marathon', 'Complete 3 video calls', 'video_call', 3, ChallengeDifficulty.epic, 180, 100),
+    const _ChallengeTemplate('chat_starter', 'Ice Breaker', 'Send 7 messages to different matches', 'message_sent', 7, ChallengeDifficulty.medium, 65, 30),
+    const _ChallengeTemplate('social_butterfly', 'Social Butterfly', 'Send 20 messages today', 'message_sent', 20, ChallengeDifficulty.epic, 150, 70),
+    const _ChallengeTemplate('match_rush', 'Match Rush', 'Get 7 matches today', 'match', 7, ChallengeDifficulty.epic, 140, 60),
+    const _ChallengeTemplate('video_marathon', 'Video Marathon', 'Complete 3 video calls', 'video_call', 3, ChallengeDifficulty.epic, 180, 100),
   ];
 
   /// Get 3 challenges for today based on day-of-year rotation.
@@ -229,27 +229,27 @@ class WeeklyChallenges {
   /// Full pool of weekly challenge templates (15 unique challenges)
   static final List<_ChallengeTemplate> _pool = [
     // Messaging
-    _ChallengeTemplate('weekly_messages_30', 'Chat Enthusiast', 'Send 30 messages this week', 'message_sent', 30, ChallengeDifficulty.easy, 200, 100),
-    _ChallengeTemplate('weekly_messages_50', 'Chat Master', 'Send 50 messages this week', 'message_sent', 50, ChallengeDifficulty.medium, 300, 150),
-    _ChallengeTemplate('weekly_messages_100', 'Chat Legend', 'Send 100 messages this week', 'message_sent', 100, ChallengeDifficulty.hard, 500, 250),
+    const _ChallengeTemplate('weekly_messages_30', 'Chat Enthusiast', 'Send 30 messages this week', 'message_sent', 30, ChallengeDifficulty.easy, 200, 100),
+    const _ChallengeTemplate('weekly_messages_50', 'Chat Master', 'Send 50 messages this week', 'message_sent', 50, ChallengeDifficulty.medium, 300, 150),
+    const _ChallengeTemplate('weekly_messages_100', 'Chat Legend', 'Send 100 messages this week', 'message_sent', 100, ChallengeDifficulty.hard, 500, 250),
     // Matches
-    _ChallengeTemplate('weekly_matches_10', 'Weekly Connector', 'Get 10 matches this week', 'match', 10, ChallengeDifficulty.easy, 250, 120),
-    _ChallengeTemplate('weekly_matches_20', 'Weekly Match Champion', 'Get 20 matches this week', 'match', 20, ChallengeDifficulty.hard, 400, 200),
-    _ChallengeTemplate('weekly_matches_30', 'Match Machine', 'Get 30 matches this week', 'match', 30, ChallengeDifficulty.epic, 600, 300),
+    const _ChallengeTemplate('weekly_matches_10', 'Weekly Connector', 'Get 10 matches this week', 'match', 10, ChallengeDifficulty.easy, 250, 120),
+    const _ChallengeTemplate('weekly_matches_20', 'Weekly Match Champion', 'Get 20 matches this week', 'match', 20, ChallengeDifficulty.hard, 400, 200),
+    const _ChallengeTemplate('weekly_matches_30', 'Match Machine', 'Get 30 matches this week', 'match', 30, ChallengeDifficulty.epic, 600, 300),
     // Super Likes
-    _ChallengeTemplate('weekly_superlikes_5', 'Weekly Super Liker', 'Send 5 super likes this week', 'super_like', 5, ChallengeDifficulty.easy, 180, 90),
-    _ChallengeTemplate('weekly_superlikes_10', 'Super Fan', 'Send 10 super likes this week', 'super_like', 10, ChallengeDifficulty.medium, 300, 150),
-    _ChallengeTemplate('weekly_superlikes_15', 'Priority King', 'Send 15 super likes this week', 'super_like', 15, ChallengeDifficulty.hard, 450, 220),
+    const _ChallengeTemplate('weekly_superlikes_5', 'Weekly Super Liker', 'Send 5 super likes this week', 'super_like', 5, ChallengeDifficulty.easy, 180, 90),
+    const _ChallengeTemplate('weekly_superlikes_10', 'Super Fan', 'Send 10 super likes this week', 'super_like', 10, ChallengeDifficulty.medium, 300, 150),
+    const _ChallengeTemplate('weekly_superlikes_15', 'Priority King', 'Send 15 super likes this week', 'super_like', 15, ChallengeDifficulty.hard, 450, 220),
     // Video Calls
-    _ChallengeTemplate('weekly_video_3', 'Video Socialite', 'Complete 3 video calls this week', 'video_call', 3, ChallengeDifficulty.medium, 350, 180),
-    _ChallengeTemplate('weekly_video_5', 'Video Star', 'Complete 5 video calls this week', 'video_call', 5, ChallengeDifficulty.hard, 500, 250),
+    const _ChallengeTemplate('weekly_video_3', 'Video Socialite', 'Complete 3 video calls this week', 'video_call', 3, ChallengeDifficulty.medium, 350, 180),
+    const _ChallengeTemplate('weekly_video_5', 'Video Star', 'Complete 5 video calls this week', 'video_call', 5, ChallengeDifficulty.hard, 500, 250),
     // Gifts
-    _ChallengeTemplate('weekly_gifts_5', 'Weekly Gift Giver', 'Send 5 gifts this week', 'gift_sent', 5, ChallengeDifficulty.easy, 200, 100),
-    _ChallengeTemplate('weekly_gifts_10', 'Generous Soul', 'Send 10 gifts this week', 'gift_sent', 10, ChallengeDifficulty.medium, 350, 175),
+    const _ChallengeTemplate('weekly_gifts_5', 'Weekly Gift Giver', 'Send 5 gifts this week', 'gift_sent', 5, ChallengeDifficulty.easy, 200, 100),
+    const _ChallengeTemplate('weekly_gifts_10', 'Generous Soul', 'Send 10 gifts this week', 'gift_sent', 10, ChallengeDifficulty.medium, 350, 175),
     // Photos
-    _ChallengeTemplate('weekly_photos_3', 'Photo Week', 'Add 3 photos this week', 'photo_added', 3, ChallengeDifficulty.easy, 180, 90),
+    const _ChallengeTemplate('weekly_photos_3', 'Photo Week', 'Add 3 photos this week', 'photo_added', 3, ChallengeDifficulty.easy, 180, 90),
     // Epic combos
-    _ChallengeTemplate('weekly_perfect', 'Perfect Week', 'Complete all daily challenges 7 days in a row', 'daily_challenges_completed', 7, ChallengeDifficulty.epic, 700, 350),
+    const _ChallengeTemplate('weekly_perfect', 'Perfect Week', 'Complete all daily challenges 7 days in a row', 'daily_challenges_completed', 7, ChallengeDifficulty.epic, 700, 350),
   ];
 
   /// Get 3 weekly challenges based on week-of-year rotation.
@@ -292,6 +292,11 @@ class WeeklyChallenges {
 
 /// Internal challenge template used by DailyChallenges and WeeklyChallenges pools
 class _ChallengeTemplate {
+
+  const _ChallengeTemplate(
+    this.id, this.name, this.description, this.actionType,
+    this.requiredCount, this.difficulty, this.xp, this.coins,
+  );
   final String id;
   final String name;
   final String description;
@@ -300,23 +305,10 @@ class _ChallengeTemplate {
   final ChallengeDifficulty difficulty;
   final int xp;
   final int coins;
-
-  const _ChallengeTemplate(
-    this.id, this.name, this.description, this.actionType,
-    this.requiredCount, this.difficulty, this.xp, this.coins,
-  );
 }
 
 /// Seasonal Events (Point 200)
-class SeasonalEvent extends Equatable {
-  final String eventId;
-  final String name;
-  final String description;
-  final String theme; // valentine, summer, holiday
-  final DateTime startDate;
-  final DateTime endDate;
-  final List<DailyChallenge> challenges;
-  final Map<String, dynamic> themeConfig; // UI customization
+class SeasonalEvent extends Equatable { // UI customization
 
   const SeasonalEvent({
     required this.eventId,
@@ -328,6 +320,14 @@ class SeasonalEvent extends Equatable {
     required this.challenges,
     this.themeConfig = const {},
   });
+  final String eventId;
+  final String name;
+  final String description;
+  final String theme; // valentine, summer, holiday
+  final DateTime startDate;
+  final DateTime endDate;
+  final List<DailyChallenge> challenges;
+  final Map<String, dynamic> themeConfig;
 
   bool get isActive {
     final now = DateTime.now();

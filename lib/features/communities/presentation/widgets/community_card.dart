@@ -8,16 +8,15 @@ import '../../domain/entities/community.dart';
 /// Displays a community in a list/grid with name, type, member count,
 /// languages, last message preview, and activity time
 class CommunityCard extends StatelessWidget {
-  final Community community;
-  final VoidCallback? onTap;
-  final bool showUnreadIndicator;
 
   const CommunityCard({
-    super.key,
-    required this.community,
+    required this.community, super.key,
     this.onTap,
     this.showUnreadIndicator = false,
   });
+  final Community community;
+  final VoidCallback? onTap;
+  final bool showUnreadIndicator;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +80,7 @@ class CommunityCard extends StatelessWidget {
                     children: [
                       _buildTypeBadge(),
                       const SizedBox(width: 8),
-                      Icon(
+                      const Icon(
                         Icons.people_outline,
                         size: 14,
                         color: AppColors.textTertiary,

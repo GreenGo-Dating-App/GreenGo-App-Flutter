@@ -17,13 +17,6 @@ part 'subscription_state.dart';
 /// Subscription BLoC
 /// Manages subscription state and in-app purchases
 class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
-  final GetCurrentSubscription getCurrentSubscription;
-  final domain.PurchaseSubscription purchaseSubscription;
-  final RestorePurchases restorePurchases;
-  final InAppPurchase inAppPurchase;
-
-  StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
-  String? _currentUserId;
 
   SubscriptionBloc({
     required this.getCurrentSubscription,
@@ -50,6 +43,13 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     // Restore old purchases on init to consume any unconsumed ones
     _consumeOldPurchases();
   }
+  final GetCurrentSubscription getCurrentSubscription;
+  final domain.PurchaseSubscription purchaseSubscription;
+  final RestorePurchases restorePurchases;
+  final InAppPurchase inAppPurchase;
+
+  StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
+  String? _currentUserId;
 
   /// Restore and consume any old unconsumed purchases to clear "already owned" state
   Future<void> _consumeOldPurchases() async {
@@ -202,7 +202,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         productDetails: event.product,
         applicationUserName: _currentUserId,
       );
-      final bool success = await inAppPurchase.buyNonConsumable(
+      final success = await inAppPurchase.buyNonConsumable(
         purchaseParam: purchaseParam,
       );
 
@@ -249,8 +249,8 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         final tier = _getTierFromProductId(purchase.productID);
         final tierName = tier.name.toUpperCase();
         final userId = _currentUserId;
-        DateTime newEndDate = DateTime.now().add(const Duration(days: 30));
-        int coinsGranted = 0;
+        var newEndDate = DateTime.now().add(const Duration(days: 30));
+        var coinsGranted = 0;
 
         // Update the user's profile membershipTier in Firestore
         try {
@@ -310,7 +310,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
             final now = DateTime.now();
             final balanceRef = FirebaseFirestore.instance
                 .collection('coinBalances')
-                .doc(userId!);
+                .doc(userId);
             final batchEntry = {
               'batchId': 'membership_${now.millisecondsSinceEpoch}',
               'initialCoins': 500,

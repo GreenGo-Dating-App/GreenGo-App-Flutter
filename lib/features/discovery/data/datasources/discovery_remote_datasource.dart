@@ -1,16 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
 import '../../../matching/domain/entities/match_score.dart';
 import '../../../matching/domain/usecases/feature_engineer.dart';
-import '../../domain/entities/match_preferences.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/match.dart';
+import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../models/match_model.dart';
 import '../models/swipe_action_model.dart';
@@ -89,12 +90,12 @@ abstract class DiscoveryRemoteDataSource {
 
 /// Simple container for a cached discovery result
 class _CachedStack {
+
+  _CachedStack(this.candidates, this.preferencesHash) : fetchedAt = DateTime.now();
   final List<MatchCandidate> candidates;
   final DateTime fetchedAt;
   final String preferencesHash;
   static const ttl = Duration(minutes: 5);
-
-  _CachedStack(this.candidates, this.preferencesHash) : fetchedAt = DateTime.now();
 
   bool isValid(String currentHash) =>
       DateTime.now().difference(fetchedAt) < ttl && preferencesHash == currentHash;
@@ -102,6 +103,12 @@ class _CachedStack {
 
 /// Discovery Remote Data Source Implementation
 class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
+
+  DiscoveryRemoteDataSourceImpl({
+    required this.firestore,
+    required this.matchingDataSource,
+    required this.blockedUsersService,
+  });
   final FirebaseFirestore firestore;
   final MatchingRemoteDataSource matchingDataSource;
   final BlockedUsersService blockedUsersService;
@@ -120,12 +127,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   // Cached current user profile to avoid re-reading on every load
   Map<String, dynamic>? _cachedUserProfile;
   String? _cachedUserProfileId;
-
-  DiscoveryRemoteDataSourceImpl({
-    required this.firestore,
-    required this.matchingDataSource,
-    required this.blockedUsersService,
-  });
 
   @override
   void clearDiscoveryCache(String userId) {
@@ -316,7 +317,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
             .toSet();
 
         // Get worldwide candidates not already included
-        var worldwideNew = worldwideCandidates
+        final worldwideNew = worldwideCandidates
             .where((c) => !existingIds.contains(c.profile.userId))
             .toList();
 
@@ -413,16 +414,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Priority 3: Liked but no response (not matched)
     // Excluded: Nope/pass (swipe left) - hidden for 90 days
 
-    final List<MatchCandidate> priority0Boosted = [];
-    final List<MatchCandidate> priority1NotSeen = [];
-    final List<MatchCandidate> priority2Skipped = [];
-    final List<MatchCandidate> priority3LikedNoResponse = [];
+    final priority0Boosted = <MatchCandidate>[];
+    final priority1NotSeen = <MatchCandidate>[];
+    final priority2Skipped = <MatchCandidate>[];
+    final priority3LikedNoResponse = <MatchCandidate>[];
 
     final now = DateTime.now();
     const nopeCooldownDays = 90;
     const likeCooldownDays = 30;
 
-    bool addedAdminOrSupport = false;
+    var addedAdminOrSupport = false;
 
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
@@ -528,7 +529,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     // Build the final list with priority ordering (no limit - endless)
-    final List<MatchCandidate> prioritizedCandidates = [];
+    final prioritizedCandidates = <MatchCandidate>[];
 
     // Add priority 1 (not seen) first
     prioritizedCandidates.addAll(priority1NotSeen);
@@ -580,7 +581,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         .limit(2000)
         .get();
 
-    final Map<String, _SwipeRecord> history = {};
+    final history = <String, _SwipeRecord>{};
     for (final doc in querySnapshot.docs) {
       final data = doc.data();
       final targetId = data['targetUserId'] as String?;
@@ -599,7 +600,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   /// Get all matched user IDs (mutual likes)
   /// Uses select() to fetch only the needed field, reducing bandwidth and cost
   Future<Set<String>> _getMatchedUserIds(String userId) async {
-    final Set<String> matchedIds = {};
+    final matchedIds = <String>{};
 
     // Fetch only the other userId field (not full docs) to reduce bandwidth
     final results = await Future.wait([
@@ -656,7 +657,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       Profile adminProfile;
       try {
         adminProfile = ProfileModel.fromFirestore(adminDoc);
-      } catch (parseError, parseStack) {
+      } catch (parseError) {
         // Fallback: build minimal profile from raw data
         final data = adminDoc.data();
         final loc = data['location'] as Map<String, dynamic>?;
@@ -718,7 +719,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       _adminCacheFetchedAt = DateTime.now();
 
       return candidate;
-    } catch (e, stack) {
+    } catch (e) {
       return null;
     }
   }
@@ -1025,8 +1026,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId1,
         type: 'new_match',
-        title: "Start Connecting!",
-        message: "You matched with $displayName2. Start chatting now.",
+        title: 'Start Connecting!',
+        message: 'You matched with $displayName2. Start chatting now.',
         data: {
           'matchId': matchId,
           'matchedUserId': userId2,
@@ -1040,8 +1041,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       await _createNotification(
         userId: userId2,
         type: 'new_match',
-        title: "Start Connecting!",
-        message: "You matched with $displayName1. Start chatting now.",
+        title: 'Start Connecting!',
+        message: 'You matched with $displayName1. Start chatting now.',
         data: {
           'matchId': matchId,
           'matchedUserId': userId1,
@@ -1062,13 +1063,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     debugPrint('[getMatches] Loading matches for userId: $userId, activeOnly: $activeOnly');
 
     // Query matches where user is userId1
-    Query query1 = firestore
+    final Query query1 = firestore
         .collection('matches')
         .where('userId1', isEqualTo: userId)
         .limit(500);
 
     // Query matches where user is userId2
-    Query query2 = firestore
+    final Query query2 = firestore
         .collection('matches')
         .where('userId2', isEqualTo: userId)
         .limit(500);
@@ -1215,7 +1216,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     if (likerIds.isEmpty) return [];
 
     // Batch fetch profiles using whereIn (max 10 per query) in parallel
-    final List<Future<QuerySnapshot<Map<String, dynamic>>>> batchFutures = [];
+    final batchFutures = <Future<QuerySnapshot<Map<String, dynamic>>>>[];
     for (var i = 0; i < likerIds.length; i += 10) {
       final batch = likerIds.sublist(i, i + 10 > likerIds.length ? likerIds.length : i + 10);
       batchFutures.add(
@@ -1364,13 +1365,13 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
 /// Internal record for swipe history with timestamp
 class _SwipeRecord {
-  final String actionType;
-  final DateTime timestamp;
 
   const _SwipeRecord({
     required this.actionType,
     required this.timestamp,
   });
+  final String actionType;
+  final DateTime timestamp;
 }
 
 /// Extension for SwipeAction to add copyWith

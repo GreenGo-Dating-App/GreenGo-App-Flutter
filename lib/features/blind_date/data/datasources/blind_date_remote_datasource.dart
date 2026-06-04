@@ -1,5 +1,6 @@
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+
 import '../../domain/entities/blind_date.dart';
 import '../models/blind_date_model.dart';
 
@@ -62,13 +63,13 @@ abstract class BlindDateRemoteDataSource {
 
 /// Implementation of blind date remote data source
 class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
-  final FirebaseFunctions functions;
-  final FirebaseFirestore firestore;
 
   BlindDateRemoteDataSourceImpl({
     required this.functions,
     required this.firestore,
   });
+  final FirebaseFunctions functions;
+  final FirebaseFirestore firestore;
 
   @override
   Future<BlindDateProfileModel> createBlindProfile(String userId) async {
@@ -178,7 +179,7 @@ class BlindDateRemoteDataSourceImpl implements BlindDateRemoteDataSource {
         .orderBy('matchedAt', descending: true)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => BlindMatchModel.fromFirestore(doc))
+            .map(BlindMatchModel.fromFirestore)
             .toList());
   }
 

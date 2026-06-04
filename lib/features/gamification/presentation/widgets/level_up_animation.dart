@@ -1,24 +1,24 @@
-/**
- * Level Up Animation Widget
- * Point 189: Animated level-up celebration with gold particles
- */
+/// Level Up Animation Widget
+/// Point 189: Animated level-up celebration with gold particles
+library;
+
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import '../../domain/entities/user_level.dart';
+
 import '../../../../generated/app_localizations.dart';
+import '../../domain/entities/user_level.dart';
 
 class LevelUpAnimation extends StatefulWidget {
+
+  const LevelUpAnimation({
+    required this.newLevel, super.key,
+    this.rewards = const [],
+    this.isVIP = false,
+  });
   final int newLevel;
   final List<LevelReward> rewards;
   final bool isVIP;
-
-  const LevelUpAnimation({
-    Key? key,
-    required this.newLevel,
-    this.rewards = const [],
-    this.isVIP = false,
-  }) : super(key: key);
 
   @override
   State<LevelUpAnimation> createState() => _LevelUpAnimationState();
@@ -353,16 +353,16 @@ class _LevelUpAnimationState extends State<LevelUpAnimation>
 
 /// Gold particle painter
 class GoldParticlePainter extends CustomPainter {
-  final double progress;
 
   GoldParticlePainter({required this.progress});
+  final double progress;
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()..color = const Color(0xFFFFD700);
 
     // Generate 30 gold particles
-    for (int i = 0; i < 30; i++) {
+    for (var i = 0; i < 30; i++) {
       final angle = (i / 30) * 2 * math.pi;
       final distance = progress * size.width / 2;
       final sineWave = math.sin(progress * 4 * math.pi + i) * 20;
@@ -371,7 +371,7 @@ class GoldParticlePainter extends CustomPainter {
       final y = size.height / 2 + math.sin(angle) * distance;
 
       // Particle opacity fades out
-      paint.color = Color(0xFFFFD700).withOpacity((1 - progress) * 0.8);
+      paint.color = const Color(0xFFFFD700).withOpacity((1 - progress) * 0.8);
 
       // Varying particle sizes
       final particleSize = 3 + math.sin(i) * 2;
@@ -392,9 +392,9 @@ class GoldParticlePainter extends CustomPainter {
 
 /// Ray painter for spinning light rays
 class RayPainter extends CustomPainter {
-  final Color color;
 
   RayPainter({required this.color});
+  final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -405,14 +405,14 @@ class RayPainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
 
     // Draw 8 rays
-    for (int i = 0; i < 8; i++) {
+    for (var i = 0; i < 8; i++) {
       final angle = (i / 8) * 2 * math.pi;
 
       final path = Path();
       path.moveTo(center.dx, center.dy);
 
       final rayLength = size.width / 2;
-      final rayWidth = 20.0;
+      const rayWidth = 20.0;
 
       path.lineTo(
         center.dx + math.cos(angle - 0.1) * rayLength,

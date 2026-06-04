@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/conversation.dart';
 
@@ -9,6 +9,16 @@ import '../../domain/entities/conversation.dart';
 ///
 /// Displays a conversation in the list
 class ConversationCard extends StatefulWidget {
+
+  const ConversationCard({
+    required this.conversation, required this.otherUserProfile, required this.currentUserId, super.key,
+    this.chatLanguage,
+    this.onTap,
+    this.onLongPress,
+    this.onToggleFavorite,
+    this.onAcceptSuperLike,
+    this.onRejectSuperLike,
+  });
   final Conversation conversation;
   final Profile? otherUserProfile;
   final String currentUserId;
@@ -18,19 +28,6 @@ class ConversationCard extends StatefulWidget {
   final VoidCallback? onToggleFavorite;
   final VoidCallback? onAcceptSuperLike;
   final VoidCallback? onRejectSuperLike;
-
-  const ConversationCard({
-    super.key,
-    required this.conversation,
-    required this.otherUserProfile,
-    required this.currentUserId,
-    this.chatLanguage,
-    this.onTap,
-    this.onLongPress,
-    this.onToggleFavorite,
-    this.onAcceptSuperLike,
-    this.onRejectSuperLike,
-  });
 
   static String _flagForLanguage(String? langCode) {
     if (langCode == null || langCode.isEmpty) return '';

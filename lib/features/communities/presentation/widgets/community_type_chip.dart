@@ -6,18 +6,15 @@ import '../../domain/entities/community.dart';
 ///
 /// A selectable chip for filtering communities by type
 class CommunityTypeChip extends StatelessWidget {
+
+  const CommunityTypeChip({
+    required this.label, required this.isSelected, required this.onTap, super.key,
+    this.type,
+  });
   final CommunityType? type;
   final String label;
   final bool isSelected;
   final VoidCallback onTap;
-
-  const CommunityTypeChip({
-    super.key,
-    this.type,
-    required this.label,
-    required this.isSelected,
-    required this.onTap,
-  });
 
   @override
   Widget build(BuildContext context) {

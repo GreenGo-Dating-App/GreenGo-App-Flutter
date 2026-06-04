@@ -4,12 +4,6 @@ import '../constants/app_colors.dart';
 /// Enhancement #28: Quick Dark Mode Toggle
 /// Quick access settings shortcuts
 class QuickSettingsToggle extends StatelessWidget {
-  final bool isDarkMode;
-  final bool notificationsEnabled;
-  final bool soundEnabled;
-  final Function(bool)? onDarkModeChanged;
-  final Function(bool)? onNotificationsChanged;
-  final Function(bool)? onSoundChanged;
 
   const QuickSettingsToggle({
     super.key,
@@ -20,6 +14,12 @@ class QuickSettingsToggle extends StatelessWidget {
     this.onNotificationsChanged,
     this.onSoundChanged,
   });
+  final bool isDarkMode;
+  final bool notificationsEnabled;
+  final bool soundEnabled;
+  final Function(bool)? onDarkModeChanged;
+  final Function(bool)? onNotificationsChanged;
+  final Function(bool)? onSoundChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -73,10 +73,6 @@ class QuickSettingsToggle extends StatelessWidget {
 }
 
 class _QuickToggle extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final bool isActive;
-  final VoidCallback onTap;
 
   const _QuickToggle({
     required this.icon,
@@ -84,6 +80,10 @@ class _QuickToggle extends StatelessWidget {
     required this.isActive,
     required this.onTap,
   });
+  final IconData icon;
+  final String label;
+  final bool isActive;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -126,18 +126,16 @@ class _QuickToggle extends StatelessWidget {
 
 /// Quick toggle button for app bar
 class QuickToggleButton extends StatelessWidget {
+
+  const QuickToggleButton({
+    required this.icon, required this.isActive, super.key,
+    this.onTap,
+    this.tooltip,
+  });
   final IconData icon;
   final bool isActive;
   final VoidCallback? onTap;
   final String? tooltip;
-
-  const QuickToggleButton({
-    super.key,
-    required this.icon,
-    required this.isActive,
-    this.onTap,
-    this.tooltip,
-  });
 
   @override
   Widget build(BuildContext context) {

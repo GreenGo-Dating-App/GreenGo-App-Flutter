@@ -59,8 +59,8 @@ class WebGeocodingService {
       final location = result['geometry']['location'];
       final components = result['address_components'] as List;
 
-      String city = '';
-      String country = '';
+      var city = '';
+      var country = '';
 
       for (final comp in components) {
         final types = List<String>.from(comp['types']);
@@ -109,8 +109,8 @@ class WebGeocodingService {
         final location = item['geometry']['location'];
         final components = item['address_components'] as List;
 
-        String city = '';
-        String country = '';
+        var city = '';
+        var country = '';
 
         for (final comp in components) {
           final types = List<String>.from(comp['types']);
@@ -162,8 +162,8 @@ class WebGeocodingService {
       final item = data['results'][0];
       final components = item['address_components'] as List;
 
-      String city = '';
-      String country = '';
+      var city = '';
+      var country = '';
 
       for (final comp in components) {
         final types = List<String>.from(comp['types']);
@@ -198,11 +198,6 @@ class WebGeocodingService {
 }
 
 class WebGeocodingResult {
-  final double latitude;
-  final double longitude;
-  final String city;
-  final String country;
-  final String displayAddress;
 
   const WebGeocodingResult({
     required this.latitude,
@@ -211,16 +206,21 @@ class WebGeocodingResult {
     required this.country,
     required this.displayAddress,
   });
+  final double latitude;
+  final double longitude;
+  final String city;
+  final String country;
+  final String displayAddress;
 }
 
 class PlaceAutocompleteSuggestion {
-  final String placeId;
-  final String description;
-  final String mainText;
 
   const PlaceAutocompleteSuggestion({
     required this.placeId,
     required this.description,
     required this.mainText,
   });
+  final String placeId;
+  final String description;
+  final String mainText;
 }

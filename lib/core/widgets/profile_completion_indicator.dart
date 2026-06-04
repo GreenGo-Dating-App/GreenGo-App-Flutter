@@ -4,18 +4,17 @@ import '../constants/app_colors.dart';
 /// Enhancement #6: Profile Completion Indicator
 /// Shows profile completion percentage with visual progress
 class ProfileCompletionIndicator extends StatelessWidget {
-  final double completion;
-  final bool showPercentage;
-  final bool showLabel;
-  final double height;
 
   const ProfileCompletionIndicator({
-    super.key,
-    required this.completion,
+    required this.completion, super.key,
     this.showPercentage = true,
     this.showLabel = true,
     this.height = 8,
   });
+  final double completion;
+  final bool showPercentage;
+  final bool showLabel;
+  final double height;
 
   Color _getColor() {
     if (completion >= 100) return AppColors.successGreen;
@@ -43,9 +42,9 @@ class ProfileCompletionIndicator extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Profile Completion',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 12,
                   ),
@@ -92,14 +91,13 @@ class ProfileCompletionIndicator extends StatelessWidget {
 
 /// Circular profile completion indicator
 class CircularProfileCompletion extends StatelessWidget {
-  final double completion;
-  final double size;
 
   const CircularProfileCompletion({
-    super.key,
-    required this.completion,
+    required this.completion, super.key,
     this.size = 60,
   });
+  final double completion;
+  final double size;
 
   Color _getColor() {
     if (completion >= 100) return AppColors.successGreen;

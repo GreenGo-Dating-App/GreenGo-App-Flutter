@@ -4,16 +4,15 @@ import '../constants/app_colors.dart';
 /// Enhancement #4: Match Percentage Badge
 /// Shows compatibility score as a percentage
 class MatchPercentageBadge extends StatelessWidget {
-  final double percentage;
-  final double size;
-  final bool showLabel;
 
   const MatchPercentageBadge({
-    super.key,
-    required this.percentage,
+    required this.percentage, super.key,
     this.size = 40,
     this.showLabel = true,
   });
+  final double percentage;
+  final double size;
+  final bool showLabel;
 
   Color _getColor() {
     if (percentage >= 80) return AppColors.successGreen;
@@ -72,14 +71,13 @@ class MatchPercentageBadge extends StatelessWidget {
 
 /// Circular match percentage indicator
 class CircularMatchIndicator extends StatelessWidget {
-  final double percentage;
-  final double size;
 
   const CircularMatchIndicator({
-    super.key,
-    required this.percentage,
+    required this.percentage, super.key,
     this.size = 50,
   });
+  final double percentage;
+  final double size;
 
   Color _getColor() {
     if (percentage >= 80) return AppColors.successGreen;

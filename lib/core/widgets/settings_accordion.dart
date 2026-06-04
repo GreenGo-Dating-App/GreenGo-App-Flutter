@@ -6,20 +6,17 @@ import '../constants/app_colors.dart';
 /// Renders a styled [ExpansionTile] (dark + gold theme) with a leading icon and
 /// title; tapping the header expands/collapses the grouped settings cards.
 class SettingsAccordion extends StatelessWidget {
+
+  const SettingsAccordion({
+    required this.title, required this.icon, required this.children, super.key,
+    this.initiallyExpanded = false,
+    this.accentColor,
+  });
   final String title;
   final IconData icon;
   final List<Widget> children;
   final bool initiallyExpanded;
   final Color? accentColor;
-
-  const SettingsAccordion({
-    super.key,
-    required this.title,
-    required this.icon,
-    required this.children,
-    this.initiallyExpanded = false,
-    this.accentColor,
-  });
 
   @override
   Widget build(BuildContext context) {

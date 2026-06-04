@@ -1,17 +1,16 @@
-/**
- * Track User Action Use Case
- * Tracks progress for all active challenges matching an action type.
- * Called from feature blocs (Chat, Discovery, Profile) when users perform actions.
- */
+/// Track User Action Use Case
+/// Tracks progress for all active challenges matching an action type.
+/// Called from feature blocs (Chat, Discovery, Profile) when users perform actions.
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../repositories/gamification_repository.dart';
 
 class TrackUserAction {
-  final GamificationRepository repository;
 
   TrackUserAction(this.repository);
+  final GamificationRepository repository;
 
   Future<Either<Failure, void>> call(TrackUserActionParams params) async {
     return repository.trackActionProgress(
@@ -23,9 +22,6 @@ class TrackUserAction {
 }
 
 class TrackUserActionParams {
-  final String userId;
-  final String actionType;
-  final int incrementBy;
 
   const TrackUserActionParams({
     required this.userId,
@@ -51,4 +47,7 @@ class TrackUserActionParams {
 
   factory TrackUserActionParams.giftSent(String userId) =>
       TrackUserActionParams(userId: userId, actionType: 'gift_sent');
+  final String userId;
+  final String actionType;
+  final int incrementBy;
 }

@@ -2,13 +2,6 @@ import 'package:equatable/equatable.dart';
 
 /// Represents a weekly country spotlight feature
 class CountrySpotlight extends Equatable {
-  final String id;
-  final String country;
-  final String title;
-  final String imageUrl;
-  final DateTime weekOf;
-  final bool isActive;
-  final List<SpotlightSection> sections;
 
   const CountrySpotlight({
     required this.id,
@@ -19,6 +12,13 @@ class CountrySpotlight extends Equatable {
     this.isActive = true,
     this.sections = const [],
   });
+  final String id;
+  final String country;
+  final String title;
+  final String imageUrl;
+  final DateTime weekOf;
+  final bool isActive;
+  final List<SpotlightSection> sections;
 
   /// Get the cuisine section if it exists
   SpotlightSection? get cuisine => sections.firstWhereOrNull(
@@ -80,17 +80,16 @@ enum SpotlightSectionType {
 }
 
 class SpotlightSection extends Equatable {
-  final String title;
-  final String content;
-  final String? imageUrl;
-  final SpotlightSectionType type;
 
   const SpotlightSection({
     required this.title,
     required this.content,
-    this.imageUrl,
-    required this.type,
+    required this.type, this.imageUrl,
   });
+  final String title;
+  final String content;
+  final String? imageUrl;
+  final SpotlightSectionType type;
 
   @override
   List<Object?> get props => [title, content, imageUrl, type];

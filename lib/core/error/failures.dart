@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
 abstract class Failure extends Equatable {
-  final String message;
 
   const Failure(this.message);
+  final String message;
 
   @override
   List<Object?> get props => [message];
@@ -11,53 +11,53 @@ abstract class Failure extends Equatable {
 
 // General failures
 class ServerFailure extends Failure {
-  const ServerFailure([String message = 'Server error occurred']) : super(message);
+  const ServerFailure([super.message = 'Server error occurred']);
 }
 
 class CacheFailure extends Failure {
-  const CacheFailure([String message = 'Cache error occurred']) : super(message);
+  const CacheFailure([super.message = 'Cache error occurred']);
 }
 
 class NetworkFailure extends Failure {
-  const NetworkFailure([String message = 'No internet connection']) : super(message);
+  const NetworkFailure([super.message = 'No internet connection']);
 }
 
 // Authentication failures
 class AuthenticationFailure extends Failure {
-  const AuthenticationFailure([String message = 'Authentication failed']) : super(message);
+  const AuthenticationFailure([super.message = 'Authentication failed']);
 }
 
 class InvalidCredentialsFailure extends Failure {
-  const InvalidCredentialsFailure([String message = 'Invalid email or password']) : super(message);
+  const InvalidCredentialsFailure([super.message = 'Invalid email or password']);
 }
 
 class UserNotFoundFailure extends Failure {
-  const UserNotFoundFailure([String message = 'User not found']) : super(message);
+  const UserNotFoundFailure([super.message = 'User not found']);
 }
 
 class EmailAlreadyInUseFailure extends Failure {
-  const EmailAlreadyInUseFailure([String message = 'Email already in use']) : super(message);
+  const EmailAlreadyInUseFailure([super.message = 'Email already in use']);
 }
 
 class WeakPasswordFailure extends Failure {
-  const WeakPasswordFailure([String message = 'Password is too weak']) : super(message);
+  const WeakPasswordFailure([super.message = 'Password is too weak']);
 }
 
 class InvalidEmailFailure extends Failure {
-  const InvalidEmailFailure([String message = 'Invalid email format']) : super(message);
+  const InvalidEmailFailure([super.message = 'Invalid email format']);
 }
 
 // Upload failures
 class UploadFailure extends Failure {
-  const UploadFailure([String message = 'Upload failed']) : super(message);
+  const UploadFailure([super.message = 'Upload failed']);
 }
 
 // Validation failures
 class ValidationFailure extends Failure {
-  const ValidationFailure([String message = 'Validation error']) : super(message);
+  const ValidationFailure([super.message = 'Validation error']);
 }
 
 // Permission failures
 class PermissionDeniedFailure extends Failure {
-  const PermissionDeniedFailure([String message = 'Permission denied']) : super(message);
+  const PermissionDeniedFailure([super.message = 'Permission denied']);
 }

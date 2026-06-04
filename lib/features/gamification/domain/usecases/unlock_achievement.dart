@@ -1,7 +1,6 @@
-/**
- * Unlock Achievement Use Case
- * Points 176-185: Unlock achievements and grant rewards
- */
+/// Unlock Achievement Use Case
+/// Points 176-185: Unlock achievements and grant rewards
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/achievement.dart';
 import '../repositories/gamification_repository.dart';
 
 class UnlockAchievement implements UseCase<AchievementUnlockResult, UnlockAchievementParams> {
-  final GamificationRepository repository;
 
   UnlockAchievement(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, AchievementUnlockResult>> call(
@@ -80,33 +79,33 @@ class UnlockAchievement implements UseCase<AchievementUnlockResult, UnlockAchiev
 }
 
 class UnlockAchievementParams {
-  final String userId;
-  final String achievementId;
 
   UnlockAchievementParams({
     required this.userId,
     required this.achievementId,
   });
+  final String userId;
+  final String achievementId;
 }
 
 class AchievementUnlockResult {
-  final Achievement achievement;
-  final UserAchievementProgress progress;
-  final List<AchievementRewardGranted> rewardsGranted;
 
   AchievementUnlockResult({
     required this.achievement,
     required this.progress,
     required this.rewardsGranted,
   });
+  final Achievement achievement;
+  final UserAchievementProgress progress;
+  final List<AchievementRewardGranted> rewardsGranted;
 }
 
 class AchievementRewardGranted {
-  final String type; // xp, coins, badge
-  final int amount;
 
   AchievementRewardGranted({
     required this.type,
     required this.amount,
   });
+  final String type; // xp, coins, badge
+  final int amount;
 }

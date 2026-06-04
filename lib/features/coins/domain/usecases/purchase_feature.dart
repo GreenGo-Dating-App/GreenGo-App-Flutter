@@ -6,9 +6,9 @@ import '../repositories/coin_repository.dart';
 /// Purchase Feature with Coins Use Case
 /// Point 161: Purchase features using coins (Super Like, Boost, Undo, See Who Liked You)
 class PurchaseFeature {
-  final CoinRepository repository;
 
   PurchaseFeature(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinTransaction>> call({
     required String userId,
@@ -16,7 +16,7 @@ class PurchaseFeature {
     required int cost,
     String? relatedId,
   }) async {
-    return await repository.purchaseFeature(
+    return repository.purchaseFeature(
       userId: userId,
       featureName: featureName,
       cost: cost,
@@ -27,15 +27,15 @@ class PurchaseFeature {
 
 /// Check if User Can Afford Feature Use Case
 class CanAffordFeature {
-  final CoinRepository repository;
 
   CanAffordFeature(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, bool>> call({
     required String userId,
     required int cost,
   }) async {
-    return await repository.canAffordFeature(
+    return repository.canAffordFeature(
       userId: userId,
       cost: cost,
     );

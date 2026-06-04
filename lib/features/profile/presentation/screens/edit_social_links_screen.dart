@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/entities/social_links.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import '../../../../generated/app_localizations.dart';
-import '../../../../core/utils/safe_navigation.dart';
 
 class EditSocialLinksScreen extends StatefulWidget {
-  final Profile profile;
 
   const EditSocialLinksScreen({
-    super.key,
-    required this.profile,
+    required this.profile, super.key,
   });
+  final Profile profile;
 
   @override
   State<EditSocialLinksScreen> createState() => _EditSocialLinksScreenState();

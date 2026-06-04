@@ -1,23 +1,23 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/entities/coin_package.dart';
-import '../../../coins/domain/entities/order.dart';
 import '../../../coins/domain/entities/invoice.dart';
+import '../../../coins/domain/entities/order.dart';
 import '../../../coins/domain/entities/video_coin.dart';
 
 /// Coin Management Screen
 /// Admin interface for managing coin packages and user balances
 class CoinManagementScreen extends StatefulWidget {
-  final String adminId;
 
   const CoinManagementScreen({
-    super.key,
-    required this.adminId,
+    required this.adminId, super.key,
   });
+  final String adminId;
 
   @override
   State<CoinManagementScreen> createState() => _CoinManagementScreenState();
@@ -84,9 +84,9 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
 
 /// Packages Tab - Manage coin packages
 class _PackagesTab extends StatefulWidget {
-  final String adminId;
 
   const _PackagesTab({required this.adminId});
+  final String adminId;
 
   @override
   State<_PackagesTab> createState() => _PackagesTabState();
@@ -221,15 +221,15 @@ class _PackagesTabState extends State<_PackagesTab> {
 }
 
 class _PackageCard extends StatelessWidget {
-  final CoinPackage package;
-  final VoidCallback onEdit;
-  final VoidCallback onDelete;
 
   const _PackageCard({
     required this.package,
     required this.onEdit,
     required this.onDelete,
   });
+  final CoinPackage package;
+  final VoidCallback onEdit;
+  final VoidCallback onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -344,13 +344,12 @@ class _PackageCard extends StatelessWidget {
 }
 
 class _PackageEditDialog extends StatefulWidget {
-  final CoinPackage? package;
-  final Function(CoinPackage) onSave;
 
   const _PackageEditDialog({
-    this.package,
-    required this.onSave,
+    required this.onSave, this.package,
   });
+  final CoinPackage? package;
+  final Function(CoinPackage) onSave;
 
   @override
   State<_PackageEditDialog> createState() => _PackageEditDialogState();
@@ -436,7 +435,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
                 style: const TextStyle(color: AppColors.textPrimary),
               ),
               value: _isPromotional,
-              activeColor: AppColors.warningAmber,
+              activeThumbColor: AppColors.warningAmber,
               onChanged: (value) => setState(() => _isPromotional = value),
             ),
           ],
@@ -521,9 +520,9 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
 
 /// User Balance Tab - Adjust user coin balances
 class _UserBalanceTab extends StatefulWidget {
-  final String adminId;
 
   const _UserBalanceTab({required this.adminId});
+  final String adminId;
 
   @override
   State<_UserBalanceTab> createState() => _UserBalanceTabState();
@@ -840,13 +839,13 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
 
 /// Spend Items Tab - Configure what coins can be spent on
 class _SpendItemsTab extends StatelessWidget {
-  final String adminId;
 
   const _SpendItemsTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
-    final categories = CoinSpendCategory.values;
+    const categories = CoinSpendCategory.values;
 
     return ListView.builder(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
@@ -881,9 +880,9 @@ class _SpendItemsTab extends StatelessWidget {
 }
 
 class _SpendItemCard extends StatelessWidget {
-  final CoinSpendItem item;
 
   const _SpendItemCard({required this.item});
+  final CoinSpendItem item;
 
   @override
   Widget build(BuildContext context) {
@@ -1063,9 +1062,9 @@ class _SpendItemCard extends StatelessWidget {
 
 /// Video Coins Tab - Manage video coin packages
 class _VideoCoinsTab extends StatelessWidget {
-  final String adminId;
 
   const _VideoCoinsTab({required this.adminId});
+  final String adminId;
 
   @override
   Widget build(BuildContext context) {
@@ -1100,8 +1099,8 @@ class _VideoCoinsTab extends StatelessWidget {
             if (!snapshot.hasData) {
               return const Center(child: CircularProgressIndicator());
             }
-            int totalMinutes = 0;
-            int usedMinutes = 0;
+            var totalMinutes = 0;
+            var usedMinutes = 0;
             for (final doc in snapshot.data!.docs) {
               final data = doc.data() as Map<String, dynamic>;
               totalMinutes += (data['totalVideoCoins'] as num?)?.toInt() ?? 0;
@@ -1143,9 +1142,9 @@ class _VideoCoinsTab extends StatelessWidget {
 }
 
 class _VideoCoinPackageCard extends StatelessWidget {
-  final VideoCoinPackage package;
 
   const _VideoCoinPackageCard({required this.package});
+  final VideoCoinPackage package;
 
   @override
   Widget build(BuildContext context) {
@@ -1240,15 +1239,15 @@ class _VideoCoinPackageCard extends StatelessWidget {
 }
 
 class _StatCard extends StatelessWidget {
-  final String title;
-  final String value;
-  final IconData icon;
 
   const _StatCard({
     required this.title,
     required this.value,
     required this.icon,
   });
+  final String title;
+  final String value;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -1286,9 +1285,9 @@ class _StatCard extends StatelessWidget {
 
 /// Orders Tab - View and manage orders
 class _OrdersTab extends StatefulWidget {
-  final String adminId;
 
   const _OrdersTab({required this.adminId});
+  final String adminId;
 
   @override
   State<_OrdersTab> createState() => _OrdersTabState();
@@ -1408,10 +1407,10 @@ class _OrdersTabState extends State<_OrdersTab> {
 }
 
 class _OrderCard extends StatelessWidget {
-  final String orderId;
-  final Map<String, dynamic> data;
 
   const _OrderCard({required this.orderId, required this.data});
+  final String orderId;
+  final Map<String, dynamic> data;
 
   @override
   Widget build(BuildContext context) {
@@ -1574,10 +1573,10 @@ class _OrderCard extends StatelessWidget {
 }
 
 class _DetailRow extends StatelessWidget {
-  final String label;
-  final String value;
 
   const _DetailRow(this.label, this.value);
+  final String label;
+  final String value;
 
   @override
   Widget build(BuildContext context) {
@@ -1596,9 +1595,9 @@ class _DetailRow extends StatelessWidget {
 
 /// Invoices Tab - View and manage invoices
 class _InvoicesTab extends StatefulWidget {
-  final String adminId;
 
   const _InvoicesTab({required this.adminId});
+  final String adminId;
 
   @override
   State<_InvoicesTab> createState() => _InvoicesTabState();
@@ -1709,10 +1708,10 @@ class _InvoicesTabState extends State<_InvoicesTab> {
 }
 
 class _InvoiceCard extends StatelessWidget {
-  final String invoiceId;
-  final Map<String, dynamic> data;
 
   const _InvoiceCard({required this.invoiceId, required this.data});
+  final String invoiceId;
+  final Map<String, dynamic> data;
 
   @override
   Widget build(BuildContext context) {

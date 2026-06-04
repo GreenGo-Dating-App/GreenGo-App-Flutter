@@ -5,9 +5,9 @@ import '../../domain/repositories/globe_repository.dart';
 import '../datasources/globe_remote_datasource.dart';
 
 class GlobeRepositoryImpl implements GlobeRepository {
-  final GlobeRemoteDataSource remoteDataSource;
 
   GlobeRepositoryImpl({required this.remoteDataSource});
+  final GlobeRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, GlobeData>> getGlobeData({

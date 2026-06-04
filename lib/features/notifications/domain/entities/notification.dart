@@ -4,6 +4,18 @@ import 'package:equatable/equatable.dart';
 ///
 /// Represents a user notification
 class NotificationEntity extends Equatable {
+
+  const NotificationEntity({
+    required this.notificationId,
+    required this.userId,
+    required this.type,
+    required this.title,
+    required this.message,
+    required this.createdAt, this.data,
+    this.isRead = false,
+    this.actionUrl,
+    this.imageUrl,
+  });
   final String notificationId;
   final String userId;
   final NotificationType type;
@@ -14,19 +26,6 @@ class NotificationEntity extends Equatable {
   final bool isRead;
   final String? actionUrl;
   final String? imageUrl;
-
-  const NotificationEntity({
-    required this.notificationId,
-    required this.userId,
-    required this.type,
-    required this.title,
-    required this.message,
-    this.data,
-    required this.createdAt,
-    this.isRead = false,
-    this.actionUrl,
-    this.imageUrl,
-  });
 
   /// Get time since notification
   String get timeSinceText {

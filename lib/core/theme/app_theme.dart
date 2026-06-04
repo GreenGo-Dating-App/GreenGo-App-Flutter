@@ -42,12 +42,10 @@ class AppTheme {
         primary: AppColors.richGold,
         secondary: AppColors.accentGold,
         surface: AppColors.backgroundCard,
-        background: AppColors.backgroundDark,
         error: AppColors.errorRed,
         onPrimary: AppColors.deepBlack,
         onSecondary: AppColors.deepBlack,
         onSurface: AppColors.textPrimary,
-        onBackground: AppColors.textPrimary,
         onError: AppColors.textPrimary,
       ),
 
@@ -360,14 +358,14 @@ class AppTheme {
 
       // Switch Theme
       switchTheme: SwitchThemeData(
-        thumbColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        thumbColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.richGold;
           }
           return AppColors.textTertiary;
         }),
-        trackColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        trackColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.richGold.withOpacity(0.5);
           }
           return AppColors.divider;
@@ -376,8 +374,8 @@ class AppTheme {
 
       // Radio Theme
       radioTheme: RadioThemeData(
-        fillColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.richGold;
           }
           return AppColors.textTertiary;
@@ -386,13 +384,13 @@ class AppTheme {
 
       // Checkbox Theme
       checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.richGold;
           }
           return AppColors.textTertiary;
         }),
-        checkColor: MaterialStateProperty.all(AppColors.deepBlack),
+        checkColor: WidgetStateProperty.all(AppColors.deepBlack),
       ),
     );
   }

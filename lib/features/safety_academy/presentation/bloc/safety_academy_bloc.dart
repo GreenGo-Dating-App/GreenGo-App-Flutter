@@ -10,7 +10,6 @@ import 'safety_academy_state.dart';
 /// and lesson/module completion workflows.
 class SafetyAcademyBloc
     extends Bloc<SafetyAcademyEvent, SafetyAcademyState> {
-  final SafetyAcademyRepository _repository;
 
   SafetyAcademyBloc({
     required SafetyAcademyRepository repository,
@@ -22,6 +21,7 @@ class SafetyAcademyBloc
     on<CompleteLesson>(_onCompleteLesson);
     on<CompleteModule>(_onCompleteModule);
   }
+  final SafetyAcademyRepository _repository;
 
   // ---------------------------------------------------------------------------
   // Event handlers

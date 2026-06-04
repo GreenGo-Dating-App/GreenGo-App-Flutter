@@ -3,17 +3,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
 class AuthButton extends StatelessWidget {
-  final String text;
-  final VoidCallback? onPressed;
-  final bool isLoading;
-  final bool isOutlined;
-  final Color? backgroundColor;
-  final Color? textColor;
-  final IconData? icon;
 
   const AuthButton({
-    super.key,
-    required this.text,
+    required this.text, super.key,
     this.onPressed,
     this.isLoading = false,
     this.isOutlined = false,
@@ -21,6 +13,13 @@ class AuthButton extends StatelessWidget {
     this.textColor,
     this.icon,
   });
+  final String text;
+  final VoidCallback? onPressed;
+  final bool isLoading;
+  final bool isOutlined;
+  final Color? backgroundColor;
+  final Color? textColor;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {

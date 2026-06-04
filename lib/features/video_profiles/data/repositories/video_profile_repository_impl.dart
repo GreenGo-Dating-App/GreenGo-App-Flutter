@@ -9,15 +9,15 @@ import '../datasources/video_profile_remote_datasource.dart';
 
 /// Implementation of [VideoProfileRepository] using Firebase backend.
 class VideoProfileRepositoryImpl implements VideoProfileRepository {
-  final VideoProfileRemoteDataSource remoteDataSource;
-
-  /// Optional callback for tracking upload progress (0.0 to 1.0).
-  void Function(double progress)? onUploadProgress;
 
   VideoProfileRepositoryImpl({
     required this.remoteDataSource,
     this.onUploadProgress,
   });
+  final VideoProfileRemoteDataSource remoteDataSource;
+
+  /// Optional callback for tracking upload progress (0.0 to 1.0).
+  void Function(double progress)? onUploadProgress;
 
   @override
   Future<Either<Failure, VideoProfile>> uploadVideoProfile(

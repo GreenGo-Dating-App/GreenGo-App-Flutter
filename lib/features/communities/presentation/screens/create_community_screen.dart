@@ -1,7 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
@@ -18,12 +19,12 @@ import '../widgets/community_card.dart';
 /// Form for creating a new community with name, description,
 /// type, languages, tags, and privacy settings
 class CreateCommunityScreen extends StatefulWidget {
-  final CommunityType? preselectedType;
 
   const CreateCommunityScreen({
     super.key,
     this.preselectedType,
   });
+  final CommunityType? preselectedType;
 
   @override
   State<CreateCommunityScreen> createState() => _CreateCommunityScreenState();
@@ -430,7 +431,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                     value: _isPublic,
                     onChanged: (value) =>
                         setState(() => _isPublic = value),
-                    activeColor: AppColors.richGold,
+                    activeThumbColor: AppColors.richGold,
                   ),
                 ],
               ),

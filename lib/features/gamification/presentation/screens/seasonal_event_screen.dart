@@ -1,21 +1,18 @@
-/**
- * Seasonal Event Screen
- * Point 200: Full seasonal event details with themed challenges
- */
+/// Seasonal Event Screen
+/// Point 200: Full seasonal event details with themed challenges
+library;
 
 import 'package:flutter/material.dart';
 import '../../domain/entities/daily_challenge.dart';
 import '../widgets/challenge_card.dart';
 
 class SeasonalEventScreen extends StatelessWidget {
-  final String userId;
-  final SeasonalEvent event;
 
   const SeasonalEventScreen({
-    Key? key,
-    required this.userId,
-    required this.event,
-  }) : super(key: key);
+    required this.userId, required this.event, super.key,
+  });
+  final String userId;
+  final SeasonalEvent event;
 
   @override
   Widget build(BuildContext context) {

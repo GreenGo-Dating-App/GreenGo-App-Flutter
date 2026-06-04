@@ -1,24 +1,24 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/match_preferences.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Discovery Preferences Screen
 ///
 /// Allows users to configure their matching preferences
 class DiscoveryPreferencesScreen extends StatefulWidget {
-  final String userId;
-  final MatchPreferences? currentPreferences;
-  final Function(MatchPreferences)? onSave;
 
   const DiscoveryPreferencesScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
     this.currentPreferences,
     this.onSave,
   });
+  final String userId;
+  final MatchPreferences? currentPreferences;
+  final Function(MatchPreferences)? onSave;
 
   @override
   State<DiscoveryPreferencesScreen> createState() =>
@@ -268,10 +268,10 @@ class _DiscoveryPreferencesScreenState
         .toList();
 
     // Fetch top countries from Firestore
-    List<MapEntry<String, int>> topCountries = [];
-    Map<String, int> countryUserCounts = {};
-    bool isLoadingTop = true;
-    bool sortByUsers = false; // false = alphabetical, true = by user count
+    var topCountries = <MapEntry<String, int>>[];
+    var countryUserCounts = <String, int>{};
+    var isLoadingTop = true;
+    var sortByUsers = false; // false = alphabetical, true = by user count
 
     showDialog(
       context: context,
@@ -293,7 +293,7 @@ class _DiscoveryPreferencesScreenState
 
             final query = searchController.text.toLowerCase();
             final isSearching = query.isNotEmpty;
-            var filtered = isSearching
+            final filtered = isSearching
                 ? availableCountries
                     .where((c) => c.toLowerCase().contains(query))
                     .toList()
@@ -672,7 +672,7 @@ class _DiscoveryPreferencesScreenState
         elevation: 0,
         title: Text(
           l10n.discoveryPreferencesTitle,
-          style: TextStyle(
+          style: const TextStyle(
             color: AppColors.richGold,
             fontWeight: FontWeight.bold,
           ),
@@ -695,7 +695,7 @@ class _DiscoveryPreferencesScreenState
                     onPressed: _savePreferences,
                     child: Text(
                       l10n.preferenceSave,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -717,7 +717,7 @@ class _DiscoveryPreferencesScreenState
                   children: [
                     Text(
                       l10n.preferenceAgeRange,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
                       ),
@@ -767,7 +767,7 @@ class _DiscoveryPreferencesScreenState
                   children: [
                     Text(
                       l10n.preferenceWithin,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
                       ),
@@ -803,13 +803,13 @@ class _DiscoveryPreferencesScreenState
                 SwitchListTile(
                   title: Text(
                     l10n.preferenceNoDistanceLimit,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
                     ),
                   ),
                   value: _preferences.maxDistanceKm == null,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(
@@ -874,7 +874,7 @@ class _DiscoveryPreferencesScreenState
                 else
                   Text(
                     l10n.preferenceNoCountryFilter,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 14,
                       fontStyle: FontStyle.italic,
@@ -889,7 +889,7 @@ class _DiscoveryPreferencesScreenState
                   ),
                   label: Text(
                     l10n.preferenceAddCountry,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.richGold,
                     ),
                   ),
@@ -915,7 +915,7 @@ class _DiscoveryPreferencesScreenState
                 ),
                 const SizedBox(height: 12),
                 DropdownButtonFormField<String>(
-                  value: _preferences.languageFilter,
+                  initialValue: _preferences.languageFilter,
                   dropdownColor: AppColors.backgroundCard,
                   style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
                   decoration: InputDecoration(
@@ -1145,7 +1145,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: true,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: null,
                 ),
                 const Divider(color: AppColors.divider),
@@ -1166,7 +1166,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: _preferences.onlyRecentlyActive,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(onlyRecentlyActive: value),
@@ -1189,7 +1189,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: _preferences.onlyOnlineNow,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(onlyOnlineNow: value),
@@ -1214,7 +1214,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: _preferences.showMyNetwork,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(showMyNetwork: value),
@@ -1239,7 +1239,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: _preferences.randomMode,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(randomMode: value),
@@ -1264,7 +1264,7 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ),
                   value: _preferences.showSupportUser,
-                  activeColor: AppColors.richGold,
+                  activeThumbColor: AppColors.richGold,
                   onChanged: (bool value) {
                     _updatePreferences(
                       _preferences.copyWith(showSupportUser: value),
@@ -1296,13 +1296,13 @@ class _DiscoveryPreferencesScreenState
                     spacing: 8,
                     runSpacing: 8,
                     children: _preferences.dealBreakers
-                        .map((dealBreaker) => _buildDealBreakerChip(dealBreaker))
+                        .map(_buildDealBreakerChip)
                         .toList(),
                   )
                 else
                   Text(
                     l10n.preferenceNoDealBreakers,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 14,
                       fontStyle: FontStyle.italic,

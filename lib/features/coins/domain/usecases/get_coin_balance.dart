@@ -6,12 +6,12 @@ import '../repositories/coin_repository.dart';
 /// Get Coin Balance Use Case
 /// Point 156: Get user's current coin balance
 class GetCoinBalance {
-  final CoinRepository repository;
 
   GetCoinBalance(this.repository);
+  final CoinRepository repository;
 
   Future<Either<Failure, CoinBalance>> call(String userId) async {
-    return await repository.getBalance(userId);
+    return repository.getBalance(userId);
   }
 
   /// Stream variant for real-time updates

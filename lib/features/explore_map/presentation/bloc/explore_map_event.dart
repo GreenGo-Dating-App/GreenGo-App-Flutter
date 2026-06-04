@@ -5,11 +5,6 @@ abstract class ExploreMapEvent {
 
 /// Load nearby users within a given radius.
 class LoadNearbyUsers extends ExploreMapEvent {
-  final String userId;
-  final double latitude;
-  final double longitude;
-  final double radiusKm;
-  final List<String> currentUserLanguages;
 
   const LoadNearbyUsers({
     required this.userId,
@@ -18,15 +13,15 @@ class LoadNearbyUsers extends ExploreMapEvent {
     required this.radiusKm,
     this.currentUserLanguages = const [],
   });
-}
-
-/// Refresh the nearby users list (pull-to-refresh).
-class RefreshMap extends ExploreMapEvent {
   final String userId;
   final double latitude;
   final double longitude;
   final double radiusKm;
   final List<String> currentUserLanguages;
+}
+
+/// Refresh the nearby users list (pull-to-refresh).
+class RefreshMap extends ExploreMapEvent {
 
   const RefreshMap({
     required this.userId,
@@ -35,15 +30,20 @@ class RefreshMap extends ExploreMapEvent {
     required this.radiusKm,
     this.currentUserLanguages = const [],
   });
+  final String userId;
+  final double latitude;
+  final double longitude;
+  final double radiusKm;
+  final List<String> currentUserLanguages;
 }
 
 /// Toggle the user's "Show me on map" preference.
 class ToggleShowOnMap extends ExploreMapEvent {
-  final String userId;
-  final bool showOnMap;
 
   const ToggleShowOnMap({
     required this.userId,
     required this.showOnMap,
   });
+  final String userId;
+  final bool showOnMap;
 }

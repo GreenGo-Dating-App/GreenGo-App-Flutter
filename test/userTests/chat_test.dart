@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'test_helpers.dart';
+
 import 'test_app.dart';
+import 'test_helpers.dart';
 
 /// Chat & Messaging User Tests (12 tests)
 /// Tests cover: Chat list, sending messages, message status, chat interactions

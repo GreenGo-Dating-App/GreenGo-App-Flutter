@@ -34,9 +34,9 @@ class VocabularyTrackingService {
       language,
     );
 
-    int totalXp = 0;
+    var totalXp = 0;
     final batch = _firestore.batch();
-    int batchCount = 0;
+    var batchCount = 0;
 
     for (final word in words) {
       final userWordRef = _firestore
@@ -137,11 +137,11 @@ class VocabularyTrackingService {
         .where('language', isEqualTo: language)
         .get();
 
-    int uniqueWords = 0;
-    int commonWords = 0;
-    int mediumWords = 0;
-    int rareWords = 0;
-    int unknownWords = 0;
+    var uniqueWords = 0;
+    var commonWords = 0;
+    var mediumWords = 0;
+    var rareWords = 0;
+    var unknownWords = 0;
 
     for (final doc in snapshot.docs) {
       uniqueWords++;

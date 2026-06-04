@@ -9,16 +9,15 @@ import '../../domain/entities/community_member.dart';
 /// Displays a community member with avatar, name, role badge,
 /// and local guide indicator
 class CommunityMemberTile extends StatelessWidget {
-  final CommunityMember member;
-  final VoidCallback? onTap;
-  final bool showRoleBadge;
 
   const CommunityMemberTile({
-    super.key,
-    required this.member,
+    required this.member, super.key,
     this.onTap,
     this.showRoleBadge = true,
   });
+  final CommunityMember member;
+  final VoidCallback? onTap;
+  final bool showRoleBadge;
 
   @override
   Widget build(BuildContext context) {

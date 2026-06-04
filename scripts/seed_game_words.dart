@@ -10,6 +10,7 @@
 ///
 /// Uses Firestore batch writes (max 500 per batch).
 /// Idempotent: checks counts before inserting.
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -525,9 +526,9 @@ Future<void> main() async {
 
   print('=== SEEDING GAME WORDS ===\n');
 
-  int totalWords = 0;
-  int totalQuestions = 0;
-  int totalGrammar = 0;
+  var totalWords = 0;
+  var totalQuestions = 0;
+  var totalGrammar = 0;
 
   for (final language in kLanguages) {
     print('Processing language: $language');
@@ -546,9 +547,9 @@ Future<void> main() async {
       continue;
     }
 
-    WriteBatch batch = firestore.batch();
-    int batchCount = 0;
-    int langWordCount = 0;
+    var batch = firestore.batch();
+    var batchCount = 0;
+    var langWordCount = 0;
 
     for (final entry in kStarterWords.entries) {
       final category = entry.key;
@@ -623,9 +624,9 @@ Future<void> main() async {
 
       print('Generating TR questions: $source -> $target');
 
-      WriteBatch batch = firestore.batch();
-      int batchCount = 0;
-      int questionCount = 0;
+      var batch = firestore.batch();
+      var batchCount = 0;
+      var questionCount = 0;
 
       for (final entry in kStarterWords.entries) {
         final words = entry.value;
@@ -718,8 +719,8 @@ Future<void> main() async {
 
     print('Seeding ${langQuestions.length} grammar questions for $language');
 
-    WriteBatch batch = firestore.batch();
-    int batchCount = 0;
+    var batch = firestore.batch();
+    var batchCount = 0;
 
     for (final q in langQuestions) {
       final docRef = firestore.collection('game_grammar_questions').doc();

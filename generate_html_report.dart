@@ -13,10 +13,10 @@ void main() {
 
   final testsuites = document.findAllElements('testsuite');
 
-  int totalTests = 0;
-  int totalPassed = 0;
-  int totalFailed = 0;
-  int totalErrors = 0;
+  var totalTests = 0;
+  var totalPassed = 0;
+  var totalFailed = 0;
+  var totalErrors = 0;
   double totalTime = 0;
 
   final testResults = <Map<String, dynamic>>[];
@@ -39,7 +39,7 @@ void main() {
       final failure = testcase.findElements('failure').firstOrNull;
       final error = testcase.findElements('error').firstOrNull;
 
-      String status = 'passed';
+      var status = 'passed';
       String? message;
 
       if (failure != null) {

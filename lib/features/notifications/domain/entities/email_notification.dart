@@ -1,12 +1,24 @@
-/**
- * Email Notification Entity
- * Points 281-285: Email communication system
- */
+/// Email Notification Entity
+/// Points 281-285: Email communication system
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Email notification (Point 281)
 class EmailNotification extends Equatable {
+
+  const EmailNotification({
+    required this.emailId,
+    required this.userId,
+    required this.recipientEmail,
+    required this.type,
+    required this.subject,
+    required this.htmlBody,
+    required this.createdAt, required this.status, required this.templateData, this.textBody,
+    this.scheduledFor,
+    this.sentAt,
+    this.sendGridId,
+  });
   final String emailId;
   final String userId;
   final String recipientEmail;
@@ -20,22 +32,6 @@ class EmailNotification extends Equatable {
   final EmailStatus status;
   final String? sendGridId;
   final Map<String, dynamic> templateData;
-
-  const EmailNotification({
-    required this.emailId,
-    required this.userId,
-    required this.recipientEmail,
-    required this.type,
-    required this.subject,
-    required this.htmlBody,
-    this.textBody,
-    required this.createdAt,
-    this.scheduledFor,
-    this.sentAt,
-    required this.status,
-    this.sendGridId,
-    required this.templateData,
-  });
 
   @override
   List<Object?> get props => [
@@ -118,12 +114,6 @@ enum EmailStatus {
 
 /// Welcome email series (Point 283)
 class WelcomeEmailSeries extends Equatable {
-  final String seriesId;
-  final String userId;
-  final DateTime startedAt;
-  final List<WelcomeEmailStep> steps;
-  final int currentStep;
-  final bool isCompleted;
 
   const WelcomeEmailSeries({
     required this.seriesId,
@@ -133,6 +123,12 @@ class WelcomeEmailSeries extends Equatable {
     required this.currentStep,
     required this.isCompleted,
   });
+  final String seriesId;
+  final String userId;
+  final DateTime startedAt;
+  final List<WelcomeEmailStep> steps;
+  final int currentStep;
+  final bool isCompleted;
 
   /// 7-day welcome series (Point 283)
   static List<WelcomeEmailStep> get defaultSteps => [
@@ -181,12 +177,6 @@ class WelcomeEmailSeries extends Equatable {
 
 /// Welcome email step
 class WelcomeEmailStep extends Equatable {
-  final int stepNumber;
-  final int delayDays;
-  final String subject;
-  final String template;
-  final DateTime? sentAt;
-  final bool isSent;
 
   const WelcomeEmailStep({
     required this.stepNumber,
@@ -196,6 +186,12 @@ class WelcomeEmailStep extends Equatable {
     this.sentAt,
     this.isSent = false,
   });
+  final int stepNumber;
+  final int delayDays;
+  final String subject;
+  final String template;
+  final DateTime? sentAt;
+  final bool isSent;
 
   @override
   List<Object?> get props => [
@@ -210,13 +206,6 @@ class WelcomeEmailStep extends Equatable {
 
 /// Weekly digest email (Point 284)
 class WeeklyDigestEmail extends Equatable {
-  final String digestId;
-  final String userId;
-  final DateTime weekStartDate;
-  final DateTime weekEndDate;
-  final WeeklyDigestData data;
-  final bool wasSent;
-  final DateTime? sentAt;
 
   const WeeklyDigestEmail({
     required this.digestId,
@@ -227,6 +216,13 @@ class WeeklyDigestEmail extends Equatable {
     required this.wasSent,
     this.sentAt,
   });
+  final String digestId;
+  final String userId;
+  final DateTime weekStartDate;
+  final DateTime weekEndDate;
+  final WeeklyDigestData data;
+  final bool wasSent;
+  final DateTime? sentAt;
 
   @override
   List<Object?> get props => [
@@ -242,13 +238,6 @@ class WeeklyDigestEmail extends Equatable {
 
 /// Weekly digest data (Point 284)
 class WeeklyDigestData extends Equatable {
-  final int newMatches;
-  final int newMessages;
-  final int profileViews;
-  final int newLikes;
-  final List<MatchHighlight> matchHighlights;
-  final List<String> weeklyTips;
-  final String? featuredPromotion;
 
   const WeeklyDigestData({
     required this.newMatches,
@@ -259,6 +248,13 @@ class WeeklyDigestData extends Equatable {
     required this.weeklyTips,
     this.featuredPromotion,
   });
+  final int newMatches;
+  final int newMessages;
+  final int profileViews;
+  final int newLikes;
+  final List<MatchHighlight> matchHighlights;
+  final List<String> weeklyTips;
+  final String? featuredPromotion;
 
   bool get hasActivity =>
       newMatches > 0 || newMessages > 0 || profileViews > 0 || newLikes > 0;
@@ -277,21 +273,19 @@ class WeeklyDigestData extends Equatable {
 
 /// Match highlight for digest
 class MatchHighlight extends Equatable {
+
+  const MatchHighlight({
+    required this.matchId,
+    required this.otherUserId,
+    required this.otherUserName,
+    required this.messageCount, required this.matchedAt, this.otherUserPhotoUrl,
+  });
   final String matchId;
   final String otherUserId;
   final String otherUserName;
   final String? otherUserPhotoUrl;
   final int messageCount;
   final DateTime matchedAt;
-
-  const MatchHighlight({
-    required this.matchId,
-    required this.otherUserId,
-    required this.otherUserName,
-    this.otherUserPhotoUrl,
-    required this.messageCount,
-    required this.matchedAt,
-  });
 
   @override
   List<Object?> get props => [
@@ -306,14 +300,6 @@ class MatchHighlight extends Equatable {
 
 /// Re-engagement campaign (Point 285)
 class ReEngagementCampaign extends Equatable {
-  final String campaignId;
-  final String name;
-  final ReEngagementTrigger trigger;
-  final int targetDaysInactive;
-  final EmailTemplate template;
-  final PersonalizationStrategy personalization;
-  final bool isActive;
-  final DateTime createdAt;
 
   const ReEngagementCampaign({
     required this.campaignId,
@@ -325,6 +311,14 @@ class ReEngagementCampaign extends Equatable {
     required this.isActive,
     required this.createdAt,
   });
+  final String campaignId;
+  final String name;
+  final ReEngagementTrigger trigger;
+  final int targetDaysInactive;
+  final EmailTemplate template;
+  final PersonalizationStrategy personalization;
+  final bool isActive;
+  final DateTime createdAt;
 
   @override
   List<Object?> get props => [
@@ -371,6 +365,14 @@ enum ReEngagementTrigger {
 
 /// Email template (Point 282)
 class EmailTemplate extends Equatable {
+
+  const EmailTemplate({
+    required this.templateId,
+    required this.name,
+    required this.subject,
+    required this.htmlContent,
+    required this.branding, required this.placeholders, this.textContent,
+  });
   final String templateId;
   final String name;
   final String subject;
@@ -378,16 +380,6 @@ class EmailTemplate extends Equatable {
   final String? textContent;
   final EmailBranding branding;
   final List<TemplatePlaceholder> placeholders;
-
-  const EmailTemplate({
-    required this.templateId,
-    required this.name,
-    required this.subject,
-    required this.htmlContent,
-    this.textContent,
-    required this.branding,
-    required this.placeholders,
-  });
 
   @override
   List<Object?> get props => [
@@ -403,21 +395,18 @@ class EmailTemplate extends Equatable {
 
 /// Email branding (Point 282)
 class EmailBranding extends Equatable {
+
+  const EmailBranding({
+    required this.logoUrl, required this.footerText, required this.socialLinks, this.backgroundColor = '#000000',
+    this.primaryColor = '#FFD700',
+    this.textColor = '#FFFFFF',
+  });
   final String backgroundColor; // #000000 (black)
   final String primaryColor; // #FFD700 (gold)
   final String textColor; // #FFFFFF (white)
   final String logoUrl;
   final String footerText;
   final Map<String, String> socialLinks;
-
-  const EmailBranding({
-    this.backgroundColor = '#000000',
-    this.primaryColor = '#FFD700',
-    this.textColor = '#FFFFFF',
-    required this.logoUrl,
-    required this.footerText,
-    required this.socialLinks,
-  });
 
   @override
   List<Object?> get props => [
@@ -432,15 +421,15 @@ class EmailBranding extends Equatable {
 
 /// Template placeholder
 class TemplatePlaceholder extends Equatable {
-  final String key;
-  final String description;
-  final bool isRequired;
 
   const TemplatePlaceholder({
     required this.key,
     required this.description,
     required this.isRequired,
   });
+  final String key;
+  final String description;
+  final bool isRequired;
 
   @override
   List<Object?> get props => [key, description, isRequired];
@@ -466,6 +455,16 @@ enum PersonalizationStrategy {
 
 /// Email analytics
 class EmailAnalytics extends Equatable {
+
+  const EmailAnalytics({
+    required this.emailId,
+    required this.sentAt,
+    required this.openCount, required this.clickCount, required this.clickedLinks, this.deliveredAt,
+    this.openedAt,
+    this.clickedAt,
+    this.bounceReason,
+    this.failureReason,
+  });
   final String emailId;
   final DateTime sentAt;
   final DateTime? deliveredAt;
@@ -476,19 +475,6 @@ class EmailAnalytics extends Equatable {
   final List<String> clickedLinks;
   final String? bounceReason;
   final String? failureReason;
-
-  const EmailAnalytics({
-    required this.emailId,
-    required this.sentAt,
-    this.deliveredAt,
-    this.openedAt,
-    this.clickedAt,
-    required this.openCount,
-    required this.clickCount,
-    required this.clickedLinks,
-    this.bounceReason,
-    this.failureReason,
-  });
 
   bool get wasDelivered => deliveredAt != null;
   bool get wasOpened => openedAt != null;

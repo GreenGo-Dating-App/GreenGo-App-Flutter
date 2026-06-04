@@ -1,7 +1,6 @@
-/**
- * Analytics Service
- * Points 251-260: Firebase Analytics integration and tracking
- */
+/// Analytics Service
+/// Points 251-260: Firebase Analytics integration and tracking
+library;
 
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';

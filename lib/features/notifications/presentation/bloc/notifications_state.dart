@@ -17,13 +17,13 @@ class NotificationsLoading extends NotificationsState {
 
 /// Notifications loaded
 class NotificationsLoaded extends NotificationsState {
-  final List<NotificationEntity> notifications;
-  final int unreadCount;
 
   const NotificationsLoaded({
     required this.notifications,
     this.unreadCount = 0,
   });
+  final List<NotificationEntity> notifications;
+  final int unreadCount;
 
   int get actualUnreadCount {
     return notifications.where((n) => !n.isRead).length;
@@ -37,7 +37,7 @@ class NotificationsEmpty extends NotificationsState {
 
 /// Error state
 class NotificationsError extends NotificationsState {
-  final String message;
 
   const NotificationsError(this.message);
+  final String message;
 }

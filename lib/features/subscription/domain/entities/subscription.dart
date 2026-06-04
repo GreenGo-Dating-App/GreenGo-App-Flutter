@@ -345,6 +345,22 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
 /// Subscription Entity
 /// Represents a user's one-time membership purchase
 class Subscription extends Equatable {
+
+  const Subscription({
+    required this.subscriptionId,
+    required this.userId,
+    required this.tier,
+    required this.status,
+    required this.startDate,
+    required this.price, required this.createdAt, this.endDate,
+    this.durationDays = 30,
+    this.platform,
+    this.purchaseToken,
+    this.transactionId,
+    this.orderId,
+    this.currency = 'USD',
+    this.updatedAt,
+  });
   final String subscriptionId;
   final String userId;
   final SubscriptionTier tier;
@@ -366,24 +382,6 @@ class Subscription extends Equatable {
   // Tracking
   final DateTime createdAt;
   final DateTime? updatedAt;
-
-  const Subscription({
-    required this.subscriptionId,
-    required this.userId,
-    required this.tier,
-    required this.status,
-    required this.startDate,
-    this.endDate,
-    this.durationDays = 30,
-    this.platform,
-    this.purchaseToken,
-    this.transactionId,
-    this.orderId,
-    required this.price,
-    this.currency = 'USD',
-    required this.createdAt,
-    this.updatedAt,
-  });
 
   /// Check if membership is currently active
   bool get isActive {

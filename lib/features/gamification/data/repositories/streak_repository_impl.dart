@@ -6,9 +6,9 @@ import '../datasources/streak_datasource.dart';
 
 /// Implementation of StreakRepository
 class StreakRepositoryImpl implements StreakRepository {
-  final StreakRemoteDataSource remoteDataSource;
 
   StreakRepositoryImpl({required this.remoteDataSource});
+  final StreakRemoteDataSource remoteDataSource;
 
   @override
   Future<Either<Failure, LoginStreak?>> getStreak(String userId) async {

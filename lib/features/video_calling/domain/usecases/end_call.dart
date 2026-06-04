@@ -4,9 +4,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// End Call Use Case
 class EndCall {
-  final VideoCallingRepository repository;
 
   EndCall(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, void>> call(EndCallParams params) {
     return repository.endCall(
@@ -18,11 +18,11 @@ class EndCall {
 
 /// Parameters for EndCall use case
 class EndCallParams {
-  final String callId;
-  final String userId;
 
   EndCallParams({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }

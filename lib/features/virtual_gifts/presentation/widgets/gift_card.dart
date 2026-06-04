@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
 import 'package:lottie/lottie.dart';
+
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/virtual_gift.dart';
 
 /// Gift card widget for displaying a single gift
 class GiftCard extends StatelessWidget {
-  final VirtualGift gift;
-  final bool isSelected;
-  final bool isAffordable;
-  final VoidCallback? onTap;
 
   const GiftCard({
-    super.key,
-    required this.gift,
+    required this.gift, super.key,
     this.isSelected = false,
     this.isAffordable = true,
     this.onTap,
   });
+  final VirtualGift gift;
+  final bool isSelected;
+  final bool isAffordable;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -130,18 +130,17 @@ class GiftCard extends StatelessWidget {
 
 /// Large gift card for gift detail/preview
 class GiftDetailCard extends StatelessWidget {
-  final VirtualGift gift;
-  final VoidCallback? onSend;
-  final bool isLoading;
-  final int? userCoins;
 
   const GiftDetailCard({
-    super.key,
-    required this.gift,
+    required this.gift, super.key,
     this.onSend,
     this.isLoading = false,
     this.userCoins,
   });
+  final VirtualGift gift;
+  final VoidCallback? onSend;
+  final bool isLoading;
+  final int? userCoins;
 
   @override
   Widget build(BuildContext context) {
@@ -283,16 +282,15 @@ class GiftDetailCard extends StatelessWidget {
 
 /// Received gift card with animation
 class ReceivedGiftCard extends StatelessWidget {
-  final SentVirtualGift sentGift;
-  final VoidCallback? onTap;
-  final VoidCallback? onPlayAnimation;
 
   const ReceivedGiftCard({
-    super.key,
-    required this.sentGift,
+    required this.sentGift, super.key,
     this.onTap,
     this.onPlayAnimation,
   });
+  final SentVirtualGift sentGift;
+  final VoidCallback? onTap;
+  final VoidCallback? onPlayAnimation;
 
   @override
   Widget build(BuildContext context) {

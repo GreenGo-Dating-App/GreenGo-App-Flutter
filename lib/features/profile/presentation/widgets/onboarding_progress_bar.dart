@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 
 class OnboardingProgressBar extends StatelessWidget {
-  final int currentStep;
-  final int totalSteps;
 
   const OnboardingProgressBar({
-    super.key,
-    required this.currentStep,
-    required this.totalSteps,
+    required this.currentStep, required this.totalSteps, super.key,
   });
+  final int currentStep;
+  final int totalSteps;
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #22: Empty State Illustrations
@@ -15,20 +15,19 @@ enum EmptyStateType {
 }
 
 class EmptyState extends StatelessWidget {
-  final EmptyStateType type;
-  final String? title;
-  final String? message;
-  final String? actionLabel;
-  final VoidCallback? onAction;
 
   const EmptyState({
-    super.key,
-    required this.type,
+    required this.type, super.key,
     this.title,
     this.message,
     this.actionLabel,
     this.onAction,
   });
+  final EmptyStateType type;
+  final String? title;
+  final String? message;
+  final String? actionLabel;
+  final VoidCallback? onAction;
 
   @override
   Widget build(BuildContext context) {

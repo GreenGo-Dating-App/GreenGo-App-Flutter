@@ -4,9 +4,9 @@ import '../repositories/video_calling_repository.dart';
 
 /// Decline Call Use Case
 class DeclineCall {
-  final VideoCallingRepository repository;
 
   DeclineCall(this.repository);
+  final VideoCallingRepository repository;
 
   Future<Either<Failure, void>> call(DeclineCallParams params) {
     return repository.declineCall(
@@ -18,11 +18,11 @@ class DeclineCall {
 
 /// Parameters for DeclineCall use case
 class DeclineCallParams {
-  final String callId;
-  final String userId;
 
   DeclineCallParams({
     required this.callId,
     required this.userId,
   });
+  final String callId;
+  final String userId;
 }

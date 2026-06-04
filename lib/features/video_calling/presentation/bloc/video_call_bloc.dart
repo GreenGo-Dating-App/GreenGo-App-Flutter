@@ -1,17 +1,19 @@
 import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../chat/domain/usecases/block_user.dart';
 // Agora SDK disabled for development
 // import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import '../../domain/entities/video_call.dart';
-import '../../domain/usecases/initiate_call.dart';
+import '../../domain/repositories/video_calling_repository.dart';
 import '../../domain/usecases/answer_call.dart';
 import '../../domain/usecases/decline_call.dart';
 import '../../domain/usecases/end_call.dart';
-import '../../domain/usecases/listen_for_incoming_calls.dart';
-import '../../domain/usecases/get_sdk_config.dart';
 import '../../domain/usecases/get_call_history.dart';
-import '../../domain/repositories/video_calling_repository.dart';
-import '../../../chat/domain/usecases/block_user.dart';
+import '../../domain/usecases/get_sdk_config.dart';
+import '../../domain/usecases/initiate_call.dart';
+import '../../domain/usecases/listen_for_incoming_calls.dart';
 import 'video_call_event.dart';
 import 'video_call_state.dart';
 
@@ -38,17 +40,12 @@ class RtcEngine {
 RtcEngine createAgoraRtcEngine() => RtcEngine();
 
 class RtcEngineContext {
+  const RtcEngineContext({required this.appId, required this.channelProfile});
   final String appId;
   final ChannelProfileType channelProfile;
-  const RtcEngineContext({required this.appId, required this.channelProfile});
 }
 
 class RtcEngineEventHandler {
-  final void Function(RtcConnection, int)? onJoinChannelSuccess;
-  final void Function(RtcConnection, int, int)? onUserJoined;
-  final void Function(RtcConnection, int, UserOfflineReasonType)? onUserOffline;
-  final void Function(ErrorCodeType, String)? onError;
-  final void Function(RtcConnection, int, QualityType, QualityType)? onNetworkQuality;
 
   const RtcEngineEventHandler({
     this.onJoinChannelSuccess,
@@ -57,11 +54,16 @@ class RtcEngineEventHandler {
     this.onError,
     this.onNetworkQuality,
   });
+  final void Function(RtcConnection, int)? onJoinChannelSuccess;
+  final void Function(RtcConnection, int, int)? onUserJoined;
+  final void Function(RtcConnection, int, UserOfflineReasonType)? onUserOffline;
+  final void Function(ErrorCodeType, String)? onError;
+  final void Function(RtcConnection, int, QualityType, QualityType)? onNetworkQuality;
 }
 
 class RtcConnection {
-  final String? channelId;
   const RtcConnection({this.channelId});
+  final String? channelId;
 }
 
 enum ChannelProfileType { channelProfileCommunication }
@@ -70,12 +72,13 @@ enum UserOfflineReasonType { userOfflineQuit }
 enum ErrorCodeType { errOk }
 
 class ChannelMediaOptions {
+  const ChannelMediaOptions({this.clientRoleType, this.channelProfile});
   final ClientRoleType? clientRoleType;
   final ChannelProfileType? channelProfile;
-  const ChannelMediaOptions({this.clientRoleType, this.channelProfile});
 }
 
 class QualityType {
+  const QualityType._(this._value);
   static const qualityExcellent = QualityType._('excellent');
   static const qualityGood = QualityType._('good');
   static const qualityPoor = QualityType._('poor');
@@ -84,34 +87,12 @@ class QualityType {
   static const qualityDown = QualityType._('down');
   static const qualityUnknown = QualityType._('unknown');
   final String _value;
-  const QualityType._(this._value);
 }
 
 /// Video Call BLoC
 ///
 /// Manages video calling state including Agora SDK integration
 class VideoCallBloc extends Bloc<VideoCallEvent, VideoCallState> {
-  final InitiateCall initiateCall;
-  final AnswerCall answerCall;
-  final DeclineCall declineCall;
-  final EndCall endCall;
-  final ListenForIncomingCalls listenForIncomingCalls;
-  final GetSDKConfig getSDKConfig;
-  final GetCallHistory getCallHistory;
-  final VideoCallingRepository repository;
-  final IsUserBlocked? isUserBlocked;
-
-  RtcEngine? _engine;
-  StreamSubscription? _incomingCallSubscription;
-  StreamSubscription? _callUpdatesSubscription;
-  Timer? _durationTimer;
-  Duration _callDuration = Duration.zero;
-
-  // Agora config - should be set from environment
-  String? _agoraAppId;
-  String? _agoraToken;
-  String? _currentChannelId;
-  int? _localUid;
 
   VideoCallBloc({
     required this.initiateCall,
@@ -145,6 +126,27 @@ class VideoCallBloc extends Bloc<VideoCallEvent, VideoCallState> {
     on<VideoCallSubmitFeedback>(_onSubmitFeedback);
     on<VideoCallDurationTick>(_onDurationTick);
   }
+  final InitiateCall initiateCall;
+  final AnswerCall answerCall;
+  final DeclineCall declineCall;
+  final EndCall endCall;
+  final ListenForIncomingCalls listenForIncomingCalls;
+  final GetSDKConfig getSDKConfig;
+  final GetCallHistory getCallHistory;
+  final VideoCallingRepository repository;
+  final IsUserBlocked? isUserBlocked;
+
+  RtcEngine? _engine;
+  StreamSubscription? _incomingCallSubscription;
+  StreamSubscription? _callUpdatesSubscription;
+  Timer? _durationTimer;
+  Duration _callDuration = Duration.zero;
+
+  // Agora config - should be set from environment
+  String? _agoraAppId;
+  String? _agoraToken;
+  String? _currentChannelId;
+  int? _localUid;
 
   /// Start listening for incoming calls
   Future<void> _onStartListening(

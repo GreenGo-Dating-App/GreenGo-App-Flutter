@@ -4,22 +4,20 @@ import '../constants/app_colors.dart';
 /// Enhancement #26: Notification Badges
 /// Unread count badges for navigation items
 class NotificationBadge extends StatelessWidget {
+
+  const NotificationBadge({
+    required this.count, required this.child, super.key,
+    this.badgeColor,
+    this.textColor,
+    this.top,
+    this.right,
+  });
   final int count;
   final Widget child;
   final Color? badgeColor;
   final Color? textColor;
   final double? top;
   final double? right;
-
-  const NotificationBadge({
-    super.key,
-    required this.count,
-    required this.child,
-    this.badgeColor,
-    this.textColor,
-    this.top,
-    this.right,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -68,18 +66,16 @@ class NotificationBadge extends StatelessWidget {
 
 /// Dot notification indicator (no count)
 class NotificationDot extends StatelessWidget {
+
+  const NotificationDot({
+    required this.show, required this.child, super.key,
+    this.dotColor,
+    this.size,
+  });
   final bool show;
   final Widget child;
   final Color? dotColor;
   final double? size;
-
-  const NotificationDot({
-    super.key,
-    required this.show,
-    required this.child,
-    this.dotColor,
-    this.size,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -112,14 +108,12 @@ class NotificationDot extends StatelessWidget {
 
 /// Animated notification badge
 class AnimatedNotificationBadge extends StatefulWidget {
-  final int count;
-  final Widget child;
 
   const AnimatedNotificationBadge({
-    super.key,
-    required this.count,
-    required this.child,
+    required this.count, required this.child, super.key,
   });
+  final int count;
+  final Widget child;
 
   @override
   State<AnimatedNotificationBadge> createState() =>

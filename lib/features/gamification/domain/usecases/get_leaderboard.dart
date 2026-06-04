@@ -1,7 +1,6 @@
-/**
- * Get Leaderboard Use Case
- * Point 191: Build leaderboard system with rankings
- */
+/// Get Leaderboard Use Case
+/// Point 191: Build leaderboard system with rankings
+library;
 
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
@@ -10,9 +9,9 @@ import '../entities/user_level.dart';
 import '../repositories/gamification_repository.dart';
 
 class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
-  final GamificationRepository repository;
 
   GetLeaderboard(this.repository);
+  final GamificationRepository repository;
 
   @override
   Future<Either<Failure, LeaderboardData>> call(
@@ -85,12 +84,7 @@ class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
   }
 }
 
-class GetLeaderboardParams {
-  final LeaderboardType type;
-  final String? region;
-  final int limit;
-  final String? userId; // To get user's rank
-  final String? timePeriod; // 'week', 'month', 'year'
+class GetLeaderboardParams { // 'week', 'month', 'year'
 
   GetLeaderboardParams({
     this.type = LeaderboardType.global,
@@ -99,9 +93,23 @@ class GetLeaderboardParams {
     this.userId,
     this.timePeriod,
   });
+  final LeaderboardType type;
+  final String? region;
+  final int limit;
+  final String? userId; // To get user's rank
+  final String? timePeriod;
 }
 
 class LeaderboardData {
+
+  LeaderboardData({
+    required this.entries,
+    required this.topTen,
+    required this.next90,
+    required this.type, this.userRank,
+    this.userEntry,
+    this.region,
+  });
   final List<LeaderboardEntry> entries;
   final List<LeaderboardEntry> topTen;
   final List<LeaderboardEntry> next90;
@@ -109,14 +117,4 @@ class LeaderboardData {
   final LeaderboardEntry? userEntry;
   final LeaderboardType type;
   final String? region;
-
-  LeaderboardData({
-    required this.entries,
-    required this.topTen,
-    required this.next90,
-    this.userRank,
-    this.userEntry,
-    required this.type,
-    this.region,
-  });
 }

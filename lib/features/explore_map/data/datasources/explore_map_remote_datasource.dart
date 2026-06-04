@@ -29,9 +29,9 @@ abstract class ExploreMapRemoteDataSource {
 }
 
 class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
-  final FirebaseFirestore firestore;
 
   ExploreMapRemoteDataSourceImpl({required this.firestore});
+  final FirebaseFirestore firestore;
 
   @override
   Future<List<MapUserModel>> getNearbyUsers({
@@ -51,7 +51,7 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
           .limit(500)
           .get();
 
-      final List<MapUserModel> nearbyUsers = [];
+      final nearbyUsers = <MapUserModel>[];
 
       for (final doc in querySnapshot.docs) {
         // Skip the current user

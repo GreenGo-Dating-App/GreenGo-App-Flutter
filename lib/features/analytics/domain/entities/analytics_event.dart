@@ -1,17 +1,11 @@
-/**
- * Analytics Event Entity
- * Points 251-255: User analytics and event tracking
- */
+/// Analytics Event Entity
+/// Points 251-255: User analytics and event tracking
+library;
 
 import 'package:equatable/equatable.dart';
 
 /// Analytics event (Points 251-252)
 class AnalyticsEvent extends Equatable {
-  final String eventName;
-  final Map<String, dynamic> parameters;
-  final DateTime timestamp;
-  final String? userId;
-  final String? sessionId;
 
   const AnalyticsEvent({
     required this.eventName,
@@ -20,6 +14,11 @@ class AnalyticsEvent extends Equatable {
     this.userId,
     this.sessionId,
   });
+  final String eventName;
+  final Map<String, dynamic> parameters;
+  final DateTime timestamp;
+  final String? userId;
+  final String? sessionId;
 
   @override
   List<Object?> get props => [
@@ -86,16 +85,13 @@ extension CriticalEventExtension on CriticalEvent {
 
 /// Screen view event (Point 251)
 class ScreenViewEvent extends AnalyticsEvent {
-  final String screenName;
-  final String? previousScreen;
-  final Duration? timeOnPreviousScreen;
 
   ScreenViewEvent({
     required this.screenName,
     this.previousScreen,
     this.timeOnPreviousScreen,
-    String? userId,
-    String? sessionId,
+    super.userId,
+    super.sessionId,
   }) : super(
           eventName: 'screen_view',
           parameters: {
@@ -105,9 +101,10 @@ class ScreenViewEvent extends AnalyticsEvent {
               'time_on_previous_screen': timeOnPreviousScreen.inSeconds,
           },
           timestamp: DateTime.now(),
-          userId: userId,
-          sessionId: sessionId,
         );
+  final String screenName;
+  final String? previousScreen;
+  final Duration? timeOnPreviousScreen;
 
   @override
   List<Object?> get props => [
@@ -120,21 +117,19 @@ class ScreenViewEvent extends AnalyticsEvent {
 
 /// User journey funnel (Point 253)
 class UserJourneyFunnel extends Equatable {
+
+  const UserJourneyFunnel({
+    required this.funnelName,
+    required this.steps,
+    required this.startedAt,
+    required this.isCompleted, required this.conversionRate, this.completedAt,
+  });
   final String funnelName;
   final List<FunnelStep> steps;
   final DateTime startedAt;
   final DateTime? completedAt;
   final bool isCompleted;
   final double conversionRate;
-
-  const UserJourneyFunnel({
-    required this.funnelName,
-    required this.steps,
-    required this.startedAt,
-    this.completedAt,
-    required this.isCompleted,
-    required this.conversionRate,
-  });
 
   @override
   List<Object?> get props => [
@@ -149,19 +144,18 @@ class UserJourneyFunnel extends Equatable {
 
 /// Funnel step
 class FunnelStep extends Equatable {
+
+  const FunnelStep({
+    required this.stepName,
+    required this.stepOrder,
+    required this.isCompleted, this.completedAt,
+    this.metadata,
+  });
   final String stepName;
   final int stepOrder;
   final DateTime? completedAt;
   final bool isCompleted;
   final Map<String, dynamic>? metadata;
-
-  const FunnelStep({
-    required this.stepName,
-    required this.stepOrder,
-    this.completedAt,
-    required this.isCompleted,
-    this.metadata,
-  });
 
   @override
   List<Object?> get props => [
@@ -242,12 +236,6 @@ extension FunnelTypeExtension on FunnelType {
 
 /// User cohort (Point 254)
 class UserCohort extends Equatable {
-  final String cohortId;
-  final String cohortName;
-  final DateTime acquisitionDate;
-  final int totalUsers;
-  final Map<int, double> retentionByDay; // Day 1, 7, 14, 30, 60, 90
-  final Map<String, dynamic> characteristics;
 
   const UserCohort({
     required this.cohortId,
@@ -257,6 +245,12 @@ class UserCohort extends Equatable {
     required this.retentionByDay,
     required this.characteristics,
   });
+  final String cohortId;
+  final String cohortName;
+  final DateTime acquisitionDate;
+  final int totalUsers;
+  final Map<int, double> retentionByDay; // Day 1, 7, 14, 30, 60, 90
+  final Map<String, dynamic> characteristics;
 
   double get day1Retention => retentionByDay[1] ?? 0.0;
   double get day7Retention => retentionByDay[7] ?? 0.0;
@@ -318,12 +312,7 @@ enum UserSegment {
 }
 
 /// User segmentation profile (Point 255)
-class UserSegmentProfile extends Equatable {
-  final String userId;
-  final UserSegment segment;
-  final DateTime assignedAt;
-  final Map<String, dynamic> behaviorMetrics;
-  final double engagementScore; // 0-100
+class UserSegmentProfile extends Equatable { // 0-100
 
   const UserSegmentProfile({
     required this.userId,
@@ -332,6 +321,11 @@ class UserSegmentProfile extends Equatable {
     required this.behaviorMetrics,
     required this.engagementScore,
   });
+  final String userId;
+  final UserSegment segment;
+  final DateTime assignedAt;
+  final Map<String, dynamic> behaviorMetrics;
+  final double engagementScore;
 
   @override
   List<Object?> get props => [
@@ -344,14 +338,7 @@ class UserSegmentProfile extends Equatable {
 }
 
 /// Behavior metrics for segmentation
-class BehaviorMetrics extends Equatable {
-  final int sessionsPerWeek;
-  final int messagesPerWeek;
-  final int matchesPerWeek;
-  final Duration avgSessionDuration;
-  final int daysSinceLastActive;
-  final int totalDaysActive;
-  final double featureAdoptionRate; // Percentage of features used
+class BehaviorMetrics extends Equatable { // Percentage of features used
 
   const BehaviorMetrics({
     required this.sessionsPerWeek,
@@ -362,6 +349,13 @@ class BehaviorMetrics extends Equatable {
     required this.totalDaysActive,
     required this.featureAdoptionRate,
   });
+  final int sessionsPerWeek;
+  final int messagesPerWeek;
+  final int matchesPerWeek;
+  final Duration avgSessionDuration;
+  final int daysSinceLastActive;
+  final int totalDaysActive;
+  final double featureAdoptionRate;
 
   /// Calculate user segment based on metrics (Point 255)
   UserSegment calculateSegment() {
@@ -414,13 +408,6 @@ class BehaviorMetrics extends Equatable {
 
 /// Churn prediction (Point 256)
 class ChurnPrediction extends Equatable {
-  final String userId;
-  final double churnProbability; // 0.0 - 1.0
-  final ChurnRisk riskLevel;
-  final List<ChurnFactor> contributingFactors;
-  final DateTime predictedAt;
-  final DateTime? predictedChurnDate;
-  final List<String> recommendedInterventions;
 
   const ChurnPrediction({
     required this.userId,
@@ -428,9 +415,15 @@ class ChurnPrediction extends Equatable {
     required this.riskLevel,
     required this.contributingFactors,
     required this.predictedAt,
-    this.predictedChurnDate,
-    required this.recommendedInterventions,
+    required this.recommendedInterventions, this.predictedChurnDate,
   });
+  final String userId;
+  final double churnProbability; // 0.0 - 1.0
+  final ChurnRisk riskLevel;
+  final List<ChurnFactor> contributingFactors;
+  final DateTime predictedAt;
+  final DateTime? predictedChurnDate;
+  final List<String> recommendedInterventions;
 
   @override
   List<Object?> get props => [
@@ -461,15 +454,15 @@ enum ChurnRisk {
 
 /// Churn contributing factor
 class ChurnFactor extends Equatable {
-  final String factorName;
-  final double impact; // -1.0 to 1.0 (negative = increases churn)
-  final String description;
 
   const ChurnFactor({
     required this.factorName,
     required this.impact,
     required this.description,
   });
+  final String factorName;
+  final double impact; // -1.0 to 1.0 (negative = increases churn)
+  final String description;
 
   @override
   List<Object?> get props => [factorName, impact, description];
@@ -477,14 +470,6 @@ class ChurnFactor extends Equatable {
 
 /// A/B Test experiment (Point 257)
 class ABTestExperiment extends Equatable {
-  final String experimentId;
-  final String experimentName;
-  final String description;
-  final ABTestVariant assignedVariant;
-  final DateTime assignedAt;
-  final Map<String, dynamic> variantConfig;
-  final bool hasConverted;
-  final DateTime? convertedAt;
 
   const ABTestExperiment({
     required this.experimentId,
@@ -496,6 +481,14 @@ class ABTestExperiment extends Equatable {
     required this.hasConverted,
     this.convertedAt,
   });
+  final String experimentId;
+  final String experimentName;
+  final String description;
+  final ABTestVariant assignedVariant;
+  final DateTime assignedAt;
+  final Map<String, dynamic> variantConfig;
+  final bool hasConverted;
+  final DateTime? convertedAt;
 
   @override
   List<Object?> get props => [
@@ -533,11 +526,6 @@ enum ABTestVariant {
 
 /// Heatmap data (Point 258)
 class HeatmapData extends Equatable {
-  final String screenName;
-  final List<TouchPoint> touchPoints;
-  final DateTime collectedAt;
-  final String deviceType;
-  final String screenResolution;
 
   const HeatmapData({
     required this.screenName,
@@ -546,6 +534,11 @@ class HeatmapData extends Equatable {
     required this.deviceType,
     required this.screenResolution,
   });
+  final String screenName;
+  final List<TouchPoint> touchPoints;
+  final DateTime collectedAt;
+  final String deviceType;
+  final String screenResolution;
 
   @override
   List<Object?> get props => [
@@ -559,11 +552,6 @@ class HeatmapData extends Equatable {
 
 /// Touch point for heatmap
 class TouchPoint extends Equatable {
-  final double x; // Normalized 0-1
-  final double y; // Normalized 0-1
-  final TouchType type;
-  final DateTime timestamp;
-  final String? elementId;
 
   const TouchPoint({
     required this.x,
@@ -572,6 +560,11 @@ class TouchPoint extends Equatable {
     required this.timestamp,
     this.elementId,
   });
+  final double x; // Normalized 0-1
+  final double y; // Normalized 0-1
+  final TouchType type;
+  final DateTime timestamp;
+  final String? elementId;
 
   @override
   List<Object?> get props => [x, y, type, timestamp, elementId];
@@ -587,6 +580,15 @@ enum TouchType {
 
 /// Attribution data (Point 260)
 class AttributionData extends Equatable {
+
+  const AttributionData({
+    required this.userId,
+    required this.installSource,
+    required this.installDate, required this.utmParameters, this.campaignId,
+    this.adGroup,
+    this.creative,
+    this.keyword,
+  });
   final String userId;
   final String installSource; // Google Ads, Facebook, Organic, etc.
   final String? campaignId;
@@ -595,17 +597,6 @@ class AttributionData extends Equatable {
   final String? keyword;
   final DateTime installDate;
   final Map<String, dynamic> utmParameters;
-
-  const AttributionData({
-    required this.userId,
-    required this.installSource,
-    this.campaignId,
-    this.adGroup,
-    this.creative,
-    this.keyword,
-    required this.installDate,
-    required this.utmParameters,
-  });
 
   @override
   List<Object?> get props => [

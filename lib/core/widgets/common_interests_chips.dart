@@ -4,16 +4,15 @@ import '../constants/app_colors.dart';
 /// Enhancement #5: Common Interests Chips
 /// Displays shared interests between two users
 class CommonInterestsChips extends StatelessWidget {
-  final List<String> interests;
-  final int maxDisplay;
-  final bool isHighlighted;
 
   const CommonInterestsChips({
-    super.key,
-    required this.interests,
+    required this.interests, super.key,
     this.maxDisplay = 3,
     this.isHighlighted = true,
   });
+  final List<String> interests;
+  final int maxDisplay;
+  final bool isHighlighted;
 
   @override
   Widget build(BuildContext context) {
@@ -51,13 +50,13 @@ class CommonInterestsChips extends StatelessWidget {
 }
 
 class _InterestChip extends StatelessWidget {
-  final String interest;
-  final bool isHighlighted;
 
   const _InterestChip({
     required this.interest,
     required this.isHighlighted,
   });
+  final String interest;
+  final bool isHighlighted;
 
   IconData _getIcon() {
     final lower = interest.toLowerCase();

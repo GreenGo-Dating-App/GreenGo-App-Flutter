@@ -11,9 +11,6 @@ import 'package:flutter/material.dart';
 ///   context.scaleFactor — get the raw scale factor
 ///   Responsive.of(context).scale(16) — alternative static access
 class Responsive {
-  static const double _baseWidth = 375.0;
-
-  final double scaleFactor;
 
   Responsive._(this.scaleFactor);
 
@@ -22,6 +19,9 @@ class Responsive {
     final scale = (width / _baseWidth).clamp(1.15, 1.5);
     return Responsive._(scale);
   }
+  static const double _baseWidth = 375.0;
+
+  final double scaleFactor;
 
   /// Scale a dimension value proportionally to screen width.
   double scale(double value) => (value * scaleFactor).roundToDouble();

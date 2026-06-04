@@ -1,10 +1,12 @@
 import 'dart:io';
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../../core/constants/app_colors.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -46,7 +48,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 
   Future<void> _pickImage(ImageSource source) async {
     try {
-      final XFile? image = await _picker.pickImage(
+      final image = await _picker.pickImage(
         source: source,
         maxWidth: 1920,
         maxHeight: 1920,
@@ -401,15 +403,15 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
 }
 
 class _PhotoCard extends StatelessWidget {
-  final String photoUrl;
-  final int index;
-  final VoidCallback onRemove;
 
   const _PhotoCard({
     required this.photoUrl,
     required this.index,
     required this.onRemove,
   });
+  final String photoUrl;
+  final int index;
+  final VoidCallback onRemove;
 
   bool get _isLocalFile => !photoUrl.startsWith('http');
 
@@ -497,13 +499,13 @@ class _PhotoCard extends StatelessWidget {
 }
 
 class _AddPhotoCard extends StatelessWidget {
-  final VoidCallback? onTap;
-  final bool isFirst;
 
   const _AddPhotoCard({
     this.onTap,
     this.isFirst = false,
   });
+  final VoidCallback? onTap;
+  final bool isFirst;
 
   @override
   Widget build(BuildContext context) {

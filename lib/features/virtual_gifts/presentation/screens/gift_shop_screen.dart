@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/virtual_gift.dart';
 import '../bloc/virtual_gift_bloc.dart';
 import '../bloc/virtual_gift_event.dart';
@@ -10,20 +10,16 @@ import '../widgets/gift_card.dart';
 /// Gift Shop Screen
 /// Browse and send virtual gifts
 class GiftShopScreen extends StatefulWidget {
+
+  const GiftShopScreen({
+    required this.userId, required this.userName, required this.receiverId, required this.receiverName, super.key,
+    this.userCoins,
+  });
   final String userId;
   final String userName;
   final String receiverId;
   final String receiverName;
   final int? userCoins;
-
-  const GiftShopScreen({
-    super.key,
-    required this.userId,
-    required this.userName,
-    required this.receiverId,
-    required this.receiverName,
-    this.userCoins,
-  });
 
   @override
   State<GiftShopScreen> createState() => _GiftShopScreenState();
@@ -395,12 +391,11 @@ class _GiftShopScreenState extends State<GiftShopScreen>
 
 /// Received gifts screen
 class ReceivedGiftsScreen extends StatefulWidget {
-  final String userId;
 
   const ReceivedGiftsScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<ReceivedGiftsScreen> createState() => _ReceivedGiftsScreenState();

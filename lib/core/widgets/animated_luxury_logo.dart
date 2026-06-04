@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import 'dart:ui' as ui;
+
 import '../constants/app_colors.dart';
 
 class AnimatedLuxuryLogo extends StatefulWidget {
-  final String assetPath;
-  final double size;
 
   const AnimatedLuxuryLogo({
-    super.key,
-    required this.assetPath,
+    required this.assetPath, super.key,
     this.size = 200,
   });
+  final String assetPath;
+  final double size;
 
   @override
   State<AnimatedLuxuryLogo> createState() => _AnimatedLuxuryLogoState();

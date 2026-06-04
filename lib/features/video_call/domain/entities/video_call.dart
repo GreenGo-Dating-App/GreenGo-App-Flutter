@@ -15,6 +15,20 @@ enum VideoCallStatus {
 /// Video Call Entity
 /// In-app video dating feature
 class VideoCall extends Equatable {
+
+  const VideoCall({
+    required this.id,
+    required this.callerId,
+    required this.callerName,
+    required this.receiverId, required this.receiverName, required this.matchId, required this.channelId, required this.status, required this.createdAt, this.callerPhotoUrl,
+    this.receiverPhotoUrl,
+    this.token,
+    this.answeredAt,
+    this.endedAt,
+    this.durationSeconds,
+    this.isVideoEnabled = true,
+    this.isAudioEnabled = true,
+  });
   final String id;
   final String callerId;
   final String callerName;
@@ -32,26 +46,6 @@ class VideoCall extends Equatable {
   final int? durationSeconds;
   final bool isVideoEnabled;
   final bool isAudioEnabled;
-
-  const VideoCall({
-    required this.id,
-    required this.callerId,
-    required this.callerName,
-    this.callerPhotoUrl,
-    required this.receiverId,
-    required this.receiverName,
-    this.receiverPhotoUrl,
-    required this.matchId,
-    required this.channelId,
-    this.token,
-    required this.status,
-    required this.createdAt,
-    this.answeredAt,
-    this.endedAt,
-    this.durationSeconds,
-    this.isVideoEnabled = true,
-    this.isAudioEnabled = true,
-  });
 
   bool get isActive =>
       status == VideoCallStatus.ringing ||
@@ -122,6 +116,14 @@ class VideoCall extends Equatable {
 
 /// Call History Entry
 class CallHistoryEntry extends Equatable {
+
+  const CallHistoryEntry({
+    required this.id,
+    required this.otherUserId,
+    required this.otherUserName,
+    required this.wasOutgoing, required this.status, required this.timestamp, this.otherUserPhotoUrl,
+    this.durationSeconds,
+  });
   final String id;
   final String otherUserId;
   final String otherUserName;
@@ -130,17 +132,6 @@ class CallHistoryEntry extends Equatable {
   final VideoCallStatus status;
   final DateTime timestamp;
   final int? durationSeconds;
-
-  const CallHistoryEntry({
-    required this.id,
-    required this.otherUserId,
-    required this.otherUserName,
-    this.otherUserPhotoUrl,
-    required this.wasOutgoing,
-    required this.status,
-    required this.timestamp,
-    this.durationSeconds,
-  });
 
   @override
   List<Object?> get props => [

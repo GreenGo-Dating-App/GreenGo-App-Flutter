@@ -1,40 +1,27 @@
-/**
- * Gamification BLoC
- * Points 176-200: State management for all gamification features
- */
+/// Gamification BLoC
+/// Points 176-200: State management for all gamification features
+library;
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
-import '../../domain/usecases/get_user_achievements.dart';
-import '../../domain/usecases/unlock_achievement.dart';
-import '../../domain/usecases/track_achievement_progress.dart';
-import '../../domain/usecases/grant_xp.dart';
-import '../../domain/usecases/get_leaderboard.dart';
-import '../../domain/usecases/claim_level_rewards.dart';
-import '../../domain/usecases/check_feature_unlock.dart';
-import '../../domain/usecases/get_daily_challenges.dart';
-import '../../domain/usecases/track_challenge_progress.dart';
-import '../../domain/usecases/claim_challenge_reward.dart';
-import '../../domain/usecases/get_seasonal_event.dart';
 import '../../domain/repositories/gamification_repository.dart';
+import '../../domain/usecases/check_feature_unlock.dart';
+import '../../domain/usecases/claim_challenge_reward.dart';
+import '../../domain/usecases/claim_level_rewards.dart';
+import '../../domain/usecases/get_daily_challenges.dart';
+import '../../domain/usecases/get_leaderboard.dart';
+import '../../domain/usecases/get_seasonal_event.dart';
+import '../../domain/usecases/get_user_achievements.dart';
+import '../../domain/usecases/grant_xp.dart';
+import '../../domain/usecases/track_achievement_progress.dart';
+import '../../domain/usecases/track_challenge_progress.dart';
+import '../../domain/usecases/unlock_achievement.dart';
 import 'gamification_event.dart';
 import 'gamification_state.dart';
 
 class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
-  final GetUserAchievements getUserAchievements;
-  final UnlockAchievement unlockAchievement;
-  final TrackAchievementProgress trackAchievementProgress;
-  final GrantXP grantXP;
-  final GetLeaderboard getLeaderboard;
-  final ClaimLevelRewards claimLevelRewards;
-  final CheckFeatureUnlock checkFeatureUnlock;
-  final GetDailyChallenges getDailyChallenges;
-  final TrackChallengeProgress trackChallengeProgress;
-  final ClaimChallengeReward claimChallengeReward;
-  final GetSeasonalEvent getSeasonalEvent;
-  final GamificationRepository repository;
-  final CoinRepository coinRepository;
 
   GamificationBloc({
     required this.getUserAchievements,
@@ -76,6 +63,19 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     // UI State Management Events
     on<ClearLevelUpFlag>(_onClearLevelUpFlag);
   }
+  final GetUserAchievements getUserAchievements;
+  final UnlockAchievement unlockAchievement;
+  final TrackAchievementProgress trackAchievementProgress;
+  final GrantXP grantXP;
+  final GetLeaderboard getLeaderboard;
+  final ClaimLevelRewards claimLevelRewards;
+  final CheckFeatureUnlock checkFeatureUnlock;
+  final GetDailyChallenges getDailyChallenges;
+  final TrackChallengeProgress trackChallengeProgress;
+  final ClaimChallengeReward claimChallengeReward;
+  final GetSeasonalEvent getSeasonalEvent;
+  final GamificationRepository repository;
+  final CoinRepository coinRepository;
 
   // ===== Achievement Event Handlers =====
 

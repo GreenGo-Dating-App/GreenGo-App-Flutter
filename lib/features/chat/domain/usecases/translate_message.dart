@@ -6,9 +6,9 @@ import '../repositories/chat_repository.dart';
 ///
 /// Translates a message and stores the translation
 class TranslateMessage {
-  final ChatRepository repository;
 
   TranslateMessage(this.repository);
+  final ChatRepository repository;
 
   Future<Either<Failure, void>> call({
     required String messageId,
@@ -16,7 +16,7 @@ class TranslateMessage {
     required String translatedContent,
     required String detectedLanguage,
   }) async {
-    return await repository.translateMessage(
+    return repository.translateMessage(
       messageId: messageId,
       conversationId: conversationId,
       translatedContent: translatedContent,

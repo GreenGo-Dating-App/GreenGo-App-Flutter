@@ -51,10 +51,6 @@ abstract class MatchingRemoteDataSource {
 
 /// Implementation of Matching Remote Data Source
 class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
-  final FirebaseFirestore firestore;
-  final FeatureEngineer featureEngineer;
-  final CompatibilityScorer compatibilityScorer;
-  final CandidatePoolService? candidatePoolService;
 
   MatchingRemoteDataSourceImpl({
     required this.firestore,
@@ -63,6 +59,10 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     this.candidatePoolService,
   })  : featureEngineer = featureEngineer ?? FeatureEngineer(),
         compatibilityScorer = compatibilityScorer ?? CompatibilityScorer();
+  final FirebaseFirestore firestore;
+  final FeatureEngineer featureEngineer;
+  final CompatibilityScorer compatibilityScorer;
+  final CandidatePoolService? candidatePoolService;
 
   @override
   Future<List<MatchCandidate>> getMatchCandidates({
@@ -207,13 +207,13 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
 
       try {
         final candidateProfile = ProfileModel.fromFirestore(doc);
-        final _nick = candidateProfile.nickname;
-        final _isTraveler = candidateProfile.isTravelerActive;
+        final nick = candidateProfile.nickname;
+        final isTraveler = candidateProfile.isTravelerActive;
 
         // Skip explicitly suspended/banned/deleted profiles
         final status = candidateProfile.accountStatus.toLowerCase();
         if (status == 'suspended' || status == 'banned' || status == 'deleted') {
-          if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: account status=$status');
+          if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: account status=$status');
           continue;
         }
 
@@ -230,7 +230,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           // Apply age filter (skip for admin/support candidates)
           final age = candidateProfile.age;
           if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
-            if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: age $age outside ${preferences.minAge}-${preferences.maxAge}');
+            if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: age $age outside ${preferences.minAge}-${preferences.maxAge}');
             continue;
           }
 
@@ -241,16 +241,16 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
                 !preferences.preferredGenders
                     .map((g) => g.toLowerCase())
                     .contains(gender.toLowerCase())) {
-              if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick EXCLUDED: gender $gender not in ${preferences.preferredGenders}');
+              if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: gender $gender not in ${preferences.preferredGenders}');
               continue;
             }
           }
         }
-        if (_isTraveler) debugPrint('[Matching] TRAVELER $_nick PASSED all matching filters');
+        if (isTraveler) debugPrint('[Matching] TRAVELER $nick PASSED all matching filters');
 
         // Apply distance filter (skip for admin/support candidates and admin users)
         final candidateLoc = candidateProfile.effectiveLocation;
-        double distance = 0.0;
+        var distance = 0.0;
         if (!isPrivileged && !isCurrentUserAdmin &&
             userLoc.latitude != 0 &&
             userLoc.longitude != 0 &&
@@ -273,7 +273,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         // Apply deal-breaker interests (skip for admin/support and admin users)
         if (!isPrivileged && !isCurrentUserAdmin && preferences.dealBreakerInterests.isNotEmpty) {
           final hasAllDealBreakers = preferences.dealBreakerInterests.every(
-            (interest) => candidateProfile.interests.contains(interest),
+            candidateProfile.interests.contains,
           );
           if (!hasAllDealBreakers) continue;
         }
@@ -408,8 +408,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
   }) async {
     try {
       // When no country filter is active, include all travelers worldwide
-      final bool filterByCountry = preferences.preferredCountries.isNotEmpty;
-      final List<String> countries = filterByCountry
+      final filterByCountry = preferences.preferredCountries.isNotEmpty;
+      final countries = filterByCountry
           ? preferences.preferredCountries.map((c) => c.toLowerCase()).toList()
           : [];
 
@@ -561,7 +561,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       }
 
       // Count positive interactions
-      int positiveCount = 0;
+      var positiveCount = 0;
       for (final doc in userInteractions.docs) {
         final type = doc.data()['interactionType'] as String;
         if (type == 'like' || type == 'superLike' || type == 'match') {

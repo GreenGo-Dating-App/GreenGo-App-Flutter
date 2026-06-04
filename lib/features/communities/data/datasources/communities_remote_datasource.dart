@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
-import '../models/community_model.dart';
 import '../models/community_member_model.dart';
 import '../models/community_message_model.dart';
+import '../models/community_model.dart';
 
 /// Communities Remote Data Source
 ///
@@ -86,10 +87,10 @@ abstract class CommunitiesRemoteDataSource {
 
 /// Implementation of CommunitiesRemoteDataSource
 class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
-  final FirebaseFirestore _firestore;
 
   CommunitiesRemoteDataSourceImpl({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   /// Reference to communities collection
   CollectionReference get _communitiesRef =>
@@ -111,7 +112,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     String? searchQuery,
   }) async {
     try {
-      Query query = _communitiesRef.where('isPublic', isEqualTo: true);
+      var query = _communitiesRef.where('isPublic', isEqualTo: true);
 
       if (type != null) {
         query = query.where('type', isEqualTo: type.value);
@@ -129,8 +130,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       final snapshot = await query.limit(50).get();
 
-      List<CommunityModel> communities = snapshot.docs
-          .map((doc) => CommunityModel.fromFirestore(doc))
+      var communities = snapshot.docs
+          .map(CommunityModel.fromFirestore)
           .toList();
 
       // Client-side search filter if query provided
@@ -271,7 +272,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           .get();
 
       return snapshot.docs
-          .map((doc) => CommunityMemberModel.fromFirestore(doc))
+          .map(CommunityMemberModel.fromFirestore)
           .toList();
     } catch (e) {
       debugPrint('Error getting community members: $e');
@@ -285,7 +286,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     int? limit,
   }) {
     try {
-      Query query = _messagesRef(communityId)
+      var query = _messagesRef(communityId)
           .orderBy('sentAt', descending: true);
 
       if (limit != null) {
@@ -373,7 +374,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
             .get();
 
         communities.addAll(
-          snapshot.docs.map((doc) => CommunityModel.fromFirestore(doc)),
+          snapshot.docs.map(CommunityModel.fromFirestore),
         );
       }
 
@@ -508,8 +509,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 90)),
           memberCount: 245,
-          languages: ['es', 'en'],
-          tags: ['spanish', 'language-learning', 'conversation'],
+          languages: const ['es', 'en'],
+          tags: const ['spanish', 'language-learning', 'conversation'],
           isPublic: true,
           lastMessagePreview: 'Hola! Anyone want to practice this weekend?',
           lastActivityAt: now.subtract(const Duration(hours: 2)),
@@ -524,8 +525,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 75)),
           memberCount: 189,
-          languages: ['ja', 'en'],
-          tags: ['japan', 'culture', 'anime', 'food', 'traditions'],
+          languages: const ['ja', 'en'],
+          tags: const ['japan', 'culture', 'anime', 'food', 'traditions'],
           isPublic: true,
           lastMessagePreview: 'Just visited Kyoto temples, amazing!',
           lastActivityAt: now.subtract(const Duration(hours: 5)),
@@ -540,8 +541,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 60)),
           memberCount: 312,
-          languages: ['fr', 'en'],
-          tags: ['france', 'travel', 'paris', 'food', 'wine'],
+          languages: const ['fr', 'en'],
+          tags: const ['france', 'travel', 'paris', 'food', 'wine'],
           isPublic: true,
           country: 'France',
           lastMessagePreview: 'Best croissants in Lyon?',
@@ -557,8 +558,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 120)),
           memberCount: 156,
-          languages: ['ja', 'en'],
-          tags: ['tokyo', 'local-guide', 'restaurants', 'nightlife'],
+          languages: const ['ja', 'en'],
+          tags: const ['tokyo', 'local-guide', 'restaurants', 'nightlife'],
           isPublic: true,
           city: 'Tokyo',
           country: 'Japan',
@@ -575,8 +576,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 110)),
           memberCount: 203,
-          languages: ['fr', 'en'],
-          tags: ['paris', 'local-guide', 'dating-spots', 'restaurants'],
+          languages: const ['fr', 'en'],
+          tags: const ['paris', 'local-guide', 'dating-spots', 'restaurants'],
           isPublic: true,
           city: 'Paris',
           country: 'France',
@@ -593,8 +594,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 45)),
           memberCount: 134,
-          languages: ['ko', 'en'],
-          tags: ['korean', 'study', 'k-drama', 'language-learning'],
+          languages: const ['ko', 'en'],
+          tags: const ['korean', 'study', 'k-drama', 'language-learning'],
           isPublic: true,
           lastMessagePreview: 'TOPIK exam tips anyone?',
           lastActivityAt: now.subtract(const Duration(hours: 8)),
@@ -609,8 +610,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 80)),
           memberCount: 98,
-          languages: ['ar', 'en'],
-          tags: ['arabic', 'culture', 'middle-east', 'calligraphy'],
+          languages: const ['ar', 'en'],
+          tags: const ['arabic', 'culture', 'middle-east', 'calligraphy'],
           isPublic: true,
           lastMessagePreview: 'MSA vs dialect discussion thread',
           lastActivityAt: now.subtract(const Duration(hours: 12)),
@@ -625,8 +626,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 100)),
           memberCount: 421,
-          languages: ['en'],
-          tags: ['backpacking', 'budget-travel', 'adventure', 'hostels'],
+          languages: const ['en'],
+          tags: const ['backpacking', 'budget-travel', 'adventure', 'hostels'],
           isPublic: true,
           lastMessagePreview: 'Southeast Asia route recommendations?',
           lastActivityAt: now.subtract(const Duration(minutes: 45)),
@@ -641,8 +642,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 85)),
           memberCount: 167,
-          languages: ['es', 'ca', 'en'],
-          tags: ['barcelona', 'local-guide', 'tapas', 'beach', 'gaudi'],
+          languages: const ['es', 'ca', 'en'],
+          tags: const ['barcelona', 'local-guide', 'tapas', 'beach', 'gaudi'],
           isPublic: true,
           city: 'Barcelona',
           country: 'Spain',
@@ -659,8 +660,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 55)),
           memberCount: 176,
-          languages: ['zh', 'en'],
-          tags: ['mandarin', 'chinese', 'characters', 'pronunciation'],
+          languages: const ['zh', 'en'],
+          tags: const ['mandarin', 'chinese', 'characters', 'pronunciation'],
           isPublic: true,
           lastMessagePreview: 'Today\'s character challenge: ...',
           lastActivityAt: now.subtract(const Duration(hours: 6)),
@@ -675,8 +676,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 70)),
           memberCount: 289,
-          languages: ['en'],
-          tags: ['food', 'cooking', 'restaurants', 'recipes', 'culture'],
+          languages: const ['en'],
+          tags: const ['food', 'cooking', 'restaurants', 'recipes', 'culture'],
           isPublic: true,
           lastMessagePreview: 'Best street food cities ranking!',
           lastActivityAt: now.subtract(const Duration(hours: 1)),
@@ -691,8 +692,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 40)),
           memberCount: 112,
-          languages: ['pt', 'en'],
-          tags: ['portuguese', 'brazilian', 'music', 'samba', 'fado'],
+          languages: const ['pt', 'en'],
+          tags: const ['portuguese', 'brazilian', 'music', 'samba', 'fado'],
           isPublic: true,
           lastMessagePreview: 'Bossa nova playlist recommendations!',
           lastActivityAt: now.subtract(const Duration(hours: 10)),

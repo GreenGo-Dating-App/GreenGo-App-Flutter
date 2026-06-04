@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../legal/presentation/screens/legal_document_screen.dart';
 
 /// Consent checkboxes widget for registration
 /// Includes Privacy Policy, Terms, Profiling, and Third-party data sharing
 class ConsentCheckboxes extends StatelessWidget {
+
+  const ConsentCheckboxes({
+    required this.privacyPolicyAccepted, required this.termsAccepted, required this.profilingAccepted, required this.thirdPartyDataAccepted, required this.onPrivacyPolicyChanged, required this.onTermsChanged, required this.onProfilingChanged, required this.onThirdPartyDataChanged, super.key,
+    this.enabled = true,
+  });
   final bool privacyPolicyAccepted;
   final bool termsAccepted;
   final bool profilingAccepted;
@@ -15,19 +21,6 @@ class ConsentCheckboxes extends StatelessWidget {
   final ValueChanged<bool> onProfilingChanged;
   final ValueChanged<bool> onThirdPartyDataChanged;
   final bool enabled;
-
-  const ConsentCheckboxes({
-    super.key,
-    required this.privacyPolicyAccepted,
-    required this.termsAccepted,
-    required this.profilingAccepted,
-    required this.thirdPartyDataAccepted,
-    required this.onPrivacyPolicyChanged,
-    required this.onTermsChanged,
-    required this.onProfilingChanged,
-    required this.onThirdPartyDataChanged,
-    this.enabled = true,
-  });
 
   /// Check if all required consents are accepted
   static bool areRequiredConsentsAccepted({

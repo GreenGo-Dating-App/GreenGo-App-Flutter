@@ -1,21 +1,20 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../../../core/constants/app_colors.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../core/config/app_config.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/video_coin.dart';
-import '../../domain/entities/coin_gift.dart';
 
 /// Shop Screen with tabs for Coins, Video Coins, and Gifts
 class ShopScreen extends StatefulWidget {
-  final String userId;
 
   const ShopScreen({
-    super.key,
-    required this.userId,
+    required this.userId, super.key,
   });
+  final String userId;
 
   @override
   State<ShopScreen> createState() => _ShopScreenState();
@@ -534,10 +533,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
 
 /// Balance chip widget
 class _BalanceChip extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String label;
-  final String value;
 
   const _BalanceChip({
     required this.icon,
@@ -545,6 +540,10 @@ class _BalanceChip extends StatelessWidget {
     required this.label,
     required this.value,
   });
+  final IconData icon;
+  final Color iconColor;
+  final String label;
+  final String value;
 
   @override
   Widget build(BuildContext context) {
@@ -588,13 +587,13 @@ class _BalanceChip extends StatelessWidget {
 
 /// Coins Tab
 class _CoinsTab extends StatelessWidget {
-  final String userId;
-  final Function(CoinPackage) onPurchase;
 
   const _CoinsTab({
     required this.userId,
     required this.onPurchase,
   });
+  final String userId;
+  final Function(CoinPackage) onPurchase;
 
   @override
   Widget build(BuildContext context) {
@@ -651,15 +650,14 @@ class _CoinsTab extends StatelessWidget {
 
 /// Coin Package Card
 class _CoinPackageCard extends StatelessWidget {
-  final CoinPackage package;
-  final bool isPopular;
-  final VoidCallback onTap;
 
   const _CoinPackageCard({
     required this.package,
-    this.isPopular = false,
-    required this.onTap,
+    required this.onTap, this.isPopular = false,
   });
+  final CoinPackage package;
+  final bool isPopular;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -784,13 +782,13 @@ class _CoinPackageCard extends StatelessWidget {
 
 /// Video Coins Tab
 class _VideoCoinsTab extends StatelessWidget {
-  final String userId;
-  final Function(VideoCoinPackage) onPurchase;
 
   const _VideoCoinsTab({
     required this.userId,
     required this.onPurchase,
   });
+  final String userId;
+  final Function(VideoCoinPackage) onPurchase;
 
   @override
   Widget build(BuildContext context) {
@@ -849,7 +847,7 @@ class _VideoCoinsTab extends StatelessWidget {
               Expanded(
                 child: Text(
                   AppLocalizations.of(context)!.coinsVideoCoinInfo,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.blueAccent,
                     fontSize: 12,
                   ),
@@ -871,13 +869,13 @@ class _VideoCoinsTab extends StatelessWidget {
 
 /// Video Coin Package Card
 class _VideoCoinPackageCard extends StatelessWidget {
-  final VideoCoinPackage package;
-  final VoidCallback onTap;
 
   const _VideoCoinPackageCard({
     required this.package,
     required this.onTap,
   });
+  final VideoCoinPackage package;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -1002,15 +1000,15 @@ class _VideoCoinPackageCard extends StatelessWidget {
 
 /// Gifts Tab
 class _GiftsTab extends StatefulWidget {
-  final String userId;
-  final int coinBalance;
-  final Function(String, int, String?) onSendGift;
 
   const _GiftsTab({
     required this.userId,
     required this.coinBalance,
     required this.onSendGift,
   });
+  final String userId;
+  final int coinBalance;
+  final Function(String, int, String?) onSendGift;
 
   @override
   State<_GiftsTab> createState() => _GiftsTabState();
@@ -1298,15 +1296,15 @@ class _GiftsTabState extends State<_GiftsTab> {
 
 /// Pending Gift Card
 class _PendingGiftCard extends StatelessWidget {
-  final Map<String, dynamic> gift;
-  final VoidCallback onAccept;
-  final VoidCallback onDecline;
 
   const _PendingGiftCard({
     required this.gift,
     required this.onAccept,
     required this.onDecline,
   });
+  final Map<String, dynamic> gift;
+  final VoidCallback onAccept;
+  final VoidCallback onDecline;
 
   @override
   Widget build(BuildContext context) {
@@ -1366,9 +1364,9 @@ class _PendingGiftCard extends StatelessWidget {
 
 /// Transaction History Screen
 class _TransactionHistoryScreen extends StatelessWidget {
-  final String userId;
 
   const _TransactionHistoryScreen({required this.userId});
+  final String userId;
 
   @override
   Widget build(BuildContext context) {

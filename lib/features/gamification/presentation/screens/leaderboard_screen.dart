@@ -1,16 +1,17 @@
-/**
- * Leaderboard Screen
- * Point 191: Display global and regional rankings with premium UI
- * Supports week/month/year time periods and country display in regional view
- */
+/// Leaderboard Screen
+/// Point 191: Display global and regional rankings with premium UI
+/// Supports week/month/year time periods and country display in regional view
+library;
 
 import 'dart:ui';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:greengo_chat/generated/app_localizations.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/repositories/gamification_repository.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
@@ -20,12 +21,11 @@ import '../widgets/level_display_widget.dart';
 enum TimePeriod { week, month, year }
 
 class LeaderboardScreen extends StatefulWidget {
-  final String userId;
 
   const LeaderboardScreen({
-    Key? key,
-    required this.userId,
-  }) : super(key: key);
+    required this.userId, super.key,
+  });
+  final String userId;
 
   @override
   State<LeaderboardScreen> createState() => _LeaderboardScreenState();
