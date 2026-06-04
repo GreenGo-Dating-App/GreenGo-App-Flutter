@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/product_catalog.dart';
@@ -54,6 +55,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
+  /// The user's current active subscription on Android, captured from restored
+  /// purchases so an upgrade can be prorated against it (WITH_TIME_PRORATION).
+  GooglePlayPurchaseDetails? _activeAndroidSub;
 
   // Cached packages so they survive BLoC state transitions
   // Pre-populated with fallback packages to prevent blank screen
@@ -178,8 +182,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           break;
 
         case PurchaseStatus.purchased:
-        case PurchaseStatus.restored:
           _handleSuccessfulPurchase(purchaseDetails);
+          break;
+
+        case PurchaseStatus.restored:
+          // Restored (reinstall / restorePurchases on init): do NOT re-grant —
+          // entitlement is already in Firestore. Just remember the active sub
+          // so an upgrade can prorate against it, and acknowledge it.
+          _handleRestoredPurchase(purchaseDetails);
           break;
 
         case PurchaseStatus.error:
@@ -452,12 +462,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return 30;
   }
 
-  /// Complete and consume a purchase so it can be bought again
+  /// True if [productId] (store or canonical) is a membership subscription.
+  bool _isMembershipProduct(String productId) =>
+      ProductCatalog.canonicalIds.contains(ProductCatalog.canonicalId(productId));
+
+  /// Acknowledge a purchase, and consume it ONLY if it's a consumable (coins).
+  /// Subscriptions must never be consumed (consuming a sub triggers a Google
+  /// auto-refund); `completePurchase` acknowledges them.
   Future<void> _completeAndConsume(PurchaseDetails purchaseDetails) async {
     if (purchaseDetails.pendingCompletePurchase) {
       await _inAppPurchase!.completePurchase(purchaseDetails);
     }
-    if (Platform.isAndroid) {
+    if (Platform.isAndroid && !_isMembershipProduct(purchaseDetails.productID)) {
       try {
         final androidAddition = _inAppPurchase!
             .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
@@ -468,14 +484,47 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
-  /// Buy a product — all products are managed (in-app) products, use buyConsumable
-  Future<bool> _buyProduct(ProductDetails product) async {
-    debugPrint('[CoinShop] Buying product: ${product.id}, price: ${product.price}');
-    final param = PurchaseParam(
-      productDetails: product,
-      applicationUserName: widget.userId,
-    );
-    return _inAppPurchase!.buyConsumable(purchaseParam: param, autoConsume: false);
+  /// Handle a restored purchase. For subscriptions we don't re-grant (already
+  /// granted on the original purchase) — we capture the active Android sub for
+  /// upgrade proration and acknowledge it. Consumables are completed+consumed.
+  Future<void> _handleRestoredPurchase(PurchaseDetails p) async {
+    if (_isMembershipProduct(p.productID)) {
+      if (Platform.isAndroid && p is GooglePlayPurchaseDetails) {
+        _activeAndroidSub = p;
+      }
+      if (p.pendingCompletePurchase) {
+        await _inAppPurchase!.completePurchase(p);
+      }
+    } else {
+      await _completeAndConsume(p);
+    }
+  }
+
+  /// Buy a membership subscription with `buyNonConsumable`. On Android, if the
+  /// user already has an active subscription, this performs an immediate,
+  /// prorated in-place upgrade/downgrade (WITH_TIME_PRORATION) instead of a
+  /// second subscription. iOS handles in-group upgrades automatically.
+  Future<bool> _buyMembership(ProductDetails product) async {
+    debugPrint('[CoinShop] Buying subscription: ${product.id}, price: ${product.price}');
+    final PurchaseParam param;
+    if (Platform.isAndroid) {
+      param = GooglePlayPurchaseParam(
+        productDetails: product,
+        applicationUserName: widget.userId,
+        changeSubscriptionParam: _activeAndroidSub != null
+            ? ChangeSubscriptionParam(
+                oldPurchaseDetails: _activeAndroidSub!,
+                replacementMode: ReplacementMode.withTimeProration,
+              )
+            : null,
+      );
+    } else {
+      param = PurchaseParam(
+        productDetails: product,
+        applicationUserName: widget.userId,
+      );
+    }
+    return _inAppPurchase!.buyNonConsumable(purchaseParam: param);
   }
 
   /// Update Firestore profile with new membership tier
@@ -1335,7 +1384,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      final ok = await _buyProduct(response.productDetails.first);
+      final ok = await _buyMembership(response.productDetails.first);
 
       if (!ok) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
@@ -1693,7 +1742,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         debugPrint('[Subscription] Upgrading with offer: $offerId, discount: ${_selectedTier!.getUpgradeDiscount(currentTier) * 100}%');
       }
 
-      final success = await _buyProduct(productDetails);
+      final success = await _buyMembership(productDetails);
 
       debugPrint('[Subscription] purchase result: $success');
 

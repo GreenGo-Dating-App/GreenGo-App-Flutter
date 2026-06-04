@@ -104,8 +104,8 @@ class SubscriptionRemoteDataSource {
       );
     }
 
-    // Use buyConsumable for one-time purchases
-    await inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
+    // Auto-renewable subscriptions must use buyNonConsumable (never consumed).
+    await inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
   }
 
     /// Restore purchases (Point 154)
