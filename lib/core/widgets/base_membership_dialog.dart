@@ -14,6 +14,7 @@ import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../constants/product_catalog.dart';
 
 /// Dialog shown when a non-member tries to perform a gated action.
 /// Offers a yearly "greengo_base_membership" IAP subscription.
@@ -65,7 +66,10 @@ class BaseMembershipDialog extends StatefulWidget {
 
 class _BaseMembershipDialogState extends State<BaseMembershipDialog>
     with TickerProviderStateMixin {
-  static const String _productId = 'greengo_base_membership';
+  /// Canonical base membership ID (server / tier matching).
+  static const String _canonicalProductId = ProductCatalog.baseMembership;
+  /// Per-platform store ID used to query and purchase.
+  String get _storeProductId => ProductCatalog.baseStoreId;
   final InAppPurchase _iap = InAppPurchase.instance;
   StreamSubscription<List<PurchaseDetails>>? _sub;
   bool _loading = false;
@@ -151,7 +155,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   // ── Purchase stream handler ──────────────────────────────────────────
   void _onPurchaseUpdated(List<PurchaseDetails> purchases) {
     for (final p in purchases) {
-      if (p.productID != _productId) continue;
+      if (ProductCatalog.canonicalId(p.productID) != _canonicalProductId) continue;
 
       switch (p.status) {
         case PurchaseStatus.purchased:
@@ -335,13 +339,13 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
         return;
       }
 
-      final response = await _iap.queryProductDetails({_productId});
+      final response = await _iap.queryProductDetails({_storeProductId});
       if (response.productDetails.isEmpty) {
         final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
         final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
         _showError(
           'Membership product not found in $storeName.\n\n'
-          'Product ID: $_productId\n'
+          'Product ID: $_storeProductId\n'
           'Make sure the product is configured in $consoleName.',
         );
         setState(() => _loading = false);

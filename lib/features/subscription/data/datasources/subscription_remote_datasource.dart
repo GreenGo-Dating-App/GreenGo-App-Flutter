@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_storekit/in_app_purchase_storekit.dart';
+import '../../../../core/constants/product_catalog.dart';
 import '../../domain/entities/subscription.dart';
 import '../models/subscription_model.dart';
 
@@ -36,16 +37,6 @@ class SubscriptionRemoteDataSource {
   static const String goldYearlyProductId = '1_year_gold';
   static const String platinumYearlyProductId = '1_year_platinum_membership';
 
-  static const Set<String> _productIds = {
-    baseMembershipProductId,
-    silverMonthlyProductId,
-    goldMonthlyProductId,
-    platinumMonthlyProductId,
-    silverYearlyProductId,
-    goldYearlyProductId,
-    platinumYearlyProductId,
-  };
-
   // Purchase stream subscription for monitoring
   StreamSubscription<List<PurchaseDetails>>? _purchaseStreamSubscription;
 
@@ -72,10 +63,11 @@ class SubscriptionRemoteDataSource {
     return true;
   }
 
-  /// Get available products from store
+  /// Get available products from store. Uses the per-platform store IDs from
+  /// [ProductCatalog] (App Store and Google Play use different IDs).
   Future<List<ProductDetails>> getAvailableProducts() async {
     final response =
-        await inAppPurchase.queryProductDetails(_productIds);
+        await inAppPurchase.queryProductDetails(ProductCatalog.allStoreIds());
 
     if (response.error != null) {
       throw Exception('Failed to load products: ${response.error!.message}');

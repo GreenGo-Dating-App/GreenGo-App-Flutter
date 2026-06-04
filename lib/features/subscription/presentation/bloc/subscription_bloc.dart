@@ -6,6 +6,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import '../../../../core/constants/product_catalog.dart';
 import '../../domain/entities/subscription.dart';
 import '../../domain/usecases/get_current_subscription.dart';
 import '../../domain/usecases/purchase_subscription.dart' as domain;
@@ -112,21 +113,9 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         return;
       }
 
-      // Membership product IDs. iOS auto-renewable subscriptions use a
-      // `subscription_` prefix (the old consumable IDs can't be reused as
-      // subscriptions in App Store Connect); Android keeps the original IDs.
-      const baseProductIds = [
-        'greengo_base_membership',
-        '1_month_silver',
-        '1_month_gold',
-        '1_month_platinum',
-        '1_year_silver',
-        '1_year_gold',
-        '1_year_platinum_membership',
-      ];
-      final productIds = Platform.isIOS
-          ? baseProductIds.map((id) => 'subscription_$id').toSet()
-          : baseProductIds.toSet();
+      // Per-platform store IDs (App Store and Google Play use different IDs);
+      // ProductCatalog is the single source of truth for the mapping.
+      final productIds = ProductCatalog.allStoreIds();
 
       final response = await inAppPurchase.queryProductDetails(productIds);
 
