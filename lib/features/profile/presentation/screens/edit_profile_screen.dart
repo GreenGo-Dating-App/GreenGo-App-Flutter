@@ -235,11 +235,10 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // ── Edit Profile (expanded by default) ──
+                  // ── Edit Profile (collapsed by default) ──
                   SettingsAccordion(
                     title: AppLocalizations.of(context)!.editProfile,
                     icon: Icons.person_outline,
-                    initiallyExpanded: true,
                     children: [
                       // Photos Section
                       EditSectionCard(
