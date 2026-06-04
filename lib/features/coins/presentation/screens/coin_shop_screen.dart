@@ -1200,6 +1200,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           color: Colors.white70,
                         ),
                       ),
+                      const SizedBox(height: 4),
+                      Text(
+                        '\$4.99/year  ${AppLocalizations.of(context)!.plusTaxes}',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.basePurple,
+                        ),
+                      ),
                     ],
                   ),
                 ),
