@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -225,89 +225,36 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   }
 
   Future<void> _handleSuccess(PurchaseDetails p) async {
-    final now = DateTime.now();
-    final firestore = FirebaseFirestore.instance;
-
-    // Compute end date: extend from current end date if active
-    // Force server read to avoid stale cache on repeat purchases
-    DateTime endDate;
+    // Server is the source of truth: verify the receipt and let the Cloud
+    // Function write entitlement (base flag + store-authoritative end date) and
+    // the 500-coin bonus. No client-side Firestore grant / stacking.
     try {
-      final profileDoc = await firestore
-          .collection('profiles')
-          .doc(widget.userId)
-          .get(const GetOptions(source: Source.server));
-      final currentEndTs = profileDoc.data()?['baseMembershipEndDate'] as Timestamp?;
-      final currentEndDate = currentEndTs?.toDate();
-      if (currentEndDate != null && currentEndDate.isAfter(now)) {
-        endDate = currentEndDate.add(const Duration(days: 365));
-      } else {
-        endDate = now.add(const Duration(days: 365));
-      }
-    } catch (_) {
-      endDate = now.add(const Duration(days: 365));
-    }
-
-    try {
-      final profileRef = firestore.collection('profiles').doc(widget.userId);
-
-      // Update base membership status
-      await profileRef.update({
-        'hasBaseMembership': true,
-        'baseMembershipEndDate': Timestamp.fromDate(endDate),
+      final token = p.verificationData.serverVerificationData;
+      await FirebaseFunctions.instance
+          .httpsCallable('verifyPurchase')
+          .call(<String, dynamic>{
+        'userId': widget.userId,
+        'platform': Platform.isIOS ? 'ios' : 'android',
+        'productId': p.productID,
+        'purchaseToken': Platform.isAndroid ? token : (p.purchaseID ?? token),
+        'verificationData': token,
       });
-
-      // Track purchase ownership — ties this purchase to the APP user (not Google Play email)
-      final token = p.purchaseID ?? '';
-      final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
-      if (token.isNotEmpty) {
-        await firestore.collection('membership_purchases').doc(token).set({
-          'userId': widget.userId,
-          'userEmail': userEmail,
-          'productId': p.productID,
-          'purchaseId': token,
-          'purchasedAt': Timestamp.fromDate(now),
-          'endDate': Timestamp.fromDate(endDate),
-        });
-      }
-
-      // Grant 500 bonus coins (write to coinBatches array field, not subcollection)
-      final balanceRef = firestore
-          .collection('coinBalances')
-          .doc(widget.userId);
-      final batchEntry = {
-        'batchId': 'membership_${now.millisecondsSinceEpoch}',
-        'initialCoins': 500,
-        'remainingCoins': 500,
-        'source': 'reward',
-        'acquiredDate': Timestamp.fromDate(now),
-        'expirationDate': Timestamp.fromDate(endDate),
-      };
-
-      final balanceDoc = await balanceRef.get();
-      if (balanceDoc.exists) {
-        await balanceRef.update({
-          'totalCoins': FieldValue.increment(500),
-          'earnedCoins': FieldValue.increment(500),
-          'lastUpdated': Timestamp.fromDate(now),
-          'coinBatches': FieldValue.arrayUnion([batchEntry]),
-        });
-      } else {
-        await balanceRef.set({
-          'userId': widget.userId,
-          'totalCoins': 500,
-          'earnedCoins': 500,
-          'purchasedCoins': 0,
-          'giftedCoins': 0,
-          'spentCoins': 0,
-          'lastUpdated': Timestamp.fromDate(now),
-          'coinBatches': [batchEntry],
-        });
-      }
     } catch (e) {
-      debugPrint('[BaseMembership] Firestore update failed: $e');
+      debugPrint('[BaseMembership] Server verification failed: $e');
+      await _completeAndConsume(p);
+      if (mounted) {
+        setState(() => _loading = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${AppLocalizations.of(context)!.coinsPurchaseFailed}: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+      return;
     }
 
-    // Complete and consume the purchase so it can be bought again
+    // Acknowledge the subscription (never consume).
     await _completeAndConsume(p);
 
     if (mounted) {

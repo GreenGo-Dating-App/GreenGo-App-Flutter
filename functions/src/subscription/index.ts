@@ -10,7 +10,7 @@ import { logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { SubscriptionTier, SubscriptionStatus } from '../shared/types';
 import {
-  verifyGooglePlayPurchase,
+  verifyGooglePlaySubscription,
   verifyAppStorePurchase,
 } from '../shared/purchase_verification';
 import {
@@ -29,6 +29,18 @@ export const PRODUCT_CONFIG: Record<string, { tier: TierName; durationDays: numb
   '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90 },
   '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
   '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
+};
+
+// Google Play uses bespoke subscription IDs that differ from the canonical
+// PRODUCT_CONFIG keys (iOS just adds a `subscription_` prefix). Map Play → canonical.
+const PLAY_TO_CANONICAL: Record<string, string> = {
+  'greengo_base_membership': 'greengo_base_membership',
+  'silver_premium_monthly': '1_month_silver',
+  'greengo_silver_yearly': '1_year_silver',
+  'gold_premium_monthly': '1_month_gold',
+  'greengo_gold_yearly': '1_year_gold',
+  'platinum_vip_monthly': '1_month_platinum',
+  'greengo_platinum_yearly': '1_year_platinum_membership',
 };
 
 // ========== 0. VERIFY PURCHASE (Callable) ==========
@@ -61,9 +73,10 @@ export const verifyPurchase = onCall(
     try {
       logInfo(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
 
-      // iOS auto-renewable subscription IDs are prefixed `subscription_`;
-      // normalize to the shared catalog key (Android uses the unprefixed IDs).
-      const catalogId = productId.replace(/^subscription_/, '');
+      // Normalize the store product ID to the shared catalog key: iOS prefixes
+      // with `subscription_`; Google Play uses bespoke IDs (PLAY_TO_CANONICAL).
+      const catalogId =
+        PLAY_TO_CANONICAL[productId] ?? productId.replace(/^subscription_/, '');
 
       // Look up product configuration
       const config = PRODUCT_CONFIG[catalogId];
@@ -87,9 +100,12 @@ export const verifyPurchase = onCall(
         if (!verificationData) {
           throw new HttpsError('invalid-argument', 'Missing verificationData for Android purchase');
         }
-        const result = await verifyGooglePlayPurchase(productId, verificationData);
+        // Memberships are auto-renewable subscriptions → use the Subscriptions
+        // v2 API (not the one-time products API). verificationData is the token.
+        const result = await verifyGooglePlaySubscription(verificationData);
         verified = result.verified;
         originalTransactionId = verificationData; // Play RTDN matches on purchaseToken
+        storeExpiryMs = result.expiresDateMs;
         if (!verified) {
           logError(`Google Play verification failed for ${productId}: ${result.error}`);
         }
@@ -158,13 +174,21 @@ export const verifyPurchase = onCall(
       const currentEndTimestamp = profileData.membershipEndDate as admin.firestore.Timestamp | undefined;
       const currentEndDate = currentEndTimestamp ? currentEndTimestamp.toDate() : null;
 
-      const { effectiveTier, newEndDate, newEndTimestamp: endTimestamp } = computeMembershipExtension(
+      const extension = computeMembershipExtension(
         currentTier,
         currentEndDate,
         tier,
         durationMs,
         now.toDate(),
       );
+      const effectiveTier = extension.effectiveTier;
+      // Prefer the store-authoritative expiry. For auto-renewable subscriptions
+      // the store handles upgrades (proration) and renewals, so we set the end
+      // date to the store's expiry rather than stacking durations client-side.
+      const endTimestamp = storeExpiryMs
+        ? admin.firestore.Timestamp.fromMillis(storeExpiryMs)
+        : extension.newEndTimestamp;
+      const newEndDate = endTimestamp.toDate();
 
       // ── Create subscription record ──
       // `originalTransactionId` is the stable key store renewal/expiry

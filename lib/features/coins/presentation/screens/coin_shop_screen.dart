@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -231,88 +231,23 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     // (base membership / tier lookup) works with the bare IDs on both stores.
     final productId = _baseProductId(purchaseDetails.productID);
 
-    // Check if this is a base membership purchase
-    if (productId == 'greengo_base_membership') {
-      debugPrint('[IAP] Base membership purchase successful');
-      final now = DateTime.now();
-      final firestore = FirebaseFirestore.instance;
-
-      // Compute end date: extend from current end date if active
-      DateTime endDate;
+    // Base membership — verify on the server (source of truth). The Cloud
+    // Function validates the receipt and writes entitlement + bonus coins.
+    if (productId == ProductCatalog.baseMembership) {
+      debugPrint('[IAP] Base membership purchase — verifying on server');
+      DateTime? endDate;
       try {
-        final profileDoc = await firestore
-            .collection('profiles')
-            .doc(widget.userId)
-            .get();
-        final currentEndTs = profileDoc.data()?['baseMembershipEndDate'] as Timestamp?;
-        final currentEndDate = currentEndTs?.toDate();
-        if (currentEndDate != null && currentEndDate.isAfter(now)) {
-          endDate = currentEndDate.add(const Duration(days: 365));
-        } else {
-          endDate = now.add(const Duration(days: 365));
-        }
-      } catch (_) {
-        endDate = now.add(const Duration(days: 365));
-      }
-
-      try {
-        // Update base membership status
-        await firestore
-            .collection('profiles')
-            .doc(widget.userId)
-            .update({
-          'hasBaseMembership': true,
-          'baseMembershipEndDate': Timestamp.fromDate(endDate),
-        });
-
-        // Track purchase ownership by app userId
-        final token = purchaseDetails.purchaseID ?? '';
-        final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
-        if (token.isNotEmpty) {
-          await firestore.collection('membership_purchases').doc(token).set({
-            'userId': widget.userId,
-            'userEmail': userEmail,
-            'productId': productId,
-            'purchaseId': token,
-            'purchasedAt': Timestamp.fromDate(now),
-            'endDate': Timestamp.fromDate(endDate),
-          });
-        }
-
-        // Grant 500 bonus coins (write to coinBatches array field, not subcollection)
-        final balanceRef = firestore
-            .collection('coinBalances')
-            .doc(widget.userId);
-        final batchEntry = {
-          'batchId': 'membership_${now.millisecondsSinceEpoch}',
-          'initialCoins': 500,
-          'remainingCoins': 500,
-          'source': 'reward',
-          'acquiredDate': Timestamp.fromDate(now),
-          'expirationDate': Timestamp.fromDate(endDate),
-        };
-        final balanceDoc = await balanceRef.get();
-        if (balanceDoc.exists) {
-          await balanceRef.update({
-            'totalCoins': FieldValue.increment(500),
-            'earnedCoins': FieldValue.increment(500),
-            'lastUpdated': Timestamp.fromDate(now),
-            'coinBatches': FieldValue.arrayUnion([batchEntry]),
-          });
-        } else {
-          await balanceRef.set({
-            'userId': widget.userId,
-            'totalCoins': 500,
-            'earnedCoins': 500,
-            'purchasedCoins': 0,
-            'giftedCoins': 0,
-            'spentCoins': 0,
-            'lastUpdated': Timestamp.fromDate(now),
-            'coinBatches': [batchEntry],
-          });
-        }
+        final res = await _verifyMembershipOnServer(purchaseDetails);
+        final endIso = res['endDate'] as String?;
+        endDate = endIso != null ? DateTime.tryParse(endIso) : null;
       } catch (e) {
-        debugPrint('[IAP] Failed to update base membership in Firestore: $e');
+        debugPrint('[IAP] Server verification failed (base): $e');
+        await _completeAndConsume(purchaseDetails);
+        if (mounted) {
+          setState(() => _isLoadingSubscription = false);
+          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        }
+        return;
       }
 
       await _completeAndConsume(purchaseDetails);
@@ -323,17 +258,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _hasBaseMembership = true;
           _baseMembershipEndDate = endDate;
         });
-        // Refresh coin balance and profile (so membership gate unlocks)
+        // Refresh balance + profile so the membership gate unlocks.
         context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
         try {
           context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
         } catch (_) {}
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.shopMembershipActivated('${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}')),
-            backgroundColor: Colors.green,
-          ),
-        );
+        if (endDate != null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(AppLocalizations.of(context)!.shopMembershipActivated('${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}')),
+              backgroundColor: Colors.green,
+            ),
+          );
+        }
       }
       return;
     }
@@ -375,33 +312,25 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       return;
     }
 
-    // Check if this is a subscription purchase
+    // Tier subscription — verify on the server (source of truth). The Cloud
+    // Function validates the receipt, applies the upgrade and sets the
+    // store-authoritative end date (no client-side stacking).
     final subscribedTier = _tierFromProductId(productId);
     if (subscribedTier != null) {
-      debugPrint('[IAP] Subscription purchase successful: ${subscribedTier.displayName}');
-
-      // Update Firestore profile with new membership tier and get new end date
-      final durationDays = _durationDaysFromProductId(productId);
-      final newEndDate = await _updateFirestoreMembership(subscribedTier, durationDays: durationDays);
-
-      // Track purchase ownership by app userId
+      debugPrint('[IAP] Subscription purchase — verifying on server: ${subscribedTier.displayName}');
+      DateTime? newEndDate;
       try {
-        final firestore = FirebaseFirestore.instance;
-        final token = purchaseDetails.purchaseID ?? '';
-        final userEmail = FirebaseAuth.instance.currentUser?.email ?? '';
-        if (token.isNotEmpty) {
-          await firestore.collection('membership_purchases').doc(token).set({
-            'userId': widget.userId,
-            'userEmail': userEmail,
-            'productId': productId,
-            'purchaseId': token,
-            'tier': subscribedTier.name.toUpperCase(),
-            'purchasedAt': Timestamp.fromDate(DateTime.now()),
-            'endDate': newEndDate != null ? Timestamp.fromDate(newEndDate) : null,
-          });
-        }
+        final res = await _verifyMembershipOnServer(purchaseDetails);
+        final endIso = res['endDate'] as String?;
+        newEndDate = endIso != null ? DateTime.tryParse(endIso) : null;
       } catch (e) {
-        debugPrint('[IAP] Failed to track purchase: $e');
+        debugPrint('[IAP] Server verification failed (tier): $e');
+        await _completeAndConsume(purchaseDetails);
+        if (mounted) {
+          setState(() => _isLoadingSubscription = false);
+          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        }
+        return;
       }
 
       // Update local tier state immediately
@@ -412,15 +341,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         _membershipEndDate = newEndDate;
       });
 
-      // Complete and consume the purchase
       await _completeAndConsume(purchaseDetails);
 
-      // Refresh profile
       try {
         context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
       } catch (_) {}
 
-      // Show celebration screen with tier-specific benefits
       if (mounted) {
         PurchaseSuccessDialog.showSubscriptionActivated(
           context,
@@ -454,12 +380,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       if (tier.monthlyProductId == productId || tier.yearlyProductId == productId) return tier;
     }
     return null;
-  }
-
-  /// Get duration in days from product ID
-  int _durationDaysFromProductId(String productId) {
-    if (productId.contains('1_year') || productId.contains('year')) return 365;
-    return 30;
   }
 
   /// True if [productId] (store or canonical) is a membership subscription.
@@ -500,6 +420,26 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
+  /// Verify a membership purchase on the server (the source of truth). The
+  /// `verifyPurchase` Cloud Function validates the store receipt and writes the
+  /// entitlement (tier, store-authoritative end date, base flag, bonus coins).
+  /// Returns the function result (`tier`, `endDate`, `coinsGranted`).
+  Future<Map<String, dynamic>> _verifyMembershipOnServer(PurchaseDetails p) async {
+    final token = p.verificationData.serverVerificationData;
+    final result = await FirebaseFunctions.instance
+        .httpsCallable('verifyPurchase')
+        .call(<String, dynamic>{
+      'userId': widget.userId,
+      'platform': Platform.isIOS ? 'ios' : 'android',
+      'productId': p.productID,
+      // Android: the Play purchase token doubles as the dedup key. iOS: prefer
+      // the transaction id, falling back to the JWS.
+      'purchaseToken': Platform.isAndroid ? token : (p.purchaseID ?? token),
+      'verificationData': token,
+    });
+    return Map<String, dynamic>.from(result.data as Map);
+  }
+
   /// Buy a membership subscription with `buyNonConsumable`. On Android, if the
   /// user already has an active subscription, this performs an immediate,
   /// prorated in-place upgrade/downgrade (WITH_TIME_PRORATION) instead of a
@@ -525,43 +465,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       );
     }
     return _inAppPurchase!.buyNonConsumable(purchaseParam: param);
-  }
-
-  /// Update Firestore profile with new membership tier
-  /// Handles end-date extension: extends from current end date if active
-  /// Returns the new end date
-  Future<DateTime?> _updateFirestoreMembership(SubscriptionTier tier, {int durationDays = 30}) async {
-    try {
-      final now = DateTime.now();
-      final firestore = FirebaseFirestore.instance;
-
-      // Read current membership to extend from end date
-      final profileDoc = await firestore.collection('profiles').doc(widget.userId).get();
-      final currentEndTs = profileDoc.data()?['membershipEndDate'] as Timestamp?;
-      final currentEndDate = currentEndTs?.toDate();
-
-      DateTime newEndDate;
-      if (currentEndDate != null && currentEndDate.isAfter(now)) {
-        // Extend from current end date
-        newEndDate = currentEndDate.add(Duration(days: durationDays));
-      } else {
-        newEndDate = now.add(Duration(days: durationDays));
-      }
-
-      final updates = {
-        'membershipTier': tier.name.toUpperCase(),
-        'membershipStartDate': Timestamp.fromDate(now),
-        'membershipEndDate': Timestamp.fromDate(newEndDate),
-      };
-
-      await firestore.collection('profiles').doc(widget.userId).update(updates);
-      await firestore.collection('users').doc(widget.userId).update(updates);
-      debugPrint('[CoinShop] Firestore membership updated to ${tier.name}, ends: $newEndDate');
-      return newEndDate;
-    } catch (e) {
-      debugPrint('[CoinShop] Failed to update Firestore membership: $e');
-      return null;
-    }
   }
 
   @override

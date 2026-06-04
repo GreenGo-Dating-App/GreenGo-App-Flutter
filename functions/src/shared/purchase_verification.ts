@@ -106,6 +106,62 @@ export async function verifyGooglePlayPurchase(
   }
 }
 
+/**
+ * Verify a Google Play auto-renewable SUBSCRIPTION by its purchase token, using
+ * the Subscriptions v2 API (the products API used by [verifyGooglePlayPurchase]
+ * is for one-time products and fails for subscriptions). Returns the store
+ * expiry so the caller can set entitlement without client-side stacking.
+ */
+export async function verifyGooglePlaySubscription(
+  token: string,
+): Promise<VerificationResult> {
+  try {
+    const publisher = await getAndroidPublisher();
+    const res: any = await publisher.purchases.subscriptionsv2.get({
+      packageName: PACKAGE_NAME,
+      token,
+    });
+
+    const state: string = res.data?.subscriptionState || '';
+    const lineItems: any[] = res.data?.lineItems || [];
+    let latestMs: number | undefined;
+    for (const li of lineItems) {
+      if (li.expiryTime) {
+        const ms = new Date(li.expiryTime).getTime();
+        if (!latestMs || ms > latestMs) latestMs = ms;
+      }
+    }
+
+    const valid =
+      state === 'SUBSCRIPTION_STATE_ACTIVE' ||
+      state === 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD' ||
+      state === 'SUBSCRIPTION_STATE_CANCELED' || // canceled but not yet expired
+      (latestMs !== undefined && latestMs > Date.now());
+
+    if (valid) {
+      logInfo(`Google Play subscription verified: state=${state}`);
+      return { verified: true, expiresDateMs: latestMs, originalTransactionId: token };
+    }
+    return { verified: false, error: `Subscription state: ${state}` };
+  } catch (error: any) {
+    const msg = error?.message || String(error);
+    const isApiError =
+      msg.includes('403') || msg.includes('401') || msg.includes('not enabled') ||
+      msg.includes('PERMISSION_DENIED') || msg.includes('accessNotConfigured') ||
+      msg.includes('has not been used');
+    if (isApiError) {
+      logError(
+        'Google Play subscriptions API not configured — subscription accepted ' +
+        'without server verification. Link the API in Play Console to enable it.',
+        msg,
+      );
+      return { verified: true, apiUnavailable: true };
+    }
+    logError('Google Play subscription verification error:', msg);
+    return { verified: false, error: msg };
+  }
+}
+
 // ========== APP STORE (iOS) VERIFICATION ==========
 
 let cachedAppleRootCerts: Buffer[] | null = null;
