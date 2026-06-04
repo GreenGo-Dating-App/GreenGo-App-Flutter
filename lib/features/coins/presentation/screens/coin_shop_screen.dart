@@ -469,6 +469,28 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return Map<String, dynamic>.from(result.data as Map);
   }
 
+  /// Select which Base offer to purchase. On Android a subscription returns one
+  /// [GooglePlayProductDetails] per offer; prefer the free-trial offer (its
+  /// first pricing phase is free) so the 7-day trial is applied, else the first.
+  /// The plugin derives the offer token from the chosen entry. iOS applies the
+  /// introductory offer automatically, so any entry works.
+  ProductDetails _selectBaseOffer(List<ProductDetails> details) {
+    if (!Platform.isAndroid) return details.first;
+    for (final d in details) {
+      if (d is GooglePlayProductDetails) {
+        final offers = d.productDetails.subscriptionOfferDetails;
+        final idx = d.subscriptionIndex;
+        if (offers != null && idx != null && idx < offers.length) {
+          final phases = offers[idx].pricingPhases;
+          if (phases.isNotEmpty && phases.first.priceAmountMicros == 0) {
+            return d;
+          }
+        }
+      }
+    }
+    return details.first;
+  }
+
   /// Buy a membership subscription with `buyNonConsumable`. On Android, if the
   /// user already has an active subscription, this performs an immediate,
   /// prorated in-place upgrade/downgrade (WITH_TIME_PRORATION) instead of a
@@ -1323,7 +1345,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         return;
       }
 
-      final ok = await _buyMembership(response.productDetails.first);
+      final ok = await _buyMembership(_selectBaseOffer(response.productDetails));
 
       if (!ok) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);

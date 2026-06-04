@@ -6,6 +6,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
@@ -268,6 +269,27 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
     }
   }
 
+  /// Select the Base offer to purchase. On Android, prefer the free-trial offer
+  /// (its first pricing phase is free) so the 7-day trial is applied; else the
+  /// first. The plugin derives the offer token from the chosen entry. iOS
+  /// applies the introductory offer automatically.
+  ProductDetails _selectBaseOffer(List<ProductDetails> details) {
+    if (!Platform.isAndroid) return details.first;
+    for (final d in details) {
+      if (d is GooglePlayProductDetails) {
+        final offers = d.productDetails.subscriptionOfferDetails;
+        final idx = d.subscriptionIndex;
+        if (offers != null && idx != null && idx < offers.length) {
+          final phases = offers[idx].pricingPhases;
+          if (phases.isNotEmpty && phases.first.priceAmountMicros == 0) {
+            return d;
+          }
+        }
+      }
+    }
+    return details.first;
+  }
+
   // ── Trigger IAP ──────────────────────────────────────────────────────
   Future<void> _subscribe() async {
     setState(() => _loading = true);
@@ -294,7 +316,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
       }
 
       // All products are managed (in-app) products — use buyConsumable
-      final product = response.productDetails.first;
+      final product = _selectBaseOffer(response.productDetails);
       debugPrint('[BaseMembership] Product: ${product.id}, title: ${product.title}, '
           'price: ${product.price}, rawPrice: ${product.rawPrice}');
 
