@@ -9,6 +9,7 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
@@ -429,19 +430,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     });
   }
 
-  /// On iOS, App Store Connect subscription products use a `subscription_`
-  /// prefix (the original consumable IDs can't be reused as auto-renewable
-  /// subscriptions). Android keeps the original bare IDs. Convert a bare
-  /// product ID to the store-specific one used when querying/purchasing.
-  String _storeProductId(String baseId) =>
-      Platform.isIOS ? 'subscription_$baseId' : baseId;
+  /// Map a canonical product ID to the per-platform store ID (App Store and
+  /// Google Play use different IDs). Delegates to the shared [ProductCatalog].
+  String _storeProductId(String canonicalId) => ProductCatalog.storeId(canonicalId);
 
-  /// Inverse of [_storeProductId]: strip the iOS `subscription_` prefix so a
-  /// returned purchase can be matched back to a tier / base membership.
-  String _baseProductId(String storeId) =>
-      storeId.startsWith('subscription_')
-          ? storeId.substring('subscription_'.length)
-          : storeId;
+  /// Inverse of [_storeProductId]: map a store-returned product ID back to the
+  /// canonical ID so a completed purchase can be matched to a tier.
+  String _baseProductId(String storeId) => ProductCatalog.canonicalId(storeId);
 
   /// Map a product ID back to a SubscriptionTier
   SubscriptionTier? _tierFromProductId(String productId) {
