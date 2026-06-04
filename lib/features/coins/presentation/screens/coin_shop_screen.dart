@@ -54,8 +54,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   bool _isLoadingSubscription = false;
   bool _isLoadingCoinPurchase = false;
   bool _isRestoring = false;
-  /// Localized recurring price of the base membership from the store (e.g. "R$ 24,99").
-  String? _basePrice;
+  /// Canonical productId → store-localized price (e.g. "R$ 24,99"). Loaded once
+  /// from the store so coin/tier/base prices are never hard-coded.
+  Map<String, String> _storePrices = {};
+
+  /// Store price for [canonicalProductId], or [fallback] until loaded.
+  String _priceFor(String canonicalProductId, String fallback) =>
+      _storePrices[canonicalProductId] ?? fallback;
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
@@ -120,27 +125,35 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       // Restore old purchases on init to consume any unconsumed ones
       // This clears "already owned" state from previous sessions
       _consumeOldPurchases();
-      // Load the store's localized base price (no hard-coded currency in the UI).
-      _loadBasePrice();
+      // Load store-localized prices for coins + memberships (no hard-coded UI prices).
+      _loadStorePrices();
     } catch (e) {
       debugPrint('[CoinShop] IAP initialization failed: $e');
       _inAppPurchase = null;
     }
   }
 
-  /// Load the base membership's localized recurring price from the store so the
-  /// Shop card shows the real region-correct amount instead of a hard-coded one.
-  Future<void> _loadBasePrice() async {
+  /// Load store-localized prices for coins + all memberships, keyed by canonical
+  /// productId, so every price in the UI reflects the real region price.
+  Future<void> _loadStorePrices() async {
     if (_inAppPurchase == null) return;
     try {
       if (!await _inAppPurchase!.isAvailable()) return;
-      final resp = await _inAppPurchase!.queryProductDetails({ProductCatalog.baseStoreId});
+      final ids = <String>{
+        ...CoinPackages.standardPackages.map((p) => p.productId),
+        ...ProductCatalog.allStoreIds(),
+      };
+      final resp = await _inAppPurchase!.queryProductDetails(ids);
       if (resp.productDetails.isEmpty) return;
-      final label =
-          ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
-      if (mounted && label != null) setState(() => _basePrice = label);
+      final map = <String, String>{};
+      for (final pd in resp.productDetails) {
+        final label = ProductCatalog.recurringPriceLabel(pd);
+        // Normalize membership store IDs back to canonical; coins are unchanged.
+        if (label != null) map[ProductCatalog.canonicalId(pd.id)] = label;
+      }
+      if (mounted) setState(() => _storePrices = map);
     } catch (e) {
-      debugPrint('[CoinShop] base price load failed: $e');
+      debugPrint('[CoinShop] store prices load failed: $e');
     }
   }
 
@@ -1010,10 +1023,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Widget _buildSubscribeButton(SubscriptionTier currentTier) {
     final isUpgrade = _selectedTier!.index > currentTier.index;
-    final upgradeDiscount = _isYearlySelected ? 0.0 : _calculateUpgradeDiscount(currentTier, _selectedTier!);
-    final displayPrice = _isYearlySelected ? _selectedTier!.yearlyPrice : _selectedTier!.monthlyPrice;
-    final finalPrice = displayPrice - upgradeDiscount;
     final periodLabel = _isYearlySelected ? AppLocalizations.of(context)!.shopPerYear : AppLocalizations.of(context)!.shopPerMonth;
+    final selectedProductId =
+        _isYearlySelected ? _selectedTier!.yearlyProductId : _selectedTier!.monthlyProductId;
+    final fallbackPrice =
+        '\$${(_isYearlySelected ? _selectedTier!.yearlyPrice : _selectedTier!.monthlyPrice).toStringAsFixed(2)}';
+    final storePrice = _priceFor(selectedProductId, fallbackPrice);
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -1030,32 +1045,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       child: SafeArea(
         child: Column(
           children: [
-            // Show savings if upgrading
-            if (isUpgrade && upgradeDiscount > 0)
-              Container(
-                margin: const EdgeInsets.only(bottom: 12),
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF4CAF50).withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: const Color(0xFF4CAF50)),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.savings, color: Color(0xFF4CAF50), size: 20),
-                    const SizedBox(width: 8),
-                    Text(
-                      AppLocalizations.of(context)!.shopYouSave(upgradeDiscount.toStringAsFixed(2), currentTier.displayName),
-                      style: const TextStyle(
-                        color: Color(0xFF4CAF50),
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
             ElevatedButton(
               onPressed: _isLoadingSubscription ? null : _handleSubscribe,
               style: ElevatedButton.styleFrom(
@@ -1093,35 +1082,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        if (upgradeDiscount > 0)
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                '\$${displayPrice.toStringAsFixed(2)}',
-                                style: const TextStyle(
-                                  fontSize: 12,
-                                  decoration: TextDecoration.lineThrough,
-                                  color: Colors.black54,
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                '\$${finalPrice.toStringAsFixed(2)}$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          )
-                        else
-                          Text(
-                            '\$${displayPrice.toStringAsFixed(2)}$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
-                            style: const TextStyle(
-                              fontSize: 12,
-                            ),
+                        Text(
+                          '$storePrice$periodLabel  ${AppLocalizations.of(context)!.plusTaxes}',
+                          style: const TextStyle(
+                            fontSize: 12,
                           ),
+                        ),
                       ],
                     ),
             ),
@@ -1225,10 +1191,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           color: Colors.white70,
                         ),
                       ),
-                      if (_basePrice != null) ...[
+                      if (_storePrices[ProductCatalog.baseMembership] != null) ...[
                         const SizedBox(height: 4),
                         Text(
-                          '$_basePrice  ${AppLocalizations.of(context)!.plusTaxes}',
+                          '${_storePrices[ProductCatalog.baseMembership]}  ${AppLocalizations.of(context)!.plusTaxes}',
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -1530,48 +1496,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               ),
                               Row(
                                 children: [
-                                  if (_isYearlySelected) ...[
-                                    Text(
-                                      '\$${tier.yearlyPrice.toStringAsFixed(2)}/year  ${AppLocalizations.of(context)!.plusTaxes}',
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.white70,
-                                      ),
+                                  Text(
+                                    _isYearlySelected
+                                        ? '${_priceFor(tier.yearlyProductId, '\$${tier.yearlyPrice.toStringAsFixed(2)}')}/year  ${AppLocalizations.of(context)!.plusTaxes}'
+                                        : '${_priceFor(tier.monthlyProductId, '\$${tier.monthlyPrice.toStringAsFixed(2)}')}/month  ${AppLocalizations.of(context)!.plusTaxes}',
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white70,
                                     ),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      '(\$${tier.yearlyMonthlyEquivalent.toStringAsFixed(2)}/mo)',
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        color: Color(0xFF4CAF50),
-                                      ),
-                                    ),
-                                  ] else if (upgradeDiscount > 0) ...[
-                                    Text(
-                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}',
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.white38,
-                                        decoration: TextDecoration.lineThrough,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      '\$${(tier.monthlyPrice - upgradeDiscount).toStringAsFixed(2)}/mo  ${AppLocalizations.of(context)!.plusTaxes}',
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        color: Color(0xFF4CAF50),
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ] else
-                                    Text(
-                                      '\$${tier.monthlyPrice.toStringAsFixed(2)}/month  ${AppLocalizations.of(context)!.plusTaxes}',
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.white70,
-                                      ),
-                                    ),
+                                  ),
                                 ],
                               ),
                             ],
@@ -1897,7 +1830,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         ),
                       )
                     : Text(
-                        AppLocalizations.of(context)!.shopPurchaseCoinsFor(_selectedPackage!.totalCoins.toString(), _selectedPackage!.displayPrice),
+                        AppLocalizations.of(context)!.shopPurchaseCoinsFor(_selectedPackage!.totalCoins.toString(), _priceFor(_selectedPackage!.productId, _selectedPackage!.displayPrice)),
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -2061,7 +1994,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         Row(
                           children: [
                             Text(
-                              '${package.displayPrice} ${AppLocalizations.of(context)!.plusTaxes}',
+                              '${_priceFor(package.productId, package.displayPrice)} ${AppLocalizations.of(context)!.plusTaxes}',
                               style: const TextStyle(
                                 fontSize: 15,
                                 color: Colors.white70,
