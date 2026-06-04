@@ -11088,6 +11088,24 @@ abstract class AppLocalizations {
   /// **'Expires: {date}'**
   String membershipExpires(Object date);
 
+  /// No description provided for @restorePurchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore Purchases'**
+  String get restorePurchases;
+
+  /// No description provided for @subscriptionAutoRenewInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.'**
+  String get subscriptionAutoRenewInfo;
+
+  /// No description provided for @purchasesRestored.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases restored.'**
+  String get purchasesRestored;
+
   /// No description provided for @membershipExtendTitle.
   ///
   /// In en, this message translates to:

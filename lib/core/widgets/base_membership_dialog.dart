@@ -14,6 +14,7 @@ import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../constants/product_catalog.dart';
+import 'subscription_legal_footer.dart';
 
 /// Dialog shown when a non-member tries to perform a gated action.
 /// Offers a yearly "greengo_base_membership" IAP subscription.
@@ -73,6 +74,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   StreamSubscription<List<PurchaseDetails>>? _sub;
   bool _loading = false;
   bool _retryAfterConsume = false;
+  bool _isRestoring = false;
 
   // Animation controllers
   late final AnimationController _shimmerController;
@@ -328,6 +330,28 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
         _showError('Purchase error: $e');
         if (mounted) setState(() => _loading = false);
       }
+    }
+  }
+
+  /// User-initiated "Restore Purchases" (Apple 3.1.2). Re-queries the store;
+  /// entitlement itself lives in Firestore keyed to the user, so we refresh the
+  /// blocs afterward. Restored subs are acknowledged via [_handleRestore].
+  Future<void> _restore() async {
+    setState(() => _isRestoring = true);
+    try {
+      await _iap.restorePurchases();
+      await Future.delayed(const Duration(seconds: 2));
+      if (mounted) {
+        widget.coinBloc?.add(LoadCoinBalance(widget.userId));
+        widget.profileBloc?.add(ProfileLoadRequested(userId: widget.userId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context)!.purchasesRestored)),
+        );
+      }
+    } catch (e) {
+      debugPrint('[BaseMembership] Restore failed: $e');
+    } finally {
+      if (mounted) setState(() => _isRestoring = false);
     }
   }
 
@@ -644,6 +668,12 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                                 height: 1.4,
                               ),
                             ),
+                          const SizedBox(height: 12),
+                          // Apple 3.1.2: auto-renew disclosure, Terms/Privacy, Restore.
+                          SubscriptionLegalFooter(
+                            onRestore: _restore,
+                            isRestoring: _isRestoring,
+                          ),
                           const SizedBox(height: 8),
                           // Dismiss button
                           TextButton(

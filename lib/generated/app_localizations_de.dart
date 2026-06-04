@@ -6233,6 +6233,16 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get restorePurchases => 'Käufe wiederherstellen';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige jederzeit in den Kontoeinstellungen deines Stores.';
+
+  @override
+  String get purchasesRestored => 'Käufe wiederhergestellt.';
+
+  @override
   String get membershipExtendTitle => 'Mitgliedschaft verlängern';
 
   @override

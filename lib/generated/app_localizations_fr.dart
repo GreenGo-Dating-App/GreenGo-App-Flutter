@@ -6254,6 +6254,16 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get restorePurchases => 'Restaurer les achats';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'Les abonnements se renouvellent automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours. Gérez ou annulez à tout moment dans les réglages de votre compte sur la boutique.';
+
+  @override
+  String get purchasesRestored => 'Achats restaurés.';
+
+  @override
   String get membershipExtendTitle => 'Prolonger votre adhésion';
 
   @override

@@ -11,6 +11,7 @@ import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
@@ -52,6 +53,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   SubscriptionTier? _selectedTier;
   bool _isLoadingSubscription = false;
   bool _isLoadingCoinPurchase = false;
+  bool _isRestoring = false;
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
@@ -417,6 +419,33 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       }
     } else {
       await _completeAndConsume(p);
+    }
+  }
+
+  /// User-initiated "Restore Purchases" (Apple 3.1.2). Re-queries the store and
+  /// refreshes entitlement from Firestore (the server source of truth, keyed to
+  /// the user). Restored subs are acknowledged via [_handleRestoredPurchase].
+  Future<void> _restorePurchases() async {
+    if (_inAppPurchase == null) return;
+    setState(() => _isRestoring = true);
+    try {
+      await _inAppPurchase!.restorePurchases();
+      // Give the purchase stream a moment to deliver restored items.
+      await Future.delayed(const Duration(seconds: 2));
+      await _loadCurrentTierFromFirestore();
+      if (mounted) {
+        context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context)!.purchasesRestored)),
+        );
+      }
+    } catch (e) {
+      debugPrint('[CoinShop] Restore failed: $e');
+      if (mounted) {
+        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+      }
+    } finally {
+      if (mounted) setState(() => _isRestoring = false);
     }
   }
 
@@ -919,6 +948,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 final isDowngrade = tier.index < currentTier.index;
                 return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
               }),
+              const SizedBox(height: 16),
+              // Apple 3.1.2: auto-renew disclosure, Terms/Privacy, Restore.
+              SubscriptionLegalFooter(
+                onRestore: _restorePurchases,
+                isRestoring: _isRestoring,
+              ),
+              const SizedBox(height: 8),
             ],
           ),
         ),

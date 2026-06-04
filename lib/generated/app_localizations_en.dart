@@ -6147,6 +6147,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get restorePurchases => 'Restore Purchases';
+
+  @override
+  String get subscriptionAutoRenewInfo =>
+      'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.';
+
+  @override
+  String get purchasesRestored => 'Purchases restored.';
+
+  @override
   String get membershipExtendTitle => 'Extend Your Membership';
 
   @override
