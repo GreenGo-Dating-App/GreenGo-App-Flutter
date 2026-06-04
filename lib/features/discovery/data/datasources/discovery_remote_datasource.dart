@@ -269,8 +269,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       if (preferences.preferredCountries.isNotEmpty) {
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
+          // Keep profiles with unknown/empty location discoverable even when a
+          // country filter is active (otherwise users who haven't set a
+          // location are invisible to everyone).
           if (country.isEmpty || country == 'Unknown') {
-            return false;
+            return true;
           }
           final matches = preferences.preferredCountries
               .map((c) => c.toLowerCase())

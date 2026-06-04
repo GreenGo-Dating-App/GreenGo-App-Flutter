@@ -17439,7 +17439,7 @@ abstract class AppLocalizations {
   /// No description provided for @yearlyMembership.
   ///
   /// In en, this message translates to:
-  /// **'Yearly Membership — \$4.99/year'**
+  /// **'Yearly subscription'**
   String get yearlyMembership;
 
   /// No description provided for @yearsLabel.
@@ -18183,7 +18183,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipTrialSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'7 days free, then just \$4.99/year'**
+  /// **'7 days free, then auto-renews yearly'**
   String get membershipTrialSubtitle;
 
   /// No description provided for @membershipTrialFeature1.

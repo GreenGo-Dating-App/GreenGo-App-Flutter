@@ -76,6 +76,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   bool _loading = false;
   bool _retryAfterConsume = false;
   bool _isRestoring = false;
+  /// Localized recurring price from the store (e.g. "R$ 24,99"); null until loaded.
+  String? _yearlyPrice;
 
   // Animation controllers
   late final AnimationController _shimmerController;
@@ -91,6 +93,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
     // Restore old purchases on init to consume any unconsumed ones
     // This clears "already owned" state from previous sessions
     _consumeOldPurchases();
+    // Load the store's localized price so the UI never shows a hard-coded value.
+    _loadYearlyPrice();
 
     // Shimmer effect — continuous sweep
     _shimmerController = AnimationController(
@@ -266,6 +270,21 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
       widget.profileBloc?.add(ProfileLoadRequested(userId: widget.userId));
       setState(() => _loading = false);
       Navigator.of(context).pop(true);
+    }
+  }
+
+  /// Query the store for the Base subscription's localized recurring price so
+  /// the dialog shows the real, region-correct amount instead of a hard-coded one.
+  Future<void> _loadYearlyPrice() async {
+    try {
+      if (!await _iap.isAvailable()) return;
+      final resp = await _iap.queryProductDetails({_storeProductId});
+      if (resp.productDetails.isEmpty) return;
+      final label =
+          ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
+      if (mounted && label != null) setState(() => _yearlyPrice = label);
+    } catch (e) {
+      debugPrint('[BaseMembership] price load failed: $e');
     }
   }
 
@@ -607,7 +626,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                                 const Icon(Icons.star_rounded, color: AppColors.accentGold, size: 18),
                                 const SizedBox(width: 8),
                                 Text(
-                                  l10n.yearlyMembership,
+                                  _yearlyPrice != null
+                                      ? '${l10n.yearlyMembership} · $_yearlyPrice'
+                                      : l10n.yearlyMembership,
                                   style: const TextStyle(
                                     color: AppColors.richGold,
                                     fontSize: 14,
