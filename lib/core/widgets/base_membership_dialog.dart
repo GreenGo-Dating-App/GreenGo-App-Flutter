@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
@@ -127,19 +126,12 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
     }
   }
 
-  /// Complete and consume a purchase (works for managed products to allow re-purchase)
+  /// Acknowledge a subscription purchase. Base membership is an auto-renewable
+  /// subscription, so it must be completed (acknowledged) but NEVER consumed —
+  /// consuming a subscription triggers a Google auto-refund.
   Future<void> _completeAndConsume(PurchaseDetails p) async {
     if (p.pendingCompletePurchase) {
       await _iap.completePurchase(p);
-    }
-    if (Platform.isAndroid) {
-      try {
-        final androidAddition = _iap.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
-        await androidAddition.consumePurchase(p);
-        debugPrint('[BaseMembership] Consumed purchase ${p.productID}');
-      } catch (e) {
-        debugPrint('[BaseMembership] Consume failed (non-critical): $e');
-      }
     }
   }
 
@@ -361,7 +353,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
         productDetails: product,
         applicationUserName: widget.userId,
       );
-      final ok = await _iap.buyConsumable(purchaseParam: param, autoConsume: false);
+      final ok = await _iap.buyNonConsumable(purchaseParam: param);
 
       if (!ok && mounted) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);

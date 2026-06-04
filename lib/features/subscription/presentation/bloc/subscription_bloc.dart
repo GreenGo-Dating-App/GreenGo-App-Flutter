@@ -5,7 +5,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../domain/entities/subscription.dart';
 import '../../domain/usecases/get_current_subscription.dart';
@@ -62,20 +61,12 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     }
   }
 
-  /// Complete and consume a purchase
+  /// Acknowledge a subscription purchase. Subscriptions are never consumed —
+  /// consuming a sub triggers a Google auto-refund; `completePurchase`
+  /// acknowledges it.
   Future<void> _completeAndConsumePurchase(PurchaseDetails p) async {
     if (p.pendingCompletePurchase) {
       await inAppPurchase.completePurchase(p);
-    }
-    if (Platform.isAndroid) {
-      try {
-        final androidAddition = inAppPurchase
-            .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
-        await androidAddition.consumePurchase(p);
-        debugPrint('[SubscriptionBloc] Consumed purchase ${p.productID}');
-      } catch (e) {
-        debugPrint('[SubscriptionBloc] Consume failed (non-critical): $e');
-      }
     }
   }
 
