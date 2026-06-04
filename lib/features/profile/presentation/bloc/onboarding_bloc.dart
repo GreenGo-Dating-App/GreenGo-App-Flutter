@@ -365,10 +365,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           // write would then be skipped (it only writes when absent).
           await _grantWelcomeCoins(currentState.userId);
 
-          // Grant every new user a 7-day Base membership trial (so the
-          // "1 week free" promise at signup is real). A coupon's base grant,
-          // if any, stacks on top via the never-downgrade extension rule.
-          await _grantBaseTrial(currentState.userId);
+          // NOTE: We intentionally do NOT auto-grant a 7-day Base membership
+          // trial here anymore. The trial is offered (not silently activated)
+          // via BaseMembershipDialog on first login, so the user chooses to
+          // start it. A coupon's base grant, if any, still applies on redeem.
 
           // Redeem a coupon typed during registration, if one is pending.
           // Never blocks completion; a bad code is surfaced as a notice.
@@ -418,20 +418,4 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
-  /// Grant a 7-day Base membership trial to a newly registered user, so the
-  /// "1 week of Base membership free" shown at signup is actually delivered.
-  Future<void> _grantBaseTrial(String userId) async {
-    try {
-      final firestore = FirebaseFirestore.instance;
-      final now = DateTime.now();
-      final end = now.add(const Duration(days: 7));
-      await firestore.collection('profiles').doc(userId).set({
-        'hasBaseMembership': true,
-        'baseMembershipEndDate': Timestamp.fromDate(end),
-        'updatedAt': Timestamp.fromDate(now),
-      }, SetOptions(merge: true));
-    } catch (e) {
-      debugPrint('Base trial grant error: $e');
-    }
-  }
 }
