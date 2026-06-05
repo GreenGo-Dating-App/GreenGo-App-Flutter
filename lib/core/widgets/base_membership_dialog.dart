@@ -273,18 +273,55 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
     }
   }
 
-  /// Query the store for the Base subscription's localized recurring price so
-  /// the dialog shows the real, region-correct amount instead of a hard-coded one.
+  /// Best-effort country for currency resolution: the profile country
+  /// (normalized), else the device locale's country code (e.g. pt_BR -> BR).
+  Future<String> _resolveCountry() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      final loc = doc.data()?['effectiveLocation'] as Map<String, dynamic>? ??
+          doc.data()?['location'] as Map<String, dynamic>? ?? {};
+      final c = ((loc['country'] as String?) ?? '').trim().toUpperCase();
+      if (c == 'BR' || c == 'BRAZIL' || c == 'BRASIL') return 'BR';
+      if (c.isNotEmpty && c != 'UNKNOWN') return c;
+    } catch (_) {}
+    final parts = Platform.localeName.split(RegExp('[_-]'));
+    return parts.length > 1 ? parts[1].toUpperCase() : '';
+  }
+
+  /// Load the Base subscription's localized recurring price. Prefer the store
+  /// (the real charge currency); if the store has no price yet (products not
+  /// live), fall back to the country-resolved pricing Cloud Function so the
+  /// price is ALWAYS visible (e.g. in BRL for Brazil).
   Future<void> _loadYearlyPrice() async {
     try {
-      if (!await _iap.isAvailable()) return;
-      final resp = await _iap.queryProductDetails({_storeProductId});
-      if (resp.productDetails.isEmpty) return;
-      final label =
-          ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
-      if (mounted && label != null) setState(() => _yearlyPrice = label);
+      if (await _iap.isAvailable()) {
+        final resp = await _iap.queryProductDetails({_storeProductId});
+        if (resp.productDetails.isNotEmpty) {
+          final label =
+              ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
+          if (mounted && label != null) {
+            setState(() => _yearlyPrice = label);
+            return;
+          }
+        }
+      }
     } catch (e) {
-      debugPrint('[BaseMembership] price load failed: $e');
+      debugPrint('[BaseMembership] store price load failed: $e');
+    }
+    try {
+      final country = await _resolveCountry();
+      final result = await FirebaseFunctions.instance
+          .httpsCallable('getDisplayPrices')
+          .call({'userCountry': country});
+      final prices = (result.data as Map?)?['prices'] as Map?;
+      final display =
+          (prices?[ProductCatalog.baseMembership] as Map?)?['display'] as String?;
+      if (mounted && display != null) setState(() => _yearlyPrice = display);
+    } catch (e) {
+      debugPrint('[BaseMembership] price fallback failed: $e');
     }
   }
 
