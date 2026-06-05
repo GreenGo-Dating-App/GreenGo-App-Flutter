@@ -170,6 +170,20 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           // countryLower field may not exist yet on older profiles
         }
 
+        // Tertiary query: profiles with unknown/empty country (e.g. users who
+        // haven't finished setting their location). Without this they'd be
+        // excluded by the country whereIn and invisible to everyone.
+        QuerySnapshot<Map<String, dynamic>>? unknownQuery;
+        try {
+          unknownQuery = await firestore
+              .collection('profiles')
+              .where('location.country', whereIn: ['Unknown', ''])
+              .limit(200)
+              .get();
+        } catch (_) {
+          // ignore — best-effort supplement
+        }
+
         // Merge results, dedup by doc ID
         final seenIds = <String>{};
         profileDocs = [];
@@ -178,6 +192,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         }
         if (secondaryQuery != null) {
           for (final doc in secondaryQuery.docs) {
+            if (seenIds.add(doc.id)) profileDocs.add(doc);
+          }
+        }
+        if (unknownQuery != null) {
+          for (final doc in unknownQuery.docs) {
             if (seenIds.add(doc.id)) profileDocs.add(doc);
           }
         }
