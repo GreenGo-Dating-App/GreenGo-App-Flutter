@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../chat/presentation/screens/support_chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -1274,7 +1275,98 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     );
   }
 
+  /// True for the GreenGo Support (or admin) profile shown in discovery.
+  bool _isSupportCard(dynamic card) =>
+      (card.candidate.profile.isSupport as bool? ?? false) ||
+      (card.candidate.profile.isAdmin as bool? ?? false);
+
+  /// Any discovery action (connect / priority connect / skip / nope) on the
+  /// GreenGo Support profile opens a support chat with an automatic "Hi!" and
+  /// navigates to it, instead of recording a like/skip/nope.
+  Future<void> _openSupportChat() async {
+    final firestore = FirebaseFirestore.instance;
+    final now = DateTime.now();
+    try {
+      var userName = 'User';
+      String? userAvatar;
+      try {
+        final prof = await firestore.collection('profiles').doc(userId).get();
+        final d = prof.data();
+        userName = d?['displayName'] as String? ?? 'User';
+        final photos = d?['photoUrls'] as List<dynamic>?;
+        if (photos != null && photos.isNotEmpty) userAvatar = photos.first as String?;
+      } catch (_) {}
+
+      // Reuse an existing open support chat if one exists, else create it.
+      String conversationId;
+      final existing = await firestore
+          .collection('support_chats')
+          .where('userId', isEqualTo: userId)
+          .where('status', isEqualTo: 'open')
+          .limit(1)
+          .get();
+      if (existing.docs.isNotEmpty) {
+        conversationId = existing.docs.first.id;
+      } else {
+        final docRef = await firestore.collection('support_chats').add({
+          'userId': userId,
+          'userName': userName,
+          'userAvatar': userAvatar,
+          'subject': 'Chat with GreenGo Support',
+          'category': 'general',
+          'status': 'open',
+          'priority': 'normal',
+          'createdAt': Timestamp.fromDate(now),
+          'updatedAt': Timestamp.fromDate(now),
+          'lastMessageAt': Timestamp.fromDate(now),
+          'lastMessage': 'Hi!',
+          'lastMessageBy': 'user',
+          'unreadCount': 0,
+          'messageCount': 1,
+        });
+        conversationId = docRef.id;
+      }
+
+      // Send the automatic "Hi!" opener.
+      await firestore.collection('support_messages').add({
+        'conversationId': conversationId,
+        'senderId': userId,
+        'senderType': 'user',
+        'senderName': userName,
+        'senderAvatar': userAvatar,
+        'content': 'Hi!',
+        'messageType': 'text',
+        'readByAdmin': false,
+        'readByUser': true,
+        'createdAt': Timestamp.fromDate(now),
+      });
+      await firestore.collection('support_chats').doc(conversationId).set({
+        'lastMessage': 'Hi!',
+        'lastMessageAt': Timestamp.fromDate(now),
+        'lastMessageBy': 'user',
+        'updatedAt': Timestamp.fromDate(now),
+      }, SetOptions(merge: true));
+
+      if (!mounted) return;
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => SupportChatScreen(
+            conversationId: conversationId,
+            currentUserId: userId,
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('[Discovery] Failed to open GreenGo Support chat: $e');
+    }
+  }
+
   Future<void> _gridAction(DiscoveryCard card, SwipeActionType actionType) async {
+    // GreenGo Support: any action opens a support chat instead.
+    if (_isSupportCard(card)) {
+      await _openSupportChat();
+      return;
+    }
     // Record activity for online presence
     PresenceService.instance?.recordActivity();
     // Base membership gate
@@ -1534,6 +1626,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   // ───────────────────── Swipe Handlers ─────────────────────
 
   Future<void> _handleSwipe(BuildContext context, card, SwipeDirection direction) async {
+    // GreenGo Support: any swipe opens a support chat instead.
+    if (_isSupportCard(card)) {
+      await _openSupportChat();
+      return;
+    }
     // Record activity for online presence
     PresenceService.instance?.recordActivity();
     // Base membership gate
@@ -1618,6 +1715,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   }
 
   void _handleSwipeFromProfile(BuildContext context, card, SwipeActionType actionType) {
+    // GreenGo Support: any action opens a support chat instead.
+    if (_isSupportCard(card)) {
+      _openSupportChat();
+      return;
+    }
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
     context.read<DiscoveryBloc>().add(
