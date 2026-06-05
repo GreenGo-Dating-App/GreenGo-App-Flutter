@@ -17,8 +17,22 @@ class AppSoundService {
 
   Future<void> initialize() async {
     try {
+      // iOS needs an explicit audio session or SFX silently don't play.
+      // `playback` is audible regardless of the mute switch; `mixWithOthers`
+      // keeps it from interrupting the user's music. Android keeps its defaults.
+      await AudioPlayer.global.setAudioContext(
+        AudioContext(
+          iOS: AudioContextIOS(
+            category: AVAudioSessionCategory.playback,
+            options: const {AVAudioSessionOptions.mixWithOthers},
+          ),
+          android: const AudioContextAndroid(),
+        ),
+      );
       await _player.setReleaseMode(ReleaseMode.stop);
-      await _player.setPlayerMode(PlayerMode.lowLatency);
+      // Use the default media-player mode. lowLatency (SoundPool on Android)
+      // silently dropped playback after stop() — sounds wouldn't play.
+      await _player.setPlayerMode(PlayerMode.mediaPlayer);
       _ready = true;
     } catch (e) {
       if (kDebugMode) debugPrint('[Sound] init failed: $e');
