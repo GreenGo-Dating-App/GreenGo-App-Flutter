@@ -133,28 +133,66 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
-  /// Load store-localized prices for coins + all memberships, keyed by canonical
-  /// productId, so every price in the UI reflects the real region price.
-  Future<void> _loadStorePrices() async {
-    if (_inAppPurchase == null) return;
+  /// Best-effort country for currency resolution: the profile country
+  /// (normalized), else the device locale's country code (e.g. pt_BR -> BR).
+  Future<String> _resolveCountry() async {
     try {
-      if (!await _inAppPurchase!.isAvailable()) return;
-      final ids = <String>{
-        ...CoinPackages.standardPackages.map((p) => p.productId),
-        ...ProductCatalog.allStoreIds(),
-      };
-      final resp = await _inAppPurchase!.queryProductDetails(ids);
-      if (resp.productDetails.isEmpty) return;
-      final map = <String, String>{};
-      for (final pd in resp.productDetails) {
-        final label = ProductCatalog.recurringPriceLabel(pd);
-        // Normalize membership store IDs back to canonical; coins are unchanged.
-        if (label != null) map[ProductCatalog.canonicalId(pd.id)] = label;
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.userId)
+          .get();
+      final loc = doc.data()?['effectiveLocation'] as Map<String, dynamic>? ??
+          doc.data()?['location'] as Map<String, dynamic>? ?? {};
+      final c = ((loc['country'] as String?) ?? '').trim().toUpperCase();
+      if (c == 'BR' || c == 'BRAZIL' || c == 'BRASIL') return 'BR';
+      if (c.isNotEmpty && c != 'UNKNOWN') return c;
+    } catch (_) {}
+    final parts = Platform.localeName.split(RegExp('[_-]'));
+    return parts.length > 1 ? parts[1].toUpperCase() : '';
+  }
+
+  /// Load prices for coins + all memberships, keyed by canonical productId.
+  /// Prefers the real Apple/Google store price (localized to the user's store
+  /// region); fills anything the store doesn't return from the country-resolved
+  /// pricing function, so every price always shows in the right currency.
+  Future<void> _loadStorePrices() async {
+    final map = <String, String>{};
+    // 1) Real store prices (Apple/Google, localized by the store account region).
+    try {
+      if (_inAppPurchase != null && await _inAppPurchase!.isAvailable()) {
+        final ids = <String>{
+          ...CoinPackages.standardPackages.map((p) => p.productId),
+          ...ProductCatalog.allStoreIds(),
+        };
+        final resp = await _inAppPurchase!.queryProductDetails(ids);
+        for (final pd in resp.productDetails) {
+          final label = ProductCatalog.recurringPriceLabel(pd);
+          // Normalize membership store IDs back to canonical; coins are unchanged.
+          if (label != null) map[ProductCatalog.canonicalId(pd.id)] = label;
+        }
       }
-      if (mounted) setState(() => _storePrices = map);
     } catch (e) {
       debugPrint('[CoinShop] store prices load failed: $e');
     }
+    // 2) Fill any prices the store didn't return (e.g. products not live yet)
+    //    from the country-resolved pricing function, in the right currency.
+    try {
+      final country = await _resolveCountry();
+      final result = await FirebaseFunctions.instance
+          .httpsCallable('getDisplayPrices')
+          .call({'userCountry': country});
+      final prices = (result.data as Map?)?['prices'] as Map?;
+      prices?.forEach((key, value) {
+        final id = key as String;
+        if (!map.containsKey(id)) {
+          final display = (value as Map?)?['display'] as String?;
+          if (display != null) map[id] = display;
+        }
+      });
+    } catch (e) {
+      debugPrint('[CoinShop] price fallback failed: $e');
+    }
+    if (mounted) setState(() => _storePrices = map);
   }
 
   /// Restore and consume any old unconsumed purchases to clear "already owned" state
