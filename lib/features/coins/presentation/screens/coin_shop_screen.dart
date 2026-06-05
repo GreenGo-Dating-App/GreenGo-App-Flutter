@@ -1222,18 +1222,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           color: Colors.white,
                         ),
                       ),
-                      Text(
-                        AppLocalizations.of(context)!.shopYearlyPlan,
-                        style: const TextStyle(
-                          fontSize: 14,
-                          color: Colors.white70,
-                        ),
-                      ),
                       const SizedBox(height: 4),
                       Text(
-                        // Always show price + taxes, like the Silver/Gold/Platinum
-                        // tiers; uses the store/region price, with a fallback.
-                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}  ${AppLocalizations.of(context)!.plusTaxes}',
+                        // Price with /year + taxes (localized) in place of the
+                        // generic "Yearly subscription" label. Region/store price.
+                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}',
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
