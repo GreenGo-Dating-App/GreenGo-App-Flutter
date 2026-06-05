@@ -395,29 +395,26 @@ class GamificationRemoteDataSourceImpl
     // If a time period is specified, aggregate XP from xp_transactions
     if (timePeriod != null) {
       try {
-        return await _getTimePeriodLeaderboard(
+        final periodEntries = await _getTimePeriodLeaderboard(
           type: type,
           region: region,
           limit: limit,
           timePeriod: timePeriod,
         );
+        if (periodEntries.isNotEmpty) return periodEntries;
+        // No activity in this period — fall through to the all-time board.
       } catch (e) {
         debugPrint('Leaderboard: Time period query failed, falling back to all-time: $e');
-        // Fall through to all-time query
       }
     }
 
-    // Default: all-time leaderboard from user_levels
-    // Fetch extra entries to account for filtered admin/support users
-    var query = _userLevelsCollection
+    // Default: all-time leaderboard from user_levels. Region is filtered
+    // CLIENT-SIDE (avoids needing a composite index on region+totalXP, which
+    // was making the regional filter fail); fetch extra to account for it.
+    final snapshot = await _userLevelsCollection
         .orderBy('totalXP', descending: true)
-        .limit(limit + 20);
-
-    if (type == LeaderboardType.regional && region != null) {
-      query = query.where('region', isEqualTo: region);
-    }
-
-    final snapshot = await query.get();
+        .limit(type == LeaderboardType.regional ? 500 : limit + 20)
+        .get();
 
     final entries = <LeaderboardEntryModel>[];
     var rank = 1;
@@ -427,12 +424,18 @@ class GamificationRemoteDataSourceImpl
       // Exclude admins and supporters from leaderboard
       if (await _shouldExcludeFromLeaderboard(doc.id)) continue;
       final data = doc.data() as Map<String, dynamic>;
+      // Regional filter (client-side, no composite index needed).
+      if (type == LeaderboardType.regional &&
+          region != null &&
+          (data['region'] as String? ?? '') != region) {
+        continue;
+      }
       entries.add(LeaderboardEntryModel(
         rank: rank++,
         userId: doc.id,
         username: data['displayName'] as String? ?? data['username'] as String? ?? 'Unknown',
-        level: data['level'] as int,
-        totalXP: data['totalXP'] as int,
+        level: (data['level'] as num?)?.toInt() ?? 1,
+        totalXP: (data['totalXP'] as num?)?.toInt() ?? 0,
         region: data['region'] as String? ?? '',
         isVIP: data['isVIP'] as bool? ?? false,
         photoUrl: data['photoUrl'] as String?,
@@ -477,7 +480,8 @@ class GamificationRemoteDataSourceImpl
     final xpByUser = <String, int>{};
     for (final doc in txSnapshot.docs) {
       final data = doc.data() as Map<String, dynamic>;
-      final userId = data['userId'] as String;
+      final userId = data['userId'] as String?;
+      if (userId == null) continue;
       final xp = (data['xpAmount'] as num?)?.toInt() ?? 0;
       xpByUser[userId] = (xpByUser[userId] ?? 0) + xp;
     }
