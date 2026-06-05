@@ -1229,17 +1229,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                           color: Colors.white70,
                         ),
                       ),
-                      if (_storePrices[ProductCatalog.baseMembership] != null) ...[
-                        const SizedBox(height: 4),
-                        Text(
-                          '${_storePrices[ProductCatalog.baseMembership]}  ${AppLocalizations.of(context)!.plusTaxes}',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.basePurple,
-                          ),
+                      const SizedBox(height: 4),
+                      Text(
+                        // Always show price + taxes, like the Silver/Gold/Platinum
+                        // tiers; uses the store/region price, with a fallback.
+                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}  ${AppLocalizations.of(context)!.plusTaxes}',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.basePurple,
                         ),
-                      ],
+                      ),
                     ],
                   ),
                 ),
