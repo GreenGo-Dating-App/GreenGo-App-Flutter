@@ -523,7 +523,7 @@ class AuthWrapper extends StatefulWidget {
   State<AuthWrapper> createState() => _AuthWrapperState();
 }
 
-class _AuthWrapperState extends State<AuthWrapper> {
+class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   bool _hasCheckedVersion = false;
   bool _isCheckingAccess = false;
   bool _notificationPromptShown = false;
@@ -537,6 +537,9 @@ class _AuthWrapperState extends State<AuthWrapper> {
   @override
   void initState() {
     super.initState();
+    // Observe app-level back so a root-level screen (nothing to pop, same level
+    // as Discovery) returns to Discovery instead of a black screen.
+    WidgetsBinding.instance.addObserver(this);
     // Check version after first frame is rendered
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _checkVersion();
@@ -550,6 +553,30 @@ class _AuthWrapperState extends State<AuthWrapper> {
         _onAuthenticated(authState.user);
       }
     });
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  /// App-level back handler. When the navigator has nothing to pop (the current
+  /// screen is at the root level — same level as the Discovery page), going
+  /// back would show a black screen / exit. Instead, route to the main screen
+  /// (Discovery tab). Routes that CAN pop are handled normally by the Navigator;
+  /// the main screen's own PopScope handles its exit dialog.
+  @override
+  Future<bool> didPopRoute() async {
+    final nav = PushNotificationService.navigatorKey.currentState;
+    if (nav == null || nav.canPop()) return false;
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null) return false; // not logged in — let the OS handle it
+    nav.pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => MainNavigationScreen(userId: userId)),
+      (route) => false,
+    );
+    return true;
   }
 
   void _checkVersion() {
