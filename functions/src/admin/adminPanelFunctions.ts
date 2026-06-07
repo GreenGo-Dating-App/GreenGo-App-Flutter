@@ -1118,3 +1118,82 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
     }
   }
 );
+
+// =============================================================================
+// SELF-HEALING PROFILE LOCATION (reverse geocode on write)
+// =============================================================================
+
+/**
+ * When a profile is written with real coordinates but an unknown/empty country
+ * (e.g. onboarding geocoding failed), reverse-geocode the coordinates and
+ * backfill city / country / countryLower / displayAddress so the profile is
+ * discoverable in its real location.
+ *
+ * Loop-safe: only acts when the country is unknown AND coordinates exist. The
+ * resulting write sets a real country, so the re-triggered invocation no-ops.
+ * To avoid re-geocoding on unrelated writes (presence, bio, etc.), it only runs
+ * on profile creation or when the coordinates/country actually changed.
+ */
+export const reverseGeocodeProfileLocation = functions.firestore
+  .document('profiles/{userId}')
+  .onWrite(async (
+    change: functions.Change<functions.firestore.DocumentSnapshot>,
+    context: functions.EventContext,
+  ) => {
+    const after = change.after.exists ? change.after.data() : null;
+    if (!after) return null; // document deleted
+
+    const loc = after.location || {};
+    const country = (loc.country || '').toString().trim().toLowerCase();
+    const lat = Number(loc.latitude) || 0;
+    const lng = Number(loc.longitude) || 0;
+
+    const countryUnknown = country === '' || country === 'unknown';
+    const hasCoords = lat !== 0 && lng !== 0;
+    // Skip already-located profiles AND the function's own follow-up write.
+    if (!countryUnknown || !hasCoords) return null;
+
+    // Only run on creation or when location actually changed — avoids
+    // re-geocoding on every unrelated profile update.
+    const before = change.before.exists ? change.before.data() : null;
+    const bLoc = before?.location || {};
+    const bLat = Number(bLoc.latitude) || 0;
+    const bLng = Number(bLoc.longitude) || 0;
+    const bCountry = (bLoc.country || '').toString().trim().toLowerCase();
+    const coordsChanged = bLat !== lat || bLng !== lng;
+    const countryChanged = bCountry !== country;
+    if (before && !coordsChanged && !countryChanged) return null;
+
+    try {
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=en&zoom=10`;
+      const resp = await fetch(url, {
+        headers: { 'User-Agent': 'GreenGo-App/1.0 (location backfill; support@greengochat.com)' },
+      });
+      if (!resp.ok) {
+        console.warn(`reverseGeocodeProfileLocation: HTTP ${resp.status} for ${context.params.userId}`);
+        return null;
+      }
+      const data: any = await resp.json();
+      const a = data.address || {};
+      const resolvedCountry = a.country || '';
+      const resolvedCity =
+        a.city || a.town || a.village || a.municipality || a.county || a.state_district || a.state || '';
+      if (!resolvedCountry) {
+        console.warn(`reverseGeocodeProfileLocation: no country resolved for ${context.params.userId}`);
+        return null;
+      }
+      const city = resolvedCity || resolvedCountry;
+      await change.after.ref.update({
+        'location.city': city,
+        'location.country': resolvedCountry,
+        'location.countryLower': resolvedCountry.toLowerCase(),
+        'location.displayAddress': `${city}, ${resolvedCountry}`,
+        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+      console.log(`reverseGeocodeProfileLocation: ${context.params.userId} -> ${city}, ${resolvedCountry}`);
+      return null;
+    } catch (error: any) {
+      console.error('reverseGeocodeProfileLocation error:', error?.message || error);
+      return null;
+    }
+  });
