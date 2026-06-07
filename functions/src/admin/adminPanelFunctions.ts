@@ -294,7 +294,11 @@ export const sendPasswordResetEmail = functions.https.onCall(
     }
 
     try {
-      const link = await auth.generatePasswordResetLink(email);
+      const actionCodeSettings = {
+        url: 'https://greengo-chat.firebaseapp.com',
+        handleCodeInApp: false,
+      };
+      const link = await auth.generatePasswordResetLink(email, actionCodeSettings);
 
       await db.collection('admin_actions').add({
         action: 'send_password_reset',
@@ -939,8 +943,14 @@ export const sendPasswordResetViaResend = functions.https.onCall(
     console.log(`sendPasswordResetViaResend called for: ${email}`);
 
     try {
-      // Generate the Firebase password reset link
-      const resetLink = await auth.generatePasswordResetLink(email);
+      // Generate the Firebase password reset link. An explicit, authorized
+      // continue URL is required — without ActionCodeSettings the Admin SDK can
+      // throw "INTERNAL ASSERT FAILED: Unable to create the email action link".
+      const actionCodeSettings = {
+        url: 'https://greengo-chat.firebaseapp.com',
+        handleCodeInApp: false,
+      };
+      const resetLink = await auth.generatePasswordResetLink(email, actionCodeSettings);
 
       // Read Resend config
       const configDoc = await db.doc('app_config/resend_settings').get();
@@ -1021,9 +1031,20 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 
       return { success: true, emailSent: true };
     } catch (error: any) {
-      // Do not reveal if user exists or not — return success for security
-      if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-email') {
-        console.log(`sendPasswordResetViaResend: user not found for ${email}, returning silent success`);
+      // Do not reveal whether the account exists — return success for security.
+      // For an unregistered email the Admin SDK normally returns
+      // auth/user-not-found, but on generatePasswordResetLink it instead
+      // surfaces auth/internal-error ("Unable to create the email action link").
+      // Treat all of these "no deliverable account" cases as a silent success.
+      const code = error?.errorInfo?.code || error?.code || '';
+      const message = error?.errorInfo?.message || error?.message || '';
+      if (
+        code === 'auth/user-not-found' ||
+        code === 'auth/invalid-email' ||
+        code === 'auth/internal-error' ||
+        message.includes('Unable to create the email action link')
+      ) {
+        console.log(`sendPasswordResetViaResend: no deliverable account for ${email}, returning silent success`);
         return { success: true, emailSent: true };
       }
       console.error('Error sending password reset email:', error);
