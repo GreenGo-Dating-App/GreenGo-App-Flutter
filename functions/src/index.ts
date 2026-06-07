@@ -382,4 +382,5 @@ export {
   cleanupOrphanedAuthUser,
   sendWelcomeEmail,
   sendPasswordResetViaResend,
+  reverseGeocodeProfileLocation,
 } from './admin/adminPanelFunctions';
