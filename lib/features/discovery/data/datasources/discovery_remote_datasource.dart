@@ -140,6 +140,26 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     debugPrint('[Discovery] All caches cleared');
   }
 
+  /// A profile is treated as having no usable location when it has neither a
+  /// real country nor real coordinates (e.g. registration/onboarding never
+  /// finished). Such profiles must NOT be discoverable by other users.
+  /// Admin/support are exempt and handled by the caller.
+  bool _hasNoUsableLocation(Profile p) {
+    final loc = p.effectiveLocation;
+    final country = loc.country.trim().toLowerCase();
+    final noCountry = country.isEmpty || country == 'unknown';
+    final noCoords = loc.latitude == 0 && loc.longitude == 0;
+    return noCountry || noCoords;
+  }
+
+  /// A profile is treated as having no usable name when its display name is
+  /// empty or the placeholder 'Unknown'/'Unknown User' (e.g. registration never
+  /// finished). Such profiles must NOT be discoverable by other users.
+  bool _hasNoUsableName(Profile p) {
+    final name = p.displayName.trim().toLowerCase();
+    return name.isEmpty || name == 'unknown' || name == 'unknown user';
+  }
+
   @override
   Future<List<MatchCandidate>> getDiscoveryStack({
     required String userId,
@@ -269,11 +289,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       if (preferences.preferredCountries.isNotEmpty) {
         filteredCandidates = filteredCandidates.where((candidate) {
           final country = candidate.profile.effectiveLocation.country;
-          // Keep profiles with unknown/empty location discoverable even when a
-          // country filter is active (otherwise users who haven't set a
-          // location are invisible to everyone).
+          // Profiles with unknown/empty location are not discoverable to other
+          // users (they're dropped later in the per-candidate loop too); exclude
+          // them here so they don't consume worldwide-fallback slots.
           if (country.isEmpty || country == 'Unknown') {
-            return true;
+            return false;
           }
           final matches = preferences.preferredCountries
               .map((c) => c.toLowerCase())
@@ -472,6 +492,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Skip test users — testers should never be visible to regular users
       if (!isCurrentUserPrivileged &&
           candidateProfile.membershipTier == MembershipTier.test) {
+        continue;
+      }
+
+      // Skip profiles with no usable name OR location — users who haven't set a
+      // name or location (e.g. incomplete onboarding) are not discoverable to
+      // others. Admin/support viewers and admin/support candidates are exempt.
+      if (!isCurrentUserPrivileged &&
+          !isPrivileged &&
+          (_hasNoUsableName(candidateProfile) ||
+              _hasNoUsableLocation(candidateProfile))) {
         continue;
       }
 
