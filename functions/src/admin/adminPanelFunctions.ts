@@ -920,6 +920,122 @@ export const sendWelcomeEmail = functions.https.onCall(
 // ORPHANED AUTH USER CLEANUP
 // =============================================================================
 
+// =============================================================================
+// PASSWORD RESET VIA RESEND (branded email for regular users)
+// =============================================================================
+
+/**
+ * Send a branded password reset email via Resend.
+ * No admin auth required — called from the forgot password screen.
+ */
+export const sendPasswordResetViaResend = functions.https.onCall(
+  async (data: any, _context: functions.https.CallableContext) => {
+    const { email } = data;
+
+    if (!email || typeof email !== 'string') {
+      throw new functions.https.HttpsError('invalid-argument', 'email is required');
+    }
+
+    console.log(`sendPasswordResetViaResend called for: ${email}`);
+
+    try {
+      // Generate the Firebase password reset link
+      const resetLink = await auth.generatePasswordResetLink(email);
+
+      // Read Resend config
+      const configDoc = await db.doc('app_config/resend_settings').get();
+      const resendConfig = configDoc.data();
+      const resendApiKey = resendConfig?.apiKey;
+
+      if (!resendApiKey) {
+        console.warn('Resend API key not configured. Password reset email not sent via Resend.');
+        return { success: true, emailSent: false, message: 'Password reset email not sent (email not configured)' };
+      }
+
+      const senderEmail = resendConfig?.senderEmail || 'onboarding@resend.dev';
+      const senderName = resendConfig?.senderName || 'GreenGo';
+
+      const emailResponse = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${resendApiKey}`,
+        },
+        body: JSON.stringify({
+          from: `${senderName} <${senderEmail}>`,
+          to: [email],
+          subject: 'Reset Your GreenGo Password',
+          html: `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0A0A0A; color: #FFFFFF; padding: 40px; margin: 0; }
+                .container { max-width: 500px; margin: 0 auto; background: #1A1A1A; border-radius: 16px; padding: 40px; border: 1px solid #2A2A2A; }
+                .header { text-align: center; margin-bottom: 30px; }
+                .logo { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #D4AF37, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+                .content { color: rgba(255,255,255,0.8); line-height: 1.8; text-align: center; }
+                .highlight { color: #FFD700; font-weight: bold; }
+                .divider { border: none; border-top: 1px solid #2A2A2A; margin: 25px 0; }
+                .reset-btn { display: inline-block; background: linear-gradient(135deg, #D4AF37, #FFD700); color: #0A0A0A; font-weight: bold; font-size: 16px; padding: 14px 40px; border-radius: 12px; text-decoration: none; margin: 20px 0; }
+                .link-fallback { color: rgba(255,255,255,0.5); font-size: 12px; word-break: break-all; }
+                .warning { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 20px; }
+                .footer { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.4); font-size: 12px; }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <div class="logo">GreenGo</div>
+                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Password Reset</p>
+                </div>
+                <div class="content">
+                  <p>We received a request to reset your <span class="highlight">GreenGo</span> password.</p>
+                  <p>Click the button below to set a new password:</p>
+                  <hr class="divider">
+                  <a href="${resetLink}" class="reset-btn">Reset Password</a>
+                  <hr class="divider">
+                  <p class="warning">This link will expire in 1 hour for security reasons.</p>
+                  <p class="warning">If you didn't request a password reset, you can safely ignore this email.</p>
+                  <p class="link-fallback">If the button doesn't work, copy and paste this link into your browser:<br>${resetLink}</p>
+                </div>
+                <div class="footer">
+                  <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
+                </div>
+              </div>
+            </body>
+            </html>
+          `,
+        }),
+      });
+
+      const emailResponseText = await emailResponse.text();
+      console.log(`Resend password reset email response [${emailResponse.status}]:`, emailResponseText);
+
+      if (!emailResponse.ok) {
+        console.error('Resend password reset email error:', emailResponseText);
+        return { success: true, emailSent: false, message: 'Password reset email failed to send' };
+      }
+
+      return { success: true, emailSent: true };
+    } catch (error: any) {
+      // Do not reveal if user exists or not — return success for security
+      if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-email') {
+        console.log(`sendPasswordResetViaResend: user not found for ${email}, returning silent success`);
+        return { success: true, emailSent: true };
+      }
+      console.error('Error sending password reset email:', error);
+      throw new functions.https.HttpsError('internal', 'Failed to send password reset email');
+    }
+  }
+);
+
+// =============================================================================
+// ORPHANED AUTH USER CLEANUP
+// =============================================================================
+
 export const cleanupOrphanedAuthUser = functions.https.onCall(
   async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;

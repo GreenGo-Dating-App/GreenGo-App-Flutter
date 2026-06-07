@@ -381,4 +381,5 @@ export {
   onSupportMessageCreated,
   cleanupOrphanedAuthUser,
   sendWelcomeEmail,
+  sendPasswordResetViaResend,
 } from './admin/adminPanelFunctions';
