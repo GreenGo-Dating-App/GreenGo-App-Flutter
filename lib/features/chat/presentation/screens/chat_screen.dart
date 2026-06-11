@@ -9,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -29,6 +30,10 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../discovery/domain/entities/match.dart';
 import '../../../discovery/presentation/screens/match_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -117,6 +122,9 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Grammar correction
   Map<String, dynamic>? _grammarResult;
+
+  // One-time chat gesture mini-tour (hold to translate / double-tap to hear)
+  bool _chatTourChecked = false;
   bool _showGrammarBanner = false;
 
   final ChatLearningService _learningService = ChatLearningService();
@@ -1668,7 +1676,8 @@ class _ChatScreenState extends State<ChatScreen> {
       },
       child: BlocProvider.value(
         value: _chatBloc,
-        child: Scaffold(
+        child: ShowCaseWidget(
+          builder: (showcaseContext) => Scaffold(
           backgroundColor: AppColors.backgroundDark,
           appBar: _buildAppBar(),
         body: Column(
@@ -1791,6 +1800,28 @@ class _ChatScreenState extends State<ChatScreen> {
                     final hasMoreMessages = messages.length >= _messageLimit;
                     final extraItems = (isOtherUserTyping ? 1 : 0) + (hasMoreMessages ? 1 : 0);
 
+                    // One-time gesture mini-tour: anchor on the newest
+                    // received text message (hold = translate menu,
+                    // double-tap = pronunciation).
+                    final tourBubbleIndex = messages.indexWhere((m) =>
+                        m.senderId != widget.currentUserId &&
+                        m.type == MessageType.text);
+                    if (tourBubbleIndex != -1 && !_chatTourChecked) {
+                      _chatTourChecked = true;
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        if (!mounted) return;
+                        TourController.instance.maybeStartMiniTour(
+                          context,
+                          tourId: TourController.chatTourId,
+                          userId: widget.currentUserId,
+                          keys: [
+                            TourKeys.chatBubbleHold,
+                            TourKeys.chatBubbleDoubleTap,
+                          ],
+                        );
+                      });
+                    }
+
                     return ListView.builder(
                       controller: _scrollController,
                       reverse: true,
@@ -1835,7 +1866,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           future: _translateMessage(message),
                           builder: (context, snapshot) {
                             final translatedMessage = snapshot.data ?? message;
-                            return MessageBubble(
+                            final bubble = MessageBubble(
                               message: translatedMessage,
                               isCurrentUser:
                                   message.senderId == widget.currentUserId,
@@ -1858,6 +1889,27 @@ class _ChatScreenState extends State<ChatScreen> {
                               onForward: (msg) => _showForwardDialog(context, msg),
                               onAlbumTap: _onAlbumMessageTapped,
                             );
+                            if (messageIndex == tourBubbleIndex) {
+                              final l10n = AppLocalizations.of(context)!;
+                              return TourShowcase(
+                                showcaseKey: TourKeys.chatBubbleHold,
+                                title: l10n.tourChatHoldTitle,
+                                description: l10n.tourChatHoldDesc,
+                                gesture: TourGesture.longPress,
+                                interactive: true,
+                                targetBorderRadius: BorderRadius.circular(16),
+                                child: TourShowcase(
+                                  showcaseKey: TourKeys.chatBubbleDoubleTap,
+                                  title: l10n.tourChatDoubleTapTitle,
+                                  description: l10n.tourChatDoubleTapDesc,
+                                  gesture: TourGesture.doubleTap,
+                                  interactive: true,
+                                  targetBorderRadius: BorderRadius.circular(16),
+                                  child: bubble,
+                                ),
+                              );
+                            }
+                            return bubble;
                           },
                         );
                       },
@@ -1924,6 +1976,7 @@ class _ChatScreenState extends State<ChatScreen> {
             // Input field
             _buildInputField(context),
           ],
+        ),
         ),
         ),
       ),

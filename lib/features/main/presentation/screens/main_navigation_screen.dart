@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -24,7 +25,10 @@ import '../../../../core/widgets/membership_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 // App Tour imports
-import '../../../app_tour/presentation/widgets/tour_overlay.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
@@ -128,8 +132,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   GamificationBloc? _gamificationBloc;
 
   // App tour state
-  bool _showTour = false;
-  static const String _tourPrefKey = 'has_completed_app_tour';
+  BuildContext? _showcaseContext;
+  bool _tourPending = false; // true from init until the tour starts or aborts
+  VoidCallback? _pendingPostTourDialog; // dialog deferred until tour ends
 
   // Hourly usage counters for discovery
   int _likeUsage = 0;
@@ -243,31 +248,148 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Direct Firestore check for trial welcome popup (fallback if BlocListener doesn't fire)
     _checkBaseMembershipDirect();
 
-    // Check if app tour should be shown
-    _checkAppTour();
+    // First-launch gesture tour: _tourPending makes the membership/trial
+    // dialogs defer until the tour decision is made (see _showOrDeferDialog).
+    _tourPending = true;
+    TourController.shouldShowMainTour(widget.userId).then((show) {
+      if (!show) {
+        _tourPending = false;
+        _flushPendingPostTourDialog();
+      }
+    });
 
     // Start live Firestore listeners for badge counts
     _startBadgeCountListeners();
   }
 
-  Future<void> _checkAppTour() async {
-    // App tour disabled
-    return;
+  /// Starts the first-launch gesture tour once the main UI is up.
+  /// Called from _initializeAppState after profile/access checks complete.
+  Future<void> _maybeStartTour() async {
+    if (!mounted || !_tourPending) return;
+
+    final isAdminOrTest = _isAdmin ||
+        (_accessData?.isAdmin ?? false) ||
+        (_accessData?.isTestUser ?? false);
+    final blocked = !isAdminOrTest &&
+        ((_accessData?.isCountdownActive ?? false) || _showCachedCountdown);
+    if (blocked || !await TourController.shouldShowMainTour(widget.userId)) {
+      _tourPending = false;
+      _flushPendingPostTourDialog();
+      return;
+    }
+
+    // Give the discovery grid a few seconds to load its first cards so the
+    // card gesture steps can anchor to a real card; start anyway after that
+    // (the card steps are skipped automatically when no card is mounted).
+    for (var i = 0; i < 4; i++) {
+      await Future.delayed(const Duration(milliseconds: 1200));
+      if (!mounted) return;
+      if (TourKeys.firstCard.currentContext != null) break;
+    }
+    if (!mounted || _showcaseContext == null) {
+      _tourPending = false;
+      _flushPendingPostTourDialog();
+      return;
+    }
+
+    if (_currentIndex != 0) setState(() => _currentIndex = 0);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || _showcaseContext == null) {
+        _tourPending = false;
+        _flushPendingPostTourDialog();
+        return;
+      }
+      _tourPending = false;
+      final started = TourController.instance.startMainTour(
+        _showcaseContext!,
+        userId: widget.userId,
+        onEnded: _onTourEnded,
+      );
+      if (!started) _flushPendingPostTourDialog();
+    });
   }
 
-  Future<void> _completeTour() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_tourPrefKey, true);
-    if (mounted) {
-      setState(() {
-        _showTour = false;
-        _currentIndex = 0; // Redirect to Exchange tab after tour
-      });
+  void _onTourEnded(bool completed) {
+    if (!mounted) return;
+    if (!completed) {
+      _flushPendingPostTourDialog();
+      return;
+    }
+    final l10n = AppLocalizations.of(context);
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: AppColors.charcoal,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+          side: const BorderSide(color: AppColors.richGold, width: 1.5),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.celebration, color: AppColors.richGold, size: 48),
+              const SizedBox(height: 16),
+              Text(
+                l10n?.tourFinishTitle ?? "You're all set!",
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                l10n?.tourFinishDesc ??
+                    'Enjoy discovering new people and cultures.',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 15,
+                  height: 1.5,
+                ),
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: Text(
+                    l10n?.tourDone ?? 'Done',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ).then((_) => _flushPendingPostTourDialog());
+  }
+
+  /// Runs [action] now, or after the tour when one is pending/active.
+  void _showOrDeferDialog(VoidCallback action) {
+    if (_tourPending || TourController.instance.isMainTourActive) {
+      _pendingPostTourDialog = action;
+    } else {
+      action();
     }
   }
 
-  void _skipTour() {
-    _completeTour();
+  void _flushPendingPostTourDialog() {
+    final pending = _pendingPostTourDialog;
+    _pendingPostTourDialog = null;
+    if (pending != null && mounted) pending();
   }
 
   /// Initialize app state: profile check + countdown + access data in parallel
@@ -284,6 +406,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       setState(() {
         _isCheckingProfile = false;
       });
+      // Main UI is up — start the first-launch gesture tour if due
+      _maybeStartTour();
     }
   }
 
@@ -306,15 +430,22 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (profile.isBaseMembershipActive && profile.baseMembershipEndDate != null) {
       // Delay to ensure the widget tree is fully built before showing dialog
       Future.delayed(const Duration(milliseconds: 800), () {
-        if (mounted) _showTrialWelcomeDialog(profile.baseMembershipEndDate!);
+        if (mounted) {
+          _showOrDeferDialog(
+              () => _showTrialWelcomeDialog(profile.baseMembershipEndDate!));
+        }
       });
       return;
     }
 
-    // No active membership — show purchase dialog
+    // No active membership — show purchase dialog (after the tour, if running)
     Future.delayed(const Duration(milliseconds: 800), () {
       if (mounted) {
-        BaseMembershipDialog.show(context: context, userId: widget.userId);
+        _showOrDeferDialog(() {
+          if (mounted) {
+            BaseMembershipDialog.show(context: context, userId: widget.userId);
+          }
+        });
       }
     });
   }
@@ -424,10 +555,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       _membershipCheckDone = true;
 
       if (isActive) {
-        if (mounted) _showTrialWelcomeDialog(endDate);
+        if (mounted) {
+          _showOrDeferDialog(() {
+            if (mounted) _showTrialWelcomeDialog(endDate);
+          });
+        }
       } else {
         if (mounted) {
-          BaseMembershipDialog.show(context: context, userId: widget.userId);
+          _showOrDeferDialog(() {
+            if (mounted) {
+              BaseMembershipDialog.show(
+                  context: context, userId: widget.userId);
+            }
+          });
         }
       }
     } catch (e) {
@@ -1204,22 +1344,50 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.discover,
             ),
             BottomNavigationBarItem(
-              icon: _buildBadgeIcon(Icons.forum_outlined, _unreadMessageCount),
+              icon: TourShowcase(
+                showcaseKey: TourKeys.navMessages,
+                title: AppLocalizations.of(context)!.tourNavMessagesTitle,
+                description: AppLocalizations.of(context)!.tourNavMessagesDesc,
+                gesture: TourGesture.tap,
+                targetPadding: const EdgeInsets.all(6),
+                child: _buildBadgeIcon(Icons.forum_outlined, _unreadMessageCount),
+              ),
               activeIcon: _buildBadgeIcon(Icons.forum, _unreadMessageCount),
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.leaderboard_outlined),
+              icon: TourShowcase(
+                showcaseKey: TourKeys.navLeaderboard,
+                title: AppLocalizations.of(context)!.tourNavLeaderboardTitle,
+                description: AppLocalizations.of(context)!.tourNavLeaderboardDesc,
+                gesture: TourGesture.tap,
+                targetPadding: const EdgeInsets.all(6),
+                child: const Icon(Icons.leaderboard_outlined),
+              ),
               activeIcon: const Icon(Icons.leaderboard),
               label: AppLocalizations.of(context)!.leaderboardTitle,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.store_outlined),
+              icon: TourShowcase(
+                showcaseKey: TourKeys.navShop,
+                title: AppLocalizations.of(context)!.tourNavShopTitle,
+                description: AppLocalizations.of(context)!.tourNavShopDesc,
+                gesture: TourGesture.tap,
+                targetPadding: const EdgeInsets.all(6),
+                child: const Icon(Icons.store_outlined),
+              ),
               activeIcon: const Icon(Icons.store),
               label: AppLocalizations.of(context)!.shop,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.person_outline),
+              icon: TourShowcase(
+                showcaseKey: TourKeys.navProfile,
+                title: AppLocalizations.of(context)!.tourNavProfileTitle,
+                description: AppLocalizations.of(context)!.tourNavProfileDesc,
+                gesture: TourGesture.tap,
+                targetPadding: const EdgeInsets.all(6),
+                child: const Icon(Icons.person_outline),
+              ),
               activeIcon: const Icon(Icons.person),
               label: AppLocalizations.of(context)!.profile,
             ),
@@ -1229,8 +1397,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     );
 
     // Wrap with red border if admin is logged in
-    // Also wrap with PopScope to handle back button
-    return PopScope(
+    // Also wrap with PopScope to handle back button.
+    // ShowCaseWidget hosts the first-launch gesture tour overlays.
+    return ShowCaseWidget(
+      onFinish: () => TourController.instance.handleMainTourFinish(),
+      builder: (showcaseContext) {
+        _showcaseContext = showcaseContext;
+        return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, result) async {
         if (didPop) return;
@@ -1368,6 +1541,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               : _buildMainContent(scaffold, isPreLaunchBlocked),
         ),
       ),
+        );
+      },
     );
   }
 
@@ -1394,31 +1569,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       );
     }
 
-    return Stack(
-        children: [
-          if (_isAdmin) Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: AppColors.errorRed,
-                      width: 4,
-                    ),
-                  ),
-                  child: scaffold,
-                ) else scaffold,
-
-          // App Tour Overlay
-          if (_showTour)
-            TourOverlay(
-              onComplete: _completeTour,
-              onSkip: _skipTour,
-              onTabChange: (tabIndex) {
-                setState(() {
-                  _currentIndex = tabIndex;
-                });
-              },
-            ),
-        ],
-    );
+    if (_isAdmin) {
+      return Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: AppColors.errorRed,
+            width: 4,
+          ),
+        ),
+        child: scaffold,
+      );
+    }
+    return scaffold;
   }
 
   PreferredSizeWidget? _buildAppBar() {
@@ -1433,71 +1595,109 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         title: Row(
           children: [
             const SizedBox(width: 4),
-            IconButton(
-              icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const AppGuideScreen()),
-                );
-              },
-              tooltip: AppLocalizations.of(context)!.guideTitle,
-              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-              padding: EdgeInsets.zero,
+            TourShowcase(
+              showcaseKey: TourKeys.help,
+              title: l10n.tourHelpTitle,
+              description: l10n.tourHelpDesc,
+              gesture: TourGesture.tap,
+              targetShapeBorder: const CircleBorder(),
+              child: IconButton(
+                icon: const Icon(Icons.help_outline, color: AppColors.textSecondary, size: 22),
+                onPressed: _openAppGuide,
+                tooltip: AppLocalizations.of(context)!.guideTitle,
+                constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+                padding: EdgeInsets.zero,
+              ),
             ),
             const SizedBox(width: 4),
-            _buildAppBarCoinBalance(),
+            TourShowcase(
+              showcaseKey: TourKeys.coins,
+              title: l10n.tourCoinsTitle,
+              description: l10n.tourCoinsDesc,
+              gesture: TourGesture.tap,
+              targetBorderRadius: BorderRadius.circular(16),
+              child: _buildAppBarCoinBalance(),
+            ),
           ],
         ),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
           // 3D Globe explore
-          IconButton(
-            icon: const Icon(Icons.public, color: AppColors.textSecondary, size: 22),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) => BlocProvider(
-                    create: (_) => di.sl<GlobeBloc>(),
-                    child: GlobeScreen(userId: widget.userId),
+          TourShowcase(
+            showcaseKey: TourKeys.globe,
+            title: l10n.tourGlobeTitle,
+            description: l10n.tourGlobeDesc,
+            gesture: TourGesture.tap,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: const Icon(Icons.public, color: AppColors.textSecondary, size: 22),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => BlocProvider(
+                      create: (_) => di.sl<GlobeBloc>(),
+                      child: GlobeScreen(userId: widget.userId),
+                    ),
                   ),
-                ),
-              );
-            },
-            tooltip: 'Explore Globe',
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-            padding: EdgeInsets.zero,
-          ),
-          IconButton(
-            icon: const Icon(Icons.search, color: AppColors.textSecondary, size: 22),
-            onPressed: _showNicknameSearch,
-            tooltip: AppLocalizations.of(context)!.searchByNicknameTooltip,
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-            padding: EdgeInsets.zero,
-          ),
-          IconButton(
-            icon: const Icon(Icons.tune, color: AppColors.textSecondary, size: 22),
-            onPressed: _openDiscoveryPreferences,
-            tooltip: AppLocalizations.of(context)!.discoveryPreferencesTooltip,
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-            padding: EdgeInsets.zero,
-          ),
-          IconButton(
-            icon: Icon(
-              (_discoveryKey.currentState?.isGridMode ?? true)
-                  ? Icons.swipe
-                  : Icons.grid_view,
-              color: AppColors.textSecondary,
-              size: 22,
+                );
+              },
+              tooltip: 'Explore Globe',
+              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              padding: EdgeInsets.zero,
             ),
-            onPressed: () {
-              _discoveryKey.currentState?.toggleGridMode();
-            },
-            tooltip: (_discoveryKey.currentState?.isGridMode ?? true)
-                ? AppLocalizations.of(context)!.discoverySwitchToSwipe
-                : AppLocalizations.of(context)!.discoverySwitchToGrid,
-            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
-            padding: EdgeInsets.zero,
+          ),
+          TourShowcase(
+            showcaseKey: TourKeys.search,
+            title: l10n.tourSearchTitle,
+            description: l10n.tourSearchDesc,
+            gesture: TourGesture.tap,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: const Icon(Icons.search, color: AppColors.textSecondary, size: 22),
+              onPressed: _showNicknameSearch,
+              tooltip: AppLocalizations.of(context)!.searchByNicknameTooltip,
+              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              padding: EdgeInsets.zero,
+            ),
+          ),
+          TourShowcase(
+            showcaseKey: TourKeys.preferences,
+            title: l10n.tourPrefsTitle,
+            description: l10n.tourPrefsDesc,
+            gesture: TourGesture.tap,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: const Icon(Icons.tune, color: AppColors.textSecondary, size: 22),
+              onPressed: _openDiscoveryPreferences,
+              tooltip: AppLocalizations.of(context)!.discoveryPreferencesTooltip,
+              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              padding: EdgeInsets.zero,
+            ),
+          ),
+          TourShowcase(
+            showcaseKey: TourKeys.modeToggle,
+            title: l10n.tourModeToggleTitle,
+            description: l10n.tourModeToggleDesc,
+            gesture: TourGesture.swipeRight,
+            targetShapeBorder: const CircleBorder(),
+            child: IconButton(
+              icon: Icon(
+                (_discoveryKey.currentState?.isGridMode ?? true)
+                    ? Icons.swipe
+                    : Icons.grid_view,
+                color: AppColors.textSecondary,
+                size: 22,
+              ),
+              onPressed: () {
+                _discoveryKey.currentState?.toggleGridMode();
+              },
+              tooltip: (_discoveryKey.currentState?.isGridMode ?? true)
+                  ? AppLocalizations.of(context)!.discoverySwitchToSwipe
+                  : AppLocalizations.of(context)!.discoverySwitchToGrid,
+              constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+              padding: EdgeInsets.zero,
+            ),
           ),
           const SizedBox(width: 4),
         ],
@@ -1545,6 +1745,27 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   void _showNicknameSearch() {
     NicknameSearchDialog.show(context, widget.userId);
+  }
+
+  /// Opens the app guide; restarts the gesture tour when the user taps
+  /// "Replay tutorial" there.
+  Future<void> _openAppGuide() async {
+    final result = await Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const AppGuideScreen()),
+    );
+    if (result == AppGuideScreen.replayTourResult && mounted) {
+      await TourController.resetAllTours(widget.userId);
+      if (!mounted) return;
+      setState(() => _currentIndex = 0);
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted || _showcaseContext == null) return;
+        TourController.instance.startMainTour(
+          _showcaseContext!,
+          userId: widget.userId,
+          onEnded: _onTourEnded,
+        );
+      });
+    }
   }
 
   Widget _buildNotificationButton() {

@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -9,6 +10,10 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
@@ -55,6 +60,22 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     super.initState();
     _loadPhotoLikes();
     _setupVoicePlayer();
+
+    // One-time double-tap-to-like hint when viewing someone else's photos
+    if (widget.currentUserId != widget.profile.userId &&
+        widget.profile.photoUrls.isNotEmpty) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        final ctx = TourKeys.detailPhotoDoubleTap.currentContext;
+        if (ctx == null) return;
+        TourController.instance.maybeStartMiniTour(
+          ctx,
+          tourId: TourController.profileDetailTourId,
+          userId: widget.currentUserId,
+          keys: [TourKeys.detailPhotoDoubleTap],
+        );
+      });
+    }
   }
 
   void _setupVoicePlayer() {
@@ -235,7 +256,8 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           SafeNavigation.navigateToHome(context, widget.currentUserId);
         }
       },
-      child: Scaffold(
+      child: ShowCaseWidget(
+        builder: (showcaseContext) => Scaffold(
         backgroundColor: AppColors.backgroundDark,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -567,6 +589,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         ],
       ),
       ),
+      ),
     );
   }
 
@@ -627,7 +650,13 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     return Stack(
       children: [
         // Photos with double-tap to like
-        GestureDetector(
+        TourShowcase(
+          showcaseKey: TourKeys.detailPhotoDoubleTap,
+          title: AppLocalizations.of(context)!.tourDetailDoubleTapTitle,
+          description: AppLocalizations.of(context)!.tourDetailDoubleTapDesc,
+          gesture: TourGesture.doubleTap,
+          interactive: true,
+          child: GestureDetector(
           onDoubleTap: _togglePhotoLike,
           child: PageView.builder(
             controller: _pageController,
@@ -646,6 +675,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               );
             },
           ),
+        ),
         ),
 
         // Like animation (heart that appears on double-tap)

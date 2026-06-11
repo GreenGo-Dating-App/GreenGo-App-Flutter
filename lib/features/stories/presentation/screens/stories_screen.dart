@@ -6,6 +6,8 @@ import 'package:video_player/video_player.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../domain/entities/story.dart';
 
 /// Stories Screen - Instagram-like 24-hour stories
@@ -34,6 +36,9 @@ class _StoriesScreenState extends State<StoriesScreen>
   VideoPlayerController? _videoController;
   bool _isPaused = false;
 
+  // One-time "hold to pause" hint on the very first story view
+  bool _showHoldHint = false;
+
   @override
   void initState() {
     super.initState();
@@ -46,6 +51,17 @@ class _StoriesScreenState extends State<StoriesScreen>
     );
     _progressController.addStatusListener(_onProgressComplete);
     _startStory();
+
+    TourController.shouldShowOnce(
+            TourController.storyTourId, widget.currentUserId)
+        .then((show) {
+      if (show && mounted) {
+        setState(() => _showHoldHint = true);
+        Future.delayed(const Duration(seconds: 5), () {
+          if (mounted) setState(() => _showHoldHint = false);
+        });
+      }
+    });
   }
 
   void _onProgressComplete(AnimationStatus status) {
@@ -216,6 +232,42 @@ class _StoriesScreenState extends State<StoriesScreen>
                 return _buildStoryContent(currentStory);
               },
             ),
+
+            // One-time "hold to pause" gesture hint
+            if (_showHoldHint)
+              Positioned(
+                bottom: 96,
+                left: 0,
+                right: 0,
+                child: Center(
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.7),
+                      borderRadius: BorderRadius.circular(24),
+                      border: Border.all(
+                          color: AppColors.richGold.withOpacity(0.6)),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const GestureGlyph(
+                            gesture: TourGesture.longPress, size: 28),
+                        const SizedBox(width: 10),
+                        Text(
+                          l10n.tourStoryHoldHint,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
 
             // Progress Indicators
             Positioned(
