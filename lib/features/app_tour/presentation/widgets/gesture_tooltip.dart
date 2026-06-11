@@ -1,39 +1,35 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../tour_controller.dart';
 import 'gesture_glyphs.dart';
 
 /// Custom tooltip used by every tour step (via [Showcase.withWidget]).
 ///
 /// Shows an animated gesture glyph, title, description, step counter and
-/// Skip / Next actions. When [interactive] is true the Next button becomes a
-/// pulsing "Try it!" hint and the step only advances when the user performs
-/// the gesture on the highlighted target.
+/// Skip / Next actions. The step counter is resolved from [TourController]
+/// at build time — the overlay rebuilds this widget when each step is
+/// shown, so numbering stays correct even though the underlying screens
+/// (cached in an IndexedStack) don't rebuild when the tour starts.
 class GestureTooltip extends StatelessWidget {
   const GestureTooltip({
+    required this.showcaseKey,
     required this.title,
     required this.description,
     required this.gesture,
-    required this.stepIndex,
-    required this.stepCount,
     required this.onSkip,
-    this.onNext,
-    this.interactive = false,
-    this.tryItLabel = 'Try it!',
+    required this.onNext,
     this.nextLabel = 'Next',
     this.skipLabel = 'Skip',
     super.key,
   });
 
+  final GlobalKey showcaseKey;
   final String title;
   final String description;
   final TourGesture gesture;
-  final int stepIndex;
-  final int stepCount;
   final VoidCallback onSkip;
-  final VoidCallback? onNext;
-  final bool interactive;
-  final String tryItLabel;
+  final VoidCallback onNext;
   final String nextLabel;
   final String skipLabel;
 
@@ -42,6 +38,8 @@ class GestureTooltip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final (stepIndex, stepCount) =
+        TourController.instance.stepNumberFor(showcaseKey);
     return Material(
       color: Colors.transparent,
       child: Container(
@@ -93,13 +91,14 @@ class GestureTooltip extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               children: [
-                Text(
-                  '$stepIndex/$stepCount',
-                  style: const TextStyle(
-                    color: AppColors.textTertiary,
-                    fontSize: 12,
+                if (stepCount > 0)
+                  Text(
+                    '$stepIndex/$stepCount',
+                    style: const TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 12,
+                    ),
                   ),
-                ),
                 const Spacer(),
                 TextButton(
                   onPressed: onSkip,
@@ -111,79 +110,28 @@ class GestureTooltip extends StatelessWidget {
                   child: Text(skipLabel, style: const TextStyle(fontSize: 13)),
                 ),
                 const SizedBox(width: 4),
-                if (interactive)
-                  _TryItPill(label: tryItLabel)
-                else
-                  ElevatedButton(
-                    onPressed: onNext,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.richGold,
-                      foregroundColor: AppColors.deepBlack,
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      minimumSize: const Size(0, 34),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    child: Text(
-                      nextLabel,
-                      style: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.bold,
-                      ),
+                ElevatedButton(
+                  onPressed: onNext,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    minimumSize: const Size(0, 34),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
+                  child: Text(
+                    nextLabel,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-/// Pulsing pill shown instead of the Next button on interactive steps.
-class _TryItPill extends StatefulWidget {
-  const _TryItPill({required this.label});
-
-  final String label;
-
-  @override
-  State<_TryItPill> createState() => _TryItPillState();
-}
-
-class _TryItPillState extends State<_TryItPill>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _controller = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 900),
-  )..repeat(reverse: true);
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return FadeTransition(
-      opacity: Tween<double>(begin: 0.55, end: 1).animate(
-        CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
-      ),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: AppColors.richGold, width: 1.2),
-        ),
-        child: Text(
-          widget.label,
-          style: const TextStyle(
-            color: AppColors.richGold,
-            fontSize: 13,
-            fontWeight: FontWeight.bold,
-          ),
         ),
       ),
     );

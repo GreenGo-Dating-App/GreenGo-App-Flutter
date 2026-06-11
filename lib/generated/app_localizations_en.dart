@@ -9,9 +9,6 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get tourTryIt => 'Try it!';
-
-  @override
   String get tourGotIt => 'Got it';
 
   @override
@@ -19,14 +16,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourWelcomeDesc =>
-      'This is your Discovery grid â€” real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.';
+      'This is your Discovery grid — real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.';
 
   @override
   String get tourCardTapTitle => 'Tap a card';
 
   @override
   String get tourCardTapDesc =>
-      'Tap the center of a card to open the action menu â€” like, super-like, or view their full profile. Try tapping the highlighted card!';
+      'Tap the center of a card to open the action menu — like, super-like, or view their full profile.';
 
   @override
   String get tourCardEdgeTitle => 'Browse photos';
@@ -40,7 +37,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourCardHoldDesc =>
-      'Press and hold a card to preview photos full-screen. Try holding the highlighted card!';
+      'Press and hold a card to preview photos full-screen.';
 
   @override
   String get tourRefreshTitle => 'Pull to refresh';
@@ -61,7 +58,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourGlobeDesc =>
-      'Open the 3D globe to discover people all around the world â€” not just nearby.';
+      'Open the 3D globe to discover people all around the world — not just nearby.';
 
   @override
   String get tourSearchTitle => 'Find by nickname';
@@ -89,14 +86,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourHelpDesc =>
-      'The app guide lives here â€” including this tutorial, which you can replay anytime.';
+      'The app guide lives here — including this tutorial, which you can replay anytime.';
 
   @override
   String get tourNavMessagesTitle => 'Messages';
 
   @override
   String get tourNavMessagesDesc =>
-      'Chat without language barriers â€” hold any message to translate it, double-tap to hear it spoken.';
+      'Chat without language barriers — hold any message to translate it, double-tap to hear it spoken.';
 
   @override
   String get tourNavLeaderboardTitle => 'Leaderboard';
@@ -143,7 +140,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourChatHoldDesc =>
-      'Press and hold any message to translate, copy or forward it. Try holding the highlighted message!';
+      'Press and hold any message to translate, copy or forward it.';
 
   @override
   String get tourChatDoubleTapTitle => 'Hear it spoken';
@@ -151,6 +148,20 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tourChatDoubleTapDesc =>
       'Double-tap a received message to hear its pronunciation.';
+
+  @override
+  String get tourChatLanguageTitle => 'Languages & learning';
+
+  @override
+  String get tourChatLanguageDesc =>
+      'Open the translate menu for language tools: translation settings, pronunciation practice and learning features.';
+
+  @override
+  String get tourChatSettingsTitle => 'Chat options';
+
+  @override
+  String get tourChatSettingsDesc =>
+      'Manage this conversation: chat settings, delete, block or report.';
 
   @override
   String get tourDetailDoubleTapTitle => 'Like a photo';

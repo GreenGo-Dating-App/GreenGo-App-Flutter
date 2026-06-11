@@ -655,7 +655,6 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           title: AppLocalizations.of(context)!.tourDetailDoubleTapTitle,
           description: AppLocalizations.of(context)!.tourDetailDoubleTapDesc,
           gesture: TourGesture.doubleTap,
-          interactive: true,
           child: GestureDetector(
           onDoubleTap: _togglePhotoLike,
           child: PageView.builder(

@@ -32,5 +32,7 @@ class TourKeys {
   // ── Tier 2: contextual mini-tours ──
   static final GlobalKey chatBubbleHold = GlobalKey(debugLabel: 'tour_chat_hold');
   static final GlobalKey chatBubbleDoubleTap = GlobalKey(debugLabel: 'tour_chat_double_tap');
+  static final GlobalKey chatLanguageMenu = GlobalKey(debugLabel: 'tour_chat_language_menu');
+  static final GlobalKey chatSettings = GlobalKey(debugLabel: 'tour_chat_settings');
   static final GlobalKey detailPhotoDoubleTap = GlobalKey(debugLabel: 'tour_detail_double_tap');
 }

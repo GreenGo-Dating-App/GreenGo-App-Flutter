@@ -7,11 +7,9 @@ import 'gesture_glyphs.dart';
 import 'gesture_tooltip.dart';
 
 /// Wraps a tour target in a [Showcase.withWidget] step with the GreenGo
-/// gesture tooltip.
-///
-/// When [interactive] is true the step advances only when the user performs
-/// [gesture] (tap / double-tap / long-press) on the highlighted target; the
-/// tooltip then shows a pulsing "Try it!" hint instead of a Next button.
+/// gesture tooltip. Every step advances via the Next button (tapping the
+/// highlighted target also advances — default showcase behavior); the
+/// animated [gesture] glyph in the tooltip demonstrates the interaction.
 class TourShowcase extends StatelessWidget {
   const TourShowcase({
     required this.showcaseKey,
@@ -19,7 +17,6 @@ class TourShowcase extends StatelessWidget {
     required this.description,
     required this.child,
     this.gesture = TourGesture.none,
-    this.interactive = false,
     this.targetBorderRadius,
     this.targetShapeBorder,
     this.targetPadding = EdgeInsets.zero,
@@ -32,7 +29,6 @@ class TourShowcase extends StatelessWidget {
   final String description;
   final Widget child;
   final TourGesture gesture;
-  final bool interactive;
   final BorderRadius? targetBorderRadius;
   final ShapeBorder? targetShapeBorder;
   final EdgeInsets targetPadding;
@@ -42,7 +38,6 @@ class TourShowcase extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final controller = TourController.instance;
-    final (stepIndex, stepCount) = controller.stepNumberFor(showcaseKey);
 
     void skip() {
       if (controller.isMainTourActive) {
@@ -51,14 +46,6 @@ class TourShowcase extends StatelessWidget {
         ShowCaseWidget.of(context).dismiss();
       }
     }
-
-    void advance() => controller.advance(context);
-
-    final interactiveTap = interactive && gesture == TourGesture.tap;
-    final interactiveLongPress =
-        interactive && gesture == TourGesture.longPress;
-    final interactiveDoubleTap =
-        interactive && gesture == TourGesture.doubleTap;
 
     return Showcase.withWidget(
       key: showcaseKey,
@@ -73,22 +60,15 @@ class TourShowcase extends StatelessWidget {
       tooltipPosition: tooltipPosition,
       disableBarrierInteraction: true,
       overlayOpacity: 0.8,
-      onTargetClick: interactiveTap ? advance : null,
-      disposeOnTap: interactiveTap ? false : null,
-      onTargetLongPress: interactiveLongPress ? advance : null,
-      onTargetDoubleTap: interactiveDoubleTap ? advance : null,
       container: GestureTooltip(
+        showcaseKey: showcaseKey,
         title: title,
         description: description,
         gesture: gesture,
-        stepIndex: stepIndex,
-        stepCount: stepCount,
-        interactive: interactive,
-        onNext: advance,
+        onNext: () => controller.advance(context),
         onSkip: skip,
         nextLabel: l10n?.tourNext ?? 'Next',
         skipLabel: l10n?.tourSkip ?? 'Skip',
-        tryItLabel: l10n?.tourTryIt ?? 'Try it!',
       ),
       child: child,
     );

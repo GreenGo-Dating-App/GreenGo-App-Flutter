@@ -1081,7 +1081,6 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                     title: tourL10n.tourCardTapTitle,
                     description: tourL10n.tourCardTapDesc,
                     gesture: TourGesture.tap,
-                    interactive: true,
                     targetBorderRadius: BorderRadius.circular(12),
                     child: TourShowcase(
                       showcaseKey: TourKeys.cardEdges,
@@ -1094,7 +1093,6 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                         title: tourL10n.tourCardHoldTitle,
                         description: tourL10n.tourCardHoldDesc,
                         gesture: TourGesture.longPress,
-                        interactive: true,
                         targetBorderRadius: BorderRadius.circular(12),
                         child: cardWidget,
                       ),

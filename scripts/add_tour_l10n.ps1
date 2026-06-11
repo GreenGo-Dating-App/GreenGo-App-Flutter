@@ -1,21 +1,22 @@
-# One-shot: insert gesture-tour l10n keys into all 7 arb files (after "@@locale" line).
-# Safe to re-run: skips files that already contain "tourTryIt".
+﻿# One-shot: insert gesture-tour l10n keys into all 7 arb files (after "@@locale" line).
+# Safe to re-run: skips files that already contain "tourChatLanguageTitle".
+# NOTE: this file MUST be saved as UTF-8 WITH BOM — PowerShell 5.1 parses
+# BOM-less scripts as ANSI and mangles every accent/em-dash into mojibake.
 
 $dir = "C:\Users\Software Engineering\Desktop\Projects\GreenGo\github-repo\GreenGo-App-Flutter\lib\l10n"
 
 $blocks = @{}
 
 $blocks['app_en.arb'] = @'
-  "tourTryIt": "Try it!",
   "tourGotIt": "Got it",
   "tourWelcomeTitle": "Welcome to GreenGo!",
   "tourWelcomeDesc": "This is your Discovery grid — real people around you, sorted by distance. Let's learn the gestures that make GreenGo quick to use.",
   "tourCardTapTitle": "Tap a card",
-  "tourCardTapDesc": "Tap the center of a card to open the action menu — like, super-like, or view their full profile. Try tapping the highlighted card!",
+  "tourCardTapDesc": "Tap the center of a card to open the action menu — like, super-like, or view their full profile.",
   "tourCardEdgeTitle": "Browse photos",
   "tourCardEdgeDesc": "Tap the left or right edge of a card to flip through that person's photos without leaving the grid.",
   "tourCardHoldTitle": "Hold to preview",
-  "tourCardHoldDesc": "Press and hold a card to preview photos full-screen. Try holding the highlighted card!",
+  "tourCardHoldDesc": "Press and hold a card to preview photos full-screen.",
   "tourRefreshTitle": "Pull to refresh",
   "tourRefreshDesc": "Drag the grid down at any time to load the newest people around you.",
   "tourModeToggleTitle": "Swipe mode",
@@ -45,9 +46,13 @@ $blocks['app_en.arb'] = @'
   "tourSwipeHintPass": "Pass",
   "tourSwipeHintSuper": "Super Like",
   "tourChatHoldTitle": "Hold a message",
-  "tourChatHoldDesc": "Press and hold any message to translate, copy or forward it. Try holding the highlighted message!",
+  "tourChatHoldDesc": "Press and hold any message to translate, copy or forward it.",
   "tourChatDoubleTapTitle": "Hear it spoken",
   "tourChatDoubleTapDesc": "Double-tap a received message to hear its pronunciation.",
+  "tourChatLanguageTitle": "Languages & learning",
+  "tourChatLanguageDesc": "Open the translate menu for language tools: translation settings, pronunciation practice and learning features.",
+  "tourChatSettingsTitle": "Chat options",
+  "tourChatSettingsDesc": "Manage this conversation: chat settings, delete, block or report.",
   "tourDetailDoubleTapTitle": "Like a photo",
   "tourDetailDoubleTapDesc": "Double-tap any photo to like it.",
   "tourStoryHoldHint": "Hold to pause",
@@ -55,16 +60,15 @@ $blocks['app_en.arb'] = @'
 '@
 
 $blocks['app_de.arb'] = @'
-  "tourTryIt": "Probier es!",
   "tourGotIt": "Verstanden",
   "tourWelcomeTitle": "Willkommen bei GreenGo!",
   "tourWelcomeDesc": "Das ist dein Discovery-Raster — echte Menschen in deiner Nähe, nach Entfernung sortiert. Lerne die Gesten kennen, mit denen GreenGo schnell zu bedienen ist.",
   "tourCardTapTitle": "Karte antippen",
-  "tourCardTapDesc": "Tippe auf die Mitte einer Karte, um das Aktionsmenü zu öffnen — liken, super-liken oder das ganze Profil ansehen. Tippe jetzt auf die markierte Karte!",
+  "tourCardTapDesc": "Tippe auf die Mitte einer Karte, um das Aktionsmenü zu öffnen — liken, super-liken oder das ganze Profil ansehen.",
   "tourCardEdgeTitle": "Fotos durchblättern",
   "tourCardEdgeDesc": "Tippe auf den linken oder rechten Rand einer Karte, um durch die Fotos der Person zu blättern, ohne das Raster zu verlassen.",
   "tourCardHoldTitle": "Halten für Vorschau",
-  "tourCardHoldDesc": "Halte eine Karte gedrückt, um Fotos im Vollbild anzusehen. Halte jetzt die markierte Karte gedrückt!",
+  "tourCardHoldDesc": "Halte eine Karte gedrückt, um Fotos im Vollbild anzusehen.",
   "tourRefreshTitle": "Zum Aktualisieren ziehen",
   "tourRefreshDesc": "Ziehe das Raster jederzeit nach unten, um die neuesten Menschen in deiner Nähe zu laden.",
   "tourModeToggleTitle": "Swipe-Modus",
@@ -94,9 +98,13 @@ $blocks['app_de.arb'] = @'
   "tourSwipeHintPass": "Passen",
   "tourSwipeHintSuper": "Super-Like",
   "tourChatHoldTitle": "Nachricht halten",
-  "tourChatHoldDesc": "Halte eine Nachricht gedrückt, um sie zu übersetzen, zu kopieren oder weiterzuleiten. Halte jetzt die markierte Nachricht gedrückt!",
+  "tourChatHoldDesc": "Halte eine Nachricht gedrückt, um sie zu übersetzen, zu kopieren oder weiterzuleiten.",
   "tourChatDoubleTapTitle": "Anhören",
   "tourChatDoubleTapDesc": "Tippe doppelt auf eine empfangene Nachricht, um die Aussprache zu hören.",
+  "tourChatLanguageTitle": "Sprachen & Lernen",
+  "tourChatLanguageDesc": "Öffne das Übersetzungsmenü für Sprachtools: Übersetzungseinstellungen, Aussprachetraining und Lernfunktionen.",
+  "tourChatSettingsTitle": "Chat-Optionen",
+  "tourChatSettingsDesc": "Verwalte diese Unterhaltung: Chat-Einstellungen, löschen, blockieren oder melden.",
   "tourDetailDoubleTapTitle": "Foto liken",
   "tourDetailDoubleTapDesc": "Tippe doppelt auf ein Foto, um es zu liken.",
   "tourStoryHoldHint": "Halten zum Pausieren",
@@ -104,16 +112,15 @@ $blocks['app_de.arb'] = @'
 '@
 
 $blocks['app_es.arb'] = @'
-  "tourTryIt": "¡Pruébalo!",
   "tourGotIt": "Entendido",
   "tourWelcomeTitle": "¡Bienvenido a GreenGo!",
   "tourWelcomeDesc": "Esta es tu cuadrícula de Descubrimiento: personas reales cerca de ti, ordenadas por distancia. Aprende los gestos que hacen que GreenGo sea rápido de usar.",
   "tourCardTapTitle": "Toca una tarjeta",
-  "tourCardTapDesc": "Toca el centro de una tarjeta para abrir el menú de acciones: dar like, súper like o ver el perfil completo. ¡Prueba tocando la tarjeta resaltada!",
+  "tourCardTapDesc": "Toca el centro de una tarjeta para abrir el menú de acciones: dar like, súper like o ver el perfil completo.",
   "tourCardEdgeTitle": "Explora las fotos",
   "tourCardEdgeDesc": "Toca el borde izquierdo o derecho de una tarjeta para pasar las fotos de esa persona sin salir de la cuadrícula.",
   "tourCardHoldTitle": "Mantén para previsualizar",
-  "tourCardHoldDesc": "Mantén pulsada una tarjeta para ver las fotos en pantalla completa. ¡Prueba manteniendo pulsada la tarjeta resaltada!",
+  "tourCardHoldDesc": "Mantén pulsada una tarjeta para ver las fotos en pantalla completa.",
   "tourRefreshTitle": "Desliza para actualizar",
   "tourRefreshDesc": "Arrastra la cuadrícula hacia abajo en cualquier momento para cargar a las personas más recientes cerca de ti.",
   "tourModeToggleTitle": "Modo deslizar",
@@ -143,9 +150,13 @@ $blocks['app_es.arb'] = @'
   "tourSwipeHintPass": "Pasar",
   "tourSwipeHintSuper": "Súper like",
   "tourChatHoldTitle": "Mantén un mensaje",
-  "tourChatHoldDesc": "Mantén pulsado cualquier mensaje para traducirlo, copiarlo o reenviarlo. ¡Prueba manteniendo pulsado el mensaje resaltado!",
+  "tourChatHoldDesc": "Mantén pulsado cualquier mensaje para traducirlo, copiarlo o reenviarlo.",
   "tourChatDoubleTapTitle": "Escúchalo",
   "tourChatDoubleTapDesc": "Toca dos veces un mensaje recibido para escuchar su pronunciación.",
+  "tourChatLanguageTitle": "Idiomas y aprendizaje",
+  "tourChatLanguageDesc": "Abre el menú de traducción para herramientas de idioma: ajustes de traducción, práctica de pronunciación y funciones de aprendizaje.",
+  "tourChatSettingsTitle": "Opciones del chat",
+  "tourChatSettingsDesc": "Gestiona esta conversación: ajustes del chat, eliminar, bloquear o denunciar.",
   "tourDetailDoubleTapTitle": "Dale like a una foto",
   "tourDetailDoubleTapDesc": "Toca dos veces cualquier foto para darle like.",
   "tourStoryHoldHint": "Mantén para pausar",
@@ -153,16 +164,15 @@ $blocks['app_es.arb'] = @'
 '@
 
 $blocks['app_fr.arb'] = @'
-  "tourTryIt": "Essaie !",
   "tourGotIt": "Compris",
   "tourWelcomeTitle": "Bienvenue sur GreenGo !",
   "tourWelcomeDesc": "Voici ta grille Découverte : de vraies personnes autour de toi, triées par distance. Découvrons les gestes qui rendent GreenGo rapide à utiliser.",
   "tourCardTapTitle": "Touche une carte",
-  "tourCardTapDesc": "Touche le centre d'une carte pour ouvrir le menu d'actions : liker, super-liker ou voir le profil complet. Essaie de toucher la carte en surbrillance !",
+  "tourCardTapDesc": "Touche le centre d'une carte pour ouvrir le menu d'actions : liker, super-liker ou voir le profil complet.",
   "tourCardEdgeTitle": "Parcours les photos",
   "tourCardEdgeDesc": "Touche le bord gauche ou droit d'une carte pour faire défiler les photos de la personne sans quitter la grille.",
   "tourCardHoldTitle": "Maintiens pour prévisualiser",
-  "tourCardHoldDesc": "Maintiens une carte appuyée pour voir les photos en plein écran. Essaie de maintenir la carte en surbrillance !",
+  "tourCardHoldDesc": "Maintiens une carte appuyée pour voir les photos en plein écran.",
   "tourRefreshTitle": "Tire pour actualiser",
   "tourRefreshDesc": "Fais glisser la grille vers le bas à tout moment pour charger les nouvelles personnes autour de toi.",
   "tourModeToggleTitle": "Mode swipe",
@@ -192,9 +202,13 @@ $blocks['app_fr.arb'] = @'
   "tourSwipeHintPass": "Passer",
   "tourSwipeHintSuper": "Super like",
   "tourChatHoldTitle": "Maintiens un message",
-  "tourChatHoldDesc": "Maintiens n'importe quel message pour le traduire, le copier ou le transférer. Essaie de maintenir le message en surbrillance !",
+  "tourChatHoldDesc": "Maintiens n'importe quel message pour le traduire, le copier ou le transférer.",
   "tourChatDoubleTapTitle": "Écoute-le",
   "tourChatDoubleTapDesc": "Touche deux fois un message reçu pour entendre sa prononciation.",
+  "tourChatLanguageTitle": "Langues et apprentissage",
+  "tourChatLanguageDesc": "Ouvre le menu de traduction pour les outils de langue : paramètres de traduction, entraînement à la prononciation et fonctions d'apprentissage.",
+  "tourChatSettingsTitle": "Options du chat",
+  "tourChatSettingsDesc": "Gère cette conversation : paramètres du chat, supprimer, bloquer ou signaler.",
   "tourDetailDoubleTapTitle": "Like une photo",
   "tourDetailDoubleTapDesc": "Touche deux fois n'importe quelle photo pour la liker.",
   "tourStoryHoldHint": "Maintiens pour mettre en pause",
@@ -202,16 +216,15 @@ $blocks['app_fr.arb'] = @'
 '@
 
 $blocks['app_it.arb'] = @'
-  "tourTryIt": "Provalo!",
   "tourGotIt": "Capito",
   "tourWelcomeTitle": "Benvenuto su GreenGo!",
   "tourWelcomeDesc": "Questa è la tua griglia Scoperta: persone reali intorno a te, ordinate per distanza. Impariamo i gesti che rendono GreenGo veloce da usare.",
   "tourCardTapTitle": "Tocca una scheda",
-  "tourCardTapDesc": "Tocca il centro di una scheda per aprire il menu azioni: like, super like o profilo completo. Prova a toccare la scheda evidenziata!",
+  "tourCardTapDesc": "Tocca il centro di una scheda per aprire il menu azioni: like, super like o profilo completo.",
   "tourCardEdgeTitle": "Sfoglia le foto",
   "tourCardEdgeDesc": "Tocca il bordo sinistro o destro di una scheda per sfogliare le foto della persona senza uscire dalla griglia.",
   "tourCardHoldTitle": "Tieni premuto per l'anteprima",
-  "tourCardHoldDesc": "Tieni premuta una scheda per vedere le foto a schermo intero. Prova a tenere premuta la scheda evidenziata!",
+  "tourCardHoldDesc": "Tieni premuta una scheda per vedere le foto a schermo intero.",
   "tourRefreshTitle": "Trascina per aggiornare",
   "tourRefreshDesc": "Trascina la griglia verso il basso in qualsiasi momento per caricare le persone più recenti vicino a te.",
   "tourModeToggleTitle": "Modalità swipe",
@@ -241,9 +254,13 @@ $blocks['app_it.arb'] = @'
   "tourSwipeHintPass": "Passa",
   "tourSwipeHintSuper": "Super like",
   "tourChatHoldTitle": "Tieni premuto un messaggio",
-  "tourChatHoldDesc": "Tieni premuto qualsiasi messaggio per tradurlo, copiarlo o inoltrarlo. Prova a tenere premuto il messaggio evidenziato!",
+  "tourChatHoldDesc": "Tieni premuto qualsiasi messaggio per tradurlo, copiarlo o inoltrarlo.",
   "tourChatDoubleTapTitle": "Ascoltalo",
   "tourChatDoubleTapDesc": "Tocca due volte un messaggio ricevuto per sentirne la pronuncia.",
+  "tourChatLanguageTitle": "Lingue e apprendimento",
+  "tourChatLanguageDesc": "Apri il menu di traduzione per gli strumenti linguistici: impostazioni di traduzione, pratica della pronuncia e funzioni di apprendimento.",
+  "tourChatSettingsTitle": "Opzioni chat",
+  "tourChatSettingsDesc": "Gestisci questa conversazione: impostazioni della chat, elimina, blocca o segnala.",
   "tourDetailDoubleTapTitle": "Metti like a una foto",
   "tourDetailDoubleTapDesc": "Tocca due volte qualsiasi foto per metterle like.",
   "tourStoryHoldHint": "Tieni premuto per mettere in pausa",
@@ -251,16 +268,15 @@ $blocks['app_it.arb'] = @'
 '@
 
 $blocks['app_pt.arb'] = @'
-  "tourTryIt": "Experimenta!",
   "tourGotIt": "Entendido",
   "tourWelcomeTitle": "Bem-vindo ao GreenGo!",
   "tourWelcomeDesc": "Esta é a tua grelha de Descoberta: pessoas reais perto de ti, ordenadas por distância. Vamos aprender os gestos que tornam o GreenGo rápido de usar.",
   "tourCardTapTitle": "Toca num cartão",
-  "tourCardTapDesc": "Toca no centro de um cartão para abrir o menu de ações: gostar, super like ou ver o perfil completo. Experimenta tocar no cartão destacado!",
+  "tourCardTapDesc": "Toca no centro de um cartão para abrir o menu de ações: gostar, super like ou ver o perfil completo.",
   "tourCardEdgeTitle": "Percorre as fotos",
   "tourCardEdgeDesc": "Toca na margem esquerda ou direita de um cartão para percorrer as fotos da pessoa sem sair da grelha.",
   "tourCardHoldTitle": "Mantém para pré-visualizar",
-  "tourCardHoldDesc": "Mantém um cartão premido para ver as fotos em ecrã inteiro. Experimenta manter premido o cartão destacado!",
+  "tourCardHoldDesc": "Mantém um cartão premido para ver as fotos em ecrã inteiro.",
   "tourRefreshTitle": "Puxa para atualizar",
   "tourRefreshDesc": "Arrasta a grelha para baixo em qualquer altura para carregar as pessoas mais recentes perto de ti.",
   "tourModeToggleTitle": "Modo swipe",
@@ -290,9 +306,13 @@ $blocks['app_pt.arb'] = @'
   "tourSwipeHintPass": "Passar",
   "tourSwipeHintSuper": "Super like",
   "tourChatHoldTitle": "Mantém uma mensagem",
-  "tourChatHoldDesc": "Mantém qualquer mensagem premida para a traduzir, copiar ou reencaminhar. Experimenta manter premida a mensagem destacada!",
+  "tourChatHoldDesc": "Mantém qualquer mensagem premida para a traduzir, copiar ou reencaminhar.",
   "tourChatDoubleTapTitle": "Ouve a mensagem",
   "tourChatDoubleTapDesc": "Toca duas vezes numa mensagem recebida para ouvir a pronúncia.",
+  "tourChatLanguageTitle": "Idiomas e aprendizagem",
+  "tourChatLanguageDesc": "Abre o menu de tradução para ferramentas de idioma: definições de tradução, prática de pronúncia e funções de aprendizagem.",
+  "tourChatSettingsTitle": "Opções da conversa",
+  "tourChatSettingsDesc": "Gere esta conversa: definições da conversa, eliminar, bloquear ou denunciar.",
   "tourDetailDoubleTapTitle": "Gosta de uma foto",
   "tourDetailDoubleTapDesc": "Toca duas vezes em qualquer foto para gostar dela.",
   "tourStoryHoldHint": "Mantém premido para pausar",
@@ -300,16 +320,15 @@ $blocks['app_pt.arb'] = @'
 '@
 
 $blocks['app_pt_BR.arb'] = @'
-  "tourTryIt": "Experimente!",
   "tourGotIt": "Entendi",
   "tourWelcomeTitle": "Bem-vindo ao GreenGo!",
   "tourWelcomeDesc": "Esta é a sua grade de Descoberta: pessoas reais perto de você, ordenadas por distância. Vamos aprender os gestos que tornam o GreenGo rápido de usar.",
   "tourCardTapTitle": "Toque em um cartão",
-  "tourCardTapDesc": "Toque no centro de um cartão para abrir o menu de ações: curtir, super curtir ou ver o perfil completo. Experimente tocar no cartão destacado!",
+  "tourCardTapDesc": "Toque no centro de um cartão para abrir o menu de ações: curtir, super curtir ou ver o perfil completo.",
   "tourCardEdgeTitle": "Veja as fotos",
   "tourCardEdgeDesc": "Toque na borda esquerda ou direita de um cartão para passar as fotos da pessoa sem sair da grade.",
   "tourCardHoldTitle": "Segure para visualizar",
-  "tourCardHoldDesc": "Mantenha um cartão pressionado para ver as fotos em tela cheia. Experimente segurar o cartão destacado!",
+  "tourCardHoldDesc": "Mantenha um cartão pressionado para ver as fotos em tela cheia.",
   "tourRefreshTitle": "Puxe para atualizar",
   "tourRefreshDesc": "Arraste a grade para baixo a qualquer momento para carregar as pessoas mais recentes perto de você.",
   "tourModeToggleTitle": "Modo swipe",
@@ -339,9 +358,13 @@ $blocks['app_pt_BR.arb'] = @'
   "tourSwipeHintPass": "Passar",
   "tourSwipeHintSuper": "Super curtir",
   "tourChatHoldTitle": "Segure uma mensagem",
-  "tourChatHoldDesc": "Mantenha qualquer mensagem pressionada para traduzir, copiar ou encaminhar. Experimente segurar a mensagem destacada!",
+  "tourChatHoldDesc": "Mantenha qualquer mensagem pressionada para traduzir, copiar ou encaminhar.",
   "tourChatDoubleTapTitle": "Ouça a mensagem",
   "tourChatDoubleTapDesc": "Toque duas vezes em uma mensagem recebida para ouvir a pronúncia.",
+  "tourChatLanguageTitle": "Idiomas e aprendizado",
+  "tourChatLanguageDesc": "Abra o menu de tradução para ferramentas de idioma: configurações de tradução, prática de pronúncia e recursos de aprendizado.",
+  "tourChatSettingsTitle": "Opções da conversa",
+  "tourChatSettingsDesc": "Gerencie esta conversa: configurações da conversa, excluir, bloquear ou denunciar.",
   "tourDetailDoubleTapTitle": "Curta uma foto",
   "tourDetailDoubleTapDesc": "Toque duas vezes em qualquer foto para curti-la.",
   "tourStoryHoldHint": "Segure para pausar",
@@ -353,7 +376,7 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 foreach ($file in $blocks.Keys) {
     $path = Join-Path $dir $file
     $content = [System.IO.File]::ReadAllText($path)
-    if ($content.Contains('"tourTryIt"')) {
+    if ($content.Contains('"tourChatLanguageTitle"')) {
         Write-Output "SKIP $file (already has tour keys)"
         continue
     }

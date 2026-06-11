@@ -1800,9 +1800,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     final hasMoreMessages = messages.length >= _messageLimit;
                     final extraItems = (isOtherUserTyping ? 1 : 0) + (hasMoreMessages ? 1 : 0);
 
-                    // One-time gesture mini-tour: anchor on the newest
-                    // received text message (hold = translate menu,
-                    // double-tap = pronunciation).
+                    // One-time chat tutorial: hold = translate menu,
+                    // double-tap = pronunciation (anchored on the newest
+                    // received text message), then the languages menu and
+                    // chat options in the app bar.
                     final tourBubbleIndex = messages.indexWhere((m) =>
                         m.senderId != widget.currentUserId &&
                         m.type == MessageType.text);
@@ -1817,6 +1818,8 @@ class _ChatScreenState extends State<ChatScreen> {
                           keys: [
                             TourKeys.chatBubbleHold,
                             TourKeys.chatBubbleDoubleTap,
+                            TourKeys.chatLanguageMenu,
+                            TourKeys.chatSettings,
                           ],
                         );
                       });
@@ -1896,14 +1899,12 @@ class _ChatScreenState extends State<ChatScreen> {
                                 title: l10n.tourChatHoldTitle,
                                 description: l10n.tourChatHoldDesc,
                                 gesture: TourGesture.longPress,
-                                interactive: true,
                                 targetBorderRadius: BorderRadius.circular(16),
                                 child: TourShowcase(
                                   showcaseKey: TourKeys.chatBubbleDoubleTap,
                                   title: l10n.tourChatDoubleTapTitle,
                                   description: l10n.tourChatDoubleTapDesc,
                                   gesture: TourGesture.doubleTap,
-                                  interactive: true,
                                   targetBorderRadius: BorderRadius.circular(16),
                                   child: bubble,
                                 ),
@@ -2096,15 +2097,29 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
       actions: [
         // Languages & learning menu
-        IconButton(
-          icon: const Icon(Icons.translate, color: AppColors.textSecondary),
-          tooltip: AppLocalizations.of(context)!.chatLanguages,
-          onPressed: _showToolsMenu,
+        TourShowcase(
+          showcaseKey: TourKeys.chatLanguageMenu,
+          title: AppLocalizations.of(context)!.tourChatLanguageTitle,
+          description: AppLocalizations.of(context)!.tourChatLanguageDesc,
+          gesture: TourGesture.tap,
+          targetShapeBorder: const CircleBorder(),
+          child: IconButton(
+            icon: const Icon(Icons.translate, color: AppColors.textSecondary),
+            tooltip: AppLocalizations.of(context)!.chatLanguages,
+            onPressed: _showToolsMenu,
+          ),
         ),
         // Chat options menu (admin: delete, block, report)
-        IconButton(
-          icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
-          onPressed: () => _showChatOptionsMenu(context),
+        TourShowcase(
+          showcaseKey: TourKeys.chatSettings,
+          title: AppLocalizations.of(context)!.tourChatSettingsTitle,
+          description: AppLocalizations.of(context)!.tourChatSettingsDesc,
+          gesture: TourGesture.tap,
+          targetShapeBorder: const CircleBorder(),
+          child: IconButton(
+            icon: const Icon(Icons.more_vert, color: AppColors.textSecondary),
+            onPressed: () => _showChatOptionsMenu(context),
+          ),
         ),
       ],
     );
