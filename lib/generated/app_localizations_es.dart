@@ -9,52 +9,49 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get tourTryIt => 'Â¡PruÃ©balo!';
-
-  @override
   String get tourGotIt => 'Entendido';
 
   @override
-  String get tourWelcomeTitle => 'Â¡Bienvenido a GreenGo!';
+  String get tourWelcomeTitle => '¡Bienvenido a GreenGo!';
 
   @override
   String get tourWelcomeDesc =>
-      'Esta es tu cuadrÃ­cula de Descubrimiento: personas reales cerca de ti, ordenadas por distancia. Aprende los gestos que hacen que GreenGo sea rÃ¡pido de usar.';
+      'Esta es tu cuadrícula de Descubrimiento: personas reales cerca de ti, ordenadas por distancia. Aprende los gestos que hacen que GreenGo sea rápido de usar.';
 
   @override
   String get tourCardTapTitle => 'Toca una tarjeta';
 
   @override
   String get tourCardTapDesc =>
-      'Toca el centro de una tarjeta para abrir el menÃº de acciones: dar like, sÃºper like o ver el perfil completo. Â¡Prueba tocando la tarjeta resaltada!';
+      'Toca el centro de una tarjeta para abrir el menú de acciones: dar like, súper like o ver el perfil completo.';
 
   @override
   String get tourCardEdgeTitle => 'Explora las fotos';
 
   @override
   String get tourCardEdgeDesc =>
-      'Toca el borde izquierdo o derecho de una tarjeta para pasar las fotos de esa persona sin salir de la cuadrÃ­cula.';
+      'Toca el borde izquierdo o derecho de una tarjeta para pasar las fotos de esa persona sin salir de la cuadrícula.';
 
   @override
-  String get tourCardHoldTitle => 'MantÃ©n para previsualizar';
+  String get tourCardHoldTitle => 'Mantén para previsualizar';
 
   @override
   String get tourCardHoldDesc =>
-      'MantÃ©n pulsada una tarjeta para ver las fotos en pantalla completa. Â¡Prueba manteniendo pulsada la tarjeta resaltada!';
+      'Mantén pulsada una tarjeta para ver las fotos en pantalla completa.';
 
   @override
   String get tourRefreshTitle => 'Desliza para actualizar';
 
   @override
   String get tourRefreshDesc =>
-      'Arrastra la cuadrÃ­cula hacia abajo en cualquier momento para cargar a las personas mÃ¡s recientes cerca de ti.';
+      'Arrastra la cuadrícula hacia abajo en cualquier momento para cargar a las personas más recientes cerca de ti.';
 
   @override
   String get tourModeToggleTitle => 'Modo deslizar';
 
   @override
   String get tourModeToggleDesc =>
-      'Toca aquÃ­ para cambiar entre cuadrÃ­cula y modo deslizar. En modo deslizar: desliza a la derecha para like, a la izquierda para pasar y hacia arriba para sÃºper like.';
+      'Toca aquí para cambiar entre cuadrícula y modo deslizar. En modo deslizar: desliza a la derecha para like, a la izquierda para pasar y hacia arriba para súper like.';
 
   @override
   String get tourGlobeTitle => 'Explora el globo';
@@ -68,63 +65,63 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourSearchDesc =>
-      'Â¿Sabes a quiÃ©n buscas? Encuentra personas directamente por su apodo.';
+      '¿Sabes a quién buscas? Encuentra personas directamente por su apodo.';
 
   @override
   String get tourPrefsTitle => 'Filtros de descubrimiento';
 
   @override
   String get tourPrefsDesc =>
-      'Ajusta a quiÃ©n descubres: distancia, edad, idiomas, paÃ­s y mÃ¡s.';
+      'Ajusta a quién descubres: distancia, edad, idiomas, país y más.';
 
   @override
   String get tourCoinsTitle => 'Tus monedas';
 
   @override
   String get tourCoinsDesc =>
-      'Recibes monedas gratis cada dÃ­a. Toca tu saldo en cualquier momento para abrir la Tienda.';
+      'Recibes monedas gratis cada día. Toca tu saldo en cualquier momento para abrir la Tienda.';
 
   @override
-  String get tourHelpTitle => 'Â¿Necesitas un recordatorio?';
+  String get tourHelpTitle => '¿Necesitas un recordatorio?';
 
   @override
   String get tourHelpDesc =>
-      'La guÃ­a de la app estÃ¡ aquÃ­, incluido este tutorial, que puedes repetir cuando quieras.';
+      'La guía de la app está aquí, incluido este tutorial, que puedes repetir cuando quieras.';
 
   @override
   String get tourNavMessagesTitle => 'Mensajes';
 
   @override
   String get tourNavMessagesDesc =>
-      'Chatea sin barreras de idioma: mantÃ©n pulsado un mensaje para traducirlo o tÃ³calo dos veces para escucharlo.';
+      'Chatea sin barreras de idioma: mantén pulsado un mensaje para traducirlo o tócalo dos veces para escucharlo.';
 
   @override
-  String get tourNavLeaderboardTitle => 'ClasificaciÃ³n';
+  String get tourNavLeaderboardTitle => 'Clasificación';
 
   @override
   String get tourNavLeaderboardDesc =>
-      'Gana XP e insignias mientras conectas, chateas y aprendes. Mira tu posiciÃ³n.';
+      'Gana XP e insignias mientras conectas, chateas y aprendes. Mira tu posición.';
 
   @override
   String get tourNavShopTitle => 'Tienda';
 
   @override
   String get tourNavShopDesc =>
-      'Paquetes de monedas y membresÃ­as para desbloquear mÃ¡s de GreenGo.';
+      'Paquetes de monedas y membresías para desbloquear más de GreenGo.';
 
   @override
   String get tourNavProfileTitle => 'Tu perfil';
 
   @override
   String get tourNavProfileDesc =>
-      'Completa tu perfil y la verificaciÃ³n para que mÃ¡s personas te descubran.';
+      'Completa tu perfil y la verificación para que más personas te descubran.';
 
   @override
-  String get tourFinishTitle => 'Â¡Todo listo!';
+  String get tourFinishTitle => '¡Todo listo!';
 
   @override
   String get tourFinishDesc =>
-      'Disfruta descubriendo nuevas personas y culturas. Puedes repetir este tutorial cuando quieras desde la guÃ­a (icono ?).';
+      'Disfruta descubriendo nuevas personas y culturas. Puedes repetir este tutorial cuando quieras desde la guía (icono ?).';
 
   @override
   String get tourSwipeHintTitle => 'Desliza para conectar';
@@ -136,21 +133,35 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tourSwipeHintPass => 'Pasar';
 
   @override
-  String get tourSwipeHintSuper => 'SÃºper like';
+  String get tourSwipeHintSuper => 'Súper like';
 
   @override
-  String get tourChatHoldTitle => 'MantÃ©n un mensaje';
+  String get tourChatHoldTitle => 'Mantén un mensaje';
 
   @override
   String get tourChatHoldDesc =>
-      'MantÃ©n pulsado cualquier mensaje para traducirlo, copiarlo o reenviarlo. Â¡Prueba manteniendo pulsado el mensaje resaltado!';
+      'Mantén pulsado cualquier mensaje para traducirlo, copiarlo o reenviarlo.';
 
   @override
-  String get tourChatDoubleTapTitle => 'EscÃºchalo';
+  String get tourChatDoubleTapTitle => 'Escúchalo';
 
   @override
   String get tourChatDoubleTapDesc =>
-      'Toca dos veces un mensaje recibido para escuchar su pronunciaciÃ³n.';
+      'Toca dos veces un mensaje recibido para escuchar su pronunciación.';
+
+  @override
+  String get tourChatLanguageTitle => 'Idiomas y aprendizaje';
+
+  @override
+  String get tourChatLanguageDesc =>
+      'Abre el menú de traducción para herramientas de idioma: ajustes de traducción, práctica de pronunciación y funciones de aprendizaje.';
+
+  @override
+  String get tourChatSettingsTitle => 'Opciones del chat';
+
+  @override
+  String get tourChatSettingsDesc =>
+      'Gestiona esta conversación: ajustes del chat, eliminar, bloquear o denunciar.';
 
   @override
   String get tourDetailDoubleTapTitle => 'Dale like a una foto';
@@ -160,7 +171,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Toca dos veces cualquier foto para darle like.';
 
   @override
-  String get tourStoryHoldHint => 'MantÃ©n para pausar';
+  String get tourStoryHoldHint => 'Mantén para pausar';
 
   @override
   String get guideReplayTour => 'Repetir tutorial';

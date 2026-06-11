@@ -107,12 +107,6 @@ abstract class AppLocalizations {
     Locale('pt', 'BR')
   ];
 
-  /// No description provided for @tourTryIt.
-  ///
-  /// In en, this message translates to:
-  /// **'Try it!'**
-  String get tourTryIt;
-
   /// No description provided for @tourGotIt.
   ///
   /// In en, this message translates to:
@@ -128,7 +122,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourWelcomeDesc.
   ///
   /// In en, this message translates to:
-  /// **'This is your Discovery grid â€” real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.'**
+  /// **'This is your Discovery grid — real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.'**
   String get tourWelcomeDesc;
 
   /// No description provided for @tourCardTapTitle.
@@ -140,7 +134,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourCardTapDesc.
   ///
   /// In en, this message translates to:
-  /// **'Tap the center of a card to open the action menu â€” like, super-like, or view their full profile. Try tapping the highlighted card!'**
+  /// **'Tap the center of a card to open the action menu — like, super-like, or view their full profile.'**
   String get tourCardTapDesc;
 
   /// No description provided for @tourCardEdgeTitle.
@@ -164,7 +158,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourCardHoldDesc.
   ///
   /// In en, this message translates to:
-  /// **'Press and hold a card to preview photos full-screen. Try holding the highlighted card!'**
+  /// **'Press and hold a card to preview photos full-screen.'**
   String get tourCardHoldDesc;
 
   /// No description provided for @tourRefreshTitle.
@@ -200,7 +194,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourGlobeDesc.
   ///
   /// In en, this message translates to:
-  /// **'Open the 3D globe to discover people all around the world â€” not just nearby.'**
+  /// **'Open the 3D globe to discover people all around the world — not just nearby.'**
   String get tourGlobeDesc;
 
   /// No description provided for @tourSearchTitle.
@@ -248,7 +242,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourHelpDesc.
   ///
   /// In en, this message translates to:
-  /// **'The app guide lives here â€” including this tutorial, which you can replay anytime.'**
+  /// **'The app guide lives here — including this tutorial, which you can replay anytime.'**
   String get tourHelpDesc;
 
   /// No description provided for @tourNavMessagesTitle.
@@ -260,7 +254,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourNavMessagesDesc.
   ///
   /// In en, this message translates to:
-  /// **'Chat without language barriers â€” hold any message to translate it, double-tap to hear it spoken.'**
+  /// **'Chat without language barriers — hold any message to translate it, double-tap to hear it spoken.'**
   String get tourNavMessagesDesc;
 
   /// No description provided for @tourNavLeaderboardTitle.
@@ -344,7 +338,7 @@ abstract class AppLocalizations {
   /// No description provided for @tourChatHoldDesc.
   ///
   /// In en, this message translates to:
-  /// **'Press and hold any message to translate, copy or forward it. Try holding the highlighted message!'**
+  /// **'Press and hold any message to translate, copy or forward it.'**
   String get tourChatHoldDesc;
 
   /// No description provided for @tourChatDoubleTapTitle.
@@ -358,6 +352,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Double-tap a received message to hear its pronunciation.'**
   String get tourChatDoubleTapDesc;
+
+  /// No description provided for @tourChatLanguageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages & learning'**
+  String get tourChatLanguageTitle;
+
+  /// No description provided for @tourChatLanguageDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the translate menu for language tools: translation settings, pronunciation practice and learning features.'**
+  String get tourChatLanguageDesc;
+
+  /// No description provided for @tourChatSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat options'**
+  String get tourChatSettingsTitle;
+
+  /// No description provided for @tourChatSettingsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage this conversation: chat settings, delete, block or report.'**
+  String get tourChatSettingsDesc;
 
   /// No description provided for @tourDetailDoubleTapTitle.
   ///
