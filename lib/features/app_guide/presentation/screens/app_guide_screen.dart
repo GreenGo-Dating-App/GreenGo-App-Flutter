@@ -8,6 +8,9 @@ import '../../../../generated/app_localizations.dart';
 class AppGuideScreen extends StatelessWidget {
   const AppGuideScreen({super.key});
 
+  /// Pop result that asks the caller to restart the gesture tutorial.
+  static const String replayTourResult = 'replay_tour';
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -175,11 +178,52 @@ class AppGuideScreen extends StatelessWidget {
       ),
       body: ListView.builder(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-        itemCount: sections.length,
+        itemCount: sections.length + 1,
         itemBuilder: (context, index) {
-          final section = sections[index];
+          if (index == 0) return _buildReplayTourCard(context, l10n);
+          final section = sections[index - 1];
           return _buildSectionCard(context, section);
         },
+      ),
+    );
+  }
+
+  /// Gold call-to-action card that restarts the interactive gesture tour.
+  Widget _buildReplayTourCard(BuildContext context, AppLocalizations l10n) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.richGold),
+      ),
+      child: ListTile(
+        onTap: () => Navigator.of(context).pop(replayTourResult),
+        leading: Container(
+          width: 44,
+          height: 44,
+          decoration: BoxDecoration(
+            color: AppColors.richGold.withValues(alpha: 0.15),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: const Icon(
+            Icons.play_circle_outline,
+            color: AppColors.richGold,
+            size: 24,
+          ),
+        ),
+        title: Text(
+          l10n.guideReplayTour,
+          style: const TextStyle(
+            color: AppColors.richGold,
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        trailing: const Icon(
+          Icons.chevron_right,
+          color: AppColors.richGold,
+        ),
       ),
     );
   }

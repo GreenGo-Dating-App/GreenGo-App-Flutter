@@ -9,6 +9,162 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get tourTryIt => 'Try it!';
+
+  @override
+  String get tourGotIt => 'Got it';
+
+  @override
+  String get tourWelcomeTitle => 'Welcome to GreenGo!';
+
+  @override
+  String get tourWelcomeDesc =>
+      'This is your Discovery grid â€” real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.';
+
+  @override
+  String get tourCardTapTitle => 'Tap a card';
+
+  @override
+  String get tourCardTapDesc =>
+      'Tap the center of a card to open the action menu â€” like, super-like, or view their full profile. Try tapping the highlighted card!';
+
+  @override
+  String get tourCardEdgeTitle => 'Browse photos';
+
+  @override
+  String get tourCardEdgeDesc =>
+      'Tap the left or right edge of a card to flip through that person\'s photos without leaving the grid.';
+
+  @override
+  String get tourCardHoldTitle => 'Hold to preview';
+
+  @override
+  String get tourCardHoldDesc =>
+      'Press and hold a card to preview photos full-screen. Try holding the highlighted card!';
+
+  @override
+  String get tourRefreshTitle => 'Pull to refresh';
+
+  @override
+  String get tourRefreshDesc =>
+      'Drag the grid down at any time to load the newest people around you.';
+
+  @override
+  String get tourModeToggleTitle => 'Swipe mode';
+
+  @override
+  String get tourModeToggleDesc =>
+      'Tap here to switch between grid and swipe mode. In swipe mode: swipe right to like, left to pass, up to super-like.';
+
+  @override
+  String get tourGlobeTitle => 'Explore the globe';
+
+  @override
+  String get tourGlobeDesc =>
+      'Open the 3D globe to discover people all around the world â€” not just nearby.';
+
+  @override
+  String get tourSearchTitle => 'Find by nickname';
+
+  @override
+  String get tourSearchDesc =>
+      'Know who you\'re looking for? Search people directly by their nickname.';
+
+  @override
+  String get tourPrefsTitle => 'Discovery filters';
+
+  @override
+  String get tourPrefsDesc =>
+      'Fine-tune who you discover: distance, age, languages, country and more.';
+
+  @override
+  String get tourCoinsTitle => 'Your coins';
+
+  @override
+  String get tourCoinsDesc =>
+      'You receive free coins every day. Tap your balance anytime to open the Shop.';
+
+  @override
+  String get tourHelpTitle => 'Need a reminder?';
+
+  @override
+  String get tourHelpDesc =>
+      'The app guide lives here â€” including this tutorial, which you can replay anytime.';
+
+  @override
+  String get tourNavMessagesTitle => 'Messages';
+
+  @override
+  String get tourNavMessagesDesc =>
+      'Chat without language barriers â€” hold any message to translate it, double-tap to hear it spoken.';
+
+  @override
+  String get tourNavLeaderboardTitle => 'Leaderboard';
+
+  @override
+  String get tourNavLeaderboardDesc =>
+      'Earn XP and badges as you connect, chat and learn. See how you rank.';
+
+  @override
+  String get tourNavShopTitle => 'Shop';
+
+  @override
+  String get tourNavShopDesc =>
+      'Coin packages and memberships to unlock more of GreenGo.';
+
+  @override
+  String get tourNavProfileTitle => 'Your profile';
+
+  @override
+  String get tourNavProfileDesc =>
+      'Complete your profile and verification to get discovered by more people.';
+
+  @override
+  String get tourFinishTitle => 'You\'re all set!';
+
+  @override
+  String get tourFinishDesc =>
+      'Enjoy discovering new people and cultures. You can replay this tutorial anytime from the guide (? icon).';
+
+  @override
+  String get tourSwipeHintTitle => 'Swipe to connect';
+
+  @override
+  String get tourSwipeHintLike => 'Like';
+
+  @override
+  String get tourSwipeHintPass => 'Pass';
+
+  @override
+  String get tourSwipeHintSuper => 'Super Like';
+
+  @override
+  String get tourChatHoldTitle => 'Hold a message';
+
+  @override
+  String get tourChatHoldDesc =>
+      'Press and hold any message to translate, copy or forward it. Try holding the highlighted message!';
+
+  @override
+  String get tourChatDoubleTapTitle => 'Hear it spoken';
+
+  @override
+  String get tourChatDoubleTapDesc =>
+      'Double-tap a received message to hear its pronunciation.';
+
+  @override
+  String get tourDetailDoubleTapTitle => 'Like a photo';
+
+  @override
+  String get tourDetailDoubleTapDesc => 'Double-tap any photo to like it.';
+
+  @override
+  String get tourStoryHoldHint => 'Hold to pause';
+
+  @override
+  String get guideReplayTour => 'Replay tutorial';
+
+  @override
   String get abandonGame => 'Abandon Game';
 
   @override

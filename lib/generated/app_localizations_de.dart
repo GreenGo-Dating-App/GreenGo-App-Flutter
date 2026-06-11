@@ -9,6 +9,163 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
+  String get tourTryIt => 'Probier es!';
+
+  @override
+  String get tourGotIt => 'Verstanden';
+
+  @override
+  String get tourWelcomeTitle => 'Willkommen bei GreenGo!';
+
+  @override
+  String get tourWelcomeDesc =>
+      'Das ist dein Discovery-Raster â€” echte Menschen in deiner NÃ¤he, nach Entfernung sortiert. Lerne die Gesten kennen, mit denen GreenGo schnell zu bedienen ist.';
+
+  @override
+  String get tourCardTapTitle => 'Karte antippen';
+
+  @override
+  String get tourCardTapDesc =>
+      'Tippe auf die Mitte einer Karte, um das AktionsmenÃ¼ zu Ã¶ffnen â€” liken, super-liken oder das ganze Profil ansehen. Tippe jetzt auf die markierte Karte!';
+
+  @override
+  String get tourCardEdgeTitle => 'Fotos durchblÃ¤ttern';
+
+  @override
+  String get tourCardEdgeDesc =>
+      'Tippe auf den linken oder rechten Rand einer Karte, um durch die Fotos der Person zu blÃ¤ttern, ohne das Raster zu verlassen.';
+
+  @override
+  String get tourCardHoldTitle => 'Halten fÃ¼r Vorschau';
+
+  @override
+  String get tourCardHoldDesc =>
+      'Halte eine Karte gedrÃ¼ckt, um Fotos im Vollbild anzusehen. Halte jetzt die markierte Karte gedrÃ¼ckt!';
+
+  @override
+  String get tourRefreshTitle => 'Zum Aktualisieren ziehen';
+
+  @override
+  String get tourRefreshDesc =>
+      'Ziehe das Raster jederzeit nach unten, um die neuesten Menschen in deiner NÃ¤he zu laden.';
+
+  @override
+  String get tourModeToggleTitle => 'Swipe-Modus';
+
+  @override
+  String get tourModeToggleDesc =>
+      'Tippe hier, um zwischen Raster- und Swipe-Modus zu wechseln. Im Swipe-Modus: nach rechts wischen fÃ¼r Like, nach links fÃ¼r Passen, nach oben fÃ¼r Super-Like.';
+
+  @override
+  String get tourGlobeTitle => 'Den Globus erkunden';
+
+  @override
+  String get tourGlobeDesc =>
+      'Ã–ffne den 3D-Globus und entdecke Menschen auf der ganzen Welt â€” nicht nur in deiner NÃ¤he.';
+
+  @override
+  String get tourSearchTitle => 'Per Spitzname finden';
+
+  @override
+  String get tourSearchDesc =>
+      'Du weiÃŸt, wen du suchst? Suche Personen direkt Ã¼ber ihren Spitznamen.';
+
+  @override
+  String get tourPrefsTitle => 'Discovery-Filter';
+
+  @override
+  String get tourPrefsDesc =>
+      'Lege fest, wen du entdeckst: Entfernung, Alter, Sprachen, Land und mehr.';
+
+  @override
+  String get tourCoinsTitle => 'Deine Coins';
+
+  @override
+  String get tourCoinsDesc =>
+      'Du erhÃ¤ltst jeden Tag Gratis-Coins. Tippe jederzeit auf dein Guthaben, um den Shop zu Ã¶ffnen.';
+
+  @override
+  String get tourHelpTitle => 'Brauchst du Hilfe?';
+
+  @override
+  String get tourHelpDesc =>
+      'Hier findest du den App-Guide â€” inklusive dieses Tutorials, das du jederzeit wiederholen kannst.';
+
+  @override
+  String get tourNavMessagesTitle => 'Nachrichten';
+
+  @override
+  String get tourNavMessagesDesc =>
+      'Chatte ohne Sprachbarrieren â€” halte eine Nachricht gedrÃ¼ckt, um sie zu Ã¼bersetzen, oder tippe doppelt, um sie anzuhÃ¶ren.';
+
+  @override
+  String get tourNavLeaderboardTitle => 'Rangliste';
+
+  @override
+  String get tourNavLeaderboardDesc =>
+      'Sammle XP und Abzeichen, wÃ¤hrend du Kontakte knÃ¼pfst, chattest und lernst. Sieh, wo du stehst.';
+
+  @override
+  String get tourNavShopTitle => 'Shop';
+
+  @override
+  String get tourNavShopDesc =>
+      'Coin-Pakete und Mitgliedschaften, um mehr von GreenGo freizuschalten.';
+
+  @override
+  String get tourNavProfileTitle => 'Dein Profil';
+
+  @override
+  String get tourNavProfileDesc =>
+      'VervollstÃ¤ndige dein Profil und die Verifizierung, um von mehr Menschen entdeckt zu werden.';
+
+  @override
+  String get tourFinishTitle => 'Alles bereit!';
+
+  @override
+  String get tourFinishDesc =>
+      'Viel SpaÃŸ beim Entdecken neuer Menschen und Kulturen. Du kannst dieses Tutorial jederzeit Ã¼ber den Guide (?-Symbol) wiederholen.';
+
+  @override
+  String get tourSwipeHintTitle => 'Wischen und verbinden';
+
+  @override
+  String get tourSwipeHintLike => 'Like';
+
+  @override
+  String get tourSwipeHintPass => 'Passen';
+
+  @override
+  String get tourSwipeHintSuper => 'Super-Like';
+
+  @override
+  String get tourChatHoldTitle => 'Nachricht halten';
+
+  @override
+  String get tourChatHoldDesc =>
+      'Halte eine Nachricht gedrÃ¼ckt, um sie zu Ã¼bersetzen, zu kopieren oder weiterzuleiten. Halte jetzt die markierte Nachricht gedrÃ¼ckt!';
+
+  @override
+  String get tourChatDoubleTapTitle => 'AnhÃ¶ren';
+
+  @override
+  String get tourChatDoubleTapDesc =>
+      'Tippe doppelt auf eine empfangene Nachricht, um die Aussprache zu hÃ¶ren.';
+
+  @override
+  String get tourDetailDoubleTapTitle => 'Foto liken';
+
+  @override
+  String get tourDetailDoubleTapDesc =>
+      'Tippe doppelt auf ein Foto, um es zu liken.';
+
+  @override
+  String get tourStoryHoldHint => 'Halten zum Pausieren';
+
+  @override
+  String get guideReplayTour => 'Tutorial wiederholen';
+
+  @override
   String get abandonGame => 'Spiel Verlassen';
 
   @override

@@ -107,6 +107,282 @@ abstract class AppLocalizations {
     Locale('pt', 'BR')
   ];
 
+  /// No description provided for @tourTryIt.
+  ///
+  /// In en, this message translates to:
+  /// **'Try it!'**
+  String get tourTryIt;
+
+  /// No description provided for @tourGotIt.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it'**
+  String get tourGotIt;
+
+  /// No description provided for @tourWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGo!'**
+  String get tourWelcomeTitle;
+
+  /// No description provided for @tourWelcomeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'This is your Discovery grid â€” real people around you, sorted by distance. Let\'s learn the gestures that make GreenGo quick to use.'**
+  String get tourWelcomeDesc;
+
+  /// No description provided for @tourCardTapTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a card'**
+  String get tourCardTapTitle;
+
+  /// No description provided for @tourCardTapDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the center of a card to open the action menu â€” like, super-like, or view their full profile. Try tapping the highlighted card!'**
+  String get tourCardTapDesc;
+
+  /// No description provided for @tourCardEdgeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse photos'**
+  String get tourCardEdgeTitle;
+
+  /// No description provided for @tourCardEdgeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the left or right edge of a card to flip through that person\'s photos without leaving the grid.'**
+  String get tourCardEdgeDesc;
+
+  /// No description provided for @tourCardHoldTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold to preview'**
+  String get tourCardHoldTitle;
+
+  /// No description provided for @tourCardHoldDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Press and hold a card to preview photos full-screen. Try holding the highlighted card!'**
+  String get tourCardHoldDesc;
+
+  /// No description provided for @tourRefreshTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pull to refresh'**
+  String get tourRefreshTitle;
+
+  /// No description provided for @tourRefreshDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag the grid down at any time to load the newest people around you.'**
+  String get tourRefreshDesc;
+
+  /// No description provided for @tourModeToggleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe mode'**
+  String get tourModeToggleTitle;
+
+  /// No description provided for @tourModeToggleDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap here to switch between grid and swipe mode. In swipe mode: swipe right to like, left to pass, up to super-like.'**
+  String get tourModeToggleDesc;
+
+  /// No description provided for @tourGlobeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the globe'**
+  String get tourGlobeTitle;
+
+  /// No description provided for @tourGlobeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the 3D globe to discover people all around the world â€” not just nearby.'**
+  String get tourGlobeDesc;
+
+  /// No description provided for @tourSearchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find by nickname'**
+  String get tourSearchTitle;
+
+  /// No description provided for @tourSearchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Know who you\'re looking for? Search people directly by their nickname.'**
+  String get tourSearchDesc;
+
+  /// No description provided for @tourPrefsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discovery filters'**
+  String get tourPrefsTitle;
+
+  /// No description provided for @tourPrefsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Fine-tune who you discover: distance, age, languages, country and more.'**
+  String get tourPrefsDesc;
+
+  /// No description provided for @tourCoinsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your coins'**
+  String get tourCoinsTitle;
+
+  /// No description provided for @tourCoinsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'You receive free coins every day. Tap your balance anytime to open the Shop.'**
+  String get tourCoinsDesc;
+
+  /// No description provided for @tourHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Need a reminder?'**
+  String get tourHelpTitle;
+
+  /// No description provided for @tourHelpDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The app guide lives here â€” including this tutorial, which you can replay anytime.'**
+  String get tourHelpDesc;
+
+  /// No description provided for @tourNavMessagesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get tourNavMessagesTitle;
+
+  /// No description provided for @tourNavMessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat without language barriers â€” hold any message to translate it, double-tap to hear it spoken.'**
+  String get tourNavMessagesDesc;
+
+  /// No description provided for @tourNavLeaderboardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaderboard'**
+  String get tourNavLeaderboardTitle;
+
+  /// No description provided for @tourNavLeaderboardDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn XP and badges as you connect, chat and learn. See how you rank.'**
+  String get tourNavLeaderboardDesc;
+
+  /// No description provided for @tourNavShopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop'**
+  String get tourNavShopTitle;
+
+  /// No description provided for @tourNavShopDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Coin packages and memberships to unlock more of GreenGo.'**
+  String get tourNavShopDesc;
+
+  /// No description provided for @tourNavProfileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile'**
+  String get tourNavProfileTitle;
+
+  /// No description provided for @tourNavProfileDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your profile and verification to get discovered by more people.'**
+  String get tourNavProfileDesc;
+
+  /// No description provided for @tourFinishTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re all set!'**
+  String get tourFinishTitle;
+
+  /// No description provided for @tourFinishDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Enjoy discovering new people and cultures. You can replay this tutorial anytime from the guide (? icon).'**
+  String get tourFinishDesc;
+
+  /// No description provided for @tourSwipeHintTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe to connect'**
+  String get tourSwipeHintTitle;
+
+  /// No description provided for @tourSwipeHintLike.
+  ///
+  /// In en, this message translates to:
+  /// **'Like'**
+  String get tourSwipeHintLike;
+
+  /// No description provided for @tourSwipeHintPass.
+  ///
+  /// In en, this message translates to:
+  /// **'Pass'**
+  String get tourSwipeHintPass;
+
+  /// No description provided for @tourSwipeHintSuper.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Like'**
+  String get tourSwipeHintSuper;
+
+  /// No description provided for @tourChatHoldTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold a message'**
+  String get tourChatHoldTitle;
+
+  /// No description provided for @tourChatHoldDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Press and hold any message to translate, copy or forward it. Try holding the highlighted message!'**
+  String get tourChatHoldDesc;
+
+  /// No description provided for @tourChatDoubleTapTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hear it spoken'**
+  String get tourChatDoubleTapTitle;
+
+  /// No description provided for @tourChatDoubleTapDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-tap a received message to hear its pronunciation.'**
+  String get tourChatDoubleTapDesc;
+
+  /// No description provided for @tourDetailDoubleTapTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Like a photo'**
+  String get tourDetailDoubleTapTitle;
+
+  /// No description provided for @tourDetailDoubleTapDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-tap any photo to like it.'**
+  String get tourDetailDoubleTapDesc;
+
+  /// No description provided for @tourStoryHoldHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold to pause'**
+  String get tourStoryHoldHint;
+
+  /// No description provided for @guideReplayTour.
+  ///
+  /// In en, this message translates to:
+  /// **'Replay tutorial'**
+  String get guideReplayTour;
+
   /// No description provided for @abandonGame.
   ///
   /// In en, this message translates to:
