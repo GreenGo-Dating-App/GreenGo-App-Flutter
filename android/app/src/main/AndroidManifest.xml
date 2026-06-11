@@ -59,6 +59,11 @@
             android:name="flutterEmbedding"
             android:value="2" />
 
+        <!-- Impeller GLES renders black on Android emulators (API 36) — use Skia -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false" />
+
         <!-- FCM default notification channel -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
