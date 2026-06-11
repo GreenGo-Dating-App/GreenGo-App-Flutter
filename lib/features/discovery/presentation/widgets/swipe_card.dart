@@ -722,7 +722,8 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
               ),
 
-            // Super Like indicator (up swipe) - shown at bottom
+            // Super Like indicator (up swipe) - shown at bottom.
+            // Smaller font so "PRIORITY CONNECT" stays on a single line.
             if (_swipeDirection == SwipeDirection.up)
               Positioned(
                 bottom: 50,
@@ -735,6 +736,7 @@ class _SwipeCardState extends State<SwipeCard>
                       AppLocalizations.of(context)!.swipeIndicatorSuperLike,
                       AppColors.richGold,
                       opacity,
+                      fontSize: 24,
                     ),
                   ),
                 ),
@@ -763,7 +765,8 @@ class _SwipeCardState extends State<SwipeCard>
     );
   }
 
-  Widget _buildIndicatorBox(String text, Color color, double opacity) {
+  Widget _buildIndicatorBox(String text, Color color, double opacity,
+      {double fontSize = 42}) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -782,9 +785,12 @@ class _SwipeCardState extends State<SwipeCard>
       ),
       child: Text(
         text,
+        maxLines: 1,
+        softWrap: false,
+        overflow: TextOverflow.fade,
         style: TextStyle(
           color: color.withOpacity(opacity),
-          fontSize: 42,
+          fontSize: fontSize,
           fontWeight: FontWeight.bold,
           shadows: [
             Shadow(

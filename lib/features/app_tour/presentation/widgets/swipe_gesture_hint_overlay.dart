@@ -5,7 +5,9 @@ import '../../../../generated/app_localizations.dart';
 import 'gesture_glyphs.dart';
 
 /// One-time overlay shown the first time the user enters swipe mode.
-/// Demonstrates the three swipe directions; dismissed by tapping anywhere.
+/// Lists the four swipe actions top-to-bottom — Explore (down), Connect
+/// (right), Priority Connect (up), Pass (left) — using the same labels as
+/// the in-card swipe indicators. Dismissed by tapping anywhere.
 class SwipeGestureHintOverlay extends StatelessWidget {
   const SwipeGestureHintOverlay({required this.onDismiss, super.key});
 
@@ -31,31 +33,32 @@ class SwipeGestureHintOverlay extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 32),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    _hint(
-                      gesture: TourGesture.swipeLeft,
-                      label: l10n?.tourSwipeHintPass ?? 'Pass',
-                      icon: Icons.close,
-                      color: AppColors.errorRed,
-                    ),
-                    _hint(
-                      gesture: TourGesture.swipeUp,
-                      label: l10n?.tourSwipeHintSuper ?? 'Super Like',
-                      icon: Icons.star,
-                      color: Colors.blueAccent,
-                    ),
-                    _hint(
-                      gesture: TourGesture.swipeRight,
-                      label: l10n?.tourSwipeHintLike ?? 'Like',
-                      icon: Icons.favorite,
-                      color: AppColors.successGreen,
-                    ),
-                  ],
+                const SizedBox(height: 28),
+                _hint(
+                  gesture: TourGesture.pullDown,
+                  label: l10n?.swipeIndicatorSkip ?? 'EXPLORE NEXT',
+                  icon: Icons.arrow_downward,
+                  color: AppColors.infoBlue,
                 ),
-                const SizedBox(height: 40),
+                _hint(
+                  gesture: TourGesture.swipeRight,
+                  label: l10n?.swipeIndicatorLike ?? 'CONNECT',
+                  icon: Icons.connect_without_contact,
+                  color: AppColors.successGreen,
+                ),
+                _hint(
+                  gesture: TourGesture.swipeUp,
+                  label: l10n?.swipeIndicatorSuperLike ?? 'PRIORITY CONNECT',
+                  icon: Icons.star,
+                  color: AppColors.richGold,
+                ),
+                _hint(
+                  gesture: TourGesture.swipeLeft,
+                  label: l10n?.swipeIndicatorNope ?? 'PASS',
+                  icon: Icons.close,
+                  color: AppColors.errorRed,
+                ),
+                const SizedBox(height: 36),
                 Container(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
@@ -85,22 +88,29 @@ class SwipeGestureHintOverlay extends StatelessWidget {
     required IconData icon,
     required Color color,
   }) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        GestureGlyph(gesture: gesture, size: 72, color: color),
-        const SizedBox(height: 8),
-        Icon(icon, color: color, size: 20),
-        const SizedBox(height: 4),
-        Text(
-          label,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 14,
-            fontWeight: FontWeight.w600,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 32),
+      child: Row(
+        children: [
+          GestureGlyph(gesture: gesture, size: 52, color: color),
+          const SizedBox(width: 20),
+          Icon(icon, color: color, size: 22),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                color: color,
+                fontSize: 17,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+              ),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
