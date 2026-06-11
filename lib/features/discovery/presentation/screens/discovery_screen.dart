@@ -17,6 +17,11 @@ import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/widgets/loading_indicator.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/swipe_gesture_hint_overlay.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -144,6 +149,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   // Small country popup - show once per session
   bool _shownSmallCountryPopup = false;
+
+  // One-time swipe-direction hint overlay (first entry into swipe mode)
+  bool _showSwipeHint = false;
 
   // Online status refresh
   Timer? _onlineStatusTimer;
@@ -461,7 +469,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
         body: SafeArea(
-          child: BlocConsumer<DiscoveryBloc, DiscoveryState>(
+          child: Stack(
+            children: [
+              BlocConsumer<DiscoveryBloc, DiscoveryState>(
           listener: (context, state) {
             if (state is DiscoverySwipeCompleted) {
               // Swipe accepted — clear the pending grid card tracker
@@ -665,6 +675,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             return const SizedBox.shrink();
           },
         ),
+
+              // One-time swipe-direction hint (first entry into swipe mode)
+              if (_showSwipeHint && !_isGridMode)
+                SwipeGestureHintOverlay(
+                  onDismiss: () => setState(() => _showSwipeHint = false),
+                ),
+            ],
+          ),
       ),
     ),
     );
@@ -983,10 +1001,27 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final hasMore = filteredCards.length > limit && limit < _gridMaxProfiles;
     final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
 
+    final tourL10n = AppLocalizations.of(context)!;
+
         return Column(
       children: [
-        // Grid header with column selector and profile count
-        _buildGridHeader(visibleCount, filteredCards.length, tier),
+        // Grid header with column selector and profile count.
+        // Doubles as the anchor for the tour's welcome + pull-to-refresh
+        // steps (anchoring the full grid would push tooltips off-screen).
+        TourShowcase(
+          showcaseKey: TourKeys.gridBody,
+          title: tourL10n.tourWelcomeTitle,
+          description: tourL10n.tourWelcomeDesc,
+          targetBorderRadius: BorderRadius.circular(12),
+          child: TourShowcase(
+            showcaseKey: TourKeys.pullRefresh,
+            title: tourL10n.tourRefreshTitle,
+            description: tourL10n.tourRefreshDesc,
+            gesture: TourGesture.pullDown,
+            targetBorderRadius: BorderRadius.circular(12),
+            child: _buildGridHeader(visibleCount, filteredCards.length, tier),
+          ),
+        ),
 
         // Grid content
         Expanded(
@@ -1035,7 +1070,36 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 if (index >= visibleCount) {
                   return _buildLoadMoreCard();
                 }
-                return _buildGridProfileCard(context, visibleCards[index]);
+                final cardWidget =
+                    _buildGridProfileCard(context, visibleCards[index]);
+                // Anchor the tour's card gesture steps (tap / edge taps /
+                // long-press) on the first card that isn't the user's own.
+                final firstRealIndex = selfCard != null ? 1 : 0;
+                if (index == firstRealIndex) {
+                  return TourShowcase(
+                    showcaseKey: TourKeys.firstCard,
+                    title: tourL10n.tourCardTapTitle,
+                    description: tourL10n.tourCardTapDesc,
+                    gesture: TourGesture.tap,
+                    targetBorderRadius: BorderRadius.circular(12),
+                    child: TourShowcase(
+                      showcaseKey: TourKeys.cardEdges,
+                      title: tourL10n.tourCardEdgeTitle,
+                      description: tourL10n.tourCardEdgeDesc,
+                      gesture: TourGesture.edgeTaps,
+                      targetBorderRadius: BorderRadius.circular(12),
+                      child: TourShowcase(
+                        showcaseKey: TourKeys.cardHold,
+                        title: tourL10n.tourCardHoldTitle,
+                        description: tourL10n.tourCardHoldDesc,
+                        gesture: TourGesture.longPress,
+                        targetBorderRadius: BorderRadius.circular(12),
+                        child: cardWidget,
+                      ),
+                    ),
+                  );
+                }
+                return cardWidget;
               },
             );
               },
@@ -1588,6 +1652,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       }
     });
     widget.onGridModeChanged?.call();
+
+    // First time entering swipe mode: show the swipe-direction hint once
+    if (!_isGridMode) {
+      TourController.shouldShowOnce(TourController.swipeTourId, userId)
+          .then((show) {
+        if (show && mounted) setState(() => _showSwipeHint = true);
+      });
+    }
   }
 
   /// Whether grid mode is active - used by MainNavigationScreen
