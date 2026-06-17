@@ -10129,7 +10129,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideCoinsItem2 =>
-      '• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Message: 50 coins';
+      '• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Match: 2/day free, then 50 coins';
 
   @override
   String get guideCoinsItem3 =>
