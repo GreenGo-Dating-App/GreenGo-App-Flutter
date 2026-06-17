@@ -11,6 +11,7 @@ enum UsageLimitType {
   dailySuperLikes,       // Priority connects — daily cap
   messages,         // Daily
   mediaSends,       // Daily
+  directMatch,      // Direct match (direct message) — daily free quota, then coins
 }
 
 /// Result of checking a usage limit
@@ -211,6 +212,8 @@ class UsageLimitService {
         return rules.dailyMessageLimit;
       case UsageLimitType.mediaSends:
         return rules.dailyMediaSendLimit;
+      case UsageLimitType.directMatch:
+        return rules.dailyDirectMatchLimit;
     }
   }
 
@@ -231,6 +234,8 @@ class UsageLimitService {
         return 'messageCount';
       case UsageLimitType.mediaSends:
         return 'mediaSendCount';
+      case UsageLimitType.directMatch:
+        return 'directMatchCount';
     }
   }
 
@@ -251,6 +256,8 @@ class UsageLimitService {
         return 'messages';
       case UsageLimitType.mediaSends:
         return 'media sends';
+      case UsageLimitType.directMatch:
+        return 'direct matches';
     }
   }
 
@@ -283,6 +290,8 @@ class UsageLimitService {
           return 'Sending media is not available on the ${currentTier.displayName} plan. Upgrade to send images and videos!';
         }
         return "You've reached your daily limit of $limit media sends. Upgrade for more or wait until tomorrow.";
+      case UsageLimitType.directMatch:
+        return "You've used your $limit free direct match${limit == 1 ? '' : 'es'} today. Use coins for more or wait until tomorrow.";
     }
   }
 

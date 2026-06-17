@@ -200,30 +200,71 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
 
       if (!mounted) return;
 
-      // If no existing conversation, charge 50 coins for direct message
+      // Option C — hybrid direct match: a free daily quota per tier, then coins.
       if (!existingConv) {
-        final coinRepository = GetIt.instance<CoinRepository>();
-        final balanceResult = await coinRepository.getBalance(widget.currentUserId);
+        final usageLimitService = UsageLimitService();
+
+        // Resolve the user's tier + rules for the daily free quota.
+        var tier = MembershipTier.free;
+        var rules = MembershipRules.freeDefaults;
+        try {
+          final profileDoc = await FirebaseFirestore.instance
+              .collection('profiles')
+              .doc(widget.currentUserId)
+              .get();
+          final memberTierStr =
+              profileDoc.data()?['membershipTier'] as String? ?? '';
+          tier = MembershipTier.values.firstWhere(
+            (t) => t.name == memberTierStr,
+            orElse: () => MembershipTier.free,
+          );
+          rules = MembershipRules.getDefaultsForTier(tier);
+        } catch (_) {
+          // Fall back to free-tier rules on any lookup error.
+        }
 
         if (!mounted) return;
 
-        final hasEnough = balanceResult.fold(
-          (failure) => false,
-          (balance) => balance.availableCoins >= CoinFeaturePrices.directMessage,
-        );
-
-        if (!hasEnough) {
-          setState(() => _isSearching = false);
-          _showInsufficientCoinsDialog();
-          return;
-        }
-
-        // Deduct coins
-        await coinRepository.purchaseFeature(
+        final dmLimit = await usageLimitService.checkLimit(
           userId: widget.currentUserId,
-          featureName: 'direct_message',
-          cost: CoinFeaturePrices.directMessage,
+          limitType: UsageLimitType.directMatch,
+          rules: rules,
+          currentTier: tier,
         );
+
+        if (dmLimit.isAllowed) {
+          // Within the free daily quota (or unlimited) — no coins charged.
+          await usageLimitService.recordUsage(
+            userId: widget.currentUserId,
+            limitType: UsageLimitType.directMatch,
+          );
+        } else {
+          // Free quota exhausted — charge coins for the direct match.
+          final coinRepository = GetIt.instance<CoinRepository>();
+          final balanceResult =
+              await coinRepository.getBalance(widget.currentUserId);
+
+          if (!mounted) return;
+
+          final hasEnough = balanceResult.fold(
+            (failure) => false,
+            (balance) =>
+                balance.availableCoins >= CoinFeaturePrices.directMessage,
+          );
+
+          if (!hasEnough) {
+            setState(() => _isSearching = false);
+            _showInsufficientCoinsDialog();
+            return;
+          }
+
+          // Deduct coins
+          await coinRepository.purchaseFeature(
+            userId: widget.currentUserId,
+            featureName: 'direct_message',
+            cost: CoinFeaturePrices.directMessage,
+          );
+        }
       }
 
       final getSearchConversation = GetIt.instance<GetSearchConversation>();
