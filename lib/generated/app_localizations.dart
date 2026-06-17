@@ -18063,7 +18063,7 @@ abstract class AppLocalizations {
   /// No description provided for @guideCoinsItem2.
   ///
   /// In en, this message translates to:
-  /// **'• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Message: 50 coins'**
+  /// **'• Priority Connect: 10 coins  • Boost: 50 coins  • Direct Match: 2/day free, then 50 coins'**
   String get guideCoinsItem2;
 
   /// No description provided for @guideCoinsItem3.

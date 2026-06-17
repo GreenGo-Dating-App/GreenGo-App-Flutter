@@ -10286,7 +10286,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideCoinsItem2 =>
-      '• Priority Connect : 10 pièces  • Boost : 50 pièces  • Message direct : 50 pièces';
+      '• Priority Connect : 10 pièces  • Boost : 50 pièces  • Message direct : 2/jour gratuit, puis 50 pièces';
 
   @override
   String get guideCoinsItem3 =>

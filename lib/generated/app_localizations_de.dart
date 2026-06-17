@@ -10251,7 +10251,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get guideCoinsItem2 =>
-      '• Priority Connect: 10 Münzen  • Boost: 50 Münzen  • Direktnachricht: 50 Münzen';
+      '• Priority Connect: 10 Münzen  • Boost: 50 Münzen  • Direktnachricht: 2/Tag gratis, dann 50 Münzen';
 
   @override
   String get guideCoinsItem3 =>
