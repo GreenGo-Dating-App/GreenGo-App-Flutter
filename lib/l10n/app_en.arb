@@ -5122,5 +5122,9 @@
   "eventsUseThisLocation": "Use this location",
   "profileProgressGrowth": "Progress & Growth",
   "eventsEditEvent": "Edit event",
-  "groupEditName": "Edit group name"
+  "groupEditName": "Edit group name",
+  "groupChangePhoto": "Change group photo",
+  "groupUploadingPhoto": "Uploading photo…",
+  "groupPhotoUpdated": "Group photo updated",
+  "groupPhotoUpdateFailed": "Failed to update group photo"
 }

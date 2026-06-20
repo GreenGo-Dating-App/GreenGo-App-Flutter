@@ -1,8 +1,10 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 
 /// Enhancement #8: Voice Message Widget
-/// For recording and playing voice messages
+/// Plays a voice note from [audioUrl] using audioplayers, with a live
+/// progress waveform and play/pause control.
 class VoiceMessageWidget extends StatefulWidget {
 
   const VoiceMessageWidget({
@@ -23,8 +25,83 @@ class VoiceMessageWidget extends StatefulWidget {
 }
 
 class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
+  AudioPlayer? _player;
   bool _isPlaying = false;
-  final double _progress = 0.0;
+  bool _isLoading = false;
+  double _progress = 0.0;
+  Duration _position = Duration.zero;
+  Duration? _total;
+
+  @override
+  void initState() {
+    super.initState();
+    _total = widget.duration;
+  }
+
+  @override
+  void dispose() {
+    _player?.dispose();
+    super.dispose();
+  }
+
+  AudioPlayer _ensurePlayer() {
+    final existing = _player;
+    if (existing != null) return existing;
+    final p = AudioPlayer();
+    p.onDurationChanged.listen((d) {
+      if (!mounted) return;
+      if (d > Duration.zero) setState(() => _total = d);
+    });
+    p.onPositionChanged.listen((pos) {
+      if (!mounted) return;
+      setState(() {
+        _position = pos;
+        final totalMs = (_total ?? Duration.zero).inMilliseconds;
+        _progress = totalMs > 0
+            ? (pos.inMilliseconds / totalMs).clamp(0.0, 1.0)
+            : 0.0;
+      });
+    });
+    p.onPlayerComplete.listen((_) {
+      if (!mounted) return;
+      setState(() {
+        _isPlaying = false;
+        _progress = 0.0;
+        _position = Duration.zero;
+      });
+    });
+    p.onPlayerStateChanged.listen((state) {
+      if (!mounted) return;
+      setState(() => _isPlaying = state == PlayerState.playing);
+    });
+    _player = p;
+    return p;
+  }
+
+  Future<void> _toggle() async {
+    final url = widget.audioUrl;
+    if (url == null || url.isEmpty) return;
+    final player = _ensurePlayer();
+    try {
+      if (_isPlaying) {
+        await player.pause();
+        widget.onPause?.call();
+      } else {
+        setState(() => _isLoading = true);
+        if (_position > Duration.zero &&
+            player.state == PlayerState.paused) {
+          await player.resume();
+        } else {
+          await player.play(UrlSource(url));
+        }
+        widget.onPlay?.call();
+      }
+    } catch (_) {
+      // ignore playback errors; UI resets below
+    } finally {
+      if (mounted) setState(() => _isLoading = false);
+    }
+  }
 
   String _formatDuration(Duration? duration) {
     if (duration == null) return '0:00';
@@ -44,6 +121,9 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
     final textColor = widget.isCurrentUser
         ? AppColors.deepBlack
         : AppColors.textPrimary;
+    // While playing, show the elapsed time counting up; otherwise the total.
+    final displayDuration =
+        _isPlaying || _position > Duration.zero ? _position : (_total ?? widget.duration);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -56,16 +136,7 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
         children: [
           // Play/Pause button
           GestureDetector(
-            onTap: () {
-              setState(() {
-                _isPlaying = !_isPlaying;
-              });
-              if (_isPlaying) {
-                widget.onPlay?.call();
-              } else {
-                widget.onPause?.call();
-              }
-            },
+            onTap: _isLoading ? null : _toggle,
             child: Container(
               width: 36,
               height: 36,
@@ -73,13 +144,23 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
                 color: iconColor,
                 shape: BoxShape.circle,
               ),
-              child: Icon(
-                _isPlaying ? Icons.pause : Icons.play_arrow,
-                color: widget.isCurrentUser
-                    ? AppColors.richGold
-                    : AppColors.deepBlack,
-                size: 20,
-              ),
+              child: _isLoading
+                  ? Padding(
+                      padding: const EdgeInsets.all(9),
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: widget.isCurrentUser
+                            ? AppColors.richGold
+                            : AppColors.deepBlack,
+                      ),
+                    )
+                  : Icon(
+                      _isPlaying ? Icons.pause : Icons.play_arrow,
+                      color: widget.isCurrentUser
+                          ? AppColors.richGold
+                          : AppColors.deepBlack,
+                      size: 20,
+                    ),
             ),
           ),
           const SizedBox(width: 8),
@@ -111,9 +192,9 @@ class _VoiceMessageWidgetState extends State<VoiceMessageWidget> {
                   ),
                 ),
                 const SizedBox(height: 4),
-                // Duration
+                // Duration (elapsed while playing, total otherwise)
                 Text(
-                  _formatDuration(widget.duration),
+                  _formatDuration(displayDuration),
                   style: TextStyle(
                     color: textColor.withOpacity(0.7),
                     fontSize: 11,

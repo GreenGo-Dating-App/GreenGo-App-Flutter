@@ -19193,6 +19193,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Edit group name'**
   String get groupEditName;
+
+  /// No description provided for @groupChangePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Change group photo'**
+  String get groupChangePhoto;
+
+  /// No description provided for @groupUploadingPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Uploading photo…'**
+  String get groupUploadingPhoto;
+
+  /// No description provided for @groupPhotoUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Group photo updated'**
+  String get groupPhotoUpdated;
+
+  /// No description provided for @groupPhotoUpdateFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to update group photo'**
+  String get groupPhotoUpdateFailed;
 }
 
 class _AppLocalizationsDelegate

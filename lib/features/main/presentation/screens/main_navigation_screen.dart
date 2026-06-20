@@ -147,8 +147,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // Badge counts for bottom nav
   int _newMatchCount = 0;
   int _unreadMessageCount = 0;
+  int _unreadGroupCount = 0;
   StreamSubscription? _matchCountSub;
   StreamSubscription? _messageCountSub;
+  StreamSubscription? _groupCountSub;
 
   // Real-time level-up & achievement listeners
   StreamSubscription? _levelUpSub;
@@ -1241,12 +1243,37 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         setState(() => _unreadMessageCount = count);
       }
     });
+
+    // Group unread badge: per-user inbox threads with unread messages.
+    // Counts groups with unread (Instagram style), excluding ones where the
+    // last message was sent by this user.
+    _groupCountSub = fs
+        .collection('user_group_inbox')
+        .doc(uid)
+        .collection('threads')
+        .snapshots()
+        .listen((snapshot) {
+      if (!mounted) return;
+      var count = 0;
+      for (final doc in snapshot.docs) {
+        final data = doc.data();
+        final unread = (data['unreadCount'] as num?)?.toInt() ?? 0;
+        if (unread <= 0) continue;
+        final lastSenderId = data['lastSenderId'] as String?;
+        if (lastSenderId == uid) continue;
+        count++;
+      }
+      if (mounted && count != _unreadGroupCount) {
+        setState(() => _unreadGroupCount = count);
+      }
+    });
   }
 
   @override
   void dispose() {
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
+    _groupCountSub?.cancel();
     _levelUpSub?.cancel();
     _achievementSub?.cancel();
     WidgetsBinding.instance.removeObserver(this);
@@ -1355,8 +1382,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.groups_outlined),
-              activeIcon: const Icon(Icons.groups),
+              icon: _buildBadgeIcon(Icons.groups_outlined, _unreadGroupCount),
+              activeIcon: _buildBadgeIcon(Icons.groups, _unreadGroupCount),
               label: AppLocalizations.of(context)!.groupsTitle,
             ),
             BottomNavigationBarItem(

@@ -8,6 +8,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
@@ -29,22 +30,26 @@ class GroupChatScreen extends StatelessWidget {
     required this.groupId,
     required this.groupName,
     required this.currentUserId,
+    this.groupPhotoUrl,
   });
 
   final String groupId;
   final String groupName;
   final String currentUserId;
+  final String? groupPhotoUrl;
 
   static Route<void> route({
     required String groupId,
     required String groupName,
     required String currentUserId,
+    String? groupPhotoUrl,
   }) {
     return MaterialPageRoute(
       builder: (_) => GroupChatScreen(
         groupId: groupId,
         groupName: groupName,
         currentUserId: currentUserId,
+        groupPhotoUrl: groupPhotoUrl,
       ),
     );
   }
@@ -58,6 +63,7 @@ class GroupChatScreen extends StatelessWidget {
         groupId: groupId,
         groupName: groupName,
         currentUserId: currentUserId,
+        groupPhotoUrl: groupPhotoUrl,
       ),
     );
   }
@@ -68,10 +74,12 @@ class _GroupChatView extends StatefulWidget {
     required this.groupId,
     required this.groupName,
     required this.currentUserId,
+    this.groupPhotoUrl,
   });
 
   final String groupId;
   final String groupName;
+  final String? groupPhotoUrl;
   final String currentUserId;
 
   @override
@@ -80,11 +88,29 @@ class _GroupChatView extends StatefulWidget {
 
 class _GroupChatViewState extends State<_GroupChatView> {
   final _controller = TextEditingController();
+  final Set<String> _resolvingNames = {};
 
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  /// Resolves display names for any message senders not yet cached, then
+  /// rebuilds so the bubbles show names instead of raw user ids.
+  void _ensureNames(Iterable<String> ids) {
+    final missing = ids
+        .toSet()
+        .where((id) =>
+            id.isNotEmpty &&
+            UserDirectoryService.instance.cached(id) == null &&
+            !_resolvingNames.contains(id))
+        .toList();
+    if (missing.isEmpty) return;
+    _resolvingNames.addAll(missing);
+    UserDirectoryService.instance.resolve(missing).then((_) {
+      if (mounted) setState(() => _resolvingNames.removeAll(missing));
+    });
   }
 
   void _send(BuildContext context) {
@@ -154,11 +180,18 @@ class _GroupChatViewState extends State<_GroupChatView> {
             children: [
               CircleAvatar(
                 radius: 16,
-                child: Text(
-                  widget.groupName.isNotEmpty
-                      ? widget.groupName[0].toUpperCase()
-                      : '#',
-                ),
+                backgroundImage: (widget.groupPhotoUrl != null &&
+                        widget.groupPhotoUrl!.isNotEmpty)
+                    ? NetworkImage(widget.groupPhotoUrl!)
+                    : null,
+                child: (widget.groupPhotoUrl == null ||
+                        widget.groupPhotoUrl!.isEmpty)
+                    ? Text(
+                        widget.groupName.isNotEmpty
+                            ? widget.groupName[0].toUpperCase()
+                            : '#',
+                      )
+                    : null,
               ),
               const SizedBox(width: 10),
               Expanded(
@@ -202,6 +235,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
           }
           final messages =
               state is GroupChatLoaded ? state.messages : <Message>[];
+          _ensureNames(messages.map((m) => m.senderId));
           return Column(
             children: [
               Expanded(
@@ -288,7 +322,7 @@ class _GroupMessageBubble extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(bottom: 2),
                 child: Text(
-                  message.senderId,
+                  UserDirectoryService.instance.nameFor(message.senderId),
                   style: theme.textTheme.labelSmall?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: theme.colorScheme.primary,
