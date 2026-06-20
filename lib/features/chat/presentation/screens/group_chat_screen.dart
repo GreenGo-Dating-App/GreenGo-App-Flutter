@@ -3,11 +3,14 @@ import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
+import 'package:video_player/video_player.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
@@ -148,6 +151,66 @@ class _GroupChatViewState extends State<_GroupChatView> {
     }
   }
 
+  Future<String> _uploadGroupFile(
+      File f, String ext, String contentType) async {
+    final ref = FirebaseStorage.instance
+        .ref()
+        .child('group_media/${widget.groupId}/${const Uuid().v4()}.$ext');
+    await ref.putFile(f, SettableMetadata(contentType: contentType));
+    return ref.getDownloadURL();
+  }
+
+  Future<void> _sendMedia(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
+    final choice = await showModalBottomSheet<String>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Wrap(
+          children: [
+            ListTile(
+              leading: const Icon(Icons.photo),
+              title: Text(l10n.chatPhoto),
+              onTap: () => Navigator.pop(ctx, 'photo'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.videocam),
+              title: Text(l10n.chatVideo),
+              onTap: () => Navigator.pop(ctx, 'video'),
+            ),
+          ],
+        ),
+      ),
+    );
+    if (choice == null) return;
+    final picker = ImagePicker();
+    try {
+      if (choice == 'photo') {
+        final x = await picker.pickImage(
+            source: ImageSource.gallery, imageQuality: 80);
+        if (x == null) return;
+        final file = File(x.path);
+        final valid =
+            await PhotoValidationService().validateImageForSending(file);
+        if (!valid.isValid) {
+          messenger.showSnackBar(
+              SnackBar(content: Text(l10n.photoExplicitContent)));
+          return;
+        }
+        final url = await _uploadGroupFile(file, 'jpg', 'image/jpeg');
+        bloc.add(GroupChatMessageSent(content: url, type: MessageType.image));
+      } else {
+        final x = await picker.pickVideo(source: ImageSource.gallery);
+        if (x == null) return;
+        final url = await _uploadGroupFile(File(x.path), 'mp4', 'video/mp4');
+        bloc.add(GroupChatMessageSent(content: url, type: MessageType.video));
+      }
+    } catch (_) {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+    }
+  }
+
   Future<void> _sendLocation(BuildContext context) async {
     final l10n = AppLocalizations.of(context)!;
     final bloc = context.read<GroupChatBloc>();
@@ -261,6 +324,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                 controller: _controller,
                 onSend: () => _send(context),
                 onAttachLocation: () => _sendLocation(context),
+                onAttachMedia: () => _sendMedia(context),
                 onSendVoice: (file, dur) => _sendVoice(context, file, dur),
               ),
             ],
@@ -346,6 +410,40 @@ class _GroupMessageBubble extends StatelessWidget {
                         milliseconds: message.metadata!['durationMs'] as int)
                     : null,
               )
+            else if (message.type == MessageType.image)
+              GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => _FullImageScreen(url: message.content),
+                )),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.network(
+                    message.content,
+                    width: 200,
+                    fit: BoxFit.cover,
+                    errorBuilder: (_, __, ___) =>
+                        const Icon(Icons.broken_image, size: 60),
+                  ),
+                ),
+              )
+            else if (message.type == MessageType.video)
+              GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => _GroupVideoPlayerScreen(url: message.content),
+                )),
+                child: Container(
+                  width: 200,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Center(
+                    child: Icon(Icons.play_circle_fill,
+                        color: Colors.white, size: 48),
+                  ),
+                ),
+              )
             else
               Text(
                 message.content,
@@ -413,12 +511,14 @@ class _InputBar extends StatelessWidget {
     required this.controller,
     required this.onSend,
     required this.onAttachLocation,
+    required this.onAttachMedia,
     required this.onSendVoice,
   });
 
   final TextEditingController controller;
   final VoidCallback onSend;
   final VoidCallback onAttachLocation;
+  final VoidCallback onAttachMedia;
   final void Function(File file, Duration duration) onSendVoice;
 
   @override
@@ -429,6 +529,11 @@ class _InputBar extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         child: Row(
           children: [
+            IconButton(
+              icon: const Icon(Icons.add_circle_outline),
+              tooltip: AppLocalizations.of(context)!.chatPhoto,
+              onPressed: onAttachMedia,
+            ),
             IconButton(
               icon: const Icon(Icons.location_on_outlined),
               tooltip: AppLocalizations.of(context)!.chatShareLocation,
@@ -459,6 +564,81 @@ class _InputBar extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Full-screen viewer for a shared group image.
+class _FullImageScreen extends StatelessWidget {
+  const _FullImageScreen({required this.url});
+  final String url;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black),
+      body: Center(
+        child: InteractiveViewer(
+          child: Image.network(url),
+        ),
+      ),
+    );
+  }
+}
+
+/// Full-screen player for a shared group video.
+class _GroupVideoPlayerScreen extends StatefulWidget {
+  const _GroupVideoPlayerScreen({required this.url});
+  final String url;
+
+  @override
+  State<_GroupVideoPlayerScreen> createState() =>
+      _GroupVideoPlayerScreenState();
+}
+
+class _GroupVideoPlayerScreenState extends State<_GroupVideoPlayerScreen> {
+  VideoPlayerController? _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(Uri.parse(widget.url))
+      ..initialize().then((_) {
+        if (mounted) {
+          setState(() {});
+          _controller?.play();
+        }
+      });
+  }
+
+  @override
+  void dispose() {
+    _controller?.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _controller;
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(backgroundColor: Colors.black),
+      body: Center(
+        child: (c != null && c.value.isInitialized)
+            ? AspectRatio(
+                aspectRatio: c.value.aspectRatio,
+                child: VideoPlayer(c),
+              )
+            : const CircularProgressIndicator(color: Colors.white),
+      ),
+      floatingActionButton: (c != null && c.value.isInitialized)
+          ? FloatingActionButton(
+              onPressed: () => setState(() =>
+                  c.value.isPlaying ? c.pause() : c.play()),
+              child: Icon(c.value.isPlaying ? Icons.pause : Icons.play_arrow),
+            )
+          : null,
     );
   }
 }
