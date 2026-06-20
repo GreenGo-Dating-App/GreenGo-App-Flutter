@@ -10744,4 +10744,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsLinkLabelHint => 'Label (optional)';
+
+  @override
+  String get eventsPickLocation => 'Pick location';
+
+  @override
+  String get eventsSearchAddress => 'Search address';
+
+  @override
+  String get eventsUseThisLocation => 'Use this location';
 }

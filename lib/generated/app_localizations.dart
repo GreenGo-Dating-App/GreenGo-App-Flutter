@@ -19139,6 +19139,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Label (optional)'**
   String get eventsLinkLabelHint;
+
+  /// No description provided for @eventsPickLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick location'**
+  String get eventsPickLocation;
+
+  /// No description provided for @eventsSearchAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Search address'**
+  String get eventsSearchAddress;
+
+  /// No description provided for @eventsUseThisLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this location'**
+  String get eventsUseThisLocation;
 }
 
 class _AppLocalizationsDelegate
