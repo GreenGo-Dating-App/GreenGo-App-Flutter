@@ -18767,6 +18767,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue'**
   String get continueToApp;
+
+  /// No description provided for @groupNewGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'New group'**
+  String get groupNewGroup;
+
+  /// No description provided for @groupCreate.
+  ///
+  /// In en, this message translates to:
+  /// **'Create'**
+  String get groupCreate;
+
+  /// No description provided for @groupNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Group name'**
+  String get groupNameLabel;
+
+  /// No description provided for @groupSelectedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} selected'**
+  String groupSelectedCount(int count);
+
+  /// No description provided for @groupInviteByNickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite by nickname'**
+  String get groupInviteByNickname;
+
+  /// No description provided for @groupNicknameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a nickname'**
+  String get groupNicknameHint;
+
+  /// No description provided for @groupNoContacts.
+  ///
+  /// In en, this message translates to:
+  /// **'No contacts to add yet'**
+  String get groupNoContacts;
+
+  /// No description provided for @groupNoOneFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No one found with that nickname'**
+  String get groupNoOneFound;
+
+  /// No description provided for @groupAlreadyAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Already added'**
+  String get groupAlreadyAdded;
+
+  /// No description provided for @groupAddedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Added {count}'**
+  String groupAddedCount(int count);
+
+  /// No description provided for @groupSearchFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Search failed'**
+  String get groupSearchFailed;
+
+  /// No description provided for @groupInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Group info'**
+  String get groupInfo;
+
+  /// No description provided for @groupMembersCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} members'**
+  String groupMembersCount(int count);
+
+  /// No description provided for @groupAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get groupAdmin;
+
+  /// No description provided for @groupYou.
+  ///
+  /// In en, this message translates to:
+  /// **'You'**
+  String get groupYou;
+
+  /// No description provided for @groupLeave.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave group'**
+  String get groupLeave;
+
+  /// No description provided for @groupLeaveConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave group?'**
+  String get groupLeaveConfirmTitle;
+
+  /// No description provided for @groupLeaveConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You will stop receiving messages from this group.'**
+  String get groupLeaveConfirmBody;
+
+  /// No description provided for @groupCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get groupCancel;
+
+  /// No description provided for @groupLeaveAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave'**
+  String get groupLeaveAction;
+
+  /// No description provided for @groupReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report group'**
+  String get groupReport;
+
+  /// No description provided for @groupReportConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this group to our safety team?'**
+  String get groupReportConfirmBody;
+
+  /// No description provided for @groupReportAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get groupReportAction;
+
+  /// No description provided for @groupReportSubmitted.
+  ///
+  /// In en, this message translates to:
+  /// **'Report submitted'**
+  String get groupReportSubmitted;
+
+  /// No description provided for @groupMessageHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Message…'**
+  String get groupMessageHint;
+
+  /// No description provided for @groupSayHello.
+  ///
+  /// In en, this message translates to:
+  /// **'Say hello to the group 👋'**
+  String get groupSayHello;
+
+  /// No description provided for @groupLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load this group'**
+  String get groupLoadError;
+
+  /// No description provided for @chatLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get chatLocation;
+
+  /// No description provided for @chatShareLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Share location'**
+  String get chatShareLocation;
+
+  /// No description provided for @chatLocationDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is required to share your position'**
+  String get chatLocationDenied;
+
+  /// No description provided for @chatOpenInMaps.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get chatOpenInMaps;
 }
 
 class _AppLocalizationsDelegate

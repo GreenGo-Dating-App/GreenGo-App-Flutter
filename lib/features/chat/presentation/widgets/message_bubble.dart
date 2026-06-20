@@ -5,7 +5,9 @@ import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
+import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/location_share_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/chat_learning_service.dart';
@@ -907,6 +909,54 @@ class _MessageBubbleState extends State<MessageBubble> {
             color: AppColors.textTertiary,
             fontSize: 13,
             fontStyle: FontStyle.italic,
+          ),
+        );
+
+      case MessageType.location:
+        final loc = LocationShareService.parse(message.content);
+        return InkWell(
+          onTap: loc == null
+              ? null
+              : () => launchUrl(
+                    Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
+                    mode: LaunchMode.externalApplication,
+                  ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.location_on,
+                size: 20,
+                color:
+                    isCurrentUser ? AppColors.deepBlack : AppColors.richGold,
+              ),
+              const SizedBox(width: 6),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.chatLocation,
+                    style: TextStyle(
+                      color: isCurrentUser
+                          ? AppColors.deepBlack
+                          : AppColors.textPrimary,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Text(
+                    l10n.chatOpenInMaps,
+                    style: TextStyle(
+                      color: isCurrentUser
+                          ? AppColors.deepBlack
+                          : AppColors.textSecondary,
+                      fontSize: 12,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         );
 

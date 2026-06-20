@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/conversation.dart';
+import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
 import 'message_model.dart';
 
@@ -37,6 +38,11 @@ class ConversationModel extends Conversation {
     super.favorites,
     super.isDeleted,
     super.deletedFor,
+    super.isGroup,
+    super.participants,
+    super.groupInfo,
+    super.roles,
+    super.unreadCounts,
   });
 
   /// Create from Conversation entity
@@ -72,6 +78,11 @@ class ConversationModel extends Conversation {
       favorites: conversation.favorites,
       isDeleted: conversation.isDeleted,
       deletedFor: conversation.deletedFor,
+      isGroup: conversation.isGroup,
+      participants: conversation.participants,
+      groupInfo: conversation.groupInfo,
+      roles: conversation.roles,
+      unreadCounts: conversation.unreadCounts,
     );
   }
 
@@ -171,6 +182,20 @@ class ConversationModel extends Conversation {
           : null,
       isDeleted: data['isDeleted'] as bool? ?? false,
       deletedFor: data['deletedFor'] as Map<String, dynamic>?,
+      isGroup: data['isGroup'] as bool? ?? false,
+      participants: data['participants'] != null
+          ? List<String>.from(data['participants'] as List)
+          : null,
+      groupInfo: data['groupInfo'] != null
+          ? GroupInfo.fromMap(
+              Map<String, dynamic>.from(data['groupInfo'] as Map))
+          : null,
+      roles: data['roles'] != null
+          ? Map<String, String>.from(data['roles'] as Map)
+          : null,
+      unreadCounts: data['unreadCounts'] != null
+          ? Map<String, int>.from(data['unreadCounts'] as Map)
+          : null,
     );
   }
 
@@ -245,6 +270,39 @@ class ConversationModel extends Conversation {
     };
   }
 
+  /// Convert to a document for the SEPARATE `groups` collection.
+  ///
+  /// Group chat is fully isolated from the existing 1:1 `conversations`
+  /// collection and its Cloud Functions — nothing here writes into the legacy
+  /// schema. Only the group-relevant fields are persisted.
+  Map<String, dynamic> toGroupFirestore() {
+    final lastMessageData = lastMessage != null
+        ? {
+            'messageId': lastMessage!.messageId,
+            'senderId': lastMessage!.senderId,
+            'content': lastMessage!.content,
+            'type': lastMessage!.type.value,
+            'sentAt': Timestamp.fromDate(lastMessage!.sentAt),
+          }
+        : null;
+
+    return {
+      'conversationType': ConversationType.group.name,
+      'isGroup': true,
+      'participants': participantIds,
+      'groupInfo': groupInfo?.toMap(),
+      'roles': roles,
+      'unreadCounts': unreadCounts,
+      'lastMessage': lastMessageData,
+      'lastMessageAt':
+          lastMessageAt != null ? Timestamp.fromDate(lastMessageAt!) : null,
+      'createdAt': Timestamp.fromDate(createdAt),
+      'theme': theme.name,
+      'settings': settings,
+      'isDeleted': isDeleted,
+    };
+  }
+
   /// Convert to JSON
   Map<String, dynamic> toJson() {
     return {
@@ -296,6 +354,11 @@ class ConversationModel extends Conversation {
       favorites: favorites,
       isDeleted: isDeleted,
       deletedFor: deletedFor,
+      isGroup: isGroup,
+      participants: participants,
+      groupInfo: groupInfo,
+      roles: roles,
+      unreadCounts: unreadCounts,
     );
   }
 }
