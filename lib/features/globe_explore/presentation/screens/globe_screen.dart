@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dartz/dartz.dart';
+import 'package:dartz/dartz.dart' hide State;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -10,8 +10,10 @@ import '../../../../core/error/failures.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../events/domain/entities/event.dart';
+import '../../../events/domain/entities/event_country_stat.dart';
 import '../../../events/domain/repositories/events_repository.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
+import '../../data/country_centroids.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../domain/entities/globe_user.dart';
@@ -21,10 +23,45 @@ import '../bloc/globe_state.dart';
 import '../widgets/globe_country_search.dart';
 import '../widgets/globe_map_view.dart';
 
-class GlobeScreen extends StatelessWidget {
-
+class GlobeScreen extends StatefulWidget {
   const GlobeScreen({required this.userId, super.key});
   final String userId;
+
+  @override
+  State<GlobeScreen> createState() => _GlobeScreenState();
+}
+
+class _GlobeScreenState extends State<GlobeScreen> {
+  /// Exposed so the existing helper methods keep using `userId` unchanged.
+  String get userId => widget.userId;
+
+  /// Globe mode: false = My Network (people), true = Events (worldwide).
+  bool _eventsMode = false;
+  List<EventCountryStat> _eventStats = const [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadEventStats();
+  }
+
+  Future<void> _loadEventStats() async {
+    final result = await di.sl<EventsRepository>().getCountryStats();
+    if (!mounted) return;
+    result.fold((_) {}, (stats) => setState(() => _eventStats = stats));
+  }
+
+  void _openCountryEvents(BuildContext context, String country) {
+    final key = countryNameNormalization[country] ?? country;
+    final c = countryCentroids[key];
+    context.read<GlobeBloc>().add(
+          GlobeCountryTapped(
+            countryName: country,
+            latitude: c != null ? c[0] : 0,
+            longitude: c != null ? c[1] : 0,
+          ),
+        );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +78,18 @@ class GlobeScreen extends StatelessWidget {
         elevation: 0,
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
+          // My Network (people) <-> Events (worldwide) toggle.
+          IconButton(
+            icon: Icon(
+              _eventsMode ? Icons.people : Icons.event,
+              color: _eventsMode ? AppColors.textSecondary : AppColors.richGold,
+              size: 22,
+            ),
+            tooltip: _eventsMode
+                ? AppLocalizations.of(context)!.globeMyNetwork
+                : AppLocalizations.of(context)!.eventsTitle,
+            onPressed: () => setState(() => _eventsMode = !_eventsMode),
+          ),
           IconButton(
             icon: const Icon(Icons.refresh,
                 color: AppColors.textSecondary, size: 22),
@@ -89,8 +138,12 @@ class GlobeScreen extends StatelessWidget {
               children: [
                 GlobeMapView(
                   data: data,
-                  showMatched: true,
+                  showMatched: !_eventsMode,
                   showDiscovery: false,
+                  showEvents: _eventsMode,
+                  eventStats: _eventStats,
+                  onEventCountryTapped: (country) =>
+                      _openCountryEvents(context, country),
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(
