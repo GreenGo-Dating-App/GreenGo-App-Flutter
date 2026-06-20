@@ -31,6 +31,33 @@ enum RSVPStatus {
   notGoing,
 }
 
+/// Event visibility: public events are discoverable by anyone; private events
+/// are only visible to invitees/attendees and people with the link.
+enum EventVisibility {
+  public,
+  private,
+}
+
+extension EventVisibilityExtension on EventVisibility {
+  String get value => name;
+  static EventVisibility fromString(String? v) => EventVisibility.values
+      .firstWhere((e) => e.name == v, orElse: () => EventVisibility.public);
+}
+
+/// An external link associated with an event (tickets, website, map, etc.).
+class ExternalLink extends Equatable {
+  const ExternalLink({required this.url, this.label});
+  final String url;
+  final String? label;
+
+  Map<String, dynamic> toMap() => {'url': url, 'label': label};
+  factory ExternalLink.fromMap(Map<String, dynamic> m) =>
+      ExternalLink(url: m['url'] as String? ?? '', label: m['label'] as String?);
+
+  @override
+  List<Object?> get props => [url, label];
+}
+
 /// Event Entity
 /// Local events and activities for users to meet
 class Event extends Equatable {
@@ -57,8 +84,13 @@ class Event extends Equatable {
     this.languages = const [],
     this.languagePairs,
     this.city,
+    this.country,
     this.attendeeCount = 0,
     this.updatedAt,
+    this.visibility = EventVisibility.public,
+    this.externalLinks = const [],
+    this.isFeatured = false,
+    this.featuredUntil,
   });
   final String id;
   final String organizerId;
@@ -89,14 +121,29 @@ class Event extends Equatable {
   final List<String> languages;
   final String? languagePairs;
   final String? city;
+  final String? country;
   final int attendeeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
+  final EventVisibility visibility;
+  final List<ExternalLink> externalLinks;
+  // Promotion: featured/boosted events surface first in discovery.
+  final bool isFeatured;
+  final DateTime? featuredUntil;
+
+  /// Whether the event is currently boosted/featured.
+  bool get isCurrentlyFeatured =>
+      isFeatured &&
+      (featuredUntil == null || featuredUntil!.isAfter(DateTime.now()));
 
   int get goingCount => attendees.where((a) => a.status == RSVPStatus.going).length;
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
+  /// `maxAttendees <= 0` means unlimited capacity.
+  bool get isUnlimited => maxAttendees <= 0;
   int get spotsLeft => maxAttendees - goingCount;
-  bool get isFull => spotsLeft <= 0;
+  bool get isFull => !isUnlimited && spotsLeft <= 0;
+  bool get isPublic => visibility == EventVisibility.public;
+  bool get isPrivate => visibility == EventVisibility.private;
   bool get isFree => price == null || price == 0;
   bool get isUpcoming => startDate.isAfter(DateTime.now());
   bool get isOngoing => DateTime.now().isAfter(startDate) && DateTime.now().isBefore(endDate);
@@ -132,9 +179,14 @@ class Event extends Equatable {
         languages,
         languagePairs,
         city,
+        country,
         attendeeCount,
         createdAt,
         updatedAt,
+        visibility,
+        externalLinks,
+        isFeatured,
+        featuredUntil,
       ];
 
   Event copyWith({
@@ -167,9 +219,14 @@ class Event extends Equatable {
     List<String>? languages,
     String? languagePairs,
     String? city,
+    String? country,
     int? attendeeCount,
     DateTime? createdAt,
     DateTime? updatedAt,
+    EventVisibility? visibility,
+    List<ExternalLink>? externalLinks,
+    bool? isFeatured,
+    DateTime? featuredUntil,
   }) {
     return Event(
       id: id ?? this.id,
@@ -201,9 +258,14 @@ class Event extends Equatable {
       languages: languages ?? this.languages,
       languagePairs: languagePairs ?? this.languagePairs,
       city: city ?? this.city,
+      country: country ?? this.country,
       attendeeCount: attendeeCount ?? this.attendeeCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
+      visibility: visibility ?? this.visibility,
+      externalLinks: externalLinks ?? this.externalLinks,
+      isFeatured: isFeatured ?? this.isFeatured,
+      featuredUntil: featuredUntil ?? this.featuredUntil,
     );
   }
 }
@@ -218,6 +280,10 @@ class EventAttendee extends Equatable {
     required this.userName,
     required this.status, required this.rsvpDate, this.userPhotoUrl,
     this.isApproved = false,
+    this.isInvisible = false,
+    this.isAnonymous = false,
+    this.muteNotifications = false,
+    this.visibleToOrganizerOnly = false,
   });
   final String id;
   final String eventId;
@@ -227,6 +293,55 @@ class EventAttendee extends Equatable {
   final RSVPStatus status;
   final DateTime rsvpDate;
   final bool isApproved;
+
+  // ---- Attendee privacy controls (more control for the user) ----
+  /// Hidden from everyone's attendee roster (still counted by the organizer).
+  final bool isInvisible;
+  /// Shown without name/photo ("Someone") when visible to others.
+  final bool isAnonymous;
+  /// Opt out of event broadcasts / notifications.
+  final bool muteNotifications;
+  /// Invisible to other attendees, but the organizer can still see this RSVP.
+  final bool visibleToOrganizerOnly;
+
+  /// Whether this RSVP should be shown to [viewerId] given the [organizerId].
+  bool isVisibleTo(String viewerId, String organizerId) {
+    if (viewerId == userId) return true; // always see yourself
+    if (viewerId == organizerId) return true; // organizer sees everyone
+    if (isInvisible || visibleToOrganizerOnly) return false;
+    return true;
+  }
+
+  /// Display name honoring anonymity (use for non-self, non-organizer viewers).
+  String displayNameFor(String viewerId, String organizerId) {
+    if (viewerId == userId || viewerId == organizerId) return userName;
+    return isAnonymous ? 'Someone' : userName;
+  }
+
+  EventAttendee copyWith({
+    RSVPStatus? status,
+    bool? isApproved,
+    bool? isInvisible,
+    bool? isAnonymous,
+    bool? muteNotifications,
+    bool? visibleToOrganizerOnly,
+  }) {
+    return EventAttendee(
+      id: id,
+      eventId: eventId,
+      userId: userId,
+      userName: userName,
+      userPhotoUrl: userPhotoUrl,
+      status: status ?? this.status,
+      rsvpDate: rsvpDate,
+      isApproved: isApproved ?? this.isApproved,
+      isInvisible: isInvisible ?? this.isInvisible,
+      isAnonymous: isAnonymous ?? this.isAnonymous,
+      muteNotifications: muteNotifications ?? this.muteNotifications,
+      visibleToOrganizerOnly:
+          visibleToOrganizerOnly ?? this.visibleToOrganizerOnly,
+    );
+  }
 
   @override
   List<Object?> get props => [
@@ -238,5 +353,9 @@ class EventAttendee extends Equatable {
         status,
         rsvpDate,
         isApproved,
+        isInvisible,
+        isAnonymous,
+        muteNotifications,
+        visibleToOrganizerOnly,
       ];
 }

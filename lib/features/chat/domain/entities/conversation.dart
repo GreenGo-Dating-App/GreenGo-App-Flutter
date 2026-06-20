@@ -312,6 +312,8 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
         return '🔒 Album revoked';
       case MessageType.location:
         return '📍 Location';
+      case MessageType.event:
+        return '📅 Event';
     }
   }
 

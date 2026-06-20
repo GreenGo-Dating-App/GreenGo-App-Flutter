@@ -10641,4 +10641,93 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Open in Maps';
+
+  @override
+  String get eventsSearchHint => 'Search by country, city or name';
+
+  @override
+  String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'View event';
+
+  @override
+  String get eventLoadError => 'Couldn\'t load this event';
+
+  @override
+  String get eventShare => 'Share event';
+
+  @override
+  String get eventShared => 'Event shared';
+
+  @override
+  String get eventShareEmpty => 'No chats or groups to share with yet';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Unlimited attendees';
+
+  @override
+  String get eventsPrivateEvent => 'Private event';
+
+  @override
+  String get eventsExternalLinks => 'Links';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Add link';
+
+  @override
+  String get tierLimitTitle => 'Upgrade to create more';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Your plan allows $max events. Upgrade to create more.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Your plan allows $max groups. Upgrade to create more.';
+  }
+
+  @override
+  String get groupsTitle => 'Groups';
+
+  @override
+  String get profileRankingSubtitle => 'See the global leaderboard';
+
+  @override
+  String get eventBroadcastTooltip => 'Broadcast to everyone';
+
+  @override
+  String get eventBroadcastHint => 'Announcement to all attendees…';
+
+  @override
+  String get eventBroadcastLabel => 'Announcement';
+
+  @override
+  String get eventsFeatured => 'Featured';
+
+  @override
+  String get eventsInsufficientCoins => 'Not enough coins';
+
+  @override
+  String get eventsConfirmAction => 'Confirm';
+
+  @override
+  String get eventsBoost => 'Boost';
+
+  @override
+  String get eventsBoosted => 'Event featured!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Join this event for $cost coins?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Feature this event for $cost coins for 7 days?';
+  }
 }

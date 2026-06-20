@@ -10741,6 +10741,95 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Abrir no Maps';
+
+  @override
+  String get eventsSearchHint => 'Pesquisar por país, cidade ou nome';
+
+  @override
+  String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'Ver evento';
+
+  @override
+  String get eventLoadError => 'Não foi possível carregar este evento';
+
+  @override
+  String get eventShare => 'Partilhar evento';
+
+  @override
+  String get eventShared => 'Evento partilhado';
+
+  @override
+  String get eventShareEmpty => 'Ainda não há chats ou grupos para partilhar';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Participantes ilimitados';
+
+  @override
+  String get eventsPrivateEvent => 'Evento privado';
+
+  @override
+  String get eventsExternalLinks => 'Ligações';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Adicionar ligação';
+
+  @override
+  String get tierLimitTitle => 'Faz upgrade para criar mais';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'O teu plano permite $max eventos. Faz upgrade para criar mais.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'O teu plano permite $max grupos. Faz upgrade para criar mais.';
+  }
+
+  @override
+  String get groupsTitle => 'Grupos';
+
+  @override
+  String get profileRankingSubtitle => 'Ver a classificação global';
+
+  @override
+  String get eventBroadcastTooltip => 'Transmitir a todos';
+
+  @override
+  String get eventBroadcastHint => 'Anúncio para todos os participantes…';
+
+  @override
+  String get eventBroadcastLabel => 'Anúncio';
+
+  @override
+  String get eventsFeatured => 'Destaque';
+
+  @override
+  String get eventsInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get eventsConfirmAction => 'Confirmar';
+
+  @override
+  String get eventsBoost => 'Destacar';
+
+  @override
+  String get eventsBoosted => 'Evento destacado!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Participar neste evento por $cost moedas?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Destacar este evento por $cost moedas durante 7 dias?';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21182,4 +21271,94 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatOpenInMaps => 'Abrir no Maps';
+
+  @override
+  String get eventsSearchHint => 'Buscar por país, cidade ou nome';
+
+  @override
+  String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'Ver evento';
+
+  @override
+  String get eventLoadError => 'Não foi possível carregar este evento';
+
+  @override
+  String get eventShare => 'Compartilhar evento';
+
+  @override
+  String get eventShared => 'Evento compartilhado';
+
+  @override
+  String get eventShareEmpty =>
+      'Ainda não há chats ou grupos para compartilhar';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Participantes ilimitados';
+
+  @override
+  String get eventsPrivateEvent => 'Evento privado';
+
+  @override
+  String get eventsExternalLinks => 'Links';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Adicionar link';
+
+  @override
+  String get tierLimitTitle => 'Faça upgrade para criar mais';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Seu plano permite $max eventos. Faça upgrade para criar mais.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Seu plano permite $max grupos. Faça upgrade para criar mais.';
+  }
+
+  @override
+  String get groupsTitle => 'Grupos';
+
+  @override
+  String get profileRankingSubtitle => 'Ver o ranking global';
+
+  @override
+  String get eventBroadcastTooltip => 'Transmitir para todos';
+
+  @override
+  String get eventBroadcastHint => 'Anúncio para todos os participantes…';
+
+  @override
+  String get eventBroadcastLabel => 'Anúncio';
+
+  @override
+  String get eventsFeatured => 'Destaque';
+
+  @override
+  String get eventsInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get eventsConfirmAction => 'Confirmar';
+
+  @override
+  String get eventsBoost => 'Destacar';
+
+  @override
+  String get eventsBoosted => 'Evento destacado!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Participar deste evento por $cost moedas?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Destacar este evento por $cost moedas por 7 dias?';
+  }
 }

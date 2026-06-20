@@ -53,6 +53,21 @@ export {
   onGroupParticipantsChanged,
 } from './group_chat/membership';
 
+// Events — per-country aggregation for the globe.
+export {
+  onEventWriteUpdateCountryStats,
+} from './events/country_aggregate';
+
+// Events — admin broadcast fan-out.
+export {
+  onEventBroadcastCreated,
+} from './events/broadcast';
+
+// Events — scheduled reminders.
+export {
+  sendEventReminders,
+} from './events/reminders';
+
 // Backup and Export Functions
 export {
   backupConversation,

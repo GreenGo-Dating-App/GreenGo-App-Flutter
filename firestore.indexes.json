@@ -1,6 +1,16 @@
 {
   "indexes": [
     {
+      "collectionGroup": "events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "country", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "visibility", "order": "ASCENDING" },
+        { "fieldPath": "attendeeCount", "order": "DESCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "profiles",
       "queryScope": "COLLECTION",
       "fields": [

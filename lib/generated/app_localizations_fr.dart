@@ -10810,4 +10810,94 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Ouvrir dans Maps';
+
+  @override
+  String get eventsSearchHint => 'Rechercher par pays, ville ou nom';
+
+  @override
+  String get eventsSortPopular => 'Populaire';
+
+  @override
+  String get eventViewEvent => 'Voir l\'événement';
+
+  @override
+  String get eventLoadError => 'Impossible de charger cet événement';
+
+  @override
+  String get eventShare => 'Partager l\'événement';
+
+  @override
+  String get eventShared => 'Événement partagé';
+
+  @override
+  String get eventShareEmpty =>
+      'Aucun chat ou groupe pour partager pour l\'instant';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Participants illimités';
+
+  @override
+  String get eventsPrivateEvent => 'Événement privé';
+
+  @override
+  String get eventsExternalLinks => 'Liens';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Ajouter un lien';
+
+  @override
+  String get tierLimitTitle => 'Améliorez votre offre pour en créer plus';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Votre offre autorise $max événements. Améliorez-la pour en créer plus.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Votre offre autorise $max groupes. Améliorez-la pour en créer plus.';
+  }
+
+  @override
+  String get groupsTitle => 'Groupes';
+
+  @override
+  String get profileRankingSubtitle => 'Voir le classement mondial';
+
+  @override
+  String get eventBroadcastTooltip => 'Diffuser à tous';
+
+  @override
+  String get eventBroadcastHint => 'Annonce à tous les participants…';
+
+  @override
+  String get eventBroadcastLabel => 'Annonce';
+
+  @override
+  String get eventsFeatured => 'À la une';
+
+  @override
+  String get eventsInsufficientCoins => 'Pas assez de pièces';
+
+  @override
+  String get eventsConfirmAction => 'Confirmer';
+
+  @override
+  String get eventsBoost => 'Booster';
+
+  @override
+  String get eventsBoosted => 'Événement mis en avant !';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Rejoindre cet événement pour $cost pièces ?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Mettre cet événement en avant pour $cost pièces pendant 7 jours ?';
+  }
 }

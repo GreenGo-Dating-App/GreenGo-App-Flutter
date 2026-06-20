@@ -12,6 +12,10 @@ class EventAttendeeModel extends EventAttendee {
     required super.userName,
     required super.status, required super.rsvpDate, super.userPhotoUrl,
     super.isApproved = false,
+    super.isInvisible = false,
+    super.isAnonymous = false,
+    super.muteNotifications = false,
+    super.visibleToOrganizerOnly = false,
   });
 
   /// Create from EventAttendee entity
@@ -25,6 +29,10 @@ class EventAttendeeModel extends EventAttendee {
       status: attendee.status,
       rsvpDate: attendee.rsvpDate,
       isApproved: attendee.isApproved,
+      isInvisible: attendee.isInvisible,
+      isAnonymous: attendee.isAnonymous,
+      muteNotifications: attendee.muteNotifications,
+      visibleToOrganizerOnly: attendee.visibleToOrganizerOnly,
     );
   }
 
@@ -45,6 +53,10 @@ class EventAttendeeModel extends EventAttendee {
       status: _parseRsvpStatus(json['status'] as String?),
       rsvpDate: _parseDateTime(json['rsvpDate']),
       isApproved: json['isApproved'] as bool? ?? false,
+      isInvisible: json['isInvisible'] as bool? ?? false,
+      isAnonymous: json['isAnonymous'] as bool? ?? false,
+      muteNotifications: json['muteNotifications'] as bool? ?? false,
+      visibleToOrganizerOnly: json['visibleToOrganizerOnly'] as bool? ?? false,
     );
   }
 
@@ -58,6 +70,10 @@ class EventAttendeeModel extends EventAttendee {
       'status': status.name,
       'rsvpDate': Timestamp.fromDate(rsvpDate),
       'isApproved': isApproved,
+      'isInvisible': isInvisible,
+      'isAnonymous': isAnonymous,
+      'muteNotifications': muteNotifications,
+      'visibleToOrganizerOnly': visibleToOrganizerOnly,
     };
   }
 

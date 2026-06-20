@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/event.dart';
+import '../../domain/entities/event_country_stat.dart';
 import '../../domain/repositories/events_repository.dart';
 import '../datasources/events_remote_datasource.dart';
 
@@ -97,10 +98,22 @@ class EventsRepositoryImpl implements EventsRepository {
   Future<Either<Failure, void>> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  ) async {
+    String status, {
+    bool isInvisible = false,
+    bool isAnonymous = false,
+    bool muteNotifications = false,
+    bool visibleToOrganizerOnly = false,
+  }) async {
     try {
-      await remoteDataSource.rsvpEvent(eventId, userId, status);
+      await remoteDataSource.rsvpEvent(
+        eventId,
+        userId,
+        status,
+        isInvisible: isInvisible,
+        isAnonymous: isAnonymous,
+        muteNotifications: muteNotifications,
+        visibleToOrganizerOnly: visibleToOrganizerOnly,
+      );
       return const Right(null);
     } on ServerException catch (e) {
       debugPrint('ServerException in rsvpEvent: ${e.message}');
@@ -176,6 +189,51 @@ class EventsRepositoryImpl implements EventsRepository {
       return Left(ServerFailure(e.message));
     } catch (e) {
       debugPrint('Error in getUserEvents: $e');
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Event>>> searchEvents(String query) async {
+    try {
+      final events = await remoteDataSource.searchEvents(query);
+      return Right(events);
+    } on ServerException catch (e) {
+      debugPrint('ServerException in searchEvents: ${e.message}');
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      debugPrint('Error in searchEvents: $e');
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<EventCountryStat>>> getCountryStats() async {
+    try {
+      return Right(await remoteDataSource.getCountryStats());
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Event>>> getEventsByCountry(
+    String country, {
+    int limit = 10,
+    List<String>? networkUserIds,
+  }) async {
+    try {
+      final events = await remoteDataSource.getEventsByCountry(
+        country,
+        limit: limit,
+        networkUserIds: networkUserIds,
+      );
+      return Right(events);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
       return Left(ServerFailure(e.toString()));
     }
   }
