@@ -4668,6 +4668,10 @@
   "voiceIntroductionSubtitle": "Record a short voice message (optional)",
   "voiceIntroductionTitle": "Voice introduction",
   "voiceMicrophonePermissionRequired": "Microphone permission is required",
+  "voiceMessageTooShort": "Hold to record, release to send",
+  "voiceSlideToCancel": "‹ Slide to cancel",
+  "voiceReleaseToCancel": "Release to cancel",
+  "voiceFailedToSend": "Failed to send voice message",
   "voiceRecordAgain": "Record Again",
   "voiceRecordIntroDescription": "Record a short {seconds} second introduction to let others hear your personality.",
   "@voiceRecordIntroDescription": {

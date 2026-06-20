@@ -17352,6 +17352,30 @@ abstract class AppLocalizations {
   /// **'Microphone permission is required'**
   String get voiceMicrophonePermissionRequired;
 
+  /// No description provided for @voiceMessageTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold to record, release to send'**
+  String get voiceMessageTooShort;
+
+  /// No description provided for @voiceSlideToCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'‹ Slide to cancel'**
+  String get voiceSlideToCancel;
+
+  /// No description provided for @voiceReleaseToCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Release to cancel'**
+  String get voiceReleaseToCancel;
+
+  /// No description provided for @voiceFailedToSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send voice message'**
+  String get voiceFailedToSend;
+
   /// No description provided for @voiceRecordAgain.
   ///
   /// In en, this message translates to:

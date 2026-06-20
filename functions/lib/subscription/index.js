@@ -20,13 +20,23 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleExpiredMemberships = exports.checkExpiringSubscriptions = exports.verifyPurchase = exports.PRODUCT_CONFIG = void 0;
 const https_1 = require("firebase-functions/v2/https");
@@ -46,11 +56,23 @@ exports.PRODUCT_CONFIG = {
     '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
     '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
 };
+// Google Play uses bespoke subscription IDs that differ from the canonical
+// PRODUCT_CONFIG keys (iOS just adds a `subscription_` prefix). Map Play → canonical.
+const PLAY_TO_CANONICAL = {
+    'greengo_base_membership': 'greengo_base_membership',
+    'silver_premium_monthly': '1_month_silver',
+    'greengo_silver_yearly': '1_year_silver',
+    'gold_premium_monthly': '1_month_gold',
+    'greengo_gold_yearly': '1_year_gold',
+    'platinum_vip_monthly': '1_month_platinum',
+    'greengo_platinum_yearly': '1_year_platinum_membership',
+};
 // ========== 0. VERIFY PURCHASE (Callable) ==========
 exports.verifyPurchase = (0, https_1.onCall)({
     memory: '512MiB',
     timeoutSeconds: 30,
 }, async (request) => {
+    var _a;
     // Verify user is authenticated
     if (!request.auth) {
         throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
@@ -67,9 +89,9 @@ exports.verifyPurchase = (0, https_1.onCall)({
     const userEmail = request.auth.token.email || null;
     try {
         (0, utils_1.logInfo)(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
-        // iOS auto-renewable subscription IDs are prefixed `subscription_`;
-        // normalize to the shared catalog key (Android uses the unprefixed IDs).
-        const catalogId = productId.replace(/^subscription_/, '');
+        // Normalize the store product ID to the shared catalog key: iOS prefixes
+        // with `subscription_`; Google Play uses bespoke IDs (PLAY_TO_CANONICAL).
+        const catalogId = (_a = PLAY_TO_CANONICAL[productId]) !== null && _a !== void 0 ? _a : productId.replace(/^subscription_/, '');
         // Look up product configuration
         const config = exports.PRODUCT_CONFIG[catalogId];
         if (!config) {
@@ -89,9 +111,12 @@ exports.verifyPurchase = (0, https_1.onCall)({
             if (!verificationData) {
                 throw new https_1.HttpsError('invalid-argument', 'Missing verificationData for Android purchase');
             }
-            const result = await (0, purchase_verification_1.verifyGooglePlayPurchase)(productId, verificationData);
+            // Memberships are auto-renewable subscriptions → use the Subscriptions
+            // v2 API (not the one-time products API). verificationData is the token.
+            const result = await (0, purchase_verification_1.verifyGooglePlaySubscription)(verificationData);
             verified = result.verified;
             originalTransactionId = verificationData; // Play RTDN matches on purchaseToken
+            storeExpiryMs = result.expiresDateMs;
             if (!verified) {
                 (0, utils_1.logError)(`Google Play verification failed for ${productId}: ${result.error}`);
             }
@@ -148,7 +173,15 @@ exports.verifyPurchase = (0, https_1.onCall)({
         const currentTier = profileData.membershipTier || 'BASIC';
         const currentEndTimestamp = profileData.membershipEndDate;
         const currentEndDate = currentEndTimestamp ? currentEndTimestamp.toDate() : null;
-        const { effectiveTier, newEndDate, newEndTimestamp: endTimestamp } = (0, grants_1.computeMembershipExtension)(currentTier, currentEndDate, tier, durationMs, now.toDate());
+        const extension = (0, grants_1.computeMembershipExtension)(currentTier, currentEndDate, tier, durationMs, now.toDate());
+        const effectiveTier = extension.effectiveTier;
+        // Prefer the store-authoritative expiry. For auto-renewable subscriptions
+        // the store handles upgrades (proration) and renewals, so we set the end
+        // date to the store's expiry rather than stacking durations client-side.
+        const endTimestamp = storeExpiryMs
+            ? admin.firestore.Timestamp.fromMillis(storeExpiryMs)
+            : extension.newEndTimestamp;
+        const newEndDate = endTimestamp.toDate();
         // ── Create subscription record ──
         // `originalTransactionId` is the stable key store renewal/expiry
         // notifications carry (Apple originalTransactionId / Play purchaseToken),

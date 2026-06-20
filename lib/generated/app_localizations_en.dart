@@ -9705,6 +9705,18 @@ class AppLocalizationsEn extends AppLocalizations {
       'Microphone permission is required';
 
   @override
+  String get voiceMessageTooShort => 'Hold to record, release to send';
+
+  @override
+  String get voiceSlideToCancel => '‹ Slide to cancel';
+
+  @override
+  String get voiceReleaseToCancel => 'Release to cancel';
+
+  @override
+  String get voiceFailedToSend => 'Failed to send voice message';
+
+  @override
   String get voiceRecordAgain => 'Record Again';
 
   @override

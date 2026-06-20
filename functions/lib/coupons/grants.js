@@ -12,7 +12,11 @@
  * actually apply a grant to a profile / coin balance.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.summariseGrants = exports.hasBaseGrant = exports.effectiveGrants = exports.validateGrant = exports.VALID_DURATIONS_DAYS = void 0;
+exports.VALID_DURATIONS_DAYS = void 0;
+exports.validateGrant = validateGrant;
+exports.effectiveGrants = effectiveGrants;
+exports.hasBaseGrant = hasBaseGrant;
+exports.summariseGrants = summariseGrants;
 const grants_1 = require("../shared/grants");
 exports.VALID_DURATIONS_DAYS = [7, 14, 30, 60, 90, 180, 365];
 /** Throws a descriptive Error if the grant is malformed. */
@@ -45,7 +49,6 @@ function validateGrant(g, index = 0) {
         }
     }
 }
-exports.validateGrant = validateGrant;
 /**
  * Returns the grants this coupon should apply.
  * - If `coupon.grants` is a non-empty array, use it as-is.
@@ -87,12 +90,10 @@ function effectiveGrants(coupon) {
     }
     return [];
 }
-exports.effectiveGrants = effectiveGrants;
 /** True if the coupon's effective grants include at least one base_membership entry. */
 function hasBaseGrant(coupon) {
     return effectiveGrants(coupon).some((g) => g.kind === 'base_membership');
 }
-exports.hasBaseGrant = hasBaseGrant;
 /** Builds a human-readable summary like "GOLD +30d · BASE +90d · +500 coins". */
 function summariseGrants(grants) {
     const parts = [];
@@ -109,5 +110,4 @@ function summariseGrants(grants) {
     }
     return parts.join(' · ');
 }
-exports.summariseGrants = summariseGrants;
 //# sourceMappingURL=grants.js.map

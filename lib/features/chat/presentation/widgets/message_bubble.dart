@@ -8,6 +8,7 @@ import 'package:video_player/video_player.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -966,6 +967,15 @@ class _MessageBubbleState extends State<MessageBubble> {
           metadata: message.metadata,
           currentUserId: widget.currentUserId ?? '',
           onDark: isCurrentUser,
+        );
+
+      case MessageType.voiceNote:
+        return VoiceMessageWidget(
+          isCurrentUser: isCurrentUser,
+          audioUrl: message.content,
+          duration: (message.metadata?['durationMs'] is int)
+              ? Duration(milliseconds: message.metadata!['durationMs'] as int)
+              : null,
         );
 
       default:

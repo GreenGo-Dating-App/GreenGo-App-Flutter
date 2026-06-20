@@ -29,18 +29,32 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getGooglePlaySubscriptionExpiry = exports.decodeAppStoreNotification = exports.verifyAppStorePurchase = exports.verifyGooglePlayPurchase = void 0;
+exports.verifyGooglePlayPurchase = verifyGooglePlayPurchase;
+exports.verifyGooglePlaySubscription = verifyGooglePlaySubscription;
+exports.verifyAppStorePurchase = verifyAppStorePurchase;
+exports.decodeAppStoreNotification = decodeAppStoreNotification;
+exports.getGooglePlaySubscriptionExpiry = getGooglePlaySubscriptionExpiry;
 const googleapis_1 = require("googleapis");
 const axios_1 = __importDefault(require("axios"));
 const utils_1 = require("./utils");
@@ -102,7 +116,54 @@ async function verifyGooglePlayPurchase(productId, token) {
         return { verified: false, error: msg };
     }
 }
-exports.verifyGooglePlayPurchase = verifyGooglePlayPurchase;
+/**
+ * Verify a Google Play auto-renewable SUBSCRIPTION by its purchase token, using
+ * the Subscriptions v2 API (the products API used by [verifyGooglePlayPurchase]
+ * is for one-time products and fails for subscriptions). Returns the store
+ * expiry so the caller can set entitlement without client-side stacking.
+ */
+async function verifyGooglePlaySubscription(token) {
+    var _a, _b;
+    try {
+        const publisher = await getAndroidPublisher();
+        const res = await publisher.purchases.subscriptionsv2.get({
+            packageName: PACKAGE_NAME,
+            token,
+        });
+        const state = ((_a = res.data) === null || _a === void 0 ? void 0 : _a.subscriptionState) || '';
+        const lineItems = ((_b = res.data) === null || _b === void 0 ? void 0 : _b.lineItems) || [];
+        let latestMs;
+        for (const li of lineItems) {
+            if (li.expiryTime) {
+                const ms = new Date(li.expiryTime).getTime();
+                if (!latestMs || ms > latestMs)
+                    latestMs = ms;
+            }
+        }
+        const valid = state === 'SUBSCRIPTION_STATE_ACTIVE' ||
+            state === 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD' ||
+            state === 'SUBSCRIPTION_STATE_CANCELED' || // canceled but not yet expired
+            (latestMs !== undefined && latestMs > Date.now());
+        if (valid) {
+            (0, utils_1.logInfo)(`Google Play subscription verified: state=${state}`);
+            return { verified: true, expiresDateMs: latestMs, originalTransactionId: token };
+        }
+        return { verified: false, error: `Subscription state: ${state}` };
+    }
+    catch (error) {
+        const msg = (error === null || error === void 0 ? void 0 : error.message) || String(error);
+        const isApiError = msg.includes('403') || msg.includes('401') || msg.includes('not enabled') ||
+            msg.includes('PERMISSION_DENIED') || msg.includes('accessNotConfigured') ||
+            msg.includes('has not been used');
+        if (isApiError) {
+            (0, utils_1.logError)('Google Play subscriptions API not configured — subscription accepted ' +
+                'without server verification. Link the API in Play Console to enable it.', msg);
+            return { verified: true, apiUnavailable: true };
+        }
+        (0, utils_1.logError)('Google Play subscription verification error:', msg);
+        return { verified: false, error: msg };
+    }
+}
 // ========== APP STORE (iOS) VERIFICATION ==========
 let cachedAppleRootCerts = null;
 /**
@@ -191,7 +252,6 @@ async function verifyAppStorePurchase(signedTransaction, expectedProductId, appA
         return { verified: false, error: (error === null || error === void 0 ? void 0 : error.message) || 'App Store verification failed' };
     }
 }
-exports.verifyAppStorePurchase = verifyAppStorePurchase;
 /**
  * Verify + decode an App Store Server Notification V2 `signedPayload` and the
  * transaction it carries. Tries Production then Sandbox (TestFlight/sandbox).
@@ -226,7 +286,6 @@ async function decodeAppStoreNotification(signedPayload, appAppleId) {
         return await tryEnv(Environment.SANDBOX);
     }
 }
-exports.decodeAppStoreNotification = decodeAppStoreNotification;
 /**
  * Look up the current expiry of a Google Play subscription by its purchase
  * token (used to extend entitlement on a renewal RTDN). Returns the latest
@@ -266,5 +325,4 @@ async function getGooglePlaySubscriptionExpiry(token) {
         return { error: msg };
     }
 }
-exports.getGooglePlaySubscriptionExpiry = getGooglePlaySubscriptionExpiry;
 //# sourceMappingURL=purchase_verification.js.map

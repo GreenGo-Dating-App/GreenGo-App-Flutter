@@ -19,15 +19,29 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.grantCoins = exports.grantBaseMembership = exports.grantMembership = exports.computeMembershipExtension = exports.TIER_RANK = void 0;
+exports.TIER_RANK = void 0;
+exports.computeMembershipExtension = computeMembershipExtension;
+exports.grantMembership = grantMembership;
+exports.grantBaseMembership = grantBaseMembership;
+exports.grantCoins = grantCoins;
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("./utils");
 exports.TIER_RANK = {
@@ -62,7 +76,6 @@ function computeMembershipExtension(currentTier, currentEndDate, requestedTier, 
         newEndTimestamp: admin.firestore.Timestamp.fromDate(newEndDate),
     };
 }
-exports.computeMembershipExtension = computeMembershipExtension;
 /**
  * Grants or extends a paid membership tier (SILVER / GOLD / PLATINUM).
  * Applies the never-downgrade extension rule. Updates `profiles/{uid}` and `users/{uid}`.
@@ -90,7 +103,6 @@ async function grantMembership(uid, requestedTier, durationMs) {
     (0, utils_1.logInfo)(`grantMembership uid=${uid} tier=${result.effectiveTier} endDate=${result.newEndDate.toISOString()}`);
     return result;
 }
-exports.grantMembership = grantMembership;
 /**
  * Grants or extends the BASE membership flag (hasBaseMembership + baseMembershipEndDate).
  * Independent of the tier system — a user may have BASE active and any tier active simultaneously.
@@ -114,7 +126,6 @@ async function grantBaseMembership(uid, durationMs) {
     (0, utils_1.logInfo)(`grantBaseMembership uid=${uid} endDate=${newEndDate.toISOString()}`);
     return { newEndDate, newEndTimestamp };
 }
-exports.grantBaseMembership = grantBaseMembership;
 /**
  * Credits coins to a user's balance. Uses the embedded `coinBatches` array shape
  * that `processExpiredCoins` reads, so granted coins are subject to the normal
@@ -180,5 +191,4 @@ async function grantCoins(uid, amount, source, reason, metadata = {}) {
     });
     (0, utils_1.logInfo)(`grantCoins uid=${uid} amount=${amount} source=${source} reason=${reason}`);
 }
-exports.grantCoins = grantCoins;
 //# sourceMappingURL=grants.js.map
