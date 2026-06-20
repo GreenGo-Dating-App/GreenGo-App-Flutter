@@ -10875,4 +10875,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventBroadcastLabel => 'Annonce';
+
+  @override
+  String get eventsFeatured => 'À la une';
 }

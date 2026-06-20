@@ -34,6 +34,8 @@ class EventModel extends Event {
     super.updatedAt,
     super.visibility = EventVisibility.public,
     super.externalLinks = const [],
+    super.isFeatured = false,
+    super.featuredUntil,
   });
 
   /// Create from Event entity
@@ -74,6 +76,8 @@ class EventModel extends Event {
       updatedAt: event.updatedAt,
       visibility: event.visibility,
       externalLinks: event.externalLinks,
+      isFeatured: event.isFeatured,
+      featuredUntil: event.featuredUntil,
     );
   }
 
@@ -128,6 +132,9 @@ class EventModel extends Event {
               .map(ExternalLink.fromMap)
               .toList() ??
           const [],
+      isFeatured: json['isFeatured'] as bool? ?? false,
+      featuredUntil:
+          json['featuredUntil'] != null ? _parseDateTime(json['featuredUntil']) : null,
     );
   }
 
@@ -167,6 +174,9 @@ class EventModel extends Event {
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
       'visibility': visibility.value,
       'externalLinks': externalLinks.map((e) => e.toMap()).toList(),
+      'isFeatured': isFeatured,
+      'featuredUntil':
+          featuredUntil != null ? Timestamp.fromDate(featuredUntil!) : null,
       // Lowercased tokens for name/text search (array-contains, no composite index).
       'searchKeywords': buildSearchKeywords(),
     };

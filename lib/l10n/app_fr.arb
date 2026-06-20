@@ -3658,5 +3658,6 @@
   "profileRankingSubtitle": "Voir le classement mondial",
   "eventBroadcastTooltip": "Diffuser à tous",
   "eventBroadcastHint": "Annonce à tous les participants…",
-  "eventBroadcastLabel": "Annonce"
+  "eventBroadcastLabel": "Annonce",
+  "eventsFeatured": "À la une"
 }

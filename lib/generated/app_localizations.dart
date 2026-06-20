@@ -19073,6 +19073,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Announcement'**
   String get eventBroadcastLabel;
+
+  /// No description provided for @eventsFeatured.
+  ///
+  /// In en, this message translates to:
+  /// **'Featured'**
+  String get eventsFeatured;
 }
 
 class _AppLocalizationsDelegate

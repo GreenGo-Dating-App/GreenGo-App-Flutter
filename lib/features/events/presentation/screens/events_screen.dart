@@ -255,10 +255,16 @@ class _EventsScreenState extends State<EventsScreen>
             e.tags.any((t) => t.toLowerCase().contains(q));
       }).toList();
     }
-    if (_sortByPopularity) {
-      result = [...result]
-        ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
-    }
+    // Featured/boosted events always surface first; then popularity if toggled.
+    result = [...result]..sort((a, b) {
+        if (a.isCurrentlyFeatured != b.isCurrentlyFeatured) {
+          return a.isCurrentlyFeatured ? -1 : 1;
+        }
+        if (_sortByPopularity) {
+          return b.attendeeCount.compareTo(a.attendeeCount);
+        }
+        return 0;
+      });
     return result;
   }
 
@@ -642,6 +648,36 @@ class EventCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // Featured/boosted badge
+                  if (event.isCurrentlyFeatured)
+                    Positioned(
+                      top: 12,
+                      right: 12,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.star,
+                                size: 12, color: Colors.white),
+                            const SizedBox(width: 4),
+                            Text(
+                              AppLocalizations.of(context)!.eventsFeatured,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   // Language badge for language exchange events
                   if (event.category == EventCategory.languageExchange &&
                       event.languagePairs != null)
