@@ -10771,4 +10771,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'In Karten öffnen';
+
+  @override
+  String get eventsSearchHint => 'Nach Land, Stadt oder Name suchen';
+
+  @override
+  String get eventsSortPopular => 'Beliebt';
 }

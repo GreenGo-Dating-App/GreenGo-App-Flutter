@@ -18953,6 +18953,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open in Maps'**
   String get chatOpenInMaps;
+
+  /// No description provided for @eventsSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by country, city or name'**
+  String get eventsSearchHint;
+
+  /// No description provided for @eventsSortPopular.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular'**
+  String get eventsSortPopular;
 }
 
 class _AppLocalizationsDelegate

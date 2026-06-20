@@ -3638,5 +3638,7 @@
   "chatLocation": "Position",
   "chatShareLocation": "Partager la position",
   "chatLocationDenied": "L'autorisation de localisation est requise pour partager votre position",
-  "chatOpenInMaps": "Ouvrir dans Maps"
+  "chatOpenInMaps": "Ouvrir dans Maps",
+  "eventsSearchHint": "Rechercher par pays, ville ou nom",
+  "eventsSortPopular": "Populaire"
 }
