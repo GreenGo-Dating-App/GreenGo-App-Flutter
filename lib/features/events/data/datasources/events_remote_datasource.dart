@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../../../core/error/exceptions.dart';
 import '../../domain/entities/event.dart';
+import '../../domain/entities/event_country_stat.dart';
 import '../models/event_attendee_model.dart';
 import '../models/event_model.dart';
 
@@ -24,7 +25,15 @@ abstract class EventsRemoteDataSource {
 
   Future<void> deleteEvent(String eventId);
 
-  Future<void> rsvpEvent(String eventId, String userId, String status);
+  Future<void> rsvpEvent(
+    String eventId,
+    String userId,
+    String status, {
+    bool isInvisible,
+    bool isAnonymous,
+    bool muteNotifications,
+    bool visibleToOrganizerOnly,
+  });
 
   Future<void> cancelRsvp(String eventId, String userId);
 
@@ -38,11 +47,29 @@ abstract class EventsRemoteDataSource {
 
   Future<List<Event>> getUserEvents(String userId);
 
+  /// Full-text-ish search by name/typology/city (public events only).
+  Future<List<Event>> searchEvents(String query);
+
+  /// Per-country aggregates for the globe (top-3 preview + count per country).
+  Future<List<EventCountryStat>> getCountryStats();
+
+  /// Top public events in a country (for the globe country tap).
+  /// If [networkUserIds] is provided, only events organized by those users are
+  /// returned ("My Network" view).
+  Future<List<Event>> getEventsByCountry(
+    String country, {
+    int limit,
+    List<String>? networkUserIds,
+  });
+
   /// Stream event messages for group chat
   Stream<List<EventChatMessage>> getEventMessages(String eventId);
 
   /// Send a message to event group chat
   Future<void> sendEventMessage(String eventId, EventChatMessage message);
+
+  /// Admin broadcast to everyone in the event (rendered as an announcement).
+  Future<void> broadcastToEvent(String eventId, EventChatMessage message);
 }
 
 /// Event Chat Message (lightweight, for event group chat sub-collection)
@@ -53,6 +80,7 @@ class EventChatMessage {
     required this.senderId,
     required this.senderName,
     required this.text, required this.timestamp, this.senderPhotoUrl,
+    this.isBroadcast = false,
   });
 
   factory EventChatMessage.fromFirestore(DocumentSnapshot doc) {
@@ -66,6 +94,7 @@ class EventChatMessage {
       timestamp: data['timestamp'] is Timestamp
           ? (data['timestamp'] as Timestamp).toDate()
           : DateTime.now(),
+      isBroadcast: data['isBroadcast'] as bool? ?? false,
     );
   }
   final String id;
@@ -75,6 +104,9 @@ class EventChatMessage {
   final String text;
   final DateTime timestamp;
 
+  /// True for admin announcements broadcast to all attendees.
+  final bool isBroadcast;
+
   Map<String, dynamic> toJson() {
     return {
       'senderId': senderId,
@@ -82,6 +114,7 @@ class EventChatMessage {
       'senderPhotoUrl': senderPhotoUrl,
       'text': text,
       'timestamp': Timestamp.fromDate(timestamp),
+      'isBroadcast': isBroadcast,
     };
   }
 }
@@ -139,6 +172,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
       final events = snapshot.docs
           .map(EventModel.fromFirestore)
+          .where((e) => e.isPublic) // private events excluded from discovery
           .toList();
 
       debugPrint('Events loaded: ${events.length} events');
@@ -232,8 +266,12 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   Future<void> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  ) async {
+    String status, {
+    bool isInvisible = false,
+    bool isAnonymous = false,
+    bool muteNotifications = false,
+    bool visibleToOrganizerOnly = false,
+  }) async {
     try {
       // Get user profile for attendee info
       final userDoc =
@@ -255,6 +293,10 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         status: _parseRsvpStatusFromString(status),
         rsvpDate: DateTime.now(),
         isApproved: true,
+        isInvisible: isInvisible,
+        isAnonymous: isAnonymous,
+        muteNotifications: muteNotifications,
+        visibleToOrganizerOnly: visibleToOrganizerOnly,
       );
 
       // Set the attendee in sub-collection (use userId as doc ID for uniqueness)
@@ -333,6 +375,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final events = snapshot.docs
           .map(EventModel.fromFirestore)
           .where((event) {
+        if (!event.isPublic) return false; // private events excluded from discovery
         if (event.latitude == null || event.longitude == null) return false;
         final distance = _calculateDistanceKm(
           lat,
@@ -419,6 +462,108 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error getting user events: $e');
       throw ServerException('Failed to load user events: $e');
+    }
+  }
+
+  @override
+  Future<List<Event>> searchEvents(String query) async {
+    try {
+      final q = query.trim().toLowerCase();
+      if (q.isEmpty) return [];
+      final token = q
+          .split(RegExp(r'[^a-z0-9]+'))
+          .firstWhere((t) => t.length >= 2, orElse: () => '');
+      if (token.isEmpty) return [];
+
+      // Single array-contains (no composite index); refine + visibility on client.
+      final snapshot = await _eventsCollection
+          .where('searchKeywords', arrayContains: token)
+          .limit(50)
+          .get();
+
+      return snapshot.docs
+          .map(EventModel.fromFirestore)
+          .where((e) =>
+              e.status == EventStatus.published && e.isPublic)
+          .toList()
+        ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    } catch (e) {
+      debugPrint('Error searching events: $e');
+      throw ServerException('Failed to search events: $e');
+    }
+  }
+
+  @override
+  Future<List<EventCountryStat>> getCountryStats() async {
+    try {
+      final snap = await _firestore
+          .collection('event_country_stats')
+          .orderBy('count', descending: true)
+          .limit(300)
+          .get();
+      return snap.docs.map((d) {
+        final data = d.data();
+        final top = (data['topEvents'] as List?)
+                ?.whereType<Map<String, dynamic>>()
+                .map(EventPreview.fromMap)
+                .toList() ??
+            const <EventPreview>[];
+        return EventCountryStat(
+          country: data['country'] as String? ?? d.id,
+          count: (data['count'] as num?)?.toInt() ?? 0,
+          topEvents: top,
+        );
+      }).toList();
+    } catch (e) {
+      debugPrint('Error getting country stats: $e');
+      throw ServerException('Failed to load country stats: $e');
+    }
+  }
+
+  @override
+  Future<List<Event>> getEventsByCountry(
+    String country, {
+    int limit = 10,
+    List<String>? networkUserIds,
+  }) async {
+    try {
+      final snap = await _eventsCollection
+          .where('country', isEqualTo: country)
+          .where('status', isEqualTo: EventStatus.published.name)
+          .where('visibility', isEqualTo: 'public')
+          .orderBy('attendeeCount', descending: true)
+          .limit(networkUserIds == null ? limit : 60)
+          .get();
+      var events = snap.docs.map(EventModel.fromFirestore).toList();
+      if (networkUserIds != null) {
+        final net = networkUserIds.toSet();
+        events = events
+            .where((e) => net.contains(e.organizerId))
+            .take(limit)
+            .toList();
+      }
+      return events;
+    } catch (e) {
+      debugPrint('Error getting events by country: $e');
+      throw ServerException('Failed to load events for country: $e');
+    }
+  }
+
+  @override
+  Future<void> broadcastToEvent(
+    String eventId,
+    EventChatMessage message,
+  ) async {
+    // A broadcast is an announcement message; rules restrict this to the
+    // organizer. A Cloud Function fans it out via the per-event FCM topic.
+    try {
+      await _eventsCollection
+          .doc(eventId)
+          .collection('messages')
+          .add(message.toJson());
+    } catch (e) {
+      debugPrint('Error broadcasting to event: $e');
+      throw ServerException('Failed to broadcast: $e');
     }
   }
 

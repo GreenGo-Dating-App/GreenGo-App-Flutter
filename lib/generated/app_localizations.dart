@@ -18953,6 +18953,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open in Maps'**
   String get chatOpenInMaps;
+
+  /// No description provided for @eventsSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by country, city or name'**
+  String get eventsSearchHint;
+
+  /// No description provided for @eventsSortPopular.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular'**
+  String get eventsSortPopular;
+
+  /// No description provided for @eventViewEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'View event'**
+  String get eventViewEvent;
+
+  /// No description provided for @eventLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load this event'**
+  String get eventLoadError;
+
+  /// No description provided for @eventShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share event'**
+  String get eventShare;
+
+  /// No description provided for @eventShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Event shared'**
+  String get eventShared;
+
+  /// No description provided for @eventShareEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No chats or groups to share with yet'**
+  String get eventShareEmpty;
+
+  /// No description provided for @eventsUnlimitedAttendees.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited attendees'**
+  String get eventsUnlimitedAttendees;
+
+  /// No description provided for @eventsPrivateEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Private event'**
+  String get eventsPrivateEvent;
+
+  /// No description provided for @eventsExternalLinks.
+  ///
+  /// In en, this message translates to:
+  /// **'Links'**
+  String get eventsExternalLinks;
+
+  /// No description provided for @eventsLinkUrlHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://…'**
+  String get eventsLinkUrlHint;
+
+  /// No description provided for @eventsAddLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Add link'**
+  String get eventsAddLink;
+
+  /// No description provided for @tierLimitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to create more'**
+  String get tierLimitTitle;
+
+  /// No description provided for @tierLimitEventsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan allows {max} events. Upgrade to create more.'**
+  String tierLimitEventsBody(int max);
+
+  /// No description provided for @tierLimitGroupsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan allows {max} groups. Upgrade to create more.'**
+  String tierLimitGroupsBody(int max);
+
+  /// No description provided for @groupsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get groupsTitle;
+
+  /// No description provided for @profileRankingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See the global leaderboard'**
+  String get profileRankingSubtitle;
+
+  /// No description provided for @eventBroadcastTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcast to everyone'**
+  String get eventBroadcastTooltip;
+
+  /// No description provided for @eventBroadcastHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcement to all attendees…'**
+  String get eventBroadcastHint;
+
+  /// No description provided for @eventBroadcastLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcement'**
+  String get eventBroadcastLabel;
+
+  /// No description provided for @eventsFeatured.
+  ///
+  /// In en, this message translates to:
+  /// **'Featured'**
+  String get eventsFeatured;
+
+  /// No description provided for @eventsInsufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough coins'**
+  String get eventsInsufficientCoins;
+
+  /// No description provided for @eventsConfirmAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get eventsConfirmAction;
+
+  /// No description provided for @eventsBoost.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost'**
+  String get eventsBoost;
+
+  /// No description provided for @eventsBoosted.
+  ///
+  /// In en, this message translates to:
+  /// **'Event featured!'**
+  String get eventsBoosted;
+
+  /// No description provided for @eventsJoinForCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Join this event for {cost} coins?'**
+  String eventsJoinForCoins(int cost);
+
+  /// No description provided for @eventsBoostConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature this event for {cost} coins for 7 days?'**
+  String eventsBoostConfirm(int cost);
 }
 
 class _AppLocalizationsDelegate

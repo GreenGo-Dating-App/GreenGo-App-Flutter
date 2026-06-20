@@ -29,8 +29,13 @@ class EventModel extends Event {
     super.languages = const [],
     super.languagePairs,
     super.city,
+    super.country,
     super.attendeeCount = 0,
     super.updatedAt,
+    super.visibility = EventVisibility.public,
+    super.externalLinks = const [],
+    super.isFeatured = false,
+    super.featuredUntil,
   });
 
   /// Create from Event entity
@@ -65,9 +70,14 @@ class EventModel extends Event {
       languages: event.languages,
       languagePairs: event.languagePairs,
       city: event.city,
+      country: event.country,
       attendeeCount: event.attendeeCount,
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
+      visibility: event.visibility,
+      externalLinks: event.externalLinks,
+      isFeatured: event.isFeatured,
+      featuredUntil: event.featuredUntil,
     );
   }
 
@@ -109,11 +119,22 @@ class EventModel extends Event {
       languages: List<String>.from(json['languages'] as List? ?? []),
       languagePairs: json['languagePairs'] as String?,
       city: json['city'] as String?,
+      country: json['country'] as String?,
       attendeeCount: (json['attendeeCount'] as num?)?.toInt() ?? 0,
       createdAt: _parseDateTime(json['createdAt']),
       updatedAt: json['updatedAt'] != null
           ? _parseDateTime(json['updatedAt'])
           : null,
+      visibility:
+          EventVisibilityExtension.fromString(json['visibility'] as String?),
+      externalLinks: (json['externalLinks'] as List?)
+              ?.whereType<Map<String, dynamic>>()
+              .map(ExternalLink.fromMap)
+              .toList() ??
+          const [],
+      isFeatured: json['isFeatured'] as bool? ?? false,
+      featuredUntil:
+          json['featuredUntil'] != null ? _parseDateTime(json['featuredUntil']) : null,
     );
   }
 
@@ -147,10 +168,39 @@ class EventModel extends Event {
       'languages': languages,
       'languagePairs': languagePairs,
       'city': city,
+      'country': country,
       'attendeeCount': attendeeCount,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
+      'visibility': visibility.value,
+      'externalLinks': externalLinks.map((e) => e.toMap()).toList(),
+      'isFeatured': isFeatured,
+      'featuredUntil':
+          featuredUntil != null ? Timestamp.fromDate(featuredUntil!) : null,
+      // Lowercased tokens for name/text search (array-contains, no composite index).
+      'searchKeywords': buildSearchKeywords(),
     };
+  }
+
+  /// Tokenize title/city/category/tags into lowercased keywords for search.
+  List<String> buildSearchKeywords() {
+    final tokens = <String>{};
+    void add(String? s) {
+      if (s == null) return;
+      for (final w in s.toLowerCase().split(RegExp(r'[^a-z0-9]+'))) {
+        if (w.length >= 2) tokens.add(w);
+      }
+    }
+
+    add(title);
+    add(city);
+    add(country);
+    add(locationName);
+    tokens.add(category.name.toLowerCase());
+    for (final t in tags) {
+      add(t);
+    }
+    return tokens.toList();
   }
 
   /// Parse DateTime from Firestore Timestamp or other formats

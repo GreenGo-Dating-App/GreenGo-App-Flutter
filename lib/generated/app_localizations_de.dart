@@ -10771,4 +10771,94 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'In Karten öffnen';
+
+  @override
+  String get eventsSearchHint => 'Nach Land, Stadt oder Name suchen';
+
+  @override
+  String get eventsSortPopular => 'Beliebt';
+
+  @override
+  String get eventViewEvent => 'Veranstaltung ansehen';
+
+  @override
+  String get eventLoadError =>
+      'Diese Veranstaltung konnte nicht geladen werden';
+
+  @override
+  String get eventShare => 'Veranstaltung teilen';
+
+  @override
+  String get eventShared => 'Veranstaltung geteilt';
+
+  @override
+  String get eventShareEmpty => 'Noch keine Chats oder Gruppen zum Teilen';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Unbegrenzte Teilnehmer';
+
+  @override
+  String get eventsPrivateEvent => 'Private Veranstaltung';
+
+  @override
+  String get eventsExternalLinks => 'Links';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Link hinzufügen';
+
+  @override
+  String get tierLimitTitle => 'Upgrade für mehr';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Dein Tarif erlaubt $max Veranstaltungen. Upgrade für mehr.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Dein Tarif erlaubt $max Gruppen. Upgrade für mehr.';
+  }
+
+  @override
+  String get groupsTitle => 'Gruppen';
+
+  @override
+  String get profileRankingSubtitle => 'Globale Rangliste ansehen';
+
+  @override
+  String get eventBroadcastTooltip => 'An alle senden';
+
+  @override
+  String get eventBroadcastHint => 'Ankündigung an alle Teilnehmer…';
+
+  @override
+  String get eventBroadcastLabel => 'Ankündigung';
+
+  @override
+  String get eventsFeatured => 'Empfohlen';
+
+  @override
+  String get eventsInsufficientCoins => 'Nicht genügend Münzen';
+
+  @override
+  String get eventsConfirmAction => 'Bestätigen';
+
+  @override
+  String get eventsBoost => 'Boosten';
+
+  @override
+  String get eventsBoosted => 'Event hervorgehoben!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'An diesem Event für $cost Münzen teilnehmen?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Dieses Event für $cost Münzen 7 Tage lang hervorheben?';
+  }
 }

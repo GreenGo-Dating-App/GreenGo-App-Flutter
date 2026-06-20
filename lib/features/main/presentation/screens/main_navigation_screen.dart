@@ -38,6 +38,8 @@ import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../events/presentation/screens/events_screen.dart';
+import '../../../chat/presentation/screens/groups_screen.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -210,7 +212,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       ..add(ProfileLoadRequested(userId: widget.userId));
 
     // Build screens list:
-    // Network(0), Exchanges(1), Leaderboard(2), Shop(3), Profile(4)
+    // Network(0), Exchanges(1), Leaderboard(2), Events(3), Profile(4)
+    // (Shop moved into Profile; Events takes the 4th tab.)
     _screens = [
       DiscoveryScreen(
         key: _discoveryKey,
@@ -220,12 +223,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         },
       ),
       ConversationsScreen(userId: widget.userId, onBadgeDecrement: _decrementBadgeCount),
-      BlocProvider(
-        create: (context) => di.sl<GamificationBloc>()
-          ..add(LoadLeaderboard(userId: widget.userId)),
-        child: LeaderboardScreen(userId: widget.userId),
-      ),
-      CoinShopScreen(userId: widget.userId),
+      GroupsScreen(userId: widget.userId),
+      EventsScreen(currentUserId: widget.userId),
       BlocProvider.value(
         value: _profileBloc,
         child: EditProfileScreen(userId: widget.userId),
@@ -1356,28 +1355,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: TourShowcase(
-                showcaseKey: TourKeys.navLeaderboard,
-                title: AppLocalizations.of(context)!.tourNavLeaderboardTitle,
-                description: AppLocalizations.of(context)!.tourNavLeaderboardDesc,
-                gesture: TourGesture.tap,
-                targetPadding: const EdgeInsets.all(6),
-                child: const Icon(Icons.leaderboard_outlined),
-              ),
-              activeIcon: const Icon(Icons.leaderboard),
-              label: AppLocalizations.of(context)!.leaderboardTitle,
+              icon: const Icon(Icons.groups_outlined),
+              activeIcon: const Icon(Icons.groups),
+              label: AppLocalizations.of(context)!.groupsTitle,
             ),
             BottomNavigationBarItem(
-              icon: TourShowcase(
-                showcaseKey: TourKeys.navShop,
-                title: AppLocalizations.of(context)!.tourNavShopTitle,
-                description: AppLocalizations.of(context)!.tourNavShopDesc,
-                gesture: TourGesture.tap,
-                targetPadding: const EdgeInsets.all(6),
-                child: const Icon(Icons.store_outlined),
-              ),
-              activeIcon: const Icon(Icons.store),
-              label: AppLocalizations.of(context)!.shop,
+              icon: const Icon(Icons.event_outlined),
+              activeIcon: const Icon(Icons.event),
+              label: AppLocalizations.of(context)!.eventsTitle,
             ),
             BottomNavigationBarItem(
               icon: TourShowcase(

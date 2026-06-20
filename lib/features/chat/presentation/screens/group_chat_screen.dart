@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
@@ -185,6 +186,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                           return _GroupMessageBubble(
                             message: m,
                             isMine: m.senderId == widget.currentUserId,
+                            currentUserId: widget.currentUserId,
                           );
                         },
                       ),
@@ -203,10 +205,15 @@ class _GroupChatViewState extends State<_GroupChatView> {
 }
 
 class _GroupMessageBubble extends StatelessWidget {
-  const _GroupMessageBubble({required this.message, required this.isMine});
+  const _GroupMessageBubble({
+    required this.message,
+    required this.isMine,
+    required this.currentUserId,
+  });
 
   final Message message;
   final bool isMine;
+  final String currentUserId;
 
   @override
   Widget build(BuildContext context) {
@@ -257,6 +264,12 @@ class _GroupMessageBubble extends StatelessWidget {
               ),
             if (message.type == MessageType.location)
               _LocationContent(message: message, isMine: isMine)
+            else if (message.type == MessageType.event)
+              EventMessageCard(
+                metadata: message.metadata,
+                currentUserId: currentUserId,
+                onDark: isMine,
+              )
             else
               Text(
                 message.content,

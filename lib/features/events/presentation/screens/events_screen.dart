@@ -2,7 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import 'dart:io';
+
+import 'package:image_picker/image_picker.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/tier_limits_service.dart';
+import '../../../coins/domain/usecases/purchase_feature.dart';
+import '../../../profile/data/datasources/profile_remote_data_source.dart';
+import '../../../profile/domain/entities/location.dart' as profile_entity;
+import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -10,6 +21,7 @@ import '../../domain/entities/event.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
+import '../widgets/share_event_sheet.dart';
 import 'event_chat_screen.dart';
 
 /// Events Screen - Discover local events and activities
@@ -33,6 +45,8 @@ class _EventsScreenState extends State<EventsScreen>
   late TabController _tabController;
   late EventsBloc _eventsBloc;
   EventCategory? _selectedCategory;
+  String _searchQuery = '';
+  bool _sortByPopularity = false;
 
   @override
   void initState() {
@@ -136,6 +150,8 @@ class _EventsScreenState extends State<EventsScreen>
           builder: (context, state) {
             return Column(
               children: [
+                // Search by country/city/name + popularity sort
+                _buildSearchAndSortBar(),
                 // Category Filter
                 _buildCategoryFilter(),
                 // Events List
@@ -161,9 +177,9 @@ class _EventsScreenState extends State<EventsScreen>
       return TabBarView(
         controller: _tabController,
         children: [
-          _buildEventsList(_getUpcomingEvents(state)),
-          _buildEventsList(_getNearbyEvents(state)),
-          _buildEventsList(_getMyEvents(state)),
+          _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getNearbyEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
       );
     }
@@ -177,6 +193,85 @@ class _EventsScreenState extends State<EventsScreen>
         _buildEventsList([]),
       ],
     );
+  }
+
+  /// Search bar (country / city / name) + popularity sort toggle.
+  Widget _buildSearchAndSortBar() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              style: const TextStyle(color: AppColors.textPrimary),
+              onChanged: (v) => setState(() => _searchQuery = v.trim()),
+              decoration: InputDecoration(
+                isDense: true,
+                hintText: AppLocalizations.of(context)!.eventsSearchHint,
+                hintStyle: const TextStyle(color: AppColors.textTertiary),
+                prefixIcon:
+                    const Icon(Icons.search, color: AppColors.textSecondary),
+                filled: true,
+                fillColor: AppColors.backgroundCard,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
+          // Popularity sort toggle
+          ChoiceChip(
+            label: Text(AppLocalizations.of(context)!.eventsSortPopular),
+            avatar: Icon(
+              Icons.local_fire_department,
+              size: 18,
+              color: _sortByPopularity
+                  ? AppColors.deepBlack
+                  : AppColors.richGold,
+            ),
+            selected: _sortByPopularity,
+            selectedColor: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            labelStyle: TextStyle(
+              color: _sortByPopularity
+                  ? AppColors.deepBlack
+                  : AppColors.textPrimary,
+            ),
+            onSelected: (v) => setState(() => _sortByPopularity = v),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Apply the free-text search (country/city/name) and optional popularity sort.
+  List<Event> _applySearchAndSort(List<Event> events) {
+    var result = events;
+    final q = _searchQuery.toLowerCase();
+    if (q.isNotEmpty) {
+      result = result.where((e) {
+        return e.title.toLowerCase().contains(q) ||
+            (e.city ?? '').toLowerCase().contains(q) ||
+            e.locationName.toLowerCase().contains(q) ||
+            (e.address ?? '').toLowerCase().contains(q) ||
+            e.tags.any((t) => t.toLowerCase().contains(q));
+      }).toList();
+    }
+    // Featured/boosted events always surface first; then popularity if toggled.
+    result = [...result]..sort((a, b) {
+        if (a.isCurrentlyFeatured != b.isCurrentlyFeatured) {
+          return a.isCurrentlyFeatured ? -1 : 1;
+        }
+        if (_sortByPopularity) {
+          return b.attendeeCount.compareTo(a.attendeeCount);
+        }
+        return 0;
+      });
+    return result;
   }
 
   Widget _buildCategoryFilter() {
@@ -559,6 +654,36 @@ class EventCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // Featured/boosted badge
+                  if (event.isCurrentlyFeatured)
+                    Positioned(
+                      top: 12,
+                      right: 12,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.star,
+                                size: 12, color: Colors.white),
+                            const SizedBox(width: 4),
+                            Text(
+                              AppLocalizations.of(context)!.eventsFeatured,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   // Language badge for language exchange events
                   if (event.category == EventCategory.languageExchange &&
                       event.languagePairs != null)
@@ -805,6 +930,25 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
+              // Boost (feature) — organizer only, if not already featured
+              if (event.organizerId == currentUserId &&
+                  !event.isCurrentlyFeatured)
+                IconButton(
+                  icon: const Icon(Icons.rocket_launch,
+                      color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsBoost,
+                  onPressed: () => _handleBoost(context, event),
+                ),
+              // Share event to chats / groups
+              IconButton(
+                icon: const Icon(Icons.share, color: AppColors.richGold),
+                onPressed: () => showShareEventSheet(
+                  context,
+                  event: event,
+                  currentUserId: currentUserId,
+                ),
+                tooltip: AppLocalizations.of(context)!.eventShare,
+              ),
               // Group Chat button
               IconButton(
                 icon: const Icon(Icons.chat, color: AppColors.richGold),
@@ -852,9 +996,55 @@ class EventDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 12),
                   _buildInfoRow(
                     Icons.people,
-                    AppLocalizations.of(context)!.eventsAttending(event.goingCount, event.maxAttendees),
-                    AppLocalizations.of(context)!.eventsSpotsLeft(event.spotsLeft),
+                    event.isUnlimited
+                        ? AppLocalizations.of(context)!
+                            .eventsGoing(event.goingCount)
+                        : AppLocalizations.of(context)!.eventsAttending(
+                            event.goingCount, event.maxAttendees),
+                    event.isUnlimited
+                        ? null
+                        : AppLocalizations.of(context)!
+                            .eventsSpotsLeft(event.spotsLeft),
                   ),
+                  if (event.isPrivate) ...[
+                    const SizedBox(height: 12),
+                    _buildInfoRow(
+                      Icons.lock_outline,
+                      AppLocalizations.of(context)!.eventsPrivateEvent,
+                      null,
+                    ),
+                  ],
+                  if (event.externalLinks.isNotEmpty) ...[
+                    const SizedBox(height: 12),
+                    ...event.externalLinks.map((lnk) => Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: InkWell(
+                            onTap: () => launchUrl(
+                              Uri.parse(lnk.url),
+                              mode: LaunchMode.externalApplication,
+                            ),
+                            child: Row(
+                              children: [
+                                const Icon(Icons.link,
+                                    color: AppColors.richGold, size: 20),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    lnk.label ?? lnk.url,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      color: AppColors.richGold,
+                                      fontSize: 14,
+                                      decoration: TextDecoration.underline,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )),
+                  ],
                   // Language exchange info
                   if (event.category == EventCategory.languageExchange) ...[
                     const SizedBox(height: 12),
@@ -981,63 +1171,72 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  SizedBox(
-                    height: 80,
-                    child: event.attendees
-                            .where((a) => a.status == RSVPStatus.going)
-                            .isEmpty
-                        ? Center(
-                            child: Text(
-                              AppLocalizations.of(context)!.eventsNoAttendeesYet,
-                              style: const TextStyle(
-                                color: AppColors.textSecondary,
-                                fontSize: 13,
-                              ),
-                            ),
-                          )
-                        : ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: event.attendees
-                                .where((a) => a.status == RSVPStatus.going)
-                                .length,
-                            itemBuilder: (context, index) {
-                              final attendee = event.attendees
-                                  .where((a) => a.status == RSVPStatus.going)
-                                  .elementAt(index);
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: Column(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 28,
-                                      backgroundImage:
-                                          attendee.userPhotoUrl != null
-                                              ? NetworkImage(
-                                                  attendee.userPhotoUrl!)
-                                              : null,
-                                      backgroundColor:
-                                          AppColors.backgroundCard,
-                                      child: attendee.userPhotoUrl == null
-                                          ? Text(
-                                              attendee.userName[0]
-                                                  .toUpperCase(),
-                                            )
-                                          : null,
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      attendee.userName.split(' ').first,
-                                      style: const TextStyle(
-                                        color: AppColors.textSecondary,
-                                        fontSize: 11,
-                                      ),
-                                    ),
-                                  ],
+                  Builder(builder: (context) {
+                    // Respect attendee privacy: hide invisible / organizer-only
+                    // attendees from everyone except themselves and the organizer.
+                    final visibleGoing = event.attendees
+                        .where((a) =>
+                            a.status == RSVPStatus.going &&
+                            a.isVisibleTo(currentUserId, event.organizerId))
+                        .toList();
+                    return SizedBox(
+                      height: 80,
+                      child: visibleGoing.isEmpty
+                          ? Center(
+                              child: Text(
+                                AppLocalizations.of(context)!
+                                    .eventsNoAttendeesYet,
+                                style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 13,
                                 ),
-                              );
-                            },
-                          ),
-                  ),
+                              ),
+                            )
+                          : ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: visibleGoing.length,
+                              itemBuilder: (context, index) {
+                                final attendee = visibleGoing[index];
+                                final name = attendee.displayNameFor(
+                                    currentUserId, event.organizerId);
+                                final anon = attendee.isAnonymous &&
+                                    currentUserId != attendee.userId &&
+                                    currentUserId != event.organizerId;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 12),
+                                  child: Column(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 28,
+                                        backgroundImage: (!anon &&
+                                                attendee.userPhotoUrl != null)
+                                            ? NetworkImage(
+                                                attendee.userPhotoUrl!)
+                                            : null,
+                                        backgroundColor:
+                                            AppColors.backgroundCard,
+                                        child: (anon ||
+                                                attendee.userPhotoUrl == null)
+                                            ? Text(name.isNotEmpty
+                                                ? name[0].toUpperCase()
+                                                : '?')
+                                            : null,
+                                      ),
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        name.split(' ').first,
+                                        style: const TextStyle(
+                                          color: AppColors.textSecondary,
+                                          fontSize: 11,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                    );
+                  }),
                   const SizedBox(height: 100),
                 ],
               ),
@@ -1078,16 +1277,8 @@ class EventDetailsScreen extends StatelessWidget {
               const SizedBox(width: 16),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: event.isFull
-                      ? null
-                      : () {
-                          context.read<EventsBloc>().add(RsvpEvent(
-                                eventId: event.id,
-                                userId: currentUserId,
-                                status: RSVPStatus.going.name,
-                              ));
-                          Navigator.pop(context);
-                        },
+                  onPressed:
+                      event.isFull ? null : () => _handleJoin(context, event),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.richGold,
                     foregroundColor: AppColors.deepBlack,
@@ -1105,6 +1296,107 @@ class EventDetailsScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Join a (possibly paid) event — charges coins for paid events first.
+  Future<void> _handleJoin(BuildContext context, Event event) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final bloc = context.read<EventsBloc>();
+
+    if (!event.isFree && (event.price ?? 0) > 0) {
+      final cost = event.price!.round();
+      final afford =
+          await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
+      if (!context.mounted) return;
+      if (!afford.fold((_) => false, (v) => v)) {
+        messenger.showSnackBar(
+            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+        return;
+      }
+      final confirmed = await _confirmCoinSpend(
+          context, l10n.eventsJoinEvent, l10n.eventsJoinForCoins(cost));
+      if (confirmed != true || !context.mounted) return;
+      final charge = await sl<PurchaseFeature>()(
+        userId: currentUserId,
+        featureName: 'event_rsvp',
+        cost: cost,
+        relatedId: event.id,
+      );
+      if (!context.mounted) return;
+      if (!charge.fold((_) => false, (_) => true)) {
+        messenger.showSnackBar(
+            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+        return;
+      }
+    }
+
+    bloc.add(RsvpEvent(
+      eventId: event.id,
+      userId: currentUserId,
+      status: RSVPStatus.going.name,
+    ));
+    if (context.mounted) Navigator.pop(context);
+  }
+
+  /// Boost (feature) an event for a fixed coin cost (organizer only).
+  Future<void> _handleBoost(BuildContext context, Event event) async {
+    const cost = 100;
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final bloc = context.read<EventsBloc>();
+
+    final afford =
+        await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
+    if (!context.mounted) return;
+    if (!afford.fold((_) => false, (v) => v)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    final confirmed = await _confirmCoinSpend(
+        context, l10n.eventsBoost, l10n.eventsBoostConfirm(cost));
+    if (confirmed != true || !context.mounted) return;
+    final charge = await sl<PurchaseFeature>()(
+      userId: currentUserId,
+      featureName: 'event_boost',
+      cost: cost,
+      relatedId: event.id,
+    );
+    if (!context.mounted) return;
+    if (!charge.fold((_) => false, (_) => true)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    bloc.add(UpdateEvent(
+      event: event.copyWith(
+        isFeatured: true,
+        featuredUntil: DateTime.now().add(const Duration(days: 7)),
+      ),
+    ));
+    messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
+  }
+
+  Future<bool?> _confirmCoinSpend(
+      BuildContext context, String title, String body) {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(title, style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(body, style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsConfirmAction)),
+        ],
       ),
     );
   }
@@ -1168,6 +1460,19 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   DateTime _endDate = DateTime.now().add(const Duration(days: 1, hours: 2));
   bool _isFree = true;
   double _price = 0;
+  EventVisibility _visibility = EventVisibility.public;
+  bool _isUnlimited = false;
+  double? _lat;
+  double? _lng;
+  String? _pickedCity;
+  String? _pickedCountry;
+  File? _mainPhoto;
+  final List<File> _extraPhotos = [];
+  final ImagePicker _picker = ImagePicker();
+  bool _uploading = false;
+  final _linkUrlController = TextEditingController();
+  final _linkLabelController = TextEditingController();
+  final List<ExternalLink> _externalLinks = [];
 
   @override
   void dispose() {
@@ -1176,7 +1481,94 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _locationController.dispose();
     _maxAttendeesController.dispose();
     _languagePairsController.dispose();
+    _linkUrlController.dispose();
+    _linkLabelController.dispose();
     super.dispose();
+  }
+
+  Future<void> _pickMainPhoto() async {
+    final x =
+        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
+    if (x != null) setState(() => _mainPhoto = File(x.path));
+  }
+
+  Future<void> _pickExtraPhoto() async {
+    if (_extraPhotos.length >= 4) return;
+    final x =
+        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
+    if (x != null) setState(() => _extraPhotos.add(File(x.path)));
+  }
+
+  /// Main photo + up to 4 extra photos, uploaded on create.
+  Widget _buildPhotoSection() {
+    Widget slot({File? file, required VoidCallback onTap, bool main = false}) {
+      return GestureDetector(
+        onTap: onTap,
+        child: Container(
+          width: main ? 110 : 70,
+          height: main ? 110 : 70,
+          margin: const EdgeInsets.only(right: 8),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard,
+            borderRadius: BorderRadius.circular(12),
+            image: file != null
+                ? DecorationImage(image: FileImage(file), fit: BoxFit.cover)
+                : null,
+            border: Border.all(color: AppColors.textTertiary.withOpacity(0.3)),
+          ),
+          child: file == null
+              ? Icon(main ? Icons.add_a_photo : Icons.add,
+                  color: AppColors.textSecondary)
+              : null,
+        ),
+      );
+    }
+
+    return SizedBox(
+      height: 116,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          slot(file: _mainPhoto, onTap: _pickMainPhoto, main: true),
+          ..._extraPhotos.map((f) => slot(file: f, onTap: () {})),
+          if (_extraPhotos.length < 4)
+            slot(file: null, onTap: _pickExtraPhoto),
+        ],
+      ),
+    );
+  }
+
+  /// Pick the event location from the map (reuses the app's location picker).
+  Future<void> _pickLocation() async {
+    final result = await Navigator.of(context).push<dynamic>(
+      MaterialPageRoute(
+        builder: (_) => const TravelerLocationPickerScreen(),
+      ),
+    );
+    if (result == null || !mounted) return;
+    final loc = result as profile_entity.Location;
+    setState(() {
+      _lat = loc.latitude;
+      _lng = loc.longitude;
+      _pickedCity = loc.city;
+      _pickedCountry = loc.country;
+      _locationController.text = loc.displayAddress;
+    });
+  }
+
+  void _addLink() {
+    final url = _linkUrlController.text.trim();
+    if (url.isEmpty) return;
+    setState(() {
+      _externalLinks.add(ExternalLink(
+        url: url,
+        label: _linkLabelController.text.trim().isEmpty
+            ? null
+            : _linkLabelController.text.trim(),
+      ));
+      _linkUrlController.clear();
+      _linkLabelController.clear();
+    });
   }
 
   @override
@@ -1195,6 +1587,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            _buildPhotoSection(),
+            const SizedBox(height: 16),
             TextFormField(
               controller: _titleController,
               style: const TextStyle(color: AppColors.textPrimary),
@@ -1238,8 +1632,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             TextFormField(
               controller: _locationController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsLocation),
-              validator: (v) => v?.isEmpty ?? true ? AppLocalizations.of(context)!.eventsRequired : null,
+              readOnly: true,
+              onTap: _pickLocation,
+              decoration: _inputDecoration(
+                      AppLocalizations.of(context)!.eventsLocation)
+                  .copyWith(
+                suffixIcon:
+                    const Icon(Icons.map_outlined, color: AppColors.richGold),
+              ),
+              validator: (v) => v?.isEmpty ?? true
+                  ? AppLocalizations.of(context)!.eventsRequired
+                  : null,
             ),
             const SizedBox(height: 16),
             ListTile(
@@ -1272,11 +1675,36 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               onTap: () => _selectDateTime(false),
             ),
             const SizedBox(height: 16),
-            TextFormField(
-              controller: _maxAttendeesController,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsMaxAttendees),
-              keyboardType: TextInputType.number,
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.eventsUnlimitedAttendees,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              value: _isUnlimited,
+              activeThumbColor: AppColors.richGold,
+              onChanged: (v) => setState(() => _isUnlimited = v),
+            ),
+            if (!_isUnlimited)
+              TextFormField(
+                controller: _maxAttendeesController,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: _inputDecoration(
+                    AppLocalizations.of(context)!.eventsMaxAttendees),
+                keyboardType: TextInputType.number,
+              ),
+            const SizedBox(height: 16),
+            // Visibility: public (discoverable) vs private (invitees/link only)
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.eventsPrivateEvent,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              value: _visibility == EventVisibility.private,
+              activeThumbColor: AppColors.richGold,
+              onChanged: (v) => setState(() => _visibility =
+                  v ? EventVisibility.private : EventVisibility.public),
             ),
             const SizedBox(height: 16),
             SwitchListTile(
@@ -1300,19 +1728,71 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 onChanged: (v) => setState(() => _price = v),
               ),
             ],
+            const SizedBox(height: 16),
+            // External links (tickets, website, map…)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                AppLocalizations.of(context)!.eventsExternalLinks,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ..._externalLinks.map((lnk) => ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.link, color: AppColors.richGold),
+                  title: Text(
+                    lnk.label ?? lnk.url,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.close,
+                        color: AppColors.textSecondary),
+                    onPressed: () =>
+                        setState(() => _externalLinks.remove(lnk)),
+                  ),
+                )),
+            Row(
+              children: [
+                Expanded(
+                  child: TextFormField(
+                    controller: _linkUrlController,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                    keyboardType: TextInputType.url,
+                    decoration: _inputDecoration(
+                        AppLocalizations.of(context)!.eventsLinkUrlHint),
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.add_circle, color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsAddLink,
+                  onPressed: _addLink,
+                ),
+              ],
+            ),
             const SizedBox(height: 32),
             ElevatedButton(
-              onPressed: _createEvent,
+              onPressed: _uploading ? null : _createEvent,
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
                 padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              child: Text(
-                AppLocalizations.of(context)!.eventsCreateEvent,
-                style: const
-                    TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
+              child: _uploading
+                  ? const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: AppColors.deepBlack),
+                    )
+                  : Text(
+                      AppLocalizations.of(context)!.eventsCreateEvent,
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
             ),
           ],
         ),
@@ -1369,8 +1849,56 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     });
   }
 
-  void _createEvent() {
+  Future<void> _createEvent() async {
+    if (_uploading) return;
     if (!_formKey.currentState!.validate()) return;
+
+    // Enforce tier cap on number of events created.
+    final check =
+        await TierLimitsService().canCreateEvent(widget.currentUserId);
+    if (!mounted) return;
+    if (!check.allowed) {
+      final l10n = AppLocalizations.of(context)!;
+      await showDialog<void>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(l10n.tierLimitTitle,
+              style: const TextStyle(color: AppColors.textPrimary)),
+          content: Text(
+            l10n.tierLimitEventsBody(check.max ?? 0),
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.tourGotIt),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+
+    // Upload the photos (main + up to 4) to Storage.
+    setState(() => _uploading = true);
+    String? imageUrl;
+    final photoUrls = <String>[];
+    try {
+      final ds = sl<ProfileRemoteDataSource>();
+      if (_mainPhoto != null) {
+        imageUrl = await ds.uploadPhoto(widget.currentUserId, _mainPhoto!,
+            folder: 'events');
+      }
+      for (final f in _extraPhotos) {
+        photoUrls.add(await ds.uploadPhoto(widget.currentUserId, f,
+            folder: 'events'));
+      }
+    } catch (_) {
+      // Non-fatal: proceed without (or with partial) images.
+    }
+    if (!mounted) return;
+    setState(() => _uploading = false);
 
     final event = Event(
       id: '', // Firestore will generate the ID
@@ -1379,11 +1907,20 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       title: _titleController.text,
       description: _descriptionController.text,
       category: _category,
+      imageUrl: imageUrl,
+      photoUrls: photoUrls,
       startDate: _startDate,
       endDate: _endDate,
       locationName: _locationController.text,
-      maxAttendees: int.tryParse(_maxAttendeesController.text) ?? 20,
+      latitude: _lat,
+      longitude: _lng,
+      city: _pickedCity,
+      country: _pickedCountry,
+      maxAttendees:
+          _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20),
       price: _isFree ? null : _price,
+      visibility: _visibility,
+      externalLinks: _externalLinks,
       status: EventStatus.published,
       languagePairs: _category == EventCategory.languageExchange
           ? _languagePairsController.text.isNotEmpty

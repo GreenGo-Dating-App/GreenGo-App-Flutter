@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../entities/event.dart';
+import '../entities/event_country_stat.dart';
 
 /// Events Repository Interface
 abstract class EventsRepository {
@@ -23,12 +24,16 @@ abstract class EventsRepository {
   /// Delete an event
   Future<Either<Failure, void>> deleteEvent(String eventId);
 
-  /// RSVP to an event
+  /// RSVP to an event (with optional attendee privacy controls)
   Future<Either<Failure, void>> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  );
+    String status, {
+    bool isInvisible,
+    bool isAnonymous,
+    bool muteNotifications,
+    bool visibleToOrganizerOnly,
+  });
 
   /// Cancel RSVP for an event
   Future<Either<Failure, void>> cancelRsvp(String eventId, String userId);
@@ -47,4 +52,17 @@ abstract class EventsRepository {
 
   /// Get events the user created or is attending
   Future<Either<Failure, List<Event>>> getUserEvents(String userId);
+
+  /// Search public events by name / typology / city.
+  Future<Either<Failure, List<Event>>> searchEvents(String query);
+
+  /// Per-country aggregates for the globe.
+  Future<Either<Failure, List<EventCountryStat>>> getCountryStats();
+
+  /// Top public events in a country (optionally limited to the user's network).
+  Future<Either<Failure, List<Event>>> getEventsByCountry(
+    String country, {
+    int limit,
+    List<String>? networkUserIds,
+  });
 }

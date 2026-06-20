@@ -391,6 +391,14 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToCoinShop(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
+                      // Ranking / Leaderboard (moved here from the bottom nav)
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.leaderboardTitle,
+                        subtitle: AppLocalizations.of(context)!.profileRankingSubtitle,
+                        icon: Icons.leaderboard,
+                        onTap: () => _navigateToLeaderboard(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
                       // Restart Discovery
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileRestartDiscovery,
