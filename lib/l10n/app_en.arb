@@ -5088,5 +5088,10 @@
   "eventsPrivateEvent": "Private event",
   "eventsExternalLinks": "Links",
   "eventsLinkUrlHint": "https://…",
-  "eventsAddLink": "Add link"
+  "eventsAddLink": "Add link",
+  "tierLimitTitle": "Upgrade to create more",
+  "tierLimitEventsBody": "Your plan allows {max} events. Upgrade to create more.",
+  "@tierLimitEventsBody": { "placeholders": { "max": { "type": "int" } } },
+  "tierLimitGroupsBody": "Your plan allows {max} groups. Upgrade to create more.",
+  "@tierLimitGroupsBody": { "placeholders": { "max": { "type": "int" } } }
 }

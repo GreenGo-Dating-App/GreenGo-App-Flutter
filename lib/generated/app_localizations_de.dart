@@ -10808,4 +10808,17 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsAddLink => 'Link hinzufügen';
+
+  @override
+  String get tierLimitTitle => 'Upgrade für mehr';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Dein Tarif erlaubt $max Veranstaltungen. Upgrade für mehr.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Dein Tarif erlaubt $max Gruppen. Upgrade für mehr.';
+  }
 }

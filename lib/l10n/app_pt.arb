@@ -3652,5 +3652,8 @@
   "eventsPrivateEvent": "Evento privado",
   "eventsExternalLinks": "Ligações",
   "eventsLinkUrlHint": "https://…",
-  "eventsAddLink": "Adicionar ligação"
+  "eventsAddLink": "Adicionar ligação",
+  "tierLimitTitle": "Faz upgrade para criar mais",
+  "tierLimitEventsBody": "O teu plano permite {max} eventos. Faz upgrade para criar mais.",
+  "tierLimitGroupsBody": "O teu plano permite {max} grupos. Faz upgrade para criar mais."
 }

@@ -10777,6 +10777,19 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsAddLink => 'Adicionar ligação';
+
+  @override
+  String get tierLimitTitle => 'Faz upgrade para criar mais';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'O teu plano permite $max eventos. Faz upgrade para criar mais.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'O teu plano permite $max grupos. Faz upgrade para criar mais.';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21255,4 +21268,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsAddLink => 'Adicionar link';
+
+  @override
+  String get tierLimitTitle => 'Faça upgrade para criar mais';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Seu plano permite $max eventos. Faça upgrade para criar mais.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Seu plano permite $max grupos. Faça upgrade para criar mais.';
+  }
 }

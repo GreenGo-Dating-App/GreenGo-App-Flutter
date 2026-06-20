@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/tier_limits_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/usecases/create_group.dart';
 import 'group_chat_screen.dart';
@@ -136,7 +137,31 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
   }
 
   Future<void> _create() async {
+    final l10n = AppLocalizations.of(context)!;
     setState(() => _creating = true);
+
+    // Enforce tier cap on number of groups created.
+    final check =
+        await TierLimitsService().canCreateGroup(widget.currentUserId);
+    if (!mounted) return;
+    if (!check.allowed) {
+      setState(() => _creating = false);
+      await showDialog<void>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: Text(l10n.tierLimitTitle),
+          content: Text(l10n.tierLimitGroupsBody(check.max ?? 0)),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.tourGotIt),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+
     final result = await sl<CreateGroup>()(
       CreateGroupParams(
         creatorId: widget.currentUserId,
