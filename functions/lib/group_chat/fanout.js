@@ -200,9 +200,31 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{grou
                 data: {
                     type: 'group_message',
                     groupId,
+                    // conversationId mirrors groupId so the client foreground handler
+                    // and tap-routing treat groups like 1:1 exchanges.
+                    conversationId: groupId,
                     senderId,
                 },
-                android: { priority: 'high' },
+                // Match the 1:1 "exchange" notification sound + channel exactly.
+                android: {
+                    priority: 'high',
+                    collapseKey: `group_${groupId}`,
+                    notification: {
+                        sound: 'default',
+                        channelId: 'greengo_notifications',
+                        priority: 'high',
+                        tag: `group_${groupId}`,
+                    },
+                },
+                apns: {
+                    headers: { 'apns-collapse-id': `group_${groupId}` },
+                    payload: {
+                        aps: {
+                            sound: 'default',
+                            badge: 1,
+                        },
+                    },
+                },
             });
         }
         catch (e) {

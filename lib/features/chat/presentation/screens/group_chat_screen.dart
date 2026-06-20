@@ -9,6 +9,7 @@ import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
@@ -123,6 +124,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
         .read<GroupChatBloc>()
         .add(GroupChatMessageSent(content: text));
     _controller.clear();
+    // Same "message sent" sound as 1:1 exchanges.
+    AppSoundService().play(AppSound.messageSent);
   }
 
   Future<void> _sendVoice(BuildContext context, File file, Duration duration) async {
