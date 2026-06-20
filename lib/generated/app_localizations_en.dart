@@ -10730,4 +10730,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String eventsBoostConfirm(int cost) {
     return 'Feature this event for $cost coins for 7 days?';
   }
+
+  @override
+  String groupMemberLimit(int count) {
+    return 'Up to $count members per group';
+  }
 }

@@ -3667,5 +3667,6 @@
   "eventsBoost": "Destacar",
   "eventsBoosted": "Evento destacado!",
   "eventsJoinForCoins": "Participar deste evento por {cost} moedas?",
-  "eventsBoostConfirm": "Destacar este evento por {cost} moedas por 7 dias?"
+  "eventsBoostConfirm": "Destacar este evento por {cost} moedas por 7 dias?",
+  "groupMemberLimit": "Até {count} membros por grupo"
 }

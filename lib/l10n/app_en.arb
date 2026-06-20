@@ -5107,5 +5107,7 @@
   "eventsJoinForCoins": "Join this event for {cost} coins?",
   "@eventsJoinForCoins": { "placeholders": { "cost": { "type": "int" } } },
   "eventsBoostConfirm": "Feature this event for {cost} coins for 7 days?",
-  "@eventsBoostConfirm": { "placeholders": { "cost": { "type": "int" } } }
+  "@eventsBoostConfirm": { "placeholders": { "cost": { "type": "int" } } },
+  "groupMemberLimit": "Up to {count} members per group",
+  "@groupMemberLimit": { "placeholders": { "count": { "type": "int" } } }
 }

@@ -19115,6 +19115,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Feature this event for {cost} coins for 7 days?'**
   String eventsBoostConfirm(int cost);
+
+  /// No description provided for @groupMemberLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {count} members per group'**
+  String groupMemberLimit(int count);
 }
 
 class _AppLocalizationsDelegate
