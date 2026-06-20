@@ -41,6 +41,17 @@ import '../../features/chat/domain/usecases/set_typing_indicator.dart';
 import '../../features/chat/domain/usecases/star_message.dart';
 import '../../features/chat/presentation/bloc/chat_bloc.dart';
 import '../../features/chat/presentation/bloc/conversations_bloc.dart';
+// Group Chat (isolated `groups` collection)
+import '../../features/chat/data/datasources/group_chat_remote_datasource.dart';
+import '../../features/chat/data/repositories/group_chat_repository_impl.dart';
+import '../../features/chat/domain/repositories/group_chat_repository.dart';
+import '../../features/chat/domain/usecases/create_group.dart';
+import '../../features/chat/domain/usecases/get_user_groups.dart';
+import '../../features/chat/domain/usecases/get_group_messages.dart';
+import '../../features/chat/domain/usecases/send_group_message.dart';
+import '../../features/chat/domain/usecases/mark_group_read.dart';
+import '../../features/chat/domain/usecases/get_group_members.dart';
+import '../../features/chat/domain/usecases/group_membership.dart';
 import '../../features/coins/data/datasources/coin_remote_datasource.dart';
 import '../../features/coins/data/repositories/coin_repository_impl.dart';
 import '../../features/coins/domain/repositories/coin_repository.dart';
@@ -396,6 +407,30 @@ Future<void> init() async {
       firestore: sl(),
       blockedUsersService: sl(),
     ),
+  );
+
+  //! Features - Group Chat (isolated `groups` collection)
+  // Use cases
+  sl.registerLazySingleton(() => CreateGroup(sl()));
+  sl.registerLazySingleton(() => GetUserGroups(sl()));
+  sl.registerLazySingleton(() => GetGroupMessages(sl()));
+  sl.registerLazySingleton(() => SendGroupMessage(sl()));
+  sl.registerLazySingleton(() => MarkGroupRead(sl()));
+  sl.registerLazySingleton(() => GetGroupMembers(sl()));
+  sl.registerLazySingleton(() => AddGroupMembers(sl()));
+  sl.registerLazySingleton(() => RemoveGroupMember(sl()));
+  sl.registerLazySingleton(() => LeaveGroup(sl()));
+  sl.registerLazySingleton(() => UpdateGroupInfo(sl()));
+  sl.registerLazySingleton(() => ChangeGroupRole(sl()));
+
+  // Repository
+  sl.registerLazySingleton<GroupChatRepository>(
+    () => GroupChatRepositoryImpl(remoteDataSource: sl()),
+  );
+
+  // Data source
+  sl.registerLazySingleton<GroupChatRemoteDataSource>(
+    () => GroupChatRemoteDataSourceImpl(firestore: sl()),
   );
 
   //! Features - Notifications
