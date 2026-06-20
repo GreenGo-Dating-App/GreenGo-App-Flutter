@@ -3673,5 +3673,7 @@
   "eventsPickLocation": "Elegir ubicación",
   "eventsSearchAddress": "Buscar dirección",
   "eventsUseThisLocation": "Usar esta ubicación",
-  "profileProgressGrowth": "Progreso y crecimiento"
+  "profileProgressGrowth": "Progreso y crecimiento",
+  "eventsEditEvent": "Editar evento",
+  "groupEditName": "Editar nombre del grupo"
 }

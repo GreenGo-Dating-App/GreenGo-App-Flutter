@@ -10874,4 +10874,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsUseThisLocation => 'Usa questo luogo';
+
+  @override
+  String get eventsEditEvent => 'Modifica evento';
+
+  @override
+  String get groupEditName => 'Modifica nome del gruppo';
 }

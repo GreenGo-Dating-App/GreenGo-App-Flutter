@@ -10853,6 +10853,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsUseThisLocation => 'Usar este local';
+
+  @override
+  String get eventsEditEvent => 'Editar evento';
+
+  @override
+  String get groupEditName => 'Editar nome do grupo';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21407,4 +21413,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsUseThisLocation => 'Usar este local';
+
+  @override
+  String get eventsEditEvent => 'Editar evento';
+
+  @override
+  String get groupEditName => 'Editar nome do grupo';
 }
