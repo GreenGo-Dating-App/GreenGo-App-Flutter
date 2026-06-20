@@ -10761,4 +10761,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Apri in Mappe';
+
+  @override
+  String get eventsSearchHint => 'Cerca per paese, città o nome';
+
+  @override
+  String get eventsSortPopular => 'Popolari';
 }

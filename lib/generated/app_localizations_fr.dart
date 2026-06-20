@@ -10810,4 +10810,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Ouvrir dans Maps';
+
+  @override
+  String get eventsSearchHint => 'Rechercher par pays, ville ou nom';
+
+  @override
+  String get eventsSortPopular => 'Populaire';
 }

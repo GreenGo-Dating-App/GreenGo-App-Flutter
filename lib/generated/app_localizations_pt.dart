@@ -10741,6 +10741,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get chatOpenInMaps => 'Abrir no Maps';
+
+  @override
+  String get eventsSearchHint => 'Pesquisar por país, cidade ou nome';
+
+  @override
+  String get eventsSortPopular => 'Popular';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21182,4 +21188,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatOpenInMaps => 'Abrir no Maps';
+
+  @override
+  String get eventsSearchHint => 'Buscar por país, cidade ou nome';
+
+  @override
+  String get eventsSortPopular => 'Popular';
 }

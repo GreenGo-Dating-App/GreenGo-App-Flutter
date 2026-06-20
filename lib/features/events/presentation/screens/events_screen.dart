@@ -33,6 +33,8 @@ class _EventsScreenState extends State<EventsScreen>
   late TabController _tabController;
   late EventsBloc _eventsBloc;
   EventCategory? _selectedCategory;
+  String _searchQuery = '';
+  bool _sortByPopularity = false;
 
   @override
   void initState() {
@@ -136,6 +138,8 @@ class _EventsScreenState extends State<EventsScreen>
           builder: (context, state) {
             return Column(
               children: [
+                // Search by country/city/name + popularity sort
+                _buildSearchAndSortBar(),
                 // Category Filter
                 _buildCategoryFilter(),
                 // Events List
@@ -161,9 +165,9 @@ class _EventsScreenState extends State<EventsScreen>
       return TabBarView(
         controller: _tabController,
         children: [
-          _buildEventsList(_getUpcomingEvents(state)),
-          _buildEventsList(_getNearbyEvents(state)),
-          _buildEventsList(_getMyEvents(state)),
+          _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getNearbyEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
       );
     }
@@ -177,6 +181,79 @@ class _EventsScreenState extends State<EventsScreen>
         _buildEventsList([]),
       ],
     );
+  }
+
+  /// Search bar (country / city / name) + popularity sort toggle.
+  Widget _buildSearchAndSortBar() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              style: const TextStyle(color: AppColors.textPrimary),
+              onChanged: (v) => setState(() => _searchQuery = v.trim()),
+              decoration: InputDecoration(
+                isDense: true,
+                hintText: AppLocalizations.of(context)!.eventsSearchHint,
+                hintStyle: const TextStyle(color: AppColors.textTertiary),
+                prefixIcon:
+                    const Icon(Icons.search, color: AppColors.textSecondary),
+                filled: true,
+                fillColor: AppColors.backgroundCard,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide.none,
+                ),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
+          // Popularity sort toggle
+          ChoiceChip(
+            label: Text(AppLocalizations.of(context)!.eventsSortPopular),
+            avatar: Icon(
+              Icons.local_fire_department,
+              size: 18,
+              color: _sortByPopularity
+                  ? AppColors.deepBlack
+                  : AppColors.richGold,
+            ),
+            selected: _sortByPopularity,
+            selectedColor: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            labelStyle: TextStyle(
+              color: _sortByPopularity
+                  ? AppColors.deepBlack
+                  : AppColors.textPrimary,
+            ),
+            onSelected: (v) => setState(() => _sortByPopularity = v),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Apply the free-text search (country/city/name) and optional popularity sort.
+  List<Event> _applySearchAndSort(List<Event> events) {
+    var result = events;
+    final q = _searchQuery.toLowerCase();
+    if (q.isNotEmpty) {
+      result = result.where((e) {
+        return e.title.toLowerCase().contains(q) ||
+            (e.city ?? '').toLowerCase().contains(q) ||
+            e.locationName.toLowerCase().contains(q) ||
+            (e.address ?? '').toLowerCase().contains(q) ||
+            e.tags.any((t) => t.toLowerCase().contains(q));
+      }).toList();
+    }
+    if (_sortByPopularity) {
+      result = [...result]
+        ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
+    }
+    return result;
   }
 
   Widget _buildCategoryFilter() {

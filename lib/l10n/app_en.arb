@@ -5076,5 +5076,7 @@
   "chatLocation": "Location",
   "chatShareLocation": "Share location",
   "chatLocationDenied": "Location permission is required to share your position",
-  "chatOpenInMaps": "Open in Maps"
+  "chatOpenInMaps": "Open in Maps",
+  "eventsSearchHint": "Search by country, city or name",
+  "eventsSortPopular": "Popular"
 }
