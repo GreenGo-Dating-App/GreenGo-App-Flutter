@@ -23,6 +23,8 @@ class Message extends Equatable {
     this.detectedLanguage,
     this.isScheduled = false,
     this.scheduledFor,
+    this.readBy,
+    this.deliveredTo,
   });
   final String messageId;
   final String matchId;
@@ -41,6 +43,23 @@ class Message extends Equatable {
   final String? detectedLanguage;
   final bool isScheduled;
   final DateTime? scheduledFor;
+
+  // ---- Group read/delivery tracking (only used for group messages) ----
+  /// userId -> timestamp the member read this message.
+  final Map<String, DateTime>? readBy;
+
+  /// userId -> timestamp the message was delivered to the member.
+  final Map<String, DateTime>? deliveredTo;
+
+  /// Whether a specific user has read this message (group-aware; falls back
+  /// to the 1:1 [readAt] when no per-member map is present).
+  bool isReadBy(String userId) {
+    if (readBy != null) return readBy!.containsKey(userId);
+    return readAt != null;
+  }
+
+  /// Number of members (other than the sender) who have read this message.
+  int get readByCount => readBy?.length ?? (readAt != null ? 1 : 0);
 
   /// Check if message has been read
   bool get isRead => readAt != null;
@@ -108,6 +127,8 @@ class Message extends Equatable {
     String? detectedLanguage,
     bool? isScheduled,
     DateTime? scheduledFor,
+    Map<String, DateTime>? readBy,
+    Map<String, DateTime>? deliveredTo,
   }) {
     return Message(
       messageId: messageId ?? this.messageId,
@@ -127,6 +148,8 @@ class Message extends Equatable {
       detectedLanguage: detectedLanguage ?? this.detectedLanguage,
       isScheduled: isScheduled ?? this.isScheduled,
       scheduledFor: scheduledFor ?? this.scheduledFor,
+      readBy: readBy ?? this.readBy,
+      deliveredTo: deliveredTo ?? this.deliveredTo,
     );
   }
 
@@ -149,6 +172,8 @@ class Message extends Equatable {
         detectedLanguage,
         isScheduled,
         scheduledFor,
+        readBy,
+        deliveredTo,
       ];
 }
 
@@ -172,6 +197,7 @@ enum MessageType {
   system,
   albumShare,
   albumRevoke,
+  location,
 }
 
 /// Extension for MessageStatus
@@ -231,6 +257,8 @@ extension MessageTypeExtension on MessageType {
         return 'album_share';
       case MessageType.albumRevoke:
         return 'album_revoke';
+      case MessageType.location:
+        return 'location';
     }
   }
 
@@ -254,6 +282,8 @@ extension MessageTypeExtension on MessageType {
         return MessageType.albumShare;
       case 'album_revoke':
         return MessageType.albumRevoke;
+      case 'location':
+        return MessageType.location;
       default:
         return MessageType.text;
     }

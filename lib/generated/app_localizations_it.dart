@@ -10659,4 +10659,106 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get continueToApp => 'Continua';
+
+  @override
+  String get groupNewGroup => 'Nuovo gruppo';
+
+  @override
+  String get groupCreate => 'Crea';
+
+  @override
+  String get groupNameLabel => 'Nome del gruppo';
+
+  @override
+  String groupSelectedCount(int count) {
+    return '$count selezionati';
+  }
+
+  @override
+  String get groupInviteByNickname => 'Invita per nickname';
+
+  @override
+  String get groupNicknameHint => 'Inserisci un nickname';
+
+  @override
+  String get groupNoContacts => 'Ancora nessun contatto da aggiungere';
+
+  @override
+  String get groupNoOneFound => 'Nessuno trovato con quel nickname';
+
+  @override
+  String get groupAlreadyAdded => 'Già aggiunto';
+
+  @override
+  String groupAddedCount(int count) {
+    return '$count aggiunti';
+  }
+
+  @override
+  String get groupSearchFailed => 'Ricerca non riuscita';
+
+  @override
+  String get groupInfo => 'Info gruppo';
+
+  @override
+  String groupMembersCount(int count) {
+    return '$count membri';
+  }
+
+  @override
+  String get groupAdmin => 'Admin';
+
+  @override
+  String get groupYou => 'Tu';
+
+  @override
+  String get groupLeave => 'Esci dal gruppo';
+
+  @override
+  String get groupLeaveConfirmTitle => 'Uscire dal gruppo?';
+
+  @override
+  String get groupLeaveConfirmBody =>
+      'Non riceverai più i messaggi di questo gruppo.';
+
+  @override
+  String get groupCancel => 'Annulla';
+
+  @override
+  String get groupLeaveAction => 'Esci';
+
+  @override
+  String get groupReport => 'Segnala gruppo';
+
+  @override
+  String get groupReportConfirmBody =>
+      'Segnalare questo gruppo al nostro team di sicurezza?';
+
+  @override
+  String get groupReportAction => 'Segnala';
+
+  @override
+  String get groupReportSubmitted => 'Segnalazione inviata';
+
+  @override
+  String get groupMessageHint => 'Messaggio…';
+
+  @override
+  String get groupSayHello => 'Saluta il gruppo 👋';
+
+  @override
+  String get groupLoadError => 'Impossibile caricare questo gruppo';
+
+  @override
+  String get chatLocation => 'Posizione';
+
+  @override
+  String get chatShareLocation => 'Condividi posizione';
+
+  @override
+  String get chatLocationDenied =>
+      'È necessaria l\'autorizzazione alla posizione per condividere la tua posizione';
+
+  @override
+  String get chatOpenInMaps => 'Apri in Mappe';
 }
