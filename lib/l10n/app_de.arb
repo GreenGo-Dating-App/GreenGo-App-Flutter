@@ -3650,5 +3650,8 @@
   "eventsPrivateEvent": "Private Veranstaltung",
   "eventsExternalLinks": "Links",
   "eventsLinkUrlHint": "https://…",
-  "eventsAddLink": "Link hinzufügen"
+  "eventsAddLink": "Link hinzufügen",
+  "tierLimitTitle": "Upgrade für mehr",
+  "tierLimitEventsBody": "Dein Tarif erlaubt {max} Veranstaltungen. Upgrade für mehr.",
+  "tierLimitGroupsBody": "Dein Tarif erlaubt {max} Gruppen. Upgrade für mehr."
 }

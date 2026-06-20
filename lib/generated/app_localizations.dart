@@ -19025,6 +19025,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add link'**
   String get eventsAddLink;
+
+  /// No description provided for @tierLimitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to create more'**
+  String get tierLimitTitle;
+
+  /// No description provided for @tierLimitEventsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan allows {max} events. Upgrade to create more.'**
+  String tierLimitEventsBody(int max);
+
+  /// No description provided for @tierLimitGroupsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your plan allows {max} groups. Upgrade to create more.'**
+  String tierLimitGroupsBody(int max);
 }
 
 class _AppLocalizationsDelegate

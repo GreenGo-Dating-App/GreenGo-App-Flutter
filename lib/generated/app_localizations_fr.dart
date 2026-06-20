@@ -10847,4 +10847,17 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventsAddLink => 'Ajouter un lien';
+
+  @override
+  String get tierLimitTitle => 'Améliorez votre offre pour en créer plus';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Votre offre autorise $max événements. Améliorez-la pour en créer plus.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Votre offre autorise $max groupes. Améliorez-la pour en créer plus.';
+  }
 }

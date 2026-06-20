@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/tier_limits_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -1549,8 +1550,35 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     });
   }
 
-  void _createEvent() {
+  Future<void> _createEvent() async {
     if (!_formKey.currentState!.validate()) return;
+
+    // Enforce tier cap on number of events created.
+    final check =
+        await TierLimitsService().canCreateEvent(widget.currentUserId);
+    if (!mounted) return;
+    if (!check.allowed) {
+      final l10n = AppLocalizations.of(context)!;
+      await showDialog<void>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(l10n.tierLimitTitle,
+              style: const TextStyle(color: AppColors.textPrimary)),
+          content: Text(
+            l10n.tierLimitEventsBody(check.max ?? 0),
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.tourGotIt),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
 
     final event = Event(
       id: '', // Firestore will generate the ID

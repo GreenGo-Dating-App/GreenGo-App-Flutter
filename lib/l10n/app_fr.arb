@@ -3650,5 +3650,8 @@
   "eventsPrivateEvent": "Événement privé",
   "eventsExternalLinks": "Liens",
   "eventsLinkUrlHint": "https://…",
-  "eventsAddLink": "Ajouter un lien"
+  "eventsAddLink": "Ajouter un lien",
+  "tierLimitTitle": "Améliorez votre offre pour en créer plus",
+  "tierLimitEventsBody": "Votre offre autorise {max} événements. Améliorez-la pour en créer plus.",
+  "tierLimitGroupsBody": "Votre offre autorise {max} groupes. Améliorez-la pour en créer plus."
 }

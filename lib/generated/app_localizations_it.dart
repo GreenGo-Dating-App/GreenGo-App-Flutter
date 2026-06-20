@@ -10798,4 +10798,17 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsAddLink => 'Aggiungi link';
+
+  @override
+  String get tierLimitTitle => 'Esegui l\'upgrade per crearne di più';
+
+  @override
+  String tierLimitEventsBody(int max) {
+    return 'Il tuo piano consente $max eventi. Esegui l\'upgrade per crearne di più.';
+  }
+
+  @override
+  String tierLimitGroupsBody(int max) {
+    return 'Il tuo piano consente $max gruppi. Esegui l\'upgrade per crearne di più.';
+  }
 }
