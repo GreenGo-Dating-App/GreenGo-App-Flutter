@@ -53,6 +53,11 @@ export {
   onGroupParticipantsChanged,
 } from './group_chat/membership';
 
+// Events — per-country aggregation for the globe.
+export {
+  onEventWriteUpdateCountryStats,
+} from './events/country_aggregate';
+
 // Backup and Export Functions
 export {
   backupConversation,
