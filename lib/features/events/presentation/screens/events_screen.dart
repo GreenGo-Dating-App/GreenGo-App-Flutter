@@ -1459,7 +1459,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   DateTime _startDate = DateTime.now().add(const Duration(days: 1));
   DateTime _endDate = DateTime.now().add(const Duration(days: 1, hours: 2));
   bool _isFree = true;
-  double _price = 0;
+  final _priceController = TextEditingController(text: '10');
+  String _currency = '\$';
+  static const List<String> _currencies = ['\$', '€', '£', 'R\$', '¥'];
   EventVisibility _visibility = EventVisibility.public;
   bool _isUnlimited = false;
   double? _lat;
@@ -1483,6 +1485,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _languagePairsController.dispose();
     _linkUrlController.dispose();
     _linkLabelController.dispose();
+    _priceController.dispose();
     super.dispose();
   }
 
@@ -1556,7 +1559,46 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     });
   }
 
-  void _addLink() {
+  Future<void> _showAddLinkDialog() async {
+    final l10n = AppLocalizations.of(context)!;
+    _linkUrlController.clear();
+    _linkLabelController.clear();
+    final added = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsAddLink,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: _linkLabelController,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration:
+                  _inputDecoration(l10n.eventsLinkLabelHint),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _linkUrlController,
+              style: const TextStyle(color: AppColors.textPrimary),
+              keyboardType: TextInputType.url,
+              autofocus: true,
+              decoration: _inputDecoration(l10n.eventsLinkUrlHint),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsAddLink)),
+        ],
+      ),
+    );
+    if (added != true) return;
     final url = _linkUrlController.text.trim();
     if (url.isEmpty) return;
     setState(() {
@@ -1718,14 +1760,49 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               onChanged: (v) => setState(() => _isFree = v),
             ),
             if (!_isFree) ...[
-              Slider(
-                value: _price,
-                min: 0,
-                max: 100,
-                divisions: 20,
-                label: '\$${_price.toStringAsFixed(0)}',
-                activeColor: AppColors.richGold,
-                onChanged: (v) => setState(() => _price = v),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  // Currency selector (default $)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: AppColors.backgroundCard,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: DropdownButton<String>(
+                      value: _currency,
+                      underline: const SizedBox.shrink(),
+                      dropdownColor: AppColors.backgroundCard,
+                      style: const TextStyle(
+                          color: AppColors.textPrimary, fontSize: 16),
+                      items: _currencies
+                          .map((c) =>
+                              DropdownMenuItem(value: c, child: Text(c)))
+                          .toList(),
+                      onChanged: (v) =>
+                          setState(() => _currency = v ?? '\$'),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: TextFormField(
+                      controller: _priceController,
+                      style: const TextStyle(color: AppColors.textPrimary),
+                      keyboardType: TextInputType.number,
+                      decoration: _inputDecoration(
+                          AppLocalizations.of(context)!.eventsPriceHint),
+                      validator: (v) {
+                        if (_isFree) return null;
+                        final n = int.tryParse(v ?? '');
+                        if (n == null || n < 1 || n > 1000) {
+                          return AppLocalizations.of(context)!.eventsPriceRange;
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
+                ],
               ),
             ],
             const SizedBox(height: 16),
@@ -1755,23 +1832,16 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                         setState(() => _externalLinks.remove(lnk)),
                   ),
                 )),
-            Row(
-              children: [
-                Expanded(
-                  child: TextFormField(
-                    controller: _linkUrlController,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                    keyboardType: TextInputType.url,
-                    decoration: _inputDecoration(
-                        AppLocalizations.of(context)!.eventsLinkUrlHint),
-                  ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                icon: const Icon(Icons.add_circle, color: AppColors.richGold),
+                label: Text(
+                  AppLocalizations.of(context)!.eventsAddLink,
+                  style: const TextStyle(color: AppColors.richGold),
                 ),
-                IconButton(
-                  icon: const Icon(Icons.add_circle, color: AppColors.richGold),
-                  tooltip: AppLocalizations.of(context)!.eventsAddLink,
-                  onPressed: _addLink,
-                ),
-              ],
+                onPressed: _showAddLinkDialog,
+              ),
             ),
             const SizedBox(height: 32),
             ElevatedButton(
@@ -1918,7 +1988,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       country: _pickedCountry,
       maxAttendees:
           _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20),
-      price: _isFree ? null : _price,
+      price: _isFree
+          ? null
+          : (double.tryParse(_priceController.text)?.clamp(1, 1000)),
+      currency: _isFree ? null : _currency,
       visibility: _visibility,
       externalLinks: _externalLinks,
       status: EventStatus.published,

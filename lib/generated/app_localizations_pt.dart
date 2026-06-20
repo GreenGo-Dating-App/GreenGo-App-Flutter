@@ -10835,6 +10835,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String groupMemberLimit(int count) {
     return 'Até $count membros por grupo';
   }
+
+  @override
+  String get eventsPriceHint => 'Preço (1–1000)';
+
+  @override
+  String get eventsPriceRange => 'Introduz um preço entre 1 e 1000';
+
+  @override
+  String get eventsLinkLabelHint => 'Rótulo (opcional)';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21371,4 +21380,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String groupMemberLimit(int count) {
     return 'Até $count membros por grupo';
   }
+
+  @override
+  String get eventsPriceHint => 'Preço (1–1000)';
+
+  @override
+  String get eventsPriceRange => 'Insira um preço entre 1 e 1000';
+
+  @override
+  String get eventsLinkLabelHint => 'Rótulo (opcional)';
 }

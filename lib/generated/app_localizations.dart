@@ -19121,6 +19121,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Up to {count} members per group'**
   String groupMemberLimit(int count);
+
+  /// No description provided for @eventsPriceHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Price (1–1000)'**
+  String get eventsPriceHint;
+
+  /// No description provided for @eventsPriceRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a price between 1 and 1000'**
+  String get eventsPriceRange;
+
+  /// No description provided for @eventsLinkLabelHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Label (optional)'**
+  String get eventsLinkLabelHint;
 }
 
 class _AppLocalizationsDelegate
