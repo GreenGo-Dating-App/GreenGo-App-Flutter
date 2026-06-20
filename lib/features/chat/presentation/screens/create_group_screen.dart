@@ -49,6 +49,8 @@ class CreateGroupScreen extends StatefulWidget {
 }
 
 class _CreateGroupScreenState extends State<CreateGroupScreen> {
+  // Max members per group is 10 (creator + up to 9 others).
+  static const int _maxOtherMembers = 9;
   final _nameController = TextEditingController();
   final _nicknameController = TextEditingController();
   final _selected = <String>{};
@@ -86,8 +88,10 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
   /// (case-insensitive via `nicknameLower`), excluding self and ghost-mode users.
   Future<void> _searchNickname() async {
     final l10n = AppLocalizations.of(context)!;
-    final query = _nicknameController.text.trim().toLowerCase();
-    if (query.isEmpty) return;
+    final raw = _nicknameController.text.trim();
+    if (raw.isEmpty) return;
+    // Match the stored nickname whether it's saved as-typed or lowercased.
+    final candidatesQuery = <String>{raw, raw.toLowerCase()}.toList();
     setState(() {
       _searching = true;
       _searchMessage = null;
@@ -95,12 +99,12 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
     try {
       final snap = await FirebaseFirestore.instance
           .collection('profiles')
-          .where('nicknameLower', isGreaterThanOrEqualTo: query)
-          .where('nicknameLower', isLessThanOrEqualTo: query + String.fromCharCode(0xf8ff))
+          .where('nickname', whereIn: candidatesQuery)
           .limit(20)
           .get();
 
       var added = 0;
+      var capped = false;
       for (final doc in snap.docs) {
         final data = doc.data();
         final uid = doc.id;
@@ -109,8 +113,12 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
         if (_invited.any((c) => c.userId == uid) ||
             widget.candidates.any((c) => c.userId == uid)) {
           // Already in the list — just make sure it's selected.
-          _selected.add(uid);
+          if (_selected.length < _maxOtherMembers) _selected.add(uid);
           continue;
+        }
+        if (_selected.length >= _maxOtherMembers) {
+          capped = true;
+          break;
         }
         final photos = (data['photoUrls'] as List?)?.cast<String>() ?? const [];
         _invited.add(GroupCandidate(
@@ -123,9 +131,13 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
       }
       setState(() {
         _searching = false;
-        _searchMessage = snap.docs.isEmpty
-            ? l10n.groupNoOneFound
-            : (added == 0 ? l10n.groupAlreadyAdded : l10n.groupAddedCount(added));
+        _searchMessage = capped
+            ? l10n.groupMemberLimit(_maxOtherMembers + 1)
+            : (snap.docs.isEmpty
+                ? l10n.groupNoOneFound
+                : (added == 0
+                    ? l10n.groupAlreadyAdded
+                    : l10n.groupAddedCount(added)));
         _nicknameController.clear();
       });
     } catch (e) {
@@ -287,13 +299,25 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
                       final selected = _selected.contains(c.userId);
                       return CheckboxListTile(
                         value: selected,
-                        onChanged: (v) => setState(() {
-                          if (v == true) {
-                            _selected.add(c.userId);
-                          } else {
-                            _selected.remove(c.userId);
+                        onChanged: (v) {
+                          if (v == true &&
+                              _selected.length >= _maxOtherMembers) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(AppLocalizations.of(context)!
+                                    .groupMemberLimit(_maxOtherMembers + 1)),
+                              ),
+                            );
+                            return;
                           }
-                        }),
+                          setState(() {
+                            if (v == true) {
+                              _selected.add(c.userId);
+                            } else {
+                              _selected.remove(c.userId);
+                            }
+                          });
+                        },
                         secondary: CircleAvatar(
                           backgroundImage: (c.photoUrl != null &&
                                   c.photoUrl!.isNotEmpty)

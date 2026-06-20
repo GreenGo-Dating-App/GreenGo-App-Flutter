@@ -10900,4 +10900,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String eventsBoostConfirm(int cost) {
     return 'Mettre cet événement en avant pour $cost pièces pendant 7 jours ?';
   }
+
+  @override
+  String groupMemberLimit(int count) {
+    return 'Jusqu\'à $count membres par groupe';
+  }
 }

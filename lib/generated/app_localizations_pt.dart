@@ -10830,6 +10830,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String eventsBoostConfirm(int cost) {
     return 'Destacar este evento por $cost moedas durante 7 dias?';
   }
+
+  @override
+  String groupMemberLimit(int count) {
+    return 'Até $count membros por grupo';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21360,5 +21365,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String eventsBoostConfirm(int cost) {
     return 'Destacar este evento por $cost moedas por 7 dias?';
+  }
+
+  @override
+  String groupMemberLimit(int count) {
+    return 'Até $count membros por grupo';
   }
 }

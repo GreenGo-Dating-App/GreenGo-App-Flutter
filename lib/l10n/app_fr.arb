@@ -3665,5 +3665,6 @@
   "eventsBoost": "Booster",
   "eventsBoosted": "Événement mis en avant !",
   "eventsJoinForCoins": "Rejoindre cet événement pour {cost} pièces ?",
-  "eventsBoostConfirm": "Mettre cet événement en avant pour {cost} pièces pendant 7 jours ?"
+  "eventsBoostConfirm": "Mettre cet événement en avant pour {cost} pièces pendant 7 jours ?",
+  "groupMemberLimit": "Jusqu'à {count} membres par groupe"
 }
