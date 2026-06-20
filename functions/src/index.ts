@@ -43,6 +43,16 @@ export {
   getScheduledMessages,
 } from './messaging/scheduledMessages';
 
+// Group Chat ("Culture Circles") — isolated `groups` collection fan-out.
+export {
+  onGroupMessageCreated,
+} from './group_chat/fanout';
+
+export {
+  onGroupCreated,
+  onGroupParticipantsChanged,
+} from './group_chat/membership';
+
 // Backup and Export Functions
 export {
   backupConversation,
