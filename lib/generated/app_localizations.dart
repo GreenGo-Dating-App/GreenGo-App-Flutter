@@ -19055,6 +19055,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See the global leaderboard'**
   String get profileRankingSubtitle;
+
+  /// No description provided for @eventBroadcastTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcast to everyone'**
+  String get eventBroadcastTooltip;
+
+  /// No description provided for @eventBroadcastHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcement to all attendees…'**
+  String get eventBroadcastHint;
+
+  /// No description provided for @eventBroadcastLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcement'**
+  String get eventBroadcastLabel;
 }
 
 class _AppLocalizationsDelegate

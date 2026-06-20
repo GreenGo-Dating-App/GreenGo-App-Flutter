@@ -3655,5 +3655,8 @@
   "tierLimitEventsBody": "Dein Tarif erlaubt {max} Veranstaltungen. Upgrade für mehr.",
   "tierLimitGroupsBody": "Dein Tarif erlaubt {max} Gruppen. Upgrade für mehr.",
   "groupsTitle": "Gruppen",
-  "profileRankingSubtitle": "Globale Rangliste ansehen"
+  "profileRankingSubtitle": "Globale Rangliste ansehen",
+  "eventBroadcastTooltip": "An alle senden",
+  "eventBroadcastHint": "Ankündigung an alle Teilnehmer…",
+  "eventBroadcastLabel": "Ankündigung"
 }

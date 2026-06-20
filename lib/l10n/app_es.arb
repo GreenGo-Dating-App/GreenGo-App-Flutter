@@ -3655,5 +3655,8 @@
   "tierLimitEventsBody": "Tu plan permite {max} eventos. Mejóralo para crear más.",
   "tierLimitGroupsBody": "Tu plan permite {max} grupos. Mejóralo para crear más.",
   "groupsTitle": "Grupos",
-  "profileRankingSubtitle": "Ver la clasificación global"
+  "profileRankingSubtitle": "Ver la clasificación global",
+  "eventBroadcastTooltip": "Anunciar a todos",
+  "eventBroadcastHint": "Anuncio para todos los asistentes…",
+  "eventBroadcastLabel": "Anuncio"
 }

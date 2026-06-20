@@ -3655,5 +3655,8 @@
   "tierLimitEventsBody": "Votre offre autorise {max} événements. Améliorez-la pour en créer plus.",
   "tierLimitGroupsBody": "Votre offre autorise {max} groupes. Améliorez-la pour en créer plus.",
   "groupsTitle": "Groupes",
-  "profileRankingSubtitle": "Voir le classement mondial"
+  "profileRankingSubtitle": "Voir le classement mondial",
+  "eventBroadcastTooltip": "Diffuser à tous",
+  "eventBroadcastHint": "Annonce à tous les participants…",
+  "eventBroadcastLabel": "Annonce"
 }

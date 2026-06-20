@@ -10696,4 +10696,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileRankingSubtitle => 'See the global leaderboard';
+
+  @override
+  String get eventBroadcastTooltip => 'Broadcast to everyone';
+
+  @override
+  String get eventBroadcastHint => 'Announcement to all attendees…';
+
+  @override
+  String get eventBroadcastLabel => 'Announcement';
 }
