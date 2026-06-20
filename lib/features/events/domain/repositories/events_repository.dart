@@ -23,12 +23,16 @@ abstract class EventsRepository {
   /// Delete an event
   Future<Either<Failure, void>> deleteEvent(String eventId);
 
-  /// RSVP to an event
+  /// RSVP to an event (with optional attendee privacy controls)
   Future<Either<Failure, void>> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  );
+    String status, {
+    bool isInvisible,
+    bool isAnonymous,
+    bool muteNotifications,
+    bool visibleToOrganizerOnly,
+  });
 
   /// Cancel RSVP for an event
   Future<Either<Failure, void>> cancelRsvp(String eventId, String userId);

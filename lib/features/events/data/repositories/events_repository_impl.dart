@@ -97,10 +97,22 @@ class EventsRepositoryImpl implements EventsRepository {
   Future<Either<Failure, void>> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  ) async {
+    String status, {
+    bool isInvisible = false,
+    bool isAnonymous = false,
+    bool muteNotifications = false,
+    bool visibleToOrganizerOnly = false,
+  }) async {
     try {
-      await remoteDataSource.rsvpEvent(eventId, userId, status);
+      await remoteDataSource.rsvpEvent(
+        eventId,
+        userId,
+        status,
+        isInvisible: isInvisible,
+        isAnonymous: isAnonymous,
+        muteNotifications: muteNotifications,
+        visibleToOrganizerOnly: visibleToOrganizerOnly,
+      );
       return const Right(null);
     } on ServerException catch (e) {
       debugPrint('ServerException in rsvpEvent: ${e.message}');

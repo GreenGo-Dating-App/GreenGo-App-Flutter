@@ -24,7 +24,15 @@ abstract class EventsRemoteDataSource {
 
   Future<void> deleteEvent(String eventId);
 
-  Future<void> rsvpEvent(String eventId, String userId, String status);
+  Future<void> rsvpEvent(
+    String eventId,
+    String userId,
+    String status, {
+    bool isInvisible,
+    bool isAnonymous,
+    bool muteNotifications,
+    bool visibleToOrganizerOnly,
+  });
 
   Future<void> cancelRsvp(String eventId, String userId);
 
@@ -245,8 +253,12 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   Future<void> rsvpEvent(
     String eventId,
     String userId,
-    String status,
-  ) async {
+    String status, {
+    bool isInvisible = false,
+    bool isAnonymous = false,
+    bool muteNotifications = false,
+    bool visibleToOrganizerOnly = false,
+  }) async {
     try {
       // Get user profile for attendee info
       final userDoc =
@@ -268,6 +280,10 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         status: _parseRsvpStatusFromString(status),
         rsvpDate: DateTime.now(),
         isApproved: true,
+        isInvisible: isInvisible,
+        isAnonymous: isAnonymous,
+        muteNotifications: muteNotifications,
+        visibleToOrganizerOnly: visibleToOrganizerOnly,
       );
 
       // Set the attendee in sub-collection (use userId as doc ID for uniqueness)
