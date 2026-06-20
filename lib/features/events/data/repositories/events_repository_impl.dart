@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/event.dart';
+import '../../domain/entities/event_country_stat.dart';
 import '../../domain/repositories/events_repository.dart';
 import '../datasources/events_remote_datasource.dart';
 
@@ -202,6 +203,37 @@ class EventsRepositoryImpl implements EventsRepository {
       return Left(ServerFailure(e.message));
     } catch (e) {
       debugPrint('Error in searchEvents: $e');
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<EventCountryStat>>> getCountryStats() async {
+    try {
+      return Right(await remoteDataSource.getCountryStats());
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Event>>> getEventsByCountry(
+    String country, {
+    int limit = 10,
+    List<String>? networkUserIds,
+  }) async {
+    try {
+      final events = await remoteDataSource.getEventsByCountry(
+        country,
+        limit: limit,
+        networkUserIds: networkUserIds,
+      );
+      return Right(events);
+    } on ServerException catch (e) {
+      return Left(ServerFailure(e.message));
+    } catch (e) {
       return Left(ServerFailure(e.toString()));
     }
   }

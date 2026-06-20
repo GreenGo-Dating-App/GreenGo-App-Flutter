@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../entities/event.dart';
+import '../entities/event_country_stat.dart';
 
 /// Events Repository Interface
 abstract class EventsRepository {
@@ -54,4 +55,14 @@ abstract class EventsRepository {
 
   /// Search public events by name / typology / city.
   Future<Either<Failure, List<Event>>> searchEvents(String query);
+
+  /// Per-country aggregates for the globe.
+  Future<Either<Failure, List<EventCountryStat>>> getCountryStats();
+
+  /// Top public events in a country (optionally limited to the user's network).
+  Future<Either<Failure, List<Event>>> getEventsByCountry(
+    String country, {
+    int limit,
+    List<String>? networkUserIds,
+  });
 }
