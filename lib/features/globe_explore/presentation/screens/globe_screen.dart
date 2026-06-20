@@ -1,11 +1,17 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/error/failures.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../events/domain/entities/event.dart';
+import '../../../events/domain/repositories/events_repository.dart';
+import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../domain/entities/globe_user.dart';
@@ -539,6 +545,103 @@ class GlobeScreen extends StatelessWidget {
     );
   }
 
+  /// Top public events in a country, shown in the country tap sheet.
+  Widget _buildCountryEventsSection(BuildContext context, String countryName) {
+    final l10n = AppLocalizations.of(context)!;
+    return FutureBuilder<Either<Failure, List<Event>>>(
+      future:
+          di.sl<EventsRepository>().getEventsByCountry(countryName, limit: 10),
+      builder: (context, snapshot) {
+        final events =
+            snapshot.data?.fold((_) => <Event>[], (e) => e) ?? const <Event>[];
+        if (events.isEmpty) return const SizedBox.shrink();
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+              child: Row(
+                children: [
+                  const Icon(Icons.event, color: AppColors.richGold, size: 18),
+                  const SizedBox(width: 6),
+                  Text(
+                    l10n.eventsTitle,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 150,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                itemCount: events.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 8),
+                itemBuilder: (context, i) =>
+                    _buildCountryEventCard(context, events[i]),
+              ),
+            ),
+            const Divider(color: AppColors.divider, height: 1),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildCountryEventCard(BuildContext context, Event e) {
+    final l10n = AppLocalizations.of(context)!;
+    Widget cover() => (e.imageUrl != null && e.imageUrl!.isNotEmpty)
+        ? Image.network(e.imageUrl!,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) => Container(
+                color: AppColors.backgroundDark,
+                child: const Icon(Icons.event, color: AppColors.richGold)))
+        : Container(
+            color: AppColors.backgroundDark,
+            child: const Icon(Icons.event, color: AppColors.richGold));
+    return GestureDetector(
+      onTap: () => Navigator.of(context).push(
+        EventDetailLoaderScreen.route(eventId: e.id, currentUserId: userId),
+      ),
+      child: SizedBox(
+        width: 150,
+        child: Card(
+          color: AppColors.backgroundCard,
+          clipBehavior: Clip.antiAlias,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: 80, width: double.infinity, child: cover()),
+              Padding(
+                padding: const EdgeInsets.all(8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(e.title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600)),
+                    const SizedBox(height: 2),
+                    Text(l10n.eventsGoing(e.goingCount),
+                        style: const TextStyle(
+                            color: AppColors.textSecondary, fontSize: 11)),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   void _showCountryMatchesSheet(
     BuildContext context,
     String countryName,
@@ -603,6 +706,8 @@ class GlobeScreen extends StatelessWidget {
               ),
             ),
             const Divider(color: AppColors.divider, height: 1),
+            // Events happening in this country (globe "Network & Events").
+            _buildCountryEventsSection(context, countryName),
             Expanded(
               child: matches.isEmpty
                   ? _buildNoMatchesInCountry(context, countryName)
