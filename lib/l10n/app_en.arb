@@ -5083,5 +5083,10 @@
   "eventLoadError": "Couldn't load this event",
   "eventShare": "Share event",
   "eventShared": "Event shared",
-  "eventShareEmpty": "No chats or groups to share with yet"
+  "eventShareEmpty": "No chats or groups to share with yet",
+  "eventsUnlimitedAttendees": "Unlimited attendees",
+  "eventsPrivateEvent": "Private event",
+  "eventsExternalLinks": "Links",
+  "eventsLinkUrlHint": "https://…",
+  "eventsAddLink": "Add link"
 }

@@ -10793,4 +10793,19 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventShareEmpty => 'Noch keine Chats oder Gruppen zum Teilen';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Unbegrenzte Teilnehmer';
+
+  @override
+  String get eventsPrivateEvent => 'Private Veranstaltung';
+
+  @override
+  String get eventsExternalLinks => 'Links';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Link hinzufügen';
 }

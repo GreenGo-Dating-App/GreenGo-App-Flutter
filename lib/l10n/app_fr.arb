@@ -3645,5 +3645,10 @@
   "eventLoadError": "Impossible de charger cet événement",
   "eventShare": "Partager l'événement",
   "eventShared": "Événement partagé",
-  "eventShareEmpty": "Aucun chat ou groupe pour partager pour l'instant"
+  "eventShareEmpty": "Aucun chat ou groupe pour partager pour l'instant",
+  "eventsUnlimitedAttendees": "Participants illimités",
+  "eventsPrivateEvent": "Événement privé",
+  "eventsExternalLinks": "Liens",
+  "eventsLinkUrlHint": "https://…",
+  "eventsAddLink": "Ajouter un lien"
 }

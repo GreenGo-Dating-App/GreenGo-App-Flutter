@@ -18995,6 +18995,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No chats or groups to share with yet'**
   String get eventShareEmpty;
+
+  /// No description provided for @eventsUnlimitedAttendees.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited attendees'**
+  String get eventsUnlimitedAttendees;
+
+  /// No description provided for @eventsPrivateEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Private event'**
+  String get eventsPrivateEvent;
+
+  /// No description provided for @eventsExternalLinks.
+  ///
+  /// In en, this message translates to:
+  /// **'Links'**
+  String get eventsExternalLinks;
+
+  /// No description provided for @eventsLinkUrlHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://…'**
+  String get eventsLinkUrlHint;
+
+  /// No description provided for @eventsAddLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Add link'**
+  String get eventsAddLink;
 }
 
 class _AppLocalizationsDelegate
