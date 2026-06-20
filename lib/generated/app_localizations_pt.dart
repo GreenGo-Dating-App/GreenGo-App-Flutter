@@ -10805,6 +10805,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventBroadcastLabel => 'Anúncio';
+
+  @override
+  String get eventsFeatured => 'Destaque';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21311,4 +21314,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventBroadcastLabel => 'Anúncio';
+
+  @override
+  String get eventsFeatured => 'Destaque';
 }

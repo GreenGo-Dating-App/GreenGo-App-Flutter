@@ -3658,5 +3658,6 @@
   "profileRankingSubtitle": "Globale Rangliste ansehen",
   "eventBroadcastTooltip": "An alle senden",
   "eventBroadcastHint": "Ankündigung an alle Teilnehmer…",
-  "eventBroadcastLabel": "Ankündigung"
+  "eventBroadcastLabel": "Ankündigung",
+  "eventsFeatured": "Empfohlen"
 }

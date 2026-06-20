@@ -89,6 +89,8 @@ class Event extends Equatable {
     this.updatedAt,
     this.visibility = EventVisibility.public,
     this.externalLinks = const [],
+    this.isFeatured = false,
+    this.featuredUntil,
   });
   final String id;
   final String organizerId;
@@ -125,6 +127,14 @@ class Event extends Equatable {
   final DateTime? updatedAt;
   final EventVisibility visibility;
   final List<ExternalLink> externalLinks;
+  // Promotion: featured/boosted events surface first in discovery.
+  final bool isFeatured;
+  final DateTime? featuredUntil;
+
+  /// Whether the event is currently boosted/featured.
+  bool get isCurrentlyFeatured =>
+      isFeatured &&
+      (featuredUntil == null || featuredUntil!.isAfter(DateTime.now()));
 
   int get goingCount => attendees.where((a) => a.status == RSVPStatus.going).length;
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
@@ -175,6 +185,8 @@ class Event extends Equatable {
         updatedAt,
         visibility,
         externalLinks,
+        isFeatured,
+        featuredUntil,
       ];
 
   Event copyWith({
@@ -213,6 +225,8 @@ class Event extends Equatable {
     DateTime? updatedAt,
     EventVisibility? visibility,
     List<ExternalLink>? externalLinks,
+    bool? isFeatured,
+    DateTime? featuredUntil,
   }) {
     return Event(
       id: id ?? this.id,
@@ -250,6 +264,8 @@ class Event extends Equatable {
       updatedAt: updatedAt ?? this.updatedAt,
       visibility: visibility ?? this.visibility,
       externalLinks: externalLinks ?? this.externalLinks,
+      isFeatured: isFeatured ?? this.isFeatured,
+      featuredUntil: featuredUntil ?? this.featuredUntil,
     );
   }
 }

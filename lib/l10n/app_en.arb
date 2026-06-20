@@ -5098,5 +5098,6 @@
   "profileRankingSubtitle": "See the global leaderboard",
   "eventBroadcastTooltip": "Broadcast to everyone",
   "eventBroadcastHint": "Announcement to all attendees…",
-  "eventBroadcastLabel": "Announcement"
+  "eventBroadcastLabel": "Announcement",
+  "eventsFeatured": "Featured"
 }

@@ -10836,4 +10836,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventBroadcastLabel => 'Ankündigung';
+
+  @override
+  String get eventsFeatured => 'Empfohlen';
 }

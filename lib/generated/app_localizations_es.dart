@@ -10831,4 +10831,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get eventBroadcastLabel => 'Anuncio';
+
+  @override
+  String get eventsFeatured => 'Destacado';
 }
