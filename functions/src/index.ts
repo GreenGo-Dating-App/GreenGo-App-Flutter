@@ -63,6 +63,11 @@ export {
   onEventBroadcastCreated,
 } from './events/broadcast';
 
+// Events — scheduled reminders.
+export {
+  sendEventReminders,
+} from './events/reminders';
+
 // Backup and Export Functions
 export {
   backupConversation,
