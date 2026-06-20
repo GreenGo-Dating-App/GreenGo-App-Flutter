@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'group_info.dart';
 import 'message.dart';
 
 /// Chat Theme Options
@@ -17,6 +18,7 @@ enum ConversationType {
   support,    // Support conversation between user and support agent
   search,     // Conversation started from nickname search (no match required)
   superLike,  // Conversation started from a super like (one-way until reply)
+  group,      // Group conversation with 3+ participants ("Culture Circle")
 }
 
 /// Support Ticket Priority
@@ -72,11 +74,34 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     this.favorites,
     this.isDeleted = false,
     this.deletedFor,
+    this.isGroup = false,
+    this.participants,
+    this.groupInfo,
+    this.roles,
+    this.unreadCounts,
   });
   final String conversationId;
   final String matchId;
   final String userId1;
   final String userId2;
+
+  // ---- Group conversation fields (only set when isGroup == true) ----
+  /// True when this is a multi-party group conversation.
+  final bool isGroup;
+
+  /// All member user ids. For 1:1 conversations this is null and callers
+  /// should fall back to [participantIds] which derives it from userId1/userId2.
+  final List<String>? participants;
+
+  /// Group metadata (name, photo, language, creator). Null for 1:1.
+  final GroupInfo? groupInfo;
+
+  /// Per-member role: userId -> "admin" | "member". Null for 1:1.
+  final Map<String, String>? roles;
+
+  /// Per-member unread counter: userId -> count. Replaces the single
+  /// [unreadCount] for groups. Null for 1:1.
+  final Map<String, int>? unreadCounts;
   final Message? lastMessage;
   final DateTime? lastMessageAt;
   final int unreadCount;
@@ -128,6 +153,40 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
   String getOtherUserId(String currentUserId) {
     return currentUserId == userId1 ? userId2 : userId1;
   }
+
+  // ---- Group helpers ----
+
+  /// Whether this is a group conversation (by flag or type).
+  bool get isGroupConversation =>
+      isGroup || conversationType == ConversationType.group;
+
+  /// All participant ids, working for both group and 1:1 conversations.
+  List<String> get participantIds {
+    if (participants != null && participants!.isNotEmpty) return participants!;
+    return [userId1, userId2];
+  }
+
+  /// Number of members.
+  int get memberCount => participantIds.length;
+
+  /// Check if a user is a participant of this conversation.
+  bool hasParticipant(String userId) => participantIds.contains(userId);
+
+  /// Unread count for a specific user (group-aware). Falls back to the
+  /// single [unreadCount] for 1:1 conversations.
+  int unreadCountFor(String userId) {
+    if (isGroupConversation && unreadCounts != null) {
+      return unreadCounts![userId] ?? 0;
+    }
+    return unreadCount;
+  }
+
+  /// Role of a member; defaults to member.
+  GroupRole roleOf(String userId) =>
+      GroupRoleExtension.fromString(roles?[userId]);
+
+  /// Whether the user is an admin of this group.
+  bool isAdmin(String userId) => roleOf(userId) == GroupRole.admin;
 
   /// Check if user is typing
   bool isOtherUserTyping(String currentUserId) {
@@ -306,6 +365,11 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     Map<String, bool>? favorites,
     bool? isDeleted,
     Map<String, dynamic>? deletedFor,
+    bool? isGroup,
+    List<String>? participants,
+    GroupInfo? groupInfo,
+    Map<String, String>? roles,
+    Map<String, int>? unreadCounts,
     bool clearLastMessage = false,
   }) {
     return Conversation(
@@ -339,6 +403,11 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
       favorites: favorites ?? this.favorites,
       isDeleted: isDeleted ?? this.isDeleted,
       deletedFor: deletedFor ?? this.deletedFor,
+      isGroup: isGroup ?? this.isGroup,
+      participants: participants ?? this.participants,
+      groupInfo: groupInfo ?? this.groupInfo,
+      roles: roles ?? this.roles,
+      unreadCounts: unreadCounts ?? this.unreadCounts,
     );
   }
 
@@ -374,5 +443,10 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
         favorites,
         isDeleted,
         deletedFor,
+        isGroup,
+        participants,
+        groupInfo,
+        roles,
+        unreadCounts,
       ];
 }
