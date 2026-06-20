@@ -5115,5 +5115,6 @@
   "eventsLinkLabelHint": "Label (optional)",
   "eventsPickLocation": "Pick location",
   "eventsSearchAddress": "Search address",
-  "eventsUseThisLocation": "Use this location"
+  "eventsUseThisLocation": "Use this location",
+  "profileProgressGrowth": "Progress & Growth"
 }

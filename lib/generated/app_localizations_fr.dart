@@ -7956,7 +7956,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get profilePremiumFeatures => 'Fonctionnalités premium';
 
   @override
-  String get profileProgressGrowth => 'Progrès et croissance';
+  String get profileProgressGrowth => 'Progression et évolution';
 
   @override
   String get profileRestart => 'Redémarrer';
