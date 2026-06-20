@@ -10808,6 +10808,28 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsFeatured => 'Destaque';
+
+  @override
+  String get eventsInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get eventsConfirmAction => 'Confirmar';
+
+  @override
+  String get eventsBoost => 'Destacar';
+
+  @override
+  String get eventsBoosted => 'Evento destacado!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Participar neste evento por $cost moedas?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Destacar este evento por $cost moedas durante 7 dias?';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21317,4 +21339,26 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsFeatured => 'Destaque';
+
+  @override
+  String get eventsInsufficientCoins => 'Moedas insuficientes';
+
+  @override
+  String get eventsConfirmAction => 'Confirmar';
+
+  @override
+  String get eventsBoost => 'Destacar';
+
+  @override
+  String get eventsBoosted => 'Evento destacado!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Participar deste evento por $cost moedas?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Destacar este evento por $cost moedas por 7 dias?';
+  }
 }

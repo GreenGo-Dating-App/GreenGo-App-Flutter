@@ -3661,5 +3661,11 @@
   "eventBroadcastTooltip": "Transmitir para todos",
   "eventBroadcastHint": "Anúncio para todos os participantes…",
   "eventBroadcastLabel": "Anúncio",
-  "eventsFeatured": "Destaque"
+  "eventsFeatured": "Destaque",
+  "eventsInsufficientCoins": "Moedas insuficientes",
+  "eventsConfirmAction": "Confirmar",
+  "eventsBoost": "Destacar",
+  "eventsBoosted": "Evento destacado!",
+  "eventsJoinForCoins": "Participar deste evento por {cost} moedas?",
+  "eventsBoostConfirm": "Destacar este evento por {cost} moedas por 7 dias?"
 }

@@ -3659,5 +3659,11 @@
   "eventBroadcastTooltip": "Annuncia a tutti",
   "eventBroadcastHint": "Annuncio a tutti i partecipanti…",
   "eventBroadcastLabel": "Annuncio",
-  "eventsFeatured": "In evidenza"
+  "eventsFeatured": "In evidenza",
+  "eventsInsufficientCoins": "Monete insufficienti",
+  "eventsConfirmAction": "Conferma",
+  "eventsBoost": "Metti in evidenza",
+  "eventsBoosted": "Evento in evidenza!",
+  "eventsJoinForCoins": "Partecipare a questo evento per {cost} monete?",
+  "eventsBoostConfirm": "Mettere in evidenza questo evento per {cost} monete per 7 giorni?"
 }

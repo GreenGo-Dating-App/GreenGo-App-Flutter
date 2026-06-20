@@ -10708,4 +10708,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsFeatured => 'Featured';
+
+  @override
+  String get eventsInsufficientCoins => 'Not enough coins';
+
+  @override
+  String get eventsConfirmAction => 'Confirm';
+
+  @override
+  String get eventsBoost => 'Boost';
+
+  @override
+  String get eventsBoosted => 'Event featured!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Join this event for $cost coins?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Feature this event for $cost coins for 7 days?';
+  }
 }

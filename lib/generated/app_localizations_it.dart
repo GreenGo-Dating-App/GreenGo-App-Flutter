@@ -10829,4 +10829,26 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsFeatured => 'In evidenza';
+
+  @override
+  String get eventsInsufficientCoins => 'Monete insufficienti';
+
+  @override
+  String get eventsConfirmAction => 'Conferma';
+
+  @override
+  String get eventsBoost => 'Metti in evidenza';
+
+  @override
+  String get eventsBoosted => 'Evento in evidenza!';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Partecipare a questo evento per $cost monete?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Mettere in evidenza questo evento per $cost monete per 7 giorni?';
+  }
 }
