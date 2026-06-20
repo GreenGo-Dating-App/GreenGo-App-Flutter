@@ -10866,4 +10866,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String groupMemberLimit(int count) {
     return 'Bis zu $count Mitglieder pro Gruppe';
   }
+
+  @override
+  String get eventsPriceHint => 'Preis (1–1000)';
+
+  @override
+  String get eventsPriceRange => 'Gib einen Preis zwischen 1 und 1000 ein';
+
+  @override
+  String get eventsLinkLabelHint => 'Bezeichnung (optional)';
 }

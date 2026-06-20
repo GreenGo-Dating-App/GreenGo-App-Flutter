@@ -3666,5 +3666,8 @@
   "eventsBoosted": "Evento in evidenza!",
   "eventsJoinForCoins": "Partecipare a questo evento per {cost} monete?",
   "eventsBoostConfirm": "Mettere in evidenza questo evento per {cost} monete per 7 giorni?",
-  "groupMemberLimit": "Fino a {count} membri per gruppo"
+  "groupMemberLimit": "Fino a {count} membri per gruppo",
+  "eventsPriceHint": "Prezzo (1–1000)",
+  "eventsPriceRange": "Inserisci un prezzo tra 1 e 1000",
+  "eventsLinkLabelHint": "Etichetta (facoltativa)"
 }

@@ -5109,5 +5109,8 @@
   "eventsBoostConfirm": "Feature this event for {cost} coins for 7 days?",
   "@eventsBoostConfirm": { "placeholders": { "cost": { "type": "int" } } },
   "groupMemberLimit": "Up to {count} members per group",
-  "@groupMemberLimit": { "placeholders": { "count": { "type": "int" } } }
+  "@groupMemberLimit": { "placeholders": { "count": { "type": "int" } } },
+  "eventsPriceHint": "Price (1–1000)",
+  "eventsPriceRange": "Enter a price between 1 and 1000",
+  "eventsLinkLabelHint": "Label (optional)"
 }

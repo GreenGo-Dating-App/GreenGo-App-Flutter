@@ -3666,5 +3666,8 @@
   "eventsBoosted": "Événement mis en avant !",
   "eventsJoinForCoins": "Rejoindre cet événement pour {cost} pièces ?",
   "eventsBoostConfirm": "Mettre cet événement en avant pour {cost} pièces pendant 7 jours ?",
-  "groupMemberLimit": "Jusqu'à {count} membres par groupe"
+  "groupMemberLimit": "Jusqu'à {count} membres par groupe",
+  "eventsPriceHint": "Prix (1–1000)",
+  "eventsPriceRange": "Entrez un prix entre 1 et 1000",
+  "eventsLinkLabelHint": "Libellé (facultatif)"
 }
