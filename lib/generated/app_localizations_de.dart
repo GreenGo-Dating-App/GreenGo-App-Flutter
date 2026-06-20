@@ -10777,4 +10777,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsSortPopular => 'Beliebt';
+
+  @override
+  String get eventViewEvent => 'Veranstaltung ansehen';
+
+  @override
+  String get eventLoadError =>
+      'Diese Veranstaltung konnte nicht geladen werden';
+
+  @override
+  String get eventShare => 'Veranstaltung teilen';
+
+  @override
+  String get eventShared => 'Veranstaltung geteilt';
+
+  @override
+  String get eventShareEmpty => 'Noch keine Chats oder Gruppen zum Teilen';
 }

@@ -10747,6 +10747,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'Ver evento';
+
+  @override
+  String get eventLoadError => 'Não foi possível carregar este evento';
+
+  @override
+  String get eventShare => 'Partilhar evento';
+
+  @override
+  String get eventShared => 'Evento partilhado';
+
+  @override
+  String get eventShareEmpty => 'Ainda não há chats ou grupos para partilhar';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21194,4 +21209,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'Ver evento';
+
+  @override
+  String get eventLoadError => 'Não foi possível carregar este evento';
+
+  @override
+  String get eventShare => 'Compartilhar evento';
+
+  @override
+  String get eventShared => 'Evento compartilhado';
+
+  @override
+  String get eventShareEmpty =>
+      'Ainda não há chats ou grupos para compartilhar';
 }

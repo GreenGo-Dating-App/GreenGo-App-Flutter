@@ -18965,6 +18965,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Popular'**
   String get eventsSortPopular;
+
+  /// No description provided for @eventViewEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'View event'**
+  String get eventViewEvent;
+
+  /// No description provided for @eventLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load this event'**
+  String get eventLoadError;
+
+  /// No description provided for @eventShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share event'**
+  String get eventShare;
+
+  /// No description provided for @eventShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Event shared'**
+  String get eventShared;
+
+  /// No description provided for @eventShareEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No chats or groups to share with yet'**
+  String get eventShareEmpty;
 }
 
 class _AppLocalizationsDelegate

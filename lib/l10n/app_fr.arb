@@ -3640,5 +3640,10 @@
   "chatLocationDenied": "L'autorisation de localisation est requise pour partager votre position",
   "chatOpenInMaps": "Ouvrir dans Maps",
   "eventsSearchHint": "Rechercher par pays, ville ou nom",
-  "eventsSortPopular": "Populaire"
+  "eventsSortPopular": "Populaire",
+  "eventViewEvent": "Voir l'événement",
+  "eventLoadError": "Impossible de charger cet événement",
+  "eventShare": "Partager l'événement",
+  "eventShared": "Événement partagé",
+  "eventShareEmpty": "Aucun chat ou groupe pour partager pour l'instant"
 }
