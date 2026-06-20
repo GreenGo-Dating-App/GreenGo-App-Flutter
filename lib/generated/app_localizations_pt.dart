@@ -10796,6 +10796,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get profileRankingSubtitle => 'Ver a classificação global';
+
+  @override
+  String get eventBroadcastTooltip => 'Transmitir a todos';
+
+  @override
+  String get eventBroadcastHint => 'Anúncio para todos os participantes…';
+
+  @override
+  String get eventBroadcastLabel => 'Anúncio';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21293,4 +21302,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get profileRankingSubtitle => 'Ver o ranking global';
+
+  @override
+  String get eventBroadcastTooltip => 'Transmitir para todos';
+
+  @override
+  String get eventBroadcastHint => 'Anúncio para todos os participantes…';
+
+  @override
+  String get eventBroadcastLabel => 'Anúncio';
 }

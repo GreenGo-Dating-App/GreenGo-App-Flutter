@@ -58,6 +58,11 @@ export {
   onEventWriteUpdateCountryStats,
 } from './events/country_aggregate';
 
+// Events — admin broadcast fan-out.
+export {
+  onEventBroadcastCreated,
+} from './events/broadcast';
+
 // Backup and Export Functions
 export {
   backupConversation,

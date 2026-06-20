@@ -29,6 +29,10 @@ class _EventChatScreenState extends State<EventChatScreen> {
   final ScrollController _scrollController = ScrollController();
   late final EventsRemoteDataSourceImpl _dataSource;
 
+  /// Organizers can broadcast announcements to everyone in the event.
+  bool get _isOrganizer => widget.event.organizerId == widget.currentUserId;
+  bool _broadcastMode = false;
+
   @override
   void initState() {
     super.initState();
@@ -163,6 +167,44 @@ class _EventChatScreenState extends State<EventChatScreen> {
   }
 
   Widget _buildMessageBubble(EventChatMessage message, bool isMe) {
+    // Admin announcements render as a full-width highlighted banner.
+    if (message.isBroadcast) {
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: AppColors.richGold.withValues(alpha: 0.15),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: AppColors.richGold),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.campaign,
+                      color: AppColors.richGold, size: 18),
+                  const SizedBox(width: 6),
+                  Text(
+                    AppLocalizations.of(context)!.eventBroadcastLabel,
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 6),
+              Text(message.text,
+                  style: const TextStyle(color: AppColors.textPrimary)),
+            ],
+          ),
+        ),
+      );
+    }
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
@@ -267,12 +309,26 @@ class _EventChatScreenState extends State<EventChatScreen> {
       ),
       child: Row(
         children: [
+          if (_isOrganizer)
+            IconButton(
+              icon: Icon(
+                Icons.campaign,
+                color: _broadcastMode
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
+              ),
+              tooltip: AppLocalizations.of(context)!.eventBroadcastTooltip,
+              onPressed: () =>
+                  setState(() => _broadcastMode = !_broadcastMode),
+            ),
           Expanded(
             child: TextField(
               controller: _messageController,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
-                hintText: AppLocalizations.of(context)!.eventsTypeAMessage,
+                hintText: _broadcastMode
+                    ? AppLocalizations.of(context)!.eventBroadcastHint
+                    : AppLocalizations.of(context)!.eventsTypeAMessage,
                 hintStyle: const TextStyle(color: AppColors.textTertiary),
                 filled: true,
                 fillColor: AppColors.backgroundInput,
@@ -317,6 +373,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
     final text = _messageController.text.trim();
     if (text.isEmpty) return;
 
+    final broadcast = _broadcastMode && _isOrganizer;
     final message = EventChatMessage(
       id: '',
       senderId: widget.currentUserId,
@@ -324,10 +381,16 @@ class _EventChatScreenState extends State<EventChatScreen> {
       senderPhotoUrl: widget.currentUserPhotoUrl,
       text: text,
       timestamp: DateTime.now(),
+      isBroadcast: broadcast,
     );
 
-    _dataSource.sendEventMessage(widget.event.id, message);
+    if (broadcast) {
+      _dataSource.broadcastToEvent(widget.event.id, message);
+    } else {
+      _dataSource.sendEventMessage(widget.event.id, message);
+    }
     _messageController.clear();
+    if (_broadcastMode) setState(() => _broadcastMode = false);
   }
 
   String _formatTime(DateTime timestamp) {

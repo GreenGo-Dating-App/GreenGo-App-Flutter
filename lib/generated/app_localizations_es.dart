@@ -10822,4 +10822,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileRankingSubtitle => 'Ver la clasificación global';
+
+  @override
+  String get eventBroadcastTooltip => 'Anunciar a todos';
+
+  @override
+  String get eventBroadcastHint => 'Anuncio para todos los asistentes…';
+
+  @override
+  String get eventBroadcastLabel => 'Anuncio';
 }

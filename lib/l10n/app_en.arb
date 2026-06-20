@@ -5095,5 +5095,8 @@
   "tierLimitGroupsBody": "Your plan allows {max} groups. Upgrade to create more.",
   "@tierLimitGroupsBody": { "placeholders": { "max": { "type": "int" } } },
   "groupsTitle": "Groups",
-  "profileRankingSubtitle": "See the global leaderboard"
+  "profileRankingSubtitle": "See the global leaderboard",
+  "eventBroadcastTooltip": "Broadcast to everyone",
+  "eventBroadcastHint": "Announcement to all attendees…",
+  "eventBroadcastLabel": "Announcement"
 }

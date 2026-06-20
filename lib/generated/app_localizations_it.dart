@@ -10817,4 +10817,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get profileRankingSubtitle => 'Vedi la classifica globale';
+
+  @override
+  String get eventBroadcastTooltip => 'Annuncia a tutti';
+
+  @override
+  String get eventBroadcastHint => 'Annuncio a tutti i partecipanti…';
+
+  @override
+  String get eventBroadcastLabel => 'Annuncio';
 }
