@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import 'dart:io';
+
+import 'package:image_picker/image_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
+import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
 import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
@@ -1462,6 +1466,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   double? _lng;
   String? _pickedCity;
   String? _pickedCountry;
+  File? _mainPhoto;
+  final List<File> _extraPhotos = [];
+  final ImagePicker _picker = ImagePicker();
+  bool _uploading = false;
   final _linkUrlController = TextEditingController();
   final _linkLabelController = TextEditingController();
   final List<ExternalLink> _externalLinks = [];
@@ -1476,6 +1484,58 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _linkUrlController.dispose();
     _linkLabelController.dispose();
     super.dispose();
+  }
+
+  Future<void> _pickMainPhoto() async {
+    final x =
+        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
+    if (x != null) setState(() => _mainPhoto = File(x.path));
+  }
+
+  Future<void> _pickExtraPhoto() async {
+    if (_extraPhotos.length >= 4) return;
+    final x =
+        await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
+    if (x != null) setState(() => _extraPhotos.add(File(x.path)));
+  }
+
+  /// Main photo + up to 4 extra photos, uploaded on create.
+  Widget _buildPhotoSection() {
+    Widget slot({File? file, required VoidCallback onTap, bool main = false}) {
+      return GestureDetector(
+        onTap: onTap,
+        child: Container(
+          width: main ? 110 : 70,
+          height: main ? 110 : 70,
+          margin: const EdgeInsets.only(right: 8),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard,
+            borderRadius: BorderRadius.circular(12),
+            image: file != null
+                ? DecorationImage(image: FileImage(file), fit: BoxFit.cover)
+                : null,
+            border: Border.all(color: AppColors.textTertiary.withOpacity(0.3)),
+          ),
+          child: file == null
+              ? Icon(main ? Icons.add_a_photo : Icons.add,
+                  color: AppColors.textSecondary)
+              : null,
+        ),
+      );
+    }
+
+    return SizedBox(
+      height: 116,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          slot(file: _mainPhoto, onTap: _pickMainPhoto, main: true),
+          ..._extraPhotos.map((f) => slot(file: f, onTap: () {})),
+          if (_extraPhotos.length < 4)
+            slot(file: null, onTap: _pickExtraPhoto),
+        ],
+      ),
+    );
   }
 
   /// Pick the event location from the map (reuses the app's location picker).
@@ -1527,6 +1587,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            _buildPhotoSection(),
+            const SizedBox(height: 16),
             TextFormField(
               controller: _titleController,
               style: const TextStyle(color: AppColors.textPrimary),
@@ -1713,17 +1775,24 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             const SizedBox(height: 32),
             ElevatedButton(
-              onPressed: _createEvent,
+              onPressed: _uploading ? null : _createEvent,
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
                 padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              child: Text(
-                AppLocalizations.of(context)!.eventsCreateEvent,
-                style: const
-                    TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
+              child: _uploading
+                  ? const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: AppColors.deepBlack),
+                    )
+                  : Text(
+                      AppLocalizations.of(context)!.eventsCreateEvent,
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
             ),
           ],
         ),
@@ -1781,6 +1850,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   }
 
   Future<void> _createEvent() async {
+    if (_uploading) return;
     if (!_formKey.currentState!.validate()) return;
 
     // Enforce tier cap on number of events created.
@@ -1810,6 +1880,26 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       return;
     }
 
+    // Upload the photos (main + up to 4) to Storage.
+    setState(() => _uploading = true);
+    String? imageUrl;
+    final photoUrls = <String>[];
+    try {
+      final ds = sl<ProfileRemoteDataSource>();
+      if (_mainPhoto != null) {
+        imageUrl = await ds.uploadPhoto(widget.currentUserId, _mainPhoto!,
+            folder: 'events');
+      }
+      for (final f in _extraPhotos) {
+        photoUrls.add(await ds.uploadPhoto(widget.currentUserId, f,
+            folder: 'events'));
+      }
+    } catch (_) {
+      // Non-fatal: proceed without (or with partial) images.
+    }
+    if (!mounted) return;
+    setState(() => _uploading = false);
+
     final event = Event(
       id: '', // Firestore will generate the ID
       organizerId: widget.currentUserId,
@@ -1817,6 +1907,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       title: _titleController.text,
       description: _descriptionController.text,
       category: _category,
+      imageUrl: imageUrl,
+      photoUrls: photoUrls,
       startDate: _startDate,
       endDate: _endDate,
       locationName: _locationController.text,
