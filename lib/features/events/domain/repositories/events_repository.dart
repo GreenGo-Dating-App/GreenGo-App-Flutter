@@ -47,4 +47,7 @@ abstract class EventsRepository {
 
   /// Get events the user created or is attending
   Future<Either<Failure, List<Event>>> getUserEvents(String userId);
+
+  /// Search public events by name / typology / city.
+  Future<Either<Failure, List<Event>>> searchEvents(String query);
 }

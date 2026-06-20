@@ -750,6 +750,59 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
+    // ============================================================================
+    match /events/{eventId} {
+      function isOrganizer() {
+        return isSignedIn() && resource.data.organizerId == request.auth.uid;
+      }
+      function isEventAttendee() {
+        return isSignedIn() &&
+          exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid));
+      }
+
+      // Public events readable by anyone signed in; private only by organizer/attendees.
+      allow read: if isSignedIn() && (
+        resource.data.visibility == 'public' ||
+        resource.data.organizerId == request.auth.uid ||
+        isEventAttendee()
+      );
+      // Creator must set themselves as organizer.
+      allow create: if isSignedIn()
+        && request.resource.data.organizerId == request.auth.uid;
+      allow update, delete: if isOrganizer();
+
+      match /attendees/{uid} {
+        function parentOrganizer() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid;
+        }
+        allow read: if isSignedIn();
+        // A user manages only their own RSVP; the organizer may manage any.
+        allow write: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer());
+      }
+
+      match /messages/{messageId} {
+        function members() {
+          return isSignedIn() && (
+            exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid)) ||
+            get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+          );
+        }
+        function parentOrganizer() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid;
+        }
+        allow read: if members();
+        // Normal messages by any member (sender == self); broadcasts by organizer only.
+        allow create: if members()
+          && request.resource.data.senderId == request.auth.uid
+          && (request.resource.data.isBroadcast != true || parentOrganizer());
+        allow update, delete: if isSignedIn()
+          && resource.data.senderId == request.auth.uid;
+      }
+    }
+
+    // ============================================================================
     // CATCH-ALL for any other collections used by the app
     // ============================================================================
     match /{document=**} {

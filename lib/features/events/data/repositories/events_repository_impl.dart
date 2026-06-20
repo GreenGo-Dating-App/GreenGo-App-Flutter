@@ -179,4 +179,18 @@ class EventsRepositoryImpl implements EventsRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, List<Event>>> searchEvents(String query) async {
+    try {
+      final events = await remoteDataSource.searchEvents(query);
+      return Right(events);
+    } on ServerException catch (e) {
+      debugPrint('ServerException in searchEvents: ${e.message}');
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      debugPrint('Error in searchEvents: $e');
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }

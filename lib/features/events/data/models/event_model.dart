@@ -163,7 +163,29 @@ class EventModel extends Event {
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
       'visibility': visibility.value,
       'externalLinks': externalLinks.map((e) => e.toMap()).toList(),
+      // Lowercased tokens for name/text search (array-contains, no composite index).
+      'searchKeywords': buildSearchKeywords(),
     };
+  }
+
+  /// Tokenize title/city/category/tags into lowercased keywords for search.
+  List<String> buildSearchKeywords() {
+    final tokens = <String>{};
+    void add(String? s) {
+      if (s == null) return;
+      for (final w in s.toLowerCase().split(RegExp(r'[^a-z0-9]+'))) {
+        if (w.length >= 2) tokens.add(w);
+      }
+    }
+
+    add(title);
+    add(city);
+    add(locationName);
+    tokens.add(category.name.toLowerCase());
+    for (final t in tags) {
+      add(t);
+    }
+    return tokens.toList();
   }
 
   /// Parse DateTime from Firestore Timestamp or other formats

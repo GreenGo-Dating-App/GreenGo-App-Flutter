@@ -38,11 +38,17 @@ abstract class EventsRemoteDataSource {
 
   Future<List<Event>> getUserEvents(String userId);
 
+  /// Full-text-ish search by name/typology/city (public events only).
+  Future<List<Event>> searchEvents(String query);
+
   /// Stream event messages for group chat
   Stream<List<EventChatMessage>> getEventMessages(String eventId);
 
   /// Send a message to event group chat
   Future<void> sendEventMessage(String eventId, EventChatMessage message);
+
+  /// Admin broadcast to everyone in the event (rendered as an announcement).
+  Future<void> broadcastToEvent(String eventId, EventChatMessage message);
 }
 
 /// Event Chat Message (lightweight, for event group chat sub-collection)
@@ -53,6 +59,7 @@ class EventChatMessage {
     required this.senderId,
     required this.senderName,
     required this.text, required this.timestamp, this.senderPhotoUrl,
+    this.isBroadcast = false,
   });
 
   factory EventChatMessage.fromFirestore(DocumentSnapshot doc) {
@@ -66,6 +73,7 @@ class EventChatMessage {
       timestamp: data['timestamp'] is Timestamp
           ? (data['timestamp'] as Timestamp).toDate()
           : DateTime.now(),
+      isBroadcast: data['isBroadcast'] as bool? ?? false,
     );
   }
   final String id;
@@ -75,6 +83,9 @@ class EventChatMessage {
   final String text;
   final DateTime timestamp;
 
+  /// True for admin announcements broadcast to all attendees.
+  final bool isBroadcast;
+
   Map<String, dynamic> toJson() {
     return {
       'senderId': senderId,
@@ -82,6 +93,7 @@ class EventChatMessage {
       'senderPhotoUrl': senderPhotoUrl,
       'text': text,
       'timestamp': Timestamp.fromDate(timestamp),
+      'isBroadcast': isBroadcast,
     };
   }
 }
@@ -139,6 +151,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
       final events = snapshot.docs
           .map(EventModel.fromFirestore)
+          .where((e) => e.isPublic) // private events excluded from discovery
           .toList();
 
       debugPrint('Events loaded: ${events.length} events');
@@ -333,6 +346,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final events = snapshot.docs
           .map(EventModel.fromFirestore)
           .where((event) {
+        if (!event.isPublic) return false; // private events excluded from discovery
         if (event.latitude == null || event.longitude == null) return false;
         final distance = _calculateDistanceKm(
           lat,
@@ -419,6 +433,52 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error getting user events: $e');
       throw ServerException('Failed to load user events: $e');
+    }
+  }
+
+  @override
+  Future<List<Event>> searchEvents(String query) async {
+    try {
+      final q = query.trim().toLowerCase();
+      if (q.isEmpty) return [];
+      final token = q
+          .split(RegExp(r'[^a-z0-9]+'))
+          .firstWhere((t) => t.length >= 2, orElse: () => '');
+      if (token.isEmpty) return [];
+
+      // Single array-contains (no composite index); refine + visibility on client.
+      final snapshot = await _eventsCollection
+          .where('searchKeywords', arrayContains: token)
+          .limit(50)
+          .get();
+
+      return snapshot.docs
+          .map(EventModel.fromFirestore)
+          .where((e) =>
+              e.status == EventStatus.published && e.isPublic)
+          .toList()
+        ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    } catch (e) {
+      debugPrint('Error searching events: $e');
+      throw ServerException('Failed to search events: $e');
+    }
+  }
+
+  @override
+  Future<void> broadcastToEvent(
+    String eventId,
+    EventChatMessage message,
+  ) async {
+    // A broadcast is an announcement message; rules restrict this to the
+    // organizer. A Cloud Function fans it out via the per-event FCM topic.
+    try {
+      await _eventsCollection
+          .doc(eventId)
+          .collection('messages')
+          .add(message.toJson());
+    } catch (e) {
+      debugPrint('Error broadcasting to event: $e');
+      throw ServerException('Failed to broadcast: $e');
     }
   }
 
