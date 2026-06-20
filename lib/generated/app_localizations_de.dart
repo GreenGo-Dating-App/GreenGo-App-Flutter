@@ -10821,4 +10821,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String tierLimitGroupsBody(int max) {
     return 'Dein Tarif erlaubt $max Gruppen. Upgrade für mehr.';
   }
+
+  @override
+  String get groupsTitle => 'Gruppen';
+
+  @override
+  String get profileRankingSubtitle => 'Globale Rangliste ansehen';
 }

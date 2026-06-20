@@ -10790,6 +10790,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String tierLimitGroupsBody(int max) {
     return 'O teu plano permite $max grupos. Faz upgrade para criar mais.';
   }
+
+  @override
+  String get groupsTitle => 'Grupos';
+
+  @override
+  String get profileRankingSubtitle => 'Ver a classificação global';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21281,4 +21287,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String tierLimitGroupsBody(int max) {
     return 'Seu plano permite $max grupos. Faça upgrade para criar mais.';
   }
+
+  @override
+  String get groupsTitle => 'Grupos';
+
+  @override
+  String get profileRankingSubtitle => 'Ver o ranking global';
 }

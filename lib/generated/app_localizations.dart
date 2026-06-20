@@ -19043,6 +19043,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your plan allows {max} groups. Upgrade to create more.'**
   String tierLimitGroupsBody(int max);
+
+  /// No description provided for @groupsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get groupsTitle;
+
+  /// No description provided for @profileRankingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See the global leaderboard'**
+  String get profileRankingSubtitle;
 }
 
 class _AppLocalizationsDelegate
