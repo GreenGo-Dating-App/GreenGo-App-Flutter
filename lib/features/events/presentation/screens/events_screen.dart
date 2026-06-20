@@ -13,7 +13,7 @@ import '../../../../core/services/tier_limits_service.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
-import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
+import 'event_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -988,10 +988,27 @@ class EventDetailsScreen extends StatelessWidget {
                     '${DateFormat('h:mm a').format(event.startDate)} - ${DateFormat('h:mm a').format(event.endDate)}',
                   ),
                   const SizedBox(height: 12),
-                  _buildInfoRow(
-                    Icons.location_on,
-                    event.locationName,
-                    event.address,
+                  // Tappable -> opens Google Maps (coords if available, else the
+                  // address text the organizer typed).
+                  InkWell(
+                    onTap: () {
+                      final q = (event.latitude != null &&
+                              event.longitude != null)
+                          ? '${event.latitude},${event.longitude}'
+                          : [event.locationName, event.address, event.city]
+                              .where((s) => s != null && s.isNotEmpty)
+                              .join(', ');
+                      launchUrl(
+                        Uri.parse(
+                            'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(q)}'),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    },
+                    child: _buildInfoRow(
+                      Icons.location_on,
+                      event.locationName,
+                      event.address,
+                    ),
                   ),
                   const SizedBox(height: 12),
                   _buildInfoRow(
@@ -1543,13 +1560,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   /// Pick the event location from the map (reuses the app's location picker).
   Future<void> _pickLocation() async {
-    final result = await Navigator.of(context).push<dynamic>(
-      MaterialPageRoute(
-        builder: (_) => const TravelerLocationPickerScreen(),
-      ),
-    );
-    if (result == null || !mounted) return;
-    final loc = result as profile_entity.Location;
+    final loc = await Navigator.of(context)
+        .push<profile_entity.Location>(EventLocationPickerScreen.route());
+    if (loc == null || !mounted) return;
     setState(() {
       _lat = loc.latitude;
       _lng = loc.longitude;

@@ -10865,4 +10865,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsLinkLabelHint => 'Etichetta (facoltativa)';
+
+  @override
+  String get eventsPickLocation => 'Scegli luogo';
+
+  @override
+  String get eventsSearchAddress => 'Cerca indirizzo';
+
+  @override
+  String get eventsUseThisLocation => 'Usa questo luogo';
 }

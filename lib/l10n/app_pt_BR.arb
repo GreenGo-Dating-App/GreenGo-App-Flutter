@@ -3671,5 +3671,8 @@
   "groupMemberLimit": "Até {count} membros por grupo",
   "eventsPriceHint": "Preço (1–1000)",
   "eventsPriceRange": "Insira um preço entre 1 e 1000",
-  "eventsLinkLabelHint": "Rótulo (opcional)"
+  "eventsLinkLabelHint": "Rótulo (opcional)",
+  "eventsPickLocation": "Escolher local",
+  "eventsSearchAddress": "Buscar endereço",
+  "eventsUseThisLocation": "Usar este local"
 }

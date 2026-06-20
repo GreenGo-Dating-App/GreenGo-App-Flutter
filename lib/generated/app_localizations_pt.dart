@@ -10844,6 +10844,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsLinkLabelHint => 'Rótulo (opcional)';
+
+  @override
+  String get eventsPickLocation => 'Escolher local';
+
+  @override
+  String get eventsSearchAddress => 'Procurar morada';
+
+  @override
+  String get eventsUseThisLocation => 'Usar este local';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21389,4 +21398,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsLinkLabelHint => 'Rótulo (opcional)';
+
+  @override
+  String get eventsPickLocation => 'Escolher local';
+
+  @override
+  String get eventsSearchAddress => 'Buscar endereço';
+
+  @override
+  String get eventsUseThisLocation => 'Usar este local';
 }
