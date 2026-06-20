@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
@@ -943,9 +945,55 @@ class EventDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 12),
                   _buildInfoRow(
                     Icons.people,
-                    AppLocalizations.of(context)!.eventsAttending(event.goingCount, event.maxAttendees),
-                    AppLocalizations.of(context)!.eventsSpotsLeft(event.spotsLeft),
+                    event.isUnlimited
+                        ? AppLocalizations.of(context)!
+                            .eventsGoing(event.goingCount)
+                        : AppLocalizations.of(context)!.eventsAttending(
+                            event.goingCount, event.maxAttendees),
+                    event.isUnlimited
+                        ? null
+                        : AppLocalizations.of(context)!
+                            .eventsSpotsLeft(event.spotsLeft),
                   ),
+                  if (event.isPrivate) ...[
+                    const SizedBox(height: 12),
+                    _buildInfoRow(
+                      Icons.lock_outline,
+                      AppLocalizations.of(context)!.eventsPrivateEvent,
+                      null,
+                    ),
+                  ],
+                  if (event.externalLinks.isNotEmpty) ...[
+                    const SizedBox(height: 12),
+                    ...event.externalLinks.map((lnk) => Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: InkWell(
+                            onTap: () => launchUrl(
+                              Uri.parse(lnk.url),
+                              mode: LaunchMode.externalApplication,
+                            ),
+                            child: Row(
+                              children: [
+                                const Icon(Icons.link,
+                                    color: AppColors.richGold, size: 20),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    lnk.label ?? lnk.url,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      color: AppColors.richGold,
+                                      fontSize: 14,
+                                      decoration: TextDecoration.underline,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )),
+                  ],
                   // Language exchange info
                   if (event.category == EventCategory.languageExchange) ...[
                     const SizedBox(height: 12),
