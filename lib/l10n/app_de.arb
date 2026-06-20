@@ -3645,5 +3645,10 @@
   "eventLoadError": "Diese Veranstaltung konnte nicht geladen werden",
   "eventShare": "Veranstaltung teilen",
   "eventShared": "Veranstaltung geteilt",
-  "eventShareEmpty": "Noch keine Chats oder Gruppen zum Teilen"
+  "eventShareEmpty": "Noch keine Chats oder Gruppen zum Teilen",
+  "eventsUnlimitedAttendees": "Unbegrenzte Teilnehmer",
+  "eventsPrivateEvent": "Private Veranstaltung",
+  "eventsExternalLinks": "Links",
+  "eventsLinkUrlHint": "https://…",
+  "eventsAddLink": "Link hinzufügen"
 }

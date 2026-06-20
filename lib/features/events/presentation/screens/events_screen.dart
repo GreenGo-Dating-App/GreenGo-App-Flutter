@@ -1256,6 +1256,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   DateTime _endDate = DateTime.now().add(const Duration(days: 1, hours: 2));
   bool _isFree = true;
   double _price = 0;
+  EventVisibility _visibility = EventVisibility.public;
+  bool _isUnlimited = false;
+  final _linkUrlController = TextEditingController();
+  final _linkLabelController = TextEditingController();
+  final List<ExternalLink> _externalLinks = [];
 
   @override
   void dispose() {
@@ -1264,7 +1269,24 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _locationController.dispose();
     _maxAttendeesController.dispose();
     _languagePairsController.dispose();
+    _linkUrlController.dispose();
+    _linkLabelController.dispose();
     super.dispose();
+  }
+
+  void _addLink() {
+    final url = _linkUrlController.text.trim();
+    if (url.isEmpty) return;
+    setState(() {
+      _externalLinks.add(ExternalLink(
+        url: url,
+        label: _linkLabelController.text.trim().isEmpty
+            ? null
+            : _linkLabelController.text.trim(),
+      ));
+      _linkUrlController.clear();
+      _linkLabelController.clear();
+    });
   }
 
   @override
@@ -1360,11 +1382,36 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               onTap: () => _selectDateTime(false),
             ),
             const SizedBox(height: 16),
-            TextFormField(
-              controller: _maxAttendeesController,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsMaxAttendees),
-              keyboardType: TextInputType.number,
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.eventsUnlimitedAttendees,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              value: _isUnlimited,
+              activeThumbColor: AppColors.richGold,
+              onChanged: (v) => setState(() => _isUnlimited = v),
+            ),
+            if (!_isUnlimited)
+              TextFormField(
+                controller: _maxAttendeesController,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: _inputDecoration(
+                    AppLocalizations.of(context)!.eventsMaxAttendees),
+                keyboardType: TextInputType.number,
+              ),
+            const SizedBox(height: 16),
+            // Visibility: public (discoverable) vs private (invitees/link only)
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.eventsPrivateEvent,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              value: _visibility == EventVisibility.private,
+              activeThumbColor: AppColors.richGold,
+              onChanged: (v) => setState(() => _visibility =
+                  v ? EventVisibility.private : EventVisibility.public),
             ),
             const SizedBox(height: 16),
             SwitchListTile(
@@ -1388,6 +1435,51 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 onChanged: (v) => setState(() => _price = v),
               ),
             ],
+            const SizedBox(height: 16),
+            // External links (tickets, website, map…)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                AppLocalizations.of(context)!.eventsExternalLinks,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ..._externalLinks.map((lnk) => ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.link, color: AppColors.richGold),
+                  title: Text(
+                    lnk.label ?? lnk.url,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.close,
+                        color: AppColors.textSecondary),
+                    onPressed: () =>
+                        setState(() => _externalLinks.remove(lnk)),
+                  ),
+                )),
+            Row(
+              children: [
+                Expanded(
+                  child: TextFormField(
+                    controller: _linkUrlController,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                    keyboardType: TextInputType.url,
+                    decoration: _inputDecoration(
+                        AppLocalizations.of(context)!.eventsLinkUrlHint),
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.add_circle, color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsAddLink,
+                  onPressed: _addLink,
+                ),
+              ],
+            ),
             const SizedBox(height: 32),
             ElevatedButton(
               onPressed: _createEvent,
@@ -1470,8 +1562,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       startDate: _startDate,
       endDate: _endDate,
       locationName: _locationController.text,
-      maxAttendees: int.tryParse(_maxAttendeesController.text) ?? 20,
+      maxAttendees:
+          _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20),
       price: _isFree ? null : _price,
+      visibility: _visibility,
+      externalLinks: _externalLinks,
       status: EventStatus.published,
       languagePairs: _category == EventCategory.languageExchange
           ? _languagePairsController.text.isNotEmpty

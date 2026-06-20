@@ -10762,6 +10762,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventShareEmpty => 'Ainda não há chats ou grupos para partilhar';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Participantes ilimitados';
+
+  @override
+  String get eventsPrivateEvent => 'Evento privado';
+
+  @override
+  String get eventsExternalLinks => 'Ligações';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Adicionar ligação';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21225,4 +21240,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get eventShareEmpty =>
       'Ainda não há chats ou grupos para compartilhar';
+
+  @override
+  String get eventsUnlimitedAttendees => 'Participantes ilimitados';
+
+  @override
+  String get eventsPrivateEvent => 'Evento privado';
+
+  @override
+  String get eventsExternalLinks => 'Links';
+
+  @override
+  String get eventsLinkUrlHint => 'https://…';
+
+  @override
+  String get eventsAddLink => 'Adicionar link';
 }

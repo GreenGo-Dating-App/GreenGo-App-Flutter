@@ -3647,5 +3647,10 @@
   "eventLoadError": "Não foi possível carregar este evento",
   "eventShare": "Partilhar evento",
   "eventShared": "Evento partilhado",
-  "eventShareEmpty": "Ainda não há chats ou grupos para partilhar"
+  "eventShareEmpty": "Ainda não há chats ou grupos para partilhar",
+  "eventsUnlimitedAttendees": "Participantes ilimitados",
+  "eventsPrivateEvent": "Evento privado",
+  "eventsExternalLinks": "Ligações",
+  "eventsLinkUrlHint": "https://…",
+  "eventsAddLink": "Adicionar ligação"
 }
