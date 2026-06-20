@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A cross-cultural discovery and language-barrier-free networking app built with Flutter and GCP
 publish_to: 'none'
-version: 1.8.0+64
+version: 1.8.1+65
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -118,8 +118,11 @@ dependencies:
   # local_auth: ^2.1.8
 
   # In-App Purchase
+  # Google Play requires Billing Library >=7.0.0 (enforced since Aug 30, 2025).
+  # The billing version is bundled by in_app_purchase_android: 0.4.x = Billing 7.1.1,
+  # 0.5.x = Billing 8 (needs Dart >=3.12 / Flutter >=3.44 — bump the Flutter SDK to adopt).
   in_app_purchase: ^3.2.0
-  in_app_purchase_android: ^0.3.6+13
+  in_app_purchase_android: ^0.4.0   # resolves to 0.4.0+11 -> com.android.billingclient:billing:7.1.1
   in_app_purchase_storekit: ^0.3.22+1
 
   # ML Kit
