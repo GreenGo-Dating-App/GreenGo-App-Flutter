@@ -5126,5 +5126,8 @@
   "groupChangePhoto": "Change group photo",
   "groupUploadingPhoto": "Uploading photo…",
   "groupPhotoUpdated": "Group photo updated",
-  "groupPhotoUpdateFailed": "Failed to update group photo"
+  "groupPhotoUpdateFailed": "Failed to update group photo",
+  "eventTextProhibited": "Title or description contains prohibited language and cannot be used",
+  "groupSearchHint": "Search groups",
+  "groupNoSearchResults": "No groups found"
 }

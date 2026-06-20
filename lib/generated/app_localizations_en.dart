@@ -10783,4 +10783,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get groupPhotoUpdateFailed => 'Failed to update group photo';
+
+  @override
+  String get eventTextProhibited =>
+      'Title or description contains prohibited language and cannot be used';
+
+  @override
+  String get groupSearchHint => 'Search groups';
+
+  @override
+  String get groupNoSearchResults => 'No groups found';
 }

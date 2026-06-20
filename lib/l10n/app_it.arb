@@ -3683,5 +3683,8 @@
   "groupChangePhoto": "Cambia foto del gruppo",
   "groupUploadingPhoto": "Caricamento foto…",
   "groupPhotoUpdated": "Foto del gruppo aggiornata",
-  "groupPhotoUpdateFailed": "Impossibile aggiornare la foto del gruppo"
+  "groupPhotoUpdateFailed": "Impossibile aggiornare la foto del gruppo",
+  "eventTextProhibited": "Il titolo o la descrizione contiene linguaggio vietato e non può essere usato",
+  "groupSearchHint": "Cerca gruppi",
+  "groupNoSearchResults": "Nessun gruppo trovato"
 }

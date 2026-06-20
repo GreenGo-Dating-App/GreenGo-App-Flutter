@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/group_info.dart';
@@ -155,6 +156,16 @@ class GroupInfoScreen extends StatelessWidget {
     final picked = await ImagePicker()
         .pickImage(source: ImageSource.gallery, imageQuality: 80);
     if (picked == null) return;
+    // Reject nudity / explicit content before uploading.
+    final validation = await PhotoValidationService()
+        .validateImageForSending(File(picked.path));
+    if (!validation.isValid) {
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.photoExplicitContent),
+        backgroundColor: Colors.red,
+      ));
+      return;
+    }
     messenger.showSnackBar(
       SnackBar(content: Text(l10n.groupUploadingPhoto)),
     );

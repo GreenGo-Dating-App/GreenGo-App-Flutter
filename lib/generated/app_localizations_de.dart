@@ -10917,4 +10917,14 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get groupPhotoUpdateFailed =>
       'Gruppenfoto konnte nicht aktualisiert werden';
+
+  @override
+  String get eventTextProhibited =>
+      'Titel oder Beschreibung enthält unzulässige Sprache und kann nicht verwendet werden';
+
+  @override
+  String get groupSearchHint => 'Gruppen suchen';
+
+  @override
+  String get groupNoSearchResults => 'Keine Gruppen gefunden';
 }

@@ -19217,6 +19217,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Failed to update group photo'**
   String get groupPhotoUpdateFailed;
+
+  /// No description provided for @eventTextProhibited.
+  ///
+  /// In en, this message translates to:
+  /// **'Title or description contains prohibited language and cannot be used'**
+  String get eventTextProhibited;
+
+  /// No description provided for @groupSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search groups'**
+  String get groupSearchHint;
+
+  /// No description provided for @groupNoSearchResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No groups found'**
+  String get groupNoSearchResults;
 }
 
 class _AppLocalizationsDelegate

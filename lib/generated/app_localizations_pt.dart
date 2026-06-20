@@ -10884,6 +10884,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get groupPhotoUpdateFailed => 'Falha ao atualizar a foto do grupo';
+
+  @override
+  String get eventTextProhibited =>
+      'O título ou a descrição contém linguagem proibida e não pode ser usado';
+
+  @override
+  String get groupSearchHint => 'Pesquisar grupos';
+
+  @override
+  String get groupNoSearchResults => 'Nenhum grupo encontrado';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21468,4 +21478,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get groupPhotoUpdateFailed => 'Falha ao atualizar a foto do grupo';
+
+  @override
+  String get eventTextProhibited =>
+      'O título ou a descrição contém linguagem proibida e não pode ser usado';
+
+  @override
+  String get groupSearchHint => 'Pesquisar grupos';
+
+  @override
+  String get groupNoSearchResults => 'Nenhum grupo encontrado';
 }

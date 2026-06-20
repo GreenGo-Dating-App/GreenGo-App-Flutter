@@ -181,6 +181,53 @@ class ContentFilterService {
     );
   }
 
+  /// Curated set of disallowed terms (hate speech, slurs, discrimination,
+  /// explicit sexual language) across the app's main languages. Matched on
+  /// whole word tokens (case- and accent-insensitive) to avoid the
+  /// "Scunthorpe" false-positive problem. Not exhaustive — a backend
+  /// moderateText call remains the authoritative second line of defense.
+  static final Set<String> _prohibitedTerms = {
+    // explicit sexual (EN)
+    'porn', 'porno', 'xxx', 'nude', 'nudes', 'nsfw', 'blowjob', 'handjob',
+    'cum', 'dick', 'cock', 'pussy', 'boobs', 'tits', 'horny', 'escort',
+    'hooker', 'whore', 'slut', 'milf', 'gangbang', 'creampie', 'deepthroat',
+    // hate / slurs / discrimination (EN, curated)
+    'nigger', 'nigga', 'faggot', 'fag', 'retard', 'kike', 'spic', 'chink',
+    'tranny', 'dyke', 'coon', 'wetback', 'raghead', 'paki', 'gook',
+    // violent / extremist
+    'rape', 'rapist', 'nazi', 'kkk', 'pedo', 'pedophile',
+    // generic profanity (EN)
+    'fuck', 'fucking', 'shit', 'bitch', 'asshole', 'cunt', 'bastard',
+    'motherfucker',
+    // Italian
+    'puttana', 'troia', 'cazzo', 'figa', 'stronzo', 'merda', 'frocio',
+    // Spanish
+    'puta', 'polla', 'coño', 'mierda', 'maricon', 'maricón', 'cabron',
+    // French
+    'pute', 'salope', 'bite', 'merde', 'pédé', 'enculé', 'connard',
+    // German
+    'hure', 'fotze', 'schlampe', 'schwuchtel', 'scheisse', 'scheiße',
+    // Portuguese
+    'caralho', 'buceta', 'foda', 'viado',
+  };
+
+  /// Analyzes [text] for prohibited content. Returns an empty list when clean.
+  List<String> findProhibitedTerms(String text) {
+    final normalized = text.toLowerCase();
+    final tokens = normalized
+        .split(RegExp(r'[^a-zà-ÿ]+'))
+        .where((t) => t.isNotEmpty);
+    final hits = <String>{};
+    for (final t in tokens) {
+      if (_prohibitedTerms.contains(t)) hits.add(t);
+    }
+    return hits.toList();
+  }
+
+  /// True if [text] contains hate/discriminatory/explicit sexual language.
+  bool containsProhibitedContent(String text) =>
+      findProhibitedTerms(text).isNotEmpty;
+
   /// Mask contact information in text
   String maskContactInfo(String text) {
     var maskedText = text;

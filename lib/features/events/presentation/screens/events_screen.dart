@@ -9,6 +9,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
@@ -1998,6 +2000,22 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (_uploading) return;
     if (!_formKey.currentState!.validate()) return;
 
+    // Block hate speech / discrimination / explicit sexual language in the
+    // event title and description.
+    final prohibited = [
+      ...ContentFilterService().findProhibitedTerms(_titleController.text),
+      ...ContentFilterService().findProhibitedTerms(_descriptionController.text),
+    ];
+    if (prohibited.isNotEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.eventTextProhibited),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
     // Enforce tier cap on number of events created (not when editing).
     if (!_isEditing) {
       final check =
@@ -2021,6 +2039,23 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 child: Text(l10n.tourGotIt),
               ),
             ],
+          ),
+        );
+        return;
+      }
+    }
+
+    // Nudity / explicit-content check on every event image before upload.
+    final imagesToCheck = [if (_mainPhoto != null) _mainPhoto!, ..._extraPhotos];
+    for (final f in imagesToCheck) {
+      final res = await PhotoValidationService().validateImageForSending(f);
+      if (!mounted) return;
+      if (!res.isValid) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.photoExplicitContent ??
+                'This image contains inappropriate content and cannot be used.'),
+            backgroundColor: AppColors.errorRed,
           ),
         );
         return;
