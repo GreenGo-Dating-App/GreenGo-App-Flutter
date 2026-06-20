@@ -84,6 +84,7 @@ class Event extends Equatable {
     this.languages = const [],
     this.languagePairs,
     this.city,
+    this.country,
     this.attendeeCount = 0,
     this.updatedAt,
     this.visibility = EventVisibility.public,
@@ -118,6 +119,7 @@ class Event extends Equatable {
   final List<String> languages;
   final String? languagePairs;
   final String? city;
+  final String? country;
   final int attendeeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
@@ -167,6 +169,7 @@ class Event extends Equatable {
         languages,
         languagePairs,
         city,
+        country,
         attendeeCount,
         createdAt,
         updatedAt,
@@ -204,6 +207,7 @@ class Event extends Equatable {
     List<String>? languages,
     String? languagePairs,
     String? city,
+    String? country,
     int? attendeeCount,
     DateTime? createdAt,
     DateTime? updatedAt,
@@ -240,6 +244,7 @@ class Event extends Equatable {
       languages: languages ?? this.languages,
       languagePairs: languagePairs ?? this.languagePairs,
       city: city ?? this.city,
+      country: country ?? this.country,
       attendeeCount: attendeeCount ?? this.attendeeCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
