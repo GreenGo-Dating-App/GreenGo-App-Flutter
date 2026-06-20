@@ -5116,5 +5116,7 @@
   "eventsPickLocation": "Pick location",
   "eventsSearchAddress": "Search address",
   "eventsUseThisLocation": "Use this location",
-  "profileProgressGrowth": "Progress & Growth"
+  "profileProgressGrowth": "Progress & Growth",
+  "eventsEditEvent": "Edit event",
+  "groupEditName": "Edit group name"
 }

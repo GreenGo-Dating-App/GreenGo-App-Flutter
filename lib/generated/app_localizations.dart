@@ -19157,6 +19157,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Use this location'**
   String get eventsUseThisLocation;
+
+  /// No description provided for @eventsEditEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit event'**
+  String get eventsEditEvent;
+
+  /// No description provided for @groupEditName.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit group name'**
+  String get groupEditName;
 }
 
 class _AppLocalizationsDelegate

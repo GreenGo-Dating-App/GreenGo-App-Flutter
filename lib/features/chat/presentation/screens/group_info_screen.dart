@@ -50,6 +50,8 @@ class GroupInfoScreen extends StatelessWidget {
             (failure) => <GroupMember>[],
             (list) => list.where((m) => m.isActive).toList(),
           );
+          final isAdmin = members
+              .any((m) => m.userId == currentUserId && m.isAdmin);
           return ListView(
             children: [
               const SizedBox(height: 8),
@@ -75,6 +77,13 @@ class GroupInfoScreen extends StatelessWidget {
                         : null,
                   )),
               const Divider(),
+              if (isAdmin)
+                ListTile(
+                  leading: Icon(Icons.edit,
+                      color: Theme.of(context).colorScheme.primary),
+                  title: Text(l10n.groupEditName),
+                  onTap: () => _editGroupName(context),
+                ),
               ListTile(
                 leading: const Icon(Icons.flag_outlined, color: Colors.orange),
                 title: Text(
@@ -96,6 +105,37 @@ class GroupInfoScreen extends StatelessWidget {
         },
       ),
     );
+  }
+
+  Future<void> _editGroupName(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final controller = TextEditingController();
+    final name = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(l10n.groupEditName),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          textCapitalization: TextCapitalization.words,
+          decoration: InputDecoration(hintText: l10n.groupNameLabel),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+              child: Text(l10n.groupEditName)),
+        ],
+      ),
+    );
+    if (name == null || name.isEmpty || !context.mounted) return;
+    await sl<UpdateGroupInfo>()(groupId: groupId, name: name);
+    if (context.mounted) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(l10n.groupEditName)));
+    }
   }
 
   Future<void> _confirmLeave(BuildContext context) async {

@@ -930,6 +930,30 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
+              // Edit — organizer only
+              if (event.organizerId == currentUserId)
+                IconButton(
+                  icon: const Icon(Icons.edit, color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsEditEvent,
+                  onPressed: () {
+                    final bloc = context.read<EventsBloc>();
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) => BlocProvider.value(
+                          value: bloc,
+                          child: CreateEventScreen(
+                            currentUserId: currentUserId,
+                            existing: event,
+                            onEventCreated: (e) {
+                              bloc.add(UpdateEvent(event: e));
+                              Navigator.of(ctx).pop();
+                            },
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
               // Boost (feature) — organizer only, if not already featured
               if (event.organizerId == currentUserId &&
                   !event.isCurrentlyFeatured)
@@ -1457,9 +1481,13 @@ class CreateEventScreen extends StatefulWidget {
 
   const CreateEventScreen({
     required this.currentUserId, required this.onEventCreated, super.key,
+    this.existing,
   });
   final String currentUserId;
   final Function(Event) onEventCreated;
+
+  /// When set, the screen edits this event instead of creating a new one.
+  final Event? existing;
 
   @override
   State<CreateEventScreen> createState() => _CreateEventScreenState();
@@ -1492,6 +1520,36 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final _linkUrlController = TextEditingController();
   final _linkLabelController = TextEditingController();
   final List<ExternalLink> _externalLinks = [];
+
+  bool get _isEditing => widget.existing != null;
+
+  @override
+  void initState() {
+    super.initState();
+    final e = widget.existing;
+    if (e == null) return;
+    // Prefill from the existing event (edit mode).
+    _titleController.text = e.title;
+    _descriptionController.text = e.description;
+    _locationController.text = e.locationName;
+    _category = e.category;
+    _startDate = e.startDate;
+    _endDate = e.endDate;
+    _isFree = e.isFree;
+    if (!e.isFree && e.price != null) {
+      _priceController.text = e.price!.round().toString();
+    }
+    _currency = e.currency ?? '\$';
+    _visibility = e.visibility;
+    _isUnlimited = e.isUnlimited;
+    if (!e.isUnlimited) _maxAttendeesController.text = e.maxAttendees.toString();
+    _lat = e.latitude;
+    _lng = e.longitude;
+    _pickedCity = e.city;
+    _pickedCountry = e.country;
+    _externalLinks.addAll(e.externalLinks);
+    if (e.languagePairs != null) _languagePairsController.text = e.languagePairs!;
+  }
 
   @override
   void dispose() {
@@ -1633,7 +1691,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         title: Text(
-          AppLocalizations.of(context)!.eventsCreateEvent,
+          _isEditing
+              ? AppLocalizations.of(context)!.eventsEditEvent
+              : AppLocalizations.of(context)!.eventsCreateEvent,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
@@ -1872,7 +1932,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                           strokeWidth: 2, color: AppColors.deepBlack),
                     )
                   : Text(
-                      AppLocalizations.of(context)!.eventsCreateEvent,
+                      _isEditing
+                          ? AppLocalizations.of(context)!.eventsEditEvent
+                          : AppLocalizations.of(context)!.eventsCreateEvent,
                       style: const TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold),
                     ),
@@ -1936,31 +1998,33 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (_uploading) return;
     if (!_formKey.currentState!.validate()) return;
 
-    // Enforce tier cap on number of events created.
-    final check =
-        await TierLimitsService().canCreateEvent(widget.currentUserId);
-    if (!mounted) return;
-    if (!check.allowed) {
-      final l10n = AppLocalizations.of(context)!;
-      await showDialog<void>(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          backgroundColor: AppColors.backgroundCard,
-          title: Text(l10n.tierLimitTitle,
-              style: const TextStyle(color: AppColors.textPrimary)),
-          content: Text(
-            l10n.tierLimitEventsBody(check.max ?? 0),
-            style: const TextStyle(color: AppColors.textSecondary),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text(l10n.tourGotIt),
+    // Enforce tier cap on number of events created (not when editing).
+    if (!_isEditing) {
+      final check =
+          await TierLimitsService().canCreateEvent(widget.currentUserId);
+      if (!mounted) return;
+      if (!check.allowed) {
+        final l10n = AppLocalizations.of(context)!;
+        await showDialog<void>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: Text(l10n.tierLimitTitle,
+                style: const TextStyle(color: AppColors.textPrimary)),
+            content: Text(
+              l10n.tierLimitEventsBody(check.max ?? 0),
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
-          ],
-        ),
-      );
-      return;
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: Text(l10n.tourGotIt),
+              ),
+            ],
+          ),
+        );
+        return;
+      }
     }
 
     // Upload the photos (main + up to 4) to Storage.
@@ -1983,38 +2047,68 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (!mounted) return;
     setState(() => _uploading = false);
 
-    final event = Event(
-      id: '', // Firestore will generate the ID
-      organizerId: widget.currentUserId,
-      organizerName: 'Current User', // TODO: Get from profile
-      title: _titleController.text,
-      description: _descriptionController.text,
-      category: _category,
-      imageUrl: imageUrl,
-      photoUrls: photoUrls,
-      startDate: _startDate,
-      endDate: _endDate,
-      locationName: _locationController.text,
-      latitude: _lat,
-      longitude: _lng,
-      city: _pickedCity,
-      country: _pickedCountry,
-      maxAttendees:
-          _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20),
-      price: _isFree
-          ? null
-          : (double.tryParse(_priceController.text)?.clamp(1, 1000)),
-      currency: _isFree ? null : _currency,
-      visibility: _visibility,
-      externalLinks: _externalLinks,
-      status: EventStatus.published,
-      languagePairs: _category == EventCategory.languageExchange
-          ? _languagePairsController.text.isNotEmpty
-              ? _languagePairsController.text
-              : null
-          : null,
-      createdAt: DateTime.now(),
-    );
+    final maxAttendees =
+        _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20);
+    final price = _isFree
+        ? null
+        : (double.tryParse(_priceController.text)?.clamp(1, 1000))?.toDouble();
+    final languagePairs = _category == EventCategory.languageExchange
+        ? (_languagePairsController.text.isNotEmpty
+            ? _languagePairsController.text
+            : null)
+        : null;
+
+    final Event event;
+    if (_isEditing) {
+      // Preserve attendees, status, createdAt, featured, etc.
+      event = widget.existing!.copyWith(
+        title: _titleController.text,
+        description: _descriptionController.text,
+        category: _category,
+        imageUrl: imageUrl ?? widget.existing!.imageUrl,
+        photoUrls: photoUrls.isNotEmpty ? photoUrls : widget.existing!.photoUrls,
+        startDate: _startDate,
+        endDate: _endDate,
+        locationName: _locationController.text,
+        latitude: _lat,
+        longitude: _lng,
+        city: _pickedCity,
+        country: _pickedCountry,
+        maxAttendees: maxAttendees,
+        price: price,
+        currency: _isFree ? null : _currency,
+        visibility: _visibility,
+        externalLinks: _externalLinks,
+        languagePairs: languagePairs,
+        updatedAt: DateTime.now(),
+      );
+    } else {
+      event = Event(
+        id: '', // Firestore will generate the ID
+        organizerId: widget.currentUserId,
+        organizerName: 'Current User', // TODO: Get from profile
+        title: _titleController.text,
+        description: _descriptionController.text,
+        category: _category,
+        imageUrl: imageUrl,
+        photoUrls: photoUrls,
+        startDate: _startDate,
+        endDate: _endDate,
+        locationName: _locationController.text,
+        latitude: _lat,
+        longitude: _lng,
+        city: _pickedCity,
+        country: _pickedCountry,
+        maxAttendees: maxAttendees,
+        price: price,
+        currency: _isFree ? null : _currency,
+        visibility: _visibility,
+        externalLinks: _externalLinks,
+        status: EventStatus.published,
+        languagePairs: languagePairs,
+        createdAt: DateTime.now(),
+      );
+    }
 
     widget.onEventCreated(event);
   }
