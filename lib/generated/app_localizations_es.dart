@@ -10665,4 +10665,92 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get continueToApp => 'Continuar';
+
+  @override
+  String get groupNewGroup => 'New group';
+
+  @override
+  String get groupCreate => 'Create';
+
+  @override
+  String get groupNameLabel => 'Group name';
+
+  @override
+  String groupSelectedCount(int count) {
+    return '$count selected';
+  }
+
+  @override
+  String get groupInviteByNickname => 'Invite by nickname';
+
+  @override
+  String get groupNicknameHint => 'Enter a nickname';
+
+  @override
+  String get groupNoContacts => 'No contacts to add yet';
+
+  @override
+  String get groupNoOneFound => 'No one found with that nickname';
+
+  @override
+  String get groupAlreadyAdded => 'Already added';
+
+  @override
+  String groupAddedCount(int count) {
+    return 'Added $count';
+  }
+
+  @override
+  String get groupSearchFailed => 'Search failed';
+
+  @override
+  String get groupInfo => 'Group info';
+
+  @override
+  String groupMembersCount(int count) {
+    return '$count members';
+  }
+
+  @override
+  String get groupAdmin => 'Admin';
+
+  @override
+  String get groupYou => 'You';
+
+  @override
+  String get groupLeave => 'Leave group';
+
+  @override
+  String get groupLeaveConfirmTitle => 'Leave group?';
+
+  @override
+  String get groupLeaveConfirmBody =>
+      'You will stop receiving messages from this group.';
+
+  @override
+  String get groupCancel => 'Cancel';
+
+  @override
+  String get groupLeaveAction => 'Leave';
+
+  @override
+  String get groupReport => 'Report group';
+
+  @override
+  String get groupReportConfirmBody => 'Report this group to our safety team?';
+
+  @override
+  String get groupReportAction => 'Report';
+
+  @override
+  String get groupReportSubmitted => 'Report submitted';
+
+  @override
+  String get groupMessageHint => 'Message…';
+
+  @override
+  String get groupSayHello => 'Say hello to the group 👋';
+
+  @override
+  String get groupLoadError => 'Couldn\'t load this group';
 }

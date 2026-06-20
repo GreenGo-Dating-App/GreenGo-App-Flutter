@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/usecases/get_group_members.dart';
 import '../../domain/usecases/group_membership.dart';
+import '../../domain/usecases/report_user.dart';
 
 /// Group Info Screen — members list, roles, and leave action.
 ///
@@ -34,9 +36,10 @@ class GroupInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final getMembers = sl<GetGroupMembers>();
     return Scaffold(
-      appBar: AppBar(title: const Text('Group info')),
+      appBar: AppBar(title: Text(l10n.groupInfo)),
       body: StreamBuilder(
         stream: getMembers(groupId),
         builder: (context, snapshot) {
@@ -53,7 +56,7 @@ class GroupInfoScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Text(
-                  '${members.length} members',
+                  l10n.groupMembersCount(members.length),
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
@@ -64,19 +67,27 @@ class GroupInfoScreen extends StatelessWidget {
                       ),
                     ),
                     title: Text(
-                      m.userId == currentUserId ? 'You' : m.userId,
+                      m.userId == currentUserId ? l10n.groupYou : m.userId,
                       overflow: TextOverflow.ellipsis,
                     ),
                     trailing: m.isAdmin
-                        ? const Chip(label: Text('Admin'))
+                        ? Chip(label: Text(l10n.groupAdmin))
                         : null,
                   )),
               const Divider(),
               ListTile(
+                leading: const Icon(Icons.flag_outlined, color: Colors.orange),
+                title: Text(
+                  l10n.groupReport,
+                  style: const TextStyle(color: Colors.orange),
+                ),
+                onTap: () => _confirmReport(context),
+              ),
+              ListTile(
                 leading: const Icon(Icons.exit_to_app, color: Colors.red),
-                title: const Text(
-                  'Leave group',
-                  style: TextStyle(color: Colors.red),
+                title: Text(
+                  l10n.groupLeave,
+                  style: const TextStyle(color: Colors.red),
                 ),
                 onTap: () => _confirmLeave(context),
               ),
@@ -88,19 +99,21 @@ class GroupInfoScreen extends StatelessWidget {
   }
 
   Future<void> _confirmLeave(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Leave group?'),
-        content: const Text('You will stop receiving messages from this group.'),
+        title: Text(l10n.groupLeaveConfirmTitle),
+        content: Text(l10n.groupLeaveConfirmBody),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Cancel'),
+            child: Text(l10n.groupCancel),
           ),
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(true),
-            child: const Text('Leave', style: TextStyle(color: Colors.red)),
+            child: Text(l10n.groupLeaveAction,
+                style: const TextStyle(color: Colors.red)),
           ),
         ],
       ),
@@ -117,6 +130,48 @@ class GroupInfoScreen extends StatelessWidget {
         SnackBar(content: Text(failure.message)),
       ),
       (_) => Navigator.of(context).popUntil((r) => r.isFirst),
+    );
+  }
+
+  Future<void> _confirmReport(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(l10n.groupReport),
+        content: Text(l10n.groupReportConfirmBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(l10n.groupCancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(l10n.groupReportAction,
+                style: const TextStyle(color: Colors.orange)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !context.mounted) return;
+
+    final result = await sl<ReportUser>()(
+      ReportUserParams(
+        reporterId: currentUserId,
+        reportedUserId: groupId,
+        reason: 'group_report',
+        conversationId: groupId,
+        additionalDetails: 'Reported group conversation',
+      ),
+    );
+    if (!context.mounted) return;
+    result.fold(
+      (failure) => ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(failure.message)),
+      ),
+      (_) => ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.groupReportSubmitted)),
+      ),
     );
   }
 }

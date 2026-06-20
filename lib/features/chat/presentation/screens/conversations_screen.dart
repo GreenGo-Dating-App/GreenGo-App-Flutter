@@ -18,6 +18,7 @@ import '../bloc/conversations_event.dart';
 import '../bloc/conversations_state.dart';
 import '../widgets/conversation_card.dart';
 import 'chat_screen.dart';
+import 'create_group_screen.dart';
 
 /// Conversations Screen
 ///
@@ -115,6 +116,38 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   void dispose() {
     _searchController.dispose();
     super.dispose();
+  }
+
+  /// Open the create-group flow, seeding the candidate pool with the user's
+  /// existing chat partners (members can also be invited by nickname in-screen).
+  Future<void> _openCreateGroup() async {
+    final state = context.read<ConversationsBloc>().state;
+    final conversations = state is ConversationsLoaded
+        ? state.conversations
+        : const <Conversation>[];
+    final seen = <String>{};
+    final candidates = <GroupCandidate>[];
+    for (final c in conversations) {
+      final otherId = c.getOtherUserId(widget.userId);
+      if (otherId.isEmpty || otherId == widget.userId || !seen.add(otherId)) {
+        continue;
+      }
+      final profile = await _getProfile(otherId);
+      candidates.add(GroupCandidate(
+        userId: otherId,
+        name: profile?.displayName ?? otherId,
+        photoUrl: (profile != null && profile.photoUrls.isNotEmpty)
+            ? profile.photoUrls.first
+            : null,
+      ));
+    }
+    if (!mounted) return;
+    await Navigator.of(context).push(
+      CreateGroupScreen.route(
+        currentUserId: widget.userId,
+        candidates: candidates,
+      ),
+    );
   }
 
   Future<Profile?> _getProfile(String userId) async {
@@ -282,6 +315,13 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         ..add(ConversationsLoadRequested(widget.userId)),
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
+        floatingActionButton: FloatingActionButton.extended(
+          backgroundColor: AppColors.richGold,
+          foregroundColor: AppColors.deepBlack,
+          icon: const Icon(Icons.group_add),
+          label: Text(AppLocalizations.of(context)!.groupNewGroup),
+          onPressed: _openCreateGroup,
+        ),
         body: BlocBuilder<ConversationsBloc, ConversationsState>(
           builder: (context, state) {
             if (state is ConversationsLoading) {

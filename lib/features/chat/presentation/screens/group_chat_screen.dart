@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
 import '../bloc/group_chat_event.dart';
@@ -120,7 +121,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
         actions: [
           IconButton(
             icon: const Icon(Icons.group_outlined),
-            tooltip: 'Group info',
+            tooltip: AppLocalizations.of(context)!.groupInfo,
             onPressed: () => Navigator.of(context).push(
               GroupInfoScreen.route(
                 groupId: widget.groupId,
@@ -153,7 +154,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
             children: [
               Expanded(
                 child: messages.isEmpty
-                    ? const Center(child: Text('Say hello to the group 👋'))
+                    ? Center(
+                        child: Text(AppLocalizations.of(context)!.groupSayHello))
                     : ListView.builder(
                         reverse: true,
                         padding: const EdgeInsets.symmetric(
@@ -266,11 +268,11 @@ class _InputBar extends StatelessWidget {
                 maxLines: 5,
                 textInputAction: TextInputAction.send,
                 onSubmitted: (_) => onSend(),
-                decoration: const InputDecoration(
-                  hintText: 'Message…',
-                  border: OutlineInputBorder(),
-                  contentPadding:
-                      EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                decoration: InputDecoration(
+                  hintText: AppLocalizations.of(context)!.groupMessageHint,
+                  border: const OutlineInputBorder(),
+                  contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 14, vertical: 10),
                 ),
               ),
             ),
