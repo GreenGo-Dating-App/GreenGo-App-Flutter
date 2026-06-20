@@ -185,9 +185,12 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
         m: (m == creatorId ? GroupRole.admin.name : GroupRole.member.name),
     };
 
-    final batch = firestore.batch();
-
-    batch.set(groupRef, {
+    // SINGLE client write: only the group document. The `onGroupCreated` Cloud
+    // Function (Admin SDK) seeds every member's `members/{uid}` doc and private
+    // `user_group_inbox` thread, and posts the "created" system message. This
+    // keeps the client free of cross-user writes (which security rules forbid)
+    // and keeps creation O(1) on the client regardless of group size.
+    await groupRef.set({
       'conversationType': ConversationType.group.name,
       'isGroup': true,
       'participants': members,
@@ -200,48 +203,6 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
       'theme': ChatTheme.gold.name,
       'isDeleted': false,
     });
-
-    // System message announcing creation (single message write).
-    final sysRef = groupRef.collection(messagesSub).doc();
-    batch.set(sysRef, {
-      'senderId': creatorId,
-      'receiverId': '',
-      'matchId': groupRef.id,
-      'content': 'created the group "${name.trim()}"',
-      'type': MessageType.system.value,
-      'status': MessageStatus.sent.value,
-      'sentAt': now,
-    });
-
-    // Per-member docs + seed each member's inbox thread. The fan-out function
-    // keeps these summaries fresh afterwards; we seed them so the group appears
-    // instantly for everyone.
-    for (final m in members) {
-      batch.set(groupRef.collection(membersSub).doc(m), {
-        'userId': m,
-        'role': roles[m],
-        'joinedAt': now,
-        'lastReadAt': now,
-        'notificationsEnabled': true,
-        'leftAt': null,
-      });
-      batch.set(_inboxThread(m, groupRef.id), {
-        'groupId': groupRef.id,
-        'name': name.trim(),
-        'photoUrl': photoUrl,
-        'isGroup': true,
-        'lastMessagePreview': 'Group created',
-        'lastSenderId': creatorId,
-        'lastMessageAt': now,
-        'unreadCount': 0,
-        'pinned': false,
-        'muted': false,
-        'memberCount': members.length,
-        'updatedAt': now,
-      });
-    }
-
-    await batch.commit();
 
     return ConversationModel(
       conversationId: groupRef.id,
@@ -447,43 +408,14 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
       throw Exception('Groups are limited to $maxGroupMembers members.');
     }
 
-    final now = FieldValue.serverTimestamp();
-    final name = (data['groupInfo']?['name'] as String?) ?? 'Group';
-    final photoUrl = data['groupInfo']?['photoUrl'] as String?;
-    final batch = firestore.batch();
-
-    batch.update(groupRef, {
+    // Update only the group doc. The `onGroupParticipantsChanged` Cloud Function
+    // detects the added ids and seeds their member docs + inbox threads and
+    // posts the system message (cross-user writes are server-side only).
+    await groupRef.update({
       'participants': FieldValue.arrayUnion(toAdd),
       'memberCount': FieldValue.increment(toAdd.length),
       for (final m in toAdd) 'roles.$m': GroupRole.member.name,
     });
-
-    for (final m in toAdd) {
-      batch.set(groupRef.collection(membersSub).doc(m), {
-        'userId': m,
-        'role': GroupRole.member.name,
-        'joinedAt': now,
-        'lastReadAt': now,
-        'notificationsEnabled': true,
-        'leftAt': null,
-      });
-      batch.set(_inboxThread(m, groupId), {
-        'groupId': groupId,
-        'name': name,
-        'photoUrl': photoUrl,
-        'isGroup': true,
-        'lastMessagePreview': 'You were added to the group',
-        'lastMessageAt': now,
-        'unreadCount': 1,
-        'pinned': false,
-        'muted': false,
-        'memberCount': current.length + toAdd.length,
-        'updatedAt': now,
-      });
-    }
-
-    _appendSystemMessage(batch, groupRef, actorId, 'added new members');
-    await batch.commit();
   }
 
   @override
@@ -514,22 +446,14 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
     String actorId,
     String systemText,
   ) async {
-    final now = FieldValue.serverTimestamp();
-    final batch = firestore.batch();
-    batch.update(groupRef, {
+    // Update only the group doc. The `onGroupParticipantsChanged` Cloud Function
+    // marks the member's doc leftAt, deletes their inbox thread, and posts the
+    // system message (cross-user writes are server-side only).
+    await groupRef.update({
       'participants': FieldValue.arrayRemove([memberId]),
       'memberCount': FieldValue.increment(-1),
       'roles.$memberId': FieldValue.delete(),
     });
-    batch.set(
-      groupRef.collection(membersSub).doc(memberId),
-      {'leftAt': now},
-      SetOptions(merge: true),
-    );
-    // Remove the group from the departing member's inbox.
-    batch.delete(_inboxThread(memberId, groupRef.id));
-    _appendSystemMessage(batch, groupRef, actorId, systemText);
-    await batch.commit();
   }
 
   @override
@@ -560,14 +484,10 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
     final snap = await groupRef.get();
     if (!snap.exists) throw Exception('Group not found');
     _requireAdmin(snap.data()!, actorId);
-    final batch = firestore.batch();
-    batch.update(groupRef, {'roles.$memberId': role.name});
-    batch.set(
-      groupRef.collection(membersSub).doc(memberId),
-      {'role': role.name},
-      SetOptions(merge: true),
-    );
-    await batch.commit();
+    // `group.roles` is the authoritative role map; the per-member doc role is a
+    // denormalized copy synced by the Cloud Function. Update only the group doc
+    // here to avoid a cross-user write to another member's doc.
+    await groupRef.update({'roles.$memberId': role.name});
   }
 
   @override
@@ -618,23 +538,5 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
     if (roles[actorId] != GroupRole.admin.name) {
       throw Exception('Only group admins can perform this action.');
     }
-  }
-
-  void _appendSystemMessage(
-    WriteBatch batch,
-    DocumentReference<Map<String, dynamic>> groupRef,
-    String actorId,
-    String text,
-  ) {
-    final ref = groupRef.collection(messagesSub).doc();
-    batch.set(ref, {
-      'senderId': actorId,
-      'receiverId': '',
-      'matchId': groupRef.id,
-      'content': text,
-      'type': MessageType.system.value,
-      'status': MessageStatus.sent.value,
-      'sentAt': FieldValue.serverTimestamp(),
-    });
   }
 }
