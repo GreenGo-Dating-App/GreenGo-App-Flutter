@@ -52,6 +52,8 @@ import '../../features/chat/domain/usecases/send_group_message.dart';
 import '../../features/chat/domain/usecases/mark_group_read.dart';
 import '../../features/chat/domain/usecases/get_group_members.dart';
 import '../../features/chat/domain/usecases/group_membership.dart';
+import '../../features/chat/presentation/bloc/groups_bloc.dart';
+import '../../features/chat/presentation/bloc/group_chat_bloc.dart';
 import '../../features/coins/data/datasources/coin_remote_datasource.dart';
 import '../../features/coins/data/repositories/coin_repository_impl.dart';
 import '../../features/coins/domain/repositories/coin_repository.dart';
@@ -410,6 +412,22 @@ Future<void> init() async {
   );
 
   //! Features - Group Chat (isolated `groups` collection)
+  // BLoCs
+  sl.registerFactory(() => GroupsBloc(getUserGroups: sl()));
+  sl.registerFactory(
+    () => GroupChatBloc(
+      getGroupMessages: sl(),
+      sendGroupMessage: sl(),
+      markGroupRead: sl(),
+      addGroupMembers: sl(),
+      removeGroupMember: sl(),
+      leaveGroup: sl(),
+      updateGroupInfo: sl(),
+      changeGroupRole: sl(),
+      repository: sl(),
+    ),
+  );
+
   // Use cases
   sl.registerLazySingleton(() => CreateGroup(sl()));
   sl.registerLazySingleton(() => GetUserGroups(sl()));
