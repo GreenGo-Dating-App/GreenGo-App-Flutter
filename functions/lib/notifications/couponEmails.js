@@ -8,7 +8,7 @@
  * best-effort.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sendCouponRedeemedEmail = void 0;
+exports.sendCouponRedeemedEmail = sendCouponRedeemedEmail;
 const utils_1 = require("../shared/utils");
 const brevoEmailService_1 = require("./brevoEmailService");
 async function sendCouponRedeemedEmail(uid, payload) {
@@ -33,5 +33,4 @@ async function sendCouponRedeemedEmail(uid, payload) {
         // Swallow — caller treats this as non-fatal.
     }
 }
-exports.sendCouponRedeemedEmail = sendCouponRedeemedEmail;
 //# sourceMappingURL=couponEmails.js.map

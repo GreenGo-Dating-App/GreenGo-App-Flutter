@@ -8,7 +8,8 @@
  * - Callable: user can trigger a refresh for themselves
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.computeAllUserStats = exports.computeUserStats = void 0;
+exports.computeUserStats = computeUserStats;
+exports.computeAllUserStats = computeAllUserStats;
 const utils_1 = require("../shared/utils");
 /** XP thresholds for each level (index = level - 1). Must match client. */
 const LEVEL_XP_REQUIREMENTS = [0, 100, 250, 500, 1000, 2000, 3500, 5500, 8000, 11000, 15000, 20000, 26000, 33000, 41000, 50000];
@@ -119,7 +120,6 @@ async function computeUserStats(userId) {
     (0, utils_1.logInfo)(`Stats computed for user ${userId}: XP=${totalXp}, level=${level}, words=${Object.values(wordsPerLanguage).reduce((a, b) => a + b, 0)}`);
     return statsData;
 }
-exports.computeUserStats = computeUserStats;
 /** Page size for Firestore cursor-based pagination */
 const PAGE_SIZE = 100;
 /** Concurrency batch size for Promise.allSettled */
@@ -204,5 +204,4 @@ async function computeAllUserStats() {
     }
     return processed;
 }
-exports.computeAllUserStats = computeAllUserStats;
 //# sourceMappingURL=userStatsCompute.js.map

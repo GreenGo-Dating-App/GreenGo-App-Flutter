@@ -3352,6 +3352,10 @@
   "voiceIntroductionSubtitle": "Gravar uma mensagem de voz curta (opcional)",
   "voiceIntroductionTitle": "Apresentação por voz",
   "voiceMicrophonePermissionRequired": "É necessária permissão do microfone",
+  "voiceMessageTooShort": "Mantenha pressionado para gravar, solte para enviar",
+  "voiceSlideToCancel": "‹ Deslize para cancelar",
+  "voiceReleaseToCancel": "Solte para cancelar",
+  "voiceFailedToSend": "Falha ao enviar mensagem de voz",
   "voiceRecordAgain": "Gravar Novamente",
   "voiceRecordIntroDescription": "Grava uma breve apresentação de {seconds} segundos para que outros oiçam a tua personalidade.",
   "@voiceRecordIntroDescription": {

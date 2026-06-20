@@ -49,6 +49,7 @@ import '../bloc/chat_event.dart';
 import '../bloc/chat_state.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../widgets/message_bubble.dart';
+import '../../../../core/widgets/voice_record_send_button.dart';
 
 /// Chat Screen
 ///
@@ -1028,6 +1029,43 @@ class _ChatScreenState extends State<ChatScreen> {
           _uploadProgress = 0.0;
         });
       }
+    }
+  }
+
+  Future<void> _sendVoiceMessage(File file, Duration duration) async {
+    if (_isUploadingMedia) return;
+    setState(() => _isUploadingMedia = true);
+    try {
+      final uuid = const Uuid().v4();
+      final fileName = 'chat_voice/${widget.matchId}/$uuid.m4a';
+      final ref = FirebaseStorage.instance.ref().child(fileName);
+      await ref.putFile(
+        file,
+        SettableMetadata(contentType: 'audio/mp4'),
+      );
+      final downloadUrl = await ref.getDownloadURL();
+      try {
+        if (file.existsSync()) file.deleteSync();
+      } catch (_) {}
+      if (mounted) {
+        _chatBloc.add(ChatMessageSent(
+          content: downloadUrl,
+          type: MessageType.voiceNote,
+          metadata: {'durationMs': duration.inMilliseconds},
+        ));
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)?.voiceFailedToSend ??
+                'Failed to send voice message'),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isUploadingMedia = false);
     }
   }
 
@@ -3562,31 +3600,18 @@ class _ChatScreenState extends State<ChatScreen> {
 
                   const SizedBox(width: 8),
 
-                  // Send button
+                  // Send / voice-record button
                   BlocBuilder<ChatBloc, ChatState>(
                     builder: (context, state) {
                       final isSending = state is ChatSending;
 
-                      return GestureDetector(
-                        onTap: isSending ? null : () => _sendMessage(this.context),
-                        child: CircleAvatar(
-                          backgroundColor: AppColors.richGold,
-                          radius: 24,
-                          child: isSending
-                              ? const SizedBox(
-                                  width: 20,
-                                  height: 20,
-                                  child: CircularProgressIndicator(
-                                    color: AppColors.deepBlack,
-                                    strokeWidth: 2,
-                                  ),
-                                )
-                              : const Icon(
-                                  Icons.send,
-                                  color: AppColors.deepBlack,
-                                  size: 20,
-                                ),
-                        ),
+                      return VoiceRecordSendButton(
+                        controller: _messageController,
+                        isSending: isSending,
+                        buttonColor: AppColors.richGold,
+                        iconColor: AppColors.deepBlack,
+                        onSendText: () => _sendMessage(this.context),
+                        onSendVoice: _sendVoiceMessage,
                       );
                     },
                   ),

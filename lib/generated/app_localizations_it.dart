@@ -9815,6 +9815,19 @@ class AppLocalizationsIt extends AppLocalizations {
       'È richiesto il permesso del microfono';
 
   @override
+  String get voiceMessageTooShort =>
+      'Tieni premuto per registrare, rilascia per inviare';
+
+  @override
+  String get voiceSlideToCancel => '‹ Scorri per annullare';
+
+  @override
+  String get voiceReleaseToCancel => 'Rilascia per annullare';
+
+  @override
+  String get voiceFailedToSend => 'Invio del messaggio vocale non riuscito';
+
+  @override
   String get voiceRecordAgain => 'Registra di Nuovo';
 
   @override

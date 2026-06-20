@@ -9826,6 +9826,20 @@ class AppLocalizationsDe extends AppLocalizations {
       'Mikrofonberechtigung erforderlich';
 
   @override
+  String get voiceMessageTooShort =>
+      'Zum Aufnehmen halten, zum Senden loslassen';
+
+  @override
+  String get voiceSlideToCancel => '‹ Zum Abbrechen wischen';
+
+  @override
+  String get voiceReleaseToCancel => 'Zum Abbrechen loslassen';
+
+  @override
+  String get voiceFailedToSend =>
+      'Sprachnachricht konnte nicht gesendet werden';
+
+  @override
   String get voiceRecordAgain => 'Erneut Aufnehmen';
 
   @override

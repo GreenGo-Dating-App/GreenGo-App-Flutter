@@ -3350,6 +3350,10 @@
   "voiceIntroductionSubtitle": "Registra un breve messaggio vocale (facoltativo)",
   "voiceIntroductionTitle": "Presentazione vocale",
   "voiceMicrophonePermissionRequired": "È richiesto il permesso del microfono",
+  "voiceMessageTooShort": "Tieni premuto per registrare, rilascia per inviare",
+  "voiceSlideToCancel": "‹ Scorri per annullare",
+  "voiceReleaseToCancel": "Rilascia per annullare",
+  "voiceFailedToSend": "Invio del messaggio vocale non riuscito",
   "voiceRecordAgain": "Registra di Nuovo",
   "voiceRecordIntroDescription": "Registra una breve presentazione di {seconds} secondi per far sentire la tua personalità.",
   "@voiceRecordIntroDescription": {

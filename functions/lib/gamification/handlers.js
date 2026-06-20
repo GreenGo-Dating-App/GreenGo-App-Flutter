@@ -4,7 +4,17 @@
  * Extracted handlers that can be unit tested independently of Cloud Functions
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleUpdateLeaderboardRankings = exports.handleResetDailyChallenges = exports.handleClaimChallengeReward = exports.handleTrackChallengeProgress = exports.DAILY_CHALLENGES = exports.handleClaimLevelRewards = exports.handleUnlockAchievementReward = exports.handleTrackAchievementProgress = exports.ACHIEVEMENTS = exports.handleGrantXP = exports.calculateLevelRewards = exports.calculateLevel = exports.LEVEL_XP_REQUIREMENTS = exports.XP_ACTIONS = void 0;
+exports.DAILY_CHALLENGES = exports.ACHIEVEMENTS = exports.LEVEL_XP_REQUIREMENTS = exports.XP_ACTIONS = void 0;
+exports.calculateLevel = calculateLevel;
+exports.calculateLevelRewards = calculateLevelRewards;
+exports.handleGrantXP = handleGrantXP;
+exports.handleTrackAchievementProgress = handleTrackAchievementProgress;
+exports.handleUnlockAchievementReward = handleUnlockAchievementReward;
+exports.handleClaimLevelRewards = handleClaimLevelRewards;
+exports.handleTrackChallengeProgress = handleTrackChallengeProgress;
+exports.handleClaimChallengeReward = handleClaimChallengeReward;
+exports.handleResetDailyChallenges = handleResetDailyChallenges;
+exports.handleUpdateLeaderboardRankings = handleUpdateLeaderboardRankings;
 const utils_1 = require("../shared/utils");
 // XP Configuration
 exports.XP_ACTIONS = {
@@ -47,7 +57,6 @@ function calculateLevel(currentXP) {
     }
     return level;
 }
-exports.calculateLevel = calculateLevel;
 /**
  * Calculate rewards for leveling up
  */
@@ -62,7 +71,6 @@ function calculateLevelRewards(fromLevel, toLevel) {
     }
     return rewards;
 }
-exports.calculateLevelRewards = calculateLevelRewards;
 /**
  * Grant XP to a user - Business Logic Handler
  */
@@ -151,7 +159,6 @@ async function handleGrantXP(params) {
         rewards: rewardsEarned,
     };
 }
-exports.handleGrantXP = handleGrantXP;
 // ========== ACHIEVEMENTS ==========
 exports.ACHIEVEMENTS = {
     first_match: {
@@ -255,7 +262,6 @@ async function handleTrackAchievementProgress(params) {
         unlocked: shouldUnlock ? true : unlocked,
     };
 }
-exports.handleTrackAchievementProgress = handleTrackAchievementProgress;
 /**
  * Unlock Achievement Reward Handler
  */
@@ -307,7 +313,6 @@ async function handleUnlockAchievementReward(params) {
         coinReward: achievement.coinReward,
     };
 }
-exports.handleUnlockAchievementReward = handleUnlockAchievementReward;
 /**
  * Claim Level Rewards Handler
  */
@@ -353,7 +358,6 @@ async function handleClaimLevelRewards(params) {
         bonusReward: bonusReward > 0,
     };
 }
-exports.handleClaimLevelRewards = handleClaimLevelRewards;
 // ========== CHALLENGES ==========
 exports.DAILY_CHALLENGES = [
     {
@@ -449,7 +453,6 @@ async function handleTrackChallengeProgress(params) {
         completed: shouldComplete ? true : completed,
     };
 }
-exports.handleTrackChallengeProgress = handleTrackChallengeProgress;
 /**
  * Claim Challenge Reward Handler
  */
@@ -508,7 +511,6 @@ async function handleClaimChallengeReward(params) {
         coinReward: challengeDef.coinReward,
     };
 }
-exports.handleClaimChallengeReward = handleClaimChallengeReward;
 /**
  * Reset Daily Challenges Handler (Scheduled)
  */
@@ -550,7 +552,6 @@ async function handleResetDailyChallenges() {
     }
     (0, utils_1.logInfo)(`Daily challenges reset completed: ${usersProcessed} users, ${challengesReset} challenges archived`);
 }
-exports.handleResetDailyChallenges = handleResetDailyChallenges;
 /**
  * Update Leaderboard Rankings Handler (Scheduled)
  */
@@ -601,5 +602,4 @@ async function handleUpdateLeaderboardRankings() {
     }
     (0, utils_1.logInfo)(`Leaderboard updated: ${leaderboardData.length} users ranked`);
 }
-exports.handleUpdateLeaderboardRankings = handleUpdateLeaderboardRankings;
 //# sourceMappingURL=handlers.js.map

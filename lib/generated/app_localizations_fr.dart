@@ -9860,6 +9860,19 @@ class AppLocalizationsFr extends AppLocalizations {
       'L\'autorisation du microphone est requise';
 
   @override
+  String get voiceMessageTooShort =>
+      'Maintenez pour enregistrer, relâchez pour envoyer';
+
+  @override
+  String get voiceSlideToCancel => '‹ Glissez pour annuler';
+
+  @override
+  String get voiceReleaseToCancel => 'Relâchez pour annuler';
+
+  @override
+  String get voiceFailedToSend => 'Échec de l\'envoi du message vocal';
+
+  @override
   String get voiceRecordAgain => 'Réenregistrer';
 
   @override

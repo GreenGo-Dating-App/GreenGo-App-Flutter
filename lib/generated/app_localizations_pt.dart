@@ -9797,6 +9797,19 @@ class AppLocalizationsPt extends AppLocalizations {
       'É necessária permissão do microfone';
 
   @override
+  String get voiceMessageTooShort =>
+      'Mantenha pressionado para gravar, solte para enviar';
+
+  @override
+  String get voiceSlideToCancel => '‹ Deslize para cancelar';
+
+  @override
+  String get voiceReleaseToCancel => 'Solte para cancelar';
+
+  @override
+  String get voiceFailedToSend => 'Falha ao enviar mensagem de voz';
+
+  @override
   String get voiceRecordAgain => 'Gravar Novamente';
 
   @override
@@ -20493,6 +20506,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get voiceMicrophonePermissionRequired =>
       'Permissão do microfone é necessária';
+
+  @override
+  String get voiceMessageTooShort => 'Segure para gravar, solte para enviar';
+
+  @override
+  String get voiceSlideToCancel => '‹ Deslize para cancelar';
+
+  @override
+  String get voiceReleaseToCancel => 'Solte para cancelar';
+
+  @override
+  String get voiceFailedToSend => 'Falha ao enviar mensagem de voz';
 
   @override
   String get voiceRecordAgain => 'Gravar Novamente';

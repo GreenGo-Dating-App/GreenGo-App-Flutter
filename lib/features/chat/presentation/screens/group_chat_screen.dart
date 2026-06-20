@@ -1,9 +1,15 @@
+import 'dart:io';
+
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/widgets/voice_message_widget.dart';
+import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
@@ -88,6 +94,32 @@ class _GroupChatViewState extends State<_GroupChatView> {
         .read<GroupChatBloc>()
         .add(GroupChatMessageSent(content: text));
     _controller.clear();
+  }
+
+  Future<void> _sendVoice(BuildContext context, File file, Duration duration) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      final uuid = const Uuid().v4();
+      final ref = FirebaseStorage.instance
+          .ref()
+          .child('group_voice/${widget.groupId}/$uuid.m4a');
+      await ref.putFile(file, SettableMetadata(contentType: 'audio/mp4'));
+      final url = await ref.getDownloadURL();
+      try {
+        if (file.existsSync()) file.deleteSync();
+      } catch (_) {}
+      bloc.add(GroupChatMessageSent(
+        content: url,
+        type: MessageType.voiceNote,
+        metadata: {'durationMs': duration.inMilliseconds},
+      ));
+    } catch (_) {
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.voiceFailedToSend),
+      ));
+    }
   }
 
   Future<void> _sendLocation(BuildContext context) async {
@@ -195,6 +227,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                 controller: _controller,
                 onSend: () => _send(context),
                 onAttachLocation: () => _sendLocation(context),
+                onSendVoice: (file, dur) => _sendVoice(context, file, dur),
               ),
             ],
           );
@@ -270,6 +303,15 @@ class _GroupMessageBubble extends StatelessWidget {
                 currentUserId: currentUserId,
                 onDark: isMine,
               )
+            else if (message.type == MessageType.voiceNote)
+              VoiceMessageWidget(
+                isCurrentUser: isMine,
+                audioUrl: message.content,
+                duration: (message.metadata?['durationMs'] is int)
+                    ? Duration(
+                        milliseconds: message.metadata!['durationMs'] as int)
+                    : null,
+              )
             else
               Text(
                 message.content,
@@ -337,11 +379,13 @@ class _InputBar extends StatelessWidget {
     required this.controller,
     required this.onSend,
     required this.onAttachLocation,
+    required this.onSendVoice,
   });
 
   final TextEditingController controller;
   final VoidCallback onSend;
   final VoidCallback onAttachLocation;
+  final void Function(File file, Duration duration) onSendVoice;
 
   @override
   Widget build(BuildContext context) {
@@ -372,9 +416,11 @@ class _InputBar extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 6),
-            IconButton.filled(
-              icon: const Icon(Icons.send),
-              onPressed: onSend,
+            VoiceRecordSendButton(
+              controller: controller,
+              radius: 22,
+              onSendText: onSend,
+              onSendVoice: onSendVoice,
             ),
           ],
         ),

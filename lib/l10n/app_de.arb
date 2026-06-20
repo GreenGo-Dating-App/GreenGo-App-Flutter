@@ -3350,6 +3350,10 @@
   "voiceIntroductionSubtitle": "Nimm eine kurze Sprachnachricht auf (optional)",
   "voiceIntroductionTitle": "Sprachvorstellung",
   "voiceMicrophonePermissionRequired": "Mikrofonberechtigung erforderlich",
+  "voiceMessageTooShort": "Zum Aufnehmen halten, zum Senden loslassen",
+  "voiceSlideToCancel": "‹ Zum Abbrechen wischen",
+  "voiceReleaseToCancel": "Zum Abbrechen loslassen",
+  "voiceFailedToSend": "Sprachnachricht konnte nicht gesendet werden",
   "voiceRecordAgain": "Erneut Aufnehmen",
   "voiceRecordIntroDescription": "Nimm eine kurze {seconds} Sekunden Vorstellung auf, damit andere deine Persönlichkeit hören können.",
   "@voiceRecordIntroDescription": {

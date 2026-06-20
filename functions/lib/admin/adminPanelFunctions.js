@@ -26,15 +26,25 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.cleanupOrphanedAuthUser = exports.sendWelcomeEmail = exports.onSupportMessageCreated = exports.onSupportChatCreated = exports.processAISupportMessage = exports.sendTestEmail = exports.adminSetUserDisabled = exports.adminDeleteUser = exports.forcePasswordChange = exports.sendPasswordResetEmail = exports.adminChangeUserPassword = exports.verify2FACode = exports.send2FACode = void 0;
+exports.reverseGeocodeProfileLocation = exports.cleanupOrphanedAuthUser = exports.sendPasswordResetViaResend = exports.sendWelcomeEmail = exports.onSupportMessageCreated = exports.onSupportChatCreated = exports.processAISupportMessage = exports.sendTestEmail = exports.adminSetUserDisabled = exports.adminDeleteUser = exports.forcePasswordChange = exports.sendPasswordResetEmail = exports.adminChangeUserPassword = exports.verify2FACode = exports.send2FACode = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const db = admin.firestore();
@@ -269,7 +279,11 @@ exports.sendPasswordResetEmail = functions.https.onCall(async (data, context) =>
         throw new functions.https.HttpsError('invalid-argument', 'email is required');
     }
     try {
-        const link = await auth.generatePasswordResetLink(email);
+        const actionCodeSettings = {
+            url: 'https://greengo-chat.firebaseapp.com',
+            handleCodeInApp: false,
+        };
+        const link = await auth.generatePasswordResetLink(email, actionCodeSettings);
         await db.collection('admin_actions').add({
             action: 'send_password_reset',
             userEmail: email,
@@ -815,6 +829,124 @@ exports.sendWelcomeEmail = functions.https.onCall(async (data, _context) => {
 // =============================================================================
 // ORPHANED AUTH USER CLEANUP
 // =============================================================================
+// =============================================================================
+// PASSWORD RESET VIA RESEND (branded email for regular users)
+// =============================================================================
+/**
+ * Send a branded password reset email via Resend.
+ * No admin auth required — called from the forgot password screen.
+ */
+exports.sendPasswordResetViaResend = functions.https.onCall(async (data, _context) => {
+    var _a, _b;
+    const { email } = data;
+    if (!email || typeof email !== 'string') {
+        throw new functions.https.HttpsError('invalid-argument', 'email is required');
+    }
+    console.log(`sendPasswordResetViaResend called for: ${email}`);
+    try {
+        // Generate the Firebase password reset link. An explicit, authorized
+        // continue URL is required — without ActionCodeSettings the Admin SDK can
+        // throw "INTERNAL ASSERT FAILED: Unable to create the email action link".
+        const actionCodeSettings = {
+            url: 'https://greengo-chat.firebaseapp.com',
+            handleCodeInApp: false,
+        };
+        const resetLink = await auth.generatePasswordResetLink(email, actionCodeSettings);
+        // Read Resend config
+        const configDoc = await db.doc('app_config/resend_settings').get();
+        const resendConfig = configDoc.data();
+        const resendApiKey = resendConfig === null || resendConfig === void 0 ? void 0 : resendConfig.apiKey;
+        if (!resendApiKey) {
+            console.warn('Resend API key not configured. Password reset email not sent via Resend.');
+            return { success: true, emailSent: false, message: 'Password reset email not sent (email not configured)' };
+        }
+        const senderEmail = (resendConfig === null || resendConfig === void 0 ? void 0 : resendConfig.senderEmail) || 'onboarding@resend.dev';
+        const senderName = (resendConfig === null || resendConfig === void 0 ? void 0 : resendConfig.senderName) || 'GreenGo';
+        const emailResponse = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${resendApiKey}`,
+            },
+            body: JSON.stringify({
+                from: `${senderName} <${senderEmail}>`,
+                to: [email],
+                subject: 'Reset Your GreenGo Password',
+                html: `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0A0A0A; color: #FFFFFF; padding: 40px; margin: 0; }
+                .container { max-width: 500px; margin: 0 auto; background: #1A1A1A; border-radius: 16px; padding: 40px; border: 1px solid #2A2A2A; }
+                .header { text-align: center; margin-bottom: 30px; }
+                .logo { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #D4AF37, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+                .content { color: rgba(255,255,255,0.8); line-height: 1.8; text-align: center; }
+                .highlight { color: #FFD700; font-weight: bold; }
+                .divider { border: none; border-top: 1px solid #2A2A2A; margin: 25px 0; }
+                .reset-btn { display: inline-block; background: linear-gradient(135deg, #D4AF37, #FFD700); color: #0A0A0A; font-weight: bold; font-size: 16px; padding: 14px 40px; border-radius: 12px; text-decoration: none; margin: 20px 0; }
+                .link-fallback { color: rgba(255,255,255,0.5); font-size: 12px; word-break: break-all; }
+                .warning { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 20px; }
+                .footer { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.4); font-size: 12px; }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <div class="logo">GreenGo</div>
+                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Password Reset</p>
+                </div>
+                <div class="content">
+                  <p>We received a request to reset your <span class="highlight">GreenGo</span> password.</p>
+                  <p>Click the button below to set a new password:</p>
+                  <hr class="divider">
+                  <a href="${resetLink}" class="reset-btn">Reset Password</a>
+                  <hr class="divider">
+                  <p class="warning">This link will expire in 1 hour for security reasons.</p>
+                  <p class="warning">If you didn't request a password reset, you can safely ignore this email.</p>
+                  <p class="link-fallback">If the button doesn't work, copy and paste this link into your browser:<br>${resetLink}</p>
+                </div>
+                <div class="footer">
+                  <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
+                </div>
+              </div>
+            </body>
+            </html>
+          `,
+            }),
+        });
+        const emailResponseText = await emailResponse.text();
+        console.log(`Resend password reset email response [${emailResponse.status}]:`, emailResponseText);
+        if (!emailResponse.ok) {
+            console.error('Resend password reset email error:', emailResponseText);
+            return { success: true, emailSent: false, message: 'Password reset email failed to send' };
+        }
+        return { success: true, emailSent: true };
+    }
+    catch (error) {
+        // Do not reveal whether the account exists — return success for security.
+        // For an unregistered email the Admin SDK normally returns
+        // auth/user-not-found, but on generatePasswordResetLink it instead
+        // surfaces auth/internal-error ("Unable to create the email action link").
+        // Treat all of these "no deliverable account" cases as a silent success.
+        const code = ((_a = error === null || error === void 0 ? void 0 : error.errorInfo) === null || _a === void 0 ? void 0 : _a.code) || (error === null || error === void 0 ? void 0 : error.code) || '';
+        const message = ((_b = error === null || error === void 0 ? void 0 : error.errorInfo) === null || _b === void 0 ? void 0 : _b.message) || (error === null || error === void 0 ? void 0 : error.message) || '';
+        if (code === 'auth/user-not-found' ||
+            code === 'auth/invalid-email' ||
+            code === 'auth/internal-error' ||
+            message.includes('Unable to create the email action link')) {
+            console.log(`sendPasswordResetViaResend: no deliverable account for ${email}, returning silent success`);
+            return { success: true, emailSent: true };
+        }
+        console.error('Error sending password reset email:', error);
+        throw new functions.https.HttpsError('internal', 'Failed to send password reset email');
+    }
+});
+// =============================================================================
+// ORPHANED AUTH USER CLEANUP
+// =============================================================================
 exports.cleanupOrphanedAuthUser = functions.https.onCall(async (data, _context) => {
     const { email } = data;
     if (!email || typeof email !== 'string') {
@@ -863,6 +995,79 @@ exports.cleanupOrphanedAuthUser = functions.https.onCall(async (data, _context) 
         }
         console.error('Error cleaning up orphaned auth user:', error);
         throw new functions.https.HttpsError('internal', error.message || 'Failed to cleanup');
+    }
+});
+// =============================================================================
+// SELF-HEALING PROFILE LOCATION (reverse geocode on write)
+// =============================================================================
+/**
+ * When a profile is written with real coordinates but an unknown/empty country
+ * (e.g. onboarding geocoding failed), reverse-geocode the coordinates and
+ * backfill city / country / countryLower / displayAddress so the profile is
+ * discoverable in its real location.
+ *
+ * Loop-safe: only acts when the country is unknown AND coordinates exist. The
+ * resulting write sets a real country, so the re-triggered invocation no-ops.
+ * To avoid re-geocoding on unrelated writes (presence, bio, etc.), it only runs
+ * on profile creation or when the coordinates/country actually changed.
+ */
+exports.reverseGeocodeProfileLocation = functions.firestore
+    .document('profiles/{userId}')
+    .onWrite(async (change, context) => {
+    const after = change.after.exists ? change.after.data() : null;
+    if (!after)
+        return null; // document deleted
+    const loc = after.location || {};
+    const country = (loc.country || '').toString().trim().toLowerCase();
+    const lat = Number(loc.latitude) || 0;
+    const lng = Number(loc.longitude) || 0;
+    const countryUnknown = country === '' || country === 'unknown';
+    const hasCoords = lat !== 0 && lng !== 0;
+    // Skip already-located profiles AND the function's own follow-up write.
+    if (!countryUnknown || !hasCoords)
+        return null;
+    // Only run on creation or when location actually changed — avoids
+    // re-geocoding on every unrelated profile update.
+    const before = change.before.exists ? change.before.data() : null;
+    const bLoc = (before === null || before === void 0 ? void 0 : before.location) || {};
+    const bLat = Number(bLoc.latitude) || 0;
+    const bLng = Number(bLoc.longitude) || 0;
+    const bCountry = (bLoc.country || '').toString().trim().toLowerCase();
+    const coordsChanged = bLat !== lat || bLng !== lng;
+    const countryChanged = bCountry !== country;
+    if (before && !coordsChanged && !countryChanged)
+        return null;
+    try {
+        const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=en&zoom=10`;
+        const resp = await fetch(url, {
+            headers: { 'User-Agent': 'GreenGo-App/1.0 (location backfill; support@greengochat.com)' },
+        });
+        if (!resp.ok) {
+            console.warn(`reverseGeocodeProfileLocation: HTTP ${resp.status} for ${context.params.userId}`);
+            return null;
+        }
+        const data = await resp.json();
+        const a = data.address || {};
+        const resolvedCountry = a.country || '';
+        const resolvedCity = a.city || a.town || a.village || a.municipality || a.county || a.state_district || a.state || '';
+        if (!resolvedCountry) {
+            console.warn(`reverseGeocodeProfileLocation: no country resolved for ${context.params.userId}`);
+            return null;
+        }
+        const city = resolvedCity || resolvedCountry;
+        await change.after.ref.update({
+            'location.city': city,
+            'location.country': resolvedCountry,
+            'location.countryLower': resolvedCountry.toLowerCase(),
+            'location.displayAddress': `${city}, ${resolvedCountry}`,
+            updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+        console.log(`reverseGeocodeProfileLocation: ${context.params.userId} -> ${city}, ${resolvedCountry}`);
+        return null;
+    }
+    catch (error) {
+        console.error('reverseGeocodeProfileLocation error:', (error === null || error === void 0 ? void 0 : error.message) || error);
+        return null;
     }
 });
 //# sourceMappingURL=adminPanelFunctions.js.map

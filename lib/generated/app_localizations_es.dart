@@ -9823,6 +9823,19 @@ class AppLocalizationsEs extends AppLocalizations {
       'Se requiere permiso del micrófono';
 
   @override
+  String get voiceMessageTooShort =>
+      'Mantén pulsado para grabar, suelta para enviar';
+
+  @override
+  String get voiceSlideToCancel => '‹ Desliza para cancelar';
+
+  @override
+  String get voiceReleaseToCancel => 'Suelta para cancelar';
+
+  @override
+  String get voiceFailedToSend => 'No se pudo enviar el mensaje de voz';
+
+  @override
   String get voiceRecordAgain => 'Grabar de Nuevo';
 
   @override
