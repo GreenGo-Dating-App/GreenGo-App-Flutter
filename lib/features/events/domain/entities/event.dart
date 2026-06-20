@@ -259,6 +259,10 @@ class EventAttendee extends Equatable {
     required this.userName,
     required this.status, required this.rsvpDate, this.userPhotoUrl,
     this.isApproved = false,
+    this.isInvisible = false,
+    this.isAnonymous = false,
+    this.muteNotifications = false,
+    this.visibleToOrganizerOnly = false,
   });
   final String id;
   final String eventId;
@@ -268,6 +272,55 @@ class EventAttendee extends Equatable {
   final RSVPStatus status;
   final DateTime rsvpDate;
   final bool isApproved;
+
+  // ---- Attendee privacy controls (more control for the user) ----
+  /// Hidden from everyone's attendee roster (still counted by the organizer).
+  final bool isInvisible;
+  /// Shown without name/photo ("Someone") when visible to others.
+  final bool isAnonymous;
+  /// Opt out of event broadcasts / notifications.
+  final bool muteNotifications;
+  /// Invisible to other attendees, but the organizer can still see this RSVP.
+  final bool visibleToOrganizerOnly;
+
+  /// Whether this RSVP should be shown to [viewerId] given the [organizerId].
+  bool isVisibleTo(String viewerId, String organizerId) {
+    if (viewerId == userId) return true; // always see yourself
+    if (viewerId == organizerId) return true; // organizer sees everyone
+    if (isInvisible || visibleToOrganizerOnly) return false;
+    return true;
+  }
+
+  /// Display name honoring anonymity (use for non-self, non-organizer viewers).
+  String displayNameFor(String viewerId, String organizerId) {
+    if (viewerId == userId || viewerId == organizerId) return userName;
+    return isAnonymous ? 'Someone' : userName;
+  }
+
+  EventAttendee copyWith({
+    RSVPStatus? status,
+    bool? isApproved,
+    bool? isInvisible,
+    bool? isAnonymous,
+    bool? muteNotifications,
+    bool? visibleToOrganizerOnly,
+  }) {
+    return EventAttendee(
+      id: id,
+      eventId: eventId,
+      userId: userId,
+      userName: userName,
+      userPhotoUrl: userPhotoUrl,
+      status: status ?? this.status,
+      rsvpDate: rsvpDate,
+      isApproved: isApproved ?? this.isApproved,
+      isInvisible: isInvisible ?? this.isInvisible,
+      isAnonymous: isAnonymous ?? this.isAnonymous,
+      muteNotifications: muteNotifications ?? this.muteNotifications,
+      visibleToOrganizerOnly:
+          visibleToOrganizerOnly ?? this.visibleToOrganizerOnly,
+    );
+  }
 
   @override
   List<Object?> get props => [
@@ -279,5 +332,9 @@ class EventAttendee extends Equatable {
         status,
         rsvpDate,
         isApproved,
+        isInvisible,
+        isAnonymous,
+        muteNotifications,
+        visibleToOrganizerOnly,
       ];
 }
