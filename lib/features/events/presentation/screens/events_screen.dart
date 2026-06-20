@@ -10,6 +10,7 @@ import '../../domain/entities/event.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
+import '../widgets/share_event_sheet.dart';
 import 'event_chat_screen.dart';
 
 /// Events Screen - Discover local events and activities
@@ -882,6 +883,16 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
+              // Share event to chats / groups
+              IconButton(
+                icon: const Icon(Icons.share, color: AppColors.richGold),
+                onPressed: () => showShareEventSheet(
+                  context,
+                  event: event,
+                  currentUserId: currentUserId,
+                ),
+                tooltip: AppLocalizations.of(context)!.eventShare,
+              ),
               // Group Chat button
               IconButton(
                 icon: const Icon(Icons.chat, color: AppColors.richGold),

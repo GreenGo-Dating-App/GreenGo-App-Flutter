@@ -3642,5 +3642,10 @@
   "chatLocationDenied": "É necessária a permissão de localização para partilhar a tua posição",
   "chatOpenInMaps": "Abrir no Maps",
   "eventsSearchHint": "Pesquisar por país, cidade ou nome",
-  "eventsSortPopular": "Popular"
+  "eventsSortPopular": "Popular",
+  "eventViewEvent": "Ver evento",
+  "eventLoadError": "Não foi possível carregar este evento",
+  "eventShare": "Partilhar evento",
+  "eventShared": "Evento partilhado",
+  "eventShareEmpty": "Ainda não há chats ou grupos para partilhar"
 }

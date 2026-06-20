@@ -5078,5 +5078,10 @@
   "chatLocationDenied": "Location permission is required to share your position",
   "chatOpenInMaps": "Open in Maps",
   "eventsSearchHint": "Search by country, city or name",
-  "eventsSortPopular": "Popular"
+  "eventsSortPopular": "Popular",
+  "eventViewEvent": "View event",
+  "eventLoadError": "Couldn't load this event",
+  "eventShare": "Share event",
+  "eventShared": "Event shared",
+  "eventShareEmpty": "No chats or groups to share with yet"
 }

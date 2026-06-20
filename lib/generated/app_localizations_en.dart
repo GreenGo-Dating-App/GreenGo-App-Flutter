@@ -10647,4 +10647,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventViewEvent => 'View event';
+
+  @override
+  String get eventLoadError => 'Couldn\'t load this event';
+
+  @override
+  String get eventShare => 'Share event';
+
+  @override
+  String get eventShared => 'Event shared';
+
+  @override
+  String get eventShareEmpty => 'No chats or groups to share with yet';
 }

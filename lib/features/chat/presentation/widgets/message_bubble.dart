@@ -8,6 +8,7 @@ import 'package:video_player/video_player.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/chat_learning_service.dart';
@@ -958,6 +959,13 @@ class _MessageBubbleState extends State<MessageBubble> {
               ),
             ],
           ),
+        );
+
+      case MessageType.event:
+        return EventMessageCard(
+          metadata: message.metadata,
+          currentUserId: widget.currentUserId ?? '',
+          onDark: isCurrentUser,
         );
 
       default:
