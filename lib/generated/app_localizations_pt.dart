@@ -10641,92 +10641,106 @@ class AppLocalizationsPt extends AppLocalizations {
   String get continueToApp => 'Continuar';
 
   @override
-  String get groupNewGroup => 'New group';
+  String get groupNewGroup => 'Novo grupo';
 
   @override
-  String get groupCreate => 'Create';
+  String get groupCreate => 'Criar';
 
   @override
-  String get groupNameLabel => 'Group name';
+  String get groupNameLabel => 'Nome do grupo';
 
   @override
   String groupSelectedCount(int count) {
-    return '$count selected';
+    return '$count selecionados';
   }
 
   @override
-  String get groupInviteByNickname => 'Invite by nickname';
+  String get groupInviteByNickname => 'Convidar por alcunha';
 
   @override
-  String get groupNicknameHint => 'Enter a nickname';
+  String get groupNicknameHint => 'Introduza uma alcunha';
 
   @override
-  String get groupNoContacts => 'No contacts to add yet';
+  String get groupNoContacts => 'Ainda não há contactos para adicionar';
 
   @override
-  String get groupNoOneFound => 'No one found with that nickname';
+  String get groupNoOneFound => 'Ninguém encontrado com essa alcunha';
 
   @override
-  String get groupAlreadyAdded => 'Already added';
+  String get groupAlreadyAdded => 'Já adicionado';
 
   @override
   String groupAddedCount(int count) {
-    return 'Added $count';
+    return '$count adicionados';
   }
 
   @override
-  String get groupSearchFailed => 'Search failed';
+  String get groupSearchFailed => 'A pesquisa falhou';
 
   @override
-  String get groupInfo => 'Group info';
+  String get groupInfo => 'Informações do grupo';
 
   @override
   String groupMembersCount(int count) {
-    return '$count members';
+    return '$count membros';
   }
 
   @override
   String get groupAdmin => 'Admin';
 
   @override
-  String get groupYou => 'You';
+  String get groupYou => 'Tu';
 
   @override
-  String get groupLeave => 'Leave group';
+  String get groupLeave => 'Sair do grupo';
 
   @override
-  String get groupLeaveConfirmTitle => 'Leave group?';
+  String get groupLeaveConfirmTitle => 'Sair do grupo?';
 
   @override
   String get groupLeaveConfirmBody =>
-      'You will stop receiving messages from this group.';
+      'Deixarás de receber mensagens deste grupo.';
 
   @override
-  String get groupCancel => 'Cancel';
+  String get groupCancel => 'Cancelar';
 
   @override
-  String get groupLeaveAction => 'Leave';
+  String get groupLeaveAction => 'Sair';
 
   @override
-  String get groupReport => 'Report group';
+  String get groupReport => 'Denunciar grupo';
 
   @override
-  String get groupReportConfirmBody => 'Report this group to our safety team?';
+  String get groupReportConfirmBody =>
+      'Denunciar este grupo à nossa equipa de segurança?';
 
   @override
-  String get groupReportAction => 'Report';
+  String get groupReportAction => 'Denunciar';
 
   @override
-  String get groupReportSubmitted => 'Report submitted';
+  String get groupReportSubmitted => 'Denúncia enviada';
 
   @override
-  String get groupMessageHint => 'Message…';
+  String get groupMessageHint => 'Mensagem…';
 
   @override
-  String get groupSayHello => 'Say hello to the group 👋';
+  String get groupSayHello => 'Diz olá ao grupo 👋';
 
   @override
-  String get groupLoadError => 'Couldn\'t load this group';
+  String get groupLoadError => 'Não foi possível carregar este grupo';
+
+  @override
+  String get chatLocation => 'Localização';
+
+  @override
+  String get chatShareLocation => 'Partilhar localização';
+
+  @override
+  String get chatLocationDenied =>
+      'É necessária a permissão de localização para partilhar a tua posição';
+
+  @override
+  String get chatOpenInMaps => 'Abrir no Maps';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21066,4 +21080,106 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get continueToApp => 'Continuar';
+
+  @override
+  String get groupNewGroup => 'Novo grupo';
+
+  @override
+  String get groupCreate => 'Criar';
+
+  @override
+  String get groupNameLabel => 'Nome do grupo';
+
+  @override
+  String groupSelectedCount(int count) {
+    return '$count selecionados';
+  }
+
+  @override
+  String get groupInviteByNickname => 'Convidar por apelido';
+
+  @override
+  String get groupNicknameHint => 'Digite um apelido';
+
+  @override
+  String get groupNoContacts => 'Ainda não há contatos para adicionar';
+
+  @override
+  String get groupNoOneFound => 'Ninguém encontrado com esse apelido';
+
+  @override
+  String get groupAlreadyAdded => 'Já adicionado';
+
+  @override
+  String groupAddedCount(int count) {
+    return '$count adicionados';
+  }
+
+  @override
+  String get groupSearchFailed => 'A busca falhou';
+
+  @override
+  String get groupInfo => 'Informações do grupo';
+
+  @override
+  String groupMembersCount(int count) {
+    return '$count membros';
+  }
+
+  @override
+  String get groupAdmin => 'Admin';
+
+  @override
+  String get groupYou => 'Você';
+
+  @override
+  String get groupLeave => 'Sair do grupo';
+
+  @override
+  String get groupLeaveConfirmTitle => 'Sair do grupo?';
+
+  @override
+  String get groupLeaveConfirmBody =>
+      'Você deixará de receber mensagens deste grupo.';
+
+  @override
+  String get groupCancel => 'Cancelar';
+
+  @override
+  String get groupLeaveAction => 'Sair';
+
+  @override
+  String get groupReport => 'Denunciar grupo';
+
+  @override
+  String get groupReportConfirmBody =>
+      'Denunciar este grupo à nossa equipe de segurança?';
+
+  @override
+  String get groupReportAction => 'Denunciar';
+
+  @override
+  String get groupReportSubmitted => 'Denúncia enviada';
+
+  @override
+  String get groupMessageHint => 'Mensagem…';
+
+  @override
+  String get groupSayHello => 'Diga olá ao grupo 👋';
+
+  @override
+  String get groupLoadError => 'Não foi possível carregar este grupo';
+
+  @override
+  String get chatLocation => 'Localização';
+
+  @override
+  String get chatShareLocation => 'Compartilhar localização';
+
+  @override
+  String get chatLocationDenied =>
+      'É necessária a permissão de localização para compartilhar sua posição';
+
+  @override
+  String get chatOpenInMaps => 'Abrir no Maps';
 }

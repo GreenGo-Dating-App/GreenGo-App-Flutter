@@ -10667,90 +10667,104 @@ class AppLocalizationsEs extends AppLocalizations {
   String get continueToApp => 'Continuar';
 
   @override
-  String get groupNewGroup => 'New group';
+  String get groupNewGroup => 'Nuevo grupo';
 
   @override
-  String get groupCreate => 'Create';
+  String get groupCreate => 'Crear';
 
   @override
-  String get groupNameLabel => 'Group name';
+  String get groupNameLabel => 'Nombre del grupo';
 
   @override
   String groupSelectedCount(int count) {
-    return '$count selected';
+    return '$count seleccionados';
   }
 
   @override
-  String get groupInviteByNickname => 'Invite by nickname';
+  String get groupInviteByNickname => 'Invitar por apodo';
 
   @override
-  String get groupNicknameHint => 'Enter a nickname';
+  String get groupNicknameHint => 'Escribe un apodo';
 
   @override
-  String get groupNoContacts => 'No contacts to add yet';
+  String get groupNoContacts => 'Aún no hay contactos para añadir';
 
   @override
-  String get groupNoOneFound => 'No one found with that nickname';
+  String get groupNoOneFound => 'No se encontró a nadie con ese apodo';
 
   @override
-  String get groupAlreadyAdded => 'Already added';
+  String get groupAlreadyAdded => 'Ya añadido';
 
   @override
   String groupAddedCount(int count) {
-    return 'Added $count';
+    return '$count añadidos';
   }
 
   @override
-  String get groupSearchFailed => 'Search failed';
+  String get groupSearchFailed => 'La búsqueda falló';
 
   @override
-  String get groupInfo => 'Group info';
+  String get groupInfo => 'Información del grupo';
 
   @override
   String groupMembersCount(int count) {
-    return '$count members';
+    return '$count miembros';
   }
 
   @override
-  String get groupAdmin => 'Admin';
+  String get groupAdmin => 'Administrador';
 
   @override
-  String get groupYou => 'You';
+  String get groupYou => 'Tú';
 
   @override
-  String get groupLeave => 'Leave group';
+  String get groupLeave => 'Salir del grupo';
 
   @override
-  String get groupLeaveConfirmTitle => 'Leave group?';
+  String get groupLeaveConfirmTitle => '¿Salir del grupo?';
 
   @override
   String get groupLeaveConfirmBody =>
-      'You will stop receiving messages from this group.';
+      'Dejarás de recibir mensajes de este grupo.';
 
   @override
-  String get groupCancel => 'Cancel';
+  String get groupCancel => 'Cancelar';
 
   @override
-  String get groupLeaveAction => 'Leave';
+  String get groupLeaveAction => 'Salir';
 
   @override
-  String get groupReport => 'Report group';
+  String get groupReport => 'Reportar grupo';
 
   @override
-  String get groupReportConfirmBody => 'Report this group to our safety team?';
+  String get groupReportConfirmBody =>
+      '¿Reportar este grupo a nuestro equipo de seguridad?';
 
   @override
-  String get groupReportAction => 'Report';
+  String get groupReportAction => 'Reportar';
 
   @override
-  String get groupReportSubmitted => 'Report submitted';
+  String get groupReportSubmitted => 'Reporte enviado';
 
   @override
-  String get groupMessageHint => 'Message…';
+  String get groupMessageHint => 'Mensaje…';
 
   @override
-  String get groupSayHello => 'Say hello to the group 👋';
+  String get groupSayHello => 'Saluda al grupo 👋';
 
   @override
-  String get groupLoadError => 'Couldn\'t load this group';
+  String get groupLoadError => 'No se pudo cargar este grupo';
+
+  @override
+  String get chatLocation => 'Ubicación';
+
+  @override
+  String get chatShareLocation => 'Compartir ubicación';
+
+  @override
+  String get chatLocationDenied =>
+      'Se requiere permiso de ubicación para compartir tu posición';
+
+  @override
+  String get chatOpenInMaps => 'Abrir en Mapas';
 }

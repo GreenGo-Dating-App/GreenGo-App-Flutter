@@ -5072,5 +5072,9 @@
   "groupReportSubmitted": "Report submitted",
   "groupMessageHint": "Message…",
   "groupSayHello": "Say hello to the group 👋",
-  "groupLoadError": "Couldn't load this group"
+  "groupLoadError": "Couldn't load this group",
+  "chatLocation": "Location",
+  "chatShareLocation": "Share location",
+  "chatLocationDenied": "Location permission is required to share your position",
+  "chatOpenInMaps": "Open in Maps"
 }

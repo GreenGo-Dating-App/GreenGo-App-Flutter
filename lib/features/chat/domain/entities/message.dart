@@ -197,6 +197,7 @@ enum MessageType {
   system,
   albumShare,
   albumRevoke,
+  location,
 }
 
 /// Extension for MessageStatus
@@ -256,6 +257,8 @@ extension MessageTypeExtension on MessageType {
         return 'album_share';
       case MessageType.albumRevoke:
         return 'album_revoke';
+      case MessageType.location:
+        return 'location';
     }
   }
 
@@ -279,6 +282,8 @@ extension MessageTypeExtension on MessageType {
         return MessageType.albumShare;
       case 'album_revoke':
         return MessageType.albumRevoke;
+      case 'location':
+        return MessageType.location;
       default:
         return MessageType.text;
     }

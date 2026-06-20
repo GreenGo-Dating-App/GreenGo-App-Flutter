@@ -18,6 +18,7 @@ import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
@@ -673,6 +674,27 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
+  /// Capture and send the user's current location as a message.
+  Future<void> _sendLocation(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final position = await const LocationShareService().getCurrentPosition();
+    if (!mounted) return;
+    if (position == null) {
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.chatLocationDenied),
+        backgroundColor: AppColors.errorRed,
+      ));
+      return;
+    }
+    _chatBloc.add(ChatMessageSent(
+      content: '${position.latitude},${position.longitude}',
+      type: MessageType.location,
+      metadata: LocationShareService.metadataFor(
+          position.latitude, position.longitude),
+    ));
+  }
+
   /// Show attachment options bottom sheet
   void _showAttachmentOptions(BuildContext context) {
     final parentContext = context;
@@ -754,6 +776,13 @@ class _ChatScreenState extends State<ChatScreen> {
                   label: AppLocalizations.of(sheetCtx)!.chatAttachRecord,
                   color: Colors.red,
                   onTap: () => _pickVideo(parentContext, ImageSource.camera),
+                ),
+                _buildAttachmentOption(
+                  sheetCtx,
+                  icon: Icons.location_on,
+                  label: AppLocalizations.of(sheetCtx)!.chatShareLocation,
+                  color: Colors.green,
+                  onTap: () => _sendLocation(parentContext),
                 ),
               ],
             ),

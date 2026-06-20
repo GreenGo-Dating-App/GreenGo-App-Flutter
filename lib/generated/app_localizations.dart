@@ -18929,6 +18929,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t load this group'**
   String get groupLoadError;
+
+  /// No description provided for @chatLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get chatLocation;
+
+  /// No description provided for @chatShareLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Share location'**
+  String get chatShareLocation;
+
+  /// No description provided for @chatLocationDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is required to share your position'**
+  String get chatLocationDenied;
+
+  /// No description provided for @chatOpenInMaps.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get chatOpenInMaps;
 }
 
 class _AppLocalizationsDelegate
