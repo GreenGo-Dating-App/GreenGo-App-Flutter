@@ -40,6 +40,7 @@ import '../../../gamification/presentation/screens/achievements_screen.dart';
 import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/screens/personal_stats_screen.dart';
+import '../../../gamification/presentation/screens/progress_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
@@ -391,12 +392,12 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToCoinShop(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      // Ranking / Leaderboard (moved here from the bottom nav)
+                      // Progress & Growth (level, achievements, challenges, ranking)
                       EditSectionCard(
-                        title: AppLocalizations.of(context)!.leaderboardTitle,
+                        title: AppLocalizations.of(context)!.profileProgressGrowth,
                         subtitle: AppLocalizations.of(context)!.profileRankingSubtitle,
-                        icon: Icons.leaderboard,
-                        onTap: () => _navigateToLeaderboard(context, activeProfile),
+                        icon: Icons.trending_up,
+                        onTap: () => _navigateToProgress(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
                       // Restart Discovery
@@ -828,6 +829,17 @@ class EditProfileScreen extends StatelessWidget {
             ..add(LoadCoinBalance(profile.userId))
             ..add(const LoadAvailablePackages()),
           child: CoinShopScreen(userId: profile.userId),
+        ),
+      ),
+    );
+  }
+
+  void _navigateToProgress(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider(
+          create: (context) => di.sl<GamificationBloc>(),
+          child: ProgressScreen(userId: currentProfile.userId),
         ),
       ),
     );

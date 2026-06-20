@@ -3672,5 +3672,6 @@
   "eventsLinkLabelHint": "Bezeichnung (optional)",
   "eventsPickLocation": "Ort wählen",
   "eventsSearchAddress": "Adresse suchen",
-  "eventsUseThisLocation": "Diesen Ort verwenden"
+  "eventsUseThisLocation": "Diesen Ort verwenden",
+  "profileProgressGrowth": "Fortschritt & Wachstum"
 }
