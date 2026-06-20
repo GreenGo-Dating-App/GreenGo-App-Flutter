@@ -3659,5 +3659,11 @@
   "eventBroadcastTooltip": "An alle senden",
   "eventBroadcastHint": "Ankündigung an alle Teilnehmer…",
   "eventBroadcastLabel": "Ankündigung",
-  "eventsFeatured": "Empfohlen"
+  "eventsFeatured": "Empfohlen",
+  "eventsInsufficientCoins": "Nicht genügend Münzen",
+  "eventsConfirmAction": "Bestätigen",
+  "eventsBoost": "Boosten",
+  "eventsBoosted": "Event hervorgehoben!",
+  "eventsJoinForCoins": "An diesem Event für {cost} Münzen teilnehmen?",
+  "eventsBoostConfirm": "Dieses Event für {cost} Münzen 7 Tage lang hervorheben?"
 }

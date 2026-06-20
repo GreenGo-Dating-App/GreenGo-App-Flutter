@@ -5,7 +5,9 @@ import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/tier_limits_service.dart';
+import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
 import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
@@ -924,6 +926,15 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
+              // Boost (feature) — organizer only, if not already featured
+              if (event.organizerId == currentUserId &&
+                  !event.isCurrentlyFeatured)
+                IconButton(
+                  icon: const Icon(Icons.rocket_launch,
+                      color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsBoost,
+                  onPressed: () => _handleBoost(context, event),
+                ),
               // Share event to chats / groups
               IconButton(
                 icon: const Icon(Icons.share, color: AppColors.richGold),
@@ -1156,63 +1167,72 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  SizedBox(
-                    height: 80,
-                    child: event.attendees
-                            .where((a) => a.status == RSVPStatus.going)
-                            .isEmpty
-                        ? Center(
-                            child: Text(
-                              AppLocalizations.of(context)!.eventsNoAttendeesYet,
-                              style: const TextStyle(
-                                color: AppColors.textSecondary,
-                                fontSize: 13,
-                              ),
-                            ),
-                          )
-                        : ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: event.attendees
-                                .where((a) => a.status == RSVPStatus.going)
-                                .length,
-                            itemBuilder: (context, index) {
-                              final attendee = event.attendees
-                                  .where((a) => a.status == RSVPStatus.going)
-                                  .elementAt(index);
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: Column(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 28,
-                                      backgroundImage:
-                                          attendee.userPhotoUrl != null
-                                              ? NetworkImage(
-                                                  attendee.userPhotoUrl!)
-                                              : null,
-                                      backgroundColor:
-                                          AppColors.backgroundCard,
-                                      child: attendee.userPhotoUrl == null
-                                          ? Text(
-                                              attendee.userName[0]
-                                                  .toUpperCase(),
-                                            )
-                                          : null,
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      attendee.userName.split(' ').first,
-                                      style: const TextStyle(
-                                        color: AppColors.textSecondary,
-                                        fontSize: 11,
-                                      ),
-                                    ),
-                                  ],
+                  Builder(builder: (context) {
+                    // Respect attendee privacy: hide invisible / organizer-only
+                    // attendees from everyone except themselves and the organizer.
+                    final visibleGoing = event.attendees
+                        .where((a) =>
+                            a.status == RSVPStatus.going &&
+                            a.isVisibleTo(currentUserId, event.organizerId))
+                        .toList();
+                    return SizedBox(
+                      height: 80,
+                      child: visibleGoing.isEmpty
+                          ? Center(
+                              child: Text(
+                                AppLocalizations.of(context)!
+                                    .eventsNoAttendeesYet,
+                                style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 13,
                                 ),
-                              );
-                            },
-                          ),
-                  ),
+                              ),
+                            )
+                          : ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: visibleGoing.length,
+                              itemBuilder: (context, index) {
+                                final attendee = visibleGoing[index];
+                                final name = attendee.displayNameFor(
+                                    currentUserId, event.organizerId);
+                                final anon = attendee.isAnonymous &&
+                                    currentUserId != attendee.userId &&
+                                    currentUserId != event.organizerId;
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 12),
+                                  child: Column(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 28,
+                                        backgroundImage: (!anon &&
+                                                attendee.userPhotoUrl != null)
+                                            ? NetworkImage(
+                                                attendee.userPhotoUrl!)
+                                            : null,
+                                        backgroundColor:
+                                            AppColors.backgroundCard,
+                                        child: (anon ||
+                                                attendee.userPhotoUrl == null)
+                                            ? Text(name.isNotEmpty
+                                                ? name[0].toUpperCase()
+                                                : '?')
+                                            : null,
+                                      ),
+                                      const SizedBox(height: 4),
+                                      Text(
+                                        name.split(' ').first,
+                                        style: const TextStyle(
+                                          color: AppColors.textSecondary,
+                                          fontSize: 11,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                    );
+                  }),
                   const SizedBox(height: 100),
                 ],
               ),
@@ -1253,16 +1273,8 @@ class EventDetailsScreen extends StatelessWidget {
               const SizedBox(width: 16),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: event.isFull
-                      ? null
-                      : () {
-                          context.read<EventsBloc>().add(RsvpEvent(
-                                eventId: event.id,
-                                userId: currentUserId,
-                                status: RSVPStatus.going.name,
-                              ));
-                          Navigator.pop(context);
-                        },
+                  onPressed:
+                      event.isFull ? null : () => _handleJoin(context, event),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.richGold,
                     foregroundColor: AppColors.deepBlack,
@@ -1280,6 +1292,107 @@ class EventDetailsScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Join a (possibly paid) event — charges coins for paid events first.
+  Future<void> _handleJoin(BuildContext context, Event event) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final bloc = context.read<EventsBloc>();
+
+    if (!event.isFree && (event.price ?? 0) > 0) {
+      final cost = event.price!.round();
+      final afford =
+          await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
+      if (!context.mounted) return;
+      if (!afford.fold((_) => false, (v) => v)) {
+        messenger.showSnackBar(
+            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+        return;
+      }
+      final confirmed = await _confirmCoinSpend(
+          context, l10n.eventsJoinEvent, l10n.eventsJoinForCoins(cost));
+      if (confirmed != true || !context.mounted) return;
+      final charge = await sl<PurchaseFeature>()(
+        userId: currentUserId,
+        featureName: 'event_rsvp',
+        cost: cost,
+        relatedId: event.id,
+      );
+      if (!context.mounted) return;
+      if (!charge.fold((_) => false, (_) => true)) {
+        messenger.showSnackBar(
+            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+        return;
+      }
+    }
+
+    bloc.add(RsvpEvent(
+      eventId: event.id,
+      userId: currentUserId,
+      status: RSVPStatus.going.name,
+    ));
+    if (context.mounted) Navigator.pop(context);
+  }
+
+  /// Boost (feature) an event for a fixed coin cost (organizer only).
+  Future<void> _handleBoost(BuildContext context, Event event) async {
+    const cost = 100;
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final bloc = context.read<EventsBloc>();
+
+    final afford =
+        await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
+    if (!context.mounted) return;
+    if (!afford.fold((_) => false, (v) => v)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    final confirmed = await _confirmCoinSpend(
+        context, l10n.eventsBoost, l10n.eventsBoostConfirm(cost));
+    if (confirmed != true || !context.mounted) return;
+    final charge = await sl<PurchaseFeature>()(
+      userId: currentUserId,
+      featureName: 'event_boost',
+      cost: cost,
+      relatedId: event.id,
+    );
+    if (!context.mounted) return;
+    if (!charge.fold((_) => false, (_) => true)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    bloc.add(UpdateEvent(
+      event: event.copyWith(
+        isFeatured: true,
+        featuredUntil: DateTime.now().add(const Duration(days: 7)),
+      ),
+    ));
+    messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
+  }
+
+  Future<bool?> _confirmCoinSpend(
+      BuildContext context, String title, String body) {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(title, style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(body, style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsConfirmAction)),
+        ],
       ),
     );
   }

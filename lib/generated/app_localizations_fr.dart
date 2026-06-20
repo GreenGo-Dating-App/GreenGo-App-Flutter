@@ -10878,4 +10878,26 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventsFeatured => 'À la une';
+
+  @override
+  String get eventsInsufficientCoins => 'Pas assez de pièces';
+
+  @override
+  String get eventsConfirmAction => 'Confirmer';
+
+  @override
+  String get eventsBoost => 'Booster';
+
+  @override
+  String get eventsBoosted => 'Événement mis en avant !';
+
+  @override
+  String eventsJoinForCoins(int cost) {
+    return 'Rejoindre cet événement pour $cost pièces ?';
+  }
+
+  @override
+  String eventsBoostConfirm(int cost) {
+    return 'Mettre cet événement en avant pour $cost pièces pendant 7 jours ?';
+  }
 }

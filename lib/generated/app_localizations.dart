@@ -19079,6 +19079,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Featured'**
   String get eventsFeatured;
+
+  /// No description provided for @eventsInsufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough coins'**
+  String get eventsInsufficientCoins;
+
+  /// No description provided for @eventsConfirmAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get eventsConfirmAction;
+
+  /// No description provided for @eventsBoost.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost'**
+  String get eventsBoost;
+
+  /// No description provided for @eventsBoosted.
+  ///
+  /// In en, this message translates to:
+  /// **'Event featured!'**
+  String get eventsBoosted;
+
+  /// No description provided for @eventsJoinForCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Join this event for {cost} coins?'**
+  String eventsJoinForCoins(int cost);
+
+  /// No description provided for @eventsBoostConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature this event for {cost} coins for 7 days?'**
+  String eventsBoostConfirm(int cost);
 }
 
 class _AppLocalizationsDelegate

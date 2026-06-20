@@ -3659,5 +3659,11 @@
   "eventBroadcastTooltip": "Diffuser à tous",
   "eventBroadcastHint": "Annonce à tous les participants…",
   "eventBroadcastLabel": "Annonce",
-  "eventsFeatured": "À la une"
+  "eventsFeatured": "À la une",
+  "eventsInsufficientCoins": "Pas assez de pièces",
+  "eventsConfirmAction": "Confirmer",
+  "eventsBoost": "Booster",
+  "eventsBoosted": "Événement mis en avant !",
+  "eventsJoinForCoins": "Rejoindre cet événement pour {cost} pièces ?",
+  "eventsBoostConfirm": "Mettre cet événement en avant pour {cost} pièces pendant 7 jours ?"
 }

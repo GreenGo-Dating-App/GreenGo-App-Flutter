@@ -5099,5 +5099,13 @@
   "eventBroadcastTooltip": "Broadcast to everyone",
   "eventBroadcastHint": "Announcement to all attendees…",
   "eventBroadcastLabel": "Announcement",
-  "eventsFeatured": "Featured"
+  "eventsFeatured": "Featured",
+  "eventsInsufficientCoins": "Not enough coins",
+  "eventsConfirmAction": "Confirm",
+  "eventsBoost": "Boost",
+  "eventsBoosted": "Event featured!",
+  "eventsJoinForCoins": "Join this event for {cost} coins?",
+  "@eventsJoinForCoins": { "placeholders": { "cost": { "type": "int" } } },
+  "eventsBoostConfirm": "Feature this event for {cost} coins for 7 days?",
+  "@eventsBoostConfirm": { "placeholders": { "cost": { "type": "int" } } }
 }
