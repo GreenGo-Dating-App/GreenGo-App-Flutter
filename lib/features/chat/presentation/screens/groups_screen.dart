@@ -114,6 +114,7 @@ class GroupsScreen extends StatelessWidget {
                       groupId: g.conversationId,
                       groupName: name,
                       currentUserId: userId,
+                      groupPhotoUrl: g.groupInfo?.photoUrl,
                     ),
                   ),
                 );

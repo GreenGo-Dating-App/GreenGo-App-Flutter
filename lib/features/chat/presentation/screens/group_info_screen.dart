@@ -1,7 +1,12 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/usecases/get_group_members.dart';
 import '../../domain/usecases/group_membership.dart';
@@ -52,7 +57,28 @@ class GroupInfoScreen extends StatelessWidget {
           );
           final isAdmin = members
               .any((m) => m.userId == currentUserId && m.isAdmin);
-          return ListView(
+          return FutureBuilder<Map<String, UserBrief>>(
+            future: UserDirectoryService.instance
+                .resolve(members.map((m) => m.userId)),
+            builder: (context, dirSnap) {
+              final dir = dirSnap.data ?? const <String, UserBrief>{};
+              return _buildList(
+                  context, l10n, members, isAdmin, dir);
+            },
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildList(
+    BuildContext context,
+    AppLocalizations l10n,
+    List<GroupMember> members,
+    bool isAdmin,
+    Map<String, UserBrief> dir,
+  ) {
+    return ListView(
             children: [
               const SizedBox(height: 8),
               Padding(
@@ -62,20 +88,32 @@ class GroupInfoScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
-              ...members.map((m) => ListTile(
-                    leading: CircleAvatar(
-                      child: Text(
-                        m.userId.isNotEmpty ? m.userId[0].toUpperCase() : '?',
-                      ),
-                    ),
-                    title: Text(
-                      m.userId == currentUserId ? l10n.groupYou : m.userId,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    trailing: m.isAdmin
-                        ? Chip(label: Text(l10n.groupAdmin))
+              ...members.map((m) {
+                final brief = dir[m.userId];
+                final displayName = m.userId == currentUserId
+                    ? l10n.groupYou
+                    : (brief?.name ?? m.userId);
+                final photo = brief?.photoUrl;
+                return ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: (photo != null && photo.isNotEmpty)
+                        ? NetworkImage(photo)
                         : null,
-                  )),
+                    child: (photo == null || photo.isEmpty)
+                        ? Text(displayName.isNotEmpty
+                            ? displayName[0].toUpperCase()
+                            : '?')
+                        : null,
+                  ),
+                  title: Text(
+                    displayName,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: m.isAdmin
+                      ? Chip(label: Text(l10n.groupAdmin))
+                      : null,
+                );
+              }),
               const Divider(),
               if (isAdmin)
                 ListTile(
@@ -83,6 +121,13 @@ class GroupInfoScreen extends StatelessWidget {
                       color: Theme.of(context).colorScheme.primary),
                   title: Text(l10n.groupEditName),
                   onTap: () => _editGroupName(context),
+                ),
+              if (isAdmin)
+                ListTile(
+                  leading: Icon(Icons.add_a_photo_outlined,
+                      color: Theme.of(context).colorScheme.primary),
+                  title: Text(l10n.groupChangePhoto),
+                  onTap: () => _changeGroupPhoto(context),
                 ),
               ListTile(
                 leading: const Icon(Icons.flag_outlined, color: Colors.orange),
@@ -102,9 +147,29 @@ class GroupInfoScreen extends StatelessWidget {
               ),
             ],
           );
-        },
-      ),
+  }
+
+  Future<void> _changeGroupPhoto(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final picked = await ImagePicker()
+        .pickImage(source: ImageSource.gallery, imageQuality: 80);
+    if (picked == null) return;
+    messenger.showSnackBar(
+      SnackBar(content: Text(l10n.groupUploadingPhoto)),
     );
+    try {
+      final url = await sl<ProfileRemoteDataSource>()
+          .uploadPhoto(currentUserId, File(picked.path), folder: 'groups');
+      await sl<UpdateGroupInfo>()(groupId: groupId, photoUrl: url);
+      messenger.showSnackBar(
+        SnackBar(content: Text(l10n.groupPhotoUpdated)),
+      );
+    } catch (_) {
+      messenger.showSnackBar(
+        SnackBar(content: Text(l10n.groupPhotoUpdateFailed)),
+      );
+    }
   }
 
   Future<void> _editGroupName(BuildContext context) async {

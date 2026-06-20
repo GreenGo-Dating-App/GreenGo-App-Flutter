@@ -10898,4 +10898,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get groupEditName => 'Editar nombre del grupo';
+
+  @override
+  String get groupChangePhoto => 'Cambiar foto del grupo';
+
+  @override
+  String get groupUploadingPhoto => 'Subiendo foto…';
+
+  @override
+  String get groupPhotoUpdated => 'Foto del grupo actualizada';
+
+  @override
+  String get groupPhotoUpdateFailed =>
+      'No se pudo actualizar la foto del grupo';
 }

@@ -10872,6 +10872,18 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get groupEditName => 'Editar nome do grupo';
+
+  @override
+  String get groupChangePhoto => 'Alterar foto do grupo';
+
+  @override
+  String get groupUploadingPhoto => 'Enviando foto…';
+
+  @override
+  String get groupPhotoUpdated => 'Foto do grupo atualizada';
+
+  @override
+  String get groupPhotoUpdateFailed => 'Falha ao atualizar a foto do grupo';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21444,4 +21456,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get groupEditName => 'Editar nome do grupo';
+
+  @override
+  String get groupChangePhoto => 'Alterar foto do grupo';
+
+  @override
+  String get groupUploadingPhoto => 'Enviando foto…';
+
+  @override
+  String get groupPhotoUpdated => 'Foto do grupo atualizada';
+
+  @override
+  String get groupPhotoUpdateFailed => 'Falha ao atualizar a foto do grupo';
 }

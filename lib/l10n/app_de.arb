@@ -3679,5 +3679,9 @@
   "eventsUseThisLocation": "Diesen Ort verwenden",
   "profileProgressGrowth": "Fortschritt & Wachstum",
   "eventsEditEvent": "Veranstaltung bearbeiten",
-  "groupEditName": "Gruppenname bearbeiten"
+  "groupEditName": "Gruppenname bearbeiten",
+  "groupChangePhoto": "Gruppenfoto ändern",
+  "groupUploadingPhoto": "Foto wird hochgeladen…",
+  "groupPhotoUpdated": "Gruppenfoto aktualisiert",
+  "groupPhotoUpdateFailed": "Gruppenfoto konnte nicht aktualisiert werden"
 }
