@@ -3655,5 +3655,7 @@
   "eventsAddLink": "Adicionar ligação",
   "tierLimitTitle": "Faz upgrade para criar mais",
   "tierLimitEventsBody": "O teu plano permite {max} eventos. Faz upgrade para criar mais.",
-  "tierLimitGroupsBody": "O teu plano permite {max} grupos. Faz upgrade para criar mais."
+  "tierLimitGroupsBody": "O teu plano permite {max} grupos. Faz upgrade para criar mais.",
+  "groupsTitle": "Grupos",
+  "profileRankingSubtitle": "Ver a classificação global"
 }

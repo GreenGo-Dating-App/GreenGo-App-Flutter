@@ -3653,5 +3653,7 @@
   "eventsAddLink": "Añadir enlace",
   "tierLimitTitle": "Mejora tu plan para crear más",
   "tierLimitEventsBody": "Tu plan permite {max} eventos. Mejóralo para crear más.",
-  "tierLimitGroupsBody": "Tu plan permite {max} grupos. Mejóralo para crear más."
+  "tierLimitGroupsBody": "Tu plan permite {max} grupos. Mejóralo para crear más.",
+  "groupsTitle": "Grupos",
+  "profileRankingSubtitle": "Ver la clasificación global"
 }

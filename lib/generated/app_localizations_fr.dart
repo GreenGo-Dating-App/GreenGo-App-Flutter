@@ -10860,4 +10860,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String tierLimitGroupsBody(int max) {
     return 'Votre offre autorise $max groupes. Améliorez-la pour en créer plus.';
   }
+
+  @override
+  String get groupsTitle => 'Groupes';
+
+  @override
+  String get profileRankingSubtitle => 'Voir le classement mondial';
 }

@@ -10690,4 +10690,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String tierLimitGroupsBody(int max) {
     return 'Your plan allows $max groups. Upgrade to create more.';
   }
+
+  @override
+  String get groupsTitle => 'Groups';
+
+  @override
+  String get profileRankingSubtitle => 'See the global leaderboard';
 }

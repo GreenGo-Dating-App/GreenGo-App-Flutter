@@ -39,6 +39,7 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
+import '../../../chat/presentation/screens/groups_screen.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -222,11 +223,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         },
       ),
       ConversationsScreen(userId: widget.userId, onBadgeDecrement: _decrementBadgeCount),
-      BlocProvider(
-        create: (context) => di.sl<GamificationBloc>()
-          ..add(LoadLeaderboard(userId: widget.userId)),
-        child: LeaderboardScreen(userId: widget.userId),
-      ),
+      GroupsScreen(userId: widget.userId),
       EventsScreen(currentUserId: widget.userId),
       BlocProvider.value(
         value: _profileBloc,
@@ -1358,16 +1355,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               label: AppLocalizations.of(context)!.messages,
             ),
             BottomNavigationBarItem(
-              icon: TourShowcase(
-                showcaseKey: TourKeys.navLeaderboard,
-                title: AppLocalizations.of(context)!.tourNavLeaderboardTitle,
-                description: AppLocalizations.of(context)!.tourNavLeaderboardDesc,
-                gesture: TourGesture.tap,
-                targetPadding: const EdgeInsets.all(6),
-                child: const Icon(Icons.leaderboard_outlined),
-              ),
-              activeIcon: const Icon(Icons.leaderboard),
-              label: AppLocalizations.of(context)!.leaderboardTitle,
+              icon: const Icon(Icons.groups_outlined),
+              activeIcon: const Icon(Icons.groups),
+              label: AppLocalizations.of(context)!.groupsTitle,
             ),
             BottomNavigationBarItem(
               icon: const Icon(Icons.event_outlined),
