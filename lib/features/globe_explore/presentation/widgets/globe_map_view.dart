@@ -9,6 +9,7 @@ import 'package:latlong2/latlong.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
+import '../../../events/domain/entities/event_country_stat.dart';
 import '../../domain/entities/globe_user.dart';
 
 /// Returns the clustering threshold in degrees based on the current zoom level.
@@ -28,6 +29,9 @@ class GlobeMapView extends StatefulWidget {
     required this.data, required this.showMatched, required this.showDiscovery, required this.onPinTapped, required this.onCountryTapped, super.key,
     this.flyToCountry,
     this.onClusterTapped,
+    this.eventStats = const [],
+    this.showEvents = false,
+    this.onEventCountryTapped,
   });
   final GlobeData data;
   final bool showMatched;
@@ -37,6 +41,11 @@ class GlobeMapView extends StatefulWidget {
   final void Function(String countryName, double lat, double lng)
       onCountryTapped;
   final void Function(List<GlobeUser> users)? onClusterTapped;
+
+  /// Per-country event aggregates (for the "Events" globe mode).
+  final List<EventCountryStat> eventStats;
+  final bool showEvents;
+  final void Function(String countryName)? onEventCountryTapped;
 
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
@@ -152,10 +161,55 @@ class _GlobeMapViewState extends State<GlobeMapView>
       }
     }
 
+    // Event markers per country (Events mode).
+    if (widget.showEvents) {
+      for (final stat in widget.eventStats) {
+        final key = countryNameNormalization[stat.country] ?? stat.country;
+        final c = countryCentroids[key];
+        if (c == null) continue;
+        markers.add(_buildEventMarker(stat, LatLng(c[0], c[1])));
+      }
+    }
+
     // Current user always on top, never clustered
     markers.add(_buildCurrentUserMarker(widget.data.currentUser, l10n));
 
     return markers;
+  }
+
+  Marker _buildEventMarker(EventCountryStat stat, LatLng point) {
+    return Marker(
+      point: point,
+      width: 54,
+      height: 54,
+      child: GestureDetector(
+        onTap: () => widget.onEventCountryTapped?.call(stat.country),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.orange.withValues(alpha: 0.92),
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 2),
+            boxShadow: const [
+              BoxShadow(color: Colors.black54, blurRadius: 6),
+            ],
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.event, color: Colors.white, size: 18),
+              Text(
+                '${stat.count}',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   /// Groups users whose pin coordinates are within [threshold] degrees.
