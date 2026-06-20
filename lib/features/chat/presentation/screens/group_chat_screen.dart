@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/location_share_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
@@ -87,6 +89,23 @@ class _GroupChatViewState extends State<_GroupChatView> {
     _controller.clear();
   }
 
+  Future<void> _sendLocation(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
+    final position = await const LocationShareService().getCurrentPosition();
+    if (position == null) {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.chatLocationDenied)));
+      return;
+    }
+    bloc.add(GroupChatMessageSent(
+      content: '${position.latitude},${position.longitude}',
+      type: MessageType.location,
+      metadata:
+          LocationShareService.metadataFor(position.latitude, position.longitude),
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -170,7 +189,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
                         },
                       ),
               ),
-              _InputBar(controller: _controller, onSend: () => _send(context)),
+              _InputBar(
+                controller: _controller,
+                onSend: () => _send(context),
+                onAttachLocation: () => _sendLocation(context),
+              ),
             ],
           );
         },
@@ -232,14 +255,17 @@ class _GroupMessageBubble extends StatelessWidget {
                   ),
                 ),
               ),
-            Text(
-              message.content,
-              style: TextStyle(
-                color: isMine
-                    ? theme.colorScheme.onPrimary
-                    : theme.colorScheme.onSurface,
+            if (message.type == MessageType.location)
+              _LocationContent(message: message, isMine: isMine)
+            else
+              Text(
+                message.content,
+                style: TextStyle(
+                  color: isMine
+                      ? theme.colorScheme.onPrimary
+                      : theme.colorScheme.onSurface,
+                ),
               ),
-            ),
           ],
         ),
       ),
@@ -247,11 +273,62 @@ class _GroupMessageBubble extends StatelessWidget {
   }
 }
 
+/// A tappable shared-location card that opens the coordinates in Maps.
+class _LocationContent extends StatelessWidget {
+  const _LocationContent({required this.message, required this.isMine});
+
+  final Message message;
+  final bool isMine;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
+    final color =
+        isMine ? theme.colorScheme.onPrimary : theme.colorScheme.onSurface;
+    final loc = LocationShareService.parse(message.content);
+    return InkWell(
+      onTap: loc == null
+          ? null
+          : () => launchUrl(
+                Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
+                mode: LaunchMode.externalApplication,
+              ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.location_on, size: 18, color: color),
+          const SizedBox(width: 6),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.chatLocation,
+                  style: TextStyle(color: color, fontWeight: FontWeight.w600)),
+              Text(
+                l10n.chatOpenInMaps,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: color.withValues(alpha: 0.8),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _InputBar extends StatelessWidget {
-  const _InputBar({required this.controller, required this.onSend});
+  const _InputBar({
+    required this.controller,
+    required this.onSend,
+    required this.onAttachLocation,
+  });
 
   final TextEditingController controller;
   final VoidCallback onSend;
+  final VoidCallback onAttachLocation;
 
   @override
   Widget build(BuildContext context) {
@@ -261,6 +338,11 @@ class _InputBar extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         child: Row(
           children: [
+            IconButton(
+              icon: const Icon(Icons.location_on_outlined),
+              tooltip: AppLocalizations.of(context)!.chatShareLocation,
+              onPressed: onAttachLocation,
+            ),
             Expanded(
               child: TextField(
                 controller: controller,

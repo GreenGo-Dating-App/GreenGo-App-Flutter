@@ -10628,4 +10628,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get groupLoadError => 'Couldn\'t load this group';
+
+  @override
+  String get chatLocation => 'Location';
+
+  @override
+  String get chatShareLocation => 'Share location';
+
+  @override
+  String get chatLocationDenied =>
+      'Location permission is required to share your position';
+
+  @override
+  String get chatOpenInMaps => 'Open in Maps';
 }
