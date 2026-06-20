@@ -10955,4 +10955,14 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get groupPhotoUpdateFailed =>
       'Échec de la mise à jour de la photo du groupe';
+
+  @override
+  String get eventTextProhibited =>
+      'Le titre ou la description contient un langage interdit et ne peut pas être utilisé';
+
+  @override
+  String get groupSearchHint => 'Rechercher des groupes';
+
+  @override
+  String get groupNoSearchResults => 'Aucun groupe trouvé';
 }

@@ -3683,5 +3683,8 @@
   "groupChangePhoto": "Gruppenfoto ändern",
   "groupUploadingPhoto": "Foto wird hochgeladen…",
   "groupPhotoUpdated": "Gruppenfoto aktualisiert",
-  "groupPhotoUpdateFailed": "Gruppenfoto konnte nicht aktualisiert werden"
+  "groupPhotoUpdateFailed": "Gruppenfoto konnte nicht aktualisiert werden",
+  "eventTextProhibited": "Titel oder Beschreibung enthält unzulässige Sprache und kann nicht verwendet werden",
+  "groupSearchHint": "Gruppen suchen",
+  "groupNoSearchResults": "Keine Gruppen gefunden"
 }
