@@ -29,6 +29,7 @@ class EventModel extends Event {
     super.languages = const [],
     super.languagePairs,
     super.city,
+    super.country,
     super.attendeeCount = 0,
     super.updatedAt,
     super.visibility = EventVisibility.public,
@@ -67,6 +68,7 @@ class EventModel extends Event {
       languages: event.languages,
       languagePairs: event.languagePairs,
       city: event.city,
+      country: event.country,
       attendeeCount: event.attendeeCount,
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
@@ -113,6 +115,7 @@ class EventModel extends Event {
       languages: List<String>.from(json['languages'] as List? ?? []),
       languagePairs: json['languagePairs'] as String?,
       city: json['city'] as String?,
+      country: json['country'] as String?,
       attendeeCount: (json['attendeeCount'] as num?)?.toInt() ?? 0,
       createdAt: _parseDateTime(json['createdAt']),
       updatedAt: json['updatedAt'] != null
@@ -158,6 +161,7 @@ class EventModel extends Event {
       'languages': languages,
       'languagePairs': languagePairs,
       'city': city,
+      'country': country,
       'attendeeCount': attendeeCount,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
@@ -180,6 +184,7 @@ class EventModel extends Event {
 
     add(title);
     add(city);
+    add(country);
     add(locationName);
     tokens.add(category.name.toLowerCase());
     for (final t in tags) {
