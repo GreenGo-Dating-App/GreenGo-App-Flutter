@@ -23,7 +23,25 @@ class MessageModel extends Message {
     super.detectedLanguage,
     super.isScheduled,
     super.scheduledFor,
+    super.readBy,
+    super.deliveredTo,
   });
+
+  /// Parse a Firestore map of userId -> Timestamp into userId -> DateTime.
+  static Map<String, DateTime>? _timestampMap(dynamic raw) {
+    if (raw == null) return null;
+    return (raw as Map).map(
+      (k, v) => MapEntry(k as String, (v as Timestamp).toDate()),
+    );
+  }
+
+  /// Parse a JSON map of userId -> ISO string into userId -> DateTime.
+  static Map<String, DateTime>? _isoMap(dynamic raw) {
+    if (raw == null) return null;
+    return (raw as Map).map(
+      (k, v) => MapEntry(k as String, DateTime.parse(v as String)),
+    );
+  }
 
   /// Create from Message entity
   factory MessageModel.fromEntity(Message message) {
@@ -45,6 +63,8 @@ class MessageModel extends Message {
       detectedLanguage: message.detectedLanguage,
       isScheduled: message.isScheduled,
       scheduledFor: message.scheduledFor,
+      readBy: message.readBy,
+      deliveredTo: message.deliveredTo,
     );
   }
 
@@ -82,6 +102,8 @@ class MessageModel extends Message {
       scheduledFor: data['scheduledFor'] != null
           ? (data['scheduledFor'] as Timestamp).toDate()
           : null,
+      readBy: _timestampMap(data['readBy']),
+      deliveredTo: _timestampMap(data['deliveredTo']),
     );
   }
 
@@ -115,6 +137,8 @@ class MessageModel extends Message {
       scheduledFor: json['scheduledFor'] != null
           ? DateTime.parse(json['scheduledFor'] as String)
           : null,
+      readBy: _isoMap(json['readBy']),
+      deliveredTo: _isoMap(json['deliveredTo']),
     );
   }
 
@@ -137,6 +161,10 @@ class MessageModel extends Message {
       'detectedLanguage': detectedLanguage,
       'isScheduled': isScheduled,
       'scheduledFor': scheduledFor != null ? Timestamp.fromDate(scheduledFor!) : null,
+      'readBy':
+          readBy?.map((k, v) => MapEntry(k, Timestamp.fromDate(v))),
+      'deliveredTo':
+          deliveredTo?.map((k, v) => MapEntry(k, Timestamp.fromDate(v))),
     };
   }
 
@@ -160,6 +188,10 @@ class MessageModel extends Message {
       'detectedLanguage': detectedLanguage,
       'isScheduled': isScheduled,
       'scheduledFor': scheduledFor?.toIso8601String(),
+      'readBy':
+          readBy?.map((k, v) => MapEntry(k, v.toIso8601String())),
+      'deliveredTo':
+          deliveredTo?.map((k, v) => MapEntry(k, v.toIso8601String())),
     };
   }
 
@@ -183,6 +215,8 @@ class MessageModel extends Message {
       detectedLanguage: detectedLanguage,
       isScheduled: isScheduled,
       scheduledFor: scheduledFor,
+      readBy: readBy,
+      deliveredTo: deliveredTo,
     );
   }
 }
