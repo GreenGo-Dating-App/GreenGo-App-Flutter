@@ -21,6 +21,9 @@
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
 
+    <!-- Microphone for voice messages (declared explicitly; record plugin also merges this) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
     <!-- Push Notification Permission (Android 13+ / API 33+) -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
