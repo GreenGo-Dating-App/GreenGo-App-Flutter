@@ -4,6 +4,8 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/tier_limits_service.dart';
+import '../../../profile/domain/entities/location.dart' as profile_entity;
+import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
@@ -1259,6 +1261,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   double _price = 0;
   EventVisibility _visibility = EventVisibility.public;
   bool _isUnlimited = false;
+  double? _lat;
+  double? _lng;
+  String? _pickedCity;
+  String? _pickedCountry;
   final _linkUrlController = TextEditingController();
   final _linkLabelController = TextEditingController();
   final List<ExternalLink> _externalLinks = [];
@@ -1273,6 +1279,24 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _linkUrlController.dispose();
     _linkLabelController.dispose();
     super.dispose();
+  }
+
+  /// Pick the event location from the map (reuses the app's location picker).
+  Future<void> _pickLocation() async {
+    final result = await Navigator.of(context).push<dynamic>(
+      MaterialPageRoute(
+        builder: (_) => const TravelerLocationPickerScreen(),
+      ),
+    );
+    if (result == null || !mounted) return;
+    final loc = result as profile_entity.Location;
+    setState(() {
+      _lat = loc.latitude;
+      _lng = loc.longitude;
+      _pickedCity = loc.city;
+      _pickedCountry = loc.country;
+      _locationController.text = loc.displayAddress;
+    });
   }
 
   void _addLink() {
@@ -1349,8 +1373,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             TextFormField(
               controller: _locationController,
               style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(AppLocalizations.of(context)!.eventsLocation),
-              validator: (v) => v?.isEmpty ?? true ? AppLocalizations.of(context)!.eventsRequired : null,
+              readOnly: true,
+              onTap: _pickLocation,
+              decoration: _inputDecoration(
+                      AppLocalizations.of(context)!.eventsLocation)
+                  .copyWith(
+                suffixIcon:
+                    const Icon(Icons.map_outlined, color: AppColors.richGold),
+              ),
+              validator: (v) => v?.isEmpty ?? true
+                  ? AppLocalizations.of(context)!.eventsRequired
+                  : null,
             ),
             const SizedBox(height: 16),
             ListTile(
@@ -1590,6 +1623,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       startDate: _startDate,
       endDate: _endDate,
       locationName: _locationController.text,
+      latitude: _lat,
+      longitude: _lng,
+      city: _pickedCity,
+      country: _pickedCountry,
       maxAttendees:
           _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20),
       price: _isFree ? null : _price,
