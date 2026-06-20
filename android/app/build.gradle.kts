@@ -81,10 +81,12 @@ android {
             isMinifyEnabled = false
             isShrinkResources = false
 
-            // Skip native debug symbol stripping (SDK path contains spaces
-            // which breaks NDK strip tool)
+            // Include native debug symbols in the App Bundle so Play can
+            // symbolicate native crashes/ANRs (clears the "no debug symbols"
+            // Play Console warning). Play strips these before serving to users,
+            // so the delivered app size is unaffected.
             ndk {
-                debugSymbolLevel = "none"
+                debugSymbolLevel = "SYMBOL_TABLE"
             }
         }
     }
