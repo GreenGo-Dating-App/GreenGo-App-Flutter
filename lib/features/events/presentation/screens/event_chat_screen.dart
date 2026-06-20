@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
@@ -33,10 +35,51 @@ class _EventChatScreenState extends State<EventChatScreen> {
   bool get _isOrganizer => widget.event.organizerId == widget.currentUserId;
   bool _broadcastMode = false;
 
+  // Resolved display name/photo for the current user (avoids storing 'User').
+  String? _myName;
+  String? _myPhoto;
+
   @override
   void initState() {
     super.initState();
     _dataSource = EventsRemoteDataSourceImpl();
+    _resolveMe();
+  }
+
+  Future<void> _resolveMe() async {
+    final dir =
+        await UserDirectoryService.instance.resolve([widget.currentUserId]);
+    final me = dir[widget.currentUserId];
+    if (mounted && me != null) {
+      setState(() {
+        _myName = me.name;
+        _myPhoto = me.photoUrl;
+      });
+    }
+  }
+
+  final Set<String> _resolvingNames = {};
+
+  /// Resolves real names for senders whose stored name is generic/empty.
+  void _ensureNames(Iterable<String> ids) {
+    final missing = ids
+        .toSet()
+        .where((id) =>
+            id.isNotEmpty &&
+            UserDirectoryService.instance.cached(id) == null &&
+            !_resolvingNames.contains(id))
+        .toList();
+    if (missing.isEmpty) return;
+    _resolvingNames.addAll(missing);
+    UserDirectoryService.instance.resolve(missing).then((_) {
+      if (mounted) setState(() => _resolvingNames.removeAll(missing));
+    });
+  }
+
+  /// Best display name for a message sender.
+  String _senderName(EventChatMessage m) {
+    if (m.senderName.isNotEmpty && m.senderName != 'User') return m.senderName;
+    return UserDirectoryService.instance.nameFor(m.senderId);
   }
 
   @override
@@ -99,6 +142,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                 }
 
                 final messages = snapshot.data ?? [];
+                _ensureNames(messages.map((m) => m.senderId));
 
                 if (messages.isEmpty) {
                   return Center(
@@ -221,8 +265,8 @@ class _EventChatScreenState extends State<EventChatScreen> {
               backgroundColor: AppColors.backgroundCard,
               child: message.senderPhotoUrl == null
                   ? Text(
-                      message.senderName.isNotEmpty
-                          ? message.senderName[0].toUpperCase()
+                      _senderName(message).isNotEmpty
+                          ? _senderName(message)[0].toUpperCase()
                           : '?',
                       style: const TextStyle(
                         color: AppColors.textPrimary,
@@ -258,7 +302,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 4),
                       child: Text(
-                        message.senderName,
+                        _senderName(message),
                         style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 12,
@@ -373,12 +417,29 @@ class _EventChatScreenState extends State<EventChatScreen> {
     final text = _messageController.text.trim();
     if (text.isEmpty) return;
 
+    // Block hate/discriminatory/explicit sexual language.
+    if (ContentFilterService().containsProhibitedContent(text)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.eventTextProhibited),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
     final broadcast = _broadcastMode && _isOrganizer;
+    final resolvedName = (_myName != null && _myName!.isNotEmpty)
+        ? _myName!
+        : (widget.currentUserName.isNotEmpty &&
+                widget.currentUserName != 'User'
+            ? widget.currentUserName
+            : widget.currentUserId);
     final message = EventChatMessage(
       id: '',
       senderId: widget.currentUserId,
-      senderName: widget.currentUserName,
-      senderPhotoUrl: widget.currentUserPhotoUrl,
+      senderName: resolvedName,
+      senderPhotoUrl: _myPhoto ?? widget.currentUserPhotoUrl,
       text: text,
       timestamp: DateTime.now(),
       isBroadcast: broadcast,
