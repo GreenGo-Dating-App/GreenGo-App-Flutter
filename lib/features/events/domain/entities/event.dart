@@ -31,6 +31,33 @@ enum RSVPStatus {
   notGoing,
 }
 
+/// Event visibility: public events are discoverable by anyone; private events
+/// are only visible to invitees/attendees and people with the link.
+enum EventVisibility {
+  public,
+  private,
+}
+
+extension EventVisibilityExtension on EventVisibility {
+  String get value => name;
+  static EventVisibility fromString(String? v) => EventVisibility.values
+      .firstWhere((e) => e.name == v, orElse: () => EventVisibility.public);
+}
+
+/// An external link associated with an event (tickets, website, map, etc.).
+class ExternalLink extends Equatable {
+  const ExternalLink({required this.url, this.label});
+  final String url;
+  final String? label;
+
+  Map<String, dynamic> toMap() => {'url': url, 'label': label};
+  factory ExternalLink.fromMap(Map<String, dynamic> m) =>
+      ExternalLink(url: m['url'] as String? ?? '', label: m['label'] as String?);
+
+  @override
+  List<Object?> get props => [url, label];
+}
+
 /// Event Entity
 /// Local events and activities for users to meet
 class Event extends Equatable {
@@ -59,6 +86,8 @@ class Event extends Equatable {
     this.city,
     this.attendeeCount = 0,
     this.updatedAt,
+    this.visibility = EventVisibility.public,
+    this.externalLinks = const [],
   });
   final String id;
   final String organizerId;
@@ -92,11 +121,17 @@ class Event extends Equatable {
   final int attendeeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
+  final EventVisibility visibility;
+  final List<ExternalLink> externalLinks;
 
   int get goingCount => attendees.where((a) => a.status == RSVPStatus.going).length;
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
+  /// `maxAttendees <= 0` means unlimited capacity.
+  bool get isUnlimited => maxAttendees <= 0;
   int get spotsLeft => maxAttendees - goingCount;
-  bool get isFull => spotsLeft <= 0;
+  bool get isFull => !isUnlimited && spotsLeft <= 0;
+  bool get isPublic => visibility == EventVisibility.public;
+  bool get isPrivate => visibility == EventVisibility.private;
   bool get isFree => price == null || price == 0;
   bool get isUpcoming => startDate.isAfter(DateTime.now());
   bool get isOngoing => DateTime.now().isAfter(startDate) && DateTime.now().isBefore(endDate);
@@ -135,6 +170,8 @@ class Event extends Equatable {
         attendeeCount,
         createdAt,
         updatedAt,
+        visibility,
+        externalLinks,
       ];
 
   Event copyWith({
@@ -170,6 +207,8 @@ class Event extends Equatable {
     int? attendeeCount,
     DateTime? createdAt,
     DateTime? updatedAt,
+    EventVisibility? visibility,
+    List<ExternalLink>? externalLinks,
   }) {
     return Event(
       id: id ?? this.id,
@@ -204,6 +243,8 @@ class Event extends Equatable {
       attendeeCount: attendeeCount ?? this.attendeeCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
+      visibility: visibility ?? this.visibility,
+      externalLinks: externalLinks ?? this.externalLinks,
     );
   }
 }

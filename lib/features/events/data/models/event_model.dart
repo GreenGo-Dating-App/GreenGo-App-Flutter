@@ -31,6 +31,8 @@ class EventModel extends Event {
     super.city,
     super.attendeeCount = 0,
     super.updatedAt,
+    super.visibility = EventVisibility.public,
+    super.externalLinks = const [],
   });
 
   /// Create from Event entity
@@ -68,6 +70,8 @@ class EventModel extends Event {
       attendeeCount: event.attendeeCount,
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
+      visibility: event.visibility,
+      externalLinks: event.externalLinks,
     );
   }
 
@@ -114,6 +118,13 @@ class EventModel extends Event {
       updatedAt: json['updatedAt'] != null
           ? _parseDateTime(json['updatedAt'])
           : null,
+      visibility:
+          EventVisibilityExtension.fromString(json['visibility'] as String?),
+      externalLinks: (json['externalLinks'] as List?)
+              ?.whereType<Map<String, dynamic>>()
+              .map(ExternalLink.fromMap)
+              .toList() ??
+          const [],
     );
   }
 
@@ -150,6 +161,8 @@ class EventModel extends Event {
       'attendeeCount': attendeeCount,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
+      'visibility': visibility.value,
+      'externalLinks': externalLinks.map((e) => e.toMap()).toList(),
     };
   }
 
