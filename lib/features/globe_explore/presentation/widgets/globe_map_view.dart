@@ -11,6 +11,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/event_country_stat.dart';
+import '../../../events/domain/entities/external_event.dart';
 import '../../domain/entities/globe_user.dart';
 
 /// Returns the clustering threshold in degrees based on the current zoom level.
@@ -35,6 +36,9 @@ class GlobeMapView extends StatefulWidget {
     this.onEventCountryTapped,
     this.preciseEvents = const [],
     this.onPreciseEventTapped,
+    this.externalMarkers = const [],
+    this.onExternalTapped,
+    this.onExternalGroupTapped,
   });
   final GlobeData data;
   final bool showMatched;
@@ -53,6 +57,12 @@ class GlobeMapView extends StatefulWidget {
   /// Native GreenGo events plotted at their exact coordinates (precise pins).
   final List<Event> preciseEvents;
   final void Function(Event event)? onPreciseEventTapped;
+
+  /// External experiences/attractions plotted precisely; grouped by location and
+  /// shown with a mini image preview (single) or count (multiple).
+  final List<ExternalEvent> externalMarkers;
+  final void Function(ExternalEvent item)? onExternalTapped;
+  final void Function(List<ExternalEvent> items)? onExternalGroupTapped;
 
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
@@ -185,6 +195,20 @@ class _GlobeMapViewState extends State<GlobeMapView>
       markers.add(_buildPreciseEventMarker(e, LatLng(lat, lng)));
     }
 
+    // External experiences/attractions — grouped by location, mini-image pins.
+    if (widget.externalMarkers.isNotEmpty) {
+      final groups = <String, List<ExternalEvent>>{};
+      for (final e in widget.externalMarkers) {
+        if (e.lat == null || e.lng == null) continue;
+        final key =
+            '${e.lat!.toStringAsFixed(2)},${e.lng!.toStringAsFixed(2)}';
+        (groups[key] ??= <ExternalEvent>[]).add(e);
+      }
+      for (final g in groups.values) {
+        markers.add(_buildExternalMarker(g, LatLng(g.first.lat!, g.first.lng!)));
+      }
+    }
+
     // Current user always on top, never clustered
     markers.add(_buildCurrentUserMarker(widget.data.currentUser, l10n));
 
@@ -206,6 +230,71 @@ class _GlobeMapViewState extends State<GlobeMapView>
             boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
           ),
           child: const Icon(Icons.event, color: Colors.black, size: 18),
+        ),
+      ),
+    );
+  }
+
+  Marker _buildExternalMarker(List<ExternalEvent> group, LatLng point) {
+    final first = group.first;
+    final multiple = group.length > 1;
+    final showImage =
+        _currentZoom >= 6 && first.imageUrl != null && first.imageUrl!.isNotEmpty;
+    final size = showImage ? 48.0 : 28.0;
+    return Marker(
+      point: point,
+      width: size + 8,
+      height: size + 8,
+      child: GestureDetector(
+        onTap: () {
+          if (multiple) {
+            widget.onExternalGroupTapped?.call(group);
+          } else {
+            widget.onExternalTapped?.call(first);
+          }
+        },
+        child: Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.center,
+          children: [
+            Container(
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white, width: 2),
+                boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
+                image: showImage
+                    ? DecorationImage(
+                        image: CachedNetworkImageProvider(first.imageUrl!),
+                        fit: BoxFit.cover)
+                    : null,
+              ),
+              child: showImage
+                  ? null
+                  : const Icon(Icons.local_activity,
+                      color: Colors.white, size: 16),
+            ),
+            if (multiple)
+              Positioned(
+                right: -2,
+                top: -2,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+                  decoration: BoxDecoration(
+                    color: Colors.black87,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.white, width: 1),
+                  ),
+                  child: Text('${group.length}',
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold)),
+                ),
+              ),
+          ],
         ),
       ),
     );

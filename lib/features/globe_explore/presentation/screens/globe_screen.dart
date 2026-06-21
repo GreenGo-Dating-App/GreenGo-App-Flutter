@@ -47,6 +47,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
   List<Event> _nativeEvents = const [];
   List<EventCountryStat> _experienceStats = const []; // viator
   List<EventCountryStat> _attractionStats = const []; // tiqets
+  // Precise pins for the most-recently-tapped country (mini-image markers).
+  List<ExternalEvent> _countryPins = const [];
 
   @override
   void initState() {
@@ -108,6 +110,94 @@ class _GlobeScreenState extends State<GlobeScreen> {
     if (_showAttractions) add(_attractionStats);
     if (_showExperiences) add(_experienceStats);
     return merged.values.toList();
+  }
+
+  /// Load precise pins for a country so zooming in reveals individual
+  /// experiences/attractions with mini-image previews.
+  Future<void> _loadCountryPins(String country) async {
+    try {
+      final snap = await FirebaseFirestore.instance
+          .collection('external_events')
+          .where('country', isEqualTo: country)
+          .limit(200)
+          .get();
+      final items = snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where((e) => e.lat != null && e.lng != null)
+          .toList();
+      if (mounted) setState(() => _countryPins = items);
+    } catch (_) {/* best-effort */}
+  }
+
+  Widget _externalTile(ExternalEvent e) => ListTile(
+        leading: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: SizedBox(
+            width: 48,
+            height: 48,
+            child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
+                ? Image(
+                    image: CachedNetworkImageProvider(e.imageUrl!),
+                    fit: BoxFit.cover)
+                : Container(
+                    color: AppColors.backgroundInput,
+                    child: const Icon(Icons.local_activity,
+                        color: AppColors.textTertiary)),
+          ),
+        ),
+        title: Text(e.title,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(color: AppColors.textPrimary, fontSize: 14)),
+        subtitle: Text(
+          [
+            if (e.city != null && e.city!.isNotEmpty) e.city!,
+            if (e.rating != null) '⭐ ${e.rating}',
+            if (e.fromPrice != null)
+              '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
+          ].join('  ·  '),
+          style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+        ),
+        trailing:
+            const Icon(Icons.open_in_new, color: AppColors.richGold, size: 18),
+        onTap: e.bookingUrl.isEmpty
+            ? null
+            : () => launchUrl(Uri.parse(e.bookingUrl),
+                mode: LaunchMode.externalApplication),
+      );
+
+  /// Sheet listing a group of co-located items (tapping a multi-item pin).
+  void _showItemsSheet(BuildContext context, List<ExternalEvent> items) {
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (_) => SafeArea(
+        child: DraggableScrollableSheet(
+          initialChildSize: 0.6,
+          maxChildSize: 0.95,
+          expand: false,
+          builder: (_, sc) => ListView(
+            controller: sc,
+            children: [
+              const SizedBox(height: 10),
+              Center(
+                child: Text(items.first.city ?? '',
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold)),
+              ),
+              ...items.map(_externalTile),
+              const SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   /// Tap a country → list its Experiences + Attractions (queried directly, so
@@ -333,8 +423,20 @@ class _GlobeScreenState extends State<GlobeScreen> {
                     EventDetailLoaderScreen.route(
                         eventId: e.id, currentUserId: userId),
                   ),
-                  onEventCountryTapped: (country) =>
-                      _showCountryDetailSheet(context, country),
+                  externalMarkers:
+                      (_showAttractions || _showExperiences) ? _countryPins : const [],
+                  onExternalTapped: (e) {
+                    if (e.bookingUrl.isNotEmpty) {
+                      launchUrl(Uri.parse(e.bookingUrl),
+                          mode: LaunchMode.externalApplication);
+                    }
+                  },
+                  onExternalGroupTapped: (items) =>
+                      _showItemsSheet(context, items),
+                  onEventCountryTapped: (country) {
+                    _loadCountryPins(country); // precise pins for zoom-in
+                    _showCountryDetailSheet(context, country);
+                  },
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(
