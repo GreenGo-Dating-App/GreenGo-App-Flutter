@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -99,7 +100,7 @@ class GroupInfoScreen extends StatelessWidget {
                 return ListTile(
                   leading: CircleAvatar(
                     backgroundImage: (photo != null && photo.isNotEmpty)
-                        ? NetworkImage(photo)
+                        ? CachedNetworkImageProvider(photo)
                         : null,
                     child: (photo == null || photo.isEmpty)
                         ? Text(displayName.isNotEmpty

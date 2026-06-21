@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -356,7 +357,13 @@ class _GroupChatViewState extends State<_GroupChatView> {
                   color: Colors.red,
                   onTap: () => _sendVideo(parentContext, ImageSource.camera),
                 ),
-                const SizedBox(width: 60),
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.collections,
+                  label: l10n.shareAlbum,
+                  color: Colors.teal,
+                  onTap: () => _shareAlbum(parentContext),
+                ),
               ],
             ),
             const SizedBox(height: 24),
@@ -437,6 +444,111 @@ class _GroupChatViewState extends State<_GroupChatView> {
     }
   }
 
+  /// Share photos from the user's private album into the group (album URLs are
+  /// already hosted, so we send them directly as image messages).
+  Future<void> _shareAlbum(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
+    final doc = await FirebaseFirestore.instance
+        .collection('profiles')
+        .doc(widget.currentUserId)
+        .get();
+    final photos =
+        (doc.data()?['privatePhotoUrls'] as List<dynamic>? ?? []).cast<String>();
+    if (!mounted) return;
+    if (photos.isEmpty) {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.chatNoPrivatePhotos)));
+      return;
+    }
+    final selected = <String>{};
+    await showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetCtx) => StatefulBuilder(
+        builder: (sheetCtx, setSheet) => DraggableScrollableSheet(
+          initialChildSize: 0.6,
+          maxChildSize: 0.9,
+          expand: false,
+          builder: (_, sc) => Column(
+            children: [
+              const SizedBox(height: 12),
+              Text(l10n.shareAlbum,
+                  style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold)),
+              Expanded(
+                child: GridView.builder(
+                  controller: sc,
+                  padding: const EdgeInsets.all(12),
+                  gridDelegate:
+                      const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 3,
+                          crossAxisSpacing: 8,
+                          mainAxisSpacing: 8),
+                  itemCount: photos.length,
+                  itemBuilder: (_, i) {
+                    final url = photos[i];
+                    final sel = selected.contains(url);
+                    return GestureDetector(
+                      onTap: () => setSheet(() =>
+                          sel ? selected.remove(url) : selected.add(url)),
+                      child: Stack(fit: StackFit.expand, children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image(
+                              image: CachedNetworkImageProvider(url),
+                              fit: BoxFit.cover),
+                        ),
+                        if (sel)
+                          Container(
+                            decoration: BoxDecoration(
+                              color: AppColors.richGold.withValues(alpha: 0.4),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: const Icon(Icons.check_circle,
+                                color: Colors.white),
+                          ),
+                      ]),
+                    );
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(12),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: AppColors.deepBlack,
+                    ),
+                    onPressed: selected.isEmpty
+                        ? null
+                        : () {
+                            for (final url in selected) {
+                              bloc.add(GroupChatMessageSent(
+                                  content: url, type: MessageType.image));
+                            }
+                            AppSoundService().play(AppSound.messageSent);
+                            Navigator.pop(sheetCtx);
+                          },
+                    child: Text('${l10n.eventShare} (${selected.length})'),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   Future<void> _sendLocation(BuildContext context) async {
     final l10n = AppLocalizations.of(context)!;
     final bloc = context.read<GroupChatBloc>();
@@ -481,7 +593,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                   return CircleAvatar(
                     radius: 16,
                     backgroundImage: (photo != null && photo.isNotEmpty)
-                        ? NetworkImage(photo)
+                        ? CachedNetworkImageProvider(photo)
                         : null,
                     child: (photo == null || photo.isEmpty)
                         ? Text(
