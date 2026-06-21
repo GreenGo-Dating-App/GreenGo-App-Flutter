@@ -77,15 +77,25 @@ const VIATOR_HEADERS = (apiKey: string) => ({
   'Content-Type': 'application/json',
 });
 
-type DestInfo = { name: string; type: string };
+type DestInfo = { name: string; type: string; lat?: number; lng?: number };
 
-/// Fetch Viator destinations once: returns the matched top-50 countries plus a
-/// full id→{name,type} map so we can resolve each product's city.
+/// Fetch Viator destinations once: returns the matched top-50 countries, a full
+/// id→{name,type,lat,lng} map (so we can resolve each product's city + precise
+/// coordinates), and the list of all CITY destinations (for the city lookup
+/// table).
 async function fetchDestinations(
   apiKey: string,
   base: string
-): Promise<{ countries: { id: string; name: string }[]; idMap: Map<string, DestInfo> }> {
-  const empty = { countries: [], idMap: new Map<string, DestInfo>() };
+): Promise<{
+  countries: { id: string; name: string }[];
+  idMap: Map<string, DestInfo>;
+  cities: { id: string; name: string; lat: number; lng: number; country: string }[];
+}> {
+  const empty = {
+    countries: [],
+    idMap: new Map<string, DestInfo>(),
+    cities: [],
+  };
   try {
     const res = await fetch(`${base}/destinations`, {
       headers: VIATOR_HEADERS(apiKey),
@@ -98,17 +108,39 @@ async function fetchDestinations(
     const dests: any[] = json.destinations || [];
     const idMap = new Map<string, DestInfo>();
     const byName = new Map<string, any>();
+    const byId = new Map<string, any>();
     for (const d of dests) {
       if (d.destinationId != null) {
+        byId.set(String(d.destinationId), d);
         idMap.set(String(d.destinationId), {
           name: d.name,
           type: String(d.type || ''),
+          lat: d.center?.latitude,
+          lng: d.center?.longitude,
         });
       }
       if (d.type === 'COUNTRY' && d.name) {
         byName.set(String(d.name).toLowerCase(), d);
       }
     }
+    // Resolve each CITY's country name by walking up parentDestinationId.
+    function countryOf(d: any): string {
+      let cur = d;
+      for (let i = 0; i < 6 && cur; i++) {
+        if (String(cur.type) === 'COUNTRY') return cur.name as string;
+        cur = byId.get(String(cur.parentDestinationId));
+      }
+      return '';
+    }
+    const cities = dests
+      .filter((d) => d.type === 'CITY' && d.center?.latitude != null)
+      .map((d) => ({
+        id: String(d.destinationId),
+        name: d.name as string,
+        lat: d.center.latitude as number,
+        lng: d.center.longitude as number,
+        country: countryOf(d),
+      }));
     const aliases: Record<string, string[]> = {
       'United States': ['usa', 'united states of america', 'us', 'america'],
       'United Kingdom': ['uk', 'great britain', 'britain', 'england'],
@@ -128,29 +160,29 @@ async function fetchDestinations(
       if (d) countries.push({ id: String(d.destinationId), name });
       else console.log(`ingest: no Viator country match for ${name}`);
     }
-    return { countries, idMap };
+    return { countries, idMap, cities };
   } catch (e) {
     console.error(`Viator destinations failed (${base})`, e);
     return empty;
   }
 }
 
-/// Resolve a product's city from its destination refs (prefer the primary
-/// non-country destination).
-function cityFor(
+/// Resolve a product's city (name + precise coordinates) from its destination
+/// refs (prefer the primary non-country destination).
+function cityInfoFor(
   p: any,
   idMap: Map<string, DestInfo>,
   countryName: string
-): string | null {
+): { name: string | null; lat: number | null; lng: number | null } {
   const dests: any[] = p.destinations || [];
   const ordered = [...dests].sort((a, b) => (b.primary ? 1 : 0) - (a.primary ? 1 : 0));
   for (const d of ordered) {
     const info = idMap.get(String(d.ref));
     if (info && info.type !== 'COUNTRY' && info.name && info.name !== countryName) {
-      return info.name;
+      return { name: info.name, lat: info.lat ?? null, lng: info.lng ?? null };
     }
   }
-  return null;
+  return { name: null, lat: null, lng: null };
 }
 
 // Affiliate params — append to every product URL so taps open the booking-ready
@@ -177,6 +209,7 @@ function mapProduct(
     const bestArea = best ? (best.width || 0) * (best.height || 0) : -1;
     if (area > bestArea) best = v;
   }
+  const city = cityInfoFor(p, idMap, countryName);
   return {
     id: `viator_${p.productCode}`,
     data: {
@@ -186,8 +219,11 @@ function mapProduct(
       description: p.description ?? null,
       imageUrl: best?.url ?? null,
       category: 'tour',
-      city: cityFor(p, idMap, countryName),
+      city: city.name,
       country: countryName,
+      // Precise coordinates from the product's primary city destination.
+      lat: city.lat,
+      lng: city.lng,
       fromPrice: p.pricing?.summary?.fromPrice ?? null,
       currency: p.pricing?.currency ?? 'USD',
       // Default to 0 (not null) so orderBy('rating'/'reviewCount') includes
@@ -201,8 +237,10 @@ function mapProduct(
   };
 }
 
-/// Top [PRODUCTS_PER_COUNTRY] experiences for one country (paged; Viator caps
-/// each search at 50 results, so we page until we reach the target).
+// Pull a larger pool per country, then keep the top [PRODUCTS_PER_COUNTRY] by
+// number of reviews among those rated > 4 stars (popularity, not just rating).
+const COUNTRY_POOL = 250;
+
 async function fetchTopForCountry(
   apiKey: string,
   base: string,
@@ -210,10 +248,10 @@ async function fetchTopForCountry(
   countryName: string,
   idMap: Map<string, DestInfo>
 ): Promise<Doc[]> {
-  const docs: Doc[] = [];
+  const products: any[] = [];
   const pageSize = 50;
-  for (let start = 1; start <= PRODUCTS_PER_COUNTRY; start += pageSize) {
-    const count = Math.min(pageSize, PRODUCTS_PER_COUNTRY - (start - 1));
+  for (let start = 1; start <= COUNTRY_POOL; start += pageSize) {
+    const count = Math.min(pageSize, COUNTRY_POOL - (start - 1));
     try {
       const res = await fetch(`${base}/products/search`, {
         method: 'POST',
@@ -230,16 +268,24 @@ async function fetchTopForCountry(
         break;
       }
       const json: any = await res.json();
-      const products: any[] = json.products || [];
-      if (products.length === 0) break;
-      docs.push(...products.map((p) => mapProduct(p, countryName, idMap)));
-      if (products.length < count) break; // no more pages
+      const batch: any[] = json.products || [];
+      if (batch.length === 0) break;
+      products.push(...batch);
+      if (batch.length < count) break; // no more pages
     } catch (e) {
       console.error(`Viator fetch failed for ${countryName} (start ${start})`, e);
       break;
     }
   }
-  return docs;
+  // Criteria: rating strictly above 4 stars, ranked by most reviews.
+  const ranked = products
+    .filter((p) => (p.reviews?.combinedAverageRating ?? 0) > 4)
+    .sort(
+      (a, b) =>
+        (b.reviews?.totalReviews ?? 0) - (a.reviews?.totalReviews ?? 0)
+    )
+    .slice(0, PRODUCTS_PER_COUNTRY);
+  return ranked.map((p) => mapProduct(p, countryName, idMap));
 }
 
 /// Per-country counts → `external_country_stats/{source}_{country}` so the globe
@@ -262,17 +308,53 @@ async function writeCountryStats(docs: Doc[], source: string): Promise<void> {
   await batch.commit();
 }
 
+/// City → coordinates lookup table. Writes every provider city (name, country,
+/// lat, lng) to `city_coordinates/{id}` so the app can query coordinates for any
+/// available city (selectors, precise map plotting). No artificial cap — writes
+/// all available (Viator alone ≈ 3,400; grows with Tiqets).
+async function writeCityCoordinates(
+  cities: { id: string; name: string; lat: number; lng: number; country: string }[]
+): Promise<void> {
+  let batch = db.batch();
+  let ops = 0;
+  const commits: Promise<unknown>[] = [];
+  const now = admin.firestore.FieldValue.serverTimestamp();
+  for (const c of cities) {
+    batch.set(
+      db.collection('city_coordinates').doc(`viator_${c.id}`),
+      {
+        city: c.name,
+        country: c.country,
+        lat: c.lat,
+        lng: c.lng,
+        nameLower: c.name.toLowerCase(),
+        updatedAt: now,
+      },
+      { merge: true }
+    );
+    if (++ops >= 400) {
+      commits.push(batch.commit());
+      batch = db.batch();
+      ops = 0;
+    }
+  }
+  if (ops > 0) commits.push(batch.commit());
+  await Promise.all(commits);
+}
+
 async function runIngestion(apiKey: string): Promise<number> {
   if (!apiKey) {
     console.log('ingestExternalEvents: VIATOR_API_KEY not set — skipping.');
     return 0;
   }
   for (const base of VIATOR_BASES) {
-    const { countries, idMap } = await fetchDestinations(apiKey, base);
+    const { countries, idMap, cities } = await fetchDestinations(apiKey, base);
     if (countries.length === 0) {
       console.log(`ingestExternalEvents: no countries from ${base}, trying next.`);
       continue;
     }
+    // Build/refresh the city → coordinates lookup table.
+    await writeCityCoordinates(cities);
     const all: Doc[] = [];
     for (const c of countries) {
       all.push(...(await fetchTopForCountry(apiKey, base, c.id, c.name, idMap)));

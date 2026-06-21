@@ -760,6 +760,10 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // CF-written aggregate
     }
+    match /city_coordinates/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written city → coordinates lookup table
+    }
 
     // ============================================================================
     // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
