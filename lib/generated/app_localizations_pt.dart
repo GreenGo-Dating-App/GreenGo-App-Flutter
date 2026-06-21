@@ -10525,6 +10525,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get globeMyNetwork => 'My Network';
 
   @override
+  String get globeMyWorldMap => 'O meu mapa do mundo';
+
+  @override
+  String get globeLayerContacts => 'Os meus contactos';
+
+  @override
+  String get globeLayerExperiences => 'Experiências';
+
+  @override
   String get globeYou => 'You';
 
   @override
@@ -21262,6 +21271,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';
+
+  @override
+  String get globeMyWorldMap => 'Meu mapa-múndi';
+
+  @override
+  String get globeLayerContacts => 'Meus contatos';
+
+  @override
+  String get globeLayerExperiences => 'Experiências';
 
   @override
   String get onboardingExitTitle => 'Sair do cadastro?';

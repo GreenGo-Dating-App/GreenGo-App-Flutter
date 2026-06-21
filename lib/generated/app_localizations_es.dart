@@ -10551,6 +10551,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get globeMyNetwork => 'My Network';
 
   @override
+  String get globeMyWorldMap => 'Mi mapa del mundo';
+
+  @override
+  String get globeLayerContacts => 'Mis contactos';
+
+  @override
+  String get globeLayerExperiences => 'Experiencias';
+
+  @override
   String get globeYou => 'You';
 
   @override

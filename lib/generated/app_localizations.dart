@@ -18588,6 +18588,24 @@ abstract class AppLocalizations {
   /// **'My Network'**
   String get globeMyNetwork;
 
+  /// No description provided for @globeMyWorldMap.
+  ///
+  /// In en, this message translates to:
+  /// **'My World Map'**
+  String get globeMyWorldMap;
+
+  /// No description provided for @globeLayerContacts.
+  ///
+  /// In en, this message translates to:
+  /// **'My Contacts'**
+  String get globeLayerContacts;
+
+  /// No description provided for @globeLayerExperiences.
+  ///
+  /// In en, this message translates to:
+  /// **'Experiences'**
+  String get globeLayerExperiences;
+
   /// No description provided for @globeYou.
   ///
   /// In en, this message translates to:
