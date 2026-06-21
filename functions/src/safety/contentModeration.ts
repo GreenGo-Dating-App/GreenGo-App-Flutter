@@ -7,6 +7,7 @@ import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
 import { LanguageServiceClient } from '@google-cloud/language';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const visionClient = new vision.ImageAnnotatorClient();
@@ -16,7 +17,7 @@ const languageClient = new LanguageServiceClient();
  * Moderate Photo using Cloud Vision API
  * Point 201: Automatic photo content moderation
  */
-export const moderatePhoto = functions.https.onCall(async (data, context) => {
+export const moderatePhoto = functions.https.onCall(monitored("moderatePhoto", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -187,13 +188,13 @@ export const moderatePhoto = functions.https.onCall(async (data, context) => {
     console.error('Error moderating photo:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Moderate Text using Perspective API
  * Point 202: AI-based text moderation for toxicity
  */
-export const moderateText = functions.https.onCall(async (data, context) => {
+export const moderateText = functions.https.onCall(monitored("moderateText", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -305,7 +306,7 @@ export const moderateText = functions.https.onCall(async (data, context) => {
     console.error('Error moderating text:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Check for Profanity
@@ -348,7 +349,7 @@ async function checkProfanity(text: string): Promise<string[]> {
  * Detect Spam
  * Point 204: Spam detection algorithm
  */
-export const detectSpam = functions.https.onCall(async (data, context) => {
+export const detectSpam = functions.https.onCall(monitored("detectSpam", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -432,14 +433,14 @@ export const detectSpam = functions.https.onCall(async (data, context) => {
     console.error('Error detecting spam:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Detect Fake Profile
  * Point 205: Fake profile detection using behavioral analysis
  */
 export const detectFakeProfile = functions.https.onCall(
-  async (data, context) => {
+  monitored("detectFakeProfile", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -544,14 +545,14 @@ export const detectFakeProfile = functions.https.onCall(
       console.error('Error detecting fake profile:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
  * Detect Scam
  * Point 206: Scam detection system
  */
-export const detectScam = functions.https.onCall(async (data, context) => {
+export const detectScam = functions.https.onCall(monitored("detectScam", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -655,14 +656,14 @@ export const detectScam = functions.https.onCall(async (data, context) => {
     console.error('Error detecting scam:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Moderate Chat Image — callable from frontend before sending
  * Validates any image (chat, private album, etc.) for nudity/explicit content
  * Returns approval status so the client can block sending
  */
-export const moderateChatImage = functions.https.onCall(async (data, context) => {
+export const moderateChatImage = functions.https.onCall(monitored("moderateChatImage", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -751,7 +752,7 @@ export const moderateChatImage = functions.https.onCall(async (data, context) =>
       violations: [{ type: 'error', reason: 'Moderation check failed', severity: 'high' }],
     };
   }
-});
+}));
 
 /**
  * Create Moderation Queue Entry

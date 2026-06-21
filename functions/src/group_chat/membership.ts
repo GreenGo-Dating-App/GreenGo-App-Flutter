@@ -22,6 +22,7 @@ import {
   onDocumentUpdated,
 } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -108,7 +109,7 @@ function seedWrites(
 
 export const onGroupCreated = onDocumentCreated(
   'groups/{groupId}',
-  async (event) => {
+  monitored("onGroupCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;
     const groupId = event.params.groupId as string;
@@ -147,12 +148,12 @@ export const onGroupCreated = onDocumentCreated(
       })
     );
     await commitInChunks(writes);
-  }
+  })
 );
 
 export const onGroupParticipantsChanged = onDocumentUpdated(
   'groups/{groupId}',
-  async (event) => {
+  monitored("onGroupParticipantsChanged", async (event) => {
     const before = event.data?.before.data() as Record<string, any> | undefined;
     const after = event.data?.after.data() as Record<string, any> | undefined;
     if (!before || !after) return;
@@ -227,7 +228,7 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
     }
 
     await commitInChunks(writes);
-  }
+  })
 );
 
 /**
@@ -237,7 +238,7 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
  */
 export const onGroupInfoChanged = onDocumentUpdated(
   'groups/{groupId}',
-  async (event) => {
+  monitored("onGroupInfoChanged", async (event) => {
     const before = event.data?.before.data() as Record<string, any> | undefined;
     const after = event.data?.after.data() as Record<string, any> | undefined;
     if (!before || !after) return;
@@ -264,5 +265,5 @@ export const onGroupInfoChanged = onDocumentUpdated(
         b.set(inboxThreadRef(uid, groupId), update, { merge: true })
     );
     await commitInChunks(writes);
-  }
+  })
 );

@@ -13,6 +13,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -151,15 +152,15 @@ async function runTiqets(key: string): Promise<number> {
 
 export const ingestTiqetsAttractions = onSchedule(
   { schedule: 'every 12 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] },
-  async () => {
+  monitored("ingestTiqetsAttractions", async () => {
     await runTiqets(TIQETS_API_KEY.value());
-  }
+  })
 );
 
 // Manual trigger: GET ?token=<TIQETS_API_KEY> to pull attractions now.
 export const runIngestTiqetsNow = onRequest(
   { timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] },
-  async (req, res) => {
+  monitored("runIngestTiqetsNow", async (req, res) => {
     const key = TIQETS_API_KEY.value();
     if (!key || req.query.token !== key) {
       res.status(403).send('Forbidden');
@@ -167,5 +168,5 @@ export const runIngestTiqetsNow = onRequest(
     }
     const count = await runTiqets(key);
     res.status(200).json({ ok: true, upserted: count });
-  }
+  })
 );

@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAdminAuditLog = exports.resolveSystemAlert = exports.createSystemAlert = exports.getSystemHealthMetrics = exports.getGeographicHeatmap = exports.getEngagementMetrics = exports.getRevenueMetrics = exports.getUserGrowthChart = exports.getUserActivityMetrics = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Verify Admin Permission
@@ -87,7 +88,7 @@ async function logAdminAction(adminId, action, targetType, targetId, details, ip
  * Get User Activity Metrics
  * Point 228: Real-time user activity
  */
-exports.getUserActivityMetrics = functions.https.onCall(async (data, context) => {
+exports.getUserActivityMetrics = functions.https.onCall((0, monitoring_1.monitored)("getUserActivityMetrics", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     try {
         const now = new Date();
@@ -180,12 +181,12 @@ exports.getUserActivityMetrics = functions.https.onCall(async (data, context) =>
         console.error('Error getting user activity metrics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get User Growth Chart
  * Point 229: User growth visualization
  */
-exports.getUserGrowthChart = functions.https.onCall(async (data, context) => {
+exports.getUserGrowthChart = functions.https.onCall((0, monitoring_1.monitored)("getUserGrowthChart", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     const { period = 'daily', days = 30 } = data;
     try {
@@ -246,12 +247,12 @@ exports.getUserGrowthChart = functions.https.onCall(async (data, context) => {
         console.error('Error getting user growth chart:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Revenue Metrics
  * Point 230: Revenue dashboard
  */
-exports.getRevenueMetrics = functions.https.onCall(async (data, context) => {
+exports.getRevenueMetrics = functions.https.onCall((0, monitoring_1.monitored)("getRevenueMetrics", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     try {
         const now = new Date();
@@ -346,7 +347,7 @@ exports.getRevenueMetrics = functions.https.onCall(async (data, context) => {
         console.error('Error getting revenue metrics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Calculate monthly price based on tier and billing period
  */
@@ -384,7 +385,7 @@ async function calculateRevenueForPeriod(startDate, endDate) {
  * Get Engagement Metrics
  * Point 231: Engagement dashboard
  */
-exports.getEngagementMetrics = functions.https.onCall(async (data, context) => {
+exports.getEngagementMetrics = functions.https.onCall((0, monitoring_1.monitored)("getEngagementMetrics", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     try {
         const now = new Date();
@@ -477,12 +478,12 @@ exports.getEngagementMetrics = functions.https.onCall(async (data, context) => {
         console.error('Error getting engagement metrics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Geographic Heatmap
  * Point 232: User distribution map
  */
-exports.getGeographicHeatmap = functions.https.onCall(async (data, context) => {
+exports.getGeographicHeatmap = functions.https.onCall((0, monitoring_1.monitored)("getGeographicHeatmap", async (data, context) => {
     var _a, _b;
     await verifyAdminPermission(context, 'viewDashboard');
     try {
@@ -533,12 +534,12 @@ exports.getGeographicHeatmap = functions.https.onCall(async (data, context) => {
         console.error('Error getting geographic heatmap:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get System Health Metrics
  * Point 233: System monitoring
  */
-exports.getSystemHealthMetrics = functions.https.onCall(async (data, context) => {
+exports.getSystemHealthMetrics = functions.https.onCall((0, monitoring_1.monitored)("getSystemHealthMetrics", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     try {
         const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
@@ -628,12 +629,12 @@ exports.getSystemHealthMetrics = functions.https.onCall(async (data, context) =>
         console.error('Error getting system health metrics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Create System Alert
  * Point 234: Alert creation and management
  */
-exports.createSystemAlert = functions.https.onCall(async (data, context) => {
+exports.createSystemAlert = functions.https.onCall((0, monitoring_1.monitored)("createSystemAlert", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     const { title, description, type, severity, metadata = {} } = data;
     try {
@@ -659,12 +660,12 @@ exports.createSystemAlert = functions.https.onCall(async (data, context) => {
         console.error('Error creating system alert:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Resolve System Alert
  * Point 234: Alert resolution
  */
-exports.resolveSystemAlert = functions.https.onCall(async (data, context) => {
+exports.resolveSystemAlert = functions.https.onCall((0, monitoring_1.monitored)("resolveSystemAlert", async (data, context) => {
     await verifyAdminPermission(context, 'viewDashboard');
     const { alertId } = data;
     const adminId = context.auth.uid;
@@ -681,12 +682,12 @@ exports.resolveSystemAlert = functions.https.onCall(async (data, context) => {
         console.error('Error resolving system alert:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Admin Audit Log
  * Point 235: View audit log
  */
-exports.getAdminAuditLog = functions.https.onCall(async (data, context) => {
+exports.getAdminAuditLog = functions.https.onCall((0, monitoring_1.monitored)("getAdminAuditLog", async (data, context) => {
     await verifyAdminPermission(context, 'viewAuditLog');
     const { limit = 100, offset = 0, adminId = null, action = null } = data;
     try {
@@ -710,5 +711,5 @@ exports.getAdminAuditLog = functions.https.onCall(async (data, context) => {
         console.error('Error getting audit log:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=adminDashboard.js.map

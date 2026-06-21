@@ -42,9 +42,10 @@ const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
 const grants_1 = require("./grants");
+const monitoring_1 = require("../shared/monitoring");
 const VALID_DURATIONS_DAYS = [7, 14, 30, 60, 90, 180, 365];
 const VALID_TIERS = ['BASIC', 'SILVER', 'GOLD', 'PLATINUM'];
-exports.upsertCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, async (request) => {
+exports.upsertCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("upsertCoupon", async (request) => {
     try {
         const adminUid = await (0, utils_1.verifyAdminAuth)(request.auth);
         const data = request.data;
@@ -133,8 +134,8 @@ exports.upsertCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 3
             throw err;
         throw (0, utils_1.handleError)(err);
     }
-});
-exports.listCoupons = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, async (request) => {
+}));
+exports.listCoupons = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("listCoupons", async (request) => {
     var _a, _b, _c;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -170,8 +171,8 @@ exports.listCoupons = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30
             throw err;
         throw (0, utils_1.handleError)(err);
     }
-});
-exports.getCouponRedemptions = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, async (request) => {
+}));
+exports.getCouponRedemptions = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("getCouponRedemptions", async (request) => {
     var _a, _b;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -198,8 +199,8 @@ exports.getCouponRedemptions = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             throw err;
         throw (0, utils_1.handleError)(err);
     }
-});
-exports.setCouponDisabled = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 15 }, async (request) => {
+}));
+exports.setCouponDisabled = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 15 }, (0, monitoring_1.monitored)("setCouponDisabled", async (request) => {
     var _a, _b, _c;
     try {
         const adminUid = await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -219,5 +220,5 @@ exports.setCouponDisabled = (0, https_1.onCall)({ memory: '512MiB', timeoutSecon
             throw err;
         throw (0, utils_1.handleError)(err);
     }
-});
+}));
 //# sourceMappingURL=adminCoupons.js.map

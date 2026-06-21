@@ -19325,6 +19325,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show original text'**
   String get groupShowOriginal;
+
+  /// No description provided for @eventsTabLiveEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Live Events'**
+  String get eventsTabLiveEvents;
+
+  /// No description provided for @globeLayerLiveEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Live Events'**
+  String get globeLayerLiveEvents;
 }
 
 class _AppLocalizationsDelegate

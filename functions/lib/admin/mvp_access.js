@@ -42,6 +42,7 @@ const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
+const monitoring_1 = require("../shared/monitoring");
 // MVP Release Dates
 const PREMIUM_ACCESS_DATE = new Date('2026-03-01T00:00:00Z'); // March 1st, 2026
 const BASIC_ACCESS_DATE = new Date('2026-03-15T00:00:00Z'); // March 15th, 2026
@@ -264,7 +265,7 @@ function getAccessDateForTier(tier) {
 exports.approveUser = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("approveUser", async (request) => {
     var _a, _b;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -327,12 +328,12 @@ exports.approveUser = (0, https_1.onCall)({
         (0, utils_1.logError)('Error approving user:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 2. Reject User
 exports.rejectUser = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("rejectUser", async (request) => {
     var _a, _b;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -389,12 +390,12 @@ exports.rejectUser = (0, https_1.onCall)({
         (0, utils_1.logError)('Error rejecting user:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 3. Update User Tier
 exports.updateUserTier = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("updateUserTier", async (request) => {
     var _a, _b;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -422,12 +423,12 @@ exports.updateUserTier = (0, https_1.onCall)({
         (0, utils_1.logError)('Error updating user tier:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 4. Get Pending Users
 exports.getPendingUsers = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getPendingUsers", async (request) => {
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
         const { limit = 50, startAfter } = request.data;
@@ -465,12 +466,12 @@ exports.getPendingUsers = (0, https_1.onCall)({
         (0, utils_1.logError)('Error fetching pending users:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 5. Bulk Approve Users
 exports.bulkApproveUsers = (0, https_1.onCall)({
     memory: '512MiB',
     timeoutSeconds: 300,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("bulkApproveUsers", async (request) => {
     var _a, _b;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -528,13 +529,13 @@ exports.bulkApproveUsers = (0, https_1.onCall)({
         (0, utils_1.logError)('Error bulk approving users:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // ========== BROADCAST NOTIFICATION FUNCTIONS ==========
 // 6. Send Broadcast Notification to All Users
 exports.sendBroadcastNotification = (0, https_1.onCall)({
     memory: '1GiB',
     timeoutSeconds: 540,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("sendBroadcastNotification", async (request) => {
     var _a;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
@@ -712,12 +713,12 @@ exports.sendBroadcastNotification = (0, https_1.onCall)({
         (0, utils_1.logError)('Error sending broadcast notification:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 7. Send Notification to Single User
 exports.sendNotificationToUser = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("sendNotificationToUser", async (request) => {
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
         const { userId, title, body, data } = request.data;
@@ -757,12 +758,12 @@ exports.sendNotificationToUser = (0, https_1.onCall)({
         (0, utils_1.logError)('Error sending notification to user:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 8. Get MVP Access Stats
 exports.getMvpAccessStats = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getMvpAccessStats", async (request) => {
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
         (0, utils_1.logInfo)('Fetching MVP access stats');
@@ -804,5 +805,5 @@ exports.getMvpAccessStats = (0, https_1.onCall)({
         (0, utils_1.logError)('Error fetching MVP access stats:', error);
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 //# sourceMappingURL=mvp_access.js.map

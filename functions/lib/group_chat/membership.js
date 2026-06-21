@@ -54,6 +54,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onGroupInfoChanged = exports.onGroupParticipantsChanged = exports.onGroupCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const INBOX_COL = 'user_group_inbox';
@@ -111,7 +112,7 @@ function seedWrites(groupId, uid, role, name, photoUrl, memberCount, preview, un
         }, { merge: true }),
     ];
 }
-exports.onGroupCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}', async (event) => {
+exports.onGroupCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}', (0, monitoring_1.monitored)("onGroupCreated", async (event) => {
     var _a, _b, _c;
     const snap = event.data;
     if (!snap)
@@ -138,8 +139,8 @@ exports.onGroupCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}', 
         sentAt: admin.firestore.FieldValue.serverTimestamp(),
     }));
     await commitInChunks(writes);
-});
-exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', async (event) => {
+}));
+exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', (0, monitoring_1.monitored)("onGroupParticipantsChanged", async (event) => {
     var _a, _b, _c, _d, _e;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -191,13 +192,13 @@ exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/
         }));
     }
     await commitInChunks(writes);
-});
+}));
 /**
  * onGroupInfoChanged — when the group name or photo changes, fan the new value
  * out to every member's inbox index so the group list / icon updates instantly
  * for everyone (not just the open chat). Cheap: one merge-set per member.
  */
-exports.onGroupInfoChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', async (event) => {
+exports.onGroupInfoChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', (0, monitoring_1.monitored)("onGroupInfoChanged", async (event) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -222,5 +223,5 @@ exports.onGroupInfoChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId
         update.photoUrl = afterPhoto;
     const writes = participants.map((uid) => (b) => b.set(inboxThreadRef(uid, groupId), update, { merge: true }));
     await commitInChunks(writes);
-});
+}));
 //# sourceMappingURL=membership.js.map

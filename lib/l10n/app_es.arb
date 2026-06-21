@@ -3700,5 +3700,7 @@
   "groupShowOriginal": "Mostrar texto original",
   "globeMyWorldMap": "Mi mapa del mundo",
   "globeLayerContacts": "Mi comunidad",
-  "globeLayerExperiences": "Experiencias"
+  "globeLayerExperiences": "Experiencias",
+  "eventsTabLiveEvents": "Eventos en vivo",
+  "globeLayerLiveEvents": "Eventos en vivo"
 }

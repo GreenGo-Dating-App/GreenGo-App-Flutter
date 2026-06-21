@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -52,7 +53,7 @@ async function logModerationAction(
  * Get Moderation Queue
  * Point 246: Fetch pending reports for review
  */
-export const getModerationQueue = functions.https.onCall(async (data, context) => {
+export const getModerationQueue = functions.https.onCall(monitored("getModerationQueue", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const {
@@ -117,13 +118,13 @@ export const getModerationQueue = functions.https.onCall(async (data, context) =
     console.error('Error getting moderation queue:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Moderation Review Item
  * Point 247: Detailed review interface with context
  */
-export const getModerationReviewItem = functions.https.onCall(async (data, context) => {
+export const getModerationReviewItem = functions.https.onCall(monitored("getModerationReviewItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -253,7 +254,7 @@ export const getModerationReviewItem = functions.https.onCall(async (data, conte
     console.error('Error getting moderation review item:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Generate AI Suggested Actions
@@ -332,7 +333,7 @@ function generateSuggestedActions(
  * Assign Moderation Item
  * Assign queue item to moderator
  */
-export const assignModerationItem = functions.https.onCall(async (data, context) => {
+export const assignModerationItem = functions.https.onCall(monitored("assignModerationItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -350,13 +351,13 @@ export const assignModerationItem = functions.https.onCall(async (data, context)
     console.error('Error assigning moderation item:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Take Moderation Action
  * Point 248: Execute moderation decision
  */
-export const takeModerationAction = functions.https.onCall(async (data, context) => {
+export const takeModerationAction = functions.https.onCall(monitored("takeModerationAction", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId, action, notes = null, parameters = {} } = data;
@@ -471,7 +472,7 @@ export const takeModerationAction = functions.https.onCall(async (data, context)
     console.error('Error taking moderation action:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Helper: Approve Content
@@ -588,7 +589,7 @@ async function requireVerification(userId: string): Promise<void> {
  * Bulk Moderation Action
  * Point 249: Process multiple items at once
  */
-export const executeBulkModeration = functions.https.onCall(async (data, context) => {
+export const executeBulkModeration = functions.https.onCall(monitored("executeBulkModeration", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueIds, action, notes = null } = data;
@@ -649,13 +650,13 @@ export const executeBulkModeration = functions.https.onCall(async (data, context
     console.error('Error executing bulk moderation:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Moderation Statistics
  * Point 250: Dashboard metrics for moderation
  */
-export const getModerationStatistics = functions.https.onCall(async (data, context) => {
+export const getModerationStatistics = functions.https.onCall(monitored("getModerationStatistics", async (data, context) => {
   await verifyModeratorPermission(context);
 
   try {
@@ -743,4 +744,4 @@ export const getModerationStatistics = functions.https.onCall(async (data, conte
     console.error('Error getting moderation statistics:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

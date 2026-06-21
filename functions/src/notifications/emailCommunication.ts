@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -16,7 +17,7 @@ const firestore = admin.firestore();
  * Send Transactional Email
  * Point 281: SendGrid integration
  */
-export const sendTransactionalEmail = functions.https.onCall(async (data, context) => {
+export const sendTransactionalEmail = functions.https.onCall(monitored("sendTransactionalEmail", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -70,7 +71,7 @@ export const sendTransactionalEmail = functions.https.onCall(async (data, contex
     console.error('Error sending email:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Start Welcome Email Series
@@ -78,7 +79,7 @@ export const sendTransactionalEmail = functions.https.onCall(async (data, contex
  */
 export const startWelcomeEmailSeries = functions.firestore
   .document('users/{userId}')
-  .onCreate(async (snap, context) => {
+  .onCreate(monitored("startWelcomeEmailSeries", async (snap, context) => {
     const userId = context.params.userId;
     const userData = snap.data();
 
@@ -147,7 +148,7 @@ export const startWelcomeEmailSeries = functions.firestore
     } catch (error) {
       console.error('Error starting welcome email series:', error);
     }
-  });
+  }));
 
 /**
  * Process Welcome Email Series
@@ -155,7 +156,7 @@ export const startWelcomeEmailSeries = functions.firestore
  */
 export const processWelcomeEmailSeries = functions.pubsub
   .schedule('0 10 * * *') // Daily at 10 AM
-  .onRun(async (context) => {
+  .onRun(monitored("processWelcomeEmailSeries", async (context) => {
     try {
       const seriesSnapshot = await firestore
         .collection('welcome_email_series')
@@ -209,7 +210,7 @@ export const processWelcomeEmailSeries = functions.pubsub
     } catch (error) {
       console.error('Error processing welcome email series:', error);
     }
-  });
+  }));
 
 /**
  * Send Weekly Digest Email
@@ -217,7 +218,7 @@ export const processWelcomeEmailSeries = functions.pubsub
  */
 export const sendWeeklyDigestEmails = functions.pubsub
   .schedule('0 9 * * 1') // Every Monday at 9 AM
-  .onRun(async (context) => {
+  .onRun(monitored("sendWeeklyDigestEmails", async (context) => {
     try {
       const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 
@@ -291,7 +292,7 @@ export const sendWeeklyDigestEmails = functions.pubsub
     } catch (error) {
       console.error('Error sending weekly digest emails:', error);
     }
-  });
+  }));
 
 /**
  * Send Re-engagement Campaign
@@ -299,7 +300,7 @@ export const sendWeeklyDigestEmails = functions.pubsub
  */
 export const sendReEngagementCampaign = functions.pubsub
   .schedule('0 11 * * *') // Daily at 11 AM
-  .onRun(async (context) => {
+  .onRun(monitored("sendReEngagementCampaign", async (context) => {
     try {
       const fourteenDaysAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
       const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
@@ -366,7 +367,7 @@ export const sendReEngagementCampaign = functions.pubsub
     } catch (error) {
       console.error('Error sending re-engagement campaign:', error);
     }
-  });
+  }));
 
 /**
  * Get Email Template

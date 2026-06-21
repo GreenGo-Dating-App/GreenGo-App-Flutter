@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
+import { monitored } from '../shared/monitoring';
 
 /**
  * Cohort Analysis Interfaces
@@ -62,7 +63,7 @@ export interface ChannelComparison {
  * Point 168: Complete cohort analysis
  */
 export const getCohortAnalysis = functions.https.onCall(
-  async (data, context) => {
+  monitored("getCohortAnalysis", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -99,7 +100,7 @@ export const getCohortAnalysis = functions.https.onCall(
       console.error('Error fetching cohort analysis:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**

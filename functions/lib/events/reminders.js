@@ -46,10 +46,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendEventReminders = void 0;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
-exports.sendEventReminders = (0, scheduler_1.onSchedule)('every 60 minutes', async () => {
+exports.sendEventReminders = (0, scheduler_1.onSchedule)('every 60 minutes', (0, monitoring_1.monitored)("sendEventReminders", async () => {
     var _a;
     const now = admin.firestore.Timestamp.now();
     const in24h = admin.firestore.Timestamp.fromMillis(now.toMillis() + 24 * 60 * 60 * 1000);
@@ -104,5 +105,5 @@ exports.sendEventReminders = (0, scheduler_1.onSchedule)('every 60 minutes', asy
         }
         await doc.ref.update({ reminderSent: true });
     }
-});
+}));
 //# sourceMappingURL=reminders.js.map

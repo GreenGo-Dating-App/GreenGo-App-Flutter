@@ -67,6 +67,12 @@ export {
   runIngestTiqetsNow,
 } from './external_events/tiqets';
 
+// Ticketmaster live-events ingester.
+export {
+  ingestTicketmaster,
+  runIngestTicketmasterNow,
+} from './external_events/ticketmaster';
+
 // Events — per-country aggregation for the globe.
 export {
   onEventWriteUpdateCountryStats,

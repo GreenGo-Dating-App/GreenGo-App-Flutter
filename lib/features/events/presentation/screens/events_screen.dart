@@ -59,7 +59,7 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
+    _tabController = TabController(length: 6, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -79,12 +79,12 @@ class _EventsScreenState extends State<EventsScreen>
     _loadUserLocation();
   }
 
-  // Tabs 2 (Attractions) & 3 (Experiences) are external (no GreenGo category
-  // tags) — the category filter bar is hidden there.
+  // External tabs (Live Events / Attractions / Experiences) have no GreenGo
+  // category tags — hide the category bar there. Native = Upcoming/Community/My.
   bool get _isNativeTab =>
       _tabController.index == 0 ||
       _tabController.index == 1 ||
-      _tabController.index == 4;
+      _tabController.index == 5;
 
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
@@ -136,6 +136,7 @@ class _EventsScreenState extends State<EventsScreen>
             tabs: [
               Tab(text: AppLocalizations.of(context)!.eventsTabUpcoming),
               Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
+              Tab(text: AppLocalizations.of(context)!.eventsTabLiveEvents),
               Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
               Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
               Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
@@ -216,6 +217,7 @@ class _EventsScreenState extends State<EventsScreen>
         children: [
           _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
           _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
+          _buildExperiencesTab('ticketmaster'),
           _buildExperiencesTab('tiqets'),
           _buildExperiencesTab('viator'),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
@@ -229,6 +231,7 @@ class _EventsScreenState extends State<EventsScreen>
       children: [
         _buildEventsList([]),
         _buildEventsList([]),
+        _buildExperiencesTab('ticketmaster'),
         _buildExperiencesTab('tiqets'),
         _buildExperiencesTab('viator'),
         _buildEventsList([]),

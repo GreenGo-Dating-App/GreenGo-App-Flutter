@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onMessageCreatedVocabulary = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const utils_1 = require("../shared/utils");
+const monitoring_1 = require("../shared/monitoring");
 const WORD_REGEX = /[a-zA-ZÀ-ÿ\u00C0-\u024F']+/g;
 const MIN_WORD_LENGTH = 2;
 const BATCH_SIZE = 450;
@@ -17,7 +18,7 @@ exports.onMessageCreatedVocabulary = (0, firestore_1.onDocumentCreated)({
     document: 'conversations/{conversationId}/messages/{messageId}',
     memory: '256MiB',
     timeoutSeconds: 30,
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onMessageCreatedVocabulary", async (event) => {
     var _a, _b;
     try {
         const messageData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -110,5 +111,5 @@ exports.onMessageCreatedVocabulary = (0, firestore_1.onDocumentCreated)({
         (0, utils_1.logError)('vocabularyProcessor: Error processing vocabulary.', error);
         throw error;
     }
-});
+}));
 //# sourceMappingURL=vocabularyProcessor.js.map

@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const auth = admin.auth();
 const firestore = admin.firestore();
@@ -13,7 +14,7 @@ const firestore = admin.firestore();
  * Create Admin User
  * Point 227: Create new admin with role assignment
  */
-export const createAdminUser = functions.https.onCall(async (data, context) => {
+export const createAdminUser = functions.https.onCall(monitored("createAdminUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -95,7 +96,7 @@ export const createAdminUser = functions.https.onCall(async (data, context) => {
     console.error('Error creating admin user:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get default permissions for a role
@@ -162,7 +163,7 @@ function getDefaultPermissions(role: string): string[] {
  * Update Admin Role
  * Point 227: Change admin role and permissions
  */
-export const updateAdminRole = functions.https.onCall(async (data, context) => {
+export const updateAdminRole = functions.https.onCall(monitored("updateAdminRole", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -229,13 +230,13 @@ export const updateAdminRole = functions.https.onCall(async (data, context) => {
     console.error('Error updating admin role:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Update Admin Permissions
  * Point 227: Grant or revoke specific permissions
  */
-export const updateAdminPermissions = functions.https.onCall(async (data, context) => {
+export const updateAdminPermissions = functions.https.onCall(monitored("updateAdminPermissions", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -275,13 +276,13 @@ export const updateAdminPermissions = functions.https.onCall(async (data, contex
     console.error('Error updating admin permissions:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Deactivate Admin User
  * Point 227: Disable admin access
  */
-export const deactivateAdminUser = functions.https.onCall(async (data, context) => {
+export const deactivateAdminUser = functions.https.onCall(monitored("deactivateAdminUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -333,13 +334,13 @@ export const deactivateAdminUser = functions.https.onCall(async (data, context) 
     console.error('Error deactivating admin user:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Admin Users List
  * Point 227: View all admin users
  */
-export const getAdminUsers = functions.https.onCall(async (data, context) => {
+export const getAdminUsers = functions.https.onCall(monitored("getAdminUsers", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -381,13 +382,13 @@ export const getAdminUsers = functions.https.onCall(async (data, context) => {
     console.error('Error getting admin users:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Record Admin Login
  * Trigger function to track admin logins
  */
-export const recordAdminLogin = functions.auth.user().onCreate(async (user) => {
+export const recordAdminLogin = functions.auth.user().onCreate(monitored("recordAdminLogin", async (user) => {
   // Check if user has admin custom claims
   const userRecord = await auth.getUser(user.uid);
   const customClaims = userRecord.customClaims || {};
@@ -407,4 +408,4 @@ export const recordAdminLogin = functions.auth.user().onCreate(async (user) => {
       });
     }
   }
-});
+}));

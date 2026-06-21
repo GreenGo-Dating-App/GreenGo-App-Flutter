@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getLessonStats = exports.updateLesson = exports.deleteLesson = exports.seedLessons = exports.getAdminLessons = exports.getTeacherAnalytics = exports.getUserProgressReport = exports.getLearningAnalytics = exports.updateLessonProgress = exports.purchaseLesson = exports.publishLesson = exports.createLesson = exports.reviewTeacherApplication = exports.submitTeacherApplication = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const db = admin.firestore();
 // ============= LESSON SEEDING DATA =============
 // Language content translations for 8 major languages
@@ -520,7 +521,7 @@ const weeklyThemes = [
 /**
  * Submit teacher application
  */
-exports.submitTeacherApplication = functions.https.onCall(async (data, context) => {
+exports.submitTeacherApplication = functions.https.onCall((0, monitoring_1.monitored)("submitTeacherApplication", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
     }
@@ -567,11 +568,11 @@ exports.submitTeacherApplication = functions.https.onCall(async (data, context) 
         rejectionReason: null,
     });
     return { success: true, applicationId: applicationRef.id };
-});
+}));
 /**
  * Admin: Review teacher application
  */
-exports.reviewTeacherApplication = functions.https.onCall(async (data, context) => {
+exports.reviewTeacherApplication = functions.https.onCall((0, monitoring_1.monitored)("reviewTeacherApplication", async (data, context) => {
     var _a;
     // Verify admin
     if (!context.auth) {
@@ -648,12 +649,12 @@ exports.reviewTeacherApplication = functions.https.onCall(async (data, context) 
     await batch.commit();
     // TODO: Send notification to applicant
     return { success: true };
-});
+}));
 // ============= LESSON MANAGEMENT =============
 /**
  * Teacher: Create a new lesson
  */
-exports.createLesson = functions.https.onCall(async (data, context) => {
+exports.createLesson = functions.https.onCall((0, monitoring_1.monitored)("createLesson", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
     }
@@ -714,11 +715,11 @@ exports.createLesson = functions.https.onCall(async (data, context) => {
         [`stats.lessonsByLanguage.${data.languageCode}`]: admin.firestore.FieldValue.increment(1),
     });
     return { success: true, lessonId: lessonRef.id };
-});
+}));
 /**
  * Teacher: Publish a lesson
  */
-exports.publishLesson = functions.https.onCall(async (data, context) => {
+exports.publishLesson = functions.https.onCall((0, monitoring_1.monitored)("publishLesson", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -756,12 +757,12 @@ exports.publishLesson = functions.https.onCall(async (data, context) => {
         "stats.publishedLessons": admin.firestore.FieldValue.increment(1),
     });
     return { success: true };
-});
+}));
 // ============= LESSON PURCHASE =============
 /**
  * Purchase a lesson with coins
  */
-exports.purchaseLesson = functions.https.onCall(async (data, context) => {
+exports.purchaseLesson = functions.https.onCall((0, monitoring_1.monitored)("purchaseLesson", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -872,12 +873,12 @@ exports.purchaseLesson = functions.https.onCall(async (data, context) => {
     });
     await batch.commit();
     return { success: true, accessId: accessRef.id, coinsPaid: lesson.coinPrice };
-});
+}));
 // ============= PROGRESS TRACKING =============
 /**
  * Update lesson progress
  */
-exports.updateLessonProgress = functions.https.onCall(async (data, context) => {
+exports.updateLessonProgress = functions.https.onCall((0, monitoring_1.monitored)("updateLessonProgress", async (data, context) => {
     var _a, _b;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -967,12 +968,12 @@ exports.updateLessonProgress = functions.https.onCall(async (data, context) => {
         isCompleted,
         xpEarned: sectionXp + (isCompleted ? lesson.xpReward : 0),
     };
-});
+}));
 // ============= ANALYTICS =============
 /**
  * Admin: Get learning analytics
  */
-exports.getLearningAnalytics = functions.https.onCall(async (data, context) => {
+exports.getLearningAnalytics = functions.https.onCall((0, monitoring_1.monitored)("getLearningAnalytics", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1071,11 +1072,11 @@ exports.getLearningAnalytics = functions.https.onCall(async (data, context) => {
         topLearners,
         popularLessons,
     };
-});
+}));
 /**
  * Admin: Get user progress report
  */
-exports.getUserProgressReport = functions.https.onCall(async (data, context) => {
+exports.getUserProgressReport = functions.https.onCall((0, monitoring_1.monitored)("getUserProgressReport", async (data, context) => {
     var _a, _b;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1129,11 +1130,11 @@ exports.getUserProgressReport = functions.https.onCall(async (data, context) => 
         languageProgress,
         recentLessons: lessonHistory.slice(0, 20),
     };
-});
+}));
 /**
  * Admin: Get teacher analytics
  */
-exports.getTeacherAnalytics = functions.https.onCall(async (data, context) => {
+exports.getTeacherAnalytics = functions.https.onCall((0, monitoring_1.monitored)("getTeacherAnalytics", async (data, context) => {
     var _a, _b, _c;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1204,12 +1205,12 @@ exports.getTeacherAnalytics = functions.https.onCall(async (data, context) => {
             recent: ratings.slice(0, 10),
         },
     };
-});
+}));
 // ============= ADMIN LESSON API =============
 /**
  * Admin: Get all lessons with filtering
  */
-exports.getAdminLessons = functions.https.onCall(async (data, context) => {
+exports.getAdminLessons = functions.https.onCall((0, monitoring_1.monitored)("getAdminLessons", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1263,12 +1264,12 @@ exports.getAdminLessons = functions.https.onCall(async (data, context) => {
             byLanguage: lessonsByLanguage,
         },
     };
-});
+}));
 /**
  * Admin: Seed lessons for supported languages (es, en, pt, pt-BR, it)
  * Creates 52 weeks (1 year) of lessons for each language
  */
-exports.seedLessons = functions.https.onCall(async (data, context) => {
+exports.seedLessons = functions.https.onCall((0, monitoring_1.monitored)("seedLessons", async (data, context) => {
     var _a;
     // Check if running in emulator mode - allow bypass for local development
     const isEmulator = process.env.FUNCTIONS_EMULATOR === "true";
@@ -1453,11 +1454,11 @@ exports.seedLessons = functions.https.onCall(async (data, context) => {
         message: `Seeded lessons for ${targetLanguages.length} languages`,
         results,
     };
-});
+}));
 /**
  * Admin: Delete lesson
  */
-exports.deleteLesson = functions.https.onCall(async (data, context) => {
+exports.deleteLesson = functions.https.onCall((0, monitoring_1.monitored)("deleteLesson", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1473,11 +1474,11 @@ exports.deleteLesson = functions.https.onCall(async (data, context) => {
     const { lessonId } = data;
     await db.collection("lessons").doc(lessonId).delete();
     return { success: true, deletedId: lessonId };
-});
+}));
 /**
  * Admin: Update lesson
  */
-exports.updateLesson = functions.https.onCall(async (data, context) => {
+exports.updateLesson = functions.https.onCall((0, monitoring_1.monitored)("updateLesson", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1497,11 +1498,11 @@ exports.updateLesson = functions.https.onCall(async (data, context) => {
     updates.updatedAt = admin.firestore.FieldValue.serverTimestamp();
     await db.collection("lessons").doc(lessonId).update(updates);
     return { success: true, updatedId: lessonId };
-});
+}));
 /**
  * Admin: Get lesson stats by language
  */
-exports.getLessonStats = functions.https.onCall(async (data, context) => {
+exports.getLessonStats = functions.https.onCall((0, monitoring_1.monitored)("getLessonStats", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
@@ -1540,5 +1541,5 @@ exports.getLessonStats = functions.https.onCall(async (data, context) => {
         languageStats: stats,
         totalLessonsAllLanguages: Object.values(stats).reduce((sum, s) => sum + s.totalLessons, 0),
     };
-});
+}));
 //# sourceMappingURL=languageLearningManager.js.map

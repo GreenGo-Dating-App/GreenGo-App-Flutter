@@ -48,6 +48,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onEventWriteUpdateCountryStats = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const PREVIEW_LIMIT = 3;
@@ -98,7 +99,7 @@ async function recomputeCountry(country) {
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 }
-exports.onEventWriteUpdateCountryStats = (0, firestore_1.onDocumentWritten)('events/{eventId}', async (event) => {
+exports.onEventWriteUpdateCountryStats = (0, firestore_1.onDocumentWritten)('events/{eventId}', (0, monitoring_1.monitored)("onEventWriteUpdateCountryStats", async (event) => {
     var _a, _b;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -113,5 +114,5 @@ exports.onEventWriteUpdateCountryStats = (0, firestore_1.onDocumentWritten)('eve
     if (countries.size === 0)
         return;
     await Promise.all([...countries].map(recomputeCountry));
-});
+}));
 //# sourceMappingURL=country_aggregate.js.map

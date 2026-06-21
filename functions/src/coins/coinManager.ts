@@ -6,6 +6,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -28,7 +29,7 @@ const MONTHLY_ALLOWANCE = {
  * Point 157: Verify and process coin purchases
  */
 export const verifyGooglePlayCoinPurchase = functions.https.onCall(
-  async (data, context) => {
+  monitored("verifyGooglePlayCoinPurchase", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -129,7 +130,7 @@ export const verifyGooglePlayCoinPurchase = functions.https.onCall(
       console.error('Error verifying coin purchase:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -137,7 +138,7 @@ export const verifyGooglePlayCoinPurchase = functions.https.onCall(
  * Point 157: Verify and process coin purchases
  */
 export const verifyAppStoreCoinPurchase = functions.https.onCall(
-  async (data, context) => {
+  monitored("verifyAppStoreCoinPurchase", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -175,7 +176,7 @@ export const verifyAppStoreCoinPurchase = functions.https.onCall(
       console.error('Error verifying App Store purchase:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // ===== Monthly Allowance =====
@@ -187,7 +188,7 @@ export const verifyAppStoreCoinPurchase = functions.https.onCall(
 export const grantMonthlyAllowances = functions.pubsub
   .schedule('0 0 1 * *') // First day of each month at midnight
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("grantMonthlyAllowances", async (context) => {
     const now = new Date();
     const year = now.getFullYear();
     const month = now.getMonth() + 1;
@@ -299,7 +300,7 @@ export const grantMonthlyAllowances = functions.pubsub
       console.error('Error granting monthly allowances:', error);
       throw error;
     }
-  });
+  }));
 
 // ===== Coin Expiration =====
 
@@ -310,7 +311,7 @@ export const grantMonthlyAllowances = functions.pubsub
 export const processExpiredCoins = functions.pubsub
   .schedule('0 2 * * *') // Daily at 2 AM UTC
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("processExpiredCoins", async (context) => {
     const now = admin.firestore.Timestamp.now();
 
     try {
@@ -388,7 +389,7 @@ export const processExpiredCoins = functions.pubsub
       console.error('Error processing expired coins:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Send expiration warnings
@@ -397,7 +398,7 @@ export const processExpiredCoins = functions.pubsub
 export const sendExpirationWarnings = functions.pubsub
   .schedule('0 10 * * *') // Daily at 10 AM UTC
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("sendExpirationWarnings", async (context) => {
     const now = new Date();
     const warningThreshold = new Date();
     warningThreshold.setDate(warningThreshold.getDate() + GRACE_WARNING_DAYS);
@@ -459,7 +460,7 @@ export const sendExpirationWarnings = functions.pubsub
       console.error('Error sending expiration warnings:', error);
       throw error;
     }
-  });
+  }));
 
 // ===== Helper Functions =====
 
@@ -479,7 +480,7 @@ function getCoinAmountFromPackage(packageId: string): number {
  * Point 160: Reward system
  */
 export const claimReward = functions.https.onCall(
-  async (data, context) => {
+  monitored("claimReward", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -595,7 +596,7 @@ export const claimReward = functions.https.onCall(
       console.error('Error claiming reward:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 function getReasonFromRewardId(rewardId: string): string {

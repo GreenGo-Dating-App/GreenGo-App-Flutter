@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -12,7 +13,7 @@ const firestore = admin.firestore();
  * Grant XP to User
  * Point 187: XP rewards for actions
  */
-export const grantXP = functions.https.onCall(async (data, context) => {
+export const grantXP = functions.https.onCall(monitored("grantXP", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -97,14 +98,14 @@ export const grantXP = functions.https.onCall(async (data, context) => {
     console.error('Error granting XP:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Track Achievement Progress
  * Points 176-185: Update achievement progress
  */
 export const trackAchievementProgress = functions.https.onCall(
-  async (data, context) => {
+  monitored("trackAchievementProgress", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -163,7 +164,7 @@ export const trackAchievementProgress = functions.https.onCall(
       console.error('Error tracking achievement progress:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -171,7 +172,7 @@ export const trackAchievementProgress = functions.https.onCall(
  * Points 176-185: Unlock achievement
  */
 export const unlockAchievementReward = functions.https.onCall(
-  async (data, context) => {
+  monitored("unlockAchievementReward", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -212,7 +213,7 @@ export const unlockAchievementReward = functions.https.onCall(
       console.error('Error unlocking achievement:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -220,7 +221,7 @@ export const unlockAchievementReward = functions.https.onCall(
  * Point 190: Level-based rewards
  */
 export const claimLevelRewards = functions.https.onCall(
-  async (data, context) => {
+  monitored("claimLevelRewards", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -269,7 +270,7 @@ export const claimLevelRewards = functions.https.onCall(
       console.error('Error claiming level rewards:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -277,7 +278,7 @@ export const claimLevelRewards = functions.https.onCall(
  * Point 197: Challenge tracking
  */
 export const trackChallengeProgress = functions.https.onCall(
-  async (data, context) => {
+  monitored("trackChallengeProgress", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -337,7 +338,7 @@ export const trackChallengeProgress = functions.https.onCall(
       console.error('Error tracking challenge progress:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -345,7 +346,7 @@ export const trackChallengeProgress = functions.https.onCall(
  * Point 198: Challenge rewards
  */
 export const claimChallengeReward = functions.https.onCall(
-  async (data, context) => {
+  monitored("claimChallengeReward", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -394,7 +395,7 @@ export const claimChallengeReward = functions.https.onCall(
       console.error('Error claiming challenge reward:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -404,7 +405,7 @@ export const claimChallengeReward = functions.https.onCall(
 export const resetDailyChallenges = functions.pubsub
   .schedule('0 0 * * *')
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("resetDailyChallenges", async (context) => {
     try {
       // Reset daily challenge progress for all users
       const batch = firestore.batch();
@@ -428,7 +429,7 @@ export const resetDailyChallenges = functions.pubsub
       console.error('Error resetting daily challenges:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Update Leaderboard Rankings
@@ -436,7 +437,7 @@ export const resetDailyChallenges = functions.pubsub
  */
 export const updateLeaderboardRankings = functions.pubsub
   .schedule('0 * * * *') // Every hour
-  .onRun(async (context) => {
+  .onRun(monitored("updateLeaderboardRankings", async (context) => {
     try {
       // Get all users sorted by totalXP
       const usersSnapshot = await firestore
@@ -461,7 +462,7 @@ export const updateLeaderboardRankings = functions.pubsub
       console.error('Error updating leaderboard:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Helper Functions

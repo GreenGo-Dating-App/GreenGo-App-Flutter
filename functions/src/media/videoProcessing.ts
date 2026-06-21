@@ -10,6 +10,7 @@ import * as os from 'os';
 import * as fs from 'fs';
 import * as ffmpeg from 'fluent-ffmpeg';
 import sharp from 'sharp';
+import { monitored } from '../shared/monitoring';
 
 const storage = admin.storage();
 const firestore = admin.firestore();
@@ -232,7 +233,7 @@ interface VideoMetadata {
  */
 export const generateVideoThumbnail = functions
   .runWith({ memory: '2GB', timeoutSeconds: 300 })
-  .https.onCall(async (data, context) => {
+  .https.onCall(monitored("generateVideoThumbnail", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -264,4 +265,4 @@ export const generateVideoThumbnail = functions
       console.error('Error in generateVideoThumbnail:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  });
+  }));

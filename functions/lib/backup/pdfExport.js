@@ -45,6 +45,7 @@ const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const storage_1 = require("@google-cloud/storage");
 const pdfkit_1 = __importDefault(require("pdfkit"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const storage = new storage_1.Storage();
 const EXPORT_BUCKET = process.env.BACKUP_BUCKET || 'greengo-chat-backups';
@@ -76,7 +77,7 @@ function formatDate(date, format) {
  */
 exports.exportConversationToPDF = functions
     .runWith({ memory: '1GB', timeoutSeconds: 300 })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("exportConversationToPDF", async (data, context) => {
     var _a, _b, _c, _d, _e, _f, _g, _h;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -353,12 +354,12 @@ exports.exportConversationToPDF = functions
         console.error('Error exporting conversation to PDF:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * List all PDF exports for a user
  * HTTP Callable Function
  */
-exports.listPDFExports = functions.https.onCall(async (data, context) => {
+exports.listPDFExports = functions.https.onCall((0, monitoring_1.monitored)("listPDFExports", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -387,7 +388,7 @@ exports.listPDFExports = functions.https.onCall(async (data, context) => {
         console.error('Error listing PDF exports:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Delete expired PDF exports
  * Scheduled to run daily
@@ -395,7 +396,7 @@ exports.listPDFExports = functions.https.onCall(async (data, context) => {
 exports.cleanupExpiredExports = functions.pubsub
     .schedule('every day 03:00')
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("cleanupExpiredExports", async (context) => {
     console.log('Starting cleanup of expired PDF exports...');
     try {
         const now = new Date();
@@ -434,5 +435,5 @@ exports.cleanupExpiredExports = functions.pubsub
         console.error('Error in cleanup:', error);
         throw error;
     }
-});
+}));
 //# sourceMappingURL=pdfExport.js.map

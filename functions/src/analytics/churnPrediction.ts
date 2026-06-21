@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -53,7 +54,7 @@ export interface FeatureWeights {
 export const trainChurnModel = functions.pubsub
   .schedule('0 2 * * 0') // Weekly on Sunday at 2 AM
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("trainChurnModel", async (context) => {
     try {
       // Create training dataset
       const createTrainingDataQuery = `
@@ -199,7 +200,7 @@ export const trainChurnModel = functions.pubsub
       console.error('Error training churn model:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Predict Churn for Users
@@ -208,7 +209,7 @@ export const trainChurnModel = functions.pubsub
 export const predictChurnDaily = functions.pubsub
   .schedule('0 3 * * *') // Daily at 3 AM
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("predictChurnDaily", async (context) => {
     try {
       // Get predictions for all active users
       const predictQuery = `
@@ -325,13 +326,13 @@ export const predictChurnDaily = functions.pubsub
       console.error('Error predicting churn:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Get Churn Prediction for User
  */
 export const getUserChurnPrediction = functions.https.onCall(
-  async (data, context) => {
+  monitored("getUserChurnPrediction", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -391,14 +392,14 @@ export const getUserChurnPrediction = functions.https.onCall(
       console.error('Error getting churn prediction:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
  * Get At-Risk Users
  */
 export const getAtRiskUsers = functions.https.onCall(
-  async (data, context) => {
+  monitored("getAtRiskUsers", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -455,7 +456,7 @@ export const getAtRiskUsers = functions.https.onCall(
       console.error('Error getting at-risk users:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**

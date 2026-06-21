@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -12,7 +13,7 @@ const firestore = admin.firestore();
  * Submit User Report
  * Points 211-213: Comprehensive reporting with anonymous option
  */
-export const submitReport = functions.https.onCall(async (data, context) => {
+export const submitReport = functions.https.onCall(monitored("submitReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -119,7 +120,7 @@ export const submitReport = functions.https.onCall(async (data, context) => {
     console.error('Error submitting report:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Issue Warning to User
@@ -175,7 +176,7 @@ export const issueWarning = async (
  * Review Report (Moderator Action)
  * Point 209: Escalation to human moderators
  */
-export const reviewReport = functions.https.onCall(async (data, context) => {
+export const reviewReport = functions.https.onCall(monitored("reviewReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -262,13 +263,13 @@ export const reviewReport = functions.https.onCall(async (data, context) => {
     console.error('Error reviewing report:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Submit Appeal
  * Point 210: Content appeal process
  */
-export const submitAppeal = functions.https.onCall(async (data, context) => {
+export const submitAppeal = functions.https.onCall(monitored("submitAppeal", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -337,13 +338,13 @@ export const submitAppeal = functions.https.onCall(async (data, context) => {
     console.error('Error submitting appeal:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Block User
  * Points 215-217: User blocking functionality
  */
-export const blockUser = functions.https.onCall(async (data, context) => {
+export const blockUser = functions.https.onCall(monitored("blockUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -422,13 +423,13 @@ export const blockUser = functions.https.onCall(async (data, context) => {
     console.error('Error blocking user:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Unblock User
  * Point 216: Block list management
  */
-export const unblockUser = functions.https.onCall(async (data, context) => {
+export const unblockUser = functions.https.onCall(monitored("unblockUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -461,13 +462,13 @@ export const unblockUser = functions.https.onCall(async (data, context) => {
     console.error('Error unblocking user:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Block List
  * Point 216: View blocked users
  */
-export const getBlockList = functions.https.onCall(async (data, context) => {
+export const getBlockList = functions.https.onCall(monitored("getBlockList", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -495,7 +496,7 @@ export const getBlockList = functions.https.onCall(async (data, context) => {
     console.error('Error getting block list:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Automatic Blocking for High Report Volume

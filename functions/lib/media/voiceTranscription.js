@@ -41,6 +41,7 @@ exports.batchTranscribe = exports.transcribeAudio = exports.transcribeVoiceMessa
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const speech_1 = require("@google-cloud/speech");
+const monitoring_1 = require("../shared/monitoring");
 const storage = admin.storage();
 const firestore = admin.firestore();
 const speechClient = new speech_1.SpeechClient();
@@ -159,7 +160,7 @@ exports.transcribeVoiceMessage = functions
  */
 exports.transcribeAudio = functions
     .runWith({ memory: '1GB', timeoutSeconds: 300 })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("transcribeAudio", async (data, context) => {
     var _a, _b, _c, _d;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -202,13 +203,13 @@ exports.transcribeAudio = functions
         console.error('Error in transcribeAudio:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Batch transcription for multiple voice messages
  */
 exports.batchTranscribe = functions
     .runWith({ memory: '2GB', timeoutSeconds: 540 })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("batchTranscribe", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -276,5 +277,5 @@ exports.batchTranscribe = functions
         console.error('Error in batchTranscribe:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=voiceTranscription.js.map

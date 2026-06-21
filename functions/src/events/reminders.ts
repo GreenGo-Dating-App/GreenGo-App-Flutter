@@ -11,12 +11,13 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
 const FCM_CHUNK = 500;
 
-export const sendEventReminders = onSchedule('every 60 minutes', async () => {
+export const sendEventReminders = onSchedule('every 60 minutes', monitored("sendEventReminders", async () => {
   const now = admin.firestore.Timestamp.now();
   const in24h = admin.firestore.Timestamp.fromMillis(
     now.toMillis() + 24 * 60 * 60 * 1000
@@ -73,4 +74,4 @@ export const sendEventReminders = onSchedule('every 60 minutes', async () => {
 
     await doc.ref.update({ reminderSent: true });
   }
-});
+}));

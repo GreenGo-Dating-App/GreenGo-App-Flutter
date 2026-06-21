@@ -42,6 +42,7 @@ const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const storage_1 = require("@google-cloud/storage");
 const crypto = __importStar(require("crypto"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const storage = new storage_1.Storage();
 const BACKUP_BUCKET = process.env.BACKUP_BUCKET || 'greengo-chat-backups';
@@ -77,7 +78,7 @@ function decryptData(encrypted, iv, authTag, encryptionKey) {
  * Backup a conversation to Cloud Storage
  * HTTP Callable Function
  */
-exports.backupConversation = functions.https.onCall(async (data, context) => {
+exports.backupConversation = functions.https.onCall((0, monitoring_1.monitored)("backupConversation", async (data, context) => {
     var _a, _b;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -174,12 +175,12 @@ exports.backupConversation = functions.https.onCall(async (data, context) => {
         console.error('Error backing up conversation:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Restore a conversation from Cloud Storage backup
  * HTTP Callable Function
  */
-exports.restoreConversation = functions.https.onCall(async (data, context) => {
+exports.restoreConversation = functions.https.onCall((0, monitoring_1.monitored)("restoreConversation", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -237,12 +238,12 @@ exports.restoreConversation = functions.https.onCall(async (data, context) => {
         console.error('Error restoring conversation:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * List all backups for a user
  * HTTP Callable Function
  */
-exports.listBackups = functions.https.onCall(async (data, context) => {
+exports.listBackups = functions.https.onCall((0, monitoring_1.monitored)("listBackups", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -271,12 +272,12 @@ exports.listBackups = functions.https.onCall(async (data, context) => {
         console.error('Error listing backups:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Delete a backup from Cloud Storage
  * HTTP Callable Function
  */
-exports.deleteBackup = functions.https.onCall(async (data, context) => {
+exports.deleteBackup = functions.https.onCall((0, monitoring_1.monitored)("deleteBackup", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -314,7 +315,7 @@ exports.deleteBackup = functions.https.onCall(async (data, context) => {
         console.error('Error deleting backup:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Scheduled function to auto-backup active conversations
  * Runs weekly
@@ -322,7 +323,7 @@ exports.deleteBackup = functions.https.onCall(async (data, context) => {
 exports.autoBackupConversations = functions.pubsub
     .schedule('every sunday 02:00')
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("autoBackupConversations", async (context) => {
     var _a, _b;
     console.log('Starting automatic conversation backups...');
     try {
@@ -419,5 +420,5 @@ exports.autoBackupConversations = functions.pubsub
         console.error('Error in auto-backup:', error);
         throw error;
     }
-});
+}));
 //# sourceMappingURL=conversationBackup.js.map

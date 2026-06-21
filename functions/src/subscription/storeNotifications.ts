@@ -25,6 +25,7 @@ import {
   getGooglePlaySubscriptionExpiry,
 } from '../shared/purchase_verification';
 import { PRODUCT_CONFIG } from './index';
+import { monitored } from '../shared/monitoring';
 
 const TIER_RANK: Record<string, number> = { BASIC: 0, SILVER: 1, GOLD: 2, PLATINUM: 3 };
 const BASE_PRODUCT_ID = 'greengo_base_membership';
@@ -138,7 +139,7 @@ async function markSubscription(
 
 export const appStoreNotificationsV2 = onRequest(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (req, res) => {
+  monitored("appStoreNotificationsV2", async (req, res) => {
     try {
       const signedPayload = req.body?.signedPayload;
       if (!signedPayload || typeof signedPayload !== 'string') {
@@ -202,7 +203,7 @@ export const appStoreNotificationsV2 = onRequest(
       // 500 lets Apple retry on transient failures.
       res.status(500).send('Error');
     }
-  },
+  }),
 );
 
 // ========== GOOGLE PLAY REAL-TIME DEVELOPER NOTIFICATIONS ==========
@@ -222,7 +223,7 @@ const PLAY = {
 
 export const playStoreNotifications = onRequest(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (req, res) => {
+  monitored("playStoreNotifications", async (req, res) => {
     try {
       // Pub/Sub push delivers the RTDN base64-encoded in message.data.
       const encoded = req.body?.message?.data;
@@ -286,5 +287,5 @@ export const playStoreNotifications = onRequest(
       logError('playStoreNotifications error:', err);
       res.status(500).send('Error');
     }
-  },
+  }),
 );

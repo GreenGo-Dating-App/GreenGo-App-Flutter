@@ -7,6 +7,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
+import { monitored } from '../shared/monitoring';
 
 const WORD_REGEX = /[a-zA-ZÀ-ÿ\u00C0-\u024F']+/g;
 const MIN_WORD_LENGTH = 2;
@@ -19,7 +20,7 @@ export const onMessageCreatedVocabulary = onDocumentCreated(
     memory: '256MiB',
     timeoutSeconds: 30,
   },
-  async (event) => {
+  monitored("onMessageCreatedVocabulary", async (event) => {
     try {
       const messageData = event.data?.data();
       if (!messageData) {
@@ -135,5 +136,5 @@ export const onMessageCreatedVocabulary = onDocumentCreated(
       logError('vocabularyProcessor: Error processing vocabulary.', error);
       throw error;
     }
-  }
+  })
 );

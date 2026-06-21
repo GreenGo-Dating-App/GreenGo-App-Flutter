@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getExpiringMediaStats = exports.triggerMediaCleanup = exports.markMediaAsDisappearing = exports.cleanupDisappearingMedia = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const storage = admin.storage();
 const firestore = admin.firestore();
 // Time to keep disappearing media (24 hours in milliseconds)
@@ -49,7 +50,7 @@ const DISAPPEARING_MEDIA_TTL = 24 * 60 * 60 * 1000;
  */
 exports.cleanupDisappearingMedia = functions.pubsub
     .schedule('every 1 hours')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("cleanupDisappearingMedia", async (context) => {
     var _a;
     console.log('Starting disappearing media cleanup...');
     const cutoffTime = new Date(Date.now() - DISAPPEARING_MEDIA_TTL);
@@ -122,13 +123,13 @@ exports.cleanupDisappearingMedia = functions.pubsub
         console.error('Error in cleanupDisappearingMedia:', error);
         throw error;
     }
-});
+}));
 /**
  * Mark message media as disappearing when it's created
  */
 exports.markMediaAsDisappearing = functions.firestore
     .document('conversations/{conversationId}/messages/{messageId}')
-    .onCreate(async (snapshot, context) => {
+    .onCreate((0, monitoring_1.monitored)("markMediaAsDisappearing", async (snapshot, context) => {
     var _a;
     const message = snapshot.data();
     // Check if this is a media message with disappearing flag
@@ -145,11 +146,11 @@ exports.markMediaAsDisappearing = functions.firestore
         console.log(`Message will expire at: ${expiryTime.toISOString()}`);
     }
     return null;
-});
+}));
 /**
  * HTTP function to manually trigger cleanup
  */
-exports.triggerMediaCleanup = functions.https.onCall(async (data, context) => {
+exports.triggerMediaCleanup = functions.https.onCall((0, monitoring_1.monitored)("triggerMediaCleanup", async (data, context) => {
     // Verify admin authentication
     if (!context.auth || !context.auth.token.admin) {
         throw new functions.https.HttpsError('permission-denied', 'Only admins can trigger manual cleanup');
@@ -199,11 +200,11 @@ exports.triggerMediaCleanup = functions.https.onCall(async (data, context) => {
         console.error('Error in triggerMediaCleanup:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get expiring media stats
  */
-exports.getExpiringMediaStats = functions.https.onCall(async (data, context) => {
+exports.getExpiringMediaStats = functions.https.onCall((0, monitoring_1.monitored)("getExpiringMediaStats", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -253,5 +254,5 @@ exports.getExpiringMediaStats = functions.https.onCall(async (data, context) => 
         console.error('Error in getExpiringMediaStats:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=disappearingMedia.js.map

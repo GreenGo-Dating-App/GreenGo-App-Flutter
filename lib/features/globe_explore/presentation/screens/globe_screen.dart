@@ -42,11 +42,13 @@ class _GlobeScreenState extends State<GlobeScreen> {
   /// Attractions (Tiqets), Experiences (Viator).
   bool _showContacts = true;
   bool _showCommunityEvents = false;
+  bool _showLiveEvents = false;
   bool _showAttractions = false;
   bool _showExperiences = false;
   List<Event> _nativeEvents = const [];
   List<EventCountryStat> _experienceStats = const []; // viator
   List<EventCountryStat> _attractionStats = const []; // tiqets
+  List<EventCountryStat> _liveEventStats = const []; // ticketmaster
   // Precise pins for the most-recently-tapped country (mini-image markers).
   List<ExternalEvent> _countryPins = const [];
 
@@ -56,6 +58,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
     _loadNativeEvents();
     _loadCountryStats('viator');
     _loadCountryStats('tiqets');
+    _loadCountryStats('ticketmaster');
   }
 
   /// Native GreenGo events with coordinates → plotted precisely.
@@ -87,8 +90,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
       setState(() {
         if (source == 'viator') {
           _experienceStats = stats;
-        } else {
+        } else if (source == 'tiqets') {
           _attractionStats = stats;
+        } else {
+          _liveEventStats = stats;
         }
       });
     } catch (_) {/* best-effort */}
@@ -109,6 +114,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
 
     if (_showAttractions) add(_attractionStats);
     if (_showExperiences) add(_experienceStats);
+    if (_showLiveEvents) add(_liveEventStats);
     return merged.values.toList();
   }
 
@@ -207,12 +213,13 @@ class _GlobeScreenState extends State<GlobeScreen> {
     final snap = await FirebaseFirestore.instance
         .collection('external_events')
         .where('country', isEqualTo: country)
-        .limit(100)
+        .limit(150)
         .get();
     final all = snap.docs.map(ExternalEvent.fromFirestore).toList()
       ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
     final exp = all.where((e) => e.source == 'viator').toList();
     final att = all.where((e) => e.source == 'tiqets').toList();
+    final live = all.where((e) => e.source == 'ticketmaster').toList();
     if (!mounted) return;
     final l10n = AppLocalizations.of(context)!;
 
@@ -276,7 +283,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                         fontSize: 18,
                         fontWeight: FontWeight.bold)),
               ),
-              if (exp.isEmpty && att.isEmpty)
+              if (exp.isEmpty && att.isEmpty && live.isEmpty)
                 Padding(
                   padding: const EdgeInsets.all(24),
                   child: Center(
@@ -285,6 +292,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
                             const TextStyle(color: AppColors.textSecondary)),
                   ),
                 ),
+              if (live.isNotEmpty) ...[
+                _countrySectionHeader(
+                    '${l10n.eventsTabLiveEvents} (${live.length})'),
+                ...live.map(tile),
+              ],
               if (att.isNotEmpty) ...[
                 _countrySectionHeader(
                     '${l10n.eventsTabAttractions} (${att.length})'),
@@ -344,6 +356,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
             tooltip: AppLocalizations.of(context)!.eventsTabCommunity,
             onPressed: () =>
                 setState(() => _showCommunityEvents = !_showCommunityEvents),
+          ),
+          IconButton(
+            icon: Icon(Icons.confirmation_number,
+                color: _showLiveEvents
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
+                size: 22),
+            tooltip: AppLocalizations.of(context)!.globeLayerLiveEvents,
+            onPressed: () =>
+                setState(() => _showLiveEvents = !_showLiveEvents),
           ),
           IconButton(
             icon: Icon(Icons.museum,
@@ -415,7 +437,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   data: data,
                   showMatched: _showContacts,
                   showDiscovery: false,
-                  showEvents: _showAttractions || _showExperiences,
+                  showEvents:
+                      _showAttractions || _showExperiences || _showLiveEvents,
                   eventStats: _activeStats,
                   preciseEvents:
                       _showCommunityEvents ? _nativeEvents : const [],
@@ -424,7 +447,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
                         eventId: e.id, currentUserId: userId),
                   ),
                   externalMarkers:
-                      (_showAttractions || _showExperiences) ? _countryPins : const [],
+                      (_showAttractions || _showExperiences || _showLiveEvents)
+                          ? _countryPins
+                          : const [],
                   onExternalTapped: (e) {
                     if (e.bookingUrl.isNotEmpty) {
                       launchUrl(Uri.parse(e.bookingUrl),

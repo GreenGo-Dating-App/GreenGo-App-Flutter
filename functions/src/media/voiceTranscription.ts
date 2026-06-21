@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { SpeechClient } from '@google-cloud/speech';
+import { monitored } from '../shared/monitoring';
 
 const storage = admin.storage();
 const firestore = admin.firestore();
@@ -147,7 +148,7 @@ export const transcribeVoiceMessage = functions
  */
 export const transcribeAudio = functions
   .runWith({ memory: '1GB', timeoutSeconds: 300 })
-  .https.onCall(async (data, context) => {
+  .https.onCall(monitored("transcribeAudio", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -205,14 +206,14 @@ export const transcribeAudio = functions
       console.error('Error in transcribeAudio:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  });
+  }));
 
 /**
  * Batch transcription for multiple voice messages
  */
 export const batchTranscribe = functions
   .runWith({ memory: '2GB', timeoutSeconds: 540 })
-  .https.onCall(async (data, context) => {
+  .https.onCall(monitored("batchTranscribe", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -301,4 +302,4 @@ export const batchTranscribe = functions
       console.error('Error in batchTranscribe:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  });
+  }));

@@ -13,6 +13,7 @@ import { onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import axios from 'axios';
 import { logInfo, logError } from '../shared/utils';
+import { monitored } from '../shared/monitoring';
 
 const db = admin.firestore();
 
@@ -80,7 +81,7 @@ export const onPresenceUpdate = onDocumentUpdated(
     memory: '256MiB',
     timeoutSeconds: 30,
   },
-  async (event) => {
+  monitored("onPresenceUpdate", async (event) => {
     const beforeData = event.data?.before?.data();
     const afterData = event.data?.after?.data();
 
@@ -139,5 +140,5 @@ export const onPresenceUpdate = onDocumentUpdated(
     } catch (error) {
       logError(`onPresenceUpdate: Failed to update ${userId}: ${error}`);
     }
-  },
+  }),
 );

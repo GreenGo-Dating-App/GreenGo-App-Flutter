@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendReEngagementCampaign = exports.sendWeeklyDigestEmails = exports.processWelcomeEmailSeries = exports.startWelcomeEmailSeries = exports.sendTransactionalEmail = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 // Note: In production, install @sendgrid/mail: npm install @sendgrid/mail
 // import * as sgMail from '@sendgrid/mail';
@@ -48,7 +49,7 @@ const firestore = admin.firestore();
  * Send Transactional Email
  * Point 281: SendGrid integration
  */
-exports.sendTransactionalEmail = functions.https.onCall(async (data, context) => {
+exports.sendTransactionalEmail = functions.https.onCall((0, monitoring_1.monitored)("sendTransactionalEmail", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -93,14 +94,14 @@ exports.sendTransactionalEmail = functions.https.onCall(async (data, context) =>
         console.error('Error sending email:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Start Welcome Email Series
  * Point 283: 7-day onboarding emails
  */
 exports.startWelcomeEmailSeries = functions.firestore
     .document('users/{userId}')
-    .onCreate(async (snap, context) => {
+    .onCreate((0, monitoring_1.monitored)("startWelcomeEmailSeries", async (snap, context) => {
     const userId = context.params.userId;
     const userData = snap.data();
     try {
@@ -164,14 +165,14 @@ exports.startWelcomeEmailSeries = functions.firestore
     catch (error) {
         console.error('Error starting welcome email series:', error);
     }
-});
+}));
 /**
  * Process Welcome Email Series
  * Scheduled function to send follow-up emails
  */
 exports.processWelcomeEmailSeries = functions.pubsub
     .schedule('0 10 * * *') // Daily at 10 AM
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("processWelcomeEmailSeries", async (context) => {
     try {
         const seriesSnapshot = await firestore
             .collection('welcome_email_series')
@@ -214,14 +215,14 @@ exports.processWelcomeEmailSeries = functions.pubsub
     catch (error) {
         console.error('Error processing welcome email series:', error);
     }
-});
+}));
 /**
  * Send Weekly Digest Email
  * Point 284: Weekly summary emails
  */
 exports.sendWeeklyDigestEmails = functions.pubsub
     .schedule('0 9 * * 1') // Every Monday at 9 AM
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("sendWeeklyDigestEmails", async (context) => {
     try {
         const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
         // Get all active users
@@ -283,14 +284,14 @@ exports.sendWeeklyDigestEmails = functions.pubsub
     catch (error) {
         console.error('Error sending weekly digest emails:', error);
     }
-});
+}));
 /**
  * Send Re-engagement Campaign
  * Point 285: Dormant user emails with personalization
  */
 exports.sendReEngagementCampaign = functions.pubsub
     .schedule('0 11 * * *') // Daily at 11 AM
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("sendReEngagementCampaign", async (context) => {
     try {
         const fourteenDaysAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
         const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
@@ -344,7 +345,7 @@ exports.sendReEngagementCampaign = functions.pubsub
     catch (error) {
         console.error('Error sending re-engagement campaign:', error);
     }
-});
+}));
 /**
  * Get Email Template
  * Point 282: Black & gold branded templates

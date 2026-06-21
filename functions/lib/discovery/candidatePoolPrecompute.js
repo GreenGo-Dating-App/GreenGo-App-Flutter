@@ -52,6 +52,7 @@ const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 // ───────── Constants ─────────
 const AGE_BUCKETS = [
     { min: 18, max: 24 },
@@ -245,7 +246,7 @@ exports.precomputeCandidatePools = (0, scheduler_1.onSchedule)({
     schedule: 'every 10 minutes',
     timeoutSeconds: 540,
     memory: '1GiB',
-}, async () => {
+}, (0, monitoring_1.monitored)("precomputeCandidatePools", async () => {
     try {
         (0, utils_1.logInfo)('Starting candidate pool pre-computation');
         const result = await buildPools();
@@ -255,14 +256,14 @@ exports.precomputeCandidatePools = (0, scheduler_1.onSchedule)({
         (0, utils_1.logError)('Candidate pool pre-computation failed', error);
         throw error;
     }
-});
+}));
 /**
  * Callable function: allows admins to trigger a manual pool rebuild.
  */
 exports.triggerPoolRecompute = (0, https_1.onCall)({
     memory: '1GiB',
     timeoutSeconds: 540,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("triggerPoolRecompute", async (request) => {
     // Only authenticated users can trigger (admin check optional)
     if (!request.auth) {
         throw new Error('Authentication required');
@@ -276,14 +277,14 @@ exports.triggerPoolRecompute = (0, https_1.onCall)({
         (0, utils_1.logError)('Manual pool re-computation failed', error);
         throw error;
     }
-});
+}));
 /**
  * Get pool metadata: returns list of all pools with counts.
  */
 exports.getCandidatePoolStats = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 30,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getCandidatePoolStats", async (request) => {
     if (!request.auth) {
         throw new Error('Authentication required');
     }
@@ -304,5 +305,5 @@ exports.getCandidatePoolStats = (0, https_1.onCall)({
         totalMembers: pools.reduce((sum, p) => sum + (p.count || 0), 0),
         pools,
     };
-});
+}));
 //# sourceMappingURL=candidatePoolPrecompute.js.map

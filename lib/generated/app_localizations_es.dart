@@ -10967,4 +10967,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get groupShowOriginal => 'Mostrar texto original';
+
+  @override
+  String get eventsTabLiveEvents => 'Eventos en vivo';
+
+  @override
+  String get globeLayerLiveEvents => 'Eventos en vivo';
 }

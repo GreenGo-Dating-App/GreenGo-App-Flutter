@@ -40,13 +40,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.cleanupExpiredReactions = exports.getCallStatistics = exports.getCallHistory = exports.uploadCustomBackground = exports.sendInCallReaction = exports.toggleEchoCancellation = exports.toggleNoiseSuppression = exports.stopScreenSharing = exports.startScreenSharing = exports.enablePictureInPicture = exports.toggleBeautyMode = exports.applyARFilter = exports.enableVirtualBackground = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const storage = admin.storage();
 /**
  * Enable Virtual Background
  * Point 132: ML Kit image segmentation
  */
-exports.enableVirtualBackground = functions.https.onCall(async (data, context) => {
+exports.enableVirtualBackground = functions.https.onCall((0, monitoring_1.monitored)("enableVirtualBackground", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -83,12 +84,12 @@ exports.enableVirtualBackground = functions.https.onCall(async (data, context) =
         console.error('Error enabling virtual background:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Apply AR Filter
  * Point 133: Face filters (beauty mode, face effects)
  */
-exports.applyARFilter = functions.https.onCall(async (data, context) => {
+exports.applyARFilter = functions.https.onCall((0, monitoring_1.monitored)("applyARFilter", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -130,12 +131,12 @@ exports.applyARFilter = functions.https.onCall(async (data, context) => {
         console.error('Error applying AR filter:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Toggle Beauty Mode
  * Point 133: Skin smoothing and enhancement
  */
-exports.toggleBeautyMode = functions.https.onCall(async (data, context) => {
+exports.toggleBeautyMode = functions.https.onCall((0, monitoring_1.monitored)("toggleBeautyMode", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -170,12 +171,12 @@ exports.toggleBeautyMode = functions.https.onCall(async (data, context) => {
         console.error('Error toggling beauty mode:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Enable Picture-in-Picture Mode
  * Point 134: PiP for multitasking
  */
-exports.enablePictureInPicture = functions.https.onCall(async (data, context) => {
+exports.enablePictureInPicture = functions.https.onCall((0, monitoring_1.monitored)("enablePictureInPicture", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -202,12 +203,12 @@ exports.enablePictureInPicture = functions.https.onCall(async (data, context) =>
         console.error('Error enabling picture-in-picture:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Start Screen Sharing
  * Point 135: Premium screen sharing
  */
-exports.startScreenSharing = functions.https.onCall(async (data, context) => {
+exports.startScreenSharing = functions.https.onCall((0, monitoring_1.monitored)("startScreenSharing", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -247,12 +248,12 @@ exports.startScreenSharing = functions.https.onCall(async (data, context) => {
         console.error('Error starting screen sharing:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Stop Screen Sharing
  * Point 135: End screen sharing
  */
-exports.stopScreenSharing = functions.https.onCall(async (data, context) => {
+exports.stopScreenSharing = functions.https.onCall((0, monitoring_1.monitored)("stopScreenSharing", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -282,12 +283,12 @@ exports.stopScreenSharing = functions.https.onCall(async (data, context) => {
         console.error('Error stopping screen sharing:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Toggle Noise Suppression
  * Point 136: AI noise cancellation
  */
-exports.toggleNoiseSuppression = functions.https.onCall(async (data, context) => {
+exports.toggleNoiseSuppression = functions.https.onCall((0, monitoring_1.monitored)("toggleNoiseSuppression", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -314,12 +315,12 @@ exports.toggleNoiseSuppression = functions.https.onCall(async (data, context) =>
         console.error('Error toggling noise suppression:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Toggle Echo Cancellation
  * Point 136: Echo cancellation
  */
-exports.toggleEchoCancellation = functions.https.onCall(async (data, context) => {
+exports.toggleEchoCancellation = functions.https.onCall((0, monitoring_1.monitored)("toggleEchoCancellation", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -346,12 +347,12 @@ exports.toggleEchoCancellation = functions.https.onCall(async (data, context) =>
         console.error('Error toggling echo cancellation:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Send In-Call Reaction
  * Point 137: Emoji reactions during calls
  */
-exports.sendInCallReaction = functions.https.onCall(async (data, context) => {
+exports.sendInCallReaction = functions.https.onCall((0, monitoring_1.monitored)("sendInCallReaction", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -389,12 +390,12 @@ exports.sendInCallReaction = functions.https.onCall(async (data, context) => {
         console.error('Error sending in-call reaction:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Upload Custom Virtual Background
  * Point 132: Custom background images
  */
-exports.uploadCustomBackground = functions.https.onCall(async (data, context) => {
+exports.uploadCustomBackground = functions.https.onCall((0, monitoring_1.monitored)("uploadCustomBackground", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -448,12 +449,12 @@ exports.uploadCustomBackground = functions.https.onCall(async (data, context) =>
         console.error('Error uploading custom background:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Call History
  * Point 128: Retrieve user's call history
  */
-exports.getCallHistory = functions.https.onCall(async (data, context) => {
+exports.getCallHistory = functions.https.onCall((0, monitoring_1.monitored)("getCallHistory", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -477,12 +478,12 @@ exports.getCallHistory = functions.https.onCall(async (data, context) => {
         console.error('Error getting call history:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Call Statistics
  * Point 130: User call statistics dashboard
  */
-exports.getCallStatistics = functions.https.onCall(async (data, context) => {
+exports.getCallStatistics = functions.https.onCall((0, monitoring_1.monitored)("getCallStatistics", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -516,14 +517,14 @@ exports.getCallStatistics = functions.https.onCall(async (data, context) => {
         console.error('Error getting call statistics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Cleanup Expired Call Reactions
  * Scheduled function to remove old reactions
  */
 exports.cleanupExpiredReactions = functions.pubsub
     .schedule('every 5 minutes')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("cleanupExpiredReactions", async (context) => {
     try {
         const now = admin.firestore.Timestamp.now();
         // Get all active calls
@@ -550,5 +551,5 @@ exports.cleanupExpiredReactions = functions.pubsub
     catch (error) {
         console.error('Error cleaning up expired reactions:', error);
     }
-});
+}));
 //# sourceMappingURL=videoCallFeatures.js.map

@@ -17,6 +17,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall } from 'firebase-functions/v2/https';
 import { db, FieldValue, logInfo, logError, chunk } from '../shared/utils';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 // ───────── Constants ─────────
 
@@ -255,7 +256,7 @@ export const precomputeCandidatePools = onSchedule(
     timeoutSeconds: 540,
     memory: '1GiB',
   },
-  async () => {
+  monitored("precomputeCandidatePools", async () => {
     try {
       logInfo('Starting candidate pool pre-computation');
       const result = await buildPools();
@@ -264,7 +265,7 @@ export const precomputeCandidatePools = onSchedule(
       logError('Candidate pool pre-computation failed', error);
       throw error;
     }
-  }
+  })
 );
 
 /**
@@ -275,7 +276,7 @@ export const triggerPoolRecompute = onCall(
     memory: '1GiB',
     timeoutSeconds: 540,
   },
-  async (request) => {
+  monitored("triggerPoolRecompute", async (request) => {
     // Only authenticated users can trigger (admin check optional)
     if (!request.auth) {
       throw new Error('Authentication required');
@@ -289,7 +290,7 @@ export const triggerPoolRecompute = onCall(
       logError('Manual pool re-computation failed', error);
       throw error;
     }
-  }
+  })
 );
 
 /**
@@ -300,7 +301,7 @@ export const getCandidatePoolStats = onCall(
     memory: '256MiB',
     timeoutSeconds: 30,
   },
-  async (request) => {
+  monitored("getCandidatePoolStats", async (request) => {
     if (!request.auth) {
       throw new Error('Authentication required');
     }
@@ -323,5 +324,5 @@ export const getCandidatePoolStats = onCall(
       totalMembers: pools.reduce((sum, p) => sum + (p.count || 0), 0),
       pools,
     };
-  }
+  })
 );

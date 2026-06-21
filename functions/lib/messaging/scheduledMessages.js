@@ -40,13 +40,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getScheduledMessages = exports.cancelScheduledMessage = exports.scheduleMessage = exports.sendScheduledMessages = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Scheduled function that runs every minute to send scheduled messages
  */
 exports.sendScheduledMessages = functions.pubsub
     .schedule('every 1 minutes')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("sendScheduledMessages", async (context) => {
     console.log('Checking for scheduled messages to send...');
     const now = new Date();
     try {
@@ -113,11 +114,11 @@ exports.sendScheduledMessages = functions.pubsub
         console.error('Error sending scheduled messages:', error);
         throw error;
     }
-});
+}));
 /**
  * Schedule a message for later delivery
  */
-exports.scheduleMessage = functions.https.onCall(async (data, context) => {
+exports.scheduleMessage = functions.https.onCall((0, monitoring_1.monitored)("scheduleMessage", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -181,11 +182,11 @@ exports.scheduleMessage = functions.https.onCall(async (data, context) => {
         console.error('Error scheduling message:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Cancel a scheduled message
  */
-exports.cancelScheduledMessage = functions.https.onCall(async (data, context) => {
+exports.cancelScheduledMessage = functions.https.onCall((0, monitoring_1.monitored)("cancelScheduledMessage", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -224,11 +225,11 @@ exports.cancelScheduledMessage = functions.https.onCall(async (data, context) =>
         console.error('Error cancelling scheduled message:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get all scheduled messages for a conversation
  */
-exports.getScheduledMessages = functions.https.onCall(async (data, context) => {
+exports.getScheduledMessages = functions.https.onCall((0, monitoring_1.monitored)("getScheduledMessages", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -261,5 +262,5 @@ exports.getScheduledMessages = functions.https.onCall(async (data, context) => {
         console.error('Error getting scheduled messages:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=scheduledMessages.js.map

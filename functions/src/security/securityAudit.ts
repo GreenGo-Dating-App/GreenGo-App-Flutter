@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 // Stub the SecurityAuditSuite (original import commented out due to compilation issues)
 // import { SecurityAuditSuite } from '../../../security_audit/security_test_suite';
@@ -40,7 +41,7 @@ export const runSecurityAudit = functions
     timeoutSeconds: 540, // 9 minutes
     memory: '2GB',
   })
-  .https.onCall(async (data, context) => {
+  .https.onCall(monitored("runSecurityAudit", async (data, context) => {
     // Verify admin access
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -113,7 +114,7 @@ export const runSecurityAudit = functions
       console.error('Error running security audit:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  });
+  }));
 
 /**
  * Schedule Weekly Security Audit
@@ -122,7 +123,7 @@ export const runSecurityAudit = functions
 export const scheduledSecurityAudit = functions.pubsub
   .schedule('0 2 * * 1') // Every Monday at 2 AM
   .timeZone('America/New_York')
-  .onRun(async (context) => {
+  .onRun(monitored("scheduledSecurityAudit", async (context) => {
     try {
       console.log('Running scheduled security audit...');
 
@@ -149,12 +150,12 @@ export const scheduledSecurityAudit = functions.pubsub
     } catch (error) {
       console.error('Error in scheduled security audit:', error);
     }
-  });
+  }));
 
 /**
  * Get Security Audit Report
  */
-export const getSecurityAuditReport = functions.https.onCall(async (data, context) => {
+export const getSecurityAuditReport = functions.https.onCall(monitored("getSecurityAuditReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -191,12 +192,12 @@ export const getSecurityAuditReport = functions.https.onCall(async (data, contex
     console.error('Error getting security audit report:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * List Security Audit Reports
  */
-export const listSecurityAuditReports = functions.https.onCall(async (data, context) => {
+export const listSecurityAuditReports = functions.https.onCall(monitored("listSecurityAuditReports", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -235,7 +236,7 @@ export const listSecurityAuditReports = functions.https.onCall(async (data, cont
     console.error('Error listing security audit reports:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Generate PDF Report
@@ -395,7 +396,7 @@ async function notifyAdminsOfAuditResults(report: any, reportId: string): Promis
  */
 export const cleanupOldAuditReports = functions.pubsub
   .schedule('0 3 * * 1') // Every Monday at 3 AM (after audit)
-  .onRun(async (context) => {
+  .onRun(monitored("cleanupOldAuditReports", async (context) => {
     try {
       const reportsSnapshot = await firestore
         .collection('security_audit_reports')
@@ -428,4 +429,4 @@ export const cleanupOldAuditReports = functions.pubsub
     } catch (error) {
       console.error('Error cleaning up old audit reports:', error);
     }
-  });
+  }));

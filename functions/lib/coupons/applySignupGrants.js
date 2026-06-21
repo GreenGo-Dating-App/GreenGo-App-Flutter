@@ -57,12 +57,13 @@ const utils_1 = require("../shared/utils");
 const grants_1 = require("../shared/grants");
 const couponEmails_1 = require("../notifications/couponEmails");
 const grants_2 = require("./grants");
+const monitoring_1 = require("../shared/monitoring");
 const COIN_EXPIRATION_DAYS = 365;
 exports.applySignupGrants = (0, firestore_1.onDocumentCreated)({
     document: 'users/{userId}',
     memory: '512MiB',
     timeoutSeconds: 60,
-}, async (event) => {
+}, (0, monitoring_1.monitored)("applySignupGrants", async (event) => {
     var _a, _b;
     const uid = event.params.userId;
     const userData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -124,7 +125,7 @@ exports.applySignupGrants = (0, firestore_1.onDocumentCreated)({
         });
     }
     (0, utils_1.logInfo)(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
-});
+}));
 /**
  * Writes `signupGrantsApplied` + `signupGrantsAppliedAt` to the profile only
  * if no prior invocation already wrote `signupGrantsAppliedAt`. Returns true

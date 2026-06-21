@@ -54,6 +54,7 @@ const scheduler_1 = require("firebase-functions/v2/scheduler");
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
+const monitoring_1 = require("../shared/monitoring");
 // Brevo API configuration
 const BREVO_API_URL = 'https://api.brevo.com/v3';
 const BREVO_API_KEY = process.env.BREVO_API_KEY || '';
@@ -1005,7 +1006,7 @@ async function updateEmailAnalytics(category, trigger, action) {
 exports.sendBrevoEmailFunction = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("sendBrevoEmailFunction", async (request) => {
     try {
         await (0, utils_1.verifyAuth)(request.auth);
         const { userId, trigger, variables, overrideEmail } = request.data;
@@ -1022,12 +1023,12 @@ exports.sendBrevoEmailFunction = (0, https_1.onCall)({
     catch (error) {
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 2. Get Email Templates (HTTP Callable)
 exports.getBrevoEmailTemplates = (0, https_1.onCall)({
     memory: '128MiB',
     timeoutSeconds: 30,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getBrevoEmailTemplates", async (request) => {
     try {
         await (0, utils_1.verifyAuth)(request.auth);
         const snapshot = await utils_1.db.collection('email_templates').get();
@@ -1043,11 +1044,11 @@ exports.getBrevoEmailTemplates = (0, https_1.onCall)({
     catch (error) {
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 exports.updateBrevoEmailTemplate = (0, https_1.onCall)({
     memory: '128MiB',
     timeoutSeconds: 30,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("updateBrevoEmailTemplate", async (request) => {
     try {
         await (0, utils_1.verifyAuth)(request.auth);
         const { trigger, name, subject, htmlContent, textContent, isActive, variables } = request.data;
@@ -1079,11 +1080,11 @@ exports.updateBrevoEmailTemplate = (0, https_1.onCall)({
     catch (error) {
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 exports.getBrevoEmailLogs = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getBrevoEmailLogs", async (request) => {
     try {
         await (0, utils_1.verifyAuth)(request.auth);
         const { userId, category, trigger, status, limit = 50, offset = 0 } = request.data;
@@ -1111,11 +1112,11 @@ exports.getBrevoEmailLogs = (0, https_1.onCall)({
     catch (error) {
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 exports.getBrevoEmailAnalytics = (0, https_1.onCall)({
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async (request) => {
+}, (0, monitoring_1.monitored)("getBrevoEmailAnalytics", async (request) => {
     try {
         await (0, utils_1.verifyAuth)(request.auth);
         const { startDate, endDate } = request.data;
@@ -1155,7 +1156,7 @@ exports.getBrevoEmailAnalytics = (0, https_1.onCall)({
     catch (error) {
         throw (0, utils_1.handleError)(error);
     }
-});
+}));
 // 6. Process Brevo Webhooks (HTTP endpoint)
 // Note: This would need an HTTP trigger for Brevo webhook callbacks
 // export const brevoWebhook = onRequest(...)
@@ -1163,7 +1164,7 @@ exports.getBrevoEmailAnalytics = (0, https_1.onCall)({
 // TRIGGER-BASED EMAIL FUNCTIONS
 // ============================================================================
 // User Created - Send Welcome Email
-exports.onUserCreatedSendWelcome = (0, firestore_1.onDocumentCreated)('users/{userId}', async (event) => {
+exports.onUserCreatedSendWelcome = (0, firestore_1.onDocumentCreated)('users/{userId}', (0, monitoring_1.monitored)("onUserCreatedSendWelcome", async (event) => {
     var _a;
     const userId = event.params.userId;
     const userData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -1183,9 +1184,9 @@ exports.onUserCreatedSendWelcome = (0, firestore_1.onDocumentCreated)('users/{us
     catch (error) {
         (0, utils_1.logError)(`Failed to send welcome email to ${userId}:`, error);
     }
-});
+}));
 // Subscription Updated - Send Appropriate Email
-exports.onSubscriptionUpdated = (0, firestore_1.onDocumentUpdated)('subscriptions/{subscriptionId}', async (event) => {
+exports.onSubscriptionUpdated = (0, firestore_1.onDocumentUpdated)('subscriptions/{subscriptionId}', (0, monitoring_1.monitored)("onSubscriptionUpdated", async (event) => {
     var _a, _b;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -1253,9 +1254,9 @@ exports.onSubscriptionUpdated = (0, firestore_1.onDocumentUpdated)('subscription
     catch (error) {
         (0, utils_1.logError)(`Failed to send subscription email for ${userId}:`, error);
     }
-});
+}));
 // Photo Moderation - Send Approval/Rejection Email
-exports.onPhotoModerationUpdated = (0, firestore_1.onDocumentUpdated)('photo_moderation/{moderationId}', async (event) => {
+exports.onPhotoModerationUpdated = (0, firestore_1.onDocumentUpdated)('photo_moderation/{moderationId}', (0, monitoring_1.monitored)("onPhotoModerationUpdated", async (event) => {
     var _a, _b;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -1284,9 +1285,9 @@ exports.onPhotoModerationUpdated = (0, firestore_1.onDocumentUpdated)('photo_mod
     catch (error) {
         (0, utils_1.logError)(`Failed to send photo moderation email for ${userId}:`, error);
     }
-});
+}));
 // Achievement Unlocked - Send Email
-exports.onAchievementUnlocked = (0, firestore_1.onDocumentCreated)('user_achievements/{achievementId}', async (event) => {
+exports.onAchievementUnlocked = (0, firestore_1.onDocumentCreated)('user_achievements/{achievementId}', (0, monitoring_1.monitored)("onAchievementUnlocked", async (event) => {
     var _a;
     const achievementData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
     if (!achievementData)
@@ -1307,9 +1308,9 @@ exports.onAchievementUnlocked = (0, firestore_1.onDocumentCreated)('user_achieve
     catch (error) {
         (0, utils_1.logError)(`Failed to send achievement email for ${userId}:`, error);
     }
-});
+}));
 // New Match - Send Email
-exports.onNewMatch = (0, firestore_1.onDocumentCreated)('matches/{matchId}', async (event) => {
+exports.onNewMatch = (0, firestore_1.onDocumentCreated)('matches/{matchId}', (0, monitoring_1.monitored)("onNewMatch", async (event) => {
     var _a, _b, _c;
     const matchData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
     if (!matchData)
@@ -1340,9 +1341,9 @@ exports.onNewMatch = (0, firestore_1.onDocumentCreated)('matches/{matchId}', asy
     catch (error) {
         (0, utils_1.logError)('Failed to send match emails:', error);
     }
-});
+}));
 // Purchase Created - Send Email
-exports.onPurchaseCreated = (0, firestore_1.onDocumentCreated)('purchases/{purchaseId}', async (event) => {
+exports.onPurchaseCreated = (0, firestore_1.onDocumentCreated)('purchases/{purchaseId}', (0, monitoring_1.monitored)("onPurchaseCreated", async (event) => {
     var _a;
     const purchaseData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
     if (!purchaseData)
@@ -1390,7 +1391,7 @@ exports.onPurchaseCreated = (0, firestore_1.onDocumentCreated)('purchases/{purch
     catch (error) {
         (0, utils_1.logError)(`Failed to send purchase email for ${userId}:`, error);
     }
-});
+}));
 // ============================================================================
 // SCHEDULED FUNCTIONS
 // ============================================================================
@@ -1400,7 +1401,7 @@ exports.sendBrevoWeeklyDigest = (0, scheduler_1.onSchedule)({
     timeZone: 'UTC',
     memory: '512MiB',
     timeoutSeconds: 540,
-}, async () => {
+}, (0, monitoring_1.monitored)("sendBrevoWeeklyDigest", async () => {
     var _a;
     (0, utils_1.logInfo)('Starting weekly digest email job');
     try {
@@ -1468,14 +1469,14 @@ exports.sendBrevoWeeklyDigest = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('Failed to run weekly digest job:', error);
     }
-});
+}));
 // Send Re-engagement Emails - Daily at 10 AM
 exports.sendBrevoReEngagement = (0, scheduler_1.onSchedule)({
     schedule: '0 10 * * *',
     timeZone: 'UTC',
     memory: '512MiB',
     timeoutSeconds: 540,
-}, async () => {
+}, (0, monitoring_1.monitored)("sendBrevoReEngagement", async () => {
     (0, utils_1.logInfo)('Starting re-engagement email job');
     try {
         const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
@@ -1571,14 +1572,14 @@ exports.sendBrevoReEngagement = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('Failed to run re-engagement job:', error);
     }
-});
+}));
 // Check Streak At Risk - Daily at 8 PM
 exports.sendBrevoStreakReminder = (0, scheduler_1.onSchedule)({
     schedule: '0 20 * * *',
     timeZone: 'UTC',
     memory: '256MiB',
     timeoutSeconds: 300,
-}, async () => {
+}, (0, monitoring_1.monitored)("sendBrevoStreakReminder", async () => {
     (0, utils_1.logInfo)('Starting streak reminder job');
     try {
         const today = new Date();
@@ -1607,5 +1608,5 @@ exports.sendBrevoStreakReminder = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('Failed to run streak reminder job:', error);
     }
-});
+}));
 //# sourceMappingURL=brevoEmailService.js.map

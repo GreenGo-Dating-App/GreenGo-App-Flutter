@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "adjustUserCoins",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "adminBulkDeleteUsers",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "adminChangeUserPassword",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "adminDeleteUser",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "adminSetUserDisabled",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "approveUser",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "assignModerationItem",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "banUserAccount",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "bulkApproveUsers",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "cleanupOrphanedAuthUser",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "createAdminUser",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "createSystemAlert",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "deactivateAdminUser",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "deleteUserAccount",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "editUserProfile",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "executeBulkModeration",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "executeMassAction",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "forcePasswordChange",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "getAdminAuditLog",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getAdminUsers",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "getDetailedUserProfile",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "getEngagementMetrics",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getGeographicHeatmap",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getModerationQueue",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "getModerationReviewItem",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "getModerationStatistics",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "getMvpAccessStats",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "getPendingUsers",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "getRevenueMetrics",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getSystemHealthMetrics",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getUserActivityMetrics",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "getUserGrowthChart",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "impersonateUser",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "onSupportChatCreated",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "onSupportMessageCreated",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "overrideUserSubscription",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "processAISupportMessage",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "recordAdminLogin",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "rejectUser",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "resolveSystemAlert",
+    "category": "admin",
+    "file": "admin/adminDashboard.ts"
+  },
+  {
+    "name": "reverseGeocodeProfileLocation",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "searchUsers",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "send2FACode",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "sendBroadcastNotification",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "sendNotificationToUser",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "sendPasswordResetEmail",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "sendPasswordResetViaResend",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "sendTestEmail",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "sendUserNotification",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "sendWelcomeEmail",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "suspendUserAccount",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "takeModerationAction",
+    "category": "admin",
+    "file": "admin/moderationQueue.ts"
+  },
+  {
+    "name": "unbanUserAccount",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "unsuspendUserAccount",
+    "category": "admin",
+    "file": "admin/userManagement.ts"
+  },
+  {
+    "name": "updateAdminPermissions",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "updateAdminRole",
+    "category": "admin",
+    "file": "admin/roleManagement.ts"
+  },
+  {
+    "name": "updateUserTier",
+    "category": "admin",
+    "file": "admin/mvp_access.ts"
+  },
+  {
+    "name": "verify2FACode",
+    "category": "admin",
+    "file": "admin/adminPanelFunctions.ts"
+  },
+  {
+    "name": "assignUserToTest",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "batchChurnPrediction",
+    "category": "analytics",
+    "file": "analytics/userSegmentation.ts"
+  },
+  {
+    "name": "calculateCohortRetention",
+    "category": "analytics",
+    "file": "analytics/userSegmentation.ts"
+  },
+  {
+    "name": "calculateTax",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "calculateUserSegment",
+    "category": "analytics",
+    "file": "analytics/userSegmentation.ts"
+  },
+  {
+    "name": "createABTest",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "createUserCohort",
+    "category": "analytics",
+    "file": "analytics/userSegmentation.ts"
+  },
+  {
+    "name": "detectFraud",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "exportRevenueData",
+    "category": "analytics",
+    "file": "analytics/revenueAnalytics.ts"
+  },
+  {
+    "name": "forecastMRR",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "getABTestResults",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "getARPU",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "getAtRiskUsers",
+    "category": "analytics",
+    "file": "analytics/churnPrediction.ts"
+  },
+  {
+    "name": "getCohortAnalysis",
+    "category": "analytics",
+    "file": "analytics/cohortAnalytics.ts"
+  },
+  {
+    "name": "getRefundAnalytics",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "getRevenueDashboard",
+    "category": "analytics",
+    "file": "analytics/revenueAnalytics.ts"
+  },
+  {
+    "name": "getTaxReport",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "getUserChurnPrediction",
+    "category": "analytics",
+    "file": "analytics/churnPrediction.ts"
+  },
+  {
+    "name": "predictChurnDaily",
+    "category": "analytics",
+    "file": "analytics/churnPrediction.ts"
+  },
+  {
+    "name": "predictUserChurn",
+    "category": "analytics",
+    "file": "analytics/userSegmentation.ts"
+  },
+  {
+    "name": "recordConversion",
+    "category": "analytics",
+    "file": "analytics/advancedAnalytics.ts"
+  },
+  {
+    "name": "trainChurnModel",
+    "category": "analytics",
+    "file": "analytics/churnPrediction.ts"
+  },
+  {
+    "name": "autoBackupConversations",
+    "category": "backup",
+    "file": "backup/conversationBackup.ts"
+  },
+  {
+    "name": "backupConversation",
+    "category": "backup",
+    "file": "backup/conversationBackup.ts"
+  },
+  {
+    "name": "cleanupExpiredExports",
+    "category": "backup",
+    "file": "backup/pdfExport.ts"
+  },
+  {
+    "name": "deleteBackup",
+    "category": "backup",
+    "file": "backup/conversationBackup.ts"
+  },
+  {
+    "name": "exportConversationToPDF",
+    "category": "backup",
+    "file": "backup/pdfExport.ts"
+  },
+  {
+    "name": "listBackups",
+    "category": "backup",
+    "file": "backup/conversationBackup.ts"
+  },
+  {
+    "name": "listPDFExports",
+    "category": "backup",
+    "file": "backup/pdfExport.ts"
+  },
+  {
+    "name": "restoreConversation",
+    "category": "backup",
+    "file": "backup/conversationBackup.ts"
+  },
+  {
+    "name": "claimReward",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "grantMonthlyAllowances",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "processExpiredCoins",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "sendExpirationWarnings",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "verifyAppStoreCoinPurchase",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "verifyGooglePlayCoinPurchase",
+    "category": "coins",
+    "file": "coins/coinManager.ts"
+  },
+  {
+    "name": "applySignupGrants",
+    "category": "coupons",
+    "file": "coupons/applySignupGrants.ts"
+  },
+  {
+    "name": "getCouponRedemptions",
+    "category": "coupons",
+    "file": "coupons/adminCoupons.ts"
+  },
+  {
+    "name": "listCoupons",
+    "category": "coupons",
+    "file": "coupons/adminCoupons.ts"
+  },
+  {
+    "name": "redeemCoupon",
+    "category": "coupons",
+    "file": "coupons/redeemCoupon.ts"
+  },
+  {
+    "name": "setCouponDisabled",
+    "category": "coupons",
+    "file": "coupons/adminCoupons.ts"
+  },
+  {
+    "name": "upsertCoupon",
+    "category": "coupons",
+    "file": "coupons/adminCoupons.ts"
+  },
+  {
+    "name": "validateCoupon",
+    "category": "coupons",
+    "file": "coupons/validateCoupon.ts"
+  },
+  {
+    "name": "getCandidatePoolStats",
+    "category": "discovery",
+    "file": "discovery/candidatePoolPrecompute.ts"
+  },
+  {
+    "name": "precomputeCandidatePools",
+    "category": "discovery",
+    "file": "discovery/candidatePoolPrecompute.ts"
+  },
+  {
+    "name": "triggerPoolRecompute",
+    "category": "discovery",
+    "file": "discovery/candidatePoolPrecompute.ts"
+  },
+  {
+    "name": "onEventBroadcastCreated",
+    "category": "events",
+    "file": "events/broadcast.ts"
+  },
+  {
+    "name": "onEventMessageCreated",
+    "category": "events",
+    "file": "events/broadcast.ts"
+  },
+  {
+    "name": "onEventWriteUpdateCountryStats",
+    "category": "events",
+    "file": "events/country_aggregate.ts"
+  },
+  {
+    "name": "sendEventReminders",
+    "category": "events",
+    "file": "events/reminders.ts"
+  },
+  {
+    "name": "ingestExternalEvents",
+    "category": "external_events",
+    "file": "external_events/ingest.ts"
+  },
+  {
+    "name": "ingestTiqetsAttractions",
+    "category": "external_events",
+    "file": "external_events/tiqets.ts"
+  },
+  {
+    "name": "runIngestExternalEventsNow",
+    "category": "external_events",
+    "file": "external_events/ingest.ts"
+  },
+  {
+    "name": "runIngestTiqetsNow",
+    "category": "external_events",
+    "file": "external_events/tiqets.ts"
+  },
+  {
+    "name": "claimChallengeReward",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "claimLevelRewards",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "grantXP",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "onMessageCreatedVocabulary",
+    "category": "gamification",
+    "file": "gamification/vocabularyProcessor.ts"
+  },
+  {
+    "name": "resetDailyChallenges",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "trackAchievementProgress",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "trackChallengeProgress",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "unlockAchievementReward",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "updateLeaderboardRankings",
+    "category": "gamification",
+    "file": "gamification/gamificationManager.ts"
+  },
+  {
+    "name": "onGroupCreated",
+    "category": "group_chat",
+    "file": "group_chat/membership.ts"
+  },
+  {
+    "name": "onGroupInfoChanged",
+    "category": "group_chat",
+    "file": "group_chat/membership.ts"
+  },
+  {
+    "name": "onGroupMessageCreated",
+    "category": "group_chat",
+    "file": "group_chat/fanout.ts"
+  },
+  {
+    "name": "onGroupParticipantsChanged",
+    "category": "group_chat",
+    "file": "group_chat/membership.ts"
+  },
+  {
+    "name": "createLesson",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "deleteLesson",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "getAdminLessons",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "getLearningAnalytics",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "getLessonStats",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "getTeacherAnalytics",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "getUserProgressReport",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "publishLesson",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "purchaseLesson",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "reviewTeacherApplication",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "seedLessons",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "submitTeacherApplication",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "updateLesson",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "updateLessonProgress",
+    "category": "language_learning",
+    "file": "language_learning/languageLearningManager.ts"
+  },
+  {
+    "name": "batchTranscribe",
+    "category": "media",
+    "file": "media/voiceTranscription.ts"
+  },
+  {
+    "name": "cleanupDisappearingMedia",
+    "category": "media",
+    "file": "media/disappearingMedia.ts"
+  },
+  {
+    "name": "compressImage",
+    "category": "media",
+    "file": "media/imageCompression.ts"
+  },
+  {
+    "name": "generateVideoThumbnail",
+    "category": "media",
+    "file": "media/videoProcessing.ts"
+  },
+  {
+    "name": "getExpiringMediaStats",
+    "category": "media",
+    "file": "media/disappearingMedia.ts"
+  },
+  {
+    "name": "markMediaAsDisappearing",
+    "category": "media",
+    "file": "media/disappearingMedia.ts"
+  },
+  {
+    "name": "transcribeAudio",
+    "category": "media",
+    "file": "media/voiceTranscription.ts"
+  },
+  {
+    "name": "triggerMediaCleanup",
+    "category": "media",
+    "file": "media/disappearingMedia.ts"
+  },
+  {
+    "name": "autoTranslateMessage",
+    "category": "messaging",
+    "file": "messaging/translation.ts"
+  },
+  {
+    "name": "batchTranslateMessages",
+    "category": "messaging",
+    "file": "messaging/translation.ts"
+  },
+  {
+    "name": "cancelScheduledMessage",
+    "category": "messaging",
+    "file": "messaging/scheduledMessages.ts"
+  },
+  {
+    "name": "getScheduledMessages",
+    "category": "messaging",
+    "file": "messaging/scheduledMessages.ts"
+  },
+  {
+    "name": "getSupportedLanguages",
+    "category": "messaging",
+    "file": "messaging/translation.ts"
+  },
+  {
+    "name": "scheduleMessage",
+    "category": "messaging",
+    "file": "messaging/scheduledMessages.ts"
+  },
+  {
+    "name": "sendScheduledMessages",
+    "category": "messaging",
+    "file": "messaging/scheduledMessages.ts"
+  },
+  {
+    "name": "translateMessage",
+    "category": "messaging",
+    "file": "messaging/translation.ts"
+  },
+  {
+    "name": "checkExpiringModes",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "getBrevoEmailAnalytics",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "getBrevoEmailLogs",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "getBrevoEmailTemplates",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "getNotificationAnalytics",
+    "category": "notifications",
+    "file": "notifications/pushNotifications.ts"
+  },
+  {
+    "name": "onAchievementUnlocked",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onNewLikePush",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "onNewMatch",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onNewMatchPush",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "onNewMessagePush",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "onPhotoModerationUpdated",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onPurchaseCreated",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onSubscriptionUpdated",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onSupportMessagePush",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "onUserCreatedSendWelcome",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "onVerificationStatusChange",
+    "category": "notifications",
+    "file": "notifications/pushNotificationTriggers.ts"
+  },
+  {
+    "name": "processWelcomeEmailSeries",
+    "category": "notifications",
+    "file": "notifications/emailCommunication.ts"
+  },
+  {
+    "name": "sendBrevoEmailFunction",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "sendBrevoReEngagement",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "sendBrevoStreakReminder",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "sendBrevoWeeklyDigest",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "sendBundledNotifications",
+    "category": "notifications",
+    "file": "notifications/pushNotifications.ts"
+  },
+  {
+    "name": "sendPushNotification",
+    "category": "notifications",
+    "file": "notifications/pushNotifications.ts"
+  },
+  {
+    "name": "sendReEngagementCampaign",
+    "category": "notifications",
+    "file": "notifications/emailCommunication.ts"
+  },
+  {
+    "name": "sendTransactionalEmail",
+    "category": "notifications",
+    "file": "notifications/emailCommunication.ts"
+  },
+  {
+    "name": "sendWeeklyDigestEmails",
+    "category": "notifications",
+    "file": "notifications/emailCommunication.ts"
+  },
+  {
+    "name": "startWelcomeEmailSeries",
+    "category": "notifications",
+    "file": "notifications/emailCommunication.ts"
+  },
+  {
+    "name": "trackNotificationOpened",
+    "category": "notifications",
+    "file": "notifications/pushNotifications.ts"
+  },
+  {
+    "name": "updateBrevoEmailTemplate",
+    "category": "notifications",
+    "file": "notifications/brevoEmailService.ts"
+  },
+  {
+    "name": "cleanupStalePresence",
+    "category": "presence",
+    "file": "presence/cleanupStalePresence.ts"
+  },
+  {
+    "name": "onPresenceUpdate",
+    "category": "presence",
+    "file": "presence/onPresenceUpdate.ts"
+  },
+  {
+    "name": "blockUser",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "calculateTrustScore",
+    "category": "safety",
+    "file": "safety/identityVerification.ts"
+  },
+  {
+    "name": "detectFakeProfile",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "detectScam",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "detectSpam",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "getBlockList",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "moderateChatImage",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "moderatePhoto",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "moderateText",
+    "category": "safety",
+    "file": "safety/contentModeration.ts"
+  },
+  {
+    "name": "reviewReport",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "startPhotoVerification",
+    "category": "safety",
+    "file": "safety/identityVerification.ts"
+  },
+  {
+    "name": "submitAppeal",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "submitReport",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "unblockUser",
+    "category": "safety",
+    "file": "safety/reportingSystem.ts"
+  },
+  {
+    "name": "verifyIDDocument",
+    "category": "safety",
+    "file": "safety/identityVerification.ts"
+  },
+  {
+    "name": "verifyPhotoSelfie",
+    "category": "safety",
+    "file": "safety/identityVerification.ts"
+  },
+  {
+    "name": "cleanupOldAuditReports",
+    "category": "security",
+    "file": "security/securityAudit.ts"
+  },
+  {
+    "name": "getSecurityAuditReport",
+    "category": "security",
+    "file": "security/securityAudit.ts"
+  },
+  {
+    "name": "listSecurityAuditReports",
+    "category": "security",
+    "file": "security/securityAudit.ts"
+  },
+  {
+    "name": "runSecurityAudit",
+    "category": "security",
+    "file": "security/securityAudit.ts"
+  },
+  {
+    "name": "scheduledSecurityAudit",
+    "category": "security",
+    "file": "security/securityAudit.ts"
+  },
+  {
+    "name": "appStoreNotificationsV2",
+    "category": "subscription",
+    "file": "subscription/storeNotifications.ts"
+  },
+  {
+    "name": "playStoreNotifications",
+    "category": "subscription",
+    "file": "subscription/storeNotifications.ts"
+  },
+  {
+    "name": "checkExpiringSubscriptions",
+    "category": "subscriptions",
+    "file": "subscriptions/subscriptionManager.ts"
+  },
+  {
+    "name": "handleAppStoreWebhook",
+    "category": "subscriptions",
+    "file": "subscriptions/subscriptionManager.ts"
+  },
+  {
+    "name": "handleExpiredGracePeriods",
+    "category": "subscriptions",
+    "file": "subscriptions/subscriptionManager.ts"
+  },
+  {
+    "name": "handlePlayStoreWebhook",
+    "category": "subscriptions",
+    "file": "subscriptions/subscriptionManager.ts"
+  },
+  {
+    "name": "answerVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "applyARFilter",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "changeGroupCallLayout",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "cleanupExpiredReactions",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "closeBreakoutRoom",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "createBreakoutRoom",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "createGroupVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "enablePictureInPicture",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "enableVirtualBackground",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "endVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "getCallHistory",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "getCallStatistics",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "handleCallSignal",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "initiateVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "joinBreakoutRoom",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "joinGroupVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "leaveGroupVideoCall",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "manageGroupParticipant",
+    "category": "video_calling",
+    "file": "video_calling/groupVideoCalls.ts"
+  },
+  {
+    "name": "sendInCallReaction",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "startCallRecording",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "startScreenSharing",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "stopScreenSharing",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "toggleBeautyMode",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "toggleEchoCancellation",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "toggleNoiseSuppression",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  },
+  {
+    "name": "updateCallQuality",
+    "category": "video_calling",
+    "file": "video_calling/videoCalling.ts"
+  },
+  {
+    "name": "uploadCustomBackground",
+    "category": "video_calling",
+    "file": "video_calling/videoCallFeatures.ts"
+  }
+]

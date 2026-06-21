@@ -54,8 +54,9 @@ const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
 const grants_1 = require("../shared/grants");
 const grants_2 = require("./grants");
+const monitoring_1 = require("../shared/monitoring");
 const COIN_EXPIRATION_DAYS = 365;
-exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, async (request) => {
+exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("redeemCoupon", async (request) => {
     var _a;
     if (!request.auth) {
         throw new https_1.HttpsError('unauthenticated', 'You must be signed in to redeem a coupon');
@@ -257,5 +258,5 @@ exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 3
         (0, utils_1.logError)(`redeemCoupon failed uid=${uid}`, err);
         throw new https_1.HttpsError('internal', 'Failed to redeem coupon');
     }
-});
+}));
 //# sourceMappingURL=redeemCoupon.js.map

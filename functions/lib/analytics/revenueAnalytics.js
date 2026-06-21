@@ -40,11 +40,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.exportRevenueData = exports.getRevenueDashboard = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const bigQuerySetup_1 = require("./bigQuerySetup");
+const monitoring_1 = require("../shared/monitoring");
 /**
  * Get Revenue Dashboard Data
  * Point 167: Complete revenue dashboard
  */
-exports.getRevenueDashboard = functions.https.onCall(async (data, context) => {
+exports.getRevenueDashboard = functions.https.onCall((0, monitoring_1.monitored)("getRevenueDashboard", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -74,7 +75,7 @@ exports.getRevenueDashboard = functions.https.onCall(async (data, context) => {
         console.error('Error fetching revenue dashboard:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Daily Revenue
  */
@@ -345,7 +346,7 @@ async function getRevenueSummary() {
 /**
  * Export revenue data to CSV
  */
-exports.exportRevenueData = functions.https.onCall(async (data, context) => {
+exports.exportRevenueData = functions.https.onCall((0, monitoring_1.monitored)("exportRevenueData", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -385,5 +386,5 @@ exports.exportRevenueData = functions.https.onCall(async (data, context) => {
         console.error('Error exporting revenue data:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=revenueAnalytics.js.map

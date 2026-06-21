@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const messaging = admin.messaging();
@@ -13,7 +14,7 @@ const messaging = admin.messaging();
  * Send Push Notification
  * Point 271: Firebase Cloud Messaging
  */
-export const sendPushNotification = functions.https.onCall(async (data, context) => {
+export const sendPushNotification = functions.https.onCall(monitored("sendPushNotification", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -143,7 +144,7 @@ export const sendPushNotification = functions.https.onCall(async (data, context)
     console.error('Error sending push notification:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Send Bundled Notifications
@@ -151,7 +152,7 @@ export const sendPushNotification = functions.https.onCall(async (data, context)
  */
 export const sendBundledNotifications = functions.pubsub
   .schedule('*/15 * * * *') // Every 15 minutes
-  .onRun(async (context) => {
+  .onRun(monitored("sendBundledNotifications", async (context) => {
     try {
       // Get all pending notifications from last 15 minutes
       const fifteenMinutesAgo = new Date(Date.now() - 15 * 60 * 1000);
@@ -233,7 +234,7 @@ export const sendBundledNotifications = functions.pubsub
     } catch (error) {
       console.error('Error sending bundled notifications:', error);
     }
-  });
+  }));
 
 /**
  * Calculate Optimal Send Time
@@ -380,7 +381,7 @@ function getDeepLinkForType(type: string): string {
  * Track Notification Analytics
  * Point 279: Notification analytics
  */
-export const trackNotificationOpened = functions.https.onCall(async (data, context) => {
+export const trackNotificationOpened = functions.https.onCall(monitored("trackNotificationOpened", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -416,13 +417,13 @@ export const trackNotificationOpened = functions.https.onCall(async (data, conte
     console.error('Error tracking notification opened:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Notification Analytics
  * Point 279: Analytics summary
  */
-export const getNotificationAnalytics = functions.https.onCall(async (data, context) => {
+export const getNotificationAnalytics = functions.https.onCall(monitored("getNotificationAnalytics", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -510,4 +511,4 @@ export const getNotificationAnalytics = functions.https.onCall(async (data, cont
     console.error('Error getting notification analytics:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

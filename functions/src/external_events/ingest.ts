@@ -17,6 +17,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -403,9 +404,9 @@ export const ingestExternalEvents = onSchedule(
     memory: '512MiB',
     secrets: [VIATOR_API_KEY],
   },
-  async () => {
+  monitored("ingestExternalEvents", async () => {
     await runIngestion(VIATOR_API_KEY.value());
-  }
+  })
 );
 
 // Curated real, public Viator experiences — used to seed `external_events` for
@@ -558,7 +559,7 @@ const SEED_DOCS: Doc[] = [
 //   ?token=<KEY>&seed=1   → seed curated demo experiences into external_events
 export const runIngestExternalEventsNow = onRequest(
   { timeoutSeconds: 540, memory: '512MiB', secrets: [VIATOR_API_KEY] },
-  async (req, res) => {
+  monitored("runIngestExternalEventsNow", async (req, res) => {
     const key = VIATOR_API_KEY.value();
     if (!key || req.query.token !== key) {
       res.status(403).send('Forbidden');
@@ -579,5 +580,5 @@ export const runIngestExternalEventsNow = onRequest(
     if (req.query.clear) cleared = await clearSource(String(req.query.clear));
     const count = await runIngestion(key);
     res.status(200).json({ ok: true, cleared, upserted: count });
-  }
+  })
 );

@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -75,7 +76,7 @@ const RENEWAL_NOTIFICATION_DAYS = 3; // Point 152
  * Google Play Store webhook handler (Point 146)
  * Handles real-time subscription notifications from Google Play
  */
-export const handlePlayStoreWebhook = functions.https.onRequest(async (req, res) => {
+export const handlePlayStoreWebhook = functions.https.onRequest(monitored("handlePlayStoreWebhook", async (req, res) => {
   try {
     const message = req.body.message;
 
@@ -148,13 +149,13 @@ export const handlePlayStoreWebhook = functions.https.onRequest(async (req, res)
     console.error('Error processing Play Store webhook:', error);
     res.status(500).send('Internal server error');
   }
-});
+}));
 
 /**
  * Apple App Store Server Notification handler (Point 147)
  * Handles real-time subscription notifications from App Store
  */
-export const handleAppStoreWebhook = functions.https.onRequest(async (req, res) => {
+export const handleAppStoreWebhook = functions.https.onRequest(monitored("handleAppStoreWebhook", async (req, res) => {
   try {
     const { signedPayload } = req.body;
 
@@ -216,7 +217,7 @@ export const handleAppStoreWebhook = functions.https.onRequest(async (req, res) 
     console.error('Error processing App Store webhook:', error);
     res.status(500).send('Internal server error');
   }
-});
+}));
 
 /**
  * Handle subscription recovered from grace period
@@ -513,7 +514,7 @@ async function downgradeToBasic(userId: string) {
 export const checkExpiringSubscriptions = functions.pubsub
   .schedule('every day 09:00')
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("checkExpiringSubscriptions", async (context) => {
     console.log('Checking for expiring subscriptions...');
 
     const threeDaysFromNow = new Date();
@@ -553,7 +554,7 @@ export const checkExpiringSubscriptions = functions.pubsub
       success: true,
       notificationsSent: expiringSubscriptionsSnapshot.size,
     };
-  });
+  }));
 
 /**
  * Scheduled function to handle expired grace periods
@@ -561,7 +562,7 @@ export const checkExpiringSubscriptions = functions.pubsub
  */
 export const handleExpiredGracePeriods = functions.pubsub
   .schedule('every 1 hours')
-  .onRun(async (context) => {
+  .onRun(monitored("handleExpiredGracePeriods", async (context) => {
     console.log('Checking for expired grace periods...');
 
     const now = new Date();
@@ -582,4 +583,4 @@ export const handleExpiredGracePeriods = functions.pubsub
       success: true,
       gracePeriadsExpired: expiredGracePeriodsSnapshot.size,
     };
-  });
+  }));

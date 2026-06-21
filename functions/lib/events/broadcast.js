@@ -44,10 +44,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onEventMessageCreated = exports.onEventBroadcastCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
-exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', async (event) => {
+exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', (0, monitoring_1.monitored)("onEventBroadcastCreated", async (event) => {
     var _a, _b;
     const snap = event.data;
     if (!snap)
@@ -102,11 +103,11 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{ev
             console.error('Event broadcast FCM failed', e);
         }
     }
-});
+}));
 /// Regular event-chat messages → push to all attendees (except sender/muted),
 /// matching the 1:1/group notification sound + channel so they appear even when
 /// the app is closed.
-exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', async (event) => {
+exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', (0, monitoring_1.monitored)("onEventMessageCreated", async (event) => {
     var _a, _b;
     const snap = event.data;
     if (!snap)
@@ -176,5 +177,5 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{even
             console.error('Event message FCM failed', e);
         }
     }
-});
+}));
 //# sourceMappingURL=broadcast.js.map
