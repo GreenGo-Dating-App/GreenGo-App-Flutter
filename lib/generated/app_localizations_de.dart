@@ -10559,7 +10559,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get globeMyWorldMap => 'Meine Weltkarte';
 
   @override
-  String get globeLayerContacts => 'Meine Kontakte';
+  String get globeLayerContacts => 'Meine Community';
 
   @override
   String get globeLayerExperiences => 'Erlebnisse';

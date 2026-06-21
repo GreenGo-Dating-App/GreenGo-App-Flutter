@@ -37,76 +37,77 @@ class _GlobeScreenState extends State<GlobeScreen> {
   /// Exposed so the existing helper methods keep using `userId` unchanged.
   String get userId => widget.userId;
 
-  /// Layers shown on the world map (independent, any combination).
+  /// World-map layers (independent, any combination):
+  /// My Community (contacts), Community Events (native, precise pins),
+  /// Attractions (Tiqets), Experiences (Viator).
   bool _showContacts = true;
-  bool _showEvents = false;
+  bool _showCommunityEvents = false;
+  bool _showAttractions = false;
   bool _showExperiences = false;
-  List<EventCountryStat> _eventStats = const [];
-  List<EventCountryStat> _experienceStats = const [];
+  List<Event> _nativeEvents = const [];
+  List<EventCountryStat> _experienceStats = const []; // viator
+  List<EventCountryStat> _attractionStats = const []; // tiqets
 
   @override
   void initState() {
     super.initState();
-    _loadEventStats();
-    _loadExperienceStats();
+    _loadNativeEvents();
+    _loadCountryStats('viator');
+    _loadCountryStats('tiqets');
   }
 
-  Future<void> _loadEventStats() async {
-    final result = await di.sl<EventsRepository>().getCountryStats();
+  /// Native GreenGo events with coordinates → plotted precisely.
+  Future<void> _loadNativeEvents() async {
+    final result = await di.sl<EventsRepository>().getEvents(upcoming: true);
     if (!mounted) return;
-    result.fold((_) {}, (stats) => setState(() => _eventStats = stats));
+    result.fold((_) {}, (events) {
+      setState(() => _nativeEvents = events
+          .where((e) => e.latitude != null && e.longitude != null)
+          .toList());
+    });
   }
 
-  /// Per-country experience counts from the precomputed aggregate (complete +
-  /// cheap — one small doc per country).
-  Future<void> _loadExperienceStats() async {
+  /// Per-country counts from the precomputed aggregate (complete + cheap).
+  Future<void> _loadCountryStats(String source) async {
     try {
       final snap = await FirebaseFirestore.instance
           .collection('external_country_stats')
-          .where('source', isEqualTo: 'viator')
+          .where('source', isEqualTo: source)
           .get();
       if (!mounted) return;
+      final stats = snap.docs
+          .map((d) => EventCountryStat(
+                country: d.data()['country'] as String? ?? '',
+                count: (d.data()['count'] as num?)?.toInt() ?? 0,
+              ))
+          .where((s) => s.country.isNotEmpty)
+          .toList();
       setState(() {
-        _experienceStats = snap.docs
-            .map((d) => EventCountryStat(
-                  country: d.data()['country'] as String? ?? '',
-                  count: (d.data()['count'] as num?)?.toInt() ?? 0,
-                ))
-            .where((s) => s.country.isNotEmpty)
-            .toList();
+        if (source == 'viator') {
+          _experienceStats = stats;
+        } else {
+          _attractionStats = stats;
+        }
       });
     } catch (_) {/* best-effort */}
   }
 
-  /// Markers to show: events and/or experiences, per the active toggles.
+  /// Country markers to show: attractions and/or experiences per the toggles.
   List<EventCountryStat> get _activeStats {
-    if (_showEvents && _showExperiences) {
-      final merged = <String, EventCountryStat>{};
-      for (final s in [..._eventStats, ..._experienceStats]) {
-        final existing = merged[s.country];
+    final merged = <String, EventCountryStat>{};
+    void add(List<EventCountryStat> list) {
+      for (final s in list) {
+        final e = merged[s.country];
         merged[s.country] = EventCountryStat(
           country: s.country,
-          count: (existing?.count ?? 0) + s.count,
-          topEvents: existing?.topEvents ?? s.topEvents,
+          count: (e?.count ?? 0) + s.count,
         );
       }
-      return merged.values.toList();
     }
-    if (_showEvents) return _eventStats;
-    if (_showExperiences) return _experienceStats;
-    return const [];
-  }
 
-  void _openCountryEvents(BuildContext context, String country) {
-    final key = countryNameNormalization[country] ?? country;
-    final c = countryCentroids[key];
-    context.read<GlobeBloc>().add(
-          GlobeCountryTapped(
-            countryName: country,
-            latitude: c != null ? c[0] : 0,
-            longitude: c != null ? c[1] : 0,
-          ),
-        );
+    if (_showAttractions) add(_attractionStats);
+    if (_showExperiences) add(_experienceStats);
+    return merged.values.toList();
   }
 
   /// Tap a country → list its Experiences + Attractions (queried directly, so
@@ -234,7 +235,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
         elevation: 0,
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
-          // Layer toggles (independent): Contacts, Events, Experiences.
+          // Layer toggles: My Community, Community Events, Attractions, Experiences.
           IconButton(
             icon: Icon(Icons.people,
                 color: _showContacts
@@ -246,11 +247,23 @@ class _GlobeScreenState extends State<GlobeScreen> {
           ),
           IconButton(
             icon: Icon(Icons.event,
-                color:
-                    _showEvents ? AppColors.richGold : AppColors.textSecondary,
+                color: _showCommunityEvents
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
                 size: 22),
-            tooltip: AppLocalizations.of(context)!.eventsTitle,
-            onPressed: () => setState(() => _showEvents = !_showEvents),
+            tooltip: AppLocalizations.of(context)!.eventsTabCommunity,
+            onPressed: () =>
+                setState(() => _showCommunityEvents = !_showCommunityEvents),
+          ),
+          IconButton(
+            icon: Icon(Icons.museum,
+                color: _showAttractions
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
+                size: 22),
+            tooltip: AppLocalizations.of(context)!.eventsTabAttractions,
+            onPressed: () =>
+                setState(() => _showAttractions = !_showAttractions),
           ),
           IconButton(
             icon: Icon(Icons.local_activity,
@@ -312,11 +325,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   data: data,
                   showMatched: _showContacts,
                   showDiscovery: false,
-                  showEvents: _showEvents || _showExperiences,
+                  showEvents: _showAttractions || _showExperiences,
                   eventStats: _activeStats,
-                  onEventCountryTapped: (country) => _showExperiences
-                      ? _showCountryDetailSheet(context, country)
-                      : _openCountryEvents(context, country),
+                  preciseEvents:
+                      _showCommunityEvents ? _nativeEvents : const [],
+                  onPreciseEventTapped: (e) => Navigator.of(context).push(
+                    EventDetailLoaderScreen.route(
+                        eventId: e.id, currentUserId: userId),
+                  ),
+                  onEventCountryTapped: (country) =>
+                      _showCountryDetailSheet(context, country),
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(

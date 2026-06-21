@@ -18597,7 +18597,7 @@ abstract class AppLocalizations {
   /// No description provided for @globeLayerContacts.
   ///
   /// In en, this message translates to:
-  /// **'My Contacts'**
+  /// **'My Community'**
   String get globeLayerContacts;
 
   /// No description provided for @globeLayerExperiences.
