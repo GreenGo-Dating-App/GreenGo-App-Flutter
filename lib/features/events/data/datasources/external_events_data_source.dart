@@ -13,6 +13,36 @@ class ExternalEventsDataSource {
 
   final FirebaseFirestore _firestore;
 
+  /// One page of experiences for infinite scroll, ordered by rating.
+  /// Returns the items plus the last document (cursor) for the next page.
+  /// On the very first page, if the collection is empty, returns the built-in
+  /// samples with a null cursor (so the tab is never blank before ingestion).
+  Future<({List<ExternalEvent> items, DocumentSnapshot<Map<String, dynamic>>? cursor})>
+      getExperiencesPage({
+    DocumentSnapshot<Map<String, dynamic>>? startAfter,
+    int limit = 20,
+  }) async {
+    try {
+      Query<Map<String, dynamic>> query = _firestore
+          .collection('external_events')
+          .orderBy('rating', descending: true)
+          .limit(limit);
+      if (startAfter != null) query = query.startAfterDocument(startAfter);
+      final snap = await query.get();
+      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      if (items.isEmpty && startAfter == null) {
+        return (items: ExternalEvent.samples, cursor: null);
+      }
+      return (
+        items: items,
+        cursor: snap.docs.isNotEmpty ? snap.docs.last : null,
+      );
+    } catch (_) {
+      if (startAfter == null) return (items: ExternalEvent.samples, cursor: null);
+      return (items: <ExternalEvent>[], cursor: null);
+    }
+  }
+
   Future<List<ExternalEvent>> getExperiences({
     String? country,
     int limit = 60,
