@@ -10762,6 +10762,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsSortPopular => 'Popular';
 
   @override
+  String get eventsViewList => 'Vista de lista';
+
+  @override
+  String get eventsViewGrid => 'Vista de grelha';
+
+  @override
   String get eventViewEvent => 'Ver evento';
 
   @override
@@ -21362,6 +21368,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsSortPopular => 'Popular';
+
+  @override
+  String get eventsViewList => 'Visualização em lista';
+
+  @override
+  String get eventsViewGrid => 'Visualização em grade';
 
   @override
   String get eventViewEvent => 'Ver evento';

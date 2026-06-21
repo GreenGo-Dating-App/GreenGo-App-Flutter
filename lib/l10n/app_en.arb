@@ -5083,6 +5083,8 @@
   "chatOpenInMaps": "Open in Maps",
   "eventsSearchHint": "Search by country, city or name",
   "eventsSortPopular": "Popular",
+  "eventsViewList": "List view",
+  "eventsViewGrid": "Grid view",
   "eventViewEvent": "View event",
   "eventLoadError": "Couldn't load this event",
   "eventShare": "Share event",

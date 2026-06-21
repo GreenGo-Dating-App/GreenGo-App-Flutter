@@ -3647,6 +3647,8 @@
   "chatOpenInMaps": "Abrir no Maps",
   "eventsSearchHint": "Buscar por país, cidade ou nome",
   "eventsSortPopular": "Popular",
+  "eventsViewList": "Visualização em lista",
+  "eventsViewGrid": "Visualização em grade",
   "eventViewEvent": "Ver evento",
   "eventLoadError": "Não foi possível carregar este evento",
   "eventShare": "Compartilhar evento",

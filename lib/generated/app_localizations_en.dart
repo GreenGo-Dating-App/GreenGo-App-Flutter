@@ -10661,6 +10661,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get eventsSortPopular => 'Popular';
 
   @override
+  String get eventsViewList => 'List view';
+
+  @override
+  String get eventsViewGrid => 'Grid view';
+
+  @override
   String get eventViewEvent => 'View event';
 
   @override

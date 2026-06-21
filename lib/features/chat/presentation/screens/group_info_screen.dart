@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -173,6 +174,16 @@ class GroupInfoScreen extends StatelessWidget {
       final url = await sl<ProfileRemoteDataSource>()
           .uploadPhoto(currentUserId, File(picked.path), folder: 'groups');
       await sl<UpdateGroupInfo>()(groupId: groupId, photoUrl: url);
+      // Optimistic: update own inbox row so my Groups list reflects it
+      // immediately (the onGroupInfoChanged CF fans it out to other members).
+      try {
+        await FirebaseFirestore.instance
+            .collection('user_group_inbox')
+            .doc(currentUserId)
+            .collection('threads')
+            .doc(groupId)
+            .set({'photoUrl': url}, SetOptions(merge: true));
+      } catch (_) {}
       messenger.showSnackBar(
         SnackBar(content: Text(l10n.groupPhotoUpdated)),
       );
