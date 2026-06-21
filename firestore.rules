@@ -750,6 +750,14 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // EXTERNAL EVENTS (Tiqets/Viator experiences) — read-only, CF-written only
+    // ============================================================================
+    match /external_events/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // populated only by the ingestExternalEvents CF
+    }
+
+    // ============================================================================
     // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
     // ============================================================================
     match /events/{eventId} {
