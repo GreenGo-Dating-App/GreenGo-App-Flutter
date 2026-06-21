@@ -14,10 +14,12 @@ class ExperiencesTab extends StatefulWidget {
     super.key,
     required this.gridView,
     required this.query,
+    this.popular = false,
   });
 
   final bool gridView;
   final String query;
+  final bool popular;
 
   @override
   State<ExperiencesTab> createState() => _ExperiencesTabState();
@@ -40,6 +42,19 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   @override
+  void didUpdateWidget(ExperiencesTab old) {
+    super.didUpdateWidget(old);
+    // Switching the Popular toggle changes the dataset — reset and reload.
+    if (old.popular != widget.popular) {
+      _items.clear();
+      _cursor = null;
+      _hasMore = !widget.popular;
+      _firstLoadDone = false;
+      _loadMore();
+    }
+  }
+
+  @override
   void dispose() {
     _scroll.dispose();
     super.dispose();
@@ -53,7 +68,24 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Future<void> _loadMore() async {
-    if (_loading || !_hasMore) return;
+    if (_loading) return;
+    // Popular mode: a single fixed set (top 20 by reviews, rating > 4.5).
+    if (widget.popular) {
+      if (_firstLoadDone) return;
+      setState(() => _loading = true);
+      final items = await _ds.getPopularExperiences(limit: 20);
+      if (!mounted) return;
+      setState(() {
+        _items
+          ..clear()
+          ..addAll(items);
+        _hasMore = false;
+        _loading = false;
+        _firstLoadDone = true;
+      });
+      return;
+    }
+    if (!_hasMore) return;
     setState(() => _loading = true);
     final page = await _ds.getExperiencesPage(startAfter: _cursor, limit: 20);
     if (!mounted) return;

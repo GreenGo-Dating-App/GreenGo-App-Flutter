@@ -39,7 +39,7 @@ const TOP_COUNTRIES = [
   'Cambodia', 'Costa Rica', 'Colombia', 'Chile', 'Saudi Arabia',
 ];
 
-const PRODUCTS_PER_COUNTRY = 10;
+const PRODUCTS_PER_COUNTRY = 100;
 
 type Doc = { id: string; data: Record<string, unknown> };
 
@@ -77,98 +77,153 @@ const VIATOR_HEADERS = (apiKey: string) => ({
   'Content-Type': 'application/json',
 });
 
-/// Resolve the top-50 country names to Viator COUNTRY destination ids.
-async function resolveCountries(
+type DestInfo = { name: string; type: string };
+
+/// Fetch Viator destinations once: returns the matched top-50 countries plus a
+/// full id→{name,type} map so we can resolve each product's city.
+async function fetchDestinations(
   apiKey: string,
   base: string
-): Promise<{ id: string; name: string }[]> {
+): Promise<{ countries: { id: string; name: string }[]; idMap: Map<string, DestInfo> }> {
+  const empty = { countries: [], idMap: new Map<string, DestInfo>() };
   try {
     const res = await fetch(`${base}/destinations`, {
       headers: VIATOR_HEADERS(apiKey),
     });
     if (!res.ok) {
       console.error(`Viator destinations HTTP ${res.status} (${base})`);
-      return [];
+      return empty;
     }
     const json: any = await res.json();
     const dests: any[] = json.destinations || [];
+    const idMap = new Map<string, DestInfo>();
     const byName = new Map<string, any>();
     for (const d of dests) {
+      if (d.destinationId != null) {
+        idMap.set(String(d.destinationId), {
+          name: d.name,
+          type: String(d.type || ''),
+        });
+      }
       if (d.type === 'COUNTRY' && d.name) {
         byName.set(String(d.name).toLowerCase(), d);
       }
     }
-    const out: { id: string; name: string }[] = [];
+    const countries: { id: string; name: string }[] = [];
     for (const name of TOP_COUNTRIES) {
       const d = byName.get(name.toLowerCase());
-      if (d) out.push({ id: String(d.destinationId), name });
+      if (d) countries.push({ id: String(d.destinationId), name });
     }
-    return out;
+    return { countries, idMap };
   } catch (e) {
     console.error(`Viator destinations failed (${base})`, e);
-    return [];
+    return empty;
   }
 }
 
-/// Top [PRODUCTS_PER_COUNTRY] experiences for one country.
+/// Resolve a product's city from its destination refs (prefer the primary
+/// non-country destination).
+function cityFor(
+  p: any,
+  idMap: Map<string, DestInfo>,
+  countryName: string
+): string | null {
+  const dests: any[] = p.destinations || [];
+  const ordered = [...dests].sort((a, b) => (b.primary ? 1 : 0) - (a.primary ? 1 : 0));
+  for (const d of ordered) {
+    const info = idMap.get(String(d.ref));
+    if (info && info.type !== 'COUNTRY' && info.name && info.name !== countryName) {
+      return info.name;
+    }
+  }
+  return null;
+}
+
+// Affiliate params — append to every product URL so taps open the booking-ready
+// Viator page attributed to this partner.
+const AFFILIATE_PID = 'P00306636';
+const AFFILIATE_MCID = '42383';
+
+function withAffiliate(url: string | undefined | null): string | null {
+  if (!url) return null;
+  const base = url.split('?')[0];
+  return `${base}?pid=${AFFILIATE_PID}&mcid=${AFFILIATE_MCID}&medium=link`;
+}
+
+function mapProduct(
+  p: any,
+  countryName: string,
+  idMap: Map<string, DestInfo>
+): Doc {
+  // Pick the highest-resolution image variant (max width × height).
+  const variants: any[] = p.images?.[0]?.variants || [];
+  let best: any;
+  for (const v of variants) {
+    const area = (v.width || 0) * (v.height || 0);
+    const bestArea = best ? (best.width || 0) * (best.height || 0) : -1;
+    if (area > bestArea) best = v;
+  }
+  return {
+    id: `viator_${p.productCode}`,
+    data: {
+      source: 'viator',
+      externalId: p.productCode,
+      title: p.title,
+      description: p.description ?? null,
+      imageUrl: best?.url ?? null,
+      category: 'tour',
+      city: cityFor(p, idMap, countryName),
+      country: countryName,
+      fromPrice: p.pricing?.summary?.fromPrice ?? null,
+      currency: p.pricing?.currency ?? 'USD',
+      rating: p.reviews?.combinedAverageRating ?? null,
+      reviewCount: p.reviews?.totalReviews ?? null,
+      durationMinutes: p.duration?.fixedDurationInMinutes ?? null,
+      bookingUrl: withAffiliate(p.productUrl),
+      fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
+    },
+  };
+}
+
+/// Top [PRODUCTS_PER_COUNTRY] experiences for one country (paged; Viator caps
+/// each search at 50 results, so we page until we reach the target).
 async function fetchTopForCountry(
   apiKey: string,
   base: string,
   destId: string,
-  countryName: string
+  countryName: string,
+  idMap: Map<string, DestInfo>
 ): Promise<Doc[]> {
-  try {
-    const res = await fetch(`${base}/products/search`, {
-      method: 'POST',
-      headers: VIATOR_HEADERS(apiKey),
-      body: JSON.stringify({
-        filtering: { destination: destId },
-        sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' },
-        pagination: { start: 1, count: PRODUCTS_PER_COUNTRY },
-        currency: 'USD',
-      }),
-    });
-    if (!res.ok) {
-      console.error(`Viator ${countryName} HTTP ${res.status}`);
-      return [];
-    }
-    const json: any = await res.json();
-    const products: any[] = json.products || [];
-    return products.map((p) => {
-      // Pick the highest-resolution image variant (max width × height).
-      const variants: any[] = p.images?.[0]?.variants || [];
-      let best: any;
-      for (const v of variants) {
-        const area = (v.width || 0) * (v.height || 0);
-        const bestArea = best ? (best.width || 0) * (best.height || 0) : -1;
-        if (area > bestArea) best = v;
+  const docs: Doc[] = [];
+  const pageSize = 50;
+  for (let start = 1; start <= PRODUCTS_PER_COUNTRY; start += pageSize) {
+    const count = Math.min(pageSize, PRODUCTS_PER_COUNTRY - (start - 1));
+    try {
+      const res = await fetch(`${base}/products/search`, {
+        method: 'POST',
+        headers: VIATOR_HEADERS(apiKey),
+        body: JSON.stringify({
+          filtering: { destination: destId },
+          sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' },
+          pagination: { start, count },
+          currency: 'USD',
+        }),
+      });
+      if (!res.ok) {
+        console.error(`Viator ${countryName} HTTP ${res.status} (start ${start})`);
+        break;
       }
-      const img = best?.url;
-      return {
-        id: `viator_${p.productCode}`,
-        data: {
-          source: 'viator',
-          externalId: p.productCode,
-          title: p.title,
-          description: p.description ?? null,
-          imageUrl: img ?? null,
-          category: 'tour',
-          city: null,
-          country: countryName,
-          fromPrice: p.pricing?.summary?.fromPrice ?? null,
-          currency: p.pricing?.currency ?? 'USD',
-          rating: p.reviews?.combinedAverageRating ?? null,
-          reviewCount: p.reviews?.totalReviews ?? null,
-          durationMinutes: p.duration?.fixedDurationInMinutes ?? null,
-          bookingUrl: p.productUrl ?? null,
-          fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
-        },
-      };
-    });
-  } catch (e) {
-    console.error(`Viator fetch failed for ${countryName}`, e);
-    return [];
+      const json: any = await res.json();
+      const products: any[] = json.products || [];
+      if (products.length === 0) break;
+      docs.push(...products.map((p) => mapProduct(p, countryName, idMap)));
+      if (products.length < count) break; // no more pages
+    } catch (e) {
+      console.error(`Viator fetch failed for ${countryName} (start ${start})`, e);
+      break;
+    }
   }
+  return docs;
 }
 
 async function runIngestion(apiKey: string): Promise<number> {
@@ -177,14 +232,14 @@ async function runIngestion(apiKey: string): Promise<number> {
     return 0;
   }
   for (const base of VIATOR_BASES) {
-    const countries = await resolveCountries(apiKey, base);
+    const { countries, idMap } = await fetchDestinations(apiKey, base);
     if (countries.length === 0) {
       console.log(`ingestExternalEvents: no countries from ${base}, trying next.`);
       continue;
     }
     const all: Doc[] = [];
     for (const c of countries) {
-      all.push(...(await fetchTopForCountry(apiKey, base, c.id, c.name)));
+      all.push(...(await fetchTopForCountry(apiKey, base, c.id, c.name, idMap)));
     }
     if (all.length > 0) {
       await upsertAll(all);

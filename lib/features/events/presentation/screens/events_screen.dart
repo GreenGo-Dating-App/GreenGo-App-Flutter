@@ -541,7 +541,8 @@ class _EventsScreenState extends State<EventsScreen>
 
   // ---- Experiences tab (Viator) — infinite scroll ----
   Widget _buildExperiencesTab() {
-    return ExperiencesTab(gridView: _gridView, query: _searchQuery);
+    return ExperiencesTab(
+        gridView: _gridView, query: _searchQuery, popular: _sortByPopularity);
   }
 
   void _showCreateEventDialog(BuildContext context) {

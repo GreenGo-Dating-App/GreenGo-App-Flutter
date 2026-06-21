@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -144,17 +145,10 @@ class _GroupsScreenState extends State<GroupsScreen> {
                       final name = g.groupInfo?.name ?? 'Group';
                       final unread = g.unreadCountFor(userId);
                       return ListTile(
-                        leading: CircleAvatar(
-                          backgroundColor: AppColors.richGold,
-                          foregroundColor: AppColors.deepBlack,
-                          backgroundImage: (g.groupInfo?.photoUrl != null &&
-                                  g.groupInfo!.photoUrl!.isNotEmpty)
-                              ? NetworkImage(g.groupInfo!.photoUrl!)
-                              : null,
-                          child: (g.groupInfo?.photoUrl == null ||
-                                  g.groupInfo!.photoUrl!.isEmpty)
-                              ? Text(name.isNotEmpty ? name[0].toUpperCase() : '#')
-                              : null,
+                        leading: _GroupAvatar(
+                          groupId: g.conversationId,
+                          inboxPhotoUrl: g.groupInfo?.photoUrl,
+                          name: name,
                         ),
                         title: Text(name,
                             maxLines: 1,
@@ -194,6 +188,50 @@ class _GroupsScreenState extends State<GroupsScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Group avatar that shows the group photo. Uses the inbox thread photo when
+/// present; otherwise falls back to a one-time read of the group document
+/// (covers groups created before inbox photo-sync existed). Cached by Firestore
+/// persistence, so the fallback read only happens once per photo-less group.
+class _GroupAvatar extends StatelessWidget {
+  const _GroupAvatar({
+    required this.groupId,
+    required this.inboxPhotoUrl,
+    required this.name,
+  });
+
+  final String groupId;
+  final String? inboxPhotoUrl;
+  final String name;
+
+  Widget _avatar(String? photoUrl) {
+    final has = photoUrl != null && photoUrl.isNotEmpty;
+    return CircleAvatar(
+      backgroundColor: AppColors.richGold,
+      foregroundColor: AppColors.deepBlack,
+      backgroundImage: has ? NetworkImage(photoUrl) : null,
+      child: has
+          ? null
+          : Text(name.isNotEmpty ? name[0].toUpperCase() : '#'),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (inboxPhotoUrl != null && inboxPhotoUrl!.isNotEmpty) {
+      return _avatar(inboxPhotoUrl);
+    }
+    // Fallback: read the group doc's photo once.
+    return FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+      future: FirebaseFirestore.instance.collection('groups').doc(groupId).get(),
+      builder: (context, snap) {
+        final photo = (snap.data?.data()?['groupInfo']
+            as Map<String, dynamic>?)?['photoUrl'] as String?;
+        return _avatar(photo);
+      },
     );
   }
 }
