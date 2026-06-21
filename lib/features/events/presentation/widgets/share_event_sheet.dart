@@ -155,11 +155,19 @@ class _ShareEventSheet extends StatelessWidget {
                     stream:
                         di.sl<ChatRepository>().getConversationsStream(currentUserId),
                     builder: (context, snap) {
-                      final chats = (snap.data?.fold((_) => <Conversation>[],
+                      final sorted = (snap.data?.fold((_) => <Conversation>[],
                               (c) => c) ??
                           <Conversation>[])
                         ..sort((a, b) => (b.lastMessageAt ?? DateTime(0))
                             .compareTo(a.lastMessageAt ?? DateTime(0)));
+                      // One row per other user (keep most recent conversation).
+                      final seen = <String>{};
+                      final chats = <Conversation>[];
+                      for (final c in sorted) {
+                        if (seen.add(c.getOtherUserId(currentUserId))) {
+                          chats.add(c);
+                        }
+                      }
                       if (chats.isEmpty) return const SizedBox.shrink();
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

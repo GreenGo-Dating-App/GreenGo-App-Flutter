@@ -61,6 +61,12 @@ export {
   runIngestExternalEventsNow,
 } from './external_events/ingest';
 
+// Tiqets attractions ingester (deployed once TIQETS_API_KEY is set).
+export {
+  ingestTiqetsAttractions,
+  runIngestTiqetsNow,
+} from './external_events/tiqets';
+
 // Events — per-country aggregation for the globe.
 export {
   onEventWriteUpdateCountryStats,

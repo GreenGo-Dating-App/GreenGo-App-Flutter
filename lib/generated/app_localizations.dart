@@ -6923,6 +6923,30 @@ abstract class AppLocalizations {
   /// **'Experiences'**
   String get eventsTabExperiences;
 
+  /// No description provided for @eventsTabAttractions.
+  ///
+  /// In en, this message translates to:
+  /// **'Attractions'**
+  String get eventsTabAttractions;
+
+  /// No description provided for @eventsTabCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Community'**
+  String get eventsTabCommunity;
+
+  /// No description provided for @eventsDeleteEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete event'**
+  String get eventsDeleteEvent;
+
+  /// No description provided for @eventsDeleteConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this event? This cannot be undone.'**
+  String get eventsDeleteConfirmBody;
+
   /// No description provided for @eventsBook.
   ///
   /// In en, this message translates to:

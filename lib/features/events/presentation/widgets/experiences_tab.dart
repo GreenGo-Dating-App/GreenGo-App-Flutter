@@ -15,11 +15,17 @@ class ExperiencesTab extends StatefulWidget {
     required this.gridView,
     required this.query,
     this.popular = false,
+    this.source = 'viator',
+    this.userLat,
+    this.userLng,
   });
 
   final bool gridView;
   final String query;
   final bool popular;
+  final String source;
+  final double? userLat;
+  final double? userLng;
 
   @override
   State<ExperiencesTab> createState() => _ExperiencesTabState();
@@ -44,8 +50,8 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   @override
   void didUpdateWidget(ExperiencesTab old) {
     super.didUpdateWidget(old);
-    // Switching the Popular toggle changes the dataset — reset and reload.
-    if (old.popular != widget.popular) {
+    // Switching Popular or source changes the dataset — reset and reload.
+    if (old.popular != widget.popular || old.source != widget.source) {
       _items.clear();
       _cursor = null;
       _hasMore = !widget.popular;
@@ -73,7 +79,8 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     if (widget.popular) {
       if (_firstLoadDone) return;
       setState(() => _loading = true);
-      final items = await _ds.getPopularExperiences(limit: 20);
+      final items =
+          await _ds.getPopularExperiences(source: widget.source, limit: 20);
       if (!mounted) return;
       setState(() {
         _items
@@ -87,7 +94,13 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     }
     if (!_hasMore) return;
     setState(() => _loading = true);
-    final page = await _ds.getExperiencesPage(startAfter: _cursor, limit: 20);
+    final page = await _ds.getExperiencesPage(
+      source: widget.source,
+      startAfter: _cursor,
+      limit: 20,
+      userLat: widget.userLat,
+      userLng: widget.userLng,
+    );
     if (!mounted) return;
     setState(() {
       _items.addAll(page.items);
@@ -339,6 +352,19 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                             color: AppColors.textPrimary,
                             fontSize: 11,
                             fontWeight: FontWeight.w600)),
+                    if ([e.city, e.country]
+                        .any((s) => s != null && s.isNotEmpty)) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        [e.city, e.country]
+                            .where((s) => s != null && s.isNotEmpty)
+                            .join(', '),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            color: AppColors.textSecondary, fontSize: 10),
+                      ),
+                    ],
                     const SizedBox(height: 2),
                     Row(
                       children: [
