@@ -56,19 +56,21 @@ require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
-// Curated Viator destinationIds. Extend freely; ingestion is bounded by this.
-const DESTINATIONS = [
-    { city: 'Rome', country: 'IT', viatorDestId: '511' },
-    { city: 'Paris', country: 'FR', viatorDestId: '479' },
-    { city: 'London', country: 'GB', viatorDestId: '737' },
-    { city: 'Barcelona', country: 'ES', viatorDestId: '562' },
-    { city: 'New York', country: 'US', viatorDestId: '687' },
-    { city: 'Tokyo', country: 'JP', viatorDestId: '334' },
-    { city: 'Amsterdam', country: 'NL', viatorDestId: '525' },
-    { city: 'Dubai', country: 'AE', viatorDestId: '828' },
-    { city: 'Lisbon', country: 'PT', viatorDestId: '538' },
-    { city: 'Berlin', country: 'DE', viatorDestId: '488' },
+// Top 50 tourism countries worldwide. We match these to Viator's COUNTRY
+// destinations dynamically (no hardcoded ids) and pull the top 10 experiences
+// for each — so the feed is ~500 top-rated experiences across 50 countries.
+const TOP_COUNTRIES = [
+    'France', 'Spain', 'United States', 'Italy', 'Turkey', 'Mexico',
+    'United Kingdom', 'Germany', 'Greece', 'Austria', 'Japan', 'Thailand',
+    'Portugal', 'Netherlands', 'Croatia', 'United Arab Emirates', 'Canada',
+    'Australia', 'China', 'Egypt', 'India', 'Indonesia', 'Vietnam',
+    'Switzerland', 'Czech Republic', 'Poland', 'Ireland', 'Morocco',
+    'South Africa', 'Brazil', 'Argentina', 'Peru', 'Iceland', 'Hungary',
+    'Belgium', 'Denmark', 'Sweden', 'Norway', 'Singapore', 'Malaysia',
+    'Philippines', 'South Korea', 'New Zealand', 'Israel', 'Jordan',
+    'Cambodia', 'Costa Rica', 'Colombia', 'Chile', 'Saudi Arabia',
 ];
+const PRODUCTS_PER_COUNTRY = 10;
 async function upsertAll(docs) {
     let batch = db.batch();
     let ops = 0;
@@ -91,25 +93,58 @@ const VIATOR_BASES = [
     'https://api.viator.com/partner',
     'https://api.sandbox.viator.com/partner',
 ];
-async function fetchViator(apiKey, d, base) {
+const VIATOR_HEADERS = (apiKey) => ({
+    'exp-api-key': apiKey,
+    Accept: 'application/json;version=2.0',
+    'Accept-Language': 'en-US',
+    'Content-Type': 'application/json',
+});
+/// Resolve the top-50 country names to Viator COUNTRY destination ids.
+async function resolveCountries(apiKey, base) {
+    try {
+        const res = await fetch(`${base}/destinations`, {
+            headers: VIATOR_HEADERS(apiKey),
+        });
+        if (!res.ok) {
+            console.error(`Viator destinations HTTP ${res.status} (${base})`);
+            return [];
+        }
+        const json = await res.json();
+        const dests = json.destinations || [];
+        const byName = new Map();
+        for (const d of dests) {
+            if (d.type === 'COUNTRY' && d.name) {
+                byName.set(String(d.name).toLowerCase(), d);
+            }
+        }
+        const out = [];
+        for (const name of TOP_COUNTRIES) {
+            const d = byName.get(name.toLowerCase());
+            if (d)
+                out.push({ id: String(d.destinationId), name });
+        }
+        return out;
+    }
+    catch (e) {
+        console.error(`Viator destinations failed (${base})`, e);
+        return [];
+    }
+}
+/// Top [PRODUCTS_PER_COUNTRY] experiences for one country.
+async function fetchTopForCountry(apiKey, base, destId, countryName) {
     try {
         const res = await fetch(`${base}/products/search`, {
             method: 'POST',
-            headers: {
-                'exp-api-key': apiKey,
-                Accept: 'application/json;version=2.0',
-                'Accept-Language': 'en-US',
-                'Content-Type': 'application/json',
-            },
+            headers: VIATOR_HEADERS(apiKey),
             body: JSON.stringify({
-                filtering: { destination: d.viatorDestId },
+                filtering: { destination: destId },
                 sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' },
-                pagination: { start: 1, count: 30 },
+                pagination: { start: 1, count: PRODUCTS_PER_COUNTRY },
                 currency: 'USD',
             }),
         });
         if (!res.ok) {
-            console.error(`Viator ${d.city} HTTP ${res.status}`);
+            console.error(`Viator ${countryName} HTTP ${res.status}`);
             return [];
         }
         const json = await res.json();
@@ -127,8 +162,8 @@ async function fetchViator(apiKey, d, base) {
                     description: (_d = p.description) !== null && _d !== void 0 ? _d : null,
                     imageUrl: img !== null && img !== void 0 ? img : null,
                     category: 'tour',
-                    city: d.city,
-                    country: d.country,
+                    city: null,
+                    country: countryName,
                     fromPrice: (_g = (_f = (_e = p.pricing) === null || _e === void 0 ? void 0 : _e.summary) === null || _f === void 0 ? void 0 : _f.fromPrice) !== null && _g !== void 0 ? _g : null,
                     currency: (_j = (_h = p.pricing) === null || _h === void 0 ? void 0 : _h.currency) !== null && _j !== void 0 ? _j : 'USD',
                     rating: (_l = (_k = p.reviews) === null || _k === void 0 ? void 0 : _k.combinedAverageRating) !== null && _l !== void 0 ? _l : null,
@@ -141,7 +176,7 @@ async function fetchViator(apiKey, d, base) {
         });
     }
     catch (e) {
-        console.error(`Viator fetch failed for ${d.city}`, e);
+        console.error(`Viator fetch failed for ${countryName}`, e);
         return [];
     }
 }
@@ -151,16 +186,22 @@ async function runIngestion(apiKey) {
         return 0;
     }
     for (const base of VIATOR_BASES) {
+        const countries = await resolveCountries(apiKey, base);
+        if (countries.length === 0) {
+            console.log(`ingestExternalEvents: no countries from ${base}, trying next.`);
+            continue;
+        }
         const all = [];
-        for (const d of DESTINATIONS) {
-            all.push(...(await fetchViator(apiKey, d, base)));
+        for (const c of countries) {
+            all.push(...(await fetchTopForCountry(apiKey, base, c.id, c.name)));
         }
         if (all.length > 0) {
             await upsertAll(all);
-            console.log(`ingestExternalEvents: upserted ${all.length} Viator experiences from ${base}.`);
+            console.log(`ingestExternalEvents: upserted ${all.length} experiences across ` +
+                `${countries.length} countries from ${base}.`);
             return all.length;
         }
-        console.log(`ingestExternalEvents: no results from ${base}, trying next.`);
+        console.log(`ingestExternalEvents: no products from ${base}, trying next.`);
     }
     console.log('ingestExternalEvents: no Viator results from any base.');
     return 0;
@@ -184,7 +225,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_rome_colosseum',
             title: 'Colosseum, Roman Forum & Palatine Hill Skip-the-Line Tour',
             category: 'tour', city: 'Rome', country: 'IT',
-            imageUrl: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/colosseum/800/600',
             fromPrice: 54, currency: 'EUR', rating: 4.6, reviewCount: 12890,
             durationMinutes: 180, bookingUrl: 'https://www.viator.com/Rome-tours/d511',
         },
@@ -195,7 +236,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_paris_eiffel',
             title: 'Eiffel Tower Summit Access by Elevator',
             category: 'attraction', city: 'Paris', country: 'FR',
-            imageUrl: 'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/eiffel/800/600',
             fromPrice: 69, currency: 'EUR', rating: 4.5, reviewCount: 8742,
             durationMinutes: 120, bookingUrl: 'https://www.viator.com/Paris-tours/d479',
         },
@@ -206,7 +247,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_tokyo_food',
             title: 'Tokyo by Night: Food & Culture Walking Tour',
             category: 'experience', city: 'Tokyo', country: 'JP',
-            imageUrl: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/tokyo/800/600',
             fromPrice: 95, currency: 'USD', rating: 4.9, reviewCount: 2103,
             durationMinutes: 180, bookingUrl: 'https://www.viator.com/Tokyo-tours/d334',
         },
@@ -217,7 +258,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_barcelona_sagrada',
             title: 'Sagrada Família Fast-Track Guided Tour',
             category: 'attraction', city: 'Barcelona', country: 'ES',
-            imageUrl: 'https://images.unsplash.com/photo-1583779457094-ab6f9164a1c8?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/sagrada/800/600',
             fromPrice: 49, currency: 'EUR', rating: 4.8, reviewCount: 15420,
             durationMinutes: 90, bookingUrl: 'https://www.viator.com/Barcelona-tours/d562',
         },
@@ -228,7 +269,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_nyc_skyline',
             title: 'New York Skyline: Empire State Building Skip-the-Line',
             category: 'attraction', city: 'New York', country: 'US',
-            imageUrl: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/nyc/800/600',
             fromPrice: 48, currency: 'USD', rating: 4.5, reviewCount: 9981,
             durationMinutes: 90, bookingUrl: 'https://www.viator.com/New-York-City-tours/d687',
         },
@@ -239,7 +280,7 @@ const SEED_DOCS = [
             source: 'viator', externalId: 'seed_dubai_desert',
             title: 'Dubai Red Dunes Desert Safari with BBQ Dinner',
             category: 'experience', city: 'Dubai', country: 'AE',
-            imageUrl: 'https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&q=80',
+            imageUrl: 'https://picsum.photos/seed/dubai/800/600',
             fromPrice: 35, currency: 'USD', rating: 4.7, reviewCount: 6210,
             durationMinutes: 360, bookingUrl: 'https://www.viator.com/Dubai-tours/d828',
         },
