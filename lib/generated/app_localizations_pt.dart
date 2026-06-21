@@ -3865,6 +3865,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsTabMyEvents => 'Os Meus Eventos';
 
   @override
+  String get eventsTabExperiences => 'Experiências';
+
+  @override
+  String get eventsBook => 'Reservar';
+
+  @override
+  String get eventsFromPrice => 'desde';
+
+  @override
   String get eventsTabNearby => 'Perto';
 
   @override
@@ -14776,6 +14785,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsTabMyEvents => 'Meus Eventos';
+
+  @override
+  String get eventsTabExperiences => 'Experiências';
+
+  @override
+  String get eventsBook => 'Reservar';
+
+  @override
+  String get eventsFromPrice => 'a partir de';
 
   @override
   String get eventsTabNearby => 'Perto';

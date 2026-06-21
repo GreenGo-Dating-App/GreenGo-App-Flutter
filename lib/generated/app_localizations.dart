@@ -6917,6 +6917,24 @@ abstract class AppLocalizations {
   /// **'My Events'**
   String get eventsTabMyEvents;
 
+  /// No description provided for @eventsTabExperiences.
+  ///
+  /// In en, this message translates to:
+  /// **'Experiences'**
+  String get eventsTabExperiences;
+
+  /// No description provided for @eventsBook.
+  ///
+  /// In en, this message translates to:
+  /// **'Book'**
+  String get eventsBook;
+
+  /// No description provided for @eventsFromPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'from'**
+  String get eventsFromPrice;
+
   /// No description provided for @eventsTabNearby.
   ///
   /// In en, this message translates to:

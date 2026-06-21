@@ -3891,6 +3891,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventsTabMyEvents => 'Mes événements';
 
   @override
+  String get eventsTabExperiences => 'Expériences';
+
+  @override
+  String get eventsBook => 'Réserver';
+
+  @override
+  String get eventsFromPrice => 'à partir de';
+
+  @override
   String get eventsTabNearby => 'À proximité';
 
   @override
