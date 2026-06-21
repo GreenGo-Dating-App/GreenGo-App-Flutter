@@ -49,6 +49,7 @@ class _EventsScreenState extends State<EventsScreen>
   EventCategory? _selectedCategory;
   String _searchQuery = '';
   bool _sortByPopularity = false;
+  bool _gridView = false;
 
   @override
   void initState() {
@@ -245,6 +246,18 @@ class _EventsScreenState extends State<EventsScreen>
             ),
             onSelected: (v) => setState(() => _sortByPopularity = v),
           ),
+          const SizedBox(width: 4),
+          // List / grid view toggle
+          IconButton(
+            tooltip: _gridView
+                ? AppLocalizations.of(context)!.eventsViewList
+                : AppLocalizations.of(context)!.eventsViewGrid,
+            icon: Icon(
+              _gridView ? Icons.view_list : Icons.grid_view,
+              color: AppColors.richGold,
+            ),
+            onPressed: () => setState(() => _gridView = !_gridView),
+          ),
         ],
       ),
     );
@@ -429,17 +442,93 @@ class _EventsScreenState extends State<EventsScreen>
         // Wait briefly for the BLoC to process
         await Future.delayed(const Duration(milliseconds: 500));
       },
-      child: ListView.builder(
-        padding: const EdgeInsets.all(12),
-        itemCount: events.length,
-        itemBuilder: (context, index) {
-          return EventCard(
-            event: events[index],
-            currentUserId: widget.currentUserId,
-            onTap: () => _showEventDetails(events[index]),
-            onRSVP: (status) => _handleRSVP(events[index], status),
-          );
-        },
+      child: _gridView
+          ? GridView.builder(
+              padding: const EdgeInsets.all(12),
+              gridDelegate:
+                  const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+                childAspectRatio: 0.7,
+              ),
+              itemCount: events.length,
+              itemBuilder: (context, index) =>
+                  _buildEventGridTile(events[index]),
+            )
+          : ListView.builder(
+              padding: const EdgeInsets.all(12),
+              itemCount: events.length,
+              itemBuilder: (context, index) {
+                return EventCard(
+                  event: events[index],
+                  currentUserId: widget.currentUserId,
+                  onTap: () => _showEventDetails(events[index]),
+                  onRSVP: (status) => _handleRSVP(events[index], status),
+                );
+              },
+            ),
+    );
+  }
+
+  /// Compact tile for the 3-column grid view.
+  Widget _buildEventGridTile(Event event) {
+    return GestureDetector(
+      onTap: () => _showEventDetails(event),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Container(
+          color: AppColors.backgroundCard,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: event.imageUrl != null && event.imageUrl!.isNotEmpty
+                    ? Image.network(event.imageUrl!,
+                        fit: BoxFit.cover,
+                        errorBuilder: (_, __, ___) => Container(
+                            color: AppColors.backgroundInput,
+                            child: const Icon(Icons.event,
+                                color: AppColors.textTertiary)))
+                    : Container(
+                        color: AppColors.backgroundInput,
+                        child: const Icon(Icons.event,
+                            color: AppColors.textTertiary)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(6),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      event.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: [
+                        const Icon(Icons.people,
+                            size: 11, color: AppColors.textTertiary),
+                        const SizedBox(width: 3),
+                        Text(
+                          '${event.goingCount}',
+                          style: const TextStyle(
+                              color: AppColors.textTertiary, fontSize: 10),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -1517,6 +1606,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   String? _pickedCountry;
   File? _mainPhoto;
   final List<File> _extraPhotos = [];
+  // Already-uploaded images kept when editing (URLs, shown alongside new files).
+  String? _existingMainUrl;
+  final List<String> _existingPhotoUrls = [];
   final ImagePicker _picker = ImagePicker();
   bool _uploading = false;
   final _linkUrlController = TextEditingController();
@@ -1551,6 +1643,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _pickedCountry = e.country;
     _externalLinks.addAll(e.externalLinks);
     if (e.languagePairs != null) _languagePairsController.text = e.languagePairs!;
+    // Show already-uploaded images in the edit form.
+    _existingMainUrl = e.imageUrl;
+    _existingPhotoUrls.addAll(e.photoUrls);
   }
 
   @override
@@ -1572,34 +1667,65 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (x != null) setState(() => _mainPhoto = File(x.path));
   }
 
+  int get _extraCount => _existingPhotoUrls.length + _extraPhotos.length;
+
   Future<void> _pickExtraPhoto() async {
-    if (_extraPhotos.length >= 4) return;
+    if (_extraCount >= 4) return;
     final x =
         await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
     if (x != null) setState(() => _extraPhotos.add(File(x.path)));
   }
 
-  /// Main photo + up to 4 extra photos, uploaded on create.
+  /// Main photo + up to 4 extra photos. In edit mode, already-uploaded images
+  /// (URLs) are shown and can be kept or removed; new picks are added on top.
   Widget _buildPhotoSection() {
-    Widget slot({File? file, required VoidCallback onTap, bool main = false}) {
+    Widget slot({
+      File? file,
+      String? url,
+      required VoidCallback onTap,
+      VoidCallback? onRemove,
+      bool main = false,
+    }) {
+      final hasImage = file != null || (url != null && url.isNotEmpty);
       return GestureDetector(
         onTap: onTap,
-        child: Container(
-          width: main ? 110 : 70,
-          height: main ? 110 : 70,
-          margin: const EdgeInsets.only(right: 8),
-          decoration: BoxDecoration(
-            color: AppColors.backgroundCard,
-            borderRadius: BorderRadius.circular(12),
-            image: file != null
-                ? DecorationImage(image: FileImage(file), fit: BoxFit.cover)
-                : null,
-            border: Border.all(color: AppColors.textTertiary.withOpacity(0.3)),
-          ),
-          child: file == null
-              ? Icon(main ? Icons.add_a_photo : Icons.add,
-                  color: AppColors.textSecondary)
-              : null,
+        child: Stack(
+          children: [
+            Container(
+              width: main ? 110 : 70,
+              height: main ? 110 : 70,
+              margin: const EdgeInsets.only(right: 8),
+              decoration: BoxDecoration(
+                color: AppColors.backgroundCard,
+                borderRadius: BorderRadius.circular(12),
+                image: file != null
+                    ? DecorationImage(image: FileImage(file), fit: BoxFit.cover)
+                    : (url != null && url.isNotEmpty
+                        ? DecorationImage(
+                            image: NetworkImage(url), fit: BoxFit.cover)
+                        : null),
+                border:
+                    Border.all(color: AppColors.textTertiary.withOpacity(0.3)),
+              ),
+              child: !hasImage
+                  ? Icon(main ? Icons.add_a_photo : Icons.add,
+                      color: AppColors.textSecondary)
+                  : null,
+            ),
+            if (onRemove != null && hasImage)
+              Positioned(
+                right: 8,
+                top: 0,
+                child: GestureDetector(
+                  onTap: onRemove,
+                  child: const CircleAvatar(
+                    radius: 11,
+                    backgroundColor: Colors.black54,
+                    child: Icon(Icons.close, size: 14, color: Colors.white),
+                  ),
+                ),
+              ),
+          ],
         ),
       );
     }
@@ -1609,10 +1735,32 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          slot(file: _mainPhoto, onTap: _pickMainPhoto, main: true),
-          ..._extraPhotos.map((f) => slot(file: f, onTap: () {})),
-          if (_extraPhotos.length < 4)
-            slot(file: null, onTap: _pickExtraPhoto),
+          // Main: new file takes precedence, else existing URL.
+          slot(
+            file: _mainPhoto,
+            url: _existingMainUrl,
+            main: true,
+            onTap: _pickMainPhoto,
+            onRemove: (_mainPhoto != null || _existingMainUrl != null)
+                ? () => setState(() {
+                      _mainPhoto = null;
+                      _existingMainUrl = null;
+                    })
+                : null,
+          ),
+          // Existing extra photos (kept unless removed).
+          ..._existingPhotoUrls.map((u) => slot(
+                url: u,
+                onTap: () {},
+                onRemove: () => setState(() => _existingPhotoUrls.remove(u)),
+              )),
+          // Newly added extra photos.
+          ..._extraPhotos.map((f) => slot(
+                file: f,
+                onTap: () {},
+                onRemove: () => setState(() => _extraPhotos.remove(f)),
+              )),
+          if (_extraCount < 4) slot(onTap: _pickExtraPhoto),
         ],
       ),
     );
@@ -2062,10 +2210,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       }
     }
 
-    // Upload the photos (main + up to 4) to Storage.
+    // Upload new photos; keep already-uploaded ones the user didn't remove.
     setState(() => _uploading = true);
-    String? imageUrl;
-    final photoUrls = <String>[];
+    String? imageUrl = _existingMainUrl;
+    final photoUrls = <String>[..._existingPhotoUrls];
     try {
       final ds = sl<ProfileRemoteDataSource>();
       if (_mainPhoto != null) {
@@ -2100,8 +2248,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         title: _titleController.text,
         description: _descriptionController.text,
         category: _category,
-        imageUrl: imageUrl ?? widget.existing!.imageUrl,
-        photoUrls: photoUrls.isNotEmpty ? photoUrls : widget.existing!.photoUrls,
+        imageUrl: imageUrl,
+        photoUrls: photoUrls,
         startDate: _startDate,
         endDate: _endDate,
         locationName: _locationController.text,

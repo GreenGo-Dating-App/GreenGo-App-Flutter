@@ -10831,6 +10831,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventsSortPopular => 'Populaire';
 
   @override
+  String get eventsViewList => 'Vue liste';
+
+  @override
+  String get eventsViewGrid => 'Vue grille';
+
+  @override
   String get eventViewEvent => 'Voir l\'événement';
 
   @override

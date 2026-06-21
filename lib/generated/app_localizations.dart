@@ -18990,6 +18990,18 @@ abstract class AppLocalizations {
   /// **'Popular'**
   String get eventsSortPopular;
 
+  /// No description provided for @eventsViewList.
+  ///
+  /// In en, this message translates to:
+  /// **'List view'**
+  String get eventsViewList;
+
+  /// No description provided for @eventsViewGrid.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid view'**
+  String get eventsViewGrid;
+
   /// No description provided for @eventViewEvent.
   ///
   /// In en, this message translates to:

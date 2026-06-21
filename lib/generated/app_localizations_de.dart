@@ -10793,6 +10793,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventsSortPopular => 'Beliebt';
 
   @override
+  String get eventsViewList => 'Listenansicht';
+
+  @override
+  String get eventsViewGrid => 'Rasteransicht';
+
+  @override
   String get eventViewEvent => 'Veranstaltung ansehen';
 
   @override
