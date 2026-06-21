@@ -54,9 +54,12 @@ export {
   onGroupInfoChanged,
 } from './group_chat/membership';
 
-// External experiences (Tiqets + Viator) — scheduled ingester into
-// `external_events`. No-ops until provider API keys are set.
-export { ingestExternalEvents } from './external_events/ingest';
+// External experiences (Viator) — scheduled ingester into `external_events`,
+// plus a guarded manual-refresh endpoint. No-ops until VIATOR_API_KEY is set.
+export {
+  ingestExternalEvents,
+  runIngestExternalEventsNow,
+} from './external_events/ingest';
 
 // Events — per-country aggregation for the globe.
 export {

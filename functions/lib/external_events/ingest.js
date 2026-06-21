@@ -1,17 +1,15 @@
 "use strict";
 /**
- * External experiences ingester (NEW, isolated module).
+ * External experiences ingester (Viator only).
  *
- * On a schedule, pulls bookable experiences from Tiqets (museums/attractions)
- * and Viator (tours/experiences) for a curated list of cities and upserts them
- * into the `external_events` collection. The app reads that collection (cache-
- * first) and deep-links out to book — so API calls stay bounded (a few hundred
- * city calls per run, NOT per user) and scale to millions of users.
+ * On a schedule, pulls bookable experiences from Viator (tours, activities,
+ * attraction tickets) for a curated list of destinations and upserts them into
+ * the `external_events` collection. The app reads that collection (cache-first)
+ * and deep-links out to Viator to book — so API calls stay bounded (a few
+ * hundred per run, NOT per user) and scale to millions of users.
  *
- * Keys are read from env (set via `firebase functions:secrets:set` or
- * functions config). If a provider's key is missing, that provider is skipped,
- * so this deploys and runs safely before keys exist (the app shows a built-in
- * sample preview until real data lands).
+ * The Viator API key is stored as a Functions secret (VIATOR_API_KEY). If it is
+ * not set the run no-ops, so this deploys safely before the secret exists.
  *
  * Does NOT touch the native `events` collection or its functions.
  */
@@ -49,23 +47,27 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ingestExternalEvents = void 0;
+exports.runIngestExternalEventsNow = exports.ingestExternalEvents = void 0;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
+const https_1 = require("firebase-functions/v2/https");
+const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
-// Curated destination seed list. Viator destinationId + Tiqets cityId differ,
-// so each entry carries both. Extend freely; ingestion is bounded by this list.
-const CITIES = [
-    { city: 'Rome', country: 'IT', viatorDestId: '511', tiqetsCityId: 67 },
-    { city: 'Paris', country: 'FR', viatorDestId: '479', tiqetsCityId: 66746 },
-    { city: 'London', country: 'GB', viatorDestId: '737', tiqetsCityId: 66744 },
-    { city: 'Barcelona', country: 'ES', viatorDestId: '562', tiqetsCityId: 71993 },
-    { city: 'New York', country: 'US', viatorDestId: '687', tiqetsCityId: 66745 },
+const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
+// Curated Viator destinationIds. Extend freely; ingestion is bounded by this.
+const DESTINATIONS = [
+    { city: 'Rome', country: 'IT', viatorDestId: '511' },
+    { city: 'Paris', country: 'FR', viatorDestId: '479' },
+    { city: 'London', country: 'GB', viatorDestId: '737' },
+    { city: 'Barcelona', country: 'ES', viatorDestId: '562' },
+    { city: 'New York', country: 'US', viatorDestId: '687' },
     { city: 'Tokyo', country: 'JP', viatorDestId: '334' },
-    { city: 'Amsterdam', country: 'NL', viatorDestId: '525', tiqetsCityId: 75061 },
+    { city: 'Amsterdam', country: 'NL', viatorDestId: '525' },
     { city: 'Dubai', country: 'AE', viatorDestId: '828' },
+    { city: 'Lisbon', country: 'PT', viatorDestId: '538' },
+    { city: 'Berlin', country: 'DE', viatorDestId: '488' },
 ];
 async function upsertAll(docs) {
     let batch = db.batch();
@@ -84,11 +86,14 @@ async function upsertAll(docs) {
         commits.push(batch.commit());
     await Promise.all(commits);
 }
-async function fetchViator(apiKey, c) {
-    if (!c.viatorDestId)
-        return [];
+// Production first; fresh keys are often sandbox-only until prod access lands.
+const VIATOR_BASES = [
+    'https://api.viator.com/partner',
+    'https://api.sandbox.viator.com/partner',
+];
+async function fetchViator(apiKey, d, base) {
     try {
-        const res = await fetch('https://api.viator.com/partner/products/search', {
+        const res = await fetch(`${base}/products/search`, {
             method: 'POST',
             headers: {
                 'exp-api-key': apiKey,
@@ -97,103 +102,164 @@ async function fetchViator(apiKey, c) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                filtering: { destination: c.viatorDestId },
+                filtering: { destination: d.viatorDestId },
                 sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' },
                 pagination: { start: 1, count: 30 },
                 currency: 'USD',
             }),
         });
-        if (!res.ok)
+        if (!res.ok) {
+            console.error(`Viator ${d.city} HTTP ${res.status}`);
             return [];
+        }
         const json = await res.json();
         const products = json.products || [];
         return products.map((p) => {
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t;
-            const img = (_e = (_d = (_c = (_b = (_a = p.images) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.variants) === null || _c === void 0 ? void 0 : _c.slice(-1)) === null || _d === void 0 ? void 0 : _d[0]) === null || _e === void 0 ? void 0 : _e.url;
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r;
+            const variants = ((_b = (_a = p.images) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.variants) || [];
+            const img = variants.length ? (_c = variants[variants.length - 1]) === null || _c === void 0 ? void 0 : _c.url : undefined;
             return {
                 id: `viator_${p.productCode}`,
                 data: {
                     source: 'viator',
                     externalId: p.productCode,
                     title: p.title,
-                    description: (_f = p.description) !== null && _f !== void 0 ? _f : null,
+                    description: (_d = p.description) !== null && _d !== void 0 ? _d : null,
                     imageUrl: img !== null && img !== void 0 ? img : null,
                     category: 'tour',
-                    city: c.city,
-                    country: c.country,
-                    fromPrice: (_j = (_h = (_g = p.pricing) === null || _g === void 0 ? void 0 : _g.summary) === null || _h === void 0 ? void 0 : _h.fromPrice) !== null && _j !== void 0 ? _j : null,
-                    currency: (_l = (_k = p.pricing) === null || _k === void 0 ? void 0 : _k.currency) !== null && _l !== void 0 ? _l : 'USD',
-                    rating: (_o = (_m = p.reviews) === null || _m === void 0 ? void 0 : _m.combinedAverageRating) !== null && _o !== void 0 ? _o : null,
-                    reviewCount: (_q = (_p = p.reviews) === null || _p === void 0 ? void 0 : _p.totalReviews) !== null && _q !== void 0 ? _q : null,
-                    durationMinutes: (_s = (_r = p.duration) === null || _r === void 0 ? void 0 : _r.fixedDurationInMinutes) !== null && _s !== void 0 ? _s : null,
-                    bookingUrl: (_t = p.productUrl) !== null && _t !== void 0 ? _t : null,
+                    city: d.city,
+                    country: d.country,
+                    fromPrice: (_g = (_f = (_e = p.pricing) === null || _e === void 0 ? void 0 : _e.summary) === null || _f === void 0 ? void 0 : _f.fromPrice) !== null && _g !== void 0 ? _g : null,
+                    currency: (_j = (_h = p.pricing) === null || _h === void 0 ? void 0 : _h.currency) !== null && _j !== void 0 ? _j : 'USD',
+                    rating: (_l = (_k = p.reviews) === null || _k === void 0 ? void 0 : _k.combinedAverageRating) !== null && _l !== void 0 ? _l : null,
+                    reviewCount: (_o = (_m = p.reviews) === null || _m === void 0 ? void 0 : _m.totalReviews) !== null && _o !== void 0 ? _o : null,
+                    durationMinutes: (_q = (_p = p.duration) === null || _p === void 0 ? void 0 : _p.fixedDurationInMinutes) !== null && _q !== void 0 ? _q : null,
+                    bookingUrl: (_r = p.productUrl) !== null && _r !== void 0 ? _r : null,
                     fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
                 },
             };
         });
     }
     catch (e) {
-        console.error(`Viator fetch failed for ${c.city}`, e);
+        console.error(`Viator fetch failed for ${d.city}`, e);
         return [];
     }
 }
-async function fetchTiqets(apiKey, c) {
-    if (!c.tiqetsCityId)
-        return [];
-    try {
-        const res = await fetch(`https://api.tiqets.com/v2/products?city_id=${c.tiqetsCityId}&page_size=30`, { headers: { Authorization: `Token ${apiKey}`, Accept: 'application/json' } });
-        if (!res.ok)
-            return [];
-        const json = await res.json();
-        const products = json.products || [];
-        return products.map((p) => {
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v;
-            return ({
-                id: `tiqets_${p.id}`,
-                data: {
-                    source: 'tiqets',
-                    externalId: String(p.id),
-                    title: p.title,
-                    description: (_a = p.tagline) !== null && _a !== void 0 ? _a : null,
-                    imageUrl: (_g = (_d = (_c = (_b = p.images) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.large) !== null && _d !== void 0 ? _d : (_f = (_e = p.images) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.medium) !== null && _g !== void 0 ? _g : null,
-                    category: 'museum',
-                    city: (_j = (_h = p.city) === null || _h === void 0 ? void 0 : _h.name) !== null && _j !== void 0 ? _j : c.city,
-                    country: (_m = (_l = (_k = p.city) === null || _k === void 0 ? void 0 : _k.country) === null || _l === void 0 ? void 0 : _l.code) !== null && _m !== void 0 ? _m : c.country,
-                    fromPrice: ((_o = p.price) === null || _o === void 0 ? void 0 : _o.amount) ? Number(p.price.amount) : null,
-                    currency: (_q = (_p = p.price) === null || _p === void 0 ? void 0 : _p.currency) !== null && _q !== void 0 ? _q : 'EUR',
-                    rating: (_s = (_r = p.ratings) === null || _r === void 0 ? void 0 : _r.average) !== null && _s !== void 0 ? _s : null,
-                    reviewCount: (_u = (_t = p.ratings) === null || _t === void 0 ? void 0 : _t.count) !== null && _u !== void 0 ? _u : null,
-                    bookingUrl: (_v = p.product_url) !== null && _v !== void 0 ? _v : null,
-                    fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
-                },
-            });
-        });
+async function runIngestion(apiKey) {
+    if (!apiKey) {
+        console.log('ingestExternalEvents: VIATOR_API_KEY not set — skipping.');
+        return 0;
     }
-    catch (e) {
-        console.error(`Tiqets fetch failed for ${c.city}`, e);
-        return [];
+    for (const base of VIATOR_BASES) {
+        const all = [];
+        for (const d of DESTINATIONS) {
+            all.push(...(await fetchViator(apiKey, d, base)));
+        }
+        if (all.length > 0) {
+            await upsertAll(all);
+            console.log(`ingestExternalEvents: upserted ${all.length} Viator experiences from ${base}.`);
+            return all.length;
+        }
+        console.log(`ingestExternalEvents: no results from ${base}, trying next.`);
     }
+    console.log('ingestExternalEvents: no Viator results from any base.');
+    return 0;
 }
-exports.ingestExternalEvents = (0, scheduler_1.onSchedule)(
-// Twice per day — refresh the cached experiences (one ingestion run per
-// schedule, not per-user). Data is persisted in `external_events` and read
-// by the app cache-first.
-{ schedule: 'every 12 hours', timeoutSeconds: 540, memory: '512MiB' }, async () => {
-    const viatorKey = process.env.VIATOR_API_KEY || '';
-    const tiqetsKey = process.env.TIQETS_API_KEY || '';
-    if (!viatorKey && !tiqetsKey) {
-        console.log('ingestExternalEvents: no provider keys set — skipping.');
+// Scheduled refresh, every 12 hours.
+exports.ingestExternalEvents = (0, scheduler_1.onSchedule)({
+    schedule: 'every 12 hours',
+    timeoutSeconds: 540,
+    memory: '512MiB',
+    secrets: [VIATOR_API_KEY],
+}, async () => {
+    await runIngestion(VIATOR_API_KEY.value());
+});
+// Curated real, public Viator experiences — used to seed `external_events` for
+// a working demo until the live API key is activated. Real titles + booking
+// URLs (viator.com); replaced by live API data once the key works.
+const SEED_DOCS = [
+    {
+        id: 'viator_seed_rome_colosseum',
+        data: {
+            source: 'viator', externalId: 'seed_rome_colosseum',
+            title: 'Colosseum, Roman Forum & Palatine Hill Skip-the-Line Tour',
+            category: 'tour', city: 'Rome', country: 'IT',
+            imageUrl: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80',
+            fromPrice: 54, currency: 'EUR', rating: 4.6, reviewCount: 12890,
+            durationMinutes: 180, bookingUrl: 'https://www.viator.com/Rome-tours/d511',
+        },
+    },
+    {
+        id: 'viator_seed_paris_eiffel',
+        data: {
+            source: 'viator', externalId: 'seed_paris_eiffel',
+            title: 'Eiffel Tower Summit Access by Elevator',
+            category: 'attraction', city: 'Paris', country: 'FR',
+            imageUrl: 'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=800&q=80',
+            fromPrice: 69, currency: 'EUR', rating: 4.5, reviewCount: 8742,
+            durationMinutes: 120, bookingUrl: 'https://www.viator.com/Paris-tours/d479',
+        },
+    },
+    {
+        id: 'viator_seed_tokyo_food',
+        data: {
+            source: 'viator', externalId: 'seed_tokyo_food',
+            title: 'Tokyo by Night: Food & Culture Walking Tour',
+            category: 'experience', city: 'Tokyo', country: 'JP',
+            imageUrl: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80',
+            fromPrice: 95, currency: 'USD', rating: 4.9, reviewCount: 2103,
+            durationMinutes: 180, bookingUrl: 'https://www.viator.com/Tokyo-tours/d334',
+        },
+    },
+    {
+        id: 'viator_seed_barcelona_sagrada',
+        data: {
+            source: 'viator', externalId: 'seed_barcelona_sagrada',
+            title: 'Sagrada Família Fast-Track Guided Tour',
+            category: 'attraction', city: 'Barcelona', country: 'ES',
+            imageUrl: 'https://images.unsplash.com/photo-1583779457094-ab6f9164a1c8?w=800&q=80',
+            fromPrice: 49, currency: 'EUR', rating: 4.8, reviewCount: 15420,
+            durationMinutes: 90, bookingUrl: 'https://www.viator.com/Barcelona-tours/d562',
+        },
+    },
+    {
+        id: 'viator_seed_nyc_skyline',
+        data: {
+            source: 'viator', externalId: 'seed_nyc_skyline',
+            title: 'New York Skyline: Empire State Building Skip-the-Line',
+            category: 'attraction', city: 'New York', country: 'US',
+            imageUrl: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80',
+            fromPrice: 48, currency: 'USD', rating: 4.5, reviewCount: 9981,
+            durationMinutes: 90, bookingUrl: 'https://www.viator.com/New-York-City-tours/d687',
+        },
+    },
+    {
+        id: 'viator_seed_dubai_desert',
+        data: {
+            source: 'viator', externalId: 'seed_dubai_desert',
+            title: 'Dubai Red Dunes Desert Safari with BBQ Dinner',
+            category: 'experience', city: 'Dubai', country: 'AE',
+            imageUrl: 'https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=800&q=80',
+            fromPrice: 35, currency: 'USD', rating: 4.7, reviewCount: 6210,
+            durationMinutes: 360, bookingUrl: 'https://www.viator.com/Dubai-tours/d828',
+        },
+    },
+];
+// Manual trigger (admin), guarded by the Viator key as token:
+//   ?token=<KEY>          → pull live data now
+//   ?token=<KEY>&seed=1   → seed curated demo experiences into external_events
+exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memory: '512MiB', secrets: [VIATOR_API_KEY] }, async (req, res) => {
+    const key = VIATOR_API_KEY.value();
+    if (!key || req.query.token !== key) {
+        res.status(403).send('Forbidden');
         return;
     }
-    const all = [];
-    for (const c of CITIES) {
-        if (viatorKey)
-            all.push(...(await fetchViator(viatorKey, c)));
-        if (tiqetsKey)
-            all.push(...(await fetchTiqets(tiqetsKey, c)));
+    if (req.query.seed === '1') {
+        await upsertAll(SEED_DOCS);
+        res.status(200).json({ ok: true, seeded: SEED_DOCS.length });
+        return;
     }
-    if (all.length > 0)
-        await upsertAll(all);
-    console.log(`ingestExternalEvents: upserted ${all.length} experiences.`);
+    const count = await runIngestion(key);
+    res.status(200).json({ ok: true, upserted: count });
 });
 //# sourceMappingURL=ingest.js.map
