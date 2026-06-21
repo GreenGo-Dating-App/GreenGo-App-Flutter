@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/entities/conversation.dart';
 import '../../../chat/domain/entities/message.dart';
@@ -114,26 +115,37 @@ class _ShareEventSheet extends StatelessWidget {
                   StreamBuilder<Either<Failure, List<Conversation>>>(
                     stream: di.sl<GetUserGroups>()(currentUserId),
                     builder: (context, snap) {
-                      final groups = snap.data?.fold((_) => <Conversation>[],
+                      final groups = (snap.data?.fold((_) => <Conversation>[],
                               (g) => g) ??
-                          <Conversation>[];
+                          <Conversation>[])
+                        ..sort((a, b) => (b.lastMessageAt ?? DateTime(0))
+                            .compareTo(a.lastMessageAt ?? DateTime(0)));
                       if (groups.isEmpty) return const SizedBox.shrink();
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           _sectionHeader(l10n.groupNewGroup),
-                          ...groups.map((g) => ListTile(
-                                leading: const CircleAvatar(
-                                  child: Icon(Icons.groups),
-                                ),
-                                title: Text(
-                                  g.groupInfo?.name ?? 'Group',
-                                  style: const TextStyle(
-                                      color: AppColors.textPrimary),
-                                ),
-                                onTap: () =>
-                                    _shareToGroup(context, g.conversationId),
-                              )),
+                          ...groups.map((g) {
+                            final photo = g.groupInfo?.photoUrl;
+                            return ListTile(
+                              leading: CircleAvatar(
+                                backgroundImage:
+                                    (photo != null && photo.isNotEmpty)
+                                        ? NetworkImage(photo)
+                                        : null,
+                                child: (photo == null || photo.isEmpty)
+                                    ? const Icon(Icons.groups)
+                                    : null,
+                              ),
+                              title: Text(
+                                g.groupInfo?.name ?? 'Group',
+                                style: const TextStyle(
+                                    color: AppColors.textPrimary),
+                              ),
+                              onTap: () =>
+                                  _shareToGroup(context, g.conversationId),
+                            );
+                          }),
                         ],
                       );
                     },
@@ -143,27 +155,48 @@ class _ShareEventSheet extends StatelessWidget {
                     stream:
                         di.sl<ChatRepository>().getConversationsStream(currentUserId),
                     builder: (context, snap) {
-                      final chats = snap.data?.fold((_) => <Conversation>[],
+                      final chats = (snap.data?.fold((_) => <Conversation>[],
                               (c) => c) ??
-                          <Conversation>[];
+                          <Conversation>[])
+                        ..sort((a, b) => (b.lastMessageAt ?? DateTime(0))
+                            .compareTo(a.lastMessageAt ?? DateTime(0)));
                       if (chats.isEmpty) return const SizedBox.shrink();
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           _sectionHeader(l10n.messages),
-                          ...chats.map((c) => ListTile(
-                                leading: const CircleAvatar(
-                                  child: Icon(Icons.person),
-                                ),
-                                title: Text(
-                                  c.getOtherUserId(currentUserId),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(
-                                      color: AppColors.textPrimary),
-                                ),
-                                onTap: () => _shareToChat(context, c),
-                              )),
+                          ...chats.map((c) {
+                            final otherId = c.getOtherUserId(currentUserId);
+                            return FutureBuilder<Map<String, UserBrief>>(
+                              future: UserDirectoryService.instance
+                                  .resolve([otherId]),
+                              builder: (context, s) {
+                                final brief = s.data?[otherId] ??
+                                    UserDirectoryService.instance.cached(otherId);
+                                final name = brief?.name ?? otherId;
+                                final photo = brief?.photoUrl;
+                                return ListTile(
+                                  leading: CircleAvatar(
+                                    backgroundImage:
+                                        (photo != null && photo.isNotEmpty)
+                                            ? NetworkImage(photo)
+                                            : null,
+                                    child: (photo == null || photo.isEmpty)
+                                        ? const Icon(Icons.person)
+                                        : null,
+                                  ),
+                                  title: Text(
+                                    name,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                        color: AppColors.textPrimary),
+                                  ),
+                                  onTap: () => _shareToChat(context, c),
+                                );
+                              },
+                            );
+                          }),
                         ],
                       );
                     },
