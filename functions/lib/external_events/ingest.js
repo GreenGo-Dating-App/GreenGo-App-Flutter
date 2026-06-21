@@ -88,6 +88,28 @@ async function upsertAll(docs) {
         commits.push(batch.commit());
     await Promise.all(commits);
 }
+/// Delete all external_events for a source (so a re-feed replaces, not merges,
+/// the previous set). Batched; loops until the source is empty.
+async function clearSource(source) {
+    let total = 0;
+    for (;;) {
+        const snap = await db
+            .collection(COLLECTION)
+            .where('source', '==', source)
+            .limit(400)
+            .get();
+        if (snap.empty)
+            break;
+        const batch = db.batch();
+        snap.docs.forEach((d) => batch.delete(d.ref));
+        await batch.commit();
+        total += snap.size;
+        if (snap.size < 400)
+            break;
+    }
+    console.log(`clearSource(${source}): deleted ${total}`);
+    return total;
+}
 // Production first; fresh keys are often sandbox-only until prod access lands.
 const VIATOR_BASES = [
     'https://api.viator.com/partner',
@@ -535,7 +557,11 @@ exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 54
         res.status(200).json({ ok: true, seeded: docs.length });
         return;
     }
+    // ?clear=viator → delete the previous set first, then re-feed fresh.
+    let cleared = 0;
+    if (req.query.clear)
+        cleared = await clearSource(String(req.query.clear));
     const count = await runIngestion(key);
-    res.status(200).json({ ok: true, upserted: count });
+    res.status(200).json({ ok: true, cleared, upserted: count });
 });
 //# sourceMappingURL=ingest.js.map
