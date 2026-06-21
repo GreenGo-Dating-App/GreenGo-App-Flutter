@@ -135,8 +135,15 @@ async function fetchTopForCountry(
     const json: any = await res.json();
     const products: any[] = json.products || [];
     return products.map((p) => {
-      const variants = p.images?.[0]?.variants || [];
-      const img = variants.length ? variants[variants.length - 1]?.url : undefined;
+      // Pick the highest-resolution image variant (max width × height).
+      const variants: any[] = p.images?.[0]?.variants || [];
+      let best: any;
+      for (const v of variants) {
+        const area = (v.width || 0) * (v.height || 0);
+        const bestArea = best ? (best.width || 0) * (best.height || 0) : -1;
+        if (area > bestArea) best = v;
+      }
+      const img = best?.url;
       return {
         id: `viator_${p.productCode}`,
         data: {

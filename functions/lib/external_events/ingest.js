@@ -150,26 +150,34 @@ async function fetchTopForCountry(apiKey, base, destId, countryName) {
         const json = await res.json();
         const products = json.products || [];
         return products.map((p) => {
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r;
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
+            // Pick the highest-resolution image variant (max width × height).
             const variants = ((_b = (_a = p.images) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.variants) || [];
-            const img = variants.length ? (_c = variants[variants.length - 1]) === null || _c === void 0 ? void 0 : _c.url : undefined;
+            let best;
+            for (const v of variants) {
+                const area = (v.width || 0) * (v.height || 0);
+                const bestArea = best ? (best.width || 0) * (best.height || 0) : -1;
+                if (area > bestArea)
+                    best = v;
+            }
+            const img = best === null || best === void 0 ? void 0 : best.url;
             return {
                 id: `viator_${p.productCode}`,
                 data: {
                     source: 'viator',
                     externalId: p.productCode,
                     title: p.title,
-                    description: (_d = p.description) !== null && _d !== void 0 ? _d : null,
+                    description: (_c = p.description) !== null && _c !== void 0 ? _c : null,
                     imageUrl: img !== null && img !== void 0 ? img : null,
                     category: 'tour',
                     city: null,
                     country: countryName,
-                    fromPrice: (_g = (_f = (_e = p.pricing) === null || _e === void 0 ? void 0 : _e.summary) === null || _f === void 0 ? void 0 : _f.fromPrice) !== null && _g !== void 0 ? _g : null,
-                    currency: (_j = (_h = p.pricing) === null || _h === void 0 ? void 0 : _h.currency) !== null && _j !== void 0 ? _j : 'USD',
-                    rating: (_l = (_k = p.reviews) === null || _k === void 0 ? void 0 : _k.combinedAverageRating) !== null && _l !== void 0 ? _l : null,
-                    reviewCount: (_o = (_m = p.reviews) === null || _m === void 0 ? void 0 : _m.totalReviews) !== null && _o !== void 0 ? _o : null,
-                    durationMinutes: (_q = (_p = p.duration) === null || _p === void 0 ? void 0 : _p.fixedDurationInMinutes) !== null && _q !== void 0 ? _q : null,
-                    bookingUrl: (_r = p.productUrl) !== null && _r !== void 0 ? _r : null,
+                    fromPrice: (_f = (_e = (_d = p.pricing) === null || _d === void 0 ? void 0 : _d.summary) === null || _e === void 0 ? void 0 : _e.fromPrice) !== null && _f !== void 0 ? _f : null,
+                    currency: (_h = (_g = p.pricing) === null || _g === void 0 ? void 0 : _g.currency) !== null && _h !== void 0 ? _h : 'USD',
+                    rating: (_k = (_j = p.reviews) === null || _j === void 0 ? void 0 : _j.combinedAverageRating) !== null && _k !== void 0 ? _k : null,
+                    reviewCount: (_m = (_l = p.reviews) === null || _l === void 0 ? void 0 : _l.totalReviews) !== null && _m !== void 0 ? _m : null,
+                    durationMinutes: (_p = (_o = p.duration) === null || _o === void 0 ? void 0 : _o.fixedDurationInMinutes) !== null && _p !== void 0 ? _p : null,
+                    bookingUrl: (_q = p.productUrl) !== null && _q !== void 0 ? _q : null,
                     fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
                 },
             };
