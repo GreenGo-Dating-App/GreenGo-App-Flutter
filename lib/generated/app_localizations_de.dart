@@ -3881,6 +3881,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventsTabExperiences => 'Erlebnisse';
 
   @override
+  String get eventsTabAttractions => 'Sehenswürdigkeiten';
+
+  @override
+  String get eventsTabCommunity => 'Community';
+
+  @override
+  String get eventsDeleteEvent => 'Event löschen';
+
+  @override
+  String get eventsDeleteConfirmBody =>
+      'Möchten Sie dieses Event wirklich löschen? Dies kann nicht rückgängig gemacht werden.';
+
+  @override
   String get eventsBook => 'Buchen';
 
   @override

@@ -338,6 +338,79 @@ const SEED_DOCS: Doc[] = [
       durationMinutes: 360, bookingUrl: 'https://www.viator.com/Dubai-tours/d828',
     },
   },
+  // Tiqets attractions (museums/landmarks) — Attractions tab seed (with geo).
+  {
+    id: 'tiqets_seed_colosseum',
+    data: {
+      source: 'tiqets', externalId: 'seed_colosseum',
+      title: 'Colosseum, Roman Forum & Palatine Hill — Skip-the-Line',
+      category: 'attraction', city: 'Rome', country: 'IT',
+      imageUrl: 'https://picsum.photos/seed/tqcolosseum/800/600',
+      fromPrice: 18, currency: 'EUR', rating: 4.7, reviewCount: 5312,
+      lat: 41.8902, lng: 12.4922,
+      bookingUrl: 'https://www.tiqets.com/en/rome-attractions-c66903/',
+    },
+  },
+  {
+    id: 'tiqets_seed_louvre',
+    data: {
+      source: 'tiqets', externalId: 'seed_louvre',
+      title: 'Louvre Museum — Timed Entrance',
+      category: 'attraction', city: 'Paris', country: 'FR',
+      imageUrl: 'https://picsum.photos/seed/tqlouvre/800/600',
+      fromPrice: 22, currency: 'EUR', rating: 4.6, reviewCount: 8740,
+      lat: 48.8606, lng: 2.3376,
+      bookingUrl: 'https://www.tiqets.com/en/paris-attractions-c66746/',
+    },
+  },
+  {
+    id: 'tiqets_seed_sagrada',
+    data: {
+      source: 'tiqets', externalId: 'seed_sagrada',
+      title: 'Sagrada Família — Fast-Track Entry',
+      category: 'attraction', city: 'Barcelona', country: 'ES',
+      imageUrl: 'https://picsum.photos/seed/tqsagrada/800/600',
+      fromPrice: 26, currency: 'EUR', rating: 4.8, reviewCount: 12450,
+      lat: 41.4036, lng: 2.1744,
+      bookingUrl: 'https://www.tiqets.com/en/barcelona-attractions-c71993/',
+    },
+  },
+  {
+    id: 'tiqets_seed_vangogh',
+    data: {
+      source: 'tiqets', externalId: 'seed_vangogh',
+      title: 'Van Gogh Museum — Skip-the-Line',
+      category: 'attraction', city: 'Amsterdam', country: 'NL',
+      imageUrl: 'https://picsum.photos/seed/tqvangogh/800/600',
+      fromPrice: 24, currency: 'EUR', rating: 4.7, reviewCount: 9320,
+      lat: 52.3584, lng: 4.8811,
+      bookingUrl: 'https://www.tiqets.com/en/amsterdam-attractions-c75061/',
+    },
+  },
+  {
+    id: 'tiqets_seed_empire',
+    data: {
+      source: 'tiqets', externalId: 'seed_empire',
+      title: 'Empire State Building Observatory',
+      category: 'attraction', city: 'New York', country: 'US',
+      imageUrl: 'https://picsum.photos/seed/tqempire/800/600',
+      fromPrice: 44, currency: 'USD', rating: 4.6, reviewCount: 15980,
+      lat: 40.7484, lng: -73.9857,
+      bookingUrl: 'https://www.tiqets.com/en/new-york-attractions-c75819/',
+    },
+  },
+  {
+    id: 'tiqets_seed_burj',
+    data: {
+      source: 'tiqets', externalId: 'seed_burj',
+      title: 'Burj Khalifa — At the Top',
+      category: 'attraction', city: 'Dubai', country: 'AE',
+      imageUrl: 'https://picsum.photos/seed/tqburj/800/600',
+      fromPrice: 40, currency: 'USD', rating: 4.6, reviewCount: 21030,
+      lat: 25.1972, lng: 55.2744,
+      bookingUrl: 'https://www.tiqets.com/en/dubai-attractions-c76083/',
+    },
+  },
 ];
 
 // Manual trigger (admin), guarded by the Viator key as token:
@@ -351,9 +424,14 @@ export const runIngestExternalEventsNow = onRequest(
       res.status(403).send('Forbidden');
       return;
     }
-    if (req.query.seed === '1') {
-      await upsertAll(SEED_DOCS);
-      res.status(200).json({ ok: true, seeded: SEED_DOCS.length });
+    if (req.query.seed) {
+      // ?seed=1 → all; ?seed=tiqets / ?seed=viator → only that source.
+      const src = String(req.query.seed);
+      const docs = src === '1'
+          ? SEED_DOCS
+          : SEED_DOCS.filter((d) => d.data.source === src);
+      await upsertAll(docs);
+      res.status(200).json({ ok: true, seeded: docs.length });
       return;
     }
     const count = await runIngestion(key);

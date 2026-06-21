@@ -20,6 +20,8 @@ class ExternalEvent {
     this.rating,
     this.reviewCount,
     this.durationMinutes,
+    this.lat,
+    this.lng,
   });
 
   final String id;
@@ -36,6 +38,8 @@ class ExternalEvent {
   final double? rating;
   final int? reviewCount;
   final int? durationMinutes;
+  final double? lat;
+  final double? lng;
 
   String get sourceLabel => source == 'tiqets' ? 'Tiqets' : 'Viator';
 
@@ -59,6 +63,8 @@ class ExternalEvent {
       rating: rating is num ? rating.toDouble() : null,
       reviewCount: (d['reviewCount'] as num?)?.toInt(),
       durationMinutes: (d['durationMinutes'] as num?)?.toInt(),
+      lat: (d['lat'] as num?)?.toDouble(),
+      lng: (d['lng'] as num?)?.toDouble(),
     );
   }
 

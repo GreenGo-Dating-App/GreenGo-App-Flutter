@@ -3868,6 +3868,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsTabExperiences => 'Experiências';
 
   @override
+  String get eventsTabAttractions => 'Atrações';
+
+  @override
+  String get eventsTabCommunity => 'Comunidade';
+
+  @override
+  String get eventsDeleteEvent => 'Eliminar evento';
+
+  @override
+  String get eventsDeleteConfirmBody =>
+      'Tem a certeza de que quer eliminar este evento? Não pode ser anulado.';
+
+  @override
   String get eventsBook => 'Reservar';
 
   @override
@@ -14788,6 +14801,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsTabExperiences => 'Experiências';
+
+  @override
+  String get eventsTabAttractions => 'Atrações';
+
+  @override
+  String get eventsTabCommunity => 'Comunidade';
+
+  @override
+  String get eventsDeleteEvent => 'Excluir evento';
+
+  @override
+  String get eventsDeleteConfirmBody =>
+      'Tem certeza de que deseja excluir este evento? Isso não pode ser desfeito.';
 
   @override
   String get eventsBook => 'Reservar';

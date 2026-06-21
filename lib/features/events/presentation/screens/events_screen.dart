@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import 'dart:io';
+import 'dart:math' as math;
 
 import 'package:image_picker/image_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -10,6 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../widgets/experiences_tab.dart';
@@ -51,11 +53,13 @@ class _EventsScreenState extends State<EventsScreen>
   String _searchQuery = '';
   bool _sortByPopularity = false;
   bool _gridView = false;
+  double? _userLat;
+  double? _userLng;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -65,6 +69,19 @@ class _EventsScreenState extends State<EventsScreen>
     // Load initial events
     _eventsBloc.add(const LoadEvents(upcoming: true));
     _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+
+    // Best-effort user location for distance-based ordering of all events.
+    _loadUserLocation();
+  }
+
+  Future<void> _loadUserLocation() async {
+    final pos = await const LocationShareService().getCurrentPosition();
+    if (pos != null && mounted) {
+      setState(() {
+        _userLat = pos.latitude;
+        _userLng = pos.longitude;
+      });
+    }
   }
 
   @override
@@ -106,9 +123,10 @@ class _EventsScreenState extends State<EventsScreen>
             tabAlignment: TabAlignment.start,
             tabs: [
               Tab(text: AppLocalizations.of(context)!.eventsTabUpcoming),
-              Tab(text: AppLocalizations.of(context)!.eventsTabNearby),
-              Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
+              Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
+              Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
               Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
+              Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
             ],
           ),
         ),
@@ -185,9 +203,10 @@ class _EventsScreenState extends State<EventsScreen>
         controller: _tabController,
         children: [
           _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
-          _buildEventsList(_applySearchAndSort(_getNearbyEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
+          _buildExperiencesTab('tiqets'),
+          _buildExperiencesTab('viator'),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
-          _buildExperiencesTab(),
         ],
       );
     }
@@ -198,8 +217,9 @@ class _EventsScreenState extends State<EventsScreen>
       children: [
         _buildEventsList([]),
         _buildEventsList([]),
+        _buildExperiencesTab('tiqets'),
+        _buildExperiencesTab('viator'),
         _buildEventsList([]),
-        _buildExperiencesTab(),
       ],
     );
   }
@@ -282,17 +302,38 @@ class _EventsScreenState extends State<EventsScreen>
             e.tags.any((t) => t.toLowerCase().contains(q));
       }).toList();
     }
-    // Featured/boosted events always surface first; then popularity if toggled.
-    result = [...result]..sort((a, b) {
-        if (a.isCurrentlyFeatured != b.isCurrentlyFeatured) {
-          return a.isCurrentlyFeatured ? -1 : 1;
-        }
-        if (_sortByPopularity) {
-          return b.attendeeCount.compareTo(a.attendeeCount);
-        }
-        return 0;
-      });
-    return result;
+    // Optional popularity sort (otherwise the incoming order — date or
+    // distance, set per tab — is preserved).
+    if (_sortByPopularity) {
+      result = [...result]
+        ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
+    }
+    // Featured/boosted events surface first, preserving relative order.
+    final featured = result.where((e) => e.isCurrentlyFeatured).toList();
+    final rest = result.where((e) => !e.isCurrentlyFeatured).toList();
+    return [...featured, ...rest];
+  }
+
+  double _distanceToEvent(Event e) {
+    if (_userLat == null || _userLng == null) return double.infinity;
+    final lat = e.latitude, lng = e.longitude;
+    if (lat == null || lng == null) return double.infinity;
+    const r = 6371.0;
+    final dLat = (lat - _userLat!) * math.pi / 180;
+    final dLng = (lng - _userLng!) * math.pi / 180;
+    final a = math.sin(dLat / 2) * math.sin(dLat / 2) +
+        math.cos(_userLat! * math.pi / 180) *
+            math.cos(lat * math.pi / 180) *
+            math.sin(dLng / 2) *
+            math.sin(dLng / 2);
+    return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
+  }
+
+  /// Sort a copy by distance (closest first) when the user location is known.
+  List<Event> _byDistance(List<Event> events) {
+    if (_userLat == null || _userLng == null) return events;
+    return [...events]
+      ..sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
   }
 
   Widget _buildCategoryFilter() {
@@ -363,22 +404,15 @@ class _EventsScreenState extends State<EventsScreen>
     }
   }
 
+  /// Upcoming: events closest in date/time (soonest first).
   List<Event> _getUpcomingEvents(EventsLoaded state) {
-    return state.upcomingEvents;
+    return [...state.upcomingEvents]
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
   }
 
-  List<Event> _getNearbyEvents(EventsLoaded state) {
-    if (state.nearbyEvents.isNotEmpty) {
-      // Apply category filter to nearby events too
-      if (_selectedCategory != null) {
-        return state.nearbyEvents
-            .where((e) => e.category == _selectedCategory)
-            .toList();
-      }
-      return state.nearbyEvents;
-    }
-    // Fallback: show upcoming events if no nearby data
-    return state.upcomingEvents;
+  /// Community: all GreenGo user-created events, ordered by distance.
+  List<Event> _getCommunityEvents(EventsLoaded state) {
+    return _byDistance(state.upcomingEvents);
   }
 
   List<Event> _getMyEvents(EventsLoaded state) {
@@ -539,10 +573,17 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  // ---- Experiences tab (Viator) — infinite scroll ----
-  Widget _buildExperiencesTab() {
+  // ---- Experiences (Viator) / Attractions (Tiqets) tabs — infinite scroll ----
+  Widget _buildExperiencesTab(String source) {
     return ExperiencesTab(
-        gridView: _gridView, query: _searchQuery, popular: _sortByPopularity);
+      key: ValueKey('exp_$source'),
+      source: source,
+      gridView: _gridView,
+      query: _searchQuery,
+      popular: _sortByPopularity,
+      userLat: _userLat,
+      userLng: _userLng,
+    );
   }
 
   void _showCreateEventDialog(BuildContext context) {
@@ -1050,6 +1091,12 @@ class EventDetailsScreen extends StatelessWidget {
                             onEventCreated: (e) {
                               bloc.add(UpdateEvent(event: e));
                               Navigator.of(ctx).pop();
+                            },
+                            onEventDeleted: () {
+                              bloc.add(DeleteEvent(eventId: event.id));
+                              // Pop edit screen + the detail screen.
+                              Navigator.of(ctx).pop();
+                              Navigator.of(context).pop();
                             },
                           ),
                         ),
@@ -1585,12 +1632,16 @@ class CreateEventScreen extends StatefulWidget {
   const CreateEventScreen({
     required this.currentUserId, required this.onEventCreated, super.key,
     this.existing,
+    this.onEventDeleted,
   });
   final String currentUserId;
   final Function(Event) onEventCreated;
 
   /// When set, the screen edits this event instead of creating a new one.
   final Event? existing;
+
+  /// When editing, called if the user confirms deleting the event.
+  final VoidCallback? onEventDeleted;
 
   @override
   State<CreateEventScreen> createState() => _CreateEventScreenState();
@@ -1858,6 +1909,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               : AppLocalizations.of(context)!.eventsCreateEvent,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
+        actions: [
+          if (_isEditing && widget.onEventDeleted != null)
+            IconButton(
+              icon: const Icon(Icons.delete_outline, color: AppColors.errorRed),
+              tooltip: AppLocalizations.of(context)!.eventsDeleteEvent,
+              onPressed: _confirmDelete,
+            ),
+        ],
       ),
       body: Form(
         key: _formKey,
@@ -2154,6 +2213,32 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         _endDate = dateTime;
       }
     });
+  }
+
+  Future<void> _confirmDelete() async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsDeleteEvent,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventsDeleteConfirmBody,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: Text(l10n.groupCancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: Text(l10n.eventsDeleteEvent,
+                style: const TextStyle(color: AppColors.errorRed)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed == true) widget.onEventDeleted?.call();
   }
 
   Future<void> _createEvent() async {

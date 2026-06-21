@@ -42,6 +42,10 @@ function previewFor(type: string, content: string): string {
       return '✨ Sticker';
     case 'voice_note':
       return '🎤 Voice message';
+    case 'event':
+      return '📅 Event';
+    case 'location':
+      return '📍 Location';
     case 'system':
       return content;
     default:
