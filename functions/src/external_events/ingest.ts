@@ -109,10 +109,24 @@ async function fetchDestinations(
         byName.set(String(d.name).toLowerCase(), d);
       }
     }
+    const aliases: Record<string, string[]> = {
+      'United States': ['usa', 'united states of america', 'us', 'america'],
+      'United Kingdom': ['uk', 'great britain', 'britain', 'england'],
+      'United Arab Emirates': ['uae'],
+      'Czech Republic': ['czechia'],
+      'South Korea': ['korea', 'republic of korea'],
+    };
     const countries: { id: string; name: string }[] = [];
     for (const name of TOP_COUNTRIES) {
-      const d = byName.get(name.toLowerCase());
+      let d = byName.get(name.toLowerCase());
+      if (!d) {
+        for (const alias of aliases[name] || []) {
+          d = byName.get(alias);
+          if (d) break;
+        }
+      }
       if (d) countries.push({ id: String(d.destinationId), name });
+      else console.log(`ingest: no Viator country match for ${name}`);
     }
     return { countries, idMap };
   } catch (e) {
@@ -226,6 +240,26 @@ async function fetchTopForCountry(
   return docs;
 }
 
+/// Per-country counts → `external_country_stats/{source}_{country}` so the globe
+/// can show complete markers cheaply (≤ #countries docs).
+async function writeCountryStats(docs: Doc[], source: string): Promise<void> {
+  const counts: Record<string, number> = {};
+  for (const d of docs) {
+    const c = d.data.country as string | undefined;
+    if (c) counts[c] = (counts[c] || 0) + 1;
+  }
+  const batch = db.batch();
+  const now = admin.firestore.FieldValue.serverTimestamp();
+  for (const [country, count] of Object.entries(counts)) {
+    batch.set(
+      db.collection('external_country_stats').doc(`${source}_${country}`),
+      { source, country, count, updatedAt: now },
+      { merge: true }
+    );
+  }
+  await batch.commit();
+}
+
 async function runIngestion(apiKey: string): Promise<number> {
   if (!apiKey) {
     console.log('ingestExternalEvents: VIATOR_API_KEY not set — skipping.');
@@ -243,6 +277,7 @@ async function runIngestion(apiKey: string): Promise<number> {
     }
     if (all.length > 0) {
       await upsertAll(all);
+      await writeCountryStats(all, 'viator');
       console.log(
         `ingestExternalEvents: upserted ${all.length} experiences across ` +
           `${countries.length} countries from ${base}.`

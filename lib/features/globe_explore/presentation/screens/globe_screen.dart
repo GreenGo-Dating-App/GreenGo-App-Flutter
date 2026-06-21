@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart' hide State;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -11,6 +12,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/event_country_stat.dart';
+import '../../../events/domain/entities/external_event.dart';
 import '../../../events/domain/repositories/events_repository.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../data/country_centroids.dart';
@@ -55,24 +57,22 @@ class _GlobeScreenState extends State<GlobeScreen> {
     result.fold((_) {}, (stats) => setState(() => _eventStats = stats));
   }
 
-  /// Aggregate Viator experiences per country (capped read) for globe markers.
+  /// Per-country experience counts from the precomputed aggregate (complete +
+  /// cheap — one small doc per country).
   Future<void> _loadExperienceStats() async {
     try {
       final snap = await FirebaseFirestore.instance
-          .collection('external_events')
+          .collection('external_country_stats')
           .where('source', isEqualTo: 'viator')
-          .orderBy('rating', descending: true)
-          .limit(500)
           .get();
-      final counts = <String, int>{};
-      for (final d in snap.docs) {
-        final c = d.data()['country'] as String?;
-        if (c != null && c.isNotEmpty) counts[c] = (counts[c] ?? 0) + 1;
-      }
       if (!mounted) return;
       setState(() {
-        _experienceStats = counts.entries
-            .map((e) => EventCountryStat(country: e.key, count: e.value))
+        _experienceStats = snap.docs
+            .map((d) => EventCountryStat(
+                  country: d.data()['country'] as String? ?? '',
+                  count: (d.data()['count'] as num?)?.toInt() ?? 0,
+                ))
+            .where((s) => s.country.isNotEmpty)
             .toList();
       });
     } catch (_) {/* best-effort */}
@@ -108,6 +108,116 @@ class _GlobeScreenState extends State<GlobeScreen> {
           ),
         );
   }
+
+  /// Tap a country → list its Experiences + Attractions (queried directly, so
+  /// it's complete regardless of which markers are on the map).
+  Future<void> _showCountryDetailSheet(
+      BuildContext context, String country) async {
+    final snap = await FirebaseFirestore.instance
+        .collection('external_events')
+        .where('country', isEqualTo: country)
+        .limit(100)
+        .get();
+    final all = snap.docs.map(ExternalEvent.fromFirestore).toList()
+      ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
+    final exp = all.where((e) => e.source == 'viator').toList();
+    final att = all.where((e) => e.source == 'tiqets').toList();
+    if (!mounted) return;
+    final l10n = AppLocalizations.of(context)!;
+
+    Widget tile(ExternalEvent e) => ListTile(
+          leading: ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: SizedBox(
+              width: 48,
+              height: 48,
+              child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
+                  ? Image(
+                      image: CachedNetworkImageProvider(e.imageUrl!),
+                      fit: BoxFit.cover)
+                  : Container(
+                      color: AppColors.backgroundInput,
+                      child: const Icon(Icons.local_activity,
+                          color: AppColors.textTertiary)),
+            ),
+          ),
+          title: Text(e.title,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(color: AppColors.textPrimary, fontSize: 14)),
+          subtitle: Text(
+            [
+              if (e.city != null && e.city!.isNotEmpty) e.city!,
+              if (e.rating != null) '⭐ ${e.rating}',
+              if (e.fromPrice != null)
+                '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
+            ].join('  ·  '),
+            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+          ),
+          trailing: const Icon(Icons.open_in_new,
+              color: AppColors.richGold, size: 18),
+          onTap: e.bookingUrl.isEmpty
+              ? null
+              : () => launchUrl(Uri.parse(e.bookingUrl),
+                  mode: LaunchMode.externalApplication),
+        );
+
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (_) => SafeArea(
+        child: DraggableScrollableSheet(
+          initialChildSize: 0.7,
+          maxChildSize: 0.95,
+          expand: false,
+          builder: (_, sc) => ListView(
+            controller: sc,
+            children: [
+              const SizedBox(height: 10),
+              Center(
+                child: Text(country,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold)),
+              ),
+              if (exp.isEmpty && att.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Center(
+                    child: Text(l10n.eventsNoEventsFound,
+                        style:
+                            const TextStyle(color: AppColors.textSecondary)),
+                  ),
+                ),
+              if (att.isNotEmpty) ...[
+                _countrySectionHeader(
+                    '${l10n.eventsTabAttractions} (${att.length})'),
+                ...att.map(tile),
+              ],
+              if (exp.isNotEmpty) ...[
+                _countrySectionHeader(
+                    '${l10n.eventsTabExperiences} (${exp.length})'),
+                ...exp.map(tile),
+              ],
+              const SizedBox(height: 16),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _countrySectionHeader(String text) => Padding(
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 6),
+        child: Text(text,
+            style: const TextStyle(
+                color: AppColors.richGold, fontWeight: FontWeight.bold)),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -204,8 +314,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   showDiscovery: false,
                   showEvents: _showEvents || _showExperiences,
                   eventStats: _activeStats,
-                  onEventCountryTapped: (country) =>
-                      _openCountryEvents(context, country),
+                  onEventCountryTapped: (country) => _showExperiences
+                      ? _showCountryDetailSheet(context, country)
+                      : _openCountryEvents(context, country),
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(

@@ -756,6 +756,10 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // populated only by the ingestExternalEvents CF
     }
+    match /external_country_stats/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written aggregate
+    }
 
     // ============================================================================
     // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
