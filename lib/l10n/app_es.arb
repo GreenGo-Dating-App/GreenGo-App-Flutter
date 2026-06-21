@@ -3686,7 +3686,6 @@
   "eventsPickLocation": "Elegir ubicación",
   "eventsSearchAddress": "Buscar dirección",
   "eventsUseThisLocation": "Usar esta ubicación",
-  "profileProgressGrowth": "Progreso y crecimiento",
   "eventsEditEvent": "Editar evento",
   "groupEditName": "Editar nombre del grupo",
   "groupChangePhoto": "Cambiar foto del grupo",
@@ -3698,5 +3697,8 @@
   "groupNoSearchResults": "No se encontraron grupos",
   "groupTranslationSettings": "Traducción",
   "groupTranslateMessages": "Traducir mensajes",
-  "groupShowOriginal": "Mostrar texto original"
+  "groupShowOriginal": "Mostrar texto original",
+  "globeMyWorldMap": "Mi mapa del mundo",
+  "globeLayerContacts": "Mis contactos",
+  "globeLayerExperiences": "Experiencias"
 }

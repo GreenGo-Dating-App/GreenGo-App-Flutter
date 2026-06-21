@@ -3688,7 +3688,6 @@
   "eventsPickLocation": "Escolher local",
   "eventsSearchAddress": "Procurar morada",
   "eventsUseThisLocation": "Usar este local",
-  "profileProgressGrowth": "Progresso e crescimento",
   "eventsEditEvent": "Editar evento",
   "groupEditName": "Editar nome do grupo",
   "groupChangePhoto": "Alterar foto do grupo",
@@ -3700,5 +3699,8 @@
   "groupNoSearchResults": "Nenhum grupo encontrado",
   "groupTranslationSettings": "Tradução",
   "groupTranslateMessages": "Traduzir mensagens",
-  "groupShowOriginal": "Mostrar texto original"
+  "groupShowOriginal": "Mostrar texto original",
+  "globeMyWorldMap": "O meu mapa do mundo",
+  "globeLayerContacts": "Os meus contactos",
+  "globeLayerExperiences": "Experiências"
 }

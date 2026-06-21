@@ -35,20 +35,66 @@ class _GlobeScreenState extends State<GlobeScreen> {
   /// Exposed so the existing helper methods keep using `userId` unchanged.
   String get userId => widget.userId;
 
-  /// Globe mode: false = My Network (people), true = Events (worldwide).
-  bool _eventsMode = false;
+  /// Layers shown on the world map (independent, any combination).
+  bool _showContacts = true;
+  bool _showEvents = false;
+  bool _showExperiences = false;
   List<EventCountryStat> _eventStats = const [];
+  List<EventCountryStat> _experienceStats = const [];
 
   @override
   void initState() {
     super.initState();
     _loadEventStats();
+    _loadExperienceStats();
   }
 
   Future<void> _loadEventStats() async {
     final result = await di.sl<EventsRepository>().getCountryStats();
     if (!mounted) return;
     result.fold((_) {}, (stats) => setState(() => _eventStats = stats));
+  }
+
+  /// Aggregate Viator experiences per country (capped read) for globe markers.
+  Future<void> _loadExperienceStats() async {
+    try {
+      final snap = await FirebaseFirestore.instance
+          .collection('external_events')
+          .where('source', isEqualTo: 'viator')
+          .orderBy('rating', descending: true)
+          .limit(500)
+          .get();
+      final counts = <String, int>{};
+      for (final d in snap.docs) {
+        final c = d.data()['country'] as String?;
+        if (c != null && c.isNotEmpty) counts[c] = (counts[c] ?? 0) + 1;
+      }
+      if (!mounted) return;
+      setState(() {
+        _experienceStats = counts.entries
+            .map((e) => EventCountryStat(country: e.key, count: e.value))
+            .toList();
+      });
+    } catch (_) {/* best-effort */}
+  }
+
+  /// Markers to show: events and/or experiences, per the active toggles.
+  List<EventCountryStat> get _activeStats {
+    if (_showEvents && _showExperiences) {
+      final merged = <String, EventCountryStat>{};
+      for (final s in [..._eventStats, ..._experienceStats]) {
+        final existing = merged[s.country];
+        merged[s.country] = EventCountryStat(
+          country: s.country,
+          count: (existing?.count ?? 0) + s.count,
+          topEvents: existing?.topEvents ?? s.topEvents,
+        );
+      }
+      return merged.values.toList();
+    }
+    if (_showEvents) return _eventStats;
+    if (_showExperiences) return _experienceStats;
+    return const [];
   }
 
   void _openCountryEvents(BuildContext context, String country) {
@@ -71,24 +117,40 @@ class _GlobeScreenState extends State<GlobeScreen> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          AppLocalizations.of(context)!.globeMyNetwork,
+          AppLocalizations.of(context)!.globeMyWorldMap,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
-          // My Network (people) <-> Events (worldwide) toggle.
+          // Layer toggles (independent): Contacts, Events, Experiences.
           IconButton(
-            icon: Icon(
-              _eventsMode ? Icons.people : Icons.event,
-              color: _eventsMode ? AppColors.textSecondary : AppColors.richGold,
-              size: 22,
-            ),
-            tooltip: _eventsMode
-                ? AppLocalizations.of(context)!.globeMyNetwork
-                : AppLocalizations.of(context)!.eventsTitle,
-            onPressed: () => setState(() => _eventsMode = !_eventsMode),
+            icon: Icon(Icons.people,
+                color: _showContacts
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
+                size: 22),
+            tooltip: AppLocalizations.of(context)!.globeLayerContacts,
+            onPressed: () => setState(() => _showContacts = !_showContacts),
+          ),
+          IconButton(
+            icon: Icon(Icons.event,
+                color:
+                    _showEvents ? AppColors.richGold : AppColors.textSecondary,
+                size: 22),
+            tooltip: AppLocalizations.of(context)!.eventsTitle,
+            onPressed: () => setState(() => _showEvents = !_showEvents),
+          ),
+          IconButton(
+            icon: Icon(Icons.local_activity,
+                color: _showExperiences
+                    ? AppColors.richGold
+                    : AppColors.textSecondary,
+                size: 22),
+            tooltip: AppLocalizations.of(context)!.globeLayerExperiences,
+            onPressed: () =>
+                setState(() => _showExperiences = !_showExperiences),
           ),
           IconButton(
             icon: const Icon(Icons.refresh,
@@ -138,10 +200,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
               children: [
                 GlobeMapView(
                   data: data,
-                  showMatched: !_eventsMode,
+                  showMatched: _showContacts,
                   showDiscovery: false,
-                  showEvents: _eventsMode,
-                  eventStats: _eventStats,
+                  showEvents: _showEvents || _showExperiences,
+                  eventStats: _activeStats,
                   onEventCountryTapped: (country) =>
                       _openCountryEvents(context, country),
                   flyToCountry: flyToCountry,

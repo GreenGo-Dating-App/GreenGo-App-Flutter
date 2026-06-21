@@ -2723,7 +2723,7 @@
   "profileOrientationPrivate": "Ceci est prive et n'est pas affiche sur votre profil",
   "profilePhotosCount": "{count}/6 photos",
   "profilePremiumFeatures": "Fonctionnalités premium",
-  "profileProgressGrowth": "Progrès et croissance",
+  "profileProgressGrowth": "Progression et évolution",
   "profileRestart": "Redémarrer",
   "profileRestartDiscovery": "Redémarrer la découverte",
   "profileRestartDiscoveryDialogContent": "Cela effacera tous vos swipes (connexions, rejets, connexions prioritaires) pour que vous puissiez redécouvrir tout le monde depuis le début.\n\nVos matchs et chats ne seront PAS affectés.",
@@ -3686,7 +3686,6 @@
   "eventsPickLocation": "Choisir le lieu",
   "eventsSearchAddress": "Rechercher une adresse",
   "eventsUseThisLocation": "Utiliser ce lieu",
-  "profileProgressGrowth": "Progression et évolution",
   "eventsEditEvent": "Modifier l'événement",
   "groupEditName": "Modifier le nom du groupe",
   "groupChangePhoto": "Changer la photo du groupe",
@@ -3698,5 +3697,8 @@
   "groupNoSearchResults": "Aucun groupe trouvé",
   "groupTranslationSettings": "Traduction",
   "groupTranslateMessages": "Traduire les messages",
-  "groupShowOriginal": "Afficher le texte original"
+  "groupShowOriginal": "Afficher le texte original",
+  "globeMyWorldMap": "Ma carte du monde",
+  "globeLayerContacts": "Mes contacts",
+  "globeLayerExperiences": "Expériences"
 }
