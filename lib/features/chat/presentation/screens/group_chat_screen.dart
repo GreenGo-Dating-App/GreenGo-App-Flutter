@@ -4,6 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
@@ -12,6 +13,7 @@ import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
@@ -93,6 +95,118 @@ class _GroupChatView extends StatefulWidget {
 class _GroupChatViewState extends State<_GroupChatView> {
   final _controller = TextEditingController();
   final Set<String> _resolvingNames = {};
+
+  // Per-user, per-group translation settings (local; scales with no backend).
+  bool _translate = true;
+  String _targetLang = 'en';
+  bool _showOriginal = true;
+
+  static const _languages = [
+    {'code': 'en', 'name': 'English', 'flag': '🇬🇧'},
+    {'code': 'de', 'name': 'Deutsch', 'flag': '🇩🇪'},
+    {'code': 'es', 'name': 'Español', 'flag': '🇪🇸'},
+    {'code': 'fr', 'name': 'Français', 'flag': '🇫🇷'},
+    {'code': 'it', 'name': 'Italiano', 'flag': '🇮🇹'},
+    {'code': 'pt', 'name': 'Português', 'flag': '🇵🇹'},
+    {'code': 'pt_BR', 'name': 'Português (BR)', 'flag': '🇧🇷'},
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadTranslationPrefs();
+  }
+
+  Future<void> _loadTranslationPrefs() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (!mounted) return;
+    final deviceLang =
+        WidgetsBinding.instance.platformDispatcher.locale.languageCode;
+    setState(() {
+      _translate = prefs.getBool('group_${widget.groupId}_translate') ?? true;
+      _targetLang = prefs.getString('group_${widget.groupId}_language') ??
+          (_languages.any((l) => l['code'] == deviceLang) ? deviceLang : 'en');
+      _showOriginal =
+          prefs.getBool('group_${widget.groupId}_showOriginal') ?? true;
+    });
+  }
+
+  Future<void> _saveTranslationPrefs() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('group_${widget.groupId}_translate', _translate);
+    await prefs.setString('group_${widget.groupId}_language', _targetLang);
+    await prefs.setBool('group_${widget.groupId}_showOriginal', _showOriginal);
+  }
+
+  void _openTranslationSettings() {
+    final l10n = AppLocalizations.of(context)!;
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setModal) => SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(l10n.groupTranslationSettings,
+                    style: Theme.of(ctx).textTheme.titleMedium),
+              ),
+              SwitchListTile(
+                title: Text(l10n.groupTranslateMessages),
+                value: _translate,
+                onChanged: (v) {
+                  setModal(() {});
+                  setState(() => _translate = v);
+                  _saveTranslationPrefs();
+                },
+              ),
+              SwitchListTile(
+                title: Text(l10n.groupShowOriginal),
+                value: _showOriginal,
+                onChanged: _translate
+                    ? (v) {
+                        setModal(() {});
+                        setState(() => _showOriginal = v);
+                        _saveTranslationPrefs();
+                      }
+                    : null,
+              ),
+              const Divider(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(l10n.chatYourLanguage,
+                      style: Theme.of(ctx).textTheme.labelLarge),
+                ),
+              ),
+              Flexible(
+                child: ListView(
+                  shrinkWrap: true,
+                  children: _languages.map((lang) {
+                    final code = lang['code']!;
+                    return RadioListTile<String>(
+                      value: code,
+                      groupValue: _targetLang,
+                      title: Text('${lang['flag']}  ${lang['name']}'),
+                      onChanged: (v) {
+                        if (v == null) return;
+                        setModal(() {});
+                        setState(() => _targetLang = v);
+                        _saveTranslationPrefs();
+                      },
+                    );
+                  }).toList(),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   @override
   void dispose() {
@@ -271,6 +385,14 @@ class _GroupChatViewState extends State<_GroupChatView> {
         ),
         actions: [
           IconButton(
+            icon: Icon(_translate ? Icons.translate : Icons.translate_outlined,
+                color: _translate
+                    ? Theme.of(context).colorScheme.primary
+                    : null),
+            tooltip: AppLocalizations.of(context)!.groupTranslationSettings,
+            onPressed: _openTranslationSettings,
+          ),
+          IconButton(
             icon: const Icon(Icons.group_outlined),
             tooltip: AppLocalizations.of(context)!.groupInfo,
             onPressed: () => Navigator.of(context).push(
@@ -319,6 +441,9 @@ class _GroupChatViewState extends State<_GroupChatView> {
                             message: m,
                             isMine: m.senderId == widget.currentUserId,
                             currentUserId: widget.currentUserId,
+                            translate: _translate,
+                            targetLang: _targetLang,
+                            showOriginal: _showOriginal,
                           );
                         },
                       ),
@@ -343,11 +468,17 @@ class _GroupMessageBubble extends StatelessWidget {
     required this.message,
     required this.isMine,
     required this.currentUserId,
+    this.translate = false,
+    this.targetLang = 'en',
+    this.showOriginal = true,
   });
 
   final Message message;
   final bool isMine;
   final String currentUserId;
+  final bool translate;
+  final String targetLang;
+  final bool showOriginal;
 
   @override
   Widget build(BuildContext context) {
@@ -448,17 +579,120 @@ class _GroupMessageBubble extends StatelessWidget {
                 ),
               )
             else
-              Text(
-                message.content,
-                style: TextStyle(
-                  color: isMine
-                      ? theme.colorScheme.onPrimary
-                      : theme.colorScheme.onSurface,
-                ),
+              _TranslatableText(
+                text: message.content,
+                color: isMine
+                    ? theme.colorScheme.onPrimary
+                    : theme.colorScheme.onSurface,
+                translate: translate,
+                targetLang: targetLang,
+                showOriginal: showOriginal,
               ),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Renders a text message, translating it on-device to [targetLang] when
+/// [translate] is enabled. The translated text is shown as the main content,
+/// with the original underneath (when [showOriginal]). Each user picks their
+/// own language, so translation happens per-viewer (no shared backend state).
+class _TranslatableText extends StatefulWidget {
+  const _TranslatableText({
+    required this.text,
+    required this.color,
+    required this.translate,
+    required this.targetLang,
+    required this.showOriginal,
+  });
+
+  final String text;
+  final Color color;
+  final bool translate;
+  final String targetLang;
+  final bool showOriginal;
+
+  @override
+  State<_TranslatableText> createState() => _TranslatableTextState();
+}
+
+class _TranslatableTextState extends State<_TranslatableText> {
+  String? _translated;
+  bool _loading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _maybeTranslate();
+  }
+
+  @override
+  void didUpdateWidget(_TranslatableText old) {
+    super.didUpdateWidget(old);
+    if (old.targetLang != widget.targetLang ||
+        old.translate != widget.translate ||
+        old.text != widget.text) {
+      _translated = null;
+      _maybeTranslate();
+    }
+  }
+
+  Future<void> _maybeTranslate() async {
+    if (!widget.translate || widget.text.trim().isEmpty) return;
+    setState(() => _loading = true);
+    final result = await TranslationService().translate(
+      text: widget.text,
+      sourceLanguage: 'auto',
+      targetLanguage: widget.targetLang.replaceAll('_', '-'),
+    );
+    if (!mounted) return;
+    setState(() {
+      _loading = false;
+      // Only treat as a translation if it actually changed.
+      _translated = (result.trim() == widget.text.trim()) ? null : result;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    if (!widget.translate || _translated == null) {
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Flexible(
+            child: Text(widget.text, style: TextStyle(color: widget.color)),
+          ),
+          if (_loading)
+            Padding(
+              padding: const EdgeInsets.only(left: 6),
+              child: SizedBox(
+                width: 10,
+                height: 10,
+                child: CircularProgressIndicator(
+                    strokeWidth: 1.5, color: widget.color.withValues(alpha: 0.6)),
+              ),
+            ),
+        ],
+      );
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(_translated!, style: TextStyle(color: widget.color)),
+        if (widget.showOriginal) ...[
+          const SizedBox(height: 4),
+          Text(
+            widget.text,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: widget.color.withValues(alpha: 0.6),
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

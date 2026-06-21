@@ -19235,6 +19235,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No groups found'**
   String get groupNoSearchResults;
+
+  /// No description provided for @groupTranslationSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get groupTranslationSettings;
+
+  /// No description provided for @groupTranslateMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate messages'**
+  String get groupTranslateMessages;
+
+  /// No description provided for @groupShowOriginal.
+  ///
+  /// In en, this message translates to:
+  /// **'Show original text'**
+  String get groupShowOriginal;
 }
 
 class _AppLocalizationsDelegate

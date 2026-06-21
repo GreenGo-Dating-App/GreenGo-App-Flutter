@@ -10894,6 +10894,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get groupNoSearchResults => 'Nenhum grupo encontrado';
+
+  @override
+  String get groupTranslationSettings => 'Tradução';
+
+  @override
+  String get groupTranslateMessages => 'Traduzir mensagens';
+
+  @override
+  String get groupShowOriginal => 'Mostrar texto original';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21488,4 +21497,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get groupNoSearchResults => 'Nenhum grupo encontrado';
+
+  @override
+  String get groupTranslationSettings => 'Tradução';
+
+  @override
+  String get groupTranslateMessages => 'Traduzir mensagens';
+
+  @override
+  String get groupShowOriginal => 'Mostrar texto original';
 }

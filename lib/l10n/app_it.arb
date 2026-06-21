@@ -3686,5 +3686,8 @@
   "groupPhotoUpdateFailed": "Impossibile aggiornare la foto del gruppo",
   "eventTextProhibited": "Il titolo o la descrizione contiene linguaggio vietato e non può essere usato",
   "groupSearchHint": "Cerca gruppi",
-  "groupNoSearchResults": "Nessun gruppo trovato"
+  "groupNoSearchResults": "Nessun gruppo trovato",
+  "groupTranslationSettings": "Traduzione",
+  "groupTranslateMessages": "Traduci messaggi",
+  "groupShowOriginal": "Mostra testo originale"
 }
