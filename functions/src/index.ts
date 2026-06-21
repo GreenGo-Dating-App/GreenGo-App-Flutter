@@ -51,6 +51,7 @@ export {
 export {
   onGroupCreated,
   onGroupParticipantsChanged,
+  onGroupInfoChanged,
 } from './group_chat/membership';
 
 // Events — per-country aggregation for the globe.

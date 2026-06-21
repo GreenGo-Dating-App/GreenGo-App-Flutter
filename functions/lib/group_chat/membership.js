@@ -51,7 +51,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onGroupParticipantsChanged = exports.onGroupCreated = void 0;
+exports.onGroupInfoChanged = exports.onGroupParticipantsChanged = exports.onGroupCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
@@ -190,6 +190,37 @@ exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/
             sentAt: now,
         }));
     }
+    await commitInChunks(writes);
+});
+/**
+ * onGroupInfoChanged — when the group name or photo changes, fan the new value
+ * out to every member's inbox index so the group list / icon updates instantly
+ * for everyone (not just the open chat). Cheap: one merge-set per member.
+ */
+exports.onGroupInfoChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', async (event) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
+    const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
+    const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
+    if (!before || !after)
+        return;
+    const groupId = event.params.groupId;
+    const beforeName = (_d = (_c = before.groupInfo) === null || _c === void 0 ? void 0 : _c.name) !== null && _d !== void 0 ? _d : null;
+    const afterName = (_f = (_e = after.groupInfo) === null || _e === void 0 ? void 0 : _e.name) !== null && _f !== void 0 ? _f : null;
+    const beforePhoto = (_h = (_g = before.groupInfo) === null || _g === void 0 ? void 0 : _g.photoUrl) !== null && _h !== void 0 ? _h : null;
+    const afterPhoto = (_k = (_j = after.groupInfo) === null || _j === void 0 ? void 0 : _j.photoUrl) !== null && _k !== void 0 ? _k : null;
+    const nameChanged = beforeName !== afterName;
+    const photoChanged = beforePhoto !== afterPhoto;
+    if (!nameChanged && !photoChanged)
+        return;
+    const participants = after.participants || [];
+    if (participants.length === 0)
+        return;
+    const update = {};
+    if (nameChanged)
+        update.name = afterName !== null && afterName !== void 0 ? afterName : 'Group';
+    if (photoChanged)
+        update.photoUrl = afterPhoto;
+    const writes = participants.map((uid) => (b) => b.set(inboxThreadRef(uid, groupId), update, { merge: true }));
     await commitInChunks(writes);
 });
 //# sourceMappingURL=membership.js.map

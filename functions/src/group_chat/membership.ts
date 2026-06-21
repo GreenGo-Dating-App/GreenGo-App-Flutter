@@ -229,3 +229,40 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
     await commitInChunks(writes);
   }
 );
+
+/**
+ * onGroupInfoChanged — when the group name or photo changes, fan the new value
+ * out to every member's inbox index so the group list / icon updates instantly
+ * for everyone (not just the open chat). Cheap: one merge-set per member.
+ */
+export const onGroupInfoChanged = onDocumentUpdated(
+  'groups/{groupId}',
+  async (event) => {
+    const before = event.data?.before.data() as Record<string, any> | undefined;
+    const after = event.data?.after.data() as Record<string, any> | undefined;
+    if (!before || !after) return;
+
+    const groupId = event.params.groupId as string;
+    const beforeName = before.groupInfo?.name ?? null;
+    const afterName = after.groupInfo?.name ?? null;
+    const beforePhoto = before.groupInfo?.photoUrl ?? null;
+    const afterPhoto = after.groupInfo?.photoUrl ?? null;
+
+    const nameChanged = beforeName !== afterName;
+    const photoChanged = beforePhoto !== afterPhoto;
+    if (!nameChanged && !photoChanged) return;
+
+    const participants: string[] = after.participants || [];
+    if (participants.length === 0) return;
+
+    const update: Record<string, unknown> = {};
+    if (nameChanged) update.name = afterName ?? 'Group';
+    if (photoChanged) update.photoUrl = afterPhoto;
+
+    const writes = participants.map(
+      (uid) => (b: admin.firestore.WriteBatch) =>
+        b.set(inboxThreadRef(uid, groupId), update, { merge: true })
+    );
+    await commitInChunks(writes);
+  }
+);
