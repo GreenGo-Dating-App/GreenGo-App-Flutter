@@ -190,8 +190,10 @@ function mapProduct(
       country: countryName,
       fromPrice: p.pricing?.summary?.fromPrice ?? null,
       currency: p.pricing?.currency ?? 'USD',
-      rating: p.reviews?.combinedAverageRating ?? null,
-      reviewCount: p.reviews?.totalReviews ?? null,
+      // Default to 0 (not null) so orderBy('rating'/'reviewCount') includes
+      // every doc — Firestore omits docs missing the ordered field.
+      rating: p.reviews?.combinedAverageRating ?? 0,
+      reviewCount: p.reviews?.totalReviews ?? 0,
       durationMinutes: p.duration?.fixedDurationInMinutes ?? null,
       bookingUrl: withAffiliate(p.productUrl),
       fetchedAt: admin.firestore.FieldValue.serverTimestamp(),

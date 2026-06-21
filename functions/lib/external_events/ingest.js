@@ -202,8 +202,10 @@ function mapProduct(p, countryName, idMap) {
             country: countryName,
             fromPrice: (_g = (_f = (_e = p.pricing) === null || _e === void 0 ? void 0 : _e.summary) === null || _f === void 0 ? void 0 : _f.fromPrice) !== null && _g !== void 0 ? _g : null,
             currency: (_j = (_h = p.pricing) === null || _h === void 0 ? void 0 : _h.currency) !== null && _j !== void 0 ? _j : 'USD',
-            rating: (_l = (_k = p.reviews) === null || _k === void 0 ? void 0 : _k.combinedAverageRating) !== null && _l !== void 0 ? _l : null,
-            reviewCount: (_o = (_m = p.reviews) === null || _m === void 0 ? void 0 : _m.totalReviews) !== null && _o !== void 0 ? _o : null,
+            // Default to 0 (not null) so orderBy('rating'/'reviewCount') includes
+            // every doc — Firestore omits docs missing the ordered field.
+            rating: (_l = (_k = p.reviews) === null || _k === void 0 ? void 0 : _k.combinedAverageRating) !== null && _l !== void 0 ? _l : 0,
+            reviewCount: (_o = (_m = p.reviews) === null || _m === void 0 ? void 0 : _m.totalReviews) !== null && _o !== void 0 ? _o : 0,
             durationMinutes: (_q = (_p = p.duration) === null || _p === void 0 ? void 0 : _p.fixedDurationInMinutes) !== null && _q !== void 0 ? _q : null,
             bookingUrl: withAffiliate(p.productUrl),
             fetchedAt: admin.firestore.FieldValue.serverTimestamp(),

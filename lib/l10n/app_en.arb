@@ -4979,7 +4979,7 @@
   "membershipTrialBadge": "FREE FOR 7 DAYS",
   "globeMyNetwork": "My Network",
   "globeMyWorldMap": "My World Map",
-  "globeLayerContacts": "My Contacts",
+  "globeLayerContacts": "My Community",
   "globeLayerExperiences": "Experiences",
   "globeYou": "You",
   "globeConnections": "Connections",
@@ -5061,18 +5061,36 @@
   "groupCreate": "Create",
   "groupNameLabel": "Group name",
   "groupSelectedCount": "{count} selected",
-  "@groupSelectedCount": { "placeholders": { "count": { "type": "int" } } },
+  "@groupSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "groupInviteByNickname": "Invite by nickname",
   "groupNicknameHint": "Enter a nickname",
   "groupNoContacts": "No contacts to add yet",
   "groupNoOneFound": "No one found with that nickname",
   "groupAlreadyAdded": "Already added",
   "groupAddedCount": "Added {count}",
-  "@groupAddedCount": { "placeholders": { "count": { "type": "int" } } },
+  "@groupAddedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "groupSearchFailed": "Search failed",
   "groupInfo": "Group info",
   "groupMembersCount": "{count} members",
-  "@groupMembersCount": { "placeholders": { "count": { "type": "int" } } },
+  "@groupMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "groupAdmin": "Admin",
   "groupYou": "You",
   "groupLeave": "Leave group",
@@ -5107,9 +5125,21 @@
   "eventsAddLink": "Add link",
   "tierLimitTitle": "Upgrade to create more",
   "tierLimitEventsBody": "Your plan allows {max} events. Upgrade to create more.",
-  "@tierLimitEventsBody": { "placeholders": { "max": { "type": "int" } } },
+  "@tierLimitEventsBody": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "tierLimitGroupsBody": "Your plan allows {max} groups. Upgrade to create more.",
-  "@tierLimitGroupsBody": { "placeholders": { "max": { "type": "int" } } },
+  "@tierLimitGroupsBody": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "groupsTitle": "Groups",
   "profileRankingSubtitle": "See the global leaderboard",
   "eventBroadcastTooltip": "Broadcast to everyone",
@@ -5121,18 +5151,35 @@
   "eventsBoost": "Boost",
   "eventsBoosted": "Event featured!",
   "eventsJoinForCoins": "Join this event for {cost} coins?",
-  "@eventsJoinForCoins": { "placeholders": { "cost": { "type": "int" } } },
+  "@eventsJoinForCoins": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
   "eventsBoostConfirm": "Feature this event for {cost} coins for 7 days?",
-  "@eventsBoostConfirm": { "placeholders": { "cost": { "type": "int" } } },
+  "@eventsBoostConfirm": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
   "groupMemberLimit": "Up to {count} members per group",
-  "@groupMemberLimit": { "placeholders": { "count": { "type": "int" } } },
+  "@groupMemberLimit": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "eventsPriceHint": "Price (1–1000)",
   "eventsPriceRange": "Enter a price between 1 and 1000",
   "eventsLinkLabelHint": "Label (optional)",
   "eventsPickLocation": "Pick location",
   "eventsSearchAddress": "Search address",
   "eventsUseThisLocation": "Use this location",
-  "profileProgressGrowth": "Progress & Growth",
   "eventsEditEvent": "Edit event",
   "groupEditName": "Edit group name",
   "groupChangePhoto": "Change group photo",

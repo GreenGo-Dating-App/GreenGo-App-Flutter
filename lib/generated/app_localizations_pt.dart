@@ -10528,7 +10528,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get globeMyWorldMap => 'O meu mapa do mundo';
 
   @override
-  String get globeLayerContacts => 'Os meus contactos';
+  String get globeLayerContacts => 'A minha comunidade';
 
   @override
   String get globeLayerExperiences => 'Experiências';
@@ -21276,7 +21276,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get globeMyWorldMap => 'Meu mapa-múndi';
 
   @override
-  String get globeLayerContacts => 'Meus contatos';
+  String get globeLayerContacts => 'Minha comunidade';
 
   @override
   String get globeLayerExperiences => 'Experiências';

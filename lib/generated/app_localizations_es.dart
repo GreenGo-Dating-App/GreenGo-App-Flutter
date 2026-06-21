@@ -10554,7 +10554,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get globeMyWorldMap => 'Mi mapa del mundo';
 
   @override
-  String get globeLayerContacts => 'Mis contactos';
+  String get globeLayerContacts => 'Mi comunidad';
 
   @override
   String get globeLayerExperiences => 'Experiencias';

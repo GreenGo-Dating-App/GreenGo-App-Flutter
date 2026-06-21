@@ -9,6 +9,7 @@ import 'package:latlong2/latlong.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
+import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/event_country_stat.dart';
 import '../../domain/entities/globe_user.dart';
 
@@ -32,6 +33,8 @@ class GlobeMapView extends StatefulWidget {
     this.eventStats = const [],
     this.showEvents = false,
     this.onEventCountryTapped,
+    this.preciseEvents = const [],
+    this.onPreciseEventTapped,
   });
   final GlobeData data;
   final bool showMatched;
@@ -46,6 +49,10 @@ class GlobeMapView extends StatefulWidget {
   final List<EventCountryStat> eventStats;
   final bool showEvents;
   final void Function(String countryName)? onEventCountryTapped;
+
+  /// Native GreenGo events plotted at their exact coordinates (precise pins).
+  final List<Event> preciseEvents;
+  final void Function(Event event)? onPreciseEventTapped;
 
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
@@ -171,10 +178,37 @@ class _GlobeMapViewState extends State<GlobeMapView>
       }
     }
 
+    // Precise native-event pins (exact coordinates).
+    for (final e in widget.preciseEvents) {
+      final lat = e.latitude, lng = e.longitude;
+      if (lat == null || lng == null) continue;
+      markers.add(_buildPreciseEventMarker(e, LatLng(lat, lng)));
+    }
+
     // Current user always on top, never clustered
     markers.add(_buildCurrentUserMarker(widget.data.currentUser, l10n));
 
     return markers;
+  }
+
+  Marker _buildPreciseEventMarker(Event e, LatLng point) {
+    return Marker(
+      point: point,
+      width: 40,
+      height: 40,
+      child: GestureDetector(
+        onTap: () => widget.onPreciseEventTapped?.call(e),
+        child: Container(
+          decoration: BoxDecoration(
+            color: const Color(0xFFFFD700).withValues(alpha: 0.95),
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 2),
+            boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
+          ),
+          child: const Icon(Icons.event, color: Colors.black, size: 18),
+        ),
+      ),
+    );
   }
 
   Marker _buildEventMarker(EventCountryStat stat, LatLng point) {
