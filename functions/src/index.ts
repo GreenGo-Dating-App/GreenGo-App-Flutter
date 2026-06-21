@@ -72,9 +72,10 @@ export {
   onEventWriteUpdateCountryStats,
 } from './events/country_aggregate';
 
-// Events — admin broadcast fan-out.
+// Events — admin broadcast + regular event-chat message push fan-out.
 export {
   onEventBroadcastCreated,
+  onEventMessageCreated,
 } from './events/broadcast';
 
 // Events — scheduled reminders.
