@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -37,7 +38,7 @@ export interface ABVariant {
  * Point 170: A/B testing framework
  */
 export const createABTest = functions.https.onCall(
-  async (data, context) => {
+  monitored("createABTest", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -71,14 +72,14 @@ export const createABTest = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
  * Assign User to A/B Test Variant
  */
 export const assignUserToTest = functions.https.onCall(
-  async (data, context) => {
+  monitored("assignUserToTest", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -139,14 +140,14 @@ export const assignUserToTest = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
  * Record A/B Test Conversion
  */
 export const recordConversion = functions.https.onCall(
-  async (data, context) => {
+  monitored("recordConversion", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -213,14 +214,14 @@ export const recordConversion = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
  * Get A/B Test Results
  */
 export const getABTestResults = functions.https.onCall(
-  async (data, context) => {
+  monitored("getABTestResults", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -273,7 +274,7 @@ export const getABTestResults = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // ===== Point 171: Payment Fraud Detection =====
@@ -283,7 +284,7 @@ export const getABTestResults = functions.https.onCall(
  * Uses anomaly detection algorithms
  */
 export const detectFraud = functions.https.onCall(
-  async (data, context) => {
+  monitored("detectFraud", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -338,7 +339,7 @@ export const detectFraud = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 async function calculateFraudScore(transaction: any): Promise<number> {
@@ -416,7 +417,7 @@ async function calculateFraudScore(transaction: any): Promise<number> {
  * Forecast Monthly Recurring Revenue
  */
 export const forecastMRR = functions.https.onCall(
-  async (data, context) => {
+  monitored("forecastMRR", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -490,7 +491,7 @@ export const forecastMRR = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // ===== Point 173: ARPU Tracking =====
@@ -499,7 +500,7 @@ export const forecastMRR = functions.https.onCall(
  * Get ARPU (Average Revenue Per User) by Tier and Region
  */
 export const getARPU = functions.https.onCall(
-  async (data, context) => {
+  monitored("getARPU", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -556,7 +557,7 @@ export const getARPU = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // ===== Point 174: Refund Analytics =====
@@ -565,7 +566,7 @@ export const getARPU = functions.https.onCall(
  * Get Refund Analytics
  */
 export const getRefundAnalytics = functions.https.onCall(
-  async (data, context) => {
+  monitored("getRefundAnalytics", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -638,7 +639,7 @@ export const getRefundAnalytics = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // ===== Point 175: Tax Compliance =====
@@ -647,7 +648,7 @@ export const getRefundAnalytics = functions.https.onCall(
  * Calculate Tax for Transaction
  */
 export const calculateTax = functions.https.onCall(
-  async (data, context) => {
+  monitored("calculateTax", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -670,7 +671,7 @@ export const calculateTax = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -714,7 +715,7 @@ export async function recordTaxTransaction(
  * Get Tax Compliance Report
  */
 export const getTaxReport = functions.https.onCall(
-  async (data, context) => {
+  monitored("getTaxReport", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -770,7 +771,7 @@ export const getTaxReport = functions.https.onCall(
     } catch (error: any) {
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 // Helper functions

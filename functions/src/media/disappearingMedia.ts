@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const storage = admin.storage();
 const firestore = admin.firestore();
@@ -17,7 +18,7 @@ const DISAPPEARING_MEDIA_TTL = 24 * 60 * 60 * 1000;
  */
 export const cleanupDisappearingMedia = functions.pubsub
   .schedule('every 1 hours')
-  .onRun(async (context) => {
+  .onRun(monitored("cleanupDisappearingMedia", async (context) => {
     console.log('Starting disappearing media cleanup...');
 
     const cutoffTime = new Date(Date.now() - DISAPPEARING_MEDIA_TTL);
@@ -98,14 +99,14 @@ export const cleanupDisappearingMedia = functions.pubsub
       console.error('Error in cleanupDisappearingMedia:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Mark message media as disappearing when it's created
  */
 export const markMediaAsDisappearing = functions.firestore
   .document('conversations/{conversationId}/messages/{messageId}')
-  .onCreate(async (snapshot, context) => {
+  .onCreate(monitored("markMediaAsDisappearing", async (snapshot, context) => {
     const message = snapshot.data();
 
     // Check if this is a media message with disappearing flag
@@ -128,12 +129,12 @@ export const markMediaAsDisappearing = functions.firestore
     }
 
     return null;
-  });
+  }));
 
 /**
  * HTTP function to manually trigger cleanup
  */
-export const triggerMediaCleanup = functions.https.onCall(async (data, context) => {
+export const triggerMediaCleanup = functions.https.onCall(monitored("triggerMediaCleanup", async (data, context) => {
   // Verify admin authentication
   if (!context.auth || !context.auth.token.admin) {
     throw new functions.https.HttpsError(
@@ -196,12 +197,12 @@ export const triggerMediaCleanup = functions.https.onCall(async (data, context) 
     console.error('Error in triggerMediaCleanup:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get expiring media stats
  */
-export const getExpiringMediaStats = functions.https.onCall(async (data, context) => {
+export const getExpiringMediaStats = functions.https.onCall(monitored("getExpiringMediaStats", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -262,4 +263,4 @@ export const getExpiringMediaStats = functions.https.onCall(async (data, context
     console.error('Error in getExpiringMediaStats:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

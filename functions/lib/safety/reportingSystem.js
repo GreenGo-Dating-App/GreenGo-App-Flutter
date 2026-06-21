@@ -40,12 +40,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getBlockList = exports.unblockUser = exports.blockUser = exports.submitAppeal = exports.reviewReport = exports.issueWarning = exports.submitReport = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Submit User Report
  * Points 211-213: Comprehensive reporting with anonymous option
  */
-exports.submitReport = functions.https.onCall(async (data, context) => {
+exports.submitReport = functions.https.onCall((0, monitoring_1.monitored)("submitReport", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -131,7 +132,7 @@ exports.submitReport = functions.https.onCall(async (data, context) => {
         console.error('Error submitting report:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Issue Warning to User
  * Point 208: Automated warning system for first-time offenses
@@ -177,7 +178,7 @@ exports.issueWarning = issueWarning;
  * Review Report (Moderator Action)
  * Point 209: Escalation to human moderators
  */
-exports.reviewReport = functions.https.onCall(async (data, context) => {
+exports.reviewReport = functions.https.onCall((0, monitoring_1.monitored)("reviewReport", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -241,12 +242,12 @@ exports.reviewReport = functions.https.onCall(async (data, context) => {
         console.error('Error reviewing report:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Submit Appeal
  * Point 210: Content appeal process
  */
-exports.submitAppeal = functions.https.onCall(async (data, context) => {
+exports.submitAppeal = functions.https.onCall((0, monitoring_1.monitored)("submitAppeal", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -305,12 +306,12 @@ exports.submitAppeal = functions.https.onCall(async (data, context) => {
         console.error('Error submitting appeal:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Block User
  * Points 215-217: User blocking functionality
  */
-exports.blockUser = functions.https.onCall(async (data, context) => {
+exports.blockUser = functions.https.onCall((0, monitoring_1.monitored)("blockUser", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -376,12 +377,12 @@ exports.blockUser = functions.https.onCall(async (data, context) => {
         console.error('Error blocking user:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Unblock User
  * Point 216: Block list management
  */
-exports.unblockUser = functions.https.onCall(async (data, context) => {
+exports.unblockUser = functions.https.onCall((0, monitoring_1.monitored)("unblockUser", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -407,12 +408,12 @@ exports.unblockUser = functions.https.onCall(async (data, context) => {
         console.error('Error unblocking user:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Block List
  * Point 216: View blocked users
  */
-exports.getBlockList = functions.https.onCall(async (data, context) => {
+exports.getBlockList = functions.https.onCall((0, monitoring_1.monitored)("getBlockList", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -434,7 +435,7 @@ exports.getBlockList = functions.https.onCall(async (data, context) => {
         console.error('Error getting block list:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Automatic Blocking for High Report Volume
  * Point 218: Automatic blocking threshold

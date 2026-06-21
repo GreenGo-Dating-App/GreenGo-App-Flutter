@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { TranslationServiceClient } from '@google-cloud/translate';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const translationClient = new TranslationServiceClient();
@@ -16,7 +17,7 @@ const projectId = process.env.GCLOUD_PROJECT;
 /**
  * Translate a message to the target language
  */
-export const translateMessage = functions.https.onCall(async (data, context) => {
+export const translateMessage = functions.https.onCall(monitored("translateMessage", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -128,14 +129,14 @@ export const translateMessage = functions.https.onCall(async (data, context) => 
     console.error('Error translating message:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Auto-translate messages based on user preferences
  */
 export const autoTranslateMessage = functions.firestore
   .document('conversations/{conversationId}/messages/{messageId}')
-  .onCreate(async (snapshot, context) => {
+  .onCreate(monitored("autoTranslateMessage", async (snapshot, context) => {
     const message = snapshot.data();
 
     // Only auto-translate text messages
@@ -204,12 +205,12 @@ export const autoTranslateMessage = functions.firestore
       console.error('Error in auto-translate:', error);
       return null; // Don't fail message creation
     }
-  });
+  }));
 
 /**
  * Batch translate multiple messages
  */
-export const batchTranslateMessages = functions.https.onCall(async (data, context) => {
+export const batchTranslateMessages = functions.https.onCall(monitored("batchTranslateMessages", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -299,12 +300,12 @@ export const batchTranslateMessages = functions.https.onCall(async (data, contex
     console.error('Error in batchTranslateMessages:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get supported languages
  */
-export const getSupportedLanguages = functions.https.onCall(async (data, context) => {
+export const getSupportedLanguages = functions.https.onCall(monitored("getSupportedLanguages", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -333,4 +334,4 @@ export const getSupportedLanguages = functions.https.onCall(async (data, context
     console.error('Error getting supported languages:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

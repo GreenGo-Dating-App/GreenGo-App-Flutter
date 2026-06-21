@@ -5191,5 +5191,7 @@
   "groupNoSearchResults": "No groups found",
   "groupTranslationSettings": "Translation",
   "groupTranslateMessages": "Translate messages",
-  "groupShowOriginal": "Show original text"
+  "groupShowOriginal": "Show original text",
+  "eventsTabLiveEvents": "Live Events",
+  "globeLayerLiveEvents": "Live Events"
 }

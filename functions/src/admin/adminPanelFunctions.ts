@@ -12,6 +12,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -41,7 +42,7 @@ async function verifyAdmin(context: functions.https.CallableContext): Promise<bo
  * Send a 2FA verification code to an admin user's email
  */
 export const send2FACode = functions.https.onCall(
-  async (_data: any, context: functions.https.CallableContext) => {
+  monitored("send2FACode", async (_data: any, context: functions.https.CallableContext) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -164,14 +165,14 @@ export const send2FACode = functions.https.onCall(
       console.error('Error sending 2FA code:', error);
       throw new functions.https.HttpsError('internal', 'Failed to send verification code');
     }
-  }
+  })
 );
 
 /**
  * Verify a 2FA code entered by the admin user
  */
 export const verify2FACode = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("verify2FACode", async (data: any, context: functions.https.CallableContext) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
     }
@@ -230,7 +231,7 @@ export const verify2FACode = functions.https.onCall(
       console.error('Error verifying 2FA code:', error);
       throw new functions.https.HttpsError('internal', 'Failed to verify code');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -241,7 +242,7 @@ export const verify2FACode = functions.https.onCall(
  * Change a user's password directly (admin only)
  */
 export const adminChangeUserPassword = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("adminChangeUserPassword", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { userId, newPassword } = data;
@@ -277,14 +278,14 @@ export const adminChangeUserPassword = functions.https.onCall(
       console.error('Error changing password:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to change password');
     }
-  }
+  })
 );
 
 /**
  * Send password reset email to user
  */
 export const sendPasswordResetEmail = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("sendPasswordResetEmail", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { email } = data;
@@ -312,14 +313,14 @@ export const sendPasswordResetEmail = functions.https.onCall(
       console.error('Error sending password reset:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to send password reset email');
     }
-  }
+  })
 );
 
 /**
  * Force user to change password on next login
  */
 export const forcePasswordChange = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("forcePasswordChange", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { userId } = data;
@@ -339,7 +340,7 @@ export const forcePasswordChange = functions.https.onCall(
       console.error('Error forcing password change:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to set password change requirement');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -350,7 +351,7 @@ export const forcePasswordChange = functions.https.onCall(
  * Delete a user completely (auth + firestore)
  */
 export const adminDeleteUser = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("adminDeleteUser", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { userId, reason } = data;
@@ -410,14 +411,14 @@ export const adminDeleteUser = functions.https.onCall(
       console.error('Error deleting user:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to delete user');
     }
-  }
+  })
 );
 
 /**
  * Disable/Enable a user account
  */
 export const adminSetUserDisabled = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("adminSetUserDisabled", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { userId, disabled, reason } = data;
@@ -441,7 +442,7 @@ export const adminSetUserDisabled = functions.https.onCall(
       console.error('Error setting user disabled:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to update user status');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -452,7 +453,7 @@ export const adminSetUserDisabled = functions.https.onCall(
  * Send test email to verify configuration
  */
 export const sendTestEmail = functions.https.onCall(
-  async (data: any, context: functions.https.CallableContext) => {
+  monitored("sendTestEmail", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
     const { email } = data;
@@ -483,7 +484,7 @@ export const sendTestEmail = functions.https.onCall(
       console.error('Error sending test email:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to send test email');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -495,7 +496,7 @@ export const sendTestEmail = functions.https.onCall(
  */
 export const processAISupportMessage = functions.firestore
   .document('support_messages/{messageId}')
-  .onCreate(async (snap: functions.firestore.QueryDocumentSnapshot) => {
+  .onCreate(monitored("processAISupportMessage", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const message = snap.data();
 
     if (message.senderType !== 'user') {
@@ -662,7 +663,7 @@ export const processAISupportMessage = functions.firestore
       console.error('Error processing AI support message:', error);
       return null;
     }
-  });
+  }));
 
 // =============================================================================
 // SUPPORT CHAT TRIGGERS
@@ -673,7 +674,7 @@ export const processAISupportMessage = functions.firestore
  */
 export const onSupportChatCreated = functions.firestore
   .document('support_chats/{chatId}')
-  .onCreate(async (snap: functions.firestore.QueryDocumentSnapshot) => {
+  .onCreate(monitored("onSupportChatCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const chat = snap.data();
 
     const updates: Record<string, any> = {};
@@ -690,7 +691,7 @@ export const onSupportChatCreated = functions.firestore
     }
 
     return null;
-  });
+  }));
 
 /**
  * When a support message is created, update the conversation
@@ -698,7 +699,7 @@ export const onSupportChatCreated = functions.firestore
  */
 export const onSupportMessageCreated = functions.firestore
   .document('support_messages/{messageId}')
-  .onCreate(async (snap: functions.firestore.QueryDocumentSnapshot) => {
+  .onCreate(monitored("onSupportMessageCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const message = snap.data();
     const conversationId = message.conversationId;
 
@@ -807,7 +808,7 @@ export const onSupportMessageCreated = functions.firestore
     }
 
     return null;
-  });
+  }));
 
 // =============================================================================
 // ORPHANED AUTH USER CLEANUP
@@ -822,7 +823,7 @@ export const onSupportMessageCreated = functions.firestore
  * No auth required — called right after registration.
  */
 export const sendWelcomeEmail = functions.https.onCall(
-  async (data: any, _context: functions.https.CallableContext) => {
+  monitored("sendWelcomeEmail", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
 
     if (!email || typeof email !== 'string') {
@@ -917,7 +918,7 @@ export const sendWelcomeEmail = functions.https.onCall(
       console.error('Error sending welcome email:', error);
       throw new functions.https.HttpsError('internal', 'Failed to send welcome email');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -933,7 +934,7 @@ export const sendWelcomeEmail = functions.https.onCall(
  * No admin auth required — called from the forgot password screen.
  */
 export const sendPasswordResetViaResend = functions.https.onCall(
-  async (data: any, _context: functions.https.CallableContext) => {
+  monitored("sendPasswordResetViaResend", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
 
     if (!email || typeof email !== 'string') {
@@ -1050,7 +1051,7 @@ export const sendPasswordResetViaResend = functions.https.onCall(
       console.error('Error sending password reset email:', error);
       throw new functions.https.HttpsError('internal', 'Failed to send password reset email');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -1058,7 +1059,7 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 // =============================================================================
 
 export const cleanupOrphanedAuthUser = functions.https.onCall(
-  async (data: any, _context: functions.https.CallableContext) => {
+  monitored("cleanupOrphanedAuthUser", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
 
     if (!email || typeof email !== 'string') {
@@ -1116,7 +1117,7 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
       console.error('Error cleaning up orphaned auth user:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to cleanup');
     }
-  }
+  })
 );
 
 // =============================================================================
@@ -1136,7 +1137,7 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
  */
 export const reverseGeocodeProfileLocation = functions.firestore
   .document('profiles/{userId}')
-  .onWrite(async (
+  .onWrite(monitored("reverseGeocodeProfileLocation", async (
     change: functions.Change<functions.firestore.DocumentSnapshot>,
     context: functions.EventContext,
   ) => {
@@ -1196,4 +1197,4 @@ export const reverseGeocodeProfileLocation = functions.firestore
       console.error('reverseGeocodeProfileLocation error:', error?.message || error);
       return null;
     }
-  });
+  }));

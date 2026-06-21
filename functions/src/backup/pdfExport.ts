@@ -8,6 +8,7 @@ import * as admin from 'firebase-admin';
 import { Storage } from '@google-cloud/storage';
 import PDFDocument from 'pdfkit';
 import { Readable } from 'stream';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const storage = new Storage();
@@ -49,7 +50,7 @@ function formatDate(date: Date, format: 'short' | 'long'): string {
  */
 export const exportConversationToPDF = functions
   .runWith({ memory: '1GB', timeoutSeconds: 300 })
-  .https.onCall(async (data, context) => {
+  .https.onCall(monitored("exportConversationToPDF", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -390,13 +391,13 @@ export const exportConversationToPDF = functions
       console.error('Error exporting conversation to PDF:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  });
+  }));
 
 /**
  * List all PDF exports for a user
  * HTTP Callable Function
  */
-export const listPDFExports = functions.https.onCall(async (data, context) => {
+export const listPDFExports = functions.https.onCall(monitored("listPDFExports", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -435,7 +436,7 @@ export const listPDFExports = functions.https.onCall(async (data, context) => {
     console.error('Error listing PDF exports:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Delete expired PDF exports
@@ -444,7 +445,7 @@ export const listPDFExports = functions.https.onCall(async (data, context) => {
 export const cleanupExpiredExports = functions.pubsub
   .schedule('every day 03:00')
   .timeZone('UTC')
-  .onRun(async (context) => {
+  .onRun(monitored("cleanupExpiredExports", async (context) => {
     console.log('Starting cleanup of expired PDF exports...');
 
     try {
@@ -491,4 +492,4 @@ export const cleanupExpiredExports = functions.pubsub
       console.error('Error in cleanup:', error);
       throw error;
     }
-  });
+  }));

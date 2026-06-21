@@ -10940,6 +10940,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get groupShowOriginal => 'Mostrar texto original';
+
+  @override
+  String get eventsTabLiveEvents => 'Eventos ao vivo';
+
+  @override
+  String get globeLayerLiveEvents => 'Eventos ao vivo';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21580,4 +21586,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get groupShowOriginal => 'Mostrar texto original';
+
+  @override
+  String get eventsTabLiveEvents => 'Eventos ao vivo';
+
+  @override
+  String get globeLayerLiveEvents => 'Eventos ao vivo';
 }

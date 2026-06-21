@@ -40,13 +40,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getNotificationAnalytics = exports.trackNotificationOpened = exports.sendBundledNotifications = exports.sendPushNotification = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const messaging = admin.messaging();
 /**
  * Send Push Notification
  * Point 271: Firebase Cloud Messaging
  */
-exports.sendPushNotification = functions.https.onCall(async (data, context) => {
+exports.sendPushNotification = functions.https.onCall((0, monitoring_1.monitored)("sendPushNotification", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -160,14 +161,14 @@ exports.sendPushNotification = functions.https.onCall(async (data, context) => {
         console.error('Error sending push notification:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Send Bundled Notifications
  * Point 275: Notification bundling
  */
 exports.sendBundledNotifications = functions.pubsub
     .schedule('*/15 * * * *') // Every 15 minutes
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("sendBundledNotifications", async (context) => {
     try {
         // Get all pending notifications from last 15 minutes
         const fifteenMinutesAgo = new Date(Date.now() - 15 * 60 * 1000);
@@ -236,7 +237,7 @@ exports.sendBundledNotifications = functions.pubsub
     catch (error) {
         console.error('Error sending bundled notifications:', error);
     }
-});
+}));
 /**
  * Calculate Optimal Send Time
  * Point 274: Smart notification timing using ML
@@ -358,7 +359,7 @@ function getDeepLinkForType(type) {
  * Track Notification Analytics
  * Point 279: Notification analytics
  */
-exports.trackNotificationOpened = functions.https.onCall(async (data, context) => {
+exports.trackNotificationOpened = functions.https.onCall((0, monitoring_1.monitored)("trackNotificationOpened", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -387,12 +388,12 @@ exports.trackNotificationOpened = functions.https.onCall(async (data, context) =
         console.error('Error tracking notification opened:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Notification Analytics
  * Point 279: Analytics summary
  */
-exports.getNotificationAnalytics = functions.https.onCall(async (data, context) => {
+exports.getNotificationAnalytics = functions.https.onCall((0, monitoring_1.monitored)("getNotificationAnalytics", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -468,5 +469,5 @@ exports.getNotificationAnalytics = functions.https.onCall(async (data, context) 
         console.error('Error getting notification analytics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=pushNotifications.js.map

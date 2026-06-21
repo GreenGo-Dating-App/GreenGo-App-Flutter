@@ -13,6 +13,7 @@
 
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -68,7 +69,7 @@ async function recomputeCountry(country: string): Promise<void> {
 
 export const onEventWriteUpdateCountryStats = onDocumentWritten(
   'events/{eventId}',
-  async (event) => {
+  monitored("onEventWriteUpdateCountryStats", async (event) => {
     const before = event.data?.before.data();
     const after = event.data?.after.data();
 
@@ -81,5 +82,5 @@ export const onEventWriteUpdateCountryStats = onDocumentWritten(
     if (countries.size === 0) return;
 
     await Promise.all([...countries].map(recomputeCountry));
-  }
+  })
 );

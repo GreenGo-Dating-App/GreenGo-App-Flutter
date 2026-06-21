@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -12,7 +13,7 @@ const firestore = admin.firestore();
  * Calculate User Segment
  * Point 255: Segment users by behavior
  */
-export const calculateUserSegment = functions.https.onCall(async (data, context) => {
+export const calculateUserSegment = functions.https.onCall(monitored("calculateUserSegment", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -155,7 +156,7 @@ export const calculateUserSegment = functions.https.onCall(async (data, context)
     console.error('Error calculating user segment:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Calculate engagement score (0-100)
@@ -197,7 +198,7 @@ function calculateEngagementScore(metrics: any): number {
  */
 export const createUserCohort = functions.pubsub
   .schedule('0 2 * * *') // Daily at 2 AM
-  .onRun(async (context) => {
+  .onRun(monitored("createUserCohort", async (context) => {
     try {
       // Get all users from yesterday
       const yesterday = new Date();
@@ -248,7 +249,7 @@ export const createUserCohort = functions.pubsub
     } catch (error) {
       console.error('Error creating user cohort:', error);
     }
-  });
+  }));
 
 /**
  * Calculate Cohort Retention
@@ -256,7 +257,7 @@ export const createUserCohort = functions.pubsub
  */
 export const calculateCohortRetention = functions.pubsub
   .schedule('0 3 * * *') // Daily at 3 AM
-  .onRun(async (context) => {
+  .onRun(monitored("calculateCohortRetention", async (context) => {
     try {
       // Get all cohorts
       const cohortsSnapshot = await firestore.collection('user_cohorts').get();
@@ -305,13 +306,13 @@ export const calculateCohortRetention = functions.pubsub
     } catch (error) {
       console.error('Error calculating cohort retention:', error);
     }
-  });
+  }));
 
 /**
  * Predict User Churn
  * Point 256: Churn probability prediction
  */
-export const predictUserChurn = functions.https.onCall(async (data, context) => {
+export const predictUserChurn = functions.https.onCall(monitored("predictUserChurn", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -437,7 +438,7 @@ export const predictUserChurn = functions.https.onCall(async (data, context) => 
     console.error('Error predicting user churn:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Batch Churn Prediction
@@ -445,7 +446,7 @@ export const predictUserChurn = functions.https.onCall(async (data, context) => 
  */
 export const batchChurnPrediction = functions.pubsub
   .schedule('0 4 * * *') // Daily at 4 AM
-  .onRun(async (context) => {
+  .onRun(monitored("batchChurnPrediction", async (context) => {
     try {
       // Get all active users
       const usersSnapshot = await firestore
@@ -479,4 +480,4 @@ export const batchChurnPrediction = functions.pubsub
     } catch (error) {
       console.error('Error in batch churn prediction:', error);
     }
-  });
+  }));

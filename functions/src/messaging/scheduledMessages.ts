@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 
@@ -13,7 +14,7 @@ const firestore = admin.firestore();
  */
 export const sendScheduledMessages = functions.pubsub
   .schedule('every 1 minutes')
-  .onRun(async (context) => {
+  .onRun(monitored("sendScheduledMessages", async (context) => {
     console.log('Checking for scheduled messages to send...');
 
     const now = new Date();
@@ -92,12 +93,12 @@ export const sendScheduledMessages = functions.pubsub
       console.error('Error sending scheduled messages:', error);
       throw error;
     }
-  });
+  }));
 
 /**
  * Schedule a message for later delivery
  */
-export const scheduleMessage = functions.https.onCall(async (data, context) => {
+export const scheduleMessage = functions.https.onCall(monitored("scheduleMessage", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -196,12 +197,12 @@ export const scheduleMessage = functions.https.onCall(async (data, context) => {
     console.error('Error scheduling message:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Cancel a scheduled message
  */
-export const cancelScheduledMessage = functions.https.onCall(async (data, context) => {
+export const cancelScheduledMessage = functions.https.onCall(monitored("cancelScheduledMessage", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -262,12 +263,12 @@ export const cancelScheduledMessage = functions.https.onCall(async (data, contex
     console.error('Error cancelling scheduled message:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get all scheduled messages for a conversation
  */
-export const getScheduledMessages = functions.https.onCall(async (data, context) => {
+export const getScheduledMessages = functions.https.onCall(monitored("getScheduledMessages", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -312,4 +313,4 @@ export const getScheduledMessages = functions.https.onCall(async (data, context)
     console.error('Error getting scheduled messages:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

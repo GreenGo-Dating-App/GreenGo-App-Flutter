@@ -22,6 +22,7 @@ import { db, logInfo, logError } from '../shared/utils';
 import { computeMembershipExtension } from '../shared/grants';
 import { sendCouponRedeemedEmail } from '../notifications/couponEmails';
 import { effectiveGrants, hasBaseGrant, summariseGrants } from './grants';
+import { monitored } from '../shared/monitoring';
 
 const COIN_EXPIRATION_DAYS = 365;
 
@@ -38,7 +39,7 @@ export const applySignupGrants = onDocumentCreated(
     memory: '512MiB',
     timeoutSeconds: 60,
   },
-  async (event) => {
+  monitored("applySignupGrants", async (event) => {
     const uid = event.params.userId;
     const userData = event.data?.data();
     if (!userData?.email) {
@@ -111,7 +112,7 @@ export const applySignupGrants = onDocumentCreated(
     }
 
     logInfo(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
-  },
+  }),
 );
 
 /**

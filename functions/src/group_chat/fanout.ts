@@ -21,6 +21,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -65,7 +66,7 @@ async function senderDisplayName(senderId: string): Promise<string> {
 
 export const onGroupMessageCreated = onDocumentCreated(
   'groups/{groupId}/messages/{messageId}',
-  async (event) => {
+  monitored("onGroupMessageCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;
 
@@ -214,5 +215,5 @@ export const onGroupMessageCreated = onDocumentCreated(
         console.error('Group FCM multicast failed', e);
       }
     }
-  }
+  })
 );

@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import vision from '@google-cloud/vision';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const visionClient = new vision.ImageAnnotatorClient();
@@ -15,7 +16,7 @@ const visionClient = new vision.ImageAnnotatorClient();
  * Point 221: Real-time selfie matching profile photos
  */
 export const startPhotoVerification = functions.https.onCall(
-  async (data, context) => {
+  monitored("startPhotoVerification", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -51,7 +52,7 @@ export const startPhotoVerification = functions.https.onCall(
       console.error('Error starting photo verification:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -59,7 +60,7 @@ export const startPhotoVerification = functions.https.onCall(
  * Point 221 & 223: Selfie matching with liveness detection
  */
 export const verifyPhotoSelfie = functions.https.onCall(
-  async (data, context) => {
+  monitored("verifyPhotoSelfie", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -163,7 +164,7 @@ export const verifyPhotoSelfie = functions.https.onCall(
       console.error('Error verifying photo selfie:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -171,7 +172,7 @@ export const verifyPhotoSelfie = functions.https.onCall(
  * Point 222: Document scanning and OCR
  */
 export const verifyIDDocument = functions.https.onCall(
-  async (data, context) => {
+  monitored("verifyIDDocument", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -250,7 +251,7 @@ export const verifyIDDocument = functions.https.onCall(
       console.error('Error verifying ID document:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -526,7 +527,7 @@ async function grantVerificationBadge(
  * Point 225: Trust score combining verification, reports, account age
  */
 export const calculateTrustScore = functions.https.onCall(
-  async (data, context) => {
+  monitored("calculateTrustScore", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -543,7 +544,7 @@ export const calculateTrustScore = functions.https.onCall(
       console.error('Error calculating trust score:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**

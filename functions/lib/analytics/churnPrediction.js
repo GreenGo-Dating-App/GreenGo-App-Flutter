@@ -41,6 +41,7 @@ exports.getAtRiskUsers = exports.getUserChurnPrediction = exports.predictChurnDa
 const functions = __importStar(require("firebase-functions/v1"));
 const bigQuerySetup_1 = require("./bigQuerySetup");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Train Churn Prediction Model
@@ -49,7 +50,7 @@ const firestore = admin.firestore();
 exports.trainChurnModel = functions.pubsub
     .schedule('0 2 * * 0') // Weekly on Sunday at 2 AM
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("trainChurnModel", async (context) => {
     try {
         // Create training dataset
         const createTrainingDataQuery = `
@@ -188,7 +189,7 @@ exports.trainChurnModel = functions.pubsub
         console.error('Error training churn model:', error);
         throw error;
     }
-});
+}));
 /**
  * Predict Churn for Users
  * Runs daily to score all active subscribers
@@ -196,7 +197,7 @@ exports.trainChurnModel = functions.pubsub
 exports.predictChurnDaily = functions.pubsub
     .schedule('0 3 * * *') // Daily at 3 AM
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("predictChurnDaily", async (context) => {
     try {
         // Get predictions for all active users
         const predictQuery = `
@@ -304,11 +305,11 @@ exports.predictChurnDaily = functions.pubsub
         console.error('Error predicting churn:', error);
         throw error;
     }
-});
+}));
 /**
  * Get Churn Prediction for User
  */
-exports.getUserChurnPrediction = functions.https.onCall(async (data, context) => {
+exports.getUserChurnPrediction = functions.https.onCall((0, monitoring_1.monitored)("getUserChurnPrediction", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -355,11 +356,11 @@ exports.getUserChurnPrediction = functions.https.onCall(async (data, context) =>
         console.error('Error getting churn prediction:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get At-Risk Users
  */
-exports.getAtRiskUsers = functions.https.onCall(async (data, context) => {
+exports.getAtRiskUsers = functions.https.onCall((0, monitoring_1.monitored)("getAtRiskUsers", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -406,7 +407,7 @@ exports.getAtRiskUsers = functions.https.onCall(async (data, context) => {
         console.error('Error getting at-risk users:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Helper Functions
  */

@@ -51,6 +51,7 @@ const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const axios_1 = __importDefault(require("axios"));
 const utils_1 = require("../shared/utils");
+const monitoring_1 = require("../shared/monitoring");
 const db = admin.firestore();
 // Google Geocoding API key from Firebase environment config
 const GEOCODING_API_KEY = process.env.GOOGLE_GEOCODING_API_KEY || '';
@@ -105,7 +106,7 @@ exports.onPresenceUpdate = (0, firestore_1.onDocumentUpdated)({
     document: 'profiles/{userId}',
     memory: '256MiB',
     timeoutSeconds: 30,
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onPresenceUpdate", async (event) => {
     var _a, _b, _c, _d;
     const beforeData = (_b = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before) === null || _b === void 0 ? void 0 : _b.data();
     const afterData = (_d = (_c = event.data) === null || _c === void 0 ? void 0 : _c.after) === null || _d === void 0 ? void 0 : _d.data();
@@ -156,5 +157,5 @@ exports.onPresenceUpdate = (0, firestore_1.onDocumentUpdated)({
     catch (error) {
         (0, utils_1.logError)(`onPresenceUpdate: Failed to update ${userId}: ${error}`);
     }
-});
+}));
 //# sourceMappingURL=onPresenceUpdate.js.map

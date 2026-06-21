@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.cleanupOldAuditReports = exports.listSecurityAuditReports = exports.getSecurityAuditReport = exports.scheduledSecurityAudit = exports.runSecurityAudit = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 // Stub the SecurityAuditSuite (original import commented out due to compilation issues)
 // import { SecurityAuditSuite } from '../../../security_audit/security_test_suite';
 class SecurityAuditSuite {
@@ -72,7 +73,7 @@ exports.runSecurityAudit = functions
     timeoutSeconds: 540, // 9 minutes
     memory: '2GB',
 })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("runSecurityAudit", async (data, context) => {
     // Verify admin access
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -121,7 +122,7 @@ exports.runSecurityAudit = functions
         console.error('Error running security audit:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Schedule Weekly Security Audit
  * Run audit every Monday at 2 AM
@@ -129,7 +130,7 @@ exports.runSecurityAudit = functions
 exports.scheduledSecurityAudit = functions.pubsub
     .schedule('0 2 * * 1') // Every Monday at 2 AM
     .timeZone('America/New_York')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("scheduledSecurityAudit", async (context) => {
     try {
         console.log('Running scheduled security audit...');
         const auditSuite = new SecurityAuditSuite();
@@ -146,11 +147,11 @@ exports.scheduledSecurityAudit = functions.pubsub
     catch (error) {
         console.error('Error in scheduled security audit:', error);
     }
-});
+}));
 /**
  * Get Security Audit Report
  */
-exports.getSecurityAuditReport = functions.https.onCall(async (data, context) => {
+exports.getSecurityAuditReport = functions.https.onCall((0, monitoring_1.monitored)("getSecurityAuditReport", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -177,11 +178,11 @@ exports.getSecurityAuditReport = functions.https.onCall(async (data, context) =>
         console.error('Error getting security audit report:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * List Security Audit Reports
  */
-exports.listSecurityAuditReports = functions.https.onCall(async (data, context) => {
+exports.listSecurityAuditReports = functions.https.onCall((0, monitoring_1.monitored)("listSecurityAuditReports", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -207,7 +208,7 @@ exports.listSecurityAuditReports = functions.https.onCall(async (data, context) 
         console.error('Error listing security audit reports:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Generate PDF Report
  */
@@ -353,7 +354,7 @@ async function notifyAdminsOfAuditResults(report, reportId) {
  */
 exports.cleanupOldAuditReports = functions.pubsub
     .schedule('0 3 * * 1') // Every Monday at 3 AM (after audit)
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("cleanupOldAuditReports", async (context) => {
     try {
         const reportsSnapshot = await firestore
             .collection('security_audit_reports')
@@ -383,5 +384,5 @@ exports.cleanupOldAuditReports = functions.pubsub
     catch (error) {
         console.error('Error cleaning up old audit reports:', error);
     }
-});
+}));
 //# sourceMappingURL=securityAudit.js.map

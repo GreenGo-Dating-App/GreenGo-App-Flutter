@@ -40,13 +40,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.recordAdminLogin = exports.getAdminUsers = exports.deactivateAdminUser = exports.updateAdminPermissions = exports.updateAdminRole = exports.createAdminUser = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const auth = admin.auth();
 const firestore = admin.firestore();
 /**
  * Create Admin User
  * Point 227: Create new admin with role assignment
  */
-exports.createAdminUser = functions.https.onCall(async (data, context) => {
+exports.createAdminUser = functions.https.onCall((0, monitoring_1.monitored)("createAdminUser", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -112,7 +113,7 @@ exports.createAdminUser = functions.https.onCall(async (data, context) => {
         console.error('Error creating admin user:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get default permissions for a role
  */
@@ -173,7 +174,7 @@ function getDefaultPermissions(role) {
  * Update Admin Role
  * Point 227: Change admin role and permissions
  */
-exports.updateAdminRole = functions.https.onCall(async (data, context) => {
+exports.updateAdminRole = functions.https.onCall((0, monitoring_1.monitored)("updateAdminRole", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -225,12 +226,12 @@ exports.updateAdminRole = functions.https.onCall(async (data, context) => {
         console.error('Error updating admin role:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Update Admin Permissions
  * Point 227: Grant or revoke specific permissions
  */
-exports.updateAdminPermissions = functions.https.onCall(async (data, context) => {
+exports.updateAdminPermissions = functions.https.onCall((0, monitoring_1.monitored)("updateAdminPermissions", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -260,12 +261,12 @@ exports.updateAdminPermissions = functions.https.onCall(async (data, context) =>
         console.error('Error updating admin permissions:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Deactivate Admin User
  * Point 227: Disable admin access
  */
-exports.deactivateAdminUser = functions.https.onCall(async (data, context) => {
+exports.deactivateAdminUser = functions.https.onCall((0, monitoring_1.monitored)("deactivateAdminUser", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -305,12 +306,12 @@ exports.deactivateAdminUser = functions.https.onCall(async (data, context) => {
         console.error('Error deactivating admin user:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Admin Users List
  * Point 227: View all admin users
  */
-exports.getAdminUsers = functions.https.onCall(async (data, context) => {
+exports.getAdminUsers = functions.https.onCall((0, monitoring_1.monitored)("getAdminUsers", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -343,12 +344,12 @@ exports.getAdminUsers = functions.https.onCall(async (data, context) => {
         console.error('Error getting admin users:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Record Admin Login
  * Trigger function to track admin logins
  */
-exports.recordAdminLogin = functions.auth.user().onCreate(async (user) => {
+exports.recordAdminLogin = functions.auth.user().onCreate((0, monitoring_1.monitored)("recordAdminLogin", async (user) => {
     // Check if user has admin custom claims
     const userRecord = await auth.getUser(user.uid);
     const customClaims = userRecord.customClaims || {};
@@ -364,5 +365,5 @@ exports.recordAdminLogin = functions.auth.user().onCreate(async (user) => {
             });
         }
     }
-});
+}));
 //# sourceMappingURL=roleManagement.js.map

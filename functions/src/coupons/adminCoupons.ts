@@ -8,6 +8,7 @@ import * as admin from 'firebase-admin';
 import { db, verifyAdminAuth, handleError, logInfo } from '../shared/utils';
 import { TierName } from '../shared/grants';
 import { Grant, validateGrant } from './grants';
+import { monitored } from '../shared/monitoring';
 
 const VALID_DURATIONS_DAYS = [7, 14, 30, 60, 90, 180, 365];
 const VALID_TIERS: TierName[] = ['BASIC', 'SILVER', 'GOLD', 'PLATINUM'];
@@ -49,7 +50,7 @@ interface SetCouponDisabledRequest {
 
 export const upsertCoupon = onCall<UpsertCouponRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (request: CallableRequest<UpsertCouponRequest>) => {
+  monitored("upsertCoupon", async (request: CallableRequest<UpsertCouponRequest>) => {
     try {
       const adminUid = await verifyAdminAuth(request.auth);
       const data = request.data;
@@ -155,12 +156,12 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
       if (err instanceof HttpsError) throw err;
       throw handleError(err);
     }
-  },
+  }),
 );
 
 export const listCoupons = onCall<ListCouponsRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (request: CallableRequest<ListCouponsRequest>) => {
+  monitored("listCoupons", async (request: CallableRequest<ListCouponsRequest>) => {
     try {
       await verifyAdminAuth(request.auth);
       const limit = Math.min(Math.max(request.data?.limit || 50, 1), 200);
@@ -201,12 +202,12 @@ export const listCoupons = onCall<ListCouponsRequest>(
       if (err instanceof HttpsError) throw err;
       throw handleError(err);
     }
-  },
+  }),
 );
 
 export const getCouponRedemptions = onCall<GetCouponRedemptionsRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (request: CallableRequest<GetCouponRedemptionsRequest>) => {
+  monitored("getCouponRedemptions", async (request: CallableRequest<GetCouponRedemptionsRequest>) => {
     try {
       await verifyAdminAuth(request.auth);
       const couponId = String(request.data?.couponId || '').trim();
@@ -234,12 +235,12 @@ export const getCouponRedemptions = onCall<GetCouponRedemptionsRequest>(
       if (err instanceof HttpsError) throw err;
       throw handleError(err);
     }
-  },
+  }),
 );
 
 export const setCouponDisabled = onCall<SetCouponDisabledRequest>(
   { memory: '512MiB', timeoutSeconds: 15 },
-  async (request: CallableRequest<SetCouponDisabledRequest>) => {
+  monitored("setCouponDisabled", async (request: CallableRequest<SetCouponDisabledRequest>) => {
     try {
       const adminUid = await verifyAdminAuth(request.auth);
       const couponId = String(request.data?.couponId || '').trim();
@@ -256,5 +257,5 @@ export const setCouponDisabled = onCall<SetCouponDisabledRequest>(
       if (err instanceof HttpsError) throw err;
       throw handleError(err);
     }
-  },
+  }),
 );

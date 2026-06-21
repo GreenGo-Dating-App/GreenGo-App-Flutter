@@ -52,6 +52,7 @@ const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -391,9 +392,9 @@ exports.ingestExternalEvents = (0, scheduler_1.onSchedule)({
     timeoutSeconds: 540,
     memory: '512MiB',
     secrets: [VIATOR_API_KEY],
-}, async () => {
+}, (0, monitoring_1.monitored)("ingestExternalEvents", async () => {
     await runIngestion(VIATOR_API_KEY.value());
-});
+}));
 // Curated real, public Viator experiences — used to seed `external_events` for
 // a working demo until the live API key is activated. Real titles + booking
 // URLs (viator.com); replaced by live API data once the key works.
@@ -541,7 +542,7 @@ const SEED_DOCS = [
 // Manual trigger (admin), guarded by the Viator key as token:
 //   ?token=<KEY>          → pull live data now
 //   ?token=<KEY>&seed=1   → seed curated demo experiences into external_events
-exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memory: '512MiB', secrets: [VIATOR_API_KEY] }, async (req, res) => {
+exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memory: '512MiB', secrets: [VIATOR_API_KEY] }, (0, monitoring_1.monitored)("runIngestExternalEventsNow", async (req, res) => {
     const key = VIATOR_API_KEY.value();
     if (!key || req.query.token !== key) {
         res.status(403).send('Forbidden');
@@ -563,5 +564,5 @@ exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 54
         cleared = await clearSource(String(req.query.clear));
     const count = await runIngestion(key);
     res.status(200).json({ ok: true, cleared, upserted: count });
-});
+}));
 //# sourceMappingURL=ingest.js.map

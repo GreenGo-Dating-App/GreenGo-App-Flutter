@@ -45,6 +45,7 @@ const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const vision_1 = __importDefault(require("@google-cloud/vision"));
 const language_1 = require("@google-cloud/language");
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const visionClient = new vision_1.default.ImageAnnotatorClient();
 const languageClient = new language_1.LanguageServiceClient();
@@ -52,7 +53,7 @@ const languageClient = new language_1.LanguageServiceClient();
  * Moderate Photo using Cloud Vision API
  * Point 201: Automatic photo content moderation
  */
-exports.moderatePhoto = functions.https.onCall(async (data, context) => {
+exports.moderatePhoto = functions.https.onCall((0, monitoring_1.monitored)("moderatePhoto", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -193,12 +194,12 @@ exports.moderatePhoto = functions.https.onCall(async (data, context) => {
         console.error('Error moderating photo:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Moderate Text using Perspective API
  * Point 202: AI-based text moderation for toxicity
  */
-exports.moderateText = functions.https.onCall(async (data, context) => {
+exports.moderateText = functions.https.onCall((0, monitoring_1.monitored)("moderateText", async (data, context) => {
     var _a, _b;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -295,7 +296,7 @@ exports.moderateText = functions.https.onCall(async (data, context) => {
         console.error('Error moderating text:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Check for Profanity
  * Point 203: Profanity filter with multilingual support
@@ -333,7 +334,7 @@ async function checkProfanity(text) {
  * Detect Spam
  * Point 204: Spam detection algorithm
  */
-exports.detectSpam = functions.https.onCall(async (data, context) => {
+exports.detectSpam = functions.https.onCall((0, monitoring_1.monitored)("detectSpam", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -399,12 +400,12 @@ exports.detectSpam = functions.https.onCall(async (data, context) => {
         console.error('Error detecting spam:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Detect Fake Profile
  * Point 205: Fake profile detection using behavioral analysis
  */
-exports.detectFakeProfile = functions.https.onCall(async (data, context) => {
+exports.detectFakeProfile = functions.https.onCall((0, monitoring_1.monitored)("detectFakeProfile", async (data, context) => {
     var _a, _b;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -491,12 +492,12 @@ exports.detectFakeProfile = functions.https.onCall(async (data, context) => {
         console.error('Error detecting fake profile:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Detect Scam
  * Point 206: Scam detection system
  */
-exports.detectScam = functions.https.onCall(async (data, context) => {
+exports.detectScam = functions.https.onCall((0, monitoring_1.monitored)("detectScam", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -583,13 +584,13 @@ exports.detectScam = functions.https.onCall(async (data, context) => {
         console.error('Error detecting scam:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Moderate Chat Image — callable from frontend before sending
  * Validates any image (chat, private album, etc.) for nudity/explicit content
  * Returns approval status so the client can block sending
  */
-exports.moderateChatImage = functions.https.onCall(async (data, context) => {
+exports.moderateChatImage = functions.https.onCall((0, monitoring_1.monitored)("moderateChatImage", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -665,7 +666,7 @@ exports.moderateChatImage = functions.https.onCall(async (data, context) => {
             violations: [{ type: 'error', reason: 'Moderation check failed', severity: 'high' }],
         };
     }
-});
+}));
 /**
  * Create Moderation Queue Entry
  * Point 209: Escalation system routing to moderators

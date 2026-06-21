@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.adminBulkDeleteUsers = exports.executeMassAction = exports.impersonateUser = exports.sendUserNotification = exports.adjustUserCoins = exports.overrideUserSubscription = exports.deleteUserAccount = exports.unbanUserAccount = exports.banUserAccount = exports.unsuspendUserAccount = exports.suspendUserAccount = exports.editUserProfile = exports.getDetailedUserProfile = exports.searchUsers = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const auth = admin.auth();
 /**
@@ -79,7 +80,7 @@ async function logAdminAction(adminId, action, targetType, targetId, details) {
  * Search Users
  * Point 236: Advanced user search
  */
-exports.searchUsers = functions.https.onCall(async (data, context) => {
+exports.searchUsers = functions.https.onCall((0, monitoring_1.monitored)("searchUsers", async (data, context) => {
     await verifyAdminPermission(context, 'viewUserProfiles');
     const { query, filters = {}, limit = 50, offset = 0 } = data;
     try {
@@ -148,12 +149,12 @@ exports.searchUsers = functions.https.onCall(async (data, context) => {
         console.error('Error searching users:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Detailed User Profile
  * Point 237: View complete user profile
  */
-exports.getDetailedUserProfile = functions.https.onCall(async (data, context) => {
+exports.getDetailedUserProfile = functions.https.onCall((0, monitoring_1.monitored)("getDetailedUserProfile", async (data, context) => {
     await verifyAdminPermission(context, 'viewUserProfiles');
     const { userId } = data;
     try {
@@ -301,12 +302,12 @@ exports.getDetailedUserProfile = functions.https.onCall(async (data, context) =>
         console.error('Error getting detailed user profile:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Edit User Profile
  * Point 238: Admin can edit user data
  */
-exports.editUserProfile = functions.https.onCall(async (data, context) => {
+exports.editUserProfile = functions.https.onCall((0, monitoring_1.monitored)("editUserProfile", async (data, context) => {
     await verifyAdminPermission(context, 'editUserProfiles');
     const { userId, updates } = data;
     try {
@@ -335,12 +336,12 @@ exports.editUserProfile = functions.https.onCall(async (data, context) => {
         console.error('Error editing user profile:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Suspend User Account
  * Point 239: Temporary account suspension
  */
-exports.suspendUserAccount = functions.https.onCall(async (data, context) => {
+exports.suspendUserAccount = functions.https.onCall((0, monitoring_1.monitored)("suspendUserAccount", async (data, context) => {
     await verifyAdminPermission(context, 'suspendUsers');
     const { userId, reason, durationDays = 7 } = data;
     try {
@@ -361,12 +362,12 @@ exports.suspendUserAccount = functions.https.onCall(async (data, context) => {
         console.error('Error suspending user account:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Unsuspend User Account
  * Point 239: Lift suspension
  */
-exports.unsuspendUserAccount = functions.https.onCall(async (data, context) => {
+exports.unsuspendUserAccount = functions.https.onCall((0, monitoring_1.monitored)("unsuspendUserAccount", async (data, context) => {
     await verifyAdminPermission(context, 'suspendUsers');
     const { userId } = data;
     try {
@@ -385,12 +386,12 @@ exports.unsuspendUserAccount = functions.https.onCall(async (data, context) => {
         console.error('Error unsuspending user account:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Ban User Account
  * Point 239: Permanent account ban
  */
-exports.banUserAccount = functions.https.onCall(async (data, context) => {
+exports.banUserAccount = functions.https.onCall((0, monitoring_1.monitored)("banUserAccount", async (data, context) => {
     await verifyAdminPermission(context, 'banUsers');
     const { userId, reason } = data;
     try {
@@ -412,12 +413,12 @@ exports.banUserAccount = functions.https.onCall(async (data, context) => {
         console.error('Error banning user account:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Unban User Account
  * Point 239: Lift permanent ban
  */
-exports.unbanUserAccount = functions.https.onCall(async (data, context) => {
+exports.unbanUserAccount = functions.https.onCall((0, monitoring_1.monitored)("unbanUserAccount", async (data, context) => {
     await verifyAdminPermission(context, 'banUsers');
     const { userId } = data;
     try {
@@ -439,12 +440,12 @@ exports.unbanUserAccount = functions.https.onCall(async (data, context) => {
         console.error('Error unbanning user account:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Delete User Account
  * Point 239: Permanent account deletion
  */
-exports.deleteUserAccount = functions.https.onCall(async (data, context) => {
+exports.deleteUserAccount = functions.https.onCall((0, monitoring_1.monitored)("deleteUserAccount", async (data, context) => {
     await verifyAdminPermission(context, 'deleteUsers');
     const { userId, reason } = data;
     try {
@@ -465,12 +466,12 @@ exports.deleteUserAccount = functions.https.onCall(async (data, context) => {
         console.error('Error deleting user account:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Override User Subscription
  * Point 240: Grant or modify subscription
  */
-exports.overrideUserSubscription = functions.https.onCall(async (data, context) => {
+exports.overrideUserSubscription = functions.https.onCall((0, monitoring_1.monitored)("overrideUserSubscription", async (data, context) => {
     await verifyAdminPermission(context, 'overrideSubscriptions');
     const { userId, tier, durationDays } = data;
     try {
@@ -509,12 +510,12 @@ exports.overrideUserSubscription = functions.https.onCall(async (data, context) 
         console.error('Error overriding user subscription:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Adjust User Coins
  * Point 241: Add or remove coins
  */
-exports.adjustUserCoins = functions.https.onCall(async (data, context) => {
+exports.adjustUserCoins = functions.https.onCall((0, monitoring_1.monitored)("adjustUserCoins", async (data, context) => {
     await verifyAdminPermission(context, 'adjustCoins');
     const { userId, amount, reason } = data;
     try {
@@ -576,12 +577,12 @@ exports.adjustUserCoins = functions.https.onCall(async (data, context) => {
         console.error('Error adjusting user coins:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Send User Notification
  * Point 243: Direct user communication
  */
-exports.sendUserNotification = functions.https.onCall(async (data, context) => {
+exports.sendUserNotification = functions.https.onCall((0, monitoring_1.monitored)("sendUserNotification", async (data, context) => {
     var _a;
     await verifyAdminPermission(context, 'sendNotifications');
     const { userId, subject, body, type = 'inAppNotification' } = data;
@@ -623,12 +624,12 @@ exports.sendUserNotification = functions.https.onCall(async (data, context) => {
         console.error('Error sending user notification:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Impersonate User
  * Point 245: View app as user (for debugging)
  */
-exports.impersonateUser = functions.https.onCall(async (data, context) => {
+exports.impersonateUser = functions.https.onCall((0, monitoring_1.monitored)("impersonateUser", async (data, context) => {
     await verifyAdminPermission(context, 'impersonateUsers');
     const { userId } = data;
     try {
@@ -649,12 +650,12 @@ exports.impersonateUser = functions.https.onCall(async (data, context) => {
         console.error('Error impersonating user:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Mass Action - Execute on multiple users
  * Point 242: Bulk operations
  */
-exports.executeMassAction = functions.https.onCall(async (data, context) => {
+exports.executeMassAction = functions.https.onCall((0, monitoring_1.monitored)("executeMassAction", async (data, context) => {
     await verifyAdminPermission(context, 'viewUserProfiles');
     const { operationType, targetUserIds, parameters } = data;
     try {
@@ -685,7 +686,7 @@ exports.executeMassAction = functions.https.onCall(async (data, context) => {
         console.error('Error executing mass action:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 // Protected email addresses that cannot be bulk-deleted
 const PROTECTED_EMAILS = [
     'admin@greengochat.com',
@@ -697,7 +698,7 @@ const PROTECTED_EMAILS = [
  */
 exports.adminBulkDeleteUsers = functions
     .runWith({ timeoutSeconds: 300, memory: '512MB' })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("adminBulkDeleteUsers", async (data, context) => {
     await verifyAdminPermission(context, 'deleteUsers');
     const { userIds, reason } = data;
     if (!Array.isArray(userIds) || userIds.length === 0) {
@@ -793,5 +794,5 @@ exports.adminBulkDeleteUsers = functions
         console.error('Error in bulk delete:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=userManagement.js.map

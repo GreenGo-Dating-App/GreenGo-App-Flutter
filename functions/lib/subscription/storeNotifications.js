@@ -56,6 +56,7 @@ const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
 const purchase_verification_1 = require("../shared/purchase_verification");
 const index_1 = require("./index");
+const monitoring_1 = require("../shared/monitoring");
 const TIER_RANK = { BASIC: 0, SILVER: 1, GOLD: 2, PLATINUM: 3 };
 const BASE_PRODUCT_ID = 'greengo_base_membership';
 /** Find the most recent subscription record for a renewal/expiry key. */
@@ -124,7 +125,7 @@ async function markSubscription(ref, fields) {
     await ref.set(Object.assign(Object.assign({}, fields), { updatedAt: admin.firestore.Timestamp.now() }), { merge: true });
 }
 // ========== APP STORE SERVER NOTIFICATIONS V2 ==========
-exports.appStoreNotificationsV2 = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds: 30 }, async (req, res) => {
+exports.appStoreNotificationsV2 = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("appStoreNotificationsV2", async (req, res) => {
     var _a;
     try {
         const signedPayload = (_a = req.body) === null || _a === void 0 ? void 0 : _a.signedPayload;
@@ -185,7 +186,7 @@ exports.appStoreNotificationsV2 = (0, https_1.onRequest)({ memory: '512MiB', tim
         // 500 lets Apple retry on transient failures.
         res.status(500).send('Error');
     }
-});
+}));
 // ========== GOOGLE PLAY REAL-TIME DEVELOPER NOTIFICATIONS ==========
 // RTDN subscriptionNotification.notificationType values
 const PLAY = {
@@ -199,7 +200,7 @@ const PLAY = {
     REVOKED: 12,
     EXPIRED: 13,
 };
-exports.playStoreNotifications = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds: 30 }, async (req, res) => {
+exports.playStoreNotifications = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("playStoreNotifications", async (req, res) => {
     var _a, _b;
     try {
         // Pub/Sub push delivers the RTDN base64-encoded in message.data.
@@ -262,5 +263,5 @@ exports.playStoreNotifications = (0, https_1.onRequest)({ memory: '512MiB', time
         (0, utils_1.logError)('playStoreNotifications error:', err);
         res.status(500).send('Error');
     }
-});
+}));
 //# sourceMappingURL=storeNotifications.js.map

@@ -40,12 +40,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateLeaderboardRankings = exports.resetDailyChallenges = exports.claimChallengeReward = exports.trackChallengeProgress = exports.claimLevelRewards = exports.unlockAchievementReward = exports.trackAchievementProgress = exports.grantXP = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Grant XP to User
  * Point 187: XP rewards for actions
  */
-exports.grantXP = functions.https.onCall(async (data, context) => {
+exports.grantXP = functions.https.onCall((0, monitoring_1.monitored)("grantXP", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -108,12 +109,12 @@ exports.grantXP = functions.https.onCall(async (data, context) => {
         console.error('Error granting XP:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Track Achievement Progress
  * Points 176-185: Update achievement progress
  */
-exports.trackAchievementProgress = functions.https.onCall(async (data, context) => {
+exports.trackAchievementProgress = functions.https.onCall((0, monitoring_1.monitored)("trackAchievementProgress", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -157,12 +158,12 @@ exports.trackAchievementProgress = functions.https.onCall(async (data, context) 
         console.error('Error tracking achievement progress:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Unlock Achievement and Grant Rewards
  * Points 176-185: Unlock achievement
  */
-exports.unlockAchievementReward = functions.https.onCall(async (data, context) => {
+exports.unlockAchievementReward = functions.https.onCall((0, monitoring_1.monitored)("unlockAchievementReward", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -193,12 +194,12 @@ exports.unlockAchievementReward = functions.https.onCall(async (data, context) =
         console.error('Error unlocking achievement:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Claim Level Rewards
  * Point 190: Level-based rewards
  */
-exports.claimLevelRewards = functions.https.onCall(async (data, context) => {
+exports.claimLevelRewards = functions.https.onCall((0, monitoring_1.monitored)("claimLevelRewards", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -237,12 +238,12 @@ exports.claimLevelRewards = functions.https.onCall(async (data, context) => {
         console.error('Error claiming level rewards:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Track Challenge Progress
  * Point 197: Challenge tracking
  */
-exports.trackChallengeProgress = functions.https.onCall(async (data, context) => {
+exports.trackChallengeProgress = functions.https.onCall((0, monitoring_1.monitored)("trackChallengeProgress", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -287,12 +288,12 @@ exports.trackChallengeProgress = functions.https.onCall(async (data, context) =>
         console.error('Error tracking challenge progress:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Claim Challenge Reward
  * Point 198: Challenge rewards
  */
-exports.claimChallengeReward = functions.https.onCall(async (data, context) => {
+exports.claimChallengeReward = functions.https.onCall((0, monitoring_1.monitored)("claimChallengeReward", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -329,7 +330,7 @@ exports.claimChallengeReward = functions.https.onCall(async (data, context) => {
         console.error('Error claiming challenge reward:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Reset Daily Challenges
  * Point 196: Rotating daily challenges - runs at midnight UTC
@@ -337,7 +338,7 @@ exports.claimChallengeReward = functions.https.onCall(async (data, context) => {
 exports.resetDailyChallenges = functions.pubsub
     .schedule('0 0 * * *')
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("resetDailyChallenges", async (context) => {
     try {
         // Reset daily challenge progress for all users
         const batch = firestore.batch();
@@ -358,14 +359,14 @@ exports.resetDailyChallenges = functions.pubsub
         console.error('Error resetting daily challenges:', error);
         throw error;
     }
-});
+}));
 /**
  * Update Leaderboard Rankings
  * Point 191, 192: Leaderboard with seasonal resets
  */
 exports.updateLeaderboardRankings = functions.pubsub
     .schedule('0 * * * *') // Every hour
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("updateLeaderboardRankings", async (context) => {
     try {
         // Get all users sorted by totalXP
         const usersSnapshot = await firestore
@@ -387,7 +388,7 @@ exports.updateLeaderboardRankings = functions.pubsub
         console.error('Error updating leaderboard:', error);
         throw error;
     }
-});
+}));
 /**
  * Helper Functions
  */

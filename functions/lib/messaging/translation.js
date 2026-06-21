@@ -41,6 +41,7 @@ exports.getSupportedLanguages = exports.batchTranslateMessages = exports.autoTra
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const translate_1 = require("@google-cloud/translate");
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const translationClient = new translate_1.TranslationServiceClient();
 // Your Google Cloud project ID
@@ -48,7 +49,7 @@ const projectId = process.env.GCLOUD_PROJECT;
 /**
  * Translate a message to the target language
  */
-exports.translateMessage = functions.https.onCall(async (data, context) => {
+exports.translateMessage = functions.https.onCall((0, monitoring_1.monitored)("translateMessage", async (data, context) => {
     var _a, _b, _c, _d, _e, _f, _g;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -131,13 +132,13 @@ exports.translateMessage = functions.https.onCall(async (data, context) => {
         console.error('Error translating message:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Auto-translate messages based on user preferences
  */
 exports.autoTranslateMessage = functions.firestore
     .document('conversations/{conversationId}/messages/{messageId}')
-    .onCreate(async (snapshot, context) => {
+    .onCreate((0, monitoring_1.monitored)("autoTranslateMessage", async (snapshot, context) => {
     var _a, _b, _c, _d;
     const message = snapshot.data();
     // Only auto-translate text messages
@@ -194,11 +195,11 @@ exports.autoTranslateMessage = functions.firestore
         console.error('Error in auto-translate:', error);
         return null; // Don't fail message creation
     }
-});
+}));
 /**
  * Batch translate multiple messages
  */
-exports.batchTranslateMessages = functions.https.onCall(async (data, context) => {
+exports.batchTranslateMessages = functions.https.onCall((0, monitoring_1.monitored)("batchTranslateMessages", async (data, context) => {
     var _a, _b, _c, _d;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -274,11 +275,11 @@ exports.batchTranslateMessages = functions.https.onCall(async (data, context) =>
         console.error('Error in batchTranslateMessages:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get supported languages
  */
-exports.getSupportedLanguages = functions.https.onCall(async (data, context) => {
+exports.getSupportedLanguages = functions.https.onCall((0, monitoring_1.monitored)("getSupportedLanguages", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -302,5 +303,5 @@ exports.getSupportedLanguages = functions.https.onCall(async (data, context) => 
         console.error('Error getting supported languages:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=translation.js.map

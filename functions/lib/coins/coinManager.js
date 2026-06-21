@@ -41,6 +41,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.claimReward = exports.sendExpirationWarnings = exports.processExpiredCoins = exports.grantMonthlyAllowances = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 // ===== Constants =====
 const COIN_EXPIRATION_DAYS = 365;
@@ -56,7 +57,7 @@ const MONTHLY_ALLOWANCE = {
  * Verify Google Play coin purchase
  * Point 157: Verify and process coin purchases
  */
-exports.verifyGooglePlayCoinPurchase = functions.https.onCall(async (data, context) => {
+exports.verifyGooglePlayCoinPurchase = functions.https.onCall((0, monitoring_1.monitored)("verifyGooglePlayCoinPurchase", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -140,12 +141,12 @@ exports.verifyGooglePlayCoinPurchase = functions.https.onCall(async (data, conte
         console.error('Error verifying coin purchase:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Verify Apple App Store coin purchase
  * Point 157: Verify and process coin purchases
  */
-exports.verifyAppStoreCoinPurchase = functions.https.onCall(async (data, context) => {
+exports.verifyAppStoreCoinPurchase = functions.https.onCall((0, monitoring_1.monitored)("verifyAppStoreCoinPurchase", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -172,7 +173,7 @@ exports.verifyAppStoreCoinPurchase = functions.https.onCall(async (data, context
         console.error('Error verifying App Store purchase:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 // ===== Monthly Allowance =====
 /**
  * Grant monthly coin allowance to subscribers
@@ -181,7 +182,7 @@ exports.verifyAppStoreCoinPurchase = functions.https.onCall(async (data, context
 exports.grantMonthlyAllowances = functions.pubsub
     .schedule('0 0 1 * *') // First day of each month at midnight
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("grantMonthlyAllowances", async (context) => {
     const now = new Date();
     const year = now.getFullYear();
     const month = now.getMonth() + 1;
@@ -279,7 +280,7 @@ exports.grantMonthlyAllowances = functions.pubsub
         console.error('Error granting monthly allowances:', error);
         throw error;
     }
-});
+}));
 // ===== Coin Expiration =====
 /**
  * Process expired coins
@@ -288,7 +289,7 @@ exports.grantMonthlyAllowances = functions.pubsub
 exports.processExpiredCoins = functions.pubsub
     .schedule('0 2 * * *') // Daily at 2 AM UTC
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("processExpiredCoins", async (context) => {
     const now = admin.firestore.Timestamp.now();
     try {
         // Get all coin balances
@@ -356,7 +357,7 @@ exports.processExpiredCoins = functions.pubsub
         console.error('Error processing expired coins:', error);
         throw error;
     }
-});
+}));
 /**
  * Send expiration warnings
  * Notify users when coins are about to expire
@@ -364,7 +365,7 @@ exports.processExpiredCoins = functions.pubsub
 exports.sendExpirationWarnings = functions.pubsub
     .schedule('0 10 * * *') // Daily at 10 AM UTC
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("sendExpirationWarnings", async (context) => {
     const now = new Date();
     const warningThreshold = new Date();
     warningThreshold.setDate(warningThreshold.getDate() + GRACE_WARNING_DAYS);
@@ -414,7 +415,7 @@ exports.sendExpirationWarnings = functions.pubsub
         console.error('Error sending expiration warnings:', error);
         throw error;
     }
-});
+}));
 // ===== Helper Functions =====
 function getCoinAmountFromPackage(packageId) {
     const packages = {
@@ -429,7 +430,7 @@ function getCoinAmountFromPackage(packageId) {
  * Claim reward (callable function)
  * Point 160: Reward system
  */
-exports.claimReward = functions.https.onCall(async (data, context) => {
+exports.claimReward = functions.https.onCall((0, monitoring_1.monitored)("claimReward", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -523,7 +524,7 @@ exports.claimReward = functions.https.onCall(async (data, context) => {
         console.error('Error claiming reward:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 function getReasonFromRewardId(rewardId) {
     const reasonMap = {
         first_match: 'firstMatchReward',

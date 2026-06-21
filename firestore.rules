@@ -458,6 +458,16 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // FUNCTION MONITORS (Cloud Function invocation stats)
+    // ============================================================================
+    // Written by Cloud Functions via the Admin SDK (bypasses rules). The admin
+    // panel reads stats and may reset/clear a function's counters.
+    match /function_monitors/{functionName} {
+      allow read: if isAdminPanelUser();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
     // ADMIN USERS COLLECTION (admin panel authentication)
     // ============================================================================
     match /admin_users/{userId} {

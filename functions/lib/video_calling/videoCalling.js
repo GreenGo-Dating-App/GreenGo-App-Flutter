@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.startCallRecording = exports.updateCallQuality = exports.handleCallSignal = exports.endVideoCall = exports.answerVideoCall = exports.initiateVideoCall = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const storage = admin.storage();
 // Note: In production, install agora-access-token: npm install agora-access-token
@@ -48,7 +49,7 @@ const storage = admin.storage();
  * Initiate Video Call
  * Points 121-123: WebRTC, Agora SDK, Firestore signaling
  */
-exports.initiateVideoCall = functions.https.onCall(async (data, context) => {
+exports.initiateVideoCall = functions.https.onCall((0, monitoring_1.monitored)("initiateVideoCall", async (data, context) => {
     var _a, _b, _c;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -157,11 +158,11 @@ exports.initiateVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error initiating video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Answer Video Call
  */
-exports.answerVideoCall = functions.https.onCall(async (data, context) => {
+exports.answerVideoCall = functions.https.onCall((0, monitoring_1.monitored)("answerVideoCall", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -206,12 +207,12 @@ exports.answerVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error answering video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * End Video Call
  * Point 128: Call history tracking
  */
-exports.endVideoCall = functions.https.onCall(async (data, context) => {
+exports.endVideoCall = functions.https.onCall((0, monitoring_1.monitored)("endVideoCall", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -276,12 +277,12 @@ exports.endVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error ending video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Handle WebRTC Signaling
  * Point 123: Firestore signaling for offer/answer/ICE
  */
-exports.handleCallSignal = functions.https.onCall(async (data, context) => {
+exports.handleCallSignal = functions.https.onCall((0, monitoring_1.monitored)("handleCallSignal", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -328,12 +329,12 @@ exports.handleCallSignal = functions.https.onCall(async (data, context) => {
         console.error('Error handling call signal:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Update Call Quality
  * Point 125: Auto-adjust quality based on bandwidth
  */
-exports.updateCallQuality = functions.https.onCall(async (data, context) => {
+exports.updateCallQuality = functions.https.onCall((0, monitoring_1.monitored)("updateCallQuality", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -371,12 +372,12 @@ exports.updateCallQuality = functions.https.onCall(async (data, context) => {
         console.error('Error updating call quality:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Start Call Recording
  * Point 127: Recording with mutual consent
  */
-exports.startCallRecording = functions.https.onCall(async (data, context) => {
+exports.startCallRecording = functions.https.onCall((0, monitoring_1.monitored)("startCallRecording", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -436,7 +437,7 @@ exports.startCallRecording = functions.https.onCall(async (data, context) => {
         console.error('Error starting call recording:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Stop Call Recording
  * Point 127: Save recording to Cloud Storage

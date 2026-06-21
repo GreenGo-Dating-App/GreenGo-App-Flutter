@@ -48,7 +48,8 @@ const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
 const grants_1 = require("./grants");
-exports.validateCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 15 }, async (request) => {
+const monitoring_1 = require("../shared/monitoring");
+exports.validateCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 15 }, (0, monitoring_1.monitored)("validateCoupon", async (request) => {
     var _a;
     const raw = (_a = request.data) === null || _a === void 0 ? void 0 : _a.code;
     if (typeof raw !== 'string' || raw.trim().length === 0) {
@@ -73,5 +74,5 @@ exports.validateCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds:
         return { valid: false, reason: 'misconfigured' };
     (0, utils_1.logInfo)(`validateCoupon: ${code} is valid`);
     return { valid: true, grantSummary: (0, grants_1.summariseGrants)(grants) };
-});
+}));
 //# sourceMappingURL=validateCoupon.js.map

@@ -44,13 +44,14 @@ exports.calculateTrustScore = exports.verifyIDDocument = exports.verifyPhotoSelf
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const vision_1 = __importDefault(require("@google-cloud/vision"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const visionClient = new vision_1.default.ImageAnnotatorClient();
 /**
  * Start Photo Verification
  * Point 221: Real-time selfie matching profile photos
  */
-exports.startPhotoVerification = functions.https.onCall(async (data, context) => {
+exports.startPhotoVerification = functions.https.onCall((0, monitoring_1.monitored)("startPhotoVerification", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -80,12 +81,12 @@ exports.startPhotoVerification = functions.https.onCall(async (data, context) =>
         console.error('Error starting photo verification:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Verify Photo Selfie
  * Point 221 & 223: Selfie matching with liveness detection
  */
-exports.verifyPhotoSelfie = functions.https.onCall(async (data, context) => {
+exports.verifyPhotoSelfie = functions.https.onCall((0, monitoring_1.monitored)("verifyPhotoSelfie", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -165,12 +166,12 @@ exports.verifyPhotoSelfie = functions.https.onCall(async (data, context) => {
         console.error('Error verifying photo selfie:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Verify ID Document
  * Point 222: Document scanning and OCR
  */
-exports.verifyIDDocument = functions.https.onCall(async (data, context) => {
+exports.verifyIDDocument = functions.https.onCall((0, monitoring_1.monitored)("verifyIDDocument", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -235,7 +236,7 @@ exports.verifyIDDocument = functions.https.onCall(async (data, context) => {
         console.error('Error verifying ID document:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Liveness Detection
  * Point 223: Prevent photo spoofing
@@ -463,7 +464,7 @@ async function grantVerificationBadge(userId, level) {
  * Calculate Trust Score
  * Point 225: Trust score combining verification, reports, account age
  */
-exports.calculateTrustScore = functions.https.onCall(async (data, context) => {
+exports.calculateTrustScore = functions.https.onCall((0, monitoring_1.monitored)("calculateTrustScore", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -476,7 +477,7 @@ exports.calculateTrustScore = functions.https.onCall(async (data, context) => {
         console.error('Error calculating trust score:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Update Trust Score
  * Point 225: Algorithm combining multiple factors

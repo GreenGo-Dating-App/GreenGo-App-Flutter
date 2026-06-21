@@ -11011,4 +11011,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get groupShowOriginal => 'Afficher le texte original';
+
+  @override
+  String get eventsTabLiveEvents => 'Événements live';
+
+  @override
+  String get globeLayerLiveEvents => 'Événements live';
 }

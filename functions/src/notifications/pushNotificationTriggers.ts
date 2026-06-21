@@ -7,6 +7,7 @@ import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/fire
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 import { logInfo, logError } from '../shared/utils';
+import { monitored } from '../shared/monitoring';
 
 const db = admin.firestore();
 const messaging = admin.messaging();
@@ -226,7 +227,7 @@ export const onNewLikePush = onDocumentCreated(
     document: 'likes/{likeId}',
     memory: '256MiB',
   },
-  async (event) => {
+  monitored("onNewLikePush", async (event) => {
     try {
       const data = event.data?.data();
       if (!data) return;
@@ -278,7 +279,7 @@ export const onNewLikePush = onDocumentCreated(
     } catch (error) {
       logError('onNewLikePush: Error', error);
     }
-  },
+  }),
 );
 
 /**
@@ -289,7 +290,7 @@ export const onNewMatchPush = onDocumentCreated(
     document: 'matches/{matchId}',
     memory: '256MiB',
   },
-  async (event) => {
+  monitored("onNewMatchPush", async (event) => {
     try {
       const data = event.data?.data();
       if (!data) return;
@@ -350,7 +351,7 @@ export const onNewMatchPush = onDocumentCreated(
     } catch (error) {
       logError('onNewMatchPush: Error', error);
     }
-  },
+  }),
 );
 
 /**
@@ -364,7 +365,7 @@ export const onNewMessagePush = onDocumentCreated(
     document: 'conversations/{convId}/messages/{msgId}',
     memory: '256MiB',
   },
-  async (event) => {
+  monitored("onNewMessagePush", async (event) => {
     try {
       const data = event.data?.data();
       if (!data) return;
@@ -460,7 +461,7 @@ export const onNewMessagePush = onDocumentCreated(
     } catch (error) {
       logError('onNewMessagePush: Error', error);
     }
-  },
+  }),
 );
 
 /**
@@ -471,7 +472,7 @@ export const onSupportMessagePush = onDocumentCreated(
     document: 'support_messages/{msgId}',
     memory: '256MiB',
   },
-  async (event) => {
+  monitored("onSupportMessagePush", async (event) => {
     try {
       const data = event.data?.data();
       if (!data) return;
@@ -526,7 +527,7 @@ export const onSupportMessagePush = onDocumentCreated(
     } catch (error) {
       logError('onSupportMessagePush: Error', error);
     }
-  },
+  }),
 );
 
 /**
@@ -538,7 +539,7 @@ export const checkExpiringModes = onSchedule(
     memory: '256MiB',
     timeZone: 'UTC',
   },
-  async () => {
+  monitored("checkExpiringModes", async () => {
     try {
       const now = admin.firestore.Timestamp.now();
       const oneHourFromNow = admin.firestore.Timestamp.fromMillis(
@@ -591,7 +592,7 @@ export const checkExpiringModes = onSchedule(
     } catch (error) {
       logError('checkExpiringModes: Error', error);
     }
-  },
+  }),
 );
 
 /**
@@ -602,7 +603,7 @@ export const onVerificationStatusChange = onDocumentUpdated(
     document: 'profiles/{userId}',
     memory: '256MiB',
   },
-  async (event) => {
+  monitored("onVerificationStatusChange", async (event) => {
     try {
       const beforeData = event.data?.before?.data();
       const afterData = event.data?.after?.data();
@@ -653,5 +654,5 @@ export const onVerificationStatusChange = onDocumentUpdated(
     } catch (error) {
       logError('onVerificationStatusChange: Error', error);
     }
-  },
+  }),
 );

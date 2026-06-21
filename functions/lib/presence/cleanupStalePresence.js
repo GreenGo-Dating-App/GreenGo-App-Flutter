@@ -11,13 +11,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.cleanupStalePresence = void 0;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const utils_1 = require("../shared/utils");
+const monitoring_1 = require("../shared/monitoring");
 const STALE_THRESHOLD_MINUTES = 5;
 const BATCH_SIZE = 500;
 exports.cleanupStalePresence = (0, scheduler_1.onSchedule)({
     schedule: 'every 5 minutes',
     memory: '256MiB',
     timeoutSeconds: 60,
-}, async () => {
+}, (0, monitoring_1.monitored)("cleanupStalePresence", async () => {
     try {
         const cutoff = new Date(Date.now() - STALE_THRESHOLD_MINUTES * 60 * 1000);
         const staleSnapshot = await utils_1.db
@@ -43,5 +44,5 @@ exports.cleanupStalePresence = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('cleanupStalePresence: Failed to clean up stale profiles', error);
     }
-});
+}));
 //# sourceMappingURL=cleanupStalePresence.js.map

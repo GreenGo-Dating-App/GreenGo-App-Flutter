@@ -5,6 +5,7 @@
 
 import * as functions from "firebase-functions/v1";
 import * as admin from "firebase-admin";
+import { monitored } from '../shared/monitoring';
 
 const db = admin.firestore();
 
@@ -495,7 +496,7 @@ const weeklyThemes = [
  * Submit teacher application
  */
 export const submitTeacherApplication = functions.https.onCall(
-  async (data, context) => {
+  monitored("submitTeacherApplication", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -572,14 +573,14 @@ export const submitTeacherApplication = functions.https.onCall(
     });
 
     return { success: true, applicationId: applicationRef.id };
-  }
+  })
 );
 
 /**
  * Admin: Review teacher application
  */
 export const reviewTeacherApplication = functions.https.onCall(
-  async (data, context) => {
+  monitored("reviewTeacherApplication", async (data, context) => {
     // Verify admin
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -672,7 +673,7 @@ export const reviewTeacherApplication = functions.https.onCall(
     // TODO: Send notification to applicant
 
     return { success: true };
-  }
+  })
 );
 
 // ============= LESSON MANAGEMENT =============
@@ -680,7 +681,7 @@ export const reviewTeacherApplication = functions.https.onCall(
 /**
  * Teacher: Create a new lesson
  */
-export const createLesson = functions.https.onCall(async (data, context) => {
+export const createLesson = functions.https.onCall(monitored("createLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -757,12 +758,12 @@ export const createLesson = functions.https.onCall(async (data, context) => {
     });
 
   return { success: true, lessonId: lessonRef.id };
-});
+}));
 
 /**
  * Teacher: Publish a lesson
  */
-export const publishLesson = functions.https.onCall(async (data, context) => {
+export const publishLesson = functions.https.onCall(monitored("publishLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -814,14 +815,14 @@ export const publishLesson = functions.https.onCall(async (data, context) => {
     });
 
   return { success: true };
-});
+}));
 
 // ============= LESSON PURCHASE =============
 
 /**
  * Purchase a lesson with coins
  */
-export const purchaseLesson = functions.https.onCall(async (data, context) => {
+export const purchaseLesson = functions.https.onCall(monitored("purchaseLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -960,7 +961,7 @@ export const purchaseLesson = functions.https.onCall(async (data, context) => {
   await batch.commit();
 
   return { success: true, accessId: accessRef.id, coinsPaid: lesson.coinPrice };
-});
+}));
 
 // ============= PROGRESS TRACKING =============
 
@@ -968,7 +969,7 @@ export const purchaseLesson = functions.https.onCall(async (data, context) => {
  * Update lesson progress
  */
 export const updateLessonProgress = functions.https.onCall(
-  async (data, context) => {
+  monitored("updateLessonProgress", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1102,7 +1103,7 @@ export const updateLessonProgress = functions.https.onCall(
       isCompleted,
       xpEarned: sectionXp + (isCompleted ? lesson.xpReward : 0),
     };
-  }
+  })
 );
 
 // ============= ANALYTICS =============
@@ -1111,7 +1112,7 @@ export const updateLessonProgress = functions.https.onCall(
  * Admin: Get learning analytics
  */
 export const getLearningAnalytics = functions.https.onCall(
-  async (data, context) => {
+  monitored("getLearningAnalytics", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1228,14 +1229,14 @@ export const getLearningAnalytics = functions.https.onCall(
       topLearners,
       popularLessons,
     };
-  }
+  })
 );
 
 /**
  * Admin: Get user progress report
  */
 export const getUserProgressReport = functions.https.onCall(
-  async (data, context) => {
+  monitored("getUserProgressReport", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1310,14 +1311,14 @@ export const getUserProgressReport = functions.https.onCall(
       languageProgress,
       recentLessons: lessonHistory.slice(0, 20),
     };
-  }
+  })
 );
 
 /**
  * Admin: Get teacher analytics
  */
 export const getTeacherAnalytics = functions.https.onCall(
-  async (data, context) => {
+  monitored("getTeacherAnalytics", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1414,7 +1415,7 @@ export const getTeacherAnalytics = functions.https.onCall(
         recent: ratings.slice(0, 10),
       },
     };
-  }
+  })
 );
 
 // ============= ADMIN LESSON API =============
@@ -1423,7 +1424,7 @@ export const getTeacherAnalytics = functions.https.onCall(
  * Admin: Get all lessons with filtering
  */
 export const getAdminLessons = functions.https.onCall(
-  async (data, context) => {
+  monitored("getAdminLessons", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1496,7 +1497,7 @@ export const getAdminLessons = functions.https.onCall(
         byLanguage: lessonsByLanguage,
       },
     };
-  }
+  })
 );
 
 /**
@@ -1504,7 +1505,7 @@ export const getAdminLessons = functions.https.onCall(
  * Creates 52 weeks (1 year) of lessons for each language
  */
 export const seedLessons = functions.https.onCall(
-  async (data, context) => {
+  monitored("seedLessons", async (data, context) => {
     // Check if running in emulator mode - allow bypass for local development
     const isEmulator = process.env.FUNCTIONS_EMULATOR === "true";
 
@@ -1700,14 +1701,14 @@ export const seedLessons = functions.https.onCall(
       message: `Seeded lessons for ${targetLanguages.length} languages`,
       results,
     };
-  }
+  })
 );
 
 /**
  * Admin: Delete lesson
  */
 export const deleteLesson = functions.https.onCall(
-  async (data, context) => {
+  monitored("deleteLesson", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1732,14 +1733,14 @@ export const deleteLesson = functions.https.onCall(
     await db.collection("lessons").doc(lessonId).delete();
 
     return { success: true, deletedId: lessonId };
-  }
+  })
 );
 
 /**
  * Admin: Update lesson
  */
 export const updateLesson = functions.https.onCall(
-  async (data, context) => {
+  monitored("updateLesson", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1770,14 +1771,14 @@ export const updateLesson = functions.https.onCall(
     await db.collection("lessons").doc(lessonId).update(updates);
 
     return { success: true, updatedId: lessonId };
-  }
+  })
 );
 
 /**
  * Admin: Get lesson stats by language
  */
 export const getLessonStats = functions.https.onCall(
-  async (data, context) => {
+  monitored("getLessonStats", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         "unauthenticated",
@@ -1837,5 +1838,5 @@ export const getLessonStats = functions.https.onCall(
         0
       ),
     };
-  }
+  })
 );

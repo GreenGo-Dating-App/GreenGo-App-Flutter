@@ -9,6 +9,7 @@ import sharp from 'sharp';
 import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs';
+import { monitored } from '../shared/monitoring';
 
 const storage = admin.storage();
 const firestore = admin.firestore();
@@ -195,7 +196,7 @@ export const compressUploadedImage = functions.storage
 /**
  * HTTP function to manually compress an image
  */
-export const compressImage = functions.https.onCall(async (data, context) => {
+export const compressImage = functions.https.onCall(monitored("compressImage", async (data, context) => {
   // Verify authentication
   if (!context.auth) {
     throw new functions.https.HttpsError(
@@ -231,4 +232,4 @@ export const compressImage = functions.https.onCall(async (data, context) => {
     console.error('Error in compressImage:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));

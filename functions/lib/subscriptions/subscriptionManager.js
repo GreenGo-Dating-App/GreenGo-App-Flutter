@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleExpiredGracePeriods = exports.checkExpiringSubscriptions = exports.handleAppStoreWebhook = exports.handlePlayStoreWebhook = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 // Subscription tiers and pricing (Point 148)
 const SUBSCRIPTION_TIERS = {
@@ -106,7 +107,7 @@ const RENEWAL_NOTIFICATION_DAYS = 3; // Point 152
  * Google Play Store webhook handler (Point 146)
  * Handles real-time subscription notifications from Google Play
  */
-exports.handlePlayStoreWebhook = functions.https.onRequest(async (req, res) => {
+exports.handlePlayStoreWebhook = functions.https.onRequest((0, monitoring_1.monitored)("handlePlayStoreWebhook", async (req, res) => {
     try {
         const message = req.body.message;
         if (!message || !message.data) {
@@ -171,12 +172,12 @@ exports.handlePlayStoreWebhook = functions.https.onRequest(async (req, res) => {
         console.error('Error processing Play Store webhook:', error);
         res.status(500).send('Internal server error');
     }
-});
+}));
 /**
  * Apple App Store Server Notification handler (Point 147)
  * Handles real-time subscription notifications from App Store
  */
-exports.handleAppStoreWebhook = functions.https.onRequest(async (req, res) => {
+exports.handleAppStoreWebhook = functions.https.onRequest((0, monitoring_1.monitored)("handleAppStoreWebhook", async (req, res) => {
     var _a;
     try {
         const { signedPayload } = req.body;
@@ -228,7 +229,7 @@ exports.handleAppStoreWebhook = functions.https.onRequest(async (req, res) => {
         console.error('Error processing App Store webhook:', error);
         res.status(500).send('Internal server error');
     }
-});
+}));
 /**
  * Handle subscription recovered from grace period
  */
@@ -487,7 +488,7 @@ async function downgradeToBasic(userId) {
 exports.checkExpiringSubscriptions = functions.pubsub
     .schedule('every day 09:00')
     .timeZone('UTC')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("checkExpiringSubscriptions", async (context) => {
     console.log('Checking for expiring subscriptions...');
     const threeDaysFromNow = new Date();
     threeDaysFromNow.setDate(threeDaysFromNow.getDate() + RENEWAL_NOTIFICATION_DAYS);
@@ -519,14 +520,14 @@ exports.checkExpiringSubscriptions = functions.pubsub
         success: true,
         notificationsSent: expiringSubscriptionsSnapshot.size,
     };
-});
+}));
 /**
  * Scheduled function to handle expired grace periods
  * Point 153: Grace period expiration
  */
 exports.handleExpiredGracePeriods = functions.pubsub
     .schedule('every 1 hours')
-    .onRun(async (context) => {
+    .onRun((0, monitoring_1.monitored)("handleExpiredGracePeriods", async (context) => {
     console.log('Checking for expired grace periods...');
     const now = new Date();
     const expiredGracePeriodsSnapshot = await firestore
@@ -542,5 +543,5 @@ exports.handleExpiredGracePeriods = functions.pubsub
         success: true,
         gracePeriadsExpired: expiredGracePeriodsSnapshot.size,
     };
-});
+}));
 //# sourceMappingURL=subscriptionManager.js.map

@@ -48,6 +48,7 @@ const os = __importStar(require("os"));
 const fs = __importStar(require("fs"));
 const ffmpeg = __importStar(require("fluent-ffmpeg"));
 const sharp_1 = __importDefault(require("sharp"));
+const monitoring_1 = require("../shared/monitoring");
 const storage = admin.storage();
 const firestore = admin.firestore();
 // Maximum video duration in seconds
@@ -230,7 +231,7 @@ function generateThumbnail(inputPath, outputPath, timestamp) {
  */
 exports.generateVideoThumbnail = functions
     .runWith({ memory: '2GB', timeoutSeconds: 300 })
-    .https.onCall(async (data, context) => {
+    .https.onCall((0, monitoring_1.monitored)("generateVideoThumbnail", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -254,5 +255,5 @@ exports.generateVideoThumbnail = functions
         console.error('Error in generateVideoThumbnail:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=videoProcessing.js.map

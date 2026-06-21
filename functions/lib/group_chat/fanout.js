@@ -56,6 +56,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onGroupMessageCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const INBOX_COL = 'user_group_inbox';
@@ -94,7 +95,7 @@ async function senderDisplayName(senderId) {
         return 'Someone';
     }
 }
-exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}/messages/{messageId}', async (event) => {
+exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}/messages/{messageId}', (0, monitoring_1.monitored)("onGroupMessageCreated", async (event) => {
     var _a, _b, _c, _d;
     const snap = event.data;
     if (!snap)
@@ -236,5 +237,5 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{grou
             console.error('Group FCM multicast failed', e);
         }
     }
-});
+}));
 //# sourceMappingURL=fanout.js.map

@@ -47,6 +47,7 @@ const sharp_1 = __importDefault(require("sharp"));
 const path = __importStar(require("path"));
 const os = __importStar(require("os"));
 const fs = __importStar(require("fs"));
+const monitoring_1 = require("../shared/monitoring");
 const storage = admin.storage();
 const firestore = admin.firestore();
 // Maximum file size in bytes (2MB)
@@ -208,7 +209,7 @@ exports.compressUploadedImage = functions.storage
 /**
  * HTTP function to manually compress an image
  */
-exports.compressImage = functions.https.onCall(async (data, context) => {
+exports.compressImage = functions.https.onCall((0, monitoring_1.monitored)("compressImage", async (data, context) => {
     // Verify authentication
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -236,5 +237,5 @@ exports.compressImage = functions.https.onCall(async (data, context) => {
         console.error('Error in compressImage:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=imageCompression.js.map

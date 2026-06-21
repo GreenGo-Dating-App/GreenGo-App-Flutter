@@ -9,6 +9,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { db, chunk, logInfo, logError } from '../shared/utils';
+import { monitored } from '../shared/monitoring';
 
 const STALE_THRESHOLD_MINUTES = 5;
 const BATCH_SIZE = 500;
@@ -19,7 +20,7 @@ export const cleanupStalePresence = onSchedule(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async () => {
+  monitored("cleanupStalePresence", async () => {
     try {
       const cutoff = new Date(Date.now() - STALE_THRESHOLD_MINUTES * 60 * 1000);
 
@@ -49,5 +50,5 @@ export const cleanupStalePresence = onSchedule(
     } catch (error) {
       logError('cleanupStalePresence: Failed to clean up stale profiles', error);
     }
-  },
+  }),
 );

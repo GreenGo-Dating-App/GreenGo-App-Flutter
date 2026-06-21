@@ -7,6 +7,7 @@ import { onCall } from 'firebase-functions/v2/https';
 import { verifyAdminAuth, handleError, logInfo, logError, db, FieldValue } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
+import { monitored } from '../shared/monitoring';
 
 // MVP Release Dates
 const PREMIUM_ACCESS_DATE = new Date('2026-03-01T00:00:00Z'); // March 1st, 2026
@@ -294,7 +295,7 @@ export const approveUser = onCall<ApproveUserRequest>(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("approveUser", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { userId, notify = true } = request.data;
@@ -365,7 +366,7 @@ export const approveUser = onCall<ApproveUserRequest>(
       logError('Error approving user:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 2. Reject User
@@ -374,7 +375,7 @@ export const rejectUser = onCall<RejectUserRequest>(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("rejectUser", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { userId, reason, notify = true } = request.data;
@@ -437,7 +438,7 @@ export const rejectUser = onCall<RejectUserRequest>(
       logError('Error rejecting user:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 3. Update User Tier
@@ -446,7 +447,7 @@ export const updateUserTier = onCall<UpdateUserTierRequest>(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("updateUserTier", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { userId, tier } = request.data;
@@ -477,7 +478,7 @@ export const updateUserTier = onCall<UpdateUserTierRequest>(
       logError('Error updating user tier:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 4. Get Pending Users
@@ -486,7 +487,7 @@ export const getPendingUsers = onCall<GetPendingUsersRequest>(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("getPendingUsers", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { limit = 50, startAfter } = request.data;
@@ -526,7 +527,7 @@ export const getPendingUsers = onCall<GetPendingUsersRequest>(
       logError('Error fetching pending users:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 5. Bulk Approve Users
@@ -535,7 +536,7 @@ export const bulkApproveUsers = onCall<{ userIds: string[]; notify?: boolean }>(
     memory: '512MiB',
     timeoutSeconds: 300,
   },
-  async (request) => {
+  monitored("bulkApproveUsers", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { userIds, notify = true } = request.data;
@@ -602,7 +603,7 @@ export const bulkApproveUsers = onCall<{ userIds: string[]; notify?: boolean }>(
       logError('Error bulk approving users:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // ========== BROADCAST NOTIFICATION FUNCTIONS ==========
@@ -613,7 +614,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
     memory: '1GiB',
     timeoutSeconds: 540,
   },
-  async (request) => {
+  monitored("sendBroadcastNotification", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const {
@@ -816,7 +817,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
       logError('Error sending broadcast notification:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 7. Send Notification to Single User
@@ -825,7 +826,7 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("sendNotificationToUser", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
       const { userId, title, body, data } = request.data;
@@ -874,7 +875,7 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
       logError('Error sending notification to user:', error);
       throw handleError(error);
     }
-  }
+  })
 );
 
 // 8. Get MVP Access Stats
@@ -883,7 +884,7 @@ export const getMvpAccessStats = onCall(
     memory: '256MiB',
     timeoutSeconds: 60,
   },
-  async (request) => {
+  monitored("getMvpAccessStats", async (request) => {
     try {
       await verifyAdminAuth(request.auth);
 
@@ -937,5 +938,5 @@ export const getMvpAccessStats = onCall(
       logError('Error fetching MVP access stats:', error);
       throw handleError(error);
     }
-  }
+  })
 );

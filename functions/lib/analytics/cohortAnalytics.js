@@ -41,11 +41,12 @@ exports.getCohortAnalysis = void 0;
 exports.updateUserCohortData = updateUserCohortData;
 const functions = __importStar(require("firebase-functions/v1"));
 const bigQuerySetup_1 = require("./bigQuerySetup");
+const monitoring_1 = require("../shared/monitoring");
 /**
  * Get Cohort Analysis
  * Point 168: Complete cohort analysis
  */
-exports.getCohortAnalysis = functions.https.onCall(async (data, context) => {
+exports.getCohortAnalysis = functions.https.onCall((0, monitoring_1.monitored)("getCohortAnalysis", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -72,7 +73,7 @@ exports.getCohortAnalysis = functions.https.onCall(async (data, context) => {
         console.error('Error fetching cohort analysis:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Cohort Data
  */

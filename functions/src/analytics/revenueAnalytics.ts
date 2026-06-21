@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import { bigquery, DATASET_ID } from './bigQuerySetup';
+import { monitored } from '../shared/monitoring';
 
 /**
  * Revenue Dashboard Data Interface
@@ -76,7 +77,7 @@ export interface RevenueSummary {
  * Point 167: Complete revenue dashboard
  */
 export const getRevenueDashboard = functions.https.onCall(
-  async (data, context) => {
+  monitored("getRevenueDashboard", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -121,7 +122,7 @@ export const getRevenueDashboard = functions.https.onCall(
       console.error('Error fetching revenue dashboard:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );
 
 /**
@@ -425,7 +426,7 @@ async function getRevenueSummary(): Promise<RevenueSummary> {
  * Export revenue data to CSV
  */
 export const exportRevenueData = functions.https.onCall(
-  async (data, context) => {
+  monitored("exportRevenueData", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
         'unauthenticated',
@@ -475,5 +476,5 @@ export const exportRevenueData = functions.https.onCall(
       console.error('Error exporting revenue data:', error);
       throw new functions.https.HttpsError('internal', error.message);
     }
-  }
+  })
 );

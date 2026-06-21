@@ -48,6 +48,7 @@ const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -180,11 +181,11 @@ async function runTiqets(key) {
     console.log(`ingestTiqets: upserted ${all.length} attractions across ${countries.length} countries.`);
     return all.length;
 }
-exports.ingestTiqetsAttractions = (0, scheduler_1.onSchedule)({ schedule: 'every 12 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] }, async () => {
+exports.ingestTiqetsAttractions = (0, scheduler_1.onSchedule)({ schedule: 'every 12 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] }, (0, monitoring_1.monitored)("ingestTiqetsAttractions", async () => {
     await runTiqets(TIQETS_API_KEY.value());
-});
+}));
 // Manual trigger: GET ?token=<TIQETS_API_KEY> to pull attractions now.
-exports.runIngestTiqetsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] }, async (req, res) => {
+exports.runIngestTiqetsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] }, (0, monitoring_1.monitored)("runIngestTiqetsNow", async (req, res) => {
     const key = TIQETS_API_KEY.value();
     if (!key || req.query.token !== key) {
         res.status(403).send('Forbidden');
@@ -192,5 +193,5 @@ exports.runIngestTiqetsNow = (0, https_1.onRequest)({ timeoutSeconds: 540, memor
     }
     const count = await runTiqets(key);
     res.status(200).json({ ok: true, upserted: count });
-});
+}));
 //# sourceMappingURL=tiqets.js.map

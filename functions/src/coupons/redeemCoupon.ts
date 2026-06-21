@@ -19,6 +19,7 @@ import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
 import { TierName, computeMembershipExtension } from '../shared/grants';
 import { Grant, effectiveGrants, summariseGrants } from './grants';
+import { monitored } from '../shared/monitoring';
 
 const COIN_EXPIRATION_DAYS = 365;
 
@@ -40,7 +41,7 @@ interface RedeemCouponResponse {
 
 export const redeemCoupon = onCall<RedeemCouponRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
-  async (request: CallableRequest<RedeemCouponRequest>): Promise<RedeemCouponResponse> => {
+  monitored("redeemCoupon", async (request: CallableRequest<RedeemCouponRequest>): Promise<RedeemCouponResponse> => {
     if (!request.auth) {
       throw new HttpsError('unauthenticated', 'You must be signed in to redeem a coupon');
     }
@@ -275,5 +276,5 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
       logError(`redeemCoupon failed uid=${uid}`, err);
       throw new HttpsError('internal', 'Failed to redeem coupon');
     }
-  },
+  }),
 );

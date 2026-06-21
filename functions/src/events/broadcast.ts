@@ -9,6 +9,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -16,7 +17,7 @@ const FCM_CHUNK = 500;
 
 export const onEventBroadcastCreated = onDocumentCreated(
   'events/{eventId}/messages/{messageId}',
-  async (event) => {
+  monitored("onEventBroadcastCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;
     const msg = snap.data() as Record<string, unknown>;
@@ -69,7 +70,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
         console.error('Event broadcast FCM failed', e);
       }
     }
-  }
+  })
 );
 
 /// Regular event-chat messages → push to all attendees (except sender/muted),
@@ -77,7 +78,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
 /// the app is closed.
 export const onEventMessageCreated = onDocumentCreated(
   'events/{eventId}/messages/{messageId}',
-  async (event) => {
+  monitored("onEventMessageCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;
     const msg = snap.data() as Record<string, unknown>;
@@ -145,5 +146,5 @@ export const onEventMessageCreated = onDocumentCreated(
         console.error('Event message FCM failed', e);
       }
     }
-  }
+  })
 );

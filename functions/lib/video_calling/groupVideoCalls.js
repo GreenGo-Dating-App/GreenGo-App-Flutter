@@ -40,12 +40,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.closeBreakoutRoom = exports.joinBreakoutRoom = exports.createBreakoutRoom = exports.changeGroupCallLayout = exports.manageGroupParticipant = exports.leaveGroupVideoCall = exports.joinGroupVideoCall = exports.createGroupVideoCall = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Create Group Video Call
  * Point 141: Up to 6 participants
  */
-exports.createGroupVideoCall = functions.https.onCall(async (data, context) => {
+exports.createGroupVideoCall = functions.https.onCall((0, monitoring_1.monitored)("createGroupVideoCall", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -123,12 +124,12 @@ exports.createGroupVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error creating group video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Join Group Video Call
  * Point 142: Participant management
  */
-exports.joinGroupVideoCall = functions.https.onCall(async (data, context) => {
+exports.joinGroupVideoCall = functions.https.onCall((0, monitoring_1.monitored)("joinGroupVideoCall", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -173,11 +174,11 @@ exports.joinGroupVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error joining group video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Leave Group Video Call
  */
-exports.leaveGroupVideoCall = functions.https.onCall(async (data, context) => {
+exports.leaveGroupVideoCall = functions.https.onCall((0, monitoring_1.monitored)("leaveGroupVideoCall", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -228,12 +229,12 @@ exports.leaveGroupVideoCall = functions.https.onCall(async (data, context) => {
         console.error('Error leaving group video call:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Manage Group Participant
  * Point 143: Mute, remove, promote to co-host
  */
-exports.manageGroupParticipant = functions.https.onCall(async (data, context) => {
+exports.manageGroupParticipant = functions.https.onCall((0, monitoring_1.monitored)("manageGroupParticipant", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -293,12 +294,12 @@ exports.manageGroupParticipant = functions.https.onCall(async (data, context) =>
         console.error('Error managing group participant:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Change Group Call Layout
  * Point 144: Grid, speaker, presentation modes
  */
-exports.changeGroupCallLayout = functions.https.onCall(async (data, context) => {
+exports.changeGroupCallLayout = functions.https.onCall((0, monitoring_1.monitored)("changeGroupCallLayout", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -333,12 +334,12 @@ exports.changeGroupCallLayout = functions.https.onCall(async (data, context) => 
         console.error('Error changing group call layout:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Create Breakout Room
  * Point 145: Private breakout rooms
  */
-exports.createBreakoutRoom = functions.https.onCall(async (data, context) => {
+exports.createBreakoutRoom = functions.https.onCall((0, monitoring_1.monitored)("createBreakoutRoom", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -395,12 +396,12 @@ exports.createBreakoutRoom = functions.https.onCall(async (data, context) => {
         console.error('Error creating breakout room:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Join Breakout Room
  * Point 145: Move to breakout room
  */
-exports.joinBreakoutRoom = functions.https.onCall(async (data, context) => {
+exports.joinBreakoutRoom = functions.https.onCall((0, monitoring_1.monitored)("joinBreakoutRoom", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -440,12 +441,12 @@ exports.joinBreakoutRoom = functions.https.onCall(async (data, context) => {
         console.error('Error joining breakout room:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Close Breakout Room
  * Point 145: Return participants to main call
  */
-exports.closeBreakoutRoom = functions.https.onCall(async (data, context) => {
+exports.closeBreakoutRoom = functions.https.onCall((0, monitoring_1.monitored)("closeBreakoutRoom", async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
@@ -485,7 +486,7 @@ exports.closeBreakoutRoom = functions.https.onCall(async (data, context) => {
         console.error('Error closing breakout room:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Helper Functions
  */

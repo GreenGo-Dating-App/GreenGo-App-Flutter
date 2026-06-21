@@ -13,6 +13,7 @@ import { onCall, CallableRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, logInfo } from '../shared/utils';
 import { effectiveGrants, summariseGrants } from './grants';
+import { monitored } from '../shared/monitoring';
 
 interface ValidateCouponRequest {
   code: string;
@@ -26,7 +27,7 @@ interface ValidateCouponResponse {
 
 export const validateCoupon = onCall<ValidateCouponRequest>(
   { memory: '512MiB', timeoutSeconds: 15 },
-  async (request: CallableRequest<ValidateCouponRequest>): Promise<ValidateCouponResponse> => {
+  monitored("validateCoupon", async (request: CallableRequest<ValidateCouponRequest>): Promise<ValidateCouponResponse> => {
     const raw = request.data?.code;
     if (typeof raw !== 'string' || raw.trim().length === 0) {
       return { valid: false, reason: 'empty' };
@@ -52,5 +53,5 @@ export const validateCoupon = onCall<ValidateCouponRequest>(
 
     logInfo(`validateCoupon: ${code} is valid`);
     return { valid: true, grantSummary: summariseGrants(grants) };
-  },
+  }),
 );

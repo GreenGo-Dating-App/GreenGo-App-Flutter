@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
 const storage = admin.storage();
@@ -13,7 +14,7 @@ const storage = admin.storage();
  * Enable Virtual Background
  * Point 132: ML Kit image segmentation
  */
-export const enableVirtualBackground = functions.https.onCall(async (data, context) => {
+export const enableVirtualBackground = functions.https.onCall(monitored("enableVirtualBackground", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -61,13 +62,13 @@ export const enableVirtualBackground = functions.https.onCall(async (data, conte
     console.error('Error enabling virtual background:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Apply AR Filter
  * Point 133: Face filters (beauty mode, face effects)
  */
-export const applyARFilter = functions.https.onCall(async (data, context) => {
+export const applyARFilter = functions.https.onCall(monitored("applyARFilter", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -122,13 +123,13 @@ export const applyARFilter = functions.https.onCall(async (data, context) => {
     console.error('Error applying AR filter:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Toggle Beauty Mode
  * Point 133: Skin smoothing and enhancement
  */
-export const toggleBeautyMode = functions.https.onCall(async (data, context) => {
+export const toggleBeautyMode = functions.https.onCall(monitored("toggleBeautyMode", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -173,13 +174,13 @@ export const toggleBeautyMode = functions.https.onCall(async (data, context) => 
     console.error('Error toggling beauty mode:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Enable Picture-in-Picture Mode
  * Point 134: PiP for multitasking
  */
-export const enablePictureInPicture = functions.https.onCall(async (data, context) => {
+export const enablePictureInPicture = functions.https.onCall(monitored("enablePictureInPicture", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -215,13 +216,13 @@ export const enablePictureInPicture = functions.https.onCall(async (data, contex
     console.error('Error enabling picture-in-picture:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Start Screen Sharing
  * Point 135: Premium screen sharing
  */
-export const startScreenSharing = functions.https.onCall(async (data, context) => {
+export const startScreenSharing = functions.https.onCall(monitored("startScreenSharing", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -272,13 +273,13 @@ export const startScreenSharing = functions.https.onCall(async (data, context) =
     console.error('Error starting screen sharing:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Stop Screen Sharing
  * Point 135: End screen sharing
  */
-export const stopScreenSharing = functions.https.onCall(async (data, context) => {
+export const stopScreenSharing = functions.https.onCall(monitored("stopScreenSharing", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -316,13 +317,13 @@ export const stopScreenSharing = functions.https.onCall(async (data, context) =>
     console.error('Error stopping screen sharing:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Toggle Noise Suppression
  * Point 136: AI noise cancellation
  */
-export const toggleNoiseSuppression = functions.https.onCall(async (data, context) => {
+export const toggleNoiseSuppression = functions.https.onCall(monitored("toggleNoiseSuppression", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -358,13 +359,13 @@ export const toggleNoiseSuppression = functions.https.onCall(async (data, contex
     console.error('Error toggling noise suppression:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Toggle Echo Cancellation
  * Point 136: Echo cancellation
  */
-export const toggleEchoCancellation = functions.https.onCall(async (data, context) => {
+export const toggleEchoCancellation = functions.https.onCall(monitored("toggleEchoCancellation", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -400,13 +401,13 @@ export const toggleEchoCancellation = functions.https.onCall(async (data, contex
     console.error('Error toggling echo cancellation:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Send In-Call Reaction
  * Point 137: Emoji reactions during calls
  */
-export const sendInCallReaction = functions.https.onCall(async (data, context) => {
+export const sendInCallReaction = functions.https.onCall(monitored("sendInCallReaction", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -455,13 +456,13 @@ export const sendInCallReaction = functions.https.onCall(async (data, context) =
     console.error('Error sending in-call reaction:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Upload Custom Virtual Background
  * Point 132: Custom background images
  */
-export const uploadCustomBackground = functions.https.onCall(async (data, context) => {
+export const uploadCustomBackground = functions.https.onCall(monitored("uploadCustomBackground", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -529,13 +530,13 @@ export const uploadCustomBackground = functions.https.onCall(async (data, contex
     console.error('Error uploading custom background:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Call History
  * Point 128: Retrieve user's call history
  */
-export const getCallHistory = functions.https.onCall(async (data, context) => {
+export const getCallHistory = functions.https.onCall(monitored("getCallHistory", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -569,13 +570,13 @@ export const getCallHistory = functions.https.onCall(async (data, context) => {
     console.error('Error getting call history:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Get Call Statistics
  * Point 130: User call statistics dashboard
  */
-export const getCallStatistics = functions.https.onCall(async (data, context) => {
+export const getCallStatistics = functions.https.onCall(monitored("getCallStatistics", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -615,7 +616,7 @@ export const getCallStatistics = functions.https.onCall(async (data, context) =>
     console.error('Error getting call statistics:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
-});
+}));
 
 /**
  * Cleanup Expired Call Reactions
@@ -623,7 +624,7 @@ export const getCallStatistics = functions.https.onCall(async (data, context) =>
  */
 export const cleanupExpiredReactions = functions.pubsub
   .schedule('every 5 minutes')
-  .onRun(async (context) => {
+  .onRun(monitored("cleanupExpiredReactions", async (context) => {
     try {
       const now = admin.firestore.Timestamp.now();
 
@@ -654,4 +655,4 @@ export const cleanupExpiredReactions = functions.pubsub
     } catch (error) {
       console.error('Error cleaning up expired reactions:', error);
     }
-  });
+  }));

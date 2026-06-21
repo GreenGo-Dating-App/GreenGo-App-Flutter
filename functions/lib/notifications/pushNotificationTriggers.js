@@ -42,6 +42,7 @@ const firestore_1 = require("firebase-functions/v2/firestore");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
+const monitoring_1 = require("../shared/monitoring");
 const db = admin.firestore();
 const messaging = admin.messaging();
 // Maps notification "type" to the flat boolean field used by the Flutter app.
@@ -197,7 +198,7 @@ async function isBlocked(userA, userB) {
 exports.onNewLikePush = (0, firestore_1.onDocumentCreated)({
     document: 'likes/{likeId}',
     memory: '256MiB',
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onNewLikePush", async (event) => {
     var _a, _b, _c;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -234,14 +235,14 @@ exports.onNewLikePush = (0, firestore_1.onDocumentCreated)({
     catch (error) {
         (0, utils_1.logError)('onNewLikePush: Error', error);
     }
-});
+}));
 /**
  * onNewMatchPush - Trigger on matches/{matchId} create
  */
 exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
     document: 'matches/{matchId}',
     memory: '256MiB',
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onNewMatchPush", async (event) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -284,7 +285,7 @@ exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
     catch (error) {
         (0, utils_1.logError)('onNewMatchPush: Error', error);
     }
-});
+}));
 /**
  * onNewMessagePush - Trigger on conversations/{convId}/messages/{msgId} create
  * Sends "{senderName}" with message preview to recipient(s).
@@ -294,7 +295,7 @@ exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
 exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'conversations/{convId}/messages/{msgId}',
     memory: '256MiB',
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onNewMessagePush", async (event) => {
     var _a, _b;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -377,14 +378,14 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
     catch (error) {
         (0, utils_1.logError)('onNewMessagePush: Error', error);
     }
-});
+}));
 /**
  * onSupportMessagePush - Trigger on support_messages/{msgId} create
  */
 exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'support_messages/{msgId}',
     memory: '256MiB',
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onSupportMessagePush", async (event) => {
     var _a;
     try {
         const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
@@ -422,7 +423,7 @@ exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
     catch (error) {
         (0, utils_1.logError)('onSupportMessagePush: Error', error);
     }
-});
+}));
 /**
  * checkExpiringModes - Scheduled every 15 minutes
  */
@@ -430,7 +431,7 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
     schedule: 'every 15 minutes',
     memory: '256MiB',
     timeZone: 'UTC',
-}, async () => {
+}, (0, monitoring_1.monitored)("checkExpiringModes", async () => {
     try {
         const now = admin.firestore.Timestamp.now();
         const oneHourFromNow = admin.firestore.Timestamp.fromMillis(now.toMillis() + 60 * 60 * 1000);
@@ -466,14 +467,14 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
     catch (error) {
         (0, utils_1.logError)('checkExpiringModes: Error', error);
     }
-});
+}));
 /**
  * onVerificationStatusChange - Trigger on profiles/{userId} update
  */
 exports.onVerificationStatusChange = (0, firestore_1.onDocumentUpdated)({
     document: 'profiles/{userId}',
     memory: '256MiB',
-}, async (event) => {
+}, (0, monitoring_1.monitored)("onVerificationStatusChange", async (event) => {
     var _a, _b, _c, _d;
     try {
         const beforeData = (_b = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before) === null || _b === void 0 ? void 0 : _b.data();
@@ -505,5 +506,5 @@ exports.onVerificationStatusChange = (0, firestore_1.onDocumentUpdated)({
     catch (error) {
         (0, utils_1.logError)('onVerificationStatusChange: Error', error);
     }
-});
+}));
 //# sourceMappingURL=pushNotificationTriggers.js.map

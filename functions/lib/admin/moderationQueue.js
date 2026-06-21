@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getModerationStatistics = exports.executeBulkModeration = exports.takeModerationAction = exports.assignModerationItem = exports.getModerationReviewItem = exports.getModerationQueue = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 /**
  * Verify Moderator Permission Helper
@@ -69,7 +70,7 @@ async function logModerationAction(moderatorId, queueId, action, notes) {
  * Get Moderation Queue
  * Point 246: Fetch pending reports for review
  */
-exports.getModerationQueue = functions.https.onCall(async (data, context) => {
+exports.getModerationQueue = functions.https.onCall((0, monitoring_1.monitored)("getModerationQueue", async (data, context) => {
     await verifyModeratorPermission(context);
     const { status = 'pending', priority = null, limit = 50, offset = 0, assignedToMe = false, } = data;
     try {
@@ -119,12 +120,12 @@ exports.getModerationQueue = functions.https.onCall(async (data, context) => {
         console.error('Error getting moderation queue:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Moderation Review Item
  * Point 247: Detailed review interface with context
  */
-exports.getModerationReviewItem = functions.https.onCall(async (data, context) => {
+exports.getModerationReviewItem = functions.https.onCall((0, monitoring_1.monitored)("getModerationReviewItem", async (data, context) => {
     var _a;
     await verifyModeratorPermission(context);
     const { queueId } = data;
@@ -239,7 +240,7 @@ exports.getModerationReviewItem = functions.https.onCall(async (data, context) =
         console.error('Error getting moderation review item:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Generate AI Suggested Actions
  */
@@ -305,7 +306,7 @@ function generateSuggestedActions(queueData, userContext, relatedReports) {
  * Assign Moderation Item
  * Assign queue item to moderator
  */
-exports.assignModerationItem = functions.https.onCall(async (data, context) => {
+exports.assignModerationItem = functions.https.onCall((0, monitoring_1.monitored)("assignModerationItem", async (data, context) => {
     await verifyModeratorPermission(context);
     const { queueId } = data;
     const moderatorId = context.auth.uid;
@@ -321,12 +322,12 @@ exports.assignModerationItem = functions.https.onCall(async (data, context) => {
         console.error('Error assigning moderation item:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Take Moderation Action
  * Point 248: Execute moderation decision
  */
-exports.takeModerationAction = functions.https.onCall(async (data, context) => {
+exports.takeModerationAction = functions.https.onCall((0, monitoring_1.monitored)("takeModerationAction", async (data, context) => {
     await verifyModeratorPermission(context);
     const { queueId, action, notes = null, parameters = {} } = data;
     const moderatorId = context.auth.uid;
@@ -424,7 +425,7 @@ exports.takeModerationAction = functions.https.onCall(async (data, context) => {
         console.error('Error taking moderation action:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Helper: Approve Content
  */
@@ -523,7 +524,7 @@ async function requireVerification(userId) {
  * Bulk Moderation Action
  * Point 249: Process multiple items at once
  */
-exports.executeBulkModeration = functions.https.onCall(async (data, context) => {
+exports.executeBulkModeration = functions.https.onCall((0, monitoring_1.monitored)("executeBulkModeration", async (data, context) => {
     await verifyModeratorPermission(context);
     const { queueIds, action, notes = null } = data;
     const moderatorId = context.auth.uid;
@@ -580,12 +581,12 @@ exports.executeBulkModeration = functions.https.onCall(async (data, context) => 
         console.error('Error executing bulk moderation:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 /**
  * Get Moderation Statistics
  * Point 250: Dashboard metrics for moderation
  */
-exports.getModerationStatistics = functions.https.onCall(async (data, context) => {
+exports.getModerationStatistics = functions.https.onCall((0, monitoring_1.monitored)("getModerationStatistics", async (data, context) => {
     await verifyModeratorPermission(context);
     try {
         const now = new Date();
@@ -663,5 +664,5 @@ exports.getModerationStatistics = functions.https.onCall(async (data, context) =
         console.error('Error getting moderation statistics:', error);
         throw new functions.https.HttpsError('internal', error.message);
     }
-});
+}));
 //# sourceMappingURL=moderationQueue.js.map
