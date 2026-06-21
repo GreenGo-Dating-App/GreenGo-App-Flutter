@@ -43,6 +43,32 @@ class ExternalEventsDataSource {
     }
   }
 
+  /// "Popular" experiences: the top [limit] by review count among those rated
+  /// above 4.5 stars. Ordered by reviewCount (single-field index); the 4.5
+  /// threshold is applied client-side to avoid a composite index.
+  Future<List<ExternalEvent>> getPopularExperiences({int limit = 20}) async {
+    try {
+      final snap = await _firestore
+          .collection('external_events')
+          .orderBy('reviewCount', descending: true)
+          .limit(limit * 4)
+          .get();
+      final items = snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where((e) => (e.rating ?? 0) > 4.5)
+          .take(limit)
+          .toList();
+      if (items.isEmpty) {
+        return ExternalEvent.samples
+            .where((e) => (e.rating ?? 0) > 4.5)
+            .toList();
+      }
+      return items;
+    } catch (_) {
+      return ExternalEvent.samples.where((e) => (e.rating ?? 0) > 4.5).toList();
+    }
+  }
+
   Future<List<ExternalEvent>> getExperiences({
     String? country,
     int limit = 60,
