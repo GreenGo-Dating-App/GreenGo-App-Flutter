@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
@@ -277,52 +279,159 @@ class _GroupChatViewState extends State<_GroupChatView> {
     return ref.getDownloadURL();
   }
 
-  Future<void> _sendMedia(BuildContext context) async {
+  /// Attachment menu — same layout/options as the 1:1 exchange chat.
+  void _showAttachmentOptions(BuildContext context) {
+    final parentContext = context;
     final l10n = AppLocalizations.of(context)!;
-    final bloc = context.read<GroupChatBloc>();
-    final messenger = ScaffoldMessenger.of(context);
-    final choice = await showModalBottomSheet<String>(
+    showModalBottomSheet<void>(
       context: context,
-      builder: (ctx) => SafeArea(
-        child: Wrap(
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetCtx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            ListTile(
-              leading: const Icon(Icons.photo),
-              title: Text(l10n.chatPhoto),
-              onTap: () => Navigator.pop(ctx, 'photo'),
+            const SizedBox(height: 8),
+            Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: AppColors.textTertiary,
+                borderRadius: BorderRadius.circular(2),
+              ),
             ),
-            ListTile(
-              leading: const Icon(Icons.videocam),
-              title: Text(l10n.chatVideo),
-              onTap: () => Navigator.pop(ctx, 'video'),
+            const SizedBox(height: 20),
+            Text(
+              l10n.chatSendAttachment,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.photo_library,
+                  label: l10n.chatAttachGallery,
+                  color: AppColors.richGold,
+                  onTap: () => _sendImage(parentContext, ImageSource.gallery),
+                ),
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.camera_alt,
+                  label: l10n.chatAttachCamera,
+                  color: Colors.blue,
+                  onTap: () => _sendImage(parentContext, ImageSource.camera),
+                ),
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.location_on,
+                  label: l10n.chatShareLocation,
+                  color: Colors.green,
+                  onTap: () => _sendLocation(parentContext),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.videocam,
+                  label: l10n.chatAttachVideo,
+                  color: Colors.purple,
+                  onTap: () => _sendVideo(parentContext, ImageSource.gallery),
+                ),
+                _attachmentOption(
+                  sheetCtx,
+                  icon: Icons.video_call,
+                  label: l10n.chatAttachRecord,
+                  color: Colors.red,
+                  onTap: () => _sendVideo(parentContext, ImageSource.camera),
+                ),
+                const SizedBox(width: 60),
+              ],
+            ),
+            const SizedBox(height: 24),
           ],
         ),
       ),
     );
-    if (choice == null) return;
-    final picker = ImagePicker();
+  }
+
+  Widget _attachmentOption(
+    BuildContext context, {
+    required IconData icon,
+    required String label,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.pop(context);
+        onTap();
+      },
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.1),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(icon, color: color, size: 28),
+          ),
+          const SizedBox(height: 8),
+          Text(label,
+              style: const TextStyle(
+                  color: AppColors.textSecondary, fontSize: 12)),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _sendImage(BuildContext context, ImageSource source) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
     try {
-      if (choice == 'photo') {
-        final x = await picker.pickImage(
-            source: ImageSource.gallery, imageQuality: 80);
-        if (x == null) return;
-        final file = File(x.path);
-        final valid =
-            await PhotoValidationService().validateImageForSending(file);
-        if (!valid.isValid) {
-          messenger.showSnackBar(
-              SnackBar(content: Text(l10n.photoExplicitContent)));
-          return;
-        }
-        final url = await _uploadGroupFile(file, 'jpg', 'image/jpeg');
-        bloc.add(GroupChatMessageSent(content: url, type: MessageType.image));
-      } else {
-        final x = await picker.pickVideo(source: ImageSource.gallery);
-        if (x == null) return;
-        final url = await _uploadGroupFile(File(x.path), 'mp4', 'video/mp4');
-        bloc.add(GroupChatMessageSent(content: url, type: MessageType.video));
+      final x = await ImagePicker().pickImage(source: source, imageQuality: 80);
+      if (x == null) return;
+      final file = File(x.path);
+      final valid =
+          await PhotoValidationService().validateImageForSending(file);
+      if (!valid.isValid) {
+        messenger
+            .showSnackBar(SnackBar(content: Text(l10n.photoExplicitContent)));
+        return;
       }
+      final url = await _uploadGroupFile(file, 'jpg', 'image/jpeg');
+      bloc.add(GroupChatMessageSent(content: url, type: MessageType.image));
+      AppSoundService().play(AppSound.messageSent);
+    } catch (_) {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+    }
+  }
+
+  Future<void> _sendVideo(BuildContext context, ImageSource source) async {
+    final l10n = AppLocalizations.of(context)!;
+    final bloc = context.read<GroupChatBloc>();
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      final x = await ImagePicker().pickVideo(source: source);
+      if (x == null) return;
+      final url = await _uploadGroupFile(File(x.path), 'mp4', 'video/mp4');
+      bloc.add(GroupChatMessageSent(content: url, type: MessageType.video));
+      AppSoundService().play(AppSound.messageSent);
     } catch (_) {
       messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
     }
@@ -358,20 +467,31 @@ class _GroupChatViewState extends State<_GroupChatView> {
           ),
           child: Row(
             children: [
-              CircleAvatar(
-                radius: 16,
-                backgroundImage: (widget.groupPhotoUrl != null &&
-                        widget.groupPhotoUrl!.isNotEmpty)
-                    ? NetworkImage(widget.groupPhotoUrl!)
-                    : null,
-                child: (widget.groupPhotoUrl == null ||
-                        widget.groupPhotoUrl!.isEmpty)
-                    ? Text(
-                        widget.groupName.isNotEmpty
-                            ? widget.groupName[0].toUpperCase()
-                            : '#',
-                      )
-                    : null,
+              StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+                stream: FirebaseFirestore.instance
+                    .collection('groups')
+                    .doc(widget.groupId)
+                    .snapshots(),
+                builder: (context, snap) {
+                  final liveUrl = (snap.data?.data()?['groupInfo']
+                          as Map<String, dynamic>?)?['photoUrl'] as String?;
+                  final photo = (liveUrl != null && liveUrl.isNotEmpty)
+                      ? liveUrl
+                      : widget.groupPhotoUrl;
+                  return CircleAvatar(
+                    radius: 16,
+                    backgroundImage: (photo != null && photo.isNotEmpty)
+                        ? NetworkImage(photo)
+                        : null,
+                    child: (photo == null || photo.isEmpty)
+                        ? Text(
+                            widget.groupName.isNotEmpty
+                                ? widget.groupName[0].toUpperCase()
+                                : '#',
+                          )
+                        : null,
+                  );
+                },
               ),
               const SizedBox(width: 10),
               Expanded(
@@ -451,8 +571,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
               _InputBar(
                 controller: _controller,
                 onSend: () => _send(context),
-                onAttachLocation: () => _sendLocation(context),
-                onAttachMedia: () => _sendMedia(context),
+                onAttach: () => _showAttachmentOptions(context),
                 onSendVoice: (file, dur) => _sendVoice(context, file, dur),
               ),
             ],
@@ -747,15 +866,13 @@ class _InputBar extends StatelessWidget {
   const _InputBar({
     required this.controller,
     required this.onSend,
-    required this.onAttachLocation,
-    required this.onAttachMedia,
+    required this.onAttach,
     required this.onSendVoice,
   });
 
   final TextEditingController controller;
   final VoidCallback onSend;
-  final VoidCallback onAttachLocation;
-  final VoidCallback onAttachMedia;
+  final VoidCallback onAttach;
   final void Function(File file, Duration duration) onSendVoice;
 
   @override
@@ -768,13 +885,8 @@ class _InputBar extends StatelessWidget {
           children: [
             IconButton(
               icon: const Icon(Icons.add_circle_outline),
-              tooltip: AppLocalizations.of(context)!.chatPhoto,
-              onPressed: onAttachMedia,
-            ),
-            IconButton(
-              icon: const Icon(Icons.location_on_outlined),
-              tooltip: AppLocalizations.of(context)!.chatShareLocation,
-              onPressed: onAttachLocation,
+              tooltip: AppLocalizations.of(context)!.chatSendAttachment,
+              onPressed: onAttach,
             ),
             Expanded(
               child: TextField(
