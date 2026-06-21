@@ -41,7 +41,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onEventBroadcastCreated = void 0;
+exports.onEventMessageCreated = exports.onEventBroadcastCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
@@ -100,6 +100,80 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{ev
         }
         catch (e) {
             console.error('Event broadcast FCM failed', e);
+        }
+    }
+});
+/// Regular event-chat messages → push to all attendees (except sender/muted),
+/// matching the 1:1/group notification sound + channel so they appear even when
+/// the app is closed.
+exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', async (event) => {
+    var _a, _b;
+    const snap = event.data;
+    if (!snap)
+        return;
+    const msg = snap.data();
+    if (msg.isBroadcast === true)
+        return; // handled by onEventBroadcastCreated
+    const eventId = event.params.eventId;
+    const senderId = msg.senderId || '';
+    const senderName = msg.senderName || '';
+    const text = msg.text || '';
+    const eventDoc = await db.collection('events').doc(eventId).get();
+    const title = ((_a = eventDoc.data()) === null || _a === void 0 ? void 0 : _a.title) || 'Event';
+    const attendeesSnap = await db
+        .collection('events')
+        .doc(eventId)
+        .collection('attendees')
+        .get();
+    const recipientIds = attendeesSnap.docs
+        .filter((d) => {
+        const a = d.data();
+        if (d.id === senderId)
+            return false;
+        if (a.muteNotifications === true)
+            return false;
+        if (a.leftAt)
+            return false;
+        return true;
+    })
+        .map((d) => d.id);
+    if (recipientIds.length === 0)
+        return;
+    const tokenDocs = await Promise.all(recipientIds.map((u) => db.collection('users').doc(u).get()));
+    const tokens = [];
+    for (const td of tokenDocs) {
+        const t = (_b = td.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;
+        if (t)
+            tokens.push(t);
+    }
+    if (tokens.length === 0)
+        return;
+    const body = senderName ? `${senderName}: ${text}` : text;
+    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
+        const chunk = tokens.slice(i, i + FCM_CHUNK);
+        try {
+            await admin.messaging().sendEachForMulticast({
+                tokens: chunk,
+                notification: { title, body },
+                data: { type: 'event_message', eventId, conversationId: eventId },
+                android: {
+                    priority: 'high',
+                    collapseKey: `event_${eventId}`,
+                    notification: {
+                        sound: 'default',
+                        channelId: 'greengo_notifications',
+                        priority: 'high',
+                        tag: `event_${eventId}`,
+                    },
+                },
+                apns: {
+                    headers: { 'apns-collapse-id': `event_${eventId}` },
+                    payload: { aps: { sound: 'default', badge: 1 } },
+                },
+            });
+        }
+        catch (e) {
+            console.error('Event message FCM failed', e);
         }
     }
 });
