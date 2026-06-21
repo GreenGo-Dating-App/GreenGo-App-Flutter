@@ -314,11 +314,14 @@ class _EventsScreenState extends State<EventsScreen>
             e.tags.any((t) => t.toLowerCase().contains(q));
       }).toList();
     }
-    // Optional popularity sort (otherwise the incoming order — date or
-    // distance, set per tab — is preserved).
+    // Order: popularity if toggled, else by distance from the user (when known).
     if (_sortByPopularity) {
       result = [...result]
         ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
+    } else if (_userLat != null && _userLng != null) {
+      result = [...result]
+        ..sort((a, b) =>
+            _distanceToEvent(a).compareTo(_distanceToEvent(b)));
     }
     // Featured/boosted events surface first, preserving relative order.
     final featured = result.where((e) => e.isCurrentlyFeatured).toList();
