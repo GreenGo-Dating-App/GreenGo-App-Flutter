@@ -70,9 +70,21 @@ class _EventsScreenState extends State<EventsScreen>
     _eventsBloc.add(const LoadEvents(upcoming: true));
     _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
 
+    // Rebuild on tab change so the category bar shows/hides per tab.
+    _tabController.addListener(() {
+      if (mounted) setState(() {});
+    });
+
     // Best-effort user location for distance-based ordering of all events.
     _loadUserLocation();
   }
+
+  // Tabs 2 (Attractions) & 3 (Experiences) are external (no GreenGo category
+  // tags) — the category filter bar is hidden there.
+  bool get _isNativeTab =>
+      _tabController.index == 0 ||
+      _tabController.index == 1 ||
+      _tabController.index == 4;
 
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
@@ -177,8 +189,8 @@ class _EventsScreenState extends State<EventsScreen>
               children: [
                 // Search by country/city/name + popularity sort
                 _buildSearchAndSortBar(),
-                // Category Filter
-                _buildCategoryFilter(),
+                // Category filter — only on native tabs, only categories present
+                if (_isNativeTab) _buildCategoryFilter(state),
                 // Events List
                 Expanded(
                   child: _buildBody(state),
@@ -336,7 +348,17 @@ class _EventsScreenState extends State<EventsScreen>
       ..sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
   }
 
-  Widget _buildCategoryFilter() {
+  Widget _buildCategoryFilter(EventsState state) {
+    // Only show category chips that actually have at least one event across the
+    // user's native events (so empty tags are omitted).
+    final present = <EventCategory>{};
+    if (state is EventsLoaded) {
+      for (final e in [...state.upcomingEvents, ...state.userEvents]) {
+        present.add(e.category);
+      }
+    }
+    if (present.isEmpty) return const SizedBox.shrink();
+    final cats = EventCategory.values.where(present.contains).toList();
     return SizedBox(
       height: 50,
       child: ListView(
@@ -344,7 +366,7 @@ class _EventsScreenState extends State<EventsScreen>
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
           _buildCategoryChip(null, 'All'),
-          ...EventCategory.values.map((category) {
+          ...cats.map((category) {
             return _buildCategoryChip(category, _getCategoryName(category));
           }),
         ],

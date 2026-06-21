@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -131,7 +132,7 @@ class _ShareEventSheet extends StatelessWidget {
                               leading: CircleAvatar(
                                 backgroundImage:
                                     (photo != null && photo.isNotEmpty)
-                                        ? NetworkImage(photo)
+                                        ? CachedNetworkImageProvider(photo)
                                         : null,
                                 child: (photo == null || photo.isEmpty)
                                     ? const Icon(Icons.groups)
@@ -187,7 +188,7 @@ class _ShareEventSheet extends StatelessWidget {
                                   leading: CircleAvatar(
                                     backgroundImage:
                                         (photo != null && photo.isNotEmpty)
-                                            ? NetworkImage(photo)
+                                            ? CachedNetworkImageProvider(photo)
                                             : null,
                                     child: (photo == null || photo.isEmpty)
                                         ? const Icon(Icons.person)
