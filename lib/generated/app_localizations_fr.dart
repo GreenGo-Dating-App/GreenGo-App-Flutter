@@ -10965,4 +10965,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get groupNoSearchResults => 'Aucun groupe trouvé';
+
+  @override
+  String get groupTranslationSettings => 'Traduction';
+
+  @override
+  String get groupTranslateMessages => 'Traduire les messages';
+
+  @override
+  String get groupShowOriginal => 'Afficher le texte original';
 }

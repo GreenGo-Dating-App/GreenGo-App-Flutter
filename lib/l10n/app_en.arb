@@ -5129,5 +5129,8 @@
   "groupPhotoUpdateFailed": "Failed to update group photo",
   "eventTextProhibited": "Title or description contains prohibited language and cannot be used",
   "groupSearchHint": "Search groups",
-  "groupNoSearchResults": "No groups found"
+  "groupNoSearchResults": "No groups found",
+  "groupTranslationSettings": "Translation",
+  "groupTranslateMessages": "Translate messages",
+  "groupShowOriginal": "Show original text"
 }

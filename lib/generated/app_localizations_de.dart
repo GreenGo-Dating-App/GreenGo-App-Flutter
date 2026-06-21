@@ -10927,4 +10927,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get groupNoSearchResults => 'Keine Gruppen gefunden';
+
+  @override
+  String get groupTranslationSettings => 'Übersetzung';
+
+  @override
+  String get groupTranslateMessages => 'Nachrichten übersetzen';
+
+  @override
+  String get groupShowOriginal => 'Originaltext anzeigen';
 }
