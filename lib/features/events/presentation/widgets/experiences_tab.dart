@@ -50,8 +50,11 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   @override
   void didUpdateWidget(ExperiencesTab old) {
     super.didUpdateWidget(old);
-    // Switching Popular or source changes the dataset — reset and reload.
-    if (old.popular != widget.popular || old.source != widget.source) {
+    // Switching Popular/source, or location arriving, changes the dataset.
+    if (old.popular != widget.popular ||
+        old.source != widget.source ||
+        old.userLat != widget.userLat ||
+        old.userLng != widget.userLng) {
       _items.clear();
       _cursor = null;
       _hasMore = !widget.popular;
@@ -81,6 +84,26 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       setState(() => _loading = true);
       final items =
           await _ds.getPopularExperiences(source: widget.source, limit: 20);
+      if (!mounted) return;
+      setState(() {
+        _items
+          ..clear()
+          ..addAll(items);
+        _hasMore = false;
+        _loading = false;
+        _firstLoadDone = true;
+      });
+      return;
+    }
+    // Location known → single distance-sorted pool (closest first).
+    if (widget.userLat != null && widget.userLng != null) {
+      if (_firstLoadDone) return;
+      setState(() => _loading = true);
+      final items = await _ds.getNearbyExperiences(
+        source: widget.source,
+        userLat: widget.userLat!,
+        userLng: widget.userLng!,
+      );
       if (!mounted) return;
       setState(() {
         _items
@@ -277,14 +300,14 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                               color: AppColors.textSecondary, fontSize: 12),
                         ),
                       ),
-                      if (e.rating != null) ...[
+                      if (e.rating != null && e.rating! > 0) ...[
                         const Icon(Icons.star,
                             size: 14, color: AppColors.richGold),
                         const SizedBox(width: 2),
                         Text('${e.rating}',
                             style: const TextStyle(
                                 color: AppColors.textPrimary, fontSize: 12)),
-                        if (e.reviewCount != null)
+                        if (e.reviewCount != null && e.reviewCount! > 0)
                           Text(' (${e.reviewCount})',
                               style: const TextStyle(
                                   color: AppColors.textTertiary, fontSize: 11)),
@@ -368,7 +391,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                     const SizedBox(height: 2),
                     Row(
                       children: [
-                        if (e.rating != null) ...[
+                        if (e.rating != null && e.rating! > 0) ...[
                           const Icon(Icons.star,
                               size: 10, color: AppColors.richGold),
                           Text('${e.rating}',

@@ -82,6 +82,31 @@ class ExternalEventsDataSource {
     }
   }
 
+  /// Items for [source] ordered by distance from the user (closest first).
+  /// Loads a bounded pool then sorts locally by distance (items carry city
+  /// coordinates). Bounded read; cache-first after first load.
+  Future<List<ExternalEvent>> getNearbyExperiences({
+    required String source,
+    required double userLat,
+    required double userLng,
+    int limit = 300,
+  }) async {
+    try {
+      final snap = await _firestore
+          .collection('external_events')
+          .where('source', isEqualTo: source)
+          .orderBy('rating', descending: true)
+          .limit(limit)
+          .get();
+      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      if (items.isEmpty) return _samplesFor(source);
+      _sortByDistance(items, userLat, userLng);
+      return items;
+    } catch (_) {
+      return _samplesFor(source);
+    }
+  }
+
   /// Top [limit] by review count among those rated above 4.5 stars, for [source].
   Future<List<ExternalEvent>> getPopularExperiences({
     required String source,
