@@ -257,7 +257,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Widget _badge(ExternalEvent e) {
-    final color = e.source == 'tiqets'
+    final color = e.source == 'tiqets' || e.source == 'geoapify'
         ? Colors.purple
         : e.source == 'ticketmaster'
             ? Colors.indigo

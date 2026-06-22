@@ -47,6 +47,8 @@ class ExternalEvent {
     switch (source) {
       case 'tiqets':
         return 'Tiqets';
+      case 'geoapify':
+        return 'Wikipedia';
       case 'ticketmaster':
         return 'Ticketmaster';
       case 'google':
