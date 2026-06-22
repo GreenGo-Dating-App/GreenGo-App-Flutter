@@ -94,12 +94,19 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
 
       if (placemarks.isNotEmpty) {
         final place = placemarks.first;
-        final city = place.locality
-            ?? place.subLocality
-            ?? place.subAdministrativeArea
-            ?? place.administrativeArea
-            ?? place.name
-            ?? '';
+        // Pick the first NON-EMPTY value — geocoding returns '' (not null) for
+        // missing fields, so `??` alone would leave the city blank.
+        String firstNonEmpty(List<String?> vals) => vals.firstWhere(
+              (s) => s != null && s.trim().isNotEmpty,
+              orElse: () => '',
+            )!;
+        final city = firstNonEmpty([
+          place.locality,
+          place.subLocality,
+          place.subAdministrativeArea,
+          place.administrativeArea,
+          place.name,
+        ]);
         final country = place.country ?? '';
         if (city.isEmpty && country.isEmpty) {
           throw Exception('Could not resolve address');

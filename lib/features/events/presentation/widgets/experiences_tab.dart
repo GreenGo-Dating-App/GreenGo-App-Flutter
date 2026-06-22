@@ -179,6 +179,15 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
   }
 
+  /// Pull-to-refresh: reload the latest from the server.
+  Future<void> _refresh() async {
+    _items.clear();
+    _cursor = null;
+    _hasMore = !widget.popular;
+    _firstLoadDone = false;
+    await _loadMore();
+  }
+
   @override
   Widget build(BuildContext context) {
     if (!_firstLoadDone) {
@@ -197,21 +206,28 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     final showLoader = _hasMore && widget.query.isEmpty;
 
     if (widget.gridView) {
-      return GridView.builder(
-        controller: _scroll,
-        padding: const EdgeInsets.all(12),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          crossAxisSpacing: 8,
-          mainAxisSpacing: 8,
-          childAspectRatio: 0.62,
+      return RefreshIndicator(
+        color: AppColors.richGold,
+        onRefresh: _refresh,
+        child: GridView.builder(
+          controller: _scroll,
+          padding: const EdgeInsets.all(12),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            crossAxisSpacing: 8,
+            mainAxisSpacing: 8,
+            childAspectRatio: 0.62,
+          ),
+          itemCount: items.length,
+          itemBuilder: (context, i) => _gridTile(items[i]),
         ),
-        itemCount: items.length,
-        itemBuilder: (context, i) => _gridTile(items[i]),
       );
     }
 
-    return ListView.builder(
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      onRefresh: _refresh,
+      child: ListView.builder(
       controller: _scroll,
       padding: const EdgeInsets.all(12),
       itemCount: items.length + (showLoader ? 1 : 0),
@@ -225,6 +241,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         }
         return _card(items[i]);
       },
+      ),
     );
   }
 
