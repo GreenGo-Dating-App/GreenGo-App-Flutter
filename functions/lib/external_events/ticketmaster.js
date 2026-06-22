@@ -47,6 +47,7 @@ const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
+const build_index_1 = require("./build_index");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const TICKETMASTER_API_KEY = (0, params_1.defineSecret)('TICKETMASTER_API_KEY');
@@ -297,6 +298,7 @@ async function runTicketmaster(key) {
     if (all.length > 0) {
         await upsertAll(all);
         await writeCountryStats(all);
+        await (0, build_index_1.buildSourceIndex)('ticketmaster');
     }
     console.log(`ingestTicketmaster: upserted ${all.length} events.`);
     return all.length;

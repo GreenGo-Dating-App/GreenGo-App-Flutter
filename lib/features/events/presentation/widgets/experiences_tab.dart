@@ -1,18 +1,20 @@
 import 'dart:math' as math;
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/services/city_coordinates_service.dart';
+import '../../../../core/services/external_events_index_service.dart';
 import '../../data/datasources/external_events_data_source.dart';
 import '../../domain/entities/external_event.dart';
 import 'share_external_sheet.dart';
 
-/// Experiences tab — Viator experiences with **infinite scroll**.
-/// Loads pages from `external_events` (ordered by rating) as the user scrolls.
+/// Experiences tab — external events (Experiences/Attractions/Live Events) with
+/// **infinite scroll**. Loads the full source ONCE via the structured shard
+/// index (ExternalEventsIndexService), then orders globally in memory by
+/// distance (default) / date / stars / reviews and pages the result locally.
 class ExperiencesTab extends StatefulWidget {
   const ExperiencesTab({
     super.key,
@@ -42,10 +44,14 @@ class ExperiencesTab extends StatefulWidget {
 class _ExperiencesTabState extends State<ExperiencesTab> {
   final _ds = ExternalEventsDataSource();
   final _scroll = ScrollController();
-  final List<ExternalEvent> _items = [];
-  DocumentSnapshot<Map<String, dynamic>>? _cursor;
+  static const int _pageSize = 24;
+
+  /// The FULL set for this source, loaded once (structured shard index, with a
+  /// raw-collection fallback). All ordering is done in memory over this list,
+  /// so distance/date/stars/reviews are globally correct, not per-page.
+  List<ExternalEvent> _all = [];
+  int _visibleCount = _pageSize;
   bool _loading = false;
-  bool _hasMore = true;
   bool _firstLoadDone = false;
 
   @override
@@ -57,7 +63,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     CityCoordinatesService.instance.ensureLoaded().then((_) {
       if (mounted) setState(() {});
     });
-    _loadMore();
+    _load();
   }
 
   /// Resolved coordinates: the item's own, else the city lookup table.
@@ -89,17 +95,15 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   @override
   void didUpdateWidget(ExperiencesTab old) {
     super.didUpdateWidget(old);
-    // Switching Popular/source, or location arriving, changes the dataset.
-    if (old.popular != widget.popular ||
-        old.source != widget.source ||
-        old.sort != widget.sort ||
+    // Source/popular change → reload the dataset. Sort/query/location change →
+    // just re-window the already-loaded list (instant, no refetch).
+    if (old.source != widget.source || old.popular != widget.popular) {
+      _load();
+    } else if (old.sort != widget.sort ||
+        old.query != widget.query ||
         old.userLat != widget.userLat ||
         old.userLng != widget.userLng) {
-      _items.clear();
-      _cursor = null;
-      _hasMore = !widget.popular;
-      _firstLoadDone = false;
-      _loadMore();
+      setState(() => _visibleCount = _pageSize);
     }
   }
 
@@ -110,54 +114,48 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   void _onScroll() {
-    if (!_scroll.hasClients || _loading || !_hasMore) return;
+    if (!_scroll.hasClients) return;
     if (_scroll.position.maxScrollExtent - _scroll.position.pixels < 400) {
-      _loadMore();
+      final total = _filtered.length;
+      if (_visibleCount < total) {
+        setState(() =>
+            _visibleCount = math.min(_visibleCount + _pageSize, total));
+      }
     }
   }
 
-  Future<void> _loadMore() async {
+  Future<void> _load() async {
     if (_loading) return;
-    // Popular = a fixed top set (single load).
+    setState(() {
+      _loading = true;
+      _visibleCount = _pageSize;
+    });
+    List<ExternalEvent> list;
     if (widget.popular) {
-      if (_firstLoadDone) return;
-      setState(() => _loading = true);
-      final items =
-          await _ds.getPopularExperiences(source: widget.source, limit: 60);
-      if (!mounted) return;
-      setState(() {
-        _items
-          ..clear()
-          ..addAll(items);
-        _hasMore = false;
-        _loading = false;
-        _firstLoadDone = true;
-      });
-      return;
+      list = await _ds.getPopularExperiences(source: widget.source, limit: 60);
+    } else {
+      list =
+          await ExternalEventsIndexService.instance.ensureLoaded(widget.source);
     }
-    if (!_hasMore) return;
-    setState(() => _loading = true);
-    final page = await _ds.getExperiencesPage(
-      source: widget.source,
-      sort: widget.sort,
-      startAfter: _cursor,
-      limit: 20,
-      userLat: widget.userLat,
-      userLng: widget.userLng,
-    );
     if (!mounted) return;
     setState(() {
-      _items.addAll(page.items);
-      _cursor = page.cursor;
-      _hasMore = page.cursor != null && page.items.isNotEmpty;
+      _all = list;
       _loading = false;
       _firstLoadDone = true;
     });
   }
 
+  int _compareByDate(ExternalEvent a, ExternalEvent b) {
+    final ad = (a.startDate == null || a.startDate!.isEmpty) ? '9999' : a.startDate!;
+    final bd = (b.startDate == null || b.startDate!.isEmpty) ? '9999' : b.startDate!;
+    return ad.compareTo(bd); // soonest first; undated last
+  }
+
+  /// Full, globally-ordered, search-filtered list (placeable items only).
   List<ExternalEvent> get _filtered {
     final q = widget.query.toLowerCase();
-    var list = _items.where((e) {
+    final hasLoc = widget.userLat != null && widget.userLng != null;
+    final list = _all.where((e) {
       // Hide items we can't place: no own coords AND city not in the lookup.
       if (_coordOf(e) == null) return false;
       if (q.isEmpty) return true;
@@ -165,11 +163,25 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
           (e.city ?? '').toLowerCase().contains(q) ||
           (e.country ?? '').toLowerCase().contains(q);
     }).toList();
-    // Distance sort (closest first) using resolved coordinates.
-    if (widget.sort == 'distance' &&
-        widget.userLat != null &&
-        widget.userLng != null) {
-      list.sort((a, b) => _distanceOf(a).compareTo(_distanceOf(b)));
+
+    switch (widget.sort) {
+      case 'date':
+        list.sort(_compareByDate);
+        break;
+      case 'rating':
+        list.sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
+        break;
+      case 'reviews':
+        list.sort((a, b) => (b.reviewCount ?? 0).compareTo(a.reviewCount ?? 0));
+        break;
+      case 'distance':
+      default:
+        if (hasLoc) {
+          list.sort((a, b) => _distanceOf(a).compareTo(_distanceOf(b)));
+        } else {
+          // No location yet → fall back to most-reviewed so the order is stable.
+          list.sort((a, b) => (b.reviewCount ?? 0).compareTo(a.reviewCount ?? 0));
+        }
     }
     return list;
   }
@@ -179,13 +191,12 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
   }
 
-  /// Pull-to-refresh: reload the latest from the server.
+  /// Pull-to-refresh: drop the cached index for this source and reload.
   Future<void> _refresh() async {
-    _items.clear();
-    _cursor = null;
-    _hasMore = !widget.popular;
-    _firstLoadDone = false;
-    await _loadMore();
+    if (!widget.popular) {
+      ExternalEventsIndexService.instance.invalidate(widget.source);
+    }
+    await _load();
   }
 
   @override
@@ -194,16 +205,16 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       return const Center(
           child: CircularProgressIndicator(color: AppColors.richGold));
     }
-    final items = _filtered;
-    if (items.isEmpty) {
+    final all = _filtered;
+    if (all.isEmpty) {
       return Center(
         child: Text(AppLocalizations.of(context)!.eventsNoEventsFound,
             style: const TextStyle(color: AppColors.textSecondary)),
       );
     }
-
-    // Trailing loader only when more pages exist and we're not filtering.
-    final showLoader = _hasMore && widget.query.isEmpty;
+    // In-memory pagination: show a growing window of the globally-sorted list.
+    final items = all.take(_visibleCount).toList();
+    final showLoader = _visibleCount < all.length;
 
     if (widget.gridView) {
       return RefreshIndicator(

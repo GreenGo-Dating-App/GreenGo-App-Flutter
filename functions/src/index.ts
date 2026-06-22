@@ -73,6 +73,12 @@ export {
   runIngestTicketmasterNow,
 } from './external_events/ticketmaster';
 
+// External events — compact shard index (cheap whole-source loads for global
+// in-app ordering by distance/date/stars/reviews).
+export {
+  runBuildExternalIndexNow,
+} from './external_events/build_index';
+
 
 // Events — per-country aggregation for the globe.
 export {
