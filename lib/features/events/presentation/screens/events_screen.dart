@@ -51,11 +51,12 @@ class _EventsScreenState extends State<EventsScreen>
   late EventsBloc _eventsBloc;
   EventCategory? _selectedCategory;
   String _searchQuery = '';
-  bool _sortByPopularity = false;
   bool _gridView = false;
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance'; // distance | rating | reviews | date
+  // Native tabs (Upcoming/Community/My Events): distance is the default order.
+  String _nativeSort = 'distance'; // distance | date | popular
 
   @override
   void initState() {
@@ -268,26 +269,29 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           const SizedBox(width: 8),
-          // Native tabs: popularity toggle. External tabs: sort menu.
+          // Both native and external tabs: a sort menu defaulting to Distance.
+          // Native events have no stars/reviews, so they offer Distance/Date/
+          // Popular; external offer Distance/Stars/Reviews/Date.
           if (_isNativeTab)
-            ChoiceChip(
-              label: Text(AppLocalizations.of(context)!.eventsSortPopular),
-              avatar: Icon(
-                Icons.local_fire_department,
-                size: 18,
-                color: _sortByPopularity
-                    ? AppColors.deepBlack
-                    : AppColors.richGold,
-              ),
-              selected: _sortByPopularity,
-              selectedColor: AppColors.richGold,
-              backgroundColor: AppColors.backgroundCard,
-              labelStyle: TextStyle(
-                color: _sortByPopularity
-                    ? AppColors.deepBlack
-                    : AppColors.textPrimary,
-              ),
-              onSelected: (v) => setState(() => _sortByPopularity = v),
+            PopupMenuButton<String>(
+              icon: const Icon(Icons.sort, color: AppColors.richGold),
+              tooltip: AppLocalizations.of(context)!.eventsSortBy,
+              color: AppColors.backgroundCard,
+              initialValue: _nativeSort,
+              onSelected: (v) => setState(() => _nativeSort = v),
+              itemBuilder: (ctx) => [
+                _sortItem('distance',
+                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me,
+                    current: _nativeSort),
+                _sortItem('date', AppLocalizations.of(ctx)!.eventsSortDate,
+                    Icons.event,
+                    current: _nativeSort),
+                _sortItem(
+                    'popular',
+                    AppLocalizations.of(ctx)!.eventsSortPopular,
+                    Icons.local_fire_department,
+                    current: _nativeSort),
+              ],
             )
           else
             PopupMenuButton<String>(
@@ -324,8 +328,9 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  PopupMenuItem<String> _sortItem(String value, String label, IconData icon) {
-    final selected = _extSort == value;
+  PopupMenuItem<String> _sortItem(String value, String label, IconData icon,
+      {String? current}) {
+    final selected = (current ?? _extSort) == value;
     return PopupMenuItem<String>(
       value: value,
       child: Row(
@@ -355,15 +360,35 @@ class _EventsScreenState extends State<EventsScreen>
             e.tags.any((t) => t.toLowerCase().contains(q));
       }).toList();
     }
-    // Popularity overrides the per-tab order (date/distance set by the getters).
-    if (_sortByPopularity) {
-      result = [...result]
-        ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
-    }
+    // Apply the selected order (distance by default).
+    result = _applyNativeSort(result);
     // Featured/boosted events surface first, preserving relative order.
     final featured = result.where((e) => e.isCurrentlyFeatured).toList();
     final rest = result.where((e) => !e.isCurrentlyFeatured).toList();
     return [...featured, ...rest];
+  }
+
+  /// Order native events by the chosen mode: distance (default) / date /
+  /// popular. Distance falls back to date when the user's location is unknown.
+  List<Event> _applyNativeSort(List<Event> events) {
+    final list = [...events];
+    switch (_nativeSort) {
+      case 'date':
+        list.sort((a, b) => a.startDate.compareTo(b.startDate));
+        break;
+      case 'popular':
+        list.sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
+        break;
+      case 'distance':
+      default:
+        if (_userLat != null && _userLng != null) {
+          list.sort(
+              (a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
+        } else {
+          list.sort((a, b) => a.startDate.compareTo(b.startDate));
+        }
+    }
+    return list;
   }
 
   double _distanceToEvent(Event e) {
@@ -381,12 +406,6 @@ class _EventsScreenState extends State<EventsScreen>
     return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
   }
 
-  /// Sort a copy by distance (closest first) when the user location is known.
-  List<Event> _byDistance(List<Event> events) {
-    if (_userLat == null || _userLng == null) return events;
-    return [...events]
-      ..sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
-  }
 
   Widget _buildCategoryFilter(EventsState state) {
     // Only show category chips that actually have at least one event across the
@@ -475,12 +494,14 @@ class _EventsScreenState extends State<EventsScreen>
       final near = list.where((e) => _distanceToEvent(e) <= 500).toList();
       if (near.isNotEmpty) list = near;
     }
-    return [...list]..sort((a, b) => a.startDate.compareTo(b.startDate));
+    // Order applied centrally by _applySearchAndSort (distance by default).
+    return list;
   }
 
-  /// Community: all GreenGo user-created events, ordered by distance.
+  /// Community: all GreenGo user-created events. Order applied centrally
+  /// (distance by default; user can switch to date / popular).
   List<Event> _getCommunityEvents(EventsLoaded state) {
-    return _byDistance(state.upcomingEvents);
+    return state.upcomingEvents;
   }
 
   List<Event> _getMyEvents(EventsLoaded state) {
@@ -665,7 +686,7 @@ class _EventsScreenState extends State<EventsScreen>
       source: source,
       gridView: _gridView,
       query: _searchQuery,
-      popular: _sortByPopularity,
+      popular: false,
       sort: _extSort,
       userLat: _userLat,
       userLng: _userLng,
