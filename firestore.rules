@@ -774,6 +774,10 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // CF-written city → coordinates lookup table
     }
+    match /external_events_index/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written compact shard index for fast loads
+    }
 
     // ============================================================================
     // EVENTS ("GreenGo Events") — public/private events with RSVP + chat

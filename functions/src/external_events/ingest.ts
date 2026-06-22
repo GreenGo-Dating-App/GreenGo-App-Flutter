@@ -19,6 +19,7 @@ import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
+import { buildSourceIndex } from './build_index';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -384,6 +385,7 @@ async function runIngestion(apiKey: string): Promise<number> {
     if (all.length > 0) {
       await upsertAll(all);
       await writeCountryStats(all, 'viator');
+      await buildSourceIndex('viator');
       console.log(
         `ingestExternalEvents: upserted ${all.length} experiences across ` +
           `${countries.length} countries from ${base}.`

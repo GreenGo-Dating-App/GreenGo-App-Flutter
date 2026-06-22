@@ -57,12 +57,17 @@ class ExternalEvent {
   }
 
   factory ExternalEvent.fromFirestore(
-      QueryDocumentSnapshot<Map<String, dynamic>> doc) {
-    final d = doc.data();
+          QueryDocumentSnapshot<Map<String, dynamic>> doc) =>
+      ExternalEvent.fromMap(doc.id, doc.data());
+
+  /// Build from a raw map (a Firestore doc's data, or one compact record inside
+  /// a sharded `external_events_index` document). [id] falls back to a `id`
+  /// field in the map when not supplied separately (index records carry it).
+  factory ExternalEvent.fromMap(String? id, Map<String, dynamic> d) {
     final geoPrice = d['fromPrice'];
     final rating = d['rating'];
     return ExternalEvent(
-      id: doc.id,
+      id: id ?? d['id'] as String? ?? '',
       source: d['source'] as String? ?? 'viator',
       title: d['title'] as String? ?? '',
       bookingUrl: d['bookingUrl'] as String? ?? '',

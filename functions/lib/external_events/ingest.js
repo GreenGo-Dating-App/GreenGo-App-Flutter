@@ -54,6 +54,7 @@ const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
+const build_index_1 = require("./build_index");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
@@ -377,6 +378,7 @@ async function runIngestion(apiKey) {
         if (all.length > 0) {
             await upsertAll(all);
             await writeCountryStats(all, 'viator');
+            await (0, build_index_1.buildSourceIndex)('viator');
             console.log(`ingestExternalEvents: upserted ${all.length} experiences across ` +
                 `${countries.length} countries from ${base}.`);
             return all.length;

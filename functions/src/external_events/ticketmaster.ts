@@ -12,6 +12,7 @@ import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { buildSourceIndex } from './build_index';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -269,6 +270,7 @@ async function runTicketmaster(key: string): Promise<number> {
   if (all.length > 0) {
     await upsertAll(all);
     await writeCountryStats(all);
+    await buildSourceIndex('ticketmaster');
   }
   console.log(`ingestTicketmaster: upserted ${all.length} events.`);
   return all.length;
