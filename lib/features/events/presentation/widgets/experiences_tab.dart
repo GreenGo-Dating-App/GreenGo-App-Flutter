@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
 import '../../domain/entities/external_event.dart';
+import 'share_external_sheet.dart';
 
 /// Experiences tab — Viator experiences with **infinite scroll**.
 /// Loads pages from `external_events` (ordered by rating) as the user scrolls.
@@ -19,6 +20,7 @@ class ExperiencesTab extends StatefulWidget {
     this.userLat,
     this.userLng,
     this.sort = 'distance',
+    this.currentUserId = '',
   });
 
   final bool gridView;
@@ -28,6 +30,7 @@ class ExperiencesTab extends StatefulWidget {
   final double? userLat;
   final double? userLng;
   final String sort; // distance | rating | reviews | date
+  final String currentUserId;
 
   @override
   State<ExperiencesTab> createState() => _ExperiencesTabState();
@@ -60,7 +63,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         old.userLng != widget.userLng) {
       _items.clear();
       _cursor = null;
-      _hasMore = false;
+      _hasMore = !widget.popular;
       _firstLoadDone = false;
       _loadMore();
     }
@@ -80,23 +83,39 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Future<void> _loadMore() async {
-    if (_loading || _firstLoadDone) return;
+    if (_loading) return;
+    // Popular = a fixed top set (single load).
+    if (widget.popular) {
+      if (_firstLoadDone) return;
+      setState(() => _loading = true);
+      final items =
+          await _ds.getPopularExperiences(source: widget.source, limit: 60);
+      if (!mounted) return;
+      setState(() {
+        _items
+          ..clear()
+          ..addAll(items);
+        _hasMore = false;
+        _loading = false;
+        _firstLoadDone = true;
+      });
+      return;
+    }
+    if (!_hasMore) return;
     setState(() => _loading = true);
-    // Single bounded pool sorted by the selected mode (popular = reviews).
-    final items = widget.popular
-        ? await _ds.getPopularExperiences(source: widget.source, limit: 60)
-        : await _ds.getExperiencesSorted(
-            source: widget.source,
-            sort: widget.sort,
-            userLat: widget.userLat,
-            userLng: widget.userLng,
-          );
+    final page = await _ds.getExperiencesPage(
+      source: widget.source,
+      sort: widget.sort,
+      startAfter: _cursor,
+      limit: 20,
+      userLat: widget.userLat,
+      userLng: widget.userLng,
+    );
     if (!mounted) return;
     setState(() {
-      _items
-        ..clear()
-        ..addAll(items);
-      _hasMore = false;
+      _items.addAll(page.items);
+      _cursor = page.cursor;
+      _hasMore = page.cursor != null && page.items.isNotEmpty;
       _loading = false;
       _firstLoadDone = true;
     });
@@ -168,11 +187,15 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Widget _badge(ExternalEvent e) {
-    final isTiqets = e.source == 'tiqets';
+    final color = e.source == 'tiqets'
+        ? Colors.purple
+        : e.source == 'ticketmaster'
+            ? Colors.indigo
+            : Colors.teal;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: (isTiqets ? Colors.purple : Colors.teal).withValues(alpha: 0.9),
+        color: color.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(6),
       ),
       child: Text(e.sourceLabel,
@@ -220,6 +243,8 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   Widget _card(ExternalEvent e) {
     return GestureDetector(
       onTap: () => _book(e.bookingUrl),
+      onLongPress: () => showShareExternalSheet(context,
+          item: e, currentUserId: widget.currentUserId),
       child: Container(
         margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
@@ -330,6 +355,8 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   Widget _gridTile(ExternalEvent e) {
     return GestureDetector(
       onTap: () => _book(e.bookingUrl),
+      onLongPress: () => showShareExternalSheet(context,
+          item: e, currentUserId: widget.currentUserId),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: Container(

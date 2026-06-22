@@ -16,7 +16,7 @@ import '../shared/firebaseAdmin';
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const TICKETMASTER_API_KEY = defineSecret('TICKETMASTER_API_KEY');
-const PER_COUNTRY = 100;
+const PER_COUNTRY = 200;
 
 // Top tourism countries → ISO-2 codes (Ticketmaster filters by countryCode).
 const COUNTRY_ISO: Record<string, string> = {

@@ -17,6 +17,14 @@
       ]
     },
     {
+      "collectionGroup": "external_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "source", "order": "ASCENDING" },
+        { "fieldPath": "startDate", "order": "ASCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "events",
       "queryScope": "COLLECTION",
       "fields": [
