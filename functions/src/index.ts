@@ -67,6 +67,14 @@ export {
   runIngestTiqetsNow,
 } from './external_events/tiqets';
 
+// Geoapify attractions ingester — free, commercial-safe museums/attractions/
+// theme parks (Wikipedia-enriched). Powers the Attractions tab. No-ops until
+// GEOAPIFY_API_KEY is set.
+export {
+  ingestGeoapifyAttractions,
+  runIngestGeoapifyNow,
+} from './external_events/geoapify';
+
 // Ticketmaster live-events ingester.
 export {
   ingestTicketmaster,

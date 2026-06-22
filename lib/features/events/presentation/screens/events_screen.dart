@@ -62,7 +62,7 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 6, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -84,10 +84,9 @@ class _EventsScreenState extends State<EventsScreen>
 
   // External tabs (Live Events / Attractions / Experiences) have no GreenGo
   // category tags — hide the category bar there. Native = Upcoming/Community/My.
+  // Native tabs after removing Upcoming: Community (0) and My Events (4).
   bool get _isNativeTab =>
-      _tabController.index == 0 ||
-      _tabController.index == 1 ||
-      _tabController.index == 5;
+      _tabController.index == 0 || _tabController.index == 4;
 
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
@@ -137,7 +136,6 @@ class _EventsScreenState extends State<EventsScreen>
             isScrollable: true,
             tabAlignment: TabAlignment.start,
             tabs: [
-              Tab(text: AppLocalizations.of(context)!.eventsTabUpcoming),
               Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
               Tab(text: AppLocalizations.of(context)!.eventsTabLiveEvents),
               Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
@@ -218,10 +216,9 @@ class _EventsScreenState extends State<EventsScreen>
       return TabBarView(
         controller: _tabController,
         children: [
-          _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
           _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
           _buildExperiencesTab('ticketmaster'),
-          _buildExperiencesTab('tiqets'),
+          _buildExperiencesTab('geoapify'),
           _buildExperiencesTab('viator'),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
@@ -233,9 +230,8 @@ class _EventsScreenState extends State<EventsScreen>
       controller: _tabController,
       children: [
         _buildEventsList([]),
-        _buildEventsList([]),
         _buildExperiencesTab('ticketmaster'),
-        _buildExperiencesTab('tiqets'),
+        _buildExperiencesTab('geoapify'),
         _buildExperiencesTab('viator'),
         _buildEventsList([]),
       ],
@@ -490,19 +486,6 @@ class _EventsScreenState extends State<EventsScreen>
       case EventCategory.other:
         return 'Other';
     }
-  }
-
-  /// Upcoming: events near the user, sorted by date (soonest first). When the
-  /// user location is known, prefer events within ~500 km; if none are nearby,
-  /// fall back to all (still by date).
-  List<Event> _getUpcomingEvents(EventsLoaded state) {
-    var list = state.upcomingEvents;
-    if (_userLat != null && _userLng != null) {
-      final near = list.where((e) => _distanceToEvent(e) <= 500).toList();
-      if (near.isNotEmpty) list = near;
-    }
-    // Order applied centrally by _applySearchAndSort (distance by default).
-    return list;
   }
 
   /// Community: all GreenGo user-created events. Order applied centrally
