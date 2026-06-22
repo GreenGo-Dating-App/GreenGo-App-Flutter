@@ -355,14 +355,10 @@ class _EventsScreenState extends State<EventsScreen>
             e.tags.any((t) => t.toLowerCase().contains(q));
       }).toList();
     }
-    // Order: popularity if toggled, else by distance from the user (when known).
+    // Popularity overrides the per-tab order (date/distance set by the getters).
     if (_sortByPopularity) {
       result = [...result]
         ..sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
-    } else if (_userLat != null && _userLng != null) {
-      result = [...result]
-        ..sort((a, b) =>
-            _distanceToEvent(a).compareTo(_distanceToEvent(b)));
     }
     // Featured/boosted events surface first, preserving relative order.
     final featured = result.where((e) => e.isCurrentlyFeatured).toList();
@@ -470,10 +466,16 @@ class _EventsScreenState extends State<EventsScreen>
     }
   }
 
-  /// Upcoming: events closest in date/time (soonest first).
+  /// Upcoming: events near the user, sorted by date (soonest first). When the
+  /// user location is known, prefer events within ~500 km; if none are nearby,
+  /// fall back to all (still by date).
   List<Event> _getUpcomingEvents(EventsLoaded state) {
-    return [...state.upcomingEvents]
-      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    var list = state.upcomingEvents;
+    if (_userLat != null && _userLng != null) {
+      final near = list.where((e) => _distanceToEvent(e) <= 500).toList();
+      if (near.isNotEmpty) list = near;
+    }
+    return [...list]..sort((a, b) => a.startDate.compareTo(b.startDate));
   }
 
   /// Community: all GreenGo user-created events, ordered by distance.
@@ -650,6 +652,7 @@ class _EventsScreenState extends State<EventsScreen>
       sort: _extSort,
       userLat: _userLat,
       userLng: _userLng,
+      currentUserId: widget.currentUserId,
     );
   }
 

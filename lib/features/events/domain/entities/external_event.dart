@@ -43,7 +43,16 @@ class ExternalEvent {
   final double? lng;
   final String? startDate; // e.g. '2026-07-15' (live events)
 
-  String get sourceLabel => source == 'tiqets' ? 'Tiqets' : 'Viator';
+  String get sourceLabel {
+    switch (source) {
+      case 'tiqets':
+        return 'Tiqets';
+      case 'ticketmaster':
+        return 'Ticketmaster';
+      default:
+        return 'Viator';
+    }
+  }
 
   factory ExternalEvent.fromFirestore(
       QueryDocumentSnapshot<Map<String, dynamic>> doc) {

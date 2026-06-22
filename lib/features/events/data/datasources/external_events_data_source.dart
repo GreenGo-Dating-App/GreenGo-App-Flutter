@@ -47,21 +47,29 @@ class ExternalEventsDataSource {
     });
   }
 
-  /// One page for infinite scroll. Ordered by rating (or distance if location
-  /// given), filtered by [source].
+  /// One page for infinite scroll, filtered by [source] and paginated by the
+  /// chosen [sort] field. For 'distance' it paginates by rating and sorts each
+  /// page by distance (true distance can't be a Firestore order key).
   Future<({List<ExternalEvent> items, DocumentSnapshot<Map<String, dynamic>>? cursor})>
       getExperiencesPage({
     required String source,
+    String sort = 'distance',
     DocumentSnapshot<Map<String, dynamic>>? startAfter,
     int limit = 20,
     double? userLat,
     double? userLng,
   }) async {
     try {
+      final orderField = sort == 'reviews'
+          ? 'reviewCount'
+          : sort == 'date'
+              ? 'startDate'
+              : 'rating';
+      final descending = sort != 'date'; // soonest dates first
       Query<Map<String, dynamic>> query = _firestore
           .collection('external_events')
           .where('source', isEqualTo: source)
-          .orderBy('rating', descending: true)
+          .orderBy(orderField, descending: descending)
           .limit(limit);
       if (startAfter != null) query = query.startAfterDocument(startAfter);
       final snap = await query.get();
@@ -69,7 +77,7 @@ class ExternalEventsDataSource {
       if (items.isEmpty && startAfter == null) {
         return (items: _samplesFor(source), cursor: null);
       }
-      if (userLat != null && userLng != null) {
+      if (sort == 'distance' && userLat != null && userLng != null) {
         _sortByDistance(items, userLat, userLng);
       }
       return (

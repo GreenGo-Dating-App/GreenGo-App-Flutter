@@ -50,7 +50,7 @@ require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const TICKETMASTER_API_KEY = (0, params_1.defineSecret)('TICKETMASTER_API_KEY');
-const PER_COUNTRY = 100;
+const PER_COUNTRY = 200;
 // Top tourism countries → ISO-2 codes (Ticketmaster filters by countryCode).
 const COUNTRY_ISO = {
     France: 'FR', Spain: 'ES', 'United States': 'US', Italy: 'IT', Turkey: 'TR',
@@ -117,7 +117,7 @@ async function writeCountryStats(docs) {
     await batch.commit();
 }
 function mapEvent(e, countryName) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
     const venue = (((_a = e._embedded) === null || _a === void 0 ? void 0 : _a.venues) || [])[0] || {};
     const loc = venue.location || {};
     const lat = loc.latitude != null ? Number(loc.latitude) : null;
@@ -141,16 +141,16 @@ function mapEvent(e, countryName) {
             description: (_b = e.info) !== null && _b !== void 0 ? _b : null,
             imageUrl: img !== null && img !== void 0 ? img : null,
             category: (_f = (_e = (_d = (_c = e.classifications) === null || _c === void 0 ? void 0 : _c[0]) === null || _d === void 0 ? void 0 : _d.segment) === null || _e === void 0 ? void 0 : _e.name) !== null && _f !== void 0 ? _f : 'event',
-            city: (_h = (_g = venue.city) === null || _g === void 0 ? void 0 : _g.name) !== null && _h !== void 0 ? _h : null,
+            city: (_j = (_h = (_g = venue.city) === null || _g === void 0 ? void 0 : _g.name) !== null && _h !== void 0 ? _h : venue.name) !== null && _j !== void 0 ? _j : null,
             country: countryName,
             lat,
             lng,
             fromPrice: price.min != null ? Number(price.min) : null,
-            currency: (_j = price.currency) !== null && _j !== void 0 ? _j : 'USD',
+            currency: (_k = price.currency) !== null && _k !== void 0 ? _k : 'USD',
             rating: 0,
             reviewCount: 0,
-            startDate: (_m = (_l = (_k = e.dates) === null || _k === void 0 ? void 0 : _k.start) === null || _l === void 0 ? void 0 : _l.localDate) !== null && _m !== void 0 ? _m : null,
-            bookingUrl: (_o = e.url) !== null && _o !== void 0 ? _o : null,
+            startDate: (_o = (_m = (_l = e.dates) === null || _l === void 0 ? void 0 : _l.start) === null || _m === void 0 ? void 0 : _m.localDate) !== null && _o !== void 0 ? _o : null,
+            bookingUrl: (_p = e.url) !== null && _p !== void 0 ? _p : null,
             fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
         },
     };
