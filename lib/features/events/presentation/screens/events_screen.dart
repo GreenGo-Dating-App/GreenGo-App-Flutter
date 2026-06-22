@@ -219,7 +219,7 @@ class _EventsScreenState extends State<EventsScreen>
           _buildEventsList(_applySearchAndSort(_getUpcomingEvents(state))),
           _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
           _buildExperiencesTab('ticketmaster'),
-          _buildExperiencesTab('google'),
+          _buildExperiencesTab('tiqets'),
           _buildExperiencesTab('viator'),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
@@ -233,7 +233,7 @@ class _EventsScreenState extends State<EventsScreen>
         _buildEventsList([]),
         _buildEventsList([]),
         _buildExperiencesTab('ticketmaster'),
-        _buildExperiencesTab('google'),
+        _buildExperiencesTab('tiqets'),
         _buildExperiencesTab('viator'),
         _buildEventsList([]),
       ],
@@ -617,6 +617,23 @@ class _EventsScreenState extends State<EventsScreen>
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
+                    ),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: [
+                        const Icon(Icons.event,
+                            size: 10, color: AppColors.richGold),
+                        const SizedBox(width: 3),
+                        Expanded(
+                          child: Text(
+                            DateFormat('MMM d, h:mm a').format(event.startDate),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                                color: AppColors.richGold, fontSize: 10),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 2),
                     Row(

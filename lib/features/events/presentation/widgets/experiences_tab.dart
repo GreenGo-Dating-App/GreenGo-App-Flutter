@@ -1,9 +1,12 @@
+import 'dart:math' as math;
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/services/city_coordinates_service.dart';
 import '../../data/datasources/external_events_data_source.dart';
 import '../../domain/entities/external_event.dart';
 import 'share_external_sheet.dart';
@@ -49,7 +52,38 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   void initState() {
     super.initState();
     _scroll.addListener(_onScroll);
+    // City→coords lookup (loaded once) so items without their own coordinates
+    // can still be placed/sorted; unresolved items are hidden.
+    CityCoordinatesService.instance.ensureLoaded().then((_) {
+      if (mounted) setState(() {});
+    });
     _loadMore();
+  }
+
+  /// Resolved coordinates: the item's own, else the city lookup table.
+  ({double lat, double lng})? _coordOf(ExternalEvent e) {
+    if (e.lat != null && e.lng != null) return (lat: e.lat!, lng: e.lng!);
+    if (e.city != null && e.city!.isNotEmpty) {
+      return CityCoordinatesService.instance
+          .coordsFor(e.city!, country: e.country);
+    }
+    return null;
+  }
+
+  double _distanceOf(ExternalEvent e) {
+    final c = _coordOf(e);
+    if (c == null || widget.userLat == null || widget.userLng == null) {
+      return double.infinity;
+    }
+    const r = 6371.0;
+    final dLat = (c.lat - widget.userLat!) * math.pi / 180;
+    final dLng = (c.lng - widget.userLng!) * math.pi / 180;
+    final a = math.sin(dLat / 2) * math.sin(dLat / 2) +
+        math.cos(widget.userLat! * math.pi / 180) *
+            math.cos(c.lat * math.pi / 180) *
+            math.sin(dLng / 2) *
+            math.sin(dLng / 2);
+    return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
   }
 
   @override
@@ -123,13 +157,21 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   List<ExternalEvent> get _filtered {
     final q = widget.query.toLowerCase();
-    if (q.isEmpty) return _items;
-    return _items
-        .where((e) =>
-            e.title.toLowerCase().contains(q) ||
-            (e.city ?? '').toLowerCase().contains(q) ||
-            (e.country ?? '').toLowerCase().contains(q))
-        .toList();
+    var list = _items.where((e) {
+      // Hide items we can't place: no own coords AND city not in the lookup.
+      if (_coordOf(e) == null) return false;
+      if (q.isEmpty) return true;
+      return e.title.toLowerCase().contains(q) ||
+          (e.city ?? '').toLowerCase().contains(q) ||
+          (e.country ?? '').toLowerCase().contains(q);
+    }).toList();
+    // Distance sort (closest first) using resolved coordinates.
+    if (widget.sort == 'distance' &&
+        widget.userLat != null &&
+        widget.userLng != null) {
+      list.sort((a, b) => _distanceOf(a).compareTo(_distanceOf(b)));
+    }
+    return list;
   }
 
   Future<void> _book(String url) async {
@@ -387,6 +429,21 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                             color: AppColors.textPrimary,
                             fontSize: 11,
                             fontWeight: FontWeight.w600)),
+                    if (e.startDate != null && e.startDate!.isNotEmpty) ...[
+                      const SizedBox(height: 2),
+                      Row(children: [
+                        const Icon(Icons.event,
+                            size: 10, color: AppColors.richGold),
+                        const SizedBox(width: 3),
+                        Expanded(
+                          child: Text(e.startDate!,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                  color: AppColors.richGold, fontSize: 10)),
+                        ),
+                      ]),
+                    ],
                     if ([e.city, e.country]
                         .any((s) => s != null && s.isNotEmpty)) ...[
                       const SizedBox(height: 2),
