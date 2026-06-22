@@ -37,6 +37,13 @@ abstract class EventsRemoteDataSource {
 
   Future<void> cancelRsvp(String eventId, String userId);
 
+  /// Write/remove the per-user like doc. `likeCount` is kept current by the
+  /// onEventLikeWrite Cloud Function.
+  Future<void> setEventLiked(String eventId, String userId, bool liked);
+
+  /// Live stream of whether [userId] likes [eventId].
+  Stream<bool> watchEventLiked(String eventId, String userId);
+
   Future<List<EventAttendee>> getEventAttendees(String eventId);
 
   Future<List<Event>> getEventsNearLocation(
@@ -223,6 +230,9 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final model = EventModel.fromEntity(event);
       final json = model.toJson();
       json['updatedAt'] = Timestamp.fromDate(DateTime.now());
+      // CF-maintained counters — never overwrite from a (possibly stale) client.
+      json.remove('likeCount');
+      json.remove('attendeeCount');
 
       await _eventsCollection.doc(event.id).update(json);
       debugPrint('Event updated: ${event.id}');
@@ -333,6 +343,36 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       debugPrint('Error cancelling RSVP: $e');
       throw ServerException('Failed to cancel RSVP: $e');
     }
+  }
+
+  @override
+  Future<void> setEventLiked(
+      String eventId, String userId, bool liked) async {
+    try {
+      final ref =
+          _eventsCollection.doc(eventId).collection('likes').doc(userId);
+      if (liked) {
+        await ref.set({
+          'userId': userId,
+          'createdAt': FieldValue.serverTimestamp(),
+        });
+      } else {
+        await ref.delete();
+      }
+    } catch (e) {
+      debugPrint('Error setting like ($liked) for $eventId: $e');
+      throw ServerException('Failed to update like: $e');
+    }
+  }
+
+  @override
+  Stream<bool> watchEventLiked(String eventId, String userId) {
+    return _eventsCollection
+        .doc(eventId)
+        .collection('likes')
+        .doc(userId)
+        .snapshots()
+        .map((d) => d.exists);
   }
 
   @override

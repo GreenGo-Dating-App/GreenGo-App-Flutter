@@ -38,6 +38,17 @@ abstract class EventsRepository {
   /// Cancel RSVP for an event
   Future<Either<Failure, void>> cancelRsvp(String eventId, String userId);
 
+  /// Like / unlike an event. The denormalized `likeCount` is maintained by the
+  /// onEventLikeWrite Cloud Function, so this only writes the per-user like doc.
+  Future<Either<Failure, void>> setEventLiked(
+    String eventId,
+    String userId,
+    bool liked,
+  );
+
+  /// Live stream of whether [userId] currently likes [eventId].
+  Stream<bool> watchEventLiked(String eventId, String userId);
+
   /// Get attendees for an event
   Future<Either<Failure, List<EventAttendee>>> getEventAttendees(
     String eventId,

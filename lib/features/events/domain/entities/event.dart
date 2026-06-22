@@ -86,6 +86,7 @@ class Event extends Equatable {
     this.city,
     this.country,
     this.attendeeCount = 0,
+    this.likeCount = 0,
     this.updatedAt,
     this.visibility = EventVisibility.public,
     this.externalLinks = const [],
@@ -123,6 +124,8 @@ class Event extends Equatable {
   final String? city;
   final String? country;
   final int attendeeCount;
+  /// Denormalized number of likes (maintained by the onEventLikeWrite CF).
+  final int likeCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
   final EventVisibility visibility;
@@ -181,6 +184,7 @@ class Event extends Equatable {
         city,
         country,
         attendeeCount,
+        likeCount,
         createdAt,
         updatedAt,
         visibility,
@@ -221,6 +225,7 @@ class Event extends Equatable {
     String? city,
     String? country,
     int? attendeeCount,
+    int? likeCount,
     DateTime? createdAt,
     DateTime? updatedAt,
     EventVisibility? visibility,
@@ -260,6 +265,7 @@ class Event extends Equatable {
       city: city ?? this.city,
       country: country ?? this.country,
       attendeeCount: attendeeCount ?? this.attendeeCount,
+      likeCount: likeCount ?? this.likeCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       visibility: visibility ?? this.visibility,

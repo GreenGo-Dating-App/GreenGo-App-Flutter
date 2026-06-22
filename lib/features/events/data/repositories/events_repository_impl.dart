@@ -142,6 +142,28 @@ class EventsRepositoryImpl implements EventsRepository {
   }
 
   @override
+  Future<Either<Failure, void>> setEventLiked(
+    String eventId,
+    String userId,
+    bool liked,
+  ) async {
+    try {
+      await remoteDataSource.setEventLiked(eventId, userId, liked);
+      return const Right(null);
+    } on ServerException catch (e) {
+      debugPrint('ServerException in setEventLiked: ${e.message}');
+      return Left(ServerFailure(e.message));
+    } catch (e) {
+      debugPrint('Error in setEventLiked: $e');
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Stream<bool> watchEventLiked(String eventId, String userId) =>
+      remoteDataSource.watchEventLiked(eventId, userId);
+
+  @override
   Future<Either<Failure, List<EventAttendee>>> getEventAttendees(
     String eventId,
   ) async {

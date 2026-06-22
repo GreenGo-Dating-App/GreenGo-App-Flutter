@@ -812,6 +812,12 @@ service cloud.firestore {
           && (request.auth.uid == uid || parentOrganizer());
       }
 
+      // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.
+      match /likes/{uid} {
+        allow read: if isSignedIn();
+        allow write: if isSignedIn() && request.auth.uid == uid;
+      }
+
       match /messages/{messageId} {
         function members() {
           return isSignedIn() && (

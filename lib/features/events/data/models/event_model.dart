@@ -31,6 +31,7 @@ class EventModel extends Event {
     super.city,
     super.country,
     super.attendeeCount = 0,
+    super.likeCount = 0,
     super.updatedAt,
     super.visibility = EventVisibility.public,
     super.externalLinks = const [],
@@ -72,6 +73,7 @@ class EventModel extends Event {
       city: event.city,
       country: event.country,
       attendeeCount: event.attendeeCount,
+      likeCount: event.likeCount,
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
       visibility: event.visibility,
@@ -121,6 +123,7 @@ class EventModel extends Event {
       city: json['city'] as String?,
       country: json['country'] as String?,
       attendeeCount: (json['attendeeCount'] as num?)?.toInt() ?? 0,
+      likeCount: (json['likeCount'] as num?)?.toInt() ?? 0,
       createdAt: _parseDateTime(json['createdAt']),
       updatedAt: json['updatedAt'] != null
           ? _parseDateTime(json['updatedAt'])
@@ -170,6 +173,7 @@ class EventModel extends Event {
       'city': city,
       'country': country,
       'attendeeCount': attendeeCount,
+      'likeCount': likeCount,
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
       'visibility': visibility.value,
