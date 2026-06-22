@@ -19337,6 +19337,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Live Events'**
   String get globeLayerLiveEvents;
+
+  /// No description provided for @eventsSortBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort by'**
+  String get eventsSortBy;
+
+  /// No description provided for @eventsSortDistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Distance'**
+  String get eventsSortDistance;
+
+  /// No description provided for @eventsSortStars.
+  ///
+  /// In en, this message translates to:
+  /// **'Stars'**
+  String get eventsSortStars;
+
+  /// No description provided for @eventsSortReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviews'**
+  String get eventsSortReviews;
+
+  /// No description provided for @eventsSortDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get eventsSortDate;
 }
 
 class _AppLocalizationsDelegate

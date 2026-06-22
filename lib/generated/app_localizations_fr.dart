@@ -11017,4 +11017,19 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get globeLayerLiveEvents => 'Événements live';
+
+  @override
+  String get eventsSortBy => 'Trier par';
+
+  @override
+  String get eventsSortDistance => 'Distance';
+
+  @override
+  String get eventsSortStars => 'Étoiles';
+
+  @override
+  String get eventsSortReviews => 'Avis';
+
+  @override
+  String get eventsSortDate => 'Date';
 }

@@ -55,6 +55,7 @@ class _EventsScreenState extends State<EventsScreen>
   bool _gridView = false;
   double? _userLat;
   double? _userLng;
+  String _extSort = 'distance'; // distance | rating | reviews | date
 
   @override
   void initState() {
@@ -267,26 +268,45 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           const SizedBox(width: 8),
-          // Popularity sort toggle
-          ChoiceChip(
-            label: Text(AppLocalizations.of(context)!.eventsSortPopular),
-            avatar: Icon(
-              Icons.local_fire_department,
-              size: 18,
-              color: _sortByPopularity
-                  ? AppColors.deepBlack
-                  : AppColors.richGold,
+          // Native tabs: popularity toggle. External tabs: sort menu.
+          if (_isNativeTab)
+            ChoiceChip(
+              label: Text(AppLocalizations.of(context)!.eventsSortPopular),
+              avatar: Icon(
+                Icons.local_fire_department,
+                size: 18,
+                color: _sortByPopularity
+                    ? AppColors.deepBlack
+                    : AppColors.richGold,
+              ),
+              selected: _sortByPopularity,
+              selectedColor: AppColors.richGold,
+              backgroundColor: AppColors.backgroundCard,
+              labelStyle: TextStyle(
+                color: _sortByPopularity
+                    ? AppColors.deepBlack
+                    : AppColors.textPrimary,
+              ),
+              onSelected: (v) => setState(() => _sortByPopularity = v),
+            )
+          else
+            PopupMenuButton<String>(
+              icon: const Icon(Icons.sort, color: AppColors.richGold),
+              tooltip: AppLocalizations.of(context)!.eventsSortBy,
+              color: AppColors.backgroundCard,
+              initialValue: _extSort,
+              onSelected: (v) => setState(() => _extSort = v),
+              itemBuilder: (ctx) => [
+                _sortItem('distance',
+                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me),
+                _sortItem('rating',
+                    AppLocalizations.of(ctx)!.eventsSortStars, Icons.star),
+                _sortItem('reviews',
+                    AppLocalizations.of(ctx)!.eventsSortReviews, Icons.reviews),
+                _sortItem('date',
+                    AppLocalizations.of(ctx)!.eventsSortDate, Icons.event),
+              ],
             ),
-            selected: _sortByPopularity,
-            selectedColor: AppColors.richGold,
-            backgroundColor: AppColors.backgroundCard,
-            labelStyle: TextStyle(
-              color: _sortByPopularity
-                  ? AppColors.deepBlack
-                  : AppColors.textPrimary,
-            ),
-            onSelected: (v) => setState(() => _sortByPopularity = v),
-          ),
           const SizedBox(width: 4),
           // List / grid view toggle
           IconButton(
@@ -299,6 +319,24 @@ class _EventsScreenState extends State<EventsScreen>
             ),
             onPressed: () => setState(() => _gridView = !_gridView),
           ),
+        ],
+      ),
+    );
+  }
+
+  PopupMenuItem<String> _sortItem(String value, String label, IconData icon) {
+    final selected = _extSort == value;
+    return PopupMenuItem<String>(
+      value: value,
+      child: Row(
+        children: [
+          Icon(icon,
+              size: 18,
+              color: selected ? AppColors.richGold : AppColors.textSecondary),
+          const SizedBox(width: 10),
+          Text(label,
+              style: TextStyle(
+                  color: selected ? AppColors.richGold : AppColors.textPrimary)),
         ],
       ),
     );
@@ -609,6 +647,7 @@ class _EventsScreenState extends State<EventsScreen>
       gridView: _gridView,
       query: _searchQuery,
       popular: _sortByPopularity,
+      sort: _extSort,
       userLat: _userLat,
       userLng: _userLng,
     );

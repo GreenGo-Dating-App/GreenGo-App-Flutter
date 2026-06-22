@@ -3704,5 +3704,10 @@
   "globeLayerContacts": "A minha comunidade",
   "globeLayerExperiences": "Experiências",
   "eventsTabLiveEvents": "Eventos ao vivo",
-  "globeLayerLiveEvents": "Eventos ao vivo"
+  "globeLayerLiveEvents": "Eventos ao vivo",
+  "eventsSortBy": "Ordenar por",
+  "eventsSortDistance": "Distância",
+  "eventsSortStars": "Estrelas",
+  "eventsSortReviews": "Avaliações",
+  "eventsSortDate": "Data"
 }

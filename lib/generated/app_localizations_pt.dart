@@ -10946,6 +10946,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get globeLayerLiveEvents => 'Eventos ao vivo';
+
+  @override
+  String get eventsSortBy => 'Ordenar por';
+
+  @override
+  String get eventsSortDistance => 'Distância';
+
+  @override
+  String get eventsSortStars => 'Estrelas';
+
+  @override
+  String get eventsSortReviews => 'Avaliações';
+
+  @override
+  String get eventsSortDate => 'Data';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21592,4 +21607,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get globeLayerLiveEvents => 'Eventos ao vivo';
+
+  @override
+  String get eventsSortBy => 'Ordenar por';
+
+  @override
+  String get eventsSortDistance => 'Distância';
+
+  @override
+  String get eventsSortStars => 'Estrelas';
+
+  @override
+  String get eventsSortReviews => 'Avaliações';
+
+  @override
+  String get eventsSortDate => 'Data';
 }
