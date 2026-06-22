@@ -15,8 +15,9 @@ import '../../../chat/domain/usecases/send_group_message.dart';
 import '../../domain/entities/external_event.dart';
 
 /// Share an external experience/attraction/live-event into the user's chats and
-/// groups — same recipient picker as native events, but sends a rich text
-/// message (title · place · booking link) since these aren't native event docs.
+/// groups — same recipient picker AND same rich event card as native events.
+/// Sends a `MessageType.event` whose metadata carries the booking URL, so the
+/// card is tappable and deep-links out to the provider to book.
 Future<void> showShareExternalSheet(
   BuildContext context, {
   required ExternalEvent item,
@@ -40,26 +41,24 @@ class _ShareExternalSheet extends StatelessWidget {
   final ExternalEvent item;
   final String currentUserId;
 
-  String get _message {
-    final place = [item.city, item.country]
-        .where((s) => s != null && s!.isNotEmpty)
-        .join(', ');
-    final lines = <String>[
-      '🎟 ${item.title}',
-      if (place.isNotEmpty) '📍 $place',
-      if (item.startDate != null && item.startDate!.isNotEmpty)
-        '📅 ${item.startDate}',
-      if (item.bookingUrl.isNotEmpty) item.bookingUrl,
-    ];
-    return lines.join('\n');
-  }
+  /// Card metadata — mirrors native event shares so the same EventMessageCard
+  /// renders, but with an external booking URL (no native eventId) so the card
+  /// deep-links out to the provider on tap.
+  Map<String, dynamic> get _metadata => {
+        'eventTitle': item.title,
+        'eventImageUrl': item.imageUrl,
+        'externalUrl': item.bookingUrl,
+        'externalSource': item.sourceLabel,
+      };
 
   Future<void> _toGroup(BuildContext context, String groupId) async {
     await di.sl<SendGroupMessage>()(
       SendGroupMessageParams(
         groupId: groupId,
         senderId: currentUserId,
-        content: _message,
+        content: item.bookingUrl,
+        type: MessageType.event,
+        metadata: _metadata,
       ),
     );
     _done(context);
@@ -70,8 +69,9 @@ class _ShareExternalSheet extends StatelessWidget {
           matchId: c.matchId,
           senderId: currentUserId,
           receiverId: c.getOtherUserId(currentUserId),
-          content: _message,
-          type: MessageType.text,
+          content: item.bookingUrl,
+          type: MessageType.event,
+          metadata: _metadata,
         );
     _done(context);
   }
