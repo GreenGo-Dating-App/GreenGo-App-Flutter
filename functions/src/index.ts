@@ -73,6 +73,12 @@ export {
   runIngestTicketmasterNow,
 } from './external_events/ticketmaster';
 
+// Google Places attractions ingester.
+export {
+  ingestGooglePlaces,
+  runIngestGoogleNow,
+} from './external_events/google_places';
+
 // Events — per-country aggregation for the globe.
 export {
   onEventWriteUpdateCountryStats,

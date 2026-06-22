@@ -191,7 +191,9 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         ? Colors.purple
         : e.source == 'ticketmaster'
             ? Colors.indigo
-            : Colors.teal;
+            : e.source == 'google'
+                ? Colors.green
+                : Colors.teal;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(

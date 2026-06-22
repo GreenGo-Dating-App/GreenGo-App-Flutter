@@ -49,6 +49,8 @@ class ExternalEvent {
         return 'Tiqets';
       case 'ticketmaster':
         return 'Ticketmaster';
+      case 'google':
+        return 'Google';
       default:
         return 'Viator';
     }
