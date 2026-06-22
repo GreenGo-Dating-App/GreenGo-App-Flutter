@@ -10845,4 +10845,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get globeLayerLiveEvents => 'Live Events';
+
+  @override
+  String get eventsSortBy => 'Sort by';
+
+  @override
+  String get eventsSortDistance => 'Distance';
+
+  @override
+  String get eventsSortStars => 'Stars';
+
+  @override
+  String get eventsSortReviews => 'Reviews';
+
+  @override
+  String get eventsSortDate => 'Date';
 }

@@ -113,7 +113,7 @@ function mapEvent(e: any, countryName: string): Doc | null {
       description: e.info ?? null,
       imageUrl: img ?? null,
       category: e.classifications?.[0]?.segment?.name ?? 'event',
-      city: venue.city?.name ?? null,
+      city: venue.city?.name ?? venue.name ?? null,
       country: countryName,
       lat,
       lng,

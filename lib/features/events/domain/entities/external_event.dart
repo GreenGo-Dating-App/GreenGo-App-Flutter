@@ -22,6 +22,7 @@ class ExternalEvent {
     this.durationMinutes,
     this.lat,
     this.lng,
+    this.startDate,
   });
 
   final String id;
@@ -40,6 +41,7 @@ class ExternalEvent {
   final int? durationMinutes;
   final double? lat;
   final double? lng;
+  final String? startDate; // e.g. '2026-07-15' (live events)
 
   String get sourceLabel => source == 'tiqets' ? 'Tiqets' : 'Viator';
 
@@ -65,6 +67,7 @@ class ExternalEvent {
       durationMinutes: (d['durationMinutes'] as num?)?.toInt(),
       lat: (d['lat'] as num?)?.toDouble(),
       lng: (d['lng'] as num?)?.toDouble(),
+      startDate: d['startDate'] as String?,
     );
   }
 

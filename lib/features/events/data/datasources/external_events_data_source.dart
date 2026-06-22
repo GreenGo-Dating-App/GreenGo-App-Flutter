@@ -82,6 +82,48 @@ class ExternalEventsDataSource {
     }
   }
 
+  /// Items for [source] sorted by [sort]: 'distance' | 'rating' | 'reviews' |
+  /// 'date'. Loads a bounded pool (by rating) then sorts client-side, so all
+  /// modes work without extra indexes.
+  Future<List<ExternalEvent>> getExperiencesSorted({
+    required String source,
+    required String sort,
+    double? userLat,
+    double? userLng,
+    int limit = 400,
+  }) async {
+    try {
+      final snap = await _firestore
+          .collection('external_events')
+          .where('source', isEqualTo: source)
+          .orderBy('rating', descending: true)
+          .limit(limit)
+          .get();
+      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      if (items.isEmpty) return _samplesFor(source);
+      switch (sort) {
+        case 'reviews':
+          items.sort((a, b) => (b.reviewCount ?? 0).compareTo(a.reviewCount ?? 0));
+          break;
+        case 'rating':
+          items.sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
+          break;
+        case 'date':
+          items.sort((a, b) =>
+              (a.startDate ?? '9999').compareTo(b.startDate ?? '9999'));
+          break;
+        case 'distance':
+        default:
+          if (userLat != null && userLng != null) {
+            _sortByDistance(items, userLat, userLng);
+          }
+      }
+      return items;
+    } catch (_) {
+      return _samplesFor(source);
+    }
+  }
+
   /// Items for [source] ordered by distance from the user (closest first).
   /// Loads a bounded pool then sorts locally by distance (items carry city
   /// coordinates). Bounded read; cache-first after first load.

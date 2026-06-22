@@ -18,6 +18,7 @@ class ExperiencesTab extends StatefulWidget {
     this.source = 'viator',
     this.userLat,
     this.userLng,
+    this.sort = 'distance',
   });
 
   final bool gridView;
@@ -26,6 +27,7 @@ class ExperiencesTab extends StatefulWidget {
   final String source;
   final double? userLat;
   final double? userLng;
+  final String sort; // distance | rating | reviews | date
 
   @override
   State<ExperiencesTab> createState() => _ExperiencesTabState();
@@ -53,11 +55,12 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     // Switching Popular/source, or location arriving, changes the dataset.
     if (old.popular != widget.popular ||
         old.source != widget.source ||
+        old.sort != widget.sort ||
         old.userLat != widget.userLat ||
         old.userLng != widget.userLng) {
       _items.clear();
       _cursor = null;
-      _hasMore = !widget.popular;
+      _hasMore = false;
       _firstLoadDone = false;
       _loadMore();
     }
@@ -77,58 +80,23 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Future<void> _loadMore() async {
-    if (_loading) return;
-    // Popular mode: a single fixed set (top 20 by reviews, rating > 4.5).
-    if (widget.popular) {
-      if (_firstLoadDone) return;
-      setState(() => _loading = true);
-      final items =
-          await _ds.getPopularExperiences(source: widget.source, limit: 20);
-      if (!mounted) return;
-      setState(() {
-        _items
-          ..clear()
-          ..addAll(items);
-        _hasMore = false;
-        _loading = false;
-        _firstLoadDone = true;
-      });
-      return;
-    }
-    // Location known → single distance-sorted pool (closest first).
-    if (widget.userLat != null && widget.userLng != null) {
-      if (_firstLoadDone) return;
-      setState(() => _loading = true);
-      final items = await _ds.getNearbyExperiences(
-        source: widget.source,
-        userLat: widget.userLat!,
-        userLng: widget.userLng!,
-      );
-      if (!mounted) return;
-      setState(() {
-        _items
-          ..clear()
-          ..addAll(items);
-        _hasMore = false;
-        _loading = false;
-        _firstLoadDone = true;
-      });
-      return;
-    }
-    if (!_hasMore) return;
+    if (_loading || _firstLoadDone) return;
     setState(() => _loading = true);
-    final page = await _ds.getExperiencesPage(
-      source: widget.source,
-      startAfter: _cursor,
-      limit: 20,
-      userLat: widget.userLat,
-      userLng: widget.userLng,
-    );
+    // Single bounded pool sorted by the selected mode (popular = reviews).
+    final items = widget.popular
+        ? await _ds.getPopularExperiences(source: widget.source, limit: 60)
+        : await _ds.getExperiencesSorted(
+            source: widget.source,
+            sort: widget.sort,
+            userLat: widget.userLat,
+            userLng: widget.userLng,
+          );
     if (!mounted) return;
     setState(() {
-      _items.addAll(page.items);
-      _cursor = page.cursor;
-      _hasMore = page.cursor != null && page.items.isNotEmpty;
+      _items
+        ..clear()
+        ..addAll(items);
+      _hasMore = false;
       _loading = false;
       _firstLoadDone = true;
     });
@@ -283,6 +251,21 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                           color: AppColors.textPrimary,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
+                  if (e.startDate != null && e.startDate!.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Row(
+                      children: [
+                        const Icon(Icons.event,
+                            size: 14, color: AppColors.richGold),
+                        const SizedBox(width: 4),
+                        Text(e.startDate!,
+                            style: const TextStyle(
+                                color: AppColors.richGold,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600)),
+                      ],
+                    ),
+                  ],
                   const SizedBox(height: 4),
                   Row(
                     children: [
