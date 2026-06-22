@@ -91,6 +91,12 @@ export {
   onEventMessageCreated,
 } from './events/broadcast';
 
+// Events — denormalized like counter (per-user likes subcollection → likeCount).
+export {
+  onEventLikeCreated,
+  onEventLikeDeleted,
+} from './events/likes';
+
 // Events — scheduled reminders.
 export {
   sendEventReminders,

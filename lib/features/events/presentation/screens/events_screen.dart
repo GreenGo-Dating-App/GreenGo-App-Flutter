@@ -15,6 +15,7 @@ import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../widgets/experiences_tab.dart';
+import '../widgets/event_like_button.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
@@ -377,7 +378,13 @@ class _EventsScreenState extends State<EventsScreen>
         list.sort((a, b) => a.startDate.compareTo(b.startDate));
         break;
       case 'popular':
-        list.sort((a, b) => b.attendeeCount.compareTo(a.attendeeCount));
+        // Most popular = most likes (tie-break by attendees).
+        list.sort((a, b) {
+          final byLikes = b.likeCount.compareTo(a.likeCount);
+          return byLikes != 0
+              ? byLikes
+              : b.attendeeCount.compareTo(a.attendeeCount);
+        });
         break;
       case 'distance':
       default:
@@ -666,6 +673,13 @@ class _EventsScreenState extends State<EventsScreen>
                           '${event.goingCount}',
                           style: const TextStyle(
                               color: AppColors.textTertiary, fontSize: 10),
+                        ),
+                        const Spacer(),
+                        EventLikeButton(
+                          eventId: event.id,
+                          userId: widget.currentUserId,
+                          likeCount: event.likeCount,
+                          compact: true,
                         ),
                       ],
                     ),
@@ -1056,7 +1070,7 @@ class EventCard extends StatelessWidget {
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      // Attendees
+                      // Attendees + like
                       Expanded(
                         child: Row(
                           children: [
@@ -1072,6 +1086,12 @@ class EventCard extends StatelessWidget {
                                 color: AppColors.textTertiary,
                                 fontSize: 12,
                               ),
+                            ),
+                            const SizedBox(width: 12),
+                            EventLikeButton(
+                              eventId: event.id,
+                              userId: currentUserId,
+                              likeCount: event.likeCount,
                             ),
                           ],
                         ),
@@ -1261,6 +1281,15 @@ class EventDetailsScreen extends StatelessWidget {
                       color: AppColors.textPrimary,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: EventLikeButton(
+                      eventId: event.id,
+                      userId: currentUserId,
+                      likeCount: event.likeCount,
                     ),
                   ),
                   const SizedBox(height: 16),
