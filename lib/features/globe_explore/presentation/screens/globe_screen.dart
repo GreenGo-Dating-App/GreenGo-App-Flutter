@@ -158,7 +158,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
         subtitle: Text(
           [
             if (e.city != null && e.city!.isNotEmpty) e.city!,
-            if (e.rating != null) '⭐ ${e.rating}',
+            if (e.rating != null && e.rating! > 0) '⭐ ${e.rating}',
             if (e.fromPrice != null)
               '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
           ].join('  ·  '),
@@ -246,7 +246,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
           subtitle: Text(
             [
               if (e.city != null && e.city!.isNotEmpty) e.city!,
-              if (e.rating != null) '⭐ ${e.rating}',
+              if (e.rating != null && e.rating! > 0) '⭐ ${e.rating}',
               if (e.fromPrice != null)
                 '${e.currency ?? ''} ${e.fromPrice!.toStringAsFixed(0)}',
             ].join('  ·  '),

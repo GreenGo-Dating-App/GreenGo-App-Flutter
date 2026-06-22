@@ -165,7 +165,17 @@ async function runTicketmaster(key: string): Promise<number> {
   }
   const all: Doc[] = [];
   for (const [name, iso] of Object.entries(COUNTRY_ISO)) {
-    all.push(...(await fetchForCountry(key, iso, name)));
+    const docs = await fetchForCountry(key, iso, name);
+    // Dedupe within a country by title + city (TM repeats a show across dates).
+    const seen = new Set<string>();
+    for (const d of docs) {
+      const key2 =
+        `${(d.data.title as string) || ''}|${(d.data.city as string) || ''}`
+          .toLowerCase();
+      if (seen.has(key2)) continue;
+      seen.add(key2);
+      all.push(d);
+    }
   }
   if (all.length > 0) {
     await upsertAll(all);
