@@ -4,9 +4,13 @@ import '../di/injection_container.dart';
 /// Lightweight public profile summary used to render names/avatars for user ids
 /// (group members, message senders) without storing duplicated name data.
 class UserBrief {
-  const UserBrief({required this.name, this.photoUrl});
+  const UserBrief({required this.name, this.photoUrl, this.language});
   final String name;
   final String? photoUrl;
+
+  /// Primary language (a code like `en`/`pt_BR` or a display name) — used to
+  /// show the member's origin flag in group chats. Null when unknown.
+  final String? language;
 }
 
 /// Resolves user ids → display name + avatar, with a process-wide in-memory
@@ -41,6 +45,7 @@ class UserDirectoryService {
           _cache[u] = UserBrief(
             name: name,
             photoUrl: p.photoUrls.isNotEmpty ? p.photoUrls.first : null,
+            language: p.languages.isNotEmpty ? p.languages.first : null,
           );
         } catch (_) {
           _cache[u] = UserBrief(name: u);

@@ -18882,6 +18882,54 @@ abstract class AppLocalizations {
   /// **'Invite by nickname'**
   String get groupInviteByNickname;
 
+  /// No description provided for @groupAddMembers.
+  ///
+  /// In en, this message translates to:
+  /// **'Add members'**
+  String get groupAddMembers;
+
+  /// No description provided for @groupTtsReadTranslated.
+  ///
+  /// In en, this message translates to:
+  /// **'Read aloud the translation'**
+  String get groupTtsReadTranslated;
+
+  /// No description provided for @groupTtsReadTranslatedHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Double-tap a message to hear it. On = your language, Off = original.'**
+  String get groupTtsReadTranslatedHint;
+
+  /// No description provided for @ttsNotEnoughCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough coins for TTS (5 coins required)'**
+  String get ttsNotEnoughCoins;
+
+  /// No description provided for @groupRemoveMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove member'**
+  String get groupRemoveMember;
+
+  /// No description provided for @groupRemoveMemberConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {name} from this group?'**
+  String groupRemoveMemberConfirm(String name);
+
+  /// No description provided for @groupMemberRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} removed'**
+  String groupMemberRemoved(String name);
+
+  /// No description provided for @groupAddSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'Add {count} selected'**
+  String groupAddSelected(int count);
+
   /// No description provided for @groupNicknameHint.
   ///
   /// In en, this message translates to:

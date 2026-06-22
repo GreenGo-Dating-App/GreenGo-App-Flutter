@@ -5069,6 +5069,29 @@
     }
   },
   "groupInviteByNickname": "Invite by nickname",
+  "groupAddMembers": "Add members",
+  "groupTtsReadTranslated": "Read aloud the translation",
+  "groupTtsReadTranslatedHint": "Double-tap a message to hear it. On = your language, Off = original.",
+  "ttsNotEnoughCoins": "Not enough coins for TTS (5 coins required)",
+  "groupRemoveMember": "Remove member",
+  "groupRemoveMemberConfirm": "Remove {name} from this group?",
+  "@groupRemoveMemberConfirm": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "groupMemberRemoved": "{name} removed",
+  "@groupMemberRemoved": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "groupAddSelected": "Add {count} selected",
+  "@groupAddSelected": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
   "groupNicknameHint": "Enter a nickname",
   "groupNoContacts": "No contacts to add yet",
   "groupNoOneFound": "No one found with that nickname",
