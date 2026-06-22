@@ -224,6 +224,9 @@ const TOP_CITIES = [
     // Italy
     ...['Rome', 'Milan', 'Naples', 'Turin', 'Bologna']
         .map((c) => ({ city: c, country: 'Italy' })),
+    // Brazil
+    ...['Sao Paulo', 'Rio de Janeiro', 'Brasilia', 'Belo Horizonte', 'Curitiba']
+        .map((c) => ({ city: c, country: 'Brazil' })),
     // Others
     { city: 'Amsterdam', country: 'Netherlands' },
     { city: 'Rotterdam', country: 'Netherlands' },
@@ -271,6 +274,92 @@ async function fetchForCity(key, city, countryName) {
     }
     return docs;
 }
+// Cities we guarantee deep coverage for (target ≥ MIN_PER_PRIORITY each). The
+// per-city fetch already pages up to PER_COUNTRY (200), so any city with that
+// many events on Ticketmaster easily clears the floor; the returned counts show
+// where TM simply doesn't have 50 (e.g. sparse markets).
+const MIN_PER_PRIORITY = 50;
+const PRIORITY_CITIES = [
+    { city: 'New York', country: 'United States', lat: 40.7128, lng: -74.0060 },
+    { city: 'Los Angeles', country: 'United States', lat: 34.0522, lng: -118.2437 },
+    { city: 'Sao Paulo', country: 'Brazil', lat: -23.5505, lng: -46.6333 },
+    { city: 'Rio de Janeiro', country: 'Brazil', lat: -22.9068, lng: -43.1729 },
+    { city: 'Paris', country: 'France', lat: 48.8566, lng: 2.3522 },
+    { city: 'Rome', country: 'Italy', lat: 41.9028, lng: 12.4964 },
+    { city: 'Milan', country: 'Italy', lat: 45.4642, lng: 9.1900 },
+    { city: 'Madrid', country: 'Spain', lat: 40.4168, lng: -3.7038 },
+    { city: 'London', country: 'United Kingdom', lat: 51.5074, lng: -0.1278 },
+    { city: 'Berlin', country: 'Germany', lat: 52.5200, lng: 13.4050 },
+];
+/** Geo-radius pull (reliable across regions, unlike the city= text filter). */
+async function fetchForGeo(key, lat, lng, countryName) {
+    var _a, _b, _c;
+    const docs = [];
+    const pageSize = 100;
+    for (let page = 0; docs.length < PER_COUNTRY; page++) {
+        try {
+            const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${key}` +
+                `&latlong=${lat},${lng}&radius=75&unit=km` +
+                `&size=${pageSize}&page=${page}&sort=distance,asc`;
+            const res = await fetch(url);
+            if (!res.ok)
+                break;
+            const json = await res.json();
+            const events = ((_a = json._embedded) === null || _a === void 0 ? void 0 : _a.events) || [];
+            if (events.length === 0)
+                break;
+            for (const e of events) {
+                const d = mapEvent(e, countryName);
+                if (d)
+                    docs.push(d);
+            }
+            const totalPages = (_c = (_b = json.page) === null || _b === void 0 ? void 0 : _b.totalPages) !== null && _c !== void 0 ? _c : 1;
+            if (page + 1 >= totalPages)
+                break;
+        }
+        catch (_) {
+            break;
+        }
+    }
+    return docs.slice(0, PER_COUNTRY);
+}
+/** Targeted pull of just the priority cities; upserts + rebuilds the index. */
+async function runPriorityCities(key) {
+    if (!key)
+        return {};
+    const counts = {};
+    const all = [];
+    const seen = new Set();
+    for (const { city, country, lat, lng } of PRIORITY_CITIES) {
+        // Geo-radius first (reliable), fall back to city= text match.
+        let docs = await fetchForGeo(key, lat, lng, country);
+        if (docs.length < MIN_PER_PRIORITY) {
+            const byName = await fetchForCity(key, city, country);
+            const have = new Set(docs.map((d) => d.id));
+            for (const d of byName)
+                if (!have.has(d.id))
+                    docs.push(d);
+        }
+        counts[city] = docs.length;
+        for (const d of docs) {
+            const k = `${d.data.title || ''}|${d.data.city || ''}`
+                .toLowerCase();
+            if (seen.has(k))
+                continue;
+            seen.add(k);
+            all.push(d);
+        }
+        if (docs.length < MIN_PER_PRIORITY) {
+            console.warn(`TM priority ${city}: only ${docs.length} (< ${MIN_PER_PRIORITY}).`);
+        }
+    }
+    if (all.length > 0) {
+        await upsertAll(all);
+        await writeCountryStats(all);
+        await (0, build_index_1.buildSourceIndex)('ticketmaster');
+    }
+    return counts;
+}
 async function runTicketmaster(key) {
     if (!key) {
         console.log('ingestTicketmaster: TICKETMASTER_API_KEY not set — skipping.');
@@ -311,6 +400,12 @@ exports.runIngestTicketmasterNow = (0, https_1.onRequest)({ timeoutSeconds: 540,
     const key = TICKETMASTER_API_KEY.value();
     if (!key || req.query.token !== key) {
         res.status(403).send('Forbidden');
+        return;
+    }
+    // ?priority=1 → fast targeted refresh of the 10 priority cities only.
+    if (req.query.priority) {
+        const counts = await runPriorityCities(key);
+        res.status(200).json({ ok: true, mode: 'priority', counts });
         return;
     }
     let cleared = 0;
