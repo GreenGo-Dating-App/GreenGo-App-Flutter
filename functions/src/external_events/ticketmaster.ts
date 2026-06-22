@@ -158,24 +158,113 @@ async function fetchForCountry(key: string, iso: string, countryName: string): P
   return docs.slice(0, PER_COUNTRY);
 }
 
+// Event-dense cities (where Ticketmaster has deep coverage) → adds depth beyond
+// the per-country top lists so the feed approaches 5k. {city, country name}.
+const TOP_CITIES: { city: string; country: string }[] = [
+  // United States
+  ...['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
+    'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'Austin',
+    'San Jose', 'Las Vegas', 'Nashville', 'Atlanta', 'Miami', 'Boston',
+    'Seattle', 'Denver', 'Washington', 'Detroit', 'Minneapolis', 'Orlando',
+    'Tampa', 'Portland', 'Charlotte', 'San Francisco', 'Pittsburgh',
+    'St. Louis', 'Sacramento', 'Kansas City', 'Cleveland', 'Columbus',
+    'Indianapolis', 'New Orleans', 'Salt Lake City', 'Cincinnati',
+    'Baltimore', 'Milwaukee', 'Brooklyn', 'Anaheim']
+      .map((c) => ({ city: c, country: 'United States' })),
+  // United Kingdom
+  ...['London', 'Manchester', 'Birmingham', 'Glasgow', 'Liverpool', 'Leeds',
+    'Edinburgh', 'Bristol', 'Cardiff', 'Newcastle', 'Sheffield', 'Nottingham']
+      .map((c) => ({ city: c, country: 'United Kingdom' })),
+  // Canada
+  ...['Toronto', 'Montreal', 'Vancouver', 'Calgary', 'Ottawa', 'Edmonton']
+      .map((c) => ({ city: c, country: 'Canada' })),
+  // Australia
+  ...['Sydney', 'Melbourne', 'Brisbane', 'Perth', 'Adelaide']
+      .map((c) => ({ city: c, country: 'Australia' })),
+  // Germany
+  ...['Berlin', 'Munich', 'Hamburg', 'Cologne', 'Frankfurt', 'Stuttgart']
+      .map((c) => ({ city: c, country: 'Germany' })),
+  // France
+  ...['Paris', 'Lyon', 'Marseille', 'Toulouse', 'Nice']
+      .map((c) => ({ city: c, country: 'France' })),
+  // Spain
+  ...['Madrid', 'Barcelona', 'Valencia', 'Seville']
+      .map((c) => ({ city: c, country: 'Spain' })),
+  // Italy
+  ...['Rome', 'Milan', 'Naples', 'Turin', 'Bologna']
+      .map((c) => ({ city: c, country: 'Italy' })),
+  // Others
+  { city: 'Amsterdam', country: 'Netherlands' },
+  { city: 'Rotterdam', country: 'Netherlands' },
+  { city: 'Dublin', country: 'Ireland' },
+  { city: 'Mexico City', country: 'Mexico' },
+  { city: 'Guadalajara', country: 'Mexico' },
+  { city: 'Monterrey', country: 'Mexico' },
+  { city: 'Stockholm', country: 'Sweden' },
+  { city: 'Oslo', country: 'Norway' },
+  { city: 'Copenhagen', country: 'Denmark' },
+  { city: 'Brussels', country: 'Belgium' },
+  { city: 'Vienna', country: 'Austria' },
+  { city: 'Zurich', country: 'Switzerland' },
+  { city: 'Warsaw', country: 'Poland' },
+  { city: 'Lisbon', country: 'Portugal' },
+];
+
+async function fetchForCity(
+  key: string,
+  city: string,
+  countryName: string
+): Promise<Doc[]> {
+  const docs: Doc[] = [];
+  const pageSize = 100;
+  for (let page = 0; docs.length < PER_COUNTRY; page++) {
+    try {
+      const url =
+        `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${key}` +
+        `&city=${encodeURIComponent(city)}&size=${pageSize}&page=${page}` +
+        `&sort=relevance,desc`;
+      const res = await fetch(url);
+      if (!res.ok) break;
+      const json: any = await res.json();
+      const events: any[] = json._embedded?.events || [];
+      if (events.length === 0) break;
+      for (const e of events) {
+        const d = mapEvent(e, countryName);
+        if (d) docs.push(d);
+      }
+      const totalPages = json.page?.totalPages ?? 1;
+      if (page + 1 >= totalPages) break;
+    } catch (_) {
+      break;
+    }
+  }
+  return docs;
+}
+
 async function runTicketmaster(key: string): Promise<number> {
   if (!key) {
     console.log('ingestTicketmaster: TICKETMASTER_API_KEY not set — skipping.');
     return 0;
   }
   const all: Doc[] = [];
-  for (const [name, iso] of Object.entries(COUNTRY_ISO)) {
-    const docs = await fetchForCountry(key, iso, name);
-    // Dedupe within a country by title + city (TM repeats a show across dates).
-    const seen = new Set<string>();
+  // Global dedupe by title + city across country + city pulls.
+  const seen = new Set<string>();
+  function add(docs: Doc[]): void {
     for (const d of docs) {
-      const key2 =
+      const k =
         `${(d.data.title as string) || ''}|${(d.data.city as string) || ''}`
           .toLowerCase();
-      if (seen.has(key2)) continue;
-      seen.add(key2);
+      if (seen.has(k)) continue;
+      seen.add(k);
       all.push(d);
     }
+  }
+
+  for (const [name, iso] of Object.entries(COUNTRY_ISO)) {
+    add(await fetchForCountry(key, iso, name));
+  }
+  for (const { city, country } of TOP_CITIES) {
+    add(await fetchForCity(key, city, country));
   }
   if (all.length > 0) {
     await upsertAll(all);
