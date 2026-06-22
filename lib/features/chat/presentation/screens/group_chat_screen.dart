@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 
+import 'package:audioplayers/audioplayers.dart' as ap show DeviceFileSource;
+import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +18,12 @@ import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/services/pronunciation_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/utils/language_flags.dart';
+import '../../../coins/data/datasources/coin_remote_datasource.dart';
+import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
@@ -103,6 +109,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
   bool _translate = true;
   String _targetLang = 'en';
   bool _showOriginal = true;
+  // Double-tap TTS reads the translated (true) or original (false) text.
+  bool _ttsReadTranslated = true;
 
   static const _languages = [
     {'code': 'en', 'name': 'English', 'flag': '🇬🇧'},
@@ -131,6 +139,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
           (_languages.any((l) => l['code'] == deviceLang) ? deviceLang : 'en');
       _showOriginal =
           prefs.getBool('group_${widget.groupId}_showOriginal') ?? true;
+      _ttsReadTranslated =
+          prefs.getBool('group_${widget.groupId}_ttsReadTranslated') ?? true;
     });
   }
 
@@ -139,6 +149,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
     await prefs.setBool('group_${widget.groupId}_translate', _translate);
     await prefs.setString('group_${widget.groupId}_language', _targetLang);
     await prefs.setBool('group_${widget.groupId}_showOriginal', _showOriginal);
+    await prefs.setBool(
+        'group_${widget.groupId}_ttsReadTranslated', _ttsReadTranslated);
   }
 
   void _openTranslationSettings() {
@@ -175,6 +187,18 @@ class _GroupChatViewState extends State<_GroupChatView> {
                         _saveTranslationPrefs();
                       }
                     : null,
+              ),
+              // Double-tap a message to hear it. This chooses which text is read:
+              // ON = translation (your language), OFF = original.
+              SwitchListTile(
+                title: Text(l10n.groupTtsReadTranslated),
+                subtitle: Text(l10n.groupTtsReadTranslatedHint),
+                value: _ttsReadTranslated,
+                onChanged: (v) {
+                  setModal(() {});
+                  setState(() => _ttsReadTranslated = v);
+                  _saveTranslationPrefs();
+                },
               ),
               const Divider(),
               Padding(
@@ -676,6 +700,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                             translate: _translate,
                             targetLang: _targetLang,
                             showOriginal: _showOriginal,
+                            ttsReadTranslated: _ttsReadTranslated,
                           );
                         },
                       ),
@@ -702,6 +727,7 @@ class _GroupMessageBubble extends StatelessWidget {
     this.translate = false,
     this.targetLang = 'en',
     this.showOriginal = true,
+    this.ttsReadTranslated = true,
   });
 
   final Message message;
@@ -710,6 +736,7 @@ class _GroupMessageBubble extends StatelessWidget {
   final bool translate;
   final String targetLang;
   final bool showOriginal;
+  final bool ttsReadTranslated;
 
   @override
   Widget build(BuildContext context) {
@@ -750,13 +777,20 @@ class _GroupMessageBubble extends StatelessWidget {
             if (!isMine)
               Padding(
                 padding: const EdgeInsets.only(bottom: 2),
-                child: Text(
-                  UserDirectoryService.instance.nameFor(message.senderId),
-                  style: theme.textTheme.labelSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: theme.colorScheme.primary,
-                  ),
-                ),
+                child: Builder(builder: (context) {
+                  final brief =
+                      UserDirectoryService.instance.cached(message.senderId);
+                  final flag = languageFlagEmoji(brief?.language);
+                  final name = brief?.name ??
+                      UserDirectoryService.instance.nameFor(message.senderId);
+                  return Text(
+                    flag.isNotEmpty ? '$flag  $name' : name,
+                    style: theme.textTheme.labelSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: theme.colorScheme.primary,
+                    ),
+                  );
+                }),
               ),
             if (message.type == MessageType.location)
               _LocationContent(message: message, isMine: isMine)
@@ -818,6 +852,12 @@ class _GroupMessageBubble extends StatelessWidget {
                 translate: translate,
                 targetLang: targetLang,
                 showOriginal: showOriginal,
+                ttsReadTranslated: ttsReadTranslated,
+                currentUserId: currentUserId,
+                sourceLang: message.detectedLanguage ??
+                    languageCode(UserDirectoryService.instance
+                        .cached(message.senderId)
+                        ?.language),
               ),
           ],
         ),
@@ -837,6 +877,9 @@ class _TranslatableText extends StatefulWidget {
     required this.translate,
     required this.targetLang,
     required this.showOriginal,
+    this.ttsReadTranslated = true,
+    this.currentUserId = '',
+    this.sourceLang,
   });
 
   final String text;
@@ -845,6 +888,13 @@ class _TranslatableText extends StatefulWidget {
   final String targetLang;
   final bool showOriginal;
 
+  /// Double-tap reads the translation (true) or the original (false).
+  final bool ttsReadTranslated;
+  final String currentUserId;
+
+  /// Best-effort language code of the original text (for original-text TTS).
+  final String? sourceLang;
+
   @override
   State<_TranslatableText> createState() => _TranslatableTextState();
 }
@@ -852,11 +902,73 @@ class _TranslatableText extends StatefulWidget {
 class _TranslatableTextState extends State<_TranslatableText> {
   String? _translated;
   bool _loading = false;
+  bool _ttsBusy = false;
+  final AudioPlayer _player = AudioPlayer();
 
   @override
   void initState() {
     super.initState();
     _maybeTranslate();
+  }
+
+  @override
+  void dispose() {
+    _player.dispose();
+    super.dispose();
+  }
+
+  /// Double-tap TTS: reads the translation (your language) or the original,
+  /// per the group setting. Costs 5 coins like the 1:1 chat.
+  Future<void> _playTts() async {
+    if (_ttsBusy) {
+      await _player.stop();
+      if (mounted) setState(() => _ttsBusy = false);
+      return;
+    }
+    final readTranslated =
+        widget.ttsReadTranslated && _translated != null && _translated!.isNotEmpty;
+    final text = readTranslated ? _translated! : widget.text;
+    final lang = readTranslated
+        ? widget.targetLang.replaceAll('_', '-')
+        : (widget.sourceLang ?? widget.targetLang).replaceAll('_', '-');
+    if (text.trim().isEmpty || widget.currentUserId.isEmpty) return;
+
+    final messenger = ScaffoldMessenger.of(context);
+    final notEnoughMsg = AppLocalizations.of(context)!.ttsNotEnoughCoins;
+    try {
+      final coinDs = sl<CoinRemoteDataSource>();
+      final balance = await coinDs.getBalance(widget.currentUserId);
+      if (balance.totalCoins < 5) {
+        messenger.showSnackBar(SnackBar(content: Text(notEnoughMsg)));
+        return;
+      }
+      await coinDs.updateBalance(
+        userId: widget.currentUserId,
+        amount: 5,
+        type: CoinTransactionType.debit,
+        reason: CoinTransactionReason.featurePurchase,
+        metadata: const {'feature': 'tts_listen_group'},
+      );
+    } catch (_) {
+      // Allow playback even if the coin deduction fails (e.g. emulator).
+    }
+
+    setState(() => _ttsBusy = true);
+    try {
+      final path = await PronunciationService()
+          .getPronunciationFilePath(text, lang, isMale: false);
+      if (path != null && mounted) {
+        _player.onPlayerComplete.first.then((_) {
+          if (mounted) setState(() => _ttsBusy = false);
+        });
+        await _player.setVolume(1.0);
+        await _player.play(ap.DeviceFileSource(path));
+      } else if (mounted) {
+        setState(() => _ttsBusy = false);
+      }
+    } catch (_) {
+      if (mounted) setState(() => _ttsBusy = false);
+    }
   }
 
   @override
@@ -889,42 +1001,63 @@ class _TranslatableTextState extends State<_TranslatableText> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final Widget content;
     if (!widget.translate || _translated == null) {
-      return Row(
+      content = Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Flexible(
             child: Text(widget.text, style: TextStyle(color: widget.color)),
           ),
-          if (_loading)
+          if (_loading || _ttsBusy)
             Padding(
               padding: const EdgeInsets.only(left: 6),
-              child: SizedBox(
-                width: 10,
-                height: 10,
-                child: CircularProgressIndicator(
-                    strokeWidth: 1.5, color: widget.color.withValues(alpha: 0.6)),
-              ),
+              child: _ttsBusy
+                  ? Icon(Icons.volume_up,
+                      size: 14, color: widget.color.withValues(alpha: 0.7))
+                  : SizedBox(
+                      width: 10,
+                      height: 10,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 1.5,
+                          color: widget.color.withValues(alpha: 0.6)),
+                    ),
             ),
         ],
       );
-    }
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(_translated!, style: TextStyle(color: widget.color)),
-        if (widget.showOriginal) ...[
-          const SizedBox(height: 4),
-          Text(
-            widget.text,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: widget.color.withValues(alpha: 0.6),
-              fontStyle: FontStyle.italic,
-            ),
+    } else {
+      content = Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                  child:
+                      Text(_translated!, style: TextStyle(color: widget.color))),
+              if (_ttsBusy)
+                Padding(
+                  padding: const EdgeInsets.only(left: 6),
+                  child: Icon(Icons.volume_up,
+                      size: 14, color: widget.color.withValues(alpha: 0.7)),
+                ),
+            ],
           ),
+          if (widget.showOriginal) ...[
+            const SizedBox(height: 4),
+            Text(
+              widget.text,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: widget.color.withValues(alpha: 0.6),
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
         ],
-      ],
-    );
+      );
+    }
+    // Double-tap to hear it (target or source text, per the group setting).
+    return GestureDetector(onDoubleTap: _playTts, child: content);
   }
 }
 

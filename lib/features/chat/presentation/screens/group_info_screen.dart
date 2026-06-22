@@ -8,6 +8,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/group_info.dart';
@@ -29,6 +30,9 @@ class GroupInfoScreen extends StatelessWidget {
 
   final String groupId;
   final String currentUserId;
+
+  /// Mirror of GroupChatRemoteDataSourceImpl.maxGroupMembers (server-enforced).
+  static const int _maxGroupMembers = 10;
 
   static Route<void> route({
     required String groupId,
@@ -97,6 +101,9 @@ class GroupInfoScreen extends StatelessWidget {
                     ? l10n.groupYou
                     : (brief?.name ?? m.userId);
                 final photo = brief?.photoUrl;
+                final flag = languageFlagEmoji(brief?.language);
+                // Admin can remove any non-self member.
+                final canRemove = isAdmin && m.userId != currentUserId;
                 return ListTile(
                   leading: CircleAvatar(
                     backgroundImage: (photo != null && photo.isNotEmpty)
@@ -108,16 +115,58 @@ class GroupInfoScreen extends StatelessWidget {
                             : '?')
                         : null,
                   ),
-                  title: Text(
-                    displayName,
-                    overflow: TextOverflow.ellipsis,
+                  title: Row(
+                    children: [
+                      if (flag.isNotEmpty) ...[
+                        Text(flag, style: const TextStyle(fontSize: 16)),
+                        const SizedBox(width: 6),
+                      ],
+                      Flexible(
+                        child: Text(displayName,
+                            overflow: TextOverflow.ellipsis),
+                      ),
+                    ],
                   ),
-                  trailing: m.isAdmin
-                      ? Chip(label: Text(l10n.groupAdmin))
-                      : null,
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (m.isAdmin) Chip(label: Text(l10n.groupAdmin)),
+                      if (canRemove)
+                        IconButton(
+                          icon: const Icon(Icons.person_remove_outlined,
+                              color: Colors.red),
+                          tooltip: l10n.groupRemoveMember,
+                          onPressed: () =>
+                              _removeMember(context, m.userId, displayName),
+                        ),
+                    ],
+                  ),
                 );
               }),
               const Divider(),
+              if (isAdmin)
+                ListTile(
+                  leading: Icon(
+                    members.length >= _maxGroupMembers
+                        ? Icons.group_off_outlined
+                        : Icons.person_add_alt_1,
+                    color: members.length >= _maxGroupMembers
+                        ? Theme.of(context).disabledColor
+                        : Theme.of(context).colorScheme.primary,
+                  ),
+                  title: Text(members.length >= _maxGroupMembers
+                      ? l10n.groupMemberLimit(_maxGroupMembers)
+                      : l10n.groupAddMembers),
+                  subtitle: Text(
+                      '${l10n.groupMembersCount(members.length)} / $_maxGroupMembers'),
+                  enabled: members.length < _maxGroupMembers,
+                  onTap: members.length >= _maxGroupMembers
+                      ? null
+                      : () => _addMembers(
+                            context,
+                            members.map((m) => m.userId).toSet(),
+                          ),
+                ),
               if (isAdmin)
                 ListTile(
                   leading: Icon(Icons.edit,
@@ -150,6 +199,73 @@ class GroupInfoScreen extends StatelessWidget {
               ),
             ],
           );
+  }
+
+  /// Admin: remove a member from the group.
+  Future<void> _removeMember(
+      BuildContext context, String memberId, String name) async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(l10n.groupRemoveMember),
+        content: Text(l10n.groupRemoveMemberConfirm(name)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.groupRemoveMember,
+                  style: const TextStyle(color: Colors.red))),
+        ],
+      ),
+    );
+    if (confirmed != true || !context.mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final result = await sl<RemoveGroupMember>()(
+      groupId: groupId,
+      actorId: currentUserId,
+      memberId: memberId,
+    );
+    result.fold(
+      (f) => messenger.showSnackBar(SnackBar(content: Text(f.message))),
+      (_) => messenger
+          .showSnackBar(SnackBar(content: Text(l10n.groupMemberRemoved(name)))),
+    );
+  }
+
+  /// Admin: invite members by nickname, up to the remaining capacity.
+  Future<void> _addMembers(
+      BuildContext context, Set<String> existingIds) async {
+    final l10n = AppLocalizations.of(context)!;
+    final remaining = _maxGroupMembers - existingIds.length;
+    if (remaining <= 0) return;
+    final picked = await showModalBottomSheet<List<String>>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Theme.of(context).colorScheme.surface,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (_) => _AddMembersSheet(
+        existingIds: existingIds,
+        currentUserId: currentUserId,
+        remaining: remaining,
+      ),
+    );
+    if (picked == null || picked.isEmpty || !context.mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final result = await sl<AddGroupMembers>()(
+      groupId: groupId,
+      actorId: currentUserId,
+      memberIds: picked,
+    );
+    result.fold(
+      (f) => messenger.showSnackBar(SnackBar(content: Text(f.message))),
+      (_) => messenger.showSnackBar(
+          SnackBar(content: Text(l10n.groupAddedCount(picked.length)))),
+    );
   }
 
   Future<void> _changeGroupPhoto(BuildContext context) async {
@@ -299,6 +415,188 @@ class GroupInfoScreen extends StatelessWidget {
       ),
       (_) => ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.groupReportSubmitted)),
+      ),
+    );
+  }
+}
+
+/// Admin sheet to invite members by nickname (prefix search on `profiles`),
+/// capped to [remaining] free slots. Returns the chosen user ids.
+class _AddMembersSheet extends StatefulWidget {
+  const _AddMembersSheet({
+    required this.existingIds,
+    required this.currentUserId,
+    required this.remaining,
+  });
+
+  final Set<String> existingIds;
+  final String currentUserId;
+  final int remaining;
+
+  @override
+  State<_AddMembersSheet> createState() => _AddMembersSheetState();
+}
+
+class _AddMembersSheetState extends State<_AddMembersSheet> {
+  final _controller = TextEditingController();
+  final _results = <UserBrief>[];
+  final _resultIds = <String>[];
+  final _selected = <String>{};
+  bool _searching = false;
+  String? _message;
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  Future<void> _search() async {
+    final l10n = AppLocalizations.of(context)!;
+    final raw = _controller.text.trim();
+    if (raw.isEmpty) return;
+    setState(() {
+      _searching = true;
+      _message = null;
+    });
+    try {
+      final snap = await FirebaseFirestore.instance
+          .collection('profiles')
+          .where('nickname', whereIn: <String>{raw, raw.toLowerCase()}.toList())
+          .limit(20)
+          .get();
+      _results.clear();
+      _resultIds.clear();
+      for (final doc in snap.docs) {
+        final data = doc.data();
+        final uid = doc.id;
+        if (uid == widget.currentUserId) continue;
+        if (data['isGhostMode'] == true) continue;
+        if (widget.existingIds.contains(uid)) continue;
+        final photos = (data['photoUrls'] as List?)?.cast<String>() ?? const [];
+        final langs = (data['languages'] as List?)?.cast<String>() ?? const [];
+        _results.add(UserBrief(
+          name: (data['displayName'] ?? data['nickname'] ?? 'User') as String,
+          photoUrl: photos.isNotEmpty ? photos.first : null,
+          language: langs.isNotEmpty ? langs.first : null,
+        ));
+        _resultIds.add(uid);
+      }
+      setState(() {
+        _searching = false;
+        _message = _results.isEmpty ? l10n.groupNoOneFound : null;
+      });
+    } catch (_) {
+      setState(() {
+        _searching = false;
+        _message = l10n.groupNoOneFound;
+      });
+    }
+  }
+
+  void _toggle(String uid) {
+    setState(() {
+      if (_selected.contains(uid)) {
+        _selected.remove(uid);
+      } else if (_selected.length < widget.remaining) {
+        _selected.add(uid);
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!
+              .groupMemberLimit(widget.existingIds.length + widget.remaining)),
+        ));
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: EdgeInsets.only(
+        left: 16,
+        right: 16,
+        top: 16,
+        bottom: MediaQuery.of(context).viewInsets.bottom + 16,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(l10n.groupAddMembers,
+              style: Theme.of(context).textTheme.titleMedium),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              Expanded(
+                child: TextField(
+                  controller: _controller,
+                  textInputAction: TextInputAction.search,
+                  onSubmitted: (_) => _search(),
+                  decoration: InputDecoration(
+                    hintText: l10n.groupInviteByNickname,
+                    prefixIcon: const Icon(Icons.alternate_email),
+                    isDense: true,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              IconButton.filled(
+                onPressed: _searching ? null : _search,
+                icon: _searching
+                    ? const SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(strokeWidth: 2))
+                    : const Icon(Icons.search),
+              ),
+            ],
+          ),
+          if (_message != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 12),
+              child: Text(_message!,
+                  style: Theme.of(context).textTheme.bodySmall),
+            ),
+          if (_results.isNotEmpty)
+            ConstrainedBox(
+              constraints: BoxConstraints(
+                  maxHeight: MediaQuery.of(context).size.height * 0.4),
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: _results.length,
+                itemBuilder: (ctx, i) {
+                  final b = _results[i];
+                  final uid = _resultIds[i];
+                  final flag = languageFlagEmoji(b.language);
+                  return CheckboxListTile(
+                    value: _selected.contains(uid),
+                    onChanged: (_) => _toggle(uid),
+                    secondary: CircleAvatar(
+                      backgroundImage:
+                          (b.photoUrl != null && b.photoUrl!.isNotEmpty)
+                              ? CachedNetworkImageProvider(b.photoUrl!)
+                              : null,
+                      child: (b.photoUrl == null || b.photoUrl!.isEmpty)
+                          ? Text(b.name.isNotEmpty ? b.name[0].toUpperCase() : '?')
+                          : null,
+                    ),
+                    title: Text(flag.isNotEmpty ? '$flag  ${b.name}' : b.name),
+                  );
+                },
+              ),
+            ),
+          const SizedBox(height: 12),
+          SizedBox(
+            width: double.infinity,
+            child: FilledButton(
+              onPressed: _selected.isEmpty
+                  ? null
+                  : () => Navigator.pop(context, _selected.toList()),
+              child: Text(l10n.groupAddSelected(_selected.length)),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -10602,6 +10602,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get groupInviteByNickname => 'Invite by nickname';
 
   @override
+  String get groupAddMembers => 'Add members';
+
+  @override
+  String get groupTtsReadTranslated => 'Read aloud the translation';
+
+  @override
+  String get groupTtsReadTranslatedHint =>
+      'Double-tap a message to hear it. On = your language, Off = original.';
+
+  @override
+  String get ttsNotEnoughCoins => 'Not enough coins for TTS (5 coins required)';
+
+  @override
+  String get groupRemoveMember => 'Remove member';
+
+  @override
+  String groupRemoveMemberConfirm(String name) {
+    return 'Remove $name from this group?';
+  }
+
+  @override
+  String groupMemberRemoved(String name) {
+    return '$name removed';
+  }
+
+  @override
+  String groupAddSelected(int count) {
+    return 'Add $count selected';
+  }
+
+  @override
   String get groupNicknameHint => 'Enter a nickname';
 
   @override
