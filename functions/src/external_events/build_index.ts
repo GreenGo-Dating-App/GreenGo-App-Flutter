@@ -36,9 +36,9 @@ function compact(id: string, d: Record<string, unknown>): Compact {
   const out: Compact = { id };
   // Keep only the fields the app reads; drop nullish to keep shards small.
   const keys = [
-    'title', 'bookingUrl', 'website', 'wikidataUrl', 'imageUrl', 'category',
-    'city', 'country', 'fromPrice', 'currency', 'rating', 'reviewCount',
-    'durationMinutes', 'lat', 'lng', 'startDate',
+    'title', 'bookingUrl', 'website', 'wikidataUrl', 'describedAtUrl',
+    'imageUrl', 'category', 'city', 'country', 'fromPrice', 'currency',
+    'rating', 'reviewCount', 'durationMinutes', 'lat', 'lng', 'startDate',
   ];
   for (const k of keys) {
     const v = d[k];
