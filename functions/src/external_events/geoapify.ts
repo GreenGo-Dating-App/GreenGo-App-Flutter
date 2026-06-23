@@ -282,6 +282,7 @@ type WdInfo = {
   title?: string;
   lang?: string;
   website?: string; // P856 official website
+  describedAt?: string; // P973 described at URL
 };
 
 /// Batch-resolve Wikidata entities (≤50 per call) → English description, P18
@@ -309,6 +310,9 @@ async function wikidataBatch(ids: string[]): Promise<Map<string, WdInfo>> {
         const website = ent.claims?.P856?.[0]?.mainsnak?.datavalue?.value as
           | string
           | undefined;
+        const describedAt = ent.claims?.P973?.[0]?.mainsnak?.datavalue?.value as
+          | string
+          | undefined;
         const sl = ent.sitelinks || {};
         let title: string | undefined;
         let lang: string | undefined;
@@ -324,7 +328,7 @@ async function wikidataBatch(ids: string[]): Promise<Map<string, WdInfo>> {
             lang = k.replace(/wiki$/, '');
           }
         }
-        out.set(id, { desc, file, title, lang, website });
+        out.set(id, { desc, file, title, lang, website, describedAt });
       }
     } catch (e) {
       console.error('wikidataBatch chunk failed', e);
@@ -487,9 +491,13 @@ async function enrichAll(all: Doc[]): Promise<void> {
     const lang = d._wpLang as string | undefined;
     const title = d._wpTitle as string | undefined;
     // Official website: OSM tag, else the Wikidata P856 scraped above.
-    if ((!d.website || d.website === '') && d._wikidata) {
-      const site = wd.get(d._wikidata as string)?.website;
-      if (site) d.website = site;
+    // Plus P973 "described at URL".
+    if (d._wikidata) {
+      const info = wd.get(d._wikidata as string);
+      if ((!d.website || d.website === '') && info?.website) {
+        d.website = info.website;
+      }
+      if (info?.describedAt) d.describedAtUrl = info.describedAt;
     }
     const wikipediaUrl =
       lang && title
@@ -611,8 +619,10 @@ export const runBackfillGeoapifyWebsitesNow = onRequest(
       res.status(403).send('Forbidden');
       return;
     }
-    // Collect (docId → wikidata Q) for geoapify docs missing a website.
+    // Collect (docId → wikidata Q, hasWebsite) for ALL geoapify docs with a
+    // Wikidata reference.
     const idToQ = new Map<string, string>();
+    const hasWebsite = new Set<string>();
     let cursor: FirebaseFirestore.QueryDocumentSnapshot | undefined;
     for (;;) {
       let q = db
@@ -625,29 +635,42 @@ export const runBackfillGeoapifyWebsitesNow = onRequest(
       if (snap.empty) break;
       for (const doc of snap.docs) {
         const d = doc.data();
-        const site = d.website as string | undefined;
         const wdUrl = d.wikidataUrl as string | undefined;
-        if ((site == null || site === '') && wdUrl) {
+        if (wdUrl) {
           const wq = wdUrl.split('/').pop() || '';
-          if (wq.startsWith('Q')) idToQ.set(doc.id, wq);
+          if (wq.startsWith('Q')) {
+            idToQ.set(doc.id, wq);
+            const site = d.website as string | undefined;
+            if (site != null && site !== '') hasWebsite.add(doc.id);
+          }
         }
       }
       cursor = snap.docs[snap.docs.length - 1];
       if (snap.docs.length < 1000) break;
     }
 
-    // Batch-resolve P856 from Wikidata and write it back.
+    // Batch-resolve P856 (official website) + P973 (described at URL) and write back.
     const qs = [...new Set(idToQ.values())];
     const wd = await wikidataBatch(qs);
     let batch = db.batch();
     let ops = 0;
-    let updated = 0;
+    let websites = 0;
+    let described = 0;
     const commits: Promise<unknown>[] = [];
     for (const [docId, wq] of idToQ) {
-      const site = wd.get(wq)?.website;
-      if (!site) continue;
-      batch.set(db.collection(COLLECTION).doc(docId), { website: site }, { merge: true });
-      updated++;
+      const info = wd.get(wq);
+      if (!info) continue;
+      const patch: Record<string, unknown> = {};
+      if (info.website && !hasWebsite.has(docId)) {
+        patch.website = info.website;
+        websites++;
+      }
+      if (info.describedAt) {
+        patch.describedAtUrl = info.describedAt;
+        described++;
+      }
+      if (Object.keys(patch).length === 0) continue;
+      batch.set(db.collection(COLLECTION).doc(docId), patch, { merge: true });
       if (++ops >= 400) {
         commits.push(batch.commit());
         batch = db.batch();
@@ -658,9 +681,15 @@ export const runBackfillGeoapifyWebsitesNow = onRequest(
     await Promise.all(commits);
     await buildSourceIndex('geoapify');
     console.log(
-      `backfillGeoapifyWebsites: ${updated} websites set (of ${idToQ.size} candidates).`
+      `backfillGeoapifyWebsites: ${websites} websites, ${described} describedAt ` +
+        `(of ${idToQ.size} wikidata docs).`
     );
-    res.status(200).json({ ok: true, candidates: idToQ.size, updated });
+    res.status(200).json({
+      ok: true,
+      candidates: idToQ.size,
+      websites,
+      described,
+    });
   }
 );
 

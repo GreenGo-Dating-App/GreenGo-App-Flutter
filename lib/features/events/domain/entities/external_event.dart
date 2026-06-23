@@ -12,6 +12,7 @@ class ExternalEvent {
     required this.bookingUrl,
     this.website,
     this.wikidataUrl,
+    this.describedAtUrl,
     this.description,
     this.imageUrl,
     this.category,
@@ -35,6 +36,8 @@ class ExternalEvent {
   final String? website;
   /// Wikidata page URL, set for wikidata-sourced attractions.
   final String? wikidataUrl;
+  /// Wikidata "described at URL" (P973) — an external page describing the place.
+  final String? describedAtUrl;
   final String? description;
   final String? imageUrl;
   final String? category;
@@ -81,6 +84,7 @@ class ExternalEvent {
       bookingUrl: d['bookingUrl'] as String? ?? '',
       website: d['website'] as String?,
       wikidataUrl: d['wikidataUrl'] as String?,
+      describedAtUrl: d['describedAtUrl'] as String?,
       description: d['description'] as String?,
       imageUrl: d['imageUrl'] as String?,
       category: d['category'] as String?,

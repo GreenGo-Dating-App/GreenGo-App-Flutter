@@ -3945,6 +3945,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get attractionShareGroup => 'Share to group';
 
   @override
+  String get attractionDescribedAt => 'Read more';
+
+  @override
   String get attractionReport => 'Report event';
 
   @override

@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/usecases/report_user.dart';
 import '../../domain/entities/external_event.dart';
@@ -36,6 +37,42 @@ class _AttractionMenuDialog extends StatefulWidget {
 }
 
 class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
+  // Attractions/experiences are stored in English; translate the DESCRIPTION
+  // (not the title) to the user's language when the window opens — same
+  // translator as the chat.
+  String? _translatedDesc;
+  bool _translating = false;
+
+  @override
+  void initState() {
+    super.initState();
+    final desc = widget.event.description;
+    if (desc != null && desc.trim().isNotEmpty) {
+      final target =
+          WidgetsBinding.instance.platformDispatcher.locale.languageCode;
+      if (target.isNotEmpty && target != 'en') {
+        _translating = true;
+        TranslationService()
+            .translate(
+              text: desc,
+              sourceLanguage: 'auto',
+              targetLanguage: target.replaceAll('_', '-'),
+            )
+            .then((result) {
+          if (!mounted) return;
+          setState(() {
+            _translating = false;
+            if (result.trim().isNotEmpty && result.trim() != desc.trim()) {
+              _translatedDesc = result;
+            }
+          });
+        }).catchError((_) {
+          if (mounted) setState(() => _translating = false);
+        });
+      }
+    }
+  }
+
   String _hostOf(String url) {
     try {
       final h = Uri.parse(url).host;
@@ -157,6 +194,12 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     if (e.wikidataUrl != null && e.wikidataUrl!.isNotEmpty) {
       addLink(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
     }
+    // "Described at URL" (Wikidata P973) — an external page about the place.
+    if (e.describedAtUrl != null && e.describedAtUrl!.isNotEmpty) {
+      addLink(Icons.article_outlined,
+          '${l10n.attractionDescribedAt}  ·  ${_hostOf(e.describedAtUrl!)}',
+          e.describedAtUrl!);
+    }
     if (maps != null) {
       options.add(_tile(Icons.map, l10n.attractionOpenInMaps, () {
         Navigator.pop(context);
@@ -232,13 +275,23 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
                       ],
                       if (e.description != null && e.description!.isNotEmpty) ...[
                         const SizedBox(height: 8),
-                        Text(e.description!,
-                            maxLines: 5,
+                        Text(_translatedDesc ?? e.description!,
+                            maxLines: 6,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
                                 height: 1.3)),
+                        if (_translating)
+                          const Padding(
+                            padding: EdgeInsets.only(top: 4),
+                            child: SizedBox(
+                                width: 12,
+                                height: 12,
+                                child: CircularProgressIndicator(
+                                    strokeWidth: 1.5,
+                                    color: AppColors.textTertiary)),
+                          ),
                       ],
                       const Divider(height: 18, color: AppColors.divider),
                       ...options,

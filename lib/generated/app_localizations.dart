@@ -7043,6 +7043,12 @@ abstract class AppLocalizations {
   /// **'Share to group'**
   String get attractionShareGroup;
 
+  /// No description provided for @attractionDescribedAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Read more'**
+  String get attractionDescribedAt;
+
   /// No description provided for @attractionReport.
   ///
   /// In en, this message translates to:
