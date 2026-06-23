@@ -205,12 +205,12 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
     // Primary destination (provider page / official website / Wikidata page).
     final primaryHost = _hostOf(e.bookingUrl);
-    addLink(Icons.open_in_new,
-        l10n.attractionVisitWebsite(primaryHost.isNotEmpty ? primaryHost : e.sourceLabel),
+    addLink(
+        Icons.open_in_new,
+        '${l10n.attractionOpenLink}${primaryHost.isNotEmpty ? '  ·  $primaryHost' : ''}',
         e.bookingUrl);
     if (e.website != null && e.website!.isNotEmpty) {
-      addLink(Icons.public, l10n.attractionVisitWebsite(_hostOf(e.website!)),
-          e.website!);
+      addLink(Icons.public, l10n.attractionOpenWebsite, e.website!);
     }
     if (e.wikidataUrl != null && e.wikidataUrl!.isNotEmpty) {
       addLink(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
@@ -221,12 +221,22 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         _book(maps);
       }));
     }
-    // Share to chats / groups (was long-press; now also here for every card).
-    options.add(actionTile(Icons.share, l10n.eventShare, () {
+    // Share — split into chat and group targets.
+    options.add(actionTile(Icons.chat_bubble_outline, l10n.attractionShareChat,
+        () {
       Navigator.pop(context);
       showShareExternalSheet(context,
-          item: e, currentUserId: widget.currentUserId);
+          item: e, currentUserId: widget.currentUserId, mode: 'chats');
     }));
+    options.add(actionTile(Icons.groups, l10n.attractionShareGroup, () {
+      Navigator.pop(context);
+      showShareExternalSheet(context,
+          item: e, currentUserId: widget.currentUserId, mode: 'groups');
+    }));
+
+    final place = [e.city, e.country]
+        .where((s) => s != null && s.isNotEmpty)
+        .join(', ');
 
     showDialog<void>(
       context: context,
@@ -235,43 +245,72 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         clipBehavior: Clip.antiAlias,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Left: image
-              SizedBox(
-                width: 130,
-                child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
-                    ? CachedNetworkImage(
-                        imageUrl: e.imageUrl!,
-                        fit: BoxFit.cover,
-                        errorWidget: (_, __, ___) => _imgPlaceholder(e, 160),
-                      )
-                    : _imgPlaceholder(e, 160),
-              ),
-              // Right: title + options
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(e.title,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                              color: AppColors.textPrimary,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold)),
-                      const SizedBox(height: 8),
-                      ...options,
-                    ],
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+              maxHeight: MediaQuery.of(context).size.height * 0.62),
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Left: image
+                SizedBox(
+                  width: 130,
+                  child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
+                      ? CachedNetworkImage(
+                          imageUrl: e.imageUrl!,
+                          fit: BoxFit.cover,
+                          errorWidget: (_, __, ___) => _imgPlaceholder(e, 160),
+                        )
+                      : _imgPlaceholder(e, 160),
+                ),
+                // Right: info (title, place, description) + options
+                Expanded(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(e.title,
+                            style: const TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold)),
+                        if (place.isNotEmpty) ...[
+                          const SizedBox(height: 4),
+                          Row(
+                            children: [
+                              const Icon(Icons.place,
+                                  size: 14, color: AppColors.textTertiary),
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: Text(place,
+                                    style: const TextStyle(
+                                        color: AppColors.textSecondary,
+                                        fontSize: 12)),
+                              ),
+                            ],
+                          ),
+                        ],
+                        if (e.description != null &&
+                            e.description!.isNotEmpty) ...[
+                          const SizedBox(height: 8),
+                          Text(e.description!,
+                              maxLines: 5,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                  color: AppColors.textSecondary,
+                                  fontSize: 12,
+                                  height: 1.3)),
+                        ],
+                        const Divider(height: 18, color: AppColors.divider),
+                        ...options,
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
