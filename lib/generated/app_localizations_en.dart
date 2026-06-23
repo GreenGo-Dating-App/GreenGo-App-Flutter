@@ -10930,4 +10930,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsSortDate => 'Date';
+
+  @override
+  String get catMuseums => 'Museums';
+
+  @override
+  String get catSights => 'Sights';
+
+  @override
+  String get catParks => 'Parks';
+
+  @override
+  String get catNationalParks => 'National parks';
+
+  @override
+  String get catThemeParks => 'Theme parks';
+
+  @override
+  String get catTours => 'Tours & Sightseeing';
+
+  @override
+  String get catCulture => 'Culture & Museums';
+
+  @override
+  String get catFoodDrink => 'Food & Drink';
+
+  @override
+  String get catCruises => 'Cruises & Water';
+
+  @override
+  String get catNature => 'Nature & Outdoors';
+
+  @override
+  String get catDayTrips => 'Day Trips';
+
+  @override
+  String get catTickets => 'Tickets & Passes';
+
+  @override
+  String get catOther => 'Other';
 }

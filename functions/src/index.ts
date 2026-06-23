@@ -59,6 +59,7 @@ export {
 export {
   ingestExternalEvents,
   runIngestExternalEventsNow,
+  runBackfillViatorCategoriesNow,
 } from './external_events/ingest';
 
 // Tiqets attractions ingester (deployed once TIQETS_API_KEY is set).
