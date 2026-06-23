@@ -10,6 +10,8 @@ class ExternalEvent {
     required this.source,
     required this.title,
     required this.bookingUrl,
+    this.website,
+    this.wikidataUrl,
     this.description,
     this.imageUrl,
     this.category,
@@ -29,6 +31,10 @@ class ExternalEvent {
   final String source; // 'tiqets' | 'viator'
   final String title;
   final String bookingUrl;
+  /// Official website (Geoapify/OSM), if any — offered in the wikidata chooser.
+  final String? website;
+  /// Wikidata page URL, set for wikidata-sourced attractions.
+  final String? wikidataUrl;
   final String? description;
   final String? imageUrl;
   final String? category;
@@ -73,6 +79,8 @@ class ExternalEvent {
       source: d['source'] as String? ?? 'viator',
       title: d['title'] as String? ?? '',
       bookingUrl: d['bookingUrl'] as String? ?? '',
+      website: d['website'] as String?,
+      wikidataUrl: d['wikidataUrl'] as String?,
       description: d['description'] as String?,
       imageUrl: d['imageUrl'] as String?,
       category: d['category'] as String?,
