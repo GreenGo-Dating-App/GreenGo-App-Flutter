@@ -54,8 +54,10 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   /// so distance/date/stars/reviews are globally correct, not per-page.
   List<ExternalEvent> _all = [];
   int _visibleCount = _pageSize;
-  bool _loading = false;
   bool _firstLoadDone = false;
+  // Bumped on each (re)load so a stale streaming callback can't append to a
+  // newer source's list.
+  int _loadGen = 0;
 
   @override
   void initState() {
@@ -129,24 +131,37 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   }
 
   Future<void> _load() async {
-    if (_loading) return;
+    final gen = ++_loadGen;
+    final source = widget.source;
     setState(() {
-      _loading = true;
+      _firstLoadDone = false;
       _visibleCount = _pageSize;
+      _all = [];
     });
-    List<ExternalEvent> list;
     if (widget.popular) {
-      list = await _ds.getPopularExperiences(source: widget.source, limit: 60);
-    } else {
-      list =
-          await ExternalEventsIndexService.instance.ensureLoaded(widget.source);
+      final list =
+          await _ds.getPopularExperiences(source: source, limit: 60);
+      if (!mounted || gen != _loadGen) return;
+      setState(() {
+        _all = list;
+        _firstLoadDone = true;
+      });
+      return;
     }
-    if (!mounted) return;
-    setState(() {
-      _all = list;
-      _loading = false;
-      _firstLoadDone = true;
-    });
+    // Stream shards: show the first batch immediately, fill in the rest while
+    // the user scrolls (instead of one big upfront download).
+    await ExternalEventsIndexService.instance.loadStreaming(
+      source,
+      onBatch: (batch) {
+        if (!mounted || gen != _loadGen) return;
+        setState(() {
+          _all = [..._all, ...batch];
+          _firstLoadDone = true;
+        });
+      },
+    );
+    if (!mounted || gen != _loadGen) return;
+    setState(() => _firstLoadDone = true);
   }
 
   int _compareByDate(ExternalEvent a, ExternalEvent b) {
@@ -202,18 +217,9 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
   }
 
-  /// Tap action for a card. Wikidata-sourced attractions open a chooser
-  /// (official website / Wikidata / open in maps); everything else opens its
-  /// primary link directly.
-  void _open(ExternalEvent e) {
-    if (e.source == 'geoapify' &&
-        e.wikidataUrl != null &&
-        e.wikidataUrl!.isNotEmpty) {
-      _showLinkMenu(e);
-    } else {
-      _book(e.bookingUrl);
-    }
-  }
+  /// Tap action for any external card → the chooser window (visit links /
+  /// open in maps / share).
+  void _open(ExternalEvent e) => _showLinkMenu(e);
 
   String? _mapsUrl(ExternalEvent e) {
     final c = _coordOf(e);
@@ -225,73 +231,69 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   /// on the right (mega-menu style).
   void _showLinkMenu(ExternalEvent e) {
     final l10n = AppLocalizations.of(context)!;
-    final website = e.website;
     final maps = _mapsUrl(e);
     final seen = <String>{};
     final options = <Widget>[];
-    void add(IconData icon, String label, String url) {
+
+    Widget actionTile(IconData icon, String label, VoidCallback onTap) =>
+        InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(10),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+            child: Row(
+              children: [
+                Icon(icon, color: AppColors.richGold, size: 20),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(label,
+                      style: const TextStyle(
+                          color: AppColors.textPrimary,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600)),
+                ),
+                const Icon(Icons.chevron_right,
+                    color: AppColors.textTertiary, size: 18),
+              ],
+            ),
+          ),
+        );
+
+    // A "Visit <domain>" link, de-duplicated by host.
+    void addLink(IconData icon, String label, String url) {
+      if (url.isEmpty) return;
       final host = _hostOf(url);
       if (host.isNotEmpty && !seen.add(host)) return;
-      options.add(InkWell(
-        onTap: () {
-          Navigator.pop(context);
-          _book(url);
-        },
-        borderRadius: BorderRadius.circular(10),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-          child: Row(
-            children: [
-              Icon(icon, color: AppColors.richGold, size: 20),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(label,
-                    style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600)),
-              ),
-              const Icon(Icons.chevron_right,
-                  color: AppColors.textTertiary, size: 18),
-            ],
-          ),
-        ),
-      ));
+      options.add(actionTile(icon, label, () {
+        Navigator.pop(context);
+        _book(url);
+      }));
     }
 
-    if (website != null && website.isNotEmpty) {
-      add(Icons.public, l10n.attractionVisitWebsite(_hostOf(website)), website);
+    // Primary destination (provider page / official website / Wikidata page).
+    final primaryHost = _hostOf(e.bookingUrl);
+    addLink(Icons.open_in_new,
+        l10n.attractionVisitWebsite(primaryHost.isNotEmpty ? primaryHost : e.sourceLabel),
+        e.bookingUrl);
+    if (e.website != null && e.website!.isNotEmpty) {
+      addLink(Icons.public, l10n.attractionVisitWebsite(_hostOf(e.website!)),
+          e.website!);
     }
     if (e.wikidataUrl != null && e.wikidataUrl!.isNotEmpty) {
-      add(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
+      addLink(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
     }
     if (maps != null) {
-      options.add(InkWell(
-        onTap: () {
-          Navigator.pop(context);
-          _book(maps);
-        },
-        borderRadius: BorderRadius.circular(10),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-          child: Row(
-            children: [
-              const Icon(Icons.map, color: AppColors.richGold, size: 20),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(l10n.attractionOpenInMaps,
-                    style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600)),
-              ),
-              const Icon(Icons.chevron_right,
-                  color: AppColors.textTertiary, size: 18),
-            ],
-          ),
-        ),
-      ));
+      options.add(actionTile(Icons.map, l10n.attractionOpenInMaps, () {
+        Navigator.pop(context);
+        _book(maps);
+      }));
     }
+    // Share to chats / groups (was long-press; now also here for every card).
+    options.add(actionTile(Icons.share, l10n.eventShare, () {
+      Navigator.pop(context);
+      showShareExternalSheet(context,
+          item: e, currentUserId: widget.currentUserId);
+    }));
 
     showDialog<void>(
       context: context,
@@ -426,9 +428,9 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
             : e.source == 'google'
                 ? Colors.green
                 : Colors.teal;
-    // Attractions (geoapify): show the destination domain instead of a generic
-    // source label, so the user sees where the link goes.
-    final host = e.source == 'geoapify' ? _hostOf(e.bookingUrl) : '';
+    // Show the destination domain (viator.com, ticketmaster.com,
+    // curitiba.pr.gov.br, …) instead of a generic source label.
+    final host = _hostOf(e.bookingUrl);
     final label = host.isNotEmpty ? host : e.sourceLabel;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
