@@ -30,12 +30,15 @@ const db = admin.firestore();
 const COLLECTION = 'external_events';
 const GEOAPIFY_API_KEY = defineSecret('GEOAPIFY_API_KEY');
 
-// Geoapify categories: museums, tourist attractions, theme/amusement parks.
+// Geoapify categories: museums, tourist attractions/sights, theme & amusement
+// parks, plus city parks and national parks.
 const CATEGORIES = [
   'entertainment.museum',
   'tourism.attraction',
   'tourism.sights',
   'entertainment.theme_park',
+  'leisure.park',
+  'national_park',
 ].join(',');
 
 const SEARCH_RADIUS_M = 30000; // 30 km around each city centre
@@ -166,6 +169,8 @@ async function writeCountryStats(docs: Doc[], source: string): Promise<void> {
 function categoryLabel(cats: string[]): string {
   if (cats.some((c) => c.includes('theme_park') || c.includes('amusement'))) return 'theme_park';
   if (cats.some((c) => c.includes('museum'))) return 'museum';
+  if (cats.some((c) => c.includes('national_park'))) return 'national_park';
+  if (cats.some((c) => c.includes('park'))) return 'park';
   return 'attraction';
 }
 

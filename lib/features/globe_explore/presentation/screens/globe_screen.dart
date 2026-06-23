@@ -57,7 +57,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
     super.initState();
     _loadNativeEvents();
     _loadCountryStats('viator');
-    _loadCountryStats('tiqets');
+    _loadCountryStats('geoapify');
     _loadCountryStats('ticketmaster');
   }
 
@@ -90,7 +90,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
       setState(() {
         if (source == 'viator') {
           _experienceStats = stats;
-        } else if (source == 'tiqets') {
+        } else if (source == 'geoapify') {
           _attractionStats = stats;
         } else {
           _liveEventStats = stats;
@@ -218,7 +218,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
     final all = snap.docs.map(ExternalEvent.fromFirestore).toList()
       ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
     final exp = all.where((e) => e.source == 'viator').toList();
-    final att = all.where((e) => e.source == 'tiqets').toList();
+    final att = all.where((e) => e.source == 'geoapify').toList();
     final live = all.where((e) => e.source == 'ticketmaster').toList();
     if (!mounted) return;
     final l10n = AppLocalizations.of(context)!;
