@@ -276,7 +276,13 @@ function commonsFilePath(file: string): string {
   )}?width=800`;
 }
 
-type WdInfo = { desc?: string; file?: string; title?: string; lang?: string };
+type WdInfo = {
+  desc?: string;
+  file?: string;
+  title?: string;
+  lang?: string;
+  website?: string; // P856 official website
+};
 
 /// Batch-resolve Wikidata entities (≤50 per call) → English description, P18
 /// image file, and best Wikipedia sitelink. ~43 calls for 2k items instead of
@@ -300,6 +306,9 @@ async function wikidataBatch(ids: string[]): Promise<Map<string, WdInfo>> {
         const file = ent.claims?.P18?.[0]?.mainsnak?.datavalue?.value as
           | string
           | undefined;
+        const website = ent.claims?.P856?.[0]?.mainsnak?.datavalue?.value as
+          | string
+          | undefined;
         const sl = ent.sitelinks || {};
         let title: string | undefined;
         let lang: string | undefined;
@@ -315,7 +324,7 @@ async function wikidataBatch(ids: string[]): Promise<Map<string, WdInfo>> {
             lang = k.replace(/wiki$/, '');
           }
         }
-        out.set(id, { desc, file, title, lang });
+        out.set(id, { desc, file, title, lang, website });
       }
     } catch (e) {
       console.error('wikidataBatch chunk failed', e);
@@ -477,6 +486,11 @@ async function enrichAll(all: Doc[]): Promise<void> {
     const d = doc.data;
     const lang = d._wpLang as string | undefined;
     const title = d._wpTitle as string | undefined;
+    // Official website: OSM tag, else the Wikidata P856 scraped above.
+    if ((!d.website || d.website === '') && d._wikidata) {
+      const site = wd.get(d._wikidata as string)?.website;
+      if (site) d.website = site;
+    }
     const wikipediaUrl =
       lang && title
         ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}`
@@ -584,6 +598,71 @@ async function runGeoapify(
     totalCities,
   };
 }
+
+/// One-time backfill: scrape the Wikidata P856 official website for existing
+/// geoapify attractions that have a Wikidata reference but no website, and store
+/// it in the `website` field (so it's preloaded in the DB, not fetched on tap).
+/// Rebuilds the shard index at the end.
+export const runBackfillGeoapifyWebsitesNow = onRequest(
+  { timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] },
+  async (req, res) => {
+    const key = GEOAPIFY_API_KEY.value();
+    if (!key || req.query.token !== key) {
+      res.status(403).send('Forbidden');
+      return;
+    }
+    // Collect (docId → wikidata Q) for geoapify docs missing a website.
+    const idToQ = new Map<string, string>();
+    let cursor: FirebaseFirestore.QueryDocumentSnapshot | undefined;
+    for (;;) {
+      let q = db
+        .collection(COLLECTION)
+        .where('source', '==', 'geoapify')
+        .orderBy('__name__')
+        .limit(1000);
+      if (cursor) q = q.startAfter(cursor);
+      const snap = await q.get();
+      if (snap.empty) break;
+      for (const doc of snap.docs) {
+        const d = doc.data();
+        const site = d.website as string | undefined;
+        const wdUrl = d.wikidataUrl as string | undefined;
+        if ((site == null || site === '') && wdUrl) {
+          const wq = wdUrl.split('/').pop() || '';
+          if (wq.startsWith('Q')) idToQ.set(doc.id, wq);
+        }
+      }
+      cursor = snap.docs[snap.docs.length - 1];
+      if (snap.docs.length < 1000) break;
+    }
+
+    // Batch-resolve P856 from Wikidata and write it back.
+    const qs = [...new Set(idToQ.values())];
+    const wd = await wikidataBatch(qs);
+    let batch = db.batch();
+    let ops = 0;
+    let updated = 0;
+    const commits: Promise<unknown>[] = [];
+    for (const [docId, wq] of idToQ) {
+      const site = wd.get(wq)?.website;
+      if (!site) continue;
+      batch.set(db.collection(COLLECTION).doc(docId), { website: site }, { merge: true });
+      updated++;
+      if (++ops >= 400) {
+        commits.push(batch.commit());
+        batch = db.batch();
+        ops = 0;
+      }
+    }
+    if (ops > 0) commits.push(batch.commit());
+    await Promise.all(commits);
+    await buildSourceIndex('geoapify');
+    console.log(
+      `backfillGeoapifyWebsites: ${updated} websites set (of ${idToQ.size} candidates).`
+    );
+    res.status(200).json({ ok: true, candidates: idToQ.size, updated });
+  }
+);
 
 // Attractions are static reference data — imported via this manual trigger, not
 // on a schedule. The free Geoapify tier is ~3k requests/day, so a large city
