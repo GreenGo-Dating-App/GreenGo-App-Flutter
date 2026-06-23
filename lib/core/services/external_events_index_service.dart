@@ -31,6 +31,99 @@ class ExternalEventsIndexService {
   /// Hard cap for the fallback full-collection read (safety bound).
   static const int _fallbackCap = 20000;
 
+  /// Progressive load: reads the shards one at a time and calls [onBatch] as
+  /// each arrives, so the UI can show the first results immediately and keep
+  /// filling in while the user scrolls (instead of one big upfront download).
+  /// Memoizes the full list, so repeat opens return instantly via [cached].
+  Future<List<ExternalEvent>> loadStreaming(
+    String source, {
+    required void Function(List<ExternalEvent> batch) onBatch,
+  }) async {
+    final memo = _cache[source];
+    if (memo != null) {
+      if (memo.isNotEmpty) onBatch(memo);
+      return memo;
+    }
+    try {
+      final metaRef =
+          _db.collection('external_events_index').doc('${source}_meta');
+      DocumentSnapshot<Map<String, dynamic>> meta;
+      try {
+        meta = await metaRef.get(const GetOptions(source: Source.server));
+      } catch (_) {
+        meta = await metaRef.get(const GetOptions(source: Source.cache));
+      }
+      final shardCount = (meta.data()?['shardCount'] as num?)?.toInt() ?? 0;
+      if (!meta.exists || shardCount <= 0) {
+        final all = await _loadFromCollection(source);
+        if (all.isNotEmpty) {
+          _cache[source] = all;
+          onBatch(all);
+        }
+        return all;
+      }
+      final serverVer =
+          (meta.data()?['updatedAt'] as Timestamp?)?.millisecondsSinceEpoch ??
+              shardCount;
+      final prefs = await SharedPreferences.getInstance();
+      final verKey = 'extidx_${source}_ver';
+      var src = prefs.getInt(verKey) == serverVer ? Source.cache : Source.server;
+
+      final out = <ExternalEvent>[];
+      for (var i = 0; i < shardCount; i++) {
+        var batch = await _readShard(source, i, src);
+        if (batch.isEmpty && src == Source.cache) {
+          // Cache miss → switch to server for this shard and the rest.
+          src = Source.server;
+          batch = await _readShard(source, i, src);
+        }
+        if (batch.isNotEmpty) {
+          out.addAll(batch);
+          onBatch(batch);
+        }
+      }
+      if (out.isNotEmpty) {
+        _cache[source] = out;
+        await prefs.setInt(verKey, serverVer);
+      }
+      return out;
+    } catch (_) {
+      final all = await _loadFromCollection(source);
+      if (all.isNotEmpty) {
+        _cache[source] = all;
+        onBatch(all);
+      }
+      return all;
+    }
+  }
+
+  /// Read a single shard from the given Firestore [src] (empty on miss/error).
+  Future<List<ExternalEvent>> _readShard(
+      String source, int i, Source src) async {
+    try {
+      final s = await _db
+          .collection('external_events_index')
+          .doc('${source}_$i')
+          .get(GetOptions(source: src));
+      if (!s.exists) return const [];
+      final events = s.data()?['events'];
+      final out = <ExternalEvent>[];
+      if (events is List) {
+        for (final e in events) {
+          if (e is Map) {
+            out.add(ExternalEvent.fromMap(
+                null,
+                Map<String, dynamic>.from(e)
+                  ..putIfAbsent('source', () => source)));
+          }
+        }
+      }
+      return out;
+    } catch (_) {
+      return const [];
+    }
+  }
+
   /// All events for [source], loaded once and memoized. Safe to call repeatedly.
   Future<List<ExternalEvent>> ensureLoaded(String source) {
     final cached = _cache[source];
