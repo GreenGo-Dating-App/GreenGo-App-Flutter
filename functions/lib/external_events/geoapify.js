@@ -59,6 +59,7 @@ const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const build_index_1 = require("./build_index");
+const geohash_1 = require("./geohash");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const GEOAPIFY_API_KEY = (0, params_1.defineSecret)('GEOAPIFY_API_KEY');
@@ -265,6 +266,9 @@ async function fetchCity(key, city) {
                     reviewCount: 0,
                     lat,
                     lng,
+                    geohash: typeof lat === 'number' && typeof lng === 'number'
+                        ? (0, geohash_1.geohashEncode)(lat, lng)
+                        : null,
                     // Link fields are finalized in enrichment. `website` = official site
                     // (OSM), `bookingUrl` = best primary link, `wikidataUrl` = WD page.
                     website: website || null,

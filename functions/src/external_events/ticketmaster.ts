@@ -13,6 +13,7 @@ import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { buildSourceIndex } from './build_index';
+import { geohashEncode } from './geohash';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -118,6 +119,10 @@ function mapEvent(e: any, countryName: string): Doc | null {
       country: countryName,
       lat,
       lng,
+      geohash:
+        typeof lat === 'number' && typeof lng === 'number'
+          ? geohashEncode(lat, lng)
+          : null,
       fromPrice: price.min != null ? Number(price.min) : null,
       currency: price.currency ?? 'USD',
       rating: 0,

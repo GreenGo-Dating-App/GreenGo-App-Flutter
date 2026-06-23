@@ -55,6 +55,7 @@ const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const build_index_1 = require("./build_index");
+const geohash_1 = require("./geohash");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
@@ -259,6 +260,9 @@ function mapProduct(p, countryName, idMap) {
             // Precise coordinates from the product's primary city destination.
             lat: city.lat,
             lng: city.lng,
+            geohash: typeof city.lat === 'number' && typeof city.lng === 'number'
+                ? (0, geohash_1.geohashEncode)(city.lat, city.lng)
+                : null,
             fromPrice: (_g = (_f = (_e = p.pricing) === null || _e === void 0 ? void 0 : _e.summary) === null || _f === void 0 ? void 0 : _f.fromPrice) !== null && _g !== void 0 ? _g : null,
             currency: (_j = (_h = p.pricing) === null || _h === void 0 ? void 0 : _h.currency) !== null && _j !== void 0 ? _j : 'USD',
             // Default to 0 (not null) so orderBy('rating'/'reviewCount') includes
