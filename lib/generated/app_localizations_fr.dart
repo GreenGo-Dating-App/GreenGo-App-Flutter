@@ -3928,6 +3928,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventsTitle => 'Evenements';
 
   @override
+  String get eventsAndPlacesTitle => 'Events and Places';
+
+  @override
+  String get eventsCategoryAll => 'All';
+
+  @override
   String get eventsToday => 'Aujourd\'hui';
 
   @override

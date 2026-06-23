@@ -88,6 +88,11 @@ class _EventsScreenState extends State<EventsScreen>
   bool get _isNativeTab =>
       _tabController.index == 0 || _tabController.index == 4;
 
+  // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
+  bool get _isAttractionsTab => _tabController.index == 2;
+  // Selected attractions category (null = all).
+  String? _attractionCategory;
+
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
     if (pos != null && mounted) {
@@ -114,7 +119,7 @@ class _EventsScreenState extends State<EventsScreen>
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
           title: Text(
-            AppLocalizations.of(context)!.eventsTitle,
+            AppLocalizations.of(context)!.eventsAndPlacesTitle,
             style: const TextStyle(color: AppColors.textPrimary),
           ),
           actions: [
@@ -191,8 +196,10 @@ class _EventsScreenState extends State<EventsScreen>
               children: [
                 // Search by country/city/name + popularity sort
                 _buildSearchAndSortBar(),
-                // Category filter — only on native tabs, only categories present
+                // Category filter — native tabs use GreenGo categories; the
+                // Attractions tab uses the Geoapify place categories.
                 if (_isNativeTab) _buildCategoryFilter(state),
+                if (_isAttractionsTab) _buildAttractionCategoryFilter(),
                 // Events List
                 Expanded(
                   child: _buildBody(state),
@@ -218,7 +225,7 @@ class _EventsScreenState extends State<EventsScreen>
         children: [
           _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
           _buildExperiencesTab('ticketmaster'),
-          _buildExperiencesTab('geoapify'),
+          _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator'),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
@@ -676,8 +683,8 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  // ---- Experiences (Viator) / Attractions (Tiqets) tabs — infinite scroll ----
-  Widget _buildExperiencesTab(String source) {
+  // ---- External tabs (Live Events / Attractions / Experiences) — infinite scroll ----
+  Widget _buildExperiencesTab(String source, {String? category}) {
     return ExperiencesTab(
       key: ValueKey('exp_$source'),
       source: source,
@@ -685,9 +692,49 @@ class _EventsScreenState extends State<EventsScreen>
       query: _searchQuery,
       popular: false,
       sort: _extSort,
+      category: category,
       userLat: _userLat,
       userLng: _userLng,
       currentUserId: widget.currentUserId,
+    );
+  }
+
+  /// Category chips for the Attractions (Geoapify) tab.
+  Widget _buildAttractionCategoryFilter() {
+    final l10n = AppLocalizations.of(context)!;
+    const cats = <String, String>{
+      'museum': 'Museums',
+      'attraction': 'Sights',
+      'park': 'Parks',
+      'national_park': 'National parks',
+      'theme_park': 'Theme parks',
+    };
+    Widget chip(String? value, String label) {
+      final selected = _attractionCategory == value;
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: ChoiceChip(
+          label: Text(label),
+          selected: selected,
+          backgroundColor: AppColors.backgroundCard,
+          selectedColor: AppColors.richGold,
+          labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
+          onSelected: (_) => setState(() => _attractionCategory = value),
+        ),
+      );
+    }
+
+    return SizedBox(
+      height: 48,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        children: [
+          chip(null, l10n.eventsCategoryAll),
+          ...cats.entries.map((e) => chip(e.key, e.value)),
+        ],
+      ),
     );
   }
 

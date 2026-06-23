@@ -3902,6 +3902,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsTitle => 'Eventos';
 
   @override
+  String get eventsAndPlacesTitle => 'Events and Places';
+
+  @override
+  String get eventsCategoryAll => 'All';
+
+  @override
   String get eventsToday => 'Hoje';
 
   @override

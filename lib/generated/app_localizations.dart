@@ -6989,6 +6989,18 @@ abstract class AppLocalizations {
   /// **'Events'**
   String get eventsTitle;
 
+  /// No description provided for @eventsAndPlacesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Events and Places'**
+  String get eventsAndPlacesTitle;
+
+  /// No description provided for @eventsCategoryAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get eventsCategoryAll;
+
   /// No description provided for @eventsToday.
   ///
   /// In en, this message translates to:

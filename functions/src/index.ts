@@ -70,8 +70,8 @@ export {
 // Geoapify attractions ingester — free, commercial-safe museums/attractions/
 // theme parks (Wikipedia-enriched). Powers the Attractions tab. No-ops until
 // GEOAPIFY_API_KEY is set.
+// Attractions are static data — imported once via the manual trigger (no schedule).
 export {
-  ingestGeoapifyAttractions,
   runIngestGeoapifyNow,
 } from './external_events/geoapify';
 

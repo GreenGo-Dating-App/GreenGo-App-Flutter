@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../features/events/domain/entities/external_event.dart';
 
@@ -44,10 +45,14 @@ class ExternalEventsIndexService {
   /// Synchronously returns what's already cached (empty if not loaded yet).
   List<ExternalEvent> cached(String source) => _cache[source] ?? const [];
 
-  /// Force a reload on next access (used by pull-to-refresh).
+  /// Force a reload on next access (used by pull-to-refresh): drops the in-memory
+  /// copy and the stored version so the next load re-reads shards from the
+  /// server even if the server index is unchanged.
   void invalidate(String source) {
     _cache.remove(source);
     _inflight.remove(source);
+    SharedPreferences.getInstance()
+        .then((p) => p.remove('extidx_${source}_ver'));
   }
 
   Future<List<ExternalEvent>> _load(String source) async {
@@ -56,35 +61,81 @@ class ExternalEventsIndexService {
     return _loadFromCollection(source);
   }
 
-  /// Read the sharded compact index (few document reads for the whole source).
+  /// Read the sharded compact index. Only re-downloads the shard documents when
+  /// the server's index version (the meta doc's `updatedAt`) differs from what
+  /// we last cached; otherwise the shards are served from the on-device
+  /// Firestore cache (no network), and event images stay in the image disk
+  /// cache. So nothing is re-downloaded unless the server actually refreshed.
   Future<List<ExternalEvent>> _loadFromIndex(String source) async {
     try {
-      final meta =
-          await _db.collection('external_events_index').doc('${source}_meta').get();
+      // Meta: prefer the server so we notice a refresh; fall back to cache when
+      // offline so the app still loads.
+      final metaRef =
+          _db.collection('external_events_index').doc('${source}_meta');
+      DocumentSnapshot<Map<String, dynamic>> meta;
+      try {
+        meta = await metaRef.get(const GetOptions(source: Source.server));
+      } catch (_) {
+        meta = await metaRef.get(const GetOptions(source: Source.cache));
+      }
       if (!meta.exists) return const [];
       final shardCount = (meta.data()?['shardCount'] as num?)?.toInt() ?? 0;
       if (shardCount <= 0) return const [];
+      final serverVer =
+          (meta.data()?['updatedAt'] as Timestamp?)?.millisecondsSinceEpoch ??
+              shardCount;
 
+      final prefs = await SharedPreferences.getInstance();
+      final verKey = 'extidx_${source}_ver';
+      final unchanged = prefs.getInt(verKey) == serverVer;
+
+      // Unchanged → read shards from the local cache (no network). On a cache
+      // miss (e.g. first run, cleared cache) fall back to the server.
+      List<ExternalEvent> list = await _readShards(
+          source, shardCount, unchanged ? Source.cache : Source.server);
+      if (list.isEmpty) {
+        list = await _readShards(source, shardCount, Source.server);
+      }
+      if (list.isNotEmpty) await prefs.setInt(verKey, serverVer);
+      return list;
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  /// Read all shards for [source] from the given Firestore [src]. Returns empty
+  /// if any shard is missing from that source (e.g. a cache miss), so the caller
+  /// can retry against the server.
+  Future<List<ExternalEvent>> _readShards(
+      String source, int shardCount, Source src) async {
+    try {
+      final opts = GetOptions(source: src);
       final futures = <Future<DocumentSnapshot<Map<String, dynamic>>>>[];
       for (var i = 0; i < shardCount; i++) {
-        futures.add(
-            _db.collection('external_events_index').doc('${source}_$i').get());
+        futures.add(_db
+            .collection('external_events_index')
+            .doc('${source}_$i')
+            .get(opts));
       }
       final shards = await Future.wait(futures);
       final out = <ExternalEvent>[];
       for (final s in shards) {
+        if (!s.exists) return const []; // missing shard → treat as miss
         final events = s.data()?['events'];
         if (events is List) {
           for (final e in events) {
             if (e is Map) {
               out.add(ExternalEvent.fromMap(
-                  null, Map<String, dynamic>.from(e)..putIfAbsent('source', () => source)));
+                  null,
+                  Map<String, dynamic>.from(e)
+                    ..putIfAbsent('source', () => source)));
             }
           }
         }
       }
       return out;
     } catch (_) {
+      // Cache miss throws for Source.cache → signal the caller to use server.
       return const [];
     }
   }
