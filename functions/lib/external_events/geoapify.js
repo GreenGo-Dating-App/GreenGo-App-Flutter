@@ -76,7 +76,6 @@ const CATEGORIES = [
 const SEARCH_RADIUS_M = 30000; // 30 km around each city centre
 const PLACES_PER_CITY = 200; // Geoapify page size (max 500 on free tier)
 const KEEP_PER_CITY = 60; // notable POIs we keep & enrich per city
-const ENRICH_CONCURRENCY = 8; // parallel Wikipedia/Wikidata calls
 // Top tourism cities worldwide with centre coordinates + ISO-2 country code.
 // Bounded list → bounded API usage; expand freely (each adds ~1 Places call).
 const CITIES = [
@@ -268,56 +267,216 @@ async function fetchCity(key, city) {
         return [];
     }
 }
-/// Enrich one doc with a description + image from Wikipedia (preferred) or
-/// Wikidata. Mutates doc.data in place; clears the private _wiki* fields.
-async function enrich(doc) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
-    const d = doc.data;
-    const wikipedia = d._wikipedia;
-    const wikidata = d._wikidata;
+// Wikimedia asks for a descriptive UA with contact info; a generic one gets
+// throttled hard (which is why per-item enrichment only filled a few images).
+const WIKI_HEADERS = {
+    'User-Agent': 'GreenGoApp/1.0 (https://greengo-chat.web.app; places ingester) firebase-functions',
+};
+function commonsFilePath(file) {
+    return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=800`;
+}
+/// Batch-resolve Wikidata entities (≤50 per call) → English description, P18
+/// image file, and best Wikipedia sitelink. ~43 calls for 2k items instead of
+/// 2k, so Wikimedia doesn't rate-limit us.
+async function wikidataBatch(ids) {
+    var _a, _b, _c, _d, _e, _f, _g, _h;
+    const out = new Map();
+    for (let i = 0; i < ids.length; i += 50) {
+        const chunk = ids.slice(i, i + 50);
+        try {
+            const url = `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json` +
+                `&props=descriptions%7Cclaims%7Csitelinks&languages=en` +
+                `&ids=${chunk.join('%7C')}`;
+            const res = await fetch(url, { headers: WIKI_HEADERS });
+            if (!res.ok)
+                continue;
+            const j = await res.json();
+            for (const id of chunk) {
+                const ent = (_a = j.entities) === null || _a === void 0 ? void 0 : _a[id];
+                if (!ent)
+                    continue;
+                const desc = (_c = (_b = ent.descriptions) === null || _b === void 0 ? void 0 : _b.en) === null || _c === void 0 ? void 0 : _c.value;
+                const file = (_h = (_g = (_f = (_e = (_d = ent.claims) === null || _d === void 0 ? void 0 : _d.P18) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.mainsnak) === null || _g === void 0 ? void 0 : _g.datavalue) === null || _h === void 0 ? void 0 : _h.value;
+                const sl = ent.sitelinks || {};
+                let title;
+                let lang;
+                if (sl.enwiki) {
+                    title = sl.enwiki.title;
+                    lang = 'en';
+                }
+                else {
+                    const k = Object.keys(sl).find((x) => x.endsWith('wiki') && !x.startsWith('commons'));
+                    if (k) {
+                        title = sl[k].title;
+                        lang = k.replace(/wiki$/, '');
+                    }
+                }
+                out.set(id, { desc, file, title, lang });
+            }
+        }
+        catch (e) {
+            console.error('wikidataBatch chunk failed', e);
+        }
+    }
+    return out;
+}
+/// Batch Wikipedia pageimages + intro extract for one language (≤50 titles per
+/// call). Returns requestedTitle → { img, extract }, resolving normalization
+/// and redirects so the lookup matches the title we asked for.
+async function wikipediaBatch(lang, titles) {
+    var _a;
+    const out = new Map();
+    for (let i = 0; i < titles.length; i += 50) {
+        const chunk = titles.slice(i, i + 50);
+        try {
+            const url = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json` +
+                `&prop=pageimages%7Cextracts&piprop=thumbnail&pithumbsize=800` +
+                `&exintro=1&explaintext=1&redirects=1` +
+                `&titles=${chunk.map((t) => encodeURIComponent(t)).join('%7C')}`;
+            const res = await fetch(url, { headers: WIKI_HEADERS });
+            if (!res.ok)
+                continue;
+            const j = await res.json();
+            const q = j.query || {};
+            const remap = new Map();
+            for (const n of q.normalized || [])
+                remap.set(n.from, n.to);
+            for (const r of q.redirects || [])
+                remap.set(r.from, r.to);
+            const byFinal = new Map();
+            for (const pid of Object.keys(q.pages || {})) {
+                const pg = q.pages[pid];
+                if (pg.title) {
+                    byFinal.set(pg.title, {
+                        img: (_a = pg.thumbnail) === null || _a === void 0 ? void 0 : _a.source,
+                        extract: pg.extract,
+                    });
+                }
+            }
+            for (const t of chunk) {
+                let f = t;
+                if (remap.has(f))
+                    f = remap.get(f); // normalization
+                if (remap.has(f))
+                    f = remap.get(f); // then redirect
+                const data = byFinal.get(f) || byFinal.get(t);
+                if (data && (data.img || data.extract))
+                    out.set(t, data);
+            }
+        }
+        catch (e) {
+            console.error(`wikipediaBatch ${lang} chunk failed`, e);
+        }
+    }
+    return out;
+}
+/// Real photo near the POI from Wikimedia Commons (no API key) — fallback for
+/// places without a Wikidata P18 / Wikipedia image (e.g. many parks).
+async function commonsGeoImage(lat, lng) {
+    var _a;
     try {
-        if (wikipedia && wikipedia.includes(':')) {
-            const lang = wikipedia.slice(0, wikipedia.indexOf(':'));
-            const title = wikipedia.slice(wikipedia.indexOf(':') + 1);
-            const res = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`, { headers: { 'User-Agent': 'GreenGo/1.0 (places ingester)' } });
-            if (res.ok) {
-                const j = await res.json();
-                d.description = j.extract || d.description;
-                d.imageUrl = ((_a = j.thumbnail) === null || _a === void 0 ? void 0 : _a.source) || ((_b = j.originalimage) === null || _b === void 0 ? void 0 : _b.source) || d.imageUrl;
-                if (!d.bookingUrl)
-                    d.bookingUrl = ((_d = (_c = j.content_urls) === null || _c === void 0 ? void 0 : _c.desktop) === null || _d === void 0 ? void 0 : _d.page) || null;
+        const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json` +
+            `&list=geosearch&gsnamespace=6&gsradius=1000&gslimit=8` +
+            `&gscoord=${lat}%7C${lng}`;
+        const res = await fetch(url, { headers: WIKI_HEADERS });
+        if (!res.ok)
+            return null;
+        const j = await res.json();
+        const hits = ((_a = j.query) === null || _a === void 0 ? void 0 : _a.geosearch) || [];
+        for (const h of hits) {
+            const t = h.title || '';
+            if (!/^File:.+\.(jpe?g|png)$/i.test(t))
+                continue;
+            return commonsFilePath(t.replace(/^File:/, ''));
+        }
+        return null;
+    }
+    catch (_) {
+        return null;
+    }
+}
+/// Enrich all docs with descriptions + images using batched Wikimedia calls
+/// (avoids the rate-limiting that throttled per-item enrichment), then a Commons
+/// geo-photo fallback for the remainder. Mutates each doc.data in place.
+async function enrichAll(all) {
+    var _a;
+    // Phase 1 — Wikidata batch (P18 image, en description, Wikipedia sitelink).
+    const wdIds = [
+        ...new Set(all.map((d) => d.data._wikidata).filter(Boolean)),
+    ];
+    const wd = await wikidataBatch(wdIds);
+    // Phase 2 — choose a Wikipedia article per doc (OSM tag, else WD sitelink)
+    // and batch-fetch images/extracts per language.
+    const titlesByLang = new Map();
+    for (const doc of all) {
+        const d = doc.data;
+        let lang;
+        let title;
+        const wp = d._wikipedia;
+        if (wp && wp.includes(':')) {
+            lang = wp.slice(0, wp.indexOf(':'));
+            title = wp.slice(wp.indexOf(':') + 1);
+        }
+        else if (d._wikidata) {
+            const info = wd.get(d._wikidata);
+            if ((info === null || info === void 0 ? void 0 : info.title) && info.lang) {
+                lang = info.lang;
+                title = info.title;
             }
         }
-        else if (wikidata) {
-            const res = await fetch(`https://www.wikidata.org/wiki/Special:EntityData/${wikidata}.json`, { headers: { 'User-Agent': 'GreenGo/1.0 (places ingester)' } });
-            if (res.ok) {
-                const j = await res.json();
-                const ent = (_e = j.entities) === null || _e === void 0 ? void 0 : _e[wikidata];
-                d.description =
-                    ((_g = (_f = ent === null || ent === void 0 ? void 0 : ent.descriptions) === null || _f === void 0 ? void 0 : _f.en) === null || _g === void 0 ? void 0 : _g.value) ||
-                        ((_j = (_h = ent === null || ent === void 0 ? void 0 : ent.descriptions) === null || _h === void 0 ? void 0 : _h['en-us']) === null || _j === void 0 ? void 0 : _j.value) ||
-                        d.description;
-                // P18 = image (Commons filename) → render via Special:FilePath.
-                const file = (_p = (_o = (_m = (_l = (_k = ent === null || ent === void 0 ? void 0 : ent.claims) === null || _k === void 0 ? void 0 : _k.P18) === null || _l === void 0 ? void 0 : _l[0]) === null || _m === void 0 ? void 0 : _m.mainsnak) === null || _o === void 0 ? void 0 : _o.datavalue) === null || _p === void 0 ? void 0 : _p.value;
-                if (file) {
-                    d.imageUrl = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=800`;
-                }
-                if (!d.bookingUrl) {
-                    d.bookingUrl = `https://www.wikidata.org/wiki/${wikidata}`;
-                }
-            }
+        if (lang && title) {
+            d._wpLang = lang;
+            d._wpTitle = title;
+            if (!titlesByLang.has(lang))
+                titlesByLang.set(lang, new Set());
+            titlesByLang.get(lang).add(title);
         }
     }
-    catch (e) {
-        console.error('enrich failed', doc.id, e);
+    const wpByLang = new Map();
+    for (const [lang, set] of titlesByLang) {
+        wpByLang.set(lang, await wikipediaBatch(lang, [...set]));
     }
-    // Final CTA fallback: Google Maps search by name + city.
-    if (!d.bookingUrl) {
-        const q = encodeURIComponent(`${d.title} ${d.city || ''}`.trim());
-        d.bookingUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
+    // Phase 3 — assign description + image; collect the ones still missing a photo.
+    const needGeo = [];
+    for (const doc of all) {
+        const d = doc.data;
+        const info = d._wikidata ? wd.get(d._wikidata) : undefined;
+        const wpd = d._wpLang && d._wpTitle
+            ? (_a = wpByLang.get(d._wpLang)) === null || _a === void 0 ? void 0 : _a.get(d._wpTitle)
+            : undefined;
+        const desc = (wpd === null || wpd === void 0 ? void 0 : wpd.extract) || (info === null || info === void 0 ? void 0 : info.desc);
+        const img = (wpd === null || wpd === void 0 ? void 0 : wpd.img) || ((info === null || info === void 0 ? void 0 : info.file) ? commonsFilePath(info.file) : undefined);
+        if (desc && !d.description)
+            d.description = desc;
+        if (img && !d.imageUrl)
+            d.imageUrl = img;
+        if (!d.bookingUrl && d._wikidata) {
+            d.bookingUrl = `https://www.wikidata.org/wiki/${d._wikidata}`;
+        }
+        if (!d.imageUrl)
+            needGeo.push(doc);
     }
-    delete d._wikidata;
-    delete d._wikipedia;
+    // Phase 4 — Commons geo-photo for the remainder (bounded concurrency).
+    await pool(needGeo, 4, async (doc) => {
+        const d = doc.data;
+        if (typeof d.lat === 'number' && typeof d.lng === 'number') {
+            const g = await commonsGeoImage(d.lat, d.lng);
+            if (g)
+                d.imageUrl = g;
+        }
+    });
+    // Final CTA fallback + cleanup of private fields.
+    for (const doc of all) {
+        const d = doc.data;
+        if (!d.bookingUrl) {
+            const q = encodeURIComponent(`${d.title} ${d.city || ''}`.trim());
+            d.bookingUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
+        }
+        delete d._wikidata;
+        delete d._wikipedia;
+        delete d._wpLang;
+        delete d._wpTitle;
+    }
 }
 /// Run [tasks] with bounded concurrency.
 async function pool(items, size, fn) {
@@ -328,7 +487,7 @@ async function pool(items, size, fn) {
 async function runGeoapify(key) {
     if (!key) {
         console.log('ingestGeoapify: GEOAPIFY_API_KEY not set — skipping.');
-        return 0;
+        return { total: 0, withImage: 0 };
     }
     // Fetch all cities (dedupe by doc id across overlapping radii).
     const byId = new Map();
@@ -341,15 +500,17 @@ async function runGeoapify(key) {
     const all = [...byId.values()];
     if (all.length === 0) {
         console.log('ingestGeoapify: no POIs returned.');
-        return 0;
+        return { total: 0, withImage: 0 };
     }
-    // Enrich each with description + image (bounded concurrency).
-    await pool(all, ENRICH_CONCURRENCY, enrich);
+    // Enrich with descriptions + images via batched Wikimedia calls.
+    await enrichAll(all);
     await upsertAll(all);
     await writeCountryStats(all, 'geoapify');
     await (0, build_index_1.buildSourceIndex)('geoapify');
-    console.log(`ingestGeoapify: upserted ${all.length} attractions across ${CITIES.length} cities.`);
-    return all.length;
+    const withImage = all.filter((d) => !!d.data.imageUrl).length;
+    console.log(`ingestGeoapify: upserted ${all.length} attractions (${withImage} with images) ` +
+        `across ${CITIES.length} cities.`);
+    return { total: all.length, withImage };
 }
 // Scheduled refresh, every 24 hours (OSM-derived data changes slowly).
 exports.ingestGeoapifyAttractions = (0, scheduler_1.onSchedule)({ schedule: 'every 24 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] }, (0, monitoring_1.monitored)('ingestGeoapifyAttractions', async () => {
@@ -367,7 +528,12 @@ exports.runIngestGeoapifyNow = (0, https_1.onRequest)({ timeoutSeconds: 540, mem
     let cleared = 0;
     if (req.query.clear)
         cleared = await clearSource('geoapify');
-    const count = await runGeoapify(key);
-    res.status(200).json({ ok: true, cleared, upserted: count });
+    const r = await runGeoapify(key);
+    res.status(200).json({
+        ok: true,
+        cleared,
+        upserted: r.total,
+        withImage: r.withImage,
+    });
 }));
 //# sourceMappingURL=geoapify.js.map
