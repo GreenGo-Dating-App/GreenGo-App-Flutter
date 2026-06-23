@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
@@ -8,7 +7,7 @@ import '../../data/datasources/external_events_data_source.dart';
 import '../../data/datasources/external_events_pager.dart';
 import '../../data/datasources/external_events_preloader.dart';
 import '../../domain/entities/external_event.dart';
-import 'share_external_sheet.dart';
+import 'attraction_menu_dialog.dart';
 
 /// Experiences tab — external events (Experiences/Attractions/Live Events) with
 /// **infinite scroll**, downloaded already filtered & ordered from Firestore:
@@ -158,180 +157,11 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         .toList();
   }
 
-  Future<void> _book(String url) async {
-    if (url.isEmpty) return;
-    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-  }
-
-  /// Tap action for any external card → the chooser window (visit links /
-  /// open in maps / share).
-  void _open(ExternalEvent e) => _showLinkMenu(e);
-
-  String? _mapsUrl(ExternalEvent e) {
-    if (e.lat != null && e.lng != null) {
-      return 'https://www.google.com/maps/search/?api=1&query=${e.lat},${e.lng}';
-    }
-    final place = '${e.title} ${e.city ?? ''}'.trim();
-    if (place.isEmpty) return null;
-    return 'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(place)}';
-  }
-
-  /// A pop-up window with the attraction image on the left and the link options
-  /// on the right (mega-menu style).
-  void _showLinkMenu(ExternalEvent e) {
-    final l10n = AppLocalizations.of(context)!;
-    final maps = _mapsUrl(e);
-    final seen = <String>{};
-    final options = <Widget>[];
-
-    Widget actionTile(IconData icon, String label, VoidCallback onTap) =>
-        InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(10),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-            child: Row(
-              children: [
-                Icon(icon, color: AppColors.richGold, size: 20),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Text(label,
-                      style: const TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600)),
-                ),
-                const Icon(Icons.chevron_right,
-                    color: AppColors.textTertiary, size: 18),
-              ],
-            ),
-          ),
-        );
-
-    // A "Visit <domain>" link, de-duplicated by host.
-    void addLink(IconData icon, String label, String url) {
-      if (url.isEmpty) return;
-      final host = _hostOf(url);
-      if (host.isNotEmpty && !seen.add(host)) return;
-      options.add(actionTile(icon, label, () {
-        Navigator.pop(context);
-        _book(url);
-      }));
-    }
-
-    // Primary destination (provider page / official website / Wikidata page).
-    final primaryHost = _hostOf(e.bookingUrl);
-    addLink(
-        Icons.open_in_new,
-        '${l10n.attractionOpenLink}${primaryHost.isNotEmpty ? '  ·  $primaryHost' : ''}',
-        e.bookingUrl);
-    if (e.website != null && e.website!.isNotEmpty) {
-      addLink(Icons.public, l10n.attractionOpenWebsite, e.website!);
-    }
-    if (e.wikidataUrl != null && e.wikidataUrl!.isNotEmpty) {
-      addLink(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
-    }
-    if (maps != null) {
-      options.add(actionTile(Icons.map, l10n.attractionOpenInMaps, () {
-        Navigator.pop(context);
-        _book(maps);
-      }));
-    }
-    // Share — split into chat and group targets.
-    options.add(actionTile(Icons.chat_bubble_outline, l10n.attractionShareChat,
-        () {
-      Navigator.pop(context);
-      showShareExternalSheet(context,
-          item: e, currentUserId: widget.currentUserId, mode: 'chats');
-    }));
-    options.add(actionTile(Icons.groups, l10n.attractionShareGroup, () {
-      Navigator.pop(context);
-      showShareExternalSheet(context,
-          item: e, currentUserId: widget.currentUserId, mode: 'groups');
-    }));
-
-    final place = [e.city, e.country]
-        .where((s) => s != null && s.isNotEmpty)
-        .join(', ');
-
-    showDialog<void>(
-      context: context,
-      builder: (_) => Dialog(
-        backgroundColor: AppColors.backgroundCard,
-        clipBehavior: Clip.antiAlias,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: ConstrainedBox(
-          constraints: BoxConstraints(
-              maxHeight: MediaQuery.of(context).size.height * 0.62),
-          child: IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // Left: image
-                SizedBox(
-                  width: 130,
-                  child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
-                      ? CachedNetworkImage(
-                          imageUrl: e.imageUrl!,
-                          fit: BoxFit.cover,
-                          errorWidget: (_, __, ___) => _imgPlaceholder(e, 160),
-                        )
-                      : _imgPlaceholder(e, 160),
-                ),
-                // Right: info (title, place, description) + options
-                Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.all(12),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(e.title,
-                            style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold)),
-                        if (place.isNotEmpty) ...[
-                          const SizedBox(height: 4),
-                          Row(
-                            children: [
-                              const Icon(Icons.place,
-                                  size: 14, color: AppColors.textTertiary),
-                              const SizedBox(width: 4),
-                              Expanded(
-                                child: Text(place,
-                                    style: const TextStyle(
-                                        color: AppColors.textSecondary,
-                                        fontSize: 12)),
-                              ),
-                            ],
-                          ),
-                        ],
-                        if (e.description != null &&
-                            e.description!.isNotEmpty) ...[
-                          const SizedBox(height: 8),
-                          Text(e.description!,
-                              maxLines: 5,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                  color: AppColors.textSecondary,
-                                  fontSize: 12,
-                                  height: 1.3)),
-                        ],
-                        const Divider(height: 18, color: AppColors.divider),
-                        ...options,
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+  /// Tap action for any external card → the attraction/experience window
+  /// (image + info + actions: open link / official website / wikidata / maps /
+  /// share to chat / share to group / report).
+  void _open(ExternalEvent e) =>
+      showAttractionMenu(context, event: e, currentUserId: widget.currentUserId);
 
   /// Pull-to-refresh: re-query from the server.
   Future<void> _refresh() => _reload();
