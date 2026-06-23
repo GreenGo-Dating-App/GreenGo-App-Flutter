@@ -42,9 +42,24 @@ const CATEGORIES = [
 
 const SEARCH_RADIUS_M = 30000; // 30 km around each city centre
 const PLACES_PER_CITY = 200; // Geoapify page size (max 500 on free tier)
-const KEEP_PER_CITY = 15; // uniform target of notable POIs kept per city
-const CITY_LIMIT = 500; // top cities pulled from the city_coordinates table
+const KEEP_PER_CITY = 10; // top N notable POIs kept per city
+const CITY_LIMIT = 10000; // effectively all cities in the city_coordinates table
 const CITY_FETCH_CONCURRENCY = 8; // parallel Geoapify Places calls
+
+// Always covered (prepended), so major cities are present even if absent from /
+// late in the city_coordinates table. Country names match the other sources.
+const GUARANTEED_CITIES: { name: string; lat: number; lng: number; country: string }[] = [
+  { name: 'New York', lat: 40.7128, lng: -74.006, country: 'United States' },
+  { name: 'Los Angeles', lat: 34.0522, lng: -118.2437, country: 'United States' },
+  { name: 'Sao Paulo', lat: -23.5505, lng: -46.6333, country: 'Brazil' },
+  { name: 'Rio de Janeiro', lat: -22.9068, lng: -43.1729, country: 'Brazil' },
+  { name: 'Paris', lat: 48.8566, lng: 2.3522, country: 'France' },
+  { name: 'Rome', lat: 41.9028, lng: 12.4964, country: 'Italy' },
+  { name: 'Milan', lat: 45.4642, lng: 9.19, country: 'Italy' },
+  { name: 'Madrid', lat: 40.4168, lng: -3.7038, country: 'Spain' },
+  { name: 'London', lat: 51.5074, lng: -0.1278, country: 'United Kingdom' },
+  { name: 'Berlin', lat: 52.52, lng: 13.405, country: 'Germany' },
+];
 
 // Top tourism cities worldwide with centre coordinates + ISO-2 country code.
 // Bounded list → bounded API usage; expand freely (each adds ~1 Places call).
@@ -224,8 +239,11 @@ async function fetchCity(
           reviewCount: 0,
           lat,
           lng,
-          // Filled by enrichment when missing; website preferred for the CTA.
-          bookingUrl: website || null,
+          // Link fields are finalized in enrichment. `website` = official site
+          // (OSM), `bookingUrl` = best primary link, `wikidataUrl` = WD page.
+          website: website || null,
+          bookingUrl: null,
+          wikidataUrl: null,
           _wikidata: wikidata || null,
           _wikipedia: wikipedia || null,
           fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -436,9 +454,6 @@ async function enrichAll(all: Doc[]): Promise<void> {
     const img = wpd?.img || p18;
     if (desc && !d.description) d.description = desc;
     if (img && !d.imageUrl) d.imageUrl = img;
-    if (!d.bookingUrl && d._wikidata) {
-      d.bookingUrl = `https://www.wikidata.org/wiki/${d._wikidata}`;
-    }
     if (!d.imageUrl) needGeo.push(doc);
   }
 
@@ -451,13 +466,25 @@ async function enrichAll(all: Doc[]): Promise<void> {
     }
   });
 
-  // Final CTA fallback + cleanup of private fields.
+  // Finalize the link fields + clean up private fields. Primary link priority:
+  // official website → Wikipedia article → Wikidata page → Google Maps.
   for (const doc of all) {
     const d = doc.data;
-    if (!d.bookingUrl) {
-      const q = encodeURIComponent(`${d.title} ${d.city || ''}`.trim());
-      d.bookingUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
-    }
+    const lang = d._wpLang as string | undefined;
+    const title = d._wpTitle as string | undefined;
+    const wikipediaUrl =
+      lang && title
+        ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}`
+        : null;
+    const wikidataUrl = d._wikidata
+      ? `https://www.wikidata.org/wiki/${d._wikidata}`
+      : null;
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      `${d.title} ${d.city || ''}`.trim()
+    )}`;
+    d.wikidataUrl = wikidataUrl;
+    d.bookingUrl =
+      (d.website as string | null) || wikipediaUrl || wikidataUrl || mapsUrl;
     delete d._wikidata;
     delete d._wikipedia;
     delete d._wpLang;
@@ -478,10 +505,14 @@ async function pool<T>(items: T[], size: number, fn: (t: T) => Promise<void>): P
 async function loadCities(): Promise<
   { name: string; lat: number; lng: number; country: string }[]
 > {
+  // Guaranteed majors first so they're always covered (and processed first when
+  // the run is chunked).
+  const out: { name: string; lat: number; lng: number; country: string }[] = [
+    ...GUARANTEED_CITIES,
+  ];
+  const seen = new Set(out.map((c) => c.name.toLowerCase()));
   try {
     const snap = await db.collection('city_coordinates').limit(CITY_LIMIT).get();
-    const out: { name: string; lat: number; lng: number; country: string }[] =
-      [];
     for (const d of snap.docs) {
       const data = d.data();
       const name = data.city as string | undefined;
@@ -489,30 +520,34 @@ async function loadCities(): Promise<
       const lng = data.lng as number | undefined;
       const country = (data.country as string | undefined) || '';
       if (name && typeof lat === 'number' && typeof lng === 'number') {
+        const key = name.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
         out.push({ name, lat, lng, country });
       }
     }
-    if (out.length > 0) return out;
   } catch (e) {
     console.error('loadCities: city_coordinates read failed', e);
   }
-  // Fallback: embedded list (ISO code used as the country tag).
-  return CITIES.map((c) => ({
-    name: c.name,
-    lat: c.lat,
-    lng: c.lng,
-    country: c.cc,
-  }));
+  return out;
 }
 
 async function runGeoapify(
-  key: string
-): Promise<{ cities: number; found: number; saved: number }> {
+  key: string,
+  opts: { offset?: number; limit?: number } = {}
+): Promise<{ cities: number; found: number; saved: number; totalCities: number }> {
   if (!key) {
     console.log('ingestGeoapify: GEOAPIFY_API_KEY not set — skipping.');
-    return { cities: 0, found: 0, saved: 0 };
+    return { cities: 0, found: 0, saved: 0, totalCities: 0 };
   }
-  const cities = await loadCities();
+  const allCities = await loadCities();
+  const totalCities = allCities.length;
+  // Process a slice so the free Geoapify tier (3k req/day) can be covered over
+  // several runs: ?offset=&limit=. Default = all.
+  const offset = opts.offset ?? 0;
+  const cities = opts.limit != null
+      ? allCities.slice(offset, offset + opts.limit)
+      : allCities.slice(offset);
   // Fetch all cities concurrently (bounded); dedupe by doc id across radii.
   const byId = new Map<string, Doc>();
   await pool(cities, CITY_FETCH_CONCURRENCY, async (city) => {
@@ -523,7 +558,7 @@ async function runGeoapify(
   const all = [...byId.values()];
   if (all.length === 0) {
     console.log('ingestGeoapify: no POIs returned.');
-    return { cities: cities.length, found: 0, saved: 0 };
+    return { cities: cities.length, found: 0, saved: 0, totalCities };
   }
   // Enrich with descriptions + images via batched Wikimedia calls.
   await enrichAll(all);
@@ -535,16 +570,23 @@ async function runGeoapify(
   await buildSourceIndex('geoapify');
   console.log(
     `ingestGeoapify: ${withImage.length}/${all.length} attractions with images ` +
-      `saved across ${cities.length} cities.`
+      `saved across ${cities.length} cities (offset ${offset}/${totalCities}).`
   );
-  return { cities: cities.length, found: all.length, saved: withImage.length };
+  return {
+    cities: cities.length,
+    found: all.length,
+    saved: withImage.length,
+    totalCities,
+  };
 }
 
-// Attractions are static reference data — imported ONCE, not on a schedule.
-// Run (and re-run if you ever expand the city list) via the manual trigger:
-//   ?token=<KEY>              → import attractions now
-//   ?token=<KEY>&clear=1      → delete the previous geoapify set first, then import
-// Long timeout for the one-time ~500-city import.
+// Attractions are static reference data — imported via this manual trigger, not
+// on a schedule. The free Geoapify tier is ~3k requests/day, so a large city
+// list is imported in chunks (merge, not clear) across days:
+//   ?token=<KEY>&count=1            → just report how many cities are in scope
+//   ?token=<KEY>&offset=0&limit=2000 → import cities [0,2000)
+//   ?token=<KEY>&offset=2000        → import the rest
+//   ?token=<KEY>&clear=1&offset=0&limit=2000 → wipe geoapify first, then import
 export const runIngestGeoapifyNow = onRequest(
   { timeoutSeconds: 1800, memory: '1GiB', secrets: [GEOAPIFY_API_KEY] },
   monitored('runIngestGeoapifyNow', async (req, res) => {
@@ -553,15 +595,26 @@ export const runIngestGeoapifyNow = onRequest(
       res.status(403).send('Forbidden');
       return;
     }
+    if (req.query.count) {
+      const cities = await loadCities();
+      res.status(200).json({ ok: true, totalCities: cities.length });
+      return;
+    }
+    const offset = req.query.offset ? parseInt(req.query.offset as string, 10) : 0;
+    const limit = req.query.limit ? parseInt(req.query.limit as string, 10) : undefined;
     let cleared = 0;
     if (req.query.clear) cleared = await clearSource('geoapify');
-    const r = await runGeoapify(key);
+    const r = await runGeoapify(key, { offset, limit });
     res.status(200).json({
       ok: true,
       cleared,
-      cities: r.cities,
+      offset,
+      processedCities: r.cities,
+      totalCities: r.totalCities,
       found: r.found,
       saved: r.saved,
+      nextOffset: offset + r.cities,
+      done: offset + r.cities >= r.totalCities,
     });
   })
 );

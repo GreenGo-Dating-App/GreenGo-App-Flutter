@@ -3869,6 +3869,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get eventsCategoryAll => 'All';
 
   @override
+  String attractionVisitWebsite(String host) {
+    return 'Visit $host';
+  }
+
+  @override
+  String get attractionVisitWikidata => 'Visit wikidata.org';
+
+  @override
+  String get attractionOpenInMaps => 'Open in Maps';
+
+  @override
   String get eventsToday => 'Today';
 
   @override

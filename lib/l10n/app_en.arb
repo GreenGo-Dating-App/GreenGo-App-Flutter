@@ -1824,6 +1824,12 @@
   "eventsTitle": "Events",
   "eventsAndPlacesTitle": "Events and Places",
   "eventsCategoryAll": "All",
+  "attractionVisitWebsite": "Visit {host}",
+  "@attractionVisitWebsite": {
+    "placeholders": { "host": { "type": "String" } }
+  },
+  "attractionVisitWikidata": "Visit wikidata.org",
+  "attractionOpenInMaps": "Open in Maps",
   "eventsToday": "Today",
   "eventsTypeAMessage": "Type a message...",
   "exit": "Exit",

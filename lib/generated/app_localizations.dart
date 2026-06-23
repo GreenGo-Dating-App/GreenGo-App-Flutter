@@ -7001,6 +7001,24 @@ abstract class AppLocalizations {
   /// **'All'**
   String get eventsCategoryAll;
 
+  /// No description provided for @attractionVisitWebsite.
+  ///
+  /// In en, this message translates to:
+  /// **'Visit {host}'**
+  String attractionVisitWebsite(String host);
+
+  /// No description provided for @attractionVisitWikidata.
+  ///
+  /// In en, this message translates to:
+  /// **'Visit wikidata.org'**
+  String get attractionVisitWikidata;
+
+  /// No description provided for @attractionOpenInMaps.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get attractionOpenInMaps;
+
   /// No description provided for @eventsToday.
   ///
   /// In en, this message translates to:

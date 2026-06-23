@@ -163,6 +163,11 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     final list = _all.where((e) {
       // Hide items we can't place: no own coords AND city not in the lookup.
       if (_coordOf(e) == null) return false;
+      // Attractions are only shown when they have a picture.
+      if (widget.source == 'geoapify' &&
+          (e.imageUrl == null || e.imageUrl!.isEmpty)) {
+        return false;
+      }
       if (cat != null && cat.isNotEmpty && e.category != cat) return false;
       if (q.isEmpty) return true;
       return e.title.toLowerCase().contains(q) ||
@@ -195,6 +200,147 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   Future<void> _book(String url) async {
     if (url.isEmpty) return;
     await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+  }
+
+  /// Tap action for a card. Wikidata-sourced attractions open a chooser
+  /// (official website / Wikidata / open in maps); everything else opens its
+  /// primary link directly.
+  void _open(ExternalEvent e) {
+    if (e.source == 'geoapify' &&
+        e.wikidataUrl != null &&
+        e.wikidataUrl!.isNotEmpty) {
+      _showLinkMenu(e);
+    } else {
+      _book(e.bookingUrl);
+    }
+  }
+
+  String? _mapsUrl(ExternalEvent e) {
+    final c = _coordOf(e);
+    if (c == null) return null;
+    return 'https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lng}';
+  }
+
+  /// A pop-up window with the attraction image on the left and the link options
+  /// on the right (mega-menu style).
+  void _showLinkMenu(ExternalEvent e) {
+    final l10n = AppLocalizations.of(context)!;
+    final website = e.website;
+    final maps = _mapsUrl(e);
+    final seen = <String>{};
+    final options = <Widget>[];
+    void add(IconData icon, String label, String url) {
+      final host = _hostOf(url);
+      if (host.isNotEmpty && !seen.add(host)) return;
+      options.add(InkWell(
+        onTap: () {
+          Navigator.pop(context);
+          _book(url);
+        },
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+          child: Row(
+            children: [
+              Icon(icon, color: AppColors.richGold, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(label,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600)),
+              ),
+              const Icon(Icons.chevron_right,
+                  color: AppColors.textTertiary, size: 18),
+            ],
+          ),
+        ),
+      ));
+    }
+
+    if (website != null && website.isNotEmpty) {
+      add(Icons.public, l10n.attractionVisitWebsite(_hostOf(website)), website);
+    }
+    if (e.wikidataUrl != null && e.wikidataUrl!.isNotEmpty) {
+      add(Icons.menu_book, l10n.attractionVisitWikidata, e.wikidataUrl!);
+    }
+    if (maps != null) {
+      options.add(InkWell(
+        onTap: () {
+          Navigator.pop(context);
+          _book(maps);
+        },
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+          child: Row(
+            children: [
+              const Icon(Icons.map, color: AppColors.richGold, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(l10n.attractionOpenInMaps,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600)),
+              ),
+              const Icon(Icons.chevron_right,
+                  color: AppColors.textTertiary, size: 18),
+            ],
+          ),
+        ),
+      ));
+    }
+
+    showDialog<void>(
+      context: context,
+      builder: (_) => Dialog(
+        backgroundColor: AppColors.backgroundCard,
+        clipBehavior: Clip.antiAlias,
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        child: IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Left: image
+              SizedBox(
+                width: 130,
+                child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
+                    ? CachedNetworkImage(
+                        imageUrl: e.imageUrl!,
+                        fit: BoxFit.cover,
+                        errorWidget: (_, __, ___) => _imgPlaceholder(e, 160),
+                      )
+                    : _imgPlaceholder(e, 160),
+              ),
+              // Right: title + options
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(e.title,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                              color: AppColors.textPrimary,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold)),
+                      const SizedBox(height: 8),
+                      ...options,
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   /// Pull-to-refresh: drop the cached index for this source and reload.
@@ -262,6 +408,16 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     );
   }
 
+  /// Hostname of a URL without the leading "www." (e.g. "curitiba.pr.gov.br").
+  String _hostOf(String url) {
+    try {
+      final h = Uri.parse(url).host;
+      return h.startsWith('www.') ? h.substring(4) : h;
+    } catch (_) {
+      return '';
+    }
+  }
+
   Widget _badge(ExternalEvent e) {
     final color = e.source == 'tiqets' || e.source == 'geoapify'
         ? Colors.purple
@@ -270,13 +426,17 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
             : e.source == 'google'
                 ? Colors.green
                 : Colors.teal;
+    // Attractions (geoapify): show the destination domain instead of a generic
+    // source label, so the user sees where the link goes.
+    final host = e.source == 'geoapify' ? _hostOf(e.bookingUrl) : '';
+    final label = host.isNotEmpty ? host : e.sourceLabel;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
         color: color.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(6),
       ),
-      child: Text(e.sourceLabel,
+      child: Text(label,
           style: const TextStyle(
               color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold)),
     );
@@ -341,7 +501,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   Widget _card(ExternalEvent e) {
     return GestureDetector(
-      onTap: () => _book(e.bookingUrl),
+      onTap: () => _open(e),
       onLongPress: () => showShareExternalSheet(context,
           item: e, currentUserId: widget.currentUserId),
       child: Container(
@@ -431,7 +591,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
                               fontSize: 14,
                               fontWeight: FontWeight.w600)),
                       ElevatedButton.icon(
-                        onPressed: () => _book(e.bookingUrl),
+                        onPressed: () => _open(e),
                         icon: const Icon(Icons.open_in_new, size: 16),
                         label: Text(AppLocalizations.of(context)!.eventsBook),
                         style: ElevatedButton.styleFrom(
@@ -453,7 +613,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   Widget _gridTile(ExternalEvent e) {
     return GestureDetector(
-      onTap: () => _book(e.bookingUrl),
+      onTap: () => _open(e),
       onLongPress: () => showShareExternalSheet(context,
           item: e, currentUserId: widget.currentUserId),
       child: ClipRRect(
