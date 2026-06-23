@@ -7019,6 +7019,30 @@ abstract class AppLocalizations {
   /// **'Open in Maps'**
   String get attractionOpenInMaps;
 
+  /// No description provided for @attractionOpenLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Open link'**
+  String get attractionOpenLink;
+
+  /// No description provided for @attractionOpenWebsite.
+  ///
+  /// In en, this message translates to:
+  /// **'Open official website'**
+  String get attractionOpenWebsite;
+
+  /// No description provided for @attractionShareChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Share to chat'**
+  String get attractionShareChat;
+
+  /// No description provided for @attractionShareGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Share to group'**
+  String get attractionShareGroup;
+
   /// No description provided for @eventsToday.
   ///
   /// In en, this message translates to:

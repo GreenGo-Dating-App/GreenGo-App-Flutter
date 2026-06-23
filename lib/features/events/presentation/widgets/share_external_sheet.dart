@@ -22,6 +22,7 @@ Future<void> showShareExternalSheet(
   BuildContext context, {
   required ExternalEvent item,
   required String currentUserId,
+  String mode = 'all', // 'all' | 'chats' | 'groups'
 }) {
   return showModalBottomSheet<void>(
     context: context,
@@ -30,16 +31,18 @@ Future<void> showShareExternalSheet(
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
-    builder: (_) =>
-        _ShareExternalSheet(item: item, currentUserId: currentUserId),
+    builder: (_) => _ShareExternalSheet(
+        item: item, currentUserId: currentUserId, mode: mode),
   );
 }
 
 class _ShareExternalSheet extends StatelessWidget {
-  const _ShareExternalSheet({required this.item, required this.currentUserId});
+  const _ShareExternalSheet(
+      {required this.item, required this.currentUserId, this.mode = 'all'});
 
   final ExternalEvent item;
   final String currentUserId;
+  final String mode;
 
   /// Card metadata — mirrors native event shares so the same EventMessageCard
   /// renders, but with an external booking URL (no native eventId) so the card
@@ -112,6 +115,7 @@ class _ShareExternalSheet extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
+                  if (mode != 'chats')
                   StreamBuilder<Either<Failure, List<Conversation>>>(
                     stream: di.sl<GetUserGroups>()(currentUserId),
                     builder: (context, snap) {
@@ -147,6 +151,7 @@ class _ShareExternalSheet extends StatelessWidget {
                       );
                     },
                   ),
+                  if (mode != 'groups')
                   StreamBuilder<Either<Failure, List<Conversation>>>(
                     stream: di
                         .sl<ChatRepository>()

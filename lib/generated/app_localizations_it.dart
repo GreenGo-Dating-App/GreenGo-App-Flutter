@@ -3933,6 +3933,18 @@ class AppLocalizationsIt extends AppLocalizations {
   String get attractionOpenInMaps => 'Open in Maps';
 
   @override
+  String get attractionOpenLink => 'Open link';
+
+  @override
+  String get attractionOpenWebsite => 'Open official website';
+
+  @override
+  String get attractionShareChat => 'Share to chat';
+
+  @override
+  String get attractionShareGroup => 'Share to group';
+
+  @override
   String get eventsToday => 'Oggi';
 
   @override
