@@ -3921,6 +3921,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventsTitle => 'Eventos';
 
   @override
+  String get eventsAndPlacesTitle => 'Events and Places';
+
+  @override
+  String get eventsCategoryAll => 'All';
+
+  @override
   String get eventsToday => 'Hoy';
 
   @override

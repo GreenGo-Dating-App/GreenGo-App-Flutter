@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -25,6 +26,7 @@ class ExperiencesTab extends StatefulWidget {
     this.userLat,
     this.userLng,
     this.sort = 'distance',
+    this.category,
     this.currentUserId = '',
   });
 
@@ -35,6 +37,7 @@ class ExperiencesTab extends StatefulWidget {
   final double? userLat;
   final double? userLng;
   final String sort; // distance | rating | reviews | date
+  final String? category; // optional category filter (Attractions tab)
   final String currentUserId;
 
   @override
@@ -101,6 +104,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       _load();
     } else if (old.sort != widget.sort ||
         old.query != widget.query ||
+        old.category != widget.category ||
         old.userLat != widget.userLat ||
         old.userLng != widget.userLng) {
       setState(() => _visibleCount = _pageSize);
@@ -155,9 +159,11 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   List<ExternalEvent> get _filtered {
     final q = widget.query.toLowerCase();
     final hasLoc = widget.userLat != null && widget.userLng != null;
+    final cat = widget.category;
     final list = _all.where((e) {
       // Hide items we can't place: no own coords AND city not in the lookup.
       if (_coordOf(e) == null) return false;
+      if (cat != null && cat.isNotEmpty && e.category != cat) return false;
       if (q.isEmpty) return true;
       return e.title.toLowerCase().contains(q) ||
           (e.city ?? '').toLowerCase().contains(q) ||
@@ -284,32 +290,53 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   Widget _img(ExternalEvent e, double height) {
     if (e.imageUrl != null && e.imageUrl!.isNotEmpty) {
-      return Image.network(
-        e.imageUrl!,
+      // CachedNetworkImage keeps a persistent disk cache keyed by URL, so an
+      // event image is downloaded once and reused across sessions; it only
+      // re-downloads when the URL changes (i.e. the server refreshed the event).
+      return CachedNetworkImage(
+        imageUrl: e.imageUrl!,
         height: height,
         width: double.infinity,
         fit: BoxFit.cover,
-        loadingBuilder: (c, child, prog) => prog == null
-            ? child
-            : Container(
-                height: height,
-                color: AppColors.backgroundInput,
-                child: const Center(
-                    child: SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: CircularProgressIndicator(
-                            strokeWidth: 2, color: AppColors.richGold)))),
-        errorBuilder: (_, __, ___) => Container(
-            height: height,
-            color: AppColors.backgroundInput,
-            child: const Icon(Icons.museum, color: AppColors.textTertiary)),
+        placeholder: (c, _) => Container(
+          height: height,
+          color: AppColors.backgroundInput,
+          child: const Center(
+              child: SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(
+                      strokeWidth: 2, color: AppColors.richGold))),
+        ),
+        errorWidget: (_, __, ___) => _imgPlaceholder(e, height),
       );
+    }
+    return _imgPlaceholder(e, height);
+  }
+
+  /// Category-themed placeholder shown when an event has no image (or it failed
+  /// to load).
+  Widget _imgPlaceholder(ExternalEvent e, double height) {
+    IconData icon;
+    switch (e.category) {
+      case 'museum':
+        icon = Icons.museum;
+        break;
+      case 'park':
+      case 'national_park':
+        icon = Icons.park;
+        break;
+      case 'theme_park':
+        icon = Icons.attractions;
+        break;
+      default:
+        icon = Icons.place;
     }
     return Container(
         height: height,
+        width: double.infinity,
         color: AppColors.backgroundInput,
-        child: const Icon(Icons.museum, color: AppColors.textTertiary));
+        child: Icon(icon, color: AppColors.textTertiary, size: 32));
   }
 
   Widget _card(ExternalEvent e) {

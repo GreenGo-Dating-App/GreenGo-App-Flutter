@@ -18,7 +18,6 @@
  * the cap (and only on the schedule, never per user).
  */
 
-import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
@@ -43,7 +42,9 @@ const CATEGORIES = [
 
 const SEARCH_RADIUS_M = 30000; // 30 km around each city centre
 const PLACES_PER_CITY = 200; // Geoapify page size (max 500 on free tier)
-const KEEP_PER_CITY = 60; // notable POIs we keep & enrich per city
+const KEEP_PER_CITY = 15; // uniform target of notable POIs kept per city
+const CITY_LIMIT = 500; // top cities pulled from the city_coordinates table
+const CITY_FETCH_CONCURRENCY = 8; // parallel Geoapify Places calls
 
 // Top tourism cities worldwide with centre coordinates + ISO-2 country code.
 // Bounded list → bounded API usage; expand freely (each adds ~1 Places call).
@@ -178,7 +179,7 @@ function categoryLabel(cats: string[]): string {
 /// card ends up with a description + image.
 async function fetchCity(
   key: string,
-  city: { name: string; lat: number; lng: number; cc: string }
+  city: { name: string; lat: number; lng: number; country: string }
 ): Promise<Doc[]> {
   try {
     const url =
@@ -217,7 +218,7 @@ async function fetchCity(
           imageUrl: null, // filled by enrichment
           category: categoryLabel(p.categories || []),
           city: p.city || city.name,
-          country: city.cc, // ISO-2, consistent with Tiqets docs
+          country: city.country, // country name (consistent with other sources)
           // No free reviews → 0 (kept as a number so orderBy includes the doc).
           rating: 0,
           reviewCount: 0,
@@ -425,7 +426,14 @@ async function enrichAll(all: Doc[]): Promise<void> {
         ? wpByLang.get(d._wpLang as string)?.get(d._wpTitle as string)
         : undefined;
     const desc = wpd?.extract || info?.desc;
-    const img = wpd?.img || (info?.file ? commonsFilePath(info.file) : undefined);
+    // Wikipedia thumbnails are always raster. Wikidata P18 can be SVG/TIFF/etc
+    // which Flutter's network image can't decode (renders blank) — only accept
+    // raster P18 files; anything else falls through to the Commons geo-photo.
+    const p18 =
+      info?.file && /\.(jpe?g|png|webp|gif)$/i.test(info.file)
+        ? commonsFilePath(info.file)
+        : undefined;
+    const img = wpd?.img || p18;
     if (desc && !d.description) d.description = desc;
     if (img && !d.imageUrl) d.imageUrl = img;
     if (!d.bookingUrl && d._wikidata) {
@@ -464,51 +472,81 @@ async function pool<T>(items: T[], size: number, fn: (t: T) => Promise<void>): P
   }
 }
 
+/// The cities to scan: up to [CITY_LIMIT] from the `city_coordinates` table
+/// (so we only use cities we already have coordinates for). Falls back to the
+/// small embedded list if the table is empty.
+async function loadCities(): Promise<
+  { name: string; lat: number; lng: number; country: string }[]
+> {
+  try {
+    const snap = await db.collection('city_coordinates').limit(CITY_LIMIT).get();
+    const out: { name: string; lat: number; lng: number; country: string }[] =
+      [];
+    for (const d of snap.docs) {
+      const data = d.data();
+      const name = data.city as string | undefined;
+      const lat = data.lat as number | undefined;
+      const lng = data.lng as number | undefined;
+      const country = (data.country as string | undefined) || '';
+      if (name && typeof lat === 'number' && typeof lng === 'number') {
+        out.push({ name, lat, lng, country });
+      }
+    }
+    if (out.length > 0) return out;
+  } catch (e) {
+    console.error('loadCities: city_coordinates read failed', e);
+  }
+  // Fallback: embedded list (ISO code used as the country tag).
+  return CITIES.map((c) => ({
+    name: c.name,
+    lat: c.lat,
+    lng: c.lng,
+    country: c.cc,
+  }));
+}
+
 async function runGeoapify(
   key: string
-): Promise<{ total: number; withImage: number }> {
+): Promise<{ cities: number; found: number; saved: number }> {
   if (!key) {
     console.log('ingestGeoapify: GEOAPIFY_API_KEY not set — skipping.');
-    return { total: 0, withImage: 0 };
+    return { cities: 0, found: 0, saved: 0 };
   }
-  // Fetch all cities (dedupe by doc id across overlapping radii).
+  const cities = await loadCities();
+  // Fetch all cities concurrently (bounded); dedupe by doc id across radii.
   const byId = new Map<string, Doc>();
-  for (const city of CITIES) {
+  await pool(cities, CITY_FETCH_CONCURRENCY, async (city) => {
     for (const doc of await fetchCity(key, city)) {
       if (!byId.has(doc.id)) byId.set(doc.id, doc);
     }
-  }
+  });
   const all = [...byId.values()];
   if (all.length === 0) {
     console.log('ingestGeoapify: no POIs returned.');
-    return { total: 0, withImage: 0 };
+    return { cities: cities.length, found: 0, saved: 0 };
   }
   // Enrich with descriptions + images via batched Wikimedia calls.
   await enrichAll(all);
-  await upsertAll(all);
-  await writeCountryStats(all, 'geoapify');
+  // Attractions are only worth showing with a photo → drop the image-less ones
+  // so we never store (or render) a blank card.
+  const withImage = all.filter((d) => !!d.data.imageUrl);
+  await upsertAll(withImage);
+  await writeCountryStats(withImage, 'geoapify');
   await buildSourceIndex('geoapify');
-  const withImage = all.filter((d) => !!d.data.imageUrl).length;
   console.log(
-    `ingestGeoapify: upserted ${all.length} attractions (${withImage} with images) ` +
-      `across ${CITIES.length} cities.`
+    `ingestGeoapify: ${withImage.length}/${all.length} attractions with images ` +
+      `saved across ${cities.length} cities.`
   );
-  return { total: all.length, withImage };
+  return { cities: cities.length, found: all.length, saved: withImage.length };
 }
 
-// Scheduled refresh, every 24 hours (OSM-derived data changes slowly).
-export const ingestGeoapifyAttractions = onSchedule(
-  { schedule: 'every 24 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] },
-  monitored('ingestGeoapifyAttractions', async () => {
-    await runGeoapify(GEOAPIFY_API_KEY.value());
-  })
-);
-
-// Manual trigger (admin), guarded by the Geoapify key as token:
-//   ?token=<KEY>              → pull attractions now
-//   ?token=<KEY>&clear=1      → delete the previous geoapify set first, then refeed
+// Attractions are static reference data — imported ONCE, not on a schedule.
+// Run (and re-run if you ever expand the city list) via the manual trigger:
+//   ?token=<KEY>              → import attractions now
+//   ?token=<KEY>&clear=1      → delete the previous geoapify set first, then import
+// Long timeout for the one-time ~500-city import.
 export const runIngestGeoapifyNow = onRequest(
-  { timeoutSeconds: 540, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] },
+  { timeoutSeconds: 1800, memory: '1GiB', secrets: [GEOAPIFY_API_KEY] },
   monitored('runIngestGeoapifyNow', async (req, res) => {
     const key = GEOAPIFY_API_KEY.value();
     if (!key || req.query.token !== key) {
@@ -521,8 +559,9 @@ export const runIngestGeoapifyNow = onRequest(
     res.status(200).json({
       ok: true,
       cleared,
-      upserted: r.total,
-      withImage: r.withImage,
+      cities: r.cities,
+      found: r.found,
+      saved: r.saved,
     });
   })
 );
