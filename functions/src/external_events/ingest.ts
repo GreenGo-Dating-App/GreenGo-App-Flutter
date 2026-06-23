@@ -20,6 +20,7 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 import { buildSourceIndex } from './build_index';
+import { geohashEncode } from './geohash';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -247,6 +248,10 @@ function mapProduct(
       // Precise coordinates from the product's primary city destination.
       lat: city.lat,
       lng: city.lng,
+      geohash:
+        typeof city.lat === 'number' && typeof city.lng === 'number'
+          ? geohashEncode(city.lat, city.lng)
+          : null,
       fromPrice: p.pricing?.summary?.fromPrice ?? null,
       currency: p.pricing?.currency ?? 'USD',
       // Default to 0 (not null) so orderBy('rating'/'reviewCount') includes

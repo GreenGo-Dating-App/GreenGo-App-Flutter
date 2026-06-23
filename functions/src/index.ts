@@ -87,6 +87,12 @@ export {
   runBuildExternalIndexNow,
 } from './external_events/build_index';
 
+// External events — geohash backfill (enables nearest-first server-ordered
+// queries straight from the DB).
+export {
+  runBackfillGeohashNow,
+} from './external_events/geohash';
+
 
 // Events — per-country aggregation for the globe.
 export {

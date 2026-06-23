@@ -24,6 +24,7 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 import { buildSourceIndex } from './build_index';
+import { geohashEncode } from './geohash';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -239,6 +240,10 @@ async function fetchCity(
           reviewCount: 0,
           lat,
           lng,
+          geohash:
+            typeof lat === 'number' && typeof lng === 'number'
+              ? geohashEncode(lat, lng)
+              : null,
           // Link fields are finalized in enrichment. `website` = official site
           // (OSM), `bookingUrl` = best primary link, `wikidataUrl` = WD page.
           website: website || null,

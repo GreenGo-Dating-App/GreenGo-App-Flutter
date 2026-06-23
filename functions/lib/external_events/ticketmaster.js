@@ -48,6 +48,7 @@ const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
 const build_index_1 = require("./build_index");
+const geohash_1 = require("./geohash");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const TICKETMASTER_API_KEY = (0, params_1.defineSecret)('TICKETMASTER_API_KEY');
@@ -146,6 +147,9 @@ function mapEvent(e, countryName) {
             country: countryName,
             lat,
             lng,
+            geohash: typeof lat === 'number' && typeof lng === 'number'
+                ? (0, geohash_1.geohashEncode)(lat, lng)
+                : null,
             fromPrice: price.min != null ? Number(price.min) : null,
             currency: (_k = price.currency) !== null && _k !== void 0 ? _k : 'USD',
             rating: 0,
