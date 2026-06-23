@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../screens/event_detail_loader_screen.dart';
+import 'forward_event_sheet.dart';
 
 /// A compact card rendered inside a chat / group-chat message bubble when an
 /// event has been shared (MessageType.event). Reads the shared event metadata
@@ -37,17 +39,7 @@ class EventMessageCard extends StatelessWidget {
     final theme = Theme.of(context);
 
     return InkWell(
-      onTap: isExternal
-          ? () => launchUrl(Uri.parse(externalUrl),
-              mode: LaunchMode.externalApplication)
-          : eventId.isEmpty
-              ? null
-              : () => Navigator.of(context).push(
-                    EventDetailLoaderScreen.route(
-                      eventId: eventId,
-                      currentUserId: currentUserId,
-                    ),
-                  ),
+      onTap: () => _showChooser(context, isExternal, eventId, externalUrl),
       borderRadius: BorderRadius.circular(12),
       child: Container(
         width: 240,
@@ -115,6 +107,82 @@ class EventMessageCard extends StatelessWidget {
                 ],
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Single-tap chooser — same idea as the attractions/experiences menu:
+  /// open the event/link, or forward to a chat / group.
+  void _showChooser(
+      BuildContext context, bool isExternal, String eventId, String externalUrl) {
+    final l10n = AppLocalizations.of(context)!;
+    final meta = metadata ?? const {};
+
+    Widget tile(IconData icon, String label, VoidCallback onTap) => ListTile(
+          leading: Icon(icon, color: AppColors.richGold),
+          title:
+              Text(label, style: const TextStyle(color: AppColors.textPrimary)),
+          onTap: onTap,
+        );
+
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetCtx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: 10),
+            Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                    color: AppColors.textTertiary,
+                    borderRadius: BorderRadius.circular(2))),
+            Padding(
+              padding: const EdgeInsets.all(14),
+              child: Text(
+                (meta['eventTitle'] as String?) ?? l10n.eventsTitle,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            if (isExternal)
+              tile(Icons.open_in_new, l10n.attractionOpenLink, () {
+                Navigator.pop(sheetCtx);
+                launchUrl(Uri.parse(externalUrl),
+                    mode: LaunchMode.externalApplication);
+              })
+            else if (eventId.isNotEmpty)
+              tile(Icons.event, l10n.eventViewEvent, () {
+                Navigator.pop(sheetCtx);
+                Navigator.of(context).push(EventDetailLoaderScreen.route(
+                    eventId: eventId, currentUserId: currentUserId));
+              }),
+            tile(Icons.chat_bubble_outline, l10n.attractionShareChat, () {
+              Navigator.pop(sheetCtx);
+              showForwardEventSheet(context,
+                  metadata: Map<String, dynamic>.from(meta),
+                  currentUserId: currentUserId,
+                  mode: 'chats');
+            }),
+            tile(Icons.groups, l10n.attractionShareGroup, () {
+              Navigator.pop(sheetCtx);
+              showForwardEventSheet(context,
+                  metadata: Map<String, dynamic>.from(meta),
+                  currentUserId: currentUserId,
+                  mode: 'groups');
+            }),
+            const SizedBox(height: 12),
           ],
         ),
       ),

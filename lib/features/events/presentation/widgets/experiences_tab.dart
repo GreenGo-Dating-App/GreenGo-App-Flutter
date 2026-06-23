@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
 import '../../data/datasources/external_events_pager.dart';
+import '../../data/datasources/external_events_preloader.dart';
 import '../../domain/entities/external_event.dart';
 import 'share_external_sheet.dart';
 
@@ -100,6 +101,21 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         _firstLoadDone = true;
       });
       return;
+    }
+    // Adopt the background-preloaded pager for the default view (distance, no
+    // category) so attractions/experiences appear instantly on first open.
+    if (widget.sort == 'distance' &&
+        (widget.category == null || widget.category!.isEmpty)) {
+      final warm = ExternalEventsPreloader.instance.take(widget.source);
+      if (warm != null) {
+        _pager = warm.pager;
+        if (!mounted || gen != _gen) return;
+        setState(() {
+          _items.addAll(warm.items);
+          _firstLoadDone = true;
+        });
+        return;
+      }
     }
     _pager = ExternalEventsPager(
       source: widget.source,

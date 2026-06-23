@@ -16,6 +16,7 @@ import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/data_preload_service.dart';
+import '../../../events/data/datasources/external_events_preloader.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -167,8 +168,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     PushNotificationService.currentUserId = widget.userId;
 
     // Warm the Firestore cache for the heaviest first-load queries up-front so
-    // tabs render instantly from cache (persistence is enabled).
-    DataPreloadService.instance.warm(widget.userId);
+    // tabs render instantly from cache (persistence is enabled). Network/profile
+    // data loads FIRST, then attractions & experiences in the background.
+    DataPreloadService.instance.warm(widget.userId).then((_) {
+      ExternalEventsPreloader.instance.warm();
+    });
 
     // Safety net: redeem a signup coupon that was captured at registration but
     // not yet applied (e.g. app killed right after onboarding completed). Safe
