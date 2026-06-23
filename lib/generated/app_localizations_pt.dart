@@ -3931,6 +3931,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get attractionShareGroup => 'Share to group';
 
   @override
+  String get attractionReport => 'Report event';
+
+  @override
+  String get attractionReportConfirm =>
+      'Report this listing as inappropriate or incorrect?';
+
+  @override
   String get eventsToday => 'Hoje';
 
   @override

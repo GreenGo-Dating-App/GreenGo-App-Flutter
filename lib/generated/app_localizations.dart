@@ -7043,6 +7043,18 @@ abstract class AppLocalizations {
   /// **'Share to group'**
   String get attractionShareGroup;
 
+  /// No description provided for @attractionReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report event'**
+  String get attractionReport;
+
+  /// No description provided for @attractionReportConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this listing as inappropriate or incorrect?'**
+  String get attractionReportConfirm;
+
   /// No description provided for @eventsToday.
   ///
   /// In en, this message translates to:
