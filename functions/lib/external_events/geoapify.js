@@ -52,7 +52,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.runIngestGeoapifyNow = void 0;
+exports.runIngestGeoapifyNow = exports.runBackfillGeoapifyWebsitesNow = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
@@ -301,7 +301,7 @@ function commonsFilePath(file) {
 /// image file, and best Wikipedia sitelink. ~43 calls for 2k items instead of
 /// 2k, so Wikimedia doesn't rate-limit us.
 async function wikidataBatch(ids) {
-    var _a, _b, _c, _d, _e, _f, _g, _h;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
     const out = new Map();
     for (let i = 0; i < ids.length; i += 50) {
         const chunk = ids.slice(i, i + 50);
@@ -319,6 +319,7 @@ async function wikidataBatch(ids) {
                     continue;
                 const desc = (_c = (_b = ent.descriptions) === null || _b === void 0 ? void 0 : _b.en) === null || _c === void 0 ? void 0 : _c.value;
                 const file = (_h = (_g = (_f = (_e = (_d = ent.claims) === null || _d === void 0 ? void 0 : _d.P18) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.mainsnak) === null || _g === void 0 ? void 0 : _g.datavalue) === null || _h === void 0 ? void 0 : _h.value;
+                const website = (_o = (_m = (_l = (_k = (_j = ent.claims) === null || _j === void 0 ? void 0 : _j.P856) === null || _k === void 0 ? void 0 : _k[0]) === null || _l === void 0 ? void 0 : _l.mainsnak) === null || _m === void 0 ? void 0 : _m.datavalue) === null || _o === void 0 ? void 0 : _o.value;
                 const sl = ent.sitelinks || {};
                 let title;
                 let lang;
@@ -333,7 +334,7 @@ async function wikidataBatch(ids) {
                         lang = k.replace(/wiki$/, '');
                     }
                 }
-                out.set(id, { desc, file, title, lang });
+                out.set(id, { desc, file, title, lang, website });
             }
         }
         catch (e) {
@@ -421,7 +422,7 @@ async function commonsGeoImage(lat, lng) {
 /// (avoids the rate-limiting that throttled per-item enrichment), then a Commons
 /// geo-photo fallback for the remainder. Mutates each doc.data in place.
 async function enrichAll(all) {
-    var _a;
+    var _a, _b;
     // Phase 1 — Wikidata batch (P18 image, en description, Wikipedia sitelink).
     const wdIds = [
         ...new Set(all.map((d) => d.data._wikidata).filter(Boolean)),
@@ -496,6 +497,12 @@ async function enrichAll(all) {
         const d = doc.data;
         const lang = d._wpLang;
         const title = d._wpTitle;
+        // Official website: OSM tag, else the Wikidata P856 scraped above.
+        if ((!d.website || d.website === '') && d._wikidata) {
+            const site = (_b = wd.get(d._wikidata)) === null || _b === void 0 ? void 0 : _b.website;
+            if (site)
+                d.website = site;
+        }
         const wikipediaUrl = lang && title
             ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}`
             : null;
@@ -594,6 +601,71 @@ async function runGeoapify(key, opts = {}) {
         totalCities,
     };
 }
+/// One-time backfill: scrape the Wikidata P856 official website for existing
+/// geoapify attractions that have a Wikidata reference but no website, and store
+/// it in the `website` field (so it's preloaded in the DB, not fetched on tap).
+/// Rebuilds the shard index at the end.
+exports.runBackfillGeoapifyWebsitesNow = (0, https_1.onRequest)({ timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] }, async (req, res) => {
+    var _a;
+    const key = GEOAPIFY_API_KEY.value();
+    if (!key || req.query.token !== key) {
+        res.status(403).send('Forbidden');
+        return;
+    }
+    // Collect (docId → wikidata Q) for geoapify docs missing a website.
+    const idToQ = new Map();
+    let cursor;
+    for (;;) {
+        let q = db
+            .collection(COLLECTION)
+            .where('source', '==', 'geoapify')
+            .orderBy('__name__')
+            .limit(1000);
+        if (cursor)
+            q = q.startAfter(cursor);
+        const snap = await q.get();
+        if (snap.empty)
+            break;
+        for (const doc of snap.docs) {
+            const d = doc.data();
+            const site = d.website;
+            const wdUrl = d.wikidataUrl;
+            if ((site == null || site === '') && wdUrl) {
+                const wq = wdUrl.split('/').pop() || '';
+                if (wq.startsWith('Q'))
+                    idToQ.set(doc.id, wq);
+            }
+        }
+        cursor = snap.docs[snap.docs.length - 1];
+        if (snap.docs.length < 1000)
+            break;
+    }
+    // Batch-resolve P856 from Wikidata and write it back.
+    const qs = [...new Set(idToQ.values())];
+    const wd = await wikidataBatch(qs);
+    let batch = db.batch();
+    let ops = 0;
+    let updated = 0;
+    const commits = [];
+    for (const [docId, wq] of idToQ) {
+        const site = (_a = wd.get(wq)) === null || _a === void 0 ? void 0 : _a.website;
+        if (!site)
+            continue;
+        batch.set(db.collection(COLLECTION).doc(docId), { website: site }, { merge: true });
+        updated++;
+        if (++ops >= 400) {
+            commits.push(batch.commit());
+            batch = db.batch();
+            ops = 0;
+        }
+    }
+    if (ops > 0)
+        commits.push(batch.commit());
+    await Promise.all(commits);
+    await (0, build_index_1.buildSourceIndex)('geoapify');
+    console.log(`backfillGeoapifyWebsites: ${updated} websites set (of ${idToQ.size} candidates).`);
+    res.status(200).json({ ok: true, candidates: idToQ.size, updated });
+});
 // Attractions are static reference data — imported via this manual trigger, not
 // on a schedule. The free Geoapify tier is ~3k requests/day, so a large city
 // list is imported in chunks (merge, not clear) across days:

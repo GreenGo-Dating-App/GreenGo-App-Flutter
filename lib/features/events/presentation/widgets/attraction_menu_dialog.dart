@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -39,48 +36,6 @@ class _AttractionMenuDialog extends StatefulWidget {
 }
 
 class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
-  String? _officialWebsite; // from OSM, else fetched from Wikidata P856
-
-  @override
-  void initState() {
-    super.initState();
-    _officialWebsite = widget.event.website;
-    // If we don't already have a website but the place is on Wikidata, fetch the
-    // official-website (P856) referenced there, on demand.
-    if ((_officialWebsite == null || _officialWebsite!.isEmpty) &&
-        widget.event.wikidataUrl != null &&
-        widget.event.wikidataUrl!.isNotEmpty) {
-      _fetchWikidataWebsite(widget.event.wikidataUrl!);
-    }
-  }
-
-  Future<void> _fetchWikidataWebsite(String wikidataUrl) async {
-    try {
-      final q = wikidataUrl.split('/').last;
-      if (!q.startsWith('Q')) return;
-      final client = HttpClient();
-      final req = await client.getUrl(Uri.parse(
-          'https://www.wikidata.org/wiki/Special:EntityData/$q.json'));
-      req.headers.set('User-Agent', 'GreenGoApp/1.0 (attraction menu)');
-      final resp = await req.close();
-      if (resp.statusCode != 200) {
-        client.close();
-        return;
-      }
-      final body = await resp.transform(utf8.decoder).join();
-      client.close();
-      final json = jsonDecode(body) as Map<String, dynamic>;
-      final ent = (json['entities'] as Map?)?[q] as Map?;
-      final claims = (ent?['claims'] as Map?)?['P856'];
-      if (claims is List && claims.isNotEmpty) {
-        final v = claims[0]?['mainsnak']?['datavalue']?['value'];
-        if (v is String && v.isNotEmpty && mounted) {
-          setState(() => _officialWebsite = v);
-        }
-      }
-    } catch (_) {/* best-effort */}
-  }
-
   String _hostOf(String url) {
     try {
       final h = Uri.parse(url).host;
@@ -191,8 +146,9 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     addLink(Icons.open_in_new,
         '${l10n.attractionOpenLink}${primaryHost.isNotEmpty ? '  ·  $primaryHost' : ''}',
         e.bookingUrl);
-    // Official website (OSM, or the P856 referenced inside Wikidata).
-    final site = _officialWebsite;
+    // Official website — preloaded in the DB (OSM tag, or scraped from the
+    // Wikidata P856 referenced inside wikidata.org during ingest/backfill).
+    final site = e.website;
     if (site != null && site.isNotEmpty) {
       addLink(Icons.public, '${l10n.attractionOpenWebsite}  ·  ${_hostOf(site)}',
           site);

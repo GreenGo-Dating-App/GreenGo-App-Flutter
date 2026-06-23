@@ -73,6 +73,7 @@ export {
 // Attractions are static data — imported once via the manual trigger (no schedule).
 export {
   runIngestGeoapifyNow,
+  runBackfillGeoapifyWebsitesNow,
 } from './external_events/geoapify';
 
 // Ticketmaster live-events ingester.
