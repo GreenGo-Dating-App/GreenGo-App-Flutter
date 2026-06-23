@@ -42,35 +42,37 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
   // translator as the chat.
   String? _translatedDesc;
   bool _translating = false;
+  bool _translateStarted = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Use the APP's active locale (what the user selected in-app), not the
+    // device locale. Runs once.
+    if (_translateStarted) return;
     final desc = widget.event.description;
-    if (desc != null && desc.trim().isNotEmpty) {
-      final target =
-          WidgetsBinding.instance.platformDispatcher.locale.languageCode;
-      if (target.isNotEmpty && target != 'en') {
-        _translating = true;
-        TranslationService()
-            .translate(
-              text: desc,
-              sourceLanguage: 'auto',
-              targetLanguage: target.replaceAll('_', '-'),
-            )
-            .then((result) {
-          if (!mounted) return;
-          setState(() {
-            _translating = false;
-            if (result.trim().isNotEmpty && result.trim() != desc.trim()) {
-              _translatedDesc = result;
-            }
-          });
-        }).catchError((_) {
-          if (mounted) setState(() => _translating = false);
-        });
-      }
-    }
+    if (desc == null || desc.trim().isEmpty) return;
+    final target = Localizations.localeOf(context).languageCode;
+    if (target.isEmpty || target == 'en') return;
+    _translateStarted = true;
+    _translating = true;
+    TranslationService()
+        .translate(
+          text: desc,
+          sourceLanguage: 'auto',
+          targetLanguage: target.replaceAll('_', '-'),
+        )
+        .then((result) {
+      if (!mounted) return;
+      setState(() {
+        _translating = false;
+        if (result.trim().isNotEmpty && result.trim() != desc.trim()) {
+          _translatedDesc = result;
+        }
+      });
+    }).catchError((_) {
+      if (mounted) setState(() => _translating = false);
+    });
   }
 
   String _hostOf(String url) {

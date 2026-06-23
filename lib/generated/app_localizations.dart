@@ -19487,6 +19487,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Date'**
   String get eventsSortDate;
+
+  /// No description provided for @catMuseums.
+  ///
+  /// In en, this message translates to:
+  /// **'Museums'**
+  String get catMuseums;
+
+  /// No description provided for @catSights.
+  ///
+  /// In en, this message translates to:
+  /// **'Sights'**
+  String get catSights;
+
+  /// No description provided for @catParks.
+  ///
+  /// In en, this message translates to:
+  /// **'Parks'**
+  String get catParks;
+
+  /// No description provided for @catNationalParks.
+  ///
+  /// In en, this message translates to:
+  /// **'National parks'**
+  String get catNationalParks;
+
+  /// No description provided for @catThemeParks.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme parks'**
+  String get catThemeParks;
+
+  /// No description provided for @catTours.
+  ///
+  /// In en, this message translates to:
+  /// **'Tours & Sightseeing'**
+  String get catTours;
+
+  /// No description provided for @catCulture.
+  ///
+  /// In en, this message translates to:
+  /// **'Culture & Museums'**
+  String get catCulture;
+
+  /// No description provided for @catFoodDrink.
+  ///
+  /// In en, this message translates to:
+  /// **'Food & Drink'**
+  String get catFoodDrink;
+
+  /// No description provided for @catCruises.
+  ///
+  /// In en, this message translates to:
+  /// **'Cruises & Water'**
+  String get catCruises;
+
+  /// No description provided for @catNature.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature & Outdoors'**
+  String get catNature;
+
+  /// No description provided for @catDayTrips.
+  ///
+  /// In en, this message translates to:
+  /// **'Day Trips'**
+  String get catDayTrips;
+
+  /// No description provided for @catTickets.
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets & Passes'**
+  String get catTickets;
+
+  /// No description provided for @catOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get catOther;
 }
 
 class _AppLocalizationsDelegate

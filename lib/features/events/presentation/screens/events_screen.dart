@@ -90,8 +90,11 @@ class _EventsScreenState extends State<EventsScreen>
 
   // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
   bool get _isAttractionsTab => _tabController.index == 2;
-  // Selected attractions category (null = all).
+  // Experiences tab (Viator) — also supports a category filter.
+  bool get _isExperiencesTab => _tabController.index == 3;
+  // Selected categories (null = all).
   String? _attractionCategory;
+  String? _experienceCategory;
 
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
@@ -200,6 +203,7 @@ class _EventsScreenState extends State<EventsScreen>
                 // Attractions tab uses the Geoapify place categories.
                 if (_isNativeTab) _buildCategoryFilter(state),
                 if (_isAttractionsTab) _buildAttractionCategoryFilter(),
+                if (_isExperiencesTab) _buildExperienceCategoryFilter(),
                 // Events List
                 Expanded(
                   child: _buildBody(state),
@@ -226,7 +230,7 @@ class _EventsScreenState extends State<EventsScreen>
           _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
           _buildExperiencesTab('ticketmaster'),
           _buildExperiencesTab('geoapify', category: _attractionCategory),
-          _buildExperiencesTab('viator'),
+          _buildExperiencesTab('viator', category: _experienceCategory),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
         ],
       );
@@ -702,12 +706,12 @@ class _EventsScreenState extends State<EventsScreen>
   /// Category chips for the Attractions (Geoapify) tab.
   Widget _buildAttractionCategoryFilter() {
     final l10n = AppLocalizations.of(context)!;
-    const cats = <String, String>{
-      'museum': 'Museums',
-      'attraction': 'Sights',
-      'park': 'Parks',
-      'national_park': 'National parks',
-      'theme_park': 'Theme parks',
+    final cats = <String, String>{
+      'museum': l10n.catMuseums,
+      'attraction': l10n.catSights,
+      'park': l10n.catParks,
+      'national_park': l10n.catNationalParks,
+      'theme_park': l10n.catThemeParks,
     };
     Widget chip(String? value, String label) {
       final selected = _attractionCategory == value;
@@ -721,6 +725,48 @@ class _EventsScreenState extends State<EventsScreen>
           labelStyle: TextStyle(
               color: selected ? AppColors.deepBlack : AppColors.textPrimary),
           onSelected: (_) => setState(() => _attractionCategory = value),
+        ),
+      );
+    }
+
+    return SizedBox(
+      height: 48,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        children: [
+          chip(null, l10n.eventsCategoryAll),
+          ...cats.entries.map((e) => chip(e.key, e.value)),
+        ],
+      ),
+    );
+  }
+
+  /// Category chips for the Experiences (Viator) tab.
+  Widget _buildExperienceCategoryFilter() {
+    final l10n = AppLocalizations.of(context)!;
+    final cats = <String, String>{
+      'city_tours': l10n.catTours,
+      'culture': l10n.catCulture,
+      'food_drink': l10n.catFoodDrink,
+      'cruises': l10n.catCruises,
+      'nature': l10n.catNature,
+      'day_trips': l10n.catDayTrips,
+      'tickets': l10n.catTickets,
+      'other': l10n.catOther,
+    };
+    Widget chip(String? value, String label) {
+      final selected = _experienceCategory == value;
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: ChoiceChip(
+          label: Text(label),
+          selected: selected,
+          backgroundColor: AppColors.backgroundCard,
+          selectedColor: AppColors.richGold,
+          labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
+          onSelected: (_) => setState(() => _experienceCategory = value),
         ),
       );
     }

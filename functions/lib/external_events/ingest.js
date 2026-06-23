@@ -47,7 +47,8 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.runIngestExternalEventsNow = exports.ingestExternalEvents = void 0;
+exports.runIngestExternalEventsNow = exports.ingestExternalEvents = exports.runBackfillViatorCategoriesNow = void 0;
+exports.viatorCategory = viatorCategory;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
@@ -59,6 +60,54 @@ const geohash_1 = require("./geohash");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
+const GEOAPIFY_API_KEY = (0, params_1.defineSecret)('GEOAPIFY_API_KEY');
+/// One-time backfill: (re)categorize existing Viator experiences from their
+/// stored title/description (no Viator API call needed), then rebuild the index.
+exports.runBackfillViatorCategoriesNow = (0, https_1.onRequest)({ timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] }, async (req, res) => {
+    if (!req.query.token || req.query.token !== GEOAPIFY_API_KEY.value()) {
+        res.status(403).send('Forbidden');
+        return;
+    }
+    let cursor;
+    let updated = 0;
+    const counts = {};
+    for (;;) {
+        let q = db
+            .collection(COLLECTION)
+            .where('source', '==', 'viator')
+            .orderBy('__name__')
+            .limit(500);
+        if (cursor)
+            q = q.startAfter(cursor);
+        const snap = await q.get();
+        if (snap.empty)
+            break;
+        let batch = db.batch();
+        let ops = 0;
+        for (const doc of snap.docs) {
+            const d = doc.data();
+            const cat = viatorCategory(d.title, d.description);
+            counts[cat] = (counts[cat] || 0) + 1;
+            if (d.category !== cat) {
+                batch.set(doc.ref, { category: cat }, { merge: true });
+                updated++;
+                if (++ops >= 400) {
+                    await batch.commit();
+                    batch = db.batch();
+                    ops = 0;
+                }
+            }
+        }
+        if (ops > 0)
+            await batch.commit();
+        cursor = snap.docs[snap.docs.length - 1];
+        if (snap.docs.length < 500)
+            break;
+    }
+    await (0, build_index_1.buildSourceIndex)('viator');
+    console.log(`backfillViatorCategories: ${updated} updated`, counts);
+    res.status(200).json({ ok: true, updated, counts });
+});
 // Top 50 tourism countries worldwide. We match these to Viator's COUNTRY
 // destinations dynamically (no hardcoded ids) and pull the top 10 experiences
 // for each — so the feed is ~500 top-rated experiences across 50 countries.
@@ -234,6 +283,27 @@ function withAffiliate(url) {
     const base = url.split('?')[0];
     return `${base}?pid=${AFFILIATE_PID}&mcid=${AFFILIATE_MCID}&medium=link`;
 }
+/// Heuristic category for a Viator experience from its title/description, so the
+/// Experiences tab can filter like Attractions. Keys map to labels in the app.
+function viatorCategory(title, desc) {
+    const t = `${title || ''} ${desc || ''}`.toLowerCase();
+    const has = (...kw) => kw.some((k) => t.includes(k));
+    if (has('wine', 'food', 'tasting', 'culinary', 'dinner', 'cooking', 'tapas', 'brewery', 'beer', 'gastronom', 'street food', 'chef', 'lunch'))
+        return 'food_drink';
+    if (has('cruise', 'boat', 'sail', 'kayak', 'yacht', 'catamaran', 'snorkel', 'diving', 'scuba', 'ferry', 'canoe', 'rafting', 'whale', 'speedboat'))
+        return 'cruises';
+    if (has('museum', 'gallery', 'exhibit', 'palace', 'cathedral', 'temple', 'historic', 'heritage', 'castle', 'ruins', 'archaeolog', 'monument', 'basilica', 'mosque'))
+        return 'culture';
+    if (has('skip-the-line', 'skip the line', 'ticket', 'admission', 'entry', ' pass', 'fast track', 'fast-track', 'priority access'))
+        return 'tickets';
+    if (has('day trip', 'day-trip', 'excursion', 'full-day', 'full day'))
+        return 'day_trips';
+    if (has('hike', 'hiking', 'safari', 'national park', 'nature', 'mountain', 'waterfall', 'forest', 'wildlife', 'garden', 'outdoor', 'desert', 'volcano', 'cave', 'jungle'))
+        return 'nature';
+    if (has('walking tour', 'city tour', 'guided tour', 'sightseeing', 'bike tour', 'segway', 'hop-on', 'hop on', 'bus tour', 'tuk tuk', 'tour'))
+        return 'city_tours';
+    return 'other';
+}
 function mapProduct(p, countryName, idMap) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
     // Pick the highest-resolution image variant (max width × height).
@@ -254,7 +324,7 @@ function mapProduct(p, countryName, idMap) {
             title: p.title,
             description: (_c = p.description) !== null && _c !== void 0 ? _c : null,
             imageUrl: (_d = best === null || best === void 0 ? void 0 : best.url) !== null && _d !== void 0 ? _d : null,
-            category: 'tour',
+            category: viatorCategory(p.title, p.description),
             city: city.name,
             country: countryName,
             // Precise coordinates from the product's primary city destination.

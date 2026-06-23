@@ -1826,7 +1826,11 @@
   "eventsCategoryAll": "All",
   "attractionVisitWebsite": "Visit {host}",
   "@attractionVisitWebsite": {
-    "placeholders": { "host": { "type": "String" } }
+    "placeholders": {
+      "host": {
+        "type": "String"
+      }
+    }
   },
   "attractionVisitWikidata": "Visit wikidata.org",
   "attractionOpenInMaps": "Open in Maps",
@@ -5092,19 +5096,25 @@
   "groupRemoveMemberConfirm": "Remove {name} from this group?",
   "@groupRemoveMemberConfirm": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
   "groupMemberRemoved": "{name} removed",
   "@groupMemberRemoved": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
   "groupAddSelected": "Add {count} selected",
   "@groupAddSelected": {
     "placeholders": {
-      "count": { "type": "int" }
+      "count": {
+        "type": "int"
+      }
     }
   },
   "groupNicknameHint": "Enter a nickname",
@@ -5236,5 +5246,18 @@
   "eventsSortDistance": "Distance",
   "eventsSortStars": "Stars",
   "eventsSortReviews": "Reviews",
-  "eventsSortDate": "Date"
+  "eventsSortDate": "Date",
+  "catMuseums": "Museums",
+  "catSights": "Sights",
+  "catParks": "Parks",
+  "catNationalParks": "National parks",
+  "catThemeParks": "Theme parks",
+  "catTours": "Tours & Sightseeing",
+  "catCulture": "Culture & Museums",
+  "catFoodDrink": "Food & Drink",
+  "catCruises": "Cruises & Water",
+  "catNature": "Nature & Outdoors",
+  "catDayTrips": "Day Trips",
+  "catTickets": "Tickets & Passes",
+  "catOther": "Other"
 }

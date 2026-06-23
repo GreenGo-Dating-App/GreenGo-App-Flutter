@@ -3915,43 +3915,43 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventsTitle => 'Events';
 
   @override
-  String get eventsAndPlacesTitle => 'Events and Places';
+  String get eventsAndPlacesTitle => 'Events & Orte';
 
   @override
-  String get eventsCategoryAll => 'All';
+  String get eventsCategoryAll => 'Alle';
 
   @override
   String attractionVisitWebsite(String host) {
-    return 'Visit $host';
+    return '$host öffnen';
   }
 
   @override
-  String get attractionVisitWikidata => 'Visit wikidata.org';
+  String get attractionVisitWikidata => 'wikidata.org öffnen';
 
   @override
-  String get attractionOpenInMaps => 'Open in Maps';
+  String get attractionOpenInMaps => 'In Karten öffnen';
 
   @override
-  String get attractionOpenLink => 'Open link';
+  String get attractionOpenLink => 'Link öffnen';
 
   @override
-  String get attractionOpenWebsite => 'Open official website';
+  String get attractionOpenWebsite => 'Offizielle Website öffnen';
 
   @override
-  String get attractionShareChat => 'Share to chat';
+  String get attractionShareChat => 'In Chat teilen';
 
   @override
-  String get attractionShareGroup => 'Share to group';
+  String get attractionShareGroup => 'In Gruppe teilen';
 
   @override
-  String get attractionDescribedAt => 'Read more';
+  String get attractionDescribedAt => 'Mehr erfahren';
 
   @override
-  String get attractionReport => 'Report event';
+  String get attractionReport => 'Event melden';
 
   @override
   String get attractionReportConfirm =>
-      'Report this listing as inappropriate or incorrect?';
+      'Diesen Eintrag als unangemessen oder falsch melden?';
 
   @override
   String get eventsToday => 'Heute';
@@ -10772,34 +10772,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get groupInviteByNickname => 'Per Spitzname einladen';
 
   @override
-  String get groupAddMembers => 'Add members';
+  String get groupAddMembers => 'Mitglieder hinzufügen';
 
   @override
-  String get groupTtsReadTranslated => 'Read aloud the translation';
+  String get groupTtsReadTranslated => 'Übersetzung vorlesen';
 
   @override
   String get groupTtsReadTranslatedHint =>
-      'Double-tap a message to hear it. On = your language, Off = original.';
+      'Doppeltippe eine Nachricht, um sie zu hören. An = deine Sprache, Aus = Original.';
 
   @override
-  String get ttsNotEnoughCoins => 'Not enough coins for TTS (5 coins required)';
+  String get ttsNotEnoughCoins => 'Nicht genug Münzen für TTS (5 Münzen nötig)';
 
   @override
-  String get groupRemoveMember => 'Remove member';
+  String get groupRemoveMember => 'Mitglied entfernen';
 
   @override
   String groupRemoveMemberConfirm(String name) {
-    return 'Remove $name from this group?';
+    return '$name aus dieser Gruppe entfernen?';
   }
 
   @override
   String groupMemberRemoved(String name) {
-    return '$name removed';
+    return '$name entfernt';
   }
 
   @override
   String groupAddSelected(int count) {
-    return 'Add $count selected';
+    return '$count ausgewählte hinzufügen';
   }
 
   @override
@@ -11064,4 +11064,43 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsSortDate => 'Datum';
+
+  @override
+  String get catMuseums => 'Museen';
+
+  @override
+  String get catSights => 'Sehenswürdigkeiten';
+
+  @override
+  String get catParks => 'Parks';
+
+  @override
+  String get catNationalParks => 'Nationalparks';
+
+  @override
+  String get catThemeParks => 'Freizeitparks';
+
+  @override
+  String get catTours => 'Touren & Sightseeing';
+
+  @override
+  String get catCulture => 'Kultur & Museen';
+
+  @override
+  String get catFoodDrink => 'Essen & Trinken';
+
+  @override
+  String get catCruises => 'Kreuzfahrten & Wasser';
+
+  @override
+  String get catNature => 'Natur & Outdoor';
+
+  @override
+  String get catDayTrips => 'Tagesausflüge';
+
+  @override
+  String get catTickets => 'Tickets & Pässe';
+
+  @override
+  String get catOther => 'Sonstiges';
 }
