@@ -10,6 +10,8 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../events/data/datasources/events_remote_datasource.dart';
+import '../../../events/data/datasources/external_events_data_source.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/event_country_stat.dart';
 import '../../../events/domain/entities/external_event.dart';
@@ -52,24 +54,59 @@ class _GlobeScreenState extends State<GlobeScreen> {
   // Precise pins for the most-recently-tapped country (mini-image markers).
   List<ExternalEvent> _countryPins = const [];
 
+  // Per-coordinate event dots for the CURRENT viewport (no country aggregation).
+  final ExternalEventsDataSource _extDs = ExternalEventsDataSource();
+  final EventsRemoteDataSourceImpl _nativeDs = EventsRemoteDataSourceImpl();
+  List<ExternalEvent> _viewportExternal = const [];
+  List<Event> _viewportCommunity = const [];
+  int _viewportGen = 0;
+  double? _vpLat, _vpLng, _vpRadius;
+
   @override
   void initState() {
     super.initState();
-    _loadNativeEvents();
-    _loadCountryStats('viator');
-    _loadCountryStats('geoapify');
-    _loadCountryStats('ticketmaster');
   }
 
-  /// Native GreenGo events with coordinates → plotted precisely.
-  Future<void> _loadNativeEvents() async {
-    final result = await di.sl<EventsRepository>().getEvents(upcoming: true);
-    if (!mounted) return;
-    result.fold((_) {}, (events) {
-      setState(() => _nativeEvents = events
-          .where((e) => e.latitude != null && e.longitude != null)
-          .toList());
+  /// Load per-coordinate event dots for the visible area (debounced upstream).
+  Future<void> _loadViewport(double lat, double lng, double radiusM) async {
+    _vpLat = lat;
+    _vpLng = lng;
+    _vpRadius = radiusM;
+    final gen = ++_viewportGen;
+    // External layers (each enabled source), within the viewport.
+    final futures = <Future<List<ExternalEvent>>>[];
+    if (_showAttractions) {
+      futures.add(_extDs.getInBounds(
+          source: 'geoapify', lat: lat, lng: lng, radiusM: radiusM));
+    }
+    if (_showExperiences) {
+      futures.add(_extDs.getInBounds(
+          source: 'viator', lat: lat, lng: lng, radiusM: radiusM));
+    }
+    if (_showLiveEvents) {
+      futures.add(_extDs.getInBounds(
+          source: 'ticketmaster', lat: lat, lng: lng, radiusM: radiusM));
+    }
+    final external =
+        (await Future.wait(futures)).expand((e) => e).toList();
+    // Public community events nearby (getNearbyCommunityEvents filters private).
+    List<Event> community = const [];
+    if (_showCommunityEvents) {
+      community = await _nativeDs.getNearbyCommunityEvents(
+          lat: lat, lng: lng, limit: 200);
+    }
+    if (!mounted || gen != _viewportGen) return;
+    setState(() {
+      _viewportExternal = external;
+      _viewportCommunity = community;
     });
+  }
+
+  /// Re-load the current viewport after a layer toggle.
+  void _reloadViewport() {
+    if (_vpLat != null && _vpLng != null && _vpRadius != null) {
+      _loadViewport(_vpLat!, _vpLng!, _vpRadius!);
+    }
   }
 
   /// Per-country counts from the precomputed aggregate (complete + cheap).
@@ -351,17 +388,28 @@ class _GlobeScreenState extends State<GlobeScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          btn(Icons.people, _showContacts, l10n.globeLayerContacts,
-              () => setState(() => _showContacts = !_showContacts)),
-          btn(Icons.event, _showCommunityEvents, l10n.eventsTabCommunity,
-              () => setState(() => _showCommunityEvents = !_showCommunityEvents)),
+          btn(Icons.people, _showContacts, l10n.globeLayerContacts, () {
+            setState(() => _showContacts = !_showContacts);
+          }),
+          btn(Icons.event, _showCommunityEvents,
+              l10n.globeLayerCommunityEvents, () {
+            setState(() => _showCommunityEvents = !_showCommunityEvents);
+            _reloadViewport();
+          }),
           btn(Icons.confirmation_number, _showLiveEvents,
-              l10n.globeLayerLiveEvents,
-              () => setState(() => _showLiveEvents = !_showLiveEvents)),
-          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions,
-              () => setState(() => _showAttractions = !_showAttractions)),
-          btn(Icons.local_activity, _showExperiences, l10n.globeLayerExperiences,
-              () => setState(() => _showExperiences = !_showExperiences)),
+              l10n.globeLayerLiveEvents, () {
+            setState(() => _showLiveEvents = !_showLiveEvents);
+            _reloadViewport();
+          }),
+          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions, () {
+            setState(() => _showAttractions = !_showAttractions);
+            _reloadViewport();
+          }),
+          btn(Icons.local_activity, _showExperiences,
+              l10n.globeLayerExperiences, () {
+            setState(() => _showExperiences = !_showExperiences);
+            _reloadViewport();
+          }),
         ],
       ),
     );
@@ -433,19 +481,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   data: data,
                   showMatched: _showContacts,
                   showDiscovery: false,
-                  showEvents:
-                      _showAttractions || _showExperiences || _showLiveEvents,
-                  eventStats: _activeStats,
+                  // Per-coordinate dots loaded for the visible viewport (no
+                  // country aggregation).
+                  onViewportChanged: _loadViewport,
                   preciseEvents:
-                      _showCommunityEvents ? _nativeEvents : const [],
+                      _showCommunityEvents ? _viewportCommunity : const [],
                   onPreciseEventTapped: (e) => Navigator.of(context).push(
                     EventDetailLoaderScreen.route(
                         eventId: e.id, currentUserId: userId),
                   ),
-                  externalMarkers:
-                      (_showAttractions || _showExperiences || _showLiveEvents)
-                          ? _countryPins
-                          : const [],
+                  externalMarkers: _viewportExternal,
                   onExternalTapped: (e) {
                     if (e.bookingUrl.isNotEmpty) {
                       launchUrl(Uri.parse(e.bookingUrl),
@@ -454,10 +499,6 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   },
                   onExternalGroupTapped: (items) =>
                       _showItemsSheet(context, items),
-                  onEventCountryTapped: (country) {
-                    _loadCountryPins(country); // precise pins for zoom-in
-                    _showCountryDetailSheet(context, country);
-                  },
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(

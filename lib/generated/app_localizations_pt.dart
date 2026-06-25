@@ -11077,6 +11077,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsTabGoing => 'Vou';
+
+  @override
+  String get globeLayerCommunityEvents => 'Eventos da comunidade';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21854,4 +21857,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsTabGoing => 'Vou';
+
+  @override
+  String get globeLayerCommunityEvents => 'Eventos da comunidade';
 }

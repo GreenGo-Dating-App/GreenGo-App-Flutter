@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -113,6 +114,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Initialize In-App Purchases safely — avoids crash if plugin not available
   void _initIAP() {
+    if (kIsWeb) return; // no IAP plugin on web — keep _inAppPurchase null
     try {
       _inAppPurchase = InAppPurchase.instance;
       _purchaseSubscription = _inAppPurchase!.purchaseStream.listen(
@@ -1624,6 +1626,10 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Future<void> _handleSubscribe() async {
     if (_selectedTier == null) return;
+    if (kIsWeb || _inAppPurchase == null) {
+      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+      return;
+    }
 
     setState(() => _isLoadingSubscription = true);
 
@@ -2081,6 +2087,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Handle coin purchase via IAP (Google Play on Android, App Store on iOS)
   Future<void> _handlePurchase() async {
     if (_selectedPackage == null) return;
+    // In-app purchases aren't available on web (no store) — guard so we never
+    // hit `_inAppPurchase!` on a null instance.
+    if (kIsWeb || _inAppPurchase == null) {
+      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+      return;
+    }
 
     setState(() => _isLoadingCoinPurchase = true);
 

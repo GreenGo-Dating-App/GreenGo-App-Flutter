@@ -3742,5 +3742,6 @@
   "groupTtsReadTranslatedHint": "Tocca due volte un messaggio per ascoltarlo. Sì = la tua lingua, No = originale.",
   "ttsNotEnoughCoins": "Monete insufficienti per il TTS (servono 5 monete)",
   "eventsUnlimited": "Illimitato",
-  "eventsTabGoing": "Partecipo"
+  "eventsTabGoing": "Partecipo",
+  "globeLayerCommunityEvents": "Eventi della community"
 }

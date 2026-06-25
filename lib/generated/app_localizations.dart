@@ -19577,6 +19577,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Going'**
   String get eventsTabGoing;
+
+  /// No description provided for @globeLayerCommunityEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Community events'**
+  String get globeLayerCommunityEvents;
 }
 
 class _AppLocalizationsDelegate
