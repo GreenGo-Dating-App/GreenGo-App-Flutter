@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/external_event.dart';
 
 /// Reads cached third-party experiences from `external_events` (populated by the
@@ -17,6 +18,42 @@ class ExternalEventsDataSource {
       : _firestore = firestore ?? FirebaseFirestore.instance;
 
   final FirebaseFirestore _firestore;
+
+  /// Events of [source] within [radiusM] of (lat,lng) via geohash — for plotting
+  /// per-coordinate dots in the current map viewport (no country aggregation).
+  Future<List<ExternalEvent>> getInBounds({
+    required String source,
+    required double lat,
+    required double lng,
+    required double radiusM,
+    int limit = 200,
+  }) async {
+    try {
+      final bounds = GeoQuery.queryBounds(lat, lng, radiusM);
+      final snaps = await Future.wait(bounds.map((b) => _firestore
+          .collection('external_events')
+          .where('source', isEqualTo: source)
+          .orderBy('geohash')
+          .startAt([b[0]]).endAt([b[1]]).get()));
+      final out = <String, ExternalEvent>{};
+      for (final s in snaps) {
+        for (final doc in s.docs) {
+          if (out.containsKey(doc.id)) continue;
+          final e = ExternalEvent.fromFirestore(doc);
+          if (e.lat == null || e.lng == null) continue;
+          if (GeoQuery.distanceMeters(lat, lng, e.lat!, e.lng!) <= radiusM) {
+            out[doc.id] = e;
+          }
+        }
+      }
+      final list = out.values.toList()
+        ..sort((a, b) => GeoQuery.distanceMeters(lat, lng, a.lat!, a.lng!)
+            .compareTo(GeoQuery.distanceMeters(lat, lng, b.lat!, b.lng!)));
+      return list.take(limit).toList();
+    } catch (_) {
+      return const [];
+    }
+  }
 
   List<ExternalEvent> _samplesFor(String source) {
     final s = ExternalEvent.samples.where((e) => e.source == source).toList();

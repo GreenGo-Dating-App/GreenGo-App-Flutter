@@ -8,6 +8,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
 import '../../../events/domain/entities/event.dart';
@@ -40,6 +41,7 @@ class GlobeMapView extends StatefulWidget {
     this.externalMarkers = const [],
     this.onExternalTapped,
     this.onExternalGroupTapped,
+    this.onViewportChanged,
   });
   final GlobeData data;
   final bool showMatched;
@@ -65,6 +67,12 @@ class GlobeMapView extends StatefulWidget {
   final void Function(ExternalEvent item)? onExternalTapped;
   final void Function(List<ExternalEvent> items)? onExternalGroupTapped;
 
+  /// Fired (debounced) when the visible area changes, with the centre and a
+  /// radius covering the viewport — so the screen can load per-coordinate event
+  /// dots for what's on screen.
+  final void Function(double lat, double lng, double radiusMeters)?
+      onViewportChanged;
+
   @override
   State<GlobeMapView> createState() => _GlobeMapViewState();
 }
@@ -73,6 +81,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
     with TickerProviderStateMixin {
   final MapController _mapController = MapController();
   Timer? _pulseTimer;
+  Timer? _vpDebounce;
   double _pulseScale = 1.0;
   double _currentZoom = 3.0;
 
@@ -87,11 +96,32 @@ class _GlobeMapViewState extends State<GlobeMapView>
         });
       }
     });
+    // Load the initial viewport's event dots once the map is laid out.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _notifyViewport();
+    });
+  }
+
+  void _notifyViewport() {
+    final cb = widget.onViewportChanged;
+    if (cb == null) return;
+    _vpDebounce?.cancel();
+    _vpDebounce = Timer(const Duration(milliseconds: 450), () {
+      try {
+        final cam = _mapController.camera; // MapCamera (current)
+        final c = cam.center;
+        final b = cam.visibleBounds;
+        final radius = GeoQuery.distanceMeters(
+            c.latitude, c.longitude, b.north, b.east);
+        cb(c.latitude, c.longitude, radius);
+      } catch (_) {/* camera not ready */}
+    });
   }
 
   @override
   void dispose() {
     _pulseTimer?.cancel();
+    _vpDebounce?.cancel();
     _mapController.dispose();
     super.dispose();
   }
@@ -137,6 +167,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
               _currentZoom = newZoom;
             });
           }
+          _notifyViewport();
         },
         onTap: (tapPosition, point) {
           final nearest =
@@ -218,15 +249,8 @@ class _GlobeMapViewState extends State<GlobeMapView>
       }
     }
 
-    // Event markers per country (Events mode).
-    if (widget.showEvents) {
-      for (final stat in widget.eventStats) {
-        final key = countryNameNormalization[stat.country] ?? stat.country;
-        final c = countryCentroids[key];
-        if (c == null) continue;
-        markers.add(_buildEventMarker(stat, LatLng(c[0], c[1])));
-      }
-    }
+    // (Country-aggregate event circles removed — events are plotted per GPS
+    //  coordinate below, loaded for the current viewport.)
 
     // Precise native-event pins (exact coordinates).
     for (final e in widget.preciseEvents) {
@@ -241,11 +265,13 @@ class _GlobeMapViewState extends State<GlobeMapView>
     if (widget.externalMarkers.isNotEmpty) {
       final precision =
           _currentZoom >= 9 ? 5 : (_currentZoom >= 6 ? 4 : (_currentZoom >= 4 ? 2 : 1));
+      // Group by source + coordinate so each dot is a single type (one colour)
+      // and only same-position same-type events merge into a list.
       final groups = <String, List<ExternalEvent>>{};
       for (final e in widget.externalMarkers) {
         if (e.lat == null || e.lng == null) continue;
         final key =
-            '${e.lat!.toStringAsFixed(precision)},${e.lng!.toStringAsFixed(precision)}';
+            '${e.source}@${e.lat!.toStringAsFixed(precision)},${e.lng!.toStringAsFixed(precision)}';
         (groups[key] ??= <ExternalEvent>[]).add(e);
       }
       for (final g in groups.values) {
@@ -288,9 +314,27 @@ class _GlobeMapViewState extends State<GlobeMapView>
     );
   }
 
+  // Per-type colours so each kind of event is visually distinct.
+  static const Map<String, Color> _sourceColors = {
+    'ticketmaster': Color(0xFFE53935), // live events — red
+    'geoapify': Color(0xFF8E24AA), // attractions — purple
+    'viator': Color(0xFF00897B), // experiences — teal
+  };
+  static IconData _sourceIcon(String source) {
+    switch (source) {
+      case 'ticketmaster':
+        return Icons.confirmation_number;
+      case 'geoapify':
+        return Icons.museum;
+      default:
+        return Icons.local_activity;
+    }
+  }
+
   Marker _buildExternalMarker(List<ExternalEvent> group, LatLng point) {
     final first = group.first;
     final multiple = group.length > 1;
+    final color = _sourceColors[first.source] ?? Colors.teal;
     final showImage =
         _currentZoom >= 6 && first.imageUrl != null && first.imageUrl!.isNotEmpty;
     final size = showImage ? 48.0 : 28.0;
@@ -314,7 +358,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
               width: size,
               height: size,
               decoration: BoxDecoration(
-                color: Colors.teal,
+                color: color,
                 shape: BoxShape.circle,
                 border: Border.all(color: Colors.white, width: 2),
                 boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
@@ -326,7 +370,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
               ),
               child: showImage
                   ? null
-                  : const Icon(Icons.local_activity,
+                  : Icon(_sourceIcon(first.source),
                       color: Colors.white, size: 16),
             ),
             if (multiple)

@@ -11104,4 +11104,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get eventsTabGoing => 'Asistiré';
+
+  @override
+  String get globeLayerCommunityEvents => 'Eventos de la comunidad';
 }

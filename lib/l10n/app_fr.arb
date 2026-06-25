@@ -3742,5 +3742,6 @@
   "groupTtsReadTranslatedHint": "Double-tapez un message pour l’écouter. Activé = votre langue, Désactivé = original.",
   "ttsNotEnoughCoins": "Pas assez de pièces pour le TTS (5 pièces requises)",
   "eventsUnlimited": "Illimité",
-  "eventsTabGoing": "Je participe"
+  "eventsTabGoing": "Je participe",
+  "globeLayerCommunityEvents": "Événements de la communauté"
 }

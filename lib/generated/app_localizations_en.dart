@@ -10975,4 +10975,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsTabGoing => 'Going';
+
+  @override
+  String get globeLayerCommunityEvents => 'Community events';
 }

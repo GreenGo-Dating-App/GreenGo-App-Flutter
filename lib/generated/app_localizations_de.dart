@@ -11109,4 +11109,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsTabGoing => 'Zugesagt';
+
+  @override
+  String get globeLayerCommunityEvents => 'Community-Events';
 }

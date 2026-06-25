@@ -11099,4 +11099,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsTabGoing => 'Partecipo';
+
+  @override
+  String get globeLayerCommunityEvents => 'Eventi della community';
 }
