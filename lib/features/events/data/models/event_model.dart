@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/event.dart';
 import 'event_attendee_model.dart';
 
@@ -157,6 +158,9 @@ class EventModel extends Event {
       'locationName': locationName,
       'latitude': latitude,
       'longitude': longitude,
+      // Geohash for nearest-first community queries (matches external_events).
+      if (latitude != null && longitude != null)
+        'geohash': GeoQuery.encode(latitude!, longitude!),
       'address': address,
       'maxAttendees': maxAttendees,
       'price': price,

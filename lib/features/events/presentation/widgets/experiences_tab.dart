@@ -184,14 +184,16 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         widget.query.isEmpty && (_pager?.hasMore ?? false);
 
     if (widget.gridView) {
+      final w = MediaQuery.of(context).size.width;
+      final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
       return RefreshIndicator(
         color: AppColors.richGold,
         onRefresh: _refresh,
         child: GridView.builder(
           controller: _scroll,
           padding: const EdgeInsets.all(12),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: cols,
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
             childAspectRatio: 0.62,

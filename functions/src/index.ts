@@ -91,9 +91,10 @@ export {
 } from './external_events/build_index';
 
 // External events — geohash backfill (enables nearest-first server-ordered
-// queries straight from the DB).
+// queries straight from the DB). Plus native-events geohash backfill.
 export {
   runBackfillGeohashNow,
+  runBackfillEventGeohashNow,
 } from './external_events/geohash';
 
 

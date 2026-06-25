@@ -52,7 +52,15 @@ class _EventsScreenState extends State<EventsScreen>
   late EventsBloc _eventsBloc;
   EventCategory? _selectedCategory;
   String _searchQuery = '';
-  bool _gridView = false;
+  bool _gridView = true; // default to grid view (web + mobile)
+
+  /// Grid columns: more on wide/web screens, 3 on phones.
+  int _gridColumns(BuildContext context) {
+    final w = MediaQuery.of(context).size.width;
+    if (w >= 1100) return 6;
+    if (w >= 800) return 4;
+    return 3;
+  }
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance'; // distance | rating | reviews | date
@@ -76,7 +84,12 @@ class _EventsScreenState extends State<EventsScreen>
 
     // Rebuild on tab change so the category bar shows/hides per tab.
     _tabController.addListener(() {
-      if (mounted) setState(() {});
+      if (!mounted) return;
+      setState(() {});
+      // Refresh "My Events"/"Going" when opened so joined events show up.
+      if (_tabController.index == 4 || _tabController.index == 5) {
+        _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+      }
     });
 
     // Best-effort user location for distance-based ordering of all events.
@@ -106,6 +119,25 @@ class _EventsScreenState extends State<EventsScreen>
   List<Event> _communityResults = const [];
   bool _communitySearching = false;
   int _communitySearchGen = 0;
+  // Default community list: the closest 100 via geohash (scales to a big table).
+  List<Event> _communityNearby = const [];
+  bool _communityNearbyLoading = false;
+
+  Future<void> _loadCommunityNearby() async {
+    if (_userLat == null || _userLng == null) return;
+    setState(() => _communityNearbyLoading = true);
+    try {
+      final list = await _eventsDataSource.getNearbyCommunityEvents(
+          lat: _userLat!, lng: _userLng!, limit: _communityNearbyLimit);
+      if (!mounted) return;
+      setState(() {
+        _communityNearby = list;
+        _communityNearbyLoading = false;
+      });
+    } catch (_) {
+      if (mounted) setState(() => _communityNearbyLoading = false);
+    }
+  }
 
   void _runCommunitySearch(String query) {
     final q = query.trim();
@@ -137,6 +169,7 @@ class _EventsScreenState extends State<EventsScreen>
         _userLat = pos.latitude;
         _userLng = pos.longitude;
       });
+      _loadCommunityNearby(); // closest-100 community via geohash
     }
   }
 
@@ -561,7 +594,16 @@ class _EventsScreenState extends State<EventsScreen>
       }
       return _buildEventsList(_applySearchAndSort(_communityResults));
     }
-    return _buildEventsList(_applySearchAndSort(_getCommunityEvents(state)));
+    if (_communityNearbyLoading && _communityNearby.isEmpty) {
+      return const Center(
+          child: CircularProgressIndicator(color: AppColors.richGold));
+    }
+    // Prefer the geohash nearest-100; fall back to the bloc's loaded set when
+    // location is unknown or the nearby query returned nothing.
+    final list = _communityNearby.isNotEmpty
+        ? _communityNearby
+        : _getCommunityEvents(state);
+    return _buildEventsList(_applySearchAndSort(list));
   }
 
   List<Event> _getMyEvents(EventsLoaded state) {
@@ -648,9 +690,8 @@ class _EventsScreenState extends State<EventsScreen>
       child: _gridView
           ? GridView.builder(
               padding: const EdgeInsets.all(12),
-              gridDelegate:
-                  const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: _gridColumns(context),
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
                 childAspectRatio: 0.7,
