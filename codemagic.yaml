@@ -15,6 +15,12 @@ workflows:
         BUNDLE_ID: "com.greengochat.greengochatapp"
         APP_STORE_APPLE_ID: "tommasi.mauro@icloud.com"
     scripts:
+      - name: Disable Swift Package Manager
+        script: |
+          # Flutter 3.44 auto-enables SPM, which double-links GoogleDataTransport
+          # alongside the Firebase CocoaPods → "duplicate symbols". Keep CocoaPods
+          # only.
+          flutter config --no-enable-swift-package-manager
       - name: Install Firebase config files
         script: |
           #!/bin/sh
