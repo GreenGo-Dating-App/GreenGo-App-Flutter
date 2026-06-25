@@ -195,13 +195,17 @@ class _GlobeMapViewState extends State<GlobeMapView>
       markers.add(_buildPreciseEventMarker(e, LatLng(lat, lng)));
     }
 
-    // External experiences/attractions — grouped by location, mini-image pins.
+    // External experiences/attractions — individual position pins. Grouping
+    // precision scales with zoom: zoomed in → each event is its own marker;
+    // zoomed out → nearby ones merge (with a count) to avoid clutter.
     if (widget.externalMarkers.isNotEmpty) {
+      final precision =
+          _currentZoom >= 9 ? 5 : (_currentZoom >= 6 ? 4 : (_currentZoom >= 4 ? 2 : 1));
       final groups = <String, List<ExternalEvent>>{};
       for (final e in widget.externalMarkers) {
         if (e.lat == null || e.lng == null) continue;
         final key =
-            '${e.lat!.toStringAsFixed(2)},${e.lng!.toStringAsFixed(2)}';
+            '${e.lat!.toStringAsFixed(precision)},${e.lng!.toStringAsFixed(precision)}';
         (groups[key] ??= <ExternalEvent>[]).add(e);
       }
       for (final g in groups.values) {

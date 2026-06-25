@@ -62,7 +62,7 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
+    _tabController = TabController(length: 6, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -84,9 +84,11 @@ class _EventsScreenState extends State<EventsScreen>
 
   // External tabs (Live Events / Attractions / Experiences) have no GreenGo
   // category tags — hide the category bar there. Native = Upcoming/Community/My.
-  // Native tabs after removing Upcoming: Community (0) and My Events (4).
+  // Native tabs: Community (0), My Events (4), Going (5).
   bool get _isNativeTab =>
-      _tabController.index == 0 || _tabController.index == 4;
+      _tabController.index == 0 ||
+      _tabController.index == 4 ||
+      _tabController.index == 5;
 
   // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
   bool get _isAttractionsTab => _tabController.index == 2;
@@ -149,6 +151,7 @@ class _EventsScreenState extends State<EventsScreen>
               Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
               Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
               Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
+              Tab(text: AppLocalizations.of(context)!.eventsTabGoing),
             ],
           ),
         ),
@@ -232,6 +235,7 @@ class _EventsScreenState extends State<EventsScreen>
           _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator', category: _experienceCategory),
           _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
+          _buildEventsList(_applySearchAndSort(_getGoingEvents(state))),
         ],
       );
     }
@@ -244,6 +248,7 @@ class _EventsScreenState extends State<EventsScreen>
         _buildExperiencesTab('ticketmaster'),
         _buildExperiencesTab('geoapify'),
         _buildExperiencesTab('viator'),
+        _buildEventsList([]),
         _buildEventsList([]),
       ],
     );
@@ -519,6 +524,20 @@ class _EventsScreenState extends State<EventsScreen>
       return e.organizerId == widget.currentUserId ||
           e.attendees.any((a) => a.userId == widget.currentUserId);
     }).toList();
+  }
+
+  /// Going: events the user is attending (RSVP'd), i.e. not ones they created.
+  /// userEvents = organized + attending; filter out organized to leave attending.
+  List<Event> _getGoingEvents(EventsLoaded state) {
+    final attending = state.userEvents
+        .where((e) => e.organizerId != widget.currentUserId)
+        .toList();
+    if (_selectedCategory != null) {
+      return attending
+          .where((e) => e.category == _selectedCategory)
+          .toList();
+    }
+    return attending;
   }
 
   Widget _buildEventsList(List<Event> events) {

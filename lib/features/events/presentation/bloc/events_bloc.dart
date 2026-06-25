@@ -116,29 +116,26 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     UpdateEvent event,
     Emitter<EventsState> emit,
   ) async {
-    emit(const EventsLoading());
+    // Optimistic, in-place update — NO full-screen EventsLoading. Edits like
+    // "boost/feature" are a small field change; blanking the whole Events screen
+    // while the write completes made it look stuck.
+    final index = _allEvents.indexWhere((e) => e.id == event.event.id);
+    if (index >= 0) {
+      _allEvents[index] = event.event;
+    }
+    emit(EventsLoaded(
+      events: _allEvents,
+      selectedCategory: _selectedCategory,
+      attendeesMap: _attendeesMap,
+      userEvents: _userEvents,
+      nearbyEvents: _nearbyEvents,
+    ));
 
+    // Persist in the background; log on failure (the next reload reconciles).
     final result = await repository.updateEvent(event.event);
-
     result.fold(
-      (failure) {
-        debugPrint('Failed to update event: ${failure.message}');
-        emit(EventsError(failure.message));
-      },
-      (_) {
-        // Update local cache
-        final index = _allEvents.indexWhere((e) => e.id == event.event.id);
-        if (index >= 0) {
-          _allEvents[index] = event.event;
-        }
-        emit(EventsLoaded(
-          events: _allEvents,
-          selectedCategory: _selectedCategory,
-          attendeesMap: _attendeesMap,
-          userEvents: _userEvents,
-          nearbyEvents: _nearbyEvents,
-        ));
-      },
+      (failure) => debugPrint('Failed to update event: ${failure.message}'),
+      (_) {},
     );
   }
 
