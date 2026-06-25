@@ -66,6 +66,7 @@ class _EventsScreenState extends State<EventsScreen>
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
+    _eventsDataSource = dataSource; // reused for whole-table community search
     final repository = EventsRepositoryImpl(remoteDataSource: dataSource);
     _eventsBloc = EventsBloc(repository: repository);
 
@@ -97,6 +98,37 @@ class _EventsScreenState extends State<EventsScreen>
   // Selected categories (null = all).
   String? _attractionCategory;
   String? _experienceCategory;
+
+  // Whole-table community search (Community tab): default shows the 100 closest;
+  // a search queries the entire events table and shows matches.
+  late final EventsRemoteDataSourceImpl _eventsDataSource;
+  static const int _communityNearbyLimit = 100;
+  List<Event> _communityResults = const [];
+  bool _communitySearching = false;
+  int _communitySearchGen = 0;
+
+  void _runCommunitySearch(String query) {
+    final q = query.trim();
+    if (q.isEmpty) {
+      setState(() {
+        _communityResults = const [];
+        _communitySearching = false;
+      });
+      return;
+    }
+    final gen = ++_communitySearchGen;
+    setState(() => _communitySearching = true);
+    _eventsDataSource.searchEvents(q).then((results) {
+      if (!mounted || gen != _communitySearchGen) return;
+      setState(() {
+        _communityResults = results;
+        _communitySearching = false;
+      });
+    }).catchError((_) {
+      if (!mounted || gen != _communitySearchGen) return;
+      setState(() => _communitySearching = false);
+    });
+  }
 
   Future<void> _loadUserLocation() async {
     final pos = await const LocationShareService().getCurrentPosition();
@@ -230,7 +262,7 @@ class _EventsScreenState extends State<EventsScreen>
       return TabBarView(
         controller: _tabController,
         children: [
-          _buildEventsList(_applySearchAndSort(_getCommunityEvents(state))),
+          _buildCommunityTab(state),
           _buildExperiencesTab('ticketmaster'),
           _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator', category: _experienceCategory),
@@ -263,7 +295,11 @@ class _EventsScreenState extends State<EventsScreen>
           Expanded(
             child: TextField(
               style: const TextStyle(color: AppColors.textPrimary),
-              onChanged: (v) => setState(() => _searchQuery = v.trim()),
+              onChanged: (v) {
+                setState(() => _searchQuery = v.trim());
+                // Community tab searches the whole events table.
+                if (_tabController.index == 0) _runCommunitySearch(v.trim());
+              },
               decoration: InputDecoration(
                 isDense: true,
                 hintText: AppLocalizations.of(context)!.eventsSearchHint,
@@ -507,7 +543,25 @@ class _EventsScreenState extends State<EventsScreen>
   /// Community: all GreenGo user-created events. Order applied centrally
   /// (distance by default; user can switch to date / popular).
   List<Event> _getCommunityEvents(EventsLoaded state) {
-    return state.upcomingEvents;
+    final list = [...state.upcomingEvents];
+    if (_userLat != null && _userLng != null) {
+      list.sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
+    }
+    // Default view: only the closest 100 (search queries the whole table).
+    return list.take(_communityNearbyLimit).toList();
+  }
+
+  /// Community tab body: default = closest 100; while searching, results come
+  /// from a whole-table query (searchEvents), refined + sorted client-side.
+  Widget _buildCommunityTab(EventsLoaded state) {
+    if (_searchQuery.isNotEmpty) {
+      if (_communitySearching && _communityResults.isEmpty) {
+        return const Center(
+            child: CircularProgressIndicator(color: AppColors.richGold));
+      }
+      return _buildEventsList(_applySearchAndSort(_communityResults));
+    }
+    return _buildEventsList(_applySearchAndSort(_getCommunityEvents(state)));
   }
 
   List<Event> _getMyEvents(EventsLoaded state) {
