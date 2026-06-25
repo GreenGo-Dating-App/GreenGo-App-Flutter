@@ -95,6 +95,23 @@ const TOP_COUNTRIES = [
 
 const PRODUCTS_PER_COUNTRY = 100;
 
+// Top tourism cities worldwide — we additionally pull the top experiences for
+// each (matched against Viator's CITY destinations; coordinates come from those
+// destinations, i.e. the same source as the city_coordinates lookup table).
+const TOP_CITIES = [
+  'Paris', 'London', 'Rome', 'Barcelona', 'Madrid', 'Amsterdam', 'Berlin',
+  'Vienna', 'Prague', 'Lisbon', 'Florence', 'Venice', 'Milan', 'Munich',
+  'Budapest', 'Dublin', 'Athens', 'Istanbul', 'Dubai', 'Marrakech',
+  'New York City', 'Las Vegas', 'Los Angeles', 'San Francisco', 'Miami',
+  'Orlando', 'Chicago', 'Washington DC', 'Cancun', 'Mexico City',
+  'Rio de Janeiro', 'Buenos Aires', 'Lima', 'Cusco', 'Cartagena',
+  'Tokyo', 'Kyoto', 'Osaka', 'Bangkok', 'Singapore', 'Bali', 'Hong Kong',
+  'Seoul', 'Hanoi', 'Phuket', 'Sydney', 'Melbourne', 'Cape Town',
+  'Reykjavik', 'Toronto',
+];
+const PRODUCTS_PER_CITY = 20;
+const CITY_POOL = 60; // pool pulled per city before ranking top 20
+
 type Doc = { id: string; data: Record<string, unknown> };
 
 async function upsertAll(docs: Doc[]): Promise<void> {
@@ -397,6 +414,48 @@ async function fetchTopForCountry(
   return ranked.map((p) => mapProduct(p, countryName, idMap));
 }
 
+/// Top [PRODUCTS_PER_CITY] experiences for one city (Viator CITY destination),
+/// ranked like countries (rating > 4, most reviews first).
+async function fetchTopForCity(
+  apiKey: string,
+  base: string,
+  destId: string,
+  countryName: string,
+  idMap: Map<string, DestInfo>
+): Promise<Doc[]> {
+  const products: any[] = [];
+  const pageSize = 50;
+  for (let start = 1; start <= CITY_POOL; start += pageSize) {
+    const count = Math.min(pageSize, CITY_POOL - (start - 1));
+    try {
+      const res = await fetch(`${base}/products/search`, {
+        method: 'POST',
+        headers: VIATOR_HEADERS(apiKey),
+        body: JSON.stringify({
+          filtering: { destination: destId },
+          sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' },
+          pagination: { start, count },
+          currency: 'USD',
+        }),
+      });
+      if (!res.ok) break;
+      const json: any = await res.json();
+      const batch: any[] = json.products || [];
+      if (batch.length === 0) break;
+      products.push(...batch);
+      if (batch.length < count) break;
+    } catch (_) {
+      break;
+    }
+  }
+  const ranked = products
+    .filter((p) => (p.reviews?.combinedAverageRating ?? 0) > 4)
+    .sort((a, b) =>
+        (b.reviews?.totalReviews ?? 0) - (a.reviews?.totalReviews ?? 0))
+    .slice(0, PRODUCTS_PER_CITY);
+  return ranked.map((p) => mapProduct(p, countryName, idMap));
+}
+
 /// Per-country counts → `external_country_stats/{source}_{country}` so the globe
 /// can show complete markers cheaply (≤ #countries docs).
 async function writeCountryStats(docs: Doc[], source: string): Promise<void> {
@@ -467,6 +526,25 @@ async function runIngestion(apiKey: string): Promise<number> {
     const all: Doc[] = [];
     for (const c of countries) {
       all.push(...(await fetchTopForCountry(apiKey, base, c.id, c.name, idMap)));
+    }
+    // Additionally: top experiences for the top tourism cities. Match each city
+    // name to a Viator CITY destination; dedupe against the country pull.
+    const cityByName = new Map<string, { id: string; country: string }>();
+    for (const c of cities) {
+      const k = c.name.toLowerCase();
+      if (!cityByName.has(k)) cityByName.set(k, { id: c.id, country: c.country });
+    }
+    const seenIds = new Set(all.map((d) => d.id));
+    for (const name of TOP_CITIES) {
+      const match = cityByName.get(name.toLowerCase());
+      if (!match) continue;
+      const docs = await fetchTopForCity(
+        apiKey, base, match.id, match.country || name, idMap);
+      for (const d of docs) {
+        if (seenIds.has(d.id)) continue;
+        seenIds.add(d.id);
+        all.push(d);
+      }
     }
     if (all.length > 0) {
       await upsertAll(all);
