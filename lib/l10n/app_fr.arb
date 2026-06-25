@@ -3740,5 +3740,7 @@
   "groupAddSelected": "Ajouter {count} sélectionnés",
   "groupTtsReadTranslated": "Lire la traduction à voix haute",
   "groupTtsReadTranslatedHint": "Double-tapez un message pour l’écouter. Activé = votre langue, Désactivé = original.",
-  "ttsNotEnoughCoins": "Pas assez de pièces pour le TTS (5 pièces requises)"
+  "ttsNotEnoughCoins": "Pas assez de pièces pour le TTS (5 pièces requises)",
+  "eventsUnlimited": "Illimité",
+  "eventsTabGoing": "Je participe"
 }

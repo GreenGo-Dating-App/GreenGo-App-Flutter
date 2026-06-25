@@ -54,29 +54,35 @@ class _ShareExternalSheet extends StatelessWidget {
         'externalSource': item.sourceLabel,
       };
 
-  Future<void> _toGroup(BuildContext context, String groupId) async {
-    await di.sl<SendGroupMessage>()(
-      SendGroupMessageParams(
-        groupId: groupId,
-        senderId: currentUserId,
-        content: item.bookingUrl,
-        type: MessageType.event,
-        metadata: _metadata,
-      ),
-    );
+  // Close + confirm immediately, send in the background (don't block the UI).
+  void _toGroup(BuildContext context, String groupId) {
     _done(context);
+    di
+        .sl<SendGroupMessage>()(
+          SendGroupMessageParams(
+            groupId: groupId,
+            senderId: currentUserId,
+            content: item.bookingUrl,
+            type: MessageType.event,
+            metadata: _metadata,
+          ),
+        )
+        .catchError((_) {});
   }
 
-  Future<void> _toChat(BuildContext context, Conversation c) async {
-    await di.sl<ChatRepository>().sendMessage(
+  void _toChat(BuildContext context, Conversation c) {
+    _done(context);
+    di
+        .sl<ChatRepository>()
+        .sendMessage(
           matchId: c.matchId,
           senderId: currentUserId,
           receiverId: c.getOtherUserId(currentUserId),
           content: item.bookingUrl,
           type: MessageType.event,
           metadata: _metadata,
-        );
-    _done(context);
+        )
+        .catchError((_) {});
   }
 
   void _done(BuildContext context) {

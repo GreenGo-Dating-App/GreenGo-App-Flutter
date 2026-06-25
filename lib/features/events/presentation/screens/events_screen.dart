@@ -1077,7 +1077,10 @@ class EventCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          AppLocalizations.of(context)!.eventsSpotsLeft(event.spotsLeft),
+                          event.isUnlimited
+                              ? AppLocalizations.of(context)!.eventsUnlimited
+                              : AppLocalizations.of(context)!
+                                  .eventsSpotsLeft(event.spotsLeft),
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,

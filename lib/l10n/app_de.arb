@@ -3740,5 +3740,7 @@
   "groupAddSelected": "{count} ausgewählte hinzufügen",
   "groupTtsReadTranslated": "Übersetzung vorlesen",
   "groupTtsReadTranslatedHint": "Doppeltippe eine Nachricht, um sie zu hören. An = deine Sprache, Aus = Original.",
-  "ttsNotEnoughCoins": "Nicht genug Münzen für TTS (5 Münzen nötig)"
+  "ttsNotEnoughCoins": "Nicht genug Münzen für TTS (5 Münzen nötig)",
+  "eventsUnlimited": "Unbegrenzt",
+  "eventsTabGoing": "Zugesagt"
 }

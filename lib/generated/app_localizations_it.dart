@@ -11093,4 +11093,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get catOther => 'Altro';
+
+  @override
+  String get eventsUnlimited => 'Illimitato';
+
+  @override
+  String get eventsTabGoing => 'Partecipo';
 }
