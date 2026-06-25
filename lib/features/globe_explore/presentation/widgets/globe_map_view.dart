@@ -216,10 +216,12 @@ class _GlobeMapViewState extends State<GlobeMapView>
   }
 
   Marker _buildPreciseEventMarker(Event e, LatLng point) {
+    final hasImage = e.imageUrl != null && e.imageUrl!.isNotEmpty;
+    const size = 46.0;
     return Marker(
       point: point,
-      width: 40,
-      height: 40,
+      width: size,
+      height: size,
       child: GestureDetector(
         onTap: () => widget.onPreciseEventTapped?.call(e),
         child: Container(
@@ -228,8 +230,15 @@ class _GlobeMapViewState extends State<GlobeMapView>
             shape: BoxShape.circle,
             border: Border.all(color: Colors.white, width: 2),
             boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 5)],
+            image: hasImage
+                ? DecorationImage(
+                    image: CachedNetworkImageProvider(e.imageUrl!),
+                    fit: BoxFit.cover)
+                : null,
           ),
-          child: const Icon(Icons.event, color: Colors.black, size: 18),
+          child: hasImage
+              ? null
+              : const Icon(Icons.event, color: Colors.black, size: 18),
         ),
       ),
     );
