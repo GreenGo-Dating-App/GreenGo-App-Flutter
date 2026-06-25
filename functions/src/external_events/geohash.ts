@@ -58,6 +58,64 @@ const VIATOR_API_KEY = defineSecret('VIATOR_API_KEY');
 const TICKETMASTER_API_KEY = defineSecret('TICKETMASTER_API_KEY');
 const GEOAPIFY_API_KEY = defineSecret('GEOAPIFY_API_KEY');
 
+/** One-time backfill: set `geohash` on native `events` that have lat/lng but no
+ *  geohash (so the app can query the closest community events). */
+export const runBackfillEventGeohashNow = onRequest(
+  {
+    timeoutSeconds: 1800,
+    memory: '512MiB',
+    secrets: [VIATOR_API_KEY, TICKETMASTER_API_KEY, GEOAPIFY_API_KEY],
+  },
+  async (req, res) => {
+    const token = req.query.token;
+    const valid =
+      token === VIATOR_API_KEY.value() ||
+      token === TICKETMASTER_API_KEY.value() ||
+      token === GEOAPIFY_API_KEY.value();
+    if (!token || !valid) {
+      res.status(403).send('Forbidden');
+      return;
+    }
+    const force = !!req.query.force;
+    let cursor: FirebaseFirestore.QueryDocumentSnapshot | undefined;
+    let updated = 0;
+    let scanned = 0;
+    for (;;) {
+      let q = db.collection('events').orderBy('__name__').limit(500);
+      if (cursor) q = q.startAfter(cursor);
+      const snap = await q.get();
+      if (snap.empty) break;
+      let batch = db.batch();
+      let ops = 0;
+      for (const doc of snap.docs) {
+        scanned++;
+        const d = doc.data();
+        const lat = d.latitude as number | undefined;
+        const lng = d.longitude as number | undefined;
+        if (typeof lat !== 'number' || typeof lng !== 'number') continue;
+        if (!force && typeof d.geohash === 'string' && d.geohash.length > 0) {
+          continue;
+        }
+        batch.set(doc.ref, { geohash: geohashEncode(lat, lng) }, { merge: true });
+        if (++ops >= 400) {
+          await batch.commit();
+          updated += ops;
+          batch = db.batch();
+          ops = 0;
+        }
+      }
+      if (ops > 0) {
+        await batch.commit();
+        updated += ops;
+      }
+      cursor = snap.docs[snap.docs.length - 1];
+      if (snap.docs.length < 500) break;
+    }
+    console.log(`backfillEventGeohash: ${updated}/${scanned}.`);
+    res.status(200).json({ ok: true, scanned, updated });
+  }
+);
+
 /** One-time backfill: set `geohash` on every external_events doc that has
  *  coordinates but no geohash yet. Internal Firestore only (no external API). */
 export const runBackfillGeohashNow = onRequest(

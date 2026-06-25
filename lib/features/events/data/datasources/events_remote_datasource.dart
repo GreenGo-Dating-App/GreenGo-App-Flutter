@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/event.dart';
 import '../../domain/entities/event_country_stat.dart';
 import '../models/event_attendee_model.dart';
@@ -53,6 +54,14 @@ abstract class EventsRemoteDataSource {
   );
 
   Future<List<Event>> getUserEvents(String userId);
+
+  /// Nearest published community events to a point, via geohash (scales to a
+  /// large table — only the closest [limit] are read/returned).
+  Future<List<Event>> getNearbyCommunityEvents({
+    required double lat,
+    required double lng,
+    int limit,
+  });
 
   /// Full-text-ish search by name/typology/city (public events only).
   Future<List<Event>> searchEvents(String query);
@@ -502,6 +511,49 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error getting user events: $e');
       throw ServerException('Failed to load user events: $e');
+    }
+  }
+
+  @override
+  Future<List<Event>> getNearbyCommunityEvents({
+    required double lat,
+    required double lng,
+    int limit = 100,
+  }) async {
+    try {
+      final out = <String, Event>{};
+      // Expanding rings: 100km → 300 → 900 → 2700 → global, until we have enough.
+      var radiusM = 100000.0;
+      const maxRadiusM = 20000000.0;
+      final now = DateTime.now();
+      while (out.length < limit && radiusM <= maxRadiusM) {
+        final bounds = GeoQuery.queryBounds(lat, lng, radiusM);
+        final snaps = await Future.wait(bounds.map((b) => _eventsCollection
+            .where('status', isEqualTo: EventStatus.published.name)
+            .orderBy('geohash')
+            .startAt([b[0]]).endAt([b[1]]).get()));
+        for (final s in snaps) {
+          for (final doc in s.docs) {
+            if (out.containsKey(doc.id)) continue;
+            final e = EventModel.fromFirestore(doc);
+            if (!e.isPublic) continue;
+            if (e.endDate.isBefore(now)) continue; // upcoming/ongoing only
+            out[doc.id] = e;
+          }
+        }
+        if (radiusM >= maxRadiusM) break;
+        radiusM *= 3;
+      }
+      final list = out.values.toList();
+      double dist(Event e) {
+        if (e.latitude == null || e.longitude == null) return double.infinity;
+        return GeoQuery.distanceMeters(lat, lng, e.latitude!, e.longitude!);
+      }
+      list.sort((a, b) => dist(a).compareTo(dist(b)));
+      return list.take(limit).toList();
+    } catch (e) {
+      debugPrint('Error getting nearby community events: $e');
+      return [];
     }
   }
 
