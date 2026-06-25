@@ -75,6 +75,7 @@ export {
 export {
   runIngestGeoapifyNow,
   runBackfillGeoapifyWebsitesNow,
+  runCleanupNoImageNow,
 } from './external_events/geoapify';
 
 // Ticketmaster live-events ingester.

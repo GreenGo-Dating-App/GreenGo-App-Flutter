@@ -52,7 +52,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.runIngestGeoapifyNow = exports.runBackfillGeoapifyWebsitesNow = void 0;
+exports.runIngestGeoapifyNow = exports.runBackfillGeoapifyWebsitesNow = exports.runCleanupNoImageNow = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
@@ -606,6 +606,58 @@ async function runGeoapify(key, opts = {}) {
         totalCities,
     };
 }
+/// Delete external_events for [sources] that have no image, so the app never
+/// downloads or shows a picture-less attraction/experience. Rebuilds each index.
+exports.runCleanupNoImageNow = (0, https_1.onRequest)({ timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] }, async (req, res) => {
+    if (!req.query.token || req.query.token !== GEOAPIFY_API_KEY.value()) {
+        res.status(403).send('Forbidden');
+        return;
+    }
+    const sources = (req.query.sources || 'geoapify,viator')
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+    const result = {};
+    for (const source of sources) {
+        let cursor;
+        let deleted = 0;
+        for (;;) {
+            let q = db
+                .collection(COLLECTION)
+                .where('source', '==', source)
+                .orderBy('__name__')
+                .limit(500);
+            if (cursor)
+                q = q.startAfter(cursor);
+            const snap = await q.get();
+            if (snap.empty)
+                break;
+            let batch = db.batch();
+            let ops = 0;
+            for (const doc of snap.docs) {
+                const img = doc.data().imageUrl;
+                if (img == null || img === '') {
+                    batch.delete(doc.ref);
+                    deleted++;
+                    if (++ops >= 400) {
+                        await batch.commit();
+                        batch = db.batch();
+                        ops = 0;
+                    }
+                }
+            }
+            if (ops > 0)
+                await batch.commit();
+            cursor = snap.docs[snap.docs.length - 1];
+            if (snap.docs.length < 500)
+                break;
+        }
+        await (0, build_index_1.buildSourceIndex)(source);
+        result[source] = deleted;
+    }
+    console.log('cleanupNoImage:', result);
+    res.status(200).json({ ok: true, deleted: result });
+});
 /// One-time backfill: scrape the Wikidata P856 official website for existing
 /// geoapify attractions that have a Wikidata reference but no website, and store
 /// it in the `website` field (so it's preloaded in the DB, not fetched on tap).
