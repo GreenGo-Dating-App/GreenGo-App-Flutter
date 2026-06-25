@@ -11103,4 +11103,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get catOther => 'Sonstiges';
+
+  @override
+  String get eventsUnlimited => 'Unbegrenzt';
+
+  @override
+  String get eventsTabGoing => 'Zugesagt';
 }

@@ -45,29 +45,37 @@ class _ShareEventSheet extends StatelessWidget {
         'eventImageUrl': event.imageUrl,
       };
 
-  Future<void> _shareToGroup(BuildContext context, String groupId) async {
-    await di.sl<SendGroupMessage>()(
-      SendGroupMessageParams(
-        groupId: groupId,
-        senderId: currentUserId,
-        content: event.id,
-        type: MessageType.event,
-        metadata: _metadata,
-      ),
-    );
+  // Close the sheet + confirm immediately, then send in the background — the
+  // Firestore write shouldn't block the UI (otherwise it feels stuck and the
+  // user taps again).
+  void _shareToGroup(BuildContext context, String groupId) {
     _done(context);
+    di
+        .sl<SendGroupMessage>()(
+          SendGroupMessageParams(
+            groupId: groupId,
+            senderId: currentUserId,
+            content: event.id,
+            type: MessageType.event,
+            metadata: _metadata,
+          ),
+        )
+        .catchError((_) {});
   }
 
-  Future<void> _shareToChat(BuildContext context, Conversation c) async {
-    await di.sl<ChatRepository>().sendMessage(
+  void _shareToChat(BuildContext context, Conversation c) {
+    _done(context);
+    di
+        .sl<ChatRepository>()
+        .sendMessage(
           matchId: c.matchId,
           senderId: currentUserId,
           receiverId: c.getOtherUserId(currentUserId),
           content: event.id,
           type: MessageType.event,
           metadata: _metadata,
-        );
-    _done(context);
+        )
+        .catchError((_) {});
   }
 
   void _done(BuildContext context) {

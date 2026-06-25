@@ -11071,6 +11071,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get catOther => 'Outros';
+
+  @override
+  String get eventsUnlimited => 'Ilimitado';
+
+  @override
+  String get eventsTabGoing => 'Vou';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -21842,4 +21848,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get catOther => 'Outros';
+
+  @override
+  String get eventsUnlimited => 'Ilimitado';
+
+  @override
+  String get eventsTabGoing => 'Vou';
 }

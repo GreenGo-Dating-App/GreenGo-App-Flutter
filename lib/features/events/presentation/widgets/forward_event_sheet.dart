@@ -48,29 +48,35 @@ class _ForwardEventSheet extends StatelessWidget {
           ? metadata['eventId'] as String
           : (metadata['externalUrl'] as String? ?? '');
 
-  Future<void> _toGroup(BuildContext context, String groupId) async {
-    await di.sl<SendGroupMessage>()(
-      SendGroupMessageParams(
-        groupId: groupId,
-        senderId: currentUserId,
-        content: _content,
-        type: MessageType.event,
-        metadata: metadata,
-      ),
-    );
+  // Close + confirm immediately, send in the background (don't block the UI).
+  void _toGroup(BuildContext context, String groupId) {
     _done(context);
+    di
+        .sl<SendGroupMessage>()(
+          SendGroupMessageParams(
+            groupId: groupId,
+            senderId: currentUserId,
+            content: _content,
+            type: MessageType.event,
+            metadata: metadata,
+          ),
+        )
+        .catchError((_) {});
   }
 
-  Future<void> _toChat(BuildContext context, Conversation c) async {
-    await di.sl<ChatRepository>().sendMessage(
+  void _toChat(BuildContext context, Conversation c) {
+    _done(context);
+    di
+        .sl<ChatRepository>()
+        .sendMessage(
           matchId: c.matchId,
           senderId: currentUserId,
           receiverId: c.getOtherUserId(currentUserId),
           content: _content,
           type: MessageType.event,
           metadata: metadata,
-        );
-    _done(context);
+        )
+        .catchError((_) {});
   }
 
   void _done(BuildContext context) {

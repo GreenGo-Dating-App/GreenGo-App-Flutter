@@ -3742,5 +3742,7 @@
   "groupAddSelected": "Adicionar {count} selecionados",
   "groupTtsReadTranslated": "Ler a tradução em voz alta",
   "groupTtsReadTranslatedHint": "Toque duas vezes em uma mensagem para ouvi-la. Ligado = seu idioma, Desligado = original.",
-  "ttsNotEnoughCoins": "Moedas insuficientes para TTS (são necessárias 5)"
+  "ttsNotEnoughCoins": "Moedas insuficientes para TTS (são necessárias 5)",
+  "eventsUnlimited": "Ilimitado",
+  "eventsTabGoing": "Vou"
 }

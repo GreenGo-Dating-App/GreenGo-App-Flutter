@@ -19565,6 +19565,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Other'**
   String get catOther;
+
+  /// No description provided for @eventsUnlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited'**
+  String get eventsUnlimited;
+
+  /// No description provided for @eventsTabGoing.
+  ///
+  /// In en, this message translates to:
+  /// **'Going'**
+  String get eventsTabGoing;
 }
 
 class _AppLocalizationsDelegate

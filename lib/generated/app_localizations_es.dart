@@ -11098,4 +11098,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get catOther => 'Otros';
+
+  @override
+  String get eventsUnlimited => 'Ilimitado';
+
+  @override
+  String get eventsTabGoing => 'Asistiré';
 }

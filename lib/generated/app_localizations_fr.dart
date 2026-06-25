@@ -11142,4 +11142,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get catOther => 'Autres';
+
+  @override
+  String get eventsUnlimited => 'Illimité';
+
+  @override
+  String get eventsTabGoing => 'Je participe';
 }
