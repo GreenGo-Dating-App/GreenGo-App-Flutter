@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
@@ -118,7 +119,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
         LatLng(currentUser.pinLatitude, currentUser.pinLongitude);
     final l10n = AppLocalizations.of(context)!;
 
-    return FlutterMap(
+    final map = FlutterMap(
       mapController: _mapController,
       options: MapOptions(
         initialCenter: initialCenter,
@@ -157,6 +158,45 @@ class _GlobeMapViewState extends State<GlobeMapView>
         PolylineLayer(polylines: _buildFlightPaths()),
         MarkerLayer(markers: _buildMarkers(l10n)),
       ],
+    );
+
+    // Web: on-screen +/- zoom controls (no pinch/scroll-zoom affordance).
+    if (!kIsWeb) return map;
+    return Stack(
+      children: [
+        map,
+        Positioned(
+          right: 12,
+          bottom: 12,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _zoomButton(Icons.add, 1),
+              const SizedBox(height: 8),
+              _zoomButton(Icons.remove, -1),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _zoomButton(IconData icon, double delta) {
+    return Material(
+      color: Colors.black.withValues(alpha: 0.6),
+      shape: const CircleBorder(),
+      child: InkWell(
+        customBorder: const CircleBorder(),
+        onTap: () {
+          final z = (_currentZoom + delta).clamp(2.0, 18.0);
+          _mapController.move(_mapController.camera.center, z);
+          setState(() => _currentZoom = z);
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Icon(icon, color: Colors.white, size: 24),
+        ),
+      ),
     );
   }
 

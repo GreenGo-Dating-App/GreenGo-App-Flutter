@@ -163,7 +163,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   int _autoColumns(double width) {
     if (width < 300) return 2;
     if (width < 450) return 3;
-    return 4;
+    if (width < 800) return 4;
+    if (width < 1200) return 6;
+    return 8; // wide / web
   }
 
   /// Get current preferences (saved from Firestore, or default)
@@ -1226,7 +1228,12 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: [0, 2, 3, 4].map((cols) {
+        // Wide screens (web) can pick denser grids (6 / 8 columns).
+        children:
+            (MediaQuery.of(context).size.width >= 800
+                    ? const [0, 2, 4, 6, 8]
+                    : const [0, 2, 3, 4])
+                .map((cols) {
           final isSelected = _gridColumns == cols;
           return GestureDetector(
             onTap: () {
