@@ -86,6 +86,42 @@ workflows:
           success: true
           failure: true
 
+  web-release:
+    name: Web Build & Deploy
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+    environment:
+      flutter: 3.44.4
+      groups:
+        - firebase_credentials
+      vars:
+        BUNDLE_ID: "com.greengochat.greengochatapp"
+    scripts:
+      - name: Install Firebase config files
+        script: |
+          #!/bin/sh
+          echo $FIREBASE_OPTIONS_DART | base64 --decode > $CM_BUILD_DIR/lib/firebase_options.dart
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Run build_runner
+        script: dart run build_runner build --delete-conflicting-outputs
+      - name: Build web
+        script: flutter build web --release
+      - name: Deploy to Firebase Hosting
+        script: |
+          # Requires FIREBASE_TOKEN in the firebase_credentials group
+          # (generate with `firebase login:ci`).
+          npx firebase-tools deploy --only hosting:app --token "$FIREBASE_TOKEN" --non-interactive
+    artifacts:
+      - build/web/**
+    publishing:
+      email:
+        recipients:
+          - tommasi.mauro@icloud.com
+        notify:
+          success: true
+          failure: true
+
   android-release:
     name: Android APK Build
     max_build_duration: 30
