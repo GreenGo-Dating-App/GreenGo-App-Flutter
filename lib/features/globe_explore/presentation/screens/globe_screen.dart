@@ -322,6 +322,51 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 color: AppColors.richGold, fontWeight: FontWeight.bold)),
       );
 
+  /// Vertical layer-toggle panel shown on the right of the map.
+  Widget _buildLayerPanel(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    Widget btn(IconData icon, bool active, String tooltip, VoidCallback onTap) {
+      return Tooltip(
+        message: tooltip,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(22),
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Icon(icon,
+                size: 24,
+                color: active ? AppColors.richGold : AppColors.textSecondary),
+          ),
+        ),
+      );
+    }
+
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.55),
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          btn(Icons.people, _showContacts, l10n.globeLayerContacts,
+              () => setState(() => _showContacts = !_showContacts)),
+          btn(Icons.event, _showCommunityEvents, l10n.eventsTabCommunity,
+              () => setState(() => _showCommunityEvents = !_showCommunityEvents)),
+          btn(Icons.confirmation_number, _showLiveEvents,
+              l10n.globeLayerLiveEvents,
+              () => setState(() => _showLiveEvents = !_showLiveEvents)),
+          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions,
+              () => setState(() => _showAttractions = !_showAttractions)),
+          btn(Icons.local_activity, _showExperiences, l10n.globeLayerExperiences,
+              () => setState(() => _showExperiences = !_showExperiences)),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     context.read<GlobeBloc>().add(GlobeLoadRequested(userId: userId));
@@ -337,56 +382,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
         elevation: 0,
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
-          // Layer toggles: My Community, Community Events, Attractions, Experiences.
-          IconButton(
-            icon: Icon(Icons.people,
-                color: _showContacts
-                    ? AppColors.richGold
-                    : AppColors.textSecondary,
-                size: 22),
-            tooltip: AppLocalizations.of(context)!.globeLayerContacts,
-            onPressed: () => setState(() => _showContacts = !_showContacts),
-          ),
-          IconButton(
-            icon: Icon(Icons.event,
-                color: _showCommunityEvents
-                    ? AppColors.richGold
-                    : AppColors.textSecondary,
-                size: 22),
-            tooltip: AppLocalizations.of(context)!.eventsTabCommunity,
-            onPressed: () =>
-                setState(() => _showCommunityEvents = !_showCommunityEvents),
-          ),
-          IconButton(
-            icon: Icon(Icons.confirmation_number,
-                color: _showLiveEvents
-                    ? AppColors.richGold
-                    : AppColors.textSecondary,
-                size: 22),
-            tooltip: AppLocalizations.of(context)!.globeLayerLiveEvents,
-            onPressed: () =>
-                setState(() => _showLiveEvents = !_showLiveEvents),
-          ),
-          IconButton(
-            icon: Icon(Icons.museum,
-                color: _showAttractions
-                    ? AppColors.richGold
-                    : AppColors.textSecondary,
-                size: 22),
-            tooltip: AppLocalizations.of(context)!.eventsTabAttractions,
-            onPressed: () =>
-                setState(() => _showAttractions = !_showAttractions),
-          ),
-          IconButton(
-            icon: Icon(Icons.local_activity,
-                color: _showExperiences
-                    ? AppColors.richGold
-                    : AppColors.textSecondary,
-                size: 22),
-            tooltip: AppLocalizations.of(context)!.globeLayerExperiences,
-            onPressed: () =>
-                setState(() => _showExperiences = !_showExperiences),
-          ),
+          // Layer toggles moved to a vertical panel on the right of the map.
           IconButton(
             icon: const Icon(Icons.refresh,
                 color: AppColors.textSecondary, size: 22),
@@ -483,6 +479,12 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   onClusterTapped: (users) {
                     _showClusterSheet(context, users);
                   },
+                ),
+                // Vertical layer toggles on the right.
+                Positioned(
+                  right: 8,
+                  top: 12,
+                  child: _buildLayerPanel(context),
                 ),
                 // Match count badge
                 Positioned(
