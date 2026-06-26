@@ -184,8 +184,12 @@ class _EditGroupTagsDialogState extends State<_EditGroupTagsDialog> {
           child: Text(l10n.groupCancel),
         ),
         TextButton(
-          onPressed: () =>
-              Navigator.of(context).pop(GroupTagsService.normalize(_tags)),
+          onPressed: () {
+            // Include any tag typed but not yet added via the "+" button.
+            final merged =
+                GroupTagsService.normalize([..._tags, _controller.text]);
+            Navigator.of(context).pop(merged);
+          },
           child: Text(l10n.groupTagsSave),
         ),
       ],

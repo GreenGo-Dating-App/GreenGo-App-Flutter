@@ -622,11 +622,14 @@ class _EventsScreenState extends State<EventsScreen>
     }).toList();
   }
 
-  /// Going: events the user is attending (RSVP'd), i.e. not ones they created.
-  /// userEvents = organized + attending; filter out organized to leave attending.
+  /// Going: every event the user has RSVP'd "going" to — INCLUDING events they
+  /// organized and then joined. The datasource marks the user's going RSVP on
+  /// each event (attendees live in a subcollection), so we filter on that.
   List<Event> _getGoingEvents(EventsLoaded state) {
     final attending = state.userEvents
-        .where((e) => e.organizerId != widget.currentUserId)
+        .where((e) => e.attendees.any((a) =>
+            a.userId == widget.currentUserId &&
+            a.status == RSVPStatus.going))
         .toList();
     if (_selectedCategory != null) {
       return attending
