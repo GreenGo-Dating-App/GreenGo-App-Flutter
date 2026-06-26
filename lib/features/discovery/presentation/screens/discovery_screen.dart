@@ -139,6 +139,11 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   int _gridStartIndex = 0; // Snapshot of currentIndex when grid mode was entered
   final Set<String> _gridSkippedIds = {}; // Skipped users (disappear from grid)
   final Map<String, String> _gridActionOverlays = {}; // userId -> 'liked'|'superLiked'|'matched'
+  // Raw swipe action per user ('liked'|'superLiked'|'passed'|'skipped'),
+  // kept even after a like/superLike becomes a match (the visual overlay above
+  // switches to 'matched'). Used by the grid filters so "Connected"/"Priority"
+  // still include people you connected with who then matched.
+  final Map<String, String> _swipeActionByUser = {};
   final Set<String> _networkUserIds = {}; // Users in the current user's network (matches + accepted superLikes)
   String? _lastAttemptedGridCardId; // Track last grid action for limit-hit overlay revert
 
@@ -322,6 +327,24 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           final targetUserId = data['targetUserId'] as String?;
           final actionType = data['actionType'] as String?;
           if (targetUserId == null || actionType == null) continue;
+
+          // Record the raw action regardless of match status, so the grid
+          // filters (Connected/Priority/Passed) keep working after a match.
+          switch (actionType) {
+            case 'like':
+              _swipeActionByUser[targetUserId] = 'liked';
+              break;
+            case 'superLike':
+              _swipeActionByUser[targetUserId] = 'superLiked';
+              break;
+            case 'pass':
+            case 'nope':
+              _swipeActionByUser[targetUserId] = 'passed';
+              break;
+            case 'skip':
+              _swipeActionByUser[targetUserId] = 'skipped';
+              break;
+          }
 
           // If this user is matched, mark as matched (overrides like/superLike)
           if (matchedUserIds.contains(targetUserId)) {
@@ -941,7 +964,6 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       filteredRegular = networkFiltered;
     } else {
       filteredRegular = networkFiltered.where((card) {
-        final overlay = _gridActionOverlays[card.userId];
         final profile = card.candidate.profile;
 
         // Special profile-attribute filters
@@ -956,11 +978,15 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           return false;
         }
 
-        // Standard action overlay filters
-        if (overlay == null) {
+        // Match on the RAW swipe action so a like/superLike that later became a
+        // match still satisfies "Connected"/"Priority" (its visual overlay is
+        // 'matched', which no chip targets). Fall back to the visual overlay.
+        final key = _swipeActionByUser[card.userId] ??
+            _gridActionOverlays[card.userId];
+        if (key == null) {
           return _activeFilters.contains('all');
         }
-        return _activeFilters.contains(overlay);
+        return _activeFilters.contains(key);
       }).toList();
     }
 

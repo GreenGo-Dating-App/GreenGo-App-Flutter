@@ -10293,6 +10293,55 @@ class AppLocalizationsEn extends AppLocalizations {
       'Each conversation shows the other user\'s language flags, so you know what languages they speak.';
 
   @override
+  String get guideGroupsTitle => 'Groups (Culture Circles)';
+
+  @override
+  String get guideGroupsItem1 =>
+      'Create a group to chat with several people at once around a shared interest or language.';
+
+  @override
+  String get guideGroupsItem2 =>
+      'Admins can rename the group, change its photo, and add or remove members.';
+
+  @override
+  String get guideGroupsItem3 =>
+      'Invite people by their nickname from Group Info.';
+
+  @override
+  String get guideGroupsItem4 =>
+      'Add your own private tags to a group in Group Info, then filter your groups list by tag — only you can see your tags.';
+
+  @override
+  String get guideGroupsItem5 => 'Leave or report a group at any time.';
+
+  @override
+  String get guideEventsTitle => 'Events';
+
+  @override
+  String get guideEventsItem1 =>
+      'Discover events near you — parties, museum visits, language meetups and city tours.';
+
+  @override
+  String get guideEventsItem2 =>
+      'Browse curated experiences and attractions, or create your own event with photos, location and date.';
+
+  @override
+  String get guideEventsItem3 =>
+      'Mark events as Going or Interested and find them again in your Going tab.';
+
+  @override
+  String get guideEventsItem4 =>
+      'Every event has its own chat; organizers can broadcast announcements to all attendees.';
+
+  @override
+  String get guideEventsItem5 =>
+      'Share any event into a private chat or a group.';
+
+  @override
+  String get guideEventsItem6 =>
+      'Explore events around the world on the map, by location.';
+
+  @override
   String get guideSafetyTitle => 'Safety & Privacy';
 
   @override
@@ -10624,6 +10673,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get continueToApp => 'Continue';
 
   @override
+  String get webCheckoutOpening => 'Opening secure checkout…';
+
+  @override
+  String get webCheckoutWaiting =>
+      'Complete your payment in the new tab. This window will update automatically once it\'s done.';
+
+  @override
+  String get webCheckoutTimeout =>
+      'We couldn\'t confirm your payment yet. If you completed it, your balance will update shortly.';
+
+  @override
+  String get webCheckoutFailed => 'Couldn\'t start checkout. Please try again.';
+
+  @override
   String get groupNewGroup => 'New group';
 
   @override
@@ -10900,6 +10963,33 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get groupNoSearchResults => 'No groups found';
+
+  @override
+  String get groupMyTags => 'My tags';
+
+  @override
+  String get groupMyTagsSubtitle => 'Private — only you can see these';
+
+  @override
+  String get groupNoTagsYet => 'No tags yet';
+
+  @override
+  String get groupTagsEditTitle => 'Edit my tags';
+
+  @override
+  String get groupAddTagHint => 'Add a tag';
+
+  @override
+  String get groupTagsSave => 'Save';
+
+  @override
+  String get groupTagsSaved => 'Tags saved';
+
+  @override
+  String get groupTagsSaveFailed => 'Couldn\'t save tags';
+
+  @override
+  String get groupTagsLimitReached => 'Tag limit reached';
 
   @override
   String get groupTranslationSettings => 'Translation';

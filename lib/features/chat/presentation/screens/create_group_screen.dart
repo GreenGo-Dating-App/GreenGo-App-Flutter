@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/tier_limits_service.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/usecases/create_group.dart';
 import 'group_chat_screen.dart';
@@ -51,20 +52,134 @@ class CreateGroupScreen extends StatefulWidget {
 class _CreateGroupScreenState extends State<CreateGroupScreen> {
   // Max members per group is 10 (creator + up to 9 others).
   static const int _maxOtherMembers = 9;
+  // How many conversations to pull per page, per query side.
+  static const int _chatsPageSize = 20;
+
   final _nameController = TextEditingController();
   final _nicknameController = TextEditingController();
+  final _scrollController = ScrollController();
   final _selected = <String>{};
   // Members found via nickname invite (merged with the supplied chat partners).
   final _invited = <GroupCandidate>[];
+
+  // People the user has chatted with (1:1), loaded with infinite scroll from the
+  // `conversations` collection. Includes partners that have no nickname.
+  final _chatPartners = <GroupCandidate>[];
+  final _partnerIds = <String>{};
+  final _partnerRecency = <String, int>{}; // userId -> lastMessageAt millis
+  DocumentSnapshot<Map<String, dynamic>>? _cursor1;
+  DocumentSnapshot<Map<String, dynamic>>? _cursor2;
+  bool _hasMore1 = true;
+  bool _hasMore2 = true;
+  bool _loadingChats = false;
+
   bool _creating = false;
   bool _searching = false;
   String? _searchMessage;
 
   @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+    _loadMorePartners();
+  }
+
+  @override
   void dispose() {
     _nameController.dispose();
     _nicknameController.dispose();
+    _scrollController.dispose();
     super.dispose();
+  }
+
+  bool get _hasMoreChats => _hasMore1 || _hasMore2;
+
+  void _onScroll() {
+    if (_scrollController.position.pixels >=
+        _scrollController.position.maxScrollExtent - 240) {
+      _loadMorePartners();
+    }
+  }
+
+  /// Loads the next page of 1:1 chat partners. Two equality queries
+  /// (`userId1 == me` and `userId2 == me`), each ordered by recency and
+  /// cursor-paginated, then merged/sorted client-side. Partners without a
+  /// nickname are included (name falls back to display name / id).
+  Future<void> _loadMorePartners() async {
+    if (_loadingChats || !_hasMoreChats) return;
+    setState(() => _loadingChats = true);
+    final me = widget.currentUserId;
+    final fs = FirebaseFirestore.instance;
+
+    Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> page(
+      String field,
+      DocumentSnapshot<Map<String, dynamic>>? cursor,
+    ) async {
+      var q = fs
+          .collection('conversations')
+          .where(field, isEqualTo: me)
+          .orderBy('lastMessageAt', descending: true)
+          .limit(_chatsPageSize);
+      if (cursor != null) q = q.startAfterDocument(cursor);
+      final snap = await q.get();
+      return snap.docs;
+    }
+
+    try {
+      final results = await Future.wait([
+        if (_hasMore1) page('userId1', _cursor1) else Future.value(<QueryDocumentSnapshot<Map<String, dynamic>>>[]),
+        if (_hasMore2) page('userId2', _cursor2) else Future.value(<QueryDocumentSnapshot<Map<String, dynamic>>>[]),
+      ]);
+      final docs1 = _hasMore1 ? results[0] : <QueryDocumentSnapshot<Map<String, dynamic>>>[];
+      final docs2 = _hasMore2 ? results[1] : <QueryDocumentSnapshot<Map<String, dynamic>>>[];
+      if (_hasMore1) {
+        if (docs1.length < _chatsPageSize) _hasMore1 = false;
+        if (docs1.isNotEmpty) _cursor1 = docs1.last;
+      }
+      if (_hasMore2) {
+        if (docs2.length < _chatsPageSize) _hasMore2 = false;
+        if (docs2.isNotEmpty) _cursor2 = docs2.last;
+      }
+
+      final newIds = <String>[];
+      for (final doc in [...docs1, ...docs2]) {
+        final data = doc.data();
+        if (data['conversationType'] == 'support') continue;
+        if (data['isDeleted'] == true) continue;
+        final u1 = data['userId1'] as String?;
+        final u2 = data['userId2'] as String?;
+        final other = u1 == me ? u2 : u1;
+        if (other == null || other.isEmpty || other == me) continue;
+        final ts = data['lastMessageAt'];
+        final millis = ts is Timestamp ? ts.millisecondsSinceEpoch : 0;
+        // Keep the most recent recency seen for this partner.
+        if (!_partnerRecency.containsKey(other) ||
+            millis > _partnerRecency[other]!) {
+          _partnerRecency[other] = millis;
+        }
+        if (_partnerIds.add(other)) newIds.add(other);
+      }
+
+      if (newIds.isNotEmpty) {
+        final briefs = await UserDirectoryService.instance.resolve(newIds);
+        for (final id in newIds) {
+          final b = briefs[id];
+          _chatPartners.add(GroupCandidate(
+            userId: id,
+            name: b?.name ?? id,
+            photoUrl: b?.photoUrl,
+          ));
+        }
+        // Sort accumulated partners by recency (newest first).
+        _chatPartners.sort((a, b) => (_partnerRecency[b.userId] ?? 0)
+            .compareTo(_partnerRecency[a.userId] ?? 0));
+      }
+    } catch (_) {
+      _hasMore1 = false;
+      _hasMore2 = false;
+    } finally {
+      if (mounted) setState(() => _loadingChats = false);
+    }
   }
 
   bool get _canCreate =>
@@ -77,7 +192,8 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
   List<GroupCandidate> get _allCandidates {
     final seen = <String>{};
     final all = <GroupCandidate>[];
-    for (final c in [...widget.candidates, ..._invited]) {
+    // Invited (nickname) + supplied candidates first, then chat partners.
+    for (final c in [...widget.candidates, ..._invited, ..._chatPartners]) {
       if (c.userId == widget.currentUserId) continue;
       if (seen.add(c.userId)) all.add(c);
     }
@@ -291,10 +407,27 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
           const Divider(),
           Expanded(
             child: candidates.isEmpty
-                ? Center(child: Text(l10n.groupNoContacts))
+                ? (_loadingChats
+                    ? const Center(child: CircularProgressIndicator())
+                    : Center(child: Text(l10n.groupNoContacts)))
                 : ListView.builder(
-                    itemCount: candidates.length,
+                    controller: _scrollController,
+                    itemCount: candidates.length + (_hasMoreChats ? 1 : 0),
                     itemBuilder: (context, index) {
+                      if (index >= candidates.length) {
+                        // Infinite-scroll footer loader.
+                        return const Padding(
+                          padding: EdgeInsets.all(16),
+                          child: Center(
+                            child: SizedBox(
+                              width: 22,
+                              height: 22,
+                              child:
+                                  CircularProgressIndicator(strokeWidth: 2),
+                            ),
+                          ),
+                        );
+                      }
                       final c = candidates[index];
                       final selected = _selected.contains(c.userId);
                       return CheckboxListTile(

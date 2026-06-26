@@ -101,6 +101,29 @@ class AppGuideScreen extends StatelessWidget {
         ],
       ),
       _GuideSection(
+        icon: Icons.groups,
+        title: l10n.guideGroupsTitle,
+        items: [
+          l10n.guideGroupsItem1,
+          l10n.guideGroupsItem2,
+          l10n.guideGroupsItem3,
+          l10n.guideGroupsItem4,
+          l10n.guideGroupsItem5,
+        ],
+      ),
+      _GuideSection(
+        icon: Icons.event,
+        title: l10n.guideEventsTitle,
+        items: [
+          l10n.guideEventsItem1,
+          l10n.guideEventsItem2,
+          l10n.guideEventsItem3,
+          l10n.guideEventsItem4,
+          l10n.guideEventsItem5,
+          l10n.guideEventsItem6,
+        ],
+      ),
+      _GuideSection(
         icon: Icons.flight_takeoff,
         title: l10n.guideTravelTitle,
         items: [

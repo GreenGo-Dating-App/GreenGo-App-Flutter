@@ -12,6 +12,7 @@ import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../widgets/web_checkout_dialog.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
@@ -1337,8 +1338,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Future<void> _handleBaseMembershipPurchase() async {
-    if (_inAppPurchase == null) {
-      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+    if (kIsWeb || _inAppPurchase == null) {
+      await _handleWebPurchase('greengo_base_membership');
       return;
     }
     setState(() => _isLoadingSubscription = true);
@@ -1627,7 +1628,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Future<void> _handleSubscribe() async {
     if (_selectedTier == null) return;
     if (kIsWeb || _inAppPurchase == null) {
-      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+      await _handleWebPurchase(
+        _isYearlySelected
+            ? _selectedTier!.yearlyProductId
+            : _selectedTier!.monthlyProductId,
+      );
       return;
     }
 
@@ -2085,12 +2090,21 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   /// Handle coin purchase via IAP (Google Play on Android, App Store on iOS)
+  /// Web has no in-app-purchase plugin, so purchases go through Stripe Checkout.
+  /// On success the webhook credits Firestore; we refresh balance + profile.
+  Future<void> _handleWebPurchase(String productId) async {
+    final ok = await WebCheckoutDialog.show(context, productId);
+    if (ok == true && mounted) {
+      context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+      context.read<ProfileBloc>().add(ProfileLoadRequested(userId: widget.userId));
+    }
+  }
+
   Future<void> _handlePurchase() async {
     if (_selectedPackage == null) return;
-    // In-app purchases aren't available on web (no store) — guard so we never
-    // hit `_inAppPurchase!` on a null instance.
+    // No IAP plugin on web — route through Stripe Checkout instead.
     if (kIsWeb || _inAppPurchase == null) {
-      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+      await _handleWebPurchase(_selectedPackage!.productId);
       return;
     }
 

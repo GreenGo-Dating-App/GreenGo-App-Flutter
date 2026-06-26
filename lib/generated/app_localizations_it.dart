@@ -10407,6 +10407,56 @@ class AppLocalizationsIt extends AppLocalizations {
       'Ogni conversazione mostra le bandiere linguistiche dell\'altro utente, così sai quali lingue parla.';
 
   @override
+  String get guideGroupsTitle => 'Gruppi (Culture Circles)';
+
+  @override
+  String get guideGroupsItem1 =>
+      'Crea un gruppo per chattare con più persone contemporaneamente attorno a un interesse o una lingua comune.';
+
+  @override
+  String get guideGroupsItem2 =>
+      'Gli amministratori possono rinominare il gruppo, cambiarne la foto e aggiungere o rimuovere membri.';
+
+  @override
+  String get guideGroupsItem3 =>
+      'Invita persone tramite il loro soprannome dalle info del gruppo.';
+
+  @override
+  String get guideGroupsItem4 =>
+      'Aggiungi i tuoi tag privati a un gruppo nelle info del gruppo, poi filtra la lista dei gruppi per tag — solo tu vedi i tuoi tag.';
+
+  @override
+  String get guideGroupsItem5 =>
+      'Esci o segnala un gruppo in qualsiasi momento.';
+
+  @override
+  String get guideEventsTitle => 'Eventi';
+
+  @override
+  String get guideEventsItem1 =>
+      'Scopri eventi vicino a te — feste, visite ai musei, incontri linguistici e tour della città.';
+
+  @override
+  String get guideEventsItem2 =>
+      'Sfoglia esperienze e attrazioni selezionate, o crea il tuo evento con foto, luogo e data.';
+
+  @override
+  String get guideEventsItem3 =>
+      'Segna gli eventi come Partecipo o Interessato e ritrovali nella scheda Partecipo.';
+
+  @override
+  String get guideEventsItem4 =>
+      'Ogni evento ha la propria chat; gli organizzatori possono inviare annunci a tutti i partecipanti.';
+
+  @override
+  String get guideEventsItem5 =>
+      'Condividi qualsiasi evento in una chat privata o in un gruppo.';
+
+  @override
+  String get guideEventsItem6 =>
+      'Esplora eventi in tutto il mondo sulla mappa, per posizione.';
+
+  @override
   String get guideSafetyTitle => 'Sicurezza e privacy';
 
   @override
@@ -10744,6 +10794,20 @@ class AppLocalizationsIt extends AppLocalizations {
   String get continueToApp => 'Continua';
 
   @override
+  String get webCheckoutOpening => 'Apertura del pagamento sicuro…';
+
+  @override
+  String get webCheckoutWaiting =>
+      'Completa il pagamento nella nuova scheda. Questa finestra si aggiornerà automaticamente al termine.';
+
+  @override
+  String get webCheckoutTimeout =>
+      'Non siamo ancora riusciti a confermare il pagamento. Se l\'hai completato, il tuo saldo verrà aggiornato a breve.';
+
+  @override
+  String get webCheckoutFailed => 'Impossibile avviare il pagamento. Riprova.';
+
+  @override
   String get groupNewGroup => 'Nuovo gruppo';
 
   @override
@@ -11024,6 +11088,33 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get groupNoSearchResults => 'Nessun gruppo trovato';
+
+  @override
+  String get groupMyTags => 'I miei tag';
+
+  @override
+  String get groupMyTagsSubtitle => 'Privati — solo tu puoi vederli';
+
+  @override
+  String get groupNoTagsYet => 'Ancora nessun tag';
+
+  @override
+  String get groupTagsEditTitle => 'Modifica i miei tag';
+
+  @override
+  String get groupAddTagHint => 'Aggiungi un tag';
+
+  @override
+  String get groupTagsSave => 'Salva';
+
+  @override
+  String get groupTagsSaved => 'Tag salvati';
+
+  @override
+  String get groupTagsSaveFailed => 'Impossibile salvare i tag';
+
+  @override
+  String get groupTagsLimitReached => 'Limite di tag raggiunto';
 
   @override
   String get groupTranslationSettings => 'Traduzione';

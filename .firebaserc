@@ -5,7 +5,7 @@
   "targets": {
     "greengo-chat": {
       "hosting": {
-        "admin": [
+        "app": [
           "greengo-chat"
         ]
       }
