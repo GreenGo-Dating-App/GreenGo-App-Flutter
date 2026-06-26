@@ -502,9 +502,32 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         );
       }
 
-      // Combine and sort by start date
-      final allEvents = [...organizedEvents, ...attendingEvents];
-      allEvents.sort((a, b) => a.startDate.compareTo(b.startDate));
+      // Combine and sort by start date.
+      final combined = [...organizedEvents, ...attendingEvents];
+
+      // Mark the current user's "going" RSVP on every event in the going set
+      // (attendees are stored in a subcollection, so the event doc's denormalized
+      // attendees array can't be trusted). This lets the Going tab include events
+      // the user RSVP'd to — INCLUDING ones they organized and then joined.
+      final allEvents = combined.map((e) {
+        final alreadyGoing = e.attendees.any(
+            (a) => a.userId == userId && a.status == RSVPStatus.going);
+        if (attendingEventIds.contains(e.id) && !alreadyGoing) {
+          return e.copyWith(attendees: [
+            ...e.attendees,
+            EventAttendee(
+              id: userId,
+              eventId: e.id,
+              userId: userId,
+              userName: '',
+              status: RSVPStatus.going,
+              rsvpDate: DateTime.now(),
+            ),
+          ]);
+        }
+        return e;
+      }).toList()
+        ..sort((a, b) => a.startDate.compareTo(b.startDate));
 
       debugPrint('User events: ${allEvents.length} (${organizedEvents.length} organized, ${attendingEvents.length} attending)');
       return allEvents;
