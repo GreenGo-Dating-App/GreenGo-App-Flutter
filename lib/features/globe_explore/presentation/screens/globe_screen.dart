@@ -8,6 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
@@ -61,6 +62,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
   List<Event> _viewportCommunity = const [];
   int _viewportGen = 0;
   double? _vpLat, _vpLng, _vpRadius;
+  // Last viewport actually loaded — used to skip redundant reloads when the map
+  // emits onPositionChanged without a real move (prevents a refresh loop).
+  double? _loadedLat, _loadedLng, _loadedRadius;
 
   @override
   void initState() {
@@ -68,7 +72,24 @@ class _GlobeScreenState extends State<GlobeScreen> {
   }
 
   /// Load per-coordinate event dots for the visible area (debounced upstream).
-  Future<void> _loadViewport(double lat, double lng, double radiusM) async {
+  /// [force] bypasses the "did the viewport actually move?" guard (used by
+  /// layer toggles, which must re-query even at the same position).
+  Future<void> _loadViewport(double lat, double lng, double radiusM,
+      {bool force = false}) async {
+    // Skip if the camera hasn't meaningfully moved since the last load.
+    // flutter_map fires onPositionChanged repeatedly (incl. without gestures),
+    // so without this guard the globe re-queries + setState's continuously.
+    if (!force && _loadedLat != null && _loadedRadius != null) {
+      final moved = GeoQuery.distanceMeters(_loadedLat!, _loadedLng!, lat, lng);
+      final radiusDelta = (_loadedRadius! - radiusM).abs();
+      if (moved < _loadedRadius! * 0.15 &&
+          radiusDelta < _loadedRadius! * 0.15) {
+        _vpLat = lat;
+        _vpLng = lng;
+        _vpRadius = radiusM;
+        return;
+      }
+    }
     _vpLat = lat;
     _vpLng = lng;
     _vpRadius = radiusM;
@@ -96,16 +117,20 @@ class _GlobeScreenState extends State<GlobeScreen> {
           lat: lat, lng: lng, limit: 200);
     }
     if (!mounted || gen != _viewportGen) return;
+    _loadedLat = lat;
+    _loadedLng = lng;
+    _loadedRadius = radiusM;
     setState(() {
       _viewportExternal = external;
       _viewportCommunity = community;
     });
   }
 
-  /// Re-load the current viewport after a layer toggle.
+  /// Re-load the current viewport after a layer toggle (force past the
+  /// no-movement guard, since the enabled sources changed).
   void _reloadViewport() {
     if (_vpLat != null && _vpLng != null && _vpRadius != null) {
-      _loadViewport(_vpLat!, _vpLng!, _vpRadius!);
+      _loadViewport(_vpLat!, _vpLng!, _vpRadius!, force: true);
     }
   }
 

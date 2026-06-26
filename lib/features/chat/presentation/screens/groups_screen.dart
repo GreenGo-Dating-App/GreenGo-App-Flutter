@@ -102,16 +102,18 @@ class _GroupsScreenState extends State<GroupsScreen> {
         ),
         body: Column(
           children: [
-            // Search by group name (chats-style search bar).
+            // Search by group name — same styling as the Exchanges search bar.
             Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
+              padding: const EdgeInsets.all(16),
               child: TextField(
                 controller: _searchController,
                 style: const TextStyle(color: AppColors.textPrimary),
                 onChanged: (v) => setState(() => _query = v.trim().toLowerCase()),
                 decoration: InputDecoration(
                   hintText: l10n.groupSearchHint,
-                  hintStyle: const TextStyle(color: AppColors.textTertiary),
+                  hintStyle: TextStyle(
+                    color: AppColors.textTertiary.withOpacity(0.6),
+                  ),
                   prefixIcon:
                       const Icon(Icons.search, color: AppColors.textTertiary),
                   suffixIcon: _query.isNotEmpty
@@ -126,11 +128,17 @@ class _GroupsScreenState extends State<GroupsScreen> {
                       : null,
                   filled: true,
                   fillColor: AppColors.backgroundCard,
-                  contentPadding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide.none,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: AppColors.richGold),
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
                   ),
                 ),
               ),
@@ -139,10 +147,10 @@ class _GroupsScreenState extends State<GroupsScreen> {
             // current user sees these; selecting filters their groups list.
             if (_allTags.isNotEmpty)
               SizedBox(
-                height: 44,
+                height: 40,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   children: [
                     for (final tag in _allTags)
                       Padding(
@@ -216,7 +224,15 @@ class _GroupsScreenState extends State<GroupsScreen> {
                               const TextStyle(color: AppColors.textSecondary)),
                     );
                   }
-                  return ListView.separated(
+                  return RefreshIndicator(
+                    color: AppColors.richGold,
+                    backgroundColor: AppColors.backgroundCard,
+                    onRefresh: () async {
+                      context
+                          .read<GroupsBloc>()
+                          .add(const GroupsRefreshRequested());
+                    },
+                    child: ListView.separated(
                     itemCount: groups.length,
                     separatorBuilder: (_, __) => const Divider(
                         height: 1, color: AppColors.backgroundCard),
@@ -296,6 +312,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
                         ),
                       );
                     },
+                  ),
                   );
                 },
               ),
