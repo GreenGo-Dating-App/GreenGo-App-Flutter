@@ -315,13 +315,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         ..add(ConversationsLoadRequested(widget.userId)),
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
-        floatingActionButton: FloatingActionButton.extended(
-          backgroundColor: AppColors.richGold,
-          foregroundColor: AppColors.deepBlack,
-          icon: const Icon(Icons.group_add),
-          label: Text(AppLocalizations.of(context)!.groupNewGroup),
-          onPressed: _openCreateGroup,
-        ),
+        // "New group" lives only on the Groups tab now.
         body: BlocBuilder<ConversationsBloc, ConversationsState>(
           builder: (context, state) {
             if (state is ConversationsLoading) {

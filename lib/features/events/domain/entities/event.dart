@@ -139,7 +139,16 @@ class Event extends Equatable {
       isFeatured &&
       (featuredUntil == null || featuredUntil!.isAfter(DateTime.now()));
 
-  int get goingCount => attendees.where((a) => a.status == RSVPStatus.going).length;
+  /// Number going. RSVPs live in the `attendees` SUBcollection, so the doc's
+  /// denormalized `attendees` array is usually empty on list cards; the
+  /// maintained `attendeeCount` counter is the reliable source. Use whichever
+  /// is larger so it's correct both on cards (counter) and on the detail screen
+  /// (full array loaded).
+  int get goingCount {
+    final fromList =
+        attendees.where((a) => a.status == RSVPStatus.going).length;
+    return attendeeCount > fromList ? attendeeCount : fromList;
+  }
   int get interestedCount => attendees.where((a) => a.status == RSVPStatus.interested).length;
   /// `maxAttendees <= 0` means unlimited capacity.
   bool get isUnlimited => maxAttendees <= 0;
