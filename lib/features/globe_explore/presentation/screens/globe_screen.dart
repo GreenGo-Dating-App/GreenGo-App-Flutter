@@ -69,6 +69,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
   @override
   void initState() {
     super.initState();
+    // Load globe data ONCE. (Previously dispatched from build(), which re-fired
+    // on every rebuild — so each layer toggle reloaded the bloc, flashed the
+    // loading spinner, recreated the map and reset the view, making it look like
+    // only one layer showed at a time.)
+    context.read<GlobeBloc>().add(GlobeLoadRequested(userId: userId));
   }
 
   /// Load per-coordinate event dots for the visible area (debounced upstream).
@@ -442,8 +447,6 @@ class _GlobeScreenState extends State<GlobeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    context.read<GlobeBloc>().add(GlobeLoadRequested(userId: userId));
-
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
