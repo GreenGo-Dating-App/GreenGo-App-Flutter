@@ -1644,11 +1644,21 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
-          // Quick access to the Shop tab, next to the globe.
+          // Quick access to the Coin Shop (buy coins & memberships), next to
+          // the globe. The shop is a pushed screen, not a bottom-nav tab.
           IconButton(
             icon: const Icon(Icons.storefront,
                 color: AppColors.textSecondary, size: 22),
-            onPressed: () => _onTabTapped(3),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => BlocProvider<CoinBloc>.value(
+                    value: _coinBloc,
+                    child: CoinShopScreen(userId: widget.userId),
+                  ),
+                ),
+              );
+            },
             tooltip: l10n.shopTitle,
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
