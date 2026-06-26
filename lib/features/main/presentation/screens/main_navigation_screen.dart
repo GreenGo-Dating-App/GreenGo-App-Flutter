@@ -1644,6 +1644,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          // Quick access to the Shop tab, next to the globe.
+          IconButton(
+            icon: const Icon(Icons.storefront,
+                color: AppColors.textSecondary, size: 22),
+            onPressed: () => _onTabTapped(3),
+            tooltip: l10n.shopTitle,
+            constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+            padding: EdgeInsets.zero,
+          ),
           // 3D Globe explore
           TourShowcase(
             showcaseKey: TourKeys.globe,

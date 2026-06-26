@@ -159,6 +159,13 @@ export {
   playStoreNotifications,
 } from './subscription/storeNotifications';
 
+// Stripe Web Payments — coin packages + memberships via Stripe Checkout
+// (web has no in-app-purchase plugin). Inert until STRIPE_SECRET_KEY is set.
+export {
+  createStripeCheckoutSession,
+  stripeWebhook,
+} from './payments/stripeCheckout';
+
 // Coin Functions
 export {
   verifyGooglePlayCoinPurchase,

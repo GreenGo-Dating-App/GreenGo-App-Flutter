@@ -18342,6 +18342,84 @@ abstract class AppLocalizations {
   /// **'Each conversation shows the other user\'s language flags, so you know what languages they speak.'**
   String get guideExchangesItem9;
 
+  /// No description provided for @guideGroupsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups (Culture Circles)'**
+  String get guideGroupsTitle;
+
+  /// No description provided for @guideGroupsItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a group to chat with several people at once around a shared interest or language.'**
+  String get guideGroupsItem1;
+
+  /// No description provided for @guideGroupsItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Admins can rename the group, change its photo, and add or remove members.'**
+  String get guideGroupsItem2;
+
+  /// No description provided for @guideGroupsItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite people by their nickname from Group Info.'**
+  String get guideGroupsItem3;
+
+  /// No description provided for @guideGroupsItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your own private tags to a group in Group Info, then filter your groups list by tag — only you can see your tags.'**
+  String get guideGroupsItem4;
+
+  /// No description provided for @guideGroupsItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Leave or report a group at any time.'**
+  String get guideGroupsItem5;
+
+  /// No description provided for @guideEventsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get guideEventsTitle;
+
+  /// No description provided for @guideEventsItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover events near you — parties, museum visits, language meetups and city tours.'**
+  String get guideEventsItem1;
+
+  /// No description provided for @guideEventsItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse curated experiences and attractions, or create your own event with photos, location and date.'**
+  String get guideEventsItem2;
+
+  /// No description provided for @guideEventsItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark events as Going or Interested and find them again in your Going tab.'**
+  String get guideEventsItem3;
+
+  /// No description provided for @guideEventsItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Every event has its own chat; organizers can broadcast announcements to all attendees.'**
+  String get guideEventsItem4;
+
+  /// No description provided for @guideEventsItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Share any event into a private chat or a group.'**
+  String get guideEventsItem5;
+
+  /// No description provided for @guideEventsItem6.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore events around the world on the map, by location.'**
+  String get guideEventsItem6;
+
   /// No description provided for @guideSafetyTitle.
   ///
   /// In en, this message translates to:
@@ -18924,6 +19002,30 @@ abstract class AppLocalizations {
   /// **'Continue'**
   String get continueToApp;
 
+  /// No description provided for @webCheckoutOpening.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening secure checkout…'**
+  String get webCheckoutOpening;
+
+  /// No description provided for @webCheckoutWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your payment in the new tab. This window will update automatically once it\'s done.'**
+  String get webCheckoutWaiting;
+
+  /// No description provided for @webCheckoutTimeout.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t confirm your payment yet. If you completed it, your balance will update shortly.'**
+  String get webCheckoutTimeout;
+
+  /// No description provided for @webCheckoutFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t start checkout. Please try again.'**
+  String get webCheckoutFailed;
+
   /// No description provided for @groupNewGroup.
   ///
   /// In en, this message translates to:
@@ -19427,6 +19529,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No groups found'**
   String get groupNoSearchResults;
+
+  /// No description provided for @groupMyTags.
+  ///
+  /// In en, this message translates to:
+  /// **'My tags'**
+  String get groupMyTags;
+
+  /// No description provided for @groupMyTagsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Private — only you can see these'**
+  String get groupMyTagsSubtitle;
+
+  /// No description provided for @groupNoTagsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No tags yet'**
+  String get groupNoTagsYet;
+
+  /// No description provided for @groupTagsEditTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit my tags'**
+  String get groupTagsEditTitle;
+
+  /// No description provided for @groupAddTagHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a tag'**
+  String get groupAddTagHint;
+
+  /// No description provided for @groupTagsSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get groupTagsSave;
+
+  /// No description provided for @groupTagsSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Tags saved'**
+  String get groupTagsSaved;
+
+  /// No description provided for @groupTagsSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save tags'**
+  String get groupTagsSaveFailed;
+
+  /// No description provided for @groupTagsLimitReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Tag limit reached'**
+  String get groupTagsLimitReached;
 
   /// No description provided for @groupTranslationSettings.
   ///

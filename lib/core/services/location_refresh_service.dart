@@ -3,6 +3,9 @@ import 'package:flutter/foundation.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
+import '../../features/profile/data/models/profile_model.dart'
+    show normalizeCountryName;
+
 /// Silently refreshes the current user's GPS location in Firestore.
 ///
 /// Used on pull-to-refresh in discovery so distance sorting and country
@@ -61,7 +64,7 @@ class LocationRefreshService {
               place.subAdministrativeArea ??
               place.administrativeArea ??
               '';
-          country = place.country ?? '';
+          country = normalizeCountryName(place.country ?? '');
           displayAddress =
               city.isNotEmpty ? '$city, $country' : country;
         }
@@ -75,7 +78,10 @@ class LocationRefreshService {
         'location.longitude': position.longitude,
       };
       if (city.isNotEmpty) update['location.city'] = city;
-      if (country.isNotEmpty) update['location.country'] = country;
+      if (country.isNotEmpty) {
+        update['location.country'] = country;
+        update['location.countryLower'] = country.toLowerCase();
+      }
       if (displayAddress.isNotEmpty) {
         update['location.displayAddress'] = displayAddress;
       }

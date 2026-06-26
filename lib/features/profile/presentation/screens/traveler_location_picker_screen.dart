@@ -9,6 +9,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
 
 /// Full-screen location picker for Traveler mode.
@@ -70,7 +71,7 @@ class _TravelerLocationPickerScreenState
                 place.administrativeArea ??
                 place.name ??
                 query;
-            final country = place.country ?? '';
+            final country = normalizeCountryName(place.country ?? '');
             final region = place.administrativeArea ?? '';
             results.add(_SearchResult(
               latitude: loc.latitude,
@@ -152,7 +153,7 @@ class _TravelerLocationPickerScreenState
             place.subAdministrativeArea ??
             place.administrativeArea ??
             '';
-        final country = place.country ?? '';
+        final country = normalizeCountryName(place.country ?? '');
         if (city.isEmpty && country.isEmpty) {
           throw Exception('Could not resolve address from coordinates');
         }
@@ -533,7 +534,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
             place.subAdministrativeArea ??
             place.administrativeArea ??
             '';
-        final country = place.country ?? '';
+        final country = normalizeCountryName(place.country ?? '');
         final region = place.administrativeArea ?? '';
 
         if (city.isEmpty && country.isEmpty) {

@@ -464,11 +464,13 @@ class LocationModel extends Location {
       final s = v as String? ?? '';
       return s == 'Unknown' ? '' : s;
     }
+    // Normalize on read too, so legacy docs saved with a locale spelling
+    // (e.g. "Brasil") surface as the canonical English name everywhere.
     return LocationModel(
       latitude: (json['latitude'] as num?)?.toDouble() ?? 0,
       longitude: (json['longitude'] as num?)?.toDouble() ?? 0,
       city: clean(json['city']),
-      country: clean(json['country']),
+      country: normalizeCountryName(clean(json['country'])),
       displayAddress: clean(json['displayAddress']),
     );
   }
@@ -686,7 +688,9 @@ final Map<String, String> _countryNormalizationMap = {
   'maroc': 'Morocco',
   'tunisie': 'Tunisia',
   // Portuguese locale
+  'brasil': 'Brazil',
   'estados unidos': 'United States',
+  'estados unidos da américa': 'United States',
   'reino unido': 'United Kingdom',
   'alemanha': 'Germany',
   'frança': 'France',

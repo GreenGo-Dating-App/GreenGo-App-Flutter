@@ -4,6 +4,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/data/models/profile_model.dart'
+    show normalizeCountryName;
 import '../../../profile/domain/entities/location.dart';
 
 /// Event location picker — shows a map to drop a pin, or search/type an address.
@@ -51,7 +53,7 @@ class _EventLocationPickerScreenState extends State<EventLocationPickerScreen> {
       if (placemarks.isNotEmpty && mounted) {
         final pl = placemarks.first;
         final city = pl.locality ?? pl.subAdministrativeArea ?? '';
-        final country = pl.country ?? '';
+        final country = normalizeCountryName(pl.country ?? '');
         setState(() {
           _city = city;
           _country = country;

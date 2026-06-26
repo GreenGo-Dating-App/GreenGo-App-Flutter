@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 
@@ -52,6 +53,9 @@ class ProductCatalog {
   /// Map a canonical app product ID to the store ID for the current platform.
   /// iOS prefixes with `subscription_`; Android uses the bespoke Play IDs.
   static String storeId(String canonicalId) {
+    // Web (Stripe) uses the canonical IDs directly — and `Platform` isn't
+    // available on web, so guard before touching it.
+    if (kIsWeb) return canonicalId;
     if (Platform.isIOS) return 'subscription_$canonicalId';
     return _androidIds[canonicalId] ?? canonicalId;
   }

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
+import '../../data/datasources/group_tags_service.dart';
 import '../bloc/groups_bloc.dart';
 import '../bloc/groups_event.dart';
 import '../bloc/groups_state.dart';
@@ -28,10 +31,51 @@ class _GroupsScreenState extends State<GroupsScreen> {
   final _searchController = TextEditingController();
   String _query = '';
 
+  // Per-user PRIVATE group tags (groupId -> tags) and the active tag filter.
+  final _tagsService = GroupTagsService();
+  StreamSubscription<Map<String, List<String>>>? _tagsSub;
+  Map<String, List<String>> _tags = const {};
+  final Set<String> _selectedTags = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _tagsSub = _tagsService.watchAll(widget.userId).listen((tags) {
+      if (!mounted) return;
+      setState(() {
+        _tags = tags;
+        // Drop any selected tag that no longer exists.
+        final all = tags.values.expand((t) => t).toSet();
+        _selectedTags.removeWhere((t) => !all.contains(t));
+      });
+    });
+  }
+
   @override
   void dispose() {
     _searchController.dispose();
+    _tagsSub?.cancel();
     super.dispose();
+  }
+
+  /// All distinct tags the user has applied across their groups, sorted.
+  List<String> get _allTags {
+    final set = <String>{};
+    for (final list in _tags.values) {
+      set.addAll(list);
+    }
+    final out = set.toList()
+      ..sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
+    return out;
+  }
+
+  /// A group passes the tag filter if no tags are selected, or it carries any
+  /// of the selected tags (OR semantics).
+  bool _matchesTagFilter(String groupId) {
+    if (_selectedTags.isEmpty) return true;
+    final groupTags = _tags[groupId];
+    if (groupTags == null) return false;
+    return groupTags.any(_selectedTags.contains);
   }
 
   @override
@@ -91,6 +135,41 @@ class _GroupsScreenState extends State<GroupsScreen> {
                 ),
               ),
             ),
+            // Personal tag filter — chips of the user's own tags. Only the
+            // current user sees these; selecting filters their groups list.
+            if (_allTags.isNotEmpty)
+              SizedBox(
+                height: 44,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  children: [
+                    for (final tag in _allTags)
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: FilterChip(
+                          label: Text(tag),
+                          selected: _selectedTags.contains(tag),
+                          showCheckmark: false,
+                          selectedColor: AppColors.richGold,
+                          backgroundColor: AppColors.backgroundCard,
+                          labelStyle: TextStyle(
+                            color: _selectedTags.contains(tag)
+                                ? AppColors.deepBlack
+                                : AppColors.textSecondary,
+                          ),
+                          onSelected: (sel) => setState(() {
+                            if (sel) {
+                              _selectedTags.add(tag);
+                            } else {
+                              _selectedTags.remove(tag);
+                            }
+                          }),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
             Expanded(
               child: BlocBuilder<GroupsBloc, GroupsState>(
                 builder: (context, state) {
@@ -123,13 +202,13 @@ class _GroupsScreenState extends State<GroupsScreen> {
                   }
                   final allGroups =
                       state is GroupsLoaded ? state.groups : [];
-                  final groups = _query.isEmpty
-                      ? allGroups
-                      : allGroups
-                          .where((g) => (g.groupInfo?.name ?? '')
-                              .toLowerCase()
-                              .contains(_query))
-                          .toList();
+                  final groups = allGroups.where((g) {
+                    final nameOk = _query.isEmpty ||
+                        (g.groupInfo?.name ?? '')
+                            .toLowerCase()
+                            .contains(_query);
+                    return nameOk && _matchesTagFilter(g.conversationId);
+                  }).toList();
                   if (groups.isEmpty) {
                     return Center(
                       child: Text(l10n.groupNoSearchResults,
@@ -145,7 +224,9 @@ class _GroupsScreenState extends State<GroupsScreen> {
                       final g = groups[index];
                       final name = g.groupInfo?.name ?? 'Group';
                       final unread = g.unreadCountFor(userId);
+                      final groupTags = _tags[g.conversationId] ?? const [];
                       return ListTile(
+                        isThreeLine: groupTags.isNotEmpty,
                         leading: _GroupAvatar(
                           groupId: g.conversationId,
                           inboxPhotoUrl: g.groupInfo?.photoUrl,
@@ -156,11 +237,44 @@ class _GroupsScreenState extends State<GroupsScreen> {
                             overflow: TextOverflow.ellipsis,
                             style:
                                 const TextStyle(color: AppColors.textPrimary)),
-                        subtitle: Text(
-                          g.lastMessagePreview,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(color: AppColors.textSecondary),
+                        subtitle: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              g.lastMessagePreview,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                  color: AppColors.textSecondary),
+                            ),
+                            if (groupTags.isNotEmpty)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4),
+                                child: Wrap(
+                                  spacing: 4,
+                                  runSpacing: 2,
+                                  children: [
+                                    for (final t in groupTags)
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 8, vertical: 2),
+                                        decoration: BoxDecoration(
+                                          color: AppColors.backgroundCard,
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: Text(
+                                          t,
+                                          style: const TextStyle(
+                                            color: AppColors.richGold,
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                          ],
                         ),
                         trailing: unread > 0
                             ? CircleAvatar(

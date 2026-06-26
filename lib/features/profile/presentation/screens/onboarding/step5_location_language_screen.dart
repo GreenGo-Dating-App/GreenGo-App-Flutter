@@ -9,6 +9,7 @@ import 'package:geolocator/geolocator.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../../generated/app_localizations.dart';
+import '../../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../../domain/entities/location.dart' as location_entity;
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -122,7 +123,7 @@ class _Step5LocationLanguageScreenState
             ?? placemark.administrativeArea
             ?? placemark.name
             ?? '';
-        final country = placemark.country ?? '';
+        final country = normalizeCountryName(placemark.country ?? '');
         final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
         setState(() {

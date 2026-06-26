@@ -8,6 +8,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
@@ -107,7 +108,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           place.administrativeArea,
           place.name,
         ]);
-        final country = place.country ?? '';
+        final country = normalizeCountryName(place.country ?? '');
         if (city.isEmpty && country.isEmpty) {
           throw Exception('Could not resolve address');
         }

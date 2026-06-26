@@ -759,6 +759,13 @@ service cloud.firestore {
       }
     }
 
+    // Per-user PRIVATE group tags — each user's own labels for their groups.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_group_tags/{userId} = { groupTags: { groupId: [tag, ...] } }
+    match /user_group_tags/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
     // ============================================================================
     // EXTERNAL EVENTS (Tiqets/Viator experiences) — read-only, CF-written only
     // ============================================================================

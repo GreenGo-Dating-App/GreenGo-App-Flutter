@@ -15,6 +15,7 @@ import '../../domain/entities/group_info.dart';
 import '../../domain/usecases/get_group_members.dart';
 import '../../domain/usecases/group_membership.dart';
 import '../../domain/usecases/report_user.dart';
+import '../widgets/group_tags_editor.dart';
 
 /// Group Info Screen — members list, roles, and leave action.
 ///
@@ -143,6 +144,10 @@ class GroupInfoScreen extends StatelessWidget {
                   ),
                 );
               }),
+              const Divider(),
+              // My personal (private) tags for this group — only the current
+              // user sees these; they don't affect the group or other members.
+              MyGroupTagsTile(groupId: groupId, userId: currentUserId),
               const Divider(),
               if (isAdmin)
                 ListTile(

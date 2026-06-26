@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,6 +11,7 @@ import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
+import '../../features/coins/presentation/widgets/web_checkout_dialog.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
@@ -71,7 +73,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   static const String _canonicalProductId = ProductCatalog.baseMembership;
   /// Per-platform store ID used to query and purchase.
   String get _storeProductId => ProductCatalog.baseStoreId;
-  final InAppPurchase _iap = InAppPurchase.instance;
+  // Null on web (no IAP plugin) — all purchase paths are guarded.
+  InAppPurchase? _iap;
   StreamSubscription<List<PurchaseDetails>>? _sub;
   bool _loading = false;
   bool _retryAfterConsume = false;
@@ -89,12 +92,15 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   @override
   void initState() {
     super.initState();
-    _sub = _iap.purchaseStream.listen(_onPurchaseUpdated);
-    // Restore old purchases on init to consume any unconsumed ones
-    // This clears "already owned" state from previous sessions
-    _consumeOldPurchases();
-    // Load the store's localized price so the UI never shows a hard-coded value.
-    _loadYearlyPrice();
+    // IAP only exists on mobile; web keeps _iap null and shows "not available".
+    if (!kIsWeb) {
+      try {
+        _iap = InAppPurchase.instance;
+        _sub = _iap!.purchaseStream.listen(_onPurchaseUpdated);
+        _consumeOldPurchases();
+        _loadYearlyPrice();
+      } catch (_) {/* plugin unavailable */}
+    }
 
     // Shimmer effect — continuous sweep
     _shimmerController = AnimationController(
@@ -125,9 +131,9 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
 
   /// Restore and consume any old unconsumed purchases to clear "already owned" state
   Future<void> _consumeOldPurchases() async {
-    if (!Platform.isAndroid) return;
+    if (_iap == null || kIsWeb || !Platform.isAndroid) return;
     try {
-      await _iap.restorePurchases();
+      await _iap!.restorePurchases();
     } catch (e) {
       debugPrint('[BaseMembership] restorePurchases error (non-critical): $e');
     }
@@ -137,8 +143,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   /// subscription, so it must be completed (acknowledged) but NEVER consumed —
   /// consuming a subscription triggers a Google auto-refund.
   Future<void> _completeAndConsume(PurchaseDetails p) async {
-    if (p.pendingCompletePurchase) {
-      await _iap.completePurchase(p);
+    if (_iap != null && p.pendingCompletePurchase) {
+      await _iap!.completePurchase(p);
     }
   }
 
@@ -297,8 +303,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   /// price is ALWAYS visible (e.g. in BRL for Brazil).
   Future<void> _loadYearlyPrice() async {
     try {
-      if (await _iap.isAvailable()) {
-        final resp = await _iap.queryProductDetails({_storeProductId});
+      if (_iap != null && await _iap!.isAvailable()) {
+        final resp = await _iap!.queryProductDetails({_storeProductId});
         if (resp.productDetails.isNotEmpty) {
           final label =
               ProductCatalog.recurringPriceLabel(_selectBaseOffer(resp.productDetails));
@@ -348,17 +354,27 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
 
   // ── Trigger IAP ──────────────────────────────────────────────────────
   Future<void> _subscribe() async {
+    // Web has no IAP plugin → buy the base membership via Stripe Checkout.
+    if (kIsWeb || _iap == null) {
+      final ok = await WebCheckoutDialog.show(context, _storeProductId);
+      if (ok == true && mounted) {
+        widget.coinBloc?.add(LoadCoinBalance(widget.userId));
+        widget.profileBloc?.add(ProfileLoadRequested(userId: widget.userId));
+        Navigator.of(context).pop(true);
+      }
+      return;
+    }
     setState(() => _loading = true);
 
     try {
-      final available = await _iap.isAvailable();
+      final available = await _iap!.isAvailable();
       if (!available) {
         _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
         setState(() => _loading = false);
         return;
       }
 
-      final response = await _iap.queryProductDetails({_storeProductId});
+      final response = await _iap!.queryProductDetails({_storeProductId});
       if (response.productDetails.isEmpty) {
         final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
         final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
@@ -380,7 +396,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
         productDetails: product,
         applicationUserName: widget.userId,
       );
-      final ok = await _iap.buyNonConsumable(purchaseParam: param);
+      final ok = await _iap!.buyNonConsumable(purchaseParam: param);
 
       if (!ok && mounted) {
         _showError(AppLocalizations.of(context)!.shopFailedToInitiate);
@@ -415,9 +431,10 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   /// entitlement itself lives in Firestore keyed to the user, so we refresh the
   /// blocs afterward. Restored subs are acknowledged via [_handleRestore].
   Future<void> _restore() async {
+    if (kIsWeb || _iap == null) return;
     setState(() => _isRestoring = true);
     try {
-      await _iap.restorePurchases();
+      await _iap!.restorePurchases();
       await Future.delayed(const Duration(seconds: 2));
       if (mounted) {
         widget.coinBloc?.add(LoadCoinBalance(widget.userId));
