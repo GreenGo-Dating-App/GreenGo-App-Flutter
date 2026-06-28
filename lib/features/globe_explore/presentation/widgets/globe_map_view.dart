@@ -233,30 +233,38 @@ class _GlobeMapViewState extends State<GlobeMapView>
 
   // ── Clustering logic ──────────────────────────────────────────────
 
+  /// Cap on how many elements (profiles/events) render at once. Only the
+  /// [_maxVisibleMarkers] nearest to the map centre are shown; zooming in
+  /// shrinks the viewport (fewer candidates) and splits clusters, so more
+  /// individual items become visible.
+  static const int _maxVisibleMarkers = 100;
+
   List<Marker> _buildMarkers(AppLocalizations l10n) {
-    final markers = <Marker>[];
+    // Dynamic markers (one active layer at a time) — capped to 100, nearest
+    // to the centre first. Each entry carries its point so we can sort/cap.
+    final dynamicMarkers = <(LatLng, Marker)>[];
 
     // Cluster matched users based on current zoom level
     if (widget.showMatched) {
       final threshold = _clusterThresholdForZoom(_currentZoom);
       final clusters = _clusterUsers(widget.data.matchedUsers, threshold);
       for (final cluster in clusters) {
-        if (cluster.length == 1) {
-          markers.add(_buildMatchMarker(cluster.first));
-        } else {
-          markers.add(_buildClusterMarker(cluster));
-        }
+        final p = LatLng(cluster.first.pinLatitude, cluster.first.pinLongitude);
+        dynamicMarkers.add((
+          p,
+          cluster.length == 1
+              ? _buildMatchMarker(cluster.first)
+              : _buildClusterMarker(cluster),
+        ));
       }
     }
-
-    // (Country-aggregate event circles removed — events are plotted per GPS
-    //  coordinate below, loaded for the current viewport.)
 
     // Precise native-event pins (exact coordinates).
     for (final e in widget.preciseEvents) {
       final lat = e.latitude, lng = e.longitude;
       if (lat == null || lng == null) continue;
-      markers.add(_buildPreciseEventMarker(e, LatLng(lat, lng)));
+      final p = LatLng(lat, lng);
+      dynamicMarkers.add((p, _buildPreciseEventMarker(e, p)));
     }
 
     // External experiences/attractions — individual position pins. Grouping
@@ -275,11 +283,34 @@ class _GlobeMapViewState extends State<GlobeMapView>
         (groups[key] ??= <ExternalEvent>[]).add(e);
       }
       for (final g in groups.values) {
-        markers.add(_buildExternalMarker(g, LatLng(g.first.lat!, g.first.lng!)));
+        final p = LatLng(g.first.lat!, g.first.lng!);
+        dynamicMarkers.add((p, _buildExternalMarker(g, p)));
       }
     }
 
-    // Current user always on top, never clustered
+    // Keep only the nearest [_maxVisibleMarkers] to the current map centre.
+    if (dynamicMarkers.length > _maxVisibleMarkers) {
+      LatLng? center;
+      try {
+        center = _mapController.camera.center;
+      } catch (_) {/* camera not ready — fall back to source order */}
+      if (center != null) {
+        final c = center;
+        dynamicMarkers.sort((a, b) {
+          double d(LatLng p) {
+            final dy = p.latitude - c.latitude;
+            final dx = p.longitude - c.longitude;
+            return dy * dy + dx * dx;
+          }
+          return d(a.$1).compareTo(d(b.$1));
+        });
+      }
+      dynamicMarkers.removeRange(_maxVisibleMarkers, dynamicMarkers.length);
+    }
+
+    final markers = [for (final m in dynamicMarkers) m.$2];
+
+    // Current user always on top, never clustered or capped.
     markers.add(_buildCurrentUserMarker(widget.data.currentUser, l10n));
 
     return markers;

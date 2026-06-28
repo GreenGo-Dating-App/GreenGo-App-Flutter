@@ -389,6 +389,26 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 color: AppColors.richGold, fontWeight: FontWeight.bold)),
       );
 
+  /// Layers are mutually exclusive — selecting one turns all the others off
+  /// ("if my network is on, all the others must be off"). Tapping the active
+  /// layer again turns it off (none selected).
+  void _selectLayer(String layer) {
+    setState(() {
+      final turningOff = (layer == 'contacts' && _showContacts) ||
+          (layer == 'community' && _showCommunityEvents) ||
+          (layer == 'live' && _showLiveEvents) ||
+          (layer == 'attractions' && _showAttractions) ||
+          (layer == 'experiences' && _showExperiences);
+      _showContacts = !turningOff && layer == 'contacts';
+      _showCommunityEvents = !turningOff && layer == 'community';
+      _showLiveEvents = !turningOff && layer == 'live';
+      _showAttractions = !turningOff && layer == 'attractions';
+      _showExperiences = !turningOff && layer == 'experiences';
+    });
+    // Reload so the now-disabled event sources are cleared from the map.
+    _reloadViewport();
+  }
+
   /// Vertical layer-toggle panel shown on the right of the map.
   Widget _buildLayerPanel(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -418,28 +438,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          btn(Icons.people, _showContacts, l10n.globeLayerContacts, () {
-            setState(() => _showContacts = !_showContacts);
-          }),
+          btn(Icons.people, _showContacts, l10n.globeLayerContacts,
+              () => _selectLayer('contacts')),
           btn(Icons.event, _showCommunityEvents,
-              l10n.globeLayerCommunityEvents, () {
-            setState(() => _showCommunityEvents = !_showCommunityEvents);
-            _reloadViewport();
-          }),
+              l10n.globeLayerCommunityEvents, () => _selectLayer('community')),
           btn(Icons.confirmation_number, _showLiveEvents,
-              l10n.globeLayerLiveEvents, () {
-            setState(() => _showLiveEvents = !_showLiveEvents);
-            _reloadViewport();
-          }),
-          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions, () {
-            setState(() => _showAttractions = !_showAttractions);
-            _reloadViewport();
-          }),
+              l10n.globeLayerLiveEvents, () => _selectLayer('live')),
+          btn(Icons.museum, _showAttractions, l10n.eventsTabAttractions,
+              () => _selectLayer('attractions')),
           btn(Icons.local_activity, _showExperiences,
-              l10n.globeLayerExperiences, () {
-            setState(() => _showExperiences = !_showExperiences);
-            _reloadViewport();
-          }),
+              l10n.globeLayerExperiences, () => _selectLayer('experiences')),
         ],
       ),
     );
@@ -514,11 +522,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   onViewportChanged: _loadViewport,
                   preciseEvents:
                       _showCommunityEvents ? _viewportCommunity : const [],
+                  // External layers (attractions/experiences/live) are gated by
+                  // their toggle so deselecting clears them immediately.
                   onPreciseEventTapped: (e) => Navigator.of(context).push(
                     EventDetailLoaderScreen.route(
                         eventId: e.id, currentUserId: userId),
                   ),
-                  externalMarkers: _viewportExternal,
+                  externalMarkers:
+                      (_showAttractions || _showExperiences || _showLiveEvents)
+                          ? _viewportExternal
+                          : const [],
                   onExternalTapped: (e) {
                     if (e.bookingUrl.isNotEmpty) {
                       launchUrl(Uri.parse(e.bookingUrl),
