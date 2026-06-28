@@ -515,31 +515,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
               children: [
                 GlobeMapView(
                   data: data,
-                  showMatched: _showContacts,
+                  // My world map shows only my network (people) — events are
+                  // intentionally excluded to keep the map uncluttered.
+                  showMatched: true,
                   showDiscovery: false,
-                  // Per-coordinate dots loaded for the visible viewport (no
-                  // country aggregation).
-                  onViewportChanged: _loadViewport,
-                  preciseEvents:
-                      _showCommunityEvents ? _viewportCommunity : const [],
-                  // External layers (attractions/experiences/live) are gated by
-                  // their toggle so deselecting clears them immediately.
-                  onPreciseEventTapped: (e) => Navigator.of(context).push(
-                    EventDetailLoaderScreen.route(
-                        eventId: e.id, currentUserId: userId),
-                  ),
-                  externalMarkers:
-                      (_showAttractions || _showExperiences || _showLiveEvents)
-                          ? _viewportExternal
-                          : const [],
-                  onExternalTapped: (e) {
-                    if (e.bookingUrl.isNotEmpty) {
-                      launchUrl(Uri.parse(e.bookingUrl),
-                          mode: LaunchMode.externalApplication);
-                    }
-                  },
-                  onExternalGroupTapped: (items) =>
-                      _showItemsSheet(context, items),
                   flyToCountry: flyToCountry,
                   onPinTapped: (tappedUserId, pinType) {
                     context.read<GlobeBloc>().add(
@@ -561,12 +540,6 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   onClusterTapped: (users) {
                     _showClusterSheet(context, users);
                   },
-                ),
-                // Vertical layer toggles on the right.
-                Positioned(
-                  right: 8,
-                  top: 12,
-                  child: _buildLayerPanel(context),
                 ),
                 // Match count badge
                 Positioned(
