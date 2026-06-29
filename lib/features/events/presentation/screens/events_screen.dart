@@ -5,11 +5,13 @@ import 'package:intl/intl.dart';
 import 'dart:io';
 import 'dart:math' as math;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
@@ -1698,67 +1700,84 @@ class EventDetailsScreen extends StatelessWidget {
                   Builder(builder: (context) {
                     // Respect attendee privacy: hide invisible / organizer-only
                     // attendees from everyone except themselves and the organizer.
+                    // Show only the first 100 going attendees.
                     final visibleGoing = event.attendees
                         .where((a) =>
                             a.status == RSVPStatus.going &&
                             a.isVisibleTo(currentUserId, event.organizerId))
+                        .take(100)
                         .toList();
+                    if (visibleGoing.isEmpty) {
+                      return SizedBox(
+                        height: 80,
+                        child: Center(
+                          child: Text(
+                            AppLocalizations.of(context)!.eventsNoAttendeesYet,
+                            style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                      );
+                    }
+                    // Resolve each attendee's CURRENT profile photo/name (the
+                    // snapshotted userPhotoUrl is often missing), respecting
+                    // anonymity.
                     return SizedBox(
                       height: 80,
-                      child: visibleGoing.isEmpty
-                          ? Center(
-                              child: Text(
-                                AppLocalizations.of(context)!
-                                    .eventsNoAttendeesYet,
-                                style: const TextStyle(
-                                  color: AppColors.textSecondary,
-                                  fontSize: 13,
+                      child: FutureBuilder<Map<String, UserBrief>>(
+                        future: UserDirectoryService.instance.resolve(
+                            visibleGoing.map((a) => a.userId)),
+                        builder: (context, dirSnap) {
+                          final dir =
+                              dirSnap.data ?? const <String, UserBrief>{};
+                          return ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: visibleGoing.length,
+                            itemBuilder: (context, index) {
+                              final attendee = visibleGoing[index];
+                              final name = attendee.displayNameFor(
+                                  currentUserId, event.organizerId);
+                              final anon = attendee.isAnonymous &&
+                                  currentUserId != attendee.userId &&
+                                  currentUserId != event.organizerId;
+                              final photo = anon
+                                  ? null
+                                  : (attendee.userPhotoUrl ??
+                                      dir[attendee.userId]?.photoUrl);
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: Column(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 28,
+                                      backgroundColor: AppColors.backgroundCard,
+                                      backgroundImage: (photo != null &&
+                                              photo.isNotEmpty)
+                                          ? CachedNetworkImageProvider(photo)
+                                          : null,
+                                      child: (photo == null || photo.isEmpty)
+                                          ? Text(name.isNotEmpty
+                                              ? name[0].toUpperCase()
+                                              : '?')
+                                          : null,
+                                    ),
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      name.split(' ').first,
+                                      style: const TextStyle(
+                                        color: AppColors.textSecondary,
+                                        fontSize: 11,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
-                            )
-                          : ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: visibleGoing.length,
-                              itemBuilder: (context, index) {
-                                final attendee = visibleGoing[index];
-                                final name = attendee.displayNameFor(
-                                    currentUserId, event.organizerId);
-                                final anon = attendee.isAnonymous &&
-                                    currentUserId != attendee.userId &&
-                                    currentUserId != event.organizerId;
-                                return Padding(
-                                  padding: const EdgeInsets.only(right: 12),
-                                  child: Column(
-                                    children: [
-                                      CircleAvatar(
-                                        radius: 28,
-                                        backgroundImage: (!anon &&
-                                                attendee.userPhotoUrl != null)
-                                            ? NetworkImage(
-                                                attendee.userPhotoUrl!)
-                                            : null,
-                                        backgroundColor:
-                                            AppColors.backgroundCard,
-                                        child: (anon ||
-                                                attendee.userPhotoUrl == null)
-                                            ? Text(name.isNotEmpty
-                                                ? name[0].toUpperCase()
-                                                : '?')
-                                            : null,
-                                      ),
-                                      const SizedBox(height: 4),
-                                      Text(
-                                        name.split(' ').first,
-                                        style: const TextStyle(
-                                          color: AppColors.textSecondary,
-                                          fontSize: 11,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                );
-                              },
-                            ),
+                              );
+                            },
+                          );
+                        },
+                      ),
                     );
                   }),
                   const SizedBox(height: 100),
