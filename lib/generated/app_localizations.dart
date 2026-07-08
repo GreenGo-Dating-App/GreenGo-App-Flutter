@@ -19739,6 +19739,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Community events'**
   String get globeLayerCommunityEvents;
+
+  /// No description provided for @webMapUnavailableTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Interactive map available on the mobile app'**
+  String get webMapUnavailableTitle;
+
+  /// No description provided for @webMapUnavailableBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for an address to set your location.'**
+  String get webMapUnavailableBody;
 }
 
 class _AppLocalizationsDelegate

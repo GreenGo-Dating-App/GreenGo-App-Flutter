@@ -1,8 +1,10 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart' hide Location;
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/web_map_placeholder.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/models/profile_model.dart'
     show normalizeCountryName;
@@ -120,19 +122,22 @@ class _EventLocationPickerScreenState extends State<EventLocationPickerScreen> {
       ),
       body: Stack(
         children: [
-          GoogleMap(
-            initialCameraPosition: CameraPosition(target: _picked, zoom: 12),
-            onMapCreated: (c) => _controller = c,
-            onTap: _onMapTap,
-            markers: {
-              Marker(
-                markerId: const MarkerId('picked'),
-                position: _picked,
-              ),
-            },
-            myLocationButtonEnabled: true,
-            myLocationEnabled: true,
-          ),
+          if (kIsWeb)
+            const Positioned.fill(child: WebMapPlaceholder())
+          else
+            GoogleMap(
+              initialCameraPosition: CameraPosition(target: _picked, zoom: 12),
+              onMapCreated: (c) => _controller = c,
+              onTap: _onMapTap,
+              markers: {
+                Marker(
+                  markerId: const MarkerId('picked'),
+                  position: _picked,
+                ),
+              },
+              myLocationButtonEnabled: true,
+              myLocationEnabled: true,
+            ),
           // Search / manual address
           Positioned(
             top: 8,

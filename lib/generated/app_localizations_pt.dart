@@ -11171,6 +11171,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get globeLayerCommunityEvents => 'Eventos da comunidade';
+
+  @override
+  String get webMapUnavailableTitle =>
+      'Interactive map available on the mobile app';
+
+  @override
+  String get webMapUnavailableBody =>
+      'Search for an address to set your location.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).

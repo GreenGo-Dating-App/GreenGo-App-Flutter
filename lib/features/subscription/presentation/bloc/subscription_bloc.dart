@@ -53,7 +53,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
 
   /// Restore and consume any old unconsumed purchases to clear "already owned" state
   Future<void> _consumeOldPurchases() async {
-    if (!Platform.isAndroid) return;
+    if (kIsWeb || !Platform.isAndroid) return;
     try {
       await inAppPurchase.restorePurchases();
     } catch (e) {

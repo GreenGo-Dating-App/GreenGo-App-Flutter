@@ -47,6 +47,8 @@ class SubscriptionRemoteDataSource {
 
   /// Initialize in-app purchases (Points 146-147)
   Future<bool> initializePurchases() async {
+    // Web has no in-app-purchase plugin — payments go through Stripe Checkout.
+    if (kIsWeb) return false;
     final available = await inAppPurchase.isAvailable();
     if (!available) {
       throw Exception('In-app purchases not available');

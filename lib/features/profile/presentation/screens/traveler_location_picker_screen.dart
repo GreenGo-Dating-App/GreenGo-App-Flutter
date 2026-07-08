@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
@@ -7,6 +8,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/widgets/web_map_placeholder.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
@@ -605,29 +607,31 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                 bottomLeft: Radius.circular(16),
                 bottomRight: Radius.circular(16),
               ),
-              child: GoogleMap(
-                initialCameraPosition: CameraPosition(
-                  target: _selectedLatLng,
-                  zoom: 10,
-                ),
-                onMapCreated: (controller) {
-                  _mapController = controller;
-                },
-                onTap: _onMapTapped,
-                markers: {
-                  Marker(
-                    markerId: const MarkerId('selected'),
-                    position: _selectedLatLng,
-                    icon: BitmapDescriptor.defaultMarkerWithHue(
-                      BitmapDescriptor.hueAzure,
+              child: kIsWeb
+                  ? const WebMapPlaceholder()
+                  : GoogleMap(
+                      initialCameraPosition: CameraPosition(
+                        target: _selectedLatLng,
+                        zoom: 10,
+                      ),
+                      onMapCreated: (controller) {
+                        _mapController = controller;
+                      },
+                      onTap: _onMapTapped,
+                      markers: {
+                        Marker(
+                          markerId: const MarkerId('selected'),
+                          position: _selectedLatLng,
+                          icon: BitmapDescriptor.defaultMarkerWithHue(
+                            BitmapDescriptor.hueAzure,
+                          ),
+                        ),
+                      },
+                      myLocationEnabled: true,
+                      myLocationButtonEnabled: true,
+                      zoomControlsEnabled: true,
+                      mapToolbarEnabled: false,
                     ),
-                  ),
-                },
-                myLocationEnabled: true,
-                myLocationButtonEnabled: true,
-                zoomControlsEnabled: true,
-                mapToolbarEnabled: false,
-              ),
             ),
           ),
 
@@ -814,29 +818,31 @@ class _SelectedLocationCard extends StatelessWidget {
                   color: const Color(0xFF1E88E5).withOpacity(0.3)),
             ),
             clipBehavior: Clip.antiAlias,
-            child: GoogleMap(
-              initialCameraPosition: CameraPosition(
-                target: LatLng(location.latitude, location.longitude),
-                zoom: 12,
-              ),
-              markers: {
-                Marker(
-                  markerId: const MarkerId('selected'),
-                  position: LatLng(location.latitude, location.longitude),
-                  icon: BitmapDescriptor.defaultMarkerWithHue(
-                    BitmapDescriptor.hueAzure,
+            child: kIsWeb
+                ? const WebMapPlaceholder(compact: true)
+                : GoogleMap(
+                    initialCameraPosition: CameraPosition(
+                      target: LatLng(location.latitude, location.longitude),
+                      zoom: 12,
+                    ),
+                    markers: {
+                      Marker(
+                        markerId: const MarkerId('selected'),
+                        position: LatLng(location.latitude, location.longitude),
+                        icon: BitmapDescriptor.defaultMarkerWithHue(
+                          BitmapDescriptor.hueAzure,
+                        ),
+                      ),
+                    },
+                    liteModeEnabled: true,
+                    zoomControlsEnabled: false,
+                    scrollGesturesEnabled: false,
+                    rotateGesturesEnabled: false,
+                    tiltGesturesEnabled: false,
+                    zoomGesturesEnabled: false,
+                    myLocationButtonEnabled: false,
+                    mapToolbarEnabled: false,
                   ),
-                ),
-              },
-              liteModeEnabled: true,
-              zoomControlsEnabled: false,
-              scrollGesturesEnabled: false,
-              rotateGesturesEnabled: false,
-              tiltGesturesEnabled: false,
-              zoomGesturesEnabled: false,
-              myLocationButtonEnabled: false,
-              mapToolbarEnabled: false,
-            ),
           ),
           const SizedBox(height: 16),
           // Location info card

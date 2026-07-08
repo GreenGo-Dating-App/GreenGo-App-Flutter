@@ -11068,4 +11068,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get globeLayerCommunityEvents => 'Community events';
+
+  @override
+  String get webMapUnavailableTitle =>
+      'Interactive map available on the mobile app';
+
+  @override
+  String get webMapUnavailableBody =>
+      'Search for an address to set your location.';
 }
