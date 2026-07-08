@@ -11201,4 +11201,21 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get webMapUnavailableBody =>
       'Search for an address to set your location.';
+
+  @override
+  String get webLocationPickerTitle => 'Pick your location';
+
+  @override
+  String get webLocationSearchHint => 'Search city or address';
+
+  @override
+  String get webLocationConfirm => 'Use this location';
+
+  @override
+  String get webLocationTapHint => 'Tap the map to drop a pin';
+
+  @override
+  String webLocationMonthlyLimit(String date) {
+    return 'You can update your location once a month on the web. Next update available $date.';
+  }
 }

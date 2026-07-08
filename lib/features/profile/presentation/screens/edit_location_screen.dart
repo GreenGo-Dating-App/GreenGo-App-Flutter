@@ -1,11 +1,14 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/utils/web_location_limit.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
@@ -14,6 +17,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import 'web_location_picker_screen.dart';
 
 class EditLocationScreen extends StatefulWidget {
 
@@ -31,6 +35,9 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
   List<String> _selectedLanguages = [];
   bool _isLoadingLocation = false;
   bool _isSaving = false;
+  // On web the location can only be changed once per month; this flags a
+  // web-picked change so we can stamp the limit after a successful save.
+  bool _webLocationChanged = false;
 
   final List<String> _availableLanguages = [
     'English',
@@ -138,6 +145,36 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     }
   }
 
+  /// Web-only: open the flutter_map picker, gated to once per month.
+  Future<void> _pickLocationOnWebMap() async {
+    final l10n = AppLocalizations.of(context)!;
+    final userId = widget.profile.userId;
+
+    final nextAllowed = await WebLocationLimit.nextAllowed(userId);
+    if (nextAllowed != null) {
+      if (!mounted) return;
+      final dateStr = DateFormat.yMMMMd().format(nextAllowed);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.webLocationMonthlyLimit(dateStr)),
+          backgroundColor: AppColors.warningAmber,
+        ),
+      );
+      return;
+    }
+
+    if (!mounted) return;
+    final picked = await Navigator.of(context).push(
+      WebLocationPickerScreen.route(initial: _selectedLocation),
+    );
+    if (picked != null && mounted) {
+      setState(() {
+        _selectedLocation = picked;
+        _webLocationChanged = true;
+      });
+    }
+  }
+
   void _toggleLanguage(String language) {
     setState(() {
       if (_selectedLanguages.contains(language)) {
@@ -192,7 +229,12 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     return BlocListener<ProfileBloc, ProfileState>(
       listener: (context, state) async {
         if (state is ProfileUpdated) {
+          // Stamp the web once-a-month limit only after a successful save.
+          if (kIsWeb && _webLocationChanged) {
+            await WebLocationLimit.markUpdated(widget.profile.userId);
+          }
           // Show success dialog instead of snackbar
+          if (!context.mounted) return;
           await ActionSuccessDialog.showLocationUpdated(context);
           if (context.mounted) {
             Navigator.of(context).pop(state.profile);
@@ -314,8 +356,10 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(
-                      onPressed: _isLoadingLocation ? null : _getCurrentLocation,
-                      icon: _isLoadingLocation
+                      onPressed: kIsWeb
+                          ? _pickLocationOnWebMap
+                          : (_isLoadingLocation ? null : _getCurrentLocation),
+                      icon: (_isLoadingLocation && !kIsWeb)
                           ? const SizedBox(
                               width: 20,
                               height: 20,
@@ -324,8 +368,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                                 color: AppColors.deepBlack,
                               ),
                             )
-                          : const Icon(Icons.my_location),
-                      label: Text(_isLoadingLocation
+                          : Icon(kIsWeb ? Icons.map_outlined : Icons.my_location),
+                      label: Text(_isLoadingLocation && !kIsWeb
                           ? AppLocalizations.of(context)!.profileGettingLocation
                           : AppLocalizations.of(context)!.profileUpdateCurrentLocation),
                       style: ElevatedButton.styleFrom(
