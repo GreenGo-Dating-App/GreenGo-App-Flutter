@@ -19751,6 +19751,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Search for an address to set your location.'**
   String get webMapUnavailableBody;
+
+  /// No description provided for @webLocationPickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick your location'**
+  String get webLocationPickerTitle;
+
+  /// No description provided for @webLocationSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search city or address'**
+  String get webLocationSearchHint;
+
+  /// No description provided for @webLocationConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this location'**
+  String get webLocationConfirm;
+
+  /// No description provided for @webLocationTapHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the map to drop a pin'**
+  String get webLocationTapHint;
+
+  /// No description provided for @webLocationMonthlyLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'You can update your location once a month on the web. Next update available {date}.'**
+  String webLocationMonthlyLimit(String date);
 }
 
 class _AppLocalizationsDelegate

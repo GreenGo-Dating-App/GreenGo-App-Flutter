@@ -85,6 +85,9 @@ dependencies:
   # Interactive feature tour (first-launch tutorial)
   showcaseview: ^4.0.1
 
+  # Networking (web reverse/forward geocoding via Nominatim)
+  http: ^1.6.0
+
   # Local Storage
   shared_preferences: ^2.2.2
   hive: ^2.2.3

@@ -5290,5 +5290,15 @@
   "eventsTabGoing": "Going",
   "globeLayerCommunityEvents": "Community events",
   "webMapUnavailableTitle": "Interactive map available on the mobile app",
-  "webMapUnavailableBody": "Search for an address to set your location."
+  "webMapUnavailableBody": "Search for an address to set your location.",
+  "webLocationPickerTitle": "Pick your location",
+  "webLocationSearchHint": "Search city or address",
+  "webLocationConfirm": "Use this location",
+  "webLocationTapHint": "Tap the map to drop a pin",
+  "webLocationMonthlyLimit": "You can update your location once a month on the web. Next update available {date}.",
+  "@webLocationMonthlyLimit": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  }
 }
