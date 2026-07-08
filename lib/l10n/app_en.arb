@@ -5288,5 +5288,7 @@
   "catOther": "Other",
   "eventsUnlimited": "Unlimited",
   "eventsTabGoing": "Going",
-  "globeLayerCommunityEvents": "Community events"
+  "globeLayerCommunityEvents": "Community events",
+  "webMapUnavailableTitle": "Interactive map available on the mobile app",
+  "webMapUnavailableBody": "Search for an address to set your location."
 }
