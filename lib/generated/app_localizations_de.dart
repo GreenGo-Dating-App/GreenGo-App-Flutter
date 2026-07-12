@@ -12374,4 +12374,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get businessEventsCancelled => 'Event cancelled';
+
+  @override
+  String get businessPausedTitle => 'Business paused';
+
+  @override
+  String get businessPausedSubtitle =>
+      'Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.';
+
+  @override
+  String get businessReactivate => 'Renew Platinum';
 }

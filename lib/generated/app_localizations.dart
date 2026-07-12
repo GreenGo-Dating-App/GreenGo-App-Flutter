@@ -21761,6 +21761,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Event cancelled'**
   String get businessEventsCancelled;
+
+  /// No description provided for @businessPausedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Business paused'**
+  String get businessPausedTitle;
+
+  /// No description provided for @businessPausedSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.'**
+  String get businessPausedSubtitle;
+
+  /// No description provided for @businessReactivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew Platinum'**
+  String get businessReactivate;
 }
 
 class _AppLocalizationsDelegate

@@ -327,6 +327,20 @@ class TierEntitlements {
     }
   }
 
+  /// Whether a business account's capabilities are currently ACTIVE.
+  ///
+  /// Business capabilities require an active Platinum membership. The stored
+  /// [isBusiness] flag is permanent (never cleared), but the storefront,
+  /// analytics, leads, promotion and verification tools only work while the
+  /// user actually holds Platinum. If their Platinum lapses (tier rolls back to
+  /// free/base on expiry), the account keeps its [isBusiness] flag but operates
+  /// as a normal Base account until Platinum is renewed — at which point the
+  /// business capabilities are restored automatically.
+  static bool isBusinessActive(MembershipTier tier, bool isBusiness) {
+    return isBusiness &&
+        (tier == MembershipTier.platinum || tier == MembershipTier.test);
+  }
+
   // ===========================================================================
   // MARKETPLACE (Part 3) — structured, iterable description of the matrix.
   // Renders a per-tier feature list WITHOUT duplicating any numbers above.

@@ -5837,5 +5837,8 @@
   "businessEventsCancelMessage": "Cancel this event? Attendees will be notified and it will be removed.",
   "businessEventsCancelSeriesMessage": "Cancel every occurrence in this recurring series?",
   "businessEventsCancelConfirm": "Cancel event",
-  "businessEventsCancelled": "Event cancelled"
+  "businessEventsCancelled": "Event cancelled",
+  "businessPausedTitle": "Business paused",
+  "businessPausedSubtitle": "Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.",
+  "businessReactivate": "Renew Platinum"
 }
