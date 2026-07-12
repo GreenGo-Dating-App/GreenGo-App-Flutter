@@ -71,23 +71,31 @@ class NotificationRemoteDataSourceImpl
     bool unreadOnly = false,
     int? limit,
   }) {
-    Query query = firestore
+    // Index-light query: filter by `userId` equality only (served by
+    // Firestore's automatic single-field index — no composite index needed).
+    // Ordering by `createdAt` + this `where` would require a composite index
+    // that, when absent, makes `snapshots()` error out and the page hang.
+    // We therefore sort (newest first) and cap the list client-side instead.
+    final cap = limit ?? 100;
+
+    return firestore
         .collection('notifications')
         .where('userId', isEqualTo: userId)
-        .orderBy('createdAt', descending: true);
+        .snapshots()
+        .map((snapshot) {
+      var items = snapshot.docs.map(NotificationModel.fromFirestore).toList();
 
-    if (unreadOnly) {
-      query = query.where('isRead', isEqualTo: false);
-    }
+      if (unreadOnly) {
+        items = items.where((n) => !n.isRead).toList();
+      }
 
-    if (limit != null) {
-      query = query.limit(limit);
-    }
+      items.sort((a, b) => b.createdAt.compareTo(a.createdAt));
 
-    return query.snapshots().map((snapshot) {
-      return snapshot.docs
-          .map(NotificationModel.fromFirestore)
-          .toList();
+      if (items.length > cap) {
+        items = items.sublist(0, cap);
+      }
+
+      return items;
     });
   }
 

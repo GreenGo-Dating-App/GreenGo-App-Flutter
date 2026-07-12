@@ -69,9 +69,17 @@ service cloud.firestore {
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
       // runs as the follower, not the business owner).
-      allow update: if isOwner(profileId) || isAdminPanelUser() || isProfileAdmin()
+      // Owner may update their own profile EXCEPT the moderation flag
+      // `isBanned` (only admins/Cloud Functions may set/clear it — a banned
+      // user must never be able to self-unban). Any signed-in user may also
+      // change ONLY the denormalized counters (followerCount / rating aggregate).
+      allow update: if (isOwner(profileId)
+              && request.resource.data.get('isBanned', false)
+                 == resource.data.get('isBanned', false))
+        || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
-            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['followerCount']));
+            && request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['followerCount', 'ratingSum', 'ratingCount']));
       allow delete: if isOwner(profileId);
     }
 
@@ -549,8 +557,8 @@ service cloud.firestore {
     // ADMIN ACTIONS & AUDIT COLLECTIONS (admin panel logging)
     // ============================================================================
     match /admin_actions/{actionId} {
-      allow read: if isAdminPanelUser();
-      allow create: if isAdminPanelUser();
+      allow read: if isAdminPanelUser() || isProfileAdmin();
+      allow create: if isAdminPanelUser() || isProfileAdmin();
       allow update, delete: if false;
     }
 
@@ -938,6 +946,15 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Business ratings — one 1..5 star doc per rater per business. Anyone
+    // signed in may read (avg/count derivation); a user writes ONLY their own
+    // rating doc and may NOT rate their own business. The avg/count aggregate
+    // is denormalized onto profiles/{businessId}.ratingSum / .ratingCount.
+    match /business_ratings/{businessId}/ratings/{raterId} {
+      allow read: if isSignedIn();
+      allow create, update, delete: if isOwner(raterId) && raterId != businessId;
+    }
+
     // ============================================================================
     // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
     // ============================================================================
@@ -967,7 +984,7 @@ service cloud.firestore {
       allow update: if isOrganizer()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
-                 .hasOnly(['attendeeCount', 'tierGoingCounts']));
+                 .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
 
       match /attendees/{uid} {
         function parentOrganizer() {

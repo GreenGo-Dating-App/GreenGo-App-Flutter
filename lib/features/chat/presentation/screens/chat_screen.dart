@@ -19,6 +19,7 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
@@ -485,6 +486,14 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendMessage(BuildContext _) async {
     // Record activity for online presence
     PresenceService.instance?.recordActivity();
+    // Valid-membership gate: a valid GreenGo membership is required to send
+    // messages. Active Base (free) stays allowed — only a truly expired
+    // membership is blocked (routes to the marketplace to renew).
+    if (_currentUserProfile != null &&
+        !await TierGate().ensureValidMembership(context, _currentUserProfile!)) {
+      return;
+    }
+    if (!mounted) return;
     // Base membership gate
     final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
     final allowed = await BaseMembershipGate.checkAndGate(

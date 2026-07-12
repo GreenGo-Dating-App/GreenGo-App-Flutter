@@ -546,6 +546,10 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   bool _admin2FAVerified = false;
   bool _needsOnboarding = false;
   bool _showPostLoginSplash = false;
+  // Set true only when the post-login profile fetch positively reads
+  // `isBanned == true`. Fail-open: a read error never sets this, so a
+  // non-banned user is never locked out.
+  bool _accountBanned = false;
   String? _splashUserId;
   UserAccessData? _accessData;
   final AccessControlService _accessControlService = AccessControlService();
@@ -682,6 +686,18 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     }
   }
 
+  /// Persists whether the current account is a business account so the
+  /// post-login splash screen can render its "BUSINESS" label without waiting
+  /// for the full Profile to load. Key is read in PostLoginSplashScreen.
+  Future<void> _cacheBusinessFlag(bool isBusiness) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('is_business_account', isBusiness);
+    } catch (e) {
+      debugPrint('⚠ Failed to cache business flag: $e');
+    }
+  }
+
   Future<void> _checkAccessStatus(String userId) async {
     // _isCheckingAccess is already set to true by the listener
     if (!_isCheckingAccess) {
@@ -691,6 +707,9 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     }
 
     try {
+      // Positively set true only when a profile doc is actually read with
+      // isBanned == true. Stays false on any read error (fail-open).
+      var accountBanned = false;
       // Check if user profile exists and is complete (force server to avoid stale cache)
       try {
         final profileDoc = await FirebaseFirestore.instance
@@ -699,6 +718,12 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
             .get(const GetOptions(source: Source.server));
         _needsOnboarding = !profileDoc.exists ||
             profileDoc.data()?['isComplete'] != true;
+        // Permanent ban: only a positively-read isBanned==true locks out.
+        accountBanned = profileDoc.exists &&
+            profileDoc.data()?['isBanned'] == true;
+        // Cache business-account flag so the post-login splash can label it
+        // without needing the full Profile loaded.
+        await _cacheBusinessFlag(profileDoc.data()?['isBusiness'] == true);
       } catch (e) {
         debugPrint('Profile check error: $e');
         // Fallback to default source if server unavailable
@@ -709,9 +734,27 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
               .get();
           _needsOnboarding = !profileDoc.exists ||
               profileDoc.data()?['isComplete'] != true;
+          accountBanned = profileDoc.exists &&
+              profileDoc.data()?['isBanned'] == true;
+          await _cacheBusinessFlag(profileDoc.data()?['isBusiness'] == true);
         } catch (_) {
+          // Could not read the doc at all — fail open, never lock out.
           _needsOnboarding = true;
+          accountBanned = false;
         }
+      }
+
+      // Enforce permanent ban before any access is granted.
+      if (accountBanned) {
+        debugPrint('🚫 Account $userId is permanently banned — blocking access');
+        if (mounted) {
+          setState(() {
+            _accountBanned = true;
+            _accessData = null;
+            _isCheckingAccess = false;
+          });
+        }
+        return;
       }
 
       var accessData = await _accessControlService.getCurrentUserAccess();
@@ -814,6 +857,8 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     try {
       CacheService.instance.clearAll();
     } catch (_) {}
+    // Clear cached business flag so the next account's splash isn't mislabeled.
+    _cacheBusinessFlag(false);
 
     context.read<AuthBloc>().add(const AuthSignOutRequested());
     setState(() {
@@ -824,6 +869,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       _showPostLoginSplash = false;
       _splashUserId = null;
       _isCheckingAccess = false;
+      _accountBanned = false;
       Admin2FAScreen.resetVerification();
     });
   }
@@ -1047,11 +1093,16 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
             _admin2FAVerified = false;
             _showPostLoginSplash = false;
             _splashUserId = null;
+            _accountBanned = false;
             Admin2FAScreen.resetVerification();
           });
         }
       },
       builder: (context, state) {
+        // Permanent ban takes priority over every other state: block access.
+        if (_accountBanned && state is AuthAuthenticated) {
+          return BannedScreen(onSignOut: _handleSignOut);
+        }
         if (state is AuthInitial || _isCheckingAccess) {
           return const SplashScreen();
         } else if (state is AuthWaitingForAccess) {
@@ -1123,6 +1174,77 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           return const LoginScreen();
         }
       },
+    );
+  }
+}
+
+/// Full-screen block shown to a permanently-banned account.
+///
+/// Rendered by [AuthWrapper] whenever the post-login profile fetch reads
+/// `profiles/{uid}.isBanned == true`. The account keeps no in-app access; the
+/// only action is to sign out.
+class BannedScreen extends StatelessWidget {
+  const BannedScreen({required this.onSignOut, super.key});
+
+  final VoidCallback onSignOut;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Scaffold(
+      backgroundColor: const Color(0xFF0A0A0A),
+      body: SafeArea(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(
+                  Icons.block,
+                  size: 72,
+                  color: AppColors.errorRed,
+                ),
+                const SizedBox(height: 24),
+                Text(
+                  l10n?.accountBannedTitle ?? 'Account permanently banned',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  l10n?.accountBannedBody ??
+                      'This account has been permanently banned for violating '
+                          'our content policy. This decision is final.',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 15,
+                    height: 1.4,
+                  ),
+                ),
+                const SizedBox(height: 40),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: onSignOut,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.errorRed,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                    ),
+                    child: Text(l10n?.signOut ?? 'Sign out'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

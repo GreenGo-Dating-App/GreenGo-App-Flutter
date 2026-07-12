@@ -33,6 +33,7 @@ class EventModel extends Event {
     super.country,
     super.attendeeCount = 0,
     super.likeCount = 0,
+    super.viewCount = 0,
     super.updatedAt,
     super.visibility = EventVisibility.public,
     super.externalLinks = const [],
@@ -80,6 +81,7 @@ class EventModel extends Event {
       country: event.country,
       attendeeCount: event.attendeeCount,
       likeCount: event.likeCount,
+      viewCount: event.viewCount,
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
       visibility: event.visibility,
@@ -135,6 +137,7 @@ class EventModel extends Event {
       country: json['country'] as String?,
       attendeeCount: (json['attendeeCount'] as num?)?.toInt() ?? 0,
       likeCount: (json['likeCount'] as num?)?.toInt() ?? 0,
+      viewCount: (json['viewCount'] as num?)?.toInt() ?? 0,
       createdAt: _parseDateTime(json['createdAt']),
       updatedAt: json['updatedAt'] != null
           ? _parseDateTime(json['updatedAt'])
@@ -202,6 +205,10 @@ class EventModel extends Event {
       'country': country,
       'attendeeCount': attendeeCount,
       'likeCount': likeCount,
+      // NOTE: `viewCount` is intentionally NOT written here. It is a monotonic
+      // counter maintained via FieldValue.increment(1) on event open, so an
+      // event create/edit must never overwrite the server-side value. It is
+      // read back in fromJson only.
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
       'visibility': visibility.value,

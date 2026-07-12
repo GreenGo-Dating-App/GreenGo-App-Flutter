@@ -65,6 +65,11 @@ class ProfileModel extends Profile {
     super.businessName,
     super.businessCategory,
     super.businessVerified,
+    super.galleryImages,
+    super.openingHours,
+    super.storefrontBio,
+    super.storefrontLinks,
+    super.isBanned,
   });
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
@@ -142,6 +147,11 @@ class ProfileModel extends Profile {
       businessName: profile.businessName,
       businessCategory: profile.businessCategory,
       businessVerified: profile.businessVerified,
+      galleryImages: profile.galleryImages,
+      openingHours: profile.openingHours,
+      storefrontBio: profile.storefrontBio,
+      storefrontLinks: profile.storefrontLinks,
+      isBanned: profile.isBanned,
     );
   }
 
@@ -266,6 +276,19 @@ class ProfileModel extends Profile {
       businessName: json['businessName'] as String?,
       businessCategory: json['businessCategory'] as String?,
       businessVerified: json['businessVerified'] as bool? ?? false,
+      galleryImages: json['galleryImages'] != null
+          ? List<String>.from(json['galleryImages'] as List)
+          : <String>[],
+      openingHours: json['openingHours'] != null
+          ? (json['openingHours'] as List)
+              .map((e) => OpeningHours.fromMap(Map<String, dynamic>.from(e as Map)))
+              .toList()
+          : const <OpeningHours>[],
+      storefrontBio: json['storefrontBio'] as String?,
+      storefrontLinks: json['storefrontLinks'] != null
+          ? List<String>.from(json['storefrontLinks'] as List)
+          : <String>[],
+      isBanned: json['isBanned'] as bool? ?? false,
     );
   }
 
@@ -420,6 +443,11 @@ class ProfileModel extends Profile {
       'businessName': businessName,
       'businessCategory': businessCategory,
       'businessVerified': businessVerified,
+      'galleryImages': galleryImages,
+      'openingHours': openingHours.map((h) => h.toMap()).toList(),
+      'storefrontBio': storefrontBio,
+      'storefrontLinks': storefrontLinks,
+      'isBanned': isBanned,
     };
   }
 }

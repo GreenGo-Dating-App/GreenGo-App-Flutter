@@ -307,6 +307,118 @@ class _BusinessVerificationAdminScreenState
     }
   }
 
+  /// Permanently bans a violating business/profile.
+  ///
+  /// A confirmed ban transactionally (batch) sets on `profiles/{userId}`:
+  ///   - `isBanned = true`
+  ///   - `bannedAt` (server timestamp)
+  ///   - `bannedReason` (admin-entered text)
+  ///   - `bannedBy` (this admin's uid)
+  /// and writes an `admin_actions` audit-log entry. `isBanned` is enforced at
+  /// app entry (see main.dart `_checkAccessStatus`). Gated to admins by the
+  /// screen-level `_isAdmin` check. The `isBanned`/`banned*` fields are
+  /// admin/Cloud-Function-only writes per Firestore rules — clients may read
+  /// their own but never set them.
+  Future<void> _banPermanently(_BusinessRequest request) async {
+    final l10n = AppLocalizations.of(context)!;
+    final controller = TextEditingController();
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          l10n.adminBanConfirm,
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              l10n.adminBanConfirmBody,
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: controller,
+              maxLines: 3,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration: InputDecoration(
+                hintText: l10n.adminBanReasonHint,
+                hintStyle: const TextStyle(color: AppColors.textTertiary),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(l10n.cancel),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(dialogContext, true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.errorRed,
+            ),
+            child: Text(l10n.adminBanPermanently),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() => _busyUserIds.add(request.userId));
+    try {
+      final batch = _firestore.batch();
+
+      final profileRef =
+          _firestore.collection('profiles').doc(request.userId);
+      batch.set(
+        profileRef,
+        <String, dynamic>{
+          'isBanned': true,
+          'bannedAt': FieldValue.serverTimestamp(),
+          'bannedReason': controller.text.trim(),
+          'bannedBy': widget.adminId,
+        },
+        SetOptions(merge: true),
+      );
+
+      // Audit-log entry for the moderation action.
+      final actionRef = _firestore.collection('admin_actions').doc();
+      batch.set(actionRef, <String, dynamic>{
+        'action': 'ban_permanent',
+        'targetUserId': request.userId,
+        'adminId': widget.adminId,
+        'reason': controller.text.trim(),
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+
+      await batch.commit();
+
+      if (!mounted) return;
+      setState(() {
+        _requests.removeWhere((r) => r.userId == request.userId);
+        _busyUserIds.remove(request.userId);
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.adminBanned),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _busyUserIds.remove(request.userId));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -512,6 +624,16 @@ class _BusinessVerificationAdminScreenState
                       foregroundColor: Colors.white,
                     ),
                     tooltip: l10n.adminRejectBusinessVerification,
+                  ),
+                  const SizedBox(width: 8),
+                  IconButton(
+                    onPressed: () => _banPermanently(request),
+                    icon: const Icon(Icons.gavel),
+                    style: IconButton.styleFrom(
+                      backgroundColor: AppColors.charcoal,
+                      foregroundColor: AppColors.errorRed,
+                    ),
+                    tooltip: l10n.adminBanPermanently,
                   ),
                 ],
               ),

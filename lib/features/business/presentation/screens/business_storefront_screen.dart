@@ -9,6 +9,9 @@ import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../widgets/business_contact_button.dart';
 import '../widgets/business_follow_button.dart';
+import '../widgets/opening_hours_section.dart';
+import '../widgets/business_rating.dart';
+import '../../../safety/presentation/widgets/safety_actions_menu.dart';
 
 /// Public Business Storefront.
 ///
@@ -52,6 +55,17 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
       (widget.business.businessName?.trim().isNotEmpty ?? false)
           ? widget.business.businessName!.trim()
           : widget.business.displayName;
+
+  /// Long-form storefront description, falling back to the profile bio.
+  String get _storefrontDescription {
+    final sb = widget.business.storefrontBio?.trim() ?? '';
+    return sb.isNotEmpty ? sb : widget.business.bio;
+  }
+
+  /// Curated storefront gallery, falling back to the owner's profile photos.
+  List<String> get _galleryImages => widget.business.galleryImages.isNotEmpty
+      ? widget.business.galleryImages
+      : widget.business.photoUrls;
 
   Future<List<_EventCard>> _loadEvents() async {
     try {
@@ -197,6 +211,9 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                 ),
                               ),
                             ],
+                            const SizedBox(height: 6),
+                            BusinessRatingSummary(
+                                businessId: widget.business.userId),
                           ],
                         ),
                       ),
@@ -215,15 +232,29 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                         businessProfile: widget.business,
                         currentUserId: widget.currentUserId,
                       ),
+                      if (widget.currentUserId != widget.business.userId) ...[
+                        const Spacer(),
+                        SafetyActionsMenu(
+                          currentUserId: widget.currentUserId,
+                          reportedUserId: widget.business.userId,
+                          reportedUserName: _title,
+                        ),
+                      ],
                     ],
                   ),
-                  // Bio
-                  if (widget.business.bio.isNotEmpty) ...[
+                  const SizedBox(height: 16),
+                  BusinessRatingBar(
+                    businessId: widget.business.userId,
+                    raterId: widget.currentUserId,
+                  ),
+                  // Bio — prefer the long-form storefront description, falling
+                  // back to the standard profile bio.
+                  if (_storefrontDescription.isNotEmpty) ...[
                     const SizedBox(height: 24),
                     _sectionTitle(l10n.about),
                     const SizedBox(height: 8),
                     Text(
-                      widget.business.bio,
+                      _storefrontDescription,
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 15,
@@ -231,32 +262,42 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                       ),
                     ),
                   ],
-                  // Links
-                  if (widget.business.socialLinks?.hasAnyLink ?? false) ...[
+                  // Links — social handles plus any custom storefront URLs.
+                  if ((widget.business.socialLinks?.hasAnyLink ?? false) ||
+                      widget.business.storefrontLinks.isNotEmpty) ...[
                     const SizedBox(height: 24),
                     _sectionTitle(l10n.businessLinks),
                     const SizedBox(height: 8),
                     Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: _buildLinkChips(),
+                      children: [
+                        ..._buildLinkChips(),
+                        ..._buildStorefrontLinkChips(),
+                      ],
                     ),
                   ],
-                  // Opening hours — graceful fallback: the Profile entity does
-                  // not currently carry structured opening hours, so we show a
-                  // neutral "hours not provided" note rather than a broken field.
+                  // Opening hours — render the structured per-weekday block when
+                  // provided, otherwise a neutral "hours not provided" note.
                   const SizedBox(height: 24),
                   _sectionTitle(l10n.businessOpeningHours),
                   const SizedBox(height: 8),
-                  Text(
-                    l10n.businessHoursNotProvided,
-                    style: const TextStyle(
-                      color: AppColors.textTertiary,
-                      fontSize: 14,
+                  if (widget.business.openingHours.isNotEmpty)
+                    OpeningHoursSection(
+                      hours: widget.business.openingHours,
+                      closedLabel: l10n.adminClosed,
+                    )
+                  else
+                    Text(
+                      l10n.businessHoursNotProvided,
+                      style: const TextStyle(
+                        color: AppColors.textTertiary,
+                        fontSize: 14,
+                      ),
                     ),
-                  ),
-                  // Gallery
-                  if (widget.business.photoUrls.isNotEmpty) ...[
+                  // Gallery — dedicated storefront gallery, falling back to the
+                  // owner's profile photos when no gallery has been curated.
+                  if (_galleryImages.isNotEmpty) ...[
                     const SizedBox(height: 24),
                     _sectionTitle(l10n.businessGallery),
                     const SizedBox(height: 12),
@@ -264,13 +305,13 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                       height: 110,
                       child: ListView.separated(
                         scrollDirection: Axis.horizontal,
-                        itemCount: widget.business.photoUrls.length,
+                        itemCount: _galleryImages.length,
                         separatorBuilder: (_, __) => const SizedBox(width: 8),
                         itemBuilder: (_, i) => ClipRRect(
                           borderRadius:
                               BorderRadius.circular(AppDimensions.radiusM),
                           child: Image.network(
-                            widget.business.photoUrls[i],
+                            _galleryImages[i],
                             width: 110,
                             height: 110,
                             fit: BoxFit.cover,
@@ -410,6 +451,48 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     add(Icons.work, 'LinkedIn', s.linkedinUrl);
     add(Icons.alternate_email, 'X', s.xUrl);
     return chips;
+  }
+
+  /// Chips for arbitrary custom storefront links (websites, booking, menu…).
+  /// The visible label is a cleaned-up host/path so long URLs stay tidy.
+  List<Widget> _buildStorefrontLinkChips() {
+    return widget.business.storefrontLinks
+        .where((url) => url.trim().isNotEmpty)
+        .map((url) {
+      final label = _prettyLinkLabel(url);
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          border: Border.all(color: AppColors.divider),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.link, size: 16, color: AppColors.richGold),
+            const SizedBox(width: 6),
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 180),
+              child: Text(
+                label,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                    color: AppColors.textPrimary, fontSize: 13),
+              ),
+            ),
+          ],
+        ),
+      );
+    }).toList();
+  }
+
+  String _prettyLinkLabel(String url) {
+    var s = url.trim();
+    s = s.replaceFirst(RegExp(r'^https?://'), '');
+    s = s.replaceFirst(RegExp(r'^www\.'), '');
+    if (s.endsWith('/')) s = s.substring(0, s.length - 1);
+    return s;
   }
 
   Widget _eventTile(_EventCard e) {

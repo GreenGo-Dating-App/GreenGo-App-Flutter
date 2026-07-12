@@ -100,6 +100,7 @@ class Event extends Equatable {
     this.country,
     this.attendeeCount = 0,
     this.likeCount = 0,
+    this.viewCount = 0,
     this.updatedAt,
     this.visibility = EventVisibility.public,
     this.externalLinks = const [],
@@ -144,6 +145,12 @@ class Event extends Equatable {
   final int attendeeCount;
   /// Denormalized number of likes (maintained by the onEventLikeWrite CF).
   final int likeCount;
+
+  /// Denormalized number of unique event opens (deduped per-user-per-day at the
+  /// call site). Maintained monotonically via `FieldValue.increment(1)` on the
+  /// `events/{id}` doc, so it is read-only in the model layer — never written by
+  /// `toJson` (an event edit must not clobber the server-incremented counter).
+  final int viewCount;
   final DateTime createdAt;
   final DateTime? updatedAt;
   final EventVisibility visibility;
@@ -267,6 +274,7 @@ class Event extends Equatable {
         country,
         attendeeCount,
         likeCount,
+        viewCount,
         createdAt,
         updatedAt,
         visibility,
@@ -313,6 +321,7 @@ class Event extends Equatable {
     String? country,
     int? attendeeCount,
     int? likeCount,
+    int? viewCount,
     DateTime? createdAt,
     DateTime? updatedAt,
     EventVisibility? visibility,
@@ -358,6 +367,7 @@ class Event extends Equatable {
       country: country ?? this.country,
       attendeeCount: attendeeCount ?? this.attendeeCount,
       likeCount: likeCount ?? this.likeCount,
+      viewCount: viewCount ?? this.viewCount,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       visibility: visibility ?? this.visibility,

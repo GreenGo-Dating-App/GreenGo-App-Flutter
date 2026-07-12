@@ -72,6 +72,7 @@ class EventAudienceAggregate {
     required this.totalAttendees,
     required this.tierBreakdown,
     required this.audience,
+    this.viewCount = 0,
   });
 
   const EventAudienceAggregate.empty()
@@ -80,12 +81,17 @@ class EventAudienceAggregate {
         checkedInCount = 0,
         totalAttendees = 0,
         tierBreakdown = const {},
-        audience = const AudienceAggregate.empty();
+        audience = const AudienceAggregate.empty(),
+        viewCount = 0;
 
   final int goingCount;
   final int waitlistCount;
   final int checkedInCount;
   final int totalAttendees;
+
+  /// Exact number of unique opens of this event (deduped per user per day at the
+  /// call site, maintained via FieldValue.increment on `events/{id}.viewCount`).
+  final int viewCount;
 
   /// Ticket-tier id -> going count (k-anon filtered).
   final Map<String, int> tierBreakdown;
@@ -95,6 +101,48 @@ class EventAudienceAggregate {
   /// Fraction of "going" attendees who actually checked in (0..1).
   double get checkInRate =>
       goingCount <= 0 ? 0 : (checkedInCount / goingCount).clamp(0.0, 1.0);
+}
+
+/// Bounded, aggregate business/organizer insights that sit ALONGSIDE the
+/// k-anonymized demographics: total event views, community reach, and chat
+/// involvement. Every number is a plain count/sum over capped, single-field
+/// (index-free) reads — never an individual, never an unbounded fan-out.
+class BusinessInsights {
+  const BusinessInsights({
+    required this.totalEventViews,
+    required this.communitiesOwned,
+    required this.communityMembers,
+    required this.chatsInvolved,
+    this.eventsScanned = 0,
+    this.cappedChats = false,
+  });
+
+  const BusinessInsights.empty()
+      : totalEventViews = 0,
+        communitiesOwned = 0,
+        communityMembers = 0,
+        chatsInvolved = 0,
+        eventsScanned = 0,
+        cappedChats = false;
+
+  /// Sum of `viewCount` across the organizer's (capped) events.
+  final int totalEventViews;
+
+  /// How many communities the organizer created or sponsors (capped, de-duped).
+  final int communitiesOwned;
+
+  /// Sum of member counts across those communities — the organizer's community
+  /// reach / recent growth signal.
+  final int communityMembers;
+
+  /// Number of conversations/groups the organizer participates in (capped).
+  final int chatsInvolved;
+
+  /// How many of the organizer's events were scanned to sum views (context).
+  final int eventsScanned;
+
+  /// True when [chatsInvolved] hit the read cap, so it should render as "N+".
+  final bool cappedChats;
 }
 
 class AnalyticsService {
@@ -666,6 +714,8 @@ class AnalyticsService {
     final denormGoing = (eventData?['attendeeCount'] as num?)?.toInt() ?? 0;
     if (denormGoing > going) going = denormGoing;
 
+    final viewCount = (eventData?['viewCount'] as num?)?.toInt() ?? 0;
+
     final profiles = await _loadProfiles(goingUids.take(sampleCap).toList());
     final audience = _bucketProfiles(profiles);
 
@@ -676,6 +726,97 @@ class AnalyticsService {
       totalAttendees: total,
       tierBreakdown: _kAnon(tierBreakdown),
       audience: audience,
+      viewCount: viewCount,
+    );
+  }
+
+  /// Aggregate a business/organizer's headline INSIGHTS (bounded, index-free):
+  ///
+  ///  * **Total event views** — sum of `viewCount` across their own events.
+  ///  * **Community activity** — how many communities they own/sponsor and the
+  ///    total member reach across them.
+  ///  * **Chats involved** — how many conversations/groups they participate in.
+  ///
+  /// Every read is a single-field equality / array-contains query with a `.limit`
+  /// cap, so a single organizer can never fan out an unbounded query and no
+  /// composite index is required.
+  ///
+  /// TODO(cf-preaggregate): at millions-of-users scale these live sums/counts
+  /// should be maintained incrementally by Cloud Functions into a single
+  /// `organizer_insights/{organizerId}` doc (bump on event view / community
+  /// join / conversation create), so the dashboard reads ONE small doc instead
+  /// of scanning events + communities + conversations on every open. This
+  /// method is the read-time fallback / small-organizer path only.
+  Future<BusinessInsights> aggregateBusinessInsights(
+    String organizerId, {
+    int maxEvents = 200,
+    int maxCommunities = 100,
+    int maxChats = 200,
+  }) async {
+    var totalViews = 0;
+    var eventsScanned = 0;
+    var communityMembers = 0;
+    var chatsInvolved = 0;
+    var cappedChats = false;
+    final communityIds = <String>{};
+
+    // Total event views — sum viewCount over the organizer's own events.
+    try {
+      final events = await _firestore
+          .collection('events')
+          .where('organizerId', isEqualTo: organizerId)
+          .limit(maxEvents)
+          .get();
+      eventsScanned = events.docs.length;
+      for (final e in events.docs) {
+        totalViews += (e.data()['viewCount'] as num?)?.toInt() ?? 0;
+      }
+    } catch (_) {
+      // Non-fatal: leave view total at zero.
+    }
+
+    // Community activity — communities the organizer created OR sponsors. Two
+    // bounded single-field queries, results merged & de-duped by doc id.
+    Future<void> scanCommunities(String field) async {
+      try {
+        final snap = await _firestore
+            .collection('communities')
+            .where(field, isEqualTo: organizerId)
+            .limit(maxCommunities)
+            .get();
+        for (final c in snap.docs) {
+          if (!communityIds.add(c.id)) continue; // already counted
+          communityMembers += (c.data()['memberCount'] as num?)?.toInt() ?? 0;
+        }
+      } catch (_) {
+        // Non-fatal: skip this dimension.
+      }
+    }
+
+    await scanCommunities('createdByUserId');
+    await scanCommunities('sponsorId');
+
+    // Chats involved — conversations/groups the organizer participates in.
+    // Single-field array-contains, capped (no composite index needed).
+    try {
+      final chats = await _firestore
+          .collection('conversations')
+          .where('participants', arrayContains: organizerId)
+          .limit(maxChats)
+          .get();
+      chatsInvolved = chats.docs.length;
+      cappedChats = chats.docs.length >= maxChats;
+    } catch (_) {
+      // Non-fatal: leave chats at zero.
+    }
+
+    return BusinessInsights(
+      totalEventViews: totalViews,
+      communitiesOwned: communityIds.length,
+      communityMembers: communityMembers,
+      chatsInvolved: chatsInvolved,
+      eventsScanned: eventsScanned,
+      cappedChats: cappedChats,
     );
   }
 

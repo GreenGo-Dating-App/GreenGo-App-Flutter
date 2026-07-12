@@ -9,6 +9,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../analytics/presentation/screens/analytics_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
+import '../../../explore/presentation/screens/qr_hub_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
@@ -16,6 +17,7 @@ import 'business_account_screen.dart';
 import 'business_events_screen.dart';
 import 'business_leads_screen.dart';
 import 'business_storefront_screen.dart';
+import 'followers_screen.dart';
 import 'promote_screen.dart';
 
 /// Business hub — the B2B home inside the user's Profile.
@@ -100,6 +102,22 @@ class BusinessHubScreen extends StatelessWidget {
       MaterialPageRoute<void>(
         builder: (_) => BusinessEventsScreen(profile: profile),
       ),
+    );
+  }
+
+  /// Opens the bounded list of people who follow this business (own uid).
+  Future<void> _openFollowers(BuildContext context) async {
+    await Navigator.of(context).push(
+      FollowersScreen.route(businessId: profile.userId),
+    );
+  }
+
+  /// Opens the QR hub scanner so the organizer can quickly check attendees in
+  /// at the door. The hub's Scan tab routes each scanned ticket to the right
+  /// event's check-in — no need to pick an event first.
+  Future<void> _openQuickScanner(BuildContext context) async {
+    await Navigator.of(context).push(
+      QRHubScreen.route(currentUserId: profile.userId),
     );
   }
 
@@ -283,6 +301,20 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.businessSectionSubtitle,
               icon: Icons.event_note,
               onTap: () => _openManageEvents(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.businessHubScanner,
+              subtitle: l10n.businessHubScannerSubtitle,
+              icon: Icons.qr_code_scanner,
+              onTap: () => _openQuickScanner(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.businessHubFollowers,
+              subtitle: l10n.businessHubFollowersSubtitle,
+              icon: Icons.people_alt_outlined,
+              onTap: () => _openFollowers(context),
             ),
             const SizedBox(height: 16),
             EditSectionCard(

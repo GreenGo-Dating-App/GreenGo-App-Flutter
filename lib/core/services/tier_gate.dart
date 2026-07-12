@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../features/membership/domain/entities/membership.dart';
+import '../../features/profile/domain/entities/profile.dart';
 import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
 import '../../features/subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../generated/app_localizations.dart';
+import '../constants/app_colors.dart';
 import '../di/injection_container.dart' as di;
 import '../widgets/limit_reached_dialog.dart';
 import 'tier_entitlements.dart';
@@ -281,6 +283,195 @@ class TierGate {
     );
     if (context.mounted) _maybeUpgrade(context, r, uid);
     return false;
+  }
+
+  // ── Valid-membership gate (chat / groups / events) ──────────────────────────
+
+  /// Whether [p]'s GreenGo membership is currently VALID.
+  ///
+  /// A valid membership is the precondition for chatting, creating groups and
+  /// creating events. The default active Base (free) membership is ALWAYS
+  /// valid — this only returns false on a REAL not-valid signal:
+  ///   • a paid tier whose [Profile.membershipEndDate] is in the past, or
+  ///   • a legacy base membership whose [Profile.baseMembershipEndDate] has
+  ///     passed.
+  /// With no such signal it defaults to `true`, so normal users are never
+  /// blocked.
+  bool hasValidMembership(Profile p) {
+    if (p.membershipTier == MembershipTier.test) return true;
+    final now = DateTime.now();
+    // Expired PAID membership.
+    if (p.membershipTier != MembershipTier.free &&
+        p.membershipEndDate != null &&
+        !p.membershipEndDate!.isAfter(now)) {
+      return false;
+    }
+    // Expired legacy base membership.
+    if (p.hasBaseMembership &&
+        p.baseMembershipEndDate != null &&
+        !p.baseMembershipEndDate!.isAfter(now)) {
+      return false;
+    }
+    return true; // active Base / free → allowed by default.
+  }
+
+  /// Returns true if [p]'s membership is valid; otherwise shows the glass
+  /// "renew membership" dialog (routing to the membership marketplace) and
+  /// returns false so the caller can abort the gated action.
+  Future<bool> ensureValidMembership(BuildContext context, Profile p) async {
+    if (hasValidMembership(p)) return true;
+    if (!context.mounted) return false;
+    await _showRenewMembershipDialog(context, p.userId);
+    return false;
+  }
+
+  /// uid-only variant of [ensureValidMembership] for call sites that hold a
+  /// user id but not a loaded [Profile]. Reads the membership fields from
+  /// `profiles/{uid}` and applies the exact same predicate — defaults to
+  /// allowed, never blocking on a read error or a missing document.
+  Future<bool> ensureValidMembershipByUid(
+      BuildContext context, String uid) async {
+    if (await _isMembershipValidByUid(uid)) return true;
+    if (!context.mounted) return false;
+    await _showRenewMembershipDialog(context, uid);
+    return false;
+  }
+
+  Future<bool> _isMembershipValidByUid(String uid) async {
+    try {
+      final doc = await _firestore.collection('profiles').doc(uid).get();
+      final data = doc.data();
+      if (data == null) return true; // no signal → allowed.
+      final raw = data['membershipTier'] as String?;
+      final tier =
+          raw == null ? MembershipTier.free : MembershipTier.fromString(raw);
+      if (tier == MembershipTier.test) return true;
+      final now = DateTime.now();
+      final endTs = data['membershipEndDate'];
+      final endDate = endTs is Timestamp ? endTs.toDate() : null;
+      if (tier != MembershipTier.free &&
+          endDate != null &&
+          !endDate.isAfter(now)) {
+        return false;
+      }
+      final hasBase = data['hasBaseMembership'] as bool? ?? false;
+      final baseTs = data['baseMembershipEndDate'];
+      final baseEnd = baseTs is Timestamp ? baseTs.toDate() : null;
+      if (hasBase && baseEnd != null && !baseEnd.isAfter(now)) {
+        return false;
+      }
+      return true;
+    } catch (_) {
+      return true; // never block on error.
+    }
+  }
+
+  /// Glass "renew membership" dialog. On confirm, routes to the membership
+  /// marketplace via [openMembershipUpgrade].
+  Future<void> _showRenewMembershipDialog(
+      BuildContext context, String uid) async {
+    final l10n = AppLocalizations.of(context)!;
+    final renew = await showDialog<bool>(
+      context: context,
+      barrierDismissible: true,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 360),
+          decoration: BoxDecoration(
+            color: AppColors.backgroundCard,
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(
+              color: AppColors.richGold.withValues(alpha: 0.3),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: AppColors.richGold.withValues(alpha: 0.2),
+                blurRadius: 20,
+                spreadRadius: 2,
+              ),
+            ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 72,
+                  height: 72,
+                  decoration: BoxDecoration(
+                    color: AppColors.richGold.withValues(alpha: 0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.workspace_premium_outlined,
+                    color: AppColors.richGold,
+                    size: 36,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  l10n.membershipRequiredTitle,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  l10n.membershipRequiredBody,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 14,
+                    height: 1.5,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: Colors.black,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    onPressed: () => Navigator.pop(ctx, true),
+                    child: Text(
+                      l10n.renewMembership,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx, false),
+                  child: Text(
+                    l10n.notNow,
+                    style: const TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    if (renew == true && context.mounted) {
+      openMembershipUpgrade(context, currentUserId: uid);
+    }
   }
 
   /// Shows the daily-connect limit dialog and routes to upgrade on accept.

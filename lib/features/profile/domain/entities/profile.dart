@@ -82,6 +82,11 @@ class Profile extends Equatable {
     this.businessName,
     this.businessCategory,
     this.businessVerified = false,
+    this.galleryImages = const [],
+    this.openingHours = const [],
+    this.storefrontBio,
+    this.storefrontLinks = const [],
+    this.isBanned = false,
   });
   final String userId;
   final String displayName;
@@ -184,6 +189,24 @@ class Profile extends Equatable {
   final String? businessName;
   final String? businessCategory;
   final bool businessVerified;
+
+  // Storefront fields (business/venue accounts). All optional & default
+  // empty/null so existing docs stay backward-compatible.
+  //  * galleryImages  — dedicated storefront gallery, separate from photoUrls
+  //    (which are the owner's personal profile photos). A venue can showcase
+  //    products / rooms / dishes here without mixing them into the avatar set.
+  //  * openingHours   — structured per-weekday open/close (see OpeningHours).
+  //  * storefrontBio  — long-form storefront description (falls back to bio).
+  //  * storefrontLinks — arbitrary website/booking/menu URLs (in addition to
+  //    the social handles kept in socialLinks).
+  final List<String> galleryImages;
+  final List<OpeningHours> openingHours;
+  final String? storefrontBio;
+  final List<String> storefrontLinks;
+
+  // Moderation flag — set by admins elsewhere (Cloud Function / admin tools).
+  // The app only READS it (e.g. to hide or gate a banned account). Default false.
+  final bool isBanned;
 
   /// Get formatted nickname with @ prefix
   String? get formattedNickname => nickname != null ? '@$nickname' : null;
@@ -311,6 +334,11 @@ class Profile extends Equatable {
         businessName,
         businessCategory,
         businessVerified,
+        galleryImages,
+        openingHours,
+        storefrontBio,
+        storefrontLinks,
+        isBanned,
       ];
 
   /// Copy with updated fields
@@ -383,6 +411,11 @@ class Profile extends Equatable {
     String? businessName,
     String? businessCategory,
     bool? businessVerified,
+    List<String>? galleryImages,
+    List<OpeningHours>? openingHours,
+    String? storefrontBio,
+    List<String>? storefrontLinks,
+    bool? isBanned,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -453,8 +486,62 @@ class Profile extends Equatable {
       businessName: businessName ?? this.businessName,
       businessCategory: businessCategory ?? this.businessCategory,
       businessVerified: businessVerified ?? this.businessVerified,
+      galleryImages: galleryImages ?? this.galleryImages,
+      openingHours: openingHours ?? this.openingHours,
+      storefrontBio: storefrontBio ?? this.storefrontBio,
+      storefrontLinks: storefrontLinks ?? this.storefrontLinks,
+      isBanned: isBanned ?? this.isBanned,
     );
   }
+}
+
+/// Structured opening hours for a single weekday of a business storefront.
+///
+/// [weekday] follows Dart's `DateTime.weekday` convention (1 = Monday …
+/// 7 = Sunday). [open] / [close] are 24h "HH:mm" strings. When [isClosed] is
+/// true the day is shown as closed and open/close are ignored.
+class OpeningHours extends Equatable {
+  const OpeningHours({
+    required this.weekday,
+    this.open,
+    this.close,
+    this.isClosed = false,
+  });
+
+  factory OpeningHours.fromMap(Map<String, dynamic> m) => OpeningHours(
+        weekday: (m['weekday'] as num?)?.toInt() ?? 1,
+        open: m['open'] as String?,
+        close: m['close'] as String?,
+        isClosed: (m['isClosed'] as bool?) ?? false,
+      );
+
+  final int weekday;
+  final String? open;
+  final String? close;
+  final bool isClosed;
+
+  OpeningHours copyWith({
+    int? weekday,
+    String? open,
+    String? close,
+    bool? isClosed,
+  }) =>
+      OpeningHours(
+        weekday: weekday ?? this.weekday,
+        open: open ?? this.open,
+        close: close ?? this.close,
+        isClosed: isClosed ?? this.isClosed,
+      );
+
+  Map<String, dynamic> toMap() => {
+        'weekday': weekday,
+        'open': open,
+        'close': close,
+        'isClosed': isClosed,
+      };
+
+  @override
+  List<Object?> get props => [weekday, open, close, isClosed];
 }
 
 /// A grant applied automatically at signup based on the email allowlist.

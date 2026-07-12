@@ -5861,5 +5861,56 @@
   "eventBoostEnded": "Boost ended",
   "eventsBuyCoins": "Buy coins",
   "eventsBuyCoinsPrompt": "You don't have enough coins. Would you like to buy more?",
-  "messageTooLong": "Messages can be up to 4096 characters."
+  "messageTooLong": "Messages can be up to 4096 characters.",
+  "exploreBusinessesNearYou": "Businesses near you",
+  "splashBusinessLabel": "BUSINESS",
+  "rateThisBusiness": "Rate this business",
+  "businessRatingError": "Couldn't save your rating. Please try again.",
+  "businessRatingCount": "({count})",
+  "@businessRatingCount": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "rateStarsSemantic": "Rate {stars} stars",
+  "@rateStarsSemantic": {
+    "placeholders": { "stars": { "type": "int" } }
+  },
+  "businessRatingSemantic": "Rated {avg} out of 5, {count} ratings",
+  "@businessRatingSemantic": {
+    "placeholders": { "avg": { "type": "String" }, "count": { "type": "int" } }
+  },
+  "editStorefront": "Edit storefront",
+  "editStorefrontSubtitle": "Manage your gallery, hours, links and info",
+  "storefrontGallerySubtitle": "Showcase your venue, products or team",
+  "storefrontOpeningHoursSubtitle": "Set your opening days and hours",
+  "storefrontDescriptionHint": "Tell people about your business",
+  "storefrontCategoryHint": "e.g. Restaurant, Cafe, Museum",
+  "storefrontLinkHint": "https://...",
+  "storefrontAddLink": "Add link",
+  "storefrontAddImage": "Add image",
+  "storefrontSaved": "Storefront updated",
+  "analyticsEventViews": "Event views",
+  "analyticsCommunityReach": "Community reach",
+  "analyticsChatsInvolved": "Chats involved",
+  "eventAnalyticsViews": "Views",
+  "businessHubScanner": "Quick scanner",
+  "businessHubScannerSubtitle": "Scan tickets to check attendees in",
+  "businessHubFollowers": "Followers",
+  "businessHubFollowersSubtitle": "See who follows your business",
+  "businessFollowersTitle": "Followers",
+  "businessNoFollowers": "No followers yet. Share your storefront to grow your audience.",
+  "membershipRequiredTitle": "Membership required",
+  "membershipRequiredBody": "You need an active membership to do this. Renew to continue.",
+  "renewMembership": "Renew membership",
+  "extraEventTitle": "Extra event",
+  "extraEventBody": "You've reached your free event limit. Create an extra event for {cost} coins?",
+  "@extraEventBody": {
+    "placeholders": { "cost": { "type": "int" } }
+  },
+  "accountBannedTitle": "Account permanently banned",
+  "accountBannedBody": "This account has been permanently banned for violating our content policy. This decision is final.",
+  "adminBanPermanently": "Ban permanently",
+  "adminBanConfirm": "Ban this account permanently?",
+  "adminBanConfirmBody": "This permanently bans the account and blocks all access. This cannot be undone.",
+  "adminBanReasonHint": "Reason (e.g. nudity in gallery)",
+  "adminBanned": "Account permanently banned"
 }
