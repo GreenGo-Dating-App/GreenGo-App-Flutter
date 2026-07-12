@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
@@ -118,6 +119,12 @@ class BusinessHubScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    // Business capabilities require an active Platinum membership. If Platinum
+    // has lapsed the account keeps its isBusiness flag but the storefront /
+    // analytics / leads / promote tools are paused — render a "renew Platinum"
+    // state INSTEAD of the tool tiles so a lapsed business can't reach them.
+    final businessActive = TierEntitlements.isBusinessActive(
+        profile.membershipTier, profile.isBusiness);
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -136,7 +143,105 @@ class BusinessHubScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
+      body: businessActive
+          ? _buildTools(context, l10n)
+          : _buildPausedState(context, l10n),
+    );
+  }
+
+  /// Glass "Business paused — renew Platinum" state shown when the account is
+  /// flagged business but no longer holds an active Platinum membership.
+  Widget _buildPausedState(BuildContext context, AppLocalizations l10n) {
+    return Center(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(AppDimensions.paddingL),
+        child: Container(
+          padding: const EdgeInsets.all(AppDimensions.paddingL),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                AppColors.richGold.withValues(alpha: 0.16),
+                AppColors.richGold.withValues(alpha: 0.03),
+              ],
+            ),
+            border: Border.all(
+              color: AppColors.richGold.withValues(alpha: 0.5),
+              width: 1.2,
+            ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 64,
+                height: 64,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.richGold.withValues(alpha: 0.18),
+                ),
+                child: const Icon(Icons.pause_circle_outline,
+                    color: AppColors.richGold, size: 34),
+              ),
+              const SizedBox(height: 18),
+              Text(
+                l10n.businessPausedTitle,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                l10n.businessPausedSubtitle,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 14,
+                  height: 1.4,
+                ),
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: () => TierGate().openMembershipUpgrade(
+                    context,
+                    currentUserId: profile.userId,
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.backgroundDark,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                  ),
+                  icon: const Icon(Icons.workspace_premium, size: 20),
+                  label: Text(
+                    l10n.businessReactivate,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// The full business tool list — only reachable while business is active.
+  Widget _buildTools(BuildContext context, AppLocalizations l10n) {
+    return SingleChildScrollView(
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -213,7 +318,6 @@ class BusinessHubScreen extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

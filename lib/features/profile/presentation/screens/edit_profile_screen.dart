@@ -10,6 +10,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/cache_service.dart';
+import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
@@ -318,12 +319,18 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      // Business / Venue Account Section.
-                      // Once converted, the profile becomes a full business
-                      // account and shows the normal Business-hub tile. Before
-                      // conversion it's a highlighted "NEW" banner promoting the
-                      // one-time upgrade.
-                      if (activeProfile.isBusiness)
+                      // Business / Venue Account Section — THREE states:
+                      //  1. Active business (isBusiness + active Platinum) →
+                      //     the normal Business-hub tile.
+                      //  2. Lapsed business (isBusiness but Platinum expired) →
+                      //     a "paused" tile that routes to renew Platinum; the
+                      //     full hub stays out of reach until renewal. The
+                      //     isBusiness flag is preserved, only the capability is
+                      //     gated (see TierEntitlements.isBusinessActive).
+                      //  3. Not a business → the highlighted "NEW" banner
+                      //     promoting the one-time (Platinum-gated) upgrade.
+                      if (TierEntitlements.isBusinessActive(
+                          activeProfile.membershipTier, activeProfile.isBusiness))
                         EditSectionCard(
                           title: AppLocalizations.of(context)!.businessSectionTitle,
                           subtitle:
@@ -331,6 +338,17 @@ class EditProfileScreen extends StatelessWidget {
                           icon: Icons.storefront,
                           onTap: () =>
                               _navigateToBusinessHub(context, activeProfile),
+                        )
+                      else if (activeProfile.isBusiness)
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.businessPausedTitle,
+                          subtitle:
+                              AppLocalizations.of(context)!.businessPausedSubtitle,
+                          icon: Icons.pause_circle_outline,
+                          onTap: () => TierGate().openMembershipUpgrade(
+                            context,
+                            currentUserId: activeProfile.userId,
+                          ),
                         )
                       else
                         _buildBecomeBusinessBanner(context, activeProfile),
